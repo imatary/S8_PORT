@@ -687,7 +687,7 @@
 
     sput-boolean v0, Lcom/android/server/power/PowerManagerUtil;->SEC_FEATURE_HALF_BRIGHTNESS_LOW_BATTERY:Z
 
-    const-string/jumbo v0, "4"
+    const-string/jumbo v0, "3"
 
     invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 

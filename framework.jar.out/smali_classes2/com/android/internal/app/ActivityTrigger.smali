@@ -20,10 +20,16 @@
     return-void
 .end method
 
+.method private native native_at_animationScalesCheck(Ljava/lang/String;I)F
+.end method
+
 .method private native native_at_deinit()V
 .end method
 
 .method private native native_at_miscActivity(ILjava/lang/String;II)F
+.end method
+
+.method private native native_at_networkOptsCheck(IILjava/lang/String;)V
 .end method
 
 .method private native native_at_pauseActivity(Ljava/lang/String;)V
@@ -33,6 +39,9 @@
 .end method
 
 .method private native native_at_startActivity(Ljava/lang/String;I)I
+.end method
+
+.method private native native_at_startProcessActivity(Ljava/lang/String;I)V
 .end method
 
 .method private native native_at_stopActivity(Ljava/lang/String;)V
@@ -144,6 +153,14 @@
 
     :cond_0
     invoke-direct {p0, v0}, Lcom/android/internal/app/ActivityTrigger;->native_at_resumeActivity(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public activityStartProcessTrigger(Ljava/lang/String;I)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/android/internal/app/ActivityTrigger;->native_at_startProcessActivity(Ljava/lang/String;I)V
 
     return-void
 .end method
@@ -318,10 +335,28 @@
     return-void
 .end method
 
+.method public animationScalesCheck(Ljava/lang/String;I)F
+    .locals 1
+
+    invoke-direct {p0, p1, p2}, Lcom/android/internal/app/ActivityTrigger;->native_at_animationScalesCheck(Ljava/lang/String;I)F
+
+    move-result v0
+
+    return v0
+.end method
+
 .method protected finalize()V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/internal/app/ActivityTrigger;->native_at_deinit()V
+
+    return-void
+.end method
+
+.method public networkOptsCheck(IILjava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/internal/app/ActivityTrigger;->native_at_networkOptsCheck(IILjava/lang/String;)V
 
     return-void
 .end method

@@ -25180,7 +25180,7 @@
 
     sget-object v3, Lcom/android/server/am/ActivityManagerService;->mActivityTrigger:Lcom/android/internal/app/ActivityTrigger;
 
-    invoke-virtual {v3, v5, p2, v2, p1}, Lcom/android/internal/app/ActivityTrigger;->activityMiscTrigger(ILjava/lang/String;II)F
+    invoke-virtual {v3, p2, v2}, Lcom/android/internal/app/ActivityTrigger;->activityStartProcessTrigger(Ljava/lang/String;I)V
 
     :cond_0
     :goto_0
@@ -25195,7 +25195,7 @@
 
     const/4 v4, -0x1
 
-    invoke-virtual {v3, v5, p2, v4, p1}, Lcom/android/internal/app/ActivityTrigger;->activityMiscTrigger(ILjava/lang/String;II)F
+    invoke-virtual {v3, p2, v4}, Lcom/android/internal/app/ActivityTrigger;->activityStartProcessTrigger(Ljava/lang/String;I)V
 
     goto :goto_0
 .end method
@@ -30897,7 +30897,7 @@
 
     const/4 v12, 0x0
 
-    invoke-virtual {v4, v11, v5, v7, v12}, Lcom/android/internal/app/ActivityTrigger;->activityMiscTrigger(ILjava/lang/String;II)F
+    invoke-virtual {v4, v5, v7}, Lcom/android/internal/app/ActivityTrigger;->activityStartProcessTrigger(Ljava/lang/String;I)V
     :try_end_12
     .catch Ljava/lang/RuntimeException; {:try_start_12 .. :try_end_12} :catch_2
 

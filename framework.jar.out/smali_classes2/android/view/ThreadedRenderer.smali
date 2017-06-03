@@ -258,7 +258,7 @@
 
     iget-boolean v1, p0, Landroid/view/ThreadedRenderer;->mDemoted:Z
 
-    invoke-static {p2, v2, v3, v1}, Landroid/view/ThreadedRenderer;->nCreateProxy(ZJZ)J
+    invoke-static {p2, v2, v3}, Landroid/view/ThreadedRenderer;->nCreateProxy(ZJ)J
 
     move-result-wide v4
 
@@ -430,6 +430,9 @@
 .end method
 
 .method private static native nCopySurfaceInto(Landroid/view/Surface;Landroid/graphics/Bitmap;)I
+.end method
+
+.method private static native nCreateProxy(ZJ)J
 .end method
 
 .method private static native nCreateProxy(ZJZ)J

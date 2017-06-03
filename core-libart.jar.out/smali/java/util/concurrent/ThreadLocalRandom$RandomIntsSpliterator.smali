@@ -107,7 +107,7 @@
     move-result-object v6
 
     :cond_1
-    invoke-virtual {v6, v1, v0}, Ljava/util/concurrent/ThreadLocalRandom;->internalNextInt(II)I
+    invoke-virtual {v6, v1, v0}, Ljava/util/concurrent/ThreadLocalRandom;->nextDouble(DD)D
 
     move-result v7
 
