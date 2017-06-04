@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s հավելվածի Android Wear համակարգը պետք է թարմացվի:</string>
+    <string name="common_android_wear_update_text">%1$s հավելվածը չի գործարկվի մինչև չթարմացնեք Android Wear համակարգը:</string>
+    <string name="common_android_wear_update_title">Թարմացնել Android Wear-ը</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s հավելվածի համար պահանջվում է մեկ կամ մի քանի Google Play ծառայություններ, որոնք այս պահին հասանելի չեն: Օգնություն ստանալու համար կապվեք մշակողի հետ:</string>
+    <string name="common_google_play_services_enable_button">Միացնել Google Play ծառայությունները</string>
+    <string name="common_google_play_services_enable_text">%1$s հավելվածը չի աշխատի մինչև չմիացնեք Google Play ծառայությունները:</string>
+    <string name="common_google_play_services_enable_title">Միացնել Google Play ծառայությունները</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s-ի հարցմամբ</string>
+    <string name="common_google_play_services_install_button">Տեղադրել Google Play ծառայությունները</string>
+    <string name="common_google_play_services_install_text_phone">%1$s հավելվածը չի աշխատի առանց Google Play ծառայությունների, որոնք չկան ձեր հեռախոսում:</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s հավելվածը չի աշխատի առանց Google Play ծառայությունների, որոնք չկան ձեր պլանշետում:</string>
+    <string name="common_google_play_services_install_title">Տեղադրեք Google Play ծառայությունները</string>
+    <string name="common_google_play_services_invalid_account_text">Նշված հաշիվը գոյություն չունի այս սարքում: Ընտրեք այլ հաշիվ:</string>
+    <string name="common_google_play_services_invalid_account_title">Հաշիվն անվավեր է</string>
+    <string name="common_google_play_services_needs_enabling_title">Ինչ-որ հավելված պահանջում է միացնել Google Play ծառայությունները:</string>
+    <string name="common_google_play_services_network_error_text">Պահանջվում է տվյալների կապ` Google Play ծառայություններին միանալու համար:</string>
+    <string name="common_google_play_services_network_error_title">Ցանցի սխալ կա</string>
+    <string name="common_google_play_services_notification_needs_update_title">Ինչ-որ հավելված պահանջում է թարմացնել Google Play ծառայությունները:</string>
+    <string name="common_google_play_services_notification_ticker">Google Play ծառայությունների սխալ կա</string>
+    <string name="common_google_play_services_sign_in_failed_text">Նշված հաշիվ մուտք գործելիս առաջացել է սխալ: Ընտրեք մեկ այլ հաշիվ:</string>
+    <string name="common_google_play_services_sign_in_failed_title">Մուտքը ձախողվեց</string>
+    <string name="common_google_play_services_unknown_issue">Անհայտ խնդիր՝ Google Play ծառայություններում:</string>
+    <string name="common_google_play_services_unsupported_text">%1$s հավելվածի համար հարկավոր են Google Play ծառայություններ, որոնք ձեր սարքը չի աջակցում: Օգնություն ստանալու համար կապվեք արտադրողի հետ:</string>
+    <string name="common_google_play_services_unsupported_title">Google Play ծառայություններ</string>
+    <string name="common_google_play_services_update_button">Նորացնել</string>
+    <string name="common_google_play_services_update_text">%1$s հավելվածը չի աշխատի մինչև չթարմացնեք Google Play ծառայությունները:</string>
+    <string name="common_google_play_services_update_title">Նորացրեք Google Play ծառայությունները</string>
+    <string name="common_google_play_services_updating_text">%1$s հավելվածը չի աշխատի առանց Google Play ծառայությունների, որոնք այս պահին թարմացվում են:</string>
+    <string name="common_google_play_services_updating_title">Google Play ծառայությունների թարմացում</string>
+    <string name="common_open_on_phone">Բացել հեռախոսում</string>
+    <string name="common_signin_button_text">Մուտք գործել</string>
+    <string name="common_signin_button_text_long">Մուտք գործեք Google-ով</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Լրացուցիչ բովանդակության չափը՝ %1$s %2$s</string>
+    <string name="STR_ALL">Բոլոր</string>
+    <string name="STR_APPS_DESCRIPTION">Ընտրեք ծառայության մատակարարի խորհուրդ տված ծրագրերը:</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Ձեր բոլոր ընտրած ծրագրերը ներբեռնվել են:</string>
+    <string name="STR_APP_BUTTON_CANCEL">Չեղարկել</string>
+    <string name="STR_APP_BUTTON_OK">Ընդունել</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Ընտրեք ծառայության մատակարարի խորհուրդ տված ծրագրերը:</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Ընտրեք ծրագրերը, որոնք ուզում եք տեղադրել:</string>
+    <string name="STR_APP_INSTALL_TITLE">Տեղադրել ծրագրեր</string>
+    <string name="STR_APP_STATE_CANCELED">Դադարեցված</string>
+    <string name="STR_APP_STATE_CONNECTING">Կապակցվում է…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Ներբեռնվում է…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Բեռնումն անհասանելի է:</string>
+    <string name="STR_APP_STATE_INSTALLED">Տեղադրված</string>
+    <string name="STR_APP_STATE_INSTALLING">Տեղադրում…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Տեղադրումը ձախողվեց</string>
+    <string name="STR_APP_STATE_WAITING">Սպասում է…</string>
+    <string name="STR_BTN_INSTALL">Տեղադրել</string>
+    <string name="STR_BTN_INSTALL_ALL">Տեղադրել բոլորը</string>
+    <string name="STR_BTN_SKIP">Բաց թողնել</string>
+    <string name="STR_BUTTON_NEXT">հաջորդ</string>
+    <string name="STR_CAUTION_BODY">Ներբեռնելուց հետո վերագործարկեք՝ թարմացումը տեղադրելու համար: Դուք չեք կարողանա օգտագործել հեռախոսը, նույնիսկ՝ արտակարգ իրավիճակի կանչեր կատարելու համար, քանի դեռ տեղադրումը չի ավարտվել:</string>
+    <string name="STR_CAUTION_BODY2">Թարմացումից հետո հնարավոր է, որ որոշ դրվածքներ հետադարձվեն իրենց կանխադրված արժեքներին:</string>
+    <string name="STR_CHARING_DIALOG">Շարժական տվյալների միջոցով ներբեռնումը կարող է լրացուցիչ վճարների հանգեցնել:</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Ներբեռնե՞լ շարժական տվյալների միջոցով:</string>
+    <string name="STR_CONNECTING_TO_SERVER">Միացում սերվերին…</string>
+    <string name="STR_CONNECT_FAIL">Միացումը ձախողվեց: Փորձեք ավելի ուշ:</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Ներբեռնվում են թարմացումներ…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Ներբեռնում…</string>
+    <string name="STR_DOWNLOAD_FAIL">Բեռնումը չհաջողվեց: Փորձեք քիչ ուշ:</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Նորագույն գործառական հնարավորություններն օգտագործելու համար ներբեռնեք և տեղադրեք այս ներկառուցված ծրագրի թարմացումը:</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Բեռնումը չհաջողվեց: Փորձեք քիչ ուշ:</string>
+    <string name="STR_FAILED_NOTI">Բեռնումն անհասանելի է:</string>
+    <string name="STR_INITIAL_NOTI">Թակեք այստեղ, որպեսզի ներբեռնելու համար ընտրեք խորհուրդ տրվող ծրագրեր:</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Թակեք այստեղ՝ թարմացումը ներբեռնելու և տեղադրելու համար:</string>
+    <string name="STR_INSTALLED_NOTI">%d տեղադրված</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Տեղադրել լրացուցիչ բովանդակություն</string>
+    <string name="STR_INSTALL_CAUTIONS">Զգուշացում</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Այս թարմացումը ներառում է որոշ ընտրովի ծրագրեր և բովանդակություն: Կախված ձեր վճարային պլանից կարող են լրացուցիչ վճարներ առաջանալ շարժական ցանցերի օգտագործման դեպքում:</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Բեռնված է:</string>
+    <string name="STR_INSTALL_FORCE">Ձեր ծրագրակազմի կարևոր թարմացումը ներբեռնվել է: Ձեր սարքը կվերագործարկվի %d վայրկյանից՝ տեղադրումը սկսելու համար:</string>
+    <string name="STR_KILOBYTE">ԿԲ</string>
+    <string name="STR_LINK_LEARNMORE">Իմացեք ավելին</string>
+    <string name="STR_MEGABYTE">ՄԲ</string>
+    <string name="STR_NEED_WIFI">Ծրագրեր ներբեռնելու համար հարկավոր է միացված լինել Wi-Fi-ին: Միացեք Wi-Fi-ին և նորից փորձեք:</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi միացում չկա</string>
+    <string name="STR_NETWORK_FAIL">Ցանցը մատչելի չէ: Ավելի ուշ նորից փորձեք:</string>
+    <string name="STR_NO_APPS">Ծրագրեր չկան</string>
+    <string name="STR_NO_CONTENT">Ձեր ծառայության մատակարարի թողարկած ծրագրերը կցուցադրվեն այստեղ:</string>
+    <string name="STR_NO_ITEMS">Տարրեր չկան</string>
+    <string name="STR_NO_ITEM_SELECTED">Որևէ տարր ընտրված չէ:</string>
+    <string name="STR_OMC_HEADER">Ծառայության մատակարարի թարմացում</string>
+    <string name="STR_OMC_SIZE">Չափը՝ %s</string>
+    <string name="STR_OMC_TITLE">Կազմաձևի թարմացում</string>
+    <string name="STR_OMC_VERSION">Վարկած՝ %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Օպերատորի դրվածքներ</string>
+    <string name="STR_PROCESS_FAIL">Մշակումը ձախողվեց:</string>
+    <string name="STR_PROVIDER_APPS">Ծառայության մատակարարի ծրագրեր</string>
+    <string name="STR_REGISTERING_DEVICE">Սարքը գրանցվում է…</string>
+    <string name="STR_REGISTER_FAIL">Գրանցումը ձախողվեց:</string>
+    <string name="STR_REGISTER_SUCCESS">Սարքը գրանցվեց:</string>
+    <string name="STR_RESTART_BTN_LATER">Ավելի ուշ</string>
+    <string name="STR_RESTART_BTN_RESTART">Վերագործ.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Ծառայության մատակարարի ծրագրակազմի թարմացումը վերջացնելու համար հարկավոր է վերագործարկել հեռախոսը:</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Ծառայության մատակարարի ծրագրակազմի թարմացումը վերջացնելու համար հարկավոր է վերագործարկել պլանշետը:</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Վերագործարկե՞լ:</string>
+    <string name="STR_RESTART_PHONE">Վերագործարկել հեռախոսը</string>
+    <string name="STR_RESTART_TABLET">Վերագործարկել պլանշետը</string>
+    <string name="STR_SELECT_ALL">Հետևյալ ծրագրերից բոլորը</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Կարևոր ծրագրեր</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Տվյալների փոխանցման համար վճարներ չեն գանձվում ստորև նշված ծրագրերի ներբեռնման դեպքում:</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Ստորև թակեք տարր՝ դրա մասին ավելին իմանալու համար:</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Ծրագրերը կներբեռնվեն Wi-Fi-ով:</string>
+    <string name="STR_SUW_TITLE">Ծրագրեր ստացեք ծառայության մատակարարից</string>
+    <string name="STR_UPDATE_BODY1">Շարժական տվյալների միջոցով ներբեռնումը կարող է լրացուցիչ վճարների հանգեցնել:</string>
+    <string name="STR_UPDATE_BODY2">Հեռախոսը կվերագործարկվի թարմացման տեղադրումից հետո:</string>
+    <string name="STR_UPDATE_FAIL">Թարմացումը ձախողվեց: Նորից փորձեք:</string>
+    <string name="STR_UPDATE_HEADER1">Ձեր ծառայության մատակարարից ներբեռնեք և տեղադրեք ամենանոր ծրագրակազմը:</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Ձեզնից վճար չի գանձվի այս ներկառուցված ծրագրի տեղադրման համար:
+
+- Դուք տեղադրման ընթացքում ընդհանրապես չեք կարողանա օգտագործել Ձեր սարքը, նույնիսկ՝ արտակարգ իրավիճակի կանչերի համար:
+
+- Հնարավոր է, որ հիմնական էկրանի վրայի պատկերակներն ու սարքի դրվածքները հետադարձվեն դեպի իրենց կանխադրվածքները, և անհրաժեշտ լինի վերակազմաձևել տեղադրումից հետո:
+
+- Ներկառուցված ծրագրի թարմացումը պիտի չազդի Ձեր սարքի ֆայլերի և տվյալների վրա:
+
+- Սակայն, եթե նախքան ավարտվելը կանգնեցնեք տեղադրման գործընթացը, հնարավոր է, որ սարքը նորմալ չաշխատի, և արդյունքում կարող են կորչել Ձեր ֆայլերը:
+
+- Տվյալների անսպասելի կորստից խուսափելու համար խորհուրդ ենք տալիս տեղադրումից առաջ կրկնօրինակել կարևոր տվյալները:"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Վերագործարկեք՝ ծառայության մատակարարի ծրագրակազմի թարմացումը վերջացնելու համար:</string>
+    <string name="STR_UPDATING_PACKAGE">Թարմացնում է…</string>
+    <string name="STR_USE_DATA_BTN">Օգտագործել տվյալներ</string>
+    <string name="STR_WAIT_FOR_WIFI">"Ծրագրի տեղադրումն ընդմիջվեց:
+Wi-Fi-ի սպասում ծրագրերի տեղադրման համար:"</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Սպասել Wi-Fi-ին</string>
+    <string name="STR_WIDGET_DEFAULT">Տեղադրեք ծառայության մատակարարի խորհուրդ տված ծրագրերը:</string>
+    <string name="STR_WIDGET_DOWNLOADING">Ներբեռնվում է…</string>
+    <string name="STR_WIDGET_INSTALLED">Տեղադրված է</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Կոճակ</string>
+    <string name="WSS_STR_NO_UPDATE">Ամենավերջին թարմացումներն արդեն տեղադրվել են:</string>
+</resources>

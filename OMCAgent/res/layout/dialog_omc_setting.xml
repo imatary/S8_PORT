@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textTestSetting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NTSTR_SETTING_OMC_TEST" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/textTestMcc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NTSTR_MCC" />
+        <EditText android:id="@id/editTestMcc" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number" android:labelFor="@id/editTestMcc" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NTSTR_MNC" />
+        <EditText android:id="@id/editTestMnc" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number" android:labelFor="@id/editTestMnc" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NTSTR_SPN" />
+        <EditText android:id="@id/editTestSpn" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" android:labelFor="@id/editTestSpn" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NTSTR_GID" />
+        <EditText android:id="@id/editTestGid" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" android:labelFor="@id/editTestGid" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NTSTR_SUBSET" />
+        <EditText android:id="@id/editTestSubset" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" android:labelFor="@id/editTestSubset" />
+    </LinearLayout>
+</LinearLayout>

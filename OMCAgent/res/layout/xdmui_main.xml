@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="dmmain"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/WSS_STR_TITLE" android:key="startdm" android:summary="@string/WSS_STR_SUMMARY" android:defaultValue="true" />
+    <Preference android:title="@string/WSS_STR_SETTING" android:key="settingdm" android:summary="@string/WSS_STR_SETTINGSummary" android:defaultValue="true" />
+</PreferenceScreen>

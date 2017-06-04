@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s Android Тагынма колдонмосунун жаңыртылышын талап кылат.</string>
+    <string name="common_android_wear_update_text">Android Тагынма колдонмосу жаңыртылмайынча %1$s иштебейт.</string>
+    <string name="common_android_wear_update_title">Android Тагынманы жаңыртуу</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s учурда жеткиликсиз бир же бир нече Google Play кызматтарын талап кылууда. Жардам үчүн өндүрүүчүгө кайрылыңыз.</string>
+    <string name="common_google_play_services_enable_button">Google Play кызматтарын иштетүү</string>
+    <string name="common_google_play_services_enable_text">Google Play кызматтарын иштетмейиңизче %1$s иштебейт.</string>
+    <string name="common_google_play_services_enable_title">Google Play кызматтарын иштетүү</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s сурап жатат</string>
+    <string name="common_google_play_services_install_button">Google Play кызматтарын алуу</string>
+    <string name="common_google_play_services_install_text_phone">Google Play кызматтарысыз %1$s иштебейт, алар телефонуңузда жок болуп жатат.</string>
+    <string name="common_google_play_services_install_text_tablet">Google Play кызматтарысыз %1$s иштебейт, алар планшетиңизде жок болуп жатат.</string>
+    <string name="common_google_play_services_install_title">Google Play кызматтарын алуу</string>
+    <string name="common_google_play_services_invalid_account_text">Көрсөтүлгөн каттоо эсеби бул түзмөктө жок. Башка каттоо эсебин тандаңыз.</string>
+    <string name="common_google_play_services_invalid_account_title">Каттоо эсеби жараксыз</string>
+    <string name="common_google_play_services_needs_enabling_title">Колдонмону иштетүү үчүн, Google Play Кызматтарын иштетүү керек.</string>
+    <string name="common_google_play_services_network_error_text">Google Play Кызматтарына туташуу үчүн, дайындарды өткөрүүчү туташуу талап кылынат.</string>
+    <string name="common_google_play_services_network_error_title">Тармак катасы</string>
+    <string name="common_google_play_services_notification_needs_update_title">Колдонмону иштетүү үчүн, Google Play Кызматтарын жаңыртуу керек.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play кызматтарынын катасы</string>
+    <string name="common_google_play_services_sign_in_failed_text">Белгиленген каттоо эсепке кирүү катасы. Башка каттоо эсебин тандаңыз.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Кирүү ишке ашкан жок</string>
+    <string name="common_google_play_services_unknown_issue">Google Play кызматтарында келип чыккан белгисиз көйгөй.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s Google Play кызматтарына ишенет, аларды түзмөгүңүз колдоого албайт. Жардам үчүн өндүрүүчүгө кайрылыңыз.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play кызматтары</string>
+    <string name="common_google_play_services_update_button">Жаңыртуу</string>
+    <string name="common_google_play_services_update_text">Google Play кызматтары жаңыртылмайынча %1$s иштебейт.</string>
+    <string name="common_google_play_services_update_title">Google Play кызматтарын жаңыртуу</string>
+    <string name="common_google_play_services_updating_text">Google Play кызматтарысыз %1$s иштебейт, алар учурда жаңыртылууда.</string>
+    <string name="common_google_play_services_updating_title">Google Play кызматтары жаңыртылууда</string>
+    <string name="common_open_on_phone">Телефондо ачык</string>
+    <string name="common_signin_button_text">Кирүү</string>
+    <string name="common_signin_button_text_long">Google менен кирүү</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Кошумча мазмун өлчөмү: %1$s %2$s</string>
+    <string name="STR_ALL">Баары</string>
+    <string name="STR_APPS_DESCRIPTION">Кызмат тейлөөчүңуз сунуштаган колдонмолорду тандаңыз.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Сиздин бардык тандалган колдонмолоруңуз жүктөлдү.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Артка</string>
+    <string name="STR_APP_BUTTON_OK">ОК</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Кызмат тейлөөчүңуз сунуштаган колдонмолорду тандаңыз.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Сиз орнотууну каалаган колдонмолорду тандаңыз.</string>
+    <string name="STR_APP_INSTALL_TITLE">Колдонмолорду орнотуу</string>
+    <string name="STR_APP_STATE_CANCELED">Токтотулду</string>
+    <string name="STR_APP_STATE_CONNECTING">Туташууда…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Жүктөөдө…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Жүктөө ишке ашпады</string>
+    <string name="STR_APP_STATE_INSTALLED">Орнотулган</string>
+    <string name="STR_APP_STATE_INSTALLING">Орнотууда…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation failed</string>
+    <string name="STR_APP_STATE_WAITING">Күтүүдө…</string>
+    <string name="STR_BTN_INSTALL">Орнотуу</string>
+    <string name="STR_BTN_INSTALL_ALL">Баарын орнотуу</string>
+    <string name="STR_BTN_SKIP">Өткөрүп жиберүү</string>
+    <string name="STR_BUTTON_NEXT">Кийинки</string>
+    <string name="STR_CAUTION_BODY">Жүктөлгөндөн кийин, жаңыртууну орнотуу үчүн кайра күйгүзүңүз. Орнотууну бүтүрө электе, сиз телефонуңузду, шашылыш кырдаал чалуулары үчүн дагы колдоно албайсыз.</string>
+    <string name="STR_CAUTION_BODY2">Жаңыртылгандан кийин, айрым орнотуулар баштапкы мааниларга чейин кайра коюлушу мүмкүн.</string>
+    <string name="STR_CHARING_DIALOG">Жүктөлуп жаткан мобилдик маалымат кошумча төлөмдү алып келиши мүмкүн.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Мобил. маалымат аркылуу жүктөп киргиз-би?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Серверге туташууда…</string>
+    <string name="STR_CONNECT_FAIL">Connection failed. Try later.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Жаңыртууларды жүктөөдө…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Жүктөлүүдө…</string>
+    <string name="STR_DOWNLOAD_FAIL">Жүктөө ишке ашпады. Кийинирээк аракет кылыңыз.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Акыркы өзгөчөлүктөрдү колдонуу үчүн, бул программа жаңыртуусун жүктөп, орнотуңуз.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Жүктөө ишке ашпады. Кийинирээк аракет кылыңыз.</string>
+    <string name="STR_FAILED_NOTI">Жүктөө ишке ашпады</string>
+    <string name="STR_INITIAL_NOTI">Жүктөө үчүн сунушталган колдонмолорду тандоо үчүн бул жерди басыңыз.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Жаңыртууну жүктөө жана орнотуу үчүн бул жерди басыңыз.</string>
+    <string name="STR_INSTALLED_NOTI">%d орнотулду</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Кошумча мазмун орнотуу</string>
+    <string name="STR_INSTALL_CAUTIONS">Этият болуңуз</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Бул жаңыртуу айрым тандоого мүмкүн болгон колдонмолорду жана мазмунду камтыйт. Мобилдик тармактар аркылуу жүктөө, төлөө планыңызга жараша кошумча төлөмдөргө алып келиши мүмкүн.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Жүктөлдү</string>
+    <string name="STR_INSTALL_FORCE">Олуттуу программа жаңыртууларыңыз жүктөлдү. Орнотууну баштоо үчүн, түзмөгүңүз %d секунданын ичинде кайра күйгүзүлөт.</string>
+    <string name="STR_KILOBYTE">КБ</string>
+    <string name="STR_LINK_LEARNMORE">Көбүрөөк билүү</string>
+    <string name="STR_MEGABYTE">МБ</string>
+    <string name="STR_NEED_WIFI">"Сизге колдонмолорду жүктөө үчүн Wi-Fi'га туташууңуз керек. Wi-Fi'га туташыңыз жана дагы аракеттениңиз."</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi туташуусу жок</string>
+    <string name="STR_NETWORK_FAIL">Тармак байкалбайт. Кийинирээк дагы аракет кылыңыз.</string>
+    <string name="STR_NO_APPS">Колдонмолор жок</string>
+    <string name="STR_NO_CONTENT">Кызмат тейлөөчүңүздөн алынган мүмкүн болгон колдонмолор бул жерде көрсөтүлөт.</string>
+    <string name="STR_NO_ITEMS">Эч нерсе жок</string>
+    <string name="STR_NO_ITEM_SELECTED">Эч нерсе тандалган жок</string>
+    <string name="STR_OMC_HEADER">Кызмат тейлөөчү жаңыртуусу</string>
+    <string name="STR_OMC_SIZE">Көлөмү: %s</string>
+    <string name="STR_OMC_TITLE">Конфигурация жаңыртуусу</string>
+    <string name="STR_OMC_VERSION">Версия: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Оператор орнотуулары</string>
+    <string name="STR_PROCESS_FAIL">Иштетүү кыйрады</string>
+    <string name="STR_PROVIDER_APPS">Кызмат тейлөөчү колдонмолору</string>
+    <string name="STR_REGISTERING_DEVICE">Түзмөктү каттоодо…</string>
+    <string name="STR_REGISTER_FAIL">Каттоо ишке ашпады</string>
+    <string name="STR_REGISTER_SUCCESS">Түзмөк катталды</string>
+    <string name="STR_RESTART_BTN_LATER">Кийинче.</string>
+    <string name="STR_RESTART_BTN_RESTART">Кайра ишт.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Кызмат тейлөөчүңүздүн программдык жаңыртуусун орнотууну бүтүрүү үчүн, сизге телефонуңузду кайра иштетүү керек.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Кызмат тейлөөчүңүздүн программдык жаңыртуусун орнотууну бүтүрүү үчүн, сизге планшетиңизди кайра иштетүү керек.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Кайра жүргүзүлсүнбү?</string>
+    <string name="STR_RESTART_PHONE">Телефонду кайра жүргүзүү</string>
+    <string name="STR_RESTART_TABLET">Планшетти кайра жүргүзүү</string>
+    <string name="STR_SELECT_ALL">Төмөнкү колдонмолордун бардыгы</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Керектүү колдонмолор</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Төмөндөгү колдонмолорду жүктөө боюнча бир да маалымат төлөмү колдонулбайт.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Төмөндө нерсе жөнүндө көбүрөөк үйрөнүүгө, аны басыңыз.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Колдонмолор Wi-Fi аркылуу жүктөлөт.</string>
+    <string name="STR_SUW_TITLE">Кызмат тейлөөчүдөн колдонмолорду алуу</string>
+    <string name="STR_UPDATE_BODY1">Жүктөлуп жаткан мобилдик маалымат кошумча төлөмдү алып келиши мүмкүн.</string>
+    <string name="STR_UPDATE_BODY2">Телефонуңуз жаңыртуу орнотулгандан кийин кайра иштетилет.</string>
+    <string name="STR_UPDATE_FAIL">Update failed. Try again.</string>
+    <string name="STR_UPDATE_HEADER1">Кызмат тейлөөчүңүздөн акыркы программдык камсыздоону жүктөп жана орнотуңуз.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Сизден бул программанын орнотулушуна төлөм алынбайт.
+
+- Орнотуу учурунда, сиз түзмөгүңүздү такыр колдоно албайсыз, керек болсо шашылыш кырдаал чалуулары үчүн дагы.
+
+- Башкы экрандагы сүрөтчөлөр жана түзмөк орнотуулары баштапкыларына кайра коюлат жана орнотуудан кийин кайра конфигурацияланышы керек болушу мүмкүн.
+
+- Программа жаңыртуусу түзмөгүңуздөгү файлдарга жана маалыматтарга таасирин тийгизбөөсү керек.
+
+- Бирок, эгер сиз орнотууну аягына чыга электе токтото турган болсоңуз, түзмөгүңүз дурус иштебей калышы жана жыйынтыгында файлдарыңыз жоголушу мүмкүн.
+
+- Күтүлбөгөн маалымат жоготуусунун алдын алуу үчүн, орнотуудан мурун маанилүү маалыматтарыңызды камдык сактооңузду сунуштайбыз."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Тейлөө кызматыңыздын программдык камсыздоо жаңыртусун орнотуу үчун кайра баштоо.</string>
+    <string name="STR_UPDATING_PACKAGE">Жаңыртууда…</string>
+    <string name="STR_USE_DATA_BTN">Маалыматтарды колдонуу</string>
+    <string name="STR_WAIT_FOR_WIFI">"Колдонмону орнотуу тынытылды.
+Колдонмолорду орнотуу үчүн Wi-Fi'ды күтүп жатабыз."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">"Wi-Fi'ды күтүү"</string>
+    <string name="STR_WIDGET_DEFAULT">Кызмат тейлөөчүңүз тарабынан сунушталган колдонмолорду орнотуңуз.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Жүктөөдө…</string>
+    <string name="STR_WIDGET_INSTALLED">Орнотулду</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Баскыч</string>
+    <string name="WSS_STR_NO_UPDATE">Эң акыркы жаңыртуулар эчак орнотулган</string>
+</resources>

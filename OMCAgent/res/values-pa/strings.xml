@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_APP_INSTALL_CONFIRM">ਉਨ੍ਹਾਂ ਐਪਸ ਨੂੰ ਚੁਣੋ ਜਿਨ੍ਹਾਂ ਨੂੰ ਤੁਸੀਂ ਸਥਾਪਿਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ।</string>
+    <string name="STR_APP_INSTALL_TITLE">ਐਪਸ ਸਥਾਪਿਤ ਕਰੋ</string>
+    <string name="STR_APP_STATE_CANCELED">ਰੱਦ</string>
+    <string name="STR_APP_STATE_CONNECTING">ਕਨੈਕਟ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ਡਾਉਨਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ਡਾਉਨਲੋਡ ਅਸਫਲ।</string>
+    <string name="STR_APP_STATE_INSTALLED">ਸਥਾਪਿਤ</string>
+    <string name="STR_APP_STATE_INSTALLING">ਸਥਾਪਿਤ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">ਸਥਾਪਨਾ ਅਸਫਲ</string>
+    <string name="STR_APP_STATE_WAITING">ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…</string>
+    <string name="STR_BTN_INSTALL">ਸਥਾਪਿਤ ਕਰੋ</string>
+    <string name="STR_BTN_INSTALL_ALL">ਸਾਰੇ ਸਥਾਪਿਤ ਕਰੋ</string>
+    <string name="STR_BUTTON_NEXT">ਅੱਗੇ</string>
+    <string name="STR_CONNECTING_TO_SERVER">ਸਰਵਰ ਨਾਲ ਕਨੈਕਟ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="STR_DOWNLOADING_PACKAGE">ਅਪਡੇਟਸ ਡਾਉਨਲੋਡ ਹੋ ਰਹੇ ਹਨ…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ਡਾਉਨਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="STR_DOWNLOAD_FAIL">ਡਾਉਨਲੋਡ ਅਸਫਲ।</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">ਨਵੀਨਤਮ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ, ਫਰਮਵੇਅਰ ਅਪਡੇਟ ਨੂੰ ਡਾਉਨਲੋਡ ਅਤੇ ਸਥਾਪਿਤ ਕਰੋ।</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ਡਾਉਨਲੋਡ ਅਸਫਲ। ਬਾਅਦ ਵਿੱਚ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="STR_INSTALL_CAUTIONS">ਸਾਵਧਾਨ</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ਡਾਉਨਲੋਡ ਹੋਇਆ।</string>
+    <string name="STR_INSTALL_FORCE">ਤੁਹਾਡੇ ਮਹੱਤਵਪੂਰਨ ਸੌਫਟਵੇਅਰ ਅਪਡੇਟ ਨੂੰ ਡਾਉਨਲੋਡ ਕੀਤਾ ਗਿਆ ਹੈ। ਸਥਾਪਨਾ ਅਰੰਭ ਕਰਨ ਲਈ ਤੁਹਾਡਾ ਡਿਵਾਈਸ %d ਸਕਿੰਟ ਵਿੱਚ ਮੁੜ ਅਰੰਭ ਹੋ ਜਾਵੇਗਾ।</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NETWORK_FAIL">ਨੈੱਟਵਰਕ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="STR_NO_ITEMS">ਕੋਈ ਆਈਟਮਸ ਨਹੀਂ</string>
+    <string name="STR_NO_ITEM_SELECTED">ਕੋਈ ਵੀ ਆਈਟਮ ਚੁਣੀ ਨਹੀਂ ਗਈ।</string>
+    <string name="STR_OMC_SIZE">ਆਕਾਰ: %s</string>
+    <string name="STR_OMC_TITLE">ਕੌਨਫਿਗਰੇਸ਼ਨ ਅਪਡੇਟ</string>
+    <string name="STR_OMC_VERSION">ਸੰਸਕਰਣ: %s</string>
+    <string name="STR_PROCESS_FAIL">ਪ੍ਰਕਿਰਿਆ ਕਰਨਾ ਅਸਫਲ।</string>
+    <string name="STR_REGISTERING_DEVICE">ਡਿਵਾਈਸ ਰਜਿਸਟਰ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="STR_REGISTER_FAIL">ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਅਸਫਲ।</string>
+    <string name="STR_REGISTER_SUCCESS">ਡਿਵਾਈਸ ਰਜਿਸਟਰ ਹੋਇਆ।</string>
+    <string name="STR_UPDATE_FAIL">ਅਪਡੇਟ ਅਸਫਲ ਹੋਇਆ। ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"ਇਸ ਸੌਫਟਵੇਅਰ ਸਥਾਪਨਾ ਲਈ ਤੁਹਾਡੇ ਤੋਂ ਖਰਚਾ ਨਹੀਂ ਲਿਆ ਜਾਵੇਗਾ।
+- ਸਥਾਪਨਾ ਦੇ ਦੌਰਾਨ, ਤੁਸੀਂ ਆਪਣੇ ਡਿਵਾਈਸ ਨੂੰ ਬਿਲਕੁੱਲ ਵੀ ਨਹੀਂ ਵਰਤ ਸਕਦੇ, ਅਪਾਤਕਾਲ ਕਾੱਲਸ ਲਈ ਵੀ ਨਹੀਂ।
+- ਹੋਮ ਸਕ੍ਰੀਨ ਦੇ ਪ੍ਰਤੀਰੂਪ ਅਤੇ ਡਿਵਾਈਸ ਸੈੱਟਿੰਗਸ ਉਨ੍ਹਾਂ ਦੇ ਡਿਫਾੱਲਟਸ ਤੇ ਰੀਸੈੱਟ ਹੋ ਸਕਦੀਆਂ ਹਨ ਅਤੇ ਸਥਾਪਨਾ ਤੋਂ ਬਾਅਦ ਉਨ੍ਹਾਂ ਨੂੰ ਦੁਬਾਰਾ ਕੌਨਫਿਗਰ ਕਰਨ ਦੀ ਲੋੜ ਹੋ ਸਕਦੀ ਹੈ।
+- ਸੌਫਟਵੇਅਰ ਅਪਡੇਟ ਨੂੰ ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਦੀਆਂ ਫਾਈਲਾਂ ਅਤੇ ਡੈਟਾ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ।
+- ਅਚਾਨਕ ਡੈਟਾ ਲੁਪਤ ਹੋਣ ਤੋਂ ਬਚਾਉਣ ਲਈ, ਅਸੀਂ ਸਿਫਾਰਿਸ਼ ਕਰਦੇ ਹਾਂ ਕਿ ਤੁਸੀਂ ਸਥਾਪਨਾ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਮਹੱਤਵਪੂਰਨ ਡੈਟਾ ਦਾ ਬੈਕ ਅਪ ਲੈ ਲਉ।"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">ਤੁਹਾਡਾ ਡਿਵਾਈਸ ਹੁਣ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਹੋ ਜਾਵੇਗਾ ਅਤੇ ਅਪਡੇਟਸ ਸਥਾਪਿਤ ਕਰੇਗਾ।</string>
+    <string name="STR_UPDATING_PACKAGE">ਅਪਡੇਟ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">ਬਟਨ</string>
+    <string name="WSS_STR_NO_UPDATE">ਨਵੀਨਤਮ ਅਪਡੇਟਸ ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਸਥਾਪਿਤ ਕੀਤੇ ਗਏ ਹਨ।</string>
+</resources>

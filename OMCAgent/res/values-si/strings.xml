@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">අතිරේක අන්තර්ගත ප්‍රමාණය: %1$s %2$s</string>
+    <string name="STR_ALL">සියල්ල</string>
+    <string name="STR_APPS_DESCRIPTION">ඔබේ සේවා සැපයුම්කරු විසින් නිර්දේශිත යෙදුම් තෝරන්න.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">ඔබේ තෝරාගත් යෙදුම් සියල්ල බාගැනිණි.</string>
+    <string name="STR_APP_BUTTON_CANCEL">අවල. කර.</string>
+    <string name="STR_APP_BUTTON_OK">හරි</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">ඔබේ සේවා සැපයුම්කරු විසින් නිර්දේශිත යෙදුම් තෝරන්න.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">ඔබට ස්ථාපනය කිරීමට අවශ්‍ය යෙදුම් තෝරන්න.</string>
+    <string name="STR_APP_INSTALL_TITLE">යෙදුම් ස්ථාපනය</string>
+    <string name="STR_APP_STATE_CANCELED">අවලංගු කෙරිණි</string>
+    <string name="STR_APP_STATE_CONNECTING">සබැඳෙමින්…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">බාගනිමින්…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">බාගැනීම අසාර්ථකයි.</string>
+    <string name="STR_APP_STATE_INSTALLED">ස්ථාපිත</string>
+    <string name="STR_APP_STATE_INSTALLING">ස්ථාපනය කරමින්…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">ස්ථාපනය අසමත් විය</string>
+    <string name="STR_APP_STATE_WAITING">රැඳී සිටිමින්…</string>
+    <string name="STR_BTN_INSTALL">ස්ථාපනය ක.</string>
+    <string name="STR_BTN_INSTALL_ALL">සියල්ලම ස්ථාපනය කරන්න</string>
+    <string name="STR_BTN_SKIP">මඟහරින්න‍</string>
+    <string name="STR_BUTTON_NEXT">ඊලඟ</string>
+    <string name="STR_CAUTION_BODY">බාගැනීමෙන් පසුව, යාවත්කාලය ස්ථාපනය කිරීමට යළි අරඹන්න. ඔබට ස්ථාපනය අවසන් වන තුරු, හදිසි ඇමතුම් ගැනීමට පවා, ඔබේ දුරකථනය භාවිතා කිරීමට නොහැකි වනු ඇත.</string>
+    <string name="STR_CAUTION_BODY2">යාවත්කාලයට පසුව, ඇතැම් සැකසුම් ඒවායේ පෙරනිමි අගයන්ට යළි සැකසිය හැක.</string>
+    <string name="STR_CHARING_DIALOG">ජංගම දත්ත භාවිතයෙන් බාගැනීමේ ප්‍රතිඵලයක් ලෙස අතිරේක ගාස්තු අය විය හැක.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">ජංගම දත්ත භාවිතයෙන් බාගන්න ද?</string>
+    <string name="STR_CONNECTING_TO_SERVER">සර්වරයට සම්බන්ධ වෙමින්…</string>
+    <string name="STR_CONNECT_FAIL">සම්බන්ධතාවය අසමත් විය. පසුව උත්සහ කරන්න.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">යාවත්කාලීන බාගනිමින්…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">බාගනිමින්…</string>
+    <string name="STR_DOWNLOAD_FAIL">බාගැනීම අසමත්. පසුව උත්සාහ කරන්න.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">නවතම විශේෂාංග භාවිතා කිරීමට, මෙම ස්ථීරාංග යාවත්කාලීනය බාගෙන ස්ථාපනය කරන්න.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">බාගැනීම අසමත්. පසුව උත්සාහ කරන්න.</string>
+    <string name="STR_FAILED_NOTI">බාගැනීම අසාර්ථකයි.</string>
+    <string name="STR_INITIAL_NOTI">බාගැනීමට නිර්දේශිත යෙදුම් තේරීමට මෙතැන තට්ටු කරන්න.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">යාවත්කාලය බාගෙන ස්ථාපනය කිරීමට මෙතැන තට්ටු කරන්න.</string>
+    <string name="STR_INSTALLED_NOTI">%d ස්ථාපිතයි</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">අතිරේක අන්තර්ගතය ස්ථාපනය කරන්න</string>
+    <string name="STR_INSTALL_CAUTIONS">අවවාදයයි</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">මෙම යාවත්කාලයෙහි ඇතැම් විකල්ප යෙදුම් සහ අන්තර්ගතය ඇතුළත් වේ. ජංගම ජාල ඔස්සේ බාගැනීමේ ප්‍රතිඵලයක් ලෙස ඔබේ ගෙවීම් සැලැස්ම මත පදනම්ව අතිරේක ගාස්තු අය විය හැක.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">බාගැනින.</string>
+    <string name="STR_INSTALL_FORCE">ඔබේ වැදගත් මෘදුකාංග යාවත්කාලය බා ගෙන තිබේ. ස්ථාපනය ඇරඹීමට ඔබේ උපාංගය තත්පර %d කින් ස්වයංක්‍රියව යළි ඇරඹෙනු ඇත.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">වැඩිදුර දැනගන්න</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">යෙදුම් බාගැනීම සඳහා ඔබ Wi-Fi වෙත සම්බන්ධ වීමට අවශ්‍ය වේ. Wi-Fi වෙත සම්බන්ධ වී නැවත උත්සාහ කරන්න.</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi සබැඳුමක් නැත</string>
+    <string name="STR_NETWORK_FAIL">ජාලය නොපවතී. පසුව නැවත උත්සාහ කරන්න.</string>
+    <string name="STR_NO_APPS">යෙදුම් නැත</string>
+    <string name="STR_NO_CONTENT">ඔබේ සේවා සැපයුම්කරුගෙන් මුදා හැර ඇති පවතින යෙදුම් මෙතැන පෙන්වනු ඇත.</string>
+    <string name="STR_NO_ITEMS">අයිතම නැත</string>
+    <string name="STR_NO_ITEM_SELECTED">අයිතම තෝරා නොමැත.</string>
+    <string name="STR_OMC_HEADER">සේවා සැපයුම්කරු යාවත්කාලය</string>
+    <string name="STR_OMC_SIZE">ප්‍රමාණය: %s</string>
+    <string name="STR_OMC_TITLE">වින්‍යාසකරණ යාවත්කාලීනය</string>
+    <string name="STR_OMC_VERSION">අනුවාදය: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">ක්‍රියාකරු සැකසුම්</string>
+    <string name="STR_PROCESS_FAIL">සැකසීම අසාර්ථකයි.</string>
+    <string name="STR_PROVIDER_APPS">සේවා සැපයුම්කරු යෙදුම්</string>
+    <string name="STR_REGISTERING_DEVICE">උපාංගය ලියාපදිංචි කරමින්…</string>
+    <string name="STR_REGISTER_FAIL">ලියාපදිංචිය අසාර්ථකයි.</string>
+    <string name="STR_REGISTER_SUCCESS">උපාංගය ලියාපදිංචි කෙරිණි.</string>
+    <string name="STR_RESTART_BTN_LATER">පසුව</string>
+    <string name="STR_RESTART_BTN_RESTART">යළි අරඹන්න</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">ඔබේ සේවා සැපයුම්කරු මෘදුකාංග යාවත්කාලය ස්ථාපනය අවසන් කිරීම සඳහා, ඔබට ඔබේ දුරකථනය යළි ඇරඹීමට අවශ්‍ය වේ.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">ඔබේ සේවා සැපයුම්කරු මෘදුකාංග යාවත්කාලය ස්ථාපනය අවසන් කිරීම සඳහා, ඔබට ඔබේ ටැබ්ලටය යළි ඇරඹීමට අවශ්‍ය වේ.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">යළි අරඹන්න ද?</string>
+    <string name="STR_RESTART_PHONE">දුරකථනය යළි අරඹන්න</string>
+    <string name="STR_RESTART_TABLET">ටැබ්ලටය යළි අරඹන්න</string>
+    <string name="STR_SELECT_ALL">පහත සඳහන් යෙදුම් සියල්ල</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">අත්‍යාවශ්‍ය යෙදුම්</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">පහත යෙදුම් බාගැනීම සඳහා කිසිදු දත්ත ගාස්තුවක් අදාළ නොවේ.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">අයිතමයක් ගැන වැඩිදුර දැන ගැනීම සඳහා ඒ මත තට්ටු කරන්න.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">යෙදුම් Wi-Fi හරහා බාගැනෙනු ඇත.</string>
+    <string name="STR_SUW_TITLE">සේවා සැපයුම්කරුගෙන් යෙදුම් ලබා ගන්න</string>
+    <string name="STR_UPDATE_BODY1">ජංගම දත්ත භාවිතයෙන් බාගැනීමේ ප්‍රතිඵලයක් ලෙස අතිරේක ගාස්තු අය විය හැක.</string>
+    <string name="STR_UPDATE_BODY2">යාවත්කාලය ස්ථාපිත වූ පසුව ඔබේ දුරකථනය යළි ඇරඹෙනු ඇත.</string>
+    <string name="STR_UPDATE_FAIL">යාවත්කාලීන කිරීම අසමත් විය. නැවත උත්සාහ කරන්න</string>
+    <string name="STR_UPDATE_HEADER1">ඔබේ සේවා සැපයුම්කරුගෙන් නවතම මෘදුකාංගය බාගෙන ස්ථාපනය කරන්න.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- මෙම ස්ථීරාංග ස්ථාපනයට ඔබෙන් අය කරනු නොලැබේ.
+
+- ස්ථාපනය අතරතුර, හදිසි ඇමතුම්වලට පවා, ඔබට ඔබේ උපාංගය භාවිතා කිරීමට නොහැකි වනු ඇත.
+
+- මුල් තිරය සහ උපාංග සැකසුම් මත ඇති අයිකන ඒවායේ පෙරනිමියට යළි සැකසෙනු ඇති අතර ස්ථාපනයට පසුව නැවත වින්‍යාස කිරීමට අවශ්‍ය විය හැක.
+
+- ස්ථිරාංග යාවත්කාලීනයක් ඔබේ උපාංගය මත ඇති ගොනු සහ දත්තවලට බලපෑමක් ඇති නොකළ යුතුය.
+
+- කෙසේ නමුත්, ඔබ ස්ථාපන ක්‍රියාදාමය අවසන් වීමට පෙර නැවැත්තුවහොත්, එහි ප්‍රතිඵලයක් ලෙස ඔබේ උපාංගය සාමාන්‍ය පරිදි වැඩ නොකිරීම සහ ඔබේ ගොනු අහිමි විය හැක.
+
+- අනපේක්ෂිත දත්ත අහිමි වී යාමක් වැළැක්වීමට, ස්ථාපනයට පෙර වැදගත් දත්ත උපස්ථාපනය කිරීමට අප ඔබට නිර්දේශ කරන්නෙමු."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">ඔබේ සේවා සැපයුම්කරුගේ මෘදුකාංග යාවත්කාලය ස්ථාපනය අවසන් කිරීමට යළි අරඹන්න.</string>
+    <string name="STR_UPDATING_PACKAGE">යාවත්කාලීන කරමින්…</string>
+    <string name="STR_USE_DATA_BTN">දත්ත භාවිතා කරන්න</string>
+    <string name="STR_WAIT_FOR_WIFI">"යෙදුම ස්ථාපනය විරාම ගැන්විණි.
+යෙදුම් ස්ථාපනය කිරීමට Wi-Fi සඳහා රැඳෙමින්."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi සඳහා රැඳෙන්න</string>
+    <string name="STR_WIDGET_DEFAULT">ඔබේ සේවා සැපයුම්කරු විසින් නිර්දේශිත යෙදුම් ස්ථාපනය කරන්න.</string>
+    <string name="STR_WIDGET_DOWNLOADING">බාගනිමින්…</string>
+    <string name="STR_WIDGET_INSTALLED">ස්ථාපනය කෙරිණි.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">බොත්තම</string>
+    <string name="WSS_STR_NO_UPDATE">මෑත කාලීනම යාවත්කාලීනය දැනටමත් ස්ථාපනය කර ඇත.</string>
+</resources>

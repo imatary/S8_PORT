@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s perlu pembaruan aplikasi Android Wear.</string>
+    <string name="common_android_wear_update_text">%1$s tidak akan berjalan jika aplikasi Android Wear tidak diperbarui.</string>
+    <string name="common_android_wear_update_title">Perbarui Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s memerlukan satu atau beberapa layanan Google Play yang saat ini tidak tersedia. Hubungi pengembang untuk mendapatkan bantuan.</string>
+    <string name="common_google_play_services_enable_button">Aktifkan layanan Google Play</string>
+    <string name="common_google_play_services_enable_text">%1$s tidak akan berfungsi jika layanan Google Play tidak diaktifkan.</string>
+    <string name="common_google_play_services_enable_title">Aktifkan layanan Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Diminta oleh %1$s</string>
+    <string name="common_google_play_services_install_button">Dapatkan layanan Google Play</string>
+    <string name="common_google_play_services_install_text_phone">%1$s tidak akan berjalan tanpa layanan Google Play, yang tidak ada di ponsel Anda.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s tidak akan berjalan tanpa layanan Google Play, yang tidak ada di tablet Anda.</string>
+    <string name="common_google_play_services_install_title">Dapatkan layanan Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Akun yang ditentukan tidak ada di perangkat ini. Pilih akun lain.</string>
+    <string name="common_google_play_services_invalid_account_title">Akun Tidak Valid</string>
+    <string name="common_google_play_services_needs_enabling_title">Aplikasi mewajibkan agar layanan Google Play diaktifkan.</string>
+    <string name="common_google_play_services_network_error_text">Sambungan data diperlukan untuk tersambung ke layanan Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Kesalahan Jaringan</string>
+    <string name="common_google_play_services_notification_needs_update_title">Aplikasi mewajibkan pembaruan untuk layanan Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Kesalahan layanan Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Kesalahan saat masuk ke akun yang ditentukan. Pilih akun yang lain.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Gagal masuk</string>
+    <string name="common_google_play_services_unknown_issue">Masalah tidak diketahui pada layanan Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s memerlukan layanan Google Play, yang tidak didukung oleh perangkat Anda. Hubungi pabrikan untuk mendapat bantuan.</string>
+    <string name="common_google_play_services_unsupported_title">Layanan Google Play</string>
+    <string name="common_google_play_services_update_button">Perbarui</string>
+    <string name="common_google_play_services_update_text">%1$s tidak akan berjalan jika layanan Google Play tidak diperbarui.</string>
+    <string name="common_google_play_services_update_title">Perbarui layanan Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s tidak akan berjalan tanpa layanan Google Play, yang saat ini sedang diperbarui.</string>
+    <string name="common_google_play_services_updating_title">Layanan Google Play sedang diperbarui</string>
+    <string name="common_open_on_phone">Buka di ponsel</string>
+    <string name="common_signin_button_text">Masuk</string>
+    <string name="common_signin_button_text_long">Masuk dengan Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Ukuran konten tambahan: %1$s %2$s</string>
+    <string name="STR_ALL">Semua</string>
+    <string name="STR_APPS_DESCRIPTION">Pilih aplikasi yang disarankan oleh penyedia layanan Anda.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Semua aplikasi yang dipilih telah diunduh.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Batal</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Pilih aplikasi yang disarankan oleh penyedia layanan Anda.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Pilih aplikasi yang ingin diinstal.</string>
+    <string name="STR_APP_INSTALL_TITLE">Instal aplikasi</string>
+    <string name="STR_APP_STATE_CANCELED">Dibatalkan</string>
+    <string name="STR_APP_STATE_CONNECTING">Menyambung…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Mengunduh…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Unduhan tidak ada.</string>
+    <string name="STR_APP_STATE_INSTALLED">Diinstal</string>
+    <string name="STR_APP_STATE_INSTALLING">Menginstal…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation failed</string>
+    <string name="STR_APP_STATE_WAITING">Menunggu…</string>
+    <string name="STR_BTN_INSTALL">Instal</string>
+    <string name="STR_BTN_INSTALL_ALL">Instal semua</string>
+    <string name="STR_BTN_SKIP">Lewati</string>
+    <string name="STR_BUTTON_NEXT">Berikutnya</string>
+    <string name="STR_CAUTION_BODY">Setelah mengunduh, mulai ulang untuk menginstal pembaruan. Anda tidak akan dapat menggunakan ponsel, meskipun untuk melakukan panggilan darurat, hingga instalasi selesai.</string>
+    <string name="STR_CAUTION_BODY2">Setelah pembaruan, beberapa pengaturan mungkin direset ke nilai defaultnya.</string>
+    <string name="STR_CHARING_DIALOG">Mengunduh menggunakan data seluler dapat dikenakan biaya tambahan.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Unduh menggunakan data seluler?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Pengkoneksian ke Server</string>
+    <string name="STR_CONNECT_FAIL">Sambungan gagal. Coba nanti.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Mengunduh pembaruan…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Mengunduh…</string>
+    <string name="STR_DOWNLOAD_FAIL">Unduhan gagal. Coba nanti.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Untuk menggunakan fitur terbaru, unduh dan instal pembaruan firmware ini.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Unduhan gagal. Coba nanti.</string>
+    <string name="STR_FAILED_NOTI">Unduhan tidak ada.</string>
+    <string name="STR_INITIAL_NOTI">Ketuk di sini untuk memilih aplikasi yang disarankan untuk diunduh.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Ketuk di sini untuk mengunduh dan menginstal pembaruan.</string>
+    <string name="STR_INSTALLED_NOTI">%d diinstal</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Instal konten tambahan</string>
+    <string name="STR_INSTALL_CAUTIONS">Peringatan</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Pembaruan ini mencakup beberapa aplikasi dan konten opsional. Mengunduh lewat jaringan seluler dapat dikenai biaya tambahan, tergantung paket pembayaran Anda.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Terunduh.</string>
+    <string name="STR_INSTALL_FORCE">Pembaruan perangkat lunak penting Anda telah diunduh. Perangkat secara otomatis dimulai ulang dalam %d detik untuk memulai instalasi.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Pelajari selengkapnya</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Anda harus tersambung ke Wi-Fi untuk mengunduh aplikasi. Sambungkan ke Wi-Fi dan coba lagi.</string>
+    <string name="STR_NEED_WIFI_TITLE">Tidak ada koneksi Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Jaringan tidak tersedia. Coba lagi nanti.</string>
+    <string name="STR_NO_APPS">Tidak ada aplikasi</string>
+    <string name="STR_NO_CONTENT">Aplikasi tersedia yang dirilis penyedia layanan akan muncul di sini.</string>
+    <string name="STR_NO_ITEMS">Tidak ada item</string>
+    <string name="STR_NO_ITEM_SELECTED">Tdk ada item yg dipilih.</string>
+    <string name="STR_OMC_HEADER">Pembaruan penyedia layanan</string>
+    <string name="STR_OMC_SIZE">Ukuran: %s</string>
+    <string name="STR_OMC_TITLE">Pembaruan konfigurasi</string>
+    <string name="STR_OMC_VERSION">Versi: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Pengaturan operator</string>
+    <string name="STR_PROCESS_FAIL">Pemrosesan gagal.</string>
+    <string name="STR_PROVIDER_APPS">Aplikasi penyedia layanan</string>
+    <string name="STR_REGISTERING_DEVICE">Mendaftarkan perangkat…</string>
+    <string name="STR_REGISTER_FAIL">Pendaftaran gagal.</string>
+    <string name="STR_REGISTER_SUCCESS">Perangkat didaftarkan.</string>
+    <string name="STR_RESTART_BTN_LATER">Nanti</string>
+    <string name="STR_RESTART_BTN_RESTART">Mulai ulng</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Untuk menyelesaikan penginstalan pembaruan perangkat lunak penyedia layanan, Anda harus memulai ulang ponsel.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Untuk menyelesaikan penginstalan pembaruan perangkat lunak penyedia layanan, Anda harus memulai ulang tablet.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Mulai ulang?</string>
+    <string name="STR_RESTART_PHONE">Mulai ulang ponsel</string>
+    <string name="STR_RESTART_TABLET">Mulai ulang tablet</string>
+    <string name="STR_SELECT_ALL">Semua aplikasi berikut</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Aplikasi penting</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Mengunduh aplikasi di bawah ini tidak dikenakan biaya.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Ketuk item berikut untuk mempelajarinya lebih lanjut.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Aplikasi akan diunduh lewat Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Dapatkan aplikasi dari penyedia layanan</string>
+    <string name="STR_UPDATE_BODY1">Mengunduh menggunakan data seluler dapat dikenakan biaya tambahan.</string>
+    <string name="STR_UPDATE_BODY2">Ponsel akan dimulai ulang setelah pembaruan diinstal.</string>
+    <string name="STR_UPDATE_FAIL">Pembaruan gagal. Coba lagi.</string>
+    <string name="STR_UPDATE_HEADER1">Unduh dan instal perangkat lunak terbaru dari penyedia layanan Anda.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Anda tidak akan dikenai biaya untuk penginstalan firmware ini.
+
+- Selama penginstalan, Anda tidak akan dapat menggunakan perangkat sama sekali, bahkan untuk panggilan darurat.
+
+- Ikon di layar depan dan pengaturan perangkat mungkin direset ke default dan mungkin perlu dikonfigurasi ulang setelah penginstalan.
+
+- Pembaruan firmware seharusnya tidak memengaruhi file dan data di perangkat.
+
+- Namun, jika Anda menghentikan proses penginstalan sebelum selesai, perangkat mungkin tidak berfungsi dengan normal dan mungkin menyebabkan hilangnya file.
+
+- Untuk menghindari kehilangan data yang tidak diinginkan, kami menyarankan Anda mencadangkan data penting sebelum penginstalan."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Mulai ulang untuk menyelesaikan menginstal pembaruan perangkat lunak penyedia layanan.</string>
+    <string name="STR_UPDATING_PACKAGE">Mengupdate…</string>
+    <string name="STR_USE_DATA_BTN">Gunakan data</string>
+    <string name="STR_WAIT_FOR_WIFI">"Instalasi aplikasi dijeda.
+Menunggu Wi-Fi untuk menginstal aplikasi."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Tunggu Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Instal aplikasi yang disarankan oleh penyedia layanan Anda.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Mengunduh…</string>
+    <string name="STR_WIDGET_INSTALLED">Terinstal.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Tombol</string>
+    <string name="WSS_STR_NO_UPDATE">Pembaruan terbaru telah diinstal.</string>
+</resources>

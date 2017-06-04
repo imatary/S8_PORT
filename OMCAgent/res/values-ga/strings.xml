@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Méid an inneachair bhreise: %1$s %2$s</string>
+    <string name="STR_ALL">Gach</string>
+    <string name="STR_APPS_DESCRIPTION">Roghnaigh feidhmchláir arna moladh ag do sholáthraí seirbhíse.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">"Tá d'fheidhmchláir roghnaithe uile íoslódáilte."</string>
+    <string name="STR_APP_BUTTON_CANCEL">Cealaigh</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Roghnaigh feidhmchláir arna moladh ag do sholáthraí seirbhíse.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Roghnaigh na feidhmchláir is mian leat a shuiteáil.</string>
+    <string name="STR_APP_INSTALL_TITLE">Suiteáil feidhmchláir</string>
+    <string name="STR_APP_STATE_CANCELED">Curtha ar ceal</string>
+    <string name="STR_APP_STATE_CONNECTING">Nascadh…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Íoslódáil…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Theip ar íoslódáil.</string>
+    <string name="STR_APP_STATE_INSTALLED">Suiteáilte</string>
+    <string name="STR_APP_STATE_INSTALLING">Suiteáil…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Theip ar an tsuiteáil</string>
+    <string name="STR_APP_STATE_WAITING">Ag feitheamh…</string>
+    <string name="STR_BTN_INSTALL">Suiteáil</string>
+    <string name="STR_BTN_INSTALL_ALL">Suiteáil gach</string>
+    <string name="STR_BTN_SKIP">Scipeáil</string>
+    <string name="STR_BUTTON_NEXT">Ar aghaidh</string>
+    <string name="STR_CAUTION_BODY">"Tar éis íoslódáil, atosaigh leis an nuashonrú a shuiteáil. Ní bheidh tú in ann d'fhón a úsáid, fiú le glaonna éigeandála a chur, go dtí go mbeidh an tsuiteáil críochnaithe."</string>
+    <string name="STR_CAUTION_BODY2">Tar éis an nuashonraithe, is féidir go bhfillfear roinnt socruithe ar a luachanna réamhshocraithe.</string>
+    <string name="STR_CHARING_DIALOG">Is féidir go ngearrfar táillí breise ar shonraí móibíleacha a úsáid le híoslódáil.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Íoslódáil le sonraí móibíleacha?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Ag nascadh le freastalaí…</string>
+    <string name="STR_CONNECT_FAIL">Theip ar nascadh. Triail ar ball.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Nuashonruithe á n-íoslódáil…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Ag íoslódáil…</string>
+    <string name="STR_DOWNLOAD_FAIL">Theip ar íoslódáil. Triail níos moille.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Leis na gnéithe is déanaí a úsáid, íoslódáil an nuashonrú dochtearraí seo agus suiteáil é.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Theip ar íoslódáil. Triail níos moille.</string>
+    <string name="STR_FAILED_NOTI">Theip ar íoslódáil.</string>
+    <string name="STR_INITIAL_NOTI">Tapáil anseo le feidhmchláir mholta a roghnú lena n-íoslódáil.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Tapáil anseo leis an nuashonrú a íoslódáil agus a shuiteáil.</string>
+    <string name="STR_INSTALLED_NOTI">%d suiteáilte</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Suiteáil inneachar breise</string>
+    <string name="STR_INSTALL_CAUTIONS">Aire</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Áirítear leis an nuashonrú seo roinnt feidhmchlár agus inneachar roghnach. Is féidir go ngearrfar táillí breise ar íoslódáil trí líonraí móibíleacha, ag brath ar do phlean íocaíochta.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Íoslódáilte.</string>
+    <string name="STR_INSTALL_FORCE">Tá do nuashonrú bogearraí criticiúil íoslódáilte. Atosófar do ghléas i gceann %d soicind le tosú ar an tsuiteáil.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Tuilleadh</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Ní foláir duit a bheith nasctha le líonra Wi-Fi le feidhmchláir a íoslódáil. Nasc le Wi-Fi agus triail arís.</string>
+    <string name="STR_NEED_WIFI_TITLE">Níl nasc Wi-Fi ann</string>
+    <string name="STR_NETWORK_FAIL">Níl líonra ar fáil. Triail arís ar ball.</string>
+    <string name="STR_NO_APPS">Níl feidhmchláir ann</string>
+    <string name="STR_NO_CONTENT">Taispeánfar anseo feidhmchláir arna n-eisiúint ag do sholáthraí seirbhíse atá ar fáil.</string>
+    <string name="STR_NO_ITEMS">Níl míreanna ann</string>
+    <string name="STR_NO_ITEM_SELECTED">Níor roghnaíodh míreanna.</string>
+    <string name="STR_OMC_HEADER">Nuashonrú soláthraí seirbhíse</string>
+    <string name="STR_OMC_SIZE">Méid: %s</string>
+    <string name="STR_OMC_TITLE">Nuashonrú cumraíochta</string>
+    <string name="STR_OMC_VERSION">Leagan: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Socruithe oibreora</string>
+    <string name="STR_PROCESS_FAIL">Theip ar phróiseáil.</string>
+    <string name="STR_PROVIDER_APPS">Feidhmchláir an tsoláthraí seirbhíse</string>
+    <string name="STR_REGISTERING_DEVICE">Gléas á chlárú…</string>
+    <string name="STR_REGISTER_FAIL">Theip ar chlárú.</string>
+    <string name="STR_REGISTER_SUCCESS">Tá an gléas cláraithe.</string>
+    <string name="STR_RESTART_BTN_LATER">Ar ball</string>
+    <string name="STR_RESTART_BTN_RESTART">Atosaigh</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">"Le suiteáil an nuashonraithe bogearraí ó do sholáthraí seirbhíse a chur i gcrích, ní foláir duit d'fhón a atosú."</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Le suiteáil an nuashonraithe bogearraí ó do sholáthraí seirbhíse a chur i gcrích, ní foláir duit do tháibléad a atosú.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Atosaigh?</string>
+    <string name="STR_RESTART_PHONE">Atosaigh an fón</string>
+    <string name="STR_RESTART_TABLET">Atosaigh an táibléad</string>
+    <string name="STR_SELECT_ALL">Na feidhmchláir seo a leanas</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Feidhmchláir riachtanacha</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Ní ghearrtar táillí sonraí ar na feidhmchláir thíos a íoslódáil.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Tapáil ar mhír thíos le tuilleadh a fháil amach fúithi.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Íoslódálfar feidhmchláir trí Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Faigh feidhmchláir ón soláthraí</string>
+    <string name="STR_UPDATE_BODY1">Is féidir go ngearrfar táillí breise ar shonraí móibíleacha a úsáid le híoslódáil.</string>
+    <string name="STR_UPDATE_BODY2">"Atosófar d'fhón nuair a bheidh an nuashonrú suiteáilte."</string>
+    <string name="STR_UPDATE_FAIL">Theip ar nuashonrú. Triail arís.</string>
+    <string name="STR_UPDATE_HEADER1">Íoslódáil agus suiteáil na bogearraí is déanaí ó do sholáthraí seirbhíse.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Ní ghearrfar táille ort ar shuiteáil na ndochtearraí seo.
+
+- Ní bheidh tú in ann do ghléas a úsáid ar chor ar bith, fiú le haghaidh glaonna éigeandála, le linn suiteáil.
+
+- Is féidir go bhfillfear íocóin ar an scáileán baile agus socruithe an ghléis ar na réamhshocruithe agus go gcaithfear iad a athchumrú tar éis na suiteála.
+
+- Ní cóir go rachaidh nuashonrú dochtearraí i bhfeidhm ar na comhaid ná ar na sonraí atá ar do ghléas.
+
+- Is féidir, áfach, nach n-oibreoidh do ghléas i gceart má scoireann tú an tsuiteáil sula mbeidh sí curtha i gcrích, agus go gcaillfear do chomhaid dá bharr.
+
+- Le caillteanas sonraí gan choinne a sheachaint, molaimid duit cóip chúltaca a dhéanamh de shonraí tábhachtacha roimh an tsuiteáil."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Atosaigh le suiteáil an nuashonraithe bogearraí ó do sholáthraí seirbhíse a chur i gcrích.</string>
+    <string name="STR_UPDATING_PACKAGE">Ag nuashonrú…</string>
+    <string name="STR_USE_DATA_BTN">Úsáid sonraí</string>
+    <string name="STR_WAIT_FOR_WIFI">"Suiteáil feidhmchlár curtha ar sos.
+Fanacht le Wi-Fi le feidhmchláir a shuiteáil."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Fan le Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Suiteáil feidhmchláir arna moladh ag do sholáthraí seirbhíse.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Íoslódáil…</string>
+    <string name="STR_WIDGET_INSTALLED">Suiteáilte.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Cnaipe</string>
+    <string name="WSS_STR_NO_UPDATE">Tá na nuashonruithe is déanaí suiteáilte</string>
+</resources>

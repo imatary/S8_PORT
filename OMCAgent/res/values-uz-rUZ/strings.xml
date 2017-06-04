@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s bilan ishlashda davom etish uchun Android Wear ilovasini yangilang.</string>
+    <string name="common_android_wear_update_text">Android Wear ilovasi yangilanmaguncha, %1$s ishga tushmaydi.</string>
+    <string name="common_android_wear_update_title">Android Wear ilovasini yangilash</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s ilovasining ishlashi uchun zarur bo‘lgan bir yoki bir nechta Google Play xizmatlari yo‘q. Yordam olish uchun ilovaning ishlab chiquvchisi bilan bog‘laning.</string>
+    <string name="common_google_play_services_enable_button">Google Play xizmatlarini yoqish</string>
+    <string name="common_google_play_services_enable_text">Google Play xizmatlari yoqilmaguncha, %1$s ishlamaydi.</string>
+    <string name="common_google_play_services_enable_title">Google Play xizmatlarini yoqish</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">So‘rov manbasi: %1$s</string>
+    <string name="common_google_play_services_install_button">Google Play xizmatlarini yuklab oling</string>
+    <string name="common_google_play_services_install_text_phone">%1$s ishlashi uchun telefoningizga Google Play xizmatlarini o‘rnatish lozim.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s ishlashi uchun planshetingizga Google Play xizmatlarini o‘rnatish lozim.</string>
+    <string name="common_google_play_services_install_title">Google Play xizmatlarini yuklab oling</string>
+    <string name="common_google_play_services_invalid_account_text">Ushbu qurilmada ko‘rsatilgan hisob mavjud emas. Boshqa hisobni tanlang.</string>
+    <string name="common_google_play_services_invalid_account_title">Hisob haqiqiy emas</string>
+    <string name="common_google_play_services_needs_enabling_title">Ilova Google Play xizmatlarining yoqilishini talab qiladi.</string>
+    <string name="common_google_play_services_network_error_text">Google Play xizmatlariga ulanish uchun internet zarur.</string>
+    <string name="common_google_play_services_network_error_title">Tarmoq xatosi</string>
+    <string name="common_google_play_services_notification_needs_update_title">Ilova Google Play xizmatlarining yangilanishini talab qiladi.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play xizmatlari xatosi</string>
+    <string name="common_google_play_services_sign_in_failed_text">Ko‘rsatilgan hisobga kirishda xatolik yuz berdi. Boshqa hisob tanlang.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Kirish amalga oshmadi</string>
+    <string name="common_google_play_services_unknown_issue">Google Play xizmatlari bilan bog‘liq noma’lum muammo yuz berdi.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ilovasi Google Play xizmatlarisiz ishlamaydi, biroq qurilmangiz ularni qo‘llab-quvvatlamaydi. Yordam olish uchun qurilmaning ishlab chiqaruvchisi bilan bog‘laning.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play xizmatlari</string>
+    <string name="common_google_play_services_update_button">Yangilash</string>
+    <string name="common_google_play_services_update_text">Google Play xizmatlari yangilanmaguncha, %1$s ishga tushmaydi.</string>
+    <string name="common_google_play_services_update_title">Google Play xizmatlarini yangilash</string>
+    <string name="common_google_play_services_updating_text">%1$s ilovasining ishlashi uchun zarur Google Play xizmatlari hozirda yangilanmoqda.</string>
+    <string name="common_google_play_services_updating_title">Google Play xizmatlari yangilanmoqda</string>
+    <string name="common_open_on_phone">Telefonda ochish</string>
+    <string name="common_signin_button_text">Kirish</string>
+    <string name="common_signin_button_text_long">Google orqali kirish</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Qo‘shimcha tarkib hajmi: %1$s %2$s</string>
+    <string name="STR_ALL">Barchasi</string>
+    <string name="STR_APPS_DESCRIPTION">Xizmat ta’minotchingiz tomonidan tavsiya etilgan ilovalarni tanlang.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Barcha tanlagan ilovalaringiz yuklab olindi.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Bekor qilish</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Xizmat ta’minotchingiz tomonidan tavsiya etilgan ilovalarni tanlang.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">O‘rnatmoqchi bo‘lgan ilovalarni tanlang.</string>
+    <string name="STR_APP_INSTALL_TITLE">Ilovalar o‘rnatish</string>
+    <string name="STR_APP_STATE_CANCELED">Bekor qilindi</string>
+    <string name="STR_APP_STATE_CONNECTING">Ulanmoqda…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Yuklab olinmoqda…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Yuklash bajarilmadi.</string>
+    <string name="STR_APP_STATE_INSTALLED">O‘rnatildi</string>
+    <string name="STR_APP_STATE_INSTALLING">O‘rnatilmoqda…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">O‘rnatish bajarilmadi</string>
+    <string name="STR_APP_STATE_WAITING">Kutilmoqda…</string>
+    <string name="STR_BTN_INSTALL">O‘rnatish</string>
+    <string name="STR_BTN_INSTALL_ALL">Barchasini tanlash</string>
+    <string name="STR_BTN_SKIP">O‘tkazib yubor</string>
+    <string name="STR_BUTTON_NEXT">Keyingi</string>
+    <string name="STR_CAUTION_BODY">Yuklab olgandan so‘ng, yangilashni o‘rnatish uchun qayta ishga tushiring. O‘rnatish yakunlanguniga qadar telefoningizdan hatto favqulodda qo‘ng‘iroqlarni amalga oshirish uchun ham foydalana olmaysiz.</string>
+    <string name="STR_CAUTION_BODY2">Yangilashdan so‘ng ayrim parametrlar birlamchi qiymatiga tashlanishi mumkin.</string>
+    <string name="STR_CHARING_DIALOG">Mobil internet orqali yuklab olish uchun qo‘shimcha to‘lov olinishi mumkin.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Mobil internet yordamida yuklab olinsinmi?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Serverga ulanmoqda…</string>
+    <string name="STR_CONNECT_FAIL">Ulanib bo‘lmadi. Keyinroq urinib ko‘ring.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Yangilanishlar yuklab olinmoqda…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Yklb olish…</string>
+    <string name="STR_DOWNLOAD_FAIL">Yuklab bo‘lmadi. Keyinroq urinib ko‘ring.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">So‘nggi funksiyalardan foydalanish uchun mikrodastur yangilanishini yuklab oling va o‘rnating.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Yuklab bo‘lmadi. Keyinroq urinib ko‘ring.</string>
+    <string name="STR_FAILED_NOTI">Yuklash bajarilmadi.</string>
+    <string name="STR_INITIAL_NOTI">Yuklab olish tavsiya etilgan ilovalarni tanlash uchun bu yerga teging.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Yangilanishni yuklab olish va o‘rnatish uchun bu yerga teging.</string>
+    <string name="STR_INSTALLED_NOTI">%d o‘rnatildi</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Qo‘shimcha tarkib o‘rnatish</string>
+    <string name="STR_INSTALL_CAUTIONS">Diqqat</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Bu yangilash ayrim ixtiyoriy ilova va tarkibni o‘z ichiga olishi mumkin. Mobil tarmoqlar orqali yuklab olish uchun tarif rejangiz asosida qo‘shimcha to‘lov olinishi mumkin.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Yuklandi.</string>
+    <string name="STR_INSTALL_FORCE">Dasturingizning kritik yangilanishi yuklab olindi. O‘rnatishni boshlash uchun qurilmangiz %d soniyada qayta ishga tushiriladi.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Qo‘shimcha ma’lumot</string>
+    <string name="STR_MEGABYTE">Mb</string>
+    <string name="STR_NEED_WIFI">Ilovalarni yuklab olish uchun Wi-Fi’ga ulanishingiz lozim. Wi-Fi’ga ulaning va qayta urinib ko‘ring.</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi ulanishi yo‘q</string>
+    <string name="STR_NETWORK_FAIL">Tarmoqdan foydalanib bo‘lmaydi. Keyinroq qayta urinib ko‘ring.</string>
+    <string name="STR_NO_APPS">Ilovalar yo‘q</string>
+    <string name="STR_NO_CONTENT">Xizmat ta’minotchingizdan reliz qilingan ilovalar bu yerda ko‘rsatiladi.</string>
+    <string name="STR_NO_ITEMS">Elementlar yo‘q</string>
+    <string name="STR_NO_ITEM_SELECTED">Element tanlanmagan.</string>
+    <string name="STR_OMC_HEADER">Xizmat ta’minotchisi yangilanishi</string>
+    <string name="STR_OMC_SIZE">Hajmi: %s</string>
+    <string name="STR_OMC_TITLE">Konfiguratsiya yangilashi</string>
+    <string name="STR_OMC_VERSION">Versiya: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operator parametrlari</string>
+    <string name="STR_PROCESS_FAIL">Bajarilmadi.</string>
+    <string name="STR_PROVIDER_APPS">Xizmat ta’minotchisi ilovalari</string>
+    <string name="STR_REGISTERING_DEVICE">Qurilma ro‘yxatga olinmoqda…</string>
+    <string name="STR_REGISTER_FAIL">Ro‘yxatga olib bo‘lmadi.</string>
+    <string name="STR_REGISTER_SUCCESS">Qurilma ro‘yxatga olindi.</string>
+    <string name="STR_RESTART_BTN_LATER">Keyinroq</string>
+    <string name="STR_RESTART_BTN_RESTART">Qay/yukla</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Xizmat ta’minotchingiz yangilanishi o‘rnatilishini yakunlash uchun telefoningizni qayta ishga tushirishingiz lozim.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Xizmat ta’minotchingiz yangilanishi o‘rnatilishini yakunlash uchun planshetingizni qayta ishga tushirishingiz lozim.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Qayta ishga tushirilsinmi?</string>
+    <string name="STR_RESTART_PHONE">Telefonni qayta ishga tushiring</string>
+    <string name="STR_RESTART_TABLET">Planshetni qayta ishga tushir</string>
+    <string name="STR_SELECT_ALL">Quyidagi ilovalarning barchasi</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Asosiy ilovalar</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Quyidagi ilovalarni yuklab olish uchun to‘lov olinmaydi.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Quyidagi element haqida ko‘proq ma’lumot olish uchun unga teging.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Ilovalar Wi-Fi orqali yuklab olinadi.</string>
+    <string name="STR_SUW_TITLE">Xizmat ta’minotchisidan ilovalar olish</string>
+    <string name="STR_UPDATE_BODY1">Mobil internet orqali yuklab olish uchun qo‘shimcha to‘lov olinishi mumkin.</string>
+    <string name="STR_UPDATE_BODY2">Yangilash o‘rnatilgandan so‘ng telefoningiz qayta ishga tushiriladi.</string>
+    <string name="STR_UPDATE_FAIL">Yangilab bo‘lmadi. Qayta urinib ko‘ring.</string>
+    <string name="STR_UPDATE_HEADER1">Xizmat ta’minotchingizdan oxirgi versiyani yuklab oling va o‘rnating.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Ushbu mikrodastur o‘rnatilishi uchun Sizdan to‘lov olinmaydi.
+
+- O‘rnatish vaqtida qurilmangizdan umuman foydalana olmaysiz (favqulodda qo‘ng‘iroqlar uchun ham).
+
+- Asosiy ekrandagi ikonachalar va qurilma parametrlari birlamchi holatiga qaytarilishi va o‘rnatishdan so‘ng ularni qayta sozlash talab qilinishi mumkin.
+
+- Mikrodastur yangilanishi qurilmangizdagi fayl va ma’lumotlarga ta’sir ko‘rsatmasligi kerak.
+
+- Vaholanki, o‘rnatish jarayoni nihoyasiga yetmasdan, uni to‘xtatsangiz, qurilma to‘g‘ri ishlamasligi va natijada fayllar yo‘qotilishi mumkin.
+
+- Kutilmagan ma’lumotlar yo‘qotilishini oldini olish uchun o‘rnatishdan oldin muhim ma’lumotlarni arxivlashni tavsiya qilamiz."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Xizmat ta’minotchingiz yangilanishi o‘rnatilishini yakunlash uchun qayta ishga tushiring.</string>
+    <string name="STR_UPDATING_PACKAGE">Yangilanmoqda…</string>
+    <string name="STR_USE_DATA_BTN">Ma’lumot ishlatish</string>
+    <string name="STR_WAIT_FOR_WIFI">"Ilovani o‘rnatish to‘xtatib qo‘yildi.
+Ilovalarni o‘rnatish uchun Wi-Fi ulanishi kutilmoqda."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi’ni kutish</string>
+    <string name="STR_WIDGET_DEFAULT">Xizmat ta’minotchingiz tomonidan tavsiya etilgan ilovalarni o‘rnating.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Yuklab olinmoqda…</string>
+    <string name="STR_WIDGET_INSTALLED">O‘rnatildi.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Tugma</string>
+    <string name="WSS_STR_NO_UPDATE">Oxirgi yangilanishlar o‘rnatilgan.</string>
+</resources>

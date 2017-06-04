@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s ต้องการให้อัปเดตแอป Android Wear</string>
+    <string name="common_android_wear_update_text">%1$s จะไม่ทำงานจนกว่าคุณจะอัปเดตแอป Android Wear</string>
+    <string name="common_android_wear_update_title">อัปเดต Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s ต้องใช้บริการ Google Play อย่างน้อย 1 บริการ ซึ่งไม่พร้อมใช้งานในปัจจุบัน โปรดติดต่อนักพัฒนาซอฟต์แวร์เพื่อขอความช่วยเหลือ</string>
+    <string name="common_google_play_services_enable_button">เปิดใช้งานบริการ Google Play</string>
+    <string name="common_google_play_services_enable_text">%1$s จะไม่ทำงานจนกว่าคุณจะเปิดใช้บริการ Google Play</string>
+    <string name="common_google_play_services_enable_title">เปิดใช้งานบริการ Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">ขอโดย %1$s</string>
+    <string name="common_google_play_services_install_button">รับบริการ Google Play</string>
+    <string name="common_google_play_services_install_text_phone">%1$s จะไม่ทำงานหากไม่มีบริการ Google Play ซึ่งไม่มีในโทรศัพท์ของคุณ</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s จะไม่ทำงานหากไม่มีบริการ Google Play ซึ่งไม่มีในแท็บเล็ตของคุณ</string>
+    <string name="common_google_play_services_install_title">รับบริการ Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">บัญชีที่ระบุไม่มีอยู่บนอุปกรณ์นี้ โปรดเลือกบัญชีอื่น</string>
+    <string name="common_google_play_services_invalid_account_title">บัญชีไม่ถูกต้อง</string>
+    <string name="common_google_play_services_needs_enabling_title">แอปพลิเคชันหนึ่งจำเป็นต้องมีบริการ Google Play เพื่อเปิดใช้งาน</string>
+    <string name="common_google_play_services_network_error_text">ต้องมีการเขื่อมต่อข้อมูลเพื่อเชื่อมต่อกับบริการ Google Play</string>
+    <string name="common_google_play_services_network_error_title">ข้อผิดพลาดของเครือข่าย</string>
+    <string name="common_google_play_services_notification_needs_update_title">แอปพลิเคชันหนึ่งจำเป็นต้องมีการอัปเดตสำหรับบริการ Google Play</string>
+    <string name="common_google_play_services_notification_ticker">ข้อผิดพลาดของบริการ Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">เกิดข้อผิดพลาดในการลงชื่อเข้าใช้บัญชีที่ระบุ โปรดเลือกบัญชีอื่น</string>
+    <string name="common_google_play_services_sign_in_failed_title">การลงชื่อเข้าใช้ล้มเหลว</string>
+    <string name="common_google_play_services_unknown_issue">ปัญหาที่ไม่รู้จักของบริการ Google Play</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ต้องใช้บริการ Google Play ซึ่งอุปกรณ์ของคุณไม่สนับสนุน โปรดติดต่อผู้ผลิตเพื่อขอความช่วยเหลือ</string>
+    <string name="common_google_play_services_unsupported_title">บริการ Google Play</string>
+    <string name="common_google_play_services_update_button">อัปเดต</string>
+    <string name="common_google_play_services_update_text">%1$s จะไม่ทำงานจนกว่าคุณจะอัปเดตบริการ Google Play</string>
+    <string name="common_google_play_services_update_title">อัปเดตบริการ Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s จะไม่ทำงานหากไม่มีบริการ Google Play ซึ่งกำลังอัปเดตอยู่ในขณะนี้</string>
+    <string name="common_google_play_services_updating_title">กำลังอัปเดตบริการ Google Play</string>
+    <string name="common_open_on_phone">เปิดบนโทรศัพท์</string>
+    <string name="common_signin_button_text">ลงชื่อใช้</string>
+    <string name="common_signin_button_text_long">ลงชื่อเข้าใช้ด้วย Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">ขนาดคอนเทนท์เพิ่มเติม: %1$s %2$s</string>
+    <string name="STR_ALL">ทั้ง​หมด</string>
+    <string name="STR_APPS_DESCRIPTION">เลือกแอพที่ผู้ให้บริการของคุณแนะนำ</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">ดาวน์โหลดแอพที่คุณเลือกทั้งหมดแล้ว</string>
+    <string name="STR_APP_BUTTON_CANCEL">ยกเลิก</string>
+    <string name="STR_APP_BUTTON_OK">ตกลง</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">เลือกแอพที่ผู้ให้บริการของคุณแนะนำ</string>
+    <string name="STR_APP_INSTALL_CONFIRM">เลือกแอพที่คุณต้องการติดตั้ง</string>
+    <string name="STR_APP_INSTALL_TITLE">ติดตั้งแอพ</string>
+    <string name="STR_APP_STATE_CANCELED">ยกเลิกแล้ว</string>
+    <string name="STR_APP_STATE_CONNECTING">กำลังเชื่อมต่อ..</string>
+    <string name="STR_APP_STATE_DOWNLOADING">กำลังดาวน์โหลด…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ไม่​มี​ดาวน์​โหลด</string>
+    <string name="STR_APP_STATE_INSTALLED">ติดตั้งแล้ว</string>
+    <string name="STR_APP_STATE_INSTALLING">กำลัง​ติด​ตั้ง…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation failed</string>
+    <string name="STR_APP_STATE_WAITING">กำลัง​รอ…</string>
+    <string name="STR_BTN_INSTALL">ติด​ตั้ง</string>
+    <string name="STR_BTN_INSTALL_ALL">ติดตั้งทั้งหมด</string>
+    <string name="STR_BTN_SKIP">ข้าม</string>
+    <string name="STR_BUTTON_NEXT">ถัด​ไป</string>
+    <string name="STR_CAUTION_BODY">หลังดาวน์โหลด เริ่มอุปกรณ์ใหม่เพื่อติดตั้งอัพเดท คุณจะไม่สามารถใช้โทรศัพท์ของคุณได้ แม้กระทั่งการโทรฉุกเฉิน จนกว่าการติดตั้งจะเสร็จสิ้น</string>
+    <string name="STR_CAUTION_BODY2">หลังการอัพเดท การตั้งค่าบางอย่างจะถูกรีเซ็ทเป็นค่าเริ่มต้น</string>
+    <string name="STR_CHARING_DIALOG">การดาวน์โหลดโดยใช้ข้อมูลมือถืออาจมีค่าใช้จ่ายเพิ่มเติม</string>
+    <string name="STR_CHARING_DIALOG_TITLE">ดาวน์โหลดโดยใช้ข้อมูลมือถือหรือไม่</string>
+    <string name="STR_CONNECTING_TO_SERVER">เชื่อม​ต่อ​ไป​ยัง​เซิร์ฟเวอร์</string>
+    <string name="STR_CONNECT_FAIL">การ​เชื่อม​ต่อ​ล้ม​เหลว ลอง​ใหม่​ภาย​หลัง</string>
+    <string name="STR_DOWNLOADING_PACKAGE">กำลังดาวน์โหลดอัพเดท…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">กำลังโหลด…</string>
+    <string name="STR_DOWNLOAD_FAIL">ดาวน์​โหลด​ล้ม​เหลว ลอง​ใหม่​ภาย​หลัง</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">ในการใช้คุณสมบัติล่าสุด ให้ดาวน์โหลดและติดตั้งอัพเดทเฟิร์มแวร์นี้</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ดาวน์​โหลด​ล้ม​เหลว ลอง​ใหม่​ภาย​หลัง</string>
+    <string name="STR_FAILED_NOTI">ไม่​มี​ดาวน์​โหลด</string>
+    <string name="STR_INITIAL_NOTI">แตะที่นี่เพื่อเลือกดาวน์โหลดแอพที่แนะนำ</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">แตะที่นี่เพื่อดาวน์โหลดและติดตั้งอัพเดท</string>
+    <string name="STR_INSTALLED_NOTI">ติดตั้ง %d แล้ว</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">ติดตั้งคอนเทนท์เพิ่มเติม</string>
+    <string name="STR_INSTALL_CAUTIONS">ข้อ​ควร​ระวัง</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">อัพเดทนี้รวมแอพและคอนเทนท์ที่เลือกได้บางรายการ การดาวน์โหลดผ่านเครือข่ายมือถือ อาจมีค่าใช้จ่ายเพิ่มเติม โดยขึ้นอยู่กับแผนการชำระเงินของคุณ</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ดาวน์​โหลด​แล้ว</string>
+    <string name="STR_INSTALL_FORCE">ดาวน์โหลดอัพเดทซอฟท์แวร์ที่จำเป็นแล้ว อุปกรณ์ของคุณจะเริ่มใหม่ใน %d วินาทีเพื่อเริ่มการติดตั้ง</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">เรียนรู้เพิ่มเติม</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">คุณจำเป็นต้องเชื่อมต่อกับ Wi-Fi เพื่อดาวน์โหลดแอพ เชื่อมต่อกับ Wi-Fi และลองอีกครั้ง</string>
+    <string name="STR_NEED_WIFI_TITLE">ไม่มีการเชื่อมต่อ Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">เครือข่ายไม่พร้อมใช้งาน ลองใหม่ภายหลัง</string>
+    <string name="STR_NO_APPS">ไม่มีแอพ</string>
+    <string name="STR_NO_CONTENT">แอพที่พร้อมใช้งานซึ่งมาจากผู้ให้บริการของคุณจะปรากฏที่นี่</string>
+    <string name="STR_NO_ITEMS">ไม่มีรายการ</string>
+    <string name="STR_NO_ITEM_SELECTED">ไม่​มี​รายการ​ที่​เลือก</string>
+    <string name="STR_OMC_HEADER">อัพเดทผู้ให้บริการ</string>
+    <string name="STR_OMC_SIZE">ขนาด: %s</string>
+    <string name="STR_OMC_TITLE">การอัพเดทการกำหนดค่า</string>
+    <string name="STR_OMC_VERSION">เวอร์ชั่น: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">การตั้งค่าผู้ให้บริการ</string>
+    <string name="STR_PROCESS_FAIL">การ​ดำเนิน​การ​ล้ม​เหลว</string>
+    <string name="STR_PROVIDER_APPS">แอพของผู้ให้บริการ</string>
+    <string name="STR_REGISTERING_DEVICE">กำลัง​ลง​ทะเบียน​อุปกรณ์…</string>
+    <string name="STR_REGISTER_FAIL">การ​ลง​ทะเบียน​ล้ม​เหลว</string>
+    <string name="STR_REGISTER_SUCCESS">อุปกรณ์​ลง​ทะเบียน​แล้ว</string>
+    <string name="STR_RESTART_BTN_LATER">ภายหลัง</string>
+    <string name="STR_RESTART_BTN_RESTART">เริ่มใหม่</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">คุณต้องเริ่มโทรศัพท์ใหม่ เพื่อเสร็จสิ้นการติดตั้งอัพเดทซอฟท์แวร์ของผู้ให้บริการของคุณ</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">คุณต้องเริ่มแท็บเล็ตใหม่ เพื่อเสร็จสิ้นการติดตั้งอัพเดทซอฟท์แวร์ของผู้ให้บริการของคุณ</string>
+    <string name="STR_RESTART_DIALOG_TITLE">เริ่มใหม่หรือไม่</string>
+    <string name="STR_RESTART_PHONE">เริ่มโทรศัพท์ใหม่</string>
+    <string name="STR_RESTART_TABLET">เริ่มแท็บเล็ตใหม่</string>
+    <string name="STR_SELECT_ALL">แอพต่อไปนี้ทั้งหมด</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">แอพที่จำเป็น</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">ไม่มีการเก็บค่าข้อมูลสำหรับการดาวน์โหลดแอพด้านล่าง</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">แตะรายการด้านล่างเพื่อเรียนรู้เพิ่มเติม</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">แอพจะดาวน์โหลดผ่าน Wi-Fi</string>
+    <string name="STR_SUW_TITLE">รับแอพจากผู้ให้บริการ</string>
+    <string name="STR_UPDATE_BODY1">การดาวน์โหลดโดยใช้ข้อมูลมือถืออาจมีค่าใช้จ่ายเพิ่มเติม</string>
+    <string name="STR_UPDATE_BODY2">โทรศัพท์ของคุณจะเริ่มใหม่หลังจากติดตั้งอัพเดทแล้ว</string>
+    <string name="STR_UPDATE_FAIL">อัพเดทล้มเหลว ลองใหม่</string>
+    <string name="STR_UPDATE_HEADER1">ดาวน์โหลดและติดตั้งซอฟต์แวร์ล่าสุดจากผู้ให้บริการของคุณ</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- คุณจะไม่เสียค่าบริการสำหรับการติดตั้งเฟิร์มแวร์นี้
+
+- ระหว่างการติดตั้ง คุณจะไม่สามารถใช้อุปกรณ์ของคุณได้ แม้แต่การโทรฉุกเฉิน
+
+- ไอคอนในหน้าจอหลักและการตั้งค่าอุปกรณ์อาจถูกรีเซ็ทเป็นค่าเริ่มต้น และอาจต้องกำหนดค่าใหม่หลังการติดตั้ง
+
+- การอัพเดทเฟิร์มแวร์ไม่ควรมีผลกระทบกับ ไฟล์และข้อมูลบนอุปกรณ์ของคุณ
+
+- อย่างไรก็ตาม ถ้าคุณหยุดการติดตั้งก่อนที่การติดตั้งจะเสร็จสิ้น อุปกรณ์ของคุณอาจทำงานผิดปกติ และอาจทำให้ไฟล์ของคุณสูญหายได้
+
+- เพื่อหลีกเลี่ยงการสูญเสียข้อมูลโดยไม่คาดคิด เราขอแนะนำให้คุณแบ็คอัพข้อมูลสำคัญไว้ก่อนการติดตั้ง"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">เริ่มใหม่เพื่อติดตั้งอัพเดทซอฟต์แวร์ของผู้ให้บริการให้เสร็จสิ้น</string>
+    <string name="STR_UPDATING_PACKAGE">อัพ​เด​ท…</string>
+    <string name="STR_USE_DATA_BTN">ใช้ข้อมูล</string>
+    <string name="STR_WAIT_FOR_WIFI">"การติดตั้งแอพถูกพัก
+กำลังรอ Wi-Fi เพื่อติดตั้งแอพ"</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">รอ Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">ติดตั้งแอพที่ผู้ให้บริการของคุณแนะนำ</string>
+    <string name="STR_WIDGET_DOWNLOADING">กำลังดาวน์โหลด…</string>
+    <string name="STR_WIDGET_INSTALLED">ติด​ตั้ง​แล้ว</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">ปุ่ม</string>
+    <string name="WSS_STR_NO_UPDATE">ติดตั้งอัพเดทล่าสุดแล้ว</string>
+</resources>

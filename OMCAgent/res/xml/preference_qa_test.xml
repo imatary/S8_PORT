@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/NTSTR_TEST">
+        <Preference android:title="@string/NTSTR_UPDATE_CARRIER" android:key="Update" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/NTSTR_TESTMODE">
+        <SwitchPreference android:title="@string/NTSTR_SET_OMC_INFO" android:key="SetSIMInfo" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/NTSTR_SET_APP_SERVER" android:key="AppsServer" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/NTSTR_STATUS">
+        <Preference android:title="@string/NTSTR_DEVICE_INFO" android:key="Device" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_SIM_INFO" android:key="SIM" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_VERSION_INFO" android:key="Version" android:defaultValue="false" />
+        <Preference android:title="AppResInfo" android:key="AppResInfo" android:defaultValue="false" />
+        <Preference android:title="omcnw_code" android:key="OMCNW_CODE" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

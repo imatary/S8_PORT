@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s需要更新 Android Wear 应用才能正常运行。</string>
+    <string name="common_android_wear_update_text">只有更新 Android Wear 应用后，%1$s才能正常运行。</string>
+    <string name="common_android_wear_update_title">更新Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">运行%1$s所需的一项或多项 Google Play 服务目前无法使用。请与开发者联系以寻求帮助。</string>
+    <string name="common_google_play_services_enable_button">启用Google Play服务</string>
+    <string name="common_google_play_services_enable_text">您必须先启用 Google Play 服务，然后才能运行%1$s。</string>
+    <string name="common_google_play_services_enable_title">启用Google Play服务</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s发出的请求</string>
+    <string name="common_google_play_services_install_button">获取Google Play服务</string>
+    <string name="common_google_play_services_install_text_phone">您的手机没有安装 Google Play 服务，因此无法运行%1$s。</string>
+    <string name="common_google_play_services_install_text_tablet">您的平板电脑没有安装 Google Play 服务，因此无法运行%1$s。</string>
+    <string name="common_google_play_services_install_title">获取Google Play服务</string>
+    <string name="common_google_play_services_invalid_account_text">此设备上不存在指定的帐户，请选择其他帐户。</string>
+    <string name="common_google_play_services_invalid_account_title">无效帐户</string>
+    <string name="common_google_play_services_needs_enabling_title">启用Google Play服务后才能运行应用。</string>
+    <string name="common_google_play_services_network_error_text">您必须有数据网络连接才能接入Google Play服务。</string>
+    <string name="common_google_play_services_network_error_title">网络错误</string>
+    <string name="common_google_play_services_notification_needs_update_title">更新Google Play服务后才能运行应用。</string>
+    <string name="common_google_play_services_notification_ticker">Google Play服务出错</string>
+    <string name="common_google_play_services_sign_in_failed_text">登录该帐户时出错。请选择其他帐户。</string>
+    <string name="common_google_play_services_sign_in_failed_title">登录失败</string>
+    <string name="common_google_play_services_unknown_issue">Google Play服务出现未知问题。</string>
+    <string name="common_google_play_services_unsupported_text">要运行%1$s，必须先启用 Google Play 服务，但您的设备目前不支持该服务。请与制造商联系以寻求帮助。</string>
+    <string name="common_google_play_services_unsupported_title">Google Play服务</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_google_play_services_update_text">您必须先更新 Google Play 服务，然后才能运行%1$s。</string>
+    <string name="common_google_play_services_update_title">更新Google Play服务</string>
+    <string name="common_google_play_services_updating_text">Google Play 服务当前正在更新，因此您无法运行%1$s。</string>
+    <string name="common_google_play_services_updating_title">Google Play 服务正在更新</string>
+    <string name="common_open_on_phone">在手机上打开</string>
+    <string name="common_signin_button_text">登录</string>
+    <string name="common_signin_button_text_long">使用Google帐户登录</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">总内容大小：%1$s %2$s</string>
+    <string name="STR_ALL">全部</string>
+    <string name="STR_APPS_DESCRIPTION">选择运营商推荐的应用程序。</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">已下载您选定的所有应用程序。</string>
+    <string name="STR_APP_BUTTON_CANCEL">取消</string>
+    <string name="STR_APP_BUTTON_OK">确定</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">选择运营商推荐的应用程序。</string>
+    <string name="STR_APP_INSTALL_CONFIRM">选择要安装的应用程序。</string>
+    <string name="STR_APP_INSTALL_TITLE">安装应用程序</string>
+    <string name="STR_APP_STATE_CANCELED">已取消</string>
+    <string name="STR_APP_STATE_CONNECTING">正在连接…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">正在下载…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">下载失败</string>
+    <string name="STR_APP_STATE_INSTALLED">已安装</string>
+    <string name="STR_APP_STATE_INSTALLING">正在安装…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">安装失败</string>
+    <string name="STR_APP_STATE_WAITING">请稍候…</string>
+    <string name="STR_BTN_INSTALL">安装</string>
+    <string name="STR_BTN_INSTALL_ALL">安装全部</string>
+    <string name="STR_BTN_SKIP">跳过</string>
+    <string name="STR_BUTTON_NEXT">下一步</string>
+    <string name="STR_CAUTION_BODY">下载后请重启来安装该更新。在安装结束之前，您将无法使用手机，包括进行紧急呼叫。</string>
+    <string name="STR_CAUTION_BODY2">部分设置在更新后可能会重置为默认值。</string>
+    <string name="STR_CHARING_DIALOG">通过移动数据下载可能会产生额外费用。</string>
+    <string name="STR_CHARING_DIALOG_TITLE">是否使用移动数据下载？</string>
+    <string name="STR_CONNECTING_TO_SERVER">正在连接到服务器</string>
+    <string name="STR_CONNECT_FAIL">连接失败。 稍后重试。</string>
+    <string name="STR_DOWNLOADING_PACKAGE">正在下载更新…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">正在下载…</string>
+    <string name="STR_DOWNLOAD_FAIL">下载失败。 请稍后再试。</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">若要使用最新功能，下载并安装此固件更新。</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">下载失败。 请稍后再试。</string>
+    <string name="STR_FAILED_NOTI">下载失败</string>
+    <string name="STR_INITIAL_NOTI">点击此处选择推荐的下载应用程序</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">点击此处下载并安装更新</string>
+    <string name="STR_INSTALLED_NOTI">已安装 %d 个</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">安装附加内容</string>
+    <string name="STR_INSTALL_CAUTIONS">注意</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">此更新包括一些可选应用程序和内容。根据您的资费套餐，通过移动网络下载可能会产生额外费用。</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">已下载</string>
+    <string name="STR_INSTALL_FORCE">您的重要软件更新已下载。您的设备将在 %d 秒内重新启动以开始安装。</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">了解更多</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">您需要连接至 <cst>Wi-Fi</cst> 才能下载应用程序。请连接至 <cst>Wi-Fi</cst> 并重试。</string>
+    <string name="STR_NEED_WIFI_TITLE">没有 <cst>Wi-Fi</cst> 连接</string>
+    <string name="STR_NETWORK_FAIL">网络不可用。请稍后再试。</string>
+    <string name="STR_NO_APPS">没有应用程序</string>
+    <string name="STR_NO_CONTENT">您的运营商发布的可用应用程序将显示在此处。</string>
+    <string name="STR_NO_ITEMS">没有项目</string>
+    <string name="STR_NO_ITEM_SELECTED">未选择项目。</string>
+    <string name="STR_OMC_HEADER">运营商更新</string>
+    <string name="STR_OMC_SIZE">大小：%s</string>
+    <string name="STR_OMC_TITLE">配置更新</string>
+    <string name="STR_OMC_VERSION">版本：%s</string>
+    <string name="STR_OPERATOR_SETTINGS">运营商设置</string>
+    <string name="STR_PROCESS_FAIL">处理失败</string>
+    <string name="STR_PROVIDER_APPS">运营商应用程序</string>
+    <string name="STR_REGISTERING_DEVICE">设备注册中…</string>
+    <string name="STR_REGISTER_FAIL">注册失败</string>
+    <string name="STR_REGISTER_SUCCESS">设备已注册</string>
+    <string name="STR_RESTART_BTN_LATER">稍后</string>
+    <string name="STR_RESTART_BTN_RESTART">重启</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">您需要重启手机才能完成运营商软件更新的安装。</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">您需要重启平板电脑才能完成运营商软件更新的安装。</string>
+    <string name="STR_RESTART_DIALOG_TITLE">是否重新启动？</string>
+    <string name="STR_RESTART_PHONE">重启手机</string>
+    <string name="STR_RESTART_TABLET">重启平板电脑</string>
+    <string name="STR_SELECT_ALL">以下全部应用程序</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">基本应用程序</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">下载以下应用程序不会产生任何流量费用。</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">点击下面的一个项目来了解更多。</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">应用程序将通过 <cst>Wi-Fi</cst> 下载。</string>
+    <string name="STR_SUW_TITLE">获取运营商应用程序</string>
+    <string name="STR_UPDATE_BODY1">通过移动数据下载可能会产生额外费用。</string>
+    <string name="STR_UPDATE_BODY2">您的手机将在安装更新后重启。</string>
+    <string name="STR_UPDATE_FAIL">更新失败。请重试。</string>
+    <string name="STR_UPDATE_HEADER1">下载并安装来自运营商的最新软件。</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- 您可免费安装该固件。
+
+- 安装期间，您将无法使用设备的任何功能，包括拨打紧急电话。
+
+- 主屏幕上的图标和设备设置可能恢复为默认值，并可能需要在安装后重新进行设置。
+
+- 固件更新一般不会影响设备上的文件和数据。
+
+- 但是，如果您在完成之前停止安装，设备可能无法正常工作，且文件也可能丢失。
+
+- 为避免意外丢失数据，我们建议您在安装前备份重要数据。"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">重启来完成运营商软件更新的安装</string>
+    <string name="STR_UPDATING_PACKAGE">正在更新</string>
+    <string name="STR_USE_DATA_BTN">使用流量</string>
+    <string name="STR_WAIT_FOR_WIFI">"应用程序安装已暂停。
+将等待连接至 "<cst>Wi-Fi</cst> 再安装应用程序。</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">等待 <cst>Wi-Fi</cst></string>
+    <string name="STR_WIDGET_DEFAULT">安装运营商推荐的应用程序。</string>
+    <string name="STR_WIDGET_DOWNLOADING">正在下载…</string>
+    <string name="STR_WIDGET_INSTALLED">已安装</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">按钮</string>
+    <string name="WSS_STR_NO_UPDATE">已安装最新更新。</string>
+</resources>

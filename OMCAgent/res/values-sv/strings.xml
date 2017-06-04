@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">En uppdatering av appen Android Wear krävs för %1$s.</string>
+    <string name="common_android_wear_update_text">%1$s körs inte om du inte uppdaterar appen Android Wear.</string>
+    <string name="common_android_wear_update_title">Uppdatera Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">För %1$s krävs en eller flera Google Play-tjänster som inte är tillgängliga för närvarande. Kontakta utvecklaren om du vill ha hjälp.</string>
+    <string name="common_google_play_services_enable_button">Aktivera Google Play Tjänster</string>
+    <string name="common_google_play_services_enable_text">%1$s fungerar inte om du inte aktiverar Google Play-tjänster.</string>
+    <string name="common_google_play_services_enable_title">Aktivera Google Play Tjänster</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Begärdes av %1$s</string>
+    <string name="common_google_play_services_install_button">Hämta Google Play Tjänster</string>
+    <string name="common_google_play_services_install_text_phone">%1$s kan inte köras utan Google Play-tjänster, och dessa saknas på mobilen.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s kan inte köras utan Google Play-tjänster, och dessa saknas på surfplattan.</string>
+    <string name="common_google_play_services_install_title">Hämta Google Play Tjänster</string>
+    <string name="common_google_play_services_invalid_account_text">Det angivna kontot finns inte på den här enheten. Välj ett annat konto.</string>
+    <string name="common_google_play_services_invalid_account_title">Ogiltigt konto</string>
+    <string name="common_google_play_services_needs_enabling_title">Google Play-tjänster måste aktiveras för att en app ska fungera.</string>
+    <string name="common_google_play_services_network_error_text">En dataanslutning krävs för att ansluta till Google Plays tjänster.</string>
+    <string name="common_google_play_services_network_error_title">Nätverksfel</string>
+    <string name="common_google_play_services_notification_needs_update_title">Google Play-tjänster måste uppdateras för en app ska fungera.</string>
+    <string name="common_google_play_services_notification_ticker">Fel på Google Play-tjänster</string>
+    <string name="common_google_play_services_sign_in_failed_text">Ett fel uppstod när du försökte logga in på kontot. Välj ett annat konto.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Det gick inte att logga in</string>
+    <string name="common_google_play_services_unknown_issue">Okänt problem med Google Play Tjänster</string>
+    <string name="common_google_play_services_unsupported_text">För %1$s krävs Google Play-tjänster, och dessa stöds inte på enheten. Kontakta tillverkaren om du vill ha hjälp.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play-tjänster</string>
+    <string name="common_google_play_services_update_button">Uppdatera</string>
+    <string name="common_google_play_services_update_text">%1$s kan inte köras om du inte uppdaterar Google Play-tjänsterna.</string>
+    <string name="common_google_play_services_update_title">Uppdatera Google Play Tjänster</string>
+    <string name="common_google_play_services_updating_text">%1$s kan inte köras utan Google Play-tjänster, och dessa uppdateras för närvarande.</string>
+    <string name="common_google_play_services_updating_title">Google Play-tjänsterna uppdateras</string>
+    <string name="common_open_on_phone">Öppna på mobilen</string>
+    <string name="common_signin_button_text">Logga in</string>
+    <string name="common_signin_button_text_long">Logga in med Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Annat innehålls storlek: %1$s %2$s</string>
+    <string name="STR_ALL">Alla</string>
+    <string name="STR_APPS_DESCRIPTION">Välj program som rekommenderas av din operatör.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Alla dina valda program har hämtats.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Avbryt</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Välj program som rekommenderas av din operatör.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Välj programmen du vill installera.</string>
+    <string name="STR_APP_INSTALL_TITLE">Installera program</string>
+    <string name="STR_APP_STATE_CANCELED">Avbruten</string>
+    <string name="STR_APP_STATE_CONNECTING">Ansluter …</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Laddar ner …</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Hämtning misslyckades.</string>
+    <string name="STR_APP_STATE_INSTALLED">Installerat</string>
+    <string name="STR_APP_STATE_INSTALLING">Installerar…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installationen misslyckades</string>
+    <string name="STR_APP_STATE_WAITING">Väntar…</string>
+    <string name="STR_BTN_INSTALL">Installera</string>
+    <string name="STR_BTN_INSTALL_ALL">Installera alla</string>
+    <string name="STR_BTN_SKIP">Hoppa över</string>
+    <string name="STR_BUTTON_NEXT">Nästa</string>
+    <string name="STR_CAUTION_BODY">När du har hämtat uppdateringen startar du om för att kunna installera den. Du kommer inte att kunna använda telefonen, inte ens för nödsamtal, förrän installationen är klar.</string>
+    <string name="STR_CAUTION_BODY2">Efter uppdateringen kan vissa inställningar ha återställts till standardvärdena.</string>
+    <string name="STR_CHARING_DIALOG">Hämtning med mobildata kan medföra ytterligare avgifter.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Hämta med mobildata?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Ansluter till server</string>
+    <string name="STR_CONNECT_FAIL">Anslutningen misslyckades. Försök senare.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Hämtar uppdateringar …</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Hämtar…</string>
+    <string name="STR_DOWNLOAD_FAIL">Nedladdningen misslyckades. Försök senare.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Hämta och installera den här uppdateringen av den fasta programvaran om du vill använda de senaste funktionerna.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Nedladdningen misslyckades. Försök senare.</string>
+    <string name="STR_FAILED_NOTI">Hämtning misslyckades.</string>
+    <string name="STR_INITIAL_NOTI">Tryck här om du vill välja rekommenderade program för hämtning.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Tryck här om du vill hämta och installera uppdateringen.</string>
+    <string name="STR_INSTALLED_NOTI">%d installerade</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Installera ytterligare innehåll</string>
+    <string name="STR_INSTALL_CAUTIONS">Försiktighet</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Den här uppdateringen innehåller några valfria program och valfritt innehåll. Att hämta via mobilnät kan medföra ytterligare avgifter beroende på ditt avtal.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Nedladdade.</string>
+    <string name="STR_INSTALL_FORCE">Din kritiska uppdatering av programvara har hämtats. Enheten kommer att starta om om %d sekunder för att starta installationen.</string>
+    <string name="STR_KILOBYTE">kB</string>
+    <string name="STR_LINK_LEARNMORE">Läs mer</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Du måste vara ansluten till Wi-Fi om du vill hämta program. Anslut till Wi-Fi och försök igen.</string>
+    <string name="STR_NEED_WIFI_TITLE">Ingen Wi-Fi-anslutning</string>
+    <string name="STR_NETWORK_FAIL">Nätverket är inte tillgängligt. Försök igen senare.</string>
+    <string name="STR_NO_APPS">Inga program</string>
+    <string name="STR_NO_CONTENT">Tillgängliga program som din tjänsteleverantör har publicerat visas här.</string>
+    <string name="STR_NO_ITEMS">Inga objekt</string>
+    <string name="STR_NO_ITEM_SELECTED">Inga objekt valda.</string>
+    <string name="STR_OMC_HEADER">Operatörsuppdatering</string>
+    <string name="STR_OMC_SIZE">Storlek: %s</string>
+    <string name="STR_OMC_TITLE">Konfigurationsuppdatering</string>
+    <string name="STR_OMC_VERSION">Version: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operatörsinställningar</string>
+    <string name="STR_PROCESS_FAIL">Bearbetning misslyckades.</string>
+    <string name="STR_PROVIDER_APPS">Operatörsprogram</string>
+    <string name="STR_REGISTERING_DEVICE">Enheten registreras…</string>
+    <string name="STR_REGISTER_FAIL">Registreringsfel.</string>
+    <string name="STR_REGISTER_SUCCESS">Enheten har registrerats.</string>
+    <string name="STR_RESTART_BTN_LATER">Senare</string>
+    <string name="STR_RESTART_BTN_RESTART">Omstart</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">När du vill slutföra installationen av operatörens programvaruuppdatering ska du starta om telefonen.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">När du vill slutföra installationen av operatörens programvaruuppdatering ska du starta om surfplattan.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Starta om?</string>
+    <string name="STR_RESTART_PHONE">Starta om telefonen</string>
+    <string name="STR_RESTART_TABLET">Starta om surfplattan</string>
+    <string name="STR_SELECT_ALL">Alla de följande programmen</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Viktiga program</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Inga dataavgifter tas ut för att hämta programmen nedan.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Tryck på ett objekt nedan för att lära dig mer om det.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Program hämtas endast via Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Få program från tjänsteleverantören</string>
+    <string name="STR_UPDATE_BODY1">Hämtning med mobildata kan medföra ytterligare avgifter.</string>
+    <string name="STR_UPDATE_BODY2">Telefonen startas om när uppdateringen har installerats.</string>
+    <string name="STR_UPDATE_FAIL">Uppdateringen misslyckades. Försök igen.</string>
+    <string name="STR_UPDATE_HEADER1">Hämta och installera den senaste programvaran från operatören.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"– Du kommer inte att debiteras för den här installationen av fast programvara.
+
+– Under installationen kan du inte använda enheten, inte ens för nödsamtal.
+
+– Ikonerna på hemskärmen och enhetsinställningarna kanske återställs till standard och då kan du behöva konfigurera om dem efter installationen.
+
+– Uppdatering av fast programvara bör inte påverka filer och uppgifter på enheten.
+
+– Om du avbryter installationen innan den är klar kan det dock hända att enheten inte fungerar korrekt och att filerna förloras.
+
+– Vi rekommenderar att du säkerhetskopierar viktiga data före installationen för att undvika förlust av data."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Starta om när du vill slutföra installationen av operatörens programvaruuppdatering.</string>
+    <string name="STR_UPDATING_PACKAGE">Uppdaterar…</string>
+    <string name="STR_USE_DATA_BTN">Använd data</string>
+    <string name="STR_WAIT_FOR_WIFI">"Programinstallationen pausades.
+Väntar på Wi-Fi innan några program installeras."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Vänta på Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Installera program som rekommenderas av din operatör.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Hämtar …</string>
+    <string name="STR_WIDGET_INSTALLED">Installerad.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Knapp</string>
+    <string name="WSS_STR_NO_UPDATE">De senaste uppdateringarna har redan installerats.</string>
+</resources>

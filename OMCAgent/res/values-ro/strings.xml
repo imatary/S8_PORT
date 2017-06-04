@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s necesită o actualizare a aplicației Android Wear.</string>
+    <string name="common_android_wear_update_text">%1$s nu va rula decât dacă actualizați aplicația Android Wear.</string>
+    <string name="common_android_wear_update_title">Actualizați Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s necesită unul sau mai multe servicii Google Play, care momentan nu sunt disponibile. Contactați dezvoltatorul pentru asistență.</string>
+    <string name="common_google_play_services_enable_button">Activaţi Servicii Google Play</string>
+    <string name="common_google_play_services_enable_text">%1$s nu va funcționa decât dacă activați serviciile Google Play.</string>
+    <string name="common_google_play_services_enable_title">Activaţi Servicii Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Solicitată de %1$s</string>
+    <string name="common_google_play_services_install_button">Obţineţi Servicii Google Play</string>
+    <string name="common_google_play_services_install_text_phone">%1$s nu va rula fără serviciile Google Play, care lipsesc de pe telefon.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s nu va rula fără serviciile Google Play, care lipsesc de pe tabletă.</string>
+    <string name="common_google_play_services_install_title">Descărcaţi Servicii Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Contul menționat nu există pe acest dispozitiv. Alegeți alt cont.</string>
+    <string name="common_google_play_services_invalid_account_title">Cont nevalid</string>
+    <string name="common_google_play_services_needs_enabling_title">O aplicație necesită activarea serviciilor Google Play.</string>
+    <string name="common_google_play_services_network_error_text">Este necesară o conexiune de date pentru a vă conecta la serviciile Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Eroare de reţea</string>
+    <string name="common_google_play_services_notification_needs_update_title">O aplicație necesită o actualizare pentru serviciile Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Eroare a serviciilor Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Eroare la conectarea la contul specificat. Alegeți alt cont.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Conectarea nu a reușit</string>
+    <string name="common_google_play_services_unknown_issue">Problemă necunoscută privind Servicii Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s se bazează pe serviciile Google Play, care nu sunt acceptate de dispozitiv. Contactați producătorul pentru asistență.</string>
+    <string name="common_google_play_services_unsupported_title">Servicii Google Play</string>
+    <string name="common_google_play_services_update_button">Actualizaţi</string>
+    <string name="common_google_play_services_update_text">%1$s nu va rula decât dacă actualizați serviciile Google Play.</string>
+    <string name="common_google_play_services_update_title">Actualizaţi Servicii Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s nu va rula fără serviciile Google Play, care momentan se actualizează.</string>
+    <string name="common_google_play_services_updating_title">Se actualizează serviciile Google Play</string>
+    <string name="common_open_on_phone">Deschideți pe telefon</string>
+    <string name="common_signin_button_text">Conectați</string>
+    <string name="common_signin_button_text_long">Conectați-vă cu Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Dimensiune conținut suplimentar: %1$s %2$s</string>
+    <string name="STR_ALL">Toate</string>
+    <string name="STR_APPS_DESCRIPTION">Selectați aplicațiile recomandate de furnizorul de servicii.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Toate aplicațiile selectate au fost descărcate.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Anulare</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Selectați aplicațiile recomandate de furnizorul de servicii.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Selectați aplicațiile pe care doriți să le instalați.</string>
+    <string name="STR_APP_INSTALL_TITLE">Instalare aplicații</string>
+    <string name="STR_APP_STATE_CANCELED">Anulate</string>
+    <string name="STR_APP_STATE_CONNECTING">Conectare…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Se descarcă…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Descărcare eşuată</string>
+    <string name="STR_APP_STATE_INSTALLED">Instalată</string>
+    <string name="STR_APP_STATE_INSTALLING">Se instalează…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Instalare nereușită</string>
+    <string name="STR_APP_STATE_WAITING">În așteptare…</string>
+    <string name="STR_BTN_INSTALL">Instalare</string>
+    <string name="STR_BTN_INSTALL_ALL">Instalaţi toate aplicaţiile</string>
+    <string name="STR_BTN_SKIP">Omitere</string>
+    <string name="STR_BUTTON_NEXT">Următorul</string>
+    <string name="STR_CAUTION_BODY">După descărcare, reporniți pentru a instala actualizarea. Nu veți putea utiliza telefonul, nici chiar pentru apeluri de urgență, până când actualizarea este finalizată.</string>
+    <string name="STR_CAUTION_BODY2">După actualizare, este posibil ca unele setări să se reseteze la valorile implicite.</string>
+    <string name="STR_CHARING_DIALOG">Descărcarea prin date mobile poate genera costuri suplimentare.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Descărcați prin conexiunea de date mobile?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Conectare la server</string>
+    <string name="STR_CONNECT_FAIL">Conectare nereușită. Încercați mai târziu.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Se descarcă actualizările…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Se descarcă…</string>
+    <string name="STR_DOWNLOAD_FAIL">Descărcare nereușită. Încercați mai târziu.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Pentru a utiliza cele mai noi caracteristici, descărcați și instalați această actualizare de firmware.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Descărcare nereușită. Încercați mai târziu.</string>
+    <string name="STR_FAILED_NOTI">Descărcare eșuată</string>
+    <string name="STR_INITIAL_NOTI">Atingeți aici și selectați aplicații recomandate pentru descărcare.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Atingeți aici pentru a descărca și a instala actualizarea.</string>
+    <string name="STR_INSTALLED_NOTI">%d s-au instalat</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Instalați conținut suplimentar</string>
+    <string name="STR_INSTALL_CAUTIONS">Atenție</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Această actualizare include unele aplicații și conținut opționale. Descărcarea prin rețele mobile poate genera costuri suplimentare, în funcție de planul tarifar.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Descărcat</string>
+    <string name="STR_INSTALL_FORCE">Actualizarea software critică a fost descărcată. Dispozitivul va reporni peste %d secunde pentru a începe instalarea.</string>
+    <string name="STR_KILOBYTE">KO</string>
+    <string name="STR_LINK_LEARNMORE">Aflați mai multe</string>
+    <string name="STR_MEGABYTE">MO</string>
+    <string name="STR_NEED_WIFI">Trebuie să fiți conectat la o rețea Wi-Fi pentru a descărca aplicații. Conectați-vă la o rețea Wi-Fi și încercați din nou.</string>
+    <string name="STR_NEED_WIFI_TITLE">Nicio conexiune Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Rețeaua nu este disponibilă. Reîncercați mai târziu.</string>
+    <string name="STR_NO_APPS">Nicio aplicație</string>
+    <string name="STR_NO_CONTENT">Aplicațiile disponibile provenind de la furnizorul dvs. de servicii vor fi afișate aici.</string>
+    <string name="STR_NO_ITEMS">Niciun element</string>
+    <string name="STR_NO_ITEM_SELECTED">Niciun element selectat</string>
+    <string name="STR_OMC_HEADER">Actualizare furnizor de servicii</string>
+    <string name="STR_OMC_SIZE">Dimensiune: %s</string>
+    <string name="STR_OMC_TITLE">Actualizare configurație</string>
+    <string name="STR_OMC_VERSION">Versiune: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Setări operator</string>
+    <string name="STR_PROCESS_FAIL">Procesare nereușită</string>
+    <string name="STR_PROVIDER_APPS">Aplicații furnizor de servicii</string>
+    <string name="STR_REGISTERING_DEVICE">Se înregistrează dispozitivul…</string>
+    <string name="STR_REGISTER_FAIL">Înregistrare nereușită</string>
+    <string name="STR_REGISTER_SUCCESS">Dispozitivul a fost înregistrat.</string>
+    <string name="STR_RESTART_BTN_LATER">Ulterior</string>
+    <string name="STR_RESTART_BTN_RESTART">Repornire</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Pentru a finaliza instalarea actualizării software a furnizorului de servicii, trebuie să reporniți telefonul.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Pentru a finaliza instalarea actualizării software a furnizorului de servicii, trebuie să reporniți tableta.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Reporniți?</string>
+    <string name="STR_RESTART_PHONE">Repornire telefon</string>
+    <string name="STR_RESTART_TABLET">Repornire tabletă</string>
+    <string name="STR_SELECT_ALL">Toate aplicațiile următoare</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Aplicații esențiale</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Nu se aplică nicio taxă pentru descărcarea aplicațiilor de mai jos.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Atingeți un element de mai jos pentru a afla mai multe despre acesta.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Aplicațiile vor fi descărcate prin Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Obțineți aplicații de la furnizorul de servicii</string>
+    <string name="STR_UPDATE_BODY1">Descărcarea prin date mobile poate genera costuri suplimentare.</string>
+    <string name="STR_UPDATE_BODY2">Telefonul va reporni după instalarea actualizării.</string>
+    <string name="STR_UPDATE_FAIL">Actualizarea nu a reuşit. Încercaţi din nou.</string>
+    <string name="STR_UPDATE_HEADER1">Descărcați și instalați cel mai recent software de la furnizorul dvs. de servicii.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Nu veți fi taxat pentru instalarea acestui firmware.
+
+- În timpul instalării, nu veți avea posibilitatea să utilizați deloc dispozitivul, nici pentru apeluri de urgență.
+
+- Pictogramele de pe ecranul Acasă și setările dispozitivului pot fi resetate la valorile implicite și poate fi necesar să le reconfigurați după instalare.
+
+- O actualizare de firmware nu ar trebui să afecteze fișierele și datele de pe dispozitiv.
+
+- Totuși, dacă opriți procesul de instalare înainte de finalizare, este posibil ca dispozitivul să nu funcționeze normal și, drept urmare, să pierdeți fișiere.
+
+- Pentru a evita pierderile de date neașteptate, vă recomandăm să faceți backup datelor importante înainte de instalare."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Reporniți pentru a finaliza instalarea actualizării software a furnizorului de servicii.</string>
+    <string name="STR_UPDATING_PACKAGE">Actualizare…</string>
+    <string name="STR_USE_DATA_BTN">Utilizare date</string>
+    <string name="STR_WAIT_FOR_WIFI">"Instalare aplicație întreruptă.
+Se așteaptă conexiunea Wi-Fi pentru a se instala aplicații."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Așteptați conex. Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Instalați aplicațiile recomandate de furnizorul de servicii.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Se descarcă…</string>
+    <string name="STR_WIDGET_INSTALLED">Instalate</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Buton</string>
+    <string name="WSS_STR_NO_UPDATE">Au fost deja instalate cele mai recente actualizări.</string>
+</resources>

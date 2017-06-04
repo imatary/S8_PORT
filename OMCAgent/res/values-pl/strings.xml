@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Aplikacja %1$s wymaga zaktualizowania aplikacji Android Wear.</string>
+    <string name="common_android_wear_update_text">Aplikacja %1$s nie będzie działać, jeśli nie zaktualizujesz aplikacji Android Wear.</string>
+    <string name="common_android_wear_update_title">Zaktualizuj Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">Aplikacja %1$s wymaga co najmniej jednej usługi Google Play, która jest obecnie niedostępna. Skontaktuj się z programistą, by uzyskać pomoc.</string>
+    <string name="common_google_play_services_enable_button">Włącz Usługi Google Play</string>
+    <string name="common_google_play_services_enable_text">Aplikacja %1$s nie będzie działać, jeśli nie włączysz Usług Google Play.</string>
+    <string name="common_google_play_services_enable_title">Włącz Usługi Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Żądanie z aplikacji %1$s</string>
+    <string name="common_google_play_services_install_button">Pobierz Usługi Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Aplikacja %1$s nie będzie działać bez Usług Google Play, których nie masz na telefonie.</string>
+    <string name="common_google_play_services_install_text_tablet">Aplikacja %1$s nie będzie działać bez Usług Google Play, których nie masz na tablecie.</string>
+    <string name="common_google_play_services_install_title">Pobierz Usługi Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Podanego konta nie ma na tym urządzeniu. Wybierz inne konto.</string>
+    <string name="common_google_play_services_invalid_account_title">Nieprawidłowe konto</string>
+    <string name="common_google_play_services_needs_enabling_title">Aplikacja wymaga włączenia Usług Google Play.</string>
+    <string name="common_google_play_services_network_error_text">Korzystanie z usług Google Play wymaga połączenia z internetem.</string>
+    <string name="common_google_play_services_network_error_title">Błąd sieci</string>
+    <string name="common_google_play_services_notification_needs_update_title">Aplikacja wymaga zaktualizowania Usług Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Błąd Usług Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Błąd podczas logowania na określone konto. Wybierz inne.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Błąd logowania</string>
+    <string name="common_google_play_services_unknown_issue">Nieznany problem z Usługami Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">Aplikacja %1$s wymaga Usług Google Play, które nie są obsługiwane przez Twoje urządzenie. Skontaktuj się z producentem, by uzyskać pomoc.</string>
+    <string name="common_google_play_services_unsupported_title">Usługi Google Play</string>
+    <string name="common_google_play_services_update_button">Aktualizuj</string>
+    <string name="common_google_play_services_update_text">Aplikacja %1$s nie będzie działać, jeśli nie zaktualizujesz Usług Google Play.</string>
+    <string name="common_google_play_services_update_title">Aktualizuj Usługi Google Play</string>
+    <string name="common_google_play_services_updating_text">Aplikacja %1$s nie będzie działać bez Usług Google Play, które są obecnie aktualizowane.</string>
+    <string name="common_google_play_services_updating_title">Trwa aktualizowanie Usług Google Play</string>
+    <string name="common_open_on_phone">Otwórz na telefonie</string>
+    <string name="common_signin_button_text">Zaloguj się</string>
+    <string name="common_signin_button_text_long">Zaloguj się przez Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Rozmiar dodatkowej zawartości: %1$s %2$s</string>
+    <string name="STR_ALL">Wszystkie</string>
+    <string name="STR_APPS_DESCRIPTION">Wybierz aplikacje zalecane przez dostawcę usług.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Wszystkie wybrane aplikacje zostały pobrane.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Anuluj</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Wybierz aplikacje zalecane przez dostawcę usług.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Wybierz aplikacje, które chcesz zainstalować.</string>
+    <string name="STR_APP_INSTALL_TITLE">Instalacja aplikacji</string>
+    <string name="STR_APP_STATE_CANCELED">Anulowane</string>
+    <string name="STR_APP_STATE_CONNECTING">Łączenie…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Pobieranie…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Błąd pobierania</string>
+    <string name="STR_APP_STATE_INSTALLED">Zainstalowano</string>
+    <string name="STR_APP_STATE_INSTALLING">Instalowanie…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Błąd instalacji</string>
+    <string name="STR_APP_STATE_WAITING">Oczekiwanie…</string>
+    <string name="STR_BTN_INSTALL">Instaluj</string>
+    <string name="STR_BTN_INSTALL_ALL">Zainstaluj wszystkie</string>
+    <string name="STR_BTN_SKIP">Pomiń</string>
+    <string name="STR_BUTTON_NEXT">Następny</string>
+    <string name="STR_CAUTION_BODY">Uruchom ponownie po pobraniu aktualizacji, aby ją zainstalować. Nie będzie można używać telefonu, nawet do połączeń alarmowych, aż do zakończenia instalacji.</string>
+    <string name="STR_CAUTION_BODY2">Po aktualizacji niektóre ustawienia mogą być zresetowane do wartości domyślnych.</string>
+    <string name="STR_CHARING_DIALOG">Pobieranie przy użyciu danych komórkowych może spowodować naliczenie dodatkowych opłat.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Pobrać przy użyciu danych komórkowych?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Łączenie z serwerem</string>
+    <string name="STR_CONNECT_FAIL">Połączenie nie powiodło się. Spróbuj później.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Pobieranie aktualizacji…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Pobieranie…</string>
+    <string name="STR_DOWNLOAD_FAIL">Błąd pobierania. Spróbuj później.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Aby używać najnowszych funkcji, pobierz i zainstaluj tę aktualizację oprogramowania.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Błąd pobierania. Spróbuj później.</string>
+    <string name="STR_FAILED_NOTI">Błąd pobierania</string>
+    <string name="STR_INITIAL_NOTI">Dotknij tutaj, aby wybrać zalecane aplikacje do pobrania.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Dotknij tutaj, aby pobrać i zainstalować aktualizację.</string>
+    <string name="STR_INSTALLED_NOTI">Zainstalowano %d</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Zainstaluj dodatkową zawartość</string>
+    <string name="STR_INSTALL_CAUTIONS">Uwaga</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Ta aktualizacja obejmuje opcjonalne aplikacje i zawartość. Pobieranie za pośrednictwem sieci komórkowych może spowodować naliczenie dodatkowych opłat w zależności od planu taryfowego.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Pobrano.</string>
+    <string name="STR_INSTALL_FORCE">Pobrano krytyczną aktualizację oprogramowania. Urządzenie zrestartuje się za %d s w celu rozpoczęcia instalacji.</string>
+    <string name="STR_KILOBYTE">kB</string>
+    <string name="STR_LINK_LEARNMORE">Więcej informacji</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Do pobierania aplikacji wymagane jest połączenie z siecią Wi-Fi. Połącz się z siecią Wi-Fi i spróbuj ponownie.</string>
+    <string name="STR_NEED_WIFI_TITLE">Brak połączenia Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Sieć niedostępna. Spróbuj ponownie później.</string>
+    <string name="STR_NO_APPS">Brak aplikacji</string>
+    <string name="STR_NO_CONTENT">Dostępne aplikacje wydane przez Twojego dostawcę usług będą widoczne w tym miejscu.</string>
+    <string name="STR_NO_ITEMS">Brak elementów</string>
+    <string name="STR_NO_ITEM_SELECTED">Nie wybrano elementów.</string>
+    <string name="STR_OMC_HEADER">Aktualizacja dostawcy usług</string>
+    <string name="STR_OMC_SIZE">Rozmiar: %s</string>
+    <string name="STR_OMC_TITLE">Aktualizacja konfiguracji</string>
+    <string name="STR_OMC_VERSION">Wersja: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Ustawienia operatora</string>
+    <string name="STR_PROCESS_FAIL">Błąd przetwarzania</string>
+    <string name="STR_PROVIDER_APPS">Aplikacje dostawcy usług</string>
+    <string name="STR_REGISTERING_DEVICE">Rejestracja urządzenia…</string>
+    <string name="STR_REGISTER_FAIL">Błąd rejestracji</string>
+    <string name="STR_REGISTER_SUCCESS">Urządzenie zarejestrowane.</string>
+    <string name="STR_RESTART_BTN_LATER">Później</string>
+    <string name="STR_RESTART_BTN_RESTART">Uruch.pon.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Aby zakończyć instalowanie aktualizacji oprogramowania od dostawcy usług, musisz ponownie uruchomić telefon.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Aby zakończyć instalowanie aktualizacji oprogramowania od dostawcy usług, musisz ponownie uruchomić tablet.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Uruchomić ponownie?</string>
+    <string name="STR_RESTART_PHONE">Uruchom ponownie telefon</string>
+    <string name="STR_RESTART_TABLET">Uruchom ponownie tablet</string>
+    <string name="STR_SELECT_ALL">Wszystkie następujące aplikacje</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Podstawowe aplikacje</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Za pobranie poniższych aplikacji nie zostaną naliczone żadne opłaty związane z danymi.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Dotknij elementu poniżej, aby dowiedzieć się o nim więcej.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Aplikacje zostaną pobrane przez sieć Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Uzyskaj aplikacje od dostawcy usług</string>
+    <string name="STR_UPDATE_BODY1">Pobieranie przy użyciu danych komórkowych może spowodować naliczenie dodatkowych opłat.</string>
+    <string name="STR_UPDATE_BODY2">Telefon zostanie ponownie uruchomiony po zainstalowaniu aktualizacji.</string>
+    <string name="STR_UPDATE_FAIL">Błąd aktualizacji. Spróbuj ponownie.</string>
+    <string name="STR_UPDATE_HEADER1">Pobierz i zainstaluj ostatnie oprogramowanie od swojego dostawcy usług.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"— Za instalację tego oprogramowania nie zostanie pobrana opłata.
+
+— W trakcie instalacji w ogóle nie można używać urządzenia, nawet do połączeń alarmowych.
+
+— Ikony na ekranie startowym i ustawienia urządzenia mogą powrócić do ustawień fabrycznych i mogą wymagać ponownego skonfigurowania po instalacji.
+
+— Aktualizacja oprogramowania nie powinna wpłynąć na pliki ani dane na urządzeniu.
+
+— Jeśli jednak proces instalacji zostanie zatrzymany przed zakończeniem, urządzenie może nie działać normalnie, a pliki mogą zostać utracone.
+
+— Aby uniknąć nieoczekiwanej utraty danych, warto utworzyć kopię zapasową ważnych danych przed instalacją."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Uruchom ponownie, aby zakończyć instalowanie aktualizacji oprogramowania od dostawcy usług.</string>
+    <string name="STR_UPDATING_PACKAGE">Aktualizacja…</string>
+    <string name="STR_USE_DATA_BTN">Użyj danych</string>
+    <string name="STR_WAIT_FOR_WIFI">"Wstrzymano instalację aplikacji.
+Oczekiwanie na zainstalowanie aplikacji w sieci Wi-Fi."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Czekaj na Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Zainstaluj aplikacje zalecane przez dostawcę usług.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Pobieranie…</string>
+    <string name="STR_WIDGET_INSTALLED">Zainstalowano.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Przycisk</string>
+    <string name="WSS_STR_NO_UPDATE">Najnowsze aktualizacje zostały już zainstalowane.</string>
+</resources>

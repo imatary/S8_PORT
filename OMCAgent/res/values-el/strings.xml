@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Η εφαρμογή %1$s απαιτεί την ενημέρωση της εφαρμογής Android Wear.</string>
+    <string name="common_android_wear_update_text">Η εφαρμογή %1$s δεν θα εκτελεστεί εάν δεν ενημερώσετε την εφαρμογή Android Wear.</string>
+    <string name="common_android_wear_update_title">Ενημέρωση Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">Η εφαρμογή %1$s απαιτεί μία ή περισσότερες υπηρεσίες του Google Play που δεν είναι διαθέσιμες προς το παρόν. Επικοινωνήστε με τον προγραμματιστή για βοήθεια.</string>
+    <string name="common_google_play_services_enable_button">Ενεργοπ. υπηρεσιών Google Play</string>
+    <string name="common_google_play_services_enable_text">Η εφαρμογή %1$s δεν θα λειτουργήσει εάν δεν έχετε ενεργοποιήσει τις Υπηρεσίες Google Play.</string>
+    <string name="common_google_play_services_enable_title">Ενεργοποίηση υπηρεσιών Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Υποβλήθηκε αίτημα από την εφαρμογή %1$s</string>
+    <string name="common_google_play_services_install_button">Λήψη υπηρεσιών Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Η εφαρμογή %1$s δεν θα εκτελεστεί χωρίς τις Υπηρεσίες Google Play, οι οποίες λείπουν από το τηλέφωνό σας.</string>
+    <string name="common_google_play_services_install_text_tablet">Η εφαρμογή %1$s δεν θα εκτελεστεί χωρίς τις Υπηρεσίες Google Play, οι οποίες λείπουν από το tablet σας.</string>
+    <string name="common_google_play_services_install_title">Λήψη υπηρεσιών Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Ο συγκεκριμένος λογαριασμός δεν υπάρχει σε αυτήν τη συσκευή. Επιλέξτε έναν διαφορετικό λογαριασμό.</string>
+    <string name="common_google_play_services_invalid_account_title">Μη έγκυρος λογαριασμός</string>
+    <string name="common_google_play_services_needs_enabling_title">Μια εφαρμογή απαιτεί την ενεργοποίηση των Υπηρεσιών Google Play.</string>
+    <string name="common_google_play_services_network_error_text">Απαιτείται σύνδεση δεδομένων για να συνδεθείτε με τις Υπηρεσίες Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Σφάλμα δικτύου</string>
+    <string name="common_google_play_services_notification_needs_update_title">Μια εφαρμογή απαιτεί την ενημέρωση των Υπηρεσιών Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Σφάλμα Υπηρεσιών Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Σφάλμα κατά τη σύνδεση στον συγκεκριμένο λογαριασμό. Επιλέξτε έναν διαφορετικό λογαριασμό.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Η σύνδεση απέτυχε</string>
+    <string name="common_google_play_services_unknown_issue">Άγνωστο πρόβλημα με τις υπηρεσίες Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">Η εφαρμογή %1$s βασίζεται στις Υπηρεσίες Google Play, οι οποίες δεν υποστηρίζονται από τη συσκευή σας. Επικοινωνήστε με τον κατασκευαστή για βοήθεια.</string>
+    <string name="common_google_play_services_unsupported_title">Υπηρεσίες Google Play</string>
+    <string name="common_google_play_services_update_button">Ενημέρωση</string>
+    <string name="common_google_play_services_update_text">Η εφαρμογή %1$s θα εκτελεστεί αφού ενημερώσετε τις Υπηρεσίες Google Play.</string>
+    <string name="common_google_play_services_update_title">Ενημέρωση υπηρεσιών Google Play</string>
+    <string name="common_google_play_services_updating_text">Η εφαρμογή %1$s δεν θα εκτελεστεί χωρίς τις Υπηρεσίες Google Play, οι οποίες ενημερώνονται αυτήν τη στιγμή.</string>
+    <string name="common_google_play_services_updating_title">Ενημέρωση των Υπηρεσιών Google Play</string>
+    <string name="common_open_on_phone">Άνοιγμα στο τηλέφωνο</string>
+    <string name="common_signin_button_text">Σύνδεση</string>
+    <string name="common_signin_button_text_long">Συνδεθείτε στο Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Μέγεθος πρόσθετου περιεχομένου: %1$s %2$s</string>
+    <string name="STR_ALL">Όλα</string>
+    <string name="STR_APPS_DESCRIPTION">Επιλέξτε εφαρμογές που προτείνει ο παροχέας υπηρεσιών σας.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Έγινε λήψη όλων των επιλεγμένων εφαρμογών.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Ακύρωση</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Επιλέξτε εφαρμογές που προτείνει ο παροχέας υπηρεσιών σας.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Επιλέξτε τις εφαρμογές που θέλετε να εγκαταστήσετε.</string>
+    <string name="STR_APP_INSTALL_TITLE">Εγκατάσταση εφαρμογών</string>
+    <string name="STR_APP_STATE_CANCELED">Ακυρώθηκε</string>
+    <string name="STR_APP_STATE_CONNECTING">Σύνδεση…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Λήψη…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Αποτυχία λήψης.</string>
+    <string name="STR_APP_STATE_INSTALLED">Εγκαταστάθηκε</string>
+    <string name="STR_APP_STATE_INSTALLING">Εγκατάσταση…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Η εγκατάσταση απέτυχε</string>
+    <string name="STR_APP_STATE_WAITING">Αναμονή…</string>
+    <string name="STR_BTN_INSTALL">Εγκατ.</string>
+    <string name="STR_BTN_INSTALL_ALL">Εγκατάσταση όλων</string>
+    <string name="STR_BTN_SKIP">Παράβ</string>
+    <string name="STR_BUTTON_NEXT">Επόμενο</string>
+    <string name="STR_CAUTION_BODY">Μετά τη λήψη, κάντε επανεκκίνηση για την εγκατάσταση της ενημέρωσης. Δεν θα μπορείτε να χρησιμοποιήσετε το τηλέφωνο, ακόμη και για τις κλήσεις έκτακτης ανάγκης, μέχρι να ολοκληρωθεί η εγκατάσταση.</string>
+    <string name="STR_CAUTION_BODY2">Μετά την ενημέρωση, ενδέχεται να γίνει επαναφορά ορισμένων ρυθμίσεων στις προεπιλεγμένες τιμές.</string>
+    <string name="STR_CHARING_DIALOG">Η λήψη μέσω δεδομένων κινητής τηλεφωνίας ίσως επιφέρει επιπλέον χρεώσεις.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Να γίνει λήψη με χρήση δεδομένων κινητής;</string>
+    <string name="STR_CONNECTING_TO_SERVER">Σύνδεση με το διακομιστή</string>
+    <string name="STR_CONNECT_FAIL">Η σύνδεση απέτυχε. Προσπαθήστε αργότερα.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Λήψη ενημερώσεων…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Λήψη…</string>
+    <string name="STR_DOWNLOAD_FAIL">Η λήψη απέτυχε. Δοκιμάστε αργότερα.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Για να χρησιμοποιήσετε τις νέες λειτουργίες, κατεβάστε και εγκαταστήστε αυτήν την ενημέρωση firmware.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Η λήψη απέτυχε. Δοκιμάστε αργότερα.</string>
+    <string name="STR_FAILED_NOTI">Αποτυχία λήψης.</string>
+    <string name="STR_INITIAL_NOTI">Πατήστε εδώ για να επιλέξετε τις προτεινόμενες εφαρμογές για λήψη.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Πατήστε εδώ για να κατεβάσετε και να εγκαταστήσετε την ενημέρωση.</string>
+    <string name="STR_INSTALLED_NOTI">%d εγκατεστημένες</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Εγκατάσταση πρόσθετου περιεχομένου</string>
+    <string name="STR_INSTALL_CAUTIONS">Προσοχή, ενδέχεται να υπάρχουν επιπλέον χρεώσης περιαγωγής κατά τη χρήση της υπηρεσίας. Παραλούμε επικοινωνήστε με τον πάροχο σας.</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Αυτή η ενημέρωση περιλαμβάνει κάποιες προαιρετικές εφαρμογές και περιεχόμενο. Η λήψη μέσω δικτύων κινητής τηλεφωνίας ενδέχεται να επιφέρει πρόσθετες χρεώσεις, ανάλογα με το πρόγραμμα χρεώσεων που διαθέτετε.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Η λήψη ολοκληρώθηκε.</string>
+    <string name="STR_INSTALL_FORCE">Ολοκληρώθηκε η λήψη της κρίσιμης ενημέρωσης λογισμικού. Θα γίνει επανεκκίνηση της συσκευής σας σε %d δευτερόλεπτα προκειμένου να ξεκινήσει η εγκατάσταση.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Μάθετε περισσότερα</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Πρέπει να είστε συνδεδεμένοι σε κάποιο δίκτυο Wi-Fi για να κατεβάσετε εφαρμογές. Συνδεθείτε στο Wi-Fi και δοκιμάστε ξανά.</string>
+    <string name="STR_NEED_WIFI_TITLE">Χωρίς σύνδεση Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Το δίκτυο δεν είναι διαθέσιμο. Δοκιμάστε ξανά αργότερα.</string>
+    <string name="STR_NO_APPS">Καμία εφαρμογή</string>
+    <string name="STR_NO_CONTENT">Οι διαθέσιμες εφαρμογές που έχει κυκλοφορήσει ο παροχέας υπηρεσιών θα εμφανιστούν εδώ.</string>
+    <string name="STR_NO_ITEMS">Κανένα στοιχείο</string>
+    <string name="STR_NO_ITEM_SELECTED">Κανένα επιλεγμένο στοιχείο.</string>
+    <string name="STR_OMC_HEADER">Ενημέρωση παροχέα υπηρεσιών</string>
+    <string name="STR_OMC_SIZE">Μέγεθος: %s</string>
+    <string name="STR_OMC_TITLE">Ενημέρωση διαμόρφωσης</string>
+    <string name="STR_OMC_VERSION">Έκδοση: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Ρυθμίσεις παρόχου τηλεφωνίας</string>
+    <string name="STR_PROCESS_FAIL">Αποτυχία επεξεργασίας.</string>
+    <string name="STR_PROVIDER_APPS">Εφαρμογές παροχέα υπηρεσιών</string>
+    <string name="STR_REGISTERING_DEVICE">Αντιστοίχιση συσκευής…</string>
+    <string name="STR_REGISTER_FAIL">Αποτυχία σύνδεσης.</string>
+    <string name="STR_REGISTER_SUCCESS">Πραγματοποιήθηκε εγγραφή της συσκευής.</string>
+    <string name="STR_RESTART_BTN_LATER">Αργότερα</string>
+    <string name="STR_RESTART_BTN_RESTART">Επανεκκίν.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Για να ολοκληρώσετε την εγκατάσταση της ενημέρωσης λογισμικού από τον παροχέα υπηρεσιών, θα πρέπει να κάνετε επανεκκίνηση του τηλεφώνου σας.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Για να ολοκληρώσετε την εγκατάσταση της ενημέρωσης λογισμικού από τον παροχέα υπηρεσιών, θα πρέπει να κάνετε επανεκκίνηση του tablet σας.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Να γίνει επανεκκίνηση;</string>
+    <string name="STR_RESTART_PHONE">Επανεκκίνηση τηλεφώνου</string>
+    <string name="STR_RESTART_TABLET">Επανεκκίνηση tablet</string>
+    <string name="STR_SELECT_ALL">Όλες οι παρακάτω εφαρμογές</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Απαραίτητες εφαρμογές</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Δεν ισχύουν χρεώσεις δεδομένων για τη λήψη των παρακάτω εφαρμογών.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Πατήστε πάνω σε ένα από τα παρακάτω στοιχεία, για να μάθετε περισσότερα για αυτό.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Οι εφαρμογές θα ληφθούν μέσω Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Λήψη εφαρμογών από παροχέα υπηρεσιών</string>
+    <string name="STR_UPDATE_BODY1">Η λήψη μέσω δεδομένων κινητής τηλεφωνίας ίσως επιφέρει επιπλέον χρεώσεις.</string>
+    <string name="STR_UPDATE_BODY2">Θα γίνει επανεκκίνηση του τηλεφώνου σας μετά την εγκατάσταση της ενημέρωσης.</string>
+    <string name="STR_UPDATE_FAIL">Η ενημέρωση απέτυχε. Δοκιμάστε ξανά.</string>
+    <string name="STR_UPDATE_HEADER1">Κάντε λήψη και εγκατάσταση του πιο πρόσφατου λογισμικού από τον παροχέα υπηρεσιών σας.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Δεν θα χρεωθείτε για αυτήν την εγκατάσταση firmware.
+
+- Κατά τη διάρκεια της εγκατάστασης δεν θα μπορείτε να χρησιμοποιείτε τη συσκευή σας, ούτε καν για κλήσεις έκτακτης ανάγκης.
+
+- Ενδέχεται να γίνει επαναφορά των εικονιδίων στην αρχική οθόνη και των ρυθμίσεων της συσκευής στις προεπιλογές και ίσως χρειαστεί να επαναλάβετε τη ρύθμιση παραμέτρων μετά την εγκατάσταση.
+
+- Η ενημέρωση firmware δεν θα επηρεάσει τα αρχεία και τα δεδομένα στη συσκευή σας.
+
+- Ωστόσο, αν διακόψετε την εγκατάσταση πριν ολοκληρωθεί, η συσκευή σας ενδέχεται να μη λειτουργεί σωστά και τα αρχεία σας μπορεί να χαθούν.
+
+- Για να αποφύγετε την ανεπιθύμητη απώλεια δεδομένων, συνιστάται να δημιουργήσετε αντίγραφα ασφάλειας των σημαντικών δεδομένων σας πριν από την εγκατάσταση."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Κάντε επανεκκίνηση για να ολοκληρώσετε την εγκατάσταση της ενημέρωσης λογισμικού από τον παροχέα υπηρεσιών.</string>
+    <string name="STR_UPDATING_PACKAGE">Ενημέρωση…</string>
+    <string name="STR_USE_DATA_BTN">Χρήση δεδομένων</string>
+    <string name="STR_WAIT_FOR_WIFI">"Η εγκατάσταση των εφαρμογών τέθηκε σε παύση.
+Αναμονή για Wi-Fi για την εγκατάσταση των εφαρμογών."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Αναμονή για Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Εγκαταστήστε εφαρμογές που προτείνει ο παροχέας υπηρεσιών σας.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Λήψη…</string>
+    <string name="STR_WIDGET_INSTALLED">Εγκαταστάθηκε.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Κουμπί</string>
+    <string name="WSS_STR_NO_UPDATE">Οι πιο πρόσφατες ενημερώσεις έχουν ήδη εγκατασταθεί.</string>
+</resources>

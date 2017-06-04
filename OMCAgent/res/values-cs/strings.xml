@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Aplikace %1$s vyžaduje aktualizaci aplikace Android Wear.</string>
+    <string name="common_android_wear_update_text">Aplikace %1$s bude fungovat po aktualizaci aplikace Android Wear.</string>
+    <string name="common_android_wear_update_title">Aktualizujte aplikaci Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">Aplikace %1$s vyžaduje jednu nebo více služeb Google Play, které aktuálně nejsou k dispozici. S žádostí o pomoc se obraťte na vývojáře.</string>
+    <string name="common_google_play_services_enable_button">Aktivovat služby Google Play</string>
+    <string name="common_google_play_services_enable_text">Ke spuštění aplikace %1$s je třeba aktivovat služby Google Play.</string>
+    <string name="common_google_play_services_enable_title">Aktivovat služby Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Požadováno aplikací %1$s</string>
+    <string name="common_google_play_services_install_button">Instalovat služby Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Ke spuštění aplikace %1$s jsou potřeba služby Google Play, které v telefonu nemáte.</string>
+    <string name="common_google_play_services_install_text_tablet">Ke spuštění aplikace %1$s jsou potřeba služby Google Play, které v tabletu nemáte.</string>
+    <string name="common_google_play_services_install_title">Instalovat služby Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Zadaný účet v tomto zařízení neexistuje. Zvolte prosím jiný účet.</string>
+    <string name="common_google_play_services_invalid_account_title">Neplatný účet</string>
+    <string name="common_google_play_services_needs_enabling_title">Aplikace vyžaduje aktivaci služeb Google Play.</string>
+    <string name="common_google_play_services_network_error_text">Připojení ke službám Google Play vyžaduje datové připojení.</string>
+    <string name="common_google_play_services_network_error_title">Chyba sítě</string>
+    <string name="common_google_play_services_notification_needs_update_title">Aplikace vyžaduje aktualizaci služeb Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Chyba služeb Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Při přihlašování k uvedenému účtu došlo k chybě. Zvolte prosím jiný účet.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Přihlášení se nezdařilo</string>
+    <string name="common_google_play_services_unknown_issue">Nastal neznámý problém se službami Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">Aplikace %1$s vyžaduje služby Google Play, které ve vašem zařízení nejsou podporovány. Kontaktujte výrobce zařízení.</string>
+    <string name="common_google_play_services_unsupported_title">Služby Google Play</string>
+    <string name="common_google_play_services_update_button">Aktualizovat</string>
+    <string name="common_google_play_services_update_text">Ke spuštění aplikace %1$s je třeba aktualizovat služby Google Play.</string>
+    <string name="common_google_play_services_update_title">Aktualizace služeb Google Play</string>
+    <string name="common_google_play_services_updating_text">Ke spuštění aplikace %1$s jsou potřeba služby Google Play, které jsou právě aktualizovány.</string>
+    <string name="common_google_play_services_updating_title">Probíhá aktualizace služeb Google Play</string>
+    <string name="common_open_on_phone">Otevřít v telefonu</string>
+    <string name="common_signin_button_text">Přihlásit se</string>
+    <string name="common_signin_button_text_long">Přihlásit se účtem Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Velikost dalšího obsahu: %1$s %2$s</string>
+    <string name="STR_ALL">Vše</string>
+    <string name="STR_APPS_DESCRIPTION">Vyberte aplikace doporučené poskytovatelem služeb.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Všechny vybrané aplikace byly staženy.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Storno</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Vyberte aplikace doporučené poskytovatelem služeb.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Vyberte aplikace, které chcete nainstalovat.</string>
+    <string name="STR_APP_INSTALL_TITLE">Instalace aplikací</string>
+    <string name="STR_APP_STATE_CANCELED">Zrušeno</string>
+    <string name="STR_APP_STATE_CONNECTING">Připojování…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Stahování…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Stažení se nezdařilo.</string>
+    <string name="STR_APP_STATE_INSTALLED">Instalována</string>
+    <string name="STR_APP_STATE_INSTALLING">Instalace…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Instalace se nezdařila</string>
+    <string name="STR_APP_STATE_WAITING">Čekám…</string>
+    <string name="STR_BTN_INSTALL">Instalovat</string>
+    <string name="STR_BTN_INSTALL_ALL">Instalovat vše</string>
+    <string name="STR_BTN_SKIP">Přeskočit</string>
+    <string name="STR_BUTTON_NEXT">Další</string>
+    <string name="STR_CAUTION_BODY">Po stažení restartujte telefon, aby se aktualizace nainstalovala. Do dokončení instalace nebudete moci telefon používat, dokonce ani pro tísňová volání.</string>
+    <string name="STR_CAUTION_BODY2">Po aktualizaci bude zřejmě obnoveny výchozí hodnoty některých nastavení.</string>
+    <string name="STR_CHARING_DIALOG">Za stahování pomocí mobilních dat mohou být účtovány další poplatky.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Stáhnout pomocí mobilních dat?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Připojování k serveru</string>
+    <string name="STR_CONNECT_FAIL">Připojení se nezdařilo. Opakujte akci později.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Stahování aktualizací…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Stahování…</string>
+    <string name="STR_DOWNLOAD_FAIL">Stahování se nezdařilo. Opakujte akci později.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Chcete-li využívat nejnovější funkce, stáhněte a nainstalujte tuto aktualizaci firmwaru.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Stahování se nezdařilo. Opakujte akci později.</string>
+    <string name="STR_FAILED_NOTI">Stažení se nezdařilo.</string>
+    <string name="STR_INITIAL_NOTI">Klepnutím sem vyberete doporučené aplikace pro stažení.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Klepnutím sem stáhnete a nainstalujete aktualizaci.</string>
+    <string name="STR_INSTALLED_NOTI">%d nainstalováno</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Instalovat další obsah</string>
+    <string name="STR_INSTALL_CAUTIONS">Upozornění</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Tato aktualizace zahrnuje některé volitelné aplikace a obsah. Stahování přes mobilní sítě může mít za následek další poplatky v závislosti na vašem tarifu.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Staženo.</string>
+    <string name="STR_INSTALL_FORCE">Byla stažena důležitá aktualizace softwaru. Zařízení bude za %d sekund restartováno a spustí se instalace.</string>
+    <string name="STR_KILOBYTE">kB</string>
+    <string name="STR_LINK_LEARNMORE">Další informace</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Chcete-li stahovat aplikace, musíte být připojeni k síti Wi-Fi. Připojte se k síti Wi-Fi a opakujte akci.</string>
+    <string name="STR_NEED_WIFI_TITLE">Není připojení Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Síť je nedostupná. Opakujte akci později.</string>
+    <string name="STR_NO_APPS">Žádné aplikace</string>
+    <string name="STR_NO_CONTENT">Zde se zobrazí dostupné aplikace vydané poskytovatelem služeb.</string>
+    <string name="STR_NO_ITEMS">Žádné položky</string>
+    <string name="STR_NO_ITEM_SELECTED">Nejsou vybrány žádné položky.</string>
+    <string name="STR_OMC_HEADER">Aktualizace poskytovatele služeb</string>
+    <string name="STR_OMC_SIZE">Velikost: %s</string>
+    <string name="STR_OMC_TITLE">Aktualizace konfigurace</string>
+    <string name="STR_OMC_VERSION">Verze: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Nastavení operátora</string>
+    <string name="STR_PROCESS_FAIL">Zpracování se nezdařilo.</string>
+    <string name="STR_PROVIDER_APPS">Aplikace poskytovatele služeb</string>
+    <string name="STR_REGISTERING_DEVICE">Probíhá registrace zařízení…</string>
+    <string name="STR_REGISTER_FAIL">Registrace se nezdařila.</string>
+    <string name="STR_REGISTER_SUCCESS">Zařízení bylo zaregistrováno.</string>
+    <string name="STR_RESTART_BTN_LATER">Později</string>
+    <string name="STR_RESTART_BTN_RESTART">Restart.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Abyste dokončili instalaci aktualizace softwaru poskytovatele služeb, musíte restartovat telefon.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Abyste dokončili instalaci aktualizace softwaru poskytovatele služeb, musíte restartovat tablet.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Restartovat?</string>
+    <string name="STR_RESTART_PHONE">Restartovat telefon</string>
+    <string name="STR_RESTART_TABLET">Restartovat tablet</string>
+    <string name="STR_SELECT_ALL">Všechny následující aplikace</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Základní aplikace</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Za stažení následujících aplikací nebudou účtovány poplatky za data.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Klepnutím na následující položku zobrazíte další informace o položce.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Aplikace budou staženy prostřednictvím Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Získejte aplikace od poskytovatele služeb</string>
+    <string name="STR_UPDATE_BODY1">Za stahování pomocí mobilních dat mohou být účtovány další poplatky.</string>
+    <string name="STR_UPDATE_BODY2">Po nainstalování aktualizace bude telefon restartován.</string>
+    <string name="STR_UPDATE_FAIL">Aktualizace se nezdařila. Opakujte akci.</string>
+    <string name="STR_UPDATE_HEADER1">Stáhněte a nainstalujte nejnovější software od poskytovatele služeb.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Za instalaci tohoto firmwaru nebudou účtovány žádné poplatky.
+
+- Během instalace nelze používat zařízení ani pro tísňová volání.
+
+- Může dojít k obnovení výchozích ikon na domovské obrazovce a nastavení zařízení, takže je bude nutné po instalaci znovu nakonfigurovat.
+
+- Aktualizace firmwaru neovlivní soubory a data v zařízení.
+
+- Pokud však zastavíte instalaci před dokončením, zařízení nemusí fungovat normálně a v důsledku toho může dojít ke ztrátě souborů.
+
+- Aby nedošlo k neočekávané ztrátě dat, doporučujeme vytvořit před instalací zálohu důležitých dat."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Restartováním dokončete instalaci aktualizace softwaru poskytovatele služeb.</string>
+    <string name="STR_UPDATING_PACKAGE">Aktualizace…</string>
+    <string name="STR_USE_DATA_BTN">Použít data</string>
+    <string name="STR_WAIT_FOR_WIFI">"Instalace aplikací byla pozastavena.
+Čeká se na připojení Wi-Fi, aby byly aplikace nainstalovány."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Počkat na Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Nainstalujte aplikace doporučené poskytovatelem služeb.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Stahování…</string>
+    <string name="STR_WIDGET_INSTALLED">Nainstalováno.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Tlačítko</string>
+    <string name="WSS_STR_NO_UPDATE">Poslední aktualizace již byly nainstalovány.</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">‏%1$s کو Android Wear ایپ کیلئے اپ ڈیٹ درکار ہے۔</string>
+    <string name="common_android_wear_update_text">‏جب تک آپ Android Wear ایپ اپ ڈیٹ نہیں کر لیتے %1$s تب تک نہیں چلے گی۔</string>
+    <string name="common_android_wear_update_title">‏Android Wear کو اپ ڈیٹ کریں</string>
+    <string name="common_google_play_services_api_unavailable_text">‏%1$s کیلئے ایک یا مزید Google Play سروسز درکار ہیں جو فی الحال دستیاب نہیں ہے۔ براہ کرم مدد کیلئے ڈیولپر سے رابطہ کریں۔</string>
+    <string name="common_google_play_services_enable_button">‏Google Play سروسز فعال کریں</string>
+    <string name="common_google_play_services_enable_text">‏جب تک آپ Google Play سروسز فعال نہیں کر لیتے ہیں %1$s تب تک کام نہیں کرے گی۔</string>
+    <string name="common_google_play_services_enable_title">‏Google Play سروسز فعال کریں</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s کے ذریعے درخواست کی گئی</string>
+    <string name="common_google_play_services_install_button">‏Google Play سروسز حاصل کریں</string>
+    <string name="common_google_play_services_install_text_phone">‏%1$s Google Play سروسز کے بغیر نہیں چلے گی، جو آپ کے فون سے غائب ہیں۔</string>
+    <string name="common_google_play_services_install_text_tablet">‏%1$s Google Play سروسز کے بغیر نہیں چلے گی، جو آپ کے ٹیبلیٹ سے غائب ہیں۔</string>
+    <string name="common_google_play_services_install_title">‏Google Play سروسز حاصل کریں</string>
+    <string name="common_google_play_services_invalid_account_text">متعین اکاؤنٹ اس آلہ پر موجود نہیں ہے۔ براہ کرم ایک مختلف اکاؤنٹ منتخب کریں۔</string>
+    <string name="common_google_play_services_invalid_account_title">غلط اکاؤنٹ</string>
+    <string name="common_google_play_services_needs_enabling_title">‏ایک ایپلیکیشن کیلئے Google Play سروسز کا فعال ہونا ضروری ہے۔</string>
+    <string name="common_google_play_services_network_error_text">‏Google Play سروسز سے مربوط ہونے کیلئے ایک ڈیٹا کنکشن کی ضرورت ہے۔</string>
+    <string name="common_google_play_services_network_error_title">نیٹ ورک میں خرابی</string>
+    <string name="common_google_play_services_notification_needs_update_title">‏ایک ایپلیکیشن کیلئے Google Play سروسز کیلئے ایک اپ ڈیٹ ضروری ہے۔</string>
+    <string name="common_google_play_services_notification_ticker">‏Google Play سروسز کی خرابی</string>
+    <string name="common_google_play_services_sign_in_failed_text">متعینہ اکاؤنٹ میں سائن ان کرنے میں خرابی آگئی۔ براہ کرم ایک مختلف اکاؤنٹ منتخب کریں۔</string>
+    <string name="common_google_play_services_sign_in_failed_title">سائن ان کرنا ناکام ہوگیا</string>
+    <string name="common_google_play_services_unknown_issue">‏Google Play سروسز کے ساتھ نامعلوم مسئلہ۔</string>
+    <string name="common_google_play_services_unsupported_text">‏%1$s Google Play سروسز پر انحصار کرتی ہے، جو آپ کے آلہ کی جانب سے تعاون یافتہ نہیں ہے۔ مدد کیلئے مینوفیکچرر سے رابطہ کریں۔</string>
+    <string name="common_google_play_services_unsupported_title">‏Google Play سروسز</string>
+    <string name="common_google_play_services_update_button">اپ ڈیٹ کریں</string>
+    <string name="common_google_play_services_update_text">‏جب تک آپ Google Play سروسز اپ ڈیٹ نہیں کر لیتے ہیں %1$s تب تک نہیں چلے گی۔</string>
+    <string name="common_google_play_services_update_title">‏Google Play سروسز اپ ڈیٹ کریں</string>
+    <string name="common_google_play_services_updating_text">‏%1$s Google Play سروسز کے بغیر نہیں چلے گی، جو فی الحال اپ ڈیٹ ہو رہی ہیں۔</string>
+    <string name="common_google_play_services_updating_title">‏Google Play سروسز اپ ڈیٹ ہو رہی ہیں</string>
+    <string name="common_open_on_phone">فون پر کھولیں</string>
+    <string name="common_signin_button_text">سائن ان کریں</string>
+    <string name="common_signin_button_text_long">‏Google کے ساتھ سائن ان کریں</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">اضافی مواد کا سائز: %1$s %2$s</string>
+    <string name="STR_ALL">تمام</string>
+    <string name="STR_APPS_DESCRIPTION">اپنے خدمت فراہم کنندہ کے ذریعہ تجویزی ایپلیکیشنز کو منتخب کریں۔</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">آپ کا منتخب تمام ایپلیکیشنز ڈاؤن لوڈ کرلی گئی ہے۔</string>
+    <string name="STR_APP_BUTTON_CANCEL">منسوخ</string>
+    <string name="STR_APP_BUTTON_OK">ٹھیک ہے</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">اپنے خدمت فراہم کنندہ کے ذریعہ تجویزی ایپلیکیشنز کو منتخب کریں۔</string>
+    <string name="STR_APP_INSTALL_CONFIRM">وہ ایپلیکیشنز منتخب کریں جو آپ نصب کرنا چاہتے ہیں۔</string>
+    <string name="STR_APP_INSTALL_TITLE">ایپلیکیشنز نصب کریں</string>
+    <string name="STR_APP_STATE_CANCELED">منسوخ شدہ</string>
+    <string name="STR_APP_STATE_CONNECTING">مربوط کیا جا رہا ہے…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ڈاؤن لوڈ ہو رہا ہے…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ڈاونلوڈ مجود نہیں۔</string>
+    <string name="STR_APP_STATE_INSTALLED">نصب کردہ</string>
+    <string name="STR_APP_STATE_INSTALLING">انسٹالنگ۔۔۔</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">تنصیب ناکام ہوگئی</string>
+    <string name="STR_APP_STATE_WAITING">انتظار کریں۔۔۔</string>
+    <string name="STR_BTN_INSTALL">نصب</string>
+    <string name="STR_BTN_INSTALL_ALL">سب نصب کریں</string>
+    <string name="STR_BTN_SKIP">نظر انداز کریں</string>
+    <string name="STR_BUTTON_NEXT">اگلا</string>
+    <string name="STR_CAUTION_BODY">ڈاؤن لوڈنگ کے بعد، اپ ڈیٹ نصب کرنے کے لیے دوبارہ اسٹارٹ کریں۔ آپ ایمرجنسی میں بھی کال کرنے کے لیے، اپنا فون استعمال کرنے کے قابل نہ ہوں گے، جب تک تنصیب ختم نہ ہوجائے۔</string>
+    <string name="STR_CAUTION_BODY2">اپ ڈیٹ کے بعد، ہوسکتا ہے کہ کچھ سیٹنگز اپنے ڈیفالٹ اقدار میں پھر سیٹ ہوجائیں۔</string>
+    <string name="STR_CHARING_DIALOG">موبائل ڈیٹا استعمال کر کے ڈاؤن لوڈ کرنے سے اضافی چارجز عائد ہو سکتے ہیں۔</string>
+    <string name="STR_CHARING_DIALOG_TITLE">موبائل ڈیٹا استعمال کرکے ڈاؤن لوڈ کریں؟</string>
+    <string name="STR_CONNECTING_TO_SERVER">سرور سے متصل کررہا ہے…</string>
+    <string name="STR_CONNECT_FAIL">کنکشن ناکام۔ بعد میں کوشش کریں۔</string>
+    <string name="STR_DOWNLOADING_PACKAGE">اپ ڈیٹس ڈاؤن لوڈ کررہا ہے…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ڈاؤن لوڈ…</string>
+    <string name="STR_DOWNLOAD_FAIL">ڈاؤن لوڈ کرنا ناکام ہوگیا۔ بعد میں کوشش کریں۔</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">نئی خصوصیات استعمال کرنے کے لیے، اس فرم وئیر اپ ڈیٹ کو ڈاؤن لوڈ اور نصب کریں۔</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ڈاؤن لوڈ کرنا ناکام ہوگیا۔ بعد میں کوشش کریں۔</string>
+    <string name="STR_FAILED_NOTI">ڈاونلوڈ مجود نہیں۔</string>
+    <string name="STR_INITIAL_NOTI">برائے ڈاؤن لوڈ تجویزی ایپلیکیشنز منتخب کرنے کے لیے یہاں تھپکی دیں۔</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">اپ ڈیٹ ڈاؤن لوڈ اور نصب کرنے کے لیے یہاں پر تھپکی دیں۔</string>
+    <string name="STR_INSTALLED_NOTI">%d تنصیب ہوگیا</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">اضافی مشمول نصب کریں</string>
+    <string name="STR_INSTALL_CAUTIONS">خبردار</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">یہ اپ ڈیٹ کچھ اختیاری ایپلیکیشنز اور مشمول کو شامل کرتا ہے۔ آپ کی ادائیگی کے منصوبہ پر انحصار کرتے ہوئے موبائل نیٹ ورکس کے ذریعہ ڈاؤن لوڈ کرنا اضافی اخراجات کا سبب بن سکتا ہے۔</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ڈاونلوڈ ہو گیا۔</string>
+    <string name="STR_INSTALL_FORCE">آپ کا اہم سافٹ ویئر اپ ڈيٹ ڈاؤن لوڈ ہو گیا ہے۔ انسٹالیشن شروع کرنے کے لیے آپ کا آلہ %d سیکنڈز میں دوبارہ شروع ہوگا۔</string>
+    <string name="STR_KILOBYTE">کیلوبائٹ</string>
+    <string name="STR_LINK_LEARNMORE">مزید معلومات حاصل کریں</string>
+    <string name="STR_MEGABYTE">میگابائٹ</string>
+    <string name="STR_NEED_WIFI">ایپلیکیشنز ڈاؤن لوڈ کرنے کے لیے آپ کو Wi-Fi سے مربوط ہونے کی ضرورت ہے۔ Wi-Fi سے جوڑیں اور دوبارہ کوشش کریں۔</string>
+    <string name="STR_NEED_WIFI_TITLE">کوئی Wi-Fi کنیکشن نہیں ہے</string>
+    <string name="STR_NETWORK_FAIL">نیٹ ورک دستیاب نہیں ہے۔ بعد میں دوبارہ کوشش کریں۔</string>
+    <string name="STR_NO_APPS">کوئی اپلیکیشنز نہیں</string>
+    <string name="STR_NO_CONTENT">آپ کے خدمت فراہم کنندہ کی جانب سے رلیز کیا گيا دستیاب ایپلیکیشنز یہاں پر دکھایا جائے گا۔</string>
+    <string name="STR_NO_ITEMS">کوئی اشیاءنہیں ہیں</string>
+    <string name="STR_NO_ITEM_SELECTED">کوئی شے منتخب نہیں کیا۔</string>
+    <string name="STR_OMC_HEADER">خدمت فراہم کنندہ اپ ڈیٹ</string>
+    <string name="STR_OMC_SIZE">سائز: %s</string>
+    <string name="STR_OMC_TITLE">اپ ڈیٹ تشکیل کریں</string>
+    <string name="STR_OMC_VERSION">ورژن: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">آپریٹر سیٹنگز</string>
+    <string name="STR_PROCESS_FAIL">پراسسنگ فیل۔</string>
+    <string name="STR_PROVIDER_APPS">خدمت فراہم کنندہ ایپلیکیشنز</string>
+    <string name="STR_REGISTERING_DEVICE">آلہ کو رجسٹر کررہا ہے…</string>
+    <string name="STR_REGISTER_FAIL">رجسٹریشن ناکام۔</string>
+    <string name="STR_REGISTER_SUCCESS">آلہ رجسٹر ہوگیا۔</string>
+    <string name="STR_RESTART_BTN_LATER">بعد میں</string>
+    <string name="STR_RESTART_BTN_RESTART">دوبارہ اسٹارٹ کریں</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">اپنے خدمت فراہم کنندہ کا سافٹ ویئر اپ ڈیٹ کی تنصیب ختم کرنے کے لیے، آپ کو اپنے فون کو دوبارہ اسٹارٹ کرنے کی ضرورت ہے۔</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">اپنے خدمت فراہم کنندہ کا سافٹ ویئر اپ ڈیٹ کی تنصیب ختم کرنے کے لیے، آپ کو اپنے ٹیبلیٹ کو دوبارہ اسٹارٹ کرنے کی ضرورت ہے۔</string>
+    <string name="STR_RESTART_DIALOG_TITLE">دوبارہ اسٹارٹ کریں؟</string>
+    <string name="STR_RESTART_PHONE">فون کو دوبارہ اسٹارٹ کریں</string>
+    <string name="STR_RESTART_TABLET">ٹیبلیٹ کو دوبارہ اسٹارٹ کریں</string>
+    <string name="STR_SELECT_ALL">مندرجہ ذیل تمام ایپلیکیشنز</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">ضروری ایپلیکیشنز</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">مندرجہ ذیل ایپلیکیشنز ڈاؤن لوڈ کرتے وقت ڈیٹا کا کوئی چارجز نہیں ہے۔</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">اس کے متعلق مزید سیکھنے کے لیے ذیل کی کسی شئے پر تھپکی دیں۔</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">ایپلیکیشنز Wi-Fi پر ڈاؤن لوڈ کی جائیں گی۔</string>
+    <string name="STR_SUW_TITLE">خدمت فراہم کنندہ سے ایپلیکیشنز حاصل کریں</string>
+    <string name="STR_UPDATE_BODY1">موبائل ڈیٹا استعمال کر کے ڈاؤن لوڈ کرنے سے اضافی چارجز عائد ہو سکتے ہیں۔</string>
+    <string name="STR_UPDATE_BODY2">آپ کا فون اپ ڈیٹ نصب ہونے کے بعد دوبارہ اسٹارٹ ہوگا۔</string>
+    <string name="STR_UPDATE_FAIL">تازہ کاری ناکام ہوگئی۔ دوبارہ کوشش کریں۔</string>
+    <string name="STR_UPDATE_HEADER1">اپنے خدمت فراہم کنندہ سے تازہ ترین سافٹ ویئر ڈاؤن لوڈ اور نصب کریں۔</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- اس فرم ویئر تنصیب کے لیے آپ سے چارج نہیں کیا جائے گا۔
+
+- تنصیب کے دوران آپ اپنے آلہ کو بالکل بھی استعمال کرنے کے قابل نہیں ہوں گے، حتیٰ کے ایمرجنسی کال کے لیے بھی نہیں۔
+
+- ہوم اسکرین کی شبیہات اور آلہ کی سیٹنگز اپنے ڈیفالٹ پر واپس جا سکتی ہیں اور تنصیب کے بعد انہیں دوبارہ ترتیب دینے کی ضرورت پڑ سکتی ہے۔
+
+-فرم ویئر اپڈیٹ سے آپ کے آلہ پر فائلوں اور ڈیٹا پر کوئی اثر نہیں پڑنا چاہیئے۔
+
+-تاہم اگر آپ نے تنصیب کا عمل مکمل ہونے سے پہلے روک دیا تو آپ کا آلہ شاید نارمل انداز میں کام نہ کرے اور اس کے نتیجے میں آپ کی فائلیں ضائع ہو سکتی ہیں۔
+
+- غیر متوقع ڈیٹا نقصان سے بچنے کے لیے ہماری سفارش ہے کہ آپ تنصیب سے قبل اپنے اہم ڈیٹا کی بیک اپ بنا لیں۔"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">اپنا خدمت فراہم کنندہ کا نصب ختم کرنے کے لیے سافٹ ویئر اپ ڈیٹ کو دوبارہ اسٹارٹ کریں۔</string>
+    <string name="STR_UPDATING_PACKAGE">اپ ڈیٹ کر رہا ہے…</string>
+    <string name="STR_USE_DATA_BTN">ڈیٹا استعمال کریں</string>
+    <string name="STR_WAIT_FOR_WIFI">"ایپلیکیشن کی تنصیب کاری کو روک دیا گيا ہے۔
+ایپلیکیشنز نصب کرنے کے لیے Wi-Fi کا انتظار کررہا ہے۔"</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">‏Wi-Fi کا انتظار کریں</string>
+    <string name="STR_WIDGET_DEFAULT">اپنے خدمت فراہم کنندہ کے ذریعہ تجویزی ایپلیکیشنز کو نصب کریں۔</string>
+    <string name="STR_WIDGET_DOWNLOADING">ڈاؤن لوڈ کررہا ہے…</string>
+    <string name="STR_WIDGET_INSTALLED">نصب ہوگيا۔</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">بٹن</string>
+    <string name="WSS_STR_NO_UPDATE">جدید ترین تازہ کاریاں پہلے ہی نصب ہوچکی ہیں</string>
+</resources>

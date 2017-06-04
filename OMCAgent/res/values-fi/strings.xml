@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s edellyttää Android Wear -sovelluksen päivittämistä.</string>
+    <string name="common_android_wear_update_text">%1$s ei toimi, ellet päivitä Android Wear -sovellusta.</string>
+    <string name="common_android_wear_update_title">Päivitä Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s tarvitsee yhtä tai useampaa Google Play Palvelua, jotka eivät ole saatavilla tällä hetkellä. Voit pyytää lisätietoja kehittäjältä.</string>
+    <string name="common_google_play_services_enable_button">Ota Google Play -palv. käyttöön</string>
+    <string name="common_google_play_services_enable_text">%1$s ei toimi, ellet ota Google Play Palveluita käyttöön.</string>
+    <string name="common_google_play_services_enable_title">Ota Google Play Palvelut käyttöön</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Pyynnön teki %1$s</string>
+    <string name="common_google_play_services_install_button">Asenna Google Play Palvelut</string>
+    <string name="common_google_play_services_install_text_phone">%1$s ei toimi ilman Google Play Palveluita, jotka puuttuvat puhelimestasi.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s ei toimi ilman Google Play Palveluita, jotka puuttuvat tabletistasi.</string>
+    <string name="common_google_play_services_install_title">Asenna Google Play Palvelut</string>
+    <string name="common_google_play_services_invalid_account_text">Kyseistä tiliä ei ole tällä laitteella. Valitse toinen tili.</string>
+    <string name="common_google_play_services_invalid_account_title">Tili ei kelpaa</string>
+    <string name="common_google_play_services_needs_enabling_title">Ota käyttöön Google Play Palvelut, jotta sovellus toimii.</string>
+    <string name="common_google_play_services_network_error_text">Google Play -palveluiden käyttöön tarvitaan tietoliikenneyhteys.</string>
+    <string name="common_google_play_services_network_error_title">Verkkovirhe</string>
+    <string name="common_google_play_services_notification_needs_update_title">Päivitä Google Play Palvelut, jotta sovellus toimii.</string>
+    <string name="common_google_play_services_notification_ticker">Virhe Google Play -palveluissa</string>
+    <string name="common_google_play_services_sign_in_failed_text">Määritettyyn tiliin kirjauduttaessa tapahtui virhe. Valitse toinen tili.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Kirjautuminen epäonnistui.</string>
+    <string name="common_google_play_services_unknown_issue">Tuntematon ongelma käytettäessä Google Play -palveluita.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s käyttää Google Play Palveluita, joita laitteesi ei tue. Pyydä ohjeita laitteen valmistajalta.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play Palvelut</string>
+    <string name="common_google_play_services_update_button">Päivitä</string>
+    <string name="common_google_play_services_update_text">%1$s ei toimi, ellet päivitä Google Play Palveluita.</string>
+    <string name="common_google_play_services_update_title">Päivitä Google Play Palvelut</string>
+    <string name="common_google_play_services_updating_text">%1$s ei toimi ilman Google Play Palveluita, joita päivitetään tällä hetkellä.</string>
+    <string name="common_google_play_services_updating_title">Google Play Palveluita päivitetään</string>
+    <string name="common_open_on_phone">Avaa puhelimessa</string>
+    <string name="common_signin_button_text">Kirjaudu</string>
+    <string name="common_signin_button_text_long">Kirjaudu Google-tiliin</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Lisäsisällön koko: %1$s %2$s</string>
+    <string name="STR_ALL">Kaikki</string>
+    <string name="STR_APPS_DESCRIPTION">Valitse palveluntarjoajan suosittelemat sovellukset.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Kaikki valitut sovellukset on ladattu.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Peruuta</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Valitse palveluntarjoajan suosittelemat sovellukset.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Valitse asennettavat sovellukset.</string>
+    <string name="STR_APP_INSTALL_TITLE">Asenna sovellukset</string>
+    <string name="STR_APP_STATE_CANCELED">Peruutettu</string>
+    <string name="STR_APP_STATE_CONNECTING">Yhdistetään…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Ladataan…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Lataus epäonnistui.</string>
+    <string name="STR_APP_STATE_INSTALLED">Asennettu</string>
+    <string name="STR_APP_STATE_INSTALLING">Asennetaan…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Asennus epäonnistui</string>
+    <string name="STR_APP_STATE_WAITING">Odotetaan…</string>
+    <string name="STR_BTN_INSTALL">Asenna</string>
+    <string name="STR_BTN_INSTALL_ALL">Asenna kaikki</string>
+    <string name="STR_BTN_SKIP">Ohita</string>
+    <string name="STR_BUTTON_NEXT">Seuraava</string>
+    <string name="STR_CAUTION_BODY">Asenna päivitys käynnistämällä laite latauksen jälkeen uudelleen. Puhelinta ei voi käyttää, hätäpuheluitakaan ei voi soittaa, ennen kuin asennus on suoritettu loppuun.</string>
+    <string name="STR_CAUTION_BODY2">Jotkin asetukset voidaan palauttaa päivityksen jälkeen oletusarvoihinsa.</string>
+    <string name="STR_CHARING_DIALOG">Lataamisesta mobiildatayhteyden kautta voidaan periä lisämaksuja.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Ladataanko käyttämällä mobiilidataa?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Yhdistetään palvelimeen</string>
+    <string name="STR_CONNECT_FAIL">Yhteysvirhe. Yritä myöhemmin uudelleen.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Ladataan päivityksiä…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Ladataan…</string>
+    <string name="STR_DOWNLOAD_FAIL">Lataus epäonnistui. Yritä myöhemmin uudelleen.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Lataa ja asenna tämä laiteohjelmistopäivitys, jotta voit käyttää uusimpia ominaisuuksia.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Lataus epäonnistui. Yritä myöhemmin uudelleen.</string>
+    <string name="STR_FAILED_NOTI">Lataus epäonnistui.</string>
+    <string name="STR_INITIAL_NOTI">Valitse suositellut sovellukset ladattaviksi napauttamalla tätä.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Lataa ja asenna päivitys napauttamalla tätä.</string>
+    <string name="STR_INSTALLED_NOTI">%d asennettu</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Asenna lisäsisältöä</string>
+    <string name="STR_INSTALL_CAUTIONS">Huomio</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Tämä päivitys sisältää joitakin valinnaisia sovelluksia ja sisältöjä. Lataamisesta matkapuhelinverkkojen kautta voidaan periä lisämaksuja tilauksesi mukaan.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Ladattu.</string>
+    <string name="STR_INSTALL_FORCE">Tärkeä ohjelmistopäivitys on ladattu. Laite käynnistetään asennuksen aloittamiseksi %d sekunnin kuluttua uudelleen.</string>
+    <string name="STR_KILOBYTE">kt</string>
+    <string name="STR_LINK_LEARNMORE">Lisätietoja</string>
+    <string name="STR_MEGABYTE">Mt</string>
+    <string name="STR_NEED_WIFI">Sinun on muodostettava yhteys Wi-Fi-verkkoon sovellusten lataamista varten. Muodosta Wi-Fi-yhteys ja yritä uudelleen.</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi-yhteyttä ei ole</string>
+    <string name="STR_NETWORK_FAIL">Verkko ei ole käytettävissä. Yritä myöhemmin uudelleen.</string>
+    <string name="STR_NO_APPS">Sovelluksia ei ole</string>
+    <string name="STR_NO_CONTENT">Kaikki palveluntarjoajasi julkaisemat, käytettävissä olevat sovellukset ilmestyvät tänne.</string>
+    <string name="STR_NO_ITEMS">Ei kohteita</string>
+    <string name="STR_NO_ITEM_SELECTED">Ei valittuja kohteita.</string>
+    <string name="STR_OMC_HEADER">Palveluntarjoajan päivitys</string>
+    <string name="STR_OMC_SIZE">Koko: %s</string>
+    <string name="STR_OMC_TITLE">Kokoonpanon päivitys</string>
+    <string name="STR_OMC_VERSION">Versio: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operaattorin asetukset</string>
+    <string name="STR_PROCESS_FAIL">Käsittely epäonnistui.</string>
+    <string name="STR_PROVIDER_APPS">Palveluntarjoajan sovellukset</string>
+    <string name="STR_REGISTERING_DEVICE">Rekisteröidään laitetta…</string>
+    <string name="STR_REGISTER_FAIL">Rekisteröinti epäonnistui.</string>
+    <string name="STR_REGISTER_SUCCESS">Laite on rekisteröity.</string>
+    <string name="STR_RESTART_BTN_LATER">Myöhemmin</string>
+    <string name="STR_RESTART_BTN_RESTART">Käynn. uud.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Puhelin on käynnistettävä uudelleen palveluntarjoajan ohjelmistopäivityksen asennuksen viimeistelemistä varten.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Tablet-laite on käynnistettävä uudelleen palveluntarjoajan ohjelmistopäivityksen asennuksen viimeistelemistä varten.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Käynnistetäänkö uudelleen?</string>
+    <string name="STR_RESTART_PHONE">Käynnistä puhelin uudelleen</string>
+    <string name="STR_RESTART_TABLET">Käynnistä tablet-laite uudelleen</string>
+    <string name="STR_SELECT_ALL">Kaikki seuraavat sovellukset</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Välttämättömät sovellukset</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Alla olevien sovellusten lataamisesta ei peritä datamaksuja.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Napauttamalla alla olevaa kohdetta saat siitä lisätietoja.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Sovellukset ladataan Wi-Fi-yhteyden kautta.</string>
+    <string name="STR_SUW_TITLE">Hanki sovelluksia palveluntarjoajalta</string>
+    <string name="STR_UPDATE_BODY1">Lataamisesta mobiildatayhteyden kautta voidaan periä lisämaksuja.</string>
+    <string name="STR_UPDATE_BODY2">Puhelin käynnistetään uudelleen, kun päivitys on asennettu.</string>
+    <string name="STR_UPDATE_FAIL">Päivitys epäonnistui. Yritä uudelleen.</string>
+    <string name="STR_UPDATE_HEADER1">Lataa ja asenna uusin ohjelmisto palveluntarjoajalta.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Tämän laiteohjelmiston asentamisesta ei peritä maksua.
+
+- Asennuksen aikana laitetta ei voi käyttää edes hätäpuheluiden soittamiseen.
+
+- Alkunäytössä olevat kuvakkeet ja laitteen asetukset voidaan palauttaa oletusasetusten mukaisiksi, jolloin ne on asennuksen jälkeen ehkä määritettävä uudelleen.
+
+- Laiteohjelmistopäivityksen ei pitäisi vaikuttaa laitteessa oleviin tiedostoihin ja tietoihin.
+
+- Jos kuitenkin keskeytät asennuksen ennen sen päättymistä, laite ei ehkä toimi normaalisti, ja tiedostot voidaan menettää.
+
+- Odottamattoman tietojen menettämisen välttämiseksi suosittelemme, että varmuuskopioit tärkeät tiedot ennen asennusta."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Viimeistele palveluntarjoajan ohjelmistopäivityksen asennus käynnistämällä laite uudelleen.</string>
+    <string name="STR_UPDATING_PACKAGE">Päivitetään…</string>
+    <string name="STR_USE_DATA_BTN">Käytä dataa</string>
+    <string name="STR_WAIT_FOR_WIFI">"Sovelluksen asennus on keskeytetty.
+Odotetaan Wi-Fi-yhteyttä sovellusten asentamista varten."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Odota Wi-Fi-yhteyttä</string>
+    <string name="STR_WIDGET_DEFAULT">Asenna palveluntarjoajan suosittelemat sovellukset.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Ladataan…</string>
+    <string name="STR_WIDGET_INSTALLED">Asennettu.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Painike</string>
+    <string name="WSS_STR_NO_UPDATE">Uusimmat päivitykset on jo asennettu.</string>
+</resources>

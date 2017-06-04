@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">অতিৰিক্ত সমলৰ আকাৰ: %1$s %2$s</string>
+    <string name="STR_ALL">সকলো</string>
+    <string name="STR_APPS_DESCRIPTION">আপোনাৰ সেৱা প্ৰদানকাৰীৰ দ্বাৰা অনুমোদিত এপ্প্‌চ চয়ন কৰক।</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">আপোনাৰ সকলো চয়নিত এপ্প্‌চ ডাউনলোড হৈছে।</string>
+    <string name="STR_APP_BUTTON_CANCEL">বাতিল</string>
+    <string name="STR_APP_BUTTON_OK">ঠিক</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">আপোনাৰ সেৱা প্ৰদানকাৰীৰ দ্বাৰা অনুমোদিত এপ্প্‌চ চয়ন কৰক।</string>
+    <string name="STR_APP_INSTALL_CONFIRM">আপুনি ইনষ্টল কৰিব বিচৰা এপ্প্‌চ চয়ন কৰক৷</string>
+    <string name="STR_APP_INSTALL_TITLE">এপ্প্‌চ ইনষ্টল কৰক</string>
+    <string name="STR_APP_STATE_CANCELED">বাতিল কৰা হৈছে</string>
+    <string name="STR_APP_STATE_CONNECTING">সংযোগ হৈ আছে…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ডাউনলোড হৈ আছে…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ডাউনলোড বিফল হৈছে৷</string>
+    <string name="STR_APP_STATE_INSTALLED">ইনষ্টল কৰা হৈছে</string>
+    <string name="STR_APP_STATE_INSTALLING">ইনষ্টল হৈ আছে…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">ইনষ্টলেশ্বন বিফল হৈছে</string>
+    <string name="STR_APP_STATE_WAITING">অপেক্ষা কৰি আছে…</string>
+    <string name="STR_BTN_INSTALL">ইনষ্টল</string>
+    <string name="STR_BTN_INSTALL_ALL">সকলো ইনষ্টল কৰক</string>
+    <string name="STR_BTN_SKIP">বাদ দিয়ক</string>
+    <string name="STR_BUTTON_NEXT">পৰৱৰ্তী</string>
+    <string name="STR_CAUTION_BODY">"ডাউনলোড হোৱাৰ পিছত, আপডেট ইনষ্টল কৰিবলৈ পুনৰাৰম্ভ কৰক। আপুনি ইনষ্টলেশ্বন সম্পূৰ্ণ নোহোৱালৈকে জৰুৰীকালীন কল কৰিলেও আপোনাৰ ফোন ব্যৱহাৰ কৰিবলৈ সক্ষম নহ'ব।"</string>
+    <string name="STR_CAUTION_BODY2">"আপডেটৰ পিছত, কিছু ছেটিংছ সেইবিলাকৰ ডিফ'ল্ট মানলৈ পুনঃছেট হ'ব পাৰে।"</string>
+    <string name="STR_CHARING_DIALOG">"ম'বাইল ডাটা ব্যৱহাৰ কৰি ডাউনলোড কৰাৰ ফলত অতিৰিক্ত মাছুল ভৰিব লাগিব পাৰে।"</string>
+    <string name="STR_CHARING_DIALOG_TITLE">"ম'বাইল ডাটা ব্যৱহাৰ কৰি ডাউনলোড কৰিবনে?"</string>
+    <string name="STR_CONNECTING_TO_SERVER">চাৰ্ভাৰলৈ সংযোগ কৰি আছে…</string>
+    <string name="STR_CONNECT_FAIL">সংযোগ বিফল হৈছে৷ পিছত চেষ্টা কৰক</string>
+    <string name="STR_DOWNLOADING_PACKAGE">আপডেটসমূহ ডাউনলোড কৰি আছে…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ডাউনলোড হৈ আছে…</string>
+    <string name="STR_DOWNLOAD_FAIL">ডাউনলোড বিফল হৈছে৷ পিছত চেষ্টা কৰক৷</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">শেহতীয়া সুবিধাসমূহ ব্যৱহাৰ কৰিবলৈ, এই ফাৰ্মৱেৰ আপডেট ডাউনলোড আৰু ইনষ্টল কৰক৷</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ডাউনলোড বিফল হৈছে৷ পিছত চেষ্টা কৰক৷</string>
+    <string name="STR_FAILED_NOTI">ডাউনলোড বিফল হৈছে৷</string>
+    <string name="STR_INITIAL_NOTI">ডাউনলোডৰ বাবে অনুমোদিত এপ্প্‌চ চয়ন কৰিবলৈ ইয়াত টিপক।</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">আপডেট ডাউনলোড আৰু ইনষ্টল কৰিবলৈ ইয়াত টিপক।</string>
+    <string name="STR_INSTALLED_NOTI">%d ইনষ্টল হৈছে</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">অতিৰিক্ত সমল ইনষ্টল কৰক</string>
+    <string name="STR_INSTALL_CAUTIONS">সকিয়নী</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">"এই আপডেটে কিছু বৈকল্পিক এপ্প্‌চ আৰু সমল অন্তৰ্ভুক্ত কৰে। আপোনাৰ পৰিশোধৰ আঁচনিৰ ওপৰত ভিত্তি কৰি ম'বাইল নেটৱৰ্ক হৈ ডাউনলোড কৰাত ফলত অতিৰিক্ত মাছুল ভৰিব লাগিব পাৰে।"</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ডাউনলোড হৈছে৷</string>
+    <string name="STR_INSTALL_FORCE">"আপোনাৰ জটিল চফ্টৱেৰ আপডেট ডাউনলোড কৰা হ'ল৷ স্থাপন আৰম্ভ কৰিবলৈ আপোনাৰ ডিভাইচটো %d ছেকেণ্ডত পুনৰাৰম্ভ কৰা হ'ব৷"</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">অধিক শিকক</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">আপুনি এপ্প্‌চ ডাউনলোড কৰিবলৈ Wi-Fi-ত সংযোগ কৰাৰ প্ৰয়োজন। Wi-Fi-ত সংযোগ কৰক আৰু পুনঃচেষ্টা কৰক।</string>
+    <string name="STR_NEED_WIFI_TITLE">কোনো Wi-Fi সংযোগ নাই</string>
+    <string name="STR_NETWORK_FAIL">নেটৱৰ্ক উপলব্ধ নহয়৷ পিছত পুনঃচেষ্টা কৰক৷</string>
+    <string name="STR_NO_APPS">কোনো এপ্প্‌চ নাই</string>
+    <string name="STR_NO_CONTENT">আপোনাৰ সেৱা প্ৰদানকাৰীৰ পৰা মুক্ত কৰা উপলব্ধ এপ্প্‌চ ইয়াত দেখুৱাব।</string>
+    <string name="STR_NO_ITEMS">আইটেম নাই</string>
+    <string name="STR_NO_ITEM_SELECTED">আইটেমসমূহ চয়ন হোৱা নাই৷</string>
+    <string name="STR_OMC_HEADER">সেৱা প্ৰদানকাৰী আপডেট</string>
+    <string name="STR_OMC_SIZE">আকাৰ: %s</string>
+    <string name="STR_OMC_TITLE">কনফিগাৰেশ্বন আপডেট</string>
+    <string name="STR_OMC_VERSION">সংস্কৰণ: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">অপাৰেটৰ ছেটিংছ</string>
+    <string name="STR_PROCESS_FAIL">প্ৰক্ৰিয়াকৰণ বিফল৷</string>
+    <string name="STR_PROVIDER_APPS">সেৱা প্ৰদানকাৰী এপ্প্‌চ</string>
+    <string name="STR_REGISTERING_DEVICE">পঞ্জীয়ন হৈ থকা ডিভাইচ…</string>
+    <string name="STR_REGISTER_FAIL">ৰেজিষ্ট্ৰেশ্বন বিফল৷</string>
+    <string name="STR_REGISTER_SUCCESS">ডিভাইচ পঞ্জীযন হৈছে৷</string>
+    <string name="STR_RESTART_BTN_LATER">পিছত</string>
+    <string name="STR_RESTART_BTN_RESTART">পুনৰাৰম্ভ</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">আপোনাৰ সেৱা প্ৰদানকাৰীৰ চফ্টৱেৰ আপডেটৰ ইনষ্টল সম্পূৰ্ণ কৰিবলৈ, আপুনি আপোনাৰ ফোন পুনৰাৰম্ভ কৰাৰ প্ৰয়োজন।</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">আপোনাৰ সেৱা প্ৰদানকাৰীৰ চফ্টৱেৰ আপডেটৰ ইনষ্টল সম্পূৰ্ণ কৰিবলৈ, আপুনি আপোনাৰ টেবলেট পুনৰাৰম্ভ কৰাৰ প্ৰয়োজন।</string>
+    <string name="STR_RESTART_DIALOG_TITLE">পুনৰাৰম্ভ কৰিবনে?</string>
+    <string name="STR_RESTART_PHONE">ফোন পুনৰাৰম্ভ কৰক</string>
+    <string name="STR_RESTART_TABLET">টেবলেট পুনৰাৰম্ভ কৰক</string>
+    <string name="STR_SELECT_ALL">নিম্নলিখিত সকলো এপ্প্‌চ</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">প্ৰয়োজনীয় এপ্প্‌চ</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">তলৰ এপ্প্‌চ ডাউনলোড কৰিবলৈ কোনো ডাটা মাছুল প্ৰয়োগ হোৱা নাই।</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">ইয়াৰ বিষয়ে অধিক জানিবলৈ তলত দিয়া এটা আইটেমত টিপক।</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">"এপ্প্‌চ Wi-Fi-ৰ যোগেদি ডাউনলোড কৰা হ'ব।"</string>
+    <string name="STR_SUW_TITLE">সেৱা প্ৰদানকাৰীৰ পৰা এপ্প্‌চ প্ৰাপ্ত কৰক</string>
+    <string name="STR_UPDATE_BODY1">"ম'বাইল ডাটা ব্যৱহাৰ কৰি ডাউনলোড কৰাৰ ফলত অতিৰিক্ত মাছুল ভৰিব লাগিব পাৰে।"</string>
+    <string name="STR_UPDATE_BODY2">"আপডেট ইনষ্টল হোৱাৰ পিছত আপোনাৰ ফোন পুনৰাৰম্ভ হ'ব।"</string>
+    <string name="STR_UPDATE_FAIL">আপডেট বিফল হৈছে৷ পুনৰ চেষ্টা কৰক</string>
+    <string name="STR_UPDATE_HEADER1">আপোনাৰ সেৱা প্ৰদানকাৰীৰ পৰা শেহতীয়া চফ্টৱেৰ ডাউনলোড আৰু ইনষ্টল কৰক।</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"এই ফাৰ্মৱেৰ ইনষ্টলেশ্বনৰ কাৰণে আপোনাৰ পৰা মাছুল লোৱা নহ'ব৷
+
+- ইনষ্টলেশ্বনৰ সময়ত, আপুনি আপোনাৰ ডিভাইচ একেবাৰে ব্যৱহাৰ কৰিব নোৱাৰিব, আনকি জৰুৰীকালীন কলসমূহৰ কাৰণেও৷
+
+- গৃহ স্ক্ৰীণ আৰু ডিভাইচ ছেটিংছত থকা আইকনসমূহ ডিফ'ল্টলৈ পুনঃছেট হ'ব পাৰে আৰু ইনষ্টলেশ্বনৰ পিছত পুনৰ কনফিগাৰ কৰিব লাগিব পাৰে৷
+
+- ফাৰ্মৱেৰ আপডেটে আপোনাৰ ডিভাইচত থকা ফাইল আৰু ডাটা প্ৰভাৱিত নকৰে৷
+
+- যিকিনহওক,যদি আপুনি ইনষ্টলেশ্বন প্ৰক্ৰিয়া সমাপ্ত হোৱাৰ পূৰ্বেই ইয়াক বন্ধ কৰে, আপোনাৰ ডিভাইচে সাধাৰণভাৱে কাম নকৰিব পাৰে আৰু ফলস্বৰূপে আপোনাৰ ফাইলসমূহ হেৰুৱাব পাৰে৷
+
+- অপ্ৰত্যাশিতভাৱে ডাটা হেৰুৱাটো উপেক্ষা কৰিবলৈ, ইনষ্টলেশ্বনৰ পূৰ্বে গুৰুত্বপূৰ্ণ ডাটা বেক আপ ল'বলৈ আমি আপোনাক অনুমোদন জনাও৷"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">আপোনাৰ সেৱা প্ৰদানকাৰীৰ চফ্টৱেৰ আপডেটৰ ইনষ্টল সম্পূৰ্ণ কৰিবলৈ পুনৰাৰম্ভ কৰক।</string>
+    <string name="STR_UPDATING_PACKAGE">আপডেট হৈ আছে…</string>
+    <string name="STR_USE_DATA_BTN">ডাটা ব্যৱহাৰ কৰক</string>
+    <string name="STR_WAIT_FOR_WIFI">"এপ ইনষ্টলেশ্বন বিৰতি দিছে।
+এপ্প্‌চ ইনষ্টল কৰিবলৈ Wi-Fi-ৰ বাবে অপেক্ষা কৰি আছে।"</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi-ৰ বাবে অপেক্ষা কৰক</string>
+    <string name="STR_WIDGET_DEFAULT">আপোনাৰ সেৱা প্ৰদানকাৰীৰ দ্বাৰা অনুমোদিত এপ্প্‌চ ইনষ্টল কৰক।</string>
+    <string name="STR_WIDGET_DOWNLOADING">ডাউনলোড হৈ আছে…</string>
+    <string name="STR_WIDGET_INSTALLED">ইনষ্টল হৈছে৷</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">বুটাম</string>
+    <string name="WSS_STR_NO_UPDATE">শেহতীয়া আপডেট ইতিমধ্যেই ইনষ্টল কৰা হৈছে৷</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s memerlukan kemas kini apl Android Wear.</string>
+    <string name="common_android_wear_update_text">%1$s tidak akan berfungsi melainkan anda mengemas kini apl Android Wear.</string>
+    <string name="common_android_wear_update_title">Kemas kini Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s memerlukan satu atau lebih perkhidmatan Google Play yang tidak tersedia pada masa ini. Sila hubungi pembangun untuk mendapatkan bantuan.</string>
+    <string name="common_google_play_services_enable_button">Dayakan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_enable_text">%1$s tidak akan berfungsi kecuali anda mendayakan perkhidmatan Google Play.</string>
+    <string name="common_google_play_services_enable_title">Dayakan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Diminta oleh %1$s</string>
+    <string name="common_google_play_services_install_button">Dapatkan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_install_text_phone">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini tiada pada telefon anda.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini tiada pada telefon anda.</string>
+    <string name="common_google_play_services_install_title">Dapatkan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Akaun yang dinyatakan tidak wujud pada peranti ini. Sila pilih akaun yang lain.</string>
+    <string name="common_google_play_services_invalid_account_title">Akaun Tidak Sah</string>
+    <string name="common_google_play_services_needs_enabling_title">Perkhidmatan Google Play perlu didayakan untuk menggunakan aplikasi.</string>
+    <string name="common_google_play_services_network_error_text">Sambungan data diperlukan untuk menyambung ke perkhidmatan Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Ralat Rangkaian</string>
+    <string name="common_google_play_services_notification_needs_update_title">Perkhidmatan Google Play perlu dikemas kini utk menggunakan aplikasi.</string>
+    <string name="common_google_play_services_notification_ticker">Ralat perkhidmatan Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Ralat melog masuk ke akaun yang dinyatakan. Sila pilih akaun yang berbeza.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Gagal melog masuk</string>
+    <string name="common_google_play_services_unknown_issue">Isu tidak diketahui dengan perkhidmatan Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s bergantung pada perkhidmatan Google Play, yang tidak disokong oleh peranti anda. Hubungi pengeluar untuk mendapatkan bantuan.</string>
+    <string name="common_google_play_services_unsupported_title">Perkhidmatan Google Play</string>
+    <string name="common_google_play_services_update_button">Kemas kini</string>
+    <string name="common_google_play_services_update_text">%1$s tidak akan berfungsi kecuali anda mengemas kini perkhidmatan Google Play.</string>
+    <string name="common_google_play_services_update_title">Kemas kini perkhidmatan Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini sedang dikemas kini.</string>
+    <string name="common_google_play_services_updating_title">Perkhidmatan Google Play sdg dikemaskini</string>
+    <string name="common_open_on_phone">Buka pada telefon</string>
+    <string name="common_signin_button_text">Log masuk</string>
+    <string name="common_signin_button_text_long">Log masuk dengan Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Saiz kandungan tambahan: %1$s %2$s</string>
+    <string name="STR_ALL">Semua</string>
+    <string name="STR_APPS_DESCRIPTION">Pilih aplikasi yang disyorkan oleh pembekal perkhidmatan anda.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Semua aplikasi yang dipilih anda telah dimuat turun.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Batal</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Pilih aplikasi yang disyorkan oleh pembekal perkhidmatan anda.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Pilih aplikasi yang anda ingin pasangkan.</string>
+    <string name="STR_APP_INSTALL_TITLE">Pasangkan aplikasi</string>
+    <string name="STR_APP_STATE_CANCELED">Dibatalkan</string>
+    <string name="STR_APP_STATE_CONNECTING">Menyambung…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Memuat turun…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Muat turun gagal.</string>
+    <string name="STR_APP_STATE_INSTALLED">Dipasang</string>
+    <string name="STR_APP_STATE_INSTALLING">Memasang…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation failed</string>
+    <string name="STR_APP_STATE_WAITING">Menunggu…</string>
+    <string name="STR_BTN_INSTALL">Pasang</string>
+    <string name="STR_BTN_INSTALL_ALL">Pasang semua</string>
+    <string name="STR_BTN_SKIP">Langkau</string>
+    <string name="STR_BUTTON_NEXT">Berikut</string>
+    <string name="STR_CAUTION_BODY">Selepas muat turun, mulakan semula untuk memasang kemas kini. Anda tidak akan dapat menggunakan telefon anda, walaupun untuk panggilan kecemasan, sehingga pemasangan selesai.</string>
+    <string name="STR_CAUTION_BODY2">Selepas kemas kini, beberapa aturan mungkin ditetapkan semula kepada nilai lalainya.</string>
+    <string name="STR_CHARING_DIALOG">Memuat turun menggunakan data mudah alih mungkin dikenakan caj tambahan.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Muat turun menggunakan data mudah alih?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Sambungan pada pelayan</string>
+    <string name="STR_CONNECT_FAIL">Sambungan gagal. Cuba kemudian.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Memuat turun kemas kini…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Memuat turun…</string>
+    <string name="STR_DOWNLOAD_FAIL">Muat turun gagal. Cuba kemudian.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Untuk menggunakan ciri terkini, muat turun dan pasang kemas kini perisian tegar ini.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Muat turun gagal. Cuba kemudian.</string>
+    <string name="STR_FAILED_NOTI">Muat turun gagal.</string>
+    <string name="STR_INITIAL_NOTI">Ketik di sini untuk memilih aplikasi yang disyorkan untuk dimuat turun.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Ketik di sini untuk memuat turun dan memasang kemas kini.</string>
+    <string name="STR_INSTALLED_NOTI">%d dipasang</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Pasang kandungan tambahan</string>
+    <string name="STR_INSTALL_CAUTIONS">Awas</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Kemas kini termasuk beberapa aplikasi dan kandungan pilihan. Memuat turun melalui rangkaian mudah alih mungkin menyebabkan caj tambahan bergantung pada pelan pembayaran anda.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Dimuat turun.</string>
+    <string name="STR_INSTALL_FORCE">Kemas kini kritikal perisian anda telah dimuat turun. Peranti anda akan dimulakan semula dalam %d saat untuk memulakan pemasangan.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Ketahui lebih lanjut</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Anda perlu disambungkan kepada Wi-Fi untuk memuat turun aplikasi. Sambung ke Wi-Fi dan cuba lagi.</string>
+    <string name="STR_NEED_WIFI_TITLE">Tiada sambungan Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Rangkaian tidak tersedia. Cuba lagi nanti.</string>
+    <string name="STR_NO_APPS">Tiada aplikasi</string>
+    <string name="STR_NO_CONTENT">Aplikasi tersedia yang dikeluarkan daripada pembekal perkhidmatan anda akan ditunjukkan di sini.</string>
+    <string name="STR_NO_ITEMS">Tiada item</string>
+    <string name="STR_NO_ITEM_SELECTED">Tiada perkara terpilih.</string>
+    <string name="STR_OMC_HEADER">Kemas kini pembekal perkhidmatan</string>
+    <string name="STR_OMC_SIZE">Saiz: %s</string>
+    <string name="STR_OMC_TITLE">Kemas kini tatarajah</string>
+    <string name="STR_OMC_VERSION">Versi: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Aturan operator</string>
+    <string name="STR_PROCESS_FAIL">Pemprosesan gagal.</string>
+    <string name="STR_PROVIDER_APPS">Aplikasi pembekal perkhidmatan</string>
+    <string name="STR_REGISTERING_DEVICE">Mendaftarkan peranti…</string>
+    <string name="STR_REGISTER_FAIL">Pendaftaran gagal.</string>
+    <string name="STR_REGISTER_SUCCESS">Peranti didaftarkan.</string>
+    <string name="STR_RESTART_BTN_LATER">Kemudian</string>
+    <string name="STR_RESTART_BTN_RESTART">Mulakan semula</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Untuk menyelesaikan pemasangan kemas kini perisian pembekal perkhidmatan anda, anda perlu memulakan semula telefon anda.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Untuk menyelesaikan pemasangan kemas kini perisian pembekal perkhidmatan anda, anda perlu memulakan semula tablet anda.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Mulakan semula?</string>
+    <string name="STR_RESTART_PHONE">Mulakan semula telefon</string>
+    <string name="STR_RESTART_TABLET">Mulakan semula tablet</string>
+    <string name="STR_SELECT_ALL">Semua aplikasi berikut</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Aplikasi penting</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Tiada caj data dikenakan untuk memuat turun aplikasi di bawah.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Ketik pada item di bawah untuk mengetahui lebih lanjut mengenainya.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Aplikasi akan dimuat turun melalui Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Dapatkan aplikasi daripada pembekal perkhidmatan</string>
+    <string name="STR_UPDATE_BODY1">Memuat turun menggunakan data mudah alih mungkin dikenakan caj tambahan.</string>
+    <string name="STR_UPDATE_BODY2">Telefon anda akan dimulakan semula selepas kemas kini dipasang.</string>
+    <string name="STR_UPDATE_FAIL">Kemas kini gagal. Cuba lagi.</string>
+    <string name="STR_UPDATE_HEADER1">Muat turun dan pasang perisian terkini daripada pembekal perkhidmatan anda.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Anda tidak akan dicaj untuk pemasangan perisian tegar ini.
+
+- Semasa pemasangan, anda tidak akan dapat menggunakan peranti langsung, walaupun untuk panggilan kecemasan.
+
+- Ikon pada skrin utama dan aturan peranti mungkin akan ditetapkan semula kepada aturan lalainya dan mungkin perlu ditatarajah selepas pemasangan.
+
+- Kemas kini perisian tegar tidak sepatutnya menjejaskan fail dan data pada peranti anda.
+
+- Namun, jika anda menghentikan proses pemasangan sebelum selesai, peranti anda mungkin tidak berfungsi dengan normal dan hasilnya fail anda mungkin hilang.
+
+- Untuk mengelakkan kehilangan data yang tidak dijangka, kami mengesyorkan agar anda menyandarkan data penting sebelum pemasangan."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Mulakan semula untuk menyelesaikan pemasangan kemas kini perisian pembekal perkhidmatan anda.</string>
+    <string name="STR_UPDATING_PACKAGE">Mengemaskini…</string>
+    <string name="STR_USE_DATA_BTN">Guna data</string>
+    <string name="STR_WAIT_FOR_WIFI">"Pemasangan aplikasi dijeda.
+Menunggu untuk Wi-Fi untuk memasang aplikasi."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Menunggu Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Pasangkan aplikasi yang disyorkan oleh pembekal perkhidmatan anda.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Memuat turun…</string>
+    <string name="STR_WIDGET_INSTALLED">Dipasangkan.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Butang</string>
+    <string name="WSS_STR_NO_UPDATE">Kemas kini terkini telah dipasang.</string>
+</resources>

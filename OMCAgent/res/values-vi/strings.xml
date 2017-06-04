@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s yêu cầu phải cập nhật lên ứng dụng Android Wear.</string>
+    <string name="common_android_wear_update_text">%1$s sẽ không chạy trừ khi bạn cập nhật ứng dụng Android Wear.</string>
+    <string name="common_android_wear_update_title">Cập nhật Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s yêu cầu một hoặc nhiều Dịch vụ của Google Play hiện không có sẵn. Vui lòng liên hệ với nhà phát triển để được hỗ trợ.</string>
+    <string name="common_google_play_services_enable_button">Bật dịch vụ của Google Play</string>
+    <string name="common_google_play_services_enable_text">%1$s sẽ không hoạt động trừ khi bạn kích hoạt Dịch vụ của Google Play.</string>
+    <string name="common_google_play_services_enable_title">Bật dịch vụ của Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Được yêu cầu bởi %1$s</string>
+    <string name="common_google_play_services_install_button">Cài đặt dịch vụ của Google Play</string>
+    <string name="common_google_play_services_install_text_phone">%1$s sẽ không chạy khi không có Dịch vụ của Google Play bị thiếu trên điện thoại của bạn.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s sẽ không chạy khi không có Dịch vụ của Google Play bị thiếu trên máy tính bảng của bạn.</string>
+    <string name="common_google_play_services_install_title">Cài đặt dịch vụ của Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Tài khoản đã chỉ định không tồn tại trên thiết bị này. Vui lòng chọn một tài khoản khác.</string>
+    <string name="common_google_play_services_invalid_account_title">Tài khoản không hợp lệ</string>
+    <string name="common_google_play_services_needs_enabling_title">Một ứng dụng yêu cầu bật các dịch vụ của Google Play.</string>
+    <string name="common_google_play_services_network_error_text">Cần có kết nối dữ liệu để kết nối với các dịch vụ của Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Lỗi mạng</string>
+    <string name="common_google_play_services_notification_needs_update_title">Một ứng dụng yêu cầu cập nhật đối với các dịch vụ của Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Lỗi dịch vụ của Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Lỗi khi đăng nhập vào tài khoản được chỉ định. Vui lòng chọn một tài khoản khác.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Đăng nhập không thành công</string>
+    <string name="common_google_play_services_unknown_issue">Sự cố không xác định với dịch vụ của Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s chạy trên Dịch vụ của Google Play không được thiết bị của bạn hỗ trợ. Liên hệ với nhà sản xuất để được hỗ trợ.</string>
+    <string name="common_google_play_services_unsupported_title">Dịch vụ của Google Play</string>
+    <string name="common_google_play_services_update_button">Cập nhật</string>
+    <string name="common_google_play_services_update_text">%1$s sẽ không chạy trừ khi bạn cập nhật Dịch vụ của Google Play.</string>
+    <string name="common_google_play_services_update_title">Cập nhật dịch vụ của Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s sẽ không chạy khi không có Dịch vụ của Google Play đang cập nhật.</string>
+    <string name="common_google_play_services_updating_title">Dịch vụ của Google Play đang cập nhật</string>
+    <string name="common_open_on_phone">Mở trên điện thoại</string>
+    <string name="common_signin_button_text">Đăng nhập</string>
+    <string name="common_signin_button_text_long">Đăng nhập bằng Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Kích thước nội dung bổ sung: %1$s %2$s</string>
+    <string name="STR_ALL">Tất cả</string>
+    <string name="STR_APPS_DESCRIPTION">Chọn các ứng dụng được đề xuất bởi nhà cung cấp dịch vụ của bạn.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Tất cả ứng dụng được chọn của bạn đã được tải về.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Thoát</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Chọn các ứng dụng được đề xuất bởi nhà cung cấp dịch vụ của bạn.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Chọn ứng dụng bạn muốn cài đặt.</string>
+    <string name="STR_APP_INSTALL_TITLE">Cài đặt ứng dụng</string>
+    <string name="STR_APP_STATE_CANCELED">Đã hủy</string>
+    <string name="STR_APP_STATE_CONNECTING">Đang kết nối…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Đang tải về…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Tải về bị lỗi.</string>
+    <string name="STR_APP_STATE_INSTALLED">Đã cài đặt</string>
+    <string name="STR_APP_STATE_INSTALLING">Đang cài đặt</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation failed</string>
+    <string name="STR_APP_STATE_WAITING">Đang chờ…</string>
+    <string name="STR_BTN_INSTALL">Cài đặt</string>
+    <string name="STR_BTN_INSTALL_ALL">Cài đặt tất cả</string>
+    <string name="STR_BTN_SKIP">Bỏ qua</string>
+    <string name="STR_BUTTON_NEXT">K.tiếp</string>
+    <string name="STR_CAUTION_BODY">Sau khi tải về, hãy khởi động lại để cài đặt cập nhật. Bạn sẽ không thể sử dụng điện thoại, kể cả thực hiện cuộc gọi khẩn cấp, cho đến khi cài đặt hoàn tất.</string>
+    <string name="STR_CAUTION_BODY2">Sau khi cập nhật, một số cài đặt có thể được đặt lại về giá trị mặc định.</string>
+    <string name="STR_CHARING_DIALOG">Tải về bằng dữ liệu di động có thể phát sinh thêm phí.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Tải về bằng dữ liệu di động?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Đang kết nối đến server…</string>
+    <string name="STR_CONNECT_FAIL">Kết nối bị lỗi. Thử lại sau.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Đang tải về cập nhật…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Đang tải về…</string>
+    <string name="STR_DOWNLOAD_FAIL">Tải về bị lỗi. Thử lại sau.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Để sử dụng các tính năng mới nhất, hãy tải về và cài đặt bản cập nhật phần mềm này.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Tải về bị lỗi. Thử lại sau.</string>
+    <string name="STR_FAILED_NOTI">Tải về bị lỗi.</string>
+    <string name="STR_INITIAL_NOTI">Chạm vào đây để chọn các ứng dụng được đề xuất để tải về.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Chạm vào đây để tải về và cài đặt bản cập nhật.</string>
+    <string name="STR_INSTALLED_NOTI">%d đã được cài đặt</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Cài đặt nội dung bổ sung</string>
+    <string name="STR_INSTALL_CAUTIONS">Thận trọng</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Bản cập nhật này bao gồm một số ứng dụng và nội dung tùy chọn. Việc tải về qua mạng di động có thể phát sinh thêm phí tùy vào gói cước của bạn.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Đã tải về.</string>
+    <string name="STR_INSTALL_FORCE">Bản cập nhật phần mềm quan trọng của bạn đã được tải về. Thiết bị của bạn sẽ khởi động lại trong %d giây để bắt đầu cài đặt.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Tìm hiểu thêm</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Bạn cần kết nối Wi-Fi để tải các ứng dụng về. Hãy kết nối Wi-Fi và thử lại.</string>
+    <string name="STR_NEED_WIFI_TITLE">Không có kết nối Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Không có mạng. Hãy thử lại sau.</string>
+    <string name="STR_NO_APPS">Không có ứng dụng</string>
+    <string name="STR_NO_CONTENT">Các ứng dụng hiện có từ nhà cung cấp dịch vụ của bạn sẽ hiển thị ở đây.</string>
+    <string name="STR_NO_ITEMS">Không có mục nào</string>
+    <string name="STR_NO_ITEM_SELECTED">Chưa chọn mục nào.</string>
+    <string name="STR_OMC_HEADER">Cập nhật nhà cung cấp dịch vụ</string>
+    <string name="STR_OMC_SIZE">Kích thước: %s</string>
+    <string name="STR_OMC_TITLE">Cập nhật cấu hình</string>
+    <string name="STR_OMC_VERSION">Phiên bản: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Cài đặt Nhà mạng</string>
+    <string name="STR_PROCESS_FAIL">Xử lý bị lỗi.</string>
+    <string name="STR_PROVIDER_APPS">Ứng dụng nhà cung cấp dịch vụ</string>
+    <string name="STR_REGISTERING_DEVICE">Đang đăng ký thiết bị…</string>
+    <string name="STR_REGISTER_FAIL">Đăng ký lỗi.</string>
+    <string name="STR_REGISTER_SUCCESS">Thiết bị đã đăng ký.</string>
+    <string name="STR_RESTART_BTN_LATER">Để sau</string>
+    <string name="STR_RESTART_BTN_RESTART">K.động lại</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Để hoàn tất cài đặt cập nhật phần mềm nhà cung cấp dịch vụ, bạn cần khởi động lại điện thoại.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Để hoàn tất cài đặt cập nhật phần mềm nhà cung cấp dịch vụ, bạn cần khởi động lại máy tính bảng.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Khởi động lại?</string>
+    <string name="STR_RESTART_PHONE">Khởi động lại điện thoại</string>
+    <string name="STR_RESTART_TABLET">Khởi động lại máy tính bảng</string>
+    <string name="STR_SELECT_ALL">Tất cả các ứng dụng sau đây</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Ứng dụng thiết yếu</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Không mất phí dữ liệu khi tải về các ứng dụng bên dưới.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Chạm vào một mục bên dưới để tìm hiểu thêm.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Ứng dụng sẽ được tải về qua Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Tải ứng dụng từ nhà cung cấp dịch vụ</string>
+    <string name="STR_UPDATE_BODY1">Tải về bằng dữ liệu di động có thể phát sinh thêm phí.</string>
+    <string name="STR_UPDATE_BODY2">Điện thoại của bạn sẽ khởi động lại sau khi cài đặt bản cập nhật.</string>
+    <string name="STR_UPDATE_FAIL">Cập nhật không thành công. Hãy thử lại.</string>
+    <string name="STR_UPDATE_HEADER1">Tải về và cài đặt phần mềm mới nhất từ nhà cung cấp dịch vụ của bạn.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Bạn sẽ không bị tính phí khi cài đặt phần mềm hệ thống này.
+
+- Trong khi cài đặt, bạn hoàn toàn không thể sử dụng thiết bị, kể cả thực hiện cuộc gọi khẩn cấp.
+
+- Các biểu tượng trên màn hình chờ và cài đặt thiết bị có thể được đặt lại về mặc định và có thể cần cấu hình lại sau khi cài đặt.
+
+- Việc cập nhật phần mềm không làm ảnh hưởng đến các file và dữ liệu trên thiết bị của bạn.
+
+- Tuy nhiên, nếu bạn dừng quá trình cài đặt trước khi hoàn tất, thiết bị của bạn có thể sẽ không hoạt động bình thường và các file của bạn có thể bị mất.
+
+- Để tránh mất dữ liệu không mong muốn, bạn nên sao lưu các dữ liệu quan trọng trước khi cài đặt."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Khởi động lại để hoàn tất cài đặt cập nhật phần mềm nhà cung cấp dịch vụ của bạn.</string>
+    <string name="STR_UPDATING_PACKAGE">Đang cập nhật…</string>
+    <string name="STR_USE_DATA_BTN">Sử dụng dữ liệu</string>
+    <string name="STR_WAIT_FOR_WIFI">"Đã tạm dừng cài đặt ứng dụng.
+Đang chờ Wi-Fi để cài đặt ứng dụng."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Chờ Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Chọn các ứng dụng được đề xuất bởi nhà cung cấp dịch vụ của bạn.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Đang tải về…</string>
+    <string name="STR_WIDGET_INSTALLED">Đã cài đặt.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Phím</string>
+    <string name="WSS_STR_NO_UPDATE">Bản cập nhật mới nhất đã được cài đặt.</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ProfileLinear" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/ProfileText0" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/ProfileText1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/WSS_STR_PROFILE_NAME" />
+        <EditText android:textSize="18.0sp" android:id="@id/ProfileEdit1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" />
+        <TextView android:id="@id/ProfileText2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/WSS_STR_SERVER_ADDR" />
+        <EditText android:textSize="18.0sp" android:id="@id/ProfileEdit2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" />
+        <TextView android:id="@id/ProfileText3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/WSS_STR_SERVER_ID" />
+        <EditText android:textSize="18.0sp" android:id="@id/ProfileEdit3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" />
+        <TextView android:id="@id/ProfileText4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/WSS_STR_SERVER_PW" />
+        <EditText android:textSize="18.0sp" android:id="@id/ProfileEdit4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+        <TextView android:id="@id/ProfileText5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/WSS_STR_UserID" />
+        <EditText android:textSize="18.0sp" android:id="@id/ProfileEdit5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" />
+        <TextView android:id="@id/ProfileText6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/WSS_STR_UserPWD" />
+        <EditText android:textSize="18.0sp" android:id="@id/ProfileEdit6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+        <TextView android:id="@id/ProfileText7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/WSS_STR_AUTH_TYPE" />
+        <Spinner android:id="@id/spinner7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:prompt="@string/WSS_STR_AUTH_TYPE" />
+        <TextView android:id="@id/ProfileText8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/WSS_STR_SERVER_AUTHTYPE" />
+        <Spinner android:id="@id/spinner8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:prompt="@string/WSS_STR_SERVER_AUTHTYPE" />
+    </LinearLayout>
+</ScrollView>
