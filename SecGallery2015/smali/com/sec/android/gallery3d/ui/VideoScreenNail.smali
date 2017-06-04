@@ -336,10 +336,6 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
-
-    invoke-interface {v0}, Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;->releaseMediaResourceHelper()V
-
     iput-object v2, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
 
     :cond_1
@@ -629,7 +625,15 @@
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->initMediaResourceHelper()V
+    new-instance v0, Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;
+
+    invoke-direct {v0, p0, p0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;-><init>(Lcom/sec/android/gallery3d/ui/VideoScreenNail;Lcom/sec/android/gallery3d/ui/VideoScreenNail;)V
+
+    iput-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerThread:Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerThread:Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;->start()V
 
     :cond_0
     invoke-virtual {p0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->startMediaPlayer()V
