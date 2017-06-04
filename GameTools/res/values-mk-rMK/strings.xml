@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DREAM_GH_BODY_A_GAME_IS_IN_PROGRESS_NO_ALERTS_DURING_GAMES_IS_TURNED_ON">Игра е во тек. Вклучено е Без предупредувања за време на игрите.</string>
+    <string name="DREAM_GH_BODY_BATTERY_USAGE">Потрошувачка на батерија</string>
+    <string name="DREAM_GH_BODY_DATA_USAGE">Користење податоци</string>
+    <string name="DREAM_GH_BODY_DONT_USE_SAVE_POWER_DURING_GAMES">Немојте да користите Штеди енергија при играња.</string>
+    <string name="DREAM_GH_BODY_FAVORITE_CATEGORIES">Омилени категории</string>
+    <string name="DREAM_GH_BODY_GAMEPAD_RECOMMENDED">Препорачан контролер за игри</string>
+    <string name="DREAM_GH_BODY_GAMEPLAY_VIDEOS_RECORDED_FROM_YOUR_PHONE">Видеа од играњето се снимени од Вашиот телефон.</string>
+    <string name="DREAM_GH_BODY_GAMES_WILL_OPEN_MUTED_YOU_CAN_CHANGE_THE_VOLUME_LATER">Игрите ќе се отворат со исклучен звук. Можете да ја смените јачината на звукот подоцна.</string>
+    <string name="DREAM_GH_BODY_GAME_TOOLS">Game Tools</string>
+    <string name="DREAM_GH_BODY_GAME_TOOLS_KEEPS_ALL_YOUR_GAMES_IN_ONE_PLACE">Game Tools ги чува сите Ваши игри на едно место.</string>
+    <string name="DREAM_GH_BODY_LOCK_EDGE_TOUCH_PREVENTS_ACCIDENTAL_PHONE_EDGE_CONTACT_DURING_GAMEPLAY_MSG">Заклучи допир на раб спречува случаен контакт на работ на телефонот при играње. Можете да го смените ова поставување во Game Tools.</string>
+    <string name="DREAM_GH_BODY_LOCK_RECENT_AND_BACK_BUTTONS">Заклучете ги копчињата Последно и Назад</string>
+    <string name="DREAM_GH_BODY_LOCK_RECENT_AND_BACK_KEYS">Заклучете ги копчињата Последно и Назад</string>
+    <string name="DREAM_GH_BODY_LOW_RESOLUTION_FRAME_RATE_P1SD_P2SS">Ниска резолуција, брзина на кадри %1$d %2$s</string>
+    <string name="DREAM_GH_BODY_NORMAL_RESOLUTION_FRAME_RATE_P1SD_P2SS">Нормална резолуција, брзина на кадри %1$d %2$s</string>
+    <string name="DREAM_GH_BODY_NO_ALERTS_DURING_GAME">Без предупредувања во игра</string>
+    <string name="DREAM_GH_BODY_PD_NGAMES_NPLAYED_N">"%d
+игри
+се играни
+"</string>
+    <string name="DREAM_GH_BODY_PD_TIMES_ABB">%d пати</string>
+    <string name="DREAM_GH_BODY_PERFORMANCE_TUNING_ADJUSTS_THE_PERFORMANCE_OF_THE_GAME_MSG">Бирањето на перформансите ги прилагодува перформансите на играта. Бирањето на Високи перформанси ги подобрува перформансите, но може и да ја зголеми потрошувачката на енергија. Штеди енергија заштедува енергија, но може да ги намали перформансите.</string>
+    <string name="DREAM_GH_BODY_PLAYERS_ABB">Играчи</string>
+    <string name="DREAM_GH_BODY_PLAY_TIME">Време на играње</string>
+    <string name="DREAM_GH_BODY_PLAY_TIME_ABB">Време на играње</string>
+    <string name="DREAM_GH_BODY_PRESSURE_TOUCH_LOCK_PREVENTS_ACCIDENTAL_SCREEN_CONTACT_DURING_GAMEPLAY_MSG">Допирно заклучување на притисок спречува случаен контакт со екранот при играње. Можете да го смените ова поставување во Game Tools.</string>
+    <string name="DREAM_GH_BODY_RECORD">Снимај</string>
+    <string name="DREAM_GH_BODY_SCREENSHOT">Екранска снимка</string>
+    <string name="DREAM_GH_BODY_SCREEN_TOUCH_LOCK">Допирно заклучување на екранот</string>
+    <string name="DREAM_GH_BODY_SEE_THE_CURRENT_APP_VERSION_AND_LEGAL_INFORMATION">Видете ги моменталната верзија и правните информации на апликацијата.</string>
+    <string name="DREAM_GH_BODY_SELECT_APPS_TO_ADD_TO_PS">Изберете ги апликациите за додавање на %s.</string>
+    <string name="DREAM_GH_BODY_SELECT_THE_FUNCTION_YOU_WANT_TO_ASSIGN_TO_THE_SHORTCUT_MSG">Изберете ја функцијата што сакате да ја назначите на кратенката. Исто така можете и да ја допрете и држите кратенката за да ја смените.</string>
+    <string name="DREAM_GH_BODY_TAP_TO_STOP_RECORDING">Допрете за да сопре снимањето.</string>
+    <string name="DREAM_GH_BODY_THE_GAME_TOOLS_BUTTON_LETS_YOU_C">Копчето Game Tools Ви овозможува:</string>
+    <string name="DREAM_GH_BODY_THE_LATEST_VERSION_IS_INSTALLED">Најновата верзија е инсталирана.</string>
+    <string name="DREAM_GH_BODY_THE_MAXIMUM_RECORDING_FILE_SIZE_IS_4_GB_MSG">Максимална големина на датотеката за снимање е 4 GB. На поставувањето за највисок квалитет, можете да снимите околу 80 минути од видеото. За да го зголемите времето на снимање, спуштете ги резолуцијата и битовата стапка.</string>
+    <string name="DREAM_GH_BODY_THE_NAVIGATION_BAR_DOESNT_AUTO_HIDE_DURING_GAMES_THIS_ISNT_RECOMMENDED_WITH_FULL_SCREEN_MODE">Навигациската лента не се крие автоматски при играње. Ова не се препорачува со режим на цел екран.</string>
+    <string name="DREAM_GH_BODY_TIMES_PER_DAY_ABB">Пати дневно</string>
+    <string name="DREAM_GH_BODY_TIP_C_PRESS_AND_HOLD_THE_SHORTCUT_OR_CHANGE_THE_SHORTCUT_IN_GAME_TOOLS_SETTINGS">Совет: Притиснете ја и држете ја кратенката или сменете ја кратенката во поставувањата за Game Tools.</string>
+    <string name="DREAM_GH_BODY_TOTAL">Вкупно</string>
+    <string name="DREAM_GH_BODY_TO_RECORD_GAMEPLAY_VIDEOS_ENABLE_GAME_LAUNCHER">За да снимите видеа од играњето, овозможете Game Launcher.</string>
+    <string name="DREAM_GH_BODY_TO_STOP_RECORDING_TAP_THE_STOP_BUTTON_ON_THE_NAVIGATION_BAR">За да сопрете со снимање, допрете на копчето Сопри на навигациската лента.</string>
+    <string name="DREAM_GH_BODY_TRY_OUT_USEFUL_FEATURES_SUCH_AS_SAVE_POWER_OPEN_MUTED_AND_GAME_TOOLS">Испробајте корисни функции како Штеди енергија, Отвори исклучен звук и Game Tools.</string>
+    <string name="DREAM_GH_BODY_USE_A_LOWER_RESOLUTION_AND_FRAME_RATE_TO_SAVE_BATTERY_LIFE">Користете пониска резолуција и брзина на кадри за да ја штедите батеријата.</string>
+    <string name="DREAM_GH_BODY_USE_A_LOWER_RESOLUTION_TO_SAVE_BATTERY_LIFE">Користете пониска резолуција за да ја штедите батеријата.</string>
+    <string name="DREAM_GH_BODY_YOU_PLAYED">Игравте</string>
+    <string name="DREAM_GH_BUTTON_ADD_APPS_20">Додај апликации</string>
+    <string name="DREAM_GH_BUTTON_AGREE_9">Добро</string>
+    <string name="DREAM_GH_BUTTON_DISAGREE_9">Нема сог.</string>
+    <string name="DREAM_GH_BUTTON_DISMISS_8">Отфрли</string>
+    <string name="DREAM_GH_BUTTON_ENABLE_8">Овозм.</string>
+    <string name="DREAM_GH_BUTTON_FIND_GAMES_22">Најди игри</string>
+    <string name="DREAM_GH_BUTTON_GAME_TOOLS_22">Game Tools</string>
+    <string name="DREAM_GH_BUTTON_HIDE_31">Сокриј</string>
+    <string name="DREAM_GH_BUTTON_HIGH_PERFORMANCE_22">Високи перформанси</string>
+    <string name="DREAM_GH_BUTTON_NORMAL_PERFORMANCE_22">Нормални перформанси</string>
+    <string name="DREAM_GH_BUTTON_OK_8">OK</string>
+    <string name="DREAM_GH_BUTTON_OPEN_MUTED_24">Отвори со исклучен звук</string>
+    <string name="DREAM_GH_BUTTON_RESET_8">Ресетир.</string>
+    <string name="DREAM_GH_BUTTON_RESTART_22">Рестартирај</string>
+    <string name="DREAM_GH_BUTTON_RESTART_8">Рестарт.</string>
+    <string name="DREAM_GH_BUTTON_SAVE_POWER_22">Штеди енергија</string>
+    <string name="DREAM_GH_BUTTON_SCREEN_TOUCH_LOCK_22">Допир.закл. на екранот</string>
+    <string name="DREAM_GH_BUTTON_SETTINGS_22">Поставувања</string>
+    <string name="DREAM_GH_HEADER_ANNOUNCEMENTS">Соопштенија</string>
+    <string name="DREAM_GH_HEADER_GAMES">Игри</string>
+    <string name="DREAM_GH_HEADER_GAME_TOOLS">Game Tools</string>
+    <string name="DREAM_GH_HEADER_KEEP_NAVIGATION_BAR">Задржување на навигациската лента</string>
+    <string name="DREAM_GH_HEADER_OPEN_MUTED">Отвори со исклучен звук</string>
+    <string name="DREAM_GH_HEADER_OTHER">Друго</string>
+    <string name="DREAM_GH_HEADER_OTHER_APPS">Други апликации</string>
+    <string name="DREAM_GH_HEADER_PRESSURE_TOUCH_LOCK">Допирно заклучување на притисок</string>
+    <string name="DREAM_GH_HEADER_RECORD">Снимање</string>
+    <string name="DREAM_GH_HEADER_SHARE_VIA">Споделување преку</string>
+    <string name="DREAM_GH_HEADER_SHORTCUTS">Кратенки</string>
+    <string name="DREAM_GH_HEADER_TERMS_AND_CONDITIONS">Одредби и услови</string>
+    <string name="DREAM_GH_HEADER_TOUCH_LOCK">Допирно заклучување</string>
+    <string name="DREAM_GH_HEADER_TUNE_PERFORMANCE">Намести перформанси</string>
+    <string name="DREAM_GH_NPBODY_NO_APPS">Нема апликации</string>
+    <string name="DREAM_GH_NPBODY_NO_GAMES_AVAILABLE">Не се достапни игри</string>
+    <string name="DREAM_GH_NPBODY_VERY_LOW_RESOLUTION_FRAME_RATE_P1SD_P2SS">Многу ниска резолуција, брзина на кадри %1$d %2$s</string>
+    <string name="DREAM_GH_OPT_1080_PX">1080 px</string>
+    <string name="DREAM_GH_OPT_360_PX">360 px</string>
+    <string name="DREAM_GH_OPT_480_PX">480 px</string>
+    <string name="DREAM_GH_OPT_540_PX">540 px</string>
+    <string name="DREAM_GH_OPT_720_PX">720 px</string>
+    <string name="DREAM_GH_OPT_ADD_TO_HOME_ABB">Додај Дома</string>
+    <string name="DREAM_GH_OPT_ALL_ABB2">Сите</string>
+    <string name="DREAM_GH_OPT_ANNOUNCEMENTS_ABB">Соопштенија</string>
+    <string name="DREAM_GH_OPT_ANNOUNCEMENTS_ABB2">Соопштенија</string>
+    <string name="DREAM_GH_OPT_CAMERA">Камера</string>
+    <string name="DREAM_GH_OPT_DISPLAY_GAME_ICONS_IN_APPS_AND_GAME_LAUNCHER_ABB">Прик. икон. за игри во Апл. и во Game Launcher</string>
+    <string name="DREAM_GH_OPT_GAME_ABB">Игра</string>
+    <string name="DREAM_GH_OPT_LAST_30_DAYS_ABB2">Последните 30 дена</string>
+    <string name="DREAM_GH_OPT_LAST_WEEK">Минатата седмица</string>
+    <string name="DREAM_GH_OPT_LAST_WEEK_ABB">Минатата седмица</string>
+    <string name="DREAM_GH_OPT_LIST_AS_GAME_ABB">Наведи како игра</string>
+    <string name="DREAM_GH_OPT_LIST_AS_OTHER_APP_ABB">Наведи како др.апликација</string>
+    <string name="DREAM_GH_OPT_MY_DIARY_ABB">Мој дневник</string>
+    <string name="DREAM_GH_OPT_NO_APPS_AVAILABLE_ABB">Не се достапни апликации</string>
+    <string name="DREAM_GH_OPT_OPEN_SOURCE_LICENSES_ABB">Лиценци за отворен код</string>
+    <string name="DREAM_GH_OPT_RECORD_ABB">Снимај</string>
+    <string name="DREAM_GH_OPT_SCREENSHOT_ABB">Екранска снимка</string>
+    <string name="DREAM_GH_OPT_SCREEN_TOUCH_LOCK_ABB">Допирен екран заклучен</string>
+    <string name="DREAM_GH_OPT_SELECT_IMAGE_ABB">Избери слика</string>
+    <string name="DREAM_GH_OPT_TERMS_AND_CONDITIONS">Одредби и услови</string>
+    <string name="DREAM_GH_OPT_USE_DEFAULT_ABB">Користи основно</string>
+    <string name="DREAM_GH_PHEADER_ENABLE_GAME_LAUNCHER_Q">Да се овозможи Game Launcher?</string>
+    <string name="DREAM_GH_PHEADER_RESTART_GAME_Q">Да се рестартира играта?</string>
+    <string name="DREAM_GH_PHEADER_SELECT_SHORTCUT">Бирање кратенка</string>
+    <string name="DREAM_GH_PHEADER_SHOW_GAME_TOOLS_Q">Да се прикаже Game Tools?</string>
+    <string name="DREAM_GH_PHEADER_VIEW_FULL_SCREEN_Q">Види цел екран?</string>
+    <string name="DREAM_GH_POP_ADDING_APP_ING">Се додава апликација...</string>
+    <string name="DREAM_GH_POP_CANT_SAVE_POWER_WHILE_PLAYING_A_GAME_IN_HD">Не може да се штеди енергија додека се игра играта во HD.</string>
+    <string name="DREAM_GH_POP_CHANGE_THE_APPS_THAT_CAN_APPEAR_ON_TOP">Сменете ги Апликациите што може да се појават на врвот.</string>
+    <string name="DREAM_GH_POP_CLEAR_PS_HISTORY_Q">Да се исчисти историјата на %s?</string>
+    <string name="DREAM_GH_POP_DELETE_PD_VIDEOS_Q">Да се избришат %d видеа?</string>
+    <string name="DREAM_GH_POP_DELETE_PS_HISTORY_Q">Да се избрише историјата на %s?</string>
+    <string name="DREAM_GH_POP_ENABLE_GAME_TOOLS_Q">Да се овозможи Game Tools?</string>
+    <string name="DREAM_GH_POP_FILE_SIZE_C_PD_MB_MSG">"Големина на датотека: %d MB
+
+Препорачуваме да преземете со Wi-Fi. Користењето на Вашата мобилна мрежа може да се наплаќа дополнително."</string>
+    <string name="DREAM_GH_POP_GAME_ICONS_WILL_DISPLAY_IN_GAME_LAUNCHER_ONLY_YOU_CAN_CHANGE_THIS_OPTION_IN_GAME_LAUNCHER_SETTINGS">Иконите за игри ќе се прикажат само во Game Launcher. Можете да ја смените оваа опција во Поставувањата за Game Launcher.</string>
+    <string name="DREAM_GH_POP_GET_NOTIFICATIONS_FOR_PROMOTIONS_AND_MARKETING_INFORMATION_FROM_PS">Добивајте известувања за промоции и маркетиншки информации од %s.</string>
+    <string name="DREAM_GH_POP_HIDE_GAME_ICONS_ON_APPS_SCREEN_Q">Да сок.икон. игр. на Екр. апл.?</string>
+    <string name="DREAM_GH_POP_RESET_SAVE_POWER_SETTING_TO_DEFAULT_Q">Да се ресетира поставувањето Штеди енергија на основното?</string>
+    <string name="DREAM_GH_POP_THE_GAME_LAUNCHER_ICON_WILL_BE_REMOVED_FROM_YOUR_HOME_SCREEN_AND_APPS_MSG">Иконата Game Launcher ќе се отстрани од Почетниот екран и од Апликации. Можете да овозможите Game Launcher во Поставувања.</string>
+    <string name="DREAM_GH_POP_THIS_APP_WASNT_ADDED_AS_A_GAME_TO_USE_PS_FEATURES_ON_THE_APP_ADD_IT_AS_A_GAME">Оваа апликација не е додадена како игра. За да ги користите функциите на %s на апликацијата, додајте ја како игра.</string>
+    <string name="DREAM_GH_POP_TO_APPLY_YOUR_NEW_POWER_SETTINGS_RESTART_ANY_GAMES_THAT_ARE_CURRENTLY_RUNNING">За да ги примените новите поставувања за енергија, рестартирајте ги сите игри што моментално работат.</string>
+    <string name="DREAM_GH_POP_TO_CHANGE_THE_SCREEN_VIEW_RESTART_YOUR_GAME">За да го смените прегледот на екранот, рестартирајте ја играта.</string>
+    <string name="DREAM_GH_POP_TO_USE_GAME_LAUNCHER_YOU_NEED_TO_TURN_ON_APPS_THAT_CAN_APPEAR_ON_TOP_IN_GAME_LAUNCHER">За да користите Game Launcher, треба да ги вклучите Апликациите што може да се појават на врвот во Game Launcher.</string>
+    <string name="DREAM_GH_POP_TO_VIEW_IN_FULL_SCREEN_RESTART_YOUR_GAME">За да прегледате на цел екран, рестартирајте ја играта.</string>
+    <string name="DREAM_GH_POP_TO_VIEW_IN_FULL_SCREEN_RESTART_YOUR_GAME_FULL_SCREEN_MODE_MAY_CAUSE_GAME_TO_DISPLAY_INCORRECTLY">За да прегледувате на цел екран, рестартирајте ја играта. Режимот на цел екран може да предизвика играта да се прикажува неточно.</string>
+    <string name="DREAM_GH_POP_YOU_SELECTED_PD_VIDEOS">Избравте %d видеа.</string>
+    <string name="DREAM_GH_POP_YOU_WONT_SEE_GAME_ICONS_ON_THE_APPS_SCREEN">Нема да ги видите иконите на играта на екранот Апликации.</string>
+    <string name="DREAM_GH_SBODY_BATTERY_REMAINING_C_PDP" formatted="false">Преостаната батерија: %d%</string>
+    <string name="DREAM_GH_SBODY_ENJOY_A_FREE_GAME_FROM_SAMSUNG">Уживајте во бесплатна игра од Samsung.</string>
+    <string name="DREAM_GH_SBODY_HANDY_FEATURES_TO_ENHANCE_GAMEPLAY">Корисни функции за подобрување на играњето</string>
+    <string name="DREAM_GH_SBODY_MANAGE_ALL_YOUR_GAMES_IN_ONE_PLACE_AND_TRY_OUT_COOL_FEATURES">Управувајте со сите Ваши игри на едно место и испробајте интересни функции.</string>
+    <string name="DREAM_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_FROM_YOUR_PHONE_MAY_ALSO_BE_RECORDED">Снимете звук од играта. Системските звуци од телефонот може исто така да се снимат.</string>
+    <string name="DREAM_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_FROM_YOUR_TABLET_MAY_ALSO_BE_RECORDED">Снимете звук од играта. Системските звуци од таблетот може исто така да се снимат.</string>
+    <string name="DREAM_GH_SBODY_RECORD_GAMEPLAY_WITHOUT_A_PROFILE">Снимете го играњето без профил.</string>
+    <string name="DREAM_GH_SBODY_RECORD_YOURSELF_DURING_GAMEPLAY">Снимајте се себеси при играњето.</string>
+    <string name="DREAM_GH_SBODY_SEE_THE_CURRENT_APP_VERSION_AND_LEGAL_INFORMATION">Видете ги моменталната верзија и правните информации на апликацијата.</string>
+    <string name="DREAM_GH_SBODY_TAP_HERE_TO_GET_STARTED">Допрете тука за да почнете.</string>
+    <string name="DREAM_GH_TAB_GAMES_PLAYED">Играни игри</string>
+    <string name="DREAM_GH_TAB_VIDEOS_RECORDED">Снимени видеа</string>
+    <string name="DREAM_GH_TBBODY_CHECK_BOX">Поле за штиклирање</string>
+    <string name="DREAM_GH_TBBODY_SLIDER">Лизгач</string>
+    <string name="DREAM_GH_TMBODY_ABOUT_GAME_TOOLS">За Game Tools</string>
+    <string name="DREAM_GH_TMBODY_GAME_ICON_DISPLAY">Приказ на икона за игри</string>
+    <string name="DREAM_GH_TMBODY_GAME_TOOLS">Game Tools</string>
+    <string name="DREAM_GH_TMBODY_MARKETING_INFORMATION">Маркетиншки информации</string>
+    <string name="DREAM_GH_TMBODY_MY_QUESTIONS">Мои прашања</string>
+    <string name="DREAM_GH_TMBODY_NO_ALERTS_DURING_GAMES">Без предупредувања во игри</string>
+    <string name="DREAM_GH_TMBODY_RECORD_VIDEOS">Снимајте видеа</string>
+    <string name="DREAM_GH_TMBODY_SHORTCUTS">Кратенки</string>
+    <string name="DREAM_GH_TMBODY_SHOW_EDGE_TOUCH_LOCK">Прик.допирно заклучување на раб</string>
+    <string name="DREAM_GH_TMBODY_SHOW_PRESSURE_TOUCH_LOCK">Прик. допирно закл. на притисок</string>
+    <string name="DREAM_GH_TMBODY_SHOW_TOUCH_LOCK">Прикажи допирно заклучување</string>
+    <string name="DREAM_GH_TMBODY_TRY_GAME_LAUNCHER">Пробајте го Game Launcher</string>
+    <string name="DREAM_GH_TPOP_BATTERY_LOW_RECORDING_STOPPED_AND_SAVED">Батеријата е при крај. Снимањето сопре и е зачувано.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_CAMERA_IN_USE">Не може да се снима. Се користи камерата.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_GAME_AUDIO_VOLUME_MUTED">Не може да се снима аудио-звук на играта. Звукот е исклучен.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_LOW_BATTERY">Не може да се снима. Батеријата е слаба.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_MICROPHONE_IN_USE">Не може да се снима. Се користи микрофонот.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VIDEOS_LARGER_THAN_P1SD_P2SS_RECORDING_STOPPED_AND_SAVED">Не може да се снимат видеа поголеми од %1$d %2$s. Снимањето сопре и е зачувано.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VIDEO_TRY_AGAIN_LATER">Не може да се снима видеото. Обидете се повторно подоцна.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VOICE_GAME_AUDIO_VOLUME_TOO_HIGH">Не може да се снима глас. Јачината на звукот на играта е преголема.</string>
+    <string name="DREAM_GH_TPOP_CANT_USE_P1SS_SET_NOTIFICATIONS_TO_ALLOW_P2SS_PERMISSION_PERMISSIONS">Не може да се користи %1$s. Поставете ги известувањата за да ја/ги овозможите дозволата/дозволите %2$s.</string>
+    <string name="DREAM_GH_TPOP_COULDNT_INSTALL_PS">Не може да се инсталира %s.</string>
+    <string name="DREAM_GH_TPOP_COULDNT_TAKE_SCREENSHOT_DELETE_SOME_FILES_AND_TRY_AGAIN">Не може да се направи екранска снимка. Избришете некои датотеки и обидете се повторно.</string>
+    <string name="DREAM_GH_TPOP_GAME_LAUNCHER_FEATURES_ARENT_AVAILABLE_FOR_PS_IT_CAN_TAKE_UP_TO_5_SECONDS_TO_APPLY_CHANGES">Функциите на Game Launcher не се достапни за %s. Може да бидат потребни до 5 секунди за да се применат промените.</string>
+    <string name="DREAM_GH_TPOP_GAME_LAUNCHER_FEATURES_ARE_AVAILABLE_FOR_PS_IT_CAN_TAKE_UP_TO_5_SECONDS_TO_APPLY_CHANGES">Функциите на Game Launcher се достапни за %s. Може да бидат потребни до 5 секунди за да се применат промените.</string>
+    <string name="DREAM_GH_TPOP_GAME_SHOWN_IN_FULL_SCREEN_VIEW_IF_IT_DOESNT_LOOK_RIGHT_TURN_OFF_FULL_SCREEN">Играта е прикажана во преглед на цел екран. Ако не изгледа во ред, исклучете Цел екран.</string>
+    <string name="DREAM_GH_TPOP_NOT_ENOUGH_SPACE_TO_CONTINUE_RECORDING_VIDEO_SAVED">Нема доволно простор за да се продолжи снимањето. Видеото е зачувано.</string>
+    <string name="DREAM_GH_TPOP_NOT_ENOUGH_SPACE_TO_RECORD_VIDEO_DELETE_SOME_FILES_AND_TRY_AGAIN">Нема доволно простор за да се сними видеото. Избришете некои датотеки и обидете се повторно.</string>
+    <string name="DREAM_GH_TPOP_NO_ALERTS_DURING_GAMES_ENABLED_MSG">Овозможено е Без предупредувања во игри. Звукот на сите предупредувања ќе биде исклучен за време на играњето. Само дојдовните повици ќе се прикажуваат на екранот.</string>
+    <string name="DREAM_GH_TPOP_NO_LONGER_ON_GAME_SCREEN_RECORDING_STOPPED_AND_SAVED">Повеќе не е на екранот на играта. Снимањето е сопрено и зачувано.</string>
+    <string name="DREAM_GH_TPOP_P1SS_LISTED_AS_GAME_P2SS_FEATURES_AVAILABLE">%1$s е наведено како игра. %2$s функции се достапни.</string>
+    <string name="DREAM_GH_TPOP_PS_ENABLED">%s е овозможено.</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_AFTER_PD_SECONDS_VIDEO_NOT_SAVED">Снимањето запре по %d секунди. Видеото не е зачувано.</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_BECAUSE_OF_PROBLEM_WITH_PHONE_VIDEO_NOT_SAVED">Снимањето запре поради проблем со телефонот. Видеото не е зачувано.</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_BECAUSE_OF_PROBLEM_WITH_TABLET_VIDEO_NOT_SAVED">Снимањето запре поради проблем со таблетот. Видеото не е зачувано.</string>
+    <string name="DREAM_GH_TPOP_SEE_RECORDED_VIDEO_IN_GAME_LAUNCHER">Видете го снименото видео во Game Launcher.</string>
+    <string name="DREAM_GH_TPOP_VOICE_MAY_NOT_BE_RECORDED_IF_GAME_VOLUME_TOO_HIGH">Гласот може да не се снима ако јачината на звукот на играта е превисока.</string>
+    <string name="IDS_COM_BODY_GAME">Игра</string>
+    <string name="IDS_COM_BODY_REQUEST">Барање</string>
+    <string name="IDS_COM_BUTTON_ADD">Додај</string>
+    <string name="IDS_COM_BUTTON_SAVE">Сочувај</string>
+    <string name="IDS_COM_POP_UNABLE_TO_FIND_ITEM_ABB">Не може да се најде записот.</string>
+    <string name="IDS_COM_SK_SAVE_LITE">Сочувај</string>
+    <string name="IDS_ES_BODY_UNABLE_TO_OPEN_PS_WHILE_EASY_MODE_ENABLED">Не може да се отвори %s додека е овозможен Лесен режим.</string>
+    <string name="IDS_GCTS_OPT_DIMMED_TTS">Затемнетo</string>
+    <string name="IDS_GFW_BODY_SEARCHING_ING">Пребарување...</string>
+    <string name="IDS_IDLE_BODY_A_NEW_VERSION_IS_AVAILABLE">Достапна е нова верзија.</string>
+    <string name="IDS_IDLE_BODY_THE_LATEST_VERSION_IS_ALREADY_INSTALLED">Најновата верзија веќе е инсталирана.</string>
+    <string name="IDS_IDLE_BODY_VERSION_PS">Верзија %s</string>
+    <string name="IDS_IDLE_BUTTON_UPDATE_ABB8">Ажурирај</string>
+    <string name="IDS_IDLE_HEADER_ABOUT_PS">За %s</string>
+    <string name="IDS_IDLE_HEADER_UNABLE_TO_ADD">Не може да се додаде</string>
+    <string name="IDS_IDLE_MBODY_UNABLE_TO_USE_PS">Не може да се користи %s</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_MSG">Не може да се отвори %s. Допрете ПОСТАВУВАЊА, одете во Информации за апликацијата > Дозволи, а потоа овозможете ги следниве дозволи и обидете се повторно:</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_USE_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_MSG">Не може да се користи %s. Допрете ПОСТАВУВАЊА, одете во Информации за апликацијата > Дозволи, а потоа овозможете ги следниве дозволи и обидете се повторно:</string>
+    <string name="IDS_IDLE_SBODY_TO_USE_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_THE_FOLLOWING_PERMISSIONS_C">За да користите %s, допрете ПОСТАВУВАЊА, одете во Информации за апликацијата > Дозволи, а потоа овозможете ги следниве дозволи:</string>
+    <string name="IDS_IV_BODY_MY_DEVICE">Мој уред</string>
+    <string name="IDS_PB_SBODY_ALLOW_STORAGE_PERMISSION_TO_USE_ABB">Овоз.доз. за Меморија за корист.</string>
+    <string name="IDS_ST_BODY_I_AGREE">Добро.</string>
+    <string name="IDS_ST_BUTTON_OFF_ABB_M_DISABLED">Исклучено</string>
+    <string name="IDS_ST_BUTTON_ON_ABB_M_ENABLED">Вклучено</string>
+    <string name="IDS_ST_HEADER_GAME_MODE">Режим за игри</string>
+    <string name="IDS_ST_OPT_APPS_THAT_CAN_APPEAR_ON_TOP">Апликациите што може да се појават на врвот</string>
+    <string name="IDS_ST_TPOP_CANT_CHANGE_THIS_SETTING_WHILE_PS_IS_ON">Не може да се смени ова поставување додека е вклучено %s.</string>
+    <string name="IDS_ST_TPOP_TO_UNPIN_APPLICATION_PRESS_AND_HOLD_THE_RECENTS_AND_BACK_KEYS_AT_THE_SAME_TIME">За да откачите апликација, притиснете ги и држете ги копчињата последни и назад истовремено.</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P1">Consent for Collection and Use of Personal Information (For Game Launcher)</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P10">"The Company has established certain procedures necessary for revising the Privacy Policy in order for its continuous improvement. In addition, when a revision of the Privacy Policy is deemed necessary, a version number is given to it so that you can easily identify the details of the revision.
+This Policy is effective as of 8th August, 2016, and any revisions will be announced via the website (or individually notified in writing, email, phone, SMS, etc.)."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P11">"1. Information We Collect and How We Collect It
+(1) Information We Collect
+The Company collects the following information from you when you sign up for or use our services.
+Required Information
+Information about your device model, Universal Unique Identifier (UUID), IP address, device OS, time zone, MCC, MNC, configuration, the application package installed on your device, and your service usage records
+The Company does not collect sensitive information that may significantly infringe your privacy (ideology, convictions, membership in or withdrawal from unions or political parties, political opinion, information about health and sex life, etc.)."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P12">"As a general rule, the Company does not collect your information if you are under 14 years of age.
+If the Company must collect personal information from a user under 14 years of age for use of the service, it will obtain the consent of a legal guardian in advance, manage the personal information meticulously while the work is in progress, and destroy the information without delay as soon as the related work is completed."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P13">"(2) How We Collect Personal Information
+Collection in the course of running or using the Game Launcher service
+Collection through the user‘s device
+Sweepstake entries and participation in events
+Collection through tools that collect auto-generated information
+The Company has established a procedure that allows you to select “I agree” or “I do not agree” to each provision of the Consent for Collection and Use of Personal Information document."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P14">"2. How We Use Information We Collect
+We use the information we collect for the following purposes:
+(1) To provide you with services pursuant to a contract
+To automatically place newly installed game applications in the Game Launcher
+To provide useful features such as “Save power during game”, “No alerts during game”, “Game Tools”, etc.
+To provide services optimised for the user (providing customised content and recommendations based on past service usage)
+(2) To improve services and to utilise in advertising, marketing, etc.
+Statistical analysis, prediction of market trends, improvement of services, and research/development of new services
+To deliver advertising information, including events or special offers, and provide services and advertisements according to the characteristics of the demographic"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P15">"3. Information Retention and Usage Period
+In principle, your personal information shall be destroyed without delay after the purpose for which the information was collected and used has been achieved.
+However, if the provisions of the relevant laws and regulations make it necessary for the Company to retain your personal information, the Company may retain your personal information in accordance with the applicable provisions as described below. In such cases, the Company shall transfer the personal information to a separate database (DB) or a different storage location."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P16">"5 years for records related to the retraction of contracts or subscriptions (Act on the Consumer Protection in Electronic Commerce, Etc.)
+5 years for records of payments and the supply of goods (Act on the Consumer Protection in Electronic Commerce, Etc.)
+3 years for records of the handling of consumer complaints or disputes (Act on the Consumer Protection in Electronic Commerce, Etc.)
+3 years for records of the collection, handling and usage of credit information (Use and Protection of Credit Information Act)
+6 months for records of display/advertising (Act on the Consumer Protection in Electronic Commerce, Etc.)
+3 months for internet logs/location tracking data (Protection of Communications Secrets Act)
+6 months for other data used for verifying communication (Protection of Communications Secrets Act)"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P17">"4. Procedure and Method for Destroying Personal Information
+Your personal information will be destroyed via the following procedure and method:
+(1) Procedure for destruction
+Your personal information will be transferred to a separate DB (if in paper form, to a separate filing cabinet) after its purpose has been achieved, and will be preserved for a certain period of time in accordance with internal policies and grounds for protection of information under other relevant laws (see Information Retention and Usage Period), and then destroyed. Personal information transferred to a separate DB shall not be used for any other purpose other than storage, unless otherwise required by the law."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P18">"(2) Method for destruction
+Personal information stored in the form of electronic files shall be deleted using technological methods that disable its playback.
+Personal information printed on paper shall be shredded or incinerated."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P19">"5. Consignment and Overseas Transfer of Personal Information Collected
+The Company entrusts the processing of personal information to special outside agencies, as below, to provide its services. The processing of personal information shall be entrusted to a designated agency for a specific service only if necessary for its fulfilment."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P2">"1. Information We Collect
+Samsung Electronics Co., Ltd. (hereinafter the “Company”) collects the following information from you when you sign up for or use our services.
+When you consent to the collection and use of your personal information, you have the right to refuse permission for the collection and use of personal information that is not required by the service.
+For more information about how we process your information, please refer to our Privacy Policy, which can be accessed via Game Launcher’s Settings > About Game Launcher screen. However, in case of any inconsistency or conflict between the terms of this Agreement and the Privacy Policy, the terms of this Agreement shall prevail."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P20">"When responsibility for the processing of personal information is transferred to another organisation, in order to ensure the protection of personal information, the Company shall clearly define strict observance of instructions regarding the protection of personal information, confidentiality regarding personal information, prohibition against providing the information to a third party, and the assumption of liability in case of an incident, period of transferral, the return or destruction of personal information after the completion of its processing, etc., and the Company shall supervise to ensure that the agency processes personal information safely.
+In the event that there is a change in the agency or the work to be outsourced, it will be announced via a website notification (or individually notified in writing or by email, phone, SMS, etc.)"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P21">"6. Providing Personal Information to a Third Party
+As a general rule, the Company does not provide your personal information to third parties. However, there are exceptions as follows:
+Pursuant to the provisions of laws, or when required by investigative authority for investigative purposes in accordance with procedures and manners established by laws
+When it is necessary for billing paid services provided
+Where the information is provided after being processed in a form that cannot be used to identify a specific individual for statistical, academic, or market research purposes
+Where the user has agreed to it in advance
+When your personal information is provided or shared, except as listed above, the information will be provided only after a separate procedure to obtain your consent."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P22">"7. The Rights of the Users and Their Legal Representatives and How to Exercise Them
+Users and their legal representatives can always request access to, correction or deletion of, an end to the processing of, and withdrawal of consent with regards to the use of the personal information of the registered user him/herself or a user under 14 years of age.
+You can call us on our primary phone number (1588-3366) or contact the Privacy Officer in writing, by phone, or by email. We will take the necessary measures without delay.
+In the following cases, the Company may refuse to give access to, correct, or delete all or part of your personal information:
+Where access is prohibited or restricted by law
+Where it may cause harm to the life or body of another or unduly infringe on the property or other interests of another"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P23">"When the user requests correction of an error in personal information, the personal information concerned will not be used or provided to a third party until the correction has been completed. In addition, in the event that the wrong information has been already provided to a third party, we will notify the third party of the corrected result without delay.
+When a user or his/her legal representative requests a deletion or an end to the processing of personal information, the Company will process it as set out in “3. Information Retention and Usage Period” and ensure that it is not accessed or used for any other purpose."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P24">"Please enter your latest personal information accurately. You are responsible for any incidents that occur due to inaccurate information you enter, and if you enter false information such as information stolen from another, you may lose your membership privileges.
+You have the obligation to protect yourself and not to infringe on the information of another, as well as the right to have your information protected. Please be careful not to leak your personal information, including your password, and be careful not to damage the personal information of another, including any posts. You may be subject to sanctions or penalties under the “Act on Promotion of Information and Communications Network Utilisation and Information Protection, etc.” or other related laws if you fail to fulfil such responsibilities and harm another person’s information and dignity."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P25">"8. Installation, Operation, and Rejection of a System That Collects Personal Information Automatically
+(applicable only if subject to the Act on Promotion of Information and Communications Network Utilisation and Information Protection, etc.)
+The Company utilises “cookies” that frequently store and find the user’s information. Cookies are very small text files that are sent to the user’s browser by the server used to operate the Company’s website, and are stored on the hard disk of the user’s computer."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P26">"(1) Purposes of cookies
+Cookies are used for the following purposes: implementation of automatic login feature, analysis of access frequency or access time by members and non-members, identifying the preferences and interests of users and tracing the users, providing targeted marketing and personalised services by identifying the participation rate at various events, and the number of visits.
+(2) How to block cookies
+You have the right to choose regarding the installation of cookies. Therefore, you can set options in your web browser to allow all cookies, require your confirmation every time a cookie is stored, or block all cookies.
+However, you might encounter difficulty in using our services if you block cookies."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P27">"How to set cookies (on Internet Explorer 8.0)
+: Select “Internet Options” from the “Tools” menu. Click on the “Privacy” tab.
+Use “Settings” to set the level of cookie usage that is acceptable for you.
+How to view cookies received (on Internet Explorer 8.0)
+: Select “Internet Options” from the “Tools” menu.
+Click on the “General” tab, click “Settings” in the “Browsing history” section, and then click “View files” to view them.
+How to block cookies (on Internet Explorer 8.0)
+: Select “Internet Options” from the “Tools” menu. Click on the “Privacy” tab.
+Use “Settings” to set the level to the highest level, “Block all cookies”."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P28">"9. Other Policies Related to Privacy
+(1) Technical and administrative measures to protect your privacy
+The Company takes the following technical and administrative measures in handling your personal information, to ensure the safety of your personal information so that it will not be lost, stolen, leaked, altered, or tampered with.
+The establishment and implementation of an internal management plan
+The Company has established and implemented an internal management plan to process your personal information safely.
+The Company checks whether privacy protection measures are carried out and ensures that the personnel in charge are in compliance with the in-house privacy task force, etc. The Company also commits to ensuring that appropriate corrective measures will be taken immediately should any problems be found."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P29">"The installation and operation of the access control system
+The Company controls unauthorised access from outside by using an Intrusion Prevention System, and will endeavour to equip itself with all the technical systems available to procure security system-wise.
+Measures to prevent counterfeiting of and tampering with access records
+The Company stores and manages records of access to the personal information processing system and uses security features to prevent the counterfeiting of or tampering with such access records.
+The encryption of personal information
+Your personal information is password protected; it is stored and managed by encrypting files and transmission data or by file locking, and important data is protected by an additional security feature."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P3">"Required Information
+Information about your device model, Universal Unique Identifier (UUID), IP address, device OS, time zone, MCC, MNC, configuration, the application package installed on your device, and your service usage records
+You may refuse permission for the collection and use of required information, but you will not be able to use our services, since this information is necessary for us to provide you with such services."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P30">"Protection against hacking
+The Company uses anti-virus programs to prevent damage by computer viruses. Anti-virus programs are updated regularly, and when a new virus suddenly appears, updates are provided as soon as they become available, in order to prevent the breach of personal information.
+The Company has adopted an SSL (Secure Sockets Layer) that enables the secure transfer of personal information over the network by using an encryption algorithm.
+Each server uses an Intrusion Prevention System, vulnerability assessment system, etc. for a full defensive preparation against external intrusion such as hacking.
+Personal information is kept separate through a separate server, and not mixed with general information."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P31">"Minimising the number of the people in charge and educating them
+The Company restricts access to users’ personal information to those who work directly with users to carry out marketing functions, those who carry out personal information management (such as personnel in charge of privacy protection, etc.), and others who cannot avoid handling personal information due to the nature of their work.
+The Company provides employees who handle personal information with regular in-house training and outsourced training on new security technologies, duty to protect personal information, etc."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P32">"The Company prevents the leakage of information by personnel via the security pledge that all employees must sign as a condition of their employment, and has proper internal procedures in place to inspect the implementation of the privacy policy and employee compliance.
+The transfer of duties and responsibilities of those that handle personal information takes place while thoroughly maintaining security, and responsibilities for privacy-related incidents, whether during or after the period of employment by the Company, are made clear.
+The computer room, data centre and data storage room are set up as special protection areas and access to them is controlled."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P33">"(2) Policy on providing links to websites
+The Company may provide users with links to the websites or resources of other companies, and users can use products and services developed by a third party through Samsung’s services. For example, a third-party application may be downloaded and used through Samsung Apps.
+In such cases, the Company has no control over the websites, resources, products, and services of the third party, so cannot be held responsible for or guarantee the usefulness of the products, services or resources provided. When you are redirected to a third party’s website by clicking a link on the Company’s website, the privacy policy of the redirected website is independent of the Company. Please review the privacy policy of the redirected website carefully."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P34">"(3) Post administration policy
+The Company values your posts and shall try its best to protect them so that they are not altered, tampered with, or deleted. However, the following cases are exceptions:
+Spam-like posts
+Posts that defame others by spreading false information in order to slander them
+Posts that disclose the personal information of another without consent
+Posts that infringe on the rights of the Company or a third party (such as intellectual property rights)
+Posts that are unrelated to the topic of the board"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P35">"In order to foster a desirable usage of boards, when the personal information of another is posted without consent, the Company can delete certain parts of the post or replace them with symbols, etc., and in cases where a post is moved to a board with a different subject matter, the transfer path will be specified in the post so that there are no misunderstandings.
+In other cases, the post may be deleted after an explicit or individual warning.
+Essentially, you have all the rights and responsibilities associated with your posts. In addition, information disclosed voluntarily through your posts cannot be protected, so please think carefully before disclosing information."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P36">"(4) Policy of refusing unauthorised collection of email addresses
+The Company refuses the unauthorised collection of posted email addresses by use of an email collection program or other technical measures. If you violate this policy, you may be subject to punishment pursuant to the “Act on Promotion of Information and Communications Network Utilisation and Information Protection, etc.” or related laws."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P37">"(5) Transmission of advertising information
+The Company does not transmit advertising information for commercial purposes against your express wish to not receive them."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P38">"If you have agreed to receive emails such as product information, newsletters, etc., the Company will treat the subject and body of such emails as follows, so that you can easily recognise them.
+The phrase “advertising material” does not have to be displayed on the subject line, and the main content of the body of the email will be displayed on the subject line.
+The body of the email will specify the name, email address, and phone number of the sender that you can unsubscribe from and how you can easily unsubscribe.
+When advertising information for commercial purposes is transmitted through media other than email, such as fax, SMS, etc., the Company will take necessary measures such as marking the beginning of the message with the phrase “advertising material” in accordance with applicable law."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P39">"10. Information About the Privacy Officer and Customer Services Department
+The Company has a designated Privacy Officer and related departments to protect your personal information and to process complaints related to privacy.
+(1) Customer Services Department
+Customer Services Department: Graphic R&amp;D Group, Mobile Communications Business, Samsung Electronics Co., Ltd.
+Phone: 1588-4730
+Contact us at: https://help.content.samsung.com
+(2) Privacy Officer and the department in charge of privacy-related work
+Privacy Officer: Privacy Secretariat
+Department in charge of related work: Global Privacy Office
+Phone: 1588-4730
+Contact us at: privacy.sec@samsung.com"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P4">"2. How We Use Information We Collect
+We use the information we collect for the following purposes:
+(1) To provide you with services pursuant to a contract
+To automatically place newly installed game applications in the Game Launcher
+To provide useful features such as “Save power during game”, “No alerts during game”, “Game Tools”, etc.
+To provide services optimised for the user (providing customised content and recommendations based on past service usage)
+(2) To improve services and to utilise in advertising, marketing, etc.
+Statistical analysis, prediction of market trends, improvement of services, and research/development of new services
+To deliver advertising information, including events or special offers, and provide services and advertisements according to the characteristics of the demographic"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P40">"(3) Other institutions
+You can report all privacy-related complaints arising from the usage of the Company’s services to the Privacy Officer or the department in charge. The Company will promptly provide you with an adequate response.
+If you wish to report or seek advice on other privacy infringement, please contact the following institutions:
+Privacy Infringement Complaint Centre (www.118.or.kr / 118)
+Supreme Prosecutor’s Office; Internet Crime Investigation Centre (www.spo.go.kr / 02-3480-3600)
+National Police Agency; Cyber Terrorism Response Centre (www.ctrc.go.kr / 02-392-0330)
+Privacy Policy Version Number: V1.0
+Privacy Policy Effective Date: 8th August, 2016"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P5">"3. Information Retention and Usage Period
+In principle, your personal information shall be destroyed without delay after the purpose for which the information was collected and used has been achieved.
+However, if the provisions of the relevant laws and regulations make it necessary for the Company to retain your personal information, the Company may retain your personal information in accordance with the applicable provisions as described below."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P6">"5 years for records related to the retraction of contracts or subscriptions (Act on the Consumer Protection in Electronic Commerce, Etc.)
+5 years for records of payments and the supply of goods (Act on the Consumer Protection in Electronic Commerce, Etc.)
+3 years for records of the handling of consumer complaints or disputes (Act on the Consumer Protection in Electronic Commerce, Etc.)
+3 years for records of the collection, handling and usage of credit information (Use and Protection of Credit Information Act)
+6 months for records of display/advertising (Act on the Consumer Protection in Electronic Commerce, Etc.)
+3 months for internet logs/location tracking data (Protection of Communications Secrets Act)
+6 months for other data used for verifying communication (Protection of Communications Secrets Act)"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P7">Privacy Policy (For Game Launcher)</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P8">"Samsung Electronics Co., Ltd. (hereinafter “the Company”) values your personal information and is committed to compliance with the “Act on Promotion of Information and Communications Network Utilisation and Information Protection, etc.” and the “Personal Information Protection Act”.
+Through this Privacy Policy, the Company informs you of for what purposes and in what manner it uses the personal information received from you and informs you of what measures are being taken to protect your privacy."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P9">"0. General Provisions
+“Personal information” means information about a living individual that can be used to identify the individual concerned through data such as last name, first name, resident registration number, or social security number. It can include information that can be easily combined with other information to identify a specific individual, although it cannot be used by itself to identify that individual.
+The Company provides you with easy access to this Privacy Policy at all times by disclosing the Privacy Policy under Game Launcher’s Settings > About Game Launcher screen."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P1_LEGALHPRASE">"Game Launcher - Напомена за приватност
+Напомената за приватност е важна бидејќи опишува како ќе се собираат, користат и споделуваат вашите информации за да ви се обезбеди Game Launcher („Услугата“). Samsung Electronics Co., Ltd. („Samsung“, „ние“, „нас“, „наши“) ќе биде одговорен за таквите информации и за нивното собирање, користење и споделување во согласност со оваа Напомена за приватност. Со користење на Услугата, ќе се смета дека безусловно сте се согласиле со условите на Напомената за приватност.
+Напомената за приватност ја дополнува Полисата за приватност на Samsung (достапна на https://account.samsung.com/membership/pp), а во случај на недоследност или конфликт меѓу условите на Напомената за приватност и Полисата за приватност на Samsung, ќе преовладаат условите на оваа Полиса за приватност.
+Понатамошни информации за начинот на кој може да нè контактирате со какви било прашања во врска со Напомената за приватност или нашите практики се прикажани подолу.
+"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P2_LEGALHPRASE">"Каков вид информации собираме и користиме?
+Може да собираме информации за насловите на апликациите што сте ги инсталирале и која игра ја играте. Може да ги користиме информациите за следниве намени:
+за да ги обезбедиме функциите на Услугата;
+за да обезбедиме персонализирани препораки за мобилни игри врз основа на ваши минати активности на Услугата;
+за проценка и анализа на нашиот пазар, клиенти, производи и услуги;
+за да го разбереме начинот на кој луѓето ја користат Услугата, така што ќе можеме да ја подобриме истата и да развиеме нови услуги."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P3_LEGALHPRASE">"Кому ги откриваме вашите информации?
+Ние нема да ги откриеме вашите информации на трети страни за нивни деловни цели без ваша согласност. Сепак, може да ги откриеме вашите информации на трети страни, вклучени во процесот на обезбедување услуги во име на Samsung.
+Со кого треба да контактирате доколку имате какви било прашања?
+Доколку имате какви било прашања за Game Launcher, контактирајте нè преку нашите канали за поддршка на корисници. Доколку имате какви било конкретни прашања во врска со вашите информации, контактирајте нè на:
+http://help.content.samsung.com
+"</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_CHINA">1. Grant of Licence</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_OPEN">1. Давање лиценца</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_US">1. Grant of Licence</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_CHINA">Subject to these TOS, Samsung grants you a limited, non-exclusive, and revocable license to install, access and use the SERVICE. The services and features provided by the SERVICE or any Update (defined below) thereto may vary or be limited depending on certain factors, including without limitation, your country or region, device, operating system, or network operator.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_OPEN">Со тоа што подлежи на овие УЗК, Samsung Ви дава, а Вие прифаќате ограничена, неексклузивна и отповиклива лиценца за инсталирање, пристап и користење на УСЛУГАТА. Услугите и функциите обезбедени од УСЛУГАТА или кое било ажурирање (дефинирани подолу) може да се разликуваат или да бидат ограничени во зависност од одредени фактори, вклучувајќи ги без ограничување Вашата земја или регион, уредот, оперативниот систем или мрежниот оператор.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_US">Subject to these TOS, Samsung grants you a limited, non-exclusive, and revocable license to install, access and use the SERVICE. The services and features provided by the SERVICE or any Update (defined below) thereto may vary or be limited depending on certain factors, including without limitation, your country or region, device, operating system, or network operator.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_CHINA">2. Reservation of Rights and Ownership</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_OPEN">2. Задржување на правата и сопственоста</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_US">2. Reservation of Rights and Ownership</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_CHINA">Samsung reserves all rights in and to the SERVICE not expressly granted to you in these TOS. The SERVICE is protected by copyright and other intellectual property laws and treaties. Samsung or its licensors own the title, copyright and other intellectual property rights in the SERVICE. For the avoidance of doubt, the SERVICE is licensed, not sold. You may not transfer these TOS or any of the rights or obligations to the SERVICE granted or imposed herein to any third-party unless otherwise approved by Samsung.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_OPEN">Samsung ги задржува сите права на и за УСЛУГАТА што не Ви се изрично дадени во овие УЗК. УСЛУГАТА е заштитена со авторски права и други закони и договори за интелектуална сопственост. Samsung или неговите даватели на лиценци ги поседуваат насловот, авторските права и/или другите права на интелектуална сопственост во УСЛУГАТА. За избегнување на сомнеж, УСЛУГАТА е лиценцирана, а не продадена. Вие не може да ги пренесете овие УЗК или кое било од правата или обврските на УСЛУГАТА одобрени или наметнати со овој документ на која било трета страна, освен ако поинаку не е одобрено од Samsung.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_US">Samsung reserves all rights in and to the SERVICE not expressly granted to you in these TOS. The SERVICE is protected by copyright and other intellectual property laws and treaties. Samsung or its licensors own the title, copyright and other intellectual property rights in the SERVICE. For the avoidance of doubt, the SERVICE is licensed, not sold. You may not transfer these TOS or any of the rights or obligations to the SERVICE granted or imposed herein to any third-party unless otherwise approved by Samsung.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_CHINA">3. Restrictions</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_OPEN">3. Ограничувања</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_US">3. Restrictions</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_CHINA">You may not (i) reverse engineer, decompile, disassemble, or otherwise attempt to discover the source code or algorithms of the SERVICE; (ii) modify or disable any features of the SERVICE; (iii) create derivative works based on the SERVICE; and (iv) publicly display, publicly perform, transfer, sell, license, distribute, rent, lease, lend, sublicense, or provide commercial hosting services with the SERVICE.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_OPEN">Не смеете да (i) правите обратен инженеринг, декомпилирате, расклопувате или на друг начин да се обидувате да го откриете изворниот код или алгоритмите на УСЛУГАТА; (ii) менувате или оневозможувате кои било функции на УСЛУГАТА; (iii) создавате изведени дела засновани на УСЛУГАТА; и (iv) изнајмувате, давате на лизинг, позајмувате, подлиценцирате или да обезбедувате комерцијални услуги на хостинг со УСЛУГАТА.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_US">You may not (i) reverse engineer, decompile, disassemble, or otherwise attempt to discover the source code or algorithms of the SERVICE; (ii) modify or disable any features of the SERVICE; (iii) create derivative works based on the SERVICE; and (iv) publicly display, publicly perform, transfer, sell, license, distribute, rent, lease, lend, sublicense, or provide commercial hosting services with the SERVICE; (v) infringe our intellectual property rights or those of any third-party in relation to your use of the SERVICE (to the extent that such use is not licensed by this Agreement);</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_CHINA">4. Updates, Changes to or Suspension of the SERVICE</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_OPEN">4. Ажурирања, промени на или прекин на УСЛУГАТА</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_US">(vi) ја користите УСЛУГАТА на каков било незаконски начин, за каква било незаконска цел или на каков било начин што не е конзистентен со овие Услови или да дејствувате измамнички или злонамерно, на пример со хакирање или внесување злонамерен код, вклучувајќи вируси или штетни податоци во УСЛУГАТА или во кој било оперативен систем; (vii) ја користите УСЛУГАТА на начин што би можел да ги оштети, оневозможи, преоптовари, наруши или компромитира нашите системи или безбедноста или, пак, да ги попречува другите корисници; и (viii) собирате или прибирате какви било информации или податоци од УСЛУГАТА или нашите системи или да се обидете да дешифрирате какви било преноси на или од серверите каде што се извршува УСЛУГАТА.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_CHINA">Samsung may, at any time, provide or make available updates or upgrades to the SERVICE (“Updates”), including without limitation, bug fixes, service enhancements, new features, the deletion of existing functions, or modification of the SERVICE. Updates will be governed by these TOS unless separate terms and conditions are provided with such Updates, in which case those separate terms and conditions shall govern the Updates. Updates for security software or critical bug fixes or other important Updates may be automatically downloaded and installed given the importance of receiving such Updates in a timely manner to the extent permitted by applicable law.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_OPEN">Samsung може, во секое време, да обезбеди или да овозможи ажурирања или надградби на УСЛУГАТА („Ажурирања“), вклучувајќи без ограничување, поправки на грешки, подобрувања на услугите, нови функции, бришење на постоечките функции или модифицирање на УСЛУГАТА. Ажурирањата ќе бидат регулирани од овие УЗК, освен ако со таквите Ажурирања не се обезбедени одделни одредби и услови, во кој случај тие одделни одредби и услови ќе управуваат со Ажурирањата. Ажурирањата за безбедносниот софтвер или критичните поправки на грешки или другите важни Ажурирања може да се преземаат и инсталираат автоматски поради важноста за навремено примање на таквите Ажурирања.Samsung изречно го задржува правото да ја измени, прекине, отстрани, ограничи употребата на или да го оневозможи пристапот до УСЛУГАТА или кој било нејзин дел во секое време без известување или одговорност.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_US">4. Updates, Changes to or Suspension of the SERVICE</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_CHINA">5. Third-Party Services and Content</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_OPEN">5. Услуги и содржина од трети страни</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_US">Samsung may, at any time, provide or make available updates or upgrades to the SERVICE (“Updates”), including without limitation, bug fixes, service enhancements, new features, the deletion of existing functions, or modification of the SERVICE. Updates will be governed by these TOS unless separate terms and conditions are provided with such Updates, in which case those separate terms and conditions shall govern the Updates. Updates for security software or critical bug fixes or other important Updates may be automatically downloaded and installed given the importance of receiving such Updates in a timely manner. Samsung expressly reserves the right to change, suspend, remove, limit the use of, or disable the access to the SERVICE or any portion thereof at any time without notice or liability.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_CHINA">Third-party services and/or content may also be available to you through the SERVICE. Samsung disclaims any warranty or representation to any third-party services or content in any aspects including, but not limited to, quality, accuracy, effectiveness, lack of viruses, non-infringement of third-party rights, and compliance of any applicable laws or regulations. The use of third-party services and content may be governed by the terms of use of the third-party providers, or any licence agreements, privacy policies, or other such agreements. Certain portions of the SERVICE may be subject to open source licences, in which the terms of such open source licences may precede the terms of these TOS with respect to that portion of the SERVICE.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_OPEN">Услугите и/или содржината од трети страни може исто така да Ви се достапни преку УСЛУГАТА. Samsung се оградува од каква било гаранција или репрезентација на какви било услуги или содржина од трети страни во каков било поглед вклучувајќи, но не ограничувајќи се на квалитетот, точноста, ефикасноста, недостатокот на вируси, непочитувањето на правата на третата страна и усогласеноста со сите применливи закони и регулативи. Користењето на услуги и содржина од трети страни може да се регулира со таквите услови за користење на давателот на услуги од третата страна или какви било други договори за лиценца, полиси за приватност или такви договори. Одредени делови од УСЛУГАТА може да се предмет на лиценци за отворен код, во кои условите на ваквите лиценци за отворен код може да имаат предност пред условите на овие УЗК во однос на тој дел од УСЛУГАТА.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_US">5. Right to Monitor, Third-Party Services, and Content</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_CHINA">TERMS OF SERVICE</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_OPEN">УСЛОВИ ЗА КОРИСТЕЊЕ</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_US">TERMS OF SERVICE</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_CHINA">6. Consent to Collection and Use of Data</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_OPEN">6. Согласност за прибирање и користење податоци</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_US">5.1 Right to Monitor. Samsung may, but has no obligation to, monitor your use of the SERVICE, your accounts, content, and communications that Samsung determines in its sole discretion would violate these TOS. Samsung reserves the right to gather data on SERVICE usage including licence key numbers and other information deemed relevant to ensure that the SERVICE is being used in accordance with these TOS.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_CHINA">You acknowledge and agree that Samsung and/or parties that are entrusted by Samsung may collect and use information necessary to provide the SERVICE and Updates and improve or enhance the SERVICE. At all times your information will be treated in accordance with Samsung’s Privacy Policy, which can be viewed at: https://account.samsung.com/membership/pp.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_OPEN">Прифаќате и се согласувате дека Samsung и/или страните доверени од страна на Samsung може да собираат и користат информации што се неопходни за да се обезбедат УСЛУГАТА и Ажурирањата и да се подобри или прошири УСЛУГАТА. Во секое време Вашите податоци ќе бидат третирани во согласност со Полисата за приватност на Samsung, која може да се погледне на: https://account.samsung.com/membership/pp.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_US">Any unauthorised use shall be considered by Samsung to be a violation of these TOS. You agree not to block, electronically or otherwise, the transmission of data required for compliance with these TOS. Any blocking of data required for compliance under these TOS is considered to be a violation of these TOS and may result in immediate termination of your right to use the SERVICE. Samsung reserves the right, but has no obligation, to monitor or become involved in disputes between you and other users.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_CHINA">7. Data Access</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_OPEN">7. Пристап до податоци</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_US">5.2 Third-Party Services and Content. Third-party services and/or content may also be available to you through the SERVICE. Samsung disclaims any warranty or representation to any third-party services or content in any aspects including, but not limited to, quality, accuracy, effectiveness, lack of viruses, non-infringement of third-party rights, and compliance of any applicable laws or regulations. The use of third-party services and content may be governed by the terms of use of the third-party providers, or any licence agreements, privacy policies, or other such agreements. Certain portions of the SERVICE may be subject to open source licences, in which the terms of such open source licences may precede the terms of these TOS with respect to that portion of the SERVICE.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_CHINA">Some features of the SERVICE may require your mobile device to have access to the Internet and may be subject to restrictions imposed by your network or Internet provider. The SERVICE requires access to the Internet by using mobile network, which may result in additional charges depending on your payment plan. In addition, your enjoyment of some features of the SERVICE may be affected by the suitability and performance of your device hardware or data access.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_OPEN">За некои карактеристики на УСЛУГАТА може да е потребно Вашиот мобилен уред да има пристап до интернет и може да биде предмет на ограничувања наметнати од страна на Вашата мрежа или давателот на интернет. УСЛУГАТА бара пристап до интернет користејќи ја мобилната мрежа, што може да доведе до дополнителни трошоци, зависно од Вашиот претплатнички договор. Покрај тоа, Вашето уживање на некои функции на УСЛУГАТА може да зависи од соодветноста и ефикасноста на хардверот на Вашиот уред или пристапот до податоци.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_US">6. Consent to Collection and Use of Data</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_CHINA">8. Compliance with Law</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_OPEN">8. Усогласеност со правото</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_US">You acknowledge and agree that Samsung and/or parties that are entrusted by Samsung may collect and use information necessary to provide the SERVICE and Updates and improve or enhance the SERVICE. At all times your information will be treated in accordance with Samsung’s Privacy Policy, which can be viewed at: https://account.samsung.com/membership/pp.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_CHINA">You acknowledge and agree to comply with any and all applicable laws and regulations in using the SERVICE, including without limitation, all applicable export restriction laws and regulations.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_OPEN">Прифаќате и се согласувате дека ќе ги почитувате кои било и сите важечки закони и регулативи при користењето на УСЛУГАТА, вклучувајќи ги без ограничување, сите важечки закони и прописи за ограничување на извозот.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_US">7. Data Access</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_CHINA">9. Termination</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_OPEN">9. Прекин</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_US">Some features of the SERVICE may require your mobile device to have access to the Internet and may be subject to restrictions imposed by your network or Internet provider. The SERVICE requires access to the Internet by using mobile network, which may result in additional charges depending on your payment plan. In addition, your enjoyment of some features of the SERVICE may be affected by the suitability and performance of your device hardware or data access. You are solely responsible for any charges incurred from your network provider related to the use of the SERVICE.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_CHINA">These TOS are effective until terminated. You may terminate these TOS by ceasing your use of the SERVICE, and uninstalling, deleting, and returning all related software, documentation, and other materials provided by Samsung, including backup copies thereof. Should you not comply with these TOS, your rights based on these TOS will be automatically terminated without notice from Samsung. Upon termination of these TOS, you must immediately cease all use of the SERVICE. For the purpose of clarity, Samsung may terminate these TOS and the SERVICE with thirty (30) days prior notice to you (via service website, pop-up through application, email, or other).</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_OPEN">Овие УЗК се важечки додека не бидат прекинати. Можете да ги прекинете овие УЗК кога ќе завршите со користење на УСЛУГАТА и ќе ги деинсталирате, избришете и вратите сите поврзани софтвери, документација и други материјали обезбедени од Samsung, вклучувајќи ги и резервните копии. Ако не се усогласите со овие УЗК, Вашите права врз основа на овие УЗК ќе бидат автоматски раскинати без претходна најава од Samsung. По раскинувањето на овие УЗК, ќе мора веднаш да престанете да ја користите УСЛУГАТА. За да биде јасно, Samsung може да ги прекине овие УЗК и УСЛУГАТА со претходна најава до Вас од триесет (30) дена (преку веб страница, скокачки прозорец на апликација, е-порака или друго).</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_US">8. Compliance with Law</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_CHINA">10. Disclaimer of Warranty</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_OPEN">10. Порекнување на гаранцијата</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_US">You acknowledge and agree to comply with any and all applicable laws and regulations in using the SERVICE, including without limitation, all applicable export restriction laws and regulations.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_CHINA">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SERVICE IS PROVIDED “AS IS” AND ON AN “AS AVAILABLE” BASIS, WITHOUT WARRANTIES OF ANY KIND FROM SAMSUNG, EITHER EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, SAMSUNG DISCLAIMS ALL WARRANTIES EXPRESSED, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY OR WORKMANLIKE EFFORT, FITNESS FOR A PARTICULAR PURPOSE, RELIABILITY OR AVAILABILITY, ACCURACY, LACK OF VIRUSES, QUIET ENJOYMENT, NON-INFRINGEMENT OF THIRD-PARTY RIGHTS, OR OTHER VIOLATIONS OF RIGHTS. SOME JURISDICTIONS DO NOT ALLOW EXCLUSIONS OR LIMITATIONS OF IMPLIED WARRANTIES, SO THE ABOVE EXCLUSIONS OR LIMITATIONS MAY NOT APPLY TO YOU. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM SAMSUNG OR ITS AFFILIATES SHALL BE DEEMED TO ALTER THIS DISCLAIMER BY SAMSUNG OF WARRANTY REGARDING THE SERVICE, OR TO CREATE ANY WARRANTY OF ANY SORT FROM SAMSUNG.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_OPEN">ДО МАКСИМАЛНИОТ СТЕПЕН ДОЗВОЛЕН СО ВАЖЕЧКИОТ ЗАКОН, УСЛУГАТА Е ДАДЕНА „КАКО ШТО Е“ И НА ОСНОВА „КАКО ШТО Е ДОСТАПНА“, БЕЗ ГАРАНЦИИ ИЛИ ДОГОВОРНИ УСЛОВИ ОД КАКОВ БИЛО ВИД ОД SAMSUNG, БЕЗ РАЗЛИКА ДАЛИ СЕ ИЗРЕЧНИ ИЛИ ИМПЛИЦИРАНИ. ДО МАКСИМАЛНИОТ СТЕПЕН ДОЗВОЛЕН СО ПРИМЕНЛИВИОТ ЗАКОН, SAMSUNG ГИ ОДРЕКУВА СИТЕ ГАРАНЦИИ НЕЗАВИСНО ДАЛИ СЕ ИЗРЕЧНИ, ИМПЛИЦИТНИ ИЛИ ВРЗ ОСНОВА НА ЗАКОН, ВКЛУЧУВАЈЌИ И, НО НЕ ОГРАНИЧУВАЈЌИ СЕ НА, ИМПЛИЦИТНИ ГАРАНЦИИ ЗА ПРИГОДНОСТ ЗА ТРГУВАЊЕ, ЗАДОВОЛИТЕЛНИОТ КВАЛИТЕТ ИЛИ НАЧИНОТ НА ИЗРАБОТКА, СООДВЕТНОСТА ЗА ОДРЕДЕНА НАМЕНА, СИГУРНОСТА ИЛИ ДОСТАПНОСТА, ТОЧНОСТА, ОТСУСТВОТО НА ВИРУСИ, НЕПРЕЧЕНО КОРИСТЕЊЕ, НЕПРЕКРШУВАЊЕ НА ПРАВАТА НА ТРЕТИ СТРАНИ ИЛИ ДРУГИ ПРЕКРШУВАЊА НА ПРАВА.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_US">9. Termination</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_CHINA">IMPORTANT – READ CAREFULLY. THESE TERMS OF SERVICE (“TOS”) ARE A LEGAL AGREEMENT BETWEEN YOU AND SAMSUNG ELECTRONICS CO., LTD. AND/OR ITS AFFILIATES (COLLECTIVELY, “SAMSUNG”) FOR THE GAME LAUNCHER AND ANY RELEVANT SOFTWARE OR DOCUMENTATION THEREOF (COLLECTIVELY, “SERVICE”). BY AGREEING TO THESE TOS OR BY INSTALLING OR OTHERWISE USING THE SERVICE, YOU AGREE TO BE BOUND BY THESE TOS. IF YOU DO NOT AGREE TO THESE TOS, THEN DO NOT INSTALL OR USE THE SERVICE.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_OPEN">ВАЖНО – ЧИТАЈТЕ ВНИМАТЕЛНО. ОВИЕ УСЛОВИ ЗА КОРИСТЕЊЕ („УЗК“) ПРЕТСТАВУВААТ ПРАВЕН ДОГОВОР ПОМЕЃУ ВАС И SAMSUNG ELECTRONICS CO., LTD. И/ИЛИ НЕГОВИТЕ СОРАБОТНИЦИ (ЗАЕДНО, „SAMSUNG“) ЗА GAME LAUNCHER И ЗА КОЈ БИЛО СООДВЕТЕН СОФТВЕР ИЛИ ДОКУМЕНТАЦИЈА НА ИСТАТА (ЗАЕДНО, „УСЛУГАТА“). СОГЛАСУВАЈЌИ СЕ СО ОВИЕ УЗК ИЛИ ИНСТАЛИРАЈЌИ ЈА ИЛИ НА ДРУГ НАЧИН КОРИСТЕЈЌИ ЈА УСЛУГАТА, СЕ СОГЛАСУВАТЕ ДА СЕ ПРИДРЖУВАТЕ ДО ОВИЕ УЗК. ДОКОЛКУ НЕ СЕ СОГЛАСУВАТЕ СО ОВИЕ УЗК, ТОГАШ НЕМОЈТЕ ДА ЈА ИНСТАЛИРАТЕ ИЛИ КОРИСТИТЕ УСЛУГАТА.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_US">IMPORTANT – READ CAREFULLY. THESE TERMS OF SERVICE (“TOS”) ARE A LEGAL AGREEMENT BETWEEN YOU AND SAMSUNG ELECTRONICS CO., LTD. AND/OR ITS AFFILIATES (COLLECTIVELY, “SAMSUNG”) FOR THE GAME LAUNCHER AND ANY RELEVANT SOFTWARE OR DOCUMENTATION THEREOF (COLLECTIVELY, “SERVICE”). BY AGREEING TO THESE TOS OR BY INSTALLING OR OTHERWISE USING THE SERVICE, YOU AGREE TO BE BOUND BY THESE TOS. IF YOU DO NOT AGREE TO THESE TOS, THEN DO NOT INSTALL OR USE THE SERVICE.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_CHINA">11. Limitation of Liability</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_OPEN">НЕКОИ ЈУРИСДИКЦИИ НЕ ДОЗВОЛУВААТ ИСКЛУЧУВАЊЕ ИЛИ ОГРАНИЧУВАЊЕ НА ИМПЛИЦИТНИТЕ ГАРАНЦИИ, ТАКА ШТО ГОРЕНАВЕДЕНИТЕ ИСКЛУЧУВАЊА ИЛИ ОГРАНИЧУВАЊА МОЖЕ ДА НЕ ВАЖАТ ЗА ВАС. НИКАКВИ СОВЕТИ ИЛИ ИНФОРМАЦИИ, БИЛО ДА СЕ КАЖАНИ ИЛИ ПИШАНИ, ШТО СТЕ ГИ ДОБИЛЕ ОД SAMSUNG ИЛИ НЕГОВИТЕ ПОДРУЖНИЦИ НЕ МОЖАТ ДА СЕ СМЕТААТ ДЕКА ГО МЕНУВААТ ОВА ОГРАДУВАЊЕ ОД ГАРАНЦИЈА ОД СТРАНА НА SAMSUNG ЗА УСЛУГАТА ОД SAMSUNG, НИТУ ДЕКА ПРЕТСТАВУВААТ КАКВА БИЛО ГАРАНЦИЈА ОД КАКОВ БИЛО ВИД ОД СТРАНА НА SAMSUNG.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_US">9.1 Effective Date. These TOS are effective upon your acceptance of these TOS, or upon your downloading, accessing, or otherwise using the SERVICE. The SERVICE has no predetermined termination date and may continue until such time as Samsung decides to terminate the SERVICE or when these TOS are terminated consistent with the terms herein.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_CHINA">EXCEPT FOR HAVING DELIBERATE INTENT OR GROSS NEGLIGENCE, SAMSUNG WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING OUT OF OR RELATING TO THE USE OR THE INABILITY TO USE THE SERVICE, ITS CONTENT OR FUNCTIONALITY, INCLUDING BUT NOT LIMITED TO DAMAGES CAUSED BY OR RELATED TO ERRORS, OMISSIONS, INTERRUPTIONS, DEFECTS, DELAY IN OPERATION OR TRANSMISSION, COMPUTER VIRUS, FAILURE TO CONNECT, NETWORK CHARGES, AND ALL OTHER DIRECT DAMAGES EVEN IF SAMSUNG HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_OPEN">11. Ограничување на одговорноста</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_US">9.2 Termination. If you fail, or Samsung reasonably suspects that you have failed to comply with any of the provisions of these TOS, without limiting Samsung’s other rights and remedies, all of which are expressly reserved at its sole discretion and without notice to you, Samsung may immediately discontinue your access to the SERVICE and terminate these TOS, and you will remain liable for all amounts due (if any) up to and including the date of termination. You may also terminate these TOS by ceasing your use of the SERVICE, and uninstalling, deleting, and returning all related software, documentation, and other materials provided by Samsung, including backup copies thereof. Upon termination of these TOS, you must immediately cease all use of the SERVICE.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_CHINA">SAMSUNG WILL NOT BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE EXCLUSIONS OR LIMITATIONS MAY NOT APPLY TO YOU. NOTWITHSTANDING THE FOREGOING, SAMSUNG’S TOTAL LIABILITY TO YOU FOR ALL LOSSES, DAMAGES, AND CAUSES OF ACTION, INCLUDING BUT NOT LIMITED TO THOSE BASED ON CONTRACT, TORT, OR OTHERWISE, ARISING OUT OF YOUR USE OF THE SERVICE, OR ANY OTHER PROVISION OF THESE TOS, SHALL NOT EXCEED THE AMOUNT YOU PAID SAMSUNG SPECIFICALLY FOR THIS SERVICE. THE FOREGOING LIMITATIONS, EXCLUSIONS, AND DISCLAIMERS IN THESE TOS SHALL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EVEN IF ANY REMEDY FAILS ITS ESSENTIAL PURPOSE.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_OPEN">SAMSUNG НЕМА ДА БИДЕ ОДГОВОРЕН ЗА НИЕДНА ШТЕТА ОД КАКОВ БИЛО ВИД ШТО ПРОИЗЛЕГУВА ОД ИЛИ Е ПОВРЗАНА СО КОРИСТЕЊЕТО ИЛИ НЕМОЖНОСТА ДА СЕ КОРИСТИ УСЛУГАТА, НЕГОВИТЕ СОДРЖИНИ ИЛИ ФУНКЦИИ, ВКЛУЧУВАЈЌИ, НО НЕ ОГРАНИЧУВАЈЌИ СЕ НА, ШТЕТИ ПРЕДИЗВИКАНИ ОД ИЛИ ПОВРЗАНИ СО ГРЕШКИ, ПРОПУСТИ, ПРЕКИНИ, ДЕФЕКТИ, ДОЦНЕЊЕ ВО ФУНКЦИОНИРАЊЕТО ИЛИ ПРЕНОСОТ, КОМПЈУТЕРСКИ ВИРУСИ, НЕМОЖНОСТА ЗА ПОВРЗУВАЊЕ, МРЕЖНИ ТРОШОЦИ И СИТЕ ДРУГИ ДИРЕКТНИ, ИНДИРЕКТНИ, СПЕЦИЈАЛНИ, СЛУЧАЈНИ, ПРЕДУПРЕДУВАЧКИ ИЛИ ПОСЛЕДИЧНИ ШТЕТИ, ДУРИ И АКО SAMSUNG БИЛ СВЕСЕН ЗА МОЖНОСТА ОД ТАКВИ ШТЕТИ. НЕКОИ ЈУРИСДИКЦИИ НЕ ДОЗВОЛУВААТ ИСКЛУЧУВАЊЕ ИЛИ ОГРАНИЧУВАЊЕ НА СЛУЧАЈНИ ИЛИ ПОСЛЕДИЧНИ ШТЕТИ, ТАКА ШТО ГОРЕНАВЕДЕНИТЕ ИСКЛУЧУВАЊА ИЛИ ОГРАНИЧУВАЊА МОЖЕ ДА НЕ ВАЖАТ ЗА ВАС.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_US">10. Disclaimer of Warranty</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_CHINA">12. Applicable Law</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_OPEN">БЕЗ ОГЛЕД НА ГОРЕНАВЕДЕНОТО, ВКУПНАТА ОДГОВОРНОСТ НА SAMSUNG КОН ВАС ЗА СИТЕ ЗАГУБИ, ШТЕТИ И ПРИЧИНИ ЗА ДЕЈСТВО, ВКЛУЧУВАЈЌИ НО НЕ ОГРАНИЧУВАЈЌИ СЕ НА ОНА ШТО Е ЗАСНОВАНО НА ДОГОВОРОТ, ПРЕКРШОКОТ ИЛИ ПОИНАКУ, ШТО ПРОИЗЛЕГУВААТ ОД ВАШЕТО КОРИСТЕЊЕ НА УСЛУГАТА ИЛИ КОЈА БИЛО ДРУГА ОДРЕДБА ОД ОВИЕ УЗК, НЕМА ДА ГО НАДМИНЕ ИЗНОСОТ ШТО СТЕ ГО ПЛАТИЛЕ НА SAMSUNG КОНКРЕТНО ЗА ОВАА УСЛУГА. ГОРЕНАВЕДЕНИТЕ ОГРАНИЧУВАЊА, ИСКЛУЧОЦИТЕ И ОГРАДУВАЊА ВО ОВИЕ УЗК ЌЕ СЕ ПРИМЕНУВААТ ДО МАКСИМАЛНИОТ СТЕПЕН ДОЗВОЛЕН СО ВАЖЕЧКИОТ ЗАКОН, ДУРИ И АКО НЕКОЕ ПРАВНО СРЕДСТВО НЕ ЈА ИСПОЛНИ НЕГОВАТА ОСНОВНА ЦЕЛ.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_US">THE SERVICE IS PROVIDED “AS IS”, “WHERE IS”, AND “AS AVAILABLE” AND WITHOUT WARRANTIES OF ANY KIND. SAMSUNG AND ITS LICENSORS MAKE NO REPRESENTATIONS OR WARRANTIES OR GUARANTEES OF ANY KIND OR NATURE, WHETHER EXPRESS OR IMPLIED, REGARDING THE SERVICE, AND SPECIFICALLY DISCLAIM ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_CHINA">These TOS are governed by the laws of the jurisdiction where you are a resident, without regard to their conflict of law provisions. These TOS shall not be governed by the UN Convention on Contracts for the International Sale of Goods, the application of which is expressly excluded.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_OPEN">12. Важечки закон</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_US">WITHOUT LIMITING THE PREVIOUS DISCLAIMER, SAMSUNG AND ITS LICENSORS DO NOT REPRESENT, WARRANT, OR GUARANTEE THAT THE SERVICE OR THE CONTENT THEREIN WILL (i) OPERATE IN AN UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE MANNER, (ii) WILL ALWAYS BE AVAILABLE OR FREE FROM ALL HARMFUL COMPONENTS OR ERRORS (iii) WILL BE SECURE OR IMMUNE (INCLUDING THE CONTENT DELIVERED TO YOU OR THE INFORMATION YOU PROVIDED) FROM UNAUTHORISED ACCESS OR (iv) WILL BE ACCURATE, COMPLETE, OR RELIABLE, THAT THE QUALIFY OF THE SERVICE WILL BE SATISFACTORY TO YOU, OR THAT ERRORS WILL BE CORRECTED.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_CHINA">13. Dispute Resolution</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_OPEN">Овие УЗК се регулирани со законите на правните системи каде што живеете, без оглед на нивниот конфликт со законските одредби. Овие УЗК не се регулирани со Конвенцијата на ОН за договори за меѓународна продажба на добра, чија примена е изречно исклучена.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_US">NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM SAMSUNG OR ITS AFFILIATES SHALL BE DEEMED TO ALTER THIS DISCLAIMER BY SAMSUNG OF WARRANTY REGARDING THE SERVICE, OR TO CREATE ANY WARRANTY OF ANY SORT FROM SAMSUNG.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_CHINA">If a dispute, controversy, or difference arising in any way from these TOS or your use of the SERVICE is not amicably settled, it shall be subject to the non-exclusive jurisdiction of the courts of the jurisdiction where you are a resident. Notwithstanding the foregoing, Samsung may apply for injunctive remedies (or an equivalent type of urgent legal relief) in any court of competent jurisdiction.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_OPEN">13. Решавање спорови</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_US">11. Limitation of Liability</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_CHINA">14. Entire Agreement</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_OPEN">Доколку за спор, недоразбирање или разлика настанати на каков било начин поради овие УЗК или Вашето користење на УСЛУГАТА не се постигне спогодба на пријателски начин, тие ќе подлежат на неисклучива надлежност на судовите на државата во која живеете. Без оглед на горенаведеното, Samsung може да побара судска забрана (или еквивалентен вид на итна правна заштита) во кој било суд од надлежната јурисдикција.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_US">TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT SHALL SAMSUNG OR ITS LICENSORS BE LIABLE TO YOU FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, PUNITIVE DAMAGES, OR LOST PROFITS, EVEN IF SAMSUNG HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION WILL APPLY REGARDLESS OF THE THEORY OF LIABILITY, WHETHER FRAUD, MISREPRESENTATION, BREACH OF CONTRACT, NEGLIGENCE, PERSONAL INJURY, PRODUCT LIABILITY, INFRINGEMENT, OR ANY OTHER THEORY REGARDLESS OF WHETHER OR NOT SAMSUNG HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_CHINA">These TOS are the entire agreement between you and Samsung relating to the SERVICE and supersede all prior or contemporaneous oral or written communications, proposals and representations with respect to the SERVICE or any other subject matter covered by these TOS. If any provision of these TOS is held to be void, invalid, unenforceable, or illegal, the other provisions shall continue in full force and effect.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_OPEN">14. Целосен договор</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_US">THIS MEANS THAT YOU HEREBY WAIVE ANY AND ALL RIGHTS TO ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, PUNITIVE DAMAGES OR LOST PROFITS FROM SAMSUNG AND ITS LICENSORS. THIS LIMITATION AND WAIVER ALSO APPLIES TO ANY CLAIMS YOU MAY BRING AGAINST ANY OTHER PARTY TO THE EXTENT THAT SAMSUNG WOULD BE REQUIRED TO INDEMNIFY THAT PARTY FOR SUCH CLAIMS. WE SHALL NOT BE LIABLE FOR ANY LOSS OF DATA, BREACH OF SECURITY ASSOCIATED WITH THE SERVICE, OR FOR ANY CONTENT, VIDEO, OR COMMUNICATIONS ON THE SERVICE, OR OTHERWISE ARISING OUT OF THE USE OF THE SAME, REGARDLESS OF THE FORM OF ACTION OR BASIS OF ANY CLAIM.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART39_LEGALPHASE_OPEN">Овие УЗК претставуваат целосен договор помеѓу Вас и Samsung што се однесува на УСЛУГАТА и ги заменуваат сите претходни или постоечки усни или пишани комуникации, предлози и изјави поврзани со УСЛУГАТА или кој било друг предмет на овие УЗК. Доколку се утврди дека некоја одредба од овие УЗК е ништовна, неважечка, неизвршлива или незаконска, останатите одредби ќе останат на сила и ќе продолжат да важат.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART39_LEGALPHASE_US">SHOULD YOU CHOOSE TO COMMUNICATE OR MEET DIRECTLY WITH OTHER USERS OF THE SERVICE, WE ARE NOT RESPONSIBLE FOR THOSE COMMUNICATIONS OR ANY MEETINGS THAT MAY TAKE PLACE BETWEEN YOU AND OTHER USERS. IF YOU HAVE A DISPUTE WITH US OR ARE DISSATISFIED WITH THE SERVICE, TERMINATION OF YOUR USE OF THE SERVICE IS YOUR SOLE REMEDY. WE HAVE NO OTHER OBLIGATION, LIABILITY, OR RESPONSIBILITY TO YOU.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_CHINA">REGARDING THE SERVICE, PLEASE READ THE FOLLOWING NOTICES AND DISCLAIMERS CAREFULLY:</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_OPEN">ВО ВРСКА СО УСЛУГАТА, ВНИМАТЕЛНО ПРОЧИТАЈТЕ ГИ СЛЕДНИВЕ ИЗВЕСТУВАЊА И ОГРАДУВАЊА ОД ОДГОВОРНОСТ:</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_US">REGARDING THE SERVICE, PLEASE READ THE FOLLOWING NOTICES AND DISCLAIMERS CAREFULLY:</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART40_LEGALPHASE_US">12. Indemnification</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART41_LEGALPHASE_US">You will indemnify, release and hold harmless Samsung, its parent, subsidiaries and affiliates, and all officers, directors, agents, and employees thereof, and any party acting on Samsung’s behalf, from and against any and all third-party claims, actions, liabilities, losses, damages, judgements, costs and expenses, including reasonable attorneys’ fees (collectively, “Claims”) arising out of (i) any use of the SERVICE by you or by any person that you allow to use the SERVICE that is not in accordance to the terms of these TOS, (ii) any breach of these TOS by you or by any person that you allow to use the SERVICE, or (iii) any violation of any laws, regulations or the rights of any third-party by you or by any person that you allow to use the SERVICE.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART42_LEGALPHASE_US">13. General Terms</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART43_LEGALPHASE_US">13.1 Choice of Law. These TOS, including all revisions and amendments thereto, are governed by and construed in accordance with the laws of New York, without regard to its conflict or choice of law principles.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART44_LEGALPHASE_US">13.2 Arbitration. By using the SERVICE, you unconditionally consent and agree that: (i) any claim, dispute or controversy (whether in contract, tort, or otherwise) you may have against any Samsung entity, the officers, directors, agents and employees of any Samsung entity (the “Samsung Entity(ies)”) arising out of, relating to, or connected in any way with the SERVICE or the determination of the scope or applicability of this clause, will be resolved exclusively by final and binding arbitration administered by JAMS and conducted before a sole arbitrator in accordance with the rules of JAMS;</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART45_LEGALPHASE_US">(ii) this clause is made pursuant to a transaction involving interstate commerce, and shall be governed by the Federal Arbitration Act (“FAA”), 9 U.S.C. §§ 1-16; (iii) the arbitration shall be held in New York City, New York; (iv) the arbitrator’s decision shall be controlled by the terms and conditions of these TOS and any other agreements referenced herein that you have agreed to in connection with the SERVICE; (v) the arbitrator shall apply New York law consistent with the FAA and applicable statutes of limitations, and shall honour claims of privilege recognised at law;</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART46_LEGALPHASE_US">(vi) there shall be no authority for any claims to be arbitrated on a class or representative basis; arbitration can decide only your and/or the applicable Samsung Entity’s individual claims; the arbitrator may not consolidate or join the claims of other persons or parties who may be similarly situated; and you will not file or participate in a class action against us; (vii) the arbitrator shall not have the power to award punitive damages against you or any Samsung Entity; (viii) in the event that the administrative fees and deposits that must be paid to initiate arbitration against any Samsung Entity exceed One Hundred Twenty-Five US Dollars (US$125), and you are unable (or not required under the rules of JAMS) to pay any fees and deposits that exceed this amount, Samsung agrees to pay them and/or forward them on your behalf, subject to ultimate allocation by the arbitrator.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART47_LEGALPHASE_US">In addition, if you are able to demonstrate that the costs of arbitration will be prohibitive as compared to the costs of litigation, Samsung will pay as much of your filing and hearing fees in connection with the arbitration as the arbitrator deems necessary to prevent the arbitration from being cost prohibitive; and (ix) with the exception of subsection (vi) above, if any part of this arbitration provision is deemed invalid, unenforceable or illegal, or otherwise conflicts with the rules of JAMS, the balance of this arbitration provision shall remain in effect and shall be construed in accordance with its terms as if the invalid, unenforceable, illegal or conflicting provision were not contained herein.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART48_LEGALPHASE_US">If, however, subsection (vi) above is found to be invalid, unenforceable or illegal, the entirety of this arbitration provision shall be null and void, and neither you nor Samsung shall be entitled to arbitrate the dispute. For more information on JAMS and/or the rules of JAMS, visit their website at www.jamsadr.com.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART49_LEGALPHASE_US">13.3 Severability. If any term or provision of these TOS is held to be void or unenforceable by any judicial or administrative authority, such determination shall not affect the validity of enforceability of the remaining terms and provisions of these TOS. The remaining provisions of these TOS shall remain in effect and shall be construed in accordance with its terms.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_CHINA">b) Under “Save power during game”, the resolution you see on the screen may be different to the original resolution of the content.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_OPEN">б) При „Штеди енергија при играње“, резолуцијата која ја гледате на екранот може да биде различна од оригиналната резолуција на содржината.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_US">b) Under “Save power during game”, the resolution you see on the screen may be different to the original resolution of the content.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART50_LEGALPHASE_US">13.4 Survival. Sections 2, 3, 10, 11, 12 and 13 of these TOS, and any other provision that by its nature should continue to be in effect, shall survive the expiration or earlier termination of these TOS, and shall remain valid and binding.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART51_LEGALPHASE_US">13.5 Headings. The headings contained in these TOS are for reference purposes only and shall not affect the meaning or interpretation of these TOS.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART52_LEGALPHASE_US">13.6 No Waiver. The failure of Samsung to enforce at any time any of the provisions of these TOS, or the failure by Samsung to require at any time performance by you of any of the provisions of these TOS, shall in no way be construed to be a present or future waiver of such provisions, nor in any way affect the right of Samsung to enforce such provision thereafter. The express waiver by Samsung of any provision, condition or requirement of these TOS shall not constitute a waiver of any future obligation to comply with such provision, condition or requirement.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART53_LEGALPHASE_US">13.7 Third-Party Sites. We may offer links or other materials on the SERVICE which allow you to browse or be redirected to a third-party’s website, such as a social networking platform. We are not associated with, responsible for, and do not endorse the services, websites, or content of these third-parties. If you have any questions about these other companies’ practices, you should review their terms of use and other policies.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART54_LEGALPHASE_US">13.8 Entire Agreement. These TOS are the entire agreement between you and Samsung relating to the SERVICE and supersede all prior or contemporaneous oral or written communications, proposals and representations with respect to the SERVICE or any other subject matter covered by these TOS.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_CHINA">c) Under “No alerts during game”, you may not see certain pop-up notices, including without limitation, phone calls, alarms, or other push notices.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_OPEN">в) При „Без предупредувања во игра“, не можете да гледате одредени скокачки известувања, вклучувајќи без ограничување, телефонски повици, аларми или други серверски известувања.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_US">c) Under “No alerts during game”, you may not see certain pop-up notices, including without limitation, phone calls, alarms, or other push notices.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_CHINA">d) You may only use this SERVICE in compliance with applicable laws and regulations, including those related to copyright and intellectual property rights. Intellectual property rights in relation to any content displayed by or accessed through the SERVICE belong to the respective content owner. Such content may be protected by copyright or other intellectual property laws and treaties, and may be subject to the terms of use of the third-party providing this content.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_OPEN">г) Можете да ја користите оваа УСЛУГА само во согласност со важечките закони и прописи, вклучувајќи ги и оние поврзани со авторските права и правата на интелектуална сопственост. Правата на интелектуална сопственост во однос на која било содржина прикажана на екранот од или пристапувана преку УСЛУГАТА припаѓаат на соодветниот сопственик на содржината. Таквата содржина може да биде заштитена со авторски права или други закони и договори за интелектуална сопственост и може да биде предмет на условите за користење од трета страна кои ја обезбедуваат оваа содржина. Сопствениците на релевантната содржина може да Ви забранат одредени начини на користење на оваа содржина.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_US">d) You may only use this SERVICE in compliance with applicable laws and regulations, including those related to copyright and intellectual property rights. Intellectual property rights in relation to any content displayed by or accessed through the SERVICE belong to the respective content owner. Such content may be protected by copyright or other intellectual property laws and treaties, and may be subject to the terms of use of the third-party providing this content. Owners of the relevant content may prohibit you from certain ways of using this content.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_CHINA">Owners of the relevant content may prohibit you from certain ways of using this content. Except as otherwise provided by Samsung, (i) Samsung does not grant you any rights to use such content nor does it guarantee that such content will continue to be available to you and (ii) you shall not, commercially or illegally, use any videos, photographs, images, graphics, artwork, audio or similar assets (“Digital Materials”) accessed through the SERVICE, or otherwise use the Digital Materials outside the context of its intended use as part of the SERVICE. You also acknowledge and agree that you will not create or distribute any content that is illegal and that you will be solely liable for any content you create or distribute.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_OPEN">Освен ако не е поинаку пропишано од Samsung, (i) Samsung не Ви дава никакви права да се користи таквата содржина, ниту Ви гарантира дека таквата содржина ќе продолжи да Ви биде достапна и (ii) Вие нема, комерцијално или нелегално, да користите какви било видеа, фотографии, слики, графики, уметнички дела, аудио или слични средства („Дигитални материјали“) кои се пристапуваат преку УСЛУГАТА или на друг начин ги користат Дигиталните материјали надвор од контекстот на наменетата употреба како дел од УСЛУГАТА. Исто така, потврдувате и се согласувате дека нема да креирате или дистрибуирате каква било содржина која е незаконска и дека ќе бидете единствено одговорни за секоја содржина која ќе ја креирате или дистрибуирате.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_US">Except as otherwise provided by Samsung, (i) Samsung does not grant you any rights to use such content nor does it guarantee that such content will continue to be available to you and (ii) you shall not, commercially or illegally, use any videos, photographs, images, graphics, artwork, audio or similar assets (“Digital Materials”) accessed through the SERVICE, or otherwise use the Digital Materials outside the context of its intended use as part of the SERVICE. You also acknowledge and agree that you will not create or distribute any content that is illegal and that you will be solely liable for any content you create or distribute.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_CHINA">e) When using “Featured videos”, the search results may differ from your original intention due to limitations of the search technology of third-party service providers.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_OPEN">д) Кога користите „Препорачани видеа“, резултатите од пребарувањето може да се разликуваат од Вашата оригинална намера поради ограничувањата на технологијата за пребарување од давателите на услуги од трета страна.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_US">e) When using “Featured videos”, the search results may differ from your original intention due to limitations of the search technology of third-party service providers.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_CHINA">f) The SERVICE requires access to the Internet by using mobile data, which may result in additional charges depending on your data plan with the respective network provider.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_OPEN">ѓ) УСЛУГАТА бара пристап до интернет користејќи ги мобилните податоци, што може да доведе до дополнителни трошоци, зависно од Вашите претплатнички податоци со соодветниот давател на мрежни услуги.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_US">f) The SERVICE requires access to the Internet by using mobile data, which may result in additional charges depending on your data plan with the respective network provider.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART1_LEGALPHASE_US">REGARDING GAME TOOLS AND ANY RELEVANT SOFTWARE OR DOCUMENTATION THEREOF (“SERVICE”), YOU ACKNOWLEDGE AND AGREE THAT:</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART1_LEGALPHRASE_OPEN">ВО ВРСКА СО УСЛУГАТА GAME TOOLS И ЗА КОЈ БИЛО РЕЛЕВАНТЕН СОФТВЕР ИЛИ ДОКУМЕНТАЦИЈА НА ИСТАТА („УСЛУГАТА“), ПОТВРДУВАТЕ И СЕ СОГЛАСУВАТЕ ДЕКА:</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART2_LEGALPHASE_US">a) The Service accesses your Contacts, Camera, Storage, and Microphone for the purpose of providing the Service.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART2_LEGALPHRASE_OPEN">a) Услугата пристапува до контактите, камерата, складот и микрофонот.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART3_LEGALPHASE_US">b) Under “No alerts during game”, you may not see certain pop-up notices, including without limitation, phone calls, alarms, or other push notices.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART3_LEGALPHRASE_OPEN">б) Во делот „Без предуп. во игра“, не можете да гледате одредени скокачки известувања, вклучувајќи без ограничување, телефонски повици, аларми или други серверски известувања.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART4_LEGALPHASE_US">c) You may only use this Service in compliance with applicable laws and regulations including those related to copyright and intellectual property rights.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART4_LEGALPHRASE_OPEN">в) Може да ја користите оваа Услуга само во согласност со важечките закони и прописи, вклучувајќи ги и оние поврзани со авторските права и правата на интелектуална сопственост.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART5_LEGALPHRASE_OPEN">г) Сите апликации од трета страна (вклучувајќи, но не ограничувајќи се на игри) што ги користите со Услугата се направени достапни за вас од страна на сопствениците на тие апликации. Таквите апликации од трета страна може да бидат заштитени со авторски права или други закони и договори за интелектуална сопственост и може да бидат предмет на условите за користење од релевантната трета страна.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART6_LEGALPHASE_US">e) You also acknowledge and agree that you will not create or distribute any content that is illegal and that you will be solely liable for the content you create or distribute.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART6_LEGALPHRASE_OPEN">Може да ви се забрани одредено користење на содржините од таквите апликации од трета страна (без оглед дали според условите за користење на апликацијата или со закон). Освен ако не е поинаку пропишано од Samsung, (i) Samsung не ви дава никакви права за користење на таквата содржина од трета страна, ниту ви гарантира дека таквата содржина и понатаму ќе ви биде достапна и (ii) вие се согласувате дека нема, комерцијално или нелегално, да користите какви било видеа, фотографии, слики, графики, уметнички дела, аудио или слични средства („Дигитални материјали“) до кои се пристапува преку Услугата или на друг начин да ги користите Дигиталните материјали надвор од контекстот на нивната наменета употреба како дел од Услугата.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART7_LEGALPHRASE_OPEN">e) Исто така, потврдувате и се согласувате дека ќе бидете единствено одговорни за секоја содржина што ќе ја креирате или дистрибуирате.</string>
+    <string name="LDS_GH__POP_GAME_TOOLS_DISCLAIMER_PART5_LEGALPHASE_US">d) Intellectual property rights in and to any content displayed by or accessed through the Service belong to the respective content owner. Such content may be protected by copyright or other intellectual property laws and treaties, and may be subject to the terms of use of the third party providing such content. Such owners of the relevant content may prohibit certain uses of their content. Except as otherwise provided by Samsung, (i) Samsung does not grant you any rights to use such content nor does it guarantee that such content will continue to be available to you, and (ii) you shall not, commercially or illegally, use any videos, photographs, images, graphics, artwork, audio or similar assets (“Digital Materials”) accessed through the Service, or otherwise use the Digital Materials outside the context of their intended use as part of the Service.</string>
+    <string name="MIDS_GHUB_TPOP_APP_RUNNING">Активна апликација.</string>
+    <string name="MIDS_GHUB_TPOP_BACK_KEY_LOCKED_WHILE_USING_APP">Копчето Назад е заклучено додека ја користите апликацијата.</string>
+    <string name="MIDS_GHUB_TPOP_NO_ALERTS_WHILE_USING_APP_ENABLED">Овозможено е Без предупредувања додека ја користите апликацијата.</string>
+    <string name="MIDS_GHUB_TPOP_NO_ALERTS_WHILE_USING_APP_ENABLED_ALL_NOTIFICATIONS_WILL_BE_MUTED_AND_HIDDEN_WHILE_USING_APP_ONLY_INCOMING_CALLS_WILL_BE_SHOWN">Овозможено е Без предупредувања додека ја користите апликацијата. Звукот на сите известувања ќе биде исклучен и тие ќе бидат сокриени додека ја користите апликацијата. Само дојдовните повици ќе се прикажат.</string>
+    <string name="MIDS_GHUB_TPOP_RECENTS_AND_BACK_KEYS_LOCKED_WHILE_USING_APP">Копчињата Последно и Назад се заклучени додека се користи апликацијата.</string>
+    <string name="MIDS_GHUB_TPOP_RECENTS_KEY_LOCKED_WHILE_USING_APP">Копчето Последни е заклучено додека ја користите апликацијата.</string>
+    <string name="MIDS_GH_BODY_1_HOUR">1 час</string>
+    <string name="MIDS_GH_BODY_1_HOUR_ABB">1 час</string>
+    <string name="MIDS_GH_BODY_1_HOUR_AGO">Пред 1 час</string>
+    <string name="MIDS_GH_BODY_1_MINUTE">1 минута</string>
+    <string name="MIDS_GH_BODY_1_MINUTE_AGO">Пред 1 минута</string>
+    <string name="MIDS_GH_BODY_1_TIME_ABB_M_LC_M_PLAY">Еднаш</string>
+    <string name="MIDS_GH_BODY_1_WEEK_AGO_ABB">Пред 1 седмица</string>
+    <string name="MIDS_GH_BODY_ACCESS_YOUR_GAMES_QUICKLY_AND_EASILY_USING_THE_EDGE_SCREEN">Пристапете до игрите брзо и лесно со користење на Рабен екран.</string>
+    <string name="MIDS_GH_BODY_ACTION">Дејство</string>
+    <string name="MIDS_GH_BODY_ADDED_M_NOUN">Додадено</string>
+    <string name="MIDS_GH_BODY_ADVENTURE">Авантуристички</string>
+    <string name="MIDS_GH_BODY_ALLOW_ACCESS_ONLY_FOR_THIS_TRIP_ABB">Дозв. пристап само за ова патување</string>
+    <string name="MIDS_GH_BODY_ALLOW_DATA_ACCESS_Q">Дозволи пристап до податоци?</string>
+    <string name="MIDS_GH_BODY_ARCADE_M_GENRE">Аркадни</string>
+    <string name="MIDS_GH_BODY_BOARD_M_GENRE">Табла</string>
+    <string name="MIDS_GH_BODY_CANNOT_FIND_YOUR_INSTALLED_GAME_Q">Не можете да ја најдете инсталираната игра?</string>
+    <string name="MIDS_GH_BODY_CAPTURE_A_SCREENSHOT">Сними екран.</string>
+    <string name="MIDS_GH_BODY_CARD">Карти</string>
+    <string name="MIDS_GH_BODY_CASINO">Казино</string>
+    <string name="MIDS_GH_BODY_CASUAL">Лефтерни</string>
+    <string name="MIDS_GH_BODY_CHECK_OUT_THESE_EXCLUSIVE_OFFERS_FOR_YOUR_GALAXY_DEVICE">Видете ги ексклузивниве понуди за уредот Galaxy.</string>
+    <string name="MIDS_GH_BODY_CHECK_OUT_THE_HOTTEST_GAMES_AMONG_GALAXY_DEVICE_USERS_AND_WATCH_FUN_GAME_VIDEOS">Погледнете ги најпопуларните игри кај корисниците на уредот Galaxy и гледајте забавни видеа од игри.</string>
+    <string name="MIDS_GH_BODY_CHECK_YOUR_NETWORK_CONNECTION_AND_TRY_AGAIN">Проверете го мрежното поврзување и обидете се повторно.</string>
+    <string name="MIDS_GH_BODY_DATA_USAGE">Користење податоци</string>
+    <string name="MIDS_GH_BODY_DENY_DATA_ROAMING_ACCESS_ABB">Отфрли пристап на податочен роаминг</string>
+    <string name="MIDS_GH_BODY_DRAG_THE_QUICK_PANEL_DOWN_TO_STOP_RECORDING">Повлечете ја брзата плоча надолу за да сопрете со снимањето.</string>
+    <string name="MIDS_GH_BODY_EDGE_TOUCH_LOCK_ABB">Закл.на допирниот Раб</string>
+    <string name="MIDS_GH_BODY_EDUCATIONAL">Образовни</string>
+    <string name="MIDS_GH_BODY_ENJOY_A_FREE_GAME_PROVIDED_BY_SAMSUNG_GAME_LAUNCHER">Уживајте во бесплатна игра обезбедена од Samsung Game Launcher.</string>
+    <string name="MIDS_GH_BODY_GAMEPAD_RECOMMENDED">Препорачан контролер за игри</string>
+    <string name="MIDS_GH_BODY_GAMES_SORTED_BY_NUMBER_OF_GALAXY_USERS_PLAYING_HP1SD_P2SD_P3SD_P4SD_ABB">Игри подредени по број на корисници на Galaxy што играат (%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_GAMES_SORTED_BY_TOTAL_TIME_PLAYED_BY_ALL_GALAXY_USERS_HP1SD_P2SD_P3SD_P4SD_ABB">Игри подред.по вкуп. време играно од сите корис. на Galaxy (%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_GAME_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_THIS_TIME_ONLY_MSG">Звукот на играта ќе се исклучи кога Вашата игра е отворена преку %s само овој пат. Можете да ја смените јачината на звукот додека Вашата игра е отворена.</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_AUTOMATICALLY">Game Launcher автоматски ги организира сите Ваши игри на едно место.</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_AUTOMATICALLY_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_MSG">Game Launcher автоматски ги организира сите Ваши игри на едно место и обезбедува дополнителни функции што се корисни за играње игри.</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_FEATURES_HPS_ARE_ONLY_APPLIED_TO_APPS_CATEGORISED_AS_GAMES">Функциите на Game Launcher (%s) се применуваат само на апликации категоризирани како игри.</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_WILL_ACCESS_CONTACTS_CAMERA_STORAGE_AND_MICROPHONE">Game Launcher ќе пристапи до Контакти, Камера, Меморија и Микрофон.</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_CONVENIENT_GAME_FEATURES">Game Tools обезбедува практични функции на игрите.</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_CONVENIENT_GAME_FEATURES_IN_A_BUTTON_THAT_FLOATS_OVER_YOUR_GAME_ABB">Game Tools обезбедува пригодни функции за игри во копче што лебди врз Вашата игра.</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_OPTIONS_AND_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES">Game Tools обезбедува опции и функции што се корисни за играње игри.</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_DEVICE">Видеа од игри што се снимени од Вашиот уред.</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_PHONE">Видеа од игри што се снимени од Вашиот телефон.</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_TABLET">Видеа од игри што се снимени од Вашиот таблет.</string>
+    <string name="MIDS_GH_BODY_HIDE_YOUR_CALLS_AND_ALERTS_DURING_GAMEPLAY">Сокријте ги повиците и предупредувањата при играње.</string>
+    <string name="MIDS_GH_BODY_INSTALLED_M_NOUN">Инсталирано</string>
+    <string name="MIDS_GH_BODY_I_HAVE_READ_AND_AGREE_TO_ALL_THE_TERMS_OF_SERVICE_ABOVE">Ги прочитав и се согласувам со сите Одредби и услови погоре.</string>
+    <string name="MIDS_GH_BODY_LARGE">Голем</string>
+    <string name="MIDS_GH_BODY_LAST_PLAYED">Последно играно</string>
+    <string name="MIDS_GH_BODY_LAST_RECORDED_C">Последно снимено:</string>
+    <string name="MIDS_GH_BODY_LATEST_VERSION">Најнова верзија</string>
+    <string name="MIDS_GH_BODY_LIVE">Во живо</string>
+    <string name="MIDS_GH_BODY_MAXIMUM_RECORDING_FILE_SIZE_IS_PD_GB_MSG">Максимална големина на датотека за снимање е %d GB. Кога снимате со најголем квалитет на сликата, може да се снимат околу 80 минути. Времето може да се зголеми со намалување на резолуцијата и битовата стапка.</string>
+    <string name="MIDS_GH_BODY_MINIMISE_YOUR_GAME_SCREEN_WHEN_YOU_NEED_TO_QUICKLY_ACCESS_OTHER_TASKS">Намалете го екранот на играта кога Ви треба брзо да пристапите до други задачи.</string>
+    <string name="MIDS_GH_BODY_MOST_ACTIVE_NEW">Најактивен нов</string>
+    <string name="MIDS_GH_BODY_MOST_ADDICTIVE_NEW">Најзаразни нови</string>
+    <string name="MIDS_GH_BODY_MUSIC_M_GENRE">Музика</string>
+    <string name="MIDS_GH_BODY_MUTE_AND_HIDE_ALL_OF_YOUR_ALERTS_DURING_GAMEPLAY">Исклучете го звукот и сокријте ги сите предупредувањата при играње.</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_RANKED_BY_THE_LONGEST_PLAYING_TIMES">Нови игри рангирани според најдолгите времиња на играње.</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_RANKED_BY_THE_MOST_USERS_PER_DAY">Нови игри рангирани според најголем број корисници дневно.</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_SORTED_BY_NUMBER_OF_GALAXY_USERS_PLAYING_HP1SD_P2SD_P3SD_P4SD_ABB">Нови игри подред.по број на корисници на Galaxy што играат (%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_SORTED_BY_TOTAL_TIME_PLAYED_BY_ALL_GALAXY_USERS_HP1SD_P2SD_P3SD_P4SD_ABB">Нови игри подр.по вкуп. време играно од сите кор.на Galaxy (%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_OPEN_A_BOOKMARKED_APP_OR_WEB_ADDRESS">Отвори означена апликација или интернет-адреса.</string>
+    <string name="MIDS_GH_BODY_OPEN_SOURCE_LICENCE">Лиценца за отворен код</string>
+    <string name="MIDS_GH_BODY_OTHERS">Други</string>
+    <string name="MIDS_GH_BODY_PD_HOURS_ABB">%d часа</string>
+    <string name="MIDS_GH_BODY_PD_HOURS_AGO">Пред %d часа</string>
+    <string name="MIDS_GH_BODY_PD_MINUTES">%d минути</string>
+    <string name="MIDS_GH_BODY_PD_MINUTES_AGO">Пред %d минути</string>
+    <string name="MIDS_GH_BODY_PD_PLAYS_ABB">%d играња</string>
+    <string name="MIDS_GH_BODY_PD_TIMES_ABB2">%d пати</string>
+    <string name="MIDS_GH_BODY_PD_WEEKS_AGO_ABB">Пред %d седмици</string>
+    <string name="MIDS_GH_BODY_PER_DAY_ABB_M_LC">дневно</string>
+    <string name="MIDS_GH_BODY_PLAYERS_ABB">Играчи</string>
+    <string name="MIDS_GH_BODY_PLAYING_TIME">Време на играње</string>
+    <string name="MIDS_GH_BODY_PLAYING_TIME_ABB_M_LC">вр.на играње</string>
+    <string name="MIDS_GH_BODY_PLAY_PER_DAY_ABB">Играј по ден</string>
+    <string name="MIDS_GH_BODY_POWER_USAGE">Користење енергија</string>
+    <string name="MIDS_GH_BODY_PRIVACY_POLICY">Политика за приватност</string>
+    <string name="MIDS_GH_BODY_PS_DISCLAIMER">Оградување на %s</string>
+    <string name="MIDS_GH_BODY_PS_IS_A_BUTTON_FLOATING_OVER_THE_TOP_OF_YOUR_GAME_THAT_PROVIDES_CONVENIENT_GAME_FEATURES">%s е копче што лебди врз Вашата игра, што обезбедува пригодни функции за игри.</string>
+    <string name="MIDS_GH_BODY_PS_LOCK_ABB">Заклучување %s</string>
+    <string name="MIDS_GH_BODY_PS_TERMS_OF_SERVICE">Услови за користење на %s</string>
+    <string name="MIDS_GH_BODY_PUZZLE_M_GENRE">Сложувалки</string>
+    <string name="MIDS_GH_BODY_RACING">Тркачки</string>
+    <string name="MIDS_GH_BODY_RECENTLY_INSTALLED">Последно инсталирано</string>
+    <string name="MIDS_GH_BODY_RECENTLY_REGISTERED">Последно регистрирано</string>
+    <string name="MIDS_GH_BODY_RECORD_YOUR_GAME">Снимете ја играта.</string>
+    <string name="MIDS_GH_BODY_RECORD_YOUR_GAMES">Снимете ги игрите.</string>
+    <string name="MIDS_GH_BODY_ROLE_PLAYING_M_GENRE">Игри со улоги</string>
+    <string name="MIDS_GH_BODY_SAVE_BATTERY_POWER_BY_OPTIMISING_THE_DISPLAY_QUALITY">Штедете батерија оптимизирајќи го квалитетот на приказот.</string>
+    <string name="MIDS_GH_BODY_SAVE_BATTERY_POWER_DURING_GAMEPLAY_BY_DOWNGRADING_THE_VIDEO_QUALITY">Заштедете наполнетост на батеријата при играњето преку намалување на квалитетот на видеото.</string>
+    <string name="MIDS_GH_BODY_SCREENSHOT">Екранска снимка</string>
+    <string name="MIDS_GH_BODY_SELECT_APPS_YOU_WANT_TO_ADD_TO_PS">Изберете ги апликациите што сакате да ги додадете на %s.</string>
+    <string name="MIDS_GH_BODY_SELECT_A_GAME_YOU_WANT_TO_ADD_TO_PS">Изберете игра што сакате да ја додадете на %s.</string>
+    <string name="MIDS_GH_BODY_SELECT_A_GAME_YOU_WANT_TO_REGISTER_IN_GAME_LAUNCHER">Изберете игра што сакате да ја регистрирате во Game Launcher.</string>
+    <string name="MIDS_GH_BODY_SELECT_THE_FUNCTION_TO_ASSIGN_TO_THE_HOT_KEY_MSG">Изберете ја функцијата за назначување на кратенката. Можете и да ја допрете и држите кратенката за да ја смените функцијата.</string>
+    <string name="MIDS_GH_BODY_SELECT_THE_GAME_YOU_WANT_TO_REGISTER_TO_MY_GAMES">Изберете ја играта што сакате да ја регистрирате во Мои игри.</string>
+    <string name="MIDS_GH_BODY_SHRINK_YOUR_GAME_SCREEN_INTO_A_FLOATING_ICON">Смалете го екранот на играта во лебдечка икона.</string>
+    <string name="MIDS_GH_BODY_SIMULATION">Симулации</string>
+    <string name="MIDS_GH_BODY_SMALL">Мала</string>
+    <string name="MIDS_GH_BODY_SPORTS_M_GENRE">Спортски</string>
+    <string name="MIDS_GH_BODY_STRATEGY_M_GENRE">Стратегии</string>
+    <string name="MIDS_GH_BODY_S_GAMES_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_AUTOMATICALLY">S Games автоматски ги организира сите Ваши игри на едно место.</string>
+    <string name="MIDS_GH_BODY_TAP_THE_BUTTON_TO_STOP_RECORDING">Допрете го копчето за да сопре снимањето.</string>
+    <string name="MIDS_GH_BODY_TERMS_OF_SERVICE">Услови за користење</string>
+    <string name="MIDS_GH_BODY_TERMS_OF_SERVICE_ABB">Услови за користење</string>
+    <string name="MIDS_GH_BODY_THE_LATEST_VERSION_IS_ALREADY_INSTALLED">Најновата верзија веќе е инсталирана.</string>
+    <string name="MIDS_GH_BODY_THE_NAVIGATION_BAR_WILL_NOT_AUTO_HIDE_DURING_GAMEPLAY_MSG">Навигациската лента нема автоматски да се сокрие при играње. Не се препорачува да се користи оваа функција во режим на цел екран.</string>
+    <string name="MIDS_GH_BODY_THE_RESOLUTION_AND_FRAME_RATE_OF_EACH_GAME_CAN_BE_CUSTOMISED">Резолуцијата и брзината на кадри на секоја од игрите може да се прилагоди.</string>
+    <string name="MIDS_GH_BODY_THIS_APPLICATION_CAN_ACCESS_P1SS_AND_P2SS">Оваа апликација може да пристапи до %1$s и %2$s.</string>
+    <string name="MIDS_GH_BODY_THIS_IS_THE_LATEST_VERSION">Ова е најновата верзија.</string>
+    <string name="MIDS_GH_BODY_THIS_WEEK_ABB">Оваа седмица</string>
+    <string name="MIDS_GH_BODY_TIP_C_TO_CHANGE_THE_HOT_KEY_PRESS_AND_HOLD_IT_OR_GO_TO_GAME_TOOLS_SETTINGS">Совет: За да го смените Жешкото копче, притиснете го и држете го или одете во поставувањата за Game Tools.</string>
+    <string name="MIDS_GH_BODY_TO_PREVENT_UNINTENTIONAL_TOUCHES_DURING_THE_GAME_MSG2">За да спречите ненамерни допири за време на играта, %s на долниот дел на екранот бил заклучен при играњето.</string>
+    <string name="MIDS_GH_BODY_TO_SIGN_UP_FOR_A_GLOBAL_DATA_PLAN_CALL_GLOBAL_SUPPORT_AT_908_559_4899">За да се регистрирате за глобален пакет, повикајте ја глобалната поддршка на 908-559-4899.</string>
+    <string name="MIDS_GH_BODY_TO_STOP_RECORDING_TAP_THE_STOP_BUTTON_ON_THE_NAVIGATION_BAR">За да сопрете со снимање, допрете на копчето Сопри на навигациската лента.</string>
+    <string name="MIDS_GH_BODY_TRIVIA_M_CATEGORY">Квизови</string>
+    <string name="MIDS_GH_BODY_TRY_OUT_ADDITIONAL_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES_MSG4">Испробајте дополнителни функции што се корисни за играње игри, на пример Штеди енергија при играње, Без предупредувања во игра и Game Tools.</string>
+    <string name="MIDS_GH_BODY_TRY_OUT_ADDITIONAL_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES_MSG5">Испробајте дополнителни функции што се корисни за играње игри, на пример Штеди енергија при играње, Звукот на отворените игри е исклучен и Game Tools.</string>
+    <string name="MIDS_GH_BODY_UNKNOWN_M_CATEGORY">Непознато</string>
+    <string name="MIDS_GH_BODY_USING_DATA_WHILE_IN_THE_US_INCLUDING_ALASKA_HAWAII_PUERTO_RICO_MSG">"Користењето податоци додека сте во САД, вклучително и во Алјаска, Хаваи, Порторико и Американските Девствени Острови ќе биде во согласност со Вашиот пакет.
+
+Користењето податоци за време на патувања надвор од САД без глобален пакет може да доведе до значително поголеми трошоци.
+
+Дали сакате да ги вклучите податоците?"</string>
+    <string name="MIDS_GH_BODY_VERSION">Верзија</string>
+    <string name="MIDS_GH_BODY_WE_RECOMMEND_DOWNLOADING_VIA_WI_FI_MSG">Препорачуваме да преземате преку Wi-Fi. Користењето на Вашата мобилна мрежа може да се наплаќа дополнително, зависно од Вашиот пакет.</string>
+    <string name="MIDS_GH_BODY_WHEN_YOU_TAP_THE_P1SS_BUTTON_YOU_CAN_ACCESS_P2SS_FROM_ANYWHERE">Кога ќе го допрете копчето %1$s, можете да пристапите до %2$s од секаде.</string>
+    <string name="MIDS_GH_BODY_WORD_M_CATEGORY">Со зборови</string>
+    <string name="MIDS_GH_BODY_YOUR_GAMES_WILL_BE_DISPLAYED_AUTOMATICALLY">Вашите игри ќе се прикажат автоматски.</string>
+    <string name="MIDS_GH_BODY_YOUVE_REACHED_YOUR_SPECIFIED_DATA_USAGE_LIMIT_MSG">"Го достигнавте одреденото ограничување за користење податоци.
+
+Ако повторно ги овозможите податоците, операторот може тоа да Ви го наплати."</string>
+    <string name="MIDS_GH_BODY_YOU_CAN_ADJUST_THE_PERFORMANCE_OF_YOUR_GAME_IN_TWO_WAYS_MSG">Можете да ги прилагодите перформансите на Вашата игра на два начина. Зголеми перформанси ги подобрува перформансите на Вашиот систем, но може и да ја зголеми потрошувачката на енергија. Штеди енергија заштедува енергија, но може да ги намали перформансите на системот.</string>
+    <string name="MIDS_GH_BODY_YOU_CAN_ALSO_CHECK_OUT_THE_HOTTEST_GAMES_AMONG_GALAXY_DEVICE_USERS_MSG">Исто така, можете да ги погледнете најпопуларните игри кај корисниците на уредот Galaxy и да гледате забавни видеа од игри директно од Game Launcher.</string>
+    <string name="MIDS_GH_BUTTON2_BOOST_PERFORMANCE">Зголеми перформанси</string>
+    <string name="MIDS_GH_BUTTON2_NORMAL_PERFORMANCE">Нормални перформанси</string>
+    <string name="MIDS_GH_BUTTON2_OPEN_GAMES_MUTED">"Звук. отвор.
+игри е искл."</string>
+    <string name="MIDS_GH_BUTTON2_SAVE_POWER">Штеди енергија</string>
+    <string name="MIDS_GH_BUTTON_ADD_AS_GAME_ABB">Додај како игра</string>
+    <string name="MIDS_GH_BUTTON_ADD_TO_HOME">Додај дома</string>
+    <string name="MIDS_GH_BUTTON_ADD_URL">Додај URL</string>
+    <string name="MIDS_GH_BUTTON_AGREE_ABB">Добро</string>
+    <string name="MIDS_GH_BUTTON_APPLY_ABB2">Примени</string>
+    <string name="MIDS_GH_BUTTON_CANCEL_ABB3">Откажи</string>
+    <string name="MIDS_GH_BUTTON_CHECK_RECORDED_VIDEO_IN_GALLERY">Видете снимено видео во Галерија</string>
+    <string name="MIDS_GH_BUTTON_CLEAR_ABB2">Избриши</string>
+    <string name="MIDS_GH_BUTTON_CLOSE">Близу</string>
+    <string name="MIDS_GH_BUTTON_CONFIRM">Потврди</string>
+    <string name="MIDS_GH_BUTTON_DELETE">Избриши</string>
+    <string name="MIDS_GH_BUTTON_DELETE_ABB4">Избриши</string>
+    <string name="MIDS_GH_BUTTON_DISABLE_ABB">Оневозможи</string>
+    <string name="MIDS_GH_BUTTON_DISAGREE_ABB">Не се со.</string>
+    <string name="MIDS_GH_BUTTON_DISCOVERY">Откритие</string>
+    <string name="MIDS_GH_BUTTON_DONE">Готово</string>
+    <string name="MIDS_GH_BUTTON_EDIT">Уреди</string>
+    <string name="MIDS_GH_BUTTON_ENABLE_ABB">Овозможи</string>
+    <string name="MIDS_GH_BUTTON_FEATURED_VIDEOS">Препорач. Видеа</string>
+    <string name="MIDS_GH_BUTTON_FIND_MORE_GAMES">Најди повеќе игри</string>
+    <string name="MIDS_GH_BUTTON_GAME_SOUND">Звук на игра</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS">Game Tools</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS_OFF">Game Tools е исклучено</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS_ON">Game Tools е вклучено</string>
+    <string name="MIDS_GH_BUTTON_GAME_VIDEOS">Видеа од игри</string>
+    <string name="MIDS_GH_BUTTON_GAME_VIDEOS_ABB">Вид. од игри</string>
+    <string name="MIDS_GH_BUTTON_IN_GAME_LOCK_SCREEN">Екр. за закл. во игра</string>
+    <string name="MIDS_GH_BUTTON_LATER_ABB">Подоцна</string>
+    <string name="MIDS_GH_BUTTON_LOCK_BACK_KEY">Заклучи го копчето Назад</string>
+    <string name="MIDS_GH_BUTTON_LOCK_RECENTS_AND_BACK_KEYS">Закл. ги коп. Последно и Назад</string>
+    <string name="MIDS_GH_BUTTON_LOCK_RECENTS_KEY">Заклучи го копчето Последни</string>
+    <string name="MIDS_GH_BUTTON_MORE">Повеќе</string>
+    <string name="MIDS_GH_BUTTON_MORE_ABB4">Повеќе</string>
+    <string name="MIDS_GH_BUTTON_NO_INTERRUPTIONS_ABB">Без прекини</string>
+    <string name="MIDS_GH_BUTTON_OK">OK</string>
+    <string name="MIDS_GH_BUTTON_OPEN">Отвори</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAMES_MUTED_OFF">Зв. на отв.игри е вкл.</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAMES_MUTED_ON">Зв. на отв.игри е искл.</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAME_ABB">Отвори игра</string>
+    <string name="MIDS_GH_BUTTON_PLAY">Играј</string>
+    <string name="MIDS_GH_BUTTON_PLAYERS">Играчи</string>
+    <string name="MIDS_GH_BUTTON_PLAYING_TIME">Време на играње</string>
+    <string name="MIDS_GH_BUTTON_POP_UP_WINDOW">Појавен прозорец</string>
+    <string name="MIDS_GH_BUTTON_RECORD">Снимај</string>
+    <string name="MIDS_GH_BUTTON_REFRESH_ABB3">Обнови</string>
+    <string name="MIDS_GH_BUTTON_REGISTER_ABB">Регистрирање</string>
+    <string name="MIDS_GH_BUTTON_REQUEST_REGISTRATION">Барај регистрација</string>
+    <string name="MIDS_GH_BUTTON_RESTART_ABB2">Рестартирај</string>
+    <string name="MIDS_GH_BUTTON_RETRY_ABB">Повторно</string>
+    <string name="MIDS_GH_BUTTON_RE_ENABLE_DATA">"Повторно о-
+возможи под."</string>
+    <string name="MIDS_GH_BUTTON_SAVE_POWER_DURING_GAME">Штеди енерг.при играње</string>
+    <string name="MIDS_GH_BUTTON_SAVE_POWER_OFF">Зачувувањ. е исклучено</string>
+    <string name="MIDS_GH_BUTTON_SHARE">Сподели</string>
+    <string name="MIDS_GH_BUTTON_SHOW">Прикажи</string>
+    <string name="MIDS_GH_BUTTON_START_ABB">Почеток</string>
+    <string name="MIDS_GH_BUTTON_STOP_ABB">Сопри</string>
+    <string name="MIDS_GH_BUTTON_TAP_HERE_TO_ADD_UNLISTED_GAMES">Допрете овде за да ги додадете ненаведените игри</string>
+    <string name="MIDS_GH_BUTTON_TOP_CHARTS">Топ листи</string>
+    <string name="MIDS_GH_BUTTON_TOP_GAMES_ABB">Врв. игри</string>
+    <string name="MIDS_GH_BUTTON_UPDATE_ABB4">Ажурирање</string>
+    <string name="MIDS_GH_BUTTON_VIEW_VIDEO_IN_GAME_LAUNCHER">Прикажи видео во Game Launcher</string>
+    <string name="MIDS_GH_HEADER_ADD_SHORTCUT">Додавање кратенка</string>
+    <string name="MIDS_GH_HEADER_ANNOUNCEMENTS">Соопштенија</string>
+    <string name="MIDS_GH_HEADER_ASSIGN_P1SS_TO_P2SS">Назначување %1$s на %2$s</string>
+    <string name="MIDS_GH_HEADER_CONNECT_VIA_MOBILE_NETWORKS_ABB">Поврзувај преку мобилни мрежи</string>
+    <string name="MIDS_GH_HEADER_CONNECT_VIA_ROAMING_NETWORK_ABB">Поврзи преку мрежа за роаминг</string>
+    <string name="MIDS_GH_HEADER_CUSTOMISED_PERFORMANCE">Прилагодени перформанси</string>
+    <string name="MIDS_GH_HEADER_DATA_NETWORK_DISABLED_ABB">Подат. мрежа е оневозможена</string>
+    <string name="MIDS_GH_HEADER_DISCLAIMER_ABB">Оградување</string>
+    <string name="MIDS_GH_HEADER_DISCOVERY">Откритие</string>
+    <string name="MIDS_GH_HEADER_DISPLAY_GAME_ICONS_ON_GAME_LAUNCHER_ONLY">Прикажување на иконите за игри само во Game Launcher</string>
+    <string name="MIDS_GH_HEADER_ENABLE_PS">Овозможи %s</string>
+    <string name="MIDS_GH_HEADER_ENTER_WEB_ADDRESS">Внес. интернет-адреса</string>
+    <string name="MIDS_GH_HEADER_FAVOURITE_GENRE">Омилен жанр</string>
+    <string name="MIDS_GH_HEADER_GALAXY_GAMERS">Играчи на Galaxy</string>
+    <string name="MIDS_GH_HEADER_GAMES">Игри</string>
+    <string name="MIDS_GH_HEADER_GAME_DISCOVERY">Откривање игри</string>
+    <string name="MIDS_GH_HEADER_GAME_LAUNCHER_ABB">Game Launcher</string>
+    <string name="MIDS_GH_HEADER_INSTALLED_APPS_ABB2">Инсталирани апликации</string>
+    <string name="MIDS_GH_HEADER_INTRODUCING_GAME_TOOLS_ABB">Претставување на Game Tools</string>
+    <string name="MIDS_GH_HEADER_MOBILE_DATA_TURNED_OFF_ABB">Мобил. податоци е исклучено</string>
+    <string name="MIDS_GH_HEADER_MOST_ACTIVE_ABB">Најактивно</string>
+    <string name="MIDS_GH_HEADER_MOST_ADDICTIVE_ABB">Најзаразно</string>
+    <string name="MIDS_GH_HEADER_NEW_RELEASES_N_UPDATES_ABB">Нови изданија и ажурирања</string>
+    <string name="MIDS_GH_HEADER_NO_NETWORK_CONNECTION_ABB2">Нема мрежно поврзување</string>
+    <string name="MIDS_GH_HEADER_OTHER_APPS">Други апликации</string>
+    <string name="MIDS_GH_HEADER_PERMISSIONS">Дозволи</string>
+    <string name="MIDS_GH_HEADER_POPULAR">Популарни</string>
+    <string name="MIDS_GH_HEADER_PRIVACY_POLICY">Полиса за приватност</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_PLAYED">Последно емитувано</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_PLAYED_ABB">Последно емитувано</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_USED_APPS">Последно користени апликации</string>
+    <string name="MIDS_GH_HEADER_RECORDED_ABB">Снимено</string>
+    <string name="MIDS_GH_HEADER_RECORDING_SETTINGS_ABB">Подесувања за снимање</string>
+    <string name="MIDS_GH_HEADER_RECORD_GAME">Снимај игра</string>
+    <string name="MIDS_GH_HEADER_REGISTER_ABB2">Регистрир.</string>
+    <string name="MIDS_GH_HEADER_REGISTRATION_FAILED_ABB">Неусп. регистрација</string>
+    <string name="MIDS_GH_HEADER_REGISTRATION_REQUEST_REQUIRED_ABB">Потребно е барање за регистрација</string>
+    <string name="MIDS_GH_HEADER_RELATED">Сродно</string>
+    <string name="MIDS_GH_HEADER_RELATED_GAMES">Сродни игри</string>
+    <string name="MIDS_GH_HEADER_RESTART_GAME">Рестартирање игра</string>
+    <string name="MIDS_GH_HEADER_RESTART_GAMES_ABB">Рестартирај игри</string>
+    <string name="MIDS_GH_HEADER_SELECT_HOT_KEY">Бирање кратенка</string>
+    <string name="MIDS_GH_HEADER_SELECT_VIDEOS">Изберете видеа</string>
+    <string name="MIDS_GH_HEADER_SET_PROFILE_IMAGE_ABB">Пост.слик.на профил</string>
+    <string name="MIDS_GH_HEADER_SET_PROFILE_IMAGE_ABB2">Постави слика на профил</string>
+    <string name="MIDS_GH_HEADER_SPECIAL_OFFERS_ABB">Посебни понуди</string>
+    <string name="MIDS_GH_HEADER_STAFF_PICKS_ABB">Наш избор</string>
+    <string name="MIDS_GH_HEADER_UNABLE_TO_ADD_GAME_ABB">Не може да се додаде игра</string>
+    <string name="MIDS_GH_HEADER_UNABLE_TO_REGISTER_GAME_ABB">Не се регистрира играта</string>
+    <string name="MIDS_GH_HEADER_UNINSTALL_APP_ABB">Одинстал. апликација</string>
+    <string name="MIDS_GH_HEADER_UNINSTALL_GAME">Одинсталирај игра</string>
+    <string name="MIDS_GH_HEADER_UPDATE_PS">Ажурирај %s</string>
+    <string name="MIDS_GH_HEADER_VIDEO_SETTINGS_ABB">Подесувања за видео</string>
+    <string name="MIDS_GH_HEADER_WI_FI_NOT_AVAILABLE_ABB">Нема Wi-Fi</string>
+    <string name="MIDS_GH_HEADER_YOUTUBE_SEARCH_RESULTS">Резултати од пребарување на YouTube</string>
+    <string name="MIDS_GH_MBODY_ABOUT_GAME_LAUNCHER">За Game Launcher</string>
+    <string name="MIDS_GH_MBODY_ABOUT_GAME_TOOLS">За Game Tools</string>
+    <string name="MIDS_GH_MBODY_ABOUT_PS">За %s</string>
+    <string name="MIDS_GH_MBODY_AUDIO_SOURCE">Извор на звук</string>
+    <string name="MIDS_GH_MBODY_BITRATE">Брзина на битови</string>
+    <string name="MIDS_GH_MBODY_CONTACT_US">Контактирајте нѐ</string>
+    <string name="MIDS_GH_MBODY_FAQ">Најчести прашања</string>
+    <string name="MIDS_GH_MBODY_FEATURED_ABB">Препорачано</string>
+    <string name="MIDS_GH_MBODY_FRAME_RATE">Брзина на кадри</string>
+    <string name="MIDS_GH_MBODY_GAMES">Игри</string>
+    <string name="MIDS_GH_MBODY_GAME_ICON_DISPLAY_OPTION">Опц. прик.на икон.за игри</string>
+    <string name="MIDS_GH_MBODY_GAME_NOTIFICATIONS">Известувања за игри</string>
+    <string name="MIDS_GH_MBODY_GAME_RECORDER">Снимач на игра</string>
+    <string name="MIDS_GH_MBODY_GAME_TOOLS">Game Tools</string>
+    <string name="MIDS_GH_MBODY_GAMING_OPTIMISATION">Оптимизација на играњето</string>
+    <string name="MIDS_GH_MBODY_HELP">Помош</string>
+    <string name="MIDS_GH_MBODY_HOT_KEY">Жешко копче</string>
+    <string name="MIDS_GH_MBODY_INTRODUCING_GAME_LAUNCHER_ABB">Претставување на Game Launcher</string>
+    <string name="MIDS_GH_MBODY_MARKETING_INFORMATION">Маркетиншки информации</string>
+    <string name="MIDS_GH_MBODY_MINIMISE_AND_ALIVE">Минимизирај и активно</string>
+    <string name="MIDS_GH_MBODY_MINIMISE_GAME">Минимизирај игра</string>
+    <string name="MIDS_GH_MBODY_MY_QUESTIONS">Мои прашања</string>
+    <string name="MIDS_GH_MBODY_NORMAL_MODE_ABB">Нормален режим</string>
+    <string name="MIDS_GH_MBODY_NO_INTERRUPTIONS">Без прекини</string>
+    <string name="MIDS_GH_MBODY_PERFORMANCE_MODE_ABB">Режим на перформанси</string>
+    <string name="MIDS_GH_MBODY_PHONE_AUDIO">Аудио на телефонот</string>
+    <string name="MIDS_GH_MBODY_PROFILE_SIZE">Големина на профилот</string>
+    <string name="MIDS_GH_MBODY_PROFILE_SOURCE">Извор на профилот</string>
+    <string name="MIDS_GH_MBODY_RAM">RAM</string>
+    <string name="MIDS_GH_MBODY_RECORD_TOUCH_INTERACTION">Сними допирна интерак.</string>
+    <string name="MIDS_GH_MBODY_REDUCE_GRAPHICS_QUALITY">Намал.го квалит. на граф.</string>
+    <string name="MIDS_GH_MBODY_RESOLUTION">Резолуција</string>
+    <string name="MIDS_GH_MBODY_SAVE_POWER_DURING_GAME_ABB">Штеди енергија при играње</string>
+    <string name="MIDS_GH_MBODY_SCREEN_CAPTURED">Екранот е снимен</string>
+    <string name="MIDS_GH_MBODY_SHORTCUT">Кратенка</string>
+    <string name="MIDS_GH_MBODY_TAP_HERE_TO_STOP_AND_SAVE_RECORDING">Доп.тука за да соп. и да ја зачув. сним.</string>
+    <string name="MIDS_GH_MBODY_VIDEO_QUALITY">Квалитет на видео</string>
+    <string name="MIDS_GH_NPBODY_BY_NUMBER_OF_PLAYERS">Според број на играчи</string>
+    <string name="MIDS_GH_NPBODY_BY_PLAY_TIME">Според време на играње</string>
+    <string name="MIDS_GH_NPBODY_COLLAPSE">Собери</string>
+    <string name="MIDS_GH_NPBODY_DRAG_DOWNWARDS_TO_SHOW_GAME_TOOLS">Повлечете надолу за да го прикажете Game Tools</string>
+    <string name="MIDS_GH_NPBODY_EXPAND">Рашири</string>
+    <string name="MIDS_GH_NPBODY_FEATURED_GAMES">Препорачани игри</string>
+    <string name="MIDS_GH_NPBODY_FILE_SIZE_C_P1SS_P2SS">Големина на датотека: %1$s %2$s</string>
+    <string name="MIDS_GH_NPBODY_GAME_BEING_PLAYED">Игра што се игра</string>
+    <string name="MIDS_GH_NPBODY_INSTALLED">Инсталирано</string>
+    <string name="MIDS_GH_NPBODY_NEW">Ново</string>
+    <string name="MIDS_GH_NPBODY_NEW_GAMES_ABB">нови игри</string>
+    <string name="MIDS_GH_NPBODY_NO_ANNOUNCEMENTS">Нема соопштенија</string>
+    <string name="MIDS_GH_NPBODY_NO_APPS_AVAILABLE_TO_ADD_TO_PS">Не се достапни апликации за додавање во %s</string>
+    <string name="MIDS_GH_NPBODY_NO_AVAILABLE_GAMES">Нема достапни игри</string>
+    <string name="MIDS_GH_NPBODY_NO_GAMES">Нема игри</string>
+    <string name="MIDS_GH_NPBODY_NO_INSTALLED_GAMES">Нема инсталирани игри</string>
+    <string name="MIDS_GH_NPBODY_NO_RECORDED_VIDEOS">Нема снимени видеа</string>
+    <string name="MIDS_GH_NPBODY_NO_RESULTS_FOUND">Нема резултати</string>
+    <string name="MIDS_GH_NPBODY_NO_SEARCH_RESULTS">Нема резултати од пребарувањето</string>
+    <string name="MIDS_GH_NPBODY_REMAINING_BATTERY_POWER_C_PDP" formatted="false">Преостаната батерија: %d%</string>
+    <string name="MIDS_GH_NPBODY_SEARCH">Пребарај</string>
+    <string name="MIDS_GH_NPBODY_SWIPE_SCREEN_TO_UNLOCK">Поминете преку екранот за да отклучите</string>
+    <string name="MIDS_GH_OPT_ADD_APPS">Додај апликации</string>
+    <string name="MIDS_GH_OPT_ADD_TO_HOME_SCREEN">Додај на почетен екран</string>
+    <string name="MIDS_GH_OPT_ADJUST_BITRATE_ACCORDING_TO_RESOLUTION">Прилагодете ја брзината на битови според резолуцијата.</string>
+    <string name="MIDS_GH_OPT_ALL">Сите</string>
+    <string name="MIDS_GH_OPT_ALL_TIME">Цело време</string>
+    <string name="MIDS_GH_OPT_ALWAYS_RESTART">Секогаш рестартирај</string>
+    <string name="MIDS_GH_OPT_APP_INFO">Информации за апликација</string>
+    <string name="MIDS_GH_OPT_AUTO">Автоматски</string>
+    <string name="MIDS_GH_OPT_BACK_KEY_ONLY">Само копчето Назад</string>
+    <string name="MIDS_GH_OPT_BOTH_RECENTS_AND_BACK_KEYS">И копчето Последни, и Назад</string>
+    <string name="MIDS_GH_OPT_CATEGORISE_AS_GAME">Категоризирај како игра</string>
+    <string name="MIDS_GH_OPT_CATEGORISE_AS_OTHER_APP">Категоризирај како друга апликација</string>
+    <string name="MIDS_GH_OPT_COMMUNITY">Заедница</string>
+    <string name="MIDS_GH_OPT_CUSTOM">Прилагодено</string>
+    <string name="MIDS_GH_OPT_DEFAULT_IMAGE">Основна слика</string>
+    <string name="MIDS_GH_OPT_DETAILS">Детали</string>
+    <string name="MIDS_GH_OPT_DISPLAY_GAME_ICONS_ON_BOTH_APPS_AND_GAME_LAUNCHER">Прикажете ги иконите за игри и во Апликации, и во Game Launcher</string>
+    <string name="MIDS_GH_OPT_DISPLAY_GAME_ICONS_ON_GAME_LAUNCHER_ONLY">Прикажете ги иконите за игри само во Game Launcher</string>
+    <string name="MIDS_GH_OPT_DO_NOT_SHOW_AGAIN">Не прикажувај веќе</string>
+    <string name="MIDS_GH_OPT_EDIT_VIDEO_ABB">Уреди видео</string>
+    <string name="MIDS_GH_OPT_FRONT_CAMERA">Предна камера</string>
+    <string name="MIDS_GH_OPT_FRONT_CAMERA_ABB">Пред. камера</string>
+    <string name="MIDS_GH_OPT_FULL_SCREEN">Цел екран</string>
+    <string name="MIDS_GH_OPT_GAME_AUDIO">Звук за игри</string>
+    <string name="MIDS_GH_OPT_GAME_SETTINGS">Подесувања за игри</string>
+    <string name="MIDS_GH_OPT_GO_TO_DISCOVERY">Оди во Откритие</string>
+    <string name="MIDS_GH_OPT_GO_TO_GAME_DISCOVERY">Оди во Откривање игри</string>
+    <string name="MIDS_GH_OPT_GO_TO_GAME_LAUNCHER">Оди во Game Launcher</string>
+    <string name="MIDS_GH_OPT_GO_TO_SETTINGS_ABB">Оди во Подесувања</string>
+    <string name="MIDS_GH_OPT_HIDE">Сокриј</string>
+    <string name="MIDS_GH_OPT_IMAGE_ABB">Слика</string>
+    <string name="MIDS_GH_OPT_IN_LAST_MONTH">Последниот месец</string>
+    <string name="MIDS_GH_OPT_IN_LAST_WEEK">Последната седмица</string>
+    <string name="MIDS_GH_OPT_I_AGREE_TO_RECEIVE_MARKETING_INFORMATION_HOPTIONAL">Се согласувам да примам маркетиншки информации (опционално).</string>
+    <string name="MIDS_GH_OPT_LAST_MONTH">Минатиот месец</string>
+    <string name="MIDS_GH_OPT_LAST_WEEK">Минатата седмица</string>
+    <string name="MIDS_GH_OPT_MANAGE_GAME_NOTIFICATIONS">Управ. со известувања за игри</string>
+    <string name="MIDS_GH_OPT_MICROPHONE">Микрофон</string>
+    <string name="MIDS_GH_OPT_MOVE_TO_OTHER_SCREEN_ABB">Премести на друг екран</string>
+    <string name="MIDS_GH_OPT_MY_DIARY">Мој дневник</string>
+    <string name="MIDS_GH_OPT_NONE">Ништо</string>
+    <string name="MIDS_GH_OPT_NORMAL">Нормална</string>
+    <string name="MIDS_GH_OPT_NO_ALERTS_DURING_GAME_ABB">Без предуп. во игра</string>
+    <string name="MIDS_GH_OPT_NO_ALERTS_WHILE_USING_APP">Без предупредувања додека ја користите апликацијата</string>
+    <string name="MIDS_GH_OPT_PLAYING_TIME_MODE_ABB">Реж.на Време на играње</string>
+    <string name="MIDS_GH_OPT_RECENTS_KEY_ONLY">Само копчето Последни</string>
+    <string name="MIDS_GH_OPT_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_DEVICE_MAY_BE_RECORDED_WITH_GAME_AUDIO">Снимете звук од играта. Системските звуци кои се јавуваат на уредот може да се снимат со звукот од играта.</string>
+    <string name="MIDS_GH_OPT_RECORD_EXTERNAL_AUDIO_USING_MICROPHONE">Снимај надворешни звуци со користење на микрофон.</string>
+    <string name="MIDS_GH_OPT_REGISTERED_APPS">Регистрирани апликации</string>
+    <string name="MIDS_GH_OPT_REMOVE">Отстрани</string>
+    <string name="MIDS_GH_OPT_REMOVE_APPS">Отстрани апликации</string>
+    <string name="MIDS_GH_OPT_SAVE_CUSTOM_POWER">Зачувајте прилагодена енергија</string>
+    <string name="MIDS_GH_OPT_SAVE_MAXIMUM_POWER">Максимално штеди енергија</string>
+    <string name="MIDS_GH_OPT_SAVE_POWER">Штеди енергија</string>
+    <string name="MIDS_GH_OPT_SAVE_POWER_FOR_GAMES">Штеди енергија за игри</string>
+    <string name="MIDS_GH_OPT_SCREEN_TOUCH_LOCK">Допирно заклучување на екранот</string>
+    <string name="MIDS_GH_OPT_SELECT_APP_ABB">Изберете апликација</string>
+    <string name="MIDS_GH_OPT_SELECT_FROM_GALLERY_ABB2">Изберете од Галерија</string>
+    <string name="MIDS_GH_OPT_SHOW_A_PROFILE_IMAGE_WHILE_RECORDING">Прикажи слика на профил додека се снима.</string>
+    <string name="MIDS_GH_OPT_SHOW_NAVIGATION_BAR">Прикажи навигациска лента</string>
+    <string name="MIDS_GH_OPT_TAKE_PICTURE">Сликај</string>
+    <string name="MIDS_GH_OPT_TAKE_PICTURE_ABB3">Сликај</string>
+    <string name="MIDS_GH_OPT_TAP_HERE_TO_ADD_APPS">Допрете тука за да додадете апликации</string>
+    <string name="MIDS_GH_OPT_UNINSTALL_APPS">Одинсталирај апликации</string>
+    <string name="MIDS_GH_OPT_UNINSTALL_M_INSTALL">Одинсталирај</string>
+    <string name="MIDS_GH_OPT_USE_THE_FRONT_CAMERA_TO_RECORD_YOUR_PROFILE">Користете ја предната камера за снимање на Вашиот профил.</string>
+    <string name="MIDS_GH_POP_1_VIDEO_HAS_BEEN_SELECTED">Избрано е 1 видео.</string>
+    <string name="MIDS_GH_POP_1_VIDEO_WILL_BE_DELETED">1 видео ќе се избрише.</string>
+    <string name="MIDS_GH_POP_ALL_OF_YOUR_ALERTS_WILL_BE_MUTED_AND_HIDDEN_DURING_GAMEPLAY_MSG2">Сите Ваши предупредувања ќе бидат исклучени и скриени за време на играњето. Само дојдовните повици ќе се прикажуваат на екранот.</string>
+    <string name="MIDS_GH_POP_AUDIO_SOURCE">Извор на звук</string>
+    <string name="MIDS_GH_POP_A_NEW_VERSION_IS_AVAILABLE">Достапна е нова верзија.</string>
+    <string name="MIDS_GH_POP_A_NEW_VERSION_IS_AVAILABLE_PS_MUST_BE_UPDATED_TO_CONTINUE">Достапна е нова верзија. %s мора да се ажурира за да продолжите.</string>
+    <string name="MIDS_GH_POP_CHANGING_THE_OPTION_WILL_AFFECT_THE_POSITION_OF_APPS_ON_THE_APPS_SCREEN_MSG">Менувањето на опцијата ќе влијае врз положбата на апликациите на екранот Апликации. Иконите за игри ќе се сокријат од екранот Апликации. Допрете OK за да продолжите.</string>
+    <string name="MIDS_GH_POP_CLOSE_ALL_RUNNING_GAMES_AND_OPEN_THEM_AGAIN_TO_APPLY_YOUR_CHANGES">Затворете ги сите активни игри и отворете ги повторно за да ги примените Вашите промени.</string>
+    <string name="MIDS_GH_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN">Податочниот роаминг е исклучен. Поврзете се со мрежа Wi-Fi или овозможете Податочен роаминг и обидете се повторно.</string>
+    <string name="MIDS_GH_POP_DATE">Датум</string>
+    <string name="MIDS_GH_POP_ENTER_THE_WEB_ADDRESS_YOU_WANT_TO_ADD_AS_A_SHORTCUT">Внесете ја интернет-адресата што сакате да ја додадете како кратенка.</string>
+    <string name="MIDS_GH_POP_FEATURES_MAY_VARY_DEPENDING_ON_THE_VERSION">Функциите може да се разликуваат во зависност од верзијата.</string>
+    <string name="MIDS_GH_POP_FILE_PATH">Патека на датотека</string>
+    <string name="MIDS_GH_POP_FILE_SIZE">Големина на фајлот</string>
+    <string name="MIDS_GH_POP_GAMES_DOWNLOADED_FROM_APP_STORES_MSG">Игрите преземени од продавниците за апликации што не се поврзани со Game Launcher бараат повеќе време за регистрирање. Може да се регистрираат само игри со барања за регистрација.</string>
+    <string name="MIDS_GH_POP_GAME_ICONS_WILL_BE_HIDDEN_FROM_THE_APPS_SCREEN_AND_DISPLAYED_ON_GAME_LAUNCHER_ONLY_YOU_CAN_CHANGE_THIS_OPTION_IN_THE_GAME_LAUNCHER_SETTINGS">Иконите за игри ќе се сокријат од екранот Апликации и ќе се прикажат само на Game Launcher. Можете да ја смените оваа опција во поставувањата за Game Launcher.</string>
+    <string name="MIDS_GH_POP_GAME_ICONS_WILL_BE_HIDDEN_FROM_THE_APPS_SCREEN_MSG">Иконите за игри ќе се сокријат од екранот Апликации. Позицијата на апликациите на екранот Апликации може да се смени. Допрете OK за да продолжите.</string>
+    <string name="MIDS_GH_POP_GAME_LAUNCHER_HAS_BEEN_DELETED_GAME_TOOLS_WILL_ALSO_BE_DELETED">Game Launcher е избришан. Game Tools исто така ќе се избрише.</string>
+    <string name="MIDS_GH_POP_GAME_LAUNCHER_WILL_BE_INSTALLED_AFTER_YOUR_DEVICE_RESTARTS">Game Launcher ќе се инсталира откако Вашиот уред ќе се рестартира.</string>
+    <string name="MIDS_GH_POP_GAME_TOOLS_INSTALLED">Game Tools е инсталирано.</string>
+    <string name="MIDS_GH_POP_GAME_TOOLS_IS_REQUIRED_TO_USE_THIS_SERVICE_GAME_TOOLS_WILL_BE_DOWNLOADED_AND_INSTALLED">Game Tools е потребно за да се користи оваа услуга. Game Tools ќе се преземе и инсталира.</string>
+    <string name="MIDS_GH_POP_IT_IS_RECOMMENDED_THAT_YOU_PLAY_THE_GAME_IN_FULL_SCREEN_MODE_MSG">Се препорачува да ја играте играта во режим на цел екран. За да го смените прегледот на екранот, морате да ја рестартирате играта. Ова поставување важи само за тековната игра.</string>
+    <string name="MIDS_GH_POP_LENGTH">Времетраење</string>
+    <string name="MIDS_GH_POP_MANAGE_ALL_YOUR_GAMES_IN_ONE_PLACE_AND_TRY_OUT_ADDITIONAL_GAME_FEATURES">Управувајте со сите Ваши игри на едно место и испробајте дополнителни функции на игрите.</string>
+    <string name="MIDS_GH_POP_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_OR_TURN_ON_MOBILE_DATA_AND_TRY_AGAIN">Мобилните податоци се исклучени. Поврзете се со мрежа Wi-Fi или вклучете Мобилни податоци и обидете се повторно.</string>
+    <string name="MIDS_GH_POP_NO_SIGNAL_HAS_BEEN_FOUND_FOR_A_MOBILE_NETWORK">Не беше најден сигнал за мобилна мрежа.</string>
+    <string name="MIDS_GH_POP_P1SS_FEATURES_HP2SS_WILL_NOT_BE_APPLIED_TO_THIS_APP_BECAUSE_IT_IS_NOT_CATEGORISED_AS_A_GAME_MSG">%1$s функции (%2$s) нема да се применат на оваа апликација затоа што не е категоризирана како игра. Допрете Додај како игра за да ги примените и промените функциите на %3$s за оваа апликација.</string>
+    <string name="MIDS_GH_POP_P1SS_IS_DISABLED_TAP_OK_TO_ENABLE_P2SS">%1$s е оневозможено. Допрете OK за да овозможите %2$s.</string>
+    <string name="MIDS_GH_POP_P1SS_IS_REQUIRED_TO_USE_THIS_SERVICE_MSG">%1$s е потребно за користење на оваа услуга. Ќе се отвори Galaxy Apps за да преземете и инсталирате %2$s.</string>
+    <string name="MIDS_GH_POP_P1SS_MUST_BE_INSTALLED_TO_USE_THIS_SERVICE_MSG">%1$s мора да е инсталирано за да се користи оваа услуга. Допрете OK за да одите во Galaxy Apps за да го преземете и инсталирате %2$s.</string>
+    <string name="MIDS_GH_POP_P1SS_WILL_NOT_WORK_WHILE_P2SS_IN_P3SS_IS_DISABLED_YOU_CAN_ENABLE_IT_IN_SETTINGS">%1$s нема да функционира додека %2$s во %3$s е оневозможено. Можете да го овозможите во Поставувања.</string>
+    <string name="MIDS_GH_POP_PD_VIDEOS_HAVE_BEEN_SELECTED">%d видеа се избрани.</string>
+    <string name="MIDS_GH_POP_PD_VIDEOS_WILL_BE_DELETED">%d видеа ќе се избришат.</string>
+    <string name="MIDS_GH_POP_PLAY_YOUR_GAMES_LONGER_BY_LOWERING_THE_GRAPHICS_QUALITY_TO_SAVE_BATTERY_POWER">Играјте ги игрите подолго со намалување на квалитетот на графиката за да заштедите батерија.</string>
+    <string name="MIDS_GH_POP_PROFILE_IMAGE_SIZE">Големина на слика на профилот</string>
+    <string name="MIDS_GH_POP_PROFILE_SOURCE">Извор на профилот</string>
+    <string name="MIDS_GH_POP_PROFILE_VIDEO_SIZE">Големина на видео на профилот</string>
+    <string name="MIDS_GH_POP_PS_AND_ALL_THE_FEATURES_RELATED_TO_IT_WILL_BE_DISABLED">%s и сите функции поврзани со него ќе се исклучат.</string>
+    <string name="MIDS_GH_POP_PS_AND_ALL_THE_FEATURES_RELATED_TO_IT_WILL_BE_DISABLED_YOUR_DATA_WILL_ALSO_BE_DELETED">%s и сите функции поврзани со него ќе се исклучат. Податоците исто така ќе се избришат.</string>
+    <string name="MIDS_GH_POP_PS_IS_DISABLED_YOU_CAN_ENABLE_IT_IN_SETTINGS">%s е оневозможено. Можете да го овозможите во Поставувања.</string>
+    <string name="MIDS_GH_POP_PS_WILL_BE_UNINSTALLED">%s ќе се деинсталира.</string>
+    <string name="MIDS_GH_POP_PS_WILL_BE_UPDATED_TO_THE_LATEST_VERSION_TO_CONTINUE">%s ќе се ажурира на најновата верзија за да продолжи.</string>
+    <string name="MIDS_GH_POP_REGISTERING_ING">Се регистрира...</string>
+    <string name="MIDS_GH_POP_RESOLUTION">Resolution</string>
+    <string name="MIDS_GH_POP_RESTARTING_ING">Рестартирање...</string>
+    <string name="MIDS_GH_POP_SAVE_POWER_DURING_GAME_NOT_AVAILABLE_FOR_HD_RESOLUTION">Функцијата Штеди енергија при играње не е достапна за HD-резолуција.</string>
+    <string name="MIDS_GH_POP_THE_ESTIMATED_BATTERY_EFFICIENCY_MAY_VARY_DEPENDING_ON_THE_GAME">Проценетата ефикасност на батеријата може да е различна, зависно од играта.</string>
+    <string name="MIDS_GH_POP_THE_FUNCTION_MANAGED_BY_GAME_TUNER_WILL_BE_RESET_TO_DEFAULT">Функцијата, управувана од Game Tuner, ќе се ресетира на основните вредности.</string>
+    <string name="MIDS_GH_POP_THE_P1SS_SETTING_IN_P2SS_IS_DISABLED">Поставувањето %1$s во %2$s е оневозможено.</string>
+    <string name="MIDS_GH_POP_THE_PS_ICON_ON_YOUR_HOME_SCREEN_AND_IN_APPS_WILL_BE_REMOVED">Иконата %s на почетниот екран и во Апликации ќе се отстрани.</string>
+    <string name="MIDS_GH_POP_THE_PS_LOG_WILL_BE_CLEARED">Дневникот на %s ќе се исчисти.</string>
+    <string name="MIDS_GH_POP_THE_PS_LOG_WILL_BE_DELETED">Дневникот на %s ќе се избрише.</string>
+    <string name="MIDS_GH_POP_THE_SAVE_POWER_DURING_GAME_FUNCTION_MANAGED_BY_GAME_TUNER_WILL_BE_RESET_TO_DEFAULT">Функцијата Штеди енергија при играње, со која управува Game Tuner, ќе се ресетира на основните вредности.</string>
+    <string name="MIDS_GH_POP_THE_SELECTED_GAMES_CANNOT_BE_REGISTERED_DUE_TO_A_POLICY_VIOLATION">Избраните игри не може да се регистрираат поради прекршување на полисата.</string>
+    <string name="MIDS_GH_POP_THIS_APP_IS_NOT_LISTED_AS_A_GAME_IN_PS_TAP_REQUEST_REGISTRATION_TO_ADD_IT">Оваа апликација не е наведена како игра во %s. Допрете Барај регистрација за да ја додадете.</string>
+    <string name="MIDS_GH_POP_THIS_WILL_AFFECT_THE_POSITION_OF_APPS_ON_THE_APPS_SCREEN_MSG">Ова ќе влијае врз положбата на апликациите на екранот со Апликации. Иконите за игри ќе се сокријат од екранот со Апликации.</string>
+    <string name="MIDS_GH_POP_TITLE">Наслов</string>
+    <string name="MIDS_GH_POP_TITLE_C_PS">Наслов: %s</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_CATEGORIES_CLOSE_THE_APP">За да ги смените категориите, затворете ја апликацијата.</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_CATEGORIES_IT_WILL_CLOSE">За да ги смените категориите, тоа ќе се затвори.</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_SCREEN_VIEW_YOU_MUST_RESTART_THE_GAME_THIS_SETTING_ONLY_APPLIES_TO_THE_CURRENT_GAME">За да го смените прегледот на екран, морате да ја рестартирате играта. Ова поставување важи само за тековната игра.</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAMEPLAY_SETTINGS_MSG">За да ги смените поставувањата за Штеди енергија при играње, сите игри што моментално работат можеби ќе треба да се рестартираат за да се оптимизира Вашиот приказ на екранот.</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAMEPLAY_SETTINGS_MSG2">За да ги смените поставувањата за Штеди енергија при играње, можеби ќе треба да се рестартира %s за да се оптимизира Вашиот приказ на екранот.</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAME_SETTINGS_MSG">За да ги смените поставувањата за Штеди енергија при играње, сите игри што моментално работат можеби ќе треба да се рестартираат за да се оптимизира Вашиот приказ на екранот.</string>
+    <string name="MIDS_GH_POP_TO_PREVENT_UNINTENTIONAL_TOUCHES_DURING_THE_GAME_MSG">За да спречите ненамерни допири за време на играта, Допирниот Раб на страната на телефонот бил заклучен при играњето.</string>
+    <string name="MIDS_GH_POP_TO_SHOW_IN_FULL_SCREEN_VIEW_MSG">За да се прикаже во преглед на цел екран, морате да ја рестартирате играта. Прегледот на цел екран може да не се совпаѓа со размерот на сликата. Ова поставување важи само за тековната игра.</string>
+    <string name="MIDS_GH_POP_TO_USE_GAME_TOOLS_IT_MUST_BE_ENABLED">За да користите Game Tools, тоа мора да се овозможи.</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_CAPTURE_THE_SCREEN_DELETE_SOME_FILES_AND_TRY_AGAIN">Не може да се сними екранот. Избришете некои датотеки и обидете се повторно.</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN">Не може да се поврзе со мобилни мрежи додека е овозможен Авионски режим. Поврзете се со мрежа Wi-Fi или оневозможете го Авионскиот режим и обидете се повторно.</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_REGISTER_GAMES_THAT_HAVE_BEEN_DOWNLOADED_FROM_UNKNOWN_SOURCES">Не може да се регистрираат игри што се преземени од непознати извори.</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_REGISTER_THE_SELECTED_GAME_AN_UNKNOWN_ERROR_HAS_OCCURRED">Не можеше да се регистрира избраната игра. Дојде до непозната грешка.</string>
+    <string name="MIDS_GH_POP_UNKNOWN">Непознато</string>
+    <string name="MIDS_GH_POP_USING_MOBILE_DATA_WHEN_ROAMING_MAY_INCUR_ADDITIONAL_CHARGES_DEPENDING_ON_YOUR_PAYMENT_PLAN">Користењето Мобилни податоци во роаминг може да се наплаќа дополнително, зависно од Вашиот пакет.</string>
+    <string name="MIDS_GH_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN">Потребна е врска Wi-Fi. Поврзете со мрежа Wi-Fi и обидете се повторно</string>
+    <string name="MIDS_GH_POP_YOUR_DEVICE_IS_NOT_CONNECTED_TO_A_WI_FI_NETWORK_CONNECTING_TO_MOBILE_NETWORKS_MAY_RESULT_IN_ADDITIONAL_CHARGES_DEPENDING_ON_YOUR_PAYMENT_PLAN">Уредот не Ви е поврзан со мрежа Wi-Fi. Поврзувањето со мобилни мрежи може да се наплаќа дополнително, зависно од Вашиот пакет.</string>
+    <string name="MIDS_GH_POP_YOUR_DEVICE_WILL_RESTART_TO_APPLY_THE_NEW_SETTINGS_FOR_GAME_LAUNCHER">Вашиот уред ќе се рестартира за да се применат новите поставувања за Game Launcher.</string>
+    <string name="MIDS_GH_POP_YOUR_REGISTRATION_REQUEST_HAS_BEEN_SUBMITTED">Вашето барање за регистрација е поднесено.</string>
+    <string name="MIDS_GH_POP_YOU_CAN_ENABLE_PS_IN_SETTINGS">Можете да овозможите %s во Поставувања.</string>
+    <string name="MIDS_GH_POP_YOU_CAN_ONLY_REGISTER_GAMES_DOWNLOADED_FROM_THE_GAMES_CATEGORY">Може да ги регистрирате само оние игри што се преземени од категоријата Игри.</string>
+    <string name="MIDS_GH_SBODY_100_KPLUS">Повеќе од 100 илјади</string>
+    <string name="MIDS_GH_SBODY_100_MPLUS">Повеќе од 100 милиони</string>
+    <string name="MIDS_GH_SBODY_10_KPLUS">Повеќе од 10 илјади</string>
+    <string name="MIDS_GH_SBODY_10_MINPLUS">Повеќе од 10 минути</string>
+    <string name="MIDS_GH_SBODY_10_MIN_MINUS">Помалку од 10 минути</string>
+    <string name="MIDS_GH_SBODY_10_MPLUS">Повеќе од 10 милиони</string>
+    <string name="MIDS_GH_SBODY_1_DAY_AGO_ABB">Пред 1 ден</string>
+    <string name="MIDS_GH_SBODY_1_HOUR_AGO_ABB">Пред 1 час</string>
+    <string name="MIDS_GH_SBODY_1_HRPLUS">Повеќе од 1 час</string>
+    <string name="MIDS_GH_SBODY_1_KPLUS">Повеќе од 1 илјада</string>
+    <string name="MIDS_GH_SBODY_1_MINUTE_AGO_ABB">Пред 1 минута</string>
+    <string name="MIDS_GH_SBODY_1_MONTH_AGO_ABB">Пред 1 месец</string>
+    <string name="MIDS_GH_SBODY_1_MPLUS">Повеќе од 1 милион</string>
+    <string name="MIDS_GH_SBODY_1_VIDEO">1 видео</string>
+    <string name="MIDS_GH_SBODY_2_HRSPLUS">Повеќе од 2 часа</string>
+    <string name="MIDS_GH_SBODY_30_MINPLUS">Повеќе од 30 минути</string>
+    <string name="MIDS_GH_SBODY_4_HRSPLUS">Повеќе од 4 часа</string>
+    <string name="MIDS_GH_SBODY_500_KPLUS">Повеќе од 500 илјади</string>
+    <string name="MIDS_GH_SBODY_50_KPLUS">Повеќе од 50 илјади</string>
+    <string name="MIDS_GH_SBODY_50_MPLUS">Повеќе од 50 милиони</string>
+    <string name="MIDS_GH_SBODY_5_KPLUS">Повеќе од 5 илјади</string>
+    <string name="MIDS_GH_SBODY_5_MPLUS">Повеќе од 5 милиони</string>
+    <string name="MIDS_GH_SBODY_6_HRSPLUS">Повеќе од 6 часа</string>
+    <string name="MIDS_GH_SBODY_8_HRSPLUS">Повеќе од 8 часа</string>
+    <string name="MIDS_GH_SBODY_ADD_A_SHORTCUT_OR_WEB_ADDRESS_FOR_QUICK_ACCESS_DURING_GAMEPLAY">Додај кратенка или интернет-адреса за брз пристап при играње.</string>
+    <string name="MIDS_GH_SBODY_ALLOW_OR_BLOCK_NOTIFICATIONS_FROM_INDIVIDUAL_GAME_APPS">Дозволувај или блокирај известувања од игри.</string>
+    <string name="MIDS_GH_SBODY_AUTO">Автоматски</string>
+    <string name="MIDS_GH_SBODY_AUTO_HBASED_ON_RESOLUTION">Автоматски (според резолуцијата)</string>
+    <string name="MIDS_GH_SBODY_AUTO_HPD_MBPS">Автоматски (%d Mbps)</string>
+    <string name="MIDS_GH_SBODY_BLOCKED">Блокирано</string>
+    <string name="MIDS_GH_SBODY_CHECK_PS_ALBUM_IN_GALLERY">Видете го албумот на %s во Галерија.</string>
+    <string name="MIDS_GH_SBODY_CHECK_THE_CURRENT_APP_VERSION_AND_LEGAL_INFO">Проверете ги тековната верзија на апликацијата и правните информации.</string>
+    <string name="MIDS_GH_SBODY_CLEANING_ING_ABB">Се чисти...</string>
+    <string name="MIDS_GH_SBODY_CLEARED">Исчистено</string>
+    <string name="MIDS_GH_SBODY_CONFIGURE_YOUR_PROFILE_SOURCE_AUDIO_SOURCE_TOUCH_INTERACTION_RESOLUTION_AND_BITRATE">Конфигурирајте ги изворот, изворот на звук, допирната интеракција, резолуцијата и брзината на битови на Вашиот профил.</string>
+    <string name="MIDS_GH_SBODY_DISPLAY_NORMAL_SCREEN_QUALITY_DURING_GAMEPLAY">Прикажете нормален квалитет на екранот во тек на играњето.</string>
+    <string name="MIDS_GH_SBODY_DO_NOT_USE_SAVE_POWER_DURING_GAME">Немојте да користите Штеди енергија при играње.</string>
+    <string name="MIDS_GH_SBODY_EXTREMELY_LOW">Екстремно ниска</string>
+    <string name="MIDS_GH_SBODY_GAMES_RANKED_BY_THE_LONGEST_PLAYING_TIMES">Игри рангирани според најдолгите времиња на играње.</string>
+    <string name="MIDS_GH_SBODY_GAMES_RANKED_BY_THE_MOST_USERS_PER_DAY">Игри рангирани според најголем број корисници дневно.</string>
+    <string name="MIDS_GH_SBODY_GAME_SCREEN_CAPTURED">Снимен е екран на игра</string>
+    <string name="MIDS_GH_SBODY_HIDE_THE_FLOATING_BUTTON">Сокријте го лебдечкото копче.</string>
+    <string name="MIDS_GH_SBODY_LOW">Ниска</string>
+    <string name="MIDS_GH_SBODY_LOWER_THE_RESOLUTION_AND_FRAME_RATE_TO_A_MINIMUM_LEVEL_TO_SAVE_POWER">Намалете ги резолуцијата и брзината на кадрите на минимално ниво за да заштедите батерија.</string>
+    <string name="MIDS_GH_SBODY_LOWER_YOUR_BATTERY_USAGE_BY_USING_A_LOWER_RESOLUTION">Намалете го користењето на Вашата батерија користејќи пониска резолуција.</string>
+    <string name="MIDS_GH_SBODY_LOWER_YOUR_BATTERY_USAGE_BY_USING_A_LOWER_RESOLUTION_AND_FRAME_RATE">Намалете го користењето на Вашата батерија користејќи пониска резолуција и брзина на кадри.</string>
+    <string name="MIDS_GH_SBODY_MANAGE_USEFUL_FEATURES_WHILE_YOU_PLAY_GAMES">Управувајте со корисни карактеристики додека играте игри.</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_AND_INCREASE_PLAYING_TIME_RESOLUTION_AND_FRAME_RATE_MAY_BE_DECREASED">Намалете го користењето на батеријата и зголемете го времето на играње. Резолуцијата и брзината на кадри може да се намалат.</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_CUSTOMISING_YOUR_SETTINGS">Намалете го користењето на батеријата преку прилагодување на Вашите поставувања.</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_OPTIMISING_YOUR_SCREEN_DISPLAY_QUALITY">Намалете го користењето на батеријата преку оптимизирање на квалитетот на приказот на екранот.</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_USING_THE_LOWEST_RESOLUTION_AND_FRAME_RATE">Намалете го користењето на Вашата батерија користејќи ги најниската резолуција и брзина на кадри.</string>
+    <string name="MIDS_GH_SBODY_NEWLY_INSTALLED_ABB">Новоинсталирано</string>
+    <string name="MIDS_GH_SBODY_NORMAL">Нормална</string>
+    <string name="MIDS_GH_SBODY_NOT_AVAILABLE">Недостапно</string>
+    <string name="MIDS_GH_SBODY_OFF">Исклучено</string>
+    <string name="MIDS_GH_SBODY_ON">Вклучено</string>
+    <string name="MIDS_GH_SBODY_OPTIMISE_THE_GRAPHICS_QUALITY_AUTOMATICALLY_FOR_SMOOTHER_GAMEPLAY">Оптимизирај го автоматски квалитетот на графиката за помазно играње.</string>
+    <string name="MIDS_GH_SBODY_PD_DAYS_AGO_ABB">Пред %d дена</string>
+    <string name="MIDS_GH_SBODY_PD_HOURS_AGO_ABB">Пред %d часа</string>
+    <string name="MIDS_GH_SBODY_PD_MINUTES_AGO_ABB">Пред %d минути</string>
+    <string name="MIDS_GH_SBODY_PD_MONTHS_AGO_ABB">Пред %d месеци</string>
+    <string name="MIDS_GH_SBODY_PD_VIDEOS">%d видеа</string>
+    <string name="MIDS_GH_SBODY_PLAYING_ABB">Се емитува</string>
+    <string name="MIDS_GH_SBODY_POPULAR_GAME_VIDEOS_ON_YOUTUBE">Популарни видеа од игри на YouTube.</string>
+    <string name="MIDS_GH_SBODY_PREPARING_ING">Се подготвува...</string>
+    <string name="MIDS_GH_SBODY_PREVENT_FRAME_RATE_DEGRADATION_MSG">Спречете деградација на брзината на кадрите. Некои апликации може присилно да бидат сопрени, а трошењето на батеријата може да се зголеми.</string>
+    <string name="MIDS_GH_SBODY_RECEIVE_NOTIFICATIONS_OF_PROMOTIONS_AND_MARKETING_INFORMATION_FROM_PS">Добивајте известувања за промоции и маркетиншки информации од %s.</string>
+    <string name="MIDS_GH_SBODY_RECORDED_C_P1SD_CP2SD_P3SD_P4SD_P5SD">Снимено: %1$d:%2$d %3$d/%4$d/%5$d</string>
+    <string name="MIDS_GH_SBODY_RECORDING_ING">Се снима...</string>
+    <string name="MIDS_GH_SBODY_RECORDS_TOUCH_INTERACTION_WHEN_RECORDING_A_GAME">Ја снима допирната интеракција при снимање игра.</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_DEVICE_MAY_BE_RECORDED_WITH_GAME_AUDIO">Снимете звук од играта. Системските звуци кои се јавуваат на уредот може да се снимат со звукот од играта.</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_PHONE_MAY_ALSO_BE_RECORDED">Снимете звук од Вашата игра. Системските звуци кои се јавуваат на телефонот може исто така да се снимат.</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_TABLET_MAY_ALSO_BE_RECORDED">Снимете звук од Вашата игра. Системските звуци кои се јавуваат на таблетот може исто така да се снимат.</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_PHONE_SYSTEM_SOUNDS_MAY_BE_RECORDED">Снимете звук од Вашиот телефон. Системските звуци може да се снимат.</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_THE_DEVICE_MICROPHONE">Снимај надворешен звук со микрофонот на уредот.</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_YOUR_PHONE_MICROPHONE">Снимете надворешен звук со микрофонот на телефонот.</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_YOUR_TABLET_MICROPHONE">Снимете надворешен звук со микрофонот на таблетот.</string>
+    <string name="MIDS_GH_SBODY_RECORD_YOUR_GAMEPLAY_WITHOUT_A_PROFILE">Снимете го Вашето играње без профил.</string>
+    <string name="MIDS_GH_SBODY_RECORD_YOUR_SCREEN_WITHOUT_A_PROFILE">Снимете го Вашиот екран без профил.</string>
+    <string name="MIDS_GH_SBODY_SAVE_BATTERY_POWER_DURING_GAMEPLAY_BY_DOWNGRADING_THE_VIDEO_QUALITY">Заштедете батерија при играњето преку намалување на квалитетот на видеото.</string>
+    <string name="MIDS_GH_SBODY_SAVING_ING">Се зачувува...</string>
+    <string name="MIDS_GH_SBODY_SET_AS_PRIORITY">Постави како приоритет</string>
+    <string name="MIDS_GH_SBODY_SET_BY_GAME_TUNER">Одредено од Game Tuner</string>
+    <string name="MIDS_GH_SBODY_SHOW_THE_FLOATING_BUTTON">Прикажете го лебдечкото копче.</string>
+    <string name="MIDS_GH_SBODY_TAP_HERE_TO_SHOW_GAME_TOOLS_AS_A_FLOATING_BUTTON">Допрете тука за да го прикажете Game Tools како лебдечко копче.</string>
+    <string name="MIDS_GH_SBODY_TAP_HERE_TO_START_USING_GAME_LAUNCHER">Допрете тука за да почнете да го користите Game Launcher.</string>
+    <string name="MIDS_GH_SBODY_THIS_IS_THE_DEFAULT_BASIC_SETTING_APPLIED_TO_GAMEPLAY">Ова е стандардното основно поставување применето на играњето.</string>
+    <string name="MIDS_GH_SBODY_USED">Искористени</string>
+    <string name="MIDS_GH_SBODY_USE_THE_FRONT_CAMERA_TO_RECORD_YOURSELF_DURING_GAMEPLAY">Користете ја предната камера за да се снимате себеси при играње.</string>
+    <string name="MIDS_GH_SBODY_USE_THE_FRONT_CAMERA_TO_RECORD_YOURSELF_WHILE_RECORDING_YOUR_SCREEN">Користете ја предната камера за да се снимате себеси додека го снимате екранот.</string>
+    <string name="MIDS_GH_SBODY_YOUTUBE_GAME_VIDEOS_BASED_ON_YOUR_INSTALLED_GAMES">Видеа од игри на YouTube според Вашите инсталирани игри.</string>
+    <string name="MIDS_GH_TAB2_PLAYED_GAMES">Играни игри</string>
+    <string name="MIDS_GH_TAB2_RECORDED_VIDEOS">Снимени видеа</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DESELECT_ALL">Допрете двапати за да одизберете сѐ.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DESELECT_ALL_GAMES">Допрете двапати за да ги одизберете сите игри.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DOWNLOAD_GAME">Допрете двапати за да преземете игра.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_EDIT">Допрете двапати за менување.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_HIDE_ADDITIONAL_FIELDS">Допрете двапати за да се сокријат дополнителните полиња.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SELECT_ALL">Допрете двапати за да изберете сѐ.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SELECT_ALL_GAMES">Допрете двапати за да ги изберете сите игри.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SHOW_ADDITIONAL_FIELDS">Допрете двапати за да се прикажат дополнителните полиња.</string>
+    <string name="MIDS_GH_TBBODY_NAVIGATE_UP">Навигација нагоре.</string>
+    <string name="MIDS_GH_TBBODY_NOT_SELECTED">Не е избрано.</string>
+    <string name="MIDS_GH_TBBODY_PROCESSING">Се обработува.</string>
+    <string name="MIDS_GH_TBBODY_SELECTED">Избрано.</string>
+    <string name="MIDS_GH_TBBODY_SET_PROFILE_SIZE_TO_PD_PERCENT">Поставете ја големината на профилот на %d проценти.</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_CLOSE">Допрете за затворање.</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_DOWNLOAD_GAME">Допри за преземање игра.</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_VIEW_DETAILS">Допрете за да ги видите деталите.</string>
+    <string name="MIDS_GH_TBOPT_1_SELECTED">1 избрано</string>
+    <string name="MIDS_GH_TBOPT_ADD_APPS">Додај апликации</string>
+    <string name="MIDS_GH_TBOPT_BUTTON">Копче</string>
+    <string name="MIDS_GH_TBOPT_CANCEL">Откажи</string>
+    <string name="MIDS_GH_TBOPT_CLOSED">Затворено</string>
+    <string name="MIDS_GH_TBOPT_DECREASE_PROFILE_SIZE">Намали ја големината на профилот</string>
+    <string name="MIDS_GH_TBOPT_DISABLE">Оневозможи</string>
+    <string name="MIDS_GH_TBOPT_DISABLED">Оневозможено</string>
+    <string name="MIDS_GH_TBOPT_DOWNLOAD_RECOMMENDED_GAME">Преземи препорачана игра</string>
+    <string name="MIDS_GH_TBOPT_DROPDOWN_LIST">Паѓачка листа</string>
+    <string name="MIDS_GH_TBOPT_ENABLED">Овозможено</string>
+    <string name="MIDS_GH_TBOPT_FEATURED">Препорачано</string>
+    <string name="MIDS_GH_TBOPT_GAME_BOOST">Засилување на игри</string>
+    <string name="MIDS_GH_TBOPT_GAME_LAUNCHER">Game Launcher</string>
+    <string name="MIDS_GH_TBOPT_HEADER">Заглавје</string>
+    <string name="MIDS_GH_TBOPT_INCREASE_PROFILE_SIZE">Зголеми ја големината на профилот</string>
+    <string name="MIDS_GH_TBOPT_INSTALL">Инсталирај</string>
+    <string name="MIDS_GH_TBOPT_LINK">Поврзи</string>
+    <string name="MIDS_GH_TBOPT_LIST">Листа</string>
+    <string name="MIDS_GH_TBOPT_MORE">Повеќе</string>
+    <string name="MIDS_GH_TBOPT_NAVIGATE_UP">Движи се нагоре</string>
+    <string name="MIDS_GH_TBOPT_NOT_AVAILABLE">Недостапно</string>
+    <string name="MIDS_GH_TBOPT_NOT_SELECTED">Не е избрано</string>
+    <string name="MIDS_GH_TBOPT_NO_ITEMS_SELECTED">Не се избрани ставки</string>
+    <string name="MIDS_GH_TBOPT_OPEN">Отвори</string>
+    <string name="MIDS_GH_TBOPT_OVERLAY_SCREEN">Екран во преден план</string>
+    <string name="MIDS_GH_TBOPT_PD_PERCENT">%d проценти</string>
+    <string name="MIDS_GH_TBOPT_PD_SELECTED">%d избрани</string>
+    <string name="MIDS_GH_TBOPT_PLAY_STORE">Play Store</string>
+    <string name="MIDS_GH_TBOPT_POP_UP_MESSAGE">Појавна порака</string>
+    <string name="MIDS_GH_TBOPT_PROFILE_SOURCE">Извор на профилот</string>
+    <string name="MIDS_GH_TBOPT_RANKING_PD">Ранг %d</string>
+    <string name="MIDS_GH_TBOPT_SAVE_POWER_DURING_GAME">Штеди енергија при играње</string>
+    <string name="MIDS_GH_TBOPT_SEEK_CONTROL">Контрола на барањето</string>
+    <string name="MIDS_GH_TBOPT_SELECTED">Избрано</string>
+    <string name="MIDS_GH_TBOPT_SELECT_VIDEOS">Изберете видеа</string>
+    <string name="MIDS_GH_TBOPT_SETTINGS">Подесувања</string>
+    <string name="MIDS_GH_TBOPT_SIZE_CONTROL">Контрола на големина</string>
+    <string name="MIDS_GH_TBOPT_SWITCH">Префрли</string>
+    <string name="MIDS_GH_TBOPT_S_GAMES">S Games</string>
+    <string name="MIDS_GH_TBOPT_TEXT_FIELD">Текстуално поле</string>
+    <string name="MIDS_GH_TBOPT_TICKBOX">Квадратче за штиклирање</string>
+    <string name="MIDS_GH_TBOPT_UNINSTALL">Одинсталирај</string>
+    <string name="MIDS_GH_TBOPT_VIEW_BY">Прегледај според</string>
+    <string name="MIDS_GH_TBOPT_VIEW_TYPE">Вид преглед</string>
+    <string name="MIDS_GH_TPOP_BACK_KEY_LOCKED_DURING_GAMEPLAY">Копчето Назад е заклучено при играње.</string>
+    <string name="MIDS_GH_TPOP_CLOSE_ALL_GAMES_AND_TRY_AGAIN">Затворете ги сите игри и обидете се повторно.</string>
+    <string name="MIDS_GH_TPOP_CURRENTLY_PLAYING_PS">Моментално игра %s.</string>
+    <string name="MIDS_GH_TPOP_DRAG_QUICK_PANEL_DOWN_TO_SHOW_FLOATING_BUTTON_AGAIN">Повлечете ја брзата плоча надолу за повторно да го прикажете лебдечкото копче.</string>
+    <string name="MIDS_GH_TPOP_FAILED_TO_INSTALL_PS">Неуспешно инсталирање на %s.</string>
+    <string name="MIDS_GH_TPOP_FAILED_TO_RECORD_DEVICE_ERROR_OCCURRED">Не можеше да се сними. Дојде до грешка на уредот.</string>
+    <string name="MIDS_GH_TPOP_GAME_AUDIO_MUTED_WHEN_OPENED_VIA_PS_CHANGE_VOLUME_WHILE_GAME_OPEN">Звукот на играта ќе се исклучи кога е отворена преку %s. Сменете ја јачината на звукот додека играта е отворена.</string>
+    <string name="MIDS_GH_TPOP_GAME_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_MSG">Звукот на играта ќе се исклучи кога е отворена преку %s. Можете да ја смените јачината на звукот додека играта е отворена.</string>
+    <string name="MIDS_GH_TPOP_GAME_SHOWN_IN_185_C9_FULL_SCREEN_VIEW_IF_IT_DOESNT_FIT_ASPECT_RATIO_DISABLE_FULL_SCREEN_MODE">Играта е прикажана во преглед на цел екран 18.5:9. Ако не се совпаѓа со размерот на сликата, оневозможете го Режимот на цел екран.</string>
+    <string name="MIDS_GH_TPOP_MAXIMUM_NUMBER_OF_MINIMISED_APPS_HPD_ALREADY_REACHED">Веќе е достигнат максималниот број на минимизирани апликации (%d).</string>
+    <string name="MIDS_GH_TPOP_MEDIA_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_MSG">Звукот на медиумот ќе се исклучи кога играта е отворена преку %s. Можете да ја смените јачината на звукот додека играта е отворена.</string>
+    <string name="MIDS_GH_TPOP_MINIMISE_AND_ALIVE_ALREADY_ENABLED_IN_ANOTHER_GAME_MSG">Минимизирај и во живо веќе е овозможено во друга игра. Овозможи Минимизирај и во живо само во една игра истовремено.</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_DEVICE_MEMORY_TO_RECORD">Нема доволно меморија на уредот за снимање.</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_PHONE_MEMORY_TO_RECORD_GAME">Нема доволно меморија на телефонот за снимање на играта.</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_TABLET_MEMORY_TO_RECORD_GAME">Нема доволно меморија на таблетот за снимање на играта.</string>
+    <string name="MIDS_GH_TPOP_NO_ALERTS_DURING_GAME_ENABLED_ALL_ALERTS_WILL_BE_MUTED_AND_HIDDEN_DURING_GAMEPLAY">Без предупредувања во игра е овозможено. Сите предупредувања ќе бидат исклучени и сокриени за време на играњето.</string>
+    <string name="MIDS_GH_TPOP_NO_ALERTS_DURING_GAME_ENABLED_MSG">Без предупредувања во игра е овозможено. Звукот на повеќето предупредувања ќе биде исклучен и тие ќе бидат скриени за време на играњето. Сепак може сѐ уште да бидат прикажани некои предупредувања, вклучително и предупредувањата за дојдовни повици.</string>
+    <string name="MIDS_GH_TPOP_NO_GAME_AUDIO_RECORDED_VOLUME_MUTED">Нема снимен аудио-звук на играта. Звукот е исклучен.</string>
+    <string name="MIDS_GH_TPOP_NO_INTERRUPTIONS_ENABLED_ALL_CALLS_AND_ALERTS_WILL_BE_MUTED_AND_HIDDEN">Без прекини е вклучено. Сите повици и предупредувања ќе бидат стишани и сокриени.</string>
+    <string name="MIDS_GH_TPOP_NO_NETWORK_CONNECTION_DATA_ROAMING_DISABLED">Нема поврзување со мрежа. Податочниот роаминг е оневозможен.</string>
+    <string name="MIDS_GH_TPOP_NO_NETWORK_CONNECTION_MOBILE_DATA_TURNED_OFF">Нема поврзување со мрежа. Мобилните податоци се исклучени.</string>
+    <string name="MIDS_GH_TPOP_ONLY_INCOMING_CALLS_WILL_BE_DISPLAYED_ON_SCREEN">Само дојдовните повици ќе се прикажуваат на екранот.</string>
+    <string name="MIDS_GH_TPOP_P1SS_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_CHANGES_CAN_TAKE_UP_TO_P3SD_SECONDS">%1$s е засегнато од функциите на Game Launcher (на пример %2$s). Промените може да траат до %3$d секунди.</string>
+    <string name="MIDS_GH_TPOP_P1SS_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_P3SS">%1$s е засегнато од функциите на Game Launcher (на пример %2$s, %3$s).</string>
+    <string name="MIDS_GH_TPOP_P1SS_AND_P2SS_ENABLED">%1$s и %2$s се овозможени.</string>
+    <string name="MIDS_GH_TPOP_P1SS_HAS_BEEN_CATEGORISED_AS_A_GAME_GAME_LAUNCHER_FEATURES_HP2SS_WILL_BE_APPLIED_TO_THIS_APP">%1$s е категоризирана како игра. Функциите на Game Launcher (%2$s) ќе се применат на оваа апликација.</string>
+    <string name="MIDS_GH_TPOP_P1SS_NOT_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_CHANGES_CAN_TAKE_UP_TO_P3SD_SECONDS">%1$s не е засегнато од функциите на Game Launcher (на пример %2$s). Промените може да траат до %3$d секунди.</string>
+    <string name="MIDS_GH_TPOP_P1SS_NOT_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_P3SS">%1$s не е засегнато од функциите на Game Launcher (на пример %2$s, %3$s).</string>
+    <string name="MIDS_GH_TPOP_P1SS_P2SS_ENABLED">%1$s, %2$s е овозможено.</string>
+    <string name="MIDS_GH_TPOP_PROCESSING_ING">Се обработува...</string>
+    <string name="MIDS_GH_TPOP_PS_ENABLED">%s е овозможено.</string>
+    <string name="MIDS_GH_TPOP_PS_INSTALLED">%s е инсталирано.</string>
+    <string name="MIDS_GH_TPOP_PS_UPDATED">%s е ажурирано.</string>
+    <string name="MIDS_GH_TPOP_RECENTS_AND_BACK_KEYS_LOCKED_DURING_GAMEPLAY">Копчињата Последно и Назад се заклучени при играње.</string>
+    <string name="MIDS_GH_TPOP_RECENTS_KEY_LOCKED_DURING_GAMEPLAY">Копчето Последни е заклучено при играње.</string>
+    <string name="MIDS_GH_TPOP_RECORDED_VIDEO_SAVED_TO_DEVICE_MEMORY">Снименото видео е зачувано во меморијата на уредот.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_BECAUSE_GAME_SCREEN_WAS_LEFT_RECORDING_SAVED_AUTOMATICALLY">Снимањето е сопрено поради тоа што екранот на играта е напуштен. Снимката е зачувана автоматски.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DEVICE_ERROR_OCCURRED_VIDEO_NOT_SAVED">Снимањето запре. Дојде до грешка на уредот. Видеото не е сочувано.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LEAVING_APP_SCREEN_RECORDING_SAVED_AUTOMATICALLY">Снимањето е сопрено поради напуштање на екранот на апликацијата. Снимката е зачувана автоматски.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LEAVING_GAME_SCREEN_RECORDING_SAVED_AUTOMATICALLY">Снимањето е сопрено поради напуштање на екранот на играта. Снимката е зачувана автоматски.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LOW_BATTERY_RECORDING_SAVED_AUTOMATICALLY">Снимањето е сопрено поради слаба батерија. Снимката е зачувана автоматски.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_DEVICE_MEMORY_RECORDING_SAVED_AUTOMATICALLY">Снимањето е сопрено поради недоволно меморија на уредот. Снимката е зачувана автоматски.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_PHONE_MEMORY_RECORDING_SAVED_AUTOMATICALLY">Снимањето е сопрено поради недоволно меморија на телефонот. Снимката е зачувана автоматски.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_TABLET_MEMORY_RECORDING_SAVED_AUTOMATICALLY">Снимањето е сопрено поради недоволно меморија на таблетот. Снимката е зачувана автоматски.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_GAME_SCREEN_SWITCHED_TO_ANOTHER_SCREEN_VIDEO_SAVED">Снимањето запре. Екранот на играта се префрли на друг екран. Видеото е сочувано.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_MAXIMUM_FILE_SIZE_HP1SS_P2SS_REACHED_VIDEO_SAVED">Снимањето запре. Достигната е максималната големина на датотеката (%1$s %2$s). Видеото е зачувано.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_MAXIMUM_RECORDING_TIME_HPD_MINUTES_REACHED_VIDEO_SAVED">Снимањето запре. Достигнато е максималното време за снимање (%d минути). Видеото е сочувано.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_PHONE_ERROR_OCCURRED_VIDEO_NOT_SAVED">Снимањето запре. Дојде до грешка на телефонот. Видеото не е зачувано.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_TABLET_ERROR_OCCURRED_VIDEO_NOT_SAVED">Снимањето запре. Дојде до грешка на таблетот. Видеото не е зачувано.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_WITHIN_PD_SECONDS_VIDEO_NOT_SAVED">Снимањето запре во рок од %d секунди. Видеото не е сочувано.</string>
+    <string name="MIDS_GH_TPOP_REGISTRATION_REQUEST_FOR_PS_SUBMITTED">Барањето за регистрација за %s е поднесено.</string>
+    <string name="MIDS_GH_TPOP_SHORTCUT_ADDED">Додадена е кратенка.</string>
+    <string name="MIDS_GH_TPOP_SHORTCUT_ADDED_TO_HOME_SCREEN">Кратенката е додадена на почетниот екран.</string>
+    <string name="MIDS_GH_TPOP_TAP_THE_PROFILE_BUTTON_TO_STOP_RECORDING_DRAG_AND_DROP_TO_MOVE_BUTTON">Допрете на копчето Профил за да престанете да снимате. Повлечете и пуштете за да го поместите копчето.</string>
+    <string name="MIDS_GH_TPOP_THIS_APP_DOES_NOT_SUPPORT_PS_FUNCTION_OF_GAME_TOOLS">Оваа апликација не ја поддржува функцијата %s на Game Tools.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_ENABLED">Не може да се поврзе со мобилни мрежи додека е овозможен Авионски режим.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_ENABLE_OR_DISABLE_EXTENDED_PLAY_MODE_DURING_GAMEPLAY">Не може да се вклучи или исклучи Режим на продолжено играње при играње.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_ANOTHER_APP_USING_MICROPHONE">Не може да се снима. Друга апликација го користи микрофонот.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_AUDIO_IF_VOLUME_MUTED">Не може се снима звукот ако е исклучен.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_CAMERA_IN_USE">Не може да се снима. Се користи камерата.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_DURING_CALLS">Не може да се снима за време на повици.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_GAME_AUDIO_IF_VOLUME_MUTED">Не може се снима аудио-звукот на играта ако звукот е исклучен.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_GAME_ERROR_OCCURRED">Не може да се сними игра. Дојде до грешка.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_LOW_BATTERY">Не може да се снима. Батеријата е при крај.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_RECORDING_NOT_SUPPORTED_BY_THIS_GAME_DUE_TO_POLICY">Не може да се снима. Снимањето не е поддржано од играва поради политиката.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_VOICE_IF_GAME_VOLUME_TOO_HIGH">Не може да се снима глас ако звукот на играта е прегласен.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_VOICE_WHILE_VOLUME_SET_TOO_HIGH">Не може да се снима глас додека звукот е поставен на прегласно.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_USE_P1SS_CHECK_NOTIFICATION_PANEL_TO_ALLOW_THESE_PERMISSIONS_C_P2SS">Не може да се користи %1$s. Проверете ја таблата за известувања за да ги овозможите овие дозволи: %2$s.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_USE_P1SS_CHECK_NOTIFICATION_PANEL_TO_ALLOW_THIS_PERMISSION_C_P2SS">Не може да се користи %1$s. Проверете ја таблата за известувања за ја овозможите оваа дозвола: %2$s.</string>
+    <string name="MIDS_GH_TPOP_VIDEO_SAVED">Видеото е зачувано.</string>
+    <string name="MIDS_GH_TPOP_VOICE_MAY_NOT_BE_RECORDED_WELL_IF_GAME_VOLUME_TOO_HIGH">Гласот може да не се снима добро ако јачината на звукот на играта е превисока.</string>
+</resources>

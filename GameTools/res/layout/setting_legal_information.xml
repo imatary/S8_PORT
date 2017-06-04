@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:colorBackground" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/wv_legalInform" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressbar" android:visibility="visible" android:layout_width="48.0dip" android:layout_height="48.0dip" android:indeterminateOnly="true" style="@android:style/Widget.DeviceDefault.ProgressBar.Large" />
+    </FrameLayout>
+</LinearLayout>

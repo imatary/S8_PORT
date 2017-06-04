@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DREAM_GH_BODY_A_GAME_IS_IN_PROGRESS_NO_ALERTS_DURING_GAMES_IS_TURNED_ON">一个游戏正在进行中。已启用【游戏中关闭提醒】。</string>
+    <string name="DREAM_GH_BODY_BATTERY_USAGE">电量使用情况</string>
+    <string name="DREAM_GH_BODY_DATA_USAGE">流量使用量</string>
+    <string name="DREAM_GH_BODY_DONT_USE_SAVE_POWER_DURING_GAMES">游戏时不使用【省电】。</string>
+    <string name="DREAM_GH_BODY_FAVORITE_CATEGORIES">常用类别</string>
+    <string name="DREAM_GH_BODY_GAMEPAD_RECOMMENDED">建议使用游戏手柄</string>
+    <string name="DREAM_GH_BODY_GAMEPLAY_VIDEOS_RECORDED_FROM_YOUR_PHONE">您的手机录制的游戏过程视频。</string>
+    <string name="DREAM_GH_BODY_GAMES_WILL_OPEN_MUTED_YOU_CAN_CHANGE_THE_VOLUME_LATER">静音打开游戏。您可以在打开后更改音量。</string>
+    <string name="DREAM_GH_BODY_GAME_TOOLS">游戏工具</string>
+    <string name="DREAM_GH_BODY_GAME_TOOLS_KEEPS_ALL_YOUR_GAMES_IN_ONE_PLACE">游戏工具将把您所有的游戏集中在一处。</string>
+    <string name="DREAM_GH_BODY_LOCK_EDGE_TOUCH_PREVENTS_ACCIDENTAL_PHONE_EDGE_CONTACT_DURING_GAMEPLAY_MSG">锁定侧屏触控可防止游戏期间意外接触手机侧屏。您可以在游戏工具中更改此设置。</string>
+    <string name="DREAM_GH_BODY_LOCK_RECENT_AND_BACK_BUTTONS">锁定最近使用按钮和返回按钮</string>
+    <string name="DREAM_GH_BODY_LOCK_RECENT_AND_BACK_KEYS">锁定最近使用键和返回键</string>
+    <string name="DREAM_GH_BODY_LOW_RESOLUTION_FRAME_RATE_P1SD_P2SS">低分辨率，帧率 %1$d %2$s</string>
+    <string name="DREAM_GH_BODY_NORMAL_RESOLUTION_FRAME_RATE_P1SD_P2SS">标准分辨率，帧率 %1$d %2$s</string>
+    <string name="DREAM_GH_BODY_NO_ALERTS_DURING_GAME">游戏中不显示提醒</string>
+    <string name="DREAM_GH_BODY_PD_NGAMES_NPLAYED_N">"%d 个
+玩过的
+游戏
+"</string>
+    <string name="DREAM_GH_BODY_PD_TIMES_ABB">%d 次</string>
+    <string name="DREAM_GH_BODY_PERFORMANCE_TUNING_ADJUSTS_THE_PERFORMANCE_OF_THE_GAME_MSG">性能优化将调整游戏的性能。选择【高性能】可提升性能但会增加电量消耗。选择【省电】可节省电量但会降低性能。</string>
+    <string name="DREAM_GH_BODY_PLAYERS_ABB">玩家</string>
+    <string name="DREAM_GH_BODY_PLAY_TIME">游戏时间</string>
+    <string name="DREAM_GH_BODY_PLAY_TIME_ABB">游戏时间</string>
+    <string name="DREAM_GH_BODY_PRESSURE_TOUCH_LOCK_PREVENTS_ACCIDENTAL_SCREEN_CONTACT_DURING_GAMEPLAY_MSG">压力触控锁定可防止游戏期间意外接触屏幕。您可以在游戏工具中更改此设置。</string>
+    <string name="DREAM_GH_BODY_RECORD">录制</string>
+    <string name="DREAM_GH_BODY_SCREENSHOT">屏幕截图</string>
+    <string name="DREAM_GH_BODY_SCREEN_TOUCH_LOCK">屏幕触控锁定</string>
+    <string name="DREAM_GH_BODY_SEE_THE_CURRENT_APP_VERSION_AND_LEGAL_INFORMATION">查看当前应用程序版本和法律信息。</string>
+    <string name="DREAM_GH_BODY_SELECT_APPS_TO_ADD_TO_PS">选择要添加至%s的应用程序。</string>
+    <string name="DREAM_GH_BODY_SELECT_THE_FUNCTION_YOU_WANT_TO_ASSIGN_TO_THE_SHORTCUT_MSG">请选择要分配给快捷方式的功能。您也可以长按快捷方式更改其功能。</string>
+    <string name="DREAM_GH_BODY_TAP_TO_STOP_RECORDING">点击可停止录制。</string>
+    <string name="DREAM_GH_BODY_THE_GAME_TOOLS_BUTTON_LETS_YOU_C">游戏工具按钮可执行以下操作：</string>
+    <string name="DREAM_GH_BODY_THE_LATEST_VERSION_IS_INSTALLED">已安装最新版本。</string>
+    <string name="DREAM_GH_BODY_THE_MAXIMUM_RECORDING_FILE_SIZE_IS_4_GB_MSG">录制文件的大小上限为 4 GB。在设为最高画质的情况下，您可以录制大约 80 分钟的视频。若要延长录制时间，请降低视频分辨率和比特率。</string>
+    <string name="DREAM_GH_BODY_THE_NAVIGATION_BAR_DOESNT_AUTO_HIDE_DURING_GAMES_THIS_ISNT_RECOMMENDED_WITH_FULL_SCREEN_MODE">导航栏在游戏时不会自动隐藏。全屏模式下建议不要开启此功能。</string>
+    <string name="DREAM_GH_BODY_TIMES_PER_DAY_ABB">每天次数</string>
+    <string name="DREAM_GH_BODY_TIP_C_PRESS_AND_HOLD_THE_SHORTCUT_OR_CHANGE_THE_SHORTCUT_IN_GAME_TOOLS_SETTINGS">提示：请长按快捷方式或在游戏工具设置中更改快捷方式。</string>
+    <string name="DREAM_GH_BODY_TOTAL">总共</string>
+    <string name="DREAM_GH_BODY_TO_RECORD_GAMEPLAY_VIDEOS_ENABLE_GAME_LAUNCHER">若要录制游戏视频，请启用游戏中心。</string>
+    <string name="DREAM_GH_BODY_TO_STOP_RECORDING_TAP_THE_STOP_BUTTON_ON_THE_NAVIGATION_BAR">若要停止录制，请点击导航条上的停止按钮。</string>
+    <string name="DREAM_GH_BODY_TRY_OUT_USEFUL_FEATURES_SUCH_AS_SAVE_POWER_OPEN_MUTED_AND_GAME_TOOLS">尝试【省电】、【静音打开游戏】和【游戏工具】等实用的功能。</string>
+    <string name="DREAM_GH_BODY_USE_A_LOWER_RESOLUTION_AND_FRAME_RATE_TO_SAVE_BATTERY_LIFE">使用较低分辨率和帧率可延长电池使用时间。</string>
+    <string name="DREAM_GH_BODY_USE_A_LOWER_RESOLUTION_TO_SAVE_BATTERY_LIFE">使用较低分辨率可延长电池使用时间。</string>
+    <string name="DREAM_GH_BODY_YOU_PLAYED">您玩过</string>
+    <string name="DREAM_GH_BUTTON_ADD_APPS_20">添加应用程序</string>
+    <string name="DREAM_GH_BUTTON_AGREE_9">同意</string>
+    <string name="DREAM_GH_BUTTON_DISAGREE_9">不同意</string>
+    <string name="DREAM_GH_BUTTON_DISMISS_8">解除</string>
+    <string name="DREAM_GH_BUTTON_ENABLE_8">启用</string>
+    <string name="DREAM_GH_BUTTON_FIND_GAMES_22">查找游戏</string>
+    <string name="DREAM_GH_BUTTON_GAME_TOOLS_22">游戏工具</string>
+    <string name="DREAM_GH_BUTTON_HIDE_31">隐藏</string>
+    <string name="DREAM_GH_BUTTON_HIGH_PERFORMANCE_22">高性能</string>
+    <string name="DREAM_GH_BUTTON_NORMAL_PERFORMANCE_22">普通性能</string>
+    <string name="DREAM_GH_BUTTON_OK_8">确定</string>
+    <string name="DREAM_GH_BUTTON_OPEN_MUTED_24">静音打开游戏</string>
+    <string name="DREAM_GH_BUTTON_RESET_8">重置</string>
+    <string name="DREAM_GH_BUTTON_RESTART_22">重启</string>
+    <string name="DREAM_GH_BUTTON_RESTART_8">重启</string>
+    <string name="DREAM_GH_BUTTON_SAVE_POWER_22">省电</string>
+    <string name="DREAM_GH_BUTTON_SCREEN_TOUCH_LOCK_22">屏幕触控锁定</string>
+    <string name="DREAM_GH_BUTTON_SETTINGS_22">设置</string>
+    <string name="DREAM_GH_HEADER_ANNOUNCEMENTS">公告</string>
+    <string name="DREAM_GH_HEADER_GAMES">游戏</string>
+    <string name="DREAM_GH_HEADER_GAME_TOOLS">游戏工具</string>
+    <string name="DREAM_GH_HEADER_KEEP_NAVIGATION_BAR">保留导航栏</string>
+    <string name="DREAM_GH_HEADER_OPEN_MUTED">静音打开游戏</string>
+    <string name="DREAM_GH_HEADER_OTHER">其他</string>
+    <string name="DREAM_GH_HEADER_OTHER_APPS">其他应用程序</string>
+    <string name="DREAM_GH_HEADER_PRESSURE_TOUCH_LOCK">压力触控锁定</string>
+    <string name="DREAM_GH_HEADER_RECORD">录制</string>
+    <string name="DREAM_GH_HEADER_SHARE_VIA">分享通过</string>
+    <string name="DREAM_GH_HEADER_SHORTCUTS">快捷方式</string>
+    <string name="DREAM_GH_HEADER_TERMS_AND_CONDITIONS">条款和条件</string>
+    <string name="DREAM_GH_HEADER_TOUCH_LOCK">触控锁定</string>
+    <string name="DREAM_GH_HEADER_TUNE_PERFORMANCE">优化性能</string>
+    <string name="DREAM_GH_NPBODY_NO_APPS">没有应用程序</string>
+    <string name="DREAM_GH_NPBODY_NO_GAMES_AVAILABLE">没有游戏</string>
+    <string name="DREAM_GH_NPBODY_VERY_LOW_RESOLUTION_FRAME_RATE_P1SD_P2SS">极低分辨率，帧率 %1$d %2$s</string>
+    <string name="DREAM_GH_OPT_1080_PX">1080 像素</string>
+    <string name="DREAM_GH_OPT_360_PX">360 像素</string>
+    <string name="DREAM_GH_OPT_480_PX">480 像素</string>
+    <string name="DREAM_GH_OPT_540_PX">540 像素</string>
+    <string name="DREAM_GH_OPT_720_PX">720 像素</string>
+    <string name="DREAM_GH_OPT_ADD_TO_HOME_ABB">添加至主屏幕</string>
+    <string name="DREAM_GH_OPT_ALL_ABB2">全部</string>
+    <string name="DREAM_GH_OPT_ANNOUNCEMENTS_ABB">公告</string>
+    <string name="DREAM_GH_OPT_ANNOUNCEMENTS_ABB2">公告</string>
+    <string name="DREAM_GH_OPT_CAMERA">相机</string>
+    <string name="DREAM_GH_OPT_DISPLAY_GAME_ICONS_IN_APPS_AND_GAME_LAUNCHER_ABB">在应用程序屏幕和游戏中心中显示游戏图标</string>
+    <string name="DREAM_GH_OPT_GAME_ABB">游戏</string>
+    <string name="DREAM_GH_OPT_LAST_30_DAYS_ABB2">过去 30 天</string>
+    <string name="DREAM_GH_OPT_LAST_WEEK">上周</string>
+    <string name="DREAM_GH_OPT_LAST_WEEK_ABB">上周</string>
+    <string name="DREAM_GH_OPT_LIST_AS_GAME_ABB">列为游戏</string>
+    <string name="DREAM_GH_OPT_LIST_AS_OTHER_APP_ABB">列为其他应用程序</string>
+    <string name="DREAM_GH_OPT_MY_DIARY_ABB">我的日记</string>
+    <string name="DREAM_GH_OPT_NO_APPS_AVAILABLE_ABB">没有可用的应用程序</string>
+    <string name="DREAM_GH_OPT_OPEN_SOURCE_LICENSES_ABB">开源许可证</string>
+    <string name="DREAM_GH_OPT_RECORD_ABB">录制</string>
+    <string name="DREAM_GH_OPT_SCREENSHOT_ABB">屏幕截图</string>
+    <string name="DREAM_GH_OPT_SCREEN_TOUCH_LOCK_ABB">屏幕触控锁定</string>
+    <string name="DREAM_GH_OPT_SELECT_IMAGE_ABB">选择图片</string>
+    <string name="DREAM_GH_OPT_TERMS_AND_CONDITIONS">条款与条件</string>
+    <string name="DREAM_GH_OPT_USE_DEFAULT_ABB">使用默认设置</string>
+    <string name="DREAM_GH_PHEADER_ENABLE_GAME_LAUNCHER_Q">是否启用游戏中心？</string>
+    <string name="DREAM_GH_PHEADER_RESTART_GAME_Q">是否重启游戏？</string>
+    <string name="DREAM_GH_PHEADER_SELECT_SHORTCUT">选择快捷方式</string>
+    <string name="DREAM_GH_PHEADER_SHOW_GAME_TOOLS_Q">是否显示游戏工具？</string>
+    <string name="DREAM_GH_PHEADER_VIEW_FULL_SCREEN_Q">是否全屏查看？</string>
+    <string name="DREAM_GH_POP_ADDING_APP_ING">正在添加应用程序...</string>
+    <string name="DREAM_GH_POP_CANT_SAVE_POWER_WHILE_PLAYING_A_GAME_IN_HD">在高清模式下玩游戏时无法省电。</string>
+    <string name="DREAM_GH_POP_CHANGE_THE_APPS_THAT_CAN_APPEAR_ON_TOP">请更改可出现在顶部的应用程序。</string>
+    <string name="DREAM_GH_POP_CLEAR_PS_HISTORY_Q">是否清除%s的历史记录？</string>
+    <string name="DREAM_GH_POP_DELETE_PD_VIDEOS_Q">是否删除 %d 个视频？</string>
+    <string name="DREAM_GH_POP_DELETE_PS_HISTORY_Q">是否删除%s的历史记录？</string>
+    <string name="DREAM_GH_POP_ENABLE_GAME_TOOLS_Q">是否启用游戏工具？</string>
+    <string name="DREAM_GH_POP_FILE_SIZE_C_PD_MB_MSG">"文件大小：%d MB
+
+建议您通过 Wi-Fi 下载。使用您的移动网络可能会产生额外费用。"</string>
+    <string name="DREAM_GH_POP_GAME_ICONS_WILL_DISPLAY_IN_GAME_LAUNCHER_ONLY_YOU_CAN_CHANGE_THIS_OPTION_IN_GAME_LAUNCHER_SETTINGS">游戏图标将只显示在游戏中心中。您可以在游戏中心设置中更改此选项。</string>
+    <string name="DREAM_GH_POP_GET_NOTIFICATIONS_FOR_PROMOTIONS_AND_MARKETING_INFORMATION_FROM_PS">接收来自%s的促销通知和营销信息。</string>
+    <string name="DREAM_GH_POP_HIDE_GAME_ICONS_ON_APPS_SCREEN_Q">是否在应用程序屏幕中隐藏游戏图标？</string>
+    <string name="DREAM_GH_POP_RESET_SAVE_POWER_SETTING_TO_DEFAULT_Q">是否将省电设置重置为默认值？</string>
+    <string name="DREAM_GH_POP_THE_GAME_LAUNCHER_ICON_WILL_BE_REMOVED_FROM_YOUR_HOME_SCREEN_AND_APPS_MSG">游戏中心图标将从您的主屏幕和应用程序屏幕中移除。您可以在【设置】中启用游戏中心。</string>
+    <string name="DREAM_GH_POP_THIS_APP_WASNT_ADDED_AS_A_GAME_TO_USE_PS_FEATURES_ON_THE_APP_ADD_IT_AS_A_GAME">此应用程序未添加为游戏。若要对该应用程序使用%s功能，请将其添加为游戏。</string>
+    <string name="DREAM_GH_POP_TO_APPLY_YOUR_NEW_POWER_SETTINGS_RESTART_ANY_GAMES_THAT_ARE_CURRENTLY_RUNNING">若要应用新的电量设置，请重启所有当前运行的游戏。</string>
+    <string name="DREAM_GH_POP_TO_CHANGE_THE_SCREEN_VIEW_RESTART_YOUR_GAME">若要更改屏幕视图，请重启游戏。</string>
+    <string name="DREAM_GH_POP_TO_USE_GAME_LAUNCHER_YOU_NEED_TO_TURN_ON_APPS_THAT_CAN_APPEAR_ON_TOP_IN_GAME_LAUNCHER">为使用游戏中心，您需要对游戏中心启用【可出现在顶部的应用程序】。</string>
+    <string name="DREAM_GH_POP_TO_VIEW_IN_FULL_SCREEN_RESTART_YOUR_GAME">若要全屏查看，请重启游戏。</string>
+    <string name="DREAM_GH_POP_TO_VIEW_IN_FULL_SCREEN_RESTART_YOUR_GAME_FULL_SCREEN_MODE_MAY_CAUSE_GAME_TO_DISPLAY_INCORRECTLY">若要全屏查看，请重启游戏。全屏模式可能会导致游戏显示异常。</string>
+    <string name="DREAM_GH_POP_YOU_SELECTED_PD_VIDEOS">您已选择 %d 个视频。</string>
+    <string name="DREAM_GH_POP_YOU_WONT_SEE_GAME_ICONS_ON_THE_APPS_SCREEN">您将不会在应用程序屏幕中看到游戏图标。</string>
+    <string name="DREAM_GH_SBODY_BATTERY_REMAINING_C_PDP" formatted="false">电量剩余：%d%</string>
+    <string name="DREAM_GH_SBODY_ENJOY_A_FREE_GAME_FROM_SAMSUNG">享受三星提供的免费游戏</string>
+    <string name="DREAM_GH_SBODY_HANDY_FEATURES_TO_ENHANCE_GAMEPLAY">增强游戏体验的各种方便功能</string>
+    <string name="DREAM_GH_SBODY_MANAGE_ALL_YOUR_GAMES_IN_ONE_PLACE_AND_TRY_OUT_COOL_FEATURES">在同一位置管理您的全部游戏并尝试各种炫酷功能</string>
+    <string name="DREAM_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_FROM_YOUR_PHONE_MAY_ALSO_BE_RECORDED">录制游戏音频。这可能会同时录制您手机上的系统声音。</string>
+    <string name="DREAM_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_FROM_YOUR_TABLET_MAY_ALSO_BE_RECORDED">录制游戏音频。这可能会同时录制您平板电脑上的系统声音。</string>
+    <string name="DREAM_GH_SBODY_RECORD_GAMEPLAY_WITHOUT_A_PROFILE">录制游戏过程时不使用个人资料。</string>
+    <string name="DREAM_GH_SBODY_RECORD_YOURSELF_DURING_GAMEPLAY">游戏时录制您自己</string>
+    <string name="DREAM_GH_SBODY_SEE_THE_CURRENT_APP_VERSION_AND_LEGAL_INFORMATION">查看当前应用程序版本和法律信息</string>
+    <string name="DREAM_GH_SBODY_TAP_HERE_TO_GET_STARTED">点击此处开始</string>
+    <string name="DREAM_GH_TAB_GAMES_PLAYED">玩过的游戏</string>
+    <string name="DREAM_GH_TAB_VIDEOS_RECORDED">录制的视频</string>
+    <string name="DREAM_GH_TBBODY_CHECK_BOX">复选框</string>
+    <string name="DREAM_GH_TBBODY_SLIDER">滑块</string>
+    <string name="DREAM_GH_TMBODY_ABOUT_GAME_TOOLS">关于游戏工具</string>
+    <string name="DREAM_GH_TMBODY_GAME_ICON_DISPLAY">游戏图标显示</string>
+    <string name="DREAM_GH_TMBODY_GAME_TOOLS">游戏工具</string>
+    <string name="DREAM_GH_TMBODY_MARKETING_INFORMATION">营销信息</string>
+    <string name="DREAM_GH_TMBODY_MY_QUESTIONS">我的问题</string>
+    <string name="DREAM_GH_TMBODY_NO_ALERTS_DURING_GAMES">游戏中不显示提醒</string>
+    <string name="DREAM_GH_TMBODY_RECORD_VIDEOS">录制视频</string>
+    <string name="DREAM_GH_TMBODY_SHORTCUTS">快捷方式</string>
+    <string name="DREAM_GH_TMBODY_SHOW_EDGE_TOUCH_LOCK">显示侧屏触控锁定</string>
+    <string name="DREAM_GH_TMBODY_SHOW_PRESSURE_TOUCH_LOCK">显示压力触控锁定</string>
+    <string name="DREAM_GH_TMBODY_SHOW_TOUCH_LOCK">显示触控锁定</string>
+    <string name="DREAM_GH_TMBODY_TRY_GAME_LAUNCHER">试一试游戏中心</string>
+    <string name="DREAM_GH_TPOP_BATTERY_LOW_RECORDING_STOPPED_AND_SAVED">电量过低。录制已停止并保存。</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_CAMERA_IN_USE">相机正在使用中，无法录制。</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_GAME_AUDIO_VOLUME_MUTED">已静音，无法录制游戏音频。</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_LOW_BATTERY">电量不足，无法录制。</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_MICROPHONE_IN_USE">麦克风正在使用中，无法录制。</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VIDEOS_LARGER_THAN_P1SD_P2SS_RECORDING_STOPPED_AND_SAVED">最大可录制 %1$d %2$s 的视频。录制已停止并保存。</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VIDEO_TRY_AGAIN_LATER">无法录制视频，请稍后重试。</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VOICE_GAME_AUDIO_VOLUME_TOO_HIGH">游戏音量过高，无法录制语音。</string>
+    <string name="DREAM_GH_TPOP_CANT_USE_P1SS_SET_NOTIFICATIONS_TO_ALLOW_P2SS_PERMISSION_PERMISSIONS">无法使用%1$s。请将通知设为允许%2$s权限。</string>
+    <string name="DREAM_GH_TPOP_COULDNT_INSTALL_PS">无法安装%s</string>
+    <string name="DREAM_GH_TPOP_COULDNT_TAKE_SCREENSHOT_DELETE_SOME_FILES_AND_TRY_AGAIN">无法截取屏幕，请删除部分文件并重试。</string>
+    <string name="DREAM_GH_TPOP_GAME_LAUNCHER_FEATURES_ARENT_AVAILABLE_FOR_PS_IT_CAN_TAKE_UP_TO_5_SECONDS_TO_APPLY_CHANGES">游戏中心功能不适用于%s。至多需要 5 秒钟时间来应用更改。</string>
+    <string name="DREAM_GH_TPOP_GAME_LAUNCHER_FEATURES_ARE_AVAILABLE_FOR_PS_IT_CAN_TAKE_UP_TO_5_SECONDS_TO_APPLY_CHANGES">游戏中心功能适用于%s。可能需要 5 秒钟时间来应用更改。</string>
+    <string name="DREAM_GH_TPOP_GAME_SHOWN_IN_FULL_SCREEN_VIEW_IF_IT_DOESNT_LOOK_RIGHT_TURN_OFF_FULL_SCREEN">在全屏视图中显示游戏。如果看起来不合适，请关闭全屏模式。</string>
+    <string name="DREAM_GH_TPOP_NOT_ENOUGH_SPACE_TO_CONTINUE_RECORDING_VIDEO_SAVED">存储空间不足，无法继续录制。视频已保存。</string>
+    <string name="DREAM_GH_TPOP_NOT_ENOUGH_SPACE_TO_RECORD_VIDEO_DELETE_SOME_FILES_AND_TRY_AGAIN">没有足够的存储空间来录制视频，请删除部分文件并重试。</string>
+    <string name="DREAM_GH_TPOP_NO_ALERTS_DURING_GAMES_ENABLED_MSG">已启用【游戏中不显示提醒】。游戏期间所有提醒都将静音并隐藏。屏幕上只会显示来电。</string>
+    <string name="DREAM_GH_TPOP_NO_LONGER_ON_GAME_SCREEN_RECORDING_STOPPED_AND_SAVED">已离开游戏画面。录制已停止并保存。</string>
+    <string name="DREAM_GH_TPOP_P1SS_LISTED_AS_GAME_P2SS_FEATURES_AVAILABLE">%1$s已被列为游戏。可使用%2$s功能。</string>
+    <string name="DREAM_GH_TPOP_PS_ENABLED">%s已启用</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_AFTER_PD_SECONDS_VIDEO_NOT_SAVED">录制 %d 秒后停止。视频未保存。</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_BECAUSE_OF_PROBLEM_WITH_PHONE_VIDEO_NOT_SAVED">手机出现问题，已停止录制。视频未保存。</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_BECAUSE_OF_PROBLEM_WITH_TABLET_VIDEO_NOT_SAVED">平板电脑出现问题，已停止录制。视频未保存。</string>
+    <string name="DREAM_GH_TPOP_SEE_RECORDED_VIDEO_IN_GAME_LAUNCHER">在游戏中心查看录制的视频</string>
+    <string name="DREAM_GH_TPOP_VOICE_MAY_NOT_BE_RECORDED_IF_GAME_VOLUME_TOO_HIGH">如果游戏音量过高，可能无法录制语音。</string>
+    <string name="IDS_COM_BODY_GAME">游戏</string>
+    <string name="IDS_COM_BODY_REQUEST">请求</string>
+    <string name="IDS_COM_BUTTON_ADD">添加</string>
+    <string name="IDS_COM_BUTTON_SAVE">保存</string>
+    <string name="IDS_COM_POP_UNABLE_TO_FIND_ITEM_ABB">无法找到项目。</string>
+    <string name="IDS_COM_SK_SAVE_LITE">保存</string>
+    <string name="IDS_ES_BODY_UNABLE_TO_OPEN_PS_WHILE_EASY_MODE_ENABLED">简易模式启用时无法打开%s。</string>
+    <string name="IDS_GCTS_OPT_DIMMED_TTS">已变暗</string>
+    <string name="IDS_GFW_BODY_SEARCHING_ING">正在搜索...</string>
+    <string name="IDS_IDLE_BODY_A_NEW_VERSION_IS_AVAILABLE">新版本可用。</string>
+    <string name="IDS_IDLE_BODY_THE_LATEST_VERSION_IS_ALREADY_INSTALLED">已安装最新版本。</string>
+    <string name="IDS_IDLE_BODY_VERSION_PS">版本%1$s</string>
+    <string name="IDS_IDLE_BUTTON_UPDATE_ABB8">更新</string>
+    <string name="IDS_IDLE_HEADER_ABOUT_PS">关于%s</string>
+    <string name="IDS_IDLE_HEADER_UNABLE_TO_ADD">无法添加</string>
+    <string name="IDS_IDLE_MBODY_UNABLE_TO_USE_PS">无法使用%s</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_MSG">无法打开%s。请点击【设置】，进入【应用程序信息】>【权限】，然后授予以下权限并重试：</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_USE_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_MSG">无法使用%s。请点击【设置】，进入【应用程序信息】>【权限】，然后授予以下权限并重试：</string>
+    <string name="IDS_IDLE_SBODY_TO_USE_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_THE_FOLLOWING_PERMISSIONS_C">若要使用%s，请点击【设置】，进入【应用程序信息】>【权限】，然后授予以下权限：</string>
+    <string name="IDS_IV_BODY_MY_DEVICE">我的设备</string>
+    <string name="IDS_PB_SBODY_ALLOW_STORAGE_PERMISSION_TO_USE_ABB">允许存储使用权限</string>
+    <string name="IDS_ST_BODY_I_AGREE">我同意。</string>
+    <string name="IDS_ST_BUTTON_OFF_ABB_M_DISABLED">关</string>
+    <string name="IDS_ST_BUTTON_ON_ABB_M_ENABLED">开</string>
+    <string name="IDS_ST_HEADER_GAME_MODE">游戏模式</string>
+    <string name="IDS_ST_OPT_APPS_THAT_CAN_APPEAR_ON_TOP">可出现在顶部的应用程序</string>
+    <string name="IDS_ST_TPOP_CANT_CHANGE_THIS_SETTING_WHILE_PS_IS_ON">开启 %s 时无法更改此设置</string>
+    <string name="IDS_ST_TPOP_TO_UNPIN_APPLICATION_PRESS_AND_HOLD_THE_RECENTS_AND_BACK_KEYS_AT_THE_SAME_TIME">若要取消固定应用程序，请同时按住最近键和返回键。</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P1">游戏中心个人信息收集和使用同意书</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P10">"本公司制定了必要的隐私政策修订流程，以便持续改进隐私政策。此外，如果对隐私政策进行了修订，必须赋予其一个版本号，以便轻松识别修订详情。
+本政策自 2016 年 8 月 8 日起生效，任何修订都将在网站上公布 (或者以书面、电子邮件、电话、短信息等方式单独通知)。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P11">"1. 我们收集的信息以及信息收集方式
+(1) 我们收集的信息
+本公司在您注册或使用我们的服务时会收集以下信息。
+必需信息
+关于您的设备型号、通用唯一标识符 (UUID)、IP 地址、设备操作系统、时区、MCC、MNC、配置、安装在您设备上的应用程序包以及您的服务使用记录的信息
+本公司不会收集可能会显著侵犯您的隐私 (意识形态、信念、加入或退出联盟或政党、政治主张、健康和性生活信息等等) 的敏感信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P12">"一般情况下，如果您未满 14 周岁，本公司不会收集您的信息。
+如果本公司必须收集 14 周岁以下用户的个人信息才能供其使用该服务，公司将会提前获取其法定监护人的同意，在进行该工作过程中仔细管理个人信息，并在相关工作完成后立刻销毁该信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P13">"(2) 我们如何收集个人信息
+在运行或使用游戏中心服务的过程中收集信息
+通过用户的设备进行收集
+抽奖项目和参与活动
+借助自动生成信息收集工具进行收集
+本公司制定了一个流程，允许您针对《个人信息收集和使用同意书》文档的各项条款选择“我同意”或“我不同意”。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P14">"2. 我们如何使用收集到的信息
+我们会将收集的信息用于以下用途：
+(1) 按照合同为您提供服务
+将新安装的游戏应用程序自动放置在游戏中心文件夹中
+提供一些有用的功能，例如“游戏省电模式”、“游戏中关闭提醒”、“游戏工具”等等
+为用户提供优化的服务 (根据以往的服务使用情况提供自定义内容和推荐)
+(2) 改善服务及运用于广告、市场营销等
+统计分析、市场趋势预测、服务改进，以及新服务的研发
+提供活动或特别优惠等广告信息，并根据客户群体的特点提供服务和广告"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P15">"3. 信息的保留和使用期限
+原则上，一旦达到收集和使用您的个人信息的目的，该个人信息即被立刻销毁。
+但是，如果相关法律法规规定公司必须保留您的个人信息，则公司会遵照如下所述的适用规定保留您的个人信息。在此类情况下，公司应将个人信息转移至单独的数据库 (DB) 或另外一个存储位置。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P16">"5 年的合同或订阅撤销记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+5 年的付款和供货记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 年的消费者投诉和纠纷处理记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 年的信用信息收集、处理和使用记录 (Use and Protection of Credit Information Act (《信用信息利用及保护法》))
+6 个月的显示/广告记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 个月的互联网日志/位置跟踪数据 (Protection of Communications Secrets Act (《通信隐私保护法》))
+6 个月的其他用于验证通信的数据 (Protection of Communications Secrets Act (《通信隐私保护法》))"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P17">"4. 个人信息的销毁流程及方式
+您的个人信息将通过以下流程和方法进行销毁。
+(1) 销毁流程
+在达成目的之后，您的个人信息将会被转移至单独的 DB 中 (如果是纸质形式，则转移至单独的档案柜中)，并根据内部政策和其他相关法律项下的信息保护理由 (参见“信息的保留和使用期限”) 保留一段时间，然后再销毁。转移至单独 DB 中的个人信息不得用于除存储之外的任何其他目的，法律另有规定时除外。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P18">"(2) 销毁方式
+以电子文件格式存储的个人信息应采用使其无法再现的技术方式进行删除。
+印在纸上的个人信息应撕碎或焚毁。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P19">"5. 委托及海外传输所收集的个人信息
+本公司将个人信息的处理委托给如下所述的外部专门代理机构，以提供服务。仅在必要时，才出于服务履行目的而将个人信息的处理委托给每个服务的各个代理机构。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P2">"1. 我们收集的信息
+三星电子株式会社 (以下简称“公司”) 在您注册或使用我们的服务时会收集以下信息。
+当您同意我们收集和使用您的个人信息时，您有权拒绝我们收集和使用不是本服务必需的个人信息。
+有关我们如何处理您的信息的详细信息，请参阅游戏中心“设置”>“关于游戏中心”界面中披露的“隐私政策”。然而，如果本协议条款和隐私政策之间存在任何不一致或冲突，应以本协议条款为准。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P20">"当委托代理机构处理个人信息时，为了确保对个人信息的保护，本公司应明确规定严格遵守个人信息保护相关的说明、个人信息相关的保密条款、禁止向第三方提供信息、发生事故时的责任承担、委托期限、完成信息处理之后个人信息的返还或销毁等等，且本公司应对此进行监督，以确保代理机构安全处理个人信息。
+如果代理机构或委托的工作发生改变，将通过网站通知进行公布 (或者以书面或电子邮件、电话、短信息等方式单独通知)。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P21">"6. 向第三方提供个人信息
+一般情况下，本公司不会将您的个人信息提供给第三方。但是，以下情况例外：
+根据法律规定，或者调查机关出于调查目的按照法律规定的程序和方式要求时
+所提供的账单付款服务需要时
+信息在以一种无法用来识别特定个人的方式处理之后，出于统计、学术或市场研究目的而提供
+用户提前同意提供
+本公司提供或共享您的个人信息时，除上述所列情况之外，仅在经过一个单独流程获得您的同意之后，才会提供该信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P22">"7. 用户及其法定代表的权利以及如何行使这些权利
+用户及其法定代表始终可以请求访问、修改、删除、结束处理以及撤回与注册用户本人或 14 周岁以下用户的个人信息相关的同意。
+您可以拨打我们的主要联系电话 (1588-3366) 或者以书面方式、电话或电子邮件联系隐私主管。我们将立刻采取必要措施。
+在下列情况下，本公司可能会拒绝您访问、修改或删除您的所有或部分个人信息：
+法律禁止或限制访问
+可能会危害他人生命或身体，或者不当侵犯他人的财产或其他利益"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P23">"如果用户请求修改个人信息中的错误，在修改完成之前，相关的个人信息不会被使用或提供给第三方。此外，如果已将错误信息提供给第三方，我们将立即向第三方通知修改的结果。
+当用户或其法定代表请求删除或结束处理个人信息时，本公司将按照“3. 信息的保留和使用期限”中的规定进行处理，并确保不会出于任何其他目的访问或使用该信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P24">"请准确输入您最新的个人信息。您须对输入不准确信息导致的任何事故承担责任，而且如果您输入虚假信息 (例如盗用他人信息)，则可能会丧失会员特权。
+您有义务保护自己并且不侵犯他人信息，并有权让自己的信息受到保护。请小心，不要泄露包括密码在内的个人信息，并注意不得破坏他人的个人信息，包括任何帖子。如果您无法履行这些责任，破坏了他人的信息和尊严，您将受到“Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.”(《促进信息通信网络利用及信息保护法》) 或其他规定的处罚。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P25">"8. 安装、运行及拒绝自动收集个人信息的系统
+(仅在受“Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.”(《促进信息通信网络利用及信息保护法》) 约束的情况下适用)
+本公司利用的是“Cookie”，它通常用于存储和查找用户信息。Cookie 是一种非常小的文本文件，由运行本公司网站的服务器发送至用户的浏览器中，并存储在用户计算机的硬盘中。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P26">"(1) Cookie 的用途
+Cookie 用于以下目的：执行自动登录功能，分析会员和非会员的访问频率或访问时间，识别用户偏好和兴趣并跟踪用户，通过确认不同活动的参与率以及访问次数提供有针对性的市场营销和个性化的服务。
+(2) 如何阻止 Cookie
+您有权选择安装 Cookie。因此，您可以在您的网页浏览器中设置选项，允许所有 Cookie，每次存储 Cookie 时请求您确认，或者阻止所有 Cookie。
+不过，如果您阻止 Cookie，可能会在使用我们的服务时遇到困难。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P27">"如何设置 Cookie (针对 Internet Explorer 8.0)
+：从“工具”菜单中选择“Internet 选项”。点击“隐私”选项卡。
+使用“设置”来设定您可接受的 Cookie 等级。
+如何查看接收的 Cookie (针对 Internet Explorer 8.0)
+：从“工具”菜单中选择“Internet 选项”。
+点击“常规”选项卡，点击“浏览历史记录”中的“设置”，再点击“查看文件”进行查看。
+如何阻止 Cookie (针对 Internet Explorer 8.0)
+：从“工具”菜单中选择“Internet 选项”。点击“隐私”选项卡。
+使用“设置”来设定成最高等级“阻止所有 Cookie”。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P28">"9. 其他与隐私相关的政策
+(1) 保护您隐私的技术和管理措施
+本公司将采取以下技术和管理措施来处理您的个人信息，以确保个人信息的安全，使其不会丢失、被盗、泄露、改变或篡改。
+内部管理计划的制定与实施
+本公司已制定并实施内部管理计划，以安全处理您的个人信息。
+本公司检查隐私保护措施是否得以执行，以及主管人员是否遵守内部隐私工作组的规定等，并确保在发现问题时立即采取整改措施。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P29">"访问控制系统的安装和运行
+本公司通过使用入侵防御系统来控制未经授权的外部访问，并尽力为其配备所有可用的技术系统来获得安全系统。
+防止伪造和篡改访问记录的措施
+本公司存储和管理个人信息处理系统的访问记录，并使用安全功能防止伪造或篡改访问记录。
+个人信息的加密
+您的个人信息采用密码保护；通过对文件和传输数据进行加密或文件锁定来存储和管理个人信息，重要数据则通过额外的安全功能进行保护。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P3">"必需信息
+关于您的设备型号、通用唯一标识符 (UUID)、IP 地址、设备操作系统、时区、MCC、MNC、配置、安装在您设备上的应用程序包以及您的服务使用记录的信息
+您可以拒绝同意我们收集和使用必需信息，但这样您将无法使用我们的服务，因为这类信息是我们为您提供服务所必需的。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P30">"防止黑客攻击
+本公司利用疫苗程序来预防计算机病毒造成的危害。定期更新疫苗程序；当突然出现新病毒时，会尽快提供可用疫苗，以防侵害个人信息。
+本公司采用了 SSL (安全套接层)，可通过使用加密算法在网络中安全传输个人信息。
+每台服务器使用一个入侵防御系统和脆弱性评估系统等来全面预防黑客攻击等外部入侵。
+个人信息单独存放在单独的服务器中，不与一般信息混合。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P31">"尽量减少主管人员人数并对他们进行教育
+本公司限制以下人员访问用户的个人信息：直接与用户合作执行营销职能的人员、执行个人信息管理的人员 (例如，主管隐私保护的人员) 以及其他因工作性质而无法避免处理个人信息的人员。
+本公司为处理个人信息的员工提供常规的内部培训以及关于新安全技术、保护个人信息职责等方面的委外培训。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P32">"本公司利用在加入公司时授予全体员工的担保抵押来防止人员的信息泄露，并有适当的内部流程来检查隐私政策的实施和员工的合规性。
+在彻底维护安全的同时，处理个人信息的人员的职责和责任所发生的转移，以及入职后和离职后发生隐私相关事故的责任也已划分明确。
+机房、数据中心和数据存储室被设为特殊保护区域，并控制这些区域的人员进出。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P33">"(2) 关于提供网站链接的政策
+本公司可为用户提供前往其他公司的网站或资源的链接，用户可通过三星的服务使用由第三方开发的产品和服务。例如，可通过 Samsung Apps 下载和使用第三方应用程序。
+在此类情况下，本公司无法控制第三方的网站、资源、产品和服务，因此不会对所提供产品、服务或资源的使用承担责任或提供保证。当您通过点击本公司网站上的链接而重定向到第三方的网站时，重定向网站的隐私政策与本公司无关。请仔细阅读重定向网站的隐私政策。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P34">"(3) 帖子管理政策
+本公司十分重视您发布的帖子，并且尽力保护您的帖子不被修改、篡改或删除。但是，以下情况例外：
+类似垃圾帖子
+通过散布虚假信息诽谤他人以便诋毁他人的帖子
+未经同意泄露他人个人信息的帖子
+侵犯本公司或第三方权利 (例如，知识产权) 的帖子
+与版块主题无关的帖子"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P35">"为了促进令人满意的版块用途，当未经同意便张贴他人个人信息时，本公司可删除该帖子的某些部分，或者用符号等替换这些内容；如果帖子可移至另一个主题版块，则在该帖子中注明移动路径，以免造成误会。
+在其他情况下，可在明确警告或单独提醒之后删除该帖子。
+基本上，您拥有与您的帖子相关的所有权利并承担所有责任。此外，您的帖子中主动披露的信息无法受到保护，因此在披露信息之前请慎重考虑。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P36">"(4) 关于拒绝未经授权收集电子邮件地址的政策
+本公司拒绝通过电子邮件收集程序或任何其他技术系统未经授权收集张贴的电子邮件地址。如果您违反本政策，可能会受到“Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.”(《促进信息通信网络利用及信息保护法》) 或其他规定的处罚。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P37">"(5) 广告信息的传输
+在您明确拒绝接收的情况下，本公司不会出于商业目的传输广告信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P38">"如果您同意接收产品信息、电子简报等电子邮件，本公司将按照以下规定填写电子邮件的主题和正文，以便您可以轻松识别这些邮件。
+“广告资料”字样不会在主题行显示，而邮件正文的主要内容会在主题行显示。
+邮件正文会注明您可以退订的发件人姓名、电子邮件地址和电话号码，以及您如何轻松退订。
+当出于商业目的通过电子邮件以外的媒介 (例如，传真、手机短信息等) 发送广告信息时，本公司将按照适用的法律采取必要的措施，例如，在信息开头标注“广告资料”字样。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P39">"10. 隐私主管和客服部信息
+本公司有一名指定的隐私主管及相关部门负责保护您的个人信息，并处理隐私相关的投诉。
+(1) 客服部
+客服部：Graphic R&amp;D Group, Mobile Communications Business, Samsung Electronics Co., Ltd.
+电话：1588-4730
+联系我们：https://help.content.samsung.com
+(2) 隐私主管和负责隐私相关工作的部门
+隐私主管：隐私秘书处
+负责隐私相关工作的部门：全球隐私办公室
+电话：1588-4730
+联系我们：privacy.sec@samsung.com"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P4">"2. 我们如何使用收集到的信息
+我们会将收集的信息用于以下用途：
+(1) 按照合同为您提供服务
+将新安装的游戏应用程序自动放置在游戏中心文件夹中
+提供一些有用的功能，例如“游戏省电模式”、“游戏中关闭提醒”、“游戏工具”等等
+为用户提供优化的服务 (根据以往的服务使用情况提供自定义内容和推荐)
+(2) 改善服务及运用于广告、市场营销等
+统计分析、市场趋势预测、服务改进，以及新服务的研发
+提供活动或特别优惠等广告信息，并根据客户群体的特点提供服务和广告"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P40">"(3) 其他机构
+您可以向隐私主管或相关负责部门报告所有因使用本公司服务而引起的隐私相关的投诉。本公司将会及时向您提供恰当的回应。
+如果您希望上报其他侵犯隐私的问题或者寻求相关建议，请联系以下机构：
+隐私侵犯投诉中心 (www.118.or.kr/ 118)
+最高检察官办公室；互联网犯罪调查中心 (www.spo.go.kr / 02-3480-3600)
+国家警署；网络恐怖主义响应中心 (www.ctrc.go.kr / 02-392-0330)
+隐私政策版本号：V1.0
+隐私政策有效日期：2016 年 8 月 8 日"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P5">"3. 信息的保留和使用期限
+原则上，一旦达到收集和使用您的个人信息的目的，该个人信息即被立刻销毁。
+但是，如果相关法律法规规定公司必须保留您的个人信息，则公司会遵照如下所述的适用规定保留您的个人信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P6">"5 年的合同或订阅撤销记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+5 年的付款和供货记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 年的消费者投诉和纠纷处理记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 年的信用信息收集、处理和使用记录 (Use and Protection of Credit Information Act (《信用信息利用及保护法》))
+6 个月的显示/广告记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 个月的互联网日志/位置跟踪数据 (Protection of Communications Secrets Act (《通信隐私保护法》))
+6 个月的其他用于验证通信的数据 (Protection of Communications Secrets Act (《通信隐私保护法》))"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P7">游戏中心隐私政策</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P8">"三星电子株式会社 (以下简称“公司”) 十分重视您的个人信息，并承诺遵守“Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.” (《促进信息通信网络利用及信息保护法》) 和“Personal Information Protection Act” (《个人信息保护法》)。
+在本隐私政策中，本公司将告知您，我们针对从您那里收到的个人信息的使用目的和使用方法，以及将会采取什么措施保护您的隐私。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P9">"0. 一般条款
+“个人信息”指关于生命个体的信息，可通过姓氏、名字、居民登记号或社会保险号等数据识别相关个人。它包括虽然自身无法用于识别个人身份、但容易结合其他信息来识别特定个人的信息。
+本公司通过在游戏中心“设置”>“关于游戏中心”界面中披露的“隐私政策”，让您可随时轻松访问本隐私政策。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P1_LEGALHPRASE">"游戏中心 - 隐私声明
+本隐私声明描述了您的信息是如何进行收集、使用和分享，从而用于向您提供游戏中心 (以下简称“服务”) 的，因而非常重要。根据本隐私声明，三星电子株式会社 (以下简称“三星”、“我们”、“我方”、“我们的”) 将对此类信息负责，并且负责收集、使用以及分享此类信息。如果您使用本服务，则将视为您无条件地同意遵守本隐私声明的条款。
+本隐私声明系三星隐私政策 (参见 https://account.samsung.com/membership/pp) 之补充，如果本隐私声明的条款和三星隐私政策的条款存在不一致或冲突，应以本隐私声明的条款为准。
+如果您对此隐私声明或我们的做法存有疑问，您可以通过下文中列出的联系方式联系我们。
+"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P2_LEGALHPRASE">"我们会收集和使用哪些信息?
+我们会收集有关您安装的应用程序名称信息以及有关您所玩游戏的信息。我们可能会将此类信息用于以下用途：
+提供服务功能；
+根据您过去的服务使用活动提供有关移动游戏的个性化建议；
+用于评估和分析我们的市场、客户、产品和服务；
+了解人们如何使用服务，以便改进服务并开发新的服务。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P3_LEGALHPRASE">"我们会向谁披露您的信息?
+未经您同意，我们不会向第三方披露您的信息以用于其自身的业务目的。但是，我们可以向代表三星参与服务提供过程的第三方披露您的信息。
+如果您存有任何疑问，您应该与谁联系?
+如果您对游戏中心存有任何疑问，请通过我们的客户支持渠道联系我们。如果您仅对您的信息存有疑问，请通过以下网站联系我们：
+http://help.content.samsung.com
+"</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_CHINA">1. 许可授予</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_OPEN">1. 许可授予</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_US">1.许可授予</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_CHINA">根据这些 TOS，三星授予您安装、访问和使用本服务所需的有限、非独占且可撤销的许可。此外，本服务或任何更新（定义见下文）提供的服务和功能可能会由于某些因素而有所不同或受到限制，这些因素包括但不限于您所在的国家或地区、使用的设备、操作系统或网络运营商。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_OPEN">根据这些 TOS，三星授予您安装、访问和使用本服务所需的有限、非独占且可撤销的许可。此外，本服务或任何更新（定义见下文）提供的服务和功能可能会由于某些因素而有所不同或受到限制，这些因素包括但不限于您所在的国家或地区、使用的设备、操作系统或网络运营商。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_US">根据这些 TOS，三星授予您安装、访问和使用本服务所需的有限、非独占且可撤销的许可。此外，本服务或任何更新（定义见下文）提供的服务和功能可能会由于某些因素而有所不同或受到限制，这些因素包括但不限于您所在的国家或地区、使用的设备、操作系统或网络运营商。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_CHINA">2. 保留权利和所有权</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_OPEN">2. 保留权利和所有权</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_US">2.保留权利和所有权</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_CHINA">三星保留本服务中包含的以及与本服务相关的、但未在这些 TOS 中明确授予您的所有权利。本服务受版权及其他知识产权法律和条约保护。三星或其许可方拥有本服务的所有权、版权和其他知识产权。为避免疑义，本服务为授权予您，而非销售予您。未经三星批准，您不得向任何第三方转让这些 TOS 或本文授予或施加的任何关于本服务的权利或义务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_OPEN">三星保留本服务中包含的以及与本服务相关的、但未在这些 TOS 中明确授予您的所有权利。本服务受版权及其他知识产权法律和条约保护。三星或其许可方拥有本服务的所有权、版权和其他知识产权。为避免疑义，本服务为授权予您，而非销售予您。未经三星批准，您不得向任何第三方转让这些 TOS 或本文授予或施加的任何关于本服务的权利或义务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_US">三星保留本服务中包含的以及与本服务相关的、但未在这些 TOS 中明确授予您的所有权利。本服务受版权及其他知识产权法律和条约保护。三星或其许可方拥有本服务的所有权、版权和其他知识产权。为避免疑义，本服务为授权予您，而非销售予您。未经三星批准，您不得向任何第三方转让这些 TOS 或本文授予或施加的任何关于本服务的权利或义务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_CHINA">3. 限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_OPEN">3. 限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_US">3.限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_CHINA">不得 (i) 反向工程、反编译、反汇编或以其他方式试图发现本服务的源代码或算法；(ii) 修改本服务的任何功能或使其瘫痪；(iii) 基于本服务创建衍生作品；以及 (iv) 公开展示、公开执行、转让、出售、许可、分发、出租、租赁、出借、再许可本服务或提供关于本服务的商业托管服务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_OPEN">不得 (i) 反向工程、反编译、反汇编或以其他方式试图发现本服务的源代码或算法；(ii) 修改或禁用本服务的任何功能；(iii) 基于本服务创建衍生作品；以及 (iv) 出租、租赁、出借、再许可本服务或提供关于本服务的商业托管服务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_US">不得 (i) 反向工程、反编译、反汇编或以其他方式试图发现本服务的源代码或算法；(ii) 修改本服务的任何功能或使其瘫痪；(iii) 基于本服务创建衍生作品；以及 (iv) 公开展示、公开执行、转让、出售、许可、分发、出租、租赁、出借、再许可本服务或提供关于本服务的商业托管服务；(v) 侵犯我方或与您使用本服务相关的任何第三方的知识产权（此处“使用”以本协议授权范围为限）；</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_CHINA">4. 更新、更改或暂停本服务</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_OPEN">4. 更新、更改或暂停本服务</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_US">(vi) 以非法方式、出于违法目的或以任何不符合这些 TOS 的方式使用本服务，或有恶意或欺诈行为，如侵入本服务或任何操作系统，或在本服务或任何操作系统中插入恶意代码（包括病毒及有害数据）；(vii) 以可能损害系统、导致系统瘫痪、降低或影响系统性能、加重系统负担，或危及系统安全或干扰其他用户的方式使用本服务；以及 (viii) 收集或获取本服务或我方系统中的任何信息或数据，或者企图破译传输到运行本服务的服务器或来自该服务器的任何内容。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_CHINA">三星可随时提供或发布本服务的更新或升级（以下简称“更新”），包括但不限于漏洞修复程序、服务增强功能、新功能、删除现有功能或对本服务进行修改。更新将受这些 TOS 的约束，除非此类更新另行提供相应的条款和条件，在这种情况下，更新应受这些单独条款和条件的约束。在适用法律允许的范围内，系统可能会根据接收相应更新的重要程度及时地自动下载并安装安全软件更新、重大漏洞修补程序或其他重要更新。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_OPEN">三星可随时提供或发布本服务的更新或升级（以下简称“更新”），包括但不限于漏洞修复程序、服务增强功能、新功能、删除现有功能或对本服务进行修改。更新将受这些 TOS 的约束，除非此类更新另行提供相应的条款和条件，在这种情况下，更新应受这些单独条款和条件的约束。系统可能会根据接收此类更新的重要程度及时地自动下载并安装安全软件更新、重大漏洞修补程序或其他重要更新。三星明确保留在不通知的情况下随时更改、暂停、取消、限制使用或禁用本服务或其任何部分的访问权限的权利，且无需承担任何责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_US">4. 更新、更改或暂停本服务</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_CHINA">5. 第三方服务和内容</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_OPEN">5. 第三方服务和内容</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_US">三星可随时提供或发布本服务的更新或升级（以下简称“更新”），包括但不限于漏洞修复程序、服务增强功能、新功能、删除现有功能或对本服务进行修改。更新将受这些 TOS 的约束，除非此类更新另行提供相应的条款和条件，在这种情况下，更新应受这些单独条款和条件的约束。系统可能会根据接收此类更新的重要程度及时地自动下载并安装安全软件更新、重大漏洞修补程序或其他重要更新。三星明确保留在不通知的情况下随时更改、暂停、取消、限制使用或禁用本服务或其任何部分的访问权限的权利，且无需承担任何责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_CHINA">通过本服务，您也可能获得第三方服务和/或内容。三星不在任何方面对任何第三方服务或内容作任何担保或声明，包括但不限于这些服务和内容的质量、准确性、有效性、不含病毒、不侵犯第三方权利并且遵守所有适用的法律或法规。第三方服务和内容的使用可能会受第三方供应商的使用条款、或者任何许可协议、隐私政策或其他此类协议的约束。本服务的某些部分受开源许可约束，在这种情况下，在使用本服务的这一部分时，此类开源许可的条款优先于这些 TOS 的规定。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_OPEN">通过本服务，您也可能获得第三方服务和/或内容。三星不在任何方面对任何第三方服务或内容作任何担保或声明，包括但不限于这些服务和内容的质量、准确性、有效性、不含病毒、不侵犯第三方权利并且遵守所有适用的法律或法规。第三方服务和内容的使用可能会受第三方供应商的使用条款、或者任何许可协议、隐私政策或其他此类协议的约束。本服务的某些部分受开源许可约束，在这种情况下，在使用本服务的这一部分时，此类开源许可的条款优先于这些 TOS 的规定。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_US">5.监控权 - 第三方服务和内容</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_CHINA">服务条款</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_OPEN">服务条款</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_US">服务条款</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_CHINA">6. 同意收集和使用数据</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_OPEN">6. 同意收集和使用数据</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_US">5.1 监控权。三星有权但没有义务监控您对本服务的使用情况、您的帐户、内容和通信，并由三星自行决定它们是否违反这些 TOS 的规定。三星保留收集关于本服务使用情况的数据（包括许可密钥号及其他被视为相关的信息）的权利，以确保本服务的使用符合这些 TOS 的规定。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_CHINA">您确认并同意，三星和/或由三星委托的各方可收集和使用必要的信息，以提供本服务和更新并改进或增强本服务。我们将始终按照三星隐私政策的规定对您的信息加以处理，详细政策信息请访问 https://account.samsung.com/membership/pp。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_OPEN">您确认并同意，三星和/或由三星委托的各方可收集和使用必要的信息，以提供本服务和更新并改进或增强本服务。我们将始终按照三星隐私政策的规定对您的信息加以处理，详细政策信息请访问 https://account.samsung.com/membership/pp。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_US">任何未经授权的使用行为均会被三星视为违反这些 TOS 的规定。您同意不以电子或其他方式阻止传输遵守这些 TOS 规定所需的数据。任何阻止这些遵守 TOS 所需数据的行为均被视为违反这些 TOS 的规定，并可能导致您对本服务的使用权利立即终止。三星保留监控或参与您与其他用户之间的争端的权利，但无义务这样做。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_CHINA">7. 数据访问</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_OPEN">7. 数据访问</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_US">5.2 第三方服务和内容。通过本服务，您也可能获得第三方服务和/或内容。三星不在任何方面对任何第三方服务或内容作任何担保或声明，包括但不限于这些服务和内容的质量、准确性、有效性、不含病毒、不侵犯第三方权利并且遵守所有适用的法律或法规。第三方服务和内容的使用可能会受第三方供应商的使用条款、或者任何许可协议、隐私政策或其他此类协议的约束。本服务的某些部分受开源许可约束，在这种情况下，在使用本服务的这一部分时，此类开源许可的条款优先于这些 TOS 的规定。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_CHINA">本服务的某些功能可能需要您的移动设备能够访问互联网，并且可能受到您的网络或互联网供应商所施加的限制的约束。本服务可能需要通过移动网络访问互联网，这可能会产生额外的费用，具体取决于您的付款计划。此外，您对本服务的某些功能的使用可能受到您的设备硬件或数据访问权的适用性和性能的影响。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_OPEN">本服务的某些功能可能需要您的移动设备能够访问互联网，并且可能受到您的网络或互联网供应商所施加的限制的约束。本服务可能需要通过移动网络访问互联网，这可能会产生额外的费用，具体取决于您的付款计划。此外，您对本服务的某些功能的使用可能受到您的设备硬件或数据访问权的适用性和性能的影响。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_US">6.同意收集和使用数据</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_CHINA">8. 遵守法律</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_OPEN">8. 遵守法律</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_US">您确认并同意，三星和/或由三星委托的各方可收集和使用必要的信息，以提供本服务和更新并改进或增强本服务。我们将始终按照三星隐私政策的规定对您的信息加以处理，详细政策信息请访问 https://account.samsung.com/membership/pp。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_CHINA">您确认并同意，在使用本服务时遵守所有适用的法律和法规，包括但不限于所有适用的出口限制法律和法规。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_OPEN">您确认并同意，在使用本服务时遵守所有适用的法律和法规，包括但不限于所有适用的出口限制法律和法规。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_US">7.数据访问</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_CHINA">9. 终止</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_OPEN">9. 终止</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_US">本服务的某些功能可能需要您的移动设备能够访问互联网，并且可能受到您的网络或互联网供应商所施加的限制的约束。本服务可能需要通过移动网络访问互联网，这可能会产生额外的费用，具体取决于您的付款计划。此外，您对本服务的某些功能的使用可能受到您的设备硬件或数据访问权的适用性和性能的影响。您自行负责承担网络供应商收取的与使用本服务相关的一切费用。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_CHINA">这些 TOS 在终止之前一直有效。您可以通过停止使用本服务并卸载、删除和退还由三星提供的所有相关软件、文档和其他材料（包括备份副本）来终止这些 TOS。如果您未遵守这些 TOS，三星将自动终止您根据这些 TOS 享有的权利，且不会事先通知。这些 TOS 终止后，您必须立即停止对本服务的所有使用。明确起见，三星可能会在提前三十 (30) 天通知您后，再行终止这些 TOS 和本服务（通过服务网站、应用程序中的弹出信息和电子邮件等方式）。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_OPEN">这些 TOS 在终止之前一直有效。您可以通过停止使用本服务并卸载、删除和退还由三星提供的所有相关软件、文档和其他材料（包括备份副本）来终止这些 TOS。如果您未遵守这些 TOS，三星将自动终止您根据这些 TOS 享有的权利，且不会事先通知。这些 TOS 终止后，您必须立即停止对本服务的所有使用。明确起见，三星可能会在提前三十 (30) 天通知您后，再行终止这些 TOS 和本服务（通过服务网站、应用程序中的弹出信息和电子邮件等方式）。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_US">8.遵守法律</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_CHINA">10. 担保免责声明</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_OPEN">10. 担保免责声明</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_US">您确认并同意，在使用本服务时遵守所有适用的法律和法规，包括但不限于所有适用的出口限制法律和法规。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_CHINA">在适用法律所允许的最大范围内，本服务按“原样”在“现有”基础上提供，三星不做任何种类的明示或暗示担保。在适用法律允许的最大范围内，三星不做任何明示、暗示或法定担保，包括但不限于有关适销性、质量或工艺令人满意、针对特定用途的适用性、可靠性或可用性、准确性、不含病毒、安宁使用、不侵犯第三方权利或不侵害其他权利的暗示担保。有些司法辖区不允许免除或限制暗示担保，因此上述免除或限制规定可能不适用于您。您从三星或其附属公司获取的任何口头或书面建议或信息，都不应视为将会改变三星针对本服务做出的此担保免责声明，也不应视为将会构成三星做出的任何种类的担保。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_OPEN">在适用法律所允许的最大范围内，本服务按“原样”在“现有”基础上提供，三星不提供任何种类的明示或暗示的担保或合同条件。在适用法律允许的最大范围内，三星不做任何明示、暗示或法定担保，包括但不限于有关适销性、质量或工艺令人满意、针对特定用途的适用性、可靠性或可用性、准确性、不含病毒、安宁使用、不侵犯第三方权利或不侵害其他权利的暗示担保。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_US">9.终止</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_CHINA">重要信息 – 请仔细阅读。这些服务条款（以下简称“TOS”）是您与三星电子株式会社和/或其附属公司（以下统称“三星”）之间就游戏中心及其中包含的任何相关软件或文档（以下统称“服务”）达成的法律协议。同意这些 TOS 或者安装或以其他方式使用本服务，即表示您同意遵守这些 TOS。如果您不同意这些 TOS，请不要安装或使用本服务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_OPEN">重要信息 – 请仔细阅读。这些服务条款（以下简称“TOS”）是您与三星电子株式会社和/或其附属公司（以下统称“三星”）之间就游戏中心及其中包含的任何相关软件或文档（以下统称“服务”）达成的法律协议。同意这些 TOS 或者安装或以其他方式使用本服务，即表示您同意遵守这些 TOS。如果您不同意这些 TOS，请不要安装或使用本服务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_US">重要信息 – 请仔细阅读。这些服务条款（以下简称“TOS”）是您与三星电子株式会社和/或其附属公司（以下统称“三星”）之间就游戏中心及其中包含的任何相关软件或文档（以下统称“服务”）达成的法律协议。同意这些 TOS 或者安装或以其他方式使用本服务，即表示您同意遵守这些 TOS。如果您不同意这些 TOS，请不要安装或使用本服务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_CHINA">11. 责任限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_OPEN">有些司法辖区不允许免除或限制暗示担保，因此上述免除或限制规定可能不适用于您。您从三星或其附属公司获取的任何口头或书面建议或信息，都不应视为将会改变三星针对本服务做出的此担保免责声明，也不应视为将会构成三星做出的任何种类的担保。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_US">9.1 有效日期。这些 TOS 自您接受这些 TOS 时起生效，或自您下载、访问或以其他方式使用本服务时起生效。本服务无预定终止日期，可持续至三星决定终止本服务时或这些 TOS 根据本文条款的规定终止时。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_CHINA">除由于故意或重大过失行为外，三星不对因使用或无法使用本服务、其内容或功能所引起的或与之相关的任何损害负责，包括但不限于由于错误、疏忽、中断、缺陷、操作或传输延误、计算机病毒、连接失败、网络收费所导致的或与之相关的损害，以及所有其他直接损害，即使三星已被告知此类损害发生的可能性。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_OPEN">11. 责任限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_US">9.2 终止。如果您未遵守或三星有理由怀疑您未遵守任何这些 TOS 规定，则三星将在不通知您的情况下，自行以不限制三星的其他权利和补救措施（所有这些都已明确保留）的方式立即终止您对本服务的访问权限并终止这些 TOS，而您仍将对终止日期前（包括终止日期在内）的所有应付款项（如有）负责。您也可通过停止使用本服务并卸载、删除和退还由三星提供的所有相关软件、文档和其他材料（包括备份副本）来终止这些 TOS。这些 TOS 终止后，您必须立即停止对本服务的所有使用。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_CHINA">三星不对任何间接、特殊、偶然、惩戒性或后果性损害负责。某些司法辖区不允许排除或限制附带或后果性损害，因此，上述排除或限制规定可能不适用于您。尽管存在上述规定，对于您因使用本服务所引起的，或者基于这些 TOS 的任何其他规定所主张的所有损失、损害以及相关诉讼（包括但不限于基于合同、民事侵权行为或任何其他事由主张的损失、损害和讼诉），三星对您的赔偿总额都不应超出您为使用此服务专门支付给三星的金额。这些 TOS 中的上述限制、除外责任和免责声明将在适用法律所允许的最大范围内应用，即使所有补救措施都未能达到其基本目的也是如此。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_OPEN">三星不对因使用或无法使用本服务、其内容或功能所引起的或与之相关的任何损害负责，包括但不限于由于错误、疏忽、中断、缺陷、操作或传输延误、计算机病毒、连接失败、网络收费所导致的或与之相关的损害，以及所有其他直接、间接、特殊、附带、惩戒性或后果性损害，即使三星已被告知可能发生此类损害也是如此。某些司法辖区不允许排除或限制附带或后果性损害，因此，上述排除或限制规定可能不适用于您。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_US">10.担保免责声明</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_CHINA">12 .适用的法律</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_OPEN">尽管存在上述规定，对于您因使用本服务所引起的，或者基于这些 TOS 的任何其他规定所主张的所有损失、损害以及相关诉讼（包括但不限于基于合同、民事侵权行为或任何其他事由主张的损失、损害和讼诉），三星对您的赔偿总额都不应超出您为使用此服务专门支付给三星的金额。这些 TOS 中的上述限制、除外责任和免责声明将在适用法律所允许的最大范围内应用，即使所有补救措施都未能达到其基本目的也是如此。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_US">本服务按“原样”、“原位置”和“原可用性”提供，不含任何种类的担保。三星及其许可方不对本服务提供任何种类或性质的任何明示或默示的声明、担保或保证，并明确否认所有此类担保，包括但不限于对适销性、针对特定用途的适用性和非侵权性的任何默示担保。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_CHINA">这些 TOS 受您所属司法辖区的法律的制约，但不考虑其法律冲突规定。这些 TOS 不受《联合国国际货物销售合同公约》的约束，在此明确排除后者的适用性。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_OPEN">12. 适用的法律</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_US">在不限制上述免责声明的情况下，三星及其许可方不对以下内容提供声明、担保或保证：本服务或其内容将 (i) 以不间断、及时、安全或无错误的方式运作，(ii) 始终可用或不包含任何有害组成部分或错误，(iii) 安全无虞或免受未经授权的访问（包括交付给您的内容或您提供的信息），或 (iv) 准确、完整或可靠，本服务的质量令您满意，或错误将得到更正。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_CHINA">13. 争议解决</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_OPEN">这些 TOS 受您所属司法辖区的法律的制约，但不考虑其法律冲突规定。这些 TOS 不受《联合国国际货物销售合同公约》的约束，在此明确排除后者的适用性。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_US">您从三星或其附属公司获取的任何口头或书面建议或信息，都不应视为将会改变三星针对本服务做出的此担保免责声明，也不应视为将会构成三星做出的任何种类的担保。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_CHINA">如果因这些 TOS 或您使用本服务引起的争议、争论或分歧不能协商一致解决，则应接受您所属司法辖区的法院的非专属性司法管辖。尽管有以上规定，三星仍可能会在任何具有司法管辖权的法院申请禁令救济（或同等种类的紧急法律救济）。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_OPEN">13. 争议解决</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_US">11.责任限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_CHINA">14. 完整协议</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_OPEN">如果因这些 TOS 或您使用本服务引起的争议、争论或分歧不能协商一致解决，则应接受您所属司法辖区的法院的非专属性司法管辖。尽管有以上规定，三星仍可能会在任何具有司法管辖权的法院申请禁令救济（或同等种类的紧急法律救济）。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_US">在法律允许的最大范围内，在任何情况下，三星及其许可方都不对您的任何间接、偶然、附带、特殊、衍生性以及惩戒性赔偿或利润损失承担任何责任，即使三星已被告知此类损害发生的可能性。无论基于何种责任理论，无论是欺诈、歪曲事实、违反合同、疏忽、人身伤害、产品责任、侵权还是任何其他理论，无论三星是否已被告知此类损害发生的可能性，此限制都将始终适用。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_CHINA">这些 TOS 是您与三星之间就本服务达成的完整协议，将取代其他所有之前或同期的与本服务或这些 TOS 涵盖的任何其他主题相关的口头或书面沟通、提议和表述。如果这些 TOS 的任何条款被认为无效、无约束力、无法执行或非法，则其他条款将继续保持完全的效力。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_OPEN">14. 完整协议</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_US">这表示，您在此放弃源自三星及其许可方的任何间接、偶然、特殊、衍生性、惩戒性或惩罚性的损害或利润损失的所有权利。对于您对任何其他方提出的可能需要三星为该方做出赔偿的任何索赔，此限制及弃权同样适用。对于任何数据丢失、与本服务相关联的安全违规行为、本服务中的任何内容、视频或通信，或其他因使用本服务而引起的问题，无论诉讼形式或索赔依据如何，我们都不承担任何责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART39_LEGALPHASE_OPEN">这些 TOS 是您与三星之间就本服务达成的完整协议，将取代其他所有之前或同期的与本服务或这些 TOS 涵盖的任何其他主题相关的口头或书面沟通、提议和表述。如果这些 TOS 的任何条款被认为无效、无约束力、无法执行或非法，则其他条款将继续保持完全的效力。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART39_LEGALPHASE_US">如果您选择与本服务的其他用户通信或直接与其会面，则我们不对可能发生在您和其他用户之间的通信或任何会面承担任何责任。如果您与我们产生争端或对本服务不满意，终止使用本服务是您将获得的唯一补救措施。我们不对您承担任何其他义务或责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_CHINA">关于本服务，请仔细阅读下列注意事项和免责声明：</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_OPEN">关于本服务，请仔细阅读下列注意事项和免责声明：</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_US">关于本服务，请仔细阅读下列注意事项和免责声明：</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART40_LEGALPHASE_US">12.赔偿</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART41_LEGALPHASE_US">对于任何及所有因以下行为引起的第三方索赔、诉讼、责任、损失、损坏、判决、费用和支出，包括律师费（以下统称为“索赔”），您将为三星及其母公司、子公司和关联公司、其所有高级职员、董事、代理和员工以及代表三星行事的任何方进行赔偿、免除其责任并使其免受损失：(i) 您或您允许使用本服务的任何人在使用本服务时不符合这些 TOS 条款规定，(ii) 您或您允许使用本服务的任何人违反这些 TOS 的规定，或 (iii) 您或您允许使用本服务的任何人违反法律、法规或侵犯任何第三方的权利。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART42_LEGALPHASE_US">13.一般条款</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART43_LEGALPHASE_US">13.1 法律选择。这些 TOS（包括其所有修订和修正内容）受纽约法律约束并根据这些法律进行解释，但不考虑其法律冲突或法律选择原则。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART44_LEGALPHASE_US">13.2 仲裁。使用本服务，即表示您无条件同意并接受：(i) 对于因本服务或确定本条款的范围或适用性而引起的、与之相关或以任何方式与其有关联的您针对三星实体、三星实体的高级职员、董事、代理和员工（以下统称为“三星实体”）提出的任何索赔、纠纷或争议（无论是合同、侵权行为还是其他），都将由 JAMS 管理的具有约束力的终局仲裁全权解决，并按 JAMS 的规定由独任仲裁员裁判；</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART45_LEGALPHASE_US">(ii) 本条款根据涉及洲际贸易的交易制定，应受到《联邦仲裁法》（以下简称“FAA”）9 U.S.C. §§ 1-16 规定约束；(iii) 仲裁应在纽约州纽约市进行；(iv) 仲裁员应依照这些 TOS 的条款和条件及本文引用的任何其他经您同意且与本服务相关的协议进行裁判；(v) 仲裁员应该采用与 FAA 一致的纽约法律和适用的诉讼时效，且应尊重法律认可的特权声明；</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART46_LEGALPHASE_US">(vi) 任何当局均无权处理任何需要在集体或代表基础上仲裁的索赔，仲裁只能裁定您和/或有关三星实体的个人的索赔；仲裁员不得将其他当事人或当事方的类似索赔与基于本协议的案件作并案处理或将其加入基于本协议的案件；您不得提出或参与针对我们的集体诉讼；(vii) 仲裁员无权对您或任何三星实体作出具有给付惩罚性赔偿内容的裁决；(viii) 如果要发起针对任何三星实体的仲裁，必须支付的行政性费用和保证金超过一百二十五美元 (US$125)，并且您无法（或根据 JAMS 的规定不需要）支付超过这一数额的任何费用或保证金，则三星同意代您支付和/或转交这些费用，具体由仲裁员进行最终分配。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART47_LEGALPHASE_US">此外，如果您能够证明仲裁费用与诉讼费用相比过于高昂，并且仲裁员认为有必要防止仲裁费用过高，三星将为您支付与仲裁相关的申请和审理费用；以及 (ix) 除上述第 (vi) 小节外，如果此仲裁条款的任何部分被视为无效、不可执行或非法，或与 JAMS 的规定存在任何冲突，则此仲裁条款的其余部分将仍然有效并应根据其条款进行解释，无效、不可执行、非法或冲突条款不包含在内。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART48_LEGALPHASE_US">但是，如果上述第 (vi) 小节被认定为无效、不可执行或非法，则此全部仲裁条款都将宣告无效，无论是您还是三星都无权对争端进行仲裁。有关 JAMS 和/或 JAMS 规定的更多信息，请访问其网站：www.jamsadr.com。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART49_LEGALPHASE_US">13.3 可分割性。如果这些 TOS 中的任何条款或规定被任何司法或行政机关裁定为无效或不可执行，此类判决不应影响这些 TOS 中的其余条款和规定的可执行性效力。这些 TOS 中的其余规定依然有效，并将根据其条款进行解释。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_CHINA">b) 在“游戏省电”模式下，屏幕显示的分辨率可能与原内容分辨率不同。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_OPEN">b) 在“游戏省电”模式下，屏幕显示的分辨率可能与原内容分辨率不同。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_US">b) 在“游戏省电”模式下，屏幕显示的分辨率可能与原内容分辨率不同。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART50_LEGALPHASE_US">13.4 继续有效。这些 TOS 的第 2、3、10、11、12 和 13 条以及任何其他根据性质应继续生效的规定，在这些 TOS 期满或提前终止后仍然有效并具有约束力。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART51_LEGALPHASE_US">13.5 标题。这些 TOS 中包含的条款标题仅供参考之用，不应影响这些 TOS 的含义或解释。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART52_LEGALPHASE_US">13.6 无弃权。若三星在任何时候未能执行这些 TOS 的任何规定，或三星在任何时候未要求您执行这些 TOS 的任何规定，都不得以任何方式解释为三星在当前或未来放弃此类规定的权利，也不得以任何方式影响三星日后执行此类规定的权利。三星明确放弃这些 TOS 的任何规定、条件或要求，都不应解释为放弃任何在未来遵守此类规定、条件或要求的义务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART53_LEGALPHASE_US">13.7 第三方网站。我们可能会在本服务中提供链接或其他材料，让您可以浏览或重定向到第三方网站（如社交网络平台）。我们与这些第三方的服务、网站或内容毫无联系，也不对其承担责任或予以认可。如果您对这些其他公司的实践有任何疑问，您应查看其使用条款和其他政策。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART54_LEGALPHASE_US">13.8 完整协议。这些 TOS 是您与三星之间就本服务达成的完整协议，将取代其他所有之前或同期的与本服务或这些 TOS 涵盖的任何其他主题相关的口头或书面沟通、提议和表述。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_CHINA">c) 在“游戏中关闭提醒”模式下，您可能无法看到某些弹出通知，包括但不限于来电、闹钟或其他推送通知。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_OPEN">c) 在“游戏中关闭提醒”模式下，您可能无法看到某些弹出通知，包括但不限于来电、闹钟或其他推送通知。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_US">c) 在“游戏中关闭提醒”模式下，您可能无法看到某些弹出通知，包括但不限于来电、闹钟或其他推送通知。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_CHINA">d) 您仅可在适用的法律法规（包括与版权和知识产权相关的法律法规）的许可范围内使用本服务。任何与通过本服务显示或访问的内容相关的知识产权均属于各内容的所有者。此类内容可能受版权法或其他知识产权法以及相关条约的保护，而且可能需要遵守提供此类内容的第三方的使用条款。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_OPEN">d) 您仅可在适用的法律法规（包括与版权和知识产权相关的法律法规）的许可范围内使用本服务。任何与通过本服务显示或访问的内容相关的知识产权均属于各内容的所有者。此类内容可能受版权法或其他知识产权法以及相关条约的保护，而且可能需要遵守提供此类内容的第三方的使用条款。相关内容的所有者可能会禁止您通过某些方法使用该内容。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_US">d) 您仅可在适用的法律法规（包括与版权和知识产权相关的法律法规）的许可范围内使用本服务。任何与通过本服务显示或访问的内容相关的知识产权均属于各内容的所有者。此类内容可能受版权法或其他知识产权法以及相关条约的保护，而且可能需要遵守提供此类内容的第三方的使用条款。相关内容的所有者可能会禁止您通过某些方法使用该内容。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_CHINA">相关内容的所有者可能会禁止您通过某些方法使用该内容。除非三星另有规定，否则您应遵守以下条款：(i) 三星未授予您任何使用此类内容的权利，三星也不保证此类内容会一直对您有效；而且 (ii) 您不得以非法方式使用下列资料或将下列资料用于商业目的，包括通过访问本服务获得的视频、照片、图片、图形、插图、音频以及其他类似资料（即“数字材料”），对于这些数字材料，您也不得在其作为本服务一部分的原定用途范围之外使用。您同样确认并同意，您不会创建或发布任何非法内容，并且对自己创建或发布的所有内容承担全部责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_OPEN">除非三星另有规定，否则您应遵守以下条款：(i) 三星未授予您任何使用此类内容的权利，三星也不保证此类内容会一直对您有效；而且 (ii) 您不得以非法方式使用下列资料或将下列资料用于商业目的，包括通过访问本服务获得的视频、照片、图片、图形、插图、音频以及其他类似资料（即“数字材料”），对于这些数字材料，您也不得在其作为本服务一部分的原定用途范围之外使用。您同样确认并同意，您不会创建或发布任何非法内容，并且对自己创建或发布的所有内容承担全部责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_US">除非三星另有规定，否则您应遵守以下条款：(i) 三星未授予您任何使用此类内容的权利，三星也不保证此类内容会一直对您有效；而且 (ii) 您不得以非法方式使用下列资料或将下列资料用于商业目的，包括通过访问本服务获得的视频、照片、图片、图形、插图、音频以及其他类似资料（即“数字材料”），对于这些数字材料，您也不得在其作为本服务一部分的原定用途范围之外使用。您同样确认并同意，您不会创建或发布任何非法内容，并且对自己创建或发布的所有内容承担全部责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_CHINA">e) 在使用“精选视频”时，由于第三方服务供应商的搜索技术限制，搜索结果可能与您的预期不符。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_OPEN">e) 在使用“精选视频”时，由于第三方服务供应商的搜索技术限制，搜索结果可能与您的预期不符。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_US">e) 在使用“精选视频”时，由于第三方服务供应商的搜索技术限制，搜索结果可能与您的预期不符。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_CHINA">f) 本服务可能需要通过移动数据访问互联网，这可能会产生额外的费用，具体取决于您与相应网络供应商之间的数据计划。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_OPEN">f) 本服务可能需要通过移动数据访问互联网，这可能会产生额外的费用，具体取决于您与相应网络供应商之间的数据计划。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_US">f) 本服务可能需要通过移动数据访问互联网，这可能会产生额外的费用，具体取决于您与相应网络供应商之间的数据计划。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART1_LEGALPHASE_US">针对游戏工具及其中包含的任何相关软件或文件（下文简称为“服务”），您确认并同意以下条款：</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART1_LEGALPHRASE_OPEN">针对游戏工具及其中包含的任何相关软件或文件（下文简称为“服务”），您确认并同意以下条款：</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART2_LEGALPHASE_US">a) 本服务将访问您的联系人、相机、存储以及麦克风，以便您可以利用本服务。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART2_LEGALPHRASE_OPEN">a) 本服务将访问您的联系人、相机、存储和麦克风。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART3_LEGALPHASE_US">b) 在“游戏中关闭提醒”模式下，您可能无法看到某些弹出通知，包括但不限于来电、闹钟或其他推送通知。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART3_LEGALPHRASE_OPEN">b) 在“游戏中关闭提醒”模式下，您可能无法看到某些弹出通知，包括但不限于来电、闹钟或其他推送通知。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART4_LEGALPHASE_US">c) 您仅可在适用的法律法规（包括与版权和知识产权相关的法律法规）的许可范围内使用本服务。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART4_LEGALPHRASE_OPEN">c) 您仅可在适用的法律法规（包括与版权和知识产权相关的法律法规）的许可范围内使用本服务。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART5_LEGALPHRASE_OPEN">d) 您使用的与本服务相关的任何第三方应用程序（包括但不限于游戏）由此类应用程序的所有者提供。此类第三方应用程序可能受版权法或其他知识产权法以及相关条约的保护，而且可能需要遵守相关第三方的使用条款。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART6_LEGALPHASE_US">e) 您同样确认并同意，您不会创建或发布任何非法内容，并且对自己创建或发布的内容承担全部责任。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART6_LEGALPHRASE_OPEN">根据应用程序的使用条款或法律规定，可能会禁止您将此类第三方应用程序的内容用于某些用途。除非三星另有规定，否则您应同意以下条款：(i) 三星未授予您使用此类第三方内容的任何权利，也不保证相关方持续为您提供此类内容；而且 (ii) 您同意，不得出于商业目的或以非法方式使用下列资料，包括通过访问本服务获得的视频、照片、图片、图形、插图、音频以及其他类似资料（即“数字材料”），对于这些数字材料，您也不得在其作为本服务一部分的预期用途范围之外使用。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART7_LEGALPHRASE_OPEN">e) 您同样确认并同意，您对自己创建或发布的任何内容承担全部责任。</string>
+    <string name="LDS_GH__POP_GAME_TOOLS_DISCLAIMER_PART5_LEGALPHASE_US">d) 本服务涉及的知识产权和与通过本服务显示或访问的内容相关的知识产权均属于各内容的所有者。此类内容可能受版权法或其他知识产权法以及相关条约的保护，而且可能需要遵守提供此类内容的第三方的使用条款。相关内容的所有者可能会禁止您将这类内容用于其他用途。除非三星另有规定，否则您应遵守以下条款：(i) 三星未授予您任何使用此类内容的权利，三星也不保证此类内容会一直对您有效；而且 (ii) 您不得以非法方式使用下列资料或将下列资料用于商业目的，包括通过访问本服务获得的视频、照片、图片、图形、插图、音频以及其他类似资料（即“数字材料”），对于这些数字材料，您也不得在其作为本服务一部分的原定用途范围之外使用。</string>
+    <string name="MIDS_GHUB_TPOP_APP_RUNNING">应用程序正在运行</string>
+    <string name="MIDS_GHUB_TPOP_BACK_KEY_LOCKED_WHILE_USING_APP">使用应用程序时锁定返回键</string>
+    <string name="MIDS_GHUB_TPOP_NO_ALERTS_WHILE_USING_APP_ENABLED">已启用【使用应用程序时免打扰】</string>
+    <string name="MIDS_GHUB_TPOP_NO_ALERTS_WHILE_USING_APP_ENABLED_ALL_NOTIFICATIONS_WILL_BE_MUTED_AND_HIDDEN_WHILE_USING_APP_ONLY_INCOMING_CALLS_WILL_BE_SHOWN">已启用【使用应用程序时免打扰】。使用应用程序期间将禁止并隐藏所有通知，仅显示来电。</string>
+    <string name="MIDS_GHUB_TPOP_RECENTS_AND_BACK_KEYS_LOCKED_WHILE_USING_APP">正在使用应用程序，最近使用键和返回键已被锁定。</string>
+    <string name="MIDS_GHUB_TPOP_RECENTS_KEY_LOCKED_WHILE_USING_APP">使用应用程序时锁定最近使用键</string>
+    <string name="MIDS_GH_BODY_1_HOUR">1 小时</string>
+    <string name="MIDS_GH_BODY_1_HOUR_ABB">1 小时</string>
+    <string name="MIDS_GH_BODY_1_HOUR_AGO">1 小时前</string>
+    <string name="MIDS_GH_BODY_1_MINUTE">1 分钟</string>
+    <string name="MIDS_GH_BODY_1_MINUTE_AGO">1 分钟前</string>
+    <string name="MIDS_GH_BODY_1_TIME_ABB_M_LC_M_PLAY">1 次</string>
+    <string name="MIDS_GH_BODY_1_WEEK_AGO_ABB">1 周前</string>
+    <string name="MIDS_GH_BODY_ACCESS_YOUR_GAMES_QUICKLY_AND_EASILY_USING_THE_EDGE_SCREEN">使用曲面侧屏快速、轻松地访问游戏。</string>
+    <string name="MIDS_GH_BODY_ACTION">动作</string>
+    <string name="MIDS_GH_BODY_ADDED_M_NOUN">已添加</string>
+    <string name="MIDS_GH_BODY_ADVENTURE">冒险</string>
+    <string name="MIDS_GH_BODY_ALLOW_ACCESS_ONLY_FOR_THIS_TRIP_ABB">仅本次旅行允许访问</string>
+    <string name="MIDS_GH_BODY_ALLOW_DATA_ACCESS_Q">允许数据访问？</string>
+    <string name="MIDS_GH_BODY_ARCADE_M_GENRE">街机</string>
+    <string name="MIDS_GH_BODY_BOARD_M_GENRE">桌面和棋类</string>
+    <string name="MIDS_GH_BODY_CANNOT_FIND_YOUR_INSTALLED_GAME_Q">是否找不到已安装的游戏？</string>
+    <string name="MIDS_GH_BODY_CAPTURE_A_SCREENSHOT">截取屏幕截图。</string>
+    <string name="MIDS_GH_BODY_CARD">卡牌</string>
+    <string name="MIDS_GH_BODY_CASINO">赌场</string>
+    <string name="MIDS_GH_BODY_CASUAL">休闲</string>
+    <string name="MIDS_GH_BODY_CHECK_OUT_THESE_EXCLUSIVE_OFFERS_FOR_YOUR_GALAXY_DEVICE">查看盖乐世设备专享的优惠。</string>
+    <string name="MIDS_GH_BODY_CHECK_OUT_THE_HOTTEST_GAMES_AMONG_GALAXY_DEVICE_USERS_AND_WATCH_FUN_GAME_VIDEOS">了解最受盖乐世设备用户喜爱的游戏并观看有趣的游戏视频。</string>
+    <string name="MIDS_GH_BODY_CHECK_YOUR_NETWORK_CONNECTION_AND_TRY_AGAIN">检查您的网络连接并重试。</string>
+    <string name="MIDS_GH_BODY_DATA_USAGE">数据使用</string>
+    <string name="MIDS_GH_BODY_DENY_DATA_ROAMING_ACCESS_ABB">拒绝数据漫游访问</string>
+    <string name="MIDS_GH_BODY_DRAG_THE_QUICK_PANEL_DOWN_TO_STOP_RECORDING">若要停止录制，请向下拖动快速面板。</string>
+    <string name="MIDS_GH_BODY_EDGE_TOUCH_LOCK_ABB">侧屏触控锁定</string>
+    <string name="MIDS_GH_BODY_EDUCATIONAL">教育</string>
+    <string name="MIDS_GH_BODY_ENJOY_A_FREE_GAME_PROVIDED_BY_SAMSUNG_GAME_LAUNCHER">享受由三星游戏中心提供的免费游戏。</string>
+    <string name="MIDS_GH_BODY_GAMEPAD_RECOMMENDED">建议使用手柄</string>
+    <string name="MIDS_GH_BODY_GAMES_SORTED_BY_NUMBER_OF_GALAXY_USERS_PLAYING_HP1SD_P2SD_P3SD_P4SD_ABB">游戏 - 按玩游戏的盖乐世用户数排序 (%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_GAMES_SORTED_BY_TOTAL_TIME_PLAYED_BY_ALL_GALAXY_USERS_HP1SD_P2SD_P3SD_P4SD_ABB">游戏 - 按所有盖乐世用户的总游戏时间排序 (%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_GAME_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_THIS_TIME_ONLY_MSG">仅此一次通过 %s 打开您的游戏时，游戏声音将被静音。您可以在游戏打开后更改音量。</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_AUTOMATICALLY">游戏中心可自动将您的所有游戏集中在一处。</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_AUTOMATICALLY_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_MSG">游戏中心自动将您的所有游戏汇集在一处，并提供其他实用的游戏功能。</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_FEATURES_HPS_ARE_ONLY_APPLIED_TO_APPS_CATEGORISED_AS_GAMES">游戏中心功能 (%s) 仅适用于归类为游戏的应用程序。</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_WILL_ACCESS_CONTACTS_CAMERA_STORAGE_AND_MICROPHONE">游戏中心将访问联系人、相机、存储和麦克风。</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_CONVENIENT_GAME_FEATURES">游戏工具提供便利的游戏功能。</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_CONVENIENT_GAME_FEATURES_IN_A_BUTTON_THAT_FLOATS_OVER_YOUR_GAME_ABB">游戏工具通过游戏上浮动的按钮为您提供方便的游戏功能。</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_OPTIONS_AND_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES">游戏工具提供实用的游戏选项和功能。</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_DEVICE">在设备中录制的游戏视频。</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_PHONE">在您的手机中录制的游戏视频。</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_TABLET">在您的平板电脑中录制的游戏视频。</string>
+    <string name="MIDS_GH_BODY_HIDE_YOUR_CALLS_AND_ALERTS_DURING_GAMEPLAY">玩游戏时隐藏您的通话和提醒。</string>
+    <string name="MIDS_GH_BODY_INSTALLED_M_NOUN">已安装</string>
+    <string name="MIDS_GH_BODY_I_HAVE_READ_AND_AGREE_TO_ALL_THE_TERMS_OF_SERVICE_ABOVE">我已阅读并同意以上所有服务条款。</string>
+    <string name="MIDS_GH_BODY_LARGE">大</string>
+    <string name="MIDS_GH_BODY_LAST_PLAYED">上次游戏</string>
+    <string name="MIDS_GH_BODY_LAST_RECORDED_C">最后录制：</string>
+    <string name="MIDS_GH_BODY_LATEST_VERSION">最新版本</string>
+    <string name="MIDS_GH_BODY_LIVE">直播</string>
+    <string name="MIDS_GH_BODY_MAXIMUM_RECORDING_FILE_SIZE_IS_PD_GB_MSG">录制文件大小最多为 %d GB。当采用最高画质录制时，大约可录制 80 分钟。降低分辨率和比特率可增加时长。</string>
+    <string name="MIDS_GH_BODY_MINIMISE_YOUR_GAME_SCREEN_WHEN_YOU_NEED_TO_QUICKLY_ACCESS_OTHER_TASKS">在您需要快速访问其他任务时最小化游戏屏幕。</string>
+    <string name="MIDS_GH_BODY_MOST_ACTIVE_NEW">最活跃的新游戏</string>
+    <string name="MIDS_GH_BODY_MOST_ADDICTIVE_NEW">最具吸引力的新游戏</string>
+    <string name="MIDS_GH_BODY_MUSIC_M_GENRE">音乐</string>
+    <string name="MIDS_GH_BODY_MUTE_AND_HIDE_ALL_OF_YOUR_ALERTS_DURING_GAMEPLAY">游戏过程中静音并隐藏全部提醒。</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_RANKED_BY_THE_LONGEST_PLAYING_TIMES">按照最长游戏时间排名的新游戏。</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_RANKED_BY_THE_MOST_USERS_PER_DAY">按照每日最多用户排名的新游戏</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_SORTED_BY_NUMBER_OF_GALAXY_USERS_PLAYING_HP1SD_P2SD_P3SD_P4SD_ABB">新游戏 - 按玩游戏的盖乐世用户数排序 (%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_SORTED_BY_TOTAL_TIME_PLAYED_BY_ALL_GALAXY_USERS_HP1SD_P2SD_P3SD_P4SD_ABB">新游戏 - 按所有盖乐世用户的总游戏时间排序 (%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_OPEN_A_BOOKMARKED_APP_OR_WEB_ADDRESS">打开带有书签的应用程序或网址。</string>
+    <string name="MIDS_GH_BODY_OPEN_SOURCE_LICENCE">开源许可证</string>
+    <string name="MIDS_GH_BODY_OTHERS">其他</string>
+    <string name="MIDS_GH_BODY_PD_HOURS_ABB">%d 小时</string>
+    <string name="MIDS_GH_BODY_PD_HOURS_AGO">%d 小时前</string>
+    <string name="MIDS_GH_BODY_PD_MINUTES">%d 分钟</string>
+    <string name="MIDS_GH_BODY_PD_MINUTES_AGO">%d 分钟前</string>
+    <string name="MIDS_GH_BODY_PD_PLAYS_ABB">%d 次游戏</string>
+    <string name="MIDS_GH_BODY_PD_TIMES_ABB2">%d 次</string>
+    <string name="MIDS_GH_BODY_PD_WEEKS_AGO_ABB">%d 周前</string>
+    <string name="MIDS_GH_BODY_PER_DAY_ABB_M_LC">每天</string>
+    <string name="MIDS_GH_BODY_PLAYERS_ABB">玩家</string>
+    <string name="MIDS_GH_BODY_PLAYING_TIME">游戏时间</string>
+    <string name="MIDS_GH_BODY_PLAYING_TIME_ABB_M_LC">游戏时间</string>
+    <string name="MIDS_GH_BODY_PLAY_PER_DAY_ABB">每天游戏</string>
+    <string name="MIDS_GH_BODY_POWER_USAGE">电量使用情况</string>
+    <string name="MIDS_GH_BODY_PRIVACY_POLICY">隐私政策</string>
+    <string name="MIDS_GH_BODY_PS_DISCLAIMER">%s免责声明</string>
+    <string name="MIDS_GH_BODY_PS_IS_A_BUTTON_FLOATING_OVER_THE_TOP_OF_YOUR_GAME_THAT_PROVIDES_CONVENIENT_GAME_FEATURES">%s 是一个悬浮在游戏顶部的按钮，为您提供方便的游戏功能。</string>
+    <string name="MIDS_GH_BODY_PS_LOCK_ABB">%s 锁定</string>
+    <string name="MIDS_GH_BODY_PS_TERMS_OF_SERVICE">%s服务条款</string>
+    <string name="MIDS_GH_BODY_PUZZLE_M_GENRE">益智</string>
+    <string name="MIDS_GH_BODY_RACING">竞速</string>
+    <string name="MIDS_GH_BODY_RECENTLY_INSTALLED">最近安装</string>
+    <string name="MIDS_GH_BODY_RECENTLY_REGISTERED">最近注册</string>
+    <string name="MIDS_GH_BODY_RECORD_YOUR_GAME">录制您的游戏。</string>
+    <string name="MIDS_GH_BODY_RECORD_YOUR_GAMES">录制您的游戏视频。</string>
+    <string name="MIDS_GH_BODY_ROLE_PLAYING_M_GENRE">角色扮演</string>
+    <string name="MIDS_GH_BODY_SAVE_BATTERY_POWER_BY_OPTIMISING_THE_DISPLAY_QUALITY">通过优化显示质量节省电量。</string>
+    <string name="MIDS_GH_BODY_SAVE_BATTERY_POWER_DURING_GAMEPLAY_BY_DOWNGRADING_THE_VIDEO_QUALITY">在玩游戏时通过降低视频质量可节省电量。</string>
+    <string name="MIDS_GH_BODY_SCREENSHOT">屏幕截图</string>
+    <string name="MIDS_GH_BODY_SELECT_APPS_YOU_WANT_TO_ADD_TO_PS">请选择想要添加至 %s 的应用程序。</string>
+    <string name="MIDS_GH_BODY_SELECT_A_GAME_YOU_WANT_TO_ADD_TO_PS">选择想要添加至 %s 的游戏。</string>
+    <string name="MIDS_GH_BODY_SELECT_A_GAME_YOU_WANT_TO_REGISTER_IN_GAME_LAUNCHER">选择要注册到游戏中心的游戏。</string>
+    <string name="MIDS_GH_BODY_SELECT_THE_FUNCTION_TO_ASSIGN_TO_THE_HOT_KEY_MSG">请选择要分配给热键的功能。您也可以长按热键来更改其功能。</string>
+    <string name="MIDS_GH_BODY_SELECT_THE_GAME_YOU_WANT_TO_REGISTER_TO_MY_GAMES">选择要在我的游戏中注册的游戏。</string>
+    <string name="MIDS_GH_BODY_SHRINK_YOUR_GAME_SCREEN_INTO_A_FLOATING_ICON">将游戏屏幕缩小成浮动图标。</string>
+    <string name="MIDS_GH_BODY_SIMULATION">模拟</string>
+    <string name="MIDS_GH_BODY_SMALL">小</string>
+    <string name="MIDS_GH_BODY_SPORTS_M_GENRE">体育</string>
+    <string name="MIDS_GH_BODY_STRATEGY_M_GENRE">策略</string>
+    <string name="MIDS_GH_BODY_S_GAMES_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_AUTOMATICALLY">S Games 可将您的全部游戏自动排列到同一位置。</string>
+    <string name="MIDS_GH_BODY_TAP_THE_BUTTON_TO_STOP_RECORDING">点击按钮来停止录制。</string>
+    <string name="MIDS_GH_BODY_TERMS_OF_SERVICE">服务条款</string>
+    <string name="MIDS_GH_BODY_TERMS_OF_SERVICE_ABB">服务条款</string>
+    <string name="MIDS_GH_BODY_THE_LATEST_VERSION_IS_ALREADY_INSTALLED">已安装最新版本。</string>
+    <string name="MIDS_GH_BODY_THE_NAVIGATION_BAR_WILL_NOT_AUTO_HIDE_DURING_GAMEPLAY_MSG">游戏期间导航栏不会自动隐藏。建议不要在全屏模式下使用此功能。</string>
+    <string name="MIDS_GH_BODY_THE_RESOLUTION_AND_FRAME_RATE_OF_EACH_GAME_CAN_BE_CUSTOMISED">可自定义每个游戏的分辨率和帧率。</string>
+    <string name="MIDS_GH_BODY_THIS_APPLICATION_CAN_ACCESS_P1SS_AND_P2SS">此应用程序可以访问 %1$s 和 %2$s。</string>
+    <string name="MIDS_GH_BODY_THIS_IS_THE_LATEST_VERSION">这是最新版本。</string>
+    <string name="MIDS_GH_BODY_THIS_WEEK_ABB">本周</string>
+    <string name="MIDS_GH_BODY_TIP_C_TO_CHANGE_THE_HOT_KEY_PRESS_AND_HOLD_IT_OR_GO_TO_GAME_TOOLS_SETTINGS">提示：若要更改热键，请长按或进入游戏工具设置。</string>
+    <string name="MIDS_GH_BODY_TO_PREVENT_UNINTENTIONAL_TOUCHES_DURING_THE_GAME_MSG2">为防止游戏中意外触摸，游戏期间已锁定屏幕底部的 %s。</string>
+    <string name="MIDS_GH_BODY_TO_SIGN_UP_FOR_A_GLOBAL_DATA_PLAN_CALL_GLOBAL_SUPPORT_AT_908_559_4899">若要注册全球流量套餐，请致电 908-559-4899 联系全球支持团队。</string>
+    <string name="MIDS_GH_BODY_TO_STOP_RECORDING_TAP_THE_STOP_BUTTON_ON_THE_NAVIGATION_BAR">若要停止录制，请点击导航条上的停止按钮。</string>
+    <string name="MIDS_GH_BODY_TRIVIA_M_CATEGORY">知识问答</string>
+    <string name="MIDS_GH_BODY_TRY_OUT_ADDITIONAL_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES_MSG4">尝试其他好用的游戏功能，例如【游戏省电】、【游戏中关闭提醒】和【游戏工具】。</string>
+    <string name="MIDS_GH_BODY_TRY_OUT_ADDITIONAL_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES_MSG5">尝试其他实用的游戏功能，例如【游戏省电】、【静音打开游戏】和【游戏工具】。</string>
+    <string name="MIDS_GH_BODY_UNKNOWN_M_CATEGORY">未知</string>
+    <string name="MIDS_GH_BODY_USING_DATA_WHILE_IN_THE_US_INCLUDING_ALASKA_HAWAII_PUERTO_RICO_MSG">"在美国使用流量，包括阿拉斯加、夏威夷、波多黎各和美属维京群岛，将根据您的流量套餐计费。
+
+如果没有全球流量套餐，在美国境外旅游期间使用流量可能产生非常高的费用。
+
+您是否要打开流量？"</string>
+    <string name="MIDS_GH_BODY_VERSION">版本</string>
+    <string name="MIDS_GH_BODY_WE_RECOMMEND_DOWNLOADING_VIA_WI_FI_MSG">根据您的资费套餐，使用移动网络可能会产生额外费用。建议您通过 Wi-Fi 下载。</string>
+    <string name="MIDS_GH_BODY_WHEN_YOU_TAP_THE_P1SS_BUTTON_YOU_CAN_ACCESS_P2SS_FROM_ANYWHERE">点击 %1$s 按钮后，您可以从任意位置使用 %2$s。</string>
+    <string name="MIDS_GH_BODY_WORD_M_CATEGORY">文字</string>
+    <string name="MIDS_GH_BODY_YOUR_GAMES_WILL_BE_DISPLAYED_AUTOMATICALLY">将自动显示您的游戏。</string>
+    <string name="MIDS_GH_BODY_YOUVE_REACHED_YOUR_SPECIFIED_DATA_USAGE_LIMIT_MSG">"您已达到您指定的流量使用量限制。
+
+如果您重新启用流量，运营商可能会收取费用。"</string>
+    <string name="MIDS_GH_BODY_YOU_CAN_ADJUST_THE_PERFORMANCE_OF_YOUR_GAME_IN_TWO_WAYS_MSG">您可以使用两种方式来调整游戏性能。加强性能可提升您的系统性能，但会同时增加耗电量。省电功能可节省电量，但会同时降低您的系统性能。</string>
+    <string name="MIDS_GH_BODY_YOU_CAN_ALSO_CHECK_OUT_THE_HOTTEST_GAMES_AMONG_GALAXY_DEVICE_USERS_MSG">您也可以查看盖乐世设备用户最喜爱的游戏，并直接从游戏中心中观看有趣的游戏视频。</string>
+    <string name="MIDS_GH_BUTTON2_BOOST_PERFORMANCE">加强性能</string>
+    <string name="MIDS_GH_BUTTON2_NORMAL_PERFORMANCE">普通性能</string>
+    <string name="MIDS_GH_BUTTON2_OPEN_GAMES_MUTED">静音打开游戏</string>
+    <string name="MIDS_GH_BUTTON2_SAVE_POWER">省电</string>
+    <string name="MIDS_GH_BUTTON_ADD_AS_GAME_ABB">添加为游戏</string>
+    <string name="MIDS_GH_BUTTON_ADD_TO_HOME">添加至主页</string>
+    <string name="MIDS_GH_BUTTON_ADD_URL">添加网址</string>
+    <string name="MIDS_GH_BUTTON_AGREE_ABB">同意</string>
+    <string name="MIDS_GH_BUTTON_APPLY_ABB2">应用</string>
+    <string name="MIDS_GH_BUTTON_CANCEL_ABB3">取消</string>
+    <string name="MIDS_GH_BUTTON_CHECK_RECORDED_VIDEO_IN_GALLERY">在相册中查看录制的视频</string>
+    <string name="MIDS_GH_BUTTON_CLEAR_ABB2">清除</string>
+    <string name="MIDS_GH_BUTTON_CLOSE">关闭</string>
+    <string name="MIDS_GH_BUTTON_CONFIRM">确认</string>
+    <string name="MIDS_GH_BUTTON_DELETE">删除</string>
+    <string name="MIDS_GH_BUTTON_DELETE_ABB4">删除</string>
+    <string name="MIDS_GH_BUTTON_DISABLE_ABB">禁用</string>
+    <string name="MIDS_GH_BUTTON_DISAGREE_ABB">不同意</string>
+    <string name="MIDS_GH_BUTTON_DISCOVERY">发现</string>
+    <string name="MIDS_GH_BUTTON_DONE">完成</string>
+    <string name="MIDS_GH_BUTTON_EDIT">编辑</string>
+    <string name="MIDS_GH_BUTTON_ENABLE_ABB">启用</string>
+    <string name="MIDS_GH_BUTTON_FEATURED_VIDEOS">精选视频</string>
+    <string name="MIDS_GH_BUTTON_FIND_MORE_GAMES">查找更多游戏</string>
+    <string name="MIDS_GH_BUTTON_GAME_SOUND">游戏声音</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS">游戏工具</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS_OFF">游戏工具关闭</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS_ON">游戏工具开启</string>
+    <string name="MIDS_GH_BUTTON_GAME_VIDEOS">游戏视频</string>
+    <string name="MIDS_GH_BUTTON_GAME_VIDEOS_ABB">游戏视频</string>
+    <string name="MIDS_GH_BUTTON_IN_GAME_LOCK_SCREEN">游戏中锁定屏幕</string>
+    <string name="MIDS_GH_BUTTON_LATER_ABB">稍后</string>
+    <string name="MIDS_GH_BUTTON_LOCK_BACK_KEY">锁定返回键</string>
+    <string name="MIDS_GH_BUTTON_LOCK_RECENTS_AND_BACK_KEYS">锁定最近键和返回键</string>
+    <string name="MIDS_GH_BUTTON_LOCK_RECENTS_KEY">锁定最近使用键</string>
+    <string name="MIDS_GH_BUTTON_MORE">更多</string>
+    <string name="MIDS_GH_BUTTON_MORE_ABB4">更多</string>
+    <string name="MIDS_GH_BUTTON_NO_INTERRUPTIONS_ABB">免打扰</string>
+    <string name="MIDS_GH_BUTTON_OK">确定</string>
+    <string name="MIDS_GH_BUTTON_OPEN">打开</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAMES_MUTED_OFF">静音打开游戏关闭</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAMES_MUTED_ON">静音打开游戏开启</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAME_ABB">打开游戏</string>
+    <string name="MIDS_GH_BUTTON_PLAY">游戏</string>
+    <string name="MIDS_GH_BUTTON_PLAYERS">玩家</string>
+    <string name="MIDS_GH_BUTTON_PLAYING_TIME">游戏时间</string>
+    <string name="MIDS_GH_BUTTON_POP_UP_WINDOW">弹出窗口</string>
+    <string name="MIDS_GH_BUTTON_RECORD">录制</string>
+    <string name="MIDS_GH_BUTTON_REFRESH_ABB3">刷新</string>
+    <string name="MIDS_GH_BUTTON_REGISTER_ABB">注册</string>
+    <string name="MIDS_GH_BUTTON_REQUEST_REGISTRATION">申请注册</string>
+    <string name="MIDS_GH_BUTTON_RESTART_ABB2">重新启动</string>
+    <string name="MIDS_GH_BUTTON_RETRY_ABB">重试</string>
+    <string name="MIDS_GH_BUTTON_RE_ENABLE_DATA">重新启用流量</string>
+    <string name="MIDS_GH_BUTTON_SAVE_POWER_DURING_GAME">游戏省电</string>
+    <string name="MIDS_GH_BUTTON_SAVE_POWER_OFF">省电关闭</string>
+    <string name="MIDS_GH_BUTTON_SHARE">分享</string>
+    <string name="MIDS_GH_BUTTON_SHOW">显示</string>
+    <string name="MIDS_GH_BUTTON_START_ABB">开始</string>
+    <string name="MIDS_GH_BUTTON_STOP_ABB">停止</string>
+    <string name="MIDS_GH_BUTTON_TAP_HERE_TO_ADD_UNLISTED_GAMES">点击此处可添加未列出的游戏</string>
+    <string name="MIDS_GH_BUTTON_TOP_CHARTS">热门排行榜</string>
+    <string name="MIDS_GH_BUTTON_TOP_GAMES_ABB">热门游戏</string>
+    <string name="MIDS_GH_BUTTON_UPDATE_ABB4">更新</string>
+    <string name="MIDS_GH_BUTTON_VIEW_VIDEO_IN_GAME_LAUNCHER">在游戏中心查看视频</string>
+    <string name="MIDS_GH_HEADER_ADD_SHORTCUT">添加快捷方式</string>
+    <string name="MIDS_GH_HEADER_ANNOUNCEMENTS">公告</string>
+    <string name="MIDS_GH_HEADER_ASSIGN_P1SS_TO_P2SS">将 %1$s 分配给 %2$s</string>
+    <string name="MIDS_GH_HEADER_CONNECT_VIA_MOBILE_NETWORKS_ABB">通过移动网络进行连接</string>
+    <string name="MIDS_GH_HEADER_CONNECT_VIA_ROAMING_NETWORK_ABB">通过漫游网络连接</string>
+    <string name="MIDS_GH_HEADER_CUSTOMISED_PERFORMANCE">自定义性能</string>
+    <string name="MIDS_GH_HEADER_DATA_NETWORK_DISABLED_ABB">已禁用数据网络</string>
+    <string name="MIDS_GH_HEADER_DISCLAIMER_ABB">免责声明</string>
+    <string name="MIDS_GH_HEADER_DISCOVERY">发现</string>
+    <string name="MIDS_GH_HEADER_DISPLAY_GAME_ICONS_ON_GAME_LAUNCHER_ONLY">仅在游戏中心里显示游戏图标</string>
+    <string name="MIDS_GH_HEADER_ENABLE_PS">启用 %s</string>
+    <string name="MIDS_GH_HEADER_ENTER_WEB_ADDRESS">输入网址</string>
+    <string name="MIDS_GH_HEADER_FAVOURITE_GENRE">喜欢的类型</string>
+    <string name="MIDS_GH_HEADER_GALAXY_GAMERS">盖乐世玩家</string>
+    <string name="MIDS_GH_HEADER_GAMES">游戏</string>
+    <string name="MIDS_GH_HEADER_GAME_DISCOVERY">游戏探索</string>
+    <string name="MIDS_GH_HEADER_GAME_LAUNCHER_ABB">游戏中心</string>
+    <string name="MIDS_GH_HEADER_INSTALLED_APPS_ABB2">已安装的应用程序</string>
+    <string name="MIDS_GH_HEADER_INTRODUCING_GAME_TOOLS_ABB">游戏工具介绍</string>
+    <string name="MIDS_GH_HEADER_MOBILE_DATA_TURNED_OFF_ABB">已关闭手机流量</string>
+    <string name="MIDS_GH_HEADER_MOST_ACTIVE_ABB">活跃用户数最多</string>
+    <string name="MIDS_GH_HEADER_MOST_ADDICTIVE_ABB">最上瘾</string>
+    <string name="MIDS_GH_HEADER_NEW_RELEASES_N_UPDATES_ABB">新发布和更新</string>
+    <string name="MIDS_GH_HEADER_NO_NETWORK_CONNECTION_ABB2">无网络连接</string>
+    <string name="MIDS_GH_HEADER_OTHER_APPS">其他应用程序</string>
+    <string name="MIDS_GH_HEADER_PERMISSIONS">权限</string>
+    <string name="MIDS_GH_HEADER_POPULAR">热门</string>
+    <string name="MIDS_GH_HEADER_PRIVACY_POLICY">隐私政策</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_PLAYED">最近玩过的游戏</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_PLAYED_ABB">最近播放</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_USED_APPS">最近使用的应用程序</string>
+    <string name="MIDS_GH_HEADER_RECORDED_ABB">已录制</string>
+    <string name="MIDS_GH_HEADER_RECORDING_SETTINGS_ABB">录制设置</string>
+    <string name="MIDS_GH_HEADER_RECORD_GAME">录制游戏视频</string>
+    <string name="MIDS_GH_HEADER_REGISTER_ABB2">注册</string>
+    <string name="MIDS_GH_HEADER_REGISTRATION_FAILED_ABB">注册失败</string>
+    <string name="MIDS_GH_HEADER_REGISTRATION_REQUEST_REQUIRED_ABB">需要注册请求</string>
+    <string name="MIDS_GH_HEADER_RELATED">相关</string>
+    <string name="MIDS_GH_HEADER_RELATED_GAMES">相关游戏</string>
+    <string name="MIDS_GH_HEADER_RESTART_GAME">重启游戏</string>
+    <string name="MIDS_GH_HEADER_RESTART_GAMES_ABB">重新启动游戏</string>
+    <string name="MIDS_GH_HEADER_SELECT_HOT_KEY">选择热键</string>
+    <string name="MIDS_GH_HEADER_SELECT_VIDEOS">选择视频</string>
+    <string name="MIDS_GH_HEADER_SET_PROFILE_IMAGE_ABB">设置个人资料图片</string>
+    <string name="MIDS_GH_HEADER_SET_PROFILE_IMAGE_ABB2">设置个人资料图片</string>
+    <string name="MIDS_GH_HEADER_SPECIAL_OFFERS_ABB">特殊优惠</string>
+    <string name="MIDS_GH_HEADER_STAFF_PICKS_ABB">员工精选</string>
+    <string name="MIDS_GH_HEADER_UNABLE_TO_ADD_GAME_ABB">无法添加游戏</string>
+    <string name="MIDS_GH_HEADER_UNABLE_TO_REGISTER_GAME_ABB">无法注册游戏</string>
+    <string name="MIDS_GH_HEADER_UNINSTALL_APP_ABB">卸载应用程序</string>
+    <string name="MIDS_GH_HEADER_UNINSTALL_GAME">卸载游戏</string>
+    <string name="MIDS_GH_HEADER_UPDATE_PS">更新 %s</string>
+    <string name="MIDS_GH_HEADER_VIDEO_SETTINGS_ABB">视频设置</string>
+    <string name="MIDS_GH_HEADER_WI_FI_NOT_AVAILABLE_ABB">Wi-Fi 不可用</string>
+    <string name="MIDS_GH_HEADER_YOUTUBE_SEARCH_RESULTS">YouTube 搜索结果</string>
+    <string name="MIDS_GH_MBODY_ABOUT_GAME_LAUNCHER">关于游戏中心</string>
+    <string name="MIDS_GH_MBODY_ABOUT_GAME_TOOLS">关于游戏工具</string>
+    <string name="MIDS_GH_MBODY_ABOUT_PS">关于 %s</string>
+    <string name="MIDS_GH_MBODY_AUDIO_SOURCE">音频源</string>
+    <string name="MIDS_GH_MBODY_BITRATE">比特率</string>
+    <string name="MIDS_GH_MBODY_CONTACT_US">联系我们</string>
+    <string name="MIDS_GH_MBODY_FAQ">常见问题</string>
+    <string name="MIDS_GH_MBODY_FEATURED_ABB">精选</string>
+    <string name="MIDS_GH_MBODY_FRAME_RATE">帧率</string>
+    <string name="MIDS_GH_MBODY_GAMES">游戏</string>
+    <string name="MIDS_GH_MBODY_GAME_ICON_DISPLAY_OPTION">游戏图标显示选项</string>
+    <string name="MIDS_GH_MBODY_GAME_NOTIFICATIONS">游戏通知</string>
+    <string name="MIDS_GH_MBODY_GAME_RECORDER">游戏录制器</string>
+    <string name="MIDS_GH_MBODY_GAME_TOOLS">游戏工具</string>
+    <string name="MIDS_GH_MBODY_GAMING_OPTIMISATION">游戏优化</string>
+    <string name="MIDS_GH_MBODY_HELP">帮助</string>
+    <string name="MIDS_GH_MBODY_HOT_KEY">热键</string>
+    <string name="MIDS_GH_MBODY_INTRODUCING_GAME_LAUNCHER_ABB">游戏中心介绍</string>
+    <string name="MIDS_GH_MBODY_MARKETING_INFORMATION">营销信息</string>
+    <string name="MIDS_GH_MBODY_MINIMISE_AND_ALIVE">最小化并保持活动状态</string>
+    <string name="MIDS_GH_MBODY_MINIMISE_GAME">最小化游戏</string>
+    <string name="MIDS_GH_MBODY_MY_QUESTIONS">我的问题</string>
+    <string name="MIDS_GH_MBODY_NORMAL_MODE_ABB">普通模式</string>
+    <string name="MIDS_GH_MBODY_NO_INTERRUPTIONS">免打扰</string>
+    <string name="MIDS_GH_MBODY_PERFORMANCE_MODE_ABB">性能优先</string>
+    <string name="MIDS_GH_MBODY_PHONE_AUDIO">手机音频</string>
+    <string name="MIDS_GH_MBODY_PROFILE_SIZE">个人资料大小</string>
+    <string name="MIDS_GH_MBODY_PROFILE_SOURCE">个人资料来源</string>
+    <string name="MIDS_GH_MBODY_RAM">内存</string>
+    <string name="MIDS_GH_MBODY_RECORD_TOUCH_INTERACTION">记录触摸互动</string>
+    <string name="MIDS_GH_MBODY_REDUCE_GRAPHICS_QUALITY">降低画面质量</string>
+    <string name="MIDS_GH_MBODY_RESOLUTION">分辨率</string>
+    <string name="MIDS_GH_MBODY_SAVE_POWER_DURING_GAME_ABB">游戏省电</string>
+    <string name="MIDS_GH_MBODY_SCREEN_CAPTURED">已截取屏幕</string>
+    <string name="MIDS_GH_MBODY_SHORTCUT">快捷方式</string>
+    <string name="MIDS_GH_MBODY_TAP_HERE_TO_STOP_AND_SAVE_RECORDING">点击此处停止录制并保存</string>
+    <string name="MIDS_GH_MBODY_VIDEO_QUALITY">视频质量</string>
+    <string name="MIDS_GH_NPBODY_BY_NUMBER_OF_PLAYERS">按玩家数量</string>
+    <string name="MIDS_GH_NPBODY_BY_PLAY_TIME">按游戏时间</string>
+    <string name="MIDS_GH_NPBODY_COLLAPSE">收起</string>
+    <string name="MIDS_GH_NPBODY_DRAG_DOWNWARDS_TO_SHOW_GAME_TOOLS">向下拖动可显示游戏工具</string>
+    <string name="MIDS_GH_NPBODY_EXPAND">展开</string>
+    <string name="MIDS_GH_NPBODY_FEATURED_GAMES">推荐游戏</string>
+    <string name="MIDS_GH_NPBODY_FILE_SIZE_C_P1SS_P2SS">文件大小：%1$s %2$s</string>
+    <string name="MIDS_GH_NPBODY_GAME_BEING_PLAYED">正在玩游戏</string>
+    <string name="MIDS_GH_NPBODY_INSTALLED">已安装</string>
+    <string name="MIDS_GH_NPBODY_NEW">最新</string>
+    <string name="MIDS_GH_NPBODY_NEW_GAMES_ABB">新游戏</string>
+    <string name="MIDS_GH_NPBODY_NO_ANNOUNCEMENTS">无公告</string>
+    <string name="MIDS_GH_NPBODY_NO_APPS_AVAILABLE_TO_ADD_TO_PS">没有可添加至 %s 的应用程序</string>
+    <string name="MIDS_GH_NPBODY_NO_AVAILABLE_GAMES">没有可用的游戏</string>
+    <string name="MIDS_GH_NPBODY_NO_GAMES">无游戏</string>
+    <string name="MIDS_GH_NPBODY_NO_INSTALLED_GAMES">没有已安装的游戏</string>
+    <string name="MIDS_GH_NPBODY_NO_RECORDED_VIDEOS">没有录制的视频</string>
+    <string name="MIDS_GH_NPBODY_NO_RESULTS_FOUND">未找到结果</string>
+    <string name="MIDS_GH_NPBODY_NO_SEARCH_RESULTS">无搜索结果</string>
+    <string name="MIDS_GH_NPBODY_REMAINING_BATTERY_POWER_C_PDP" formatted="false">剩余电量：%d%</string>
+    <string name="MIDS_GH_NPBODY_SEARCH">搜索</string>
+    <string name="MIDS_GH_NPBODY_SWIPE_SCREEN_TO_UNLOCK">滑动屏幕以解锁</string>
+    <string name="MIDS_GH_OPT_ADD_APPS">添加应用程序</string>
+    <string name="MIDS_GH_OPT_ADD_TO_HOME_SCREEN">添加至主屏幕</string>
+    <string name="MIDS_GH_OPT_ADJUST_BITRATE_ACCORDING_TO_RESOLUTION">按照分辨率调整比特率。</string>
+    <string name="MIDS_GH_OPT_ALL">全部</string>
+    <string name="MIDS_GH_OPT_ALL_TIME">全部时间</string>
+    <string name="MIDS_GH_OPT_ALWAYS_RESTART">总是重新启动</string>
+    <string name="MIDS_GH_OPT_APP_INFO">应用程序信息</string>
+    <string name="MIDS_GH_OPT_AUTO">自动</string>
+    <string name="MIDS_GH_OPT_BACK_KEY_ONLY">仅返回键</string>
+    <string name="MIDS_GH_OPT_BOTH_RECENTS_AND_BACK_KEYS">最近使用键和返回键</string>
+    <string name="MIDS_GH_OPT_CATEGORISE_AS_GAME">归类为游戏</string>
+    <string name="MIDS_GH_OPT_CATEGORISE_AS_OTHER_APP">归类为其他应用程序</string>
+    <string name="MIDS_GH_OPT_COMMUNITY">社区</string>
+    <string name="MIDS_GH_OPT_CUSTOM">自定义</string>
+    <string name="MIDS_GH_OPT_DEFAULT_IMAGE">默认图片</string>
+    <string name="MIDS_GH_OPT_DETAILS">详细信息</string>
+    <string name="MIDS_GH_OPT_DISPLAY_GAME_ICONS_ON_BOTH_APPS_AND_GAME_LAUNCHER">在应用程序屏幕和游戏中心中同时显示游戏图标</string>
+    <string name="MIDS_GH_OPT_DISPLAY_GAME_ICONS_ON_GAME_LAUNCHER_ONLY">仅在游戏中心中显示游戏图标</string>
+    <string name="MIDS_GH_OPT_DO_NOT_SHOW_AGAIN">不再显示</string>
+    <string name="MIDS_GH_OPT_EDIT_VIDEO_ABB">编辑视频</string>
+    <string name="MIDS_GH_OPT_FRONT_CAMERA">前置摄像头</string>
+    <string name="MIDS_GH_OPT_FRONT_CAMERA_ABB">前置摄像头</string>
+    <string name="MIDS_GH_OPT_FULL_SCREEN">全屏</string>
+    <string name="MIDS_GH_OPT_GAME_AUDIO">游戏音频</string>
+    <string name="MIDS_GH_OPT_GAME_SETTINGS">游戏设置</string>
+    <string name="MIDS_GH_OPT_GO_TO_DISCOVERY">进入发现</string>
+    <string name="MIDS_GH_OPT_GO_TO_GAME_DISCOVERY">进入游戏探索</string>
+    <string name="MIDS_GH_OPT_GO_TO_GAME_LAUNCHER">进入游戏中心</string>
+    <string name="MIDS_GH_OPT_GO_TO_SETTINGS_ABB">进入设置</string>
+    <string name="MIDS_GH_OPT_HIDE">隐藏</string>
+    <string name="MIDS_GH_OPT_IMAGE_ABB">图片</string>
+    <string name="MIDS_GH_OPT_IN_LAST_MONTH">上个月</string>
+    <string name="MIDS_GH_OPT_IN_LAST_WEEK">上周</string>
+    <string name="MIDS_GH_OPT_I_AGREE_TO_RECEIVE_MARKETING_INFORMATION_HOPTIONAL">我同意接收营销信息 (可选)</string>
+    <string name="MIDS_GH_OPT_LAST_MONTH">上个月</string>
+    <string name="MIDS_GH_OPT_LAST_WEEK">上周</string>
+    <string name="MIDS_GH_OPT_MANAGE_GAME_NOTIFICATIONS">管理游戏通知</string>
+    <string name="MIDS_GH_OPT_MICROPHONE">麦克风</string>
+    <string name="MIDS_GH_OPT_MOVE_TO_OTHER_SCREEN_ABB">移动至其他屏幕</string>
+    <string name="MIDS_GH_OPT_MY_DIARY">我的日记</string>
+    <string name="MIDS_GH_OPT_NONE">无</string>
+    <string name="MIDS_GH_OPT_NORMAL">正常</string>
+    <string name="MIDS_GH_OPT_NO_ALERTS_DURING_GAME_ABB">游戏中关闭提醒</string>
+    <string name="MIDS_GH_OPT_NO_ALERTS_WHILE_USING_APP">使用应用程序时免打扰</string>
+    <string name="MIDS_GH_OPT_PLAYING_TIME_MODE_ABB">游戏时间模式</string>
+    <string name="MIDS_GH_OPT_RECENTS_KEY_ONLY">仅最近使用键</string>
+    <string name="MIDS_GH_OPT_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_DEVICE_MAY_BE_RECORDED_WITH_GAME_AUDIO">录制游戏音频。您设备上的系统声音可能与游戏音频一起录制。</string>
+    <string name="MIDS_GH_OPT_RECORD_EXTERNAL_AUDIO_USING_MICROPHONE">使用麦克风录制外部音频</string>
+    <string name="MIDS_GH_OPT_REGISTERED_APPS">已注册的应用程序</string>
+    <string name="MIDS_GH_OPT_REMOVE">移除</string>
+    <string name="MIDS_GH_OPT_REMOVE_APPS">移除应用程序</string>
+    <string name="MIDS_GH_OPT_SAVE_CUSTOM_POWER">自定义省电</string>
+    <string name="MIDS_GH_OPT_SAVE_MAXIMUM_POWER">最大程度省电</string>
+    <string name="MIDS_GH_OPT_SAVE_POWER">省电</string>
+    <string name="MIDS_GH_OPT_SAVE_POWER_FOR_GAMES">为游戏省电</string>
+    <string name="MIDS_GH_OPT_SCREEN_TOUCH_LOCK">屏幕触控锁定</string>
+    <string name="MIDS_GH_OPT_SELECT_APP_ABB">选择应用程序</string>
+    <string name="MIDS_GH_OPT_SELECT_FROM_GALLERY_ABB2">从相册中选择</string>
+    <string name="MIDS_GH_OPT_SHOW_A_PROFILE_IMAGE_WHILE_RECORDING">录制时显示个人资料图片</string>
+    <string name="MIDS_GH_OPT_SHOW_NAVIGATION_BAR">显示导航栏</string>
+    <string name="MIDS_GH_OPT_TAKE_PICTURE">拍照</string>
+    <string name="MIDS_GH_OPT_TAKE_PICTURE_ABB3">拍照</string>
+    <string name="MIDS_GH_OPT_TAP_HERE_TO_ADD_APPS">点击此处可添加应用程序</string>
+    <string name="MIDS_GH_OPT_UNINSTALL_APPS">卸载应用程序</string>
+    <string name="MIDS_GH_OPT_UNINSTALL_M_INSTALL">卸载</string>
+    <string name="MIDS_GH_OPT_USE_THE_FRONT_CAMERA_TO_RECORD_YOUR_PROFILE">使用前置摄像头录制个人资料</string>
+    <string name="MIDS_GH_POP_1_VIDEO_HAS_BEEN_SELECTED">已选中 1 个视频。</string>
+    <string name="MIDS_GH_POP_1_VIDEO_WILL_BE_DELETED">将删除 1 个视频。</string>
+    <string name="MIDS_GH_POP_ALL_OF_YOUR_ALERTS_WILL_BE_MUTED_AND_HIDDEN_DURING_GAMEPLAY_MSG2">游戏期间所有提醒都将静音并隐藏。屏幕上只会显示来电。</string>
+    <string name="MIDS_GH_POP_AUDIO_SOURCE">音频源</string>
+    <string name="MIDS_GH_POP_A_NEW_VERSION_IS_AVAILABLE">新版本可用。</string>
+    <string name="MIDS_GH_POP_A_NEW_VERSION_IS_AVAILABLE_PS_MUST_BE_UPDATED_TO_CONTINUE">有新版本可用。必须更新 %s 才能继续。</string>
+    <string name="MIDS_GH_POP_CHANGING_THE_OPTION_WILL_AFFECT_THE_POSITION_OF_APPS_ON_THE_APPS_SCREEN_MSG">更改该选项会影响应用程序在应用程序屏幕上的位置。将在应用程序屏幕上隐藏游戏图标。若要继续，请点击【确定】。</string>
+    <string name="MIDS_GH_POP_CLOSE_ALL_RUNNING_GAMES_AND_OPEN_THEM_AGAIN_TO_APPLY_YOUR_CHANGES">请关闭所有正在运行的游戏并重新打开，以应用所做的更改。</string>
+    <string name="MIDS_GH_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN">数据漫游已禁用。连接至 Wi-Fi 网络或启用数据漫游并重试。</string>
+    <string name="MIDS_GH_POP_DATE">日期</string>
+    <string name="MIDS_GH_POP_ENTER_THE_WEB_ADDRESS_YOU_WANT_TO_ADD_AS_A_SHORTCUT">输入想要添加为快捷方式的网址。</string>
+    <string name="MIDS_GH_POP_FEATURES_MAY_VARY_DEPENDING_ON_THE_VERSION">功能可能会因版本而异。</string>
+    <string name="MIDS_GH_POP_FILE_PATH">文件路径</string>
+    <string name="MIDS_GH_POP_FILE_SIZE">文件大小</string>
+    <string name="MIDS_GH_POP_GAMES_DOWNLOADED_FROM_APP_STORES_MSG">从未与游戏中心链接的应用商店下载的游戏需要较长的时间完成注册。只有游戏才能通过注册请求来进行注册。</string>
+    <string name="MIDS_GH_POP_GAME_ICONS_WILL_BE_HIDDEN_FROM_THE_APPS_SCREEN_AND_DISPLAYED_ON_GAME_LAUNCHER_ONLY_YOU_CAN_CHANGE_THIS_OPTION_IN_THE_GAME_LAUNCHER_SETTINGS">将在应用程序屏幕上隐藏游戏图标并只显示在游戏中心中。您可以在游戏中心设置中更改此选项。</string>
+    <string name="MIDS_GH_POP_GAME_ICONS_WILL_BE_HIDDEN_FROM_THE_APPS_SCREEN_MSG">将在应用程序屏幕中隐藏游戏图标。应用程序在应用程序屏幕中的位置可能被更改。请点击【确定】以继续。</string>
+    <string name="MIDS_GH_POP_GAME_LAUNCHER_HAS_BEEN_DELETED_GAME_TOOLS_WILL_ALSO_BE_DELETED">已删除游戏中心，也将删除游戏工具。</string>
+    <string name="MIDS_GH_POP_GAME_LAUNCHER_WILL_BE_INSTALLED_AFTER_YOUR_DEVICE_RESTARTS">重启设备后将安装游戏中心。</string>
+    <string name="MIDS_GH_POP_GAME_TOOLS_INSTALLED">已安装游戏工具。</string>
+    <string name="MIDS_GH_POP_GAME_TOOLS_IS_REQUIRED_TO_USE_THIS_SERVICE_GAME_TOOLS_WILL_BE_DOWNLOADED_AND_INSTALLED">需要游戏工具才能使用此服务。将下载并安装游戏工具。</string>
+    <string name="MIDS_GH_POP_IT_IS_RECOMMENDED_THAT_YOU_PLAY_THE_GAME_IN_FULL_SCREEN_MODE_MSG">建议您在全屏模式下玩游戏。若要更改屏幕视图，您必须重启游戏。此设置仅应用于当前游戏。</string>
+    <string name="MIDS_GH_POP_LENGTH">长度</string>
+    <string name="MIDS_GH_POP_MANAGE_ALL_YOUR_GAMES_IN_ONE_PLACE_AND_TRY_OUT_ADDITIONAL_GAME_FEATURES">在同一位置管理您的全部游戏并尝试其他游戏功能。</string>
+    <string name="MIDS_GH_POP_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_OR_TURN_ON_MOBILE_DATA_AND_TRY_AGAIN">移动数据已关闭。连接至 Wi-Fi 网络或打开移动数据并重试。</string>
+    <string name="MIDS_GH_POP_NO_SIGNAL_HAS_BEEN_FOUND_FOR_A_MOBILE_NETWORK">找不到移动网络信号。</string>
+    <string name="MIDS_GH_POP_P1SS_FEATURES_HP2SS_WILL_NOT_BE_APPLIED_TO_THIS_APP_BECAUSE_IT_IS_NOT_CATEGORISED_AS_A_GAME_MSG">此应用程序未归类为游戏，%1$s 功能 (%2$s) 对其不适用。点击【添加为游戏】可应用并更改 %3$s 功能对此应用程序的适用。</string>
+    <string name="MIDS_GH_POP_P1SS_IS_DISABLED_TAP_OK_TO_ENABLE_P2SS">已禁用%1$s。点击【确定】可启用%2$s。</string>
+    <string name="MIDS_GH_POP_P1SS_IS_REQUIRED_TO_USE_THIS_SERVICE_MSG">需要安装 %1$s 才能使用此服务。将跳转至三星应用商店下载和安装 %2$s。</string>
+    <string name="MIDS_GH_POP_P1SS_MUST_BE_INSTALLED_TO_USE_THIS_SERVICE_MSG">若要使用此服务，必须安装%1$s。点击【确定】可进入三星应用商店下载和安装%2$s。</string>
+    <string name="MIDS_GH_POP_P1SS_WILL_NOT_WORK_WHILE_P2SS_IN_P3SS_IS_DISABLED_YOU_CAN_ENABLE_IT_IN_SETTINGS">禁用 %3$s 中的 %2$s 时，%1$s 将无法运行。您可以在【设置】中将其启用。</string>
+    <string name="MIDS_GH_POP_PD_VIDEOS_HAVE_BEEN_SELECTED">已选中 %d 个视频。</string>
+    <string name="MIDS_GH_POP_PD_VIDEOS_WILL_BE_DELETED">将删除 %d 个视频。</string>
+    <string name="MIDS_GH_POP_PLAY_YOUR_GAMES_LONGER_BY_LOWERING_THE_GRAPHICS_QUALITY_TO_SAVE_BATTERY_POWER">通过降低画面质量来节省电量，以延长玩游戏的时间。</string>
+    <string name="MIDS_GH_POP_PROFILE_IMAGE_SIZE">个人资料图片大小</string>
+    <string name="MIDS_GH_POP_PROFILE_SOURCE">个人资料来源</string>
+    <string name="MIDS_GH_POP_PROFILE_VIDEO_SIZE">个人资料视频大小</string>
+    <string name="MIDS_GH_POP_PS_AND_ALL_THE_FEATURES_RELATED_TO_IT_WILL_BE_DISABLED">将禁用 %s 及所有相关的功能。</string>
+    <string name="MIDS_GH_POP_PS_AND_ALL_THE_FEATURES_RELATED_TO_IT_WILL_BE_DISABLED_YOUR_DATA_WILL_ALSO_BE_DELETED">将禁用 %s 及所有相关的功能。您的数据也将被删除。</string>
+    <string name="MIDS_GH_POP_PS_IS_DISABLED_YOU_CAN_ENABLE_IT_IN_SETTINGS">%s 已禁用，您可以在设置中启用它。</string>
+    <string name="MIDS_GH_POP_PS_WILL_BE_UNINSTALLED">%s将被卸载。</string>
+    <string name="MIDS_GH_POP_PS_WILL_BE_UPDATED_TO_THE_LATEST_VERSION_TO_CONTINUE">若要继续，%s 将更新至最新版本。</string>
+    <string name="MIDS_GH_POP_REGISTERING_ING">正在注册...</string>
+    <string name="MIDS_GH_POP_RESOLUTION">分辨率</string>
+    <string name="MIDS_GH_POP_RESTARTING_ING">重新启动中...</string>
+    <string name="MIDS_GH_POP_SAVE_POWER_DURING_GAME_NOT_AVAILABLE_FOR_HD_RESOLUTION">游戏省电功能在 HD 分辨率下不可用。</string>
+    <string name="MIDS_GH_POP_THE_ESTIMATED_BATTERY_EFFICIENCY_MAY_VARY_DEPENDING_ON_THE_GAME">预估的电池效率可能随游戏改变。</string>
+    <string name="MIDS_GH_POP_THE_FUNCTION_MANAGED_BY_GAME_TUNER_WILL_BE_RESET_TO_DEFAULT">由游戏优化器管理的功能将重置为默认。</string>
+    <string name="MIDS_GH_POP_THE_P1SS_SETTING_IN_P2SS_IS_DISABLED">已禁用 %2$s 中的 %1$s 设置。</string>
+    <string name="MIDS_GH_POP_THE_PS_ICON_ON_YOUR_HOME_SCREEN_AND_IN_APPS_WILL_BE_REMOVED">将移除主屏幕和应用程序屏幕上的 %s 图标。</string>
+    <string name="MIDS_GH_POP_THE_PS_LOG_WILL_BE_CLEARED">将清除 %s 记录。</string>
+    <string name="MIDS_GH_POP_THE_PS_LOG_WILL_BE_DELETED">将删除 %s 记录。</string>
+    <string name="MIDS_GH_POP_THE_SAVE_POWER_DURING_GAME_FUNCTION_MANAGED_BY_GAME_TUNER_WILL_BE_RESET_TO_DEFAULT">由游戏优化器管理的游戏省电功能将重置为默认设置。</string>
+    <string name="MIDS_GH_POP_THE_SELECTED_GAMES_CANNOT_BE_REGISTERED_DUE_TO_A_POLICY_VIOLATION">由于违反政策，选中的游戏无法注册。</string>
+    <string name="MIDS_GH_POP_THIS_APP_IS_NOT_LISTED_AS_A_GAME_IN_PS_TAP_REQUEST_REGISTRATION_TO_ADD_IT">此应用程序在%s中没有被列为游戏。请点击【申请注册】可进行添加。</string>
+    <string name="MIDS_GH_POP_THIS_WILL_AFFECT_THE_POSITION_OF_APPS_ON_THE_APPS_SCREEN_MSG">这将影响各个应用程序图标在应用程序屏幕上的位置。将在应用程序屏幕中隐藏游戏的图标。</string>
+    <string name="MIDS_GH_POP_TITLE">标题</string>
+    <string name="MIDS_GH_POP_TITLE_C_PS">标题：%s</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_CATEGORIES_CLOSE_THE_APP">若要更改类别，请关闭应用程序。</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_CATEGORIES_IT_WILL_CLOSE">为更改类别，将关闭应用程序。</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_SCREEN_VIEW_YOU_MUST_RESTART_THE_GAME_THIS_SETTING_ONLY_APPLIES_TO_THE_CURRENT_GAME">您必须重启游戏才能更改屏幕视图。此设置仅应用于当前游戏。</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAMEPLAY_SETTINGS_MSG">若要更改【游戏省电】设置，可能需要重新启动当前正在运行的游戏以优化屏幕显示。</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAMEPLAY_SETTINGS_MSG2">若要更改【游戏省电】设置，可能需要重新启动 %s 以优化屏幕显示。</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAME_SETTINGS_MSG">若要更改游戏省电设置，可能需要重新启动当前正在运行的游戏来优化屏幕显示。</string>
+    <string name="MIDS_GH_POP_TO_PREVENT_UNINTENTIONAL_TOUCHES_DURING_THE_GAME_MSG">为防止游戏中意外触摸，游戏期间已锁定手机侧面的侧屏触控。</string>
+    <string name="MIDS_GH_POP_TO_SHOW_IN_FULL_SCREEN_VIEW_MSG">若要在全屏显示，您必须重启游戏。全屏视图的宽高比可能并不合适。此设置仅应用于当前游戏。</string>
+    <string name="MIDS_GH_POP_TO_USE_GAME_TOOLS_IT_MUST_BE_ENABLED">游戏工具必须先启用才能使用。</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_CAPTURE_THE_SCREEN_DELETE_SOME_FILES_AND_TRY_AGAIN">无法截取屏幕。请删除部分文件后再重试。</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN">飞行模式启用时无法连接至移动网络。连接至 Wi-Fi 网络，或禁用飞行模式并重试。</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_REGISTER_GAMES_THAT_HAVE_BEEN_DOWNLOADED_FROM_UNKNOWN_SOURCES">无法注册从未知来源下载的游戏。</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_REGISTER_THE_SELECTED_GAME_AN_UNKNOWN_ERROR_HAS_OCCURRED">无法注册选中的游戏。发生未知错误。</string>
+    <string name="MIDS_GH_POP_UNKNOWN">未知</string>
+    <string name="MIDS_GH_POP_USING_MOBILE_DATA_WHEN_ROAMING_MAY_INCUR_ADDITIONAL_CHARGES_DEPENDING_ON_YOUR_PAYMENT_PLAN">根据您的资费套餐，漫游时使用手机流量可能会产生额外费用。</string>
+    <string name="MIDS_GH_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN">需要 Wi-Fi 连接。连接至 Wi-Fi 网络并重试。</string>
+    <string name="MIDS_GH_POP_YOUR_DEVICE_IS_NOT_CONNECTED_TO_A_WI_FI_NETWORK_CONNECTING_TO_MOBILE_NETWORKS_MAY_RESULT_IN_ADDITIONAL_CHARGES_DEPENDING_ON_YOUR_PAYMENT_PLAN">您的设备未连接至 Wi-Fi 网络。根据您的资费套餐，连接至移动网络可能产生额外费用。</string>
+    <string name="MIDS_GH_POP_YOUR_DEVICE_WILL_RESTART_TO_APPLY_THE_NEW_SETTINGS_FOR_GAME_LAUNCHER">为应用游戏中心的新设置，将重启您的设备。</string>
+    <string name="MIDS_GH_POP_YOUR_REGISTRATION_REQUEST_HAS_BEEN_SUBMITTED">您的注册请求已发送。</string>
+    <string name="MIDS_GH_POP_YOU_CAN_ENABLE_PS_IN_SETTINGS">您可在【设置】中启用 %s。</string>
+    <string name="MIDS_GH_POP_YOU_CAN_ONLY_REGISTER_GAMES_DOWNLOADED_FROM_THE_GAMES_CATEGORY">您只能注册从游戏类别中下载的游戏。</string>
+    <string name="MIDS_GH_SBODY_100_KPLUS">100,000 以上</string>
+    <string name="MIDS_GH_SBODY_100_MPLUS">100,000,000 以上</string>
+    <string name="MIDS_GH_SBODY_10_KPLUS">10,000 以上</string>
+    <string name="MIDS_GH_SBODY_10_MINPLUS">10 分钟以上</string>
+    <string name="MIDS_GH_SBODY_10_MIN_MINUS">10 分钟以下</string>
+    <string name="MIDS_GH_SBODY_10_MPLUS">10,000,000 以上</string>
+    <string name="MIDS_GH_SBODY_1_DAY_AGO_ABB">1 天前</string>
+    <string name="MIDS_GH_SBODY_1_HOUR_AGO_ABB">1 小时前</string>
+    <string name="MIDS_GH_SBODY_1_HRPLUS">1 小时以上</string>
+    <string name="MIDS_GH_SBODY_1_KPLUS">1,000 以上</string>
+    <string name="MIDS_GH_SBODY_1_MINUTE_AGO_ABB">1 分钟前</string>
+    <string name="MIDS_GH_SBODY_1_MONTH_AGO_ABB">1 个月前</string>
+    <string name="MIDS_GH_SBODY_1_MPLUS">1,000,000 以上</string>
+    <string name="MIDS_GH_SBODY_1_VIDEO">1 个视频</string>
+    <string name="MIDS_GH_SBODY_2_HRSPLUS">2 小时以上</string>
+    <string name="MIDS_GH_SBODY_30_MINPLUS">30 分钟以上</string>
+    <string name="MIDS_GH_SBODY_4_HRSPLUS">4 小时以上</string>
+    <string name="MIDS_GH_SBODY_500_KPLUS">500,000 以上</string>
+    <string name="MIDS_GH_SBODY_50_KPLUS">50,000 以上</string>
+    <string name="MIDS_GH_SBODY_50_MPLUS">50,000,000 以上</string>
+    <string name="MIDS_GH_SBODY_5_KPLUS">5,000 以上</string>
+    <string name="MIDS_GH_SBODY_5_MPLUS">5,000,000 以上</string>
+    <string name="MIDS_GH_SBODY_6_HRSPLUS">6 小时以上</string>
+    <string name="MIDS_GH_SBODY_8_HRSPLUS">8 小时以上</string>
+    <string name="MIDS_GH_SBODY_ADD_A_SHORTCUT_OR_WEB_ADDRESS_FOR_QUICK_ACCESS_DURING_GAMEPLAY">添加想要在游戏中快速访问的快捷方式或网址</string>
+    <string name="MIDS_GH_SBODY_ALLOW_OR_BLOCK_NOTIFICATIONS_FROM_INDIVIDUAL_GAME_APPS">允许或阻止个别游戏应用程序的通知</string>
+    <string name="MIDS_GH_SBODY_AUTO">自动</string>
+    <string name="MIDS_GH_SBODY_AUTO_HBASED_ON_RESOLUTION">自动 (根据分辨率)</string>
+    <string name="MIDS_GH_SBODY_AUTO_HPD_MBPS">自动 (%d Mbps)</string>
+    <string name="MIDS_GH_SBODY_BLOCKED">已阻止</string>
+    <string name="MIDS_GH_SBODY_CHECK_PS_ALBUM_IN_GALLERY">查看【相册】中的 %s 相片集</string>
+    <string name="MIDS_GH_SBODY_CHECK_THE_CURRENT_APP_VERSION_AND_LEGAL_INFO">检查当前应用程序版本和法律信息</string>
+    <string name="MIDS_GH_SBODY_CLEANING_ING_ABB">正在清理...</string>
+    <string name="MIDS_GH_SBODY_CLEARED">已清除</string>
+    <string name="MIDS_GH_SBODY_CONFIGURE_YOUR_PROFILE_SOURCE_AUDIO_SOURCE_TOUCH_INTERACTION_RESOLUTION_AND_BITRATE">设置您的个人资料来源、音频来源、触摸互动、分辨率和比特率</string>
+    <string name="MIDS_GH_SBODY_DISPLAY_NORMAL_SCREEN_QUALITY_DURING_GAMEPLAY">游戏期间显示标准画面质量</string>
+    <string name="MIDS_GH_SBODY_DO_NOT_USE_SAVE_POWER_DURING_GAME">游戏期间不使用省电</string>
+    <string name="MIDS_GH_SBODY_EXTREMELY_LOW">极低</string>
+    <string name="MIDS_GH_SBODY_GAMES_RANKED_BY_THE_LONGEST_PLAYING_TIMES">按照最长游戏时间排名的游戏</string>
+    <string name="MIDS_GH_SBODY_GAMES_RANKED_BY_THE_MOST_USERS_PER_DAY">按照每日最多用户排名的游戏</string>
+    <string name="MIDS_GH_SBODY_GAME_SCREEN_CAPTURED">已截取游戏画面</string>
+    <string name="MIDS_GH_SBODY_HIDE_THE_FLOATING_BUTTON">隐藏浮动按钮</string>
+    <string name="MIDS_GH_SBODY_LOW">低</string>
+    <string name="MIDS_GH_SBODY_LOWER_THE_RESOLUTION_AND_FRAME_RATE_TO_A_MINIMUM_LEVEL_TO_SAVE_POWER">将分辨率和帧率降至最低水平以省电</string>
+    <string name="MIDS_GH_SBODY_LOWER_YOUR_BATTERY_USAGE_BY_USING_A_LOWER_RESOLUTION">通过使用较低的分辨率降低您的电池使用量</string>
+    <string name="MIDS_GH_SBODY_LOWER_YOUR_BATTERY_USAGE_BY_USING_A_LOWER_RESOLUTION_AND_FRAME_RATE">降低分辨率和帧率即可减小电量消耗</string>
+    <string name="MIDS_GH_SBODY_MANAGE_USEFUL_FEATURES_WHILE_YOU_PLAY_GAMES">玩游戏期间管理实用功能</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_AND_INCREASE_PLAYING_TIME_RESOLUTION_AND_FRAME_RATE_MAY_BE_DECREASED">将电量使用降至最低来延长游戏时间。可能会降低分辨率和帧率。</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_CUSTOMISING_YOUR_SETTINGS">通过自定义设置来最小化电池使用量</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_OPTIMISING_YOUR_SCREEN_DISPLAY_QUALITY">通过优化屏幕显示质量来降低耗电量</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_USING_THE_LOWEST_RESOLUTION_AND_FRAME_RATE">通过使用最低分辨率和帧率来最小化电池使用量。</string>
+    <string name="MIDS_GH_SBODY_NEWLY_INSTALLED_ABB">新安装</string>
+    <string name="MIDS_GH_SBODY_NORMAL">正常</string>
+    <string name="MIDS_GH_SBODY_NOT_AVAILABLE">不可用</string>
+    <string name="MIDS_GH_SBODY_OFF">关</string>
+    <string name="MIDS_GH_SBODY_ON">开</string>
+    <string name="MIDS_GH_SBODY_OPTIMISE_THE_GRAPHICS_QUALITY_AUTOMATICALLY_FOR_SMOOTHER_GAMEPLAY">自动优化画面质量以获得更流畅的游戏体验</string>
+    <string name="MIDS_GH_SBODY_PD_DAYS_AGO_ABB">%d 天前</string>
+    <string name="MIDS_GH_SBODY_PD_HOURS_AGO_ABB">%d 小时前</string>
+    <string name="MIDS_GH_SBODY_PD_MINUTES_AGO_ABB">%d 分钟前</string>
+    <string name="MIDS_GH_SBODY_PD_MONTHS_AGO_ABB">%d 个月前</string>
+    <string name="MIDS_GH_SBODY_PD_VIDEOS">%d 个视频</string>
+    <string name="MIDS_GH_SBODY_PLAYING_ABB">正在播放</string>
+    <string name="MIDS_GH_SBODY_POPULAR_GAME_VIDEOS_ON_YOUTUBE">YouTube 热门游戏视频</string>
+    <string name="MIDS_GH_SBODY_PREPARING_ING">正在准备...</string>
+    <string name="MIDS_GH_SBODY_PREVENT_FRAME_RATE_DEGRADATION_MSG">防止帧率降低。可能会强制停止部分应用程序，并且增加电量消耗。</string>
+    <string name="MIDS_GH_SBODY_RECEIVE_NOTIFICATIONS_OF_PROMOTIONS_AND_MARKETING_INFORMATION_FROM_PS">接收来自%s的促销通知和营销信息。</string>
+    <string name="MIDS_GH_SBODY_RECORDED_C_P1SD_CP2SD_P3SD_P4SD_P5SD">已录制：%1$d:%2$d %3$d/%4$d/%5$d</string>
+    <string name="MIDS_GH_SBODY_RECORDING_ING">正在录制...</string>
+    <string name="MIDS_GH_SBODY_RECORDS_TOUCH_INTERACTION_WHEN_RECORDING_A_GAME">录制游戏时记录触摸互动</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_DEVICE_MAY_BE_RECORDED_WITH_GAME_AUDIO">录制游戏音频。您设备上的系统声音可能与游戏音频一起录制。</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_PHONE_MAY_ALSO_BE_RECORDED">录制游戏音频。这可能会同时录制您手机上的系统声音。</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_TABLET_MAY_ALSO_BE_RECORDED">录制游戏音频。这可能会同时录制您平板电脑上的系统声音。</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_PHONE_SYSTEM_SOUNDS_MAY_BE_RECORDED">录制手机音频。可能会录制系统声音。</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_THE_DEVICE_MICROPHONE">使用设备麦克风录制外部声音</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_YOUR_PHONE_MICROPHONE">使用您的手机麦克风录制外部声音</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_YOUR_TABLET_MICROPHONE">使用您的平板电脑麦克风录制外部声音</string>
+    <string name="MIDS_GH_SBODY_RECORD_YOUR_GAMEPLAY_WITHOUT_A_PROFILE">不使用个人资料录制您的游戏过程</string>
+    <string name="MIDS_GH_SBODY_RECORD_YOUR_SCREEN_WITHOUT_A_PROFILE">不使用个人资料录制您的屏幕</string>
+    <string name="MIDS_GH_SBODY_SAVE_BATTERY_POWER_DURING_GAMEPLAY_BY_DOWNGRADING_THE_VIDEO_QUALITY">在玩游戏时通过降低视频质量可节省电量</string>
+    <string name="MIDS_GH_SBODY_SAVING_ING">正在保存...</string>
+    <string name="MIDS_GH_SBODY_SET_AS_PRIORITY">设置为优先</string>
+    <string name="MIDS_GH_SBODY_SET_BY_GAME_TUNER">由游戏优化器设置</string>
+    <string name="MIDS_GH_SBODY_SHOW_THE_FLOATING_BUTTON">显示浮动按钮</string>
+    <string name="MIDS_GH_SBODY_TAP_HERE_TO_SHOW_GAME_TOOLS_AS_A_FLOATING_BUTTON">点击此处以浮动按钮的形式显示游戏工具</string>
+    <string name="MIDS_GH_SBODY_TAP_HERE_TO_START_USING_GAME_LAUNCHER">点击此处可开始使用游戏中心</string>
+    <string name="MIDS_GH_SBODY_THIS_IS_THE_DEFAULT_BASIC_SETTING_APPLIED_TO_GAMEPLAY">玩游戏时所应用的基本默认设置</string>
+    <string name="MIDS_GH_SBODY_USED">已使用</string>
+    <string name="MIDS_GH_SBODY_USE_THE_FRONT_CAMERA_TO_RECORD_YOURSELF_DURING_GAMEPLAY">游戏时使用前置摄像头录制您自己</string>
+    <string name="MIDS_GH_SBODY_USE_THE_FRONT_CAMERA_TO_RECORD_YOURSELF_WHILE_RECORDING_YOUR_SCREEN">录制屏幕的同时使用前置摄像头自拍</string>
+    <string name="MIDS_GH_SBODY_YOUTUBE_GAME_VIDEOS_BASED_ON_YOUR_INSTALLED_GAMES">根据您已安装的游戏推荐的 YouTube 游戏视频</string>
+    <string name="MIDS_GH_TAB2_PLAYED_GAMES">玩过的游戏</string>
+    <string name="MIDS_GH_TAB2_RECORDED_VIDEOS">录制的视频</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DESELECT_ALL">双击可取消全选。</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DESELECT_ALL_GAMES">双击以取消选择所有游戏</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DOWNLOAD_GAME">双击以下载游戏。</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_EDIT">双击以编辑</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_HIDE_ADDITIONAL_FIELDS">双击可隐藏额外字段。</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SELECT_ALL">双击可全选。</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SELECT_ALL_GAMES">双击以选择所有游戏</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SHOW_ADDITIONAL_FIELDS">双击可显示额外字段。</string>
+    <string name="MIDS_GH_TBBODY_NAVIGATE_UP">向上导航。</string>
+    <string name="MIDS_GH_TBBODY_NOT_SELECTED">未选中。</string>
+    <string name="MIDS_GH_TBBODY_PROCESSING">正在处理。</string>
+    <string name="MIDS_GH_TBBODY_SELECTED">已选中。</string>
+    <string name="MIDS_GH_TBBODY_SET_PROFILE_SIZE_TO_PD_PERCENT">将个人资料大小设置为百分之 %d。</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_CLOSE">点击可关闭。</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_DOWNLOAD_GAME">点击以下载游戏</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_VIEW_DETAILS">点击以查看详情。</string>
+    <string name="MIDS_GH_TBOPT_1_SELECTED">选中 1 个</string>
+    <string name="MIDS_GH_TBOPT_ADD_APPS">添加应用程序</string>
+    <string name="MIDS_GH_TBOPT_BUTTON">按钮</string>
+    <string name="MIDS_GH_TBOPT_CANCEL">取消</string>
+    <string name="MIDS_GH_TBOPT_CLOSED">已关闭</string>
+    <string name="MIDS_GH_TBOPT_DECREASE_PROFILE_SIZE">减小配置文件大小</string>
+    <string name="MIDS_GH_TBOPT_DISABLE">禁用</string>
+    <string name="MIDS_GH_TBOPT_DISABLED">已禁用</string>
+    <string name="MIDS_GH_TBOPT_DOWNLOAD_RECOMMENDED_GAME">下载推荐游戏</string>
+    <string name="MIDS_GH_TBOPT_DROPDOWN_LIST">下拉列表</string>
+    <string name="MIDS_GH_TBOPT_ENABLED">已启用</string>
+    <string name="MIDS_GH_TBOPT_FEATURED">精选</string>
+    <string name="MIDS_GH_TBOPT_GAME_BOOST">游戏增强</string>
+    <string name="MIDS_GH_TBOPT_GAME_LAUNCHER">游戏中心</string>
+    <string name="MIDS_GH_TBOPT_HEADER">标题</string>
+    <string name="MIDS_GH_TBOPT_INCREASE_PROFILE_SIZE">增加配置文件大小</string>
+    <string name="MIDS_GH_TBOPT_INSTALL">安装</string>
+    <string name="MIDS_GH_TBOPT_LINK">链接</string>
+    <string name="MIDS_GH_TBOPT_LIST">列表</string>
+    <string name="MIDS_GH_TBOPT_MORE">更多</string>
+    <string name="MIDS_GH_TBOPT_NAVIGATE_UP">向上导航</string>
+    <string name="MIDS_GH_TBOPT_NOT_AVAILABLE">不可用</string>
+    <string name="MIDS_GH_TBOPT_NOT_SELECTED">未选定</string>
+    <string name="MIDS_GH_TBOPT_NO_ITEMS_SELECTED">未选择内容</string>
+    <string name="MIDS_GH_TBOPT_OPEN">打开</string>
+    <string name="MIDS_GH_TBOPT_OVERLAY_SCREEN">重叠屏幕</string>
+    <string name="MIDS_GH_TBOPT_PD_PERCENT">百分之 %d</string>
+    <string name="MIDS_GH_TBOPT_PD_SELECTED">已选中 %d 个</string>
+    <string name="MIDS_GH_TBOPT_PLAY_STORE">Play 商店</string>
+    <string name="MIDS_GH_TBOPT_POP_UP_MESSAGE">弹出消息</string>
+    <string name="MIDS_GH_TBOPT_PROFILE_SOURCE">个人资料来源</string>
+    <string name="MIDS_GH_TBOPT_RANKING_PD">等级为 %d</string>
+    <string name="MIDS_GH_TBOPT_SAVE_POWER_DURING_GAME">游戏省电</string>
+    <string name="MIDS_GH_TBOPT_SEEK_CONTROL">搜索控制</string>
+    <string name="MIDS_GH_TBOPT_SELECTED">已选定</string>
+    <string name="MIDS_GH_TBOPT_SELECT_VIDEOS">选择视频</string>
+    <string name="MIDS_GH_TBOPT_SETTINGS">设置</string>
+    <string name="MIDS_GH_TBOPT_SIZE_CONTROL">大小控制</string>
+    <string name="MIDS_GH_TBOPT_SWITCH">开关</string>
+    <string name="MIDS_GH_TBOPT_S_GAMES">S Games</string>
+    <string name="MIDS_GH_TBOPT_TEXT_FIELD">文本字段</string>
+    <string name="MIDS_GH_TBOPT_TICKBOX">复选框</string>
+    <string name="MIDS_GH_TBOPT_UNINSTALL">卸载</string>
+    <string name="MIDS_GH_TBOPT_VIEW_BY">查看方式</string>
+    <string name="MIDS_GH_TBOPT_VIEW_TYPE">查看类型</string>
+    <string name="MIDS_GH_TPOP_BACK_KEY_LOCKED_DURING_GAMEPLAY">游戏期间锁定返回键</string>
+    <string name="MIDS_GH_TPOP_CLOSE_ALL_GAMES_AND_TRY_AGAIN">关闭所有游戏并重试</string>
+    <string name="MIDS_GH_TPOP_CURRENTLY_PLAYING_PS">当前正在玩 %s</string>
+    <string name="MIDS_GH_TPOP_DRAG_QUICK_PANEL_DOWN_TO_SHOW_FLOATING_BUTTON_AGAIN">向下拖动快速面板可再次显示浮动按钮</string>
+    <string name="MIDS_GH_TPOP_FAILED_TO_INSTALL_PS">安装 %s 失败</string>
+    <string name="MIDS_GH_TPOP_FAILED_TO_RECORD_DEVICE_ERROR_OCCURRED">录制失败。设备发生错误。</string>
+    <string name="MIDS_GH_TPOP_GAME_AUDIO_MUTED_WHEN_OPENED_VIA_PS_CHANGE_VOLUME_WHILE_GAME_OPEN">通过 %s 打开游戏时将静音。请在游戏打开后调整音量。</string>
+    <string name="MIDS_GH_TPOP_GAME_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_MSG">当通过 %s 打开您的游戏时，游戏音频将被静音。您可以在游戏打开后更改音量。</string>
+    <string name="MIDS_GH_TPOP_GAME_SHOWN_IN_185_C9_FULL_SCREEN_VIEW_IF_IT_DOESNT_FIT_ASPECT_RATIO_DISABLE_FULL_SCREEN_MODE">在 18.5:9 全屏视图中显示游戏。如果纵横比不合适，请关闭全屏模式。</string>
+    <string name="MIDS_GH_TPOP_MAXIMUM_NUMBER_OF_MINIMISED_APPS_HPD_ALREADY_REACHED">已达到可最小化应用程序的最大数量 (%d)</string>
+    <string name="MIDS_GH_TPOP_MEDIA_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_MSG">当通过%s打开您的游戏时，媒体音频将被静音。您可以在游戏打开后更改音量。</string>
+    <string name="MIDS_GH_TPOP_MINIMISE_AND_ALIVE_ALREADY_ENABLED_IN_ANOTHER_GAME_MSG">已在其他游戏中启用最小化并保持活动状态。只能在一个游戏中启用最小化并保持活动状态。</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_DEVICE_MEMORY_TO_RECORD">设备内存不足，无法录制。</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_PHONE_MEMORY_TO_RECORD_GAME">手机内存不足，无法录制游戏。</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_TABLET_MEMORY_TO_RECORD_GAME">平板电脑内存不足，无法录制游戏。</string>
+    <string name="MIDS_GH_TPOP_NO_ALERTS_DURING_GAME_ENABLED_ALL_ALERTS_WILL_BE_MUTED_AND_HIDDEN_DURING_GAMEPLAY">已启用【游戏中关闭提醒】。游戏期间，所有提醒都将静音并隐藏。</string>
+    <string name="MIDS_GH_TPOP_NO_ALERTS_DURING_GAME_ENABLED_MSG">已启用【游戏中关闭提醒】。玩游戏时，大部分提醒将静音并隐藏，但仍会显示包括来电提醒在内的部分提醒。</string>
+    <string name="MIDS_GH_TPOP_NO_GAME_AUDIO_RECORDED_VOLUME_MUTED">未录制游戏音频。音量已静音。</string>
+    <string name="MIDS_GH_TPOP_NO_INTERRUPTIONS_ENABLED_ALL_CALLS_AND_ALERTS_WILL_BE_MUTED_AND_HIDDEN">【免打扰】已启用。所有来电和提醒将被静音并隐藏。</string>
+    <string name="MIDS_GH_TPOP_NO_NETWORK_CONNECTION_DATA_ROAMING_DISABLED">无网络连接。数据漫游已禁用。</string>
+    <string name="MIDS_GH_TPOP_NO_NETWORK_CONNECTION_MOBILE_DATA_TURNED_OFF">无网络连接。手机流量已关闭。</string>
+    <string name="MIDS_GH_TPOP_ONLY_INCOMING_CALLS_WILL_BE_DISPLAYED_ON_SCREEN">仅在屏幕上显示来电</string>
+    <string name="MIDS_GH_TPOP_P1SS_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_CHANGES_CAN_TAKE_UP_TO_P3SD_SECONDS">%1$s 受到游戏中心功能 (如 %2$s) 影响。更改生效可能需要 %3$d 秒钟时间。</string>
+    <string name="MIDS_GH_TPOP_P1SS_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_P3SS">%1$s 受游戏中心功能影响 (如 %2$s、%3$s)。</string>
+    <string name="MIDS_GH_TPOP_P1SS_AND_P2SS_ENABLED">已启用%1$s和%2$s</string>
+    <string name="MIDS_GH_TPOP_P1SS_HAS_BEEN_CATEGORISED_AS_A_GAME_GAME_LAUNCHER_FEATURES_HP2SS_WILL_BE_APPLIED_TO_THIS_APP">%1$s 已归类为游戏。游戏中心功能 (%2$s) 将适用于此应用程序。</string>
+    <string name="MIDS_GH_TPOP_P1SS_NOT_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_CHANGES_CAN_TAKE_UP_TO_P3SD_SECONDS">%1$s 不受游戏中心功能 (如 %2$s) 影响。更改生效可能需要 %3$d 秒钟时间。</string>
+    <string name="MIDS_GH_TPOP_P1SS_NOT_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_P3SS">%1$s 不受游戏中心功能影响 (如 %2$s、%3$s)。</string>
+    <string name="MIDS_GH_TPOP_P1SS_P2SS_ENABLED">已启用%1$s和%2$s</string>
+    <string name="MIDS_GH_TPOP_PROCESSING_ING">正在处理...</string>
+    <string name="MIDS_GH_TPOP_PS_ENABLED">已启用%s</string>
+    <string name="MIDS_GH_TPOP_PS_INSTALLED">已安装 %s</string>
+    <string name="MIDS_GH_TPOP_PS_UPDATED">已更新 %s</string>
+    <string name="MIDS_GH_TPOP_RECENTS_AND_BACK_KEYS_LOCKED_DURING_GAMEPLAY">游戏过程中锁定最近键和返回键</string>
+    <string name="MIDS_GH_TPOP_RECENTS_KEY_LOCKED_DURING_GAMEPLAY">游戏期间锁定最近使用键</string>
+    <string name="MIDS_GH_TPOP_RECORDED_VIDEO_SAVED_TO_DEVICE_MEMORY">录制的视频已保存至设备存储</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_BECAUSE_GAME_SCREEN_WAS_LEFT_RECORDING_SAVED_AUTOMATICALLY">由于离开游戏画面，录制已停止。已自动保存游戏录像。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DEVICE_ERROR_OCCURRED_VIDEO_NOT_SAVED">录制已停止。发生设备错误。视频未保存。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LEAVING_APP_SCREEN_RECORDING_SAVED_AUTOMATICALLY">由于离开应用程序界面，录制已停止。录制已自动保存。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LEAVING_GAME_SCREEN_RECORDING_SAVED_AUTOMATICALLY">由于离开游戏界面，录制已停止。已自动保存录制。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LOW_BATTERY_RECORDING_SAVED_AUTOMATICALLY">由于电量不足，录制已停止。录制已自动保存。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_DEVICE_MEMORY_RECORDING_SAVED_AUTOMATICALLY">由于设备内存不足，录制已停止。录制已自动保存。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_PHONE_MEMORY_RECORDING_SAVED_AUTOMATICALLY">由于手机内存不足，录制已停止。录制已自动保存。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_TABLET_MEMORY_RECORDING_SAVED_AUTOMATICALLY">由于平板电脑内存不足，录制已停止。录制已自动保存。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_GAME_SCREEN_SWITCHED_TO_ANOTHER_SCREEN_VIDEO_SAVED">录制已停止。游戏屏幕被切换为其他屏幕。视频已保存。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_MAXIMUM_FILE_SIZE_HP1SS_P2SS_REACHED_VIDEO_SAVED">已达到文件大小上限 (%1$s %2$s)，录制已停止且已保存视频。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_MAXIMUM_RECORDING_TIME_HPD_MINUTES_REACHED_VIDEO_SAVED">录制已停止。已达到最长录制时间 (%d 分钟)。视频已保存。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_PHONE_ERROR_OCCURRED_VIDEO_NOT_SAVED">手机发生错误，录制已停止。未保存视频。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_TABLET_ERROR_OCCURRED_VIDEO_NOT_SAVED">平板电脑发生错误，录制已停止。未保存视频。</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_WITHIN_PD_SECONDS_VIDEO_NOT_SAVED">录制已在 %d 秒内停止。视频未保存。</string>
+    <string name="MIDS_GH_TPOP_REGISTRATION_REQUEST_FOR_PS_SUBMITTED">已提交%s的注册申请</string>
+    <string name="MIDS_GH_TPOP_SHORTCUT_ADDED">快捷方式已添加</string>
+    <string name="MIDS_GH_TPOP_SHORTCUT_ADDED_TO_HOME_SCREEN">快捷方式已添加至主屏幕</string>
+    <string name="MIDS_GH_TPOP_TAP_THE_PROFILE_BUTTON_TO_STOP_RECORDING_DRAG_AND_DROP_TO_MOVE_BUTTON">点击【配置文件】按钮停止录制。可通过拖放移动按钮。</string>
+    <string name="MIDS_GH_TPOP_THIS_APP_DOES_NOT_SUPPORT_PS_FUNCTION_OF_GAME_TOOLS">此应用程序不支持游戏工具的 %s 功能。</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_ENABLED">飞行模式启用时无法连接至移动网络</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_ENABLE_OR_DISABLE_EXTENDED_PLAY_MODE_DURING_GAMEPLAY">游戏时无法启用或禁用延长游戏模式。</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_ANOTHER_APP_USING_MICROPHONE">无法录制。另一个应用程序正在使用麦克风。</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_AUDIO_IF_VOLUME_MUTED">如果音量已静音，则无法录制音频。</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_CAMERA_IN_USE">无法录制。相机正在使用中。</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_DURING_CALLS">通话期间无法录制</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_GAME_AUDIO_IF_VOLUME_MUTED">如果音量已静音，则无法录制游戏音频。</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_GAME_ERROR_OCCURRED">出现错误，无法录制游戏。</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_LOW_BATTERY">电量不足，无法录制。</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_RECORDING_NOT_SUPPORTED_BY_THIS_GAME_DUE_TO_POLICY">无法录制。由于政策原因，此游戏不支持录制。</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_VOICE_IF_GAME_VOLUME_TOO_HIGH">如果游戏音量太高，则无法录音。</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_VOICE_WHILE_VOLUME_SET_TOO_HIGH">音量设置过高时无法录制语音</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_USE_P1SS_CHECK_NOTIFICATION_PANEL_TO_ALLOW_THESE_PERMISSIONS_C_P2SS">无法使用 %1$s。请查看通知面板来允许下列权限：%2$s。</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_USE_P1SS_CHECK_NOTIFICATION_PANEL_TO_ALLOW_THIS_PERMISSION_C_P2SS">无法使用 %1$s。请查看通知面板来允许下列权限：%2$s。</string>
+    <string name="MIDS_GH_TPOP_VIDEO_SAVED">视频已保存</string>
+    <string name="MIDS_GH_TPOP_VOICE_MAY_NOT_BE_RECORDED_WELL_IF_GAME_VOLUME_TOO_HIGH">如果游戏音量过高，可能无法清晰地录制语音。</string>
+</resources>

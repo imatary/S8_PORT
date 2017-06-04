@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingTop="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/notification_icon" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/notification_contents_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="12.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/notification_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="2.0dip" android:text="@string/MIDS_GH_MBODY_INTRODUCING_GAME_LAUNCHER_ABB" android:includeFontPadding="false" android:textAlignment="viewStart" />
+            <TextView android:textSize="13.0dip" android:textColor="#ff435463" android:id="@id/notification_contents_text" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/MIDS_GH_POP_MANAGE_ALL_YOUR_GAMES_IN_ONE_PLACE_AND_TRY_OUT_ADDITIONAL_GAME_FEATURES" android:includeFontPadding="false" android:textAlignment="viewStart" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/notification_enable_button" android:background="@drawable/rounded_corner_ripple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_marginEnd="2.0dip">
+            <TextView android:textAppearance="?android:actionMenuTextAppearance" android:textSize="15.0dip" android:textColor="#ff499ebd" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/MIDS_GH_BUTTON_ENABLE_ABB" android:fontFamily="sans-serif-medium" android:textAlignment="viewStart" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
