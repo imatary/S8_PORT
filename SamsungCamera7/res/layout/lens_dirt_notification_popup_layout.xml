@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/camera_help_bubble_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lens_dirt_noti_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lens_dirt_noti_popup_padding_top" android:src="@drawable/camera_help_bubble_lens" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:importantForAccessibility="no" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/default_text_color" android:id="@id/lens_dirt_noti_description_textview" android:paddingLeft="@dimen/lens_dirt_noti_popup_side_padding" android:paddingRight="@dimen/lens_dirt_noti_popup_side_padding" android:layout_width="@dimen/lens_dirt_notification_popup_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lens_dirt_noti_popup_margin_top" android:layout_marginBottom="@dimen/lens_dirt_noti_popup_margin_bottom" android:layout_below="@id/lens_dirt_noti_imageview" android:layout_centerHorizontal="true" android:fontFamily="sans-serif" android:textAlignment="textStart" />
+</RelativeLayout>

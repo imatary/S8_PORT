@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:gravity="start|bottom|center" android:id="@id/input_text" android:layout_width="fill_parent" android:layout_height="47.0dip" android:singleLine="true" android:maxLength="200" android:inputType="text" android:labelFor="@id/input_text" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/watermark_input_text_color" android:id="@id/remain_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/input_text" android:fontFamily="sans-serif" android:layout_alignEnd="@id/input_text" android:labelFor="@id/remain_text" />
+</RelativeLayout>
