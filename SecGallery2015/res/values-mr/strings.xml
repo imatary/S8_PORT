@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">खालील क्रमांकावर पडताळणी कोड पाठविण्यात येईल.</string>
+    <string name="acs">आवाज कॉल</string>
+    <string name="agree">सहमत आहे</string>
+    <string name="cancel">रद्द करा</string>
+    <string name="check_your_network_status">आपल्या नेटवर्कची स्थिती तपासा, नंतर पुन्हा प्रयत्न करा.</string>
+    <string name="choose_verification_method">आपली प्राधान्‍यीकृत पडताळणी पद्धत निवडा.</string>
+    <string name="decline">नकार द्या</string>
+    <string name="deregister">फोन क्रमांक अनोंदणीकृत करा</string>
+    <string name="enter_your_phone_number">आपला देश कोड किंवा फोन नंबर प्रविष्ट करा.</string>
+    <string name="enter_your_verification_code">आपला पडताळणी कोड प्रविष्ट करा</string>
+    <string name="if_your_registered_for_dnd_service">आपण DND सेवेसाठी नोंदणीकृत केले असल्यास, आवाज पडताळणी वापरा.</string>
+    <string name="in_progress">प्रगतीवर...</string>
+    <string name="mt_dialog_progress">आपल्‍या SMS कोडची स्‍वयंचलितपणे पडताळणी करत आहे...</string>
+    <string name="no_results">परिणाम नाहीत</string>
+    <string name="ok">ठीक</string>
+    <string name="phone_number_verification_failed">फोन नंबर पडताळणी अयशस्वी. मॅन्युअली पडताळणी करा.</string>
+    <string name="please_wait">पडताळणी कोड तपासणे. कृपया प्रतीक्षा करा...</string>
+    <string name="regist_select_country_or_region_code">देश किंवा क्षेत्र</string>
+    <string name="resend">पुन्हा पाठवा</string>
+    <string name="search">शोधा</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">क्षेत्र कोड</string>
+    <string name="sms_auth_page_phone_number">फोन नंबर</string>
+    <string name="the_verification_has_failed">पडताळणी अयशस्वी झाली आहे. पुन्हा प्रयत्न करा.</string>
+    <string name="toast_text_max_Length">कमाल वर्ण मर्यादा ओलांडली गेली आहे.</string>
+    <string name="unable_to_connect_to_the_network">नेटवर्कशी कनेक्‍ट करण्‍यामध्‍ये अक्षम. आपल्‍या कनेक्‍शन सेटिंग्‍स तपासा आणि पुन्हा प्रयत्न करा.</string>
+    <string name="we_recommend_using_a_voice_call">आपल्याला SMS संदेश प्राप्त होत नसतील तर आम्ही व्हॉइस कॉल वापरण्याची शिफारस करतो.</string>
+    <string name="you_have_entered_incorrect_code">आपण चुकीचा पडताळणी कोड प्रविष्‍ट केला आहे. पुन्हा प्रयत्न करा.</string>
+</resources>

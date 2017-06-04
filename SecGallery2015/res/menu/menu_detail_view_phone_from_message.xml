@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_mms_save" android:visible="false" android:title="@string/save" android:showAsAction="always|withText" />
+    <item android:id="@id/action_setas_contact" android:visible="true" android:title="@string/set_as_contact_picture" android:showAsAction="never" />
+    <item android:id="@id/action_setas" android:visible="true" android:title="@string/set_as_wallpaper" android:showAsAction="never" />
+</menu>

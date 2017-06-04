@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/share_dialog_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/people_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:background="@color/list_search_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/share_dialog_divider_height" />
+            <TextView android:textSize="@dimen/share_dialog_description_text_size" android:textColor="@color/dialog_content_text_color" android:id="@id/sms_member_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/share_dialog_top_margin" android:text="@string/description_of_sms_member_dialog" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

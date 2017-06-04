@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.app.highlightplayer.view.GalleryPreviewViewGroup android:id="@id/preview_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.app.ve.preview.ProjectPreview2 android:id="@id/previewlayout" android:layout_width="@dimen/lite_preview_width" android:layout_height="@dimen/lite_preview_height" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/surfaceHiderImgView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/actionbarBelndingEffct" android:background="@drawable/blending_top_effect" android:layout_width="fill_parent" android:layout_height="@dimen/gallery_action_bar_height" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/previewPlayBtnParent" android:background="@color/transparent" android:layout_width="@dimen/simple_preview_play_btn_size" android:layout_height="@dimen/simple_preview_play_btn_size" android:layout_centerInParent="true">
+        <ImageView android:id="@id/previewplayBtn" android:focusable="true" android:clickable="true" android:layout_width="@dimen/simple_preview_play_btn_size" android:layout_height="@dimen/simple_preview_play_btn_size" android:src="@drawable/gallery_ic_detail_play" android:layout_centerInParent="true" android:contentDescription="@string/highlight_play" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/equalizerParentView" android:background="@color/transparent" android:paddingRight="@dimen/simple_equalizer_right_margin" android:paddingBottom="@dimen/simple_equalizer_btm_margin" android:visibility="gone" android:layout_width="@dimen/simple_equalizer_btn_parent_width" android:layout_height="@dimen/simple_equalizer_btn_parent_height" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/equalizerView" android:layout_width="@dimen/simple_equalizer_btn_size" android:layout_height="@dimen/simple_equalizer_btn_size" />
+    </RelativeLayout>
+</com.samsung.app.highlightplayer.view.GalleryPreviewViewGroup>

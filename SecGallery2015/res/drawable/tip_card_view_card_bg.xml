@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/tip_card_view_card_radius" />
+            <stroke android:width="@dimen/thumbnail_stroke_width_grace" android:color="@color/tip_card_view_card_stroke_color" />
+        </shape>
+    </item>
+    <item android:left="@dimen/thumbnail_stroke_width_grace" android:top="@dimen/thumbnail_stroke_width_grace" android:right="@dimen/thumbnail_stroke_width_grace" android:bottom="@dimen/thumbnail_stroke_width_grace">
+        <shape>
+            <solid android:color="@color/white_color" />
+            <corners android:radius="@dimen/tip_card_view_card_radius" />
+        </shape>
+    </item>
+</layer-list>

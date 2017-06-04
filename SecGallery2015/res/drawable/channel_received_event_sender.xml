@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/gallery_channel_circle_thumbnail_78_bg" android:tint="@color/channel_circle_thumbnail_bg_color" />
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/gallery_channel_id_78" />
+    </item>
+</layer-list>

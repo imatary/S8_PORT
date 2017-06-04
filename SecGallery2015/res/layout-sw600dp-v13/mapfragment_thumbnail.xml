@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/map_marker" android:background="@color/gallery_color_primary" android:layout_width="52.0dip" android:layout_height="32.0dip" android:src="@drawable/gallery_location_mapview_ic_location" android:tint="@color/map_view_thumbnaillist_map_marker_tint_color" android:layout_above="@id/map_list_thumbnail_layout" android:paddingStart="20.0dip" android:paddingEnd="0.0dip" android:layout_alignStart="@id/map_list_thumbnail_layout" android:tintMode="src_atop" />
+    <TextView android:id="@id/map_address" android:layout_height="32.0dip" android:layout_above="@id/map_list_thumbnail_layout" android:paddingStart="9.0dip" android:paddingEnd="0.0dip" android:layout_toEndOf="@id/map_marker" style="@style/MapViewThumbnailAddressText" />
+    <LinearLayout android:orientation="vertical" android:id="@id/map_list_thumbnail_layout" android:background="@color/map_view_thumbnaillist_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

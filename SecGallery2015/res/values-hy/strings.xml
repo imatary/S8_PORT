@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">Ստուգման կոդ կուղարկվի ստորև տրված համարին:</string>
+    <string name="acs">Ձայնականչ</string>
+    <string name="agree">Հմձայն եմ</string>
+    <string name="cancel">Դադարեցնել</string>
+    <string name="check_your_network_status">Ստուգեք Ձեր ցանցի կարգավիճակը, հետո նորից փորձեք:</string>
+    <string name="choose_verification_method">Ընտրեք նախընտրելի ստուգման եղանակը:</string>
+    <string name="decline">Չընդունել</string>
+    <string name="deregister">Գրանցումից հանել հեռախոսահամարը</string>
+    <string name="enter_your_phone_number">Մուտքագրեք երկրի կոդը և հեռախոսահամարը:</string>
+    <string name="enter_your_verification_code">Մուտքագրեք Ձեր ստուգման կոդը</string>
+    <string name="if_your_registered_for_dnd_service">Եթե գրանցված եք DND ծառայությանը, օգտագործեք ձայնով ստուգում:</string>
+    <string name="in_progress">Ընթացքում է...</string>
+    <string name="mt_dialog_progress">Ինքնաբերաբար ստուգվում է Ձեր SMS կոդը...</string>
+    <string name="no_results">Արդյունքներ չկան</string>
+    <string name="ok">OK</string>
+    <string name="phone_number_verification_failed">Հեռախոսահամարի ստուգումը ձախողվեց: Ստուգեք ձեռքով:</string>
+    <string name="please_wait">Ստուգման կոդը ստուգվում է: Խնդրում ենք սպասել...</string>
+    <string name="regist_select_country_or_region_code">Երկիր կամ տարածաշրջան</string>
+    <string name="resend">Նրց ուղրկլ</string>
+    <string name="search">Որոնել</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">Տարածաշրջանային կոդ</string>
+    <string name="sms_auth_page_phone_number">Հեռախոսահամար</string>
+    <string name="toast_text_max_Length">Գրանշանների առավելագույն քանակը գերազանցվել է:</string>
+    <string name="unable_to_connect_to_the_network">Անհնար է միանալ ցանցին: Ստուգեք կապի դրվածքները և նորից փորձեք:</string>
+    <string name="we_recommend_using_a_voice_call">Խորհուրդ ենք տալիս ձայնականչ օգտագործել, եթե չեք կարող SMS հաղորդագրություններ ստանալ:</string>
+    <string name="you_have_entered_incorrect_code">Դուք սխալ ստուգման կոդ եք մուտքագրել: Նորից փորձեք:</string>
+</resources>

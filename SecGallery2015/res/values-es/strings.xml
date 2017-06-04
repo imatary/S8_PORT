@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Ir a la pantalla de inicio</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Desplazarse hacia arriba</string>
+    <string name="abc_action_menu_overflow_description">Más opciones</string>
+    <string name="abc_action_mode_done">Listo</string>
+    <string name="abc_activity_chooser_view_see_all">Ver todo</string>
+    <string name="abc_activitychooserview_choose_application">Seleccionar una aplicación</string>
+    <string name="abc_search_hint">Buscar…</string>
+    <string name="abc_searchview_description_clear">Borrar consulta</string>
+    <string name="abc_searchview_description_query">Consulta</string>
+    <string name="abc_searchview_description_search">Buscar</string>
+    <string name="abc_searchview_description_submit">Enviar consulta</string>
+    <string name="abc_searchview_description_voice">Búsqueda por voz</string>
+    <string name="abc_shareactionprovider_share_with">Compartir con</string>
+    <string name="abc_shareactionprovider_share_with_application">Compartir con %s</string>
+    <string name="abc_toolbar_collapse_description">Contraer</string>
+    <string name="status_bar_notification_info_overflow">+999</string>
+    <string name="a_verification_code_will_be_sent">Se enviará un código de verificación al siguiente número.</string>
+    <string name="acs">Llamada de voz</string>
+    <string name="cancel">Cancelar</string>
+    <string name="check_your_network_status">Compruebe el estado de la red y, a continuación, vuelva a intentarlo.</string>
+    <string name="choose_verification_method">Seleccione su método de verificación preferido.</string>
+    <string name="decline">Rechazar</string>
+    <string name="enter_your_phone_number">Introduzca su código de país y el número de teléfono.</string>
+    <string name="enter_your_verification_code">Introducir código de verificación</string>
+    <string name="if_your_registered_for_dnd_service">Si se ha registrado para el servicio DND, utilice la verificación de voz.</string>
+    <string name="in_progress">En curso...</string>
+    <string name="mt_dialog_progress">Verificando su código SMS automáticamente...</string>
+    <string name="no_results">Ningún resultado</string>
+    <string name="ok">Aceptar</string>
+    <string name="phone_number_verification_failed">No se puede verificar el número de teléfono. Hágalo manualmente.</string>
+    <string name="please_wait">Comprobando código de verificación. Espere...</string>
+    <string name="regist_select_country_or_region_code">País o región</string>
+    <string name="resend">Reenviar</string>
+    <string name="search">Buscar</string>
+    <string name="sms">Mensaje</string>
+    <string name="sms_auth_page_area_code">Código de área</string>
+    <string name="sms_auth_page_phone_number">Número de teléfono</string>
+    <string name="the_verification_has_failed">Error al verificar. Inténtelo de nuevo.</string>
+    <string name="toast_text_max_Length">Se ha alcanzado el límite de caracteres máximo.</string>
+    <string name="unable_to_connect_to_the_network">No se puede conectar a la red. Compruebe sus ajustes de conexión e inténtelo de nuevo.</string>
+    <string name="we_recommend_using_a_voice_call">Recomendamos usar una llamada de voz si no puede recibir mensajes SMS.</string>
+    <string name="you_have_entered_incorrect_code">Introdujo un código de verificación incorrecto. Inténtelo de nuevo.</string>
+</resources>

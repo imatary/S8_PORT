@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/gl_root_view" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" class="com.sec.android.gallery3d.glcore.GlRootView" />
+    <RelativeLayout android:id="@id/image360_holder" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+    <include android:id="@id/fast_option" layout="@layout/gallery360viewer_fast_option" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/view_mode_layout" android:background="@drawable/gallery360viewer_viewmode_shape_rectangle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gallery360viewer_view_mode_bar_margin_bottom" android:weightSum="5.0" android:layout_above="@id/fast_option" android:paddingStart="@dimen/gallery360viewer_view_mode_bar_padding_side" android:paddingEnd="@dimen/gallery360viewer_view_mode_bar_padding_side" android:layout_marginStart="@dimen/gallery360viewer_view_mode_bar_margin_side" android:layout_marginEnd="@dimen/gallery360viewer_view_mode_bar_margin_side" />
+    <ImageView android:id="@id/img_bubble_picker" android:layout_width="@dimen/gallery360viewer_bubble_picker_width" android:layout_height="@dimen/gallery360viewer_bubble_picker_height" android:layout_marginBottom="@dimen/gallery360viewer_bubble_picker_margin_bottom" android:src="@drawable/gallery_bubble_picker" android:tint="@color/gallery360viewer_bubble_picker_color" android:layout_above="@id/fast_option" android:contentDescription="@null" />
+</RelativeLayout>

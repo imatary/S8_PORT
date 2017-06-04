@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <stroke android:width="@dimen/actionbar_bottom_line_width" android:color="@color/actionbar_stroke_color" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/actionbar_bottom_line_width">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/actionbar_bg_color" />
+        </shape>
+    </item>
+</layer-list>

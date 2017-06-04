@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">Текшерүү коду төмөнкү номерге жиберилет.</string>
+    <string name="acs">Үн чалуу</string>
+    <string name="agree">Макул</string>
+    <string name="cancel">Токтотуу</string>
+    <string name="check_your_network_status">Тармагыңыздын абалын текшерип, дагы аракеттениңиз.</string>
+    <string name="choose_verification_method">Артык көргөн ырастоо ыкмасын тандаңыз.</string>
+    <string name="decline">Баш тартуу</string>
+    <string name="deregister">Телефон номерин каттоодон чыгаруу</string>
+    <string name="enter_your_phone_number">Өлкөңүздүн кодун жана телефон номериңизди киргизиңиз.</string>
+    <string name="enter_your_verification_code">Текшерүү кодуңузду киргизиңиз</string>
+    <string name="if_your_registered_for_dnd_service">Эгер сиз DND кызматына каттасаңыз, үн менен текшерүүнү пайдаланыңыз.</string>
+    <string name="in_progress">Иштеп жатат...</string>
+    <string name="mt_dialog_progress">Сиздин SMS кодуңуз автоматтуу текшерүүдө...</string>
+    <string name="no_results">Эч жыйынтыктар жок</string>
+    <string name="ok">ОК</string>
+    <string name="phone_number_verification_failed">Телефон номердин ырастоосу кыйрады. Колго ырастаңыз.</string>
+    <string name="please_wait">Текшерүү кодун текшерүүдө. Күтө туруңуз...</string>
+    <string name="regist_select_country_or_region_code">Өлкө же регион</string>
+    <string name="resend">Кайра жөн.</string>
+    <string name="search">Издөө</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">Аймак коду</string>
+    <string name="sms_auth_page_phone_number">Телефон номери</string>
+    <string name="the_verification_has_failed">Ырастоо кыйрады. Кайра кайталаңыз.</string>
+    <string name="toast_text_max_Length">Белгилер жогорку чегинен ашты.</string>
+    <string name="unable_to_connect_to_the_network">Тармакка байланышуу мүмкүн эмес. Туташуу орнотууларыңызды текшерип, кайра аракет кылыңыз.</string>
+    <string name="we_recommend_using_a_voice_call">Эгерде сиз SMS кабарларын кабыл ала албасаңыз, биз үн чалуусун колдонууну сунуштайбыз.</string>
+    <string name="you_have_entered_incorrect_code">Сиз туура эмес ырастоо кодун киргиздиңиз. Кайра кайталаңыз.</string>
+</resources>

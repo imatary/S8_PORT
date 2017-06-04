@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/select_tv_row_icon_bg" android:layout_width="@dimen/select_tv_row_icon_size" android:layout_height="@dimen/select_tv_row_icon_size" android:layout_marginEnd="@dimen/select_tv_row_icon_margin_end" android:backgroundTint="@color/tv_icon_default_stroke_color">
+        <ImageView android:layout_width="@dimen/select_tv_row_icon_size" android:layout_height="@dimen/select_tv_row_icon_size" android:src="@drawable/list_ic_tv" android:tint="@color/tv_icon_default_stroke_color" android:layout_centerInParent="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/single_item_text_size" android:textStyle="normal" android:textColor="@color/dialog_content_text_color" android:gravity="center_vertical" android:id="@id/tv_string" android:layout_width="fill_parent" android:layout_height="@dimen/select_tv_row_height" android:fontFamily="sec-roboto-light" />
+</LinearLayout>

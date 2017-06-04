@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/gallery_color_primary_dark" />
+    <size android:height="@dimen/quick_scroll_bar_height" android:width="@dimen/quick_scroll_bar_width" />
+    <corners android:radius="@dimen/quick_scroll_bar_round" />
+</shape>

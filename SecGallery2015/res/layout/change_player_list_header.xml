@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:paddingStart="24.0dip" android:paddingEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_item_header_text_size" android:textColor="@color/common_header_title" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/available_devices" android:layout_weight="1.0" android:textAllCaps="true" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/list_item_header_margin_left" />
+    <TextView android:textSize="19.0dip" android:textStyle="bold" android:textColor="@color/dialog_content_text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/select_device" android:layout_weight="1.0" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/list_item_header_margin_left" />
+    <ProgressBar android:id="@id/progress_spinner" android:visibility="gone" android:layout_width="@dimen/change_player_dialog_progressBar_width" android:layout_height="@dimen/change_player_dialog_progressBar_height" android:max="100" android:layout_marginEnd="24.0dip" style="?android:attr/progressBarStyleSmallTitle" />
+</LinearLayout>

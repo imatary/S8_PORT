@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/allshare_player_list_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/dialog_content_text_color" android:gravity="center" android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/slinkview_list_item_min_height" android:text="@string/no_devices_found" android:layout_centerInParent="true" android:paddingStart="@dimen/dialog_common_view_padding_left" android:paddingEnd="@dimen/dialog_common_view_padding_left" />
+</RelativeLayout>

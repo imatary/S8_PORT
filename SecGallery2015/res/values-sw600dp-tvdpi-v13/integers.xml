@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="background_alpha_value">102</integer>
+    <integer name="album_view_default_mode">2</integer>
+    <integer name="album_view_grid_max_level">1</integer>
+    <integer name="album_view_grid_min_level">0</integer>
+    <integer name="album_view_mode_count">3</integer>
+    <integer name="detail_view_mode_count">2</integer>
+    <integer name="event_view_sub_title_font_color">0xFF364F67</integer>
+    <integer name="event_view_suggestion_font_color">0xFFFFFFFF</integer>
+    <integer name="event_view_title_font_color">0xFF252525</integer>
+    <integer name="eventview_scroll_vi_factor">5</integer>
+    <integer name="mapview_marker_bitmap_topmargin">8</integer>
+    <integer name="mapview_marker_rounded_top_corners">2</integer>
+    <integer name="mapview_marker_text_leading">10</integer>
+    <integer name="photo_view_grid_max_level">3</integer>
+    <integer name="photo_view_grid_min_level">1</integer>
+    <integer name="thumbnail_view_new_album_background_color">0xFFFFFFFF</integer>
+    <integer name="thumbnail_view_new_album_select_count_font_color">0xFF000000</integer>
+    <integer name="time_view_grid_max_level">2</integer>
+    <integer name="time_view_grid_min_level">1</integer>
+    <integer name="timeview_maxSpeed">16000</integer>
+</resources>

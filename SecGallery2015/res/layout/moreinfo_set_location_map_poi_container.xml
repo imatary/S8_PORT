@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/moreinfo_set_location_map_poi_container" android:background="@drawable/map_thumbnail_address_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moreinfo_set_location_map_poi_margin_bottom" android:alpha="0.9" android:layout_marginEnd="@dimen/moreinfo_set_location_map_poi_margin_side"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fouraquare_logo" android:layout_width="@dimen/fouraquare_logo_size" android:layout_height="@dimen/fouraquare_logo_size" android:src="@drawable/gallery_ic_mapview_fouraquare" android:contentDescription="@null" android:layout_marginStart="@dimen/moreinfo_set_location_map_poi_imageview_padding_start" />
+    <TextView android:id="@id/moreinfo_set_location_map_poi_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" android:layout_marginEnd="@dimen/moreinfo_set_location_map_poi_textview_padding_end" style="@style/MapViewThumbnailPoiTextDream" />
+</LinearLayout>

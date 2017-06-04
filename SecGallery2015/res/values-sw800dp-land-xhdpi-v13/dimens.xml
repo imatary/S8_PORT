@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="slideshow_resume_icon_height">121.0dip</dimen>
+    <dimen name="slideshow_resume_icon_width">121.0dip</dimen>
+    <dimen name="slideshow_spinner_top_margin">8.0dip</dimen>
+    <dimen name="moreinfo_body_padding_left">0.0dip</dimen>
+    <dimen name="moreinfo_body_padding_right">0.0dip</dimen>
+    <dimen name="splitview_photo_title_width">170.0dip</dimen>
+    <dimen name="splitview_photo_count_corner">2.0dip</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/layout_noitems_description" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/default_background" android:paddingTop="?android:actionBarSize" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <TextView android:textSize="@dimen/noitem_text_size" android:textColor="@color/noitem_text_color" android:gravity="bottom" android:layout_gravity="center" android:id="@id/text_noitems" android:focusable="false" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/empty_set_description_no_items" android:layout_weight="0.5" android:fontFamily="sec-roboto-light" android:textAlignment="center" />
+        <TextView android:textSize="@dimen/noitem_detail_text_size" android:textColor="@color/noitem_detail_text_color" android:gravity="start|bottom|center" android:id="@id/text_noitems_detail" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_set_description_no_items" android:layout_weight="0.3" android:lineSpacingExtra="4.0sp" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/noitem_detail_left_margin_portrait" android:layout_marginEnd="@dimen/noitem_detail_left_margin_portrait" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.2" />
+    </LinearLayout>
+</ScrollView>

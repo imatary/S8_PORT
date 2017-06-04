@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <stroke android:width="@dimen/album_view_title_bg_stroke_width" android:color="@color/cardtype_outline_stroke_color" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/album_view_title_bg_shadow_bottom">
+        <shape>
+            <solid android:color="#fffafafa" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">Enviarase un código de verificación ao número indicado a continuación.</string>
+    <string name="acs">Chamada de voz</string>
+    <string name="agree">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="check_your_network_status">Comproba o estado da túa rede e, a continuación, téntao de novo.</string>
+    <string name="choose_verification_method">Selecciona o teu método de verificación preferido.</string>
+    <string name="decline">Rexeitar</string>
+    <string name="enter_your_verification_code">Introduce o código de verificación</string>
+    <string name="if_your_registered_for_dnd_service">Se te rexistraches para obter un servizo DND, utiliza a verificación por voz.</string>
+    <string name="in_progress">En curso...</string>
+    <string name="mt_dialog_progress">Verificando o teu código SMS automaticamente...</string>
+    <string name="no_results">Sen resultados</string>
+    <string name="ok">Aceptar</string>
+    <string name="phone_number_verification_failed">Produciuse un fallo na verificación do número de teléfono. Verifícao manualmente.</string>
+    <string name="please_wait">Comprobando código de verificación. Agarda...</string>
+    <string name="regist_select_country_or_region_code">País ou rexión</string>
+    <string name="resend">Reenviar</string>
+    <string name="search">Buscar</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">Código de área</string>
+    <string name="sms_auth_page_phone_number">Número de teléfono</string>
+    <string name="the_verification_has_failed">Produciuse un erro na verificación. Téntao de novo.</string>
+    <string name="toast_text_max_Length">Superouse o límite máximo de caracteres.</string>
+    <string name="unable_to_connect_to_the_network">Non se pode conectar coa rede. Comproba os axustes de conexión e téntao de novo.</string>
+    <string name="we_recommend_using_a_voice_call">É recomendable usar unha chamada de voz se non podes recibir mensaxes SMS.</string>
+    <string name="you_have_entered_incorrect_code">Inseriches un código de verificación incorrecto. Téntao de novo.</string>
+</resources>

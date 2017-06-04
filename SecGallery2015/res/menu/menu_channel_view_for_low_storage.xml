@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_camera" android:title="@string/switch_to_camera" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_notification" android:visible="false" android:title="@string/share_notification" android:showAsAction="always" android:actionLayout="@layout/event_notification_badge" />
+    <item android:id="@id/action_select" android:visible="false" android:title="@string/edit" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_create_event_album" android:visible="false" android:title="@string/create_event" android:showAsAction="never" />
+    <item android:id="@id/action_filter_by" android:visible="false" android:title="@string/filter_by" android:showAsAction="never" />
+    <item android:id="@id/action_search" android:visible="false" android:title="@string/search" android:showAsAction="always" />
+    <item android:id="@id/action_nearby_device" android:visible="false" android:title="@string/allshare_nearby_devices" android:showAsAction="never" />
+    <item android:id="@id/action_settings" android:visible="false" android:title="@string/more_options_setting" android:showAsAction="never" />
+    <item android:id="@id/action_event_settings" android:visible="false" android:title="@string/event_settings" android:showAsAction="never" />
+    <item android:id="@id/action_help" android:title="@string/help" android:showAsAction="never" />
+    <item android:id="@id/action_contact_us" android:title="@string/contact_us" android:showAsAction="never" />
+</menu>

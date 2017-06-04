@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/floating_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/floating_background_view" android:background="@color/channel_photo_floating_text_view_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/channel_photo_floationg_text_view_height" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/channel_photo_floationg_text_size" android:textColor="@color/channel_photo_floating_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/floating_text_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:fontFamily="sec-roboto-light" android:layout_marginEnd="14.0dip" android:layout_toStartOf="@id/icon_layout" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/icon_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/floating_photo_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_channel_infomation_ic_photo_1" />
+            <TextView android:textSize="@dimen/channel_photo_floationg_text_size" android:textColor="@color/channel_photo_floating_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/floating_photo_count" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:fontFamily="sec-roboto-light" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/floating_dot_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_channel_infomation_ic_dot_1" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/floating_video_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_channel_infomation_ic_video_1" />
+            <TextView android:textSize="@dimen/channel_photo_floationg_text_size" android:textColor="@color/channel_photo_floating_text_color" android:gravity="center" android:id="@id/floating_video_count" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:fontFamily="sec-roboto-light" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

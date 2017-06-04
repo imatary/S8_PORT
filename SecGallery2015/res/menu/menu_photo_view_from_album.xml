@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_camera" android:title="@string/switch_to_camera" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_search" android:title="@string/search" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_select" android:title="@string/edit" android:showAsAction="never" />
+    <item android:id="@id/action_share" android:title="@string/share_short" android:showAsAction="never" />
+    <item android:id="@id/photo_view_new_album" android:title="@string/new_album" android:showAsAction="never" />
+    <item android:id="@id/action_rename" android:title="@string/rename" android:showAsAction="never" />
+    <item android:id="@id/action_add_shortcut" android:title="@string/add_shortcut" android:showAsAction="never" />
+    <item android:id="@id/action_sortby" android:title="@string/sort_by_title" android:showAsAction="never" />
+    <item android:id="@id/action_set_split_mode" android:title="@string/enable_split" android:showAsAction="never" />
+    <item android:id="@id/action_gif_maker" android:title="@string/gif_maker" android:showAsAction="never" />
+    <item android:id="@id/action_gif_maker_MSG" android:title="@string/create_agif" android:showAsAction="never" />
+    <item android:id="@id/action_collage" android:title="@string/sa_collage" android:showAsAction="never" />
+    <item android:id="@id/action_slideshow" android:title="@string/slideshow" android:showAsAction="never" />
+</menu>

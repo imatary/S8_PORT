@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabHost android:id="@id/tabHost" android:background="@color/tab_background" android:layout_width="fill_parent" android:layout_height="@dimen/tab_height" android:layout_marginTop="@dimen/tab_margin_top" android:paddingStart="@dimen/tab_margin_start_end" android:paddingEnd="@dimen/tab_margin_start_end">
+        <HorizontalScrollView android:id="@id/tab_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" style="@style/GalleryTabWidgetStyle">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:layout_gravity="bottom" android:id="@id/bottom_indicator" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bottom_line_height" android:foreground="@color/actionbar_stroke_color" />
+                <com.sec.samsung.gallery.drawer.GalleryTabIndicator android:layout_gravity="bottom" android:id="@id/indicator_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TabWidget android:layout_gravity="top" android:id="@android:id/tabs" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:tabStripEnabled="false" />
+                </LinearLayout>
+            </FrameLayout>
+        </HorizontalScrollView>
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/dummy_view" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        </FrameLayout>
+    </TabHost>
+    <include layout="@layout/main" />
+</RelativeLayout>

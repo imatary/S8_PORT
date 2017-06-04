@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/HelpPageLayoutBase">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="center_vertical" android:id="@id/help_title_1_divider_1" android:background="@color/helppage_title_divider_color" android:visibility="invisible" android:layout_width="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/helppage_title_divider_margin" style="@style/HelpPageTitleDivider" />
+                <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/helppage_title_margin_top" android:layout_marginBottom="@dimen/helppage_title_margin_bottom" android:text="@string/item_gallery_deleting_a_picture" style="@style/HelpPageTitle" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/help_title_1_divider_2" android:background="@color/helppage_title_divider_color" android:visibility="invisible" android:layout_width="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/helppage_title_divider_margin" style="@style/HelpPageTitleDivider" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/help_image_1" android:layout_marginBottom="@dimen/helppage_image_margin_bottom" android:src="@drawable/gallery_help_keyscreen_deleting_01" android:contentDescription="@null" style="@style/HelpItemImage" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/help_list_item_number_1_1" android:paddingBottom="@dimen/helppage_desc_text_area_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number_1" style="@style/HelpItemNumberText" />
+                <TextView android:id="@id/help_list_item_1_1" android:paddingBottom="@dimen/helppage_desc_text_area_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/deleting_a_picture_step1_for_tts" style="@style/HelpItemDescText" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/help_list_divider" style="@style/HelpListDivider" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/HelpPageLayoutBase">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="center_vertical" android:id="@id/help_title_2_divider_1" android:background="@color/helppage_title_divider_color" android:visibility="invisible" android:layout_width="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/helppage_title_divider_margin" style="@style/HelpPageTitleDivider" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/helppage_title_margin_top" android:layout_marginBottom="@dimen/helppage_title_margin_bottom" android:text="@string/item_gallery_deleting_multiple_pictures" android:layout_weight="0.0" style="@style/HelpPageTitle" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/help_title_2_divider_2" android:background="@color/helppage_title_divider_color" android:visibility="invisible" android:layout_width="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/helppage_title_divider_margin" style="@style/HelpPageTitleDivider" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/help_image_2" android:layout_marginBottom="@dimen/helppage_image_margin_bottom" android:src="@drawable/gallery_help_keyscreen_deleting_02" android:contentDescription="@null" style="@style/HelpItemImage" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/helppage_desc_text_with_number_margin_between">
+                <TextView android:id="@id/help_list_item_number_2_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number_1" style="@style/HelpItemNumberText" />
+                <TextView android:id="@id/help_list_item_2_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deleting_multiple_pictures_step1" android:layout_toEndOf="@id/help_list_item_number_2_1" style="@style/HelpItemDescText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/helppage_desc_text_with_number_margin_between">
+                <TextView android:id="@id/help_list_item_number_2_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number_2" style="@style/HelpItemNumberText" />
+                <TextView android:id="@id/help_list_item_2_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deleting_multiple_pictures_step2" android:layout_toEndOf="@id/help_list_item_number_2_2" style="@style/HelpItemDescText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/helppage_desc_text_area_margin_bottom">
+                <TextView android:id="@id/help_list_item_number_2_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number_3" android:layout_below="@id/help_list_item_2_2" style="@style/HelpItemNumberText" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deleting_multiple_pictures_step3" android:layout_below="@id/help_list_item_2_2" android:layout_toEndOf="@id/help_list_item_number_2_3" style="@style/HelpItemDescText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

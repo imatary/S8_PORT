@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:bottomLeftRadius="@dimen/album_view_title_bg_stroke_corner_radius" android:bottomRightRadius="@dimen/album_view_title_bg_stroke_corner_radius" />
+            <stroke android:width="@dimen/album_view_title_bg_stroke_width" android:color="@color/cardtype_outline_stroke_color" />
+        </shape>
+    </item>
+    <item android:left="@dimen/album_view_title_bg_shadow_startend" android:right="@dimen/album_view_title_bg_shadow_startend" android:bottom="@dimen/album_view_title_bg_shadow_bottom">
+        <shape>
+            <solid android:color="@color/album_view_title_bg" />
+            <corners android:bottomLeftRadius="@dimen/album_view_title_bg_corner_radius" android:bottomRightRadius="@dimen/album_view_title_bg_corner_radius" />
+        </shape>
+    </item>
+</layer-list>

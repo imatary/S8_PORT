@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="root" path="/" />
+    <external-path name="media" path="DCIM/" />
+    <external-path name="vc_root" path="DCIM/Camera/" />
+    <external-path name="ve_root" path="DCIM/Video Editor/" />
+    <external-path name="root" path="Images/" />
+    <root-path name="external" path="/storage" />
+    <external-path name="device_storage" path="." />
+</paths>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_share" android:visible="false" android:title="@string/share_short" android:showAsAction="never" />
+    <item android:id="@id/action_delete" android:visible="false" android:title="@string/remove" android:showAsAction="never" />
+    <item android:id="@id/action_rename" android:visible="false" android:title="@string/rename" android:showAsAction="never" />
+    <item android:id="@id/action_copy_to_album" android:visible="false" android:title="@string/copy_to_album" android:showAsAction="never" />
+    <item android:id="@id/action_create_story_album" android:visible="false" android:title="@string/create_story_album" android:showAsAction="never" />
+</menu>

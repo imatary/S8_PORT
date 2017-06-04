@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.AlbumChoice" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/activity_list_start_padding" android:paddingEnd="@dimen/activity_list_start_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:id="@id/albumimageframe" android:layout_width="@dimen/activity_folder_icon_size" android:layout_height="@dimen/activity_folder_icon_size">
+        <ImageView android:layout_gravity="center" android:id="@id/newalbumimage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:contentDescription="@string/widget_type_album" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/bucketiconimage" android:background="@color/actionbar_back_icon_color" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/thumbnail_album_play_icon_padding_over_30" android:scaleType="fitXY" android:layout_marginStart="@dimen/thumbnail_album_play_icon_padding_over_30" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/list_text_padding_top_bottom_create_album_top" android:paddingBottom="@dimen/list_text_padding_top_bottom_create_album_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/activity_folder_text_start_padding" android:paddingEnd="@dimen/activity_folder_text_end_padding">
+            <TextView android:textSize="@dimen/list_text_size_create_album_top" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/newalbumtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/list_sub_text_size_create_album_top" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/itemcounttext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <View android:id="@id/albumdivider" android:background="@color/list_search_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/album_divider_padding" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/album_divider_margin_left" />
+    </RelativeLayout>
+</LinearLayout>

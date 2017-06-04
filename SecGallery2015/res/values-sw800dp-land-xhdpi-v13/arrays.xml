@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="album_view_grid_colume_count">
+        <item>6</item>
+        <item>4</item>
+    </integer-array>
+    <integer-array name="photo_view_grid_colume_count">
+        <item>16</item>
+        <item>8</item>
+        <item>6</item>
+        <item>6</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="photo_view_grid_colume_count_with_split_panel">
+        <item>16</item>
+        <item>8</item>
+        <item>6</item>
+        <item>6</item>
+        <item>1</item>
+    </integer-array>
+</resources>

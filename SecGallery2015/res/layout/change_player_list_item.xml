@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/change_player_dialog_item_height" android:paddingStart="24.0dip" android:paddingEnd="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckedTextView android:textAppearance="?android:textAppearanceLarge" android:gravity="end|center" android:id="@id/change_player_check" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="wrap_content" android:checkMark="?android:listChoiceIndicatorSingle" android:minHeight="?android:listPreferredItemHeight" />
+    <ImageView android:id="@id/change_player_icon" android:background="@drawable/nearby_unknown_device" android:layout_width="@dimen/change_player_item_wfd_icon_size" android:layout_height="@dimen/change_player_item_wfd_icon_size" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="@color/dialog_content_text_color" android:gravity="center_vertical" android:id="@id/change_player_name" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/common_thumbnail_list_item_padding_between" android:paddingEnd="@dimen/common_thumbnail_list_item_padding_right" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/change_player_connect_desc_color" android:id="@id/change_player_description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/i_will_never_gonna" android:paddingStart="@dimen/common_thumbnail_list_item_padding_between" android:paddingEnd="@dimen/common_thumbnail_list_item_padding_right" />
+    </LinearLayout>
+</LinearLayout>

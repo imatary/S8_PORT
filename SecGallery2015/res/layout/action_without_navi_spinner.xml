@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/action_bar_spinner_text_size" android:textColor="@color/spinner_text_color_selector" android:gravity="start|center" android:id="@id/drop_down_menu_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="?android:actionBarSize" android:divider="?android:listDividerAlertDialog" android:singleLine="true" android:paddingStart="@dimen/action_bar_navigation_spinner_button_text_padding_start" android:paddingEnd="@dimen/action_bar_navigation_spinner_button_text_padding_start" />
+    <TextView android:textSize="@dimen/selection_mode_count_text_size" android:textColor="@drawable/selectall_text_color" android:gravity="start|center" android:id="@id/select_count_text" android:layout_width="wrap_content" android:layout_height="?android:actionBarSize" android:singleLine="true" android:layout_marginStart="@dimen/action_bar_navigation_spinner_count_text_padding_start" />
+</LinearLayout>

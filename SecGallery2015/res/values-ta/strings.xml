@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">கீழே உள்ள எண்ணிற்கு சரிபார்ப்புக் குறியீடு அனுப்பப்படும்.</string>
+    <string name="acs">குரல் அழைப்பு</string>
+    <string name="agree">ஏற்கவும்</string>
+    <string name="cancel">ரத்து</string>
+    <string name="check_your_network_status">உங்களுடைய நெட்வொர்க்கின் நிலையை சரிபார்க்கவும் பிறகு மீண்டும் முயலவும்.</string>
+    <string name="choose_verification_method">உங்கள் விருப்பமான சரிபார்ப்பு முறையை தேர்வுசெய்யவும்.</string>
+    <string name="decline">நிராகரி</string>
+    <string name="enter_your_phone_number">உங்கள் நாட்டின் குறியீடு மற்றும் ஃபோன் எண்ணை உள்ளிடவும்.</string>
+    <string name="enter_your_verification_code">சரிபார்ப்புக் குறியீட்டை உள்ளிடவும்</string>
+    <string name="if_your_registered_for_dnd_service">DND சேவைக்கு நீங்கள் பதிவுசெய்தால் குரல் சரிபார்ப்பை பயன்படுத்தவும்.</string>
+    <string name="in_progress">செயலில் உள்ளது...</string>
+    <string name="information">விபரம்</string>
+    <string name="mt_dialog_progress">தானாக உங்கள் SMS குறியீடு சரிபார்க்கப்படுகிறது...</string>
+    <string name="no_results">முடிவுகள் இல்லை</string>
+    <string name="ok">சரி</string>
+    <string name="phone_number_verification_failed">ஃபோன் எண் சரிபார்ப்பு தோல்வியுற்றது. கைமுறையாக சரிபார்க்கவும்.</string>
+    <string name="please_wait">சரிபார்ப்புக் குறியீட்டைச் சோதிக்கிறது. தயவுசெய்து காத்திருக்கவும்...</string>
+    <string name="regist_select_country_or_region_code">நாடு அல்லது மண்டலம்</string>
+    <string name="resend">மீ.அனுப்பு</string>
+    <string name="search">தேடுக</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">பகுதிக் குறியீடு</string>
+    <string name="sms_auth_page_phone_number">ஃபோன் எண்</string>
+    <string name="toast_text_max_Length">அதிகபட்ச எழுத்து வரம்பைக் கடந்துவிட்டது.</string>
+    <string name="unable_to_connect_to_the_network">நெட்வொர்குடன் இணைக்க இயலவில்லை. உங்கள் இணைப்பு அமைவுகளைச் சரிபார்த்து மீண்டும் முயலவும்.</string>
+    <string name="we_recommend_using_a_voice_call">உங்களால் SMS தகவல்களைப் பெற இயலவில்லை எனில், ஓர் குரலழைப்பைப் பயன்படுத்துமாறு நாங்கள் பரிந்துரைக்கிறோம்.</string>
+    <string name="you_have_entered_incorrect_code">தவறான சரிபார்ப்புக் குறியீட்டை உள்ளிட்டுள்ளீர்கள். மீண்டும் முயலுக.</string>
+    <string name="action_settings">அமைவுகள்</string>
+</resources>

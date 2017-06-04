@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/sub_app_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="1.0dip">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/switch_container" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/share_setting_sub_app_bar_height">
+            <TextView android:textAppearance="@style/TwSubAppbarTextAppearance" android:id="@id/switch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/share_setting_text_start_margin" android:paddingEnd="0.0dip" android:layout_alignParentStart="true" />
+            <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="@dimen/share_setting_progress_width" android:layout_height="@dimen/share_setting_progress_height" android:layout_margin="@dimen/share_setting_progress_left_margin" android:layout_centerVertical="true" android:layout_toStartOf="@id/switch_button" style="?android:attr/progressBarStyle" />
+            <Switch android:id="@id/switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="0.0dip" android:paddingEnd="@dimen/share_setting_button_margin" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/event_sharing_setting_container_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/share_setting_divider_height" />
+</LinearLayout>

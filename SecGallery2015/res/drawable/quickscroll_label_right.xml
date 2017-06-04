@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/quick_scroll_popup_radius" android:topRightRadius="@dimen/quick_scroll_popup_radius" android:bottomLeftRadius="@dimen/quick_scroll_popup_radius" />
+    <padding android:paddingStart="@dimen/quick_scroll_popup_padding" android:paddingEnd="@dimen/quick_scroll_popup_padding" />
+    <solid android:color="@color/quick_scroll_popup_bg_color" />
+    <stroke android:width="@dimen/quick_scroll_popup_stroke_width" android:color="@color/quick_scroll_popup_stroke_color" />
+</shape>

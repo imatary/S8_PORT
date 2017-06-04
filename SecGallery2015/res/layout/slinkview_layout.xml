@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/default_background" android:paddingTop="@dimen/slink_main_header_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/slink_main_header_height" android:paddingStart="@dimen/slink_main_padding_start" android:paddingEnd="@dimen/slink_main_padding_end">
+        <TextView android:textSize="@dimen/drawer_header_title_text_size" android:textStyle="bold" android:textColor="@color/common_header_subtitle" android:gravity="center_vertical" android:id="@id/list_header_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/registered_devices" android:fontFamily="sec-roboto-light" android:layout_alignParentStart="true" />
+        <TextView android:textSize="@dimen/drawer_header_title_text_size" android:textStyle="bold" android:textColor="@color/common_header_subtitle" android:gravity="center_vertical" android:id="@id/devices_count" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:fontFamily="sec-roboto-light" android:layout_marginEnd="30.0dip" android:layout_alignParentEnd="true" />
+        <ImageView android:gravity="center_vertical" android:id="@id/device_refresh" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/gallery_drawer_ic_update" android:scaleType="center" android:layout_toStartOf="@id/devices_count" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/slinkview_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="true" android:stretchMode="columnWidth" android:divider="@android:color/transparent" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/moreinfo_location_item_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/moreinfo_item_googlemap_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/moreinfo_location_item_edit_marker">
+        <include layout="@layout/moreinfo_expandable_subitem_delete" />
+        <TextView android:gravity="center_vertical" android:id="@id/moreinfo_location_item_edit_nolocation" android:layout_width="276.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/moreInfo_item_content_min_height" android:text="@string/no_location" android:textDirection="locale" style="@style/MoreInfo_item_content_text_style" />
+    </FrameLayout>
+    <ImageButton android:id="@id/moreinfo_location_item_edit_marker" android:background="@drawable/moreinfo_ripple_background" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/gallery_info_ic_location_nor" android:scaleType="center" android:contentDescription="@string/edit_location" android:layout_alignParentEnd="true" />
+    <ImageButton android:background="@drawable/moreinfo_ripple_background" android:visibility="gone" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/gallery_info_ic_add_nor" android:scaleType="center" android:contentDescription="@string/add_location" android:layout_alignParentEnd="true" />
+</RelativeLayout>

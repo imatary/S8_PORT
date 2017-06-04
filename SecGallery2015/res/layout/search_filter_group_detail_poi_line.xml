@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/filter_detail_poi_line_top_padding" android:layout_marginBottom="@dimen/filter_detail_poi_line_top_padding" android:src="@drawable/gallery_fouraquare_logo_search" android:paddingStart="@dimen/filter_detail_poi_line_padding" android:paddingEnd="0.0dip" />
+</LinearLayout>

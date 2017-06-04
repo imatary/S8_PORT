@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_delete" android:visible="true" android:title="@string/delete" android:showAsAction="never" />
+    <item android:id="@id/action_rename" android:visible="true" android:title="@string/rename" android:showAsAction="never" />
+    <item android:id="@id/action_move_to_knox" android:visible="true" android:title="" android:showAsAction="never" />
+    <item android:id="@id/action_move_to_secure_folder" android:visible="true" android:title="@string/move_to_secure_folder" android:showAsAction="never" />
+</menu>

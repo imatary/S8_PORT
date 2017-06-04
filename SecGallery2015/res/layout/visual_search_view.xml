@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_bar" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SearchView android:ellipsize="end" android:id="@id/search_src_text" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:maxLength="100" android:inputType="textAutoComplete" android:imeOptions="actionSearch|flagNoExtractUi" android:queryHint="@string/search" android:textCursorDrawable="@color/gallery_color_primary_dark" android:fontFamily="sec-roboto-light" />
+</RelativeLayout>

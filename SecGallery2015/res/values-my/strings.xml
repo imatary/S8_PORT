@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="check_your_connection">သင့္ကြန္ရက္ကို စစ္ေဆးပါ၊ ျပီးေနာက္ ထပ္ၾကိဳးစားပါ။</string>
+    <string name="information">သတင္းအခ်က္အလက္</string>
+    <string name="server_error_try_later">ေနာက္မွျပန္ၾကိဳးစားပါ</string>
+</resources>
