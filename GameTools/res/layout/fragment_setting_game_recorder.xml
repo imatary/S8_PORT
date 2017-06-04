@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/setting_main_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/subheader_profile_source" layout="@layout/subheader" />
+            <include android:id="@id/linear_profile_size" layout="@layout/profile_size" />
+            <include layout="@layout/line_divider" />
+            <include android:id="@id/linear_image" layout="@layout/radio_title_summary" />
+            <include layout="@layout/radio_line_divider" />
+            <include android:id="@id/linear_front_camera" layout="@layout/radio_title_summary" />
+            <include layout="@layout/radio_line_divider" />
+            <include android:id="@id/linear_profile_none" layout="@layout/radio_title_summary" />
+            <include android:id="@id/subheader_audio_source" layout="@layout/subheader" />
+            <include android:id="@id/linear_microphone" layout="@layout/radio_title_summary" />
+            <include layout="@layout/radio_line_divider" />
+            <include android:id="@id/linear_game_audio" layout="@layout/radio_title_summary" />
+            <include android:id="@id/subheader_resolution" layout="@layout/subheader" />
+            <TextView android:id="@id/linear_max_file_size" android:paddingTop="@dimen/web_text_view_top_bottom_padding" android:paddingBottom="@dimen/web_text_view_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:textAlignment="viewStart" android:paddingStart="@dimen/setting_guide_side_padding_port" android:paddingEnd="@dimen/setting_guide_side_padding_port" style="@style/normal_15_line_4_color_31" />
+            <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Spinner android:id="@id/spinner_resolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:overlapAnchor="true" />
+                <include android:id="@id/linear_resolution" layout="@layout/title_summary" />
+                <include layout="@layout/line_divider" />
+            </FrameLayout>
+            <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Spinner android:id="@id/spinner_bitrate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:overlapAnchor="true" />
+                <include android:id="@id/linear_bitrate" layout="@layout/title_summary" />
+                <include layout="@layout/line_divider" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

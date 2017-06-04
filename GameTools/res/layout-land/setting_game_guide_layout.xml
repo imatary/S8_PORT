@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/game_tools_guide_main_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/linear_switch" layout="@layout/title_switch">
+        <requestFocus />
+    </include>
+    <ScrollView android:id="@id/setting_main_scrollview" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/setting_guide_top_bottom_padding" android:paddingBottom="@dimen/setting_guide_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/setting_guide_side_padding_land" android:paddingEnd="@dimen/setting_guide_side_padding_land">
+            <LinearLayout android:gravity="center_horizontal" android:background="@drawable/gamehome_setting_bg" android:layout_width="183.0dip" android:layout_height="wrap_content">
+                <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="138.0dip" android:src="@drawable/gamehome_settings_img_01" android:scaleType="fitCenter" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/MIDS_GH_BODY_GAME_TOOLS_PROVIDES_CONVENIENT_GAME_FEATURES_IN_A_BUTTON_THAT_FLOATS_OVER_YOUR_GAME_ABB" android:textAlignment="viewStart" android:layout_marginStart="@dimen/setting_guide_side_padding_land" android:layout_marginEnd="@dimen/setting_guide_side_padding_land" style="@style/normal_15_line_4_color_31" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

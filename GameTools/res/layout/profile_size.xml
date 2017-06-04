@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="132.0dip" android:layout_height="132.0dip" android:layout_marginTop="32.0dip">
+        <FrameLayout android:id="@id/setting_profile_size_layout" android:layout_width="132.0dip" android:layout_height="132.0dip" android:layout_centerInParent="true">
+            <com.sec.game.gamecast.common.utility.CommonRoundIcon android:layout_gravity="center" android:id="@id/setting_profile_size_icon" android:visibility="visible" android:layout_width="132.0dip" android:layout_height="132.0dip" android:src="@drawable/gamehome_settings_profile" />
+            <ImageView android:layout_gravity="end|bottom|center" android:id="@id/setting_profile_edit" android:focusable="true" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/profile_edit_button" android:layout_marginEnd="3.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/seekbar_layout" android:focusable="false" android:layout_width="fill_parent" android:layout_height="76.0dip">
+        <RelativeLayout android:orientation="horizontal" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/common_list_sub_text_color" android:id="@id/tv_small" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MIDS_GH_BODY_SMALL" android:layout_centerVertical="true" android:textAlignment="viewStart" android:layout_marginStart="18.0dip" android:layout_alignParentStart="true" style="@style/normal_summary_15" />
+            <TextView android:textColor="@color/common_list_sub_text_color" android:id="@id/tv_large" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MIDS_GH_BODY_LARGE" android:layout_centerVertical="true" android:textAlignment="viewEnd" android:layout_marginEnd="18.0dip" android:layout_alignParentEnd="true" style="@style/normal_summary_15" />
+        </RelativeLayout>
+        <SeekBar android:layout_gravity="center|top" android:id="@id/setting_seekbar" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:max="100" android:minHeight="14.0dip" android:paddingStart="22.0dip" android:paddingEnd="22.0dip" style="@android:style/Widget.DeviceDefault.Light.SeekBar" /> />
+</FrameLayout>
+</LinearLayout>

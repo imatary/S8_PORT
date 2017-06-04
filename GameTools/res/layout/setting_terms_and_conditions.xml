@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/tv_content" android:paddingTop="@dimen/web_text_view_top_bottom_padding" android:paddingBottom="@dimen/web_text_view_top_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/web_text_view_side_padding" android:paddingEnd="@dimen/web_text_view_side_padding" />
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_backround" android:background="#a6000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center|left" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/fl_no_alerts" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="55.0dip" android:layout_marginTop="@dimen/tools_btn1_top_6button">
+                    <ImageView android:id="@id/iv_no_alerts_back" android:background="@drawable/drawable_white_oval" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+                    <ToggleButton android:id="@id/tb_no_alerts" android:background="@drawable/drawable_no_alerts_ripple" android:visibility="visible" android:layout_width="42.0dip" android:layout_height="42.0dip" android:checked="true" android:textOn="" android:textOff="" style="?android:attr/borderlessButtonStyle" />
+                    <TextView android:textSize="14.0dip" android:textColor="#fffafafa" android:gravity="center_vertical" android:id="@id/tv_no_alerts" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="52.0dip" android:text="@string/MIDS_GH_OPT_NO_ALERTS_DURING_GAME_ABB" android:shadowColor="#66000000" android:shadowDy="2.0" android:shadowRadius="3.0" android:textIsSelectable="false" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/fl_key_lock" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="115.0dip" android:layout_marginTop="@dimen/tools_btn2_top_6button">
+                    <ImageView android:id="@id/iv_key_lock_back" android:background="@drawable/drawable_white_oval" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+                    <ToggleButton android:id="@id/tb_key_lock" android:background="@drawable/drawable_key_lock_ripple" android:visibility="visible" android:layout_width="42.0dip" android:layout_height="42.0dip" android:checked="true" android:textOn="" android:textOff="" style="?android:attr/borderlessButtonStyle" />
+                    <TextView android:textSize="14.0dip" android:textColor="#fffafafa" android:gravity="center_vertical" android:id="@id/tv_key_lock" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="52.0dip" android:text="@string/MIDS_GH_BUTTON_LOCK_RECENTS_AND_BACK_KEYS" android:shadowColor="#66000000" android:shadowDy="2.0" android:shadowRadius="3.0" android:textIsSelectable="false" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/fl_gamelock" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="150.0dip" android:layout_marginTop="@dimen/tools_btn3_top_6button">
+                    <ImageView android:id="@id/iv_gamelock_back" android:background="@drawable/drawable_white_oval" android:layout_width="42.0dip" android:layout_height="42.0dip" android:textIsSelectable="false" />
+                    <ToggleButton android:id="@id/tb_gamelock" android:background="@drawable/drawable_minimise_ripple" android:layout_width="42.0dip" android:layout_height="42.0dip" android:checked="true" android:textOn="" android:textOff="" style="?android:attr/borderlessButtonStyle" />
+                    <TextView android:textSize="14.0dip" android:textColor="#fffafafa" android:gravity="center_vertical" android:id="@id/tv_gamelock" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="52.0dip" android:text="@string/MIDS_GH_OPT_SCREEN_TOUCH_LOCK" android:maxLines="2" android:shadowColor="#66000000" android:shadowDy="2.0" android:shadowRadius="3.0" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/fl_screenshot" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="150.0dip" android:layout_marginTop="@dimen/tools_btn4_top_6button">
+                    <ImageView android:id="@id/iv_screenshot_back" android:background="@drawable/drawable_white_oval" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+                    <ToggleButton android:id="@id/tb_screenshot" android:background="@drawable/drawable_screenshot_ripple" android:layout_width="42.0dip" android:layout_height="42.0dip" android:checked="true" android:textOn="" android:textOff="" style="?android:attr/borderlessButtonStyle" />
+                    <TextView android:textSize="14.0dip" android:textColor="#fffafafa" android:gravity="center_vertical" android:id="@id/tv_screenshot" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="52.0dip" android:text="@string/MIDS_GH_BODY_SCREENSHOT" android:shadowColor="#66000000" android:shadowDy="2.0" android:shadowRadius="3.0" android:textIsSelectable="false" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/fl_record" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="110.0dip" android:layout_marginTop="@dimen/tools_btn5_top_6button">
+                    <ImageView android:id="@id/iv_record_back" android:background="@drawable/drawable_white_oval" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+                    <ToggleButton android:id="@id/tb_record" android:background="@drawable/drawable_record_ripple" android:layout_width="42.0dip" android:layout_height="42.0dip" android:checked="true" android:textOn="" android:textOff="" style="?android:attr/borderlessButtonStyle" />
+                    <TextView android:textSize="14.0dip" android:textColor="#fffafafa" android:gravity="center_vertical" android:id="@id/tv_record" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="52.0dip" android:text="@string/MIDS_GH_BUTTON_RECORD" android:shadowColor="#66000000" android:shadowDy="2.0" android:shadowRadius="3.0" android:textIsSelectable="false" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/fl_settings" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="55.0dip" android:layout_marginTop="@dimen/tools_btn6_top_6button">
+                    <ImageView android:id="@id/iv_settings_back" android:background="@drawable/drawable_white_oval" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+                    <ToggleButton android:id="@id/tb_settings" android:background="@drawable/drawable_settings_ripple" android:layout_width="42.0dip" android:layout_height="42.0dip" android:checked="true" android:textOn="" android:textOff="" style="?android:attr/borderlessButtonStyle" />
+                    <TextView android:textSize="14.0dip" android:textColor="#fffafafa" android:gravity="center_vertical" android:id="@id/tv_settings" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="52.0dip" android:text="@string/MIDS_GH_TBOPT_SETTINGS" android:shadowColor="#66000000" android:shadowDy="2.0" android:shadowRadius="3.0" android:textIsSelectable="false" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/fl_centerBtn" android:layout_width="42.0dip" android:layout_height="42.0dip">
+                    <ImageView android:id="@id/iv_tools_icon" android:background="@drawable/gamehome_tools" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+                    <ImageView android:id="@id/iv_close" android:background="@drawable/drawable_gametools_x_ripple" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+                </FrameLayout>
+                <View android:id="@id/pivot" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="@dimen/tools_center_top_6button" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ln_recents" android:background="@drawable/gametools_app_pannel_bg" android:visibility="gone" android:layout_width="190.0dip" android:layout_height="fill_parent" android:alpha="0.0" android:paddingStart="24.0dip" android:paddingEnd="24.0dip">
+            <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ff00c5fd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/MIDS_GH_HEADER_RECENTLY_USED_APPS" android:textIsSelectable="false" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" />
+            <View android:layout_width="fill_parent" android:layout_height="21.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ln_recent1" android:background="@drawable/rounded_corner_ripple_navy" android:layout_width="190.0dip" android:layout_height="40.0dip">
+                <ImageView android:id="@id/iv_recent1" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+                <View android:layout_width="9.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="13.0dip" android:textColor="#fffafafa" android:gravity="center" android:id="@id/tv_recent1" android:layout_width="93.0dip" android:layout_height="fill_parent" android:text="titlfasadsdasddae" android:maxLines="2" android:textIsSelectable="false" android:fontFamily="sec-roboto-light" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ln_recent2" android:background="@drawable/rounded_corner_ripple_navy" android:layout_width="190.0dip" android:layout_height="40.0dip" android:layout_marginTop="19.0dip">
+                <ImageView android:id="@id/iv_recent2" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+                <View android:layout_width="9.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="13.0dip" android:textColor="#fffafafa" android:gravity="center" android:id="@id/tv_recent2" android:layout_width="93.0dip" android:layout_height="fill_parent" android:text="titlfasadsdasddae" android:maxLines="2" android:textIsSelectable="false" android:fontFamily="sec-roboto-light" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ln_recent3" android:background="@drawable/rounded_corner_ripple_navy" android:layout_width="190.0dip" android:layout_height="40.0dip" android:layout_marginTop="19.0dip" android:layout_marginBottom="@dimen/ln_recent_bottom_margin">
+                <ImageView android:id="@id/iv_recent3" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+                <View android:layout_width="9.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="13.0dip" android:textColor="#fffafafa" android:gravity="center" android:id="@id/tv_recent3" android:layout_width="93.0dip" android:layout_height="fill_parent" android:text="titlfasadsdasddae" android:maxLines="2" android:textIsSelectable="false" android:fontFamily="sec-roboto-light" />
+            </LinearLayout>
+            <View android:background="#fffafafa" android:layout_width="142.0dip" android:layout_height="2.0px" android:layout_marginBottom="@dimen/ln_recent_bottom_margin" android:alpha="0.4" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ln_launcher" android:background="@drawable/rounded_corner_ripple_navy" android:layout_width="190.0dip" android:layout_height="40.0dip">
+                <ImageView android:id="@id/iv_launcher" android:background="@drawable/notification_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+                <View android:layout_width="9.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="13.0dip" android:textColor="#fffafafa" android:gravity="center" android:id="@id/tv_launcher" android:layout_width="93.0dip" android:layout_height="fill_parent" android:text="@string/MIDS_GH_HEADER_GAME_LAUNCHER_ABB" android:maxLines="2" android:textIsSelectable="false" android:fontFamily="sec-roboto-light" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
