@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">অতিরিক্ত সামগ্রীর আকার: %1$s %2$s</string>
+    <string name="STR_ALL">সমস্ত</string>
+    <string name="STR_APPS_DESCRIPTION">আপনার পরিষেবা সরবরাহকারী দ্বারা সুপারিশকৃত অ্যাপগুলি নির্বাচন করুন।</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">আপনার নির্বাচিত অ্যাপগুলি ডাউনলোড করা হয়েছে।</string>
+    <string name="STR_APP_BUTTON_CANCEL">বাতিল</string>
+    <string name="STR_APP_BUTTON_OK">ওকে</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">আপনার পরিষেবা সরবরাহকারী দ্বারা সুপারিশকৃত অ্যাপগুলি নির্বাচন করুন।</string>
+    <string name="STR_APP_INSTALL_CONFIRM">আপনি যে অ্যাপগুলি ইনস্টল করতে চান তা নির্বাচন করুন।</string>
+    <string name="STR_APP_INSTALL_TITLE">অ্যাপগুলি ইনস্টল করুন</string>
+    <string name="STR_APP_STATE_CANCELED">বাতিল হয়েছে</string>
+    <string name="STR_APP_STATE_CONNECTING">সংযোগ হচ্ছে…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ডাউনলোড হচ্ছে…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ডাউনলোড ব্যর্থ।</string>
+    <string name="STR_APP_STATE_INSTALLED">ইনস্টল হয়েছে</string>
+    <string name="STR_APP_STATE_INSTALLING">ইনস্টল করা হচ্ছে…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">ইনস্টলেশন ব্যর্থ হয়েছে</string>
+    <string name="STR_APP_STATE_WAITING">অপেক্ষা করা হচ্ছে…</string>
+    <string name="STR_BTN_INSTALL">ইনস্টল</string>
+    <string name="STR_BTN_INSTALL_ALL">সমস্ত ইনস্টল করুন</string>
+    <string name="STR_BTN_SKIP">স্কিপ</string>
+    <string name="STR_BUTTON_NEXT">পরে</string>
+    <string name="STR_CAUTION_BODY">আপডেটটি ডাউনলোড করার পরে এটি ইনস্টল করতে পুনঃশুরু করুন। আপনি ইনস্টলেশনটি শেষ না হওয়া অবধি আপনার ফোনটি ব্যবহার করতে পারবেন না, এমনকি আপৎকালীন কলগুলি করতেও নয়।</string>
+    <string name="STR_CAUTION_BODY2">আপডেট করার পরে কিছু সেটিংস সেগুলির ডিফল্ট মানে রিসেট হতে পারে।</string>
+    <string name="STR_CHARING_DIALOG">মোবাইল তথ্যের মাধ্যমে ডাউনলোড করলে অতিরিক্ত চার্জ লাগতে পারে।</string>
+    <string name="STR_CHARING_DIALOG_TITLE">মোবাইল তথ্য ব্যবহার করে ডাউনলোড করবেন?</string>
+    <string name="STR_CONNECTING_TO_SERVER">সার্ভারে সংযোগ স্থাপন করা হচ্ছে…</string>
+    <string name="STR_CONNECT_FAIL">সংযোগ ব্যর্থ। পরে চেষ্টা করুন</string>
+    <string name="STR_DOWNLOADING_PACKAGE">আপডেটগুলি ডাউনলোড হচ্ছে…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ডাউনলোড হচ্ছে…</string>
+    <string name="STR_DOWNLOAD_FAIL">ডাউনলোড ব্যর্থ৷ পরে চেষ্টা করুন।</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">সাম্প্রতিকতম বৈশিষ্ট্যগুলি ব্যবহার করতে ফার্মওয়্যার আপডেট ডাউনলোড এবং ইনস্টল করুন।</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ডাউনলোড ব্যর্থ৷ পরে চেষ্টা করুন।</string>
+    <string name="STR_FAILED_NOTI">ডাউনলোড ব্যর্থ হয়েছে।</string>
+    <string name="STR_INITIAL_NOTI">ডাউনলোডের জন্য সুপারিশকৃত অ্যাপগুলি নির্বাচন করতে এখানে ট্যাপ করুন।</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">আপডেটটি ডাউনলোড এবং ইনস্টল করতে এখানে ট্যাপ করুন।</string>
+    <string name="STR_INSTALLED_NOTI">%dটি ইনস্টল হয়েছে</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">অতিরিক্ত সামগ্রী ইনস্টল করুন</string>
+    <string name="STR_INSTALL_CAUTIONS">সতর্কীকরণ</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">এই আপডেটে কয়েকটি ঐচ্ছিক অ্যাপ এবং সামগ্রী অন্তর্ভুক্ত। মোবাইল নেটওয়ার্কগুলির মাধ্যমে ডাউনলোড করার ফলে আপনার প্রদানের পরিকল্পনার উপরে নির্ভর করে অতিরিক্ত চার্জ লাগতে পারে।</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ডাউনলোড হয়েছে।</string>
+    <string name="STR_INSTALL_FORCE">আপনার গুরুত্বপূর্ণ সফ্টওয়্যার আপডেটগুলি ডাউনলোড হয়েছে। ইনস্টলেশন শুরু করতে আপনার ডিভাইসটি %d সেকেন্ডে পুনঃশুরু হবে।</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">আরও শিখুন</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">অ্যাপগুলি ডাউনলোড করতে আপনাকে Wi-Fi-এ সংযুক্ত হতে হবে। Wi-Fi তে সংযোগ করে আবার চেষ্টা করুন।</string>
+    <string name="STR_NEED_WIFI_TITLE">কোনও Wi-Fi সংযোগ নেই</string>
+    <string name="STR_NETWORK_FAIL">নেটওয়ার্ক অসুলভ। পরে পুনরায় চেষ্টা করুন।</string>
+    <string name="STR_NO_APPS">কোনও অ্যাপ নেই</string>
+    <string name="STR_NO_CONTENT">আপনার পরিষেবা সরবরাহকারী থেকে মুক্ত সুলভ অ্যাপগুলি এখানে দেখানো হবে।</string>
+    <string name="STR_NO_ITEMS">কোনও আইটেম নেই</string>
+    <string name="STR_NO_ITEM_SELECTED">কোনও আইটেম নির্বাচিত নেই।</string>
+    <string name="STR_OMC_HEADER">পরিষেবা সরবরাহকারী আপডেট</string>
+    <string name="STR_OMC_SIZE">আকার: %s</string>
+    <string name="STR_OMC_TITLE">কনফিগারেশন আপডেট</string>
+    <string name="STR_OMC_VERSION">সংস্করণ: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">অপারেটরের সেটিংস</string>
+    <string name="STR_PROCESS_FAIL">প্রক্রিয়াকরণ ব্যর্থ।</string>
+    <string name="STR_PROVIDER_APPS">পরিষেবা সরবরাহকারী অ্যাপগুলি</string>
+    <string name="STR_REGISTERING_DEVICE">ডিভাইস নিবন্ধন করা হচ্ছে…</string>
+    <string name="STR_REGISTER_FAIL">নিবন্ধন ব্যর্থ।</string>
+    <string name="STR_REGISTER_SUCCESS">ডিভাইস নিবন্ধিত হয়েছে।</string>
+    <string name="STR_RESTART_BTN_LATER">পরে</string>
+    <string name="STR_RESTART_BTN_RESTART">পুনঃশুরু</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">আপনার পরিষেবা সরবরাহকারী সফ্টওয়্যার আপডেট ইনস্টল করা শেষ করতে আপনাকে আপনার ফোন পুনঃশুরু করতে হবে।</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">আপনার পরিষেবা সরবরাহকারী সফ্টওয়্যার আপডেট ইনস্টল করা শেষ করতে আপনাকে আপনার ট্যাবলেট পুনঃশুরু করতে হবে।</string>
+    <string name="STR_RESTART_DIALOG_TITLE">পুনঃশুরু করবেন?</string>
+    <string name="STR_RESTART_PHONE">ফোন পুনঃশুরু করুন</string>
+    <string name="STR_RESTART_TABLET">ট্যাবলেট পুনঃশুরু করুন</string>
+    <string name="STR_SELECT_ALL">নিম্নলিখিত অ্যাপগুলির সবকয়টি</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">আবশ্যক অ্যাপগুলি</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">নীচের অ্যাপগুলি ডাউনলোডের জন্য কোনও তথ্য চার্জ প্রযোজ্য হয় না।</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">নীচের কোনও আইটেম সম্বন্ধে আরও জানতে সেটি ট্যাপ করুন।</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Wi-Fi-এর মাধ্যমে অ্যাপগুলি ডাউনলোড হবে।</string>
+    <string name="STR_SUW_TITLE">পরিষেবা সরবরাহকারীর থেকে অ্যাপগুলি পান</string>
+    <string name="STR_UPDATE_BODY1">মোবাইল তথ্যের মাধ্যমে ডাউনলোড করলে অতিরিক্ত চার্জ লাগতে পারে।</string>
+    <string name="STR_UPDATE_BODY2">আপডেটটি ইনস্টল হওয়ার পরে আপনার ফোন পুনঃশুরু হবে।</string>
+    <string name="STR_UPDATE_FAIL">আপডেট ব্যর্থ হয়েছে৷ আবার চেষ্টা করুন</string>
+    <string name="STR_UPDATE_HEADER1">আপনার পরিষেবা সরবরাহকারীর থেকে সাম্প্রতিকতম সফ্টওয়্যারটি ডাউনলোড এবং ইনস্টল করুন।</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- এই ফার্মওয়্যার ইনস্টলেশনের জন্য আপনাকে চার্জ করা হবে না।
+
+- ইনস্টলেশন চলাকালীন আপনি আপনার ডিভাইসটি একেবারেই ব্যবহার করতে পারবেন না, এমনকি আপৎকালীন কলগুলির ক্ষেত্রেও নয়।
+
+- হোম স্ক্রিন এবং ডিভাইস সেটিংসে থাকা আইকনগুলি তাদের ডিফল্টগুলিতে পুনরায় সেট এবং ইনস্টলেশনের পরে পুনরায় কনফিগার করার প্রয়োজন হতে পারে।
+
+- একটি ফার্মওয়্যার আপডেটের আপনার ডিভাইসে থাকা ফাইলগুলি এবং তথ্যকে প্রভাবিত করা উচিত নয়।
+
+- তবে আপনি ইনস্টলেশন প্রক্রিয়াটি শেষ না হওয়ার আগে আপনি বন্ধ করে দিলে আপনার ডিভাইস স্বাভাবিকভাবে কাজ নাও করতে পারে এবং ফলস্বরূপ আপনার ফাইলগুলি হারিয়ে যেতে পারে।
+
+- অপ্রত্যাশিত তথ্যের ক্ষতি এড়াতে আমরা আপনাকে ইনস্টলেশনের আগে গুরুত্বপূর্ণ তথ্য ব্যাকআপ নেওয়ার সুপারিশ করি।"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">আপনার পরিষেবা সরবরাহকারী সফ্টওয়্যার আপডেট ইনস্টল করা শেষ করতে পুনঃশুরু করুন।</string>
+    <string name="STR_UPDATING_PACKAGE">আপডেট করা হচ্ছে …</string>
+    <string name="STR_USE_DATA_BTN">তথ্য ব্যবহার</string>
+    <string name="STR_WAIT_FOR_WIFI">"অ্যাপ ইনস্টলেশনে বিরাম দেওয়া হয়েছে।
+অ্যাপগুলি ইনস্টল করতে Wi-Fi-এর জন্য অপেক্ষারত।"</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi-র জন্য অপেক্ষারত</string>
+    <string name="STR_WIDGET_DEFAULT">আপনার পরিষেবা সরবরাহকারী দ্বারা সুপারিশকৃত অ্যাপগুলি ইনস্টল করুন।</string>
+    <string name="STR_WIDGET_DOWNLOADING">ডাউনলোড করা হচ্ছে…</string>
+    <string name="STR_WIDGET_INSTALLED">ইনস্টল হয়েছে।</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">বোতাম</string>
+    <string name="WSS_STR_NO_UPDATE">সর্বশেষ আপডেটগুলি ইতিমধ্যে ইনস্টল হয়েছে।</string>
+</resources>

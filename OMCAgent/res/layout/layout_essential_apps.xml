@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/essential_contents" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_essential_contents" android:background="@drawable/tw_btn_ripple" android:layout_width="fill_parent" android:layout_height="@dimen/appinstaller_listview_multiselect_height" android:layout_marginEnd="@dimen/applist_srcollbar_padding">
+        <TextView android:textSize="16.0sp" android:textColor="@color/list_title_text_color" android:gravity="center_vertical" android:id="@id/required_apps" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/STR_SETUPWIZARD_REQUIRED_APPS" />
+        <View android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/essential_contents_expander" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:checked="false" android:src="@drawable/tw_expander_open" android:minHeight="?android:listPreferredItemHeightSmall" android:layout_alignParentEnd="true" />
+    </LinearLayout>
+</LinearLayout>

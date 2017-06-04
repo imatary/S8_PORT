@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s vereist een update naar de Android Wear-app.</string>
+    <string name="common_android_wear_update_text">%1$s wordt niet uitgevoerd, tenzij u de Android Wear-app updatet.</string>
+    <string name="common_android_wear_update_title">Android Wear updaten</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s vereist een of meer Google Play-services die momenteel niet beschikbaar zijn. Neem contact op met de ontwikkelaar voor ondersteuning.</string>
+    <string name="common_google_play_services_enable_button">Google Play-services inschak.</string>
+    <string name="common_google_play_services_enable_text">%1$s werkt niet, tenzij u Google Play-services inschakelt.</string>
+    <string name="common_google_play_services_enable_title">Google Play-services inschakelen</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Aangevraagd door %1$s</string>
+    <string name="common_google_play_services_install_button">Google Play-services ophalen</string>
+    <string name="common_google_play_services_install_text_phone">%1$s kan niet worden uitgevoerd zonder Google Play-services, die ontbreken op uw telefoon.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s kan niet worden uitgevoerd zonder Google Play-services, die ontbreken op uw tablet.</string>
+    <string name="common_google_play_services_install_title">Google Play-services ophalen</string>
+    <string name="common_google_play_services_invalid_account_text">Het gespecificeerde account bestaat niet op dit apparaat. Kies een ander account.</string>
+    <string name="common_google_play_services_invalid_account_title">Ongeldig account</string>
+    <string name="common_google_play_services_needs_enabling_title">Google Play-services moet zijn ingeschakeld voor een app.</string>
+    <string name="common_google_play_services_network_error_text">Er is een gegevensverbinding nodig om verbinding te kunnen maken met Google Play-services.</string>
+    <string name="common_google_play_services_network_error_title">Netwerkfout</string>
+    <string name="common_google_play_services_notification_needs_update_title">Google Play-services moet worden geüpdatet voor een app.</string>
+    <string name="common_google_play_services_notification_ticker">Fout met Google Play-services</string>
+    <string name="common_google_play_services_sign_in_failed_text">Fout bij inloggen op het opgegeven account. Kies een ander account.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Inloggen mislukt</string>
+    <string name="common_google_play_services_unknown_issue">Onbekend probleem met Google Play-services.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s werkt met Google Play-services. Dit wordt niet ondersteund door uw apparaat. Neem contact op met de fabrikant voor ondersteuning.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play-services</string>
+    <string name="common_google_play_services_update_button">Updaten</string>
+    <string name="common_google_play_services_update_text">%1$s kan niet worden uitgevoerd, tenzij u Google Play-services updatet.</string>
+    <string name="common_google_play_services_update_title">Google Play-services updaten</string>
+    <string name="common_google_play_services_updating_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die momenteel worden geüpdatet.</string>
+    <string name="common_google_play_services_updating_title">Google Play-services worden geüpdatet</string>
+    <string name="common_open_on_phone">Openen op telefoon</string>
+    <string name="common_signin_button_text">Inloggen</string>
+    <string name="common_signin_button_text_long">Inloggen met Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Extra grootte inhoud: %1$s %2$s</string>
+    <string name="STR_ALL">Alles</string>
+    <string name="STR_APPS_DESCRIPTION">Selecteer apps die worden aanbevolen door uw serviceprovider.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Al uw geselecteerde apps zijn gedownload.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Annuleer</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Selecteer apps die worden aanbevolen door uw serviceprovider.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Selecteer de apps die u wilt installeren.</string>
+    <string name="STR_APP_INSTALL_TITLE">Apps installeren</string>
+    <string name="STR_APP_STATE_CANCELED">Geannuleerd</string>
+    <string name="STR_APP_STATE_CONNECTING">Verbinden…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Downloading…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Downloaden mislukt.</string>
+    <string name="STR_APP_STATE_INSTALLED">Geïnstalleerd</string>
+    <string name="STR_APP_STATE_INSTALLING">Installeren…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installatie mislukt</string>
+    <string name="STR_APP_STATE_WAITING">Even geduld…</string>
+    <string name="STR_BTN_INSTALL">Install.</string>
+    <string name="STR_BTN_INSTALL_ALL">Alles installeren</string>
+    <string name="STR_BTN_SKIP">Overslaan</string>
+    <string name="STR_BUTTON_NEXT">Volgende</string>
+    <string name="STR_CAUTION_BODY">Start de telefoon na het downloaden opnieuw om de update te installeren. U kunt uw telefoon niet gebruiken, ook niet voor noodoproepen totdat de installatie is voltooid.</string>
+    <string name="STR_CAUTION_BODY2">Na de update worden bepaalde instellingen gereset op hun standaardwaarden.</string>
+    <string name="STR_CHARING_DIALOG">Voor downloaden met mobiele gegevens kunnen extra kosten gelden.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Downloaden met mobiele gegevens?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Verbinding maken met server</string>
+    <string name="STR_CONNECT_FAIL">Verbinden mislukt. Probeer het later opnieuw.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Updates downloaden…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Downloaden…</string>
+    <string name="STR_DOWNLOAD_FAIL">Downloaden mislukt. Probeer het later opnieuw.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Als u de nieuwste voorzieningen wilt gebruiken, moet u deze firmware-update downloaden en installeren.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Downloaden mislukt. Probeer het later opnieuw.</string>
+    <string name="STR_FAILED_NOTI">Downloaden mislukt.</string>
+    <string name="STR_INITIAL_NOTI">Tik hier om aanbevolen apps te selecteren voor download.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Tik hier om de update te downloaden en te installeren.</string>
+    <string name="STR_INSTALLED_NOTI">%d geïnstalleerd</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Aanvullende inhoud installeren</string>
+    <string name="STR_INSTALL_CAUTIONS">Waarschuwing</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Deze update bevat optionele apps en inhoud. Voor downloaden via mobiele netwerken kunnen afhankelijk van uw abonnement extra kosten gelden.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Gedownload.</string>
+    <string name="STR_INSTALL_FORCE">Uw belangrijke softwareupdate is gedownload. Uw apparaat wordt over %d seconden opnieuw gestart om de installatie te beginnen.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Meer informatie</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">U moet verbinding hebben met Wi-Fi om apps te downloaden. Verbind met Wi-Fi en probeer het opnieuw.</string>
+    <string name="STR_NEED_WIFI_TITLE">Geen Wi-Fi-verbinding</string>
+    <string name="STR_NETWORK_FAIL">Netwerk is niet beschikbaar. Probeer het later opnieuw.</string>
+    <string name="STR_NO_APPS">Geen apps</string>
+    <string name="STR_NO_CONTENT">Beschikbare apps die door uw serviceprovider zijn vrijgegeven, worden hier weergegeven.</string>
+    <string name="STR_NO_ITEMS">Geen items</string>
+    <string name="STR_NO_ITEM_SELECTED">Geen items geselecteerd.</string>
+    <string name="STR_OMC_HEADER">Update serviceprovider</string>
+    <string name="STR_OMC_SIZE">Grootte: %s</string>
+    <string name="STR_OMC_TITLE">Configuratie-update</string>
+    <string name="STR_OMC_VERSION">Versie: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operatorinstellingen</string>
+    <string name="STR_PROCESS_FAIL">Verwerken mislukt.</string>
+    <string name="STR_PROVIDER_APPS">Apps serviceprovider</string>
+    <string name="STR_REGISTERING_DEVICE">Apparaat aanmelden…</string>
+    <string name="STR_REGISTER_FAIL">Registratie mislukt.</string>
+    <string name="STR_REGISTER_SUCCESS">Apparaat geregistreerd.</string>
+    <string name="STR_RESTART_BTN_LATER">Later</string>
+    <string name="STR_RESTART_BTN_RESTART">Opn. starten</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Als u de installatie van de softwareupdate van uw serviceprovider wilt voltooien, moet u uw telefoon opnieuw starten.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Als u de installatie van de softwareupdate van uw serviceprovider wilt voltooien, moet u uw tablet opnieuw starten.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Opnieuw starten?</string>
+    <string name="STR_RESTART_PHONE">Telefoon opnieuw starten</string>
+    <string name="STR_RESTART_TABLET">Tablet opnieuw starten</string>
+    <string name="STR_SELECT_ALL">Alle volgende apps</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Belangrijke apps</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Er zijn geen gegevenskosten van toepassing voor het downloaden van de onderstaande apps.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Tik hieronder op een item voor meer informatie.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Apps worden gedownload via Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Apps serviceprovider ophalen</string>
+    <string name="STR_UPDATE_BODY1">Voor downloaden met mobiele gegevens kunnen extra kosten gelden.</string>
+    <string name="STR_UPDATE_BODY2">Uw telefoon wordt opnieuw gestart nadat de update is geïnstalleerd.</string>
+    <string name="STR_UPDATE_FAIL">Bijwerken mislukt. Probeer het opnieuw.</string>
+    <string name="STR_UPDATE_HEADER1">Download en installeer de nieuwste software van uw serviceprovider.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Er worden geen kosten in rekening gebracht voor de installatie van deze firmware.
+
+- Tijdens het installeren kunt u het apparaat helemaal niet gebruiken, ook niet voor noodoproepen.
+
+- Pictogrammen op het startscherm en apparaatinstellingen worden mogelijk teruggezet naar standaard en moeten mogelijk opnieuw worden geconfigureerd na de installatie.
+
+- Een firmwareupdate moet geen invloed hebben op de bestanden en gegevens op uw apparaat.
+
+- Als u het installatieproces echter stopt voordat het is voltooid, werkt uw apparaat mogelijk niet normaal en gaan uw bestanden mogelijk verloren.
+
+- Om onverwacht gegevensverlies te voorkomen kunt u van belangrijke gegevens het beste een back-up maken voor de installatie."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Opnieuw starten om de installatie van de softwareupdate van uw serviceprovider te voltooien.</string>
+    <string name="STR_UPDATING_PACKAGE">Bijwerken…</string>
+    <string name="STR_USE_DATA_BTN">Gegevens gebruiken</string>
+    <string name="STR_WAIT_FOR_WIFI">"Installatie app onderbroken.
+Wachten op Wi-Fi om apps te installeren."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wachten op Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Installeer apps die worden aanbevolen door uw serviceprovider.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Downloaden…</string>
+    <string name="STR_WIDGET_INSTALLED">Geïnstalleerd.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Knop</string>
+    <string name="WSS_STR_NO_UPDATE">De laatste updates zijn al geïnstalleerd.</string>
+</resources>

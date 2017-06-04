@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">ျဖည့္စြက္ပါဝင္ခ်က္ အ႐ြယ္အစား : %1$s %2$s</string>
+    <string name="STR_ALL">အားလုံး</string>
+    <string name="STR_APPS_DESCRIPTION">သင့္ဝန္ေဆာင္မႈစီစဥ္သူက ေထာက္ခံေသာ အက္ပ္မ်ားကို ေ႐ြးပါ။</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">ေရြးထားေသာ အက္ပ္အားလုံးကို ေဒါင္းလုဒ္လုပ္ထားသည္။</string>
+    <string name="STR_APP_BUTTON_CANCEL">ပယ္ဖ်က္ပါ</string>
+    <string name="STR_APP_BUTTON_OK">အိုေက</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">သင့္ဝန္ေဆာင္မႈစီစဥ္သူက ေထာက္ခံေသာ အက္ပ္မ်ားကို ေ႐ြးပါ။</string>
+    <string name="STR_APP_INSTALL_CONFIRM">သင္ထည့္သြင္းလိုသည့္ အက္ပ္မ်ား ေရြးခ်ယ္ပါ။</string>
+    <string name="STR_APP_INSTALL_TITLE">အက္ပ္မ်ား ထည့္သြင္းပါ</string>
+    <string name="STR_APP_STATE_CANCELED">ပယ္ဖ်က္ၿပီးၿပီ</string>
+    <string name="STR_APP_STATE_CONNECTING">ခ်ိတ္ဆက္ေနဆဲ…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ေဒါင္းလုတ္ လုပ္ေနဆဲ…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ေဒါင္းလုတ္ မေအာင္ျမင္ပါ</string>
+    <string name="STR_APP_STATE_INSTALLED">ထည့္သြင္းထားသည္</string>
+    <string name="STR_APP_STATE_INSTALLING">ေနရာခ်မႈ….</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">ထည့္သြင္းမႈ မေအာင္ျမင္ပါ</string>
+    <string name="STR_APP_STATE_WAITING">ေစာင့္ေနသည္…</string>
+    <string name="STR_BTN_INSTALL">ေနရာခ်ပါ</string>
+    <string name="STR_BTN_INSTALL_ALL">အားလံုးကို တပ္ဆင္ပါ</string>
+    <string name="STR_BTN_SKIP">ေက်ာ္ပါ</string>
+    <string name="STR_BUTTON_NEXT">ေနာက္ထပ္</string>
+    <string name="STR_CAUTION_BODY">ေဒါင္းလုဒ္လုပ္ၿပီးလွ်င္ အပ္ဒိတ္ထည့္သြင္းရန္ ျပန္စဖြင့္ပါ။ တပ္ဆင္မႈ မၿပီးမခ်င္း၊ အေရးေပၚဖုန္းမ်ား ေခၚရန္အတြက္ပင္ ဖုန္းကို သုံးႏုိင္မည္မဟုတ္ပါ။</string>
+    <string name="STR_CAUTION_BODY2">အပ္ဒိတ္လုပ္ၿပီးလွ်င္၊ သတ္မွတ္ခ်က္အခ်ိဳ႕ကို ၎တို႔၏ မူရင္းပါတန္ဖိုးမ်ားသို႔ ျပန္သတ္မွတ္ပါမည္။</string>
+    <string name="STR_CHARING_DIALOG">မိုဘိုင္းေဒတာသံုး၍ ေဒါင္းလုဒ္လုပ္ျခင္းသည္ ေနာက္ထပ္ အဖိုးအခမ်ား က်သင့္ႏိုင္သည္။</string>
+    <string name="STR_CHARING_DIALOG_TITLE">မိုဘိုင္းေဒတာသံုး၍ ေဒါင္းလုဒ္လုပ္မလား?</string>
+    <string name="STR_CONNECTING_TO_SERVER">ဆာဗာသုိ႔ ဆက္သြယ္ေနပါသည္…</string>
+    <string name="STR_CONNECT_FAIL">ဆက္သြယ္မႈ မေအာင္ျမင္ပါ။ ေနာက္မွ ၾကိဳးစားပါ။</string>
+    <string name="STR_DOWNLOADING_PACKAGE">အပ္ဒိတ္မ်ား ေဒါင္းလုတ္လုပ္ေနသည္…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ေဒါင္းလုတ္လုပ္ေနသည္…</string>
+    <string name="STR_DOWNLOAD_FAIL">ေဒါင္းလုတ္ မေအာင္ျမင္ပါ။ေနာက္မွ ျပန္ႀကိဳးစားပါ။</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">ေနာက္ဆံုးေပၚ အဂၤါရပ္မ်ားကုိ အသံုးျပဳရန္ ဤဖားမ္ဝဲအပ္ဒိတ္ကုိ ေဒါင္းလုတ္လုပ္ ထည့္သြင္းပါ။</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ေဒါင္းလုတ္ မေအာင္ျမင္ပါ။ေနာက္မွ ျပန္ႀကိဳးစားပါ။</string>
+    <string name="STR_FAILED_NOTI">ေဒါင္းလုတ္ မေအာင္ျမင္ပါ</string>
+    <string name="STR_INITIAL_NOTI">ေဒါင္းလုတ္အတြက္ အႀကံျပဳအက္ပ္မ်ားကို ေ႐ြးရန္ ဒီမွာ ႏွိပ္ပါ။</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">အပ္ဒိတ္ကို ေဒါင္းလုတ္လုပ္ၿပီး တပ္ဆင္ရန္ ဒီမွာ ႏွိပ္ပါ။</string>
+    <string name="STR_INSTALLED_NOTI">%d ခု တပ္ဆင္ထားသည္</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">ျဖည့္စြက္ပါဝင္ခ်က္ ထည့္သြင္းပါ</string>
+    <string name="STR_INSTALL_CAUTIONS">သတိ</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">ဤအပ္ဒိတ္တြင္ အခ်ိဳ႕ေသာစိတ္ႀကိဳက္အက္ပ္မ်ားႏွင့္ ပါဝင္ခ်က္တို႔ ပါဝင္သည္။ မိုဘိုင္းကြန္ယက္မ်ားမွတဆင့္ ေဒါင္းလုတ္လုပ္ျခင္းသည္ သင္၏ေငြေပးေခ်မႈအေပၚတြင္မူတည္၍ ထပ္ေဆာင္းအဖိုးအခမ်ား ကုန္က်ႏိုင္သည္။</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ေဒါင္းလုတ္ ၿပီးပါၿပီ။</string>
+    <string name="STR_INSTALL_FORCE">သင့္ အေရးပါေသာ ေဆာ့ဖ္ဝဲ အပ္ဒိတ္ ေဒါင္းလုတ္လုပ္ၿပီးပါၿပီ။ တပ္ဆင္မႈ စတင္ရန္ %d စကၠန္႔အတြင္း သင့္ကိရိယာ ျပန္စတင္မည္။</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">ပုိမုိေလ့လာပါ</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">အက္ပ္မ်ား ေဒါင္းလုတ္လုပ္ရန္ Wi-Fi ျဖင့္ ခ်ိတ္ဆက္ေနရမည္။ Wi-Fi ျဖင့္ ခ်ိတ္ဆက္ၿပီး ထပ္ႀကိဳးစားပါ။</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi ခ်ိတ္ဆက္မႈ မရွိပါ</string>
+    <string name="STR_NETWORK_FAIL">ကြန္ယက္ မရႏုိင္ပါ။ ေနာက္မွ ထပ္ႀကိဳးစားပါ။</string>
+    <string name="STR_NO_APPS">အက္ပ္မ်ား မရွိပါ</string>
+    <string name="STR_NO_CONTENT">သင့္ဝန္ေဆာင္မႈေပးသူမွ ထုတ္ထားေသာ သံုးႏုိင္သည့္ အက္ပ္မ်ားကုိ ဤေနရာတြင္ ျပပါမည္။</string>
+    <string name="STR_NO_ITEMS">အရာမ်ား မရွိပါ</string>
+    <string name="STR_NO_ITEM_SELECTED">ေရြးထားသည့္ အခ်င္းအရာမ်ား မရိွပါ။</string>
+    <string name="STR_OMC_HEADER">ဝန္ေဆာင္မႈစီစဥ္သူ၏ အပ္ဒိတ္</string>
+    <string name="STR_OMC_SIZE">အ႐ြယ္အစား : %s</string>
+    <string name="STR_OMC_TITLE">သီးသန္႔စီစဥ္ထားရွိမႈ အပ္ဒိတ္</string>
+    <string name="STR_OMC_VERSION">ဗားရွင္း : %s</string>
+    <string name="STR_OPERATOR_SETTINGS">ေအာ္ပေရတာ သတ္မွတ္ခ်က္မ်ား</string>
+    <string name="STR_PROCESS_FAIL">လုပ္ငန္းေဆာင္ရြက္မႈ မေအာင္ျမင္ပါ။</string>
+    <string name="STR_PROVIDER_APPS">ဝန္ေဆာင္မႈစီစဥ္သူ၏ အက္ပ္မ်ား</string>
+    <string name="STR_REGISTERING_DEVICE">ကိရိယာမွတ္ပုံတင္ေနပါသည္…</string>
+    <string name="STR_REGISTER_FAIL">မွတ္ပုံတင္မႈ မေအာင္ျမင္ပါ။</string>
+    <string name="STR_REGISTER_SUCCESS">ကိရိယာကို မွတ္ပံုတင္ၿပီးပါၿပီ။</string>
+    <string name="STR_RESTART_BTN_LATER">ေနာက္မွ</string>
+    <string name="STR_RESTART_BTN_RESTART">ျပန္စဖြင့္ပါ</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">သင့္ဝန္ေဆာင္မႈစီစဥ္သူ၏ ေဆာ့ဖ္ဝဲအပ္ဒိတ္ တပ္ဆင္မႈကို အၿပီးသတ္ရန္၊ ဖုန္းကို ျပန္စဖြင့္ရမည္။</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">သင့္ဝန္ေဆာင္မႈစီစဥ္သူ၏ ေဆာ့ဖ္ဝဲအပ္ဒိတ္ တပ္ဆင္မႈကို အၿပီးသတ္ရန္၊ တက္ဘလက္ကို ျပန္စဖြင့္ရမည္။</string>
+    <string name="STR_RESTART_DIALOG_TITLE">ျပန္ျပန္စဖြင့္မလား?</string>
+    <string name="STR_RESTART_PHONE">ဖုန္း ျပန္စဖြင့္ပါ</string>
+    <string name="STR_RESTART_TABLET">တက္ဘလက္ ျပန္စဖြင့္ပါ</string>
+    <string name="STR_SELECT_ALL">ေအာက္ပါ အက္ပ္မ်ားအားလံုး</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">မရွိမျဖစ္ လုိအပ္ေသာ အက္ပ္မ်ား</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">ေအာက္ပါ အက္ပ္မ်ားကုိ ေဒါင္းလုတ္လုပ္သည့္အတြက္ မည္သည့္ ေဒတာခမွ် ကုန္က်မည္ မဟုတ္ပါ။</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">ထုိအုိင္တမ္ အေၾကာင္း ပိုမိုေလ့လာရန္ ၎ေပၚတြင္ ႏွိပ္ပါ။</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">အက္ပ္မ်ားကို Wi-Fi မွတဆင့္ ေဒါင္းလုဒ္ဆြဲပါလိမ့္မည္။</string>
+    <string name="STR_SUW_TITLE">ဝန္ေဆာင္မႈစီစဥ္သူမွ အက္ပ္ကို ရယူျခင္း</string>
+    <string name="STR_UPDATE_BODY1">မိုဘိုင္းေဒတာသံုး၍ ေဒါင္းလုဒ္လုပ္ျခင္းသည္ ေနာက္ထပ္ အဖိုးအခမ်ား က်သင့္ႏိုင္သည္။</string>
+    <string name="STR_UPDATE_BODY2">အပ္ဒိတ္ကို ထည့္သြင္းၿပီးေနာက္ သင့္ဖုန္းကို ပိတ္ၿပီး ျပန္ဖြင့္လုိက္ပါမည္။</string>
+    <string name="STR_UPDATE_FAIL">အပ္ဒိတ္ မေအာင္ျမင္ပါ။ ျပန္ၾကိဳးစားပါ။</string>
+    <string name="STR_UPDATE_HEADER1">သင့္ဝန္ေဆာင္မႈစီစဥ္သူမွ ေနာက္ဆုံးထြက္ေဆာ့ဖ္ဝဲကို ေဒါင္းလုတ္လုပ္ၿပီး တပ္ဆင္ပါ။</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- ဤဖာမ္းဝဲကုိ ထည့္သြင္းမႈအတြက္ သင့္ထံမွ အခေၾကးေငြ ေကာက္ခံမည္မဟုတ္ပါ။
+
+- ထည့္သြင္းေနစဥ္ သင့္ကိရိယာကုိ လံုးဝ အသံုးျပဳႏုိင္မည္မဟုတ္ပါ၊ အေရးေပၚ ေခၚဆုိမႈမ်ားကုိပင္ ျပဳလုပ္ႏုိင္မည္ မဟုတ္ပါ။
+
+- ပင္မဖန္သားျပင္ရွိ သေကၤတမ်ားႏွင့္ ကိရိယာသတ္မွတ္ခ်က္မ်ားကုိ မူလပံုစံသုိ႔ ျပန္သတ္မွတ္မည္ျဖစ္ၿပီး ထည့္သြင္းၿပီးသည္ႏွင့္ ျပန္လည္စီစဥ္သတ္မွတ္ရန္ လုိအပ္ႏုိင္ပါသည္။
+
+- ဖာမ္းဝဲကုိ အပ္ဒိတ္လုပ္ျခင္းသည္ သင့္ကိရိယာရွိ ဖုိင္မ်ားႏွင့္ ေဒတာကုိ ထိခုိက္မည္မဟုတ္ပါ။
+
+- သုိ႔ေသာ္ ထည့္သြင္းမႈ မၿပီးဆံုးမီ ရပ္ဆုိင္းလုိက္ပါက သင့္ကိရိယာသည္ ပံုမွန္အတုိင္း လုပ္ေဆာင္ေတာ့မည္မဟုတ္ဘဲ ရလဒ္အျဖစ္ သင့္ဖိုင္မ်ားကုိလည္း ဆံုးရံႈးသြားႏုိင္ပါသည္။
+
+- ေမွ်ာ္လင့္မထားေသာ ေဒတာဆံုးရံႈးမႈမွ ေရွာင္လႊဲရန္ မထည့္သြင္းမီ အေရးႀကီးေသာ ေဒတာမ်ားကုိ အရံသိမ္းရန္ ကြ်ႏ္ုပ္တုိ႔က အၾကံျပဳပါသည္။"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">သင့္ဝန္ေဆာင္မႈစီစဥ္သူ၏ ေဆာ့ဖ္ဝဲအပ္ဒိတ္ တပ္ဆင္မႈကို အၿပီးသတ္ရန္ ျပန္စဖြင့္ပါ။</string>
+    <string name="STR_UPDATING_PACKAGE">အပ္ဒိတ္လုပ္ေနပါသည္…</string>
+    <string name="STR_USE_DATA_BTN">ေဒတာကုိ အသုံးျပဳပါ</string>
+    <string name="STR_WAIT_FOR_WIFI">"အက္ပ္ထည့္သြင္းျခင္း ခဏရပ္နားထားပါသည္။
+အက္ပ္မ်ားကို ထည့္သြင္းရန္ Wi-Fi ကိုေစာင့္ေနသည္။"</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi ကုိေစာင့္ပါ</string>
+    <string name="STR_WIDGET_DEFAULT">သင့္ဝန္ေဆာင္မႈစီစဥ္သူက ေထာက္ခံေသာ အက္ပ္မ်ားကို ထည့္ပါ။</string>
+    <string name="STR_WIDGET_DOWNLOADING">ေဒါင္းလုတ္လုပ္ေနဆဲ…</string>
+    <string name="STR_WIDGET_INSTALLED">တပ္ဆင္ၿပီးပါၿပီ</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">ခလုတ္</string>
+    <string name="WSS_STR_NO_UPDATE">ေနာက္ဆံုးေပၚအဆင့္ျမႇင့္တင္ျခင္းကို ၿပီးပါၿပီ။</string>
+</resources>

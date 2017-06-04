@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s Android Wear tətbiqi üçün güncəlləşmə tələb edir.</string>
+    <string name="common_android_wear_update_text">Android Wear güncəlləşməsə, %1$s işləməyəcək.</string>
+    <string name="common_android_wear_update_title">"Android Wear'i güncəlləşdirin"</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s hazırda əlçatmaz olan bir və ya daha çox Google Play xidməti tələb edir.</string>
+    <string name="common_google_play_services_enable_button">Google Play xidmətlərini aktiv et</string>
+    <string name="common_google_play_services_enable_text">Google Play xidmətlərini aktiv etməsəniz, %1$s işləməyəcək.</string>
+    <string name="common_google_play_services_enable_title">Google Play xidmətlərini aktiv et</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s tərəfindən tələb edilib</string>
+    <string name="common_google_play_services_install_button">Google Play xidmətlərini əldə et</string>
+    <string name="common_google_play_services_install_text_phone">%1$s Sizin telefon itkin Google Play xidmətləri olmadan çalışmaz.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s tablet itkin Google Play xidmətləri olmadan çalışmaz.</string>
+    <string name="common_google_play_services_install_title">Google Play xidmətləri əldə et</string>
+    <string name="common_google_play_services_invalid_account_text">Göstərilmiş hesab bu cihazda mövcud deyil. Fərqli hesab seçin.</string>
+    <string name="common_google_play_services_invalid_account_title">Etibarsız Hesab</string>
+    <string name="common_google_play_services_needs_enabling_title">Tətbiq Google Play Xidmətlərinin aktivləşməsini tələb edir.</string>
+    <string name="common_google_play_services_network_error_text">Google Play xidmətlərinə qoşulmaq üçün data bağlantısı tələb olunur.</string>
+    <string name="common_google_play_services_network_error_title">Şəbəkə Xətası</string>
+    <string name="common_google_play_services_notification_needs_update_title">Bir tətbiq Google Play Xidmətləri üçün güncəlləşmə tələb edir.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play xidmətləri xətası</string>
+    <string name="common_google_play_services_sign_in_failed_text">Göstərilən hesaba daxil olarkən səhv baş verdi. Lütfən fərqli bir hesab seçin.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Daxil olmadı</string>
+    <string name="common_google_play_services_unknown_issue">Google Play xidmətləri ilə bağlı naməlum problem</string>
+    <string name="common_google_play_services_unsupported_text">%1$s Sizin cihaz tərəfindən dəstəklənən deyil ki, Google Play xidmətləri, əsaslanır. Yardım üçün istehsalçısı ilə əlaqə saxlayın.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play xidmətləri</string>
+    <string name="common_google_play_services_update_button">Güncəllə</string>
+    <string name="common_google_play_services_update_text">%1$s Google Play xidmətləri yeniləmə halda çalışmaz.</string>
+    <string name="common_google_play_services_update_title">Update Google Play xidmətlərini güncəlllə</string>
+    <string name="common_google_play_services_updating_text">%1$s Hal-hazırda təzələyirik Google Play xidmətləri olmadan çalışmaz.</string>
+    <string name="common_google_play_services_updating_title">Google Play xidmətləri təzələyirik</string>
+    <string name="common_open_on_phone">Telefonda açın</string>
+    <string name="common_signin_button_text">Giriş</string>
+    <string name="common_signin_button_text_long">Google ilə daxil ol</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Əlavə məzmun ölçüsü: %1$s %2$s</string>
+    <string name="STR_ALL">Hamısını</string>
+    <string name="STR_APPS_DESCRIPTION">Xidmət təminatçısının tövsiyə etdiyi proqramları seçin.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Seçdiyiniz bütün proqramlar yükləndi.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Ləğv et</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Xidmət təminatçısının tövsiyə etdiyi proqramları seçin.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Quraşdırmaq istədiyiniz proqramları seçin.</string>
+    <string name="STR_APP_INSTALL_TITLE">Proqramları quraşdır</string>
+    <string name="STR_APP_STATE_CANCELED">Ləğv edildi</string>
+    <string name="STR_APP_STATE_CONNECTING">Qoşulur…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Yüklənir…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Yükləmə mümkün olmadı.</string>
+    <string name="STR_APP_STATE_INSTALLED">Quraşdırıldı</string>
+    <string name="STR_APP_STATE_INSTALLING">Yükləmə</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Quraşdırmaq olmadı</string>
+    <string name="STR_APP_STATE_WAITING">Gözləyir…</string>
+    <string name="STR_BTN_INSTALL">Yerləşdir</string>
+    <string name="STR_BTN_INSTALL_ALL">Hamısını quraşdır</string>
+    <string name="STR_BTN_SKIP">Burax</string>
+    <string name="STR_BUTTON_NEXT">Növbəti</string>
+    <string name="STR_CAUTION_BODY">Yüklədikdən sonra yeniləməni quraşdırmaq üçün söndürüb yandırın. Siz quraşdırma bitənədək hətta fövqəladə zənglər üçün belə telefondan istifadə edə bilməyəcəksiniz.</string>
+    <string name="STR_CAUTION_BODY2">Yeniləmədən sonra bəzi proqramlar standart dəyərlərinə sıfırlana bilər.</string>
+    <string name="STR_CHARING_DIALOG">Mobil data ilə yükləmək əlavə xərclərə səbəb ola bilər.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Mobil data ilə yüklənsin?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Serverə qoşulma</string>
+    <string name="STR_CONNECT_FAIL">Bağlantı alınmadı. Daha sonra cəhd edin.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Yeniləmələr yüklənir…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Yüklənir…</string>
+    <string name="STR_DOWNLOAD_FAIL">Yükləmə alınmadı. Sonra yenidən sına.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Ən son funksiyalardan istifadə etmək üçün bu mikroproqram yeniləməsini yüklə və quraşdır.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Yükləmə alınmadı. Sonra yenidən sına.</string>
+    <string name="STR_FAILED_NOTI">Yükləmə mümkün olmadı.</string>
+    <string name="STR_INITIAL_NOTI">Yükləmək üçün tövsiyə edilən proqramları seçmək üçün bura vurun.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Yeniləməni yükləmək və quraşdırmaq üçün bura vurun.</string>
+    <string name="STR_INSTALLED_NOTI">%d quraşdırıldı</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Əlavə məzmun quraşdır</string>
+    <string name="STR_INSTALL_CAUTIONS">Diqqət</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Bu yeniləməyə bəzi əlavə proqram və məzmunlar daxildir. Mobil şəbəkələr vasitəsilə yükləmə ödəniş planınızdan asılı olaraq əlavə xidmət haqqına səbəb ola bilər.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Yükləndi.</string>
+    <string name="STR_INSTALL_FORCE">Ciddi proqram yeniləməniz yüklənmişdir. Quraşdırmanı başlamaq üçün cihazınız %d saniyə sonra sönüb-yanacaqdır.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Ətraflı öyrən</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Proqramları yükləmək üçün Wi-Fi-ya qoşulmalısınız. Wi-Fi-a qoşulun və yenidən cəhd edin.</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi bağlantısı yoxdur</string>
+    <string name="STR_NETWORK_FAIL">Şəbəkə mövcud deyil. Daha sonra yenidən cəhd et.</string>
+    <string name="STR_NO_APPS">Proqram yoxdur</string>
+    <string name="STR_NO_CONTENT">Xidmət təminatçısının mövcud proqramları burada görünəcək.</string>
+    <string name="STR_NO_ITEMS">Element yoxdur</string>
+    <string name="STR_NO_ITEM_SELECTED">Heç bir element seçilməyib.</string>
+    <string name="STR_OMC_HEADER">Xidmət təminatçısı yeniləməsi</string>
+    <string name="STR_OMC_SIZE">Ölçü: %s</string>
+    <string name="STR_OMC_TITLE">Konfiqurasiya yeniləməsi</string>
+    <string name="STR_OMC_VERSION">Versiya: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operator parametrləri</string>
+    <string name="STR_PROCESS_FAIL">İşləmə baş tutmadı.</string>
+    <string name="STR_PROVIDER_APPS">Xidmət təminatçısı proqramları</string>
+    <string name="STR_REGISTERING_DEVICE">Cihaz qeydiyyatdan keçirilir…</string>
+    <string name="STR_REGISTER_FAIL">Qeyd etmə alınmadı.</string>
+    <string name="STR_REGISTER_SUCCESS">Cihaz qeydiyyatdan keçib.</string>
+    <string name="STR_RESTART_BTN_LATER">Sonra</string>
+    <string name="STR_RESTART_BTN_RESTART">Sönd yandr</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Xidmət təminatçısının proqram təminatı yeniləməsini quraşdırmanı bitirmək üçün telefonu söndürüb yandırmalısınız.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Xidmət təminatçısının proqram təminatı yeniləməsini quraşdırmanı bitirmək üçün tableti söndürüb yandırmalısınız.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Sönüb yandın?</string>
+    <string name="STR_RESTART_PHONE">Telefonu söndürüb yandır</string>
+    <string name="STR_RESTART_TABLET">Tableti söndürüb yandır</string>
+    <string name="STR_SELECT_ALL">Aşağıdakı proqramların hamısı</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Əsas proqramlar</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Aşağıdakı proqramları yükləmək üçün heç bir data xərci tətbiq edilmir.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Aşağıdakı elementə vuraraq haqqında ətraflı öyrənin.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Proqramlar Wi-Fi ilə yüklənəcək.</string>
+    <string name="STR_SUW_TITLE">Xidmət təminatçısından proqram alın</string>
+    <string name="STR_UPDATE_BODY1">Mobil data ilə yükləmək əlavə xərclərə səbəb ola bilər.</string>
+    <string name="STR_UPDATE_BODY2">Telefonunuz yeniləmə quraşdırıldıqdan sonra sönüb yanacaq.</string>
+    <string name="STR_UPDATE_FAIL">Yenilənmədi. Təkrar cəhd et.</string>
+    <string name="STR_UPDATE_HEADER1">Xidmət təminatçısından ən son proqram təminatını yükləyin və quraşdırın.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Bu mikroproqramın quraşdırılması üçün heç nə ödəməyəcəksiniz.
+
+- Quraşdırma zamanı siz cihazdan istifadə edə bilməyəcəksiniz (hətta fövqəladə zənglər üçün də).
+
+- Əsas ekrandakı nişanlar və cihaz parametrləri defolt kimi qurula və quraşdırılmadan sonra yenidən konfiqurasiya edilə bilər.
+
+- Mikroproqramın yeniləməsi cihazdakı fayl və məlumata təsir etməyəcək.
+
+- Lakin quraşdırma prosesi bitməzdən onu dayandırdığınızda cihaz normal işləməyə və fayllarınız itə bilər.
+
+- Gözlənilməz məlumat itkisinin qarşısını almaq üçün mühüm məlumatı quraşdırmadan əvvəl nüsxələməyənizi tövsiyə edirik."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Xidmət təminatçısınızın proqram təminatı yeniləməsini quraşdırmağın bitirilməsini yenidən başladın.</string>
+    <string name="STR_UPDATING_PACKAGE">Yenilənir…</string>
+    <string name="STR_USE_DATA_BTN">Datadan istifadə</string>
+    <string name="STR_WAIT_FOR_WIFI">"Proqram quraşdırmasına pauza verildi.
+Wi-Fi-ın proqramları quraşdırması gözlənir."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi bağlantı gözlə</string>
+    <string name="STR_WIDGET_DEFAULT">Xidmət təminatçısının tövsiyə etdiyi proqramları quraşdırın.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Yüklənir…</string>
+    <string name="STR_WIDGET_INSTALLED">Quruldu.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Düymə</string>
+    <string name="WSS_STR_NO_UPDATE">Ən son yeniləmələr artıq quraşdırılmışdır.</string>
+</resources>

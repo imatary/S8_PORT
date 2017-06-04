@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Veličina dodatnog sadržaja: %1$s %2$s</string>
+    <string name="STR_ALL">Sve</string>
+    <string name="STR_APPS_DESCRIPTION">Izaberite aplikacije koje preporučuje davalac usluge.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Sve izabrane aplikacije su preuzete.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Otkaži</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Izaberite aplikacije koje preporučuje davalac usluge.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Izaberite aplikacije koje želite instalirati.</string>
+    <string name="STR_APP_INSTALL_TITLE">Instaliraj aplikacije</string>
+    <string name="STR_APP_STATE_CANCELED">Otkazano</string>
+    <string name="STR_APP_STATE_CONNECTING">Povezuje se…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Downloading…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Preuzimanje je neuspješno.</string>
+    <string name="STR_APP_STATE_INSTALLED">Instalirano</string>
+    <string name="STR_APP_STATE_INSTALLING">Instaliranje…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Instalacija je neuspješna</string>
+    <string name="STR_APP_STATE_WAITING">Čekanje…</string>
+    <string name="STR_BTN_INSTALL">Instaliraj</string>
+    <string name="STR_BTN_SKIP">Preskoči</string>
+    <string name="STR_BUTTON_NEXT">Sljedeće</string>
+    <string name="STR_CAUTION_BODY">Nakon preuzimanja, izvršite ponovno pokretanje radi instaliranja ažuriranja. Nećete moći koristiti telefon, čak ni za hitne pozive, dok se instalacija ne završi.</string>
+    <string name="STR_CAUTION_BODY2">Nakon ažuriranja, neke postavke mogu biti ponovno postavljene na zadane vrijednosti.</string>
+    <string name="STR_CHARING_DIALOG">Preuzimanje putem mobilnih podataka može uzrokovati dodatne troškove.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Preuzeti putem mobilnih podataka?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Povezivanje na server</string>
+    <string name="STR_CONNECT_FAIL">Povezivanje nije uspjelo. Pokušajte kasnije.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Preuzimanje ažuriranja…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Preuzimanje…</string>
+    <string name="STR_DOWNLOAD_FAIL">Neuspješno preuzimanje. Pokušajte kasnije.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Da biste koristili najnovije funkcije, preuzmite i instalirajte ovo ažuriranje za firmver.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Neuspješno preuzimanje. Pokušajte kasnije.</string>
+    <string name="STR_FAILED_NOTI">Preuzimanje je neuspješno.</string>
+    <string name="STR_INITIAL_NOTI">Dodirnite ovdje da izaberete preporučene aplikacije za preuzimanje.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Dodirnite ovdje da preuzmete i instalirate ažuriranje.</string>
+    <string name="STR_INSTALLED_NOTI">%d je instaliran</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Instaliraj dodatni sadržaj</string>
+    <string name="STR_INSTALL_CAUTIONS">Oprez</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Ovo ažuriranje obuhvata neke opcionalne aplikacije i sadržaj. Preuzimanje putem mobilnih mreža može dovesti do dodatnih troškova u zavisnosti od tarifnog paketa.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Preuzeto.</string>
+    <string name="STR_INSTALL_FORCE">Kritično ažuriranje softvera je preuzeto. Uređaj će se ponovno postaviti za %d sekundi kako bi instalacija počela.</string>
+    <string name="STR_KILOBYTE">kB</string>
+    <string name="STR_LINK_LEARNMORE">Saznaj više</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Morate se povezati na Wi-Fi mrežu za preuzimanje aplikacija. Povežite se na Wi-Fi mrežu i pokušajte ponovno.</string>
+    <string name="STR_NEED_WIFI_TITLE">Nema Wi-Fi veze</string>
+    <string name="STR_NETWORK_FAIL">Mreža nije dostupna. Pokušajte ponovno kasnije.</string>
+    <string name="STR_NO_APPS">Nema aplikacija</string>
+    <string name="STR_NO_CONTENT">Dostupne aplikacije koje je izdao vaš davalac usluge će se pojaviti ovdje.</string>
+    <string name="STR_NO_ITEMS">Nema stavki</string>
+    <string name="STR_NO_ITEM_SELECTED">Nema izabranih stavki.</string>
+    <string name="STR_OMC_HEADER">Ažuriranje davaoca usluge</string>
+    <string name="STR_OMC_SIZE">Veličina: %s</string>
+    <string name="STR_OMC_TITLE">Ažuriranje konfiguracije</string>
+    <string name="STR_OMC_VERSION">Verzija: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Postavke operatera</string>
+    <string name="STR_PROCESS_FAIL">Obrada je neuspješna.</string>
+    <string name="STR_PROVIDER_APPS">Aplikacije davaoca usluge</string>
+    <string name="STR_REGISTERING_DEVICE">Registracija uređaja…</string>
+    <string name="STR_REGISTER_FAIL">Registracija je neuspješna.</string>
+    <string name="STR_REGISTER_SUCCESS">Uređaj je registrovan.</string>
+    <string name="STR_RESTART_BTN_LATER">Kasnije</string>
+    <string name="STR_RESTART_BTN_RESTART">Pon. pokr.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Da dovršite instalaciju ažuriranja softvera davaoca usluge, morate ponovno pokrenuti telefon.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Da dovršite instalaciju ažuriranja softvera davaoca usluge, morate ponovno pokrenuti tablet.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Ponovno pokrenuti?</string>
+    <string name="STR_RESTART_PHONE">Ponovno pokreni telefon</string>
+    <string name="STR_RESTART_TABLET">Ponovno pokreni tablet</string>
+    <string name="STR_SELECT_ALL">Sve sljedeće aplikacije</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Osnovne aplikacije</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Neće se primijeniti troškovi prenosa podataka za preuzimanje aplikacija ispod.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Dodirnite stavku ispod da saznate više o njoj.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Aplikacije će se preuzeti putem Wi-Fi veze.</string>
+    <string name="STR_SUW_TITLE">Preuzmi aplikacije od davaoca usluge</string>
+    <string name="STR_UPDATE_BODY1">Preuzimanje putem mobilnih podataka može uzrokovati dodatne troškove.</string>
+    <string name="STR_UPDATE_BODY2">Vaš telefon će se ponovno pokrenuti nakon što se ažuriranje instalira.</string>
+    <string name="STR_UPDATE_FAIL">Neuspješna dopuna. Pokušajte ponovno.</string>
+    <string name="STR_UPDATE_HEADER1">Preuzmite i instalirajte najnoviji softver vašeg davaoca usluge.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"– Ova instalacija firmvera vam neće biti naplaćena.
+
+– Tokom instalacije nećete moći koristiti uređaj, čak ni za hitne pozive.
+
+– Ikone na početnom ekranu i postavke uređaja mogu biti ponovno postavljene na zadane vrijednosti i možda ćete ih morati ponovno konfigurisati nakon instalacije.
+
+– Ažuriranje firmvera ne bi trebalo uticati na fajlove i podatke na uređaju.
+
+– Ukoliko, međutim, zaustavite proces instalacije prije nego što se on završi, uređaj zbog toga možda neće raditi normalno i može doći do gubitka fajlova.
+
+– Da biste izbjegli neočekivani gubitak podataka, preporučujemo da kreirate sigurnosnu kopiju važnih podataka prije instalacije."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Ponovno pokrenite da dovršite instalaciju ažuriranja softvera davaoca usluge.</string>
+    <string name="STR_UPDATING_PACKAGE">Ažuriranje…</string>
+    <string name="STR_USE_DATA_BTN">Koristi podatke</string>
+    <string name="STR_WAIT_FOR_WIFI">"Instalacija aplikacije je pauzirana.
+Čeka se Wi-Fi veza za instalaciju aplikacija."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Sačekaj Wi-Fi vezu</string>
+    <string name="STR_WIDGET_DEFAULT">Instalirajte aplikacije koje preporučuje davalac usluge.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Preuzimanje…</string>
+    <string name="STR_WIDGET_INSTALLED">Instalirano.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Dugme</string>
+    <string name="WSS_STR_NO_UPDATE">Najnovija ažuriranja su već instalirana.</string>
+</resources>

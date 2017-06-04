@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s aplikazioak Android Wear eguneratzea behar du.</string>
+    <string name="common_android_wear_update_text">%1$s ez da exekutatuko Android Wear aplikazioa eguneratzen ez baduzu.</string>
+    <string name="common_android_wear_update_title">Eguneratu Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s erabiltzeko unean erabilgarri ez dagoen beste Google Play zerbitzu bat behar da. Laguntza lortzeko, jarri garatzailearekin harremanetan.</string>
+    <string name="common_google_play_services_enable_button">Gaitu Google Play zerbitzuak</string>
+    <string name="common_google_play_services_enable_text">%1$s aplikazioak ez du funtzionatuko Google Play zerbitzuak gaitzen ez badituzu.</string>
+    <string name="common_google_play_services_enable_title">Gaitu Google Play zerbitzuak</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s aplikazioak eskatu du</string>
+    <string name="common_google_play_services_install_button">Lortu Google Play zerbitzuak</string>
+    <string name="common_google_play_services_install_text_phone">%1$s ez da exekutatuko Google Play zerbitzurik gabe, baina haiek ez daude telefonoan.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s ez da exekutatuko Google Play zerbitzurik gabe, baina haiek ez daude tabletan.</string>
+    <string name="common_google_play_services_install_title">Lortu Google Play zerbitzuak</string>
+    <string name="common_google_play_services_invalid_account_text">Zehaztutako kontua ez dago gailuan. Aukeratu beste kontu bat.</string>
+    <string name="common_google_play_services_invalid_account_title">Kontu baliogabea</string>
+    <string name="common_google_play_services_needs_enabling_title">Aplikazio batek Google Play zerbitzuak gaituta egotea eskatzen du.</string>
+    <string name="common_google_play_services_network_error_text">Datu-konexioa behar da Google Play zerbitzuetara konektatzeko.</string>
+    <string name="common_google_play_services_network_error_title">Sareko errorea</string>
+    <string name="common_google_play_services_notification_needs_update_title">Aplikazio batek Google Play zerbitzuak eguneratzea eskatzen du.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play zerbitzuen errorea</string>
+    <string name="common_google_play_services_sign_in_failed_text">Errore bat gertatu da zehaztutako kontuan saioa hastean. Aukeratu beste kontu bat.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Ezin izan da hasi saioa</string>
+    <string name="common_google_play_services_unknown_issue">Google Play zerbitzuekin arazo ezezaguna dago.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s Google Play zerbitzuetan oinarrituta dago, baina zure gailuak ez ditu onartzen. Laguntza lortzeko, jarri fabrikatzailearekin harremanetan.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play zerbitzuak</string>
+    <string name="common_google_play_services_update_button">Eguneratu</string>
+    <string name="common_google_play_services_update_text">%1$s ez da exekutatuko Google Play zerbitzuak eguneratzen ez badituzu.</string>
+    <string name="common_google_play_services_update_title">Eguneratu Google Play zerbitzuak</string>
+    <string name="common_google_play_services_updating_text">%1$s ez da exekutatuko Google Play zerbitzurik gabe; zerbitzuok une honetan eguneratzen ari dira.</string>
+    <string name="common_google_play_services_updating_title">Google Play zerbitzuak eguneratzen</string>
+    <string name="common_open_on_phone">Ireki telefonoan</string>
+    <string name="common_signin_button_text">Hasi saioa</string>
+    <string name="common_signin_button_text_long">Hasi saioa Google-n</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Eduki gehigarriaren neurria: %1$s %2$s</string>
+    <string name="STR_ALL">Guztiak</string>
+    <string name="STR_APPS_DESCRIPTION">Hautatu zerbitzu hornitzaileak gomendatutako aplikazioak.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Hautatu dituzun aplikazio guztiak deskargatu dira.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Ezeztatu</string>
+    <string name="STR_APP_BUTTON_OK">Ados</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Hautatu zerbitzu hornitzaileak gomendatutako aplikazioak.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Hautatu instalatu nahi dituzun aplikazioak.</string>
+    <string name="STR_APP_INSTALL_TITLE">Instalatu aplikazioak</string>
+    <string name="STR_APP_STATE_CANCELED">Utzita</string>
+    <string name="STR_APP_STATE_CONNECTING">Konektatzen…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Deskargatzen…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Deskarga ez dago eskuragarri</string>
+    <string name="STR_APP_STATE_INSTALLED">Instalatu da</string>
+    <string name="STR_APP_STATE_INSTALLING">Samsung Pay instalatzen ari gara. Itxaron…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Instalazioak huts egin du</string>
+    <string name="STR_APP_STATE_WAITING">Zain…</string>
+    <string name="STR_BTN_INSTALL">Instalatu</string>
+    <string name="STR_BTN_INSTALL_ALL">Instalatu dena</string>
+    <string name="STR_BTN_SKIP">Pasatu</string>
+    <string name="STR_BUTTON_NEXT">Hurrengoa</string>
+    <string name="STR_CAUTION_BODY">Deskargatu ondoren, berrabiarazi eguneraketa instalatzeko. Instalatzen amaitu arte ezin izango duzu telefonoa erabili, ezta larrialdi deietarako ere.</string>
+    <string name="STR_CAUTION_BODY2">Eguneratu ondoren, baliteke ezarpen batzuen balio lehenetsiak berrezartzea.</string>
+    <string name="STR_CHARING_DIALOG">Datu mugikorren bidez deskargatuz gero kostu gehigarriak sor litezke.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Datu mugikorrak erabilita deskargatu?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Zerbitzarira konektatzen…</string>
+    <string name="STR_CONNECT_FAIL">Konexioak huts egin du. Saiatu geroago.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Eguneraketak deskargatzen…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Deskargatzen…</string>
+    <string name="STR_DOWNLOAD_FAIL">Deskargak huts egin du. Beranduago saiatu.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Azken eginbideak erabiltzeko, deskargatu eta instalatu firmware eguneraketa hau.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Deskargak huts egin du. Beranduago saiatu.</string>
+    <string name="STR_FAILED_NOTI">Deskarga ez dago eskuragarri</string>
+    <string name="STR_INITIAL_NOTI">Ukitu hau deskargatzeko aplikazio gomendatuak hautatzeko.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Ukitu hau eguneraketa deskargatzeko eta instalatzeko.</string>
+    <string name="STR_INSTALLED_NOTI">%d instalatuta</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Instalatu eduki gehigarria</string>
+    <string name="STR_INSTALL_CAUTIONS">Kontuz</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Aplikazio eta eduki osagarriak ditu eguneratze honek. Baliteke sare mugikorren bidez deskargatzeak kostu osagarriak eragitea zure tarifaren arabera.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Deskargatuta</string>
+    <string name="STR_INSTALL_FORCE">Zure software eguneraketa garrantzitsua deskargatu da. Zure gailua %d segundo barru berrabiaraziko da instalatzen hasteko.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Informazio gehiago</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Wi-Fi sare batera konektatuta egon behar duzu aplikazioak deskargatzeko. Konektatu Wi-Fi sarera eta saiatu berriz.</string>
+    <string name="STR_NEED_WIFI_TITLE">Ez dago Wi-Fi konexiorik</string>
+    <string name="STR_NETWORK_FAIL">Sarea ez dago erabilgarri. Saiatu berriz geroago.</string>
+    <string name="STR_NO_APPS">Ez dago aplikaziorik</string>
+    <string name="STR_NO_CONTENT">Zerbitzu hornitzaileak kaleratutako aplikazioak hemen agertuko dira.</string>
+    <string name="STR_NO_ITEMS">Elementurik ez</string>
+    <string name="STR_NO_ITEM_SELECTED">Ez da elementurik aukeratu</string>
+    <string name="STR_OMC_HEADER">Zerbitzu hornitzailearen eguneraketa</string>
+    <string name="STR_OMC_SIZE">Neurria: %s</string>
+    <string name="STR_OMC_TITLE">Konfigurazio eguneratzea</string>
+    <string name="STR_OMC_VERSION">Bertsioa: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operadorearen ezarpenak</string>
+    <string name="STR_PROCESS_FAIL">Prozesatzeak huts egin du</string>
+    <string name="STR_PROVIDER_APPS">Zerbitzu hornitzailearen aplikazioak</string>
+    <string name="STR_REGISTERING_DEVICE">Gailua erregistratzen…</string>
+    <string name="STR_REGISTER_FAIL">Erregistroak huts egin du</string>
+    <string name="STR_REGISTER_SUCCESS">Gailua erregistratuta</string>
+    <string name="STR_RESTART_BTN_LATER">Geroago</string>
+    <string name="STR_RESTART_BTN_RESTART">Berrabiar.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Zerbitzu hornitzailearen software eguneraketa instalatzen amaitzeko, telefonoa berrabiarazi behar duzu.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Zerbitzu hornitzailearen software eguneraketa instalatzen amaitzeko, tableta berrabiarazi behar duzu.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Berrabiarazi?</string>
+    <string name="STR_RESTART_PHONE">Berrabiarazi telefonoa</string>
+    <string name="STR_RESTART_TABLET">Berrabiarazi tableta</string>
+    <string name="STR_SELECT_ALL">Aplikazio hauek guztiak</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Oinarrizko aplikazioak</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Ez da datuengatiko kosturik aplikatuko beheko aplikazioak deskargatzeagatik.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Ukitu beheko elementu bat hari buruz gehiago jakiteko.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Aplikazioak Wi-Fi bidez deskargatuko dira.</string>
+    <string name="STR_SUW_TITLE">Lortu zerbitzu hornitzailearen aplikazioak</string>
+    <string name="STR_UPDATE_BODY1">Datu mugikorren bidez deskargatuz gero kostu gehigarriak sor litezke.</string>
+    <string name="STR_UPDATE_BODY2">Eguneraketa instalatutakoan berrabiaraziko da telefonoa.</string>
+    <string name="STR_UPDATE_FAIL">Akatsa eguneratzean. Saiatu berriz.</string>
+    <string name="STR_UPDATE_HEADER1">Deskargatu eta instalatu zerbitzu hornitzailearen azken softwarea.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Ez duzu ezer ordainduko firmware instalazio honengatik.
+
+- Instalazioan zehar, ezingo duzu gailua erabili, ezta larrialdi deiak egiteko ere.
+
+- Instalazioaren ondoren, baliteke pantaila Nagusiko ikono eta gailuaren ezarpen lehenetsiak berrezartzea eta berriz konfiguratu behar izatea.
+
+- Firmware eguneraketek ez dute eraginik gailuko fitxategietan eta datuetan.
+
+- Halere, instalazio prozesua amaitu aurretik gelditzen baduzu, baliteke gailuak behar bezala ez funtzionatzea eta gailuko datuak galtzea.
+
+- Ezusteko datu galerak saihesteko, datu garrantzitsuen babeskopia egitea gomendatzen dizugu, instalazioa hasi aurretik."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Berrabiarazi zerbitzu hornitzailearen software eguneraketa instalatzen amaitzeko.</string>
+    <string name="STR_UPDATING_PACKAGE">Eguneratzen…</string>
+    <string name="STR_USE_DATA_BTN">Erabili datuak</string>
+    <string name="STR_WAIT_FOR_WIFI">"Aplikazioa instalatzeko prozesua pausatu da.
+Wi-Fi sarearen zain, aplikazioak instalatzeko."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Itxaron Wi-Fi sareari</string>
+    <string name="STR_WIDGET_DEFAULT">Instalatu zerbitzu hornitzaileak gomendatutako aplikazioak.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Deskargatzen…</string>
+    <string name="STR_WIDGET_INSTALLED">Instalatuta</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Botoia</string>
+    <string name="WSS_STR_NO_UPDATE">Azken eguneraketak instalatu dira</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">A(z) %1$s alkalmazás az Android Wear alkalmazás frissítését igényli.</string>
+    <string name="common_android_wear_update_text">A(z) %1$s alkalmazás csak az Android Wear alkalmazás frissítését követően fog működni.</string>
+    <string name="common_android_wear_update_title">Az Android Wear frissítése</string>
+    <string name="common_google_play_services_api_unavailable_text">A(z) %1$s alkalmazásnak szüksége van egy vagy több, jelenleg nem elérhető Google Play-szolgáltatásra. További segítségért vegye fel a kapcsolatot a fejlesztővel.</string>
+    <string name="common_google_play_services_enable_button">Play-szolgáltatások aktiválása</string>
+    <string name="common_google_play_services_enable_text">A(z) %1$s alkalmazás csak akkor működik, ha Ön engedélyezi a Google Play-szolgáltatásokat.</string>
+    <string name="common_google_play_services_enable_title">Google Play-szolgáltatások aktiválása</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">A(z) %1$s kérésére</string>
+    <string name="common_google_play_services_install_button">Play-szolgáltatások telepítése</string>
+    <string name="common_google_play_services_install_text_phone">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyek hiányoznak a telefonjáról.</string>
+    <string name="common_google_play_services_install_text_tablet">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyek hiányoznak a táblagépéről.</string>
+    <string name="common_google_play_services_install_title">Play-szolgáltatások telepítése</string>
+    <string name="common_google_play_services_invalid_account_text">A megadott fiók nem létezik ezen az eszközön. Kérjük, válasszon másik fiókot.</string>
+    <string name="common_google_play_services_invalid_account_title">Érvénytelen fiók</string>
+    <string name="common_google_play_services_needs_enabling_title">Egy alkalmazás Google Play-szolgáltatások engedélyezését kéri.</string>
+    <string name="common_google_play_services_network_error_text">A Google Play-szolgáltatásokhoz történő kapcsolódáshoz adatkapcsolat szükséges.</string>
+    <string name="common_google_play_services_network_error_title">Hálózati hiba</string>
+    <string name="common_google_play_services_notification_needs_update_title">Egy alkalmazás Google Play-szolgáltatások frissítését kéri.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play-szolgáltatások – hiba</string>
+    <string name="common_google_play_services_sign_in_failed_text">Hiba a megadott fiókba való bejelentkezéskor. Kérjük, válasszon egy másik fiókot.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Sikertelen bejelentkezés</string>
+    <string name="common_google_play_services_unknown_issue">Ismeretlen hiba a Google Play-szolgáltatásokban.</string>
+    <string name="common_google_play_services_unsupported_text">A(z) %1$s használatához olyan Google Play-szolgáltatásokra lesz szüksége, amelyeket eszköze nem támogat. Ha segítségre van szüksége, lépjen kapcsolatba a gyártóval.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play-szolgáltatások</string>
+    <string name="common_google_play_services_update_button">Frissítés</string>
+    <string name="common_google_play_services_update_text">A(z) %1$s alkalmazás csak akkor fog működni, ha frissíti a Google Play-szolgáltatásokat.</string>
+    <string name="common_google_play_services_update_title">Play-szolgáltatások frissítése</string>
+    <string name="common_google_play_services_updating_text">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyek éppen frissülnek.</string>
+    <string name="common_google_play_services_updating_title">A Google Play-szolgáltatások frissülnek</string>
+    <string name="common_open_on_phone">Megnyitás a telefonon</string>
+    <string name="common_signin_button_text">Belépés</string>
+    <string name="common_signin_button_text_long">Google-bejelentkezés</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Kiegészítő tartalom mérete: %1$s %2$s</string>
+    <string name="STR_ALL">Mind</string>
+    <string name="STR_APPS_DESCRIPTION">A szolgáltató által javasolt alkalmazások kiválasztása.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Letöltődött az összes kiválasztott alkalmazás.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Mégse</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">A szolgáltató által javasolt alkalmazások kiválasztása.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Jelölje ki a telepíteni kívánt alkalmazásokat.</string>
+    <string name="STR_APP_INSTALL_TITLE">Alkalmazások telepítése</string>
+    <string name="STR_APP_STATE_CANCELED">Megszakítva</string>
+    <string name="STR_APP_STATE_CONNECTING">Kapcsolódás…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Letöltés…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Sikertelen letöltés</string>
+    <string name="STR_APP_STATE_INSTALLED">Telepítve</string>
+    <string name="STR_APP_STATE_INSTALLING">Telepítés…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">A telepítés nem sikerült</string>
+    <string name="STR_APP_STATE_WAITING">Várakozás…</string>
+    <string name="STR_BTN_INSTALL">Telepít</string>
+    <string name="STR_BTN_INSTALL_ALL">Összes telepítése</string>
+    <string name="STR_BTN_SKIP">Átugrás</string>
+    <string name="STR_BUTTON_NEXT">Következő</string>
+    <string name="STR_CAUTION_BODY">A letöltés után indítsa újra a frissítés telepítéséhez. A telepítés befejezéséig a telefonról még segélyhívás sem indítható.</string>
+    <string name="STR_CAUTION_BODY2">A frissítés után visszaállhat néhány beállítás alapértelmezett értéke.</string>
+    <string name="STR_CHARING_DIALOG">A mobilinterneten keresztüli letöltés további költséggel járhat.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Mobilinterneten keresztül tölti le?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Kapcsolódás a szerverhez</string>
+    <string name="STR_CONNECT_FAIL">A kapcsolódás sikertelen. Próbálja meg később.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Frissítések letöltése…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Letöltés…</string>
+    <string name="STR_DOWNLOAD_FAIL">Sikertelen letöltés. Próbálja meg később.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">A legújabb funkciók használatához töltse le és telepítse ezt a szoftverfrissítést.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Sikertelen letöltés. Próbálja meg később.</string>
+    <string name="STR_FAILED_NOTI">Sikertelen letöltés</string>
+    <string name="STR_INITIAL_NOTI">Érintse meg itt a letölteni kívánt javasolt alkalmazások kijelöléséhez.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">A frissítés letöltéséhez és telepítéséhez érintse meg itt.</string>
+    <string name="STR_INSTALLED_NOTI">%d telepített</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Kiegészítő tartalom telepítése</string>
+    <string name="STR_INSTALL_CAUTIONS">Vigyázat</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">A frissítés választható alkalmazásokat és tartalmakat is tartalmaz. A mobilhálózaton keresztül végzett letöltés az előfizetési csomagtól függően további költséggel járhat.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Letöltve.</string>
+    <string name="STR_INSTALL_FORCE">Kritikus szoftverfrissítés letöltve. Az eszköz %d másodperc múlva újraindul, és megkezdi a telepítést.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">További információ</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Az alkalmazások letöltéséhez Wi-Fi-hálózatra kell csatlakozni. Kapcsolódjon egy Wi-Fi-hálózatra, és próbálja újra.</string>
+    <string name="STR_NEED_WIFI_TITLE">Nincs Wi-Fi-kapcsolat</string>
+    <string name="STR_NETWORK_FAIL">A hálózat nem érhető el. Próbálja meg később.</string>
+    <string name="STR_NO_APPS">Nincs alkalmazás</string>
+    <string name="STR_NO_CONTENT">Itt jelennek meg a szolgáltató rendelkezésre álló alkalmazásai.</string>
+    <string name="STR_NO_ITEMS">Nincs tétel</string>
+    <string name="STR_NO_ITEM_SELECTED">Nincs kiválasztott tétel.</string>
+    <string name="STR_OMC_HEADER">Szolgáltató frissítése</string>
+    <string name="STR_OMC_SIZE">Méret: %s</string>
+    <string name="STR_OMC_TITLE">Konfigurációfrissítés</string>
+    <string name="STR_OMC_VERSION">Verzió: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Szolgáltatói beállítások</string>
+    <string name="STR_PROCESS_FAIL">A feldolgozás meghiúsult.</string>
+    <string name="STR_PROVIDER_APPS">Szolgáltatói alkalmazások</string>
+    <string name="STR_REGISTERING_DEVICE">Eszköz regisztrálása…</string>
+    <string name="STR_REGISTER_FAIL">"A regisztrálás
+sikertelen."</string>
+    <string name="STR_REGISTER_SUCCESS">Eszköz regisztrálva.</string>
+    <string name="STR_RESTART_BTN_LATER">Később</string>
+    <string name="STR_RESTART_BTN_RESTART">Újraindítás</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">A szolgáltatói szoftverfrissítés telepítésének befejezéséhez újra kell indítani a telefont.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">A szolgáltatói szoftverfrissítés telepítésének befejezéséhez újra kell indítani a táblagépet.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Újraindítja?</string>
+    <string name="STR_RESTART_PHONE">Telefon újraindítása</string>
+    <string name="STR_RESTART_TABLET">Táblagép újraindítása</string>
+    <string name="STR_SELECT_ALL">Az összes alábbi alkalmazás</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Alapvető alkalmazások</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Az alábbi alkalmazások letöltése után nem számítanak fel adatforgalmi díjat.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Érintse meg alább azt az elemet, amelyről többet szeretne megtudni.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Az alkalmazásokat Wi-Fi-n keresztül fogja letölteni.</string>
+    <string name="STR_SUW_TITLE">Alkalmazások letöltése a szolgáltatótól</string>
+    <string name="STR_UPDATE_BODY1">A mobilinterneten keresztüli letöltés további költséggel járhat.</string>
+    <string name="STR_UPDATE_BODY2">A telefon a frissítés telepítése után újra fog indulni.</string>
+    <string name="STR_UPDATE_FAIL">A frissítés sikertelen. Próbálja újra.</string>
+    <string name="STR_UPDATE_HEADER1">Töltse le a legfrissebb szoftvert a szolgáltatótól, majd telepítse.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- A szoftver telepítése díjmentes.
+
+- A telepítés során az eszköz semmilyen funkciója nem használható, még a segélyhívás sem.
+
+- Visszaállhatnak az alapértelmezett kezdőképernyő-ikonok és eszközbeállítások, így a telepítés után újbóli beállításra lehet szükség.
+
+- A szoftver frissítése nem érinti az eszköz adatait és fájljait.
+
+- Ha azonban leállítja a telepítési folyamatot, mielőtt az véget érne, ez az eszköz rendellenes működéséhez és fájlvesztéshez vezethet.
+
+- Az esetleges adatvesztés megelőzésére a telepítés előtt tanácsos biztonsági másolatot készíteni a fontos adatokról."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">A szolgáltatói szoftverfrissítés telepítésének befejezéséhez indítsa újra.</string>
+    <string name="STR_UPDATING_PACKAGE">Frissítés…</string>
+    <string name="STR_USE_DATA_BTN">Adathasználat</string>
+    <string name="STR_WAIT_FOR_WIFI">"Az alkalmazás telepítése szünetel.
+Az eszköz Wi-Fi-kapcsolatra vár az alkalmazások telepítéséhez."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Várakozás Wi-Fi-re</string>
+    <string name="STR_WIDGET_DEFAULT">A szolgáltató által javasolt alkalmazások telepítése.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Letöltés…</string>
+    <string name="STR_WIDGET_INSTALLED">Telepítve.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Gomb</string>
+    <string name="WSS_STR_NO_UPDATE">Már telepítve vannak a legújabb frissítések.</string>
+</resources>

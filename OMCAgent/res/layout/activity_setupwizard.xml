@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wizard_title_top_height">
+        <ImageView android:layout_width="31.0dip" android:layout_height="31.0dip" android:layout_marginLeft="@dimen/wizard_margin_default" android:layout_marginTop="47.0dip" android:src="@drawable/setupwizard_ic_appcown" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_area" android:background="@drawable/setupwizard_header_bg01" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wizard_title_top_height_bigheader">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="152.0" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="25.0dip" android:layout_weight="25.0">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/setupwizard_appdown" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@string/STR_OMC_HEADER" />
+            <FrameLayout android:id="@id/arrow_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true">
+                <ImageView android:id="@id/arrow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/setupwizard_appdown1_vi" android:contentDescription="@string/STR_OMC_HEADER" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/setupwizard_appdown2_vi" android:contentDescription="@string/STR_OMC_HEADER" />
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="23.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/wizard_title_background_color" android:layout_width="fill_parent" android:layout_height="@dimen/wizard_title_height" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center_vertical" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/STR_SUW_TITLE" android:layout_marginStart="@dimen/wizard_margin_default" android:elevation="@dimen/wizard_title_top_elevation_shadow" style="@style/wizard_title_text" />
+    </LinearLayout>
+    <include android:id="@id/setupwizard_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_setupwizard_header_v4" />
+    <TextView android:textSize="@dimen/text_size_content" android:id="@id/additional_content_size" android:paddingTop="@dimen/activity_padding_default" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/wizard_list_margin_default" android:paddingEnd="@dimen/wizard_list_margin_default" style="@style/wizard_contents_text" />
+    <CheckBox android:theme="@android:style/Theme.DeviceDefault.InputMethod" android:id="@id/check_install_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_padding_default" android:text="@string/STR_INSTALL_ADDITIONAL_CONTENT" />
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/appItem_listView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" android:layout_weight="1.0" android:layout_marginStart="@dimen/wizard_list_margin_default" android:layout_marginEnd="@dimen/wizard_list_margin_default" layout="@layout/layout_applist_setupwizard_v4" />
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/wizard_bottom_button_height" layout="@layout/layout_setupwizard_bottom_button" />
+    </LinearLayout>
+</LinearLayout>

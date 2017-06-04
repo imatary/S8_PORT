@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/NTSTR_SETTINGS">
+        <Preference android:title="@string/NTSTR_UPDATE_CARRIER" android:key="Update" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/NTSTR_TEST">
+        <Preference android:title="@string/NTSTR_SELECT_SERVERTYPE" android:key="SelectServerType" />
+        <Preference android:title="@string/NTSTR_LOCAL_CONFIGS" android:key="Local" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_API_TEST" android:key="Api" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_CLEAR" android:key="Clear" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_INSTALL_FINISH" android:key="InstallFinish" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_DM_ADMIN" android:key="DMAdmin" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_COMPARE_STATUS" android:key="Status" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_OMC_TEST" android:key="OmcTest" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_CONFIGURATION_UPDATE_ACTIVITY" android:key="AppInstall" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_GET_MORE_APPS_ACTIVITY" android:key="GetMoreApps" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/NTSTR_STATUS">
+        <Preference android:title="@string/NTSTR_DEVICE_REGISTERED" android:key="Registeration" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_DEVICE_INFO" android:key="Device" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_SIM_INFO" android:key="SIM" android:defaultValue="false" />
+        <Preference android:title="@string/NTSTR_VERSION_INFO" android:key="Version" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

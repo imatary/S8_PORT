@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s нь Android Wear апп-ыг шинэчлэхийг шаардаж байна.</string>
+    <string name="common_android_wear_update_text">%1$s нь таныг Android Wear апп-ыг шинэчлэхээс нааш ажиллахгүй.</string>
+    <string name="common_android_wear_update_title">Андройд Зүүсгэлийг шинэчлэх</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s нь одоогоор ажиллах боломжгүй нэг болон түүнээс дээш Google Play-ын үйлчилгээнүүдийг шаардаж байна. Тусламж хэрэгтэй бол хөгжүүлэгчтэй холбоо барина уу.</string>
+    <string name="common_google_play_services_enable_button">Google Play үйлчилгээг идэвхжүүлэх</string>
+    <string name="common_google_play_services_enable_text">%1$s нь таныг Google Play үйлчилгээнүүдийг идэвхжүүлэхээс нааш ажиллахгүй.</string>
+    <string name="common_google_play_services_enable_title">Google Play үйлчилгээг идэвхжүүлэх</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s хүсэлт гаргасан</string>
+    <string name="common_google_play_services_install_button">Google Play үйлчилгээ авах</string>
+    <string name="common_google_play_services_install_text_phone">%1$s нь Google Play үйлчилгээ байгаа тохиолдолд ажилладаг бөгөөд эдгээр нь таны утсанд байхгүй байна.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s нь Google Play үйлчилгээ байгаа тохиолдолд ажилладаг бөгөөд эдгээр нь таны таблетанд байхгүй байна.</string>
+    <string name="common_google_play_services_install_title">Google Play үйлчилгээ авах</string>
+    <string name="common_google_play_services_invalid_account_text">Заасан акаунт энэ төхөөрөмж дээр байхгүй байна. Өөр акаунт сонгоно уу.</string>
+    <string name="common_google_play_services_invalid_account_title">Буруу акаунт</string>
+    <string name="common_google_play_services_needs_enabling_title">Аппликешн Google Наадаан Үйлчилгээг идэвхжүүлсэн байхыг шаардана.</string>
+    <string name="common_google_play_services_network_error_text">Google Play үйлчилгээнд холбогдохын тулд дата холболт шаардлагатай.</string>
+    <string name="common_google_play_services_network_error_title">Сүлжээний алдаа</string>
+    <string name="common_google_play_services_notification_needs_update_title">Аппликешн Google Наадаан Үйлчилгээг шинэчлэхийг шаардана.</string>
+    <string name="common_google_play_services_notification_ticker">Google Наадаан үйлчилгээний алдаа</string>
+    <string name="common_google_play_services_sign_in_failed_text">Хаягт нэвтрэхэд алдаа гарлаа. Өөр хаяг сонгоно уу.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Нэвтрэх үйлдэл амжилтгүй болсон байна.</string>
+    <string name="common_google_play_services_unknown_issue">Google Play үйлчилгээтэй холбоотой тодорхойгүй алдаа.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s нь Google Play үйлчилгээний тусламжтай ажилладаг боловч таны төхөөрөмж үүнийг дэмждэггүй. Тусламж хэрэгтэй бол үйлдвэрлэгчтэй холбогдоно уу.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play үйлчилгээ</string>
+    <string name="common_google_play_services_update_button">Шинэчлэх</string>
+    <string name="common_google_play_services_update_text">%1$s нь таныг Google Play үйлчилгээнүүдийг шинэчлэхээс нааш ажиллахгүй.</string>
+    <string name="common_google_play_services_update_title">Google Play үйлчилгээг шинэчлэх</string>
+    <string name="common_google_play_services_updating_text">%1$s нь одоогоор шинэчлэгдэж буй Google Play үйлчилгээ байхгүй тохиолдолд ажиллахгүй.</string>
+    <string name="common_google_play_services_updating_title">Google Play үйлчилгээнүүдийг шинэчилж байна</string>
+    <string name="common_open_on_phone">Утсан дээр нээх</string>
+    <string name="common_signin_button_text">Нэвтрэх</string>
+    <string name="common_signin_button_text_long">Google-р нэвтрэх:</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Нэмэлт контентийн хэмжээ: %1$s %2$s</string>
+    <string name="STR_ALL">Бүгд</string>
+    <string name="STR_APPS_DESCRIPTION">Үйлчилгээ үзүүлэгчээсээ санал болгосон хэрэглүүрүүдийг сонго.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Таны сонгосон бүх хэрэглүүрийг татаж авлаа.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Цуцлах</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Үйлчилгээ үзүүлэгчээсээ санал болгосон хэрэглүүрүүдийг сонго.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Суурилуулахыг хүсч буй хэрэглүүрүүдээ сонго.</string>
+    <string name="STR_APP_INSTALL_TITLE">Хэрэглүүрүүдийг суурилуул</string>
+    <string name="STR_APP_STATE_CANCELED">Цуцлагдсан</string>
+    <string name="STR_APP_STATE_CONNECTING">Холбогдож б.а…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Татаж авч байна…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Татаж авч чадсангүй.</string>
+    <string name="STR_APP_STATE_INSTALLED">Суурилуулсан</string>
+    <string name="STR_APP_STATE_INSTALLING">Суулгаж байна…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation failed</string>
+    <string name="STR_APP_STATE_WAITING">Хүлээж байна…</string>
+    <string name="STR_BTN_INSTALL">Суулгах</string>
+    <string name="STR_BTN_INSTALL_ALL">Бүгдийг суулга</string>
+    <string name="STR_BTN_SKIP">Алгасах</string>
+    <string name="STR_BUTTON_NEXT">Цааш</string>
+    <string name="STR_CAUTION_BODY">Татаж авсны дараа унтрааж асаагаад шинэчлэлтийг суурилуулна уу. Суурилуулалт дуустал яаралтай тусламж дуудах зэргээр утсаа ашиглах боломжгүй.</string>
+    <string name="STR_CAUTION_BODY2">Шинэчлэлтийн дараа зарим тохиргоо өгөгдмөл утга руу дахин тохируулна.</string>
+    <string name="STR_CHARING_DIALOG">Мобайл дата ашиглан татаж авбал нэмэлт төлбөр тооцогдож болно.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Мобайл дата ашиглан байршуулах уу?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Серверт холбогдож байна…</string>
+    <string name="STR_CONNECT_FAIL">Connection failed. Try later.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Шинэчлэл татан авч байна…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Татаж байна…</string>
+    <string name="STR_DOWNLOAD_FAIL">Татаж авч чадсангүй. Дараа дахин оролд.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Шинэ функцүүдийг ашиглахын тулд микро програмын шинэчлэлтийг татаж аваад суурилуулна уу.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Татаж авч чадсангүй. Дараа дахин оролд.</string>
+    <string name="STR_FAILED_NOTI">Татаж авч чадсангүй.</string>
+    <string name="STR_INITIAL_NOTI">Энд товшоод татаж авахыг санал болгох хэрэглүүрийг сонго.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Энд товшиж шинэчлэлтийг татаж аваад суурилуул.</string>
+    <string name="STR_INSTALLED_NOTI">%d суурилсан</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Нэмэлт контент суурилуулах</string>
+    <string name="STR_INSTALL_CAUTIONS">Болгоомжтой</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Энэ шинэчлэлд зарим нэмэлт хэрэглүүр, контентийг багтаана. Мобайл сүлжээгээр татаж авахад таны төлбөрийн багцаас хамаарч нэмэлт төлбөр гарч болно.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Татаж авч дууслаа</string>
+    <string name="STR_INSTALL_FORCE">Таны програм хангамжийн эгзэгтэй шинэчлэлийг татаж авсан. Таны төхөөрөмж суулгах ажиллагааг эхлэхийн тулд %d секундын дараа дахин эхэлнэ.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Илүү ихийг сурах</string>
+    <string name="STR_MEGABYTE">мб</string>
+    <string name="STR_NEED_WIFI">Wi-Fi-д холбогдоод хэрэглүүрүүдээ татаж авна уу. Wi-Fi-д холбогдооод дахин оролдоно уу.</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi холболт байхгүй</string>
+    <string name="STR_NETWORK_FAIL">Сүлжээ боломжгүй. Дараа дахин оролд.</string>
+    <string name="STR_NO_APPS">Хэрэглүүр байхгүй</string>
+    <string name="STR_NO_CONTENT">Танай үйлчилгээ үзүүлэгчээс гаргасан хэрэглүүрүүд энд харагдана.</string>
+    <string name="STR_NO_ITEMS">Зүйл байхгүй</string>
+    <string name="STR_NO_ITEM_SELECTED">Сонгосон зүйл алга</string>
+    <string name="STR_OMC_HEADER">Үйлчилгээ үзүүлэгчийн шинэчлэлт</string>
+    <string name="STR_OMC_SIZE">Хэмжээ: %s</string>
+    <string name="STR_OMC_TITLE">Тохиргоог шинэчил</string>
+    <string name="STR_OMC_VERSION">Хувилбар: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Операторын тохиргоо</string>
+    <string name="STR_PROCESS_FAIL">Боловсруулалт амжилтгүй боллоо.</string>
+    <string name="STR_PROVIDER_APPS">Үйлчилгээ үзүүлэгчийн хэрэглүүр</string>
+    <string name="STR_REGISTERING_DEVICE">Төхөөрөмжийг бүртгэж байна…</string>
+    <string name="STR_REGISTER_FAIL">Бүртгэл амжилтгүй боллоо</string>
+    <string name="STR_REGISTER_SUCCESS">Төхөөрөмж бүртгүүлсэн.</string>
+    <string name="STR_RESTART_BTN_LATER">Дараа</string>
+    <string name="STR_RESTART_BTN_RESTART">Унтрааж асаа</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Үйлчилгээ үзүүлэгчийн програм хангамжийн шинэчлэлийг суурилуулж дуусгахдаа утсаа унтрааж асаах шаардлагатай.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Үйлчилгээ үзүүлэгчийн програм хангамжийн шинэчлэлийг суурилуулж дуусгахдаа таблетаа унтрааж асаах шаардлагатай.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Унтрааж асаах уу?</string>
+    <string name="STR_RESTART_PHONE">Утсыг унтрааж асаа</string>
+    <string name="STR_RESTART_TABLET">Таблетыг унтрааж асаа</string>
+    <string name="STR_SELECT_ALL">Дараах бүх хэрэглүүр</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Үндсэн хэрэглүүрүүд</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Доорх хэрэглүүрүүдийг татаж авахад дата төлбөр гарахгүй.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Дараах зүйлийг товшоод үүний талаар нэмэлт мэдээлэл авна уу.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Хэрэглүүрүүдийг Wi-Fi-гаар татаж авна.</string>
+    <string name="STR_SUW_TITLE">Үйлчилгээ үзүүлэгчээс хэрэглүүр ав</string>
+    <string name="STR_UPDATE_BODY1">Мобайл дата ашиглан татаж авбал нэмэлт төлбөр тооцогдож болно.</string>
+    <string name="STR_UPDATE_BODY2">Шинэчлэлүүдийг суурилуулсны дараа таны утсыг унтрааж асаана.</string>
+    <string name="STR_UPDATE_FAIL">Шинэчлэл амжилтгүй. Ахин оролд.</string>
+    <string name="STR_UPDATE_HEADER1">Үйлчилгээ үзүүлэгчээс хамгийн сүүлийн програм хангамжийг татаж авч суурилуулна уу.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Та энэхүү микро програмыг суурилуулснаар төлбөр төлөхгүй.
+
+- Суурилуулалтын явцад төхөөрөмжийг ашиглах боломжгүй төдийгүй яаралтай дуудлага ч хийх боломжгүй.
+
+- Эх дэлгэцэн дээрх дүрс, төхөөрөмжийн тохиргоо нь өгөгдмөл байдалд орж, суурилуулсны дараа та дахин тохиргоо хийх шаардлага гарч болно.
+
+- Микро програмын шинэчлэлт нь төхөөрөмжи дээрх файл өгөгдлүүдэд нөлөөлөхгүй.
+
+- Гэвч суурилуулалтын явцад дуусахаас өмнө зогсоовол төхөөрөмж ажиллагаагүй бол, ингэснээр файлуудаа алдаж болзошгүй.
+
+- Санамсаргүйгээр өгөгдлөө алдахгүйн тулд чухал өгөгдлүүдээ суурилуулалтаас өмнө нөөцөлж авахыг зөвлөж байна."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Үйлчилгээ үзүүлэгчийн програм хангамжийг суурилуулж дуусгахын тулд унтрааж асаа.</string>
+    <string name="STR_UPDATING_PACKAGE">Шинэчилж байна…</string>
+    <string name="STR_USE_DATA_BTN">Дата ашигла</string>
+    <string name="STR_WAIT_FOR_WIFI">"Хэрэглүүрийн суурилуулалтыг түр зогсоолоо.
+Хэрэглүүр суурилуулахын тулд Wi-Fi-д холбогдохоор хүлээж байна."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi холбогдтол хүлээ</string>
+    <string name="STR_WIDGET_DEFAULT">Үйлчилгээ үзүүлэгчээс зөвлөж буй хэрэглүүрүүдийг суурилуул.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Татаж авч байна…</string>
+    <string name="STR_WIDGET_INSTALLED">Суулгагдсан.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Товч</string>
+    <string name="WSS_STR_NO_UPDATE">Хамгийн сүүлийн шинэчлэлүүдийг аль хэдийн суулгасан</string>
+</resources>

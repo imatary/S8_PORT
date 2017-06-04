@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">"%1$s nécessite une mise à jour de l'application Android Wear."</string>
+    <string name="common_android_wear_update_text">"%1$s ne fonctionnera pas tant que vous n'aurez pas mis à jour l'application Android Wear."</string>
+    <string name="common_android_wear_update_title">Mettre à jour Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">"%1$s nécessite un ou plusieurs services Google Play qui ne sont pas disponibles actuellement. Veuillez contacter le développeur pour obtenir de l'aide."</string>
+    <string name="common_google_play_services_enable_button">Activer services Google Play</string>
+    <string name="common_google_play_services_enable_text">"%1$s ne fonctionnera pas tant que vous n'aurez pas activé les services Google Play."</string>
+    <string name="common_google_play_services_enable_title">Activer les services Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">"Notification issue de l'application \"%1$s\""</string>
+    <string name="common_google_play_services_install_button">Installer services Google Play</string>
+    <string name="common_google_play_services_install_text_phone">%1$s ne fonctionnera pas sans les services Google Play, qui ne sont pas installés sur votre téléphone.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s ne fonctionnera pas sans les services Google Play, qui ne sont pas installés sur votre tablette.</string>
+    <string name="common_google_play_services_install_title">Installer les services Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">"Le compte indiqué n'existe pas sur cet appareil. Veuillez sélectionner un autre compte."</string>
+    <string name="common_google_play_services_invalid_account_title">Compte erroné</string>
+    <string name="common_google_play_services_needs_enabling_title">"Une application demande l'activation des services Google Play."</string>
+    <string name="common_google_play_services_network_error_text">"Vous devez disposer d'une connexion de données pour utiliser les services Google Play."</string>
+    <string name="common_google_play_services_network_error_title">Erreur réseau</string>
+    <string name="common_google_play_services_notification_needs_update_title">Une application demande la mise à jour des services Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Erreur liée aux services Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Erreur lors de la connexion au compte indiqué. Veuillez en sélectionner un autre.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Échec de la connexion</string>
+    <string name="common_google_play_services_unknown_issue">Problème inconnu avec les services Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s dépend des services Google Play, qui ne sont pas compatibles avec votre appareil. Veuillez contacter le fabricant pour obtenir de l'aide."</string>
+    <string name="common_google_play_services_unsupported_title">Services Google Play</string>
+    <string name="common_google_play_services_update_button">Mettre à jour</string>
+    <string name="common_google_play_services_update_text">"%1$s ne fonctionnera pas tant que vous n'aurez pas mis à jour les services Google Play."</string>
+    <string name="common_google_play_services_update_title">Mettre à jour les services Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s ne fonctionnera pas sans les services Google Play, qui sont en cours de mise à jour.</string>
+    <string name="common_google_play_services_updating_title">Mise à jour des services Google Play</string>
+    <string name="common_open_on_phone">Ouvrir sur le téléphone</string>
+    <string name="common_signin_button_text">Connexion</string>
+    <string name="common_signin_button_text_long">Se connecter avec Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Taille du contenu supplémentaire : %1$s %2$s</string>
+    <string name="STR_ALL">Tout</string>
+    <string name="STR_APPS_DESCRIPTION">Sélectionnez les applications recommandées par votre opérateur.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Toutes vos applications sélectionnées ont été téléchargées.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Annuler</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Sélectionnez les applications recommandées par votre opérateur.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Sélectionnez les applications que vous souhaitez installer.</string>
+    <string name="STR_APP_INSTALL_TITLE">"Installation d'applications"</string>
+    <string name="STR_APP_STATE_CANCELED">Annulé(s)</string>
+    <string name="STR_APP_STATE_CONNECTING">Connexion…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Téléchargement…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Le téléchargement a échoué.</string>
+    <string name="STR_APP_STATE_INSTALLED">Installée</string>
+    <string name="STR_APP_STATE_INSTALLING">Installation …</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">"Échec de l'installation"</string>
+    <string name="STR_APP_STATE_WAITING">Patientez…</string>
+    <string name="STR_BTN_INSTALL">Installer</string>
+    <string name="STR_BTN_INSTALL_ALL">Tout installer</string>
+    <string name="STR_BTN_SKIP">Ignorer</string>
+    <string name="STR_BUTTON_NEXT">Suivant</string>
+    <string name="STR_CAUTION_BODY">"Après le téléchargement, redémarrez pour installer la mise à jour. Vous ne pourrez pas utiliser votre téléphone, même pour effectuer des appels d'urgence, tant que l'installation n'est pas terminée."</string>
+    <string name="STR_CAUTION_BODY2">"Après la mise à jour, certains paramètres risquent d'être réinitialisés avec leur valeur par défaut."</string>
+    <string name="STR_CHARING_DIALOG">Le téléchargement via les données mobiles peut entraîner des frais supplémentaires.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Télécharger via les données mobiles ?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Connexion au serveur</string>
+    <string name="STR_CONNECT_FAIL">Échec de connexion. Essayez plus tard.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Téléchargement des mises à jour…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Téléch…</string>
+    <string name="STR_DOWNLOAD_FAIL">Échec de téléchargement. Essayez plus tard.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Pour utiliser les dernières fonctions, téléchargez et installez cette mise à jour du micrologiciel.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Échec de téléchargement. Essayez plus tard.</string>
+    <string name="STR_FAILED_NOTI">Le téléchargement a échoué.</string>
+    <string name="STR_INITIAL_NOTI">Appuyez ici pour sélectionner les applications recommandées pour le téléchargement.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Appuyez ici pour télécharger et installer la mise à jour.</string>
+    <string name="STR_INSTALLED_NOTI">%d applications installées</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Installer un contenu supplémentaire</string>
+    <string name="STR_INSTALL_CAUTIONS">Avertissement</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Cette mise à jour inclut des applications et du contenu facultatifs. Le téléchargement via les réseaux mobiles peut entraîner des frais supplémentaires en fonction de votre forfait.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Téléchargement terminé</string>
+    <string name="STR_INSTALL_FORCE">"Votre mise à jour logicielle critique a été téléchargée. Votre appareil va redémarrer dans %d secondes pour démarrer l'installation."</string>
+    <string name="STR_KILOBYTE">Ko</string>
+    <string name="STR_LINK_LEARNMORE">"Plus d'infos"</string>
+    <string name="STR_MEGABYTE">Mo</string>
+    <string name="STR_NEED_WIFI">Vous devez être connecté au Wi-Fi pour télécharger des applications. Connectez-vous au Wi-Fi, puis réessayez.</string>
+    <string name="STR_NEED_WIFI_TITLE">Aucune connexion Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Réseau non disponible. Réessayez plus tard.</string>
+    <string name="STR_NO_APPS">Aucune application</string>
+    <string name="STR_NO_CONTENT">Les applications disponibles lancées par votre opérateur seront affichées ici.</string>
+    <string name="STR_NO_ITEMS">Aucun élément</string>
+    <string name="STR_NO_ITEM_SELECTED">Aucun élément sélectionné.</string>
+    <string name="STR_OMC_HEADER">"Mise à jour de l'opérateur"</string>
+    <string name="STR_OMC_SIZE">Taille : %s</string>
+    <string name="STR_OMC_TITLE">Mise à jour configuration</string>
+    <string name="STR_OMC_VERSION">Version : %s</string>
+    <string name="STR_OPERATOR_SETTINGS">"Paramètres de l'opérateur"</string>
+    <string name="STR_PROCESS_FAIL">Échec du traitement.</string>
+    <string name="STR_PROVIDER_APPS">"Applications de l'opérateur"</string>
+    <string name="STR_REGISTERING_DEVICE">"Enregistrement de l'appareil…"</string>
+    <string name="STR_REGISTER_FAIL">"Échec de l'enregistrement."</string>
+    <string name="STR_REGISTER_SUCCESS">Appareil enregistré</string>
+    <string name="STR_RESTART_BTN_LATER">Plus tard</string>
+    <string name="STR_RESTART_BTN_RESTART">Redémarrer</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">"Pour terminer l'installation de la mise à jour logicielle de votre opérateur, vous devez redémarrer le téléphone."</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">"Pour terminer l'installation de la mise à jour logicielle de votre opérateur, vous devez redémarrer la tablette."</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Redémarrer ?</string>
+    <string name="STR_RESTART_PHONE">Redémarrage du téléphone</string>
+    <string name="STR_RESTART_TABLET">Redémarrage de la tablette</string>
+    <string name="STR_SELECT_ALL">Toutes les applications suivantes</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Applications essentielles</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">"Aucuns frais de données ne s'appliquent pour le téléchargement des applications ci-dessous."</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Appuyez sur un élément ci-dessous pour en savoir plus dessus.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Les applications vont être téléchargées via Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">"Obtenez les applications de l'opérateur"</string>
+    <string name="STR_UPDATE_BODY1">Le téléchargement via les données mobiles peut entraîner des frais supplémentaires.</string>
+    <string name="STR_UPDATE_BODY2">"Votre téléphone va redémarrer après l'installation de la mise à jour."</string>
+    <string name="STR_UPDATE_FAIL">Echec de la mise à jour. Réessayez.</string>
+    <string name="STR_UPDATE_HEADER1">Téléchargez la dernière version du logiciel auprès de votre opérateur et installez-la.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- L'installation de ce micrologiciel ne sera pas facturée.
+
+- Pendant l'installation, votre appareil sera indisponible, même pour les appels d'urgence.
+
+- Les icônes de l'écran d'accueil et les paramètres de l'appareil risquent d'être rétablis par défaut et devront peut-être être reconfigurés après l'installation.
+
+- La mise à jour du micrologiciel ne devrait pas affecter les fichiers et les données de votre appareil.
+
+- En revanche, si vous arrêtez l'installation avant qu'elle ne soit terminée, votre appareil risque de ne pas fonctionner correctement et vous risquez de perdre vos fichiers.
+
+- Pour éviter toute perte de données inattendue, nous vous recommandons de sauvegarder vos données importantes avant l'installation."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">"Redémarrez pour terminer l'installation de la mise à jour logicielle de votre opérateur."</string>
+    <string name="STR_UPDATING_PACKAGE">Mise à jour…</string>
+    <string name="STR_USE_DATA_BTN">Utiliser les données</string>
+    <string name="STR_WAIT_FOR_WIFI">"L'installation des applications a été mise en pause.
+Attente d'une connexion Wi-Fi pour procéder à l'installation."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Attendre connexion Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Installez les applications recommandées par votre opérateur.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Téléchargement…</string>
+    <string name="STR_WIDGET_INSTALLED">Installée</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Bouton</string>
+    <string name="WSS_STR_NO_UPDATE">Les dernières mises à jour ont déjà été installées.</string>
+</resources>

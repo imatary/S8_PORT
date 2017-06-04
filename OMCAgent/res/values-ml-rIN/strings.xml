@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s എന്നതിന് Android Wear അപ്ലിക്കേഷനിലേക്ക് അപ്‌ഡേറ്റ് ആവശ്യമാണ്.</string>
+    <string name="common_android_wear_update_text">നിങ്ങൾ Android Wear അപ്ലിക്കേഷൻ അപ്‌ഡേറ്റുചെയ്യാത്തിടത്തോളം %1$s പ്രവർത്തിക്കില്ല.</string>
+    <string name="common_android_wear_update_title">Android Wear അപ്‌ഡേറ്റുചെയ്യുക</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s എന്നതിന് നിലവിൽ ലഭ്യമല്ലാത്ത ഒന്നോ അതിൽക്കൂടുതലോ Google Play സേവനങ്ങൾ ആവശ്യമാണ്. സഹായത്തിന് ഡവലപ്പറെ ബന്ധപ്പെടുക.</string>
+    <string name="common_google_play_services_enable_button">Google Play സേവനങ്ങൾ പ്രവർത്തനക്ഷമമാക്കുക</string>
+    <string name="common_google_play_services_enable_text">നിങ്ങൾ Google Play സേവനങ്ങൾ പ്രവർത്തനക്ഷമമാക്കുന്നില്ലെങ്കിൽ %1$s പ്രവർത്തിയ്‌ക്കില്ല.</string>
+    <string name="common_google_play_services_enable_title">Google Play സേവനങ്ങൾ പ്രവർത്തനക്ഷമമാക്കുക</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s അഭ്യർത്ഥിച്ചത്</string>
+    <string name="common_google_play_services_install_button">Google Play സേവനങ്ങൾ നേടുക</string>
+    <string name="common_google_play_services_install_text_phone">നിങ്ങളുടെ ഫോണിൽ നിന്നും നഷ്‌ടപ്പെട്ട Google Play സേവനങ്ങളില്ലാതെ %1$s പ്രവർത്തിയ്‌ക്കില്ല.</string>
+    <string name="common_google_play_services_install_text_tablet">നിങ്ങളുടെ ടാബ്‌ലെറ്റിൽ നിന്നും നഷ്‌ടപ്പെട്ട Google Play സേവനങ്ങളില്ലാതെ %1$s പ്രവർത്തിയ്‌ക്കില്ല.</string>
+    <string name="common_google_play_services_install_title">Google Play സേവനങ്ങൾ നേടുക</string>
+    <string name="common_google_play_services_invalid_account_text">വ്യക്തമാക്കിയ അക്കൗണ്ട് ഈ ഉപകരണത്തിൽ നിലവിലില്ല. മറ്റൊരു അക്കൗണ്ട് തിരഞ്ഞെടുക്കുക.</string>
+    <string name="common_google_play_services_invalid_account_title">അക്കൗണ്ട് അസാധുവാണ്</string>
+    <string name="common_google_play_services_needs_enabling_title">ഒരു അപ്ലിക്കേഷന് Google Play സേവനങ്ങൾ പ്രവർത്തനക്ഷമമാക്കേണ്ടതുണ്ട്.</string>
+    <string name="common_google_play_services_network_error_text">Google Play സേവനങ്ങളിലേയ്ക്ക് കണക്റ്റുചെയ്യുന്നതിന് ഒരു ഡാറ്റ കണക്ഷൻ ആവശ്യമാണ്.</string>
+    <string name="common_google_play_services_network_error_title">നെറ്റ്‌വർക്ക് പിശക്</string>
+    <string name="common_google_play_services_notification_needs_update_title">ഒരു അപ്ലിക്കേഷന് Google Play സേവനങ്ങൾ അപ്‌ഡേറ്റുചെയ്യേണ്ടതുണ്ട്.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play സേവനങ്ങളിലെ പിശക്</string>
+    <string name="common_google_play_services_sign_in_failed_text">നിർദ്ദിഷ്‌ട അക്കൗണ്ടിൽ സൈൻ ഇൻ ചെയ്യുന്നതിൽ പിശക്. മറ്റൊരു അക്കൗണ്ട് തിരഞ്ഞെടുക്കുക.</string>
+    <string name="common_google_play_services_sign_in_failed_title">സൈൻ ഇൻ പരാജയപ്പെട്ടു</string>
+    <string name="common_google_play_services_unknown_issue">Google Play സേവനങ്ങളിലെ അജ്ഞാത പ്രശ്‌നം.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ആശ്രയിക്കുന്ന Google Play സേവനങ്ങളെ നിങ്ങളുടെ ഉപകരണം പിന്തുണയ്‌ക്കുന്നില്ല. സഹായത്തിനായി നിർമ്മാതാവിനെ ബന്ധപ്പെടുക.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play സേവനങ്ങൾ</string>
+    <string name="common_google_play_services_update_button">അപ്‌ഡേറ്റുചെയ്യുക</string>
+    <string name="common_google_play_services_update_text">നിങ്ങൾ Google Play സേവനങ്ങൾ അപ്‌ഡേറ്റുചെയ്‌തില്ലെങ്കിൽ %1$s പ്രവർത്തിക്കില്ല.</string>
+    <string name="common_google_play_services_update_title">Google Play സേവനങ്ങൾ അപ്‌ഡേറ്റുചെയ്യുക</string>
+    <string name="common_google_play_services_updating_text">%1$s, നിലവിൽ അപ്‌ഡേറ്റുചെയ്യുന്ന Google Play സേവനങ്ങൾ ഇല്ലാതെ പ്രവർത്തിക്കില്ല.</string>
+    <string name="common_google_play_services_updating_title">Google Play സേവനങ്ങൾ അപ്‌ഡേറ്റുചെയ്യുകയാണ്</string>
+    <string name="common_open_on_phone">ഫോണിൽ തുറക്കുക</string>
+    <string name="common_signin_button_text">സൈൻ ഇൻ ചെയ്യുക</string>
+    <string name="common_signin_button_text_long">Google ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">അധിക ഉള്ളടക്ക വലുപ്പം: %1$s %2$s</string>
+    <string name="STR_ALL">എല്ലാം</string>
+    <string name="STR_APPS_DESCRIPTION">നിങ്ങളുടെ സേവന ദാതാവ് ശുപാർശ ചെയ്യുന്ന ആപ്ലിക്കേഷനുകൾ തിരഞ്ഞെടുക്കുക.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">നിങ്ങളുടെ തിരഞ്ഞെടുത്ത എല്ലാ ആപ്ലിക്കേഷനുകളും ഡൗൺലോഡ് ചെയ്യപ്പെട്ടു.</string>
+    <string name="STR_APP_BUTTON_CANCEL">റദ്ദാക്കുക</string>
+    <string name="STR_APP_BUTTON_OK">ശരി</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">നിങ്ങളുടെ സേവന ദാതാവ് ശുപാർശ ചെയ്യുന്ന ആപ്ലിക്കേഷനുകൾ തിരഞ്ഞെടുക്കുക.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">നിങ്ങൾക്ക് ഇൻസ്റ്റാൾ ചെയ്യേണ്ട ആപ്ലിക്കേഷനുകൾ തിരഞ്ഞെടുക്കുക.</string>
+    <string name="STR_APP_INSTALL_TITLE">ആപ്ലിക്കേഷനുകൾ ഇൻസ്റ്റാൾ ചെയ്യുക</string>
+    <string name="STR_APP_STATE_CANCELED">റദ്ദാക്കപ്പെട്ടവ</string>
+    <string name="STR_APP_STATE_CONNECTING">ബന്ധിപ്പിക്കുന്നു…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ഡൗൺലോഡ് ചെയ്യുന്നു…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ഡൌണ്‍‌ലോഡ് ലഭ്യമല്ല.</string>
+    <string name="STR_APP_STATE_INSTALLED">ഇൻസ്റ്റാൾ ചെയ്തു</string>
+    <string name="STR_APP_STATE_INSTALLING">ഇന്‍സ്റ്റാളുചെയ്യുന്നു…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">ഇന്‍‌സ്റ്റാള്‍ ചെയ്യൽ പരാജയപ്പെട്ടു</string>
+    <string name="STR_APP_STATE_WAITING">വെയ്റ്റിംഗ്…</string>
+    <string name="STR_BTN_INSTALL">ഇന്‍സ്റ്റാള്‍</string>
+    <string name="STR_BTN_INSTALL_ALL">എല്ലാം ഇന്‍സ്റ്റാള്‍ചെയ്യുക</string>
+    <string name="STR_BTN_SKIP">ഒഴിവാക്കുക</string>
+    <string name="STR_BUTTON_NEXT">അടുത്തത്</string>
+    <string name="STR_CAUTION_BODY">ഡൗൺലോഡ് ചെയ്തുകഴിഞ്ഞാൽ, അപ്ഡേറ്റ് ഇൻസ്റ്റാൾ ചെയ്യുന്നതിന് പുനരാരംഭിക്കുക. ഇൻസ്റ്റാൾ ചെയ്യൽ പൂർത്തിയാകുന്നതുവരെ അടിയന്തിര കോളുകൾ ചെയ്യാനായി പോലും നിങ്ങളുടെ ഫോൺ ഉപയോഗിക്കാനാവില്ല.</string>
+    <string name="STR_CAUTION_BODY2">അപ്ഡേറ്റിന് ശേഷം, ചില ക്രമീകരണങ്ങൾ അവയുടെ ഡിഫോൾട്ട് മൂല്യങ്ങളിലേക്ക് പുനഃക്രമീകരിക്കപ്പെട്ടേക്കാം.</string>
+    <string name="STR_CHARING_DIALOG">മൊബൈൽ ഡാറ്റ ഉപയോഗിച്ച് ഡൗൺലോഡ് ചെയ്യുന്നത് അധിക നിരക്കുകൾക്ക് ഇടയാക്കിയേക്കാം.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">മൊബൈൽ ഡാറ്റ ഉപയോഗിച്ച് ഡൗൺലോഡ് ചെയ്യണോ?</string>
+    <string name="STR_CONNECTING_TO_SERVER">സെര്‍വറിലേക്ക് കണക്ട് ചെയ്യുന്നു…</string>
+    <string name="STR_CONNECT_FAIL">കണക്ഷന്‍ പരാജയപ്പെട്ടു. പിന്നീട് ശ്രമിക്കുക</string>
+    <string name="STR_DOWNLOADING_PACKAGE">അപ്ഡേറ്റുകൾ ഡൗൺലോഡ് ചെയ്യുന്നു…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ഡൗണ്‍‌ലോഡിംഗ്…</string>
+    <string name="STR_DOWNLOAD_FAIL">ഡൗണ്‍‌ലോഡ് പരാജയപ്പെട്ടു. പിന്നീട് ശ്രമിക്കുക.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">എറ്റവും പുതിയ സവിശേഷതകൾ ഉപയോഗിക്കുന്നതിന്, ഈ ഫേംവെയർ അപ്ഡേറ്റ് ഡൗൺലോഡ് ചെയ്ത് ഇൻസ്റ്റാൾ ചെയ്യുക.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ഡൗണ്‍‌ലോഡ് പരാജയപ്പെട്ടു. പിന്നീട് ശ്രമിക്കുക.</string>
+    <string name="STR_FAILED_NOTI">ഡൗണ്‍‌ലോഡ് ലഭ്യമല്ല.</string>
+    <string name="STR_INITIAL_NOTI">ഡൗൺലോഡ് ചെയ്യാനുള്ള ശുപാർശിത ആപ്ലിക്കേഷനുകൾ തിരഞ്ഞെടുക്കുന്നതിന് ഇവിടെ സ്പർശിക്കുക.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">അപ്‍ഡേറ്റ് ഡൗൺലോഡ് ചെയ്ത് ഇന്‍‌സ്റ്റാള്‍ ചെയ്യുന്നതിന് ഇവിടെ സ്പർശിക്കുക.</string>
+    <string name="STR_INSTALLED_NOTI">%d ഇൻസ്റ്റാൾ ചെയ്തു</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">അധിക ഉള്ളടക്കം ഇൻസ്റ്റാള്‍ ചെയ്യുക</string>
+    <string name="STR_INSTALL_CAUTIONS">മുന്നറിയിപ്പ്</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">ഈ അപ്ഡേറ്റിൽ ഏതാനും ഐച്ഛികപര ആപ്ലിക്കേഷനുകളും ഉള്ളടക്കവും ഉൾപ്പെടുന്നു. മൊബൈൽ നെറ്റ്‌വർക്കുകൾ വഴി ഡൗൺലോഡ് ചെയ്യുന്നത് നിങ്ങളുടെ പണമടയ്ക്കൽ പ്ലാനിന് അനുസൃതമായ അധിക നിരക്കുകൾക്ക് ഇടയാക്കിയേക്കാം.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ഡൗണ്‍‌ലോഡ് ചെയ്തു.</string>
+    <string name="STR_INSTALL_FORCE">നിങ്ങളുടെ സുപ്രധാന സോഫ്റ്റ്‌വെയർ അപ്‌ഡേറ്റ് ഡൗൺലോഡ് ചെയ്യപ്പെട്ടു. ഇന്‍സ്റ്റാള്‍ചെയ്യല്‍ ആരംഭിക്കുന്നതിനായി %d സെക്കന്‍റില്‍ ഉപകരണം പുനഃരാരംഭിക്കും.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">കൂടുതലറിയുക</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">ആപ്ലിക്കേഷനുകൾ ഡൗൺലോഡ് ചെയ്യുന്നതിന് നിങ്ങൾ Wi-Fi-ലേക്ക് ബന്ധിപ്പിക്കേണ്ടതാണ്. Wi-Fi-ലേക്ക് ബന്ധിപ്പിച്ച് വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi കണക്ഷൻ ഒന്നുമില്ല</string>
+    <string name="STR_NETWORK_FAIL">നെറ്റ്‌വര്‍ക്ക് ലഭ്യമല്ല. പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="STR_NO_APPS">ആപ്ലിക്കേഷനുകൾ ഒന്നുമില്ല</string>
+    <string name="STR_NO_CONTENT">നിങ്ങളുടെ സേവന ദാതാവ് പുറത്തിറക്കിയിട്ടുള്ള ലഭ്യമായ ആപ്ലിക്കേഷനുകളെ ഇവിടെ കാണിക്കും.</string>
+    <string name="STR_NO_ITEMS">ഇനങ്ങളൊന്നുമില്ല</string>
+    <string name="STR_NO_ITEM_SELECTED">ഇനങ്ങളൊന്നും തിരഞ്ഞെടുത്തിട്ടില്ല.</string>
+    <string name="STR_OMC_HEADER">സേവന ദാതാവിന്‍റെ അപ്ഡേറ്റ്</string>
+    <string name="STR_OMC_SIZE">വലുപ്പം: %s</string>
+    <string name="STR_OMC_TITLE">കോണ്‍‌ഫിഗറേഷൻ അപ്ഡേറ്റ്</string>
+    <string name="STR_OMC_VERSION">പതിപ്പ്: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">ഓപ്പറേറ്റർ ക്രമീകരണങ്ങൾ</string>
+    <string name="STR_PROCESS_FAIL">പ്രോസസ്സിംഗ്‌ പരാജയപ്പെട്ടു.</string>
+    <string name="STR_PROVIDER_APPS">സേവന ദാതാവിന്‍റെ ആപ്ലിക്കേഷനുകൾ</string>
+    <string name="STR_REGISTERING_DEVICE">ഉപകരണം രജിസ്റ്റര്‍ ചെയ്യുന്നു…</string>
+    <string name="STR_REGISTER_FAIL">രജിസ്ട്രേഷന്‍ പരാജയപ്പെട്ടു.</string>
+    <string name="STR_REGISTER_SUCCESS">ഉപകരണം രജിസ്റ്റര്‍ ചെയ്തു.</string>
+    <string name="STR_RESTART_BTN_LATER">പിന്നീട്</string>
+    <string name="STR_RESTART_BTN_RESTART">പുനരാരംഭിക്കുക</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">നിങ്ങളുടെ സേവന ദാതാവിന്‍റെ സോഫ്റ്റ്‌വെയർ അപ്ഡേറ്റ് ഇൻസ്റ്റാൾ ചെയ്യൽ പൂർത്തിയാക്കുന്നതിന്, നിങ്ങളുടെ ഫോൺ പുനരാരംഭിക്കേണ്ടതാവശ്യമാണ്.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">നിങ്ങളുടെ സേവന ദാതാവിന്‍റെ സോഫ്റ്റ്‌വെയർ അപ്ഡേറ്റ് ഇൻസ്റ്റാൾ ചെയ്യൽ പൂർത്തിയാക്കുന്നതിന്, നിങ്ങളുടെ ടാബ്‌ലറ്റ് പുനരാരംഭിക്കേണ്ടതാവശ്യമാണ്.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">പുനരാരംഭിക്കണോ?</string>
+    <string name="STR_RESTART_PHONE">ഫോൺ പുനരാരംഭിക്കുക</string>
+    <string name="STR_RESTART_TABLET">ടാബ്‌ലറ്റ് പുനരാരംഭിക്കുക</string>
+    <string name="STR_SELECT_ALL">ഇനിപ്പറയുന്ന എല്ലാ ആപ്ലിക്കേഷനുകളും</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">അത്യന്താപേക്ഷിത ആപ്പുകൾ</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">താഴെയുള്ള ആപ്ലിക്കേഷനുകൾ ഡൗൺലോഡ് ചെയ്യുന്നതിന് ഡാറ്റാ നിരക്കുകൾ ഒന്നും ബാധകമല്ല.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">താഴെയുള്ള ഒരു ഇനത്തെ കുറിച്ച് കൂടുതലറിയുന്നതിന് അതിൽ സ്പർശിക്കുക.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Wi-Fi മുഖേന ആപ്ലിക്കേഷനുകൾ ഡൗൺലോഡ് ചെയ്യപ്പെടും.</string>
+    <string name="STR_SUW_TITLE">സേവന ദാതാവിൽ നിന്ന് ആപ്ലിക്കേഷനുകൾ നേടുക</string>
+    <string name="STR_UPDATE_BODY1">മൊബൈൽ ഡാറ്റ ഉപയോഗിച്ച് ഡൗൺലോഡ് ചെയ്യുന്നത് അധിക നിരക്കുകൾക്ക് ഇടയാക്കിയേക്കാം.</string>
+    <string name="STR_UPDATE_BODY2">അപ്‌ഡേറ്റ് ഇൻസ്റ്റാൾ ചെയ്തുകഴിഞ്ഞാൽ നിങ്ങളുടെ ഫോൺ പുനരാരംഭിക്കും.</string>
+    <string name="STR_UPDATE_FAIL">അപ്‌ഡേറ്റ് പരാജയപ്പെട്ടു. വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="STR_UPDATE_HEADER1">നിങ്ങളുടെ സേവന ദാതാവിന്‍റെ ഏറ്റവും പുതിയ സോഫ്റ്റ്‌വെയർ ഡൗൺലോഡ് ചെയ്ത് ഇൻസ്റ്റാൾ ചെയ്യുക.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- ഈ ഫേംവെയർ ഇൻസ്റ്റാൾ ചെയ്യലിന് നിങ്ങളിൽ നിന്ന് പണമീടാക്കില്ല.
+
+- ഇൻസ്റ്റാൾ ചെയ്യലിനിടയിൽ, നിങ്ങളുടെ ഉപകരണം അടിയന്തിര കോളുകൾക്കായി പോലും ഉപയോഗിക്കാനാവില്ല.
+
+- ഇൻസ്റ്റാൾ ചെയ്യലിന് ശേഷം ഹോം സ്ക്രീനിലെ ഐക്കണുകളും ഉപകരണ ക്രമീകരണങ്ങളും അവയുടെ ഡിഫോൾട്ടിലേക്ക് പുനഃക്രമീകരിക്കപ്പെട്ടേക്കാവുന്നതും വീണ്ടും കോൺഫിഗർ ചെയ്യേണ്ടി വന്നേക്കാവുന്നതുമാണ്.
+
+- നിങ്ങളുടെ ഉപകരണത്തിലെ ഫയലുകളെയും ഡാറ്റയെയും ഒരു ഫേംവെയർ അപ്ഡേറ്റ് ഹനിക്കില്ല.
+
+- എന്നിരുന്നാലും, ഇൻസ്റ്റാൾ ചെയ്യൽ പ്രക്രിയ പൂർത്തിയാകുന്നതിന് മുമ്പ് നിങ്ങൾ നിർത്തുകയാണെങ്കിൽ, നിങ്ങളുടെ ഉപകരണം സാധാരണ രീതിയിൽ പ്രവർത്തിക്കാതിരിക്കുകയോ തൽഫലമായി നിങ്ങളുടെ ഫയലുകൾ നഷ്ടപ്പെടുകയോ ചെയ്തേക്കാം.
+
+- അപ്രതീക്ഷിത ഡാറ്റാ നഷ്ടം ഒഴിവാക്കുന്നതിന്, ഇൻസ്റ്റാൾ ചെയ്യലിന് മുമ്പ് പ്രധാന ഡാറ്റയെ ബാക്കപ്പ് ചെയ്യുന്നതിന് ഞങ്ങൾ ശുപാർശ ചെയ്യുകയാണ്."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">നിങ്ങളുടെ സേവന ദാതാവിന്‍റെ സോഫ്റ്റ്‌വെയർ അപ്ഡേറ്റ് ഇൻസ്റ്റാൾ ചെയ്യുന്നത് പൂർത്തിയാക്കാൻ പുനരാരംഭിക്കുക.</string>
+    <string name="STR_UPDATING_PACKAGE">അപ്‌ഡേറ്റ് ചെയ്യുന്നു…</string>
+    <string name="STR_USE_DATA_BTN">ഡാറ്റ ഉപയോഗിക്കുക</string>
+    <string name="STR_WAIT_FOR_WIFI">"ആപ്ലിക്കേഷൻ ഇൻസ്റ്റാൾ ചെയ്യൽ തൽക്കാലം നിർത്തി.
+ആപ്ലിക്കേഷനുകൾ ഇൻസ്റ്റാൾ ചെയ്യുന്നതിന് Wi-Fi-യ്ക്കായി കാക്കുന്നു."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi-യ്ക്കായി കാക്കുക</string>
+    <string name="STR_WIDGET_DEFAULT">നിങ്ങളുടെ സേവന ദാതാവ് ശുപാർശ ചെയ്യുന്ന ആപ്ലിക്കേഷനുകൾ ഇന്‍‌സ്റ്റാള്‍ ചെയ്യുക.</string>
+    <string name="STR_WIDGET_DOWNLOADING">ഡൗൺലോഡ് ചെയ്യുന്നു…</string>
+    <string name="STR_WIDGET_INSTALLED">ഇന്‍‌സ്റ്റാളുചെയ്‌തു.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">ബട്ടൺ</string>
+    <string name="WSS_STR_NO_UPDATE">ഏറ്റവും പുതിയ അപ്ഡേറ്റുകള്‍ ഇതിനകം ഇന്‍സ്റ്റാള്‍ചെയ്തു.</string>
+</resources>

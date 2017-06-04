@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">‏%1$s نیاز دارد برنامه Android Wear به‌روزرسانی شود.</string>
+    <string name="common_android_wear_update_text">‏%1$s اجرا نمی‌شود مگر اینکه برنامه Android Wear را به‌روزرسانی کنید.</string>
+    <string name="common_android_wear_update_title">‏به‌روزرسانی Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">‏%1$s به یک یا چند سرویس Google Play نیاز دارد که در حال حاضر در دسترس نیستند. لطفاً برای دریافت کمک با برنامه‌نویس تماس بگیرید.</string>
+    <string name="common_google_play_services_enable_button">‏فعال کردن خدمات Google Play</string>
+    <string name="common_google_play_services_enable_text">‏تا زمانی که سرویس‌های Google Play را فعال نکنید، %1$s کار نمی‌کند.</string>
+    <string name="common_google_play_services_enable_title">‏فعال کردن خدمات Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">درخواست توسط %1$s</string>
+    <string name="common_google_play_services_install_button">‏دریافت خدمات Google Play</string>
+    <string name="common_google_play_services_install_text_phone">‏%1$s بدون سرویس‌های Google Play که در تلفن شما وجود ندارند، اجرا نمی‌شود.</string>
+    <string name="common_google_play_services_install_text_tablet">‏%1$s بدون سرویس‌های Google Play که در رایانه لوحی شما وجود ندارند، اجرا نمی‌شود.</string>
+    <string name="common_google_play_services_install_title">‏دریافت خدمات Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">حسابی که تعیین کردید در این دستگاه وجود ندارد. لطفاً حساب دیگری را انتخاب کنید.</string>
+    <string name="common_google_play_services_invalid_account_title">حساب نامعتبر</string>
+    <string name="common_google_play_services_needs_enabling_title">‏برنامه‌ای نیاز به فعال شدن خدمات Google Play دارد.</string>
+    <string name="common_google_play_services_network_error_text">‏برای اتصال به خدمات Google Play اتصال داده لازم است.</string>
+    <string name="common_google_play_services_network_error_title">خطای شبکه</string>
+    <string name="common_google_play_services_notification_needs_update_title">‏‫برنامه‌ای نیاز به یک به‌روزرسانی برای خدمات Google Play دارد.</string>
+    <string name="common_google_play_services_notification_ticker">‏خطا در خدمات Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">هنگام وارد شدن به سیستم حساب مشخص شده خطایی روی داد. لطفاً یک حساب دیگر انتخاب کنید.</string>
+    <string name="common_google_play_services_sign_in_failed_title">وارد سیستم نشد</string>
+    <string name="common_google_play_services_unknown_issue">‏مشکل نامشخص در خدمات Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">‏%1$s متکی بر سرویس‌های Google Play است که توسط دستگاهتان پشتیبانی نمی‌شود. برای دریافت کمک با سازنده تماس بگیرید.</string>
+    <string name="common_google_play_services_unsupported_title">‏خدمات Google Play</string>
+    <string name="common_google_play_services_update_button">به‌روزرسانی</string>
+    <string name="common_google_play_services_update_text">‏تاز مانی که سرویس‌های Google Play را به‌روزرسانی نکنید، %1$s اجرا نمی‌شود.</string>
+    <string name="common_google_play_services_update_title">‏به‌روزرسانی خدمات Google Play</string>
+    <string name="common_google_play_services_updating_text">‏%1$s بدون سرویس‌های Google Play که در حال حاضر در حال به‌روزرسانی هستند، کار نمی‌کند.</string>
+    <string name="common_google_play_services_updating_title">‏سرویس‌‌های Google Play در حال به‌روزرسانی هستند</string>
+    <string name="common_open_on_phone">باز کردن در تلفن</string>
+    <string name="common_signin_button_text">ورود به سیستم</string>
+    <string name="common_signin_button_text_long">‏ورود به سیستم با Google‎</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">اندازه محتوای اضافی: ‎%1$s %2$s</string>
+    <string name="STR_ALL">همه</string>
+    <string name="STR_APPS_DESCRIPTION">برنامه‌های توصیه شده از طرف ارائه‌دهنده سرویس خودتان را انتخاب کنید.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">همه برنامه‌های انتخابی شما دانلود شده‌اند.</string>
+    <string name="STR_APP_BUTTON_CANCEL">لغو</string>
+    <string name="STR_APP_BUTTON_OK">تأیید</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">برنامه‌های توصیه شده از طرف ارائه‌دهنده سرویس خودتان را انتخاب کنید.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">برنامه‌های مورد نظر را برای نصب انتخاب کنید.</string>
+    <string name="STR_APP_INSTALL_TITLE">نصب برنامه‌ها</string>
+    <string name="STR_APP_STATE_CANCELED">لغو شده</string>
+    <string name="STR_APP_STATE_CONNECTING">در حال اتصال…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">در حال دانلود…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">امکان دانلود وجود ندارد.</string>
+    <string name="STR_APP_STATE_INSTALLED">نصب شده</string>
+    <string name="STR_APP_STATE_INSTALLING">در حال نصب…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">نصب ناموفق بود</string>
+    <string name="STR_APP_STATE_WAITING">در انتظار…</string>
+    <string name="STR_BTN_INSTALL">نصب</string>
+    <string name="STR_BTN_INSTALL_ALL">نصب همه</string>
+    <string name="STR_BTN_SKIP">رد شدن</string>
+    <string name="STR_BUTTON_NEXT">بعدی</string>
+    <string name="STR_CAUTION_BODY">پس از دانلود، برای نصب به‌روزرسانی، راه‌اندازی مجدد کنید. تا زمانی که نصب به پایان نرسیده است نمی‌توانید از تلفن خود، حتی برای تماس اضطراری، استفاده کنید.</string>
+    <string name="STR_CAUTION_BODY2">پس از به‌روزرسانی، برخی از تنظیمات ممکن است به مقادیر پیش‌فرض خود بازنشانی شوند.</string>
+    <string name="STR_CHARING_DIALOG">دانلود از طریق اینترنت همراه ممکن است هزینه‌های اضافی دربر داشته باشد.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">با اینترنت همراه دانلود شود؟</string>
+    <string name="STR_CONNECTING_TO_SERVER">درحال اتصال به سرور…</string>
+    <string name="STR_CONNECT_FAIL">اتصال انجام نشد. بعدا امتحان کنید.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">در حال دانلود نسخه‌های به‌روز…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">درحال بارگیری…</string>
+    <string name="STR_DOWNLOAD_FAIL">بارگیری انجام نشد. بعدا امتحان کنید.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">برای استفاده از جدیدترین ویژگی‌ها، این نسخه به‌روز میان‌افزار را دانلود و نصب کنید.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">بارگیری انجام نشد. بعدا امتحان کنید.</string>
+    <string name="STR_FAILED_NOTI">امکان دانلود وجود ندارد.</string>
+    <string name="STR_INITIAL_NOTI">برای انتخاب برنامه‌های توصیه شده جهت دانلود اینجا ضربه بزنید.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">برای دانلود و نصب به‌روزرسانی، اینجا ضربه بزنید.</string>
+    <string name="STR_INSTALLED_NOTI">%d نصب شده</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">نصب محتوای اضافی</string>
+    <string name="STR_INSTALL_CAUTIONS">احتیاط</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">این نسخه به‌روز حاوی برخی برنامه‌ها و محتوای اختیاری است. دانلود از طریق شبکه‌های تلفن همراه ممکن است بسته به قرارداد پرداخت شما مشمول هزینه اضافی شود.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">دانلود شد.</string>
+    <string name="STR_INSTALL_FORCE">نسخه‌های به‌روز مهم نرم‌افزار دانلود شد. برای شروع نصب، دستگاه ‎%d ثانیه دیگر راه‌اندازی مجدد می‌شود.</string>
+    <string name="STR_KILOBYTE">کیلوبایت</string>
+    <string name="STR_LINK_LEARNMORE">بیشتر بدانید</string>
+    <string name="STR_MEGABYTE">مگابایت</string>
+    <string name="STR_NEED_WIFI">برای دانلود برنامه‌ها باید به Wi-Fi متصل شوید. به Wi-Fi متصل شده و دوباره امتحان کنید.</string>
+    <string name="STR_NEED_WIFI_TITLE">‏Wi-Fi متصل نیست</string>
+    <string name="STR_NETWORK_FAIL">شبکه در دسترس نیست. دوباره امتحان کنید.</string>
+    <string name="STR_NO_APPS">برنامه‌ای وجود ندارد</string>
+    <string name="STR_NO_CONTENT">برنامه‌های موجودی که ارائه‌دهنده سرویس شما منتشر کرده در اینجا نشان داده می‌شود.</string>
+    <string name="STR_NO_ITEMS">موردی وجود ندارد</string>
+    <string name="STR_NO_ITEM_SELECTED">موردی برای انتخاب وجود ندارد.</string>
+    <string name="STR_OMC_HEADER">به‌روزرسانی ارائه‌دهنده سرویس</string>
+    <string name="STR_OMC_SIZE">اندازه: %s</string>
+    <string name="STR_OMC_TITLE">به‌روزرسانی پیکربندی</string>
+    <string name="STR_OMC_VERSION">نسخه: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">تنظیمات اپراتور</string>
+    <string name="STR_PROCESS_FAIL">پردازش انجام نشد.</string>
+    <string name="STR_PROVIDER_APPS">برنامه‌های ارائه‌دهنده سرویس</string>
+    <string name="STR_REGISTERING_DEVICE">ثبت دستگاه…</string>
+    <string name="STR_REGISTER_FAIL">ثبت نام انجام نشد.</string>
+    <string name="STR_REGISTER_SUCCESS">دستگاه ثبت شد.</string>
+    <string name="STR_RESTART_BTN_LATER">بعداً</string>
+    <string name="STR_RESTART_BTN_RESTART">راه‌اندازی</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">برای تکمیل نصب به‌روزرسانی نرم‌افزار ارائه‌دهنده سرویس خود، باید تلفن را راه‌اندازی مجدد کنید.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">برای تکمیل نصب به‌روزرسانی نرم‌افزار ارائه‌دهنده سرویس خود، باید تبلت را راه‌اندازی مجدد کنید.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">راه‌اندازی مجدد شود؟</string>
+    <string name="STR_RESTART_PHONE">راه‌اندازی مجدد تلفن</string>
+    <string name="STR_RESTART_TABLET">راه‌اندازی مجدد تبلت</string>
+    <string name="STR_SELECT_ALL">همه برنامه‌های زیر</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">برنامه‌های اصلی</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">برای دانلود کردن برنامه‌های زیر هزینه‌ای برای اینترنت همراه کسر نمی‌شود.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">روی موردی در زیر ضربه بزنید تا اطلاعات بیشتری در مورد آن به دست آورید.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">برنامه‌ها ازطریق Wi-Fi دانلود خواهد شد.</string>
+    <string name="STR_SUW_TITLE">دریافت برنامه‌ها از ارائه‌دهنده سرویس</string>
+    <string name="STR_UPDATE_BODY1">دانلود از طریق اینترنت همراه ممکن است هزینه‌های اضافی دربر داشته باشد.</string>
+    <string name="STR_UPDATE_BODY2">تلفن شما پس از نصب به‌روزرسانی مجدداً راه‌اندازی خواهد شد.</string>
+    <string name="STR_UPDATE_FAIL">به روزرسانی انجام نشد. دوباره امتحان کنید.</string>
+    <string name="STR_UPDATE_HEADER1">جدیدترین نرم‌افزار را از ارائه‌دهنده سرویستان دانلود و نصب کنید.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- برای نصب این میان‌افزار هزینه‌ای دریافت نمی‌شود.
+
+- در حین نصب نمی‌توانید حتی برای تماس‌های اضطراری از دستگاهتان استفاده کنید.
+
+- نمادهای روی صفحه اصلی و تنظیمات دستگاه ممکن است به تنظیمات پیش‌فرض بازنشانی شده و پس از نصب نیاز به پیکربندی مجدد داشته باشند.
+
+- نسخه به‌روز میان‌افزار بر روی فایل‌ها و داده‌های دستگاه شما اثری ندارد.
+
+- با این حال اگر نصب را قبل از آنکه به پایان برسد متوقف کنید، ممکن است دستگاه درست کار نکرده و در نتیجه فایل‌ها از دست بروند.
+
+- برای جلوگیری از از دست رفتن اتفاقی داده‌ها، توصیه می‌کنیم قبل از نصب، از داده‌های مهم پشتیبان بگیرید."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">برای تکمیل نصب به‌روزرسانی نرم‌افزار ارائه‌دهنده سرویس، راه‌اندازی مجدد کنید.</string>
+    <string name="STR_UPDATING_PACKAGE">درحال بروزرسانی…</string>
+    <string name="STR_USE_DATA_BTN">استفاده از اینترنت همراه</string>
+    <string name="STR_WAIT_FOR_WIFI">"نصب برنامه موقتاً متوقف شد.
+در انتظار Wi-Fi برای نصب برنامه‌ها."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">درانتظار Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">برنامه‌های توصیه شده از طرف ارائه‌دهنده سرویس خودتان را انتخاب کنید.</string>
+    <string name="STR_WIDGET_DOWNLOADING">درحال دانلود…</string>
+    <string name="STR_WIDGET_INSTALLED">نصب شد.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">دکمه</string>
+    <string name="WSS_STR_NO_UPDATE">جدیدترین به‌روزرسانی‌ها قبلا نصب شده اند.</string>
+</resources>

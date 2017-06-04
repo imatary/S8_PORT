@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Android Wear app အတွက် %1$s သည် အဆင့်မြှင့်မွမ်းမံမှုတစ်ခု လိုအပ်၏။</string>
+    <string name="common_android_wear_update_text">"Android Wear app  အား အဆင့်မြှင့်မွမ်းမံထားခြင်းမရှိပါက %1$s သည် အလုပ်လုပ်မည် မဟုတ်ပါ။"</string>
+    <string name="common_android_wear_update_title">အန်ဒရွိုက် ဆောင်စရာကို မွမ်းမံရန်</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s သည် လက်ရှိအချိန်တွင် မရှိသေးသော Google Play ဝန်ဆောင်မှုများအား လိုအပ်သည်။ အကူအညီရယူရန်အတွက် ဆော့ဖ်ဝဲရေးသူအား ကျေးဇူးပြု၍ ဆက်သွယ်ပါ။</string>
+    <string name="common_google_play_services_enable_button">Google ပလေး ၀န်ဆောင်မှုများ ဖွင့်ရန်</string>
+    <string name="common_google_play_services_enable_text">Google Play ဝန်ဆောင်မှုများ မဖွင့်ထားပါက %1$s အလုပ်လုပ်မည် မဟုတ်ပါ။</string>
+    <string name="common_google_play_services_enable_title">Google ပလေး ၀န်ဆောင်မှုများ ဖွင့်ရန်</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s က တောင်းဆိုခဲ့သည်</string>
+    <string name="common_google_play_services_install_button">Google ပလေး ဝန်ဆောင်မှုများကို ရယူရန်</string>
+    <string name="common_google_play_services_install_text_phone">သင့်ဖုန်းတွင် ပျောက်နေသော၊ Google Play ဝန်ဆောင်မှုများ မရှိပါက %1$s အလုပ်လုပ်မည် မဟုတ်ပါ။</string>
+    <string name="common_google_play_services_install_text_tablet">သင့်တက်ဘလက်တွင် ပျောက်နေသော၊ Google Play ဝန်ဆောင်မှုများ မရှိပါက %1$s အလုပ်လုပ်မည် မဟုတ်ပါ။</string>
+    <string name="common_google_play_services_install_title">Google ပလေး ဝန်ဆောင်မှုများကို ရယူပါ။</string>
+    <string name="common_google_play_services_invalid_account_text">ဤကိရိယာမှာ ဖေါ်ပြပါ အကောင့်မရှိပါ။ ကျေးဇူးပြု၍ အခြား အကောင့်ကို ရွေးပါ။</string>
+    <string name="common_google_play_services_invalid_account_title">မမှန်သည့် အကောင့်</string>
+    <string name="common_google_play_services_needs_enabling_title">အပလီကေးှရင်း တစ်ခု အတွက် Google ပလေး ဝန်ဆောင်မှုကို ဖွင့်ပေးရန် လိုအပ်သည်။</string>
+    <string name="common_google_play_services_network_error_text">Google ပလေး ဝန်ဆောင်မှုများသို့ ဆက်သွယ်ရန် ဒေတာ ချိတ်ဆက်မှု လိုအပ်သည်။</string>
+    <string name="common_google_play_services_network_error_title">ကွန်ရက် အမှား</string>
+    <string name="common_google_play_services_notification_needs_update_title">အပလီကေးရှင်း တစ်ခု အတွက် Google ပလေး ဝန်ဆောင်မှုကို မွမ်းမံပေးရန် လိုသည်။</string>
+    <string name="common_google_play_services_notification_ticker">Google ပလေး ဝန်ဆောင်မှုများ အမှား</string>
+    <string name="common_google_play_services_sign_in_failed_text">သတ်မှတ်ထားသောအကောင့်သို့ လက်မှတ်ထိုးဝင်ရောက်ရာတွင် မှားယွင်းနေပါသည်။ ကျေးဇူးပြု၍ အခြားအကောင့်တစ်ခုကို ရွေးချယ်ပါ။</string>
+    <string name="common_google_play_services_sign_in_failed_title">လက်မှတ်ထိုးဝင်ရောက်ခြင်း မအောင်မြင်ပါ</string>
+    <string name="common_google_play_services_unknown_issue">Google ပလေး ဝန်ဆောင်မှုတွင် မသိရ ပြဿနာ ရှိနေသည်။</string>
+    <string name="common_google_play_services_unsupported_text">%1$s သည် Google Play ဝန်ဆောင်မှုများပေါ်တွင် မူတည်နေပြီး၊ သင့် စက်ကိရိယာတွင် ပံ့ပိုးထားခြင်း မရှိပါ။ အကူအညီရရန်အတွက် ထုတ်လုပ်သူအား ဆက်သွယ်ပါ။</string>
+    <string name="common_google_play_services_unsupported_title">Google ပလေး ဝန်ဆောင်မှုများ</string>
+    <string name="common_google_play_services_update_button">မွမ်းမံရန်</string>
+    <string name="common_google_play_services_update_text">Google Play ဝန်ဆောင်မှုများအား မွမ်းမံခြင်းမရှိပါက %1$s အလုပ်လုပ်မည် မဟုတ်ပါ။</string>
+    <string name="common_google_play_services_update_title">Google ပလေး ၀န်ဆောင်မှုများကို မွမ်းမံရန်</string>
+    <string name="common_google_play_services_updating_text">လက်ရှိ အဆင့်မြှင့်မွမ်းမံနေသော၊ Google Play ဝန်ဆောင်မှုများ မရှိပါက %1$s အလုပ်လုပ်မည် မဟုတ်ပါ။</string>
+    <string name="common_google_play_services_updating_title">Google Play ဝန်ဆောင်မှုများ မွမ်းမံနေစဉ်</string>
+    <string name="common_open_on_phone">ဖုန်းထဲ ဖွင့်ရန်</string>
+    <string name="common_signin_button_text">လင်မှတ်ထိုး ဝင်</string>
+    <string name="common_signin_button_text_long">Google ဖြင့် လက်မှတ်ထို ဝင်</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">ဖြည့်စွက်ပါဝင်ချက် အရွယ်အစား : %1$s %2$s</string>
+    <string name="STR_ALL">အားလုံး</string>
+    <string name="STR_APPS_DESCRIPTION">သင့်ဝန်ဆောင်မှုစီစဉ်သူက ထောက်ခံသော အက်ပ်များကို ရွေးပါ။</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">ရွေးထားသော အက်ပ်အားလုံးကို ဒေါင်းလုဒ်လုပ်ထားသည်။</string>
+    <string name="STR_APP_BUTTON_CANCEL">ပယ်ဖျက်ပါ</string>
+    <string name="STR_APP_BUTTON_OK">အိုကေ</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">သင့်ဝန်ဆောင်မှုစီစဉ်သူက ထောက်ခံသော အက်ပ်များကို ရွေးပါ။</string>
+    <string name="STR_APP_INSTALL_CONFIRM">သင်ထည့်သွင်းလိုသည့် အက်ပ်များ ရွေးချယ်ပါ။</string>
+    <string name="STR_APP_INSTALL_TITLE">အက်ပ်များ ထည့်သွင်းပါ</string>
+    <string name="STR_APP_STATE_CANCELED">ပယ်ဖျက်ပြီးပြီ</string>
+    <string name="STR_APP_STATE_CONNECTING">ချိတ်ဆက်နေဆဲ…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ဒေါင်းလုတ် လုပ်နေဆဲ…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ဒေါင်းလုတ် မအောင်မြင်ပါ။</string>
+    <string name="STR_APP_STATE_INSTALLED">ထည့်သွင်းထားသည်</string>
+    <string name="STR_APP_STATE_INSTALLING">နေရာချမှု…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">ထည့်သွင်းမှု မအောင်မြင်ပါ</string>
+    <string name="STR_APP_STATE_WAITING">စောင့်နေသည်…</string>
+    <string name="STR_BTN_INSTALL">တပ်ဆင်</string>
+    <string name="STR_BTN_INSTALL_ALL">အားလုံး ထည့်သွင်းပါ</string>
+    <string name="STR_BTN_SKIP">ကျော်ပါ</string>
+    <string name="STR_BUTTON_NEXT">နောက်ထပ်</string>
+    <string name="STR_CAUTION_BODY">ဒေါင်းလုဒ်လုပ်ပြီးလျှင် အပ်ဒိတ်ထည့်သွင်းရန် ပြန်စဖွင့်ပါ။ တပ်ဆင်မှု မပြီးမချင်း၊ အရေးပေါ်ဖုန်းများ ခေါ်ရန်အတွက်ပင် ဖုန်းကို သုံးနိုင်မည်မဟုတ်ပါ။</string>
+    <string name="STR_CAUTION_BODY2">အပ်ဒိတ်လုပ်ပြီးလျှင်၊ သတ်မှတ်ချက်အချို့ကို ၎င်းတို့၏ မူရင်းပါတန်ဖိုးများသို့ ပြန်သတ်မှတ်ပါမည်။</string>
+    <string name="STR_CHARING_DIALOG">မိုဘိုင်းဒေတာသုံး၍ ဒေါင်းလုဒ်လုပ်ခြင်းသည် နောက်ထပ် အဖိုးအခများ ကျသင့်နိုင်သည်။</string>
+    <string name="STR_CHARING_DIALOG_TITLE">မိုဘိုင်းဒေတာသုံး၍ ဒေါင်းလုဒ်လုပ်မလား?</string>
+    <string name="STR_CONNECTING_TO_SERVER">ဆာဗာသို့ ဆက်သွယ်နေပါသည်…</string>
+    <string name="STR_CONNECT_FAIL">ဆက်သွယ်မှု မအောင်မြင်ပါ။ နောက်မှ ကြိုးစားပါ။</string>
+    <string name="STR_DOWNLOADING_PACKAGE">အပ်ဒိတ်များ ဒေါင်းလုတ်လုပ်နေသည်…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ဒေါင်းလုတ်လုပ်နေသည်…</string>
+    <string name="STR_DOWNLOAD_FAIL">ဒေါင်းလုတ် မအောင်မြင်ပါ။နောက်မှ ပြန်ကြိုးစားပါ။</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">နောက်ဆုံးပေါ် အင်္ဂါရပ်များကို အသုံးပြုရန် ဤဖားမ်ဝဲအပ်ဒိတ်ကို ဒေါင်းလုတ်လုပ် ထည့်သွင်းပါ။</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ဒေါင်းလုတ် မအောင်မြင်ပါ။နောက်မှ ပြန်ကြိုးစားပါ။</string>
+    <string name="STR_FAILED_NOTI">ဒေါင်းလုတ် မအောင်မြင်ပါ</string>
+    <string name="STR_INITIAL_NOTI">ဒေါင်းလုတ်အတွက် အကြံပြုအက်ပ်များကို ရွေးရန် ဒီမှာ နှိပ်ပါ။</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">အပ်ဒိတ်ကို ဒေါင်းလုတ်လုပ်ပြီး တပ်ဆင်ရန် ဒီမှာ နှိပ်ပါ။</string>
+    <string name="STR_INSTALLED_NOTI">%d ခု တပ်ဆင်ထားသည်</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">ဖြည့်စွက်ပါဝင်ချက် ထည့်သွင်းပါ</string>
+    <string name="STR_INSTALL_CAUTIONS">သတိ</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">ဤအပ်ဒိတ်တွင် အချို့သောစိတ်ကြိုက်အက်ပ်များနှင့် ပါဝင်ချက်တို့ ပါဝင်သည်။ မိုဘိုင်းကွန်ယက်များမှတဆင့် ဒေါင်းလုတ်လုပ်ခြင်းသည် သင်၏ငွေပေးချေမှုအပေါ်တွင်မူတည်၍ ထပ်ဆောင်းအဖိုးအခများ ကုန်ကျနိုင်သည်။</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ဒေါင်းလုတ် ပြီးပါပြီ။</string>
+    <string name="STR_INSTALL_FORCE">သင့် အရေးပါသော ဆော့ဖ်ဝဲ အပ်ဒိတ် ဒေါင်းလုတ်လုပ်ပြီးပါပြီ။ တပ်ဆင်မှု စတင်ရန် %d စက္ကန့်အတွင်း သင့်ကိရိယာ ပြန်စတင်မည်။</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">ပိုမိုလေ့လာပါ</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">အက်ပ်များ ဒေါင်းလုတ်လုပ်ရန် Wi-Fi ဖြင့် ချိတ်ဆက်နေရမည်။ Wi-Fi ဖြင့် ချိတ်ဆက်ပြီး ထပ်ကြိုးစားပါ။</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi ချိတ်ဆက်မှု မရှိပါ</string>
+    <string name="STR_NETWORK_FAIL">ကွန်ယက် မရနိုင်ပါ။ နောက်မှ ထပ်ကြိုးစားပါ။</string>
+    <string name="STR_NO_APPS">အက်ပ်များ မရှိပါ</string>
+    <string name="STR_NO_CONTENT">သင့်ဝန်ဆောင်မှုပေးသူမှ ထုတ်ထားသော သုံးနိုင်သည့် အက်ပ်များကို ဤနေရာတွင် ပြပါမည်။</string>
+    <string name="STR_NO_ITEMS">အရာများ မရှိပါ</string>
+    <string name="STR_NO_ITEM_SELECTED">ရွေးထားသည့် အချင်းအရာများ မရှိပါ။</string>
+    <string name="STR_OMC_HEADER">ဝန်ဆောင်မှုစီစဉ်သူ၏ အပ်ဒိတ်</string>
+    <string name="STR_OMC_SIZE">အရွယ်အစား : %s</string>
+    <string name="STR_OMC_TITLE">သီးသန့်စီစဉ်ထားရှိမှု အပ်ဒိတ်</string>
+    <string name="STR_OMC_VERSION">ဗားရှင်း : %s</string>
+    <string name="STR_OPERATOR_SETTINGS">အော်ပရေတာ သတ်မှတ်ချက်များ</string>
+    <string name="STR_PROCESS_FAIL">လုပ်ငန်းဆောင်ရွက်မှု မအောင်မြင်ပါ။</string>
+    <string name="STR_PROVIDER_APPS">ဝန်ဆောင်မှုစီစဉ်သူ၏ အက်ပ်များ</string>
+    <string name="STR_REGISTERING_DEVICE">ကိရိယာမှတ်ပုံတင်နေပါသည်…</string>
+    <string name="STR_REGISTER_FAIL">မှတ်ပုံတင်မှု မအောင်မြင်ပါ။</string>
+    <string name="STR_REGISTER_SUCCESS">ကိရိယာကို မှတ်ပုံတင်ပြီးပါပြီ။</string>
+    <string name="STR_RESTART_BTN_LATER">နောက်မှ</string>
+    <string name="STR_RESTART_BTN_RESTART">ပြန်စဖွင့်ပါ</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">သင့်ဝန်ဆောင်မှုစီစဉ်သူ၏ ဆော့ဖ်ဝဲအပ်ဒိတ် တပ်ဆင်မှုကို အပြီးသတ်ရန်၊ ဖုန်းကို ပြန်စဖွင့်ရမည်။</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">သင့်ဝန်ဆောင်မှုစီစဉ်သူ၏ ဆော့ဖ်ဝဲအပ်ဒိတ် တပ်ဆင်မှုကို အပြီးသတ်ရန်၊ တက်ဘလက်ကို ပြန်စဖွင့်ရမည်။</string>
+    <string name="STR_RESTART_DIALOG_TITLE">ပြန်ပြန်စဖွင့်မလား?</string>
+    <string name="STR_RESTART_PHONE">ဖုန်း ပြန်စဖွင့်ပါ</string>
+    <string name="STR_RESTART_TABLET">တက်ဘလက် ပြန်စဖွင့်ပါ</string>
+    <string name="STR_SELECT_ALL">အောက်ပါ အက်ပ်များအားလုံး</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">မရှိမဖြစ် လိုအပ်သော အက်ပ်များ</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">အောက်ပါ အက်ပ်များကို ဒေါင်းလုတ်လုပ်သည့်အတွက် မည်သည့် ဒေတာခမျှ ကုန်ကျမည် မဟုတ်ပါ။</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">ထိုအိုင်တမ် အကြောင်း ပိုမိုလေ့လာရန် ၎င်းပေါ်တွင် နှိပ်ပါ။</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">အက်ပ်များကို Wi-Fi မှတဆင့် ဒေါင်းလုဒ်ဆွဲပါလိမ့်မည်။</string>
+    <string name="STR_SUW_TITLE">ဝန်ဆောင်မှုစီစဉ်သူမှ အက်ပ်ကို ရယူခြင်း</string>
+    <string name="STR_UPDATE_BODY1">မိုဘိုင်းဒေတာသုံး၍ ဒေါင်းလုဒ်လုပ်ခြင်းသည် နောက်ထပ် အဖိုးအခများ ကျသင့်နိုင်သည်။</string>
+    <string name="STR_UPDATE_BODY2">အပ်ဒိတ်ကို ထည့်သွင်းပြီးနောက် သင့်ဖုန်းကို ပိတ်ပြီး ပြန်ဖွင့်လိုက်ပါမည်။</string>
+    <string name="STR_UPDATE_FAIL">အပ်ဒိတ် မအောင်မြင်ပါ။ ပြန်ကြိုးစားပါ။</string>
+    <string name="STR_UPDATE_HEADER1">သင့်ဝန်ဆောင်မှုစီစဉ်သူမှ နောက်ဆုံးထွက်ဆော့ဖ်ဝဲကို ဒေါင်းလုတ်လုပ်ပြီး တပ်ဆင်ပါ။</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- ဤဖာမ်းဝဲကို ထည့်သွင်းမှုအတွက် သင့်ထံမှ အခကြေးငွေ ကောက်ခံမည်မဟုတ်ပါ။
+
+- ထည့်သွင်းနေစဉ် သင့်ကိရိယာကို လုံးဝ အသုံးပြုနိုင်မည်မဟုတ်ပါ၊ အရေးပေါ် ခေါ်ဆိုမှုများကိုပင် ပြုလုပ်နိုင်မည် မဟုတ်ပါ။
+
+- ပင်မဖန်သားပြင်ရှိ သင်္ကေတများနှင့် ကိရိယာသတ်မှတ်ချက်များကို မူလပုံစံသို့ ပြန်သတ်မှတ်မည်ဖြစ်ပြီး ထည့်သွင်းပြီးသည်နှင့် ပြန်လည်စီစဉ်သတ်မှတ်ရန် လိုအပ်နိုင်ပါသည်။
+
+- ဖာမ်းဝဲကို အပ်ဒိတ်လုပ်ခြင်းသည် သင့်ကိရိယာရှိ ဖိုင်များနှင့် ဒေတာကို ထိခိုက်မည်မဟုတ်ပါ။
+
+- သို့သော် ထည့်သွင်းမှု မပြီးဆုံးမီ ရပ်ဆိုင်းလိုက်ပါက သင့်ကိရိယာသည် ပုံမှန်အတိုင်း လုပ်ဆောင်တော့မည်မဟုတ်ဘဲ ရလဒ်အဖြစ် သင့်ဖိုင်များကိုလည်း ဆုံးရှုံးသွားနိုင်ပါသည်။
+
+- မျှော်လင့်မထားသော ဒေတာဆုံးရှုံးမှုမှ ရှောင်လွှဲရန် မထည့်သွင်းမီ အရေးကြီးသော ဒေတာများကို အရံသိမ်းရန် ကျွန်ုပ်တို့က အကြံပြုပါသည်။"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">သင့်ဝန်ဆောင်မှုစီစဉ်သူ၏ ဆော့ဖ်ဝဲအပ်ဒိတ် တပ်ဆင်မှုကို အပြီးသတ်ရန် ပြန်စဖွင့်ပါ။</string>
+    <string name="STR_UPDATING_PACKAGE">အပ်ဒိတ်လုပ်နေပါသည်…</string>
+    <string name="STR_USE_DATA_BTN">ဒေတာကို အသုံးပြုပါ</string>
+    <string name="STR_WAIT_FOR_WIFI">"အက်ပ်ထည့်သွင်းခြင်း ခဏရပ်နားထားပါသည်။
+အက်ပ်များကို ထည့်သွင်းရန် Wi-Fi ကိုစောင့်နေသည်။"</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi ကိုစောင့်ပါ</string>
+    <string name="STR_WIDGET_DEFAULT">သင့်ဝန်ဆောင်မှုစီစဉ်သူက ထောက်ခံသော အက်ပ်များကို ထည့်ပါ။</string>
+    <string name="STR_WIDGET_DOWNLOADING">ဒေါင်းလုတ်လုပ်နေဆဲ…</string>
+    <string name="STR_WIDGET_INSTALLED">တပ်ဆင်ပြီးပါပြီ</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">ခလုတ်</string>
+    <string name="WSS_STR_NO_UPDATE">နောက်ဆုံးပေါ်အဆင့်မြှင့်တင်ခြင်းကို ပြီးပါပြီ။</string>
+</resources>

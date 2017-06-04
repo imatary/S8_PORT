@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Additional content size: %1$s %2$s</string>
+    <string name="STR_ALL">All</string>
+    <string name="STR_APPS_DESCRIPTION">Select apps recommended by your service provider.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">All of your selected apps have been downloaded.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Cancel</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Select apps recommended by your service provider.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Select the apps you want to install.</string>
+    <string name="STR_APP_INSTALL_TITLE">Install apps</string>
+    <string name="STR_APP_STATE_CANCELED">Canceled</string>
+    <string name="STR_APP_STATE_CONNECTING">Connecting…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Downloading…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Download unavailable.</string>
+    <string name="STR_APP_STATE_INSTALLED">Installed</string>
+    <string name="STR_APP_STATE_INSTALLING">Installing…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation failed</string>
+    <string name="STR_APP_STATE_WAITING">Waiting…</string>
+    <string name="STR_BTN_INSTALL">Install</string>
+    <string name="STR_BTN_INSTALL_ALL">Install all</string>
+    <string name="STR_BTN_SKIP">Skip</string>
+    <string name="STR_BUTTON_NEXT">Next</string>
+    <string name="STR_CAUTION_BODY">"After downloading, restart to install the update. You won't be able to use your phone, even to make emergency calls, until the installation is finished."</string>
+    <string name="STR_CAUTION_BODY2">After the update, some settings may be reset to their default values.</string>
+    <string name="STR_CHARING_DIALOG">Downloading using mobile data may result in additional charges.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Download using mobile data?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Connecting to server…</string>
+    <string name="STR_CONNECT_FAIL">Connection failed. Try later.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Downloading updates…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Downloading…</string>
+    <string name="STR_DOWNLOAD_FAIL">Download failed. Try later.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">To use the latest features, download and install this firmware update.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Download failed. Try later.</string>
+    <string name="STR_FAILED_NOTI">Download unavailable.</string>
+    <string name="STR_INITIAL_NOTI">Tap here to select recommended apps for download.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Tap here to download and install the update.</string>
+    <string name="STR_INSTALLED_NOTI">%d installed</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Install additional content</string>
+    <string name="STR_INSTALL_CAUTIONS">Caution</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">This update includes some optional apps and content. Downloading via mobile networks may result in additional charges depending on your payment plan.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Downloaded.</string>
+    <string name="STR_INSTALL_FORCE">Your critical software update has been downloaded. Your <cst>device</cst> will restart in %d seconds to begin installation.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Learn more</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">You need to be connected to <cst>Wi-Fi</cst> to download apps. Connect to <cst>Wi-Fi</cst> and try again.</string>
+    <string name="STR_NEED_WIFI_TITLE">No <cst>Wi-Fi</cst> connection</string>
+    <string name="STR_NETWORK_FAIL">Network not available. Try again later.</string>
+    <string name="STR_NO_APPS">No apps</string>
+    <string name="STR_NO_CONTENT">Available apps released from your service provider will be shown here.</string>
+    <string name="STR_NO_ITEMS">No items</string>
+    <string name="STR_NO_ITEM_SELECTED">No items selected.</string>
+    <string name="STR_OMC_HEADER">Service provider update</string>
+    <string name="STR_OMC_SIZE">Size: %s</string>
+    <string name="STR_OMC_TITLE">Configuration update</string>
+    <string name="STR_OMC_VERSION">Version: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operator settings</string>
+    <string name="STR_PROCESS_FAIL">Processing failed.</string>
+    <string name="STR_PROVIDER_APPS">Service provider apps</string>
+    <string name="STR_REGISTERING_DEVICE">Registering <cst>device</cst>…</string>
+    <string name="STR_REGISTER_FAIL">Registration failed.</string>
+    <string name="STR_REGISTER_SUCCESS"><cst>Device</cst> registered.</string>
+    <string name="STR_RESTART_BTN_LATER">Later</string>
+    <string name="STR_RESTART_BTN_RESTART">Restart</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">To finish installing your service provider software update, you need to restart your phone.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">To finish installing your service provider software update, you need to restart your tablet.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Restart?</string>
+    <string name="STR_RESTART_PHONE">Restart phone</string>
+    <string name="STR_RESTART_TABLET">Restart tablet</string>
+    <string name="STR_SELECT_ALL">All of the following apps</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Essential apps</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">No data charges apply for downloading the apps below.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Tap on an item below to learn more about it.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Apps will be downloaded over <cst>Wi-Fi</cst>.</string>
+    <string name="STR_SUW_TITLE">Get apps from service provider</string>
+    <string name="STR_UPDATE_BODY1">Downloading using mobile data may result in additional charges.</string>
+    <string name="STR_UPDATE_BODY2">Your phone will restart after the update is installed.</string>
+    <string name="STR_UPDATE_FAIL">Update failed. Try again.</string>
+    <string name="STR_UPDATE_HEADER1">Download and install the latest software from your service provider.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- You will not be charged for this firmware installation.
+
+- During installation, you will not be able to use your "<cst>device</cst>" at all, even for emergency calls.
+
+- Icons on the Home screen and "<cst>device</cst>" settings may be reset to their defaults and may need to be reconfigured after installation.
+
+- A firmware update should not affect the files and data on your "<cst>device</cst>".
+
+- However, if you stop the installation process before it has finished, your "<cst>device</cst>" might not work normally and your files may be lost as a result.
+
+- To avoid unexpected data loss, we recommend that you back up important data before installation."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Restart to finish installing your service provider software update.</string>
+    <string name="STR_UPDATING_PACKAGE">Updating…</string>
+    <string name="STR_USE_DATA_BTN">Use data</string>
+    <string name="STR_WAIT_FOR_WIFI">"App installation paused.
+Waiting for "<cst>Wi-Fi</cst> to install apps.</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wait for <cst>Wi-Fi</cst></string>
+    <string name="STR_WIDGET_DEFAULT">Install apps recommended by your service provider.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Downloading…</string>
+    <string name="STR_WIDGET_INSTALLED">Installed.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Button</string>
+    <string name="WSS_STR_NO_UPDATE">The latest updates have already been installed.</string>
+</resources>

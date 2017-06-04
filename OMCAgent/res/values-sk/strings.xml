@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Aplikácia %1$s vyžaduje aktualizáciu aplikácie Android Wear.</string>
+    <string name="common_android_wear_update_text">Aplikácia %1$s bude fungovať až po aktualizácii aplikácie Android Wear.</string>
+    <string name="common_android_wear_update_title">Aktualizujte aplikáciu Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">Aplikácia %1$s vyžaduje minimálne jednu službu Google Play, ktorá v súčasnosti nie je k dispozícii. Kontaktujte príslušného vývojára a požiadajte ho o pomoc.</string>
+    <string name="common_google_play_services_enable_button">Povoliť služby Google Play</string>
+    <string name="common_google_play_services_enable_text">Aplikácia %1$s bude fungovať až po povolení služieb Google Play.</string>
+    <string name="common_google_play_services_enable_title">Povoliť služby Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Vyžiadané aplikáciou %1$s</string>
+    <string name="common_google_play_services_install_button">Inštalovať služby Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Na spustenie aplikácie %1$s sa vyžadujú služby Google Play, ktoré na telefóne nemáte.</string>
+    <string name="common_google_play_services_install_text_tablet">Na spustenie aplikácie %1$s sa vyžadujú služby Google Play, ktoré na tablete nemáte.</string>
+    <string name="common_google_play_services_install_title">Inštalovať služby Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Zadaný účet v tomto zariadení neexistuje. Vyberte iný účet.</string>
+    <string name="common_google_play_services_invalid_account_title">Neplatný účet</string>
+    <string name="common_google_play_services_needs_enabling_title">Aplikácia vyžaduje povolenie služieb Google Play.</string>
+    <string name="common_google_play_services_network_error_text">Pripojenie k službám Google Play si vyžaduje dátové pripojenie.</string>
+    <string name="common_google_play_services_network_error_title">Chyba siete</string>
+    <string name="common_google_play_services_notification_needs_update_title">Aplikácia vyžaduje aktualizáciu služieb Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Chyba služieb Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Pri prihlasovaní do určeného účtu sa vyskytla chyba. Zvoľte iný účet.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Prihlásenie zlyhalo</string>
+    <string name="common_google_play_services_unknown_issue">Neznámy problém so službami Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">Aplikácia %1$s potrebuje služby Google Play, ktoré vaše zariadenie nepodporuje. Kontaktujte príslušného výrobcu a požiadajte ho o pomoc.</string>
+    <string name="common_google_play_services_unsupported_title">Služby Google Play</string>
+    <string name="common_google_play_services_update_button">Aktualizovať</string>
+    <string name="common_google_play_services_update_text">Aplikáciu %1$s bude možné spustiť až po aktualizácii služieb Google Play.</string>
+    <string name="common_google_play_services_update_title">Aktualizovať služby Google Play</string>
+    <string name="common_google_play_services_updating_text">Na spustenie aplikácie %1$s sa vyžadujú služby Google Play, ktoré sa momentálne aktualizujú.</string>
+    <string name="common_google_play_services_updating_title">Služby Google Play sa aktualizujú</string>
+    <string name="common_open_on_phone">Otvoriť na telefóne</string>
+    <string name="common_signin_button_text">Prihlásiť sa</string>
+    <string name="common_signin_button_text_long">Prihlásiť sa do účtu Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Veľkosť ďalšieho obsahu: %1$s %2$s</string>
+    <string name="STR_ALL">Všetky</string>
+    <string name="STR_APPS_DESCRIPTION">Vyberte aplikácie odporúčané vaším operátorom.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Všetky vybraté aplikácie sa stiahli.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Zrušiť</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Vyberte aplikácie odporúčané vaším operátorom.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Vyberte aplikácie, ktoré chcete nainštalovať.</string>
+    <string name="STR_APP_INSTALL_TITLE">Inštalácia aplikácií</string>
+    <string name="STR_APP_STATE_CANCELED">Zrušené</string>
+    <string name="STR_APP_STATE_CONNECTING">Pripája sa…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Sťahuje sa…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Stiahnutie nedostupné.</string>
+    <string name="STR_APP_STATE_INSTALLED">Nainštalované</string>
+    <string name="STR_APP_STATE_INSTALLING">Inštaluje sa…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Inštalácia zlyhala</string>
+    <string name="STR_APP_STATE_WAITING">Čaká sa…</string>
+    <string name="STR_BTN_INSTALL">Inštal.</string>
+    <string name="STR_BTN_INSTALL_ALL">Inštalovať všetko</string>
+    <string name="STR_BTN_SKIP">Vynechať</string>
+    <string name="STR_BUTTON_NEXT">Ďalej</string>
+    <string name="STR_CAUTION_BODY">Po stiahnutí reštartujte telefón, aby sa nainštalovala aktualizácia. Kým sa nedokončí inštalácia, nebudete môcť používať telefón, dokonca ani na tiesňové hovory.</string>
+    <string name="STR_CAUTION_BODY2">Po aktualizácii sa môžu obnoviť predvolené hodnoty niektorých nastavení.</string>
+    <string name="STR_CHARING_DIALOG">Sťahovanie cez mobilné dátové pripojenie môže mať za následok ďalšie poplatky.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Sťahovať cez mobilné dátové pripojenie?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Pripájanie na server</string>
+    <string name="STR_CONNECT_FAIL">Spojenie zlyhalo. Skúste to neskôr.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Sťahujú sa aktualizácie…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Sťahuje sa…</string>
+    <string name="STR_DOWNLOAD_FAIL">Sťahovanie zlyhalo. Skúste to neskôr.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Stiahnite a nainštalujte túto aktualizáciu firmvéru, aby ste mohli používať najnovšie funkcie.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Sťahovanie zlyhalo. Skúste to neskôr.</string>
+    <string name="STR_FAILED_NOTI">Stiahnutie nedostupné.</string>
+    <string name="STR_INITIAL_NOTI">Ťuknutím sem môžete vybrať odporúčané aplikácie na stiahnutie.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Ťuknutím sem si stiahnite a nainštalujte túto aktualizáciu.</string>
+    <string name="STR_INSTALLED_NOTI">Nainštalované: %d</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Inštalovať ďalší obsah</string>
+    <string name="STR_INSTALL_CAUTIONS">Upozornenie</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Táto aktualizácia zahŕňa niektoré voliteľné aplikácie a obsah. Sťahovanie cez mobilné siete môže mať za následok ďalšie poplatky v závislosti od vášho tarifného programu.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Stiahnuté.</string>
+    <string name="STR_INSTALL_FORCE">Dôležitá aktualizácia softvéru sa stiahla. Zariadenie sa v priebehu %d sekúnd reštartuje, aby sa mohla začať inštalácia.</string>
+    <string name="STR_KILOBYTE">kB</string>
+    <string name="STR_LINK_LEARNMORE">Ďalšie informácie</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Pred sťahovaním aplikácií sa musíte pripojiť k sieti Wi-Fi. Pripojte sa k sieti Wi-Fi a skúste to znova.</string>
+    <string name="STR_NEED_WIFI_TITLE">Žiadne pripojenie Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Sieť nie je k dispozícii. Skúste to znova neskôr.</string>
+    <string name="STR_NO_APPS">Žiadne aplikácie</string>
+    <string name="STR_NO_CONTENT">Tu sa zobrazia dostupné aplikácie vydané vaším operátorom.</string>
+    <string name="STR_NO_ITEMS">Žiadne položky</string>
+    <string name="STR_NO_ITEM_SELECTED">Nie sú vybraté žiadne položky.</string>
+    <string name="STR_OMC_HEADER">Aktualizácia od operátora</string>
+    <string name="STR_OMC_SIZE">Veľkosť: %s</string>
+    <string name="STR_OMC_TITLE">Aktualizácia konfigurácie</string>
+    <string name="STR_OMC_VERSION">Verzia: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Nastavenia operátora</string>
+    <string name="STR_PROCESS_FAIL">Spracovanie zlyhalo.</string>
+    <string name="STR_PROVIDER_APPS">Aplikácie od operátora</string>
+    <string name="STR_REGISTERING_DEVICE">Registruje sa zariadenie…</string>
+    <string name="STR_REGISTER_FAIL">Registrácia sa nepodarila.</string>
+    <string name="STR_REGISTER_SUCCESS">Zariadenie je zaregistrované.</string>
+    <string name="STR_RESTART_BTN_LATER">Neskôr</string>
+    <string name="STR_RESTART_BTN_RESTART">Reštartovať</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Musíte reštartovať telefón, aby sa mohla dokončiť inštalácia aktualizácie softvéru od operátora.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Musíte reštartovať tablet, aby sa mohla dokončiť inštalácia aktualizácie softvéru od operátora.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Chcete reštartovať?</string>
+    <string name="STR_RESTART_PHONE">Reštartovanie telefónu</string>
+    <string name="STR_RESTART_TABLET">Reštartovanie tabletu</string>
+    <string name="STR_SELECT_ALL">Všetky nasledujúce aplikácie</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Základné aplikácie</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Na sťahovanie aplikácií uvedených nižšie sa nevzťahujú žiadne poplatky za dáta.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Ťuknutím na položku nižšie môžete získať ďalšie informácie o nej.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Aplikácie sa stiahnu cez Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Získajte aplikácie od operátora</string>
+    <string name="STR_UPDATE_BODY1">Sťahovanie cez mobilné dátové pripojenie môže mať za následok ďalšie poplatky.</string>
+    <string name="STR_UPDATE_BODY2">Telefón sa po nainštalovaní aktualizácie reštartuje.</string>
+    <string name="STR_UPDATE_FAIL">Aktualizácia zlyhala. Skúste to znova.</string>
+    <string name="STR_UPDATE_HEADER1">Stiahnite si a nainštalujte najnovší softvér od svojho operátora.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Táto inštalácia firmvéru bude bezplatná.
+
+- Počas inštalácie nebudete môcť vôbec používať svoje zariadenie, ani na tiesňové hovory.
+
+- Ikony na domovskej obrazovke a nastavenia zariadenia sa môžu obnoviť na predvolené a po inštalácii ich môže byť potrebné znova nakonfigurovať.
+
+- Aktualizácia firmvéru by nemala ovplyvniť súbory a údaje v zariadení.
+
+- Ak však zastavíte proces inštalácie pred jeho dokončením, zariadenie nemusí fungovať normálne a v dôsledku toho môžete stratiť svoje súbory.
+
+- Pred inštaláciou odporúčame zálohovať dôležité údaje, aby sa zabránilo neočakávanej strate údajov."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Reštartujte, aby sa mohla dokončiť inštalácia aktualizácie softvéru od operátora.</string>
+    <string name="STR_UPDATING_PACKAGE">Aktualizácia…</string>
+    <string name="STR_USE_DATA_BTN">Použiť dátové pripoj.</string>
+    <string name="STR_WAIT_FOR_WIFI">"Inštalácia aplikácií je pozastavená.
+Čaká sa na pripojenie Wi-Fi, aby sa mohli nainštalovať aplikácie."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Počkať na Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Nainštalujte aplikácie odporúčané vaším operátorom.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Sťahuje sa…</string>
+    <string name="STR_WIDGET_INSTALLED">Nainštalované.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Tlačidlo</string>
+    <string name="WSS_STR_NO_UPDATE">Najnovšie aktualizácie už boli nainštalované.</string>
+</resources>

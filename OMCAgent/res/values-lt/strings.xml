@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">„%1$s“ reikalingas „Android Wear“ programos naujinys.</string>
+    <string name="common_android_wear_update_text">„%1$s“ bus paleidžiama tik atnaujinus „Android Wear“ programą.</string>
+    <string name="common_android_wear_update_title">Atnaujinkite „Android Wear“</string>
+    <string name="common_google_play_services_api_unavailable_text">Norint naudoti „%1$s“ reikalinga viena ar kelios „Google Play“ paslaugos, kurios šiuo metu nepasiekiamos. Susisiekite su kūrėju, kad jums būtų suteikta pagalba.</string>
+    <string name="common_google_play_services_enable_button">Įgal. „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_enable_text">„%1$s“ neveiks, jei neįgalinsite „Google Play“ paslaugų.</string>
+    <string name="common_google_play_services_enable_title">Įgalinti „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Užklausą pateikė „%1$s“</string>
+    <string name="common_google_play_services_install_button">Gauti „Google Play“ paslaugų</string>
+    <string name="common_google_play_services_install_text_phone">„%1$s“ nebus paleidžiama be „Google Play“ paslaugų, kurios neįdiegtos telefone.</string>
+    <string name="common_google_play_services_install_text_tablet">„%1$s“ nebus paleidžiama be „Google Play“ paslaugų, kurios neįdiegtos planšetiniame kompiuteryje.</string>
+    <string name="common_google_play_services_install_title">Gauti „Google Play“ paslaugų</string>
+    <string name="common_google_play_services_invalid_account_text">Nurodytos paskyros šiame įrenginyje nėra. Pasirinkite kitą paskyrą.</string>
+    <string name="common_google_play_services_invalid_account_title">Netinkama paskyra</string>
+    <string name="common_google_play_services_needs_enabling_title">Norint naudoti programą būtina įgalinti „Google Play“ paslaugas.</string>
+    <string name="common_google_play_services_network_error_text">Norint prisijungti prie „Google Play“ paslaugų reikia duomenų ryšio.</string>
+    <string name="common_google_play_services_network_error_title">Tinklo klaida</string>
+    <string name="common_google_play_services_notification_needs_update_title">Norint naudoti programą būtina atnaujinti „Google Play“ paslaugas.</string>
+    <string name="common_google_play_services_notification_ticker">„Google Play“ paslaugų klaida</string>
+    <string name="common_google_play_services_sign_in_failed_text">Klaida prisijungiant prie nurodytos paskyros. Pasirinkite kitą paskyrą.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Nepavyko prisijungti</string>
+    <string name="common_google_play_services_unknown_issue">Nežinoma „Google Play“ paslaugų problema.</string>
+    <string name="common_google_play_services_unsupported_text">Norint naudoti „%1$s“ reikalingos „Google Play“ paslaugos, kurios nepalaikomos jūsų įrenginyje. Susisiekite su gamintoju dėl pagalbos.</string>
+    <string name="common_google_play_services_unsupported_title">„Google Play“ paslaugos</string>
+    <string name="common_google_play_services_update_button">Atnaujinti</string>
+    <string name="common_google_play_services_update_text">„%1$s“ nebus paleidžiama, jei neatnaujinsite „Google Play“ paslaugų.</string>
+    <string name="common_google_play_services_update_title">Atnaujinti „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_updating_text">„%1$s“ nebus paleidžiama be „Google Play“ paslaugų, kurios šiuo metu atnaujinamos.</string>
+    <string name="common_google_play_services_updating_title">„Google Play“ paslaugos atnaujinamos</string>
+    <string name="common_open_on_phone">Atidaryti telefonu</string>
+    <string name="common_signin_button_text">Prisij.</string>
+    <string name="common_signin_button_text_long">Prisij. naud. „Google“</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Papildomo turinio dydis: %1$s %2$s</string>
+    <string name="STR_ALL">Visos</string>
+    <string name="STR_APPS_DESCRIPTION">Pasirinkite programas, rekomenduojamas jūsų paslaugų teikėjo.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Atsisiųstos visos pasirinktos programos.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Atšaukti</string>
+    <string name="STR_APP_BUTTON_OK">Gerai</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Pasirinkite programas, rekomenduojamas jūsų paslaugų teikėjo.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Pasirinkite norimas įdiegti programas.</string>
+    <string name="STR_APP_INSTALL_TITLE">Diegti programas</string>
+    <string name="STR_APP_STATE_CANCELED">Atšaukta</string>
+    <string name="STR_APP_STATE_CONNECTING">Jungiamasi…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Atsisiunčiama…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Atsisiųsti nepavyko.</string>
+    <string name="STR_APP_STATE_INSTALLED">Įdiegta</string>
+    <string name="STR_APP_STATE_INSTALLING">Diegiama…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Įdiegti nepavyko</string>
+    <string name="STR_APP_STATE_WAITING">Laukiama…</string>
+    <string name="STR_BTN_INSTALL">Įdiegti</string>
+    <string name="STR_BTN_INSTALL_ALL">Diegti viską</string>
+    <string name="STR_BTN_SKIP">Praleisti</string>
+    <string name="STR_BUTTON_NEXT">Kitas</string>
+    <string name="STR_CAUTION_BODY">Atsisiuntę paleiskite iš naujo, kad naujinys būtų įdiegtas. Kai bus baigta diegti, telefonu negalėsite naudotis net pagalbos skambučiams atlikti.</string>
+    <string name="STR_CAUTION_BODY2">Atnaujinus kai kurie nustatymai bus nustatyti iš naujo atkuriant numatytąsias jų reikšmes.</string>
+    <string name="STR_CHARING_DIALOG">Atsisiunčiant per mobiliuosius duomenis gali būti taikomi papildomi mokesčiai.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Atsisiųst naudojant mobiliuosius duomenis?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Jungiamasi prie serverio</string>
+    <string name="STR_CONNECT_FAIL">Nepavyko prisijungti. Bandykite vėliau.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Atsisiunčiami naujiniai…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Atsiunčiama…</string>
+    <string name="STR_DOWNLOAD_FAIL">Atsisiuntimas nepavyko. Pamėginkite vėliau.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Norėdami naudotis naujausiomis funkcijomis, atsisiųskite ir įdiekite šį programinės aparatinės įrangos naujinį.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Atsisiuntimas nepavyko. Pamėginkite vėliau.</string>
+    <string name="STR_FAILED_NOTI">Atsisiųsti nepavyko.</string>
+    <string name="STR_INITIAL_NOTI">Bakstelėkite čia ir pasirinkite atsisiųsti rekomenduojamas programas.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Bakstelėkite čia ir atsisiuntę įdiekite naujinį.</string>
+    <string name="STR_INSTALLED_NOTI">%d įdiegta</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Diegti papildomą turinį</string>
+    <string name="STR_INSTALL_CAUTIONS">Įspėjimas</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Su šiuo naujiniu gaunate kelias pasirenkamas programas ir turinio. Atsisiunčiant per mobiliuosius tinklus gali būti taikomi papildomi mokesčiai – tai priklauso nuo mokėjimo plano.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Atsisiųsta.</string>
+    <string name="STR_INSTALL_FORCE">Svarbus programinės įrangos naujinys atsiųstas. Kad būtų pradėta diegti, įrenginys bus paleistas iš naujo po %d sek.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Sužinokite daugiau</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Jei norite atsisiųsti programas, turite prisijungti prie „Wi-Fi“. Prisijunkite prie „Wi-Fi“ tinklo ir bandykite dar kartą.</string>
+    <string name="STR_NEED_WIFI_TITLE">Nėra „Wi-Fi“ ryšio</string>
+    <string name="STR_NETWORK_FAIL">Tinklas nepasiekiamas. Bandykite dar kartą vėliau.</string>
+    <string name="STR_NO_APPS">Nėra programų</string>
+    <string name="STR_NO_CONTENT">Čia bus rodomos pasiekiamos jūsų paslaugų teikėjo išleistos programos.</string>
+    <string name="STR_NO_ITEMS">Nėra elementų</string>
+    <string name="STR_NO_ITEM_SELECTED">Niekas nepasirinkta.</string>
+    <string name="STR_OMC_HEADER">Paslaugų teikėjo naujinys</string>
+    <string name="STR_OMC_SIZE">Dydis: %s</string>
+    <string name="STR_OMC_TITLE">Konfigūracijos naujinys</string>
+    <string name="STR_OMC_VERSION">Versija: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operatoriaus nustatymai</string>
+    <string name="STR_PROCESS_FAIL">Apdoroti nepavyko.</string>
+    <string name="STR_PROVIDER_APPS">Paslaugų teikėjo programos</string>
+    <string name="STR_REGISTERING_DEVICE">Registruojamas įrenginys…</string>
+    <string name="STR_REGISTER_FAIL">Registravimas nepavyko.</string>
+    <string name="STR_REGISTER_SUCCESS">Įrenginys užregistruotas.</string>
+    <string name="STR_RESTART_BTN_LATER">Vėliau</string>
+    <string name="STR_RESTART_BTN_RESTART">Perkrauti</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Jei norite baigti paslaugų teikėjo programinės įrangos naujinio diegimą, turite paleisti telefoną iš naujo.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Jei norite baigti paslaugų teikėjo programinės įrangos naujinio diegimą, turite paleisti planšetinį kompiuterį iš naujo.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Paleisti iš naujo?</string>
+    <string name="STR_RESTART_PHONE">Paleisti telefoną iš naujo</string>
+    <string name="STR_RESTART_TABLET">Leisti planšet. komp. iš naujo</string>
+    <string name="STR_SELECT_ALL">Visos šios programos</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Svarbiausios programos</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Atsisiunčiant toliau nurodytas programas mokesčiai už duomenis netaikomi.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Toliau bakstelėkite elementą ir sužinosite daugiau apie jį.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Programos bus atsisiųstos per „Wi-Fi“.</string>
+    <string name="STR_SUW_TITLE">Atsisiųsti programą iš paslaugų teikėjo</string>
+    <string name="STR_UPDATE_BODY1">Atsisiunčiant per mobiliuosius duomenis gali būti taikomi papildomi mokesčiai.</string>
+    <string name="STR_UPDATE_BODY2">Įdiegus naujinį, jūsų telefonas bus paleistas iš naujo.</string>
+    <string name="STR_UPDATE_FAIL">Nepavyko atnaujinti. Bandykite vėl.</string>
+    <string name="STR_UPDATE_HEADER1">Atsisiųskite ir įdiekite naujausią programinę įrangą iš savo paslaugų teikėjo.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"– Už šios programinės aparatinės įrangos diegimą mokestis neimamas.
+
+– Diegdami visai negalėsite naudotis savo įrenginiu, net pagalbos skambučiams.
+
+– Pradžios ekrano piktogramos ir įrenginio nustatymai gali būti pakeisti numatytaisiais ir atlikus diegimą juos gali prireikti konfigūruoti iš naujo.
+
+– Įdiegta programinė aparatinė įranga neturėtų paveikti įrenginyje esančių failų ir duomenų.
+
+– Tačiau jei diegimo procesą sustabdysite jam nepasibaigus, įrenginys gali neveikti tinkamai, o failai gali būti prarasti.
+
+– Kad netikėtai neprarastumėte duomenų, rekomenduojame prieš diegiant sukurti atsargines svarbių duomenų kopijas."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Paleiskite iš naujo, kad būtų užbaigtas jūsų paslaugų teikėjo programinės įrangos naujinio diegimas.</string>
+    <string name="STR_UPDATING_PACKAGE">Atnaujinama…</string>
+    <string name="STR_USE_DATA_BTN">Naudoti duomenis</string>
+    <string name="STR_WAIT_FOR_WIFI">"Programos diegimas pristabdytas.
+Programai diegti laukiama „Wi-Fi“."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Laukti „Wi-Fi“</string>
+    <string name="STR_WIDGET_DEFAULT">Įdiekite programas, rekomenduojamas jūsų paslaugų teikėjo.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Atsisiunčiama…</string>
+    <string name="STR_WIDGET_INSTALLED">Įdiegta.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Mygtukas</string>
+    <string name="WSS_STR_NO_UPDATE">Naujausi naujinimai jau įdiegti.</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Ang %1$s ay nangangailangan ng update sa Android Wear app.</string>
+    <string name="common_android_wear_update_text">Hindi gagana ang %1$s maliban kung i-a-update mo ang Android Wear app.</string>
+    <string name="common_android_wear_update_title">I-update ang Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">Kailangan ng %1$s ng isa o higit pang mga serbisyo ng Google Play na kasalukuyang hindi available. Mangyaring makipag-ugnayan sa developer para sa tulong.</string>
+    <string name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string name="common_google_play_services_enable_text">Hindi gagana ang %1$s maliban kung i-e-enable mo ang mga serbisyo ng Google Play.</string>
+    <string name="common_google_play_services_enable_title">Paganahin ang Google Play services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Hiniling ng %1$s</string>
+    <string name="common_google_play_services_install_button">Kumuha ng Google Play services</string>
+    <string name="common_google_play_services_install_text_phone">Hindi gagana ang %1$s nang wala ang mga serbisyo ng Google Play na wala sa iyong telepono.</string>
+    <string name="common_google_play_services_install_text_tablet">Hindi gagana ang %1$s nang wala ang mga serbisyo ng Google Play na wala sa iyong tablet.</string>
+    <string name="common_google_play_services_install_title">Kumuha ng mga serbisyo ng Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Hindi umiiral ang tinukoy na account sa device na ito. Mangyaring pumili ng ibang account.</string>
+    <string name="common_google_play_services_invalid_account_title">Di-wasto ang Account</string>
+    <string name="common_google_play_services_needs_enabling_title">Kailangan ng application na na-enable ang Mga Serbisyo ng Google Play.</string>
+    <string name="common_google_play_services_network_error_text">Kailangan ng koneksyon ng data upang makakonekta sa mga serbisyo ng Google Play.</string>
+    <string name="common_google_play_services_network_error_title">May Error sa Network</string>
+    <string name="common_google_play_services_notification_needs_update_title">Kailangan ng application ng update sa Mga Serbisyo ng Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Error sa Mga Serbisyo ng Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Error sa pagsa-sign in sa tinukoy na account. Pakipili ng ibang account.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Hindi nakapag-sign in</string>
+    <string name="common_google_play_services_unknown_issue">May hindi alam na isyu sa mga serbisyo ng Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">Sumasalalay ang %1$s sa mga serbisyo ng Google Play na hindi sinusuportahan ng iyong device. Makipag-ugnayan sa manufacturer para sa tulong.</string>
+    <string name="common_google_play_services_unsupported_title">Mga serbisyo ng Google Play</string>
+    <string name="common_google_play_services_update_button">I-update</string>
+    <string name="common_google_play_services_update_text">Hindi gagana ang %1$s maliban kung i-a-update mo ang mga serbisyo ng Google Play.</string>
+    <string name="common_google_play_services_update_title">I-update ang mga serbisyo ng Google Play</string>
+    <string name="common_google_play_services_updating_text">Hindi gagana ang %1$s nang wala ang mga serbisyo ng Google Play na kasalukuyang ina-update.</string>
+    <string name="common_google_play_services_updating_title">Ina-update mga serbisyo ng Google Play</string>
+    <string name="common_open_on_phone">Buksan sa telepono</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Mag-sign in sa Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Laki ng karagdagang content: %1$s %2$s</string>
+    <string name="STR_ALL">Lahat</string>
+    <string name="STR_APPS_DESCRIPTION">Piliin ang mga app na inirekomenda ng service provider mo.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Nai-download ang lahat ng pinili mong app.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Ikansela</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Piliin ang mga app na inirekomenda ng service provider mo.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Piliin ang mga app na nais mong i-install.</string>
+    <string name="STR_APP_INSTALL_TITLE">Mag-install ng mga app</string>
+    <string name="STR_APP_STATE_CANCELED">Kinansela</string>
+    <string name="STR_APP_STATE_CONNECTING">Kumokonekta…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Nagda-download…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Nabigo ang pag-download.</string>
+    <string name="STR_APP_STATE_INSTALLED">Na-install</string>
+    <string name="STR_APP_STATE_INSTALLING">Nag-i-install…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Bigo ang pag-install</string>
+    <string name="STR_APP_STATE_WAITING">Naghihintay…</string>
+    <string name="STR_BTN_INSTALL">I-install</string>
+    <string name="STR_BTN_INSTALL_ALL">I-install lahat</string>
+    <string name="STR_BTN_SKIP">Laktawan</string>
+    <string name="STR_BUTTON_NEXT">Susunod</string>
+    <string name="STR_CAUTION_BODY">Pagkatapos i-download, mag-restart para i-install ang update. Hindi mo magagamit ang telepono, kahit na para mag-emergency call, hanggang sa matapos ang pag-install.</string>
+    <string name="STR_CAUTION_BODY2">Pagkatapos ng update, maaaring mag-reset ang ilang setting sa mga default value ng mga ito.</string>
+    <string name="STR_CHARING_DIALOG">Ang pag-download na gamit ang mobile data ay maaaring magresulta sa karagdagang singil.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">I-download gamit ang mobile data?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Kumokonekta sa server…</string>
+    <string name="STR_CONNECT_FAIL">Hindi nakakonekta. Subukan mamaya.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Dina-download ang mga update…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Dinadownload…</string>
+    <string name="STR_DOWNLOAD_FAIL">Nabigo ang pag-download. Subukan sa ibang pagkakataon.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Para gamitin ang mga pinakabagong tampok, i-download at i-install ang update na ito sa firmware.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Nabigo ang pag-download. Subukan sa ibang pagkakataon.</string>
+    <string name="STR_FAILED_NOTI">Nabigo ang pag-download.</string>
+    <string name="STR_INITIAL_NOTI">I-tap dito para piliin ang mga inirekomendang app para i-download.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">I-tap dito para i-download at i-install ang update.</string>
+    <string name="STR_INSTALLED_NOTI">%d ang naka-install</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">I-install ang dagdag na content</string>
+    <string name="STR_INSTALL_CAUTIONS">Mag-ingat</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Kasama sa update na ito ang ilang opsiyonal na app at content. Maaaring magresulta sa dagdag na singil ang pag-download gamit ang mga mobile network depende sa plan ng iyong pagbabayad.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Na-download</string>
+    <string name="STR_INSTALL_FORCE">Na-download na ang mahalagang update sa iyong software. Magre-restart ang iyong device pagkalipas ng %d segundo upang simulan ang pag-install.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Alamin pa</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Kailangang nakakonekta ka sa Wi-Fi para mag-download ng mga app. Kumonekta sa Wi-Fi at subukang muli.</string>
+    <string name="STR_NEED_WIFI_TITLE">Walang koneksiyon sa Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Hindi available ang network. Subukang muli mamaya.</string>
+    <string name="STR_NO_APPS">Walang app</string>
+    <string name="STR_NO_CONTENT">Ipapakita rito ang mga magagamit na app na inilabas ng service provider mo.</string>
+    <string name="STR_NO_ITEMS">Walang mga item</string>
+    <string name="STR_NO_ITEM_SELECTED">Walang napiling item.</string>
+    <string name="STR_OMC_HEADER">Update ng service provider</string>
+    <string name="STR_OMC_SIZE">Laki: %s</string>
+    <string name="STR_OMC_TITLE">Pag-update ng configuration</string>
+    <string name="STR_OMC_VERSION">Bersiyon: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Mga setting ng operator</string>
+    <string name="STR_PROCESS_FAIL">Nabigo ang pagproseso.</string>
+    <string name="STR_PROVIDER_APPS">Mga app ng service provider</string>
+    <string name="STR_REGISTERING_DEVICE">Ipinaparehistro ang device…</string>
+    <string name="STR_REGISTER_FAIL">Nabigo ang pagpaparehistro.</string>
+    <string name="STR_REGISTER_SUCCESS">Naiparehistro ang device.</string>
+    <string name="STR_RESTART_BTN_LATER">Mamaya</string>
+    <string name="STR_RESTART_BTN_RESTART">I-restart</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Para tapusin ang pag-install ng update sa software ng service provider mo, kailangan mong i-restart ang telepono mo.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Para tapusin ang pag-install ng update sa software ng service provider mo, kailangan mong i-restart ang tablet mo.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">I-restart?</string>
+    <string name="STR_RESTART_PHONE">I-restart ang telepono</string>
+    <string name="STR_RESTART_TABLET">I-restart ang tablet</string>
+    <string name="STR_SELECT_ALL">Lahat ng sumusunod na app</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Mga importanteng app</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Walang nalalapat na singil sa data para sa pag-download ng mga app sa ibaba.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Mag-tap sa isang item sa ibaba para alamin pa ang tungkol dito.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Ida-download ang mga app gamit ang Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Kumuha ng mga app mula sa service provider</string>
+    <string name="STR_UPDATE_BODY1">Ang pag-download na gamit ang mobile data ay maaaring magresulta sa karagdagang singil.</string>
+    <string name="STR_UPDATE_BODY2">Magre-restart ang telepono mo pagkatapos na mag-install ng update.</string>
+    <string name="STR_UPDATE_FAIL">Nabigo ang update. Subukang muli.</string>
+    <string name="STR_UPDATE_HEADER1">I-download at i-install ang pinakabagong software mula sa service provider mo.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Hindi ka sisingilin para sa pag-install ng firmware na ito.
+
+- Habang ini-install, hindi mo magagamit ang device mo, kahit para sa mga emergency na tawag.
+
+- Maaaring mag-reset ang mga icon sa home screen at mga setting ng device sa mga default at maaaring kailanganing muling ikumpigura pagkatapos mag-install.
+
+- Hindi dapat maapektuhan ng pag-update sa firmware ang mga file at data na nasa device mo.
+
+- Gayunpaman, kung ihihinto mo ang pag-install bago ito matapos, maaaring hindi gumana nang maayos ang device mo at maaaring mawala ang mga file mo bilang resulta nito.
+
+- Para iwasan ang di-inaasahang pagkawala ng data, inirerekomenda namin na i-back up mo ang mga importanteng data bago mag-install."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Mag-restart para tapusin ang pag-install ng update sa software ng service provider mo.</string>
+    <string name="STR_UPDATING_PACKAGE">Ina-update…</string>
+    <string name="STR_USE_DATA_BTN">Gamitin ang data</string>
+    <string name="STR_WAIT_FOR_WIFI">"Naka-pause ang pag-install ng app.
+Hinihintay ang Wi-Fi na i-install ang mga app."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Hintayin ang Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">I-install ang mga app na inirekomenda ng service provider mo.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Dina-download…</string>
+    <string name="STR_WIDGET_INSTALLED">Na-install na.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Button</string>
+    <string name="WSS_STR_NO_UPDATE">Na-install na ang mga pinakabagong update.</string>
+</resources>

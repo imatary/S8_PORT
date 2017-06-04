@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s საჭიროებს Android Wear აპის განახლებას.</string>
+    <string name="common_android_wear_update_text">%1$s ვერ გაეშვება, ვიდრე Android Wear აპს არ განაახლებთ.</string>
+    <string name="common_android_wear_update_title">Android Wear-ის განახლება</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s ითხოვს ერთ ან მეტ Google Play სერვისს, რომელიც ამჟამად არ არის ხელმისაწვდომი. გთხოვთ, დახმარებისთვის დაუკავშირდეთ დეველოპერს.</string>
+    <string name="common_google_play_services_enable_button">Google Play სერვისების გააქტიურება</string>
+    <string name="common_google_play_services_enable_text">%1$s არ იმუშავებს, თუ არ გაააქტიურებთ Google Play სერვისებს.</string>
+    <string name="common_google_play_services_enable_title">Google Play სერვისების გააქტიურება</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">მომთხოვნი: %1$s</string>
+    <string name="common_google_play_services_install_button">Google Play სერვისების მიღება</string>
+    <string name="common_google_play_services_install_text_phone">%1$s ვერ გაეშვება Google Play სერვისების გარეშე, რაც თქვენს ტელეფონზე ვერ იძებნება.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s ვერ გაეშვება Google Play სერვისების გარეშე, რაც თქვენს ტაბლეტზე ვერ იძებნება.</string>
+    <string name="common_google_play_services_install_title">Google Play სერვისების მიღება</string>
+    <string name="common_google_play_services_invalid_account_text">მითითებული ანგარიში ამ მოწყობილობაზე არ არსებობს. გთხოვთ, აირჩიოთ სხვა ანგარიში.</string>
+    <string name="common_google_play_services_invalid_account_title">ანგარიში არასწორია</string>
+    <string name="common_google_play_services_needs_enabling_title">აპლიკაცია საჭიროებს გააქტიურებულ Google Play Services.</string>
+    <string name="common_google_play_services_network_error_text">Google Play Services-თან დასაკავშირებლად მონაცემთა გადაცემა აუცილებელია.</string>
+    <string name="common_google_play_services_network_error_title">ქსელის შეცდომა</string>
+    <string name="common_google_play_services_notification_needs_update_title">აპლიკაცია საჭიროებს Google Play Services-ის განახლებას.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Services-ის შეცდომა</string>
+    <string name="common_google_play_services_sign_in_failed_text">მითითებულ ანგარიშზე შესვლის შეცდომა. გთხოვთ აირჩიოთ სხვა ანგარიში.</string>
+    <string name="common_google_play_services_sign_in_failed_title">შესვლის შეცდომა</string>
+    <string name="common_google_play_services_unknown_issue">Google Play სერვისებთან დაკავშირებით უცნობი შეფერხება წარმოიშვა.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ეყრდნობა Google Play სერვისებს, რომლებიც თქვენს მოწყობილობაზე მხარდაჭერილი არ არის. გთხოვთ, დაუკავშირდეთ მწარმოებელს დახმარებისათვის.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play სერვისები</string>
+    <string name="common_google_play_services_update_button">განახლება</string>
+    <string name="common_google_play_services_update_text">%1$s ვერ გაეშვება, თუ Google Play სერვისებს არ განაახლებთ.</string>
+    <string name="common_google_play_services_update_title">Google Play სერვისების განახლება</string>
+    <string name="common_google_play_services_updating_text">%1$s ვერ გაეშვება Google Play სერვისების გარეშე, რომელთა განახლებაც ახლა მიმდინარეობს.</string>
+    <string name="common_google_play_services_updating_title">ხდება Google Play სერვისების განახლება.</string>
+    <string name="common_open_on_phone">ტელეფონზე გახსნა</string>
+    <string name="common_signin_button_text">შესვლა</string>
+    <string name="common_signin_button_text_long">Google-ით შესვლა</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">დამატებული მასალის ზომა: %1$s %2$s</string>
+    <string name="STR_ALL">ყველა</string>
+    <string name="STR_APPS_DESCRIPTION">შეარჩიეთ პროვაიდერის მიერ რეკომენდებული აპლიკაციები.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">თქვენ მიერ არჩეული ყველა აპლიკაცია ჩამოიტვირთა.</string>
+    <string name="STR_APP_BUTTON_CANCEL">გაუქმება</string>
+    <string name="STR_APP_BUTTON_OK">კი</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">შეარჩიეთ პროვაიდერის მიერ რეკომენდებული აპლიკაციები.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">აირჩიეთ აპლიკაციები, რომელთა დაინსტალირებაც გსურთ.</string>
+    <string name="STR_APP_INSTALL_TITLE">აპლიკაციების დაინსტალირება</string>
+    <string name="STR_APP_STATE_CANCELED">გაუქმდა</string>
+    <string name="STR_APP_STATE_CONNECTING">უკავშირდება…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">სრულდება ჩამოტვირთვა…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ვერ ჩამოიტვირთა.</string>
+    <string name="STR_APP_STATE_INSTALLED">დაყენდა</string>
+    <string name="STR_APP_STATE_INSTALLING">ინსტალირდება…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">ვერ დაინსტალირდა</string>
+    <string name="STR_APP_STATE_WAITING">მოცდა…</string>
+    <string name="STR_BTN_INSTALL">დაყენება</string>
+    <string name="STR_BTN_INSTALL_ALL">ყველაფრის დაინსტალირება</string>
+    <string name="STR_BTN_SKIP">გამოტოვება</string>
+    <string name="STR_BUTTON_NEXT">შემდეგი</string>
+    <string name="STR_CAUTION_BODY">ჩამოტვირთვის შემდეგ გადატვირთეთ, რომ დაინსტალირდეს განახლება. ტელეფონს ვერ გამოიყენეთ, საგანგებო ზარებისთვისაც კი, სანამ ინსტალაცია არ დასრულდება.</string>
+    <string name="STR_CAUTION_BODY2">განახლების შემდეგ შეიძლება ზოგიერთი პარამეტრი შეიცვალოს საწყისი ვარიანტით.</string>
+    <string name="STR_CHARING_DIALOG">შესაძლოა, მობილურ მონაცემთა ქსელით ჩამოტვირთვა ფასიანი იყოს.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">ჩამოიტვირთოს მობილური მონაცემებით?</string>
+    <string name="STR_CONNECTING_TO_SERVER">სერვერთან დაკავშირება…</string>
+    <string name="STR_CONNECT_FAIL">ვერ დაუკავშირდა. ცადეთ მოგვიანებით.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">იტვირთება განახლებები…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">იტვირთება…</string>
+    <string name="STR_DOWNLOAD_FAIL">ვერ ჩამოიტვირთა. მოგვიანებით ცადეთ.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">უახლესი ფუნქციების გამოყენებისთვის, ჩამოტვირთეთ და დააინსტალირეთ მიკროპროგრამის განახლება.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ვერ ჩამოიტვირთა. მოგვიანებით ცადეთ.</string>
+    <string name="STR_FAILED_NOTI">ვერ ჩამოიტვირთა.</string>
+    <string name="STR_INITIAL_NOTI">შეეხეთ აქ, რომ აირჩიოთ რეკომენდებული აპლიკაციები ჩამოსატვირთად.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">თუ გსურთ ჩამოტვირთოთ და დააინსტალიროთ განახლება, შეეხეთ აქ.</string>
+    <string name="STR_INSTALLED_NOTI">%d დაინსტალირდა</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">დამატებითი მასალის დაინსტალირება</string>
+    <string name="STR_INSTALL_CAUTIONS">გაფრთხილება</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">ამ განახლებაში შედის ზოგიერთი არასავალდებულო აპლიკაცია და მასალა. შესაძლოა, მობილურ ქსელებით ჩამოტვირთვისთვის დაგერიცხოთ დამატებითი გადასახადი, თქვენი სატარიფო გეგმის შესაბამისად.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ჩამოიტვირთა.</string>
+    <string name="STR_INSTALL_FORCE">პროგრამის კრიტიკული განახლება ჩამოიტვირთა. აპარატი გადაიტვირთება %d წამში და დაიწყება ინსტალაცია.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">შეიტყვეთ მეტი</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">აპლიკაციები რომ ჩამოტვირთოთ, დაკავშირებული უნდა იყოთ Wi-Fi ქსელთან. დაუკავშირდით Wi-Fi-ს და ისევ სცადეთ.</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi კავშირი არ არის</string>
+    <string name="STR_NETWORK_FAIL">ქსელი მიუწვდომელია. მოგვიანებით სცადეთ.</string>
+    <string name="STR_NO_APPS">აპლიკაციები არ არის</string>
+    <string name="STR_NO_CONTENT">თქვენი პროვაიდერის მიერ გამოცემული ხელმისაწვდომი აპლიკაციები გამოჩნდება აქ.</string>
+    <string name="STR_NO_ITEMS">ელემენტები არაა</string>
+    <string name="STR_NO_ITEM_SELECTED">ელემენტი არ არის შერჩეული.</string>
+    <string name="STR_OMC_HEADER">პროვაიდერის განახლება</string>
+    <string name="STR_OMC_SIZE">ზომა: %s</string>
+    <string name="STR_OMC_TITLE">კონფიგურაციის განახლება</string>
+    <string name="STR_OMC_VERSION">ვერსია: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">ოპერატორის პარამეტრები</string>
+    <string name="STR_PROCESS_FAIL">დამუშავება შეწყდა.</string>
+    <string name="STR_PROVIDER_APPS">პროვაიდერის აპლიკაციები</string>
+    <string name="STR_REGISTERING_DEVICE">მოწყობილობა რეგისტრირდება…</string>
+    <string name="STR_REGISTER_FAIL">ვერ დარეგისტრირდა.</string>
+    <string name="STR_REGISTER_SUCCESS">აპარატი რეგისტრირებულია.</string>
+    <string name="STR_RESTART_BTN_LATER">სხვა დროს</string>
+    <string name="STR_RESTART_BTN_RESTART">გადატვირთე</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">თქვენი პროვაიდერის პროგრამული განახლების დაინსტალირების დასასრულებლად, თავიდან უნდა ჩართოთ ტელეფონი.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">თქვენი პროვაიდერის პროგრამული განახლების დაინსტალირების დასასრულებლად, თავიდან უნდა ჩართოთ პლანშეტი.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">გადაიტვირთოს?</string>
+    <string name="STR_RESTART_PHONE">ტელეფონის გადატვირთვა</string>
+    <string name="STR_RESTART_TABLET">პლანშეტის გადატვირთვა</string>
+    <string name="STR_SELECT_ALL">შემდეგი აპლიკაციებიდან ყველა</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">მნიშვნელოვანი აპლიკაციები</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">მონაცემთა გადაცემა უფასოა ქვემოთ მოცემული აპლიკაციის ჩამოტვირთვის შემთხვევაში.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">ქვემოთ შეეხეთ ელემენტს და შეიტყვეთ მეტი მის შესახებ.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">აპლიკაციები ჩამოიტვირთება Wi-Fi-თ.</string>
+    <string name="STR_SUW_TITLE">მიიღეთ აპლიკაციები პროვაიდერისგან</string>
+    <string name="STR_UPDATE_BODY1">შესაძლოა, მობილურ მონაცემთა ქსელით ჩამოტვირთვა ფასიანი იყოს.</string>
+    <string name="STR_UPDATE_BODY2">ტელეფონი გადაიტვირთება, განახლების დაინსტალირების შემდეგ.</string>
+    <string name="STR_UPDATE_FAIL">ვერ განახლდა. კიდევ მოსინჯეთ.</string>
+    <string name="STR_UPDATE_HEADER1">ჩამოტვირთეთ და დააინსტალირეთ პროვაიდერის უახლესი პროგრამა.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- ამ მიკროპროგრამის ინსტალაცოა უფასოა.
+
+- დაინსტალირების დროს საერთოდ ვერ გამოიყენებთ მოწყობილობას, საგანგებო ზარებისთვისაც კი.
+
+- შესაძლოა, დაინსტალირების შემდეგ დაბრუნდეს საწყისი ეკრანის ღილაკებისა და მოწყობილობის პარამეტრების საწყისი ვარიანტები და საჭირო გახდეს კონფიგურაციის თავიდან შერჩევა.
+
+- მიკროპროგრამის განახლება არ იმოქმედებს მოწყობილობაში შენახულ ფაილებსა და მონაცემებზე.
+
+- ამასთან, თუ ინსტალაციის პროცესს შეწყვეტთ მის დასრულებამდე, შესაძლოა, მოწყობილობამ არ იმოშაოს ნორმალურად და, შედეგად, დაიკარგოს ფაილები.
+
+- რომ არ მოხდეს მონაცემთა მოულოდნელი დაკარგვა, გირჩევთ, დაამარქაფოთ მნიშვნელოვანი მონაცემები, სანამ დაიწყებთ ინსტალაციას."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">გადატვირთეთ, რომ დაინსტალირდეს პროვაიდერის პროგრამული განახლება.</string>
+    <string name="STR_UPDATING_PACKAGE">განახლება…</string>
+    <string name="STR_USE_DATA_BTN">მონაცემთა გამოყენება</string>
+    <string name="STR_WAIT_FOR_WIFI">"აპლიკაციის ინსტალაცია დაპაუზდა.
+აპლიკაციების დასაინსტალირებლად ველოდებით Wi-Fi-ს."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">დაელოდეთ Wi-Fi-ს</string>
+    <string name="STR_WIDGET_DEFAULT">დააინსტალირეთ პროვაიდერის მიერ რეკომენდებული აპლიკაციები.</string>
+    <string name="STR_WIDGET_DOWNLOADING">სრულდება ჩამოტვირთვა…</string>
+    <string name="STR_WIDGET_INSTALLED">დაინსტალირდა.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">ღილაკი</string>
+    <string name="WSS_STR_NO_UPDATE">უახლესი განახლებები უკვე დაინსტალირებულია.</string>
+</resources>

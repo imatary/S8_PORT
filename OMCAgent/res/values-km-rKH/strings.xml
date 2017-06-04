@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s តម្រូវឲ្យមានការធ្វើបច្ចុប្បន្នភាពលើកម្មវិធី Android Wear។</string>
+    <string name="common_android_wear_update_text">%1$s នឹងមិនដំណើរការទេ លុះត្រាតែអ្នកធ្វើបច្ចុប្បន្នភាពកម្មវិធី Android Wear។</string>
+    <string name="common_android_wear_update_title">ធ្វើ​បច្ចុប្បន្នភាព Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s តម្រូវឲ្យមានសេវាកម្ម Google Play មួយ ឬច្រើន ប៉ុន្តែវាមិនមានផ្តល់ជូនទេបច្ចុប្បន្ននេះ។ សូមទាក់ទងអ្នកអភិវឌ្ឍន៍ដើម្បីទទួលជំនួយ។</string>
+    <string name="common_google_play_services_enable_button">បើក​សេវាកម្ម​កម្សាន្ត Google</string>
+    <string name="common_google_play_services_enable_text">%1$s នឹងមិនដំណើរការទេ លុះត្រាតែអ្នកបើកសេវាកម្ម Google Play។</string>
+    <string name="common_google_play_services_enable_title">បើក​សេវាកម្ម​កម្សាន្ត Google</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">បាន​ស្នើ​ដោយ %1$s</string>
+    <string name="common_google_play_services_install_button">ទទួល​សេវាកម្ម​កម្សាន្ត Google</string>
+    <string name="common_google_play_services_install_text_phone">%1$s នឹងមិនដំណើរការទេ បើទូរស័ព្ទរបស់អ្នកមិនមានសេវាកម្ម Google Play។</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s នឹងមិនដំណើរការទេ បើថេប្លេតរបស់អ្នកមិនមានសេវាកម្ម Google Play។</string>
+    <string name="common_google_play_services_install_title">ទទួល​សេវាកម្ម​កម្សាន្ត Google</string>
+    <string name="common_google_play_services_invalid_account_text">គណនី​ដែល​បាន​បញ្ជាក់​មិន​មាន​នៅ​លើ​ឧបករណ៍​នេះ​ទេ។ សូម​ជ្រើស​គណនី​ផ្សេង​។</string>
+    <string name="common_google_play_services_invalid_account_title">គណនី​មិន​ត្រឹមត្រូវ</string>
+    <string name="common_google_play_services_needs_enabling_title">កម្មវិធី​ទាមទារ​ឲ្យ​បើក​សេវាកម្ម​ Google កម្សាន្ត។</string>
+    <string name="common_google_play_services_network_error_text">បាន​ទាមទារ​ការ​តភ្ជាប់​ទិន្នន័យ ដើម្បី​ភ្ជាប់​សេវាកម្ម​ឃ្លាំង​កម្មវិធី។</string>
+    <string name="common_google_play_services_network_error_title">កំហុស​​បណ្ដាញ</string>
+    <string name="common_google_play_services_notification_needs_update_title">កម្មវិធី​ទាមទារ​​ធ្វើ​បច្ចុប្បន្នភាព​សេវាកម្ម ​Google កម្សាន្ត។</string>
+    <string name="common_google_play_services_notification_ticker">កំហុស​​សេវាកម្ម​ Google កម្សាន្ត</string>
+    <string name="common_google_play_services_sign_in_failed_text">កំហុសក្នុងការចូលគណនីជាក់លាក់។ សូមជ្រើសរើសគណនីផ្សេងទៀត។</string>
+    <string name="common_google_play_services_sign_in_failed_title">បានបរាជ័យក្នុងការចូល</string>
+    <string name="common_google_play_services_unknown_issue">មិន​ស្គាល់​បញ្ហា​ជាមួយ​សេវាកម្ម​កម្សាន្ត Google ។</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ពឹងផ្អែកលើសេវាកម្ម Google Play ប៉ុន្តែវាមិនគាំទ្រនៅលើឧបករណ៍របស់អ្នកទេ។ សូមទាក់ទងក្រុមហ៊ុនផលិតដើម្បីទទួលជំនួយ។</string>
+    <string name="common_google_play_services_unsupported_title">សេវាកម្ម​កម្សាន្ត​ Google</string>
+    <string name="common_google_play_services_update_button">ធ្វើ​បច្ចុប្បន្នភាព</string>
+    <string name="common_google_play_services_update_text">%1$s នឹងមិនដំណើរការទេ លុះត្រាតែអ្នកធ្វើបច្ចុប្បន្នភាពសេវាកម្ម Google Play។</string>
+    <string name="common_google_play_services_update_title">ធ្វើ​បច្ចុប្បន្នភាព​សេវាកម្ម​កម្សាន្ត Google</string>
+    <string name="common_google_play_services_updating_text">%1$s នឹងមិនដំណើរការទេ បើមិនមានសេវាកម្ម Google Play ដោយសារតែវាកំពុងធ្វើបច្ចុប្បន្នភាព។</string>
+    <string name="common_google_play_services_updating_title">សេវាកម្ម Google Play កំពុងធ្វើបច្ចុប្បន្នភាព</string>
+    <string name="common_open_on_phone">បើក​តាម​ទូរស័ព្ទ</string>
+    <string name="common_signin_button_text">ចូល</string>
+    <string name="common_signin_button_text_long">ចូល​ដោយ​ប្រើ​ Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">ទំហំ​ខ្លឹមព័ត៌មាន​បន្ថែម៖ %1$s %2$s</string>
+    <string name="STR_ALL">ទាំង​អស់</string>
+    <string name="STR_APPS_DESCRIPTION">ជ្រើស​កម្មវិធី​ដែល​អ្នកផ្ដល់​សេវា​ឲ្យ​អ្នក​បាន​ឲ្យ​យោបល់។</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">បាន​ទាញយក​កម្មវិធី​ដែល​អ្នក​បាន​ជ្រើស​ទាំងអស់។</string>
+    <string name="STR_APP_BUTTON_CANCEL">បោះបង់</string>
+    <string name="STR_APP_BUTTON_OK">ព្រម</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">ជ្រើស​កម្មវិធី​ដែល​អ្នកផ្ដល់​សេវា​ឲ្យ​អ្នក​បាន​ឲ្យ​យោបល់។</string>
+    <string name="STR_APP_INSTALL_CONFIRM">ជ្រើស​កម្មវិធី​ដែល​អ្នក​ចង់​ដំឡើង។</string>
+    <string name="STR_APP_INSTALL_TITLE">ដំឡើង​កម្មវិធី</string>
+    <string name="STR_APP_STATE_CANCELED">បាន​បោះបង់</string>
+    <string name="STR_APP_STATE_CONNECTING">កំពុង​ភ្ជាប់…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">កំពុង​ទាញយក…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ទាញយក​បាន​បរាជ័យ។</string>
+    <string name="STR_APP_STATE_INSTALLED">បាន​ដំឡើង</string>
+    <string name="STR_APP_STATE_INSTALLING">កំពុង​ដំឡើង…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation failed</string>
+    <string name="STR_APP_STATE_WAITING">កំពុង​រង់​ចាំ…</string>
+    <string name="STR_BTN_INSTALL">ដំឡើង</string>
+    <string name="STR_BTN_INSTALL_ALL">ដំឡើងទាំងអស់</string>
+    <string name="STR_BTN_SKIP">រំលង</string>
+    <string name="STR_BUTTON_NEXT">បន្ទាប់</string>
+    <string name="STR_CAUTION_BODY">បន្ទាប់​ពី​ទាញយក សូម​ចាប់ផ្ដើម​ឡើងវិញ ដើម្បី​ដំឡើង​អាប់ដេត។ អ្នក​នឹង​មិន​អាច​ប្រើ​ទូរសព្ទ​របស់​អ្នក​ឡើយ សូម្បី​ធ្វើ​ការហៅ​អាសន្ន​ក៏​ដោយ រហូត​ទាល់តែ​ការដំឡើង​បាន​បញ្ចប់។</string>
+    <string name="STR_CAUTION_BODY2">បន្ទាប់​ពី​អាប់ដេត ការកំណត់​ខ្លះ​នឹង​ត្រូវ​បាន​កំណត់​ឡើងវិញ​ទៅ​តម្លៃ​លំនាំដើម​របស់​ពួកវា។</string>
+    <string name="STR_CHARING_DIALOG">ការទាញយក​ដោយ​ប្រើ​ទិន្នន័យ​ចល័ត​អាច​នាំ​ឲ្យ​គិត​ថ្លៃ​បន្ថែម។</string>
+    <string name="STR_CHARING_DIALOG_TITLE">ទាញយក​ដោយ​ប្រើ​ទិន្នន័យ​ចល័ត?</string>
+    <string name="STR_CONNECTING_TO_SERVER">កំពុង​ភ្ជាប់​ទៅ​សឺវើ…</string>
+    <string name="STR_CONNECT_FAIL">Connection failed. Try later.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">កំពុង​ទាញយក​អាប់ដេត…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">កំពុង​ទាញយក…</string>
+    <string name="STR_DOWNLOAD_FAIL">ការទាញយក​បរាជ័យ។ សាកល្បង​ពេល​ក្រោយ។</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">ដើម្បី​ប្រើ​មុខងារ​ថ្មីៗ​បំផុត សូម​ទាញយក និង ដំឡើង​អាប់ដេត​នៃ​ហ្វឺមវែរ​នេះ។</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ការទាញយក​បរាជ័យ។ សាកល្បង​ពេល​ក្រោយ។</string>
+    <string name="STR_FAILED_NOTI">ទាញយក​បាន​បរាជ័យ។</string>
+    <string name="STR_INITIAL_NOTI">ប៉ះ​ទីនេះ ដើម្បី​ជ្រើស​កម្មវិធី​ដែល​បាន​ឲ្យ​យោបល់​សម្រាប់​ការទាញយក។</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">ប៉ះ​ទីនេះ ដើម្បី​ទាញយក​និង​ដំឡើង​អាប់ដេត។</string>
+    <string name="STR_INSTALLED_NOTI">បាន​ដំឡើង %d</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">ដំឡើង​ខ្លឹមព័ត៌មាន​បន្ថែម</string>
+    <string name="STR_INSTALL_CAUTIONS">ពាក្យ​ដាស់​តឿន</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">អាប់ដេត​នេះ​រួមបញ្ចូល​កម្មវិធី​និង​ខ្លឹមព័ត៌មាន​ស្រេចចិត្ត​ខ្លះ។ ការទាញយក​តាម​បណ្ដាញ​ចល័ត​អាច​នាំ​ឲ្យ​គិត​ថ្លៃ​បន្ថែម អាស្រ័យ​លើ​គម្រោង​បង់ប្រាក់​របស់​អ្នក។</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">បាន​ទាញយក។</string>
+    <string name="STR_INSTALL_FORCE">បាន​ទាញយក​អាប់ដេត​នៃ​សុហ្វវែរ​សំខាន់ៗ​របស់​អ្នក។ ឧបករណ៍​របស់​អ្នក​នឹង​ចាប់ផ្ដើម​ឡើងវិញ​ក្នុង​ពេល %d វិនាទី ដើម្បី​ចាប់ផ្ដើម​ការដំឡើង។</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">ស្វែងយល់​បន្ថែម</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">អ្នក​ត្រូវការ​ភ្ជាប់​ទៅ Wi-Fi ដើម្បី​ទាញយក​កម្មវិធី។ ភ្ជាប់​ទៅ Wi-Fi ហើយ​សាកល្បង​ម្ដងទៀត។</string>
+    <string name="STR_NEED_WIFI_TITLE">គ្មាន​ការភ្ជាប់ Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">មិនមាន​បណ្ដាញ។ សាកល្បង​ម្ដងទៀត​ពេលក្រោយ។</string>
+    <string name="STR_NO_APPS">គ្មាន​កម្មវិធី</string>
+    <string name="STR_NO_CONTENT">កម្មវិធី​អាច​ប្រើ​បាន​ដែល​អ្នកផ្ដល់​សេវា​ឲ្យ​អ្នក​បាន​ចេញ នឹង​បង្ហាញ​ឡើង​ទីនេះ។</string>
+    <string name="STR_NO_ITEMS">គ្មាន​ធាតុ</string>
+    <string name="STR_NO_ITEM_SELECTED">មិន​បាន​ជ្រើស​ធាតុ។</string>
+    <string name="STR_OMC_HEADER">អាប់ដេត​នៃ​អ្នកផ្ដល់​សេវា</string>
+    <string name="STR_OMC_SIZE">ទំហំ៖ %s</string>
+    <string name="STR_OMC_TITLE">អាប់ដេត​នៃ​ការកំណត់​រចនាសម្ពន្ធ</string>
+    <string name="STR_OMC_VERSION">កំណែ៖ %s</string>
+    <string name="STR_OPERATOR_SETTINGS">ការកំណត់​ប្រតិបត្តិករ</string>
+    <string name="STR_PROCESS_FAIL">ការដំណើរការ​បរាជ័យ។</string>
+    <string name="STR_PROVIDER_APPS">កម្មវិធី​អ្នកផ្ដល់​សេវា</string>
+    <string name="STR_REGISTERING_DEVICE">កំពុង​ចុះ​បញ្ជី​ឧបករណ៍…</string>
+    <string name="STR_REGISTER_FAIL">ការចុះបញ្ជី​បាន​បរាជ័យ។</string>
+    <string name="STR_REGISTER_SUCCESS">បានចុះបញ្ជីឧបករណ៍ហើយ។</string>
+    <string name="STR_RESTART_BTN_LATER">ពេលក្រោយ</string>
+    <string name="STR_RESTART_BTN_RESTART">ចាប់ផ្ដើម​ឡើងវិញ</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">ដើម្បី​បញ្ចប់​ការដំឡើង​អាប់ដេត​នៃ​សុហ្វវែរ​របស់​អ្នកផ្ដល់​សេវា​ឲ្យ​អ្នក អ្នក​ត្រូវការ​ចាប់ផ្ដើម​ទូរសព្ទ​របស់​អ្នក​ឡើងវិញ។</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">ដើម្បី​បញ្ចប់​ការដំឡើង​អាប់ដេត​នៃ​សុហ្វវែរ​របស់​អ្នកផ្ដល់​សេវា​ឲ្យ​អ្នក អ្នក​ត្រូវការ​ចាប់ផ្ដើម​ថេប្លិត​របស់​អ្នក​ឡើងវិញ។</string>
+    <string name="STR_RESTART_DIALOG_TITLE">ចាប់ផ្ដើម​ឡើងវិញ?</string>
+    <string name="STR_RESTART_PHONE">ចាប់ផ្ដើម​ទូរសព្ទ​ឡើងវិញ</string>
+    <string name="STR_RESTART_TABLET">ចាប់ផ្ដើម​ថេប្លិត​ឡើងវិញ</string>
+    <string name="STR_SELECT_ALL">កម្មវិធី​ខាងក្រោម​ទាំងអស់</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">កម្មវិធី​សំខាន់</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">គ្មាន​ការគិតថ្លៃ​ទិន្នន័យ​សម្រាប់​ការទាញយក​កម្មវិធី​ខាងក្រោម។</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">ប៉ះ​លើ​ធាតុ​មួយ​ខាងក្រោម ដើម្បី​ស្វែងយល់​បន្ថែម​អំពី​វា។</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">កម្មវិធី​នឹង​ត្រូវ​បាន​ទាញយក​តាម Wi-Fi។</string>
+    <string name="STR_SUW_TITLE">ទទួល​កម្មវិធី​ពី​អ្នកផ្ដល់​សេវា</string>
+    <string name="STR_UPDATE_BODY1">ការទាញយក​ដោយ​ប្រើ​ទិន្នន័យ​ចល័ត​អាច​នាំ​ឲ្យ​គិត​ថ្លៃ​បន្ថែម។</string>
+    <string name="STR_UPDATE_BODY2">ទូរសព្ទ​របស់​អ្នក​នឹង​ចាប់ផ្ដើម​ឡើងវិញ បន្ទាប់​ពី​ដំឡើង​អាប់ដេត។</string>
+    <string name="STR_UPDATE_FAIL">អាប់ដេត​បាន​បរាជ័យ។ សាកល្បង​ម្ដងទៀត។</string>
+    <string name="STR_UPDATE_HEADER1">ទាញយក​និង​ដំឡើង​សុហ្វវែរ​ថ្មីបំផុត​ពី​អ្នកផ្ដល់​សេវា​ឲ្យ​អ្នក។</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- អ្នក​នឹង​មិន​ត្រូវ​បាន​គិត​ថ្លៃ​ឡើយ​សម្រាប់​ការដំឡើង​ហ្វឺមវែរ​នេះ។
+
+- ក្នុង​ពេល​ដំឡើង អ្នក​នឹង​មិន​អាច​ប្រើ​ឧបករណ៍​របស់​អ្នក​សោះ​ឡើយ សូម្បី​តែ​ការហៅ​អាសន្ន។
+
+- អាយខុន​លើ​គេហអេក្រង់ និង ការកំណត់​ឧបករណ៍ អាច​ត្រូវ​បាន​កំណត់​ឡើងវិញ​ទៅ​លំនាំដើម​របស់​ពួកវា ហើយ​អាច​ត្រូវ​បាន​កំណត់​រចនាសម្ពន្ធ​ឡើងវិញ បន្ទាប់​ពី​ការដំឡើង។
+
+- អាប់ដេត​នៃ​ហ្វឺមវែរ​មិន​ប៉ះពាល់​ដល់​ឯកសារ និង ទិន្នន័យ លើ​ឧបករណ៍​របស់​អ្នក​ឡើយ។
+
+- ទោះជាយ៉ាងនេះក្ដី បើ​អ្នក​បញ្ឈប់​ដំណើរការ​ដំឡើង មុន​ពេល​វា​បញ្ចប់ ឧបករណ៍​របស់​អ្នក​អាច​មិន​ដំណើរការ​ប្រក្រតី ហើយ​អាច​នាំ​ឲ្យ​បាត់បង់​ឯកសារ​របស់​អ្នក។
+
+- ដើម្បី​ជៀសវាង​ការបាត់បង់​ទិន្នន័យ​ដោយ​មិន​បាន​រំពឹង​ទុក យើង​ឲ្យ​យោបល់​អ្នក​ចម្លងទុក​ទិន្នន័យ​សំខាន់ៗ មុនពេល​ដំឡើង។"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">ចាប់ផ្ដើម​ឡើងវិញ ដើម្បី​បញ្ចប់​ការដំឡើង​អាប់ដេត​នៃ​សុហ្វវែរ​របស់​អ្នកផ្ដល់​សេវា​ឲ្យ​អ្នក។</string>
+    <string name="STR_UPDATING_PACKAGE">កំពុង​អាប់ដេត​…</string>
+    <string name="STR_USE_DATA_BTN">ប្រើ​ទិន្នន័យ</string>
+    <string name="STR_WAIT_FOR_WIFI">"បាន​ផ្អាក​ការដំឡើង​កម្មវិធី។
+កំពុង​រង់ចាំ​ឲ្យ Wi-Fi ដំឡើង​កម្មវិធី។"</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">រង់ចាំ Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">ដំឡើង​កម្មវិធី​ដែល​អ្នកផ្ដល់​សេវា​ឲ្យ​អ្នក​បាន​ឲ្យ​យោបល់។</string>
+    <string name="STR_WIDGET_DOWNLOADING">កំពុង​ទាញយក…</string>
+    <string name="STR_WIDGET_INSTALLED">បាន​ដំឡើង។</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">ប៊ូតុង</string>
+    <string name="WSS_STR_NO_UPDATE">បាន​ដំឡើង​អាប់ដេត​ចុងក្រោយ​រួចហើយ។</string>
+</resources>

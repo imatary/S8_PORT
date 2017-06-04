@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">‏%1$s דורש עדכון לאפליקציה Android Wear.</string>
+    <string name="common_android_wear_update_text">‏%1$s לא יפעל עד שתעדכן את האפליקציה Android Wear.</string>
+    <string name="common_android_wear_update_title">‏עדכון Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">‏ל-%1$s נדרש שירות אחד או יותר של Google Play שאינו זמין כעת. צור קשר עם המפתח לקבלת סיוע.</string>
+    <string name="common_google_play_services_enable_button">‏הפעל את שירותי Google Play</string>
+    <string name="common_google_play_services_enable_text">‏%1$s לא יפעל אם לא תפעיל את שירותי Google Play.</string>
+    <string name="common_google_play_services_enable_title">‏הפעלת שירותי Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">התבקשה על ידי %1$s</string>
+    <string name="common_google_play_services_install_button">‏קבל את שירותי Google Play</string>
+    <string name="common_google_play_services_install_text_phone">‏%1$s לא יפעל ללא שירותי Google Play, שחסרים בטלפון שלך.</string>
+    <string name="common_google_play_services_install_text_tablet">‏%1$s לא יפעל ללא שירותי Google Play, שחסרים בטאבלט שלך.</string>
+    <string name="common_google_play_services_install_title">‏קבל את שירותי Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">החשבון שצוין לא קיים במכשיר זה. בחר חשבון אחר.</string>
+    <string name="common_google_play_services_invalid_account_title">חשבון לא חוקי</string>
+    <string name="common_google_play_services_needs_enabling_title">‏קיימת אפליקציה המחייבת הפעלה של שירותי Google Play.</string>
+    <string name="common_google_play_services_network_error_text">‏דרוש חיבור נתונים כדי להתחבר לשירותי Google Play.</string>
+    <string name="common_google_play_services_network_error_title">שגיאת רשת.</string>
+    <string name="common_google_play_services_notification_needs_update_title">‏קיימת אפליקציה המחייבת עדכון עבור שירותי Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">‏שגיאה בשירותי Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">אירעה שגיאה בעת הכניסה אל החשבון המצוין. בחר חשבון אחר.</string>
+    <string name="common_google_play_services_sign_in_failed_title">הכניסה נכשלה</string>
+    <string name="common_google_play_services_unknown_issue">‏בעיה לא ידועה בשירותי Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">‏%1$s מתבסס על שירותי Google Play, שאינם נתמכים במכשיר שלך. צור קשר עם היצרן לקבלת סיוע.</string>
+    <string name="common_google_play_services_unsupported_title">‏שירותי Google Play</string>
+    <string name="common_google_play_services_update_button">עדכן</string>
+    <string name="common_google_play_services_update_text">‏%1$s לא יפעל אם לא תעדכן את שירותי Google Play.</string>
+    <string name="common_google_play_services_update_title">‏עדכון שירותי Google Play</string>
+    <string name="common_google_play_services_updating_text">‏%1$s לא יפעל ללא שירותי Google Play, שמתעדכנים כרגע.</string>
+    <string name="common_google_play_services_updating_title">‏שירותי Google Play מתעדכנים</string>
+    <string name="common_open_on_phone">פתח בטלפון</string>
+    <string name="common_signin_button_text">היכנס</string>
+    <string name="common_signin_button_text_long">‏היכנס באמצעות Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">גודל התוכן הנוסף: %1$s %2$s</string>
+    <string name="STR_ALL">הכל</string>
+    <string name="STR_APPS_DESCRIPTION">בחר יישומים שהומלצו על ידי ספק השירות.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">הורדו כל היישומים שבחרת.</string>
+    <string name="STR_APP_BUTTON_CANCEL">ביטול</string>
+    <string name="STR_APP_BUTTON_OK">אישור</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">בחר יישומים שהומלצו על ידי ספק השירות.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">בחר את היישומים שברצונך להתקין.</string>
+    <string name="STR_APP_INSTALL_TITLE">התקנת יישומים</string>
+    <string name="STR_APP_STATE_CANCELED">בוטל</string>
+    <string name="STR_APP_STATE_CONNECTING">מתחבר…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">מוריד…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ההורדה לא זמינה.</string>
+    <string name="STR_APP_STATE_INSTALLED">הותקן</string>
+    <string name="STR_APP_STATE_INSTALLING">מתקין…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation failed</string>
+    <string name="STR_APP_STATE_WAITING">ממתין…</string>
+    <string name="STR_BTN_INSTALL">התקן</string>
+    <string name="STR_BTN_INSTALL_ALL">התקן הכול</string>
+    <string name="STR_BTN_SKIP">דלג</string>
+    <string name="STR_BUTTON_NEXT">הבא</string>
+    <string name="STR_CAUTION_BODY">לאחר ההורדה, הפעל מחדש כדי להתקין את העדכון. עד סיום ההתקנה לא תוכל להשתמש בטלפון - אפילו לא לשיחות חירום.</string>
+    <string name="STR_CAUTION_BODY2">לאחר העדכון, ייתכן שחלק מההגדרות יחזרו לערכי ברירת המחדל.</string>
+    <string name="STR_CHARING_DIALOG">הורדה באמצעות נתונים ניידים עשויה לגרור תוספת חיובים.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">האם להוריד באמצעות נתונים ניידים?</string>
+    <string name="STR_CONNECTING_TO_SERVER">מתחבר לשרת…</string>
+    <string name="STR_CONNECT_FAIL">החיבור נכשל. נסה מאוחר יותר.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">מוריד עדכונים…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">מוריד…</string>
+    <string name="STR_DOWNLOAD_FAIL">ההורדה נכשלה. נסה מאוחר יותר.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">כדי להשתמש בתכונות החדשות, הורד והתקן את עדכון הקושחה.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ההורדה נכשלה. נסה מאוחר יותר.</string>
+    <string name="STR_FAILED_NOTI">ההורדה לא זמינה.</string>
+    <string name="STR_INITIAL_NOTI">הקש כאן כדי לבחור יישומים מומלצים להורדה.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">הקש כאן כדי להוריד ולהתקין את העדכון.</string>
+    <string name="STR_INSTALLED_NOTI">%d מותקן/ים</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">התקן תוכן נוסף</string>
+    <string name="STR_INSTALL_CAUTIONS">זהירות</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">עדכון זה כולל יישומים ופריטי תוכן אופציונליים. הורדה באמצעות רשתות סלולריות עשויה לגרור תוספת חיובים, בהתאם להסדר שלך עם ספק השירות.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">הותקנה</string>
+    <string name="STR_INSTALL_FORCE">עדכון התוכנה הקריטי הורד. המכשיר יופעל מחדש באופן אוטומטי בעוד %d שניות כדי להתחיל בהתקנה.</string>
+    <string name="STR_KILOBYTE">ק״ב</string>
+    <string name="STR_LINK_LEARNMORE">ברר עוד פרטים</string>
+    <string name="STR_MEGABYTE">מ״ב</string>
+    <string name="STR_NEED_WIFI">כדי להוריד יישומים עליך להיות מחובר לרשת Wi-Fi. התחבר ל-Wi-Fi ונסה שוב.</string>
+    <string name="STR_NEED_WIFI_TITLE">אין חיבור Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">רשת לא זמינה. נסה שוב מאוחר יותר.</string>
+    <string name="STR_NO_APPS">אין יישומים</string>
+    <string name="STR_NO_CONTENT">יישומים זמינים שספק השירות שלך מפיץ יוצגו כאן.</string>
+    <string name="STR_NO_ITEMS">אין פריטים</string>
+    <string name="STR_NO_ITEM_SELECTED">לא נבחרו פריטים.</string>
+    <string name="STR_OMC_HEADER">עדכון של ספק שירות</string>
+    <string name="STR_OMC_SIZE">גודל: %s</string>
+    <string name="STR_OMC_TITLE">עדכון תצורה</string>
+    <string name="STR_OMC_VERSION">גרסה: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">הגדרות ספק השירות</string>
+    <string name="STR_PROCESS_FAIL">העיבוד נכשל.</string>
+    <string name="STR_PROVIDER_APPS">יישומי ספק השירות</string>
+    <string name="STR_REGISTERING_DEVICE">רושם מכשיר…</string>
+    <string name="STR_REGISTER_FAIL">הרישום נכשל.</string>
+    <string name="STR_REGISTER_SUCCESS">המכשיר נרשם.</string>
+    <string name="STR_RESTART_BTN_LATER">אחר כך</string>
+    <string name="STR_RESTART_BTN_RESTART">הפעל מחדש</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">כדי לסיים את התקנת עדכון התוכנה של ספק השירות, הפעל מחדש את הטלפון.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">כדי לסיים את התקנת עדכון התוכנה של ספק השירות, הפעל מחדש את הטאבלט.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">האם להפעיל מחדש?</string>
+    <string name="STR_RESTART_PHONE">הפעל את הטלפון מחדש</string>
+    <string name="STR_RESTART_TABLET">הפעל את הטאבלט מחדש</string>
+    <string name="STR_SELECT_ALL">כל היישומים הבאים</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">יישומים חיוניים</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">הורדת היישומים הבאים אינה כרוכה בחיובים על העברת נתונים.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">הקש על פריט להלן כדי לברר עליו פרטים נוספים.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">הורדת היישומים תתבצע באמצעות Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">קבל יישומים מספק שירות</string>
+    <string name="STR_UPDATE_BODY1">הורדה באמצעות נתונים ניידים עשויה לגרור תוספת חיובים.</string>
+    <string name="STR_UPDATE_BODY2">לאחר התקנת העדכון, הטלפון יופעל מחדש.</string>
+    <string name="STR_UPDATE_FAIL">העדכון נכשל. נסה שוב.</string>
+    <string name="STR_UPDATE_HEADER1">הורד והתקן את התוכנה העדכנית ביותר של ספק השירות.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- התקנת הקושחה אינה כרוכה בתשלום.
+
+- במהלך ההתקנה, לא תוכל להשתמש במכשיר כלל, אפילו לא לשיחות חירום.
+
+- ייתכן שהסמלים שבמסך הבית והגדרות המסך יתאפסו לערכי ברירת המחדל ובמקרה כזה תצטרך להגדיר אותם מחדש לאחר ההתקנה.
+
+- עדכון קושחה אינו אמור להשפיע על הקבצים והנתונים השמורים במכשיר שלך.
+
+- עם זאת, אם תעצור את תהליך ההתקנה לפני שהסתיים, פעולת המכשיר עלולה להיות משובשת וייתכן אובדן של קבצים.
+
+- כדי למנוע אובדן לא צפוי של נתונים, מומלץ לגבות נתונים חשובים לפני ההתקנה."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">הפעל מחדש כדי לסיים את התקנת עדכון התוכנה של ספק השירות.</string>
+    <string name="STR_UPDATING_PACKAGE">מעדכן…</string>
+    <string name="STR_USE_DATA_BTN">השתמש בנתונים</string>
+    <string name="STR_WAIT_FOR_WIFI">"התקנת היישום הושהתה.
+ממתין לחיבור Wi-Fi כדי להתקין יישומים."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">המתן לחיבור Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">התקן יישומים שהומלצו על ידי ספק השירות.</string>
+    <string name="STR_WIDGET_DOWNLOADING">מוריד…</string>
+    <string name="STR_WIDGET_INSTALLED">מותקן</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">לחצן</string>
+    <string name="WSS_STR_NO_UPDATE">העדכונים האחרונים כבר מותקנים.</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Android Wear பயன்பாட்டைப் புதுப்பித்தல் %1$sக்குத் தேவை.</string>
+    <string name="common_android_wear_update_text">Android Wear பயன்பாட்டைப் புதுப்பித்தால் மட்டுமே, %1$s செயல்படும்.</string>
+    <string name="common_android_wear_update_title">Android வியரைப் புதுப்பி</string>
+    <string name="common_google_play_services_api_unavailable_text">தற்போது கிடைக்காத, ஒன்று அல்லது அதற்கு மேற்பட்ட Google Play சேவைகள் %1$sக்குத் தேவை. உதவிக்கு, டெவெலப்பரைத் தொடர்புகொள்ளவும்.</string>
+    <string name="common_google_play_services_enable_button">Google Play சேவைகளை இயக்கு</string>
+    <string name="common_google_play_services_enable_text">Google Play சேவைகளை இயக்கினால் மட்டுமே, %1$s செயல்படும்.</string>
+    <string name="common_google_play_services_enable_title">Google Play சேவைகளை இயக்கு</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s ஆல் கோரப்பட்டது</string>
+    <string name="common_google_play_services_install_button">Google Play சேவைகளைப் பெறுக</string>
+    <string name="common_google_play_services_install_text_phone">Google Play சேவைகள் இருந்தால் மட்டுமே, %1$s செயல்படும். அவை தற்போது ஃபோனில் இல்லை.</string>
+    <string name="common_google_play_services_install_text_tablet">Google Play சேவைகள் இருந்தால் மட்டுமே, %1$s செயல்படும். அவை தற்போது டேப்லெட்டில் இல்லை.</string>
+    <string name="common_google_play_services_install_title">Google Play சேவைகளைப் பெறுக</string>
+    <string name="common_google_play_services_invalid_account_text">இந்தச் சாதனத்தில் குறிப்பிடப்பட்ட கணக்கு இல்லை. வேறு கணக்கைத் தேர்வு செய்யவும்.</string>
+    <string name="common_google_play_services_invalid_account_title">தவறான கணக்கு</string>
+    <string name="common_google_play_services_needs_enabling_title">பயன்பாடானது Google Play சேவைகள் இயக்கக் கேட்கிறது.</string>
+    <string name="common_google_play_services_network_error_text">Google Play சேவைகளில் இணைக்க தரவு இணைப்பு தேவை.</string>
+    <string name="common_google_play_services_network_error_title">பிணைய பிழை</string>
+    <string name="common_google_play_services_notification_needs_update_title">பயன்பாடானது Google Play சேவைகளுக்கான புதுப்பிப்பைக் கேட்கிறது.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play சேவைகள் பிழை</string>
+    <string name="common_google_play_services_sign_in_failed_text">குறிப்பிட்ட கணக்கில் உள்நுழைவதில் பிழை. வேறு கணக்கைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="common_google_play_services_sign_in_failed_title">உள்நுழைவு தோல்வி</string>
+    <string name="common_google_play_services_unknown_issue">Google Play சேவைகளில் அறியப்படாத சிக்கல் உள்ளது.</string>
+    <string name="common_google_play_services_unsupported_text">சாதனம் ஆதரிக்காத Google Play சேவைகளை %1$s சார்ந்துள்ளது. உதவிக்கு, தயாரிப்பாளரைத் தொடர்புகொள்ளவும்.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play சேவைகள்</string>
+    <string name="common_google_play_services_update_button">புதுப்பி</string>
+    <string name="common_google_play_services_update_text">Google Play சேவைகளை இயக்கினால் மட்டுமே, %1$s செயல்படும்.</string>
+    <string name="common_google_play_services_update_title">Google Play சேவைகளைப் புதுப்பி</string>
+    <string name="common_google_play_services_updating_text">தற்போது புதுப்பிக்கப்படும், Google Play சேவைகள் இருந்தால் மட்டுமே, %1$s செயல்படும்.</string>
+    <string name="common_google_play_services_updating_title">Google Play சேவைகள் புதுப்பிக்கப்படுகின்றன</string>
+    <string name="common_open_on_phone">ஃபோனில் திற</string>
+    <string name="common_signin_button_text">உள்நுழைக</string>
+    <string name="common_signin_button_text_long">Google மூலம் உள்நுழை</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">கூடுதல் உள்ளடக்க அளவு: %1$s %2$s</string>
+    <string name="STR_ALL">எல்லாம்</string>
+    <string name="STR_APPS_DESCRIPTION">உங்கள் சேவை வழங்குநர் பரிந்துரைத்த பயன்பாடுகளைத் தேர்வுசெய்யவும்.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">உங்கள் பயன்பாடுகள் அனைத்தும் பதிவிறக்கப்பட்டுள்ளன.</string>
+    <string name="STR_APP_BUTTON_CANCEL">ரத்து</string>
+    <string name="STR_APP_BUTTON_OK">சரி</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">உங்கள் சேவை வழங்குநர் பரிந்துரைத்த பயன்பாடுகளைத் தேர்வுசெய்யவும்.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">நீங்கள் நிறுவ விரும்பும் பயன்பாடுகளைத் தேர்வுசெய்க.</string>
+    <string name="STR_APP_INSTALL_TITLE">பயன்பாடுகளை நிறுவுக</string>
+    <string name="STR_APP_STATE_CANCELED">ரத்துசெய்யப்பட்டது</string>
+    <string name="STR_APP_STATE_CONNECTING">இணைக்கிறது…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">பதிவிறக்குகிறது…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">பதிவிறக்கம் தோல்வியுற்றது.</string>
+    <string name="STR_APP_STATE_INSTALLED">நிறுவப்பட்டது</string>
+    <string name="STR_APP_STATE_INSTALLING">நிறுவுகிறது…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">நிறுவல் தோல்வியுற்றது</string>
+    <string name="STR_APP_STATE_WAITING">காத்திருக்கிறது…</string>
+    <string name="STR_BTN_INSTALL">புகுத்து</string>
+    <string name="STR_BTN_INSTALL_ALL">அனைத்தையும் நிறுவு</string>
+    <string name="STR_BTN_SKIP">தவிர்க்கவும்</string>
+    <string name="STR_BUTTON_NEXT">அடுத்து</string>
+    <string name="STR_CAUTION_BODY">பதிவிறக்கிய பிறகு, புதுப்பிப்பை நிறுவ மீண்டும் துவக்கவும். நிறுவல் முடியும் வரை அவசரநிலை அழைப்புகள் உட்பட எதற்கும் உங்கள் ஃபோனைப் பயன்படுத்த இயலாது.</string>
+    <string name="STR_CAUTION_BODY2">புதுப்பித்த பிறகு, சில அமைவுகள் அவற்றின் டீஃபால்ட் மதிப்புகளுக்கு ரீசெட் செய்யப்படும்.</string>
+    <string name="STR_CHARING_DIALOG">மொபைல் தரவைப் பயன்படுத்தி பதிவிறக்குவதற்கு கூடுதல் கட்டணங்கள் விதிக்கப்படலாம்.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">மொபைல் தரவைப் பயன்படுத்தி பதிவிறக்கவா?</string>
+    <string name="STR_CONNECTING_TO_SERVER">வழங்கியுடன் இணைகிறது…</string>
+    <string name="STR_CONNECT_FAIL">இணைப்பு தோல்வி. பின்னர் முயலுக</string>
+    <string name="STR_DOWNLOADING_PACKAGE">புதுப்பிப்புகளைப் பதிவிறக்குகிறது…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">பதிவிறக்குகிறது…</string>
+    <string name="STR_DOWNLOAD_FAIL">பதிவிறக்கம் தோல்வி. பின்னர் முயற்சிக்கவும்.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">சமீபத்திய அம்சங்களைப் பயன்படுத்த, இந்த ஃபேர்ம்வேரை பதிவிறக்கி, நிறுவவும்.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">பதிவிறக்கம் தோல்வி. பின்னர் முயற்சிக்கவும்.</string>
+    <string name="STR_FAILED_NOTI">பதிவிறக்கம் செயலில் இல்லை.</string>
+    <string name="STR_INITIAL_NOTI">பரிந்துரைத்த பயன்பாடுகளைப் பதிவிறக்குவதற்காகத் தேர்வுசெய்ய இங்கு டேப் செய்யவும்.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">புதுப்பிப்பைப் பதிவிறக்கி நிறுவ, இங்கு டேப் செய்யவும்.</string>
+    <string name="STR_INSTALLED_NOTI">%d நிறுவப்பட்டது</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">கூடுதல் உள்ளடக்கத்தை நிறுவுக</string>
+    <string name="STR_INSTALL_CAUTIONS">எச்சரிக்கை</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">இந்தப் புதுப்பிப்பு சில விருப்பமான பயன்பாடுகள் மற்றும் உள்ளடக்கத்தை உள்ளடக்கும். மொபைல் நெட்வொர்க் வழியே பதிவிறக்குவது உங்கள் பணமளிப்புத் திட்டத்தைப் பொறுத்து கூடுதல் கட்டணங்களை விளைவிக்கக் கூடும்.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">பதிவிறக்கப்பட்டது.</string>
+    <string name="STR_INSTALL_FORCE">உங்களது முக்கியமான மென்பொருள் புதுப்பிப்புகள் பதிவிறக்கப்பட்டுள்ளன. நிறுவலைத் துவங்குவதற்காக %d வினாடிகளில் உங்கள் சாதனம் மறுதுவக்கம் ஆகும்.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">மேலும் அறிக</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">பயன்பாடுகளைப் பதிவிறக்க, Wi-Fi உடன் நீங்கள் இணைக்க வேண்டும். Wi-Fi-க்கு இணைக்க மீண்டும் முயலுக.</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi இணைப்பு இல்லை</string>
+    <string name="STR_NETWORK_FAIL">நெட்வொர்க் கிடைக்கவில்லை. பின்னர் மீண்டும் முயலவும்.</string>
+    <string name="STR_NO_APPS">பயன்பாடுகள் எதுவுமில்லை</string>
+    <string name="STR_NO_CONTENT">உங்கள் சேவை வழங்குநர் விடுவித்து கிடைக்கும் பயன்பாடுகள் இங்கு தோன்றும்.</string>
+    <string name="STR_NO_ITEMS">உருப்படிகள் இல்லை</string>
+    <string name="STR_NO_ITEM_SELECTED">உருப்படிகள் தேர்வுசெய்யப்படவில்லை.</string>
+    <string name="STR_OMC_HEADER">சேவை வழங்குநர் புதுப்பிப்பு</string>
+    <string name="STR_OMC_SIZE">அளவு: %s</string>
+    <string name="STR_OMC_TITLE">உள்ளமைவு புதுப்பிப்பு</string>
+    <string name="STR_OMC_VERSION">பதிப்பு: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">வழங்குநர் அமைவுகள்</string>
+    <string name="STR_PROCESS_FAIL">செயல்பாடு தோல்வி.</string>
+    <string name="STR_PROVIDER_APPS">சேவை வழங்குநர் பயன்பாடுகள்</string>
+    <string name="STR_REGISTERING_DEVICE">சாதனம் பதிகிறது…</string>
+    <string name="STR_REGISTER_FAIL">பதிதல் தோல்வி.</string>
+    <string name="STR_REGISTER_SUCCESS">சாதனம் பதியப்பட்டது.</string>
+    <string name="STR_RESTART_BTN_LATER">பின்னர்</string>
+    <string name="STR_RESTART_BTN_RESTART">மீ. துவங்கு</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">உங்கள் சேவை வழங்குநர் மென்பொருள் புதுப்பிப்பை முடிக்க, உங்கள் ஃபோனை மீண்டும் துவக்க வேண்டும்.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">உங்கள் சேவை வழங்குநர் மென்பொருள் புதுப்பிப்பை முடிக்க, உங்கள் டேப்லெட்டை மீண்டும் துவக்க வேண்டும்.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">மீண்டும் துவக்கவா?</string>
+    <string name="STR_RESTART_PHONE">ஃபோனை மீண்டும் துவங்கவும்</string>
+    <string name="STR_RESTART_TABLET">டேப்லெட்டை மீண்டும் துவங்கவும்</string>
+    <string name="STR_SELECT_ALL">பின்வரும் பயன்பாடுகள் அனைத்தும்</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">முக்கியமான பயன்பாடுகள்</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">கீழே உள்ள பயன்பாடுகளைப் பதிவிறக்க, தரவுக் கட்டணங்கள் விதிக்கப்படாது.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">உருப்படியை பற்றி மேலும் அறிய கீழேயுள்ள அதன்மீது டேப் செய்க.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Wi-Fi வழியாக பயன்பாடுகள் பதிவிறக்கப்படும்.</string>
+    <string name="STR_SUW_TITLE">சேவை வழங்குநரிடமிருந்து பயன்பாடுகளைப் பெறவும்</string>
+    <string name="STR_UPDATE_BODY1">மொபைல் தரவைப் பயன்படுத்தி பதிவிறக்குவதற்கு கூடுதல் கட்டணங்கள் விதிக்கப்படலாம்.</string>
+    <string name="STR_UPDATE_BODY2">புதுப்பிப்பு நிறுவப்பட்ட பிறகு, உங்கள் ஃபோன் மீண்டும் துவங்கும்.</string>
+    <string name="STR_UPDATE_FAIL">புதுப்பித்தல் தோல்வி. மீண்டும் முயலுக</string>
+    <string name="STR_UPDATE_HEADER1">உங்கள் சேவை வழங்குநரிடம் இருந்து சமீபத்திய மென்பொருளைப் பதிவிறக்கி நிறுவவும்.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- இந்த ஃபேர்ம்வேர் நிறுவலுக்கு உங்களிடம் கட்டணம் வசூலிக்கப்படாது.
+
+- நிறுவலின்போது, அவசர அழைப்பாக இருந்தாலும், சாதனத்தைப் பயன்படுத்த இயலாது.
+
+- நிறுவலுக்குப் பிறகு, முகப்புத் திரை சின்னங்களும் சாதன அமைவுகளும் டீஃபால்ட் நிலைக்கு மீட்டமைக்கப்படலாம், ஆகவே அவற்றை மீண்டும் கட்டமைக்க வேண்டி இருக்கலாம்.
+
+- ஃபேர்ம்வேர் புதுப்பிப்பால் சாதனத்தில் உள்ள கோப்புகளும் தரவும் பாதிக்கப்படாது.
+
+- இருப்பினும், நிறுவல் செயலாக்கம் முடிவடையும் முன்பாக நீங்கள் நிறுத்தினால் சாதனம் சரியாக இயங்காமல் போகலாம், அதனால் கோப்புகளும் இழக்கப்படலாம்.
+
+- எதிர்பாராதவிதமாக இப்படி தரவு ஏதும் இழக்கப்படுவதைத் தவிர்க்க, நிறுவலுக்கு முன்பு முக்கியமான தரவை பின்சேமித்துக் கொள்ளுமாறு பரிந்துரைக்கிறோம்."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">உங்கள் சேவை வழங்குநர் மென்பொருள் புதுப்பிப்பை நிறுவுவதை முடிக்க, மீண்டும் துவக்கவும்.</string>
+    <string name="STR_UPDATING_PACKAGE">புதுப்பிக்கிறது…</string>
+    <string name="STR_USE_DATA_BTN">தரவைப் பயன்படுத்துக</string>
+    <string name="STR_WAIT_FOR_WIFI">"பயன்பாடு நிறுவல் இடைநிறுத்தப்பட்டது.
+பயன்பாடுகளை நிறுவ, Wi-Fi இணைப்பிற்காக காத்திருக்கிறது."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi இணைப்பிற்காக காத்திருக்கவும்</string>
+    <string name="STR_WIDGET_DEFAULT">உங்கள் சேவை வழங்குநர் பரிந்துரைத்த பயன்பாடுகளை நிறுவவும்.</string>
+    <string name="STR_WIDGET_DOWNLOADING">பதிவிறக்குகிறது…</string>
+    <string name="STR_WIDGET_INSTALLED">நிறுவப்பட்டது.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">பொத்தான்</string>
+    <string name="WSS_STR_NO_UPDATE">புதிய புதுப்பித்தல்கள் முன்பே நிறுவப்பட்டுள்ளன.</string>
+</resources>

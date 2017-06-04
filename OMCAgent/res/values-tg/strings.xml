@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Андозаи муҳтавои иловагӣ: %1$s %2$s</string>
+    <string name="STR_ALL">Ҳама</string>
+    <string name="STR_APPS_DESCRIPTION">Барномаҳоеро интихоб кунед, ки аз ҷониби таҳвилгари хизматрасониҳои шумо тавсия карда шудаанд.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Ҳамаи барномаҳои интихобкардаатон боргирӣ карда шуданд.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Бекор кардан</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Барномаҳоеро интихоб кунед, ки аз ҷониби таҳвилгари хизматрасониҳои шумо тавсия карда шудаанд.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Барномаҳоеро интихоб кунед, ки насб кардан мехоҳед.</string>
+    <string name="STR_APP_INSTALL_TITLE">Насби барномаҳо</string>
+    <string name="STR_APP_STATE_CANCELED">Барҳам дода шуд</string>
+    <string name="STR_APP_STATE_CONNECTING">Пайваст меш-д…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Боргирӣ…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Боргирӣ иҷро нашуд</string>
+    <string name="STR_APP_STATE_INSTALLED">Насбшуда</string>
+    <string name="STR_APP_STATE_INSTALLING">Насбкунӣ…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Насбкунӣ барор наёфт</string>
+    <string name="STR_APP_STATE_WAITING">Интизорӣ…</string>
+    <string name="STR_BTN_INSTALL">Насб кардан</string>
+    <string name="STR_BTN_INSTALL_ALL">Насб кардани ҳама</string>
+    <string name="STR_BTN_SKIP">Партофта гузаштан</string>
+    <string name="STR_BUTTON_NEXT">Навбатӣ</string>
+    <string name="STR_CAUTION_BODY">Барои навсозиро насб кардан, баъди иҷрои боргирӣ дастгоҳро аз нав ба кор дароред. То анҷом ёфтани насбкунӣ шумо телефонро истифода бурда наметавонед, ҳатто барои зангҳои таъҷилӣ.</string>
+    <string name="STR_CAUTION_BODY2">Баъди навсозӣ, баъзе танзимот метавонад ба андозаҳои пешфарз барқарор карда шавад.</string>
+    <string name="STR_CHARING_DIALOG">Барои боргирӣ бо истифодаи иттилооти мобилӣ маблағҳои иловагӣ метавонанд ситонида шаванд.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Бо истифодаи иттилооти мобилӣ боргирӣ к-м?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Пайвастшавӣ ба сервер…</string>
+    <string name="STR_CONNECT_FAIL">Пайваст қатъ шуд. Баъдтар кӯшиш кунед.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Навсозиҳо боргирӣ карда мешаванд…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Боргирӣ…</string>
+    <string name="STR_DOWNLOAD_FAIL">Боргирӣ иҷро нашуд. Баъдтар кӯшиш кунед.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Барои истифода бурдани хусусиятҳои охирин, ин навсозии нармафзори дохилиро боргирӣ ва насб кунед.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Боргирӣ иҷро нашуд. Баъдтар кӯшиш кунед.</string>
+    <string name="STR_FAILED_NOTI">Боргирӣ иҷро нашуд</string>
+    <string name="STR_INITIAL_NOTI">Барои барномаҳои тавсияшударо барои боргирӣ интихоб кардан, инҷо зарба занед.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Барои навсозиро боргирӣ ва насб кардан, инҷо зарба занед.</string>
+    <string name="STR_INSTALLED_NOTI">%d насб шуд</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Насб кардани нармафзори иловагӣ</string>
+    <string name="STR_INSTALL_CAUTIONS">Эҳтиёт</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Ин навсозӣ якчанд барнома ва муҳтавои иловагро дар бар мегирад. Боргирӣ тавассути шабакаҳои мобилӣ метавонад, ки вобаста аз нақшаи пардохти шумо, боиси пардохтҳои иловагӣ шавад.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Боргиришуда</string>
+    <string name="STR_INSTALL_FORCE">Навсозии қатъии нармафзор боргирӣ карда шуд. Барои оғоз кардан насбкунӣ, дастгоҳи шумо баъди %d сония аз нав ба кор дароварда мешавад.</string>
+    <string name="STR_KILOBYTE">KБ</string>
+    <string name="STR_LINK_LEARNMORE">Маълумоти бештар</string>
+    <string name="STR_MEGABYTE">MБ</string>
+    <string name="STR_NEED_WIFI">Барои барнома боргирӣ кардан, шумо бояд ба Wi-Fi пайваст бошед. Ба Wi-Fi пайваст шуда, кӯшишро такрор кунед.</string>
+    <string name="STR_NEED_WIFI_TITLE">Пайвасти Wi-Fi нест</string>
+    <string name="STR_NETWORK_FAIL">Шабака дастрас нест. Баъдтар аз нав кӯшиш кунед.</string>
+    <string name="STR_NO_APPS">Ягон барнома нест</string>
+    <string name="STR_NO_CONTENT">Барномаҳои дастраси аз ҷониби таҳвилгари хизматрасониҳои шумо нашршуда дар инҷо нишон дода мешаванд.</string>
+    <string name="STR_NO_ITEMS">Ягон объект нест</string>
+    <string name="STR_NO_ITEM_SELECTED">Ягон объект интихоб нашудааст.</string>
+    <string name="STR_OMC_HEADER">Навсозии таҳвилгари хизматрасонӣ</string>
+    <string name="STR_OMC_SIZE">Андоза: %s</string>
+    <string name="STR_OMC_TITLE">Навсозии конфигуратсия</string>
+    <string name="STR_OMC_VERSION">Версия: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Танзимоти оператор</string>
+    <string name="STR_PROCESS_FAIL">Коркард иҷро нашуд</string>
+    <string name="STR_PROVIDER_APPS">Барномаҳои таҳвилгари хизматрасониҳо</string>
+    <string name="STR_REGISTERING_DEVICE">Қайдкунии дастгоҳ…</string>
+    <string name="STR_REGISTER_FAIL">Қайд иҷро нашуд</string>
+    <string name="STR_REGISTER_SUCCESS">Дастгоҳ қайд шуд</string>
+    <string name="STR_RESTART_BTN_LATER">Дертар</string>
+    <string name="STR_RESTART_BTN_RESTART">Бозоғозӣ к</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Барои насбкунии навсозии нармафзори таҳвилгари хизматрасониҳоро ба анҷом расондан, бояд телефонро аз нав ба кор дароред.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Барои насбкунии навсозии нармафзори таҳвилгари хизматрасониҳоро ба анҷом расондан, бояд планшетро аз нав ба кор дароред.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Аз нав ба кор дароем?</string>
+    <string name="STR_RESTART_PHONE">Бозоғозии телефон</string>
+    <string name="STR_RESTART_TABLET">Бозоғозии планшет</string>
+    <string name="STR_SELECT_ALL">Ҳамаи барномаҳои зерин</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Барномаҳои асосӣ</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Барои боргирии барномаҳои зерин маблағ ситонида намешавад.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Дар поён ҷузъеро зарба зада, дар бораи он маълумоти бештар гиред.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Барномаҳо тавассути Wi-Fi боргирӣ карда мешаванд.</string>
+    <string name="STR_SUW_TITLE">Гирифтани барномаҳо з таҳвилгари хизматрасониҳо</string>
+    <string name="STR_UPDATE_BODY1">Барои боргирӣ бо истифодаи иттилооти мобилӣ маблағҳои иловагӣ метавонанд ситонида шаванд.</string>
+    <string name="STR_UPDATE_BODY2">Баъди насб шудани навсозӣ, телефони шумо аз нав ба кор дароварда мешавад.</string>
+    <string name="STR_UPDATE_FAIL">Update failed. Try again.</string>
+    <string name="STR_UPDATE_HEADER1">Нармафзори навтаринро аз таҳвилгари хизматрасониҳои худ боргирӣ ва насб кунед.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Аз шумо барои насб кардани ин миёнафзор маблағ ситонида намешавад.
+
+- Дар рафти иҷрои насбкунӣ, шумо дастгоҳи худро тамоман истифода бурда наметавонед, ҳатто барои зангҳои таъҷилӣ.
+
+- Нишонҳои экрани асосӣ ва танзимоти дастгоҳ метавонанд ба арзишҳои пешфарз барқарор карда шаванд ва баъди анҷоми насбкунӣ бояд аз нав танзим карда шаванд.
+
+- Навсозии миёнафзор набояд ба файлҳо ва иттилооти дохили дастгоҳ таъсир расонад.
+
+- Бинобар ин, агар раванди насбкуниро қабл аз анҷом ёфтанаш қатъ кунед, дастгоҳ метавонад дуруст кор накунад ва файлҳоятон метавонанд аз даст дода шаванд.
+
+- Барои пешгирӣ кардани нестшавии ногаҳонии иттилоот, тавсия медиҳем, ки иттилооти муҳимро қабл аз оғоз кардани насбкунӣ нусхаи эҳтиётӣ гиред."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Барои насб кардани навсозии нармафзори таҳвилгари хизматрасониҳои худро ба анҷом расондан, дастгоҳро аз нав ба кор дароред.</string>
+    <string name="STR_UPDATING_PACKAGE">Навсозӣ…</string>
+    <string name="STR_USE_DATA_BTN">Иттилоот истиф бурдан</string>
+    <string name="STR_WAIT_FOR_WIFI">"Насбкунии барномаҳо таваққуф дода шуд.
+Дастгоҳ барои насб барномаҳоро насб кардан интизори Wi-Fi мебошад."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Интизори Wi-Fi шудан</string>
+    <string name="STR_WIDGET_DEFAULT">Барномаҳоеро насб кунед, ки аз ҷониби таҳвилгари хизматрасониҳои шумо тавсия карда шудаанд.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Боргирӣ…</string>
+    <string name="STR_WIDGET_INSTALLED">Насбшуда</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Тугма</string>
+    <string name="WSS_STR_NO_UPDATE">Навсозиҳои охирин аллакай насб карда шудаанд.</string>
+</resources>

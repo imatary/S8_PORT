@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_content" android:id="@id/tv_app_description1" android:paddingTop="@dimen/activity_padding_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/STR_SUW_DESCRIPTION_WIFI" android:paddingStart="@dimen/wizard_list_margin_default" android:paddingEnd="@dimen/wizard_list_margin_default" style="@style/wizard_contents_text" />
+    <TextView android:textSize="@dimen/text_size_content" android:id="@id/tv_app_description3" android:paddingTop="@dimen/activity_padding_default" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/wizard_list_margin_default" android:paddingEnd="@dimen/wizard_list_margin_default" style="@style/wizard_contents_text" />
+</LinearLayout>

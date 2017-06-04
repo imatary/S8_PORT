@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Памер дадатковага змесціва: %1$s %2$s</string>
+    <string name="STR_ALL">Усе</string>
+    <string name="STR_APPS_DESCRIPTION">Выберыце праграмы, рэкамендаваныя вашым пастаўшчыком паслуг.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Усе выбраныя вамі праграмы спампаваны.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Скасав.</string>
+    <string name="STR_APP_BUTTON_OK">ОК</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Выберыце праграмы, рэкамендаваныя вашым пастаўшчыком паслуг.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Выберыце праграмы, якія хочаце ўсталяваць.</string>
+    <string name="STR_APP_INSTALL_TITLE">Усталяваць праграмы</string>
+    <string name="STR_APP_STATE_CANCELED">Скасавана</string>
+    <string name="STR_APP_STATE_CONNECTING">Злучэнне…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Спампоўванне…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Збой спампоўвання.</string>
+    <string name="STR_APP_STATE_INSTALLED">Усталявана</string>
+    <string name="STR_APP_STATE_INSTALLING">Installing…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Збой усталявання</string>
+    <string name="STR_APP_STATE_WAITING">Чаканне…</string>
+    <string name="STR_BTN_INSTALL">Устал.</string>
+    <string name="STR_BTN_SKIP">Прапусціць</string>
+    <string name="STR_BUTTON_NEXT">Далей</string>
+    <string name="STR_CAUTION_BODY">Пасля спампоўкі перазагрузіцеся для ўсталёўкі абнаўлення. Вы не зможаце выкарыстоўваць тэлефон, нават для экстранных выклікаў, да канца ўсталёўкі.</string>
+    <string name="STR_CAUTION_BODY2">Пасля абнаўлення некаторыя налады могуць быць скінуты да стандартных заводскіх значэнняў.</string>
+    <string name="STR_CHARING_DIALOG">Спампоўванне праз мабільную перадачу даных можа патрабаваць дадатковай аплаты.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Спампаваць праз мабільную перадачу даных?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Падлучэнне да сервера…</string>
+    <string name="STR_CONNECT_FAIL">Connection failed. Try later.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Спампоўванне абнаўленняў…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Спампоўванне…</string>
+    <string name="STR_DOWNLOAD_FAIL">Збой спампоўвання. Паспрабуйце пазней.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Каб карыстацца самымі новымі функцыямі, спампуйце і ўсталюйце гэта абнаўленне прашыўкі.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Збой спампоўвання. Паспрабуйце пазней.</string>
+    <string name="STR_FAILED_NOTI">Збой спампоўвання.</string>
+    <string name="STR_INITIAL_NOTI">Націсніце тут, каб выбраць рэкамендаваныя для спампоўкі праграмы.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Націсніце тут, каб спампаваць і ўсталяваць абнаўленне.</string>
+    <string name="STR_INSTALLED_NOTI">%d усталявана</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Усталяваць дадатковае змесціва</string>
+    <string name="STR_INSTALL_CAUTIONS">Засцярога</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Гэты абнаўленні ўключаюць некаторыя неабавязковыя праграмы і змесціва. Спампоўванне праз мабільныя сеткі можа патрабаваць дадатковай аплаты ў залежнасці ад тарыфнага плана.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Спампавана.</string>
+    <string name="STR_INSTALL_FORCE">Крытычнае абнаўленне ПЗ было спампавана. Прылада перазапусціцца праз %d секунд, каб пачаць усталяванне.</string>
+    <string name="STR_KILOBYTE">КБ</string>
+    <string name="STR_LINK_LEARNMORE">Даведацца больш</string>
+    <string name="STR_MEGABYTE">МБ</string>
+    <string name="STR_NEED_WIFI">Для спампоўкі праграм трэба падлучыцца да Wi-Fi. Падлучыцеся да Wi-Fi і паўтарыце спробу.</string>
+    <string name="STR_NEED_WIFI_TITLE">Няма злучэння Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Сетка недаступна. Паўтарыце спробу пазней.</string>
+    <string name="STR_NO_APPS">Няма праграм</string>
+    <string name="STR_NO_CONTENT">Даступныя праграмы, выпушчаныя вашым пастаўшчыком паслуг, будуць паказаны тут.</string>
+    <string name="STR_NO_ITEMS">Няма элементаў</string>
+    <string name="STR_NO_ITEM_SELECTED">Элементы не выбраны.</string>
+    <string name="STR_OMC_HEADER">Абнаўленне пастаўшчыка паслуг</string>
+    <string name="STR_OMC_SIZE">Памер: %s</string>
+    <string name="STR_OMC_TITLE">Абнаўленне канфігурацыі</string>
+    <string name="STR_OMC_VERSION">Версія: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Налады аператара</string>
+    <string name="STR_PROCESS_FAIL">Памылка апрацоўкі.</string>
+    <string name="STR_PROVIDER_APPS">Праграмы пастаўшчыка паслуг</string>
+    <string name="STR_REGISTERING_DEVICE">Рэгістрацыя прылады…</string>
+    <string name="STR_REGISTER_FAIL">Памылка рэгістрацыі.</string>
+    <string name="STR_REGISTER_SUCCESS">Прылада зарэгістравана.</string>
+    <string name="STR_RESTART_BTN_LATER">Пазней</string>
+    <string name="STR_RESTART_BTN_RESTART">Перазап.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Каб скончыць усталёўку абнаўлення праграмнага забеспячэнне вашага пастаўшчыка паслуг, трэба перазапусціць тэлефон.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Каб скончыць усталёўку абнаўлення праграмнага забеспячэнне вашага пастаўшчыка паслуг, трэба перазапусціць планшэт.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Перазапусціць?</string>
+    <string name="STR_RESTART_PHONE">Перазапусціць тэлефон</string>
+    <string name="STR_RESTART_TABLET">Перазапусціць планшэт</string>
+    <string name="STR_SELECT_ALL">Усе наступныя праграмы</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Асноўныя праграмы</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">За спампоўку ніжэйпрыведзеных праграм не спаганяецца дадатковая аплата.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Каб даведацца больш, націсніце на патрэбны элемент ніжэй.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Праграмы будуць спампаваны па Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Атрымаць праграмы ад пастаўшчыка паслуг</string>
+    <string name="STR_UPDATE_BODY1">Спампоўванне праз мабільную перадачу даных можа патрабаваць дадатковай аплаты.</string>
+    <string name="STR_UPDATE_BODY2">Тэлефон перазапусціцца пасля ўсталявання абнаўлення.</string>
+    <string name="STR_UPDATE_FAIL">Update failed. Try again.</string>
+    <string name="STR_UPDATE_HEADER1">Спампуйце і ўсталюйце апошняе праграмнае забеспячэнне ад вашага пастаўшчыка паслуг.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- За ўсталяванне гэтай убудаванай праграмы з вас не будзе спаганяцца плата.
+
+- Падчас усталявання вы не зможаце выкарыстоўваць вашу прыладу зусім, нават для экстраных выклікаў.
+
+- Значкі на галоўным экране і налады прылады могуць вярнуцца ў стандартны стан, і пасля ўсталявання можа спатрэбіцца іх паўторнае наладжванне.
+
+- Абнаўленне ўбудаванай праграмы не закране файлы і даныя, захаваныя на прыладзе.
+
+- Аднак, калі вы спыніце працэс усталявання да яго заканчэння, ваша прылада можа не работаць як след, і файлы могуць быць пашкоджаны.
+
+- Каб пазбегнуць нечаканай страты даных, перад усталяваннем рэкамендуецца выканаць рэзервовае капіраванне важных даных."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Перазапусціце, каб завяршыць усталёўку абнаўлення вашага пастаўшчыка паслуг.</string>
+    <string name="STR_UPDATING_PACKAGE">Абнаўленне…</string>
+    <string name="STR_USE_DATA_BTN">Выкарыстоўваць даныя</string>
+    <string name="STR_WAIT_FOR_WIFI">"Усталёўка праграмы прыпынена.
+Для ўсталёўкі праграм чакаецца падлучэнне да Wi-Fi."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Чаканне Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Усталюйце праграмы, рэкамендаваныя вашым пастаўшчыком паслуг.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Спампоўка…</string>
+    <string name="STR_WIDGET_INSTALLED">Усталявана.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Кнопка</string>
+    <string name="WSS_STR_NO_UPDATE">Апошнія абнаўленні ўжо ўсталяваны.</string>
+</resources>

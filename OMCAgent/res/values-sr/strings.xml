@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s захтева ажурирање апликације Android Wear.</string>
+    <string name="common_android_wear_update_text">%1$s не може да се покрене ако не ажурирате апликацију Android Wear.</string>
+    <string name="common_android_wear_update_title">Ажурирајте Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s захтева једну Google Play услугу која тренутно није доступна или више њих. Контактирајте програмера да бисте добили помоћ.</string>
+    <string name="common_google_play_services_enable_button">Омогући Google Play услуге</string>
+    <string name="common_google_play_services_enable_text">%1$s неће функционисати ако не омогућите Google Play услуге.</string>
+    <string name="common_google_play_services_enable_title">Омогућавање Google Play услуга</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Захтева %1$s</string>
+    <string name="common_google_play_services_install_button">Преузми Google Play услуге</string>
+    <string name="common_google_play_services_install_text_phone">%1$s не може да се покрене без Google Play услуга, које недостају на телефону.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s не може да се покрене без Google Play услуга, које недостају на таблету.</string>
+    <string name="common_google_play_services_install_title">Преузимање Google Play услуга</string>
+    <string name="common_google_play_services_invalid_account_text">Наведени налог не постоји на овом уређају. Одаберите други налог.</string>
+    <string name="common_google_play_services_invalid_account_title">Неважећи налог</string>
+    <string name="common_google_play_services_needs_enabling_title">Апликација захтева да Google Play услуге буду омогућене.</string>
+    <string name="common_google_play_services_network_error_text">За повезивање са Google Play услугама потребна је веза за пренос података.</string>
+    <string name="common_google_play_services_network_error_title">Грешка на мрежи</string>
+    <string name="common_google_play_services_notification_needs_update_title">Апликација захтева ажурирање Google Play услуга.</string>
+    <string name="common_google_play_services_notification_ticker">Грешка Google Play услуга</string>
+    <string name="common_google_play_services_sign_in_failed_text">Дошло је до грешке при пријављивању на наведени налог. Изаберите други налог.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Пријављивање није успело</string>
+    <string name="common_google_play_services_unknown_issue">Непознат проблем са Google Play услугама.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s користи Google Play услуге, које уређај не подржава. Контактирајте произвођача да бисте добили помоћ.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play услуге</string>
+    <string name="common_google_play_services_update_button">Ажурирај</string>
+    <string name="common_google_play_services_update_text">%1$s не може да се покрене ако не ажурирате Google Play услуге.</string>
+    <string name="common_google_play_services_update_title">Ажурирање Google Play услуга</string>
+    <string name="common_google_play_services_updating_text">%1$s не може да се покрене без Google Play услуга, које се тренутно ажурирају.</string>
+    <string name="common_google_play_services_updating_title">Google Play услуге се ажурирају</string>
+    <string name="common_open_on_phone">Отвори на телефону</string>
+    <string name="common_signin_button_text">Пријави ме</string>
+    <string name="common_signin_button_text_long">Пријави ме преко Google-а</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Veličina dodatnog sadržaja: %1$s %2$s</string>
+    <string name="STR_ALL">Sve</string>
+    <string name="STR_APPS_DESCRIPTION">Izaberite aplikacije koje je preporučio provajder usluga.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Sve aplikacije koje ste izabrali su preuzete.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Otkaži</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Izaberite aplikacije koje je preporučio provajder usluga.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Izaberite aplikacije koje želite da instalirate.</string>
+    <string name="STR_APP_INSTALL_TITLE">Instaliraj aplikacije</string>
+    <string name="STR_APP_STATE_CANCELED">Otkazano</string>
+    <string name="STR_APP_STATE_CONNECTING">Povezuje se…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Preuzima se…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Preuzimanje neuspešno.</string>
+    <string name="STR_APP_STATE_INSTALLED">Instalirano</string>
+    <string name="STR_APP_STATE_INSTALLING">Instaliranje…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Neuspešna instalacija</string>
+    <string name="STR_APP_STATE_WAITING">Čekanje…</string>
+    <string name="STR_BTN_INSTALL">Instaliraj</string>
+    <string name="STR_BTN_INSTALL_ALL">Instaliraj sve</string>
+    <string name="STR_BTN_SKIP">Preskoči</string>
+    <string name="STR_BUTTON_NEXT">Naredna</string>
+    <string name="STR_CAUTION_BODY">Nakon preuzimanja, restartujte da biste instalirali ažuriranje. Dok se instalacija ne završi, nećete moći da koristite telefon, čak ni da upućujete pozive u hitnom slučaju.</string>
+    <string name="STR_CAUTION_BODY2">Nakon ažuriranja, neka podešavanja mogu da se resetuju na svoje podrazumevane vrednosti.</string>
+    <string name="STR_CHARING_DIALOG">Preuzimanje korišćenjem mobilnih podataka može dovesti do dodatnih troškova.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Preuzeti koristeći mobilne podatke?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Povezivanje na server</string>
+    <string name="STR_CONNECT_FAIL">Povezivanje nije uspelo. Pokušaj kasnije.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Preuzimanje ažuriranja…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Preuzimanje…</string>
+    <string name="STR_DOWNLOAD_FAIL">Preuzimanje neuspešno. Pokušaj kasnije.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Da biste koristili najnovije funkcije, preuzmite i instalirajte ovo ažuriranje za firmver.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Preuzimanje neuspešno. Pokušaj kasnije.</string>
+    <string name="STR_FAILED_NOTI">Preuzimanje neuspešno.</string>
+    <string name="STR_INITIAL_NOTI">Kucnite ovde da biste izabrali preporučene aplikacije za preuzimanje.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Kucnite ovde da biste preuzeli i instalirali ažuriranje.</string>
+    <string name="STR_INSTALLED_NOTI">Instalirano: %d</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Instalirajte dodatni sadržaj</string>
+    <string name="STR_INSTALL_CAUTIONS">Oprez</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Ovo ažuriranje obuhvata neke opcionalne aplikacije i sadržaj. Preuzimanje putem mobilnih mreža može dovesti do dodatnih troškova u zavisnosti od tarifnog paketa.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Preuzeto.</string>
+    <string name="STR_INSTALL_FORCE">Kritično ažuriranje softvera je preuzeto. Uređaj će se restartovati za %d sekundi kako bi instalacija počela.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Saznaj više</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Morate da se povežete na Wi-Fi mrežu da biste preuzeli aplikacije. Povežite se na Wi-Fi mrežu i pokušajte ponovo.</string>
+    <string name="STR_NEED_WIFI_TITLE">Nema Wi-Fi veze</string>
+    <string name="STR_NETWORK_FAIL">Mreža nije dostupna. Pokušaj ponovo kasnije.</string>
+    <string name="STR_NO_APPS">Nema aplikacija</string>
+    <string name="STR_NO_CONTENT">Dostupne aplikacije koje je objavio provajder usluga će se prikazati ovde.</string>
+    <string name="STR_NO_ITEMS">Nema stavki</string>
+    <string name="STR_NO_ITEM_SELECTED">Nema izabranih stavki.</string>
+    <string name="STR_OMC_HEADER">Ažuriranje provajdera usluga</string>
+    <string name="STR_OMC_SIZE">Veličina: %s</string>
+    <string name="STR_OMC_TITLE">Ažuriranje konfiguracije</string>
+    <string name="STR_OMC_VERSION">Verzija: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Podešavanja operatera</string>
+    <string name="STR_PROCESS_FAIL">Obrada neuspešna.</string>
+    <string name="STR_PROVIDER_APPS">Aplikacije provajdera usluga</string>
+    <string name="STR_REGISTERING_DEVICE">Registracija uređaja…</string>
+    <string name="STR_REGISTER_FAIL">Registracija neuspešna.</string>
+    <string name="STR_REGISTER_SUCCESS">Uređaj je registrovan.</string>
+    <string name="STR_RESTART_BTN_LATER">Kasnije</string>
+    <string name="STR_RESTART_BTN_RESTART">Restartuj</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Da biste završili instaliranje ažuriranja softvera provajdera usluga, morate da restartujete telefon.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Da biste završili instaliranje ažuriranja softvera provajdera usluga, morate da restartujete tablet računar.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Restartovati?</string>
+    <string name="STR_RESTART_PHONE">Restartujte telefon</string>
+    <string name="STR_RESTART_TABLET">Restartujte tablet računar</string>
+    <string name="STR_SELECT_ALL">Sve sledeće aplikacije</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Ključne aplikacije</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Neće se naplatiti troškovi za prenos podataka za preuzimanje aplikacija u nastavku.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Kucnite na ikonu u nastavku da biste saznali više o njoj.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Aplikacije će biti preuzete preko Wi-Fi mreže.</string>
+    <string name="STR_SUW_TITLE">Nabavite aplikacije provajdera usluga</string>
+    <string name="STR_UPDATE_BODY1">Preuzimanje korišćenjem mobilnih podataka može dovesti do dodatnih troškova.</string>
+    <string name="STR_UPDATE_BODY2">Telefon će se restartovati nakon što se instalira ažuriranje.</string>
+    <string name="STR_UPDATE_FAIL">Neuspešna dopuna. Pokušaj ponovo.</string>
+    <string name="STR_UPDATE_HEADER1">Preuzmite i instalirajte najnoviji softver provajdera usluga.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"– Ova instalacija firmvera vam neće biti naplaćena.
+
+– Tokom instalacije nećete moći da koristite uređaj, čak ni za hitne pozive.
+
+– Ikone na početnom ekranu i podešavanja uređaja mogu biti resetovani na njihove podrazumevane vrednosti i možda ćete morati da ih ponovo konfigurišete nakon instalacije.
+
+– Ažuriranje firmvera ne bi trebalo da utiče na fajlove i podatke na uređaju.
+
+– Ukoliko, međutim, zaustavite proces instalacije pre nego što se on završi, uređaj zbog toga možda neće raditi normalno i može doći do gubitka fajlova.
+
+– Da biste izbegli neočekivani gubitak podataka, preporučujemo da bekapujete važne podatke pre instalacije."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Restartovanje radi završetka instaliranja ažuriranja softvera provajdera usluga.</string>
+    <string name="STR_UPDATING_PACKAGE">Ažuriranje…</string>
+    <string name="STR_USE_DATA_BTN">Upotreba podataka</string>
+    <string name="STR_WAIT_FOR_WIFI">"Instalacija aplikacije je pauzirana.
+Čeka se na Wi-Fi mrežu radi instaliranja aplikacija."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Sačekaj Wi-Fi vezu</string>
+    <string name="STR_WIDGET_DEFAULT">Instalirajte aplikacije koje je preporučio provajder usluga.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Preuzima se…</string>
+    <string name="STR_WIDGET_INSTALLED">Instalirano.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Dugme</string>
+    <string name="WSS_STR_NO_UPDATE">Najnovija ažuriranja su već instalirana.</string>
+</resources>

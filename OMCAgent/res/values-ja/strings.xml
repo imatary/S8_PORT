@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$sにはAndroid Wearアプリの更新が必要です。</string>
+    <string name="common_android_wear_update_text">%1$sの実行にはAndroid Wearアプリの更新が必要です。</string>
+    <string name="common_android_wear_update_title">Android Wearの更新</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$sには現在利用されていないGoogle Play開発者サービスが必要です。詳しくはデベロッパーにお問い合わせください。</string>
+    <string name="common_google_play_services_enable_button">Play開発者サービスの有効化</string>
+    <string name="common_google_play_services_enable_text">%1$sの実行には、Google Play開発者サービスの有効化が必要です。</string>
+    <string name="common_google_play_services_enable_title">Play開発者サービスの有効化</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$sによるリクエスト</string>
+    <string name="common_google_play_services_install_button">Play開発者サービスの入手</string>
+    <string name="common_google_play_services_install_text_phone">%1$sの実行にはGoogle Play開発者サービスが必要ですが、お使いのスマートフォンにはインストールされていません。</string>
+    <string name="common_google_play_services_install_text_tablet">%1$sの実行にはGoogle Play開発者サービスが必要ですが、お使いのタブレットにはインストールされていません。</string>
+    <string name="common_google_play_services_install_title">Play開発者サービスの入手</string>
+    <string name="common_google_play_services_invalid_account_text">指定したアカウントはこの端末上に存在しません。別のアカウントを選択してください。</string>
+    <string name="common_google_play_services_invalid_account_title">無効なアカウント</string>
+    <string name="common_google_play_services_needs_enabling_title">アプリではGoogle Play開発者サービスを有効にする必要があります</string>
+    <string name="common_google_play_services_network_error_text">Google Play開発者サービスに接続するには、データ接続が必要です。</string>
+    <string name="common_google_play_services_network_error_title">ネットワークエラー</string>
+    <string name="common_google_play_services_notification_needs_update_title">アプリではGoogle Play開発者サービスを更新する必要があります</string>
+    <string name="common_google_play_services_notification_ticker">Google Play開発者サービスのエラー</string>
+    <string name="common_google_play_services_sign_in_failed_text">指定されたアカウントへのログイン中にエラーが発生しました。別のアカウントを選択してください。</string>
+    <string name="common_google_play_services_sign_in_failed_title">ログインできませんでした</string>
+    <string name="common_google_play_services_unknown_issue">Google Play開発者サービスで原因不明の問題が発生しました。</string>
+    <string name="common_google_play_services_unsupported_text">%1$sに必要なGoogle Play開発者サービスは、お使いの端末ではサポートされていません。詳しくは端末メーカーにお問い合わせください。</string>
+    <string name="common_google_play_services_unsupported_title">Google Play開発者サービス</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_google_play_services_update_text">%1$sの実行にはGoogle Play開発者サービスの更新が必要です。</string>
+    <string name="common_google_play_services_update_title">Play開発者サービスの更新</string>
+    <string name="common_google_play_services_updating_text">%1$sの実行にはGoogle Play開発者サービスが必要ですが、このサービスは現在更新中です。</string>
+    <string name="common_google_play_services_updating_title">Google Play開発者サービスの更新中</string>
+    <string name="common_open_on_phone">端末で開く</string>
+    <string name="common_signin_button_text">ログイン</string>
+    <string name="common_signin_button_text_long">Googleでログイン</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">追加コンテンツのサイズ: %1$s%2$s</string>
+    <string name="STR_ALL">全て</string>
+    <string name="STR_APPS_DESCRIPTION">サービスプロバイダが推奨するアプリを選択してください。</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">選択した全てのアプリのダウンロードが完了しました。</string>
+    <string name="STR_APP_BUTTON_CANCEL">キャンセル</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">サービスプロバイダが推奨するアプリを選択してください。</string>
+    <string name="STR_APP_INSTALL_CONFIRM">インストールするアプリを選択してください。</string>
+    <string name="STR_APP_INSTALL_TITLE">アプリをインストール</string>
+    <string name="STR_APP_STATE_CANCELED">取り消し</string>
+    <string name="STR_APP_STATE_CONNECTING">接続中…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ダウンロード中…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ダウンロードに失敗しました。</string>
+    <string name="STR_APP_STATE_INSTALLED">インストール済み</string>
+    <string name="STR_APP_STATE_INSTALLING">インストール中…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">インストールに失敗</string>
+    <string name="STR_APP_STATE_WAITING">待機中…</string>
+    <string name="STR_BTN_INSTALL">インストール</string>
+    <string name="STR_BTN_INSTALL_ALL">全てをインストール</string>
+    <string name="STR_BTN_SKIP">スキップ</string>
+    <string name="STR_BUTTON_NEXT">次へ</string>
+    <string name="STR_CAUTION_BODY">ダウンロード完了後、更新をインストールするため再起動します。インストールが完了するまで、緊急電話を含む端末の機能を使用することはできません。</string>
+    <string name="STR_CAUTION_BODY2">更新後、一部の設定が初期設定に戻る場合があります。</string>
+    <string name="STR_CHARING_DIALOG">モバイルデータでダウンロードすると、追加料金が発生する可能性があります。</string>
+    <string name="STR_CHARING_DIALOG_TITLE">モバイルデータでダウンロードしますか？</string>
+    <string name="STR_CONNECTING_TO_SERVER">サーバーに接続中…</string>
+    <string name="STR_CONNECT_FAIL">接続に失敗しました。後ほどお試しください。</string>
+    <string name="STR_DOWNLOADING_PACKAGE">更新をダウンロード中…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ﾀﾞｳﾝﾛｰﾄﾞ中…</string>
+    <string name="STR_DOWNLOAD_FAIL">ダウンロードに失敗しました。後ほどお試しください。</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">最新の機能を利用するには、このファームウェアの更新をダウンロードしてインストールします。</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ダウンロードに失敗しました。後ほどお試しください。</string>
+    <string name="STR_FAILED_NOTI">ダウンロードに失敗しました。</string>
+    <string name="STR_INITIAL_NOTI">ここをタップしてダウンロード用のおすすめアプリを選択してください。</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">更新ファイルをダウンロードしてインストールするには、ここをタップしてください。</string>
+    <string name="STR_INSTALLED_NOTI">%d件インストール</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">追加コンテンツをインストール</string>
+    <string name="STR_INSTALL_CAUTIONS">注意</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">この更新には、任意のアプリおよびコンテンツが含まれています。モバイルネットワークでダウンロードすると、料金プランによっては追加料金が発生する可能性があります。</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ダウンロードしました。</string>
+    <string name="STR_INSTALL_FORCE">重要なソフトウェア更新をダウンロードしました。インストールを開始するため、端末は%d秒後に自動的に再起動します。</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">詳細を表示</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">アプリをダウンロードするには、Wi-Fiに接続する必要があります。Wi-Fiに接続して再度実行してください。</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi未接続</string>
+    <string name="STR_NETWORK_FAIL">ネットワークを利用できません。後ほどお試しください。</string>
+    <string name="STR_NO_APPS">アプリがありません</string>
+    <string name="STR_NO_CONTENT">ご利用のサービスプロバイダから利用可能なアプリがリリースされると、ここに表示されます。</string>
+    <string name="STR_NO_ITEMS">アイテムがありません</string>
+    <string name="STR_NO_ITEM_SELECTED">アイテムを選択していません。</string>
+    <string name="STR_OMC_HEADER">サービスプロバイダ更新</string>
+    <string name="STR_OMC_SIZE">サイズ: %s</string>
+    <string name="STR_OMC_TITLE">設定の更新</string>
+    <string name="STR_OMC_VERSION">バージョン: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">オペレータ設定</string>
+    <string name="STR_PROCESS_FAIL">処理に失敗しました。</string>
+    <string name="STR_PROVIDER_APPS">サービスプロバイダのアプリ</string>
+    <string name="STR_REGISTERING_DEVICE">デバイスを登録中…</string>
+    <string name="STR_REGISTER_FAIL">登録に失敗しました。</string>
+    <string name="STR_REGISTER_SUCCESS">端末を登録しました。</string>
+    <string name="STR_RESTART_BTN_LATER">後で</string>
+    <string name="STR_RESTART_BTN_RESTART">再起動</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">サービスプロバイダのソフトウェア更新のインストールを完了するには、端末を再起動する必要があります。</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">サービスプロバイダのソフトウェア更新のインストールを完了するには、タブレットを再起動する必要があります。</string>
+    <string name="STR_RESTART_DIALOG_TITLE">再起動しますか？</string>
+    <string name="STR_RESTART_PHONE">端末を再起動</string>
+    <string name="STR_RESTART_TABLET">タブレットを再起動</string>
+    <string name="STR_SELECT_ALL">以下の全てのアプリ</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">必須アプリ</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">以下のアプリをダウンロードする際にデータ料金は適用されません。</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">各機能の詳細については、以下の項目をタップしてください。</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">アプリはWi-Fiでダウンロードできます。</string>
+    <string name="STR_SUW_TITLE">サービスプロバイダからアプリを取得</string>
+    <string name="STR_UPDATE_BODY1">モバイルデータでダウンロードすると、追加料金が発生する可能性があります。</string>
+    <string name="STR_UPDATE_BODY2">更新をインストールすると、端末は再起動します。</string>
+    <string name="STR_UPDATE_FAIL">更新に失敗しました。再度実行してください。</string>
+    <string name="STR_UPDATE_HEADER1">サービスプロバイダから最新のソフトウェアをダウンロードしてインストールしてください。</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- このファームウェアのインストールには料金はかかりません。
+
+- インストール中は、緊急通報を含め全ての機能がご利用いただけません。
+
+- インストール後は、ホーム画面のアイコンおよび端末の設定がお買い上げ時の状態に戻るため、再度設定する必要があります。
+
+- ファームウェアの更新は、端末のファイルおよびデータには影響しません。
+
+- ただし、インストールの終了前にインストール処理を停止すると、端末が正常に機能しなくなり、ファイルが消失する可能性があります。
+
+- また、予期せぬデータ消失に備えて、インストールの前に重要なデータをバックアップすることをおすすめします。"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">サービスプロバイダのソフトウェア更新のインストールを完了するには、再起動してください。</string>
+    <string name="STR_UPDATING_PACKAGE">更新中…</string>
+    <string name="STR_USE_DATA_BTN">データを使用</string>
+    <string name="STR_WAIT_FOR_WIFI">"アプリのインストールを一時停止しました。
+アプリをインストールするために、Wi-Fiに接続されるのを待機しています。"</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi接続を待機</string>
+    <string name="STR_WIDGET_DEFAULT">サービスプロバイダが推奨するアプリをインストールしてください。</string>
+    <string name="STR_WIDGET_DOWNLOADING">ダウンロード中…</string>
+    <string name="STR_WIDGET_INSTALLED">インストールしました。</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">ボタン</string>
+    <string name="WSS_STR_NO_UPDATE">既に利用可能な最新バージョンに更新されています。</string>
+</resources>

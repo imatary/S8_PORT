@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s kræver en opdatering af appen Android Wear.</string>
+    <string name="common_android_wear_update_text">%1$s kan ikke køre, medmindre du opdaterer appen Android Wear.</string>
+    <string name="common_android_wear_update_title">Opdater Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s kræver en eller flere Google Play-tjenester, der ikke tilgængelige i øjeblikket. Kontakt udvikleren for at få hjælp.</string>
+    <string name="common_google_play_services_enable_button">Aktivér Google Play-tjenester</string>
+    <string name="common_google_play_services_enable_text">%1$s kan ikke fungere, medmindre du aktiverer Google Play-tjenester.</string>
+    <string name="common_google_play_services_enable_title">Aktivér Google Play-tjenester</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Anmodning fra %1$s</string>
+    <string name="common_google_play_services_install_button">Hent Google Play-tjenester</string>
+    <string name="common_google_play_services_install_text_phone">%1$s kan ikke køre uden Google Play-tjenester, som ikke findes på din telefon.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s kan ikke køre uden Google Play-tjenester, som ikke findes på din tablet.</string>
+    <string name="common_google_play_services_install_title">Hent Google Play-tjenester</string>
+    <string name="common_google_play_services_invalid_account_text">Den angivne konto findes ikke på denne enhed. Vælg en anden konto.</string>
+    <string name="common_google_play_services_invalid_account_title">Ugyldig konto</string>
+    <string name="common_google_play_services_needs_enabling_title">En app kræver aktivering af Google Play-tjenester.</string>
+    <string name="common_google_play_services_network_error_text">Der kræves en dataforbindelse for at oprette forbindelse til Google Play-tjenester.</string>
+    <string name="common_google_play_services_network_error_title">Netværksfejl</string>
+    <string name="common_google_play_services_notification_needs_update_title">En app kræver opdatering af Google Play-tjenester.</string>
+    <string name="common_google_play_services_notification_ticker">Fejl i Google Play-tjenester</string>
+    <string name="common_google_play_services_sign_in_failed_text">Der opstod en fejl under login på angivne konto. Vælg en anden konto.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Login mislykkedes</string>
+    <string name="common_google_play_services_unknown_issue">Ukendt problem med Google Play-tjenester.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s er afhængig af Google Play-tjenester, som ikke understøttes af din enhed. Kontakt producenten for at få hjælp.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play-tjenester</string>
+    <string name="common_google_play_services_update_button">Opdater</string>
+    <string name="common_google_play_services_update_text">%1$s kan ikke køre, medmindre du opdaterer Google Play-tjenester.</string>
+    <string name="common_google_play_services_update_title">Opdater Google Play-tjenester</string>
+    <string name="common_google_play_services_updating_text">%1$s kan ikke køre uden Google Play-tjenester, som i øjeblikket opdateres:</string>
+    <string name="common_google_play_services_updating_title">Google Play-tjenester opdateres</string>
+    <string name="common_open_on_phone">Åbn på telefonen</string>
+    <string name="common_signin_button_text">Log ind</string>
+    <string name="common_signin_button_text_long">Log ind med Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Størrelse på yderligere indhold: %1$s %2$s</string>
+    <string name="STR_ALL">Alle</string>
+    <string name="STR_APPS_DESCRIPTION">Vælg apps anbefalet af din tjenesteudbyder.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Alle de programmer, du har valgt, er blevet downloadet.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Annuller</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Vælg apps anbefalet af din tjenesteudbyder.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Vælg de apps, du vil installere.</string>
+    <string name="STR_APP_INSTALL_TITLE">Installer apps</string>
+    <string name="STR_APP_STATE_CANCELED">Annulleret</string>
+    <string name="STR_APP_STATE_CONNECTING">Forbinder …</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Downloader …</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Download mislykkedes.</string>
+    <string name="STR_APP_STATE_INSTALLED">Installeret</string>
+    <string name="STR_APP_STATE_INSTALLING">Installerer …</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation mislykkedes</string>
+    <string name="STR_APP_STATE_WAITING">Venter…</string>
+    <string name="STR_BTN_INSTALL">Installer</string>
+    <string name="STR_BTN_INSTALL_ALL">Installer alle</string>
+    <string name="STR_BTN_SKIP">Spring over</string>
+    <string name="STR_BUTTON_NEXT">Næste</string>
+    <string name="STR_CAUTION_BODY">Genstart for at installere opdateringen, når den er downloadet. Du vil ikke kunne bruge din telefon, før installationen er færdig, heller ikke til nødopkald.</string>
+    <string name="STR_CAUTION_BODY2">Nogle indstillinger kan være blevet nulstillet til deres standardværdier efter opdateringen.</string>
+    <string name="STR_CHARING_DIALOG">Download via mobile data kan medføre yderligere gebyrer.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Vil du downloade via mobile data?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Der oprettes forbindelse til serveren</string>
+    <string name="STR_CONNECT_FAIL">Forbindelsen mislykkedes. Prøv senere.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Downloader opdateringer …</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Overfører …</string>
+    <string name="STR_DOWNLOAD_FAIL">Overførslen mislykkedes. Prøv senere.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">For at bruge de nyeste funktioner skal du downloade og installere denne firmwareopdatering.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Overførslen mislykkedes. Prøv senere.</string>
+    <string name="STR_FAILED_NOTI">Download mislykkedes.</string>
+    <string name="STR_INITIAL_NOTI">Tryk her for at vælge anbefalede apps til download.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Tryk her for at downloade og installere opdateringen.</string>
+    <string name="STR_INSTALLED_NOTI">%d installeret</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Installer yderligere indhold</string>
+    <string name="STR_INSTALL_CAUTIONS">Forbehold</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Denne opdatering indeholder yderligere apps og indhold. Download via mobile netværk kan medføre yderligere gebyrer afhængigt af dit abonnement.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Downloadet.</string>
+    <string name="STR_INSTALL_FORCE">Din kritiske softwareopdatering er blevet downloadet. Din enhed vil genstarte om %d sekunder for at begynde installationen.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Få mere at vide</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Du skal have forbindelse til Wi-Fi for at downloade apps. Opret forbindelse via Wi-Fi, og prøv igen.</string>
+    <string name="STR_NEED_WIFI_TITLE">Ingen Wi-Fi-forbindelse</string>
+    <string name="STR_NETWORK_FAIL">Netværket er ikke tilgængeligt. Prøv igen senere.</string>
+    <string name="STR_NO_APPS">Ingen apps</string>
+    <string name="STR_NO_CONTENT">Tilgængelige apps, som din tjenesteudbyder har udgivet, vil blive vist her.</string>
+    <string name="STR_NO_ITEMS">Ingen elementer</string>
+    <string name="STR_NO_ITEM_SELECTED">Ingen valgte elementer.</string>
+    <string name="STR_OMC_HEADER">Tjenesteudbyderopdatering</string>
+    <string name="STR_OMC_SIZE">Størrelse: %s</string>
+    <string name="STR_OMC_TITLE">Konfigurationsopdatering</string>
+    <string name="STR_OMC_VERSION">Version: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operatørindstillinger</string>
+    <string name="STR_PROCESS_FAIL">Behandling mislykkedes.</string>
+    <string name="STR_PROVIDER_APPS">Apps fra tjenesteudbyder</string>
+    <string name="STR_REGISTERING_DEVICE">Registrerer enhed …</string>
+    <string name="STR_REGISTER_FAIL">Registrering mislykkedes.</string>
+    <string name="STR_REGISTER_SUCCESS">Enhed registreret.</string>
+    <string name="STR_RESTART_BTN_LATER">Senere</string>
+    <string name="STR_RESTART_BTN_RESTART">Genstart</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Det er nødvendigt at genstarte din telefon for at afslutte installation af softwareopdatering fra din tjenesteudbyder.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Det er nødvendigt at genstarte din tablet for at afslutte installation af softwareopdatering fra din tjenesteudbyder.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Genstart?</string>
+    <string name="STR_RESTART_PHONE">Genstart telefon</string>
+    <string name="STR_RESTART_TABLET">Genstart tablet</string>
+    <string name="STR_SELECT_ALL">Alle de følgende apps</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Vigtige apps</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Der gælder ingen datagebyrer for download af nedenstående apps.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Tryk på et element herunder for at lære mere om det.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Apps vil blive downloadet via Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Hent apps fra tjenesteudbyder</string>
+    <string name="STR_UPDATE_BODY1">Download via mobile data kan medføre yderligere gebyrer.</string>
+    <string name="STR_UPDATE_BODY2">Din telefon genstarter, når opdateringen er installeret.</string>
+    <string name="STR_UPDATE_FAIL">Opdatering mislykkedes. Prøv igen.</string>
+    <string name="STR_UPDATE_HEADER1">Download og installer den nyeste software fra din tjenesteudbyder.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"– Du bliver ikke opkrævet for denne firmwareinstallation.
+
+– Under installationen vil du slet ikke kunne bruge enheden, heller ikke til nødopkald.
+
+– Ikoner på startskærmen og enhedsindstillingerne kan blive nulstillet til standardindstillingerne og skal muligvis konfigureres igen efter installationen.
+
+– En firmwareopdatering bør ikke påvirke filer og data på din enhed.
+
+– Hvis du stopper installationen, før den er fuldført, fungerer din enhed imidlertid måske ikke normalt, og det kan medføre, at dine filer går tabt.
+
+– For at undgå uventede tab af data anbefaler vi, at du sikkerhedskopierer vigtige data inden installationen."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Genstart for at afslutte installation af softwareopdatering fra din tjenesteudbyder.</string>
+    <string name="STR_UPDATING_PACKAGE">Opdaterer …</string>
+    <string name="STR_USE_DATA_BTN">Brug data</string>
+    <string name="STR_WAIT_FOR_WIFI">"Appinstallation er sat på pause.
+Venter på Wi-Fi for at installere apps."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Vent på Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Installer apps anbefalet af din tjenesteudbyder.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Downloader …</string>
+    <string name="STR_WIDGET_INSTALLED">Installeret.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Knap</string>
+    <string name="WSS_STR_NO_UPDATE">De seneste opdateringer er allerede blevet installeret.</string>
+</resources>

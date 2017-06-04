@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Wielgość dodatkowyj treści: %1$s %2$s</string>
+    <string name="STR_ALL">Wszyjske</string>
+    <string name="STR_APPS_DESCRIPTION">Wybierz aplikacje zalecane przez dostawcę usług.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Wszystkie wybrane aplikacje zostały pobrane.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Pociep</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Wybierz aplikacje zalecane przez dostawcę usług.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Ôbier aplikacyje, kere chcesz zainsztalować.</string>
+    <string name="STR_APP_INSTALL_TITLE">Insztalacyjo aplikacyji</string>
+    <string name="STR_APP_STATE_CANCELED">Wyciepniynte</string>
+    <string name="STR_APP_STATE_CONNECTING">Łōnczynie…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Pobieranie…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Niy poradziłżech zebrać.</string>
+    <string name="STR_APP_STATE_INSTALLED">Zainsztalowane</string>
+    <string name="STR_APP_STATE_INSTALLING">Insztalowanie…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Feler insztalowanio</string>
+    <string name="STR_APP_STATE_WAITING">Czekaniy…</string>
+    <string name="STR_BTN_INSTALL">Insztaluj</string>
+    <string name="STR_BTN_INSTALL_ALL">Zainsztaluj wszyjskie</string>
+    <string name="STR_BTN_SKIP">Pociep</string>
+    <string name="STR_BUTTON_NEXT">Nŏstympny</string>
+    <string name="STR_CAUTION_BODY">Uruchom ponownie po pobraniu aktualizacji, aby ją zainstalować. Nie będzie można używać telefonu, nawet do połączeń alarmowych, aż do zakończenia instalacji.</string>
+    <string name="STR_CAUTION_BODY2">Po aktualizacji niektóre ustawienia mogą być zresetowane do wartości domyślnych.</string>
+    <string name="STR_CHARING_DIALOG">Pobieranie przy użyciu danych komórkowych może spowodować naliczenie dodatkowych opłat.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Pobrać przy użyciu danych komórkowych?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Lōnczyniy z serwerym</string>
+    <string name="STR_CONNECT_FAIL">Połączenie nie powiodło się. Spróbuj później.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Zebiyrōm aktualizacyje…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Zebiyranie…</string>
+    <string name="STR_DOWNLOAD_FAIL">Feler pobiyraniŏ. Sprōbuj niyskorzij.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Coby używać nojnowszych fōnkcyji, zebier i zainsztaluj ta aktualizacyjo ôprogramowanio.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Feler pobiyraniŏ. Sprōbuj niyskorzij.</string>
+    <string name="STR_FAILED_NOTI">Feler zebiyraniŏ</string>
+    <string name="STR_INITIAL_NOTI">Dotknij tutaj, aby wybrać zalecane aplikacje do pobrania.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Dotknij tutaj, aby pobrać i zainstalować aktualizację.</string>
+    <string name="STR_INSTALLED_NOTI">Zainsztalowano %d</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Zainsztaluj dodatkowŏ treść</string>
+    <string name="STR_INSTALL_CAUTIONS">Dej pozōr</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Te uaktualniynie mo ôpcjonalne aplikacyje i treść. Zebiyranie bez nece mobilne poradzi sprŏwić co bydōm porachowane ekstra płaty podug planu taryfowego.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Zebrano.</string>
+    <string name="STR_INSTALL_FORCE">Zebrołżech fest ważnŏ aktualizacyjŏ ôd ôprogamowaniŏ. Maszina sztartnie nazŏd za %d s, coby sztartnōnć insztalacyjŏ.</string>
+    <string name="STR_KILOBYTE">kB</string>
+    <string name="STR_LINK_LEARNMORE">Wiyncyj info</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Do pobierania aplikacji wymagane jest połączenie z siecią Wi-Fi. Połącz się z siecią Wi-Fi i spróbuj ponownie.</string>
+    <string name="STR_NEED_WIFI_TITLE">Niy ma zepniyńcio Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Nec niy do chycynio. Badnj drugi rŏz potym.</string>
+    <string name="STR_NO_APPS">Niy ma aplikacyji</string>
+    <string name="STR_NO_CONTENT">Dostępne aplikacje wydane przez Twojego dostawcę usług będą widoczne w tym miejscu.</string>
+    <string name="STR_NO_ITEMS">Niy ma elymyntōw</string>
+    <string name="STR_NO_ITEM_SELECTED">Nie ôbrano elymyntōw.</string>
+    <string name="STR_OMC_HEADER">Aktualizacja dostawcy usług</string>
+    <string name="STR_OMC_SIZE">Wielgość: %s</string>
+    <string name="STR_OMC_TITLE">Aktualizacyjo rychtowanio</string>
+    <string name="STR_OMC_VERSION">Wersyjo: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Ustawienia operatora</string>
+    <string name="STR_PROCESS_FAIL">Feler przetworzaniŏ</string>
+    <string name="STR_PROVIDER_APPS">Aplikacje dostawcy usług</string>
+    <string name="STR_REGISTERING_DEVICE">Registracjŏ masziny…</string>
+    <string name="STR_REGISTER_FAIL">Niy poradziłżech zaregistrować</string>
+    <string name="STR_REGISTER_SUCCESS">Maszina zargistrowanŏ.</string>
+    <string name="STR_RESTART_BTN_LATER">Później</string>
+    <string name="STR_RESTART_BTN_RESTART">Uruch.pon.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Aby zakończyć instalowanie aktualizacji oprogramowania od dostawcy usług, musisz ponownie uruchomić telefon.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Aby zakończyć instalowanie aktualizacji oprogramowania od dostawcy usług, musisz ponownie uruchomić tablet.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Uruchomić ponownie?</string>
+    <string name="STR_RESTART_PHONE">Uruchom ponownie telefon</string>
+    <string name="STR_RESTART_TABLET">Uruchom ponownie tablet</string>
+    <string name="STR_SELECT_ALL">Wszystkie następujące aplikacje</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Podstawowe aplikacje</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Za pobranie poniższych aplikacji nie zostaną naliczone żadne opłaty związane z danymi.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Dotknij elementu poniżej, aby dowiedzieć się o nim więcej.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Aplikacje zostaną pobrane przez sieć Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Uzyskaj aplikacje od dostawcy usług</string>
+    <string name="STR_UPDATE_BODY1">Pobieranie przy użyciu danych komórkowych może spowodować naliczenie dodatkowych opłat.</string>
+    <string name="STR_UPDATE_BODY2">Telefōn bydzie resztartowany po zainsztalowaniu aktualizacyji.</string>
+    <string name="STR_UPDATE_FAIL">Feler aktualizacyje. Sprōbuj potym.</string>
+    <string name="STR_UPDATE_HEADER1">Pobierz i zainstaluj ostatnie oprogramowanie od swojego dostawcy usług.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"— Za insztalacyjo tego ôprogramowanio niy bydōm zebrane płaty.
+
+— Bez czas insztalacyji niy idzie używać masziny, nawet do gŏdek alarmowych.
+
+— Ikōny na ekranie sztartowym i sztalowania masziny poradzōm wrōcić nazŏd do nasztalowań fabrycznych i poradzōm wymŏgać drugigo narychtowanio po insztalacyji.
+
+— Aktualizacyjo ôprogramowanio niy śmiy mieć wpływu na pliki ani dane na maszinie.
+
+— Eli zajś proces insztalacyji bydzie sztopniynty przed skōńczyniym, maszina poradzi niy fōngować normalnie, a pliki poradzōm być stracōne.
+
+— Coby niy mieć niyspodzianyj straty danych, warto złōnaczyć kopia ważnych danych na ibrich przed insztalacyjōm."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Uruchom ponownie, aby zakończyć instalowanie aktualizacji oprogramowania od dostawcy usług.</string>
+    <string name="STR_UPDATING_PACKAGE">Aktualizacyjŏ…</string>
+    <string name="STR_USE_DATA_BTN">Użyj danych</string>
+    <string name="STR_WAIT_FOR_WIFI">"Wstrzymano instalację aplikacji.
+Oczekiwanie na zainstalowanie aplikacji w sieci Wi-Fi."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Czekaj na Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Zainstaluj aplikacje zalecane przez dostawcę usług.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Pobieranie…</string>
+    <string name="STR_WIDGET_INSTALLED">Zainsztalowano.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Knefel</string>
+    <string name="WSS_STR_NO_UPDATE">Zainstalowołżech już nojnowsze aktualizacyje.</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Lai lietotne %1$s darbotos, ir jāatjaunina lietotne Android Wear.</string>
+    <string name="common_android_wear_update_text">Lai lietotne %1$s darbotos, jums ir jāatjaunina lietotne Android Wear.</string>
+    <string name="common_android_wear_update_title">Android Wear atjaunināšana</string>
+    <string name="common_google_play_services_api_unavailable_text">Lai lietotne %1$s darbotos, ir nepieciešams viens vai vairāki Google Play pakalpojumi, kas pašlaik nav pieejami. Lai saņemtu palīdzību, lūdzu, sazinieties ar izstrādātāju.</string>
+    <string name="common_google_play_services_enable_button">Iespējot Google Play pakalpojumus</string>
+    <string name="common_google_play_services_enable_text">Lai lietotne %1$s darbotos, jums ir jāiespējo Google Play pakalpojumi.</string>
+    <string name="common_google_play_services_enable_title">Google Play pakalpojumu iespējošana</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Pieprasījums no lietotnes %1$s</string>
+    <string name="common_google_play_services_install_button">Iegūt Google Play pakalpojumus</string>
+    <string name="common_google_play_services_install_text_phone">Lai lietotne %1$s darbotos, tālrunī ir jāinstalē Google Play pakalpojumi.</string>
+    <string name="common_google_play_services_install_text_tablet">Lai lietotne %1$s darbotos, planšetdatorā ir jāinstalē Google Play pakalpojumi.</string>
+    <string name="common_google_play_services_install_title">Google Play pakalpojumu iegūšana</string>
+    <string name="common_google_play_services_invalid_account_text">Norādītais konts šajā ierīcē nepastāv. Lūdzu, izvēlieties citu kontu.</string>
+    <string name="common_google_play_services_invalid_account_title">Nederīgs konts</string>
+    <string name="common_google_play_services_needs_enabling_title">Lai lietojumprogramma darbotos, jāiespējo Google Play pakalpojumi.</string>
+    <string name="common_google_play_services_network_error_text">Lai izveidotu savienojumu ar Google Play pakalpojumiem, ir nepieciešams datu savienojums.</string>
+    <string name="common_google_play_services_network_error_title">Tīkla kļūda</string>
+    <string name="common_google_play_services_notification_needs_update_title">Lai lietojumprogramma darbotos, jāatjaunina Google Play pakalpojumi.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play pakalpojumu kļūda</string>
+    <string name="common_google_play_services_sign_in_failed_text">Pierakstoties norādītajā kontā, radās kļūda. Lūdzu, izvēlieties citu kontu.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Neizdevās pierakstīties</string>
+    <string name="common_google_play_services_unknown_issue">Nezināma problēma ar Google Play pakalpojumiem.</string>
+    <string name="common_google_play_services_unsupported_text">Lai lietotne %1$s darbotos, ir jāinstalē Google Play pakalpojumi, taču tie jūsu ierīcē netiek atbalstīti. Sazinieties ar ražotāju, lai saņemtu palīdzību.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play pakalpojumi</string>
+    <string name="common_google_play_services_update_button">Atjaunināt</string>
+    <string name="common_google_play_services_update_text">Lai lietotne %1$s darbotos, jums ir jāatjaunina Google Play pakalpojumi.</string>
+    <string name="common_google_play_services_update_title">Google Play pakalpojumu atjaunināšana</string>
+    <string name="common_google_play_services_updating_text">Lai lietotne %1$s darbotos, ir jāinstalē Google Play pakalpojumi. Pašlaik notiek to atjaunināšana.</string>
+    <string name="common_google_play_services_updating_title">Pašlaik notiek Google Play pakalpojumu atjaunināšana</string>
+    <string name="common_open_on_phone">Atvērt tālrunī</string>
+    <string name="common_signin_button_text">Pierakst.</string>
+    <string name="common_signin_button_text_long">Pierakstīties Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Papildu satura lielums: %1$s %2$s</string>
+    <string name="STR_ALL">Visas</string>
+    <string name="STR_APPS_DESCRIPTION">Izvēlieties pakalpojumu sniedzēja ieteiktās programmas.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Visas jūsu izvēlētās programmas ir lejupielādētas.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Atcelt</string>
+    <string name="STR_APP_BUTTON_OK">Labi</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Izvēlieties pakalpojumu sniedzēja ieteiktās programmas.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Izvēlieties programmas, kuras instalēt.</string>
+    <string name="STR_APP_INSTALL_TITLE">Instalēt programmas</string>
+    <string name="STR_APP_STATE_CANCELED">Atcelti</string>
+    <string name="STR_APP_STATE_CONNECTING">Savieno…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Lejupielādē…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Lejupielāde neizdevās.</string>
+    <string name="STR_APP_STATE_INSTALLED">Instalēta</string>
+    <string name="STR_APP_STATE_INSTALLING">Instalē…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Neizdevās instalēt</string>
+    <string name="STR_APP_STATE_WAITING">Gaida…</string>
+    <string name="STR_BTN_INSTALL">Instalēt</string>
+    <string name="STR_BTN_INSTALL_ALL">Instalēt visu</string>
+    <string name="STR_BTN_SKIP">Izlaist</string>
+    <string name="STR_BUTTON_NEXT">Tālāk</string>
+    <string name="STR_CAUTION_BODY">Pēc lejupielādes veiciet restartēšanu, lai instalētu atjauninājumu. Kamēr instalēšana nebūs pabeigta, jūs nevarēsit lietot tālruni pat ārkārtas zvanu veikšanai.</string>
+    <string name="STR_CAUTION_BODY2">Pēc atjaunināšanas dažiem iestatījumiem var būt atjaunotas to noklusējuma vērtības.</string>
+    <string name="STR_CHARING_DIALOG">Lejupielāde, izmantojot mobilos datus, var radīt papildu izmaksas.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Vai lejupielādēt, izm. mobilos datus?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Veido savienojumu ar serveri</string>
+    <string name="STR_CONNECT_FAIL">Savienojums neizdevās. Mēģiniet vēlāk.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Lejupielādē atjauninājumus…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Lejupielādē…</string>
+    <string name="STR_DOWNLOAD_FAIL">Lejupielāde neizdevās. Mēģiniet vēlāk.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Lai izmantotu jaunākās funkcijas, lejupielādējiet un instalējiet šo aparātprogrammatūras atjauninājumu.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Lejupielāde neizdevās. Mēģiniet vēlāk.</string>
+    <string name="STR_FAILED_NOTI">Lejupielāde neizdevās.</string>
+    <string name="STR_INITIAL_NOTI">Pieskarieties šeit, lai izvēlētos lejupielādei ieteiktās programmas.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Pieskarieties šeit, lai lejupielādētu un instalētu atjauninājumu.</string>
+    <string name="STR_INSTALLED_NOTI">Instalētas %d programmas</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Instalēt papildu saturu</string>
+    <string name="STR_INSTALL_CAUTIONS">Uzmanību!</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Šis atjauninājums ietver dažas papildu programmas un saturu. Lejupielāde, izmantojot mobilos tīklus, var radīt papildu izmaksas atkarībā no jūsu tarifu plāna.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Lejupielādēts.</string>
+    <string name="STR_INSTALL_FORCE">Kritiskais programmatūras atjauninājums ir lejupielādēts. Jūsu ierīce tiks restartēta pēc %d sekundēm, lai sāktu instalēšanu.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Uzzināt vairāk</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Lai lejupielādētu programmas, ir jābūt izveidotam savienojumam ar Wi-Fi. Izveidojiet savienojumu ar Wi-Fi un mēģiniet vēlreiz.</string>
+    <string name="STR_NEED_WIFI_TITLE">Nav Wi-Fi savienojuma</string>
+    <string name="STR_NETWORK_FAIL">Tīkls nav pieejams. Mēģiniet vēlāk vēlreiz.</string>
+    <string name="STR_NO_APPS">Nav programmu</string>
+    <string name="STR_NO_CONTENT">Šeit tiks parādītas pieejamās programmas, ko ir izlaidis jūsu pakalpojumu sniedzējs.</string>
+    <string name="STR_NO_ITEMS">Nav objektu</string>
+    <string name="STR_NO_ITEM_SELECTED">Nav izvēlētu objektu.</string>
+    <string name="STR_OMC_HEADER">Pakalpojuma sniedzēja atjauninājums</string>
+    <string name="STR_OMC_SIZE">Lielums: %s</string>
+    <string name="STR_OMC_TITLE">Konfigurāc. atjauninājums</string>
+    <string name="STR_OMC_VERSION">Versija: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operatora iestatījumi</string>
+    <string name="STR_PROCESS_FAIL">Apstrāde neizdevās.</string>
+    <string name="STR_PROVIDER_APPS">Pakalpojumu sniedzēja programmas</string>
+    <string name="STR_REGISTERING_DEVICE">Reģistrē ierīci…</string>
+    <string name="STR_REGISTER_FAIL">Reģistrācija neizdevās.</string>
+    <string name="STR_REGISTER_SUCCESS">Ierīce ir reģistrēta.</string>
+    <string name="STR_RESTART_BTN_LATER">Vēlāk</string>
+    <string name="STR_RESTART_BTN_RESTART">Restartēt</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Lai pabeigtu pakalpojumu sniedzēja programmatūras atjauninājuma instalēšanu, restartējiet tālruni.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Lai pabeigtu pakalpojumu sniedzēja programmatūras atjauninājuma instalēšanu, restartējiet planšetdatoru.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Vai restartēt?</string>
+    <string name="STR_RESTART_PHONE">Restartēt tālruni</string>
+    <string name="STR_RESTART_TABLET">Restartēt planšetdatoru</string>
+    <string name="STR_SELECT_ALL">Visas šīs programmas</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Pamata programmas</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Par tālāk norādīto programmu lejupielādi netiks aprēķināta datu maksa.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Lai skatītu papildinformāciju par objektu, pieskarieties tam.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Programmas tiks lejupielādētas, izmantojot Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Iegūt programmas no pakalpojumu sniedzēja</string>
+    <string name="STR_UPDATE_BODY1">Lejupielāde, izmantojot mobilos datus, var radīt papildu izmaksas.</string>
+    <string name="STR_UPDATE_BODY2">Pēc atjauninājuma instalēšanas tālrunis tiks restartēts.</string>
+    <string name="STR_UPDATE_FAIL">Atjaunināšana neizdevās. Mēģiniet vēlreiz.</string>
+    <string name="STR_UPDATE_HEADER1">Lejupielādējiet un instalējiet jaunāko programmatūru no sava pakalpojumu sniedzēja.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Šī aparātprogrammatūras instalācija ir bezmaksas.
+
+- Instalēšanas laikā jūs nevarēsiet lietot ierīci, tostarp veikt ārkārtas zvanus.
+
+- Pēc instalēšanas var tikt atjaunots sākuma ekrāna ikonu un ierīces iestatījumu noklusējums, un tie ir jākonfigurē atkārtoti.
+
+- Aparātprogrammatūras atjauninājums neietekmē jūsu ierīcē esošos failus un datus.
+
+- Tomēr, ja pārtrauksit instalēšanu pirms tās pabeigšanas, ierīce var nedarboties pareizi un tā rezultātā var tikt zaudēti jūsu faili.
+
+- Lai novērstu neparedzētu datu zudumu, pirms instalēšanas ieteicams dublēt svarīgos datus."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Restartējiet, lai pabeigtu pakalpojumu sniedzēja programmatūras atjauninājuma instalēšanu.</string>
+    <string name="STR_UPDATING_PACKAGE">Atjaunina…</string>
+    <string name="STR_USE_DATA_BTN">Izmantot datus</string>
+    <string name="STR_WAIT_FOR_WIFI">"Programmas instalēšana ir pauzēta.
+Gaida Wi-Fi savienojumu, lai instalētu programmas."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Gaidīt Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Instalējiet pakalpojumu sniedzēja ieteiktās programmas.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Lejupielādē…</string>
+    <string name="STR_WIDGET_INSTALLED">Instalēšana pabeigta.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Poga</string>
+    <string name="WSS_STR_NO_UPDATE">Pēdējie atjauninājumi jau ir instalēti.</string>
+</resources>

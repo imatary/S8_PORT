@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Для роботи додатка %1$s потрібно оновити Android Wear.</string>
+    <string name="common_android_wear_update_text">Додаток %1$s не працюватиме, якщо не оновити Android Wear.</string>
+    <string name="common_android_wear_update_title">Оновити Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">Для роботи додатка %1$s потрібні один або декілька сервісів Google Play, які зараз недоступні. Зверніться по допомогу до розробника.</string>
+    <string name="common_google_play_services_enable_button">Увімкнути сервіси Google Play</string>
+    <string name="common_google_play_services_enable_text">Додаток %1$s не працюватиме, якщо не ввімкнути сервіси Google Play.</string>
+    <string name="common_google_play_services_enable_title">Увімкніть сервіси Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Запит від додатка %1$s</string>
+    <string name="common_google_play_services_install_button">Установити сервіси Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Додаток %1$s не працюватиме без сервісів Google Play, яких немає на вашому телефоні.</string>
+    <string name="common_google_play_services_install_text_tablet">Додаток %1$s не працюватиме без сервісів Google Play, яких немає на вашому планшеті.</string>
+    <string name="common_google_play_services_install_title">Установіть сервіси Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Указаний обліковий запис не існує на цьому пристрої. Виберіть інший обліковий запис.</string>
+    <string name="common_google_play_services_invalid_account_title">Недійсний обліковий запис</string>
+    <string name="common_google_play_services_needs_enabling_title">Щоб додаток працював, потрібно ввімкнути сервіси Google Play.</string>
+    <string name="common_google_play_services_network_error_text">Для під’єднання до сервісів Google Play потрібне з’єднання з мережею.</string>
+    <string name="common_google_play_services_network_error_title">Помилка мережі</string>
+    <string name="common_google_play_services_notification_needs_update_title">Щоб додаток працював, потрібно оновити сервіси Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Помилка сервісів Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Не вдалося ввійти в указаний обліковий запис. Виберіть інший.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Помилка під час входу</string>
+    <string name="common_google_play_services_unknown_issue">Невідома проблема із сервісами Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">Додаток %1$s працює завдяки сервісам Google Play, які не підтримуються на вашому пристрої. Зверніться по допомогу до виробника.</string>
+    <string name="common_google_play_services_unsupported_title">Сервіси Google Play</string>
+    <string name="common_google_play_services_update_button">Оновити</string>
+    <string name="common_google_play_services_update_text">Додаток %1$s не працюватиме, якщо не оновити сервіси Google Play.</string>
+    <string name="common_google_play_services_update_title">Оновіть сервіси Google Play</string>
+    <string name="common_google_play_services_updating_text">Додаток %1$s не працюватиме без сервісів Google Play, які зараз оновлюються.</string>
+    <string name="common_google_play_services_updating_title">Сервіси Google Play оновлюються</string>
+    <string name="common_open_on_phone">Відкрити на телефоні</string>
+    <string name="common_signin_button_text">Увійти</string>
+    <string name="common_signin_button_text_long">Увійти в обл.запис Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Розмір додаткового вмісту: %1$s %2$s</string>
+    <string name="STR_ALL">Всі</string>
+    <string name="STR_APPS_DESCRIPTION">Виберіть програми, рекомендовані постачальником послуг.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Усі вибрані вами програми завантажено.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Скасувати</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Виберіть програми, рекомендовані постачальником послуг.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Виберіть програми, які потрібно встановити.</string>
+    <string name="STR_APP_INSTALL_TITLE">Установити програми</string>
+    <string name="STR_APP_STATE_CANCELED">Скасовано</string>
+    <string name="STR_APP_STATE_CONNECTING">Підключення…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Завантаження…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Збій завантаження.</string>
+    <string name="STR_APP_STATE_INSTALLED">Установлено</string>
+    <string name="STR_APP_STATE_INSTALLING">Установка…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Помилка встановлення</string>
+    <string name="STR_APP_STATE_WAITING">Очікування…</string>
+    <string name="STR_BTN_INSTALL">Встанов.</string>
+    <string name="STR_BTN_INSTALL_ALL">Установити всі</string>
+    <string name="STR_BTN_SKIP">Пропустити</string>
+    <string name="STR_BUTTON_NEXT">Далі</string>
+    <string name="STR_CAUTION_BODY">Після завантаження виконайте перезапуск, щоб розпочати встановлення оновлення. До завершення встановлення ви не зможете користуватися телефоном (навіть для екстрених викликів).</string>
+    <string name="STR_CAUTION_BODY2">Після оновлення деякі налаштування може бути скинуто до стандартних значень.</string>
+    <string name="STR_CHARING_DIALOG">Завантаження з використанням мобільних даних може призвести до стягнення додаткової плати.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Завантажити за допомогою мобільних даних?</string>
+    <string name="STR_CONNECTING_TO_SERVER">"З'єднання з сервером"</string>
+    <string name="STR_CONNECT_FAIL">Збій підключення. Спробуйте пізніше.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Завантаження оновлень…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Завантаження…</string>
+    <string name="STR_DOWNLOAD_FAIL">Збій завантаження. Спробуйте пізніше.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Завантажте та встановіть оновлення мікропрограми, щоб мати можливість використовувати найновіші функції.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Збій завантаження. Спробуйте пізніше.</string>
+    <string name="STR_FAILED_NOTI">Збій завантаження</string>
+    <string name="STR_INITIAL_NOTI">Торкніться тут, щоб вибрати рекомендовані програми для завантаження.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Торкніться тут, щоб завантажити та встановити оновлення.</string>
+    <string name="STR_INSTALLED_NOTI">Установлено: %d</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Установити додатковий вміст</string>
+    <string name="STR_INSTALL_CAUTIONS">Увага!</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Це оновлення включає додаткові програми та вміст. Завантаження через мобільні мережі може призвести до додаткових витрат залежно від тарифного плану.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Завантажено.</string>
+    <string name="STR_INSTALL_FORCE">Критично важливе оновлення програмного забезпечення завантажено. Щоб розпочати інсталяцію, пристрій буде перезавантажено через %d секунд.</string>
+    <string name="STR_KILOBYTE">КБ</string>
+    <string name="STR_LINK_LEARNMORE">Дізнатися більше</string>
+    <string name="STR_MEGABYTE">МБ</string>
+    <string name="STR_NEED_WIFI">Для завантаження програм потрібно підключитися до мережі Wi-Fi. Підключіться до мережі Wi-Fi та спробуйте ще раз.</string>
+    <string name="STR_NEED_WIFI_TITLE">Підключення до мережі Wi-Fi відсутнє</string>
+    <string name="STR_NETWORK_FAIL">Мережа недоступна. Спробуйте ще раз пізніше.</string>
+    <string name="STR_NO_APPS">Немає програм</string>
+    <string name="STR_NO_CONTENT">Тут відображатимуться доступні програми від ваших постачальників послуг.</string>
+    <string name="STR_NO_ITEMS">Немає об’єктів</string>
+    <string name="STR_NO_ITEM_SELECTED">Об’єкти не вибрані.</string>
+    <string name="STR_OMC_HEADER">Оновлення від постачальника послуг</string>
+    <string name="STR_OMC_SIZE">Розмір: %s</string>
+    <string name="STR_OMC_TITLE">Оновлення конфігурації</string>
+    <string name="STR_OMC_VERSION">Версія: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Налаштування оператора</string>
+    <string name="STR_PROCESS_FAIL">Збій обробки.</string>
+    <string name="STR_PROVIDER_APPS">Програми постачальника послуг</string>
+    <string name="STR_REGISTERING_DEVICE">Реєстрація пристрою…</string>
+    <string name="STR_REGISTER_FAIL">Збій реєстрації.</string>
+    <string name="STR_REGISTER_SUCCESS">Пристрій зареєстровано.</string>
+    <string name="STR_RESTART_BTN_LATER">Пізніше</string>
+    <string name="STR_RESTART_BTN_RESTART">Перезапустити</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Щоб завершити встановлення оновлення ПЗ від постачальника послуг, необхідно перезапустити телефон.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Щоб завершити встановлення оновлення ПЗ від постачальника послуг, необхідно перезапустити планшет.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Перезапустити?</string>
+    <string name="STR_RESTART_PHONE">Перезапуск телефону</string>
+    <string name="STR_RESTART_TABLET">Перезапуск планшета</string>
+    <string name="STR_SELECT_ALL">Усі перелічені нижче програми</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Важливі програми</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">За завантаження наведених нижче програм додаткова плата не стягується.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Щоб переглянути додаткову інформацію про об’єкт, торкніться його нижче.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Програми буде завантажено по Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Отримання програм від постачальника послуг</string>
+    <string name="STR_UPDATE_BODY1">Завантаження з використанням мобільних даних може призвести до стягнення додаткової плати.</string>
+    <string name="STR_UPDATE_BODY2">Після встановлення оновлення телефон перезапуститься.</string>
+    <string name="STR_UPDATE_FAIL">Збій оновлення. Cпробуйте ще раз.</string>
+    <string name="STR_UPDATE_HEADER1">Завантажте у постачальника послуг та встановіть останню версію програмного забезпечення.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Інсталяція цієї вбудованої програми безкоштовна.
+
+- Під час інсталяції ви не зможете користуватись пристроєм (навіть для здійснення екстреного виклику).
+
+- Налаштування головного екрану та пристрою можуть бути скинуті до стандартних. У такому разі вам доведеться налаштовувати пристрій повторно.
+
+- Оновлення вбудованих програм не впливають на файли та дані, що зберігаються на вашому пристрої.
+
+- Щоправда, якщо ви припините процес інсталяції до його повного завершення, це може вплинути на нормальну роботу пристрою і призвести до втрати даних.
+
+- Щоб не втратити свої дані створіть їх резервні копії перед інсталяцією."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Виконайте перезапуск, щоб завершити встановлення оновлення програмного забезпечення від постачальника послуг.</string>
+    <string name="STR_UPDATING_PACKAGE">Оновлення…</string>
+    <string name="STR_USE_DATA_BTN">Використовувати дані</string>
+    <string name="STR_WAIT_FOR_WIFI">"Установлення програми призупинено.
+Для продовження необхідне підключення по Wi-Fi."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Очікувати Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Встановлюйте програми, рекомендовані постачальником послуг.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Завантаження…</string>
+    <string name="STR_WIDGET_INSTALLED">Установлено.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Кнопка</string>
+    <string name="WSS_STR_NO_UPDATE">Останні оновлення вже встановлено.</string>
+</resources>

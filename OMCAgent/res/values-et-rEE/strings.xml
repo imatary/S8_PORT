@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Rakendus %1$s nõuab rakenduse Android Wear värskendust.</string>
+    <string name="common_android_wear_update_text">Rakendus %1$s töötab ainult siis, kui värskendate rakendust Android Wear.</string>
+    <string name="common_android_wear_update_title">Rakenduse Android Wear värskendamine</string>
+    <string name="common_google_play_services_api_unavailable_text">Rakenduse %1$s kasutamiseks on vaja ühte või mitut Google Play teenust, mis pole praegu saadaval. Võtke abi saamiseks ühendust arendajaga.</string>
+    <string name="common_google_play_services_enable_button">Lubage Google Play teenused</string>
+    <string name="common_google_play_services_enable_text">Rakendus %1$s töötab ainult siis, kui lubate Google Play teenused.</string>
+    <string name="common_google_play_services_enable_title">Lubage Google Play teenused</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Taotluse esitas %1$s</string>
+    <string name="common_google_play_services_install_button">Hankige Google Play teenused</string>
+    <string name="common_google_play_services_install_text_phone">Rakendus %1$s töötab ainult koos Google Play teenustega, mida teie telefonis pole.</string>
+    <string name="common_google_play_services_install_text_tablet">Rakendus %1$s töötab ainult koos Google Play teenustega, mida teie tahvelarvutis pole.</string>
+    <string name="common_google_play_services_install_title">Hankige Google Play teenused</string>
+    <string name="common_google_play_services_invalid_account_text">Määratud kontot pole selles seadmes olemas. Valige muu konto.</string>
+    <string name="common_google_play_services_invalid_account_title">Vale konto</string>
+    <string name="common_google_play_services_needs_enabling_title">Rakenduse kasutamiseks peavad olema lubatud Google Play teenused.</string>
+    <string name="common_google_play_services_network_error_text">Google Play teenustega ühenduse loomiseks on vajalik andmesideühendus.</string>
+    <string name="common_google_play_services_network_error_title">Võrgu viga</string>
+    <string name="common_google_play_services_notification_needs_update_title">Rakenduse kasutamiseks tuleb värskendada Google Play teenuseid.</string>
+    <string name="common_google_play_services_notification_ticker">Viga Google Play teenustes</string>
+    <string name="common_google_play_services_sign_in_failed_text">Määratud kontole sisselogimisel ilmnes viga. Valige teine konto.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Sisselogimine ebaõnnestus</string>
+    <string name="common_google_play_services_unknown_issue">Google Play teenuste tundmatu probleem.</string>
+    <string name="common_google_play_services_unsupported_text">Rakendus %1$s toetub Google Play teenustele, mida teie seadmes ei toetata. Abi saamiseks võtke ühendust tootjaga.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play teenused</string>
+    <string name="common_google_play_services_update_button">Värskenda</string>
+    <string name="common_google_play_services_update_text">Rakenduse %1$s töötamiseks peate värskendama Google Play teenuseid.</string>
+    <string name="common_google_play_services_update_title">Värskendage Google Play teenuseid</string>
+    <string name="common_google_play_services_updating_text">Rakendus %1$s töötab ainult koos Google Play teenustega, mida praegu värskendatakse.</string>
+    <string name="common_google_play_services_updating_title">Google Play teenuseid värskendatakse</string>
+    <string name="common_open_on_phone">Ava telefonis</string>
+    <string name="common_signin_button_text">Logi sisse</string>
+    <string name="common_signin_button_text_long">"Logi sisse Google'iga"</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Lisasisu suurus: %1$s %2$s</string>
+    <string name="STR_ALL">Kõik</string>
+    <string name="STR_APPS_DESCRIPTION">Valige oma teenusepakkuja soovitatud rakendused.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Kõik teie valitud rakendused on alla laaditud.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Tühista</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Valige oma teenusepakkuja soovitatud rakendused.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Valige rakendused, mida soovite installida.</string>
+    <string name="STR_APP_INSTALL_TITLE">Rakenduste installimine</string>
+    <string name="STR_APP_STATE_CANCELED">Tühistatud</string>
+    <string name="STR_APP_STATE_CONNECTING">Ühendamine…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Allalaadimine…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Allalaadimine nurjus.</string>
+    <string name="STR_APP_STATE_INSTALLED">Installitud</string>
+    <string name="STR_APP_STATE_INSTALLING">Installimine…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installimine nurjus</string>
+    <string name="STR_APP_STATE_WAITING">Ootel…</string>
+    <string name="STR_BTN_INSTALL">Installi</string>
+    <string name="STR_BTN_INSTALL_ALL">Installi kõik</string>
+    <string name="STR_BTN_SKIP">Jäta vahele</string>
+    <string name="STR_BUTTON_NEXT">Järgmine</string>
+    <string name="STR_CAUTION_BODY">Taaskäivitage pärast allalaadimist, et värskendus installida. Enne installimise lõpuleviimist ei saa te oma telefoni kasutada, isegi mitte hädaabikõnede jaoks.</string>
+    <string name="STR_CAUTION_BODY2">Pärast värskendamist võidakse mõned seaded taastada nende vaikeväärtustele.</string>
+    <string name="STR_CHARING_DIALOG">Mobiilse andmesidega allalaadimisel võivad rakenduda lisatasud.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Kas laadida alla mobiilse andmesidega?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Serveriga ühenduse loomine</string>
+    <string name="STR_CONNECT_FAIL">Ühendus nurjus. Proovige hiljem uuesti.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Värskenduste allalaadimine…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Allalaadimine</string>
+    <string name="STR_DOWNLOAD_FAIL">Allalaadimine nurjus. Proovige hiljem uuesti.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Uusimate funktsioonide kasutamiseks laadige alla ja installige see püsivara värskendus.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Allalaadimine nurjus. Proovige hiljem uuesti.</string>
+    <string name="STR_FAILED_NOTI">Allalaadimine nurjus.</string>
+    <string name="STR_INITIAL_NOTI">Toksake siia, et valida soovitatud rakendused, mida alla laadida.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Toksake siia, et värskendus alla laadida ja installida.</string>
+    <string name="STR_INSTALLED_NOTI">%d installitud</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Installi lisasisu</string>
+    <string name="STR_INSTALL_CAUTIONS">Tähelepanu</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">See uuendus sisaldab mõningaid valikulisi rakendusi ja sisu. Olenevalt teie paketist võivad mobiilsidevõrgu kaudu allalaadimisel rakenduda lisatasud.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Alla laetud.</string>
+    <string name="STR_INSTALL_FORCE">Teie kriitiline tarkvaravärskendus on alla laaditud. Seade taaskäivitub %d sekundi pärast, et alustada installimist.</string>
+    <string name="STR_KILOBYTE">kB</string>
+    <string name="STR_LINK_LEARNMORE">Lisateave</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Rakenduste allalaadimiseks peate olema ühendatud Wi-Fi-võrku. Looge ühendus Wi-Fi-võrguga ja proovige uuesti.</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi-ühendus puudub</string>
+    <string name="STR_NETWORK_FAIL">Võrk pole saadaval. Proovige hiljem uuesti.</string>
+    <string name="STR_NO_APPS">Rakendusi pole</string>
+    <string name="STR_NO_CONTENT">Saadaolevad rakendused, mis on välja lastud teie teenusepakkuja poolt, kuvatakse siin.</string>
+    <string name="STR_NO_ITEMS">Üksusi pole</string>
+    <string name="STR_NO_ITEM_SELECTED">Ühtegi üksust ei ole valitud.</string>
+    <string name="STR_OMC_HEADER">Teenusepakkuja värskendus</string>
+    <string name="STR_OMC_SIZE">Suurus: %s</string>
+    <string name="STR_OMC_TITLE">Konfigurats. värskendus</string>
+    <string name="STR_OMC_VERSION">Versioon: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operaatori seaded</string>
+    <string name="STR_PROCESS_FAIL">Töötlemine ebaõnnestus.</string>
+    <string name="STR_PROVIDER_APPS">Teenusepakkuja rakendused</string>
+    <string name="STR_REGISTERING_DEVICE">Seadme registreerimine…</string>
+    <string name="STR_REGISTER_FAIL">Registreerimine nurjus.</string>
+    <string name="STR_REGISTER_SUCCESS">Seade on registreeritud.</string>
+    <string name="STR_RESTART_BTN_LATER">Hiljem</string>
+    <string name="STR_RESTART_BTN_RESTART">Taaskäiv.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Teenusepakkuja tarkvaravärskenduse installimise lõpuleviimiseks peate oma telefoni taaskäivitama.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Teenusepakkuja tarkvaravärskenduse installimise lõpuleviimiseks peate oma tahvelseadme taaskäivitama.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Kas taaskäivitada?</string>
+    <string name="STR_RESTART_PHONE">Telefoni taaskäivitamine</string>
+    <string name="STR_RESTART_TABLET">Tahvelseadme taaskäivitamine</string>
+    <string name="STR_SELECT_ALL">Kõik järgmised rakendused</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Olulised rakendused</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Allolevate rakenduste allalaadimisel ei rakendu andmetasud.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Toksake all mõnda üksust, et saada selle kohta lisateavet.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Rakendused laaditakse alla Wi-Fi kaudu.</string>
+    <string name="STR_SUW_TITLE">Hankige rakendusi teenusepakkujalt</string>
+    <string name="STR_UPDATE_BODY1">Mobiilse andmesidega allalaadimisel võivad rakenduda lisatasud.</string>
+    <string name="STR_UPDATE_BODY2">Teie telefon taaskäivitub pärast värskenduse installimist.</string>
+    <string name="STR_UPDATE_FAIL">Värskendamine nurjus. Proovige uuesti.</string>
+    <string name="STR_UPDATE_HEADER1">Laadige oma teenusepakkujalt uusim tarkvara alla ja installige.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Selle püsivara installimise eest ei võeta teilt tasu.
+
+- Installimise ajal ei saa te oma seadet üldse kasutada, isegi mitte hädaabikõnede jaoks.
+
+- Avaekraani ikoonid ja seadme seaded võidakse lähtestada vaikeseadetele ja võivad pärast installimist vajada uuesti konfigureerimist.
+
+- Püsivara värskendus ei tohiks mõjutada faile ja andmeid teie seadmes.
+
+- Kui te aga peatate installimise enne selle lõpule viimist, võib teie seade õigesti töötamast lakata ja teie failid võivad kaduma minna.
+
+- Ootamatu andmekao vältimiseks soovitame olulised andmed enne installimist varundada."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Taaskäivitage, et viia oma teenusepakkuja tarkvaravärskenduse installimine lõpule.</string>
+    <string name="STR_UPDATING_PACKAGE">Värskendamine…</string>
+    <string name="STR_USE_DATA_BTN">Kasuta andmeid</string>
+    <string name="STR_WAIT_FOR_WIFI">"Rakenduse installimine on peatatud.
+Wi-Fi ootamine rakenduste installimiseks."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Oota Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Installige oma teenusepakkuja soovitatud rakendused.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Allalaadimine…</string>
+    <string name="STR_WIDGET_INSTALLED">Installitud.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Nupp</string>
+    <string name="WSS_STR_NO_UPDATE">Uusimad värskendused on juba installitud.</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s ຕ້ອງ​ການ​ໃຫ້ມີການ​ອັບ​ເດດ​ແອັບ Android Wear.</string>
+    <string name="common_android_wear_update_text">%1$s ​ຈະ​ບໍ່​ສາ​ມາດ​ໃຊ້​ໄດ້​ຈົນ​ກວ່າ​ທ່ານ​ຈະ​ອັບ​ເດດ​ແອັບ Android Wear.</string>
+    <string name="common_android_wear_update_title">​ອັບ​ເດດ Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s ຕ້ອງ​ການ​ໃຫ້​ມີ​ໜຶ່ງ​ ຫຼື​ຫຼາຍ​ບໍ​ລິ​ການ​ຂອງ Google Play ທີ່​ບໍ່​ມີ​ໃຫ້​ຢູ່​ໃນ​ປະ​ຈຸ​ບັນ. ກະ​ລຸ​ນາ​ຕິດ​ຕໍ່​ຜູ້​ພັດ​ທະ​ນາ ເພື່ອ​ການ​ຊ່ວຍ​ເຫຼືອ​ເພີ່ມ​ເຕີມ.</string>
+    <string name="common_google_play_services_enable_button">ເປີດໃຊ້ບໍລິການ Google Play</string>
+    <string name="common_google_play_services_enable_text">%1$s ຈະບໍ່ສາມາດເຮັດວຽກໄດ້ຈົນກວ່າທ່ານຈະເປີດໃຊ້ງານ​ການ​ບໍ​ລິ​ການ Google Play.</string>
+    <string name="common_google_play_services_enable_title">ເປີດໃຊ້ບໍລິການ Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">ຮ້ອງຂໍໂດຍ %1$s</string>
+    <string name="common_google_play_services_install_button">ຕິດຕັ້ງບໍລິການ Google Play</string>
+    <string name="common_google_play_services_install_text_phone">%1$s ຈະບໍ່ສາມາດເຮັດວຽກໄດ້ໂດຍທີ່ບໍ່ມີການ​ບໍ​ລິ​ການ Google Play ເຊິ່ງຂາດຫາຍໄປໃນໂທລະສັບຂອງທ່ານ.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s ຈະບໍ່ສາມາດເຮັດວຽກໄດ້ໂດຍທີ່ບໍ່ມີການ​ບໍ​ລິ​ການ Google Play ເຊິ່ງຂາດຫາຍໄປໃນແທັບ​ເລັດຂອງທ່ານ.</string>
+    <string name="common_google_play_services_install_title">ຕິດຕັ້ງບໍລິການ Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">ບັນຊີທີ່ເລືອກບໍ່ມີໃນອຸປະກອນນີ້. ກະລຸນາເລືອກບັນຊີອື່ນ.</string>
+    <string name="common_google_play_services_invalid_account_title">ບັນຊີບໍ່ຖືກຕ້ອງ</string>
+    <string name="common_google_play_services_needs_enabling_title">ແອັບພລິເຄຊັນຕ້ອງ​ການນຳໃຊ້ Google Play Services.</string>
+    <string name="common_google_play_services_network_error_text">ຕ້ອງໃຊ້ການເຊື່ອມຕໍ່ອິນເຕີເນັດເພື່ອໃຊ້ Google Play Services.</string>
+    <string name="common_google_play_services_network_error_title">ເຄືອຂ່າຍຜິດພາດ</string>
+    <string name="common_google_play_services_notification_needs_update_title">​ແອັບ​ພ​ລິ​ເຄ​ຊັນ​ຕ້ອງ​ການ​ໃຫ້​ອັບ​ເດດບໍ​ລິ​ການ Google Play ກ່ອນ.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Services ​ເກີດ​ຄວາມ​ຜິດ​ພາດ</string>
+    <string name="common_google_play_services_sign_in_failed_text">ການ​ເຂົ້າ​ສູ່ລະ​ບົບ​ບັນ​ຊີ​ລະ​ບຸ​ໄວ້​ຜິດ​ພາດ. ກະ​ລຸ​ນາ​ເລືອກ​ບັນ​ຊີ​ອື່ນ.</string>
+    <string name="common_google_play_services_sign_in_failed_title">ເຂົ້າສູ່ລະບົບບໍ່​ສຳ​ເລັດ</string>
+    <string name="common_google_play_services_unknown_issue">ມີປັນຫາທີ່ບໍ່ຄາດຄິດໃນບໍລິການ Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ຂຶ້ນ​ກັບ​ການ​ບໍ​ລິ​ການ Google Play, ເຊິ່ງ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ​ບໍ່​ຮອງ​ຮັບ. ຕິດ​ຕໍ່​ຫາ​ຜູ້​ຜະ​ລິດ​ເພື່ອ​ຂໍ​ການ​ຊ່ວຍ​ເຫຼືອ​ເພີ່ມ​ເຕີມ.</string>
+    <string name="common_google_play_services_unsupported_title">ບໍລິການ Google Play</string>
+    <string name="common_google_play_services_update_button">ອັບເດດ</string>
+    <string name="common_google_play_services_update_text">%1$s ຈະບໍ່ສາມາດເຮັດວຽກໄດ້ຈົນກວ່າທ່ານຈະອັບເດດການ​ບໍ​ລິ​ການ Google Play</string>
+    <string name="common_google_play_services_update_title">ອັບເດດບໍລິການ Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s ຈະບໍ່ສາມາດເຮັດວຽກໄດ້ໂດຍທີ່ບໍ່ມີການ​ບໍ​ລິ​ການ Google Play, ເຊິ່ງ​ກຳ​ລັງ​ອັບ​ເດດ​ຢູ່​ໃນ​ປະ​ຈຸ​ບັນ.</string>
+    <string name="common_google_play_services_updating_title">ການ​ບໍ​ລິ​ການ Google Play ກຳ​ລັງ​ອັບ​ເດດ</string>
+    <string name="common_open_on_phone">​ເປີດ​ໃນ​ໂທ​ລະ​ສັບ</string>
+    <string name="common_signin_button_text">ເຂົ້າສູ່ລະບົບ</string>
+    <string name="common_signin_button_text_long">ເຂົ້າສູ່ລະບົບດ້ວຍ Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">ຂະໜາດເນື້ອໃນເພີ່ມເຕີມ: %1$s %2$s</string>
+    <string name="STR_ALL">ທັງໝົດ</string>
+    <string name="STR_APPS_DESCRIPTION">ເລືອກແອັບທີ່ແນະນຳໂດຍຜູ້ໃຫ້ການບໍລິການຂອງທ່ານ.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">ແອັບທີ່ເລືອກໄວ້ທັງໝົດຂອງທ່ານໄດ້ຖືກດາວໂຫຼດແລ້ວ.</string>
+    <string name="STR_APP_BUTTON_CANCEL">ຍົກເລີກ</string>
+    <string name="STR_APP_BUTTON_OK">ຕົກລົງ</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">ເລືອກແອັບທີ່ແນະນຳໂດຍຜູ້ໃຫ້ການບໍລິການຂອງທ່ານ.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">ເລືອກແອັບທີ່ທ່ານຕ້ອງການຕິດຕັ້ງ.</string>
+    <string name="STR_APP_INSTALL_TITLE">ຕິດຕັ້ງແອັບ</string>
+    <string name="STR_APP_STATE_CANCELED">​ຍົກ​ເລີກ​ແລ້ວ</string>
+    <string name="STR_APP_STATE_CONNECTING">ກໍາລັງເຊື່ອມຕໍ່…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ກໍາລັງ​ດາວ​ໂຫຼດ…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ດາວ​ໂຫຼດລົ້ມ​ເຫຼວ.</string>
+    <string name="STR_APP_STATE_INSTALLED">ໄດ້ຕິດຕັ້ງແລ້ວ</string>
+    <string name="STR_APP_STATE_INSTALLING">ກໍາລັງຕິດຕັ້ງ…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation failed</string>
+    <string name="STR_APP_STATE_WAITING">ກໍາລັງລໍຖ້າ…</string>
+    <string name="STR_BTN_INSTALL">ຕິດຕັ້ງ</string>
+    <string name="STR_BTN_INSTALL_ALL">ຕິດຕັ້ງທັງໝົດ</string>
+    <string name="STR_BTN_SKIP">ຂ້າມໄປ</string>
+    <string name="STR_BUTTON_NEXT">ຕໍ່ໄປ</string>
+    <string name="STR_CAUTION_BODY">ຫຼັງຈາກດາວໂຫຼດ, ປິດເປີດຄືນໃໝ່ເພື່ອຕິດຕັ້ງອັບເດດ. ທ່ານຈະບໍ່ສາມາດໃຊ້ໂທລະສັບຂອງທ່ານ, ເຖິງແມ່ນວ່າຈະໂທອອກສຸກເສີນ, ຈົນກວ່າການຕິດຕັ້ງຈະສຳເລັດ.</string>
+    <string name="STR_CAUTION_BODY2">ຫຼັງຈາກອັບເດດ, ການຕັ້ງຄ່າບາງຢ່າງອາດຈະຖືກຕັ້ງຄືນໃໝ່ເປັນຄ່າມາດຕະຖານຂອງພວກມັນ.</string>
+    <string name="STR_CHARING_DIALOG">ການດາວໂຫຼດໂດຍໃຊ້ເຄືອຂ່າຍມືຖືອາດເຮັດໃຫ້ເກີດມີຄ່າໃຊ້ຈ່າຍເພີ່ມເຕີມ.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">ດາວໂຫຼດໂດຍໃຊ້ຂໍ້ມູນມືຖືບໍ?</string>
+    <string name="STR_CONNECTING_TO_SERVER">ກຳລັງເຊື່ອມຕໍ່ກັບເຊີບເວີ…</string>
+    <string name="STR_CONNECT_FAIL">Connection failed. Try later.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">ກໍາລັງດາວໂຫຼດການອັບເດດ…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ກຳລັງ​ດາວ​ໂຫຼດ…</string>
+    <string name="STR_DOWNLOAD_FAIL">ດາວ​ໂຫຼດລົ້ມ​ເຫຼວ ລອງອີກພາຍຫຼັງ.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">ເພື່ອໃຊ້ຄຸນສົມບັດຫຼ້າສຸດ, ດາວໂຫຼດແລະຕິດຕັ້ງອັບເດດເຟີມແວຣ໌ນີ້.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ດາວ​ໂຫຼດລົ້ມ​ເຫຼວ ລອງອີກພາຍຫຼັງ.</string>
+    <string name="STR_FAILED_NOTI">ດາວ​ໂຫຼດລົ້ມ​ເຫຼວ.</string>
+    <string name="STR_INITIAL_NOTI">ແຕະທີ່ນີ້ເພື່ອເລືອກແອັບທີ່ແນະນຳສຳລັບດາວໂຫຼດ.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">ແຕະທີ່ນີ້ເພື່ອດາວໂຫຼດແລະຕິດຕັ້ງອັບ​ເດດ.</string>
+    <string name="STR_INSTALLED_NOTI">ຕິດຕັ້ງ %d ແລ້ວ</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">ຕິດຕັ້ງເນື້ອໃນເພີ່ມເຕີມ</string>
+    <string name="STR_INSTALL_CAUTIONS">ລະວັງ</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">ການອັບເດດນີ້ປະກອບດ້ວຍບາງແອັບແລະເນື້ອໃນທີ່ເລືອກໄດ້. ການດາວໂຫຼດຜ່ານເຄືອຂ່າຍມືຖືອາດເຮັດໃຫ້ເສຍຄ່າໃຊ້ຈ່າຍເພີ່ມເຕີມ ຂຶ້ນຢູ່ກັບແຜນການຊຳລະຂອງທ່ານ.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ດາວ​ໂຫຼດ​ແລ້ວ.</string>
+    <string name="STR_INSTALL_FORCE">ດາວໂຫຼດການອັບເດດຊອບແວທີ່ສໍາຄັນຈໍາເປັນຂອງທ່ານແລ້ວ. ເຄື່ອງຂອງທ່ານຈະເລີ່ມປິດເປີດໃໝ່ໃນ %d ວິນາທີ ເພື່ອເລີ່ມການຕິດຕັ້ງ.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">ຮຽນຮູ້ເພີ່ມເຕີມ</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">ທ່ານຈຳເປັນຕ້ອງໄດ້ເຊື່ອມຕໍ່ກັບ Wi-Fi ເພື່ອດາວໂຫຼດແອັບ. ເຊື່ອມຕໍ່ກັບ Wi-Fi ແລະລອງໃໝ່ອີກ.</string>
+    <string name="STR_NEED_WIFI_TITLE">ບໍ່ມີການເຊື່ອມຕໍ່ Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">ບໍ່ມີເຄືອຂ່າຍ. ລອງໃໝ່ພາຍຫຼັງ.</string>
+    <string name="STR_NO_APPS">ບໍ່ມີແອັບ</string>
+    <string name="STR_NO_CONTENT">ແອັບທີ່ມີຢູ່ທີ່ປ່ອຍອອກມາຈາກຜູ້ໃຫ້ການບໍລິການຂອງທ່ານ ຈະສະແດງຂຶ້ນທີ່ນີ້.</string>
+    <string name="STR_NO_ITEMS">ບໍ່ມີລາຍການ</string>
+    <string name="STR_NO_ITEM_SELECTED">ບໍ່ມີລາຍການຖືກເລືອກ.</string>
+    <string name="STR_OMC_HEADER">ອັບເດດຜູ້ໃຫ້ການບໍລິການ</string>
+    <string name="STR_OMC_SIZE">ຂະໜາດ: %s</string>
+    <string name="STR_OMC_TITLE">ການອັບເດດ ການກຳນົດຄ່າ</string>
+    <string name="STR_OMC_VERSION">ລຸ້ນ: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">ການຕັ້ງຄ່າຜູ້ດຳເນີນການ</string>
+    <string name="STR_PROCESS_FAIL">ການດໍາເນີນການບໍ່ສໍາເລັດ.</string>
+    <string name="STR_PROVIDER_APPS">ແອັບ​ຜູ້​ໃຫ້​ການບໍ​ລິ​ການ</string>
+    <string name="STR_REGISTERING_DEVICE">ກໍາລັງລົງທະບຽນເຄື່ອງ…</string>
+    <string name="STR_REGISTER_FAIL">ການລົງທະບຽນບໍ່ສໍາເລັດ.</string>
+    <string name="STR_REGISTER_SUCCESS">ເຄື່ອງໄດ້ລົງທະບຽນແລ້ວ.</string>
+    <string name="STR_RESTART_BTN_LATER">ພາຍຫຼັງ</string>
+    <string name="STR_RESTART_BTN_RESTART">ປິດເປີດ</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">ເພື່ອສຳເລັດການຕິດຕັ້ງອັບເດດຊອບແວຜູ້ໃຫ້ການບໍລິການຂອງທ່ານ, ທ່ານຈຳເປັນຕ້ອງປິດເປີດໂທລະສັບຂອງທ່ານຄືນໃໝ່.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">ເພື່ອສຳເລັດການຕິດຕັ້ງອັບເດດຊອບແວຜູ້ໃຫ້ການບໍລິການຂອງທ່ານ, ທ່ານຈຳເປັນຕ້ອງປິດເປີດແທັບເລັດຂອງທ່ານຄືນໃໝ່.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">ປິດເປີດຄືນໃໝ່ບໍ?</string>
+    <string name="STR_RESTART_PHONE">ປິດເປີດໂທລະສັບຄືນໃໝ່</string>
+    <string name="STR_RESTART_TABLET">ປິດເປີດແທັບເລັດຄືນໃໝ່</string>
+    <string name="STR_SELECT_ALL">ແອັບທັງໝົດຕໍ່ໄປນີ້</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">ແອັບທີ່ສຳຄັນ</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">ບໍ່ມີຄ່າໃຊ້ຈ່າຍຂໍ້ມູນສຳລັບການດາວໂຫຼດແອັບລຸ່ມນີ້.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">ແຕະທີ່ລາຍການລຸ່ມນີ້ ເພື່ອຮຽນຮູ້ເພີ່ມເຕີມກ່ຽວກັບມັນ.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">ແອັບຈະຖືກດາວໂຫຼດຜ່ານ Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">ຮັບເອົາແອັບຈາກຜູ້ໃຫ້ການບໍລິການ</string>
+    <string name="STR_UPDATE_BODY1">ການດາວໂຫຼດໂດຍໃຊ້ເຄືອຂ່າຍມືຖືອາດເຮັດໃຫ້ເກີດມີຄ່າໃຊ້ຈ່າຍເພີ່ມເຕີມ.</string>
+    <string name="STR_UPDATE_BODY2">ໂທລະສັບຂອງທ່ານຈະປິດເປີດຄືນໃໝ່ຫຼັງຈາກການອັບເດດຖືກຕິດຕັ້ງ.</string>
+    <string name="STR_UPDATE_FAIL">ອັບເດດບໍ່ສໍາເລັດ. ລອງໃໝ່ອີກ.</string>
+    <string name="STR_UPDATE_HEADER1">ດາວໂຫຼດແລະຕິດຕັ້ງຊອບແວຫຼ້າສຸດຈາກຜູ້ໃຫ້ການບໍລິການຂອງທ່ານ.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- ທ່ານຈະບໍ່ໄດ້ເສຍຄ່າໃຊ້ຈ່າຍສຳລັບການຕັ້ງຄ່າເຟີມແວຣ໌ນີ້.
+
+- ໃນລະຫວ່າງການຕິດຕັ້ງ, ທ່ານຈະບໍ່ສາມາດໃຊ້ອຸປະກອນຂອງທ່ານໄດ້ເລີຍ, ແມ້ແຕ່ໂທສຸກເສີນ.
+
+- ໄອຄອນເທິງໜ້າຈໍຫຼັກແລະການຕັ້ງຄ່າອຸປະກອນອາດຈະຖືກຕັ້ງຄືນໃໝ່ໄປຍັງມາດຕະຖານຂອງພວກມັນແລະອາດຈະຕ້ອງໄດ້ຖືກກຳນົດຄ່າຄືນໃໝ່ຫຼັງຈາກການຕິດຕັ້ງ.
+
+- ອັບເດດເຟີມແວຣ໌ບໍ່ໄດ້ສົ່ງຜົນກະທົບຕໍ່ໄຟລ໌ແລະຂໍ້ມູນເທິງອຸປະກອນຂອງທ່ານ.
+
+- ແຕ່, ຖ້າທ່ານຢຸດຂະບວນການຕິດຕັ້ງກ່ອນທີ່ມັນຈະສຳເລັດ, ອຸປະກອນຂອງທ່ານອາດຈະບໍ່ເຮັດວຽກຕາມປົກກະຕິແລະຜົນທີ່ຕາມມາໄຟລ໌ຂອງທ່ານອາດຈະຖືກສູນເສຍ.
+
+- ເພື່ອຫຼີກຫຼ່ຽງການສູນເສຍຂໍ້ມູນທີ່ບໍ່ຄາດຄິດ, ພວກເຮົາຂໍແນະນຳໃຫ້ທ່ານແບັກອັບຂໍ້ມູນທີ່ສຳຄັນກ່ອນການຕິດຕັ້ງ."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">ປິດເປີດຄືນໃໝ່ເພື່ອສຳເລັດການຕິດຕັ້ງອັບເດດຊອບແວຜູ້ໃຫ້ການບໍລິການຂອງທ່ານ.</string>
+    <string name="STR_UPDATING_PACKAGE">ກຳລັງອັບເດດ…</string>
+    <string name="STR_USE_DATA_BTN">ໃຊ້ຂໍ້ມູນ</string>
+    <string name="STR_WAIT_FOR_WIFI">"ຢຸດການຕິດຕັ້ງແອັບຊົ່ວຄາວແລ້ວ.
+ກຳລັງລໍຖ້າ Wi-Fi ເພື່ອຕິດຕັ້ງແອັບ."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">ລໍຖ້າ Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">ຕິດຕັ້ງແອັບທີ່ແນະນຳໂດຍຜູ້ໃຫ້ການບໍລິການຂອງທ່ານ.</string>
+    <string name="STR_WIDGET_DOWNLOADING">ກໍາລັງດາວໂຫຼດ…</string>
+    <string name="STR_WIDGET_INSTALLED">ຕິດຕັ້ງແລ້ວ</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">ປຸ່ມ</string>
+    <string name="WSS_STR_NO_UPDATE">ການອັບເດດລ່າສຸດໄດ້ຖືກຕິດຕັ້ງຮຽບຮ້ອຍແລ້ວ.</string>
+</resources>
