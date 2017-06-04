@@ -278,8 +278,6 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v7, v2}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
-
     sget-object v3, Lcom/samsung/android/app/omcagent/log/FileLog;->DEBUG:Lcom/samsung/android/common/log/Logger$Impl;
 
     const-string v4, "Add Download Fail Notification"
