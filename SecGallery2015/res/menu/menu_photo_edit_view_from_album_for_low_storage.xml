@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:enabled="true" android:id="@id/action_share" android:visible="false" android:title="@string/share_short" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_delete" android:visible="false" android:title="@string/delete" android:showAsAction="ifRoom" />
+    <item android:enabled="false" android:id="@id/action_copy" android:visible="false" android:title="@string/copy_to_album" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_move" android:visible="false" android:title="@string/move_to_album" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_add_to_event" android:visible="false" android:title="@string/add_to_event" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_add_tag" android:visible="false" android:title="@string/add_tag" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_gif_maker" android:visible="false" android:title="@string/gif_maker" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_gif_maker_MSG" android:visible="false" android:title="@string/create_agif" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_collage" android:visible="false" android:title="@string/sa_collage" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_download_via_cloud" android:visible="false" android:title="@string/download" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_import" android:visible="false" android:title="@string/Import" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_move_to_secretbox" android:visible="false" android:title="@string/move_to_secretbox" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_remove_from_secretbox" android:visible="false" android:title="@string/remove_from_secretbox" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_move_to_knox" android:visible="false" android:title="@string/move_to_knox" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_remove_from_knox" android:visible="false" android:title="@string/remove_from_knox" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_move_to_secure_folder" android:visible="false" android:title="@string/move_to_secure_folder" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_remove_from_secure_folder" android:visible="false" android:title="@string/move_out_of_secure_folder" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_gif_done" android:visible="false" android:title="@string/create_agif" android:showAsAction="ifRoom" />
+    <item android:enabled="false" android:id="@id/action_collage_done" android:visible="false" android:title="@string/sa_collage" android:showAsAction="ifRoom" />
+    <item android:enabled="false" android:id="@id/action_slideshow" android:visible="false" android:title="@string/slideshow" app:showAsAction="ifRoom" />
+</menu>

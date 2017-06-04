@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/tw_divider_ab_holo_light" android:showDividers="middle" android:dividerPadding="@dimen/action_bar_divider_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="19.0sp" android:textColor="@color/actionbar_menu_text_enabled" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/action_bar_title" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="0.8000001dip" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDy="1.0" android:layout_weight="1.0" android:layout_marginStart="4.799988dip" android:layout_marginEnd="4.0dip" />
+    <ImageButton android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_icon_home_selector" android:scaleType="center" android:contentDescription="@string/home" android:layout_marginStart="1.0dip" style="@style/Holo.ActionBarItem" />
+    <ImageButton android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_icon_camera_selector" android:scaleType="center" android:contentDescription="@string/switch_to_camera" style="@style/Holo.ActionBarItem" />
+</LinearLayout>

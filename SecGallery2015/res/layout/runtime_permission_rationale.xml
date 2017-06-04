@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/runtime_message_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/runtime_message_font_size" android:textStyle="normal" android:textColor="@color/permission_rational_msg_color" android:id="@id/permission_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/runtime_item_height" android:layout_marginTop="@dimen/runtime_item_top_padding" android:layout_below="@id/permission_msg">
+        <ImageView android:id="@id/permission_icon" android:layout_width="@dimen/runtime_item_height" android:layout_height="@dimen/runtime_item_height" android:scaleType="center" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/runtime_message_font_size" android:textStyle="normal" android:textColor="@color/permission_rational_msg_color" android:gravity="center|left" android:id="@id/permission_name" android:layout_width="fill_parent" android:layout_height="@dimen/runtime_item_height" android:layout_marginLeft="@dimen/runtime_item_left_padding_text" android:includeFontPadding="false" android:layout_toRightOf="@id/permission_icon" android:fontFamily="sans-serif" />
+    </RelativeLayout>
+</RelativeLayout>

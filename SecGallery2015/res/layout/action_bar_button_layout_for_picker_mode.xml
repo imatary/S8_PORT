@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/tw_divider_ab_holo_light" android:showDividers="beginning" android:dividerPadding="@dimen/action_bar_divider_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_icon_home_selector" android:scaleType="center" android:contentDescription="@string/home" android:layout_marginStart="1.0dip" style="@style/Holo.ActionBarItem" />
+    <TextView android:textSize="@dimen/photoview_title_text_size" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeightSmall" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

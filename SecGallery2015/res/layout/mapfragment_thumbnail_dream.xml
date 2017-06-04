@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/map_thumbnail_address_bg" android:paddingTop="@dimen/map_list_thumbnail_container_padding_top_bottom" android:paddingBottom="@dimen/map_list_thumbnail_container_padding_top_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/map_list_thumbnail_container_margin_bottom" android:layout_above="@id/map_list_thumbnail_layout" android:layout_centerHorizontal="true" android:alpha="0.9" android:paddingStart="@dimen/map_list_thumbnail_container_padding_start_end" android:paddingEnd="@dimen/map_list_thumbnail_container_padding_start_end">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/map_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/mapview_address_min_height" android:textIsSelectable="true" style="@style/MapViewThumbnailAddressTextDream" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/fouraquare_logo" android:layout_width="@dimen/fouraquare_logo_size" android:layout_height="@dimen/fouraquare_logo_size" android:src="@drawable/gallery_ic_mapview_fouraquare" android:tint="@color/map_view_thumbnaillist_map_marker_tint_color" android:tintMode="src_atop" />
+            <TextView android:id="@id/map_address_poi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" style="@style/MapViewThumbnailPoiTextDream" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/map_list_thumbnail_layout" android:background="@color/map_view_thumbnaillist_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

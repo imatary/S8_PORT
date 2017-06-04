@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/event_notification_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/card_list_view" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?android:actionBarSize" />
+    <TextView android:textSize="@dimen/noitem_main_text_size" android:textColor="@color/noitem_text_color_for_grace" android:id="@id/no_item_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_set_description_no_notification" android:layout_centerInParent="true" android:fontFamily="sec-roboto-light" />
+</RelativeLayout>

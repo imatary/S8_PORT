@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="?android:actionBarItemBackground" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/action_bar_menu_item_min_size" android:minHeight="@dimen/action_bar_menu_item_min_size" android:contentDescription="@string/share_notification" android:paddingStart="@dimen/action_bar_menu_item_padding" android:paddingEnd="@dimen/action_bar_menu_item_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/image_notification_icon_border" android:layout_width="wrap_content" android:layout_height="@dimen/action_bar_menu_item_border_min_height">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/event_notification_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/image_notification_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_icon_notification" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/event_notification_icon_container" android:layout_alignEnd="@id/event_notification_icon_container">
+            <TextView android:textSize="@dimen/indicator_text_badge_icon_text_size" android:textColor="@color/header_count_text_color" android:gravity="center" android:id="@id/image_notification_badge_text" android:background="@drawable/tw_noti_badge_mtrl" android:padding="@dimen/indicator_icon_badge_text_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/indicator_text_badge_minimum_width" android:backgroundTint="@color/count_view_bg_color" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/key_suggestion_item_layout" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/search_key_suggest_item_padding" android:paddingBottom="@dimen/search_key_suggest_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/search_recommend_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/key_suggestion_icon" android:layout_width="@dimen/search_key_suggest_item_icon_size" android:layout_height="@dimen/search_key_suggest_item_icon_size" android:tint="@color/search_recommend_icon_color" android:layout_marginStart="@dimen/search_key_suggest_item_icon_padding" android:layout_marginEnd="@dimen/search_key_suggest_item_icon_padding" />
+    <TextView android:textSize="@dimen/search_recommend_item_text_size" android:textColor="@color/filter_panel_keyword_text_unselected_color" android:id="@id/key_suggestion_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/search_key_suggest_item_icon_padding" />
+</LinearLayout>

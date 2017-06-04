@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:gravity="center_horizontal" layout="@layout/moreinfo_item_icon" />
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moreinfo_item_content_margin_bottom">
+        <include layout="@layout/moreinfo_item_title" />
+        <TextView android:gravity="center_vertical" android:id="@id/moreinfo_set_location_map_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/moreInfo_item_content_min_height" android:singleLine="false" android:layout_marginEnd="@dimen/moreinfo_set_location_map_margin_right" style="@style/MoreInfo_item_content_text_style" />
+        <include layout="@layout/moreinfo_location_item_edit" />
+        <FrameLayout android:id="@id/map_container" android:layout_width="wrap_content" android:layout_height="@dimen/moreinfo_item_googlemap_height" android:layout_marginTop="@dimen/moreinfo_item_googlemap_margin_top" android:layout_marginBottom="@dimen/moreinfo_item_googlemap_margin_bottom" android:layout_marginEnd="@dimen/moreinfo_item_googlemap_padding_right" />
+        <ImageView android:gravity="center_vertical" android:id="@id/moreinfo_set_location_map_poi_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/moreinfo_item_content_margin_bottom" android:src="@drawable/moreinfo_divider_poi" android:layout_marginEnd="@dimen/moreinfo_set_location_map_margin_right" />
+        <TextView android:gravity="center_vertical" android:id="@id/moreinfo_set_location_map_poi_textview" android:paddingTop="@dimen/moreinfo_item_content_margin_bottom" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/moreInfo_item_content_min_height" android:singleLine="false" android:drawableEnd="@drawable/gallery_fouraquare_logo_details" android:paddingStart="0.0dip" android:paddingEnd="@dimen/moreinfo_set_padding_right" android:layout_marginEnd="@dimen/moreinfo_set_location_map_margin_right" style="@style/MoreInfo_item_content_text_style" />
+    </LinearLayout>
+</LinearLayout>

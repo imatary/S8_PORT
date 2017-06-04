@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dialog_common_list_padding_left" android:paddingEnd="@dimen/dialog_common_list_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/histogram_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/preview_image_center_margin">
+            <ImageView android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="@dimen/preview_image_height" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/detail_popup_model_text_size" android:gravity="center_horizontal" android:id="@id/detail_model" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/table_row_top_margin" android:text="@string/unknown" android:layout_below="@id/preview" style="@style/DetailsTextItem" />
+        </RelativeLayout>
+        <ImageView android:id="@id/histogram" android:background="@color/text_color_black" android:layout_width="fill_parent" android:layout_height="@dimen/preview_image_height" android:scaleType="fitXY" android:layout_weight="1.0" android:layout_marginStart="@dimen/preview_image_center_margin" />
+    </LinearLayout>
+    <TableLayout android:id="@id/detail_table" android:background="@drawable/popup_detail_ic_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/table_row_top_bottom_padding" android:layout_marginBottom="@dimen/table_row_top_bottom_padding" android:stretchColumns="*TextView*" android:layout_below="@id/histogram_info">
+        <TableRow android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:src="@drawable/popup_detail_ic_iso" />
+            <TextView android:id="@id/detail_iso" style="@style/DetailAdvacneTextItem" />
+            <ImageView android:layout_gravity="center" android:src="@drawable/popup_detail_ic_wb" />
+            <TextView android:id="@id/detail_white_balance" style="@style/DetailAdvacneTextItem" />
+            <ImageView android:layout_gravity="center" android:src="@drawable/popup_detail_ic_diapharagm" />
+            <TextView android:id="@id/detail_aperture" style="@style/DetailAdvacneTextItem" />
+        </TableRow>
+        <TableRow android:layout_height="wrap_content" android:layout_marginTop="@dimen/table_row_top_margin">
+            <ImageView android:layout_gravity="center" android:src="@drawable/popup_detail_ic_shutter" />
+            <TextView android:id="@id/detail_exposure_time" style="@style/DetailAdvacneTextItem" />
+            <ImageView android:layout_gravity="center" android:src="@drawable/popup_detail_ic_flash" />
+            <TextView android:id="@id/detail_flash" style="@style/DetailAdvacneTextItem" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

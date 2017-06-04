@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/round_thumbnail_stroke_width" android:color="@color/splitview_cardtype_outline_stroke_color" />
+    <corners android:topLeftRadius="@dimen/album_view_round_radius_over_30" android:topRightRadius="@dimen/album_view_round_radius_over_30" />
+</shape>

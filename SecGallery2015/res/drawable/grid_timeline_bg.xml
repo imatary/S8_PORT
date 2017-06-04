@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/social_story_detail_grid_timeline_button_radius" />
+    <solid android:color="@color/white_color" />
+    <stroke android:width="@dimen/social_story_detail_grid_timeline_button_stroke" android:color="@color/settings_preference_switch_divider_color" />
+</shape>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">Staðfestingarkóði verður sendur á númerið hér að neðan.</string>
+    <string name="acs">Símtal</string>
+    <string name="agree">Samþykkja</string>
+    <string name="cancel">Hætta við</string>
+    <string name="check_your_network_status">Athugaðu sendistyrkinn og reyndu aftur.</string>
+    <string name="choose_verification_method">Veldu staðfestingarleiðina sem þú vilt nota.</string>
+    <string name="decline">Hafna</string>
+    <string name="enter_your_phone_number">Sláðu inn landsnúmerið þitt og símanúmer.</string>
+    <string name="enter_your_verification_code">Sláðu inn staðfestingarkóðann</string>
+    <string name="if_your_registered_for_dnd_service">Ef þú skráðir þig fyrir DND-þjónustu skaltu nota raddstaðfestingu.</string>
+    <string name="in_progress">Í vinnslu...</string>
+    <string name="mt_dialog_progress">Staðfesti SMS-kóðann sjálfkrafa...</string>
+    <string name="no_results">Engar niðurstöður</string>
+    <string name="ok">Í lagi</string>
+    <string name="phone_number_verification_failed">Mistókst að staðfesta símanúmer. Staðfestu handvirkt.</string>
+    <string name="please_wait">Athuga staðfestingarkóða. Augnablik...</string>
+    <string name="regist_select_country_or_region_code">Land eða svæði</string>
+    <string name="resend">Endursenda</string>
+    <string name="search">Leita</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">Svæðisnúmer</string>
+    <string name="sms_auth_page_phone_number">Símanúmer</string>
+    <string name="the_verification_has_failed">Staðfestingin mistókst. Reyndu aftur.</string>
+    <string name="toast_text_max_Length">Hámarksfjölda stafa hefur verið náð.</string>
+    <string name="unable_to_connect_to_the_network">Ekki var hægt að tengjast netinu. Kannaðu tengistillingarnar og reyndu aftur.</string>
+    <string name="we_recommend_using_a_voice_call">Mælt er með notkun símtals ef þú getur ekki tekið við SMS-skilaboðum.</string>
+    <string name="you_have_entered_incorrect_code">Þú slóst inn rangan staðfestingarkóða. Reyndu aftur.</string>
+</resources>

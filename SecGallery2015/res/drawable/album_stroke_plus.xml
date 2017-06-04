@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetBottom="@dimen/album_view_stroke_hide_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <stroke android:width="@dimen/round_thumbnail_stroke_width" android:color="@color/cardtype_outline_stroke_color" />
+        <corners android:radius="@dimen/album_view_round_radius" />
+    </shape>
+</inset>

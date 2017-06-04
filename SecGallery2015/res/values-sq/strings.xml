@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">Një kod verifikimi do të dërgohet te numri më poshtë.</string>
+    <string name="acs">Thirrje zanore</string>
+    <string name="agree">Pranoj</string>
+    <string name="cancel">Anulo</string>
+    <string name="check_your_network_status">Kontrollo statusin e rrjetit, pastaj provo sërish.</string>
+    <string name="choose_verification_method">Përzgjidh mënyrën tënde të preferuar për verifikim.</string>
+    <string name="decline">Refuzo</string>
+    <string name="enter_your_phone_number">Fut prefiksin e shtetit tënd dhe numrin e telefonit.</string>
+    <string name="enter_your_verification_code">Fut kodin tënd të verifikimit</string>
+    <string name="highlight_play">Luaj</string>
+    <string name="highlight_player">Thekso lexuesin e videove</string>
+    <string name="if_your_registered_for_dnd_service">Në qoftë se je regjistruar për shërbimin DND, përdor verifikimin zanor.</string>
+    <string name="in_progress">Duke u kryer...</string>
+    <string name="information">Informacion</string>
+    <string name="mt_dialog_progress">Duke verifikuar kodin tënd SMS automatikisht...</string>
+    <string name="no_results">Asnjë rezultat</string>
+    <string name="noti_permission_title">Nuk mund të përdor %s</string>
+    <string name="ok">OK</string>
+    <string name="phone_number_verification_failed">Verifikimi i numrit të telefonit dështoi. Verifiko manualisht.</string>
+    <string name="please_wait">Duke kontrolluar kodin e verifikimit. Prit pak...</string>
+    <string name="popup_contents_error">Dësht. të luaj video</string>
+    <string name="regist_select_country_or_region_code">Vendi ose krahina</string>
+    <string name="resend">Ridërgo</string>
+    <string name="search">Kërko</string>
+    <string name="server_error_try_later">Ndodhi gabim i serverit. Provo më vonë.</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">Prefiksi i zonës</string>
+    <string name="sms_auth_page_phone_number">Numër telefoni</string>
+    <string name="the_verification_has_failed">Verifikimi dështoi. Provo sërish.</string>
+    <string name="toast_text_max_Length">U tejkalua numri maksimal i shenjave.</string>
+    <string name="unable_to_connect_to_the_network">Nuk mund të lidhem me rrjetin. Kontrollo cilësimet e lidhjes dhe provo sërish.</string>
+    <string name="we_recommend_using_a_voice_call">Rekomandojmë të përdorësh një thirrje zanore, në qoftë se nuk mund të marrësh mesazhe SMS.</string>
+    <string name="you_have_entered_incorrect_code">E ke futur gabim kodin e verifikimit. Provo sërish.</string>
+    <string name="you_have_reached_your_daily_sms_limit">Ke arritur kufirin ditor të SMS-ve. Riprovo pas %d orësh.</string>
+</resources>

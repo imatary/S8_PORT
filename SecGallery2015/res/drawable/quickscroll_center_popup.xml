@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/quick_center_popup_radius" android:topRightRadius="@dimen/quick_center_popup_radius" android:bottomLeftRadius="@dimen/quick_center_popup_radius" android:bottomRightRadius="@dimen/quick_center_popup_radius" />
+    <size android:height="@dimen/quick_cetner_popup_height" android:width="@dimen/quick_cetner_popup_width" />
+    <solid android:color="@color/quick_scroll_center_popup_bg_color" />
+</shape>

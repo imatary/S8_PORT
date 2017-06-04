@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/left_buttons" layout="@layout/top_left_action_bar_buttons" />
+    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/number_of_selected_items" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:marqueeRepeatLimit="marquee_forever" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" android:layout_toEndOf="@id/left_buttons" />
+</RelativeLayout>

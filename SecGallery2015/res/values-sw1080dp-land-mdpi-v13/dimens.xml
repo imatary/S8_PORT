@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="moreinfo_body_padding_left">340.0dip</dimen>
+    <dimen name="moreinfo_body_padding_right">340.0dip</dimen>
+</resources>

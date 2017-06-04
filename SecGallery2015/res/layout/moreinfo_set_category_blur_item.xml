@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/moreinfo_category_item_framelayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/moreinfo_category_item_image" android:paddingTop="@dimen/moreinfo_set_category_blur_item_image_padding" android:focusable="true" android:layout_width="@dimen/moreinfo_set_category_blur_item_image_width" android:layout_height="@dimen/moreinfo_set_category_blur_item_image_width" android:scaleType="fitXY" android:contentDescription="@string/category" android:paddingStart="0.0dip" android:paddingEnd="@dimen/moreinfo_set_category_blur_item_image_padding" />
+        <ImageButton android:layout_gravity="end" android:id="@id/moreinfo_expandable_subitem_delete_icon" android:background="@drawable/moreinfo_ripple_background_blur" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/moreinfo_set_category_blur_delete_icon_size" android:layout_height="@dimen/moreinfo_set_category_blur_delete_icon_size" android:src="@drawable/moreinfo_icon_delete" android:scaleType="center" android:contentDescription="@string/remove_category_label" />
+    </FrameLayout>
+    <TextView android:ellipsize="marquee" android:gravity="center" android:id="@id/moreinfo_category_item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="0.0dip" android:paddingEnd="@dimen/moreinfo_set_category_blur_item_image_padding" style="@style/MoreInfo_item_content_text_style_blur" />
+</LinearLayout>

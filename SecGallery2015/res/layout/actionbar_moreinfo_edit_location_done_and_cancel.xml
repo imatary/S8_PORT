@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/edit_location_actionbar_layout" android:background="@color/actionbar_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/container_done_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/action_cancel" android:background="@drawable/moreinfo_edit_location_done_and_cancel_ripple_background" style="@style/CustomActionButton">
+            <TextView android:ellipsize="end" android:id="@id/cancel" android:text="@string/cancel" style="@style/CustomActionButtonTextNew" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/action_done" android:background="@drawable/moreinfo_edit_location_done_and_cancel_ripple_background" style="@style/CustomActionButton">
+            <TextView android:ellipsize="end" android:id="@id/done" android:layout_width="fill_parent" android:text="@string/done" android:textAlignment="center" style="@style/CustomActionButtonTextNew" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/edit_location_action_bar_bottom_divider" android:background="@drawable/tw_action_bar_divider_mtrl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/edit_location_action_bar_bottom_divider" android:layout_alignBottom="@id/container_done_cancel" android:backgroundTint="@color/edit_location_action_bar_bottom_divider_color" />
+</RelativeLayout>

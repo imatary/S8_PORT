@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cardtype_outline_stroke_color">#ffe3e3e3</color>
+    <color name="search_noitem_text_color">#ff656565</color>
+    <color name="search_recommend_header_divider_color">#30252525</color>
+</resources>

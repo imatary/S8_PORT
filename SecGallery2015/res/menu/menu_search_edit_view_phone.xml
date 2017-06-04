@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:enabled="true" android:id="@id/action_share" android:visible="false" android:title="@string/share_short" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_delete" android:visible="false" android:title="@string/delete" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_copy" android:visible="false" android:title="@string/copy_to_album" android:showAsAction="never" />
+    <item android:id="@id/action_move" android:visible="false" android:title="@string/move_to_album" android:showAsAction="never" />
+    <item android:id="@id/action_add_to_event" android:visible="false" android:title="@string/add_to_event" android:showAsAction="never" />
+    <item android:id="@id/action_add_tag" android:visible="false" android:title="@string/add_tag" android:showAsAction="never" />
+    <item android:id="@id/action_remove_from_result" android:visible="false" android:title="@string/remove_from_result" android:showAsAction="never" />
+</menu>

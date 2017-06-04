@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:orientation="vertical" android:background="@android:color/transparent" android:paddingTop="@dimen/moreInfo_set_padding_top_blur" android:paddingBottom="@dimen/moreInfo_set_tags_padding_bottom_blur" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moreInfo_item_title_margin_bottom_blur" layout="@layout/moreinfo_item_title_blur" />
+    <com.sec.samsung.gallery.view.detailview.moreinfo.FlowLayout android:id="@id/flow_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

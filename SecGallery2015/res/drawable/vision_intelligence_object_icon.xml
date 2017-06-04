@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/vision_intelligence_icon_bg_color_50" />
+            <size android:height="@dimen/vision_intelligence_icon_size" android:width="@dimen/vision_intelligence_icon_size" />
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="@color/vision_intelligence_icon_bg_color_80" />
+            <size android:height="@dimen/vision_intelligence_object_size" android:width="@dimen/vision_intelligence_object_size" />
+        </shape>
+    </item>
+</layer-list>

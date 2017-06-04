@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.samsung.gallery.view.detailview.moreinfo.ExpandableLayout android:id="@id/moreinfo_expandablelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" expandable:horizontalSpacing="@dimen/moreinfo_expandablelayout_horizontal_gap_blur" expandable:verticalSpacing="@dimen/moreinfo_expandablelayout_vertical_gap" expandable:itemHeight="@dimen/moreinfo_expandable_subitem_height_blur"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:expandable="http://schemas.android.com/apk/res-auto" />

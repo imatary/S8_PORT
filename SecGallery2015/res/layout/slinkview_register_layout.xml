@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/default_background" android:paddingTop="@dimen/slink_main_header_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/slink_main_padding_start" android:paddingEnd="@dimen/slink_main_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/drawer_header_title_text_size" android:textStyle="bold" android:textColor="@color/common_header_subtitle" android:gravity="center_vertical" android:id="@id/list_header_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/slink_main_header_height" android:text="@string/registered_devices" android:fontFamily="sec-roboto-light" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/drawer_header_title_text_size" android:textColor="@color/common_header_subtitle" android:gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/slink_register_guide" android:fontFamily="sec-roboto-light" />
+        <Button android:id="@id/register_device" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/slink_main_register_guide_button_margin_top" android:text="@string/register" />
+    </LinearLayout>
+</LinearLayout>

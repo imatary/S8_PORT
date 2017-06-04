@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/search_recommend_list_divider_start_margin" android:right="@dimen/search_recommend_list_divider_end_margin">
+        <shape>
+            <size android:height="1.0px" />
+            <solid android:color="@color/list_search_divider_color" />
+        </shape>
+    </item>
+</layer-list>

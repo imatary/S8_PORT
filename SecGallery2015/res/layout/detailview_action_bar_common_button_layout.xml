@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/action_bar_item_layout" android:background="@drawable/detailview_actionbar_item_ripple_background" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?android:attr/actionButtonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/action_bar_item_imageview" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <TextView android:textAppearance="?android:actionMenuTextAppearance" android:textColor="@color/detailview_action_bar_menu_text_selector" android:layout_gravity="center" android:id="@id/action_bar_item_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textAllCaps="true" />
+</LinearLayout>

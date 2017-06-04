@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">Kod pengesahan akan dihantar ke nombor di bawah.</string>
+    <string name="acs">Panggilan suara</string>
+    <string name="agree">Bersetuju</string>
+    <string name="cancel">Batal</string>
+    <string name="check_your_network_status">Semak status rangkaian anda, kemudian cuba lagi.</string>
+    <string name="choose_verification_method">Pilih kaedah pengesahan pilihan anda.</string>
+    <string name="decline">Tolak</string>
+    <string name="enter_your_phone_number">Masukkan kod negara dan nombor telefon anda.</string>
+    <string name="enter_your_verification_code">Masukkan kod pengesahan anda</string>
+    <string name="if_your_registered_for_dnd_service">Jika anda mendaftar untuk perkhidmatan DND, gunakan pengesahan suara.</string>
+    <string name="in_progress">Sedang dijalankan...</string>
+    <string name="mt_dialog_progress">Mengesahkan kod SMS anda secara automatik...</string>
+    <string name="no_results">Tiada hasil</string>
+    <string name="ok">OK</string>
+    <string name="phone_number_verification_failed">Pengesahan nombor telefon gagal. Mengesahkan secara manual.</string>
+    <string name="please_wait">Menyemak kod pengesahan. Sila tunggu...</string>
+    <string name="regist_select_country_or_region_code">Negara atau kawasan</string>
+    <string name="resend">Htr semula</string>
+    <string name="search">Carian</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">Kod kawasan</string>
+    <string name="sms_auth_page_phone_number">Nombor telefon</string>
+    <string name="the_verification_has_failed">Pengesahan gagal. Cuba lagi.</string>
+    <string name="toast_text_max_Length">Aksara telah melebihi had maksimum.</string>
+    <string name="unable_to_connect_to_the_network">Tidak dapat menyambung ke rangkaian. Semak aturan sambungan rangkaian anda dan cuba lagi.</string>
+    <string name="we_recommend_using_a_voice_call">Kami syorkan anda menggunakan panggilan suara jika anda tidak boleh menerima mesej SMS.</string>
+    <string name="you_have_entered_incorrect_code">Anda telah memasukkan kod pengesahan yang salah. Cuba lagi.</string>
+</resources>

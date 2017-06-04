@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">Тексеру коды төмендегі нөмірге жіберіледі.</string>
+    <string name="acs">Дауыстық қоңырау</string>
+    <string name="agree">Келісу</string>
+    <string name="cancel">Бас тарту</string>
+    <string name="check_your_network_status">Желіңіз күйін тексеріп, әрекетті қайталаңыз.</string>
+    <string name="choose_verification_method">Қажетті тексеру әдісін таңдаңыз.</string>
+    <string name="decline">Қабылдамау</string>
+    <string name="enter_your_phone_number">Ел коды мен телефон нөмірін енгізіңіз.</string>
+    <string name="enter_your_verification_code">Тексеру кодыңызды енгізу</string>
+    <string name="if_your_registered_for_dnd_service">DND қызметіне тіркелсеңіз, дауыс тексеруін пайдаланыңыз.</string>
+    <string name="in_progress">Орындалуда...</string>
+    <string name="mt_dialog_progress">SMS коды автоматты түрде расталуда...</string>
+    <string name="no_results">Нәтижелер жоқ</string>
+    <string name="ok">OK</string>
+    <string name="phone_number_verification_failed">Телефон нөмірін тексеру сәтсіз аяқталды. Қолмен тексеру.</string>
+    <string name="please_wait">Тексеру коды тексерілуде. Күтіңіз...</string>
+    <string name="regist_select_country_or_region_code">Ел немесе аймақ</string>
+    <string name="resend">Қайта жіб.</string>
+    <string name="search">Іздеу</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">Аумақ коды</string>
+    <string name="sms_auth_page_phone_number">Телефон нөмірі</string>
+    <string name="the_verification_has_failed">Тексеру орындалмады. Әрекетті қайталаңыз.</string>
+    <string name="toast_text_max_Length">Максималды таңба шегінен асып кетті.</string>
+    <string name="unable_to_connect_to_the_network">Желіге қосылу мүмкін емес. Қосылым параметрлерін тексеріп, әрекетті қайталаңыз.</string>
+    <string name="we_recommend_using_a_voice_call">SMS хабарларын қабылдай алмаған жағдайда, дауыстық қоңырауды пайдалану ұсынылады.</string>
+    <string name="you_have_entered_incorrect_code">Қате тексеру кодын енгіздіңіз. Әрекетті қайталаңыз.</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/albumlistlayout" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/folder_list_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/albumlistradiobtn" android:background="@null" android:clickable="false" android:layout_width="@dimen/radiobutton_size" android:layout_height="@dimen/radiobutton_size" />
+    <ImageView android:id="@id/albumlistimage" android:layout_width="@dimen/folder_icon_size" android:layout_height="@dimen/folder_icon_size" android:scaleType="fitXY" android:layout_marginStart="@dimen/folder_icon_left_padding" />
+    <TextView android:textAppearance="?android:textAppearanceListItemSmall" android:ellipsize="end" android:id="@id/albumlisttext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/folder_text_left_padding" />
+</LinearLayout>

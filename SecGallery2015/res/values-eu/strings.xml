@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">Egiaztapen kodea bidaliko da beheko zenbakira.</string>
+    <string name="acs">Ahots deia</string>
+    <string name="agree">Ados</string>
+    <string name="cancel">Utzi</string>
+    <string name="check_your_network_status">Egiaztatu zure sare egoera eta saiatu berriz.</string>
+    <string name="choose_verification_method">Aukeratu egiaztapen kode hobetsia.</string>
+    <string name="decline">Ezetsi</string>
+    <string name="enter_your_phone_number">Idatzi herrialde kodea eta telefono zenbakia.</string>
+    <string name="enter_your_verification_code">Adierazi zure egiaztapen kodea</string>
+    <string name="if_your_registered_for_dnd_service">DND zerbitzuan erregistratzen bazara, erabili ahots egiaztapena.</string>
+    <string name="in_progress">Abian...</string>
+    <string name="mt_dialog_progress">SMS kodea automatikoki egiaztatzen...</string>
+    <string name="no_results">Emaitzarik ez</string>
+    <string name="ok">Ados</string>
+    <string name="phone_number_verification_failed">Telefono zenbakiaren egiaztapenak huts egin du. Egiaztatu eskuz.</string>
+    <string name="please_wait">Egiaztapen kodea egiaztatzen. Mesedez itxaron...</string>
+    <string name="regist_select_country_or_region_code">Herrialdea edo eskualdea</string>
+    <string name="resend">Birbidali</string>
+    <string name="search">Bilatu</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">Eremu kodea</string>
+    <string name="sms_auth_page_phone_number">Telefono zenbakia</string>
+    <string name="the_verification_has_failed">Egiaztapenak huts egin du. Saiatu berriz.</string>
+    <string name="toast_text_max_Length">Gehieneko karaktere muga gainditu da.</string>
+    <string name="unable_to_connect_to_the_network">Ezin da sarera konektatu. Egiaztatu zure konexioaren ezarpenak eta saiatu berriz.</string>
+    <string name="we_recommend_using_a_voice_call">Ezin baduzu SMS mezurik jaso, ahots deia erabiltzea gomendatzen dizugu.</string>
+    <string name="you_have_entered_incorrect_code">Egiaztapen kode okerra adierazi duzu. Saiatu berriz.</string>
+</resources>

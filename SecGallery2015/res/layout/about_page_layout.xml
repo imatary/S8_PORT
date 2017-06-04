@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.5" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="76.5">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/about_page_icon_width" android:layout_height="@dimen/about_page_icon_height" android:src="@drawable/about_gallery_ic" />
+                <TextView android:textSize="@dimen/about_page_app_label_text_size" android:textStyle="bold" android:textColor="@color/about_page_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/about_page_app_label_margin_top" android:text="@string/app_name" android:fontFamily="sec-roboto-condensed" android:textAlignment="center" />
+                <TextView android:textSize="@dimen/about_page_app_version_text_size" android:textColor="?android:textColorSecondary" android:id="@id/about_page_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/about_page_app_version_margin_top" android:text="@string/version_name" android:fontFamily="sec-roboto-light" android:textAlignment="center" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ProgressBar android:layout_gravity="center" android:id="@id/about_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/about_page_app_update_margin_top">
+                        <TextView android:textSize="@dimen/about_page_available_text_size" android:textColor="?android:textColorSecondary" android:id="@id/about_page_available" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textIsSelectable="true" android:fontFamily="sec-roboto-light" android:textAlignment="center" android:layout_marginStart="@dimen/about_page_app_update_margin_horizontal" android:layout_marginEnd="@dimen/about_page_app_update_margin_horizontal" />
+                        <Button android:textSize="@dimen/about_page_app_update_button_text_size" android:textColor="@color/about_page_update_button_text_color" android:ellipsize="end" android:layout_gravity="center" android:id="@id/about_page_update_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/about_page_update_button_height" android:layout_marginTop="@dimen/about_page_app_update_button_margin_top" android:text="@string/update" android:maxLines="1" android:textAllCaps="true" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/tw_list_item_presence_icon_size" android:paddingEnd="@dimen/tw_list_item_presence_icon_size" android:backgroundTint="@color/gallery_color_primary_dark" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" android:layout_marginStart="@dimen/about_page_open_source_license_margin" android:layout_marginEnd="@dimen/about_page_open_source_license_margin">
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/about_page_app_version_text_size" android:textColor="@color/about_page_text" android:gravity="center" android:id="@id/about_page_button_privacy_policy" android:background="@drawable/about_page_button_background" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy" android:fontFamily="sec-roboto-light" />
+            <TextView android:textSize="@dimen/about_page_app_version_text_size" android:textColor="@color/about_page_text" android:id="@id/about_page_button_open_source" android:background="@drawable/about_page_button_background" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open_source_licences" android:fontFamily="sec-roboto-light" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_delete" android:visible="false" android:title="@string/delete_album" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_copy" android:visible="false" android:title="@string/copy_to_album" android:showAsAction="never" />
+    <item android:id="@id/action_move" android:visible="false" android:title="@string/move_to_album" android:showAsAction="never" />
+    <item android:id="@id/action_rename" android:visible="false" android:title="@string/rename" android:showAsAction="never" />
+    <item android:id="@id/action_printer" android:visible="false" android:title="@string/printer" android:showAsAction="never" />
+    <item android:id="@id/action_move_to_secretbox" android:visible="false" android:title="@string/move_to_secretbox" android:showAsAction="never" />
+    <item android:id="@id/action_remove_from_secretbox" android:visible="false" android:title="@string/remove_from_secretbox" android:showAsAction="never" />
+    <item android:id="@id/action_move_to_knox" android:visible="false" android:title="@string/move_to_knox" android:showAsAction="never" />
+    <item android:id="@id/action_remove_from_knox" android:visible="false" android:title="@string/remove_from_knox" android:showAsAction="never" />
+    <item android:id="@id/action_move_to_secure_folder" android:visible="false" android:title="@string/move_to_secure_folder" android:showAsAction="never" />
+    <item android:id="@id/action_remove_from_secure_folder" android:visible="false" android:title="@string/move_out_of_secure_folder" android:showAsAction="never" />
+    <item android:id="@id/action_hide_edit_dialog" android:visible="false" android:title="@string/hide" android:showAsAction="never" />
+    <item android:id="@id/action_show_edit_dialog" android:visible="false" android:title="@string/show" android:showAsAction="never" />
+</menu>

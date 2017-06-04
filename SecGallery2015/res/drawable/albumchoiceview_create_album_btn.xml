@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/list_album_view_thumbnail_size" android:width="@dimen/list_album_view_thumbnail_size" />
+            <stroke android:width="2.0px" android:color="#ffe3e3e3" />
+        </shape>
+    </item>
+</layer-list>

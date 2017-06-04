@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.samsung.gallery.view.slideshowsetting.SlideShowSettingSpinnerPreferenceEffect android:title="@string/transition_effect" android:key="key_slideshow_effect" android:defaultValue="@string/slide" />
+    <com.sec.samsung.gallery.view.slideshowsetting.SlideShowSettingSpinnerPreferenceSpeed android:title="@string/transition_interval" android:key="key_slideshow_speed" android:defaultValue="@string/second_3" />
+</PreferenceScreen>

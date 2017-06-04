@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="slideshow_resume_icon_height">121.0dip</dimen>
+    <dimen name="slideshow_resume_icon_width">121.0dip</dimen>
+    <dimen name="slideshow_spinner_top_margin">8.0dip</dimen>
+    <dimen name="channel_photo_view_suggestion_bg_side_padding">127.0dip</dimen>
+    <dimen name="event_view_title_button1_max_width">235.0dip</dimen>
+    <dimen name="event_view_title_button2_max_width">194.0dip</dimen>
+    <dimen name="event_view_title_button_gap">24.0dip</dimen>
+    <dimen name="filter_detail_text_max_width">740.0dip</dimen>
+    <dimen name="filter_selected_item_max_width">740.0dip</dimen>
+    <dimen name="moreinfo_body_padding_left">0.0dip</dimen>
+    <dimen name="moreinfo_body_padding_right">0.0dip</dimen>
+    <dimen name="crop_image_actionbar_text_margin_left">0.0dip</dimen>
+    <dimen name="crop_image_actionbar_text_margin_right">0.0dip</dimen>
+    <dimen name="search_bg_width_offset">253.5dip</dimen>
+    <dimen name="search_result_margin">152.0dip</dimen>
+    <dimen name="fast_menu_imageview_width">104.0dip</dimen>
+    <dimen name="share_setting_list_side_margin">128.0dip</dimen>
+    <dimen name="splitview_photo_count_corner">2.0dip</dimen>
+</resources>

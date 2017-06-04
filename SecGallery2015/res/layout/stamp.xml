@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/event_title_margin" android:layout_marginRight="@dimen/event_title_margin">
+        <TextView android:textStyle="bold" android:textColor="#fffafafa" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/stamp_event_title" android:layout_width="@dimen/stamp_title_width" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" />
+    </LinearLayout>
+    <TextView android:textColor="#fffafafa" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/day_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015.09.06" android:lines="1" android:scrollHorizontally="true" />
+</LinearLayout>

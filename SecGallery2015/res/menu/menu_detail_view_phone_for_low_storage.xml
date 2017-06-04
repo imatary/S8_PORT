@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:enabled="false" android:id="@id/action_force_rotate" android:visible="true" android:title="@string/sa_rotate" android:showAsAction="always" />
+    <item android:id="@id/action_search" android:visible="false" android:title="@string/related_image" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_moreinfo" android:visible="false" android:title="@string/details" android:showAsAction="never" />
+    <item android:id="@id/action_favorite" android:visible="true" android:title="@string/favorite" android:showAsAction="always" />
+    <item android:id="@id/action_camera" android:visible="false" android:title="@string/switch_to_camera" android:showAsAction="always|withText" />
+    <item android:id="@id/action_remove_from_event" android:visible="false" android:title="@string/remove_from_event" android:showAsAction="never" />
+    <item android:id="@id/action_remove_from_category" android:visible="false" android:title="@string/remove_from_category" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_rotate_ccw" android:visible="false" android:title="@string/rotate_left" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_rotate_cw" android:visible="false" android:title="@string/rotate_right" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_import" android:visible="false" android:title="@string/Import" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/event_download" android:visible="false" android:title="@string/download" android:showAsAction="always" />
+    <item android:enabled="false" android:id="@id/action_download_via_cloud" android:visible="false" android:title="@string/download" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_slideshow" android:visible="false" android:title="@string/slideshow" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_setas_contact" android:visible="true" android:title="@string/set_as_contact_picture" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_setas" android:visible="true" android:title="@string/set_as_wallpaper" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/set_always_on_display" android:visible="false" android:title="@string/ss_set_as_always_on_display_image_opt_abb" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_download_slink" android:visible="false" android:title="@string/download" android:showAsAction="ifRoom" />
+    <item android:enabled="false" android:id="@id/action_download_via_download_manager" android:visible="false" android:title="@string/download" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/actionbar_ic_allshare" android:id="@id/action_allshare_change_player" android:visible="false" android:title="@string/share_short" android:showAsAction="never" />
+    <item android:id="@id/action_send_to_other_devices" android:visible="false" android:title="@string/send_to_other_devices" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_move_to_knox" android:visible="false" android:title="@string/move_to_knox" android:showAsAction="never" />
+    <item android:id="@id/action_remove_from_knox" android:visible="false" android:title="@string/remove_from_knox" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_move_to_secure_folder" android:visible="false" android:title="@string/move_to_secure_folder" android:showAsAction="never" />
+    <item android:id="@id/action_remove_from_secure_folder" android:visible="false" android:title="@string/move_out_of_secure_folder" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_move_to_secretbox" android:visible="false" android:title="@string/move_to_secretbox" android:showAsAction="never" />
+    <item android:enabled="false" android:id="@id/action_remove_from_secretbox" android:visible="false" android:title="@string/remove_from_secretbox" android:showAsAction="never" />
+    <item android:id="@id/view_original" android:visible="false" android:title="@string/view_original" android:showAsAction="never" />
+    <item android:id="@id/action_details" android:visible="false" android:title="@string/properties" android:showAsAction="never" />
+    <item android:id="@id/action_display_date_and_location" android:visible="false" android:title="@string/display_date_and_location" android:showAsAction="never" />
+    <item android:id="@id/action_qrscan" android:visible="false" android:title="@string/qrcodescan" android:showAsAction="never" />
+    <item android:id="@id/action_printer" android:visible="false" android:title="@string/printer" android:showAsAction="never" />
+    <item android:id="@id/action_taobao" android:visible="false" android:title="@string/product_search" android:showAsAction="never" />
+</menu>

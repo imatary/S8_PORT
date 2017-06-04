@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:layout_gravity="center_vertical" android:id="@id/moreinfo_item_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moreinfo_item_content_margin_bottom" android:minHeight="@dimen/moreInfo_item_content_min_height" android:singleLine="false" android:paddingEnd="@dimen/moreinfo_set_padding_right" style="@style/MoreInfo_item_content_text_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

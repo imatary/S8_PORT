@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_camera" android:visible="false" android:title="@string/switch_to_camera" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_deregister_devices" android:visible="false" android:title="@string/deregistered_device" android:showAsAction="never" />
+    <item android:id="@id/action_help" android:title="@string/help" android:showAsAction="never" />
+</menu>

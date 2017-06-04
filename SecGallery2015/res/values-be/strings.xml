@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">На пазначаны ніжэй нумар будзе адпраўлены код спраўджання.</string>
+    <string name="acs">Галасавы выклік</string>
+    <string name="agree">Agree</string>
+    <string name="cancel">Cancel</string>
+    <string name="check_your_connection">Праверце стан сеткі, а потым паспрабуйце яшчэ раз.</string>
+    <string name="check_your_network_status">Праверце стан сеткі, а потым паспрабуйце яшчэ раз.</string>
+    <string name="choose_verification_method">Выберыце прыярытэтны спосаб спраўджання.</string>
+    <string name="deregister">Адмяніць рэгістрацыю тэлефоннага нумару</string>
+    <string name="enter_your_verification_code">Увядзіце свой код спраўджання</string>
+    <string name="highlight_play">Прайграваць</string>
+    <string name="highlight_player">Вылучыць відэапрайгравальнік</string>
+    <string name="if_your_registered_for_dnd_service">Калі вы зарэгістраваны ў сэрвісе DND, выкарыстоўвайце праверку па голасе.</string>
+    <string name="in_progress">Выконваецца...</string>
+    <string name="information">ЗВЕСТКІ</string>
+    <string name="mt_dialog_progress">Аўтаматычнае спраўджанне вашага SMS-коду...</string>
+    <string name="no_results">Вынікі не знойдзены</string>
+    <string name="noti_permission_title">Немагчыма выкарыстаць %s</string>
+    <string name="ok">OK</string>
+    <string name="please_wait">Праверка коду спраўджання. Пачакайце...</string>
+    <string name="popup_contents_error">Не ўдал.прайгр.відэа</string>
+    <string name="regist_select_country_or_region_code">Краіна або рэгіён</string>
+    <string name="resend">Адпр. зноў</string>
+    <string name="search">Пошук</string>
+    <string name="select_your_country">Выберыце сваю краіну</string>
+    <string name="server_error_try_later">Адбылася памылка сервера. Паспрабуйце пазней.</string>
+    <string name="simple_sharing">Абагуленне спасылкі</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">Код зоны</string>
+    <string name="sms_auth_page_phone_number">Нумар тэлефона</string>
+    <string name="sms_authentification_activity_description">На пазначаны ніжэй нумар тэлефона будзе адпраўлены код праверкі сапраўднасці. Увядзіце код краіны і тэлефонны нумар.</string>
+    <string name="the_verification_has_failed">Збой спраўджання. Паўтарыце спробу.</string>
+    <string name="toast_text_max_Length">Максімальная колькасць сімвалаў была перавышана.</string>
+    <string name="we_recommend_using_a_voice_call">Мы раім скарыстацца галасавым выклікам, калі вы не можаце атрымаць паведамленне SMS.</string>
+    <string name="you_have_entered_incorrect_code">Вы ўвялі няправільны код спраўджання. Паўтарыце спробу.</string>
+    <string name="you_have_reached_your_daily_sms_limit">You have reached your daily SMS limit. Try again in %d hours.</string>
+    <string name="you_have_reached_your_daliy_voice_limit">You have reached your daily voice verification limit. Try again in %d hours.</string>
+</resources>

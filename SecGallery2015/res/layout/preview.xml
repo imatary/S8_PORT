@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/VideoPreview" android:background="@drawable/transparent_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/preview_vidoepreview_margin_top_bottom_left_right" android:layout_marginTop="@dimen/preview_vidoepreview_margin_top_bottom_left_right" android:layout_marginRight="@dimen/preview_vidoepreview_margin_top_bottom_left_right" android:layout_marginBottom="@dimen/preview_vidoepreview_margin_top_bottom_left_right" />
+    <ImageView android:id="@id/export_pause_bgn" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

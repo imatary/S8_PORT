@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/tv_icon_default_bg_color" />
+    <stroke android:width="@dimen/select_tv_row_icon_stroke" android:color="@color/tv_icon_default_stroke_color" />
+</shape>

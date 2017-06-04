@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_verification_code_will_be_sent">ಕೆಳಗಿನ ಸಂಖ್ಯೆಗೆ ಪರಿಶೀಲನೆ ಕೋಡ್ ಕಳುಹಿಸಲಾಗುವುದು.</string>
+    <string name="acs">ಧ್ವನಿ ಕರೆ</string>
+    <string name="agree">ಒಪ್ಪುತ್ತೇನೆ</string>
+    <string name="cancel">ರದ್ದುಪಡಿಸಿ</string>
+    <string name="check_your_network_status">ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ, ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="choose_verification_method">ನಿಮ್ಮ ಆದ್ಯತೆಯ ಪರಿಶೀಲನೆ ವಿಧಾನ ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="decline">ನಿರಾಕರಿಸಿ</string>
+    <string name="enter_your_phone_number">ನಿಮ್ಮ ದೇಶದ ಕೋಡ್ ಮತ್ತು ಫೋನ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ.</string>
+    <string name="enter_your_verification_code">ನಿಮ್ಮ ಪರಿಶೀಲನೆ ಕೋಡ್ ನಮೂದಿಸಿ</string>
+    <string name="if_your_registered_for_dnd_service">ನೀವು DND ಸೇವೆಗಾಗಿ ನೋಂದಾಯಿಸಿದ್ದರೆ, ಧ್ವನಿ ಪರಿಶೀಲನೆಯನ್ನು ಬಳಸಿ.</string>
+    <string name="in_progress">ಪ್ರಗತಿಯಲ್ಲಿದೆ...</string>
+    <string name="mt_dialog_progress">ನಿಮ್ಮ SMS ಕೋಡ್ ಅನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ...</string>
+    <string name="no_results">ಫಲಿತಾಂಶಗಳು ಇಲ್ಲ</string>
+    <string name="ok">ಓಕೆ</string>
+    <string name="phone_number_verification_failed">ಫೋನ್ ಸಂಖ್ಯೆ ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ಹಸ್ತಚಾಲಿತವಾಗಿ ಪರಿಶೀಲಿಸಿ.</string>
+    <string name="please_wait">ಪರಿಶೀಲನೆ ಕೋಡ್ ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ. ದಯವಿಟ್ಟು ಕಾಯಿರಿ...</string>
+    <string name="regist_select_country_or_region_code">ದೇಶ ಅಥವಾ ಪ್ರದೇಶ</string>
+    <string name="resend">ಮತ್ತೆಕಳುಹಿಸಿ</string>
+    <string name="search">ಹುಡುಕಿ</string>
+    <string name="sms">SMS</string>
+    <string name="sms_auth_page_area_code">ಪ್ರದೇಶ ಕೋಡ್</string>
+    <string name="sms_auth_page_phone_number">ಫೋನ್ ಸಂಖ್ಯೆ</string>
+    <string name="the_verification_has_failed">ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="toast_text_max_Length">ಗರಿಷ್ಠ ಅಕ್ಷರಗಳ ಮಿತಿ ಮೀರಿದೆ.</string>
+    <string name="unable_to_connect_to_the_network">ನೆಟ್‌ವರ್ಕ್‌‌ಗೆ ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ನೆಟ್‌‌‌‌‌ವರ್ಕ್ ಸಂಪರ್ಕವನ್ನು ಪರೀಕ್ಷಿಸಿ ಹಾಗೂ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="we_recommend_using_a_voice_call">ನೀವು SMS ಸಂದೇಶಗಳನ್ನು ಪಡೆಯಲು ಸಾಧ್ಯವಾಗದೇ ಇದ್ದರೆ ಧ್ವನಿ ಕರೆಯನ್ನು ಬಳಸಲು ನಾವು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ.</string>
+    <string name="you_have_entered_incorrect_code">ನೀವು ತಪ್ಪಾದ ಪರಿಶೀಲನೆ ಕೋಡ್ ಅನ್ನು ನಮೂದಿಸಿದ್ದೀರಿ. ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+</resources>

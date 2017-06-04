@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/search_no_item_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/no_custom_tags" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="98.0dip">
+        <TextView android:textSize="@dimen/filter_detail_text_size" android:textColor="#ff252525" android:gravity="center" android:id="@id/filter_no_tags" android:background="@android:color/transparent" android:focusable="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_custom_tags" android:fontFamily="sec-roboto-light" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/search_no_item_min_height" android:layout_below="@id/no_custom_tags">
+        <FrameLayout android:id="@id/search_no_item_bg_layout" android:background="@drawable/search_noitem_field_shape" android:layout_width="fill_parent" android:layout_height="98.0dip" android:layout_marginTop="@dimen/search_no_item_margin_top" android:layout_marginBottom="@dimen/search_no_item_margin_bottom" android:layout_marginStart="@dimen/search_no_item_margin_start" android:layout_marginEnd="@dimen/search_no_item_margin_end" android:elevation="@dimen/search_no_item_elevation">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/search_no_item_text_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingEnd="@dimen/search_no_item_text_padding">
+                <TextView android:textSize="23.0sp" android:textColor="#ff56c0e5" android:gravity="start" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/search_tips" android:layout_weight="1.0" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/search_no_item_text_padding" />
+                <ImageButton android:gravity="end" android:id="@id/cancel_tips" android:background="?android:actionBarItemBackground" android:focusable="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/sfinder_tips_close" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/search_no_item_text_size" android:textColor="@color/search_noitem_text_color" android:gravity="start" android:id="@id/empty_history" android:paddingTop="58.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/search_view_guide_text" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/search_no_item_text_padding" android:paddingEnd="@dimen/search_no_item_text_padding" />
+        </FrameLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/result_no_itemlayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/search_no_item_min_height">
+            <FrameLayout android:background="@drawable/search_noitem_field_shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/search_no_item_margin_top" android:layout_marginBottom="@dimen/search_no_item_margin_bottom" android:layout_marginStart="@dimen/search_no_item_margin_start" android:layout_marginEnd="@dimen/search_no_item_margin_end" android:elevation="@dimen/search_no_item_elevation">
+                <TextView android:textSize="@dimen/search_no_item_text_size" android:textColor="@color/search_noitem_text_color" android:gravity="center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ocr_no_result" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/search_no_item_text_padding" android:paddingEnd="@dimen/search_no_item_text_padding" />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

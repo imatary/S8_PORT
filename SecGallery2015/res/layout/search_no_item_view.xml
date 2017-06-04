@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/search_no_item_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/search_no_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/search_no_item_bg_layout" android:background="@drawable/search_noitem_field_shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/search_no_item_margin_top" android:layout_marginBottom="@dimen/search_no_item_margin_bottom" android:layout_marginStart="@dimen/search_no_item_margin_start" android:layout_marginEnd="@dimen/search_no_item_margin_end" android:elevation="@dimen/search_no_item_elevation">
+        <TextView android:textSize="@dimen/search_no_item_text_size" android:textColor="@color/search_noitem_text_color" android:gravity="center" android:id="@id/empty_history" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/search_view_guide_text" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/search_no_item_text_padding" android:paddingEnd="@dimen/search_no_item_text_padding" />
+    </FrameLayout>
+</RelativeLayout>

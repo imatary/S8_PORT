@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:paddingBottom="@dimen/fastoptionview_padding_from_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/fast_menu_text_size" android:textColor="@color/fast_menu_item_text_color" android:gravity="center_horizontal" android:id="@id/menu_item_textview" android:background="@drawable/fastoptionview_item_ripple_background" android:paddingTop="3.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:layout_width="@dimen/fast_menu_imageview_width" android:layout_height="wrap_content" android:minHeight="@dimen/fast_menu_imageview_height" android:bufferType="spannable" android:singleLine="true" android:includeFontPadding="false" android:drawablePadding="5.0dip" android:fontFamily="sec-roboto-condensed" android:layout_marginStart="@dimen/fast_menu_side_margin_imageview_portrait" android:layout_marginEnd="@dimen/fast_menu_side_margin_imageview_portrait" />
+</FrameLayout>

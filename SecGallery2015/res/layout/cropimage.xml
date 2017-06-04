@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/gl_root_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" class="com.sec.android.gallery3d.glcore.GlRootView" />
+    <include layout="@layout/actionbar_done_and_cancel_cropimage_nos" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textColor="#ffebebeb" android:gravity="center" android:id="@id/btn_save" android:background="@drawable/cropimage_btn_save" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:maxWidth="95.0dip" android:minWidth="75.0dip" android:text="@string/save" android:layout_alignParentBottom="true" android:layout_marginEnd="6.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</merge>

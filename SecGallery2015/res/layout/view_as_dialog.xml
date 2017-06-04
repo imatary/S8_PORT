@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="vertical" android:id="@id/view_as_radio_group" android:paddingTop="@dimen/dialog_radio_group_top_bottom_margin" android:paddingBottom="@dimen/dialog_radio_group_top_bottom_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="?android:listDividerAlertDialog" android:paddingStart="@dimen/dialog_radio_group_side_margin" android:paddingEnd="@dimen/dialog_radio_group_side_margin">
+        <RadioButton android:textColor="@color/dialog_content_text_color" android:id="@id/action_view_as_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dialog_radio_button_side_margin" android:paddingEnd="@dimen/dialog_radio_button_side_margin" android:buttonTint="@drawable/radio_button_selector" />
+        <RadioButton android:textColor="@color/dialog_content_text_color" android:id="@id/action_view_as_level_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dialog_radio_button_side_margin" android:paddingEnd="@dimen/dialog_radio_button_side_margin" android:buttonTint="@drawable/radio_button_selector" />
+        <RadioButton android:textColor="@color/dialog_content_text_color" android:id="@id/action_view_as_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dialog_radio_button_side_margin" android:paddingEnd="@dimen/dialog_radio_button_side_margin" android:buttonTint="@drawable/radio_button_selector" />
+        <RadioButton android:textColor="@color/dialog_content_text_color" android:id="@id/action_view_as_level_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dialog_radio_button_side_margin" android:paddingEnd="@dimen/dialog_radio_button_side_margin" android:buttonTint="@drawable/radio_button_selector" />
+    </RadioGroup>
+</ScrollView>
