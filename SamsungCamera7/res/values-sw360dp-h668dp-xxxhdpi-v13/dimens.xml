@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normal_ratio_preview_left">50.0dip</dimen>
+    <dimen name="overlay_help_interaction_guide_main_layout_portrait_margin_top">193.0dip</dimen>
+    <dimen name="overlay_help_interaction_guide_menu_bar_portrait_margin_bottom">90.0dip</dimen>
+    <dimen name="side_quick_setting_width">50.0dip</dimen>
+    <dimen name="square_ratio_preview_left">110.0dip</dimen>
+    <dimen name="wide_ratio_preview_left">50.0dip</dimen>
+</resources>

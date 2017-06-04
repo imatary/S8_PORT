@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/camera_setting_root" android:background="@color/winset_list_blank_theme" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/list_content_root_padding_horizontal" android:paddingEnd="@dimen/list_content_root_padding_horizontal">
+        <RelativeLayout android:background="@drawable/switch_header_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="1.0dip">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switch_container" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/SwitchPreferenceHeaderTextAppearance" android:id="@id/switch_text" android:paddingTop="@dimen/switch_preference_header_top_margin" android:paddingBottom="@dimen/switch_preference_header_bottom_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/switch_preference_header_left_margin" android:layout_alignParentStart="true" />
+                <Switch android:id="@id/switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingEnd="@dimen/switch_preference_header_right_margin" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/listContainer" android:background="@drawable/list_divider_for_settings_landscape" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</merge>
