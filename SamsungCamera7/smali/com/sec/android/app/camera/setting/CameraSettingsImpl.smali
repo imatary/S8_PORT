@@ -8191,11 +8191,7 @@
 
     if-eqz v0, :cond_0
 
-    const-string v3, "csc_pref_camera_forced_shuttersound_key"
-
-    invoke-static {v0, v3, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v1
+    const/4 v1, 0x0
 
     :cond_0
     :goto_0
