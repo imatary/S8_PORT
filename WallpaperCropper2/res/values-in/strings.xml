@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Tidak dapat membuka %s. Ketuk PENGATURAN, buka Info aplikasi > Izin, lalu perbolehkan izin berikut dan coba lagi:</string>
+    <string name="all_sim">Semua</string>
+    <string name="app_name">Wallpaper</string>
+    <string name="apply">Terapkan</string>
+    <string name="can_not_set_wallpaper_image_not_found">Tidak dapat mengatur gambar sebagai wallpaper. Gambar tidak ditemukan.</string>
+    <string name="cancel">Batal</string>
+    <string name="cancle">Dibatalkan</string>
+    <string name="change_wallpaper_when_infinity_applied">Efek infinity akan dinonaktifkan jika Anda menggunakan wallpaper ini.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Selesai</string>
+    <string name="duplicate_image">Duplikat</string>
+    <string name="expand_image">Perluas</string>
+    <string name="fail_to_load">Tidak dapat memuat foto.</string>
+    <string name="home_lock_screen">Beranda dan kunci layar</string>
+    <string name="home_screen">Layar depan</string>
+    <string name="homescreen_checkbox_motion_effect">Efek gerakan</string>
+    <string name="image_too_small">Gambar terlalu kecil.</string>
+    <string name="item_restricted">Item dibatasi</string>
+    <string name="left_image">Kiri</string>
+    <string name="lock_screen">Kunci layar</string>
+    <string name="motion_effect">Efek gerakan wallpaper</string>
+    <string name="motion_wallpaper_name">Wallpaper bergerak</string>
+    <string name="notice_low_storage">Tidak ada cukup ruang. Hapus item yang tidak perlu, seperti perangkat lunak, gambar, video, dan dokumen yang sudah diunduh.</string>
+    <string name="permission_description">Untuk menggunakan %s, ketuk PENGATURAN, buka Info aplikasi > Izin, lalu perbolehkan izin berikut:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Penyimpanan</string>
+    <string name="processing">Memproses…</string>
+    <string name="request_permission_rationale">Tidak dapat menggunakan %1$s. Ketuk PENGATURAN, lalu izinkan %2$s dan coba lagi.</string>
+    <string name="right_image">Kanan</string>
+    <string name="set_wallpaper_docomo_text_gui">Gambar ini akan ditampilkan di layar depan dan layar kunci.</string>
+    <string name="settings">Pengaturan</string>
+    <string name="speak_button">Tombol</string>
+    <string name="sview_window">Jendela S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Tidak dapat mengatur gambar sebagai wallpaper. Gambar telah dihapus.</string>
+    <string name="unable_to_download">Tidak bisa mendownload.</string>
+    <string name="wallpaper_applied_home">Wallpaper diterapkan ke layar depan.</string>
+    <string name="wallpaper_applied_home_and_lock">Wallpaper diterapkan ke layar depan dan layar kunci.</string>
+    <string name="wallpaper_applied_lock">Wallpaper diterapkan ke layar kunci.</string>
+    <string name="wallpaper_applied_multi_lock">%d wallpaper diterapkan ke layar kunci.</string>
+    <string name="wallpaper_applied_sview">Wallpaper diterapkan ke jendela S View.</string>
+    <string name="wallpaper_crop_button_done">Selesai</string>
+    <string name="wallpaper_instructions">Atur sebagai wallpaper</string>
+    <string name="wallpaper_lock_gui_cinematic">Tampilan layar kunci akan berubah saat Anda memiringkan perangkat ke kiri atau kanan.</string>
+</resources>

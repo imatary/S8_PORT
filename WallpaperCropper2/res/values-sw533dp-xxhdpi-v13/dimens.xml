@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="both_crop_preview_height">359.0dip</dimen>
+    <dimen name="both_crop_preview_width">269.0dip</dimen>
+    <dimen name="both_crop_view_top_margin">183.0dip</dimen>
+    <dimen name="set_as_wallpaper_btn_height">34.0dip</dimen>
+    <dimen name="set_as_wallpaper_btn_margin_bottom">24.0dip</dimen>
+    <dimen name="set_as_wallpaper_btn_width">270.0dip</dimen>
+    <dimen name="both_crop_view_area_margin_left_right">17.5dip</dimen>
+    <dimen name="home_lock_cropview_top_margin">82.0dip</dimen>
+    <dimen name="wallpaper_preview_home_checkbox_bottom_margin">78.5dip</dimen>
+    <dimen name="wallpaper_preview_lock_cropview_height">562.0dip</dimen>
+    <dimen name="wallpaper_preview_lock_cropview_width">421.0dip</dimen>
+    <dimen name="wallpaper_sview_cover_crop_view_height">200.0dip</dimen>
+    <dimen name="wallpaper_sview_cover_crop_view_width">190.0dip</dimen>
+</resources>

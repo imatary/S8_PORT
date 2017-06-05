@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Non se pode abrir %s. Toca AXUSTES, vai a Información da aplicación > Permisos e, a continuación, concede os seguintes permisos e téntao de novo:</string>
+    <string name="all_sim">Todas</string>
+    <string name="app_name">Fondos</string>
+    <string name="apply">Solicitar</string>
+    <string name="can_not_set_wallpaper_image_not_found">Non se pode definir a imaxe como fondo. Imaxe non atopada.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cancle">Cancelar</string>
+    <string name="change_wallpaper_when_infinity_applied">Os efectos de infinito desactivaranse se utilizas este fondo de pantalla.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Feito</string>
+    <string name="duplicate_image">Duplicar</string>
+    <string name="expand_image">Expandir</string>
+    <string name="fail_to_load">Imposible cargar a foto</string>
+    <string name="home_lock_screen">Pantalla de inicio e bloqueo</string>
+    <string name="home_screen">Pantalla de inicio</string>
+    <string name="homescreen_checkbox_motion_effect">Efecto de movemento</string>
+    <string name="image_too_small">A imaxe é moi pequena</string>
+    <string name="item_restricted">Elemento restrinxido</string>
+    <string name="left_image">Esquerda</string>
+    <string name="lock_screen">Pantalla de bloqueo</string>
+    <string name="motion_effect">Efecto de movemento de fondo</string>
+    <string name="motion_wallpaper_name">Fondo de pantalla en movemento</string>
+    <string name="notice_low_storage">Non hai espazo suficiente. Elimina os elementos innecesarios, como o software, imaxes, vídeos e documentos descargados.</string>
+    <string name="permission_description">Para usar %s, toca AXUSTES, vai a Información da aplicación> Permisos e, a continuación, concede os seguintes permisos:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Almacenamento</string>
+    <string name="processing">Procesando…</string>
+    <string name="request_permission_rationale">Non se pode usar %1$s. Toca AXUSTES e, a continuación, concede o permiso de %2$s e téntao outra vez.</string>
+    <string name="right_image">Dereita</string>
+    <string name="set_wallpaper_docomo_text_gui">Esta imaxe mostrarase nas túas pantallas de inicio e bloqueo.</string>
+    <string name="settings">Axustes</string>
+    <string name="speak_button">Botón</string>
+    <string name="sview_window">Ventá de S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Non se pode definir a imaxe como fondo. Imaxe eliminada.</string>
+    <string name="unable_to_download">Non se pode descargar</string>
+    <string name="wallpaper_applied_home">Fondo de pantalla aplicado á pantalla de inicio.</string>
+    <string name="wallpaper_applied_home_and_lock">Fondo aplicado á pantalla de inicio e á de bloqueo.</string>
+    <string name="wallpaper_applied_lock">Fondo de pantalla aplicado á pantalla de bloqueo.</string>
+    <string name="wallpaper_applied_multi_lock">Aplicáronse %d fondos á pantalla de bloqueo.</string>
+    <string name="wallpaper_applied_sview">Fondo aplicado á ventá de S View.</string>
+    <string name="wallpaper_crop_button_done">Fin.</string>
+    <string name="wallpaper_instructions">Definir como fondo</string>
+    <string name="wallpaper_lock_gui_cinematic">A aparencia da pantalla de bloqueo cambiará cando inclines o dispositivo á esquerda e á dereita.</string>
+</resources>

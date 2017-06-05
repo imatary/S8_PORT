@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s খুলতে অক্ষম। “সেটিংস” ট্যাপ করুন, অ্যাপ তথ্য > অনুমতিগুলিতে যান, তারপর নিম্নলিখিত অনুমতিগুলির মঞ্জুরি দিন এবং পুনরায় চেষ্টা করুন:</string>
+    <string name="all_sim">সমস্ত</string>
+    <string name="app_name">ওয়ালপেপারগুলি</string>
+    <string name="apply">প্রয়োগ করুন</string>
+    <string name="can_not_set_wallpaper_image_not_found">চিত্র ওয়ালপেপার হিসাবে সেট করা যাচ্ছে না। চিত্র খুঁজে পাওয়া যায় নি।</string>
+    <string name="cancel">বাতিল</string>
+    <string name="cancle">বাতিল</string>
+    <string name="change_wallpaper_when_infinity_applied">আপনি এই ওয়ালপেপারটি ব্যবহার করলে অসীম প্রভাবগুলি বন্ধ হবে।</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">সম্পন্ন</string>
+    <string name="duplicate_image">নকল</string>
+    <string name="expand_image">প্রসারিত</string>
+    <string name="fail_to_load">ফটো লোড করতে অক্ষম।</string>
+    <string name="home_lock_screen">হোম এবং লক স্ক্রিন</string>
+    <string name="home_screen">হোম স্ক্রিন</string>
+    <string name="homescreen_checkbox_motion_effect">মোশন এফেক্ট</string>
+    <string name="image_too_small">চিত্রটি খুব বেশি ছোট।</string>
+    <string name="item_restricted">আইটেম সীমাবদ্ধ</string>
+    <string name="left_image">বাম</string>
+    <string name="lock_screen">লক স্ক্রিন</string>
+    <string name="motion_effect">ওয়ালপেপার গতির প্রভাব</string>
+    <string name="motion_wallpaper_name">মোশন ওয়ালপেপার</string>
+    <string name="notice_low_storage">পর্যাপ্ত স্থান নেই। অপ্রয়োজনীয় আইটেমগুলি যেমন ডাউনলোড হওয়া সফ্টওয়্যার, ছবি, ভিডিও এবং নথিগুলি মুছুন।</string>
+    <string name="permission_description">%s ব্যবহার করতে, “সেটিংস” ট্যাপ করুন, অ্যাপ্লিকেশন তথ্য > অনুমতিগুলিতে যান, তারপর নিম্নলিখিত অনুমতিগুলিকে মঞ্জুরি দিন:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">সঞ্চয়স্থান</string>
+    <string name="processing">প্রক্রিয়াকরণ চলছে…</string>
+    <string name="request_permission_rationale">%1$s ব্যবহার করতে অক্ষম। “সেটিংস” ট্যাপ করুন, তারপর %2$s অনুমতির মঞ্জুরি দিন এবং পুনরায় চেষ্টা করুন।</string>
+    <string name="right_image">ডান</string>
+    <string name="set_wallpaper_docomo_text_gui">চিত্রটি আপনার হোম ও লক স্ক্রিনে দেখাবে।</string>
+    <string name="settings">সেটিংস</string>
+    <string name="speak_button">বোতাম</string>
+    <string name="sview_window">S View উইন্ডো</string>
+    <string name="unable_set_wallpaper_image_deleted">চিত্রকে ওয়ালপেপার রূপে সেট করতে অক্ষম। চিত্র মোছা হয়েছে।</string>
+    <string name="unable_to_download">ডাউনলোড করতে অক্ষম।</string>
+    <string name="wallpaper_applied_home">ওয়ালপেপার হোম স্ক্রিনে প্রয়োগ করা হয়েছে।</string>
+    <string name="wallpaper_applied_home_and_lock">হোম স্ক্রিন ও লক স্ক্রিনে ওয়ালপেপার প্রয়োগ করা হয়েছে।</string>
+    <string name="wallpaper_applied_lock">ওয়ালপেপার লক স্ক্রিনে প্রয়োগ করা হয়েছে।</string>
+    <string name="wallpaper_applied_multi_lock">%dটি ওয়ালপেপার লক স্ক্রিনে প্রয়োগ করা হয়েছে।</string>
+    <string name="wallpaper_applied_sview">S View উইন্ডোতে ওয়ালপেপার প্রয়োগ করা হয়েছে।</string>
+    <string name="wallpaper_crop_button_done">সম্পন্ন</string>
+    <string name="wallpaper_instructions">ওয়ালপেপার হিসাবে সেট করুন</string>
+    <string name="wallpaper_lock_gui_cinematic">আপনার ডিভাইসটি বাম এবং ডানদিকে হেলালে লক স্ক্রিনের উপস্থিতি পরিবর্তিত হবে।</string>
+</resources>

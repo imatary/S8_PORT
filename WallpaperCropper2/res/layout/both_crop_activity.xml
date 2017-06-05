@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/blending_effect_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/title_name_linear" android:layout_width="fill_parent" android:layout_height="@dimen/home_lock_cropview_top_margin">
+        <TextView android:textSize="@dimen/wallpaper_preview_lock_title_textsize" android:layout_gravity="center_horizontal" android:id="@id/wallpaper_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallpaper_type_title_top_margin" android:text="@string/home_lock_screen" android:textAllCaps="true" style="@style/WallpaperTypeTitle" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="start" android:id="@id/cropview_left_area" android:background="@drawable/bg_rect" android:layout_width="@dimen/both_crop_preview_width" android:layout_height="@dimen/both_crop_preview_height" android:layout_marginTop="@dimen/both_crop_view_top_margin" android:layout_marginStart="@dimen/both_crop_view_area_margin_left_right" android:elevation="@dimen/wallpaper_preview_shadow_elevation">
+        <com.sec.android.wallpapercropper2.CropView android:layout_gravity="center" android:id="@id/crop_view_left" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="end" android:id="@id/cropview_area" android:background="@drawable/bg_rect" android:layout_width="@dimen/both_crop_preview_width" android:layout_height="@dimen/both_crop_preview_height" android:layout_marginTop="@dimen/both_crop_view_top_margin" android:layout_marginEnd="@dimen/both_crop_view_area_margin_left_right" android:elevation="@dimen/wallpaper_preview_shadow_elevation">
+        <com.sec.android.wallpapercropper2.CropView android:layout_gravity="center" android:id="@id/crop_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="right" android:id="@id/icon_motion_lock" android:visibility="gone" android:layout_width="@dimen/wallpaper_preview_both_screen_icon_height_width" android:layout_height="@dimen/wallpaper_preview_both_screen_icon_height_width" android:layout_margin="@dimen/wallpaper_preview_both_screen_icon_margin" android:src="@drawable/ic_cinema_lockscreen" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/wallpaper_preview_img_lockscreen" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/shadow_imageview" android:layout_width="fill_parent" android:layout_height="@dimen/wallpaper_preview_lock_shadow_height_both" />
+            <include android:layout_gravity="center" android:id="@id/wallpaper_preview_img_lockscreen_include" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/keyguard_lock_preview_top_margin_include" layout="@layout/lockscreen_both_layout" />
+        </RelativeLayout>
+    </FrameLayout>
+    <include layout="@layout/checkbox_motion_effect_layout" />
+    <include layout="@layout/actionbar" />
+</FrameLayout>

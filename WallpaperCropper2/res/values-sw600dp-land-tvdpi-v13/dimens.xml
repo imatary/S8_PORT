@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="both_crop_preview_height">314.0dip</dimen>
+    <dimen name="both_crop_preview_width">419.0dip</dimen>
+    <dimen name="both_crop_view_top_margin">157.0dip</dimen>
+    <dimen name="both_crop_view_area_margin_left_right">29.0dip</dimen>
+    <dimen name="wallpaper_preview_lock_cropview_height">444.0dip</dimen>
+    <dimen name="wallpaper_preview_lock_cropview_width">591.0dip</dimen>
+</resources>

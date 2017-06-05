@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Nije moguće otvoriti aplikaciju %s. Dodirnite POSTAVKE, idite na Podaci o aplikaciji > Dopuštenja, a zatim dajte sljedeća dopuštenja i pokušajte ponovno:</string>
+    <string name="all_sim">Sve</string>
+    <string name="app_name">Pozadine</string>
+    <string name="apply">Primijeni</string>
+    <string name="can_not_set_wallpaper_image_not_found">Nije moguće postaviti sliku kao pozadinu. Slika nije pronađena.</string>
+    <string name="cancel">Prekid</string>
+    <string name="cancle">Prekid</string>
+    <string name="change_wallpaper_when_infinity_applied">Isključit će se efekti beskonačno ako upotrijebite ovu pozadinu.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Obavljeno</string>
+    <string name="duplicate_image">Kopiranje</string>
+    <string name="expand_image">Proširi</string>
+    <string name="fail_to_load">Nemoguće učitati fotografiju.</string>
+    <string name="home_lock_screen">Početni i zaslon zaključavanja</string>
+    <string name="home_screen">Početni zaslon</string>
+    <string name="homescreen_checkbox_motion_effect">Efekt kretanja</string>
+    <string name="image_too_small">Slika je premala.</string>
+    <string name="item_restricted">Ograničena stavka</string>
+    <string name="left_image">Lijevo</string>
+    <string name="lock_screen">Zaslon zaključavanja</string>
+    <string name="motion_effect">Efekt kretanja pozadine</string>
+    <string name="motion_wallpaper_name">Pokretne pozadine</string>
+    <string name="notice_low_storage">Nedovoljno prostora. Obrišite nepotrebne stavke kao što su skinuti softver, slike, video zapisi i dokumenti.</string>
+    <string name="permission_description">Za uporabu funkcije %s dodirnite POSTAVKE, idite na Podaci o aplikaciji > Dopuštenja, a zatim dajte sljedeća dopuštenja:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Pohrana</string>
+    <string name="processing">Procesiranje…</string>
+    <string name="request_permission_rationale">Nije moguće upotrebljavati funkciju %1$s. Dodirnite POSTAVKE, a zatim dajte dozvolu %2$s i pokušajte ponovno.</string>
+    <string name="right_image">Desno</string>
+    <string name="set_wallpaper_docomo_text_gui">Ova će se slika prikazati na početnom zaslonu i zaslonu za zaključavanje.</string>
+    <string name="settings">Postavke</string>
+    <string name="speak_button">Tipka</string>
+    <string name="sview_window">Prozor S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Nije moguće postaviti sliku kao pozadinu. Slika izbrisana.</string>
+    <string name="unable_to_download">Nemoguće skinuti.</string>
+    <string name="wallpaper_applied_home">Pozadina primijenjena na početni zaslon.</string>
+    <string name="wallpaper_applied_home_and_lock">Pozadina primijenjena na početni zaslon i zaslon za zaključavanje.</string>
+    <string name="wallpaper_applied_lock">Pozadina primijenjena na zaslon za zaključavanje.</string>
+    <string name="wallpaper_applied_multi_lock">Pozadine (njih %d) primijenjene na zaslon za zaključavanje.</string>
+    <string name="wallpaper_applied_sview">Pozadina je postavljena na prozor S View.</string>
+    <string name="wallpaper_crop_button_done">OK</string>
+    <string name="wallpaper_instructions">Postavi kao pozadinu</string>
+    <string name="wallpaper_lock_gui_cinematic">Izgled zaslona za zaključavanje promijenit će se kada nagnete svoj uređaj lijevo ili desno.</string>
+</resources>

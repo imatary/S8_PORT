@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Nem lehet megnyitni a(z) %s alkalmazást. Érintse meg a BEÁLLÍTÁSOK lehetőséget, lépjen be az Alkalmazásinfó > Engedélyek menüpontba, adja meg a következő engedélyeket, majd próbálja újra:</string>
+    <string name="all_sim">Mind</string>
+    <string name="app_name">Háttérképek</string>
+    <string name="apply">Alkalmazás</string>
+    <string name="can_not_set_wallpaper_image_not_found">A képet nem lehet háttérképként beállítani, mert nem található.</string>
+    <string name="cancel">Mégse</string>
+    <string name="cancle">Mégse</string>
+    <string name="change_wallpaper_when_infinity_applied">Ennek a háttérképnek a használata esetén bekapcsolódnak az infinity effektek.</string>
+    <string name="date_format">MMMM d., E</string>
+    <string name="done">Kész</string>
+    <string name="duplicate_image">Másolat készítése</string>
+    <string name="expand_image">Kibont</string>
+    <string name="fail_to_load">Nem lehet betölteni a fényképet.</string>
+    <string name="home_lock_screen">Kezdő- és zárolt képernyő</string>
+    <string name="home_screen">Kezdőképernyő</string>
+    <string name="homescreen_checkbox_motion_effect">Mozgás-effektus</string>
+    <string name="image_too_small">A kép túl kicsi.</string>
+    <string name="item_restricted">Tétel korlátozva</string>
+    <string name="left_image">Bal</string>
+    <string name="lock_screen">Képernyő lezárása</string>
+    <string name="motion_effect">Mozgó háttérkép effekt</string>
+    <string name="motion_wallpaper_name">Mozgó háttérkép</string>
+    <string name="notice_low_storage">Nincs elég hely. Törölje a felesleges tételeket, például letöltött szoftvereket, képeket, videókat, dokumentumokat.</string>
+    <string name="permission_description">A(z) %s használatához érintse meg a BEÁLLÍTÁSOK lehetőséget, nyissa meg az Alkalmazásinfó > Engedélyek menüpontot, és adja meg a következő engedélyeket:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Tárhely</string>
+    <string name="processing">Feldolgozás folyamatban</string>
+    <string name="request_permission_rationale">A(z) %1$s nem használható. Érintse meg a BEÁLLÍTÁSOK pontot, és adja meg a(z) %2$s engedélyét, majd próbálja újra.</string>
+    <string name="right_image">Jobb</string>
+    <string name="set_wallpaper_docomo_text_gui">Ez a kép fog megjelenni a kezdőképernyőn és a zárolt képernyőn is.</string>
+    <string name="settings">Beállítások</string>
+    <string name="speak_button">Gomb</string>
+    <string name="sview_window">S Nézet ablak</string>
+    <string name="unable_set_wallpaper_image_deleted">A kép nem állítható be háttérképként, mert törölték.</string>
+    <string name="unable_to_download">Nem lehet letölteni.</string>
+    <string name="wallpaper_applied_home">Beállította a háttérképet a kezdőképernyőre.</string>
+    <string name="wallpaper_applied_home_and_lock">Beállította a háttérképet a zárolt és a kezdőképernyő háttérképeként.</string>
+    <string name="wallpaper_applied_lock">Beállította a háttérképet a zárolt képernyőre.</string>
+    <string name="wallpaper_applied_multi_lock">%d háttérképet állított be a zárolt képernyőre.</string>
+    <string name="wallpaper_applied_sview">Beállította a háttérképet az S View ablakra.</string>
+    <string name="wallpaper_crop_button_done">Kész</string>
+    <string name="wallpaper_instructions">Beállítás háttérképként</string>
+    <string name="wallpaper_lock_gui_cinematic">Ha jobbra vagy balra dönti az eszközt, megváltozik a zárolt képernyő megjelenése.</string>
+</resources>

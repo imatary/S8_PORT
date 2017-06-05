@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">"No es pot obrir %s. Toqui AJUSTAMENTS, vagi a Informació de l'aplicació > Permisos, a continuació, autoritzi els permisos següents i torni-ho a intentar:"</string>
+    <string name="all_sim">Tot</string>
+    <string name="app_name">Fons de pantalla</string>
+    <string name="apply">Sol·licitar</string>
+    <string name="can_not_set_wallpaper_image_not_found">"No es pot establir la imatge com a fons de pantalla. No s'ha trobat la imatge."</string>
+    <string name="cancel">Cancel·lar</string>
+    <string name="cancle">Cancel·la</string>
+    <string name="change_wallpaper_when_infinity_applied">Es desactivaran els efectes infinits si utilitza aquest fons de pantalla.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Finalitzat</string>
+    <string name="duplicate_image">Duplicar</string>
+    <string name="expand_image">Ampliar</string>
+    <string name="fail_to_load">No es pot carregar la foto</string>
+    <string name="home_lock_screen">Pantalla inici i bloqueig</string>
+    <string name="home_screen">"Pantalla d'inici"</string>
+    <string name="homescreen_checkbox_motion_effect">Efecte de moviment</string>
+    <string name="image_too_small">La imatge és massa petita</string>
+    <string name="item_restricted">Element restringit</string>
+    <string name="left_image">Esquerra</string>
+    <string name="lock_screen">Bloquejar pantalla</string>
+    <string name="motion_effect">Efecte moviment fons pantalla</string>
+    <string name="motion_wallpaper_name">Fons de pantalla en moviment</string>
+    <string name="notice_low_storage">No hi ha prou espai. Esborri elements innecessaris, com ara software descarregat, fotos, vídeos i documents.</string>
+    <string name="permission_description">"Per utilitzar %s, toqui AJUSTAMENTS, vagi a Informació de l'aplicació > Permisos i, a continuació, concedeixi els permisos següents:"</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Emmagatzematge</string>
+    <string name="processing">Processant…</string>
+    <string name="request_permission_rationale">No es pot utilitzar %1$s. Toqui AJUSTAMENTS i, a continuació, autoritzi el permís de %2$s i torni-ho a intentar.</string>
+    <string name="right_image">Dreta</string>
+    <string name="set_wallpaper_docomo_text_gui">"Aquesta imatge es mostrarà a les pantalles d'inici i de bloqueig."</string>
+    <string name="settings">Ajustaments</string>
+    <string name="speak_button">Botó</string>
+    <string name="sview_window">Finestra S View</string>
+    <string name="unable_set_wallpaper_image_deleted">"No es pot establir la imatge com a fons de pantalla. La imatge s'ha esborrat."</string>
+    <string name="unable_to_download">No es pot descarregar</string>
+    <string name="wallpaper_applied_home">"S'ha aplicat el fons de pantalla a la pantalla d'inici."</string>
+    <string name="wallpaper_applied_home_and_lock">"S'ha aplicat el fons de pantalla a la pantalla d'inici i a la pantalla de bloqueig."</string>
+    <string name="wallpaper_applied_lock">"S'ha aplicat el fons de pantalla a la pantalla de bloqueig."</string>
+    <string name="wallpaper_applied_multi_lock">"S'han aplicat %d fons de pantalla a la pantalla de bloqueig."</string>
+    <string name="wallpaper_applied_sview">"S'ha aplicat el fons de pantalla a la finestra d'S View."</string>
+    <string name="wallpaper_crop_button_done">Fin.</string>
+    <string name="wallpaper_instructions">Establir com a fons de pantalla</string>
+    <string name="wallpaper_lock_gui_cinematic">"L'atenuació de la pantalla de bloqueig canviarà quan inclini el dispositiu a dreta i a esquerra."</string>
+</resources>

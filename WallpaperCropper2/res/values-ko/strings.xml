@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s 앱을 실행할 수 없습니다. 상세설정 버튼을 누르고 [애플리케이션 정보 > 권한]에서 다음 권한을 허용한 후 다시 시도하세요.</string>
+    <string name="all_sim">전체</string>
+    <string name="app_name">배경화면</string>
+    <string name="apply">적용</string>
+    <string name="can_not_set_wallpaper_image_not_found">이미지를 찾을 수 없어 배경화면으로 설정하지 못했습니다.</string>
+    <string name="cancel">취소</string>
+    <string name="cancle">취소</string>
+    <string name="change_wallpaper_when_infinity_applied">이 배경화면을 사용하면 인피니티 효과가 해제됩니다.</string>
+    <string name="date_format">MMMM d일 E요일</string>
+    <string name="done">완료</string>
+    <string name="duplicate_image">중복</string>
+    <string name="expand_image">확장</string>
+    <string name="fail_to_load">사진을 불러올 수 없습니다.</string>
+    <string name="home_lock_screen">홈 화면 및 잠금화면</string>
+    <string name="home_screen">홈 화면</string>
+    <string name="homescreen_checkbox_motion_effect">모션 효과</string>
+    <string name="image_too_small">이미지가 너무 작습니다.</string>
+    <string name="item_restricted">제한된 항목</string>
+    <string name="left_image">왼쪽</string>
+    <string name="lock_screen">잠금화면</string>
+    <string name="motion_effect">모션 효과</string>
+    <string name="motion_wallpaper_name">모션 배경화면</string>
+    <string name="notice_low_storage">저장공간이 부족합니다. 다운로드한 소프트웨어, 사진, 동영상 및 문서 중 일부 항목을 삭제하세요.</string>
+    <string name="permission_description">%s 기능을 사용하려면 상세설정 버튼을 누른 후 [애플리케이션 정보 > 권한]에서 다음 권한을 허용하세요.</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">저장공간</string>
+    <string name="processing">진행 중…</string>
+    <string name="request_permission_rationale">%1$s 기능을 사용할 수 없습니다. 상세설정 버튼을 누르고 %2$s 권한을 허용한 후 다시 시도하세요.</string>
+    <string name="right_image">오른쪽</string>
+    <string name="set_wallpaper_docomo_text_gui">이미지를 홈 화면과 잠금화면에 표시합니다.</string>
+    <string name="settings">설정</string>
+    <string name="speak_button">버튼</string>
+    <string name="sview_window">S뷰 윈도우</string>
+    <string name="unable_set_wallpaper_image_deleted">이미지가 삭제되어 배경화면으로 설정할 수 없습니다.</string>
+    <string name="unable_to_download">다운로드할 수 없습니다.</string>
+    <string name="wallpaper_applied_home">배경화면을 홈 화면에 적용했습니다.</string>
+    <string name="wallpaper_applied_home_and_lock">배경화면을 홈 화면 및 잠금화면에 적용했습니다.</string>
+    <string name="wallpaper_applied_lock">배경화면을 잠금화면에 적용했습니다.</string>
+    <string name="wallpaper_applied_multi_lock">배경화면 %d개를 잠금화면에 적용했습니다.</string>
+    <string name="wallpaper_applied_sview">배경화면을 S뷰 윈도우에 적용했습니다.</string>
+    <string name="wallpaper_crop_button_done">완료</string>
+    <string name="wallpaper_instructions">배경화면으로 설정</string>
+    <string name="wallpaper_lock_gui_cinematic">디바이스를 좌우로 기울이면 잠금화면의 모습이 바뀝니다.</string>
+</resources>

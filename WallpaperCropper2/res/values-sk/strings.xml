@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s sa nedá otvoriť. Ťuknite na položku NASTAVENIA, prejdite do menu Informácie o aplikácii > Povolenia a potom udeľte nasledujúce povolenia a skúste to znova.</string>
+    <string name="all_sim">Všetky</string>
+    <string name="app_name">Tapety</string>
+    <string name="apply">Aplikovať</string>
+    <string name="can_not_set_wallpaper_image_not_found">Obrázok sa nedá nastaviť ako tapeta. Obrázok sa nepodarilo nájsť.</string>
+    <string name="cancel">Zrušiť</string>
+    <string name="cancle">Zrušiť</string>
+    <string name="change_wallpaper_when_infinity_applied">Ak použijete túto tapetu, efekty nekonečna sa vypnú.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Hotovo</string>
+    <string name="duplicate_image">Duplikovať</string>
+    <string name="expand_image">Rozbaliť</string>
+    <string name="fail_to_load">Fotografia sa nedá načítať.</string>
+    <string name="home_lock_screen">Domovská obrazovka a zamknutá obrazovka</string>
+    <string name="home_screen">Domovská obrazovka</string>
+    <string name="homescreen_checkbox_motion_effect">Pohybový efekt</string>
+    <string name="image_too_small">Obrázok je príliš malý.</string>
+    <string name="item_restricted">Položka je obmedzená</string>
+    <string name="left_image">Vľavo</string>
+    <string name="lock_screen">Zamknutá obrazovka</string>
+    <string name="motion_effect">Efekt pohybu tapety</string>
+    <string name="motion_wallpaper_name">Pohybová tapeta</string>
+    <string name="notice_low_storage">Nedostatok miesta. Odstráňte nepotrebné položky, ako napríklad stiahnutý softvér, obrázky, videá a dokumenty.</string>
+    <string name="permission_description">Ak chcete používať funkciu %s, ťuknite na položku NASTAVENIA, prejdite do menu Informácie o aplikácii > Povolenia a potom udeľte nasledujúce povolenia:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Úložisko</string>
+    <string name="processing">Prebieha spracovanie…</string>
+    <string name="request_permission_rationale">%1$s sa nedá použiť. Ťuknite na položku NASTAVENIA a potom udeľte povolenie %2$s a skúste to znova.</string>
+    <string name="right_image">Doprava</string>
+    <string name="set_wallpaper_docomo_text_gui">Táto fotografia sa zobrazí na vašej domovskej a zamknutej obrazovke.</string>
+    <string name="settings">Nastavenia</string>
+    <string name="speak_button">Tlačidlo</string>
+    <string name="sview_window">Okno S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Fotografia sa nedá nastaviť ako tapeta. Fotografia sa odstránila.</string>
+    <string name="unable_to_download">Nedá sa stiahnuť.</string>
+    <string name="wallpaper_applied_home">Tapeta sa použila pre domovskú obrazovku.</string>
+    <string name="wallpaper_applied_home_and_lock">Tapeta sa použila pre domovskú obrazovku a zamknutú obrazovku.</string>
+    <string name="wallpaper_applied_lock">Tapeta sa použila pre zamknutú obrazovku.</string>
+    <string name="wallpaper_applied_multi_lock">Tapety (%d) sa použili pre zamknutú obrazovku.</string>
+    <string name="wallpaper_applied_sview">Tapeta sa použila pre funkciu Okno S View.</string>
+    <string name="wallpaper_crop_button_done">Ok</string>
+    <string name="wallpaper_instructions">Nastaviť ako tapetu</string>
+    <string name="wallpaper_lock_gui_cinematic">Keď nakloníte zariadenie doľava a doprava, vzhľad zamknutej obrazovky sa zmení.</string>
+</resources>

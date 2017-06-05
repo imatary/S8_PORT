@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Aplikacije %s ni mogoče odpreti. Pritisnite NASTAVITVE, pojdite v meni Podatki o aplikaciji > Dovoljenja, nato pa omogočite naslednja dovoljenja in poskusite znova:</string>
+    <string name="all_sim">Vse</string>
+    <string name="app_name">Ozadja</string>
+    <string name="apply">Uporabi</string>
+    <string name="can_not_set_wallpaper_image_not_found">Slike ni mogoče nastaviti za ozadje. Slike ni mogoče najti.</string>
+    <string name="cancel">Prekliči</string>
+    <string name="cancle">Prekliči</string>
+    <string name="change_wallpaper_when_infinity_applied">Če uporabite to ozadje, bodo brezmejni učinki izklopljeni.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Končano</string>
+    <string name="duplicate_image">Podvoji</string>
+    <string name="expand_image">Razširi</string>
+    <string name="fail_to_load">Fotografije ni mogoče naložiti.</string>
+    <string name="home_lock_screen">Domači in zaklenjen zaslon</string>
+    <string name="home_screen">Domači zaslon</string>
+    <string name="homescreen_checkbox_motion_effect">Učinek gibanja</string>
+    <string name="image_too_small">Slika je premajhna.</string>
+    <string name="item_restricted">Upor. elem. omejena</string>
+    <string name="left_image">Levo</string>
+    <string name="lock_screen">Zaklenjen zaslon</string>
+    <string name="motion_effect">Učinek gibanja ozadja</string>
+    <string name="motion_wallpaper_name">Gibljivo ozadje</string>
+    <string name="notice_low_storage">Ni dovolj prostora. Izbrišite nepotrebne elemente, npr. preneseno programsko opremo, slike, videoposnetke in dokumente.</string>
+    <string name="permission_description">Če želite uporabljati funkcijo %s, pritisnite NASTAVITVE, pojdite v meni Podatki o aplikaciji > Dovoljenja, nato pa omogočite naslednja dovoljenja:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Shranjevanje</string>
+    <string name="processing">Obdelujem…</string>
+    <string name="request_permission_rationale">Funkcije %1$s ni mogoče uporabljati. Pritisnite NASTAVITVE, nato pa omogočite dovoljenje za %2$s in poskusite znova.</string>
+    <string name="right_image">Desno</string>
+    <string name="set_wallpaper_docomo_text_gui">Ta slika bo prikazana na domačem in zaklenjenih zaslonih.</string>
+    <string name="settings">Nastavitve</string>
+    <string name="speak_button">Gumb</string>
+    <string name="sview_window">Okno za okenček S</string>
+    <string name="unable_set_wallpaper_image_deleted">Slike ni mogoče nastaviti za ozadje. Slika je izbrisana.</string>
+    <string name="unable_to_download">Ni mogoče prenesti.</string>
+    <string name="wallpaper_applied_home">Ozadje je uporabljeno za domači zaslon.</string>
+    <string name="wallpaper_applied_home_and_lock">Ozadje je uporabljeno za domači zaslon in zaklenjen zaslon.</string>
+    <string name="wallpaper_applied_lock">Ozadje je uporabljeno za zaklenjen zaslon.</string>
+    <string name="wallpaper_applied_multi_lock">Za zaklenjen zaslon je uporabljenih toliko ozadij: %d.</string>
+    <string name="wallpaper_applied_sview">Ozadje je nastavljeno za okno za okenček S.</string>
+    <string name="wallpaper_crop_button_done">Konč.</string>
+    <string name="wallpaper_instructions">Nastavi kot ozadje</string>
+    <string name="wallpaper_lock_gui_cinematic">Videz zaklenjenega zaslona se bo spremenil, ko napravo nagnete levo in desno.</string>
+</resources>

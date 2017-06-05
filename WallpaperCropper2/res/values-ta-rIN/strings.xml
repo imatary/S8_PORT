@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s-ஐ திறக்க இயலவில்லை. “அமைவுகளை” டேப் செய்து, பயன்பாடு விவரம் > அனுமதிகள் என்பதற்குச் சென்று, பிறகு பின்வரும் அனுமதிகளை அனுமதித்து, மீண்டும் முயலவும்:</string>
+    <string name="all_sim">எல்லாம்</string>
+    <string name="app_name">வால்பேப்பர்கள்</string>
+    <string name="apply">பயன்படுத்துக</string>
+    <string name="can_not_set_wallpaper_image_not_found">படிமத்தை வால்பேப்பராக அமைக்க இயலாது. படிமம் காணப்படவில்லை.</string>
+    <string name="cancel">ரத்து</string>
+    <string name="cancle">ரத்து</string>
+    <string name="change_wallpaper_when_infinity_applied">இந்த வால்பேப்பரைப் பயன்படுத்தினால் முடிவற்ற விளைவுகள் அணைக்கப்படும்.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">முடிந்தது</string>
+    <string name="duplicate_image">போலி</string>
+    <string name="expand_image">விரிவாக்குக</string>
+    <string name="fail_to_load">புகைப்படம் ஏற்ற இயலவில்லை.</string>
+    <string name="home_lock_screen">முகப்பு மற்றும் பூட்டு திரைகள்</string>
+    <string name="home_screen">முகப்பு திரை</string>
+    <string name="homescreen_checkbox_motion_effect">இயக்க விளைவு</string>
+    <string name="image_too_small">படிமம் மிகவும் சிறியது.</string>
+    <string name="item_restricted">தடைசெய்யப்பட்டது</string>
+    <string name="left_image">இடது</string>
+    <string name="lock_screen">பூட்டுத் திரை</string>
+    <string name="motion_effect">வால்பேப்பர் இயக்க விளைவு</string>
+    <string name="motion_wallpaper_name">நகர்வு வால்பேப்பர்</string>
+    <string name="notice_low_storage">போதுமான இடம் இல்லை. பதிவிறக்கப்பட்ட மென்பொருள், படங்கள், நிகழ்படங்கள், மற்றும் ஆவணங்கள் ஆகிய தேவையற்ற உருப்படிகளை அழிக்கவும்.</string>
+    <string name="permission_description">“அமைவுகள்” என்பதை டேப் செய்யவும், பிறகு பயன்பாட்டு விவரம் > அனுமதிகள் என்பதற்கு சென்று பின்வரும் அனுமதிகளை அனுமதித்து, %s-ஐ பயன்படுத்தவும்:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">சேமிப்பகம்</string>
+    <string name="processing">செயலில்…</string>
+    <string name="request_permission_rationale">%1$s-ஐ பயன்படுத்த இயலவில்லை. “அமைவுகளை” டேப் செய்து, பிறகு %2$s அனுமதியை அனுமதிக்கவும், மீண்டும் முயலவும்.</string>
+    <string name="right_image">வலது</string>
+    <string name="set_wallpaper_docomo_text_gui">இந்த படிமம் உங்கள் முகப்பு மற்றும் பூட்டுத் திரைகளில் காட்டப்படும்.</string>
+    <string name="settings">அமைவுகள்</string>
+    <string name="speak_button">பொத்தான்</string>
+    <string name="sview_window">S View விண்டோ</string>
+    <string name="unable_set_wallpaper_image_deleted">படிமத்தை வால்பேப்பராக அமைக்க இயலவில்லை. படிமம் நீக்கப்பட்டது.</string>
+    <string name="unable_to_download">பதிவிறக்க முடியவில்லை.</string>
+    <string name="wallpaper_applied_home">வால்பேப்பர் முகப்புத் திரையில் பயன்படுத்தப்பட்டது.</string>
+    <string name="wallpaper_applied_home_and_lock">முகப்பு திரை மற்றும் பூட்டு திரையில் வால்பேப்பர் அமைக்கப்பட்டது.</string>
+    <string name="wallpaper_applied_lock">வால்பேப்பர் பூட்டுத் திரையில் பயன்படுத்தப்பட்டது.</string>
+    <string name="wallpaper_applied_multi_lock">%d வால்பேப்பர்கள் பூட்டுத் திரையில் பயன்படுத்தப்பட்டது.</string>
+    <string name="wallpaper_applied_sview">வால்பேப்பர் S View விண்டோவில் பயன்படுத்தப்பட்டது.</string>
+    <string name="wallpaper_crop_button_done">முடிந்தது</string>
+    <string name="wallpaper_instructions">வால்பேப்பராக அமைக்கவும்</string>
+    <string name="wallpaper_lock_gui_cinematic">உங்கள் சாதனத்தை இடதுபுறம் அல்லது வலதுபுறம் சாய்க்கும் போது, பூட்டுத் திரையின் தோற்றம் மாற்றப்படும்.</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AmPmFontStyle">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:fontFamily">roboto-regular</item>
+    </style>
+    <style name="ClockFontStyle">
+        <item name="android:textSize">56.0dip</item>
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">right</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:fontFamily">samsung-neo-num3T-cond</item>
+    </style>
+    <style name="CustomClockScreemLayoutView">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="DateFontStyle">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:fontFamily">roboto-regular</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">無法開啟 [%s]。請輕觸 [設定]，前往 [應用程式資訊] > [權限]，然後允許下列權限並重試：</string>
+    <string name="all_sim">全部</string>
+    <string name="app_name">桌布</string>
+    <string name="apply">套用</string>
+    <string name="can_not_set_wallpaper_image_not_found">無法將圖像設為桌面。找不到圖像。</string>
+    <string name="cancel">取消</string>
+    <string name="cancle">取消</string>
+    <string name="change_wallpaper_when_infinity_applied">若您使用此桌布，將關閉 Infinity 效果。</string>
+    <string name="date_format">MMMM d日, E</string>
+    <string name="done">完成</string>
+    <string name="duplicate_image">複製</string>
+    <string name="expand_image">展開</string>
+    <string name="fail_to_load">無法載入相片。</string>
+    <string name="home_lock_screen">主螢幕與鎖定螢幕</string>
+    <string name="home_screen">主螢幕</string>
+    <string name="homescreen_checkbox_motion_effect">動作效果</string>
+    <string name="image_too_small">影像太小。</string>
+    <string name="item_restricted">項目已限制</string>
+    <string name="left_image">左</string>
+    <string name="lock_screen">鎖定螢幕</string>
+    <string name="motion_effect">桌布動態效果</string>
+    <string name="motion_wallpaper_name">動態桌布</string>
+    <string name="notice_low_storage">空間不足。刪除不需要的項目，例如已下載的軟體、相片、影片與文件。</string>
+    <string name="permission_description">若要使用 [%s]，請輕觸 [設定]，前往 [應用程式資訊] > [權限]，然後允許下列權限：</string>
+    <string name="permission_name_read_sms">簡訊</string>
+    <string name="permission_name_storage">儲存位置</string>
+    <string name="processing">正在處理…</string>
+    <string name="request_permission_rationale">無法使用 [%1$s]。請輕觸 [設定]，然後允許 [%2$s] 權限並重試。</string>
+    <string name="right_image">右</string>
+    <string name="set_wallpaper_docomo_text_gui">圖像將顯示於您的主螢幕與鎖定螢幕上。</string>
+    <string name="settings">設定</string>
+    <string name="speak_button">按鍵</string>
+    <string name="sview_window">S View 視窗</string>
+    <string name="unable_set_wallpaper_image_deleted">無法將圖像設為桌面。圖像已刪除。</string>
+    <string name="unable_to_download">無法下載。</string>
+    <string name="wallpaper_applied_home">桌布已套用至主螢幕。</string>
+    <string name="wallpaper_applied_home_and_lock">桌布已套用至主螢幕與鎖定螢幕。</string>
+    <string name="wallpaper_applied_lock">桌布已套用至鎖定螢幕。</string>
+    <string name="wallpaper_applied_multi_lock">%d 桌布已套用至鎖定螢幕。</string>
+    <string name="wallpaper_applied_sview">桌布已套用至 S View 視窗。</string>
+    <string name="wallpaper_crop_button_done">完成</string>
+    <string name="wallpaper_instructions">設定為桌布</string>
+    <string name="wallpaper_lock_gui_cinematic">鎖定螢幕的外觀將隨著裝置向左與向右傾斜而改變。</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Tidak boleh membuka %s. Ketik ATURAN, pergi ke Maklumat aplikasi > Keizinan, kemudian benarkan keizinan berikut dan cuba lagi:</string>
+    <string name="all_sim">Semua</string>
+    <string name="app_name">Hiasan latar</string>
+    <string name="apply">Guna</string>
+    <string name="can_not_set_wallpaper_image_not_found">Tidak dapat menetapkan imej sebagai hiasan latar. Imej tidak ditemui.</string>
+    <string name="cancel">Batal</string>
+    <string name="cancle">Batal</string>
+    <string name="change_wallpaper_when_infinity_applied">Kesan infiniti akan dimatikan jika anda menggunakan hiasan latar.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Selesai</string>
+    <string name="duplicate_image">Salinan</string>
+    <string name="expand_image">Kembangkan</string>
+    <string name="fail_to_load">Tidak boleh memuatkan foto.</string>
+    <string name="home_lock_screen">Skrin utama dan skrin kunci</string>
+    <string name="home_screen">Skrin utama</string>
+    <string name="homescreen_checkbox_motion_effect">Kesan gerakan</string>
+    <string name="image_too_small">Imej ini adalah terlalu kecil.</string>
+    <string name="item_restricted">Item terhad</string>
+    <string name="left_image">Kiri</string>
+    <string name="lock_screen">Skrin kunci</string>
+    <string name="motion_effect">Kesan gerakan hiasan latar</string>
+    <string name="motion_wallpaper_name">Hiasan latar gerakan</string>
+    <string name="notice_low_storage">Ruangan tidak mencukupi. Padam perkara yang tidak diperlukan, seperti perisian, gambar, video, dan dokumen yang dimuat turun.</string>
+    <string name="permission_description">Untuk menggunakan %s, ketik ATURAN, pergi ke Maklumat aplikasi > Kebenaran, kemudian berikan kebenaran berikut:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Penyimpanan</string>
+    <string name="processing">Memproses…</string>
+    <string name="request_permission_rationale">Tidak boleh menggunakan %1$s. Ketik ATURAN, kemudian benarkan keizinan %2$s dan cuba lagi.</string>
+    <string name="right_image">Kanan</string>
+    <string name="set_wallpaper_docomo_text_gui">Imej ini akan ditunjukkan pada skrin utama dan skrin kunci anda.</string>
+    <string name="settings">Aturan</string>
+    <string name="speak_button">Butang</string>
+    <string name="sview_window">Tetingkap S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Tidak boleh menetapkan imej sebagai hiasan latar. Imej dipadam.</string>
+    <string name="unable_to_download">Tidak boleh memuat turun.</string>
+    <string name="wallpaper_applied_home">Hiasan latar digunakan pada skrin utama.</string>
+    <string name="wallpaper_applied_home_and_lock">Hiasan latar digunakan pada skrin utama dan skrin kunci.</string>
+    <string name="wallpaper_applied_lock">Hiasan latar digunakan pada skrin kunci.</string>
+    <string name="wallpaper_applied_multi_lock">%d hiasan latar digunakan pada skrin kunci.</string>
+    <string name="wallpaper_applied_sview">Hiasan latar digunakan pada tetingkap S View.</string>
+    <string name="wallpaper_crop_button_done">Siap</string>
+    <string name="wallpaper_instructions">Tetapkan sebagai hiasan latar</string>
+    <string name="wallpaper_lock_gui_cinematic">Penampilan skrin kunci akan berubah apabila anda mencondongkan peranti anda kiri dan kanan.</string>
+</resources>

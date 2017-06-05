@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Не удалось открыть %s. Нажмите НАСТРОЙКИ, выберите “Сведения о приложении” > “Разрешения”, затем предоставьте следующие разрешения и повторите попытку:</string>
+    <string name="all_sim">Все</string>
+    <string name="app_name">Обои</string>
+    <string name="apply">Применить</string>
+    <string name="can_not_set_wallpaper_image_not_found">Невозможно задать изображение в качестве обоев. Изображение не найдено.</string>
+    <string name="cancel">Отмена</string>
+    <string name="cancle">Отмена</string>
+    <string name="change_wallpaper_when_infinity_applied">В случае использования этих обоев эффекты бесконечности будут отключены.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Готово</string>
+    <string name="duplicate_image">Создать копию</string>
+    <string name="expand_image">Развернуть</string>
+    <string name="fail_to_load">Невозможно загрузить фотографию.</string>
+    <string name="home_lock_screen">Главный экран и экран блокировки</string>
+    <string name="home_screen">Главный экран</string>
+    <string name="homescreen_checkbox_motion_effect">Эффект движения</string>
+    <string name="image_too_small">Слишком маленькое изображение.</string>
+    <string name="item_restricted">Элемент ограничен</string>
+    <string name="left_image">Слева</string>
+    <string name="lock_screen">Экран блокировки</string>
+    <string name="motion_effect">Эффект движения</string>
+    <string name="motion_wallpaper_name">Анимированная заставка</string>
+    <string name="notice_low_storage">Недостаточно места. Удалите ненужные файлы, например загруженные программы, фотографии, видео и документы.</string>
+    <string name="permission_description">Для использования %s коснитесь НАСТРОЙКИ, перейдите в меню “Информация о приложении” > “Разрешения” и предоставьте следующие разрешения:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Память</string>
+    <string name="processing">Обработка…</string>
+    <string name="request_permission_rationale">Не удалось использовать %1$s. Коснитесь пункта НАСТРОЙКИ, затем предоставьте %2$s разрешение и повторите попытку.</string>
+    <string name="right_image">Справа</string>
+    <string name="set_wallpaper_docomo_text_gui">Это изображение будет использоваться на главном экране и экране блокировки.</string>
+    <string name="settings">Настройки</string>
+    <string name="speak_button">Кнопка</string>
+    <string name="sview_window">Окно S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Невозможно установить изображение в качестве обоев. Изображение удалено.</string>
+    <string name="unable_to_download">Невозможно выполнить загрузку.</string>
+    <string name="wallpaper_applied_home">Обои применены к главному экрану.</string>
+    <string name="wallpaper_applied_home_and_lock">Обои применены для главного экрана и экрана блокировки.</string>
+    <string name="wallpaper_applied_lock">Обои применены к экрану блокировки.</string>
+    <string name="wallpaper_applied_multi_lock">Обои (%d) применены к экрану блокировки.</string>
+    <string name="wallpaper_applied_sview">Обои применены к окну S View.</string>
+    <string name="wallpaper_crop_button_done">OK</string>
+    <string name="wallpaper_instructions">Установить как обои</string>
+    <string name="wallpaper_lock_gui_cinematic">Внешний вид экрана блокировки будет меняться при наклоне устройства влево или вправо.</string>
+</resources>

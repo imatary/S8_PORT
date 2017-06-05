@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s-г нээх боломжгүй. ТОХИРГООГ товшиж, Хэрэглүүрийн мэдээлэл > Зөвшөөрөл рүү очоод үүнийг зөвшөөрч, дахин оролд:</string>
+    <string name="all_sim">Бүгд</string>
+    <string name="app_name">Ханын цааснууд</string>
+    <string name="apply">Хэрэглэх</string>
+    <string name="can_not_set_wallpaper_image_not_found">Зургийг дэлгэцийн зураг болгох боломжгүй. Зураг олдсонгүй.</string>
+    <string name="cancel">Цуцлах</string>
+    <string name="cancle">Цуцлах</string>
+    <string name="change_wallpaper_when_infinity_applied">Энэ дэлгэцийн зургийг ашиглавал Төгсгөлгүй эффектийг унтраана.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Хийсэн</string>
+    <string name="duplicate_image">Олшруулах</string>
+    <string name="expand_image">Дэлгэх</string>
+    <string name="fail_to_load">Гэрэл зураг ачаалах боломжгүй.</string>
+    <string name="home_lock_screen">Эхлэл ба түгжих дэлгэцүүд</string>
+    <string name="home_screen">Эх дэлгэц</string>
+    <string name="homescreen_checkbox_motion_effect">Motion effect</string>
+    <string name="image_too_small">Дүрс хэт жижиг байна</string>
+    <string name="item_restricted">Зүйл хязгаарласан</string>
+    <string name="left_image">Зүүн</string>
+    <string name="lock_screen">Түгжих дэлгэц</string>
+    <string name="motion_effect">Ханын цаасны хөдөлгөөний эффект</string>
+    <string name="motion_wallpaper_name">Хөдөлгөөнт дэлгэцийн зураг</string>
+    <string name="notice_low_storage">Хангалттай зайх байхгүй. Татаж авсан програм хангамж, зураг, видео, баримт бичгүүд зэрэг зарим хэрэгцээгүй зүйлийг устга.</string>
+    <string name="permission_description">%s-г ашиглахдаа ТОХИРГОО-г товшоод Хэрэглүүрийн мэдээлэл > Зөвшөөрөл рүү орж дараах зөвшөөрлийг олгоно:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Санах байгууламж</string>
+    <string name="processing">Боловсруулж байна…</string>
+    <string name="request_permission_rationale">%1$s-г ашиглах боломжгүй. ТОХИРГООГ товшиж, %2$s-д зөвшөөрөл олгоод дахин оролдоно уу.</string>
+    <string name="right_image">Эрх</string>
+    <string name="set_wallpaper_docomo_text_gui">Энэ зураг таны эх ба түгжих дэлгэцэн дээр харагдана.</string>
+    <string name="settings">Тохиргоо</string>
+    <string name="speak_button">Товч</string>
+    <string name="sview_window">S View цонх</string>
+    <string name="unable_set_wallpaper_image_deleted">Зургийг дэлгэцийн зургаар тохируулах боломжгүй. Зураг устгагдсан.</string>
+    <string name="unable_to_download">Татаж авах боломжгүй</string>
+    <string name="wallpaper_applied_home">Дэлгэцийн зургийг эх дэлгэцэд хэрэглэсэн.</string>
+    <string name="wallpaper_applied_home_and_lock">Дэлгэцийн зургийг эх дэлгэц болон түгжих дэлгэцэд хэрэглэсэн.</string>
+    <string name="wallpaper_applied_lock">Дэлгэцийн зургийг түгжих дэлгэцэд хэрэглэсэн.</string>
+    <string name="wallpaper_applied_multi_lock">%d дэлгэцийн зургийг түгжих дэлгэцэд хэрэглэсэн.</string>
+    <string name="wallpaper_applied_sview">Дэлгэцийн зургийг S View цонхонд хэрэглэсэн.</string>
+    <string name="wallpaper_crop_button_done">Дууслаа</string>
+    <string name="wallpaper_instructions">Дэлгэцийн зураг болгох</string>
+    <string name="wallpaper_lock_gui_cinematic">Төхөөрөмжийг зүүн, баруун тийш хазайлгахад түгжих дэлгэцийн харагдах байдал өөрчлөгдөнө.</string>
+</resources>

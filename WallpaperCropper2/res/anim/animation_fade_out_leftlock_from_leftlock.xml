@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <objectAnimator android:duration="@integer/keyguard_crop_view_dual_view_anim_duration" android:valueFrom="@string/dual_view_mode_normal_scale" android:valueTo="@string/dual_view_mode_down_scale" android:propertyName="scaleX"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <objectAnimator android:duration="@integer/keyguard_crop_view_dual_view_anim_duration" android:valueFrom="@string/dual_view_mode_normal_scale" android:valueTo="@string/dual_view_mode_down_scale" android:propertyName="scaleY"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <objectAnimator android:duration="@integer/keyguard_crop_view_dual_view_anim_duration" android:valueFrom="@dimen/keyguard_crop_view_both_view_origin_pos" android:valueTo="@dimen/keyguard_crop_view_to_left_pos" android:valueType="floatType" android:propertyName="translationX"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <objectAnimator android:duration="@integer/keyguard_crop_view_dual_view_anim_duration" android:valueFrom="@dimen/keyguard_crop_view_both_view_origin_pos" android:valueTo="@dimen/keyguard_crop_view_to_upper_pos" android:valueType="floatType" android:propertyName="translationY"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <objectAnimator android:duration="@integer/keyguard_crop_view_dual_view_anim_duration" android:valueFrom="@string/dual_view_mode_show_opacity" android:valueTo="@string/dual_view_mode_hide_opacity" android:propertyName="alpha"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</set>

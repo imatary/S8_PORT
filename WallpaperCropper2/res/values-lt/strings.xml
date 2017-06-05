@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Neįmanoma atidaryti „%s“. Bakstelėkite NUSTATYMAI, eikite į Programos informacija > Leidimai, tada suteikite nurodytus leidimus ir bandykite dar kartą:</string>
+    <string name="all_sim">Visos</string>
+    <string name="app_name">Ekrano fonai</string>
+    <string name="apply">Taikyti</string>
+    <string name="can_not_set_wallpaper_image_not_found">Vaizdo negalima nustatyti kaip ekrano fono. Vaizdas nerastas.</string>
+    <string name="cancel">Atšaukti</string>
+    <string name="cancle">Atšaukti</string>
+    <string name="change_wallpaper_when_infinity_applied">Jei naudosite šį ekrano foną, beribiai efektai bus išjungti.</string>
+    <string name="date_format">MMMM d, E</string>
+    <string name="done">Atlikta</string>
+    <string name="duplicate_image">Keli viename psl.</string>
+    <string name="expand_image">Išskleisti</string>
+    <string name="fail_to_load">Neįmanoma įkelti nuotraukos.</string>
+    <string name="home_lock_screen">Pradžios ir užrakinimo ekranai</string>
+    <string name="home_screen">Pradžios ekranas</string>
+    <string name="homescreen_checkbox_motion_effect">Judesio efektas</string>
+    <string name="image_too_small">Vaizdas per mažas.</string>
+    <string name="item_restricted">Elementas apribotas</string>
+    <string name="left_image">Kairėje</string>
+    <string name="lock_screen">Užrakinimo ekranas</string>
+    <string name="motion_effect">Ekrano fono judesio efektas</string>
+    <string name="motion_wallpaper_name">Judantis fono vaizdas</string>
+    <string name="notice_low_storage">Trūksta vietos. Ištrinkite nereikalingus elementus, pvz., atsisiųstą programinę įrangą, nuotraukas, vaizdo įrašus ir dokumentus.</string>
+    <string name="permission_description">Norėdami naudoti %s, bakstelėkite NUSTATYMAI, eikite į Programos informacija > Leidimai, tada suteikite nurodytus leidimus:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Saugykla</string>
+    <string name="processing">Apdorojama…</string>
+    <string name="request_permission_rationale">Neįmanoma naudoti %1$s. Bakstelėkite NUSTATYMAI, tada suteikite %2$s leidimą ir bandykite dar kartą.</string>
+    <string name="right_image">Dešinėje</string>
+    <string name="set_wallpaper_docomo_text_gui">Šis vaizdas bus rodomas jūsų pradžios ir užrakinimo ekranuose.</string>
+    <string name="settings">Nustatymai</string>
+    <string name="speak_button">Mygtukas</string>
+    <string name="sview_window">„S View“ langas</string>
+    <string name="unable_set_wallpaper_image_deleted">Neįmanoma nustatyti vaizdo kaip ekrano fono. Vaizdas ištrintas.</string>
+    <string name="unable_to_download">Negalima atsisiųsti.</string>
+    <string name="wallpaper_applied_home">Ekrano fonas pritaikytas pradžios ekranui.</string>
+    <string name="wallpaper_applied_home_and_lock">Ekrano fonas pritaikytas pradžios ekranui ir užrakinimo ekranui.</string>
+    <string name="wallpaper_applied_lock">Ekrano fonas pritaikytas užrakinimo ekranui.</string>
+    <string name="wallpaper_applied_multi_lock">Užrakinimo ekranui pritaikyta ekrano fonų: %d.</string>
+    <string name="wallpaper_applied_sview">Ekrano fonas pritaikytas „S View“ langui.</string>
+    <string name="wallpaper_crop_button_done">Atl.</string>
+    <string name="wallpaper_instructions">Nustatyti kaip ekrano foną</string>
+    <string name="wallpaper_lock_gui_cinematic">Užrakinimo ekrano išvaizda pasikeis, jei pakreipsite įrenginį į kairę arba dešinę.</string>
+</resources>

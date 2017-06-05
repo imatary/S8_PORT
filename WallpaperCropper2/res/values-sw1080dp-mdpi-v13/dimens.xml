@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="keyguard_crop_preview_height">1557.0dip</dimen>
+    <dimen name="keyguard_crop_preview_width">876.0dip</dimen>
+    <dimen name="keyguard_crop_view_top_margin">97.0dip</dimen>
+    <dimen name="set_as_wallpaper_btn_height">40.0dip</dimen>
+    <dimen name="set_as_wallpaper_btn_margin_bottom">12.0dip</dimen>
+    <dimen name="set_as_wallpaper_btn_text_size">20.0dip</dimen>
+    <dimen name="set_as_wallpaper_btn_width">549.0dip</dimen>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s ખોલવામાં અસમર્થ. “સેટિંગ્સ” ટેપ કરો, એપ માહિતી > પરવાનગીઓ પર જાઓ, તે પછી નીચેની પરવાનગીઓને મંજૂરી આપો અને ફરીથી પ્રયાસ કરો:</string>
+    <string name="all_sim">બધા</string>
+    <string name="app_name">વોલપેપર્સ</string>
+    <string name="cancel">રદ કરો</string>
+    <string name="cancle">રદ કરો</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="duplicate_image">નકલ</string>
+    <string name="expand_image">વિસ્તૃત કરો</string>
+    <string name="fail_to_load">ફોટો લોડ કરવામાં અસમર્થ.</string>
+    <string name="left_image">ડાબું</string>
+    <string name="motion_effect">વોલપેપર ગતિ પ્રભાવો</string>
+    <string name="notice_low_storage">પર્યાપ્ત સ્થાન નથી. બિનજરૂરી વસ્તુઓને હટાવો, જેમ કે ડાઉનલોડ કરેલા સોફ્ટવેર, ચિત્રો, વિડિયોઝ અને દસ્તાવેજો.</string>
+    <string name="permission_description">%s નો ઉપયોગ કરવા, “સેટિંગ્સ” ટેપ કરો, એપ એપ્લિકેશન માહિતી > પરવાનગીઓ પર જાઓ, તે પછી નીચેની પરવાનગીઓને મંજૂરી આપો:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">સંગ્રહ</string>
+    <string name="processing">પ્રક્રિયા શરૂ…</string>
+    <string name="request_permission_rationale">%1$s નો ઉપયોગ કરવામાં અસમર્થ. “સેટિંગ્સ” ટેપ કરો, તે પછી %2$s પરવાનગીને મંજૂરી આપો અને ફરીથી પ્રયાસ કરો.</string>
+    <string name="right_image">જમણું</string>
+    <string name="settings">સેટિંગ્સ</string>
+    <string name="speak_button">બટન</string>
+    <string name="unable_set_wallpaper_image_deleted">છબીને વોલપેપર તરીકે સેટ કરવામાં અસમર્થ. છબી હટાવાઇ.</string>
+    <string name="wallpaper_crop_button_done">પૂર્ણ</string>
+    <string name="wallpaper_instructions">વોલપેપર તરીકે સેટ કરો</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s തുറക്കാനാവില്ല. “ക്രമീകരണങ്ങൾ” എന്നതിൽ സ്പർശിക്കുക, ആപ്ലിക്കേഷൻ വിവരം > അനുമതികൾ എന്നിവയിലേക്ക് പോവുക, തുടർന്ന് ഇനിപ്പറയുന്ന അനുമതികൾ അനുവദിച്ച ശേഷം വീണ്ടും ശ്രമിക്കുക:</string>
+    <string name="all_sim">എല്ലാം</string>
+    <string name="app_name">വാൾപേപ്പറുകള്‍</string>
+    <string name="apply">പ്രയോഗിക്കുക</string>
+    <string name="can_not_set_wallpaper_image_not_found">ചിത്രത്തെ വാൾപേപ്പറായി ക്രമീകരിക്കാനാവില്ല. ചിത്രം കണ്ടെത്തിയില്ല.</string>
+    <string name="cancel">റദ്ദാക്കു.</string>
+    <string name="cancle">റദ്ദാക്കു.</string>
+    <string name="change_wallpaper_when_infinity_applied">നിങ്ങൾ ഈ വാൾപേപ്പർ ഉപയോഗിക്കുകയാണെങ്കിൽ ചക്രവാള ഇഫക്റ്റുകൾ ഓഫ് ചെയ്യപ്പെടും.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">ചെയ്തു</string>
+    <string name="duplicate_image">ഡ്യൂപ്ലിക്കേറ്റ് ചെയ്യുക</string>
+    <string name="expand_image">വിപുലീകരിക്കുക</string>
+    <string name="fail_to_load">ഫോട്ടോ ലോഡ് ചെയ്യാനാവുന്നില്ല.</string>
+    <string name="home_lock_screen">ഹോം, ലോക്ക് സ്ക്രീനുകള്‍</string>
+    <string name="home_screen">ഹോം സ്ക്രീന്‍‌</string>
+    <string name="homescreen_checkbox_motion_effect">മോഷന്‍ ഇഫക്ട്</string>
+    <string name="image_too_small">ഇമേജ് വളരെ ചെറുതാണ്.</string>
+    <string name="item_restricted">ഇനം നിയന്ത്രിതം</string>
+    <string name="left_image">ഇടത്</string>
+    <string name="lock_screen">ലോക്ക് സ്ക്രീന്‍</string>
+    <string name="motion_effect">വാൾപേപ്പർ ചലന ഇഫക്റ്റ്</string>
+    <string name="motion_wallpaper_name">മോഷന്‍ വാൾപേപ്പർ</string>
+    <string name="notice_low_storage">മതിയായ ഇടമില്ല. ഡൗണ്‍ലോഡുചെയ്ത സോഫ്റ്റ്‌വെയറുകള്‍, ചിത്രങ്ങള്‍, വീഡിയോകള്‍, പ്രമാണങ്ങള്‍ പോലുള്ള അനാവശ്യ ഇനങ്ങള്‍ ഇല്ലാതാക്കുക.</string>
+    <string name="permission_description">%s ഉപയോഗിക്കുന്നതിന്, “ക്രമീകരണങ്ങൾ” എന്നതിൽ സ്പർശിക്കുക, ആപ്ലിക്കേഷൻ വിവരം > അനുമതികൾ എന്നിവയിലേക്ക് പോവുക, തുടർന്ന് ഇനിപ്പറയുന്ന അനുമതികൾ അനുവദിക്കുക:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">സംഭരണം</string>
+    <string name="processing">പ്രോസസ്സുചെയ്യുന്നു…</string>
+    <string name="request_permission_rationale">%1$s ഉപയോഗിക്കാനാവില്ല. “ക്രമീകരണങ്ങൾ” എന്നതിൽ സ്പർശിക്കുക, തുടർന്ന് %2$s അനുമതി അനുവദിച്ച ശേഷം വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="right_image">വലത്</string>
+    <string name="set_wallpaper_docomo_text_gui">നിങ്ങളുടെ ഹോം, ലോക്ക് സ്ക്രീനുകളിൽ ഈ ചിത്രം കാണിക്കപ്പെടും.</string>
+    <string name="settings">ക്രമീകരണങ്ങള്‍</string>
+    <string name="speak_button">ബട്ടണ്‍</string>
+    <string name="sview_window">S View വിൻഡോ</string>
+    <string name="unable_set_wallpaper_image_deleted">ചിത്രത്തെ വാൾപേപ്പറായി ക്രമീകരിക്കാനാവില്ല. ചിത്രം ഇല്ലാതാക്കപ്പെട്ടു.</string>
+    <string name="unable_to_download">ഡൗണ്‍‌ലോഡുചെയ്യാന്‍ ആവുന്നില്ല.</string>
+    <string name="wallpaper_applied_home">ഹോം സ്ക്രീനിൽ വാൾപേപ്പർ പ്രയോഗിച്ചു.</string>
+    <string name="wallpaper_applied_home_and_lock">ഹോം സ്ക്രീനിലും ലോക്ക് സ്ക്രീനിലും വാള്‍പേപ്പര്‍ പ്രയോഗിച്ചു.</string>
+    <string name="wallpaper_applied_lock">ലോക്ക് സ്ക്രീനിൽ വാൾപേപ്പർ പ്രയോഗിച്ചു.</string>
+    <string name="wallpaper_applied_multi_lock">%d വാൾപേപ്പറുകൾ ലോക്ക് സ്ക്രീനിൽ പ്രയോഗിച്ചു.</string>
+    <string name="wallpaper_applied_sview">S View വിൻഡോയിൽ വാൾപേപ്പർ പ്രയോഗിച്ചു.</string>
+    <string name="wallpaper_crop_button_done">ചെയ്തു</string>
+    <string name="wallpaper_instructions">വാൾപേപ്പറായി ക്രമീകരിക്കുക</string>
+    <string name="wallpaper_lock_gui_cinematic">നിങ്ങളുടെ ഉപകരണം ഇടത്തോട്ടും വലത്തോട്ടും ചെരിക്കുമ്പോൾ ലോക്ക് സ്ക്രീനിന്‍റെ ബാഹ്യരൂപം മാറും.</string>
+</resources>

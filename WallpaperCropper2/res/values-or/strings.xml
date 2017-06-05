@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s ଖୋଲିବାକୁ ଅସମର୍ଥ। “ସେଟିଂସ୍‍” ଟ୍ୟାପ୍‌ କରନ୍ତୁ, ଆପ୍ଲିକେସନ୍‌ ସୂଚନା > ଅନୁମତିଗୁଡିକୁ ଯାଆନ୍ତୁ, ତାପରେ ନିମ୍ନଲିଖିତ ଅନୁମତିଗୁଡିକୁ ଅନୁମତି ଦିଅନ୍ତୁ ଏବଂ ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ:</string>
+    <string name="all_sim">ସମସ୍ତ</string>
+    <string name="app_name">ୱାଲପେପରଗୁଡିକ</string>
+    <string name="apply">ପ୍ରୟୋଗ</string>
+    <string name="can_not_set_wallpaper_image_not_found">ୱାଲପେପର୍ ଭାବେ ଫଟୋ ସେଟ୍ କରିପାରିବେ ନାହିଁ। ଫଟୋ ମିଳିଲା ନାହିଁ।</string>
+    <string name="cancel">ବାତିଲ୍</string>
+    <string name="cancle">ବାତିଲ୍</string>
+    <string name="change_wallpaper_when_infinity_applied">ଯଦି ଆପଣ ଏହି ୱାଲପେପର୍ ବ୍ୟବହାର କରିବେ ଅସୀମିତତା ପ୍ରଭାବଗୁଡିକ ଟର୍ନ୍ ଅଫ୍ ହେବ।</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">ସମାପ୍ତ</string>
+    <string name="duplicate_image">ନକଲ</string>
+    <string name="expand_image">ସମ୍ପ୍ରସାରଣ</string>
+    <string name="fail_to_load">ଫଟୋ ଲୋଡ୍ କରିବାକୁ ଅସମର୍ଥ।</string>
+    <string name="home_lock_screen">ହୋମ୍ ଏବଂ ଲକ୍ ସ୍କ୍ରିନ୍</string>
+    <string name="home_screen">ହୋମ୍ ସ୍କ୍ରିନ୍‍</string>
+    <string name="homescreen_checkbox_motion_effect">ମୋସନ୍ ପ୍ରଭାବ</string>
+    <string name="image_too_small">ଫଟୋ ବହୁତ ଛୋଟ।</string>
+    <string name="item_restricted">ଆଇଟମ୍ ପ୍ରତିବନ୍ଧ ହୋଇଛି</string>
+    <string name="left_image">ବାମ</string>
+    <string name="lock_screen">ଲକ୍‍ ସ୍କ୍ରିନ୍‌</string>
+    <string name="motion_effect">ୱାଲପେପର୍ ଗତି ପ୍ରଭାବ</string>
+    <string name="motion_wallpaper_name">ଗତି ୱାଲପେପର୍</string>
+    <string name="notice_low_storage">ପର୍ଯ୍ୟାପ୍ତ ସ୍ଥାନ ନାହିଁ। ଅନାବଶ୍ୟକୀୟ ଆଇଟମଗୁଡିକ ବିଲୋପ କରନ୍ତୁ, ଯେପରିକି ସଫ୍ଟୱେୟାର୍‌, ଫଟୋ, ଭିଡିଓ, ଏବଂ ଡକ୍ୟୁମେଣ୍ଟଗୁଡିକ ଡାଉନଲୋଡ୍ ହୋଇଛି।</string>
+    <string name="permission_description">%s ବ୍ୟବହାର କରିବାକୁ, “ସେଟିଂସ୍” ଟ୍ୟାପ୍ କରନ୍ତୁ, ଆପ୍ଲିକେସନ୍ ସୂଚନା > ଅନୁମତିଗୁଡିକୁ ଯାଆନ୍ତୁ, ତାପରେ ନିମ୍ନଲିଖିତ ଅନୁମତିଗୁଡିକ ଅନୁମତି ଦିଅନ୍ତୁ:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">ଷ୍ଟୋରେଜ୍</string>
+    <string name="processing">ପ୍ରକ୍ରିୟାରତ…</string>
+    <string name="request_permission_rationale">%1$sକୁ ବ୍ୟବହାର କରିବାକୁ ଅସମର୍ଥ। “ସେଟିଂସ୍‍” ଟ୍ୟାପ୍ କରନ୍ତୁ, ତାପରେ %2$s ଅନୁମତି ଅନୁମତି ଦିଅନ୍ତୁ ଏବଂ ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="right_image">ଡାହାଣ</string>
+    <string name="set_wallpaper_docomo_text_gui">ଏହି ଫଟୋ ଆପଣଙ୍କ ହୋମ୍ ଏବଂ ଲକ୍ ସ୍କ୍ରିନଗୁଡିକରେ ଦେଖାଯିବ।</string>
+    <string name="settings">ସେଟିଂସ୍</string>
+    <string name="speak_button">ବଟନ୍</string>
+    <string name="sview_window">S View ୱିଣ୍ଡୋ</string>
+    <string name="unable_set_wallpaper_image_deleted">ୱାଲପେପର୍ ଭାବେ ଫଟୋ ସେଟ୍‌ କରିବାକୁ ଅସମର୍ଥ। ଫଟୋ ବିଲୋପିତ।</string>
+    <string name="unable_to_download">ଡାଉନଲୋଡ୍ କରିବାକୁ ଅସମର୍ଥ।</string>
+    <string name="wallpaper_applied_home">ହୋମ୍ ସ୍କ୍ରିନକୁ ୱାଲପେପର୍ ପ୍ରୟୋଗ ହୋଇଛି।</string>
+    <string name="wallpaper_applied_home_and_lock">ହୋମ୍ ସ୍କ୍ରିନ୍ ଏବଂ ଲକ୍ ସ୍କ୍ରିନକୁ ୱାଲପେପର୍ ପ୍ରୟୋଗ ହୋଇଛି।</string>
+    <string name="wallpaper_applied_lock">ଲକ୍ ସ୍କ୍ରିନକୁ ୱାଲପେପର୍ ପ୍ରୟୋଗ ହୋଇଛି।</string>
+    <string name="wallpaper_applied_multi_lock">ଲକ୍ ସ୍କ୍ରିନକୁ %dଟି ୱାଲପେପର୍‌ ପ୍ରୟୋଗ ହୋଇଛି।</string>
+    <string name="wallpaper_applied_sview">S View ୱିଣ୍ଡୋକୁ ୱାଲପେପର୍ ପ୍ରୟୋଗ ହୋଇଛି।</string>
+    <string name="wallpaper_crop_button_done">ସମାପ୍ତ</string>
+    <string name="wallpaper_instructions">ୱାଲପେପର୍‌ ଭାବେ ସେଟ୍</string>
+    <string name="wallpaper_lock_gui_cinematic">ଆପଣ ଆପଣଙ୍କ ଡିଭାଇସ୍ ବାମ କିମ୍ୱା ଡାହାଣକୁ ଢଳେଇବା ସମୟରେ ଲକ୍ ସ୍କ୍ରିନର ବାହ୍ୟରୂପ ପରିବର୍ତ୍ତନ ହେବ।</string>
+</resources>

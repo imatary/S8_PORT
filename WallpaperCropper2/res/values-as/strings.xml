@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s খোলাত অক্ষম৷ “ছেটিংছ” টিপক, এপ তথ্য > অনুমতিলৈ যাওক, তাৰপিছত নিম্নলিখিত অনুমতি প্ৰদান কৰক আৰু পুনঃচেষ্টা কৰক:</string>
+    <string name="all_sim">সকলো</string>
+    <string name="app_name">ৱালপেপাৰসমূহ</string>
+    <string name="apply">প্ৰয়োগ কৰক</string>
+    <string name="can_not_set_wallpaper_image_not_found">প্ৰতিচ্ছবিক ৱালপেপাৰৰ ৰূপত ছেট কৰিব নোৱাৰে। প্ৰতিচ্ছবি বিচাৰি নাপালে।</string>
+    <string name="cancel">বাতিল কৰক</string>
+    <string name="cancle">বাতিল</string>
+    <string name="change_wallpaper_when_infinity_applied">"যদি আপুনি এই ৱালপেপাৰ ব্যৱহাৰ কৰে তেন্তে সীমাহীন প্ৰভাৱ অফ হ'ব।"</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">সম্পন্ন</string>
+    <string name="duplicate_image">নকল</string>
+    <string name="expand_image">বিস্তাৰ</string>
+    <string name="fail_to_load">ফটোখন লোড কৰাত অক্ষম৷</string>
+    <string name="home_lock_screen">গৃহ আৰু লক স্ক্ৰীণ</string>
+    <string name="home_screen">গৃহ স্ক্ৰীণ</string>
+    <string name="homescreen_checkbox_motion_effect">গতিৰ প্ৰভাৱ</string>
+    <string name="image_too_small">প্ৰতিচ্ছবি অতি সৰু৷</string>
+    <string name="item_restricted">আইটেম সীমাবদ্ধ</string>
+    <string name="left_image">বাওঁফালে</string>
+    <string name="lock_screen">লক স্ক্ৰীণ</string>
+    <string name="motion_effect">ৱালপেপাৰ সঞ্চালন প্ৰভাৱ</string>
+    <string name="motion_wallpaper_name">সঞ্চালন ৱালপেপাৰ</string>
+    <string name="notice_low_storage">"পৰ্যাপ্ত স্থান নাই৷ ডাউনলোড কৰা চফ্টৱেৰ, চিত্ৰ, ভিডিঅ' আৰু নথিপত্ৰৰ দৰে অপ্ৰয়োজনীয় আইটেম বিলোপ কৰক৷"</string>
+    <string name="permission_description">%s ব্যৱহাৰ কৰিবলৈ, “ছেটিংছ” টিপক, এপ্লিকেশ্বন তথ্য > অনুমতিলৈ যাওক, তাৰপিছত নিম্নলিখিত অনুমতি প্ৰদান কৰক:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">সংগ্ৰহ</string>
+    <string name="processing">প্ৰক্ৰিয়াৰত…</string>
+    <string name="request_permission_rationale">%1$s ব্যৱহাৰ কৰিবলৈ অক্ষম৷ “ছেটিংছ” টিপক, তাৰপিছত %2$s অনুমতি অনুমোদন কৰক আৰু পুনঃচেষ্টা কৰক৷</string>
+    <string name="right_image">সোঁফালে</string>
+    <string name="set_wallpaper_docomo_text_gui">এই প্ৰতিচ্ছবি আপোনাৰ গৃহ আৰু লক স্ক্ৰীণত দেখুৱাব।</string>
+    <string name="settings">ছেটিংছ</string>
+    <string name="speak_button">বুটাম</string>
+    <string name="sview_window">"S View উইণ্ড'"</string>
+    <string name="unable_set_wallpaper_image_deleted">ৱালপেপাৰৰ ৰূপত প্ৰতিচ্ছবি ছেট কৰাত অক্ষম৷ প্ৰতিচ্ছবি বিলোপ হৈছে৷</string>
+    <string name="unable_to_download">ডাউনলোড কৰিবলৈ অক্ষম৷</string>
+    <string name="wallpaper_applied_home">ৱালপেপাৰ গৃহ স্ক্ৰীণত প্ৰয়োগ হৈছে।</string>
+    <string name="wallpaper_applied_home_and_lock">গৃহ স্ক্ৰীণ আৰু লক স্ক্ৰীণত ৱালপেপাৰ প্ৰয়োগ হৈছে।</string>
+    <string name="wallpaper_applied_lock">ৱালপেপাৰ লক স্ক্ৰীণত প্ৰয়োগ হৈছে।</string>
+    <string name="wallpaper_applied_multi_lock">%d খন ৱালপেপাৰ লক স্ক্ৰীণত প্ৰয়োগ হৈছে।</string>
+    <string name="wallpaper_applied_sview">"ৱালপেপাৰ S View উইণ্ড'ত প্ৰয়োগ হৈছে।"</string>
+    <string name="wallpaper_crop_button_done">ঠিক</string>
+    <string name="wallpaper_instructions">ৱালপেপাৰ ৰূপত ছেট কৰক</string>
+    <string name="wallpaper_lock_gui_cinematic">"যেতিয়া আপুনি আপোনাৰ ডিভাইচ বাওঁ বা সোঁফাললৈ বেকা কৰে তেতিয়া লক স্ক্ৰীণৰ প্ৰকটতা পৰিৱৰ্তন হ'ব।"</string>
+</resources>

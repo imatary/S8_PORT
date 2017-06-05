@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="apply">යොදන්න</string>
+    <string name="can_not_set_wallpaper_image_not_found">බිතුපත ලෙස අනුරුව පිහිටුවිය නොහැක. අනුරුව හමු නොවිණි.</string>
+    <string name="change_wallpaper_when_infinity_applied">ඔබ මෙම බිතුපත භාවිතා කරන්නේ නම් අපරිමිත ප්‍රයෝග ක්‍රියා විරහිත වනු ඇත.</string>
+    <string name="homescreen_checkbox_motion_effect">චලන ප්‍රයෝගය</string>
+    <string name="item_restricted">අයිතමය සීමා කොට ඇත</string>
+    <string name="motion_wallpaper_name">චලන බිතුපත</string>
+    <string name="set_wallpaper_docomo_text_gui">මෙම අනුරුව ඔබේ මුල් සහ අගුළු තිරවල පෙන්වනු ලැබේ.</string>
+    <string name="unable_to_download">බාගත නොහැක.</string>
+    <string name="wallpaper_applied_home">බිතුපත මුල් තිරයට යොදන ලදී.</string>
+    <string name="wallpaper_applied_home_and_lock">මුල් තිරයට සහ අගුලු තිරයට බිතුපත යොදන ලදී.</string>
+    <string name="wallpaper_applied_multi_lock">බිතුපත් %d අගුලු තිරයට යොදන ලදී.</string>
+    <string name="wallpaper_instructions">බිතුපත ලෙස පිහිටුවන්න</string>
+    <string name="wallpaper_lock_gui_cinematic">ඔබ ඔබේ උපාංගය වමට හා දකුණට ඇල කළ විට අගුලු තිරයේ පෙනුම වෙනස් වනු ඇත.</string>
+</resources>

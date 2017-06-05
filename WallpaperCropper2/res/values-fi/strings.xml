@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Sovellusta %s ei voi avata. Napauta ASETUKSET, valitse Sovelluksen tiedot > Käyttöoikeudet, myönnä seuraavat oikeudet ja yritä uudelleen:</string>
+    <string name="all_sim">Kaikki</string>
+    <string name="app_name">Taustakuvat</string>
+    <string name="apply">Käytä</string>
+    <string name="can_not_set_wallpaper_image_not_found">Kuvaa ei voi asettaa taustakuvaksi. Kuvaa ei löytynyt.</string>
+    <string name="cancel">Peruuta</string>
+    <string name="cancle">Peruuta</string>
+    <string name="change_wallpaper_when_infinity_applied">Rajattomat tehosteet poistetaan käytöstä, jos käytät tätä taustakuvaa.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Valmis</string>
+    <string name="duplicate_image">Kopioi</string>
+    <string name="expand_image">Laajenna</string>
+    <string name="fail_to_load">Valokuvaa ei voi ladata.</string>
+    <string name="home_lock_screen">Alku- ja lukitusnäytöt</string>
+    <string name="home_screen">Alkunäyttö</string>
+    <string name="homescreen_checkbox_motion_effect">Liiketehoste</string>
+    <string name="image_too_small">Kuva on liian pieni.</string>
+    <string name="item_restricted">Kohde estetty</string>
+    <string name="left_image">Vasen</string>
+    <string name="lock_screen">Lukitusnäyttö</string>
+    <string name="motion_effect">Taustakuvan liiketehoste</string>
+    <string name="motion_wallpaper_name">Liikkuva taustakuva</string>
+    <string name="notice_low_storage">Ei ole tarpeeksi tilaa. Poista tarpeettomia kohteita, kuten ladattuja ohjelmistoja, kuvia, videoita ja asiakirjoja.</string>
+    <string name="permission_description">Jos haluat käyttää toimintoa %s, napauta ASETUKSET, valitse Sovelluksen tiedot > Käyttöoikeudet ja myönnä sitten seuraavat käyttöoikeudet:</string>
+    <string name="permission_name_read_sms">Tekstiviesti</string>
+    <string name="permission_name_storage">Tallennustila</string>
+    <string name="processing">Käsitellään…</string>
+    <string name="request_permission_rationale">Toimintoa %1$s ei voi käyttää. Napauta ASETUKSET, myönnä kohteelle %2$s oikeudet ja yritä uudelleen.</string>
+    <string name="right_image">Oikea</string>
+    <string name="set_wallpaper_docomo_text_gui">Tämä kuva näytetään alku- ja lukitusnäytöissä.</string>
+    <string name="settings">Asetukset</string>
+    <string name="speak_button">Painike</string>
+    <string name="sview_window">S View -ikkuna</string>
+    <string name="unable_set_wallpaper_image_deleted">Kuvaa ei voi asettaa taustakuvaksi. Kuva poistettu.</string>
+    <string name="unable_to_download">Lataus ei onnistu.</string>
+    <string name="wallpaper_applied_home">Taustakuva otettu alkunäytössä käyttöön.</string>
+    <string name="wallpaper_applied_home_and_lock">Taustakuva otettu käyttöön alkunäytössä ja lukitusnäytössä.</string>
+    <string name="wallpaper_applied_lock">Taustakuva otettu lukitusnäytössä käyttöön.</string>
+    <string name="wallpaper_applied_multi_lock">%d taustakuvaa otettu lukitusnäytössä käyttöön.</string>
+    <string name="wallpaper_applied_sview">Taustakuva otettu S View -ikkunassa käyttöön.</string>
+    <string name="wallpaper_crop_button_done">Valm.</string>
+    <string name="wallpaper_instructions">Aseta taustakuvaksi</string>
+    <string name="wallpaper_lock_gui_cinematic">Lukitusnäytön ulkoasu muuttuu, kun kallistat laitetta vasemmalle ja oikealle.</string>
+</resources>

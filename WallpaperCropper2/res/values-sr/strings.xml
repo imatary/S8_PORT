@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Nije moguće otvoriti aplikaciju %s. Kucnite na PODEŠAVANJA, idite na Informacije o aplikaciji > Dozvole, a zatim dozvolite sledeće dozvole i pokušajte ponovo:</string>
+    <string name="all_sim">Sve</string>
+    <string name="app_name">Tapeti</string>
+    <string name="apply">Primeni</string>
+    <string name="can_not_set_wallpaper_image_not_found">Slika ne može da se podesi kao tapet. Slika nije pronađena.</string>
+    <string name="cancel">Otkaži</string>
+    <string name="cancle">Otkaži</string>
+    <string name="change_wallpaper_when_infinity_applied">Beskonačni efekti će biti iskjučeni ako koristite ovaj tapet.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Kraj</string>
+    <string name="duplicate_image">Duplikat</string>
+    <string name="expand_image">Proširi</string>
+    <string name="fail_to_load">Nije moguće učitati fotografiju.</string>
+    <string name="home_lock_screen">Početni i zaključan ekrani</string>
+    <string name="home_screen">Početni ekran</string>
+    <string name="homescreen_checkbox_motion_effect">Efekat kretanja</string>
+    <string name="image_too_small">Slika je premala.</string>
+    <string name="item_restricted">Stavka je ograničena</string>
+    <string name="left_image">Levo</string>
+    <string name="lock_screen">Zaključan ekran</string>
+    <string name="motion_effect">Efekat kretanja tapeta</string>
+    <string name="motion_wallpaper_name">Animirani tapet</string>
+    <string name="notice_low_storage">Nedovoljno prostora. Izbriši nepotrebne stavke kao što su preuzeti softver, slike, video zapisi i dokumenti.</string>
+    <string name="permission_description">Da biste koristili funkciju %s, kucnite na PODEŠAVANJA, idite na Informacije o aplikaciji > Dozvole, a zatim dozvolite sledeće dozvole:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Memorija</string>
+    <string name="processing">Obrada…</string>
+    <string name="request_permission_rationale">Nije moguće koristiti %1$s. Kucnite na PODEŠAVANJA, a zatim dajte dozvolu za %2$s i pokušajte ponovo.</string>
+    <string name="right_image">Desno</string>
+    <string name="set_wallpaper_docomo_text_gui">Ova slika će biti prikazana na početnom i zaključanom ekranu.</string>
+    <string name="settings">Podešavanja</string>
+    <string name="speak_button">Taster</string>
+    <string name="sview_window">Prozor S prikaza</string>
+    <string name="unable_set_wallpaper_image_deleted">Nije moguće postaviti sliku kao tapet. Slika je izbrisana.</string>
+    <string name="unable_to_download">Ne može se preuzeti.</string>
+    <string name="wallpaper_applied_home">Tapet je primenjen na početni ekran.</string>
+    <string name="wallpaper_applied_home_and_lock">Tapet je primenjen na početni ekran i zaključan ekran.</string>
+    <string name="wallpaper_applied_lock">Tapet je primenjen na zaključan ekran.</string>
+    <string name="wallpaper_applied_multi_lock">%d tapeta je primenjeno na zaključan ekran.</string>
+    <string name="wallpaper_applied_sview">Tapet je primenjen na prozor S View.</string>
+    <string name="wallpaper_crop_button_done">Kraj</string>
+    <string name="wallpaper_instructions">Podesi kao tapet</string>
+    <string name="wallpaper_lock_gui_cinematic">Izgled zaključanog ekrana će se promeniti kada nagnete uređaj nalevo i nadesno.</string>
+</resources>

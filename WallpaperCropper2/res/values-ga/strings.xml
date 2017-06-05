@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Ní féidir %s a oscailt. Tapáil SOCRUITHE, gabh chuig Faisnéis feidhmchláir > Ceadanna, ansin ceadaigh na ceadanna seo a leanas agus triail arís:</string>
+    <string name="all_sim">Gach</string>
+    <string name="app_name">Cúlbhrait</string>
+    <string name="apply">C. i bhfeidhm</string>
+    <string name="can_not_set_wallpaper_image_not_found">Ní féidir an íomhá a shocrú mar chúlbhrat. Níor aimsíodh an íomhá.</string>
+    <string name="cancel">Cuir ar ceal</string>
+    <string name="cancle">Cuir ar ceal</string>
+    <string name="change_wallpaper_when_infinity_applied">Casfar as maisíochtaí éigríche má úsáideann tú an cúlbhrat seo.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Déanta</string>
+    <string name="duplicate_image">Dubláil</string>
+    <string name="expand_image">Fairsing.</string>
+    <string name="fail_to_load">Ní féidir an grianghraf a lódáil.</string>
+    <string name="home_lock_screen">Scáileáin bhaile agus ghlasála</string>
+    <string name="home_screen">Scáileán baile</string>
+    <string name="homescreen_checkbox_motion_effect">Maisíocht ghluaisne</string>
+    <string name="image_too_small">Tá an íomhá róbheag</string>
+    <string name="item_restricted">Mír shrianta</string>
+    <string name="left_image">Tuathal</string>
+    <string name="lock_screen">Glasáil an scáileán</string>
+    <string name="motion_effect">Maisíocht ghluaisne cúlbhrait</string>
+    <string name="motion_wallpaper_name">Cúlbhrat gluaisne</string>
+    <string name="notice_low_storage">Easpa spáis. Scrios míreanna nach bhfuil riachtanach, amhail bogearraí, pictiúir, físeáin agus doiciméid íoslódáilte.</string>
+    <string name="permission_description">Le %s a úsáid, tapáil SOCRUITHE, gabh chuig Faisnéis feidhmchláir > Ceadanna, ansin ceadaigh na ceadanna seo a leanas:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Stóras</string>
+    <string name="processing">Ag próiseáil…</string>
+    <string name="request_permission_rationale">Ní féidir %1$s a úsáid. Tapáil SOCRUITHE, ansin ceadaigh don chead %2$s agus triail arís.</string>
+    <string name="right_image">Deiseal</string>
+    <string name="set_wallpaper_docomo_text_gui">Taispeánfar an íomhá seo ar do Scáileán baile agus ar do Scáileán glasála.</string>
+    <string name="settings">Socruithe</string>
+    <string name="speak_button">Cnaipe</string>
+    <string name="sview_window">Fuinneog S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Ní féidir an íomhá a shocrú mar chúlbhrat. Scriosadh an íomhá.</string>
+    <string name="unable_to_download">Ní féidir íoslódáil.</string>
+    <string name="wallpaper_applied_home">Cúlbhrat curtha i bhfeidhm ar an scáileán baile.</string>
+    <string name="wallpaper_applied_home_and_lock">Cúlbhrat curtha i bhfeidhm ar an scáileán baile agus ar an scáileán glasála.</string>
+    <string name="wallpaper_applied_lock">Cúlbhrat curtha i bhfeidhm ar an scáileán glasála.</string>
+    <string name="wallpaper_applied_multi_lock">%d cúlbhrat curtha i bhfeidhm ar an scáileán glasála.</string>
+    <string name="wallpaper_applied_sview">Cúlbhrat curtha i bhfeidhm ar Fhuinneog S View.</string>
+    <string name="wallpaper_crop_button_done">Déanta</string>
+    <string name="wallpaper_instructions">Socraigh mar chúlbhrat</string>
+    <string name="wallpaper_lock_gui_cinematic">Athrófar an chuma atá ar an scáileán glasála nuair a chlaonann tú do ghléas ar chlé agus ar dheis.</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/home_crop_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/blending_effect_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/title_name_linear" android:layout_width="fill_parent" android:layout_height="@dimen/home_lock_cropview_top_margin">
+            <TextView android:textSize="@dimen/wallpaper_preview_lock_title_textsize" android:layout_gravity="center_horizontal" android:id="@id/wallpaper_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallpaper_type_title_top_margin" android:text="@string/home_screen" android:textAllCaps="true" style="@style/WallpaperTypeTitle" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/cropview_area" android:background="@drawable/bg_rect" android:layout_width="@dimen/wallpaper_preview_lock_cropview_width" android:layout_height="@dimen/wallpaper_preview_lock_cropview_height" android:layout_marginTop="@dimen/home_lock_cropview_top_margin" android:elevation="@dimen/wallpaper_preview_shadow_elevation">
+            <com.sec.android.wallpapercropper2.CropView android:layout_gravity="center" android:id="@id/crop_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <include layout="@layout/checkbox_wide_home_and_motion_effect_layout" />
+        <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/set_wallpaper_docomo_gui_layout_height" android:layout_marginBottom="@dimen/set_wallpaper_docomo_gui_layout_margin_bottom" android:layout_marginStart="@dimen/set_wallpaper_docomo_gui_layout_margin_left_right" android:layout_marginEnd="@dimen/set_wallpaper_docomo_gui_layout_margin_left_right" layout="@layout/set_wallpaper_docomo_gui_layout" />
+        <include layout="@layout/actionbar" />
+    </FrameLayout>
+    <include layout="@layout/wide_home_crop_activity" />
+</FrameLayout>

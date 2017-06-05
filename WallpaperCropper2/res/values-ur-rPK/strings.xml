@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s کھولنے سے قاصر۔ [سیٹنگز] پر تھپکی دیں، ایپلیکیشن کی معلومات > اجازتیں پر جائیں، پھر درج ذیل اجازتیں دیں اور دوبارہ کوشش کریں:</string>
+    <string name="all_sim">تمام</string>
+    <string name="app_name">وال پیپر</string>
+    <string name="apply">اطلاق کریں</string>
+    <string name="can_not_set_wallpaper_image_not_found">تصویر بطور وال پیپر سیٹ نہیں کرسکتے۔ تصویر نہیں ملی۔</string>
+    <string name="cancel">منسوخ</string>
+    <string name="cancle">منسوخ</string>
+    <string name="change_wallpaper_when_infinity_applied">اگر آپ یہ وال پیپر استعمال کریں گے تو انفینیٹی اثرات آف ہو جائیں گے۔</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">ہو گیا ہے</string>
+    <string name="duplicate_image">ڈپلیکیٹ</string>
+    <string name="expand_image">پھیلائیں</string>
+    <string name="fail_to_load">فوٹو لوڈ کرنے سے قاصر۔</string>
+    <string name="home_lock_screen">ہوم اور لاک اسکرینز</string>
+    <string name="home_screen">ہوم اسکرین</string>
+    <string name="homescreen_checkbox_motion_effect">حرکت تاثر</string>
+    <string name="image_too_small">تصویر بہت چھوٹی ہے</string>
+    <string name="item_restricted">شے پر پابندی ہے</string>
+    <string name="left_image">بائیں</string>
+    <string name="lock_screen">اسکرین مقفل</string>
+    <string name="motion_effect">وال پیپر کی رفتار کا اثر</string>
+    <string name="motion_wallpaper_name">موشن وال پیپر</string>
+    <string name="notice_low_storage">کافی جگہ نہیں ہے۔ غیر ضروری اشیا حذف کریں، جیسے کہ ڈاؤن لوڈ کردہ سافٹ ویئر، تصویریں، ویڈیوز اور دستاویزات۔</string>
+    <string name="permission_description">%s استعمال کرنے کے لیے، [سیٹنگز] پر تھپکی دیں، ایپلیکیشن معلومات > اجازتوں پر جائیں، پھر درج ذیل اجازتوں کی اجازت دیں:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">ذخیرہ</string>
+    <string name="processing">پروسیسنگ</string>
+    <string name="request_permission_rationale">%1$s استعمال کرنے سے قاصر۔ [سیٹنگز] پر تھپکی دیں، پھر %2$s کو اجازت دیں اور دوبارہ کوشش کریں۔</string>
+    <string name="right_image">دائیں</string>
+    <string name="set_wallpaper_docomo_text_gui">یہ تصویر آپ کے ہوم اور لاک اسکرینز پر دکھائے جائيں گے۔</string>
+    <string name="settings">سیٹنگز</string>
+    <string name="speak_button">بٹن</string>
+    <string name="sview_window">‏S View ونڈو</string>
+    <string name="unable_set_wallpaper_image_deleted">تصویر کو بطور وال پیپر سیٹ کرنے سے قاصر۔ تصویر حذف کردی گئی۔</string>
+    <string name="unable_to_download">ڈاؤن لوڈ کرنے سے قاصر۔</string>
+    <string name="wallpaper_applied_home">ہوم اسکرین پر وال پیپر لاگو کر دیا گیا۔</string>
+    <string name="wallpaper_applied_home_and_lock">وال پیپر ہوم اسکرین اور لاک اسکرین میں اطلاق کیا گیا ہے۔</string>
+    <string name="wallpaper_applied_lock">لاک اسکرین پر وال پیپر لاگو کر دیا گیا۔</string>
+    <string name="wallpaper_applied_multi_lock">%d وال پیپرز لاک اسکرین میں اطلاق کیا گیا ہے۔</string>
+    <string name="wallpaper_applied_sview">وال پیپر S View ونڈو میں اطلاق کیا گیا ہے۔</string>
+    <string name="wallpaper_crop_button_done">مکمل</string>
+    <string name="wallpaper_instructions">بطور وال پیپر سیٹ کریں</string>
+    <string name="wallpaper_lock_gui_cinematic">لاک اسکرین کا ظہور تبدیل ہوجائے گا جب آپ اپنے آلہ کو بائیں اور دائیں ترچھا کریں گے۔</string>
+</resources>

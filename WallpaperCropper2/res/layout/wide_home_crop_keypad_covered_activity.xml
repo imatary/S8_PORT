@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wide_home_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/black_cover" android:background="@android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/title_name_wide_home_linear" android:layout_width="fill_parent" android:layout_height="@dimen/wallpaper_wide_home_crop_view_keypad_top_margin">
+        <TextView android:textSize="@dimen/wallpaper_preview_lock_title_textsize" android:layout_gravity="center_horizontal" android:id="@id/wallpaper_title_wide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallpaper_type_title_top_margin" android:text="@string/homescreen_checkbox_wide_home_screen" android:textAllCaps="true" style="@style/WallpaperTypeTitle" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/cropview_area_wide" android:background="@drawable/bg_rect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallpaper_wide_home_crop_view_keypad_top_margin" android:elevation="@dimen/wallpaper_preview_shadow_elevation">
+        <com.sec.android.wallpapercropper2.CropView android:layout_gravity="center" android:id="@id/crop_view_wide" android:layout_width="fill_parent" android:layout_height="@dimen/wallpaper_wide_home_crop_view_height" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/wallpaper_wide_home_text_size_gui" android:gravity="center" android:id="@id/wide_home_wallpaper_gui" android:padding="@dimen/wallpaper_wide_home_text_gui_left_right_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallpaper_wide_home_text_gui_keypad_top_margin" android:text="@string/wide_home_screen_gui" android:lineSpacingExtra="@dimen/wallpaper_wide_home_text_line_space" style="@style/SpecialWallpaperGuiStyle" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/crop_actionbar" android:background="@drawable/wide_home_actionbar_item_ripple_background" android:layout_width="fill_parent" android:layout_height="@dimen/wallpaper_wide_home_actionbar_height" android:showDividers="none">
+        <LinearLayout android:id="@id/wide_home_cancel" android:background="@drawable/wide_home_actionbar_item_ripple_background" style="@style/CustomActionButtonTransparent">
+            <TextView android:textSize="@dimen/set_as_wallpaper_btn_text_size" android:gravity="center" android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cancel" android:textAllCaps="true" style="@style/WallpaperTypeTitle" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/wide_home_apply" android:background="@drawable/wide_home_actionbar_item_ripple_background" style="@style/CustomActionButtonTransparent">
+            <TextView android:textSize="@dimen/set_as_wallpaper_btn_text_size" android:gravity="center" android:id="@id/apply" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/apply" android:textAllCaps="true" style="@style/WallpaperTypeTitle" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

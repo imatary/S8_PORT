@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/blending_effect_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom|center|left" android:id="@id/cropview_area" android:layout_width="wrap_content" android:layout_height="@dimen/keyguard_crop_dual_view_height" android:layout_marginBottom="@dimen/keyguard_crop_view_bottom_margin">
+        <FrameLayout android:layout_gravity="center|left" android:id="@id/lockscreen_layout" android:background="@drawable/bg_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyguard_crop_view_left_view_left_margin" android:alpha="@string/dual_view_mode_hide_opacity" android:elevation="@dimen/wallpaper_preview_shadow_elevation">
+            <ImageView android:layout_gravity="bottom|center|left" android:id="@id/cover_crop_view_left" android:layout_width="@dimen/keyguard_crop_expand_preview_width" android:layout_height="@dimen/keyguard_crop_expand_preview_height" android:scaleType="fitXY" />
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="center|left" android:id="@id/wallpaper_preview_img_lockscreen" android:layout_width="@dimen/keyguard_crop_expand_lock_preview_width" android:layout_height="@dimen/keyguard_crop_expand_preview_height" android:layout_marginLeft="@dimen/keyguard_crop_view_left_clock_view_left_margin">
+            <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/lockscreen_system_clock_layout" android:layout_width="wrap_content" android:layout_height="@dimen/wallpaper_preview_lock_clock_height" android:layout_alignParentStart="true">
+                <TextView android:textSize="@dimen/wallpaper_preview_dual_clock_text_size" android:gravity="start" android:id="@id/lockscreen_system_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallpaper_preview_dual_clock_margin_top" android:layout_marginStart="@dimen/wallpaper_preview_dual_clock_margin_left" style="@style/ClockFontStyle" />
+                <TextView android:gravity="center_vertical" android:id="@id/am_pm_backview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/wallpaper_preview_lock_am_pm_left_padding" style="@style/DateFontStyle" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/wallpaper_preview_date_text_size" android:gravity="start" android:layout_gravity="start" android:id="@id/lockscreen_system_date" android:layout_width="wrap_content" android:layout_height="@dimen/wallpaper_preview_lock_date_height" android:layout_marginTop="@dimen/wallpaper_preview_dual_date_margin_top" android:layout_below="@id/lockscreen_system_clock_layout" android:layout_marginStart="@dimen/wallpaper_preview_dual_date_margin_left" style="@style/DateFontStyle" />
+            <ImageView android:id="@id/lockscreen_call_icon" android:layout_width="@dimen/wallpaper_preview_lock_icon_size" android:layout_height="@dimen/wallpaper_preview_lock_icon_size" android:layout_marginBottom="@dimen/wallpaper_preview_dual_icon_bottom_margin" android:src="@drawable/lock_wallpaper_preview_btn_call_normal" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/wallpaper_preview_dual_icon_left_margin" />
+        </RelativeLayout>
+        <FrameLayout android:layout_gravity="center|left" android:id="@id/cropview_layout" android:background="@drawable/bg_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyguard_crop_view_right_view_zoom_left_margin" android:elevation="@dimen/wallpaper_preview_shadow_elevation">
+            <com.sec.android.wallpapercropper2.CropView android:layout_gravity="center" android:id="@id/crop_view" android:layout_width="@dimen/keyguard_crop_expand_preview_left_right_width" android:layout_height="@dimen/keyguard_crop_expand_preview_left_right_height" />
+            <ImageView android:layout_gravity="center" android:id="@id/cover_crop_view" android:layout_width="@dimen/keyguard_crop_expand_preview_left_right_width" android:layout_height="@dimen/keyguard_crop_expand_preview_left_right_height" android:scaleType="fitXY" />
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="bottom|center|right" android:id="@id/wallpaper_preview_img_lockscreen_right" android:layout_width="@dimen/keyguard_crop_expand_preview_left_right_width" android:layout_height="@dimen/keyguard_crop_expand_preview_left_right_height">
+            <ImageView android:id="@id/lockscreen_camera_icon" android:layout_width="@dimen/wallpaper_preview_lock_icon_size" android:layout_height="@dimen/wallpaper_preview_lock_icon_size" android:layout_marginBottom="@dimen/wallpaper_preview_left_right_icon_bottom_margin" android:src="@drawable/lock_wallpaper_preview_btn_camera_normal" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/wallpaper_preview_right_icon_horizontal_margin" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center|right" android:orientation="horizontal" android:id="@id/wallpaper_expand_switch_layout" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/expand_setting_margin_right" android:layout_marginBottom="@dimen/expand_setting_margin_bottom">
+        <LinearLayout android:id="@id/wallpaper_expand_img_layout" android:layout_marginRight="@dimen/expand_setting_item_padding_horizontal" style="@style/CustomExpandLayoutView">
+            <ImageView android:id="@id/wallpaper_expand_img" android:background="@drawable/expanded_lock_normal" style="@style/CustomExpandLayoutImageView" />
+            <TextView android:text="@string/expand_image" style="@style/CustomExpandLayoutTextView" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/wallpaper_duplicate_img_layout" android:layout_marginRight="@dimen/expand_setting_item_padding_horizontal" style="@style/CustomExpandLayoutView">>
+<ImageView android:id="@id/wallpaper_duplicate_img" android:background="@drawable/duplicate_normal" style="@style/CustomExpandLayoutImageView" />
+            <TextView android:text="@string/duplicate_image" style="@style/CustomExpandLayoutTextView" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/wallpaper_left_img_layout" android:layout_marginRight="@dimen/expand_setting_item_padding_horizontal" style="@style/CustomExpandLayoutView">>
+<ImageView android:id="@id/wallpaper_left_img" android:background="@drawable/left_lock_normal" style="@style/CustomExpandLayoutImageView" />
+            <TextView android:text="@string/left_image" style="@style/CustomExpandLayoutTextView" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/wallpaper_right_img_layout" style="@style/CustomExpandLayoutView">
+            <ImageView android:id="@id/wallpaper_right_img" android:background="@drawable/right_lock_normal" style="@style/CustomExpandLayoutImageView" />
+            <TextView android:text="@string/right_image" style="@style/CustomExpandLayoutTextView" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/actionbar" />
+</FrameLayout>

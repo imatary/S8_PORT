@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">"לא ניתן לפתוח את ‎%s. הקש על 'הגדרות' ועבור אל 'פרטי יישומים' > 'הרשאות'; כעת אשר את ההרשאות הבאות ונסה שוב:"</string>
+    <string name="all_sim">הכל</string>
+    <string name="app_name">טפטים</string>
+    <string name="apply">החל</string>
+    <string name="can_not_set_wallpaper_image_not_found">לא ניתן להגדיר את התמונה כטפט. התמונה לא נמצאה.</string>
+    <string name="cancel">ביטול</string>
+    <string name="cancle">ביטול</string>
+    <string name="change_wallpaper_when_infinity_applied">"שימוש בטפט זה יגרום להשבתת האפקטים של 'אינסוף'."</string>
+    <string name="date_format">E, d MMMM</string>
+    <string name="done">סיום</string>
+    <string name="duplicate_image">שכפל</string>
+    <string name="expand_image">הרחב</string>
+    <string name="fail_to_load">לא ניתן לטעון את התמונה.</string>
+    <string name="home_lock_screen">מסכי הבית והנעילה</string>
+    <string name="home_screen">מסך ראשי</string>
+    <string name="homescreen_checkbox_motion_effect">אפקט תנועה</string>
+    <string name="image_too_small">התמונה קטנה מדי.</string>
+    <string name="item_restricted">הפריט מוגבל</string>
+    <string name="left_image">שמאל</string>
+    <string name="lock_screen">מסך נעילה</string>
+    <string name="motion_effect">אפקט תנועה בטפט</string>
+    <string name="motion_wallpaper_name">טפט תנועה</string>
+    <string name="notice_low_storage">אין די שטח פנוי. מחק פריטים לא נחוצים, כגון תוכנות שהורדת, תמונות, קטעי וידאו ומסמכים.</string>
+    <string name="permission_description">"כדי להשתמש ב-%s, הקש על 'הגדרות' ועבור אל 'פרטי יישומים' > 'הרשאות'; כעת אשר את ההרשאות הבאות:"</string>
+    <string name="permission_name_read_sms">הודעה</string>
+    <string name="permission_name_storage">אחסון</string>
+    <string name="processing">מעבד…</string>
+    <string name="request_permission_rationale">"לא ניתן להפעיל את %1$s. הקש על 'הגדרות', אשר את הרשאות %2$s ונסה שוב."</string>
+    <string name="right_image">ימין</string>
+    <string name="set_wallpaper_docomo_text_gui">תמונה זו תוצג במסך הבית ובמסך הנעילה שלך.</string>
+    <string name="settings">הגדרות</string>
+    <string name="speak_button">לחצן</string>
+    <string name="sview_window">חלון S View</string>
+    <string name="unable_set_wallpaper_image_deleted">לא ניתן להגדיר את התמונה כטפט. התמונה נמחקה.</string>
+    <string name="unable_to_download">לא ניתן להוריד.</string>
+    <string name="wallpaper_applied_home">בוצעה החלת טפט במסך הבית.</string>
+    <string name="wallpaper_applied_home_and_lock">הטפט הוחל במסך הבית ובמסך הנעילה.</string>
+    <string name="wallpaper_applied_lock">בוצעה החלת טפט במסך הנעילה.</string>
+    <string name="wallpaper_applied_multi_lock">בוצעה החלה של %d טפטים במסך הנעילה.</string>
+    <string name="wallpaper_applied_sview">בוצעה החלת טפטים בחלון S View.</string>
+    <string name="wallpaper_crop_button_done">בוצע</string>
+    <string name="wallpaper_instructions">הגדר כטפט</string>
+    <string name="wallpaper_lock_gui_cinematic">מראה מסך הנעילה ישתנה בכל הטיה של המכשיר לשמאל ולימין.</string>
+</resources>

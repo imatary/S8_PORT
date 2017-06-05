@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AmPmFontStyle">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">roboto-regular</item>
+    </style>
+    <style name="ClockFontStyle">
+        <item name="android:textSize">56.0dip</item>
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">samsung-neo-num3T-cond</item>
+    </style>
+    <style name="CustomClockScreemLayoutView">
+        <item name="android:gravity">bottom</item>
+    </style>
+    <style name="DateFontStyle">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/wallpaper_preview_lock_date_horizontal_padding_left</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">roboto-regular</item>
+    </style>
+    <style name="AmPmFontStyleBoth">
+        <item name="android:textSize">7.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">roboto-regular</item>
+    </style>
+    <style name="CinematicGuiLarge">
+        <item name="android:textSize">56.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="CircleProgressStyle" parent="@android:style/Theme.DeviceDefault.Light.Panel">
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:layout_marginStart">2.0dip</item>
+    </style>
+    <style name="ClockFontStyleBoth">
+        <item name="android:textSize">34.0dip</item>
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">samsung-neo-num3T-cond</item>
+    </style>
+    <style name="CustomActionButtonTextNewTransparent">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/custom_action_button_text_color</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#7f000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="CustomActionButtonTransparent" parent="@android:style/Widget.Holo.ActionButton">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="CustomAlertDialogStyle">
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+    </style>
+    <style name="CustomExpandLayoutImageView">
+        <item name="android:layout_gravity">center|top</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/expand_setting_item_image_margin_bottom</item>
+        <item name="android:layout_weight">0.25</item>
+    </style>
+    <style name="CustomExpandLayoutTextView">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center|top</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/expand_setting_textview_height</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">@color/actionbar_text_shadow_color</item>
+        <item name="android:shadowDy">@integer/motion_setting_shadow_dy</item>
+        <item name="android:shadowRadius">@integer/motion_setting_shadow_radius</item>
+        <item name="android:lineSpacingExtra">0.0dip</item>
+        <item name="android:fontFamily">sec-roboto-regular</item>
+    </style>
+    <style name="CustomExpandLayoutView">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">@dimen/expand_setting_width</item>
+        <item name="android:layout_height">@dimen/expand_setting_height</item>
+    </style>
+    <style name="DateFontStyleBoth">
+        <item name="android:textSize">7.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/wallpaper_preview_lock_date_horizontal_padding_left</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">roboto-regular</item>
+    </style>
+    <style name="SpecialWallpaperGuiStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:shadowColor">#b3000000</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:fontFamily">roboto-regular</item>
+        <item name="android:strokeColor">#7f000000</item>
+        <item name="android:strokeWidth">1.0</item>
+    </style>
+    <style name="Theme.WallpaperCropper2" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="WallpaperTypeTitle">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#b3000000</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:fontFamily">sec-roboto-condensed</item>
+        <item name="android:strokeColor">#7f000000</item>
+        <item name="android:strokeWidth">1.0</item>
+    </style>
+</resources>

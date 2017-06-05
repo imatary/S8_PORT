@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s खोलने में असमर्थ। “सेटिंग्स” पर टैप करें, एप जानकारी > अनुमतियाँ पर जाएं फिर निम्नलिखित अनुमतियों को अनुमति दें और फिर से प्रयास करें:</string>
+    <string name="all_sim">सभी</string>
+    <string name="app_name">वॉलपेपर्स</string>
+    <string name="apply">लागू करें</string>
+    <string name="can_not_set_wallpaper_image_not_found">छवि को वॉलपेपर के रूप में सेट नहीं किया जा सकता। छवि नहीं मिली।</string>
+    <string name="cancel">रद्द</string>
+    <string name="cancle">रद्द करें</string>
+    <string name="change_wallpaper_when_infinity_applied">आपके द्वारा इस वॉलपेपर का उपयोग करने पर अनंत प्रभाव बंद किए जाएँगे।</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">पूर्ण</string>
+    <string name="duplicate_image">डुप्लिकेट</string>
+    <string name="expand_image">विस्तार</string>
+    <string name="fail_to_load">फोटो लोड करने में असमर्थ।</string>
+    <string name="home_lock_screen">होम और लॉक स्‍क्रीन</string>
+    <string name="home_screen">होम स्क्रीन</string>
+    <string name="homescreen_checkbox_motion_effect">गति प्रभाव</string>
+    <string name="image_too_small">छवि बहुत छोटी है।</string>
+    <string name="item_restricted">मद प्रतिबंधित</string>
+    <string name="left_image">बाएँ</string>
+    <string name="lock_screen">लॉक स्क्रीन</string>
+    <string name="motion_effect">वॉलपेपर गति प्रभाव</string>
+    <string name="motion_wallpaper_name">गति वॉलपेपर</string>
+    <string name="notice_low_storage">पर्याप्त स्थान नहीं है। अनावश्‍यक मदें जैसे कि डाउनलोड किए गए सॉफ्टवेयर, तस्वीरें, वीडियो, और दस्तावेज हटाएँ।</string>
+    <string name="permission_description">%s का उपयोग करने के लिए, “सेटिंग्स” पर टैप करें, एप्लीकेशन जानकारी > अनुमतियाँ पर जाएँ, फिर निम्नलिखित अनुमतियों की अनुमति दें:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">स्टोरेज</string>
+    <string name="processing">प्रक्रिया हो रही है…</string>
+    <string name="request_permission_rationale">%1$s का उपयोग करने में असमर्थ। “सेटिंग्स” पर टैप करें, फिर %2$s अनुमति को अनुमति दें और फिर से प्रयास करें।</string>
+    <string name="right_image">दाएँ</string>
+    <string name="set_wallpaper_docomo_text_gui">यह छवि आपकी होम और लॉक स्क्रीन्स पर दिखाई जाएगी।</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="speak_button">बटन</string>
+    <string name="sview_window">S View विंडो</string>
+    <string name="unable_set_wallpaper_image_deleted">छवि को वॉलपेपर के रूप में सेट करने में असमर्थ। छवि हटाई गई।</string>
+    <string name="unable_to_download">डाउनलोड करने में असमर्थ।</string>
+    <string name="wallpaper_applied_home">होम स्क्रीन पर वॉलपेपर लागू किया गया।</string>
+    <string name="wallpaper_applied_home_and_lock">होम स्क्रीन और लॉक स्क्रीन पर वॉलपेपर लागू किया गया।</string>
+    <string name="wallpaper_applied_lock">लॉक स्क्रीन पर वॉलपेपर लागू किया गया।</string>
+    <string name="wallpaper_applied_multi_lock">लॉक स्क्रीन पर %d वॉलपेपर्स लागू किए गए।</string>
+    <string name="wallpaper_applied_sview">S View विंडो पर वॉलपेपर लागू किया गया।</string>
+    <string name="wallpaper_crop_button_done">पूर्ण</string>
+    <string name="wallpaper_instructions">वॉलपेपर के रूप में सेट करें</string>
+    <string name="wallpaper_lock_gui_cinematic">आपके द्वारा अपना डिवाइस बाएँ और दाएँ झुकाने पर लॉक स्क्रीन की दिखावट बदल जाएगी।</string>
+</resources>
