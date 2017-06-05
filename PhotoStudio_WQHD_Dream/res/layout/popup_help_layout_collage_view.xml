@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="start|center|top" android:orientation="horizontal" android:id="@id/help_popup_shuffle" android:background="@drawable/overlay_help_shuffle_background" android:focusable="true" android:layout_width="@dimen/help_popup_shuffle_width" android:layout_height="@dimen/help_popup_shuffle_height" android:layout_marginTop="@dimen/help_popup_shuffle_margin_top" />
+        <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:id="@id/help_popup_shuffle_point" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/help_popup_collage_point_height" android:layout_marginTop="@dimen/help_popup_shuffle_point_margin_top">
+            <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/help_popup_collage_point_height" android:src="@drawable/overlay_help_point" android:tint="#fffafafa" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/help_popup_shuffle_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/help_popup_shuffle_text_margin_top">
+                <TextView android:textSize="@dimen/help_popup_shuffle_textview_text_size" android:textColor="#fffafafa" android:layout_gravity="end" android:id="@id/help_popup_shuffle_textview" android:paddingBottom="@dimen/help_popup_shuffle_textview_line_spacing" android:layout_width="@dimen/help_popup_shuffle_textview_width" android:layout_height="wrap_content" android:text="@string/tap_to_shuffle_your_pictures_and_use_a_randomly_selected_layout_and_background" android:maxLines="4" android:includeFontPadding="true" android:lineSpacingExtra="@dimen/help_popup_shuffle_textview_line_spacing" android:textAlignment="textStart" style="@style/help_popup_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/help_popup_collage_point_height_2" android:layout_marginTop="@dimen/help_popup_edit_point_margin_top" android:layout_marginStart="@dimen/help_popup_edit_point_margin_start">
+            <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/help_popup_collage_point_height_2" android:src="@drawable/overlay_help_point" android:tint="#fffafafa" android:paddingEnd="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/collage_help_tap_edit_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/help_popup_edit_text_margin_top" android:layout_marginStart="@dimen/help_popup_edit_text_margin_start">
+                <TextView android:textSize="@dimen/help_popup_shuffle_textview_text_size" android:textColor="#fffafafa" android:layout_gravity="start" android:id="@id/help_popup_edit_textview" android:paddingBottom="@dimen/help_popup_edit_textview_line_spacing" android:layout_width="@dimen/help_popup_edit_textview_width" android:layout_height="wrap_content" android:text="@string/tap_to_edit_the_picture" android:maxLines="4" android:includeFontPadding="true" android:lineSpacingExtra="@dimen/help_popup_edit_textview_line_spacing" android:textAlignment="textStart" style="@style/help_popup_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center|top" android:orientation="horizontal" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="52.0dip" android:layout_marginTop="180.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="52.0dip" android:src="@drawable/overlay_help_point" android:paddingEnd="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="233.0dip" android:layout_marginStart="328.0dip">
+                <TextView android:textSize="@dimen/help_popup_shuffle_textview_text_size" android:textColor="#ffffffff" android:layout_gravity="start" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="@string/tap_and_hold_then_drag_the_bars_between_the_images_to_change_the_layout" android:maxLines="4" android:includeFontPadding="true" android:textAlignment="textStart" style="@style/help_popup_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/help_popup_collage_point_height_3" android:layout_marginTop="@dimen/help_popup_hold_point_margin_top" android:layout_marginStart="@dimen/help_popup_hold_point_margin_start">
+            <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/help_popup_collage_point_height_3" android:src="@drawable/overlay_help_point" android:tint="#fffafafa" android:paddingEnd="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/collage_help_hold_edit_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/help_popup_hold_text_margin_top">
+                <TextView android:textSize="@dimen/help_popup_shuffle_textview_text_size" android:textColor="#fffafafa" android:layout_gravity="start" android:id="@id/help_popup_hold_textview" android:paddingBottom="@dimen/help_popup_edit_textview_line_spacing" android:layout_width="@dimen/help_popup_hold_textview_width" android:layout_height="wrap_content" android:text="@string/tap_and_hold_then_drag_the_bars_between_the_images_to_change_the_layout" android:maxLines="6" android:lineSpacingExtra="@dimen/help_popup_edit_textview_line_spacing" android:textAlignment="textStart" style="@style/help_popup_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/help_popup_close_btn" android:background="@drawable/overlay_help_shuffle_background" android:focusable="true" android:layout_width="@dimen/help_popup_close_width" android:layout_height="@dimen/help_popup_close_height" android:layout_marginBottom="@dimen/help_popup_close_margin_bottom">
+            <TextView android:textSize="@dimen/help_popup_close_textview_text_size" android:textColor="#fffafafa" android:gravity="center" android:id="@id/ok_textview" android:layout_width="@dimen/help_popup_close_textview_width" android:layout_height="@dimen/help_popup_close_textview_height" android:text="@string/ok" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

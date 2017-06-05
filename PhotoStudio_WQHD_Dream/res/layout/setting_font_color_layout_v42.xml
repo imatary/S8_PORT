@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="@dimen/common_total_layout_width" android:layout_height="@dimen/text_font_color_popup_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/text_color_bg_margin_bottom" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/common_title_layout_height_v42" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/common_title_text_size_v42" android:textColor="#ff676767" android:gravity="start|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Font Color" android:paddingStart="@dimen/common_title_text_side_margin" android:paddingEnd="@dimen/common_title_text_side_margin" android:layout_alignParentStart="true" />
+        <RelativeLayout android:background="@drawable/spen_close_parent_background" android:layout_width="fill_parent" android:layout_height="@dimen/common_title_layout_height_v42" android:layout_marginTop="2.0px" android:layout_marginEnd="2.0px">
+            <TextView android:textSize="@dimen/common_close_button_text_size" android:textColor="#fff46a4e" android:gravity="center_vertical" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="0.0dip" android:text="@string/pen_string_done" android:textAllCaps="true" android:paddingStart="@dimen/common_title_text_side_margin" android:paddingEnd="@dimen/common_title_text_side_margin" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/text_color_pallet_height" android:layout_marginTop="@dimen/common_title_layout_height" />
+    <ImageView android:id="@id/spen_setting_text_color_indicator" android:layout_width="@dimen/common_indicator_width" android:layout_height="@dimen/common_indicator_height" android:layout_alignParentBottom="true" android:layoutDirection="ltr" android:layout_marginStart="@dimen/text_color_indicator_right_margin" />
+</RelativeLayout>

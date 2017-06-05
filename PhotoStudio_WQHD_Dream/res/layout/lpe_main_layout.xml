@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_layout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/gl_layout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/dummyView" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <RelativeLayout android:id="@id/native_ui" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/drawing_layout" android:visibility="gone" layout="@layout/draw_layout" />
+        <include android:id="@id/main_button_layout" android:visibility="visible" layout="@layout/main_btn_layout" />
+        <include android:id="@id/sub_btn_layout" android:visibility="gone" layout="@layout/sub_btn_layout" />
+        <include android:id="@id/adjustment_sub_button_layout_land" android:visibility="gone" layout="@layout/adjustment_sub_btn_layout_land" />
+        <include android:id="@id/smart_btn_layout" android:visibility="gone" android:layout_centerHorizontal="true" layout="@layout/smart_btn_layout" />
+        <include android:id="@id/perspective_btn_layout" android:visibility="gone" android:layout_centerHorizontal="true" layout="@layout/perspective_btn_layout" />
+        <include android:id="@id/perspective_btn_layout_land" android:visibility="gone" android:layout_centerHorizontal="true" layout="@layout/perspective_btn_layout_land" />
+        <include android:id="@id/smart_btn_layout_land" android:visibility="gone" layout="@layout/smart_btn_layout_land" />
+        <include android:id="@id/seek_layout" android:visibility="invisible" layout="@layout/custom_seek_bar" />
+        <include android:id="@id/rounded_seek_layout" android:visibility="invisible" layout="@layout/rounded_seekbar" />
+        <include android:id="@id/previous_text" android:visibility="invisible" layout="@layout/previous_text_layout" />
+        <include android:id="@id/red_eye_text" android:visibility="invisible" layout="@layout/red_eye_text_layout" />
+        <include android:id="@id/decoration_container_layout" android:visibility="gone" layout="@layout/decoration_container_main" />
+        <include android:id="@id/parametric_curve_bottom_layout" android:visibility="invisible" layout="@layout/parametric_curve_bottom_layout" />
+        <include android:id="@id/color_turnning_content_layout" android:visibility="invisible" layout="@layout/color_turnning_content_layout" />
+        <include android:id="@id/curve_side_layout" android:visibility="invisible" layout="@layout/curve_side_layout" />
+        <include android:id="@id/wb_layout" android:visibility="invisible" layout="@layout/white_balance_layout" />
+        <include android:id="@id/curve_range_seekbar" android:visibility="invisible" layout="@layout/parametric_curve_range_seekbar" />
+    </RelativeLayout>
+    <include android:layout_gravity="bottom" android:id="@id/sub_actionbar_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sub_actionbar_height" layout="@layout/sub_actionbar_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="start|center" android:orientation="vertical" android:id="@id/zoom_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/zoom_layout_margin_start">
+        <LinearLayout android:id="@id/btn_zoom_in" android:background="@drawable/zoom_button_background" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/zoom_button_width" android:layout_height="@dimen/zoom_button_height" android:src="@drawable/photo_knox_ic_zoom_in" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/btn_zoom_out" android:background="@drawable/zoom_button_background" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zoom_button_margin_top">
+            <ImageView android:layout_width="@dimen/zoom_button_width" android:layout_height="@dimen/zoom_button_height" android:src="@drawable/photo_knox_ic_zoom_out" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

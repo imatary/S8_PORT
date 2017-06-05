@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/sub_btn_decoration" android:layout_width="fill_parent" android:layout_height="@dimen/common_bottom_button_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/sub_btn_decoration_buttons" android:layout_width="@dimen/decoration_main_buttons_width" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:id="@id/sub_btn_decoration_add_image" android:onClick="onStateClicked" style="@style/sub_bottom_button_state_style">
+            <LinearLayout android:id="@id/sub_btn_decoration_add_image_background" style="@style/sub_bottom_button_background_style">
+                <ImageView android:id="@id/sub_btn_decoration_add_imageview" android:src="@drawable/ic_add_image" style="@style/main_bottom_button_imageview_style" />
+                <TextView android:id="@id/sub_btn_textview" android:text="@string/images" style="@style/selection_sub_button_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/sub_btn_decoration_sticker" android:onClick="onStateClicked" style="@style/sub_bottom_button_state_style">
+            <LinearLayout android:id="@id/sub_btn_decoration_sticker_background" style="@style/sub_bottom_button_background_style">
+                <ImageView android:id="@id/sub_btn_decoration_sticker_imageview" android:src="@drawable/ic_stickers" style="@style/main_bottom_button_imageview_style" />
+                <TextView android:id="@id/sub_btn_textview" android:text="@string/stickers" style="@style/selection_sub_button_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/sub_btn_decoration_label" android:onClick="onStateClicked" style="@style/sub_bottom_button_state_style">
+            <LinearLayout android:id="@id/sub_btn_decoration_label_background" style="@style/sub_bottom_button_background_style">
+                <ImageView android:id="@id/sub_btn_decoration_label_imageview" android:src="@drawable/ic_label" style="@style/main_bottom_button_imageview_style" />
+                <TextView android:id="@id/sub_btn_textview" android:text="@string/labels" style="@style/selection_sub_button_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/sub_btn_decoration_cover" android:onClick="onStateClicked" style="@style/sub_bottom_button_state_style">
+            <LinearLayout android:id="@id/sub_btn_decoration_cover_background" style="@style/sub_bottom_button_background_style">
+                <ImageView android:id="@id/sub_btn_decoration_cover_imageview" android:src="@drawable/ic_cover" style="@style/main_bottom_button_imageview_style" />
+                <TextView android:id="@id/sub_btn_textview" android:text="@string/covers" style="@style/selection_sub_button_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/sub_btn_decoration_drawing" android:onClick="onStateClicked" style="@style/sub_bottom_button_state_style">
+            <LinearLayout android:id="@id/sub_btn_decoration_drawing_background" style="@style/sub_bottom_button_background_style">
+                <ImageView android:id="@id/sub_btn_decoration_drawing_imageview" android:src="@drawable/ic_drawing_01" style="@style/main_bottom_button_imageview_style" />
+                <TextView android:id="@id/sub_btn_textview" android:text="@string/draw" style="@style/selection_sub_button_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/gl_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/collage_plus_inclide" android:visibility="gone" layout="@layout/collage_add_image_layout" />
+    <ImageView android:id="@id/collage_bottom_bg" android:background="@drawable/bottombar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/common_bottom_button_height" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/collage_action_bar_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentTop="true" />
+    <FrameLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/native_ui" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/aspect_include" android:visibility="gone" layout="@layout/collage_colorpicker_popup" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/subview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/common_bottom_button_height">
+            <include android:id="@id/aspect_include" android:visibility="gone" layout="@layout/collage_aspect_ratio" />
+            <include android:id="@id/sub_layouts_include" android:visibility="gone" layout="@layout/collage_sub_layouts" />
+            <include android:id="@id/border_include" android:visibility="gone" layout="@layout/collage_border_layout" />
+            <include android:id="@id/background_include" android:visibility="gone" layout="@layout/collage_background_layout" />
+            <LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/collage_arrow_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/main_bottom_button_edge_margin_five" android:layout_marginEnd="@dimen/main_bottom_button_edge_margin_five">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentBottom="true">
+                    <ImageView android:layout_gravity="center|top" android:id="@id/icon_ratio_ar" android:layout_width="@dimen/collage_arrow_width" android:layout_height="@dimen/collage_arrow_height" android:src="@drawable/main_button_arrow_selector" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentBottom="true">
+                    <ImageView android:layout_gravity="center|top" android:id="@id/icon_layout_ar" android:layout_width="@dimen/collage_arrow_width" android:layout_height="@dimen/collage_arrow_height" android:src="@drawable/main_button_arrow_selector" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentBottom="true">
+                    <ImageView android:layout_gravity="center|top" android:id="@id/icon_border_ar" android:layout_width="@dimen/collage_arrow_width" android:layout_height="@dimen/collage_arrow_height" android:src="@drawable/main_button_arrow_selector" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentBottom="true">
+                    <ImageView android:layout_gravity="center|top" android:id="@id/icon_background_ar" android:layout_width="@dimen/collage_arrow_width" android:layout_height="@dimen/collage_arrow_height" android:src="@drawable/main_button_arrow_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@id/mainbuttons_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/mainbuttons_include" android:visibility="visible" layout="@layout/collage_main_buttons_layout" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/modify_popup_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/modify_popup_include" layout="@layout/collage_modify_popup" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+</RelativeLayout>

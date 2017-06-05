@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/spen_setting_text_scroll_view" android:fadingEdgeLength="@dimen/text_body_fading_edge" android:layout_width="fill_parent" android:layout_height="@dimen/text_body_layout_height" android:fillViewport="true" android:layout_below="@id/spen_setting_text_line" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/spen_setting_text_parent_layout" android:paddingLeft="@dimen/text_body_linear_pading_left" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:layout_width="@dimen/text_font_type_parent_width" android:layout_height="wrap_content" android:layout_marginRight="@dimen/text_font_size_parent_margin_right" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/spen_setting_text_font_type" android:layout_width="wrap_content" android:layout_height="@dimen/text_body_layout_height">
+                    <RelativeLayout android:background="#00000000" android:layout_width="@dimen/text_font_type_parent_width" android:layout_height="@dimen/text_font_type_height" android:layout_centerInParent="true">
+                        <TextView android:textSize="@dimen/text_font_type_size_text_size" android:textColor="#ff676767" android:ellipsize="end" android:gravity="center|left" android:id="@id/text_font_type_name" android:layout_width="@dimen/text_font_type_text_width" android:layout_height="@dimen/text_font_type_height" android:layout_marginLeft="@dimen/text_font_type_text_margin_left" android:singleLine="true" />
+                        <ImageView android:layout_width="@dimen/text_font_type_spinner_width" android:layout_height="@dimen/text_font_type_height" android:layout_toRightOf="@id/text_font_type_name" />
+                        <View android:focusable="true" android:layout_width="@dimen/text_font_type_parent_width" android:layout_height="@dimen/text_font_type_height" />
+                    </RelativeLayout>
+                    <ImageView android:background="#00ffffff" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/text_font_type_parent_width" android:layout_height="fill_parent" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="@dimen/text_font_size_parent_width" android:layout_height="wrap_content" android:layout_marginRight="@dimen/text_font_type_parent_margin_right" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/spen_setting_text_font_size" android:layout_width="wrap_content" android:layout_height="@dimen/text_body_layout_height">
+                    <RelativeLayout android:background="#00000000" android:layout_width="@dimen/text_font_size_parent_width" android:layout_height="@dimen/text_font_type_height" android:layout_centerInParent="true">
+                        <TextView android:textSize="@dimen/text_font_type_size_text_size" android:textColor="#ff676767" android:ellipsize="end" android:gravity="center|left" android:id="@id/text_font_size" android:layout_width="@dimen/text_font_size_text_width" android:layout_height="@dimen/text_font_type_height" android:layout_marginLeft="@dimen/text_font_size_text_margin_left" android:singleLine="true" />
+                        <ImageView android:layout_width="@dimen/text_font_size_spinner_width" android:layout_height="@dimen/text_font_type_height" android:layout_toRightOf="@id/text_font_size" />
+                        <View android:focusable="true" android:layout_width="@dimen/text_font_size_parent_width" android:layout_height="@dimen/text_font_type_height" />
+                    </RelativeLayout>
+                    <ImageView android:background="#00ffffff" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/text_font_size_parent_width" android:layout_height="fill_parent" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="@dimen/text_common_button_width" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="@dimen/text_setting_common_button_margin_right">
+                <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/spen_setting_text_bold" android:background="#00000000" android:layout_width="@dimen/text_common_button_width" android:layout_height="@dimen/text_common_button_height">
+                    <ImageButton android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="@dimen/text_common_button_width" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="@dimen/text_setting_common_button_margin_right">
+                <RelativeLayout android:id="@id/spen_setting_text_italic" android:background="#00000000" android:layout_width="@dimen/text_common_button_width" android:layout_height="@dimen/text_common_button_height">
+                    <ImageButton android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="@dimen/text_common_button_width" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="@dimen/text_setting_common_button_margin_right">
+                <RelativeLayout android:id="@id/spen_setting_text_underline" android:background="#00000000" android:layout_width="@dimen/text_common_button_width" android:layout_height="@dimen/text_common_button_height">
+                    <ImageButton android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="@dimen/text_common_button_width" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="@dimen/text_setting_common_button_margin_right">
+                <RelativeLayout android:id="@id/spen_setting_text_color" android:background="#00000000" android:layout_width="@dimen/text_common_button_width" android:layout_height="@dimen/text_common_button_height">
+                    <ImageButton android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                    <RelativeLayout android:layout_width="@dimen/text_font_type_height" android:layout_height="@dimen/text_font_type_height" android:layout_centerInParent="true">
+                        <ImageView android:background="@android:color/black" android:layout_width="@dimen/text_color_preview_width" android:layout_height="@dimen/text_color_preview_height" android:layout_marginBottom="@dimen/text_color_preview_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="@dimen/text_common_button_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/text_bullet_margin_right" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/text_bullet" android:background="#00000000" android:layout_width="@dimen/text_common_button_width" android:layout_height="@dimen/text_common_button_height">
+                    <ImageButton android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="@dimen/text_allignment_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/text_alignment_margin_right" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/text_align_button" android:layout_width="wrap_content" android:layout_height="@dimen/text_common_button_height">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/text_align_image" android:layout_width="@dimen/text_font_type_height" android:layout_height="@dimen/text_font_type_height" />
+                        <ImageView android:layout_width="@dimen/text_font_type_spinner_width" android:layout_height="@dimen/text_font_type_height" android:layout_toRightOf="@id/text_align_image" />
+                        <View android:focusable="true" android:layout_width="@dimen/text_allignment_width" android:layout_height="@dimen/text_font_type_height" />
+                    </RelativeLayout>
+                    <ImageButton android:background="#00ffffff" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/text_allignment_width" android:layout_height="fill_parent" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <ImageView android:id="@id/spen_setting_text_line" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="@dimen/text_top_line_height" android:layout_alignParentTop="true" />
+</RelativeLayout>

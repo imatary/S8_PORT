@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/help_overaly_cue_tap" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="9.0dip" android:layout_marginStart="@dimen/help_popup_text_left_margin_land" android:layout_marginEnd="@dimen/help_popup_text_right_margin_land">
+                <TextView android:textSize="17.0dip" android:textColor="#fffafafa" android:gravity="center" android:id="@id/long_press_textview" android:layout_width="@dimen/help_popup_text_width_land" android:layout_height="wrap_content" android:text="@string/tab_and_hold_the_screen_to_view_the_previous_image" android:maxLines="2" android:textAlignment="center" style="@style/help_popup_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/help_popup_close_btn" android:background="@drawable/overlay_help_shuffle_background" android:focusable="true" android:layout_width="@dimen/help_popup_close_width" android:layout_height="@dimen/help_popup_close_height" android:layout_marginBottom="@dimen/help_popup_close_margin_bottom">
+            <TextView android:textSize="@dimen/help_popup_close_textview_text_size" android:textColor="#fffafafa" android:gravity="center" android:id="@id/textView1" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ok" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

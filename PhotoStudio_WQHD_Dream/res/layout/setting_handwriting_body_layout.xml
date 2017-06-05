@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/handwriting_total_layout_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/note_handwriting_horizontal_pen_type_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/note_handwriting_pen_type_layout" android:layout_width="wrap_content" android:layout_height="@dimen/handwriting_pen_type_layout_height" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <ImageView android:id="@id/note_handwriting_pen_type_divider" android:background="#ffc7c7c7" android:layout_width="@dimen/handwriting_total_layout_width" android:layout_height="@dimen/handwriting_divider_height" />
+    <RelativeLayout android:id="@id/note_handwriting_pen_size_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:background="#ffc7c7c7" android:layout_width="@dimen/handwriting_total_layout_width" android:layout_height="@dimen/handwriting_divider_height" />
+</LinearLayout>

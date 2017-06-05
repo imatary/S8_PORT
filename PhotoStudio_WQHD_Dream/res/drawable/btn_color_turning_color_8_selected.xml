@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/item">
+        <shape android:shape="oval">
+            <solid android:color="#ff000000" />
+            <stroke android:width="3.0px" android:color="@color/btn_color_turning_stroke_selected" />
+        </shape>
+    </item>
+</layer-list>

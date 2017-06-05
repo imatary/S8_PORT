@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="__cp__gallery_button_height">70.0dip</dimen>
+    <dimen name="__cp__gallery_button_width">70.0dip</dimen>
+    <dimen name="__cp__record_button_height">70.0dip</dimen>
+    <dimen name="__cp__record_button_width">70.0dip</dimen>
+    <dimen name="__cp__recording_pause_resume_group_width">82.0dip</dimen>
+    <dimen name="__cp__recording_pause_resume_layout_padding_left">6.0dip</dimen>
+    <dimen name="__cp__recording_size_progressbar_group_margin">33.0dip</dimen>
+    <dimen name="__cp__recording_size_progressbar_height">4.0dip</dimen>
+    <dimen name="__cp__recording_size_progressbar_margin_left">19.0dip</dimen>
+    <dimen name="__cp__recording_size_progressbar_margin_right">19.0dip</dimen>
+    <dimen name="__cp__recording_size_progressbar_width">374.0dip</dimen>
+    <dimen name="__cp__recording_stop_button_height">92.0dip</dimen>
+    <dimen name="__cp__recording_stop_button_width">92.0dip</dimen>
+    <dimen name="__cp__shutter_button_height">92.0dip</dimen>
+    <dimen name="__cp__shutter_button_layout_margin_bottom">50.0dip</dimen>
+    <dimen name="__cp__shutter_button_width">92.0dip</dimen>
+    <dimen name="__cp__switch_button_height">70.0dip</dimen>
+    <dimen name="__cp__switch_button_width">70.0dip</dimen>
+</resources>

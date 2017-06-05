@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_shape_drawable_with_inset" android:left="3.0dip" android:top="10.0dip" android:right="3.0dip" android:bottom="10.0dip" />
+    <item android:drawable="@drawable/tw_ab_ic_background" />
+</layer-list>

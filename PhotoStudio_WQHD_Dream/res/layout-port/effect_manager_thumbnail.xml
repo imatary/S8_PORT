@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/thumbnail_main_layout" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="@dimen/effect_manager_thumbnail_layout_width_withBar_p" android:layout_height="@dimen/effect_manager_thumbnail_framebar_thickness" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/left_bar" android:layout_width="@dimen/effect_manager_thumbnail_framebar_thickness" android:layout_height="@dimen/effect_manager_thumbnail_layout_height_p" />
+        <FrameLayout android:id="@id/thumbnail_layout" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:orientation="horizontal" android:id="@id/image" android:layout_width="@dimen/effect_manager_thumbnail_layout_width_p" android:layout_height="@dimen/effect_manager_thumbnail_layout_height_p" />
+            <CheckBox android:id="@id/checkbox" android:paddingLeft="@dimen/effect_manager_thumbnail_check_box_padding_left" android:paddingTop="@dimen/effect_manager_thumbnail_check_box_padding_top" android:focusable="false" android:clickable="false" android:layout_width="@dimen/effect_manager_thumbnail_check_box_width" android:layout_height="@dimen/effect_manager_thumbnail_check_box_height" />
+            <ImageView android:layout_gravity="center" android:id="@id/icon_gradiation" android:layout_width="@dimen/effect_manager_thumbnail_layout_width_p" android:layout_height="@dimen/effect_manager_thumbnail_layout_height_p" android:layout_marginTop="@dimen/sub_bottom_effect_background_margin_top" android:layout_marginBottom="@dimen/sub_bottom_background_margin_bottom" android:src="@drawable/effect_gradiation_02" />
+            <TextView android:id="@id/textview" android:paddingRight="6.0dip" android:layout_width="fill_parent" style="@style/effect_manager_text_style" />
+            <ImageView android:layout_gravity="center|left|top" android:background="@drawable/btn_effectmanager_thumbnail_popup" android:duplicateParentState="true" android:layout_width="@dimen/effect_manager_thumbnail_layout_width_p" android:layout_height="@dimen/effect_manager_thumbnail_layout_height_p" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

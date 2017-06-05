@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="218.0dip" android:layout_marginStart="@dimen/help_popup_text_left_margin_land" android:layout_marginEnd="@dimen/help_popup_text_right_margin_land">
+                <TextView android:textSize="17.0dip" android:textColor="#fffafafa" android:gravity="center" android:layout_width="@dimen/help_popup_text_width_land" android:layout_height="wrap_content" android:text="@string/tap_subjects_eyes_to_remove_red_eye" android:maxLines="2" android:textAlignment="center" style="@style/help_popup_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="360.0dip" android:layout_height="170.0dip" android:layout_marginTop="48.0dip" android:src="@drawable/s_help_img_04" />
+        <LinearLayout android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/help_popup_close_btn" android:background="@drawable/overlay_help_popup_selector_ok" android:focusable="true" android:layout_width="80.0dip" android:layout_height="31.0dip" android:layout_marginBottom="12.0dip" android:layout_marginEnd="12.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textView1" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ok" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

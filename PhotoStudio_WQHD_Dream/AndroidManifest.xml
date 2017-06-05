@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="com.sec.android.mimage.uid.photoretouching" package="com.sec.android.mimage.photoretouching" platformBuildVersionCode="24" platformBuildVersionName="7.0">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="com.sec.android.daemonapp.ap.accuweather.ACCUWEATHER_DAEMON_ACCESS_PROVIDER"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_a457849abd3152089a46071e3828d3f8b1c70a93c1b14b5b181b3b92e31bcb0ec63bb7e9d174c2ba9ed27ed385f6d15160a52e25e6c3a2e47792c6a80c4eb28e77fc55f245650acc5bb752054d2eaca629b3b1d384ccc0fd4cd0043e234b2abbde3a98bcb99ed21a7c2525b3381d42e33eb953a4679193238bd33c9943ce1b35"/>
+    <meta-data android:name="android.max_aspect" android:value="2.1"/>
+    <android:uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.samsung.android.provider.filterprovider.permission.READ_FILTER"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="com.samsung.android.provider.filterprovider.permission.WRITE_FILTER"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="com.sec.android.permission.PERSONAL_MEDIA"/>
+    <uses-permission android:name="com.android.setting.permission.ALLSHARE_CAST_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY"/>
+    <uses-permission android:name="com.sec.face.provider.FaceProvider.data.WRITE"/>
+    <uses-permission android:name="com.sec.face.provider.FaceProvider.data.READ"/>
+    <uses-permission android:name="com.samsung.cmh.data.READ"/>
+    <uses-permission android:name="com.samsung.cmh.data.WRITE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MANAGE_ACTIVITY_STACKS"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <permission android:name="com.sec.android.mimage.photoretouching" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.sec.android.app.voicenote.Controller"/>
+    <uses-permission android:name="com.samsung.android.scloud.cloudagent.permission.READ"/>
+    <uses-permission android:name="com.samsung.android.scloud.cloudagent.permission.WRITE"/>
+    <application android:allowBackup="true" android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/s_studio_main_icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.sec.android.mimage.photoretouching.PhotoEditorApplication" android:supportsRtl="true" android:theme="@style/LayeredPETheme">
+        <service android:enabled="true" android:exported="true" android:name="com.sec.android.mimage.photoretouching.service.FinishService" android:permission="com.sec.android.mimage.photoretouching"/>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize|uiMode" android:exported="false" android:finishOnTaskLaunch="true" android:label="" android:launchMode="singleTop" android:name="com.sec.android.mimage.photoretouching.WaterMarkTextEditActivity" android:parentActivityName="com.sec.android.mimage.photoretouching.PhotoRetouching" android:permission="com.sec.android.mimage.photoretouching" android:theme="@android:style/Theme.DeviceDefault.Light" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="com.sec.android.multiwindow.activity.STYLE" android:value="fullscreenOnly"/>
+            <intent-filter>
+                <action android:name="com.sec.android.mimage.photoretouching.WaterMarkTextEditActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.sec.android.mimage.photoretouching.decoration" android:name="com.sec.android.mimage.photoretouching.Decoration.db.DecorationProvider"/>
+        <receiver android:exported="false" android:name="com.sec.android.mimage.photoretouching.Decoration.db.StickerPackageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="locale|density|fontScale|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.sec.android.mimage.photoretouching.Decoration.stickermanager.StickerManagerActivity" android:permission="com.sec.android.mimage.photoretouching" android:theme="@style/StickerManagerTheme">
+            <intent-filter>
+                <action android:name="com.sec.android.mimage.photoretouching.Decoration.stickermanager.StickerManagerActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="SmpsManager" android:required="false"/>
+        <uses-library android:name="sechardware" android:required="false"/>
+        <uses-library android:name="allshare" android:required="false"/>
+        <uses-library android:name="secimaging" android:required="false"/>
+        <uses-library android:name="saiv"/>
+        <meta-data android:name="com.samsung.android.bixby.BIXBY_SUPPORT" android:value="true"/>
+        <meta-data android:name="com.samsung.android.bixby.pathRuleAppName" android:value="PhotoEditor"/>
+        <activity android:configChanges="locale|density|fontScale|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.sec.android.mimage.photoretouching.PhotoRetouching" android:permission="com.sec.android.mimage.photoretouching" android:resizeableActivity="true" android:screenOrientation="user" android:supportsPictureInPicture="true" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|density|fontScale|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.sec.android.mimage.photoretouching.lpe.effectmanager.EffectManagerActivity" android:permission="com.sec.android.mimage.photoretouching" android:theme="@style/EffectManagerTheme">
+            <intent-filter>
+                <action android:name="com.sec.android.mimage.photoretouching.lpe.effectmanager.EffectManagerActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|density|fontScale|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:label="@string/collage" android:name="com.sec.android.mimage.photoretouching.multigrid.MultiGridActivity" android:permission="com.sec.android.mimage.photoretouching" android:screenOrientation="user" android:theme="@style/MultigridTheme">
+            <intent-filter>
+                <action android:name="com.sec.android.mimage.photoretouching.multigrid"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|density|fontScale|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:label="@string/animate" android:launchMode="singleTop" android:name="com.sec.android.mimage.photoretouching.agif.MotionPhotoActivity" android:permission="com.sec.android.mimage.photoretouching" android:screenOrientation="user" android:theme="@style/MotionPhotoTheme">
+            <intent-filter>
+                <action android:name="com.sec.android.mimage.photoretouching.motionphoto"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="seccamera" android:required="false"/>
+        <uses-library android:name="secmediarecorder" android:required="false"/>
+        <uses-library android:name="semcamera" android:required="false"/>
+        <service android:enabled="false" android:exported="true" android:name="com.samsung.android.sdk.bixby.BixbyAppService" android:permission="com.samsung.android.bixby.agent.permission.APP_SERVICE">
+            <intent-filter>
+                <action android:name="com.samsung.android.sdk.bixby.APP_SERVICE"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="SPDE.build.signature" android:value="3857998/12632151/dream-full_sec-release/PhotoEditor-200120-2.1.27"/>
+        <meta-data android:name="SPDE.env.version" android:value="2.1.3/L24.3.7/24.3.3"/>
+    </application>
+</manifest>

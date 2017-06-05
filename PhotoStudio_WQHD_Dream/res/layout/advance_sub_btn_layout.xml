@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/sub_btn_tone" android:layout_width="wrap_content" android:layout_alignParentBottom="true" style="@style/sub_btn_layout_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/sub_btn_advance_buttons" android:layout_width="@dimen/main_layout_btn_width_five_button" android:layout_height="@dimen/common_bottom_button_height" android:layout_alignParentBottom="true">
+        <LinearLayout style="@style/main_bottom_button_weight_style">
+            <LinearLayout android:id="@id/sub_btn_advance_tone_curve" android:onClick="onStateClicked" style="@style/sub_bottom_button_style">
+                <LinearLayout android:id="@id/sub_btn_advance_tone_curve_background" style="@style/main_bottom_button_background_style">
+                    <ImageView android:src="@drawable/advance_ic_curve" style="@style/main_bottom_button_imageview_style" />
+                    <TextView android:id="@id/sub_btn_textview" android:text="@string/tone_curve" style="@style/selection_sub_button_text_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/main_bottom_button_weight_style">
+            <LinearLayout android:id="@id/sub_btn_advance_color_tuning" android:onClick="onStateClicked" style="@style/sub_bottom_button_style">
+                <LinearLayout android:id="@id/sub_btn_advance_color_tuning_background" style="@style/main_bottom_button_background_style">
+                    <ImageView android:src="@drawable/advance_ic_color" style="@style/main_bottom_button_imageview_style" />
+                    <TextView android:id="@id/sub_btn_textview" android:text="@string/color_tuning" style="@style/selection_sub_button_text_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/main_bottom_button_weight_style">
+            <LinearLayout android:id="@id/sub_btn_advance_blc" android:onClick="onStateClicked" style="@style/sub_bottom_button_style">
+                <LinearLayout android:id="@id/sub_btn_advance_blc_background" style="@style/main_bottom_button_background_style">
+                    <ImageView android:src="@drawable/advance_ic_blc" style="@style/main_bottom_button_imageview_style" />
+                    <TextView android:id="@id/sub_btn_textview" android:text="@string/backlight" style="@style/selection_sub_button_text_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

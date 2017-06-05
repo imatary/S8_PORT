@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="0.0dip">
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/curve_range_seekbar_progress_height" android:width="@dimen/curve_range_seekbar_total_width" />
+            <solid android:color="#4d000000" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="1.0px" android:right="0.0dip" android:bottom="0.0dip">
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/curve_range_seekbar_progress_height" android:width="@dimen/curve_range_seekbar_total_width" />
+            <solid android:color="@color/curve_parametric_color_with_dark_image" />
+        </shape>
+    </item>
+</layer-list>

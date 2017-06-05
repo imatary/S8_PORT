@@ -1,0 +1,288 @@
+
+[ AClassifierParams ]
+
+classesNumber = 2
+probClass0 = 0.4
+probClass1 = 0.6
+version = 1.0
+
+[ AlgorithmParams ]
+
+CropBlurPerRegionCluster = 4
+CropBlurPerRegionNumber = 20
+
+[ EnabledFactors ]
+
+BlurExtent = 1
+BlurPer = 1
+BrightnessMean = 1
+Contrast = 1
+CropBlurPer = 1
+FPdistribution = 1
+GradientEnergy = 1
+Incline = 1
+MotionBlur = 1
+NFeatures = 1
+OverExposure = 1
+UnderExposure = 1
+
+[ F_BlurExtent0/class0 ]
+
+aType = BackExponential
+lambda = 3.17912
+
+[ F_BlurExtent0/class1 ]
+
+aType = Exponential
+lambda = 6.62704
+
+[ F_BlurExtent1/class0 ]
+
+aType = Gaussian
+mean = 0.600371
+variance = 0.0639592
+
+[ F_BlurExtent1/class1 ]
+
+aType = Exponential
+lambda = 11.0166
+
+[ F_BlurExtent2/class0 ]
+
+aType = Exponential
+lambda = 2.5335
+
+[ F_BlurExtent2/class1 ]
+
+aType = Exponential
+lambda = 20.0526
+
+[ F_BlurPer0/class0 ]
+
+aType = Exponential
+lambda = 9.63049
+
+[ F_BlurPer0/class1 ]
+
+aType = Gaussian
+mean = 0.624048
+variance = 0.0291071
+
+[ F_BlurPer1/class0 ]
+
+aType = Exponential
+lambda = 9.70156
+
+[ F_BlurPer1/class1 ]
+
+aType = Gaussian
+mean = 0.555503
+variance = 0.0193495
+
+[ F_BlurPer2/class0 ]
+
+aType = Exponential
+lambda = 7.2485
+
+[ F_BlurPer2/class1 ]
+
+aType = Gaussian
+mean = 0.53294
+variance = 0.0229103
+
+[ F_BrightnessMean0/class0 ]
+
+aType = Gaussian
+mean = 0.460354
+variance = 0.0292485
+
+[ F_BrightnessMean0/class1 ]
+
+aType = Gaussian
+mean = 0.44333
+variance = 0.0164301
+
+[ F_Contrast0/class0 ]
+
+aType = BackExponential
+lambda = 5.32454
+
+[ F_Contrast0/class1 ]
+
+aType = BackExponential
+lambda = 10.304
+
+[ F_CropBlurPer0/class0 ]
+
+aType = Exponential
+lambda = 8.68385
+
+[ F_CropBlurPer0/class1 ]
+
+aType = Gaussian
+mean = 0.662332
+variance = 0.027222
+
+[ F_FPdistribution0/class0 ]
+
+aType = Exponential
+lambda = 6.29516
+
+[ F_FPdistribution0/class1 ]
+
+aType = BackExponential
+lambda = 4.72246
+
+[ F_FPdistribution1/class0 ]
+
+aType = Exponential
+lambda = 5.53988
+
+[ F_FPdistribution1/class1 ]
+
+aType = BackExponential
+lambda = 5.24173
+
+[ F_FPdistribution2/class0 ]
+
+aType = Exponential
+lambda = 4.42295
+
+[ F_FPdistribution2/class1 ]
+
+aType = BackExponential
+lambda = 4.8689
+
+[ F_GradientEnergy0/class0 ]
+
+aType = Gaussian
+mean = 0.443271
+variance = 0.00660707
+
+[ F_GradientEnergy0/class1 ]
+
+aType = Gaussian
+mean = 0.673942
+variance = 0.0013903
+
+[ F_GradientEnergy1/class0 ]
+
+aType = Gaussian
+mean = 0.49528
+variance = 0.00807387
+
+[ F_GradientEnergy1/class1 ]
+
+aType = Gaussian
+mean = 0.671655
+variance = 0.00148086
+
+[ F_GradientEnergy2/class0 ]
+
+aType = Gaussian
+mean = 0.549825
+variance = 0.00859051
+
+[ F_GradientEnergy2/class1 ]
+
+aType = Gaussian
+mean = 0.673102
+variance = 0.00223077
+
+[ F_Incline0/class0 ]
+
+aType = Exponential
+lambda = 1
+
+[ F_Incline0/class1 ]
+
+aType = Exponential
+lambda = 1
+
+[ F_MotionBlur0/class0 ]
+
+aType = BackExponential
+lambda = 3.50145
+
+[ F_MotionBlur0/class1 ]
+
+aType = Gaussian
+mean = 0.311387
+variance = 0.0341537
+
+[ F_MotionBlur1/class0 ]
+
+aType = BackExponential
+lambda = 3.48679
+
+[ F_MotionBlur1/class1 ]
+
+aType = Gaussian
+mean = 0.353646
+variance = 0.0362369
+
+[ F_MotionBlur2/class0 ]
+
+aType = BackExponential
+lambda = 3.04173
+
+[ F_MotionBlur2/class1 ]
+
+aType = Gaussian
+mean = 0.393091
+variance = 0.044706
+
+[ F_NFeatures0/class0 ]
+
+aType = Exponential
+lambda = 7.27827
+
+[ F_NFeatures0/class1 ]
+
+aType = Gaussian
+mean = 0.596961
+variance = 0.0135621
+
+[ F_NFeatures1/class0 ]
+
+aType = Gaussian
+mean = 0.154657
+variance = 0.00978371
+
+[ F_NFeatures1/class1 ]
+
+aType = Gaussian
+mean = 0.437957
+variance = 0.00518223
+
+[ F_NFeatures2/class0 ]
+
+aType = Gaussian
+mean = 0.177594
+variance = 0.00597586
+
+[ F_NFeatures2/class1 ]
+
+aType = Gaussian
+mean = 0.323786
+variance = 0.00249044
+
+[ F_OverExposure0/class0 ]
+
+aType = Exponential
+lambda = 30.8457
+
+[ F_OverExposure0/class1 ]
+
+aType = Exponential
+lambda = 44.2457
+
+[ F_UnderExposure0/class0 ]
+
+aType = Exponential
+lambda = 44.8927
+
+[ F_UnderExposure0/class1 ]
+
+aType = Exponential
+lambda = 51.8207

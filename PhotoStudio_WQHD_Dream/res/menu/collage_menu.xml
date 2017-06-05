@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/photoeditor_add_image" android:visible="true" android:title="@string/add" android:showAsAction="withText" />
+    <item android:id="@id/photoeditor_menu_shuffle" android:visible="true" android:title="@string/shuffle" android:showAsAction="withText" />
+    <item android:id="@id/photoeditor_menu_save" android:visible="false" android:title="@string/save" android:showAsAction="withText" />
+    <item android:id="@id/photoeditor_menu_share" android:visible="false" android:title="@string/share_via" android:showAsAction="withText" />
+</menu>

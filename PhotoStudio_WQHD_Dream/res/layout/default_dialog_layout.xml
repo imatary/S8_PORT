@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/popup_title_size" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginLeft="26.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="13.0dip" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="0.2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dialog_body" android:layout_width="350.0dip" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+</LinearLayout>

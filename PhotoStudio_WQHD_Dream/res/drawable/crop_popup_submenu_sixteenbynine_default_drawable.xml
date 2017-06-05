@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/crop_popup_ic_04_default_focus_drawable" />
+    <item android:drawable="@drawable/crop_popup_ic_04" />
+</selector>

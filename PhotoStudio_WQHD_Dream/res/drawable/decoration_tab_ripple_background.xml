@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/deco_tab_ripple"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item>
+            <item android:drawable="@drawable/semitransparent_white" />
+        </item>
+    </selector>
+</ripple>

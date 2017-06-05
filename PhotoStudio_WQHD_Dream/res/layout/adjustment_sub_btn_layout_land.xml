@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/hsv_adj_main_menu" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/sub_actionbar_height" android:layout_alignParentBottom="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="horizontal" android:id="@id/adjustment_button_land" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="end|center" android:orientation="vertical" android:id="@id/adjustment_crop_layout" android:visibility="gone" android:layout_width="@dimen/adjustment_land_crop_layout_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/adjustment_sub_layout_margin_bottom">
+                <ScrollView android:id="@id/hsv_adj_vertical" android:scrollbars="none" android:layout_width="@dimen/adjustment_crop_sub_bottom_button_width_land" android:layout_height="fill_parent"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/sub_btn_adjustment_crop" android:background="@drawable/rounded_corner_submenu" android:layout_width="@dimen/adjustment_crop_sub_bottom_button_width_land" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_gravity="center" android:id="@id/sub_btn_adjustment_9_16" android:background="@android:color/transparent" android:focusable="true" android:visibility="visible" android:nextFocusLeft="@id/sub_btn_adjustment_9_16" android:nextFocusRight="@id/sub_btn_adjustment_9_16" android:nextFocusUp="@id/sub_btn_adjustment_lasso" android:nextFocusDown="@id/sub_btn_adjustment_16_9" android:clickable="true" android:layout_width="@dimen/adjustment_land_crop_button_width" android:layout_height="@dimen/adjustment_land_crop_button_height" android:layout_marginTop="@dimen/adjustment_sub_button_margin_left" android:onClick="onStateClicked" android:contentDescription="@string/aspectratio" android:importantForAccessibility="no">
+                            <ImageView android:layout_gravity="center" android:background="@drawable/subbtn_ripple_background" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:importantForAccessibility="no" />
+                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/icon_sub_btn_adjustment_9_16" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:src="@drawable/crop_ninebysixteen" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="center" android:id="@id/sub_btn_adjustment_16_9" android:background="@android:color/transparent" android:focusable="true" android:nextFocusLeft="@id/sub_btn_adjustment_16_9" android:nextFocusRight="@id/sub_btn_adjustment_16_9" android:nextFocusUp="@id/sub_btn_adjustment_9_16" android:nextFocusDown="@id/sub_btn_adjustment_3_4" android:clickable="true" android:layout_width="@dimen/adjustment_land_crop_button_width" android:layout_height="@dimen/adjustment_land_crop_button_height" android:onClick="onStateClicked" android:contentDescription="@string/aspectratio" android:importantForAccessibility="no">
+                            <ImageView android:layout_gravity="center" android:background="@drawable/subbtn_ripple_background" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:importantForAccessibility="no" />
+                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/icon_sub_btn_adjustment_16_9" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:src="@drawable/crop_sixteenbynine" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="center" android:id="@id/sub_btn_adjustment_3_4" android:background="@android:color/transparent" android:focusable="true" android:visibility="visible" android:nextFocusLeft="@id/sub_btn_adjustment_3_4" android:nextFocusRight="@id/sub_btn_adjustment_3_4" android:nextFocusUp="@id/sub_btn_adjustment_16_9" android:nextFocusDown="@id/sub_btn_adjustment_4_3" android:clickable="true" android:layout_width="@dimen/adjustment_land_crop_button_width" android:layout_height="@dimen/adjustment_land_crop_button_height" android:onClick="onStateClicked" android:contentDescription="@string/aspectratio" android:importantForAccessibility="no">
+                            <ImageView android:layout_gravity="center" android:background="@drawable/subbtn_ripple_background" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:importantForAccessibility="no" />
+                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/icon_sub_btn_adjustment_3_4" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:src="@drawable/crop_threebyfour" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="center" android:id="@id/sub_btn_adjustment_4_3" android:background="@android:color/transparent" android:focusable="true" android:nextFocusLeft="@id/sub_btn_adjustment_4_3" android:nextFocusRight="@id/sub_btn_adjustment_4_3" android:nextFocusUp="@id/sub_btn_adjustment_3_4" android:nextFocusDown="@id/sub_btn_adjustment_1_1" android:clickable="true" android:layout_width="@dimen/adjustment_land_crop_button_width" android:layout_height="@dimen/adjustment_land_crop_button_height" android:onClick="onStateClicked" android:contentDescription="@string/aspectratio" android:importantForAccessibility="no">
+                            <ImageView android:layout_gravity="center" android:background="@drawable/subbtn_ripple_background" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:importantForAccessibility="no" />
+                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/icon_sub_btn_adjustment_4_3" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:src="@drawable/crop_fourbythree" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="center" android:id="@id/sub_btn_adjustment_1_1" android:background="@android:color/transparent" android:focusable="true" android:nextFocusLeft="@id/sub_btn_adjustment_1_1" android:nextFocusRight="@id/sub_btn_adjustment_1_1" android:nextFocusUp="@id/sub_btn_adjustment_4_3" android:nextFocusDown="@id/sub_btn_adjustment_imgratio" android:clickable="true" android:layout_width="@dimen/adjustment_land_crop_button_width" android:layout_height="@dimen/adjustment_land_crop_button_height" android:onClick="onStateClicked" android:contentDescription="@string/aspectratio" android:importantForAccessibility="no">
+                            <ImageView android:layout_gravity="center" android:background="@drawable/subbtn_ripple_background" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:importantForAccessibility="no" />
+                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/icon_sub_btn_adjustment_1_1" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:src="@drawable/crop_popup_submenu_onebyone_drawable" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="center" android:id="@id/sub_btn_adjustment_imgratio" android:background="@android:color/transparent" android:focusable="true" android:nextFocusLeft="@id/sub_btn_adjustment_imgratio" android:nextFocusRight="@id/sub_btn_adjustment_imgratio" android:nextFocusUp="@id/sub_btn_adjustment_1_1" android:nextFocusDown="@id/sub_btn_adjustment_free" android:clickable="true" android:layout_width="@dimen/adjustment_land_crop_button_width" android:layout_height="@dimen/adjustment_land_crop_button_height" android:onClick="onStateClicked" android:importantForAccessibility="no">
+                            <ImageView android:layout_gravity="center" android:background="@drawable/subbtn_ripple_background" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:importantForAccessibility="no" />
+                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/icon_sub_btn_adjustment_imgratio" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:src="@drawable/crop_popup_submenu_imageratio_drawable" android:contentDescription="@string/crop_ratio" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="center" android:id="@id/sub_btn_adjustment_free" android:background="@android:color/transparent" android:focusable="true" android:nextFocusLeft="@id/sub_btn_adjustment_free" android:nextFocusRight="@id/sub_btn_adjustment_free" android:nextFocusUp="@id/sub_btn_adjustment_imgratio" android:nextFocusDown="@id/sub_btn_adjustment_free" android:clickable="true" android:layout_width="@dimen/adjustment_land_crop_button_width" android:layout_height="@dimen/adjustment_land_crop_button_height" android:layout_marginBottom="@dimen/adjustment_sub_button_margin_left" android:onClick="onStateClicked" android:importantForAccessibility="no">
+                            <ImageView android:layout_gravity="center" android:background="@drawable/subbtn_ripple_background" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:importantForAccessibility="no" />
+                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/icon_sub_btn_adjustment_free" android:duplicateParentState="true" android:layout_width="@dimen/adjustment_land_crop_button_icon_width" android:layout_height="@dimen/adjustment_land_crop_button_icon_height" android:src="@drawable/crop_popup_submenu_free_drawable" android:contentDescription="@string/crop" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </ScrollView>
+                <LinearLayout android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/sub_button_arrow_layout_crop" android:background="@drawable/popup_picker_l" android:layout_width="@dimen/adjustment_land_crop_button_arrow_width" android:layout_height="@dimen/adjustment_land_crop_button_arrow_height" android:layout_marginEnd="@dimen/adjustment_sub_menu_stroke_width" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_button" android:layout_width="wrap_content" android:layout_height="@dimen/adjustment_land_layout_scrollview_height" android:layout_marginEnd="@dimen/adjustment_land_bottom_buttons_margin_end">
+                <LinearLayout android:layout_height="0.0dip" style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/sub_btn_adjustment_reset_btn" android:onClick="onStateClicked" style="@style/main_bottom_button_state_land_style">
+                        <LinearLayout android:id="@id/sub_btn_adjustment_reset_background" style="@style/main_bottom_button_background_land_style">
+                            <ImageView android:id="@id/reset_image" android:src="@drawable/ic_reset" android:contentDescription="@string/reset" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/adj_sub_btn_textview" android:text="@string/reset" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_height="0.0dip" style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/sub_btn_adjustment_lasso" android:onClick="onStateClicked" style="@style/main_bottom_button_state_land_style">
+                        <LinearLayout android:id="@id/sub_btn_adjustment_lasso_background" style="@style/main_bottom_button_background_land_style">
+                            <ImageView android:src="@drawable/ic_lasso" android:contentDescription="@string/ratio" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/adj_sub_btn_textview" android:text="@string/lasso" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_height="0.0dip" style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/sub_btn_adjustment_perspective" android:onClick="onStateClicked" style="@style/main_bottom_button_state_land_style">
+                        <LinearLayout android:id="@id/sub_btn_adjustment_perspective_background" style="@style/main_bottom_button_background_land_style">
+                            <ImageView android:src="@drawable/ic_perspective" android:contentDescription="@string/ratio" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/adj_sub_btn_textview" android:text="@string/perspective" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_height="0.0dip" style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/sub_btn_adjustment_cropbtn" android:onClick="onStateClicked" style="@style/main_bottom_button_state_land_style">
+                        <LinearLayout android:id="@id/sub_btn_adjustment_cropbtn_background" style="@style/main_bottom_button_background_land_style">
+                            <ImageView android:src="@drawable/ic_crop_ratio" android:contentDescription="@string/ratio" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/adj_sub_btn_textview" android:text="@string/ratio" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_height="0.0dip" style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/sub_btn_adjustment_flipver" android:onClick="onStateClicked" style="@style/main_bottom_button_state_land_style">
+                        <LinearLayout android:id="@id/sub_btn_adjustment_flipver_background" style="@style/main_bottom_button_background_land_style">
+                            <ImageView android:duplicateParentState="true" android:src="@drawable/ic_flip_vert" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/adj_sub_btn_textview" android:text="@string/flip_vertically" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_height="0.0dip" style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/sub_btn_adjustment_fliphor" android:onClick="onStateClicked" style="@style/main_bottom_button_state_land_style">
+                        <LinearLayout android:id="@id/sub_btn_adjustment_fliphor_background" style="@style/main_bottom_button_background_land_style">
+                            <ImageView android:src="@drawable/ic_flip_hor" android:contentDescription="@string/flip_horizontal" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/adj_sub_btn_textview" android:text="@string/flip_horizontally" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_height="0.0dip" style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/sub_btn_adjustment_rotate" android:onClick="onStateClicked" style="@style/main_bottom_button_state_land_style">
+                        <LinearLayout android:id="@id/sub_btn_adjustment_rotate_background" style="@style/main_bottom_button_background_land_style">
+                            <ImageView android:src="@drawable/ic_rotate" android:contentDescription="@string/rotate" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/adj_sub_btn_textview" android:text="@string/rotate" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
