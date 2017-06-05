@@ -3789,7 +3789,7 @@
 .method public static useLayoutSoftNavigation()Z
     .locals 3
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     sget-object v1, Lcom/android/gallery3d/util/Utils;->mProductName:Ljava/lang/String;
 
