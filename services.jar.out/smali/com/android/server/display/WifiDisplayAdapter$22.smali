@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/display/WifiDisplayAdapter;->requestConnectWithPinLocked(Ljava/lang/String;)V
+    value = Lcom/android/server/display/WifiDisplayAdapter;->requestEnableLocked(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,28 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
-.field final synthetic val$address:Ljava/lang/String;
+.field final synthetic val$deviceType:I
+
+.field final synthetic val$ipAddr:Ljava/lang/String;
+
+.field final synthetic val$options:Ljava/lang/String;
+
+.field final synthetic val$port:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/display/WifiDisplayAdapter;Ljava/lang/String;)V
+.method constructor <init>(Lcom/android/server/display/WifiDisplayAdapter;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
-    iput-object p2, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->val$address:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->val$ipAddr:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->val$port:Ljava/lang/String;
+
+    iput p4, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->val$deviceType:I
+
+    iput-object p5, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->val$options:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,11 +51,11 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 5
 
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
-    invoke-static {v0}, Lcom/android/server/display/WifiDisplayAdapter;->-get9(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/WifiDisplayController;
+    invoke-static {v0}, Lcom/android/server/display/WifiDisplayAdapter;->-get12(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/IpRemoteDisplayController;
 
     move-result-object v0
 
@@ -51,13 +63,19 @@
 
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
-    invoke-static {v0}, Lcom/android/server/display/WifiDisplayAdapter;->-get9(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/WifiDisplayController;
+    invoke-static {v0}, Lcom/android/server/display/WifiDisplayAdapter;->-get12(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/IpRemoteDisplayController;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->val$address:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->val$ipAddr:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/android/server/display/WifiDisplayController;->requestConnectWithPin(Ljava/lang/String;)V
+    iget-object v2, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->val$port:Ljava/lang/String;
+
+    iget v3, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->val$deviceType:I
+
+    iget-object v4, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->val$options:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/server/display/IpRemoteDisplayController;->requestEnableWifiDisplay(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
     :cond_0
     return-void

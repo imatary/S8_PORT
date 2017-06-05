@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/display/WifiDisplayAdapter;->sendStartFABBroadcast()V
+    value = Lcom/android/server/display/WifiDisplayAdapter;->sendStopFABBroadcast()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -37,38 +37,9 @@
 .method public run()V
     .locals 4
 
-    iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$17;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
-
-    const-string/jumbo v2, "com.sec.android.app.wfdbroker.wfdfloatingicon.WfdFloatingIconService"
-
-    invoke-virtual {v1, v2}, Lcom/android/server/display/WifiDisplayAdapter;->isServiceRunning(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const-string/jumbo v1, "WifiDisplayAdapter"
-
-    const-string/jumbo v2, "WfdFloatingIconService is running. do not start WfdFloatingIconService"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_0
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
-
-    const-string/jumbo v1, "GCast"
-
-    iget-object v2, p0, Lcom/android/server/display/WifiDisplayAdapter$17;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
-
-    invoke-static {v2}, Lcom/android/server/display/WifiDisplayAdapter;->-wrap2(Lcom/android/server/display/WifiDisplayAdapter;)Z
-
-    move-result v2
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     new-instance v1, Landroid/content/ComponentName;
 
@@ -86,7 +57,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {v1, v0}, Landroid/content/Context;->stopService(Landroid/content/Intent;)Z
 
     return-void
 .end method

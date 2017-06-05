@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/display/WifiDisplayAdapter;->sendEventToSemDeviceStatusListener(II)V
+    value = Lcom/android/server/display/WifiDisplayAdapter;->turnOffPeriodicWifiScan(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,20 +20,16 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
-.field final synthetic val$event:I
-
-.field final synthetic val$param:I
+.field final synthetic val$off:Z
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/display/WifiDisplayAdapter;II)V
+.method constructor <init>(Lcom/android/server/display/WifiDisplayAdapter;Z)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
-    iput p2, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->val$param:I
-
-    iput p3, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->val$event:I
+    iput-boolean p2, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->val$off:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,79 +39,52 @@
 
 # virtual methods
 .method public run()V
-    .locals 6
+    .locals 5
+
+    iget-object v3, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
+
+    invoke-virtual {v3}, Lcom/android/server/display/WifiDisplayAdapter;->getContext()Landroid/content/Context;
+
+    move-result-object v3
+
+    const-string/jumbo v4, "wifi"
+
+    invoke-virtual {v3, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/net/wifi/WifiManager;
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {v2}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    new-instance v1, Landroid/os/Message;
+
+    invoke-direct {v1}, Landroid/os/Message;-><init>()V
+
+    const/16 v3, 0x12
+
+    iput v3, v1, Landroid/os/Message;->what:I
 
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    const-string/jumbo v2, "status"
+    const-string/jumbo v3, "stop"
 
-    iget v3, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->val$param:I
+    iget-boolean v4, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->val$off:Z
 
-    invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v3, v4}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    iget-object v2, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
+    iput-object v0, v1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    invoke-virtual {v2}, Lcom/android/server/display/WifiDisplayAdapter;->getHandler()Landroid/os/Handler;
+    invoke-virtual {v2, v1}, Landroid/net/wifi/WifiManager;->callSECApi(Landroid/os/Message;)I
 
-    move-result-object v2
-
-    iget v3, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->val$event:I
-
-    const/16 v4, 0x14
-
-    const/4 v5, 0x0
-
-    invoke-virtual {v2, v4, v3, v5}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
-
-    const-string/jumbo v2, "WifiDisplayAdapter"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "sendEventToSemDeviceStatusListener param : "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    iget v4, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->val$param:I
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string/jumbo v4, ", event : "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    iget v4, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->val$event:I
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v2, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
-
-    invoke-virtual {v2}, Lcom/android/server/display/WifiDisplayAdapter;->getHandler()Landroid/os/Handler;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
+    :cond_0
     return-void
 .end method

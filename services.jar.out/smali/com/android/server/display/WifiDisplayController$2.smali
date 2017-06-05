@@ -41,7 +41,7 @@
 
     const v1, 0x22078
 
-    invoke-static {v0, v1}, Lcom/android/server/display/WifiDisplayController;->-wrap19(Lcom/android/server/display/WifiDisplayController;I)V
+    invoke-static {v0, v1}, Lcom/android/server/display/WifiDisplayController;->-wrap18(Lcom/android/server/display/WifiDisplayController;I)V
 
     return-void
 .end method

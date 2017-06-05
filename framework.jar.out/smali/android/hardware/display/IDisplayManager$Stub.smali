@@ -52,9 +52,9 @@
 
 .field static final TRANSACTION_forgetWifiDisplay:I = 0x9
 
-.field static final TRANSACTION_getActiveDLNADevice:I = 0x39
+.field static final TRANSACTION_getActiveDLNADevice:I = 0x37
 
-.field static final TRANSACTION_getActiveDLNAState:I = 0x3a
+.field static final TRANSACTION_getActiveDLNAState:I = 0x38
 
 .field static final TRANSACTION_getDeviceStatus:I = 0x2f
 
@@ -70,11 +70,9 @@
 
 .field static final TRANSACTION_getLastConnectedGCastDevice:I = 0x32
 
-.field static final TRANSACTION_getMainDisplayOverride:I = 0x3d
+.field static final TRANSACTION_getPresentationOwner:I = 0x3a
 
-.field static final TRANSACTION_getPresentationOwner:I = 0x3c
-
-.field static final TRANSACTION_getScreenSharingStatus:I = 0x36
+.field static final TRANSACTION_getScreenSharingStatus:I = 0x34
 
 .field static final TRANSACTION_getWifiDisplayConfiguration:I = 0x2c
 
@@ -83,8 +81,6 @@
 .field static final TRANSACTION_isConnWithPinSupported:I = 0x27
 
 .field static final TRANSACTION_isDongleRenameAvailable:I = 0x28
-
-.field static final TRANSACTION_isFitToMobileScreen:I = 0x34
 
 .field static final TRANSACTION_isKDDIServiceConnected:I = 0x24
 
@@ -120,11 +116,11 @@
 
 .field static final TRANSACTION_scanWifiDisplays:I = 0x17
 
-.field static final TRANSACTION_setActiveDlnaState:I = 0x3b
+.field static final TRANSACTION_setActiveDlnaState:I = 0x39
 
 .field static final TRANSACTION_setCurrentDisplayIdMagnifier:I = 0x16
 
-.field static final TRANSACTION_setExtendMode:I = 0x38
+.field static final TRANSACTION_setExtendMode:I = 0x36
 
 .field static final TRANSACTION_setMagnificationSettings:I = 0x15
 
@@ -132,9 +128,7 @@
 
 .field static final TRANSACTION_setScanningChannel:I = 0x2a
 
-.field static final TRANSACTION_setScreenRatioValue:I = 0x35
-
-.field static final TRANSACTION_setScreenSharingStatus:I = 0x37
+.field static final TRANSACTION_setScreenSharingStatus:I = 0x35
 
 .field static final TRANSACTION_setVirtualDisplayFixedOrientation:I = 0x10
 
@@ -205,7 +199,7 @@
 .end method
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 47
+    .locals 44
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -248,11 +242,11 @@
 
     invoke-virtual {v0, v1}, Landroid/hardware/display/IDisplayManager$Stub;->getDisplayInfo(I)Landroid/view/DisplayInfo;
 
-    move-result-object v43
+    move-result-object v40
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v43, :cond_0
+    if-eqz v40, :cond_0
 
     const/4 v4, 0x1
 
@@ -262,7 +256,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v43
+    move-object/from16 v0, v40
 
     move-object/from16 v1, p3
 
@@ -291,13 +285,13 @@
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->getDisplayIds()[I
 
-    move-result-object v46
+    move-result-object v43
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
     move-object/from16 v0, p3
 
-    move-object/from16 v1, v46
+    move-object/from16 v1, v43
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeIntArray([I)V
 
@@ -485,11 +479,11 @@
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->getWifiDisplayStatus()Landroid/hardware/display/WifiDisplayStatus;
 
-    move-result-object v40
+    move-result-object v38
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v40, :cond_1
+    if-eqz v38, :cond_1
 
     const/4 v4, 0x1
 
@@ -499,7 +493,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v38
 
     move-object/from16 v1, p3
 
@@ -532,13 +526,13 @@
 
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
-    move-result v30
+    move-result v28
 
     move-object/from16 v0, p0
 
     move/from16 v1, v22
 
-    move/from16 v2, v30
+    move/from16 v2, v28
 
     invoke-virtual {v0, v1, v2}, Landroid/hardware/display/IDisplayManager$Stub;->requestColorTransform(II)V
 
@@ -616,13 +610,13 @@
 
     invoke-virtual/range {v4 .. v13}, Landroid/hardware/display/IDisplayManager$Stub;->createVirtualDisplay(Landroid/hardware/display/IVirtualDisplayCallback;Landroid/media/projection/IMediaProjection;Ljava/lang/String;Ljava/lang/String;IIILandroid/view/Surface;I)I
 
-    move-result v37
+    move-result v35
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
     move-object/from16 v0, p3
 
-    move/from16 v1, v37
+    move/from16 v1, v35
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -652,7 +646,7 @@
 
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
-    move-result v30
+    move-result v28
 
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
@@ -660,15 +654,15 @@
 
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
-    move-result v36
+    move-result v34
 
     move-object/from16 v0, p0
 
-    move/from16 v1, v30
+    move/from16 v1, v28
 
     move/from16 v2, v17
 
-    move/from16 v3, v36
+    move/from16 v3, v34
 
     invoke-virtual {v0, v5, v1, v2, v3}, Landroid/hardware/display/IDisplayManager$Stub;->resizeVirtualDisplay(Landroid/hardware/display/IVirtualDisplayCallback;III)V
 
@@ -695,11 +689,11 @@
 
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
-    move-result v30
+    move-result v28
 
     move-object/from16 v0, p0
 
-    move/from16 v1, v30
+    move/from16 v1, v28
 
     invoke-virtual {v0, v5, v1}, Landroid/hardware/display/IDisplayManager$Stub;->setVirtualDisplayFixedOrientation(Landroid/hardware/display/IVirtualDisplayCallback;I)V
 
@@ -736,14 +730,14 @@
 
     invoke-interface {v4, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
-    move-result-object v32
+    move-result-object v30
 
-    check-cast v32, Landroid/view/Surface;
+    check-cast v30, Landroid/view/Surface;
 
     :goto_3
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v32
+    move-object/from16 v1, v30
 
     invoke-virtual {v0, v5, v1}, Landroid/hardware/display/IDisplayManager$Stub;->setVirtualDisplaySurface(Landroid/hardware/display/IVirtualDisplayCallback;Landroid/view/Surface;)V
 
@@ -754,7 +748,7 @@
     return v4
 
     :cond_3
-    const/16 v32, 0x0
+    const/16 v30, 0x0
 
     goto :goto_3
 
@@ -870,19 +864,19 @@
 
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
-    move-result v30
+    move-result v28
 
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readFloat()F
 
-    move-result v33
+    move-result v31
 
     move-object/from16 v0, p0
 
     move/from16 v1, v22
 
-    move/from16 v2, v30
+    move/from16 v2, v28
 
-    move/from16 v3, v33
+    move/from16 v3, v31
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/hardware/display/IDisplayManager$Stub;->setMagnificationSettings(IIF)V
 
@@ -958,7 +952,7 @@
 
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
-    move-result v30
+    move-result v28
 
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
@@ -972,9 +966,9 @@
 
     invoke-interface {v4, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
-    move-result-object v34
+    move-result-object v32
 
-    check-cast v34, Landroid/os/Bundle;
+    check-cast v32, Landroid/os/Bundle;
 
     :goto_6
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -985,9 +979,9 @@
 
     move/from16 v1, v22
 
-    move/from16 v2, v30
+    move/from16 v2, v28
 
-    move-object/from16 v3, v34
+    move-object/from16 v3, v32
 
     invoke-virtual {v0, v1, v2, v3, v8}, Landroid/hardware/display/IDisplayManager$Stub;->connectDevice(IILandroid/os/Bundle;Ljava/lang/String;)V
 
@@ -998,7 +992,7 @@
     return v4
 
     :cond_6
-    const/16 v34, 0x0
+    const/16 v32, 0x0
 
     goto :goto_6
 
@@ -1096,7 +1090,7 @@
 
     if-eqz v4, :cond_7
 
-    const/16 v35, 0x1
+    const/16 v33, 0x1
 
     :goto_7
     move-object/from16 v0, p0
@@ -1105,7 +1099,7 @@
 
     move-object/from16 v2, v16
 
-    move/from16 v3, v35
+    move/from16 v3, v33
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/hardware/display/IDisplayManager$Stub;->connectWifiDisplayWithModeEx(ILjava/lang/String;Z)V
 
@@ -1116,7 +1110,7 @@
     return v4
 
     :cond_7
-    const/16 v35, 0x0
+    const/16 v33, 0x0
 
     goto :goto_7
 
@@ -1257,11 +1251,11 @@
 
     invoke-virtual {v0, v1}, Landroid/hardware/display/IDisplayManager$Stub;->getLastConnectedDisplay(Z)Landroid/hardware/display/WifiDisplay;
 
-    move-result-object v39
+    move-result-object v37
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v39, :cond_a
+    if-eqz v37, :cond_a
 
     const/4 v4, 0x1
 
@@ -1271,7 +1265,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v39
+    move-object/from16 v0, v37
 
     move-object/from16 v1, p3
 
@@ -1320,11 +1314,11 @@
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->isWfdEngineRunning()Z
 
-    move-result v45
+    move-result v42
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v45, :cond_b
+    if-eqz v42, :cond_b
 
     const/4 v4, 0x1
 
@@ -1351,11 +1345,11 @@
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->isKDDIServiceConnected()Z
 
-    move-result v45
+    move-result v42
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v45, :cond_c
+    if-eqz v42, :cond_c
 
     const/4 v4, 0x1
 
@@ -1382,11 +1376,11 @@
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->isSinkAvailable()Z
 
-    move-result v45
+    move-result v42
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v45, :cond_d
+    if-eqz v42, :cond_d
 
     const/4 v4, 0x1
 
@@ -1413,11 +1407,11 @@
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->isSourceAvailable()Z
 
-    move-result v45
+    move-result v42
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v45, :cond_e
+    if-eqz v42, :cond_e
 
     const/4 v4, 0x1
 
@@ -1450,11 +1444,11 @@
 
     invoke-virtual {v0, v15}, Landroid/hardware/display/IDisplayManager$Stub;->isConnWithPinSupported(Ljava/lang/String;)Z
 
-    move-result v45
+    move-result v42
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v45, :cond_f
+    if-eqz v42, :cond_f
 
     const/4 v4, 0x1
 
@@ -1481,11 +1475,11 @@
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->isDongleRenameAvailable()Z
 
-    move-result v45
+    move-result v42
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v45, :cond_10
+    if-eqz v42, :cond_10
 
     const/4 v4, 0x1
 
@@ -1577,13 +1571,13 @@
 
     invoke-virtual {v0, v1}, Landroid/hardware/display/IDisplayManager$Stub;->setWifiDisplayConfiguration(Landroid/os/Bundle;)I
 
-    move-result v37
+    move-result v35
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
     move-object/from16 v0, p3
 
-    move/from16 v1, v37
+    move/from16 v1, v35
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -1611,11 +1605,11 @@
 
     invoke-virtual {v0, v15}, Landroid/hardware/display/IDisplayManager$Stub;->getWifiDisplayConfiguration(Ljava/lang/String;)Landroid/os/Bundle;
 
-    move-result-object v41
+    move-result-object v39
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v41, :cond_12
+    if-eqz v39, :cond_12
 
     const/4 v4, 0x1
 
@@ -1625,7 +1619,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v41
+    move-object/from16 v0, v39
 
     move-object/from16 v1, p3
 
@@ -1662,11 +1656,11 @@
 
     invoke-virtual {v0, v1}, Landroid/hardware/display/IDisplayManager$Stub;->getLastConnectedDevice(I)Landroid/os/Bundle;
 
-    move-result-object v41
+    move-result-object v39
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v41, :cond_13
+    if-eqz v39, :cond_13
 
     const/4 v4, 0x1
 
@@ -1676,7 +1670,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v41
+    move-object/from16 v0, v39
 
     move-object/from16 v1, p3
 
@@ -1736,11 +1730,11 @@
 
     invoke-virtual {v0, v1}, Landroid/hardware/display/IDisplayManager$Stub;->getDeviceStatus(I)Landroid/os/Bundle;
 
-    move-result-object v41
+    move-result-object v39
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v41, :cond_14
+    if-eqz v39, :cond_14
 
     const/4 v4, 0x1
 
@@ -1750,7 +1744,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v41
+    move-object/from16 v0, v39
 
     move-object/from16 v1, p3
 
@@ -1779,11 +1773,11 @@
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->getLastConnectedDlnaDevice()Landroid/hardware/display/SemDlnaDevice;
 
-    move-result-object v38
+    move-result-object v36
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v38, :cond_15
+    if-eqz v36, :cond_15
 
     const/4 v4, 0x1
 
@@ -1793,7 +1787,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v36
 
     move-object/from16 v1, p3
 
@@ -1837,13 +1831,13 @@
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->getLastConnectedGCastDevice()Ljava/lang/String;
 
-    move-result-object v44
+    move-result-object v41
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
     move-object/from16 v0, p3
 
-    move-object/from16 v1, v44
+    move-object/from16 v1, v41
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
@@ -1873,79 +1867,15 @@
 
     invoke-virtual {v0, v4}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->isFitToMobileScreen()Z
-
-    move-result v45
-
-    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
-
-    if-eqz v45, :cond_16
-
-    const/4 v4, 0x1
-
-    :goto_16
-    move-object/from16 v0, p3
-
-    invoke-virtual {v0, v4}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/4 v4, 0x1
-
-    return v4
-
-    :cond_16
-    const/4 v4, 0x0
-
-    goto :goto_16
-
-    :sswitch_35
-    const-string/jumbo v4, "android.hardware.display.IDisplayManager"
-
-    move-object/from16 v0, p2
-
-    invoke-virtual {v0, v4}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
-
-    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
-
-    move-result v4
-
-    if-eqz v4, :cond_17
-
-    const/16 v27, 0x1
-
-    :goto_17
-    move-object/from16 v0, p0
-
-    move/from16 v1, v27
-
-    invoke-virtual {v0, v1}, Landroid/hardware/display/IDisplayManager$Stub;->setScreenRatioValue(Z)V
-
-    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
-
-    const/4 v4, 0x1
-
-    return v4
-
-    :cond_17
-    const/16 v27, 0x0
-
-    goto :goto_17
-
-    :sswitch_36
-    const-string/jumbo v4, "android.hardware.display.IDisplayManager"
-
-    move-object/from16 v0, p2
-
-    invoke-virtual {v0, v4}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
-
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->getScreenSharingStatus()I
 
-    move-result v37
+    move-result v35
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
     move-object/from16 v0, p3
 
-    move/from16 v1, v37
+    move/from16 v1, v35
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -1953,7 +1883,7 @@
 
     return v4
 
-    :sswitch_37
+    :sswitch_35
     const-string/jumbo v4, "android.hardware.display.IDisplayManager"
 
     move-object/from16 v0, p2
@@ -1976,7 +1906,7 @@
 
     return v4
 
-    :sswitch_38
+    :sswitch_36
     const-string/jumbo v4, "android.hardware.display.IDisplayManager"
 
     move-object/from16 v0, p2
@@ -1987,11 +1917,11 @@
 
     move-result v4
 
-    if-eqz v4, :cond_18
+    if-eqz v4, :cond_16
 
     const/16 v27, 0x1
 
-    :goto_18
+    :goto_16
     move-object/from16 v0, p0
 
     move/from16 v1, v27
@@ -2004,12 +1934,12 @@
 
     return v4
 
-    :cond_18
+    :cond_16
     const/16 v27, 0x0
 
-    goto :goto_18
+    goto :goto_16
 
-    :sswitch_39
+    :sswitch_37
     const-string/jumbo v4, "android.hardware.display.IDisplayManager"
 
     move-object/from16 v0, p2
@@ -2018,11 +1948,11 @@
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->getActiveDLNADevice()Landroid/hardware/display/SemDlnaDevice;
 
-    move-result-object v38
+    move-result-object v36
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    if-eqz v38, :cond_19
+    if-eqz v36, :cond_17
 
     const/4 v4, 0x1
 
@@ -2032,27 +1962,27 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v36
 
     move-object/from16 v1, p3
 
     invoke-virtual {v0, v1, v4}, Landroid/hardware/display/SemDlnaDevice;->writeToParcel(Landroid/os/Parcel;I)V
 
-    :goto_19
+    :goto_17
     const/4 v4, 0x1
 
     return v4
 
-    :cond_19
+    :cond_17
     const/4 v4, 0x0
 
     move-object/from16 v0, p3
 
     invoke-virtual {v0, v4}, Landroid/os/Parcel;->writeInt(I)V
 
-    goto :goto_19
+    goto :goto_17
 
-    :sswitch_3a
+    :sswitch_38
     const-string/jumbo v4, "android.hardware.display.IDisplayManager"
 
     move-object/from16 v0, p2
@@ -2061,13 +1991,13 @@
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/display/IDisplayManager$Stub;->getActiveDLNAState()I
 
-    move-result v37
+    move-result v35
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
     move-object/from16 v0, p3
 
-    move/from16 v1, v37
+    move/from16 v1, v35
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -2075,7 +2005,7 @@
 
     return v4
 
-    :sswitch_3b
+    :sswitch_39
     const-string/jumbo v4, "android.hardware.display.IDisplayManager"
 
     move-object/from16 v0, p2
@@ -2090,7 +2020,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_1a
+    if-eqz v4, :cond_18
 
     sget-object v4, Landroid/hardware/display/SemDlnaDevice;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -2098,11 +2028,11 @@
 
     invoke-interface {v4, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
-    move-result-object v31
+    move-result-object v29
 
-    check-cast v31, Landroid/hardware/display/SemDlnaDevice;
+    check-cast v29, Landroid/hardware/display/SemDlnaDevice;
 
-    :goto_1a
+    :goto_18
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v17
@@ -2111,7 +2041,7 @@
 
     move-object/from16 v1, v25
 
-    move-object/from16 v2, v31
+    move-object/from16 v2, v29
 
     move/from16 v3, v17
 
@@ -2123,12 +2053,12 @@
 
     return v4
 
-    :cond_1a
-    const/16 v31, 0x0
+    :cond_18
+    const/16 v29, 0x0
 
-    goto :goto_1a
+    goto :goto_18
 
-    :sswitch_3c
+    :sswitch_3a
     const-string/jumbo v4, "android.hardware.display.IDisplayManager"
 
     move-object/from16 v0, p2
@@ -2145,70 +2075,19 @@
 
     invoke-virtual {v0, v1}, Landroid/hardware/display/IDisplayManager$Stub;->getPresentationOwner(I)Ljava/lang/String;
 
-    move-result-object v44
+    move-result-object v41
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
     move-object/from16 v0, p3
 
-    move-object/from16 v1, v44
+    move-object/from16 v1, v41
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     const/4 v4, 0x1
 
     return v4
-
-    :sswitch_3d
-    const-string/jumbo v4, "android.hardware.display.IDisplayManager"
-
-    move-object/from16 v0, p2
-
-    invoke-virtual {v0, v4}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
-
-    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
-
-    move-result v29
-
-    if-gez v29, :cond_1b
-
-    const/16 v28, 0x0
-
-    :goto_1b
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v28
-
-    invoke-virtual {v0, v1}, Landroid/hardware/display/IDisplayManager$Stub;->getMainDisplayOverride([I)Landroid/os/IBinder;
-
-    move-result-object v42
-
-    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
-
-    move-object/from16 v0, p3
-
-    move-object/from16 v1, v42
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
-
-    move-object/from16 v0, p3
-
-    move-object/from16 v1, v28
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeIntArray([I)V
-
-    const/4 v4, 0x1
-
-    return v4
-
-    :cond_1b
-    move/from16 v0, v29
-
-    new-array v0, v0, [I
-
-    move-object/from16 v28, v0
-
-    goto :goto_1b
 
     :sswitch_data_0
     .sparse-switch
@@ -2270,9 +2149,6 @@
         0x38 -> :sswitch_38
         0x39 -> :sswitch_39
         0x3a -> :sswitch_3a
-        0x3b -> :sswitch_3b
-        0x3c -> :sswitch_3c
-        0x3d -> :sswitch_3d
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method

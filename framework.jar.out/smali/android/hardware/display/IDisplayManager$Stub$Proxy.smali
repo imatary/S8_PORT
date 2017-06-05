@@ -856,7 +856,7 @@
 
     iget-object v3, p0, Landroid/hardware/display/IDisplayManager$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x39
+    const/16 v4, 0x37
 
     const/4 v5, 0x0
 
@@ -925,7 +925,7 @@
 
     iget-object v3, p0, Landroid/hardware/display/IDisplayManager$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x3a
+    const/16 v4, 0x38
 
     const/4 v5, 0x0
 
@@ -1526,7 +1526,7 @@
 
     iget-object v3, p0, Landroid/hardware/display/IDisplayManager$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x3c
+    const/16 v4, 0x3a
 
     const/4 v5, 0x0
 
@@ -1579,7 +1579,7 @@
 
     iget-object v3, p0, Landroid/hardware/display/IDisplayManager$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x36
+    const/16 v4, 0x34
 
     const/4 v5, 0x0
 
@@ -2918,7 +2918,7 @@
 
     iget-object v2, p0, Landroid/hardware/display/IDisplayManager$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x3b
+    const/16 v3, 0x39
 
     const/4 v4, 0x0
 
@@ -3037,7 +3037,7 @@
 
     iget-object v2, p0, Landroid/hardware/display/IDisplayManager$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x38
+    const/16 v3, 0x36
 
     const/4 v4, 0x0
 
@@ -3322,7 +3322,7 @@
 
     iget-object v2, p0, Landroid/hardware/display/IDisplayManager$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x37
+    const/16 v3, 0x35
 
     const/4 v4, 0x0
 

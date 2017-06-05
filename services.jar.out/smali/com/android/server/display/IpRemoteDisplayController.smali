@@ -10,6 +10,7 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/android/server/display/IpRemoteDisplayController$1;,
+        Lcom/android/server/display/IpRemoteDisplayController$2;,
         Lcom/android/server/display/IpRemoteDisplayController$Listener;
     }
 .end annotation
@@ -56,6 +57,8 @@
 
 .field private mPrevNativeDisposeCompleted:Z
 
+.field private final mReceiver:Landroid/content/BroadcastReceiver;
+
 .field private mRemoteDisplay:Landroid/media/RemoteDisplay;
 
 .field private mRemoteDisplayConnected:Z
@@ -68,7 +71,9 @@
 
 .field private final mSupportsProtectedBuffers:Z
 
-.field private mWfdUibcManager:Lcom/android/server/display/WFDUibcManager;
+.field private mWfdUibcManager:Landroid/media/WFDUibcManager;
+
+.field private mWifiDisplayOnSetting:Z
 
 
 # direct methods
@@ -88,7 +93,15 @@
     return-object v0
 .end method
 
-.method static synthetic -get10(Lcom/android/server/display/IpRemoteDisplayController;)Ljava/lang/Runnable;
+.method static synthetic -get10(Lcom/android/server/display/IpRemoteDisplayController;)Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRequestPendingSetup:Z
+
+    return v0
+.end method
+
+.method static synthetic -get11(Lcom/android/server/display/IpRemoteDisplayController;)Ljava/lang/Runnable;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRtspTimeout:Ljava/lang/Runnable;
@@ -96,12 +109,20 @@
     return-object v0
 .end method
 
-.method static synthetic -get11(Lcom/android/server/display/IpRemoteDisplayController;)Lcom/android/server/display/WFDUibcManager;
+.method static synthetic -get12(Lcom/android/server/display/IpRemoteDisplayController;)Landroid/media/WFDUibcManager;
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdUibcManager:Lcom/android/server/display/WFDUibcManager;
+    iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdUibcManager:Landroid/media/WFDUibcManager;
 
     return-object v0
+.end method
+
+.method static synthetic -get13(Lcom/android/server/display/IpRemoteDisplayController;)Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWifiDisplayOnSetting:Z
+
+    return v0
 .end method
 
 .method static synthetic -get2(Lcom/android/server/display/IpRemoteDisplayController;)Ljava/lang/String;
@@ -128,7 +149,15 @@
     return v0
 .end method
 
-.method static synthetic -get5(Lcom/android/server/display/IpRemoteDisplayController;)Landroid/os/Handler;
+.method static synthetic -get5(Lcom/android/server/display/IpRemoteDisplayController;)Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHDMIConnected:Z
+
+    return v0
+.end method
+
+.method static synthetic -get6(Lcom/android/server/display/IpRemoteDisplayController;)Landroid/os/Handler;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
@@ -136,7 +165,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get6(Lcom/android/server/display/IpRemoteDisplayController;)Lcom/android/server/display/IpRemoteDisplayController$Listener;
+.method static synthetic -get7(Lcom/android/server/display/IpRemoteDisplayController;)Lcom/android/server/display/IpRemoteDisplayController$Listener;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mListener:Lcom/android/server/display/IpRemoteDisplayController$Listener;
@@ -144,7 +173,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get7(Lcom/android/server/display/IpRemoteDisplayController;)Landroid/media/RemoteDisplay;
+.method static synthetic -get8(Lcom/android/server/display/IpRemoteDisplayController;)Landroid/media/RemoteDisplay;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRemoteDisplay:Landroid/media/RemoteDisplay;
@@ -152,18 +181,10 @@
     return-object v0
 .end method
 
-.method static synthetic -get8(Lcom/android/server/display/IpRemoteDisplayController;)Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRemoteDisplayConnected:Z
-
-    return v0
-.end method
-
 .method static synthetic -get9(Lcom/android/server/display/IpRemoteDisplayController;)Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRequestPendingSetup:Z
+    iget-boolean v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRemoteDisplayConnected:Z
 
     return v0
 .end method
@@ -195,7 +216,7 @@
 .method static synthetic -set3(Lcom/android/server/display/IpRemoteDisplayController;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRemoteDisplayConnected:Z
+    iput-boolean p1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHDMIConnected:Z
 
     return p1
 .end method
@@ -203,7 +224,23 @@
 .method static synthetic -set4(Lcom/android/server/display/IpRemoteDisplayController;Z)Z
     .locals 0
 
+    iput-boolean p1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRemoteDisplayConnected:Z
+
+    return p1
+.end method
+
+.method static synthetic -set5(Lcom/android/server/display/IpRemoteDisplayController;Z)Z
+    .locals 0
+
     iput-boolean p1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRequestPendingSetup:Z
+
+    return p1
+.end method
+
+.method static synthetic -set6(Lcom/android/server/display/IpRemoteDisplayController;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWifiDisplayOnSetting:Z
 
     return p1
 .end method
@@ -301,23 +338,29 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;Lcom/android/server/display/IpRemoteDisplayController$Listener;)V
-    .locals 4
+    .locals 6
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
-    iput-boolean v2, p0, Lcom/android/server/display/IpRemoteDisplayController;->mPrevNativeDisposeCompleted:Z
+    iput-boolean v3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mPrevNativeDisposeCompleted:Z
 
-    const/4 v2, -0x1
+    const/4 v3, -0x1
 
-    iput v2, p0, Lcom/android/server/display/IpRemoteDisplayController;->mConnectState:I
+    iput v3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mConnectState:I
 
-    new-instance v2, Lcom/android/server/display/IpRemoteDisplayController$1;
+    new-instance v3, Lcom/android/server/display/IpRemoteDisplayController$1;
 
-    invoke-direct {v2, p0}, Lcom/android/server/display/IpRemoteDisplayController$1;-><init>(Lcom/android/server/display/IpRemoteDisplayController;)V
+    invoke-direct {v3, p0}, Lcom/android/server/display/IpRemoteDisplayController$1;-><init>(Lcom/android/server/display/IpRemoteDisplayController;)V
 
-    iput-object v2, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRtspTimeout:Ljava/lang/Runnable;
+    iput-object v3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mReceiver:Landroid/content/BroadcastReceiver;
+
+    new-instance v3, Lcom/android/server/display/IpRemoteDisplayController$2;
+
+    invoke-direct {v3, p0}, Lcom/android/server/display/IpRemoteDisplayController$2;-><init>(Lcom/android/server/display/IpRemoteDisplayController;)V
+
+    iput-object v3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRtspTimeout:Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mContext:Landroid/content/Context;
 
@@ -325,47 +368,63 @@
 
     iput-object p3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mListener:Lcom/android/server/display/IpRemoteDisplayController$Listener;
 
-    new-instance v2, Lcom/android/server/display/WFDUibcManager;
+    new-instance v3, Landroid/media/WFDUibcManager;
+
+    iget-object v4, p0, Lcom/android/server/display/IpRemoteDisplayController;->mContext:Landroid/content/Context;
+
+    invoke-direct {v3, v4}, Landroid/media/WFDUibcManager;-><init>(Landroid/content/Context;)V
+
+    iput-object v3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdUibcManager:Landroid/media/WFDUibcManager;
+
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    const-string/jumbo v3, "android.intent.action.HDMI_PLUGGED"
+
+    invoke-virtual {v0, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    iget-object v3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mReceiver:Landroid/content/BroadcastReceiver;
+
+    iget-object v4, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
+
+    const/4 v5, 0x0
+
+    invoke-virtual {p1, v3, v0, v5, v4}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
     iget-object v3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mContext:Landroid/content/Context;
 
-    invoke-direct {v2, v3}, Lcom/android/server/display/WFDUibcManager;-><init>(Landroid/content/Context;)V
-
-    iput-object v2, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdUibcManager:Lcom/android/server/display/WFDUibcManager;
-
-    iget-object v2, p0, Lcom/android/server/display/IpRemoteDisplayController;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v1
-
-    new-instance v0, Lcom/android/server/display/IpRemoteDisplayController$2;
-
-    iget-object v2, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
-
-    invoke-direct {v0, p0, v2, v1}, Lcom/android/server/display/IpRemoteDisplayController$2;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Landroid/os/Handler;Landroid/content/ContentResolver;)V
-
-    const-string/jumbo v2, "low_power"
-
-    invoke-static {v2}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
-    const/4 v3, 0x0
+    new-instance v1, Lcom/android/server/display/IpRemoteDisplayController$3;
 
-    invoke-virtual {v1, v2, v3, v0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+    iget-object v3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
+
+    invoke-direct {v1, p0, v3, v2}, Lcom/android/server/display/IpRemoteDisplayController$3;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Landroid/os/Handler;Landroid/content/ContentResolver;)V
+
+    const-string/jumbo v3, "low_power"
+
+    invoke-static {v3}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v3
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v2, v3, v4, v1}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v2
+    move-result-object v3
 
-    const v3, 0x112007e
+    const v4, 0x112007e
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getBoolean(I)Z
 
-    move-result v2
+    move-result v3
 
-    iput-boolean v2, p0, Lcom/android/server/display/IpRemoteDisplayController;->mSupportsProtectedBuffers:Z
+    iput-boolean v3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mSupportsProtectedBuffers:Z
 
     return-void
 .end method
@@ -528,7 +587,7 @@
 
     move-object/from16 v16, v0
 
-    new-instance v2, Lcom/android/server/display/IpRemoteDisplayController$10;
+    new-instance v2, Lcom/android/server/display/IpRemoteDisplayController$12;
 
     move-object/from16 v3, p0
 
@@ -544,7 +603,7 @@
 
     move/from16 v14, p4
 
-    invoke-direct/range {v2 .. v14}, Lcom/android/server/display/IpRemoteDisplayController$10;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Landroid/view/Surface;Landroid/view/Surface;Landroid/hardware/display/WifiDisplay;Landroid/hardware/display/WifiDisplay;IIIIZII)V
+    invoke-direct/range {v2 .. v14}, Lcom/android/server/display/IpRemoteDisplayController$12;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Landroid/view/Surface;Landroid/view/Surface;Landroid/hardware/display/WifiDisplay;Landroid/hardware/display/WifiDisplay;IIIIZII)V
 
     move-object/from16 v0, v16
 
@@ -581,83 +640,22 @@
     goto :goto_0
 .end method
 
-.method private broadcastWfdState(I)V
-    .locals 6
+.method private computeFeatureState()I
+    .locals 1
 
-    new-instance v0, Landroid/content/Intent;
+    iget-boolean v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWifiDisplayOnSetting:Z
 
-    const-string/jumbo v3, "com.samsung.intent.action.WIFI_DISPLAY_SOURCE_STATE"
+    if-eqz v0, :cond_0
 
-    invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    const/4 v0, 0x3
 
-    const/high16 v3, 0x4000000
-
-    invoke-virtual {v0, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    const/4 v1, 0x0
-
-    const-string/jumbo v3, "suvo"
-
-    invoke-virtual {p0, v3}, Lcom/android/server/display/IpRemoteDisplayController;->getWifiDisplayConfiguration(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_0
-
-    check-cast v2, Ljava/lang/Boolean;
-
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
+    :goto_0
+    return v0
 
     :cond_0
-    const-string/jumbo v3, "IpRemoteDisplayController"
+    const/4 v0, 0x2
 
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "broadcastWfdState:: state: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    const-string/jumbo v5, ", isSupportDisplayVolumeControl: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const-string/jumbo v3, "state"
-
-    invoke-virtual {v0, v3, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    const-string/jumbo v3, "isSupportDisplayVolumeControl"
-
-    invoke-virtual {v0, v3, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
-
-    iget-object v3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mContext:Landroid/content/Context;
-
-    sget-object v4, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
-
-    invoke-virtual {v3, v0, v4}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
-
-    return-void
+    goto :goto_0
 .end method
 
 .method private createWifiDisplay(Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/hardware/display/WifiDisplay;
@@ -807,19 +805,15 @@
 
     invoke-interface {v0}, Lcom/android/server/display/IpRemoteDisplayController$Listener;->onDisplayDisconnecting()V
 
-    iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdUibcManager:Lcom/android/server/display/WFDUibcManager;
+    iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdUibcManager:Landroid/media/WFDUibcManager;
 
-    invoke-virtual {v0}, Lcom/android/server/display/WFDUibcManager;->stop()Z
+    invoke-virtual {v0}, Landroid/media/WFDUibcManager;->stop()Z
 
-    iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdUibcManager:Lcom/android/server/display/WFDUibcManager;
+    iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdUibcManager:Landroid/media/WFDUibcManager;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/server/display/WFDUibcManager;->setCoupleShotMode(Z)V
-
-    const/4 v0, 0x0
-
-    invoke-direct {p0, v0}, Lcom/android/server/display/IpRemoteDisplayController;->broadcastWfdState(I)V
+    invoke-virtual {v0, v1}, Landroid/media/WFDUibcManager;->setCoupleShotMode(Z)V
 
     iget v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mConnectState:I
 
@@ -903,9 +897,7 @@
 .end method
 
 .method private enableWifiDisplay(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
-    .locals 10
-
-    const/4 v9, 0x1
+    .locals 9
 
     const/4 v3, 0x0
 
@@ -979,9 +971,11 @@
     const/16 v8, 0x5a
 
     :cond_1
-    const/4 v0, 0x4
+    const/4 v0, 0x1
 
-    invoke-direct {p0, v9, v0}, Lcom/android/server/display/IpRemoteDisplayController;->sendEventToSemDeviceStatusListener(II)V
+    const/4 v4, 0x4
+
+    invoke-direct {p0, v0, v4}, Lcom/android/server/display/IpRemoteDisplayController;->sendEventToSemDeviceStatusListener(II)V
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mConnectedDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
@@ -1023,17 +1017,15 @@
     :cond_3
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mContext:Landroid/content/Context;
 
-    new-instance v2, Lcom/android/server/display/IpRemoteDisplayController$7;
+    new-instance v2, Lcom/android/server/display/IpRemoteDisplayController$8;
 
-    invoke-direct {v2, p0}, Lcom/android/server/display/IpRemoteDisplayController$7;-><init>(Lcom/android/server/display/IpRemoteDisplayController;)V
+    invoke-direct {v2, p0}, Lcom/android/server/display/IpRemoteDisplayController$8;-><init>(Lcom/android/server/display/IpRemoteDisplayController;)V
 
     invoke-static {v0, v2}, Landroid/media/RemoteDisplayCallback;->setContext(Landroid/content/Context;Landroid/media/RemoteDisplayCallback$Listener;)V
 
-    invoke-direct {p0, v9}, Lcom/android/server/display/IpRemoteDisplayController;->broadcastWfdState(I)V
+    iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdUibcManager:Landroid/media/WFDUibcManager;
 
-    iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdUibcManager:Lcom/android/server/display/WFDUibcManager;
-
-    invoke-virtual {v0}, Lcom/android/server/display/WFDUibcManager;->start()Z
+    invoke-virtual {v0}, Landroid/media/WFDUibcManager;->start()Z
 
     const-string/jumbo v0, "IpRemoteDisplayController"
 
@@ -1163,9 +1155,9 @@
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRemoteDisplayInterface:Ljava/lang/String;
 
-    new-instance v2, Lcom/android/server/display/IpRemoteDisplayController$8;
+    new-instance v2, Lcom/android/server/display/IpRemoteDisplayController$9;
 
-    invoke-direct {v2, p0}, Lcom/android/server/display/IpRemoteDisplayController$8;-><init>(Lcom/android/server/display/IpRemoteDisplayController;)V
+    invoke-direct {v2, p0}, Lcom/android/server/display/IpRemoteDisplayController$9;-><init>(Lcom/android/server/display/IpRemoteDisplayController;)V
 
     iget-object v3, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
 
@@ -1295,11 +1287,35 @@
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/server/display/IpRemoteDisplayController$9;
+    new-instance v1, Lcom/android/server/display/IpRemoteDisplayController$10;
 
-    invoke-direct {v1, p0, p2, p1}, Lcom/android/server/display/IpRemoteDisplayController$9;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Ljava/net/InetAddress;I)V
+    invoke-direct {v1, p0, p2, p1}, Lcom/android/server/display/IpRemoteDisplayController$10;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Ljava/net/InetAddress;I)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method private reportFeatureState()V
+    .locals 3
+
+    const-string/jumbo v1, "IpRemoteDisplayController"
+
+    const-string/jumbo v2, "reportFeatureState"
+
+    invoke-static {v1, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-direct {p0}, Lcom/android/server/display/IpRemoteDisplayController;->computeFeatureState()I
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
+
+    new-instance v2, Lcom/android/server/display/IpRemoteDisplayController$11;
+
+    invoke-direct {v2, p0, v0}, Lcom/android/server/display/IpRemoteDisplayController$11;-><init>(Lcom/android/server/display/IpRemoteDisplayController;I)V
+
+    invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     return-void
 .end method
@@ -1567,23 +1583,9 @@
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/server/display/IpRemoteDisplayController$11;
-
-    invoke-direct {v1, p0, p2, p1}, Lcom/android/server/display/IpRemoteDisplayController$11;-><init>(Lcom/android/server/display/IpRemoteDisplayController;II)V
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    return-void
-.end method
-
-.method private sendEventToSemDisplayVolumeKeyListener(Landroid/os/Bundle;I)V
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
-
     new-instance v1, Lcom/android/server/display/IpRemoteDisplayController$13;
 
-    invoke-direct {v1, p0, p2, p1}, Lcom/android/server/display/IpRemoteDisplayController$13;-><init>(Lcom/android/server/display/IpRemoteDisplayController;ILandroid/os/Bundle;)V
+    invoke-direct {v1, p0, p2, p1}, Lcom/android/server/display/IpRemoteDisplayController$13;-><init>(Lcom/android/server/display/IpRemoteDisplayController;II)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -1595,9 +1597,9 @@
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/server/display/IpRemoteDisplayController$12;
+    new-instance v1, Lcom/android/server/display/IpRemoteDisplayController$14;
 
-    invoke-direct {v1, p0, p2, p1}, Lcom/android/server/display/IpRemoteDisplayController$12;-><init>(Lcom/android/server/display/IpRemoteDisplayController;ILandroid/os/Bundle;)V
+    invoke-direct {v1, p0, p2, p1}, Lcom/android/server/display/IpRemoteDisplayController$14;-><init>(Lcom/android/server/display/IpRemoteDisplayController;ILandroid/os/Bundle;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -1739,6 +1741,28 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v1, "mWifiDisplayOnSetting="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-boolean v1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWifiDisplayOnSetting:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2068,9 +2092,9 @@
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/server/display/IpRemoteDisplayController$6;
+    new-instance v1, Lcom/android/server/display/IpRemoteDisplayController$7;
 
-    invoke-direct {v1, p0, p1}, Lcom/android/server/display/IpRemoteDisplayController$6;-><init>(Lcom/android/server/display/IpRemoteDisplayController;I)V
+    invoke-direct {v1, p0, p1}, Lcom/android/server/display/IpRemoteDisplayController$7;-><init>(Lcom/android/server/display/IpRemoteDisplayController;I)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -2084,9 +2108,9 @@
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/server/display/IpRemoteDisplayController$5;
+    new-instance v1, Lcom/android/server/display/IpRemoteDisplayController$6;
 
-    invoke-direct {v1, p0, p1}, Lcom/android/server/display/IpRemoteDisplayController$5;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Ljava/lang/String;)V
+    invoke-direct {v1, p0, p1}, Lcom/android/server/display/IpRemoteDisplayController$6;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -2098,7 +2122,7 @@
 
     iget-object v6, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
 
-    new-instance v0, Lcom/android/server/display/IpRemoteDisplayController$3;
+    new-instance v0, Lcom/android/server/display/IpRemoteDisplayController$4;
 
     move-object v1, p0
 
@@ -2110,7 +2134,7 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/server/display/IpRemoteDisplayController$3;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/server/display/IpRemoteDisplayController$4;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
     invoke-virtual {v6, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -2122,7 +2146,7 @@
 
     iget-object v9, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
 
-    new-instance v0, Lcom/android/server/display/IpRemoteDisplayController$4;
+    new-instance v0, Lcom/android/server/display/IpRemoteDisplayController$5;
 
     move-object v1, p0
 
@@ -2140,7 +2164,7 @@
 
     move-object v8, p4
 
-    invoke-direct/range {v0 .. v8}, Lcom/android/server/display/IpRemoteDisplayController$4;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct/range {v0 .. v8}, Lcom/android/server/display/IpRemoteDisplayController$5;-><init>(Lcom/android/server/display/IpRemoteDisplayController;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
     invoke-virtual {v9, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -2196,47 +2220,6 @@
     invoke-virtual {v0}, Landroid/media/RemoteDisplay;->resume()V
 
     :cond_1
-    return-void
-.end method
-
-.method public setHdmiConnectionState(Z)V
-    .locals 2
-
-    iput-boolean p1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHDMIConnected:Z
-
-    iget-boolean v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHDMIConnected:Z
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mAdvertisedDisplay:Landroid/hardware/display/WifiDisplay;
-
-    if-eqz v0, :cond_0
-
-    iget v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mConnectState:I
-
-    const/4 v1, 0x3
-
-    if-eq v0, v1, :cond_0
-
-    iget v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mConnectState:I
-
-    const/16 v1, 0xc
-
-    if-eq v0, v1, :cond_0
-
-    const-string/jumbo v0, "IpRemoteDisplayController"
-
-    const-string/jumbo v1, "HDMI Connected! we disconnect WFD!"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const v0, 0x22074
-
-    invoke-direct {p0, v0}, Lcom/android/server/display/IpRemoteDisplayController;->requestPopup(I)V
-
-    invoke-direct {p0}, Lcom/android/server/display/IpRemoteDisplayController;->disconnect()V
-
-    :cond_0
     return-void
 .end method
 
