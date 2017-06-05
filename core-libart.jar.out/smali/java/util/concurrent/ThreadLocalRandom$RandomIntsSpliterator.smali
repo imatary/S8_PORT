@@ -165,7 +165,7 @@
 
     iget v6, p0, Ljava/util/concurrent/ThreadLocalRandom$RandomIntsSpliterator;->bound:I
 
-    invoke-virtual {v4, v5, v6}, Ljava/util/concurrent/ThreadLocalRandom;->internalNextInt(II)I
+    invoke-virtual {v4, v5, v6}, Ljava/util/concurrent/ThreadLocalRandom;->nextDouble(DD)D
 
     move-result v4
 

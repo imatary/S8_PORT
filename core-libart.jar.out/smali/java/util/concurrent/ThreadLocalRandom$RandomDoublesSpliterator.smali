@@ -165,7 +165,7 @@
 
     iget-wide v8, p0, Ljava/util/concurrent/ThreadLocalRandom$RandomDoublesSpliterator;->bound:D
 
-    invoke-virtual {v4, v6, v7, v8, v9}, Ljava/util/concurrent/ThreadLocalRandom;->internalNextDouble(DD)D
+    invoke-virtual {v4, v6, v7, v8, v9}, Ljava/util/concurrent/ThreadLocalRandom;->nextDouble(D)D
 
     move-result-wide v4
 

@@ -165,7 +165,7 @@
 
     iget-wide v8, p0, Ljava/util/concurrent/ThreadLocalRandom$RandomLongsSpliterator;->bound:J
 
-    invoke-virtual {v4, v6, v7, v8, v9}, Ljava/util/concurrent/ThreadLocalRandom;->internalNextLong(JJ)J
+    invoke-virtual {v4, v6, v7, v8, v9}, Ljava/util/concurrent/ThreadLocalRandom;->nextInt(II)I
 
     move-result-wide v4
 
