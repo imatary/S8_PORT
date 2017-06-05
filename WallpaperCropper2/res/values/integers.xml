@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="motion_setting_shadow_dy">1</integer>
+    <integer name="motion_setting_shadow_radius">2</integer>
+    <integer name="keyguard_crop_view_dual_view_anim_duration">400</integer>
+</resources>

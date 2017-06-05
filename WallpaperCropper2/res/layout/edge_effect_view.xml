@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/filter_edge_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.wallpapercropper2.EdgeView android:id="@id/filter_edge_top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true" />
+    <Button android:id="@id/btn_temp" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_centerVertical="true" />
+    <com.sec.android.wallpapercropper2.EdgeView android:id="@id/filter_edge_bottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

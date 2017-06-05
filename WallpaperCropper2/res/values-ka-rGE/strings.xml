@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s ვერ იხსნება. შეეხეთ „პარამეტრებს“, გახსენით „აპლიკაციის ინფორმაცია“ > „ნებართვები“, შემდეგ კი დართეთ ნებართვები და ისევ სცადეთ:</string>
+    <string name="all_sim">ყველა</string>
+    <string name="app_name">ფონები</string>
+    <string name="apply">გამოყენება</string>
+    <string name="can_not_set_wallpaper_image_not_found">სურათის დაყენება ფონად შეუძლებელია. სურათი ვერ მოიძებნა.</string>
+    <string name="cancel">გაუქმება</string>
+    <string name="cancle">გაუქმება</string>
+    <string name="change_wallpaper_when_infinity_applied">უსასრულო ეფექტები გამოირთვება, თუ ამ ფონს გამოიყენებთ.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">შესრულდა</string>
+    <string name="duplicate_image">ასლი</string>
+    <string name="expand_image">გაშლა</string>
+    <string name="fail_to_load">ფოტოს ჩატვირთვა შეუძლებელია.</string>
+    <string name="home_lock_screen">საწყისი და დაბლოკილი ეკრანები</string>
+    <string name="home_screen">საწყისი ეკრანი</string>
+    <string name="homescreen_checkbox_motion_effect">მოძრაობის ეფექტი</string>
+    <string name="image_too_small">სურათი ძალზე პატარაა.</string>
+    <string name="item_restricted">ელემენტი შეზღუდულია</string>
+    <string name="left_image">მარცხენა</string>
+    <string name="lock_screen">ეკრანის დაბლოკვა</string>
+    <string name="motion_effect">ფონის მოძრაობის ეფექტი</string>
+    <string name="motion_wallpaper_name">მოძრავი ფონი</string>
+    <string name="notice_low_storage">არ არის საკმარისი ადგილი. წაშალეთ რაც არ გჭირდებათ, მაგალითად, ჩამოტვირთული პროგრამა, სურათები, ვიდეოები და დოკუმენტები.</string>
+    <string name="permission_description">იმისათვის რომ გამოიყენოთ %s, შეეხეთ „პარამეტრებს“, გახსენით „პროგრამის ინფორმაცია“ > „ნებართვები“, შემდეგ კი დართეთ ნებართვები:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">მეხსიერება</string>
+    <string name="processing">მუშავდება…</string>
+    <string name="request_permission_rationale">%1$s-ს ვერ გამოიყენებთ. შეეხეთ „პარამეტრებს“, შემდეგ კი დაუშვით %2$s და ისევ სცადეთ.</string>
+    <string name="right_image">მარჯვენა</string>
+    <string name="set_wallpaper_docomo_text_gui">ეს სურათი გამოჩნდება თქვენს საწყის და დაბლოკილ ეკრანებზე.</string>
+    <string name="settings">პარამეტრები</string>
+    <string name="speak_button">ღილაკი</string>
+    <string name="sview_window">S View-ს ფანჯრის ფერი</string>
+    <string name="unable_set_wallpaper_image_deleted">სურათი ვერ დაყენდა ფონად. გამოსახულება წაშლილია.</string>
+    <string name="unable_to_download">ვერ ჩამოტვირთავთ.</string>
+    <string name="wallpaper_applied_home">ფონი გამოყენებულია საწყის ეკრანზე.</string>
+    <string name="wallpaper_applied_home_and_lock">ფონი გამოყენებულია საწყის ეკრანზე და დაბლოკილ ეკრანზე.</string>
+    <string name="wallpaper_applied_lock">ფონი გამოყენებულია დაბლოკილ ეკრანზე.</string>
+    <string name="wallpaper_applied_multi_lock">%d ფონი გამოყენებულია დაბლოკილ ეკრანზე.</string>
+    <string name="wallpaper_applied_sview">ფონი გამოყენებულია S View ფანჯარაში.</string>
+    <string name="wallpaper_crop_button_done">შესრ.</string>
+    <string name="wallpaper_instructions">ფონად დაყენება</string>
+    <string name="wallpaper_lock_gui_cinematic">დაბლოკილი ეკრანის გაფორმება შეიცვლება, როდესაც მოწყობილობას გადახრით მარცხნივ და მარჯვნივ.</string>
+</resources>

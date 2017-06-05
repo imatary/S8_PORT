@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/blending_effect_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/title_name_linear" android:layout_width="fill_parent" android:layout_height="@dimen/home_lock_cropview_top_margin">
+        <TextView android:textSize="@dimen/wallpaper_preview_lock_title_textsize" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/wallpaper_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallpaper_type_title_top_margin" android:text="@string/lock_screen" android:textAllCaps="true" style="@style/WallpaperTypeTitle" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/cropview_area" android:background="@drawable/bg_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_lock_cropview_top_margin" android:elevation="@dimen/wallpaper_preview_shadow_elevation">
+        <ImageView android:layout_gravity="center" android:id="@id/image_preview" android:layout_width="@dimen/wallpaper_preview_lock_cropview_width" android:layout_height="@dimen/wallpaper_preview_lock_cropview_height" />
+        <ImageView android:layout_gravity="center" android:id="@id/screen_capture_preview" android:layout_width="@dimen/wallpaper_preview_lock_cropview_width" android:layout_height="@dimen/wallpaper_preview_lock_cropview_height" />
+        <ImageView android:layout_gravity="right" android:id="@id/wallpaper_type_icon" android:layout_width="@dimen/wallpaper_preview_lock_icon_height_width" android:layout_height="@dimen/wallpaper_preview_lock_icon_height_width" android:layout_margin="@dimen/wallpaper_preview_lock_icon_margin" android:src="@drawable/ic_wallpapers_multi" />
+        <include android:id="@id/wallpaper_preview_img_lockscreen" android:visibility="invisible" android:layout_width="@dimen/wallpaper_preview_lock_cropview_width" android:layout_height="@dimen/wallpaper_preview_lock_cropview_height" layout="@layout/lockscreen_layout" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/wallpaper_strip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/thumbnail_list_view_margin_bottom">
+        <SemHorizontalListView android:id="@id/thumbnail_list_view" android:layout_width="fill_parent" android:layout_height="@dimen/thumbnail_list_view_height" android:paddingStart="@dimen/thumbnail_list_view_padding_left" android:paddingEnd="@dimen/thumbnail_list_view_padding_right" />
+    </FrameLayout>
+    <include layout="@layout/actionbar" />
+</FrameLayout>

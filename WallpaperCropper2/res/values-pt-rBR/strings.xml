@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Não é possível abrir %s. Toque em CONFIGURAÇÕES, vá para Informações do aplicativo > Permissões, conceda as permissões a seguir e tente novamente:</string>
+    <string name="all_sim">Todas</string>
+    <string name="app_name">Papéis de parede</string>
+    <string name="apply">Aplique</string>
+    <string name="can_not_set_wallpaper_image_not_found">Não é possível definir a imagem como papel de parede. A imagem não foi encontrada.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cancle">Cancelar</string>
+    <string name="change_wallpaper_when_infinity_applied">Os efeitos de infinidade serão desativados se você usar este papel de parede.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Concluído</string>
+    <string name="duplicate_image">Duplicar</string>
+    <string name="expand_image">Expandir</string>
+    <string name="fail_to_load">Não é possível carregar foto.</string>
+    <string name="home_lock_screen">Tela de início e bloqueio</string>
+    <string name="home_screen">Tela de início</string>
+    <string name="homescreen_checkbox_motion_effect">Efeito de movimento</string>
+    <string name="image_too_small">Esta imagem é muito pequena.</string>
+    <string name="item_restricted">Item restrito</string>
+    <string name="left_image">Esquerda</string>
+    <string name="lock_screen">Tela de bloqueio</string>
+    <string name="motion_effect">Efeito movimento papel parede</string>
+    <string name="motion_wallpaper_name">Papel de parede em movimento</string>
+    <string name="notice_low_storage">Sem espaço suficiente. Exclua itens desnecessários, tais como software baixados, imagens, vídeos e documentos.</string>
+    <string name="permission_description">Para usar %s, toque em CONFIGURAÇÕES, vá para Informações do aplicativo > Permissões e autorize as seguintes permissões:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Armazenamento</string>
+    <string name="processing">Processando…</string>
+    <string name="request_permission_rationale">Não é possível usar %1$s. Toque em CONFIGURAÇÕES, autorize a permissão de %2$s e tente novamente.</string>
+    <string name="right_image">Direita</string>
+    <string name="set_wallpaper_docomo_text_gui">Esta imagem será exibida na Tela inicial e na Tela de bloqueio.</string>
+    <string name="settings">Configurações</string>
+    <string name="speak_button">Botão</string>
+    <string name="sview_window">Janela do S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Não é possível definir a imagem como papel de parede. Imagem excluída.</string>
+    <string name="unable_to_download">Impossível baixar.</string>
+    <string name="wallpaper_applied_home">Papel de parede aplicado à tela inicial.</string>
+    <string name="wallpaper_applied_home_and_lock">Papel de parede aplicado na tela inicial e na tela de bloqueio.</string>
+    <string name="wallpaper_applied_lock">Papel de parede aplicado à tela de bloqueio.</string>
+    <string name="wallpaper_applied_multi_lock">%d papéis de parede aplicados à tela de bloqueio.</string>
+    <string name="wallpaper_applied_sview">Papel de parede aplicado à janela do S View.</string>
+    <string name="wallpaper_crop_button_done">Conc.</string>
+    <string name="wallpaper_instructions">Definir como papel de parede</string>
+    <string name="wallpaper_lock_gui_cinematic">A aparência da tela de bloqueio será alterada quando você inclinar seu aparelho para a esquerda e para a direita.</string>
+</resources>

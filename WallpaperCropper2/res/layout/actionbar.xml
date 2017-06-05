@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/actionbar_layout" android:background="@drawable/ripple_effect_drawable" android:layout_width="@dimen/set_as_wallpaper_btn_width" android:layout_height="@dimen/set_as_wallpaper_btn_height" android:layout_marginBottom="@dimen/set_as_wallpaper_btn_margin_bottom" android:showDividers="none"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/action_done" android:layout_width="fill_parent" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" style="@style/CustomActionButtonTransparent">
+        <TextView android:textSize="@dimen/set_as_wallpaper_btn_text_size" android:textStyle="normal" android:gravity="center" android:id="@id/save" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wallpaper_instructions" android:textAllCaps="true" style="@style/WallpaperTypeTitle" />
+        <TextView android:id="@id/action_cancel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <View android:background="@android:color/transparent" android:focusable="true" android:layout_width="1.0px" android:layout_height="1.0px" />
+</LinearLayout>

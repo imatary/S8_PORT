@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Անհնար է բացել %s: Թակեք ԴՐՎԱԾՔՆԵՐ, գնացեք Ծրագրի տեղեկություններ > Թույլտվություններ, հետո տվեք հետևյալ թույլտվությունները և նորից փորձեք՝</string>
+    <string name="all_sim">Բոլոր</string>
+    <string name="app_name">Պաստառներ</string>
+    <string name="apply">Կիրառել</string>
+    <string name="can_not_set_wallpaper_image_not_found">Հնարավոր չէ պատկերը դնել որպես պաստառ: Պատկերը չի գտնվել:</string>
+    <string name="cancel">Չեղարկել</string>
+    <string name="cancle">Չեղարկել</string>
+    <string name="change_wallpaper_when_infinity_applied">Անվերջության էֆեկտները կանջատվեն, եթե օգտագործեք այս պաստառը:</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Արված է</string>
+    <string name="duplicate_image">Կրկնօրինակել</string>
+    <string name="expand_image">Ընդարձակել</string>
+    <string name="fail_to_load">Անհնար է բեռնել լուսանկարը:</string>
+    <string name="home_lock_screen">Հիմնական և կողպված էկրաններ</string>
+    <string name="home_screen">Աշխատասեղան</string>
+    <string name="homescreen_checkbox_motion_effect">Շարժման էֆեկտ</string>
+    <string name="image_too_small">Պատկերը շատ փոքր է:</string>
+    <string name="item_restricted">Տարրը սահմանափակ է</string>
+    <string name="left_image">Ձախ</string>
+    <string name="lock_screen">Կողպել էկրանը</string>
+    <string name="motion_effect">Պաստառի շարժման էֆեկտ</string>
+    <string name="motion_wallpaper_name">Շարժման պաստառ</string>
+    <string name="notice_low_storage">Բավարար տեղ չկա: Վերացրեք ոչ անհրաժեշտ տարրերը, ինչպիսիք են ներբեռնված ծրագրակազմը, նկարները, տեսանյութերը և փաստաթղթերը:</string>
+    <string name="permission_description">%s օգտագործելու համար թակեք ԴՐՎԱԾՔՆԵՐ, գնացեք Ծրագրի տեղեկություններ > Թույլտվություններ, հետո տվեք հետևյալ թույլտվությունները՝</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Պահոց</string>
+    <string name="processing">Ընթացքում է</string>
+    <string name="request_permission_rationale">Անհնար է օգտագործել %1$s: Թակեք ԴՐՎԱԾՔՆԵՐ, հետո տվեք %2$s թույլտվությունը և նորից փորձեք:</string>
+    <string name="right_image">Աջ</string>
+    <string name="set_wallpaper_docomo_text_gui">Այս պատկերը կցուցադրվի հիմնական և կողպված էկրաններում:</string>
+    <string name="settings">Դրվածքներ</string>
+    <string name="speak_button">Կոճակ</string>
+    <string name="sview_window">S View պատուհան</string>
+    <string name="unable_set_wallpaper_image_deleted">Անհնար է պատկերը դնել որպես պաստառ: Պատկերը վերացված է:</string>
+    <string name="unable_to_download">Հնարավոր չէ ներբեռնել:</string>
+    <string name="wallpaper_applied_home">Պաստառը կիրառվել է հիմնական էկրանի համար:</string>
+    <string name="wallpaper_applied_home_and_lock">Պաստառը դրվեց հիմնական էկրանին և կողպված էկրանին:</string>
+    <string name="wallpaper_applied_lock">Պաստառը կիրառվել է կողպված էկրանի համար:</string>
+    <string name="wallpaper_applied_multi_lock">%d պաստառ է կիրառվել կողպված էկրանի համար:</string>
+    <string name="wallpaper_applied_sview">Պաստառը կիրառվեց S View պատուհանի համար:</string>
+    <string name="wallpaper_crop_button_done">Պտրստ</string>
+    <string name="wallpaper_instructions">Դնել որպես պաստառ</string>
+    <string name="wallpaper_lock_gui_cinematic">Կողպված էկրանի տեսքը կփոխվի, երբ սարքը թեքեք ձախ և աջ:</string>
+</resources>

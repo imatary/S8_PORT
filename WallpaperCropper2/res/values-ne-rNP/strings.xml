@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="apply">लागू गर्नुहोस्</string>
+    <string name="can_not_set_wallpaper_image_not_found">छविलाई वालपेपरको रूपमा सेट गर्न सकिँदैन। छवि फेला परेन।</string>
+    <string name="change_wallpaper_when_infinity_applied">तपाईले यो वालपेपर प्रयोग गर्नुभयो भने अनन्तताका प्रभावहरू अफ हुनेछन्।</string>
+    <string name="homescreen_checkbox_motion_effect">चाल प्रभाव</string>
+    <string name="item_restricted">वस्तु सीमित भयो</string>
+    <string name="motion_wallpaper_name">मोशन वालपेपर</string>
+    <string name="set_wallpaper_docomo_text_gui">यो छवि तपाईको होम र लक स्क्रिनमा देखाइनेछ।</string>
+    <string name="unable_to_download">डाउनलोड गर्न सकिएन।</string>
+    <string name="wallpaper_applied_home">वालपेपरलाई होम स्क्रीनमा लागू गरियो।</string>
+    <string name="wallpaper_applied_home_and_lock">होम स्क्रीन र लक स्क्रीनमा लागू हुने वालपेपर।</string>
+    <string name="wallpaper_applied_multi_lock">%d वालपेपरलाई लक स्क्रीनमा लागू गरियो।</string>
+    <string name="wallpaper_instructions">वालपेपरको रूपमा सेट गर्नुहोस्</string>
+    <string name="wallpaper_lock_gui_cinematic">तपाईले आफ्नो यन्त्रलाई बायाँ वा दायाँ झुकाउँदा लक स्क्रीनको रूप परिवर्तन हुनेछ।</string>
+</resources>

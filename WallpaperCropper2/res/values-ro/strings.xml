@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Nu se poate deschide %s. Atingeţi SETĂRI, accesaţi meniul Informaţii despre aplicaţie > Permisiuni, apoi acordaţi următoarele permisiuni şi încercaţi din nou:</string>
+    <string name="all_sim">Toate</string>
+    <string name="app_name">Fundaluri</string>
+    <string name="apply">Aplicaţi</string>
+    <string name="can_not_set_wallpaper_image_not_found">Nu se poate seta imaginea ca fundal. Aceasta nu a fost găsită.</string>
+    <string name="cancel">Anulare</string>
+    <string name="cancle">Anulare</string>
+    <string name="change_wallpaper_when_infinity_applied">Dacă utilizați acest fundal, efectele Infinit vor fi oprite.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Efectuat</string>
+    <string name="duplicate_image">Duplicare</string>
+    <string name="expand_image">Extindere</string>
+    <string name="fail_to_load">Imposibil de încărcat fotografia</string>
+    <string name="home_lock_screen">Ecrane de pornire și de blocare</string>
+    <string name="home_screen">Ecran de pornire</string>
+    <string name="homescreen_checkbox_motion_effect">Efect de mișcare</string>
+    <string name="image_too_small">Imaginea este prea mică.</string>
+    <string name="item_restricted">Elem. restricţionat</string>
+    <string name="left_image">Stânga</string>
+    <string name="lock_screen">Blocare ecran</string>
+    <string name="motion_effect">Efect de mişcare fundal</string>
+    <string name="motion_wallpaper_name">Fundal în mișcare</string>
+    <string name="notice_low_storage">Spațiu insuficient. Ștergeți elementele care nu sunt necesare, cum ar fi software-ul, imaginile, videoclipurile și documentele descărcate.</string>
+    <string name="permission_description">Pentru a utiliza %s, atingeți SETĂRI, accesați meniul Informații despre aplicație > Permisiuni, apoi acordați următoarele permisiuni:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Stocare</string>
+    <string name="processing">Se procesează…</string>
+    <string name="request_permission_rationale">Nu se poate utiliza %1$s. Atingeți SETĂRI, apoi acordați permisiunea pentru %2$s și încercați din nou.</string>
+    <string name="right_image">Dreapta</string>
+    <string name="set_wallpaper_docomo_text_gui">Această imagine va fi afișată pe ecranul Acasă și ecranul de blocare.</string>
+    <string name="settings">Setări</string>
+    <string name="speak_button">Buton</string>
+    <string name="sview_window">Fereastră S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Imaginea nu poate fi setată ca fundal. Aceasta a fost ștearsă.</string>
+    <string name="unable_to_download">Imposibil de descărcat</string>
+    <string name="wallpaper_applied_home">Fundal aplicat pe ecranul Acasă.</string>
+    <string name="wallpaper_applied_home_and_lock">Fundal aplicat pe ecranele Acasă și de blocare.</string>
+    <string name="wallpaper_applied_lock">Fundal aplicat pe ecranul de blocare.</string>
+    <string name="wallpaper_applied_multi_lock">%d fundaluri aplicate pe ecranul de blocare.</string>
+    <string name="wallpaper_applied_sview">Fundal aplicat ferestrei S View.</string>
+    <string name="wallpaper_crop_button_done">Gata</string>
+    <string name="wallpaper_instructions">Setare ca fundal</string>
+    <string name="wallpaper_lock_gui_cinematic">Aspectul ecranului de blocare se va schimba atunci când înclinați dispozitivul spre dreapta și spre stânga.</string>
+</resources>

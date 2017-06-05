@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="apply">Primijeni</string>
+    <string name="can_not_set_wallpaper_image_not_found">Ne može se postaviti slika kao tapeta. Slika nije pronađena.</string>
+    <string name="change_wallpaper_when_infinity_applied">Efekti beskonačnosti će se isključiti ako budete koristili ovu tapetu.</string>
+    <string name="homescreen_checkbox_motion_effect">Motion effect</string>
+    <string name="image_too_small">Slika je premala.</string>
+    <string name="item_restricted">Stavka je ograničena</string>
+    <string name="motion_wallpaper_name">Efekat kretanja tapete</string>
+    <string name="set_wallpaper_docomo_text_gui">Ova slika će se prikazati na početnom i zaključanom ekranu.</string>
+    <string name="unable_to_download">Nije moguće preuzimanje.</string>
+    <string name="wallpaper_applied_home">Tapeta je primijenjena na početni ekran.</string>
+    <string name="wallpaper_applied_home_and_lock">Tapeta je primijenjena na početni ekran i zaključan ekran.</string>
+    <string name="wallpaper_applied_multi_lock">%d tapeta je primijenjeno na zaključani ekran.</string>
+    <string name="wallpaper_instructions">Postavi kao tapetu</string>
+    <string name="wallpaper_lock_gui_cinematic">Izgled zaključanog ekrana će se promijeniti kada nagnete uređaj lijevo i desno.</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="apply">Apply</string>
+    <string name="can_not_set_wallpaper_image_not_found">"Can't set this image as wallpaper. Image not found."</string>
+    <string name="change_wallpaper_when_infinity_applied">Infinity effects will be turned off if you use this wallpaper.</string>
+    <string name="set_wallpaper_docomo_text_gui">This image will be shown on your home and lock screens.</string>
+    <string name="unable_to_download">Unable to download.</string>
+    <string name="wallpaper_applied_home">Wallpaper applied to home screen.</string>
+    <string name="wallpaper_applied_multi_lock">%d wallpapers applied to lock screen.</string>
+    <string name="wallpaper_instructions">Set as wallpaper</string>
+</resources>

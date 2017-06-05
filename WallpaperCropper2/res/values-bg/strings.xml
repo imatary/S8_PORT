@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Не може да се отвори %s. Докоснете НАСТРОЙКИ, отидете в Информация за приложение > Разрешения, след което позволете следните разрешения и опитайте отново:</string>
+    <string name="all_sim">Всички</string>
+    <string name="app_name">Тапети</string>
+    <string name="apply">Прилагане</string>
+    <string name="can_not_set_wallpaper_image_not_found">Изображението не може да се зададе като тапет. Изображението не е открито.</string>
+    <string name="cancel">Отмени</string>
+    <string name="cancle">Отмени</string>
+    <string name="change_wallpaper_when_infinity_applied">Ефектите на безкрайност ще бъдат изключени, ако използвате този тапет.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Готово</string>
+    <string name="duplicate_image">Дубликат</string>
+    <string name="expand_image">Разгъване</string>
+    <string name="fail_to_load">Невъзможно зареждане на снимката.</string>
+    <string name="home_lock_screen">Начален и заключен екран</string>
+    <string name="home_screen">Начален екран</string>
+    <string name="homescreen_checkbox_motion_effect">Ефект на движение</string>
+    <string name="image_too_small">Изображението е твърде малко.</string>
+    <string name="item_restricted">Елем. е ограничен</string>
+    <string name="left_image">Отляво</string>
+    <string name="lock_screen">Заключен екран</string>
+    <string name="motion_effect">Ефект на движение на тапет</string>
+    <string name="motion_wallpaper_name">Движещ се тапет</string>
+    <string name="notice_low_storage">Няма достатъчно място. Изтрийте ненужните елементи, като изтеглен софтуер, снимки, видео и документи.</string>
+    <string name="permission_description">За да използвате %s, докоснете НАСТРОЙКИ, отидете на Информация за приложение > Разрешения, след което позволете следните разрешения:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Устройство за съхранение на данни</string>
+    <string name="processing">Обработване…</string>
+    <string name="request_permission_rationale">Неуспешно използване на %1$s. Докоснете НАСТРОЙКИ, след което дайте на %2$s разрешение и опитайте отново.</string>
+    <string name="right_image">Отдясно</string>
+    <string name="set_wallpaper_docomo_text_gui">Това изображение ще се покаже на началния и заключения екрани.</string>
+    <string name="settings">Настройки</string>
+    <string name="speak_button">Бутон</string>
+    <string name="sview_window">Прозорец на S екран</string>
+    <string name="unable_set_wallpaper_image_deleted">Изображението не може да се зададе като тапет. Изображението е изтрито.</string>
+    <string name="unable_to_download">Не може да се изтегли.</string>
+    <string name="wallpaper_applied_home">Тапетът е приложен за началния екран.</string>
+    <string name="wallpaper_applied_home_and_lock">Тапетът е приложен към началния екран и заключения екран.</string>
+    <string name="wallpaper_applied_lock">Тапетът е приложен за заключения екран.</string>
+    <string name="wallpaper_applied_multi_lock">%d тапета са приложени към заключения екран.</string>
+    <string name="wallpaper_applied_sview">Тапетът е приложен за прозореца на S View.</string>
+    <string name="wallpaper_crop_button_done">Готв</string>
+    <string name="wallpaper_instructions">Задаване като тапет</string>
+    <string name="wallpaper_lock_gui_cinematic">Изгледът на заключения екран ще се промени, когато наклоните устройството наляво или надясно.</string>
+</resources>

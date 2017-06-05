@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Nuk mund të hap %s. Trokit mbi CILËSIMET, shko te Info për app-in > Lejet, pastaj jep lejet e mëposhtme dhe provo sërish:</string>
+    <string name="all_sim">Të gjitha</string>
+    <string name="app_name">Sfondet</string>
+    <string name="cancel">Anullo</string>
+    <string name="cancle">Anulo</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="duplicate_image">Dyzo</string>
+    <string name="expand_image">Shpalos</string>
+    <string name="fail_to_load">Nuk mund ta ngarkojë foton.</string>
+    <string name="left_image">Majtas</string>
+    <string name="motion_effect">Efekti lëvizje, letra e murit</string>
+    <string name="notice_low_storage">"Nuk ka hapësirë të mjaftueshme. Hiq ndonjë gjë që s'të duhet, p.sh. softuer të shkarkuar, foto, video dhe dokumente."</string>
+    <string name="permission_description">Për të përdorur %s, trokit mbi CILËSIMET, shko te Info për aplikacionin > Lejet, pastaj jep lejet e mëposhtme:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Arkivimi</string>
+    <string name="processing">Duke përpunuar…</string>
+    <string name="request_permission_rationale">Nuk mund ta përdor %1$s. Trokit mbi CILËSIMET, pastaj jep lejen për %2$s dhe provo sërish.</string>
+    <string name="right_image">Djathtas</string>
+    <string name="settings">Cilësimet</string>
+    <string name="speak_button">Buton</string>
+    <string name="unable_set_wallpaper_image_deleted">Nuk ta cilësoj imazhin si letër muri. Imazhi është hequr.</string>
+    <string name="wallpaper_crop_button_done">Kryer</string>
+    <string name="wallpaper_instructions">Vendos si sfond</string>
+</resources>

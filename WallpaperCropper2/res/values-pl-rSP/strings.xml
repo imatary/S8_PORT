@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Niy idzie ôdewrzić aplikacyji %s. Tyknij ôpcyji SZTALOWANIE, idź do menu Informacyje ô aplikacyji > Uprŏwniynia, a potym załōncz niżyj pokŏzane uprŏwniynia i sprōbuj drugi rŏz:</string>
+    <string name="all_sim">Wszyjske</string>
+    <string name="app_name">Tapety</string>
+    <string name="apply">Użyj</string>
+    <string name="can_not_set_wallpaper_image_not_found">Niy idzie nasztalować ôbrŏzu jako tapety. Niy znŏdło ôbrŏzu.</string>
+    <string name="cancel">Pociep</string>
+    <string name="cancle">Pociep</string>
+    <string name="change_wallpaper_when_infinity_applied">Efekty nieskończoności zostaną wyłączone, jeśli użyjesz tej tapety.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Fertich</string>
+    <string name="duplicate_image">Kopiuj</string>
+    <string name="expand_image">Rozwiń</string>
+    <string name="fail_to_load">Niy idzie załadować fotografie</string>
+    <string name="home_lock_screen">Ekran sztartowy i blokowaniŏ</string>
+    <string name="home_screen">Ekran sztartowy</string>
+    <string name="homescreen_checkbox_motion_effect">Efekt ruchu</string>
+    <string name="image_too_small">Ôbrŏzek je za mały.</string>
+    <string name="item_restricted">Elymynt zabroniōny</string>
+    <string name="left_image">Lewŏ</string>
+    <string name="lock_screen">Ekran blokady</string>
+    <string name="motion_effect">Efekt ruchu tapety</string>
+    <string name="motion_wallpaper_name">Ruchōmo tapeta</string>
+    <string name="notice_low_storage">Niy ma placu. Wyciep darymne elymynty, take co zebrane ȏprogramowanie, ȏbrōzki, filmy i dokumynty.</string>
+    <string name="permission_description">Coby używać %s, tyknij ôpcyji SZTALOWANIE, przelyź do menu Informacyje ô aplikacyji > Uprŏwniynia, a potym załōncz dalij pokŏzane uprŏwniynia:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Dōmyślnŏ pamiynć</string>
+    <string name="processing">Przerobiōm…</string>
+    <string name="request_permission_rationale">Niy idzie używać fōnkcyji %1$s. Tyknij ôpcyji SZTALOWANIE, a potym załōncz uprŏwniynie %2$s i wybadej drugi rŏz.</string>
+    <string name="right_image">Prawa</string>
+    <string name="set_wallpaper_docomo_text_gui">Ten obraz będzie widoczny na ekranie startowym i ekranie blokady.</string>
+    <string name="settings">Nasztalowaniy</string>
+    <string name="speak_button">Knefel</string>
+    <string name="sview_window">Ôkno aplikacyji S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Niy idzie nastawić ôbrŏzka za tapeta. Ôbrŏzek wyciepniynty.</string>
+    <string name="unable_to_download">Niy idzie zebrać.</string>
+    <string name="wallpaper_applied_home">Tapeta napasowanŏ na ekranie bazowym.</string>
+    <string name="wallpaper_applied_home_and_lock">Napasowano tapeta na ekranie bazowym i ekranie blokady.</string>
+    <string name="wallpaper_applied_lock">Tapeta napasowanŏ na ekranie blokady.</string>
+    <string name="wallpaper_applied_multi_lock">Do ekranu blokady wziynto %d tapet.</string>
+    <string name="wallpaper_applied_sview">Wziynto tapeta do ôkna S View.</string>
+    <string name="wallpaper_crop_button_done">OK</string>
+    <string name="wallpaper_instructions">Nasztaluj jako tapeta</string>
+    <string name="wallpaper_lock_gui_cinematic">Ôbrozek ekranu blokniyńcio pōmiyni sie, kej zwyrtniesz maszina na lewo i na prawo.</string>
+</resources>

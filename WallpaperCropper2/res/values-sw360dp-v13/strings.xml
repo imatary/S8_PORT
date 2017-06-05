@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="extra_height">0.0f</string>
+    <string name="extra_width">0.0f</string>
+    <string name="dual_view_mode_down_scale">0.714f</string>
+    <string name="dual_view_mode_hide_opacity">0.3f</string>
+    <string name="dual_view_mode_normal_scale">1.0f</string>
+    <string name="dual_view_mode_show_opacity">1f</string>
+    <string name="dual_view_mode_zoom_scale">1.4f</string>
+</resources>

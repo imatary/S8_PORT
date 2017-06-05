@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s açılamıyor. AYARLAR öğesine dokunun, Uygulama bilgileri > İzinler bölümüne gidin, ardından aşağıdaki izinleri verip tekrar deneyin:</string>
+    <string name="all_sim">Hepsi</string>
+    <string name="app_name">Duvar kağıtları</string>
+    <string name="apply">Uygula</string>
+    <string name="can_not_set_wallpaper_image_not_found">Görüntü, duvar kağıdı olarak ayarlanamıyor. Görüntü bulunamadı.</string>
+    <string name="cancel">İptal</string>
+    <string name="cancle">İptal</string>
+    <string name="change_wallpaper_when_infinity_applied">Bu duvar kağıdını kullanırsanız Infinity efektleri kapatılır.</string>
+    <string name="date_format">MMMM d, E</string>
+    <string name="done">Tamamlandı</string>
+    <string name="duplicate_image">Çoğalt</string>
+    <string name="expand_image">Genişlet</string>
+    <string name="fail_to_load">Fotoğraf yüklenemiyor.</string>
+    <string name="home_lock_screen">Ana ve kilit ekranları</string>
+    <string name="home_screen">Ana sayfa ekranı</string>
+    <string name="homescreen_checkbox_motion_effect">Hareket efekti</string>
+    <string name="image_too_small">Resim çok küçük.</string>
+    <string name="item_restricted">Öğe sınırlandırıldı</string>
+    <string name="left_image">Sol</string>
+    <string name="lock_screen">Kilit ekranı</string>
+    <string name="motion_effect">Duvar kağıdı hareket efekti</string>
+    <string name="motion_wallpaper_name">Hareketli duvar kağıdı</string>
+    <string name="notice_low_storage">Yeterli alan yok. İndirilmiş yazılımlar, resimler, videolar ve belgeler gibi gereksiz öğeleri silin.</string>
+    <string name="permission_description">%s işlevini kullanmak için AYARLAR öğesine dokunun, Uygulama bilgileri > İzinler bölümüne gidin, ardından aşağıdaki izinleri verin:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Kayıt yeri</string>
+    <string name="processing">Uygulanıyor…</string>
+    <string name="request_permission_rationale">"%1$s kullanılamıyor. AYARLAR'a dokunun, ardından %2$s için izin verip tekrar deneyin."</string>
+    <string name="right_image">Sağ</string>
+    <string name="set_wallpaper_docomo_text_gui">Bu görüntü, ana ekran ve kilit ekranınızda gösterilir.</string>
+    <string name="settings">Ayarlar</string>
+    <string name="speak_button">Düğme</string>
+    <string name="sview_window">S View penceresi</string>
+    <string name="unable_set_wallpaper_image_deleted">Görüntü duvar kağıdı olarak ayarlanamıyor. Görüntü silindi.</string>
+    <string name="unable_to_download">İndirilemiyor.</string>
+    <string name="wallpaper_applied_home">Duvar kağıdı ana ekrana uygulandı.</string>
+    <string name="wallpaper_applied_home_and_lock">Duvar kağıdı ana ekrana ve kilit ekranına uygulandı.</string>
+    <string name="wallpaper_applied_lock">Duvar kağıdı kilit ekranına uygulandı.</string>
+    <string name="wallpaper_applied_multi_lock">%d duvar kağıdı kilit ekranına uygulandı.</string>
+    <string name="wallpaper_applied_sview">Duvar kağıdı S View penceresine uygulandı.</string>
+    <string name="wallpaper_crop_button_done">Kaydet</string>
+    <string name="wallpaper_instructions">Duvar kağıdı olarak ayarla</string>
+    <string name="wallpaper_lock_gui_cinematic">Cihazınızı sola ve sağa yatırdığınızda kilit ekranının görünümü değişir.</string>
+</resources>

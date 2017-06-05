@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Kan ikke åbne %s. Tryk på INDSTILLINGER, gå til Appoplysninger > Tilladelser, accepter følgende tilladelser, og prøv igen:</string>
+    <string name="all_sim">Alle</string>
+    <string name="app_name">Baggrunde</string>
+    <string name="apply">Anvend</string>
+    <string name="can_not_set_wallpaper_image_not_found">Det er ikke muligt at angive billedet som baggrund. Billedet blev ikke fundet.</string>
+    <string name="cancel">Annuller</string>
+    <string name="cancle">Annuller</string>
+    <string name="change_wallpaper_when_infinity_applied">Uendelighedseffekter vil blive deaktiveret, hvis du bruger denne baggrund.</string>
+    <string name="date_format">E MMMM d.</string>
+    <string name="done">Udført</string>
+    <string name="duplicate_image">Kopiér</string>
+    <string name="expand_image">Udvid</string>
+    <string name="fail_to_load">Kan ikke indlæse foto.</string>
+    <string name="home_lock_screen">Start- og låseskærme</string>
+    <string name="home_screen">Startskærm</string>
+    <string name="homescreen_checkbox_motion_effect">Bevægelseseffekt</string>
+    <string name="image_too_small">Billedet er for lille.</string>
+    <string name="item_restricted">Element begrænset</string>
+    <string name="left_image">Venstre</string>
+    <string name="lock_screen">Låseskærm</string>
+    <string name="motion_effect">Bevægelseseffekt for baggrund</string>
+    <string name="motion_wallpaper_name">Baggrund med bevægelse</string>
+    <string name="notice_low_storage">Ikke nok plads. Slet unødvendige elementer, som f.eks. downloadet software, downloadede billeder, videoer og dokumenter.</string>
+    <string name="permission_description">Du kan bruge %s ved at trykke på INDSTILLINGER, gå til Applikationsoplysninger > Tilladelser og aktivere følgende tilladelser:</string>
+    <string name="permission_name_read_sms">Sms</string>
+    <string name="permission_name_storage">Lagring</string>
+    <string name="processing">Behandler …</string>
+    <string name="request_permission_rationale">Kan ikke bruge %1$s. Tryk på INDSTILLINGER, aktiver tilladelsen %2$s, og prøv igen.</string>
+    <string name="right_image">Højre</string>
+    <string name="set_wallpaper_docomo_text_gui">Dette billede vil blive vist på din start- og din låseskærm.</string>
+    <string name="settings">Indstillinger</string>
+    <string name="speak_button">Tast</string>
+    <string name="sview_window">S View-vinduet</string>
+    <string name="unable_set_wallpaper_image_deleted">Kan ikke angive billedet som baggrund. Billedet blev slettet.</string>
+    <string name="unable_to_download">Kan ikke hente.</string>
+    <string name="wallpaper_applied_home">Baggrunden er blevet anvendt på startskærmen.</string>
+    <string name="wallpaper_applied_home_and_lock">Baggrunden er blevet anvendt på start- og låseskærmen.</string>
+    <string name="wallpaper_applied_lock">Baggrunden er blevet anvendt på låseskærmen.</string>
+    <string name="wallpaper_applied_multi_lock">Der er blevet anvendt %d baggrunde på låseskærmen.</string>
+    <string name="wallpaper_applied_sview">Baggrunden er blevet anvendt på S View-vinduet.</string>
+    <string name="wallpaper_crop_button_done">Klar</string>
+    <string name="wallpaper_instructions">Angiv som baggrund</string>
+    <string name="wallpaper_lock_gui_cinematic">Låseskærmens udseende vil ændre sig, når du vipper din enhed til højre og venstre.</string>
+</resources>

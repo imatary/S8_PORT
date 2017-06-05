@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Impossibile aprire %s. Toccate IMPOSTAZIONI, andate in Informazioni applicazione > Autorizzazioni, quindi concedete queste autorizzazioni e riprovate:</string>
+    <string name="all_sim">Tutti/e</string>
+    <string name="app_name">Sfondi</string>
+    <string name="apply">Applica</string>
+    <string name="can_not_set_wallpaper_image_not_found">"Impossibile impostare l'immagine come sfondo. Immagine non trovata."</string>
+    <string name="cancel">Annulla</string>
+    <string name="cancle">Annulla</string>
+    <string name="change_wallpaper_when_infinity_applied">Se utilizzate questo sfondo, gli effetti Infinity verranno disattivati.</string>
+    <string name="date_format">E MMMM d</string>
+    <string name="done">Fatto</string>
+    <string name="duplicate_image">Duplica</string>
+    <string name="expand_image">Espandi</string>
+    <string name="fail_to_load">Impossibile caricare la foto.</string>
+    <string name="home_lock_screen">Schermata Home e di blocco</string>
+    <string name="home_screen">Schermata Home</string>
+    <string name="homescreen_checkbox_motion_effect">Effetto di movimento</string>
+    <string name="image_too_small">Immagine troppo piccola.</string>
+    <string name="item_restricted">Elem. con restrizioni</string>
+    <string name="left_image">Sinistra</string>
+    <string name="lock_screen">Schermata di blocco</string>
+    <string name="motion_effect">Effetto movimento sfondo</string>
+    <string name="motion_wallpaper_name">Sfondo animato</string>
+    <string name="notice_low_storage">Spazio insufficiente. Eliminare elementi non necessari, quali software, foto, video e documenti scaricati.</string>
+    <string name="permission_description">Per utilizzare %s, toccate IMPOSTAZIONI, andate in Informazioni applicazione > Autorizzazioni, quindi concedete queste autorizzazioni:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Memoria archiviazione</string>
+    <string name="processing">Elaborazione…</string>
+    <string name="request_permission_rationale">"Impossibile utilizzare %1$s. Toccate IMPOSTAZIONI, quindi concedete l'autorizzazione %2$s e riprovate."</string>
+    <string name="right_image">Destra</string>
+    <string name="set_wallpaper_docomo_text_gui">Questa immagine verrà mostrata sulle schermate Home e di blocco.</string>
+    <string name="settings">Impostazioni</string>
+    <string name="speak_button">Pulsante</string>
+    <string name="sview_window">Finestra S View</string>
+    <string name="unable_set_wallpaper_image_deleted">"Impossibile impostare l'immagine come sfondo. Immagine eliminata."</string>
+    <string name="unable_to_download">Impossibile eseguire download.</string>
+    <string name="wallpaper_applied_home">Sfondo applicato alla schermata Home.</string>
+    <string name="wallpaper_applied_home_and_lock">Sfondo applicato alla schermata Home e di blocco.</string>
+    <string name="wallpaper_applied_lock">Sfondo applicato alla schermata di blocco.</string>
+    <string name="wallpaper_applied_multi_lock">%d sfondi applicati alla schermata di blocco.</string>
+    <string name="wallpaper_applied_sview">Sfondo applicato alla finestra S View.</string>
+    <string name="wallpaper_crop_button_done">Fatto</string>
+    <string name="wallpaper_instructions">Imposta come sfondo</string>
+    <string name="wallpaper_lock_gui_cinematic">"L'aspetto della schermata di blocco cambierà quando inclinate il dispositivo a sinistra e a destra."</string>
+</resources>

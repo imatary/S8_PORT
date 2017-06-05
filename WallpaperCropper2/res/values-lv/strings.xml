@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Nevar atvērt programmu %s. Pieskarieties pie IESTATĪJUMI, izvēlieties Programmas dati > Atļaujas, pēc tam aktivizējiet tālāk norādītās atļaujas un mēģiniet vēlreiz:</string>
+    <string name="all_sim">Visas</string>
+    <string name="app_name">Fona attēli</string>
+    <string name="apply">Lietot</string>
+    <string name="can_not_set_wallpaper_image_not_found">Attēlu nevar iestatīt kā fona attēlu. Attēls nav atrasts.</string>
+    <string name="cancel">Atcelt</string>
+    <string name="cancle">Atcelt</string>
+    <string name="change_wallpaper_when_infinity_applied">Ja izmantosit šo fona attēlu, bezgalības efekti tiks izslēgti.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Gatavs</string>
+    <string name="duplicate_image">Dublēt</string>
+    <string name="expand_image">Izvērst</string>
+    <string name="fail_to_load">Nevar ielādēt fotoattēlu.</string>
+    <string name="home_lock_screen">Sākuma un bloķēšanas ekrāni</string>
+    <string name="home_screen">Sākuma ekrāns</string>
+    <string name="homescreen_checkbox_motion_effect">Kustību efekts</string>
+    <string name="image_too_small">Šis attēls ir par mazu.</string>
+    <string name="item_restricted">Ierobežots objekts</string>
+    <string name="left_image">Kreisā</string>
+    <string name="lock_screen">Bloķēšanas ekrāns</string>
+    <string name="motion_effect">Fona attēla kustības efekts</string>
+    <string name="motion_wallpaper_name">Kustīgs fona attēls</string>
+    <string name="notice_low_storage">Nepietiek vietas. Izdzēsiet nevajadzīgos objektus, piemēram, lejupielādētās programmatūras, attēlus, videoklipus un dokumentus.</string>
+    <string name="permission_description">Lai lietotu %s, pieskarieties pie IESTATĪJUMI, atveriet Programmas dati > Atļaujas, pēc tam aktivizējiet tālāk norādītās atļaujas:</string>
+    <string name="permission_name_read_sms">Īsziņa</string>
+    <string name="permission_name_storage">Krātuve</string>
+    <string name="processing">Notiek apstrāde…</string>
+    <string name="request_permission_rationale">Programmu %1$s nevar izmantot. Pieskarieties pie IESTATĪJUMI, pēc tam piešķiriet atļauju funkcijai %2$s un mēģiniet vēlreiz.</string>
+    <string name="right_image">Labā</string>
+    <string name="set_wallpaper_docomo_text_gui">Šis attēls tiks parādīts jūsu sākuma un bloķēšanas ekrānos.</string>
+    <string name="settings">Iestatījumi</string>
+    <string name="speak_button">Poga</string>
+    <string name="sview_window">S View logs</string>
+    <string name="unable_set_wallpaper_image_deleted">Nevar iestatīt kā fona attēlu. Attēls izdzēsts.</string>
+    <string name="unable_to_download">Nevar lejupielādēt.</string>
+    <string name="wallpaper_applied_home">Fona attēls tiek lietots sākuma ekrānā.</string>
+    <string name="wallpaper_applied_home_and_lock">Fona attēls tiek lietots sākuma un bloķēšanas ekrānā.</string>
+    <string name="wallpaper_applied_lock">Fona attēls tiek lietots bloķēšanas ekrānā.</string>
+    <string name="wallpaper_applied_multi_lock">Bloķēšanas ekrānā lietoti %d fona attēli.</string>
+    <string name="wallpaper_applied_sview">S View logam tiek lietots fona attēls.</string>
+    <string name="wallpaper_crop_button_done">Gat.</string>
+    <string name="wallpaper_instructions">Iestatīt kā fona attēlu</string>
+    <string name="wallpaper_lock_gui_cinematic">Bloķēšanas ekrāna izskats mainīsies, sasverot ierīci pa kreisi un pa labi.</string>
+</resources>

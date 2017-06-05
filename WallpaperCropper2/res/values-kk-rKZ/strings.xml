@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s қолданбасын ашу мүмкін емес. ПАРАМЕТРЛЕР түймесін түртіп, Қолданба ақпараты > Рұқсаттар бөліміне өтіп, келесі рұқсаттарды беріп, әрекетті қайталаңыз:</string>
+    <string name="all_sim">Барлығы</string>
+    <string name="app_name">Түсқағаз</string>
+    <string name="apply">Қолдану</string>
+    <string name="can_not_set_wallpaper_image_not_found">Суретті түсқағаз ретінде орнату мүмкін емес. Сурет табылмады.</string>
+    <string name="cancel">Тоқтату</string>
+    <string name="cancle">Тоқтату</string>
+    <string name="change_wallpaper_when_infinity_applied">Егер осы түсқағазды пайдалансаңыз, онда шексіздік әсерлері өшіріледі.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Дайын</string>
+    <string name="duplicate_image">Дубликат</string>
+    <string name="expand_image">Кеңейту</string>
+    <string name="fail_to_load">Фотосуретті жүктеу мүмкін емес.</string>
+    <string name="home_lock_screen">Бастапқы және құлып экрандары</string>
+    <string name="home_screen">Бейнебеттің өзіндік беті</string>
+    <string name="homescreen_checkbox_motion_effect">Қимыл әсері</string>
+    <string name="image_too_small">Сурет өлшемі тым аз.</string>
+    <string name="item_restricted">Элемент шектелген</string>
+    <string name="left_image">Сол</string>
+    <string name="lock_screen">Экранды құлыптау</string>
+    <string name="motion_effect">Түсқағаздың қимыл әсері</string>
+    <string name="motion_wallpaper_name">Жылжымалы түсқағаз</string>
+    <string name="notice_low_storage">Бос орын жеткіліксіз. Жүктеп алынған бағдарламалық құрал, суреттер, бейнелер мен құжаттар сияқты қажетсіз элементтерді жойыңыз.</string>
+    <string name="permission_description">%s функциясын пайдалану үшін ПАРАМЕТРЛЕР тармағын түртіп, Қолданба ақпараты > Рұқсаттар бөліміне өтіңіз, содан кейін келесіге рұқсат беріңіз:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Сақтау орны</string>
+    <string name="processing">Өңделуде…</string>
+    <string name="request_permission_rationale">%1$s қолданбасын пайдалану мүмкін емес. ПАРАМЕТРЛЕР түймесін түртіп, %2$s рұқсатын беріп, әрекетті қайталаңыз.</string>
+    <string name="right_image">Оң</string>
+    <string name="set_wallpaper_docomo_text_gui">Бұл сурет бастапқы және құлыптау экрандарында көрсетіледі.</string>
+    <string name="settings">Параметрлер</string>
+    <string name="speak_button">Түйме</string>
+    <string name="sview_window">S View терезе</string>
+    <string name="unable_set_wallpaper_image_deleted">Суретті түсқағаз ретінде орнату мүмкін емес. Сурет жойылды.</string>
+    <string name="unable_to_download">Қотару мүмкін емес.</string>
+    <string name="wallpaper_applied_home">Түсқағаз бастапқы экранға қолданылды.</string>
+    <string name="wallpaper_applied_home_and_lock">Түсқағаз басты экранға және құлыптау экранына қолданылды.</string>
+    <string name="wallpaper_applied_lock">Түсқағаз құлыптау экранына қолданылды.</string>
+    <string name="wallpaper_applied_multi_lock">%d түсқағаз құлыптау экранына қолданылды.</string>
+    <string name="wallpaper_applied_sview">Түсқағаз S View терезесіне қолданылды.</string>
+    <string name="wallpaper_crop_button_done">Дай.</string>
+    <string name="wallpaper_instructions">Түсқағаз ретінде орнату</string>
+    <string name="wallpaper_lock_gui_cinematic">Құрылғыны солға немесе оңға қарай еңкейткен кезде, құлыптау экранының көрінісі өзгереді.</string>
+</resources>

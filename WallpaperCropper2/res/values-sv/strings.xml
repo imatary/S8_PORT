@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Det går inte att öppna %s. Tryck på INSTÄLLNINGAR, gå till Programinformation > Behörigheter och tillåt sedan följande behörigheter innan du försöker igen:</string>
+    <string name="all_sim">Alla</string>
+    <string name="app_name">Bakgrunder</string>
+    <string name="apply">Använd</string>
+    <string name="can_not_set_wallpaper_image_not_found">Det går inte att välja bilden som bakgrundsbild. Den hittades inte.</string>
+    <string name="cancel">Avbryt</string>
+    <string name="cancle">Avbryt</string>
+    <string name="change_wallpaper_when_infinity_applied">Infinity-effekter stängs av om du använder denna bakgrund.</string>
+    <string name="date_format">E. MMMM d</string>
+    <string name="done">Klar</string>
+    <string name="duplicate_image">Skapa dubblett</string>
+    <string name="expand_image">Utöka</string>
+    <string name="fail_to_load">Det går inte att läsa in fotot.</string>
+    <string name="home_lock_screen">Hem- och låsskärmar</string>
+    <string name="home_screen">Hemskärm</string>
+    <string name="homescreen_checkbox_motion_effect">Rörelseeffekt</string>
+    <string name="image_too_small">Bilden är för liten.</string>
+    <string name="item_restricted">Objekt begränsat</string>
+    <string name="left_image">Vänster</string>
+    <string name="lock_screen">Låsskärm</string>
+    <string name="motion_effect">Bakgrundsrörelseeffekt</string>
+    <string name="motion_wallpaper_name">Animerad bakgrund</string>
+    <string name="notice_low_storage">Inte tillräckligt med utrymme. Ta bort onödiga objekt till exempel hämtad programvara, bilder, videor och dokument.</string>
+    <string name="permission_description">Tryck på INSTÄLLNINGAR, öppna Programinfo > Behörigheter och tillåt sedan följande behörigheter om du vill använda %s:</string>
+    <string name="permission_name_read_sms">Textmeddelande</string>
+    <string name="permission_name_storage">Lagring</string>
+    <string name="processing">Bearbetar…</string>
+    <string name="request_permission_rationale">Det går inte att använda %1$s. Tryck på INSTÄLLNINGAR och tillåt sedan %2$s-behörighet. Försök därefter igen.</string>
+    <string name="right_image">Höger</string>
+    <string name="set_wallpaper_docomo_text_gui">Bilden kommer att visas på hem- och låsskärmen.</string>
+    <string name="settings">Inställningar</string>
+    <string name="speak_button">Knapp</string>
+    <string name="sview_window">S View-fönster</string>
+    <string name="unable_set_wallpaper_image_deleted">Det går inte att välja bilden som bakgrundsbild. Den har raderats.</string>
+    <string name="unable_to_download">Det går inte att hämta.</string>
+    <string name="wallpaper_applied_home">Bakgrunden har använts på hemskärmen.</string>
+    <string name="wallpaper_applied_home_and_lock">Bakgrund har lagts till på hemskärmen och låsskärmen.</string>
+    <string name="wallpaper_applied_lock">Bakgrunden har använts på låsskärmen.</string>
+    <string name="wallpaper_applied_multi_lock">%d bakgrunder har använts på låsskärmen.</string>
+    <string name="wallpaper_applied_sview">Bakgrunden har använts i S View-fönstret.</string>
+    <string name="wallpaper_crop_button_done">Klar</string>
+    <string name="wallpaper_instructions">Ange som bakgrund</string>
+    <string name="wallpaper_lock_gui_cinematic">Låsskärmens utseende ändras när du vickar på enheten från vänster till höger.</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Δεν είναι δυνατό το άνοιγμα της λειτουργίας %s. Πατήστε ΡΥΘΜΙΣΕΙΣ, μεταβείτε στις Πληροφορίες εφαρμογής > Δικαιώματα, παραχωρήστε τα παρακάτω δικαιώματα και, στη συνέχεια, δοκιμάστε ξανά:</string>
+    <string name="all_sim">Όλα</string>
+    <string name="app_name">Θέματα φόντου</string>
+    <string name="apply">Εφαρμογή</string>
+    <string name="can_not_set_wallpaper_image_not_found">Δεν είναι δυνατός ο ορισμός της εικόνας ως φόντου. Η εικόνα δεν βρέθηκε.</string>
+    <string name="cancel">Άκυρο</string>
+    <string name="cancle">Άκυρο</string>
+    <string name="change_wallpaper_when_infinity_applied">Τα εφέ Infinity θα απενεργοποιηθούν, αν χρησιμοποιήσετε αυτό το φόντο.</string>
+    <string name="date_format">E MMMM d</string>
+    <string name="done">OΚ</string>
+    <string name="duplicate_image">Αντίγραφο</string>
+    <string name="expand_image">Ανάπτυξη</string>
+    <string name="fail_to_load">Δεν είναι δυνατή η φόρτωση της φωτ.</string>
+    <string name="home_lock_screen">Αρχική οθόνη και οθόνη κλειδώματος</string>
+    <string name="home_screen">Αρχική οθόνη</string>
+    <string name="homescreen_checkbox_motion_effect">Εφέ κίνησης</string>
+    <string name="image_too_small">Η εικόνα είναι πολύ μικρή.</string>
+    <string name="item_restricted">Περιορισμός στοιχ.</string>
+    <string name="left_image">Αριστερά</string>
+    <string name="lock_screen">Κλείδωμα Οθόνης</string>
+    <string name="motion_effect">Εφέ κίνησης φόντου</string>
+    <string name="motion_wallpaper_name">Φόντο με κίνηση</string>
+    <string name="notice_low_storage">Ο χώρος δεν επαρκεί. Διαγράψτε στοιχεία που δεν χρειάζεστε, όπως είναι λογισμικό από λήψη, εικόνες, βίντεο και έγγραφα.</string>
+    <string name="permission_description">Για να χρησιμοποιήσετε τη λειτουργία %s, πατήστε ΡΥΘΜΙΣΕΙΣ, μεταβείτε στο μενού Πληροφορίες εφαρμογής > Δικαιώματα και, στη συνέχεια, παραχωρήστε τα παρακάτω δικαιώματα:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Αποθήκευση</string>
+    <string name="processing">Επεξεργασία…</string>
+    <string name="request_permission_rationale">Δεν είναι δυνατή η χρήση της λειτουργίας %1$s. Πατήστε ΡΥΘΜΙΣΕΙΣ και, στη συνέχεια, παραχωρήστε το δικαίωμα %2$s και δοκιμάστε ξανά.</string>
+    <string name="right_image">Δεξιά</string>
+    <string name="set_wallpaper_docomo_text_gui">Αυτή η εικόνα θα εμφανίζεται στην αρχική οθόνη και την οθόνη κλειδώματος.</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="speak_button">Κουμπί</string>
+    <string name="sview_window">Παράθυρο S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Δεν είναι δυνατός ο ορισμός της εικόνας ως φόντου. Η εικόνα έχει διαγραφεί.</string>
+    <string name="unable_to_download">Δεν είναι δυνατή η λήψη.</string>
+    <string name="wallpaper_applied_home">Το φόντο εφαρμόστηκε στην αρχική οθόνη.</string>
+    <string name="wallpaper_applied_home_and_lock">Το φόντο χρησιμοποιείται στη αρχική οθόνη και την οθόνη κλειδώματος.</string>
+    <string name="wallpaper_applied_lock">Το φόντο εφαρμόστηκε στην οθόνη κλειδώματος.</string>
+    <string name="wallpaper_applied_multi_lock">Εφαρμόστηκαν %d φόντα στην οθόνη κλειδώματος.</string>
+    <string name="wallpaper_applied_sview">Το φόντο εφαρμόστηκε στο παράθυρο S View.</string>
+    <string name="wallpaper_crop_button_done">Ok</string>
+    <string name="wallpaper_instructions">Ορισμός ως φόντου</string>
+    <string name="wallpaper_lock_gui_cinematic">Η εμφάνιση της οθόνης κλειδώματος θα αλλάζει όταν μετατοπίζετε τη συσκευή αριστερά ή δεξιά.</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Rakendust %s ei saa avada. Toksake valikut SEADED, avage Rakenduste teave > Õigused, seejärel kinnitage järgmised load ja proovige uuesti:</string>
+    <string name="all_sim">Kõik</string>
+    <string name="app_name">Taustpildid</string>
+    <string name="apply">Rakenda</string>
+    <string name="can_not_set_wallpaper_image_not_found">Pilti ei saa määrata taustpildiks. Pilti ei leitud.</string>
+    <string name="cancel">Tühista</string>
+    <string name="cancle">Tühista</string>
+    <string name="change_wallpaper_when_infinity_applied">Lõpmatuse efektid lülitatakse välja, kui kasutate seda taustpilti.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Valmis</string>
+    <string name="duplicate_image">Dubleeri</string>
+    <string name="expand_image">Laienda</string>
+    <string name="fail_to_load">Fotot ei saa laadida.</string>
+    <string name="home_lock_screen">Ava- ja lukustusekraanid</string>
+    <string name="home_screen">Avaleht</string>
+    <string name="homescreen_checkbox_motion_effect">Liigutuse efekt</string>
+    <string name="image_too_small">Pilt on liiga vaike.</string>
+    <string name="item_restricted">Üksus on piiratud</string>
+    <string name="left_image">Vasakule</string>
+    <string name="lock_screen">Lukustusekraan</string>
+    <string name="motion_effect">Taustpildi liikumisefekt</string>
+    <string name="motion_wallpaper_name">Liikuv taustpilt</string>
+    <string name="notice_low_storage">Ruumi pole piisavalt. Kustutage ebavajalikud üksused, nagu allalaaditud tarkvara, pildid, videod ja dokumendid.</string>
+    <string name="permission_description">Funktsiooni %s kasutamiseks toksake valikut SEADED, avage Rakenduste teave > Õigused, seejärel kinnitage järgmised load.</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Hoiundamine</string>
+    <string name="processing">Töötlemine…</string>
+    <string name="request_permission_rationale">Rakendust %1$s ei saa kasutada. Toksake valikut SEADED, seejärel kinnitage luba %2$s ja proovige uuesti.</string>
+    <string name="right_image">Paremale</string>
+    <string name="set_wallpaper_docomo_text_gui">See pilt kuvatakse teie avaekraanil ja lukustusekraanil.</string>
+    <string name="settings">Seaded</string>
+    <string name="speak_button">Nupp</string>
+    <string name="sview_window">S View aken</string>
+    <string name="unable_set_wallpaper_image_deleted">Pilti ei saa määrata taustpildiks. Pilt kustutatud.</string>
+    <string name="unable_to_download">Ei saa alla laadida.</string>
+    <string name="wallpaper_applied_home">Taustpilt rakendati avaekraanile.</string>
+    <string name="wallpaper_applied_home_and_lock">Taustpilt rakendati avaekraanile ja lukustusekraanile.</string>
+    <string name="wallpaper_applied_lock">Taustpilt rakendati lukustusekraanile.</string>
+    <string name="wallpaper_applied_multi_lock">%d taustpilti rakendati lukustusekraanile.</string>
+    <string name="wallpaper_applied_sview">Taustpilt rakendati S View aknale.</string>
+    <string name="wallpaper_crop_button_done">Valm.</string>
+    <string name="wallpaper_instructions">Määra taustpildiks</string>
+    <string name="wallpaper_lock_gui_cinematic">Lukustusekraani välimus muutub, kui kallutate oma seadet vasakule ja paremale.</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Hindi mabuksan ang %s. I-tap ang SETTINGS, pumunta sa App info > Permissions, tapos ay payagan ang mga sumusunod na pahintulot at subukang muli:</string>
+    <string name="all_sim">Lahat</string>
+    <string name="app_name">Mga Wallpaper</string>
+    <string name="apply">Gamitin</string>
+    <string name="can_not_set_wallpaper_image_not_found">Hindi mai-set ang larawan bilang wallpaper. Hindi nahanap ang larawan.</string>
+    <string name="cancel">Ikansela</string>
+    <string name="cancle">Kanselahin</string>
+    <string name="change_wallpaper_when_infinity_applied">Io-off ang Infinity effects kapag ginamit mo ang wallpaper na ito.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Tapos na</string>
+    <string name="duplicate_image">Duplicate</string>
+    <string name="expand_image">I-expand</string>
+    <string name="fail_to_load">Hindi mai-load ang larawan.</string>
+    <string name="home_lock_screen">Mga home at lock screen</string>
+    <string name="home_screen">Home screen</string>
+    <string name="homescreen_checkbox_motion_effect">Motion effect</string>
+    <string name="image_too_small">Masyadong maliit ang larawan.</string>
+    <string name="item_restricted">Item restricted</string>
+    <string name="left_image">Kaliwa</string>
+    <string name="lock_screen">Lock screen</string>
+    <string name="motion_effect">Effect ng galaw ng wallpaper</string>
+    <string name="motion_wallpaper_name">Motion wallpaper</string>
+    <string name="notice_low_storage">Walang sapat na espasyo. Mag-delete ng mga hindi kinakailangang item, gaya ng na-download na software, mga larawan, video, at dokumento.</string>
+    <string name="permission_description">Para gamitin ang %s, i-tap ang SETTINGS, pumunta sa Application info > Permissions, tapos payagan ang mga sumusunod na pahintulot:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Storage</string>
+    <string name="processing">Pinoproseso…</string>
+    <string name="request_permission_rationale">Hindi magamit ang %1$s. I-tap ang SETTINGS, tapos ay payagan ang %2$s pahintulot at subukang muli.</string>
+    <string name="right_image">Kanan</string>
+    <string name="set_wallpaper_docomo_text_gui">Ipakikita ang image na ito sa home at lock screen mo.</string>
+    <string name="settings">Mga Setting</string>
+    <string name="speak_button">Button</string>
+    <string name="sview_window">Window ng S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Hindi mai-set ang imahe bilang wallpaper. Natanggal ang imahe.</string>
+    <string name="unable_to_download">Hindi ma-download.</string>
+    <string name="wallpaper_applied_home">Ginamit ang wallpaper sa home screen.</string>
+    <string name="wallpaper_applied_home_and_lock">Ginamit ang wallpaper sa home screen at lock screen.</string>
+    <string name="wallpaper_applied_lock">Ginamit ang wallpaper sa lock screen.</string>
+    <string name="wallpaper_applied_multi_lock">%d wallpaper ang inilapat sa lock screen.</string>
+    <string name="wallpaper_applied_sview">Inilapat ang wallpaper sa window ng S View.</string>
+    <string name="wallpaper_crop_button_done">Tapos</string>
+    <string name="wallpaper_instructions">I-set bilang wallpaper</string>
+    <string name="wallpaper_lock_gui_cinematic">Magbabago ang hitsura ng lock screen kapag ikiniling mo ang device mo pakaliwa at pakanan.</string>
+</resources>

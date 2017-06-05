@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Ekki er hægt að opna %s. Pikkaðu á STILLINGAR, opnaðu Upplýsingar um forrit > Heimildir, veittu síðan eftirfarandi heimildir og reyndu aftur:</string>
+    <string name="all_sim">Allt</string>
+    <string name="app_name">Veggfóður</string>
+    <string name="apply">Nota</string>
+    <string name="can_not_set_wallpaper_image_not_found">Ekki er hægt að nota myndina sem veggfóður. Myndin finnst ekki.</string>
+    <string name="cancel">Hætta við</string>
+    <string name="cancle">Hætta við</string>
+    <string name="change_wallpaper_when_infinity_applied">Slökkt verður á óendanleikaáhrifum ef þetta veggfóður er notað.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Lokið</string>
+    <string name="duplicate_image">Afrita</string>
+    <string name="expand_image">Stækka</string>
+    <string name="fail_to_load">Mistókst að hlaða mynd.</string>
+    <string name="home_lock_screen">Heima- og lásskjáir</string>
+    <string name="home_screen">Heimaskjár</string>
+    <string name="homescreen_checkbox_motion_effect">Hreyfing</string>
+    <string name="image_too_small">Myndin er of lítil.</string>
+    <string name="item_restricted">Takmarkað atriði</string>
+    <string name="left_image">Vinstri</string>
+    <string name="lock_screen">Lásskjár</string>
+    <string name="motion_effect">Hreyfiáhrif veggfóðurs</string>
+    <string name="motion_wallpaper_name">Hreyfiveggfóður</string>
+    <string name="notice_low_storage">Ekki nægilegt pláss. Eyddu óþarfa hlutum eins og hugbúnaði, myndum, myndskeiðum og skjölum sem þú hefur sótt.</string>
+    <string name="permission_description">Til að nota %s skaltu pikka á STILLINGAR, opna Forritaupplýsingar > Heimildir og veita síðan eftirfarandi heimildir:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Geymsla</string>
+    <string name="processing">Vinnsla í gangi…</string>
+    <string name="request_permission_rationale">Ekki er hægt að nota %1$s. Pikkaðu á STILLINGAR, veittu síðan %2$s heimild og reyndu aftur.</string>
+    <string name="right_image">Hægri</string>
+    <string name="set_wallpaper_docomo_text_gui">Þessi mynd mun birtast á heima- og lásskjáunum.</string>
+    <string name="settings">Stillingar</string>
+    <string name="speak_button">Hnappur</string>
+    <string name="sview_window">S View gluggi</string>
+    <string name="unable_set_wallpaper_image_deleted">Ekki er hægt að nota myndina sem veggfóður. Myndinni var eytt.</string>
+    <string name="unable_to_download">Mistókst að hlaða niður.</string>
+    <string name="wallpaper_applied_home">Veggfóður sett á heimaskjá.</string>
+    <string name="wallpaper_applied_home_and_lock">Veggfóður notað á heimaskjá og lásskjá.</string>
+    <string name="wallpaper_applied_lock">Veggfóður sett á lásskjá.</string>
+    <string name="wallpaper_applied_multi_lock">%d veggfóður sett á lásskjá.</string>
+    <string name="wallpaper_applied_sview">Veggfóður sett á S View glugga.</string>
+    <string name="wallpaper_crop_button_done">Lokið</string>
+    <string name="wallpaper_instructions">Nota sem veggfóður</string>
+    <string name="wallpaper_lock_gui_cinematic">Útlit lásskjásins breytist þegar þú hallar tækinu til vinstri eða hægri.</string>
+</resources>

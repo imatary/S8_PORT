@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%sను తెరవడం సాధ్యం కాదు. “సెట్టింగ్‌లు”ను ట్యాప్ చేసి, అప్లికేషన్ సమాచారం > అనుమతులకు వెళ్లి, కింది అనుమతులను అనుమతించి, మళ్లీ ప్రయత్నించండి:</string>
+    <string name="all_sim">అన్ని</string>
+    <string name="app_name">వాల్‌పేపర్‌లు</string>
+    <string name="apply">వర్తింపజేయి</string>
+    <string name="can_not_set_wallpaper_image_not_found">చిత్రాన్ని వాల్‌పేపర్‌గా సెట్ చేయలేరు. చిత్రం కనుగొనబడలేదు.</string>
+    <string name="cancel">రద్దు</string>
+    <string name="cancle">రద్దు</string>
+    <string name="change_wallpaper_when_infinity_applied">మీరు ఈ వాల్‌పేపర్‌ని ఉపయోగిస్తే అనంత ప్రభావాలు ఆఫ్ చేయబడతాయి.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">పూర్తయింది</string>
+    <string name="duplicate_image">నకిలీ</string>
+    <string name="expand_image">విస్తరించు</string>
+    <string name="fail_to_load">ఫోటోను లోడ్ చేయడం సాధ్యం కాదు.</string>
+    <string name="home_lock_screen">హోమ్ మరియు లాక్ స్క్రీన్లు</string>
+    <string name="home_screen">హోమ్ స్క్రీన్</string>
+    <string name="homescreen_checkbox_motion_effect">కదలిక ఫలితము</string>
+    <string name="image_too_small">చిత్రం చాలా చిన్నది.</string>
+    <string name="item_restricted">ఐటెమ్ పరిమితం చేయబడింది</string>
+    <string name="left_image">ఎడమ</string>
+    <string name="lock_screen">లాక్ స్క్రీన్</string>
+    <string name="motion_effect">వాల్‌పేపర్ కదలిక ప్రభావం</string>
+    <string name="motion_wallpaper_name">కదిలే వాల్‌పేపర్</string>
+    <string name="notice_low_storage">తగినంత స్థలం లేదు. డౌన్‌లోడ్ చేసిన సాఫ్ట్‌వేర్, చిత్రాలు, వీడియోలు మరియు పత్రాలు వంటి అనవసర ఐటెమ్‌లు తొలగించండి.</string>
+    <string name="permission_description">%sను ఉపయోగించడం కోసం, “సెట్టింగ్‌లు” ట్యాప్ చేసి, అప్లికేషన్ సమాచారం > అనుమతులకు వెళ్లి, కింది అనుమతులను అనుమతించండి:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">నిల్వచేయు</string>
+    <string name="processing">ప్రాసెస్ చేస్తోంది…</string>
+    <string name="request_permission_rationale">%1$sను ఉపయోగించడం సాధ్యం కాదు. “సెట్టింగ్‌లు”ను ట్యాప్ చేసి, %2$s అనుమతిని అనుమతించి, ఆపై మళ్లీ ప్రయత్నించండి.</string>
+    <string name="right_image">కుడి</string>
+    <string name="set_wallpaper_docomo_text_gui">ఈ చిత్రం మీ హోమ్ మరియు లాక్ స్క్రీన్‌లలో చూపబడుతుంది.</string>
+    <string name="settings">సెట్టింగులు</string>
+    <string name="speak_button">బటన్</string>
+    <string name="sview_window">S View విండో</string>
+    <string name="unable_set_wallpaper_image_deleted">చిత్రాన్ని వాల్‌పేపర్ వలె సెట్ చేయడం సాధ్యం కాదు. చిత్రం తొలగించబడింది.</string>
+    <string name="unable_to_download">డౌన్‌లోడ్ చేయడం సాధ్యం కాదు.</string>
+    <string name="wallpaper_applied_home">హోమ్ స్క్రీన్‌కు వాల్‌పేపర్ వర్తించబడింది.</string>
+    <string name="wallpaper_applied_home_and_lock">హోమ్ స్క్రీన్ మరియు లాక్ స్క్రీన్‌కు వాల్‌పేపర్ వర్తించబడింది.</string>
+    <string name="wallpaper_applied_lock">స్క్రీన్‌ని లాక్ చేయడానికి వాల్‌పేపర్ వర్తించబడింది.</string>
+    <string name="wallpaper_applied_multi_lock">లాక్ స్క్రీన్‌కు %d వాల్‌పేపర్‌లు వర్తింప చేయబడ్డాయి.</string>
+    <string name="wallpaper_applied_sview">S View విండోకు వాల్‌పేపర్ వర్తింప చేయబడింది.</string>
+    <string name="wallpaper_crop_button_done">పూర్తయిం.</string>
+    <string name="wallpaper_instructions">వాల్‌పేపర్‌గా సెట్ చేయి</string>
+    <string name="wallpaper_lock_gui_cinematic">మీరు మీ పరికరాన్ని ఎడమ మరియు కుడికి టిల్ట్ చేసినప్పుడు లాక్ స్క్రీన్ కనబడే విధానం మారుతుంది.</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s ачуу мүмкүн эмес. ОРНОТУУЛАРДЫ басып, Колдонмо маалыматы > Уруксаттарга барыңыз, андан соң төмөнкү уруксаттарды берип, дагы аракеттениңиз:</string>
+    <string name="all_sim">Баары</string>
+    <string name="app_name">Тушкагаздар</string>
+    <string name="apply">Колдонуу</string>
+    <string name="can_not_set_wallpaper_image_not_found">Сүрөттү тушкагаз катары орнотууга болбойт. Сүрөт табылган жок.</string>
+    <string name="cancel">Артка</string>
+    <string name="cancle">Токт.</string>
+    <string name="change_wallpaper_when_infinity_applied">Чексиз эффекттер, эгер бул тушкагаз колдонулса өчүрүлөт.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Бүттү</string>
+    <string name="duplicate_image">Эки эселеген</string>
+    <string name="expand_image">Жаюу</string>
+    <string name="fail_to_load">Сүрөттү жүктөөгө мүмкүн эмес</string>
+    <string name="home_lock_screen">Башкы жана кулпу экрандары</string>
+    <string name="home_screen">Башкы экран</string>
+    <string name="homescreen_checkbox_motion_effect">Motion effect</string>
+    <string name="image_too_small">Сүрөт өтө кичинекей</string>
+    <string name="item_restricted">Бул нерсе чектелди</string>
+    <string name="left_image">Сол</string>
+    <string name="lock_screen">Кулпу экраны</string>
+    <string name="motion_effect">Тушкагаздын кыймылдоо эффекти</string>
+    <string name="motion_wallpaper_name">Кыймылдуу тушкагаз</string>
+    <string name="notice_low_storage">Бош орун жетишпейт. Жүктөлгөн программалар, сүрөттөр, видеолор жана документтер сыяктуу керексиз нерселерди өчүрүңүз.</string>
+    <string name="permission_description">%s колдонуу үчүн, ОРНОТУУЛАРДЫ басып, Колдонмо маалыматы > Уруксаттарга барыңыз, андан соң төмөнкүлөргө уруксат бериңиз:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Сактагыч</string>
+    <string name="processing">Иштетүүдө…</string>
+    <string name="request_permission_rationale">%1$s колдонуу мүмкүн эмес. ОРНОТУУЛАРДЫ басыңыз, андан соң %2$s уруксатын берип, дагы аракеттениңиз.</string>
+    <string name="right_image">Оң</string>
+    <string name="set_wallpaper_docomo_text_gui">Бул сүрөт башкы жана кулпу экрандарында көргөзүлөт.</string>
+    <string name="settings">Орнотуулар</string>
+    <string name="speak_button">Баскыч</string>
+    <string name="sview_window">S View терезеси</string>
+    <string name="unable_set_wallpaper_image_deleted">Сүрөттү тушкагаз катары орнотууга болбойт. Сүрөт өчүрүлдү.</string>
+    <string name="unable_to_download">Жүктөй албады</string>
+    <string name="wallpaper_applied_home">Тушкагаз башкы экранга колдонулду.</string>
+    <string name="wallpaper_applied_home_and_lock">Башкы экранга жана кулпу экранга колдонулган тушкагаз.</string>
+    <string name="wallpaper_applied_lock">Тушкагаз кулпу экранга колдонулду.</string>
+    <string name="wallpaper_applied_multi_lock">Кулпу экранына колдонулган %d тушкагаз.</string>
+    <string name="wallpaper_applied_sview">S View терезесине колдонулган тушкагаз.</string>
+    <string name="wallpaper_crop_button_done">Бүттү</string>
+    <string name="wallpaper_instructions">Тушкагаз катары орнотуу</string>
+    <string name="wallpaper_lock_gui_cinematic">Түзмөктү солго жана оңго эңкейткениңизде, кулпу экранынын көрүнүшү өзгөрөт.</string>
+</resources>

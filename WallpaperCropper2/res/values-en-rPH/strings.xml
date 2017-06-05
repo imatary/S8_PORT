@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Unable to open %s. Tap SETTINGS, go to App info > Permissions, then allow the following permissions and try again:</string>
+    <string name="all_sim">All</string>
+    <string name="app_name">Wallpapers</string>
+    <string name="apply">Apply</string>
+    <string name="can_not_set_wallpaper_image_not_found">"Can't set image as wallpaper. Image not found."</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancle">Cancel</string>
+    <string name="change_wallpaper_when_infinity_applied">Infinity effects will be turned off if you use this wallpaper.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Done</string>
+    <string name="duplicate_image">Duplicate</string>
+    <string name="expand_image">Expand</string>
+    <string name="fail_to_load">Unable to load photo.</string>
+    <string name="home_lock_screen">Home and lock screens</string>
+    <string name="home_screen">Home screen</string>
+    <string name="homescreen_checkbox_motion_effect">Motion effect</string>
+    <string name="image_too_small">The image is too small.</string>
+    <string name="item_restricted">Item restricted</string>
+    <string name="left_image">Left</string>
+    <string name="lock_screen">Lock screen</string>
+    <string name="motion_effect">Wallpaper motion effect</string>
+    <string name="motion_wallpaper_name">Motion wallpaper</string>
+    <string name="notice_low_storage">Not enough space. Delete unnecessary items, such as downloaded software, pictures, videos, and documents</string>
+    <string name="permission_description">To use %s, tap SETTINGS, go to Application info > Permissions, then allow the following permissions:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Storage</string>
+    <string name="processing">Processing…</string>
+    <string name="request_permission_rationale">Unable to use %1$s. Tap SETTINGS, then allow the %2$s permission and try again.</string>
+    <string name="right_image">Right</string>
+    <string name="set_wallpaper_docomo_text_gui">This image will be shown on your home and lock screens.</string>
+    <string name="settings">Settings</string>
+    <string name="speak_button">Button</string>
+    <string name="sview_window">S View window</string>
+    <string name="unable_set_wallpaper_image_deleted">Unable to set image as wallpaper. Image deleted.</string>
+    <string name="unable_to_download">Unable to download.</string>
+    <string name="wallpaper_applied_home">Wallpaper applied to home screen.</string>
+    <string name="wallpaper_applied_home_and_lock">Wallpaper applied to home screen and lock screen.</string>
+    <string name="wallpaper_applied_lock">Wallpaper applied to lock screen.</string>
+    <string name="wallpaper_applied_multi_lock">%d wallpapers applied to lock screen.</string>
+    <string name="wallpaper_applied_sview">Wallpaper applied to S View window.</string>
+    <string name="wallpaper_crop_button_done">Done</string>
+    <string name="wallpaper_instructions">Set as wallpaper</string>
+    <string name="wallpaper_lock_gui_cinematic">The appearance of the lock screen will change when you tilt your device left and right.</string>
+</resources>

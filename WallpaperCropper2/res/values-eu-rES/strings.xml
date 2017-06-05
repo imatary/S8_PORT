@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Ezin da %s ireki. Ukitu EZARPENAK, joan Aplikazioaren informazioa > Baimenak aukerara, eman baimen hauek eta saiatu berriz:</string>
+    <string name="all_sim">Guztiak</string>
+    <string name="app_name">Pantaila atzealdea</string>
+    <string name="apply">Aplikatu</string>
+    <string name="can_not_set_wallpaper_image_not_found">Ezin da ezarri irudia horma paper gisa. Irudia ez da aurkitu.</string>
+    <string name="cancel">Ezeztatu</string>
+    <string name="cancle">Ezeztatu</string>
+    <string name="change_wallpaper_when_infinity_applied">Horma paper hau erabiltzen baduzu, efektu amaigabeak desaktibatuko dira.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Egina</string>
+    <string name="duplicate_image">Bikoiztu</string>
+    <string name="expand_image">Zabaldu</string>
+    <string name="fail_to_load">Ezin da argazkia kargatu</string>
+    <string name="home_lock_screen">Hasiera eta blokeo pantailak</string>
+    <string name="home_screen">Hasierako pantaila</string>
+    <string name="homescreen_checkbox_motion_effect">Mugimendu efektua</string>
+    <string name="image_too_small">Irudia txikiegia da</string>
+    <string name="item_restricted">Gai mugatua</string>
+    <string name="left_image">Ezkerra</string>
+    <string name="lock_screen">Blokeo pantaila</string>
+    <string name="motion_effect">Horma paperaren mugimendu efek.</string>
+    <string name="motion_wallpaper_name">Mugimendudun horma papera</string>
+    <string name="notice_low_storage">Ez dago nahikoa espazio. Ezabatu behar ez diren elementuak, adibidez, deskargatutako softwarea, argazkiak, bideoak eta dokumentuak.</string>
+    <string name="permission_description">%s erabiltzeko, ukitu EZARPENAK, zoaz Aplikazioaren informazioa > Baimenak aukerara, eta eman baimen hauek:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Biltegiratzea</string>
+    <string name="processing">Prozesatzen…</string>
+    <string name="request_permission_rationale">Ezin da %1$s erabili. Ukitu EZARPENAK, baimendu %2$s eta saiatu berriz.</string>
+    <string name="right_image">Eskuina</string>
+    <string name="set_wallpaper_docomo_text_gui">Irudia pantaila nagusian eta blokeo pantailan erakutsiko da.</string>
+    <string name="settings">Ezarpenak</string>
+    <string name="speak_button">Botoia</string>
+    <string name="sview_window">S View leihoa</string>
+    <string name="unable_set_wallpaper_image_deleted">Irudia ezin da horma paper gisa ezarri. Irudia ezabatu da.</string>
+    <string name="unable_to_download">Ezin da deskargatu</string>
+    <string name="wallpaper_applied_home">Horma papera aplikatu da pantaila Nagusian.</string>
+    <string name="wallpaper_applied_home_and_lock">Horma papera ezarri da hasierako pantailan eta blokeo pantailan.</string>
+    <string name="wallpaper_applied_lock">Horma papera aplikatu da blokeo pantailan.</string>
+    <string name="wallpaper_applied_multi_lock">%d horma paper aplikatu dira blokeo pantailan.</string>
+    <string name="wallpaper_applied_sview">Aplikatu da horma papera S View leihoan.</string>
+    <string name="wallpaper_crop_button_done">Amait</string>
+    <string name="wallpaper_instructions">Ezarri horma paper gisa</string>
+    <string name="wallpaper_lock_gui_cinematic">Gailua ezkerrera eta eskuinera okertzen duzunean, blokeo pantailaren itxura aldatuko da.</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s ਨੂੰ ਖੋਲ੍ਹਣ ਵਿੱਚ ਅਸਮਰੱਥ। “ਸੈੱਟਿੰਗਸ” ਤੇ ਟੈਪ ਕਰੋ, ਐਪ ਜਾਣਕਾਰੀ > ਅਨੁਮਤੀਆਂ ਤੇ ਜਾਉ, ਫਿਰ ਨਿਮਨਲਿਖਤ ਅਨੁਮਤੀਆਂ ਨੂੰ ਆਗਿਆ ਦਿਉ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ:</string>
+    <string name="all_sim">ਸਭ</string>
+    <string name="app_name">ਵਾਲਪੇਪਰਸ</string>
+    <string name="cancel">ਰੱਦ ਕਰੋ</string>
+    <string name="cancle">ਰੱਦ ਕਰੋ</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="duplicate_image">ਡੁਪਲੀਕੇਟ</string>
+    <string name="expand_image">ਵਿਸਤਾਰ ਕਰੋ</string>
+    <string name="fail_to_load">ਫੋਟੋ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ।</string>
+    <string name="left_image">ਖੱਬਾ</string>
+    <string name="motion_effect">ਵਾਲਪੇਪਰ ਮੋਸ਼ਨ ਪ੍ਰਭਾਵ</string>
+    <string name="notice_low_storage">ਉਚਿਤ ਥਾਂ ਨਹੀਂ ਹੈ। ਬੇਲੋੜ ਆਈਟਮਸ ਜਿਵੇਂ ਕਿ ਡਾਉਨਲੋਡਿਡ ਸੌਫਟਵੇਅਰ, ਤਸਵੀਰਾਂ, ਵੀਡਿਓਜ਼, ਅਤੇ ਦਸਤਾਵੇਜ਼ ਨੂੰ ਮਿਟਾਉ।</string>
+    <string name="permission_description">%s ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ, “ਸੈੱਟਿੰਗਸ” ਤੇ ਟੈਪ ਕਰੋ, ਅਨੁਪ੍ਰਯੋਗ ਜਾਣਕਾਰੀ > ਅਨੁਮਤੀਆਂ ਤੇ ਜਾਉ ਫਿਰ ਨਿਮਨਲਿਖਤ ਅਨੁਮਤੀਆਂ ਨੂੰ ਆਗਿਆ ਦਿਉ:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">ਸਟੋਰੇਜ</string>
+    <string name="processing">ਪ੍ਰਕਿਰਿਆ ਹੋ ਰਹੀ ਹੈ…</string>
+    <string name="request_permission_rationale">%1$s ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ। “ਸੈੱਟਿੰਗਸ” ਤੇ ਟੈਪ ਕਰੋ, ਫਿਰ %2$s ਅਨੁਮਤੀ ਨੂੰ ਆਗਿਆ ਦਿਉ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="right_image">ਸੱਜਾ</string>
+    <string name="settings">ਸੈੱਟਿੰਗਸ</string>
+    <string name="speak_button">ਬਟਨ</string>
+    <string name="unable_set_wallpaper_image_deleted">ਚਿੱਤਰ ਨੂੰ ਵਾਲਪੇਪਰ ਵਜੋਂ ਸੈੱਟ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ। ਚਿੱਤਰ ਮਿਟਾਇਆ ਗਿਆ।</string>
+    <string name="wallpaper_crop_button_done">ਪੂਰਨ</string>
+    <string name="wallpaper_instructions">ਵਾਲਪੇਪਰ ਵਜੋਂ ਸੈੱਟ ਕਰੋ</string>
+</resources>

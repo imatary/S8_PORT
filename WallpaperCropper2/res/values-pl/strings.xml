@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Nie można otworzyć aplikacji %s. Dotknij opcji USTAWIENIA, przejdź do menu Informacje o aplikacji > Uprawnienia, a następnie włącz poniższe uprawnienia i spróbuj ponownie:</string>
+    <string name="all_sim">Wszystkie</string>
+    <string name="app_name">Tapety</string>
+    <string name="apply">Zastosuj</string>
+    <string name="can_not_set_wallpaper_image_not_found">Nie można ustawić obrazu jako tapety. Nie znaleziono obrazu.</string>
+    <string name="cancel">Anuluj</string>
+    <string name="cancle">Anuluj</string>
+    <string name="change_wallpaper_when_infinity_applied">Efekty nieskończoności zostaną wyłączone, jeśli użyjesz tej tapety.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Gotowe</string>
+    <string name="duplicate_image">Kopiuj</string>
+    <string name="expand_image">Rozwiń</string>
+    <string name="fail_to_load">Nie można załadować zdjęcia.</string>
+    <string name="home_lock_screen">Ekran startowy i blokowania</string>
+    <string name="home_screen">Ekran startowy</string>
+    <string name="homescreen_checkbox_motion_effect">Efekt ruchu</string>
+    <string name="image_too_small">Obraz jest zbyt mały.</string>
+    <string name="item_restricted">Element zabroniony</string>
+    <string name="left_image">Lewa</string>
+    <string name="lock_screen">Ekran blokady</string>
+    <string name="motion_effect">Efekt ruchu tapety</string>
+    <string name="motion_wallpaper_name">Ruchoma tapeta</string>
+    <string name="notice_low_storage">Za mało miejsca. Usuń niepotrzebne elementy takie jak pobrane oprogramowanie, obrazy, filmy i dokumenty.</string>
+    <string name="permission_description">Aby używać %s, dotknij opcji USTAWIENIA, przejdź do menu Informacje o aplikacji > Uprawnienia, a następnie włącz poniższe uprawnienia:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Domyślna pamięć</string>
+    <string name="processing">Przetwarzanie…</string>
+    <string name="request_permission_rationale">Nie można używać funkcji %1$s. Dotknij opcji USTAWIENIA, a następnie włącz uprawnienie %2$s i spróbuj ponownie.</string>
+    <string name="right_image">Prawa</string>
+    <string name="set_wallpaper_docomo_text_gui">Ten obraz będzie widoczny na ekranie startowym i ekranie blokady.</string>
+    <string name="settings">Ustawienia</string>
+    <string name="speak_button">Przycisk</string>
+    <string name="sview_window">Okno aplikacji S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Nie można ustawić obrazu jako tapety. Obraz usunięty.</string>
+    <string name="unable_to_download">Nie można pobrać.</string>
+    <string name="wallpaper_applied_home">Tapeta zastosowana na ekranie startowym.</string>
+    <string name="wallpaper_applied_home_and_lock">Tapeta została zastosowana na ekranie startowym i ekranie blokady.</string>
+    <string name="wallpaper_applied_lock">Tapeta zastosowana na ekranie blokady.</string>
+    <string name="wallpaper_applied_multi_lock">Do ekranu blokady zastosowano tapet: %d.</string>
+    <string name="wallpaper_applied_sview">Zastosowano tapetę do okna S View.</string>
+    <string name="wallpaper_crop_button_done">OK</string>
+    <string name="wallpaper_instructions">Ustaw jako tapetę</string>
+    <string name="wallpaper_lock_gui_cinematic">Wygląd ekranu blokady zmieni się, gdy obrócisz urządzenie w lewo i w prawo.</string>
+</resources>

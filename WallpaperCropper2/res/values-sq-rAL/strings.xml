@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Nuk mund të hap %s. Trokit mbi CILËSIMET, shko te Info për app-in > Lejet, pastaj jep lejet e mëposhtme dhe provo sërish:</string>
+    <string name="all_sim">Të gjitha</string>
+    <string name="app_name">Sfondet</string>
+    <string name="apply">Zbato</string>
+    <string name="can_not_set_wallpaper_image_not_found">S’mund ta cilësoj imazhin si letër muri. Imazhi nuk u gjet.</string>
+    <string name="cancel">Anullo</string>
+    <string name="cancle">Anulo</string>
+    <string name="change_wallpaper_when_infinity_applied">Efektet Infinity do të fiken, në qoftë se përdor këtë letër muri.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">U krye</string>
+    <string name="duplicate_image">Dyzo</string>
+    <string name="expand_image">Shpalos</string>
+    <string name="fail_to_load">Nuk mund ta ngarkojë foton.</string>
+    <string name="home_lock_screen">Ekranet bazë dhe kyçje</string>
+    <string name="home_screen">Ekrani kryesor</string>
+    <string name="homescreen_checkbox_motion_effect">Efekt lëvizor</string>
+    <string name="image_too_small">Imazhi është tepër i vogël.</string>
+    <string name="item_restricted">Objekt i kufizuar</string>
+    <string name="left_image">Majtas</string>
+    <string name="lock_screen">Kyç ekranin</string>
+    <string name="motion_effect">Efekti lëvizje, letra e murit</string>
+    <string name="motion_wallpaper_name">Letër muri lëvizore</string>
+    <string name="notice_low_storage">"Nuk ka hapësirë të mjaftueshme. Hiq ndonjë gjë që s'të duhet, p.sh. softuer të shkarkuar, foto, video dhe dokumente."</string>
+    <string name="permission_description">Për të përdorur %s, trokit mbi CILËSIMET, shko te Info për aplikacionin > Lejet, pastaj jep lejet e mëposhtme:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Arkivimi</string>
+    <string name="processing">Duke përpunuar…</string>
+    <string name="request_permission_rationale">Nuk mund ta përdor %1$s. Trokit mbi CILËSIMET, pastaj jep lejen për %2$s dhe provo sërish.</string>
+    <string name="right_image">Djathtas</string>
+    <string name="set_wallpaper_docomo_text_gui">Ky imazh do të tregohet në ekranet e tua bazë dhe të bllokimit.</string>
+    <string name="settings">Cilësimet</string>
+    <string name="speak_button">Buton</string>
+    <string name="sview_window">Dritarja S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Nuk ta cilësoj imazhin si letër muri. Imazhi është hequr.</string>
+    <string name="unable_to_download">Nuk shkarkoj dot.</string>
+    <string name="wallpaper_applied_home">Letra e murit u zbatua në ekranin bazë.</string>
+    <string name="wallpaper_applied_home_and_lock">Letra e murit u zbatua në ekranin bazë dhe në ekranin e bllokimit.</string>
+    <string name="wallpaper_applied_lock">Letra e murit u zbatua në ekranin e bllokimit.</string>
+    <string name="wallpaper_applied_multi_lock">%d letra muri u zbatuan në ekranin e bllokimit.</string>
+    <string name="wallpaper_applied_sview">Letra e murit u zbatua te dritarja S View.</string>
+    <string name="wallpaper_crop_button_done">Kryer</string>
+    <string name="wallpaper_instructions">Cilëso si letër muri</string>
+    <string name="wallpaper_lock_gui_cinematic">Pamja e ekranit të bllokimit do të ndryshojë kur ta anosh pajisjen majtas dhe djathtas.</string>
+</resources>
