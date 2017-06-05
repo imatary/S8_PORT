@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="numberOfAgifItemPerRow">9</integer>
+    <integer name="bottom_rounded_seek_bar_bg_arccenters_bottom">60</integer>
+    <integer name="bottom_rounded_seek_bar_bg_arccenters_left">9</integer>
+    <integer name="bottom_rounded_seek_bar_bg_arccenters_middle">273</integer>
+    <integer name="bottom_rounded_seek_bar_bg_arccenters_top">25</integer>
+    <integer name="bottom_rounded_seek_bar_bg_arcposition_bottom">64</integer>
+    <integer name="bottom_rounded_seek_bar_bg_arcposition_left">8</integer>
+    <integer name="bottom_rounded_seek_bar_bg_arcposition_middle">273</integer>
+    <integer name="bottom_rounded_seek_bar_bg_arcposition_top">24</integer>
+    <integer name="bottom_rounded_seek_bar_bg_arcresolution_height">74</integer>
+    <integer name="bottom_rounded_seek_bar_bg_arcresolution_width">546</integer>
+</resources>

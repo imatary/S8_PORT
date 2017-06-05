@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/pen_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/canvas_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_gravity="center|left" android:orientation="vertical" android:id="@id/zoom_layout_drawing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/zoom_layout_margin_start">
+            <LinearLayout android:id="@id/btn_zoom_in_drawing" android:background="@drawable/zoom_button_background" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/zoom_button_width" android:layout_height="@dimen/zoom_button_height" android:src="@drawable/photo_knox_ic_zoom_in" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/btn_zoom_out_drawing" android:background="@drawable/zoom_button_background" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zoom_button_margin_top">
+                <ImageView android:layout_width="@dimen/zoom_button_width" android:layout_height="@dimen/zoom_button_height" android:src="@drawable/photo_knox_ic_zoom_out" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom|center" android:id="@id/drawing_sub_btn_layout_outer" android:background="@drawable/bottombar_drawing_submenu_bg" android:layout_width="fill_parent" android:layout_height="@dimen/common_bottom_button_height" android:layout_alignParentBottom="true">
+            <HorizontalScrollView android:layout_gravity="bottom|center" android:id="@id/draw_hsv" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:id="@id/drawing_bottom_buttons_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <include android:id="@id/drawing_sub_btn_layout" android:visibility="gone" layout="@layout/drawing_sub_btn_layout" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/action_bar_drawing" android:background="@color/bottom_bar_bg_color_drawing" android:layout_width="fill_parent" android:layout_height="@dimen/sub_actionbar_height">
+            <LinearLayout android:gravity="start|center" android:id="@id/action_bar_drawing_cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <FrameLayout android:id="@id/action_bar_cancel_drawing_bg" android:background="@drawable/actionbar_ripple_background" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/image" android:layout_width="@dimen/sub_actionbar_icon_height" android:layout_height="@dimen/sub_actionbar_icon_height" android:src="@drawable/ic_cancel" android:layout_marginStart="@dimen/text_sub_actionbar_margin_left" android:layout_marginEnd="@dimen/text_sub_actionbar_margin_right" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="end|center" android:id="@id/action_bar_drawing_done" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <FrameLayout android:id="@id/action_bar_done_drawing_bg" android:background="@drawable/actionbar_ripple_background" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/image" android:layout_width="@dimen/sub_actionbar_icon_height" android:layout_height="@dimen/sub_actionbar_icon_height" android:src="@drawable/ic_apply" android:layout_marginStart="@dimen/text_sub_actionbar_margin_right" android:layout_marginEnd="@dimen/text_sub_actionbar_margin_left" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/setting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

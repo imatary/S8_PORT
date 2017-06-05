@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingTop="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/mainImage_agif" android:focusable="true" android:nextFocusRight="@id/delete_layout" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/agif_main_icon_margin" />
+        <FrameLayout android:id="@id/delete_layout" android:focusable="true" android:nextFocusLeft="@id/mainImage_agif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/agif_delete_icon_margin_right" android:layout_alignParentEnd="true">
+            <Button android:id="@id/delete_Image" android:background="@drawable/ic_agif_deleted" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:contentDescription="@string/remove_image" />
+            <ImageView android:id="@id/delete_Image_overlay" android:duplicateParentState="true" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

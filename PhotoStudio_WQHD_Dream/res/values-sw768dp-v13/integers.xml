@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="numberOfAgifItemPerRow">9</integer>
+    <integer name="rounded_degree_title_distance">60</integer>
+    <integer name="rounded_thumb_distance">70</integer>
+    <integer name="shadow_color_straightening">0x00000000</integer>
+</resources>

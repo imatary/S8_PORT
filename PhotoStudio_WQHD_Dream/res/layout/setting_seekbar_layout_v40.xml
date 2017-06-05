@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/seekbar_total_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="@dimen/seekbar_minus_plus_button_parent_size" android:layout_height="@dimen/seekbar_minus_plus_button_parent_size" android:layout_marginTop="@dimen/seekbar_minus_plus_button_parent_margin_top" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/seekbar_minus_parent_margin_start" android:layout_alignParentStart="true">
+        <ImageView android:layout_width="@dimen/seekbar_minus_plus_button_size" android:layout_height="@dimen/seekbar_minus_plus_button_size" android:layout_marginTop="@dimen/seekbar_minus_plus_button_margin" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/seekbar_minus_plus_button_margin" android:layout_alignParentStart="true" />
+        <Button android:layout_width="@dimen/seekbar_minus_plus_button_parent_size" android:layout_height="@dimen/seekbar_minus_plus_button_parent_size" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="@dimen/seekbar_minus_plus_button_parent_size" android:layout_height="@dimen/seekbar_minus_plus_button_parent_size" android:layout_marginTop="@dimen/seekbar_minus_plus_button_parent_margin_top" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/seekbar_plus_button_parent_margin_end" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="@dimen/seekbar_minus_plus_button_size" android:layout_height="@dimen/seekbar_minus_plus_button_size" android:layout_marginTop="@dimen/seekbar_minus_plus_button_margin" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/seekbar_minus_plus_button_margin" android:layout_alignParentEnd="true" />
+        <Button android:layout_width="@dimen/seekbar_minus_plus_button_parent_size" android:layout_height="@dimen/seekbar_minus_plus_button_parent_size" />
+    </RelativeLayout>
+    <SeekBar android:layout_width="@dimen/seekbar_seekbar_width" android:layout_height="@dimen/seekbar_seekbar_height" android:layout_marginTop="@dimen/seekbar_seekbar_margin_top" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/seekbar_minus_plus_button_parent_size" />
+    <RelativeLayout android:background="#ffc7c7c7" android:layout_width="fill_parent" android:layout_height="@dimen/seekbar_divider_height" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/seekbar_divider_margin" android:layout_marginEnd="@dimen/seekbar_divider_margin" />
+    <RelativeLayout android:background="#ffc7c7c7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/seekbar_divider_height" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/seekbar_divider_margin" android:layout_marginEnd="@dimen/seekbar_divider_margin" />
+</RelativeLayout>

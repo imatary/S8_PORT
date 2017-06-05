@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:clickable="true" android:layout_width="@dimen/color_picker_layout_land_width_v42" android:layout_height="@dimen/color_picker_layout_land_height_v42">
+        <RelativeLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/color_picker_title_height_v42">
+            <TextView android:textSize="@dimen/common_title_text_size" android:textColor="#ff676767" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:paddingStart="@dimen/color_picker_title_text_pading_land" android:paddingEnd="@dimen/color_picker_title_text_pading_land" />
+            <TextView android:textSize="@dimen/common_close_button_text_size" android:textColor="#fff46a4e" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/color_picker_title_text_pading_land" android:paddingEnd="@dimen/color_picker_title_text_pading_land" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/color_picker_dialog_preview_bg_shape" android:layout_width="@dimen/color_picker_preview_container_land_width" android:layout_height="@dimen/color_picker_preview_container_land_height" android:layout_marginTop="@dimen/color_picker_preview_container_land_margin_top" android:layout_marginEnd="@dimen/color_picker_preview_container_land_margin_end" android:layout_alignParentEnd="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/color_picker_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <View android:layout_width="@dimen/color_picker_picked_current_color_width" android:layout_height="@dimen/color_picker_preview_height" />
+                <View android:layout_width="@dimen/color_picker_picked_current_color_width" android:layout_height="@dimen/color_picker_preview_height" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/color_picker_current_color_text_size" android:textColor="#ff5d5d5d" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:paddingEnd="@dimen/color_picker_current_color_text_padding" android:layout_toStartOf="@id/color_picker_preview" />
+            <TextView android:textSize="@dimen/color_picker_current_color_text_size" android:textColor="#ff5d5d5d" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:paddingStart="@dimen/color_picker_current_color_text_padding" android:layout_toEndOf="@id/color_picker_preview" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="@dimen/color_picker_color_wheel_land_size" android:layout_height="@dimen/color_picker_color_wheel_land_size" android:layout_marginTop="@dimen/color_picker_color_wheel_land_margin_top" android:layout_marginStart="@dimen/color_picker_color_wheel_land_margin_start">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:layout_width="@dimen/color_picker_cursor_land_size" android:layout_height="@dimen/color_picker_cursor_land_size" />
+                </FrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="@dimen/color_picker_seekbar_land_width" android:layout_height="@dimen/color_picker_seekbar_height" android:layout_marginTop="@dimen/color_picker_seekbar_land_margin_top" android:layout_marginEnd="@dimen/color_picker_seekbar_land_margin_end" android:layout_alignParentEnd="true">
+            <View android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <SeekBar android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/color_picker_seekbar_max_min_height" android:max="255" android:minHeight="@dimen/color_picker_seekbar_max_min_height" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/color_picker_recent_color_height" android:layout_marginTop="@dimen/color_picker_recent_color_land_margin_top" android:layout_marginStart="@dimen/color_picker_recent_color_land_margin_start">
+            <TextView android:textSize="@dimen/color_picker_recent_color_text_size" android:textColor="#ff7e7e7e" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/color_picker_recent_color_text_height" android:layout_marginTop="@dimen/color_picker_recent_color_text_margin_top" android:layout_marginStart="@dimen/color_picker_recent_color_text_margin_start" />
+            <View android:layout_width="@dimen/color_picker_recent_color_item_size" android:layout_height="@dimen/color_picker_recent_color_item_size" android:layout_marginTop="@dimen/color_picker_recent_color_item_margin_top" android:layout_marginStart="@dimen/color_picker_recent_color_item1_margin_start" />
+            <View android:layout_width="@dimen/color_picker_recent_color_item_size" android:layout_height="@dimen/color_picker_recent_color_item_size" android:layout_marginTop="@dimen/color_picker_recent_color_item_margin_top" android:layout_marginStart="@dimen/color_picker_recent_color_item2_margin_start" />
+            <View android:layout_width="@dimen/color_picker_recent_color_item_size" android:layout_height="@dimen/color_picker_recent_color_item_size" android:layout_marginTop="@dimen/color_picker_recent_color_item_margin_top" android:layout_marginStart="@dimen/color_picker_recent_color_item3_margin_start" />
+            <View android:layout_width="@dimen/color_picker_recent_color_item_size" android:layout_height="@dimen/color_picker_recent_color_item_size" android:layout_marginTop="@dimen/color_picker_recent_color_item_margin_top" android:layout_marginStart="@dimen/color_picker_recent_color_item4_margin_start" />
+            <View android:layout_width="@dimen/color_picker_recent_color_item_size" android:layout_height="@dimen/color_picker_recent_color_item_size" android:layout_marginTop="@dimen/color_picker_recent_color_item_margin_top" android:layout_marginStart="@dimen/color_picker_recent_color_item5_margin_start" />
+            <View android:id="@id/color_picker_recent_color_last" android:visibility="gone" android:layout_width="@dimen/color_picker_recent_color_item_size" android:layout_height="@dimen/color_picker_recent_color_item_size" android:layout_marginTop="@dimen/color_picker_recent_color_item_margin_top" android:layout_marginStart="@dimen/color_picker_recent_color_item6_margin_start" />
+            <RelativeLayout android:background="#fffafafa" android:layout_width="@dimen/color_picker_recent_color_item_size" android:layout_height="@dimen/color_picker_recent_color_item_size" android:layout_marginTop="@dimen/color_picker_recent_color_item_margin_top" android:layout_marginStart="@dimen/color_picker_recent_color_item6_margin_start" android:layout_marginEnd="@dimen/color_picker_recent_color_item6_margin_end">
+                <ImageView android:id="@id/color_picker_spuitBtn_view" android:background="@drawable/snote_color_spoid_sdk4" android:layout_width="@dimen/color_picker_recent_color_item_size" android:layout_height="@dimen/color_picker_recent_color_item_size" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="#b2d9d9d9" android:layout_width="@dimen/color_picker_recent_divider_land_width" android:layout_height="@dimen/color_picker_recent_divider_height" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

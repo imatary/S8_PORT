@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:background="@android:color/transparent" android:focusable="true" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="11.0dip" android:layout_alignParentLeft="true" />
+    <ImageButton android:background="@android:color/transparent" android:focusable="true" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="61.0dip" android:layout_alignParentLeft="true" />
+    <ImageButton android:background="@android:color/transparent" android:focusable="true" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="111.0dip" android:layout_alignParentLeft="true" />
+    <ImageButton android:background="@android:color/transparent" android:focusable="true" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="111.0dip" android:layout_alignParentRight="true" />
+    <ImageButton android:background="@android:color/transparent" android:focusable="true" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="61.0dip" android:layout_alignParentRight="true" />
+    <ImageButton android:background="@android:color/transparent" android:focusable="true" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="11.0dip" android:layout_alignParentRight="true" />
+    <ImageView android:background="@android:color/transparent" android:layout_width="35.0dip" android:layout_height="28.0dip" android:layout_centerHorizontal="true" />
+</RelativeLayout>

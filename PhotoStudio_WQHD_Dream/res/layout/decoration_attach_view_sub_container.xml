@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/deco_attach_view_sub_layout" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:id="@id/handler" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="17.0dip" android:layout_above="@id/deco_attach_view_sub_container">
+        <ImageView android:id="@id/handler_image" android:layout_width="16.0dip" android:layout_height="5.0dip" android:src="@drawable/decoration_tab_handler_02" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/deco_attach_view_sub_container" android:paddingTop="3.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/sub_actionbar_height" android:layout_above="@id/deco_attach_view_sub_tab_container">
+        <com.sec.android.mimage.photoretouching.lpe.attach.AttachViewPager android:layout_gravity="bottom" android:id="@id/deco_attach_view_sub_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/deco_attach_view_sub_tab_container" android:background="@android:color/transparent" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/sub_divider" android:background="@color/divider_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" />.
+<com.sec.android.mimage.photoretouching.Decoration.DecorationTabHost android:id="@id/deco_attach_sheet_sub_tab_container" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_below="@id/divider" />
+    </RelativeLayout>
+</FrameLayout>

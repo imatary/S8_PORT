@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="adjustment_bottom_margin">234.0dip</dimen>
+    <dimen name="adjustment_left_margin">13.0dip</dimen>
+    <dimen name="adjustment_right_margin">13.0dip</dimen>
+    <dimen name="adjustment_top_margin">35.0dip</dimen>
+    <dimen name="__cp__recording_size_progressbar_width">229.0dip</dimen>
+</resources>

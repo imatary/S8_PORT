@@ -1,0 +1,51 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: PhotoStudio_WQHD_Dream.apk
+compressionType: false
+doNotCompress:
+- arsc
+- so
+- res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.qmg
+- res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.qmg
+- res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.qmg
+- qmg
+- pio
+- res/drawable-sw600dp-tvdpi-v13/overlay_help_point.9.qmg
+- res/drawable-sw768dp-xhdpi-v13/overlay_help_point.9.qmg
+- res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.qmg
+- res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.qmg
+- res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.qmg
+- res/drawable-xhdpi-v4/decoration_tab_handler_01.9.qmg
+- res/drawable-xhdpi-v4/decoration_tab_handler_02.9.qmg
+- res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.qmg
+- res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.qmg
+- res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.qmg
+- res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.qmg
+- res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.qmg
+- qio
+- res/drawable-xxhdpi-v4/copypaste_quick_popup_bg_mtrl.9.qmg
+- res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.qmg
+- res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.qmg
+- res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.qmg
+- res/drawable-xxxhdpi-v4/overlay_help_point.9.qmg
+- res/drawable/snote_popup_bg.9.qmg
+- res/drawable/toast_popup_holo_dark.9.qmg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '24'
+  targetSdkVersion: '24'
+sharedLibrary: false
+unknownFiles:
+  SEC-INF/buildConfirm.crt: '8'
+  SEC-INF/buildinfo.xml: '8'
+  org/apache/commons/imaging/formats/xpm/rgb.txt: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.2
+versionInfo:
+  versionCode: '212700120'
+  versionName: 2.1.27

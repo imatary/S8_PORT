@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/collage_popup_ratio_01" android:tint="@color/winset_button_text_color_orange" android:tintMode="src_atop"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sub_actionbar_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/sub_layout" android:layout_width="fill_parent" android:layout_height="@dimen/common_bottom_button_height">
+        <LinearLayout style="@style/main_bottom_button_weight_style">
+            <LinearLayout android:id="@id/sub_btn_adjustment_smart_auto" android:onClick="onStateClicked" style="@style/sub_bottom_button_style">
+                <LinearLayout android:id="@id/sub_btn_adjustment_smart_auto_background" style="@style/main_bottom_button_background_style">
+                    <ImageView android:id="@id/smart_auto_img" android:src="@drawable/ic_lasso_auto_shape" style="@style/main_bottom_button_imageview_style" />
+                    <TextView android:id="@id/smart_btn_textview" android:text="@string/auto_shape" style="@style/selection_sub_button_text_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/main_bottom_button_weight_style">
+            <LinearLayout android:id="@id/sub_btn_adjustment_smart_add" android:onClick="onStateClicked" style="@style/sub_bottom_button_style">
+                <LinearLayout android:id="@id/sub_btn_adjustment_smart_add_background" style="@style/main_bottom_button_background_style">
+                    <ImageView android:id="@id/smart_add_img" android:src="@drawable/ic_lasso_add" android:contentDescription="@string/add" style="@style/main_bottom_button_imageview_style" />
+                    <TextView android:id="@id/smart_btn_textview" android:text="@string/add" style="@style/selection_sub_button_text_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/main_bottom_button_weight_style">
+            <LinearLayout android:id="@id/sub_btn_adjustment_smart_sub" android:onClick="onStateClicked" style="@style/sub_bottom_button_style">
+                <LinearLayout android:id="@id/sub_btn_adjustment_smart_sub_background" style="@style/main_bottom_button_background_style">
+                    <ImageView android:id="@id/smart_sub_img" android:src="@drawable/ic_lasso_remove" android:contentDescription="@string/remove" style="@style/main_bottom_button_imageview_style" />
+                    <TextView android:id="@id/smart_btn_textview" android:text="@string/remove" style="@style/selection_sub_button_text_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

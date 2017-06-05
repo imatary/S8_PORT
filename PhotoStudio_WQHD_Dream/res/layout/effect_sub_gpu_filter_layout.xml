@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/effect_id" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onStateClicked"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/effect_gpu_id" android:duplicateParentState="true" android:layout_width="@dimen/sub_effect_thumbnail_width" android:layout_height="@dimen/sub_effect_thumbnail_height" android:layout_marginTop="@dimen/sub_effect_thumbnail_margin" android:layout_marginBottom="@dimen/sub_effect_thumbnail_margin" android:layout_marginStart="@dimen/sub_effect_thumbnail_margin">
+        <view android:id="@id/effect_gpu_icon" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" class="com.sec.android.mimage.photoretouching.lpe.states.Effects$ThumbView" />
+        <ImageView android:layout_gravity="center" android:id="@id/icon_gradiation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/effect_gradiation" android:importantForAccessibility="no" />
+        <TextView android:id="@id/effect_gpu_string" android:importantForAccessibility="no" style="@style/effect_sub_btn_style" />
+        <ImageView android:background="@drawable/effect_subbtn_ripple_background" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/vendor_icon" android:visibility="visible" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="0.0dip" android:layout_marginEnd="0.0dip" />
+    </FrameLayout>
+</LinearLayout>

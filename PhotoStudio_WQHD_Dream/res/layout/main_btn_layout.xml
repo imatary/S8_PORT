@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bottombar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottom_main_buttons" android:layout_width="@dimen/bottom_main_buttons_layout_width" android:layout_height="@dimen/common_bottom_button_height">
+                <LinearLayout style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/adjustment_main_btn" android:onClick="onStateClicked" style="@style/main_bottom_button_style"> // for buttonshape
+<LinearLayout android:id="@id/adj_main_btn_background" style="@style/main_bottom_button_background_style">
+                            <ImageView android:src="@drawable/ic_adjustment" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/adjustment_text" android:text="@string/transform_10" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/tone_main_btn" android:onClick="onStateClicked" style="@style/main_bottom_button_style">
+                        <LinearLayout android:id="@id/tone_main_btn_background" style="@style/main_bottom_button_background_style">
+                            <ImageView android:src="@drawable/ic_tone" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/tone_text" android:text="@string/tone" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/advance_main_btn_layout" style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/advance_main_btn" android:onClick="onStateClicked" style="@style/main_bottom_button_style">
+                        <LinearLayout android:id="@id/advance_main_btn_background" style="@style/main_bottom_button_background_style">
+                            <ImageView android:src="@drawable/ic_advanced" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/advance_text" android:text="@string/advanced" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/effects_main_btn_parent" style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/effects_main_btn" android:onClick="onStateClicked" style="@style/main_bottom_button_style">
+                        <LinearLayout android:id="@id/effects_main_btn_background" style="@style/main_bottom_button_background_style">
+                            <ImageView android:src="@drawable/ic_effect" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/effects_text" android:text="@string/effects" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/portrait_main_btn_layout" style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/portrait_main_btn" android:onClick="onStateClicked" style="@style/main_bottom_button_style">
+                        <LinearLayout android:id="@id/portriat_main_btn_background" style="@style/main_bottom_button_background_style">
+                            <ImageView android:src="@drawable/ic_portrait" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/portrait_text" android:text="@string/portrait" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/main_bottom_button_weight_style">
+                    <LinearLayout android:id="@id/add_image_main_btn" android:onClick="onStateClicked" style="@style/main_bottom_button_style">
+                        <LinearLayout android:id="@id/add_image_main_btn_background" style="@style/main_bottom_button_background_style">
+                            <ImageView android:src="@drawable/ic_decoration" style="@style/main_bottom_button_imageview_style" />
+                            <TextView android:id="@id/add_image_text" android:text="@string/decoration" style="@style/selection_button_text_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </HorizontalScrollView>
+</LinearLayout>

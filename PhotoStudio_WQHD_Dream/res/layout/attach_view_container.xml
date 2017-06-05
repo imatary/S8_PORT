@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/attach_view_layout" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/attach_view_container" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/sub_actionbar_height" android:layout_above="@id/attach_view_tab_container">
+        <com.sec.android.mimage.photoretouching.lpe.attach.AttachViewPager android:layout_gravity="bottom" android:id="@id/attach_view_viewpager" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/attach_view_tab_container" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/divider" android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="@dimen/attach_sheet_divider_height" />.
+<com.sec.android.mimage.photoretouching.lpe.attach.MaterialTabHost android:id="@id/attach_sheet_tab_container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/attach_view_bottom_tab_height" android:layout_below="@id/divider" />
+    </RelativeLayout>
+</FrameLayout>

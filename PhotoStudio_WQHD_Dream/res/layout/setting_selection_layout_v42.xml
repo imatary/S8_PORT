@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:scrollbarSize="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="@dimen/common_total_layout_width" android:layout_height="wrap_content">
+                <ImageView android:id="@id/setting_selection_bg_view" android:background="@drawable/note_handwriting_setting_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/common_bg_margin_top_v42" />
+                <RelativeLayout android:id="@id/setting_selection_view_title" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/common_title_height_eraser_selection_v42">
+                    <ImageView android:visibility="gone" android:layout_width="@dimen/common_indicator_width" android:layout_height="@dimen/common_indicator_height" />
+                    <TextView android:textSize="@dimen/common_title_text_size" android:textColor="#ff676767" android:gravity="start|center" android:layout_width="wrap_content" android:layout_height="@dimen/common_title_layout_height_v42" android:layout_marginTop="@dimen/common_bg_margin_top_v42" android:singleLine="true" android:paddingStart="@dimen/common_title_text_side_margin" android:paddingEnd="@dimen/common_title_text_side_margin" />
+                    <RelativeLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/common_bg_margin_top_v42">
+                        <TextView android:textSize="@dimen/common_close_button_text_size" android:textColor="#fff46a4e" android:gravity="center_vertical" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="0.0dip" android:text="@string/pen_string_close" android:textAllCaps="true" android:paddingStart="@dimen/common_title_text_side_margin" android:paddingEnd="@dimen/common_title_text_side_margin" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/setting_selection_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_title_layout_height_v42">
+                    <RelativeLayout android:id="@id/setting_selection_type" android:paddingTop="@dimen/selection_type_layout_padding_top" android:paddingBottom="@dimen/selection_type_layout_padding_bottom" android:layout_width="wrap_content" android:layout_height="@dimen/selection_type_layout_height">
+                        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/selecton_button_margin_left" android:layout_marginEnd="0.0dip" android:layout_alignParentStart="true" android:elevation="2.0dip">
+                            <ImageView android:gravity="center" android:layout_width="@dimen/selection_button_width" android:layout_height="@dimen/selection_button_height" />
+                            <Button android:gravity="center" android:background="@android:color/transparent" android:focusable="true" android:layout_width="@dimen/selection_button_width" android:layout_height="@dimen/selection_button_height" />
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <ImageView android:id="@id/lasso_image" android:layout_width="wrap_content" android:layout_height="@dimen/selection_button_height" android:layout_marginRight="2.0dip" android:layout_centerVertical="true" />
+                                <TextView android:textSize="@dimen/selection_button_text_size" android:textColor="#ff252525" android:gravity="center_vertical" android:id="@id/lasso_text" android:layout_width="wrap_content" android:layout_height="@dimen/selection_button_height" android:layout_toRightOf="@id/lasso_image" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/selection_button_margin_right" android:layout_alignParentEnd="true" android:elevation="2.0dip">
+                            <ImageView android:gravity="center" android:layout_width="@dimen/selection_button_width" android:layout_height="@dimen/selection_button_height" />
+                            <Button android:gravity="center" android:background="@android:color/transparent" android:focusable="true" android:layout_width="@dimen/selection_button_width" android:layout_height="@dimen/selection_button_height" />
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <ImageView android:id="@id/rectangle_image" android:layout_width="wrap_content" android:layout_height="@dimen/selection_button_height" android:layout_marginRight="2.0dip" android:layout_centerVertical="true" />
+                                <TextView android:textSize="@dimen/selection_button_text_size" android:textColor="#ff252525" android:gravity="center_vertical" android:id="@id/rectangle_text" android:layout_width="wrap_content" android:layout_height="@dimen/selection_button_height" android:layout_toRightOf="@id/rectangle_image" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
