@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uid_label">មេឌៀ</string>
+    <string name="app_label">ឃ្លាំង​ផ្ទុក​មេឌៀ</string>
+    <string name="artist_label">សិល្បករ</string>
+    <string name="ringtone_default">សំឡេង​រោទ៍​លំនាំ​ដើម</string>
+    <string name="ringtones">សំឡេង​រោទ៍</string>
+    <string name="notification_sound_default">សំឡេង​ជូនដំណឹង​លំនាំដើម</string>
+    <string name="root_images">រូប</string>
+    <string name="root_videos">វីដេអូ</string>
+    <string name="root_audio">អូឌីយ៉ូ</string>
+    <string name="drm_licensed_message">មិន​អាច​កំណត់​ខ្លឹមព័ត៌មាន​ដែល​បាន​ការពារ​ដោយ DRM ជា​សំឡេងរោទ៍ ឬ ការប្រាប់​ការជូនដំណឹង។</string>
+    <string name="notification_sound">សំឡេង​ជូន​ដំណឹង</string>
+    <string name="alarm_tone">សំឡេង​ម៉ោង​រោទ៍</string>
+    <string name="done">រួចរាល់</string>
+    <string name="add_ringtone_from_phone">ថែម​ពី​ទូរសព្ទ</string>
+    <string name="add_ringtone_from_tablet">ថែម​ពី​ថេប្លិត</string>
+    <string name="unable_to_play_during_call">មិន​អាច​ចាក់​ក្នុង​អំឡុងពេល​ហៅ។</string>
+    <string name="ok">ព្រម</string>
+    <string name="ringtone_add">ថែម</string>
+    <string name="message_tone">សំឡេង​សារ</string>
+    <string name="noti_mbody_to_use_ps">មិន​អាច​ប្រើ %s</string>
+    <string name="noti_sbody_to_use_ps">ដើម្បី​ប្រើ %s សូម​ប៉ះ ការកំណត់, ចូលទៅ ព័ត៌មាន​កម្មវិធី > ការអនុញ្ញាត រួច​អនុញ្ញាត​ខាងក្រោម៖</string>
+    <string name="noti_button_settings">ការកំណត់</string>
+</resources>
