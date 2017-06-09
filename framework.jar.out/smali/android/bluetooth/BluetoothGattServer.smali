@@ -47,6 +47,8 @@
     .end annotation
 .end field
 
+.field private final mContext:Landroid/content/Context;
+
 .field private mDevice:Ljava/lang/String;
 
 .field private mServerIf:I
@@ -134,7 +136,7 @@
     return p1
 .end method
 
-.method constructor <init>(Landroid/bluetooth/IBluetoothGatt;I)V
+.method constructor <init>(Landroid/content/Context;Landroid/bluetooth/IBluetoothGatt;I)V
     .locals 5
 
     const/4 v4, 0x0
@@ -163,7 +165,9 @@
 
     iput-object v2, p0, Landroid/bluetooth/BluetoothGattServer;->mBluetoothStateChangeCallback:Landroid/bluetooth/IBluetoothStateChangeCallback;
 
-    iput-object p1, p0, Landroid/bluetooth/BluetoothGattServer;->mService:Landroid/bluetooth/IBluetoothGatt;
+    iput-object p1, p0, Landroid/bluetooth/BluetoothGattServer;->mContext:Landroid/content/Context;
+
+    iput-object p2, p0, Landroid/bluetooth/BluetoothGattServer;->mService:Landroid/bluetooth/IBluetoothGatt;
 
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
@@ -175,7 +179,7 @@
 
     iput v4, p0, Landroid/bluetooth/BluetoothGattServer;->mServerIf:I
 
-    iput p2, p0, Landroid/bluetooth/BluetoothGattServer;->mTransport:I
+    iput p3, p0, Landroid/bluetooth/BluetoothGattServer;->mTransport:I
 
     new-instance v2, Ljava/util/ArrayList;
 

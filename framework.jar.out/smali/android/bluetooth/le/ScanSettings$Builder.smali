@@ -144,13 +144,13 @@
 .method public semSetCustomScanParams(II)Landroid/bluetooth/le/ScanSettings$Builder;
     .locals 3
 
-    const/4 v1, 0x3
+    const/16 v1, 0x4000
 
-    if-lt p1, v1, :cond_0
+    const/4 v0, 0x4
 
-    const v0, 0x9f560a
+    if-lt p1, v0, :cond_0
 
-    if-le p1, v0, :cond_1
+    if-le p1, v1, :cond_1
 
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -188,11 +188,9 @@
     throw v0
 
     :cond_1
-    if-lt p2, v1, :cond_0
+    if-lt p2, v0, :cond_0
 
-    const v0, 0x9ff6
-
-    if-gt p2, v0, :cond_0
+    if-gt p2, v1, :cond_0
 
     if-lt p1, p2, :cond_0
 

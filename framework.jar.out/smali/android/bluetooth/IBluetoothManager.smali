@@ -151,14 +151,6 @@
     .end annotation
 .end method
 
-.method public abstract registerSinkServiceChangeCallback(Landroid/bluetooth/IBluetoothSinkServiceChangeCallback;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
 .method public abstract registerStateChangeCallback(Landroid/bluetooth/IBluetoothStateChangeCallback;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -183,14 +175,6 @@
     .end annotation
 .end method
 
-.method public abstract sendSinkServiceChangeCallback(Z)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
 .method public abstract shutdown()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -208,14 +192,6 @@
 .end method
 
 .method public abstract unregisterAdapter(Landroid/bluetooth/IBluetoothManagerCallback;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract unregisterSinkServiceChangeCallback(Landroid/bluetooth/IBluetoothSinkServiceChangeCallback;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

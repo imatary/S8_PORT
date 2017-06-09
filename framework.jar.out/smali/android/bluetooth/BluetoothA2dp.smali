@@ -17,43 +17,23 @@
 
 
 # static fields
-.field public static final ACTION_AVC_NOTI_SELECTED:Ljava/lang/String; = "com.samsung.bluetooth.a2dp.intent.action.AVC_NOTI_SELECTED"
-
-.field public static final ACTION_AVRCP_CONNECTED_WITH_AVC:Ljava/lang/String; = "com.samsung.bluetooth.a2dp.intent.action.AVRCP_CONNECTED_WITH_AVC"
-
 .field public static final ACTION_AVRCP_CONNECTION_STATE_CHANGED:Ljava/lang/String; = "android.bluetooth.a2dp.profile.action.AVRCP_CONNECTION_STATE_CHANGED"
 
 .field public static final ACTION_CONNECTION_STATE_CHANGED:Ljava/lang/String; = "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
-
-.field public static final ACTION_DUAL_PLAY_MODE_ENABLED:Ljava/lang/String; = "com.samsung.bluetooth.a2dp.intent.action.DUAL_PLAY_MODE_ENABLED"
 
 .field public static final ACTION_DUAL_PLAY_NOTI_SELECTED:Ljava/lang/String; = "com.samsung.bluetooth.a2dp.intent.action.DUAL_PLAY_NOTI_SELECTED"
 
 .field public static final ACTION_PLAYING_STATE_CHANGED:Ljava/lang/String; = "android.bluetooth.a2dp.profile.action.PLAYING_STATE_CHANGED"
 
-.field public static final AVC_NOTI_SELECT_CANCEL:I = 0x2
-
-.field public static final AVC_NOTI_SELECT_SETTINGS:I = 0x1
-
 .field private static final DBG:Z
 
 .field public static final DUAL_PLAY_NOTI_SELECT_CANCEL:I = 0x2
 
-.field public static final DUAL_PLAY_NOTI_SELECT_SETTINGS:I = 0x1
-
-.field public static final EXTRA_AVC_NOTI_SELECT_TYPE:Ljava/lang/String; = "com.samsung.bluetooth.a2dp.intent.extra.AVC_NOTI_SELECT_TYPE"
+.field public static final DUAL_PLAY_NOTI_SELECT_ENABLE:I = 0x1
 
 .field public static final EXTRA_DUAL_PLAY_NOTI_SELECT_TYPE:Ljava/lang/String; = "com.samsung.bluetooth.a2dp.intent.extra.DUAL_PLAY_NOTI_SELECT_TYPE"
 
-.field public static final NOTIFICATION_ID_AVC:I = 0x1
-
 .field public static final NOTIFICATION_ID_DUAL_PLAY:I = 0x1
-
-.field public static final NOTIFICATION_ID_DUAL_PLAY_ONGOING:I = 0x2
-
-.field public static final NOTIFICATION_TAG_AVC:Ljava/lang/String; = "bluetooth_absolute_volume_control"
-
-.field public static final NOTIFICATION_TAG_DUAL_PLAY:Ljava/lang/String; = "dual_play"
 
 .field public static final STATE_NOT_PLAYING:I = 0xb
 
@@ -929,27 +909,27 @@
 .end method
 
 .method doBind()Z
-    .locals 12
+    .locals 11
 
-    const/4 v11, 0x0
+    const/4 v10, 0x0
 
-    new-instance v3, Landroid/content/Intent;
+    new-instance v2, Landroid/content/Intent;
 
-    const-class v8, Landroid/bluetooth/IBluetoothA2dp;
+    const-class v7, Landroid/bluetooth/IBluetoothA2dp;
 
-    invoke-virtual {v8}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v7
 
-    invoke-direct {v3, v8}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    iget-object v8, p0, Landroid/bluetooth/BluetoothA2dp;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Landroid/bluetooth/BluetoothA2dp;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v8}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v7}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    move-result-object v8
+    move-result-object v7
 
-    invoke-virtual {v3, v8, v11}, Landroid/content/Intent;->resolveSystemService(Landroid/content/pm/PackageManager;I)Landroid/content/ComponentName;
+    invoke-virtual {v2, v7, v10}, Landroid/content/Intent;->resolveSystemService(Landroid/content/pm/PackageManager;I)Landroid/content/ComponentName;
 
     move-result-object v1
 
@@ -957,188 +937,176 @@
 
     move-result-object v0
 
-    sget-object v8, Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;->KNOX_CONTAINER_VERSION_2_4_0:Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;
+    sget-object v7, Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;->KNOX_CONTAINER_VERSION_2_4_0:Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;
 
-    invoke-static {v8}, Lcom/samsung/android/knox/SemPersonaManager;->isKnoxVersionSupported(Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_2
-
-    invoke-virtual {v0}, Landroid/os/UserHandle;->getIdentifier()I
+    invoke-static {v7}, Lcom/samsung/android/knox/SemPersonaManager;->isKnoxVersionSupported(Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;)Z
 
     move-result v7
 
-    const-string/jumbo v8, "BluetoothA2dp"
+    if-eqz v7, :cond_2
 
-    new-instance v9, Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Landroid/os/UserHandle;->getIdentifier()I
 
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+    move-result v6
 
-    const-string/jumbo v10, "doBind(): CallingUid(myUserHandle) = "
+    const-string/jumbo v7, "BluetoothA2dp"
 
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v9, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string/jumbo v9, "doBind(): CallingUid(myUserHandle) = "
 
-    move-result-object v9
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v8
 
-    move-result-object v9
+    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v8
 
-    const/16 v8, 0x64
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    if-lt v7, v8, :cond_2
+    move-result-object v8
 
-    const/16 v8, 0xc8
+    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-gt v7, v8, :cond_2
+    const/16 v7, 0x64
 
-    const/4 v4, 0x0
+    if-lt v6, v7, :cond_2
+
+    const/16 v7, 0xc8
+
+    if-gt v6, v7, :cond_2
+
+    const/4 v3, 0x0
 
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
 
-    move-result-object v5
+    move-result-object v4
 
-    if-eqz v5, :cond_0
+    if-eqz v4, :cond_0
 
     :try_start_0
-    invoke-interface {v5, v7}, Landroid/sec/enterprise/IEDMProxy;->isKnoxBluetoothEnabled(I)Z
+    invoke-interface {v4, v6}, Landroid/sec/enterprise/IEDMProxy;->isKnoxBluetoothEnabled(I)Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result v4
+    move-result v3
 
     :cond_0
     :goto_0
-    if-nez v4, :cond_1
+    if-nez v3, :cond_1
 
-    const-string/jumbo v8, "BluetoothA2dp"
+    const-string/jumbo v7, "BluetoothA2dp"
 
-    const-string/jumbo v9, "doBind(): Bluetooth for this container is disabled!"
+    const-string/jumbo v8, "doBind(): Bluetooth for this container is disabled!"
 
-    invoke-static {v8, v9}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v7, v8}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    return v11
+    return v10
 
     :catch_0
-    move-exception v6
+    move-exception v5
 
-    const-string/jumbo v8, "BluetoothA2dp"
+    const-string/jumbo v7, "BluetoothA2dp"
 
-    const-string/jumbo v9, "doBind(): isKnoxBluetoothEnabled on EDMProxy failed! "
+    const-string/jumbo v8, "doBind(): isKnoxBluetoothEnabled on EDMProxy failed! "
 
-    invoke-static {v8, v9, v6}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v7, v8, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_0
 
     :cond_1
-    iget-object v8, p0, Landroid/bluetooth/BluetoothA2dp;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Landroid/bluetooth/BluetoothA2dp;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v8}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v7}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    move-result-object v8
+    move-result-object v7
 
-    invoke-virtual {v3, v8, v11, v11}, Landroid/content/Intent;->resolveSystemServiceAsUser(Landroid/content/pm/PackageManager;II)Landroid/content/ComponentName;
+    invoke-virtual {v2, v7, v10, v10}, Landroid/content/Intent;->resolveSystemServiceAsUser(Landroid/content/pm/PackageManager;II)Landroid/content/ComponentName;
 
     move-result-object v1
 
     new-instance v0, Landroid/os/UserHandle;
 
-    invoke-direct {v0, v11}, Landroid/os/UserHandle;-><init>(I)V
+    invoke-direct {v0, v10}, Landroid/os/UserHandle;-><init>(I)V
 
-    const-string/jumbo v8, "BluetoothA2dp"
+    const-string/jumbo v7, "BluetoothA2dp"
 
-    new-instance v9, Ljava/lang/StringBuilder;
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v10, "doBind(): comp = "
+    const-string/jumbo v9, "doBind(): comp = "
 
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v8
 
-    invoke-virtual {v9, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v8
 
-    const-string/jumbo v10, "; bindAsuser = "
+    const-string/jumbo v9, "; bindAsuser = "
 
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v8
 
-    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v8
 
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v8
 
-    invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    invoke-virtual {v3, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+    invoke-virtual {v2, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     if-eqz v1, :cond_3
 
-    :try_start_1
-    iget-object v8, p0, Landroid/bluetooth/BluetoothA2dp;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Landroid/bluetooth/BluetoothA2dp;->mContext:Landroid/content/Context;
 
-    iget-object v9, p0, Landroid/bluetooth/BluetoothA2dp;->mConnection:Landroid/content/ServiceConnection;
+    iget-object v8, p0, Landroid/bluetooth/BluetoothA2dp;->mConnection:Landroid/content/ServiceConnection;
 
-    const/4 v10, 0x0
+    invoke-virtual {v7, v2, v8, v10, v0}, Landroid/content/Context;->bindServiceAsUser(Landroid/content/Intent;Landroid/content/ServiceConnection;ILandroid/os/UserHandle;)Z
 
-    invoke-virtual {v8, v3, v9, v10, v0}, Landroid/content/Context;->bindServiceAsUser(Landroid/content/Intent;Landroid/content/ServiceConnection;ILandroid/os/UserHandle;)Z
+    move-result v7
 
-    move-result v8
+    if-eqz v7, :cond_3
 
-    if-eqz v8, :cond_3
+    const/4 v7, 0x1
 
-    const/4 v8, 0x1
-
-    return v8
+    return v7
 
     :cond_3
-    const-string/jumbo v8, "BluetoothA2dp"
+    const-string/jumbo v7, "BluetoothA2dp"
 
-    new-instance v9, Ljava/lang/StringBuilder;
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v10, "Could not bind to Bluetooth A2DP Service with "
+    const-string/jumbo v9, "Could not bind to Bluetooth A2DP Service with "
 
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v8
 
-    invoke-virtual {v9, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v8
 
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v8
 
-    invoke-static {v8, v9}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1
-    .catch Ljava/lang/SecurityException; {:try_start_1 .. :try_end_1} :catch_1
+    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    return v11
-
-    :catch_1
-    move-exception v2
-
-    invoke-virtual {v2}, Ljava/lang/SecurityException;->printStackTrace()V
-
-    return v11
+    return v10
 .end method
 
 .method public finalize()V
@@ -1671,69 +1639,6 @@
     return v4
 .end method
 
-.method public isAvrcpAbsoluteVolumeDeviceActive()Z
-    .locals 4
-
-    const/4 v3, 0x0
-
-    sget-boolean v1, Landroid/bluetooth/BluetoothA2dp;->DBG:Z
-
-    if-eqz v1, :cond_0
-
-    const-string/jumbo v1, "BluetoothA2dp"
-
-    const-string/jumbo v2, "isAvrcpAbsoluteVolumeDeviceActive"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    iget-object v1, p0, Landroid/bluetooth/BluetoothA2dp;->mService:Landroid/bluetooth/IBluetoothA2dp;
-
-    if-eqz v1, :cond_1
-
-    invoke-direct {p0}, Landroid/bluetooth/BluetoothA2dp;->isEnabled()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    :try_start_0
-    iget-object v1, p0, Landroid/bluetooth/BluetoothA2dp;->mService:Landroid/bluetooth/IBluetoothA2dp;
-
-    invoke-interface {v1}, Landroid/bluetooth/IBluetoothA2dp;->isAvrcpAbsoluteVolumeDeviceActive()Z
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result v1
-
-    return v1
-
-    :catch_0
-    move-exception v0
-
-    const-string/jumbo v1, "BluetoothA2dp"
-
-    const-string/jumbo v2, "Error talking to BT service in isAvrcpAbsoluteVolumeDeviceActive()"
-
-    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    return v3
-
-    :cond_1
-    iget-object v1, p0, Landroid/bluetooth/BluetoothA2dp;->mService:Landroid/bluetooth/IBluetoothA2dp;
-
-    if-nez v1, :cond_2
-
-    const-string/jumbo v1, "BluetoothA2dp"
-
-    const-string/jumbo v2, "Proxy not attached to service"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_2
-    return v3
-.end method
-
 .method public isAvrcpAbsoluteVolumeSupported()Z
     .locals 4
 
@@ -2121,82 +2026,6 @@
     return v0
 .end method
 
-.method public semIsAbsoluteVolumeControl()Z
-    .locals 5
-
-    const/4 v4, 0x0
-
-    iget-object v1, p0, Landroid/bluetooth/BluetoothA2dp;->mService:Landroid/bluetooth/IBluetoothA2dp;
-
-    if-eqz v1, :cond_0
-
-    invoke-direct {p0}, Landroid/bluetooth/BluetoothA2dp;->isEnabled()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    :try_start_0
-    iget-object v1, p0, Landroid/bluetooth/BluetoothA2dp;->mService:Landroid/bluetooth/IBluetoothA2dp;
-
-    invoke-interface {v1}, Landroid/bluetooth/IBluetoothA2dp;->isAbsoluteVolumeControl()Z
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result v1
-
-    return v1
-
-    :catch_0
-    move-exception v0
-
-    const-string/jumbo v1, "BluetoothA2dp"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "Stack:"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    new-instance v3, Ljava/lang/Throwable;
-
-    invoke-direct {v3}, Ljava/lang/Throwable;-><init>()V
-
-    invoke-static {v3}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v4
-
-    :cond_0
-    iget-object v1, p0, Landroid/bluetooth/BluetoothA2dp;->mService:Landroid/bluetooth/IBluetoothA2dp;
-
-    if-nez v1, :cond_1
-
-    const-string/jumbo v1, "BluetoothA2dp"
-
-    const-string/jumbo v2, "Proxy not attached to service"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    return v4
-.end method
-
 .method public semIsDualPlayMode()Z
     .locals 5
 
@@ -2281,108 +2110,6 @@
     move-result v0
 
     return v0
-.end method
-
-.method public setAbsoluteVolumeControl(Z)Z
-    .locals 5
-
-    const/4 v4, 0x0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v2, "setAbsoluteVolumeControl("
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string/jumbo v2, ")"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroid/bluetooth/BluetoothA2dp;->log(Ljava/lang/String;)V
-
-    iget-object v1, p0, Landroid/bluetooth/BluetoothA2dp;->mService:Landroid/bluetooth/IBluetoothA2dp;
-
-    if-eqz v1, :cond_0
-
-    invoke-direct {p0}, Landroid/bluetooth/BluetoothA2dp;->isEnabled()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    :try_start_0
-    iget-object v1, p0, Landroid/bluetooth/BluetoothA2dp;->mService:Landroid/bluetooth/IBluetoothA2dp;
-
-    invoke-interface {v1, p1}, Landroid/bluetooth/IBluetoothA2dp;->setAbsoluteVolumeControl(Z)Z
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result v1
-
-    return v1
-
-    :catch_0
-    move-exception v0
-
-    const-string/jumbo v1, "BluetoothA2dp"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "Stack:"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    new-instance v3, Ljava/lang/Throwable;
-
-    invoke-direct {v3}, Ljava/lang/Throwable;-><init>()V
-
-    invoke-static {v3}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v4
-
-    :cond_0
-    iget-object v1, p0, Landroid/bluetooth/BluetoothA2dp;->mService:Landroid/bluetooth/IBluetoothA2dp;
-
-    if-nez v1, :cond_1
-
-    const-string/jumbo v1, "BluetoothA2dp"
-
-    const-string/jumbo v2, "Proxy not attached to service"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    return v4
 .end method
 
 .method public setAvrcpAbsoluteVolume(I)V

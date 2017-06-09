@@ -96,6 +96,8 @@
 
 .field private mConnState:I
 
+.field private final mContext:Landroid/content/Context;
+
 .field private mDevice:Landroid/bluetooth/BluetoothDevice;
 
 .field private mDeviceBusy:Ljava/lang/Boolean;
@@ -269,7 +271,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/bluetooth/IBluetoothGatt;Landroid/bluetooth/BluetoothDevice;I)V
+.method constructor <init>(Landroid/content/Context;Landroid/bluetooth/IBluetoothGatt;Landroid/bluetooth/BluetoothDevice;I)V
     .locals 5
 
     const/4 v4, 0x0
@@ -302,11 +304,13 @@
 
     iput-object v2, p0, Landroid/bluetooth/BluetoothGatt;->mBluetoothStateChangeCallback:Landroid/bluetooth/IBluetoothStateChangeCallback;
 
-    iput-object p1, p0, Landroid/bluetooth/BluetoothGatt;->mService:Landroid/bluetooth/IBluetoothGatt;
+    iput-object p1, p0, Landroid/bluetooth/BluetoothGatt;->mContext:Landroid/content/Context;
 
-    iput-object p2, p0, Landroid/bluetooth/BluetoothGatt;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iput-object p2, p0, Landroid/bluetooth/BluetoothGatt;->mService:Landroid/bluetooth/IBluetoothGatt;
 
-    iput p3, p0, Landroid/bluetooth/BluetoothGatt;->mTransport:I
+    iput-object p3, p0, Landroid/bluetooth/BluetoothGatt;->mDevice:Landroid/bluetooth/BluetoothDevice;
+
+    iput p4, p0, Landroid/bluetooth/BluetoothGatt;->mTransport:I
 
     new-instance v2, Ljava/util/ArrayList;
 
