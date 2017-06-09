@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:height="@dimen/list_icon_create_height_china" android:width="@dimen/list_icon_create_width" android:drawable="@android:color/transparent" />
+    <item android:state_enabled="false" android:gravity="center" android:height="@dimen/list_icon_create_height_china" android:width="@dimen/list_icon_create_width_china" android:drawable="@drawable/clock_ic_setting_add" />
+</layer-list>

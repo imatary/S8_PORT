@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uid_label">မီဒီယာ</string>
+    <string name="app_label">မီဒီယာသိုလှောင်ခန်း</string>
+    <string name="artist_label">အနုပညာရှင်များ</string>
+    <string name="ringtone_default">မူလသတ်မှတ်ထားသော ဖုန်းမြည်သံ</string>
+    <string name="ringtones">Ringtones</string>
+    <string name="notification_sound_default">သတ်မှတ်ထားသောအသိပေးချက်အသံ</string>
+    <string name="root_images">ရုပ်ပုံများ</string>
+    <string name="root_videos">ဗီဒီယိုများ</string>
+    <string name="root_audio">အသံ</string>
+    <string name="drm_licensed_message">DRM ကာကွယ်ထား အကြောင်းအရာကို ဖုန်းခေါ်တေး သို့မဟုတ် အကြောင်းကြားရေး အချက်ပေးသံ အဖြစ် သတ်မှတ် မရ။</string>
+    <string name="notification_sound">အကြောင်းကြားစာ အသံ</string>
+    <string name="alarm_tone">သတိပေးအသံ</string>
+    <string name="done">ပြီးပါပြီ</string>
+    <string name="add_ringtone_from_phone">ဖုန်းထဲမှ ထည့်ပါ</string>
+    <string name="add_ringtone_from_tablet">တက်ဘလက်ထဲမှ ထည့်ပါ</string>
+    <string name="unable_to_play_during_call">ဖုန်းခေါ်မှုအတွင်း ဖွင့်၍မရပါ။</string>
+    <string name="ok">အိုကေ</string>
+    <string name="ringtone_add">ထပ်ထည့်ပါ</string>
+    <string name="message_tone">မက်ဆေ့ချ်အသံ</string>
+    <string name="noti_mbody_to_use_ps">%s ကို သုံးလို့ မရနိုင်ပါ</string>
+    <string name="noti_sbody_to_use_ps">%s အသုံးပြုရန်၊ “သတ်မှတ်ချက်များ” ကိုနှိပ်ပါ၊ အက်ပ်အင်ဖို > ခွင့်ပြုချက်များသို့သွားပြီး၊ အောက်ပါခွင့်ပြုချက်များကို ခွင့်ပြုပါ :</string>
+    <string name="noti_button_settings">သတ်မှတ်ချက်များ</string>
+</resources>
