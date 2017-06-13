@@ -345,6 +345,10 @@
 
 .field mEmergencyStringId:I
 
+.field private mRebootRecovery:Lcom/android/server/policy/GlobalActions$SinglePressAction;
+
+.field private mRebootDownload:Lcom/android/server/policy/GlobalActions$SinglePressAction;
+
 .field private mForceRestartlayout:Landroid/widget/LinearLayout;
 
 .field private mGlobalActionsFrameLayout:Lcom/android/server/policy/globalactions/GlobalActionsFrameLayout;
@@ -512,6 +516,14 @@
 
 
 # direct methods
+.method static synthetic access$500(Lcom/android/server/policy/GlobalActions;)Landroid/content/Context;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
 .method static synthetic -get0(Lcom/android/server/policy/GlobalActions;)Landroid/net/ConnectivityManager;
     .locals 1
 
@@ -4926,6 +4938,98 @@
 
     iput-object v5, v0, Lcom/android/server/policy/GlobalActions;->mRestart:Lcom/android/server/policy/GlobalActions$SinglePressAction;
 
+    new-instance v4, Lcom/android/server/policy/GlobalActions$RebootRecovery;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const-string v1, "tw_ic_do_restart_square"
+
+    const-string v2, "drawable"
+
+    const-string v3, "android"
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v5
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const-string v1, "global_action_rebootrecovery"
+
+    const-string v2, "string"
+
+    const-string v3, "android"
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v6
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v4, v0, v5, v6}, Lcom/android/server/policy/GlobalActions$RebootRecovery;-><init>(Lcom/android/server/policy/GlobalActions;II)V
+
+    move-object/from16 v0, p0
+
+    iput-object v4, v0, Lcom/android/server/policy/GlobalActions;->mRebootRecovery:Lcom/android/server/policy/GlobalActions$SinglePressAction;
+
+    new-instance v4, Lcom/android/server/policy/GlobalActions$RebootDownload;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const-string v1, "tw_ic_do_restart_square"
+
+    const-string v2, "drawable"
+
+    const-string v3, "android"
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v5
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const-string v1, "global_action_rebootdownload"
+
+    const-string v2, "string"
+
+    const-string v3, "android"
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v6
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v4, v0, v5, v6}, Lcom/android/server/policy/GlobalActions$RebootDownload;-><init>(Lcom/android/server/policy/GlobalActions;II)V
+
+    move-object/from16 v0, p0
+
+    iput-object v4, v0, Lcom/android/server/policy/GlobalActions;->mRebootDownload:Lcom/android/server/policy/GlobalActions$SinglePressAction;
+
     invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
 
     move-result-object v4
@@ -5116,6 +5220,38 @@
     iget-object v5, v0, Lcom/android/server/policy/GlobalActions;->mItems:Ljava/util/ArrayList;
 
     const/16 v6, 0x100
+
+    const/4 v7, 0x1
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v6, v4, v5, v7}, Lcom/android/server/policy/GlobalActions;->addDialogItemsIfEnabled(ILcom/android/server/policy/GlobalActions$Action;Ljava/util/ArrayList;Z)Z
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/android/server/policy/GlobalActions;->mRebootRecovery:Lcom/android/server/policy/GlobalActions$SinglePressAction;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/server/policy/GlobalActions;->mItems:Ljava/util/ArrayList;
+
+    const/16 v6, 0x200
+
+    const/4 v7, 0x1
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v6, v4, v5, v7}, Lcom/android/server/policy/GlobalActions;->addDialogItemsIfEnabled(ILcom/android/server/policy/GlobalActions$Action;Ljava/util/ArrayList;Z)Z
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/android/server/policy/GlobalActions;->mRebootDownload:Lcom/android/server/policy/GlobalActions$SinglePressAction;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/server/policy/GlobalActions;->mItems:Ljava/util/ArrayList;
+
+    const/16 v6, 0x400
 
     const/4 v7, 0x1
 
@@ -5507,7 +5643,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_1c
+    if-eqz v4, :cond_1c1
 
     move-object/from16 v0, p0
 
@@ -5516,6 +5652,48 @@
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/server/policy/GlobalActions;->mEmergency:Lcom/android/server/policy/GlobalActions$ToggleAction;
+
+    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto/16 :goto_7
+
+    :cond_1c1
+    const-string/jumbo v4, "rebootrecovery"
+
+    invoke-virtual {v4, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1c2
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/android/server/policy/GlobalActions;->mItems:Ljava/util/ArrayList;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/server/policy/GlobalActions;->mRebootRecovery:Lcom/android/server/policy/GlobalActions$SinglePressAction;
+
+    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto/16 :goto_7
+
+    :cond_1c2
+    const-string/jumbo v4, "rebootdownload"
+
+    invoke-virtual {v4, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1c
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/android/server/policy/GlobalActions;->mItems:Ljava/util/ArrayList;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/server/policy/GlobalActions;->mRebootDownload:Lcom/android/server/policy/GlobalActions$SinglePressAction;
 
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
