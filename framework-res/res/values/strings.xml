@@ -1835,6 +1835,8 @@ command"</string>
     <string name="share_link_tips_description">%s tips</string>
     <string name="sem_resolver_navigation_desc">Page %1$d of %2$d.</string>
     <string name="global_action_restart">Restart</string>
+    <string name="global_action_rebootrecovery">Recovery mode</string>
+    <string name="global_action_rebootdownload">Download mode</string>
     <string name="restart_confirm_question">Would you like to restart?</string>
     <string name="enterpriseBilling_notification_title">KNOX Enterprise Billing</string>
     <string name="enterpriseBilling_notification_enabled">Enabled</string>

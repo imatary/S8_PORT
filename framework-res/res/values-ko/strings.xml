@@ -1614,6 +1614,8 @@ google.com/accounts/recovery"</string>
     <string name="share_link_tips_description">%s 도움말</string>
     <string name="sem_resolver_navigation_desc">%2$d 페이지 중 %1$d 페이지입니다.</string>
     <string name="global_action_restart">다시 시작</string>
+    <string name="global_action_rebootrecovery">리커버리 모드</string>
+    <string name="global_action_rebootdownload">다운로드 모드</string>
     <string name="restart_confirm_question">다시 시작할까요?</string>
     <string name="enterpriseBilling_notification_enabled">사용 중</string>
     <string name="enterpriseBilling_notification_disabled">사용 안 함</string>
