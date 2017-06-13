@@ -47,9 +47,9 @@
 
 .field private static final RSSI_MIN:I = -0x80
 
-.field private static final SCAN_INTERVAL_MAX:I = 0x4000
+.field private static final SCAN_INTERVAL_MAX:I = 0x9f560a
 
-.field private static final SCAN_INTERVAL_MIN:I = 0x4
+.field private static final SCAN_INTERVAL_MIN:I = 0x3
 
 .field public static final SCAN_MODE_BALANCED:I = 0x1
 
@@ -63,9 +63,9 @@
 
 .field public static final SCAN_RESULT_TYPE_FULL:I = 0x0
 
-.field private static final SCAN_WINDOW_MAX:I = 0x4000
+.field private static final SCAN_WINDOW_MAX:I = 0x9ff6
 
-.field private static final SCAN_WINDOW_MIN:I = 0x4
+.field private static final SCAN_WINDOW_MIN:I = 0x3
 
 .field public static final SEM_MATCH_MODE_CUSTOM:I = 0x65
 

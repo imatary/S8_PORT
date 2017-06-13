@@ -38,7 +38,7 @@
 # instance fields
 .field private mAdapter:Landroid/bluetooth/BluetoothAdapter;
 
-.field private final mBluetoothStateChangeCallback:Landroid/bluetooth/IBluetoothStateChangeCallback;
+.field private final mBluetoothSinkServiceChangeCallback:Landroid/bluetooth/IBluetoothSinkServiceChangeCallback;
 
 .field private final mConnection:Landroid/content/ServiceConnection;
 
@@ -58,7 +58,23 @@
     return v0
 .end method
 
-.method static synthetic -get1(Landroid/bluetooth/BluetoothA2dpSink;)Landroid/content/ServiceConnection;
+.method static synthetic -get1(Landroid/bluetooth/BluetoothA2dpSink;)Landroid/bluetooth/BluetoothAdapter;
+    .locals 1
+
+    iget-object v0, p0, Landroid/bluetooth/BluetoothA2dpSink;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
+
+    return-object v0
+.end method
+
+.method static synthetic -get2(Landroid/bluetooth/BluetoothA2dpSink;)Landroid/bluetooth/IBluetoothSinkServiceChangeCallback;
+    .locals 1
+
+    iget-object v0, p0, Landroid/bluetooth/BluetoothA2dpSink;->mBluetoothSinkServiceChangeCallback:Landroid/bluetooth/IBluetoothSinkServiceChangeCallback;
+
+    return-object v0
+.end method
+
+.method static synthetic -get3(Landroid/bluetooth/BluetoothA2dpSink;)Landroid/content/ServiceConnection;
     .locals 1
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothA2dpSink;->mConnection:Landroid/content/ServiceConnection;
@@ -66,7 +82,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get2(Landroid/bluetooth/BluetoothA2dpSink;)Landroid/content/Context;
+.method static synthetic -get4(Landroid/bluetooth/BluetoothA2dpSink;)Landroid/content/Context;
     .locals 1
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothA2dpSink;->mContext:Landroid/content/Context;
@@ -74,7 +90,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get3(Landroid/bluetooth/BluetoothA2dpSink;)Landroid/bluetooth/IBluetoothA2dpSink;
+.method static synthetic -get5(Landroid/bluetooth/BluetoothA2dpSink;)Landroid/bluetooth/IBluetoothA2dpSink;
     .locals 1
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothA2dpSink;->mService:Landroid/bluetooth/IBluetoothA2dpSink;
@@ -82,7 +98,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get4(Landroid/bluetooth/BluetoothA2dpSink;)Landroid/bluetooth/BluetoothProfile$ServiceListener;
+.method static synthetic -get6(Landroid/bluetooth/BluetoothA2dpSink;)Landroid/bluetooth/BluetoothProfile$ServiceListener;
     .locals 1
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothA2dpSink;->mServiceListener:Landroid/bluetooth/BluetoothProfile$ServiceListener;
@@ -119,7 +135,7 @@
 
     invoke-direct {v2, p0}, Landroid/bluetooth/BluetoothA2dpSink$1;-><init>(Landroid/bluetooth/BluetoothA2dpSink;)V
 
-    iput-object v2, p0, Landroid/bluetooth/BluetoothA2dpSink;->mBluetoothStateChangeCallback:Landroid/bluetooth/IBluetoothStateChangeCallback;
+    iput-object v2, p0, Landroid/bluetooth/BluetoothA2dpSink;->mBluetoothSinkServiceChangeCallback:Landroid/bluetooth/IBluetoothSinkServiceChangeCallback;
 
     new-instance v2, Landroid/bluetooth/BluetoothA2dpSink$2;
 
@@ -146,9 +162,9 @@
     if-eqz v1, :cond_0
 
     :try_start_0
-    iget-object v2, p0, Landroid/bluetooth/BluetoothA2dpSink;->mBluetoothStateChangeCallback:Landroid/bluetooth/IBluetoothStateChangeCallback;
+    iget-object v2, p0, Landroid/bluetooth/BluetoothA2dpSink;->mBluetoothSinkServiceChangeCallback:Landroid/bluetooth/IBluetoothSinkServiceChangeCallback;
 
-    invoke-interface {v1, v2}, Landroid/bluetooth/IBluetoothManager;->registerStateChangeCallback(Landroid/bluetooth/IBluetoothStateChangeCallback;)V
+    invoke-interface {v1, v2}, Landroid/bluetooth/IBluetoothManager;->registerSinkServiceChangeCallback(Landroid/bluetooth/IBluetoothSinkServiceChangeCallback;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -330,9 +346,9 @@
     if-eqz v1, :cond_0
 
     :try_start_0
-    iget-object v3, p0, Landroid/bluetooth/BluetoothA2dpSink;->mBluetoothStateChangeCallback:Landroid/bluetooth/IBluetoothStateChangeCallback;
+    iget-object v3, p0, Landroid/bluetooth/BluetoothA2dpSink;->mBluetoothSinkServiceChangeCallback:Landroid/bluetooth/IBluetoothSinkServiceChangeCallback;
 
-    invoke-interface {v1, v3}, Landroid/bluetooth/IBluetoothManager;->unregisterStateChangeCallback(Landroid/bluetooth/IBluetoothStateChangeCallback;)V
+    invoke-interface {v1, v3}, Landroid/bluetooth/IBluetoothManager;->unregisterSinkServiceChangeCallback(Landroid/bluetooth/IBluetoothSinkServiceChangeCallback;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

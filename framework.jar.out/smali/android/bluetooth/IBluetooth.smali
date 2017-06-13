@@ -183,6 +183,14 @@
     .end annotation
 .end method
 
+.method public abstract getBondedTimeStamp(Landroid/bluetooth/BluetoothDevice;)J
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract getConnectedDeviceList()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -473,7 +481,31 @@
     .end annotation
 .end method
 
-.method public abstract leTestMode(IIII)Z
+.method public abstract leReadPhy(Landroid/bluetooth/BluetoothDevice;)Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract leSetDefaultPhy(III)Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract leSetPhy(Landroid/bluetooth/BluetoothDevice;IIII)Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract leTestMode(IIIIII)Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -618,6 +650,14 @@
 .end method
 
 .method public abstract sendRawHci(I[BI)I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract setBTAdaptivityTest()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

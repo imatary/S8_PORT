@@ -115,6 +115,22 @@
     .end annotation
 .end method
 
+.method public abstract isAbsoluteVolumeControl()Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract isAvrcpAbsoluteVolumeDeviceActive()Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract isAvrcpAbsoluteVolumeSupported()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -140,6 +156,14 @@
 .end method
 
 .method public abstract selectstream(Landroid/bluetooth/BluetoothDevice;)Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract setAbsoluteVolumeControl(Z)Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

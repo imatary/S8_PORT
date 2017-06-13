@@ -201,11 +201,9 @@
 
     if-ne p1, v2, :cond_9
 
-    invoke-virtual {p0}, Landroid/bluetooth/BluetoothClass;->getDeviceClass()I
+    invoke-virtual {p0}, Landroid/bluetooth/BluetoothClass;->getMajorDeviceClass()I
 
     move-result v2
-
-    and-int/lit16 v2, v2, 0x500
 
     const/16 v3, 0x500
 
@@ -240,11 +238,9 @@
     return v0
 
     :cond_b
-    invoke-virtual {p0}, Landroid/bluetooth/BluetoothClass;->getDeviceClass()I
+    invoke-virtual {p0}, Landroid/bluetooth/BluetoothClass;->getMajorDeviceClass()I
 
     move-result v2
-
-    and-int/lit16 v2, v2, 0x300
 
     const/16 v3, 0x300
 
