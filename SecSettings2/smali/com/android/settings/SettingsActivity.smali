@@ -3892,7 +3892,7 @@
     if-nez v45, :cond_15
 
     :cond_15
-    const/16 v35, 0x0
+    const/16 v35, 0x1
 
     new-instance v45, Landroid/content/ComponentName;
 
