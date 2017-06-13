@@ -17262,6 +17262,28 @@
     return v0
 .end method
 
+.method public isDataUsageEnabled()Z
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const-string v1, "qs_data_usage_visible"
+
+    invoke-static {v1, v0}, Lcom/android/wubydax/GearUtils;->getDbIntForKey(Ljava/lang/String;I)I
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    goto :goto_0
+.end method
+
 .method public isDeskAllNotificationViewVisible()Z
     .locals 1
 
@@ -18352,7 +18374,9 @@
 
     invoke-virtual {p0, v2, v2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->setInteracting(IZ)V
 
-    sget-boolean v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_QUICKPANEL_DATAUSAGE:Z
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->isDataUsageEnabled()Z
+
+    move-result v0
 
     if-eqz v0, :cond_2
 
