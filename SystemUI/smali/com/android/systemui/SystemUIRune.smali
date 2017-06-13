@@ -2597,16 +2597,22 @@
 
     sput-boolean v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_FLIGHTMODE_ENABLED_POPUP:Z
 
-    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
+    const/4 v0, 0x0
 
-    move-result-object v0
+    const-string v3, "qs_data_usage_visible"
 
-    const-string/jumbo v3, "CscFeature_SystemUI_SupportDataUsageViewOnQuickPanel"
+    invoke-static {v3, v0}, Lcom/android/wubydax/GearUtils;->getDbIntForKey(Ljava/lang/String;I)I
 
-    invoke-virtual {v0, v3, v1}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;Z)Z
+    move-result v4
 
-    move-result v0
+    if-nez v4, :cond_kyk1
 
+    goto :goto_kyk1
+
+    :cond_kyk1
+    const/4 v0, 0x1
+
+    :goto_kyk1
     sput-boolean v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_QUICKPANEL_DATAUSAGE:Z
 
     const-string/jumbo v0, "CTC"
