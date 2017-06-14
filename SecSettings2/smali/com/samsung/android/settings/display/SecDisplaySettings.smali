@@ -6985,7 +6985,7 @@
     goto/16 :goto_13
 
     :cond_2b
-    const/16 v27, 0x0
+    const/16 v27, 0x1
 
     goto/16 :goto_14
 
