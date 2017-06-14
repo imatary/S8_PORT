@@ -915,6 +915,16 @@
     :goto_9
     sput-boolean v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_TUR_MPTCP:Z
 
+    const/4 v0, 0x1
+
+    const-string v3, "show_operator_logo"
+
+    invoke-static {v3, v0}, Lcom/android/wubydax/GearUtils;->getDbIntForKey(Ljava/lang/String;I)I
+
+    move-result v0
+
+    if-eqz v0, :cond_kyk2
+
     invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
 
     move-result-object v0
@@ -929,6 +939,7 @@
 
     sput-object v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_OPERATOR_LOGO_ICON:Ljava/lang/String;
 
+    :cond_kyk2
     invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
 
     move-result-object v0
