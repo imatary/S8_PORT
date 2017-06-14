@@ -3,5 +3,6 @@
 /*.bat
 /*.cmd
 /*.patch
+/*/AndroidManifest.xml.orig
 /*/build
 /*/dist
