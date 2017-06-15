@@ -62,7 +62,9 @@
     </string-array>
     <string-array name="window_animation_scale_entries">
         <item>Animazione disattivata.</item>
+        <item>Scala animazione a 0.25x</item>
         <item>Scala animazione a 0.5x</item>
+        <item>Scala animazione a 0.75x</item>
         <item>Scala animazione a 1x</item>
         <item>Scala animazione a 1.5x</item>
         <item>Scala animazione a 2x</item>
@@ -71,7 +73,9 @@
     </string-array>
     <string-array name="transition_animation_scale_entries">
         <item>Animazione disattivata.</item>
+        <item>Scala animazione a 0.25x</item>
         <item>Scala animazione a 0.5x</item>
+        <item>Scala animazione a 0.75x</item>
         <item>Scala animazione a 1x</item>
         <item>Scala animazione a 1.5x</item>
         <item>Scala animazione a 2x</item>
@@ -80,7 +84,9 @@
     </string-array>
     <string-array name="animator_duration_scale_entries">
         <item>Animazione disattivata.</item>
+        <item>Scala animazione a 0.25x</item>
         <item>Scala animazione a 0.5x</item>
+        <item>Scala animazione a 0.75x</item>
         <item>Scala animazione a 1x</item>
         <item>Scala animazione a 1.5x</item>
         <item>Scala animazione a 2x</item>

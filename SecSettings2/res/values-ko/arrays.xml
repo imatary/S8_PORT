@@ -61,8 +61,10 @@
         <item>로그 버퍼당 16M</item>
     </string-array>
     <string-array name="window_animation_scale_entries">
-        <item>애니메이션이 해제된 상태입니다.</item>
+        <item>애니메이션 해제</item>
+        <item>애니메이션 배율 0.25x</item>
         <item>애니메이션 배율 0.5x</item>
+        <item>애니메이션 배율 0.75x</item>
         <item>애니메이션 배율 1x</item>
         <item>애니메이션 배율 1.5x</item>
         <item>애니메이션 배율 2x</item>
@@ -70,8 +72,10 @@
         <item>애니메이션 배율 10x</item>
     </string-array>
     <string-array name="transition_animation_scale_entries">
-        <item>애니메이션이 해제된 상태입니다.</item>
+        <item>애니메이션 해제</item>
+        <item>애니메이션 배율 0.25x</item>
         <item>애니메이션 배율 0.5x</item>
+        <item>애니메이션 배율 0.75x</item>
         <item>애니메이션 배율 1x</item>
         <item>애니메이션 배율 1.5x</item>
         <item>애니메이션 배율 2x</item>
@@ -79,8 +83,10 @@
         <item>애니메이션 배율 10x</item>
     </string-array>
     <string-array name="animator_duration_scale_entries">
-        <item>애니메이션이 해제된 상태입니다.</item>
+        <item>애니메이션 해제</item>
+        <item>애니메이션 배율 0.25x</item>
         <item>애니메이션 배율 0.5x</item>
+        <item>애니메이션 배율 0.75x</item>
         <item>애니메이션 배율 1x</item>
         <item>애니메이션 배율 1.5x</item>
         <item>애니메이션 배율 2x</item>
