@@ -271,6 +271,15 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout$3;->this$0:Lcom/sec/android/app/camera/menu/PopupLayout;
 
+    # getter for: Lcom/sec/android/app/camera/menu/PopupLayout;->mReviewShowing:Z
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/PopupLayout;->access$100(Lcom/sec/android/app/camera/menu/PopupLayout;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout$3;->this$0:Lcom/sec/android/app/camera/menu/PopupLayout;
+
     # getter for: Lcom/sec/android/app/camera/menu/PopupLayout;->mReview:Lcom/sec/android/app/camera/menu/Review;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/PopupLayout;->access$000(Lcom/sec/android/app/camera/menu/PopupLayout;)Lcom/sec/android/app/camera/menu/Review;
 
@@ -287,5 +296,6 @@
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/Review;->startShareViaAnimation()V
 
+    :cond_0
     return-void
 .end method

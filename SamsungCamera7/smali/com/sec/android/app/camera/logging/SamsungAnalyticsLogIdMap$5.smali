@@ -65,12 +65,6 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogIdMap$5;->put(ILjava/lang/Object;)V
 
-    const/16 v0, 0x6f
-
-    const-string v1, "0022"
-
-    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogIdMap$5;->put(ILjava/lang/Object;)V
-
     const/16 v0, 0x6e
 
     const-string v1, "0023"
@@ -80,12 +74,6 @@
     const/16 v0, 0x70
 
     const-string v1, "0024"
-
-    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogIdMap$5;->put(ILjava/lang/Object;)V
-
-    const/16 v0, 0x71
-
-    const-string v1, "0025"
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogIdMap$5;->put(ILjava/lang/Object;)V
 
@@ -110,12 +98,6 @@
     const/16 v0, 0x2a
 
     const-string v1, "0035"
-
-    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogIdMap$5;->put(ILjava/lang/Object;)V
-
-    const/16 v0, 0xbbf
-
-    const-string v1, "0036"
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogIdMap$5;->put(ILjava/lang/Object;)V
 

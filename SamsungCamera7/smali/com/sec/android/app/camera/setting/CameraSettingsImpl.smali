@@ -9646,7 +9646,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090251
+    const v1, 0x7f090252
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9661,7 +9661,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090250
+    const v1, 0x7f090251
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9676,7 +9676,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090252
+    const v1, 0x7f090253
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9698,7 +9698,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090256
+    const v1, 0x7f090257
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9713,7 +9713,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090255
+    const v1, 0x7f090256
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9728,7 +9728,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090257
+    const v1, 0x7f090258
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9750,7 +9750,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025f
+    const v1, 0x7f090260
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9765,7 +9765,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090260
+    const v1, 0x7f090261
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9787,7 +9787,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090253
+    const v1, 0x7f090254
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9802,7 +9802,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090254
+    const v1, 0x7f090255
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9824,7 +9824,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025b
+    const v1, 0x7f09025c
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9839,7 +9839,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025c
+    const v1, 0x7f09025d
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9861,7 +9861,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025d
+    const v1, 0x7f09025e
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9876,7 +9876,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025e
+    const v1, 0x7f09025f
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9898,7 +9898,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090258
+    const v1, 0x7f090259
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9913,7 +9913,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025a
+    const v1, 0x7f09025b
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9928,7 +9928,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090259
+    const v1, 0x7f09025a
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9950,7 +9950,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090261
+    const v1, 0x7f090262
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9965,7 +9965,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090262
+    const v1, 0x7f090263
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -12926,23 +12926,8 @@
 .method public getTimer(I)I
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+    if-nez p1, :cond_0
 
-    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->getBackCameraId()I
-
-    move-result v0
-
-    if-eq p1, v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-
-    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->getDualBackCameraId()I
-
-    move-result v0
-
-    if-ne p1, v0, :cond_1
-
-    :cond_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->getBackTimer()I
 
     move-result v0
@@ -12950,7 +12935,7 @@
     :goto_0
     return v0
 
-    :cond_1
+    :cond_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->getFrontTimer()I
 
     move-result v0

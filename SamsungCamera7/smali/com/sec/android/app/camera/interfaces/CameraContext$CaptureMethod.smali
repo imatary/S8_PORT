@@ -26,6 +26,8 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
+.field public static final enum BIXBY_COMMAND:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
+
 .field public static final enum BUTTON:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
 .field public static final enum HRM_SHUTTER:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
@@ -103,7 +105,17 @@
 
     sput-object v0, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->HRM_SHUTTER:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
-    const/4 v0, 0x6
+    new-instance v0, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
+
+    const-string v1, "BIXBY_COMMAND"
+
+    const/4 v2, 0x6
+
+    invoke-direct {v0, v1, v2}, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->BIXBY_COMMAND:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
+
+    const/4 v0, 0x7
 
     new-array v0, v0, [Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
@@ -130,6 +142,12 @@
     const/4 v1, 0x5
 
     sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->HRM_SHUTTER:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x6
+
+    sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->BIXBY_COMMAND:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
     aput-object v2, v0, v1
 

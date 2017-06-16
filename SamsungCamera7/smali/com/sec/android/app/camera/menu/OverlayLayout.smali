@@ -150,6 +150,10 @@
 
 .field private final TOAST_PORTRAIT_TOP_MARGIN:I
 
+.field private final TOAST_SIDE_MARGIN:I
+
+.field private final TOAST_TEXT_HEIGHT_SIZE:F
+
 .field private final TOAST_TEXT_MARGIN:F
 
 .field private final TOAST_WIDTH:I
@@ -312,6 +316,14 @@
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TEXT_SIZE:F
+
+    const v0, 0x7f0a0376
+
+    invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
+
+    move-result v0
+
+    iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_HEIGHT_SIZE:F
 
     const v0, 0x7f0d000f
 
@@ -493,7 +505,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->HELP_TEXT_WIDESELFIE_BOTTOM_MARGIN_PORTRAIT:F
 
-    const v0, 0x7f0a0390
+    const v0, 0x7f0a0392
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -533,7 +545,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->HELP_TEXT_BOTTOM_MARGIN:F
 
-    const v0, 0x7f0a0391
+    const v0, 0x7f0a0393
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1140,6 +1152,16 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_PORTRAIT_TOP_MARGIN:I
 
+    const v0, 0x7f0a0375
+
+    invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
+
+    move-result v0
+
+    float-to-int v0, v0
+
+    iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_SIDE_MARGIN:I
+
     const v0, 0x7f0a000f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -1158,7 +1180,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_MARGIN:F
 
-    const v0, 0x7f0a0375
+    const v0, 0x7f0a0377
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1481,8 +1503,6 @@
 
     goto/16 :goto_0
 
-    nop
-
     :array_0
     .array-data 4
         0x12c
@@ -1534,6 +1554,14 @@
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TEXT_SIZE:F
+
+    const v0, 0x7f0a0376
+
+    invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
+
+    move-result v0
+
+    iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_HEIGHT_SIZE:F
 
     const v0, 0x7f0d000f
 
@@ -1715,7 +1743,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->HELP_TEXT_WIDESELFIE_BOTTOM_MARGIN_PORTRAIT:F
 
-    const v0, 0x7f0a0390
+    const v0, 0x7f0a0392
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1755,7 +1783,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->HELP_TEXT_BOTTOM_MARGIN:F
 
-    const v0, 0x7f0a0391
+    const v0, 0x7f0a0393
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -2362,6 +2390,16 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_PORTRAIT_TOP_MARGIN:I
 
+    const v0, 0x7f0a0375
+
+    invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
+
+    move-result v0
+
+    float-to-int v0, v0
+
+    iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_SIDE_MARGIN:I
+
     const v0, 0x7f0a000f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -2380,7 +2418,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_MARGIN:F
 
-    const v0, 0x7f0a0375
+    const v0, 0x7f0a0377
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -2704,8 +2742,6 @@
     move v0, v3
 
     goto/16 :goto_0
-
-    nop
 
     :array_0
     .array-data 4
@@ -3673,7 +3709,7 @@
 
     if-nez v1, :cond_1
 
-    const v0, 0x7f09022b
+    const v0, 0x7f09022c
 
     goto :goto_0
 
@@ -3688,12 +3724,12 @@
 
     if-ne v1, v2, :cond_0
 
-    const v0, 0x7f09022a
+    const v0, 0x7f09022b
 
     goto :goto_0
 
     :sswitch_6
-    const v0, 0x7f090221
+    const v0, 0x7f090222
 
     goto :goto_0
 
@@ -5710,7 +5746,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v4, 0x7f090332
+    const v4, 0x7f09035d
 
     invoke-static {v4}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -5720,7 +5756,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090333
+    const v4, 0x7f09035e
 
     invoke-static {v4}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -5998,7 +6034,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09028c
+    const v2, 0x7f09028d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6090,7 +6126,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090288
+    const v2, 0x7f090289
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -6169,7 +6205,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090289
+    const v2, 0x7f09028a
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -6246,7 +6282,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09028a
+    const v2, 0x7f09028b
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -6273,7 +6309,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09028b
+    const v2, 0x7f09028c
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -7686,7 +7722,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f09022b
+    const v8, 0x7f09022c
 
     const/4 v9, 0x1
 
@@ -7845,7 +7881,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f09022a
+    const v8, 0x7f09022b
 
     const/4 v9, 0x1
 
@@ -9115,259 +9151,278 @@
 .end method
 
 .method private updateSideQuickSettingToast(Ljava/lang/String;)V
-    .locals 9
+    .locals 11
 
-    const/4 v8, 0x1
+    const/4 v10, 0x1
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
-    const/4 v5, 0x2
+    const/4 v7, 0x2
 
-    const/high16 v6, 0x40000000    # 2.0f
+    const/high16 v8, 0x40000000    # 2.0f
 
-    iget v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_WIDTH:I
-
-    int-to-float v1, v1
-
-    div-float/2addr v1, v6
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getPreviewSurfaceRect()Landroid/graphics/Rect;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/graphics/Rect;->centerX()I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    sub-float v0, v1, v2
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isCoverCamera()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
-
-    invoke-virtual {v1, p1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
-
-    iget v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TEXT_SIZE:F
-
-    invoke-static {p1, v2}, Lcom/sec/android/app/camera/util/Util;->getStringWidth(Ljava/lang/String;F)F
-
-    move-result v2
-
-    invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setWidth(F)V
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
-
-    invoke-virtual {v1, v5, v5}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
-
-    invoke-virtual {v2}, Lcom/samsung/android/glview/GLText;->getWidth()F
-
-    move-result v2
-
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_MARGIN:F
-
-    mul-float/2addr v3, v6
-
-    add-float/2addr v2, v3
-
-    invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setWidth(F)V
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    iget v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_HEIGHT:I
-
-    int-to-float v2, v2
-
-    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    invoke-virtual {v3}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
-
-    move-result v3
-
-    add-float/2addr v2, v3
-
-    div-float/2addr v2, v6
-
-    neg-float v2, v2
-
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_PORTRAIT_TOP_MARGIN:I
-
-    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SIDE_QUICK_SETTING_WIDTH:I
-
-    add-int/2addr v3, v4
+    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_WIDTH:I
 
     int-to-float v3, v3
 
-    invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->moveLayoutAbsolute(FF)V
+    div-float/2addr v3, v8
 
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+    iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    invoke-virtual {v1, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getPreviewSurfaceRect()Landroid/graphics/Rect;
 
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+    move-result-object v4
 
-    invoke-virtual {v1, v8}, Lcom/samsung/android/glview/GLViewGroup;->updateLayout(Z)V
+    invoke-virtual {v4}, Landroid/graphics/Rect;->centerX()I
+
+    move-result v4
+
+    int-to-float v4, v4
+
+    sub-float v1, v3, v4
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isCoverCamera()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
+
+    invoke-virtual {v3, p1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
+
+    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TEXT_SIZE:F
+
+    invoke-static {p1, v4}, Lcom/sec/android/app/camera/util/Util;->getStringWidth(Ljava/lang/String;F)F
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLText;->setWidth(F)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
+
+    invoke-virtual {v3, v7, v7}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
+
+    invoke-virtual {v4}, Lcom/samsung/android/glview/GLText;->getWidth()F
+
+    move-result v4
+
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_MARGIN:F
+
+    mul-float/2addr v5, v8
+
+    add-float/2addr v4, v5
+
+    invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLViewGroup;->setWidth(F)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_HEIGHT:I
+
+    int-to-float v4, v4
+
+    iget-object v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v5}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
+
+    move-result v5
+
+    add-float/2addr v4, v5
+
+    div-float/2addr v4, v8
+
+    neg-float v4, v4
+
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_PORTRAIT_TOP_MARGIN:I
+
+    iget v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SIDE_QUICK_SETTING_WIDTH:I
+
+    add-int/2addr v5, v6
+
+    int-to-float v5, v5
+
+    invoke-virtual {v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->moveLayoutAbsolute(FF)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v3, v9}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCoverSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v3, v10}, Lcom/samsung/android/glview/GLViewGroup;->updateLayout(Z)V
 
     :goto_0
     return-void
 
     :cond_0
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
 
-    invoke-virtual {v1, p1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
+    invoke-virtual {v3, p1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
+    const/4 v0, 0x0
 
-    iget v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TEXT_SIZE:F
+    const/4 v2, 0x1
 
-    invoke-static {p1, v2}, Lcom/sec/android/app/camera/util/Util;->getStringWidth(Ljava/lang/String;F)F
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
 
-    move-result v2
-
-    invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setWidth(F)V
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
-
-    invoke-virtual {v1, v5, v5}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
-
-    invoke-virtual {v2}, Lcom/samsung/android/glview/GLText;->getWidth()F
-
-    move-result v2
-
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_MARGIN:F
-
-    mul-float/2addr v3, v6
-
-    add-float/2addr v2, v3
-
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_HEIGHT:I
-
-    int-to-float v3, v3
-
-    invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setSize(FF)V
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isResizableCamera()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    iget v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_WIDTH:I
-
-    int-to-float v2, v2
-
-    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    invoke-virtual {v3}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
+    invoke-virtual {v3}, Lcom/samsung/android/glview/GLText;->getOrientation()I
 
     move-result v3
 
-    sub-float/2addr v2, v3
+    if-eqz v3, :cond_1
 
-    div-float/2addr v2, v6
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
 
-    sub-float/2addr v2, v0
-
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_LANDSCAPE_TOP_MARGIN:I
-
-    int-to-float v3, v3
-
-    invoke-virtual {v1, v7, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    iget v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_WIDTH:I
-
-    int-to-float v2, v2
-
-    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    invoke-virtual {v3}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
+    invoke-virtual {v3}, Lcom/samsung/android/glview/GLText;->getOrientation()I
 
     move-result v3
 
-    add-float/2addr v2, v3
+    if-ne v3, v7, :cond_2
 
-    div-float/2addr v2, v6
-
-    sub-float/2addr v2, v0
-
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_LANDSCAPE_TOP_MARGIN:I
-
-    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_HEIGHT:I
-
-    add-int/2addr v3, v4
+    :cond_1
+    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_WIDTH:I
 
     int-to-float v3, v3
 
-    invoke-virtual {v1, v5, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
+    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_SIDE_MARGIN:I
 
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+    int-to-float v4, v4
 
-    iget v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_HEIGHT:I
+    mul-float/2addr v4, v8
 
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_PORTRAIT_TOP_MARGIN:I
+    sub-float v0, v3, v4
 
-    add-int/2addr v2, v3
+    :goto_1
+    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TEXT_SIZE:F
 
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SIDE_QUICK_SETTING_WIDTH:I
+    invoke-static {p1, v3}, Lcom/sec/android/app/camera/util/Util;->getStringWidth(Ljava/lang/String;F)F
 
-    add-int/2addr v2, v3
+    move-result v3
 
-    int-to-float v2, v2
+    cmpl-float v3, v3, v0
 
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_HEIGHT:I
+    if-lez v3, :cond_3
 
-    int-to-float v3, v3
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
 
-    iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+    invoke-virtual {v3, v0}, Lcom/samsung/android/glview/GLText;->setWidth(F)V
 
-    invoke-virtual {v4}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
+    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TEXT_SIZE:F
+
+    invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getRobotoRegular()Landroid/graphics/Typeface;
+
+    move-result-object v4
+
+    invoke-static {v0, p1, v3, v4}, Lcom/samsung/android/glview/GLText;->measureRows(FLjava/lang/String;FLandroid/graphics/Typeface;)I
+
+    move-result v2
+
+    :goto_2
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
+
+    iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
+
+    invoke-virtual {v4}, Lcom/samsung/android/glview/GLText;->getWidth()F
 
     move-result v4
 
-    sub-float/2addr v3, v4
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_HEIGHT_SIZE:F
 
-    div-float/2addr v3, v6
+    int-to-float v6, v2
 
-    invoke-virtual {v1, v8, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
+    mul-float/2addr v5, v6
 
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+    iget v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_HEIGHT:I
 
-    const/4 v2, 0x3
+    int-to-float v6, v6
 
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_PORTRAIT_TOP_MARGIN:I
+    add-float/2addr v5, v6
 
-    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SIDE_QUICK_SETTING_WIDTH:I
+    iget v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_HEIGHT_SIZE:F
 
-    add-int/2addr v3, v4
+    sub-float/2addr v5, v6
 
-    int-to-float v3, v3
+    invoke-virtual {v3, v4, v5}, Lcom/samsung/android/glview/GLText;->setSize(FF)V
 
-    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_HEIGHT:I
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
+
+    invoke-virtual {v3, v7, v7}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
+
+    invoke-virtual {v4}, Lcom/samsung/android/glview/GLText;->getWidth()F
+
+    move-result v4
+
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_MARGIN:F
+
+    mul-float/2addr v5, v8
+
+    add-float/2addr v4, v5
+
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_HEIGHT_SIZE:F
+
+    int-to-float v6, v2
+
+    mul-float/2addr v5, v6
+
+    iget v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_HEIGHT:I
+
+    int-to-float v6, v6
+
+    add-float/2addr v5, v6
+
+    iget v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_TEXT_HEIGHT_SIZE:F
+
+    sub-float/2addr v5, v6
+
+    invoke-virtual {v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setSize(FF)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isResizableCamera()Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_WIDTH:I
+
+    int-to-float v4, v4
+
+    iget-object v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v5}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
+
+    move-result v5
+
+    sub-float/2addr v4, v5
+
+    div-float/2addr v4, v8
+
+    sub-float/2addr v4, v1
+
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_LANDSCAPE_TOP_MARGIN:I
+
+    int-to-float v5, v5
+
+    invoke-virtual {v3, v9, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_WIDTH:I
 
     int-to-float v4, v4
 
@@ -9379,45 +9434,141 @@
 
     add-float/2addr v4, v5
 
-    div-float/2addr v4, v6
+    div-float/2addr v4, v8
 
-    invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
+    sub-float/2addr v4, v1
 
-    :goto_1
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_LANDSCAPE_TOP_MARGIN:I
 
-    invoke-virtual {v1, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    iget v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_HEIGHT:I
 
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+    add-int/2addr v5, v6
 
-    invoke-virtual {v1, v8}, Lcom/samsung/android/glview/GLViewGroup;->updateLayout(Z)V
+    int-to-float v5, v5
+
+    invoke-virtual {v3, v7, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_HEIGHT:I
+
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_PORTRAIT_TOP_MARGIN:I
+
+    add-int/2addr v4, v5
+
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SIDE_QUICK_SETTING_WIDTH:I
+
+    add-int/2addr v4, v5
+
+    int-to-float v4, v4
+
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_HEIGHT:I
+
+    int-to-float v5, v5
+
+    iget-object v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v6}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
+
+    move-result v6
+
+    sub-float/2addr v5, v6
+
+    div-float/2addr v5, v8
+
+    invoke-virtual {v3, v10, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    const/4 v4, 0x3
+
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_PORTRAIT_TOP_MARGIN:I
+
+    iget v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SIDE_QUICK_SETTING_WIDTH:I
+
+    add-int/2addr v5, v6
+
+    int-to-float v5, v5
+
+    iget v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_HEIGHT:I
+
+    int-to-float v6, v6
+
+    iget-object v7, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v7}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
+
+    move-result v7
+
+    add-float/2addr v6, v7
+
+    div-float/2addr v6, v8
+
+    invoke-virtual {v3, v4, v5, v6}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
+
+    :goto_3
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v3, v9}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v3, v10}, Lcom/samsung/android/glview/GLViewGroup;->updateLayout(Z)V
 
     goto/16 :goto_0
 
-    :cond_1
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    invoke-virtual {v2}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
-
-    move-result v2
-
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_WIDTH:I
+    :cond_2
+    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_HEIGHT:I
 
     int-to-float v3, v3
 
-    sub-float/2addr v2, v3
+    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_SIDE_MARGIN:I
 
-    neg-float v2, v2
+    int-to-float v4, v4
 
-    div-float/2addr v2, v6
+    mul-float/2addr v4, v8
 
-    const/4 v3, 0x0
+    sub-float v0, v3, v4
 
-    invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->moveLayoutAbsolute(FF)V
+    goto/16 :goto_1
 
-    goto :goto_1
+    :cond_3
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToast:Lcom/samsung/android/glview/GLText;
+
+    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TEXT_SIZE:F
+
+    invoke-static {p1, v4}, Lcom/sec/android/app/camera/util/Util;->getStringWidth(Ljava/lang/String;F)F
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLText;->setWidth(F)V
+
+    goto/16 :goto_2
+
+    :cond_4
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mSideQuickSettingToastGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v4}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
+
+    move-result v4
+
+    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->TOAST_WIDTH:I
+
+    int-to-float v5, v5
+
+    sub-float/2addr v4, v5
+
+    neg-float v4, v4
+
+    div-float/2addr v4, v8
+
+    const/4 v5, 0x0
+
+    invoke-virtual {v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->moveLayoutAbsolute(FF)V
+
+    goto :goto_3
 .end method
 
 
@@ -11125,7 +11276,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mRandomStickerButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f090234
+    const v1, 0x7f090235
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -11484,7 +11635,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mStickerSoundMuteButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f090235
+    const v1, 0x7f090236
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

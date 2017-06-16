@@ -69,7 +69,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
-    const v0, 0x7f0a0375
+    const v0, 0x7f0a0377
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -219,7 +219,7 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0901dd
+    const v1, 0x7f0901de
 
     const/4 v2, 0x1
 

@@ -62,7 +62,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    const v0, 0x7f0a03b0
+    const v0, 0x7f0a03b2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -70,7 +70,7 @@
 
     sput v0, Lcom/sec/android/app/camera/provider/CameraGestureManager;->SWIPE_THRESHOLD_DISTANCE:F
 
-    const v0, 0x7f0a038c
+    const v0, 0x7f0a038e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -94,7 +94,7 @@
 
     sput v0, Lcom/sec/android/app/camera/provider/CameraGestureManager;->SWIPE_THRESHOLD_VELOCITY_PORTRAIT:F
 
-    const v0, 0x7f0a03af
+    const v0, 0x7f0a03b1
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -102,7 +102,7 @@
 
     sput v0, Lcom/sec/android/app/camera/provider/CameraGestureManager;->SWIPE_IGNORE_AREA_PORTRAIT:F
 
-    const v0, 0x7f0a03ae
+    const v0, 0x7f0a03b0
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

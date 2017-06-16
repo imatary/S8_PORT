@@ -201,7 +201,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->VALUE_TEXT_WIDTH:F
 
-    const v0, 0x7f0a0385
+    const v0, 0x7f0a0387
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -251,7 +251,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->INDICATOR_TEXT_COLOR:I
 
-    const v0, 0x7f0a037e
+    const v0, 0x7f0a0380
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -259,7 +259,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->SLIDER_TOP_MARGIN:F
 
-    const v0, 0x7f0a0382
+    const v0, 0x7f0a0384
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -281,7 +281,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->WB_LABEL_GROUP_HEIGHT:F
 
-    const v0, 0x7f0a037f
+    const v0, 0x7f0a0381
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -303,7 +303,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->SLIDER_HEIGHT:F
 
-    const v0, 0x7f0a03cc
+    const v0, 0x7f0a03ce
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -311,7 +311,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->TICK_BAR_HEIGHT:F
 
-    const v0, 0x7f0a03ca
+    const v0, 0x7f0a03cc
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -319,7 +319,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_TEXT_HEIGHT:F
 
-    const v0, 0x7f0a03cb
+    const v0, 0x7f0a03cd
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -343,7 +343,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_TOP_MARGIN:F
 
-    const v0, 0x7f0a03c8
+    const v0, 0x7f0a03ca
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -351,7 +351,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->AUTO_LABEL_WIDTH:F
 
-    const v0, 0x7f0a037c
+    const v0, 0x7f0a037e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -359,7 +359,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->AUTO_LABEL_MARGIN:F
 
-    const v0, 0x7f0a037d
+    const v0, 0x7f0a037f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -830,7 +830,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090335
+    const v3, 0x7f090360
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -861,7 +861,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090334
+    const v3, 0x7f09035f
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -892,7 +892,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090337
+    const v3, 0x7f090362
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -923,7 +923,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090336
+    const v3, 0x7f090361
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

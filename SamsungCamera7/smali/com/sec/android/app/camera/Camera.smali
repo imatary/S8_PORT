@@ -1978,7 +1978,7 @@
     :cond_0
     sget-object v0, Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;->OVERHEAT:Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
-    const v1, 0x7f090291
+    const v1, 0x7f090292
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -2047,7 +2047,7 @@
     :goto_1
     sget-object v1, Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;->LOW_BATTERY:Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
-    const v2, 0x7f090291
+    const v2, 0x7f090292
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -3180,7 +3180,7 @@
     :goto_2
     sget-object v1, Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;->PLUGGED_LOW_BATTERY:Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
-    const v2, 0x7f090291
+    const v2, 0x7f090292
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -3191,7 +3191,7 @@
     goto :goto_1
 
     :cond_3
-    const v1, 0x7f0901e8
+    const v1, 0x7f0901e9
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -5289,7 +5289,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_f
+    if-eqz v3, :cond_e
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera;->updateLatestMediaFromCMH()V
 
@@ -5563,7 +5563,7 @@
 
     sget-boolean v3, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_VOICE_COMMAND:Z
 
-    if-eqz v3, :cond_e
+    if-eqz v3, :cond_d
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -5571,7 +5571,7 @@
 
     move-result v3
 
-    if-ne v3, v8, :cond_e
+    if-ne v3, v8, :cond_d
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -5579,7 +5579,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_d
+    if-nez v3, :cond_d
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -5587,23 +5587,22 @@
 
     move-result v3
 
-    if-eq v3, v8, :cond_e
+    if-eq v3, v8, :cond_d
 
-    :cond_d
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->startVoiceRecognizer()V
 
-    :cond_e
+    :cond_d
     invoke-static {p0}, Lcom/sec/android/app/camera/util/Util;->isScreenReaderActive(Landroid/content/Context;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_10
+    if-eqz v3, :cond_f
 
     invoke-static {p0}, Lcom/sec/android/app/camera/util/Util;->isTalkBackServiceActive(Landroid/content/Context;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_10
+    if-eqz v3, :cond_f
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera;->mDimController:Lcom/sec/android/app/camera/DimController;
 
@@ -5658,7 +5657,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_11
+    if-eqz v3, :cond_10
 
     const-string v3, "Camera7"
 
@@ -5703,19 +5702,19 @@
 
     goto/16 :goto_0
 
-    :cond_f
+    :cond_e
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->updateLatestMedia()V
 
     goto/16 :goto_1
 
-    :cond_10
+    :cond_f
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera;->mDimController:Lcom/sec/android/app/camera/DimController;
 
     invoke-virtual {v3, v11, v9}, Lcom/sec/android/app/camera/DimController;->setButtonDim(II)V
 
     goto :goto_2
 
-    :cond_11
+    :cond_10
     iput-boolean v8, p0, Lcom/sec/android/app/camera/Camera;->mIsMicrophoneEnabled:Z
 
     goto :goto_3
@@ -6600,7 +6599,7 @@
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setFrontFlashMode(I)V
 
-    const v0, 0x7f09024d
+    const v0, 0x7f09024e
 
     invoke-static {p0, v0, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -6974,7 +6973,7 @@
 .method private showEffectRecordingRestrictionToast()V
     .locals 5
 
-    const v4, 0x7f090273
+    const v4, 0x7f090274
 
     const/4 v3, 0x0
 
@@ -6992,7 +6991,7 @@
 
     new-array v0, v2, [Ljava/lang/Object;
 
-    const v1, 0x7f0902b6
+    const v1, 0x7f0902e1
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -7026,7 +7025,7 @@
 
     new-array v0, v2, [Ljava/lang/Object;
 
-    const v1, 0x7f0902b4
+    const v1, 0x7f0902df
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -7437,7 +7436,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0901df
+    const v2, 0x7f0901e0
 
     const/4 v3, 0x1
 
@@ -7509,7 +7508,7 @@
     iput-object v0, p0, Lcom/sec/android/app/camera/Camera;->mNotSupportZoomToast:Landroid/widget/Toast;
 
     :cond_1
-    const v0, 0x7f0901e0
+    const v0, 0x7f0901e1
 
     const/4 v1, 0x0
 
@@ -9069,11 +9068,11 @@
 .method public finishOnError(I)V
     .locals 8
 
-    const v7, 0x7f090291
+    const v7, 0x7f090292
 
-    const v6, 0x7f090275
+    const v6, 0x7f090276
 
-    const v5, 0x7f0901e2
+    const v5, 0x7f0901e3
 
     sget-boolean v2, Lcom/sec/android/app/camera/util/Util;->DEBUG:Z
 
@@ -9236,7 +9235,7 @@
     goto :goto_2
 
     :pswitch_2
-    const v2, 0x7f0901fd
+    const v2, 0x7f0901fe
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -12830,7 +12829,7 @@
 
     if-eqz p1, :cond_17
 
-    const v2, 0x7f0901fd
+    const v2, 0x7f0901fe
 
     invoke-static {p0, v2, v1}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -19647,6 +19646,33 @@
     goto/16 :goto_0
 
     :cond_13
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera;->mCameraExecutorManager:Lcom/sec/android/app/camera/CameraExecutorManager;
+
+    if-eqz v2, :cond_14
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera;->mCameraExecutorManager:Lcom/sec/android/app/camera/CameraExecutorManager;
+
+    invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraExecutorManager;->isBixbyCapturing()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_14
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera;->mCameraExecutorManager:Lcom/sec/android/app/camera/CameraExecutorManager;
+
+    invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraExecutorManager;->isTimerSupportedMode()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_14
+
+    sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->BIXBY_COMMAND:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
+
+    invoke-direct {p0, v2}, Lcom/sec/android/app/camera/Camera;->handleShutterKeyReleased(Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;)Z
+
+    goto/16 :goto_0
+
+    :cond_14
     sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->BUTTON:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
     invoke-direct {p0, v2}, Lcom/sec/android/app/camera/Camera;->handleShutterKeyReleased(Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;)Z
@@ -19654,13 +19680,13 @@
     goto/16 :goto_0
 
     :sswitch_4
-    if-eqz p2, :cond_14
+    if-eqz p2, :cond_15
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->isCanceled()Z
 
     move-result v2
 
-    if-eqz v2, :cond_14
+    if-eqz v2, :cond_15
 
     const/16 v2, 0x82
 
@@ -19668,19 +19694,19 @@
 
     goto/16 :goto_0
 
-    :cond_14
-    if-eq v0, v5, :cond_15
-
-    if-ne v0, v6, :cond_16
-
     :cond_15
+    if-eq v0, v5, :cond_16
+
+    if-ne v0, v6, :cond_17
+
+    :cond_16
     sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->VOLUME_KEY:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
     invoke-direct {p0, v2}, Lcom/sec/android/app/camera/Camera;->handleRecordKeyReleased(Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;)V
 
     goto/16 :goto_0
 
-    :cond_16
+    :cond_17
     sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->BUTTON:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
     invoke-direct {p0, v2}, Lcom/sec/android/app/camera/Camera;->handleRecordKeyReleased(Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;)V
@@ -19714,13 +19740,13 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera;->mAeAfManager:Lcom/sec/android/app/camera/interfaces/AeAfManager;
 
-    if-eqz v2, :cond_17
+    if-eqz v2, :cond_18
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera;->mAeAfManager:Lcom/sec/android/app/camera/interfaces/AeAfManager;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/AeAfManager;->resetTouchAF()V
 
-    :cond_17
+    :cond_18
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
 
     const/16 v3, 0xd
@@ -19732,7 +19758,7 @@
     goto/16 :goto_0
 
     :sswitch_6
-    if-eqz p2, :cond_18
+    if-eqz p2, :cond_19
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getRepeatCount()I
 
@@ -19740,14 +19766,14 @@
 
     if-gtz v2, :cond_0
 
-    :cond_18
+    :cond_19
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->isTimerCounting()Z
 
     move-result v2
 
-    if-nez v2, :cond_19
+    if-nez v2, :cond_1a
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
@@ -19755,7 +19781,7 @@
 
     goto/16 :goto_0
 
-    :cond_19
+    :cond_1a
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFocusMode()I
@@ -19777,6 +19803,8 @@
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->cancelAutoFocus()V
 
     goto/16 :goto_0
+
+    nop
 
     :sswitch_data_0
     .sparse-switch
@@ -21031,6 +21059,10 @@
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera;->mCameraExecutorManager:Lcom/sec/android/app/camera/CameraExecutorManager;
 
     if-eqz v3, :cond_1f
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/Camera;->mCameraExecutorManager:Lcom/sec/android/app/camera/CameraExecutorManager;
+
+    invoke-virtual {v3, v4}, Lcom/sec/android/app/camera/CameraExecutorManager;->setBixbyCapturing(Z)V
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera;->mCameraExecutorManager:Lcom/sec/android/app/camera/CameraExecutorManager;
 
@@ -26124,7 +26156,7 @@
 
     if-nez v2, :cond_1
 
-    const v2, 0x7f09021f
+    const v2, 0x7f090220
 
     invoke-static {p0, v2, v1}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -26372,7 +26404,7 @@
 
     if-nez v0, :cond_2
 
-    const v0, 0x7f09024c
+    const v0, 0x7f09024d
 
     invoke-static {p0, v0, v3}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -26416,7 +26448,7 @@
 
     if-nez v0, :cond_2
 
-    const v0, 0x7f09024b
+    const v0, 0x7f09024c
 
     invoke-static {p0, v0, v3}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -27614,6 +27646,14 @@
 
     if-nez v0, :cond_1
 
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCallStatus()I
+
+    move-result v0
+
+    if-eq v0, v3, :cond_1
+
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->startVoiceRecognizer()V
 
     :cond_1
@@ -27823,7 +27863,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090291
+    const v2, 0x7f090292
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -29795,7 +29835,7 @@
 .method public showNoImagePopup()V
     .locals 6
 
-    const v3, 0x7f0901d8
+    const v3, 0x7f0901d9
 
     const/4 v5, 0x0
 
@@ -29915,7 +29955,7 @@
     goto :goto_1
 
     :cond_5
-    const v2, 0x7f0901d9
+    const v2, 0x7f0901da
 
     const/4 v3, 0x1
 
@@ -29932,7 +29972,7 @@
     goto :goto_1
 
     :cond_6
-    const v2, 0x7f0901da
+    const v2, 0x7f0901db
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -31048,7 +31088,7 @@
     invoke-virtual {v5, v6}, Lcom/sec/android/app/camera/CameraExecutorManager;->setAppList(Ljava/lang/String;)V
 
     :cond_0
-    const v5, 0x7f090228
+    const v5, 0x7f090229
 
     invoke-virtual {p0, v5}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -31122,7 +31162,7 @@
 
     const-string v0, "Camera7"
 
-    const-string v1, "Audio is active, startVoicexecognizer is returned."
+    const-string v1, "Audio is active, startVoiceRecognizer is returned."
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -31156,7 +31196,7 @@
 
     const-string v0, "Camera7"
 
-    const-string v1, "Call is ongoing, startVoicexecognizer is returned."
+    const-string v1, "Call is ongoing, startVoiceRecognizer is returned."
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -31171,7 +31211,7 @@
 
     const-string v0, "Camera7"
 
-    const-string v1, "Music is Active, startVoicexecognizer is returned."
+    const-string v1, "Music is Active, startVoiceRecognizer is returned."
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -31205,7 +31245,6 @@
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/speech/SemSpeechRecognizer;->setListener(Lcom/samsung/android/speech/SemSpeechRecognizer$ResultListener;)V
 
-    :cond_6
     const-string v0, "Camera7"
 
     const-string v2, "start voice recognition."
@@ -31230,6 +31269,20 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw v0
+
+    :cond_6
+    :try_start_1
+    const-string v0, "Camera7"
+
+    const-string v2, "skip start voice recognition, already started"
+
+    invoke-static {v0, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
 .end method
 
 .method public stopCameraSound(Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;)V

@@ -39,7 +39,7 @@
 
     const/4 v6, 0x1
 
-    const v5, 0x7f090225
+    const v5, 0x7f090226
 
     const-string v2, "CameraSettingActivity"
 

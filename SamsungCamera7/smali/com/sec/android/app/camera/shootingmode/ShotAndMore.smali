@@ -246,7 +246,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->PROGRESSBAR_TEXT_BOTTOM_PADDING:I
 
-    const v0, 0x7f0a0392
+    const v0, 0x7f0a0394
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

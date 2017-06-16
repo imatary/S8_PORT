@@ -327,7 +327,7 @@
 
     move-object/from16 v19, v0
 
-    const v20, 0x7f0901f0
+    const v20, 0x7f0901f1
 
     invoke-virtual/range {v19 .. v20}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->getString(I)Ljava/lang/String;
 

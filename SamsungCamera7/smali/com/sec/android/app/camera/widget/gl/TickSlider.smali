@@ -91,7 +91,7 @@
 
     invoke-direct/range {v1 .. v7}, Lcom/samsung/android/glview/GLSlider;-><init>(Lcom/samsung/android/glview/GLContext;FFFFI)V
 
-    const v1, 0x7f0a03cd
+    const v1, 0x7f0a03cf
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -99,7 +99,7 @@
 
     iput v1, p0, Lcom/sec/android/app/camera/widget/gl/TickSlider;->TICK_MARGIN:F
 
-    const v1, 0x7f0a03cc
+    const v1, 0x7f0a03ce
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -107,7 +107,7 @@
 
     iput v1, p0, Lcom/sec/android/app/camera/widget/gl/TickSlider;->TICK_BAR_HEIGHT:F
 
-    const v1, 0x7f0a03c9
+    const v1, 0x7f0a03cb
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -115,7 +115,7 @@
 
     iput v1, p0, Lcom/sec/android/app/camera/widget/gl/TickSlider;->LONG_PRESS_TOUCH_AREA:F
 
-    const v1, 0x7f0a03c7
+    const v1, 0x7f0a03c9
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

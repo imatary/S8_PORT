@@ -154,8 +154,15 @@
 
     if-eq v0, v11, :cond_3
 
+    # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->needToIgnoreDim(I)Z
+    invoke-static {v2, v4}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1500(Lcom/sec/android/app/camera/CameraExecutorManager;I)Z
+
+    move-result v7
+
+    if-nez v7, :cond_3
+
     # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mMenuDimController:Lcom/sec/android/app/camera/DimController;
-    invoke-static {v2}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1500(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/sec/android/app/camera/DimController;
+    invoke-static {v2}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1600(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/sec/android/app/camera/DimController;
 
     move-result-object v7
 
@@ -172,7 +179,7 @@
     if-ne v1, v11, :cond_2
 
     # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mLastLandingState:Ljava/lang/String;
-    invoke-static {v2}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1600(Lcom/sec/android/app/camera/CameraExecutorManager;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1700(Lcom/sec/android/app/camera/CameraExecutorManager;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -205,7 +212,7 @@
 
     :pswitch_2
     # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->processStateTypeChangeSettingBySingleValue(I)V
-    invoke-static {v2, v4}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1700(Lcom/sec/android/app/camera/CameraExecutorManager;I)V
+    invoke-static {v2, v4}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1800(Lcom/sec/android/app/camera/CameraExecutorManager;I)V
 
     goto :goto_0
 
@@ -219,7 +226,7 @@
     move-result v7
 
     # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->processStateTypeChangeSettingByMultiValue(IIZ)V
-    invoke-static {v2, v4, v3, v7}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1800(Lcom/sec/android/app/camera/CameraExecutorManager;IIZ)V
+    invoke-static {v2, v4, v3, v7}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1900(Lcom/sec/android/app/camera/CameraExecutorManager;IIZ)V
 
     goto :goto_0
 
@@ -233,35 +240,35 @@
     move-result v7
 
     # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->processStateTypeShowMenu(IIZ)V
-    invoke-static {v2, v4, v3, v7}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1900(Lcom/sec/android/app/camera/CameraExecutorManager;IIZ)V
+    invoke-static {v2, v4, v3, v7}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$2000(Lcom/sec/android/app/camera/CameraExecutorManager;IIZ)V
 
     goto/16 :goto_0
 
     :pswitch_5
     # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->processStateTypeLaunchToOtherApp(II)V
-    invoke-static {v2, v4, v3}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$2000(Lcom/sec/android/app/camera/CameraExecutorManager;II)V
+    invoke-static {v2, v4, v3}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$2100(Lcom/sec/android/app/camera/CameraExecutorManager;II)V
 
     goto/16 :goto_0
 
     :pswitch_6
     # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->processStateTypeActionCapture(I)V
-    invoke-static {v2, v4}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$2100(Lcom/sec/android/app/camera/CameraExecutorManager;I)V
+    invoke-static {v2, v4}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$2200(Lcom/sec/android/app/camera/CameraExecutorManager;I)V
 
     goto/16 :goto_0
 
     :pswitch_7
     # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->processStateByBuildCommand(I)Z
-    invoke-static {v2, v3}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$2200(Lcom/sec/android/app/camera/CameraExecutorManager;I)Z
+    invoke-static {v2, v3}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$2300(Lcom/sec/android/app/camera/CameraExecutorManager;I)Z
 
     # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mIsWaitCommandResult:Z
-    invoke-static {v2}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$2300(Lcom/sec/android/app/camera/CameraExecutorManager;)Z
+    invoke-static {v2}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$2400(Lcom/sec/android/app/camera/CameraExecutorManager;)Z
 
     move-result v7
 
     if-nez v7, :cond_0
 
     # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->sendResult(Z)V
-    invoke-static {v2, v10}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$2400(Lcom/sec/android/app/camera/CameraExecutorManager;Z)V
+    invoke-static {v2, v10}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$2500(Lcom/sec/android/app/camera/CameraExecutorManager;Z)V
 
     goto/16 :goto_0
 

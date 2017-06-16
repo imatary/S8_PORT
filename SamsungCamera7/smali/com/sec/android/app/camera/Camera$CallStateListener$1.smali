@@ -41,7 +41,7 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const v1, 0x7f0901fb
+    const v1, 0x7f0901fc
 
     const/4 v2, 0x0
 

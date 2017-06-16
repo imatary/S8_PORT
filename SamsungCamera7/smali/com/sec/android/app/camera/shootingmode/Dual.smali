@@ -311,7 +311,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Dual;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
-    const v0, 0x7f0a0375
+    const v0, 0x7f0a0377
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -5214,7 +5214,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901e5
+    const v4, 0x7f0901e6
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5308,7 +5308,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09020b
+    const v4, 0x7f09020c
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5441,7 +5441,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090236
+    const v4, 0x7f090237
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6965,7 +6965,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Dual;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f09027b
+    const v1, 0x7f09027c
 
     const/4 v2, 0x1
 
@@ -6987,7 +6987,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Dual;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f09027a
+    const v1, 0x7f09027b
 
     const/4 v2, 0x1
 

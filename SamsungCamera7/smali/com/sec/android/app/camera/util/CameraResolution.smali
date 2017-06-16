@@ -4092,7 +4092,7 @@
 .method public static getVideoSizeString(Landroid/content/Context;I)Ljava/lang/String;
     .locals 1
 
-    const v0, 0x7f0902b2
+    const v0, 0x7f0902dd
 
     sparse-switch p1, :sswitch_data_0
 
@@ -4104,7 +4104,7 @@
     return-object v0
 
     :sswitch_0
-    const v0, 0x7f0902b6
+    const v0, 0x7f0902e1
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4113,7 +4113,7 @@
     goto :goto_0
 
     :sswitch_1
-    const v0, 0x7f0902b4
+    const v0, 0x7f0902df
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4122,7 +4122,7 @@
     goto :goto_0
 
     :sswitch_2
-    const v0, 0x7f0902b3
+    const v0, 0x7f0902de
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4149,7 +4149,7 @@
     goto :goto_0
 
     :sswitch_5
-    const v0, 0x7f0902b1
+    const v0, 0x7f0902dc
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4158,7 +4158,7 @@
     goto :goto_0
 
     :sswitch_6
-    const v0, 0x7f0902b7
+    const v0, 0x7f0902e2
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4167,7 +4167,7 @@
     goto :goto_0
 
     :sswitch_7
-    const v0, 0x7f0902b5
+    const v0, 0x7f0902e0
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
