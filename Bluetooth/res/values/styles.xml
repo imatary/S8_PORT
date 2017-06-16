@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Material.Settings.Floating" parent="@android:style/Theme.Material.Settings">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="file_transfer_item_label">
+        <item name="android:textAppearance">@android:style/TextAppearance.Material.Body1</item>
+        <item name="android:textColor">@android:color/secondary_text_default_material_light</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginStart">@dimen/content_layout_marginLeft</item>
+        <item name="android:layout_marginEnd">@dimen/content_layout_marginRight</item>
+    </style>
+    <style name="file_transfer_item_content">
+        <item name="android:textAppearance">@android:style/TextAppearance.Material.Subhead</item>
+        <item name="android:textColor">@android:color/primary_text_default_material_light</item>
+        <item name="android:paddingBottom">@dimen/content_layout_marginBottom</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginStart">@dimen/content_layout_marginLeft</item>
+        <item name="android:layout_marginEnd">@dimen/content_layout_marginRight</item>
+    </style>
+    <style name="Transparent" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="BluetoothTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:statusBarColor">@color/bt_history_statusbar</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="BluetoothTheme.Dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog" />
+    <style name="BluetoothTheme.NoActionBar" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
+    <style name="BluetoothTheme.DialogWhenLarge" parent="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth" />
+    <style name="BluetoothTheme.Panel" parent="@android:style/Theme.DeviceDefault.Light.Panel" />
+    <style name="BluetoothTheme.Dialog.Alert" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
+    <style name="BluetoothTheme.ActionBarNoIcon" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:actionBarStyle">@style/BluetoothTheme.noIconAndTextActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">false</item>
+    </style>
+    <style name="BluetoothTheme.noIconAndTextActionBarStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
+        <item name="android:displayOptions">none</item>
+    </style>
+    <style name="HeadsUpNotificationContentLayoutStyle">
+        <item name="android:paddingTop">@dimen/hun_content_layout_padding_top</item>
+        <item name="android:paddingBottom">@dimen/hun_content_layout_padding_bottom</item>
+        <item name="android:paddingStart">@dimen/hun_content_layout_padding_left_right</item>
+        <item name="android:paddingEnd">@dimen/hun_content_layout_padding_left_right</item>
+    </style>
+    <style name="HeadsUpNotificationIconStyle">
+        <item name="android:tint">@color/hun_icon_tint_color</item>
+        <item name="android:layout_marginEnd">@dimen/hun_icon_layout_margin_right</item>
+    </style>
+    <style name="HeadsUpNotificationCallerStyle">
+        <item name="android:textSize">@dimen/hun_caller_text_size</item>
+        <item name="android:textColor">@color/hun_caller_text_color</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">sec-roboto-regular</item>
+    </style>
+    <style name="HeadsUpNotificationTitleStyle">
+        <item name="android:textSize">@dimen/hun_title_text_size</item>
+        <item name="android:textColor">@color/hun_title_text_color</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:layout_marginBottom">2.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">sec-roboto-regular</item>
+    </style>
+    <style name="HeadsUpNotificationDescriptionStyle">
+        <item name="android:textSize">@dimen/hun_description_text_size</item>
+        <item name="android:textColor">@color/hun_description_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:maxHeight">@dimen/hun_description_layout_max_height</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:fontFamily">sec-roboto-regular</item>
+    </style>
+    <style name="HeadsUpNotificationButtonSetLayoutStyle">
+        <item name="android:gravity">end</item>
+        <item name="android:paddingEnd">@dimen/hun_button_set_layout_padding_right</item>
+        <item name="android:layout_marginStart">@dimen/hun_button_set_layout_margin_left_right</item>
+        <item name="android:layout_marginEnd">@dimen/hun_button_set_layout_margin_left_right</item>
+    </style>
+    <style name="HeadsUpNotificationTextButtonStyle">
+        <item name="android:textSize">@dimen/hun_button_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/hun_button_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/notification_button_ripple</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_marginStart">@dimen/hun_button_margin_left</item>
+    </style>
+</resources>
