@@ -7447,6 +7447,49 @@
     return-object v0
 .end method
 
+.method getBondedTimeStamp(Landroid/bluetooth/BluetoothDevice;)J
+    .locals 6
+
+    const-wide/16 v4, 0x0
+
+    const-string/jumbo v1, "android.permission.BLUETOOTH"
+
+    const-string/jumbo v2, "Need BLUETOOTH permission"
+
+    invoke-virtual {p0, v1, v2}, Lcom/android/bluetooth/btservice/AdapterService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v1, "bonded_time_stamp"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p0, v1, v2}, Lcom/android/bluetooth/btservice/AdapterService;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    return-wide v4
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1, v4, v5}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+
+    move-result-wide v2
+
+    return-wide v2
+.end method
+
 .method public getConnectedDeviceList()Ljava/util/ArrayList;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
