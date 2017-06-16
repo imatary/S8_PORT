@@ -1,5 +1,5 @@
 Signature-Version: 1.0
-SHA-256-Digest-Manifest: BJoeklzCrS2+J7V1fts2xMVwHFe1cjKn6tH3GpRWUNo=
+SHA-256-Digest-Manifest: q0vsXVkuz8puWrqF1gdPLaAVgqwl1f1hGkEszLrr2iQ=
 Created-By: 1.0 (Android SignApk)
 
 Name: res/drawable/bg_rect.xml
@@ -222,7 +222,7 @@ Name: res/layout/keyguard_crop_expand_left_lockscreen_activity.xml
 SHA-256-Digest: MWo5Mcr20o/tcRr5yR3bF7nj+ZVTARhDflJnjfQayz0=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: Rc6buyoanC/Ydto5MDt9iagEAJ/MhXJuptlXL5f8gC0=
+SHA-256-Digest: eLobUgvsszV0BwMmXlS0FERxWt16NIA6VrohVbm9uGQ=
 
 Name: res/layout-sw360dp-land-xxhdpi-v13/keyguard_crop_expand_right_lo
  ckscreen_activity.xml
