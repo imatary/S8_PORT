@@ -343,7 +343,7 @@ Name: res/interpolator/sine_in_out_80.xml
 SHA-256-Digest: z67P0Vjh0ku5gUIpG3FWQB0tumdYq2OJaHboGC2NoJw=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: 4Tj9LdBlydjEBosaaxm7sOj8XJ/Qdd2IcjM/O0j33pw=
+SHA-256-Digest: OJg7b3cB7k9Ay/x1m8uwV9CQKY68Qlu1bH4uT4IbjfA=
 
 Name: res/drawable-xxhdpi-v4/common_signin_btn_text_pressed_dark.9.qmg
 SHA-256-Digest: TvzN/Y2O/gVQE/oXkG7l4kx5+tOO2/OYeUjCHedIZbE=
