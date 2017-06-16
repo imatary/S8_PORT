@@ -203,6 +203,8 @@
 
     :array_0
     .array-data 4
+        0x7f020682
+        0x7f020683
         0x7f020684
         0x7f020685
         0x7f020686
@@ -231,9 +233,7 @@
         0x7f02069d
         0x7f02069e
         0x7f02069f
-        0x7f0206a0
-        0x7f0206a1
-        0x7f0206a1
+        0x7f02069f
     .end array-data
 .end method
 

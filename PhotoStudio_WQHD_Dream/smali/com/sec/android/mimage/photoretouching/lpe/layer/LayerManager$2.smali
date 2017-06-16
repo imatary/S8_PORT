@@ -48,7 +48,7 @@
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mExitApp:Z
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$400(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Z
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$600(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Z
 
     move-result v0
 
@@ -81,7 +81,7 @@
 .end method
 
 .method public onDecodeFinished(Landroid/graphics/Bitmap;)V
-    .locals 3
+    .locals 6
 
     iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
@@ -126,7 +126,9 @@
 
     invoke-direct {v2, p0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2$1;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;)V
 
-    invoke-virtual {v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;->post(Ljava/lang/Runnable;)Z
+    const-wide/16 v4, 0xfa
+
+    invoke-virtual {v1, v2, v4, v5}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;->postDelayed(Ljava/lang/Runnable;J)Z
 
     iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 

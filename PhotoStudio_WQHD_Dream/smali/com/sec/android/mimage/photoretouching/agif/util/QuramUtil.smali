@@ -2522,29 +2522,33 @@
 .end method
 
 .method public static setPreviewSize(II)V
-    .locals 4
-
-    const/16 v3, 0x500
-
-    const/16 v2, 0x2d0
+    .locals 2
 
     mul-int v0, p0, p1
 
-    const v1, 0x16da00
+    const v1, 0xe1000
 
-    if-ge v0, v1, :cond_0
+    if-le v0, v1, :cond_0
 
-    sput v3, Lcom/sec/android/mimage/photoretouching/agif/util/QuramUtil;->mPreviewWidth:I
+    const/16 v0, 0x500
 
-    sput v2, Lcom/sec/android/mimage/photoretouching/agif/util/QuramUtil;->mPreviewHeight:I
+    sput v0, Lcom/sec/android/mimage/photoretouching/agif/util/QuramUtil;->mPreviewWidth:I
+
+    const/16 v0, 0x2d0
+
+    sput v0, Lcom/sec/android/mimage/photoretouching/agif/util/QuramUtil;->mPreviewHeight:I
 
     :goto_0
     return-void
 
     :cond_0
-    sput v3, Lcom/sec/android/mimage/photoretouching/agif/util/QuramUtil;->mPreviewWidth:I
+    const/16 v0, 0x3c0
 
-    sput v2, Lcom/sec/android/mimage/photoretouching/agif/util/QuramUtil;->mPreviewHeight:I
+    sput v0, Lcom/sec/android/mimage/photoretouching/agif/util/QuramUtil;->mPreviewWidth:I
+
+    const/16 v0, 0x21c
+
+    sput v0, Lcom/sec/android/mimage/photoretouching/agif/util/QuramUtil;->mPreviewHeight:I
 
     goto :goto_0
 .end method

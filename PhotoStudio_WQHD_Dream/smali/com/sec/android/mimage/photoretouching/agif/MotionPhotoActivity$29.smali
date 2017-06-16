@@ -35,12 +35,19 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 1
+    .locals 3
+
+    const-string v0, "846"
+
+    const-string v1, "8001"
+
+    const-string v2, "Up button"
+
+    invoke-static {v0, v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->insertEventSALog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$29;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->doSaveClick()V
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$4600(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
+    invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->onBackPressed()V
 
     return-void
 .end method

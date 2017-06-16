@@ -251,7 +251,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f08057b
+    const v5, 0x7f08057c
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -777,7 +777,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0c0080
+    const v6, 0x7f0c0081
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1168,7 +1168,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0c006a
+    const v6, 0x7f0c006b
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1213,7 +1213,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0c006a
+    const v6, 0x7f0c006b
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2016,7 +2016,7 @@
     if-eqz v0, :cond_1
 
     :cond_0
-    const v0, 0x7f0c0080
+    const v0, 0x7f0c0081
 
     :goto_0
     return v0
@@ -2034,12 +2034,12 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f0c006a
+    const v0, 0x7f0c006b
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f0c0093
+    const v0, 0x7f0c0094
 
     goto :goto_0
 .end method
@@ -2294,7 +2294,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0204f4
+    const v9, 0x7f0204f2
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

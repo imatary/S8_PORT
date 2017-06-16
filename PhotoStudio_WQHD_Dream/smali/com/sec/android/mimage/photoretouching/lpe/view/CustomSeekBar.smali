@@ -685,7 +685,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c009c
+    const v2, 0x7f0c009d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -701,7 +701,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c00a9
+    const v2, 0x7f0c00aa
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -797,7 +797,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c009c
+    const v2, 0x7f0c009d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -813,7 +813,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c00a9
+    const v2, 0x7f0c00aa
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1283,7 +1283,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c009d
+    const v2, 0x7f0c009e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1299,7 +1299,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c00a8
+    const v2, 0x7f0c00a9
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1346,7 +1346,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c009d
+    const v2, 0x7f0c009e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1362,7 +1362,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c00a8
+    const v2, 0x7f0c00a9
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2238,13 +2238,13 @@
 .method public setTitle(Ljava/lang/String;)V
     .locals 7
 
-    const v6, 0x7f0c00a9
+    const v6, 0x7f0c00aa
 
-    const v5, 0x7f0c00a8
+    const v5, 0x7f0c00a9
 
-    const v4, 0x7f0c009d
+    const v4, 0x7f0c009e
 
-    const v3, 0x7f0c009c
+    const v3, 0x7f0c009d
 
     const/4 v2, 0x1
 

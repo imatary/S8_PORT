@@ -3916,9 +3916,9 @@
 .method private setBackgrounds()V
     .locals 5
 
-    const v4, 0x7f0206b7
+    const v4, 0x7f0206b5
 
-    const v3, 0x7f0206a5
+    const v3, 0x7f0206a3
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;->mContext:Landroid/content/Context;
 
@@ -3942,7 +3942,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    const v1, 0x7f0e01ba
+    const v1, 0x7f0e01b9
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -4401,7 +4401,7 @@
 
     const v2, 0x7f0e01a0
 
-    const v4, 0x7f0c0098
+    const v4, 0x7f0c0099
 
     const/high16 v3, 0x3f000000    # 0.5f
 
@@ -5006,7 +5006,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f080538
+    const v9, 0x7f080539
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -5091,7 +5091,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0805a3
+    const v9, 0x7f0805a5
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -5323,7 +5323,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0805a3
+    const v3, 0x7f0805a5
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6508,7 +6508,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0805a3
+    const v11, 0x7f0805a5
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6778,7 +6778,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f080523
+    const v3, 0x7f080524
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6808,7 +6808,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f080513
+    const v4, 0x7f080514
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -7010,9 +7010,9 @@
 
     const v4, 0x7f0804ae
 
-    const v5, 0x7f0805a4
+    const v5, 0x7f0805a6
 
-    const v6, 0x7f0805a4
+    const v6, 0x7f0805a6
 
     const/4 v7, 0x0
 
@@ -7030,9 +7030,9 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x7f0805a4
+    const v5, 0x7f0805a6
 
-    const v6, 0x7f0805a4
+    const v6, 0x7f0805a6
 
     const/4 v7, 0x0
 
@@ -7081,7 +7081,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    const v2, 0x7f0206a5
+    const v2, 0x7f0206a3
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
@@ -7099,7 +7099,7 @@
 
     const/4 v6, 0x0
 
-    const v7, 0x7f080513
+    const v7, 0x7f080514
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateFrameLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -7127,7 +7127,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f080513
+    const v6, 0x7f080514
 
     const/4 v7, 0x0
 
@@ -7194,9 +7194,9 @@
 
     const v5, 0x7f080218
 
-    const v6, 0x7f080540
+    const v6, 0x7f080541
 
-    const v7, 0x7f080540
+    const v7, 0x7f080541
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateLinearLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -7220,9 +7220,9 @@
 
     const v5, 0x7f080364
 
-    const v6, 0x7f080540
+    const v6, 0x7f080541
 
-    const v7, 0x7f080540
+    const v7, 0x7f080541
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateLinearLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -7239,9 +7239,9 @@
 
     const v5, 0x7f080218
 
-    const v6, 0x7f080540
+    const v6, 0x7f080541
 
-    const v7, 0x7f080540
+    const v7, 0x7f080541
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateLinearLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -7483,7 +7483,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080526
+    const v8, 0x7f080527
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -7525,7 +7525,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0805a3
+    const v8, 0x7f0805a5
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -9342,9 +9342,9 @@
 .method public initUI()V
     .locals 11
 
-    const v10, 0x7f0c002b
+    const v10, 0x7f0c002c
 
-    const v6, 0x7f0206ae
+    const v6, 0x7f0206ac
 
     const/16 v9, 0x9c4
 
@@ -9449,7 +9449,7 @@
 
     iget-object v4, p0, Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0c0029
+    const v5, 0x7f0c002a
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getColor(I)I
 
@@ -9461,7 +9461,7 @@
 
     iget-object v4, p0, Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0c002a
+    const v5, 0x7f0c002b
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getColor(I)I
 
@@ -14501,7 +14501,7 @@
 
     move-result-object v21
 
-    const v22, 0x7f080540
+    const v22, 0x7f080541
 
     invoke-virtual/range {v21 .. v22}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -14626,7 +14626,7 @@
 
     move-result-object v20
 
-    const v21, 0x7f0805b0
+    const v21, 0x7f0805b2
 
     invoke-virtual/range {v20 .. v21}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -14781,7 +14781,7 @@
 
     move-result-object v20
 
-    const v21, 0x7f0805af
+    const v21, 0x7f0805b1
 
     invoke-virtual/range {v20 .. v21}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -16581,7 +16581,7 @@
 
     const v4, 0x7f08021f
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;->mContext:Landroid/content/Context;
 
@@ -16595,7 +16595,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    const v1, 0x7f0206a5
+    const v1, 0x7f0206a3
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
@@ -16710,7 +16710,7 @@
 
     const v12, 0x7f080264
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;->mContext:Landroid/content/Context;
 
@@ -16720,7 +16720,7 @@
 
     const v4, 0x7f0801fc
 
-    const v6, 0x7f0805a3
+    const v6, 0x7f0805a5
 
     move v7, v5
 
@@ -16788,7 +16788,7 @@
 
     check-cast v0, Landroid/widget/HorizontalScrollView;
 
-    const v2, 0x7f0206a5
+    const v2, 0x7f0206a3
 
     invoke-virtual {v0, v2}, Landroid/widget/HorizontalScrollView;->setBackgroundResource(I)V
 
@@ -16864,7 +16864,7 @@
 
     const/4 v9, -0x1
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
     invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;->updateBorderPopupPosition()V
 
@@ -17086,7 +17086,7 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    const v2, 0x7f0206a5
+    const v2, 0x7f0206a3
 
     invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setBackgroundResource(I)V
 
@@ -17324,7 +17324,7 @@
 
     const v5, 0x7f08021f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
     const v7, 0x7f08021f
 
@@ -17342,13 +17342,13 @@
 
     const v6, 0x7f080219
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
-    const v8, 0x7f08057d
+    const v8, 0x7f08057f
 
-    const v9, 0x7f08057d
+    const v9, 0x7f08057f
 
-    const v10, 0x7f08057d
+    const v10, 0x7f08057f
 
     move v4, v13
 
@@ -17406,13 +17406,13 @@
 
     const/4 v3, -0x2
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateFrameLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -17449,7 +17449,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    const v1, 0x7f0206a5
+    const v1, 0x7f0206a3
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
@@ -17488,11 +17488,11 @@
 
     const v4, 0x7f0802a5
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateFrameLayoutParams(Landroid/content/Context;IIIIIII)V
 

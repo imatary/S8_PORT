@@ -3913,6 +3913,17 @@
     return-object v0
 
     :pswitch_0
+    const v1, 0x7f0204b9
+
+    aput v1, v0, v2
+
+    const v1, 0x7f0204ba
+
+    aput v1, v0, v3
+
+    goto :goto_0
+
+    :pswitch_1
     const v1, 0x7f0204bb
 
     aput v1, v0, v2
@@ -3923,168 +3934,157 @@
 
     goto :goto_0
 
-    :pswitch_1
-    const v1, 0x7f0204bd
-
-    aput v1, v0, v2
-
-    const v1, 0x7f0204be
-
-    aput v1, v0, v3
-
-    goto :goto_0
-
     :pswitch_2
-    const v1, 0x7f0204bf
+    const v1, 0x7f0204bd
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_3
-    const v1, 0x7f0204c0
+    const v1, 0x7f0204be
 
     aput v1, v0, v2
 
-    const v1, 0x7f0204c1
+    const v1, 0x7f0204bf
 
     aput v1, v0, v3
 
     goto :goto_0
 
     :pswitch_4
-    const v1, 0x7f0204c2
+    const v1, 0x7f0204c0
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_5
-    const v1, 0x7f0204c3
+    const v1, 0x7f0204c1
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_6
-    const v1, 0x7f0204c4
+    const v1, 0x7f0204c2
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_7
-    const v1, 0x7f0204c5
+    const v1, 0x7f0204c3
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_8
-    const v1, 0x7f0204c6
+    const v1, 0x7f0204c4
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_9
-    const v1, 0x7f0204c7
+    const v1, 0x7f0204c5
 
     aput v1, v0, v2
 
-    const v1, 0x7f0204c8
+    const v1, 0x7f0204c6
 
     aput v1, v0, v3
 
     goto :goto_0
 
     :pswitch_a
-    const v1, 0x7f0204c9
+    const v1, 0x7f0204c7
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_b
-    const v1, 0x7f0204ca
+    const v1, 0x7f0204c8
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_c
-    const v1, 0x7f0204cb
+    const v1, 0x7f0204c9
 
     aput v1, v0, v2
 
-    const v1, 0x7f0204cc
+    const v1, 0x7f0204ca
 
     aput v1, v0, v3
 
     goto :goto_0
 
     :pswitch_d
-    const v1, 0x7f0204cd
+    const v1, 0x7f0204cb
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_e
-    const v1, 0x7f0204ce
+    const v1, 0x7f0204cc
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_f
-    const v1, 0x7f0204cf
+    const v1, 0x7f0204cd
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_10
-    const v1, 0x7f0204d0
+    const v1, 0x7f0204ce
 
     aput v1, v0, v2
 
     goto :goto_0
 
     :pswitch_11
-    const v1, 0x7f0204d1
+    const v1, 0x7f0204cf
 
     aput v1, v0, v2
 
     goto/16 :goto_0
 
     :pswitch_12
-    const v1, 0x7f0204d2
+    const v1, 0x7f0204d0
 
     aput v1, v0, v2
 
-    const v1, 0x7f0204d3
+    const v1, 0x7f0204d1
 
     aput v1, v0, v3
 
     goto/16 :goto_0
 
     :pswitch_13
-    const v1, 0x7f0204d4
+    const v1, 0x7f0204d2
 
     aput v1, v0, v2
 
     goto/16 :goto_0
 
     :pswitch_14
-    const v1, 0x7f0204d5
+    const v1, 0x7f0204d3
 
     aput v1, v0, v2
 
     goto/16 :goto_0
 
     :pswitch_15
-    const v1, 0x7f0204d6
+    const v1, 0x7f0204d4
 
     aput v1, v0, v2
 
@@ -4261,9 +4261,9 @@
 
     const/high16 v4, 0x41000000    # 8.0f
 
-    const/high16 v3, 0x40e00000    # 7.0f
+    const/high16 v1, 0x40e00000    # 7.0f
 
-    const/high16 v1, 0x41100000    # 9.0f
+    const/high16 v3, 0x41100000    # 9.0f
 
     const/high16 v0, 0x40c00000    # 6.0f
 
@@ -4307,7 +4307,17 @@
     :pswitch_2
     if-eqz p2, :cond_2
 
-    move v0, v2
+    move v1, v2
+
+    :cond_2
+    invoke-direct {p0, v1}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
+
+    move-result v0
+
+    goto :goto_0
+
+    :pswitch_3
+    if-eqz p2, :cond_3
 
     :goto_3
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
@@ -4316,30 +4326,15 @@
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
     move v0, v3
 
     goto :goto_3
 
-    :pswitch_3
-    if-eqz p2, :cond_3
-
-    :goto_4
-    invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_3
-    move v0, v1
-
-    goto :goto_4
-
     :pswitch_4
     if-eqz p2, :cond_4
 
-    :goto_5
+    :goto_4
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4349,12 +4344,12 @@
     :cond_4
     move v0, v4
 
-    goto :goto_5
+    goto :goto_4
 
     :pswitch_5
     if-eqz p2, :cond_5
 
-    :goto_6
+    :goto_5
     invoke-direct {p0, v2}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4362,17 +4357,17 @@
     goto :goto_0
 
     :cond_5
-    move v2, v3
+    move v2, v1
 
-    goto :goto_6
+    goto :goto_5
 
     :pswitch_6
     if-eqz p2, :cond_6
 
-    const/high16 v3, 0x40a00000    # 5.0f
+    const/high16 v1, 0x40a00000    # 5.0f
 
     :cond_6
-    invoke-direct {p0, v3}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
+    invoke-direct {p0, v1}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
 
@@ -4381,7 +4376,7 @@
     :pswitch_7
     if-eqz p2, :cond_7
 
-    :goto_7
+    :goto_6
     invoke-direct {p0, v2}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4389,17 +4384,17 @@
     goto :goto_0
 
     :cond_7
-    move v2, v3
+    move v2, v1
 
-    goto :goto_7
+    goto :goto_6
 
     :pswitch_8
     if-eqz p2, :cond_8
 
-    const/high16 v3, 0x40a00000    # 5.0f
+    const/high16 v1, 0x40a00000    # 5.0f
 
     :cond_8
-    invoke-direct {p0, v3}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
+    invoke-direct {p0, v1}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
 
@@ -4408,7 +4403,7 @@
     :pswitch_9
     if-eqz p2, :cond_9
 
-    :goto_8
+    :goto_7
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4418,15 +4413,15 @@
     :cond_9
     const/high16 v0, 0x41300000    # 11.0f
 
-    goto :goto_8
+    goto :goto_7
 
     :pswitch_a
     if-eqz p2, :cond_a
 
-    const/high16 v3, 0x40a00000    # 5.0f
+    const/high16 v1, 0x40a00000    # 5.0f
 
     :cond_a
-    invoke-direct {p0, v3}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
+    invoke-direct {p0, v1}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
 
@@ -4435,7 +4430,7 @@
     :pswitch_b
     if-eqz p2, :cond_b
 
-    :goto_9
+    :goto_8
     invoke-direct {p0, v2}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4443,14 +4438,14 @@
     goto :goto_0
 
     :cond_b
-    move v2, v3
+    move v2, v1
 
-    goto :goto_9
+    goto :goto_8
 
     :pswitch_c
     if-eqz p2, :cond_c
 
-    :goto_a
+    :goto_9
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4460,12 +4455,12 @@
     :cond_c
     move v0, v4
 
-    goto :goto_a
+    goto :goto_9
 
     :pswitch_d
     if-eqz p2, :cond_d
 
-    :goto_b
+    :goto_a
     invoke-direct {p0, v2}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4475,12 +4470,12 @@
     :cond_d
     move v2, v4
 
-    goto :goto_b
+    goto :goto_a
 
     :pswitch_e
     if-eqz p2, :cond_e
 
-    :goto_c
+    :goto_b
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4490,10 +4485,25 @@
     :cond_e
     move v0, v4
 
-    goto :goto_c
+    goto :goto_b
 
     :pswitch_f
     if-eqz p2, :cond_f
+
+    :goto_c
+    invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
+
+    move-result v0
+
+    goto/16 :goto_0
+
+    :cond_f
+    move v0, v3
+
+    goto :goto_c
+
+    :pswitch_10
+    if-eqz p2, :cond_10
 
     :goto_d
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
@@ -4502,30 +4512,15 @@
 
     goto/16 :goto_0
 
-    :cond_f
-    move v0, v1
+    :cond_10
+    move v0, v3
 
     goto :goto_d
-
-    :pswitch_10
-    if-eqz p2, :cond_10
-
-    :goto_e
-    invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
-
-    move-result v0
-
-    goto/16 :goto_0
-
-    :cond_10
-    move v0, v1
-
-    goto :goto_e
 
     :pswitch_11
     if-eqz p2, :cond_11
 
-    :goto_f
+    :goto_e
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4535,12 +4530,12 @@
     :cond_11
     move v0, v4
 
-    goto :goto_f
+    goto :goto_e
 
     :pswitch_12
     if-eqz p2, :cond_12
 
-    :goto_10
+    :goto_f
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4550,12 +4545,12 @@
     :cond_12
     move v0, v4
 
-    goto :goto_10
+    goto :goto_f
 
     :pswitch_13
     if-eqz p2, :cond_13
 
-    :goto_11
+    :goto_10
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4563,14 +4558,14 @@
     goto/16 :goto_0
 
     :cond_13
-    move v0, v1
+    move v0, v3
 
-    goto :goto_11
+    goto :goto_10
 
     :pswitch_14
     if-eqz p2, :cond_14
 
-    :goto_12
+    :goto_11
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
 
     move-result v0
@@ -4580,10 +4575,25 @@
     :cond_14
     move v0, v4
 
-    goto :goto_12
+    goto :goto_11
 
     :pswitch_15
     if-eqz p2, :cond_15
+
+    :goto_12
+    invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
+
+    move-result v0
+
+    goto/16 :goto_0
+
+    :cond_15
+    move v0, v3
+
+    goto :goto_12
+
+    :pswitch_16
+    if-eqz p2, :cond_16
 
     :goto_13
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
@@ -4592,13 +4602,13 @@
 
     goto/16 :goto_0
 
-    :cond_15
-    move v0, v1
+    :cond_16
+    move v0, v3
 
     goto :goto_13
 
-    :pswitch_16
-    if-eqz p2, :cond_16
+    :pswitch_17
+    if-eqz p2, :cond_17
 
     :goto_14
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
@@ -4607,13 +4617,13 @@
 
     goto/16 :goto_0
 
-    :cond_16
-    move v0, v1
+    :cond_17
+    move v0, v3
 
     goto :goto_14
 
-    :pswitch_17
-    if-eqz p2, :cond_17
+    :pswitch_18
+    if-eqz p2, :cond_18
 
     :goto_15
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
@@ -4622,13 +4632,13 @@
 
     goto/16 :goto_0
 
-    :cond_17
-    move v0, v1
+    :cond_18
+    move v0, v3
 
     goto :goto_15
 
-    :pswitch_18
-    if-eqz p2, :cond_18
+    :pswitch_19
+    if-eqz p2, :cond_19
 
     :goto_16
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
@@ -4637,13 +4647,13 @@
 
     goto/16 :goto_0
 
-    :cond_18
-    move v0, v1
+    :cond_19
+    move v0, v3
 
     goto :goto_16
 
-    :pswitch_19
-    if-eqz p2, :cond_19
+    :pswitch_1a
+    if-eqz p2, :cond_1a
 
     :goto_17
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
@@ -4652,13 +4662,13 @@
 
     goto/16 :goto_0
 
-    :cond_19
-    move v0, v1
+    :cond_1a
+    move v0, v3
 
     goto :goto_17
 
-    :pswitch_1a
-    if-eqz p2, :cond_1a
+    :pswitch_1b
+    if-eqz p2, :cond_1b
 
     :goto_18
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
@@ -4667,13 +4677,13 @@
 
     goto/16 :goto_0
 
-    :cond_1a
-    move v0, v1
+    :cond_1b
+    move v0, v3
 
     goto :goto_18
 
-    :pswitch_1b
-    if-eqz p2, :cond_1b
+    :pswitch_1c
+    if-eqz p2, :cond_1c
 
     :goto_19
     invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
@@ -4682,25 +4692,10 @@
 
     goto/16 :goto_0
 
-    :cond_1b
-    move v0, v1
+    :cond_1c
+    move v0, v3
 
     goto :goto_19
-
-    :pswitch_1c
-    if-eqz p2, :cond_1c
-
-    :goto_1a
-    invoke-direct {p0, v0}, Lcom/sec/android/mimage/photoretouching/Decoration/LabelBuilder;->getActualDimens(F)I
-
-    move-result v0
-
-    goto/16 :goto_0
-
-    :cond_1c
-    move v0, v1
-
-    goto :goto_1a
 
     nop
 
@@ -4749,7 +4744,7 @@
     return-object v0
 
     :pswitch_0
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_THIN:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4758,7 +4753,7 @@
     goto :goto_0
 
     :pswitch_1
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_THIN_ITALIC:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR_ITALIC:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4767,7 +4762,7 @@
     goto :goto_0
 
     :pswitch_2
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_THIN:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4794,7 +4789,7 @@
     goto :goto_0
 
     :pswitch_5
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_THIN:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4812,7 +4807,7 @@
     goto :goto_0
 
     :pswitch_7
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_THIN:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4821,7 +4816,7 @@
     goto :goto_0
 
     :pswitch_8
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_LIGHT:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4830,7 +4825,7 @@
     goto :goto_0
 
     :pswitch_9
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_THIN:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4848,7 +4843,7 @@
     goto :goto_0
 
     :pswitch_b
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_LIGHT:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4884,7 +4879,7 @@
     goto :goto_0
 
     :pswitch_f
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_THIN_ITALIC:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR_ITALIC:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4902,7 +4897,7 @@
     goto :goto_0
 
     :pswitch_11
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_THIN:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4911,7 +4906,7 @@
     goto :goto_0
 
     :pswitch_12
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_LIGHT:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4938,7 +4933,7 @@
     goto/16 :goto_0
 
     :pswitch_15
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_LIGHT:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 
@@ -4965,7 +4960,7 @@
     goto/16 :goto_0
 
     :pswitch_18
-    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_THIN:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+    sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getTextFont(Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;)Landroid/graphics/Typeface;
 

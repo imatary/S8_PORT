@@ -86,6 +86,10 @@
 
 .field public static final MOTION_PHOTO_SAVE_DIR:Ljava/lang/String;
 
+.field public static final QHD_Height:I = 0x21c
+
+.field public static final QHD_Width:I = 0x3c0
+
 .field public static final SCREEN_AGIF:Ljava/lang/String; = "846"
 
 

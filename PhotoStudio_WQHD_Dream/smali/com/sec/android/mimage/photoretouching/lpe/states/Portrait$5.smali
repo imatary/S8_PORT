@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;->initEyeDetection()V
+    value = Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;->updateTextRedEye()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -99,7 +99,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c00a9
+    const v3, 0x7f0c00aa
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -116,7 +116,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c0099
+    const v3, 0x7f0c009a
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -149,7 +149,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c00a8
+    const v3, 0x7f0c00a9
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
 

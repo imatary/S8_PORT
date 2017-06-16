@@ -465,7 +465,23 @@
     return v0
 .end method
 
-.method static synthetic access$1000(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Ljava/util/ArrayList;
+.method static synthetic access$1000(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mSuperImposeState:Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1002(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;)Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;
+    .locals 0
+
+    iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mSuperImposeState:Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;
+
+    return-object p1
+.end method
+
+.method static synthetic access$1100(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Ljava/util/ArrayList;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mStateChangeListeners:Ljava/util/ArrayList;
@@ -473,7 +489,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1100(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/DialogManager;
+.method static synthetic access$1200(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/DialogManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mDialogManager:Lcom/sec/android/mimage/photoretouching/lpe/util/DialogManager;
@@ -481,7 +497,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1200(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;
+.method static synthetic access$1300(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mActionBarManager:Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;
@@ -489,7 +505,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1300(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Landroid/app/ProgressDialog;
+.method static synthetic access$1400(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Landroid/app/ProgressDialog;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mProgressDialog:Landroid/app/ProgressDialog;
@@ -497,7 +513,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1400(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Ljava/lang/String;
+.method static synthetic access$1500(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->savePath:Ljava/lang/String;
@@ -505,7 +521,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1402(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$1502(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->savePath:Ljava/lang/String;
@@ -513,7 +529,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$1500(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
+.method static synthetic access$1600(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mAdjustment:Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
@@ -521,7 +537,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1502(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;)Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
+.method static synthetic access$1602(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;)Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mAdjustment:Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
@@ -529,7 +545,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$1600(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;
+.method static synthetic access$1700(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mEffectState:Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;
@@ -537,7 +553,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1602(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;)Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;
+.method static synthetic access$1702(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;)Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mEffectState:Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;
@@ -545,7 +561,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$1702(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/AppState;)Lcom/sec/android/mimage/photoretouching/lpe/states/AppState;
+.method static synthetic access$1802(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/AppState;)Lcom/sec/android/mimage/photoretouching/lpe/states/AppState;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mToneState:Lcom/sec/android/mimage/photoretouching/lpe/states/AppState;
@@ -553,18 +569,10 @@
     return-object p1
 .end method
 
-.method static synthetic access$1802(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Advance;)Lcom/sec/android/mimage/photoretouching/lpe/states/Advance;
+.method static synthetic access$1902(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Advance;)Lcom/sec/android/mimage/photoretouching/lpe/states/Advance;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mAdvanceState:Lcom/sec/android/mimage/photoretouching/lpe/states/Advance;
-
-    return-object p1
-.end method
-
-.method static synthetic access$1902(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;)Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;
-    .locals 0
-
-    iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mDrawingState:Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;
 
     return-object p1
 .end method
@@ -577,7 +585,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$2002(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Landroid/widget/RelativeLayout;)Landroid/widget/RelativeLayout;
+.method static synthetic access$2002(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;)Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;
+    .locals 0
+
+    iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mDrawingState:Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;
+
+    return-object p1
+.end method
+
+.method static synthetic access$2102(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Landroid/widget/RelativeLayout;)Landroid/widget/RelativeLayout;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mRootView:Landroid/widget/RelativeLayout;
@@ -585,18 +601,10 @@
     return-object p1
 .end method
 
-.method static synthetic access$2102(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Landroid/view/View;)Landroid/view/View;
+.method static synthetic access$2202(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Landroid/view/View;)Landroid/view/View;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mSeekBarParent:Landroid/view/View;
-
-    return-object p1
-.end method
-
-.method static synthetic access$2202(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;)Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
-    .locals 0
-
-    iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mPortraitState:Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
 
     return-object p1
 .end method
@@ -811,7 +819,23 @@
     return-object p1
 .end method
 
-.method static synthetic access$600(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+.method static synthetic access$600(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mPortraitState:Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
+
+    return-object v0
+.end method
+
+.method static synthetic access$602(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;)Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
+    .locals 0
+
+    iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mPortraitState:Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
+
+    return-object p1
+.end method
+
+.method static synthetic access$700(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -819,7 +843,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$700(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/HistoryManager;
+.method static synthetic access$800(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/HistoryManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mHistoryManager:Lcom/sec/android/mimage/photoretouching/lpe/util/HistoryManager;
@@ -827,28 +851,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$800(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLPreviewView;
+.method static synthetic access$900(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLPreviewView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mPreviewView:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLPreviewView;
 
     return-object v0
-.end method
-
-.method static synthetic access$900(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mSuperImposeState:Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;
-
-    return-object v0
-.end method
-
-.method static synthetic access$902(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;)Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;
-    .locals 0
-
-    iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mSuperImposeState:Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;
-
-    return-object p1
 .end method
 
 .method private changeTextForPerspectiveButtons()V
@@ -1518,7 +1526,7 @@
 
     move-result-object v17
 
-    const v18, 0x7f0205fd
+    const v18, 0x7f0205fb
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3021,7 +3029,7 @@
 .method private setAdjustmentTextViewProperties(I)V
     .locals 5
 
-    const v4, 0x7f08058c
+    const v4, 0x7f08058e
 
     const/4 v3, 0x1
 
@@ -3117,7 +3125,7 @@
 
     const v5, 0x7f0e0390
 
-    const v4, 0x7f0206b7
+    const v4, 0x7f0206b5
 
     iget-object v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mContext:Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
 
@@ -9242,7 +9250,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f08058c
+    const v2, 0x7f08058e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10040,7 +10048,7 @@
 
     const v5, 0x7f0e038f
 
-    const v4, 0x7f08058c
+    const v4, 0x7f08058e
 
     const/4 v3, 0x1
 
@@ -10286,7 +10294,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f08058c
+    const v3, 0x7f08058e
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10300,7 +10308,7 @@
 .method private setSmartTextViewProperties(I)V
     .locals 5
 
-    const v4, 0x7f08058c
+    const v4, 0x7f08058e
 
     const/4 v3, 0x1
 
@@ -11031,7 +11039,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0805e7
+    const v1, 0x7f0805e9
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -11161,7 +11169,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0805e7
+    const v1, 0x7f0805e9
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -11319,7 +11327,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0805a9
+    const v7, 0x7f0805ab
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -11352,7 +11360,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0805eb
+    const v7, 0x7f0805ee
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -11545,7 +11553,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0805a9
+    const v7, 0x7f0805ab
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -12322,7 +12330,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080600
+    const v1, 0x7f080603
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -12747,7 +12755,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f080603
+    const v6, 0x7f080606
 
     const/4 v7, 0x0
 
@@ -13062,7 +13070,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f080604
+    const v6, 0x7f080607
 
     const/4 v7, 0x0
 
@@ -13084,7 +13092,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f080601
+    const v6, 0x7f080604
 
     const/4 v7, 0x0
 
@@ -13114,7 +13122,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080605
+    const v3, 0x7f080608
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -13148,7 +13156,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080605
+    const v3, 0x7f080608
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -13269,7 +13277,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080577
+    const v8, 0x7f080578
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -13283,7 +13291,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080576
+    const v8, 0x7f080577
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -13345,7 +13353,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080577
+    const v8, 0x7f080578
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -13359,7 +13367,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080576
+    const v8, 0x7f080577
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -13395,7 +13403,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080574
+    const v8, 0x7f080575
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -13409,7 +13417,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080573
+    const v8, 0x7f080574
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -13524,7 +13532,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080574
+    const v8, 0x7f080575
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -13992,7 +14000,7 @@
 
     const v9, 0x7f0800e6
 
-    const v8, 0x7f0805e7
+    const v8, 0x7f0805e9
 
     iget-object v5, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mRootView:Landroid/widget/RelativeLayout;
 
@@ -14020,7 +14028,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0c0011
+    const v6, 0x7f0c0012
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -14584,7 +14592,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0805e7
+    const v13, 0x7f0805e9
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -14600,7 +14608,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0805e7
+    const v13, 0x7f0805e9
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -14670,7 +14678,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0805e7
+    const v13, 0x7f0805e9
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -14686,7 +14694,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0805e7
+    const v13, 0x7f0805e9
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -14902,7 +14910,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f080582
+    const v13, 0x7f080584
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -14918,7 +14926,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f080583
+    const v13, 0x7f080585
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -14934,7 +14942,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f080583
+    const v13, 0x7f080585
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -14950,7 +14958,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f080582
+    const v13, 0x7f080584
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -15077,7 +15085,7 @@
 
     move-result-object v13
 
-    const v14, 0x7f0805ee
+    const v14, 0x7f0805f1
 
     invoke-virtual {v13, v14}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -15231,6 +15239,8 @@
 
     const v9, 0x7f0801ed
 
+    const/4 v8, 0x0
+
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
@@ -15256,7 +15266,7 @@
 
     move-result v5
 
-    if-ge v3, v5, :cond_2
+    if-ge v3, v5, :cond_4
 
     invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
@@ -15264,7 +15274,7 @@
 
     instance-of v5, v2, Landroid/widget/ImageView;
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_3
 
     invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -15298,16 +15308,72 @@
 
     invoke-virtual {v2, v4}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
+    invoke-virtual {v1}, Landroid/widget/LinearLayout;->getId()I
+
+    move-result v5
+
+    const v6, 0x7f0e00bc
+
+    if-eq v5, v6, :cond_0
+
+    invoke-virtual {v1}, Landroid/widget/LinearLayout;->getId()I
+
+    move-result v5
+
+    const v6, 0x7f0e00c0
+
+    if-ne v5, v6, :cond_1
+
     :cond_0
+    iget-object v5, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mContext:Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
+
+    invoke-virtual {v5}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;->getAppContext()Landroid/content/Context;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/app/Activity;
+
+    check-cast v5, Landroid/app/Activity;
+
+    invoke-virtual {v5}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v5
+
+    const-string v6, "contacts_service"
+
+    invoke-virtual {v5, v6, v8}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+
+    move-result v5
+
+    if-nez v5, :cond_2
+
+    const/high16 v5, 0x3f800000    # 1.0f
+
+    invoke-virtual {v2, v5}, Landroid/view/View;->setAlpha(F)V
+
+    const/4 v5, 0x1
+
+    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->setEnabled(Z)V
+
+    :cond_1
     :goto_1
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    :cond_1
+    :cond_2
+    const v5, 0x3ecccccd    # 0.4f
+
+    invoke-virtual {v2, v5}, Landroid/view/View;->setAlpha(F)V
+
+    invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->setEnabled(Z)V
+
+    goto :goto_1
+
+    :cond_3
     instance-of v5, v2, Landroid/widget/TextView;
 
-    if-eqz v5, :cond_0
+    if-eqz v5, :cond_1
 
     invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -15353,7 +15419,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0805fe
+    const v7, 0x7f080601
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -15365,29 +15431,27 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    const/4 v6, 0x0
+    iget-object v6, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mContext:Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
 
-    iget-object v7, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mContext:Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
+    invoke-virtual {v6}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;->getResources()Landroid/content/res/Resources;
 
-    invoke-virtual {v7}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;->getResources()Landroid/content/res/Resources;
+    move-result-object v6
 
-    move-result-object v7
+    const v7, 0x7f0805ab
 
-    const v8, 0x7f0805a9
+    invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
-    invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    move-result v6
 
-    move-result v7
+    int-to-float v6, v6
 
-    int-to-float v7, v7
-
-    invoke-virtual {v5, v6, v7}, Landroid/widget/TextView;->setTextSize(IF)V
+    invoke-virtual {v5, v8, v6}, Landroid/widget/TextView;->setTextSize(IF)V
 
     invoke-virtual {v2, v4}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_1
 
-    :cond_2
+    :cond_4
     return-void
 .end method
 
@@ -16693,7 +16757,7 @@
     goto :goto_0
 .end method
 
-.method public doDoneFromExecutor()V
+.method public doDoneFromExecutor(Z)V
     .locals 3
 
     iget v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mState:I
@@ -16720,7 +16784,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mAdjustment:Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
 
-    invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDoneFromExecutor()V
+    invoke-virtual {v0, p1}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDoneFromExecutor(Z)V
 
     goto :goto_0
 
@@ -20982,7 +21046,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f0702b3
+    const v3, 0x7f070156
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -21205,7 +21269,7 @@
 
     check-cast v2, Landroid/widget/ImageView;
 
-    const v3, 0x7f0204af
+    const v3, 0x7f0204ad
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -22466,7 +22530,7 @@
 .end method
 
 .method public openSubModeEffect(Ljava/lang/String;I)V
-    .locals 2
+    .locals 3
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mEffectState:Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;
 
@@ -22487,7 +22551,6 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/view/CustomSeekBar;->setStateProgressWithUpdate(F)V
 
-    :cond_1
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$24;
@@ -22498,7 +22561,19 @@
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
+    :goto_0
     return-void
+
+    :cond_1
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+
+    const/4 v1, 0x2
+
+    sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-virtual {v0, v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->sendResponseToExecutor(ILcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    goto :goto_0
 .end method
 
 .method public openSubModeFromExecutor(Ljava/lang/String;I)V
@@ -23399,7 +23474,7 @@
 .method public setDrawingBackgrounds()V
     .locals 3
 
-    const v2, 0x7f0206b7
+    const v2, 0x7f0206b5
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mContext:Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
 
@@ -23614,7 +23689,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0c0098
+    const v4, 0x7f0c0099
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -24203,7 +24278,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f08058c
+    const v3, 0x7f08058e
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -25359,6 +25434,10 @@
 
     :cond_3
     :goto_1
+    iget-object v7, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+
+    if-eqz v7, :cond_0
+
     const/high16 v7, 0x80000
 
     iget-object v8, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -27419,7 +27498,7 @@
 
     const/4 v7, 0x0
 
-    const v8, 0x7f080523
+    const v8, 0x7f080524
 
     const/4 v9, 0x0
 
@@ -27583,7 +27662,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0206a5
+    const v4, 0x7f0206a3
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -27894,7 +27973,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080523
+    const v3, 0x7f080524
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -27924,7 +28003,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f080513
+    const v4, 0x7f080514
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -28113,7 +28192,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0206a5
+    const v4, 0x7f0206a3
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -28161,7 +28240,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080512
+    const v3, 0x7f080513
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -28698,7 +28777,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f080513
+    const v5, 0x7f080514
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -29446,7 +29525,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f080577
+    const v11, 0x7f080578
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -29460,7 +29539,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f080576
+    const v11, 0x7f080577
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -29522,7 +29601,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f080577
+    const v11, 0x7f080578
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -29536,7 +29615,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f080576
+    const v11, 0x7f080577
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -29572,7 +29651,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f080574
+    const v11, 0x7f080575
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -29586,7 +29665,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f080573
+    const v11, 0x7f080574
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -29701,7 +29780,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f080574
+    const v11, 0x7f080575
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -30016,7 +30095,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f080602
+    const v11, 0x7f080605
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -30650,7 +30729,7 @@
 
     check-cast v10, Landroid/widget/ImageView;
 
-    const v1, 0x7f0205e7
+    const v1, 0x7f0205e5
 
     invoke-virtual {v10, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -30662,7 +30741,7 @@
 
     check-cast v11, Landroid/widget/ImageView;
 
-    const v1, 0x7f0205e7
+    const v1, 0x7f0205e5
 
     invoke-virtual {v11, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -30957,13 +31036,13 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f0805d4
+    const v4, 0x7f0805d6
 
     const/4 v5, 0x0
 
     const/4 v6, 0x0
 
-    const v7, 0x7f0805d5
+    const v7, 0x7f0805d7
 
     const/4 v8, 0x0
 
@@ -30987,9 +31066,9 @@
 
     const/4 v6, 0x0
 
-    const v7, 0x7f0805d5
+    const v7, 0x7f0805d7
 
-    const v8, 0x7f0805d3
+    const v8, 0x7f0805d5
 
     invoke-static/range {v1 .. v8}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateFrameLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -31003,17 +31082,17 @@
 
     const v2, 0x7f0e03c9
 
-    const v3, 0x7f0805d2
+    const v3, 0x7f0805d4
 
-    const v4, 0x7f0805d0
+    const v4, 0x7f0805d2
 
     const/4 v5, 0x0
 
     const/4 v6, 0x0
 
-    const v7, 0x7f0805d5
+    const v7, 0x7f0805d7
 
-    const v8, 0x7f0805d1
+    const v8, 0x7f0805d3
 
     invoke-static/range {v1 .. v8}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateFrameLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -31047,7 +31126,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f08057c
+    const v6, 0x7f08057d
 
     const v7, 0x7f080385
 
@@ -31364,7 +31443,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x7f08057c
+    const v5, 0x7f08057d
 
     const/4 v6, 0x0
 

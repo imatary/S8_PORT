@@ -89,7 +89,7 @@
     iget-object v3, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mHistoryManager:Lcom/sec/android/mimage/photoretouching/lpe/util/HistoryManager;
-    invoke-static {v3}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1500(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/HistoryManager;
+    invoke-static {v3}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1700(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/HistoryManager;
 
     move-result-object v3
 
@@ -143,7 +143,7 @@
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->isLauncher:Z
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2200(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Z
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2400(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Z
 
     move-result v0
 

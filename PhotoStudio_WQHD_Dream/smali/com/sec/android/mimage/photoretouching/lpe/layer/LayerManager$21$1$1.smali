@@ -122,12 +122,12 @@
     iget-object v1, v1, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$21;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mCurrLayer:I
-    invoke-static {v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$700(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)I
+    invoke-static {v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$900(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)I
 
     move-result v1
 
     # invokes: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->deleteLayer(I)V
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2100(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)V
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2300(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)V
 
     sput-boolean v2, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->isNewInstance:Z
 
@@ -138,7 +138,7 @@
     iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$21;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->layerCounter:I
-    invoke-static {v0, v2}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2302(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
+    invoke-static {v0, v2}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2502(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$21$1$1;->this$2:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$21$1;
 
@@ -153,7 +153,7 @@
     iget-object v1, v1, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$21;->val$intent:Landroid/content/Intent;
 
     # invokes: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->processInput(Landroid/content/Intent;)V
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2400(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Landroid/content/Intent;)V
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2600(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Landroid/content/Intent;)V
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$21$1$1;->this$2:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$21$1;
 
@@ -168,7 +168,7 @@
     iget-object v1, v1, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$21;->val$intent:Landroid/content/Intent;
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mIntent:Landroid/content/Intent;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2502(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Landroid/content/Intent;)Landroid/content/Intent;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2702(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Landroid/content/Intent;)Landroid/content/Intent;
 
     sget-boolean v0, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->isNewIntentFromGallery:Z
 

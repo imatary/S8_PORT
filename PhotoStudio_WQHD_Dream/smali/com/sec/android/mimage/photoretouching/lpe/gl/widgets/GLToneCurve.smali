@@ -981,7 +981,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080560
+    const v8, 0x7f080561
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -999,7 +999,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f08055f
+    const v8, 0x7f080560
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1017,7 +1017,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080572
+    const v8, 0x7f080573
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1035,7 +1035,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f08059c
+    const v8, 0x7f08059e
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1053,7 +1053,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f08059b
+    const v8, 0x7f08059d
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1071,7 +1071,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f08050f
+    const v8, 0x7f080510
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1089,7 +1089,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f08050e
+    const v8, 0x7f08050f
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1107,7 +1107,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f08058e
+    const v8, 0x7f080590
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1125,7 +1125,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f08058d
+    const v8, 0x7f08058f
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1143,7 +1143,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f08055e
+    const v8, 0x7f08055f
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1161,7 +1161,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080561
+    const v8, 0x7f080562
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1199,7 +1199,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0805c1
+    const v8, 0x7f0805c3
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1215,7 +1215,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0805c0
+    const v8, 0x7f0805c2
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1326,7 +1326,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0805ae
+    const v9, 0x7f0805b0
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1347,7 +1347,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080592
+    const v8, 0x7f080594
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1363,7 +1363,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080591
+    const v8, 0x7f080593
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1459,7 +1459,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0805ae
+    const v9, 0x7f0805b0
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2684,7 +2684,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f080592
+    const v15, 0x7f080594
 
     invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2702,7 +2702,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f080591
+    const v15, 0x7f080593
 
     invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2813,7 +2813,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0805ae
+    const v16, 0x7f0805b0
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3302,6 +3302,14 @@
 
     if-eqz v4, :cond_1
 
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLToneCurve;->thresholdVertexBuffer:Ljava/nio/FloatBuffer;
+
+    const/4 v5, 0x0
+
+    invoke-virtual {v4, v5}, Ljava/nio/FloatBuffer;->position(I)Ljava/nio/Buffer;
+
     const v4, 0x8892
 
     const/16 v5, 0x30
@@ -3501,12 +3509,6 @@
 
     invoke-static {v15, v0}, Landroid/opengl/GLES20;->glUniform1i(II)V
 
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLToneCurve;->fittingPoints:[F
-
-    if-eqz v4, :cond_3
-
     const-string v4, "u_FittingPoint"
 
     move-object/from16 v0, v16
@@ -3514,6 +3516,12 @@
     invoke-virtual {v0, v4}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLProgram$ProgramInfo;->getLocation(Ljava/lang/String;)I
 
     move-result v18
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLToneCurve;->fittingPoints:[F
+
+    if-eqz v4, :cond_3
 
     move-object/from16 v0, p0
 

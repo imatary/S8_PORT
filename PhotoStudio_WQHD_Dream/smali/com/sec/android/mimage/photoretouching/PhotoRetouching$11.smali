@@ -3,7 +3,7 @@
 .source "PhotoRetouching.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnDismissListener;
+.implements Landroid/content/DialogInterface$OnCancelListener;
 
 
 # annotations
@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method public onDismiss(Landroid/content/DialogInterface;)V
+.method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/PhotoRetouching$11;->this$0:Lcom/sec/android/mimage/photoretouching/PhotoRetouching;

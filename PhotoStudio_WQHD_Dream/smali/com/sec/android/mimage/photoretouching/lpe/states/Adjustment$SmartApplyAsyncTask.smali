@@ -116,12 +116,37 @@
 .end method
 
 .method protected onPostExecute(Ljava/lang/Void;)V
-    .locals 1
+    .locals 3
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment$SmartApplyAsyncTask;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
 
     # invokes: Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->setResetVisibility()V
     invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->access$2200(Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;)V
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment$SmartApplyAsyncTask;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
+
+    # getter for: Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDoneFromExecutor:Z
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->access$6200(Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment$SmartApplyAsyncTask;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
+
+    iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+
+    const/4 v1, 0x2
+
+    sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-virtual {v0, v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->sendResponseToExecutor(ILcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    :cond_0
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment$SmartApplyAsyncTask;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
+
+    # invokes: Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->checkDoDone()V
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->access$2300(Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;)V
 
     return-void
 .end method

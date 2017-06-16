@@ -11,7 +11,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">යෙදුම විවෘත කළ නොහැක. උපාංග ගබඩාවෙන් ගොනු කිහිපයක් මකා නැවත උත්සාහ කරන්න.</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">ආරක්‍ෂක ප්‍රතිපත්තිය කැමරාව භාවිතය සීමා කරයි.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">කැමරාව භාවිතා කළ නොහැකිය.</string>
     <string name="__cp__cannot_start_camera_msg">ඇමතුම් අතරතුර කැමරාව භාවිතා කළ නොහැක.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">වීඩියෝ ඇමතුම් අතරතුර කැමරාව විවෘත කළ නොහැකිය.</string>
     <string name="__cp__flash">ෆ්ලෑෂ්</string>

@@ -42,42 +42,42 @@
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mAdjustment:Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1502(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;)Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1602(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;)Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mEffectState:Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1602(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;)Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1702(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;)Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mToneState:Lcom/sec/android/mimage/photoretouching/lpe/states/AppState;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1702(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/AppState;)Lcom/sec/android/mimage/photoretouching/lpe/states/AppState;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1802(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/AppState;)Lcom/sec/android/mimage/photoretouching/lpe/states/AppState;
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mAdvanceState:Lcom/sec/android/mimage/photoretouching/lpe/states/Advance;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1802(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Advance;)Lcom/sec/android/mimage/photoretouching/lpe/states/Advance;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1902(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Advance;)Lcom/sec/android/mimage/photoretouching/lpe/states/Advance;
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mDrawingState:Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1902(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;)Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$2002(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;)Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mSuperImposeState:Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$902(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;)Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1002(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;)Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mRootView:Landroid/widget/RelativeLayout;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$2002(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Landroid/widget/RelativeLayout;)Landroid/widget/RelativeLayout;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$2102(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Landroid/widget/RelativeLayout;)Landroid/widget/RelativeLayout;
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mSeekBarParent:Landroid/view/View;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$2102(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Landroid/view/View;)Landroid/view/View;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$2202(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Landroid/view/View;)Landroid/view/View;
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
@@ -87,7 +87,7 @@
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mPortraitState:Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$2202(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;)Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$602(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;)Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$20;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 

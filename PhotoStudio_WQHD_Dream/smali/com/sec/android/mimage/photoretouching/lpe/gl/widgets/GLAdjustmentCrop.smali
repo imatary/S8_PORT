@@ -3110,7 +3110,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f080511
+    const v7, 0x7f080512
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -4756,7 +4756,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f080511
+    const v4, 0x7f080512
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -5239,7 +5239,7 @@
 
     iput v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentCrop;->HANDLE_MARGIN:F
 
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
     const/high16 v3, 0x41400000    # 12.0f
 

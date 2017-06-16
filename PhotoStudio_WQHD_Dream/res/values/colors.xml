@@ -11,6 +11,7 @@
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="action_text">#66fafafa</color>
     <color name="action_text_press">#d9252525</color>
+    <color name="actionbar_text_color">#fffafafa</color>
     <color name="agif_onfocus_border_color">#ff42acff</color>
     <color name="agif_selected_focus_color">#ff0b96fa</color>
     <color name="background_floating_material_dark">#ff424242</color>
@@ -152,7 +153,7 @@
     <color name="sticker_manager_gif_text_color">#e6fafafa</color>
     <color name="sticker_manager_text_color">#e6252525</color>
     <color name="sticker_manager_text_color_1">#e5252525</color>
-    <color name="stroke_color">#fff2f2f2</color>
+    <color name="stroke_color">#fffafafa</color>
     <color name="stroke_color_red_eye_text">#ff252525</color>
     <color name="stroke_color_sub_menu_adjustment">#d9c8c8c8</color>
     <color name="stroke_text_color">#4d000000</color>

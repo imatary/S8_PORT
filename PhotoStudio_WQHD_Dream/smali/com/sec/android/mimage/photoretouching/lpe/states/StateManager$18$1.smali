@@ -42,7 +42,7 @@
     iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$18;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mProgressDialog:Landroid/app/ProgressDialog;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1300(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Landroid/app/ProgressDialog;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1400(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Landroid/app/ProgressDialog;
 
     move-result-object v0
 
@@ -53,7 +53,7 @@
     iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$18;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mProgressDialog:Landroid/app/ProgressDialog;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1300(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Landroid/app/ProgressDialog;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1400(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Landroid/app/ProgressDialog;
 
     move-result-object v0
 

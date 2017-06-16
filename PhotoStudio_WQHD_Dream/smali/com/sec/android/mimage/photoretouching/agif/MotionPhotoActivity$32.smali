@@ -3,12 +3,12 @@
 .source "MotionPhotoActivity.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnKeyListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->saveFunc(ZLandroid/content/Intent;)V
+    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->imageViewAspectUpdate()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,12 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-.field final synthetic val$isCancelled:[Z
-
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;[Z)V
+.method constructor <init>(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$32;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    iput-object p2, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$32;->val$isCancelled:[Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,21 +34,13 @@
 
 
 # virtual methods
-.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
-    .locals 3
+.method public run()V
+    .locals 1
 
-    const/4 v2, 0x0
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$32;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    const/4 v0, 0x4
+    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->updateImageAspectRatio()V
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5200(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
 
-    if-ne p2, v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$32;->val$isCancelled:[Z
-
-    const/4 v1, 0x1
-
-    aput-boolean v1, v0, v2
-
-    :cond_0
-    return v2
+    return-void
 .end method

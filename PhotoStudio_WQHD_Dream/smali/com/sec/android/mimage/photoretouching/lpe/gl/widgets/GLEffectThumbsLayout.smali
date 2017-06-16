@@ -146,7 +146,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0805ee
+    const v3, 0x7f0805f1
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -475,7 +475,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0805ee
+    const v8, 0x7f0805f1
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -833,7 +833,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0805ee
+    const v7, 0x7f0805f1
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1220,7 +1220,7 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 14
 
-    const v13, 0x7f0805ee
+    const v13, 0x7f0805f1
 
     const/4 v5, 0x1
 

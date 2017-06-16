@@ -78,7 +78,7 @@
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$SwapObserver;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->gsimLogsInstance:Lcom/sec/android/mimage/photoretouching/lpe/util/Utils$GSIMLogs;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5700(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Lcom/sec/android/mimage/photoretouching/lpe/util/Utils$GSIMLogs;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$6100(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Lcom/sec/android/mimage/photoretouching/lpe/util/Utils$GSIMLogs;
 
     move-result-object v0
 

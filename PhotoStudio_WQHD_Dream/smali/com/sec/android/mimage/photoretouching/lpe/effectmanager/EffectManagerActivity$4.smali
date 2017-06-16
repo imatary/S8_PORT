@@ -61,8 +61,8 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$4;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;
 
-    # getter for: Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->mEffectCancel:Landroid/widget/LinearLayout;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->access$500(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)Landroid/widget/LinearLayout;
+    # getter for: Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->mEffectDone:Landroid/widget/LinearLayout;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->access$300(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
@@ -75,8 +75,8 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$4;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;
 
-    # getter for: Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->mEffectCancel:Landroid/widget/LinearLayout;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->access$500(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)Landroid/widget/LinearLayout;
+    # getter for: Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->mEffectDone:Landroid/widget/LinearLayout;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->access$300(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
@@ -84,8 +84,8 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$4;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;
 
-    # getter for: Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->mEffectCancel:Landroid/widget/LinearLayout;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->access$500(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)Landroid/widget/LinearLayout;
+    # getter for: Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->mEffectDone:Landroid/widget/LinearLayout;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->access$300(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
@@ -93,8 +93,8 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$4;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;
 
-    # invokes: Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->cancel()V
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->access$600(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)V
+    # invokes: Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->done()V
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->access$400(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)V
 
     goto :goto_0
 

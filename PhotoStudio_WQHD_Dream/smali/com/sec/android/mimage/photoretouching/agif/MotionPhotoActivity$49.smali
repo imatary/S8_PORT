@@ -39,7 +39,7 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
+    .locals 2
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$49;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
@@ -58,12 +58,9 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$49;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    const/4 v1, 0x1
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$49;->val$intent:Landroid/content/Intent;
 
-    iget-object v2, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$49;->val$intent:Landroid/content/Intent;
-
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->saveFunc(ZLandroid/content/Intent;)V
-    invoke-static {v0, v1, v2}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$2900(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;ZLandroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->getNewIntent(Landroid/content/Intent;)V
 
     return-void
 .end method

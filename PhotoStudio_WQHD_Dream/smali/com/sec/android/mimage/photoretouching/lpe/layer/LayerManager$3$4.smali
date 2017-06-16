@@ -42,7 +42,7 @@
     iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$3;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mDialogManager:Lcom/sec/android/mimage/photoretouching/lpe/util/DialogManager;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$500(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/DialogManager;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$700(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/DialogManager;
 
     move-result-object v0
 

@@ -40,15 +40,11 @@
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$21;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->mCurrDialog:Landroid/app/Dialog;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$2400(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Landroid/app/Dialog;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$2500(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Landroid/app/Dialog;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$21;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->finish()V
 
     return-void
 .end method

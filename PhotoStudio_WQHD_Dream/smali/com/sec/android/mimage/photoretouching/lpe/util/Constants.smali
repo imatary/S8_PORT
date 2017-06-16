@@ -3742,7 +3742,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f0c001e
+    const v1, 0x7f0c001f
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3750,7 +3750,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0c0022
+    const v1, 0x7f0c0023
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3772,7 +3772,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f0c006e
+    const v1, 0x7f0c006f
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3780,7 +3780,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0c006f
+    const v1, 0x7f0c0070
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3799,7 +3799,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f0c009f
+    const v1, 0x7f0c00a0
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3807,7 +3807,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0c00a0
+    const v1, 0x7f0c00a1
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3828,7 +3828,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f0c0050
+    const v1, 0x7f0c0051
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3836,7 +3836,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0c0051
+    const v1, 0x7f0c0052
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3855,7 +3855,7 @@
 
     aput v1, v0, v2
 
-    const v1, 0x7f0c009f
+    const v1, 0x7f0c00a0
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3863,7 +3863,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0c00a0
+    const v1, 0x7f0c00a1
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getColor(I)I
 

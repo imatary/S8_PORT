@@ -3,7 +3,7 @@
 .source "MotionPhotoActivity.java"
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
+.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
 
 # annotations
@@ -34,104 +34,48 @@
 
 
 # virtual methods
-.method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 6
+.method public onGlobalLayout()V
+    .locals 3
 
-    const/4 v3, 0x0
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->isAspectRatioSubMenuShown:Z
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$900(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
+    const/4 v2, -0x1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->isSpeedSubMenuShown:Z
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$1000(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Z
+    iget v0, v0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->photoViewWidth:I
 
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->isDirectionSubMenuShown:Z
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$1100(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    :cond_0
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->hideSubMenu()V
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    const/4 v1, 0x1
-
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->updateSaveButtonBackground(Z)V
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$300(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;Z)V
+    if-ne v0, v2, :cond_0
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
     iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    iget-object v2, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
+    iget-object v1, v1, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->mPhotoView:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoViewGIF;
 
-    # setter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->isDirectionSubMenuShown:Z
-    invoke-static {v2, v3}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$1102(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;Z)Z
-
-    move-result v2
-
-    # setter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->isAspectRatioSubMenuShown:Z
-    invoke-static {v1, v2}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$902(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;Z)Z
+    invoke-virtual {v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoViewGIF;->getWidth()I
 
     move-result v1
 
-    # setter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->isSpeedSubMenuShown:Z
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$1002(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;Z)Z
+    iput v1, v0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->photoViewWidth:I
 
-    :goto_0
-    return v3
+    :cond_0
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
+
+    iget v0, v0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->photoViewHeight:I
+
+    if-ne v0, v2, :cond_1
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
+
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
+
+    iget-object v1, v1, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->mPhotoView:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoViewGIF;
+
+    invoke-virtual {v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoViewGIF;->getHeight()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->photoViewHeight:I
 
     :cond_1
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->editPopUpOpen:Z
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$1200(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->showHideEditSubmenu()V
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$1300(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
-
-    goto :goto_0
-
-    :cond_2
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$14;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->pauseAgif()V
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$500(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
-
-    const-string v0, "846"
-
-    const-string v1, "8552"
-
-    const-string v2, "Play"
-
-    const-wide/16 v4, 0x0
-
-    invoke-static {v0, v1, v2, v4, v5}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->insertEventHaveValueSALog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
-
-    goto :goto_0
+    return-void
 .end method

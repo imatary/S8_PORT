@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">មិន​អាច​បើក​កម្មវិធី។ លុប​ឯកសារ​ខ្លះ​ក្នុង​ឃ្លាំងផ្ទុក​នៃ​ឧបករណ៍ ហើយ​សាកល្បង​ម្ដងទៀត។</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">គោលការណ៍​សន្តិសុខ​កំហិត​ការប្រើ​កាមេរ៉ា។</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">មិន​អាច​ប្រើ​កាមេរ៉ា។</string>
     <string name="__cp__cannot_start_camera_msg">មិន​អាច​ប្រើ​កាមេរ៉ា ក្នុង​អំឡុងពេល​ហៅ។</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">មិន​អាច​បើក​កាមេរ៉ា ក្នុង​អំឡុងពេល​ហៅ​វីដេអូ។</string>
     <string name="__cp__flash">ភ្លាស</string>

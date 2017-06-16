@@ -71,7 +71,7 @@
     iget-object v1, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment$7;->this$0:Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;
 
     # getter for: Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mPickerGridView:Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$500(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$600(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
 
     move-result-object v1
 
@@ -111,7 +111,7 @@
     iget-object v1, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment$7;->this$0:Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;
 
     # getter for: Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mPickerGridView:Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$500(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$600(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
 
     move-result-object v1
 
@@ -139,7 +139,7 @@
     iget-object v1, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment$7;->this$0:Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;
 
     # getter for: Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mPickerGridView:Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$500(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$600(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
 
     move-result-object v1
 

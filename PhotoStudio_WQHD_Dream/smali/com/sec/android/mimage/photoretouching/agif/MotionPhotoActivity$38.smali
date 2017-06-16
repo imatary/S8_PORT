@@ -3,12 +3,12 @@
 .source "MotionPhotoActivity.java"
 
 # interfaces
-.implements Lcom/sec/android/mimage/photoretouching/lpe/attach/AttachSheetFragment$OnAttachInterfaceListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->addAgifImages()V
+    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->addThumbnail(Landroid/graphics/Bitmap;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,12 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-.field final synthetic val$intent:Landroid/content/Intent;
-
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;Landroid/content/Intent;)V
+.method constructor <init>(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    iput-object p2, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->val$intent:Landroid/content/Intent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,159 +34,51 @@
 
 
 # virtual methods
-.method public onAttachCameraImageSelected(Landroid/net/Uri;)V
-    .locals 4
-
-    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    new-instance v2, Landroid/content/Intent;
-
-    invoke-direct {v2}, Landroid/content/Intent;-><init>()V
-
-    # setter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->selectedIntent:Landroid/content/Intent;
-    invoke-static {v1, v2}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5802(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;Landroid/content/Intent;)Landroid/content/Intent;
-
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->selectedIntent:Landroid/content/Intent;
-    invoke-static {v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5800(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Landroid/content/Intent;
-
-    move-result-object v1
-
-    const-string v2, "selectedItems"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putParcelableArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
-
-    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->hideAttachGallery(ZZ)V
-    invoke-static {v1, v2, v3}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5900(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;ZZ)V
-
-    return-void
-.end method
-
-.method public onAttachCameraShutterButtonClicked()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public onAttachGalleryImageSelected(Landroid/net/Uri;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public onAttachGalleryMultiImageSelected(Ljava/util/List;)V
+.method public onClick(Landroid/view/View;)V
     .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List",
-            "<",
-            "Landroid/net/Uri;",
-            ">;)V"
-        }
-    .end annotation
+
+    const/4 v2, 0x0
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    new-instance v1, Landroid/content/Intent;
+    iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->mAdapter:Lcom/sec/android/mimage/photoretouching/agif/ImageListAdapter;
 
-    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
+    iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/agif/ImageListAdapter;->itemsPlayMode:Ljava/util/ArrayList;
 
-    # setter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->selectedIntent:Landroid/content/Intent;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5802(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;Landroid/content/Intent;)Landroid/content/Intent;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    sget v1, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->THUMB_VIEW_TOTAL_NUM:I
+
+    if-lt v0, v1, :cond_0
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->selectedIntent:Landroid/content/Intent;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5800(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Landroid/content/Intent;
+    const v1, 0x7f070319
+
+    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
     move-result-object v0
 
-    const-string v1, "selectedItems"
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putParcelableArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->hideAttachGallery(ZZ)V
-    invoke-static {v0, v1, v2}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5900(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;ZZ)V
-
+    :goto_0
     return-void
-.end method
 
-.method public onChangedLayoutMode(Z)V
-    .locals 0
+    :cond_0
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    return-void
-.end method
-
-.method public onHideAttachSheet()V
-    .locals 3
+    invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->addAgifImages()V
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->hideAttachGallery(ZZ)V
-    invoke-static {v0, v1, v2}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5900(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;ZZ)V
-
-    return-void
-.end method
-
-.method public onOtherAppSelected(Landroid/content/Intent;)V
-    .locals 4
-
-    const/4 v2, 0x0
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->val$intent:Landroid/content/Intent;
-
-    invoke-virtual {v0, v1, v2}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->startActivityForResult(Landroid/content/Intent;I)V
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->bottom_buttons:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->mHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$6000(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Landroid/os/Handler;
+    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->gsimLogsInstance:Lcom/sec/android/mimage/photoretouching/lpe/util/Utils$GSIMLogs;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$6100(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Lcom/sec/android/mimage/photoretouching/lpe/util/Utils$GSIMLogs;
 
     move-result-object v0
 
-    new-instance v1, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38$1;
+    invoke-virtual {v0, v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils$GSIMLogs;->insertAgifEditInGSIMLog(I)V
 
-    invoke-direct {v1, p0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38$1;-><init>(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$38;)V
-
-    const-wide/16 v2, 0xc8
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    return-void
+    goto :goto_0
 .end method

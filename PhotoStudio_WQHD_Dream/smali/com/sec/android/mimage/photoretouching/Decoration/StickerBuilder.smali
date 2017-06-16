@@ -312,7 +312,7 @@
 
     move-result v17
 
-    const v20, 0x7f02064c
+    const v20, 0x7f02064a
 
     move/from16 v0, v17
 

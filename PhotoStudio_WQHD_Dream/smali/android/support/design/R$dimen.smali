@@ -135,7 +135,7 @@
 
 .field public static final abc_text_size_title_material_toolbar:I = 0x7f0800bb
 
-.field public static final appbar_elevation:I = 0x7f080525
+.field public static final appbar_elevation:I = 0x7f080526
 
 .field public static final dialog_fixed_height_major:I = 0x7f0800eb
 
@@ -145,47 +145,47 @@
 
 .field public static final dialog_fixed_width_minor:I = 0x7f0800ee
 
-.field public static final disabled_alpha_material_dark:I = 0x7f08057f
+.field public static final disabled_alpha_material_dark:I = 0x7f080581
 
-.field public static final disabled_alpha_material_light:I = 0x7f080580
+.field public static final disabled_alpha_material_light:I = 0x7f080582
 
-.field public static final fab_border_width:I = 0x7f080586
+.field public static final fab_border_width:I = 0x7f080588
 
-.field public static final fab_content_size:I = 0x7f080587
+.field public static final fab_content_size:I = 0x7f080589
 
-.field public static final fab_elevation:I = 0x7f080588
+.field public static final fab_elevation:I = 0x7f08058a
 
-.field public static final fab_size_mini:I = 0x7f080589
+.field public static final fab_size_mini:I = 0x7f08058b
 
-.field public static final fab_size_normal:I = 0x7f08058a
+.field public static final fab_size_normal:I = 0x7f08058c
 
-.field public static final fab_translation_z_pressed:I = 0x7f08058b
+.field public static final fab_translation_z_pressed:I = 0x7f08058d
 
-.field public static final navigation_elevation:I = 0x7f0805b7
+.field public static final navigation_elevation:I = 0x7f0805b9
 
-.field public static final navigation_icon_padding:I = 0x7f0805b8
+.field public static final navigation_icon_padding:I = 0x7f0805ba
 
-.field public static final navigation_icon_size:I = 0x7f0805b9
+.field public static final navigation_icon_size:I = 0x7f0805bb
 
-.field public static final navigation_max_width:I = 0x7f0805ba
+.field public static final navigation_max_width:I = 0x7f0805bc
 
-.field public static final navigation_padding_bottom:I = 0x7f0805bb
+.field public static final navigation_padding_bottom:I = 0x7f0805bd
 
 .field public static final navigation_padding_top_default:I = 0x7f0804d2
 
-.field public static final navigation_separator_vertical_padding:I = 0x7f0805bc
+.field public static final navigation_separator_vertical_padding:I = 0x7f0805be
 
-.field public static final notification_large_icon_height:I = 0x7f0805bd
+.field public static final notification_large_icon_height:I = 0x7f0805bf
 
-.field public static final notification_large_icon_width:I = 0x7f0805be
+.field public static final notification_large_icon_width:I = 0x7f0805c0
 
-.field public static final notification_subtext_size:I = 0x7f0805bf
+.field public static final notification_subtext_size:I = 0x7f0805c1
 
 .field public static final snackbar_action_inline_max_width:I = 0x7f0804b7
 
 .field public static final snackbar_background_corner_radius:I = 0x7f0804b8
 
-.field public static final snackbar_elevation:I = 0x7f0805e0
+.field public static final snackbar_elevation:I = 0x7f0805e2
 
 .field public static final snackbar_extra_spacing_horizontal:I = 0x7f0804b9
 
@@ -193,15 +193,15 @@
 
 .field public static final snackbar_min_width:I = 0x7f0804bb
 
-.field public static final snackbar_padding_horizontal:I = 0x7f0805e1
+.field public static final snackbar_padding_horizontal:I = 0x7f0805e3
 
-.field public static final snackbar_padding_vertical:I = 0x7f0805e2
+.field public static final snackbar_padding_vertical:I = 0x7f0805e4
 
 .field public static final snackbar_padding_vertical_2lines:I = 0x7f0804bc
 
-.field public static final snackbar_text_size:I = 0x7f0805e3
+.field public static final snackbar_text_size:I = 0x7f0805e5
 
-.field public static final tab_max_width:I = 0x7f0805f0
+.field public static final tab_max_width:I = 0x7f0805f3
 
 .field public static final tab_min_width:I = 0x7f0804c0
 

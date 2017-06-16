@@ -52,7 +52,7 @@
     const/4 v1, -0x1
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mCurrLayer:I
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$702(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$902(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$14;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
@@ -63,7 +63,7 @@
     move-result v1
 
     # invokes: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->layerClicked(I)V
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1900(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)V
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2100(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)V
 
     return-void
 .end method

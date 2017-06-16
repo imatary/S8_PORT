@@ -104,6 +104,13 @@
 
     invoke-virtual {v2}, Lcom/sec/android/gallery3d/rcl/provider/adapter/GalleryPickerViewAdapter;->clearSeletedItemsByMultiSelection()Z
 
+    iget-object v2, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment$6;->this$0:Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;
+
+    const/4 v3, 0x0
+
+    # setter for: Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsMaxCount:Z
+    invoke-static {v2, v3}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$402(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Z)Z
+
     return-void
 .end method
 
@@ -126,7 +133,7 @@
     const/4 v1, 0x1
 
     # invokes: Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->updateSelection(Landroid/view/View;IZ)V
-    invoke-static {v0, p2, p3, v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$400(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Landroid/view/View;IZ)V
+    invoke-static {v0, p2, p3, v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$500(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Landroid/view/View;IZ)V
 
     :cond_0
     return-void

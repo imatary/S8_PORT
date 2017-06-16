@@ -180,6 +180,8 @@
 
 .field public static final STATE_ID_DRAW:Ljava/lang/String; = "Draw"
 
+.field public static final STATE_ID_DRAWAPPLY:Ljava/lang/String; = "DrawApply"
+
 .field public static final STATE_ID_EFFECT:Ljava/lang/String; = "Effect"
 
 .field public static final STATE_ID_EFFECTAPPLY:Ljava/lang/String; = "EffectApply"
@@ -192,9 +194,13 @@
 
 .field public static final STATE_ID_LASSO:Ljava/lang/String; = "Lasso"
 
+.field public static final STATE_ID_LASSOAPPLY:Ljava/lang/String; = "LassoApply"
+
 .field public static final STATE_ID_MOSAIC:Ljava/lang/String; = "Mosaic"
 
 .field public static final STATE_ID_PERSPECTIVE:Ljava/lang/String; = "Perspective"
+
+.field public static final STATE_ID_PERSPECTIVEAPPLY:Ljava/lang/String; = "PerspectiveApply"
 
 .field public static final STATE_ID_PHOTOAPPLY:Ljava/lang/String; = "PhotoApply"
 

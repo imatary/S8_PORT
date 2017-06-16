@@ -3,12 +3,12 @@
 .source "MotionPhotoActivity.java"
 
 # interfaces
-.implements Landroid/view/animation/Animation$AnimationListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->hideAttachGallery(ZZ)V
+    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->disableFocusAll(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,12 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-.field final synthetic val$subAttach:Landroid/view/View;
-
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;Landroid/view/View;)V
+.method constructor <init>(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$41;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    iput-object p2, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$41;->val$subAttach:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,56 +34,43 @@
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/view/animation/Animation;)V
-    .locals 2
+.method public run()V
+    .locals 3
+
+    const/4 v2, 0x0
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$41;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    const/4 v1, 0x0
+    iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->bottom_buttons:Landroid/widget/LinearLayout;
 
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->disableFocusAll(Z)V
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$6200(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;Z)V
+    const/16 v1, 0x8
 
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$41;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$41;->val$subAttach:Landroid/view/View;
-
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->removeAttachSheet(Landroid/view/View;)V
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$6300(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;Landroid/view/View;)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$41;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->selectedIntent:Landroid/content/Intent;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5800(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Landroid/content/Intent;
+    const v1, 0x7f0e032e
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    invoke-virtual {v0, v2}, Landroid/view/View;->setFocusable(Z)V
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$41;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$41;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
+    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->backButton:Landroid/widget/LinearLayout;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$4600(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Landroid/widget/LinearLayout;
 
-    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->selectedIntent:Landroid/content/Intent;
-    invoke-static {v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5800(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Landroid/content/Intent;
+    move-result-object v0
 
-    move-result-object v1
+    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setFocusable(Z)V
 
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->selectedImge(Landroid/content/Intent;)V
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$6400(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;Landroid/content/Intent;)V
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$41;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    :cond_0
-    return-void
-.end method
+    iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->saveLayout:Landroid/widget/LinearLayout;
 
-.method public onAnimationRepeat(Landroid/view/animation/Animation;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public onAnimationStart(Landroid/view/animation/Animation;)V
-    .locals 0
+    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setFocusable(Z)V
 
     return-void
 .end method

@@ -305,17 +305,19 @@
 
 .field public static final actionbar_text_padding:I = 0x7f0804cc
 
+.field public static final actionbar_text_stroke_size:I = 0x7f08050e
+
 .field public static final actionbar_title_text_size:I = 0x7f0803f5
 
-.field public static final active_curve_handler_height:I = 0x7f08050e
+.field public static final active_curve_handler_height:I = 0x7f08050f
 
-.field public static final active_curve_handler_width:I = 0x7f08050f
+.field public static final active_curve_handler_width:I = 0x7f080510
 
 .field public static final activity_horizontal_margin:I = 0x7f0803f6
 
 .field public static final activity_vertical_margin:I = 0x7f0803f7
 
-.field public static final add_point_zoom_picker_width:I = 0x7f080510
+.field public static final add_point_zoom_picker_width:I = 0x7f080511
 
 .field public static final adjustment_bottom_buttons_layout_width:I = 0x7f0801c3
 
@@ -373,11 +375,11 @@
 
 .field public static final adjustment_desktop_mode_top_margin:I = 0x7f0800c0
 
-.field public static final adjustment_glline_width:I = 0x7f080511
+.field public static final adjustment_glline_width:I = 0x7f080512
 
 .field public static final adjustment_land_bottom_buttons_height:I = 0x7f0801d2
 
-.field public static final adjustment_land_bottom_buttons_margin_end:I = 0x7f080512
+.field public static final adjustment_land_bottom_buttons_margin_end:I = 0x7f080513
 
 .field public static final adjustment_land_bottom_buttons_width:I = 0x7f0801d3
 
@@ -443,9 +445,9 @@
 
 .field public static final adjustment_sub_layout_margin_left_right:I = 0x7f0801e3
 
-.field public static final adjustment_sub_menu_stroke_width:I = 0x7f080513
+.field public static final adjustment_sub_menu_stroke_width:I = 0x7f080514
 
-.field public static final adjustment_sub_menu_stroke_width_1:I = 0x7f080514
+.field public static final adjustment_sub_menu_stroke_width_1:I = 0x7f080515
 
 .field public static final adjustment_top_margin:I = 0x7f0804a5
 
@@ -475,7 +477,7 @@
 
 .field public static final agif_effect_manager_actionbar_divider_width:I = 0x7f080401
 
-.field public static final agif_effect_manager_actionbar_layout_height_p:I = 0x7f080515
+.field public static final agif_effect_manager_actionbar_layout_height_p:I = 0x7f080516
 
 .field public static final agif_effect_manager_thumbnail_check_box_height:I = 0x7f080402
 
@@ -499,19 +501,19 @@
 
 .field public static final agif_effect_manager_thumbnail_layout_height_p:I = 0x7f08040c
 
-.field public static final agif_effect_manager_thumbnail_layout_scroll_bottom_margin:I = 0x7f080516
+.field public static final agif_effect_manager_thumbnail_layout_scroll_bottom_margin:I = 0x7f080517
 
-.field public static final agif_effect_manager_thumbnail_layout_width_height_l:I = 0x7f080517
+.field public static final agif_effect_manager_thumbnail_layout_width_height_l:I = 0x7f080518
 
-.field public static final agif_effect_manager_thumbnail_layout_width_height_p:I = 0x7f080518
+.field public static final agif_effect_manager_thumbnail_layout_width_height_p:I = 0x7f080519
 
 .field public static final agif_effect_manager_thumbnail_layout_width_l:I = 0x7f08040d
 
 .field public static final agif_effect_manager_thumbnail_layout_width_p:I = 0x7f08040e
 
-.field public static final agif_effect_manager_thumbnail_layout_width_withBar_l:I = 0x7f080519
+.field public static final agif_effect_manager_thumbnail_layout_width_withBar_l:I = 0x7f08051a
 
-.field public static final agif_effect_manager_thumbnail_layout_width_withBar_p:I = 0x7f08051a
+.field public static final agif_effect_manager_thumbnail_layout_width_withBar_p:I = 0x7f08051b
 
 .field public static final agif_effect_manager_thumbnail_text_view_width:I = 0x7f08040f
 
@@ -521,7 +523,7 @@
 
 .field public static final agif_grid_arrow_top_margin:I = 0x7f080411
 
-.field public static final agif_grid_item_submenu_layout_width:I = 0x7f08051b
+.field public static final agif_grid_item_submenu_layout_width:I = 0x7f08051c
 
 .field public static final agif_grid_margin:I = 0x7f080412
 
@@ -533,23 +535,23 @@
 
 .field public static final agif_grid_min_height:I = 0x7f08027e
 
-.field public static final agif_grid_submenu_arrow_layout_margin_bottom:I = 0x7f08051c
+.field public static final agif_grid_submenu_arrow_layout_margin_bottom:I = 0x7f08051d
 
-.field public static final agif_grid_submenu_height:I = 0x7f08051d
+.field public static final agif_grid_submenu_height:I = 0x7f08051e
 
-.field public static final agif_grid_submenu_image_width_and_height:I = 0x7f08051e
+.field public static final agif_grid_submenu_image_width_and_height:I = 0x7f08051f
 
-.field public static final agif_grid_submenu_padding_value:I = 0x7f08051f
+.field public static final agif_grid_submenu_padding_value:I = 0x7f080520
 
-.field public static final agif_grid_submenu_parent_layout:I = 0x7f080520
+.field public static final agif_grid_submenu_parent_layout:I = 0x7f080521
 
 .field public static final agif_icons_gap:I = 0x7f080413
 
-.field public static final agif_list_view_margin:I = 0x7f080521
+.field public static final agif_list_view_margin:I = 0x7f080522
 
 .field public static final agif_main_buttons_intermediate_layout_width:I = 0x7f08027f
 
-.field public static final agif_main_buttons_side_margin:I = 0x7f080522
+.field public static final agif_main_buttons_side_margin:I = 0x7f080523
 
 .field public static final agif_main_icon_margin:I = 0x7f080414
 
@@ -585,7 +587,7 @@
 
 .field public static final agif_speed_submenu_text_size:I = 0x7f0801e9
 
-.field public static final agif_sub_button_margin:I = 0x7f080523
+.field public static final agif_sub_button_margin:I = 0x7f080524
 
 .field public static final agif_submenu_height:I = 0x7f08028b
 
@@ -597,7 +599,7 @@
 
 .field public static final agif_submenu_width:I = 0x7f08028e
 
-.field public static final agif_thumbnail_add_image_width:I = 0x7f080524
+.field public static final agif_thumbnail_add_image_width:I = 0x7f080525
 
 .field public static final agif_thumbnail_focus_layout_height_p:I = 0x7f08028f
 
@@ -623,29 +625,29 @@
 
 .field public static final agif_value_to_scroll:I = 0x7f0801ea
 
-.field public static final appbar_elevation:I = 0x7f080525
+.field public static final appbar_elevation:I = 0x7f080526
 
 .field public static final aspect_ratio_left_margin:I = 0x7f08029a
 
-.field public static final aspect_ratio_margin_left:I = 0x7f080526
+.field public static final aspect_ratio_margin_left:I = 0x7f080527
 
-.field public static final attach_sheet_divider_height:I = 0x7f080527
+.field public static final attach_sheet_divider_height:I = 0x7f080528
 
-.field public static final attach_view_bottom_tab_height:I = 0x7f080528
+.field public static final attach_view_bottom_tab_height:I = 0x7f080529
 
-.field public static final attach_view_divider_height:I = 0x7f080529
+.field public static final attach_view_divider_height:I = 0x7f08052a
 
-.field public static final auto_straighten_btn_height:I = 0x7f08052a
+.field public static final auto_straighten_btn_height:I = 0x7f08052b
 
-.field public static final auto_straighten_btn_width:I = 0x7f08052b
+.field public static final auto_straighten_btn_width:I = 0x7f08052c
 
-.field public static final auto_straighten_right_margin:I = 0x7f08052c
+.field public static final auto_straighten_right_margin:I = 0x7f08052d
 
-.field public static final auto_straighten_right_margin_land:I = 0x7f08052d
+.field public static final auto_straighten_right_margin_land:I = 0x7f08052e
 
-.field public static final auto_straighten_top_margin:I = 0x7f08052e
+.field public static final auto_straighten_top_margin:I = 0x7f08052f
 
-.field public static final auto_straighten_top_margin_land:I = 0x7f08052f
+.field public static final auto_straighten_top_margin_land:I = 0x7f080530
 
 .field public static final beautify_option_reset_button_height:I = 0x7f080001
 
@@ -695,7 +697,7 @@
 
 .field public static final bottom_button_icon_width_deco:I = 0x7f08029d
 
-.field public static final bottom_button_text_margin_top:I = 0x7f080530
+.field public static final bottom_button_text_margin_top:I = 0x7f080531
 
 .field public static final bottom_button_textview_layout_height:I = 0x7f0801ee
 
@@ -705,11 +707,11 @@
 
 .field public static final bottom_gray_background_height:I = 0x7f0801ef
 
-.field public static final bottom_gray_background_height_ad:I = 0x7f080531
+.field public static final bottom_gray_background_height_ad:I = 0x7f080532
 
 .field public static final bottom_icon_textView_width:I = 0x7f08041e
 
-.field public static final bottom_layout_land_left_right_margin:I = 0x7f080532
+.field public static final bottom_layout_land_left_right_margin:I = 0x7f080533
 
 .field public static final bottom_layout_left_right_margin:I = 0x7f0801ab
 
@@ -761,15 +763,15 @@
 
 .field public static final camera_fragment_min_height:I = 0x7f080361
 
-.field public static final card_view_height:I = 0x7f080533
+.field public static final card_view_height:I = 0x7f080534
 
 .field public static final card_view_spacing:I = 0x7f0804ad
 
-.field public static final card_view_text_padding_bottom:I = 0x7f080534
+.field public static final card_view_text_padding_bottom:I = 0x7f080535
 
-.field public static final card_view_text_size:I = 0x7f080535
+.field public static final card_view_text_size:I = 0x7f080536
 
-.field public static final card_view_width:I = 0x7f080536
+.field public static final card_view_width:I = 0x7f080537
 
 .field public static final change_player_dialog_item_height:I = 0x7f080423
 
@@ -777,7 +779,7 @@
 
 .field public static final clear_all_button_background_padding:I = 0x7f080009
 
-.field public static final collage_action_bar_gray_background_height:I = 0x7f080537
+.field public static final collage_action_bar_gray_background_height:I = 0x7f080538
 
 .field public static final collage_add_icon_size:I = 0x7f0801f7
 
@@ -801,7 +803,7 @@
 
 .field public static final collage_border_layout_height:I = 0x7f0801ff
 
-.field public static final collage_border_layout_right_gap:I = 0x7f080538
+.field public static final collage_border_layout_right_gap:I = 0x7f080539
 
 .field public static final collage_border_layout_width:I = 0x7f080200
 
@@ -821,7 +823,7 @@
 
 .field public static final collage_border_seekbar_width:I = 0x7f080205
 
-.field public static final collage_bottom_gray_background_height:I = 0x7f080539
+.field public static final collage_bottom_gray_background_height:I = 0x7f08053a
 
 .field public static final collage_button_width:I = 0x7f0802a4
 
@@ -837,7 +839,7 @@
 
 .field public static final collage_colorpicker_color_02_margin_start:I = 0x7f080209
 
-.field public static final collage_colorpicker_color_padding_top:I = 0x7f08053a
+.field public static final collage_colorpicker_color_padding_top:I = 0x7f08053b
 
 .field public static final collage_colorpicker_color_side_margin:I = 0x7f0803a0
 
@@ -877,11 +879,11 @@
 
 .field public static final collage_layout_left_margin:I = 0x7f0802a5
 
-.field public static final collage_main_bottom_button_image_layout_height:I = 0x7f08053b
+.field public static final collage_main_bottom_button_image_layout_height:I = 0x7f08053c
 
-.field public static final collage_main_bottom_button_image_layout_width:I = 0x7f08053c
+.field public static final collage_main_bottom_button_image_layout_width:I = 0x7f08053d
 
-.field public static final collage_main_bottom_button_layout_width:I = 0x7f08053d
+.field public static final collage_main_bottom_button_layout_width:I = 0x7f08053e
 
 .field public static final collage_main_btns_top_margin:I = 0x7f080216
 
@@ -899,11 +901,11 @@
 
 .field public static final collage_modify_button_layout_height:I = 0x7f0804c4
 
-.field public static final collage_modify_button_layout_marginBottom:I = 0x7f08053e
+.field public static final collage_modify_button_layout_marginBottom:I = 0x7f08053f
 
-.field public static final collage_modify_button_layout_marginSide:I = 0x7f08053f
+.field public static final collage_modify_button_layout_marginSide:I = 0x7f080540
 
-.field public static final collage_modify_button_layout_marginTop:I = 0x7f080540
+.field public static final collage_modify_button_layout_marginTop:I = 0x7f080541
 
 .field public static final collage_modify_button_layout_width:I = 0x7f0804c5
 
@@ -1107,33 +1109,33 @@
 
 .field public static final color_picker_width_v42:I = 0x7f08012f
 
-.field public static final color_tuning_seekbar_layout_height:I = 0x7f080541
+.field public static final color_tuning_seekbar_layout_height:I = 0x7f080542
 
-.field public static final color_tuning_seekbar_parent_margin_bottom:I = 0x7f080542
+.field public static final color_tuning_seekbar_parent_margin_bottom:I = 0x7f080543
 
-.field public static final color_tuning_seekbar_title_text_size:I = 0x7f080543
+.field public static final color_tuning_seekbar_title_text_size:I = 0x7f080544
 
-.field public static final color_tuning_seekbar_title_width:I = 0x7f080544
+.field public static final color_tuning_seekbar_title_width:I = 0x7f080545
 
-.field public static final color_turning_b_w_height:I = 0x7f080545
+.field public static final color_turning_b_w_height:I = 0x7f080546
 
-.field public static final color_turning_b_w_width:I = 0x7f080546
+.field public static final color_turning_b_w_width:I = 0x7f080547
 
-.field public static final color_turning_button_bg_height:I = 0x7f080547
+.field public static final color_turning_button_bg_height:I = 0x7f080548
 
-.field public static final color_turning_button_color_width_height:I = 0x7f080548
+.field public static final color_turning_button_color_width_height:I = 0x7f080549
 
 .field public static final color_turning_content_margin_bottom:I = 0x7f0801af
 
 .field public static final color_turning_horizontalScrollview_parent_width:I = 0x7f080220
 
-.field public static final color_turning_margin_bottom:I = 0x7f080549
+.field public static final color_turning_margin_bottom:I = 0x7f08054a
 
-.field public static final color_turning_margin_left:I = 0x7f08054a
+.field public static final color_turning_margin_left:I = 0x7f08054b
 
-.field public static final color_turning_pick_color_width_height:I = 0x7f08054b
+.field public static final color_turning_pick_color_width_height:I = 0x7f08054c
 
-.field public static final color_turning_wb_button_color_width_height:I = 0x7f08054c
+.field public static final color_turning_wb_button_color_width_height:I = 0x7f08054d
 
 .field public static final color_valuehsv_hight:I = 0x7f080221
 
@@ -1141,19 +1143,19 @@
 
 .field public static final color_valuehsv_width:I = 0x7f080223
 
-.field public static final colorpicker_color_height_land:I = 0x7f08054d
+.field public static final colorpicker_color_height_land:I = 0x7f08054e
 
-.field public static final colorpicker_color_height_port:I = 0x7f08054e
+.field public static final colorpicker_color_height_port:I = 0x7f08054f
 
-.field public static final colorpicker_color_margin:I = 0x7f08054f
+.field public static final colorpicker_color_margin:I = 0x7f080550
 
-.field public static final colorpicker_color_width_land:I = 0x7f080550
+.field public static final colorpicker_color_width_land:I = 0x7f080551
 
-.field public static final colorpicker_color_width_port:I = 0x7f080551
+.field public static final colorpicker_color_width_port:I = 0x7f080552
 
-.field public static final colorpicker_palette_height:I = 0x7f080552
+.field public static final colorpicker_palette_height:I = 0x7f080553
 
-.field public static final colorpicker_palette_width:I = 0x7f080553
+.field public static final colorpicker_palette_width:I = 0x7f080554
 
 .field public static final common_bg_margin_top_v42:I = 0x7f080130
 
@@ -1255,93 +1257,93 @@
 
 .field public static final control_handler_rotate_icon_size:I = 0x7f0803ca
 
-.field public static final cover_grid_width:I = 0x7f080554
+.field public static final cover_grid_width:I = 0x7f080555
 
 .field public static final crop_submenu_bottom_margin_land:I = 0x7f08042b
 
 .field public static final crop_widget_icons_size:I = 0x7f080224
 
-.field public static final crop_widget_icons_size_pressed:I = 0x7f080555
+.field public static final crop_widget_icons_size_pressed:I = 0x7f080556
 
-.field public static final current_image_arrow_height:I = 0x7f080556
+.field public static final current_image_arrow_height:I = 0x7f080557
 
-.field public static final current_image_arrow_margin_bottom:I = 0x7f080557
+.field public static final current_image_arrow_margin_bottom:I = 0x7f080558
 
-.field public static final current_image_arrow_width:I = 0x7f080558
+.field public static final current_image_arrow_width:I = 0x7f080559
 
-.field public static final curve_bottom_button_height:I = 0x7f080559
+.field public static final curve_bottom_button_height:I = 0x7f08055a
 
-.field public static final curve_bottom_button_icon_height:I = 0x7f08055a
+.field public static final curve_bottom_button_icon_height:I = 0x7f08055b
 
-.field public static final curve_bottom_button_icon_width:I = 0x7f08055b
+.field public static final curve_bottom_button_icon_width:I = 0x7f08055c
 
-.field public static final curve_bottom_button_total_width:I = 0x7f08055c
+.field public static final curve_bottom_button_total_width:I = 0x7f08055d
 
-.field public static final curve_bottom_button_width:I = 0x7f08055d
+.field public static final curve_bottom_button_width:I = 0x7f08055e
 
 .field public static final curve_bottom_layout_margin_bottom:I = 0x7f0800c5
 
-.field public static final curve_drag_range:I = 0x7f08055e
+.field public static final curve_drag_range:I = 0x7f08055f
 
-.field public static final curve_grid_width:I = 0x7f08055f
+.field public static final curve_grid_width:I = 0x7f080560
 
-.field public static final curve_line_width:I = 0x7f080560
+.field public static final curve_line_width:I = 0x7f080561
 
-.field public static final curve_parametric_inside_area:I = 0x7f080561
+.field public static final curve_parametric_inside_area:I = 0x7f080562
 
-.field public static final curve_range_seekbar_handler_width:I = 0x7f080562
+.field public static final curve_range_seekbar_handler_width:I = 0x7f080563
 
 .field public static final curve_range_seekbar_margin_bottom:I = 0x7f0800c6
 
-.field public static final curve_range_seekbar_progress_height:I = 0x7f080563
+.field public static final curve_range_seekbar_progress_height:I = 0x7f080564
 
-.field public static final curve_range_seekbar_total_height:I = 0x7f080564
+.field public static final curve_range_seekbar_total_height:I = 0x7f080565
 
-.field public static final curve_range_seekbar_total_width:I = 0x7f080565
+.field public static final curve_range_seekbar_total_width:I = 0x7f080566
 
 .field public static final curve_seekbar_margin_bottom:I = 0x7f0800c7
 
-.field public static final curve_side_button_1st_gap:I = 0x7f080566
+.field public static final curve_side_button_1st_gap:I = 0x7f080567
 
-.field public static final curve_side_button_2nd_gap:I = 0x7f080567
+.field public static final curve_side_button_2nd_gap:I = 0x7f080568
 
-.field public static final curve_side_button_3rd_gap:I = 0x7f080568
+.field public static final curve_side_button_3rd_gap:I = 0x7f080569
 
-.field public static final curve_side_button_distance_from_grid:I = 0x7f080569
+.field public static final curve_side_button_distance_from_grid:I = 0x7f08056a
 
-.field public static final curve_side_button_distance_from_parametric_frame:I = 0x7f08056a
+.field public static final curve_side_button_distance_from_parametric_frame:I = 0x7f08056b
 
-.field public static final curve_side_button_height:I = 0x7f08056b
+.field public static final curve_side_button_height:I = 0x7f08056c
 
 .field public static final curve_side_button_margin_bottom:I = 0x7f0800c8
 
-.field public static final curve_side_button_parametric_icon_height:I = 0x7f08056c
+.field public static final curve_side_button_parametric_icon_height:I = 0x7f08056d
 
-.field public static final curve_side_button_parametric_icon_width:I = 0x7f08056d
+.field public static final curve_side_button_parametric_icon_width:I = 0x7f08056e
 
-.field public static final curve_side_button_point_icon_height:I = 0x7f08056e
+.field public static final curve_side_button_point_icon_height:I = 0x7f08056f
 
-.field public static final curve_side_button_point_icon_width:I = 0x7f08056f
+.field public static final curve_side_button_point_icon_width:I = 0x7f080570
 
-.field public static final curve_side_button_total_height:I = 0x7f080570
+.field public static final curve_side_button_total_height:I = 0x7f080571
 
-.field public static final curve_side_button_width:I = 0x7f080571
+.field public static final curve_side_button_width:I = 0x7f080572
 
 .field public static final curve_side_buttons_bottom_margin:I = 0x7f0800c9
 
-.field public static final curve_stroke_width:I = 0x7f080572
+.field public static final curve_stroke_width:I = 0x7f080573
 
-.field public static final custom_seek_bar_layout_height:I = 0x7f080573
+.field public static final custom_seek_bar_layout_height:I = 0x7f080574
 
-.field public static final custom_seek_bar_layout_width:I = 0x7f080574
+.field public static final custom_seek_bar_layout_width:I = 0x7f080575
 
 .field public static final custom_seek_bar_margin_bottom:I = 0x7f08049f
 
-.field public static final custom_seek_bar_margin_start:I = 0x7f080575
+.field public static final custom_seek_bar_margin_start:I = 0x7f080576
 
-.field public static final custom_seek_bar_text_padding:I = 0x7f080576
+.field public static final custom_seek_bar_text_padding:I = 0x7f080577
 
-.field public static final custom_seek_bar_text_width:I = 0x7f080577
+.field public static final custom_seek_bar_text_width:I = 0x7f080578
 
 .field public static final custom_seek_bar_thumb_offset:I = 0x7f080368
 
@@ -1355,7 +1357,7 @@
 
 .field public static final deco_sub_btn_height:I = 0x7f0804c3
 
-.field public static final deco_sub_buttons_height:I = 0x7f080578
+.field public static final deco_sub_buttons_height:I = 0x7f080579
 
 .field public static final decor_main_tab_width_c9:I = 0x7f0800cc
 
@@ -1389,9 +1391,9 @@
 
 .field public static final decoration_main_buttons_width:I = 0x7f0800d5
 
-.field public static final decoration_min_width:I = 0x7f080579
+.field public static final decoration_min_width:I = 0x7f08057a
 
-.field public static final decoration_page_viewer_bottom_margin:I = 0x7f08057a
+.field public static final decoration_page_viewer_bottom_margin:I = 0x7f08057b
 
 .field public static final decoration_page_viewer_height:I = 0x7f0800d6
 
@@ -1401,11 +1403,11 @@
 
 .field public static final decoration_sub_tab_margin:I = 0x7f0800d8
 
-.field public static final decoration_tab_height:I = 0x7f08057b
+.field public static final decoration_tab_height:I = 0x7f08057c
 
 .field public static final default_text_size:I = 0x7f08042e
 
-.field public static final degree_layout_land_margin_right:I = 0x7f08057c
+.field public static final degree_layout_land_margin_right:I = 0x7f08057d
 
 .field public static final device_width:I = 0x7f080335
 
@@ -1417,15 +1419,17 @@
 
 .field public static final dialog_fixed_width_minor:I = 0x7f0800ee
 
+.field public static final dialog_message_textsize:I = 0x7f08057e
+
 .field public static final dialogbuttons_textsize:I = 0x7f08042f
 
-.field public static final dimen_0:I = 0x7f08057d
+.field public static final dimen_0:I = 0x7f08057f
 
-.field public static final direction_button_height:I = 0x7f08057e
+.field public static final direction_button_height:I = 0x7f080580
 
-.field public static final disabled_alpha_material_dark:I = 0x7f08057f
+.field public static final disabled_alpha_material_dark:I = 0x7f080581
 
-.field public static final disabled_alpha_material_light:I = 0x7f080580
+.field public static final disabled_alpha_material_light:I = 0x7f080582
 
 .field public static final divider_height:I = 0x7f0804d3
 
@@ -1447,7 +1451,7 @@
 
 .field public static final effect_manager_actionbar_text_size:I = 0x7f080227
 
-.field public static final effect_manager_gap_buttons:I = 0x7f080581
+.field public static final effect_manager_gap_buttons:I = 0x7f080583
 
 .field public static final effect_manager_text_size:I = 0x7f080228
 
@@ -1487,13 +1491,13 @@
 
 .field public static final effect_seekbar_bottom_margin:I = 0x7f080229
 
-.field public static final effect_sub_actionbar_icon_margin_left:I = 0x7f080582
+.field public static final effect_sub_actionbar_icon_margin_left:I = 0x7f080584
 
-.field public static final effect_sub_actionbar_icon_margin_right:I = 0x7f080583
+.field public static final effect_sub_actionbar_icon_margin_right:I = 0x7f080585
 
-.field public static final effect_text_bottom_margin:I = 0x7f080584
+.field public static final effect_text_bottom_margin:I = 0x7f080586
 
-.field public static final effect_text_size:I = 0x7f080585
+.field public static final effect_text_size:I = 0x7f080587
 
 .field public static final effect_thumbs_parent_margin_bottom:I = 0x7f0803eb
 
@@ -1523,23 +1527,23 @@
 
 .field public static final extra_menu_image_style_for_submenu_portrait_with_icons_width:I = 0x7f080491
 
-.field public static final fab_border_width:I = 0x7f080586
+.field public static final fab_border_width:I = 0x7f080588
 
-.field public static final fab_content_size:I = 0x7f080587
+.field public static final fab_content_size:I = 0x7f080589
 
-.field public static final fab_elevation:I = 0x7f080588
+.field public static final fab_elevation:I = 0x7f08058a
 
-.field public static final fab_size_mini:I = 0x7f080589
+.field public static final fab_size_mini:I = 0x7f08058b
 
-.field public static final fab_size_normal:I = 0x7f08058a
+.field public static final fab_size_normal:I = 0x7f08058c
 
-.field public static final fab_translation_z_pressed:I = 0x7f08058b
+.field public static final fab_translation_z_pressed:I = 0x7f08058d
 
-.field public static final faing_edge_length:I = 0x7f08058c
+.field public static final faing_edge_length:I = 0x7f08058e
 
-.field public static final fixed_curve_handler_height:I = 0x7f08058d
+.field public static final fixed_curve_handler_height:I = 0x7f08058f
 
-.field public static final fixed_curve_handler_width:I = 0x7f08058e
+.field public static final fixed_curve_handler_width:I = 0x7f080590
 
 .field public static final fragment_max_height:I = 0x7f08036c
 
@@ -1557,17 +1561,17 @@
 
 .field public static final grid_arrow_top_margin:I = 0x7f0802bc
 
-.field public static final grid_cover_item_horizontal_spacing:I = 0x7f08058f
+.field public static final grid_cover_item_horizontal_spacing:I = 0x7f080591
 
-.field public static final grid_cover_item_vertical_spacing:I = 0x7f080590
+.field public static final grid_cover_item_vertical_spacing:I = 0x7f080592
 
-.field public static final grid_frame_height:I = 0x7f080591
+.field public static final grid_frame_height:I = 0x7f080593
 
 .field public static final grid_frame_margin_bottom:I = 0x7f0800d9
 
-.field public static final grid_frame_width:I = 0x7f080592
+.field public static final grid_frame_width:I = 0x7f080594
 
-.field public static final grid_item_cover_side_margin:I = 0x7f080593
+.field public static final grid_item_cover_side_margin:I = 0x7f080595
 
 .field public static final grid_item_label_side_margin:I = 0x7f0800da
 
@@ -1583,7 +1587,7 @@
 
 .field public static final grid_item_sticker_side_margin_land:I = 0x7f080370
 
-.field public static final grid_item_submenu_margin_bottom:I = 0x7f080594
+.field public static final grid_item_submenu_margin_bottom:I = 0x7f080596
 
 .field public static final grid_label_item_horizontal_spacing:I = 0x7f0800de
 
@@ -1595,11 +1599,11 @@
 
 .field public static final grid_margin:I = 0x7f0802bd
 
-.field public static final grid_margin_extra:I = 0x7f080595
+.field public static final grid_margin_extra:I = 0x7f080597
 
 .field public static final grid_margin_left:I = 0x7f0804d0
 
-.field public static final grid_padding:I = 0x7f080596
+.field public static final grid_padding:I = 0x7f080598
 
 .field public static final grid_start_margin_port:I = 0x7f080373
 
@@ -1609,7 +1613,7 @@
 
 .field public static final grid_sticker_item_vertical_spacing:I = 0x7f0800e1
 
-.field public static final gridview_thumbnail_focus_border_width:I = 0x7f080597
+.field public static final gridview_thumbnail_focus_border_width:I = 0x7f080599
 
 .field public static final group_view_counter_height:I = 0x7f0803b2
 
@@ -1727,7 +1731,7 @@
 
 .field public static final help_popup_collage_point_height_3:I = 0x7f080377
 
-.field public static final help_popup_description_text_size:I = 0x7f080598
+.field public static final help_popup_description_text_size:I = 0x7f08059a
 
 .field public static final help_popup_edit_point_margin_end:I = 0x7f08022e
 
@@ -1771,7 +1775,7 @@
 
 .field public static final help_popup_shuffle_text_margin_top:I = 0x7f0802d2
 
-.field public static final help_popup_shuffle_text_min_gap:I = 0x7f080599
+.field public static final help_popup_shuffle_text_min_gap:I = 0x7f08059b
 
 .field public static final help_popup_shuffle_textview_line_spacing:I = 0x7f0802d3
 
@@ -1791,7 +1795,7 @@
 
 .field public static final help_popup_text_right_margin_port:I = 0x7f08033b
 
-.field public static final help_popup_text_top_margin_port:I = 0x7f08059a
+.field public static final help_popup_text_top_margin_port:I = 0x7f08059c
 
 .field public static final help_popup_text_width_land:I = 0x7f0803a8
 
@@ -1801,9 +1805,9 @@
 
 .field public static final history_item_bg_layout_height:I = 0x7f08037a
 
-.field public static final inactive_curve_handler_height:I = 0x7f08059b
+.field public static final inactive_curve_handler_height:I = 0x7f08059d
 
-.field public static final inactive_curve_handler_width:I = 0x7f08059c
+.field public static final inactive_curve_handler_width:I = 0x7f08059e
 
 .field public static final input_dialog_height_land:I = 0x7f080437
 
@@ -1821,15 +1825,15 @@
 
 .field public static final input_dialog_width_port:I = 0x7f08043e
 
-.field public static final knox_desktop_launcher_bar_height:I = 0x7f08059d
+.field public static final knox_desktop_launcher_bar_height:I = 0x7f08059f
 
-.field public static final label_edit_text_size:I = 0x7f08059e
+.field public static final label_edit_text_size:I = 0x7f0805a0
 
-.field public static final label_edittext_margin_end:I = 0x7f08059f
+.field public static final label_edittext_margin_end:I = 0x7f0805a1
 
 .field public static final label_edittext_margin_start:I = 0x7f0804c8
 
-.field public static final label_edittext_margin_top:I = 0x7f0805a0
+.field public static final label_edittext_margin_top:I = 0x7f0805a2
 
 .field public static final label_grid_height:I = 0x7f0802d8
 
@@ -1857,7 +1861,7 @@
 
 .field public static final left_margin_for_aspect_ratio_submenu:I = 0x7f0802db
 
-.field public static final left_margin_for_direction_arrow:I = 0x7f0805a1
+.field public static final left_margin_for_direction_arrow:I = 0x7f0805a3
 
 .field public static final left_margin_for_direction_submenu:I = 0x7f08033d
 
@@ -1871,27 +1875,27 @@
 
 .field public static final left_margin_for_speed_submenu_land:I = 0x7f0802de
 
-.field public static final main_adjustment_button_width:I = 0x7f0805a2
+.field public static final main_adjustment_button_width:I = 0x7f0805a4
 
 .field public static final main_bottom_button_collage_margin:I = 0x7f0804c9
 
-.field public static final main_bottom_button_collage_sub_layout_margin:I = 0x7f0805a3
+.field public static final main_bottom_button_collage_sub_layout_margin:I = 0x7f0805a5
 
 .field public static final main_bottom_button_edge_margin:I = 0x7f0804b0
 
-.field public static final main_bottom_button_edge_margin_five:I = 0x7f0805a4
+.field public static final main_bottom_button_edge_margin_five:I = 0x7f0805a6
 
-.field public static final main_bottom_button_edge_margin_tab_s3:I = 0x7f0805a5
+.field public static final main_bottom_button_edge_margin_tab_s3:I = 0x7f0805a7
 
-.field public static final main_bottom_button_edge_margin_tab_s3_landscape:I = 0x7f0805a6
+.field public static final main_bottom_button_edge_margin_tab_s3_landscape:I = 0x7f0805a8
 
 .field public static final main_bottom_button_height:I = 0x7f0804b1
 
-.field public static final main_bottom_button_icon_width:I = 0x7f0805a7
+.field public static final main_bottom_button_icon_width:I = 0x7f0805a9
 
 .field public static final main_bottom_button_tab_s3_edge_margin:I = 0x7f0801b0
 
-.field public static final main_bottom_button_text_padding:I = 0x7f0805a8
+.field public static final main_bottom_button_text_padding:I = 0x7f0805aa
 
 .field public static final main_btn_layout_height:I = 0x7f080231
 
@@ -1939,11 +1943,11 @@
 
 .field public static final main_text_height:I = 0x7f080234
 
-.field public static final main_text_size:I = 0x7f0805a9
+.field public static final main_text_size:I = 0x7f0805ab
 
 .field public static final margin:I = 0x7f08044b
 
-.field public static final max_actionbar_text_sixe:I = 0x7f0805aa
+.field public static final max_actionbar_text_sixe:I = 0x7f0805ac
 
 .field public static final menu_back_margin:I = 0x7f08044c
 
@@ -1951,63 +1955,63 @@
 
 .field public static final menu_margin_start_end_small:I = 0x7f0801b3
 
-.field public static final min_bottom_button_width:I = 0x7f0805ab
+.field public static final min_bottom_button_width:I = 0x7f0805ad
 
-.field public static final min_bottom_button_width_seven_button:I = 0x7f0805ac
+.field public static final min_bottom_button_width_seven_button:I = 0x7f0805ae
 
-.field public static final minimum_curve_side_button_margin_top:I = 0x7f0805ad
+.field public static final minimum_curve_side_button_margin_top:I = 0x7f0805af
 
-.field public static final minimum_frame_margin_top:I = 0x7f0805ae
+.field public static final minimum_frame_margin_top:I = 0x7f0805b0
 
-.field public static final modify_popup_margin_top_offset_down:I = 0x7f0805af
+.field public static final modify_popup_margin_top_offset_down:I = 0x7f0805b1
 
-.field public static final modify_popup_margin_top_offset_up:I = 0x7f0805b0
+.field public static final modify_popup_margin_top_offset_up:I = 0x7f0805b2
 
-.field public static final mth_tab_bottom_padding:I = 0x7f0805b1
+.field public static final mth_tab_bottom_padding:I = 0x7f0805b3
 
-.field public static final mth_tab_height:I = 0x7f0805b2
+.field public static final mth_tab_height:I = 0x7f0805b4
 
-.field public static final mth_tab_indicator_height:I = 0x7f0805b3
+.field public static final mth_tab_indicator_height:I = 0x7f0805b5
 
-.field public static final mth_tab_left_offset:I = 0x7f0805b4
+.field public static final mth_tab_left_offset:I = 0x7f0805b6
 
-.field public static final mth_tab_text_size:I = 0x7f0805b5
+.field public static final mth_tab_text_size:I = 0x7f0805b7
 
-.field public static final mth_tab_width_padding:I = 0x7f0805b6
+.field public static final mth_tab_width_padding:I = 0x7f0805b8
 
-.field public static final navigation_elevation:I = 0x7f0805b7
+.field public static final navigation_elevation:I = 0x7f0805b9
 
-.field public static final navigation_icon_padding:I = 0x7f0805b8
+.field public static final navigation_icon_padding:I = 0x7f0805ba
 
-.field public static final navigation_icon_size:I = 0x7f0805b9
+.field public static final navigation_icon_size:I = 0x7f0805bb
 
-.field public static final navigation_max_width:I = 0x7f0805ba
+.field public static final navigation_max_width:I = 0x7f0805bc
 
-.field public static final navigation_padding_bottom:I = 0x7f0805bb
+.field public static final navigation_padding_bottom:I = 0x7f0805bd
 
 .field public static final navigation_padding_top_default:I = 0x7f0804d2
 
-.field public static final navigation_separator_vertical_padding:I = 0x7f0805bc
+.field public static final navigation_separator_vertical_padding:I = 0x7f0805be
 
 .field public static final noti_dialog_land:I = 0x7f08044d
 
 .field public static final noti_dialog_port:I = 0x7f08044e
 
-.field public static final notification_large_icon_height:I = 0x7f0805bd
+.field public static final notification_large_icon_height:I = 0x7f0805bf
 
-.field public static final notification_large_icon_width:I = 0x7f0805be
+.field public static final notification_large_icon_width:I = 0x7f0805c0
 
-.field public static final notification_subtext_size:I = 0x7f0805bf
+.field public static final notification_subtext_size:I = 0x7f0805c1
 
 .field public static final parametric_curve_seekbar_bottom_margin:I = 0x7f0800e3
 
-.field public static final parametric_frame_height:I = 0x7f0805c0
+.field public static final parametric_frame_height:I = 0x7f0805c2
 
 .field public static final parametric_frame_margin_bottom:I = 0x7f0800e4
 
-.field public static final parametric_frame_width:I = 0x7f0805c1
+.field public static final parametric_frame_width:I = 0x7f0805c3
 
-.field public static final parent_current_image_arrow_height:I = 0x7f0805c2
+.field public static final parent_current_image_arrow_height:I = 0x7f0805c4
 
 .field public static final pen_beautify_style_button_height:I = 0x7f08002a
 
@@ -2103,43 +2107,43 @@
 
 .field public static final pick_color_size:I = 0x7f0801b4
 
-.field public static final pick_color_stroke_size:I = 0x7f0805c3
+.field public static final pick_color_stroke_size:I = 0x7f0805c5
 
 .field public static final pick_count_text_size:I = 0x7f0801b9
 
 .field public static final pick_done_text_size:I = 0x7f0801ba
 
-.field public static final picker_gallery_button_size:I = 0x7f0805c4
+.field public static final picker_gallery_button_size:I = 0x7f0805c6
 
-.field public static final picker_gallery_button_size_for_tablet:I = 0x7f0805c5
+.field public static final picker_gallery_button_size_for_tablet:I = 0x7f0805c7
 
-.field public static final picker_gallery_button_size_with_text:I = 0x7f0805c6
+.field public static final picker_gallery_button_size_with_text:I = 0x7f0805c8
 
-.field public static final picker_gallery_button_text_max_length:I = 0x7f0805c7
+.field public static final picker_gallery_button_text_max_length:I = 0x7f0805c9
 
-.field public static final picker_gallery_checkbox_size:I = 0x7f0805c8
+.field public static final picker_gallery_checkbox_size:I = 0x7f0805ca
 
 .field public static final picker_gridview_button_layout_height:I = 0x7f0801bb
 
 .field public static final picker_gridview_button_layout_margin:I = 0x7f0801bc
 
-.field public static final picker_gridview_item_spacing:I = 0x7f0805c9
+.field public static final picker_gridview_item_spacing:I = 0x7f0805cb
 
-.field public static final picker_gridview_item_thumbnail_height:I = 0x7f0805ca
+.field public static final picker_gridview_item_thumbnail_height:I = 0x7f0805cc
 
-.field public static final picker_gridview_item_thumbnail_height_for_tablet:I = 0x7f0805cb
+.field public static final picker_gridview_item_thumbnail_height_for_tablet:I = 0x7f0805cd
 
-.field public static final picker_gridview_item_thumbnail_width:I = 0x7f0805cc
+.field public static final picker_gridview_item_thumbnail_width:I = 0x7f0805ce
 
-.field public static final picker_gridview_item_thumbnail_width_for_tablet:I = 0x7f0805cd
+.field public static final picker_gridview_item_thumbnail_width_for_tablet:I = 0x7f0805cf
 
 .field public static final picker_gridview_item_video_icon_size:I = 0x7f0801bd
 
 .field public static final picture_fragment_min_height:I = 0x7f08037e
 
-.field public static final playFocusLayout_height:I = 0x7f0805ce
+.field public static final playFocusLayout_height:I = 0x7f0805d0
 
-.field public static final playFocusLayout_width:I = 0x7f0805cf
+.field public static final playFocusLayout_width:I = 0x7f0805d1
 
 .field public static final popup_help_collage_view_arrow2_image_left_margin:I = 0x7f08033f
 
@@ -2385,11 +2389,11 @@
 
 .field public static final rotate_bg_margin_start:I = 0x7f0804a8
 
-.field public static final rounded_seekbar_arrow_height:I = 0x7f0805d0
+.field public static final rounded_seekbar_arrow_height:I = 0x7f0805d2
 
-.field public static final rounded_seekbar_arrow_margin_top:I = 0x7f0805d1
+.field public static final rounded_seekbar_arrow_margin_top:I = 0x7f0805d3
 
-.field public static final rounded_seekbar_arrow_width:I = 0x7f0805d2
+.field public static final rounded_seekbar_arrow_width:I = 0x7f0805d4
 
 .field public static final rounded_seekbar_bottom_margin_land:I = 0x7f080315
 
@@ -2397,7 +2401,7 @@
 
 .field public static final rounded_seekbar_child_height:I = 0x7f0803f0
 
-.field public static final rounded_seekbar_child_margin_top:I = 0x7f0805d3
+.field public static final rounded_seekbar_child_margin_top:I = 0x7f0805d5
 
 .field public static final rounded_seekbar_child_width:I = 0x7f080246
 
@@ -2405,9 +2409,9 @@
 
 .field public static final rounded_seekbar_deglayout_port:I = 0x7f080317
 
-.field public static final rounded_seekbar_degree_layout_height:I = 0x7f0805d4
+.field public static final rounded_seekbar_degree_layout_height:I = 0x7f0805d6
 
-.field public static final rounded_seekbar_degree_layout_margin_bottom:I = 0x7f0805d5
+.field public static final rounded_seekbar_degree_layout_margin_bottom:I = 0x7f0805d7
 
 .field public static final rounded_seekbar_degree_margin_top:I = 0x7f080318
 
@@ -2447,21 +2451,21 @@
 
 .field public static final runtime_popup_outer_text_linespace:I = 0x7f08024d
 
-.field public static final runtime_text_setting_padding:I = 0x7f0805d6
+.field public static final runtime_text_setting_padding:I = 0x7f0805d8
 
 .field public static final search_no_item_text_size:I = 0x7f0801be
 
-.field public static final seek_bar_height:I = 0x7f0805d7
+.field public static final seek_bar_height:I = 0x7f0805d9
 
 .field public static final seek_bar_margin_top:I = 0x7f080465
 
 .field public static final seek_bar_side_margin:I = 0x7f080466
 
-.field public static final seek_line_height:I = 0x7f0805d8
+.field public static final seek_line_height:I = 0x7f0805da
 
-.field public static final seek_text_size:I = 0x7f0805d9
+.field public static final seek_text_size:I = 0x7f0805db
 
-.field public static final seek_title_offset:I = 0x7f0805da
+.field public static final seek_title_offset:I = 0x7f0805dc
 
 .field public static final seekbar_bottom_margin:I = 0x7f08024e
 
@@ -2543,13 +2547,13 @@
 
 .field public static final selection_body_margin_top:I = 0x7f08017d
 
-.field public static final selection_button_collage_text_fadingEdgeLength:I = 0x7f0805db
+.field public static final selection_button_collage_text_fadingEdgeLength:I = 0x7f0805dd
 
 .field public static final selection_button_collage_text_layout_height:I = 0x7f0803df
 
-.field public static final selection_button_collage_text_layout_width:I = 0x7f0805dc
+.field public static final selection_button_collage_text_layout_width:I = 0x7f0805de
 
-.field public static final selection_button_collage_text_margin_top:I = 0x7f0805dd
+.field public static final selection_button_collage_text_margin_top:I = 0x7f0805df
 
 .field public static final selection_button_collage_text_size:I = 0x7f0803e0
 
@@ -2583,9 +2587,9 @@
 
 .field public static final selecton_button_margin_left:I = 0x7f080186
 
-.field public static final settingview_margin_top:I = 0x7f0805de
+.field public static final settingview_margin_top:I = 0x7f0805e0
 
-.field public static final seven_bottom_button_gap:I = 0x7f0805df
+.field public static final seven_bottom_button_gap:I = 0x7f0805e1
 
 .field public static final size_of_dl_layout:I = 0x7f080323
 
@@ -2627,7 +2631,7 @@
 
 .field public static final snackbar_background_corner_radius:I = 0x7f0804b8
 
-.field public static final snackbar_elevation:I = 0x7f0805e0
+.field public static final snackbar_elevation:I = 0x7f0805e2
 
 .field public static final snackbar_extra_spacing_horizontal:I = 0x7f0804b9
 
@@ -2635,13 +2639,13 @@
 
 .field public static final snackbar_min_width:I = 0x7f0804bb
 
-.field public static final snackbar_padding_horizontal:I = 0x7f0805e1
+.field public static final snackbar_padding_horizontal:I = 0x7f0805e3
 
-.field public static final snackbar_padding_vertical:I = 0x7f0805e2
+.field public static final snackbar_padding_vertical:I = 0x7f0805e4
 
 .field public static final snackbar_padding_vertical_2lines:I = 0x7f0804bc
 
-.field public static final snackbar_text_size:I = 0x7f0805e3
+.field public static final snackbar_text_size:I = 0x7f0805e5
 
 .field public static final spen_bottom_padding:I = 0x7f080324
 
@@ -2685,17 +2689,17 @@
 
 .field public static final sticker_grid_width:I = 0x7f080328
 
-.field public static final sticker_manager_gif_text_height:I = 0x7f0805e4
+.field public static final sticker_manager_gif_text_height:I = 0x7f0805e6
 
-.field public static final sticker_manager_gif_text_padding:I = 0x7f0805e5
+.field public static final sticker_manager_gif_text_padding:I = 0x7f0805e7
 
-.field public static final sticker_manager_gif_text_size:I = 0x7f0805e6
+.field public static final sticker_manager_gif_text_size:I = 0x7f0805e8
 
 .field public static final sub_actionbar_height:I = 0x7f080385
 
-.field public static final sub_actionbar_icon_height:I = 0x7f0805e7
+.field public static final sub_actionbar_icon_height:I = 0x7f0805e9
 
-.field public static final sub_actionbar_margin:I = 0x7f0805e8
+.field public static final sub_actionbar_margin:I = 0x7f0805ea
 
 .field public static final sub_agif_button_bottom_margin:I = 0x7f0804a2
 
@@ -2729,15 +2733,17 @@
 
 .field public static final sub_bottom_thumbnail_btn_height:I = 0x7f08046d
 
-.field public static final sub_btn_effect_layout_margin_top:I = 0x7f0805e9
+.field public static final sub_btn_effect_layout_margin_top:I = 0x7f0805eb
 
 .field public static final sub_btn_main_margin_left:I = 0x7f080386
 
 .field public static final sub_btn_margin_bottom:I = 0x7f0801b7
 
+.field public static final sub_btn_text_fading_edge_length:I = 0x7f0805ec
+
 .field public static final sub_btn_text_size:I = 0x7f08046e
 
-.field public static final sub_btn_textview_effect_margin_bottom:I = 0x7f0805ea
+.field public static final sub_btn_textview_effect_margin_bottom:I = 0x7f0805ed
 
 .field public static final sub_button_arrow_layout_crop_margin_bottom:I = 0x7f080387
 
@@ -2773,11 +2779,11 @@
 
 .field public static final sub_button_text_bottom_margin:I = 0x7f08047c
 
-.field public static final sub_button_width:I = 0x7f0805eb
+.field public static final sub_button_width:I = 0x7f0805ee
 
 .field public static final sub_button_width_seven:I = 0x7f0804bd
 
-.field public static final sub_button_width_six:I = 0x7f0805ec
+.field public static final sub_button_width_six:I = 0x7f0805ef
 
 .field public static final sub_effect_download_text_top_margin:I = 0x7f080329
 
@@ -2793,7 +2799,7 @@
 
 .field public static final sub_effect_gpu_thumbnail_width:I = 0x7f080480
 
-.field public static final sub_effect_manager_download_image_size:I = 0x7f0805ed
+.field public static final sub_effect_manager_download_image_size:I = 0x7f0805f0
 
 .field public static final sub_effect_manager_width:I = 0x7f080269
 
@@ -2805,7 +2811,7 @@
 
 .field public static final sub_effect_thumbnail_height:I = 0x7f0804be
 
-.field public static final sub_effect_thumbnail_margin:I = 0x7f0805ee
+.field public static final sub_effect_thumbnail_margin:I = 0x7f0805f1
 
 .field public static final sub_effect_thumbnail_parent_height:I = 0x7f08032d
 
@@ -2817,7 +2823,7 @@
 
 .field public static final sub_layout_btn_width_six_button:I = 0x7f0801b8
 
-.field public static final sub_menu_crop_layout_padding:I = 0x7f0805ef
+.field public static final sub_menu_crop_layout_padding:I = 0x7f0805f2
 
 .field public static final sub_menu_textview_width:I = 0x7f08032e
 
@@ -2845,11 +2851,11 @@
 
 .field public static final tab_height:I = 0x7f08038a
 
-.field public static final tab_max_width:I = 0x7f0805f0
+.field public static final tab_max_width:I = 0x7f0805f3
 
 .field public static final tab_min_width:I = 0x7f0804c0
 
-.field public static final tab_popup_text_height:I = 0x7f0805f1
+.field public static final tab_popup_text_height:I = 0x7f0805f4
 
 .field public static final test_dimen:I = 0x7f08026b
 
@@ -2887,15 +2893,15 @@
 
 .field public static final text_common_button_width:I = 0x7f080194
 
-.field public static final text_counter_height:I = 0x7f0805f2
+.field public static final text_counter_height:I = 0x7f0805f5
 
-.field public static final text_counter_margin_bottom:I = 0x7f0805f3
+.field public static final text_counter_margin_bottom:I = 0x7f0805f6
 
-.field public static final text_counter_margin_left:I = 0x7f0805f4
+.field public static final text_counter_margin_left:I = 0x7f0805f7
 
-.field public static final text_counter_margin_right:I = 0x7f0805f5
+.field public static final text_counter_margin_right:I = 0x7f0805f8
 
-.field public static final text_counter_size:I = 0x7f0805f6
+.field public static final text_counter_size:I = 0x7f0805f9
 
 .field public static final text_dropdown_align_list_item_height:I = 0x7f08006d
 
@@ -2961,7 +2967,7 @@
 
 .field public static final text_sub_actionbar_adjustment_land_margin_left:I = 0x7f0804ca
 
-.field public static final text_sub_actionbar_margin_bottom:I = 0x7f0805f7
+.field public static final text_sub_actionbar_margin_bottom:I = 0x7f0805fa
 
 .field public static final text_sub_actionbar_margin_left:I = 0x7f0800e6
 
@@ -2971,7 +2977,7 @@
 
 .field public static final text_sub_actionbar_size:I = 0x7f08038c
 
-.field public static final text_sub_drawing_actionbar_padding_left:I = 0x7f0805f8
+.field public static final text_sub_drawing_actionbar_padding_left:I = 0x7f0805fb
 
 .field public static final text_top_line_height:I = 0x7f0801a2
 
@@ -2997,21 +3003,21 @@
 
 .field public static final thumb_width:I = 0x7f08026d
 
-.field public static final thumbnail_current_image_space:I = 0x7f0805f9
+.field public static final thumbnail_current_image_space:I = 0x7f0805fc
 
-.field public static final thumbnail_current_line_space:I = 0x7f0805fa
+.field public static final thumbnail_current_line_space:I = 0x7f0805fd
 
-.field public static final thumbnail_resolution_amount_high:I = 0x7f0805fb
+.field public static final thumbnail_resolution_amount_high:I = 0x7f0805fe
 
-.field public static final thumbnail_resolution_amount_low:I = 0x7f0805fc
+.field public static final thumbnail_resolution_amount_low:I = 0x7f0805ff
 
-.field public static final thumbnail_resolution_amount_medium:I = 0x7f0805fd
+.field public static final thumbnail_resolution_amount_medium:I = 0x7f080600
 
 .field public static final tone_bottom_submenu_height:I = 0x7f08049a
 
 .field public static final tone_bottom_submenu_width:I = 0x7f08049b
 
-.field public static final tone_btn_temprature_fading_edge_length:I = 0x7f0805fe
+.field public static final tone_btn_temprature_fading_edge_length:I = 0x7f080601
 
 .field public static final tone_margin_top:I = 0x7f080483
 
@@ -3053,7 +3059,7 @@
 
 .field public static final tray_button_icon_width:I = 0x7f08048b
 
-.field public static final vendor_icon_width_height:I = 0x7f0805ff
+.field public static final vendor_icon_width_height:I = 0x7f080602
 
 .field public static final viewbuttons_height_for_cropview:I = 0x7f08048c
 
@@ -3069,15 +3075,15 @@
 
 .field public static final wb_layout_bottom_margin:I = 0x7f0800e8
 
-.field public static final wb_layout_height:I = 0x7f080600
+.field public static final wb_layout_height:I = 0x7f080603
 
-.field public static final wb_mode_name_text_margin_bottom:I = 0x7f080601
+.field public static final wb_mode_name_text_margin_bottom:I = 0x7f080604
 
-.field public static final wb_seekbar_bottom_margin:I = 0x7f080602
+.field public static final wb_seekbar_bottom_margin:I = 0x7f080605
 
 .field public static final wb_seekbar_width:I = 0x7f080393
 
-.field public static final wb_temperature_buttons_margin_bottom:I = 0x7f080603
+.field public static final wb_temperature_buttons_margin_bottom:I = 0x7f080606
 
 .field public static final wb_temperature_buttons_width:I = 0x7f080394
 
@@ -3085,23 +3091,23 @@
 
 .field public static final wb_temperature_seekbar_width:I = 0x7f080396
 
-.field public static final wb_temperature_text_margin_bottom:I = 0x7f080604
+.field public static final wb_temperature_text_margin_bottom:I = 0x7f080607
 
-.field public static final wb_temperature_text_size:I = 0x7f080605
+.field public static final wb_temperature_text_size:I = 0x7f080608
 
-.field public static final window_header_bar_height:I = 0x7f080606
+.field public static final window_header_bar_height:I = 0x7f080609
 
-.field public static final window_header_bar_height_desktop_mode:I = 0x7f080607
+.field public static final window_header_bar_height_desktop_mode:I = 0x7f08060a
 
 .field public static final window_menu_height:I = 0x7f08048e
 
-.field public static final zoom_button_height:I = 0x7f080608
+.field public static final zoom_button_height:I = 0x7f08060b
 
-.field public static final zoom_button_margin_top:I = 0x7f080609
+.field public static final zoom_button_margin_top:I = 0x7f08060c
 
-.field public static final zoom_button_width:I = 0x7f08060a
+.field public static final zoom_button_width:I = 0x7f08060d
 
-.field public static final zoom_layout_margin_start:I = 0x7f08060b
+.field public static final zoom_layout_margin_start:I = 0x7f08060e
 
 .field public static final zoompad_handle_margin_bottom:I = 0x7f08007f
 

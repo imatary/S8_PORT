@@ -458,7 +458,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f080524
+    const v5, 0x7f080525
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -480,7 +480,7 @@
 
     iget-object v5, p0, Lcom/sec/android/mimage/photoretouching/agif/AgifDefaultButtonFrame;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f020457
+    const v6, 0x7f020455
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -502,7 +502,7 @@
 
     iget-object v4, p0, Lcom/sec/android/mimage/photoretouching/agif/AgifDefaultButtonFrame;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f02073e
+    const v5, 0x7f02073c
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

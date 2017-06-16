@@ -8,7 +8,7 @@
 
 
 # static fields
-.field public static final VERSION:Ljava/lang/String; = "2.0.53"
+.field public static final VERSION:Ljava/lang/String; = "2.0.56"
 
 
 # direct methods

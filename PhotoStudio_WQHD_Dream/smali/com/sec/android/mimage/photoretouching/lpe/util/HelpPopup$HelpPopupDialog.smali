@@ -777,7 +777,7 @@
 
     move-result-object v19
 
-    const v20, 0x7f080599
+    const v20, 0x7f08059b
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

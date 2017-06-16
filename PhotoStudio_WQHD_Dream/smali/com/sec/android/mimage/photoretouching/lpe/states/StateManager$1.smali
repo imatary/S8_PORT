@@ -34,11 +34,11 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 8
 
-    const v7, 0x7f0c00a8
+    const v7, 0x7f0c00a9
 
-    const v3, 0x7f0c009d
+    const v3, 0x7f0c009e
 
-    const v6, 0x7f0c009c
+    const v6, 0x7f0c009d
 
     const/4 v5, 0x2
 
@@ -256,7 +256,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c00a9
+    const v3, 0x7f0c00aa
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -284,7 +284,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c00a9
+    const v3, 0x7f0c00aa
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -365,6 +365,35 @@
 
     invoke-virtual {v1, v0}, Lcom/sec/android/mimage/photoretouching/lpe/view/CustomSeekBar;->updateSeekbarColor(I)V
 
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$1;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
+
+    invoke-virtual {v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->getMainState()I
+
+    move-result v1
+
+    const/16 v2, 0x2000
+
+    if-ne v1, v2, :cond_3
+
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$1;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
+
+    # getter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mPortraitState:Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
+    invoke-static {v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$600(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_3
+
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$1;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
+
+    # getter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mPortraitState:Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
+    invoke-static {v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$600(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;->updateTextRedEye()V
+
+    :cond_3
     iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$1;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mState:I

@@ -111,9 +111,9 @@
 
     iput-object v0, p0, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->pathRuleId:Ljava/lang/String;
 
-    new-instance v0, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity$7;
+    new-instance v0, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity$8;
 
-    invoke-direct {v0, p0}, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity$7;-><init>(Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;)V
+    invoke-direct {v0, p0}, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity$8;-><init>(Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;)V
 
     iput-object v0, p0, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->mStateListener:Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;
 
@@ -154,6 +154,12 @@
     invoke-direct {v3, p0}, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity$6;-><init>(Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;)V
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    new-instance v2, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity$7;
+
+    invoke-direct {v2, p0}, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity$7;-><init>(Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;)V
+
+    invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
@@ -956,21 +962,34 @@
 
     move-result v3
 
-    if-nez v3, :cond_4
+    if-nez v3, :cond_5
 
     invoke-static {p0}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->hasPermissionDialogShownCollage(Landroid/content/Context;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_7
+    if-nez v3, :cond_3
 
+    invoke-static {p0}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->hasPermissionDialogShownAGIF(Landroid/content/Context;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_3
+
+    invoke-static {p0}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->hasPermissionDialogShownPE(Landroid/content/Context;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_8
+
+    :cond_3
     const-string v3, "android.permission.READ_EXTERNAL_STORAGE"
 
     invoke-virtual {p0, v3}, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->shouldShowRequestPermissionRationale(Ljava/lang/String;)Z
 
     move-result v3
 
-    if-nez v3, :cond_3
+    if-nez v3, :cond_4
 
     const-string v3, "android.permission.WRITE_EXTERNAL_STORAGE"
 
@@ -978,9 +997,9 @@
 
     move-result v3
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_7
 
-    :cond_3
+    :cond_4
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v3
@@ -995,21 +1014,21 @@
 
     invoke-virtual {p0, v3, v5}, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->requestPermissions([Ljava/lang/String;I)V
 
-    :cond_4
+    :cond_5
     :goto_0
     iget-boolean v3, p0, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->permissionGranted:Z
 
-    if-eqz v3, :cond_5
-
-    :cond_5
-    return-void
+    if-eqz v3, :cond_6
 
     :cond_6
+    return-void
+
+    :cond_7
     invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->displayCustomDialogue()V
 
     goto :goto_0
 
-    :cond_7
+    :cond_8
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v3
@@ -1146,6 +1165,17 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->mCollageManager:Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;
 
+    if-nez v0, :cond_1
+
+    invoke-super {p0}, Landroid/app/Activity;->onBackPressed()V
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->mCollageManager:Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;
+
     invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;->onBackPressed()Z
 
     move-result v0
@@ -1154,8 +1184,7 @@
 
     invoke-super {p0}, Landroid/app/Activity;->onBackPressed()V
 
-    :cond_0
-    return-void
+    goto :goto_0
 .end method
 
 .method public onClick(Landroid/view/View;)V
@@ -1482,7 +1511,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0206aa
+    const v2, 0x7f0206a8
 
     invoke-static {v1, v2}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -1977,12 +2006,17 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->mCollageManager:Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;
 
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->mCollageManager:Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;
+
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Lcom/sec/android/mimage/photoretouching/multigrid/CollageManager;->onClick(I)V
 
+    :cond_0
     invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0

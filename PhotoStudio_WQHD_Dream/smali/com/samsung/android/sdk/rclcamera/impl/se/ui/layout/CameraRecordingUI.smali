@@ -36,8 +36,6 @@
 
 .field private static final UPDATE_REC_INDICATOR_MSG:I = 0x2
 
-.field private static mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
-
 
 # instance fields
 .field private mCameraSetting:Lcom/samsung/android/sdk/rclcamera/impl/se/setting/CameraSetting;
@@ -45,6 +43,8 @@
 .field private mContext:Landroid/content/Context;
 
 .field private mCurrentSize:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+
+.field private mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
 .field private mLastPauseResumedTime:J
 
@@ -77,7 +77,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "RCL/2.0.53/"
+    const-string v1, "RCL/2.0.56/"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -875,7 +875,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    sget-object v0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+    iget-object v0, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;->setVisibility(I)V
 
@@ -975,7 +975,7 @@
 
     check-cast v0, Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
-    sput-object v0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+    iput-object v0, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
     sget v0, Lcom/samsung/android/sdk/rclcamera/impl/se/R$id;->recording_icon:I
 
@@ -1285,7 +1285,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setMax(I)V
 
-    sget-object v0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+    iget-object v0, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
     invoke-direct {p0, v5}, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->hmsConvert(I)Ljava/lang/String;
 
@@ -1538,7 +1538,7 @@
 
     if-le v7, v8, :cond_2
 
-    sget-object v7, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+    iget-object v7, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
     invoke-virtual {v7}, Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1562,7 +1562,7 @@
 
     invoke-virtual {v3, v10, v10, v10, v7}, Landroid/widget/RelativeLayout$LayoutParams;->setMargins(IIII)V
 
-    sget-object v7, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+    iget-object v7, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
     invoke-virtual {v7, v3}, Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -1572,7 +1572,7 @@
 
     invoke-virtual {v7, v10}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    sget-object v7, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+    iget-object v7, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
     invoke-virtual {v7, v10}, Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;->setVisibility(I)V
 
@@ -1581,7 +1581,7 @@
     return-void
 
     :cond_2
-    sget-object v7, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+    iget-object v7, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
     invoke-virtual {v7}, Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1627,14 +1627,14 @@
 
     invoke-virtual {v3, v10, v10, v10, v7}, Landroid/widget/RelativeLayout$LayoutParams;->setMargins(IIII)V
 
-    sget-object v7, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+    iget-object v7, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
     invoke-virtual {v7, v3}, Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_0
 
     :cond_3
-    sget-object v7, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+    iget-object v7, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
     invoke-virtual {v7}, Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1680,7 +1680,7 @@
 
     invoke-virtual {v3, v10, v10, v10, v7}, Landroid/widget/RelativeLayout$LayoutParams;->setMargins(IIII)V
 
-    sget-object v7, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+    iget-object v7, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
     invoke-virtual {v7, v3}, Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -1726,7 +1726,7 @@
 
     div-long/2addr v0, v6
 
-    const-wide/16 v2, 0xa
+    const-wide/16 v2, 0x1
 
     cmp-long v0, v0, v2
 
@@ -1825,7 +1825,7 @@
 
     iput p1, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mRecordingTime:I
 
-    sget-object v0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
+    iget-object v0, p0, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->mCurrentTime:Lcom/samsung/android/sdk/rclcamera/interfaces/utils/StrokeTextView;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/sdk/rclcamera/impl/se/ui/layout/CameraRecordingUI;->hmsConvert(I)Ljava/lang/String;
 

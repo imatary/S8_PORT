@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->addEmptyThumbnail()V
+    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->addThumbnail()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

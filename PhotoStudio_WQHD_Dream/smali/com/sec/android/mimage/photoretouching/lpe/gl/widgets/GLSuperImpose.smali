@@ -3292,7 +3292,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0205c9
+    const v9, 0x7f0205c7
 
     invoke-static {v8, v9}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->decodeResource(Landroid/content/Context;I)Landroid/graphics/Bitmap;
 
@@ -3304,7 +3304,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0205cd
+    const v9, 0x7f0205cb
 
     invoke-static {v8, v9}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->decodeResource(Landroid/content/Context;I)Landroid/graphics/Bitmap;
 
@@ -3316,7 +3316,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0205c5
+    const v9, 0x7f0205c3
 
     invoke-static {v8, v9}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->decodeResource(Landroid/content/Context;I)Landroid/graphics/Bitmap;
 
@@ -3356,7 +3356,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0205ca
+    const v9, 0x7f0205c8
 
     invoke-static {v8, v9}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->decodeResource(Landroid/content/Context;I)Landroid/graphics/Bitmap;
 
@@ -3384,7 +3384,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0205cb
+    const v9, 0x7f0205c9
 
     invoke-static {v8, v9}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->decodeResource(Landroid/content/Context;I)Landroid/graphics/Bitmap;
 
@@ -3412,7 +3412,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0205c6
+    const v9, 0x7f0205c4
 
     invoke-static {v8, v9}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->decodeResource(Landroid/content/Context;I)Landroid/graphics/Bitmap;
 
@@ -3480,7 +3480,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0205c7
+    const v9, 0x7f0205c5
 
     invoke-static {v8, v9}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->decodeResource(Landroid/content/Context;I)Landroid/graphics/Bitmap;
 
@@ -3508,7 +3508,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0205c8
+    const v9, 0x7f0205c6
 
     invoke-static {v8, v9}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->decodeResource(Landroid/content/Context;I)Landroid/graphics/Bitmap;
 

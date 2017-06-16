@@ -1234,7 +1234,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0206b7
+    const v4, 0x7f0206b5
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2208,7 +2208,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f08057b
+    const v5, 0x7f08057c
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2937,7 +2937,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0c0041
+    const v5, 0x7f0c0042
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -2955,7 +2955,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0c003d
+    const v5, 0x7f0c003e
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -4206,7 +4206,7 @@
 
     const-wide v6, 0x3fdc28f5c28f5c29L    # 0.44
 
-    const v5, 0x7f0c0093
+    const v5, 0x7f0c0094
 
     iget-object v3, p0, Lcom/sec/android/mimage/photoretouching/Decoration/DecorationMenuLayoutManager;->mTabHostLayout:Landroid/widget/TabHost;
 
@@ -4328,7 +4328,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f08057a
+    const v4, 0x7f08057b
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -4394,7 +4394,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0c006a
+    const v5, 0x7f0c006b
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -4414,7 +4414,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0c006a
+    const v5, 0x7f0c006b
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 

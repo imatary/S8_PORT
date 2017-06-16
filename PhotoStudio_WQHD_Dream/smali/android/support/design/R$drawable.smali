@@ -135,9 +135,9 @@
 
 .field public static final fab_background:I = 0x7f02032d
 
-.field public static final notification_template_icon_bg:I = 0x7f020812
+.field public static final notification_template_icon_bg:I = 0x7f020810
 
-.field public static final snackbar_background:I = 0x7f0206bf
+.field public static final snackbar_background:I = 0x7f0206bd
 
 
 # direct methods

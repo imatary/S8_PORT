@@ -645,7 +645,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020765
+    const v3, 0x7f020763
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -658,7 +658,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020764
+    const v3, 0x7f020762
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -671,7 +671,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020760
+    const v3, 0x7f02075e
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -684,7 +684,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020761
+    const v3, 0x7f02075f
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -697,7 +697,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020762
+    const v3, 0x7f020760
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -710,7 +710,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020763
+    const v3, 0x7f020761
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -723,7 +723,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f02075e
+    const v3, 0x7f02075c
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -736,7 +736,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f02075f
+    const v3, 0x7f02075d
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -981,6 +981,14 @@
 
     invoke-direct {v4, p0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$3;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)V
 
+    invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setOnGenericMotionListener(Landroid/view/View$OnGenericMotionListener;)V
+
+    iget-object v3, p0, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->mEffectDone:Landroid/widget/LinearLayout;
+
+    new-instance v4, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$4;
+
+    invoke-direct {v4, p0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$4;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)V
+
     invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
     invoke-virtual {p0, v6}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->findViewById(I)Landroid/view/View;
@@ -1013,15 +1021,23 @@
 
     iget-object v3, p0, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->mEffectCancel:Landroid/widget/LinearLayout;
 
-    new-instance v4, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$4;
+    new-instance v4, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$5;
 
-    invoke-direct {v4, p0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$4;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)V
+    invoke-direct {v4, p0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$5;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)V
+
+    invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setOnGenericMotionListener(Landroid/view/View$OnGenericMotionListener;)V
+
+    iget-object v3, p0, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->mEffectCancel:Landroid/widget/LinearLayout;
+
+    new-instance v4, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$6;
+
+    invoke-direct {v4, p0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$6;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)V
 
     invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$5;
+    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$7;
 
-    invoke-direct {v2, p0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$5;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)V
+    invoke-direct {v2, p0}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity$7;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;)V
 
     invoke-virtual {p0, v7}, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->findViewById(I)Landroid/view/View;
 
@@ -1825,7 +1841,7 @@
 .method private setCancelDoneShapeBackground()V
     .locals 2
 
-    const v1, 0x7f0206b7
+    const v1, 0x7f0206b5
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/effectmanager/EffectManagerActivity;->mActivityContext:Landroid/content/Context;
 
@@ -2922,7 +2938,7 @@
 
     const v12, 0x7f0e0061
 
-    const v2, 0x7f0805e7
+    const v2, 0x7f0805e9
 
     const v4, 0x7f0800e6
 

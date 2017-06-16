@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">అప్లికేషన్‌ని తెరవడం సాధ్యం కాదు. పరికర నిల్వలో కొన్ని ఫైల్‌లను తొలగించి, మళ్లీ ప్రయత్నించండి.</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">కెమెరా యొక్క ఉపయోగంను భద్రత పాలసీ పరిమితం చేస్తుంది.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">కెమెరాను ఉపయోగించడం సాధ్యం కాదు.</string>
     <string name="__cp__cannot_start_camera_msg">కాల్‌ల సమయంలో కెమెరానిని ఉపయోగించడం సాధ్యం కాదు.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">వీడియో కాల్‌లు మాట్లాడుతున్నప్పుడు కెమెరాను తెరవడం సాధ్యం కాదు.</string>
     <string name="__cp__flash">ఫ్లాష్</string>

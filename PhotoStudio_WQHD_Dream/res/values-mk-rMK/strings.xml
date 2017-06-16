@@ -23,7 +23,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">Не може да се отвори апликацијата. Избришете некој фајл во меморијата на уредот и обидете се повторно.</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">Политиката на безбедност го ограничува користењето камера.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">Не може да се користи камера.</string>
     <string name="__cp__cannot_start_camera_msg">Не може да се користи Камерата при повик.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">Не може да се отвори Камера при видео повици.</string>
     <string name="__cp__flash">Блиц</string>

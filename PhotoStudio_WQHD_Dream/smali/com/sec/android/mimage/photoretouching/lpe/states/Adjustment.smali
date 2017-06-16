@@ -1572,6 +1572,14 @@
     return-void
 .end method
 
+.method static synthetic access$6200(Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;)Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDoneFromExecutor:Z
+
+    return v0
+.end method
+
 .method static synthetic access$700(Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;)V
     .locals 0
 
@@ -30749,36 +30757,38 @@
 .end method
 
 .method private checkIfNothingAppliedWithSmart()Z
-    .locals 8
+    .locals 9
 
-    const/high16 v7, 0x40000000    # 2.0f
+    const/high16 v8, 0x40000000    # 2.0f
+
+    const/4 v7, 0x0
 
     const/high16 v6, 0x3f800000    # 1.0f
 
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
-    iget-object v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mPreview:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;
+    iget-object v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mPreview:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;
 
-    invoke-virtual {v4}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;->getCurrentPinchZoom()F
+    invoke-virtual {v2}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;->getCurrentPinchZoom()F
 
-    move-result v4
+    move-result v2
 
-    invoke-static {v4, v6}, Ljava/lang/Float;->compare(FF)I
+    invoke-static {v2, v6}, Ljava/lang/Float;->compare(FF)I
 
-    move-result v4
+    move-result v2
 
-    if-eqz v4, :cond_3
+    if-eqz v2, :cond_4
 
-    move v1, v2
+    move v1, v3
 
     :goto_0
-    iget-object v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mNormalRect:Landroid/graphics/RectF;
+    iget-object v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mNormalRect:Landroid/graphics/RectF;
 
-    invoke-virtual {v4}, Landroid/graphics/RectF;->width()F
+    invoke-virtual {v2}, Landroid/graphics/RectF;->width()F
 
-    move-result v4
+    move-result v2
 
     iget-object v5, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mCropScreenRect:Landroid/graphics/RectF;
 
@@ -30786,17 +30796,17 @@
 
     move-result v5
 
-    sub-float/2addr v4, v5
+    sub-float/2addr v2, v5
 
-    cmpl-float v4, v4, v7
+    cmpl-float v2, v2, v8
 
-    if-gtz v4, :cond_0
+    if-gtz v2, :cond_0
 
-    iget-object v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mNormalRect:Landroid/graphics/RectF;
+    iget-object v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mNormalRect:Landroid/graphics/RectF;
 
-    invoke-virtual {v4}, Landroid/graphics/RectF;->height()F
+    invoke-virtual {v2}, Landroid/graphics/RectF;->height()F
 
-    move-result v4
+    move-result v2
 
     iget-object v5, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mCropScreenRect:Landroid/graphics/RectF;
 
@@ -30804,91 +30814,169 @@
 
     move-result v5
 
-    sub-float/2addr v4, v5
+    sub-float/2addr v2, v5
 
-    cmpl-float v4, v4, v7
+    cmpl-float v2, v2, v8
 
-    if-lez v4, :cond_4
+    if-lez v2, :cond_5
 
     :cond_0
-    move v0, v2
+    move v0, v3
 
     :goto_1
-    iget v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mScale:F
+    iget-object v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mContext:Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
 
-    cmpl-float v4, v4, v6
+    invoke-virtual {v2}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;->getAppContext()Landroid/content/Context;
 
-    if-nez v4, :cond_5
+    move-result-object v2
 
-    iget v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRotation:F
+    check-cast v2, Landroid/app/Activity;
 
-    invoke-static {v4}, Ljava/lang/Math;->round(F)I
+    check-cast v2, Landroid/app/Activity;
 
-    move-result v4
+    invoke-virtual {v2}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
-    if-nez v4, :cond_5
+    move-result-object v2
 
-    if-nez v1, :cond_5
+    const-string v5, "contacts_service"
 
-    if-nez v0, :cond_5
+    invoke-virtual {v2, v5, v4}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
-    iget v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRotate:I
+    move-result v2
 
-    if-nez v4, :cond_1
+    if-eqz v2, :cond_6
 
-    iget v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mHFlip:I
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mScale:F
 
-    if-nez v4, :cond_1
+    cmpl-float v2, v2, v6
 
-    iget v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mVFlip:I
+    if-nez v2, :cond_9
 
-    if-eqz v4, :cond_2
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRotation:F
+
+    invoke-static {v2}, Ljava/lang/Math;->round(F)I
+
+    move-result v2
+
+    if-nez v2, :cond_9
+
+    if-nez v1, :cond_9
+
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRotate:I
+
+    if-nez v2, :cond_1
+
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mHFlip:I
+
+    if-nez v2, :cond_1
+
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mVFlip:I
+
+    if-eqz v2, :cond_2
 
     :cond_1
-    iget v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRotate:I
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRotate:I
 
     iget v5, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mHFlip:I
 
-    sub-int/2addr v4, v5
+    sub-int/2addr v2, v5
 
     iget v5, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mVFlip:I
 
-    sub-int/2addr v4, v5
+    sub-int/2addr v2, v5
 
-    if-nez v4, :cond_5
+    if-nez v2, :cond_9
 
     :cond_2
-    iget-boolean v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mSmartCropDone:Z
+    iget-boolean v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mSmartCropDone:Z
 
-    if-nez v4, :cond_5
+    if-nez v2, :cond_9
 
-    iget-object v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mPreview:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;
+    iget-object v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mPreview:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;
 
-    invoke-virtual {v4}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;->getPerspective()F
+    invoke-virtual {v2}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;->getPerspective()F
 
-    move-result v4
+    move-result v2
 
-    const/4 v5, 0x0
+    cmpl-float v2, v2, v7
 
-    cmpl-float v4, v4, v5
-
-    if-nez v4, :cond_5
-
-    :goto_2
-    return v2
+    if-nez v2, :cond_9
 
     :cond_3
-    move v1, v3
+    :goto_2
+    return v3
+
+    :cond_4
+    move v1, v4
 
     goto :goto_0
 
-    :cond_4
-    move v0, v3
+    :cond_5
+    move v0, v4
 
     goto :goto_1
 
-    :cond_5
-    move v2, v3
+    :cond_6
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mScale:F
+
+    cmpl-float v2, v2, v6
+
+    if-nez v2, :cond_9
+
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRotation:F
+
+    invoke-static {v2}, Ljava/lang/Math;->round(F)I
+
+    move-result v2
+
+    if-nez v2, :cond_9
+
+    if-nez v1, :cond_9
+
+    if-nez v0, :cond_9
+
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRotate:I
+
+    if-nez v2, :cond_7
+
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mHFlip:I
+
+    if-nez v2, :cond_7
+
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mVFlip:I
+
+    if-eqz v2, :cond_8
+
+    :cond_7
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRotate:I
+
+    iget v5, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mHFlip:I
+
+    sub-int/2addr v2, v5
+
+    iget v5, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mVFlip:I
+
+    sub-int/2addr v2, v5
+
+    if-nez v2, :cond_9
+
+    :cond_8
+    iget-boolean v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mSmartCropDone:Z
+
+    if-nez v2, :cond_9
+
+    iget-object v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mPreview:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;
+
+    invoke-virtual {v2}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;->getPerspective()F
+
+    move-result v2
+
+    cmpl-float v2, v2, v7
+
+    if-eqz v2, :cond_3
+
+    :cond_9
+    move v3, v4
 
     goto :goto_2
 .end method
@@ -36218,7 +36306,7 @@
 
     iget-boolean v6, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mSmartCropDone:Z
 
-    if-eqz v6, :cond_2
+    if-eqz v6, :cond_3
 
     iget-object v6, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
@@ -36238,12 +36326,13 @@
 
     move-result-object v1
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
+    :cond_0
     :goto_0
     return-void
 
-    :cond_0
+    :cond_1
     invoke-virtual {v1}, Lcom/sec/android/mimage/photoretouching/lpe/core/HistoryEvent;->getPreviewWidth()I
 
     move-result v5
@@ -36266,7 +36355,7 @@
 
     iget-object v6, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mSmartCropper:Lcom/samsung/android/saiv/imageprocessing/SmartCropper;
 
-    if-eqz v6, :cond_1
+    if-eqz v6, :cond_2
 
     iget-object v6, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mSmartCropper:Lcom/samsung/android/saiv/imageprocessing/SmartCropper;
 
@@ -36286,7 +36375,7 @@
 
     invoke-virtual {v6, v7, v8, v9, v10}, Lcom/samsung/android/saiv/imageprocessing/SmartCropper;->setImage([IIII)Z
 
-    :cond_1
+    :cond_2
     const/4 v6, 0x0
 
     iput-boolean v6, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mSmartCropDone:Z
@@ -36338,7 +36427,7 @@
 
     invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/lpe/core/ImageData;->resetOriginal()V
 
-    :cond_2
+    :cond_3
     const/4 v6, 0x0
 
     iput v6, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRotate:I
@@ -36487,6 +36576,40 @@
 
     invoke-virtual {v6, v7}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;->setPerspectiveType(I)V
 
+    iget-object v6, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mContext:Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
+
+    invoke-virtual {v6}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;->getAppContext()Landroid/content/Context;
+
+    move-result-object v6
+
+    check-cast v6, Landroid/app/Activity;
+
+    check-cast v6, Landroid/app/Activity;
+
+    invoke-virtual {v6}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v6
+
+    const-string v7, "contacts_service"
+
+    const/4 v8, 0x0
+
+    invoke-virtual {v6, v7, v8}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_0
+
+    const v6, 0x20006
+
+    iput v6, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mCurrState:I
+
+    const/high16 v6, 0x3f800000    # 1.0f
+
+    iput v6, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mCropAspectRatio:F
+
+    invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->changeCropRectAspect()V
+
     goto/16 :goto_0
 
     :catchall_0
@@ -36498,6 +36621,8 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw v6
+
+    nop
 
     :array_0
     .array-data 4
@@ -39117,9 +39242,11 @@
 .end method
 
 .method public doDone(Z)V
-    .locals 8
+    .locals 9
 
     const v3, 0x20014
+
+    const/4 v8, 0x2
 
     const/4 v2, 0x0
 
@@ -39142,11 +39269,11 @@
 
     const v1, 0x2000e
 
-    if-lt v0, v1, :cond_5
+    if-lt v0, v1, :cond_6
 
     iget v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mCurrState:I
 
-    if-ge v0, v3, :cond_5
+    if-ge v0, v3, :cond_6
 
     invoke-direct {p0, v6}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->setLassoModeVisibility(Z)V
 
@@ -39166,17 +39293,30 @@
 
     move-result v0
 
-    if-nez v0, :cond_3
+    if-nez v0, :cond_4
 
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doCancelLasso()V
 
-    goto :goto_0
+    iget-boolean v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDoneFromExecutor:Z
+
+    if-nez v0, :cond_3
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+
+    sget-object v1, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-virtual {v0, v8, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->sendResponseToExecutor(ILcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
     :cond_3
+    invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->checkDoDone()V
+
+    goto :goto_0
+
+    :cond_4
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mSmartApplyTask:Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment$SmartApplyAsyncTask;
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mSmartApplyTask:Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment$SmartApplyAsyncTask;
 
@@ -39188,7 +39328,7 @@
 
     if-ne v0, v1, :cond_0
 
-    :cond_4
+    :cond_5
     new-instance v0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment$SmartApplyAsyncTask;
 
     const/4 v1, 0x0
@@ -39209,10 +39349,10 @@
 
     goto :goto_0
 
-    :cond_5
+    :cond_6
     iget v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mCurrState:I
 
-    if-lt v0, v3, :cond_7
+    if-lt v0, v3, :cond_9
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mPreview:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentPreview;
 
@@ -39222,7 +39362,7 @@
 
     cmpl-float v0, v0, v2
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_7
 
     sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/Constants;->SCREEN_PERSPECTIVE:Ljava/lang/String;
 
@@ -39242,7 +39382,7 @@
 
     invoke-static {v0, v1, v2, v4, v5}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->insertEventHaveValueSALog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 
-    :cond_6
+    :cond_7
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRoundedSeekbar:Lcom/sec/android/mimage/photoretouching/lpe/view/RoundedSeekbar;
 
     iget v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->degree:F
@@ -39273,16 +39413,27 @@
 
     iput-boolean v6, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mIsOnPerspectiveMode:Z
 
+    iget-boolean v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDoneFromExecutor:Z
+
+    if-nez v0, :cond_8
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+
+    sget-object v1, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-virtual {v0, v8, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->sendResponseToExecutor(ILcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    :cond_8
     invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->checkDoDone()V
 
     goto/16 :goto_0
 
-    :cond_7
+    :cond_9
     iget v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mRotation:F
 
     cmpl-float v0, v0, v2
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_a
 
     sget-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/Constants;->SCREEN_ADJUSTMENT:Ljava/lang/String;
 
@@ -39298,14 +39449,14 @@
 
     invoke-static {v0, v1, v2, v4, v5}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->insertEventHaveValueSALog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 
-    :cond_8
+    :cond_a
     iput-boolean v7, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mIsExiting:Z
 
     invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->checkIfNothingAppliedWithSmart()Z
 
     move-result v0
 
-    if-nez v0, :cond_9
+    if-nez v0, :cond_b
 
     invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->addSALogAdjustment()V
 
@@ -39334,22 +39485,22 @@
 
     goto/16 :goto_0
 
-    :cond_9
+    :cond_b
     invoke-direct {p0, v7, p1}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->startCancelAnimation(ZZ)V
 
     goto :goto_1
 .end method
 
-.method public doDoneFromExecutor()V
+.method public doDoneFromExecutor(Z)V
     .locals 3
 
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
     iget v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mMode:I
 
-    const/16 v1, 0xb
+    const/16 v2, 0xb
 
-    if-eq v0, v1, :cond_0
+    if-eq v0, v2, :cond_0
 
     iget-boolean v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mIsCropAnimating:Z
 
@@ -39358,28 +39509,37 @@
     :cond_0
     const-string v0, "PEDIT_Adjustment"
 
-    const-string v1, "doDoneFromExecutor isAnimating"
+    const-string v2, "doDoneFromExecutor isAnimating"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iput-boolean v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDoneFromExecutor:Z
+    iput-boolean v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDoneFromExecutor:Z
 
     :goto_0
     return-void
 
     :cond_1
+    if-nez p1, :cond_2
+
     iget v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mCurrState:I
 
-    const v1, 0x20014
+    const v2, 0x2000e
 
-    if-lt v0, v1, :cond_2
+    if-lt v0, v2, :cond_2
 
-    iput-boolean v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDoneFromExecutor:Z
+    move v0, v1
 
-    :cond_2
-    invoke-virtual {p0, v2}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDone(Z)V
+    :goto_1
+    iput-boolean v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDoneFromExecutor:Z
+
+    invoke-virtual {p0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->doDone(Z)V
 
     goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x0
+
+    goto :goto_1
 .end method
 
 .method public draw()V
@@ -40145,7 +40305,7 @@
 
     const/4 v1, 0x1
 
-    if-ne v0, v1, :cond_4
+    if-ne v0, v1, :cond_5
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mBgView:Landroid/view/View;
 
@@ -40412,7 +40572,7 @@
 
     const/16 v0, 0x7d
 
-    if-ge v7, v0, :cond_5
+    if-ge v7, v0, :cond_6
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mCropLayout:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentCrop;
 
@@ -40516,13 +40676,13 @@
 
     const/4 v2, 0x0
 
-    iget v3, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->degree:F
+    iget v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->degree:F
 
-    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object v3
+    move-result-object v4
 
-    aput-object v3, v1, v2
+    aput-object v4, v1, v2
 
     invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -40593,9 +40753,42 @@
     invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->initForDesktopMode()V
 
     :cond_3
-    return-void
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mContext:Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
+
+    invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;->getAppContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/Activity;
+
+    check-cast v0, Landroid/app/Activity;
+
+    invoke-virtual {v0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v0
+
+    const-string v1, "contacts_service"
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    const v0, 0x20006
+
+    iput v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mCurrState:I
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    iput v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mCropAspectRatio:F
+
+    invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->changeCropRectAspect()V
 
     :cond_4
+    return-void
+
+    :cond_5
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mBgView:Landroid/view/View;
 
     const/16 v1, 0x8
@@ -40604,7 +40797,7 @@
 
     goto/16 :goto_0
 
-    :cond_5
+    :cond_6
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Adjustment;->mCropLayout:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLAdjustmentCrop;
 
     const/16 v1, 0x66
@@ -40630,7 +40823,9 @@
 
     invoke-virtual {v9}, Ljava/lang/NumberFormatException;->printStackTrace()V
 
-    goto :goto_2
+    goto/16 :goto_2
+
+    nop
 
     :array_0
     .array-data 4

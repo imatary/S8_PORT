@@ -71,7 +71,7 @@
     iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$9;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     # invokes: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->prepareEffectThumbs()V
-    invoke-static {v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1600(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)V
+    invoke-static {v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1800(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)V
 
     return-void
 .end method

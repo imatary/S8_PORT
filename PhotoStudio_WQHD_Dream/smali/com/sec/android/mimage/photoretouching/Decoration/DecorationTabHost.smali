@@ -164,7 +164,7 @@
 
     move-result-object v4
 
-    const v6, 0x7f0805b3
+    const v6, 0x7f0805b5
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -172,7 +172,7 @@
 
     iput v6, p0, Lcom/sec/android/mimage/photoretouching/Decoration/DecorationTabHost;->indicatorHeight:I
 
-    const v6, 0x7f0805b4
+    const v6, 0x7f0805b6
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -180,7 +180,7 @@
 
     iput v6, p0, Lcom/sec/android/mimage/photoretouching/Decoration/DecorationTabHost;->leftOffset:I
 
-    const v6, 0x7f0805b2
+    const v6, 0x7f0805b4
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -401,7 +401,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0c00c6
+    const v8, 0x7f0c00c7
 
     invoke-virtual {v7, v8, v11}, Landroid/content/res/Resources;->getColorStateList(ILandroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;
 
@@ -439,7 +439,7 @@
 
     if-eqz v7, :cond_4
 
-    const v7, 0x7f0206b9
+    const v7, 0x7f0206b7
 
     invoke-virtual {v3, v7}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
@@ -496,7 +496,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0c00c7
+    const v8, 0x7f0c00c8
 
     invoke-virtual {v7, v8, v11}, Landroid/content/res/Resources;->getColorStateList(ILandroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;
 
@@ -520,7 +520,7 @@
     if-nez v7, :cond_2
 
     :cond_5
-    const v7, 0x7f02073a
+    const v7, 0x7f020738
 
     invoke-virtual {v3, v7}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
@@ -576,7 +576,7 @@
 
     if-lt v2, v3, :cond_0
 
-    const v2, 0x7f0206b7
+    const v2, 0x7f0206b5
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setBackgroundResource(I)V
 

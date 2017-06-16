@@ -147,7 +147,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f0207bc
+    const v3, 0x7f0207ba
 
     invoke-virtual {v0, v3}, Landroid/widget/CheckBox;->setBackgroundResource(I)V
 

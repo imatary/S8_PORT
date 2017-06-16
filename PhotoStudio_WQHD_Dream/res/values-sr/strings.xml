@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">Nije moguće otvoriti aplikaciju. Izbriši neke fajlove sa skladišne lokacije uređaja i pokušaj ponovo.</string>
     <string name="__cp__KB">%d kB</string>
     <string name="__cp__camera_security_enter">Politika bezbednosti ograničava upotrebu kamere.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">Nije moguće koristiti kameru.</string>
     <string name="__cp__cannot_start_camera_msg">Nije moguće koristiti kameru tokom poziva.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">Nije moguće otvoriti Kameru tokom video poziva.</string>
     <string name="__cp__flash">Blic</string>

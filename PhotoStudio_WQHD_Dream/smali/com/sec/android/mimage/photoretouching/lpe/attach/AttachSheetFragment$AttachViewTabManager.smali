@@ -312,7 +312,7 @@
 .method public selectCameraTab()V
     .locals 10
 
-    const v9, 0x7f080528
+    const v9, 0x7f080529
 
     const/4 v7, 0x1
 
@@ -348,7 +348,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f080529
+    const v6, 0x7f08052a
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -508,7 +508,7 @@
 .method public updateLayout()V
     .locals 7
 
-    const v6, 0x7f080528
+    const v6, 0x7f080529
 
     const/4 v5, 0x0
 

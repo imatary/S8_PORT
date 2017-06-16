@@ -324,7 +324,7 @@
 
     move-result v15
 
-    if-eqz v15, :cond_4
+    if-eqz v15, :cond_3
 
     move-object/from16 v0, p0
 
@@ -349,7 +349,7 @@
 
     move-result v15
 
-    if-eqz v15, :cond_5
+    if-eqz v15, :cond_4
 
     move-object/from16 v0, p0
 
@@ -613,7 +613,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0207c8
+    const v16, 0x7f0207c6
 
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -836,93 +836,6 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    invoke-static {}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->isGraceUX()Z
-
-    move-result v15
-
-    if-eqz v15, :cond_3
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v15}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v15
-
-    const v16, 0x7f0c0098
-
-    invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getColor(I)I
-
-    move-result v15
-
-    const v16, 0x3e4ccccd    # 0.2f
-
-    move/from16 v0, v16
-
-    invoke-static {v13, v15, v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->setStrokeForText(Landroid/widget/TextView;IF)V
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v15}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v15
-
-    const v16, 0x7f0c0098
-
-    invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getColor(I)I
-
-    move-result v15
-
-    const v16, 0x3e4ccccd    # 0.2f
-
-    move/from16 v0, v16
-
-    invoke-static {v7, v15, v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->setStrokeForText(Landroid/widget/TextView;IF)V
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v15}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v15
-
-    const v16, 0x7f0c0098
-
-    invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getColor(I)I
-
-    move-result v15
-
-    const v16, 0x3e4ccccd    # 0.2f
-
-    move/from16 v0, v16
-
-    invoke-static {v9, v15, v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->setStrokeForText(Landroid/widget/TextView;IF)V
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v15}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v15
-
-    const v16, 0x7f0c0098
-
-    invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getColor(I)I
-
-    move-result v15
-
-    const v16, 0x3e4ccccd    # 0.2f
-
-    move/from16 v0, v16
-
-    invoke-static {v11, v15, v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->setStrokeForText(Landroid/widget/TextView;IF)V
-
-    :cond_3
     const/4 v15, 0x0
 
     move-object/from16 v0, p0
@@ -951,7 +864,7 @@
 
     return-void
 
-    :cond_4
+    :cond_3
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
@@ -968,7 +881,7 @@
 
     goto/16 :goto_0
 
-    :cond_5
+    :cond_4
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
@@ -2057,136 +1970,204 @@
 .end method
 
 .method public enableRedo(Z)V
-    .locals 2
+    .locals 6
 
-    const v1, 0x7f0e009f
+    const v5, 0x7f0e009f
 
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+    const v2, 0x3e99999a    # 0.3f
 
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
 
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+    if-eqz v1, :cond_2
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
 
-    move-result-object v0
+    const v3, 0x7f0e008f
 
-    invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Landroid/view/View;->setFocusable(Z)V
+    check-cast v0, Landroid/widget/TextView;
 
-    if-eqz p1, :cond_1
+    if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+    if-eqz p1, :cond_3
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
+    const v1, 0x3f59999a    # 0.85f
 
     :goto_0
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mMenu:Landroid/view/Menu;
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setAlpha(F)V
 
-    const v1, 0x7f0e047b
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
 
-    invoke-interface {v0, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-interface {v0, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
+    const v3, 0x7f08050e
+
+    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    iget-object v3, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f0c000b
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v3
+
+    if-eqz p1, :cond_0
+
+    const v2, 0x3f19999a    # 0.6f
 
     :cond_0
-    return-void
+    invoke-virtual {v0, v1, v3, v2}, Landroid/widget/TextView;->semAddStrokeTextEffect(FIF)I
 
     :cond_1
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v0
+    move-result-object v1
 
-    const v1, 0x3e99999a    # 0.3f
+    invoke-virtual {v1, p1}, Landroid/view/View;->setEnabled(Z)V
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+
+    invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Landroid/view/View;->setFocusable(Z)V
+
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mMenu:Landroid/view/Menu;
+
+    const v2, 0x7f0e047b
+
+    invoke-interface {v1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+
+    move-result-object v1
+
+    invoke-interface {v1, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
+
+    :cond_2
+    return-void
+
+    :cond_3
+    move v1, v2
 
     goto :goto_0
 .end method
 
 .method public enableSave(Z)V
-    .locals 2
+    .locals 6
 
-    const v1, 0x7f0e0097
+    const v5, 0x7f0e0097
 
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+    const v2, 0x3e99999a    # 0.3f
 
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
 
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+    if-eqz v1, :cond_2
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
 
-    move-result-object v0
+    const v3, 0x7f0e0098
 
-    invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Landroid/view/View;->setFocusable(Z)V
-
-    if-eqz p1, :cond_2
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
-
-    :cond_0
-    :goto_0
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mMenu:Landroid/view/Menu;
+    check-cast v0, Landroid/widget/TextView;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mMenu:Landroid/view/Menu;
+    if-eqz p1, :cond_4
 
-    const v1, 0x7f0e0478
+    const v1, 0x3f59999a    # 0.85f
 
-    invoke-interface {v0, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+    :goto_0
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setAlpha(F)V
 
-    move-result-object v0
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
 
-    invoke-interface {v0, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v3, 0x7f08050e
+
+    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    iget-object v3, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f0c000b
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v3
+
+    if-eqz p1, :cond_0
+
+    const v2, 0x3f19999a    # 0.6f
+
+    :cond_0
+    invoke-virtual {v0, v1, v3, v2}, Landroid/widget/TextView;->semAddStrokeTextEffect(FIF)I
 
     :cond_1
-    return-void
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+
+    invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Landroid/view/View;->setEnabled(Z)V
+
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+
+    invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Landroid/view/View;->setFocusable(Z)V
 
     :cond_2
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mMenu:Landroid/view/Menu;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    if-eqz v1, :cond_3
 
-    move-result-object v0
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mMenu:Landroid/view/Menu;
 
-    const v1, 0x3e99999a    # 0.3f
+    const v2, 0x7f0e0478
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
+    invoke-interface {v1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+
+    move-result-object v1
+
+    invoke-interface {v1, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
+
+    :cond_3
+    return-void
+
+    :cond_4
+    move v1, v2
 
     goto :goto_0
 .end method
@@ -2228,66 +2209,100 @@
 .end method
 
 .method public enableUndo(Z)V
-    .locals 2
+    .locals 6
 
-    const v1, 0x7f0e009e
+    const v5, 0x7f0e009e
 
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+    const v2, 0x3e99999a    # 0.3f
 
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
 
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+    if-eqz v1, :cond_2
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
 
-    move-result-object v0
+    const v3, 0x7f0e0090
 
-    invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Landroid/view/View;->setFocusable(Z)V
+    check-cast v0, Landroid/widget/TextView;
 
-    if-eqz p1, :cond_1
+    if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+    if-eqz p1, :cond_3
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
+    const v1, 0x3f59999a    # 0.85f
 
     :goto_0
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mMenu:Landroid/view/Menu;
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setAlpha(F)V
 
-    const v1, 0x7f0e047a
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
 
-    invoke-interface {v0, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-interface {v0, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
+    const v3, 0x7f08050e
+
+    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    iget-object v3, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f0c000b
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v3
+
+    if-eqz p1, :cond_0
+
+    const v2, 0x3f19999a    # 0.6f
 
     :cond_0
-    return-void
+    invoke-virtual {v0, v1, v3, v2}, Landroid/widget/TextView;->semAddStrokeTextEffect(FIF)I
 
     :cond_1
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v0
+    move-result-object v1
 
-    const v1, 0x3e99999a    # 0.3f
+    invoke-virtual {v1, p1}, Landroid/view/View;->setEnabled(Z)V
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mCustomMenu:Landroid/view/View;
+
+    invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Landroid/view/View;->setFocusable(Z)V
+
+    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mMenu:Landroid/view/Menu;
+
+    const v2, 0x7f0e047a
+
+    invoke-interface {v1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+
+    move-result-object v1
+
+    invoke-interface {v1, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
+
+    :cond_2
+    return-void
+
+    :cond_3
+    move v1, v2
 
     goto :goto_0
 .end method
@@ -3144,9 +3159,9 @@
 
     const v12, 0x7f0e009c
 
-    const v11, 0x7f0206b7
+    const v11, 0x7f0206b5
 
-    const v10, 0x7f0206b6
+    const v10, 0x7f0206b4
 
     iget-object v8, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
 
@@ -3154,7 +3169,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0207c8
+    const v9, 0x7f0207c6
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3352,9 +3367,9 @@
 .method public setDrawingListeners(II)V
     .locals 6
 
-    const v5, 0x7f0c0098
+    const v5, 0x7f0c0099
 
-    const v4, 0x7f0206b7
+    const v4, 0x7f0206b5
 
     const v3, 0x3e4ccccd    # 0.2f
 
@@ -3443,7 +3458,7 @@
 .method public setDrawingListenersForDream(II)V
     .locals 4
 
-    const v3, 0x7f0206b7
+    const v3, 0x7f0206b5
 
     iget-object v2, p0, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->mContext:Landroid/content/Context;
 

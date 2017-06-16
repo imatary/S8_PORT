@@ -44,7 +44,7 @@
     const/4 v1, 0x0
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->isGifStickerAdded:Z
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1702(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Z)Z
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1902(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$JobThread$2;->this$1:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$JobThread;
 

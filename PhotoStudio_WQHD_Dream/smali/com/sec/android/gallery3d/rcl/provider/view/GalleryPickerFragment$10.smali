@@ -48,7 +48,7 @@
     iget-object v0, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment$10;->this$0:Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;
 
     # getter for: Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsFirstLoading:Z
-    invoke-static {v0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$600(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Z
+    invoke-static {v0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$700(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Z
 
     move-result v0
 
@@ -57,7 +57,7 @@
     iget-object v0, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment$10;->this$0:Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;
 
     # setter for: Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsFirstLoading:Z
-    invoke-static {v0, v2}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$602(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Z)Z
+    invoke-static {v0, v2}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$702(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment$10;->this$0:Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;
 
@@ -68,12 +68,12 @@
     iget-object v0, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment$10;->this$0:Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;
 
     # invokes: Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->setTotalSelectedCount()V
-    invoke-static {v0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$800(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)V
+    invoke-static {v0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$900(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment$10;->this$0:Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;
 
     # invokes: Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->setFluidScrollEnabled()V
-    invoke-static {v0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$900(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)V
+    invoke-static {v0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$1000(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)V
 
     return-void
 
@@ -83,7 +83,7 @@
     const/4 v1, 0x1
 
     # setter for: Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsFullLoaded:Z
-    invoke-static {v0, v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$702(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Z)Z
+    invoke-static {v0, v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$802(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Z)Z
 
     goto :goto_0
 .end method

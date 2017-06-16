@@ -3,12 +3,12 @@
 .source "MotionPhotoActivity.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->imageViewAspectUpdate()V
+    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->registerClickListener()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,13 +34,21 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 1
+.method public onClick(Landroid/view/View;)V
+    .locals 3
+
+    const-string v0, "846"
+
+    const-string v1, "8631"
+
+    const-string v2, "Remove decoration"
+
+    invoke-static {v0, v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->insertEventSALog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$31;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->updateImageAspectRatio()V
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$4800(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
+    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->doRemoveLayout()V
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5000(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
 
     return-void
 .end method

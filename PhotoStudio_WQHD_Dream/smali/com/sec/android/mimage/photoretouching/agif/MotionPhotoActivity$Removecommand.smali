@@ -100,7 +100,7 @@
     iget-object v2, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$Removecommand;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->isBurstShotImage:Z
-    invoke-static {v2}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$6800(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Z
+    invoke-static {v2}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$3300(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Z
 
     move-result v2
 
@@ -160,7 +160,7 @@
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$Removecommand;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->gsimLogsInstance:Lcom/sec/android/mimage/photoretouching/lpe/util/Utils$GSIMLogs;
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$5700(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Lcom/sec/android/mimage/photoretouching/lpe/util/Utils$GSIMLogs;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$6100(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Lcom/sec/android/mimage/photoretouching/lpe/util/Utils$GSIMLogs;
 
     move-result-object v0
 
@@ -226,7 +226,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c009e
+    const v3, 0x7f0c009f
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -239,7 +239,7 @@
     iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$Removecommand;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
     # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->updateFaceRectList(I)V
-    invoke-static {v1, p1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$6900(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;I)V
+    invoke-static {v1, p1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$7200(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;I)V
 
     if-eqz p2, :cond_0
 
@@ -251,7 +251,7 @@
     iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$Removecommand;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
     # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->showSaveMenu()V
-    invoke-static {v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$7000(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
+    invoke-static {v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$7300(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
 
     return-void
 .end method

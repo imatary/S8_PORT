@@ -158,7 +158,7 @@
     :sswitch_0
     sget-object v2, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->sRes:Landroid/content/res/Resources;
 
-    const v3, 0x7f020765
+    const v3, 0x7f020763
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -169,7 +169,7 @@
     :sswitch_1
     sget-object v2, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->sRes:Landroid/content/res/Resources;
 
-    const v3, 0x7f020764
+    const v3, 0x7f020762
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -180,7 +180,7 @@
     :sswitch_2
     sget-object v2, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->sRes:Landroid/content/res/Resources;
 
-    const v3, 0x7f020760
+    const v3, 0x7f02075e
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -191,7 +191,7 @@
     :sswitch_3
     sget-object v2, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->sRes:Landroid/content/res/Resources;
 
-    const v3, 0x7f020761
+    const v3, 0x7f02075f
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -202,7 +202,7 @@
     :sswitch_4
     sget-object v2, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->sRes:Landroid/content/res/Resources;
 
-    const v3, 0x7f020762
+    const v3, 0x7f020760
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -213,7 +213,7 @@
     :sswitch_5
     sget-object v2, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->sRes:Landroid/content/res/Resources;
 
-    const v3, 0x7f020763
+    const v3, 0x7f020761
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -224,7 +224,7 @@
     :sswitch_6
     sget-object v2, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->sRes:Landroid/content/res/Resources;
 
-    const v3, 0x7f02075e
+    const v3, 0x7f02075c
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -235,7 +235,7 @@
     :sswitch_7
     sget-object v2, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->sRes:Landroid/content/res/Resources;
 
-    const v3, 0x7f02075f
+    const v3, 0x7f02075d
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -1679,9 +1679,9 @@
 
     const/4 v7, 0x2
 
-    const v6, 0x7f020481
+    const v6, 0x7f02047f
 
-    const v5, 0x7f020453
+    const v5, 0x7f020451
 
     const/4 v4, 0x1
 
@@ -1719,7 +1719,7 @@
 
     new-instance v1, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;
 
-    const v2, 0x7f0205d8
+    const v2, 0x7f0205d6
 
     invoke-direct {v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;-><init>(I)V
 
@@ -1737,7 +1737,7 @@
 
     new-instance v1, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;
 
-    const v2, 0x7f0205da
+    const v2, 0x7f0205d8
 
     invoke-direct {v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;-><init>(I)V
 
@@ -1755,7 +1755,7 @@
 
     new-instance v1, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;
 
-    const v2, 0x7f0205db
+    const v2, 0x7f0205d9
 
     invoke-direct {v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;-><init>(I)V
 
@@ -1773,7 +1773,7 @@
 
     new-instance v1, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;
 
-    const v2, 0x7f0205dc
+    const v2, 0x7f0205da
 
     invoke-direct {v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;-><init>(I)V
 
@@ -2025,7 +2025,7 @@
 
     new-instance v1, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;
 
-    const v2, 0x7f020452
+    const v2, 0x7f020450
 
     invoke-direct {v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;-><init>(I)V
 
@@ -2071,7 +2071,7 @@
 
     new-instance v1, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;
 
-    const v2, 0x7f020478
+    const v2, 0x7f020476
 
     invoke-direct {v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;-><init>(I)V
 
@@ -2215,14 +2215,22 @@
 
     sget-object v5, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->mCachedIcons:Landroid/util/SparseArray;
 
+    if-nez v5, :cond_0
+
+    :goto_0
+    return-void
+
+    :cond_0
+    sget-object v5, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->mCachedIcons:Landroid/util/SparseArray;
+
     invoke-virtual {v5}, Landroid/util/SparseArray;->size()I
 
     move-result v3
 
     const/4 v0, 0x0
 
-    :goto_0
-    if-ge v0, v3, :cond_2
+    :goto_1
+    if-ge v0, v3, :cond_3
 
     sget-object v5, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->mCachedIcons:Landroid/util/SparseArray;
 
@@ -2234,12 +2242,12 @@
 
     const/4 v2, 0x0
 
-    :goto_1
+    :goto_2
     invoke-virtual {v4}, Landroid/util/SparseArray;->size()I
 
     move-result v5
 
-    if-ge v2, v5, :cond_1
+    if-ge v2, v5, :cond_2
 
     invoke-virtual {v4, v2}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
@@ -2249,25 +2257,25 @@
 
     iget-object v5, v1, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;->bmp:Landroid/graphics/Bitmap;
 
-    if-eqz v5, :cond_0
+    if-eqz v5, :cond_1
 
     iget-object v5, v1, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData$Icon;->bmp:Landroid/graphics/Bitmap;
 
     invoke-virtual {v5}, Landroid/graphics/Bitmap;->recycle()V
 
-    :cond_0
+    :cond_1
     add-int/lit8 v2, v2, 0x1
 
-    goto :goto_1
+    goto :goto_2
 
-    :cond_1
+    :cond_2
     invoke-virtual {v4}, Landroid/util/SparseArray;->clear()V
 
     add-int/lit8 v0, v0, 0x1
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_2
+    :cond_3
     sget-object v5, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->mCachedIcons:Landroid/util/SparseArray;
 
     invoke-virtual {v5}, Landroid/util/SparseArray;->clear()V
@@ -2278,7 +2286,7 @@
 
     sget-object v5, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->mSecImaging:Lcom/sec/android/mimage/photoretouching/lpe/core/SecImaging;
 
-    if-eqz v5, :cond_4
+    if-eqz v5, :cond_5
 
     sget-object v6, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->mSecImaging:Lcom/sec/android/mimage/photoretouching/lpe/core/SecImaging;
 
@@ -2293,13 +2301,13 @@
 
     sget-object v5, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->mSecImaging:Lcom/sec/android/mimage/photoretouching/lpe/core/SecImaging;
 
-    if-eqz v5, :cond_3
+    if-eqz v5, :cond_4
 
     sget-object v5, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->mSecImaging:Lcom/sec/android/mimage/photoretouching/lpe/core/SecImaging;
 
     invoke-virtual {v5}, Lcom/sec/android/mimage/photoretouching/lpe/core/SecImaging;->release()V
 
-    :cond_3
+    :cond_4
     const/4 v5, 0x0
 
     sput-object v5, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->mSecImaging:Lcom/sec/android/mimage/photoretouching/lpe/core/SecImaging;
@@ -2308,12 +2316,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    :cond_4
+    :cond_5
     const/4 v5, 0x0
 
     sput-boolean v5, Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/IconData;->isInitGPUEngine:Z
 
-    return-void
+    goto :goto_0
 
     :catchall_0
     move-exception v5

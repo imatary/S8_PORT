@@ -1477,7 +1477,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f020456
+    const v23, 0x7f020454
 
     move-object/from16 v0, v22
 

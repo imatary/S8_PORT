@@ -394,7 +394,6 @@
     <dimen name="portrait_sub_btn_height">52.0dip</dimen>
     <dimen name="portrait_sub_btn_icon_gap">4.0dip</dimen>
     <dimen name="portrait_sub_layout_btn_height">56.0dip</dimen>
-    <dimen name="red_eye_text_margin_bottom">123.0dip</dimen>
     <dimen name="red_eye_text_size">16.0dip</dimen>
     <dimen name="red_eye_text_width">260.0dip</dimen>
     <dimen name="rounded_seekbar_child_width">340.0dip</dimen>

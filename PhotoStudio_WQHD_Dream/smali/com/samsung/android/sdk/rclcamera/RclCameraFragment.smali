@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "RCL/2.0.53/"
+    const-string v1, "RCL/2.0.56/"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -76,7 +76,7 @@
 
     sget-object v0, Lcom/samsung/android/sdk/rclcamera/RclCameraFragment;->TAG:Ljava/lang/String;
 
-    const-string v1, "RclCameraFragment 2.0.53"
+    const-string v1, "RclCameraFragment 2.0.56"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -119,7 +119,7 @@
 
     sget-object v1, Lcom/samsung/android/sdk/rclcamera/RclCameraFragment;->TAG:Ljava/lang/String;
 
-    const-string v2, "RclCameraFragment 2.0.53"
+    const-string v2, "RclCameraFragment 2.0.56"
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 

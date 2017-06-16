@@ -179,7 +179,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0c00ae
+    const v15, 0x7f0c00af
 
     invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -222,6 +222,17 @@
     iget v5, v6, Landroid/util/DisplayMetrics;->heightPixels:I
 
     iget v7, v6, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/sec/android/mimage/photoretouching/PhotoRetouching$13;->this$0:Lcom/sec/android/mimage/photoretouching/PhotoRetouching;
+
+    # getter for: Lcom/sec/android/mimage/photoretouching/PhotoRetouching;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+    invoke-static {v14}, Lcom/sec/android/mimage/photoretouching/PhotoRetouching;->access$000(Lcom/sec/android/mimage/photoretouching/PhotoRetouching;)Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+
+    move-result-object v14
+
+    if-eqz v14, :cond_3
 
     move-object/from16 v0, p0
 

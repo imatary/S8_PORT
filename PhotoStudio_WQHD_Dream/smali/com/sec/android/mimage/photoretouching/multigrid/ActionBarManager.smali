@@ -401,7 +401,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0c0098
+    const v7, 0x7f0c0099
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -417,7 +417,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0c0098
+    const v7, 0x7f0c0099
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -433,7 +433,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0c0098
+    const v7, 0x7f0c0099
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -449,7 +449,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0c0098
+    const v7, 0x7f0c0099
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -472,7 +472,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0207c8
+    const v7, 0x7f0207c6
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -500,7 +500,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0207c8
+    const v7, 0x7f0207c6
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -578,7 +578,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0c0098
+    const v7, 0x7f0c0099
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -594,7 +594,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0c0098
+    const v7, 0x7f0c0099
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -610,7 +610,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0c0098
+    const v7, 0x7f0c0099
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -626,7 +626,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0c0098
+    const v7, 0x7f0c0099
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1873,9 +1873,9 @@
 .method public setButtonBackgrounds()V
     .locals 10
 
-    const v9, 0x7f0207c8
+    const v9, 0x7f0207c6
 
-    const v8, 0x7f0206b6
+    const v8, 0x7f0206b4
 
     iget-object v6, p0, Lcom/sec/android/mimage/photoretouching/multigrid/ActionBarManager;->mContext:Landroid/content/Context;
 
@@ -2116,7 +2116,7 @@
 
     const/4 v9, 0x0
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
     invoke-virtual {p0}, Lcom/sec/android/mimage/photoretouching/multigrid/ActionBarManager;->setButtonBackgrounds()V
 

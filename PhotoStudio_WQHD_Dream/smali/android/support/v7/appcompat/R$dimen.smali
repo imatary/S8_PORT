@@ -143,15 +143,15 @@
 
 .field public static final dialog_fixed_width_minor:I = 0x7f0800ee
 
-.field public static final disabled_alpha_material_dark:I = 0x7f08057f
+.field public static final disabled_alpha_material_dark:I = 0x7f080581
 
-.field public static final disabled_alpha_material_light:I = 0x7f080580
+.field public static final disabled_alpha_material_light:I = 0x7f080582
 
-.field public static final notification_large_icon_height:I = 0x7f0805bd
+.field public static final notification_large_icon_height:I = 0x7f0805bf
 
-.field public static final notification_large_icon_width:I = 0x7f0805be
+.field public static final notification_large_icon_width:I = 0x7f0805c0
 
-.field public static final notification_subtext_size:I = 0x7f0805bf
+.field public static final notification_subtext_size:I = 0x7f0805c1
 
 
 # direct methods

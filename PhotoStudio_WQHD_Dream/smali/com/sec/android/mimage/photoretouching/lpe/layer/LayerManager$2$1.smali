@@ -35,65 +35,40 @@
 
 # virtual methods
 .method public run()V
-    .locals 6
+    .locals 2
 
-    iget-object v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2$1;->this$1:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2$1;->this$1:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;
 
-    iget-object v4, v4, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+    iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mServiceId:I
-    invoke-static {v4}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$300(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)I
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$300(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)I
 
-    move-result v4
+    move-result v0
 
-    const v5, 0x80009
+    const v1, 0x80009
 
-    if-ne v4, v5, :cond_0
+    if-ne v0, v1, :cond_0
 
-    iget-object v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2$1;->this$1:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2$1;->this$1:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;
 
-    iget-object v4, v4, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+    iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
-    # getter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mContext:Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
-    invoke-static {v4}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$200(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;->getContext()Landroid/content/Context;
-
-    move-result-object v4
-
-    check-cast v4, Landroid/app/Activity;
-
-    invoke-virtual {v4}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    # getter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mActionBarManager:Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$400(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
+    invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;->hide()V
 
-    move-result-object v1
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2$1;->this$1:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;
 
-    invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
-    move-result-object v3
+    const/4 v1, 0x0
 
-    check-cast v3, Landroid/widget/Toolbar;
-
-    invoke-virtual {v3}, Landroid/widget/Toolbar;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/view/View;
-
-    const/16 v4, 0x8
-
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
-
-    iget-object v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2$1;->this$1:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;
-
-    iget-object v4, v4, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$2;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
-
-    invoke-virtual {v4}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->hideMenu()V
+    # setter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mMenuShown:Z
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$502(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Z)Z
 
     :cond_0
     return-void

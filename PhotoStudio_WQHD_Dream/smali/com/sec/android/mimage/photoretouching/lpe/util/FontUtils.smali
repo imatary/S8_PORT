@@ -170,6 +170,20 @@
     return-object v0
 .end method
 
+.method private static getRobotoRegularItalic()Landroid/graphics/Typeface;
+    .locals 2
+
+    const-string v0, "sans-serif"
+
+    const/4 v1, 0x2
+
+    invoke-static {v0, v1}, Landroid/graphics/Typeface;->create(Ljava/lang/String;I)Landroid/graphics/Typeface;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method private static getRobotoThin()Landroid/graphics/Typeface;
     .locals 4
 
@@ -302,6 +316,15 @@
 
     goto :goto_0
 
+    :pswitch_8
+    invoke-static {}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils;->getRobotoRegularItalic()Landroid/graphics/Typeface;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -312,5 +335,6 @@
         :pswitch_5
         :pswitch_6
         :pswitch_7
+        :pswitch_8
     .end packed-switch
 .end method

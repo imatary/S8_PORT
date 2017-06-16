@@ -3,12 +3,12 @@
 .source "MultiGridActivity.java"
 
 # interfaces
-.implements Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;
+.implements Landroid/content/DialogInterface$OnDismissListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->displayCustomDialogue()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,38 +34,12 @@
 
 
 # virtual methods
-.method public onParamFillingReceived(Lcom/samsung/android/sdk/bixby/data/ParamFilling;)Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public onRuleCanceled(Ljava/lang/String;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public onScreenStatesRequested()Lcom/samsung/android/sdk/bixby/data/ScreenStateInfo;
-    .locals 2
-
-    new-instance v0, Lcom/samsung/android/sdk/bixby/data/ScreenStateInfo;
-
-    const-string v1, "CollageEditor"
-
-    invoke-direct {v0, v1}, Lcom/samsung/android/sdk/bixby/data/ScreenStateInfo;-><init>(Ljava/lang/String;)V
-
-    return-object v0
-.end method
-
-.method public onStateReceived(Lcom/samsung/android/sdk/bixby/data/State;)V
+.method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity$7;->this$0:Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;
 
-    invoke-virtual {v0, p1}, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->executorHandle(Lcom/samsung/android/sdk/bixby/data/State;)V
+    invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/multigrid/MultiGridActivity;->finish()V
 
     return-void
 .end method

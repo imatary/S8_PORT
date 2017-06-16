@@ -63,7 +63,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0c0022
+    const v9, 0x7f0c0023
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getColor(I)I
 

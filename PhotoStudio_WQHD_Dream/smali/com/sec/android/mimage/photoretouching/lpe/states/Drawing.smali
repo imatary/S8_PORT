@@ -6650,7 +6650,7 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;->mPenIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f0205d0
+    const v1, 0x7f0205ce
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -6702,7 +6702,7 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;->mPenIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f0205d4
+    const v1, 0x7f0205d2
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -6721,7 +6721,7 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;->mPenIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f0205d5
+    const v1, 0x7f0205d3
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -6740,7 +6740,7 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;->mPenIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f0205cf
+    const v1, 0x7f0205cd
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -6759,7 +6759,7 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;->mPenIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f0205d1
+    const v1, 0x7f0205cf
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -6778,7 +6778,7 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;->mPenIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f0205d3
+    const v1, 0x7f0205d1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -6797,7 +6797,7 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Drawing;->mPenIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f0205d2
+    const v1, 0x7f0205d0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

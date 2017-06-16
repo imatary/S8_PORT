@@ -1611,6 +1611,50 @@
     return v0
 .end method
 
+.method public getScreenRect()Landroid/graphics/RectF;
+    .locals 7
+
+    const/high16 v6, 0x40000000    # 2.0f
+
+    new-instance v0, Landroid/graphics/RectF;
+
+    iget v1, p0, Lcom/sec/android/mimage/photoretouching/Decoration/GLSuperImposeAGIF;->mCenterX:F
+
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/Decoration/GLSuperImposeAGIF;->mWidth:F
+
+    div-float/2addr v2, v6
+
+    sub-float/2addr v1, v2
+
+    iget v2, p0, Lcom/sec/android/mimage/photoretouching/Decoration/GLSuperImposeAGIF;->mCenterY:F
+
+    iget v3, p0, Lcom/sec/android/mimage/photoretouching/Decoration/GLSuperImposeAGIF;->mHeight:F
+
+    div-float/2addr v3, v6
+
+    sub-float/2addr v2, v3
+
+    iget v3, p0, Lcom/sec/android/mimage/photoretouching/Decoration/GLSuperImposeAGIF;->mCenterX:F
+
+    iget v4, p0, Lcom/sec/android/mimage/photoretouching/Decoration/GLSuperImposeAGIF;->mWidth:F
+
+    div-float/2addr v4, v6
+
+    add-float/2addr v3, v4
+
+    iget v4, p0, Lcom/sec/android/mimage/photoretouching/Decoration/GLSuperImposeAGIF;->mCenterY:F
+
+    iget v5, p0, Lcom/sec/android/mimage/photoretouching/Decoration/GLSuperImposeAGIF;->mHeight:F
+
+    div-float/2addr v5, v6
+
+    add-float/2addr v4, v5
+
+    invoke-direct {v0, v1, v2, v3, v4}, Landroid/graphics/RectF;-><init>(FFFF)V
+
+    return-object v0
+.end method
+
 .method public getSize()[F
     .locals 3
 

@@ -3,12 +3,12 @@
 .source "MotionPhotoActivity.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->showHideEditSubmenuForFirstTime()V
+    value = Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->setDialogContent(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$DIALOG_TYPE;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,29 +34,21 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 1
 
-    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$22;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$22;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    const v2, 0x7f0e0347
-
-    invoke-virtual {v1, v2}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->findViewById(I)Landroid/view/View;
+    # getter for: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->mCurrDialog:Landroid/app/Dialog;
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$2500(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)Landroid/app/Dialog;
 
     move-result-object v0
 
-    check-cast v0, Landroid/widget/LinearLayout;
+    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$22;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$22;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
 
-    iget-object v1, v1, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->editMenuListener:Landroid/view/View$OnClickListener;
-
-    invoke-interface {v1, v0}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
-
-    iget-object v1, p0, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity$22;->this$0:Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;
-
-    # invokes: Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->setContentDescriptionForUI()V
-    invoke-static {v1}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->access$400(Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;)V
+    invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/agif/MotionPhotoActivity;->finish()V
 
     return-void
 .end method

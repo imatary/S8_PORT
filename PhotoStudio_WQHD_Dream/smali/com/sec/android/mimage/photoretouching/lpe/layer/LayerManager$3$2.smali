@@ -123,7 +123,7 @@
     invoke-direct {v1, v2, v3}, Lcom/sec/android/mimage/photoretouching/lpe/util/HelpPopup;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)V
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mHelpPopup:Lcom/sec/android/mimage/photoretouching/lpe/util/HelpPopup;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1102(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Lcom/sec/android/mimage/photoretouching/lpe/util/HelpPopup;)Lcom/sec/android/mimage/photoretouching/lpe/util/HelpPopup;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1302(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Lcom/sec/android/mimage/photoretouching/lpe/util/HelpPopup;)Lcom/sec/android/mimage/photoretouching/lpe/util/HelpPopup;
 
     :cond_0
     return-void

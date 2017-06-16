@@ -1463,13 +1463,15 @@
         <item name="android:layout_gravity">bottom|center</item>
         <item name="android:background">#00000000</item>
         <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
         <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
         <item name="android:fadingEdge">horizontal</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">0.0dip</item>
         <item name="android:layout_marginRight">0.0dip</item>
-        <item name="android:layout_marginBottom">@dimen/sub_btn_textview_effect_margin_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/effect_text_bottom_margin</item>
         <item name="android:singleLine">true</item>
         <item name="android:includeFontPadding">false</item>
         <item name="android:fontFamily">sec-roboto-condensed</item>
@@ -1701,6 +1703,7 @@
         <item name="android:ellipsize">none</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:fadingEdge">horizontal</item>
         <item name="android:layout_height">24.0dip</item>
         <item name="android:layout_marginLeft">0.0dip</item>
         <item name="android:layout_marginRight">0.0dip</item>

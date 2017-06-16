@@ -359,6 +359,16 @@
 
     invoke-virtual {v5, v6}, Lcom/sec/android/mimage/photoretouching/Decoration/InputText;->setText(Ljava/lang/CharSequence;)V
 
+    iget-object v5, p0, Lcom/sec/android/mimage/photoretouching/Decoration/InputText$1;->this$0:Lcom/sec/android/mimage/photoretouching/Decoration/InputText;
+
+    iget-object v6, p0, Lcom/sec/android/mimage/photoretouching/Decoration/InputText$1;->this$0:Lcom/sec/android/mimage/photoretouching/Decoration/InputText;
+
+    invoke-virtual {v6}, Lcom/sec/android/mimage/photoretouching/Decoration/InputText;->length()I
+
+    move-result v6
+
+    invoke-virtual {v5, v6}, Lcom/sec/android/mimage/photoretouching/Decoration/InputText;->setSelection(I)V
+
     :cond_a
     iget-object v5, p0, Lcom/sec/android/mimage/photoretouching/Decoration/InputText$1;->val$toastobject:Landroid/widget/Toast;
 
@@ -379,16 +389,6 @@
     iget-object v5, p0, Lcom/sec/android/mimage/photoretouching/Decoration/InputText$1;->val$toastobject:Landroid/widget/Toast;
 
     invoke-virtual {v5}, Landroid/widget/Toast;->show()V
-
-    iget-object v5, p0, Lcom/sec/android/mimage/photoretouching/Decoration/InputText$1;->this$0:Lcom/sec/android/mimage/photoretouching/Decoration/InputText;
-
-    iget-object v6, p0, Lcom/sec/android/mimage/photoretouching/Decoration/InputText$1;->this$0:Lcom/sec/android/mimage/photoretouching/Decoration/InputText;
-
-    invoke-virtual {v6}, Lcom/sec/android/mimage/photoretouching/Decoration/InputText;->length()I
-
-    move-result v6
-
-    invoke-virtual {v5, v6}, Lcom/sec/android/mimage/photoretouching/Decoration/InputText;->setSelection(I)V
 
     :cond_b
     move-object v5, v2

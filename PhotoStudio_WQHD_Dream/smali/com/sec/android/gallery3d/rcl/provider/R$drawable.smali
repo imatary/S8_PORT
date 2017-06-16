@@ -49,17 +49,17 @@
 
 .field public static final gridview_thumbnail_outline:I = 0x7f02041d
 
-.field public static final item_background_selector:I = 0x7f0204ba
+.field public static final item_background_selector:I = 0x7f0204b8
 
-.field public static final ripple_drawable:I = 0x7f0206a3
+.field public static final ripple_drawable:I = 0x7f0206a1
 
-.field public static final thumbnail_error:I = 0x7f020767
+.field public static final thumbnail_error:I = 0x7f020765
 
-.field public static final thumbnail_image_error:I = 0x7f020768
+.field public static final thumbnail_image_error:I = 0x7f020766
 
-.field public static final thumbnail_video_error:I = 0x7f02076a
+.field public static final thumbnail_video_error:I = 0x7f020768
 
-.field public static final tw_ab_bottom_02_transparent_mtrl:I = 0x7f0207b7
+.field public static final tw_ab_bottom_02_transparent_mtrl:I = 0x7f0207b5
 
 
 # direct methods

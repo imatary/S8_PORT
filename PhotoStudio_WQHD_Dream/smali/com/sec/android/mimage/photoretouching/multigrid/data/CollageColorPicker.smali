@@ -1599,13 +1599,13 @@
 
     const v3, 0x7f080211
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateLinearLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1617,11 +1617,11 @@
 
     const v3, 0x7f08022f
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
     const v5, 0x7f08020e
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
     const v7, 0x7f08020f
 
@@ -1635,13 +1635,13 @@
 
     const v3, 0x7f080210
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateRelativeLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1653,13 +1653,13 @@
 
     const v3, 0x7f080226
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateLinearLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1671,13 +1671,13 @@
 
     const v3, 0x7f080226
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
     const v5, 0x7f08020b
 
     const v6, 0x7f08020a
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateRelativeLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1689,13 +1689,13 @@
 
     const v3, 0x7f080221
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateRelativeLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1707,13 +1707,13 @@
 
     const v3, 0x7f080221
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateRelativeLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1725,13 +1725,13 @@
 
     const v3, 0x7f080226
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateLinearLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1745,9 +1745,9 @@
 
     const v4, 0x7f080207
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
     const v7, 0x7f080208
 
@@ -1763,11 +1763,11 @@
 
     const v4, 0x7f080209
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateRelativeLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1781,11 +1781,11 @@
 
     const v4, 0x7f080209
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateRelativeLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1797,11 +1797,11 @@
 
     const v3, 0x7f080363
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
     const v7, 0x7f080208
 
@@ -1817,11 +1817,11 @@
 
     const v4, 0x7f080209
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateRelativeLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1835,11 +1835,11 @@
 
     const v4, 0x7f080209
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateRelativeLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1851,11 +1851,11 @@
 
     const v3, 0x7f080363
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
     const v7, 0x7f080208
 
@@ -1871,11 +1871,11 @@
 
     const v4, 0x7f080209
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateRelativeLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1889,11 +1889,11 @@
 
     const v4, 0x7f080209
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateRelativeLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1905,13 +1905,13 @@
 
     const v3, 0x7f080362
 
-    const v4, 0x7f08057d
+    const v4, 0x7f08057f
 
-    const v5, 0x7f08057d
+    const v5, 0x7f08057f
 
-    const v6, 0x7f08057d
+    const v6, 0x7f08057f
 
-    const v7, 0x7f08057d
+    const v7, 0x7f08057f
 
     invoke-static/range {v0 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateLinearLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -1944,7 +1944,7 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    const v1, 0x7f0206a5
+    const v1, 0x7f0206a3
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setBackgroundResource(I)V
 

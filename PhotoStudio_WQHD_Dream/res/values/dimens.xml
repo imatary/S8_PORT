@@ -1218,6 +1218,7 @@
     <dimen name="actionbar_button_text_size">22.0dip</dimen>
     <dimen name="actionbar_layout_button_padding">12.0dip</dimen>
     <dimen name="actionbar_return_layout_width">48.0dip</dimen>
+    <dimen name="actionbar_text_stroke_size">4.0px</dimen>
     <dimen name="active_curve_handler_height">17.0dip</dimen>
     <dimen name="active_curve_handler_width">17.0dip</dimen>
     <dimen name="add_point_zoom_picker_width">26.0dip</dimen>
@@ -1329,6 +1330,7 @@
     <dimen name="decoration_page_viewer_bottom_margin">41.0dip</dimen>
     <dimen name="decoration_tab_height">41.0dip</dimen>
     <dimen name="degree_layout_land_margin_right">119.0dip</dimen>
+    <dimen name="dialog_message_textsize">16.0sp</dimen>
     <dimen name="dimen_0">0.0dip</dimen>
     <dimen name="direction_button_height">48.0dip</dimen>
     <item type="dimen" name="disabled_alpha_material_dark">0.3</item>
@@ -1336,7 +1338,7 @@
     <dimen name="effect_manager_gap_buttons">1.0dip</dimen>
     <dimen name="effect_sub_actionbar_icon_margin_left">22.0dip</dimen>
     <dimen name="effect_sub_actionbar_icon_margin_right">14.0dip</dimen>
-    <dimen name="effect_text_bottom_margin">4.0dip</dimen>
+    <dimen name="effect_text_bottom_margin">2.0dip</dimen>
     <dimen name="effect_text_size">11.0dip</dimen>
     <dimen name="fab_border_width">0.5dip</dimen>
     <dimen name="fab_content_size">24.0dip</dimen>
@@ -1438,6 +1440,7 @@
     <dimen name="sub_actionbar_icon_height">24.0dip</dimen>
     <dimen name="sub_actionbar_margin">60.0dip</dimen>
     <dimen name="sub_btn_effect_layout_margin_top">2.0dip</dimen>
+    <dimen name="sub_btn_text_fading_edge_length">5.0dip</dimen>
     <dimen name="sub_btn_textview_effect_margin_bottom">4.0dip</dimen>
     <dimen name="sub_button_width">60.0dip</dimen>
     <dimen name="sub_button_width_six">58.0dip</dimen>

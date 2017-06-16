@@ -286,7 +286,7 @@
 .method public constructor <init>(Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;Lcom/sec/android/mimage/photoretouching/lpe/states/SuperImpose;Landroid/graphics/RectF;)V
     .locals 7
 
-    const v6, 0x7f0205c4
+    const v6, 0x7f0205c2
 
     const/4 v3, 0x1
 
@@ -17348,7 +17348,7 @@
     return-void
 .end method
 
-.method protected declared-synchronized updateNormalBuffer(Z)V
+.method public declared-synchronized updateNormalBuffer(Z)V
     .locals 12
 
     const-wide/high16 v10, 0x4000000000000000L    # 2.0

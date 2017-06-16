@@ -323,7 +323,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_a
+    if-eqz v2, :cond_9
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -398,37 +398,6 @@
     :cond_8
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getPathRuleInfo()Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;->getPathRuleId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->isSaveRule(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_9
-
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    invoke-direct {v2, v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;)V
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    :cond_9
-    move-object/from16 v0, p0
-
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     const/high16 v3, 0x20000
@@ -443,8 +412,51 @@
 
     goto/16 :goto_1
 
-    :cond_a
+    :cond_9
     const-string v2, "Rotate"
+
+    move-object/from16 v0, v17
+
+    invoke-static {v0, v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->checkEquals(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_a
+
+    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p1
+
+    invoke-direct {v2, v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;)V
+
+    move-object/from16 v0, p0
+
+    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+
+    const/high16 v3, 0x20000
+
+    const/16 v4, -0x3e8
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v2, v3, v0, v4}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->openSubModeFromExecutor(ILjava/lang/String;I)V
+
+    const-string v2, "Adjustment"
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->requestNlgWithoutParameters(Ljava/lang/String;)V
+
+    goto/16 :goto_1
+
+    :cond_a
+    const-string v2, "Lasso"
 
     move-object/from16 v0, v17
 
@@ -478,25 +490,7 @@
 
     invoke-virtual {v2, v3, v0, v4}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->openSubModeFromExecutor(ILjava/lang/String;I)V
 
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getPathRuleInfo()Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;->getPathRuleId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->isSaveRule(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_1
-
-    const-string v2, "Adjustment"
+    const-string v2, "Lasso"
 
     move-object/from16 v0, p0
 
@@ -505,7 +499,7 @@
     goto/16 :goto_1
 
     :cond_b
-    const-string v2, "Lasso"
+    const-string v2, "AdjustReset"
 
     move-object/from16 v0, v17
 
@@ -539,7 +533,7 @@
 
     invoke-virtual {v2, v3, v0, v4}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->openSubModeFromExecutor(ILjava/lang/String;I)V
 
-    const-string v2, "Lasso"
+    const-string v2, "AdjustReset"
 
     move-object/from16 v0, p0
 
@@ -548,49 +542,6 @@
     goto/16 :goto_1
 
     :cond_c
-    const-string v2, "AdjustReset"
-
-    move-object/from16 v0, v17
-
-    invoke-static {v0, v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->checkEquals(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_d
-
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    invoke-direct {v2, v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;)V
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
-
-    const/high16 v3, 0x20000
-
-    const/16 v4, -0x3e8
-
-    move-object/from16 v0, v17
-
-    invoke-virtual {v2, v3, v0, v4}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->openSubModeFromExecutor(ILjava/lang/String;I)V
-
-    const-string v2, "AdjustReset"
-
-    move-object/from16 v0, p0
-
-    invoke-direct {v0, v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->requestNlgWithoutParameters(Ljava/lang/String;)V
-
-    goto/16 :goto_1
-
-    :cond_d
     const-string v2, "Flip"
 
     move-object/from16 v0, v17
@@ -599,7 +550,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_11
+    if-eqz v2, :cond_f
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -627,7 +578,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_e
+    if-eqz v2, :cond_d
 
     sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
@@ -643,7 +594,7 @@
 
     goto/16 :goto_1
 
-    :cond_e
+    :cond_d
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -658,7 +609,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_f
+    if-nez v2, :cond_e
 
     move-object/from16 v0, p0
 
@@ -674,7 +625,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_f
+    if-nez v2, :cond_e
 
     sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
@@ -690,38 +641,7 @@
 
     goto/16 :goto_1
 
-    :cond_f
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getPathRuleInfo()Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;->getPathRuleId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->isSaveRule(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_10
-
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    invoke-direct {v2, v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;)V
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    :cond_10
+    :cond_e
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -734,7 +654,7 @@
 
     goto/16 :goto_1
 
-    :cond_11
+    :cond_f
     const-string v2, "Ratio"
 
     move-object/from16 v0, v17
@@ -743,7 +663,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_15
+    if-eqz v2, :cond_12
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -771,7 +691,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_12
+    if-eqz v2, :cond_10
 
     sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
@@ -787,7 +707,7 @@
 
     goto/16 :goto_1
 
-    :cond_12
+    :cond_10
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -804,7 +724,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_13
+    if-nez v2, :cond_11
 
     move-object/from16 v0, p0
 
@@ -822,7 +742,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_13
+    if-nez v2, :cond_11
 
     const-string v2, "1:1"
 
@@ -832,7 +752,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_13
+    if-nez v2, :cond_11
 
     const-string v2, "4:3"
 
@@ -842,7 +762,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_13
+    if-nez v2, :cond_11
 
     const-string v2, "3:4"
 
@@ -852,7 +772,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_13
+    if-nez v2, :cond_11
 
     const-string v2, "16:9"
 
@@ -862,7 +782,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_13
+    if-nez v2, :cond_11
 
     const-string v2, "9:16"
 
@@ -872,7 +792,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_13
+    if-nez v2, :cond_11
 
     sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
@@ -888,38 +808,7 @@
 
     goto/16 :goto_1
 
-    :cond_13
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getPathRuleInfo()Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;->getPathRuleId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->isSaveRule(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_14
-
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    invoke-direct {v2, v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;)V
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    :cond_14
+    :cond_11
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -934,7 +823,7 @@
 
     goto/16 :goto_1
 
-    :cond_15
+    :cond_12
     const-string v2, "Perspective"
 
     move-object/from16 v0, v17
@@ -943,11 +832,11 @@
 
     move-result v2
 
-    if-eqz v2, :cond_1c
+    if-eqz v2, :cond_18
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
-    const-string v5, "Degree"
+    const-string v5, "Axis"
 
     const-string v6, "Valid"
 
@@ -975,7 +864,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_17
+    if-eqz v2, :cond_14
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -1003,7 +892,7 @@
 
     move-result-object v8
 
-    :cond_16
+    :cond_13
     :goto_2
     move-object/from16 v0, p0
 
@@ -1019,7 +908,7 @@
 
     goto/16 :goto_1
 
-    :cond_17
+    :cond_14
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -1034,7 +923,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_18
+    if-nez v2, :cond_15
 
     move-object/from16 v0, p0
 
@@ -1050,7 +939,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_18
+    if-nez v2, :cond_15
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -1080,26 +969,8 @@
 
     goto :goto_2
 
-    :cond_18
-    if-nez v8, :cond_19
-
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    const-string v5, "Degree"
-
-    const-string v6, "Exist"
-
-    const-string v7, "no"
-
-    move-object/from16 v3, p0
-
-    move-object/from16 v4, p1
-
-    invoke-direct/range {v2 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
+    :cond_15
+    if-nez v8, :cond_16
 
     const/16 v2, -0x3e8
 
@@ -1109,14 +980,14 @@
 
     goto :goto_2
 
-    :cond_19
+    :cond_16
     invoke-virtual {v8}, Ljava/lang/Integer;->intValue()I
 
     move-result v2
 
     const/16 v3, -0x19
 
-    if-lt v2, v3, :cond_1a
+    if-lt v2, v3, :cond_17
 
     invoke-virtual {v8}, Ljava/lang/Integer;->intValue()I
 
@@ -1124,69 +995,18 @@
 
     const/16 v3, 0x19
 
-    if-le v2, v3, :cond_1b
+    if-le v2, v3, :cond_13
 
-    :cond_1a
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    const-string v5, "Degree"
-
-    const-string v6, "Valid"
-
-    const-string v7, "no"
-
-    move-object/from16 v3, p0
-
-    move-object/from16 v4, p1
-
-    invoke-direct/range {v2 .. v7}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
+    :cond_17
     const/16 v2, -0x3e8
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v8
 
-    goto/16 :goto_2
+    goto :goto_2
 
-    :cond_1b
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getPathRuleInfo()Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;->getPathRuleId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->isSaveRule(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_16
-
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    invoke-direct {v2, v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;)V
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    goto/16 :goto_2
-
-    :cond_1c
+    :cond_18
     const-string v2, "Tone"
 
     move-object/from16 v0, v17
@@ -1195,7 +1015,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_1d
+    if-eqz v2, :cond_19
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -1219,7 +1039,7 @@
 
     goto/16 :goto_1
 
-    :cond_1d
+    :cond_19
     const-string v2, "ToneApply"
 
     move-object/from16 v0, v17
@@ -1228,7 +1048,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_28
+    if-eqz v2, :cond_22
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -1256,7 +1076,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_1e
+    if-eqz v2, :cond_1a
 
     sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
@@ -1272,7 +1092,7 @@
 
     goto/16 :goto_1
 
-    :cond_1e
+    :cond_1a
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -1289,7 +1109,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_1f
+    if-nez v2, :cond_1b
 
     move-object/from16 v0, p0
 
@@ -1307,7 +1127,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_1f
+    if-nez v2, :cond_1b
 
     move-object/from16 v0, p0
 
@@ -1325,7 +1145,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_1f
+    if-nez v2, :cond_1b
 
     move-object/from16 v0, p0
 
@@ -1343,7 +1163,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_1f
+    if-nez v2, :cond_1b
 
     move-object/from16 v0, p0
 
@@ -1361,7 +1181,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_1f
+    if-nez v2, :cond_1b
 
     move-object/from16 v0, p0
 
@@ -1379,7 +1199,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_1f
+    if-nez v2, :cond_1b
 
     sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
@@ -1395,7 +1215,7 @@
 
     goto/16 :goto_1
 
-    :cond_1f
+    :cond_1b
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -1412,7 +1232,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_23
+    if-eqz v2, :cond_1e
 
     const-string v2, "WhiteBalanceMode"
 
@@ -1424,7 +1244,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_21
+    if-eqz v2, :cond_1d
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -1446,7 +1266,7 @@
 
     sget-object v19, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->SLOT_VALUE_WHITEBALANCE:Ljava/lang/String;
 
-    :cond_20
+    :cond_1c
     :goto_3
     move-object/from16 v0, p0
 
@@ -1458,7 +1278,7 @@
 
     goto/16 :goto_1
 
-    :cond_21
+    :cond_1d
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -1475,7 +1295,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_22
+    if-nez v2, :cond_1c
 
     move-object/from16 v0, p0
 
@@ -1493,7 +1313,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_22
+    if-nez v2, :cond_1c
 
     move-object/from16 v0, p0
 
@@ -1511,7 +1331,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_22
+    if-nez v2, :cond_1c
 
     move-object/from16 v0, p0
 
@@ -1529,7 +1349,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_22
+    if-nez v2, :cond_1c
 
     move-object/from16 v0, p0
 
@@ -1547,7 +1367,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_22
+    if-nez v2, :cond_1c
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -1571,45 +1391,12 @@
 
     goto :goto_3
 
-    :cond_22
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getPathRuleInfo()Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;->getPathRuleId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->isSaveRule(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_20
-
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    invoke-direct {v2, v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;)V
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    goto/16 :goto_3
-
-    :cond_23
+    :cond_1e
     invoke-static {v14}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->getLevelFromParameter(Ljava/util/List;)Ljava/lang/Integer;
 
     move-result-object v11
 
-    if-nez v11, :cond_25
+    if-nez v11, :cond_20
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -1635,7 +1422,7 @@
 
     move-result-object v11
 
-    :cond_24
+    :cond_1f
     :goto_4
     move-object/from16 v0, p0
 
@@ -1653,14 +1440,14 @@
 
     goto/16 :goto_1
 
-    :cond_25
+    :cond_20
     invoke-virtual {v11}, Ljava/lang/Integer;->intValue()I
 
     move-result v2
 
     const/16 v3, -0x32
 
-    if-lt v2, v3, :cond_26
+    if-lt v2, v3, :cond_21
 
     invoke-virtual {v11}, Ljava/lang/Integer;->intValue()I
 
@@ -1668,9 +1455,9 @@
 
     const/16 v3, 0x32
 
-    if-le v2, v3, :cond_27
+    if-le v2, v3, :cond_1f
 
-    :cond_26
+    :cond_21
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
     const-string v5, "ToneValue"
@@ -1697,40 +1484,7 @@
 
     goto :goto_4
 
-    :cond_27
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getPathRuleInfo()Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;->getPathRuleId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->isSaveRule(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_24
-
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    invoke-direct {v2, v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;)V
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    goto :goto_4
-
-    :cond_28
+    :cond_22
     const-string v2, "AdvancedTone"
 
     move-object/from16 v0, v17
@@ -1739,7 +1493,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_29
+    if-eqz v2, :cond_23
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -1769,7 +1523,7 @@
 
     goto/16 :goto_1
 
-    :cond_29
+    :cond_23
     const-string v2, "Effect"
 
     move-object/from16 v0, v17
@@ -1778,7 +1532,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_2a
+    if-eqz v2, :cond_24
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -1802,7 +1556,7 @@
 
     goto/16 :goto_1
 
-    :cond_2a
+    :cond_24
     const-string v2, "EffectApply"
 
     move-object/from16 v0, v17
@@ -1811,7 +1565,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_31
+    if-eqz v2, :cond_2a
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -1843,7 +1597,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_2b
+    if-eqz v2, :cond_25
 
     sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
@@ -1859,7 +1613,7 @@
 
     goto/16 :goto_1
 
-    :cond_2b
+    :cond_25
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -1868,7 +1622,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_2c
+    if-nez v2, :cond_26
 
     sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
@@ -1884,8 +1638,8 @@
 
     goto/16 :goto_1
 
-    :cond_2c
-    if-nez v11, :cond_2f
+    :cond_26
+    if-nez v11, :cond_28
 
     const/16 v2, 0x64
 
@@ -1911,39 +1665,8 @@
 
     iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
-    :cond_2d
+    :cond_27
     :goto_5
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getPathRuleInfo()Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;->getPathRuleId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->isSaveRule(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2e
-
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    invoke-direct {v2, v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;)V
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    :cond_2e
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -1958,12 +1681,12 @@
 
     goto/16 :goto_1
 
-    :cond_2f
+    :cond_28
     invoke-virtual {v11}, Ljava/lang/Integer;->intValue()I
 
     move-result v2
 
-    if-ltz v2, :cond_30
+    if-ltz v2, :cond_29
 
     invoke-virtual {v11}, Ljava/lang/Integer;->intValue()I
 
@@ -1971,10 +1694,10 @@
 
     const/16 v3, 0x64
 
-    if-le v2, v3, :cond_2d
+    if-le v2, v3, :cond_27
 
-    :cond_30
-    const/16 v2, 0x64
+    :cond_29
+    const/16 v2, -0x3e8
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2000,7 +1723,7 @@
 
     goto :goto_5
 
-    :cond_31
+    :cond_2a
     const-string v2, "Portrait"
 
     move-object/from16 v0, v17
@@ -2009,7 +1732,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_33
+    if-eqz v2, :cond_2c
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -2031,13 +1754,13 @@
 
     move-result v2
 
-    if-nez v2, :cond_32
+    if-nez v2, :cond_2b
 
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->sendNoFaceResponse()V
 
     goto/16 :goto_1
 
-    :cond_32
+    :cond_2b
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -2048,7 +1771,7 @@
 
     goto/16 :goto_1
 
-    :cond_33
+    :cond_2c
     const-string v2, "PortraitApply"
 
     move-object/from16 v0, v17
@@ -2057,7 +1780,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3a
+    if-eqz v2, :cond_32
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -2089,7 +1812,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_34
+    if-eqz v2, :cond_2d
 
     sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
@@ -2105,7 +1828,7 @@
 
     goto/16 :goto_1
 
-    :cond_34
+    :cond_2d
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -2120,7 +1843,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_35
+    if-nez v2, :cond_2e
 
     move-object/from16 v0, p0
 
@@ -2136,7 +1859,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_35
+    if-nez v2, :cond_2e
 
     move-object/from16 v0, p0
 
@@ -2152,7 +1875,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_35
+    if-nez v2, :cond_2e
 
     move-object/from16 v0, p0
 
@@ -2168,7 +1891,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_35
+    if-nez v2, :cond_2e
 
     move-object/from16 v0, p0
 
@@ -2184,7 +1907,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_35
+    if-nez v2, :cond_2e
 
     move-object/from16 v0, p0
 
@@ -2200,7 +1923,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_35
+    if-nez v2, :cond_2e
 
     sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
@@ -2216,8 +1939,8 @@
 
     goto/16 :goto_1
 
-    :cond_35
-    if-nez v11, :cond_37
+    :cond_2e
+    if-nez v11, :cond_30
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -2243,7 +1966,7 @@
 
     move-result-object v11
 
-    :cond_36
+    :cond_2f
     :goto_6
     move-object/from16 v0, p0
 
@@ -2259,12 +1982,12 @@
 
     goto/16 :goto_1
 
-    :cond_37
+    :cond_30
     invoke-virtual {v11}, Ljava/lang/Integer;->intValue()I
 
     move-result v2
 
-    if-ltz v2, :cond_38
+    if-ltz v2, :cond_31
 
     invoke-virtual {v11}, Ljava/lang/Integer;->intValue()I
 
@@ -2272,9 +1995,9 @@
 
     const/16 v3, 0x8
 
-    if-le v2, v3, :cond_39
+    if-le v2, v3, :cond_2f
 
-    :cond_38
+    :cond_31
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
     const-string v5, "PortraitValue"
@@ -2301,40 +2024,7 @@
 
     goto :goto_6
 
-    :cond_39
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getPathRuleInfo()Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/data/PathRuleInfo;->getPathRuleId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->isSaveRule(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_36
-
-    new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    invoke-direct {v2, v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;Lcom/samsung/android/sdk/bixby/data/State;)V
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mBixbyState:Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
-
-    goto :goto_6
-
-    :cond_3a
+    :cond_32
     const-string v2, "FixRedEye"
 
     move-object/from16 v0, v17
@@ -2343,7 +2033,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3c
+    if-eqz v2, :cond_34
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -2371,13 +2061,13 @@
 
     move-result v2
 
-    if-nez v2, :cond_3b
+    if-nez v2, :cond_33
 
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->sendNoFaceResponse()V
 
     goto/16 :goto_1
 
-    :cond_3b
+    :cond_33
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
@@ -2392,7 +2082,7 @@
 
     goto/16 :goto_1
 
-    :cond_3c
+    :cond_34
     const-string v2, "Decoration"
 
     move-object/from16 v0, v17
@@ -2401,7 +2091,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3d
+    if-eqz v2, :cond_35
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -2449,7 +2139,7 @@
 
     goto/16 :goto_1
 
-    :cond_3d
+    :cond_35
     const-string v2, "AddImage"
 
     move-object/from16 v0, v17
@@ -2458,7 +2148,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3e
+    if-eqz v2, :cond_36
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -2492,7 +2182,7 @@
 
     goto/16 :goto_1
 
-    :cond_3e
+    :cond_36
     const-string v2, "Sticker"
 
     move-object/from16 v0, v17
@@ -2501,7 +2191,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3f
+    if-eqz v2, :cond_37
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -2535,7 +2225,7 @@
 
     goto/16 :goto_1
 
-    :cond_3f
+    :cond_37
     const-string v2, "Label"
 
     move-object/from16 v0, v17
@@ -2544,7 +2234,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_40
+    if-eqz v2, :cond_38
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -2578,7 +2268,7 @@
 
     goto/16 :goto_1
 
-    :cond_40
+    :cond_38
     const-string v2, "Draw"
 
     move-object/from16 v0, v17
@@ -2587,7 +2277,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_41
+    if-eqz v2, :cond_39
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -2621,7 +2311,7 @@
 
     goto/16 :goto_1
 
-    :cond_41
+    :cond_39
     const-string v2, "Mosaic"
 
     move-object/from16 v0, v17
@@ -2630,7 +2320,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_42
+    if-eqz v2, :cond_3a
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -2664,7 +2354,7 @@
 
     goto/16 :goto_1
 
-    :cond_42
+    :cond_3a
     const-string v2, "PhotoApply"
 
     move-object/from16 v0, v17
@@ -2673,8 +2363,39 @@
 
     move-result v2
 
-    if-eqz v2, :cond_43
+    if-nez v2, :cond_3b
 
+    const-string v2, "PerspectiveApply"
+
+    move-object/from16 v0, v17
+
+    invoke-static {v0, v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->checkEquals(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_3b
+
+    const-string v2, "LassoApply"
+
+    move-object/from16 v0, v17
+
+    invoke-static {v0, v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->checkEquals(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_3b
+
+    const-string v2, "DrawApply"
+
+    move-object/from16 v0, v17
+
+    invoke-static {v0, v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->checkEquals(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3c
+
+    :cond_3b
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
     move-object/from16 v0, p0
@@ -2697,7 +2418,7 @@
 
     goto/16 :goto_1
 
-    :cond_43
+    :cond_3c
     const-string v2, "PhotoSave"
 
     move-object/from16 v0, v17
@@ -2706,7 +2427,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_44
+    if-eqz v2, :cond_3d
 
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
@@ -2730,7 +2451,7 @@
 
     goto/16 :goto_1
 
-    :cond_44
+    :cond_3d
     new-instance v2, Lcom/sec/android/mimage/photoretouching/lpe/util/BixbyHandler$BixbyState;
 
     move-object/from16 v0, p0

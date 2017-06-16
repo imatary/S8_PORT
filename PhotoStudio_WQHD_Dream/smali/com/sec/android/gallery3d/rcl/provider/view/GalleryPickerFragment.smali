@@ -40,7 +40,7 @@
 
 .field private static final TAG:Ljava/lang/String; = "GalleryPickerFragment"
 
-.field public static final VERSION:Ljava/lang/String; = "1.1.10"
+.field public static final VERSION:Ljava/lang/String; = "1.1.12"
 
 
 # instance fields
@@ -76,6 +76,8 @@
 
 .field private mIsFullLoaded:Z
 
+.field private mIsMaxCount:Z
+
 .field private mMaxFileSize:I
 
 .field private mMaxFileSizeToast:Landroid/widget/Toast;
@@ -109,9 +111,9 @@
 .method public constructor <init>()V
     .locals 5
 
-    const/4 v0, 0x0
-
     const/high16 v4, -0x1000000
+
+    const/4 v0, 0x0
 
     const/4 v3, -0x1
 
@@ -128,6 +130,8 @@
     iput-boolean v0, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mPickerViewIsExpanded:Z
 
     iput-boolean v2, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsBottomLayoutShown:Z
+
+    iput-boolean v0, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsMaxCount:Z
 
     iput v2, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mContentType:I
 
@@ -246,6 +250,14 @@
     return-void
 .end method
 
+.method static synthetic access$1000(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->setFluidScrollEnabled()V
+
+    return-void
+.end method
+
 .method static synthetic access$200(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Lcom/sec/android/gallery3d/rcl/provider/adapter/GalleryPickerViewAdapter;
     .locals 1
 
@@ -262,7 +274,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Landroid/view/View;IZ)V
+.method static synthetic access$402(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsMaxCount:Z
+
+    return p1
+.end method
+
+.method static synthetic access$500(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Landroid/view/View;IZ)V
     .locals 0
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->updateSelection(Landroid/view/View;IZ)V
@@ -270,7 +290,7 @@
     return-void
 .end method
 
-.method static synthetic access$500(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
+.method static synthetic access$600(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mPickerGridView:Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;
@@ -278,7 +298,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$600(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Z
+.method static synthetic access$700(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsFirstLoading:Z
@@ -286,7 +306,7 @@
     return v0
 .end method
 
-.method static synthetic access$602(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Z)Z
+.method static synthetic access$702(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsFirstLoading:Z
@@ -294,7 +314,7 @@
     return p1
 .end method
 
-.method static synthetic access$702(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Z)Z
+.method static synthetic access$802(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsFullLoaded:Z
@@ -302,18 +322,10 @@
     return p1
 .end method
 
-.method static synthetic access$800(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->setTotalSelectedCount()V
-
-    return-void
-.end method
-
 .method static synthetic access$900(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->setFluidScrollEnabled()V
+    invoke-direct {p0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->setTotalSelectedCount()V
 
     return-void
 .end method
@@ -1775,7 +1787,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_9
+    if-eqz v4, :cond_a
 
     invoke-virtual {v0, v10}, Landroid/widget/CheckBox;->setChecked(Z)V
 
@@ -1785,7 +1797,7 @@
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->setTotalSelectedCount()V
 
-    if-nez p3, :cond_8
+    if-nez p3, :cond_9
 
     invoke-virtual {v2}, Lcom/sec/android/gallery3d/rcl/provider/data/mediaitem/CrossMediaItem;->getContentUri()Landroid/net/Uri;
 
@@ -1793,6 +1805,7 @@
 
     invoke-direct {p0, v10, v4}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->sendItemSelectionCallback(ZLandroid/net/Uri;)V
 
+    :cond_8
     :goto_1
     iget-boolean v4, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsBottomLayoutShown:Z
 
@@ -1804,17 +1817,17 @@
 
     move-result-object v3
 
-    if-eqz v3, :cond_c
+    if-eqz v3, :cond_e
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v4
 
-    if-nez v4, :cond_c
+    if-nez v4, :cond_e
 
     iget v4, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mSelectionMode:I
 
-    if-ne v4, v11, :cond_c
+    if-ne v4, v11, :cond_e
 
     const-string v4, "GalleryPickerFragment"
 
@@ -1826,7 +1839,7 @@
 
     goto/16 :goto_0
 
-    :cond_8
+    :cond_9
     iget-object v4, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mGalleryPickerViewAdapter:Lcom/sec/android/gallery3d/rcl/provider/adapter/GalleryPickerViewAdapter;
 
     invoke-virtual {v2}, Lcom/sec/android/gallery3d/rcl/provider/data/mediaitem/CrossMediaItem;->getContentUri()Landroid/net/Uri;
@@ -1843,12 +1856,14 @@
 
     invoke-virtual {v4, v5, v10}, Lcom/sec/android/gallery3d/rcl/provider/adapter/GalleryPickerViewAdapter;->updateDeselectedItemByMutiSelection(Landroid/net/Uri;Z)V
 
+    iput-boolean v10, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsMaxCount:Z
+
     goto :goto_1
 
-    :cond_9
+    :cond_a
     iget v4, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mMaxPickCount:I
 
-    if-eq v4, v7, :cond_a
+    if-eq v4, v7, :cond_c
 
     iget v4, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mMaxPickCount:I
 
@@ -1856,7 +1871,7 @@
 
     move-result v5
 
-    if-gt v4, v5, :cond_a
+    if-gt v4, v5, :cond_c
 
     const-string v4, "GalleryPickerFragment"
 
@@ -1890,6 +1905,15 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    if-eqz p3, :cond_b
+
+    if-eqz p3, :cond_8
+
+    iget-boolean v4, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsMaxCount:Z
+
+    if-nez v4, :cond_8
+
+    :cond_b
     invoke-virtual {p0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->getContext()Landroid/content/Context;
 
     move-result-object v4
@@ -1920,9 +1944,13 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
+    if-eqz p3, :cond_8
+
+    iput-boolean v9, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsMaxCount:Z
+
     goto/16 :goto_1
 
-    :cond_a
+    :cond_c
     invoke-virtual {v0, v9}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mGalleryPickerViewAdapter:Lcom/sec/android/gallery3d/rcl/provider/adapter/GalleryPickerViewAdapter;
@@ -1931,7 +1959,7 @@
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->setTotalSelectedCount()V
 
-    if-nez p3, :cond_b
+    if-nez p3, :cond_d
 
     invoke-virtual {v2}, Lcom/sec/android/gallery3d/rcl/provider/data/mediaitem/CrossMediaItem;->getContentUri()Landroid/net/Uri;
 
@@ -1941,7 +1969,7 @@
 
     goto/16 :goto_1
 
-    :cond_b
+    :cond_d
     iget-object v4, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mGalleryPickerViewAdapter:Lcom/sec/android/gallery3d/rcl/provider/adapter/GalleryPickerViewAdapter;
 
     invoke-virtual {v2}, Lcom/sec/android/gallery3d/rcl/provider/data/mediaitem/CrossMediaItem;->getContentUri()Landroid/net/Uri;
@@ -1960,7 +1988,7 @@
 
     goto/16 :goto_1
 
-    :cond_c
+    :cond_e
     const-string v4, "GalleryPickerFragment"
 
     const-string v5, "onCreateView GalleryPickerButtonVisibility false"
@@ -2188,7 +2216,7 @@
 
     const-string v0, "GalleryPickerFragment"
 
-    const-string v1, "1.1.10"
+    const-string v1, "1.1.12"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -3071,6 +3099,14 @@
     move-object/from16 v1, p0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/rcl/provider/view/PickerGridView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
+
+    const/16 v17, 0x0
+
+    move/from16 v0, v17
+
+    move-object/from16 v1, p0
+
+    iput-boolean v0, v1, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsMaxCount:Z
 
     const-string v17, "GalleryPickerFragment"
 
@@ -4085,13 +4121,15 @@
 .end method
 
 .method public onResume()V
-    .locals 2
+    .locals 3
+
+    const/4 v2, 0x0
 
     invoke-super {p0}, Lcom/samsung/android/sdk/rcl/RclExpansionFragment;->onResume()V
 
     const-string v0, "GalleryPickerFragment"
 
-    const-string v1, "1.1.10"
+    const-string v1, "1.1.12"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -4101,15 +4139,15 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const/4 v0, 0x0
-
-    invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->loadData(Z)V
+    invoke-direct {p0, v2}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->loadData(Z)V
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->updateGalleryPickerButtonView()V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mGalleryPickerViewAdapter:Lcom/sec/android/gallery3d/rcl/provider/adapter/GalleryPickerViewAdapter;
 
     invoke-virtual {v0}, Lcom/sec/android/gallery3d/rcl/provider/adapter/GalleryPickerViewAdapter;->notifyDataSetChanged()V
+
+    iput-boolean v2, p0, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->mIsMaxCount:Z
 
     return-void
 .end method

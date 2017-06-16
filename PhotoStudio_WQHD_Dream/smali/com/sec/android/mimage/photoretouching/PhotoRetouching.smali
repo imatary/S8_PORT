@@ -598,7 +598,7 @@
 
     invoke-direct {v2, p0}, Lcom/sec/android/mimage/photoretouching/PhotoRetouching$11;-><init>(Lcom/sec/android/mimage/photoretouching/PhotoRetouching;)V
 
-    invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
@@ -1259,21 +1259,34 @@
 
     move-result v3
 
-    if-nez v3, :cond_4
+    if-nez v3, :cond_5
 
     invoke-static {p0}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->hasPermissionDialogShownPE(Landroid/content/Context;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_7
+    if-nez v3, :cond_3
 
+    invoke-static {p0}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->hasPermissionDialogShownAGIF(Landroid/content/Context;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_3
+
+    invoke-static {p0}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->hasPermissionDialogShownCollage(Landroid/content/Context;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_8
+
+    :cond_3
     const-string v3, "android.permission.READ_EXTERNAL_STORAGE"
 
     invoke-virtual {p0, v3}, Lcom/sec/android/mimage/photoretouching/PhotoRetouching;->shouldShowRequestPermissionRationale(Ljava/lang/String;)Z
 
     move-result v3
 
-    if-nez v3, :cond_3
+    if-nez v3, :cond_4
 
     const-string v3, "android.permission.WRITE_EXTERNAL_STORAGE"
 
@@ -1281,9 +1294,9 @@
 
     move-result v3
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_7
 
-    :cond_3
+    :cond_4
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v3
@@ -1298,21 +1311,21 @@
 
     invoke-virtual {p0, v3, v5}, Lcom/sec/android/mimage/photoretouching/PhotoRetouching;->requestPermissions([Ljava/lang/String;I)V
 
-    :cond_4
+    :cond_5
     :goto_0
     iget-boolean v3, p0, Lcom/sec/android/mimage/photoretouching/PhotoRetouching;->permissionGranted:Z
 
-    if-eqz v3, :cond_5
-
-    :cond_5
-    return-void
+    if-eqz v3, :cond_6
 
     :cond_6
+    return-void
+
+    :cond_7
     invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/PhotoRetouching;->displayCustomDialogue()V
 
     goto :goto_0
 
-    :cond_7
+    :cond_8
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v3
@@ -2096,7 +2109,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0206aa
+    const v2, 0x7f0206a8
 
     invoke-static {v1, v2}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 

@@ -964,7 +964,7 @@
 .method private setCancelDoneShapeBackground()V
     .locals 2
 
-    const v1, 0x7f0206b7
+    const v1, 0x7f0206b5
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/Decoration/stickermanager/StickerManagerActivity;->mActivityContext:Landroid/content/Context;
 
@@ -1570,7 +1570,7 @@
 
     const v12, 0x7f0e0061
 
-    const v2, 0x7f0805e7
+    const v2, 0x7f0805e9
 
     const v4, 0x7f0800e6
 

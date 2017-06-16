@@ -1120,7 +1120,7 @@
 .method public static caculaterBottomButtonWidth(Landroid/view/View;Landroid/content/Context;IZ)V
     .locals 11
 
-    const v6, 0x7f0805e7
+    const v6, 0x7f0805e9
 
     const v10, 0x7f0800e7
 
@@ -1136,7 +1136,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_2
+    if-eqz v5, :cond_1
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1148,7 +1148,7 @@
 
     iget v5, v5, Landroid/content/res/Configuration;->orientation:I
 
-    if-ne v5, v7, :cond_1
+    if-ne v5, v7, :cond_0
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1169,27 +1169,12 @@
 
     move-result-object v5
 
-    const v6, 0x7f0805ab
+    const v6, 0x7f0805ad
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v2
 
-    const/4 v5, 0x7
-
-    if-ne p2, v5, :cond_0
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v5
-
-    const v6, 0x7f0805ac
-
-    invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v2
-
-    :cond_0
     const/4 v3, 0x0
 
     mul-int v3, v2, p2
@@ -1204,7 +1189,7 @@
 
     add-int/2addr v5, v3
 
-    if-le v5, v4, :cond_5
+    if-le v5, v4, :cond_4
 
     rem-int v5, v3, p2
 
@@ -1225,7 +1210,7 @@
 
     iget v5, v5, Landroid/content/res/Configuration;->orientation:I
 
-    if-ne v5, v7, :cond_6
+    if-ne v5, v7, :cond_5
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
 
@@ -1238,7 +1223,7 @@
 
     return-void
 
-    :cond_1
+    :cond_0
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
@@ -1269,8 +1254,8 @@
 
     goto :goto_0
 
-    :cond_2
-    if-nez p3, :cond_3
+    :cond_1
+    if-nez p3, :cond_2
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1282,9 +1267,9 @@
 
     iget v5, v5, Landroid/content/res/Configuration;->orientation:I
 
-    if-ne v5, v7, :cond_4
+    if-ne v5, v7, :cond_3
 
-    :cond_3
+    :cond_2
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
@@ -1297,7 +1282,7 @@
 
     goto :goto_0
 
-    :cond_4
+    :cond_3
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
@@ -1328,14 +1313,14 @@
 
     goto/16 :goto_0
 
-    :cond_5
+    :cond_4
     mul-int/lit8 v5, v1, 0x2
 
     sub-int v3, v4, v5
 
     goto :goto_1
 
-    :cond_6
+    :cond_5
     invoke-virtual {v0, v8}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
 
     invoke-virtual {v0, v8}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
@@ -6682,7 +6667,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080607
+    const v8, 0x7f08060a
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -6696,7 +6681,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f08059d
+    const v8, 0x7f08059f
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -6776,7 +6761,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f080606
+    const v8, 0x7f080609
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -7938,6 +7923,30 @@
 
     move-result v1
 
+    if-nez v1, :cond_0
+
+    const-string v1, "c10p"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "veneno"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "j3y17q"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
     if-eqz v1, :cond_1
 
     :cond_0
@@ -8313,6 +8322,14 @@
     if-nez v1, :cond_0
 
     const-string v1, "jadeltezc"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "kellyltectc"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -10113,6 +10130,12 @@
     const-string v1, "SEC_FLOATING_FEATURE_GALLERY_SUPPORT_AUTO_ADJUST"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->isGreatUX()Z
 
     move-result v0
 

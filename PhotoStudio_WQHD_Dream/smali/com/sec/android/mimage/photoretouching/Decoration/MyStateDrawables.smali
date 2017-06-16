@@ -70,7 +70,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f020745
+    const v4, 0x7f020743
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -98,7 +98,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f020741
+    const v4, 0x7f02073f
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -120,7 +120,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f02073c
+    const v4, 0x7f02073a
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -136,7 +136,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f020748
+    const v4, 0x7f020746
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -152,7 +152,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0c00c1
+    const v4, 0x7f0c00c2
 
     iget-object v5, p0, Lcom/sec/android/mimage/photoretouching/Decoration/MyStateDrawables;->mContext:Landroid/content/Context;
 
@@ -230,7 +230,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f020749
+    const v4, 0x7f020747
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -246,7 +246,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f020747
+    const v4, 0x7f020745
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

@@ -789,7 +789,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f080527
+    const v3, 0x7f080528
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateViewGroupParamsForView(Landroid/content/Context;Landroid/view/View;II)V
 
@@ -1632,7 +1632,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f080528
+    const v2, 0x7f080529
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

@@ -2632,7 +2632,7 @@
 
     if-eqz v1, :cond_1
 
-    const v0, 0x7f02047c
+    const v0, 0x7f02047a
 
     :cond_0
     :goto_0
@@ -2655,7 +2655,7 @@
 
     if-eqz v1, :cond_2
 
-    const v0, 0x7f020479
+    const v0, 0x7f020477
 
     goto :goto_0
 
@@ -2676,7 +2676,7 @@
 
     if-eqz v1, :cond_3
 
-    const v0, 0x7f02047a
+    const v0, 0x7f020478
 
     goto :goto_0
 
@@ -2697,7 +2697,7 @@
 
     if-eqz v1, :cond_4
 
-    const v0, 0x7f02047d
+    const v0, 0x7f02047b
 
     goto :goto_0
 
@@ -2718,7 +2718,7 @@
 
     if-eqz v1, :cond_5
 
-    const v0, 0x7f02047b
+    const v0, 0x7f020479
 
     goto :goto_0
 
@@ -2739,7 +2739,7 @@
 
     if-eqz v1, :cond_6
 
-    const v0, 0x7f02047c
+    const v0, 0x7f02047a
 
     goto :goto_0
 
@@ -2760,7 +2760,7 @@
 
     if-eqz v1, :cond_0
 
-    const v0, 0x7f02047d
+    const v0, 0x7f02047b
 
     goto :goto_0
 .end method
@@ -3757,7 +3757,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f08058c
+    const v7, 0x7f08058e
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -4801,7 +4801,7 @@
 
     const/4 v6, 0x0
 
-    const v5, 0x7f0805ee
+    const v5, 0x7f0805f1
 
     const/4 v2, 0x0
 
@@ -5011,7 +5011,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0206be
+    const v3, 0x7f0206bc
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -5026,7 +5026,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020766
+    const v3, 0x7f020764
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -6820,7 +6820,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0805ee
+    const v9, 0x7f0805f1
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -7505,7 +7505,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0805ee
+    const v12, 0x7f0805f1
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -9229,7 +9229,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f020737
+    const v4, 0x7f020735
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -9290,13 +9290,13 @@
 
     const v4, 0x7f0804be
 
-    const v5, 0x7f0805ee
+    const v5, 0x7f0805f1
 
     const/4 v6, 0x0
 
-    const v7, 0x7f0805ee
+    const v7, 0x7f0805f1
 
-    const v8, 0x7f0805ee
+    const v8, 0x7f0805f1
 
     invoke-static/range {v1 .. v8}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateLinearLayoutParamsForView(Landroid/content/Context;Landroid/view/View;IIIIII)V
 
@@ -9326,7 +9326,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0805ff
+    const v3, 0x7f080602
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -9344,7 +9344,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0805ff
+    const v3, 0x7f080602
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -9398,7 +9398,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f080584
+    const v3, 0x7f080586
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -9420,7 +9420,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f080585
+    const v4, 0x7f080587
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -9454,13 +9454,13 @@
 
     const v6, 0x7f0804be
 
-    const v7, 0x7f0805ee
+    const v7, 0x7f0805f1
 
     const/4 v8, 0x0
 
-    const v9, 0x7f0805ee
+    const v9, 0x7f0805f1
 
-    const v10, 0x7f0805ee
+    const v10, 0x7f0805f1
 
     invoke-static/range {v3 .. v10}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->updateLinearLayoutParams(Landroid/content/Context;IIIIIII)V
 
@@ -9893,7 +9893,7 @@
 
     const v10, 0x7f080268
 
-    const v9, 0x7f0805ed
+    const v9, 0x7f0805f0
 
     iget-object v7, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Effects;->mEffectThumbsParent:Landroid/view/ViewGroup;
 
@@ -10035,7 +10035,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0805ee
+    const v6, 0x7f0805f1
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

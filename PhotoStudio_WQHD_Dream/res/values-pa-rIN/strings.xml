@@ -11,7 +11,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">ਅਨੁਪ੍ਰਯੋਗ ਖੋਲ੍ਹਣ ਵਿੱਚ ਅਸਮਰੱਥ। ਡਿਵਾਈਸ ਸਟੋਰੇਜ ਵਿੱਚ ਕੁਝ ਫਾਈਲਾਂ ਮਿਟਾਓ ਅਤੇ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">ਸੁਰੱਖਿਆ ਨੀਤੀ ਕੈਮਰੇ ਦੀ ਵਰਤੋਂ ਨੂੰ ਪ੍ਰਤੀਬੰਧਿਤ ਕਰਦੀ ਹੈ।</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">ਕੈਮਰਾ ਦਾ ਉਪਯੋਗ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ।</string>
     <string name="__cp__cannot_start_camera_msg">ਕਾੱਲਸ ਦੇ ਦੌਰਾਨ ਕੈਮਰੇ ਦਾ ਉਪਯੋਗ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ।</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">ਵੀਡਿਓ ਕਾੱਲਸ ਦੌਰਾਨ ਕੈਮਰਾ ਖੋਲ੍ਹਣ ਵਿੱਚ ਅਸਮਰੱਥ।</string>
     <string name="__cp__flash">ਫਲੈਸ਼</string>

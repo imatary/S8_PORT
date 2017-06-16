@@ -42,7 +42,7 @@
     iget-object v4, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$18;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
-    invoke-static {v4}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$600(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+    invoke-static {v4}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$700(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     move-result-object v4
 
@@ -121,7 +121,7 @@
     iget-object v5, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager$18;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
     # getter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->mLayerManager:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
-    invoke-static {v5}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$600(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
+    invoke-static {v5}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$700(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;)Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     move-result-object v5
 
@@ -134,7 +134,7 @@
     move-result-object v4
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->savePath:Ljava/lang/String;
-    invoke-static {v2, v4}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1402(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v4}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->access$1502(Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

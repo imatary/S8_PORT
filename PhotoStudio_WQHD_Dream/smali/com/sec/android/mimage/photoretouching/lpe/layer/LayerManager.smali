@@ -249,7 +249,23 @@
     return-object v0
 .end method
 
-.method static synthetic access$1000(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$LayerListener;
+.method static synthetic access$1000(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLPreviewView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mPreviewView:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLPreviewView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1100(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLLayerLayout;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mLayerLayout:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLLayerLayout;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1200(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$LayerListener;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mLayerListener:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$LayerListener;
@@ -257,7 +273,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1102(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Lcom/sec/android/mimage/photoretouching/lpe/util/HelpPopup;)Lcom/sec/android/mimage/photoretouching/lpe/util/HelpPopup;
+.method static synthetic access$1302(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Lcom/sec/android/mimage/photoretouching/lpe/util/HelpPopup;)Lcom/sec/android/mimage/photoretouching/lpe/util/HelpPopup;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mHelpPopup:Lcom/sec/android/mimage/photoretouching/lpe/util/HelpPopup;
@@ -265,7 +281,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$1202(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Z)Z
+.method static synthetic access$1402(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mIsImageLoaded:Z
@@ -273,7 +289,7 @@
     return p1
 .end method
 
-.method static synthetic access$1300(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)V
+.method static synthetic access$1500(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->invalidInput(I)V
@@ -281,7 +297,7 @@
     return-void
 .end method
 
-.method static synthetic access$1402(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
+.method static synthetic access$1602(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
     .locals 0
 
     iput p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mExecutorMode:I
@@ -289,7 +305,7 @@
     return p1
 .end method
 
-.method static synthetic access$1500(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/HistoryManager;
+.method static synthetic access$1700(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/HistoryManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mHistoryManager:Lcom/sec/android/mimage/photoretouching/lpe/util/HistoryManager;
@@ -297,7 +313,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1600(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)V
+.method static synthetic access$1800(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->prepareEffectThumbs()V
@@ -305,28 +321,12 @@
     return-void
 .end method
 
-.method static synthetic access$1702(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Z)Z
+.method static synthetic access$1902(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->isGifStickerAdded:Z
 
     return p1
-.end method
-
-.method static synthetic access$1800(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->pickGalleryImage()V
-
-    return-void
-.end method
-
-.method static synthetic access$1900(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->layerClicked(I)V
-
-    return-void
 .end method
 
 .method static synthetic access$200(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
@@ -340,7 +340,7 @@
 .method static synthetic access$2000(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->updateSelectionBorder()V
+    invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->pickGalleryImage()V
 
     return-void
 .end method
@@ -348,12 +348,28 @@
 .method static synthetic access$2100(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)V
     .locals 0
 
+    invoke-direct {p0, p1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->layerClicked(I)V
+
+    return-void
+.end method
+
+.method static synthetic access$2200(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->updateSelectionBorder()V
+
+    return-void
+.end method
+
+.method static synthetic access$2300(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)V
+    .locals 0
+
     invoke-direct {p0, p1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->deleteLayer(I)V
 
     return-void
 .end method
 
-.method static synthetic access$2200(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Z
+.method static synthetic access$2400(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->isLauncher:Z
@@ -361,7 +377,7 @@
     return v0
 .end method
 
-.method static synthetic access$2302(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
+.method static synthetic access$2502(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
     .locals 0
 
     iput p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->layerCounter:I
@@ -369,7 +385,7 @@
     return p1
 .end method
 
-.method static synthetic access$2400(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Landroid/content/Intent;)V
+.method static synthetic access$2600(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Landroid/content/Intent;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->processInput(Landroid/content/Intent;)V
@@ -377,7 +393,7 @@
     return-void
 .end method
 
-.method static synthetic access$2502(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Landroid/content/Intent;)Landroid/content/Intent;
+.method static synthetic access$2702(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Landroid/content/Intent;)Landroid/content/Intent;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mIntent:Landroid/content/Intent;
@@ -385,20 +401,12 @@
     return-object p1
 .end method
 
-.method static synthetic access$2602(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Ljava/lang/Runnable;)Ljava/lang/Runnable;
+.method static synthetic access$2802(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mPendingRunnable:Ljava/lang/Runnable;
 
     return-object p1
-.end method
-
-.method static synthetic access$2700(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mActionBarManager:Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;
-
-    return-object v0
 .end method
 
 .method static synthetic access$300(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)I
@@ -409,7 +417,23 @@
     return v0
 .end method
 
-.method static synthetic access$400(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Z
+.method static synthetic access$400(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mActionBarManager:Lcom/sec/android/mimage/photoretouching/lpe/util/ActionBarManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$502(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mMenuShown:Z
+
+    return p1
+.end method
+
+.method static synthetic access$600(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mExitApp:Z
@@ -417,7 +441,7 @@
     return v0
 .end method
 
-.method static synthetic access$402(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Z)Z
+.method static synthetic access$602(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mExitApp:Z
@@ -425,7 +449,7 @@
     return p1
 .end method
 
-.method static synthetic access$500(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/DialogManager;
+.method static synthetic access$700(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/util/DialogManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mDialogManager:Lcom/sec/android/mimage/photoretouching/lpe/util/DialogManager;
@@ -433,7 +457,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$600(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLBasicUI;
+.method static synthetic access$800(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLBasicUI;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mBasicUI:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLBasicUI;
@@ -441,7 +465,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$700(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)I
+.method static synthetic access$900(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mCurrLayer:I
@@ -449,28 +473,12 @@
     return v0
 .end method
 
-.method static synthetic access$702(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
+.method static synthetic access$902(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
     .locals 0
 
     iput p1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mCurrLayer:I
 
     return p1
-.end method
-
-.method static synthetic access$800(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLPreviewView;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mPreviewView:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLPreviewView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$900(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLLayerLayout;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mLayerLayout:Lcom/sec/android/mimage/photoretouching/lpe/gl/widgets/GLLayerLayout;
-
-    return-object v0
 .end method
 
 .method private deleteLayer(I)V
@@ -1586,7 +1594,7 @@
 
     move-result v15
 
-    if-ge v7, v15, :cond_16
+    if-ge v7, v15, :cond_18
 
     invoke-virtual {v8, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1764,18 +1772,47 @@
 
     invoke-static {v15, v13}, Lcom/sec/android/mimage/photoretouching/lpe/util/Utils;->getPath(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
 
-    move-result-object v15
+    move-result-object v11
 
-    invoke-virtual {v8, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :goto_7
+    if-nez v11, :cond_16
 
-    goto/16 :goto_2
+    const/4 v15, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v15}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->invalidInput(I)V
+
+    goto/16 :goto_0
 
     :cond_15
     invoke-virtual {v13}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
-    move-result-object v15
+    move-result-object v11
 
-    invoke-virtual {v8, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    goto :goto_7
+
+    :cond_16
+    new-instance v15, Ljava/io/File;
+
+    invoke-direct {v15, v11}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v15}, Ljava/io/File;->exists()Z
+
+    move-result v15
+
+    if-nez v15, :cond_17
+
+    const/4 v15, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v15}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->invalidInput(I)V
+
+    goto/16 :goto_0
+
+    :cond_17
+    invoke-virtual {v8, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_2
 
@@ -1786,7 +1823,7 @@
 
     goto/16 :goto_3
 
-    :cond_16
+    :cond_18
     invoke-interface {v4}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     new-instance v15, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$17;
@@ -2225,19 +2262,56 @@
 
     const-string v0, "PhotoApply"
 
+    invoke-static {p1, v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->checkEquals(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    const-string v0, "DrawApply"
+
+    invoke-static {p1, v0}, Lcom/sec/android/mimage/photoretouching/lpe/util/BixByUtils;->checkEquals(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    :cond_2
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mStateManager:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->doDoneFromExecutor(Z)V
+
+    goto :goto_0
+
+    :cond_3
+    const-string v0, "PerspectiveApply"
+
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-nez v0, :cond_4
 
+    const-string v0, "LassoApply"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    :cond_4
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mStateManager:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
-    invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->doDoneFromExecutor()V
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->doDoneFromExecutor(Z)V
 
     goto :goto_0
 
-    :cond_2
+    :cond_5
     const-string v0, "PhotoSave"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2252,7 +2326,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_6
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mStateManager:Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;
 
@@ -2262,7 +2336,7 @@
 
     goto :goto_0
 
-    :cond_3
+    :cond_6
     sget-object v0, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->STATE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-virtual {p0, v2, v0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->sendResponseToExecutor(ILcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V

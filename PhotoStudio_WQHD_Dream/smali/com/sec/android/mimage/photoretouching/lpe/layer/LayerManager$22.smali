@@ -123,7 +123,7 @@
     invoke-direct {v1, p0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$22$2;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$22;)V
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mPendingRunnable:Ljava/lang/Runnable;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2602(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Ljava/lang/Runnable;)Ljava/lang/Runnable;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2802(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Ljava/lang/Runnable;)Ljava/lang/Runnable;
 
     return-void
 .end method
@@ -201,7 +201,7 @@
     invoke-direct {v1, p0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$22$1;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$22;)V
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mPendingRunnable:Ljava/lang/Runnable;
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2602(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Ljava/lang/Runnable;)Ljava/lang/Runnable;
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2802(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;Ljava/lang/Runnable;)Ljava/lang/Runnable;
 
     return-void
 .end method

@@ -46,7 +46,7 @@
     iget v1, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$5;->val$mode:I
 
     # setter for: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->mExecutorMode:I
-    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1402(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
+    invoke-static {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1602(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;I)I
 
     iget v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$5;->val$mode:I
 

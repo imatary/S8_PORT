@@ -848,7 +848,7 @@
     :cond_2
     invoke-interface {v10}, Landroid/database/Cursor;->moveToNext()Z
     :try_end_0
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result v2
@@ -881,7 +881,7 @@
 
     invoke-static {v2, v6, v7, v0}, Lcom/sec/android/gallery3d/rcl/provider/data/mediaitem/CrossMediaItem$MediaItemFactory;->getInstance(Landroid/content/Context;III)Lcom/sec/android/gallery3d/rcl/provider/data/mediaitem/CrossMediaItem;
     :try_end_2
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     move-result-object v18
@@ -917,7 +917,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v11}, Landroid/database/sqlite/SQLiteException;->toString()Ljava/lang/String;
+    invoke-virtual {v11}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
     move-result-object v7
 

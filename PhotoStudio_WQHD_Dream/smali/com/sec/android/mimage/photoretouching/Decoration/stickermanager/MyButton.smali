@@ -340,7 +340,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c00b4
+    const v2, 0x7f0c00b5
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -553,7 +553,7 @@
 
     iget-object v6, p0, Lcom/sec/android/mimage/photoretouching/Decoration/stickermanager/MyButton;->mCheckBox:Landroid/widget/CheckBox;
 
-    const v7, 0x7f020714
+    const v7, 0x7f0207ba
 
     invoke-virtual {v6, v7}, Landroid/widget/CheckBox;->setBackgroundResource(I)V
 
@@ -578,7 +578,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0c00b4
+    const v8, 0x7f0c00b5
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -641,7 +641,7 @@
 
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/Decoration/stickermanager/MyButton;->mCheckBox:Landroid/widget/CheckBox;
 
-    const v1, 0x7f020714
+    const v1, 0x7f0207ba
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setBackgroundResource(I)V
 
@@ -1029,7 +1029,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f080581
+    const v10, 0x7f080583
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1155,22 +1155,6 @@
     move-result-object v6
 
     check-cast v6, Landroid/widget/TextView;
-
-    iget-object v9, p0, Lcom/sec/android/mimage/photoretouching/Decoration/stickermanager/MyButton;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v9}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v9
-
-    const v10, 0x7f0805fe
-
-    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v9
-
-    sub-int v9, v8, v9
-
-    invoke-virtual {v6, v9}, Landroid/widget/TextView;->setWidth(I)V
 
     const v9, 0x7f0a0187
 

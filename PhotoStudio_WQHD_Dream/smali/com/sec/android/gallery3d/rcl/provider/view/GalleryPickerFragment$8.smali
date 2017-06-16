@@ -51,7 +51,7 @@
     const/4 v1, 0x0
 
     # invokes: Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->updateSelection(Landroid/view/View;IZ)V
-    invoke-static {v0, p2, p3, v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$400(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Landroid/view/View;IZ)V
+    invoke-static {v0, p2, p3, v1}, Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;->access$500(Lcom/sec/android/gallery3d/rcl/provider/view/GalleryPickerFragment;Landroid/view/View;IZ)V
 
     return-void
 .end method

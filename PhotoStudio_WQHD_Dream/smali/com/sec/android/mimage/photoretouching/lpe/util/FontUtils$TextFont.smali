@@ -38,6 +38,8 @@
 
 .field public static final enum ROBOTO_REGULAR:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
+.field public static final enum ROBOTO_REGULAR_ITALIC:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+
 .field public static final enum ROBOTO_THIN:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
 .field public static final enum ROBOTO_THIN_ITALIC:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
@@ -127,7 +129,17 @@
 
     sput-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_THIN_ITALIC:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
-    const/16 v0, 0x8
+    new-instance v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+
+    const-string v1, "ROBOTO_REGULAR_ITALIC"
+
+    const/16 v2, 0x8
+
+    invoke-direct {v0, v1, v2}, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR_ITALIC:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+
+    const/16 v0, 0x9
 
     new-array v0, v0, [Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
@@ -166,6 +178,12 @@
     const/4 v1, 0x7
 
     sget-object v2, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_THIN_ITALIC:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x8
+
+    sget-object v2, Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;->ROBOTO_REGULAR_ITALIC:Lcom/sec/android/mimage/photoretouching/lpe/util/FontUtils$TextFont;
 
     aput-object v2, v0, v1
 

@@ -46,7 +46,7 @@
     iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager$13;->this$0:Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;
 
     # invokes: Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->pickGalleryImage()V
-    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$1800(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)V
+    invoke-static {v0}, Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;->access$2000(Lcom/sec/android/mimage/photoretouching/lpe/layer/LayerManager;)V
 
     return-void
 .end method

@@ -1174,9 +1174,9 @@
 
     invoke-virtual {v0}, Lcom/sec/android/mimage/photoretouching/lpe/core/ImageData;->resetOriginal()V
 
-    new-instance v1, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait$9;
+    new-instance v1, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait$10;
 
-    invoke-direct {v1, p0, v0, p1}, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait$9;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;Lcom/sec/android/mimage/photoretouching/lpe/core/ImageData;Lcom/sec/android/mimage/photoretouching/lpe/core/HistoryEvent;)V
+    invoke-direct {v1, p0, v0, p1}, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait$10;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;Lcom/sec/android/mimage/photoretouching/lpe/core/ImageData;Lcom/sec/android/mimage/photoretouching/lpe/core/HistoryEvent;)V
 
     const/4 v2, 0x0
 
@@ -3309,21 +3309,7 @@
     goto/16 :goto_1
 
     :cond_9
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;->mContext:Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
-
-    move-object/from16 v18, v0
-
-    new-instance v19, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait$5;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    invoke-direct {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait$5;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;)V
-
-    invoke-virtual/range {v18 .. v19}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;->runOnUiThread(Ljava/lang/Runnable;)V
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;->updateTextRedEye()V
 
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;->releaseEyeDetection()V
 
@@ -4589,7 +4575,7 @@
 .end method
 
 .method public onOrientationChange()V
-    .locals 3
+    .locals 4
 
     const/4 v2, 0x0
 
@@ -4634,6 +4620,23 @@
 
     packed-switch v0, :pswitch_data_0
 
+    :goto_1
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    new-instance v1, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait$9;
+
+    invoke-direct {v1, p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait$9;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;)V
+
+    const-wide/16 v2, 0x64
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
     goto :goto_0
 
     :pswitch_0
@@ -4645,9 +4648,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/states/StateManager;->setSeekProgress(F)V
 
-    goto :goto_0
-
-    nop
+    goto :goto_1
 
     :pswitch_data_0
     .packed-switch 0x2002
@@ -5241,5 +5242,19 @@
     iput v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;->mProgressFromExecutor:I
 
     :cond_0
+    return-void
+.end method
+
+.method public updateTextRedEye()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;->mContext:Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;
+
+    new-instance v1, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait$5;
+
+    invoke-direct {v1, p0}, Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait$5;-><init>(Lcom/sec/android/mimage/photoretouching/lpe/states/Portrait;)V
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/mimage/photoretouching/lpe/gl/GLContext;->runOnUiThread(Ljava/lang/Runnable;)V
+
     return-void
 .end method
