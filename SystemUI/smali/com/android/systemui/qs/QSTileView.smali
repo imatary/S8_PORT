@@ -253,7 +253,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f040136
+    const v2, 0x7f040137
 
     const/4 v3, 0x0
 
@@ -261,7 +261,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1303cc
+    const v1, 0x7f1303cd
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -303,7 +303,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f040137
+    const v2, 0x7f040138
 
     const/4 v3, 0x0
 
@@ -311,7 +311,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1303cd
+    const v1, 0x7f1303ce
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -327,7 +327,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setFocusable(Z)V
 
-    const v1, 0x7f1303ce
+    const v1, 0x7f1303cf
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -751,7 +751,7 @@
 
     if-eqz v0, :cond_1
 
-    const v1, 0x7f0205ca
+    const v1, 0x7f0205cc
 
     :goto_1
     invoke-virtual {v3, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -768,7 +768,7 @@
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f0205c7
+    const v1, 0x7f0205c9
 
     goto :goto_1
 .end method

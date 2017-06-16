@@ -3020,7 +3020,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d05c0
+    const v2, 0x7f0d05c1
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -7739,7 +7739,7 @@
     :sswitch_data_0
     .sparse-switch
         0x7f130185 -> :sswitch_0
-        0x7f130493 -> :sswitch_1
+        0x7f130494 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -8489,7 +8489,7 @@
 
     iput-object v7, p0, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->mKeyguardStatusBar:Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;
 
-    const v7, 0x7f13048f
+    const v7, 0x7f130490
 
     invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8526,7 +8526,7 @@
     invoke-interface {v7, v8}, Lcom/android/keyguard/servicebox/KeyguardStatusBase;->setStatusCallback(Lcom/android/keyguard/servicebox/KeyguardStatusCallback;)V
 
     :cond_0
-    const v7, 0x7f130490
+    const v7, 0x7f130491
 
     invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8604,7 +8604,7 @@
 
     iput-object v7, p0, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->mClockView:Landroid/widget/TextView;
 
-    const v7, 0x7f130492
+    const v7, 0x7f130493
 
     invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8667,7 +8667,7 @@
     invoke-virtual {v7, v8}, Landroid/widget/LinearLayout;->setGravity(I)V
 
     :cond_1
-    const v7, 0x7f130493
+    const v7, 0x7f130494
 
     invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8711,7 +8711,7 @@
 
     iput-object v7, p0, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->mFastOutLinearInterpolator:Landroid/view/animation/Interpolator;
 
-    const v7, 0x7f130497
+    const v7, 0x7f130498
 
     invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8754,7 +8754,7 @@
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->resetKeyguardBottomAreaHelpers()V
 
     :cond_2
-    const v7, 0x7f130498
+    const v7, 0x7f130499
 
     invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8762,7 +8762,7 @@
 
     iput-object v7, p0, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->mQsNavbarScrim:Landroid/view/View;
 
-    const v7, 0x7f130495
+    const v7, 0x7f130496
 
     invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8786,7 +8786,7 @@
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->setKeyguardTouchHelpers()V
 
-    const v7, 0x7f130491
+    const v7, 0x7f130492
 
     invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8796,7 +8796,7 @@
 
     iput-object v7, p0, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->mNotificationContentsRoot:Landroid/widget/FrameLayout;
 
-    const v7, 0x7f13049d
+    const v7, 0x7f13049e
 
     invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8863,7 +8863,7 @@
     invoke-virtual {v7, v11, v11, v11, v3}, Landroid/widget/LinearLayout;->setPadding(IIII)V
 
     :cond_3
-    const v7, 0x7f13049a
+    const v7, 0x7f13049b
 
     invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 

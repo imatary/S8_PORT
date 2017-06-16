@@ -641,7 +641,7 @@
 
     move-result v2
 
-    const v3, 0x7f1303c8
+    const v3, 0x7f1303c9
 
     if-ne v2, v3, :cond_0
 
@@ -688,7 +688,7 @@
 
     move-result v2
 
-    const v3, 0x7f1303da
+    const v3, 0x7f1303db
 
     if-ne v2, v3, :cond_0
 
@@ -1113,7 +1113,7 @@
 
     invoke-super {p0}, Lcom/android/systemui/statusbar/phone/BaseStatusBarHeader;->onFinishInflate()V
 
-    const v1, 0x7f1303db
+    const v1, 0x7f1303dc
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/QuickStatusBarHeader;->findViewById(I)Landroid/view/View;
 
@@ -1129,7 +1129,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickStatusBarHeader;->mDateTimeAlarmGroup:Landroid/view/ViewGroup;
 
-    const v3, 0x7f130487
+    const v3, 0x7f130488
 
     invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1137,7 +1137,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    const v1, 0x7f1303dc
+    const v1, 0x7f1303dd
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/QuickStatusBarHeader;->findViewById(I)Landroid/view/View;
 
@@ -1165,7 +1165,7 @@
 
     move-result v0
 
-    const v1, 0x7f1303de
+    const v1, 0x7f1303df
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/QuickStatusBarHeader;->findViewById(I)Landroid/view/View;
 
@@ -1179,7 +1179,7 @@
     invoke-virtual {v3, v1}, Landroid/view/View;->setVisibility(I)V
 
     :cond_0
-    const v1, 0x7f1303df
+    const v1, 0x7f1303e0
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/QuickStatusBarHeader;->findViewById(I)Landroid/view/View;
 
@@ -1211,7 +1211,7 @@
 
     invoke-virtual {v1, p0}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f1303da
+    const v1, 0x7f1303db
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/QuickStatusBarHeader;->findViewById(I)Landroid/view/View;
 
@@ -1269,7 +1269,7 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/drawable/RippleDrawable;->setForceSoftware(Z)V
 
-    const v1, 0x7f1303dd
+    const v1, 0x7f1303de
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/QuickStatusBarHeader;->findViewById(I)Landroid/view/View;
 
@@ -1277,7 +1277,7 @@
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickStatusBarHeader;->mDateTimeDivider:Landroid/view/View;
 
-    const v1, 0x7f130485
+    const v1, 0x7f130486
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/QuickStatusBarHeader;->findViewById(I)Landroid/view/View;
 
@@ -1676,7 +1676,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f130534
+    const v4, 0x7f130535
 
     invoke-interface {v1, v4}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -1690,7 +1690,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f130535
+    const v4, 0x7f130536
 
     invoke-interface {v1, v4}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -1740,7 +1740,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f130536
+    const v4, 0x7f130537
 
     invoke-interface {v1, v4}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -1779,7 +1779,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f130537
+    const v3, 0x7f130538
 
     invoke-interface {v1, v3}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2142,7 +2142,7 @@
 .method protected updateVisibilities()V
     .locals 7
 
-    const v6, 0x7f1303d9
+    const v6, 0x7f1303da
 
     const/4 v5, 0x4
 

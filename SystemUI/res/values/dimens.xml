@@ -1149,6 +1149,7 @@
     <item type="dimen" name="status_bar_battery_light_mode_alpha">0.74</item>
     <item type="dimen" name="status_bar_battery_dark_mode_alpha">0.68</item>
     <item type="dimen" name="battery_meter_text_size_ratio">0.666</item>
+    <dimen name="navigation_force_immersive_touch_window_breadth">7.0dip</dimen>
     <dimen name="badge_notification_background_size">16.0dip</dimen>
     <dimen name="badge_notification_background_size_on_desktop_mode">14.0dip</dimen>
     <dimen name="badge_notification_margin_top">4.0dip</dimen>
