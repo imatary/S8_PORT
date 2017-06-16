@@ -1513,7 +1513,7 @@
     return-void
 
     :sswitch_0
-    const v0, 0x1040a0d
+    const v0, 0x1040a14
 
     :goto_0
     invoke-static {v0}, Lcom/android/server/enterprise/RestrictionToastManager;->show(I)V
@@ -1521,47 +1521,47 @@
     return-void
 
     :sswitch_1
-    const v0, 0x1040a0e
+    const v0, 0x1040a15
 
     goto :goto_0
 
     :sswitch_2
-    const v0, 0x1040a0b
-
-    goto :goto_0
-
-    :sswitch_3
-    const v0, 0x1040a0c
-
-    goto :goto_0
-
-    :sswitch_4
-    const v0, 0x1040a0f
-
-    goto :goto_0
-
-    :sswitch_5
-    const v0, 0x1040a10
-
-    goto :goto_0
-
-    :sswitch_6
-    const v0, 0x1040a11
-
-    goto :goto_0
-
-    :sswitch_7
     const v0, 0x1040a12
 
     goto :goto_0
 
-    :sswitch_8
+    :sswitch_3
     const v0, 0x1040a13
 
     goto :goto_0
 
+    :sswitch_4
+    const v0, 0x1040a16
+
+    goto :goto_0
+
+    :sswitch_5
+    const v0, 0x1040a17
+
+    goto :goto_0
+
+    :sswitch_6
+    const v0, 0x1040a18
+
+    goto :goto_0
+
+    :sswitch_7
+    const v0, 0x1040a19
+
+    goto :goto_0
+
+    :sswitch_8
+    const v0, 0x1040a1a
+
+    goto :goto_0
+
     :sswitch_9
-    const v0, 0x1040a14
+    const v0, 0x1040a1b
 
     goto :goto_0
 
@@ -2988,7 +2988,7 @@
     return v0
 
     :cond_3
-    const v4, 0x1040a19
+    const v4, 0x1040a20
 
     invoke-static {v4}, Lcom/android/server/enterprise/RestrictionToastManager;->show(I)V
 
@@ -3440,7 +3440,7 @@
     return v0
 
     :cond_3
-    const v1, 0x1040a17
+    const v1, 0x1040a1e
 
     invoke-static {v1}, Lcom/android/server/enterprise/RestrictionToastManager;->show(I)V
 
@@ -3557,7 +3557,7 @@
     goto :goto_0
 
     :cond_4
-    const v4, 0x1040a0a
+    const v4, 0x1040a11
 
     invoke-static {v4}, Lcom/android/server/enterprise/RestrictionToastManager;->show(I)V
 
@@ -3820,7 +3820,7 @@
     return v0
 
     :cond_3
-    const v4, 0x1040a15
+    const v4, 0x1040a1c
 
     invoke-static {v4}, Lcom/android/server/enterprise/RestrictionToastManager;->show(I)V
 
@@ -4082,7 +4082,7 @@
     return v0
 
     :cond_3
-    const v4, 0x1040a18
+    const v4, 0x1040a1f
 
     invoke-static {v4}, Lcom/android/server/enterprise/RestrictionToastManager;->show(I)V
 
@@ -4159,7 +4159,7 @@
     return v0
 
     :cond_3
-    const v4, 0x1040a16
+    const v4, 0x1040a1d
 
     invoke-static {v4}, Lcom/android/server/enterprise/RestrictionToastManager;->show(I)V
 

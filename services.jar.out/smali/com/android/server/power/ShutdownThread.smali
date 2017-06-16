@@ -1501,7 +1501,7 @@
 
     if-eqz v10, :cond_2
 
-    const v9, 0x1040703
+    const v9, 0x1040707
 
     :goto_0
     invoke-static {p0}, Lcom/android/server/power/ShutdownThread;->getDescriptionText(Landroid/content/Context;)I
@@ -2025,7 +2025,7 @@
     if-eqz v2, :cond_2
 
     :cond_1
-    const v0, 0x10407f7
+    const v0, 0x10407fb
 
     :goto_0
     return v0
@@ -2048,12 +2048,12 @@
 
     if-eqz v2, :cond_4
 
-    const v0, 0x10407f4
+    const v0, 0x10407f8
 
     goto :goto_0
 
     :cond_4
-    const v0, 0x10407f2
+    const v0, 0x10407f6
 
     goto :goto_0
 
@@ -2075,7 +2075,7 @@
 
     if-ne v1, v5, :cond_8
 
-    const v0, 0x1040704
+    const v0, 0x1040708
 
     goto :goto_0
 
@@ -2092,12 +2092,12 @@
 
     if-eqz v2, :cond_6
 
-    const v0, 0x10408a3
+    const v0, 0x10408a7
 
     goto :goto_0
 
     :cond_8
-    const v0, 0x10406ec
+    const v0, 0x10406f0
 
     goto :goto_0
 
@@ -2442,7 +2442,7 @@
     if-eqz v1, :cond_2
 
     :cond_1
-    const v0, 0x10407f6
+    const v0, 0x10407fa
 
     :goto_0
     return v0
@@ -2461,7 +2461,7 @@
 
     if-eqz v1, :cond_4
 
-    const v0, 0x1040703
+    const v0, 0x1040707
 
     goto :goto_0
 
@@ -2547,7 +2547,7 @@
 .method private static isConfirmAvailable(Landroid/content/Context;)Z
     .locals 11
 
-    const v10, 0x10407ba
+    const v10, 0x10407be
 
     const/4 v9, 0x1
 
@@ -2675,7 +2675,7 @@
     return v8
 
     :cond_7
-    const v6, 0x10407b7
+    const v6, 0x10407bb
 
     invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

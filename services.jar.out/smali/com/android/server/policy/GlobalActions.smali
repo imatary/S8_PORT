@@ -2294,7 +2294,7 @@
 
     invoke-virtual {v1, v4, v2, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    const v1, 0x10408bd
+    const v1, 0x10408c1
 
     iput v1, p0, Lcom/android/server/policy/GlobalActions;->mBikeModeStringId:I
 
@@ -3519,7 +3519,7 @@
 
     if-ne v0, v1, :cond_9
 
-    const v16, 0x104063d
+    const v16, 0x1040641
 
     const/4 v13, 0x1
 
@@ -3648,7 +3648,7 @@
     :goto_3
     invoke-virtual {v3, v6}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v17, 0x1020516
+    const v17, 0x102051a
 
     move/from16 v0, v17
 
@@ -3715,7 +3715,7 @@
 
     if-eq v0, v1, :cond_13
 
-    const v16, 0x10407cd
+    const v16, 0x10407d1
 
     :goto_5
     move/from16 v0, v16
@@ -4014,7 +4014,7 @@
     return-void
 
     :cond_9
-    const v16, 0x104063c
+    const v16, 0x1040640
 
     goto/16 :goto_0
 
@@ -4112,7 +4112,7 @@
 
     if-eq v0, v1, :cond_e
 
-    const v17, 0x10407cd
+    const v17, 0x10407d1
 
     :goto_b
     move-object/from16 v0, v18
@@ -4250,12 +4250,12 @@
     goto/16 :goto_5
 
     :cond_14
-    const v16, 0x104063d
+    const v16, 0x1040641
 
     goto/16 :goto_5
 
     :cond_15
-    const v16, 0x104063c
+    const v16, 0x1040640
 
     goto/16 :goto_5
 
@@ -4707,11 +4707,11 @@
     const v7, 0x1080a44
 
     :goto_1
-    const v8, 0x10407ea
+    const v8, 0x10407ee
 
-    const v9, 0x10407eb
+    const v9, 0x10407ef
 
-    const v10, 0x10407ec
+    const v10, 0x10407f0
 
     move-object/from16 v5, p0
 
@@ -4749,11 +4749,11 @@
 
     const v7, 0x1080a59
 
-    const v8, 0x10407c1
+    const v8, 0x10407c5
 
-    const v9, 0x10407c2
+    const v9, 0x10407c6
 
-    const v10, 0x10407c3
+    const v10, 0x10407c7
 
     move-object/from16 v5, p0
 
@@ -4779,11 +4779,11 @@
     const v7, 0x1080a46
 
     :goto_3
-    const v8, 0x10407d6
+    const v8, 0x10407da
 
-    const v9, 0x10407d4
+    const v9, 0x10407d8
 
-    const v10, 0x10407d5
+    const v10, 0x10407d9
 
     move-object/from16 v5, p0
 
@@ -4805,13 +4805,13 @@
 
     sget-object v4, Lcom/android/server/policy/GlobalActions;->mProKioskExitAlertDialogBuilder:Landroid/app/AlertDialog$Builder;
 
-    const v5, 0x1040932
+    const v5, 0x1040939
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     sget-object v4, Lcom/android/server/policy/GlobalActions;->mProKioskExitAlertDialogBuilder:Landroid/app/AlertDialog$Builder;
 
-    const v5, 0x1040933
+    const v5, 0x104093a
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -4893,11 +4893,11 @@
 
     const v7, 0x108040d
 
-    const v8, 0x104092f
+    const v8, 0x1040936
 
-    const v9, 0x1040930
+    const v9, 0x1040937
 
-    const v10, 0x1040930
+    const v10, 0x1040937
 
     move-object/from16 v5, p0
 
@@ -4916,7 +4916,7 @@
     const v4, 0x1080a4f
 
     :goto_4
-    const v6, 0x1040703
+    const v6, 0x1040707
 
     move-object/from16 v0, p0
 
@@ -4980,11 +4980,11 @@
 
     const v7, 0x1080a54
 
-    const v8, 0x10408bd
+    const v8, 0x10408c1
 
-    const v9, 0x10408be
+    const v9, 0x10408c2
 
-    const v10, 0x10408bf
+    const v10, 0x10408c3
 
     move-object/from16 v5, p0
 
@@ -6350,7 +6350,7 @@
 
     move-result-object v4
 
-    const v5, 0x105022a
+    const v5, 0x105022b
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -7234,7 +7234,7 @@
 
     move-result-object v0
 
-    const v1, 0x1050219
+    const v1, 0x105021a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -7282,7 +7282,7 @@
 
     move-result-object v0
 
-    const v1, 0x105021a
+    const v1, 0x105021b
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -7621,7 +7621,7 @@
 
     move-result-object v27
 
-    const v28, 0x10407f3
+    const v28, 0x10407f7
 
     invoke-virtual/range {v27 .. v28}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8050,7 +8050,7 @@
 
     if-eqz p6, :cond_11
 
-    const v27, 0x10407f6
+    const v27, 0x10407fa
 
     move-object/from16 v0, v17
 
@@ -8066,7 +8066,7 @@
 
     if-eqz v27, :cond_10
 
-    const v27, 0x10407f8
+    const v27, 0x10407fc
 
     move/from16 v0, v27
 
@@ -8487,7 +8487,7 @@
 
     move-result-object v27
 
-    const v28, 0x10407f2
+    const v28, 0x10407f6
 
     invoke-virtual/range {v27 .. v28}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8540,7 +8540,7 @@
 
     move-result-object v27
 
-    const v28, 0x10407f5
+    const v28, 0x10407f9
 
     invoke-virtual/range {v27 .. v28}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8563,7 +8563,7 @@
 
     move-result-object v27
 
-    const v28, 0x10407f4
+    const v28, 0x10407f8
 
     invoke-virtual/range {v27 .. v28}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8822,7 +8822,7 @@
     goto/16 :goto_3
 
     :cond_10
-    const v27, 0x10407f7
+    const v27, 0x10407fb
 
     move/from16 v0, v27
 
@@ -9672,7 +9672,7 @@
 
     move-result-object v3
 
-    const v5, 0x105022d
+    const v5, 0x105022e
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -9686,7 +9686,7 @@
 
     move-result-object v3
 
-    const v5, 0x105022e
+    const v5, 0x105022f
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -9700,7 +9700,7 @@
 
     move-result-object v3
 
-    const v5, 0x105022b
+    const v5, 0x105022c
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10344,7 +10344,7 @@
     :goto_0
     iput-boolean v3, p0, Lcom/android/server/policy/GlobalActions;->isShopDemo:Z
 
-    const v3, 0x1050218
+    const v3, 0x1050219
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10352,7 +10352,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mItemWidth:I
 
-    const v3, 0x1050219
+    const v3, 0x105021a
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10360,7 +10360,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mItemWidthLand:I
 
-    const v3, 0x1050216
+    const v3, 0x1050217
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10368,7 +10368,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mItemHeight:I
 
-    const v3, 0x1050217
+    const v3, 0x1050218
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10376,7 +10376,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mItemHeightWithStatus:I
 
-    const v3, 0x105021c
+    const v3, 0x105021d
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10384,7 +10384,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mItemMaxWidth:I
 
-    const v3, 0x105021d
+    const v3, 0x105021e
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10392,7 +10392,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mItemMaxWidthLand:I
 
-    const v3, 0x105021e
+    const v3, 0x105021f
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10400,7 +10400,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mItemMaxWidthForClearCoverClosed:I
 
-    const v3, 0x1050228
+    const v3, 0x1050229
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10408,7 +10408,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mMessageViewPaddingTop:I
 
-    const v3, 0x1050229
+    const v3, 0x105022a
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10416,7 +10416,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mMessageViewPaddingBottom:I
 
-    const v3, 0x1050223
+    const v3, 0x1050224
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10424,7 +10424,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mItemPortraitDivider:I
 
-    const v3, 0x1050224
+    const v3, 0x1050225
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10432,7 +10432,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mItemPortraitDividerOverFour:I
 
-    const v3, 0x1050225
+    const v3, 0x1050226
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10440,7 +10440,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mItemLandscapeDivider:I
 
-    const v3, 0x1050226
+    const v3, 0x1050227
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10448,7 +10448,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mItemPortraitDividerSViewCover:I
 
-    const v3, 0x105021f
+    const v3, 0x1050220
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10456,7 +10456,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mBottomViewSingleItemWidth:I
 
-    const v3, 0x1050220
+    const v3, 0x1050221
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10464,7 +10464,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mBottomViewSingleCancelItemWidth:I
 
-    const v3, 0x1050221
+    const v3, 0x1050222
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10472,7 +10472,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mBottomViewDoubleItemWidth:I
 
-    const v3, 0x1050222
+    const v3, 0x1050223
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -10578,7 +10578,7 @@
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mDataNetworkIconResId:I
 
     :goto_3
-    const v3, 0x10407d6
+    const v3, 0x10407da
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mEmergencyStringId:I
 
@@ -10586,7 +10586,7 @@
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mAirplaneStringId:I
 
-    const v3, 0x10407ea
+    const v3, 0x10407ee
 
     iput v3, p0, Lcom/android/server/policy/GlobalActions;->mDataNetworkStringId:I
 
@@ -11754,11 +11754,11 @@
 
     invoke-direct {v2, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x10407e1
+    const v5, 0x10407e5
 
     invoke-virtual {v2, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v5, 0x10407e2
+    const v5, 0x10407e6
 
     invoke-virtual {v2, v5}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -14606,7 +14606,7 @@
 
     invoke-virtual {v0, v4, v13}, Lcom/android/server/policy/GlobalActions;->calculateDescritionViewHeight(Landroid/view/View;I)V
 
-    const v13, 0x10407f6
+    const v13, 0x10407fa
 
     invoke-virtual {v11, v13}, Landroid/widget/TextView;->setText(I)V
 
@@ -14616,7 +14616,7 @@
 
     if-eqz v13, :cond_1
 
-    const v13, 0x10407f8
+    const v13, 0x10407fc
 
     invoke-virtual {v3, v13}, Landroid/widget/TextView;->setText(I)V
 
@@ -14716,7 +14716,7 @@
     return-void
 
     :cond_1
-    const v13, 0x10407f7
+    const v13, 0x10407fb
 
     invoke-virtual {v3, v13}, Landroid/widget/TextView;->setText(I)V
 
@@ -14960,7 +14960,7 @@
 
     move-result-object v11
 
-    const v12, 0x10407f9
+    const v12, 0x10407fd
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -16050,7 +16050,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
 
-    const v1, 0x10407b7
+    const v1, 0x10407bb
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -16060,7 +16060,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
 
-    const v1, 0x10407b8
+    const v1, 0x10407bc
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -16070,7 +16070,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
 
-    const v1, 0x10407b9
+    const v1, 0x10407bd
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -16080,7 +16080,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
 
-    const v1, 0x10407ba
+    const v1, 0x10407be
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -16090,7 +16090,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
 
-    const v1, 0x10407bb
+    const v1, 0x10407bf
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -16100,7 +16100,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
 
-    const v1, 0x10407bc
+    const v1, 0x10407c0
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -16110,7 +16110,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions;->mContext:Landroid/content/Context;
 
-    const v1, 0x10407bd
+    const v1, 0x10407c1
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
