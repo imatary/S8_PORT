@@ -48,7 +48,7 @@
 .method static applyBigTextContentView(Landroid/app/Notification$Builder;Landroid/widget/RemoteViews;Ljava/lang/CharSequence;)V
     .locals 3
 
-    const v2, 0x1020448
+    const v2, 0x102044c
 
     invoke-virtual {p1, v2, p2}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 

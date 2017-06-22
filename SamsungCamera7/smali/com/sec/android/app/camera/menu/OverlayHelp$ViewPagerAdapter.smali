@@ -407,7 +407,7 @@
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 13
 
-    const v12, 0x7f09029e
+    const v12, 0x7f0902c9
 
     const v11, 0x7f0901ab
 
@@ -921,7 +921,7 @@
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->startOneHandZoomAnimation()V
 
-    const v0, 0x7f09029f
+    const v0, 0x7f0902ca
 
     invoke-virtual {v8, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -935,7 +935,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v2, 0x7f09029f
+    const v2, 0x7f0902ca
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

@@ -11,7 +11,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">ଆପ୍ଲିକେସନ୍ ଖୋଲିବାକୁ ଅସମର୍ଥ। ଡିଭାଇସ୍ ଷ୍ଟୋରେଜରୁ କିଛି ଫାଇଲ୍ ବିଲୋପ କରି ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">ସୁରକ୍ଷା ନୀତି କ୍ୟାମେରା ବ୍ୟବହାର ପ୍ରତିବନ୍ଧିତ କରିଛି।</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">କ୍ୟାମେରା ବ୍ୟବହାର କରିବାକୁ ଅସମର୍ଥ।</string>
     <string name="__cp__cannot_start_camera_msg">କଲ୍‌ ସମୟରେ କ୍ୟାମେରା ବ୍ୟବହାର କରିବାକୁ ଅସମର୍ଥ।</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">ଭିଡିଓ କଲ୍ ସମୟରେ କ୍ୟାମେରା ଖୋଲିବାକୁ ଅସମର୍ଥ।</string>
     <string name="__cp__flash">ଫ୍ଲାସ୍</string>

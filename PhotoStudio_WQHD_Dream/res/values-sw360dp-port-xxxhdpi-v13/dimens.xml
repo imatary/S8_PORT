@@ -21,7 +21,6 @@
     <dimen name="penview_layout_margin">31.0dip</dimen>
     <dimen name="penview_textview_text_size">12.0dip</dimen>
     <dimen name="penview_textview_top_margin">35.0dip</dimen>
-    <dimen name="red_eye_text_margin_bottom">123.0dip</dimen>
     <dimen name="red_eye_text_size">16.0dip</dimen>
     <dimen name="red_eye_text_width">260.0dip</dimen>
     <dimen name="sub_effect_download_top_margin">10.0dip</dimen>

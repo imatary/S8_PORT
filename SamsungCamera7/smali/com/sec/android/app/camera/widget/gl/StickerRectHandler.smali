@@ -133,7 +133,7 @@
 
     invoke-direct {p0, v0, v2, v2}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
-    const v0, 0x7f0a03a5
+    const v0, 0x7f0a03a7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -143,7 +143,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->HANDLE_SIZE:I
 
-    const v0, 0x7f0a03a4
+    const v0, 0x7f0a03a6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -153,7 +153,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->RESIZE_HANDLE_SIZE:I
 
-    const v0, 0x7f0a03a2
+    const v0, 0x7f0a03a4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -163,7 +163,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->BOUND_RECT_THICKNESS:I
 
-    const v0, 0x7f0a03a3
+    const v0, 0x7f0a03a5
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -173,7 +173,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->OUTER_BOUND_RECT_THICKNESS:I
 
-    const v0, 0x7f0a03a9
+    const v0, 0x7f0a03ab
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -183,7 +183,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->STICKER_RECT_DEFAULT_POSITION_LEFT_MARGIN:I
 
-    const v0, 0x7f0a03a8
+    const v0, 0x7f0a03aa
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -193,7 +193,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->STICKER_RECT_DEFAULT_POSITION_BOTTOM_MARGIN:I
 
-    const v0, 0x7f0a03aa
+    const v0, 0x7f0a03ac
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

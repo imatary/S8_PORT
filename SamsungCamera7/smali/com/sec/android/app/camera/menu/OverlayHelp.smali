@@ -142,7 +142,7 @@
 
     sput v0, Lcom/sec/android/app/camera/menu/OverlayHelp;->VERTICAL_ARROW_ANIMATION_OFFSET:F
 
-    const v0, 0x7f0a0395
+    const v0, 0x7f0a0397
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

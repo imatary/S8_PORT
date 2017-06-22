@@ -6384,7 +6384,7 @@
 
     move-object/from16 v46, v0
 
-    const v48, 0x102040b
+    const v48, 0x102040f
 
     move-object/from16 v0, v46
 
@@ -6415,7 +6415,7 @@
 
     move-object/from16 v46, v0
 
-    const v48, 0x102040c
+    const v48, 0x1020410
 
     move-object/from16 v0, v46
 
@@ -7231,7 +7231,7 @@
 
     iget-object v13, v0, Lcom/android/server/InputMethodManagerService;->mRes:Landroid/content/res/Resources;
 
-    const v14, 0x1040672
+    const v14, 0x1040676
 
     invoke-virtual {v13, v14}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -16493,7 +16493,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x104066e
+    const v1, 0x1040672
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -16525,7 +16525,7 @@
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mKeyboardBuilder:Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x104066d
+    const v1, 0x1040671
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -16557,7 +16557,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mKeyboardBuilder:Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x104066a
+    const v1, 0x104066e
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -16893,7 +16893,7 @@
 
     if-eqz v3, :cond_0
 
-    const v2, 0x104066f
+    const v2, 0x1040673
 
     :goto_0
     iget-object v3, p0, Lcom/android/server/InputMethodManagerService;->mContext:Landroid/content/Context;
@@ -16907,7 +16907,7 @@
     return-void
 
     :cond_0
-    const v2, 0x1040670
+    const v2, 0x1040674
 
     goto :goto_0
 .end method
@@ -18836,7 +18836,7 @@
 
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService;->mSwitchingDialogTitleView:Landroid/view/View;
 
-    const v2, 0x102040c
+    const v2, 0x1020410
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">Անհնար է բացել ծրագիրը: Ջնջեք որոշ նիշքեր սարքի պահեստից և կրկին փորձեք:</string>
     <string name="__cp__KB">%d ԿԲ</string>
     <string name="__cp__camera_security_enter">Անվտանգության քաղաքականությունը սահմանափակում է Խցիկի օգտագործումը:</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">Անհնար է օգտագործել խցիկը:</string>
     <string name="__cp__cannot_start_camera_msg">Անհնար է Խցիկ օգտագործել կանչերի ընթացքում:</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">Տեսականչերի ընթացքում անհնար է բացել Խցիկը:</string>
     <string name="__cp__flash">Լուսաբռնկիչ</string>

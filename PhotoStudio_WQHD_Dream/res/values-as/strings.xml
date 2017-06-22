@@ -11,7 +11,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">এপ্লিকেশ্বন খুলিবলৈ অক্ষম৷ ডিভাইচ সংগ্ৰহত কিছুমান ফাইল বিলোপ কৰক আৰু পুনঃচেষ্টা কৰক৷</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">কেমেৰা ব্যৱহাৰৰ নিৰাপত্তা আঁচনি প্ৰতিবন্ধিত৷</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">কেমেৰা ব্যৱহাৰ কৰাত অক্ষম।</string>
     <string name="__cp__cannot_start_camera_msg">কলৰ সময়ত কেমেৰা ব্যৱহাৰ কৰিবলৈ অক্ষম৷</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">"ভিডিঅ' কলৰ সময়ত কেমেৰা খোলাত অক্ষম৷"</string>
     <string name="__cp__flash">ফ্লাচ</string>

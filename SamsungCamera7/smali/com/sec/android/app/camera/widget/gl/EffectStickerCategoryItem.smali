@@ -43,7 +43,7 @@
 
     invoke-direct/range {p0 .. p7}, Lcom/sec/android/app/camera/widget/gl/Item;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
-    const v0, 0x7f0a03a0
+    const v0, 0x7f0a03a2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -433,7 +433,7 @@
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
-    const v2, 0x7f090274
+    const v2, 0x7f090275
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">Nie można otworzyć aplikacji. Usuń niektóre pliki z pamięci urządzenia i spróbuj ponownie.</string>
     <string name="__cp__KB">%d kB</string>
     <string name="__cp__camera_security_enter">Zasady zabezpieczeń ograniczają użycie aparatu.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">Nie można użyć aparatu.</string>
     <string name="__cp__cannot_start_camera_msg">Nie można korzystać z aplikacji Aparat podczas połączeń.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">Nie można otworzyć aplikacji Aparat podczas połączeń wideo.</string>
     <string name="__cp__flash">Lampa błyskowa</string>

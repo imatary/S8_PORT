@@ -68,6 +68,8 @@
 
 .field public static final STATE_ID_DUAL_CAMERA_MODE:I = 0x21
 
+.field public static final STATE_ID_EDIT_MODE_SCREEN:I = 0xb3
+
 .field public static final STATE_ID_EV:I = 0x89
 
 .field public static final STATE_ID_EV_CONTROLBAR:I = 0x88
@@ -83,6 +85,8 @@
 .field public static final STATE_ID_FILTER_MODE_STRENGTH:I = 0x76
 
 .field public static final STATE_ID_FILTER_MODE_VIGNETTE:I = 0x77
+
+.field public static final STATE_ID_FILTER_REMOVE:I = 0xb2
 
 .field public static final STATE_ID_FILTER_STRENGTH:I = 0x78
 
@@ -227,6 +231,8 @@
 .field public static final STATE_ID_RECORDING:I = 0x36
 
 .field public static final STATE_ID_RECORD_MODE:I = 0x4
+
+.field public static final STATE_ID_REMOVE_GUIDE:I = 0xb4
 
 .field public static final STATE_ID_REVIEW_PICTURES_OFF:I = 0x6c
 
@@ -1640,6 +1646,24 @@
 
     invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
+    const/16 v0, 0xb2
+
+    const-string v1, "FilterRemove"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xb3
+
+    const-string v1, "EditModeScreen"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xb4
+
+    const-string v1, "RemoveGuide"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
     return-void
 .end method
 
@@ -1828,7 +1852,7 @@
         :pswitch_6
         :pswitch_6
         :pswitch_6
-        :pswitch_7
+        :pswitch_2
         :pswitch_4
         :pswitch_3
         :pswitch_7
@@ -1848,7 +1872,7 @@
         :pswitch_3
         :pswitch_6
         :pswitch_6
-        :pswitch_7
+        :pswitch_2
         :pswitch_6
         :pswitch_6
         :pswitch_6
@@ -1929,6 +1953,8 @@
         :pswitch_3
         :pswitch_2
         :pswitch_0
+        :pswitch_6
+        :pswitch_2
     .end packed-switch
 .end method
 
@@ -2117,7 +2143,7 @@
 .end method
 
 .method public static getSupportedModeSet(IZ)Ljava/util/LinkedHashSet;
-    .locals 9
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -2128,13 +2154,11 @@
         }
     .end annotation
 
-    const/16 v8, 0x1c
+    const/16 v7, 0x1c
 
-    const/16 v7, 0x16
+    const/16 v6, 0x14
 
-    const/16 v6, 0x13
-
-    const/16 v5, 0x10
+    const/16 v5, 0x13
 
     const/16 v4, 0xe
 
@@ -2191,7 +2215,7 @@
     return-object v0
 
     :sswitch_0
-    new-array v1, v8, [I
+    new-array v1, v7, [I
 
     fill-array-data v1, :array_0
 
@@ -2211,7 +2235,9 @@
     if-eqz v1, :cond_0
 
     :cond_1
-    new-array v1, v7, [I
+    const/16 v1, 0x16
+
+    new-array v1, v1, [I
 
     fill-array-data v1, :array_1
 
@@ -2226,7 +2252,7 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v8, [I
+    new-array v1, v7, [I
 
     fill-array-data v1, :array_2
 
@@ -2246,7 +2272,9 @@
     if-eqz v1, :cond_0
 
     :cond_2
-    new-array v1, v5, [I
+    const/16 v1, 0xf
+
+    new-array v1, v1, [I
 
     fill-array-data v1, :array_3
 
@@ -2263,7 +2291,7 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v6, [I
+    new-array v1, v5, [I
 
     fill-array-data v1, :array_4
 
@@ -2278,7 +2306,7 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v6, [I
+    new-array v1, v5, [I
 
     fill-array-data v1, :array_5
 
@@ -2302,9 +2330,7 @@
     if-eqz v1, :cond_0
 
     :cond_4
-    const/16 v1, 0x14
-
-    new-array v1, v1, [I
+    new-array v1, v6, [I
 
     fill-array-data v1, :array_6
 
@@ -2321,7 +2347,7 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v6, [I
+    new-array v1, v5, [I
 
     fill-array-data v1, :array_7
 
@@ -2336,7 +2362,9 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v5, [I
+    const/16 v1, 0x10
+
+    new-array v1, v1, [I
 
     fill-array-data v1, :array_8
 
@@ -2366,7 +2394,7 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v7, [I
+    new-array v1, v6, [I
 
     fill-array-data v1, :array_a
 
@@ -2447,7 +2475,9 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v5, [I
+    const/16 v1, 0x11
+
+    new-array v1, v1, [I
 
     fill-array-data v1, :array_e
 
@@ -2630,7 +2660,6 @@
         0x1a
         0xb
         0x4
-        0x7
         0x9
         0xc
         0xa
@@ -2782,11 +2811,9 @@
         0xb
         0x4
         0x5
-        0x7
         0x9
         0xc
         0xa
-        0x10
         0x11
         0x17
         0x19
@@ -2858,6 +2885,7 @@
     :array_e
     .array-data 4
         0xa8
+        0xb
         0xa
         0x9
         0xc
@@ -2911,7 +2939,7 @@
         }
     .end annotation
 
-    const/16 v7, 0xe
+    const/16 v7, 0xd
 
     const/16 v6, 0xa
 
@@ -2984,7 +3012,9 @@
     goto :goto_0
 
     :sswitch_1
-    new-array v1, v7, [I
+    const/16 v1, 0xe
+
+    new-array v1, v1, [I
 
     fill-array-data v1, :array_1
 
@@ -3043,9 +3073,7 @@
     :sswitch_6
     if-eqz p1, :cond_0
 
-    const/16 v1, 0xd
-
-    new-array v1, v1, [I
+    new-array v1, v7, [I
 
     fill-array-data v1, :array_6
 
@@ -3308,7 +3336,6 @@
     .array-data 4
         0x25
         0x35
-        0x26
         0x27
         0x2e
         0x2f

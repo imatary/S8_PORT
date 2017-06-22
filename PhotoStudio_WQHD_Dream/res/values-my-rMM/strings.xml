@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">အပလီကေးရှင်းကို မဖွင့်နိုင်ပါ။ ကိရိယာ သိုလှောင်ခန်းရှိ ဖိုင်အချို့ကို ဖျက်ပြီး ထပ်ကြိုးစားပါ။</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">လုံခြုံရေး မူဝါဒသည် ကင်မရာသုံးခြင်းကို ကန့်သတ်ထားပါသည်။</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">ကင်မရာ အသုံးပြု၍မရနိုင်ပါ။</string>
     <string name="__cp__cannot_start_camera_msg">ဖုန်းခေါ်ခြင်းများအတွင်း ကင်မရာ သုံး၍ မရနိုင်ပါ။</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">ဗီဒီယို ခေါ်ဆိုနေစဉ် ကင်မရာဖွင့်၍ မရနိုင်ပါ။</string>
     <string name="__cp__flash">ဖလက်ရှ်မီး</string>

@@ -1492,6 +1492,10 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="sec_next_button_label">Next</string>
     <string name="sec_immersive_cling_step_one">Swipe from the bottom of the phone to show the Home, Back, and Recents buttons.</string>
     <string name="sec_immersive_cling_step_two">"You can use the Home button even while it's hidden. Hard press the bottom center of your phone to go to the Home screen."</string>
+    <string name="sec_immersive_cling_help_text_step_one_one">"You're using full screen mode. The Home, Back, and Recents buttons are hidden to minimize visual distractions and to prevent you from leaving the app accidentally."</string>
+    <string name="sec_immersive_cling_help_text_step_one_two">You can show the buttons again by swiping inward from the edge of the screen where the buttons normally appear.</string>
+    <string name="sec_immersive_cling_help_text_step_one_three">After a while, the buttons will disappear again.</string>
+    <string name="sec_immersive_cling_help_text_step_two">"You can use the Home button even while it's hidden. To go to the Home screen, hard press the area of the screen where the Home button normally appears."</string>
     <string name="done_label">Done</string>
     <string name="hour_picker_description">Hours circular slider</string>
     <string name="minute_picker_description">Minutes circular slider</string>
@@ -2377,6 +2381,7 @@ Turn on Airplane mode?"</string>
     <string name="bixby_edgecase_dexstation">"Can't use Bixby while connected to DeX station."</string>
     <string name="conventional_mode_recent_noti">You can view this app in full screen by tapping the Expand icon on the Recent apps screen.</string>
     <string name="conventional_mode_previous_aspect_ratio_noti">To return to previous aspect ratio, go to Settings > Display > Full screen apps.</string>
+    <string name="conventional_mode_tap_here_to_fill">Tap here to fill entire screen</string>
     <string name="permlab_knoxCustomSetting">Manage device settings</string>
     <string name="permdesc_knoxCustomSetting">Configure device settings, such as Bluetooth, Location, Wi-Fi, Mobile data, and Android settings.</string>
     <string name="permlab_knoxCustomSystem">Manage system settings</string>
@@ -2797,8 +2802,8 @@ USB functions may be restricted while Maximum power saving mode enabled."</strin
     <string name="wifi_extender_notification_title">Wi-Fi extender on</string>
     <string name="wifi_extender_notification_message">Tap here to set up.</string>
     <string name="config_tspstate_threshold" />
-    <item type="string" name="APKTOOL_DUMMY_91d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_91e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_91f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_920">false</item>
+    <item type="string" name="APKTOOL_DUMMY_924">false</item>
+    <item type="string" name="APKTOOL_DUMMY_925">false</item>
+    <item type="string" name="APKTOOL_DUMMY_926">false</item>
+    <item type="string" name="APKTOOL_DUMMY_927">false</item>
 </resources>

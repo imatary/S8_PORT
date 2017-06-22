@@ -3709,7 +3709,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b017b
+    const v2, 0x7f0b017c
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3721,7 +3721,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b017c
+    const v2, 0x7f0b017d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -5476,7 +5476,7 @@
     invoke-virtual {v1, v3, p2}, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->setDismissed(ZZ)V
 
     :cond_1
-    const v3, 0x7f1304b2
+    const v3, 0x7f1304b3
 
     invoke-virtual {p0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -13719,7 +13719,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d05bd
+    const v6, 0x7f0d05be
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 

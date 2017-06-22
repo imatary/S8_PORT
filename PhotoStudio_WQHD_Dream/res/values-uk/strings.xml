@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">Неможливо відкрити програму. Видаліть деякі файли з пам’яті пристрою та спробуйте ще раз.</string>
     <string name="__cp__KB">%d кБ</string>
     <string name="__cp__camera_security_enter">Використання камери обмежено політикою безпеки.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">Неможливо використовувати камеру.</string>
     <string name="__cp__cannot_start_camera_msg">Використання камери не підтримується під час викликів.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">Неможливо відкрити камеру під час відеовикликів.</string>
     <string name="__cp__flash">Спалах</string>

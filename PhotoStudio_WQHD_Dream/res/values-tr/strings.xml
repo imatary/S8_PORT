@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">Uygulama açılamıyor. Cihaz hafızasındaki bazı dosyaları silip tekrar deneyin.</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">Güvenlik ilkesi Kamera kullanımını kısıtlıyor.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">Kamera kullanılamıyor.</string>
     <string name="__cp__cannot_start_camera_msg">Arama sırasında Kamera kullanılamaz.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">Görüntülü aramalar sırasında Kamera açılamaz.</string>
     <string name="__cp__flash">Flaş</string>

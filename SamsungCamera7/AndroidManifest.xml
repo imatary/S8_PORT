@@ -65,6 +65,7 @@
         <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="2"/>
         <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
         <meta-data android:name="com.samsung.android.bixby.pathRuleAppName" android:value="Camera"/>
+        <meta-data android:name="com.samsung.android.non_immersive" android:value="true"/>
         <receiver android:name="com.sec.android.app.camera.receiver.CameraButtonIntentReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.CAMERA_BUTTON"/>
@@ -176,7 +177,7 @@
                 <action android:name="com.samsung.android.sdk.bixby.APP_SERVICE"/>
             </intent-filter>
         </service>
-        <meta-data android:name="SPDE.build.signature" android:value="3859797/12657514/SEP81-release/SamsungCamera-701100-7.0.75"/>
-        <meta-data android:name="SPDE.env.version" android:value="2.2.3/L24.3.7/24.3.3"/>
+        <meta-data android:name="SPDE.build.signature" android:value="3943910/13340112/SEP81-release/SamsungCamera-701100-7.0.80"/>
+        <meta-data android:name="SPDE.env.version" android:value="2.2.3/L24.3.7/24.3.4"/>
     </application>
 </manifest>

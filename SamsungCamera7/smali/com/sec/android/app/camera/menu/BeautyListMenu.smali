@@ -288,7 +288,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->INDICATOR_TEXT_STROKE_COLOR:I
 
-    const v2, 0x7f0a038d
+    const v2, 0x7f0a038f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -298,7 +298,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->HELP_TEXT_BOTTOM_LANDSCAPE_MARGIN:F
 
-    const v2, 0x7f0a038e
+    const v2, 0x7f0a0390
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -308,7 +308,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->HELP_TEXT_BOTTOM_PORTRAIT_MARGIN:F
 
-    const v2, 0x7f0a038f
+    const v2, 0x7f0a0391
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -3499,7 +3499,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09020f
+    const v2, 0x7f090210
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4344,7 +4344,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090210
+    const v2, 0x7f090211
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

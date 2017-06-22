@@ -25,14 +25,23 @@ doNotCompress:
 - res/drawable/ic_email_lock_normal.9.qmg
 - res/drawable/ic_email_lock_pressed.9.qmg
 isFrameworkApk: false
-packageInfo: null
-sdkInfo: null
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '24'
+  targetSdkVersion: '24'
 sharedLibrary: false
 unknownFiles:
   SEC-INF/buildConfirm.crt: '8'
   SEC-INF/buildinfo.xml: '8'
   mockito-extensions/org.mockito.plugins.MockMaker: '8'
   mockito-extensions/org.mockito.plugins.StackTraceCleanerProvider: '8'
-usesFramework: null
+usesFramework:
+  ids:
+  - 1
+  tag: null
 version: 2.2.2
-versionInfo: null
+versionInfo:
+  versionCode: '24'
+  versionName: '7.0'

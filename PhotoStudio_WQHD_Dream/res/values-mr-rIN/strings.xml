@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">अनुप्रयोग उघडण्यास अक्षम. उपकरण संग्रहामधील सर्व फाइल्स हटवा आणि पुन्हा प्रयत्न करा.</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">सुरक्षा धोरण कॅमे-याचा वापर प्रतिबं‍धित करते.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">कॅमेरा वापरण्‍यात अक्षम.</string>
     <string name="__cp__cannot_start_camera_msg">कॉल्स दरम्यान कॅमेरा वापरण्यात अक्षम.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">व्हिडिओ कॉल्सच्या दरम्यान कॅमेरा उघडण्यात अक्षम.</string>
     <string name="__cp__flash">फ्लॅश</string>

@@ -748,7 +748,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
-    const v0, 0x7f0a0375
+    const v0, 0x7f0a0377
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -6453,7 +6453,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090294
+    const v2, 0x7f0902bf
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6476,7 +6476,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090295
+    const v2, 0x7f0902c0
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6499,7 +6499,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090296
+    const v2, 0x7f0902c1
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6794,13 +6794,13 @@
 .method private showWarningText(I)V
     .locals 6
 
-    const v5, 0x7f09029c
+    const v5, 0x7f0902c7
 
-    const v4, 0x7f09029a
+    const v4, 0x7f0902c5
 
-    const v3, 0x7f090299
+    const v3, 0x7f0902c4
 
-    const v2, 0x7f090298
+    const v2, 0x7f0902c3
 
     const/4 v1, 0x2
 
@@ -7002,7 +7002,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09029b
+    const v2, 0x7f0902c6
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

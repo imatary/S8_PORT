@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">Hindi mabuksan ang application. Magtanggal ng ilang file sa storage ng device at subukang muli.</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">Pinaghihigpitan ng patakaran sa seguridad ang paggamit ng Camera.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">Hindi magamit ang camera.</string>
     <string name="__cp__cannot_start_camera_msg">Hindi magamit ang Camera habang nasa tawag.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">Hindi mabuksan ang Camera habang may mga video call.</string>
     <string name="__cp__flash">Flash</string>

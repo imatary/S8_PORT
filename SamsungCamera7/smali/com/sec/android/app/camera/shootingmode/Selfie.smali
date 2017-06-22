@@ -240,7 +240,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie;->FACE_DETECTION_TEXT_HEIGHT:F
 
-    const v0, 0x7f0a03a1
+    const v0, 0x7f0a03a3
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -318,7 +318,7 @@
 
     float-to-int v0, v0
 
-    const v1, 0x7f0a03ad
+    const v1, 0x7f0a03af
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -328,7 +328,7 @@
 
     add-int/2addr v0, v1
 
-    const v1, 0x7f0a03ab
+    const v1, 0x7f0a03ad
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -396,7 +396,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie;->VISION_INTELLIGENCE_BUTTON_POS_X_FOR_MOBILE_KEYBOARD:I
 
-    const v0, 0x7f0a03ad
+    const v0, 0x7f0a03af
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -424,7 +424,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie;->STICKER_SHORTCUT_BUTTON_POS_X:I
 
-    const v0, 0x7f0a03ac
+    const v0, 0x7f0a03ae
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -985,7 +985,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090231
+    const v2, 0x7f090232
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1307,7 +1307,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090230
+    const v2, 0x7f090231
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1328,7 +1328,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090232
+    const v2, 0x7f090233
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4239,7 +4239,7 @@
     :goto_6
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f090282
+    const v1, 0x7f090283
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

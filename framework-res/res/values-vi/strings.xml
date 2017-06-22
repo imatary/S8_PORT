@@ -1315,6 +1315,10 @@ Hãy thử lại sau %2$d giây."</string>
     <string name="sec_next_button_label">Tiếp</string>
     <string name="sec_immersive_cling_step_one">Vuốt từ dưới cùng điện thoại để hiển thị các phím Trang chính, Trở về và Gần đây.</string>
     <string name="sec_immersive_cling_step_two">Bạn có thể sử dụng phím Trang chính ngay cả khi phím này bị ẩn. Nhấn mạnh vào phần giữa ở dưới cùng của điện thoại để đi đến Màn hình chờ.</string>
+    <string name="sec_immersive_cling_help_text_step_one_one">Bạn đang sử dụng chế độ toàn màn hình. Phím Trang chính, Trở về và Gần đây được ẩn để trông thoáng hơn và để tránh vô tình rời khỏi ứng dụng.</string>
+    <string name="sec_immersive_cling_help_text_step_one_two">Bạn có thể hiển thị lại các phím bằng cách vuốt vào trong từ cạnh màn hình nơi các phím thường xuất hiện.</string>
+    <string name="sec_immersive_cling_help_text_step_one_three">Sau một lúc, các phím sẽ lại biến mất.</string>
+    <string name="sec_immersive_cling_help_text_step_two">Bạn có thể sử dụng phím Trang chính ngay cả khi nó bị ẩn. Để đi đến Màn hình chờ, hãy nhấn mạnh vùng màn hình nơi phím Trang chính thường xuất hiện.</string>
     <string name="done_label">H.tất</string>
     <string name="hour_picker_description">Bộ chọn giờ analogue</string>
     <string name="minute_picker_description">Bộ chọn phút analogue</string>
@@ -2038,6 +2042,7 @@ Bật chế độ Máy bay?"</string>
     <string name="bixby_edgecase_dexstation">Không thể sử dụng Bixby trong khi kết nối với DeX Station.</string>
     <string name="conventional_mode_recent_noti">Bạn có thể xem ứng dụng này toàn màn hình bằng cách chạm biểu tượng Mở rộng trên màn hình Ứng dụng gần đây.</string>
     <string name="conventional_mode_previous_aspect_ratio_noti">Để trở về tỉ lệ khung hình trước đó, hãy đi đến Cài đặt > Hiển thị > Ứng dụng toàn màn hình.</string>
+    <string name="conventional_mode_tap_here_to_fill">Chạm vào đây để lấp đầy cả màn hình</string>
     <string name="permlab_knoxCustomSetting">Quản lý cài đặt thiết bị</string>
     <string name="permdesc_knoxCustomSetting">Cấu hình các cài đặt thiết bị như Bluetooth, Vị trí, Wi-Fi, Dữ liệu di động và cài đặt Android.</string>
     <string name="permlab_knoxCustomSystem">Quản lý cài đặt hệ thống</string>
@@ -2413,4 +2418,6 @@ Các chức năng USB có thể bị hạn chế khi bật chế độ Tiết ki
     <string name="charging_connected_via_usb">Đang sạc thiết bị được kết nối qua USB…</string>
     <string name="lacking_filenode_internal_storage_view_title">Giới hạn file hệ thống</string>
     <string name="lacking_filenode_internal_storage_view_text">Quá nhiều file đã được tạo trên điện thoại của bạn. Ứng dụng có thể không hoạt động đúng và điện thoại của bạn có thể không khởi động được nữa. Hãy sao lưu tất cả dữ liệu quan trọng và khôi phục điện thoại của bạn về cài đặt gốc.</string>
+    <string name="lock_to_app_toast_for_navibar">Để bỏ ghim ứng dụng, hãy chạm và giữ đồng thời phím Gần đây và phím Trở về.</string>
+    <string name="lock_to_app_toast_accessible_for_navibar">To unpin app, touch and hold Recents button.</string>
 </resources>

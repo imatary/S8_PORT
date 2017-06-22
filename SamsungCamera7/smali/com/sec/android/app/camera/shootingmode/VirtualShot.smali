@@ -418,7 +418,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
-    const v0, 0x7f0a0375
+    const v0, 0x7f0a0377
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -454,7 +454,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->SHUTTER_BUTTON_WIDTH:F
 
-    const v0, 0x7f0a0393
+    const v0, 0x7f0a0395
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4686,6 +4686,11 @@
 
     invoke-static {v4}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->setSAScreenId(Ljava/lang/String;)V
 
+    :goto_2
+    iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleSendCompletedMessageToBixby()V
+
     goto/16 :goto_0
 
     :cond_5
@@ -4702,7 +4707,7 @@
 
     invoke-static {v4}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->setSAScreenId(Ljava/lang/String;)V
 
-    goto/16 :goto_0
+    goto :goto_2
 .end method
 
 .method public onInteractiveProcessProgressed(II)V
@@ -5144,7 +5149,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901db
+    const v4, 0x7f0901dc
 
     new-array v5, v0, [Ljava/lang/Object;
 

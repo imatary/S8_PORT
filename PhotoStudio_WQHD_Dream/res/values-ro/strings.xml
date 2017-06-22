@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">Aplicația nu poate fi deschisă. Ștergeți câteva fișiere din memoria dispozitivului și încercați din nou.</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">Politica de securitate restricționează utilizarea camerei foto.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">Nu se poate utiliza camera foto.</string>
     <string name="__cp__cannot_start_camera_msg">Camera foto nu se poate utiliza în timpul apelurilor.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">Nu se poate deschide Camera foto în timpul apelurilor video.</string>
     <string name="__cp__flash">Bliț</string>

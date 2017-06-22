@@ -816,6 +816,30 @@
 
     invoke-virtual {v4, v5, v6}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$SettingPrefBuilder;->addKey(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$SettingPrefBuilder;
 
+    move-result-object v4
+
+    const-string v5, "pref_global_camera_spotlight_level_key"
+
+    const-string v6, "0022"
+
+    invoke-virtual {v4, v5, v6}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$SettingPrefBuilder;->addKey(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$SettingPrefBuilder;
+
+    move-result-object v4
+
+    const-string v5, "pref_global_camera_shapecorrection_key"
+
+    const-string v6, "0025"
+
+    invoke-virtual {v4, v5, v6}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$SettingPrefBuilder;->addKey(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$SettingPrefBuilder;
+
+    move-result-object v4
+
+    const-string v5, "pref_global_camcorder_antishake_key"
+
+    const-string v6, "0036"
+
+    invoke-virtual {v4, v5, v6}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$SettingPrefBuilder;->addKey(Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$SettingPrefBuilder;
+
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
 
     move-result-object v4

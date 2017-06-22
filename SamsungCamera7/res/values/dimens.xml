@@ -866,6 +866,8 @@
     <dimen name="overlay_help_main_layout_portrait_margin_bottom">0.0dip</dimen>
     <dimen name="overlay_help_main_layout_portrait_margin_side">16.0dip</dimen>
     <dimen name="overlay_help_title_portrait_margin_top">29.0dip</dimen>
+    <dimen name="overlay_layout_toast_side_margin">12.0dip</dimen>
+    <dimen name="overlay_layout_toast_text_height_size">19.0dip</dimen>
     <dimen name="page_navigator_group_height">16.0dip</dimen>
     <dimen name="page_navigator_item_size">16.0dip</dimen>
     <dimen name="phase_af_base_height">85.0dip</dimen>

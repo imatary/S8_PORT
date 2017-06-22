@@ -153,7 +153,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mHideSwitchingAnimationLock:Ljava/lang/Object;
 
-    const v0, 0x7f0a038b
+    const v0, 0x7f0a038d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -163,7 +163,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->SCREEN_FLASH_ITEM_WIDTH:I
 
-    const v0, 0x7f0a038a
+    const v0, 0x7f0a038c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

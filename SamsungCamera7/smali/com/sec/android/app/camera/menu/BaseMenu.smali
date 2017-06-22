@@ -226,7 +226,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->PAGE_NAVIGATOR_GROUP_WIDTH:F
 
-    const v2, 0x7f0a0375
+    const v2, 0x7f0a0377
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -324,7 +324,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->THUMBNAIL_BUTTON_WIDTH:F
 
-    const v2, 0x7f0a0397
+    const v2, 0x7f0a0399
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -336,7 +336,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->ONE_HAND_ZOOM_SHORT_GUIDE_WIDTH:I
 
-    const v2, 0x7f0a0396
+    const v2, 0x7f0a0398
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -348,7 +348,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->ONE_HAND_ZOOM_SHORT_GUIDE_HEIGHT:I
 
-    const v2, 0x7f0a0395
+    const v2, 0x7f0a0397
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -360,7 +360,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->ONE_HAND_ZOOM_LONG_GUIDE_WIDTH:I
 
-    const v2, 0x7f0a0394
+    const v2, 0x7f0a0396
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -372,7 +372,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->ONE_HAND_ZOOM_LONG_GUIDE_HEIGHT:I
 
-    const v2, 0x7f0a0399
+    const v2, 0x7f0a039b
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -690,7 +690,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->COVER_THUMBNAIL_BUTTON_POS_Y:I
 
-    const v2, 0x7f0a039a
+    const v2, 0x7f0a039c
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -710,7 +710,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->ONE_HAND_ZOOM_MAX_TRANSLATION_VALUE:F
 
-    const v2, 0x7f0a0398
+    const v2, 0x7f0a039a
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -952,7 +952,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f090229
+    const v6, 0x7f09022a
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1747,7 +1747,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0901f9
+    const v6, 0x7f0901fa
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2747,7 +2747,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f090229
+    const v6, 0x7f09022a
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2891,7 +2891,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0901f9
+    const v6, 0x7f0901fa
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

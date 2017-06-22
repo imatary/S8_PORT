@@ -17260,7 +17260,9 @@
 .end method
 
 .method public handleTimer(Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;)Z
-    .locals 3
+    .locals 4
+
+    const/16 v3, 0x5dc
 
     const/4 v1, 0x0
 
@@ -17310,7 +17312,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_0
+    if-eqz v2, :cond_2
 
     sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->VOICE_COMMAND:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
@@ -17318,14 +17320,23 @@
 
     sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->PALM_DETECTION:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
-    if-ne p1, v2, :cond_0
+    if-ne p1, v2, :cond_2
 
     :cond_1
     iput-boolean v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mIsProgressWheelTimer:Z
 
-    const/16 v1, 0x5dc
+    invoke-direct {p0, v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->scheduleStartProgressWheelTimer(I)V
 
-    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->scheduleStartProgressWheelTimer(I)V
+    goto :goto_0
+
+    :cond_2
+    sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->BIXBY_COMMAND:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
+
+    if-ne p1, v2, :cond_0
+
+    iput-boolean v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mIsProgressWheelTimer:Z
+
+    invoke-direct {p0, v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->scheduleStartProgressWheelTimer(I)V
 
     goto :goto_0
 
@@ -24087,13 +24098,7 @@
 .end method
 
 .method protected sendCompletedMessageToBixby()V
-    .locals 2
-
-    const-string v0, "CommonEngine"
-
-    const-string v1, "sendCompletedMessageToBixby"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mRequestQueue:Lcom/sec/android/app/camera/engine/CeRequestQueue;
 
@@ -31704,7 +31709,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090279
+    const v4, 0x7f09027a
 
     new-array v5, v8, [Ljava/lang/Object;
 

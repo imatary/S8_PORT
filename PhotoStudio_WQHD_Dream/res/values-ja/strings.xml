@@ -231,7 +231,7 @@
     <string name="draw_eraser_clear_all">全消去</string>
     <string name="draw_pen_setting">ペン​設定</string>
     <string name="drawing">スケッチ</string>
-    <string name="dx_speed">%d倍</string>
+    <string name="dx_speed">%dx</string>
     <string name="earlybird">早朝</string>
     <string name="edgelens">エッジレンズ</string>
     <string name="edit">編集</string>

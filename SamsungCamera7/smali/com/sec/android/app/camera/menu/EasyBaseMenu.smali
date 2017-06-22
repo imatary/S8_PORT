@@ -105,7 +105,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasyBaseMenu;->BASEMENU_GROUP_WIDTH:F
 
-    const v2, 0x7f0a0375
+    const v2, 0x7f0a0377
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -599,7 +599,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f090229
+    const v6, 0x7f09022a
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -833,7 +833,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0901f9
+    const v6, 0x7f0901fa
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1233,7 +1233,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f090229
+    const v6, 0x7f09022a
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1373,7 +1373,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0901f9
+    const v6, 0x7f0901fa
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

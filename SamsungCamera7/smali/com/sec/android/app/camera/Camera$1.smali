@@ -78,7 +78,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$1;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const v2, 0x7f090264
+    const v2, 0x7f090265
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -104,7 +104,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$1;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const v2, 0x7f09026a
+    const v2, 0x7f09026b
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 

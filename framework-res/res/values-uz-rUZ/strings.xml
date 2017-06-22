@@ -1310,6 +1310,10 @@ Uni yopishni xohlaysizmi?"</string>
     <string name="sec_next_button_label">Keyingi</string>
     <string name="sec_immersive_cling_step_one">Asosiy, Orqaga va Oxirgilar tugmalari ko‘rsatilishi uchun telefon ekranini pastda yuqoriga suring.</string>
     <string name="sec_immersive_cling_step_two">Asosiy tugma yashirilganda ham Asosiy tugmadan foydalanishingiz mumkin. Asosiy ekranga o‘tish uchun telefoningizning pastki markazini qattiq bosing.</string>
+    <string name="sec_immersive_cling_help_text_step_one_one">To‘liq ekran rejimidan foydalanmoqdasiz. Vizual chalg‘ishlarni minimallashtirish va ilovadan bexosdan chiqib ketmaslik uchun Asosiy, Orqaga va Oxirgilar tugmalari yashiriladi.</string>
+    <string name="sec_immersive_cling_help_text_step_one_two">Ekran chetida ichkariga,odatda tugmalar ko‘rsatiladigan joyga, surish orqali tugmalarni yana ko‘rsatishingiz mumkin.</string>
+    <string name="sec_immersive_cling_help_text_step_one_three">Bir ozdan so‘ng, tugmalar yana yo‘qoladi.</string>
+    <string name="sec_immersive_cling_help_text_step_two">Asosiy tugma yashirilganda ham Asosiy tugmadan foydalanishingiz mumkin. Asosiy ekranga o‘tish uchun ekranning Asosiy tugma odatiy ravishda ko‘rsatiladigan sohasini qattiq bosing.</string>
     <string name="done_label">OK</string>
     <string name="hour_picker_description">Analogli soat tanlovchisi</string>
     <string name="minute_picker_description">Analogli daqiqa tanlovchisi</string>
@@ -2033,6 +2037,7 @@ Turn on Airplane mode?"</string>
     <string name="bixby_edgecase_dexstation">DeX Stansiyasiga ulangan vaqtda Bixby’dan foydalanib bo‘lmaydi.</string>
     <string name="conventional_mode_recent_noti">Oxirgi ilovalar ekranidagi Kengaytirish ikonachasiga tegish orqlai ushbu ilovani to‘liq ekranga ko‘rishingiz mumkin.</string>
     <string name="conventional_mode_previous_aspect_ratio_noti">Avvalgi nisbatga qaytish uchun Parametrlar > Displey > Toliq ekran ilovalariga o‘ting.</string>
+    <string name="conventional_mode_tap_here_to_fill">Butun ekranni to‘ldirish uchun bu yerga teging</string>
     <string name="permlab_knoxCustomSetting">Qurilma parametrlarini boshqarish</string>
     <string name="permdesc_knoxCustomSetting">Bluetooth, Joylashuv, Wi-Fi, Mobil internet va Android parametrlari kabi qurilma parametrlarini sozlang.</string>
     <string name="permlab_knoxCustomSystem">Tizim parametrlarini boshqarish</string>
@@ -2377,4 +2382,6 @@ Maksimal quvvat tejash rejimi yoqilgan vaqtda USB funksiyalari cheklanishi mumki
     <string name="charging_connected_via_usb">Ulangan qurilma USB orqali zaryadlanmoqda…</string>
     <string name="lacking_filenode_internal_storage_view_title">Fayl tizimi cheklovi</string>
     <string name="lacking_filenode_internal_storage_view_text">Telefoningizda juda ko‘p fayllar yaratilgan. Ilovalar to‘g‘ri ishlamasligi va telefoningiz qayta ishga tushirilmasligi mumkin. Muhim ma’lumotlarni arxivlang va telefoningizni ishlab chiqaruvchi parametrlariga tashlang.</string>
+    <string name="lock_to_app_toast_for_navibar">Ilovani olib tashlash uchun Oxirgilar va Orqaga tugmalariga bir vaqtda tegib turing.</string>
+    <string name="lock_to_app_toast_accessible_for_navibar">To unpin app, touch and hold Recents button.</string>
 </resources>

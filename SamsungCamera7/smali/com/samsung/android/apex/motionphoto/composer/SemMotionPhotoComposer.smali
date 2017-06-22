@@ -1074,34 +1074,36 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 .end method
 
-.method protected removeCommand(Lcom/samsung/android/apex/motionphoto/composer/State;I)V
-    .locals 4
+.method protected removeCommand(Lcom/samsung/android/apex/motionphoto/composer/State;I)Z
+    .locals 5
 
-    iget-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
+    const/4 v2, 0x0
 
-    invoke-virtual {p1}, Lcom/samsung/android/apex/motionphoto/composer/State;->ordinal()I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_1
-
-    iget-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
+    iget-object v3, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
 
     invoke-virtual {p1}, Lcom/samsung/android/apex/motionphoto/composer/State;->ordinal()I
 
-    move-result v3
+    move-result v4
 
-    invoke-virtual {v2, v3}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+    invoke-virtual {v3, v4}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    check-cast v2, Ljava/util/concurrent/ConcurrentLinkedQueue;
+    if-eqz v3, :cond_1
 
-    invoke-virtual {v2}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
+    iget-object v3, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
+
+    invoke-virtual {p1}, Lcom/samsung/android/apex/motionphoto/composer/State;->ordinal()I
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    invoke-virtual {v3}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -1109,9 +1111,9 @@
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_1
+    if-eqz v3, :cond_1
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1119,16 +1121,18 @@
 
     check-cast v1, Landroid/os/Message;
 
-    iget v2, v1, Landroid/os/Message;->what:I
+    iget v3, v1, Landroid/os/Message;->what:I
 
-    if-ne v2, p2, :cond_0
+    if-ne v3, p2, :cond_0
 
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
+
+    const/4 v2, 0x1
 
     goto :goto_0
 
     :cond_1
-    return-void
+    return v2
 .end method
 
 .method public requestId()J

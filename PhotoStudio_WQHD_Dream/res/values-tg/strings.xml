@@ -11,7 +11,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">Барномаро кушода наметавонад. Баъзе файлҳоро дар захирагоҳи дастгоҳ нест карда, аз нав кӯшиш кунед.</string>
     <string name="__cp__KB">%d КБ</string>
     <string name="__cp__camera_security_enter">Сиёсати амният истифодаи Камераро маҳдуд мекунад.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">Истифодаи камера ғайриимкон аст.</string>
     <string name="__cp__cannot_start_camera_msg">Истифодаи Камера дар давоми суҳбат ғайриимкон аст.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">Дар давоми занги видеоӣ кушодани камера ғайриимкон аст.</string>
     <string name="__cp__flash">Дурахш</string>

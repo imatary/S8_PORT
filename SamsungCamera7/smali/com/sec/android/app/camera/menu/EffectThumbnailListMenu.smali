@@ -661,7 +661,7 @@
 
     iput v1, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->EFFECT_ITEM_HEIGHT:I
 
-    const v1, 0x7f0a03a6
+    const v1, 0x7f0a03a8
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -681,7 +681,7 @@
 
     iput v1, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->STICKER_ITEM_HEIGHT:I
 
-    const v1, 0x7f0a03a7
+    const v1, 0x7f0a03a9
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1788,7 +1788,19 @@
 
     int-to-float v6, v6
 
-    const-string v7, "N"
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v8}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
+
+    move-result-object v8
+
+    const v9, 0x7f0901d7
+
+    invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
 
     move-object/from16 v0, p0
 
@@ -5618,23 +5630,6 @@
     return-void
 .end method
 
-.method private hideRemoveEffectButton()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mRemoveEffectButton:Lcom/samsung/android/glview/GLButton;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mRemoveEffectButton:Lcom/samsung/android/glview/GLButton;
-
-    const/4 v1, 0x4
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
-
-    :cond_0
-    return-void
-.end method
-
 .method private hideStickerSoundMuteButton()V
     .locals 2
 
@@ -7184,7 +7179,7 @@
 .method private showRemoveEffectButton()V
     .locals 15
 
-    const v0, 0x7f090201
+    const v0, 0x7f090202
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -7236,7 +7231,7 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f090201
+    const v6, 0x7f090202
 
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -7449,7 +7444,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mRemoveEffectButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f090201
+    const v1, 0x7f090202
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -7522,7 +7517,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mStickerSoundMuteButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f090235
+    const v1, 0x7f090236
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -8629,6 +8624,23 @@
     return-void
 .end method
 
+.method public hideRemoveEffectButton()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mRemoveEffectButton:Lcom/samsung/android/glview/GLButton;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mRemoveEffectButton:Lcom/samsung/android/glview/GLButton;
+
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
+
+    :cond_0
+    return-void
+.end method
+
 .method protected onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
 
@@ -9259,7 +9271,7 @@
     invoke-interface {v6, v5}, Lcom/sec/android/app/camera/interfaces/CommandInterface;->onSingleEffectMenuSelect(I)Z
 
     :goto_2
-    invoke-direct {p0}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->hideRemoveEffectButton()V
+    invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->hideRemoveEffectButton()V
 
     const-string v5, "5003"
 
@@ -12128,12 +12140,12 @@
     goto :goto_2
 
     :pswitch_2
-    const v1, 0x7f09022f
+    const v1, 0x7f090230
 
     goto :goto_2
 
     :cond_4
-    invoke-direct {p0}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->hideRemoveEffectButton()V
+    invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->hideRemoveEffectButton()V
 
     goto :goto_1
 

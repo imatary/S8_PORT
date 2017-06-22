@@ -25,7 +25,7 @@ tumok"</string>
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">Nem lehet megnyitni az alkalmazást. Töröljön fájlokat az eszköz tárhelyéről, és próbálja újra.</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">A biztonsági irányelv korlátozza a Kamera használatát.</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">A fényképező nem használható.</string>
     <string name="__cp__cannot_start_camera_msg">Hívás közben a Fényképező nem használható.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">Videohívás közben nem lehet megnyitni a Fényképezőt.</string>
     <string name="__cp__flash">Vaku</string>

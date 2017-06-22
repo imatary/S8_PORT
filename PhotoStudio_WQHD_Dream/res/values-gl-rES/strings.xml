@@ -24,7 +24,7 @@
     <string name="Unable_to_open_application_delete_some_files_in_device_storage_and_try_again">Non se pode abrir a aplicación. Elimina algúns arquivos no almacenamento do dispositivo e téntao de novo.</string>
     <string name="__cp__KB">%d KB</string>
     <string name="__cp__camera_security_enter">A política de seguridade limita o uso da Cámara</string>
-    <string name="__cp__camera_unable_to_use">Unable to use camera.</string>
+    <string name="__cp__camera_unable_to_use">Non se pode usar a cámara.</string>
     <string name="__cp__cannot_start_camera_msg">Non se pode utilizar a cámara durante as chamadas.</string>
     <string name="__cp__cannot_start_camera_msg_during_video_call">Non se pode utilizar a cámara durante as videochamadas.</string>
     <string name="__cp__flash">Flash</string>

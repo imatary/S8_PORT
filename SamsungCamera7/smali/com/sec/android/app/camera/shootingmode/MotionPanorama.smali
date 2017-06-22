@@ -500,7 +500,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
-    const v0, 0x7f0a0375
+    const v0, 0x7f0a0377
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -516,7 +516,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SHUTTER_BUTTON_WIDTH:F
 
-    const v0, 0x7f0a0393
+    const v0, 0x7f0a0395
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1862,7 +1862,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0901e4
+    const v7, 0x7f0901e5
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

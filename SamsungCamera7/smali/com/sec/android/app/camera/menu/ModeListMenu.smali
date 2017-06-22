@@ -1089,7 +1089,19 @@
 
     int-to-float v7, v9
 
-    const-string v8, "N"
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/sec/android/app/camera/menu/ModeListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v9}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
+
+    move-result-object v9
+
+    const v10, 0x7f0901d7
+
+    invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
 
     move-object/from16 v0, p0
 
@@ -3913,7 +3925,19 @@
 
     int-to-float v7, v9
 
-    const-string v8, "N"
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/sec/android/app/camera/menu/ModeListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v9}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
+
+    move-result-object v9
+
+    const v10, 0x7f0901d7
+
+    invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
 
     move-object/from16 v0, p0
 
@@ -9234,6 +9258,16 @@
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/ModeListMenu;->mShowAnimationListener:Lcom/sec/android/app/camera/menu/ModeListMenu$OnShowAnimationListener;
+
+    return-void
+.end method
+
+.method public showModeEditMenu()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/menu/ModeListMenu;->changeMode(I)V
 
     return-void
 .end method

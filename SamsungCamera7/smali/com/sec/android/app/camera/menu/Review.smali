@@ -319,7 +319,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/menu/Review;->REVIEW_BUTTON_SIZE:F
 
-    const v0, 0x7f0a0389
+    const v0, 0x7f0a038b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1061,7 +1061,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f090228
+    const v3, 0x7f090229
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -161,6 +161,12 @@
 
     move-result-object v0
 
+    if-eqz v0, :cond_0
+
+    invoke-interface {p0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    move-result-object v0
+
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isResizableCamera()Z
 
     move-result v0

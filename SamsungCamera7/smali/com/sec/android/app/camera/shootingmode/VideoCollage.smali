@@ -941,7 +941,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
-    const v0, 0x7f0a0375
+    const v0, 0x7f0a0377
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -989,7 +989,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->UNDO_BUTTON_WIDTH:I
 
-    const v0, 0x7f0a039b
+    const v0, 0x7f0a039d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -999,7 +999,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->UNDO_BUTTON_DIAMETER:I
 
-    const v0, 0x7f0a0388
+    const v0, 0x7f0a038a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1009,7 +1009,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->CAF_BUTTON_POS_X:I
 
-    const v0, 0x7f0a0387
+    const v0, 0x7f0a0389
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -2652,7 +2652,7 @@
 .method private getRecordingTimeText()Ljava/lang/String;
     .locals 9
 
-    const v8, 0x7f09022e
+    const v8, 0x7f09022f
 
     const/4 v4, 0x2
 
@@ -3649,7 +3649,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f090212
+    const v5, 0x7f090213
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4272,7 +4272,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0901f9
+    const v3, 0x7f0901fa
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4392,7 +4392,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0901e5
+    const v3, 0x7f0901e6
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4512,7 +4512,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09020b
+    const v3, 0x7f09020c
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5001,7 +5001,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09023c
+    const v3, 0x7f09023d
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9701,7 +9701,7 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0901dc
+    const v1, 0x7f0901dd
 
     const/4 v2, 0x1
 
