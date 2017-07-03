@@ -550,13 +550,9 @@
 
     sput-boolean v0, Lcom/android/keyguard/KeyguardRune;->SUPPORT_SIM_PERSO_LOCK:Z
 
-    invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
+    const-string v3, "statusbar_side_padding"
 
-    move-result-object v0
-
-    const-string/jumbo v3, "SEC_FLOATING_FEATURE_SYSTEMUI_CONFIG_STATUSBAR_SIDE_PADDING"
-
-    invoke-virtual {v0, v3, v1}, Lcom/samsung/android/feature/SemFloatingFeature;->getInteger(Ljava/lang/String;I)I
+    invoke-static {v3, v1}, Lcom/android/wubydax/GearUtils;->getDbIntForKey(Ljava/lang/String;I)I
 
     move-result v0
 
