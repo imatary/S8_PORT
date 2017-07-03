@@ -12785,7 +12785,13 @@
 .method public isUnlockingWithBiometricAllowed()Z
     .locals 6
 
-    const/4 v0, 0x1
+    const-string v0, "wake_on_finger"
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lcom/android/wubydax/GearUtils;->getDbIntForKey(Ljava/lang/String;I)I
+
+    move-result v0
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mStrongAuthTracker:Lcom/android/keyguard/KeyguardUpdateMonitor$StrongAuthTracker;
 
@@ -12834,7 +12840,13 @@
 .method public isUnlockingWithFingerprintAllowed()Z
     .locals 6
 
-    const/4 v0, 0x1
+    const-string v0, "wake_on_finger"
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lcom/android/wubydax/GearUtils;->getDbIntForKey(Ljava/lang/String;I)I
+
+    move-result v0
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mStrongAuthTracker:Lcom/android/keyguard/KeyguardUpdateMonitor$StrongAuthTracker;
 
