@@ -36,8 +36,6 @@
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewLayoutConfig$PhotoLoaderConfig;->mCurrentViewStateName:Ljava/lang/String;
 
-    iput-boolean v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewLayoutConfig$PhotoLoaderConfig;->mUseBitmapDrawTask:Z
-
     iput-boolean v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewLayoutConfig$PhotoLoaderConfig;->mUseZoomLevelInformation:Z
 
     iput-boolean v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewLayoutConfig$PhotoLoaderConfig;->mUseScrollDirectionData:Z

@@ -1676,6 +1676,45 @@
     goto :goto_0
 .end method
 
+.method public setOnSystemUiVisibilityChangeListener()V
+    .locals 3
+
+    sget-object v1, Lcom/sec/samsung/gallery/features/FeatureNames;->UseNavigationBar:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v1}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    move-object v0, p0
+
+    invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getGLRoot()Lcom/sec/android/gallery3d/ui/GLRoot;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setOnSystemUiVisibilityChangeListener(Landroid/view/View$OnSystemUiVisibilityChangeListener;)V
+
+    invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getGLRoot()Lcom/sec/android/gallery3d/ui/GLRoot;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    new-instance v2, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity$3;
+
+    invoke-direct {v2, p0, v0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity$3;-><init>(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/content/Context;)V
+
+    invoke-virtual {v1, v2}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setOnSystemUiVisibilityChangeListener(Landroid/view/View$OnSystemUiVisibilityChangeListener;)V
+
+    :cond_0
+    return-void
+.end method
+
 .method public setShowHideAnimationEnabled(Z)V
     .locals 7
 

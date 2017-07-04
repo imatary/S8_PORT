@@ -101,7 +101,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpClient;->mDevices:Ljava/util/HashMap;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/MtpClient;->access$000(Lcom/sec/android/gallery3d/data/MtpClient;)Ljava/util/HashMap;
 
     move-result-object v7
@@ -111,7 +110,6 @@
     :try_start_0
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpClient;->mDevices:Ljava/util/HashMap;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/MtpClient;->access$000(Lcom/sec/android/gallery3d/data/MtpClient;)Ljava/util/HashMap;
 
     move-result-object v6
@@ -134,7 +132,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # invokes: Lcom/sec/android/gallery3d/data/MtpClient;->openDeviceLocked(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;)Landroid/mtp/MtpDevice;
     invoke-static {v6, v5, v0}, Lcom/sec/android/gallery3d/data/MtpClient;->access$100(Lcom/sec/android/gallery3d/data/MtpClient;Landroid/hardware/usb/UsbDevice;Ljava/lang/String;)Landroid/mtp/MtpDevice;
 
     move-result-object v3
@@ -150,7 +147,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpClient;->mListeners:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/MtpClient;->access$200(Lcom/sec/android/gallery3d/data/MtpClient;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -239,7 +235,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpClient;->mDevices:Ljava/util/HashMap;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/MtpClient;->access$000(Lcom/sec/android/gallery3d/data/MtpClient;)Ljava/util/HashMap;
 
     move-result-object v6
@@ -248,7 +243,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpClient;->mRequestPermissionDevices:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/MtpClient;->access$300(Lcom/sec/android/gallery3d/data/MtpClient;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -257,7 +251,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpClient;->mIgnoredDevices:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/MtpClient;->access$400(Lcom/sec/android/gallery3d/data/MtpClient;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -268,7 +261,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpClient;->mListeners:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/MtpClient;->access$200(Lcom/sec/android/gallery3d/data/MtpClient;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -305,7 +297,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpClient;->mRequestPermissionDevices:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/MtpClient;->access$300(Lcom/sec/android/gallery3d/data/MtpClient;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -348,7 +339,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # invokes: Lcom/sec/android/gallery3d/data/MtpClient;->openDeviceLocked(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;)Landroid/mtp/MtpDevice;
     invoke-static {v6, v5, v0}, Lcom/sec/android/gallery3d/data/MtpClient;->access$100(Lcom/sec/android/gallery3d/data/MtpClient;Landroid/hardware/usb/UsbDevice;Ljava/lang/String;)Landroid/mtp/MtpDevice;
 
     move-result-object v3
@@ -364,7 +354,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpClient;->mListeners:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/MtpClient;->access$200(Lcom/sec/android/gallery3d/data/MtpClient;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -426,7 +415,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpClient$1;->this$0:Lcom/sec/android/gallery3d/data/MtpClient;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpClient;->mIgnoredDevices:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/MtpClient;->access$400(Lcom/sec/android/gallery3d/data/MtpClient;)Ljava/util/ArrayList;
 
     move-result-object v6

@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;->mMenu:Landroid/view/Menu;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;->access$000(Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;)Landroid/view/Menu;
 
     move-result-object v1
@@ -52,7 +51,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;->access$100(Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -66,7 +64,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;->access$200(Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -86,7 +83,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;->access$300(Lcom/sec/samsung/gallery/view/allview/ItemsActionBarForEdit;ILjava/lang/String;)V
 
     return-void

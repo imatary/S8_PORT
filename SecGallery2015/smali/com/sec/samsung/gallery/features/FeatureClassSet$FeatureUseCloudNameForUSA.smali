@@ -34,7 +34,6 @@
 
     const-string/jumbo v0, "NA_NOBRAND"
 
-    # invokes: Lcom/sec/samsung/gallery/features/FeatureClassSet;->checkCloudBrandName(Landroid/content/Context;Ljava/lang/String;)Z
     invoke-static {p1, v0}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$700(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v0

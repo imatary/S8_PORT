@@ -210,7 +210,6 @@
 
     move-result v1
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->access$0()Ljava/lang/String;
 
     move-result-object v2
@@ -283,7 +282,6 @@
 
     if-eqz v3, :cond_0
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->access$0()Ljava/lang/String;
 
     move-result-object v3
@@ -326,7 +324,6 @@
 .method static setSetting(Landroid/content/ContentResolver;Ljava/lang/String;Z)V
     .locals 5
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->access$0()Ljava/lang/String;
 
     move-result-object v2

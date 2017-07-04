@@ -43,7 +43,6 @@
 
     iget-object v1, v1, Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup;->this$0:Landroid/support/v7/widget/AppCompatSpinner;
 
-    # invokes: Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup;->isVisibleToUser(Landroid/view/View;)Z
     invoke-static {v0, v1}, Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup;->access$600(Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup;Landroid/view/View;)Z
 
     move-result v0
@@ -64,7 +63,6 @@
 
     iget-object v0, p0, Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup$2;->this$1:Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup;
 
-    # invokes: Landroid/support/v7/widget/ListPopupWindow;->show()V
     invoke-static {v0}, Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup;->access$701(Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup;)V
 
     goto :goto_0

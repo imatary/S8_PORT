@@ -41,7 +41,6 @@
 
     const/4 v3, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AbstractMoreInfoLocationActivity;->mGPSsettingDialog:Landroid/app/Dialog;
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AbstractMoreInfoLocationActivity;->access$502(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AbstractMoreInfoLocationActivity;Landroid/app/Dialog;)Landroid/app/Dialog;
 
     :try_start_0

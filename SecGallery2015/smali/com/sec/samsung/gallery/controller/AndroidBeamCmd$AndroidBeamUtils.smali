@@ -192,7 +192,6 @@
     goto :goto_1
 
     :cond_1
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->isSbeamOn:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$1000()Z
 
     move-result v4

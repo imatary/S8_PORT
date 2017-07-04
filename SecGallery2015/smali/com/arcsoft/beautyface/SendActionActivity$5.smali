@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$5;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mBitmapInput:Landroid/widget/RadioButton;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$1200(Lcom/arcsoft/beautyface/SendActionActivity;)Landroid/widget/RadioButton;
 
     move-result-object v0
@@ -54,7 +53,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/arcsoft/beautyface/SendActionActivity;->mIsInputBitmap:Z
     invoke-static {v0, v1}, Lcom/arcsoft/beautyface/SendActionActivity;->access$1302(Lcom/arcsoft/beautyface/SendActionActivity;Z)Z
 
     :cond_0
@@ -64,7 +62,6 @@
     :cond_1
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$5;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mArrayInput:Landroid/widget/RadioButton;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$1400(Lcom/arcsoft/beautyface/SendActionActivity;)Landroid/widget/RadioButton;
 
     move-result-object v0
@@ -79,7 +76,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/arcsoft/beautyface/SendActionActivity;->mIsInputBitmap:Z
     invoke-static {v0, v1}, Lcom/arcsoft/beautyface/SendActionActivity;->access$1302(Lcom/arcsoft/beautyface/SendActionActivity;Z)Z
 
     goto :goto_0

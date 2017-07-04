@@ -174,7 +174,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeVideoAppTipCard;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f02035d
+    const v1, 0x7f02035f
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

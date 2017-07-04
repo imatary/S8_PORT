@@ -48,7 +48,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/access/cmh/CMHAutoItemInterface$1;->val$status:I
 
-    # invokes: Lcom/sec/samsung/gallery/access/cmh/CMHAutoItemInterface;->updateAutoItemStatus(Landroid/content/Context;II)Z
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/access/cmh/CMHAutoItemInterface;->access$000(Landroid/content/Context;II)Z
 
     move-result v0

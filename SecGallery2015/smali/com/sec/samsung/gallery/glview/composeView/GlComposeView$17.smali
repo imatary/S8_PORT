@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mVibrator:Landroid/os/Vibrator;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Landroid/os/Vibrator;
 
     move-result-object v0
@@ -60,13 +59,11 @@
 
     check-cast v0, Landroid/os/Vibrator;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mVibrator:Landroid/os/Vibrator;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3902(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Landroid/os/Vibrator;)Landroid/os/Vibrator;
 
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mVibrator:Landroid/os/Vibrator;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Landroid/os/Vibrator;
 
     move-result-object v0
@@ -75,7 +72,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mVibrator:Landroid/os/Vibrator;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Landroid/os/Vibrator;
 
     move-result-object v0
@@ -88,7 +84,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mVibrator:Landroid/os/Vibrator;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Landroid/os/Vibrator;
 
     move-result-object v0
@@ -97,7 +92,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mVibrator:Landroid/os/Vibrator;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Landroid/os/Vibrator;
 
     move-result-object v0

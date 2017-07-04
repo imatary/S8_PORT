@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->access$000(Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -78,7 +77,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->access$100(Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -91,7 +89,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->access$200(Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -111,7 +108,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->access$400(Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;ILjava/lang/String;)V
 
     goto :goto_0
@@ -127,7 +123,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->access$300(Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

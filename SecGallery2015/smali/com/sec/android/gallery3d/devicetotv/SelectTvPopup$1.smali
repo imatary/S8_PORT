@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup$1;->this$0:Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;
 
-    # getter for: Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;->mTvList:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;->access$000(Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -48,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup$1;->this$0:Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;
 
-    # getter for: Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;->mTvList:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;->access$000(Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -61,7 +59,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup$1;->this$0:Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;
 
-    # getter for: Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;->mDeviceToTVUtil:Lcom/sec/android/gallery3d/devicetotv/DeviceToTVUtil;
     invoke-static {v1}, Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;->access$100(Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;)Lcom/sec/android/gallery3d/devicetotv/DeviceToTVUtil;
 
     move-result-object v1
@@ -70,7 +67,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup$1;->this$0:Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;
 
-    # getter for: Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;->mDeviceToTVUtil:Lcom/sec/android/gallery3d/devicetotv/DeviceToTVUtil;
     invoke-static {v1}, Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;->access$100(Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;)Lcom/sec/android/gallery3d/devicetotv/DeviceToTVUtil;
 
     move-result-object v1

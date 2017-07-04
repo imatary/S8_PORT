@@ -39,7 +39,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$2;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mGroupDefault:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefault;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$200(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)Lcom/sec/samsung/gallery/drawer/DrawerGroupDefault;
 
     move-result-object v2
@@ -50,7 +49,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$2;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mGroupDefault:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefault;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$200(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)Lcom/sec/samsung/gallery/drawer/DrawerGroupDefault;
 
     move-result-object v2
@@ -65,7 +63,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$2;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mGroupArray:[Lcom/sec/samsung/gallery/drawer/Group;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$300(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)[Lcom/sec/samsung/gallery/drawer/Group;
 
     move-result-object v2
@@ -76,7 +73,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$2;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mGroupArray:[Lcom/sec/samsung/gallery/drawer/Group;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$300(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)[Lcom/sec/samsung/gallery/drawer/Group;
 
     move-result-object v2

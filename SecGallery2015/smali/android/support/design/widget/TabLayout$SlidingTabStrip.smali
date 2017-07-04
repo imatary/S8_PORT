@@ -270,7 +270,6 @@
 
     move-result-object v1
 
-    # setter for: Landroid/support/design/widget/TabLayout;->mIndicatorAnimator:Landroid/support/design/widget/ValueAnimatorCompat;
     invoke-static {v0, v1}, Landroid/support/design/widget/TabLayout;->access$1502(Landroid/support/design/widget/TabLayout;Landroid/support/design/widget/ValueAnimatorCompat;)Landroid/support/design/widget/ValueAnimatorCompat;
 
     move-result-object v6
@@ -316,7 +315,6 @@
 
     const/16 v1, 0x18
 
-    # invokes: Landroid/support/design/widget/TabLayout;->dpToPx(I)I
     invoke-static {v0, v1}, Landroid/support/design/widget/TabLayout;->access$1300(Landroid/support/design/widget/TabLayout;I)I
 
     move-result v8
@@ -492,7 +490,6 @@
     :cond_1
     iget-object v8, p0, Landroid/support/design/widget/TabLayout$SlidingTabStrip;->this$0:Landroid/support/design/widget/TabLayout;
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mMode:I
     invoke-static {v8}, Landroid/support/design/widget/TabLayout;->access$1100(Landroid/support/design/widget/TabLayout;)I
 
     move-result v8
@@ -501,7 +498,6 @@
 
     iget-object v8, p0, Landroid/support/design/widget/TabLayout$SlidingTabStrip;->this$0:Landroid/support/design/widget/TabLayout;
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabGravity:I
     invoke-static {v8}, Landroid/support/design/widget/TabLayout;->access$1200(Landroid/support/design/widget/TabLayout;)I
 
     move-result v8
@@ -550,7 +546,6 @@
 
     const/16 v9, 0x10
 
-    # invokes: Landroid/support/design/widget/TabLayout;->dpToPx(I)I
     invoke-static {v8, v9}, Landroid/support/design/widget/TabLayout;->access$1300(Landroid/support/design/widget/TabLayout;I)I
 
     move-result v2
@@ -595,12 +590,10 @@
     :cond_3
     iget-object v8, p0, Landroid/support/design/widget/TabLayout$SlidingTabStrip;->this$0:Landroid/support/design/widget/TabLayout;
 
-    # setter for: Landroid/support/design/widget/TabLayout;->mTabGravity:I
     invoke-static {v8, v11}, Landroid/support/design/widget/TabLayout;->access$1202(Landroid/support/design/widget/TabLayout;I)I
 
     iget-object v8, p0, Landroid/support/design/widget/TabLayout$SlidingTabStrip;->this$0:Landroid/support/design/widget/TabLayout;
 
-    # invokes: Landroid/support/design/widget/TabLayout;->updateTabViewsLayoutParams()V
     invoke-static {v8}, Landroid/support/design/widget/TabLayout;->access$1400(Landroid/support/design/widget/TabLayout;)V
 
     :cond_4

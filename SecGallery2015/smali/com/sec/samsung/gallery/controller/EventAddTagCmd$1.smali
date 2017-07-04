@@ -77,7 +77,6 @@
 
     iget-boolean v2, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->mOneTagPresent:Z
 
-    # invokes: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->createNlgRequest(ZZ)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$000(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;ZZ)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->val$mediaList:Ljava/util/List;
@@ -90,7 +89,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -125,7 +123,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -159,7 +156,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -175,7 +171,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -202,7 +197,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v7
@@ -229,7 +223,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->isTagPresent(Ljava/util/ArrayList;)Z
     invoke-static {v5, v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$700(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;Ljava/util/ArrayList;)Z
 
     move-result v5
@@ -245,7 +238,6 @@
     :cond_1
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -256,7 +248,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mTag:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$800(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Ljava/lang/String;
 
     move-result-object v8
@@ -392,7 +383,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$200(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
     move-result-object v0
@@ -405,7 +395,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$200(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
     move-result-object v0
@@ -415,7 +404,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -434,7 +422,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -452,7 +439,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$400(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/os/Handler;
 
     move-result-object v0
@@ -467,7 +453,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -488,7 +473,6 @@
     :goto_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -509,7 +493,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v0, v4}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$502(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;Lcom/sec/samsung/gallery/util/FileUtil;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     return-void
@@ -517,7 +500,6 @@
     :cond_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -530,7 +512,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -549,7 +530,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/EventAddTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/EventAddTagCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->mProgressCount:I
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/controller/EventAddTagCmd;->access$602(Lcom/sec/samsung/gallery/controller/EventAddTagCmd;I)I
 
     return-void

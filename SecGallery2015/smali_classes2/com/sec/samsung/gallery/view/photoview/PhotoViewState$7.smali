@@ -49,7 +49,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$1600(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -66,7 +65,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$1700(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v8
@@ -75,7 +73,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$1800(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v8
@@ -105,7 +102,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mIsSightModeFromDetail:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Z
 
     move-result v5
@@ -114,20 +110,17 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->setOverFlowColor(F)V
     invoke-static {v5, v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2000(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;F)V
 
     :cond_2
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->setUpBtnColor(F)V
     invoke-static {v5, v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2100(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;F)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
     const v8, 0x7f12007c
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->setTextMenuColor(FI)V
     invoke-static {v5, v4, v8}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;FI)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
@@ -144,33 +137,28 @@
 
     const v8, 0x7f120290
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->setTextMenuColor(FI)V
     invoke-static {v5, v4, v8}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;FI)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
     const v8, 0x7f1202c2
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->setTextMenuColor(FI)V
     invoke-static {v5, v4, v8}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;FI)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
     const v8, 0x7f1202a3
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->setTextMenuColor(FI)V
     invoke-static {v5, v4, v8}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;FI)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
     const v8, 0x7f120275
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->setTextMenuColor(FI)V
     invoke-static {v5, v4, v8}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;FI)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2300(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -179,7 +167,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2400(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -204,7 +191,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2600(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -219,7 +205,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2500(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -248,7 +233,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2700(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -283,7 +267,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2800(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -299,17 +282,14 @@
     :cond_3
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->setActionBarTitleColor(F)V
     invoke-static {v5, v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$2900(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;F)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->setSelectionViewColor(F)V
     invoke-static {v5, v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$3000(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;F)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$7;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->setActionBarBGColor(F)V
     invoke-static {v5, v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$3100(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;F)V
 
     goto/16 :goto_0

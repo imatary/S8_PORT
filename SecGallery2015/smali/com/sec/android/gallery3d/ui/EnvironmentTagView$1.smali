@@ -51,7 +51,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/android/gallery3d/ui/EnvironmentTagView;->hide(Z)V
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/EnvironmentTagView;->access$000(Lcom/sec/android/gallery3d/ui/EnvironmentTagView;Z)V
 
     return-void

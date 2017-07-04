@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$4;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$900(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$4;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mActionbarTitle:Ljava/lang/CharSequence;
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$800(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)Ljava/lang/CharSequence;
 
     move-result-object v1

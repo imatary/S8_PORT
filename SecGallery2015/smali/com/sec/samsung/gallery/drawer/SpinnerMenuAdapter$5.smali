@@ -41,7 +41,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$5;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mGroupArray:[Lcom/sec/samsung/gallery/drawer/Group;
     invoke-static {v6}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$300(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)[Lcom/sec/samsung/gallery/drawer/Group;
 
     move-result-object v7
@@ -51,7 +50,6 @@
     :try_start_0
     iget-object v6, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$5;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mDrawerItems:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$500(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -60,7 +58,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$5;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mGroupArray:[Lcom/sec/samsung/gallery/drawer/Group;
     invoke-static {v6}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$300(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)[Lcom/sec/samsung/gallery/drawer/Group;
 
     move-result-object v6
@@ -74,7 +71,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$5;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mGroupArray:[Lcom/sec/samsung/gallery/drawer/Group;
     invoke-static {v6}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$300(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)[Lcom/sec/samsung/gallery/drawer/Group;
 
     move-result-object v6
@@ -97,7 +93,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$5;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mDrawerItems:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$500(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -116,7 +111,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$5;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mDrawerItems:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$500(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -175,12 +169,10 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$5;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # invokes: Landroid/widget/ArrayAdapter;->notifyDataSetChanged()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$601(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)V
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$5;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mHandler:Landroid/os/Handler;
     invoke-static {v6}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$700(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)Landroid/os/Handler;
 
     move-result-object v6
@@ -203,7 +195,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$5;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mHandler:Landroid/os/Handler;
     invoke-static {v6}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$700(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)Landroid/os/Handler;
 
     move-result-object v6

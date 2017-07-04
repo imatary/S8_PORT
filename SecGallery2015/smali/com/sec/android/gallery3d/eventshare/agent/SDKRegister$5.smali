@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$5;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$300(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Landroid/content/Context;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$5;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mServiceOffListener:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$serviceOffListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$500(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$serviceOffListener;
 
     move-result-object v0
@@ -81,7 +79,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$5;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$300(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Landroid/content/Context;
 
     move-result-object v0
@@ -91,7 +88,6 @@
     :goto_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$5;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$300(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Landroid/content/Context;
 
     move-result-object v0
@@ -100,7 +96,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$5;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$300(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Landroid/content/Context;
 
     move-result-object v0
@@ -111,7 +106,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$5;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$300(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Landroid/content/Context;
 
     move-result-object v0
@@ -122,7 +116,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$5;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mServiceOffListener:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$serviceOffListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$500(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$serviceOffListener;
 
     move-result-object v0
@@ -136,7 +129,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$5;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$300(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Landroid/content/Context;
 
     move-result-object v0

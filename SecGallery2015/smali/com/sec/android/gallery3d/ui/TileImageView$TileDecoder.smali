@@ -96,7 +96,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/TileImageView$TileDecoder;->this$0:Lcom/sec/android/gallery3d/ui/TileImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->mDecodeQueue:Lcom/sec/android/gallery3d/ui/TileImageView$TileQueue;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$2100(Lcom/sec/android/gallery3d/ui/TileImageView;)Lcom/sec/android/gallery3d/ui/TileImageView$TileQueue;
 
     move-result-object v1
@@ -126,7 +125,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/TileImageView$TileDecoder;->this$0:Lcom/sec/android/gallery3d/ui/TileImageView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/TileImageView;->decodeTile(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Z
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$2200(Lcom/sec/android/gallery3d/ui/TileImageView;Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Z
 
     move-result v1
@@ -135,7 +133,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/TileImageView$TileDecoder;->this$0:Lcom/sec/android/gallery3d/ui/TileImageView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/TileImageView;->queueForUpload(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)V
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$2300(Lcom/sec/android/gallery3d/ui/TileImageView;Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)V
 
     goto :goto_0

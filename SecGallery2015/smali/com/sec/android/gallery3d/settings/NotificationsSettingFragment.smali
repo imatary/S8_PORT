@@ -67,7 +67,7 @@
 .method static synthetic access$200(Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;Ljava/lang/Boolean;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->updateDependantPreferences(Ljava/lang/Boolean;)V
+    invoke-direct {p0, p1}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->enableDependentPreferences(Ljava/lang/Boolean;)V
 
     return-void
 .end method
@@ -112,6 +112,52 @@
     return-void
 .end method
 
+.method private enableDependentPreferences(Ljava/lang/Boolean;)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mInvitationPref:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mInvitedMemberPref:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mPostPref:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mCommentsPref:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mLikesPref:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
+
+    return-void
+.end method
+
 .method private getSAScreenId()Ljava/lang/String;
     .locals 1
 
@@ -139,12 +185,6 @@
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mInvitedMemberPref:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, p1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
-
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->setCheckState(Ljava/lang/Boolean;)V
 
     return-void
 
@@ -184,7 +224,7 @@
 
     if-eqz p1, :cond_1
 
-    const v5, 0x7f0a0823
+    const v5, 0x7f0a082b
 
     :goto_1
     new-array v7, v7, [Ljava/lang/Object;
@@ -209,7 +249,7 @@
     goto :goto_0
 
     :cond_1
-    const v5, 0x7f0a0825
+    const v5, 0x7f0a082d
 
     goto :goto_1
 
@@ -224,7 +264,7 @@
 
     if-eqz p1, :cond_3
 
-    const v5, 0x7f0a0824
+    const v5, 0x7f0a082c
 
     :goto_4
     new-array v7, v7, [Ljava/lang/Object;
@@ -236,7 +276,7 @@
     goto :goto_2
 
     :cond_3
-    const v5, 0x7f0a0826
+    const v5, 0x7f0a082e
 
     goto :goto_4
 
@@ -276,12 +316,6 @@
 
     invoke-virtual {v0, p1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->setCheckState(Ljava/lang/Boolean;)V
-
     return-void
 
     :cond_0
@@ -320,7 +354,7 @@
 
     if-eqz p1, :cond_1
 
-    const v5, 0x7f0a082b
+    const v5, 0x7f0a0833
 
     :goto_1
     new-array v7, v7, [Ljava/lang/Object;
@@ -345,7 +379,7 @@
     goto :goto_0
 
     :cond_1
-    const v5, 0x7f0a082d
+    const v5, 0x7f0a0835
 
     goto :goto_1
 
@@ -360,7 +394,7 @@
 
     if-eqz p1, :cond_3
 
-    const v5, 0x7f0a082c
+    const v5, 0x7f0a0834
 
     :goto_4
     new-array v7, v7, [Ljava/lang/Object;
@@ -372,7 +406,7 @@
     goto :goto_2
 
     :cond_3
-    const v5, 0x7f0a082e
+    const v5, 0x7f0a0836
 
     goto :goto_4
 
@@ -412,12 +446,6 @@
 
     invoke-virtual {v0, p1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->setCheckState(Ljava/lang/Boolean;)V
-
     return-void
 
     :cond_0
@@ -456,7 +484,7 @@
 
     if-eqz p1, :cond_1
 
-    const v5, 0x7f0a082f
+    const v5, 0x7f0a0837
 
     :goto_1
     new-array v7, v7, [Ljava/lang/Object;
@@ -481,7 +509,7 @@
     goto :goto_0
 
     :cond_1
-    const v5, 0x7f0a0831
+    const v5, 0x7f0a0839
 
     goto :goto_1
 
@@ -496,7 +524,7 @@
 
     if-eqz p1, :cond_3
 
-    const v5, 0x7f0a0830
+    const v5, 0x7f0a0838
 
     :goto_4
     new-array v7, v7, [Ljava/lang/Object;
@@ -508,7 +536,7 @@
     goto :goto_2
 
     :cond_3
-    const v5, 0x7f0a0832
+    const v5, 0x7f0a083a
 
     goto :goto_4
 
@@ -548,12 +576,6 @@
 
     invoke-virtual {v0, p1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->setCheckState(Ljava/lang/Boolean;)V
-
     return-void
 
     :cond_0
@@ -592,7 +614,7 @@
 
     if-eqz p1, :cond_1
 
-    const v5, 0x7f0a0827
+    const v5, 0x7f0a082f
 
     :goto_1
     new-array v7, v7, [Ljava/lang/Object;
@@ -617,7 +639,7 @@
     goto :goto_0
 
     :cond_1
-    const v5, 0x7f0a0829
+    const v5, 0x7f0a0831
 
     goto :goto_1
 
@@ -632,7 +654,7 @@
 
     if-eqz p1, :cond_3
 
-    const v5, 0x7f0a0828
+    const v5, 0x7f0a0830
 
     :goto_4
     new-array v7, v7, [Ljava/lang/Object;
@@ -644,7 +666,7 @@
     goto :goto_2
 
     :cond_3
-    const v5, 0x7f0a082a
+    const v5, 0x7f0a0832
 
     goto :goto_4
 
@@ -684,12 +706,6 @@
 
     invoke-virtual {v0, p1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->setCheckState(Ljava/lang/Boolean;)V
-
     return-void
 
     :cond_0
@@ -728,7 +744,7 @@
 
     if-eqz p1, :cond_1
 
-    const v5, 0x7f0a081f
+    const v5, 0x7f0a0826
 
     :goto_1
     new-array v7, v7, [Ljava/lang/Object;
@@ -753,7 +769,7 @@
     goto :goto_0
 
     :cond_1
-    const v5, 0x7f0a0821
+    const v5, 0x7f0a0829
 
     goto :goto_1
 
@@ -768,7 +784,7 @@
 
     if-eqz p1, :cond_3
 
-    const v5, 0x7f0a0820
+    const v5, 0x7f0a0827
 
     :goto_4
     new-array v7, v7, [Ljava/lang/Object;
@@ -780,7 +796,7 @@
     goto :goto_2
 
     :cond_3
-    const v5, 0x7f0a0822
+    const v5, 0x7f0a082a
 
     goto :goto_4
 
@@ -798,114 +814,6 @@
     invoke-static {v5, v2, v6}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;)V
 
     goto :goto_3
-.end method
-
-.method private isAllChecked()Z
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mInvitationPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mInvitedMemberPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mPostPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mCommentsPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mLikesPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method private isAllUnchecked()Z
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mInvitationPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mInvitedMemberPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mPostPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mCommentsPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mLikesPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
 .end method
 
 .method private isNotificationOff()Z
@@ -1070,6 +978,8 @@
     :goto_0
     invoke-virtual {v2, v1}, Landroid/preference/SwitchPreference;->setTitle(I)V
 
+    invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->enableDependentPreferences(Ljava/lang/Boolean;)V
+
     iget-object v1, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mShareNotificationPref:Landroid/preference/SwitchPreference;
 
     new-instance v2, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment$1;
@@ -1113,8 +1023,6 @@
 .method private loadPreferences()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->loadNotificationPref()V
-
     invoke-direct {p0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->loadInvitationPref()V
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->loadJoinedMemberPref()V
@@ -1124,6 +1032,8 @@
     invoke-direct {p0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->loadCommentsPref()V
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->loadLikesPref()V
+
+    invoke-direct {p0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->loadNotificationPref()V
 
     return-void
 .end method
@@ -1137,7 +1047,7 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a0804
+    const v3, 0x7f0a080a
 
     const/4 v4, 0x0
 
@@ -1178,159 +1088,6 @@
     const/4 v1, 0x1
 
     goto :goto_0
-.end method
-
-.method private setCheckState(Ljava/lang/Boolean;)V
-    .locals 1
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-direct {p0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->isAllChecked()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const/4 v0, 0x1
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->updateHeaderPreference(Ljava/lang/Boolean;)V
-
-    :cond_0
-    :goto_0
-    return-void
-
-    :cond_1
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    invoke-direct {p0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->isAllUnchecked()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->updateHeaderPreference(Ljava/lang/Boolean;)V
-
-    goto :goto_0
-.end method
-
-.method public static updateDependantPreferences(Landroid/content/Context;Ljava/lang/Boolean;)V
-    .locals 3
-
-    invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "story_invitation"
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    const-string/jumbo v1, "member_join"
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    const-string/jumbo v1, "new_posts"
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    const-string/jumbo v1, "new_comments"
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    const-string/jumbo v1, "new_likes"
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    return-void
-.end method
-
-.method private updateDependantPreferences(Ljava/lang/Boolean;)V
-    .locals 2
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mInvitationPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mInvitedMemberPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mPostPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mCommentsPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->mLikesPref:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
-
-    return-void
 .end method
 
 .method private updateHeaderPreference(Ljava/lang/Boolean;)V

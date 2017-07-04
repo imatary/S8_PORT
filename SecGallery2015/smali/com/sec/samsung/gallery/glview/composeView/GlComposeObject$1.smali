@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
 
     move-result-object v0
@@ -48,17 +47,14 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
 
     move-result-object v0
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->cancelAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
 
     move-result-object v0

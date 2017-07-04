@@ -111,7 +111,6 @@
     :cond_2
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$2;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$600(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -147,7 +146,6 @@
     const/4 v5, 0x1
 
     :goto_0
-    # invokes: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->exitSelectionMode(Z)V
     invoke-static {v7, v5}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$700(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;Z)V
 
     :goto_1
@@ -400,7 +398,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$2;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mAddItemToChannel:Lcom/sec/samsung/gallery/util/AddItemToChannel;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$200(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/samsung/gallery/util/AddItemToChannel;
 
     move-result-object v3
@@ -413,20 +410,17 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$2;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$300(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
 
     invoke-direct {v4, v5}, Lcom/sec/samsung/gallery/util/AddItemToChannel;-><init>(Landroid/content/Context;)V
 
-    # setter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mAddItemToChannel:Lcom/sec/samsung/gallery/util/AddItemToChannel;
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$202(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;Lcom/sec/samsung/gallery/util/AddItemToChannel;)Lcom/sec/samsung/gallery/util/AddItemToChannel;
 
     :cond_4
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$2;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mAddItemToChannel:Lcom/sec/samsung/gallery/util/AddItemToChannel;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$200(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/samsung/gallery/util/AddItemToChannel;
 
     move-result-object v3
@@ -438,7 +432,6 @@
     :pswitch_4
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$2;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$400(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -447,7 +440,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$2;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$500(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v3

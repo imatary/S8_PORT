@@ -45,7 +45,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->updateCountOnActionBar()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)V
 
     goto :goto_0
@@ -53,7 +52,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0
@@ -68,7 +66,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->updateCountOnActionBarForRemoveTag()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$200(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)V
 
     goto :goto_0
@@ -76,7 +73,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->setActionBarMenuColor()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$300(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)V
 
     goto :goto_0

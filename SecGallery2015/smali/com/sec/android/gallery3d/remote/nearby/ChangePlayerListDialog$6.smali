@@ -48,7 +48,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$6;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mListView:Landroid/widget/ListView;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$1200(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)Landroid/widget/ListView;
 
     move-result-object v1
@@ -63,7 +62,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$6;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mDialog:Landroid/app/AlertDialog;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$700(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)Landroid/app/AlertDialog;
 
     move-result-object v1
@@ -81,7 +79,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$6;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mDialog:Landroid/app/AlertDialog;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$700(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)Landroid/app/AlertDialog;
 
     move-result-object v1
@@ -91,7 +88,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$6;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$1300(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -104,7 +100,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$6;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mListAdapter:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListAdapter;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$300(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListAdapter;
 
     move-result-object v1
@@ -117,7 +112,6 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerItem;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->handleChangePlayer(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerItem;)V
     invoke-static {v2, v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$1400(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerItem;)V
 
     goto :goto_0

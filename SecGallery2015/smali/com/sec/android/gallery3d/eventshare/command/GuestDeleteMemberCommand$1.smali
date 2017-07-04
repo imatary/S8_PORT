@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/GuestDeleteMemberCommand$1;->this$0:Lcom/sec/android/gallery3d/eventshare/command/GuestDeleteMemberCommand;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/command/GuestDeleteMemberCommand;->deleteEvent()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/GuestDeleteMemberCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/GuestDeleteMemberCommand;)V
 
     return-void

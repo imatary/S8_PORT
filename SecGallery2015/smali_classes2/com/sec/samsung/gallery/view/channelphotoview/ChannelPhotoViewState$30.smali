@@ -41,7 +41,6 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->handleViewMode(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$17500(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Z)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$30;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;

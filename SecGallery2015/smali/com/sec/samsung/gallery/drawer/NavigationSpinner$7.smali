@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$7;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mPopupMenu:Landroid/widget/ListPopupWindow;
     invoke-static {v0}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$500(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)Landroid/widget/ListPopupWindow;
 
     move-result-object v0

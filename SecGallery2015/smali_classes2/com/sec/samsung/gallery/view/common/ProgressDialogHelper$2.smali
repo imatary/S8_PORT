@@ -49,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper$2;->this$0:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$000(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;)Landroid/app/ProgressDialog;
 
     move-result-object v1
@@ -58,7 +57,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper$2;->this$0:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mProgressStyle:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$100(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;)I
 
     move-result v1
@@ -67,7 +65,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper$2;->this$0:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$200(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;)Landroid/content/Context;
 
     move-result-object v1
@@ -106,7 +103,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper$2;->this$0:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$000(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;)Landroid/app/ProgressDialog;
 
     move-result-object v1
@@ -120,7 +116,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper$2;->this$0:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mProgressStyle:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$100(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;)I
 
     move-result v1
@@ -129,7 +124,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper$2;->this$0:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mMaxCount:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$300(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;)I
 
     move-result v1
@@ -142,12 +136,10 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper$2;->val$total:I
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mMaxCount:I
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$302(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;I)I
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper$2;->this$0:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$000(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;)Landroid/app/ProgressDialog;
 
     move-result-object v1
@@ -159,7 +151,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper$2;->this$0:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$000(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;)Landroid/app/ProgressDialog;
 
     move-result-object v1

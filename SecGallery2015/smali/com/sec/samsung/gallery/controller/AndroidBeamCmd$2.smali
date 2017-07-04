@@ -47,7 +47,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mListener:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$OnGetFilePathListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$300(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$OnGetFilePathListener;
 
     move-result-object v2
@@ -61,7 +60,6 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->isSbeamOn()Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$400(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Z
 
     move-result v2
@@ -85,7 +83,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$500(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)I
 
     move-result v2
@@ -96,7 +93,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mListener:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$OnGetFilePathListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$300(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$OnGetFilePathListener;
 
     move-result-object v2
@@ -111,7 +107,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$600(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Landroid/app/Activity;
 
     move-result-object v2

@@ -61,16 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsFirstLoadingFinished:Z
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$5700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
-
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsResumed:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$5800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
 
     move-result v0
@@ -79,8 +69,15 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsFromNoItemView:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$5900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
+
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
 
     move-result v0
 
@@ -89,8 +86,7 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsResumed:Z
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$5800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$5900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
 
     move-result v0
 
@@ -98,8 +94,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsFirstLoadingFinished:Z
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$5700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$5800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
 
     move-result v0
 
@@ -107,8 +102,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsFromNoItemView:Z
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$5900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
 
     move-result v0
 
@@ -116,24 +110,20 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->refreshDualScreenFocus()V
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
 
     :goto_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsDualLaunchFromDetail:Z
-    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6102(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
+    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6202(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsFirstLoadingFinished:Z
-    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$5702(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
-
-    # setter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsResumed:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$5802(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
+
+    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$5902(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
 
     :cond_1
     return-void
@@ -141,8 +131,7 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsDualLaunchFromDetail:Z
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
 
     move-result v0
 
@@ -152,16 +141,14 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startDetailViewInUIThread(IIZ)V
-    invoke-static {v0, v2, v2, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;IIZ)V
+    invoke-static {v0, v2, v2, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;IIZ)V
 
     :cond_3
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/utils/SDualScreenUtil;->setInitialActivityLaunch(Z)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$4;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->refreshDualScreenFocus()V
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
 
     goto :goto_0
 .end method

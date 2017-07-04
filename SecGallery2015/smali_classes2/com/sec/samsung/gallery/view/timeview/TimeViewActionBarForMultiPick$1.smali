@@ -59,7 +59,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v5
@@ -68,7 +67,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$100(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -78,7 +76,6 @@
     :cond_0
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->getMaxCount()I
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$200(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)I
 
     move-result v1
@@ -89,7 +86,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$300(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -109,19 +105,16 @@
 
     iget v8, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v5, v8, v4}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$800(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;ILjava/lang/String;)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
     const/4 v8, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->setSelectAllButtonTTS(Ljava/lang/String;)V
     invoke-static {v5, v8}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$900(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;Ljava/lang/String;)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v8
@@ -130,7 +123,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mIsDoneEnabled:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Z
 
     move-result v5
@@ -148,7 +140,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v5
@@ -157,7 +148,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mIsDoneEnabled:Z
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Z
 
     move-result v9
@@ -198,7 +188,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$400(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -244,7 +233,6 @@
     :cond_4
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$500(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -288,7 +276,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$600(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -326,7 +313,6 @@
     :cond_6
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$700(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5

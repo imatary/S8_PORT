@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHidden$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHidden;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHidden;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHidden;->access$000(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHidden;)Landroid/app/ActionBar;
 
     move-result-object v0

@@ -53,7 +53,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter$PartialLoadingTask;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
 
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->mIsLoadingRunning:Z
     invoke-static {v3, v10}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->access$002(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;Z)Z
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -64,7 +63,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter$PartialLoadingTask;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->mSourceMediaSet:Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->access$100(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;)Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v3
@@ -102,7 +100,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter$PartialLoadingTask;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->mItemList:[Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->access$200(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;)[Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v6
@@ -122,7 +119,6 @@
     :cond_1
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter$PartialLoadingTask;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->mItemList:[Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->access$200(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;)[Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v6
@@ -133,7 +129,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter$PartialLoadingTask;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->mItemList:[Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->access$200(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;)[Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v6
@@ -242,12 +237,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter$PartialLoadingTask;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
 
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->mIsLoadingFinished:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->access$302(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter$PartialLoadingTask;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
 
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->mIsLoadingRunning:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->access$002(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;Z)Z
 
     return-void
@@ -292,14 +285,12 @@
 
     move-result v1
 
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->mIsLoadingFinished:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->access$302(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter$PartialLoadingTask;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->mIsLoadingRunning:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;->access$002(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;Z)Z
 
     return-void

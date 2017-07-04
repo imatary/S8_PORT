@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v0
@@ -65,14 +64,12 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mCurrentIndex:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2400(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v1
@@ -83,14 +80,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v1
 
     add-int/lit8 v1, v1, -0x1
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mCurrentIndex:I
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2402(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;I)I
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
@@ -101,7 +96,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mPhotoViewPresentation:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v0
@@ -110,7 +104,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mPhotoViewPresentation:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v0
@@ -122,7 +115,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSource:Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v1
@@ -152,7 +144,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mPhotoViewPresentation:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v0
@@ -161,7 +152,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mPhotoViewPresentation:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v0
@@ -173,7 +163,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSource:Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v1
@@ -230,14 +219,12 @@
 
     iget-wide v8, v4, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateInfo;->version:J
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSourceVersion:J
     invoke-static {v6, v8, v9}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3002(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;J)J
 
     iget v6, v4, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateInfo;->size:I
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
@@ -248,19 +235,16 @@
 
     iget v8, v4, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateInfo;->size:I
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2802(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;I)I
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mContentEnd:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2200(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v6
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
@@ -271,25 +255,21 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mContentEnd:I
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2202(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;I)I
 
     :cond_0
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mActiveEnd:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v6
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
@@ -300,18 +280,15 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mActiveEnd:I
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3102(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;I)I
 
     :cond_1
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v6
@@ -322,7 +299,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
@@ -331,7 +307,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mSize:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v6
@@ -351,7 +326,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mCurrentIndex:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2400(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
@@ -360,7 +334,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mItemPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static {v6, v7}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2502(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;Lcom/sec/android/gallery3d/data/Path;)Lcom/sec/android/gallery3d/data/Path;
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->updateCurrentItem()V
@@ -369,7 +342,6 @@
     :goto_0
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mFirstLoading:Z
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Z
 
     move-result v6
@@ -380,12 +352,10 @@
 
     iget v8, v4, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateInfo;->indexHint:I
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mCurrentIndex:I
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2402(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;I)I
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mFirstLoading:Z
     invoke-static {v6, v10}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2702(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;Z)Z
 
     :cond_4
@@ -401,7 +371,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mCurrentIndex:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2400(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
@@ -411,7 +380,6 @@
     :cond_5
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # invokes: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->updateSlidingWindow()V
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3200(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)V
 
     iget-object v6, v4, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateInfo;->items:Ljava/util/ArrayList;
@@ -422,7 +390,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mContentStart:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
@@ -443,7 +410,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mContentEnd:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2200(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
@@ -461,7 +427,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mData:[Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2300(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)[Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v8
@@ -498,7 +463,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mCurrentIndex:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2400(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
@@ -507,7 +471,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mContentEnd:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2200(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v6
@@ -518,7 +481,6 @@
 
     iget v8, v4, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateInfo;->indexHint:I
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mCurrentIndex:I
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2402(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;I)I
 
     goto/16 :goto_0
@@ -526,14 +488,12 @@
     :cond_8
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mData:[Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2300(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)[Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v6
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mCurrentIndex:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2400(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)I
 
     move-result v8
@@ -549,17 +509,14 @@
     move-object v6, v7
 
     :goto_2
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mItemPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static {v8, v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$2502(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;Lcom/sec/android/gallery3d/data/Path;)Lcom/sec/android/gallery3d/data/Path;
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # invokes: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->updateImageCache()V
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3300(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)V
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mIsExifModified:Z
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3400(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Z
 
     move-result v6
@@ -568,18 +525,15 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mIsExifModified:Z
     invoke-static {v6, v10}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3402(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;Z)Z
 
     :cond_9
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # invokes: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->updateTileProvider()V
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)V
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # invokes: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->updateImageRequests()V
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$200(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)V
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
@@ -588,7 +542,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # invokes: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->fireDataChange()V
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$3600(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)V
 
     return-object v7

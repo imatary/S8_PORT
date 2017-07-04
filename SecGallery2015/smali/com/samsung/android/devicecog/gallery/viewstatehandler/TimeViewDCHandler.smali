@@ -892,7 +892,7 @@
 
     iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/TimeViewDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v6, 0x7f0a079f
+    const v6, 0x7f0a07a5
 
     new-array v5, v5, [Ljava/lang/Object;
 
@@ -960,7 +960,7 @@
 
     iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/TimeViewDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v6, 0x7f0a07b2
+    const v6, 0x7f0a07b8
 
     new-array v5, v5, [Ljava/lang/Object;
 

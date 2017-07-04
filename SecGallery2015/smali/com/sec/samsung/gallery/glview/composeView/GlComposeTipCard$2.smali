@@ -55,7 +55,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;->mCancelBtnObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v2
@@ -70,7 +69,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;->mCancelBtnObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v3
@@ -83,7 +81,6 @@
 
     move-result v3
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;->addHintPopUp(Ljava/lang/String;II)V
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;Ljava/lang/String;II)V
 
     const/4 v0, 0x1
@@ -96,7 +93,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;->removeHintPopup()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeTipCard;)V
 
     const/4 v0, 0x1

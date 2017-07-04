@@ -134,7 +134,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/LruImageCache;->mCacheParams:Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;
 
-    # getter for: Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;->memCacheSize:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;->access$000(Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;)I
 
     move-result v1
@@ -170,7 +169,6 @@
     :cond_0
     iget-object v7, p0, Lcom/sec/android/gallery3d/data/LruImageCache;->mCacheParams:Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;
 
-    # getter for: Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;->diskCacheDir:Ljava/io/File;
     invoke-static {v7}, Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;->access$100(Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;)Ljava/io/File;
 
     move-result-object v1
@@ -476,7 +474,6 @@
 
     const/4 v9, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;->diskCacheDir:Ljava/io/File;
     invoke-static {v7, v9}, Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;->access$102(Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;Ljava/io/File;)Ljava/io/File;
 
     const-string/jumbo v7, "LruImageCache"

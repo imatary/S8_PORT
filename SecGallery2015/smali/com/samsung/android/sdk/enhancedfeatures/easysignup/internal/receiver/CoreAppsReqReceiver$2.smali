@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/receiver/CoreAppsReqReceiver$2;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/receiver/CoreAppsReqReceiver;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/receiver/CoreAppsReqReceiver;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/receiver/CoreAppsReqReceiver;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/receiver/CoreAppsReqReceiver;)Landroid/content/Context;
 
     move-result-object v0

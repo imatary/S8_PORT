@@ -63,7 +63,6 @@
 
     iget-wide v4, v3, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/RegisteredNameListViewAdapter$FaceInfo;->mPersonId:J
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/RegisteredNameListViewAdapter;->showConfirmDialog(Ljava/lang/String;J)V
     invoke-static {v1, v2, v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/RegisteredNameListViewAdapter;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/RegisteredNameListViewAdapter;Ljava/lang/String;J)V
 
     :goto_0

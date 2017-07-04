@@ -1602,7 +1602,7 @@
 
     move-result-object v20
 
-    const v21, 0x7f0b06b4
+    const v21, 0x7f0b06b5
 
     invoke-virtual/range {v20 .. v21}, Landroid/content/res/Resources;->getDimension(I)F
 

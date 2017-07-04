@@ -555,6 +555,22 @@
     return-object v0
 .end method
 
+.method static synthetic access$2800()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->FEATURE_USE_NAVIGATION_BAR:Z
+
+    return v0
+.end method
+
+.method static synthetic access$2900(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->resetFastOptionView()V
+
+    return-void
+.end method
+
 .method static synthetic access$300(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Landroid/app/FragmentManager;)V
     .locals 0
 
@@ -779,10 +795,20 @@
     goto :goto_1
 .end method
 
+.method private createSystemUiVisibilityChangeListener()Landroid/view/View$OnSystemUiVisibilityChangeListener;
+    .locals 1
+
+    new-instance v0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$7;
+
+    invoke-direct {v0, p0}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$7;-><init>(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)V
+
+    return-object v0
+.end method
+
 .method private createViewIcon(I)Landroid/widget/ImageView;
     .locals 4
 
-    const v3, 0x7f0b05eb
+    const v3, 0x7f0b05ec
 
     const/4 v2, -0x2
 
@@ -860,7 +886,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b05ed
+    const v3, 0x7f0b05ee
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -933,6 +959,14 @@
     invoke-virtual {v2, v3, v4, v5}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v1
+
+    sget-object v2, Lcom/sec/samsung/gallery/features/FeatureNames;->IsImmersiveMode:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v2}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
 
     if-lez v1, :cond_0
 
@@ -1693,7 +1727,7 @@
 
     if-eqz v2, :cond_2
 
-    const v2, 0x7f020325
+    const v2, 0x7f020327
 
     invoke-virtual {p0, v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3766,6 +3800,20 @@
     const v1, 0x7f04006f
 
     invoke-virtual {p0, v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->setContentView(I)V
+
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->createSystemUiVisibilityChangeListener()Landroid/view/View$OnSystemUiVisibilityChangeListener;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnSystemUiVisibilityChangeListener(Landroid/view/View$OnSystemUiVisibilityChangeListener;)V
 
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->getIntent()Landroid/content/Intent;
 

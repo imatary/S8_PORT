@@ -49,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/LocalCameraImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/LocalCameraImage;
 
-    # setter for: Lcom/sec/android/gallery3d/data/LocalCameraImage;->mIsDeleted:Z
     invoke-static {v1, v3}, Lcom/sec/android/gallery3d/data/LocalCameraImage;->access$502(Lcom/sec/android/gallery3d/data/LocalCameraImage;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/LocalCameraImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/LocalCameraImage;

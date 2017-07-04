@@ -1310,7 +1310,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mResource:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b073f
+    const v1, 0x7f0b0740
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

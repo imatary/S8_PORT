@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$300(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v0
@@ -56,14 +55,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$300(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mThis:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -107,7 +104,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$700(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v1
@@ -116,14 +112,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$700(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mThis:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -136,7 +130,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$700(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v1
@@ -145,14 +138,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$700(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mThis:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -176,7 +167,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mLongClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlLongClickListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$400(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlLongClickListener;
 
     move-result-object v0
@@ -187,14 +177,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mLongClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlLongClickListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$400(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlLongClickListener;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mThis:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -212,7 +200,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/GlObject;->onLongClicked()Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$500(Lcom/sec/android/gallery3d/glcore/GlObject;)Z
 
     move-result v1
@@ -243,7 +230,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMoveListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$000(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
 
     move-result-object v0
@@ -254,14 +240,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMoveListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$000(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mThis:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -301,7 +285,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMultiSelectListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$600(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
 
     move-result-object v0
@@ -312,14 +295,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMultiSelectListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$600(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mThis:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -345,7 +326,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMultiSelectListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$600(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
 
     move-result-object v1
@@ -354,14 +334,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMultiSelectListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$600(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mThis:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -381,7 +359,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMultiSelectListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$600(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
 
     move-result-object v1
@@ -390,14 +367,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMultiSelectListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$600(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mThis:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -419,7 +394,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMoveListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$000(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
 
     move-result-object v0
@@ -430,14 +404,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMoveListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$000(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mThis:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v1
@@ -485,7 +457,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMoveListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$000(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
 
     move-result-object v0
@@ -496,14 +467,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mMoveListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$000(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mThis:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v1
@@ -563,7 +532,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mSecondaryClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlSecondaryClickListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$200(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlSecondaryClickListener;
 
     move-result-object v0
@@ -574,14 +542,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mSecondaryClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlSecondaryClickListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$200(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject$GlSecondaryClickListener;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlObject$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlObject;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlObject;->mThis:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlObject;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2

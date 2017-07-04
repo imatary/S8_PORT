@@ -47,12 +47,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mBrowseStart:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1302(Lcom/sec/samsung/gallery/view/allview/AllViewState;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$2;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mMediaItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1400(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
 
     move-result-object v0
@@ -61,7 +59,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$2;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/allview/AllViewState;->checkMediaAvailability()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1500(Lcom/sec/samsung/gallery/view/allview/AllViewState;)V
 
     return-void

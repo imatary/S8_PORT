@@ -71,25 +71,21 @@
     :pswitch_1
     invoke-virtual {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->removePreviewCover()V
 
-    # invokes: Lcom/sec/android/app/ve/preview/ProjectPreview2;->handlePlayEventCompletion()V
     invoke-static {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$000(Lcom/sec/android/app/ve/preview/ProjectPreview2;)V
 
     goto :goto_0
 
     :pswitch_2
-    # invokes: Lcom/sec/android/app/ve/preview/ProjectPreview2;->handleStopEventCompletion()V
     invoke-static {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$100(Lcom/sec/android/app/ve/preview/ProjectPreview2;)V
 
     goto :goto_0
 
     :pswitch_3
-    # invokes: Lcom/sec/android/app/ve/preview/ProjectPreview2;->handleCompletedEvent()V
     invoke-static {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$200(Lcom/sec/android/app/ve/preview/ProjectPreview2;)V
 
     goto :goto_0
 
     :pswitch_4
-    # invokes: Lcom/sec/android/app/ve/preview/ProjectPreview2;->handlePlayTimeError()V
     invoke-static {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$300(Lcom/sec/android/app/ve/preview/ProjectPreview2;)V
 
     goto :goto_0

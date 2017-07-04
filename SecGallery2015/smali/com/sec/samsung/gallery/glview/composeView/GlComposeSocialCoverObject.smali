@@ -149,7 +149,6 @@
 
     const/4 v2, 0x1
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -184,14 +183,12 @@
 
     invoke-virtual {p0, v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->setUseTouchEvent(Z)V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->mCoverObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;)Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->addChild(Lcom/sec/android/gallery3d/glcore/GlObject;)I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -234,7 +231,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mSharedFriendsObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->mSharedFriendsClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v1
@@ -243,7 +239,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mSharedFriendsObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->mFriendsGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v1
@@ -268,7 +263,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mPlayIconObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->mHLVPlayIconClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v1
@@ -277,7 +271,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mPlayIconObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->mHLVGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v1
@@ -986,7 +979,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b081b
+    const v1, 0x7f0b081c
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1000,7 +993,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b080e
+    const v1, 0x7f0b080f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1010,7 +1003,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0812
+    const v1, 0x7f0b0813
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1020,7 +1013,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0810
+    const v1, 0x7f0b0811
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1030,7 +1023,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0811
+    const v1, 0x7f0b0812
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1040,7 +1033,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b080f
+    const v1, 0x7f0b0810
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1050,7 +1043,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0817
+    const v1, 0x7f0b0818
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1060,7 +1053,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b081a
+    const v1, 0x7f0b081b
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1070,7 +1063,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0816
+    const v1, 0x7f0b0817
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1080,7 +1073,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0818
+    const v1, 0x7f0b0819
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1090,7 +1083,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0819
+    const v1, 0x7f0b081a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1100,7 +1093,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0815
+    const v1, 0x7f0b0816
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1110,7 +1103,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0814
+    const v1, 0x7f0b0815
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1120,7 +1113,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0813
+    const v1, 0x7f0b0814
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1295,6 +1288,16 @@
 
 .method private resetAttributes()V
     .locals 2
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mContext:Landroid/content/Context;
+
+    check-cast v0, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-static {v0}, Lcom/sec/android/gallery3d/util/GalleryUtils;->getNavigationBarMargin(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialCoverObject;->mNavigationPixelSize:I
 
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->getNavigationBarPosition()Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$NavigationPos;
 

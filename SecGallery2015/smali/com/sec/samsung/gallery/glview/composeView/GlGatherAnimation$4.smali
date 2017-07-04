@@ -178,7 +178,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mHeadObj:Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
     invoke-static/range {v24 .. v24}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
 
     move-result-object v24
@@ -193,7 +192,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mHeadObj:Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
     invoke-static/range {v24 .. v24}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
 
     move-result-object v24
@@ -336,7 +334,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mThumbDragSet:Ljava/util/ArrayList;
     invoke-static/range {v24 .. v24}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)Ljava/util/ArrayList;
 
     move-result-object v24
@@ -424,7 +421,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mThumbDragSet:Ljava/util/ArrayList;
     invoke-static/range {v24 .. v24}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)Ljava/util/ArrayList;
 
     move-result-object v24
@@ -548,7 +544,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mThumbDragSet:Ljava/util/ArrayList;
     invoke-static/range {v24 .. v24}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)Ljava/util/ArrayList;
 
     move-result-object v24
@@ -604,7 +599,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$4;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mHeadObj:Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
 
     move-result-object v0
@@ -617,7 +611,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$4;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mHeadObj:Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
 
     move-result-object v0

@@ -57,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/DetailsAddressResolver$AddressLookupJob;->this$0:Lcom/sec/android/gallery3d/ui/DetailsAddressResolver;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/DetailsAddressResolver;->mAppContext:Lcom/sec/android/gallery3d/interfaces/DefaultAppContext;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/DetailsAddressResolver;->access$000(Lcom/sec/android/gallery3d/ui/DetailsAddressResolver;)Lcom/sec/android/gallery3d/interfaces/DefaultAppContext;
 
     move-result-object v0

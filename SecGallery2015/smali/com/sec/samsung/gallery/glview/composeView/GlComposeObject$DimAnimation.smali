@@ -60,7 +60,6 @@
 
     add-float/2addr v1, v2
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->setDimEx(F)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->access$900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;F)V
 
     return-void

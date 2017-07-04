@@ -51,7 +51,6 @@
 
     const-string/jumbo v2, "wlan0"
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mDevice:Lcom/samsung/android/allshare/Device;
     invoke-static {p1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$100(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;)Lcom/samsung/android/allshare/Device;
 
     move-result-object v3
@@ -77,7 +76,6 @@
 
     check-cast v2, Ljava/net/HttpURLConnection;
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mURLConnection:Ljava/net/HttpURLConnection;
     invoke-static {p1, v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$202(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;Ljava/net/HttpURLConnection;)Ljava/net/HttpURLConnection;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -144,7 +142,6 @@
 
     check-cast v2, Ljava/net/HttpURLConnection;
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mURLConnection:Ljava/net/HttpURLConnection;
     invoke-static {v3, v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$202(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;Ljava/net/HttpURLConnection;)Ljava/net/HttpURLConnection;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -192,7 +189,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$300(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v1
@@ -214,14 +210,12 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$400(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;)Lcom/sec/android/gallery3d/data/Path;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mDataVersion:J
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$500(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;)J
 
     move-result-wide v2
@@ -301,7 +295,6 @@
     :try_start_2
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->convertToThumbnail(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     invoke-static {v1, v6}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$600(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -356,7 +349,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mURLConnection:Ljava/net/HttpURLConnection;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$200(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;)Ljava/net/HttpURLConnection;
 
     move-result-object v1
@@ -368,7 +360,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mURLConnection:Ljava/net/HttpURLConnection;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$200(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;)Ljava/net/HttpURLConnection;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
@@ -439,7 +430,6 @@
     :try_start_5
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mURLConnection:Ljava/net/HttpURLConnection;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$200(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;)Ljava/net/HttpURLConnection;
 
     move-result-object v1
@@ -448,7 +438,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mURLConnection:Ljava/net/HttpURLConnection;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$200(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;)Ljava/net/HttpURLConnection;
 
     move-result-object v1
@@ -459,7 +448,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mURLConnection:Ljava/net/HttpURLConnection;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$200(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;)Ljava/net/HttpURLConnection;
 
     move-result-object v1

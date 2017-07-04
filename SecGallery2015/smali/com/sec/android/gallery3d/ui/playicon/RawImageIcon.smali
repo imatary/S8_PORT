@@ -69,7 +69,7 @@
 
     invoke-direct {v4}, Landroid/graphics/Paint;-><init>()V
 
-    const v9, 0x7f0b05c1
+    const v9, 0x7f0b05c2
 
     invoke-virtual {v5, v9}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -107,7 +107,7 @@
 
     invoke-virtual {v4, v9, v12, v10, v0}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
-    const v9, 0x7f0b05c0
+    const v9, 0x7f0b05c1
 
     invoke-virtual {v5, v9}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -220,7 +220,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b078e
+    const v4, 0x7f0b078f
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -234,7 +234,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b078d
+    const v4, 0x7f0b078e
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 

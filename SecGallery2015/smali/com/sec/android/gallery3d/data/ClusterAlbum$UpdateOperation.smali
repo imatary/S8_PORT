@@ -129,7 +129,6 @@
 
     iget v3, p0, Lcom/sec/android/gallery3d/data/ClusterAlbum$UpdateOperation;->mPersonId:I
 
-    # invokes: Lcom/sec/android/gallery3d/data/ClusterAlbum;->updateSelectedFaces(Ljava/util/ArrayList;Ljava/lang/String;I)V
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/gallery3d/data/ClusterAlbum;->access$200(Lcom/sec/android/gallery3d/data/ClusterAlbum;Ljava/util/ArrayList;Ljava/lang/String;I)V
 
     return-void
@@ -295,7 +294,6 @@
 
     iget-object v5, v0, Lcom/sec/android/gallery3d/data/ClusterAlbum$UpdateOperation;->this$0:Lcom/sec/android/gallery3d/data/ClusterAlbum;
 
-    # getter for: Lcom/sec/android/gallery3d/data/ClusterAlbum;->mPaths:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/ClusterAlbum;->access$100(Lcom/sec/android/gallery3d/data/ClusterAlbum;)Ljava/util/ArrayList;
 
     move-result-object v5

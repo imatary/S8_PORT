@@ -34,10 +34,12 @@
 
 
 # virtual methods
-.method public addItemToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;)V
-    .locals 0
+.method public addItemToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;)Z
+    .locals 1
 
-    return-void
+    const/4 v0, 0x1
+
+    return v0
 .end method
 
 .method public getComposeMediaItemAdapter()Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
@@ -45,8 +47,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$36;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     move-result-object v0
 
@@ -82,8 +83,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$36;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->selectMedia(Lcom/sec/android/gallery3d/data/MediaItem;IZ)V
-    invoke-static {v2, v0, v1, v3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Lcom/sec/android/gallery3d/data/MediaItem;IZ)V
+    invoke-static {v2, v0, v1, v3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Lcom/sec/android/gallery3d/data/MediaItem;IZ)V
 
     return v3
 .end method
@@ -93,8 +93,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$36;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->startDetailViewInUIThread(I)V
-    invoke-static {v0, p2}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
+    invoke-static {v0, p2}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
 
     return-void
 .end method

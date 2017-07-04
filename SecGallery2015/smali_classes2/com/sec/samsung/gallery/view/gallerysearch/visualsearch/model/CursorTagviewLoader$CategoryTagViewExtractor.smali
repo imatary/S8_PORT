@@ -450,7 +450,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader$CategoryTagViewExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;->mVisionCloudUtils:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;)Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
     move-result-object v3
@@ -459,7 +458,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader$CategoryTagViewExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;->mVisionCloudUtils:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;)Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
     move-result-object v3
@@ -474,7 +472,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader$CategoryTagViewExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;->mVisionCloudUtils:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTagviewLoader;)Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
     move-result-object v3

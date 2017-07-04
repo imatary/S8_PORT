@@ -126,7 +126,6 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->VIDEO_SEARCH_DIR:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$100()Ljava/lang/String;
 
     move-result-object v2
@@ -201,7 +200,6 @@
 .method private checkIsDNGFile(Ljava/lang/String;)Z
     .locals 1
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->FEATURE_USE_QURAM_DECODER:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$1600()Z
 
     move-result v0
@@ -246,7 +244,6 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->getBitmapWorkerTask(Landroid/widget/ImageView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$1500(Landroid/widget/ImageView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;
 
     move-result-object v0
@@ -283,7 +280,6 @@
 
     iget-object v3, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mPauseWorkLock:Ljava/lang/Object;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Ljava/lang/Object;
 
     move-result-object v4
@@ -296,7 +292,6 @@
 
     iget-object v3, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mPauseWork:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Z
 
     move-result v3
@@ -316,7 +311,6 @@
 
     iget-object v3, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mPauseWorkLock:Ljava/lang/Object;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Ljava/lang/Object;
 
     move-result-object v3
@@ -374,7 +368,6 @@
 
     iget-object v3, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mExitTasksEarly:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Z
 
     move-result v3
@@ -389,13 +382,11 @@
 
     iget-object v4, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->mPath:Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->getBitmapFromCache(Ljava/lang/String;)Landroid/graphics/Bitmap;
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$500(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
     :cond_1
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->FEATURE_IS_NOS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$600()Z
 
     move-result v3
@@ -435,7 +426,6 @@
 
     iget-object v3, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mExitTasksEarly:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Z
 
     move-result v3
@@ -481,7 +471,6 @@
 
     if-nez v3, :cond_2
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->THUMBNAIL_SIZE:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$700()I
 
     move-result v3
@@ -514,7 +503,6 @@
 
     iget-object v3, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mCacheService:Lcom/sec/android/gallery3d/data/ImageCacheServiceInterface;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$1000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Lcom/sec/android/gallery3d/data/ImageCacheServiceInterface;
 
     move-result-object v4
@@ -569,7 +557,6 @@
 
     iget-object v3, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$1100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Landroid/content/Context;
 
     move-result-object v3
@@ -595,7 +582,6 @@
 
     iget-object v3, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mResources:Landroid/content/res/Resources;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$1200(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Landroid/content/res/Resources;
 
     move-result-object v3
@@ -662,7 +648,6 @@
 
     if-eqz v14, :cond_d
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->FACE_THUMBNAIL_SIZE:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$800()I
 
     move-result v3
@@ -685,7 +670,6 @@
 
     if-eqz v14, :cond_b
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->FACE_THUMBNAIL_SIZE:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$800()I
 
     move-result v4
@@ -762,7 +746,6 @@
     goto :goto_5
 
     :cond_b
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->THUMBNAIL_SIZE:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$700()I
 
     move-result v4
@@ -798,7 +781,6 @@
 
     iget v7, v15, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->getRectOfObject(Landroid/graphics/RectF;FFI)Landroid/graphics/RectF;
     invoke-static {v3, v4, v5, v6, v7}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;Landroid/graphics/RectF;FFI)Landroid/graphics/RectF;
 
     move-result-object v16
@@ -818,7 +800,6 @@
     goto/16 :goto_5
 
     :cond_d
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->THUMBNAIL_SIZE:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$700()I
 
     move-result v3
@@ -832,7 +813,6 @@
 
     iget-object v3, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mResources:Landroid/content/res/Resources;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$1200(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Landroid/content/res/Resources;
 
     move-result-object v3
@@ -845,7 +825,6 @@
 
     iget-object v5, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$1100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Landroid/content/Context;
 
     move-result-object v5
@@ -854,7 +833,6 @@
 
     iget-boolean v6, v0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->mIsVideo:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->getBrokenThumbnailBitmap(Landroid/content/Context;ZZ)Landroid/graphics/Bitmap;
     invoke-static {v4, v5, v6, v14}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$1300(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;Landroid/content/Context;ZZ)Landroid/graphics/Bitmap;
 
     move-result-object v4
@@ -900,7 +878,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mPauseWorkLock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Ljava/lang/Object;
 
     move-result-object v1
@@ -910,7 +887,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mPauseWorkLock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Ljava/lang/Object;
 
     move-result-object v0
@@ -952,7 +928,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mExitTasksEarly:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;)Z
 
     move-result v1
@@ -981,7 +956,6 @@
 
     move-result v2
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->setImageDrawable(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;Z)V
     invoke-static {v1, v0, p1, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->access$1400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;Z)V
 
     :cond_2

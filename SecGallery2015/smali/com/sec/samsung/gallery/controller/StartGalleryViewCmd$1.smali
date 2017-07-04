@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     const-class v1, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;->mBundle:Landroid/os/Bundle;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;->access$000()Landroid/os/Bundle;
 
     move-result-object v2

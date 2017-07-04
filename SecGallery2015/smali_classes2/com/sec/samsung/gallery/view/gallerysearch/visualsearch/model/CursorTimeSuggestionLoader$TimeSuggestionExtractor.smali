@@ -50,7 +50,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader$TimeSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;)Landroid/content/Context;
 
     move-result-object v2
@@ -65,7 +64,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader$TimeSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;->mMediaId:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;)I
 
     move-result v2
@@ -80,7 +78,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader$TimeSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;->mSubCategory:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;)Ljava/lang/String;
 
     move-result-object v2
@@ -89,7 +86,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader$TimeSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;->mMediaId:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorTimeSuggestionLoader;)I
 
     move-result v2

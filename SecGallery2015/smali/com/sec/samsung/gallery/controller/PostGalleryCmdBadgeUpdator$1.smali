@@ -34,7 +34,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$1;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->mBadgeUpdateTask:Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->access$100(Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;)Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;
 
     move-result-object v0
@@ -43,7 +42,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$1;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->mBadgeUpdateTask:Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->access$100(Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;)Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;
 
     move-result-object v0
@@ -54,7 +52,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->mBadgeUpdateTask:Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->access$102(Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;)Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;
 
     :cond_0
@@ -64,19 +61,16 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$1;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->mActivity:Landroid/app/Activity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->access$000(Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;)Landroid/app/Activity;
 
     move-result-object v2
 
     invoke-direct {v1, v2}, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;-><init>(Landroid/app/Activity;)V
 
-    # setter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->mBadgeUpdateTask:Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->access$102(Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;)Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$1;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->mBadgeUpdateTask:Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->access$100(Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;)Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$BadgeUpdateThread;
 
     move-result-object v0
@@ -109,7 +103,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator$1;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->mActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->access$000(Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;)Landroid/app/Activity;
 
     move-result-object v0

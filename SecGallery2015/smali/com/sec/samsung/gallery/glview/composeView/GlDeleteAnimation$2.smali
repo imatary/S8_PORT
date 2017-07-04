@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;->startTransAnimation()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;)V
 
     return-void

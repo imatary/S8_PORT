@@ -53,7 +53,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->access$700(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -62,7 +61,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->access$800(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -80,7 +78,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->mMenu:Landroid/view/Menu;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;)Landroid/view/Menu;
 
     move-result-object v1
@@ -89,7 +86,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->updateOptionMenu()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->access$300(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;)V
 
     :cond_2
@@ -103,7 +99,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->access$900(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -145,7 +140,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit$2;->val$numberOfSelectedItem:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->access$1100(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;ILjava/lang/String;)V
 
     goto :goto_0
@@ -153,7 +147,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;->access$1000(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

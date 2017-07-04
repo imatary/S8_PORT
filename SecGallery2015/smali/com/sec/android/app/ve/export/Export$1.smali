@@ -39,13 +39,11 @@
 
     iget-object v1, p0, Lcom/sec/android/app/ve/export/Export$1;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # setter for: Lcom/sec/android/app/ve/export/Export;->exportedFileURI:Landroid/net/Uri;
     invoke-static {v1, p2}, Lcom/sec/android/app/ve/export/Export;->access$002(Lcom/sec/android/app/ve/export/Export;Landroid/net/Uri;)Landroid/net/Uri;
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/ve/export/Export$1;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mService:Lcom/sec/android/app/ve/export/IExportService;
     invoke-static {v1}, Lcom/sec/android/app/ve/export/Export;->access$100(Lcom/sec/android/app/ve/export/Export;)Lcom/sec/android/app/ve/export/IExportService;
 
     move-result-object v1

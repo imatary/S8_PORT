@@ -21,7 +21,6 @@
 
     invoke-direct {p0, p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/BaseRequest;-><init>(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/BaseRequest$Builder;)V
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/GetGroupInfoRequest$Builder;->id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/GetGroupInfoRequest$Builder;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/GetGroupInfoRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0

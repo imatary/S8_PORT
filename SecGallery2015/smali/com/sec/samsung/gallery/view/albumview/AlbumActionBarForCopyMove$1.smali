@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;->access$000(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;)Landroid/app/ActionBar;
 
     move-result-object v1
@@ -50,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;->access$100(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;)Landroid/app/ActionBar;
 
     move-result-object v1

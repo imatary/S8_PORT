@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$2;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mIsPickMode:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$300(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)Z
 
     move-result v0
@@ -52,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$2;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mIsMultiPickMode:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$400(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)Z
 
     move-result v0

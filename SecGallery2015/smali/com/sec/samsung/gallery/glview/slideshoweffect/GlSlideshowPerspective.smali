@@ -108,7 +108,6 @@
 
     aget-object v2, v2, v1
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v2
@@ -117,7 +116,6 @@
 
     aget-object v3, v3, v1
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v3
@@ -126,7 +124,6 @@
 
     aget-object v4, v4, v1
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mZ:F
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v4
@@ -139,7 +136,6 @@
 
     aget-object v2, v2, v1
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mRoll:F
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v2
@@ -150,7 +146,6 @@
 
     aget-object v2, v2, v1
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mDim:F
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$100(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v2
@@ -275,14 +270,12 @@
 
     aget-object v0, v0, v5
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v0, v4}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$302(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
 
     aget-object v0, v0, v5
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v0, v4}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$402(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -295,7 +288,6 @@
 
     div-float/2addr v1, v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$302(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -308,7 +300,6 @@
 
     div-float/2addr v1, v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$402(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -321,7 +312,6 @@
 
     iget v1, v1, Lcom/sec/samsung/gallery/glview/GlSlideShowView;->mWidthSpace:F
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$302(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -338,7 +328,6 @@
 
     div-float/2addr v1, v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$402(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -355,7 +344,6 @@
 
     div-float/2addr v1, v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$302(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -374,7 +362,6 @@
 
     mul-float/2addr v1, v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$402(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -391,7 +378,6 @@
 
     mul-float/2addr v1, v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$302(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -404,7 +390,6 @@
 
     neg-float v1, v1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$402(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -417,12 +402,10 @@
 
     aget-object v1, v1, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$302(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -435,12 +418,10 @@
 
     aget-object v1, v1, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$402(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     return-void
@@ -477,7 +458,6 @@
 
     aget-object v0, v0, p2
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v0
@@ -486,7 +466,6 @@
 
     aget-object v1, v1, p2
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v1
@@ -495,7 +474,6 @@
 
     aget-object v2, v2, p2
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mZ:F
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v2
@@ -508,7 +486,6 @@
 
     aget-object v0, v0, p2
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mRoll:F
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v0
@@ -519,7 +496,6 @@
 
     aget-object v0, v0, p2
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mDim:F
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$100(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v0
@@ -893,7 +869,6 @@
 
     sub-float/2addr v2, v3
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mZ:F
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$002(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -910,7 +885,6 @@
 
     sub-float/2addr v2, v3
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mDim:F
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$102(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -923,7 +897,6 @@
 
     mul-float/2addr v2, v3
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mRoll:F
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$202(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     add-int/lit8 v0, v0, 0x1
@@ -947,12 +920,10 @@
 
     aget-object v2, v2, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mRoll:F
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mRoll:F
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$202(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -971,12 +942,10 @@
 
     aget-object v2, v2, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mDim:F
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$100(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mDim:F
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$102(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->mPerspectiveObjInfoArray:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;
@@ -995,12 +964,10 @@
 
     aget-object v2, v2, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mZ:F
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mZ:F
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$002(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;F)F
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective;->setInitialArrayPosition()V
@@ -1355,7 +1322,6 @@
 
     aget-object v13, v13, v10
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mRoll:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v13
@@ -1366,7 +1332,6 @@
 
     aget-object v14, v14, v12
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mRoll:F
     invoke-static {v14}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v14
@@ -1400,7 +1365,6 @@
 
     aget-object v13, v13, v10
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v13
@@ -1411,7 +1375,6 @@
 
     aget-object v14, v14, v12
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v14}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v14
@@ -1428,7 +1391,6 @@
 
     aget-object v13, v13, v10
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v13
@@ -1439,7 +1401,6 @@
 
     aget-object v14, v14, v12
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v14}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v14
@@ -1456,7 +1417,6 @@
 
     aget-object v13, v13, v10
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mZ:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v13
@@ -1467,7 +1427,6 @@
 
     aget-object v14, v14, v12
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mZ:F
     invoke-static {v14}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v14
@@ -1486,7 +1445,6 @@
 
     aget-object v13, v13, v10
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mDim:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$100(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v13
@@ -1497,7 +1455,6 @@
 
     aget-object v14, v14, v12
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mDim:F
     invoke-static {v14}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$100(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v14
@@ -1531,7 +1488,6 @@
 
     aget-object v13, v13, v10
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mRoll:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v13
@@ -1542,7 +1498,6 @@
 
     aget-object v14, v14, v10
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mRoll:F
     invoke-static {v14}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v14
@@ -1580,7 +1535,6 @@
 
     aget-object v13, v13, v10
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v13
@@ -1607,7 +1561,6 @@
 
     aget-object v13, v13, v10
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v13
@@ -1636,7 +1589,6 @@
 
     aget-object v13, v13, v10
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mZ:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v13
@@ -1698,7 +1650,6 @@
 
     aget-object v13, v13, v12
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mZ:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v13
@@ -1709,7 +1660,6 @@
 
     aget-object v14, v14, v12
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mZ:F
     invoke-static {v14}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v14
@@ -1730,7 +1680,6 @@
 
     aget-object v13, v13, v12
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mX:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v13
@@ -1741,7 +1690,6 @@
 
     aget-object v14, v14, v12
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->mY:F
     invoke-static {v14}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowPerspective$PerspectiveObjPositionInfo;)F
 
     move-result v14

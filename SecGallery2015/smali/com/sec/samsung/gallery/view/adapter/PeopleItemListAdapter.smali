@@ -159,7 +159,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b07f0
+    const v5, 0x7f0b07f1
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -454,7 +454,7 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/adapter/PeopleItemListAdapter;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f0202d3
+    const v9, 0x7f0202d5
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

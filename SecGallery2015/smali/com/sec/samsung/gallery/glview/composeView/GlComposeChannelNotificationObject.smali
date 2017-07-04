@@ -109,7 +109,6 @@
 
     const/4 v2, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -118,7 +117,6 @@
 
     iput v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mFoucsedBtnType:I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$Builder;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$Builder;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$Builder;)Landroid/content/Context;
 
     move-result-object v0
@@ -847,7 +845,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mCardObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->resetLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;)V
 
     new-instance v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;
@@ -864,7 +861,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mThumbnailObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;->resetLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;)V
 
     new-instance v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;
@@ -883,7 +879,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mTitleObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;->resetLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;)V
 
     new-instance v6, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;
@@ -906,7 +901,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mSubTitleObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;->resetLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;)V
 
     new-instance v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;
@@ -939,7 +933,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mDeleteObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;->resetLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;->access$900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mDeleteObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;
@@ -1028,7 +1021,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mDeleteObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;->resetLayout()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;->access$900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;)V
 
     if-eqz p1, :cond_0
@@ -1260,22 +1252,18 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mCardObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->resetLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mThumbnailObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;->resetLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mTitleObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;->resetLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mSubTitleObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;->resetLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationTextObject;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mDeleteObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;
@@ -1284,7 +1272,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mDeleteObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;->resetLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;->access$900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationButtonObject;)V
 
     :cond_0

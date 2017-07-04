@@ -44,7 +44,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->mLongTextToast:Landroid/widget/Toast;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;)Landroid/widget/Toast;
 
     move-result-object v1
@@ -55,7 +54,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v1
@@ -66,7 +64,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v1
@@ -83,7 +80,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->misUserTagInputType:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;)Z
 
     move-result v1
@@ -107,13 +103,11 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->mLongTextToast:Landroid/widget/Toast;
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->access$402(Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;Landroid/widget/Toast;)Landroid/widget/Toast;
 
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->mLongTextToast:Landroid/widget/Toast;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/EditTextController;)Landroid/widget/Toast;
 
     move-result-object v1

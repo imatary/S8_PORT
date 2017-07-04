@@ -114,12 +114,10 @@
 
     move-object/from16 v17, v0
 
-    # invokes: Lcom/sec/samsung/gallery/access/cmh/CMHInterface;->getAvailableFolderNameList(Landroid/content/Context;)Ljava/util/ArrayList;
     invoke-static/range {v17 .. v17}, Lcom/sec/samsung/gallery/access/cmh/CMHInterface;->access$200(Landroid/content/Context;)Ljava/util/ArrayList;
 
     move-result-object v16
 
-    # invokes: Lcom/sec/samsung/gallery/access/cmh/CMHInterface;->getHiddenFolderList()Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/samsung/gallery/access/cmh/CMHInterface;->access$300()Ljava/util/ArrayList;
 
     move-result-object v10
@@ -261,7 +259,6 @@
 
     if-lez v18, :cond_4
 
-    # invokes: Lcom/sec/samsung/gallery/access/cmh/CMHInterface;->deleteFolder(Ljava/lang/String;)V
     invoke-static {v11}, Lcom/sec/samsung/gallery/access/cmh/CMHInterface;->access$400(Ljava/lang/String;)V
 
     goto :goto_2

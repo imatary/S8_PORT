@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand$1;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->mEventState:Lcom/sec/android/gallery3d/eventshare/EventState;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;)Lcom/sec/android/gallery3d/eventshare/EventState;
 
     move-result-object v0

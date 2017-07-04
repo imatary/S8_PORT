@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartChannelViewMode$1;->this$0:Lcom/sec/samsung/gallery/controller/StartChannelViewMode;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartChannelViewMode;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartChannelViewMode;->access$000(Lcom/sec/samsung/gallery/controller/StartChannelViewMode;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -56,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartChannelViewMode$1;->this$0:Lcom/sec/samsung/gallery/controller/StartChannelViewMode;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartChannelViewMode;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartChannelViewMode;->access$000(Lcom/sec/samsung/gallery/controller/StartChannelViewMode;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -79,7 +77,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartChannelViewMode$1;->this$0:Lcom/sec/samsung/gallery/controller/StartChannelViewMode;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartChannelViewMode;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartChannelViewMode;->access$000(Lcom/sec/samsung/gallery/controller/StartChannelViewMode;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

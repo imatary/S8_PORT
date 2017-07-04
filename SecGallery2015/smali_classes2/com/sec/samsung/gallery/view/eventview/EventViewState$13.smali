@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$13;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->startDetailView(II)V
     invoke-static {v0, p1, p2}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$3900(Lcom/sec/samsung/gallery/view/eventview/EventViewState;II)V
 
     const/4 v0, 0x1

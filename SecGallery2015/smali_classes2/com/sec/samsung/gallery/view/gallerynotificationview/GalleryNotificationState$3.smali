@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$3;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->access$300(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -62,7 +61,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$3;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->access$400(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -123,14 +121,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$3;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mLastTabPosition:I
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->access$102(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;I)I
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$3;->insertSALog(I)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$3;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mViewPagerAdapter:Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationPagerAdapter;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->access$200(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;)Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationPagerAdapter;
 
     move-result-object v0

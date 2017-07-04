@@ -3156,6 +3156,82 @@
     return v0
 .end method
 
+.method private handlePageUpDownEvent(F)Z
+    .locals 3
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mContext:Landroid/content/Context;
+
+    check-cast v0, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getDesktopModeInterface()Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    cmpg-float v0, p1, v2
+
+    if-gez v0, :cond_2
+
+    const/4 p1, 0x0
+
+    :cond_0
+    :goto_0
+    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mScrollBar:Lcom/sec/samsung/gallery/glview/composeView/GlComposeScrollBar;
+
+    if-nez v0, :cond_1
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->initScrollBar()V
+
+    :cond_1
+    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mFlingAnim:Lcom/sec/samsung/gallery/glview/GlBoundaryAnim;
+
+    invoke-virtual {v0, p1}, Lcom/sec/samsung/gallery/glview/GlBoundaryAnim;->setInitMovement(F)V
+
+    invoke-virtual {p0, p1, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->setScroll(FZ)V
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mScrollBar:Lcom/sec/samsung/gallery/glview/composeView/GlComposeScrollBar;
+
+    iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v1, v1, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mScrollableMax:F
+
+    invoke-virtual {v0, p1, v2, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeScrollBar;->update(FFF)V
+
+    const/4 v0, 0x1
+
+    :goto_1
+    return v0
+
+    :cond_2
+    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v0, v0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mScrollableMax:F
+
+    cmpl-float v0, p1, v0
+
+    if-lez v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget p1, v0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mScrollableMax:F
+
+    goto :goto_0
+
+    :cond_3
+    move v0, v1
+
+    goto :goto_1
+.end method
+
 .method private handleQuickScroll(I)V
     .locals 7
 
@@ -8917,9 +8993,39 @@
     goto :goto_4
 
     :sswitch_5
+    iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mContext:Landroid/content/Context;
+
+    check-cast v10, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-virtual {v10}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getDesktopModeInterface()Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
+
+    move-result-object v10
+
+    invoke-interface {v10}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
+
+    move-result v10
+
+    if-eqz v10, :cond_16
+
+    iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mContext:Landroid/content/Context;
+
+    check-cast v10, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-virtual {v10}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->onBackPressed()V
+
+    const/4 v9, 0x1
+
+    goto/16 :goto_0
+
+    :cond_16
+    const/4 v9, 0x0
+
+    goto/16 :goto_0
+
+    :sswitch_6
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mOnKeyListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$OnKeyListener;
 
-    if-eqz v10, :cond_1b
+    if-eqz v10, :cond_1c
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
@@ -8927,7 +9033,7 @@
 
     move-result v10
 
-    if-nez v10, :cond_1b
+    if-nez v10, :cond_1c
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
@@ -8959,16 +9065,16 @@
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mOnItemClickListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$OnItemClickListener;
 
-    if-eqz v10, :cond_16
+    if-eqz v10, :cond_17
 
-    if-nez v6, :cond_17
+    if-nez v6, :cond_18
 
-    :cond_16
+    :cond_17
     const/4 v9, 0x0
 
     goto/16 :goto_0
 
-    :cond_17
+    :cond_18
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mAdapter:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
 
     invoke-virtual {v10, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;->getSubMediaSet(I)Lcom/sec/android/gallery3d/data/MediaSet;
@@ -8981,19 +9087,19 @@
 
     move-result-object v4
 
-    if-eqz v5, :cond_18
+    if-eqz v5, :cond_19
 
-    if-nez v4, :cond_19
+    if-nez v4, :cond_1a
 
-    :cond_18
+    :cond_19
     const/4 v9, 0x0
 
     goto/16 :goto_0
 
-    :cond_19
+    :cond_1a
     instance-of v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
-    if-eqz v10, :cond_1a
+    if-eqz v10, :cond_1b
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
@@ -9010,17 +9116,17 @@
 
     goto/16 :goto_0
 
-    :cond_1a
+    :cond_1b
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     invoke-virtual {v10, v5, v4}, Lcom/sec/android/gallery3d/ui/SelectionManager;->add(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaObject;)V
 
     goto :goto_5
 
-    :cond_1b
+    :cond_1c
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mOnKeyListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$OnKeyListener;
 
-    if-eqz v10, :cond_1c
+    if-eqz v10, :cond_1d
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mOnKeyListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$OnKeyListener;
 
@@ -9032,12 +9138,12 @@
 
     goto/16 :goto_0
 
-    :cond_1c
+    :cond_1d
     const/4 v9, 0x0
 
     goto/16 :goto_0
 
-    :sswitch_6
+    :sswitch_7
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mContext:Landroid/content/Context;
 
     check-cast v10, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -9050,7 +9156,7 @@
 
     move-result v10
 
-    if-eqz v10, :cond_1d
+    if-eqz v10, :cond_1e
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mContext:Landroid/content/Context;
 
@@ -9068,10 +9174,54 @@
 
     goto/16 :goto_0
 
-    :cond_1d
+    :cond_1e
     const/4 v9, 0x0
 
     goto/16 :goto_0
+
+    :sswitch_8
+    iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v10, v10, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mScrollable:F
+
+    iget v11, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mHeightSpace:F
+
+    sub-float/2addr v10, v11
+
+    iget-object v11, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v11, v11, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mMargTop:F
+
+    add-float/2addr v10, v11
+
+    invoke-direct {p0, v10}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->handlePageUpDownEvent(F)Z
+
+    move-result v9
+
+    goto/16 :goto_0
+
+    :sswitch_9
+    iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v10, v10, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mScrollable:F
+
+    iget v11, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mHeightSpace:F
+
+    add-float/2addr v10, v11
+
+    iget-object v11, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v11, v11, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mMargTop:F
+
+    sub-float/2addr v10, v11
+
+    invoke-direct {p0, v10}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->handlePageUpDownEvent(F)Z
+
+    move-result v9
+
+    goto/16 :goto_0
+
+    nop
 
     :sswitch_data_0
     .sparse-switch
@@ -9081,8 +9231,10 @@
         0x16 -> :sswitch_1
         0x3d -> :sswitch_4
         0x43 -> :sswitch_5
-        0x70 -> :sswitch_5
-        0x71 -> :sswitch_6
+        0x5c -> :sswitch_8
+        0x5d -> :sswitch_9
+        0x70 -> :sswitch_6
+        0x71 -> :sswitch_7
     .end sparse-switch
 .end method
 
@@ -9739,7 +9891,6 @@
     :goto_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mScaleCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;->isAnimationAvailable(FF)Z
     invoke-static {v2, v3, v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;->access$1800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;FF)Z
 
     move-result v2
@@ -10603,7 +10754,6 @@
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mScaleCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;->isMaxLevel()Z
     invoke-static {v10}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;)Z
 
     move-result v10
@@ -11174,7 +11324,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mScaleCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;->isAnimationAvailable(FF)Z
     invoke-static {v2, v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;->access$1800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$ScaleControl;FF)Z
 
     move-result v2

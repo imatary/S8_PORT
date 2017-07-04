@@ -1016,7 +1016,7 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v10, 0x7f0a074d
+    const v10, 0x7f0a0753
 
     new-array v11, v8, [Ljava/lang/Object;
 
@@ -1083,7 +1083,7 @@
     :cond_4
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v10, 0x7f0a074e
+    const v10, 0x7f0a0754
 
     new-array v11, v8, [Ljava/lang/Object;
 
@@ -1760,7 +1760,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v2, 0x7f0a076f
+    const v2, 0x7f0a0775
 
     const/4 v3, 0x0
 
@@ -6178,7 +6178,7 @@
 .method isAvailableSelect(Lcom/sec/android/gallery3d/data/MediaItem;)Z
     .locals 14
 
-    const v13, 0x7f0a085d
+    const v13, 0x7f0a086b
 
     const v12, 0x7f0a049e
 
@@ -7255,7 +7255,6 @@
 
     iget v5, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mCurrentLayout:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->setModeLevel(I)V
     invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->access$800(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;I)V
 
     or-int/lit16 v1, v1, 0x80
@@ -9620,7 +9619,7 @@
 
     move-object/from16 v20, v0
 
-    const v21, 0x7f0a076e
+    const v21, 0x7f0a0774
 
     const/16 v22, 0x2
 

@@ -52,7 +52,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$6;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$000(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -85,7 +84,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$6;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$000(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -102,7 +100,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$6;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$000(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -119,7 +116,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$6;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->mSelectionItemListAdapter:Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$200(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;)Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
 
     move-result-object v2
@@ -144,7 +140,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$6;->val$mediaObject:Lcom/sec/android/gallery3d/data/MediaObject;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->setTempMediaObject(Lcom/sec/android/gallery3d/data/MediaObject;)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$500(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;Lcom/sec/android/gallery3d/data/MediaObject;)V
 
     const-string/jumbo v2, "SelectionBuffer"
@@ -171,7 +166,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$6;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->mSelectionBufferListView:Lcom/sec/samsung/gallery/lib/libinterface/HorizontalListViewSelectionBufferInterface;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$400(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;)Lcom/sec/samsung/gallery/lib/libinterface/HorizontalListViewSelectionBufferInterface;
 
     move-result-object v2
@@ -192,7 +186,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$6;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->mSelectionItemListAdapter:Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$200(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;)Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
 
     move-result-object v4
@@ -214,7 +207,6 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$6;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->mSelectionItemListAdapter:Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$200(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;)Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
 
     move-result-object v2
@@ -239,7 +231,6 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$6;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->mSelectionItemListAdapter:Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$200(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;)Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
 
     move-result-object v2

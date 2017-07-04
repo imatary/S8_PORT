@@ -49,12 +49,10 @@
 
     iget-object v1, p1, Lcom/sec/samsung/gallery/view/image_manager/ComposeImageItem;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader;->access$002(Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader;Lcom/sec/android/gallery3d/data/MediaItem;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader;->access$000(Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v0
@@ -63,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader;->mPhotoView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader;->access$100(Lcom/sec/samsung/gallery/glview/composeView/ComposeNewAlbumLoader;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;
 
     move-result-object v0

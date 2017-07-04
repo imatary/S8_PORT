@@ -2221,20 +2221,6 @@
     goto :goto_1
 
     :cond_4
-    iget v5, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->mMaxDisplayObjCount:I
-
-    add-int/lit8 v5, v5, -0x1
-
-    invoke-virtual {p0, v5}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->getObject(I)Lcom/sec/samsung/gallery/glview/GlBaseObject;
-
-    move-result-object v5
-
-    const/4 v7, 0x0
-
-    invoke-virtual {v5, v7}, Lcom/sec/samsung/gallery/glview/GlBaseObject;->setAlphaEx(F)V
-
-    invoke-virtual {p0}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->prepareNextBitmapResource()V
-
     sget-boolean v5, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->USE_SLIDESHOW_SWIPEZOOM:Z
 
     if-eqz v5, :cond_5
@@ -2252,6 +2238,20 @@
     invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->preparePreviousBitmapResource()V
 
     :cond_5
+    iget v5, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->mMaxDisplayObjCount:I
+
+    add-int/lit8 v5, v5, -0x1
+
+    invoke-virtual {p0, v5}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->getObject(I)Lcom/sec/samsung/gallery/glview/GlBaseObject;
+
+    move-result-object v5
+
+    const/4 v7, 0x0
+
+    invoke-virtual {v5, v7}, Lcom/sec/samsung/gallery/glview/GlBaseObject;->setAlphaEx(F)V
+
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->prepareNextBitmapResource()V
+
     sget-boolean v5, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->USE_NEW_VIDEO_PLAY:Z
 
     if-eqz v5, :cond_8

@@ -131,7 +131,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$PresentationFocuser;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mPresentation:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$800(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
 
     move-result-object v2
@@ -140,7 +139,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$PresentationFocuser;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mIsSlideShowVideoPlaying:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$700(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Z
 
     move-result v2
@@ -149,7 +147,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$PresentationFocuser;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mPresentation:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$800(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
 
     move-result-object v2
@@ -176,7 +173,6 @@
     :cond_2
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$PresentationFocuser;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mPresentation:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$800(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
 
     move-result-object v2
@@ -185,7 +181,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$PresentationFocuser;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mPresentation:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$800(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
 
     move-result-object v2

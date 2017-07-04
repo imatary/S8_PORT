@@ -51,8 +51,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$32;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$14000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$14100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0
 
@@ -60,8 +59,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$32;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$14100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$14200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
 
@@ -77,13 +75,11 @@
 
     iget-boolean v3, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$32;->val$changeScreen:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startDetailView(IIZ)V
-    invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$14200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;IIZ)V
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$14300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;IIZ)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$32;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$14300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$14400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0
 

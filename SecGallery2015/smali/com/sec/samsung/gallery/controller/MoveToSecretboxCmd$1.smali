@@ -44,7 +44,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -71,7 +70,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v3
@@ -86,7 +84,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -110,7 +107,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v3
@@ -125,7 +121,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v2

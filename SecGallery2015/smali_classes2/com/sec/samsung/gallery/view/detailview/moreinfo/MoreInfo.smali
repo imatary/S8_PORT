@@ -1385,7 +1385,7 @@
 
     const-string/jumbo v3, "RenameEditInfoSave"
 
-    sget-object v4, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->NLG_ONLY:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
+    sget-object v4, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->FAILURE:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
 
     invoke-static {v2, v3, v4, v0}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;)V
 
@@ -3934,6 +3934,14 @@
 
     if-ne v5, v7, :cond_1
 
+    sget-object v7, Lcom/sec/samsung/gallery/features/FeatureNames;->IsImmersiveMode:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v7}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_1
+
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->getNavigationBarHeight()I
 
     move-result v1
@@ -3943,6 +3951,14 @@
 
     if-ne v5, v7, :cond_2
 
+    sget-object v7, Lcom/sec/samsung/gallery/features/FeatureNames;->IsImmersiveMode:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v7}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_2
+
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->getNavigationBarHeight()I
 
     move-result v2
@@ -3951,6 +3967,14 @@
     sget-object v7, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$NavigationPos;->RIGHT:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$NavigationPos;
 
     if-ne v5, v7, :cond_3
+
+    sget-object v7, Lcom/sec/samsung/gallery/features/FeatureNames;->IsImmersiveMode:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v7}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_3
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->getNavigationBarHeight()I
 

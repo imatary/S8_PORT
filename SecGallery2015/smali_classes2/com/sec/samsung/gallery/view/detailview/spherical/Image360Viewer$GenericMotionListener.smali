@@ -49,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$GenericMotionListener;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->refreshActionBarMessages(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$200(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Z)V
 
     return v1

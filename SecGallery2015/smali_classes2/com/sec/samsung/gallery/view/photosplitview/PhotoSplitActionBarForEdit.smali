@@ -884,12 +884,12 @@
         0x7f120275 -> :sswitch_1
         0x7f120277 -> :sswitch_9
         0x7f120278 -> :sswitch_a
-        0x7f12027d -> :sswitch_3
-        0x7f12027e -> :sswitch_4
-        0x7f120280 -> :sswitch_7
-        0x7f120281 -> :sswitch_8
-        0x7f120282 -> :sswitch_b
-        0x7f120283 -> :sswitch_c
+        0x7f12027c -> :sswitch_3
+        0x7f12027d -> :sswitch_4
+        0x7f12027f -> :sswitch_7
+        0x7f120280 -> :sswitch_8
+        0x7f120281 -> :sswitch_b
+        0x7f120282 -> :sswitch_c
         0x7f120290 -> :sswitch_0
         0x7f120294 -> :sswitch_e
         0x7f120295 -> :sswitch_e

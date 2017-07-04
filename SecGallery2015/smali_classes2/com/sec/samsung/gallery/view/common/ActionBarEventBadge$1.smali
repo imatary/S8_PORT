@@ -46,7 +46,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$1;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$000(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -61,7 +60,6 @@
 
     iget v3, p1, Landroid/os/Message;->arg2:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->addHintPopUp(Ljava/lang/String;II)V
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$100(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;Ljava/lang/String;II)V
 
     goto :goto_0
@@ -69,7 +67,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$1;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->removeHintPopup()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$200(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;)V
 
     goto :goto_0

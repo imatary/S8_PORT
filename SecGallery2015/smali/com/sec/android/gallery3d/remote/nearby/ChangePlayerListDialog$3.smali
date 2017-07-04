@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$3;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mSearchMode:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$600(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)I
 
     move-result v1
@@ -50,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$3;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mWifiDisplayUtils:Lcom/sec/samsung/gallery/view/utils/WifiDisplayUtils;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$000(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)Lcom/sec/samsung/gallery/view/utils/WifiDisplayUtils;
 
     move-result-object v1
@@ -59,7 +57,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$3;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mWifiDisplayUtils:Lcom/sec/samsung/gallery/view/utils/WifiDisplayUtils;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$000(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)Lcom/sec/samsung/gallery/view/utils/WifiDisplayUtils;
 
     move-result-object v1
@@ -68,7 +65,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$3;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mWifiDisplayUtils:Lcom/sec/samsung/gallery/view/utils/WifiDisplayUtils;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$000(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)Lcom/sec/samsung/gallery/view/utils/WifiDisplayUtils;
 
     move-result-object v1
@@ -78,7 +74,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$3;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mDialog:Landroid/app/AlertDialog;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$700(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)Landroid/app/AlertDialog;
 
     move-result-object v1
@@ -89,7 +84,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$3;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mIsCurrentDevice:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$800(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)Z
 
     move-result v1
@@ -103,7 +97,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog$3;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->mDialog:Landroid/app/AlertDialog;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->access$700(Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;)Landroid/app/AlertDialog;
 
     move-result-object v1

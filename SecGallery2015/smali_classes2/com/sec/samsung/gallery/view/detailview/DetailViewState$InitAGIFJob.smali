@@ -63,7 +63,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$InitAGIFJob;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mModel:Lcom/sec/samsung/gallery/view/detailview/Model;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/Model;
 
     move-result-object v0
@@ -72,8 +71,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$InitAGIFJob;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mMimeType:Ljava/lang/String;
-    invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$25200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$25300(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -87,8 +85,7 @@
 
     move-result-wide v2
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mAgifVersion:J
-    invoke-static {v0, v2, v3}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$24302(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;J)J
+    invoke-static {v0, v2, v3}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$24402(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;J)J
 
     const/4 v0, 0x0
 

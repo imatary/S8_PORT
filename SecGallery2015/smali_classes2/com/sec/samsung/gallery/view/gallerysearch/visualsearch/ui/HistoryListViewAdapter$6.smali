@@ -61,7 +61,6 @@
 
     move-result-object v2
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/HistoryListViewAdapter;->searchByKeyword(Ljava/lang/String;)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/HistoryListViewAdapter;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/HistoryListViewAdapter;Ljava/lang/String;)V
 
     :goto_0

@@ -50,7 +50,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$SettleRunnable;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->mViewDragHelper:Landroid/support/v4/widget/ViewDragHelper;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$300(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;)Landroid/support/v4/widget/ViewDragHelper;
 
     move-result-object v0
@@ -59,7 +58,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$SettleRunnable;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->mViewDragHelper:Landroid/support/v4/widget/ViewDragHelper;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$300(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;)Landroid/support/v4/widget/ViewDragHelper;
 
     move-result-object v0
@@ -84,7 +82,6 @@
 
     iget v1, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$SettleRunnable;->mTargetState:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->setStateInternal(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$400(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;I)V
 
     goto :goto_0

@@ -34,17 +34,18 @@
 
 
 # virtual methods
-.method public addItemToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;)V
+.method public addItemToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;)Z
     .locals 2
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$24;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->addToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;Z)V
-    invoke-static {v0, p1, p2, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$14100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;Z)V
+    invoke-static {v0, p1, p2, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$14100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;Z)Z
 
-    return-void
+    move-result v0
+
+    return v0
 .end method
 
 .method public getComposeMediaItemAdapter()Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
@@ -62,7 +63,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$24;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mIsPickerMode:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$7000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Z
 
     move-result v0
@@ -71,7 +71,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$24;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mIsMaxCount:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$14200(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Z
 
     move-result v0
@@ -90,9 +89,7 @@
 .end method
 
 .method public varargs onEventHandleItemClick([Ljava/lang/Object;)Z
-    .locals 4
-
-    const/4 v3, 0x1
+    .locals 3
 
     const/4 v2, 0x0
 
@@ -104,7 +101,9 @@
 
     move-result v0
 
-    aget-object v2, p1, v3
+    const/4 v2, 0x1
+
+    aget-object v2, p1, v2
 
     check-cast v2, Ljava/lang/Integer;
 
@@ -114,14 +113,15 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$24;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mTimeEventHandle:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$5100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
 
     move-result-object v2
 
-    invoke-virtual {v2, v0, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->onItemClick(II)V
+    invoke-virtual {v2, v0, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->onItemClick(II)Z
 
-    return v3
+    move-result v2
+
+    return v2
 .end method
 
 .method public startDetailView(II)V
@@ -129,7 +129,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$24;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->startDetailViewInUIThread(II)V
     invoke-static {v0, p1, p2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$7200(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;II)V
 
     return-void

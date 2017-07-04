@@ -59,7 +59,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$1;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/CropView;->updateZoomButtonStatus()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$100(Lcom/sec/android/gallery3d/ui/CropView;)V
 
     goto :goto_0
@@ -67,7 +66,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$1;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v0
@@ -89,7 +87,6 @@
     :pswitch_3
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$1;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v0

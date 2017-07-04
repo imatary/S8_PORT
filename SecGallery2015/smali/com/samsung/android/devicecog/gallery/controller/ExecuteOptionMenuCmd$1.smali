@@ -48,7 +48,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/devicecog/gallery/controller/ExecuteOptionMenuCmd$1;->this$0:Lcom/samsung/android/devicecog/gallery/controller/ExecuteOptionMenuCmd;
 
-    # invokes: Lcom/samsung/android/devicecog/gallery/controller/ExecuteOptionMenuCmd;->handleOptionMenu(Ljava/lang/String;I)V
     invoke-static {v2, v1, v0}, Lcom/samsung/android/devicecog/gallery/controller/ExecuteOptionMenuCmd;->access$000(Lcom/samsung/android/devicecog/gallery/controller/ExecuteOptionMenuCmd;Ljava/lang/String;I)V
 
     :cond_0

@@ -59,7 +59,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache$MyComponentCallbacks;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache;->mMinTrimMemoryLevel:I
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache;)I
 
     move-result v0
@@ -70,7 +69,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache;->access$2()Ljava/lang/String;
 
     move-result-object v0

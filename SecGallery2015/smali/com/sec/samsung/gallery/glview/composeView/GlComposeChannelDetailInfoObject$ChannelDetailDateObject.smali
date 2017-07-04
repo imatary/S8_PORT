@@ -58,7 +58,6 @@
 
     invoke-virtual {v0, p0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->addChild(Lcom/sec/android/gallery3d/glcore/GlObject;)I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mResources:Landroid/content/res/Resources;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/res/Resources;
 
     move-result-object v0
@@ -71,7 +70,6 @@
 
     iput v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->mTextSize:I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/Context;
 
     move-result-object v0
@@ -84,7 +82,6 @@
 
     iput v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->mTextColor:I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mResources:Landroid/content/res/Resources;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/res/Resources;
 
     move-result-object v0
@@ -97,7 +94,6 @@
 
     iput v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->mIconSize:I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mResources:Landroid/content/res/Resources;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/res/Resources;
 
     move-result-object v0
@@ -110,7 +106,6 @@
 
     iput v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->mTextViewMargin:I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mResources:Landroid/content/res/Resources;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/res/Resources;
 
     move-result-object v0
@@ -123,7 +118,6 @@
 
     iput v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->mDividerWidth:I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mResources:Landroid/content/res/Resources;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/res/Resources;
 
     move-result-object v0
@@ -136,7 +130,6 @@
 
     iput v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->mDividerHeight:I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mResources:Landroid/content/res/Resources;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/res/Resources;
 
     move-result-object v0
@@ -187,7 +180,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->IsNosTablet:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Z
 
     move-result v2
@@ -203,7 +195,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mGlComposeChannelPhotoView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
     move-result-object v2
@@ -216,7 +207,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/Context;
 
     move-result-object v2
@@ -233,7 +223,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/Context;
 
     move-result-object v3
@@ -255,7 +244,6 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mImageCount:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v2
@@ -284,7 +272,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mImageCount:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v3
@@ -302,7 +289,6 @@
     :cond_2
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mVideoCount:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v2
@@ -331,7 +317,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mVideoCount:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v3
@@ -377,7 +362,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mDatePeriod:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v5
@@ -386,7 +370,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mDatePeriod:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v5
@@ -410,7 +393,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->IsNosTablet:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Z
 
     move-result v5
@@ -481,7 +463,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->IsNosTablet:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Z
 
     move-result v5
@@ -610,7 +591,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mImageCount:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v4
@@ -652,7 +632,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -661,7 +640,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -719,7 +697,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -728,7 +705,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -770,7 +746,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->IsNosTablet:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Z
 
     move-result v4
@@ -788,7 +763,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mImageCount:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v4
@@ -811,7 +785,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->IsNosTablet:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Z
 
     move-result v4
@@ -883,7 +856,6 @@
     :cond_8
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mImageCount:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v4
@@ -936,7 +908,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mVideoCount:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v4
@@ -991,7 +962,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -1000,7 +970,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -1044,7 +1013,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -1053,7 +1021,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -1095,7 +1062,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->IsNosTablet:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Z
 
     move-result v4
@@ -1113,7 +1079,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mVideoCount:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v4
@@ -1136,7 +1101,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->IsNosTablet:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Z
 
     move-result v4
@@ -1204,7 +1168,6 @@
     :cond_9
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mVideoCount:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)Ljava/lang/String;
 
     move-result-object v4
@@ -1248,7 +1211,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mTitleWidth:F
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)F
 
     move-result v7
@@ -1259,7 +1221,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mTitleStartLeftMarginPixel:F
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)F
 
     move-result v7
@@ -1268,7 +1229,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mCoverHeight:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)F
 
     move-result v6
@@ -1277,14 +1237,12 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mTitleHeight:F
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)F
 
     move-result v7
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mTitleStartTopMarginPixel:F
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)F
 
     move-result v8
@@ -1293,7 +1251,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mDateHeight:F
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)F
 
     move-result v8
@@ -1304,7 +1261,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mDateTopMarginPixel:F
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)F
 
     move-result v8
@@ -1315,14 +1271,12 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mTitleWidth:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)F
 
     move-result v6
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mDateHeight:F
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$2200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)F
 
     move-result v7
@@ -1339,7 +1293,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mWidthViewRatio:F
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)F
 
     move-result v7
@@ -1354,7 +1307,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject$ChannelDetailDateObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->mHeightViewRatio:F
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;->access$1700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelDetailInfoObject;)F
 
     move-result v7

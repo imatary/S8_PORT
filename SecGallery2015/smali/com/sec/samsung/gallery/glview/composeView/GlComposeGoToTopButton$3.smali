@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->mButtonBGView:Lcom/sec/android/gallery3d/glcore/GlView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;)Lcom/sec/android/gallery3d/glcore/GlView;
 
     move-result-object v1
@@ -66,7 +65,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;)Landroid/content/Context;
 
     move-result-object v1
@@ -91,7 +89,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;)Landroid/content/Context;
 
     move-result-object v1

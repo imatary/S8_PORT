@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$3;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->previewHiderImgView:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$400(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Landroid/widget/ImageView;
 
     move-result-object v0

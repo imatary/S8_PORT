@@ -43,7 +43,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$18;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsCopyMoveMode:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4700(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Z
 
     move-result v3
@@ -74,7 +73,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$18;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$1700(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v3
@@ -87,7 +85,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$18;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$10600(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -100,7 +97,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$18;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$10700(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -113,7 +109,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$18;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$10800(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v3
@@ -130,7 +125,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$18;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mAlbumIndex:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$6500(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)I
 
     move-result v4
@@ -157,7 +151,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$18;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$10900(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -171,12 +164,10 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$18;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsReorderModeFromNormal:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$7002(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$18;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->enterReorderAlbums()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$7100(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
 
     move v1, v2

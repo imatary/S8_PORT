@@ -115,11 +115,11 @@
 .method private updateOptionsForAlbumView(Landroid/view/Menu;)V
     .locals 6
 
-    const v5, 0x7f12027a
+    const v5, 0x7f120279
 
     const v2, 0x7f12028b
 
-    const v1, 0x7f120288
+    const v1, 0x7f120287
 
     const/4 v4, 0x1
 
@@ -145,7 +145,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_7
 
     const v0, 0x7f02024f
 
@@ -161,7 +161,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_6
 
     invoke-static {p1, v1, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
@@ -180,7 +180,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_8
 
     :cond_1
     sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->DisableSearchView:Lcom/sec/samsung/gallery/features/FeatureNames;
@@ -189,7 +189,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_9
+    if-nez v0, :cond_8
 
     invoke-static {p1, v2, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
@@ -211,7 +211,7 @@
     invoke-static {p1, v0, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     :cond_2
-    const v0, 0x7f120289
+    const v0, 0x7f120288
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -258,7 +258,7 @@
     invoke-static {p1, v5, v0}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemIcon(Landroid/view/Menu;II)V
 
     :cond_3
-    const v0, 0x7f120289
+    const v0, 0x7f120288
 
     invoke-static {p1, v0, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
@@ -292,23 +292,6 @@
     invoke-static {p1, v0, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     :cond_5
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getDesktopModeInterface()Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    const v0, 0x7f120279
-
-    invoke-static {p1, v0, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
-
-    :cond_6
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForNormal;->mMenu:Landroid/view/Menu;
 
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionForSettings(Landroid/view/Menu;)V
@@ -317,17 +300,17 @@
 
     goto/16 :goto_0
 
+    :cond_6
+    invoke-static {p1, v1, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+
+    goto/16 :goto_1
+
     :cond_7
     invoke-static {p1, v1, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     goto/16 :goto_1
 
     :cond_8
-    invoke-static {p1, v1, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
-
-    goto/16 :goto_1
-
-    :cond_9
     invoke-static {p1, v2, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     goto/16 :goto_2
@@ -757,31 +740,13 @@
 
     goto/16 :goto_0
 
-    :sswitch_b
-    invoke-static {}, Lcom/sec/samsung/gallery/core/Event$Builder;->create()Lcom/sec/samsung/gallery/core/Event;
-
-    move-result-object v3
-
-    sget v4, Lcom/sec/samsung/gallery/core/Event;->EVENT_SHOW_VIEW_AS_DIALOG:I
-
-    invoke-virtual {v3, v4}, Lcom/sec/samsung/gallery/core/Event;->setType(I)Lcom/sec/samsung/gallery/core/Event;
-
-    move-result-object v3
-
-    invoke-virtual {p0, v3}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForNormal;->notifyObservers(Ljava/lang/Object;)V
-
-    goto/16 :goto_0
-
-    nop
-
     :sswitch_data_0
     .sparse-switch
         0x7f12007c -> :sswitch_3
-        0x7f120279 -> :sswitch_b
-        0x7f12027a -> :sswitch_0
-        0x7f12027b -> :sswitch_8
-        0x7f12027c -> :sswitch_a
-        0x7f120289 -> :sswitch_1
+        0x7f120279 -> :sswitch_0
+        0x7f12027a -> :sswitch_8
+        0x7f12027b -> :sswitch_a
+        0x7f120288 -> :sswitch_1
         0x7f12028a -> :sswitch_5
         0x7f12028b -> :sswitch_2
         0x7f12028c -> :sswitch_9

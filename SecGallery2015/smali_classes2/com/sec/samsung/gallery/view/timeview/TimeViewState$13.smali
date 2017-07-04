@@ -54,7 +54,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$13;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->showDeleteDialog()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$10100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)V
 
     :goto_0
@@ -76,7 +75,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$13;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v3
@@ -94,7 +92,6 @@
     :goto_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$13;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v3
@@ -109,7 +106,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$13;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v2
@@ -120,17 +116,14 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$13;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mIsLongPressEditMode:Z
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$6202(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;Z)Z
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$13;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->enterSelectionMode()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$6300(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$13;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->updateCountOnActionBar()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)V
 
     goto :goto_0

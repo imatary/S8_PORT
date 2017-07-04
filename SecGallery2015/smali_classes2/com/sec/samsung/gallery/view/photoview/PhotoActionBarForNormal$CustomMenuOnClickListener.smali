@@ -51,7 +51,6 @@
     :sswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal$CustomMenuOnClickListener;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;->access$800(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -64,7 +63,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal$CustomMenuOnClickListener;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;->access$700(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -112,7 +110,7 @@
     :sswitch_data_0
     .sparse-switch
         0x7f12007c -> :sswitch_0
-        0x7f120289 -> :sswitch_2
+        0x7f120288 -> :sswitch_2
         0x7f120290 -> :sswitch_1
     .end sparse-switch
 .end method

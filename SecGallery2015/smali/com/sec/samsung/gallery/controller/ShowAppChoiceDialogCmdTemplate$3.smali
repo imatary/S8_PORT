@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$100(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$100(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     move-result-object v0

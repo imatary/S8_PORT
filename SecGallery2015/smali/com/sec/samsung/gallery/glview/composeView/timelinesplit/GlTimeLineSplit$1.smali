@@ -53,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mRawX:I
     invoke-static {v0, p4}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$002(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;I)I
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;

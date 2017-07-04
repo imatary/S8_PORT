@@ -170,7 +170,6 @@
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter$CardViewHolder;->mImageView:Landroid/widget/ImageView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->FEATURE_IS_NOS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$100()Z
 
     move-result v0
@@ -210,7 +209,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter$CardViewHolder;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->mIsShowButtonBackground:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$900(Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;)Z
 
     move-result v0
@@ -241,7 +239,6 @@
 .method private handleClickCardView(II)V
     .locals 3
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->NEW_EVENT_COLLAGE:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$500()I
 
     move-result v0
@@ -256,14 +253,12 @@
 
     move-result-object v2
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->sendMessageToState(ILjava/lang/Object;I)V
     invoke-static {v0, v1, v2, p2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$600(Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;ILjava/lang/Object;I)V
 
     :goto_0
     return-void
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->NEW_EVENT_AGIF:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$700()I
 
     move-result v0
@@ -278,13 +273,11 @@
 
     move-result-object v2
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->sendMessageToState(ILjava/lang/Object;I)V
     invoke-static {v0, v1, v2, p2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$600(Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;ILjava/lang/Object;I)V
 
     goto :goto_0
 
     :cond_1
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->NEW_EVENT_VIDEO_COLLAGE:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$800()I
 
     move-result v0
@@ -299,7 +292,6 @@
 
     move-result-object v2
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->sendMessageToState(ILjava/lang/Object;I)V
     invoke-static {v0, v1, v2, p2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$600(Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;ILjava/lang/Object;I)V
 
     goto :goto_0
@@ -313,7 +305,6 @@
 
     move-result-object v2
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->sendMessageToState(ILjava/lang/Object;I)V
     invoke-static {v0, v1, v2, p2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$600(Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;ILjava/lang/Object;I)V
 
     goto :goto_0
@@ -326,7 +317,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter$CardViewHolder;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->mCardList:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$000(Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -359,7 +349,6 @@
 
     move-result v1
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->NEW_EVENT_SHARE:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$200()I
 
     move-result v2
@@ -385,7 +374,6 @@
 
     move-result v1
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->NEW_EVENT_SHARE:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$200()I
 
     move-result v2
@@ -409,7 +397,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter$CardViewHolder;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->mImageFetcher:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$300(Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;)Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
     move-result-object v1
@@ -448,7 +435,6 @@
 
     move-result v1
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->NEW_EVENT_SHARE:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;->access$200()I
 
     move-result v2

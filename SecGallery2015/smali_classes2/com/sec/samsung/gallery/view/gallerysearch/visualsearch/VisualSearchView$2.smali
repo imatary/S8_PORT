@@ -69,12 +69,10 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mIsDirty:Z
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$202(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;Z)Z
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -106,7 +104,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mIsReadyToUpdate:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Z
 
     move-result v3
@@ -116,7 +113,6 @@
     :cond_2
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mCardAdapter:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/CardListViewAdapter;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/CardListViewAdapter;
 
     move-result-object v3
@@ -129,7 +125,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mCardAdapter:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/CardListViewAdapter;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/CardListViewAdapter;
 
     move-result-object v3
@@ -138,7 +133,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->updateCategoryItems()V
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$500(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)V
 
     :cond_3

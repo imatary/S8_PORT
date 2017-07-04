@@ -148,7 +148,7 @@
     :goto_1
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    const v3, 0x7f020320
+    const v3, 0x7f020322
 
     invoke-virtual {p0, v3}, Lcom/sec/android/gallery3d/settings/AccountSettingActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

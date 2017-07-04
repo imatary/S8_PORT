@@ -101,7 +101,6 @@
     :goto_0
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/EventAlbumManager$3;->this$0:Lcom/sec/android/gallery3d/data/EventAlbumManager;
 
-    # invokes: Lcom/sec/android/gallery3d/data/EventAlbumManager;->updateHighlightVideoStatus(Ljava/lang/String;I)V
     invoke-static {v3, v0, v1}, Lcom/sec/android/gallery3d/data/EventAlbumManager;->access$200(Lcom/sec/android/gallery3d/data/EventAlbumManager;Ljava/lang/String;I)V
 
     :cond_0

@@ -41,7 +41,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;->access$000(Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -54,7 +53,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;->access$100(Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v2
@@ -63,7 +61,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;->access$200(Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v2
@@ -74,7 +71,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;->access$300(Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v2

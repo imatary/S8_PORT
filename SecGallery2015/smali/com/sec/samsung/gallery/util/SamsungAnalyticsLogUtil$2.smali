@@ -41,7 +41,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil$2;->put(ILjava/lang/Object;)V
 
-    const v0, 0x7f120289
+    const v0, 0x7f120288
 
     const-string/jumbo v1, "1012"
 
@@ -71,13 +71,13 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil$2;->put(ILjava/lang/Object;)V
 
-    const v0, 0x7f12027b
+    const v0, 0x7f12027a
 
     const-string/jumbo v1, "1016"
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil$2;->put(ILjava/lang/Object;)V
 
-    const v0, 0x7f12027c
+    const v0, 0x7f12027b
 
     const-string/jumbo v1, "1017"
 
@@ -95,7 +95,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil$2;->put(ILjava/lang/Object;)V
 
-    const v0, 0x7f120281
+    const v0, 0x7f120280
 
     const-string/jumbo v1, "1048"
 
@@ -107,13 +107,13 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil$2;->put(ILjava/lang/Object;)V
 
-    const v0, 0x7f12027d
+    const v0, 0x7f12027c
 
     const-string/jumbo v1, "1040"
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil$2;->put(ILjava/lang/Object;)V
 
-    const v0, 0x7f12027e
+    const v0, 0x7f12027d
 
     const-string/jumbo v1, "1041"
 
@@ -131,7 +131,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil$2;->put(ILjava/lang/Object;)V
 
-    const v0, 0x7f120282
+    const v0, 0x7f120281
 
     const-string/jumbo v1, "1047"
 

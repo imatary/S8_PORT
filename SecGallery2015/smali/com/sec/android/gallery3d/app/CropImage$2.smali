@@ -70,7 +70,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/app/CropImage$2;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/android/gallery3d/app/CropImage;->access$200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3
@@ -96,7 +95,6 @@
     :cond_1
     iget-object v3, p0, Lcom/sec/android/gallery3d/app/CropImage$2;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/android/gallery3d/app/CropImage;->access$200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3

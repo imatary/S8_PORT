@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CollageStartDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/CollageStartDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CollageStartDialog;->startMoreService()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CollageStartDialog;->access$000(Lcom/sec/samsung/gallery/view/common/CollageStartDialog;)V
 
     return-void

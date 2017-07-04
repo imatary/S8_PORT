@@ -128,7 +128,7 @@
     :cond_0
     iget-object v2, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ChannelCommentsActivityDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v3, 0x7f0a07d9
+    const v3, 0x7f0a07de
 
     const/4 v4, 0x0
 
@@ -195,7 +195,7 @@
     :cond_0
     iget-object v2, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ChannelCommentsActivityDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v3, 0x7f0a07d9
+    const v3, 0x7f0a07de
 
     const/4 v4, 0x0
 

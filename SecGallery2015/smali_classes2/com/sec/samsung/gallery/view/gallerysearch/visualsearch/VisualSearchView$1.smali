@@ -47,12 +47,10 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mIsReadyToUpdate:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$002(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mVisualSearchObserver:Landroid/database/ContentObserver;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Landroid/database/ContentObserver;
 
     move-result-object v0
@@ -61,7 +59,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mIsDirty:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Z
 
     move-result v0
@@ -70,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mVisualSearchObserver:Landroid/database/ContentObserver;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Landroid/database/ContentObserver;
 
     move-result-object v0

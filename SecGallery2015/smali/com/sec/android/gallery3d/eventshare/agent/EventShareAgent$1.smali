@@ -76,7 +76,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent$1;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->access$000(Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;)Landroid/content/Context;
 
     move-result-object v1

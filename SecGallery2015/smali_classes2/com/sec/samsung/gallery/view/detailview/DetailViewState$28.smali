@@ -39,9 +39,8 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$28;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->handleSaveChanges(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$28000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)V
 
     return-void

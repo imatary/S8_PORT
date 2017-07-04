@@ -47,7 +47,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v2
@@ -66,7 +65,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v2
@@ -85,7 +83,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v2
@@ -100,7 +97,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v2
@@ -111,7 +107,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v2
@@ -120,7 +115,6 @@
 
     iget-object v3, v3, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v3

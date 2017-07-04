@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/SuggestionAlbumSet$1;->this$0:Lcom/sec/android/gallery3d/data/SuggestionAlbumSet;
 
-    # getter for: Lcom/sec/android/gallery3d/data/SuggestionAlbumSet;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/SuggestionAlbumSet;->access$000(Lcom/sec/android/gallery3d/data/SuggestionAlbumSet;)Landroid/content/Context;
 
     move-result-object v0

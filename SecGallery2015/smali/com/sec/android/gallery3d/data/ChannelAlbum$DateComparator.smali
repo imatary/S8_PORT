@@ -89,7 +89,6 @@
     if-eqz v3, :cond_7
 
     :cond_1
-    # getter for: Lcom/sec/android/gallery3d/data/ChannelAlbum;->USE_DREAM_STORY_LAYOUT:Z
     invoke-static {}, Lcom/sec/android/gallery3d/data/ChannelAlbum;->access$100()Z
 
     move-result v3

@@ -57,7 +57,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$000(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -78,7 +77,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->updateAlbumNameOfActionBar()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$100(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)V
 
     goto :goto_0

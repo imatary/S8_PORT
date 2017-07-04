@@ -64,7 +64,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/FilterFolderSet$1;->this$0:Lcom/sec/android/gallery3d/data/FilterFolderSet;
 
-    # invokes: Lcom/sec/android/gallery3d/data/FilterFolderSet;->isFilteredItem(Lcom/sec/android/gallery3d/data/MediaItem;)Z
     invoke-static {v1, p2}, Lcom/sec/android/gallery3d/data/FilterFolderSet;->access$000(Lcom/sec/android/gallery3d/data/FilterFolderSet;Lcom/sec/android/gallery3d/data/MediaItem;)Z
 
     move-result v1

@@ -902,7 +902,6 @@
     move-result-object v1
 
     :cond_2
-    # getter for: Lcom/sec/android/gallery3d/util/ImageDRMUtil$DRMInfo;->mRightType:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/util/ImageDRMUtil$DRMInfo;->access$000(Lcom/sec/android/gallery3d/util/ImageDRMUtil$DRMInfo;)I
 
     move-result v5
@@ -1001,7 +1000,6 @@
     goto :goto_0
 
     :cond_a
-    # getter for: Lcom/sec/android/gallery3d/util/ImageDRMUtil$DRMInfo;->mLicenseCategory:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/util/ImageDRMUtil$DRMInfo;->access$100(Lcom/sec/android/gallery3d/util/ImageDRMUtil$DRMInfo;)I
 
     move-result v11
@@ -1073,7 +1071,6 @@
     goto/16 :goto_0
 
     :cond_f
-    # getter for: Lcom/sec/android/gallery3d/util/ImageDRMUtil$DRMInfo;->mLicenseCategory:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/util/ImageDRMUtil$DRMInfo;->access$100(Lcom/sec/android/gallery3d/util/ImageDRMUtil$DRMInfo;)I
 
     move-result v6

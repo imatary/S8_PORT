@@ -372,7 +372,7 @@
     :goto_1
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a07f9
+    const v3, 0x7f0a07ff
 
     new-array v4, v4, [Ljava/lang/Object;
 

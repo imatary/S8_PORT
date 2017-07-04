@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;)Landroid/content/Context;
 
     move-result-object v0

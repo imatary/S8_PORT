@@ -41,14 +41,12 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsTouchOutside:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$602(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$4;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsCancel:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$702(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     return-void

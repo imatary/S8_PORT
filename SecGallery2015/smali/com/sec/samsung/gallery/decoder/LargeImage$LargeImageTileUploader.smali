@@ -74,7 +74,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileUploader;->this$0:Lcom/sec/samsung/gallery/decoder/LargeImage;
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mUploadQueue:Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileQueue;
     invoke-static {v5}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$1400(Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileQueue;
 
     move-result-object v5
@@ -84,7 +83,6 @@
     :try_start_0
     iget-object v6, p0, Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileUploader;->this$0:Lcom/sec/samsung/gallery/decoder/LargeImage;
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mUploadQueue:Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileQueue;
     invoke-static {v6}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$1400(Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileQueue;
 
     move-result-object v6
@@ -110,7 +108,6 @@
     :cond_2
     iget-object v5, p0, Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileUploader;->this$0:Lcom/sec/samsung/gallery/decoder/LargeImage;
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mUploadTileCount:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$600(Lcom/sec/samsung/gallery/decoder/LargeImage;)I
 
     move-result v5
@@ -119,7 +116,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileUploader;->this$0:Lcom/sec/samsung/gallery/decoder/LargeImage;
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mUploadQueue:Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileQueue;
     invoke-static {v5}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$1400(Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileQueue;
 
     move-result-object v5
@@ -136,7 +132,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileUploader;->this$0:Lcom/sec/samsung/gallery/decoder/LargeImage;
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mPhotoView:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$1500(Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v5
@@ -145,7 +140,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileUploader;->this$0:Lcom/sec/samsung/gallery/decoder/LargeImage;
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mPhotoView:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$1500(Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v5
@@ -215,7 +209,6 @@
     :cond_5
     iget-object v5, p0, Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageTileUploader;->this$0:Lcom/sec/samsung/gallery/decoder/LargeImage;
 
-    # operator-- for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mUploadTileCount:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$610(Lcom/sec/samsung/gallery/decoder/LargeImage;)I
 
     goto :goto_1

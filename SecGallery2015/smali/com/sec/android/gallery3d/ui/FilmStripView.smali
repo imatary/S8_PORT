@@ -1476,20 +1476,13 @@
     return-void
 
     :cond_1
-    iget-boolean v2, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mIsDisplayChanged:Z
-
-    if-eqz v2, :cond_2
-
-    iput-boolean v8, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mIsDisplayChanged:Z
-
-    :cond_2
     invoke-virtual {p0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->getPaddings()Landroid/graphics/Rect;
 
     move-result-object v0
 
     iget v2, v0, Landroid/graphics/Rect;->left:I
 
-    if-ltz v2, :cond_3
+    if-ltz v2, :cond_2
 
     sub-int v2, p4, p2
 
@@ -1501,9 +1494,9 @@
 
     sub-int/2addr v3, v4
 
-    if-ge v2, v3, :cond_5
+    if-ge v2, v3, :cond_6
 
-    :cond_3
+    :cond_2
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
 
     iget v3, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mTopMargin:I
@@ -1519,6 +1512,10 @@
     invoke-virtual {v2, v8, v3, v4, v5}, Lcom/sec/android/gallery3d/ui/SlotView;->layout(IIII)V
 
     :goto_1
+    iget-boolean v2, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mIsDisplayChanged:Z
+
+    if-nez v2, :cond_3
+
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mAlbumView:Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer;
@@ -1529,6 +1526,7 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/gallery3d/ui/SlotView;->scrollTo(I)V
 
+    :cond_3
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mEdgeView:Lcom/sec/android/gallery3d/ui/EdgeView;
 
     if-eqz v2, :cond_4
@@ -1570,7 +1568,7 @@
     :cond_4
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mScrollBarView:Lcom/sec/android/gallery3d/ui/ScrollBarView;
 
-    if-eqz v2, :cond_0
+    if-eqz v2, :cond_5
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mContext:Landroid/content/Context;
 
@@ -1624,15 +1622,23 @@
 
     div-int/2addr v2, v3
 
-    if-lt v2, v9, :cond_6
+    if-lt v2, v9, :cond_7
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mScrollBarView:Lcom/sec/android/gallery3d/ui/ScrollBarView;
 
     invoke-virtual {v2, v9}, Lcom/sec/android/gallery3d/ui/ScrollBarView;->setVisibility(I)V
 
+    :cond_5
+    :goto_2
+    iget-boolean v2, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mIsDisplayChanged:Z
+
+    if-eqz v2, :cond_0
+
+    iput-boolean v8, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mIsDisplayChanged:Z
+
     goto/16 :goto_0
 
-    :cond_5
+    :cond_6
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
 
     iget v3, v0, Landroid/graphics/Rect;->left:I
@@ -1653,14 +1659,14 @@
 
     invoke-virtual {v2, v3, v4, v5, v6}, Lcom/sec/android/gallery3d/ui/SlotView;->layout(IIII)V
 
-    goto :goto_1
+    goto/16 :goto_1
 
-    :cond_6
+    :cond_7
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/FilmStripView;->mScrollBarView:Lcom/sec/android/gallery3d/ui/ScrollBarView;
 
     invoke-virtual {v2, v8}, Lcom/sec/android/gallery3d/ui/ScrollBarView;->setVisibility(I)V
 
-    goto/16 :goto_0
+    goto :goto_2
 .end method
 
 .method public onLongTap(I)V
@@ -2203,6 +2209,14 @@
     move-result v4
 
     if-eqz v4, :cond_3
+
+    sget-object v4, Lcom/sec/samsung/gallery/features/FeatureNames;->IsImmersiveMode:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v4}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_3
 
     sget-object v4, Lcom/sec/samsung/gallery/features/FeatureNames;->UseMultiWindow:Lcom/sec/samsung/gallery/features/FeatureNames;
 

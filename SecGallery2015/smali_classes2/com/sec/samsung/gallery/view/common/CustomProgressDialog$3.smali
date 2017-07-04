@@ -59,7 +59,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mProgressPercentAsCount:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$100(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)Z
 
     move-result v2
@@ -91,7 +90,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mTotalCount:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$200(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -114,7 +112,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mCurrentCount:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$300(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -133,7 +130,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->setCountText(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;Ljava/lang/String;)V
 
     :goto_0
@@ -141,7 +137,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mCurrentCount:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$300(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v3
@@ -150,14 +145,12 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mTotalCount:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$200(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
 
     div-int/2addr v3, v4
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mPercentRate:I
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$502(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;I)I
 
     const-string/jumbo v2, "ar"
@@ -185,7 +178,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mPercentRate:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -210,7 +202,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->setPercentText(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$600(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;Ljava/lang/String;)V
 
     :goto_1
@@ -218,12 +209,10 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mPercentRate:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->setProcessing(I)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$700(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;I)V
 
     :goto_2
@@ -238,7 +227,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mCurrentCount:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$300(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -255,7 +243,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mTotalCount:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$200(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -268,7 +255,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->setCountText(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;Ljava/lang/String;)V
 
     goto :goto_0
@@ -282,7 +268,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mPercentRate:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -301,7 +286,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->setPercentText(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$600(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;Ljava/lang/String;)V
 
     goto :goto_1
@@ -336,7 +320,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mPercentRate:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -361,7 +344,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->setPercentText(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$600(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;Ljava/lang/String;)V
 
     :goto_3
@@ -369,12 +351,10 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mPercentRate:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->setProcessing(I)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$700(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;I)V
 
     goto/16 :goto_2
@@ -388,7 +368,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mPercentRate:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -407,7 +386,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->setPercentText(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$600(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;Ljava/lang/String;)V
 
     goto :goto_3
@@ -438,7 +416,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mTotalCount:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$200(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -461,7 +438,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mCurrentCount:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$300(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -480,7 +456,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->setCountText(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;Ljava/lang/String;)V
 
     goto/16 :goto_2
@@ -494,7 +469,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mCurrentCount:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$300(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -511,7 +485,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mTotalCount:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$200(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)I
 
     move-result v4
@@ -524,7 +497,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->setCountText(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;Ljava/lang/String;)V
 
     goto/16 :goto_2

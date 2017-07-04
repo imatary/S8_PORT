@@ -39,14 +39,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/GetExpireTimeCommand$1;->this$0:Lcom/sec/android/gallery3d/eventshare/command/GetExpireTimeCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/GetExpireTimeCommand;->mSharedEvent:Lcom/sec/android/gallery3d/eventshare/SharedEvent;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/GetExpireTimeCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/GetExpireTimeCommand;)Lcom/sec/android/gallery3d/eventshare/SharedEvent;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/command/GetExpireTimeCommand$1;->this$0:Lcom/sec/android/gallery3d/eventshare/command/GetExpireTimeCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/GetExpireTimeCommand;->mEventState:Lcom/sec/android/gallery3d/eventshare/EventState;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/command/GetExpireTimeCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/GetExpireTimeCommand;)Lcom/sec/android/gallery3d/eventshare/EventState;
 
     move-result-object v1

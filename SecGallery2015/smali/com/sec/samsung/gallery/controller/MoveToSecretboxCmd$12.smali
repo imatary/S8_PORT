@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsTouchOutside:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$602(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$12;->val$checkBox:Landroid/widget/CheckBox;
@@ -66,12 +65,10 @@
 
     move-result v1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsCheck:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1802(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsCancel:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$702(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     :goto_0
@@ -80,12 +77,10 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsCancel:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$702(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsSingleCancel:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2302(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     goto :goto_0

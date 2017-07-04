@@ -82,7 +82,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mContext:Ljava/lang/ref/WeakReference;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$800(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Ljava/lang/ref/WeakReference;
 
     move-result-object v0
@@ -107,7 +106,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mDataProxy:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$2000(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v3
@@ -246,7 +244,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mDataProxy:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$2000(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v2
@@ -328,7 +325,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mDoneOperation:Z
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1200(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v13
@@ -341,7 +337,6 @@
 
     const/4 v14, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mDoneOperation:Z
     invoke-static {v13, v14}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1202(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     :cond_1
@@ -500,7 +495,6 @@
 
     invoke-direct {v3, v4, v13}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mSingleOperation:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$100()Z
 
     move-result v13
@@ -521,7 +515,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsRename:Z
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$400(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v13
@@ -558,7 +551,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mDoneOperation:Z
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1200(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v13
@@ -569,7 +561,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsSingleCancel:Z
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1900(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v13
@@ -582,7 +573,6 @@
 
     const/4 v14, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mDoneOperation:Z
     invoke-static {v13, v14}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1202(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     :cond_9
@@ -590,7 +580,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsSingleCancel:Z
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1900(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v13
@@ -603,7 +592,6 @@
 
     const/4 v14, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsSingleCancel:Z
     invoke-static {v13, v14}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1902(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     goto/16 :goto_0
@@ -681,7 +669,6 @@
 
     move-object/from16 v0, p1
 
-    # invokes: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->isBurstShot(Lcom/sec/android/gallery3d/data/MediaObject;)Z
     invoke-static {v13, v0}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1400(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Lcom/sec/android/gallery3d/data/MediaObject;)Z
 
     move-result v13
@@ -698,7 +685,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsCheck:Z
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1500(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v13
@@ -710,7 +696,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->lock:Ljava/lang/Object;
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1600(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Ljava/lang/Object;
 
     move-result-object v14
@@ -747,7 +732,6 @@
 
     const/4 v15, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->isLocked:Z
     invoke-static {v13, v15}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1802(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     :goto_3
@@ -755,7 +739,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->isLocked:Z
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1800(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v13
@@ -766,7 +749,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->lock:Ljava/lang/Object;
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1600(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Ljava/lang/Object;
 
     move-result-object v13
@@ -804,7 +786,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsRename:Z
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$400(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v13
@@ -848,7 +829,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsCancel:Z
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$300(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v13
@@ -900,7 +880,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsSingleCancel:Z
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1900(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v13
@@ -1117,7 +1096,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$900(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     move-result-object v9
@@ -1136,7 +1114,6 @@
 
     invoke-direct {v10, v11}, Lcom/sec/samsung/gallery/util/FileUtil;-><init>(Landroid/content/Context;)V
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v9, v10}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$902(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Lcom/sec/samsung/gallery/util/FileUtil;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     :cond_0
@@ -1146,7 +1123,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$900(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     move-result-object v9
@@ -1155,7 +1131,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$900(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     move-result-object v9
@@ -1189,7 +1164,6 @@
     :cond_1
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$600(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v9
@@ -1260,7 +1234,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1100(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     move-result-object v9
@@ -1269,7 +1242,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1100(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     move-result-object v9
@@ -1355,7 +1327,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsCancel:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$300(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v5
@@ -1364,7 +1335,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$600(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v5
@@ -1374,7 +1344,6 @@
     :cond_0
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$600(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v5
@@ -1385,12 +1354,10 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v5, v6}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$902(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Lcom/sec/samsung/gallery/util/FileUtil;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mOnProgressListener:Lcom/sec/android/gallery3d/data/OnProgressListener;
     invoke-static {v5, v6}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1002(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Lcom/sec/android/gallery3d/data/OnProgressListener;)Lcom/sec/android/gallery3d/data/OnProgressListener;
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->context:Landroid/content/Context;
@@ -1404,12 +1371,10 @@
     :cond_2
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v5, v6}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1102(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Lcom/sec/samsung/gallery/util/MediaOperations;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$600(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v5
@@ -1434,7 +1399,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mDoneOperation:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1200(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v5
@@ -1450,7 +1414,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$700(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Landroid/content/res/Resources;
 
     move-result-object v5
@@ -1465,7 +1428,6 @@
     :goto_1
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsSkip:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1300(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v5
@@ -1490,7 +1452,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$700(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Landroid/content/res/Resources;
 
     move-result-object v5
@@ -1510,7 +1471,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$700(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Landroid/content/res/Resources;
 
     move-result-object v5
@@ -1880,7 +1840,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$700(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Landroid/content/res/Resources;
 
     move-result-object v5
@@ -1900,7 +1859,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$700(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Landroid/content/res/Resources;
 
     move-result-object v5
@@ -2185,7 +2143,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$600(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v1

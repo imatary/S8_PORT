@@ -1046,9 +1046,9 @@
 .method protected onPrepareOptionsInHideOrShowMode(Landroid/view/Menu;Z)V
     .locals 7
 
-    const v6, 0x7f120285
+    const v6, 0x7f120284
 
-    const v5, 0x7f120284
+    const v5, 0x7f120283
 
     const/4 v4, 0x1
 

@@ -76,7 +76,6 @@
     invoke-interface {v0, p1}, Lcom/sec/android/gallery3d/data/OnProgressListener;->onCompleted(Z)V
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/util/FileUtil;->mTasks:Ljava/util/HashMap;
     invoke-static {}, Lcom/sec/samsung/gallery/util/FileUtil;->access$000()Ljava/util/HashMap;
 
     move-result-object v0

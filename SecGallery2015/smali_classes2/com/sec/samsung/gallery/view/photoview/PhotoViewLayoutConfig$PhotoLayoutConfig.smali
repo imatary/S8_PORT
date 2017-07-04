@@ -284,7 +284,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewLayoutConfig$PhotoLayoutConfig;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewLayoutConfig;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewLayoutConfig;->mIsEasyMode:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewLayoutConfig;->access$100(Lcom/sec/samsung/gallery/view/photoview/PhotoViewLayoutConfig;)Z
 
     move-result v0

@@ -66,7 +66,6 @@
 
     move-result-object v3
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->access$000()Ljava/lang/String;
 
     move-result-object v6
@@ -87,7 +86,6 @@
 
     const-string/jumbo v7, "Error but VolleyError is null"
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->stopByError(Ljava/lang/Integer;Ljava/lang/String;)V
     invoke-static {v3, v6, v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;Ljava/lang/Integer;Ljava/lang/String;)V
 
     :cond_0
@@ -103,7 +101,6 @@
 
     const-string/jumbo v3, "consume cancel error, this is just for release thread"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->access$000()Ljava/lang/String;
 
     move-result-object v6
@@ -129,7 +126,6 @@
 
     const-string/jumbo v7, "Network timeout occurs."
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->stopByError(Ljava/lang/Integer;Ljava/lang/String;)V
     invoke-static {v3, v6, v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;Ljava/lang/Integer;Ljava/lang/String;)V
 
     goto :goto_0
@@ -143,7 +139,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->mStopped:Z
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;)Z
 
     move-result v3
@@ -152,7 +147,6 @@
 
     const-string/jumbo v3, "NoConnectionError but it has already been paused"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->access$000()Ljava/lang/String;
 
     move-result-object v6
@@ -168,7 +162,6 @@
 
     invoke-direct {v0, v3}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->access$000()Ljava/lang/String;
 
     move-result-object v3
@@ -183,7 +176,6 @@
 
     const-string/jumbo v7, "No network connection"
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->stop(IILjava/lang/String;)V
     invoke-static {v3, v6, v2, v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;IILjava/lang/String;)V
 
     goto :goto_0
@@ -249,7 +241,6 @@
 
     move-result-object v3
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->access$000()Ljava/lang/String;
 
     move-result-object v6
@@ -262,7 +253,6 @@
 
     iget-object v7, p3, Lcom/samsung/android/sdk/ssf/SsfResult;->serverErrorMsg:Ljava/lang/String;
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->stop(IILjava/lang/String;)V
     invoke-static {v3, v6, v2, v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/GetSharePolicyTransaction;IILjava/lang/String;)V
 
     goto/16 :goto_0

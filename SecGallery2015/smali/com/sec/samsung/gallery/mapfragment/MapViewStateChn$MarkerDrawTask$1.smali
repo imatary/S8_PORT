@@ -53,7 +53,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn$MarkerDrawTask;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->mMap:Lcom/amap/api/maps2d/AMap;
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->access$1200(Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;)Lcom/amap/api/maps2d/AMap;
 
     move-result-object v0
@@ -64,7 +63,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn$MarkerDrawTask;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->mMap:Lcom/amap/api/maps2d/AMap;
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->access$1200(Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;)Lcom/amap/api/maps2d/AMap;
 
     move-result-object v0
@@ -110,7 +108,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn$MarkerDrawTask;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->mItemLatLng:[D
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->access$1900(Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;)[D
 
     move-result-object v2
@@ -123,7 +120,6 @@
 
     iget-object v4, v4, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn$MarkerDrawTask;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->mItemLatLng:[D
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->access$1900(Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;)[D
 
     move-result-object v4
@@ -146,7 +142,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn$MarkerDrawTask;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->mMap:Lcom/amap/api/maps2d/AMap;
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->access$1200(Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;)Lcom/amap/api/maps2d/AMap;
 
     move-result-object v0
@@ -168,7 +163,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn$MarkerDrawTask;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->mMap:Lcom/amap/api/maps2d/AMap;
     invoke-static {v1}, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->access$1200(Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;)Lcom/amap/api/maps2d/AMap;
 
     move-result-object v1
@@ -183,7 +177,6 @@
 
     iget-object v4, v4, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn$MarkerDrawTask;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->access$2300(Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -194,7 +187,6 @@
 
     iget-object v6, v6, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn$MarkerDrawTask;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->mEventViewAlbumBuckId:I
     invoke-static {v6}, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->access$1500(Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;)I
 
     move-result v6
@@ -203,14 +195,12 @@
 
     iget-object v7, v7, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn$MarkerDrawTask;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->mBwnDate:[J
     invoke-static {v7}, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->access$1600(Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;)[J
 
     move-result-object v7
 
     invoke-direct/range {v0 .. v7}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;-><init>(Lcom/amap/api/maps2d/AMap;Lcom/sec/samsung/gallery/mapfragment/clustering/CommonOptions;Ljava/util/ArrayList;Landroid/content/Context;Ljava/lang/String;I[J)V
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->clusterkraf:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
     invoke-static {v10, v0}, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->access$602(Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;)Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
 
     :cond_2

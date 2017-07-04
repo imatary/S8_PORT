@@ -45,7 +45,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->handleImageAnalysis(Landroid/preference/Preference;Z)V
     invoke-static {v0, p1, v1}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$400(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;Landroid/preference/Preference;Z)V
 
     const/4 v0, 0x1

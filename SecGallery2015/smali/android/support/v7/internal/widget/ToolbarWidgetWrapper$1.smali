@@ -37,7 +37,6 @@
 
     iget-object v1, p0, Landroid/support/v7/internal/widget/ToolbarWidgetWrapper$1;->this$0:Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;
 
-    # getter for: Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;->mToolbar:Landroid/support/v7/widget/Toolbar;
     invoke-static {v1}, Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;->access$000(Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;)Landroid/support/v7/widget/Toolbar;
 
     move-result-object v1
@@ -50,7 +49,6 @@
 
     iget-object v4, p0, Landroid/support/v7/internal/widget/ToolbarWidgetWrapper$1;->this$0:Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;
 
-    # getter for: Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;->mTitle:Ljava/lang/CharSequence;
     invoke-static {v4}, Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;->access$100(Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;)Ljava/lang/CharSequence;
 
     move-result-object v6
@@ -73,7 +71,6 @@
 
     iget-object v0, p0, Landroid/support/v7/internal/widget/ToolbarWidgetWrapper$1;->this$0:Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;
 
-    # getter for: Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;->mWindowCallback:Landroid/view/Window$Callback;
     invoke-static {v0}, Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;->access$200(Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;)Landroid/view/Window$Callback;
 
     move-result-object v0
@@ -82,7 +79,6 @@
 
     iget-object v0, p0, Landroid/support/v7/internal/widget/ToolbarWidgetWrapper$1;->this$0:Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;
 
-    # getter for: Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;->mMenuPrepared:Z
     invoke-static {v0}, Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;->access$300(Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;)Z
 
     move-result v0
@@ -91,7 +87,6 @@
 
     iget-object v0, p0, Landroid/support/v7/internal/widget/ToolbarWidgetWrapper$1;->this$0:Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;
 
-    # getter for: Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;->mWindowCallback:Landroid/view/Window$Callback;
     invoke-static {v0}, Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;->access$200(Landroid/support/v7/internal/widget/ToolbarWidgetWrapper;)Landroid/view/Window$Callback;
 
     move-result-object v0

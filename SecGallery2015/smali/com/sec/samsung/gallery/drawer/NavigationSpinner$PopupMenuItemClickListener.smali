@@ -56,7 +56,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$PopupMenuItemClickListener;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mSpinnerMenuAdapter:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$100(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
     move-result-object v2
@@ -84,7 +83,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$PopupMenuItemClickListener;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$700(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)Landroid/os/Handler;
 
     move-result-object v2
@@ -93,7 +91,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$PopupMenuItemClickListener;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mPopupMenu:Landroid/widget/ListPopupWindow;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$500(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)Landroid/widget/ListPopupWindow;
 
     move-result-object v2
@@ -147,7 +144,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$PopupMenuItemClickListener;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mPopupMenu:Landroid/widget/ListPopupWindow;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$500(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)Landroid/widget/ListPopupWindow;
 
     move-result-object v2
@@ -160,7 +156,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$PopupMenuItemClickListener;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mPopupMenu:Landroid/widget/ListPopupWindow;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$500(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)Landroid/widget/ListPopupWindow;
 
     move-result-object v2

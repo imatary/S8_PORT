@@ -558,7 +558,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->mAreaOfListScroll:Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$Area;
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$Area;->contains(II)Z
     invoke-static {v4, v2, v3}, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$Area;->access$600(Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$Area;II)Z
 
     move-result v4

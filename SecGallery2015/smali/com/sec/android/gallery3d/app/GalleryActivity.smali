@@ -1675,15 +1675,15 @@
 
     iget-boolean v1, p0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mIsActive:Z
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     iget-boolean v1, p0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mNeedUpdateBackscreenInPauseState:Z
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_1
 
     sget-boolean v1, Lcom/sec/android/gallery3d/app/GalleryActivity;->USE_MULTIWINDOW:Z
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_0
 
     invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getMultiWindow()Lcom/sec/android/gallery3d/app/IGalleryMultiWindow;
 
@@ -1697,16 +1697,35 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-nez v1, :cond_1
 
     :cond_0
-    invoke-direct {p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->needToPendingResume()Z
+    sget-object v1, Lcom/sec/samsung/gallery/features/FeatureNames;->UseNewSlideShowVideoPlay:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v1}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
+    iget-object v1, p0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mStateManager:Lcom/sec/android/gallery3d/app/StateManager;
+
+    invoke-virtual {v1}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
+
+    move-result-object v1
+
+    instance-of v1, v1, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
+
+    if-eqz v1, :cond_2
+
     :cond_1
+    invoke-direct {p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->needToPendingResume()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    :cond_2
     const-string/jumbo v1, "GalleryActivity"
 
     const-string/jumbo v2, "GalleryActivity.updateBackscreenInPauseState() is called for showing background screen normally in Pause state."
@@ -1719,20 +1738,20 @@
 
     const/4 v0, 0x0
 
-    :cond_2
+    :cond_3
     invoke-direct {p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->isNotFullWindow()Z
 
     move-result v1
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_4
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mMainHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v3}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    :cond_3
+    :cond_4
     return-void
 .end method
 
@@ -2347,6 +2366,8 @@
     invoke-virtual {v0}, Lcom/sec/android/gallery3d/util/DualScreenManager;->setExpandShrinkButton()V
 
     :cond_3
+    invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->setOnSystemUiVisibilityChangeListener()V
+
     return-void
 
     :cond_4
@@ -3726,537 +3747,35 @@
     goto/16 :goto_0
 
     :cond_14
-    move-object/from16 v0, p0
+    const/16 v13, 0x5c
 
-    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+    move/from16 v0, p1
 
-    invoke-virtual {v13}, Lcom/sec/android/gallery3d/glcore/GlRootView;->hasFocus()Z
+    if-eq v0, v13, :cond_15
+
+    const/16 v13, 0x5d
+
+    move/from16 v0, p1
+
+    if-ne v0, v13, :cond_16
+
+    :cond_15
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getDesktopModeInterface()Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
+
+    move-result-object v13
+
+    invoke-interface {v13}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
 
     move-result v13
-
-    if-eqz v13, :cond_21
-
-    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getKeyCode()I
-
-    move-result v2
-
-    const/16 v13, 0x13
-
-    if-ne v2, v13, :cond_19
-
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
-
-    move-result-object v12
-
-    if-eqz v12, :cond_16
-
-    invoke-virtual {v12}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
-
-    move-result-object v10
-
-    instance-of v13, v10, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
     if-eqz v13, :cond_16
 
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getSelectionManager()Lcom/sec/android/gallery3d/ui/SelectionManager;
-
-    move-result-object v13
-
-    invoke-virtual {v13}, Lcom/sec/android/gallery3d/ui/SelectionManager;->inSelectionMode()Z
-
-    move-result v13
-
-    if-nez v13, :cond_15
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-
-    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->getCurrentLaunchMode()Lcom/sec/samsung/gallery/core/LaunchModeType;
-
-    move-result-object v13
-
-    sget-object v14, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
-
-    if-eq v13, v14, :cond_15
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-
-    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->getCurrentLaunchMode()Lcom/sec/samsung/gallery/core/LaunchModeType;
-
-    move-result-object v13
-
-    sget-object v14, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_MULTIPLE_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
-
-    if-ne v13, v14, :cond_16
-
-    :cond_15
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getAndroidContext()Landroid/content/Context;
-
-    move-result-object v13
-
-    invoke-static {v13, v2}, Lcom/sec/android/gallery3d/util/GalleryUtils;->playSoundKeyClick(Landroid/content/Context;I)V
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-
-    const/4 v14, 0x0
-
-    invoke-virtual {v13, v14}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setFocusable(Z)V
-
-    const/4 v13, 0x1
-
-    goto/16 :goto_0
-
-    :cond_16
-    const v13, 0x7f120008
-
-    move-object/from16 v0, p0
-
-    invoke-virtual {v0, v13}, Lcom/sec/android/gallery3d/app/GalleryActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v7
-
-    check-cast v7, Landroid/view/ViewGroup;
-
-    sget-boolean v13, Lcom/sec/android/gallery3d/app/GalleryActivity;->IS_TAB_UI:Z
-
-    if-eqz v13, :cond_17
-
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
-
-    move-result-object v13
-
-    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
-
-    move-result-object v10
-
-    invoke-static/range {p0 .. p0}, Lcom/sec/android/gallery3d/util/GalleryUtils;->isWeChatSightMode(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)Z
-
-    move-result v13
-
-    if-nez v13, :cond_17
-
-    instance-of v13, v10, Lcom/sec/android/gallery3d/app/TabActivityState;
-
-    if-eqz v13, :cond_17
-
-    if-nez v7, :cond_17
-
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getGalleryTab()Lcom/sec/samsung/gallery/drawer/GalleryTabable;
-
-    move-result-object v13
-
-    invoke-interface {v13}, Lcom/sec/samsung/gallery/drawer/GalleryTabable;->requestFocus()V
-
-    const/4 v13, 0x1
-
-    goto/16 :goto_0
-
-    :cond_17
-    if-eqz v7, :cond_19
-
-    invoke-virtual {v7}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v13
-
-    if-eqz v13, :cond_19
-
-    invoke-virtual {v7}, Landroid/view/ViewGroup;->hasFocus()Z
-
-    move-result v13
-
-    if-nez v13, :cond_19
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-
-    const/4 v14, 0x0
-
-    invoke-virtual {v13, v14}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setFocusable(Z)V
-
-    invoke-virtual {v7}, Landroid/view/ViewGroup;->requestFocus()Z
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-
-    invoke-virtual {v13}, Lcom/sec/android/gallery3d/glcore/GlRootView;->getRootLayer()Lcom/sec/android/gallery3d/glcore/GlLayer;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_18
-
-    invoke-virtual {v4}, Lcom/sec/android/gallery3d/glcore/GlLayer;->dispatchGenericMotionCancel()V
-
-    :cond_18
-    const/4 v13, 0x1
-
-    goto/16 :goto_0
-
-    :cond_19
-    const/16 v13, 0x14
-
-    if-eq v2, v13, :cond_1a
-
-    const/16 v13, 0x13
-
-    if-eq v2, v13, :cond_1a
-
-    const/16 v13, 0x15
-
-    if-eq v2, v13, :cond_1a
-
-    const/16 v13, 0x16
-
-    if-ne v2, v13, :cond_20
-
-    :cond_1a
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mStateManager:Lcom/sec/android/gallery3d/app/StateManager;
-
-    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
-
-    move-result-object v13
-
-    instance-of v13, v13, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
-
-    if-eqz v13, :cond_1b
-
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getAndroidContext()Landroid/content/Context;
-
-    move-result-object v13
-
-    invoke-static {v13, v2}, Lcom/sec/android/gallery3d/util/GalleryUtils;->playSoundKeyClick(Landroid/content/Context;I)V
-
-    :cond_1b
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
-
-    move-result-object v13
-
-    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
-
-    move-result-object v10
-
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getActionBar()Landroid/app/ActionBar;
-
-    move-result-object v13
-
-    if-eqz v13, :cond_1d
-
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getActionBar()Landroid/app/ActionBar;
-
-    move-result-object v13
-
-    invoke-virtual {v13}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
-
-    move-result-object v13
-
-    if-nez v13, :cond_1c
-
-    instance-of v13, v10, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
-
-    if-eqz v13, :cond_1d
-
-    :cond_1c
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-
-    const/4 v14, 0x0
-
-    invoke-virtual {v13, v14}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setFocusable(Z)V
-
-    :cond_1d
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-
-    invoke-virtual {v13}, Lcom/sec/android/gallery3d/glcore/GlRootView;->getRootLayer()Lcom/sec/android/gallery3d/glcore/GlLayer;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_1e
-
-    invoke-virtual {v4}, Lcom/sec/android/gallery3d/glcore/GlLayer;->dispatchGenericMotionCancel()V
-
-    :cond_1e
-    :goto_1
-    const/16 v13, 0x71
-
-    move/from16 v0, p1
-
-    if-eq v0, v13, :cond_1f
-
-    const/16 v13, 0x72
-
-    move/from16 v0, p1
-
-    if-ne v0, v13, :cond_2e
-
-    :cond_1f
     const-string/jumbo v13, "GalleryActivity"
 
-    const-string/jumbo v14, "onKeyDown KEYCODE_CTRL_LEFT || KEYCODE_CTRL_RIGHT"
+    const-string/jumbo v14, "onKeyDown KEYCODE_PAGE_UP || KEYCODE_PAGE_DOWN"
 
     invoke-static {v13, v14}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-
-    move/from16 v0, p1
-
-    move-object/from16 v1, p2
-
-    invoke-virtual {v13, v0, v1}, Lcom/sec/android/gallery3d/glcore/GlRootView;->onKeyDown(ILandroid/view/KeyEvent;)Z
-
-    move-result v13
-
-    goto/16 :goto_0
-
-    :cond_20
-    const/16 v13, 0x3d
-
-    if-ne v2, v13, :cond_1e
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-
-    invoke-virtual {v13}, Lcom/sec/android/gallery3d/glcore/GlRootView;->getRootLayer()Lcom/sec/android/gallery3d/glcore/GlLayer;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_1e
-
-    invoke-virtual {v4}, Lcom/sec/android/gallery3d/glcore/GlLayer;->dispatchGenericMotionCancel()V
-
-    goto :goto_1
-
-    :cond_21
-    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getKeyCode()I
-
-    move-result v13
-
-    const/16 v14, 0x14
-
-    if-eq v13, v14, :cond_23
-
-    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getKeyCode()I
-
-    move-result v13
-
-    const/16 v14, 0x3d
-
-    if-ne v13, v14, :cond_2b
-
-    invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->isLastActionBarObjectFocused()Z
-
-    move-result v13
-
-    if-nez v13, :cond_22
-
-    invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->isLastTabObjectFocused()Z
-
-    move-result v13
-
-    if-eqz v13, :cond_2b
-
-    :cond_22
-    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getMetaState()I
-
-    move-result v13
-
-    and-int/lit8 v13, v13, 0x1
-
-    const/4 v14, 0x1
-
-    if-eq v13, v14, :cond_2b
-
-    :cond_23
-    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getKeyCode()I
-
-    move-result v13
-
-    const/16 v14, 0x3d
-
-    if-ne v13, v14, :cond_26
-
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
-
-    move-result-object v12
-
-    if-eqz v12, :cond_26
-
-    invoke-virtual {v12}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
-
-    move-result-object v10
-
-    instance-of v13, v10, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
-
-    if-nez v13, :cond_24
-
-    instance-of v13, v10, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
-
-    if-nez v13, :cond_24
-
-    instance-of v13, v10, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
-
-    if-eqz v13, :cond_25
-
-    :cond_24
-    invoke-super/range {p0 .. p2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
-
-    move-result v13
-
-    goto/16 :goto_0
-
-    :cond_25
-    const/16 p1, 0x14
-
-    new-instance p2, Landroid/view/KeyEvent;
-
-    const/4 v13, 0x0
-
-    const/16 v14, 0x14
-
-    move-object/from16 v0, p2
-
-    invoke-direct {v0, v13, v14}, Landroid/view/KeyEvent;-><init>(II)V
-
-    :cond_26
-    const v13, 0x7f120008
-
-    move-object/from16 v0, p0
-
-    invoke-virtual {v0, v13}, Lcom/sec/android/gallery3d/app/GalleryActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v7
-
-    check-cast v7, Landroid/view/ViewGroup;
-
-    sget-boolean v13, Lcom/sec/android/gallery3d/app/GalleryActivity;->IS_TAB_UI:Z
-
-    if-eqz v13, :cond_27
-
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
-
-    move-result-object v13
-
-    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
-
-    move-result-object v10
-
-    invoke-static/range {p0 .. p0}, Lcom/sec/android/gallery3d/util/GalleryUtils;->isWeChatSightMode(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)Z
-
-    move-result v13
-
-    if-nez v13, :cond_27
-
-    instance-of v13, v10, Lcom/sec/android/gallery3d/app/TabActivityState;
-
-    if-eqz v13, :cond_27
-
-    if-nez v7, :cond_27
-
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getGalleryTab()Lcom/sec/samsung/gallery/drawer/GalleryTabable;
-
-    move-result-object v13
-
-    invoke-interface {v13}, Lcom/sec/samsung/gallery/drawer/GalleryTabable;->hasFocus()Z
-
-    move-result v13
-
-    if-nez v13, :cond_27
-
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getGalleryTab()Lcom/sec/samsung/gallery/drawer/GalleryTabable;
-
-    move-result-object v13
-
-    invoke-interface {v13}, Lcom/sec/samsung/gallery/drawer/GalleryTabable;->requestFocus()V
-
-    const/4 v13, 0x1
-
-    goto/16 :goto_0
-
-    :cond_27
-    if-eqz v7, :cond_28
-
-    invoke-virtual {v7}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v13
-
-    if-eqz v13, :cond_28
-
-    invoke-virtual {v7}, Landroid/view/ViewGroup;->hasFocus()Z
-
-    move-result v13
-
-    if-nez v13, :cond_28
-
-    invoke-virtual {v7}, Landroid/view/ViewGroup;->requestFocus()Z
-
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getAndroidContext()Landroid/content/Context;
-
-    move-result-object v13
-
-    move/from16 v0, p1
-
-    invoke-static {v13, v0}, Lcom/sec/android/gallery3d/util/GalleryUtils;->playSoundKeyClick(Landroid/content/Context;I)V
-
-    const/4 v13, 0x1
-
-    goto/16 :goto_0
-
-    :cond_28
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
-
-    move-result-object v12
-
-    if-eqz v12, :cond_2a
-
-    invoke-virtual {v12}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
-
-    move-result-object v10
-
-    if-eqz v10, :cond_2a
-
-    instance-of v13, v10, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
-
-    if-eqz v13, :cond_29
-
-    move/from16 v0, p1
-
-    move-object/from16 v1, p2
-
-    invoke-virtual {v10, v0, v1}, Lcom/sec/android/gallery3d/app/ActivityState;->onKeyDown(ILandroid/view/KeyEvent;)Z
-
-    move-result v13
-
-    goto/16 :goto_0
-
-    :cond_29
-    instance-of v13, v10, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
-
-    if-eqz v13, :cond_2a
-
-    invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->isFastOptionViewFocused()Z
-
-    move-result v13
-
-    if-eqz v13, :cond_2a
-
-    const/4 v13, 0x1
-
-    goto/16 :goto_0
-
-    :cond_2a
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
@@ -4285,20 +3804,30 @@
 
     goto/16 :goto_0
 
-    :cond_2b
-    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getKeyCode()I
+    :cond_16
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/glcore/GlRootView;->hasFocus()Z
 
     move-result v13
 
-    const/16 v14, 0x13
+    if-eqz v13, :cond_23
 
-    if-ne v13, v14, :cond_1e
+    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v2
+
+    const/16 v13, 0x13
+
+    if-ne v2, v13, :cond_1b
 
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
 
     move-result-object v12
 
-    if-eqz v12, :cond_1e
+    if-eqz v12, :cond_18
 
     invoke-virtual {v12}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
 
@@ -4306,13 +3835,271 @@
 
     instance-of v13, v10, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    if-eqz v13, :cond_1e
+    if-eqz v13, :cond_18
 
-    invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->isActionBarObjectFocused()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getSelectionManager()Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/ui/SelectionManager;->inSelectionMode()Z
 
     move-result v13
 
-    if-nez v13, :cond_2c
+    if-nez v13, :cond_17
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->getCurrentLaunchMode()Lcom/sec/samsung/gallery/core/LaunchModeType;
+
+    move-result-object v13
+
+    sget-object v14, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
+
+    if-eq v13, v14, :cond_17
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->getCurrentLaunchMode()Lcom/sec/samsung/gallery/core/LaunchModeType;
+
+    move-result-object v13
+
+    sget-object v14, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_MULTIPLE_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
+
+    if-ne v13, v14, :cond_18
+
+    :cond_17
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getAndroidContext()Landroid/content/Context;
+
+    move-result-object v13
+
+    invoke-static {v13, v2}, Lcom/sec/android/gallery3d/util/GalleryUtils;->playSoundKeyClick(Landroid/content/Context;I)V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    const/4 v14, 0x0
+
+    invoke-virtual {v13, v14}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setFocusable(Z)V
+
+    const/4 v13, 0x1
+
+    goto/16 :goto_0
+
+    :cond_18
+    const v13, 0x7f120008
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v13}, Lcom/sec/android/gallery3d/app/GalleryActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v7
+
+    check-cast v7, Landroid/view/ViewGroup;
+
+    sget-boolean v13, Lcom/sec/android/gallery3d/app/GalleryActivity;->IS_TAB_UI:Z
+
+    if-eqz v13, :cond_19
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
+
+    move-result-object v10
+
+    invoke-static/range {p0 .. p0}, Lcom/sec/android/gallery3d/util/GalleryUtils;->isWeChatSightMode(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)Z
+
+    move-result v13
+
+    if-nez v13, :cond_19
+
+    instance-of v13, v10, Lcom/sec/android/gallery3d/app/TabActivityState;
+
+    if-eqz v13, :cond_19
+
+    if-nez v7, :cond_19
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getGalleryTab()Lcom/sec/samsung/gallery/drawer/GalleryTabable;
+
+    move-result-object v13
+
+    invoke-interface {v13}, Lcom/sec/samsung/gallery/drawer/GalleryTabable;->requestFocus()V
+
+    const/4 v13, 0x1
+
+    goto/16 :goto_0
+
+    :cond_19
+    if-eqz v7, :cond_1b
+
+    invoke-virtual {v7}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v13
+
+    if-eqz v13, :cond_1b
+
+    invoke-virtual {v7}, Landroid/view/ViewGroup;->hasFocus()Z
+
+    move-result v13
+
+    if-nez v13, :cond_1b
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    const/4 v14, 0x0
+
+    invoke-virtual {v13, v14}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setFocusable(Z)V
+
+    invoke-virtual {v7}, Landroid/view/ViewGroup;->requestFocus()Z
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/glcore/GlRootView;->getRootLayer()Lcom/sec/android/gallery3d/glcore/GlLayer;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_1a
+
+    invoke-virtual {v4}, Lcom/sec/android/gallery3d/glcore/GlLayer;->dispatchGenericMotionCancel()V
+
+    :cond_1a
+    const/4 v13, 0x1
+
+    goto/16 :goto_0
+
+    :cond_1b
+    const/16 v13, 0x14
+
+    if-eq v2, v13, :cond_1c
+
+    const/16 v13, 0x13
+
+    if-eq v2, v13, :cond_1c
+
+    const/16 v13, 0x15
+
+    if-eq v2, v13, :cond_1c
+
+    const/16 v13, 0x16
+
+    if-ne v2, v13, :cond_22
+
+    :cond_1c
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mStateManager:Lcom/sec/android/gallery3d/app/StateManager;
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
+
+    move-result-object v13
+
+    instance-of v13, v13, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
+
+    if-eqz v13, :cond_1d
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getAndroidContext()Landroid/content/Context;
+
+    move-result-object v13
+
+    invoke-static {v13, v2}, Lcom/sec/android/gallery3d/util/GalleryUtils;->playSoundKeyClick(Landroid/content/Context;I)V
+
+    :cond_1d
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
+
+    move-result-object v10
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getActionBar()Landroid/app/ActionBar;
+
+    move-result-object v13
+
+    if-eqz v13, :cond_1f
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getActionBar()Landroid/app/ActionBar;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
+
+    move-result-object v13
+
+    if-nez v13, :cond_1e
+
+    instance-of v13, v10, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
+
+    if-eqz v13, :cond_1f
+
+    :cond_1e
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    const/4 v14, 0x0
+
+    invoke-virtual {v13, v14}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setFocusable(Z)V
+
+    :cond_1f
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/glcore/GlRootView;->getRootLayer()Lcom/sec/android/gallery3d/glcore/GlLayer;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_20
+
+    invoke-virtual {v4}, Lcom/sec/android/gallery3d/glcore/GlLayer;->dispatchGenericMotionCancel()V
+
+    :cond_20
+    :goto_1
+    const/16 v13, 0x71
+
+    move/from16 v0, p1
+
+    if-eq v0, v13, :cond_21
+
+    const/16 v13, 0x72
+
+    move/from16 v0, p1
+
+    if-eq v0, v13, :cond_21
+
+    const/16 v13, 0x70
+
+    move/from16 v0, p1
+
+    if-ne v0, v13, :cond_30
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getDesktopModeInterface()Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
+
+    move-result-object v13
+
+    invoke-interface {v13}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
+
+    move-result v13
+
+    if-eqz v13, :cond_30
+
+    :cond_21
+    const-string/jumbo v13, "GalleryActivity"
+
+    const-string/jumbo v14, "onKeyDown KEYCODE_CTRL_LEFT || KEYCODE_CTRL_RIGHT || KEYCODE_FORWARD_DEL"
+
+    invoke-static {v13, v14}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     move-object/from16 v0, p0
 
@@ -4326,45 +4113,133 @@
 
     move-result v13
 
-    if-eqz v13, :cond_2d
-
-    :cond_2c
-    const/4 v13, 0x1
-
     goto/16 :goto_0
 
-    :cond_2d
-    const/4 v13, 0x0
+    :cond_22
+    const/16 v13, 0x3d
 
-    goto/16 :goto_0
+    if-ne v2, v13, :cond_20
 
-    :cond_2e
-    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->isCtrlPressed()Z
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/glcore/GlRootView;->getRootLayer()Lcom/sec/android/gallery3d/glcore/GlLayer;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_20
+
+    invoke-virtual {v4}, Lcom/sec/android/gallery3d/glcore/GlLayer;->dispatchGenericMotionCancel()V
+
+    goto :goto_1
+
+    :cond_23
+    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v13
 
-    if-eqz v13, :cond_2f
+    const/16 v14, 0x14
 
-    const/16 v13, 0x22
+    if-eq v13, v14, :cond_25
 
-    move/from16 v0, p1
+    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
-    if-eq v0, v13, :cond_30
+    move-result v13
 
-    :cond_2f
-    sget v13, Lcom/sec/samsung/gallery/lib/factory/KeyEventWrapper;->KEYCODE_VOICE_SEARCH:I
+    const/16 v14, 0x3d
 
-    move/from16 v0, p1
+    if-ne v13, v14, :cond_2d
 
-    if-eq v0, v13, :cond_30
+    invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->isLastActionBarObjectFocused()Z
 
-    const/16 v13, 0x54
+    move-result v13
 
-    move/from16 v0, p1
+    if-nez v13, :cond_24
 
-    if-ne v0, v13, :cond_32
+    invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->isLastTabObjectFocused()Z
 
-    :cond_30
+    move-result v13
+
+    if-eqz v13, :cond_2d
+
+    :cond_24
+    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getMetaState()I
+
+    move-result v13
+
+    and-int/lit8 v13, v13, 0x1
+
+    const/4 v14, 0x1
+
+    if-eq v13, v14, :cond_2d
+
+    :cond_25
+    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v13
+
+    const/16 v14, 0x3d
+
+    if-ne v13, v14, :cond_28
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
+
+    move-result-object v12
+
+    if-eqz v12, :cond_28
+
+    invoke-virtual {v12}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
+
+    move-result-object v10
+
+    instance-of v13, v10, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
+
+    if-nez v13, :cond_26
+
+    instance-of v13, v10, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
+
+    if-nez v13, :cond_26
+
+    instance-of v13, v10, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
+
+    if-eqz v13, :cond_27
+
+    :cond_26
+    invoke-super/range {p0 .. p2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
+
+    move-result v13
+
+    goto/16 :goto_0
+
+    :cond_27
+    const/16 p1, 0x14
+
+    new-instance p2, Landroid/view/KeyEvent;
+
+    const/4 v13, 0x0
+
+    const/16 v14, 0x14
+
+    move-object/from16 v0, p2
+
+    invoke-direct {v0, v13, v14}, Landroid/view/KeyEvent;-><init>(II)V
+
+    :cond_28
+    const v13, 0x7f120008
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v13}, Lcom/sec/android/gallery3d/app/GalleryActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v7
+
+    check-cast v7, Landroid/view/ViewGroup;
+
+    sget-boolean v13, Lcom/sec/android/gallery3d/app/GalleryActivity;->IS_TAB_UI:Z
+
+    if-eqz v13, :cond_29
+
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
 
     move-result-object v13
@@ -4373,7 +4248,83 @@
 
     move-result-object v10
 
-    if-eqz v10, :cond_31
+    invoke-static/range {p0 .. p0}, Lcom/sec/android/gallery3d/util/GalleryUtils;->isWeChatSightMode(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)Z
+
+    move-result v13
+
+    if-nez v13, :cond_29
+
+    instance-of v13, v10, Lcom/sec/android/gallery3d/app/TabActivityState;
+
+    if-eqz v13, :cond_29
+
+    if-nez v7, :cond_29
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getGalleryTab()Lcom/sec/samsung/gallery/drawer/GalleryTabable;
+
+    move-result-object v13
+
+    invoke-interface {v13}, Lcom/sec/samsung/gallery/drawer/GalleryTabable;->hasFocus()Z
+
+    move-result v13
+
+    if-nez v13, :cond_29
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getGalleryTab()Lcom/sec/samsung/gallery/drawer/GalleryTabable;
+
+    move-result-object v13
+
+    invoke-interface {v13}, Lcom/sec/samsung/gallery/drawer/GalleryTabable;->requestFocus()V
+
+    const/4 v13, 0x1
+
+    goto/16 :goto_0
+
+    :cond_29
+    if-eqz v7, :cond_2a
+
+    invoke-virtual {v7}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v13
+
+    if-eqz v13, :cond_2a
+
+    invoke-virtual {v7}, Landroid/view/ViewGroup;->hasFocus()Z
+
+    move-result v13
+
+    if-nez v13, :cond_2a
+
+    invoke-virtual {v7}, Landroid/view/ViewGroup;->requestFocus()Z
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getAndroidContext()Landroid/content/Context;
+
+    move-result-object v13
+
+    move/from16 v0, p1
+
+    invoke-static {v13, v0}, Lcom/sec/android/gallery3d/util/GalleryUtils;->playSoundKeyClick(Landroid/content/Context;I)V
+
+    const/4 v13, 0x1
+
+    goto/16 :goto_0
+
+    :cond_2a
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
+
+    move-result-object v12
+
+    if-eqz v12, :cond_2c
+
+    invoke-virtual {v12}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
+
+    move-result-object v10
+
+    if-eqz v10, :cond_2c
+
+    instance-of v13, v10, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
+
+    if-eqz v13, :cond_2b
 
     move/from16 v0, p1
 
@@ -4381,12 +4332,156 @@
 
     invoke-virtual {v10, v0, v1}, Lcom/sec/android/gallery3d/app/ActivityState;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
-    :cond_31
+    move-result v13
+
+    goto/16 :goto_0
+
+    :cond_2b
+    instance-of v13, v10, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
+
+    if-eqz v13, :cond_2c
+
+    invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->isFastOptionViewFocused()Z
+
+    move-result v13
+
+    if-eqz v13, :cond_2c
+
     const/4 v13, 0x1
 
     goto/16 :goto_0
 
+    :cond_2c
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    const/4 v14, 0x1
+
+    invoke-virtual {v13, v14}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setFocusable(Z)V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/glcore/GlRootView;->requestFocus()Z
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    move/from16 v0, p1
+
+    move-object/from16 v1, p2
+
+    invoke-virtual {v13, v0, v1}, Lcom/sec/android/gallery3d/glcore/GlRootView;->onKeyDown(ILandroid/view/KeyEvent;)Z
+
+    move-result v13
+
+    goto/16 :goto_0
+
+    :cond_2d
+    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v13
+
+    const/16 v14, 0x13
+
+    if-ne v13, v14, :cond_20
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
+
+    move-result-object v12
+
+    if-eqz v12, :cond_20
+
+    invoke-virtual {v12}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
+
+    move-result-object v10
+
+    instance-of v13, v10, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
+
+    if-eqz v13, :cond_20
+
+    invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->isActionBarObjectFocused()Z
+
+    move-result v13
+
+    if-nez v13, :cond_2e
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/sec/android/gallery3d/app/GalleryActivity;->mGLRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    move/from16 v0, p1
+
+    move-object/from16 v1, p2
+
+    invoke-virtual {v13, v0, v1}, Lcom/sec/android/gallery3d/glcore/GlRootView;->onKeyDown(ILandroid/view/KeyEvent;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_2f
+
+    :cond_2e
+    const/4 v13, 0x1
+
+    goto/16 :goto_0
+
+    :cond_2f
+    const/4 v13, 0x0
+
+    goto/16 :goto_0
+
+    :cond_30
+    invoke-virtual/range {p2 .. p2}, Landroid/view/KeyEvent;->isCtrlPressed()Z
+
+    move-result v13
+
+    if-eqz v13, :cond_31
+
+    const/16 v13, 0x22
+
+    move/from16 v0, p1
+
+    if-eq v0, v13, :cond_32
+
+    :cond_31
+    sget v13, Lcom/sec/samsung/gallery/lib/factory/KeyEventWrapper;->KEYCODE_VOICE_SEARCH:I
+
+    move/from16 v0, p1
+
+    if-eq v0, v13, :cond_32
+
+    const/16 v13, 0x54
+
+    move/from16 v0, p1
+
+    if-ne v0, v13, :cond_34
+
     :cond_32
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
+
+    move-result-object v10
+
+    if-eqz v10, :cond_33
+
+    move/from16 v0, p1
+
+    move-object/from16 v1, p2
+
+    invoke-virtual {v10, v0, v1}, Lcom/sec/android/gallery3d/app/ActivityState;->onKeyDown(ILandroid/view/KeyEvent;)Z
+
+    :cond_33
+    const/4 v13, 0x1
+
+    goto/16 :goto_0
+
+    :cond_34
     invoke-super/range {p0 .. p2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v13

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$8;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mSelectionTask:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$2800(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$8;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mSelectionTask:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$2800(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;
 
     move-result-object v0
@@ -59,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$8;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mOnProgressListener:Lcom/sec/android/gallery3d/data/OnProgressListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$2900(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/data/OnProgressListener;
 
     move-result-object v0
@@ -68,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$8;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mOnProgressListener:Lcom/sec/android/gallery3d/data/OnProgressListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$2900(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/data/OnProgressListener;
 
     move-result-object v0

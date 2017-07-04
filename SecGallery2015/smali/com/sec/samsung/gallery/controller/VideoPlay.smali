@@ -648,7 +648,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getBucketId()I
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$000(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)I
 
     move-result v7
@@ -659,7 +658,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getCategoryType()I
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$100(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)I
 
     move-result v7
@@ -670,7 +668,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getItemId()I
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$200(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)I
 
     move-result v7
@@ -681,7 +678,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getSortBy()I
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$300(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)I
 
     move-result v7
@@ -692,7 +688,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getSearchKeyword()Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$400(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/lang/String;
 
     move-result-object v7
@@ -703,7 +698,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getNearbyDeviceId()Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$500(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/lang/String;
 
     move-result-object v7
@@ -714,7 +708,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getSeedString()Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$600(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/lang/String;
 
     move-result-object v7
@@ -725,7 +718,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getNearbyThumbUri()Landroid/net/Uri;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$700(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Landroid/net/Uri;
 
     move-result-object v7
@@ -736,7 +728,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getSCloudId()I
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$800(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)I
 
     move-result v7
@@ -747,7 +738,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getNearbyDeviceNic()Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$900(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/lang/String;
 
     move-result-object v7
@@ -758,7 +748,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getNearbyProviderName()Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$1000(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/lang/String;
 
     move-result-object v7
@@ -769,7 +758,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getIsSharedEvent()Z
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$1100(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Z
 
     move-result v7
@@ -780,7 +768,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getSeekTo()J
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$1200(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)J
 
     move-result-wide v8
@@ -801,7 +788,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getBucketId()I
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$000(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)I
 
     move-result v8
@@ -818,7 +804,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getCategoryType()I
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$100(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)I
 
     move-result v8
@@ -835,7 +820,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getItemId()I
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$200(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)I
 
     move-result v8
@@ -852,7 +836,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getSortBy()I
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$300(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)I
 
     move-result v8
@@ -869,7 +852,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getSearchKeyword()Ljava/lang/String;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$400(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/lang/String;
 
     move-result-object v8
@@ -886,7 +868,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getNearbyDeviceId()Ljava/lang/String;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$500(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/lang/String;
 
     move-result-object v8
@@ -903,7 +884,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getSeedString()Ljava/lang/String;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$600(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/lang/String;
 
     move-result-object v8
@@ -920,7 +900,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getNearbyThumbUri()Landroid/net/Uri;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$700(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Landroid/net/Uri;
 
     move-result-object v8
@@ -937,7 +916,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getSCloudId()I
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$800(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)I
 
     move-result v8
@@ -954,7 +932,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getNearbyDeviceNic()Ljava/lang/String;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$900(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/lang/String;
 
     move-result-object v8
@@ -971,7 +948,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getNearbyProviderName()Ljava/lang/String;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$1000(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/lang/String;
 
     move-result-object v8
@@ -988,7 +964,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getIsSharedEvent()Z
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$1100(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Z
 
     move-result v8
@@ -1005,7 +980,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getSeekTo()J
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$1200(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)J
 
     move-result-wide v8
@@ -1049,7 +1023,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getUris()Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$1300(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -1058,7 +1031,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/VideoPlay;->mVideoPlayInfo:Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->getUris()Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;->access$1300(Lcom/sec/samsung/gallery/controller/VideoPlay$VideoPlayInfo;)Ljava/util/ArrayList;
 
     move-result-object v6

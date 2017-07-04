@@ -41,14 +41,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$200(Lcom/sec/samsung/gallery/glview/GlButtonView;)Landroid/content/Context;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->mGlRoot:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$400(Lcom/sec/samsung/gallery/glview/GlButtonView;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v2
@@ -57,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->isPressed:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$000(Lcom/sec/samsung/gallery/glview/GlButtonView;)Z
 
     move-result v1
@@ -66,19 +63,16 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->isPressed:Z
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$002(Lcom/sec/samsung/gallery/glview/GlButtonView;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/GlButtonView;->playSoundOnClickThumb()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$500(Lcom/sec/samsung/gallery/glview/GlButtonView;)V
 
     const/4 v0, 0x0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->mClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$600(Lcom/sec/samsung/gallery/glview/GlButtonView;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v1
@@ -87,14 +81,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->mClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$600(Lcom/sec/samsung/gallery/glview/GlButtonView;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->mGlObject:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$700(Lcom/sec/samsung/gallery/glview/GlButtonView;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -170,21 +162,18 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->isPressed:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$002(Lcom/sec/samsung/gallery/glview/GlButtonView;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$200(Lcom/sec/samsung/gallery/glview/GlButtonView;)Landroid/content/Context;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->mPressedDrawableId:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$300(Lcom/sec/samsung/gallery/glview/GlButtonView;)I
 
     move-result v2
@@ -197,7 +186,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->isPressed:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$000(Lcom/sec/samsung/gallery/glview/GlButtonView;)Z
 
     move-result v0
@@ -212,7 +200,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->isPressed:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$000(Lcom/sec/samsung/gallery/glview/GlButtonView;)Z
 
     move-result v0
@@ -221,21 +208,18 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->isPressed:Z
     invoke-static {v0, v3}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$002(Lcom/sec/samsung/gallery/glview/GlButtonView;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$200(Lcom/sec/samsung/gallery/glview/GlButtonView;)Landroid/content/Context;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/GlButtonView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlButtonView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlButtonView;->mNormalDrawableId:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/GlButtonView;->access$100(Lcom/sec/samsung/gallery/glview/GlButtonView;)I
 
     move-result v2

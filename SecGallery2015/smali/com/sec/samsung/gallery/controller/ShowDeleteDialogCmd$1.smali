@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->getOneItemCloudDeletePopupTextStringId()I
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)I
 
     move-result v0

@@ -77,7 +77,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sCanvas:Landroid/graphics/Canvas;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$100(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Canvas;
 
     move-result-object v0
@@ -106,7 +105,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sCanvas:Landroid/graphics/Canvas;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$100(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Canvas;
 
     move-result-object v0
@@ -117,7 +115,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sBitmapPaint:Landroid/graphics/Paint;
     invoke-static {v3}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$200(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Paint;
 
     move-result-object v3
@@ -128,7 +125,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sCanvas:Landroid/graphics/Canvas;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$100(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Canvas;
 
     move-result-object v0
@@ -147,7 +143,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sPaint:Landroid/graphics/Paint;
     invoke-static {v5}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$300(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Paint;
 
     move-result-object v5
@@ -159,7 +154,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sCanvas:Landroid/graphics/Canvas;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$100(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Canvas;
 
     move-result-object v0
@@ -178,7 +172,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sPaint:Landroid/graphics/Paint;
     invoke-static {v5}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$300(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Paint;
 
     move-result-object v5
@@ -190,7 +183,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sCanvas:Landroid/graphics/Canvas;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$100(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Canvas;
 
     move-result-object v0
@@ -205,7 +197,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sPaint:Landroid/graphics/Paint;
     invoke-static {v5}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$300(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Paint;
 
     move-result-object v5
@@ -217,7 +208,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sCanvas:Landroid/graphics/Canvas;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$100(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Canvas;
 
     move-result-object v0
@@ -232,7 +222,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sPaint:Landroid/graphics/Paint;
     invoke-static {v5}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$300(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Paint;
 
     move-result-object v5
@@ -247,7 +236,6 @@
     :cond_4
     iget-object v0, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Tile;->this$0:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sUploadBitmap:Landroid/graphics/Bitmap;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$400(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Landroid/graphics/Bitmap;
 
     move-result-object v0

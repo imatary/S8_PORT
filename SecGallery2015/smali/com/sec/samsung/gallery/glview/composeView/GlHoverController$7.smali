@@ -48,7 +48,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mStartTime:J
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$2000(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)J
 
     move-result-wide v2
@@ -57,7 +56,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # operator++ for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mLoadedCount:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$2108(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)I
 
     const-string/jumbo v0, "GlHoverController"
@@ -74,7 +72,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mLoadedCount:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)I
 
     move-result v2
@@ -91,7 +88,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mActiveCount:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$2200(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)I
 
     move-result v2
@@ -118,14 +114,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mLoadedCount:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)I
 
     move-result v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mActiveCount:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$2200(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)I
 
     move-result v1
@@ -134,7 +128,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v0
@@ -149,7 +142,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v1
@@ -176,7 +168,6 @@
     :try_start_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v0

@@ -136,7 +136,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1000(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -149,7 +148,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1000(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -231,7 +229,6 @@
 
     check-cast v1, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->mInPath:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->access$300(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;)Ljava/lang/String;
 
     move-result-object v2
@@ -244,7 +241,6 @@
 
     check-cast v1, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->mOutPath:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->access$400(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;)Ljava/lang/String;
 
     move-result-object v1
@@ -265,12 +261,10 @@
 
     check-cast v1, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->mOutPath:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->access$400(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;)Ljava/lang/String;
 
     move-result-object v1
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->updateItemDB(Ljava/lang/String;)V
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$500(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->mHandler:Landroid/os/Handler;
@@ -290,7 +284,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1000(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -318,12 +311,10 @@
 
     check-cast v1, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->mOutPath:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->access$400(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;)Ljava/lang/String;
 
     move-result-object v1
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->addSelectionModeProxy(Ljava/lang/String;)Z
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1100(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;Ljava/lang/String;)Z
 
     add-int/lit8 v0, v0, 0x1
@@ -353,7 +344,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->mMediaList:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1200(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -365,7 +355,6 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->mMediaList:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1200(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -378,7 +367,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1000(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -391,7 +379,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->mMediaList:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1200(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -423,7 +410,6 @@
 
     const/16 v3, 0x320
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->TIME_DELAY_SHARE:I
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1302(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;I)I
 
     :cond_1
@@ -435,7 +421,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1000(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)Landroid/content/Context;
 
     move-result-object v3
@@ -446,7 +431,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->mType:Ljava/lang/Boolean;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1400(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)Ljava/lang/Boolean;
 
     move-result-object v3
@@ -461,7 +445,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->TIME_DELAY_SHARE:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1300(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)I
 
     move-result v4

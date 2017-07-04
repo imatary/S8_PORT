@@ -49,14 +49,12 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mRsrcID:I
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$202(Lcom/sec/android/gallery3d/glcore/GlBackground;I)I
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$302(Lcom/sec/android/gallery3d/glcore/GlBackground;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     return-void
@@ -89,7 +87,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mNeedTransition:Z
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$100(Lcom/sec/android/gallery3d/glcore/GlBackground;)Z
 
     move-result v4
@@ -106,7 +103,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mNeedTransition:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$100(Lcom/sec/android/gallery3d/glcore/GlBackground;)Z
 
     move-result v2
@@ -120,12 +116,10 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mNeedTransition:Z
     invoke-static {v2, v1}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$102(Lcom/sec/android/gallery3d/glcore/GlBackground;Z)Z
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mRsrcID:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$200(Lcom/sec/android/gallery3d/glcore/GlBackground;)I
 
     move-result v2
@@ -134,7 +128,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$300(Lcom/sec/android/gallery3d/glcore/GlBackground;)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -143,7 +136,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$300(Lcom/sec/android/gallery3d/glcore/GlBackground;)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -162,7 +154,6 @@
     :cond_3
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mCurrent:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$400(Lcom/sec/android/gallery3d/glcore/GlBackground;)I
 
     move-result v2
@@ -171,13 +162,11 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mCurrent:I
     invoke-static {v2, v0}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$402(Lcom/sec/android/gallery3d/glcore/GlBackground;I)I
 
     :goto_1
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mCurrent:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$400(Lcom/sec/android/gallery3d/glcore/GlBackground;)I
 
     move-result v2
@@ -188,13 +177,11 @@
 
     const v2, 0x3c23d70a    # 0.01f
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mDelta:F
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$502(Lcom/sec/android/gallery3d/glcore/GlBackground;F)F
 
     :goto_2
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mRsrcID:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$200(Lcom/sec/android/gallery3d/glcore/GlBackground;)I
 
     move-result v0
@@ -205,31 +192,26 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mRsrcID:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$200(Lcom/sec/android/gallery3d/glcore/GlBackground;)I
 
     move-result v2
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/GlBackground;->setResourceImage(I)V
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$600(Lcom/sec/android/gallery3d/glcore/GlBackground;I)V
 
     :cond_4
     :goto_3
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mRsrcID:I
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$202(Lcom/sec/android/gallery3d/glcore/GlBackground;I)I
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$302(Lcom/sec/android/gallery3d/glcore/GlBackground;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mGlRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$800(Lcom/sec/android/gallery3d/glcore/GlBackground;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0
@@ -243,7 +225,6 @@
     :cond_5
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mCurrent:I
     invoke-static {v2, v1}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$402(Lcom/sec/android/gallery3d/glcore/GlBackground;I)I
 
     goto :goto_1
@@ -253,7 +234,6 @@
 
     const v2, -0x43dc28f6    # -0.01f
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mDelta:F
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$502(Lcom/sec/android/gallery3d/glcore/GlBackground;F)F
 
     goto :goto_2
@@ -261,7 +241,6 @@
     :cond_7
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$300(Lcom/sec/android/gallery3d/glcore/GlBackground;)Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -272,7 +251,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/glcore/GlBackground$Transitioner;->this$0:Lcom/sec/android/gallery3d/glcore/GlBackground;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlBackground;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$300(Lcom/sec/android/gallery3d/glcore/GlBackground;)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -281,7 +259,6 @@
 
     const/16 v4, 0x80
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/GlBackground;->setBitmapTexture(Landroid/graphics/Bitmap;II)V
     invoke-static {v0, v2, v3, v4}, Lcom/sec/android/gallery3d/glcore/GlBackground;->access$700(Lcom/sec/android/gallery3d/glcore/GlBackground;Landroid/graphics/Bitmap;II)V
 
     goto :goto_3

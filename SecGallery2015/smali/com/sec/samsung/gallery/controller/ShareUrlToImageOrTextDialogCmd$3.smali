@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;)Landroid/content/Context;
 
     move-result-object v1

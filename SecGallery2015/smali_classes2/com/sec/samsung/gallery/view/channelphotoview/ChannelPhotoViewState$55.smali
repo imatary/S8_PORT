@@ -53,7 +53,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$55;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mNoItemLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$23600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/view/View$OnLayoutChangeListener;
 
     move-result-object v2
@@ -66,7 +65,6 @@
 
     invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$55$1;-><init>(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$55;)V
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mNoItemLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$23602(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Landroid/view/View$OnLayoutChangeListener;)Landroid/view/View$OnLayoutChangeListener;
 
     :cond_0
@@ -78,7 +76,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$55;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mNoItemLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$23600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/view/View$OnLayoutChangeListener;
 
     move-result-object v2

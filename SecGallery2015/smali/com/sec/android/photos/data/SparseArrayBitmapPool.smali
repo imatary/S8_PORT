@@ -128,105 +128,84 @@
 
     const/4 v3, 0x0
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$000(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$000(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v0
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$100(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v0, v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$102(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     :goto_0
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$100(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$100(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v0
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$000(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v0, v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$002(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     :cond_0
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$300(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$300(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v0
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$400(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v0, v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$402(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     :goto_1
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$400(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$400(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v0
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$300(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v0, v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$302(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     :goto_2
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1, v3}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$102(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1, v3}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$402(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1, v3}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$002(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1, v3}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$302(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     iget v0, p0, Lcom/sec/android/photos/data/SparseArrayBitmapPool;->mSizeBytes:I
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->bitmap:Landroid/graphics/Bitmap;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$200(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -241,7 +220,6 @@
 
     if-eqz p2, :cond_1
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->bitmap:Landroid/graphics/Bitmap;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$200(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -249,7 +227,6 @@
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
     :cond_1
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->bitmap:Landroid/graphics/Bitmap;
     invoke-static {p1, v3}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$202(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/sec/android/photos/data/SparseArrayBitmapPool;->mNodePool:Landroid/support/v4/util/Pools$Pool;
@@ -261,7 +238,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/android/photos/data/SparseArrayBitmapPool;->mStore:Landroid/util/SparseArray;
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->bitmap:Landroid/graphics/Bitmap;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$200(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -270,7 +246,6 @@
 
     move-result v1
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$100(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v2
@@ -280,7 +255,6 @@
     goto :goto_0
 
     :cond_3
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$400(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v0
@@ -290,7 +264,6 @@
     goto :goto_1
 
     :cond_4
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$300(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v0
@@ -345,7 +318,6 @@
     :goto_0
     if-eqz v1, :cond_3
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->bitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$200(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -356,7 +328,6 @@
 
     if-ne v2, p2, :cond_0
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->bitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$200(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -367,7 +338,6 @@
 
     if-eqz v2, :cond_0
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->bitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$200(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -385,7 +355,6 @@
 
     :cond_0
     :try_start_1
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$100(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v1
@@ -393,7 +362,6 @@
     goto :goto_0
 
     :cond_1
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$100(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v1
@@ -401,7 +369,6 @@
     :cond_2
     if-eqz v1, :cond_3
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->bitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$200(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -412,7 +379,6 @@
 
     if-ne v2, p2, :cond_1
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->bitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$200(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -423,7 +389,6 @@
 
     if-nez v2, :cond_1
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->bitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$200(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -486,22 +451,18 @@
     invoke-direct {v2}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;-><init>()V
 
     :cond_1
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->bitmap:Landroid/graphics/Bitmap;
     invoke-static {v2, p1}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$202(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     const/4 v3, 0x0
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v2, v3}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$002(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     const/4 v3, 0x0
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v2, v3}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$302(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     iget-object v3, p0, Lcom/sec/android/photos/data/SparseArrayBitmapPool;->mPoolNodesHead:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v2, v3}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$402(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     iput-object v2, p0, Lcom/sec/android/photos/data/SparseArrayBitmapPool;->mPoolNodesHead:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
@@ -518,22 +479,18 @@
 
     check-cast v3, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v2, v3}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$102(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v2}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$100(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v3
 
     if-eqz v3, :cond_2
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v2}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$100(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v3
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInBucket:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v3, v2}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$002(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     :cond_2
@@ -541,7 +498,6 @@
 
     invoke-virtual {v3, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v2}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$400(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v3
@@ -562,12 +518,10 @@
     goto :goto_0
 
     :cond_3
-    # getter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->nextInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v2}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$400(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
 
     move-result-object v3
 
-    # setter for: Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->prevInPool:Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     invoke-static {v3, v2}, Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;->access$302(Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;)Lcom/sec/android/photos/data/SparseArrayBitmapPool$Node;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

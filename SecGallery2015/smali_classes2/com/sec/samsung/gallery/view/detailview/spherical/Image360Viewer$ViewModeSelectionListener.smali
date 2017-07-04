@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$ViewModeSelectionListener;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mViewModeLayout:Landroid/widget/LinearLayout;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$2200(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Landroid/widget/LinearLayout;
 
     move-result-object v1
@@ -68,7 +67,6 @@
 
     const/4 v2, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->refreshActionBarMessages(Z)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$200(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Z)V
 
     invoke-static {}, Lcom/samsung/android/gallery360viewer/IGallery360Viewer$ViewMode;->values()[Lcom/samsung/android/gallery360viewer/IGallery360Viewer$ViewMode;
@@ -83,7 +81,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$ViewModeSelectionListener;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->changeViewMode(Lcom/samsung/android/gallery360viewer/IGallery360Viewer$ViewMode;)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$2500(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Lcom/samsung/android/gallery360viewer/IGallery360Viewer$ViewMode;)V
 
     goto :goto_0

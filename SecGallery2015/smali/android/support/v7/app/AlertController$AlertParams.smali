@@ -150,7 +150,6 @@
 
     iget-object v1, p0, Landroid/support/v7/app/AlertController$AlertParams;->mInflater:Landroid/view/LayoutInflater;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mListLayout:I
     invoke-static {p1}, Landroid/support/v7/app/AlertController;->access$800(Landroid/support/v7/app/AlertController;)I
 
     move-result v3
@@ -175,7 +174,6 @@
 
     iget-object v2, p0, Landroid/support/v7/app/AlertController$AlertParams;->mContext:Landroid/content/Context;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mMultiChoiceItemLayout:I
     invoke-static {p1}, Landroid/support/v7/app/AlertController;->access$900(Landroid/support/v7/app/AlertController;)I
 
     move-result v3
@@ -196,12 +194,10 @@
     invoke-interface {v1, v6}, Landroid/support/v7/app/AlertController$AlertParams$OnPrepareListViewListener;->onPrepareListView(Landroid/widget/ListView;)V
 
     :cond_0
-    # setter for: Landroid/support/v7/app/AlertController;->mAdapter:Landroid/widget/ListAdapter;
     invoke-static {p1, v0}, Landroid/support/v7/app/AlertController;->access$1202(Landroid/support/v7/app/AlertController;Landroid/widget/ListAdapter;)Landroid/widget/ListAdapter;
 
     iget v1, p0, Landroid/support/v7/app/AlertController$AlertParams;->mCheckedItem:I
 
-    # setter for: Landroid/support/v7/app/AlertController;->mCheckedItem:I
     invoke-static {p1, v1}, Landroid/support/v7/app/AlertController;->access$1302(Landroid/support/v7/app/AlertController;I)I
 
     iget-object v1, p0, Landroid/support/v7/app/AlertController$AlertParams;->mOnClickListener:Landroid/content/DialogInterface$OnClickListener;
@@ -233,7 +229,6 @@
 
     :cond_3
     :goto_2
-    # setter for: Landroid/support/v7/app/AlertController;->mListView:Landroid/widget/ListView;
     invoke-static {p1, v6}, Landroid/support/v7/app/AlertController;->access$1402(Landroid/support/v7/app/AlertController;Landroid/widget/ListView;)Landroid/widget/ListView;
 
     return-void
@@ -260,7 +255,6 @@
 
     if-eqz v1, :cond_6
 
-    # getter for: Landroid/support/v7/app/AlertController;->mSingleChoiceItemLayout:I
     invoke-static {p1}, Landroid/support/v7/app/AlertController;->access$1000(Landroid/support/v7/app/AlertController;)I
 
     move-result v2
@@ -280,7 +274,6 @@
     goto :goto_0
 
     :cond_6
-    # getter for: Landroid/support/v7/app/AlertController;->mListItemLayout:I
     invoke-static {p1}, Landroid/support/v7/app/AlertController;->access$1100(Landroid/support/v7/app/AlertController;)I
 
     move-result v2

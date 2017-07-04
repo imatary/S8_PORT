@@ -912,7 +912,7 @@
 .method private setRootViewLayoutParams(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)V
     .locals 7
 
-    const v6, 0x7f0b0715
+    const v6, 0x7f0b0716
 
     const/4 v5, 0x0
 

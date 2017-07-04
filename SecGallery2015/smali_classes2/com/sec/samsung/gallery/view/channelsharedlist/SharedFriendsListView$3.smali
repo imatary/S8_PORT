@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListView$3;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListView;->stopSharing()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListView;->access$100(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListView;)V
 
     return-void

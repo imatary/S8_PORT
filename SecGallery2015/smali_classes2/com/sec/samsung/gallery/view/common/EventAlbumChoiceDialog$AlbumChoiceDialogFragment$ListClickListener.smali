@@ -49,7 +49,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->mAlbumMap:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->access$300(Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -66,7 +65,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->mAlbumMap:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->access$300(Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -83,7 +81,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->mAlbumMap:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->access$300(Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -100,7 +97,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->mEventAlbumMgr:Lcom/sec/android/gallery3d/data/EventAlbumManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->access$600(Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;)Lcom/sec/android/gallery3d/data/EventAlbumManager;
 
     move-result-object v1
@@ -109,7 +105,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->access$400(Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;)Landroid/content/Context;
 
     move-result-object v2
@@ -118,7 +113,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->mSelectionManager:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;->access$500(Lcom/sec/samsung/gallery/view/common/EventAlbumChoiceDialog;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v3

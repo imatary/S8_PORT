@@ -41,7 +41,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->bShowDisconnectDialog:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$3602(Lcom/sec/samsung/gallery/view/allview/AllViewState;Z)Z
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V

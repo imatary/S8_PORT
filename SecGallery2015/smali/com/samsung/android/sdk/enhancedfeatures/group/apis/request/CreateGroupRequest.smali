@@ -46,42 +46,36 @@
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest;->members:Ljava/util/List;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->group_name:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest;->group_name:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->sid:I
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest;->sid:I
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->type:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest;->type:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->option:I
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest;->option:I
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->message:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->access$400(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest;->message:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->members:Ljava/util/List;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;->access$500(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/CreateGroupRequest$Builder;)Ljava/util/List;
 
     move-result-object v0

@@ -155,7 +155,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;->mCoverItemInfo:Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;->mItemId:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;->access$200(Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;)I
 
     move-result v2
@@ -168,7 +167,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;->mCoverItemInfo:Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;->mDataVersion:J
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;->access$100(Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;)J
 
     move-result-wide v2
@@ -211,7 +209,6 @@
 
     move-result-wide v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;->mDataVersion:J
     invoke-static {v1, v2, v3}, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;->access$102(Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;J)J
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;->mCoverItemInfo:Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;
@@ -220,7 +217,6 @@
 
     move-result v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;->mItemId:I
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;->access$202(Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$CoverItemInfo;I)I
 
     :cond_1

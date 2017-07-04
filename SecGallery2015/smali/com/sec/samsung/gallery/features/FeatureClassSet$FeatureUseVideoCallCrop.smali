@@ -28,7 +28,6 @@
 .method public isEnabled(Landroid/content/Context;)Z
     .locals 1
 
-    # invokes: Lcom/sec/samsung/gallery/features/FeatureClassSet;->isKORFamily()Z
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$300()Z
 
     move-result v0

@@ -3,12 +3,12 @@
 .source "SharedFriendsListViewState.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowStateChangeInterface;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showErrorDialog()V
+    value = Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->setStateChangeListener()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,10 +34,24 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
+.method public onModeChanged(Z)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$10;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
+
+    invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1500(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Z)V
+
+    return-void
+.end method
+
+.method public onSizeChanged(Landroid/graphics/Rect;)V
     .locals 0
 
-    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
+    return-void
+.end method
+
+.method public onZoneChanged(I)V
+    .locals 0
 
     return-void
 .end method

@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$7;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$000(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -64,7 +63,6 @@
 
     iget v1, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$7;->val$count:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->startNotification(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$1000(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;I)V
 
     return-void

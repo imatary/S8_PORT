@@ -51,12 +51,10 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$3;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mIsItemDetailsEdited:Z
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1102(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$3;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->updateActionBar()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)V
 
     goto :goto_0

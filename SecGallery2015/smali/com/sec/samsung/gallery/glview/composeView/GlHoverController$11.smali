@@ -41,7 +41,6 @@
 
     const/4 v1, 0x2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mHoverState:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$2902(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;I)I
 
     return-void

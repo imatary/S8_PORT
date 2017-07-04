@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$3;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mCommentEditText:Landroid/widget/EditText;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$200(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Landroid/widget/EditText;
 
     move-result-object v1

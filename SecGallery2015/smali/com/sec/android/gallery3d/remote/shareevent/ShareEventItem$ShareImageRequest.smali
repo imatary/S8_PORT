@@ -39,7 +39,6 @@
 
     iput-object p1, p0, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->mPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static {p1}, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->access$000(Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;)Lcom/sec/android/gallery3d/data/Path;
 
     move-result-object v3
@@ -96,7 +95,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->mFilePath:Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->access$100(Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;)Ljava/lang/String;
 
     move-result-object v7
@@ -130,7 +128,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->mFilePath:Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->access$100(Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;)Ljava/lang/String;
 
     move-result-object v7
@@ -155,7 +152,6 @@
     :cond_3
     iget-object v7, p0, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->mInfo:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareEventInfo;
     invoke-static {v7}, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->access$200(Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;)Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareEventInfo;
 
     move-result-object v7
@@ -173,7 +169,6 @@
     :try_start_0
     iget-object v7, p0, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->mFilePath:Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->access$100(Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;)Ljava/lang/String;
 
     move-result-object v7
@@ -201,7 +196,6 @@
     :goto_2
     iget-object v7, p0, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->mFilePath:Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->access$100(Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;)Ljava/lang/String;
 
     move-result-object v7
@@ -229,7 +223,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->mFilePath:Ljava/lang/String;
     invoke-static {v9}, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->access$100(Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;)Ljava/lang/String;
 
     move-result-object v9
@@ -263,7 +256,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->mFilePath:Ljava/lang/String;
     invoke-static {v9}, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->access$100(Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;)Ljava/lang/String;
 
     move-result-object v9
@@ -299,7 +291,6 @@
     :try_start_1
     iget-object v7, p0, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->mFilePath:Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->access$100(Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;)Ljava/lang/String;
 
     move-result-object v7
@@ -670,7 +661,6 @@
 
     iget-object v3, v0, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->mInfo:Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareEventInfo;
     invoke-static {v3}, Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;->access$200(Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem;)Lcom/sec/android/gallery3d/remote/shareevent/ShareEventItem$ShareEventInfo;
 
     move-result-object v3

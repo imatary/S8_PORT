@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$2;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->mActionBar:Landroid/app/ActionBar;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$300(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;)Landroid/app/ActionBar;
 
     move-result-object v1
@@ -64,14 +63,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$2;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->removeHintPopup()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$200(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$2;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$2;->val$count:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->updateEventBadgeMenuIcon(Landroid/view/View;I)V
     invoke-static {v1, v0, v2}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$400(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;Landroid/view/View;I)V
 
     :cond_0
@@ -83,7 +80,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$2;->val$count:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->updateEventBadgeBesideTitle(Landroid/view/View;I)V
     invoke-static {v1, v0, v2}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$500(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;Landroid/view/View;I)V
 
     goto :goto_0

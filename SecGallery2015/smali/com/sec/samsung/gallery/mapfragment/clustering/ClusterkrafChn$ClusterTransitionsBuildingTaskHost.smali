@@ -76,7 +76,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$ClusterTransitionsBuildingTaskHost;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->currentClusters:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$1700(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -85,7 +84,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$ClusterTransitionsBuildingTaskHost;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->previousClusters:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$2000(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -132,7 +130,6 @@
 
     iget-object v1, p1, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitionsBuildingTask$Result;->clusterTransitions:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitions;
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->transitionClusters(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitions;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$2300(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitions;)V
 
     :cond_0

@@ -49,7 +49,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->createNlgRequest()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->access$000(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;)V
 
     goto :goto_0

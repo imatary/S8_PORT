@@ -69,7 +69,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v0
@@ -80,7 +79,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v1
@@ -111,7 +109,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1100(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/util/SparseArray;
 
     move-result-object v19
@@ -124,7 +121,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1100(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/util/SparseArray;
 
     move-result-object v19
@@ -150,7 +146,6 @@
 
     move-object/from16 v20, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static/range {v20 .. v20}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1200(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     move-result-object v20
@@ -159,7 +154,6 @@
 
     move-result-object v20
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static/range {v19 .. v20}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1102(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Landroid/util/SparseArray;)Landroid/util/SparseArray;
 
     move-object/from16 v0, p0
@@ -168,7 +162,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1100(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/util/SparseArray;
 
     move-result-object v19
@@ -199,7 +192,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v19
@@ -219,7 +211,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1100(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/util/SparseArray;
 
     move-result-object v19
@@ -238,7 +229,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1100(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/util/SparseArray;
 
     move-result-object v19
@@ -287,7 +277,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v19
@@ -325,7 +314,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v19
@@ -393,7 +381,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v19
@@ -412,7 +399,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mSingleOperation:Z
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1600(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Z
 
     move-result v19
@@ -425,7 +411,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mDataManager:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1700(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v19
@@ -462,7 +447,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v19
@@ -475,7 +459,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v19
@@ -616,7 +599,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsCheck:Z
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1800(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Z
 
     move-result v19
@@ -632,7 +614,6 @@
 
     const/16 v20, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsFileNameUsed:Z
     invoke-static/range {v19 .. v20}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1902(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     move-object/from16 v0, p0
@@ -641,7 +622,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->lock:Ljava/lang/Object;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Ljava/lang/Object;
 
     move-result-object v20
@@ -657,7 +637,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v19
@@ -685,7 +664,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsFileNameUsed:Z
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1900(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Z
 
     move-result v19
@@ -698,7 +676,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->lock:Ljava/lang/Object;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Ljava/lang/Object;
 
     move-result-object v19
@@ -738,7 +715,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsRename:Z
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2400(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Z
 
     move-result v19
@@ -751,7 +727,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mDataManager:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1700(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v19
@@ -831,7 +806,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsCancel:Z
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$700(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Z
 
     move-result v19
@@ -844,7 +818,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mOperatePrivateAsyncTask:Lcom/sec/samsung/gallery/util/SecretboxOperations;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2200(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/util/SecretboxOperations;
 
     move-result-object v19
@@ -857,7 +830,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mOperatePrivateAsyncTask:Lcom/sec/samsung/gallery/util/SecretboxOperations;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2200(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/util/SecretboxOperations;
 
     move-result-object v19
@@ -884,7 +856,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsSingleCancel:Z
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2300(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Z
 
     move-result v19
@@ -903,7 +874,6 @@
 
     move/from16 v1, v21
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsSingleCancel:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2302(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     const/16 v19, 0x0
@@ -938,7 +908,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsSingleCancel:Z
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2300(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Z
 
     move-result v19
@@ -952,7 +921,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsSingleCancel:Z
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2300(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Z
 
     move-result v19
@@ -967,7 +935,6 @@
 
     const/16 v20, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsSingleCancel:Z
     invoke-static/range {v19 .. v20}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2302(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     :cond_18
@@ -982,7 +949,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mDataManager:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1700(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v19
@@ -1018,7 +984,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mDataManager:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1700(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v19
@@ -1052,7 +1017,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mDataManager:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1700(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v19
@@ -1085,7 +1049,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsCancel:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$700(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Z
 
     move-result v0
@@ -1094,7 +1057,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v0
@@ -1103,7 +1065,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v0
@@ -1135,7 +1096,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v0
@@ -1144,7 +1104,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1100(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/util/SparseArray;
 
     move-result-object v0
@@ -1153,7 +1112,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1100(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/util/SparseArray;
 
     move-result-object v0
@@ -1174,7 +1132,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v0
@@ -1191,7 +1148,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v0
@@ -1211,14 +1167,12 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1102(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Landroid/util/SparseArray;)Landroid/util/SparseArray;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1202(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Lcom/sec/samsung/gallery/util/FileUtil;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     iget v3, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->val$count:I
@@ -1250,7 +1204,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -1280,12 +1233,10 @@
     :cond_4
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->dismissDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1300(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mPrivateModeInterface:Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1400(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface;
 
     move-result-object v0
@@ -1294,14 +1245,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mPrivateModeInterface:Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1400(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -1317,7 +1266,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -1345,7 +1293,6 @@
     :cond_6
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$900(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/os/Handler;
 
     move-result-object v0
@@ -1358,7 +1305,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsCancel:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$700(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Z
 
     move-result v0
@@ -1377,7 +1323,6 @@
 
     move v2, p1
 
-    # invokes: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->showToast(IIIIILjava/lang/String;)V
     invoke-static/range {v0 .. v6}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;IIIIILjava/lang/String;)V
 
     const-string/jumbo v0, "MoveToSecretboxCmd"
@@ -1442,7 +1387,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v1
@@ -1451,7 +1395,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v1

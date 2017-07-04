@@ -72,7 +72,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$BaseClusteringTaskHost;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->mapRef:Ljava/lang/ref/WeakReference;
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$1800(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;)Ljava/lang/ref/WeakReference;
 
     move-result-object v2
@@ -91,7 +90,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$BaseClusteringTaskHost;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->options:Lcom/sec/samsung/gallery/mapfragment/clustering/CommonOptions;
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$400(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;)Lcom/sec/samsung/gallery/mapfragment/clustering/CommonOptions;
 
     move-result-object v2
@@ -100,7 +98,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$BaseClusteringTaskHost;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->points:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$1900(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -109,7 +106,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$BaseClusteringTaskHost;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->previousClusters:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$2000(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -167,7 +163,6 @@
 
     iget-object v1, p1, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusteringTask$Result;->currentClusters:Ljava/util/ArrayList;
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->currentClusters:Ljava/util/ArrayList;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$1702(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$BaseClusteringTaskHost;->onCurrentClustersSet()V

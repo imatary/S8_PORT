@@ -70,7 +70,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter$CommentContentObserver;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;->updateCurrentTime()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;->access$300(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter$CommentContentObserver;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;

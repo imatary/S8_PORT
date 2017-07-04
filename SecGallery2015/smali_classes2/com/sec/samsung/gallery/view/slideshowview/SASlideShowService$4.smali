@@ -67,12 +67,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$4;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->clearSlideshowMode()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$1100(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$4;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mPresentation:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$800(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
 
     move-result-object v0

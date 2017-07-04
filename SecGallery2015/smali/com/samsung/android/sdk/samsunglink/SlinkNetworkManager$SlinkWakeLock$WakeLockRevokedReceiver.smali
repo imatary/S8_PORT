@@ -94,7 +94,6 @@
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkNetworkManager$SlinkWakeLock;->tag:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/SlinkNetworkManager$SlinkWakeLock;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkNetworkManager$SlinkWakeLock;)Ljava/lang/String;
 
     move-result-object v4

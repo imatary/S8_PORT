@@ -48,7 +48,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewBeam$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewBeam;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewBeam;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewBeam;->access$000(Lcom/sec/samsung/gallery/view/albumview/AlbumViewBeam;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -89,7 +88,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewBeam$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewBeam;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewBeam;->toItemList(Ljava/util/List;)Ljava/util/List;
     invoke-static {v2, v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewBeam;->access$100(Lcom/sec/samsung/gallery/view/albumview/AlbumViewBeam;Ljava/util/List;)Ljava/util/List;
 
     move-result-object v2

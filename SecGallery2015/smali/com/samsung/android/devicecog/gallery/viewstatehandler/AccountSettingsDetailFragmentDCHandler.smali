@@ -49,7 +49,7 @@
 
     iget-object v1, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/AccountSettingsDetailFragmentDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v3, 0x7f0a07ea
+    const v3, 0x7f0a07f0
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -95,7 +95,7 @@
     :pswitch_0
     iget-object v1, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/AccountSettingsDetailFragmentDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v3, 0x7f0a0813
+    const v3, 0x7f0a0819
 
     new-array v2, v2, [Ljava/lang/Object;
 

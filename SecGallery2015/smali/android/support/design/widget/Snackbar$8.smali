@@ -42,7 +42,6 @@
 
     iget v1, p0, Landroid/support/design/widget/Snackbar$8;->val$event:I
 
-    # invokes: Landroid/support/design/widget/Snackbar;->onViewHidden(I)V
     invoke-static {v0, v1}, Landroid/support/design/widget/Snackbar;->access$600(Landroid/support/design/widget/Snackbar;I)V
 
     return-void
@@ -53,7 +52,6 @@
 
     iget-object v0, p0, Landroid/support/design/widget/Snackbar$8;->this$0:Landroid/support/design/widget/Snackbar;
 
-    # getter for: Landroid/support/design/widget/Snackbar;->mView:Landroid/support/design/widget/Snackbar$SnackbarLayout;
     invoke-static {v0}, Landroid/support/design/widget/Snackbar;->access$400(Landroid/support/design/widget/Snackbar;)Landroid/support/design/widget/Snackbar$SnackbarLayout;
 
     move-result-object v0

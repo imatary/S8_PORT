@@ -51,7 +51,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;->mEvent:Lcom/sec/samsung/gallery/core/Event;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;->access$000(Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;)Lcom/sec/samsung/gallery/core/Event;
 
     move-result-object v1
@@ -64,7 +63,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;->mEvent:Lcom/sec/samsung/gallery/core/Event;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;->access$000(Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;)Lcom/sec/samsung/gallery/core/Event;
 
     move-result-object v2

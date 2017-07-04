@@ -373,17 +373,14 @@
 
     iget-boolean v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader$LoadCategoryItemTask;->mUseSort:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->addItemsToCategory(Ljava/util/List;Ljava/lang/String;Ljava/util/List;Z)V
     invoke-static {v0, v1, v2, v3, v4}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Z)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader$LoadCategoryItemTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;
 
-    # operator-- for: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->mRequestCount:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->access$110(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;)I
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader$LoadCategoryItemTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->mRequestCount:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;)I
 
     move-result v0
@@ -392,7 +389,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader$LoadCategoryItemTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->mListener:Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader$DataLoaderListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;)Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader$DataLoaderListener;
 
     move-result-object v0
@@ -401,7 +397,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader$LoadCategoryItemTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->mListener:Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader$DataLoaderListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;)Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader$DataLoaderListener;
 
     move-result-object v0
@@ -412,7 +407,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->mRequestCount:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;->access$102(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/CategoryDataLoader;I)I
 
     :cond_0

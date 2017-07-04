@@ -555,7 +555,6 @@
 
     new-array v1, v8, [Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->IsNOS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3800()Z
 
     move-result v8
@@ -640,7 +639,6 @@
     goto :goto_1
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->IsTablet:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$2400()Z
 
     move-result v8
@@ -760,7 +758,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x7f0202f4
+    const v19, 0x7f0202f6
 
     invoke-static/range {v18 .. v19}, Lcom/sec/samsung/gallery/decoder/DecoderInterface;->decodeResource(Landroid/content/Context;I)Landroid/graphics/Bitmap;
 
@@ -772,7 +770,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->IsNOS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3800()Z
 
     move-result v18
@@ -808,7 +805,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->IsNOS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3800()Z
 
     move-result v18
@@ -842,7 +838,6 @@
 
     invoke-direct {v13}, Landroid/graphics/Canvas;-><init>()V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->IsNOS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3800()Z
 
     move-result v18
@@ -886,7 +881,6 @@
 
     move-result v14
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->FEATURE_USE_GRACE_EVENTVIEW_GUI:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3900()Z
 
     move-result v18
@@ -939,7 +933,6 @@
 
     move-result-object v4
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->FEATURE_USE_GRACE_EVENTVIEW_GUI:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3900()Z
 
     move-result v18
@@ -1046,7 +1039,6 @@
     goto/16 :goto_2
 
     :cond_4
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->IsTablet:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$2400()Z
 
     move-result v18
@@ -1113,7 +1105,6 @@
 
     const/16 v18, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->getCheckBoxColor(Z)I
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$4000(Z)I
 
     move-result v18
@@ -1132,7 +1123,6 @@
     :cond_8
     const/16 v18, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->getCheckBoxColor(Z)I
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$4000(Z)I
 
     move-result v18
@@ -1302,7 +1292,6 @@
 
     new-array v1, v7, [Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->IsNOS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3800()Z
 
     move-result v7
@@ -1383,7 +1372,6 @@
     goto :goto_1
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->IsTablet:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$2400()Z
 
     move-result v7
@@ -1592,7 +1580,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f02032e
+    const v3, 0x7f020330
 
     invoke-static {v2, v3}, Landroid/support/v4/content/ContextCompat;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 

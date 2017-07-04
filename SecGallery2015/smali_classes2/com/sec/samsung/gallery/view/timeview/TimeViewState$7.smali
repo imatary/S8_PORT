@@ -327,7 +327,6 @@
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$7;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v10}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$5700(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v10
@@ -349,7 +348,6 @@
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$7;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v10}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$5800(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v10
@@ -365,7 +363,6 @@
     :goto_4
     iget-object v10, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$7;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v10}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$6000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v10
@@ -531,7 +528,6 @@
     :cond_f
     iget-object v10, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$7;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v10}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$5900(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v10

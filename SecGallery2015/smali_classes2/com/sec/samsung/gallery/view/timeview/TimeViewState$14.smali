@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$14;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0
@@ -54,12 +53,11 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$14;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mTimeEventHandle:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$5100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->onItemClick(II)V
+    invoke-virtual {v0, p1, p2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->onItemClick(II)Z
 
     :cond_0
     :goto_0
@@ -70,7 +68,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$14;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -83,7 +80,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$14;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->startDetailViewInUIThread(II)V
     invoke-static {v0, p1, p2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$7200(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;II)V
 
     goto :goto_0

@@ -91,7 +91,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->mSDCardRemovedReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->access$300(Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
@@ -163,7 +162,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->mSDCardRemovedReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->access$300(Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;)Landroid/content/BroadcastReceiver;
 
     move-result-object v2

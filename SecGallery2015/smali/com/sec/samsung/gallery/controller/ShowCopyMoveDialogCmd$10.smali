@@ -41,7 +41,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsCancel:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Z)Z
 
     return-void

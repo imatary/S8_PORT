@@ -93,7 +93,6 @@
 
     iget-object v5, v5, Lcom/sec/android/gallery3d/eventshare/command/GetFolderInfoCommand;->mCandi:Ljava/util/ArrayList;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/command/GetFolderInfoCommand;->deleteItems(Ljava/util/ArrayList;)V
     invoke-static {v4, v5}, Lcom/sec/android/gallery3d/eventshare/command/GetFolderInfoCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/GetFolderInfoCommand;Ljava/util/ArrayList;)V
 
     const-string/jumbo v4, "GetFolderInfoCommand"

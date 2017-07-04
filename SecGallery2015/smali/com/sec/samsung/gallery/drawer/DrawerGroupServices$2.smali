@@ -42,7 +42,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupServices$2;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;->updateGroup()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;->access$100(Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;)V
 
     return-void

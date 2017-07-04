@@ -36,7 +36,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$17;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mTopMediaSet:Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$300(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v1
@@ -47,7 +46,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$17;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mBrowseStart:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1300(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Z
 
     move-result v1
@@ -56,7 +54,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$17;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mMediaItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1400(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
 
     move-result-object v1
@@ -80,12 +77,10 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$17;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/allview/AllViewState;->checkMediaAvailability()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1500(Lcom/sec/samsung/gallery/view/allview/AllViewState;)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$17;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mMediaItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1400(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
 
     move-result-object v1
@@ -96,7 +91,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$17;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mCurrentMediaItemIndex:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$4700(Lcom/sec/samsung/gallery/view/allview/AllViewState;)I
 
     move-result v1
@@ -107,7 +101,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mCurrentMediaItemIndex:I
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$4702(Lcom/sec/samsung/gallery/view/allview/AllViewState;I)I
 
     goto :goto_0

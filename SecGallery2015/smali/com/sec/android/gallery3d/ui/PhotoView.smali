@@ -76,6 +76,8 @@
 
 .field private static final LOADING_TIMEOUT:I = 0x1
 
+.field public static final MAX_IMAGE_SCALE_SIZE:F = 10.0f
+
 .field private static final MSG_ACQUIRE_AGIF_PLAY_BOOST:I = 0x6c
 
 .field private static final MSG_CANCEL_EXTRA_SCALING:I = 0x2
@@ -2238,7 +2240,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b055b
+    const v3, 0x7f0b055c
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -5706,7 +5708,7 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mModel:Lcom/sec/android/gallery3d/ui/PhotoView$Model;
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mModel:Lcom/sec/android/gallery3d/ui/PhotoView$Model;
 
@@ -5726,13 +5728,28 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
     :cond_0
+    iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mPhotoIconView:Lcom/sec/android/gallery3d/ui/PhotoIconView;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mPhotoIconView:Lcom/sec/android/gallery3d/ui/PhotoIconView;
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/ui/PhotoIconView;->getCurrentIcon()Lcom/sec/android/gallery3d/ui/playicon/IconType;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/sec/android/gallery3d/ui/playicon/IconType;->CLOUD_ONLY_ITEM:Lcom/sec/android/gallery3d/ui/playicon/IconType;
+
+    if-ne v0, v1, :cond_1
+
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mCurMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
 
     invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->showIcon(Lcom/sec/android/gallery3d/data/MediaItem;)V
 
+    :cond_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mHandler:Lcom/sec/android/gallery3d/ui/SynchronizedHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/gallery3d/ui/SynchronizedHandler;->removeMessages(I)V
@@ -5747,7 +5764,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mHandler:Lcom/sec/android/gallery3d/ui/SynchronizedHandler;
 
@@ -5755,7 +5772,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sec/android/gallery3d/ui/SynchronizedHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    :cond_1
+    :cond_2
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     invoke-interface {v0}, Lcom/sec/android/gallery3d/interfaces/LibraryContext;->getController()Lcom/sec/android/gallery3d/interfaces/LibraryController;
@@ -5766,7 +5783,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mHandler:Lcom/sec/android/gallery3d/ui/SynchronizedHandler;
 
@@ -5774,14 +5791,14 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sec/android/gallery3d/ui/SynchronizedHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    :cond_2
+    :cond_3
     :goto_0
     return-void
 
-    :cond_3
+    :cond_4
     iget v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mLoadingState:I
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     const/4 v0, 0x0
 
@@ -5797,7 +5814,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_3
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mHandler:Lcom/sec/android/gallery3d/ui/SynchronizedHandler;
 
@@ -6405,12 +6422,28 @@
     return v0
 .end method
 
+.method public getNextBound()I
+    .locals 1
+
+    iget v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mNextBound:I
+
+    return v0
+.end method
+
 .method public getPositionController()Lcom/sec/android/gallery3d/ui/PositionController;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
 
     return-object v0
+.end method
+
+.method public getPrevBound()I
+    .locals 1
+
+    iget v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView;->mPrevBound:I
+
+    return v0
 .end method
 
 .method public getRectOfImage()Landroid/graphics/Rect;
@@ -7445,7 +7478,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0b06bd
+    const v5, 0x7f0b06be
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -9393,7 +9426,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f0b06bd
+    const v4, 0x7f0b06be
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getDimension(I)F
 

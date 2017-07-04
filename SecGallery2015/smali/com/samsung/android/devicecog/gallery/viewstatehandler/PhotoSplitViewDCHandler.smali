@@ -748,7 +748,7 @@
 
     iget-object v3, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/PhotoSplitViewDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v5, 0x7f0a079f
+    const v5, 0x7f0a07a5
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -816,7 +816,7 @@
 
     iget-object v3, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/PhotoSplitViewDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v5, 0x7f0a07b2
+    const v5, 0x7f0a07b8
 
     new-array v4, v4, [Ljava/lang/Object;
 

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$9;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2600(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v0
@@ -48,14 +47,12 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/PhotoView$9;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mCenterX:F
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2400(Lcom/sec/android/gallery3d/ui/PhotoView;)F
 
     move-result v2
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$9;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mCenterY:F
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2500(Lcom/sec/android/gallery3d/ui/PhotoView;)F
 
     move-result v3
@@ -64,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$9;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PhotoView;->refreshHidingMessage()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2300(Lcom/sec/android/gallery3d/ui/PhotoView;)V
 
     return-void

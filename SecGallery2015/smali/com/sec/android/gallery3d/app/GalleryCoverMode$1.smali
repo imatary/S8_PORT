@@ -41,7 +41,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/app/GalleryCoverMode;->mFinishByBtn:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/app/GalleryCoverMode;->access$002(Lcom/sec/android/gallery3d/app/GalleryCoverMode;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/GalleryCoverMode$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
@@ -52,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/GalleryCoverMode$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryCoverMode;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/GalleryCoverMode;->access$100(Lcom/sec/android/gallery3d/app/GalleryCoverMode;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v0

@@ -87,11 +87,11 @@
 
 .field public static final action_collage_done:I = 0x7f120298
 
-.field public static final action_contact_us:I = 0x7f12027c
+.field public static final action_contact_us:I = 0x7f12027b
 
 .field public static final action_context_bar:I = 0x7f120058
 
-.field public static final action_copy:I = 0x7f12027d
+.field public static final action_copy:I = 0x7f12027c
 
 .field public static final action_copy_to_album:I = 0x7f1202ba
 
@@ -149,7 +149,7 @@
 
 .field public static final action_hide_album:I = 0x7f12028e
 
-.field public static final action_hide_edit_dialog:I = 0x7f120284
+.field public static final action_hide_edit_dialog:I = 0x7f120283
 
 .field public static final action_home:I = 0x7f1202bf
 
@@ -171,21 +171,21 @@
 
 .field public static final action_moreinfo:I = 0x7f1202a1
 
-.field public static final action_move:I = 0x7f12027e
+.field public static final action_move:I = 0x7f12027d
 
 .field public static final action_move_to_album:I = 0x7f1202bc
 
 .field public static final action_move_to_knox:I = 0x7f120277
 
-.field public static final action_move_to_secretbox:I = 0x7f120280
+.field public static final action_move_to_secretbox:I = 0x7f12027f
 
 .field public static final action_move_to_secure_folder:I = 0x7f120278
 
 .field public static final action_nearby_device:I = 0x7f12028c
 
-.field public static final action_notification:I = 0x7f120288
+.field public static final action_notification:I = 0x7f120287
 
-.field public static final action_printer:I = 0x7f12027f
+.field public static final action_printer:I = 0x7f12027e
 
 .field public static final action_qrscan:I = 0x7f1202b4
 
@@ -199,13 +199,13 @@
 
 .field public static final action_remove_from_favorite:I = 0x7f1202bb
 
-.field public static final action_remove_from_knox:I = 0x7f120282
+.field public static final action_remove_from_knox:I = 0x7f120281
 
 .field public static final action_remove_from_result:I = 0x7f1202d2
 
-.field public static final action_remove_from_secretbox:I = 0x7f120281
+.field public static final action_remove_from_secretbox:I = 0x7f120280
 
-.field public static final action_remove_from_secure_folder:I = 0x7f120283
+.field public static final action_remove_from_secure_folder:I = 0x7f120282
 
 .field public static final action_remove_tag:I = 0x7f1202c4
 
@@ -227,7 +227,7 @@
 
 .field public static final action_search_remove:I = 0x7f1202c1
 
-.field public static final action_select:I = 0x7f120289
+.field public static final action_select:I = 0x7f120288
 
 .field public static final action_select_checkbox_layout:I = 0x7f120071
 
@@ -241,15 +241,15 @@
 
 .field public static final action_setas_contact:I = 0x7f1202ab
 
-.field public static final action_settings:I = 0x7f12027b
+.field public static final action_settings:I = 0x7f12027a
 
 .field public static final action_share:I = 0x7f120290
 
 .field public static final action_share2:I = 0x7f1202c2
 
-.field public static final action_show:I = 0x7f120287
+.field public static final action_show:I = 0x7f120286
 
-.field public static final action_show_edit_dialog:I = 0x7f120285
+.field public static final action_show_edit_dialog:I = 0x7f120284
 
 .field public static final action_show_hidden_album:I = 0x7f12028f
 
@@ -265,7 +265,7 @@
 
 .field public static final action_view_all:I = 0x7f1202be
 
-.field public static final action_view_as:I = 0x7f120279
+.field public static final action_view_as:I = 0x7f120289
 
 .field public static final action_view_as_level_0:I = 0x7f120265
 
@@ -295,7 +295,7 @@
 
 .field public static final albumList:I = 0x7f12008f
 
-.field public static final album_view_new_album:I = 0x7f12027a
+.field public static final album_view_new_album:I = 0x7f120279
 
 .field public static final albumdivider:I = 0x7f120148
 
@@ -359,7 +359,7 @@
 
 .field public static final cancel_action:I = 0x7f120201
 
-.field public static final cancel_button:I = 0x7f120286
+.field public static final cancel_button:I = 0x7f120285
 
 .field public static final cancel_tips:I = 0x7f120235
 

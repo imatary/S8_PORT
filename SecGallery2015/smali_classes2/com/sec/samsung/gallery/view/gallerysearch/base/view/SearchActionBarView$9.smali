@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mShowImeRunnable:Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$1200(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)Ljava/lang/Runnable;
 
     move-result-object v1

@@ -58,12 +58,10 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsTouchOutside:Z
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$602(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsCancel:Z
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$702(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$2;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->mMapViewLayout:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$2400(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;)Landroid/view/View;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$2;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->mMapViewLayout:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$2400(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;)Landroid/view/View;
 
     move-result-object v0
@@ -61,7 +59,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$2;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->mMapViewLayout:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$2400(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;)Landroid/view/View;
 
     move-result-object v1
@@ -72,7 +69,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->mMapViewLayout:Landroid/view/View;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$2402(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;Landroid/view/View;)Landroid/view/View;
 
     :cond_0
@@ -80,7 +76,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->mIsHideAnimationRunning:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$2502(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;Z)Z
 
     return-void

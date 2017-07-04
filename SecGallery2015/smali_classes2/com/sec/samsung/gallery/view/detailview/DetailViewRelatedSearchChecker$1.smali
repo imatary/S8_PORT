@@ -45,7 +45,6 @@
     :pswitch_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewRelatedSearchChecker$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewRelatedSearchChecker;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewRelatedSearchChecker;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/DetailViewRelatedSearchChecker;->access$000(Lcom/sec/samsung/gallery/view/detailview/DetailViewRelatedSearchChecker;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -100,7 +99,6 @@
 
     move-result-object v4
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewRelatedSearchChecker;->checkRelatedSearchInfo(Lcom/sec/android/gallery3d/data/MediaItem;)Z
     invoke-static {v5, v4}, Lcom/sec/samsung/gallery/view/detailview/DetailViewRelatedSearchChecker;->access$100(Lcom/sec/samsung/gallery/view/detailview/DetailViewRelatedSearchChecker;Lcom/sec/android/gallery3d/data/MediaItem;)Z
 
     move-result v1

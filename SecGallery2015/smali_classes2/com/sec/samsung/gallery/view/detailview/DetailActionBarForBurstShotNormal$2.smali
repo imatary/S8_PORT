@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;->startActionSave()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;->access$200(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;)V
 
     return-void

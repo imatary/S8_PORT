@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$14;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mIsCheckedForQRState:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$1700(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)Z
 
     move-result v1
@@ -61,7 +60,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$14;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mBinder:Lcom/samsung/android/app/qragent/service/IQRService;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$1800(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)Lcom/samsung/android/app/qragent/service/IQRService;
 
     move-result-object v1
@@ -72,7 +70,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mBinder:Lcom/samsung/android/app/qragent/service/IQRService;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$1802(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;Lcom/samsung/android/app/qragent/service/IQRService;)Lcom/samsung/android/app/qragent/service/IQRService;
 
     :cond_2
@@ -82,7 +79,6 @@
 
     invoke-direct {v2, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$14$1;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$14;)V
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mConnection:Landroid/content/ServiceConnection;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$1902(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;Landroid/content/ServiceConnection;)Landroid/content/ServiceConnection;
 
     new-instance v0, Landroid/content/Intent;
@@ -97,14 +93,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$14;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$2200(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$14;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mConnection:Landroid/content/ServiceConnection;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$1900(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)Landroid/content/ServiceConnection;
 
     move-result-object v2

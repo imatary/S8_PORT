@@ -161,7 +161,6 @@
 
     move-result-wide v4
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/EventShareAgentHelper;->getExpiredCheckTime()J
     invoke-static {}, Lcom/sec/android/gallery3d/eventshare/utils/EventShareAgentHelper;->access$100()J
 
     move-result-wide v8

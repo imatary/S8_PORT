@@ -60,7 +60,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd$SCloudMediaQueryTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -69,12 +68,10 @@
 
     move-result-object v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;->CMH_BASE_URI:Landroid/net/Uri;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;->access$200()Landroid/net/Uri;
 
     move-result-object v1
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;->COUNT_PROJECTION:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;->access$300()[Ljava/lang/String;
 
     move-result-object v2
@@ -221,7 +218,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd$SCloudMediaQueryTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudCheckInUPSMCmd;)Landroid/content/Context;
 
     move-result-object v0

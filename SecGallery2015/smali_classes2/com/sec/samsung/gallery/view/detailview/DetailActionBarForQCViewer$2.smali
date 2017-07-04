@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQCViewer$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQCViewer;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQCViewer;->startActionDetails()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQCViewer;->access$100(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQCViewer;)V
 
     return-void

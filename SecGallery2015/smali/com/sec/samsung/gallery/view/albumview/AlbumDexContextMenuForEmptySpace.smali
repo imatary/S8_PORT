@@ -51,21 +51,6 @@
     return v2
 
     :pswitch_0
-    invoke-static {}, Lcom/sec/samsung/gallery/core/Event$Builder;->create()Lcom/sec/samsung/gallery/core/Event;
-
-    move-result-object v1
-
-    sget v3, Lcom/sec/samsung/gallery/core/Event;->EVENT_SHOW_VIEW_AS_DIALOG:I
-
-    invoke-virtual {v1, v3}, Lcom/sec/samsung/gallery/core/Event;->setType(I)Lcom/sec/samsung/gallery/core/Event;
-
-    move-result-object v1
-
-    invoke-virtual {p0, v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumDexContextMenuForEmptySpace;->notifyObservers(Ljava/lang/Object;)V
-
-    goto :goto_0
-
-    :pswitch_1
     const-string/jumbo v1, "101"
 
     const-string/jumbo v3, "1081"
@@ -96,7 +81,7 @@
 
     goto :goto_0
 
-    :pswitch_2
+    :pswitch_1
     const-string/jumbo v3, "101"
 
     const-string/jumbo v4, "1016"
@@ -156,7 +141,7 @@
 
     goto :goto_0
 
-    :pswitch_3
+    :pswitch_2
     const-string/jumbo v1, "101"
 
     const-string/jumbo v3, "1017"
@@ -175,14 +160,15 @@
 
     invoke-virtual {p0, v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumDexContextMenuForEmptySpace;->notifyObservers(Ljava/lang/Object;)V
 
-    goto/16 :goto_0
+    goto :goto_0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x7f120279
         :pswitch_0
         :pswitch_1
         :pswitch_2
-        :pswitch_3
     .end packed-switch
 .end method
 

@@ -34,8 +34,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
 
@@ -43,8 +42,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
 
@@ -59,8 +57,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
 
     move-result-object v0
 
@@ -68,8 +65,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$3000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
 
     move-result-object v0
 
@@ -83,8 +79,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$3100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
 
     move-result-object v0
 
@@ -98,8 +93,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$3200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
 
     move-result-object v0
 
@@ -121,13 +115,11 @@
 
     const/4 v5, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->searchByCategory(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
     invoke-static/range {v0 .. v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$1700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
 
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mVisualSearchView:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
     move-result-object v0
@@ -136,7 +128,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mVisualSearchView:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
     move-result-object v0
@@ -152,8 +143,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->insertSearchByCategorySALog()V
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$3100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$3500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
@@ -167,7 +157,6 @@
 
     move-object v4, p4
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->searchByCategory(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
     invoke-static/range {v0 .. v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$1700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
 
     return-void
@@ -182,12 +171,10 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setSearchingState(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$1800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->searchByKeyword(Ljava/lang/String;Ljava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
     invoke-static {v0, p1, v2, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$1900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;Ljava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
 
     return-void
@@ -198,8 +185,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$3300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
 
@@ -207,8 +193,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$3000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$3400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
 
@@ -220,178 +205,191 @@
 
 # virtual methods
 .method public handleNotification(Lorg/puremvc/java/multicore/interfaces/INotification;)V
-    .locals 13
+    .locals 14
 
-    const/4 v11, 0x3
+    const/4 v12, 0x3
 
-    const/4 v10, 0x2
+    const/4 v11, 0x2
 
-    const/4 v9, 0x1
+    const/4 v9, 0x0
 
-    const/4 v8, 0x0
+    const/4 v10, 0x1
 
     invoke-interface {p1}, Lorg/puremvc/java/multicore/interfaces/INotification;->getName()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    const/4 v7, -0x1
+    const/4 v8, -0x1
 
-    invoke-virtual {v4}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v5}, Ljava/lang/String;->hashCode()I
 
-    move-result v12
+    move-result v13
 
-    sparse-switch v12, :sswitch_data_0
+    sparse-switch v13, :sswitch_data_0
 
     :cond_0
     :goto_0
-    packed-switch v7, :pswitch_data_0
+    packed-switch v8, :pswitch_data_0
 
     :cond_1
     :goto_1
     return-void
 
     :sswitch_0
-    const-string/jumbo v12, "SEARCH_BY_CATEGORY"
+    const-string/jumbo v13, "SEARCH_BY_CATEGORY"
 
-    invoke-virtual {v4, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v12
+    move-result v13
 
-    if-eqz v12, :cond_0
+    if-eqz v13, :cond_0
 
-    move v7, v8
+    move v8, v9
 
     goto :goto_0
 
     :sswitch_1
-    const-string/jumbo v12, "SEARCH_BY_KEYWORD"
+    const-string/jumbo v13, "SEARCH_BY_KEYWORD"
 
-    invoke-virtual {v4, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v12
+    move-result v13
 
-    if-eqz v12, :cond_0
+    if-eqz v13, :cond_0
 
-    move v7, v9
+    move v8, v10
 
     goto :goto_0
 
     :sswitch_2
-    const-string/jumbo v12, "DELETE_ANIM_START"
+    const-string/jumbo v13, "DELETE_ANIM_START"
 
-    invoke-virtual {v4, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v12
+    move-result v13
 
-    if-eqz v12, :cond_0
+    if-eqz v13, :cond_0
 
-    move v7, v10
+    move v8, v11
 
     goto :goto_0
 
     :sswitch_3
-    const-string/jumbo v12, "REFRESH_LAYOUT"
+    const-string/jumbo v13, "REFRESH_LAYOUT"
 
-    invoke-virtual {v4, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v12
+    move-result v13
 
-    if-eqz v12, :cond_0
+    if-eqz v13, :cond_0
 
-    move v7, v11
+    move v8, v12
 
     goto :goto_0
 
     :sswitch_4
-    const-string/jumbo v12, "REFRESH_VISUAL_SEARCH_VIEW"
+    const-string/jumbo v13, "REFRESH_VISUAL_SEARCH_VIEW"
 
-    invoke-virtual {v4, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v12
+    move-result v13
 
-    if-eqz v12, :cond_0
+    if-eqz v13, :cond_0
 
-    const/4 v7, 0x4
+    const/4 v8, 0x4
 
     goto :goto_0
 
     :sswitch_5
-    const-string/jumbo v12, "DC_CANCEL_SELECT_ITEMS_FOR_TIME_OUT"
+    const-string/jumbo v13, "DC_CANCEL_SELECT_ITEMS_FOR_TIME_OUT"
 
-    invoke-virtual {v4, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v12
+    move-result v13
 
-    if-eqz v12, :cond_0
+    if-eqz v13, :cond_0
 
-    const/4 v7, 0x5
+    const/4 v8, 0x5
+
+    goto :goto_0
+
+    :sswitch_6
+    const-string/jumbo v13, "SYSTEM_UI_VISIBILITY_CHANGE"
+
+    invoke-virtual {v5, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_0
+
+    const/4 v8, 0x6
 
     goto :goto_0
 
     :pswitch_0
     invoke-interface {p1}, Lorg/puremvc/java/multicore/interfaces/INotification;->getBody()Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v8
 
-    check-cast v7, [Ljava/lang/Object;
+    check-cast v8, [Ljava/lang/Object;
 
-    move-object v0, v7
+    move-object v0, v8
 
     check-cast v0, [Ljava/lang/Object;
 
     if-eqz v0, :cond_1
 
-    aget-object v1, v0, v8
+    aget-object v1, v0, v9
 
     check-cast v1, Ljava/lang/String;
 
-    aget-object v6, v0, v9
+    aget-object v7, v0, v10
+
+    check-cast v7, Ljava/lang/String;
+
+    aget-object v8, v0, v11
+
+    check-cast v8, Ljava/lang/Integer;
+
+    invoke-virtual {v8}, Ljava/lang/Integer;->intValue()I
+
+    move-result v4
+
+    aget-object v6, v0, v12
 
     check-cast v6, Ljava/lang/String;
 
-    aget-object v7, v0, v10
-
-    check-cast v7, Ljava/lang/Integer;
-
-    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
-
-    move-result v3
-
-    aget-object v5, v0, v11
-
-    check-cast v5, Ljava/lang/String;
-
-    if-eqz v6, :cond_1
+    if-eqz v7, :cond_1
 
     if-eqz v1, :cond_2
 
     invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
 
-    move-result v7
+    move-result v8
 
-    if-nez v7, :cond_2
+    if-nez v8, :cond_2
 
-    invoke-direct {p0, v1, v6, v3, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->handleSearchByCategory(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {p0, v1, v7, v4, v6}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->handleSearchByCategory(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
     goto :goto_1
 
     :cond_2
-    invoke-direct {p0, v6}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->handleSearchByKeyword(Ljava/lang/String;)V
+    invoke-direct {p0, v7}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->handleSearchByKeyword(Ljava/lang/String;)V
 
     goto :goto_1
 
     :pswitch_1
     invoke-interface {p1}, Lorg/puremvc/java/multicore/interfaces/INotification;->getBody()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    check-cast v2, Ljava/lang/String;
+    check-cast v3, Ljava/lang/String;
 
-    if-eqz v2, :cond_1
+    if-eqz v3, :cond_1
 
-    invoke-direct {p0, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->handleSearchByKeyword(Ljava/lang/String;)V
+    invoke-direct {p0, v3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->handleSearchByKeyword(Ljava/lang/String;)V
 
-    goto :goto_1
+    goto/16 :goto_1
 
     :pswitch_2
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->handleStartDeleteAnimation()V
@@ -409,57 +407,100 @@
     goto/16 :goto_1
 
     :pswitch_5
-    iget-object v7, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
+    iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mDCHandler:Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
-    invoke-static {v7}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
+    invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7}, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;->getSelectItemTask()Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask;
+    invoke-virtual {v8}, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;->getSelectItemTask()Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask;
 
-    move-result-object v7
+    move-result-object v8
 
-    if-eqz v7, :cond_1
+    if-eqz v8, :cond_1
 
-    iget-object v7, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
+    iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mDCHandler:Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
-    invoke-static {v7}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
+    invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7}, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;->getSelectItemTask()Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask;
+    invoke-virtual {v8}, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;->getSelectItemTask()Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask;->isCancelled()Z
+    invoke-virtual {v8}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask;->isCancelled()Z
 
-    move-result v7
+    move-result v8
 
-    if-nez v7, :cond_1
+    if-nez v8, :cond_1
 
-    iget-object v7, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
+    iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mDCHandler:Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
-    invoke-static {v7}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
+    invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7}, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;->getSelectItemTask()Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask;
+    invoke-virtual {v8}, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;->getSelectItemTask()Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask;->requestOnCancel()V
+    invoke-virtual {v8}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask;->requestOnCancel()V
 
     goto/16 :goto_1
 
-    nop
+    :pswitch_6
+    iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
+
+    invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Z
+
+    move-result v2
+
+    iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
+
+    invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_3
+
+    iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
+
+    invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->updateCardListViewMargin(Z)V
+
+    :cond_3
+    iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
+
+    invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_4
+
+    iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
+
+    invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v10}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->resetNavigationBarPosition(Z)V
+
+    :cond_4
+    iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
+
+    invoke-static {v8, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$2600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)V
+
+    goto/16 :goto_1
 
     :sswitch_data_0
     .sparse-switch
         -0x49a22ad2 -> :sswitch_3
         -0x3f1cf458 -> :sswitch_2
+        -0x3946535e -> :sswitch_6
         0x1cdf4d8 -> :sswitch_1
         0x1b005461 -> :sswitch_4
         0x1bc4c3cf -> :sswitch_0
@@ -474,13 +515,14 @@
         :pswitch_3
         :pswitch_4
         :pswitch_5
+        :pswitch_6
     .end packed-switch
 .end method
 
 .method public listNotificationInterests()[Ljava/lang/String;
     .locals 3
 
-    const/4 v0, 0x7
+    const/16 v0, 0x8
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -523,6 +565,12 @@
     const/4 v1, 0x6
 
     const-string/jumbo v2, "DC_CANCEL_SELECT_ITEMS_FOR_TIME_OUT"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x7
+
+    const-string/jumbo v2, "SYSTEM_UI_VISIBILITY_CHANGE"
 
     aput-object v2, v0, v1
 

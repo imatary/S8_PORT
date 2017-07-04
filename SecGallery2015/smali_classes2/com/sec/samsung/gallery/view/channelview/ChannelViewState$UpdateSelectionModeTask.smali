@@ -53,7 +53,6 @@
 
     iget-object v12, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v12}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$1300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v12
@@ -145,8 +144,7 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mDataProxy:Lcom/sec/android/gallery3d/data/DataManager;
-    invoke-static {v13}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$13800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/data/DataManager;
+    invoke-static {v13}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$13900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v13
 
@@ -211,8 +209,7 @@
     :cond_8
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-    invoke-static {v13}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+    invoke-static {v13}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v13
 
@@ -222,7 +219,6 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$1400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
     move-result-object v13
@@ -235,7 +231,6 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$1300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v13
@@ -244,7 +239,6 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$1300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v13
@@ -295,8 +289,7 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v13}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$13900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v13}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$14000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v13
 
@@ -313,7 +306,6 @@
     :cond_d
     iget-object v12, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->exitSelectionMode()V
     invoke-static {v12}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$1600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
 
     goto/16 :goto_1
@@ -371,8 +363,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->selectAllPostProcess()V
-    invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$13600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+    invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$13700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 

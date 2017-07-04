@@ -342,6 +342,8 @@
 
 .field public static final SYNC_CONTACTS:Ljava/lang/String; = "SYNC_CONTACTS"
 
+.field public static final SYSTEM_UI_VISIBILITY_CHANGE:Ljava/lang/String; = "SYSTEM_UI_VISIBILITY_CHANGE"
+
 .field public static final UNLOCK_TOUCH:Ljava/lang/String; = "UNLOCK_TOUCH"
 
 .field public static final UPDATE_CATEGORY:Ljava/lang/String; = "UPDATE_CATEGORY"

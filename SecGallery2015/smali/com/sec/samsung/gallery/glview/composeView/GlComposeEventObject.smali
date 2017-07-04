@@ -612,7 +612,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mHLPlayIconObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;->resetLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mParent:Lcom/sec/android/gallery3d/glcore/GlObject;
@@ -669,7 +668,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;->updateHVPlayIconVisivilty(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;Z)V
 
     return-void
@@ -1022,7 +1020,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f02035c
+    const v3, 0x7f02035e
 
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/decoder/DecoderInterface;->decodeResource(Landroid/content/Context;I)Landroid/graphics/Bitmap;
 
@@ -1562,7 +1560,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b0836
+    const v1, 0x7f0b0837
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1576,7 +1574,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b0835
+    const v1, 0x7f0b0836
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -4726,7 +4724,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mPreviousCompareItem:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;->mBucketId:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;->access$2900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;)I
 
     move-result v1
@@ -5099,7 +5096,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mPreviousCompareItem:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;->mDateMs:J
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;->access$3000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;)J
 
     move-result-wide v2
@@ -5124,7 +5120,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mPreviousCompareItem:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;->mRotation:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;->access$3100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$CompareItemInfo;)I
 
     move-result v1

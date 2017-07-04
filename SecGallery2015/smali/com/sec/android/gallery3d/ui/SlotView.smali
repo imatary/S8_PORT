@@ -273,7 +273,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/SlotView;->mTempRect:Landroid/graphics/Rect;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->getSlotRect(ILandroid/graphics/Rect;)Landroid/graphics/Rect;
     invoke-static {v2, p2, v3}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$300(Lcom/sec/android/gallery3d/ui/SlotView$Layout;ILandroid/graphics/Rect;)Landroid/graphics/Rect;
 
     move-result-object v0
@@ -354,14 +353,12 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/SlotView;->mLayout:Lcom/sec/android/gallery3d/ui/SlotView$Layout;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->mSlotWidth:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$1800(Lcom/sec/android/gallery3d/ui/SlotView$Layout;)I
 
     move-result v1
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/SlotView;->mLayout:Lcom/sec/android/gallery3d/ui/SlotView$Layout;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->mSlotGap:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$1900(Lcom/sec/android/gallery3d/ui/SlotView$Layout;)I
 
     move-result v4
@@ -420,7 +417,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/SlotView;->mLayout:Lcom/sec/android/gallery3d/ui/SlotView$Layout;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->mSlotCount:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$200(Lcom/sec/android/gallery3d/ui/SlotView$Layout;)I
 
     move-result v2
@@ -438,7 +434,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/SlotView;->mTempRect:Landroid/graphics/Rect;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->getSlotRect(ILandroid/graphics/Rect;)Landroid/graphics/Rect;
     invoke-static {v3, p1, v4}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$300(Lcom/sec/android/gallery3d/ui/SlotView$Layout;ILandroid/graphics/Rect;)Landroid/graphics/Rect;
 
     move-result-object v1
@@ -551,7 +546,6 @@
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
-    # invokes: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->getSlotRect(ILandroid/graphics/Rect;)Landroid/graphics/Rect;
     invoke-static {v0, p1, v1}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$300(Lcom/sec/android/gallery3d/ui/SlotView$Layout;ILandroid/graphics/Rect;)Landroid/graphics/Rect;
 
     move-result-object v0
@@ -590,7 +584,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/SlotView;->mTempRect:Landroid/graphics/Rect;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->getSlotRect(ILandroid/graphics/Rect;)Landroid/graphics/Rect;
     invoke-static {v7, p1, v8}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$300(Lcom/sec/android/gallery3d/ui/SlotView$Layout;ILandroid/graphics/Rect;)Landroid/graphics/Rect;
 
     move-result-object v1
@@ -668,7 +661,6 @@
 
     sub-int v3, p5, p3
 
-    # invokes: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->setSize(II)V
     invoke-static {v1, v2, v3}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$400(Lcom/sec/android/gallery3d/ui/SlotView$Layout;II)V
 
     invoke-virtual {p0, v0}, Lcom/sec/android/gallery3d/ui/SlotView;->makeSlotVisible(I)V
@@ -802,7 +794,6 @@
 
     move-object/from16 v0, v22
 
-    # invokes: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->advanceAnimation(J)Z
     invoke-static {v0, v6, v7}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$500(Lcom/sec/android/gallery3d/ui/SlotView$Layout;J)Z
 
     move-result v22
@@ -1019,7 +1010,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->mVisibleEnd:I
     invoke-static/range {v23 .. v23}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$600(Lcom/sec/android/gallery3d/ui/SlotView$Layout;)I
 
     move-result v23
@@ -1030,7 +1020,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->mVisibleStart:I
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$700(Lcom/sec/android/gallery3d/ui/SlotView$Layout;)I
 
     move-result v24
@@ -1047,7 +1036,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->mVisibleEnd:I
     invoke-static/range {v22 .. v22}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$600(Lcom/sec/android/gallery3d/ui/SlotView$Layout;)I
 
     move-result v22
@@ -1061,7 +1049,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView$Layout;->mVisibleStart:I
     invoke-static/range {v22 .. v22}, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->access$700(Lcom/sec/android/gallery3d/ui/SlotView$Layout;)I
 
     move-result v22

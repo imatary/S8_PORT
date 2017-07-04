@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->access$000(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -60,7 +59,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->access$100(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;)Landroid/app/ActionBar;
 
     move-result-object v1
@@ -69,7 +67,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->initActionBarBg()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->access$200(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;

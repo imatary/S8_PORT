@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;->access$000(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -58,7 +57,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;->mPhotoView:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;->access$100(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;)Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoView;
 
     move-result-object v1
@@ -71,7 +69,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;->access$000(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -98,7 +95,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;->mPhotoViewState:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;->access$200(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;)Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
     move-result-object v1

@@ -55,7 +55,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/DragAndDrop;->mDragViewAdded:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/DragAndDrop;->access$002(Lcom/sec/samsung/gallery/view/common/DragAndDrop;Z)Z
 
     monitor-enter p0

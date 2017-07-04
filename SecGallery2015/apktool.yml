@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: SecGallery2015.apk
+apkFileName: com.sec.android.gallery3d_5.3.04.204-530499204_minAPI24(nodpi)_apkmirror.com.apk
 compressionType: false
 doNotCompress:
 - arsc
@@ -548,7 +548,7 @@ usesFramework:
   ids:
   - 1
   tag: null
-version: 2.2.2
+version: 2.2.3
 versionInfo:
   versionCode: '999999999'
-  versionName: 5.3.03.308
+  versionName: 5.3.04.204

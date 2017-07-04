@@ -55,14 +55,12 @@
 
     const/4 v1, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mRenameDialog:Lcom/sec/samsung/gallery/view/common/RenameDialog;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1700()Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mRenameDialog:Lcom/sec/samsung/gallery/view/common/RenameDialog;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1700()Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
     move-result-object v0
@@ -70,17 +68,14 @@
     invoke-virtual {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->dismissMediaRenameDialog()V
 
     :cond_0
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mRenameDialog:Lcom/sec/samsung/gallery/view/common/RenameDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1702(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDuplicateNameDialog:Landroid/app/AlertDialog;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1800()Landroid/app/AlertDialog;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDuplicateNameDialog:Landroid/app/AlertDialog;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1800()Landroid/app/AlertDialog;
 
     move-result-object v0
@@ -91,7 +86,6 @@
 
     if-eqz v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDuplicateNameDialog:Landroid/app/AlertDialog;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1800()Landroid/app/AlertDialog;
 
     move-result-object v0
@@ -99,7 +93,6 @@
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_1
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDuplicateNameDialog:Landroid/app/AlertDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1802(Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->hideProgressDialog()V
@@ -154,7 +147,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MtpImage;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Lcom/sec/android/gallery3d/data/MtpImage;
 
     move-result-object v0
@@ -171,14 +163,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Landroid/content/Context;
 
     move-result-object v3
@@ -201,7 +191,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1400(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -222,14 +211,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Landroid/content/Context;
 
     move-result-object v4
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -260,7 +247,6 @@
 
     move-result-object v12
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDest:Ljava/io/File;
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$102(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Ljava/io/File;)Ljava/io/File;
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
@@ -269,7 +255,6 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDest:Ljava/io/File;
     invoke-static {v13}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/io/File;
 
     move-result-object v13
@@ -278,12 +263,10 @@
 
     invoke-direct {v12, v13, v14}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDest:Ljava/io/File;
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$102(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Ljava/io/File;)Ljava/io/File;
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDest:Ljava/io/File;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/io/File;
 
     move-result-object v11
@@ -296,7 +279,6 @@
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDest:Ljava/io/File;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/io/File;
 
     move-result-object v11
@@ -331,7 +313,6 @@
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MtpImage;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Lcom/sec/android/gallery3d/data/MtpImage;
 
     move-result-object v11
@@ -342,12 +323,10 @@
 
     const/4 v12, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->resetDialogPreferences(Z)V
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)V
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MtpImage;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Lcom/sec/android/gallery3d/data/MtpImage;
 
     move-result-object v11
@@ -360,7 +339,6 @@
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDest:Ljava/io/File;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/io/File;
 
     move-result-object v11
@@ -381,7 +359,6 @@
 
     iget-object v12, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MtpImage;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Lcom/sec/android/gallery3d/data/MtpImage;
 
     move-result-object v12
@@ -390,14 +367,12 @@
 
     move-result v12
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     :cond_1
     :goto_1
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$400(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
 
     move-result v8
@@ -408,7 +383,6 @@
 
     const/4 v12, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mAllDownloaded:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1302(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     :cond_2
@@ -449,7 +423,6 @@
     :cond_3
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsCheck:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
 
     move-result v11
@@ -458,7 +431,6 @@
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsRename:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$600(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
 
     move-result v11
@@ -471,7 +443,6 @@
 
     iget-object v12, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDest:Ljava/io/File;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/io/File;
 
     move-result-object v12
@@ -488,7 +459,6 @@
 
     iget-object v12, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MtpImage;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Lcom/sec/android/gallery3d/data/MtpImage;
 
     move-result-object v12
@@ -501,7 +471,6 @@
 
     move-result v12
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     goto :goto_1
@@ -509,7 +478,6 @@
     :cond_4
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsReplace:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
 
     move-result v11
@@ -520,7 +488,6 @@
 
     iget-object v12, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MtpImage;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Lcom/sec/android/gallery3d/data/MtpImage;
 
     move-result-object v12
@@ -529,7 +496,6 @@
 
     move-result v12
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     goto/16 :goto_1
@@ -537,7 +503,6 @@
     :cond_5
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsCancel:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$800(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
 
     move-result v11
@@ -548,7 +513,6 @@
 
     const/4 v12, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     goto/16 :goto_1
@@ -558,12 +522,10 @@
 
     const/4 v12, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsFileNameUsed:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$902(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mLock:Ljava/lang/Object;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/lang/Object;
 
     move-result-object v12
@@ -573,7 +535,6 @@
     :try_start_0
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Landroid/content/Context;
 
     move-result-object v11
@@ -589,7 +550,6 @@
     :goto_2
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsFileNameUsed:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$900(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -601,7 +561,6 @@
     :try_start_1
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mLock:Ljava/lang/Object;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/lang/Object;
 
     move-result-object v11
@@ -641,7 +600,6 @@
     :cond_8
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1400(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v11
@@ -698,7 +656,6 @@
     const/4 v11, 0x1
 
     :goto_3
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->resetDialogPreferences(Z)V
     invoke-static {v12, v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)V
 
     :cond_a
@@ -758,7 +715,6 @@
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDest:Ljava/io/File;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/io/File;
 
     move-result-object v11
@@ -783,7 +739,6 @@
 
     move-result v12
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     :cond_d
@@ -811,7 +766,6 @@
     :cond_e
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsCheck:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
 
     move-result v11
@@ -820,7 +774,6 @@
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsRename:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$600(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
 
     move-result v11
@@ -833,7 +786,6 @@
 
     iget-object v12, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mDest:Ljava/io/File;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/io/File;
 
     move-result-object v12
@@ -858,7 +810,6 @@
 
     move-result v12
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
     :try_end_4
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_4 .. :try_end_4} :catch_1
@@ -906,7 +857,6 @@
     :try_start_5
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsReplace:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
 
     move-result v11
@@ -921,7 +871,6 @@
 
     move-result v12
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     goto/16 :goto_5
@@ -929,7 +878,6 @@
     :cond_10
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsCancel:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$800(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
 
     move-result v11
@@ -940,7 +888,6 @@
 
     const/4 v12, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     goto/16 :goto_5
@@ -950,12 +897,10 @@
 
     const/4 v12, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsFileNameUsed:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$902(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mLock:Ljava/lang/Object;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/lang/Object;
 
     move-result-object v12
@@ -967,7 +912,6 @@
     :try_start_6
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Landroid/content/Context;
 
     move-result-object v11
@@ -983,7 +927,6 @@
     :goto_6
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsFileNameUsed:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$900(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
@@ -995,7 +938,6 @@
     :try_start_7
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mLock:Ljava/lang/Object;
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/lang/Object;
 
     move-result-object v11
@@ -1039,7 +981,6 @@
     :try_start_b
     iget-object v11, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v11}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$400(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Z
 
     move-result v8
@@ -1050,7 +991,6 @@
 
     const/4 v12, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mImportFailed:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1502(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     const-string/jumbo v11, "ShowImportDialogCmd"
@@ -1068,7 +1008,6 @@
 
     const/4 v12, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mAllDownloaded:Z
     invoke-static {v11, v12}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1302(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
     :try_end_b
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_b .. :try_end_b} :catch_1
@@ -1111,7 +1050,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -1163,14 +1101,12 @@
     const/4 v0, 0x1
 
     :goto_0
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mShowCancelToast:Z
     invoke-static {v2, v0}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1602(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->hideAllDialog()V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1200(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Landroid/content/Context;
 
     move-result-object v0

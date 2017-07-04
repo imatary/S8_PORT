@@ -47,7 +47,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationalePopup$1;->this$0:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationalePopup;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationalePopup;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationalePopup;->access$000(Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationalePopup;)Landroid/content/Context;
 
     move-result-object v3
@@ -61,7 +60,6 @@
     :try_start_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationalePopup$1;->this$0:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationalePopup;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationalePopup;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationalePopup;->access$000(Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationalePopup;)Landroid/content/Context;
 
     move-result-object v2

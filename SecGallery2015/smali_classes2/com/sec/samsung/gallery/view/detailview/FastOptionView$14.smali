@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$14;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mContainer:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$2300(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Landroid/view/View;
 
     move-result-object v0
@@ -54,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$14;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mContainer:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$2300(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Landroid/view/View;
 
     move-result-object v0

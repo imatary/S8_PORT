@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$11;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mUseLiveEvent:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3300(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)Z
 
     move-result v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$11;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->handleNewEventAlbum()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3400(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)V
 
     :goto_0
@@ -59,7 +57,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$11;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mCreateEventBtn:Landroid/widget/ImageButton;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3500(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)Landroid/widget/ImageButton;
 
     move-result-object v0
@@ -74,7 +71,6 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->setCreateEventVisibleMode(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3600(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;Z)V
 
     goto :goto_0
@@ -82,7 +78,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$11;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mNeedCreateEventBtnListener:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3700(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)Z
 
     move-result v0
@@ -91,18 +86,15 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$11;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mNeedCreateEventBtnListener:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3702(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$11;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->setCreateEventListener()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3800(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)V
 
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$11;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->setCreateEventVisibleMode(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3600(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;Z)V
 
     goto :goto_0

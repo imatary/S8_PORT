@@ -40,7 +40,6 @@
     :try_start_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mVisualSearchView:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
     move-result-object v4
@@ -49,7 +48,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mVisualSearchView:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
     move-result-object v4
@@ -66,8 +64,7 @@
     :cond_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$4600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
 
@@ -85,8 +82,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$4700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
 
@@ -102,8 +98,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$4800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v4
 
@@ -124,8 +119,7 @@
     :cond_1
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$4900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
 
@@ -144,13 +138,11 @@
 
     const/4 v5, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mInputMethodHeight:I
-    invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5002(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
+    invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5402(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
 
@@ -162,7 +154,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mVisualSearchView:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
     move-result-object v4
@@ -171,7 +162,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mVisualSearchView:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
     move-result-object v4
@@ -182,8 +172,7 @@
     :goto_1
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->adjustSipSize()V
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -204,8 +193,7 @@
 
     :cond_4
     :try_start_1
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->FEATURE_IS_TABLET:Z
-    invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5200()Z
+    invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5600()Z
 
     move-result v4
 
@@ -215,8 +203,7 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
 
@@ -234,8 +221,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsMovableKeypad:Z
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Z
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Z
 
     move-result v4
 
@@ -246,8 +232,7 @@
 
     const/4 v5, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mInputMethodHeight:I
-    invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5502(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
+    invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5902(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
 
     goto :goto_1
 
@@ -256,8 +241,7 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$13;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-    invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+    invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v5
 
@@ -273,8 +257,7 @@
 
     sub-int/2addr v5, v6
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mInputMethodHeight:I
-    invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5602(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
+    invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6002(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 

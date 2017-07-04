@@ -133,7 +133,7 @@
 
     const v6, 0x7f120290
 
-    const v5, 0x7f120289
+    const v5, 0x7f120288
 
     const/4 v3, 0x1
 
@@ -277,7 +277,7 @@
 .method protected getBackgroundDrawable()I
     .locals 1
 
-    const v0, 0x7f020361
+    const v0, 0x7f020363
 
     return v0
 .end method
@@ -285,7 +285,7 @@
 .method protected getBackgroundDrawableForLand()I
     .locals 1
 
-    const v0, 0x7f020361
+    const v0, 0x7f020363
 
     return v0
 .end method
@@ -473,7 +473,7 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f120289 -> :sswitch_0
+        0x7f120288 -> :sswitch_0
         0x7f120290 -> :sswitch_1
         0x7f1202d2 -> :sswitch_3
         0x7f1202d3 -> :sswitch_2

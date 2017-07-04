@@ -48,14 +48,13 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView$HorizontalNavigationImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;->mIsPrevious:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;->access$100(Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a0885
+    const v0, 0x7f0a0893
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -65,7 +64,7 @@
     return-object v0
 
     :cond_0
-    const v0, 0x7f0a087d
+    const v0, 0x7f0a088b
 
     goto :goto_0
 .end method
@@ -85,7 +84,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView$HorizontalNavigationImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;->mIsPrevious:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;->access$100(Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;)Z
 
     move-result v0
@@ -139,7 +137,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0b0610
+    const v3, 0x7f0b0611
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -147,7 +145,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView$HorizontalNavigationImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;->mIsPrevious:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;->access$100(Lcom/sec/android/gallery3d/ui/HorizontalNavigationImageView;)Z
 
     move-result v1

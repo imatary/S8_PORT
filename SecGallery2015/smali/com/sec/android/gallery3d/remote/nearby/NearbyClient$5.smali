@@ -157,7 +157,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mViewerOnPlaying:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$1202(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;Z)Z
 
     goto :goto_0

@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$2;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$1200(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$2;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$1300(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -65,7 +63,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$2;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$1400(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v0

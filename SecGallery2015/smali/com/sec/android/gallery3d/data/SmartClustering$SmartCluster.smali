@@ -177,7 +177,6 @@
 
     sget-object v3, Lcom/sec/samsung/gallery/access/cmh/CMHProviderTimeInterface;->TABLE_URI__MOMENT_CLUSTER:Landroid/net/Uri;
 
-    # getter for: Lcom/sec/android/gallery3d/data/SmartClustering;->PROJECTION_FOR_MOMENT_LOCATION:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/gallery3d/data/SmartClustering;->access$900()[Ljava/lang/String;
 
     move-result-object v4
@@ -212,7 +211,6 @@
 
     iget-object v2, v0, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->this$0:Lcom/sec/android/gallery3d/data/SmartClustering;
 
-    # getter for: Lcom/sec/android/gallery3d/data/SmartClustering;->mContentResolver:Landroid/content/ContentResolver;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/SmartClustering;->access$1200(Lcom/sec/android/gallery3d/data/SmartClustering;)Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -391,7 +389,6 @@
 
     sget-object v3, Lcom/sec/samsung/gallery/access/cmh/CMHProviderTimeInterface;->TABLE_URI__DAY_MONTH_CLUSTER:Landroid/net/Uri;
 
-    # getter for: Lcom/sec/android/gallery3d/data/SmartClustering;->PROJECTION_FOR_DAY_LOCATION:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/gallery3d/data/SmartClustering;->access$1000()[Ljava/lang/String;
 
     move-result-object v4
@@ -403,7 +400,6 @@
     :cond_2
     sget-object v3, Lcom/sec/samsung/gallery/access/cmh/CMHProviderTimeInterface;->TABLE_URI__DAY_MONTH_CLUSTER:Landroid/net/Uri;
 
-    # getter for: Lcom/sec/android/gallery3d/data/SmartClustering;->PROJECTION_FOR_MONTH_LOCATION:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/gallery3d/data/SmartClustering;->access$1100()[Ljava/lang/String;
 
     move-result-object v4

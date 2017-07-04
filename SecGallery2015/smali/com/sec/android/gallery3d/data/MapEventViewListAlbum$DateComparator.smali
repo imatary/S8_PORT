@@ -57,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/MapEventViewListAlbum$DateComparator;->this$0:Lcom/sec/android/gallery3d/data/MapEventViewListAlbum;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MapEventViewListAlbum;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/MapEventViewListAlbum;->access$100(Lcom/sec/android/gallery3d/data/MapEventViewListAlbum;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v0

@@ -45,7 +45,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->handleUploadViaWifi(Z)Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->access$000(Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;Z)Z
 
     move-result v0

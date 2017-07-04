@@ -74,14 +74,12 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/util/ImageDRMUtil;->mListener:Lcom/sec/android/gallery3d/util/ImageDRMUtil$DrmPopupListener;
     invoke-static {}, Lcom/sec/android/gallery3d/util/ImageDRMUtil;->access$200()Lcom/sec/android/gallery3d/util/ImageDRMUtil$DrmPopupListener;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/util/ImageDRMUtil;->mListener:Lcom/sec/android/gallery3d/util/ImageDRMUtil$DrmPopupListener;
     invoke-static {}, Lcom/sec/android/gallery3d/util/ImageDRMUtil;->access$200()Lcom/sec/android/gallery3d/util/ImageDRMUtil$DrmPopupListener;
 
     move-result-object v0
@@ -116,7 +114,6 @@
 
     move-result-object v1
 
-    # invokes: Lcom/sec/android/gallery3d/util/ImageDRMUtil;->requestRight(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/util/ImageDRMUtil;->access$300(Lcom/sec/android/gallery3d/util/ImageDRMUtil;Ljava/lang/String;)V
 
     goto :goto_0

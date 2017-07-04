@@ -41,12 +41,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsFileNameUsed:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1502(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->lock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1600(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Ljava/lang/Object;
 
     move-result-object v1
@@ -56,7 +54,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->lock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1600(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Ljava/lang/Object;
 
     move-result-object v0

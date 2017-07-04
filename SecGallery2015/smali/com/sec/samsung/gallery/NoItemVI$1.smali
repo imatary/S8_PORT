@@ -45,7 +45,6 @@
 .method public getLineColor(I)I
     .locals 1
 
-    # getter for: Lcom/sec/samsung/gallery/NoItemVI;->PATH_LINE_COLOR:I
     invoke-static {}, Lcom/sec/samsung/gallery/NoItemVI;->access$100()I
 
     move-result v0
@@ -60,7 +59,6 @@
 
     const/4 v1, 0x2
 
-    # invokes: Lcom/sec/samsung/gallery/NoItemVI;->dpToPx(I)I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/NoItemVI;->access$000(Lcom/sec/samsung/gallery/NoItemVI;I)I
 
     move-result v0

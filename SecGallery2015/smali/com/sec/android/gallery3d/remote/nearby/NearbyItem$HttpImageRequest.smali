@@ -114,7 +114,6 @@
 
     iget-object v3, v0, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->generateKey()J
     invoke-static {v3}, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->access$200(Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;)J
 
     move-result-wide v4
@@ -123,7 +122,6 @@
 
     iget-object v3, v0, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v3}, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->access$700(Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v3
@@ -149,7 +147,6 @@
 
     iget-object v3, v0, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->mPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static {v3}, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->access$800(Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;)Lcom/sec/android/gallery3d/data/Path;
 
     move-result-object v3
@@ -629,7 +626,6 @@
 
     move-result v6
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->mDecodedWidth:I
     invoke-static {v3, v6}, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->access$402(Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;I)I
 
     move-object/from16 v0, p0
@@ -640,7 +636,6 @@
 
     move-result v6
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->mDecodedHeight:I
     invoke-static {v3, v6}, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->access$502(Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;I)I
 
     :cond_c
@@ -815,7 +810,6 @@
 
     iget-object v3, v0, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem$HttpImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->mPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static {v3}, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;->access$900(Lcom/sec/android/gallery3d/remote/nearby/NearbyItem;)Lcom/sec/android/gallery3d/data/Path;
 
     move-result-object v9

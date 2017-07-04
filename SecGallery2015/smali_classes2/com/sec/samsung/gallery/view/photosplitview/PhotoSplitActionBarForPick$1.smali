@@ -39,7 +39,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;->access$000(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -62,7 +61,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;->access$100(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;)Landroid/app/ActionBar;
 
     move-result-object v2
@@ -74,7 +72,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;->access$200(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;)Landroid/app/ActionBar;
 
     move-result-object v2

@@ -47,7 +47,6 @@
 .method public compare(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/Category;Lcom/sec/samsung/gallery/view/gallerysearch/base/model/Category;)I
     .locals 3
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SuggestionListViewAdapter;->CATEGORY_ORDER:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SuggestionListViewAdapter;->access$000()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -60,7 +59,6 @@
 
     move-result v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SuggestionListViewAdapter;->CATEGORY_ORDER:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SuggestionListViewAdapter;->access$000()Ljava/util/ArrayList;
 
     move-result-object v1

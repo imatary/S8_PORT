@@ -61,7 +61,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/eventshare/utils/SmsSendService$1;->this$0:Lcom/sec/android/gallery3d/eventshare/utils/SmsSendService;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/utils/SmsSendService;->mStHandler:Lcom/samsung/android/sdk/ssf/common/transaction/StateHandler;
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/utils/SmsSendService;->access$500(Lcom/sec/android/gallery3d/eventshare/utils/SmsSendService;)Lcom/samsung/android/sdk/ssf/common/transaction/StateHandler;
 
     move-result-object v2
@@ -78,7 +77,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/eventshare/utils/SmsSendService;->mServiceBinder:Lcom/android/mms/transaction/IMessageBackgroundSender;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/eventshare/utils/SmsSendService;->access$402(Lcom/sec/android/gallery3d/eventshare/utils/SmsSendService;Lcom/android/mms/transaction/IMessageBackgroundSender;)Lcom/android/mms/transaction/IMessageBackgroundSender;
 
     return-void

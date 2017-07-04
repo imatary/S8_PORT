@@ -41,12 +41,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$15;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->isUpdateLayout:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$2402(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$15;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mIsFirstLaunch:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$2500(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Z
 
     move-result v0
@@ -55,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$15;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->initFastMenuView()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$2600(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)V
 
     :goto_0
@@ -64,7 +61,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$15;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mIsFirstLaunch:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$2502(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;Z)Z
 
     goto :goto_0

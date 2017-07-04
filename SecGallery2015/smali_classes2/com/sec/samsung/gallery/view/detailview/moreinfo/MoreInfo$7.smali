@@ -41,12 +41,10 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$7;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mEditMode:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1500(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Z
 
     move-result v1
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->setLayoutParams(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1600(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;Z)V
 
     return-void

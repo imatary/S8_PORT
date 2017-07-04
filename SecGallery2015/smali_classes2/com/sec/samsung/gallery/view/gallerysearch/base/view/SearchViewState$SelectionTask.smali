@@ -64,7 +64,6 @@
 
     iget-boolean v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$SelectionTask;->mIsLimited:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->selectAllProcess(Lcom/sec/android/gallery3d/data/MediaSet;IZLcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;)V
     invoke-static {v1, v0, v2, v3, p0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;Lcom/sec/android/gallery3d/data/MediaSet;IZLcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;)V
 
     const/4 v1, 0x0

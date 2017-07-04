@@ -55,17 +55,14 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # setter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mAuthService:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$602(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # setter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mUseService:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$202(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$700(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)Landroid/content/Context;
 
     move-result-object v0
@@ -74,7 +71,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$700(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)Landroid/content/Context;
 
     move-result-object v0
@@ -85,17 +81,14 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # setter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mStatusChangedFromOutside:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$802(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->bindSettingView()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$500(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # setter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mStatusChangedFromOutside:Z
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$802(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;Z)Z
 
     :goto_0
@@ -110,17 +103,14 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # setter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mAuthService:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$602(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # setter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mUseService:Z
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$202(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$700(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)Landroid/content/Context;
 
     move-result-object v0
@@ -137,7 +127,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$700(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)Landroid/content/Context;
 
     move-result-object v0
@@ -147,7 +136,6 @@
     :goto_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$700(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)Landroid/content/Context;
 
     move-result-object v0
@@ -158,17 +146,14 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # setter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mStatusChangedFromOutside:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$802(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->bindSettingView()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$500(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # setter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mStatusChangedFromOutside:Z
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$802(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;Z)Z
 
     goto :goto_0
@@ -176,7 +161,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$9;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$700(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)Landroid/content/Context;
 
     move-result-object v0

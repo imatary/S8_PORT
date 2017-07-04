@@ -62,7 +62,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mNext:Lcom/sec/android/gallery3d/ui/TileImageView$Tile;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$2000(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Lcom/sec/android/gallery3d/ui/TileImageView$Tile;
 
     move-result-object v1
@@ -85,7 +84,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/TileImageView$TileQueue;->mHead:Lcom/sec/android/gallery3d/ui/TileImageView$Tile;
 
-    # setter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mNext:Lcom/sec/android/gallery3d/ui/TileImageView$Tile;
     invoke-static {p1, v1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$2002(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Lcom/sec/android/gallery3d/ui/TileImageView$Tile;
 
     iput-object p1, p0, Lcom/sec/android/gallery3d/ui/TileImageView$TileQueue;->mHead:Lcom/sec/android/gallery3d/ui/TileImageView$Tile;

@@ -61,7 +61,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$OnLongClickListener;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mFastOptionLayout:Landroid/widget/LinearLayout;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$2000(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Landroid/widget/LinearLayout;
 
     move-result-object v1
@@ -74,14 +73,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$OnLongClickListener;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mIsFastOptionLongPressed:Z
     invoke-static {v1, v3}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$2102(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Z)Z
 
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$OnLongClickListener;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->refreshActionBarMessages(Z)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$200(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Z)V
 
     return v2
@@ -89,7 +86,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$OnLongClickListener;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mViewModeLayout:Landroid/widget/LinearLayout;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$2200(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Landroid/widget/LinearLayout;
 
     move-result-object v1
@@ -102,7 +98,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$OnLongClickListener;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mIsViewModeLongPressed:Z
     invoke-static {v1, v3}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$2302(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Z)Z
 
     goto :goto_0

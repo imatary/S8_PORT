@@ -995,17 +995,14 @@
 
     iput-object v4, p0, Lcom/sec/android/gallery3d/app/ActivityState;->mReceivedResults:Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;
 
-    # getter for: Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;->requestCode:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;->access$200(Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;)I
 
     move-result v4
 
-    # getter for: Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;->resultCode:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;->access$000(Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;)I
 
     move-result v5
 
-    # getter for: Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;->resultData:Landroid/content/Intent;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;->access$100(Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;)Landroid/content/Intent;
 
     move-result-object v6
@@ -1151,12 +1148,10 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/ActivityState;->mResult:Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;
 
-    # setter for: Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;->resultCode:I
     invoke-static {v0, p1}, Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;->access$002(Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;I)I
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/ActivityState;->mResult:Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;
 
-    # setter for: Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;->resultData:Landroid/content/Intent;
     invoke-static {v0, p2}, Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;->access$102(Lcom/sec/android/gallery3d/app/ActivityState$ResultEntry;Landroid/content/Intent;)Landroid/content/Intent;
 
     goto :goto_0

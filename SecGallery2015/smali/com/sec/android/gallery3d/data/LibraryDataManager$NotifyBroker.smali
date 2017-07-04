@@ -168,7 +168,6 @@
 
     move-result-object v3
 
-    # getter for: Lcom/sec/android/gallery3d/data/LibraryDataManager;->mChangedNotiActive:Z
     invoke-static {}, Lcom/sec/android/gallery3d/data/LibraryDataManager;->access$100()Z
 
     move-result v4
@@ -203,7 +202,6 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    # getter for: Lcom/sec/android/gallery3d/data/LibraryDataManager;->mChangedNotiActive:Z
     invoke-static {}, Lcom/sec/android/gallery3d/data/LibraryDataManager;->access$100()Z
 
     move-result v2

@@ -95,7 +95,6 @@
     :cond_2
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/cloud/CloudVideo$ThumbDecodeRequest;->this$0:Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;->access$000(Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v2
@@ -167,7 +166,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/remote/cloud/CloudVideo$ThumbDecodeRequest;->this$0:Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v3}, Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;->access$100(Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v3
@@ -189,7 +187,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/remote/cloud/CloudVideo$ThumbDecodeRequest;->this$0:Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v3}, Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;->access$200(Lcom/sec/android/gallery3d/remote/cloud/CloudVideo;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v3

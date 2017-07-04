@@ -3672,15 +3672,21 @@
 .end method
 
 .method private handleMoreAlbumForBixby(Z)V
-    .locals 4
+    .locals 5
 
-    iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v2, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    invoke-virtual {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getMoreAlbumDivider()Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
+    invoke-virtual {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getMoreAlbumDivider()Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->getVisibility()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
 
     invoke-virtual {v0, p1}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->setMoreAlbumVisibility(Z)V
 
@@ -3690,19 +3696,31 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
+    const v3, 0x7f0a077d
+
+    const/4 v4, 0x0
+
+    new-array v4, v4, [Ljava/lang/Object;
+
+    invoke-static {v2, v3, v4}, Lcom/samsung/android/devicecog/gallery/controller/DCNlgManager;->getNlgRequestInfo(Landroid/content/Context;I[Ljava/lang/Object;)Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;
+
+    move-result-object v1
+
+    iget-object v3, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
     if-eqz p1, :cond_1
 
-    const-string/jumbo v1, "AlbumUnfold"
+    const-string/jumbo v2, "AlbumUnfold"
 
     :goto_1
-    sget-object v3, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->FAILURE:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
+    sget-object v4, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->FAILURE:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
 
-    invoke-static {v2, v1, v3}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;)V
+    invoke-static {v3, v2, v4, v1}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;)V
 
     goto :goto_0
 
     :cond_1
-    const-string/jumbo v1, "AlbumFold"
+    const-string/jumbo v2, "AlbumFold"
 
     goto :goto_1
 .end method
@@ -6180,7 +6198,7 @@
 
     iget-object v11, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v12, 0x7f0a0745
+    const v12, 0x7f0a074b
 
     const/4 v13, 0x2
 
@@ -6734,7 +6752,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mMenu:Landroid/view/Menu;
 
-    const v1, 0x7f120286
+    const v1, 0x7f120285
 
     const/4 v2, 0x0
 
@@ -6765,7 +6783,6 @@
 
     move-result v2
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$ComposeViewConfig;->setInitalLevel(ZI)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$ComposeViewConfig;->access$11600(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$ComposeViewConfig;ZI)V
 
     return-void
@@ -7917,38 +7934,13 @@
     iput v1, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$ComposeViewConfig;->mTabPos:I
 
     :cond_0
-    sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->IsEnabledWeChatVideoShotMode:Lcom/sec/samsung/gallery/features/FeatureNames;
-
-    invoke-static {v0}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-
-    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->getCurrentTabTagType()Lcom/sec/samsung/gallery/core/TabTagType;
-
-    move-result-object v0
-
-    sget-object v1, Lcom/sec/samsung/gallery/core/TabTagType;->TAB_TAG_SIGHTMODE:Lcom/sec/samsung/gallery/core/TabTagType;
-
-    if-ne v0, v1, :cond_1
-
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     sget-object v1, Lcom/sec/samsung/gallery/core/TabTagType;->TAB_TAG_ALBUM:Lcom/sec/samsung/gallery/core/TabTagType;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->setCurrentTabTagType(Lcom/sec/samsung/gallery/core/TabTagType;)V
 
-    :cond_1
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/sec/android/gallery3d/app/GalleryApp;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryApp:Lcom/sec/android/gallery3d/app/GalleryAppImpl;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
@@ -7960,7 +7952,7 @@
 
     move-result v1
 
-    invoke-interface {v0, v1}, Lcom/sec/android/gallery3d/app/GalleryApp;->setCurrentClusterType(I)V
+    invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/GalleryAppImpl;->setCurrentClusterType(I)V
 
     const/4 v0, 0x1
 
@@ -7984,7 +7976,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
@@ -7992,16 +7984,16 @@
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_1
 
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->setEAM(Z)V
 
-    :cond_2
+    :cond_1
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mUpdatePath:Z
 
-    if-eqz v0, :cond_18
+    if-eqz v0, :cond_17
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->getDefaultPath()Ljava/lang/String;
 
@@ -8009,7 +8001,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mCurrentTopSetPath:Ljava/lang/String;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_2
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mCurrentTopSetPath:Ljava/lang/String;
 
@@ -8017,14 +8009,14 @@
 
     move-result v0
 
-    if-nez v0, :cond_4
+    if-nez v0, :cond_3
 
-    :cond_3
+    :cond_2
     iput-object v12, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mCurrentTopSetPath:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mCurrentTopSetPath:Ljava/lang/String;
 
-    if-nez v0, :cond_17
+    if-nez v0, :cond_16
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mDataProxy:Lcom/sec/android/gallery3d/data/DataManager;
 
@@ -8037,7 +8029,7 @@
 
     invoke-virtual {v0, v10}, Lcom/sec/samsung/gallery/view/adapter/ComposeAlbumSetAdapter;->setSource(Lcom/sec/android/gallery3d/data/MediaSet;)Z
 
-    :cond_4
+    :cond_3
     :goto_1
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->getViewLevelForAlbum()I
 
@@ -8059,7 +8051,6 @@
 
     iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsEasyMode:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$ComposeViewConfig;->setInitalLevel(ZI)V
     invoke-static {v0, v1, v9}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$ComposeViewConfig;->access$11600(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$ComposeViewConfig;ZI)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mMediaAlbumSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeAlbumSetAdapter;
@@ -8078,15 +8069,15 @@
 
     move-result-object v8
 
-    if-eqz v8, :cond_5
+    if-eqz v8, :cond_4
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsSocialCloudView:Z
 
-    if-nez v0, :cond_5
+    if-nez v0, :cond_4
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsCopyMoveMode:Z
 
-    if-nez v0, :cond_5
+    if-nez v0, :cond_4
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeViewConfig:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$ComposeViewConfig;
 
@@ -8112,14 +8103,14 @@
 
     iput v1, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$ComposeViewConfig;->mPrevCenterObject:I
 
-    :cond_5
+    :cond_4
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->getViewOptionForAlbum()I
 
     move-result v4
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsCopyMoveMode:Z
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_5
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeViewConfig:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$ComposeViewConfig;
 
@@ -8127,18 +8118,18 @@
 
     iput-boolean v1, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$ComposeViewConfig;->mUseChannelNoti:Z
 
-    :cond_6
+    :cond_5
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->getViewInitialCodeForAlbum()I
 
     move-result v7
 
-    if-ltz v7, :cond_7
+    if-ltz v7, :cond_6
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mMediaAlbumSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeAlbumSetAdapter;
 
     invoke-virtual {v0, v7}, Lcom/sec/samsung/gallery/view/adapter/ComposeAlbumSetAdapter;->setFirstIndex(I)V
 
-    :cond_7
+    :cond_6
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mMediaAlbumSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeAlbumSetAdapter;
 
     sget v1, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->FIRST_LOADING_COUNT:I
@@ -8151,17 +8142,17 @@
 
     move-result v0
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_7
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_7
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     iget v0, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mState:I
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_7
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -8175,9 +8166,9 @@
 
     move-result v0
 
-    if-nez v0, :cond_9
+    if-nez v0, :cond_8
 
-    :cond_8
+    :cond_7
     new-instance v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -8192,14 +8183,14 @@
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    :cond_9
+    :cond_8
     sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->UseTabUI:Lcom/sec/samsung/gallery/features/FeatureNames;
 
     invoke-static {v0}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_19
+    if-eqz v0, :cond_18
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -8213,7 +8204,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_19
+    if-eqz v0, :cond_18
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
@@ -8221,7 +8212,7 @@
 
     invoke-virtual {v0, v1, p0}, Lcom/sec/android/gallery3d/glcore/GlRootView;->addLayer(Lcom/sec/android/gallery3d/glcore/GlLayer;Lcom/sec/android/gallery3d/glcore/GlLayer$onLayerCallback;)V
 
-    :cond_a
+    :cond_9
     :goto_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mMediaAlbumSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeAlbumSetAdapter;
 
@@ -8229,11 +8220,11 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mNaviSpinner:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_a
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsHiddenAlbum:Z
 
-    if-eqz v0, :cond_1a
+    if-eqz v0, :cond_19
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mNaviSpinner:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
@@ -8253,7 +8244,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->resume(Ljava/lang/String;Z)V
 
-    :cond_b
+    :cond_a
     :goto_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
@@ -8261,15 +8252,15 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1b
+    if-eqz v0, :cond_1a
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsPickerMode:Z
 
-    if-nez v0, :cond_1b
+    if-nez v0, :cond_1a
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsCopyMoveMode:Z
 
-    if-nez v0, :cond_1b
+    if-nez v0, :cond_1a
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
@@ -8281,7 +8272,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->setMode(IILjava/lang/Object;)V
 
-    :cond_c
+    :cond_b
     :goto_4
     invoke-super {p0}, Lcom/sec/android/gallery3d/app/TabActivityState;->onResume()V
 
@@ -8293,7 +8284,7 @@
 
     sget-object v1, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
 
-    if-eq v0, v1, :cond_e
+    if-eq v0, v1, :cond_d
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
@@ -8303,7 +8294,7 @@
 
     sget-object v1, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_ALBUM_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
 
-    if-eq v0, v1, :cond_e
+    if-eq v0, v1, :cond_d
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
@@ -8313,7 +8304,7 @@
 
     sget-object v1, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_MULTIPLE_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
 
-    if-eq v0, v1, :cond_e
+    if-eq v0, v1, :cond_d
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
@@ -8323,11 +8314,11 @@
 
     sget-object v1, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_PERSON_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
 
-    if-eq v0, v1, :cond_e
+    if-eq v0, v1, :cond_d
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsCopyMoveMode:Z
 
-    if-eqz v0, :cond_1e
+    if-eqz v0, :cond_1d
 
     const-string/jumbo v14, ""
 
@@ -8335,7 +8326,7 @@
 
     const/4 v1, 0x1
 
-    if-ne v0, v1, :cond_1d
+    if-ne v0, v1, :cond_1c
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -8349,7 +8340,7 @@
 
     move-result-object v14
 
-    :cond_d
+    :cond_c
     :goto_5
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
@@ -8365,7 +8356,7 @@
 
     invoke-virtual {v0, v14}, Lcom/sec/samsung/gallery/view/ActionBarManager;->setTitle(Ljava/lang/String;)V
 
-    :cond_e
+    :cond_d
     :goto_6
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
@@ -8375,7 +8366,7 @@
 
     sget-object v1, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
 
-    if-eq v0, v1, :cond_f
+    if-eq v0, v1, :cond_e
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
@@ -8385,7 +8376,7 @@
 
     sget-object v1, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_ALBUM_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
 
-    if-eq v0, v1, :cond_f
+    if-eq v0, v1, :cond_e
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
@@ -8395,7 +8386,7 @@
 
     sget-object v1, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_MULTIPLE_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
 
-    if-eq v0, v1, :cond_f
+    if-eq v0, v1, :cond_e
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
@@ -8405,9 +8396,9 @@
 
     sget-object v1, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_PERSON_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
 
-    if-ne v0, v1, :cond_10
+    if-ne v0, v1, :cond_f
 
-    :cond_f
+    :cond_e
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
@@ -8418,7 +8409,7 @@
 
     sget-object v2, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_MULTIPLE_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
 
-    if-ne v0, v2, :cond_26
+    if-ne v0, v2, :cond_25
 
     const/4 v0, 0x1
 
@@ -8427,7 +8418,7 @@
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsFromNoItem:Z
 
-    if-eqz v0, :cond_27
+    if-eqz v0, :cond_26
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
@@ -8439,7 +8430,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/samsung/gallery/view/ActionBarManager;->setAction(Lcom/sec/samsung/gallery/view/AbstractActionBar;)V
 
-    :cond_10
+    :cond_f
     :goto_8
     sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->IsTablet:Lcom/sec/samsung/gallery/features/FeatureNames;
 
@@ -8447,7 +8438,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_28
+    if-eqz v0, :cond_27
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -8492,13 +8483,13 @@
 
     move-result v0
 
-    if-nez v0, :cond_11
+    if-nez v0, :cond_10
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     invoke-virtual {v0}, Lcom/sec/samsung/gallery/view/ActionBarManager;->refreshEventBadge()V
 
-    :cond_11
+    :cond_10
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mMainHandler:Landroid/os/Handler;
 
     const/4 v1, 0x2
@@ -8507,7 +8498,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_12
+    if-eqz v0, :cond_11
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mMainHandler:Landroid/os/Handler;
 
@@ -8515,14 +8506,14 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    :cond_12
+    :cond_11
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mMainHandler:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object v11
 
-    if-eqz v11, :cond_13
+    if-eqz v11, :cond_12
 
     const/4 v0, 0x2
 
@@ -8534,14 +8525,14 @@
 
     invoke-virtual {v0, v11, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    :cond_13
+    :cond_12
     sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->ShowStatusBar:Lcom/sec/samsung/gallery/features/FeatureNames;
 
     invoke-static {v0}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_14
+    if-eqz v0, :cond_13
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -8553,20 +8544,20 @@
 
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/util/GalleryUtils;->updateStatusBarColor(Landroid/view/Window;Landroid/content/Context;)V
 
-    :cond_14
+    :cond_13
     sget-boolean v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->FeatureIsDualScreen:Z
 
-    if-eqz v0, :cond_15
+    if-eqz v0, :cond_14
 
     invoke-static {}, Lcom/sec/samsung/gallery/view/utils/SDualScreenUtil;->isDualScreenMode()Z
 
     move-result v0
 
-    if-eqz v0, :cond_15
+    if-eqz v0, :cond_14
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->refreshDualScreenFocus()V
 
-    :cond_15
+    :cond_14
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mKeepThumbnailForPhotoView:Z
@@ -8579,11 +8570,11 @@
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsHiddenAlbum:Z
 
-    if-eqz v0, :cond_16
+    if-eqz v0, :cond_15
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->enterHiddenSelectionMode()V
 
-    :cond_16
+    :cond_15
     const-string/jumbo v0, "Gallery_Performance"
 
     const-string/jumbo v1, "AlbumViewState onResume End"
@@ -8592,7 +8583,7 @@
 
     return-void
 
-    :cond_17
+    :cond_16
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mDataProxy:Lcom/sec/android/gallery3d/data/DataManager;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mCurrentTopSetPath:Ljava/lang/String;
@@ -8603,14 +8594,14 @@
 
     goto/16 :goto_0
 
-    :cond_18
+    :cond_17
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mUpdatePath:Z
 
     goto/16 :goto_1
 
-    :cond_19
+    :cond_18
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
@@ -8623,7 +8614,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_9
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -8643,7 +8634,7 @@
 
     goto/16 :goto_2
 
-    :cond_1a
+    :cond_19
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mNaviSpinner:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
     const/4 v1, 0x0
@@ -8652,14 +8643,14 @@
 
     goto/16 :goto_3
 
-    :cond_1b
+    :cond_1a
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mNaviSpinner:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_b
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsHiddenAlbum:Z
 
-    if-eqz v0, :cond_1c
+    if-eqz v0, :cond_1b
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mNaviSpinner:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
@@ -8681,7 +8672,7 @@
 
     goto/16 :goto_4
 
-    :cond_1c
+    :cond_1b
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mNaviSpinner:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
     const/4 v1, 0x0
@@ -8690,10 +8681,10 @@
 
     goto/16 :goto_4
 
-    :cond_1d
+    :cond_1c
     iget v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mOperationId:I
 
-    if-nez v0, :cond_d
+    if-nez v0, :cond_c
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -8709,14 +8700,14 @@
 
     goto/16 :goto_5
 
-    :cond_1e
+    :cond_1d
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     invoke-virtual {v0}, Lcom/sec/android/gallery3d/ui/SelectionManager;->inSelectionMode()Z
 
     move-result v0
 
-    if-nez v0, :cond_22
+    if-nez v0, :cond_21
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
@@ -8730,7 +8721,7 @@
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsFromNoItem:Z
 
-    if-eqz v0, :cond_1f
+    if-eqz v0, :cond_1e
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
@@ -8744,14 +8735,14 @@
 
     goto/16 :goto_6
 
-    :cond_1f
+    :cond_1e
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->getResumeStateThroughActivityLifeCycle()Z
 
     move-result v0
 
-    if-eqz v0, :cond_20
+    if-eqz v0, :cond_1f
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
@@ -8761,7 +8752,7 @@
 
     instance-of v0, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForNormal;
 
-    if-eqz v0, :cond_20
+    if-eqz v0, :cond_1f
 
     const-string/jumbo v0, "AlbumViewState"
 
@@ -8771,10 +8762,10 @@
 
     goto/16 :goto_6
 
-    :cond_20
+    :cond_1f
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsHiddenAlbum:Z
 
-    if-eqz v0, :cond_21
+    if-eqz v0, :cond_20
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
@@ -8794,7 +8785,7 @@
 
     goto/16 :goto_6
 
-    :cond_21
+    :cond_20
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     const/4 v1, 0x1
@@ -8819,14 +8810,14 @@
 
     goto/16 :goto_6
 
-    :cond_22
+    :cond_21
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     invoke-virtual {v0}, Lcom/sec/android/gallery3d/ui/SelectionManager;->inSelectionMode()Z
 
     move-result v0
 
-    if-eqz v0, :cond_e
+    if-eqz v0, :cond_d
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
@@ -8834,7 +8825,7 @@
 
     const/4 v1, 0x7
 
-    if-ne v0, v1, :cond_23
+    if-ne v0, v1, :cond_22
 
     const/4 v0, 0x1
 
@@ -8847,7 +8838,7 @@
 
     const/16 v1, 0x8
 
-    if-ne v0, v1, :cond_24
+    if-ne v0, v1, :cond_23
 
     const/4 v0, 0x1
 
@@ -8860,7 +8851,7 @@
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsHiddenAlbum:Z
 
-    if-eqz v0, :cond_25
+    if-eqz v0, :cond_24
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
@@ -8874,17 +8865,17 @@
 
     goto/16 :goto_6
 
-    :cond_23
+    :cond_22
     const/4 v0, 0x0
 
     goto :goto_a
 
-    :cond_24
+    :cond_23
     const/4 v0, 0x0
 
     goto :goto_b
 
-    :cond_25
+    :cond_24
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     new-instance v1, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForEdit;
@@ -8897,19 +8888,19 @@
 
     goto/16 :goto_6
 
-    :cond_26
+    :cond_25
     const/4 v0, 0x0
 
     goto/16 :goto_7
 
-    :cond_27
+    :cond_26
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mAlbumEventHandle:Lcom/sec/samsung/gallery/view/albumview/AlbumViewEventHandle;
 
     invoke-virtual {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewEventHandle;->initializeView()V
 
     goto/16 :goto_8
 
-    :cond_28
+    :cond_27
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     invoke-virtual {v0}, Lcom/sec/android/gallery3d/glcore/GlRootView;->getBgColor()[F

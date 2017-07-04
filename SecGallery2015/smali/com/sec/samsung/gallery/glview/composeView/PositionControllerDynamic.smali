@@ -3890,7 +3890,7 @@
 
     iget-object v11, v0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerDynamic;->mResource:Landroid/content/res/Resources;
 
-    const v12, 0x7f0b07f7
+    const v12, 0x7f0b07f8
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

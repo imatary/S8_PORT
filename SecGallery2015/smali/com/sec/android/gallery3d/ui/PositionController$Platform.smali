@@ -122,7 +122,6 @@
     goto :goto_0
 
     :cond_1
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->ANIM_TIME:[I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2100()[I
 
     move-result-object v0
@@ -137,7 +136,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mFilmScroller:Lcom/sec/android/gallery3d/common/Scroller;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2200(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/common/Scroller;
 
     move-result-object v1
@@ -146,7 +144,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mFilmScroller:Lcom/sec/android/gallery3d/common/Scroller;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2200(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/common/Scroller;
 
     move-result-object v1
@@ -171,7 +168,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mHasNext:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2300(Lcom/sec/android/gallery3d/ui/PositionController;)Z
 
     move-result v1
@@ -188,7 +184,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mFilmScroller:Lcom/sec/android/gallery3d/common/Scroller;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2200(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/common/Scroller;
 
     move-result-object v1
@@ -204,7 +199,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mFilmScroller:Lcom/sec/android/gallery3d/common/Scroller;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2200(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/common/Scroller;
 
     move-result-object v1
@@ -224,7 +218,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mHasPrev:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2400(Lcom/sec/android/gallery3d/ui/PositionController;)Z
 
     move-result v1
@@ -247,7 +240,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mPageScroller:Lcom/sec/android/gallery3d/ui/FlingScroller;
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2500(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/ui/FlingScroller;
 
     move-result-object v5
@@ -256,7 +248,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mBoxes:Lcom/sec/android/gallery3d/util/RangeArray;
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1000(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/util/RangeArray;
 
     move-result-object v5
@@ -271,14 +262,12 @@
 
     iget v6, v0, Lcom/sec/android/gallery3d/ui/PositionController$Box;->mCurrentScale:F
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PositionController;->calculateStableBound(F)V
     invoke-static {v5, v6}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2600(Lcom/sec/android/gallery3d/ui/PositionController;F)V
 
     iget v1, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->mCurrentX:I
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mPageScroller:Lcom/sec/android/gallery3d/ui/FlingScroller;
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2500(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/ui/FlingScroller;
 
     move-result-object v5
@@ -291,7 +280,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mBoundLeft:I
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1500(Lcom/sec/android/gallery3d/ui/PositionController;)I
 
     move-result v5
@@ -302,7 +290,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mBoundLeft:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1500(Lcom/sec/android/gallery3d/ui/PositionController;)I
 
     move-result v6
@@ -311,7 +298,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mPageScroller:Lcom/sec/android/gallery3d/ui/FlingScroller;
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2500(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/ui/FlingScroller;
 
     move-result-object v5
@@ -330,7 +316,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mListener:Lcom/sec/android/gallery3d/ui/PositionController$Listener;
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/PositionController;->access$800(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/ui/PositionController$Listener;
 
     move-result-object v5
@@ -353,7 +338,6 @@
     :cond_1
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mBoundRight:I
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1600(Lcom/sec/android/gallery3d/ui/PositionController;)I
 
     move-result v5
@@ -364,7 +348,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mBoundRight:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1600(Lcom/sec/android/gallery3d/ui/PositionController;)I
 
     move-result v6
@@ -373,7 +356,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mPageScroller:Lcom/sec/android/gallery3d/ui/FlingScroller;
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2500(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/ui/FlingScroller;
 
     move-result-object v5
@@ -390,7 +372,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mListener:Lcom/sec/android/gallery3d/ui/PositionController$Listener;
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/PositionController;->access$800(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/ui/PositionController$Listener;
 
     move-result-object v5
@@ -584,7 +565,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mListener:Lcom/sec/android/gallery3d/ui/PositionController$Listener;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/PositionController;->access$800(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/ui/PositionController$Listener;
 
     move-result-object v8
@@ -598,7 +578,6 @@
     :cond_2
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mInScale:Z
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/PositionController;->access$900(Lcom/sec/android/gallery3d/ui/PositionController;)Z
 
     move-result v8
@@ -607,7 +586,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mBoxes:Lcom/sec/android/gallery3d/util/RangeArray;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1000(Lcom/sec/android/gallery3d/ui/PositionController;)Lcom/sec/android/gallery3d/util/RangeArray;
 
     move-result-object v8
@@ -620,7 +598,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mExtraScalingRange:Z
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1100(Lcom/sec/android/gallery3d/ui/PositionController;)Z
 
     move-result v8
@@ -636,7 +613,6 @@
     :goto_1
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mExtraScalingRange:Z
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1100(Lcom/sec/android/gallery3d/ui/PositionController;)Z
 
     move-result v8
@@ -662,12 +638,10 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PositionController;->calculateStableBound(FI)V
     invoke-static {v8, v1, v7}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1200(Lcom/sec/android/gallery3d/ui/PositionController;FI)V
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PositionController;->viewWiderThanScaledImage(F)Z
     invoke-static {v8, v1}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1300(Lcom/sec/android/gallery3d/ui/PositionController;F)Z
 
     move-result v8
@@ -680,7 +654,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mFocusX:F
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1400(Lcom/sec/android/gallery3d/ui/PositionController;)F
 
     move-result v8
@@ -698,14 +671,12 @@
     :cond_3
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mBoundLeft:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1500(Lcom/sec/android/gallery3d/ui/PositionController;)I
 
     move-result v8
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mBoundRight:I
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1600(Lcom/sec/android/gallery3d/ui/PositionController;)I
 
     move-result v9
@@ -747,7 +718,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mConstrained:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1700(Lcom/sec/android/gallery3d/ui/PositionController;)Z
 
     move-result v0
@@ -756,7 +726,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mConstrainedFrame:Landroid/graphics/Rect;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1800(Lcom/sec/android/gallery3d/ui/PositionController;)Landroid/graphics/Rect;
 
     move-result-object v0
@@ -769,7 +738,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mConstrainedFrame:Landroid/graphics/Rect;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1800(Lcom/sec/android/gallery3d/ui/PositionController;)Landroid/graphics/Rect;
 
     move-result-object v0
@@ -780,7 +748,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mViewW:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1900(Lcom/sec/android/gallery3d/ui/PositionController;)I
 
     move-result v1
@@ -793,7 +760,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mConstrainedFrame:Landroid/graphics/Rect;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PositionController;->access$1800(Lcom/sec/android/gallery3d/ui/PositionController;)Landroid/graphics/Rect;
 
     move-result-object v0
@@ -804,7 +770,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->this$0:Lcom/sec/android/gallery3d/ui/PositionController;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mViewH:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2000(Lcom/sec/android/gallery3d/ui/PositionController;)I
 
     move-result v1

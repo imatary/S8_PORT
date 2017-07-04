@@ -183,7 +183,6 @@
 
     move-result v2
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->itemHeight:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;)I
 
     move-result v1
@@ -219,7 +218,6 @@
 
     invoke-virtual {v0, v9, v10, v11, v12}, Landroid/view/View;->layout(IIII)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->horizontalSpacing:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->access$300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;)I
 
     move-result v11
@@ -373,12 +371,10 @@
 
     move-result v2
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->itemHeight:I
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;)I
 
     move-result v13
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->verticalSpacing:I
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;)I
 
     move-result v14
@@ -410,7 +406,6 @@
     move v5, v4
 
     :goto_2
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->horizontalSpacing:I
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->access$300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;)I
 
     move-result v13
@@ -503,7 +498,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout;->mLayoutParam:Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->itemHeight:I
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;->access$102(Lcom/sec/samsung/gallery/view/detailview/moreinfo/ExpandableLayout$LayoutParams;I)I
 
     return-void

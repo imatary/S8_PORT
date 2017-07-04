@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->initBeamHelper()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$000(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)V
 
     return-void

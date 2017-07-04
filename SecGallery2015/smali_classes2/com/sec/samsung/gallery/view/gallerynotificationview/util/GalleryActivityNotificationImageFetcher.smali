@@ -44,7 +44,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/GalleryActivityNotificationImageFetcher;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b04de
+    const v1, 0x7f0b04df
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -152,7 +152,6 @@
 
     if-eqz v1, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/GalleryActivityNotificationImageFetcher$BitmapWorkerTask;->mViewModelReference:Ljava/lang/ref/WeakReference;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/GalleryActivityNotificationImageFetcher$BitmapWorkerTask;->access$000(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/GalleryActivityNotificationImageFetcher$BitmapWorkerTask;)Ljava/lang/ref/WeakReference;
 
     move-result-object v0

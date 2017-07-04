@@ -41,7 +41,6 @@
 
     const/4 v2, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->getString(Z)Ljava/lang/String;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;Z)Ljava/lang/String;
 
     move-result-object v0
@@ -52,7 +51,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -97,7 +95,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v4
@@ -106,7 +103,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v4
@@ -118,7 +114,6 @@
 
     const/4 v5, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->mOnProgressListener:Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$OnChannelDownloadProgressListener;
     invoke-static {v4, v5}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$OnChannelDownloadProgressListener;)Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$OnChannelDownloadProgressListener;
 
     new-instance v1, Lcom/sec/samsung/gallery/lib/factory/MediaScannerFactory;
@@ -127,7 +122,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;)Landroid/content/Context;
 
     move-result-object v4
@@ -146,7 +140,6 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->EXTERNAL_SD_DIRECTORY:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$500()Ljava/lang/String;
 
     move-result-object v5
@@ -181,7 +174,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->mIsNeedToShare:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$600(Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;)Z
 
     move-result v4
@@ -190,7 +182,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;)Landroid/content/Context;
 
     move-result-object v4
@@ -214,7 +205,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;)Landroid/content/Context;
 
     move-result-object v4
@@ -229,7 +219,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v0

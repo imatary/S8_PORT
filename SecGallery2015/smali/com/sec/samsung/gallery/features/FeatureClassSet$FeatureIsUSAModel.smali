@@ -28,7 +28,6 @@
 .method public isEnabled(Landroid/content/Context;)Z
     .locals 2
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mCountryCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$200()Ljava/lang/String;
 
     move-result-object v0

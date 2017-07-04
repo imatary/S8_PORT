@@ -49,7 +49,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mIsShowAnimationState:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1002(Lcom/sec/android/gallery3d/service/QuickViewService;Z)Z
 
     return-void
@@ -70,7 +69,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mIsShowAnimationState:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1002(Lcom/sec/android/gallery3d/service/QuickViewService;Z)Z
 
     return-void
@@ -97,7 +95,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mIsShowAnimationState:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1002(Lcom/sec/android/gallery3d/service/QuickViewService;Z)Z
 
     return-void

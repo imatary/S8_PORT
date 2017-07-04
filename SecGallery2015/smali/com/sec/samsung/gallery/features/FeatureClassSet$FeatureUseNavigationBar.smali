@@ -26,70 +26,41 @@
 
 # virtual methods
 .method isEnabled(Landroid/content/Context;)Z
-    .locals 2
+    .locals 5
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
-    invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v0
+    move-result-object v1
 
-    const-string/jumbo v1, "gv"
+    const-string/jumbo v2, "config_showNavigationBar"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    const-string/jumbo v3, "bool"
 
-    move-result v0
+    const-string/jumbo v4, "android"
 
-    if-nez v0, :cond_0
-
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
-    invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "dream"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2, v3, v4}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-lez v0, :cond_0
 
-    sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->IsDreamJpn:Lcom/sec/samsung/gallery/features/FeatureNames;
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    invoke-static {v0}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+    move-result-object v1
 
-    move-result v0
+    invoke-virtual {v1, v0}, Landroid/content/res/Resources;->getBoolean(I)Z
 
-    if-nez v0, :cond_0
+    move-result v1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
-    invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
+    if-eqz v1, :cond_0
 
-    move-result-object v0
-
-    const-string/jumbo v1, "cruiser"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    # invokes: Lcom/sec/samsung/gallery/features/FeatureClassSet;->dreamUXIn3thCategoryWithPhoneFactor()Z
-    invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$500()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    :cond_0
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
     :goto_0
-    return v0
+    return v1
 
-    :cond_1
-    const/4 v0, 0x0
+    :cond_0
+    const/4 v1, 0x0
 
     goto :goto_0
 .end method

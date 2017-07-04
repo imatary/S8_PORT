@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->releaseInverDragAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)V
 
     return-void
@@ -58,7 +57,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mIsInverseDragAnimationRunning:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$202(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;Z)Z
 
     return-void

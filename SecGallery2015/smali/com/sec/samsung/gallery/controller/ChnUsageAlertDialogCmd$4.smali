@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$4;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->justSelectedKeyOK:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Z
 
     move-result v0
@@ -51,7 +50,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->justSelectedKeyOK:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$202(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;Z)Z
 
     return-void

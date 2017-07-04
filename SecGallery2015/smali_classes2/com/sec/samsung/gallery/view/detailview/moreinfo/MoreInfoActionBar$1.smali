@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -56,11 +55,10 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -77,7 +75,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v2
@@ -113,7 +110,6 @@
     :goto_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -122,7 +118,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v2
@@ -141,7 +136,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->IS_NOS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->access$200()Z
 
     move-result v0
@@ -155,21 +149,38 @@
     invoke-virtual {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->setTitleTextColor(Z)V
 
     :cond_0
+    sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->UseActionBarSubTitle:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v0}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;
+
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;)Landroid/app/ActionBar;
+
+    move-result-object v0
+
+    const-string/jumbo v1, ""
+
+    invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setSubtitle(Ljava/lang/CharSequence;)V
+
+    :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;
 
     invoke-virtual {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->initDisplayOptions()V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->setActionbarUpButton()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->access$300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;)V
 
     return-void
 
-    :cond_1
+    :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -186,7 +197,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBar;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v2

@@ -61,7 +61,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$SACallback;->this$0:Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->access$400(Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;)Landroid/content/Context;
 
     move-result-object v4
@@ -154,7 +153,6 @@
     :goto_0
     iget-object v4, p0, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$SACallback;->this$0:Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->onDestroy()V
     invoke-static {v4}, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->access$600(Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;)V
 
     :goto_1
@@ -235,12 +233,10 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$SACallback;->this$0:Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;
 
-    # operator++ for: Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->requestCount:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->access$508(Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;)I
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$SACallback;->this$0:Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->requestCount:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->access$500(Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;)I
 
     move-result v4
@@ -257,7 +253,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$SACallback;->this$0:Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->requestAccessToken()V
     invoke-static {v4}, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->access$300(Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;)V
 
     goto :goto_1

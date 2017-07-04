@@ -39,8 +39,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$28;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mContainer:Landroid/view/ViewGroup;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$17500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/ViewGroup;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$17900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/ViewGroup;
 
     move-result-object v0
 

@@ -53,7 +53,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->access$500(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -64,7 +63,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit$2;->val$numberOfSelectedItems:I
 
-    # setter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->mQuantitySelectedAlbum:I
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->access$102(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;I)I
 
     sget-object v1, Lcom/sec/samsung/gallery/features/FeatureNames;->IsTablet:Lcom/sec/samsung/gallery/features/FeatureNames;
@@ -77,7 +75,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->access$600(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -119,7 +116,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit$2;->val$numberOfSelectedItems:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->access$800(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;ILjava/lang/String;)V
 
     return-void
@@ -127,7 +123,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->access$700(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

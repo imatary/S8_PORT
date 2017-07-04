@@ -990,7 +990,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v2, 0x7f0a0845
+    const v2, 0x7f0a0853
 
     new-array v3, v3, [Ljava/lang/Object;
 

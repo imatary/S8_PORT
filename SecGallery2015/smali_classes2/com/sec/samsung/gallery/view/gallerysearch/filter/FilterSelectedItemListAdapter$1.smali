@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
 
     move-result-object v0

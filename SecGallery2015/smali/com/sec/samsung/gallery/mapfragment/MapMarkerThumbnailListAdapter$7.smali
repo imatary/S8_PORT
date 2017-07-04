@@ -74,7 +74,6 @@
 
     move-result-wide v28
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverEnterTime:J
     invoke-static/range {v27 .. v29}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$702(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;J)J
 
     goto :goto_0
@@ -97,7 +96,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mIsTouchImageView:Z
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$600(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Z
 
     move-result v27
@@ -114,7 +112,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverEnterTime:J
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$700(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)J
 
     move-result-wide v30
@@ -133,7 +130,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v27
@@ -148,7 +144,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v27
@@ -163,7 +158,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v27
@@ -188,7 +182,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v27
@@ -203,7 +196,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v27
@@ -246,7 +238,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mIsHoveringOnHoverView:Z
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$900(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Z
 
     move-result v27
@@ -261,7 +252,6 @@
 
     const/16 v28, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mIsHoveringOnImageView:Z
     invoke-static/range {v27 .. v28}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1002(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Z)Z
 
     const/16 v27, 0x0
@@ -276,7 +266,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v27
@@ -304,7 +293,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v27
@@ -317,7 +305,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mMapViewLayout:Landroid/view/View;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1200(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/view/View;
 
     move-result-object v27
@@ -334,7 +321,6 @@
 
     move-object/from16 v28, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v28 .. v28}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v28
@@ -349,7 +335,6 @@
 
     const/16 v28, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v28}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1102(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     :cond_9
@@ -367,14 +352,12 @@
 
     move-object/from16 v29, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static/range {v29 .. v29}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v29
 
     invoke-direct/range {v28 .. v29}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v28}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1102(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     move-object/from16 v0, p0
@@ -440,7 +423,6 @@
 
     move-result-object v28
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->getFullBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     invoke-static/range {v27 .. v28}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1300(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v26
@@ -458,7 +440,6 @@
 
     move-object/from16 v28, v0
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->getPlayIconDrawable(Lcom/sec/android/gallery3d/data/MediaItem;)Landroid/graphics/drawable/Drawable;
     invoke-static/range {v27 .. v28}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1400(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Lcom/sec/android/gallery3d/data/MediaItem;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v10
@@ -507,7 +488,6 @@
 
     move-object/from16 v2, v25
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->drawBurstPlayIconForHover(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1500(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     move-result-object v12
@@ -522,7 +502,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v27
@@ -573,7 +552,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v27
@@ -588,7 +566,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v27
@@ -625,7 +602,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mMapViewLayout:Landroid/view/View;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1200(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/view/View;
 
     move-result-object v27
@@ -642,7 +618,6 @@
 
     move-object/from16 v28, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v28 .. v28}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v28
@@ -661,7 +636,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v27
@@ -682,7 +656,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v27
@@ -787,7 +760,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v27
@@ -802,7 +774,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v27
@@ -823,7 +794,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v27
@@ -884,7 +854,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v27
@@ -909,7 +878,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v27
@@ -1036,7 +1004,6 @@
 
     move-object/from16 v2, v25
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->drawVideoPlayIconForHover(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1600(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     move-result-object v12
@@ -1060,7 +1027,6 @@
 
     move-result-object v28
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->getFullBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     invoke-static/range {v27 .. v28}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1300(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v12
@@ -1198,7 +1164,6 @@
 
     const/16 v28, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mIsHoveringOnImageView:Z
     invoke-static/range {v27 .. v28}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1002(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Z)Z
 
     move-object/from16 v0, p0
@@ -1207,7 +1172,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mIsHoveringOnHoverView:Z
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$900(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Z
 
     move-result v27
@@ -1221,7 +1185,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v27
@@ -1249,7 +1212,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v27
@@ -1262,7 +1224,6 @@
 
     move-object/from16 v27, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mMapViewLayout:Landroid/view/View;
     invoke-static/range {v27 .. v27}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1200(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/view/View;
 
     move-result-object v27
@@ -1279,7 +1240,6 @@
 
     move-object/from16 v28, v0
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v28 .. v28}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/ImageView;
 
     move-result-object v28
@@ -1294,7 +1254,6 @@
 
     const/16 v28, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mHoverCustomView:Landroid/widget/ImageView;
     invoke-static/range {v27 .. v28}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1102(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     goto/16 :goto_0

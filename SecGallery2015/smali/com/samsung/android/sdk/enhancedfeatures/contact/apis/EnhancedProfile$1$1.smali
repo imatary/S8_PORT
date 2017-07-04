@@ -39,7 +39,6 @@
 
     const-string/jumbo v0, "onReceive Contact Push syncLocalContacts Errors"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -54,7 +53,6 @@
 
     const-string/jumbo v0, "onReceive Contact Push syncLocalContacts success"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v1

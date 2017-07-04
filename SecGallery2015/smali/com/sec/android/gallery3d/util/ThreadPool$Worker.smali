@@ -249,7 +249,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/ThreadPool$Worker;->this$0:Lcom/sec/android/gallery3d/util/ThreadPool;
 
-    # getter for: Lcom/sec/android/gallery3d/util/ThreadPool;->mCpuCounter:Lcom/sec/android/gallery3d/util/ThreadPool$ResourceCounter;
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/ThreadPool;->access$200(Lcom/sec/android/gallery3d/util/ThreadPool;)Lcom/sec/android/gallery3d/util/ThreadPool$ResourceCounter;
 
     move-result-object v0
@@ -264,7 +263,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/ThreadPool$Worker;->this$0:Lcom/sec/android/gallery3d/util/ThreadPool;
 
-    # getter for: Lcom/sec/android/gallery3d/util/ThreadPool;->mNetworkCounter:Lcom/sec/android/gallery3d/util/ThreadPool$ResourceCounter;
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/ThreadPool;->access$300(Lcom/sec/android/gallery3d/util/ThreadPool;)Lcom/sec/android/gallery3d/util/ThreadPool$ResourceCounter;
 
     move-result-object v0

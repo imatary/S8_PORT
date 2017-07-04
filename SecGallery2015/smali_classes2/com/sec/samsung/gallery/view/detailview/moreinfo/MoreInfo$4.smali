@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$4;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mActionBarManager:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;
 
     move-result-object v0
@@ -52,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$4;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->startDestroyAnimation()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)V
 
     return-void

@@ -108,7 +108,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView$ZoomInOutImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->mIsEnable:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->access$100(Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;)Z
 
     move-result v0
@@ -186,7 +185,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView$ZoomInOutImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->mIsZoomIn:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->access$200(Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;)Z
 
     move-result v0
@@ -203,7 +201,7 @@
     return-object v0
 
     :cond_0
-    const v0, 0x7f0a08bf
+    const v0, 0x7f0a08cd
 
     goto :goto_0
 .end method
@@ -213,7 +211,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView$ZoomInOutImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->mIsEnable:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->access$100(Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;)Z
 
     move-result v0
@@ -232,14 +229,13 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView$ZoomInOutImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->mIsZoomIn:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->access$200(Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f020388
+    const v0, 0x7f02038a
 
     :goto_0
     invoke-direct {v1, v2, v0}, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;-><init>(Landroid/content/Context;I)V
@@ -253,14 +249,13 @@
     return-object v0
 
     :cond_1
-    const v0, 0x7f02038a
+    const v0, 0x7f02038c
 
     goto :goto_0
 
     :cond_2
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView$ZoomInOutImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->mDisabledIconTexture:Lcom/sec/android/gallery3d/glrenderer/UploadedTexture;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->access$300(Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;)Lcom/sec/android/gallery3d/glrenderer/UploadedTexture;
 
     move-result-object v0
@@ -277,25 +272,22 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView$ZoomInOutImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->mIsZoomIn:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->access$200(Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    const v0, 0x7f020389
+    const v0, 0x7f02038b
 
     :goto_2
     invoke-direct {v2, v3, v0}, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;-><init>(Landroid/content/Context;I)V
 
-    # setter for: Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->mDisabledIconTexture:Lcom/sec/android/gallery3d/glrenderer/UploadedTexture;
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->access$302(Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;Lcom/sec/android/gallery3d/glrenderer/UploadedTexture;)Lcom/sec/android/gallery3d/glrenderer/UploadedTexture;
 
     :cond_3
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView$ZoomInOutImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->mDisabledIconTexture:Lcom/sec/android/gallery3d/glrenderer/UploadedTexture;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->access$300(Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;)Lcom/sec/android/gallery3d/glrenderer/UploadedTexture;
 
     move-result-object v0
@@ -303,7 +295,7 @@
     goto :goto_1
 
     :cond_4
-    const v0, 0x7f02038b
+    const v0, 0x7f02038d
 
     goto :goto_2
 .end method
@@ -315,7 +307,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView$ZoomInOutImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->mIsCommentsViewVisible:Z
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->access$400(Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;)Z
 
     move-result v4
@@ -330,7 +321,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b054d
+    const v5, 0x7f0b054e
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -361,7 +352,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0972
+    const v4, 0x7f0b0973
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -375,7 +366,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0971
+    const v4, 0x7f0b0972
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -391,7 +382,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b0557
+    const v5, 0x7f0b0558
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -458,7 +449,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView$ZoomInOutImageIcon;->this$0:Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->mIsZoomIn:Z
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;->access$200(Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;)Z
 
     move-result v3

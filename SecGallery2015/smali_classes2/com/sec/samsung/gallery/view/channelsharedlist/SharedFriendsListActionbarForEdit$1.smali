@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->access$000(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -52,7 +51,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->access$100(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -70,7 +68,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->mMenu:Landroid/view/Menu;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->access$200(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;)Landroid/view/Menu;
 
     move-result-object v1
@@ -79,7 +76,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->access$300(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -91,7 +87,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit$1;->val$numberOfItemsSelected:I
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->mQuantitySelectedAlbum:I
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->access$402(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;I)I
 
     iget v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit$1;->val$numberOfItemsSelected:I
@@ -100,7 +95,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->access$500(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -120,7 +114,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;->access$600(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForEdit;ILjava/lang/String;)V
 
     goto :goto_0

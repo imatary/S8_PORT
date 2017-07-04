@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$5;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mIsDestroyed:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$900(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Z
 
     move-result v0
@@ -54,7 +53,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mIsDestroyed:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$902(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$5$1;->this$1:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$5;
@@ -63,7 +61,6 @@
 
     const v1, 0x7f0a0497
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->showToast(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$600(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;I)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$5$1;->this$1:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$5;

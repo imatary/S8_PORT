@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$33;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->isAnimationVisible:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$6800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Z
 
     move-result v0
@@ -50,7 +49,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->isAnimationVisible:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$6802(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$33;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
@@ -95,7 +93,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->isAnimationVisible:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$6802(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$33;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;

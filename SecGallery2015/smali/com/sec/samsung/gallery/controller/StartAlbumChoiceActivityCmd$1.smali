@@ -51,7 +51,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->operationId:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->access$000(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;)I
 
     move-result v3
@@ -62,7 +61,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->mTopSetPath:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;)Ljava/lang/String;
 
     move-result-object v3
@@ -77,7 +75,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->access$200(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;)Landroid/content/Context;
 
     move-result-object v3
@@ -90,7 +87,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->access$200(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;)Landroid/content/Context;
 
     move-result-object v2

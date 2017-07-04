@@ -72,7 +72,6 @@
 
     iget-object v1, p0, Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup$1;->this$1:Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup;
 
-    # getter for: Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup;->mAdapter:Landroid/widget/ListAdapter;
     invoke-static {v1}, Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup;->access$200(Landroid/support/v7/widget/AppCompatSpinner$DropdownPopup;)Landroid/widget/ListAdapter;
 
     move-result-object v1

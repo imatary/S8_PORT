@@ -165,7 +165,7 @@
     :cond_0
     iget v1, p0, Lcom/sec/samsung/gallery/drawer/DrawerItemSLink;->mNameStringId:I
 
-    const v2, 0x7f0a087e
+    const v2, 0x7f0a088c
 
     if-ne v1, v2, :cond_1
 

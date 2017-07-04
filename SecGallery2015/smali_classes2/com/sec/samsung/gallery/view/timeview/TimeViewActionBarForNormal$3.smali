@@ -44,7 +44,6 @@
     :try_start_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal$3;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;->access$1400(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v2
@@ -55,7 +54,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal$3;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;->access$1500(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v2
@@ -72,7 +70,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal$3;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;->access$1600(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v2

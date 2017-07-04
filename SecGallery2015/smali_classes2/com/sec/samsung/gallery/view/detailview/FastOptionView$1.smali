@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mEditMenuButton:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$000(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -48,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mFastEditContainerViewArrow:Landroid/widget/LinearLayout;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$100(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Landroid/widget/LinearLayout;
 
     move-result-object v1
@@ -65,7 +63,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mEditMenuButton:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$000(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -80,7 +77,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->setArrowLocation(Landroid/widget/TextView;)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$200(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;Landroid/widget/TextView;)V
 
     :cond_0

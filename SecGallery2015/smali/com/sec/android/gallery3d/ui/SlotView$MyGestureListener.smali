@@ -59,7 +59,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mListener:Lcom/sec/android/gallery3d/ui/SlotView$Listener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1200(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Listener;
 
     move-result-object v0
@@ -114,7 +113,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mListener:Lcom/sec/android/gallery3d/ui/SlotView$Listener;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1200(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Listener;
 
     move-result-object v6
@@ -131,7 +129,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v7}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1000(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v7
@@ -160,7 +157,6 @@
     :cond_0
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mLayout:Lcom/sec/android/gallery3d/ui/SlotView$Layout;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/SlotView;->access$900(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Layout;
 
     move-result-object v6
@@ -180,7 +176,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mScroller:Lcom/sec/android/gallery3d/ui/ScrollerHelper;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1300(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/ScrollerHelper;
 
     move-result-object v6
@@ -193,7 +188,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mUIListener:Lcom/sec/android/gallery3d/ui/UserInteractionListener;
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1400(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/UserInteractionListener;
 
     move-result-object v5
@@ -202,7 +196,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mUIListener:Lcom/sec/android/gallery3d/ui/UserInteractionListener;
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1400(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/UserInteractionListener;
 
     move-result-object v5
@@ -224,7 +217,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mDownInScrolling:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1700(Lcom/sec/android/gallery3d/ui/SlotView;)Z
 
     move-result v1
@@ -242,7 +234,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mLayout:Lcom/sec/android/gallery3d/ui/SlotView$Layout;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/SlotView;->access$900(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Layout;
 
     move-result-object v1
@@ -265,7 +256,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mListener:Lcom/sec/android/gallery3d/ui/SlotView$Listener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1200(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Listener;
 
     move-result-object v1
@@ -300,7 +290,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mScroller:Lcom/sec/android/gallery3d/ui/ScrollerHelper;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1300(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/ScrollerHelper;
 
     move-result-object v2
@@ -313,7 +302,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mLayout:Lcom/sec/android/gallery3d/ui/SlotView$Layout;
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/SlotView;->access$900(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Layout;
 
     move-result-object v5
@@ -328,7 +316,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mOverScrollEffect:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1500(Lcom/sec/android/gallery3d/ui/SlotView;)I
 
     move-result v2
@@ -339,7 +326,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mPaper:Lcom/sec/android/gallery3d/ui/Paper;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1600(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/Paper;
 
     move-result-object v2
@@ -353,7 +339,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mListener:Lcom/sec/android/gallery3d/ui/SlotView$Listener;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1200(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Listener;
 
     move-result-object v2
@@ -407,7 +392,6 @@
     :try_start_1
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mLayout:Lcom/sec/android/gallery3d/ui/SlotView$Layout;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/SlotView;->access$900(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Layout;
 
     move-result-object v2
@@ -434,7 +418,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mListener:Lcom/sec/android/gallery3d/ui/SlotView$Listener;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1200(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Listener;
 
     move-result-object v2
@@ -470,7 +453,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mDownInScrolling:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1700(Lcom/sec/android/gallery3d/ui/SlotView;)Z
 
     move-result v1
@@ -484,7 +466,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mLayout:Lcom/sec/android/gallery3d/ui/SlotView$Layout;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/SlotView;->access$900(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Layout;
 
     move-result-object v1
@@ -507,7 +488,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/SlotView$MyGestureListener;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mListener:Lcom/sec/android/gallery3d/ui/SlotView$Listener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1200(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Listener;
 
     move-result-object v1

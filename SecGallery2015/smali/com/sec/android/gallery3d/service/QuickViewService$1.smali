@@ -61,7 +61,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickViewAttatched:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$000(Lcom/sec/android/gallery3d/service/QuickViewService;)Z
 
     move-result v2
@@ -70,14 +69,12 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mWindowManager:Landroid/view/WindowManager;
     invoke-static {v2}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$200(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/WindowManager;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v3}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/View;
 
     move-result-object v3
@@ -86,17 +83,14 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mImageView:Landroid/widget/ImageView;
     invoke-static {v2, v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$302(Lcom/sec/android/gallery3d/service/QuickViewService;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v2, v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$102(Lcom/sec/android/gallery3d/service/QuickViewService;Landroid/view/View;)Landroid/view/View;
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickViewAttatched:Z
     invoke-static {v2, v4}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$002(Lcom/sec/android/gallery3d/service/QuickViewService;Z)Z
 
     :cond_1
@@ -112,7 +106,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v2}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/View;
 
     move-result-object v2
@@ -129,13 +122,11 @@
 
     move-result-object v0
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v2, v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$102(Lcom/sec/android/gallery3d/service/QuickViewService;Landroid/view/View;)Landroid/view/View;
 
     :cond_2
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mImageView:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$300(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/widget/ImageView;
 
     move-result-object v0
@@ -146,7 +137,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/View;
 
     move-result-object v0
@@ -159,13 +149,11 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mImageView:Landroid/widget/ImageView;
     invoke-static {v2, v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$302(Lcom/sec/android/gallery3d/service/QuickViewService;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     :cond_3
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mBlurBitmap:Landroid/graphics/Bitmap;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$400(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -174,14 +162,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mImageView:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$300(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mBlurBitmap:Landroid/graphics/Bitmap;
     invoke-static {v2}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$400(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -195,7 +181,6 @@
 
     const/16 v3, 0x7d2
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->WINDOWMANAGER_LAYOUT_FLAG:I
     invoke-static {}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$600()I
 
     move-result v4
@@ -206,12 +191,10 @@
 
     invoke-direct/range {v0 .. v5}, Landroid/view/WindowManager$LayoutParams;-><init>(IIIII)V
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mParams:Landroid/view/WindowManager$LayoutParams;
     invoke-static {v7, v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$502(Lcom/sec/android/gallery3d/service/QuickViewService;Landroid/view/WindowManager$LayoutParams;)Landroid/view/WindowManager$LayoutParams;
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mParams:Landroid/view/WindowManager$LayoutParams;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$500(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v0
@@ -222,7 +205,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mParams:Landroid/view/WindowManager$LayoutParams;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$500(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v0
@@ -233,21 +215,18 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mWindowManager:Landroid/view/WindowManager;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$200(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/WindowManager;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/View;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mParams:Landroid/view/WindowManager$LayoutParams;
     invoke-static {v2}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$500(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v2
@@ -256,17 +235,14 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickViewAttatched:Z
     invoke-static {v0, v8}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$002(Lcom/sec/android/gallery3d/service/QuickViewService;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mNeedHideView:Z
     invoke-static {v0, v8}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$702(Lcom/sec/android/gallery3d/service/QuickViewService;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$800(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/os/Handler;
 
     move-result-object v0
@@ -292,7 +268,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mAnimationDuration:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$900(Lcom/sec/android/gallery3d/service/QuickViewService;)I
 
     move-result v2
@@ -309,7 +284,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mIsShowAnimationState:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1000(Lcom/sec/android/gallery3d/service/QuickViewService;)Z
 
     move-result v0
@@ -327,7 +301,6 @@
     :cond_5
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/View;
 
     move-result-object v0
@@ -338,7 +311,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/View;
 
     move-result-object v0
@@ -349,7 +321,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/View;
 
     move-result-object v1
@@ -358,12 +329,10 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mAnimator:Landroid/view/ViewPropertyAnimator;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1102(Lcom/sec/android/gallery3d/service/QuickViewService;Landroid/view/ViewPropertyAnimator;)Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mAnimator:Landroid/view/ViewPropertyAnimator;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
@@ -376,7 +345,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mAnimationDuration:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$900(Lcom/sec/android/gallery3d/service/QuickViewService;)I
 
     move-result v1
@@ -399,12 +367,10 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mNeedHideView:Z
     invoke-static {v0, v8}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$702(Lcom/sec/android/gallery3d/service/QuickViewService;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$800(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/os/Handler;
 
     move-result-object v0
@@ -430,7 +396,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mHideAnimationDuration:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1200(Lcom/sec/android/gallery3d/service/QuickViewService;)I
 
     move-result v2
@@ -447,7 +412,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mIsHideAnimationState:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1300(Lcom/sec/android/gallery3d/service/QuickViewService;)Z
 
     move-result v0
@@ -465,7 +429,6 @@
     :cond_6
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mNeedHideView:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$700(Lcom/sec/android/gallery3d/service/QuickViewService;)Z
 
     move-result v0
@@ -483,7 +446,6 @@
     :cond_7
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$800(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/os/Handler;
 
     move-result-object v0
@@ -492,7 +454,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/View;
 
     move-result-object v0
@@ -503,7 +464,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/View;
 
     move-result-object v0
@@ -514,7 +474,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/View;
 
     move-result-object v1
@@ -523,12 +482,10 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mAnimator:Landroid/view/ViewPropertyAnimator;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1102(Lcom/sec/android/gallery3d/service/QuickViewService;Landroid/view/ViewPropertyAnimator;)Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mAnimator:Landroid/view/ViewPropertyAnimator;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
@@ -541,7 +498,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mHideAnimationDuration:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1200(Lcom/sec/android/gallery3d/service/QuickViewService;)I
 
     move-result v1
@@ -573,7 +529,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mImageView:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$300(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/widget/ImageView;
 
     move-result-object v0
@@ -582,7 +537,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mBlurBitmap:Landroid/graphics/Bitmap;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$400(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -591,7 +545,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mBlurBitmap:Landroid/graphics/Bitmap;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$400(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -614,7 +567,6 @@
     :cond_9
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mNeedHideView:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$700(Lcom/sec/android/gallery3d/service/QuickViewService;)Z
 
     move-result v0
@@ -629,7 +581,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$800(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/os/Handler;
 
     move-result-object v0
@@ -645,14 +596,12 @@
     :cond_a
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mImageView:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$300(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mBlurBitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$400(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -664,7 +613,6 @@
     :pswitch_4
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mNeedHideView:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$700(Lcom/sec/android/gallery3d/service/QuickViewService;)Z
 
     move-result v0
@@ -681,12 +629,10 @@
 
     const/16 v1, 0xc8
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mAnimationDuration:I
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$902(Lcom/sec/android/gallery3d/service/QuickViewService;I)I
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$800(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/os/Handler;
 
     move-result-object v0
@@ -712,7 +658,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mIsHideAnimationState:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1300(Lcom/sec/android/gallery3d/service/QuickViewService;)Z
 
     move-result v2
@@ -729,7 +674,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mIsShowAnimationState:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$1000(Lcom/sec/android/gallery3d/service/QuickViewService;)Z
 
     move-result v2
@@ -746,7 +690,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickViewAttatched:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$000(Lcom/sec/android/gallery3d/service/QuickViewService;)Z
 
     move-result v2
@@ -766,7 +709,6 @@
     :pswitch_5
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickViewAttatched:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$000(Lcom/sec/android/gallery3d/service/QuickViewService;)Z
 
     move-result v0
@@ -779,7 +721,6 @@
 
     const/16 v3, 0x7d2
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->WINDOWMANAGER_LAYOUT_FLAG:I
     invoke-static {}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$600()I
 
     move-result v4
@@ -790,12 +731,10 @@
 
     invoke-direct/range {v0 .. v5}, Landroid/view/WindowManager$LayoutParams;-><init>(IIIII)V
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mParams:Landroid/view/WindowManager$LayoutParams;
     invoke-static {v7, v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$502(Lcom/sec/android/gallery3d/service/QuickViewService;Landroid/view/WindowManager$LayoutParams;)Landroid/view/WindowManager$LayoutParams;
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mParams:Landroid/view/WindowManager$LayoutParams;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$500(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v0
@@ -806,7 +745,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mParams:Landroid/view/WindowManager$LayoutParams;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$500(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v0
@@ -827,26 +765,22 @@
 
     check-cast v0, Landroid/view/WindowManager;
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mWindowManager:Landroid/view/WindowManager;
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$202(Lcom/sec/android/gallery3d/service/QuickViewService;Landroid/view/WindowManager;)Landroid/view/WindowManager;
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mWindowManager:Landroid/view/WindowManager;
     invoke-static {v0}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$200(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/WindowManager;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickView:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$100(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/View;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # getter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mParams:Landroid/view/WindowManager$LayoutParams;
     invoke-static {v2}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$500(Lcom/sec/android/gallery3d/service/QuickViewService;)Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v2
@@ -855,7 +789,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/service/QuickViewService$1;->this$0:Lcom/sec/android/gallery3d/service/QuickViewService;
 
-    # setter for: Lcom/sec/android/gallery3d/service/QuickViewService;->mQuickViewAttatched:Z
     invoke-static {v0, v8}, Lcom/sec/android/gallery3d/service/QuickViewService;->access$002(Lcom/sec/android/gallery3d/service/QuickViewService;Z)Z
 
     goto/16 :goto_0

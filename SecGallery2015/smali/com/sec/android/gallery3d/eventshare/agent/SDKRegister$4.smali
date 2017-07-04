@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$300(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Landroid/content/Context;
 
     move-result-object v0
@@ -60,7 +59,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->dismissProgressDialog()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$100(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)V
 
     iget-boolean v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$4;->val$isShowDialog:Z
@@ -69,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mServiceOnListener:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$serviceOnListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$400(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$serviceOnListener;
 
     move-result-object v0
@@ -87,7 +84,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->dismissProgressDialog()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$100(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)V
 
     iget-boolean v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$4;->val$isShowDialog:Z
@@ -96,7 +92,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$300(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Landroid/content/Context;
 
     move-result-object v0
@@ -107,7 +102,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mServiceOnListener:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$serviceOnListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$400(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$serviceOnListener;
 
     move-result-object v0
@@ -116,7 +110,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mServiceOnListener:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$serviceOnListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$400(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$serviceOnListener;
 
     move-result-object v0
@@ -126,7 +119,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$300(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Landroid/content/Context;
 
     move-result-object v0
@@ -137,7 +129,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;->access$300(Lcom/sec/android/gallery3d/eventshare/agent/SDKRegister;)Landroid/content/Context;
 
     move-result-object v0

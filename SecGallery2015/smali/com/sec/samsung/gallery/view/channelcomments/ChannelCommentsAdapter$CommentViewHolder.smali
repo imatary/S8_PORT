@@ -88,7 +88,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter$CommentViewHolder;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;->mCurrentTime:J
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;->access$000(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;)J
 
     move-result-wide v4
@@ -105,7 +104,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter$CommentViewHolder;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;->checkMenuType(Lcom/sec/samsung/gallery/view/channelcomments/Comment;)I
     invoke-static {v1, p1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;->access$100(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;Lcom/sec/samsung/gallery/view/channelcomments/Comment;)I
 
     move-result v0
@@ -201,7 +199,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter$CommentViewHolder;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;->checkMenuType(Lcom/sec/samsung/gallery/view/channelcomments/Comment;)I
     invoke-static {v1, p1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;->access$100(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;Lcom/sec/samsung/gallery/view/channelcomments/Comment;)I
 
     move-result v0
@@ -250,7 +247,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f0b0516
+    const v4, 0x7f0b0517
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -264,7 +261,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b051e
+    const v5, 0x7f0b051f
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

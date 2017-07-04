@@ -57,7 +57,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mModel:Lcom/sec/samsung/gallery/view/detailview/Model;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$100(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Lcom/sec/samsung/gallery/view/detailview/Model;
 
     move-result-object v5
@@ -76,7 +75,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mFilePath:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$200(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Ljava/lang/String;
 
     move-result-object v5
@@ -90,14 +88,12 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mIsPreviousAutoAdjustOn:Z
     invoke-static {v5, v2}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$302(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;Z)Z
 
     if-eqz v2, :cond_2
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->executeChangeCover()I
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$400(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -116,7 +112,6 @@
     :try_start_1
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mModel:Lcom/sec/samsung/gallery/view/detailview/Model;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$100(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Lcom/sec/samsung/gallery/view/detailview/Model;
 
     move-result-object v5
@@ -135,7 +130,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->setEnhancedImage(Landroid/graphics/Bitmap;)I
     invoke-static {v5, v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$500(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;Landroid/graphics/Bitmap;)I
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
@@ -208,7 +202,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$600(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Landroid/app/Activity;
 
     move-result-object v0
@@ -217,14 +210,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$600(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Landroid/app/Activity;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$800(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v1
@@ -248,7 +239,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mOnProgressListener:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$700(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
 
     move-result-object v0
@@ -257,7 +247,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mOnProgressListener:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$700(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
 
     move-result-object v0
@@ -279,7 +268,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$600(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Landroid/app/Activity;
 
     move-result-object v0
@@ -288,7 +276,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$600(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Landroid/app/Activity;
 
     move-result-object v0
@@ -310,7 +297,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mOnProgressListener:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$700(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
 
     move-result-object v0
@@ -319,14 +305,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mOnProgressListener:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$700(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mIsPreviousAutoAdjustOn:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$300(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Z
 
     move-result v1
@@ -360,7 +344,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$600(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Landroid/app/Activity;
 
     move-result-object v0
@@ -369,14 +352,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$600(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Landroid/app/Activity;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$800(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v1
@@ -400,7 +381,6 @@
     :cond_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mOnProgressListener:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$700(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
 
     move-result-object v0
@@ -409,7 +389,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$AutoAdjustTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->mOnProgressListener:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->access$700(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;)Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;
 
     move-result-object v0

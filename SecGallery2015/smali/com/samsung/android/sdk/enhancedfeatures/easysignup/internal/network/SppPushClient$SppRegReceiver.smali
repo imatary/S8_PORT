@@ -56,7 +56,6 @@
 
     move-result-object v6
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/network/SppPushClient;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/network/SppPushClient;->access$000()Ljava/lang/String;
 
     move-result-object v7
@@ -77,7 +76,6 @@
 
     move-result-object v5
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/network/SppPushClient;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/network/SppPushClient;->access$000()Ljava/lang/String;
 
     move-result-object v6
@@ -147,7 +145,6 @@
 
     move-result-object v6
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/network/SppPushClient;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/network/SppPushClient;->access$000()Ljava/lang/String;
 
     move-result-object v7
@@ -177,7 +174,6 @@
 
     move-result-object v6
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/network/SppPushClient;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/network/SppPushClient;->access$000()Ljava/lang/String;
 
     move-result-object v7
@@ -231,7 +227,6 @@
 
     move-result-object v6
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/network/SppPushClient;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/network/SppPushClient;->access$000()Ljava/lang/String;
 
     move-result-object v7

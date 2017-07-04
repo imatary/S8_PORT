@@ -57,7 +57,6 @@
 
     iget-object v11, p0, Lcom/sec/android/gallery3d/sconnect/SConnectManager$1;->this$0:Lcom/sec/android/gallery3d/sconnect/SConnectManager;
 
-    # getter for: Lcom/sec/android/gallery3d/sconnect/SConnectManager;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v11}, Lcom/sec/android/gallery3d/sconnect/SConnectManager;->access$000(Lcom/sec/android/gallery3d/sconnect/SConnectManager;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v11
@@ -82,7 +81,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/sconnect/SConnectManager$1;->this$0:Lcom/sec/android/gallery3d/sconnect/SConnectManager;
 
-    # getter for: Lcom/sec/android/gallery3d/sconnect/SConnectManager;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v9}, Lcom/sec/android/gallery3d/sconnect/SConnectManager;->access$000(Lcom/sec/android/gallery3d/sconnect/SConnectManager;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v9
@@ -126,12 +124,10 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/sconnect/SConnectManager$1;->this$0:Lcom/sec/android/gallery3d/sconnect/SConnectManager;
 
-    # getter for: Lcom/sec/android/gallery3d/sconnect/SConnectManager;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v10}, Lcom/sec/android/gallery3d/sconnect/SConnectManager;->access$000(Lcom/sec/android/gallery3d/sconnect/SConnectManager;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v10
 
-    # invokes: Lcom/sec/android/gallery3d/sconnect/SConnectManager;->startSConnect(Landroid/app/Activity;Ljava/util/ArrayList;)V
     invoke-static {v9, v10, v8}, Lcom/sec/android/gallery3d/sconnect/SConnectManager;->access$100(Lcom/sec/android/gallery3d/sconnect/SConnectManager;Landroid/app/Activity;Ljava/util/ArrayList;)V
 
     :goto_1
@@ -153,7 +149,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/sconnect/SConnectManager$1;->this$0:Lcom/sec/android/gallery3d/sconnect/SConnectManager;
 
-    # getter for: Lcom/sec/android/gallery3d/sconnect/SConnectManager;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v9}, Lcom/sec/android/gallery3d/sconnect/SConnectManager;->access$000(Lcom/sec/android/gallery3d/sconnect/SConnectManager;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v9
@@ -190,7 +185,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/sconnect/SConnectManager$1;->this$0:Lcom/sec/android/gallery3d/sconnect/SConnectManager;
 
-    # getter for: Lcom/sec/android/gallery3d/sconnect/SConnectManager;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v9}, Lcom/sec/android/gallery3d/sconnect/SConnectManager;->access$000(Lcom/sec/android/gallery3d/sconnect/SConnectManager;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v9
@@ -219,7 +213,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/sconnect/SConnectManager$1;->this$0:Lcom/sec/android/gallery3d/sconnect/SConnectManager;
 
-    # getter for: Lcom/sec/android/gallery3d/sconnect/SConnectManager;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v9}, Lcom/sec/android/gallery3d/sconnect/SConnectManager;->access$000(Lcom/sec/android/gallery3d/sconnect/SConnectManager;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v9
@@ -239,12 +232,10 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/sconnect/SConnectManager$1;->this$0:Lcom/sec/android/gallery3d/sconnect/SConnectManager;
 
-    # getter for: Lcom/sec/android/gallery3d/sconnect/SConnectManager;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v10}, Lcom/sec/android/gallery3d/sconnect/SConnectManager;->access$000(Lcom/sec/android/gallery3d/sconnect/SConnectManager;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v10
 
-    # invokes: Lcom/sec/android/gallery3d/sconnect/SConnectManager;->startSConnect(Landroid/app/Activity;Ljava/util/ArrayList;)V
     invoke-static {v9, v10, v8}, Lcom/sec/android/gallery3d/sconnect/SConnectManager;->access$100(Lcom/sec/android/gallery3d/sconnect/SConnectManager;Landroid/app/Activity;Ljava/util/ArrayList;)V
 
     goto :goto_2

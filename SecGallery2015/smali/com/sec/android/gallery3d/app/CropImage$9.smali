@@ -3,12 +3,12 @@
 .source "CropImage.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/gallery3d/app/CropImage;->saveMedia(Lcom/sec/android/gallery3d/util/ThreadPool$JobContext;Landroid/graphics/Bitmap;Ljava/io/File;Ljava/lang/String;)Ljava/io/File;
+    value = Lcom/sec/android/gallery3d/app/CropImage;->onBackPressed()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,14 +34,10 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
 
-    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$9;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    const v1, 0x7f0a0388
-
-    invoke-static {v0, v1}, Lcom/sec/android/gallery3d/common/Utils;->showToast(Landroid/content/Context;I)V
+    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     return-void
 .end method

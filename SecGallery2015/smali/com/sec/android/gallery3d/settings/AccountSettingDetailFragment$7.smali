@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$7;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->resetImageAnalysisSettingPreferences()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$600(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)V
 
     return-void

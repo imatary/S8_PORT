@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$6;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PhotoView;->refreshHidingMessage()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2300(Lcom/sec/android/gallery3d/ui/PhotoView;)V
 
     return-void

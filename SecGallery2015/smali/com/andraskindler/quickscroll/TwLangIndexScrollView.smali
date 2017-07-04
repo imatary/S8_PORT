@@ -667,7 +667,6 @@
 
     iput-boolean v3, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIsFluid:Z
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->applyOpenTheme:Z
     invoke-static {p2}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)Z
 
     move-result v0
@@ -676,35 +675,30 @@
 
     iput-boolean v3, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mEnableCustomTheme:Z
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->bgDrawableDefault:Landroid/graphics/drawable/Drawable;
     invoke-static {p2}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBgDrawableDefault:Landroid/graphics/drawable/Drawable;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->textColorDimmed:I
     invoke-static {p2}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$200(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)I
 
     move-result v0
 
     iput v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmTextColorDimmed:I
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->smallTextColor:I
     invoke-static {p2}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$300(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)I
 
     move-result v0
 
     iput v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmSmallTextColor:I
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->bigTextColor:I
     invoke-static {p2}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)I
 
     move-result v0
 
     iput v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBigTextColor:I
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->effectColor:I
     invoke-static {p2}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$500(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)I
 
     move-result v0
@@ -2949,49 +2943,42 @@
 .method public setCustomThemeSet(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)V
     .locals 1
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->bgIndexRectDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {p1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$800(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBgIndexRectDrawable:Landroid/graphics/drawable/Drawable;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->bgDrawableDefault:Landroid/graphics/drawable/Drawable;
     invoke-static {p1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBgDrawableDefault:Landroid/graphics/drawable/Drawable;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->bgDrawableDefaultMoreDepth:Landroid/graphics/drawable/Drawable;
     invoke-static {p1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$900(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBgDrawableDefaultMoreDepth:Landroid/graphics/drawable/Drawable;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->handleBgScrollDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {p1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$1000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmHandleBgScrollDrawable:Landroid/graphics/drawable/Drawable;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->separatorColor:I
     invoke-static {p1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$1100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)I
 
     move-result v0
 
     iput v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmSeparatorColor:I
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->textColorDimmed:I
     invoke-static {p1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$200(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)I
 
     move-result v0
 
     iput v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmTextColorDimmed:I
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->handleTextColorPressed:I
     invoke-static {p1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;->access$1200(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$CustomThemeSet;)I
 
     move-result v0
@@ -3098,7 +3085,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScroll:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->mScrollThumbBgDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->access$600(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -3107,14 +3093,12 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScroll:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->mScrollThumbBgDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->access$600(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScroll:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->mThumbColor:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->access$700(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;)I
 
     move-result v1
@@ -3244,7 +3228,6 @@
     :cond_2
     iget-object v2, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScroll:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->mScrollThumbBgDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v2}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->access$600(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
@@ -3259,14 +3242,12 @@
 
     iget-object v2, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScroll:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->mScrollThumbBgDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v2}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->access$600(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScroll:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->mThumbColor:I
     invoke-static {v3}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->access$700(Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;)I
 
     move-result v3

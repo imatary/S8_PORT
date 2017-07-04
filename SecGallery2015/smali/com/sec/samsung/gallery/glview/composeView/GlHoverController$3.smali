@@ -43,7 +43,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Landroid/content/Context;
 
     move-result-object v8
@@ -60,7 +59,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mItemList:Ljava/util/ArrayList;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$1600(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Ljava/util/ArrayList;
 
     move-result-object v8
@@ -85,7 +83,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Landroid/content/Context;
 
     move-result-object v8
@@ -150,13 +147,11 @@
 
     sget-object v9, Lcom/sec/samsung/gallery/controller/SCloudTempDownloadCmd$DownloadCmdType;->DOWNLOAD_AGIF:Lcom/sec/samsung/gallery/controller/SCloudTempDownloadCmd$DownloadCmdType;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->startSCloudImageEdit(Lcom/sec/android/gallery3d/data/MediaItem;Lcom/sec/samsung/gallery/controller/SCloudTempDownloadCmd$DownloadCmdType;)V
     invoke-static {v8, v4, v9}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$1800(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;Lcom/sec/android/gallery3d/data/MediaItem;Lcom/sec/samsung/gallery/controller/SCloudTempDownloadCmd$DownloadCmdType;)V
 
     :goto_0
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mIsActionBarClicked:Z
     invoke-static {v8, v12}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$1702(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;Z)Z
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
@@ -183,7 +178,6 @@
     :try_start_0
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Landroid/content/Context;
 
     move-result-object v8
@@ -216,7 +210,6 @@
     :cond_1
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Landroid/content/Context;
 
     move-result-object v8
@@ -257,7 +250,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Landroid/content/Context;
 
     move-result-object v8
@@ -266,7 +258,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Landroid/content/Context;
 
     move-result-object v8
@@ -284,7 +275,6 @@
 
     sget-object v9, Lcom/sec/samsung/gallery/controller/SCloudTempDownloadCmd$DownloadCmdType;->DOWNLOAD_EDIT:Lcom/sec/samsung/gallery/controller/SCloudTempDownloadCmd$DownloadCmdType;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->startSCloudImageEdit(Lcom/sec/android/gallery3d/data/MediaItem;Lcom/sec/samsung/gallery/controller/SCloudTempDownloadCmd$DownloadCmdType;)V
     invoke-static {v8, v4, v9}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$1800(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;Lcom/sec/android/gallery3d/data/MediaItem;Lcom/sec/samsung/gallery/controller/SCloudTempDownloadCmd$DownloadCmdType;)V
 
     goto :goto_0
@@ -292,7 +282,6 @@
     :cond_5
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Landroid/content/Context;
 
     move-result-object v8

@@ -116,7 +116,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RSettingDbHandler;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RSettingDbHandler;->access$300()Ljava/lang/String;
 
     move-result-object v2
@@ -209,7 +208,6 @@
     :cond_0
     const-string/jumbo v0, "value"
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RSettingDbHandler;->bundleForPair(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
     invoke-static {v0, p2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RSettingDbHandler;->access$200(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object v0
@@ -222,7 +220,6 @@
     return-void
 
     :cond_1
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RSettingDbHandler;->TOO_LARGE_TO_CACHE_MARKER:Landroid/os/Bundle;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RSettingDbHandler;->access$400()Landroid/os/Bundle;
 
     move-result-object v0
@@ -246,7 +243,6 @@
 
     if-nez p2, :cond_3
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RSettingDbHandler;->NULL_SETTING:Landroid/os/Bundle;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RSettingDbHandler;->access$100()Landroid/os/Bundle;
 
     move-result-object v0
@@ -285,7 +281,6 @@
     :cond_3
     const-string/jumbo v1, "value"
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RSettingDbHandler;->bundleForPair(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
     invoke-static {v1, p2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RSettingDbHandler;->access$200(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object v0

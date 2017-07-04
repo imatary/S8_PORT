@@ -659,7 +659,7 @@
     goto :goto_0
 
     :sswitch_8
-    const-string/jumbo v1, "StoryListSelectedView"
+    const-string/jumbo v1, "CloudSelectedView"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -672,7 +672,7 @@
     goto :goto_0
 
     :sswitch_9
-    const-string/jumbo v1, "AlbumListSelectedView"
+    const-string/jumbo v1, "RecycleBinSelectedView"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -685,7 +685,7 @@
     goto :goto_0
 
     :sswitch_a
-    const-string/jumbo v1, "AlbumListSelectedViewForHideAlbum"
+    const-string/jumbo v1, "StoryListSelectedView"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -698,7 +698,7 @@
     goto :goto_0
 
     :sswitch_b
-    const-string/jumbo v1, "AlbumListSelectedViewForShowHiddenAlbum"
+    const-string/jumbo v1, "AlbumListSelectedView"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -707,6 +707,32 @@
     if-eqz v1, :cond_0
 
     const/16 v0, 0xb
+
+    goto/16 :goto_0
+
+    :sswitch_c
+    const-string/jumbo v1, "AlbumListSelectedViewForHideAlbum"
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/16 v0, 0xc
+
+    goto/16 :goto_0
+
+    :sswitch_d
+    const-string/jumbo v1, "AlbumListSelectedViewForShowHiddenAlbum"
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/16 v0, 0xd
 
     goto/16 :goto_0
 
@@ -731,20 +757,24 @@
     .sparse-switch
         -0x522c3822 -> :sswitch_1
         -0x5022504a -> :sswitch_5
-        -0x2d23c7f3 -> :sswitch_9
-        -0x216c196d -> :sswitch_8
+        -0x31038c6c -> :sswitch_9
+        -0x2d23c7f3 -> :sswitch_b
+        -0x216c196d -> :sswitch_a
         -0x1dc920a2 -> :sswitch_6
         -0x167bea38 -> :sswitch_0
         0x5117086 -> :sswitch_4
         0x33217e5f -> :sswitch_2
         0x3c060e6d -> :sswitch_7
         0x3e42b70c -> :sswitch_3
-        0x4979b28c -> :sswitch_b
-        0x4a0a7031 -> :sswitch_a
+        0x42e6a695 -> :sswitch_8
+        0x4979b28c -> :sswitch_d
+        0x4a0a7031 -> :sswitch_c
     .end sparse-switch
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_0
+        :pswitch_0
         :pswitch_0
         :pswitch_0
         :pswitch_0
@@ -1726,7 +1756,7 @@
 
     iget-object v5, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v6, 0x7f0a07b2
+    const v6, 0x7f0a07b8
 
     new-array v7, v7, [Ljava/lang/Object;
 
@@ -2519,7 +2549,7 @@
 
     iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v5, 0x7f0a0770
+    const v5, 0x7f0a0776
 
     new-array v6, v7, [Ljava/lang/Object;
 

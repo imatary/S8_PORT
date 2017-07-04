@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/AlbumReloader$MySourceListener;->this$0:Lcom/sec/android/gallery3d/app/AlbumReloader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mReloadTask:Lcom/sec/android/gallery3d/app/AlbumReloader$ReloadTask;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$100(Lcom/sec/android/gallery3d/app/AlbumReloader;)Lcom/sec/android/gallery3d/app/AlbumReloader$ReloadTask;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/AlbumReloader$MySourceListener;->this$0:Lcom/sec/android/gallery3d/app/AlbumReloader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mReloadTask:Lcom/sec/android/gallery3d/app/AlbumReloader$ReloadTask;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$100(Lcom/sec/android/gallery3d/app/AlbumReloader;)Lcom/sec/android/gallery3d/app/AlbumReloader$ReloadTask;
 
     move-result-object v0

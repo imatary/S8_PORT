@@ -208,7 +208,7 @@
     :goto_0
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    const v3, 0x7f020320
+    const v3, 0x7f020322
 
     invoke-virtual {p0, v3}, Lcom/sec/samsung/gallery/view/slideshowsetting/SlideShowSettingPreferenceActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

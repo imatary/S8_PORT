@@ -40,12 +40,10 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/mapfragment/MapViewState$2;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapViewState;->setUpMapIfNeeded()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/MapViewState;->access$100(Lcom/sec/samsung/gallery/mapfragment/MapViewState;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/mapfragment/MapViewState$2;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewState;->mMapFragment:Lcom/google/android/gms/maps/MapFragment;
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/MapViewState;->access$200(Lcom/sec/samsung/gallery/mapfragment/MapViewState;)Lcom/google/android/gms/maps/MapFragment;
 
     move-result-object v2
@@ -72,7 +70,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/mapfragment/MapViewState$2;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapViewState;->setZoomButtonListeners(Landroid/view/View;)V
     invoke-static {v2, v0}, Lcom/sec/samsung/gallery/mapfragment/MapViewState;->access$300(Lcom/sec/samsung/gallery/mapfragment/MapViewState;Landroid/view/View;)V
 
     :cond_0

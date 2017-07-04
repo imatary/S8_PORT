@@ -511,7 +511,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0202e3
+    const v1, 0x7f0202e5
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -567,7 +567,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0202e3
+    const v1, 0x7f0202e5
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -644,7 +644,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0a08aa
+    const v9, 0x7f0a08b8
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -652,7 +652,7 @@
 
     invoke-virtual {v6, v10, v8}, Landroid/widget/RemoteViews;->setContentDescription(ILjava/lang/CharSequence;)V
 
-    const v8, 0x7f0202d4
+    const v8, 0x7f0202d6
 
     invoke-virtual {v6, v10, v8}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
 
@@ -678,7 +678,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0a08ab
+    const v9, 0x7f0a08b9
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -686,7 +686,7 @@
 
     invoke-virtual {v6, v10, v8}, Landroid/widget/RemoteViews;->setContentDescription(ILjava/lang/CharSequence;)V
 
-    const v8, 0x7f0202d5
+    const v8, 0x7f0202d7
 
     invoke-virtual {v6, v10, v8}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
 
@@ -1233,7 +1233,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mSlideshowPresentationVideoView:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;->addCustomView(Landroid/view/View;Landroid/widget/FrameLayout$LayoutParams;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;->access$900(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;Landroid/view/View;Landroid/widget/FrameLayout$LayoutParams;)V
 
     :cond_0
@@ -1587,7 +1586,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mPresentation:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
 
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;->mReleaseResource:Z
     invoke-static {v1, v4}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;->access$1002(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mPresentation:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$2;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->removeThumbnailList()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$2500(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)V
 
     return-void

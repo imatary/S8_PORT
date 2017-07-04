@@ -23,14 +23,12 @@
 
     invoke-direct {p0, p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/BaseRequest;-><init>(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/BaseRequest$Builder;)V
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/ResponsePushRequest$Builder;->id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/ResponsePushRequest$Builder;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/ResponsePushRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/ResponsePushRequest;->id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/ResponsePushRequest$Builder;->action:I
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/ResponsePushRequest$Builder;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/ResponsePushRequest$Builder;)I
 
     move-result v0

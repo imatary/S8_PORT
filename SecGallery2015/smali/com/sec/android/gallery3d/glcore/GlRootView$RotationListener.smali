@@ -47,7 +47,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/glcore/GlRootView$RotationListener;->this$0:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlRootView;->mRotationListener:Ljava/util/ArrayList;
     invoke-static {v3}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$200(Lcom/sec/android/gallery3d/glcore/GlRootView;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -63,7 +62,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/glcore/GlRootView$RotationListener;->this$0:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlRootView;->mRotationListener:Ljava/util/ArrayList;
     invoke-static {v3}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$200(Lcom/sec/android/gallery3d/glcore/GlRootView;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -85,7 +83,6 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/android/gallery3d/glcore/GlRootView$RotationListener;->this$0:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlRootView;->mRotationListener:Ljava/util/ArrayList;
     invoke-static {v3}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$200(Lcom/sec/android/gallery3d/glcore/GlRootView;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -112,7 +109,6 @@
     :cond_3
     iget-object v3, p0, Lcom/sec/android/gallery3d/glcore/GlRootView$RotationListener;->this$0:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlRootView;->mRootLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v3}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$100(Lcom/sec/android/gallery3d/glcore/GlRootView;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v3
@@ -121,7 +117,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/glcore/GlRootView$RotationListener;->this$0:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlRootView;->mRootLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v3}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$100(Lcom/sec/android/gallery3d/glcore/GlRootView;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v3

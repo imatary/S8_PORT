@@ -77,7 +77,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$35;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mGlNoItemObject:Lcom/sec/samsung/gallery/glview/GlNoItemObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$6900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/GlNoItemObject;
 
     move-result-object v0
@@ -96,7 +95,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$35;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mGlNoItemObject:Lcom/sec/samsung/gallery/glview/GlNoItemObject;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$6900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/GlNoItemObject;
 
     move-result-object v2

@@ -1510,7 +1510,7 @@
 
     check-cast v17, Landroid/widget/ImageView;
 
-    const v20, 0x7f0202f3
+    const v20, 0x7f0202f5
 
     move-object/from16 v0, p0
 

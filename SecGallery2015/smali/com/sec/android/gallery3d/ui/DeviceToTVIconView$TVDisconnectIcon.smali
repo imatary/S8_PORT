@@ -121,7 +121,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b055b
+    const v4, 0x7f0b055c
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -137,7 +137,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b055a
+    const v4, 0x7f0b055b
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -145,7 +145,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/DeviceToTVIconView$TVDisconnectIcon;->this$0:Lcom/sec/android/gallery3d/ui/DeviceToTVIconView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/DeviceToTVIconView;->getNavigationPadding()I
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/DeviceToTVIconView;->access$200(Lcom/sec/android/gallery3d/ui/DeviceToTVIconView;)I
 
     move-result v4

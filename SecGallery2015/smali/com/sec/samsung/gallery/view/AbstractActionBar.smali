@@ -1170,7 +1170,7 @@
 
     if-eqz p2, :cond_0
 
-    const v1, 0x7f12027b
+    const v1, 0x7f12027a
 
     invoke-interface {p1, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -1186,7 +1186,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0859
+    const v2, 0x7f0a0867
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

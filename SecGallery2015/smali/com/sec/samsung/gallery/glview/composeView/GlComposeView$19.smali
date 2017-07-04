@@ -230,7 +230,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$19;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v3

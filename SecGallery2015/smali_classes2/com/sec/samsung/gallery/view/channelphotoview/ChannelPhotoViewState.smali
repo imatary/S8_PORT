@@ -3928,7 +3928,7 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v10, 0x7f0a07af
+    const v10, 0x7f0a07b5
 
     new-array v11, v8, [Ljava/lang/Object;
 
@@ -3979,7 +3979,7 @@
     :cond_5
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v10, 0x7f0a07b0
+    const v10, 0x7f0a07b6
 
     new-array v11, v8, [Ljava/lang/Object;
 
@@ -4301,7 +4301,7 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v7, 0x7f0a0796
+    const v7, 0x7f0a079c
 
     new-array v8, v11, [Ljava/lang/Object;
 
@@ -4357,7 +4357,7 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v7, 0x7f0a0795
+    const v7, 0x7f0a079b
 
     new-array v8, v11, [Ljava/lang/Object;
 
@@ -5074,7 +5074,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v2, 0x7f0a0793
+    const v2, 0x7f0a0799
 
     const/4 v3, 0x0
 
@@ -6741,7 +6741,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0b07f7
+    const v6, 0x7f0b07f8
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -7290,7 +7290,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x7f0a08b9
+    const v19, 0x7f0a08c7
 
     const/16 v20, 0x1
 
@@ -7827,7 +7827,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v3, 0x7f0a07ad
+    const v3, 0x7f0a07b3
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -7851,7 +7851,7 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v3, 0x7f0a07ac
+    const v3, 0x7f0a07b2
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -8152,7 +8152,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v3, 0x7f0a07c5
+    const v3, 0x7f0a07ca
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -8200,7 +8200,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v3, 0x7f0a07c6
+    const v3, 0x7f0a07cb
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -12450,7 +12450,7 @@
 
     if-eqz v2, :cond_2
 
-    const v0, 0x7f0202ca
+    const v0, 0x7f0202cc
 
     :goto_1
     invoke-interface {v1}, Landroid/view/MenuItem;->getActionView()Landroid/view/View;
@@ -13694,7 +13694,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b07ef
+    const v10, 0x7f0b07f0
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -14672,7 +14672,7 @@
 
     iget-object v11, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v12, 0x7f0a07d7
+    const v12, 0x7f0a07dc
 
     const/4 v13, 0x0
 
@@ -17598,7 +17598,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mMenu:Landroid/view/Menu;
 
-    const v1, 0x7f120286
+    const v1, 0x7f120285
 
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemIcon(Landroid/view/Menu;II)V
 
@@ -18595,7 +18595,7 @@
 .method public onPrepareOptionMenu(Landroid/view/Menu;)V
     .locals 6
 
-    const v5, 0x7f120289
+    const v5, 0x7f120288
 
     const v1, 0x7f120275
 
@@ -19252,7 +19252,6 @@
 
     iget v4, v0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mCurrentLayout:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->setInitialLevel(ZI)I
     invoke-static {v2, v3, v4}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->access$17600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;ZI)I
 
     move-result v2
@@ -22742,7 +22741,7 @@
 
     iget-object v4, v0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v5, 0x7f0a07d4
+    const v5, 0x7f0a07d9
 
     const/4 v6, 0x0
 
@@ -22881,7 +22880,7 @@
 
     iget-object v7, v0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v23, 0x7f0a07d3
+    const v23, 0x7f0a07d8
 
     const/16 v24, 0x0
 
@@ -22925,7 +22924,7 @@
 
     iget-object v4, v0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v5, 0x7f0a07d4
+    const v5, 0x7f0a07d9
 
     const/4 v6, 0x0
 

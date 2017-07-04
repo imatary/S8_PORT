@@ -86,7 +86,6 @@
 
     const/4 v1, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd;->DOWNLOAD_PATH:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -101,7 +100,6 @@
 
     if-nez v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd;->DOWNLOAD_PATH:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -467,7 +465,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd$SCloudDownloadTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd;->DIALOG_STRING_MAP:Ljava/util/LinkedHashMap;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd;->access$100()Ljava/util/LinkedHashMap;
 
     move-result-object v1
@@ -512,7 +509,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd$SCloudDownloadTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd;->DIALOG_STRING_MAP:Ljava/util/LinkedHashMap;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd;->access$100()Ljava/util/LinkedHashMap;
 
     move-result-object v0
@@ -579,7 +575,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd$SCloudDownloadTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd;->TOAST_STRING_MAP:Ljava/util/LinkedHashMap;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd;->access$300()Ljava/util/LinkedHashMap;
 
     move-result-object v0

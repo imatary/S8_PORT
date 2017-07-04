@@ -43,7 +43,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$7;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mTabHost:Landroid/widget/TabHost;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$600(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/widget/TabHost;
 
     move-result-object v2
@@ -68,7 +67,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$7;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mTabHost:Landroid/widget/TabHost;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$600(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/widget/TabHost;
 
     move-result-object v3
@@ -96,14 +94,12 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$7;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mScrollView:Landroid/widget/HorizontalScrollView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$2100(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/widget/HorizontalScrollView;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$7;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mScrollView:Landroid/widget/HorizontalScrollView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$2100(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/widget/HorizontalScrollView;
 
     move-result-object v3

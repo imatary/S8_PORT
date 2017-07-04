@@ -71,7 +71,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$LowMemoryCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v3
@@ -88,14 +87,12 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$LowMemoryCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v0
 
     check-cast v0, Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->FeatureLowStorageMode:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$900()Z
 
     move-result v3
@@ -191,7 +188,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$LowMemoryCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v0
@@ -212,7 +208,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$LowMemoryCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mCheckStorageDialog:Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$1000(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
 
     move-result-object v3
@@ -221,7 +216,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$LowMemoryCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mCheckStorageDialog:Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$1000(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
 
     move-result-object v3
@@ -232,7 +226,6 @@
 
     const/4 v4, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mCheckStorageDialog:Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$1002(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;)Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
 
     :cond_1
@@ -269,12 +262,10 @@
 
     invoke-direct {v4, v5, v6, v1}, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;-><init>(Landroid/content/Context;Landroid/content/Intent;Z)V
 
-    # setter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mCheckStorageDialog:Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$1002(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;)Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$LowMemoryCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mCheckStorageDialog:Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$1000(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
 
     move-result-object v3
@@ -282,7 +273,6 @@
     invoke-virtual {v3}, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->showDialog()V
 
     :cond_2
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->FeatureLowStorageMode:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$900()Z
 
     move-result v3
@@ -291,7 +281,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$LowMemoryCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v3
@@ -310,7 +299,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$LowMemoryCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mGalleryFacade:Lorg/puremvc/java/multicore/patterns/facade/Facade;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$800(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Lorg/puremvc/java/multicore/patterns/facade/Facade;
 
     move-result-object v2

@@ -804,217 +804,6 @@
     return-void
 .end method
 
-.method private initView()V
-    .locals 12
-
-    const v11, 0x7f0a0405
-
-    const v10, 0x7f0a0243
-
-    const v9, 0x7f0a00ab
-
-    const/4 v4, 0x1
-
-    const/4 v5, 0x0
-
-    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mSocialInfo:Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;
-
-    if-nez v6, :cond_1
-
-    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->hideCommentsView()V
-
-    :cond_0
-    :goto_0
-    return-void
-
-    :cond_1
-    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mSocialInfo:Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;
-
-    invoke-virtual {v6}, Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;->getOwnerInfo()Lcom/sec/android/gallery3d/data/ChannelItemOwnerInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/sec/android/gallery3d/data/ChannelItemOwnerInfo;->getOwnerNumber()Ljava/lang/String;
-
-    move-result-object v3
-
-    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mSocialInfo:Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;
-
-    invoke-virtual {v6}, Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;->getLikeByMe()I
-
-    move-result v1
-
-    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mSocialInfo:Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;
-
-    invoke-virtual {v6}, Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;->getLikeCount()I
-
-    move-result v6
-
-    iput v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLikeCount:I
-
-    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mSocialInfo:Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;
-
-    invoke-virtual {v6}, Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;->getCommentCount()I
-
-    move-result v0
-
-    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mOwnerImgView:Landroid/widget/ImageView;
-
-    invoke-direct {p0, v3}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->getOwnerIcon(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v7
-
-    invoke-virtual {v6, v7}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
-
-    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mOwnerNameTxtView:Landroid/widget/TextView;
-
-    invoke-direct {p0, v2, v3}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->getOwnerName(Lcom/sec/android/gallery3d/data/ChannelItemOwnerInfo;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLikeCountTxtView:Landroid/widget/TextView;
-
-    iget v7, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLikeCount:I
-
-    invoke-direct {p0, v7, v10}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->getCountString(II)Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLikeCountTxtView:Landroid/widget/TextView;
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v8, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mResContext:Landroid/content/Context;
-
-    invoke-virtual {v8}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, ", "
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    iget-object v8, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mResContext:Landroid/content/Context;
-
-    invoke-virtual {v8}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v11}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    if-ne v1, v4, :cond_2
-
-    :goto_1
-    iput-boolean v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mIsLikeOn:Z
-
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->setLikeIconColor()V
-
-    iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLikeLayout:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mCommentsTxtView:Landroid/widget/TextView;
-
-    invoke-direct {p0, v0, v9}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->getCountString(II)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v4, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mCommentsLayout:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mCommentsLayout:Landroid/widget/LinearLayout;
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mResContext:Landroid/content/Context;
-
-    invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    const-string/jumbo v6, ", "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mResContext:Landroid/content/Context;
-
-    invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v11}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->isCommentsViewShowing()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
-
-    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->showCommentsView()V
-
-    goto/16 :goto_0
-
-    :cond_2
-    move v4, v5
-
-    goto :goto_1
-.end method
-
 .method private likeItem()V
     .locals 15
 
@@ -1375,7 +1164,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0b0552
+    const v6, 0x7f0b0553
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1390,6 +1179,14 @@
     sget-boolean v5, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->USE_NAVIGATION_BAR:Z
 
     if-eqz v5, :cond_0
+
+    sget-object v5, Lcom/sec/samsung/gallery/features/FeatureNames;->IsImmersiveMode:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v5}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_0
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
@@ -1800,7 +1597,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0a084a
+    const v7, 0x7f0a0858
 
     new-array v8, v8, [Ljava/lang/Object;
 
@@ -1865,7 +1662,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0a084c
+    const v7, 0x7f0a085a
 
     new-array v8, v8, [Ljava/lang/Object;
 
@@ -1969,6 +1766,219 @@
 
     :cond_1
     return-void
+.end method
+
+.method public initView()V
+    .locals 12
+
+    const v11, 0x7f0a0405
+
+    const v10, 0x7f0a0243
+
+    const v9, 0x7f0a00ab
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mSocialInfo:Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;
+
+    if-nez v6, :cond_1
+
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->hideCommentsView()V
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->setNavigationBarPadding()V
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mSocialInfo:Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;
+
+    invoke-virtual {v6}, Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;->getOwnerInfo()Lcom/sec/android/gallery3d/data/ChannelItemOwnerInfo;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/sec/android/gallery3d/data/ChannelItemOwnerInfo;->getOwnerNumber()Ljava/lang/String;
+
+    move-result-object v3
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mSocialInfo:Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;
+
+    invoke-virtual {v6}, Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;->getLikeByMe()I
+
+    move-result v1
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mSocialInfo:Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;
+
+    invoke-virtual {v6}, Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;->getLikeCount()I
+
+    move-result v6
+
+    iput v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLikeCount:I
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mSocialInfo:Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;
+
+    invoke-virtual {v6}, Lcom/sec/android/gallery3d/data/ChannelItemSocialInfo;->getCommentCount()I
+
+    move-result v0
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mOwnerImgView:Landroid/widget/ImageView;
+
+    invoke-direct {p0, v3}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->getOwnerIcon(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mOwnerNameTxtView:Landroid/widget/TextView;
+
+    invoke-direct {p0, v2, v3}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->getOwnerName(Lcom/sec/android/gallery3d/data/ChannelItemOwnerInfo;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLikeCountTxtView:Landroid/widget/TextView;
+
+    iget v7, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLikeCount:I
+
+    invoke-direct {p0, v7, v10}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->getCountString(II)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLikeCountTxtView:Landroid/widget/TextView;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v8, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mResContext:Landroid/content/Context;
+
+    invoke-virtual {v8}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string/jumbo v8, ", "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    iget-object v8, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mResContext:Landroid/content/Context;
+
+    invoke-virtual {v8}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v11}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    if-ne v1, v4, :cond_2
+
+    :goto_1
+    iput-boolean v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mIsLikeOn:Z
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->setLikeIconColor()V
+
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLikeLayout:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mCommentsTxtView:Landroid/widget/TextView;
+
+    invoke-direct {p0, v0, v9}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->getCountString(II)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v4, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mCommentsLayout:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mCommentsLayout:Landroid/widget/LinearLayout;
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mResContext:Landroid/content/Context;
+
+    invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    const-string/jumbo v6, ", "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mResContext:Landroid/content/Context;
+
+    invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v11}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->isCommentsViewShowing()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->showCommentsView()V
+
+    goto/16 :goto_0
+
+    :cond_2
+    move v4, v5
+
+    goto :goto_1
 .end method
 
 .method public isCommentsViewShowing()Z
@@ -2251,7 +2261,7 @@
 
     iput-object p5, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mThumbPath:Ljava/lang/String;
 
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->initView()V
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->initView()V
 
     return-void
 .end method

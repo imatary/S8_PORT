@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mShowMoreAlbum:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Z
 
     move-result v1
@@ -51,31 +50,26 @@
     const/4 v1, 0x1
 
     :goto_0
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mShowMoreAlbum:Z
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$102(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mShowMoreAlbum:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Z
 
     move-result v2
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->updateView(Z)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;Z)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mShowMoreAlbum:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Z
 
     move-result v2
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->updateButton(Z)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;Z)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
@@ -101,7 +95,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mShowMoreAlbum:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Z
 
     move-result v2
@@ -118,7 +111,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v1
@@ -154,7 +146,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mShowMoreAlbum:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Z
 
     move-result v2
@@ -166,7 +157,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v1
@@ -182,7 +172,6 @@
     :goto_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v1
@@ -193,7 +182,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Landroid/content/Context;
 
     move-result-object v1
@@ -206,7 +194,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mShowMoreAlbum:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Z
 
     move-result v3
@@ -215,7 +202,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Landroid/content/Context;
 
     move-result-object v1
@@ -239,7 +225,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v1

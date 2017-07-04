@@ -54,7 +54,6 @@
 
     const/4 v2, -0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->selectAllProcess(Lcom/sec/android/gallery3d/data/MediaSet;ILcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;)V
     invoke-static {v1, v0, v2, p0}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$7100(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;Lcom/sec/android/gallery3d/data/MediaSet;ILcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;)V
 
     const/4 v1, 0x0

@@ -137,7 +137,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;->access$000(Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;)Landroid/content/Context;
 
     move-result-object v3

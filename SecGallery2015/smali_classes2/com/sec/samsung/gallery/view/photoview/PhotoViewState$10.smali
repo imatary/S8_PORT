@@ -48,7 +48,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$10;->val$mediaSet:Lcom/sec/android/gallery3d/data/MediaSet;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->switchTopMediaSet(Lcom/sec/samsung/gallery/core/MediaType$MediaFilterType;Lcom/sec/android/gallery3d/data/MediaSet;)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$4400(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;Lcom/sec/samsung/gallery/core/MediaType$MediaFilterType;Lcom/sec/android/gallery3d/data/MediaSet;)V
 
     return-void

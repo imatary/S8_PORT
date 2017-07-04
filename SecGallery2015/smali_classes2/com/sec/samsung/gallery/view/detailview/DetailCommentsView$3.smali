@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView$3;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mCommentsViewListener:Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView$Listener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->access$200(Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;)Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView$Listener;
 
     move-result-object v0

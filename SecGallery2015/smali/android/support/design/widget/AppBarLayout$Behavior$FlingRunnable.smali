@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Landroid/support/design/widget/AppBarLayout$Behavior$FlingRunnable;->this$0:Landroid/support/design/widget/AppBarLayout$Behavior;
 
-    # getter for: Landroid/support/design/widget/AppBarLayout$Behavior;->mScroller:Landroid/support/v4/widget/ScrollerCompat;
     invoke-static {v0}, Landroid/support/design/widget/AppBarLayout$Behavior;->access$100(Landroid/support/design/widget/AppBarLayout$Behavior;)Landroid/support/v4/widget/ScrollerCompat;
 
     move-result-object v0
@@ -60,7 +59,6 @@
 
     iget-object v0, p0, Landroid/support/design/widget/AppBarLayout$Behavior$FlingRunnable;->this$0:Landroid/support/design/widget/AppBarLayout$Behavior;
 
-    # getter for: Landroid/support/design/widget/AppBarLayout$Behavior;->mScroller:Landroid/support/v4/widget/ScrollerCompat;
     invoke-static {v0}, Landroid/support/design/widget/AppBarLayout$Behavior;->access$100(Landroid/support/design/widget/AppBarLayout$Behavior;)Landroid/support/v4/widget/ScrollerCompat;
 
     move-result-object v0
@@ -79,7 +77,6 @@
 
     iget-object v3, p0, Landroid/support/design/widget/AppBarLayout$Behavior$FlingRunnable;->this$0:Landroid/support/design/widget/AppBarLayout$Behavior;
 
-    # getter for: Landroid/support/design/widget/AppBarLayout$Behavior;->mScroller:Landroid/support/v4/widget/ScrollerCompat;
     invoke-static {v3}, Landroid/support/design/widget/AppBarLayout$Behavior;->access$100(Landroid/support/design/widget/AppBarLayout$Behavior;)Landroid/support/v4/widget/ScrollerCompat;
 
     move-result-object v3

@@ -85,12 +85,10 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->cpuBoostInit()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v0
@@ -105,7 +103,6 @@
 
     move-result-object v5
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v0, v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1002(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     :cond_3
@@ -115,7 +112,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v5
@@ -217,7 +213,6 @@
     :cond_4
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v0
@@ -238,7 +233,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v0
@@ -247,7 +241,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mIsMultiSelectScroll:Z
     invoke-static {v0, v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4102(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Z)Z
 
     const/4 v0, 0x1
@@ -269,7 +262,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v3
@@ -282,7 +274,6 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v3
@@ -301,7 +292,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v3
@@ -315,7 +305,6 @@
     :goto_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mIsMultiSelectScroll:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Z
 
     move-result v3
@@ -324,7 +313,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v3
@@ -347,7 +335,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v4
@@ -361,7 +348,6 @@
     :cond_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v3
@@ -370,7 +356,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->updatePensSelectionBox()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)V
 
     :goto_2
@@ -381,7 +366,6 @@
     :cond_2
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v3
@@ -410,12 +394,10 @@
     :cond_4
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mIsMultiSelectScroll:Z
     invoke-static {v3, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4102(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Z)Z
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v3
@@ -424,7 +406,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->updatePensSelectionBox()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)V
 
     goto :goto_2
@@ -432,7 +413,6 @@
     :cond_5
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v3
@@ -455,7 +435,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v3
@@ -468,13 +447,11 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->resetFlingEffect()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)V
 
     :cond_6
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mIsMultiSelectScroll:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4102(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Z)Z
 
     goto :goto_2
@@ -482,7 +459,6 @@
     :cond_7
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v3
@@ -491,7 +467,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->updatePensSelectionBox()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)V
 
     goto :goto_2
@@ -516,7 +491,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v2
@@ -554,7 +528,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     move-result-object v2
@@ -569,7 +542,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->cpuBoostRelease()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
@@ -591,12 +563,10 @@
     :cond_2
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mIsMultiSelectScroll:Z
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4102(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mMultiSelector:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
     invoke-static {v1, v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1002(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;)Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$20;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;

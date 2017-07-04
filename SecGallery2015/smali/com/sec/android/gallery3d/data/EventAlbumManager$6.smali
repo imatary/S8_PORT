@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/EventAlbumManager$6;->this$0:Lcom/sec/android/gallery3d/data/EventAlbumManager;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/EventAlbumManager;->access$900(Lcom/sec/android/gallery3d/data/EventAlbumManager;)Landroid/app/ProgressDialog;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/EventAlbumManager$6;->this$0:Lcom/sec/android/gallery3d/data/EventAlbumManager;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/EventAlbumManager;->access$900(Lcom/sec/android/gallery3d/data/EventAlbumManager;)Landroid/app/ProgressDialog;
 
     move-result-object v0
@@ -61,7 +59,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/EventAlbumManager$6;->this$0:Lcom/sec/android/gallery3d/data/EventAlbumManager;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/EventAlbumManager;->access$900(Lcom/sec/android/gallery3d/data/EventAlbumManager;)Landroid/app/ProgressDialog;
 
     move-result-object v0

@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SyncContactsCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/SyncContactsCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->syncContactsOnThread()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->access$300(Lcom/sec/samsung/gallery/controller/SyncContactsCmd;)V
 
     return-void

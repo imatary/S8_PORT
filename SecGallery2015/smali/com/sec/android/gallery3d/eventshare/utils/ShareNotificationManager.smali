@@ -60,7 +60,7 @@
     :array_0
     .array-data 4
         0x7f0a04ad
-        0x7f0a0867
+        0x7f0a0875
         0x7f0a01ad
         0x7f0a04ae
         0x7f0a04a4
@@ -180,7 +180,7 @@
 .method private createGroupSummaryNotification()V
     .locals 14
 
-    const v13, 0x7f0202e2
+    const v13, 0x7f0202e4
 
     const/4 v12, 0x1
 
@@ -925,7 +925,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0b04fa
+    const v6, 0x7f0b04fb
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1277,7 +1277,7 @@
 
     invoke-virtual {v10, v12}, Landroid/support/v4/app/NotificationCompat$Builder;->setColor(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    const v12, 0x7f0202e2
+    const v12, 0x7f0202e4
 
     invoke-virtual {v10, v12}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -1338,7 +1338,7 @@
 
     if-eqz v12, :cond_4
 
-    const v12, 0x7f0202e2
+    const v12, 0x7f0202e4
 
     invoke-virtual {v10, v12}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -1519,7 +1519,7 @@
 
     invoke-virtual {v3, v6}, Landroid/support/v4/app/NotificationCompat$Builder;->setColor(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    const v6, 0x7f0202e2
+    const v6, 0x7f0202e4
 
     invoke-virtual {v3, v6}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -1578,7 +1578,7 @@
 
     if-eqz v6, :cond_3
 
-    const v6, 0x7f0202e2
+    const v6, 0x7f0202e4
 
     invoke-virtual {v3, v6}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -1718,7 +1718,7 @@
 
     invoke-virtual {v0, v3}, Landroid/support/v4/app/NotificationCompat$Builder;->setColor(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    const v3, 0x7f0202e2
+    const v3, 0x7f0202e4
 
     move-object/from16 v0, v16
 
@@ -1989,7 +1989,7 @@
 
     if-eqz v3, :cond_5
 
-    const v3, 0x7f0202e2
+    const v3, 0x7f0202e4
 
     move-object/from16 v0, v16
 
@@ -2152,7 +2152,7 @@
 
     invoke-virtual {v4, v7}, Landroid/support/v4/app/NotificationCompat$Builder;->setColor(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
-    const v7, 0x7f0202e2
+    const v7, 0x7f0202e4
 
     invoke-virtual {v4, v7}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -2219,7 +2219,7 @@
 
     if-eqz v7, :cond_4
 
-    const v7, 0x7f0202e2
+    const v7, 0x7f0202e4
 
     invoke-virtual {v4, v7}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
 

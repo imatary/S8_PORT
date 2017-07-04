@@ -55,7 +55,6 @@
     :goto_0
     iget-object v5, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mSwipeDirection:I
     invoke-static {v5}, Landroid/support/design/widget/SwipeDismissBehavior;->access$200(Landroid/support/design/widget/SwipeDismissBehavior;)I
 
     move-result v5
@@ -76,7 +75,6 @@
     :cond_2
     iget-object v5, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mSwipeDirection:I
     invoke-static {v5}, Landroid/support/design/widget/SwipeDismissBehavior;->access$200(Landroid/support/design/widget/SwipeDismissBehavior;)I
 
     move-result v5
@@ -105,7 +103,6 @@
     :cond_4
     iget-object v5, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mSwipeDirection:I
     invoke-static {v5}, Landroid/support/design/widget/SwipeDismissBehavior;->access$200(Landroid/support/design/widget/SwipeDismissBehavior;)I
 
     move-result v5
@@ -148,7 +145,6 @@
 
     iget-object v6, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mDragDismissThreshold:F
     invoke-static {v6}, Landroid/support/design/widget/SwipeDismissBehavior;->access$300(Landroid/support/design/widget/SwipeDismissBehavior;)F
 
     move-result v6
@@ -193,7 +189,6 @@
     :goto_0
     iget-object v4, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mSwipeDirection:I
     invoke-static {v4}, Landroid/support/design/widget/SwipeDismissBehavior;->access$200(Landroid/support/design/widget/SwipeDismissBehavior;)I
 
     move-result v4
@@ -213,7 +208,6 @@
     iget v1, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->mOriginalCapturedViewLeft:I
 
     :goto_1
-    # invokes: Landroid/support/design/widget/SwipeDismissBehavior;->clamp(III)I
     invoke-static {v2, p2, v1}, Landroid/support/design/widget/SwipeDismissBehavior;->access$400(III)I
 
     move-result v3
@@ -241,7 +235,6 @@
     :cond_2
     iget-object v4, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mSwipeDirection:I
     invoke-static {v4}, Landroid/support/design/widget/SwipeDismissBehavior;->access$200(Landroid/support/design/widget/SwipeDismissBehavior;)I
 
     move-result v4
@@ -320,7 +313,6 @@
 
     iget-object v0, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mListener:Landroid/support/design/widget/SwipeDismissBehavior$OnDismissListener;
     invoke-static {v0}, Landroid/support/design/widget/SwipeDismissBehavior;->access$000(Landroid/support/design/widget/SwipeDismissBehavior;)Landroid/support/design/widget/SwipeDismissBehavior$OnDismissListener;
 
     move-result-object v0
@@ -329,7 +321,6 @@
 
     iget-object v0, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mListener:Landroid/support/design/widget/SwipeDismissBehavior$OnDismissListener;
     invoke-static {v0}, Landroid/support/design/widget/SwipeDismissBehavior;->access$000(Landroid/support/design/widget/SwipeDismissBehavior;)Landroid/support/design/widget/SwipeDismissBehavior$OnDismissListener;
 
     move-result-object v0
@@ -359,7 +350,6 @@
 
     iget-object v5, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mAlphaStartSwipeDistance:F
     invoke-static {v5}, Landroid/support/design/widget/SwipeDismissBehavior;->access$500(Landroid/support/design/widget/SwipeDismissBehavior;)F
 
     move-result v5
@@ -380,7 +370,6 @@
 
     iget-object v5, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mAlphaEndSwipeDistance:F
     invoke-static {v5}, Landroid/support/design/widget/SwipeDismissBehavior;->access$600(Landroid/support/design/widget/SwipeDismissBehavior;)F
 
     move-result v5
@@ -420,7 +409,6 @@
 
     sub-float v3, v6, v0
 
-    # invokes: Landroid/support/design/widget/SwipeDismissBehavior;->clamp(FFF)F
     invoke-static {v7, v3, v6}, Landroid/support/design/widget/SwipeDismissBehavior;->access$700(FFF)F
 
     move-result v3
@@ -463,7 +451,6 @@
     :goto_1
     iget-object v3, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mViewDragHelper:Landroid/support/v4/widget/ViewDragHelper;
     invoke-static {v3}, Landroid/support/design/widget/SwipeDismissBehavior;->access$100(Landroid/support/design/widget/SwipeDismissBehavior;)Landroid/support/v4/widget/ViewDragHelper;
 
     move-result-object v3
@@ -507,7 +494,6 @@
 
     iget-object v3, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mListener:Landroid/support/design/widget/SwipeDismissBehavior$OnDismissListener;
     invoke-static {v3}, Landroid/support/design/widget/SwipeDismissBehavior;->access$000(Landroid/support/design/widget/SwipeDismissBehavior;)Landroid/support/design/widget/SwipeDismissBehavior$OnDismissListener;
 
     move-result-object v3
@@ -516,7 +502,6 @@
 
     iget-object v3, p0, Landroid/support/design/widget/SwipeDismissBehavior$1;->this$0:Landroid/support/design/widget/SwipeDismissBehavior;
 
-    # getter for: Landroid/support/design/widget/SwipeDismissBehavior;->mListener:Landroid/support/design/widget/SwipeDismissBehavior$OnDismissListener;
     invoke-static {v3}, Landroid/support/design/widget/SwipeDismissBehavior;->access$000(Landroid/support/design/widget/SwipeDismissBehavior;)Landroid/support/design/widget/SwipeDismissBehavior$OnDismissListener;
 
     move-result-object v3

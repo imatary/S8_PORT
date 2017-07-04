@@ -45,7 +45,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider$1;->this$0:Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;
 
-    # getter for: Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;->mView:Lcom/sec/android/gallery3d/glcore/LibGLRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;->access$000(Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;)Lcom/sec/android/gallery3d/glcore/LibGLRootView;
 
     move-result-object v0
@@ -58,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider$1;->this$0:Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;
 
-    # getter for: Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;->mView:Lcom/sec/android/gallery3d/glcore/LibGLRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;->access$000(Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;)Lcom/sec/android/gallery3d/glcore/LibGLRootView;
 
     move-result-object v0
@@ -69,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider$1;->this$0:Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;
 
-    # getter for: Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;->mView:Lcom/sec/android/gallery3d/glcore/LibGLRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;->access$000(Lcom/sec/samsung/gallery/view/accessibility/LibGLAccessibilityNodeProvider;)Lcom/sec/android/gallery3d/glcore/LibGLRootView;
 
     move-result-object v2

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mListener:Landroid/content/DialogInterface$OnCancelListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$000(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)Landroid/content/DialogInterface$OnCancelListener;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->mListener:Landroid/content/DialogInterface$OnCancelListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;->access$000(Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)Landroid/content/DialogInterface$OnCancelListener;
 
     move-result-object v0

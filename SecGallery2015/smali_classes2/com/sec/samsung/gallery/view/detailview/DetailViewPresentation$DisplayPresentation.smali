@@ -46,14 +46,12 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation$DisplayPresentation;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;->createLayoutParams()Landroid/view/WindowManager$LayoutParams;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;->access$100(Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;)Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation$DisplayPresentation;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;->mPresentation:Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation$DisplayPresentation;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;->access$200(Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;)Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation$DisplayPresentation;
 
     move-result-object v2

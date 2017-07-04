@@ -59,12 +59,10 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$2$2;->this$1:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$2;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$2;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$2;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$2;)Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
     move-result-object v1
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->mCache:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageCache;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$11(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;)Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageCache;
 
     move-result-object v1
@@ -81,7 +79,6 @@
 
     if-eqz v1, :cond_0
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$0()Ljava/lang/String;
 
     move-result-object v1
@@ -113,7 +110,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$2$2;->val$imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->mListener:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageListener;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$3(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageListener;
 
     move-result-object v1

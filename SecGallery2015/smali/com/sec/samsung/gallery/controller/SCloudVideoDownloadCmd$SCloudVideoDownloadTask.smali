@@ -67,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd$SCloudVideoDownloadTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

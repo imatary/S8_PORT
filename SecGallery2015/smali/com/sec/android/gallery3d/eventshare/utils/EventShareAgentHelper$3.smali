@@ -73,7 +73,6 @@
 
     iget v2, p0, Lcom/sec/android/gallery3d/eventshare/utils/EventShareAgentHelper$3;->val$push:I
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/EventShareAgentHelper;->postprocessRecivedPush(Landroid/content/Context;Landroid/content/Intent;I)V
     invoke-static {v0, v1, v2}, Lcom/sec/android/gallery3d/eventshare/utils/EventShareAgentHelper;->access$000(Landroid/content/Context;Landroid/content/Intent;I)V
 
     return-void

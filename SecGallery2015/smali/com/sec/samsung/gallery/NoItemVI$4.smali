@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/NoItemVI$4;->this$0:Lcom/sec/samsung/gallery/NoItemVI;
 
-    # getter for: Lcom/sec/samsung/gallery/NoItemVI;->mPathLineAnimationView:Lcom/altamirasoft/path_animation/PathLineAnimationView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/NoItemVI;->access$400(Lcom/sec/samsung/gallery/NoItemVI;)Lcom/altamirasoft/path_animation/PathLineAnimationView;
 
     move-result-object v1
@@ -48,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/NoItemVI$4;->this$0:Lcom/sec/samsung/gallery/NoItemVI;
 
-    # getter for: Lcom/sec/samsung/gallery/NoItemVI;->mPathLineAnimationView:Lcom/altamirasoft/path_animation/PathLineAnimationView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/NoItemVI;->access$400(Lcom/sec/samsung/gallery/NoItemVI;)Lcom/altamirasoft/path_animation/PathLineAnimationView;
 
     move-result-object v1

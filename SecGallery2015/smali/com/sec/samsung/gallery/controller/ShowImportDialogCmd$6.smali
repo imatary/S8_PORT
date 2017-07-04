@@ -111,7 +111,6 @@
 
     move-result v3
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v4, v3}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     return-void

@@ -710,7 +710,6 @@
 
     :cond_5
     :try_start_6
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->isCanceled()Z
     invoke-static {p1}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Z
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
@@ -738,7 +737,6 @@
 
     move-result-object v3
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->bitmapFactoryOptions:Landroid/graphics/BitmapFactory$Options;
     invoke-static {p1}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Landroid/graphics/BitmapFactory$Options;
 
     move-result-object v0
@@ -793,7 +791,6 @@
     iput-object v5, v0, Landroid/graphics/BitmapFactory$Options;->inTempStorage:[B
 
     :cond_9
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->isCanceled()Z
     invoke-static {p1}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Z
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_1
@@ -1200,7 +1197,6 @@
     :goto_0
     invoke-interface {p2, v0, v6}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageListener;->onResponse(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;Z)V
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->complete:Z
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$7(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Z
 
     move-result v1

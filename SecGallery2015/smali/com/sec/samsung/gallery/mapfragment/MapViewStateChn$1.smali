@@ -66,7 +66,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn$1;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->onConfigChanged()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;->access$000(Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;)V
 
     :cond_0

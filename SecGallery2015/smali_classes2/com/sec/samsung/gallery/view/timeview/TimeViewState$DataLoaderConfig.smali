@@ -42,7 +42,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0
@@ -59,8 +58,6 @@
 
     :goto_0
     iput-boolean v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$DataLoaderConfig;->mUseSmartClustering:Z
-
-    iput-boolean v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$DataLoaderConfig;->mUseBitmapDrawTask:Z
 
     iput-boolean v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$DataLoaderConfig;->mUseZoomLevelInformation:Z
 

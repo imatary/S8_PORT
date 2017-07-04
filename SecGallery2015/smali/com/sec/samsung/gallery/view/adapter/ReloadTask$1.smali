@@ -45,7 +45,6 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/ReloadTask$1;->this$0:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/ReloadTask;->mLoadingListener:Lcom/sec/android/gallery3d/app/LoadingListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/ReloadTask;->access$000(Lcom/sec/samsung/gallery/view/adapter/ReloadTask;)Lcom/sec/android/gallery3d/app/LoadingListener;
 
     move-result-object v1
@@ -54,7 +53,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/ReloadTask$1;->this$0:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/ReloadTask;->mLoadingListener:Lcom/sec/android/gallery3d/app/LoadingListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/ReloadTask;->access$000(Lcom/sec/samsung/gallery/view/adapter/ReloadTask;)Lcom/sec/android/gallery3d/app/LoadingListener;
 
     move-result-object v1
@@ -68,7 +66,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/ReloadTask$1;->this$0:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/ReloadTask;->mLoadingListener:Lcom/sec/android/gallery3d/app/LoadingListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/ReloadTask;->access$000(Lcom/sec/samsung/gallery/view/adapter/ReloadTask;)Lcom/sec/android/gallery3d/app/LoadingListener;
 
     move-result-object v1
@@ -77,7 +74,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/ReloadTask$1;->this$0:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/ReloadTask;->mLoadingListener:Lcom/sec/android/gallery3d/app/LoadingListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/ReloadTask;->access$000(Lcom/sec/samsung/gallery/view/adapter/ReloadTask;)Lcom/sec/android/gallery3d/app/LoadingListener;
 
     move-result-object v1

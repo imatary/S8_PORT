@@ -36,7 +36,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/HdmiManager$1;->this$0:Lcom/sec/android/gallery3d/app/HdmiManager;
 
-    # getter for: Lcom/sec/android/gallery3d/app/HdmiManager;->mListeners:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/HdmiManager;->access$000(Lcom/sec/android/gallery3d/app/HdmiManager;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -61,7 +60,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/HdmiManager$1;->this$0:Lcom/sec/android/gallery3d/app/HdmiManager;
 
-    # getter for: Lcom/sec/android/gallery3d/app/HdmiManager;->sIsPlugged:Ljava/lang/Boolean;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/HdmiManager;->access$100(Lcom/sec/android/gallery3d/app/HdmiManager;)Ljava/lang/Boolean;
 
     move-result-object v2
@@ -70,7 +68,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/HdmiManager$1;->this$0:Lcom/sec/android/gallery3d/app/HdmiManager;
 
-    # getter for: Lcom/sec/android/gallery3d/app/HdmiManager;->sIsPlugged:Ljava/lang/Boolean;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/HdmiManager;->access$100(Lcom/sec/android/gallery3d/app/HdmiManager;)Ljava/lang/Boolean;
 
     move-result-object v2

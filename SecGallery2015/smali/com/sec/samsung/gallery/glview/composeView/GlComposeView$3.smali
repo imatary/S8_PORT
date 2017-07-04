@@ -110,7 +110,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getPosCtrl(I)Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
     invoke-static {v0, p3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;I)Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
 
     move-result-object v0
@@ -214,7 +213,6 @@
 
     const/16 v2, 0x40
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mUpdateDefaultMax:I
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$802(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;I)I
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
@@ -236,7 +234,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mDeleteMode:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$1500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Z
 
     move-result v1

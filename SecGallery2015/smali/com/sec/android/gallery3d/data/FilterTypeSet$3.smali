@@ -49,7 +49,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/FilterTypeSet$3;->this$0:Lcom/sec/android/gallery3d/data/FilterTypeSet;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FilterTypeSet;->mMediaType:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/FilterTypeSet;->access$000(Lcom/sec/android/gallery3d/data/FilterTypeSet;)I
 
     move-result v2
@@ -73,7 +72,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/FilterTypeSet$3;->this$0:Lcom/sec/android/gallery3d/data/FilterTypeSet;
 
-    # invokes: Lcom/sec/android/gallery3d/data/FilterTypeSet;->isFilteredItem(Lcom/sec/android/gallery3d/data/MediaItem;)Z
     invoke-static {v1, p2}, Lcom/sec/android/gallery3d/data/FilterTypeSet;->access$100(Lcom/sec/android/gallery3d/data/FilterTypeSet;Lcom/sec/android/gallery3d/data/MediaItem;)Z
 
     move-result v1
@@ -82,7 +80,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/FilterTypeSet$3;->this$0:Lcom/sec/android/gallery3d/data/FilterTypeSet;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FilterTypeSet;->mPaths:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/FilterTypeSet;->access$200(Lcom/sec/android/gallery3d/data/FilterTypeSet;)Ljava/util/ArrayList;
 
     move-result-object v1

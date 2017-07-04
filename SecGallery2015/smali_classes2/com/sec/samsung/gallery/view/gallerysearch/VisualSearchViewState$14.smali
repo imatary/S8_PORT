@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$14;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mVisualSearchView:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
     move-result-object v1
@@ -54,7 +53,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$14;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mVisualSearchView:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
     move-result-object v1
@@ -71,15 +69,13 @@
 
     const v3, 0x7f100001
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setEmptyHistoryText(Ljava/lang/String;II)V
-    invoke-static {v1, v2, v3, v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;II)V
+    invoke-static {v1, v2, v3, v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;II)V
 
     :goto_0
     if-eqz p1, :cond_0
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$14;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsNeedToReloadVisualSearchView:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Z
 
     move-result v0
@@ -90,12 +86,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsNeedToReloadVisualSearchView:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$202(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$14;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mVisualSearchView:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
     move-result-object v0
@@ -105,8 +99,7 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$14;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateViewVisibility()V
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
 
     return-void
 
@@ -117,8 +110,7 @@
 
     const v3, 0x7f100183
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->FEATURE_IS_TABLET:Z
-    invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5200()Z
+    invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$5600()Z
 
     move-result v4
 
@@ -127,8 +119,7 @@
     const v0, 0x7f0b0201
 
     :cond_2
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setEmptyHistoryText(III)V
-    invoke-static {v1, v2, v3, v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;III)V
+    invoke-static {v1, v2, v3, v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;III)V
 
     goto :goto_0
 .end method

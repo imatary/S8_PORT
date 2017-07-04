@@ -68,7 +68,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/MapViewState$3;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/MapViewState;->access$400(Lcom/sec/samsung/gallery/mapfragment/MapViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

@@ -61,7 +61,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/ActionImage$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/ActionImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/ActionImage;->mInitialImageVisible:Z
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/ActionImage;->access$000(Lcom/sec/android/gallery3d/data/ActionImage;)Z
 
     move-result v3
@@ -74,7 +73,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/ActionImage$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/ActionImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/ActionImage;->mResourceId:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/ActionImage;->access$100(Lcom/sec/android/gallery3d/data/ActionImage;)I
 
     move-result v3
@@ -98,7 +96,6 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/ActionImage$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/ActionImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/ActionImage;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/ActionImage;->access$200(Lcom/sec/android/gallery3d/data/ActionImage;)Landroid/graphics/Bitmap;
 
     move-result-object v3
@@ -130,7 +127,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/ActionImage$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/ActionImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/ActionImage;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/ActionImage;->access$200(Lcom/sec/android/gallery3d/data/ActionImage;)Landroid/graphics/Bitmap;
 
     move-result-object v4
@@ -145,7 +141,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/ActionImage$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/ActionImage;
 
-    # setter for: Lcom/sec/android/gallery3d/data/ActionImage;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v3, v2}, Lcom/sec/android/gallery3d/data/ActionImage;->access$202(Lcom/sec/android/gallery3d/data/ActionImage;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     goto :goto_0
@@ -153,7 +148,6 @@
     :cond_2
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/ActionImage$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/ActionImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/ActionImage;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/ActionImage;->access$200(Lcom/sec/android/gallery3d/data/ActionImage;)Landroid/graphics/Bitmap;
 
     move-result-object v0

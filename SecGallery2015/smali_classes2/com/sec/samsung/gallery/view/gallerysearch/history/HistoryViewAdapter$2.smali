@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;->hideSoftInput(Landroid/view/MotionEvent;)V
     invoke-static {v0, p2}, Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;Landroid/view/MotionEvent;)V
 
     const/4 v0, 0x0

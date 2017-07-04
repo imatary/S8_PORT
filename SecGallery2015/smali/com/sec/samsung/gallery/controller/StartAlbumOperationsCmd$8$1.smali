@@ -51,7 +51,6 @@
 
     iget v2, v2, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$8;->val$operationId:I
 
-    # invokes: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->showDialog(Ljava/io/File;I)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1700(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Ljava/io/File;I)V
 
     return-void

@@ -37,7 +37,6 @@
 
     const-string/jumbo v1, "ROOT"
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->createFileBrowserUri(Ljava/lang/String;JLjava/lang/String;)Landroid/net/Uri;
     invoke-static {v0, p0, p1, v1}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->access$3(Ljava/lang/String;JLjava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     const-string/jumbo v0, "file_browser2"
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->createFileBrowserUri(Ljava/lang/String;J)Landroid/net/Uri;
     invoke-static {v0, p0, p1}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->access$4(Ljava/lang/String;J)Landroid/net/Uri;
 
     move-result-object v0
@@ -63,7 +61,6 @@
 
     const-string/jumbo v0, "file_browser2"
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->getDeviceIdFromUri(Landroid/net/Uri;Ljava/lang/String;)J
     invoke-static {p0, v0}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->access$1(Landroid/net/Uri;Ljava/lang/String;)J
 
     move-result-wide v0
@@ -76,7 +73,6 @@
 
     const-string/jumbo v0, "file_browser2"
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->getDirectoryIdFromUri(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
     invoke-static {p0, v0}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->access$2(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -89,7 +85,6 @@
 
     const-string/jumbo v0, "file_browser2"
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->createFileBrowserUri(Ljava/lang/String;JLjava/lang/String;)Landroid/net/Uri;
     invoke-static {v0, p0, p1, p2}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->access$3(Ljava/lang/String;JLjava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
@@ -102,7 +97,6 @@
 
     const-string/jumbo v0, "file_browser2"
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->isFileBrowserUri(Landroid/net/Uri;Ljava/lang/String;)Z
     invoke-static {p0, v0}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$FileBrowser;->access$0(Landroid/net/Uri;Ljava/lang/String;)Z
 
     move-result v0

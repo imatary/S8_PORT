@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$1;->val$data:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$ProcessEventData;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->processEvent(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$ProcessEventData;)V
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$ProcessEventData;)V
 
     return-void

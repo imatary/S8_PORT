@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$4;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$1000(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

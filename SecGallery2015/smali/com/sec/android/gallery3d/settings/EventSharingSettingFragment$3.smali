@@ -39,40 +39,18 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment$3;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
-    invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->access$200(Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;)Landroid/content/Context;
-
-    move-result-object v1
-
-    move-object v0, p2
-
-    check-cast v0, Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    invoke-static {v1, v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->saveNotificationPrefrence(Landroid/content/Context;Z)V
-
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->FEATURE_USE_NOTIFICATION_SETTING:Z
-    invoke-static {}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->access$300()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment$3;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;
-
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->access$200(Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;)Landroid/content/Context;
 
     move-result-object v0
 
     check-cast p2, Ljava/lang/Boolean;
 
-    invoke-static {v0, p2}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->updateDependantPreferences(Landroid/content/Context;Ljava/lang/Boolean;)V
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    :cond_0
+    move-result v1
+
+    invoke-static {v0, v1}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->saveNotificationPrefrence(Landroid/content/Context;Z)V
+
     const/4 v0, 0x1
 
     return v0

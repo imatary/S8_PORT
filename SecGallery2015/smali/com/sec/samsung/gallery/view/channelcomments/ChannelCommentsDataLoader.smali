@@ -657,6 +657,59 @@
 
     const/4 v8, 0x1
 
+    if-ltz p1, :cond_0
+
+    iget-object v3, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsDataLoader;->mCommentsList:Ljava/util/ArrayList;
+
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
+    move-result v3
+
+    if-lt p1, v3, :cond_1
+
+    :cond_0
+    const-string/jumbo v3, "CommentsDataLoader"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "Wrong position, position="
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string/jumbo v5, ", count="
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsDataLoader;->mCommentsList:Ljava/util/ArrayList;
+
+    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Lcom/sec/android/gallery3d/app/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_0
+    return-void
+
+    :cond_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsDataLoader;->mCommentsList:Ljava/util/ArrayList;
 
     invoke-virtual {v3, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -683,7 +736,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_2
 
     const-string/jumbo v3, "CommentsDataLoader"
 
@@ -691,7 +744,7 @@
 
     invoke-static {v3, v4}, Lcom/sec/android/gallery3d/app/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_0
+    :cond_2
     const/4 v3, 0x6
 
     new-array v2, v3, [Ljava/lang/Object;
@@ -746,7 +799,7 @@
 
     invoke-virtual {v3, v4, v2}, Lorg/puremvc/java/multicore/patterns/facade/Facade;->sendNotification(Ljava/lang/String;Ljava/lang/Object;)V
 
-    return-void
+    goto :goto_0
 .end method
 
 .method public retryUploading(Ljava/lang/String;J)V

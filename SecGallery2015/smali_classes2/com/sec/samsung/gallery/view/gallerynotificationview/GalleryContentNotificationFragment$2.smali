@@ -36,7 +36,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$2;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->mComposeNotificationSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventNotificationSetAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$000(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventNotificationSetAdapter;
 
     move-result-object v1
@@ -45,7 +44,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$2;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->mCardAdapter:Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$800(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;
 
     move-result-object v1
@@ -59,7 +57,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$2;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->mComposeNotificationSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventNotificationSetAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$000(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventNotificationSetAdapter;
 
     move-result-object v1
@@ -81,14 +78,12 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$2;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->mCardAdapter:Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$800(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$2;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->mComposeNotificationSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventNotificationSetAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$000(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventNotificationSetAdapter;
 
     move-result-object v2
@@ -108,7 +103,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$2;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->mCardAdapter:Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$800(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationCardListViewAdapter;
 
     move-result-object v1
@@ -120,14 +114,12 @@
     :cond_4
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$2;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->mMainHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$900(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)Landroid/os/Handler;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$2;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->mMainHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$900(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)Landroid/os/Handler;
 
     move-result-object v2

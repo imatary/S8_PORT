@@ -44,7 +44,6 @@
     :try_start_0
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$2;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$700(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -59,12 +58,10 @@
 
     add-int/lit8 v7, v7, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mNumberOfItemsInAlbum:I
     invoke-static {v6, v7}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$802(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;I)I
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$2;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mLimitAddMember:I
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$900(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)I
 
     move-result v6
@@ -73,14 +70,12 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$2;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$1000(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$2;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mChannelId:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$1100(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)I
 
     move-result v7
@@ -101,7 +96,6 @@
 
     move-result v7
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mLimitAddMember:I
     invoke-static {v6, v7}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$902(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;I)I
 
     :cond_0
@@ -137,7 +131,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$2;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mLimitAddMember:I
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$900(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)I
 
     move-result v9
@@ -182,7 +175,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$2;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$1200(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)Landroid/app/ActionBar;
 
     move-result-object v6

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity$1;->this$0:Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;->checkForUpdatesCompleted(I)V
     invoke-static {v0, p1}, Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;->access$000(Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;I)V
 
     return-void

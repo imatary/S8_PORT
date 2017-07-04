@@ -102,7 +102,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$16;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->isSlideAnimRunning()Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Z
 
     move-result v4
@@ -139,7 +138,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$16;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mClickable:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Z
 
     move-result v4
@@ -165,7 +163,6 @@
     :cond_2
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$16;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->scaleAnimationForSelectionMode(Z)Z
     invoke-static {v4, v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Z)Z
 
     move-result v4
@@ -174,14 +171,12 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$16;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->convertToViewPointX(Lcom/sec/android/gallery3d/glcore/GlObject;I)I
     invoke-static {v4, p1, p2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Lcom/sec/android/gallery3d/glcore/GlObject;I)I
 
     move-result v2
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$16;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->convertToViewPointY(Lcom/sec/android/gallery3d/glcore/GlObject;I)I
     invoke-static {v4, p1, p3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Lcom/sec/android/gallery3d/glcore/GlObject;I)I
 
     move-result v3

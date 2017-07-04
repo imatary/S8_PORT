@@ -112,7 +112,6 @@
 .method public addProxy(Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;)V
     .locals 1
 
-    # setter for: Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->mTask:Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;
     invoke-static {p1, p0}, Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->access$302(Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;)Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->mProxySet:Ljava/util/HashSet;
@@ -166,7 +165,6 @@
 
     move-result-object v5
 
-    # invokes: Lcom/sec/android/gallery3d/data/DownloadCache;->insertEntry(Ljava/lang/String;Ljava/io/File;)J
     invoke-static {v1, v5, v4}, Lcom/sec/android/gallery3d/data/DownloadCache;->access$500(Lcom/sec/android/gallery3d/data/DownloadCache;Ljava/lang/String;Ljava/io/File;)J
 
     move-result-wide v2
@@ -192,7 +190,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->this$0:Lcom/sec/android/gallery3d/data/DownloadCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache;->mTaskMap:Ljava/util/HashMap;
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/DownloadCache;->access$400(Lcom/sec/android/gallery3d/data/DownloadCache;)Ljava/util/HashMap;
 
     move-result-object v8
@@ -204,7 +201,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->this$0:Lcom/sec/android/gallery3d/data/DownloadCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache;->mEntryMap:Lcom/sec/android/gallery3d/common/LruCache;
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/DownloadCache;->access$600(Lcom/sec/android/gallery3d/data/DownloadCache;)Lcom/sec/android/gallery3d/common/LruCache;
 
     move-result-object v9
@@ -229,7 +225,6 @@
     :try_start_2
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->this$0:Lcom/sec/android/gallery3d/data/DownloadCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache;->mEntryMap:Lcom/sec/android/gallery3d/common/LruCache;
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/DownloadCache;->access$600(Lcom/sec/android/gallery3d/data/DownloadCache;)Lcom/sec/android/gallery3d/common/LruCache;
 
     move-result-object v1
@@ -292,7 +287,6 @@
 
     check-cast v7, Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;
 
-    # invokes: Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->setResult(Lcom/sec/android/gallery3d/data/DownloadCache$Entry;)V
     invoke-static {v7, v0}, Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->access$700(Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;Lcom/sec/android/gallery3d/data/DownloadCache$Entry;)V
 
     goto :goto_2
@@ -324,7 +318,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->this$0:Lcom/sec/android/gallery3d/data/DownloadCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache;->mTaskMap:Ljava/util/HashMap;
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/DownloadCache;->access$400(Lcom/sec/android/gallery3d/data/DownloadCache;)Ljava/util/HashMap;
 
     move-result-object v1
@@ -337,7 +330,6 @@
 
     const/16 v5, 0x10
 
-    # invokes: Lcom/sec/android/gallery3d/data/DownloadCache;->freeSomeSpaceIfNeed(I)V
     invoke-static {v1, v5}, Lcom/sec/android/gallery3d/data/DownloadCache;->access$800(Lcom/sec/android/gallery3d/data/DownloadCache;I)V
 
     monitor-exit v8
@@ -369,7 +361,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->this$0:Lcom/sec/android/gallery3d/data/DownloadCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache;->mTaskMap:Ljava/util/HashMap;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/DownloadCache;->access$400(Lcom/sec/android/gallery3d/data/DownloadCache;)Ljava/util/HashMap;
 
     move-result-object v1
@@ -399,7 +390,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->this$0:Lcom/sec/android/gallery3d/data/DownloadCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache;->mTaskMap:Ljava/util/HashMap;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/DownloadCache;->access$400(Lcom/sec/android/gallery3d/data/DownloadCache;)Ljava/util/HashMap;
 
     move-result-object v0
@@ -447,7 +437,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->this$0:Lcom/sec/android/gallery3d/data/DownloadCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache;->mRoot:Ljava/io/File;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/DownloadCache;->access$100(Lcom/sec/android/gallery3d/data/DownloadCache;)Ljava/io/File;
 
     move-result-object v6

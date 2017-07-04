@@ -74,7 +74,6 @@
     :try_start_0
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/cloud/CloudImage$CloudLargeImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/cloud/CloudImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$500(Lcom/sec/android/gallery3d/remote/cloud/CloudImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4

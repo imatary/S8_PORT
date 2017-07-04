@@ -39,14 +39,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$2;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/CropView$2;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v1
@@ -57,7 +55,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/CropView$2;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v2

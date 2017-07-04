@@ -54,7 +54,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$3;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$400(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -70,7 +69,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$3;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$500(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -123,7 +121,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$3;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->mDeviceListRefreshHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$600(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;)Landroid/os/Handler;
 
     move-result-object v1

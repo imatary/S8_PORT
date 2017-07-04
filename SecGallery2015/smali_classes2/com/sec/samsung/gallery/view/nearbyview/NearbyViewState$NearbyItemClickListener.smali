@@ -56,7 +56,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$NearbyItemClickListener;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->mMediaSetAdapter:Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$200(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter;
 
     move-result-object v0
@@ -69,7 +68,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$NearbyItemClickListener;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->selectItem(I)V
     invoke-static {v0, p3}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$500(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;I)V
 
     :cond_0

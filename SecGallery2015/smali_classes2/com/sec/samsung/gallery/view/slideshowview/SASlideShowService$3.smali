@@ -79,7 +79,6 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mVideoUri:Landroid/net/Uri;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$402(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;Landroid/net/Uri;)Landroid/net/Uri;
 
     :cond_2
@@ -93,7 +92,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->startPresentationVideoPlay()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$500(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)V
 
     goto :goto_0
@@ -109,7 +107,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mSlideshowPresentationVideoView:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$600(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;
 
     move-result-object v1
@@ -122,7 +119,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mSlideshowPresentationVideoView:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$600(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;
 
     move-result-object v1
@@ -135,7 +131,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mSlideshowPresentationVideoView:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$600(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;
 
     move-result-object v2
@@ -147,7 +142,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mIsSlideShowVideoPlaying:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$702(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;Z)Z
 
     goto :goto_0
@@ -163,7 +157,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mPresentation:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$800(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
 
     move-result-object v1
@@ -172,7 +165,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mPresentation:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$800(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$SlideShowViewPresentation;
 
     move-result-object v1

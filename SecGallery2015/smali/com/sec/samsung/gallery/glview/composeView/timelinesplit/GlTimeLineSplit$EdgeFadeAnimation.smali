@@ -48,7 +48,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$EdgeFadeAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mMaxElastic:F
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$100(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)F
 
     move-result v2
@@ -57,14 +56,12 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$EdgeFadeAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mRawX:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$000(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)I
 
     move-result v2
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$EdgeFadeAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mDeltaX:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$300(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)I
 
     move-result v3
@@ -73,7 +70,6 @@
 
     int-to-float v2, v2
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->onPull(FF)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$400(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;FF)V
 
     return-void
@@ -94,12 +90,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mMaxElastic:F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$102(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;F)F
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$EdgeFadeAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->cancelEdgeFadeAni()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$200(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)V
 
     return-void

@@ -48,7 +48,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$1;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mPhotoEventHandle:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$000(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
     move-result-object v1
@@ -60,7 +59,6 @@
     :pswitch_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$1;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mIsMtpEnter:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$100(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Z
 
     move-result v1
@@ -81,7 +79,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$1;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->updateAlbumNameOfActionBar()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)V
 
     goto :goto_0
@@ -89,7 +86,6 @@
     :pswitch_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$1;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->setActionBarMenuColor()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$300(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)V
 
     goto :goto_0
@@ -97,7 +93,6 @@
     :pswitch_4
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$1;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->updateCloudAlbumNameOfActionBar()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$400(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)V
 
     goto :goto_0

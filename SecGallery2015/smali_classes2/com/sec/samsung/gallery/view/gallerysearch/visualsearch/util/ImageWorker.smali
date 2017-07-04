@@ -300,7 +300,6 @@
 
     if-eqz v1, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->mData:Ljava/lang/Object;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker$BitmapWorkerTask;)Ljava/lang/Object;
 
     move-result-object v0
@@ -599,13 +598,34 @@
 
     if-eqz p3, :cond_2
 
-    const v0, 0x7f0202a0
+    const v0, 0x7f0202a1
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto :goto_0
 
     :cond_2
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/util/ImageWorker;->mContext:Landroid/content/Context;
+
+    check-cast v0, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getDesktopModeInterface()Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    const v0, 0x7f0202a0
+
+    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
+
+    goto :goto_0
+
+    :cond_3
     const v0, 0x7f02029f
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V

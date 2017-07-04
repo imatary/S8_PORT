@@ -41,7 +41,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$4;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->m360Viewer:Lcom/samsung/android/gallery360viewer/IGallery360Viewer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$500(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Lcom/samsung/android/gallery360viewer/IGallery360Viewer;
 
     move-result-object v1
@@ -50,7 +49,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$4;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mCaptureFilename:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$400(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Ljava/lang/String;
 
     move-result-object v2
@@ -69,10 +67,8 @@
 
     const v2, 0x7f0a01da
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->showToast(I)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$600(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;I)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->FEATURE_USE_DEVICE_COG:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$700()Z
 
     move-result v1
@@ -119,7 +115,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mIsCaptureInProgress:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$802(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Z)Z
 
     return-void
@@ -141,7 +136,6 @@
 
     iget-object v3, v3, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$4;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mCaptureFilename:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$400(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Ljava/lang/String;
 
     move-result-object v3
@@ -162,7 +156,6 @@
 
     const v2, 0x7f0a01d9
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->showToast(I)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$600(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;I)V
 
     goto :goto_0

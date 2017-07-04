@@ -1473,7 +1473,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f020327
+    const v5, 0x7f020329
 
     invoke-virtual {v1, v5}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1738,7 +1738,7 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f020327
+    const v9, 0x7f020329
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

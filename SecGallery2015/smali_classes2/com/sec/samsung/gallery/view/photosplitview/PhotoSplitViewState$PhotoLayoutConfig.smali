@@ -58,7 +58,6 @@
 
     iput-boolean v2, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->mAlbumList:Z
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mSplitRatioLand:F
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$3300(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)F
 
     move-result v0
@@ -67,7 +66,6 @@
 
     iput v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->mLandRatio:F
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mSplitRatioPort:F
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$3400(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)F
 
     move-result v0
@@ -82,7 +80,6 @@
 
     iput v4, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->mInitialLevel:I
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$3500(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -99,7 +96,6 @@
 
     iput v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->mMinLevel:I
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$3600(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -188,7 +184,6 @@
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->mScaleAniConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ScaleAniConfig;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$3800(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -229,7 +224,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$3900(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -246,7 +240,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$4000(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -275,7 +268,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$4100(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -294,7 +286,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$4200(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -318,7 +309,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$4300(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -337,7 +327,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$PhotoLayoutConfig;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$4400(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

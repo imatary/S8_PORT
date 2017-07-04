@@ -68,7 +68,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/RequestPushTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/RequestPushTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/RequestPushTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/group/internal/listener/RequestPushListener;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/RequestPushTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/RequestPushTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/group/internal/listener/RequestPushListener;
 
     move-result-object v1
@@ -81,7 +80,6 @@
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/RequestPushTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/RequestPushTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/RequestPushTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/group/internal/listener/RequestPushListener;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/RequestPushTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/RequestPushTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/group/internal/listener/RequestPushListener;
 
     move-result-object v1

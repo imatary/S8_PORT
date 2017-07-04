@@ -12,6 +12,8 @@
 
 
 # static fields
+.field private static final FEATURE_USE_NAVIGATION_BAR:Z
+
 .field public static final MODE_GRID:I = 0x0
 
 .field public static final MODE_TIMELINE:I = 0x1
@@ -54,6 +56,12 @@
 
 .field private mLevel:I
 
+.field private mModeChangeInProgress:Z
+
+.field private mNavigationPixelSize:I
+
+.field private mNavigationPos:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$NavigationPos;
+
 .field private mNormalTextColor:I
 
 .field private final mResources:Landroid/content/res/Resources;
@@ -78,12 +86,25 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->UseNavigationBar:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v0}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v0
+
+    sput-boolean v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->FEATURE_USE_NAVIGATION_BAR:Z
+
+    return-void
+.end method
+
 .method private constructor <init>(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;)V
     .locals 3
 
     const/4 v2, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -110,7 +131,6 @@
 
     invoke-virtual {p0, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->setUseTouchEvent(Z)V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -129,14 +149,12 @@
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mResources:Landroid/content/res/Resources;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->mGridGenericListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mGridGenericListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->mTimelineGenericListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v0
@@ -145,12 +163,10 @@
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->createTimelineGridMoveListener()V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->mTimelineClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->mGridClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v1
@@ -182,6 +198,37 @@
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mTimelineGridMoveListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlMoveListener;
 
     return-void
+.end method
+
+.method private getNavigationPixelWidth()I
+    .locals 2
+
+    sget-boolean v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->FEATURE_USE_NAVIGATION_BAR:Z
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mNavigationPos:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$NavigationPos;
+
+    sget-object v1, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$NavigationPos;->RIGHT:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$NavigationPos;
+
+    if-eq v0, v1, :cond_0
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mNavigationPos:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$NavigationPos;
+
+    sget-object v1, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$NavigationPos;->LEFT:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$NavigationPos;
+
+    if-ne v0, v1, :cond_1
+
+    :cond_0
+    iget v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mNavigationPixelSize:I
+
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method private getTextColor(I)I
@@ -291,7 +338,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0822
+    const v1, 0x7f0b0823
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -321,7 +368,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b081f
+    const v1, 0x7f0b0820
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -331,7 +378,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b081d
+    const v1, 0x7f0b081e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -341,7 +388,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b081e
+    const v1, 0x7f0b081f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -351,7 +398,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0823
+    const v1, 0x7f0b0824
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -400,6 +447,22 @@
 
 .method private resetAttributes()V
     .locals 4
+
+    iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mContext:Landroid/content/Context;
+
+    check-cast v2, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-static {v2}, Lcom/sec/android/gallery3d/util/GalleryUtils;->getNavigationBarMargin(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)I
+
+    move-result v2
+
+    iput v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mNavigationPixelSize:I
+
+    invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->getNavigationBarPosition()Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$NavigationPos;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mNavigationPos:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$NavigationPos;
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
 
@@ -1066,58 +1129,94 @@
 
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->setVisibleRange()V
 
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->getZ()F
+
+    move-result v0
+
+    iput v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mtz:F
+
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->getZ()F
+
+    move-result v0
+
+    iput v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->msz:F
+
     return-void
 .end method
 
 .method public setVisibleRange()V
-    .locals 5
-
-    const/4 v3, 0x0
+    .locals 6
 
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->getCurrentYPosition()F
 
-    move-result v1
+    move-result v2
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->getNavigationPixelWidth()I
 
-    check-cast v2, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
+    move-result v3
 
-    invoke-virtual {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->isNoItemView()Z
+    int-to-float v3, v3
+
+    iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
+
+    iget v4, v4, Lcom/sec/android/gallery3d/glcore/GlLayer;->mWidthSpace:F
+
+    iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
+
+    iget v5, v5, Lcom/sec/android/gallery3d/glcore/GlLayer;->mWidth:I
+
+    int-to-float v5, v5
+
+    div-float/2addr v4, v5
+
+    mul-float/2addr v3, v4
+
+    const/high16 v4, -0x40000000    # -2.0f
+
+    div-float v1, v3, v4
+
+    iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
+
+    check-cast v3, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
+
+    invoke-virtual {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->isNoItemView()Z
 
     move-result v0
 
-    invoke-virtual {p0, v3, v1, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->setPos(FFF)V
+    const/4 v3, 0x0
+
+    invoke-virtual {p0, v1, v2, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->setPos(FFF)V
 
     if-nez v0, :cond_0
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
+    iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
 
-    iget v2, v2, Lcom/sec/android/gallery3d/glcore/GlLayer;->mHeightSpace:F
+    iget v3, v3, Lcom/sec/android/gallery3d/glcore/GlLayer;->mHeightSpace:F
 
-    iget v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mBgHeightGl:F
+    iget v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->mBgHeightGl:F
 
-    const/high16 v4, 0x40000000    # 2.0f
+    const/high16 v5, 0x40000000    # 2.0f
 
-    div-float/2addr v3, v4
+    div-float/2addr v4, v5
 
-    add-float/2addr v2, v3
+    add-float/2addr v3, v4
 
-    cmpl-float v2, v1, v2
+    cmpl-float v3, v2, v3
 
-    if-lez v2, :cond_1
+    if-lez v3, :cond_1
 
     :cond_0
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
-    invoke-virtual {p0, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->setVisibility(Z)V
+    invoke-virtual {p0, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->setVisibility(Z)V
 
     :goto_0
     return-void
 
     :cond_1
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
-    invoke-virtual {p0, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->setVisibility(Z)V
+    invoke-virtual {p0, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelGridTimelineObject;->setVisibility(Z)V
 
     goto :goto_0
 .end method

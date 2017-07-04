@@ -104,7 +104,7 @@
 
     sget-object v1, Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;->SELECT_ORDER_AND_COUNT_EXIST_NO:Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;
 
-    const v2, 0x7f0a05c7
+    const v2, 0x7f0a05ca
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -114,7 +114,7 @@
 
     sget-object v1, Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;->SELECT_COUNT_IS_ONE_NO:Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;
 
-    const v2, 0x7f0a05c8
+    const v2, 0x7f0a05cb
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -134,7 +134,7 @@
 
     sget-object v1, Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;->SELECT_ORDER_AND_COUNT_EXIST_NO:Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;
 
-    const v2, 0x7f0a0753
+    const v2, 0x7f0a0759
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -144,7 +144,7 @@
 
     sget-object v1, Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;->SELECT_COUNT_IS_ONE_NO:Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;
 
-    const v2, 0x7f0a0754
+    const v2, 0x7f0a075a
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -164,7 +164,7 @@
 
     sget-object v1, Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;->SELECT_ORDER_AND_COUNT_EXIST_NO:Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;
 
-    const v2, 0x7f0a079e
+    const v2, 0x7f0a07a4
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -174,7 +174,7 @@
 
     sget-object v1, Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;->SELECT_COUNT_IS_ONE_NO:Lcom/samsung/android/devicecog/gallery/nlgidmap/DCEnterDetailViewNlgIdMap$FailedType;
 
-    const v2, 0x7f0a07b1
+    const v2, 0x7f0a07b7
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

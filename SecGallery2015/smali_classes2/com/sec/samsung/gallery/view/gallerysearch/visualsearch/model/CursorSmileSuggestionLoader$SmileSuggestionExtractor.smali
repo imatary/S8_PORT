@@ -48,7 +48,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader$SmileSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;)Landroid/content/Context;
 
     move-result-object v4
@@ -67,7 +66,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader$SmileSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->extractMediaId(Landroid/database/Cursor;)I
     invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;Landroid/database/Cursor;)I
 
     move-result v4
@@ -78,7 +76,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader$SmileSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->extractCount(Landroid/database/Cursor;)I
     invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;Landroid/database/Cursor;)I
 
     move-result v4
@@ -87,7 +84,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader$SmileSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->mIsFromSuggestion:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;)Z
 
     move-result v4
@@ -113,7 +109,6 @@
     :cond_1
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader$SmileSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->mSuggestedKeyword:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;)Ljava/lang/String;
 
     move-result-object v4
@@ -124,7 +119,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader$SmileSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->extractDataPath(Landroid/database/Cursor;)Ljava/lang/String;
     invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->access$500(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;Landroid/database/Cursor;)Ljava/lang/String;
 
     move-result-object v4
@@ -139,7 +133,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader$SmileSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->extractIsCloud(Landroid/database/Cursor;)I
     invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;Landroid/database/Cursor;)I
 
     move-result v4
@@ -162,7 +155,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader$SmileSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->extractCloudThumbPath(Landroid/database/Cursor;)Ljava/lang/String;
     invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;Landroid/database/Cursor;)Ljava/lang/String;
 
     move-result-object v4
@@ -185,7 +177,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader$SmileSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->extractOrientation(Landroid/database/Cursor;)I
     invoke-static {v1, v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->access$800(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;Landroid/database/Cursor;)I
 
     move-result v1
@@ -198,7 +189,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader$SmileSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->mSuggestedKeyword:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorSmileSuggestionLoader;)Ljava/lang/String;
 
     move-result-object v1

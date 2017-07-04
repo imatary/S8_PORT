@@ -46,7 +46,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/GestureRecognizer$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/GestureRecognizer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/GestureRecognizer;->mListeners:Ljava/util/ArrayList;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/GestureRecognizer;->access$300(Lcom/sec/android/gallery3d/ui/GestureRecognizer;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -129,7 +128,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/GestureRecognizer$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/GestureRecognizer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/GestureRecognizer;->mListeners:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/GestureRecognizer;->access$300(Lcom/sec/android/gallery3d/ui/GestureRecognizer;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -200,7 +198,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/GestureRecognizer$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/GestureRecognizer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/GestureRecognizer;->mListeners:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/GestureRecognizer;->access$300(Lcom/sec/android/gallery3d/ui/GestureRecognizer;)Ljava/util/ArrayList;
 
     move-result-object v1

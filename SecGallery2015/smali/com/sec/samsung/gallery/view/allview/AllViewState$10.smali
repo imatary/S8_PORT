@@ -38,7 +38,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$10;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v5
@@ -52,7 +51,6 @@
     :cond_1
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$10;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v5
@@ -117,7 +115,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$10;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/allview/AllViewState;->isCloudItemDeleted(Lcom/sec/android/gallery3d/data/MediaItem;)Z
     invoke-static {v6, v3}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$3400(Lcom/sec/samsung/gallery/view/allview/AllViewState;Lcom/sec/android/gallery3d/data/MediaItem;)Z
 
     move-result v6
@@ -147,7 +144,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$10;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$3500(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
     move-result-object v5
@@ -156,7 +152,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$10;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/allview/AllViewState;->exitSelectionMode()V
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$200(Lcom/sec/samsung/gallery/view/allview/AllViewState;)V
 
     goto :goto_0

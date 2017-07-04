@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$16;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mDialog:Landroid/app/AlertDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/app/AlertDialog;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$16;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mDialog:Landroid/app/AlertDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/app/AlertDialog;
 
     move-result-object v0
@@ -59,7 +57,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mDialog:Landroid/app/AlertDialog;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2502(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
 
     :cond_0

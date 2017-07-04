@@ -58,14 +58,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$3;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$800(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$3;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$800(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;)Landroid/os/Handler;
 
     move-result-object v1

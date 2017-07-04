@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker$5;->this$0:Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;
 
-    # getter for: Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->access$200(Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;)Landroid/os/Handler;
 
     move-result-object v1
@@ -66,7 +65,6 @@
     :goto_0
     iget-object v1, p0, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker$5;->this$0:Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;
 
-    # getter for: Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->access$200(Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;)Landroid/os/Handler;
 
     move-result-object v1
@@ -90,7 +88,6 @@
 
     iget-object v2, p0, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker$5;->this$0:Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;
 
-    # getter for: Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->mHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->access$200(Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;)Landroid/os/Handler;
 
     move-result-object v2

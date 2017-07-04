@@ -3257,7 +3257,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v2, 0x7f0a076f
+    const v2, 0x7f0a0775
 
     const/4 v3, 0x0
 
@@ -7779,7 +7779,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mMenu:Landroid/view/Menu;
 
-    const v2, 0x7f120286
+    const v2, 0x7f120285
 
     invoke-static {v1, v2, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemIcon(Landroid/view/Menu;II)V
 

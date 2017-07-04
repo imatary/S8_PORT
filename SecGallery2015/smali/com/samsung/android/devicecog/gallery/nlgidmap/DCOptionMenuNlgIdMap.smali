@@ -36,7 +36,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const v4, 0x7f0a07b7
+    const v4, 0x7f0a07bd
 
     new-instance v1, Ljava/util/HashMap;
 
@@ -96,7 +96,7 @@
 
     const-string/jumbo v1, "StoryDetailSelectedView"
 
-    const v2, 0x7f0a07a6
+    const v2, 0x7f0a07ac
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -116,7 +116,7 @@
 
     const-string/jumbo v1, "DetailView"
 
-    const v2, 0x7f0a079e
+    const v2, 0x7f0a07a4
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -146,7 +146,7 @@
 
     const-string/jumbo v1, "PictureSelectedView"
 
-    const v2, 0x7f0a06b4
+    const v2, 0x7f0a06ba
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -156,7 +156,7 @@
 
     const-string/jumbo v1, "AlbumThumbnailsSelectedView"
 
-    const v2, 0x7f0a0750
+    const v2, 0x7f0a0756
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -166,7 +166,7 @@
 
     const-string/jumbo v1, "AlbumListSelectedView"
 
-    const v2, 0x7f0a0761
+    const v2, 0x7f0a0767
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -226,7 +226,7 @@
 
     const-string/jumbo v1, "PicturesView"
 
-    const v2, 0x7f0a080f
+    const v2, 0x7f0a0815
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -246,7 +246,7 @@
 
     const-string/jumbo v1, "PictureSelectedView"
 
-    const v2, 0x7f0a070d
+    const v2, 0x7f0a0713
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -266,7 +266,7 @@
 
     const-string/jumbo v1, "AlbumThumbnailsSelectedView"
 
-    const v2, 0x7f0a077c
+    const v2, 0x7f0a0782
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -286,7 +286,7 @@
 
     const-string/jumbo v1, "StoryDetailSelectedView"
 
-    const v2, 0x7f0a07b5
+    const v2, 0x7f0a07bb
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -306,7 +306,7 @@
 
     const-string/jumbo v1, "CloudSelectedView"
 
-    const v2, 0x7f0a0818
+    const v2, 0x7f0a081e
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -356,7 +356,7 @@
 
     const-string/jumbo v1, "PictureSelectedView"
 
-    const v2, 0x7f0a06e0
+    const v2, 0x7f0a06e6
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -366,7 +366,7 @@
 
     const-string/jumbo v1, "AlbumThumbnailsSelectedView"
 
-    const v2, 0x7f0a0771
+    const v2, 0x7f0a0777
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -377,6 +377,26 @@
     sget-object v1, Lcom/samsung/android/devicecog/gallery/nlgidmap/DCOptionMenuNlgIdMap;->sFailedNlgMap:Ljava/util/HashMap;
 
     const-string/jumbo v2, "AddTag"
+
+    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    const-string/jumbo v1, "PicturesView"
+
+    const v2, 0x7f0a05d3
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v1, Lcom/samsung/android/devicecog/gallery/nlgidmap/DCOptionMenuNlgIdMap;->sFailedNlgMap:Ljava/util/HashMap;
+
+    const-string/jumbo v2, "VerizonCloud"
 
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -396,7 +416,7 @@
 
     const-string/jumbo v2, "CrossSendToReminder"
 
-    const v3, 0x7f0a07c1
+    const v3, 0x7f0a07c6
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -428,7 +448,7 @@
 
     const-string/jumbo v2, "DOWNLOAD_CLOUD_CONTENT_IN_PICTURES"
 
-    const v3, 0x7f0a070e
+    const v3, 0x7f0a0714
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -440,7 +460,7 @@
 
     const-string/jumbo v2, "DOWNLOAD_CLOUD_CONTENT_IN_ALBUM_THUMBNAILS"
 
-    const v3, 0x7f0a077d
+    const v3, 0x7f0a0783
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -464,7 +484,7 @@
 
     const-string/jumbo v2, "DOWNLOAD_CLOUD_CONTENT_IN_CLOUD_VIEW"
 
-    const v3, 0x7f0a0819
+    const v3, 0x7f0a081f
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -488,7 +508,7 @@
 
     const-string/jumbo v2, "Settings"
 
-    const v3, 0x7f0a07e7
+    const v3, 0x7f0a07ed
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -512,7 +532,7 @@
 
     const-string/jumbo v2, "DeleteGroupPopUp"
 
-    const v3, 0x7f0a07be
+    const v3, 0x7f0a07c4
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -524,7 +544,7 @@
 
     const-string/jumbo v2, "LeaveGroupPopUp"
 
-    const v3, 0x7f0a07bf
+    const v3, 0x7f0a07c5
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -536,7 +556,7 @@
 
     const-string/jumbo v2, "RemoveFromStory"
 
-    const v3, 0x7f0a07a7
+    const v3, 0x7f0a07ad
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -548,7 +568,7 @@
 
     const-string/jumbo v2, "RemoveFromStoryForDetailView"
 
-    const v3, 0x7f0a0843
+    const v3, 0x7f0a0851
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -584,7 +604,19 @@
 
     const-string/jumbo v2, "ContactUs"
 
-    const v3, 0x7f0a0810
+    const v3, 0x7f0a0816
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v1, Lcom/samsung/android/devicecog/gallery/nlgidmap/DCOptionMenuNlgIdMap;->sSucceedNlgMap:Ljava/util/HashMap;
+
+    const-string/jumbo v2, "VerizonCloud"
+
+    const v3, 0x7f0a05d4
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

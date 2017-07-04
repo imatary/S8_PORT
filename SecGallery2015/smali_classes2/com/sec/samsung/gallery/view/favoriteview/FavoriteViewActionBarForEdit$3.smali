@@ -60,7 +60,6 @@
 
     iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit$3;->val$toggleImage:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->setCheckboxState(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;->access$900(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForEdit;Z)V
 
     return-void

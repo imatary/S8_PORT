@@ -49,7 +49,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->mISAService:Lcom/msc/sa/aidl/ISAService;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->access$002(Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;Lcom/msc/sa/aidl/ISAService;)Lcom/msc/sa/aidl/ISAService;
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$1;->this$0:Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;
@@ -60,12 +59,10 @@
 
     invoke-direct {v1, v2}, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$SACallback;-><init>(Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;)V
 
-    # setter for: Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->mSACallback:Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$SACallback;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->access$102(Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$SACallback;)Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$SACallback;
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$1;->this$0:Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->registerCallback()Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->access$200(Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;)Z
 
     move-result v0
@@ -80,7 +77,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder$1;->this$0:Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->requestAccessToken()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->access$300(Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;)V
 
     :cond_0
@@ -100,7 +96,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->mISAService:Lcom/msc/sa/aidl/ISAService;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;->access$002(Lcom/sec/android/gallery3d/eventshare/utils/SamsungAccountBinder;Lcom/msc/sa/aidl/ISAService;)Lcom/msc/sa/aidl/ISAService;
 
     return-void

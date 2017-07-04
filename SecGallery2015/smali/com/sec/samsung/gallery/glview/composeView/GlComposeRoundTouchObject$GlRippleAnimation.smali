@@ -265,7 +265,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;->mDx:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;)I
 
     move-result v5
@@ -290,7 +289,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;->mDy:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;->access$600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;)I
 
     move-result v5

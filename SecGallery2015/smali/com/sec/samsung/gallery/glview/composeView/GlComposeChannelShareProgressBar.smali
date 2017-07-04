@@ -131,7 +131,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressBar;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b081f
+    const v1, 0x7f0b0820
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -141,7 +141,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressBar;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0823
+    const v1, 0x7f0b0824
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

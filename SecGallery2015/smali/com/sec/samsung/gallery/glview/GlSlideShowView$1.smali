@@ -67,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/GlSlideShowView$1;->this$0:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlSlideShowView;->mEffect:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/GlSlideShowView;->access$000(Lcom/sec/samsung/gallery/glview/GlSlideShowView;)Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;
 
     move-result-object v0

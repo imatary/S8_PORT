@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$4;->this$0:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mScreenID:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->access$1100(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;)Ljava/lang/String;
 
     move-result-object v0

@@ -54,7 +54,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$2;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->updateAlbumListForWeChatSight()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$500(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)V
 
     :goto_0
@@ -65,7 +64,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$2;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->updateAlbumList()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$600(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)V
 
     goto :goto_0

@@ -68,7 +68,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/article/CreateArticleTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/article/CreateArticleTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/article/CreateArticleTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/article/CreateArticleListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/article/CreateArticleTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/article/CreateArticleTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/article/CreateArticleListener;
 
     move-result-object v3
@@ -105,7 +104,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/article/CreateArticleTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/article/CreateArticleTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/article/CreateArticleTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/article/CreateArticleListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/article/CreateArticleTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/article/CreateArticleTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/article/CreateArticleListener;
 
     move-result-object v3

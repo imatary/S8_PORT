@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$5;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$000(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -56,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$5;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->selectAlbum(I)V
     invoke-static {v1, p1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$1700(Lcom/sec/samsung/gallery/view/eventview/EventViewState;I)V
 
     :cond_0
@@ -66,7 +64,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$5;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v1
@@ -105,7 +102,6 @@
 
     move-result-object v4
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->startHighLightVideo(IILjava/lang/String;)V
     invoke-static {v2, v1, v3, v4}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$1800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;IILjava/lang/String;)V
 
     goto :goto_0
@@ -131,7 +127,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$5;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->startMapView(I)V
     invoke-static {v1, p1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$1900(Lcom/sec/samsung/gallery/view/eventview/EventViewState;I)V
 
     goto :goto_0
@@ -139,7 +134,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$5;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->getLatestEventInfo()I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$2000(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)I
 
     move-result v1
@@ -152,7 +146,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$5;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$2100(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -168,12 +161,10 @@
     :cond_4
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$5;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->startPhotoView(I)V
     invoke-static {v1, p1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$2200(Lcom/sec/samsung/gallery/view/eventview/EventViewState;I)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$5;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventAlbumMgr:Lcom/sec/android/gallery3d/data/EventAlbumManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$2300(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/data/EventAlbumManager;
 
     move-result-object v1

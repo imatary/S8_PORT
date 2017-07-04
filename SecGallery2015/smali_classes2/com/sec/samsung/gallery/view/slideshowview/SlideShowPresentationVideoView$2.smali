@@ -41,7 +41,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->stopVideoPlay(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->access$600(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;Z)V
 
     return-void

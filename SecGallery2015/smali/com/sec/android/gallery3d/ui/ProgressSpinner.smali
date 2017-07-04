@@ -35,7 +35,7 @@
 
     new-instance v0, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;
 
-    const v1, 0x7f0202d6
+    const v1, 0x7f0202d8
 
     invoke-direct {v0, p1, v1}, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;-><init>(Landroid/content/Context;I)V
 

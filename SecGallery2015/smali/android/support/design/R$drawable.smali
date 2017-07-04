@@ -143,4 +143,4 @@
 
 .field public static final design_snackbar_background:I = 0x7f0200a4
 
-.field public static final notification_template_icon_bg:I = 0x7f02038c
+.field public static final notification_template_icon_bg:I = 0x7f02038e

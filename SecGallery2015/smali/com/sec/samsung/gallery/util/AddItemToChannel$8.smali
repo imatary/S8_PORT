@@ -71,12 +71,10 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/util/AddItemToChannel$8;->val$mediaItemList:Ljava/util/List;
 
-    # invokes: Lcom/sec/samsung/gallery/util/AddItemToChannel;->startSendChannel(I[Landroid/net/Uri;ZZLcom/sec/android/gallery3d/data/ChannelAlbum;Ljava/util/List;)V
     invoke-static/range {v0 .. v6}, Lcom/sec/samsung/gallery/util/AddItemToChannel;->access$200(Lcom/sec/samsung/gallery/util/AddItemToChannel;I[Landroid/net/Uri;ZZLcom/sec/android/gallery3d/data/ChannelAlbum;Ljava/util/List;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/util/AddItemToChannel$8;->this$0:Lcom/sec/samsung/gallery/util/AddItemToChannel;
 
-    # getter for: Lcom/sec/samsung/gallery/util/AddItemToChannel;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/util/AddItemToChannel;->access$000(Lcom/sec/samsung/gallery/util/AddItemToChannel;)Landroid/content/Context;
 
     move-result-object v0

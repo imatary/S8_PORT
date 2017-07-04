@@ -47,7 +47,6 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ImageEditCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ImageEditCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ImageEditCmd;->mEditAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ImageEditCmd;->access$000(Lcom/sec/samsung/gallery/controller/ImageEditCmd;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     move-result-object v1
@@ -56,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ImageEditCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ImageEditCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ImageEditCmd;->mEditAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ImageEditCmd;->access$000(Lcom/sec/samsung/gallery/controller/ImageEditCmd;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     move-result-object v1
@@ -70,7 +68,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ImageEditCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ImageEditCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ImageEditCmd;->createAppList()Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ImageEditCmd;->access$100(Lcom/sec/samsung/gallery/controller/ImageEditCmd;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -79,7 +76,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ImageEditCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ImageEditCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ImageEditCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ImageEditCmd;->access$200(Lcom/sec/samsung/gallery/controller/ImageEditCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -111,7 +107,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ImageEditCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ImageEditCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ImageEditCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ImageEditCmd;->access$200(Lcom/sec/samsung/gallery/controller/ImageEditCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -131,7 +126,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ImageEditCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ImageEditCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ImageEditCmd;->showAppChoiceDialog(Ljava/util/ArrayList;)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/controller/ImageEditCmd;->access$300(Lcom/sec/samsung/gallery/controller/ImageEditCmd;Ljava/util/ArrayList;)V
 
     goto :goto_0
@@ -153,7 +147,6 @@
 
     check-cast v1, Lcom/sec/samsung/gallery/controller/ImageEditCmd$EditPackageInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ImageEditCmd;->startShareApp(Lcom/sec/samsung/gallery/controller/ImageEditCmd$EditPackageInfo;)V
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/controller/ImageEditCmd;->access$400(Lcom/sec/samsung/gallery/controller/ImageEditCmd;Lcom/sec/samsung/gallery/controller/ImageEditCmd$EditPackageInfo;)V
 
     goto :goto_0
@@ -161,7 +154,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ImageEditCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ImageEditCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ImageEditCmd;->dismissDialog()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ImageEditCmd;->access$500(Lcom/sec/samsung/gallery/controller/ImageEditCmd;)V
 
     goto :goto_0

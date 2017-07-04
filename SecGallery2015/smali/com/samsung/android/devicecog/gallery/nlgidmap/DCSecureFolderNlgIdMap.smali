@@ -99,7 +99,7 @@
 
     const-string/jumbo v1, "PictureSelectedView"
 
-    const v2, 0x7f0a06c9
+    const v2, 0x7f0a06cf
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -111,7 +111,7 @@
 
     const-string/jumbo v1, "AlbumThumbnailsSelectedView"
 
-    const v2, 0x7f0a0751
+    const v2, 0x7f0a0757
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -123,7 +123,7 @@
 
     const-string/jumbo v1, "AlbumListSelectedView"
 
-    const v2, 0x7f0a0762
+    const v2, 0x7f0a0768
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -147,7 +147,7 @@
 
     const-string/jumbo v1, "PictureSelectedView"
 
-    const v2, 0x7f0a06cb
+    const v2, 0x7f0a06d1
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -159,7 +159,7 @@
 
     const-string/jumbo v1, "AlbumThumbnailsSelectedView"
 
-    const v2, 0x7f0a0752
+    const v2, 0x7f0a0758
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -171,7 +171,7 @@
 
     const-string/jumbo v1, "AlbumListSelectedView"
 
-    const v2, 0x7f0a0763
+    const v2, 0x7f0a0769
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

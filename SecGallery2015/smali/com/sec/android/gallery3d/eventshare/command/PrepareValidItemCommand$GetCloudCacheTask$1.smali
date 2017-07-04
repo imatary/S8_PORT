@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand$GetCloudCacheTask;->this$0:Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->mSharedEvent:Lcom/sec/android/gallery3d/eventshare/SharedEvent;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;)Lcom/sec/android/gallery3d/eventshare/SharedEvent;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, v0, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand$GetCloudCacheTask;->this$0:Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->mEventState:Lcom/sec/android/gallery3d/eventshare/EventState;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->access$200(Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;)Lcom/sec/android/gallery3d/eventshare/EventState;
 
     move-result-object v0
@@ -75,7 +73,6 @@
 
     iget-object v1, v1, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand$GetCloudCacheTask;->this$0:Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->mEventState:Lcom/sec/android/gallery3d/eventshare/EventState;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->access$200(Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;)Lcom/sec/android/gallery3d/eventshare/EventState;
 
     move-result-object v1
@@ -93,7 +90,6 @@
 
     iget-object v0, v0, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand$GetCloudCacheTask;->this$0:Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->mEventState:Lcom/sec/android/gallery3d/eventshare/EventState;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->access$200(Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;)Lcom/sec/android/gallery3d/eventshare/EventState;
 
     move-result-object v0
@@ -112,7 +108,6 @@
 
     iget-object v1, v1, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand$GetCloudCacheTask;->this$0:Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->mEventState:Lcom/sec/android/gallery3d/eventshare/EventState;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->access$200(Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;)Lcom/sec/android/gallery3d/eventshare/EventState;
 
     move-result-object v1
@@ -121,7 +116,6 @@
 
     iget-object v2, v2, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand$GetCloudCacheTask;->this$0:Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->mIntent:Landroid/content/Intent;
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;->access$300(Lcom/sec/android/gallery3d/eventshare/command/PrepareValidItemCommand;)Landroid/content/Intent;
 
     move-result-object v2

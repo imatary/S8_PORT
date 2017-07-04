@@ -48,19 +48,16 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject$1;->this$1:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;->imageView:Lcom/sec/android/gallery3d/glcore/GlImageView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;)Lcom/sec/android/gallery3d/glcore/GlImageView;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject$1;->this$1:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;->access$1300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;->drawDefaultImage(Lcom/sec/android/gallery3d/glcore/GlImageView;Landroid/graphics/Bitmap;)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationImageObject;Lcom/sec/android/gallery3d/glcore/GlImageView;Landroid/graphics/Bitmap;)V
 
     goto :goto_0

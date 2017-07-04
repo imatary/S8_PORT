@@ -55,7 +55,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$100(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/util/SparseArray;
 
     move-result-object v5
@@ -64,7 +63,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$100(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/util/SparseArray;
 
     move-result-object v5
@@ -85,7 +83,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$100(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/util/SparseArray;
 
     move-result-object v5
@@ -129,7 +126,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$500(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -172,7 +168,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$700(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v4
@@ -225,7 +220,6 @@
     :goto_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$100(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/util/SparseArray;
 
     move-result-object v4
@@ -234,7 +228,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$200(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     move-result-object v4
@@ -247,14 +240,12 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mContext:Landroid/content/Context;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$500(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/content/Context;
 
     move-result-object v7
 
     invoke-direct {v6, v7}, Lcom/sec/samsung/gallery/util/FileUtil;-><init>(Landroid/content/Context;)V
 
-    # setter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v4, v6}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$202(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;Lcom/sec/samsung/gallery/util/FileUtil;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     :cond_1
@@ -262,7 +253,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$200(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     move-result-object v6
@@ -271,12 +261,10 @@
 
     move-result-object v6
 
-    # setter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v4, v6}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$102(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;Landroid/util/SparseArray;)Landroid/util/SparseArray;
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$800(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v4
@@ -285,7 +273,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$100(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/util/SparseArray;
 
     move-result-object v4
@@ -294,7 +281,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$100(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/util/SparseArray;
 
     move-result-object v4
@@ -313,14 +299,12 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$800(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$100(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/util/SparseArray;
 
     move-result-object v4
@@ -357,7 +341,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mMediaObject:Lcom/sec/android/gallery3d/data/MediaObject;
     invoke-static {v4, p1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$902(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;Lcom/sec/android/gallery3d/data/MediaObject;)Lcom/sec/android/gallery3d/data/MediaObject;
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
@@ -414,27 +397,22 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->dismissDialog()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$000(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mMediaSize:Landroid/util/SparseArray;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$102(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;Landroid/util/SparseArray;)Landroid/util/SparseArray;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$202(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;Lcom/sec/samsung/gallery/util/FileUtil;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mOnProgressListener:Lcom/sec/android/gallery3d/data/OnProgressListener;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$302(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;Lcom/sec/android/gallery3d/data/OnProgressListener;)Lcom/sec/android/gallery3d/data/OnProgressListener;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$400(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     move-result-object v1
@@ -443,7 +421,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$400(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     move-result-object v1
@@ -456,7 +433,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$402(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;Lcom/sec/samsung/gallery/util/MediaOperations;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     :goto_0
@@ -465,7 +441,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$402(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;Lcom/sec/samsung/gallery/util/MediaOperations;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->mErrorReason:Ljava/lang/String;
@@ -474,7 +449,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$500(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -487,7 +461,6 @@
     :goto_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$500(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -513,7 +486,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$500(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -527,7 +499,6 @@
     :goto_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$500(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -538,7 +509,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->updateLocalBurstShotDB()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$600(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)V
 
     goto :goto_1
@@ -546,7 +516,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$500(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -572,7 +541,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$800(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v1
@@ -581,7 +549,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;->access$800(Lcom/sec/samsung/gallery/controller/CopyBurstShotCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v1

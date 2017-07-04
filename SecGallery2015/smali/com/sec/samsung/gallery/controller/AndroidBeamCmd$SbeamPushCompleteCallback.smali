@@ -61,7 +61,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$SbeamPushCompleteCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$500(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)I
 
     move-result v3
@@ -86,7 +85,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$SbeamPushCompleteCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$500(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)I
 
     move-result v2
@@ -95,7 +93,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$SbeamPushCompleteCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v1, v4}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$502(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;I)I
 
     :goto_0
@@ -110,7 +107,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$SbeamPushCompleteCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$600(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Landroid/app/Activity;
 
     move-result-object v1
@@ -119,7 +115,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$SbeamPushCompleteCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v1, v4}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$502(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;I)I
 
     goto :goto_0

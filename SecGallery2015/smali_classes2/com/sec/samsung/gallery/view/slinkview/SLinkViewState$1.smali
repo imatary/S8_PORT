@@ -42,14 +42,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$1;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->mMediaSetAdapter:Lcom/sec/samsung/gallery/view/adapter/SLinkMediaSetAdapter;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$100(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;)Lcom/sec/samsung/gallery/view/adapter/SLinkMediaSetAdapter;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$1;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->updateSLinkItems()Ljava/util/List;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$000(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;)Ljava/util/List;
 
     move-result-object v1
@@ -58,7 +56,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$1;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->updateView()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$200(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;)V
 
     return-void

@@ -57,7 +57,7 @@
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)J
+.method static synthetic access$000(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)J
     .locals 2
 
     iget-wide v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mVersion:J
@@ -65,7 +65,7 @@
     return-wide v0
 .end method
 
-.method static synthetic access$102(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;J)J
+.method static synthetic access$002(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;J)J
     .locals 1
 
     iput-wide p1, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mVersion:J
@@ -73,7 +73,7 @@
     return-wide p1
 .end method
 
-.method static synthetic access$200(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)B
+.method static synthetic access$100(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)B
     .locals 1
 
     iget-byte v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mThmSizeType:B
@@ -81,7 +81,7 @@
     return v0
 .end method
 
-.method static synthetic access$202(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
+.method static synthetic access$102(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
     .locals 0
 
     iput-byte p1, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mThmSizeType:B
@@ -89,7 +89,7 @@
     return p1
 .end method
 
-.method static synthetic access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
+.method static synthetic access$200(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->setMediaItemCount(IZ)V
@@ -97,7 +97,7 @@
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
+.method static synthetic access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mItemVersion:[J
@@ -105,7 +105,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
+.method static synthetic access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mUpdated:[B
@@ -113,7 +113,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$600(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
+.method static synthetic access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mSetVersion:[J

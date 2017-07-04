@@ -276,7 +276,7 @@
     :cond_5
     iget-object v9, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ChannelViewDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v11, 0x7f0a0792
+    const v11, 0x7f0a0798
 
     new-array v10, v10, [Ljava/lang/Object;
 
@@ -655,7 +655,7 @@
     :cond_5
     iget-object v0, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ChannelViewDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v1, 0x7f0a0785
+    const v1, 0x7f0a078b
 
     const/4 v12, 0x0
 
@@ -713,7 +713,7 @@
 
     iget-object v1, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ChannelViewDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f0a07e6
+    const v2, 0x7f0a07eb
 
     const/4 v3, 0x0
 

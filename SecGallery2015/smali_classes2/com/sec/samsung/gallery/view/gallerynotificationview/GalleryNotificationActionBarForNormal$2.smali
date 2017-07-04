@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal$2;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;->access$300(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal$2;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;->access$400(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -77,7 +75,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal$2;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;->access$500(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v0

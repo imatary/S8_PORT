@@ -20,7 +20,6 @@
 
     invoke-direct {p0}, Landroid/util/SparseIntArray;-><init>()V
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/LogicalAlbumResIds;->VIDEO_BUCKET_ID:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/adapter/LogicalAlbumResIds;->access$000()I
 
     move-result v0
@@ -29,7 +28,6 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/view/adapter/LogicalAlbumResIds$1;->put(II)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/LogicalAlbumResIds;->BURSTSHOT_BUCKET_ID:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/adapter/LogicalAlbumResIds;->access$100()I
 
     move-result v0
@@ -38,7 +36,6 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/view/adapter/LogicalAlbumResIds$1;->put(II)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/LogicalAlbumResIds;->FAVORITE_BUCKET_ID:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/adapter/LogicalAlbumResIds;->access$200()I
 
     move-result v0

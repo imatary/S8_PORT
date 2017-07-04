@@ -57,7 +57,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05f0
+    const v9, 0x7f0a05f6
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -67,7 +67,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a05fe
+    const v9, 0x7f0a0604
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -77,7 +77,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a060a
+    const v9, 0x7f0a0610
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -87,7 +87,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06a9
+    const v9, 0x7f0a06af
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -97,7 +97,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06b6
+    const v9, 0x7f0a06bc
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -107,7 +107,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06e9
+    const v9, 0x7f0a06ef
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -117,7 +117,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a061e
+    const v9, 0x7f0a0624
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -127,7 +127,7 @@
 
     const-string/jumbo v8, "AlbumListEmptySelectedView"
 
-    const v9, 0x7f0a062b
+    const v9, 0x7f0a0631
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -137,7 +137,7 @@
 
     const-string/jumbo v8, "AlbumListSelectedView"
 
-    const v9, 0x7f0a0633
+    const v9, 0x7f0a0639
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -147,7 +147,7 @@
 
     const-string/jumbo v8, "AlbumListPicker"
 
-    const v9, 0x7f0a06c2
+    const v9, 0x7f0a06c8
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -157,7 +157,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a063b
+    const v9, 0x7f0a0641
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -167,7 +167,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a064b
+    const v9, 0x7f0a0651
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -177,7 +177,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a0657
+    const v9, 0x7f0a065d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -187,7 +187,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06cd
+    const v9, 0x7f0a06d3
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -197,7 +197,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06d9
+    const v9, 0x7f0a06df
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -207,7 +207,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a06f5
+    const v9, 0x7f0a06fb
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -217,7 +217,7 @@
 
     const-string/jumbo v8, "StoryListView"
 
-    const v9, 0x7f0a0663
+    const v9, 0x7f0a0669
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -227,7 +227,7 @@
 
     const-string/jumbo v8, "StoryListEmptySelectedView"
 
-    const v9, 0x7f0a0669
+    const v9, 0x7f0a066f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -237,7 +237,7 @@
 
     const-string/jumbo v8, "StoryListSelectedView"
 
-    const v9, 0x7f0a066d
+    const v9, 0x7f0a0673
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -247,7 +247,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a0671
+    const v9, 0x7f0a0677
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -257,7 +257,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a067d
+    const v9, 0x7f0a0683
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -267,7 +267,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a068c
+    const v9, 0x7f0a0692
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -277,7 +277,7 @@
 
     const-string/jumbo v8, "SearchView"
 
-    const v9, 0x7f0a05d0
+    const v9, 0x7f0a05d6
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -287,7 +287,7 @@
 
     const-string/jumbo v8, "SearchViewResult"
 
-    const v9, 0x7f0a05d4
+    const v9, 0x7f0a05da
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -297,7 +297,7 @@
 
     const-string/jumbo v8, "SearchEmptySelectedView"
 
-    const v9, 0x7f0a05dc
+    const v9, 0x7f0a05e2
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -307,7 +307,7 @@
 
     const-string/jumbo v8, "SearchSelectedView"
 
-    const v9, 0x7f0a05e8
+    const v9, 0x7f0a05ee
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -317,7 +317,7 @@
 
     const-string/jumbo v8, "Notification"
 
-    const v9, 0x7f0a0698
+    const v9, 0x7f0a069e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -327,7 +327,7 @@
 
     const-string/jumbo v8, "MapView"
 
-    const v9, 0x7f0a069c
+    const v9, 0x7f0a06a2
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -337,7 +337,7 @@
 
     const-string/jumbo v8, "CopyToAlbum"
 
-    const v9, 0x7f0a0702
+    const v9, 0x7f0a0708
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -347,7 +347,7 @@
 
     const-string/jumbo v8, "MoveToAlbum"
 
-    const v9, 0x7f0a0706
+    const v9, 0x7f0a070c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -357,7 +357,7 @@
 
     const-string/jumbo v8, "AddToStory"
 
-    const v9, 0x7f0a070a
+    const v9, 0x7f0a0710
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -367,7 +367,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a0710
+    const v9, 0x7f0a0716
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -377,7 +377,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a071c
+    const v9, 0x7f0a0722
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -387,7 +387,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a072b
+    const v9, 0x7f0a0731
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -397,7 +397,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a0737
+    const v9, 0x7f0a073d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -411,7 +411,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05f2
+    const v9, 0x7f0a05f8
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -421,7 +421,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a0600
+    const v9, 0x7f0a0606
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -431,7 +431,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a060c
+    const v9, 0x7f0a0612
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -441,7 +441,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06ab
+    const v9, 0x7f0a06b1
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -451,7 +451,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06b8
+    const v9, 0x7f0a06be
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -461,7 +461,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06eb
+    const v9, 0x7f0a06f1
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -471,7 +471,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a0620
+    const v9, 0x7f0a0626
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -481,7 +481,7 @@
 
     const-string/jumbo v8, "AlbumListEmptySelectedView"
 
-    const v9, 0x7f0a062d
+    const v9, 0x7f0a0633
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -491,7 +491,7 @@
 
     const-string/jumbo v8, "AlbumListSelectedView"
 
-    const v9, 0x7f0a0635
+    const v9, 0x7f0a063b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -501,7 +501,7 @@
 
     const-string/jumbo v8, "AlbumListPicker"
 
-    const v9, 0x7f0a06c4
+    const v9, 0x7f0a06ca
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -511,7 +511,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a063d
+    const v9, 0x7f0a0643
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -521,7 +521,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a064d
+    const v9, 0x7f0a0653
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -531,7 +531,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a0659
+    const v9, 0x7f0a065f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -541,7 +541,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06cf
+    const v9, 0x7f0a06d5
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -551,7 +551,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06db
+    const v9, 0x7f0a06e1
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -561,7 +561,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a06f7
+    const v9, 0x7f0a06fd
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -571,7 +571,7 @@
 
     const-string/jumbo v8, "StoryListView"
 
-    const v9, 0x7f0a0665
+    const v9, 0x7f0a066b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -581,7 +581,7 @@
 
     const-string/jumbo v8, "StoryListEmptySelectedView"
 
-    const v9, 0x7f0a066b
+    const v9, 0x7f0a0671
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -591,7 +591,7 @@
 
     const-string/jumbo v8, "StoryListSelectedView"
 
-    const v9, 0x7f0a066f
+    const v9, 0x7f0a0675
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -601,7 +601,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a0673
+    const v9, 0x7f0a0679
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -611,7 +611,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a067f
+    const v9, 0x7f0a0685
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -621,7 +621,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a068e
+    const v9, 0x7f0a0694
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -631,7 +631,7 @@
 
     const-string/jumbo v8, "SearchView"
 
-    const v9, 0x7f0a05d2
+    const v9, 0x7f0a05d8
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -641,7 +641,7 @@
 
     const-string/jumbo v8, "SearchViewResult"
 
-    const v9, 0x7f0a05d6
+    const v9, 0x7f0a05dc
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -651,7 +651,7 @@
 
     const-string/jumbo v8, "SearchEmptySelectedView"
 
-    const v9, 0x7f0a05de
+    const v9, 0x7f0a05e4
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -661,7 +661,7 @@
 
     const-string/jumbo v8, "SearchSelectedView"
 
-    const v9, 0x7f0a05ea
+    const v9, 0x7f0a05f0
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -671,7 +671,7 @@
 
     const-string/jumbo v8, "Notification"
 
-    const v9, 0x7f0a069a
+    const v9, 0x7f0a06a0
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -681,7 +681,7 @@
 
     const-string/jumbo v8, "MapView"
 
-    const v9, 0x7f0a069e
+    const v9, 0x7f0a06a4
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -691,7 +691,7 @@
 
     const-string/jumbo v8, "CopyToAlbum"
 
-    const v9, 0x7f0a0704
+    const v9, 0x7f0a070a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -701,7 +701,7 @@
 
     const-string/jumbo v8, "MoveToAlbum"
 
-    const v9, 0x7f0a0708
+    const v9, 0x7f0a070e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -711,7 +711,7 @@
 
     const-string/jumbo v8, "AddToStory"
 
-    const v9, 0x7f0a070c
+    const v9, 0x7f0a0712
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -721,7 +721,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a0712
+    const v9, 0x7f0a0718
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -731,7 +731,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a071e
+    const v9, 0x7f0a0724
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -741,7 +741,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a072d
+    const v9, 0x7f0a0733
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -751,7 +751,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a0739
+    const v9, 0x7f0a073f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -765,7 +765,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05f4
+    const v9, 0x7f0a05fa
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -775,7 +775,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a0602
+    const v9, 0x7f0a0608
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -785,7 +785,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a060e
+    const v9, 0x7f0a0614
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -795,7 +795,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06ad
+    const v9, 0x7f0a06b3
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -805,7 +805,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06ba
+    const v9, 0x7f0a06c0
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -815,7 +815,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06ed
+    const v9, 0x7f0a06f3
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -825,7 +825,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a063f
+    const v9, 0x7f0a0645
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -835,7 +835,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a064f
+    const v9, 0x7f0a0655
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -845,7 +845,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a065b
+    const v9, 0x7f0a0661
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -855,7 +855,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06d1
+    const v9, 0x7f0a06d7
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -865,7 +865,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06dd
+    const v9, 0x7f0a06e3
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -875,7 +875,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a06fa
+    const v9, 0x7f0a0700
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -885,7 +885,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a0675
+    const v9, 0x7f0a067b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -895,7 +895,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a0681
+    const v9, 0x7f0a0687
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -905,7 +905,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a0690
+    const v9, 0x7f0a0696
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -915,7 +915,7 @@
 
     const-string/jumbo v8, "SearchViewResult"
 
-    const v9, 0x7f0a05d8
+    const v9, 0x7f0a05de
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -925,7 +925,7 @@
 
     const-string/jumbo v8, "SearchEmptySelectedView"
 
-    const v9, 0x7f0a05e0
+    const v9, 0x7f0a05e6
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -935,7 +935,7 @@
 
     const-string/jumbo v8, "SearchSelectedView"
 
-    const v9, 0x7f0a05ec
+    const v9, 0x7f0a05f2
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -945,7 +945,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a0714
+    const v9, 0x7f0a071a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -955,7 +955,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a0720
+    const v9, 0x7f0a0726
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -965,7 +965,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a072f
+    const v9, 0x7f0a0735
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -975,7 +975,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a073b
+    const v9, 0x7f0a0741
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -989,7 +989,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05f6
+    const v9, 0x7f0a05fc
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -999,7 +999,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a0604
+    const v9, 0x7f0a060a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1009,7 +1009,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a0611
+    const v9, 0x7f0a0617
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1019,7 +1019,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06af
+    const v9, 0x7f0a06b5
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1029,7 +1029,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06bc
+    const v9, 0x7f0a06c2
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1039,7 +1039,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06ef
+    const v9, 0x7f0a06f5
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1049,7 +1049,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a0641
+    const v9, 0x7f0a0647
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1059,7 +1059,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a0651
+    const v9, 0x7f0a0657
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1069,7 +1069,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a065d
+    const v9, 0x7f0a0663
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1079,7 +1079,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06d3
+    const v9, 0x7f0a06d9
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1089,7 +1089,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06df
+    const v9, 0x7f0a06e5
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1099,7 +1099,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a06fc
+    const v9, 0x7f0a0702
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1109,7 +1109,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a0677
+    const v9, 0x7f0a067d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1119,7 +1119,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a0683
+    const v9, 0x7f0a0689
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1129,7 +1129,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a0692
+    const v9, 0x7f0a0698
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1139,7 +1139,7 @@
 
     const-string/jumbo v8, "SearchViewResult"
 
-    const v9, 0x7f0a05da
+    const v9, 0x7f0a05e0
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1149,7 +1149,7 @@
 
     const-string/jumbo v8, "SearchEmptySelectedView"
 
-    const v9, 0x7f0a05e2
+    const v9, 0x7f0a05e8
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1159,7 +1159,7 @@
 
     const-string/jumbo v8, "SearchSelectedView"
 
-    const v9, 0x7f0a05ee
+    const v9, 0x7f0a05f4
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1169,7 +1169,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a0716
+    const v9, 0x7f0a071c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1179,7 +1179,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a0722
+    const v9, 0x7f0a0728
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1189,7 +1189,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a0731
+    const v9, 0x7f0a0737
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1199,7 +1199,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a073d
+    const v9, 0x7f0a0743
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1213,7 +1213,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05f8
+    const v9, 0x7f0a05fe
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1223,7 +1223,7 @@
 
     const-string/jumbo v8, "DetailView"
 
-    const v9, 0x7f0a0617
+    const v9, 0x7f0a061d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1233,7 +1233,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a0622
+    const v9, 0x7f0a0628
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1243,7 +1243,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a0643
+    const v9, 0x7f0a0649
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1257,7 +1257,7 @@
 
     const-string/jumbo v8, "DetailView"
 
-    const v9, 0x7f0a0619
+    const v9, 0x7f0a061f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1267,7 +1267,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a0625
+    const v9, 0x7f0a062b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1277,7 +1277,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a0645
+    const v9, 0x7f0a064b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1287,7 +1287,7 @@
 
     const-string/jumbo v8, "StoryListView"
 
-    const v9, 0x7f0a0667
+    const v9, 0x7f0a066d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1301,7 +1301,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05fa
+    const v9, 0x7f0a0600
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1311,7 +1311,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a0606
+    const v9, 0x7f0a060c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1321,7 +1321,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a0613
+    const v9, 0x7f0a0619
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1331,7 +1331,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06b1
+    const v9, 0x7f0a06b7
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1341,7 +1341,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06be
+    const v9, 0x7f0a06c4
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1351,7 +1351,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06f1
+    const v9, 0x7f0a06f7
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1361,7 +1361,7 @@
 
     const-string/jumbo v8, "DetailView"
 
-    const v9, 0x7f0a061b
+    const v9, 0x7f0a0621
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1371,7 +1371,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a0627
+    const v9, 0x7f0a062d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1381,7 +1381,7 @@
 
     const-string/jumbo v8, "AlbumListEmptySelectedView"
 
-    const v9, 0x7f0a062f
+    const v9, 0x7f0a0635
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1391,7 +1391,7 @@
 
     const-string/jumbo v8, "AlbumListSelectedView"
 
-    const v9, 0x7f0a0637
+    const v9, 0x7f0a063d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1401,7 +1401,7 @@
 
     const-string/jumbo v8, "AlbumListPicker"
 
-    const v9, 0x7f0a06c6
+    const v9, 0x7f0a06cc
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1411,7 +1411,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a0647
+    const v9, 0x7f0a064d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1421,7 +1421,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a0653
+    const v9, 0x7f0a0659
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1431,7 +1431,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a065f
+    const v9, 0x7f0a0665
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1441,7 +1441,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06d5
+    const v9, 0x7f0a06db
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1451,7 +1451,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06e5
+    const v9, 0x7f0a06eb
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1461,7 +1461,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a06fe
+    const v9, 0x7f0a0704
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1471,7 +1471,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a0679
+    const v9, 0x7f0a067f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1481,7 +1481,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a0685
+    const v9, 0x7f0a068b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1491,7 +1491,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a0694
+    const v9, 0x7f0a069a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1501,7 +1501,7 @@
 
     const-string/jumbo v8, "MapView"
 
-    const v9, 0x7f0a06a5
+    const v9, 0x7f0a06ab
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1511,7 +1511,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a0718
+    const v9, 0x7f0a071e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1521,7 +1521,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a0727
+    const v9, 0x7f0a072d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1531,7 +1531,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a0733
+    const v9, 0x7f0a0739
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1541,7 +1541,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a073f
+    const v9, 0x7f0a0745
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1555,7 +1555,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05fc
+    const v9, 0x7f0a0602
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1565,7 +1565,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a0608
+    const v9, 0x7f0a060e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1575,7 +1575,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a0615
+    const v9, 0x7f0a061b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1585,7 +1585,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06b3
+    const v9, 0x7f0a06b9
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1595,7 +1595,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06c0
+    const v9, 0x7f0a06c6
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1605,7 +1605,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06f3
+    const v9, 0x7f0a06f9
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1615,7 +1615,7 @@
 
     const-string/jumbo v8, "DetailView"
 
-    const v9, 0x7f0a061c
+    const v9, 0x7f0a0622
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1625,7 +1625,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a0629
+    const v9, 0x7f0a062f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1635,7 +1635,7 @@
 
     const-string/jumbo v8, "AlbumListEmptySelectedView"
 
-    const v9, 0x7f0a0631
+    const v9, 0x7f0a0637
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1645,7 +1645,7 @@
 
     const-string/jumbo v8, "AlbumListSelectedView"
 
-    const v9, 0x7f0a0639
+    const v9, 0x7f0a063f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1655,7 +1655,7 @@
 
     const-string/jumbo v8, "AlbumListPicker"
 
-    const v9, 0x7f0a06c8
+    const v9, 0x7f0a06ce
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1665,7 +1665,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a0649
+    const v9, 0x7f0a064f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1675,7 +1675,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a0655
+    const v9, 0x7f0a065b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1685,7 +1685,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a0661
+    const v9, 0x7f0a0667
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1695,7 +1695,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06d7
+    const v9, 0x7f0a06dd
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1705,7 +1705,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06e7
+    const v9, 0x7f0a06ed
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1715,7 +1715,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a0700
+    const v9, 0x7f0a0706
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1725,7 +1725,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a067b
+    const v9, 0x7f0a0681
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1735,7 +1735,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a0687
+    const v9, 0x7f0a068d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1745,7 +1745,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a0696
+    const v9, 0x7f0a069c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1755,7 +1755,7 @@
 
     const-string/jumbo v8, "MapView"
 
-    const v9, 0x7f0a06a7
+    const v9, 0x7f0a06ad
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1765,7 +1765,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a071a
+    const v9, 0x7f0a0720
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1775,7 +1775,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a0729
+    const v9, 0x7f0a072f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1785,7 +1785,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a0735
+    const v9, 0x7f0a073b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1795,7 +1795,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a0741
+    const v9, 0x7f0a0747
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1857,7 +1857,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05ef
+    const v9, 0x7f0a05f5
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1867,7 +1867,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a05fd
+    const v9, 0x7f0a0603
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1877,7 +1877,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a0609
+    const v9, 0x7f0a060f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1887,7 +1887,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06a8
+    const v9, 0x7f0a06ae
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1897,7 +1897,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06b5
+    const v9, 0x7f0a06bb
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1907,7 +1907,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06e8
+    const v9, 0x7f0a06ee
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1917,7 +1917,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a061d
+    const v9, 0x7f0a0623
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1927,7 +1927,7 @@
 
     const-string/jumbo v8, "AlbumListEmptySelectedView"
 
-    const v9, 0x7f0a062a
+    const v9, 0x7f0a0630
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1937,7 +1937,7 @@
 
     const-string/jumbo v8, "AlbumListSelectedView"
 
-    const v9, 0x7f0a0632
+    const v9, 0x7f0a0638
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1947,7 +1947,7 @@
 
     const-string/jumbo v8, "AlbumListPicker"
 
-    const v9, 0x7f0a06c1
+    const v9, 0x7f0a06c7
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1957,7 +1957,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a063a
+    const v9, 0x7f0a0640
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1967,7 +1967,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a064a
+    const v9, 0x7f0a0650
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1977,7 +1977,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a0656
+    const v9, 0x7f0a065c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1987,7 +1987,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06cc
+    const v9, 0x7f0a06d2
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1997,7 +1997,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06d8
+    const v9, 0x7f0a06de
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2007,7 +2007,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a06f4
+    const v9, 0x7f0a06fa
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2017,7 +2017,7 @@
 
     const-string/jumbo v8, "StoryListView"
 
-    const v9, 0x7f0a0662
+    const v9, 0x7f0a0668
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2027,7 +2027,7 @@
 
     const-string/jumbo v8, "StoryListEmptySelectedView"
 
-    const v9, 0x7f0a0668
+    const v9, 0x7f0a066e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2037,7 +2037,7 @@
 
     const-string/jumbo v8, "StoryListSelectedView"
 
-    const v9, 0x7f0a066c
+    const v9, 0x7f0a0672
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2047,7 +2047,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a0670
+    const v9, 0x7f0a0676
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2057,7 +2057,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a067c
+    const v9, 0x7f0a0682
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2067,7 +2067,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a068b
+    const v9, 0x7f0a0691
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2077,7 +2077,7 @@
 
     const-string/jumbo v8, "SearchView"
 
-    const v9, 0x7f0a05cf
+    const v9, 0x7f0a05d5
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2087,7 +2087,7 @@
 
     const-string/jumbo v8, "SearchViewResult"
 
-    const v9, 0x7f0a05d3
+    const v9, 0x7f0a05d9
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2097,7 +2097,7 @@
 
     const-string/jumbo v8, "SearchEmptySelectedView"
 
-    const v9, 0x7f0a05db
+    const v9, 0x7f0a05e1
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2107,7 +2107,7 @@
 
     const-string/jumbo v8, "SearchSelectedView"
 
-    const v9, 0x7f0a05e7
+    const v9, 0x7f0a05ed
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2117,7 +2117,7 @@
 
     const-string/jumbo v8, "Notification"
 
-    const v9, 0x7f0a0697
+    const v9, 0x7f0a069d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2127,7 +2127,7 @@
 
     const-string/jumbo v8, "MapView"
 
-    const v9, 0x7f0a069b
+    const v9, 0x7f0a06a1
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2137,7 +2137,7 @@
 
     const-string/jumbo v8, "CopyToAlbum"
 
-    const v9, 0x7f0a0701
+    const v9, 0x7f0a0707
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2147,7 +2147,7 @@
 
     const-string/jumbo v8, "MoveToAlbum"
 
-    const v9, 0x7f0a0705
+    const v9, 0x7f0a070b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2157,7 +2157,7 @@
 
     const-string/jumbo v8, "AddToStory"
 
-    const v9, 0x7f0a0709
+    const v9, 0x7f0a070f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2167,7 +2167,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a070f
+    const v9, 0x7f0a0715
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2177,7 +2177,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a071b
+    const v9, 0x7f0a0721
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2187,7 +2187,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a072a
+    const v9, 0x7f0a0730
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2197,7 +2197,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a0736
+    const v9, 0x7f0a073c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2211,7 +2211,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05f1
+    const v9, 0x7f0a05f7
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2221,7 +2221,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a05ff
+    const v9, 0x7f0a0605
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2231,7 +2231,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a060b
+    const v9, 0x7f0a0611
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2241,7 +2241,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06aa
+    const v9, 0x7f0a06b0
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2251,7 +2251,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06b7
+    const v9, 0x7f0a06bd
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2261,7 +2261,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06ea
+    const v9, 0x7f0a06f0
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2271,7 +2271,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a061f
+    const v9, 0x7f0a0625
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2281,7 +2281,7 @@
 
     const-string/jumbo v8, "AlbumListEmptySelectedView"
 
-    const v9, 0x7f0a062c
+    const v9, 0x7f0a0632
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2291,7 +2291,7 @@
 
     const-string/jumbo v8, "AlbumListSelectedView"
 
-    const v9, 0x7f0a0634
+    const v9, 0x7f0a063a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2301,7 +2301,7 @@
 
     const-string/jumbo v8, "AlbumListPicker"
 
-    const v9, 0x7f0a06c3
+    const v9, 0x7f0a06c9
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2311,7 +2311,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a063c
+    const v9, 0x7f0a0642
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2321,7 +2321,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a064c
+    const v9, 0x7f0a0652
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2331,7 +2331,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a0658
+    const v9, 0x7f0a065e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2341,7 +2341,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06ce
+    const v9, 0x7f0a06d4
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2351,7 +2351,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06da
+    const v9, 0x7f0a06e0
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2361,7 +2361,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a06f6
+    const v9, 0x7f0a06fc
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2371,7 +2371,7 @@
 
     const-string/jumbo v8, "StoryListView"
 
-    const v9, 0x7f0a0664
+    const v9, 0x7f0a066a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2381,7 +2381,7 @@
 
     const-string/jumbo v8, "StoryListEmptySelectedView"
 
-    const v9, 0x7f0a066a
+    const v9, 0x7f0a0670
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2391,7 +2391,7 @@
 
     const-string/jumbo v8, "StoryListSelectedView"
 
-    const v9, 0x7f0a066e
+    const v9, 0x7f0a0674
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2401,7 +2401,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a0672
+    const v9, 0x7f0a0678
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2411,7 +2411,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a067e
+    const v9, 0x7f0a0684
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2421,7 +2421,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a068d
+    const v9, 0x7f0a0693
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2431,7 +2431,7 @@
 
     const-string/jumbo v8, "SearchView"
 
-    const v9, 0x7f0a05d1
+    const v9, 0x7f0a05d7
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2441,7 +2441,7 @@
 
     const-string/jumbo v8, "SearchViewResult"
 
-    const v9, 0x7f0a05d5
+    const v9, 0x7f0a05db
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2451,7 +2451,7 @@
 
     const-string/jumbo v8, "SearchEmptySelectedView"
 
-    const v9, 0x7f0a05dd
+    const v9, 0x7f0a05e3
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2461,7 +2461,7 @@
 
     const-string/jumbo v8, "SearchSelectedView"
 
-    const v9, 0x7f0a05e9
+    const v9, 0x7f0a05ef
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2471,7 +2471,7 @@
 
     const-string/jumbo v8, "Notification"
 
-    const v9, 0x7f0a0699
+    const v9, 0x7f0a069f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2481,7 +2481,7 @@
 
     const-string/jumbo v8, "MapView"
 
-    const v9, 0x7f0a069d
+    const v9, 0x7f0a06a3
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2491,7 +2491,7 @@
 
     const-string/jumbo v8, "CopyToAlbum"
 
-    const v9, 0x7f0a0703
+    const v9, 0x7f0a0709
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2501,7 +2501,7 @@
 
     const-string/jumbo v8, "MoveToAlbum"
 
-    const v9, 0x7f0a0707
+    const v9, 0x7f0a070d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2511,7 +2511,7 @@
 
     const-string/jumbo v8, "AddToStory"
 
-    const v9, 0x7f0a070b
+    const v9, 0x7f0a0711
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2521,7 +2521,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a0711
+    const v9, 0x7f0a0717
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2531,7 +2531,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a071d
+    const v9, 0x7f0a0723
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2541,7 +2541,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a072c
+    const v9, 0x7f0a0732
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2551,7 +2551,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a0738
+    const v9, 0x7f0a073e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2565,7 +2565,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05f3
+    const v9, 0x7f0a05f9
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2575,7 +2575,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a0601
+    const v9, 0x7f0a0607
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2585,7 +2585,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a060d
+    const v9, 0x7f0a0613
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2595,7 +2595,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06ac
+    const v9, 0x7f0a06b2
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2605,7 +2605,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06b9
+    const v9, 0x7f0a06bf
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2615,7 +2615,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06ec
+    const v9, 0x7f0a06f2
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2625,7 +2625,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a063e
+    const v9, 0x7f0a0644
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2635,7 +2635,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a064e
+    const v9, 0x7f0a0654
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2645,7 +2645,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a065a
+    const v9, 0x7f0a0660
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2655,7 +2655,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06d0
+    const v9, 0x7f0a06d6
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2665,7 +2665,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06dc
+    const v9, 0x7f0a06e2
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2675,7 +2675,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a06f9
+    const v9, 0x7f0a06ff
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2685,7 +2685,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a0674
+    const v9, 0x7f0a067a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2695,7 +2695,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a0680
+    const v9, 0x7f0a0686
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2705,7 +2705,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a068f
+    const v9, 0x7f0a0695
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2715,7 +2715,7 @@
 
     const-string/jumbo v8, "SearchViewResult"
 
-    const v9, 0x7f0a05d7
+    const v9, 0x7f0a05dd
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2725,7 +2725,7 @@
 
     const-string/jumbo v8, "SearchEmptySelectedView"
 
-    const v9, 0x7f0a05df
+    const v9, 0x7f0a05e5
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2735,7 +2735,7 @@
 
     const-string/jumbo v8, "SearchSelectedView"
 
-    const v9, 0x7f0a05eb
+    const v9, 0x7f0a05f1
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2745,7 +2745,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a0713
+    const v9, 0x7f0a0719
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2755,7 +2755,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a071f
+    const v9, 0x7f0a0725
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2765,7 +2765,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a072e
+    const v9, 0x7f0a0734
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2775,7 +2775,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a073a
+    const v9, 0x7f0a0740
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2789,7 +2789,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05f5
+    const v9, 0x7f0a05fb
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2799,7 +2799,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a0603
+    const v9, 0x7f0a0609
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2809,7 +2809,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a0610
+    const v9, 0x7f0a0616
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2819,7 +2819,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06ae
+    const v9, 0x7f0a06b4
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2829,7 +2829,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06bb
+    const v9, 0x7f0a06c1
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2839,7 +2839,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06ee
+    const v9, 0x7f0a06f4
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2849,7 +2849,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a0640
+    const v9, 0x7f0a0646
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2859,7 +2859,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a0650
+    const v9, 0x7f0a0656
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2869,7 +2869,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a065c
+    const v9, 0x7f0a0662
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2879,7 +2879,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06d2
+    const v9, 0x7f0a06d8
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2889,7 +2889,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06de
+    const v9, 0x7f0a06e4
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2899,7 +2899,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a06fb
+    const v9, 0x7f0a0701
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2909,7 +2909,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a0676
+    const v9, 0x7f0a067c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2919,7 +2919,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a0682
+    const v9, 0x7f0a0688
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2929,7 +2929,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a0691
+    const v9, 0x7f0a0697
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2939,7 +2939,7 @@
 
     const-string/jumbo v8, "SearchViewResult"
 
-    const v9, 0x7f0a05d9
+    const v9, 0x7f0a05df
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2949,7 +2949,7 @@
 
     const-string/jumbo v8, "SearchEmptySelectedView"
 
-    const v9, 0x7f0a05e1
+    const v9, 0x7f0a05e7
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2959,7 +2959,7 @@
 
     const-string/jumbo v8, "SearchSelectedView"
 
-    const v9, 0x7f0a05ed
+    const v9, 0x7f0a05f3
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2969,7 +2969,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a0715
+    const v9, 0x7f0a071b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2979,7 +2979,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a0721
+    const v9, 0x7f0a0727
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2989,7 +2989,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a0730
+    const v9, 0x7f0a0736
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2999,7 +2999,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a073c
+    const v9, 0x7f0a0742
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3013,7 +3013,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05f7
+    const v9, 0x7f0a05fd
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3023,7 +3023,7 @@
 
     const-string/jumbo v8, "DetailView"
 
-    const v9, 0x7f0a0616
+    const v9, 0x7f0a061c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3033,7 +3033,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a0621
+    const v9, 0x7f0a0627
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3043,7 +3043,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a0642
+    const v9, 0x7f0a0648
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3057,7 +3057,7 @@
 
     const-string/jumbo v8, "DetailView"
 
-    const v9, 0x7f0a0618
+    const v9, 0x7f0a061e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3067,7 +3067,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a0624
+    const v9, 0x7f0a062a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3077,7 +3077,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a0644
+    const v9, 0x7f0a064a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3087,7 +3087,7 @@
 
     const-string/jumbo v8, "StoryListView"
 
-    const v9, 0x7f0a0666
+    const v9, 0x7f0a066c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3101,7 +3101,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05f9
+    const v9, 0x7f0a05ff
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3111,7 +3111,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a0605
+    const v9, 0x7f0a060b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3121,7 +3121,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a0612
+    const v9, 0x7f0a0618
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3131,7 +3131,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06b0
+    const v9, 0x7f0a06b6
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3141,7 +3141,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06bd
+    const v9, 0x7f0a06c3
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3151,7 +3151,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06f0
+    const v9, 0x7f0a06f6
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3161,7 +3161,7 @@
 
     const-string/jumbo v8, "DetailView"
 
-    const v9, 0x7f0a061a
+    const v9, 0x7f0a0620
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3171,7 +3171,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a0626
+    const v9, 0x7f0a062c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3181,7 +3181,7 @@
 
     const-string/jumbo v8, "AlbumListEmptySelectedView"
 
-    const v9, 0x7f0a062e
+    const v9, 0x7f0a0634
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3191,7 +3191,7 @@
 
     const-string/jumbo v8, "AlbumListSelectedView"
 
-    const v9, 0x7f0a0636
+    const v9, 0x7f0a063c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3201,7 +3201,7 @@
 
     const-string/jumbo v8, "AlbumListPicker"
 
-    const v9, 0x7f0a06c5
+    const v9, 0x7f0a06cb
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3211,7 +3211,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a0646
+    const v9, 0x7f0a064c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3221,7 +3221,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a0652
+    const v9, 0x7f0a0658
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3231,7 +3231,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a065e
+    const v9, 0x7f0a0664
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3241,7 +3241,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06d4
+    const v9, 0x7f0a06da
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3251,7 +3251,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06e4
+    const v9, 0x7f0a06ea
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3261,7 +3261,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a06fd
+    const v9, 0x7f0a0703
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3271,7 +3271,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a0678
+    const v9, 0x7f0a067e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3281,7 +3281,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a0684
+    const v9, 0x7f0a068a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3291,7 +3291,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a0693
+    const v9, 0x7f0a0699
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3301,7 +3301,7 @@
 
     const-string/jumbo v8, "MapView"
 
-    const v9, 0x7f0a06a4
+    const v9, 0x7f0a06aa
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3311,7 +3311,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a0717
+    const v9, 0x7f0a071d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3321,7 +3321,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a0726
+    const v9, 0x7f0a072c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3331,7 +3331,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a0732
+    const v9, 0x7f0a0738
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3341,7 +3341,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a073e
+    const v9, 0x7f0a0744
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3355,7 +3355,7 @@
 
     const-string/jumbo v8, "PicturesView"
 
-    const v9, 0x7f0a05fb
+    const v9, 0x7f0a0601
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3365,7 +3365,7 @@
 
     const-string/jumbo v8, "PictureEmptySelectedView"
 
-    const v9, 0x7f0a0607
+    const v9, 0x7f0a060d
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3375,7 +3375,7 @@
 
     const-string/jumbo v8, "PictureSelectedView"
 
-    const v9, 0x7f0a0614
+    const v9, 0x7f0a061a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3385,7 +3385,7 @@
 
     const-string/jumbo v8, "PicturePickerMulti"
 
-    const v9, 0x7f0a06b2
+    const v9, 0x7f0a06b8
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3395,7 +3395,7 @@
 
     const-string/jumbo v8, "PicturesSelectMultipleItems"
 
-    const v9, 0x7f0a06bf
+    const v9, 0x7f0a06c5
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3405,7 +3405,7 @@
 
     const-string/jumbo v8, "PicturePickerSingle"
 
-    const v9, 0x7f0a06f2
+    const v9, 0x7f0a06f8
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3415,7 +3415,7 @@
 
     const-string/jumbo v8, "AlbumsListView"
 
-    const v9, 0x7f0a0628
+    const v9, 0x7f0a062e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3425,7 +3425,7 @@
 
     const-string/jumbo v8, "AlbumListEmptySelectedView"
 
-    const v9, 0x7f0a0630
+    const v9, 0x7f0a0636
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3435,7 +3435,7 @@
 
     const-string/jumbo v8, "AlbumListSelectedView"
 
-    const v9, 0x7f0a0638
+    const v9, 0x7f0a063e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3445,7 +3445,7 @@
 
     const-string/jumbo v8, "AlbumListPicker"
 
-    const v9, 0x7f0a06c7
+    const v9, 0x7f0a06cd
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3455,7 +3455,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailView"
 
-    const v9, 0x7f0a0648
+    const v9, 0x7f0a064e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3465,7 +3465,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsEmptySelectedView"
 
-    const v9, 0x7f0a0654
+    const v9, 0x7f0a065a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3475,7 +3475,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectedView"
 
-    const v9, 0x7f0a0660
+    const v9, 0x7f0a0666
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3485,7 +3485,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerMulti"
 
-    const v9, 0x7f0a06d6
+    const v9, 0x7f0a06dc
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3495,7 +3495,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsSelectMultipleItems"
 
-    const v9, 0x7f0a06e6
+    const v9, 0x7f0a06ec
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3505,7 +3505,7 @@
 
     const-string/jumbo v8, "AlbumThumbnailsPickerSingle"
 
-    const v9, 0x7f0a06ff
+    const v9, 0x7f0a0705
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3515,7 +3515,7 @@
 
     const-string/jumbo v8, "StoryDetailView"
 
-    const v9, 0x7f0a067a
+    const v9, 0x7f0a0680
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3525,7 +3525,7 @@
 
     const-string/jumbo v8, "StoryDetailEmptySelectedView"
 
-    const v9, 0x7f0a0686
+    const v9, 0x7f0a068c
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3535,7 +3535,7 @@
 
     const-string/jumbo v8, "StoryDetailSelectedView"
 
-    const v9, 0x7f0a0695
+    const v9, 0x7f0a069b
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3545,7 +3545,7 @@
 
     const-string/jumbo v8, "MapView"
 
-    const v9, 0x7f0a06a6
+    const v9, 0x7f0a06ac
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3555,7 +3555,7 @@
 
     const-string/jumbo v8, "RecycleBin"
 
-    const v9, 0x7f0a0719
+    const v9, 0x7f0a071f
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3565,7 +3565,7 @@
 
     const-string/jumbo v8, "CloudView"
 
-    const v9, 0x7f0a0728
+    const v9, 0x7f0a072e
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3575,7 +3575,7 @@
 
     const-string/jumbo v8, "CloudEmptySelectedView"
 
-    const v9, 0x7f0a0734
+    const v9, 0x7f0a073a
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3585,7 +3585,7 @@
 
     const-string/jumbo v8, "CloudSelectedView"
 
-    const v9, 0x7f0a0740
+    const v9, 0x7f0a0746
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

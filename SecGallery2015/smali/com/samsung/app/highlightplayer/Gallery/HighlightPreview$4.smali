@@ -43,7 +43,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;->isCreated:Z
     invoke-static {v0, v1}, Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;->access$602(Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;Z)Z
 
     return-void
@@ -60,7 +59,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;->isCreated:Z
     invoke-static {v0, v1}, Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;->access$602(Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;Z)Z
 
     return-void

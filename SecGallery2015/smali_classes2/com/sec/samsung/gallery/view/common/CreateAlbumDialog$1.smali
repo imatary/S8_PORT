@@ -50,7 +50,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->hideSoftInput(Landroid/os/IBinder;)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$000(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Landroid/os/IBinder;)V
 
     goto :goto_0

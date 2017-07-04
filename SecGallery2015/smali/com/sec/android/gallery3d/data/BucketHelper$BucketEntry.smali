@@ -85,7 +85,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/BucketHelper$BucketEntry;->bucketPath:Ljava/lang/String;
 
-    # invokes: Lcom/sec/android/gallery3d/data/BucketHelper;->isCameraPath(Ljava/lang/String;)Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/BucketHelper;->access$000(Ljava/lang/String;)Z
 
     move-result v0

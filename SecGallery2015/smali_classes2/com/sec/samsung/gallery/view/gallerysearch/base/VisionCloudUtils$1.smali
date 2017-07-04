@@ -49,12 +49,10 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mIcs:Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$002(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;)Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mIcs:Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
 
     move-result-object v1
@@ -74,7 +72,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mSettingListener:Lcom/samsung/android/visioncloudagent/aidl/IListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/samsung/android/visioncloudagent/aidl/IListener;
 
     move-result-object v1
@@ -83,21 +80,18 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mIcs:Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mSettingListener:Lcom/samsung/android/visioncloudagent/aidl/IListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/samsung/android/visioncloudagent/aidl/IListener;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Landroid/content/Context;
 
     move-result-object v3
@@ -113,12 +107,10 @@
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mServiceConnected:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$302(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mVCListener:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$VCServiceConnectionListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$VCServiceConnectionListener;
 
     move-result-object v1
@@ -127,7 +119,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mVCListener:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$VCServiceConnectionListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$VCServiceConnectionListener;
 
     move-result-object v1
@@ -189,7 +180,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mIcs:Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
 
     move-result-object v1
@@ -198,7 +188,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mSettingListener:Lcom/samsung/android/visioncloudagent/aidl/IListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/samsung/android/visioncloudagent/aidl/IListener;
 
     move-result-object v1
@@ -207,14 +196,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mIcs:Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mSettingListener:Lcom/samsung/android/visioncloudagent/aidl/IListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/samsung/android/visioncloudagent/aidl/IListener;
 
     move-result-object v2
@@ -226,12 +213,10 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mServiceConnected:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$302(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mVCListener:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$VCServiceConnectionListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$VCServiceConnectionListener;
 
     move-result-object v1
@@ -240,7 +225,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mVCListener:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$VCServiceConnectionListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;)Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils$VCServiceConnectionListener;
 
     move-result-object v1
@@ -255,7 +239,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->mIcs:Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;->access$002(Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;)Lcom/samsung/android/visioncloudagent/aidl/IImageClassificationService;
 
     const-string/jumbo v1, "VisionCloudUtils"

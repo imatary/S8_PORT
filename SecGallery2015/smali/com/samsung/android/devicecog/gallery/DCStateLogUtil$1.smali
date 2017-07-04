@@ -61,7 +61,6 @@
 
     sget-object v2, Lcom/samsung/android/devicecog/gallery/DCStateLogUtil$LoggingType;->ENTER:Lcom/samsung/android/devicecog/gallery/DCStateLogUtil$LoggingType;
 
-    # invokes: Lcom/samsung/android/devicecog/gallery/DCStateLogUtil;->logDCState(Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/DCStateLogUtil$LoggingType;Z)V
     invoke-static {v1, v2, v3}, Lcom/samsung/android/devicecog/gallery/DCStateLogUtil;->access$000(Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/DCStateLogUtil$LoggingType;Z)V
 
     goto :goto_0
@@ -73,7 +72,6 @@
 
     sget-object v2, Lcom/samsung/android/devicecog/gallery/DCStateLogUtil$LoggingType;->EXIT:Lcom/samsung/android/devicecog/gallery/DCStateLogUtil$LoggingType;
 
-    # invokes: Lcom/samsung/android/devicecog/gallery/DCStateLogUtil;->logDCState(Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/DCStateLogUtil$LoggingType;Z)V
     invoke-static {v1, v2, v3}, Lcom/samsung/android/devicecog/gallery/DCStateLogUtil;->access$000(Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/DCStateLogUtil$LoggingType;Z)V
 
     goto :goto_0
@@ -89,7 +87,6 @@
 
     check-cast v2, Ljava/lang/String;
 
-    # invokes: Lcom/samsung/android/devicecog/gallery/DCStateLogUtil;->logDCOutputParam(Ljava/lang/String;Ljava/lang/String;Z)V
     invoke-static {v1, v2, v3}, Lcom/samsung/android/devicecog/gallery/DCStateLogUtil;->access$100(Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_0

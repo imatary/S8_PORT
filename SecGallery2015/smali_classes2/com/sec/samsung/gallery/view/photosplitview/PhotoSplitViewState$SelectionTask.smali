@@ -93,7 +93,6 @@
 
     move-object v4, p0
 
-    # invokes: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->selectItemPickMode(Lcom/sec/android/gallery3d/data/MediaSet;IILcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;I)V
     invoke-static/range {v0 .. v5}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$3000(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;Lcom/sec/android/gallery3d/data/MediaSet;IILcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;I)V
 
     :goto_0
@@ -108,7 +107,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->selectItemFilterMode(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;)V
     invoke-static {v0, v1, p0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$3100(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;)V
 
     goto :goto_0
@@ -126,7 +124,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->selectItemNewAlbumMode(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;)V
     invoke-static {v0, v1, p0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$3200(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$SelectionTask;)V
 
     goto :goto_0

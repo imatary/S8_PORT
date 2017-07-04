@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$16;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->initEditContainerView()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$2700(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)V
 
     return-void

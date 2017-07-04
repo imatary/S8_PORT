@@ -38,26 +38,22 @@
 
     const/4 v3, 0x0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->CARD_EFFECT:Z
     invoke-static {}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$4400()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/PhotoView;->CARD_EFFECT:Z
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$4402(Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PhotoView;->setSwipingEnabled(Z)V
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8100(Lcom/sec/android/gallery3d/ui/PhotoView;Z)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mListener:Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1700(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
 
     move-result-object v0
@@ -66,14 +62,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2600(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mAnimationInterface:Lcom/sec/samsung/gallery/decoder/AnimationInterface;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$5200(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/samsung/gallery/decoder/AnimationInterface;
 
     move-result-object v1
@@ -89,7 +83,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2600(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v0
@@ -100,7 +93,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mModel:Lcom/sec/android/gallery3d/ui/PhotoView$Model;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1300(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoView$Model;
 
     move-result-object v0
@@ -125,7 +117,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPictures:Lcom/sec/android/gallery3d/util/RangeArray;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$4500(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/util/RangeArray;
 
     move-result-object v0
@@ -144,7 +135,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mListener:Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1700(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
 
     move-result-object v0
@@ -153,7 +143,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mListener:Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1700(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
 
     move-result-object v0
@@ -161,7 +150,6 @@
     invoke-interface {v0}, Lcom/sec/android/gallery3d/ui/PhotoView$Listener;->onStartCameraVIEffect()V
 
     :cond_0
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->CARD_EFFECT:Z
     invoke-static {}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$4400()Z
 
     move-result v0
@@ -170,12 +158,10 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PhotoView;->setSwipingEnabled(Z)V
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8100(Lcom/sec/android/gallery3d/ui/PhotoView;Z)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2600(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v0
@@ -197,26 +183,22 @@
 
     const/4 v3, 0x0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->CARD_EFFECT:Z
     invoke-static {}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$4400()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/PhotoView;->CARD_EFFECT:Z
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$4402(Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PhotoView;->setSwipingEnabled(Z)V
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8100(Lcom/sec/android/gallery3d/ui/PhotoView;Z)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mListener:Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1700(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
 
     move-result-object v0
@@ -225,14 +207,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2600(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mAnimationInterface:Lcom/sec/samsung/gallery/decoder/AnimationInterface;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$5200(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/samsung/gallery/decoder/AnimationInterface;
 
     move-result-object v1
@@ -250,7 +230,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$10;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mModel:Lcom/sec/android/gallery3d/ui/PhotoView$Model;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1300(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoView$Model;
 
     move-result-object v0

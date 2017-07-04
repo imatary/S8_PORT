@@ -385,7 +385,6 @@
     :cond_8
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand$1;->this$0:Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;->mShareNotiManager:Lcom/sec/android/gallery3d/eventshare/utils/ShareNotificationManager;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;)Lcom/sec/android/gallery3d/eventshare/utils/ShareNotificationManager;
 
     move-result-object v0
@@ -398,7 +397,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand$1;->this$0:Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;->mNotifier:Lcom/sec/android/gallery3d/eventshare/utils/EventShareNotifier;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;)Lcom/sec/android/gallery3d/eventshare/utils/EventShareNotifier;
 
     move-result-object v0

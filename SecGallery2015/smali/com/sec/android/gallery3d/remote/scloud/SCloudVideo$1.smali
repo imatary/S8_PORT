@@ -77,7 +77,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/scloud/SCloudVideo$1;->this$0:Lcom/sec/android/gallery3d/remote/scloud/SCloudVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/scloud/SCloudVideo;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/scloud/SCloudVideo;->access$000(Lcom/sec/android/gallery3d/remote/scloud/SCloudVideo;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v2

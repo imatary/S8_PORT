@@ -53,7 +53,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera$1$1;->val$histogram:Landroid/graphics/Bitmap;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera;->onThumbnailRequested(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera;->access$200(Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
 
     return-void

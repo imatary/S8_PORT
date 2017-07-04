@@ -776,7 +776,6 @@
 
     if-eqz v2, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow$SplitMenuItem;->ci:Landroid/content/pm/ComponentInfo;
     invoke-static {v3}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$SplitMenuItem;->access$800(Lcom/sec/android/gallery3d/app/GalleryMultiWindow$SplitMenuItem;)Landroid/content/pm/ComponentInfo;
 
     move-result-object v5

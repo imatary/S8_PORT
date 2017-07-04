@@ -43,7 +43,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SortByTypeDialog$2;->this$0:Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;->mScreenId:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;->access$000(Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;)Ljava/lang/String;
 
     move-result-object v2
@@ -92,7 +91,6 @@
     :goto_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SortByTypeDialog$2;->this$0:Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;->mListener:Lcom/sec/samsung/gallery/view/common/SortByTypeChangeListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;->access$100(Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;)Lcom/sec/samsung/gallery/view/common/SortByTypeChangeListener;
 
     move-result-object v2
@@ -101,7 +99,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SortByTypeDialog$2;->this$0:Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;->mListener:Lcom/sec/samsung/gallery/view/common/SortByTypeChangeListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;->access$100(Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;)Lcom/sec/samsung/gallery/view/common/SortByTypeChangeListener;
 
     move-result-object v2

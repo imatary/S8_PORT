@@ -51,112 +51,96 @@
 
     invoke-direct {p0, p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/BaseRequest;-><init>(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/BaseRequest$Builder;)V
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->display_count:I
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->display_count:I
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->offset:I
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->offset:I
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->filter:I
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->filter:I
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->app_id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->app_id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->sid:I
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$400(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->sid:I
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->owner_id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$500(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->owner_id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->description:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$600(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->description:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->article_id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$700(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->article_id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->comment_id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$800(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->comment_id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->name:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$900(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->name:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->meta_key:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$1000(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->meta_key:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->parent_id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$1100(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->parent_id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->group_id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$1200(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->group_id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->created_since:Ljava/lang/Long;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$1300(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)Ljava/lang/Long;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->created_since:Ljava/lang/Long;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->order:I
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$1400(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest;->order:I
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->meta_counter_list:Z
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;->access$1500(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/search/SocialSearchRequest$Builder;)Z
 
     move-result v0

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$2;->this$0:Lcom/samsung/android/gallery360viewer/view/SphericalGlView;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mIdleListeners:Ljava/util/ArrayDeque;
     invoke-static {v0}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->access$100(Lcom/samsung/android/gallery360viewer/view/SphericalGlView;)Ljava/util/ArrayDeque;
 
     move-result-object v1
@@ -49,7 +48,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$2;->this$0:Lcom/samsung/android/gallery360viewer/view/SphericalGlView;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mIdleListeners:Ljava/util/ArrayDeque;
     invoke-static {v0}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->access$100(Lcom/samsung/android/gallery360viewer/view/SphericalGlView;)Ljava/util/ArrayDeque;
 
     move-result-object v0
@@ -62,12 +60,10 @@
 
     iget-object v0, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$2;->this$0:Lcom/samsung/android/gallery360viewer/view/SphericalGlView;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mIdleRunner:Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;
     invoke-static {v0}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->access$200(Lcom/samsung/android/gallery360viewer/view/SphericalGlView;)Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;
 
     move-result-object v0
 
-    # invokes: Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;->enable()V
     invoke-static {v0}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;->access$300(Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;)V
 
     :cond_0

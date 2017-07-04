@@ -73,7 +73,6 @@
 
     iget v1, p0, Landroid/support/v7/internal/widget/AbsActionBarView$VisibilityAnimListener;->mFinalVisibility:I
 
-    # invokes: Landroid/view/View;->setVisibility(I)V
     invoke-static {v0, v1}, Landroid/support/v7/internal/widget/AbsActionBarView;->access$101(Landroid/support/v7/internal/widget/AbsActionBarView;I)V
 
     goto :goto_0
@@ -86,7 +85,6 @@
 
     iget-object v0, p0, Landroid/support/v7/internal/widget/AbsActionBarView$VisibilityAnimListener;->this$0:Landroid/support/v7/internal/widget/AbsActionBarView;
 
-    # invokes: Landroid/view/View;->setVisibility(I)V
     invoke-static {v0, v1}, Landroid/support/v7/internal/widget/AbsActionBarView;->access$001(Landroid/support/v7/internal/widget/AbsActionBarView;I)V
 
     iput-boolean v1, p0, Landroid/support/v7/internal/widget/AbsActionBarView$VisibilityAnimListener;->mCanceled:Z

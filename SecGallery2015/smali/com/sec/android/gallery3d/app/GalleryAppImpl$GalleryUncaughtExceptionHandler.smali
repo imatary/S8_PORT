@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/GalleryAppImpl$GalleryUncaughtExceptionHandler;->this$0:Lcom/sec/android/gallery3d/app/GalleryAppImpl;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryAppImpl;->mUncaughtExceptionHandler:Ljava/lang/Thread$UncaughtExceptionHandler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/GalleryAppImpl;->access$100(Lcom/sec/android/gallery3d/app/GalleryAppImpl;)Ljava/lang/Thread$UncaughtExceptionHandler;
 
     move-result-object v0

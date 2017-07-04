@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForMessageView$2;->val$saveItem:Landroid/view/MenuItem;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForMessageView;->startActionMMSSave(Landroid/view/MenuItem;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForMessageView;->access$100(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForMessageView;Landroid/view/MenuItem;)V
 
     return-void

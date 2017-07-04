@@ -59,7 +59,6 @@
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;->hasErrors:Z
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;->access$2202(Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;Z)Z
 
     goto :goto_0
@@ -85,7 +84,6 @@
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;->hasErrors:Z
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;->access$2202(Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;Z)Z
 
     goto :goto_0
@@ -111,7 +109,6 @@
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;->hasErrors:Z
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;->access$2202(Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;Z)Z
 
     goto :goto_0
@@ -137,7 +134,6 @@
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;->hasErrors:Z
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;->access$2202(Lcom/sec/android/gallery3d/data/DiskLruCache$Editor;Z)Z
 
     goto :goto_0

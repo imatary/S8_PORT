@@ -69,7 +69,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SmartViewReceiverCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/SmartViewReceiverCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/SmartViewReceiverCmd;->startSmartViewPlay(Landroid/content/Intent;)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/controller/SmartViewReceiverCmd;->access$000(Lcom/sec/samsung/gallery/controller/SmartViewReceiverCmd;Landroid/content/Intent;)V
 
     goto :goto_0

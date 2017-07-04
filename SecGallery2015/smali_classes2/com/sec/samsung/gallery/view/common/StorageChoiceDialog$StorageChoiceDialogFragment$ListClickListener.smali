@@ -59,7 +59,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->list:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->access$400(Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -80,7 +79,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->mDialogFragment:Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->access$600(Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;)Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;
 
     move-result-object v1

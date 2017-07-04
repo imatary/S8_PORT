@@ -71,7 +71,6 @@
     :pswitch_0
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mRootView:Landroid/view/View;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Landroid/view/View;
 
     move-result-object v6
@@ -94,7 +93,6 @@
 
     move-result v7
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mBackgroundColor:I
     invoke-static {v6, v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$102(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;I)I
 
     :try_start_0
@@ -118,7 +116,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mBackgroundColor:I
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)I
 
     move-result v9
@@ -137,7 +134,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mRootView:Landroid/view/View;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Landroid/view/View;
 
     move-result-object v7
@@ -186,7 +182,6 @@
     :pswitch_1
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->updateActionBar()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)V
 
     goto :goto_0
@@ -206,7 +201,6 @@
 
     const v4, 0x7f05002b
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->FEATURE_USE_VISUAL_MOREINFO:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$300()Z
 
     move-result v6
@@ -218,7 +212,6 @@
     :cond_1
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v6
@@ -254,7 +247,6 @@
     :pswitch_3
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->actionEditDone()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$500(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)V
 
     goto/16 :goto_0
@@ -262,7 +254,6 @@
     :pswitch_4
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->actionEditCancel()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$600(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)V
 
     goto/16 :goto_0
@@ -270,7 +261,6 @@
     :pswitch_5
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->hideSoftInput()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$700(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)V
 
     goto/16 :goto_0
@@ -280,19 +270,24 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mInputMethodHeight:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$900(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)I
 
     move-result v7
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mPreviousInputMethodHeight:I
     invoke-static {v6, v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$802(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;I)I
+
+    iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
+
+    invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$900(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)I
+
+    move-result v6
+
+    if-ltz v6, :cond_0
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mInputMethodHeight:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$900(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)I
 
     move-result v7

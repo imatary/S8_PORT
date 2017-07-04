@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/AlbumReloader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumReloader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mSourceVersion:J
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$200(Lcom/sec/android/gallery3d/app/AlbumReloader;)J
 
     move-result-wide v2
@@ -62,14 +61,12 @@
 
     iget-wide v2, v0, Lcom/sec/android/gallery3d/app/AlbumReloader$ReloadInfo;->version:J
 
-    # setter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mSourceVersion:J
     invoke-static {v1, v2, v3}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$202(Lcom/sec/android/gallery3d/app/AlbumReloader;J)J
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/AlbumReloader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumReloader;
 
     iget v2, v0, Lcom/sec/android/gallery3d/app/AlbumReloader$ReloadInfo;->size:I
 
-    # setter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mSize:I
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$302(Lcom/sec/android/gallery3d/app/AlbumReloader;I)I
 
     :cond_0

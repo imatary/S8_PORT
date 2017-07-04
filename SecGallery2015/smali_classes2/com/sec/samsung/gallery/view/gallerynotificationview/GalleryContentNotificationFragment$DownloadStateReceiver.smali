@@ -95,12 +95,10 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->startSharedEventView(I)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$1200(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;I)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->closeProgressDialog()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$1300(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)V
 
     goto :goto_0
@@ -134,7 +132,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->closeProgressDialog()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$1300(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)V
 
     goto :goto_0
@@ -150,7 +147,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->closeProgressDialog()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$1300(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)V
 
     goto :goto_0

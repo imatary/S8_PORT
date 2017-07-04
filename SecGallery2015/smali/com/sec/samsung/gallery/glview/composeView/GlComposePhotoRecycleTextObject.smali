@@ -45,21 +45,18 @@
 
     const/4 v1, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
 
     invoke-direct {p0, v0, v1, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;-><init>(Lcom/sec/android/gallery3d/glcore/GlLayer;II)V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject$Builder;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject$Builder;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject$Builder;)Landroid/content/Context;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject;->mContext:Landroid/content/Context;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject$Builder;->mExpanded:Z
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject$Builder;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject$Builder;)Z
 
     move-result v0
@@ -205,7 +202,7 @@
 
     iget-object v4, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject;->mResources:Landroid/content/res/Resources;
 
-    const v7, 0x7f0b08e1
+    const v7, 0x7f0b08e2
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -396,7 +393,7 @@
 
     move-result-object v4
 
-    const v7, 0x7f0b073b
+    const v7, 0x7f0b073c
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

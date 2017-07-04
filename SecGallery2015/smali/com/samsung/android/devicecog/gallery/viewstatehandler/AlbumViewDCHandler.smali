@@ -556,7 +556,7 @@
 
     if-eqz v7, :cond_5
 
-    const v7, 0x7f0a07a0
+    const v7, 0x7f0a07a6
 
     :goto_2
     const/4 v9, 0x0
@@ -576,7 +576,7 @@
     goto :goto_1
 
     :cond_5
-    const v7, 0x7f0a0746
+    const v7, 0x7f0a074c
 
     goto :goto_2
 .end method
@@ -748,7 +748,7 @@
     :cond_4
     iget-object v3, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/AlbumViewDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v4, 0x7f0a0757
+    const v4, 0x7f0a075d
 
     const/4 v5, 0x0
 
@@ -1649,7 +1649,7 @@
 
     if-le v2, v6, :cond_5
 
-    const v0, 0x7f0a0760
+    const v0, 0x7f0a0766
 
     :goto_2
     iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/AlbumViewDCHandler;->mActivity:Landroid/app/Activity;
@@ -1669,7 +1669,7 @@
     goto/16 :goto_0
 
     :cond_5
-    const v0, 0x7f0a075c
+    const v0, 0x7f0a0762
 
     goto :goto_2
 

@@ -87,7 +87,6 @@
     :try_start_0
     iget-object v5, p0, Lcom/sec/android/gallery3d/remote/scloud/SCloudImage$SCloudLargeImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/scloud/SCloudImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/scloud/SCloudImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v5}, Lcom/sec/android/gallery3d/remote/scloud/SCloudImage;->access$100(Lcom/sec/android/gallery3d/remote/scloud/SCloudImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v5

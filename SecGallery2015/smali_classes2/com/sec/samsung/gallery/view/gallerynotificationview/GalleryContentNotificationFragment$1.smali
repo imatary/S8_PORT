@@ -48,7 +48,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->mComposeNotificationSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventNotificationSetAdapter;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$000(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventNotificationSetAdapter;
 
     move-result-object v0
@@ -78,7 +77,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->handleMsgRefreshSet()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$100(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;)V
 
     goto :goto_0
@@ -94,7 +92,6 @@
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->handleMsgDeleteEvent(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$200(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;I)V
 
     goto :goto_0
@@ -116,7 +113,6 @@
 
     iget v2, p1, Landroid/os/Message;->arg1:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->handleMsgStartPhotoView(Ljava/lang/Integer;I)V
     invoke-static {v1, v0, v2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$300(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;Ljava/lang/Integer;I)V
 
     goto :goto_0
@@ -128,7 +124,6 @@
 
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->insertSALog(Ljava/lang/String;Ljava/lang/String;)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->FEATURE_SUPPORT_COLLAGE_AGIF_PREVIEW:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$400()Z
 
     move-result v0
@@ -137,7 +132,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->handleMsgDetailPreview(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$500(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;Landroid/os/Message;)V
 
     goto :goto_0
@@ -145,7 +139,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->startPhotoRetouching(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$600(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;Landroid/os/Message;)V
 
     goto :goto_0
@@ -159,7 +152,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->handleMsgDetailPreview(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$500(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;Landroid/os/Message;)V
 
     goto :goto_0
@@ -167,7 +159,6 @@
     :pswitch_6
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->handleShareEventUpdate(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->access$700(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;Landroid/os/Message;)V
 
     goto :goto_0

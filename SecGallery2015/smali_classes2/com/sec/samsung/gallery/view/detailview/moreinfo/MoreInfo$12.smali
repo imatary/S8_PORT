@@ -40,7 +40,6 @@
     :try_start_0
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v6
@@ -67,7 +66,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v6
@@ -88,7 +86,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v6
@@ -122,7 +119,6 @@
     :cond_0
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v6
@@ -150,20 +146,17 @@
 
     const/4 v7, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mInputMethodHeight:I
     invoke-static {v6, v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$902(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;I)I
 
     :goto_0
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mInputMethodHeight:I
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$900(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)I
 
     move-result v6
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mPreviousInputMethodHeight:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$800(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)I
 
     move-result v7
@@ -172,7 +165,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mHandler:Landroid/os/Handler;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$2300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Landroid/os/Handler;
 
     move-result-object v6
@@ -185,7 +177,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mHandler:Landroid/os/Handler;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$2300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Landroid/os/Handler;
 
     move-result-object v6
@@ -200,7 +191,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mHandler:Landroid/os/Handler;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$2300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Landroid/os/Handler;
 
     move-result-object v6
@@ -212,7 +202,6 @@
     :cond_2
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mHandler:Landroid/os/Handler;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$2300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Landroid/os/Handler;
 
     move-result-object v6
@@ -236,7 +225,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v7
@@ -261,7 +249,6 @@
 
     const/4 v7, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mInputMethodHeight:I
     invoke-static {v6, v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$902(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;I)I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -297,7 +284,6 @@
 
     sub-int/2addr v7, v8
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mInputMethodHeight:I
     invoke-static {v6, v7}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$902(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;I)I
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0

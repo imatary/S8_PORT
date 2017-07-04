@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$15;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsTouchOutside:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$000(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v0
@@ -50,13 +49,11 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$15;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsCancel:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$302(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     :goto_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$15;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->lock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1600(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Ljava/lang/Object;
 
     move-result-object v1
@@ -68,12 +65,10 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->isLocked:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1802(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$15;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->lock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1600(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Ljava/lang/Object;
 
     move-result-object v0
@@ -89,7 +84,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$15;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsTouchOutside:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$002(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     goto :goto_0

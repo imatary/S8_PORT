@@ -30,7 +30,6 @@
 
     const-string/jumbo v0, "VZW"
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mSalesCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$100()Ljava/lang/String;
 
     move-result-object v1

@@ -157,7 +157,7 @@
 .method private setTextOnlyButton(Landroid/view/Menu;)V
     .locals 2
 
-    const v1, 0x7f120286
+    const v1, 0x7f120285
 
     invoke-interface {p1, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -216,14 +216,14 @@
     :sswitch_data_0
     .sparse-switch
         0x102002c -> :sswitch_0
-        0x7f120286 -> :sswitch_0
+        0x7f120285 -> :sswitch_0
     .end sparse-switch
 .end method
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 2
 
-    const v0, 0x7f120286
+    const v0, 0x7f120285
 
     const/4 v1, 0x0
 

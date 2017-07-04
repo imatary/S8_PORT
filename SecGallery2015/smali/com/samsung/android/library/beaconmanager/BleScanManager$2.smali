@@ -39,7 +39,6 @@
         }
     .end annotation
 
-    # getter for: Lcom/samsung/android/library/beaconmanager/BleScanManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/library/beaconmanager/BleScanManager;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanManager$2;->this$0:Lcom/samsung/android/library/beaconmanager/BleScanManager;
 
-    # getter for: Lcom/samsung/android/library/beaconmanager/BleScanManager;->mTvCallbackfromApp:Lcom/samsung/android/library/beaconmanager/IBleProxyTvCallback;
     invoke-static {v0}, Lcom/samsung/android/library/beaconmanager/BleScanManager;->access$300(Lcom/samsung/android/library/beaconmanager/BleScanManager;)Lcom/samsung/android/library/beaconmanager/IBleProxyTvCallback;
 
     move-result-object v0
@@ -59,7 +57,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanManager$2;->this$0:Lcom/samsung/android/library/beaconmanager/BleScanManager;
 
-    # getter for: Lcom/samsung/android/library/beaconmanager/BleScanManager;->mTvCallbackfromApp:Lcom/samsung/android/library/beaconmanager/IBleProxyTvCallback;
     invoke-static {v0}, Lcom/samsung/android/library/beaconmanager/BleScanManager;->access$300(Lcom/samsung/android/library/beaconmanager/BleScanManager;)Lcom/samsung/android/library/beaconmanager/IBleProxyTvCallback;
 
     move-result-object v0

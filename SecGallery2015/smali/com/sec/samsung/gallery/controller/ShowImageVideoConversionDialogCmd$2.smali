@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -64,12 +63,10 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->showShareDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->dismissDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;)V
 
     goto :goto_0
@@ -77,12 +74,10 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->convertMultiFormatToMP4()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->dismissDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;)V
 
     goto :goto_0

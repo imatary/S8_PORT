@@ -44,12 +44,10 @@
     :try_start_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mIsFullScreen:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$700(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Z
 
     move-result v4
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->USE_MULTIWINDOW:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$800()Z
 
     move-result v3
@@ -58,7 +56,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$900(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -86,7 +83,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mIsFullScreen:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$700(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Z
 
     move-result v4
@@ -94,7 +90,6 @@
     if-nez v4, :cond_2
 
     :goto_1
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mIsFullScreen:Z
     invoke-static {v3, v1}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$702(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;Z)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0

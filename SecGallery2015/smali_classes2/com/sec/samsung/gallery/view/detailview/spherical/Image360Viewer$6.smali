@@ -52,7 +52,6 @@
 
     const/4 v3, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->hideBars(Z)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$1600(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Z)V
 
     goto :goto_0
@@ -69,7 +68,6 @@
     :pswitch_2
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$6;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->getOverFlowIconId()I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$1700(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)I
 
     move-result v1
@@ -80,7 +78,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$6;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mViewModeSelector:Landroid/widget/LinearLayout;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$1800(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Landroid/widget/LinearLayout;
 
     move-result-object v2
@@ -89,7 +86,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$6;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mViewModeSelector:Landroid/widget/LinearLayout;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$1800(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Landroid/widget/LinearLayout;
 
     move-result-object v2
@@ -101,7 +97,6 @@
     :pswitch_3
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$6;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mIsCaptureInProgress:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$800(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Z
 
     move-result v2
@@ -110,7 +105,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$6;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->captureView()Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$1900(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Z
 
     move-result v0

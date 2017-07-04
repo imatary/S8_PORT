@@ -41,12 +41,10 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLoadingFinished:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1302(Lcom/sec/android/gallery3d/ui/FilmStripView;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$4;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mNeedUpdateVisibleRange:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1400(Lcom/sec/android/gallery3d/ui/FilmStripView;)Z
 
     move-result v0
@@ -55,14 +53,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$4;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$100(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/SlotView;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$4;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mAlbumView:Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1500(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer;
 
     move-result-object v1
@@ -77,7 +73,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mNeedUpdateVisibleRange:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1402(Lcom/sec/android/gallery3d/ui/FilmStripView;Z)Z
 
     :cond_0
@@ -91,7 +86,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLoadingFinished:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1302(Lcom/sec/android/gallery3d/ui/FilmStripView;Z)Z
 
     return-void

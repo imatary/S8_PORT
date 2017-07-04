@@ -46,7 +46,6 @@
     :try_start_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;->mSource:Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;->access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;)Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v3
@@ -60,7 +59,6 @@
     :goto_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;->checkCoverUpdate(Lcom/sec/android/gallery3d/data/MediaItem;)Z
     invoke-static {v3, v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;->access$600(Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;Lcom/sec/android/gallery3d/data/MediaItem;)Z
 
     move-result v3
@@ -73,7 +71,6 @@
 
     const/4 v5, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;->requestScreenNail(Lcom/sec/android/gallery3d/data/MediaItem;IZ)V
     invoke-static {v3, v0, v4, v5}, Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;->access$700(Lcom/sec/samsung/gallery/glview/composeView/ComposePhotoCoverObjectLoader;Lcom/sec/android/gallery3d/data/MediaItem;IZ)V
 
     goto :goto_0

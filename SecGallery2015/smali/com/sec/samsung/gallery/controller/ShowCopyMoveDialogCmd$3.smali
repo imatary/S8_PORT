@@ -53,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mSingleOperation:Z
     invoke-static {v0, v4}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$202(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
@@ -68,7 +67,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->handleMultipleFileOperation(Ljava/lang/String;IILjava/lang/String;)V
     invoke-static {v0, v1, v2, v4, v3}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Ljava/lang/String;IILjava/lang/String;)V
 
     return-void

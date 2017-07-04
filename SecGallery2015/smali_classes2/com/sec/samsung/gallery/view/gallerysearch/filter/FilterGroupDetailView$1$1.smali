@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupDetailView$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupDetailView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupDetailView;->createDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupDetailView;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupDetailView;)V
 
     return-void

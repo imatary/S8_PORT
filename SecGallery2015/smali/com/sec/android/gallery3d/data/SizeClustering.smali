@@ -386,7 +386,7 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/data/SizeClustering;->mNames:[Ljava/lang/String;
 
-    const v8, 0x7f0a08a9
+    const v8, 0x7f0a08b7
 
     invoke-virtual {v6, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

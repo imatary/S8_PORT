@@ -67,7 +67,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$6;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->access$800(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2

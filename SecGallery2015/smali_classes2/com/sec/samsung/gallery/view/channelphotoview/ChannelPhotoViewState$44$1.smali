@@ -47,7 +47,6 @@
 
     iget v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$44$1;->val$numberOfContact:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->pickMultiContact(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$20600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;I)V
 
     return-void

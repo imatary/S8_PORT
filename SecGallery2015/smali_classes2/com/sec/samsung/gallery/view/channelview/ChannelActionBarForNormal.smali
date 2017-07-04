@@ -455,9 +455,9 @@
     :sswitch_data_0
     .sparse-switch
         0x7f12007c -> :sswitch_3
-        0x7f12027b -> :sswitch_6
-        0x7f12027c -> :sswitch_9
-        0x7f120289 -> :sswitch_0
+        0x7f12027a -> :sswitch_6
+        0x7f12027b -> :sswitch_9
+        0x7f120288 -> :sswitch_0
         0x7f12028a -> :sswitch_1
         0x7f12028b -> :sswitch_4
         0x7f12028c -> :sswitch_8
@@ -471,11 +471,11 @@
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 6
 
-    const v5, 0x7f120289
+    const v5, 0x7f120288
 
     const v4, 0x7f12028b
 
-    const v1, 0x7f120288
+    const v1, 0x7f120287
 
     const/4 v3, 0x1
 

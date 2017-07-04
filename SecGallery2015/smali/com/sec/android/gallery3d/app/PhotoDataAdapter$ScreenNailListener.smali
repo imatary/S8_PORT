@@ -81,14 +81,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ScreenNailListener;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$1700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ScreenNailListener;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mMainHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$1700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Landroid/os/Handler;
 
     move-result-object v1
@@ -113,7 +111,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ScreenNailListener;->mFuture:Lcom/sec/android/gallery3d/util/Future;
 
-    # invokes: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->updateScreenNail(Lcom/sec/android/gallery3d/data/Path;Lcom/sec/android/gallery3d/util/Future;)V
     invoke-static {v0, v1, v2}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$1900(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;Lcom/sec/android/gallery3d/data/Path;Lcom/sec/android/gallery3d/util/Future;)V
 
     return-void

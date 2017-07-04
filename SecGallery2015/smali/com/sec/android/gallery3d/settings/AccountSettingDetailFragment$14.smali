@@ -45,7 +45,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->handleGoToUrl(Z)V
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$2000(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;Z)V
 
     const/4 v0, 0x1

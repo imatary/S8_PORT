@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/MtpImage;->access$000(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v0
@@ -62,7 +61,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mObjectParent:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/MtpImage;->access$100(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v1
@@ -83,7 +81,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v0
@@ -103,14 +100,12 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mDateModified:J
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/MtpImage;->access$800(Lcom/sec/android/gallery3d/data/MtpImage;)J
 
     move-result-wide v2
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v4
@@ -129,7 +124,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v0
@@ -173,7 +167,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v0
@@ -189,7 +182,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v0
@@ -209,7 +201,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v1
@@ -228,7 +219,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/MtpImage;->writeBitmapToByteBuffer(Landroid/graphics/Bitmap;)Ljava/nio/ByteBuffer;
     invoke-static {v0, p1}, Lcom/sec/android/gallery3d/data/MtpImage;->access$900(Lcom/sec/android/gallery3d/data/MtpImage;Landroid/graphics/Bitmap;)Ljava/nio/ByteBuffer;
 
     move-result-object v6
@@ -241,14 +231,12 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mDateModified:J
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/MtpImage;->access$800(Lcom/sec/android/gallery3d/data/MtpImage;)J
 
     move-result-wide v2
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v4
@@ -290,7 +278,6 @@
     :cond_0
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mMtpContext:Lcom/sec/android/gallery3d/data/MtpContext;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/MtpImage;->access$400(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/data/MtpContext;
 
     move-result-object v4
@@ -301,7 +288,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mDeviceId:I
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/MtpImage;->access$200(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v5
@@ -312,7 +298,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mObjectId:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/MtpImage;->access$300(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v6
@@ -342,7 +327,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mFileName:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/MtpImage;->access$500(Lcom/sec/android/gallery3d/data/MtpImage;)Ljava/lang/String;
 
     move-result-object v5
@@ -359,7 +343,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$600(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3
@@ -368,7 +351,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$600(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3
@@ -378,7 +360,6 @@
     :cond_2
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v3
@@ -391,7 +372,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/MtpImage;->access$000(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4
@@ -413,7 +393,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/MtpImage;->access$000(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4
@@ -467,7 +446,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mFileName:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/MtpImage;->access$500(Lcom/sec/android/gallery3d/data/MtpImage;)Ljava/lang/String;
 
     move-result-object v5
@@ -484,7 +462,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$600(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3
@@ -493,7 +470,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$600(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3
@@ -503,7 +479,6 @@
     :cond_7
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v3
@@ -516,7 +491,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/MtpImage;->access$000(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4
@@ -538,7 +512,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/MtpImage;->access$000(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4
@@ -556,7 +529,6 @@
     :cond_9
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v3
@@ -567,7 +539,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v3
@@ -578,7 +549,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v3
@@ -590,7 +560,6 @@
     :cond_a
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v3
@@ -627,7 +596,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mFileName:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/MtpImage;->access$500(Lcom/sec/android/gallery3d/data/MtpImage;)Ljava/lang/String;
 
     move-result-object v5
@@ -644,7 +612,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$600(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3
@@ -653,7 +620,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$600(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3
@@ -663,7 +629,6 @@
     :cond_d
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mType:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$700(Lcom/sec/android/gallery3d/data/MtpImage;)I
 
     move-result v3
@@ -676,7 +641,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/MtpImage;->access$000(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4
@@ -698,7 +662,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/MtpImage;->access$000(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4
@@ -716,7 +679,6 @@
     :cond_f
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$600(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3
@@ -725,7 +687,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$600(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3
@@ -738,7 +699,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/MtpImage$1;->this$0:Lcom/sec/android/gallery3d/data/MtpImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/MtpImage;->access$600(Lcom/sec/android/gallery3d/data/MtpImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3

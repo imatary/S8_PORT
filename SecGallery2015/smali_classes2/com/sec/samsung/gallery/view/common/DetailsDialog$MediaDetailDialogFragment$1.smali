@@ -74,7 +74,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/common/DetailsDialog$MediaDetailDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/DetailsDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/DetailsDialog;->mSDCardRemovedReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/DetailsDialog;->access$500(Lcom/sec/samsung/gallery/view/common/DetailsDialog;)Landroid/content/BroadcastReceiver;
 
     move-result-object v2

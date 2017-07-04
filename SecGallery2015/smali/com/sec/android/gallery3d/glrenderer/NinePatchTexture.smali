@@ -207,7 +207,7 @@
 
     iget v5, p0, Lcom/sec/android/gallery3d/glrenderer/NinePatchTexture;->mResId:I
 
-    const v6, 0x7f02034d
+    const v6, 0x7f02034f
 
     if-ne v5, v6, :cond_3
 

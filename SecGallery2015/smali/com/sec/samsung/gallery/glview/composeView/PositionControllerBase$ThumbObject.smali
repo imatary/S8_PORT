@@ -130,7 +130,6 @@
 
     invoke-virtual {p0, v0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->addChild(Lcom/sec/android/gallery3d/glcore/GlObject;)I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->NEED_DIM_EFFECT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$2700()Z
 
     move-result v0
@@ -304,7 +303,6 @@
 
     if-nez v3, :cond_2
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->FeatureIsUncheckedBoxAlwaysVisible:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3100()Z
 
     move-result v3
@@ -477,7 +475,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mCanvasMgr:Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;)Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;
 
     move-result-object v2
@@ -598,7 +595,6 @@
     :cond_3
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mCanvasMgr:Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;)Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;
 
     move-result-object v2
@@ -809,7 +805,6 @@
 
     if-ne v6, v8, :cond_7
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->IsTablet:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$2400()Z
 
     move-result v6
@@ -1050,7 +1045,6 @@
 
     iget-object v3, v3, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->createCanvasExp()Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$2800(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v3
@@ -1200,7 +1194,6 @@
 
     iget-object v3, v3, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->getListAlbumCheckBoxList()[Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$2900(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)[Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v3
@@ -1239,7 +1232,6 @@
 
     iget-object v3, v3, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->getCheckBoxCanvasList()[Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$3000(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)[Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v3
@@ -1314,7 +1306,6 @@
 
     iget-object v3, v3, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->getListAlbumCheckBoxList()[Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$2900(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)[Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v3
@@ -1353,7 +1344,6 @@
 
     iget-object v3, v3, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->getCheckBoxCanvasList()[Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$3000(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)[Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v3
@@ -1415,7 +1405,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->FeatureIsFolderModel:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3300()Z
 
     move-result v0
@@ -1446,7 +1435,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mThumbStrokeWidth:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3400(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;)I
 
     move-result v0
@@ -1457,7 +1445,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mThumbStrokeColor:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->access$3500(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;)I
 
     move-result v0

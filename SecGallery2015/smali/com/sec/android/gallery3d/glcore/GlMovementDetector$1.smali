@@ -70,7 +70,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mLongTmActive:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$000(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Z
 
     move-result v0
@@ -79,7 +78,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mDetectListener:Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
 
     move-result-object v0
@@ -88,7 +86,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mMultiSelectionActive:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$200(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Z
 
     move-result v0
@@ -97,7 +94,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mDetectListener:Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
 
     move-result-object v0
@@ -106,13 +102,11 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mClickActive:Z
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$302(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;Z)Z
 
     :cond_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$400(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v0
@@ -128,7 +122,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mLongTmActive:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$000(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Z
 
     move-result v0
@@ -137,7 +130,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mDetectListener:Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
 
     move-result-object v0
@@ -146,7 +138,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mMultiSelectionActive:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$200(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Z
 
     move-result v0
@@ -155,7 +146,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mDetectListener:Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
 
     move-result-object v0
@@ -164,13 +154,11 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mMultiSelectionActive:Z
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$202(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;Z)Z
 
     :cond_3
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mDetectListener:Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
 
     move-result-object v0
@@ -179,12 +167,10 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mClickActive:Z
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$302(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mLongTmActive:Z
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$002(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;Z)Z
 
     goto :goto_0
@@ -196,7 +182,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mDetectListener:Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
 
     move-result-object v0
@@ -205,7 +190,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mDetectListener:Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
 
     move-result-object v0
@@ -218,7 +202,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mFirstEnterMultiSelect:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$500(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Z
 
     move-result v0
@@ -227,7 +210,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mDetectListener:Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlMovementDetector$GlMoveDetectorListener;
 
     move-result-object v0
@@ -236,18 +218,15 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mFirstEnterMultiSelect:Z
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$502(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;Z)Z
 
     :cond_5
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mMultiSelectionActive:Z
     invoke-static {v0, v4}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$202(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$400(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v0
@@ -256,12 +235,10 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mClickActive:Z
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$302(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mLongTmActive:Z
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$002(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;Z)Z
 
     goto/16 :goto_0
@@ -269,7 +246,6 @@
     :cond_6
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlMovementDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->mMultiSelectionActive:Z
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/glcore/GlMovementDetector;->access$202(Lcom/sec/android/gallery3d/glcore/GlMovementDetector;Z)Z
 
     goto/16 :goto_0

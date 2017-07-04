@@ -49,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -64,7 +63,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -83,7 +81,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v4
@@ -127,7 +124,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->popupType:Ljava/lang/Integer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Ljava/lang/Integer;
 
     move-result-object v1
@@ -142,7 +138,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -155,12 +150,10 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->justSelectedKeyOK:Z
     invoke-static {v1, v3}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$202(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->popupType:Ljava/lang/Integer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Ljava/lang/Integer;
 
     move-result-object v1
@@ -175,7 +168,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -190,7 +182,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -211,7 +202,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -231,7 +221,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->popupType:Ljava/lang/Integer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Ljava/lang/Integer;
 
     move-result-object v1
@@ -244,7 +233,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -258,7 +246,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->popupType:Ljava/lang/Integer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Ljava/lang/Integer;
 
     move-result-object v1
@@ -273,7 +260,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -287,7 +273,6 @@
     :cond_4
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->popupType:Ljava/lang/Integer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Ljava/lang/Integer;
 
     move-result-object v1
@@ -300,7 +285,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -314,7 +298,6 @@
     :cond_5
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->popupType:Ljava/lang/Integer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Ljava/lang/Integer;
 
     move-result-object v1
@@ -327,7 +310,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -341,7 +323,6 @@
     :cond_6
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->LatLong:[D
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)[D
 
     move-result-object v1
@@ -350,7 +331,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->dateInMs:[J
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$400(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)[J
 
     move-result-object v1
@@ -359,7 +339,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->createTimeMapView()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)V
 
     goto :goto_1
@@ -367,7 +346,6 @@
     :cond_7
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -393,7 +371,6 @@
     :cond_8
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->popupType:Ljava/lang/Integer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Ljava/lang/Integer;
 
     move-result-object v1
@@ -406,7 +383,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -425,7 +401,6 @@
 
     invoke-static {v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyUtils;->startNearbyFramework(Lcom/sec/android/gallery3d/data/DataManager;)V
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mHandler:Landroid/os/Handler;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$600()Landroid/os/Handler;
 
     move-result-object v1
@@ -439,7 +414,6 @@
     :cond_9
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->popupType:Ljava/lang/Integer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Ljava/lang/Integer;
 
     move-result-object v1
@@ -454,7 +428,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -483,7 +456,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -496,7 +468,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -512,7 +483,6 @@
     :cond_a
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->popupType:Ljava/lang/Integer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Ljava/lang/Integer;
 
     move-result-object v1
@@ -527,10 +497,8 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->createCategoryView()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)V
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mHandler:Landroid/os/Handler;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$600()Landroid/os/Handler;
 
     move-result-object v1
@@ -542,7 +510,6 @@
     :cond_b
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->popupType:Ljava/lang/Integer;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)Ljava/lang/Integer;
 
     move-result-object v1
@@ -557,10 +524,8 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->createCategoryView()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;)V
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->mHandler:Landroid/os/Handler;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/ChnUsageAlertDialogCmd;->access$600()Landroid/os/Handler;
 
     move-result-object v1

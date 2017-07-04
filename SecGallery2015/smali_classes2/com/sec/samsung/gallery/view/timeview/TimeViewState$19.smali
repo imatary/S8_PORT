@@ -41,12 +41,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mShrinkOption:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$12502(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;I)I
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$19;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mFlags:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$12600(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)I
 
     move-result v0
@@ -57,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$19;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$12700(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -68,14 +65,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$19;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mFlags:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$13000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)I
 
     move-result v1
 
     and-int/lit8 v1, v1, -0x41
 
-    # setter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mFlags:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$12902(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;I)I
 
     :cond_0
@@ -83,7 +78,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mCurrentMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$13102(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;Lcom/sec/android/gallery3d/data/MediaItem;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     return-void
@@ -94,7 +88,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$19;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$12000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -115,7 +108,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$19;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$12100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -127,14 +119,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$19;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mFlags:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$12400(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)I
 
     move-result v1
 
     and-int/lit8 v1, v1, -0x41
 
-    # setter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mFlags:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$12302(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;I)I
 
     return-void

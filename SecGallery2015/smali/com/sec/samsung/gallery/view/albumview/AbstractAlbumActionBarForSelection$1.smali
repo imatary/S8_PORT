@@ -61,7 +61,6 @@
 
     iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/albumview/AbstractAlbumActionBarForSelection$1;->val$toggleImage:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AbstractAlbumActionBarForSelection;->setCheckboxState(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/albumview/AbstractAlbumActionBarForSelection;->access$000(Lcom/sec/samsung/gallery/view/albumview/AbstractAlbumActionBarForSelection;Z)V
 
     return-void

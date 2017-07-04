@@ -63,7 +63,6 @@
 
     const/4 v7, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v3
@@ -81,7 +80,6 @@
 
     invoke-virtual {v3, v8}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v3
@@ -98,19 +96,16 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v5
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v6
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->setLayoutSize(Landroid/view/ViewGroup$LayoutParams;II)V
     invoke-static {v3, v4, v5, v6}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2000(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;Landroid/view/ViewGroup$LayoutParams;II)V
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
@@ -123,19 +118,16 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v5
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v6
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->setLayoutSize(Landroid/view/ViewGroup$LayoutParams;II)V
     invoke-static {v3, v4, v5, v6}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2000(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;Landroid/view/ViewGroup$LayoutParams;II)V
 
     iget-object v3, p1, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$ViewHolder;->subText:Landroid/widget/TextView;
@@ -152,7 +144,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v6
@@ -206,7 +197,6 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/widget/ImageView;->setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_MOVE_COPY_ALBUM_THUMBNAIL:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$900()Z
 
     move-result v3
@@ -229,7 +219,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->getBucketIconType(I)I
     invoke-static {v3, v2}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2400(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;I)I
 
     move-result v0
@@ -247,7 +236,6 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->startLoadBitmapTask(ILcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$ViewHolder;)V
     invoke-static {v3, p2, p1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2500(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;ILcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$ViewHolder;)V
 
     :goto_2
@@ -285,7 +273,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->setLayoutSize(Landroid/view/ViewGroup$LayoutParams;II)V
     invoke-static {v3, v4, v5, v6}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2000(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;Landroid/view/ViewGroup$LayoutParams;II)V
 
     goto :goto_1
@@ -293,7 +280,6 @@
     :cond_3
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v3
@@ -347,7 +333,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_MOVE_COPY_ALBUM_THUMBNAIL:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$900()Z
 
     move-result v2
@@ -364,22 +349,18 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v4
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v5
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->setLayoutSize(Landroid/view/ViewGroup$LayoutParams;II)V
     invoke-static {v2, v3, v4, v5}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2000(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;Landroid/view/ViewGroup$LayoutParams;II)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_TABLET:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2200()Z
 
     move-result v2
@@ -409,7 +390,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Landroid/content/Context;
 
     move-result-object v3
@@ -424,7 +404,7 @@
 
     iget-object v2, p1, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$ViewHolder;->icon:Landroid/widget/ImageView;
 
-    const v3, 0x7f02032c
+    const v3, 0x7f02032e
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -457,7 +437,6 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->getCreateAlbumButtonSize()I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v0
@@ -470,14 +449,12 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->setLayoutSize(Landroid/view/ViewGroup$LayoutParams;II)V
     invoke-static {v2, v3, v0, v0}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2000(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;Landroid/view/ViewGroup$LayoutParams;II)V
 
     iget-object v2, p1, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$ViewHolder;->text:Landroid/widget/TextView;
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v3
@@ -493,7 +470,6 @@
     return-void
 
     :cond_1
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v2
@@ -504,7 +480,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Landroid/content/Context;
 
     move-result-object v3
@@ -528,7 +503,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Landroid/content/Context;
 
     move-result-object v3
@@ -615,14 +589,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mInflater:Landroid/view/LayoutInflater;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1800(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Landroid/view/LayoutInflater;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->getMediaViewLayoutResourceId()I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1700(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v2
@@ -637,7 +609,6 @@
 
     invoke-direct {v0, v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$ViewHolder;-><init>(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$1;)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_MOVE_COPY_ALBUM_THUMBNAIL:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$900()Z
 
     move-result v1
@@ -682,7 +653,6 @@
 
     move-result v4
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->setLayoutSize(Landroid/view/ViewGroup$LayoutParams;II)V
     invoke-static {v1, v2, v3, v4}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2000(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;Landroid/view/ViewGroup$LayoutParams;II)V
 
     :cond_0
@@ -740,7 +710,6 @@
 
     iput-object v1, v0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$ViewHolder;->view:Landroid/view/View;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v1
@@ -787,7 +756,6 @@
 
     iput p1, v0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$ViewHolder;->position:I
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v1
@@ -797,7 +765,6 @@
     if-eqz p1, :cond_4
 
     :cond_3
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v1
@@ -806,7 +773,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v1
@@ -821,7 +787,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v1
@@ -853,7 +818,6 @@
     return-object p2
 
     :cond_6
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v1
@@ -864,7 +828,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v1
@@ -874,7 +837,6 @@
     if-le p1, v1, :cond_8
 
     :cond_7
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v1
@@ -883,7 +845,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v1
@@ -912,7 +873,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v3

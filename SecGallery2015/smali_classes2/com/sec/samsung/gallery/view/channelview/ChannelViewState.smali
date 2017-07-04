@@ -380,10 +380,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$10100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$10100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -396,7 +396,15 @@
     return p1
 .end method
 
-.method static synthetic access$10200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+.method static synthetic access$10200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$10300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->showDeleteDialog()V
@@ -404,7 +412,7 @@
     return-void
 .end method
 
-.method static synthetic access$10300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
+.method static synthetic access$10400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mCreateBtn:Landroid/widget/ImageButton;
@@ -412,7 +420,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$10400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;II)V
+.method static synthetic access$10500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;II)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startDetailView(II)V
@@ -420,7 +428,7 @@
     return-void
 .end method
 
-.method static synthetic access$10500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+.method static synthetic access$10600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->FEATURE_USE_TAB_UI:Z
@@ -428,18 +436,10 @@
     return v0
 .end method
 
-.method static synthetic access$10600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$10700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
-.end method
-
-.method static synthetic access$10700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     return-object v0
 .end method
@@ -480,20 +480,20 @@
     return-void
 .end method
 
-.method static synthetic access$11000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startNotificationViewMode()V
-
-    return-void
-.end method
-
-.method static synthetic access$11100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
+.method static synthetic access$11000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     return-object v0
+.end method
+
+.method static synthetic access$11100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startNotificationViewMode()V
+
+    return-void
 .end method
 
 .method static synthetic access$11200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
@@ -504,7 +504,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$11300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$11300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$11400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -512,7 +520,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$11500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
+.method static synthetic access$11600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->setAddEventButton(Z)V
@@ -520,7 +528,7 @@
     return-void
 .end method
 
-.method static synthetic access$11700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)I
+.method static synthetic access$11800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mAlbumIndex:I
@@ -528,20 +536,12 @@
     return v0
 .end method
 
-.method static synthetic access$11800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+.method static synthetic access$11900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->createSharedStoryDialog()V
 
     return-void
-.end method
-
-.method static synthetic access$11900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
 .end method
 
 .method static synthetic access$1200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
@@ -552,20 +552,20 @@
     return-void
 .end method
 
-.method static synthetic access$12000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
+.method static synthetic access$12000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$12100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 1
 
     invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->getCoverBitmap(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
 
     move-result-object v0
-
-    return-object v0
-.end method
-
-.method static synthetic access$12100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -578,7 +578,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$12300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Ljava/lang/String;
+.method static synthetic access$12300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$12400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mCurrentTopSetPath:Ljava/lang/String;
@@ -586,7 +594,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$12400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$12500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -594,7 +602,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$12500()Z
+.method static synthetic access$12600()Z
     .locals 1
 
     sget-boolean v0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->USE_EVENT_NOTIFICATION:Z
@@ -602,7 +610,7 @@
     return v0
 .end method
 
-.method static synthetic access$12600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$12700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -610,18 +618,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$12700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbumManager;
+.method static synthetic access$12800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbumManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mChannelAlbumMgr:Lcom/sec/android/gallery3d/data/ChannelAlbumManager;
-
-    return-object v0
-.end method
-
-.method static synthetic access$12800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -690,7 +690,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$13600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+.method static synthetic access$13600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$13700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->selectAllPostProcess()V
@@ -698,7 +706,7 @@
     return-void
 .end method
 
-.method static synthetic access$13700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$SelectionTask;)V
+.method static synthetic access$13800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$SelectionTask;)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->selectAllProcess(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$SelectionTask;)V
@@ -706,18 +714,10 @@
     return-void
 .end method
 
-.method static synthetic access$13800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/data/DataManager;
+.method static synthetic access$13900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/data/DataManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mDataProxy:Lcom/sec/android/gallery3d/data/DataManager;
-
-    return-object v0
-.end method
-
-.method static synthetic access$13900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -730,7 +730,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$14000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
+.method static synthetic access$14000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$14100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
@@ -738,7 +746,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$14100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$14200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
@@ -746,7 +754,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$14200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;IIZ)V
+.method static synthetic access$14300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;IIZ)V
     .locals 0
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startDetailView(IIZ)V
@@ -754,7 +762,7 @@
     return-void
 .end method
 
-.method static synthetic access$14300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
+.method static synthetic access$14400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
@@ -762,7 +770,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$14400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+.method static synthetic access$14500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mNeedIdleProcess:Z
@@ -770,7 +778,7 @@
     return v0
 .end method
 
-.method static synthetic access$14402(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
+.method static synthetic access$14502(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mNeedIdleProcess:Z
@@ -778,7 +786,7 @@
     return p1
 .end method
 
-.method static synthetic access$14500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$14600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -786,7 +794,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$14600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$14700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
@@ -794,7 +802,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$14700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$14800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -802,20 +810,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$14800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+.method static synthetic access$14900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mUseEventShare:Z
 
     return v0
-.end method
-
-.method static synthetic access$14900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
 .end method
 
 .method static synthetic access$1500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -834,10 +834,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$15100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$15100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -850,7 +850,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$15300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+.method static synthetic access$15300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$15400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mUseLiveEvent:Z
@@ -858,7 +866,7 @@
     return v0
 .end method
 
-.method static synthetic access$15400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
+.method static synthetic access$15500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->handleNewEventAlbum(I)V
@@ -866,7 +874,7 @@
     return-void
 .end method
 
-.method static synthetic access$15500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
+.method static synthetic access$15600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mCreateEventBtn:Landroid/widget/ImageButton;
@@ -874,7 +882,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$15600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
+.method static synthetic access$15700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->setCreateEventVisibleMode(Z)V
@@ -882,7 +890,7 @@
     return-void
 .end method
 
-.method static synthetic access$15700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+.method static synthetic access$15800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mNeedCreateEventBtnListener:Z
@@ -890,7 +898,7 @@
     return v0
 .end method
 
-.method static synthetic access$15702(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
+.method static synthetic access$15802(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mNeedCreateEventBtnListener:Z
@@ -898,18 +906,10 @@
     return p1
 .end method
 
-.method static synthetic access$15800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->setCreateEventListener()V
-
-    return-void
-.end method
-
 .method static synthetic access$15900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->handleLiveChannelAlbum()V
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->setCreateEventListener()V
 
     return-void
 .end method
@@ -922,20 +922,20 @@
     return-void
 .end method
 
-.method static synthetic access$16000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
+.method static synthetic access$16000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->handleLiveChannelAlbum()V
+
+    return-void
+.end method
+
+.method static synthetic access$16100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->removeEventShareIcon(I)V
 
     return-void
-.end method
-
-.method static synthetic access$16100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
 .end method
 
 .method static synthetic access$16200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -946,10 +946,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$16300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$16300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -970,10 +970,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$16600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$16600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
@@ -986,20 +986,20 @@
     return-object v0
 .end method
 
-.method static synthetic access$16800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;IZ)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startChannelPhotoView(IZ)V
-
-    return-void
-.end method
-
-.method static synthetic access$16900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$16800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
+.end method
+
+.method static synthetic access$16900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;IZ)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startChannelPhotoView(IZ)V
+
+    return-void
 .end method
 
 .method static synthetic access$1700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -1018,23 +1018,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$17100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->createDialog(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic access$17200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$17300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$17100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -1042,10 +1026,26 @@
     return-object v0
 .end method
 
-.method static synthetic access$17400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$17200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->createDialog(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method static synthetic access$17300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$17400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -1066,10 +1066,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$17700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$17700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
@@ -1098,10 +1098,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$18000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$18000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -1115,6 +1115,14 @@
 .end method
 
 .method static synthetic access$18200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$18300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
@@ -1444,7 +1452,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$5500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+.method static synthetic access$5500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$5600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->updateCountOnActionBar()V
@@ -1452,7 +1468,7 @@
     return-void
 .end method
 
-.method static synthetic access$5600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+.method static synthetic access$5700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->checkMediaAvailability()V
@@ -1460,7 +1476,7 @@
     return-void
 .end method
 
-.method static synthetic access$5700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+.method static synthetic access$5800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsFirstLoadingFinished:Z
@@ -1468,7 +1484,7 @@
     return v0
 .end method
 
-.method static synthetic access$5702(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
+.method static synthetic access$5802(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsFirstLoadingFinished:Z
@@ -1476,7 +1492,7 @@
     return p1
 .end method
 
-.method static synthetic access$5800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+.method static synthetic access$5900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsResumed:Z
@@ -1484,20 +1500,12 @@
     return v0
 .end method
 
-.method static synthetic access$5802(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
+.method static synthetic access$5902(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsResumed:Z
 
     return p1
-.end method
-
-.method static synthetic access$5900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsFromNoItemView:Z
-
-    return v0
 .end method
 
 .method static synthetic access$600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
@@ -1508,7 +1516,15 @@
     return-void
 .end method
 
-.method static synthetic access$6000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+.method static synthetic access$6000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsFromNoItemView:Z
+
+    return v0
+.end method
+
+.method static synthetic access$6100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->refreshDualScreenFocus()V
@@ -1516,7 +1532,7 @@
     return-void
 .end method
 
-.method static synthetic access$6100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+.method static synthetic access$6200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsDualLaunchFromDetail:Z
@@ -1524,7 +1540,7 @@
     return v0
 .end method
 
-.method static synthetic access$6102(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
+.method static synthetic access$6202(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mIsDualLaunchFromDetail:Z
@@ -1532,7 +1548,7 @@
     return p1
 .end method
 
-.method static synthetic access$6200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;IIZ)V
+.method static synthetic access$6300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;IIZ)V
     .locals 0
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startDetailViewInUIThread(IIZ)V
@@ -1540,20 +1556,12 @@
     return-void
 .end method
 
-.method static synthetic access$6300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
+.method static synthetic access$6400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->selectAlbum(I)V
 
     return-void
-.end method
-
-.method static synthetic access$6400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
 .end method
 
 .method static synthetic access$6500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -1564,7 +1572,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$6600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+.method static synthetic access$6600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$6700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
@@ -1572,20 +1588,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$6700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+.method static synthetic access$6800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->enterSelectionMode()V
 
     return-void
-.end method
-
-.method static synthetic access$6800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
 .end method
 
 .method static synthetic access$6900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -1604,10 +1612,10 @@
     return v0
 .end method
 
-.method static synthetic access$7000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$7000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -1660,18 +1668,18 @@
     return-object v0
 .end method
 
-.method static synthetic access$7600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$7600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
 
-.method static synthetic access$7700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$7700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -1732,10 +1740,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$8400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$8400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
@@ -1756,10 +1764,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$8700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$8700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -1804,18 +1812,18 @@
     return-object v0
 .end method
 
-.method static synthetic access$9200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$9200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
 
-.method static synthetic access$9300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$9300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -1852,10 +1860,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$9800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$9800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
@@ -2953,7 +2961,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v5, 0x7f0a078a
+    const v5, 0x7f0a0790
 
     new-array v6, v7, [Ljava/lang/Object;
 
@@ -3003,7 +3011,7 @@
     :cond_3
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v5, 0x7f0a07df
+    const v5, 0x7f0a07e4
 
     new-array v6, v7, [Ljava/lang/Object;
 
@@ -3145,7 +3153,7 @@
     :cond_2
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v7, 0x7f0a078f
+    const v7, 0x7f0a0795
 
     new-array v8, v8, [Ljava/lang/Object;
 
@@ -3200,7 +3208,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v2, 0x7f0a0790
+    const v2, 0x7f0a0796
 
     const/4 v3, 0x2
 
@@ -3243,154 +3251,106 @@
 .end method
 
 .method private handleDCStartLatestChannelDetailWithSharedType(Ljava/lang/String;)V
-    .locals 4
+    .locals 5
 
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->checkSharedParam(Ljava/lang/String;)Z
 
     move-result v2
 
     const/4 v1, 0x0
 
     :goto_0
-    iget-object v3, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mChannelSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mChannelSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;
 
-    invoke-virtual {v3}, Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;->getCount()I
+    invoke-virtual {v4}, Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;->getCount()I
 
-    move-result v3
+    move-result v4
 
-    if-ge v1, v3, :cond_2
+    if-ge v1, v4, :cond_1
 
-    iget-object v3, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mChannelSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mChannelSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;
 
-    invoke-virtual {v3, v1}, Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;->getSubMediaSet(I)Lcom/sec/android/gallery3d/data/MediaSet;
+    invoke-virtual {v4, v1}, Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;->getSubMediaSet(I)Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v0
 
     check-cast v0, Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
-    if-eqz v0, :cond_1
-
-    if-nez v2, :cond_0
-
     invoke-virtual {v0}, Lcom/sec/android/gallery3d/data/ChannelAlbum;->isShared()Z
 
     move-result v3
 
-    if-nez v3, :cond_0
+    if-eqz v0, :cond_0
 
-    const-string/jumbo v3, "all"
+    if-ne v2, v3, :cond_0
 
-    invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const/4 v4, 0x0
 
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    const-string/jumbo v3, "normal"
-
-    invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    invoke-virtual {v0}, Lcom/sec/android/gallery3d/data/ChannelAlbum;->isShared()Z
-
-    move-result v3
-
-    if-nez v3, :cond_1
-
-    :cond_0
-    const/4 v3, 0x0
-
-    invoke-direct {p0, v1, v3}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startChannelPhotoView(IZ)V
+    invoke-direct {p0, v1, v4}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startChannelPhotoView(IZ)V
 
     :goto_1
     return-void
 
-    :cond_1
+    :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    :cond_2
+    :cond_1
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->makeFailedNlgOfLaunchChannelPhotoView()V
 
     goto :goto_1
 .end method
 
 .method private handleDCStartOldestChannelDetailWithSharedType(Ljava/lang/String;)V
-    .locals 4
+    .locals 5
 
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->checkSharedParam(Ljava/lang/String;)Z
 
     move-result v2
 
-    iget-object v3, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mChannelSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mChannelSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;
 
-    invoke-virtual {v3}, Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;->getCount()I
+    invoke-virtual {v4}, Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;->getCount()I
 
-    move-result v3
+    move-result v4
 
-    add-int/lit8 v1, v3, -0x1
+    add-int/lit8 v1, v4, -0x1
 
     :goto_0
-    if-ltz v1, :cond_2
+    if-ltz v1, :cond_1
 
-    iget-object v3, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mChannelSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mChannelSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;
 
-    invoke-virtual {v3, v1}, Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;->getSubMediaSet(I)Lcom/sec/android/gallery3d/data/MediaSet;
+    invoke-virtual {v4, v1}, Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;->getSubMediaSet(I)Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v0
 
     check-cast v0, Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
-    if-eqz v0, :cond_1
-
-    if-nez v2, :cond_0
-
     invoke-virtual {v0}, Lcom/sec/android/gallery3d/data/ChannelAlbum;->isShared()Z
 
     move-result v3
 
-    if-nez v3, :cond_0
+    if-eqz v0, :cond_0
 
-    const-string/jumbo v3, "all"
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    if-ne v2, v3, :cond_0
 
-    move-result v3
+    const/4 v4, 0x0
 
-    if-nez v3, :cond_0
-
-    const-string/jumbo v3, "normal"
-
-    invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    invoke-virtual {v0}, Lcom/sec/android/gallery3d/data/ChannelAlbum;->isShared()Z
-
-    move-result v3
-
-    if-nez v3, :cond_1
-
-    :cond_0
-    const/4 v3, 0x0
-
-    invoke-direct {p0, v1, v3}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startChannelPhotoView(IZ)V
+    invoke-direct {p0, v1, v4}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startChannelPhotoView(IZ)V
 
     :goto_1
     return-void
 
-    :cond_1
+    :cond_0
     add-int/lit8 v1, v1, -0x1
 
     goto :goto_0
 
-    :cond_2
+    :cond_1
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->makeFailedNlgOfLaunchChannelPhotoView()V
 
     goto :goto_1
@@ -3666,7 +3626,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v5, 0x7f0a078b
+    const v5, 0x7f0a0791
 
     new-array v6, v6, [Ljava/lang/Object;
 
@@ -3867,7 +3827,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v2, 0x7f0a078f
+    const v2, 0x7f0a0795
 
     const/4 v3, 0x0
 
@@ -7343,7 +7303,7 @@
 
     const v5, 0x7f12028b
 
-    const v4, 0x7f12027b
+    const v4, 0x7f12027a
 
     const/4 v1, 0x1
 
@@ -9212,7 +9172,7 @@
 
     iget-object v4, v0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v22, 0x7f0a07e4
+    const v22, 0x7f0a07e9
 
     const/16 v23, 0x0
 

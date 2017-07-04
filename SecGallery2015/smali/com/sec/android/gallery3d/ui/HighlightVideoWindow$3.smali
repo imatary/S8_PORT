@@ -39,7 +39,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$3;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mRelativeLayout:Landroid/widget/RelativeLayout;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1200(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Landroid/widget/RelativeLayout;
 
     move-result-object v2
@@ -48,7 +47,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$3;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->getHighlightViewHeight()I
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1000(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)I
 
     move-result v0
@@ -61,7 +59,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$3;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mRelativeLayout:Landroid/widget/RelativeLayout;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1200(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Landroid/widget/RelativeLayout;
 
     move-result-object v2
@@ -70,7 +67,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$3;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->setPreviewSize(I)V
     invoke-static {v2, v0}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1100(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;I)V
 
     :cond_0

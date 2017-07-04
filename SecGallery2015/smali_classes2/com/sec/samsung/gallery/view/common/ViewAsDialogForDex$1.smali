@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$1;->this$0:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->dismissDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->access$000(Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;)V
 
     return-void

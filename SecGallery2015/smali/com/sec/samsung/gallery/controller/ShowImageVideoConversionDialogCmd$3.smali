@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowImageVideoConversionDialogCmd;)Landroid/content/Context;
 
     move-result-object v1

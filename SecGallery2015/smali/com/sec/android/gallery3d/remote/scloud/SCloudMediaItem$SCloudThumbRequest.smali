@@ -86,7 +86,6 @@
 .method private loadFaceRect(Z)V
     .locals 1
 
-    # getter for: Lcom/sec/android/gallery3d/remote/scloud/SCloudMediaItem;->FEATURE_FACE_THUMBNAIL_ENABLED:Z
     invoke-static {}, Lcom/sec/android/gallery3d/remote/scloud/SCloudMediaItem;->access$200()Z
 
     move-result v0

@@ -165,7 +165,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mDevices:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$000(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -175,7 +174,6 @@
     :try_start_0
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mDevices:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$000(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -188,7 +186,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mDevices:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$000(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -206,7 +203,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->refreshChangePlayerDialogRef()V
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$200(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)V
 
     :cond_1
@@ -230,7 +226,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mWeakActivity:Ljava/lang/ref/WeakReference;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$300(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Ljava/lang/ref/WeakReference;
 
     move-result-object v2
@@ -286,7 +281,6 @@
     :cond_3
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mNearbyContext:Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$400(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
 
     move-result-object v2
@@ -295,7 +289,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mNearbyContext:Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$400(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
 
     move-result-object v2
@@ -370,7 +363,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mDevices:Ljava/util/ArrayList;
     invoke-static {v4}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$000(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Ljava/util/ArrayList;
 
     move-result-object v5
@@ -380,7 +372,6 @@
     :try_start_0
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mDevices:Ljava/util/ArrayList;
     invoke-static {v4}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$000(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Ljava/util/ArrayList;
 
     move-result-object v4
@@ -401,12 +392,10 @@
 
     move-result-object v5
 
-    # invokes: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->showDialogDisconnected(Ljava/lang/String;)V
     invoke-static {v4, v5}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$100(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;Ljava/lang/String;)V
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->refreshChangePlayerDialogRef()V
     invoke-static {v4}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$200(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)V
 
     :cond_0
@@ -430,7 +419,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mWeakActivity:Ljava/lang/ref/WeakReference;
     invoke-static {v4}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$300(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Ljava/lang/ref/WeakReference;
 
     move-result-object v4
@@ -514,7 +502,6 @@
     :cond_2
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mNearbyContext:Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
     invoke-static {v4}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$400(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
 
     move-result-object v4
@@ -523,7 +510,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mNearbyContext:Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
     invoke-static {v4}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$400(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
 
     move-result-object v4
@@ -536,7 +522,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mWeakActivity:Ljava/lang/ref/WeakReference;
     invoke-static {v4}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$300(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Ljava/lang/ref/WeakReference;
 
     move-result-object v4
@@ -577,7 +562,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$500(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Landroid/content/Context;
 
     move-result-object v2
@@ -610,7 +594,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mWeakActivity:Ljava/lang/ref/WeakReference;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$300(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Ljava/lang/ref/WeakReference;
 
     move-result-object v2

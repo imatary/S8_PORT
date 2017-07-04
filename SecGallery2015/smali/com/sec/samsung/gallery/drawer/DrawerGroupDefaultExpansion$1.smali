@@ -50,7 +50,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion$1;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->updateDefaultExpansionItem()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->access$000(Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion$1;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;

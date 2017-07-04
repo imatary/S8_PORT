@@ -40,7 +40,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceSet$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceSet;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceSet;->mNearbyContext:Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceSet;->access$000(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceSet;)Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
 
     move-result-object v1

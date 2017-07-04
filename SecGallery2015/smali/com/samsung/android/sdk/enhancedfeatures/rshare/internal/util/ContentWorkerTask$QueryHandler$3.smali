@@ -45,7 +45,6 @@
 
     iget-object v0, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/BasicListener;
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/BasicListener;
 
     move-result-object v0

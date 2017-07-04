@@ -65,7 +65,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/util/AddItemToChannel$3;->this$0:Lcom/sec/samsung/gallery/util/AddItemToChannel;
 
-    # getter for: Lcom/sec/samsung/gallery/util/AddItemToChannel;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/util/AddItemToChannel;->access$000(Lcom/sec/samsung/gallery/util/AddItemToChannel;)Landroid/content/Context;
 
     move-result-object v2
@@ -112,7 +111,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/util/AddItemToChannel$3;->this$0:Lcom/sec/samsung/gallery/util/AddItemToChannel;
 
-    # getter for: Lcom/sec/samsung/gallery/util/AddItemToChannel;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/util/AddItemToChannel;->access$000(Lcom/sec/samsung/gallery/util/AddItemToChannel;)Landroid/content/Context;
 
     move-result-object v1

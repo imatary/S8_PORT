@@ -122,7 +122,6 @@
 
     iget-object v1, p0, Landroid/support/v7/app/AlertController$AlertParams$2;->val$dialog:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mMultiChoiceItemLayout:I
     invoke-static {v1}, Landroid/support/v7/app/AlertController;->access$900(Landroid/support/v7/app/AlertController;)I
 
     move-result v1

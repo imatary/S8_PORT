@@ -46,7 +46,6 @@
 
     iput-object v1, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->mMainLayout:Landroid/view/ViewGroup;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v1
@@ -63,12 +62,10 @@
 
     iget v1, v0, Landroid/graphics/Point;->y:I
 
-    # setter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mDisplayHeight:I
     invoke-static {p1, v1}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$102(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;I)I
 
     iget v1, v0, Landroid/graphics/Point;->x:I
 
-    # setter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mDisplayWidth:I
     invoke-static {p1, v1}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$202(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;I)I
 
     return-void
@@ -101,7 +98,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$300(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -112,7 +108,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->isPersonPick()Z
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$400(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Z
 
     move-result v8
@@ -121,7 +116,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->isContactPick()Z
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$500(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Z
 
     move-result v8
@@ -131,7 +125,6 @@
     :cond_0
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -168,7 +161,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->isLandscape()Z
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$600(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Z
 
     move-result v8
@@ -177,7 +169,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -196,7 +187,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$300(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -274,7 +264,6 @@
     :cond_3
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -306,7 +295,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -361,7 +349,6 @@
     :cond_6
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -381,7 +368,6 @@
     :cond_7
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$300(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -396,7 +382,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$300(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -412,7 +397,6 @@
     :cond_8
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -467,7 +451,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$300(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -480,7 +463,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -493,7 +475,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -532,7 +513,6 @@
     :cond_b
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -572,7 +552,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$300(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -585,7 +564,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -598,7 +576,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -620,7 +597,6 @@
     :cond_d
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v8
@@ -664,7 +640,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v2
@@ -704,7 +679,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v2
@@ -731,7 +705,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$300(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v2
@@ -825,7 +798,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$300(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v2
@@ -840,7 +812,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$300(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v2
@@ -904,7 +875,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/EmptySetDrawer$PopupDescription;->this$0:Lcom/sec/android/gallery3d/ui/EmptySetDrawer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/EmptySetDrawer;->access$000(Lcom/sec/android/gallery3d/ui/EmptySetDrawer;)Landroid/content/Context;
 
     move-result-object v2

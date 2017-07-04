@@ -1587,7 +1587,6 @@
 
     move-object/from16 v0, v20
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->title:Ljava/lang/String;
     invoke-static {v0, v6}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$802(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;Ljava/lang/String;)Ljava/lang/String;
 
     const/4 v6, 0x1
@@ -1600,7 +1599,6 @@
 
     move-object/from16 v0, v20
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->location:Ljava/lang/String;
     invoke-static {v0, v6}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$2102(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;Ljava/lang/String;)Ljava/lang/String;
 
     const/4 v6, 0x2
@@ -1613,7 +1611,6 @@
 
     move-object/from16 v0, v20
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->dtstart:J
     invoke-static {v0, v10, v11}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$1902(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;J)J
 
     const/4 v6, 0x3
@@ -1626,10 +1623,8 @@
 
     move-object/from16 v0, v20
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->dtend:J
     invoke-static {v0, v10, v11}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$2002(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;J)J
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->location:Ljava/lang/String;
     invoke-static/range {v20 .. v20}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$2100(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)Ljava/lang/String;
 
     move-result-object v6
@@ -1638,7 +1633,6 @@
 
     const-string/jumbo v6, ""
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->location:Ljava/lang/String;
     invoke-static/range {v20 .. v20}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$2100(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)Ljava/lang/String;
 
     move-result-object v8
@@ -1651,7 +1645,6 @@
 
     const-string/jumbo v6, ""
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->title:Ljava/lang/String;
     invoke-static/range {v20 .. v20}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$800(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)Ljava/lang/String;
 
     move-result-object v8
@@ -1672,7 +1665,6 @@
 
     move-object/from16 v0, v20
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->title:Ljava/lang/String;
     invoke-static {v0, v6}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$802(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_1
@@ -1742,7 +1734,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->location:Ljava/lang/String;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$2100(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)Ljava/lang/String;
 
     move-result-object v6
@@ -1813,7 +1804,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->location:Ljava/lang/String;
     invoke-static {v6, v13}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$2102(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;Ljava/lang/String;)Ljava/lang/String;
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
@@ -3419,7 +3409,6 @@
 
     move-object/from16 v0, v24
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->id:I
     invoke-static {v0, v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$602(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;I)I
 
     const/4 v4, 0x1
@@ -3432,7 +3421,6 @@
 
     move-object/from16 v0, v24
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lat:D
     invoke-static {v0, v4, v5}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1602(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;D)D
 
     const/4 v4, 0x2
@@ -3445,7 +3433,6 @@
 
     move-object/from16 v0, v24
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lon:D
     invoke-static {v0, v4, v5}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;D)D
 
     const/4 v4, 0x3
@@ -3458,7 +3445,6 @@
 
     move-object/from16 v0, v24
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->data:Ljava/lang/String;
     invoke-static {v0, v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1802(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Ljava/lang/String;)Ljava/lang/String;
 
     const/4 v4, 0x4
@@ -3471,7 +3457,6 @@
 
     move-object/from16 v0, v24
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v0, v4, v5}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$102(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;J)J
 
     const/4 v4, 0x5
@@ -3484,7 +3469,6 @@
 
     move-object/from16 v0, v24
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v0, v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Ljava/lang/String;)Ljava/lang/String;
 
     const/4 v4, 0x6
@@ -3504,22 +3488,18 @@
     :goto_1
     move-object/from16 v0, v24
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->is_image:Z
     invoke-static {v0, v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$502(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Z)Z
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v4
 
     if-nez v4, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lat:D
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)D
 
     move-result-wide v4
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lon:D
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)D
 
     move-result-wide v44
@@ -3532,12 +3512,10 @@
 
     if-eqz v4, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lat:D
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)D
 
     move-result-wide v4
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lon:D
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)D
 
     move-result-wide v44
@@ -3552,11 +3530,9 @@
 
     move-object/from16 v0, v24
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v0, v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_1
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v4
@@ -3567,7 +3543,6 @@
 
     move-object/from16 v0, v24
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v0, v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_2
@@ -3614,7 +3589,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->dtstart:J
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$1900(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)J
 
     move-result-wide v22
@@ -3629,7 +3603,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->dtend:J
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$2000(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)J
 
     move-result-wide v20
@@ -3644,7 +3617,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->title:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$800(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)Ljava/lang/String;
 
     move-result-object v40
@@ -3715,7 +3687,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v4
@@ -3756,7 +3727,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v4
@@ -3775,7 +3745,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->location:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$2100(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)Ljava/lang/String;
 
     move-result-object v4
@@ -3792,7 +3761,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->location:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$2100(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)Ljava/lang/String;
 
     move-result-object v5
@@ -3807,7 +3775,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v4
@@ -3830,7 +3797,6 @@
 
     move-object/from16 v0, v40
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Ljava/lang/String;)Ljava/lang/String;
 
     move-object/from16 v0, v25
@@ -3878,7 +3844,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v4
@@ -3895,7 +3860,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v38
@@ -3906,7 +3870,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v4
@@ -3931,7 +3894,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v14
@@ -3986,7 +3948,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v14
@@ -4040,7 +4001,6 @@
 
     iget-object v4, v0, Lcom/sec/android/gallery3d/data/EventAlbumManager;->mCurLocality:Ljava/lang/String;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static/range {v30 .. v30}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v5
@@ -4051,7 +4011,6 @@
 
     if-eqz v4, :cond_e
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static/range {v30 .. v30}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v4
@@ -4178,7 +4137,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v4
@@ -4328,7 +4286,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v4
@@ -4345,7 +4302,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v4
@@ -4427,7 +4383,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->id:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)I
 
     move-result v4
@@ -4452,7 +4407,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lat:D
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)D
 
     move-result-wide v44
@@ -4477,7 +4431,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lon:D
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)D
 
     move-result-wide v44
@@ -4502,7 +4455,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->data:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1800(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v4
@@ -4523,7 +4475,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v44
@@ -4548,7 +4499,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v4
@@ -4569,7 +4519,6 @@
 
     check-cast v4, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->is_image:Z
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$500(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Z
 
     move-result v4
@@ -4818,10 +4767,8 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->id:I
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$602(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;I)I
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->id:I
     invoke-static/range {v17 .. v17}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)I
 
     move-result v2
@@ -4863,7 +4810,6 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lat:D
     invoke-static {v0, v2, v3}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1602(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;D)D
 
     const/4 v2, 0x2
@@ -4874,7 +4820,6 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lon:D
     invoke-static {v0, v2, v3}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;D)D
 
     const/4 v2, 0x3
@@ -4885,7 +4830,6 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->data:Ljava/lang/String;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1802(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Ljava/lang/String;)Ljava/lang/String;
 
     const/4 v2, 0x4
@@ -4896,14 +4840,12 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v0, v2, v3}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$102(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;J)J
 
     const/4 v2, 0x1
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->is_image:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$502(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Z)Z
 
     const/4 v2, 0x5
@@ -4924,16 +4866,13 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->is_image:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$502(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Z)Z
 
     :cond_5
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lat:D
     invoke-static/range {v17 .. v17}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)D
 
     move-result-wide v2
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lon:D
     invoke-static/range {v17 .. v17}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)D
 
     move-result-wide v8
@@ -4946,10 +4885,8 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Ljava/lang/String;)Ljava/lang/String;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static/range {v17 .. v17}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v2
@@ -4960,7 +4897,6 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_6
@@ -5161,7 +5097,6 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->id:I
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$602(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;I)I
 
     const/4 v2, 0x1
@@ -5172,7 +5107,6 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lat:D
     invoke-static {v0, v2, v3}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1602(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;D)D
 
     const/4 v2, 0x2
@@ -5183,7 +5117,6 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lon:D
     invoke-static {v0, v2, v3}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;D)D
 
     const/4 v2, 0x3
@@ -5194,7 +5127,6 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->data:Ljava/lang/String;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1802(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Ljava/lang/String;)Ljava/lang/String;
 
     const/4 v2, 0x4
@@ -5205,14 +5137,12 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v0, v2, v3}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$102(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;J)J
 
     const/4 v2, 0x1
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->is_image:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$502(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Z)Z
 
     const/4 v2, 0x5
@@ -5233,16 +5163,13 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->is_image:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$502(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Z)Z
 
     :cond_9
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lat:D
     invoke-static/range {v17 .. v17}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)D
 
     move-result-wide v2
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->lon:D
     invoke-static/range {v17 .. v17}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$1700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)D
 
     move-result-wide v8
@@ -5255,10 +5182,8 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Ljava/lang/String;)Ljava/lang/String;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static/range {v17 .. v17}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v2
@@ -5269,7 +5194,6 @@
 
     move-object/from16 v0, v17
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_a
@@ -5482,7 +5406,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/EventAlbumManager;->mCalendarEventItem:Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->title:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$800(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)Ljava/lang/String;
 
     move-result-object v0
@@ -5497,7 +5420,6 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->title:Ljava/lang/String;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$802(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
@@ -8367,14 +8289,12 @@
 
     move-result v2
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->bucketId:I
     invoke-static {v10, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2502(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;I)I
 
     invoke-interface {v8}, Landroid/database/Cursor;->getCount()I
 
     move-result v2
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->count:I
     invoke-static {v10, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2202(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;I)I
 
     const/4 v2, 0x0
@@ -8387,7 +8307,6 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->createTime:Ljava/lang/Long;
     invoke-static {v10, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2602(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;Ljava/lang/Long;)Ljava/lang/Long;
 
     const-string/jumbo v2, "No location"
@@ -8406,11 +8325,9 @@
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->locality:I
     invoke-static {v10, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2302(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;I)I
 
     :cond_4
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->createTime:Ljava/lang/Long;
     invoke-static {v10}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;)Ljava/lang/Long;
 
     move-result-object v2
@@ -8421,10 +8338,8 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->createMonth:Ljava/lang/String;
     invoke-static {v10, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2702(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;Ljava/lang/String;)Ljava/lang/String;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->createMonth:Ljava/lang/String;
     invoke-static {v10}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;)Ljava/lang/String;
 
     move-result-object v2
@@ -8437,7 +8352,6 @@
 
     if-nez v2, :cond_5
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->createMonth:Ljava/lang/String;
     invoke-static {v10}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;)Ljava/lang/String;
 
     move-result-object v17
@@ -8533,7 +8447,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->locality:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2300(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;)I
 
     move-result v2
@@ -8567,7 +8480,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->bucketId:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2500(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;)I
 
     move-result v2
@@ -8670,7 +8582,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->bucketId:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2500(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;)I
 
     move-result v2
@@ -10712,7 +10623,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->is_image:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$500(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Z
 
     move-result v2
@@ -10727,7 +10637,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->id:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)I
 
     move-result v2
@@ -10764,7 +10673,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->id:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)I
 
     move-result v2
@@ -10790,7 +10698,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->locality:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$700(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Ljava/lang/String;
 
     move-result-object v5
@@ -10878,7 +10785,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->id:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)I
 
     move-result v2
@@ -10921,7 +10827,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v6
@@ -10948,7 +10853,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v6
@@ -10977,7 +10881,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v6
@@ -11001,7 +10904,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v6
@@ -11016,7 +10918,6 @@
 
     iget-object v2, v0, Lcom/sec/android/gallery3d/data/EventAlbumManager;->mCalendarEventItem:Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->title:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$800(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)Ljava/lang/String;
 
     move-result-object v2
@@ -11027,7 +10928,6 @@
 
     iget-object v2, v0, Lcom/sec/android/gallery3d/data/EventAlbumManager;->mCalendarEventItem:Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->title:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$800(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;)Ljava/lang/String;
 
     move-result-object v19
@@ -11038,7 +10938,6 @@
 
     const/4 v6, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->title:Ljava/lang/String;
     invoke-static {v2, v6}, Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;->access$802(Lcom/sec/android/gallery3d/data/EventAlbumManager$CalendarEventItem;Ljava/lang/String;)Ljava/lang/String;
 
     const-string/jumbo v2, ". "
@@ -11258,7 +11157,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->id:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)I
 
     move-result v2
@@ -11429,7 +11327,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->is_image:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$500(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)Z
 
     move-result v2
@@ -11444,7 +11341,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->id:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)I
 
     move-result v2
@@ -11481,7 +11377,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->id:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$600(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)I
 
     move-result v2

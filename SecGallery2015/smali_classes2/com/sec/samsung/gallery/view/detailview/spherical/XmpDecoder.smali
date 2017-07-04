@@ -226,7 +226,6 @@
 
     check-cast v4, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->mData:[B
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->access$000(Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;)[B
 
     move-result-object v7
@@ -237,7 +236,6 @@
 
     if-eqz v7, :cond_2
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->mData:[B
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->access$000(Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;)[B
 
     move-result-object v6
@@ -250,7 +248,6 @@
 
     new-array v0, v6, [B
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->mData:[B
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->access$000(Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;)[B
 
     move-result-object v6
@@ -725,7 +722,6 @@
 
     check-cast v4, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->mMarker:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->access$100(Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;)I
 
     move-result v4
@@ -738,7 +734,6 @@
 
     check-cast v4, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->mData:[B
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->access$000(Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;)[B
 
     move-result-object v4
@@ -769,7 +764,6 @@
 
     check-cast v4, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->mMarker:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->access$100(Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;)I
 
     move-result v4
@@ -1166,28 +1160,24 @@
 
     invoke-virtual {p0, v5}, Ljava/io/OutputStream;->write(I)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->mMarker:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->access$100(Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;)I
 
     move-result v4
 
     invoke-virtual {p0, v4}, Ljava/io/OutputStream;->write(I)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->mLength:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->access$200(Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;)I
 
     move-result v4
 
     if-lez v4, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->mLength:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->access$200(Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;)I
 
     move-result v4
 
     shr-int/lit8 v1, v4, 0x8
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->mLength:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->access$200(Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;)I
 
     move-result v4
@@ -1199,7 +1189,6 @@
     invoke-virtual {p0, v0}, Ljava/io/OutputStream;->write(I)V
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->mData:[B
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;->access$000(Lcom/sec/samsung/gallery/view/detailview/spherical/XmpDecoder$Section;)[B
 
     move-result-object v4

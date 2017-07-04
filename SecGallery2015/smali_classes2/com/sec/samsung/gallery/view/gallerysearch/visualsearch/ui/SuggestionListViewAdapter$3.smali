@@ -69,7 +69,6 @@
 
     const/4 v5, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SuggestionListViewAdapter;->searchByCategory(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     invoke-static {v1, v2, v3, v4, v5}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SuggestionListViewAdapter;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SuggestionListViewAdapter;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
     :goto_0

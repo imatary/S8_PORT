@@ -2279,7 +2279,9 @@
 .end method
 
 .method private showDeleteShortCutDialog()V
-    .locals 4
+    .locals 5
+
+    const/4 v4, 0x0
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -2323,9 +2325,9 @@
 
     move-result-object v0
 
-    const/4 v1, 0x0
+    invoke-virtual {v0, v4}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
-    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
+    invoke-virtual {v0, v4}, Landroid/app/AlertDialog;->setCancelable(Z)V
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 

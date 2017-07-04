@@ -56,7 +56,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/DetailsDialog$MediaDetailDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/DetailsDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/DetailsDialog;->mContentsList:Ljava/util/ArrayList;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/DetailsDialog;->access$300(Lcom/sec/samsung/gallery/view/common/DetailsDialog;)Ljava/util/ArrayList;
 
     move-result-object v4
@@ -65,7 +64,6 @@
 
     invoke-direct {v2, v3, v4, v5}, Lcom/sec/samsung/gallery/view/common/DetailsDialog$DetailsListAdapter;-><init>(Lcom/sec/samsung/gallery/view/common/DetailsDialog;Ljava/util/ArrayList;Lcom/sec/samsung/gallery/view/common/DetailsDialog$1;)V
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/DetailsDialog;->mDetailsListAdapter:Lcom/sec/samsung/gallery/view/common/DetailsDialog$DetailsListAdapter;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/common/DetailsDialog;->access$202(Lcom/sec/samsung/gallery/view/common/DetailsDialog;Lcom/sec/samsung/gallery/view/common/DetailsDialog$DetailsListAdapter;)Lcom/sec/samsung/gallery/view/common/DetailsDialog$DetailsListAdapter;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/DetailsDialog$MediaDetailDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/DetailsDialog;

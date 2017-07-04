@@ -300,7 +300,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
 
     move-result-object v3
@@ -333,7 +332,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
 
     move-result-object v22
@@ -433,7 +431,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->notifyAuthResult()V
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)V
 
     :cond_5
@@ -441,7 +438,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
 
     move-result-object v3
@@ -461,7 +457,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
 
     move-result-object v3
@@ -505,7 +500,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->mEF:Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;
 
     move-result-object v3
@@ -551,7 +545,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
 
     move-result-object v3
@@ -571,7 +564,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
 
     move-result-object v3
@@ -643,7 +635,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
 
     move-result-object v3
@@ -663,7 +654,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
 
     move-result-object v11
@@ -748,7 +738,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
 
     move-result-object v3
@@ -768,7 +757,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/EnhancedAccount;)Lcom/samsung/android/sdk/enhancedfeatures/easysignup/apis/listener/EnhancedAccountPushListener;
 
     move-result-object v3

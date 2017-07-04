@@ -66,7 +66,6 @@
 
     add-float/2addr v1, v2
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->setDimEx(F)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->access$900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;F)V
 
     return-void
@@ -77,7 +76,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$UnDimAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mHndDim:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;)I
 
     move-result v0
@@ -96,12 +94,10 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$UnDimAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mHndDim:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;)I
 
     move-result v1
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->getDim(I)F
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;I)F
 
     move-result v0

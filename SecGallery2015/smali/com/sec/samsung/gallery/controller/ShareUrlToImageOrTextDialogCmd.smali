@@ -47,6 +47,14 @@
 .method static synthetic access$300(Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;)V
     .locals 0
 
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->exitSelectionMode()V
+
+    return-void
+.end method
+
+.method static synthetic access$400(Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;)V
+    .locals 0
+
     invoke-direct {p0}, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->showShareWebLinkDialog()V
 
     return-void
@@ -64,6 +72,32 @@
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_0
+    return-void
+.end method
+
+.method private exitSelectionMode()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->mContext:Landroid/content/Context;
+
+    check-cast v0, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getSelectionManager()Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/ui/SelectionManager;->removeAll()V
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->mContext:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/sec/samsung/gallery/core/GalleryFacade;->getInstance(Landroid/content/Context;)Lorg/puremvc/java/multicore/patterns/facade/Facade;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "EXIT_SELECTION_MODE"
+
+    invoke-virtual {v0, v1}, Lorg/puremvc/java/multicore/patterns/facade/Facade;->sendNotification(Ljava/lang/String;)V
+
     return-void
 .end method
 

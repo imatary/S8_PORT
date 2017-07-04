@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity$2;->this$0:Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity;
 
-    # getter for: Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity;->mSdkExpandRequestListener:Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity$ExpandRequestListener;
     invoke-static {v0}, Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity;->access$200(Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity;)Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity$ExpandRequestListener;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity$2;->this$0:Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity;
 
-    # getter for: Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity;->mSdkExpandRequestListener:Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity$ExpandRequestListener;
     invoke-static {v0}, Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity;->access$200(Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity;)Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity$ExpandRequestListener;
 
     move-result-object v0

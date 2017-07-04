@@ -298,12 +298,6 @@
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/devicecog/gallery/viewstatehandler/EventSharingSettingFragmentDCHandler;->notifyObservers(Ljava/lang/Object;)V
 
-    iget-object v1, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/EventSharingSettingFragmentDCHandler;->mActivity:Landroid/app/Activity;
-
-    sget-object v2, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->SUCCESS:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
-
-    invoke-static {v1, p1, v2}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;)V
-
     goto :goto_1
 
     :pswitch_4
@@ -320,8 +314,6 @@
     invoke-virtual {p0, v1}, Lcom/samsung/android/devicecog/gallery/viewstatehandler/EventSharingSettingFragmentDCHandler;->notifyObservers(Ljava/lang/Object;)V
 
     goto :goto_1
-
-    nop
 
     :sswitch_data_0
     .sparse-switch

@@ -45,7 +45,6 @@
     :pswitch_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$1;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAdapter:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$000(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;
 
     move-result-object v2
@@ -54,7 +53,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$1;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAdapter:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$000(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$MediaViewAdapter;
 
     move-result-object v3

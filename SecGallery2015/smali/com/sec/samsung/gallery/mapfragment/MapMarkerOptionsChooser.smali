@@ -203,7 +203,7 @@
 
     if-eqz v21, :cond_2
 
-    const v21, 0x7f0b06b3
+    const v21, 0x7f0b06b4
 
     :goto_0
     move-object/from16 v0, v23
@@ -479,7 +479,7 @@
 
     move-object/from16 v21, v0
 
-    const v22, 0x7f0b06b1
+    const v22, 0x7f0b06b2
 
     invoke-virtual/range {v21 .. v22}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -495,7 +495,7 @@
 
     move-object/from16 v21, v0
 
-    const v22, 0x7f0b06ae
+    const v22, 0x7f0b06af
 
     invoke-virtual/range {v21 .. v22}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -523,7 +523,6 @@
 
     move/from16 v24, v0
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser$markerBitmap;->createBitmap(Ljava/util/ArrayList;II)Landroid/graphics/Bitmap;
     invoke-static/range {v21 .. v24}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser$markerBitmap;->access$400(Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser$markerBitmap;Ljava/util/ArrayList;II)Landroid/graphics/Bitmap;
 
     move-result-object v5
@@ -536,7 +535,7 @@
 
     move-object/from16 v21, v0
 
-    const v22, 0x7f0b06af
+    const v22, 0x7f0b06b0
 
     invoke-virtual/range {v21 .. v22}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -548,7 +547,7 @@
 
     move-object/from16 v21, v0
 
-    const v22, 0x7f0b06b0
+    const v22, 0x7f0b06b1
 
     invoke-virtual/range {v21 .. v22}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -1361,7 +1360,6 @@
 
     move/from16 v3, v26
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser$markerBitmap;->createBitmap(Ljava/util/ArrayList;II)Landroid/graphics/Bitmap;
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser$markerBitmap;->access$400(Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser$markerBitmap;Ljava/util/ArrayList;II)Landroid/graphics/Bitmap;
 
     move-result-object v19
@@ -1790,7 +1788,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;->mResource:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b06b2
+    const v1, 0x7f0b06b3
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1802,7 +1800,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;->mResource:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b06ad
+    const v1, 0x7f0b06ae
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1814,7 +1812,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;->mResource:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b06ac
+    const v1, 0x7f0b06ad
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1830,7 +1828,7 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f0b06ab
+    const v0, 0x7f0b06ac
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
@@ -1843,7 +1841,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;->mResource:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b06a9
+    const v1, 0x7f0b06aa
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -1855,7 +1853,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;->mResource:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b06b7
+    const v1, 0x7f0b06b8
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -1877,7 +1875,7 @@
     return-void
 
     :cond_1
-    const v0, 0x7f0b06aa
+    const v0, 0x7f0b06ab
 
     goto :goto_0
 .end method

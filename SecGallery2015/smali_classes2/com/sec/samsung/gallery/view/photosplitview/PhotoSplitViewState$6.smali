@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$6;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mFlags:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$1900(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)I
 
     move-result v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$6;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$2000(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -61,14 +59,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$6;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mFlags:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$2300(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)I
 
     move-result v1
 
     and-int/lit8 v1, v1, -0x41
 
-    # setter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mFlags:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$2202(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;I)I
 
     :cond_0
@@ -86,7 +82,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$6;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$1400(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -107,7 +102,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$6;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$1500(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -119,14 +113,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$6;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mFlags:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$1800(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)I
 
     move-result v1
 
     and-int/lit8 v1, v1, -0x41
 
-    # setter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mFlags:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$1702(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;I)I
 
     return-void

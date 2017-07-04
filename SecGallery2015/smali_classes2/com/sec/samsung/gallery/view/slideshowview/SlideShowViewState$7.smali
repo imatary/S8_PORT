@@ -95,7 +95,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$7;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mAdapter:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$1500(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
 
     move-result-object v4
@@ -114,7 +113,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$7;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->finishCurrentViewState()V
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$100(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)V
 
     goto :goto_0
@@ -140,7 +138,6 @@
 
     move-result v3
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mDockStatePrevious:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$1600()I
 
     move-result v4
@@ -150,7 +147,6 @@
     if-eqz v1, :cond_4
 
     :cond_3
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mSmartDockStatePrevious:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$1700()I
 
     move-result v4
@@ -172,14 +168,11 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$7;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->finishCurrentViewState()V
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$100(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)V
 
     :cond_5
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mDockStatePrevious:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$1602(I)I
 
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mSmartDockStatePrevious:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$1702(I)I
 
     goto :goto_0
@@ -195,7 +188,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$7;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mAdapter:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$1500(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/samsung/gallery/view/slideshowview/SlideShowAdapter;
 
     move-result-object v4
@@ -214,7 +206,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$7;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->finishCurrentViewState()V
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$100(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)V
 
     goto/16 :goto_0
@@ -244,7 +235,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$7;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->finishCurrentViewState()V
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$100(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)V
 
     goto/16 :goto_0

@@ -41,8 +41,7 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->setAddEventButton(Z)V
-    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$11500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
+    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$11600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
 
     return-void
 .end method

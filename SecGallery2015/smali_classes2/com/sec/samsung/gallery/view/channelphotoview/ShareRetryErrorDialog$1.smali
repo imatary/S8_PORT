@@ -59,14 +59,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog$1;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;->access$000(Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog$1;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;->access$000(Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
     move-result-object v1
@@ -77,7 +75,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog$1;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;->access$000(Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
     move-result-object v0

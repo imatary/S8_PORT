@@ -144,15 +144,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$300()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->FEATURE_USE_NOTIFICATION_SETTING:Z
-
-    return v0
-.end method
-
-.method static synthetic access$400(Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;)V
+.method static synthetic access$300(Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->handleRegisterInfo()V
@@ -243,107 +235,84 @@
 .end method
 
 .method private handleRegisterInfo()V
-    .locals 5
+    .locals 4
 
-    sget-object v2, Lcom/sec/samsung/gallery/features/FeatureNames;->UseEventShare:Lcom/sec/samsung/gallery/features/FeatureNames;
+    sget-object v1, Lcom/sec/samsung/gallery/features/FeatureNames;->UseEventShare:Lcom/sec/samsung/gallery/features/FeatureNames;
 
-    invoke-static {v2}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+    invoke-static {v1}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_0
 
-    const-string/jumbo v2, "EventSharingFragment"
+    const-string/jumbo v1, "EventSharingFragment"
 
-    const-string/jumbo v3, "mOnRegisterInfoPreferenceClickListener : onClick"
+    const-string/jumbo v2, "mOnRegisterInfoPreferenceClickListener : onClick"
 
-    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const-string/jumbo v2, "506"
+    const-string/jumbo v1, "506"
 
-    const-string/jumbo v3, "5044"
+    const-string/jumbo v2, "5044"
 
-    invoke-static {v2, v3}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->insertSALog(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->insertSALog(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v2, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
 
-    invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareSetting;->isCoreAppsInstalled(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareSetting;->isCoreAppsInstalled(Landroid/content/Context;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_1
 
-    iget-object v2, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
 
-    invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareSetting;->isCoreAppsSupportVersion(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareSetting;->isCoreAppsSupportVersion(Landroid/content/Context;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_1
 
-    const/4 v0, 0x0
+    iget-object v1, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareSetting;->isEventSharingRegisterOn(Landroid/content/Context;)Z
 
-    invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareSetting;->isEventSharingServiceOn(Landroid/content/Context;)Z
+    move-result v1
 
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    iget-object v2, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareSetting;->isEventSharingServiceOnCoreApps(Landroid/content/Context;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    iget-object v2, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareSetting;->isEventSharingRegisterOn(Landroid/content/Context;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    const/4 v0, 0x1
+    invoke-direct {p0, v1}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->requestCoreAppsAccess(Z)V
 
     :cond_0
-    invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->requestCoreAppsAccess(Z)V
-
-    :cond_1
     :goto_0
     return-void
 
-    :cond_2
-    iget-object v2, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+    :cond_1
+    iget-object v1, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
 
-    invoke-static {v2}, Lcom/samsung/android/devicecog/gallery/DCUtils;->isExecuteFromBixby(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/samsung/android/devicecog/gallery/DCUtils;->isExecuteFromBixby(Landroid/content/Context;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_0
 
-    iget-object v2, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a0833
+    const v2, 0x7f0a083b
 
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
-    new-array v4, v4, [Ljava/lang/Object;
+    new-array v3, v3, [Ljava/lang/Object;
 
-    invoke-static {v2, v3, v4}, Lcom/samsung/android/devicecog/gallery/controller/DCNlgManager;->getNlgRequestInfo(Landroid/content/Context;I[Ljava/lang/Object;)Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;
+    invoke-static {v1, v2, v3}, Lcom/samsung/android/devicecog/gallery/controller/DCNlgManager;->getNlgRequestInfo(Landroid/content/Context;I[Ljava/lang/Object;)Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;
 
-    move-result-object v1
+    move-result-object v0
 
-    iget-object v2, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
 
-    const-string/jumbo v3, "RegisteredInformation"
+    const-string/jumbo v2, "RegisteredInformation"
 
-    sget-object v4, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->FAILURE:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
+    sget-object v3, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->FAILURE:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
 
-    invoke-static {v2, v3, v4, v1}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;)V
+    invoke-static {v1, v2, v3, v0}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;)V
 
     goto :goto_0
 .end method
@@ -628,8 +597,41 @@
 .method private requestCoreAppsAccess(Z)V
     .locals 6
 
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
+    iget-object v3, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v3}, Lcom/samsung/android/devicecog/gallery/DCUtils;->isExecuteFromBixby(Landroid/content/Context;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    if-nez p1, :cond_1
+
+    iget-object v3, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+
+    const v4, 0x7f0a083b
+
+    new-array v5, v5, [Ljava/lang/Object;
+
+    invoke-static {v3, v4, v5}, Lcom/samsung/android/devicecog/gallery/controller/DCNlgManager;->getNlgRequestInfo(Landroid/content/Context;I[Ljava/lang/Object;)Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+
+    const-string/jumbo v4, "RegisteredInformation"
+
+    sget-object v5, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->FAILURE:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
+
+    invoke-static {v3, v4, v5, v2}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;)V
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
     new-instance v1, Landroid/content/Intent;
 
     const-string/jumbo v3, "com.samsung.android.coreapps.easysignup.ACTION_LAUNCH_EASY_SIGNUP_BY_SETTING"
@@ -638,7 +640,7 @@
 
     const-string/jumbo v3, "extra_setting_access_agent"
 
-    invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v1, v3, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     :try_start_0
     invoke-virtual {p0, v1}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->startActivity(Landroid/content/Intent;)V
@@ -651,11 +653,9 @@
 
     if-eqz v3, :cond_0
 
-    if-eqz p1, :cond_1
-
     iget-object v3, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0a0834
+    const v4, 0x7f0a083c
 
     const/4 v5, 0x0
 
@@ -670,31 +670,6 @@
     const-string/jumbo v4, "RegisteredInformation"
 
     sget-object v5, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->SUCCESS:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
-
-    invoke-static {v3, v4, v5, v2}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;)V
-
-    :cond_0
-    :goto_0
-    return-void
-
-    :cond_1
-    iget-object v3, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
-
-    const v4, 0x7f0a0833
-
-    const/4 v5, 0x0
-
-    new-array v5, v5, [Ljava/lang/Object;
-
-    invoke-static {v3, v4, v5}, Lcom/samsung/android/devicecog/gallery/controller/DCNlgManager;->getNlgRequestInfo(Landroid/content/Context;I[Ljava/lang/Object;)Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
-
-    const-string/jumbo v4, "RegisteredInformation"
-
-    sget-object v5, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->FAILURE:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
 
     invoke-static {v3, v4, v5, v2}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;)V
     :try_end_0
@@ -1239,7 +1214,7 @@
 .method public update(Ljava/util/Observable;Ljava/lang/Object;)V
     .locals 9
 
-    const v8, 0x7f0a0800
+    const v8, 0x7f0a0806
 
     const/4 v7, 0x0
 
@@ -1430,18 +1405,45 @@
     :cond_7
     sget v4, Lcom/sec/samsung/gallery/core/Event;->EVENT_DC_CMD_STORY_NOTIFICATIONS:I
 
-    if-ne v1, v4, :cond_8
+    if-ne v1, v4, :cond_9
+
+    iget-object v4, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v4}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareSetting;->isEventSharingServiceOn(Landroid/content/Context;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_8
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->handleLaunchNotificationActivity()V
 
     goto :goto_0
 
     :cond_8
+    iget-object v4, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+
+    new-array v5, v7, [Ljava/lang/Object;
+
+    invoke-static {v4, v8, v5}, Lcom/samsung/android/devicecog/gallery/controller/DCNlgManager;->getNlgRequestInfo(Landroid/content/Context;I[Ljava/lang/Object;)Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;
+
+    move-result-object v2
+
+    iget-object v4, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
+
+    const-string/jumbo v5, "Notifications"
+
+    sget-object v6, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->FAILURE:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
+
+    invoke-static {v4, v5, v6, v2}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;)V
+
+    goto/16 :goto_0
+
+    :cond_9
     sget v4, Lcom/sec/samsung/gallery/core/Event;->EVENT_DC_CMD_REGISTER_INFORMATION:I
 
     if-ne v1, v4, :cond_0
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->handleRegisterInfo()V
 
-    goto :goto_0
+    goto/16 :goto_0
 .end method

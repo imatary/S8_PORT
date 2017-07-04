@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowShareTagShotDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowShareTagShotDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowShareTagShotDialogCmd;->dismissDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowShareTagShotDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowShareTagShotDialogCmd;)V
 
     return-void

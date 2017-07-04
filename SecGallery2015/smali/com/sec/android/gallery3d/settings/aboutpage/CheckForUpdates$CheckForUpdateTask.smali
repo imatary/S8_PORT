@@ -35,7 +35,6 @@
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    # setter for: Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->sClearBadge:Z
     invoke-static {p1}, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->access$002(Z)Z
 
     iput-object p2, p0, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates$CheckForUpdateTask;->mContext:Landroid/content/Context;
@@ -52,7 +51,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates$CheckForUpdateTask;->mContext:Landroid/content/Context;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->getMarketResult(ILandroid/content/Context;)I
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->access$100(ILandroid/content/Context;)I
 
     move-result v0
@@ -105,7 +103,6 @@
 
     move-result-object v7
 
-    # getter for: Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->sResult:I
     invoke-static {}, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->access$200()I
 
     move-result v8
@@ -134,21 +131,18 @@
 
     move-result v6
 
-    # setter for: Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->sResult:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->access$202(I)I
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates$CheckForUpdateTask;->mContext:Landroid/content/Context;
 
     const-string/jumbo v7, "backup_update_check_result"
 
-    # getter for: Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->sResult:I
     invoke-static {}, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->access$200()I
 
     move-result v8
 
     invoke-static {v6, v7, v8}, Lcom/sec/samsung/gallery/util/SharedPreferenceManager;->saveState(Landroid/content/Context;Ljava/lang/String;I)V
 
-    # getter for: Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->sClearBadge:Z
     invoke-static {}, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->access$000()Z
 
     move-result v5
@@ -171,7 +165,6 @@
 
     move-result-object v0
 
-    # getter for: Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->sStubUpdateData:Lcom/sec/android/gallery3d/settings/aboutpage/StubData;
     invoke-static {}, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->access$300()Lcom/sec/android/gallery3d/settings/aboutpage/StubData;
 
     move-result-object v6
@@ -254,14 +247,12 @@
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
-    # getter for: Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->sUiListener:Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates$Listener;
     invoke-static {}, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->access$400()Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates$Listener;
 
     move-result-object v6
 
     if-eqz v6, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->sUiListener:Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates$Listener;
     invoke-static {}, Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates;->access$400()Lcom/sec/android/gallery3d/settings/aboutpage/CheckForUpdates$Listener;
 
     move-result-object v6

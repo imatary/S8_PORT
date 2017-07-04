@@ -48,12 +48,10 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupServices$1;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;->checkAccount(Lcom/sec/samsung/gallery/core/ViewByFilterType;)V
     invoke-static {v2, v0}, Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;->access$000(Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;Lcom/sec/samsung/gallery/core/ViewByFilterType;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupServices$1;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;->updateGroup()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;->access$100(Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;)V
 
     goto :goto_0
@@ -63,12 +61,10 @@
 
     const/4 v3, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;->checkAccountAll(Z)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;->access$200(Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;Z)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupServices$1;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;->updateGroup()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;->access$100(Lcom/sec/samsung/gallery/drawer/DrawerGroupServices;)V
 
     goto :goto_0

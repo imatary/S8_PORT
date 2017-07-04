@@ -51,7 +51,6 @@
 
     iget-object v4, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->mRequest:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;
     invoke-static {v4}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$2(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;
 
     move-result-object v1
@@ -170,7 +169,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->mRequest:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;
     invoke-static {v3}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$2(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;
 
     move-result-object v1
@@ -181,7 +179,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->bitmapFactoryOptions:Landroid/graphics/BitmapFactory$Options;
     invoke-static {v3}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Landroid/graphics/BitmapFactory$Options;
 
     move-result-object v3
@@ -192,12 +189,10 @@
 
     iget-object v3, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->bitmapFactoryOptions:Landroid/graphics/BitmapFactory$Options;
     invoke-static {v3}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Landroid/graphics/BitmapFactory$Options;
 
     move-result-object v4
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->sDecodeBuffer:Ljava/lang/ThreadLocal;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$6()Ljava/lang/ThreadLocal;
 
     move-result-object v3
@@ -227,7 +222,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->bitmapFactoryOptions:Landroid/graphics/BitmapFactory$Options;
     invoke-static {v3}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Landroid/graphics/BitmapFactory$Options;
 
     move-result-object v3
@@ -249,7 +243,6 @@
 
     move-result v5
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->createFineScaledBitmap(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     invoke-static {v3, v2, v4, v5}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$7(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -261,7 +254,6 @@
     :try_start_1
     iget-object v3, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->bitmapFactoryOptions:Landroid/graphics/BitmapFactory$Options;
     invoke-static {v3}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Landroid/graphics/BitmapFactory$Options;
 
     move-result-object v3
@@ -275,7 +267,6 @@
     :sswitch_1
     iget-object v3, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->bitmapFactoryOptions:Landroid/graphics/BitmapFactory$Options;
     invoke-static {v3}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Landroid/graphics/BitmapFactory$Options;
 
     move-result-object v3
@@ -289,7 +280,6 @@
     :sswitch_2
     iget-object v3, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->bitmapFactoryOptions:Landroid/graphics/BitmapFactory$Options;
     invoke-static {v3}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Landroid/graphics/BitmapFactory$Options;
 
     move-result-object v3
@@ -331,7 +321,6 @@
 
     iget-object v3, v0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;)Landroid/content/Context;
 
     move-result-object v3
@@ -447,7 +436,6 @@
 
     move-object/from16 v0, p1
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->calcScaleFactor(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;II)I
     invoke-static {v3, v0, v4, v5}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$2(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;II)I
 
     move-result v3
@@ -502,7 +490,6 @@
 
     if-eqz v3, :cond_3
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$0()Ljava/lang/String;
 
     move-result-object v3
@@ -659,7 +646,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->closeInputStreamQuietly(Ljava/io/Closeable;)V
     invoke-static {v1, v11}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$8(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Ljava/io/Closeable;)V
 
     :goto_1
@@ -685,7 +671,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;)Landroid/content/Context;
 
     move-result-object v1
@@ -763,7 +748,6 @@
 
     iget v3, p2, Landroid/graphics/BitmapFactory$Options;->outHeight:I
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->calcScaleFactor(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;II)I
     invoke-static {v1, p1, v2, v3}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$2(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;II)I
 
     move-result v1
@@ -817,7 +801,6 @@
 
     if-eqz v1, :cond_6
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$0()Ljava/lang/String;
 
     move-result-object v1
@@ -851,7 +834,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->closeInputStreamQuietly(Ljava/io/Closeable;)V
     invoke-static {v1, v11}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$8(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Ljava/io/Closeable;)V
 
     :goto_4
@@ -880,7 +862,6 @@
 
     if-eqz v1, :cond_8
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$0()Ljava/lang/String;
 
     move-result-object v1
@@ -914,7 +895,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->closeInputStreamQuietly(Ljava/io/Closeable;)V
     invoke-static {v1, v11}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$8(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Ljava/io/Closeable;)V
 
     :goto_5
@@ -948,7 +928,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->closeInputStreamQuietly(Ljava/io/Closeable;)V
     invoke-static {v2, v11}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$8(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Ljava/io/Closeable;)V
 
     :goto_6
@@ -1033,7 +1012,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->closeInputStreamQuietly(Ljava/io/Closeable;)V
     invoke-static {v1, v8}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$8(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Ljava/io/Closeable;)V
 
     :cond_0
@@ -1048,7 +1026,6 @@
 
     if-eqz v1, :cond_1
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$0()Ljava/lang/String;
 
     move-result-object v1
@@ -1080,7 +1057,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->closeInputStreamQuietly(Ljava/io/Closeable;)V
     invoke-static {v1, v8}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$8(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Ljava/io/Closeable;)V
 
     :goto_1
@@ -1112,7 +1088,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->closeInputStreamQuietly(Ljava/io/Closeable;)V
     invoke-static {v2, v8}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$8(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Ljava/io/Closeable;)V
 
     :goto_2
@@ -1150,7 +1125,6 @@
     :cond_6
     iget-object v1, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;)Landroid/content/Context;
 
     move-result-object v1
@@ -1208,7 +1182,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->dispatchBitmapResult(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;Landroid/graphics/Bitmap;)V
     invoke-static {v2, v3, v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$9(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;Landroid/graphics/Bitmap;)V
 
     :cond_0
@@ -1249,7 +1222,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;)Landroid/content/Context;
 
     move-result-object v1
@@ -1289,7 +1261,6 @@
     return-object v0
 
     :cond_2
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$0()Ljava/lang/String;
 
     move-result-object v1
@@ -1311,7 +1282,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->mRemoteExecutor:Ljava/util/concurrent/ExecutorService;
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$5(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;)Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
@@ -1352,7 +1322,6 @@
 
     iget-object v2, v0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->isCanceled()Z
     invoke-static {v2}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Z
 
     move-result v2
@@ -1368,7 +1337,6 @@
 
     if-eqz v2, :cond_2
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$0()Ljava/lang/String;
 
     move-result-object v2
@@ -1469,7 +1437,6 @@
 
     iget-object v2, v0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;)Landroid/content/Context;
 
     move-result-object v2
@@ -1495,7 +1462,6 @@
 
     iget-object v2, v0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->isCanceled()Z
     invoke-static {v2}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1690,7 +1656,6 @@
 
     iget-object v2, v0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->bitmapFactoryOptions:Landroid/graphics/BitmapFactory$Options;
     invoke-static {v2}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Landroid/graphics/BitmapFactory$Options;
 
     move-result-object v2
@@ -1701,7 +1666,6 @@
 
     move-object/from16 v0, v19
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->calcScaleFactor(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;II)I
     invoke-static {v4, v0, v10, v9}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$2(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;II)I
 
     move-result v4
@@ -1719,7 +1683,6 @@
 
     move-object/from16 v0, v18
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->loadBitmap(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;Landroid/net/Uri;)Landroid/graphics/Bitmap;
     invoke-static {v2, v4, v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$3(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;Landroid/net/Uri;)Landroid/graphics/Bitmap;
     :try_end_4
     .catch Ljava/io/FileNotFoundException; {:try_start_4 .. :try_end_4} :catch_0
@@ -1730,7 +1693,6 @@
 
     iget-object v2, v0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->isCanceled()Z
     invoke-static {v2}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Z
 
     move-result v2
@@ -1757,7 +1719,6 @@
 
     move-object/from16 v0, v19
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->isBitmapTooSmall(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkBitmapInfo;Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;)Z
     invoke-static {v2, v11, v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$4(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkBitmapInfo;Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageRequest;)Z
 
     move-result v2
@@ -1789,7 +1750,6 @@
 
     iget-object v2, v0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromFileCacheTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->isCanceled()Z
     invoke-static {v2}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Z
 
     move-result v2

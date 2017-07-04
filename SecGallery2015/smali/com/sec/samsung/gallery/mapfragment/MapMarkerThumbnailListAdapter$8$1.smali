@@ -41,7 +41,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$8;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mThumbnailAddress_txt:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$2100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -52,7 +51,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$8;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v1
@@ -67,7 +65,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$8;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mThumbnailAddress_txt:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$2100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -78,7 +75,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$8;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mThumbnailAddress_txt:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$2100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -87,7 +83,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$8;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mOnGenericModionListener:Landroid/view/View$OnGenericMotionListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$2200(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/view/View$OnGenericMotionListener;
 
     move-result-object v2

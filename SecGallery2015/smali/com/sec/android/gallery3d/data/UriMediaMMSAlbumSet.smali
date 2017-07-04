@@ -753,7 +753,6 @@
 
     move-result-wide v0
 
-    # setter for: Lcom/sec/android/gallery3d/data/UriMediaMMSAlbumSet$PduData;->id:J
     invoke-static {v8, v0, v1}, Lcom/sec/android/gallery3d/data/UriMediaMMSAlbumSet$PduData;->access$202(Lcom/sec/android/gallery3d/data/UriMediaMMSAlbumSet$PduData;J)J
 
     const/4 v0, 0x1
@@ -762,7 +761,6 @@
 
     move-result-wide v0
 
-    # setter for: Lcom/sec/android/gallery3d/data/UriMediaMMSAlbumSet$PduData;->date:J
     invoke-static {v8, v0, v1}, Lcom/sec/android/gallery3d/data/UriMediaMMSAlbumSet$PduData;->access$302(Lcom/sec/android/gallery3d/data/UriMediaMMSAlbumSet$PduData;J)J
 
     invoke-virtual {v9, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z

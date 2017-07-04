@@ -75,7 +75,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SePrivateManager$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SePrivateManager;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->mPrivateModeManager:Lcom/samsung/android/privatemode/SemPrivateModeManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->access$000(Lcom/sec/samsung/gallery/lib/se/SePrivateManager;)Lcom/samsung/android/privatemode/SemPrivateModeManager;
 
     move-result-object v0
@@ -86,7 +85,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/lib/se/SePrivateManager$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SePrivateManager;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->mPrivateModeManager:Lcom/samsung/android/privatemode/SemPrivateModeManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->access$000(Lcom/sec/samsung/gallery/lib/se/SePrivateManager;)Lcom/samsung/android/privatemode/SemPrivateModeManager;
 
     move-result-object v1
@@ -95,7 +93,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->mPrivateModeBinder:Landroid/os/IBinder;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->access$102(Lcom/sec/samsung/gallery/lib/se/SePrivateManager;Landroid/os/IBinder;)Landroid/os/IBinder;
 
     goto :goto_0
@@ -112,7 +109,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SePrivateManager$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SePrivateManager;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->mListener:Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface$OnPrivateModeListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->access$200(Lcom/sec/samsung/gallery/lib/se/SePrivateManager;)Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface$OnPrivateModeListener;
 
     move-result-object v0
@@ -121,7 +117,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SePrivateManager$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SePrivateManager;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->mListener:Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface$OnPrivateModeListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->access$200(Lcom/sec/samsung/gallery/lib/se/SePrivateManager;)Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface$OnPrivateModeListener;
 
     move-result-object v0
@@ -133,7 +128,6 @@
     :pswitch_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SePrivateManager$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SePrivateManager;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->mListener:Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface$OnPrivateModeListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->access$200(Lcom/sec/samsung/gallery/lib/se/SePrivateManager;)Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface$OnPrivateModeListener;
 
     move-result-object v0
@@ -142,7 +136,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SePrivateManager$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SePrivateManager;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->mListener:Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface$OnPrivateModeListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SePrivateManager;->access$200(Lcom/sec/samsung/gallery/lib/se/SePrivateManager;)Lcom/sec/samsung/gallery/lib/libinterface/PrivateModeInterface$OnPrivateModeListener;
 
     move-result-object v0

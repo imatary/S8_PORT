@@ -213,6 +213,7 @@
         Lcom/sec/samsung/gallery/features/FeatureClassSet$FeatureIsRetailModel;,
         Lcom/sec/samsung/gallery/features/FeatureClassSet$FeatureEnableHelpMenu;,
         Lcom/sec/samsung/gallery/features/FeatureClassSet$FeatureEnableFreeMessage;,
+        Lcom/sec/samsung/gallery/features/FeatureClassSet$FeatureIsImmersiveMode;,
         Lcom/sec/samsung/gallery/features/FeatureClassSet$FeatureIsUPSM;,
         Lcom/sec/samsung/gallery/features/FeatureClassSet$FeatureIsEmergencyMode;,
         Lcom/sec/samsung/gallery/features/FeatureClassSet$FeatureUseEasyMode;,

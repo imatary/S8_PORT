@@ -913,7 +913,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/SmartClustering;->mCurrentDayCluster:Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->isEmpty()Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$400(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;)Z
 
     move-result v0
@@ -945,7 +944,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/SmartClustering;->mCurrentMomentCluster:Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->isEmpty()Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$400(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;)Z
 
     move-result v0
@@ -977,7 +975,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/SmartClustering;->mCurrentMonthCluster:Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->isEmpty()Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$400(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;)Z
 
     move-result v0
@@ -1082,14 +1079,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/SmartClustering;->mCurrentDayCluster:Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->getStartTime()J
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$600(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;)J
 
     move-result-wide v2
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/SmartClustering;->mCurrentDayCluster:Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->getEndTime()J
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$800(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;)J
 
     move-result-wide v4
@@ -1104,7 +1099,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/SmartClustering;->mCurrentDayCluster:Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setName(Ljava/lang/String;)V
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$700(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Ljava/lang/String;)V
 
     return-void
@@ -1115,7 +1109,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/SmartClustering;->mCurrentMomentCluster:Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->getStartTime()J
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$600(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;)J
 
     move-result-wide v2
@@ -1130,7 +1123,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/SmartClustering;->mCurrentMomentCluster:Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setName(Ljava/lang/String;)V
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$700(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Ljava/lang/String;)V
 
     return-void
@@ -1141,7 +1133,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/SmartClustering;->mCurrentMonthCluster:Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->getStartTime()J
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$600(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;)J
 
     move-result-wide v2
@@ -1156,7 +1147,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/SmartClustering;->mCurrentMonthCluster:Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setName(Ljava/lang/String;)V
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$700(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Ljava/lang/String;)V
 
     return-void
@@ -2351,7 +2341,6 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->getAddrValues()[[D
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$500(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;)[[D
 
     move-result-object v0
@@ -2425,7 +2414,6 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->getAddrValues()[[D
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$500(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;)[[D
 
     move-result-object v0
@@ -2499,7 +2487,6 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->getAddrValues()[[D
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$500(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;)[[D
 
     move-result-object v0
@@ -2862,7 +2849,6 @@
 
     move/from16 v0, v37
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setClusterId(I)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$100(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;I)V
 
     move-object/from16 v0, p0
@@ -2871,7 +2857,6 @@
 
     move-object/from16 v0, v38
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setLocation(Ljava/lang/String;)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$200(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Ljava/lang/String;)V
 
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/data/SmartClustering;->generateMomentClusterName()V
@@ -2884,7 +2869,6 @@
 
     move/from16 v0, v35
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setClusterId(I)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$100(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;I)V
 
     move-object/from16 v0, p0
@@ -2893,7 +2877,6 @@
 
     move-object/from16 v0, v36
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setLocation(Ljava/lang/String;)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$200(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Ljava/lang/String;)V
 
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/data/SmartClustering;->generateDayClusterName()V
@@ -2906,7 +2889,6 @@
 
     move/from16 v0, v39
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setClusterId(I)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$100(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;I)V
 
     move-object/from16 v0, p0
@@ -2915,7 +2897,6 @@
 
     move-object/from16 v0, v40
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setLocation(Ljava/lang/String;)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$200(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Ljava/lang/String;)V
 
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/data/SmartClustering;->generateMonthClusterName()V
@@ -3260,7 +3241,6 @@
 
     move/from16 v0, v37
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setClusterId(I)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$100(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;I)V
 
     move-object/from16 v0, p0
@@ -3269,7 +3249,6 @@
 
     move-object/from16 v0, v38
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setLocation(Ljava/lang/String;)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$200(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Ljava/lang/String;)V
 
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/data/SmartClustering;->generateMomentClusterName()V
@@ -3290,7 +3269,6 @@
 
     move-object/from16 v0, v41
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->addItem(Lcom/sec/android/gallery3d/data/SmallItem;)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$300(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Lcom/sec/android/gallery3d/data/SmallItem;)V
 
     move/from16 v37, v31
@@ -3313,7 +3291,6 @@
 
     move/from16 v0, v35
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setClusterId(I)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$100(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;I)V
 
     move-object/from16 v0, p0
@@ -3322,7 +3299,6 @@
 
     move-object/from16 v0, v36
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setLocation(Ljava/lang/String;)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$200(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Ljava/lang/String;)V
 
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/data/SmartClustering;->generateDayClusterName()V
@@ -3343,7 +3319,6 @@
 
     move-object/from16 v0, v41
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->addItem(Lcom/sec/android/gallery3d/data/SmallItem;)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$300(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Lcom/sec/android/gallery3d/data/SmallItem;)V
 
     move/from16 v35, v16
@@ -3366,7 +3341,6 @@
 
     move/from16 v0, v39
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setClusterId(I)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$100(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;I)V
 
     move-object/from16 v0, p0
@@ -3375,7 +3349,6 @@
 
     move-object/from16 v0, v40
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->setLocation(Ljava/lang/String;)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$200(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Ljava/lang/String;)V
 
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/gallery3d/data/SmartClustering;->generateMonthClusterName()V
@@ -3396,7 +3369,6 @@
 
     move-object/from16 v0, v41
 
-    # invokes: Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->addItem(Lcom/sec/android/gallery3d/data/SmallItem;)V
     invoke-static {v4, v0}, Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;->access$300(Lcom/sec/android/gallery3d/data/SmartClustering$SmartCluster;Lcom/sec/android/gallery3d/data/SmallItem;)V
 
     move/from16 v39, v32

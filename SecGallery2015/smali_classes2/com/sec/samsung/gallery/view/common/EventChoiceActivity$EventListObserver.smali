@@ -44,7 +44,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListObserver;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$400(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/content/Context;
 
     move-result-object v0
@@ -53,7 +52,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListObserver;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->startLoadChannelAlbumSet()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$500(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)V
 
     return-void
@@ -72,7 +70,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListObserver;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mWatchUri:Landroid/net/Uri;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$300(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/net/Uri;
 
     move-result-object v1

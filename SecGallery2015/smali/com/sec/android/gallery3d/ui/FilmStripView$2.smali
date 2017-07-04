@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$2;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mUIListener:Lcom/sec/android/gallery3d/ui/UserInteractionListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$200(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/UserInteractionListener;
 
     move-result-object v0
@@ -54,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$2;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mUIListener:Lcom/sec/android/gallery3d/ui/UserInteractionListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$200(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/UserInteractionListener;
 
     move-result-object v0
@@ -70,7 +68,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$2;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mUIListener:Lcom/sec/android/gallery3d/ui/UserInteractionListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$200(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/UserInteractionListener;
 
     move-result-object v0
@@ -79,7 +76,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$2;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mUIListener:Lcom/sec/android/gallery3d/ui/UserInteractionListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$200(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/UserInteractionListener;
 
     move-result-object v0
@@ -95,7 +91,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$2;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mUIListener:Lcom/sec/android/gallery3d/ui/UserInteractionListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$200(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/UserInteractionListener;
 
     move-result-object v0
@@ -104,7 +99,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$2;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mUIListener:Lcom/sec/android/gallery3d/ui/UserInteractionListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$200(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/UserInteractionListener;
 
     move-result-object v0
@@ -120,7 +114,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$2;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mFilmStripVisible:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$300(Lcom/sec/android/gallery3d/ui/FilmStripView;)Z
 
     move-result v0
@@ -129,7 +122,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$2;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mUIListener:Lcom/sec/android/gallery3d/ui/UserInteractionListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$200(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/UserInteractionListener;
 
     move-result-object v0
@@ -138,7 +130,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$2;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mUIListener:Lcom/sec/android/gallery3d/ui/UserInteractionListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$200(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/UserInteractionListener;
 
     move-result-object v0

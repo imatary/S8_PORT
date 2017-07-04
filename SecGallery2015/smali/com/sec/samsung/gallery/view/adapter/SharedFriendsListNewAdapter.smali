@@ -240,7 +240,6 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->checkBox:Landroid/widget/CheckBox;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$002(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;Landroid/widget/CheckBox;)Landroid/widget/CheckBox;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
@@ -253,7 +252,6 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconView:Landroid/widget/ImageView;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$202(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
@@ -266,7 +264,6 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconDimView:Landroid/widget/ImageView;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$302(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
@@ -279,7 +276,6 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->nameView:Landroid/widget/TextView;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$102(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
@@ -292,7 +288,6 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->waitingView:Landroid/widget/TextView;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$402(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
@@ -305,7 +300,6 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->expireView:Landroid/widget/TextView;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$502(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
@@ -318,7 +312,6 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->smsIconView:Landroid/widget/TextView;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$602(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->FEATURE_IS_NOS:Z
@@ -327,7 +320,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->smsIconView:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$600(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -340,7 +332,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconDimView:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$300(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/ImageView;
 
     move-result-object v0
@@ -353,7 +344,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->checkBox:Landroid/widget/CheckBox;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$000(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/CheckBox;
 
     move-result-object v1
@@ -371,7 +361,6 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->cancelSharedButton:Landroid/widget/Button;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$702(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;Landroid/widget/Button;)Landroid/widget/Button;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
@@ -384,7 +373,6 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->sendLinkButton:Landroid/widget/Button;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$802(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;Landroid/widget/Button;)Landroid/widget/Button;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
@@ -397,7 +385,6 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconTextView:Landroid/widget/TextView;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$902(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
@@ -499,7 +486,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconDimView:Landroid/widget/ImageView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$300(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/ImageView;
 
     move-result-object v1
@@ -509,7 +495,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->waitingView:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$400(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -518,7 +503,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->expireView:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$500(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -531,7 +515,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->cancelSharedButton:Landroid/widget/Button;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$700(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v1
@@ -541,7 +524,6 @@
     :goto_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->sendLinkButton:Landroid/widget/Button;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$800(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v1
@@ -554,7 +536,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->smsIconView:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$600(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -564,7 +545,6 @@
     :goto_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->cancelSharedButton:Landroid/widget/Button;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$700(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v1
@@ -580,7 +560,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->cancelSharedButton:Landroid/widget/Button;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$700(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v1
@@ -592,7 +571,6 @@
     :cond_4
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->smsIconView:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$600(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -620,7 +598,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->smsIconView:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$600(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -633,7 +610,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconDimView:Landroid/widget/ImageView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$300(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/ImageView;
 
     move-result-object v1
@@ -643,7 +619,6 @@
     :cond_6
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->waitingView:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$400(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -652,7 +627,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->expireView:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$500(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -661,7 +635,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->cancelSharedButton:Landroid/widget/Button;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$700(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v1
@@ -670,7 +643,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->sendLinkButton:Landroid/widget/Button;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$800(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v1
@@ -720,7 +692,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->sendLinkButton:Landroid/widget/Button;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$800(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v1
@@ -729,7 +700,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->sendLinkButton:Landroid/widget/Button;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$800(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v1
@@ -745,7 +715,6 @@
     :cond_8
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->smsIconView:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$600(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -758,7 +727,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconDimView:Landroid/widget/ImageView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$300(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/ImageView;
 
     move-result-object v1
@@ -768,7 +736,6 @@
     :cond_9
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->waitingView:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$400(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -777,7 +744,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->expireView:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$500(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -786,7 +752,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->cancelSharedButton:Landroid/widget/Button;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$700(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v1
@@ -795,7 +760,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->sendLinkButton:Landroid/widget/Button;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$800(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v1
@@ -836,7 +800,6 @@
     :goto_1
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconView:Landroid/widget/ImageView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$200(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/ImageView;
 
     move-result-object v4
@@ -895,7 +858,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconTextView:Landroid/widget/TextView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$900(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v4
@@ -1005,7 +967,6 @@
     :cond_4
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->nameView:Landroid/widget/TextView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$100(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v2
@@ -1033,7 +994,6 @@
     :cond_5
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconTextView:Landroid/widget/TextView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$900(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v2
@@ -1055,7 +1015,6 @@
     :cond_6
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconTextView:Landroid/widget/TextView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$900(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v4
@@ -1079,7 +1038,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconTextView:Landroid/widget/TextView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$900(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v2
@@ -1103,7 +1061,6 @@
     :cond_a
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconTextView:Landroid/widget/TextView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$900(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v2
@@ -1112,7 +1069,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconTextView:Landroid/widget/TextView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$900(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v2
@@ -1177,7 +1133,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->expireView:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$500(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v3
@@ -1186,7 +1141,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->expireView:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$500(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v3
@@ -1215,7 +1169,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconTextView:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$900(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v3
@@ -1224,7 +1177,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconTextView:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$900(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v4
@@ -1248,7 +1200,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconTextView:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$900(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v3
@@ -1270,7 +1221,6 @@
     :goto_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconView:Landroid/widget/ImageView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$200(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/ImageView;
 
     move-result-object v3
@@ -1279,7 +1229,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->nameView:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$100(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v3
@@ -1294,7 +1243,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconDimView:Landroid/widget/ImageView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$300(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/ImageView;
 
     move-result-object v3
@@ -1304,7 +1252,6 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->waitingView:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$400(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v3
@@ -1313,7 +1260,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->cancelSharedButton:Landroid/widget/Button;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$700(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v3
@@ -1322,7 +1268,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->sendLinkButton:Landroid/widget/Button;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$800(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v3
@@ -1335,7 +1280,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->smsIconView:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$600(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v3
@@ -1393,7 +1337,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->iconTextView:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$900(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v3
@@ -1414,7 +1357,6 @@
     :cond_5
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->smsIconView:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$600(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v3
@@ -1771,7 +1713,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->checkBox:Landroid/widget/CheckBox;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$000(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/CheckBox;
 
     move-result-object v0
@@ -1780,7 +1721,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->nameView:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$100(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -1792,7 +1732,6 @@
     :goto_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->checkBox:Landroid/widget/CheckBox;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$000(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/CheckBox;
 
     move-result-object v0
@@ -1809,7 +1748,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->checkBox:Landroid/widget/CheckBox;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$000(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/CheckBox;
 
     move-result-object v0
@@ -1818,7 +1756,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->cancelSharedButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$700(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v0
@@ -1827,7 +1764,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->sendLinkButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$800(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/Button;
 
     move-result-object v0
@@ -1839,7 +1775,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->checkBox:Landroid/widget/CheckBox;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$000(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/CheckBox;
 
     move-result-object v0
@@ -2017,7 +1952,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->checkBox:Landroid/widget/CheckBox;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$000(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/CheckBox;
 
     move-result-object v1
@@ -2026,7 +1960,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->nameView:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$100(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -2037,7 +1970,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->checkBox:Landroid/widget/CheckBox;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$000(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/CheckBox;
 
     move-result-object v1
@@ -2046,7 +1978,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mViewHolder:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->checkBox:Landroid/widget/CheckBox;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;->access$000(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$ViewHolder;)Landroid/widget/CheckBox;
 
     move-result-object v1

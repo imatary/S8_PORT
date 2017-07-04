@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTaskForTimeGroup$1;->this$0:Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTaskForTimeGroup;
 
-    # getter for: Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTaskForTimeGroup;->mFinishingState:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTaskForTimeGroup;->access$000(Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTaskForTimeGroup;)Z
 
     move-result v0
@@ -54,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTaskForTimeGroup$1;->this$0:Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTaskForTimeGroup;
 
-    # getter for: Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTaskForTimeGroup;->mOnProgressListener:Lcom/sec/android/gallery3d/data/OnProgressListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTaskForTimeGroup;->access$100(Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTaskForTimeGroup;)Lcom/sec/android/gallery3d/data/OnProgressListener;
 
     move-result-object v0

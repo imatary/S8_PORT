@@ -627,7 +627,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/ComposePhotoViewAlbumSetAdapter;->mDrawableCache:Lcom/sec/samsung/gallery/view/adapter/DrawableCache;
 
-    const v2, 0x7f0202e0
+    const v2, 0x7f0202e2
 
     invoke-virtual {v1, v2}, Lcom/sec/samsung/gallery/view/adapter/DrawableCache;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -648,7 +648,7 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/ComposePhotoViewAlbumSetAdapter;->mDrawableCache:Lcom/sec/samsung/gallery/view/adapter/DrawableCache;
 
-    const v2, 0x7f0202df
+    const v2, 0x7f0202e1
 
     invoke-virtual {v1, v2}, Lcom/sec/samsung/gallery/view/adapter/DrawableCache;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -743,7 +743,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/adapter/ComposePhotoViewAlbumSetAdapter;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0202e1
+    const v3, 0x7f0202e3
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1062,7 +1062,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/ComposePhotoViewAlbumSetAdapter;->mDrawableCache:Lcom/sec/samsung/gallery/view/adapter/DrawableCache;
 
-    const v2, 0x7f0202e0
+    const v2, 0x7f0202e2
 
     invoke-virtual {v1, v2}, Lcom/sec/samsung/gallery/view/adapter/DrawableCache;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1083,7 +1083,7 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/ComposePhotoViewAlbumSetAdapter;->mDrawableCache:Lcom/sec/samsung/gallery/view/adapter/DrawableCache;
 
-    const v2, 0x7f0202df
+    const v2, 0x7f0202e1
 
     invoke-virtual {v1, v2}, Lcom/sec/samsung/gallery/view/adapter/DrawableCache;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1369,7 +1369,7 @@
 
     if-eqz v2, :cond_2
 
-    const v2, 0x7f0202de
+    const v2, 0x7f0202e0
 
     :goto_0
     invoke-virtual {v3, v2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -1394,7 +1394,7 @@
     return-object p1
 
     :cond_2
-    const v2, 0x7f0202dd
+    const v2, 0x7f0202df
 
     goto :goto_0
 

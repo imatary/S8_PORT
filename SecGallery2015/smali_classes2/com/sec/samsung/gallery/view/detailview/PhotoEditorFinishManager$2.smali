@@ -49,14 +49,12 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->mPhotoEditorService:Lcom/sec/android/mimage/photoretouching/service/IFinishService;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->access$202(Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;Lcom/sec/android/mimage/photoretouching/service/IFinishService;)Lcom/sec/android/mimage/photoretouching/service/IFinishService;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->mIsBoundWithPhotoEditorService:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->access$302(Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;Z)Z
 
     return-void
@@ -75,14 +73,12 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->mPhotoEditorService:Lcom/sec/android/mimage/photoretouching/service/IFinishService;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->access$202(Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;Lcom/sec/android/mimage/photoretouching/service/IFinishService;)Lcom/sec/android/mimage/photoretouching/service/IFinishService;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->mIsBoundWithPhotoEditorService:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->access$302(Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;Z)Z
 
     return-void

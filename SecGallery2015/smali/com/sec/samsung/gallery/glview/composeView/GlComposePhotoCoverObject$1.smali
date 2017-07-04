@@ -41,7 +41,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->mIsExpanded:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;)Z
 
     move-result v2
@@ -56,7 +55,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->mCoverHeight:F
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->access$1500(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;)F
 
     move-result v3
@@ -67,7 +65,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->mCoverViewScroll:F
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->access$1600(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;)F
 
     move-result v3
@@ -95,7 +92,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->mCoverHeight:F
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->access$1500(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;)F
 
     move-result v3
@@ -108,7 +104,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->updateChildTransition(F)V
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->access$1800(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;F)V
 
     return-void
@@ -122,7 +117,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->mCoverHeight:F
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->access$1500(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;)F
 
     move-result v3
@@ -133,7 +127,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->mActionbarHeight:F
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->access$1700(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;)F
 
     move-result v3

@@ -45,7 +45,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mFocusExpandObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2702(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     const/4 v0, 0x1
@@ -66,7 +65,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$25;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mFocusExpandObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -85,7 +83,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$25;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mFocusExpandObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -94,7 +91,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$25;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mFocusExpandObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v2
@@ -273,7 +269,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$25;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mFocusExpandObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v2, p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2702(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move v2, v4

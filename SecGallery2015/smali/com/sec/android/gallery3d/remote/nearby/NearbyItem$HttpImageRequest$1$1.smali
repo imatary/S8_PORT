@@ -42,7 +42,6 @@
 
     iget-object v1, v1, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem$HttpImageRequest$1;->this$1:Lcom/sec/android/gallery3d/remote/nearby/NearbyItem$HttpImageRequest;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyItem$HttpImageRequest;->mInputStream:Ljava/io/BufferedInputStream;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyItem$HttpImageRequest;->access$600(Lcom/sec/android/gallery3d/remote/nearby/NearbyItem$HttpImageRequest;)Ljava/io/BufferedInputStream;
 
     move-result-object v1

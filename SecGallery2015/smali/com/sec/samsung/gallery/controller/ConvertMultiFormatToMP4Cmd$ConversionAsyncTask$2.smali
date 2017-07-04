@@ -45,7 +45,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$1000(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)Landroid/content/Context;
 
     move-result-object v0

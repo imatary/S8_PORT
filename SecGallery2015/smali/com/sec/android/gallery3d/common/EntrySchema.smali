@@ -143,7 +143,6 @@
 
     aget-object v0, v1, v3
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->fullText:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$000(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Z
 
     move-result v4
@@ -465,7 +464,6 @@
 
     aget-object v0, v10, v9
 
-    # invokes: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->isId()Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$100(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Z
 
     move-result v12
@@ -476,7 +474,6 @@
 
     invoke-virtual {v6, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->name:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$200(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Ljava/lang/String;
 
     move-result-object v12
@@ -489,7 +486,6 @@
 
     sget-object v12, Lcom/sec/android/gallery3d/common/EntrySchema;->SQLITE_TYPES:[Ljava/lang/String;
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->type:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$300(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)I
 
     move-result v13
@@ -498,7 +494,6 @@
 
     invoke-virtual {v6, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->defaultValue:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$400(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Ljava/lang/String;
 
     move-result-object v12
@@ -513,7 +508,6 @@
 
     invoke-virtual {v6, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->defaultValue:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$400(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Ljava/lang/String;
 
     move-result-object v12
@@ -521,7 +515,6 @@
     invoke-virtual {v6, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_0
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->unique:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$500(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Z
 
     move-result v12
@@ -534,7 +527,6 @@
 
     if-nez v12, :cond_3
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->name:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$200(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Ljava/lang/String;
 
     move-result-object v12
@@ -559,7 +551,6 @@
 
     move-result-object v12
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->name:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$200(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Ljava/lang/String;
 
     move-result-object v13
@@ -636,7 +627,6 @@
 
     aget-object v0, v10, v9
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->indexed:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$600(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Z
 
     move-result v12
@@ -653,7 +643,6 @@
 
     invoke-virtual {v6, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->name:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$200(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Ljava/lang/String;
 
     move-result-object v12
@@ -670,7 +659,6 @@
 
     invoke-virtual {v6, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->name:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$200(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Ljava/lang/String;
 
     move-result-object v12
@@ -740,14 +728,12 @@
 
     aget-object v0, v10, v9
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->fullText:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$000(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Z
 
     move-result v12
 
     if-eqz v12, :cond_8
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->name:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$200(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Ljava/lang/String;
 
     move-result-object v1
@@ -805,7 +791,6 @@
 
     aget-object v0, v10, v9
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->fullText:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$000(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Z
 
     move-result v12
@@ -816,7 +801,6 @@
 
     invoke-virtual {v4, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->name:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$200(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Ljava/lang/String;
 
     move-result-object v12
@@ -844,7 +828,6 @@
 
     aget-object v0, v10, v9
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->fullText:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$000(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Z
 
     move-result v12
@@ -855,7 +838,6 @@
 
     invoke-virtual {v4, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    # getter for: Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->name:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;->access$200(Lcom/sec/android/gallery3d/common/EntrySchema$ColumnInfo;)Ljava/lang/String;
 
     move-result-object v12

@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowSetAsActivityCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/ShowSetAsActivityCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowSetAsActivityCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowSetAsActivityCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowSetAsActivityCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -64,7 +63,6 @@
 
     iget-boolean v2, p0, Lcom/sec/samsung/gallery/controller/ShowSetAsActivityCmd$1;->val$isWallpaper:Z
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowSetAsActivityCmd;->startSetAsAction(Lcom/sec/android/gallery3d/data/MediaItem;Z)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/controller/ShowSetAsActivityCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowSetAsActivityCmd;Lcom/sec/android/gallery3d/data/MediaItem;Z)V
 
     return-void

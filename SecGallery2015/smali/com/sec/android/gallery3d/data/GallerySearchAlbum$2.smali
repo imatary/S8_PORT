@@ -59,12 +59,10 @@
     :cond_1
     if-eqz p2, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mDate:Ljava/lang/Long;
     invoke-static {p1}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$100(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)Ljava/lang/Long;
 
     move-result-object v0
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mDate:Ljava/lang/Long;
     invoke-static {p2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$100(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)Ljava/lang/Long;
 
     move-result-object v1

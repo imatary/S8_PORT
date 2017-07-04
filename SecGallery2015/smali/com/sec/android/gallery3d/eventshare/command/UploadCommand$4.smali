@@ -185,7 +185,6 @@
     goto :goto_0
 
     :cond_1
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;->USE_SCLOUD:Z
     invoke-static {}, Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;->access$100()Z
 
     move-result v0
@@ -300,7 +299,6 @@
 
     if-eqz v1, :cond_4
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;->USE_SCLOUD:Z
     invoke-static {}, Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;->access$100()Z
 
     move-result v1
@@ -402,7 +400,6 @@
     goto/16 :goto_0
 
     :cond_4
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;->USE_SCLOUD:Z
     invoke-static {}, Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;->access$100()Z
 
     move-result v1
@@ -2182,7 +2179,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/eventshare/command/UploadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;->mIsUploadRunning:Z
     invoke-static {v6}, Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;)Z
 
     move-result v6
@@ -2209,7 +2205,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/UploadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;->mIsUploadRunning:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/UploadCommand;)Z
 
     move-result v0

@@ -37,7 +37,6 @@
     :goto_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils$1;->this$0:Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;->mLock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;->access$000(Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;)Ljava/lang/Object;
 
     move-result-object v1
@@ -45,7 +44,6 @@
     monitor-enter v1
 
     :try_start_0
-    # getter for: Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;->mLoggingJobCompleted:Z
     invoke-static {}, Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;->access$100()Z
 
     move-result v0
@@ -54,7 +52,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils$1;->this$0:Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;->mLock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;->access$000(Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;)Ljava/lang/Object;
 
     move-result-object v0
@@ -82,12 +79,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils$1;->this$0:Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;
 
-    # invokes: Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;->doLog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;->access$200(Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;)V
 
     const/4 v0, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;->mLoggingJobCompleted:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/util/unifiedlogging/UnifiedLogUtils;->access$102(Z)Z
 
     goto :goto_0

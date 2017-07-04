@@ -139,7 +139,6 @@
     :cond_3
     iget-object v6, p0, Lcom/sec/android/gallery3d/remote/cloud/CloudImage$ThumbDecodeRequest;->this$0:Lcom/sec/android/gallery3d/remote/cloud/CloudImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v6}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$000(Lcom/sec/android/gallery3d/remote/cloud/CloudImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v6
@@ -211,7 +210,6 @@
     :try_start_0
     iget-object v6, p0, Lcom/sec/android/gallery3d/remote/cloud/CloudImage$ThumbDecodeRequest;->this$0:Lcom/sec/android/gallery3d/remote/cloud/CloudImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v6}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$200(Lcom/sec/android/gallery3d/remote/cloud/CloudImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v6
@@ -222,7 +220,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/remote/cloud/CloudImage$ThumbDecodeRequest;->this$0:Lcom/sec/android/gallery3d/remote/cloud/CloudImage;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->getUri()Landroid/net/Uri;
     invoke-static {v7}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$100(Lcom/sec/android/gallery3d/remote/cloud/CloudImage;)Landroid/net/Uri;
 
     move-result-object v7
@@ -245,7 +242,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/remote/cloud/CloudImage$ThumbDecodeRequest;->this$0:Lcom/sec/android/gallery3d/remote/cloud/CloudImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v7}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$300(Lcom/sec/android/gallery3d/remote/cloud/CloudImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v7
@@ -281,7 +277,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/remote/cloud/CloudImage$ThumbDecodeRequest;->this$0:Lcom/sec/android/gallery3d/remote/cloud/CloudImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v7}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$400(Lcom/sec/android/gallery3d/remote/cloud/CloudImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v7

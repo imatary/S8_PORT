@@ -50,7 +50,6 @@
     packed-switch v0, :pswitch_data_0
 
     :goto_0
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;->LOCK:Ljava/lang/Object;
     invoke-static {}, Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;->access$300()Ljava/lang/Object;
 
     move-result-object v1
@@ -60,7 +59,6 @@
     const/4 v0, 0x0
 
     :try_start_0
-    # setter for: Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;->sInstance:Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;->access$402(Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;)Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;
 
     monitor-exit v1
@@ -74,7 +72,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/FindNewEvent$1;->val$context:Landroid/content/Context;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;->update(Landroid/content/Context;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;->access$000(Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;Landroid/content/Context;)V
 
     goto :goto_0
@@ -84,7 +81,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/FindNewEvent$1;->val$context:Landroid/content/Context;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;->updateQuarter(Landroid/content/Context;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;->access$100(Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;Landroid/content/Context;)V
 
     goto :goto_0
@@ -94,7 +90,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/FindNewEvent$1;->val$context:Landroid/content/Context;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;->updateYear(Landroid/content/Context;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;->access$200(Lcom/sec/samsung/gallery/view/eventview/FindNewEvent;Landroid/content/Context;)V
 
     goto :goto_0

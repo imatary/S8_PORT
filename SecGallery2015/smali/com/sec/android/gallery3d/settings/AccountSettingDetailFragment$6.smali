@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$6;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->handleCloudSyncOnOff(Z)V
     invoke-static {v0, p1}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$500(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;Z)V
 
     return-void

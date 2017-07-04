@@ -87,7 +87,6 @@
 
     new-instance v0, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -100,7 +99,6 @@
 
     new-instance v0, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -113,7 +111,6 @@
 
     new-instance v0, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -126,7 +123,6 @@
 
     new-instance v0, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -138,7 +134,6 @@
     iput-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mRightBottomArrow:Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;
 
     :goto_1
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
     move-result-object v0
@@ -149,14 +144,12 @@
 
     move-result-object v0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {p1, v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$502(Lcom/sec/android/gallery3d/ui/CropView;Landroid/graphics/RectF;)Landroid/graphics/RectF;
 
     invoke-static {}, Lcom/sec/samsung/gallery/util/TTSUtil;->getInstance()Lcom/sec/samsung/gallery/util/TTSUtil;
 
     move-result-object v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -173,7 +166,6 @@
     :cond_1
     new-instance v0, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -184,7 +176,6 @@
 
     new-instance v0, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -195,7 +186,6 @@
 
     new-instance v0, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -206,7 +196,6 @@
 
     new-instance v0, Lcom/sec/android/gallery3d/glrenderer/ResourceTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -234,7 +223,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$4500(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;Landroid/graphics/RectF;)V
+.method static synthetic access$4400(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;Landroid/graphics/RectF;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->setInitRectangle(Landroid/graphics/RectF;)V
@@ -242,7 +231,7 @@
     return-void
 .end method
 
-.method static synthetic access$5300(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;)I
+.method static synthetic access$5400(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mMovingEdges:I
@@ -257,7 +246,6 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -270,8 +258,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mUseSystemBar:Z
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$2100(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$2000(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v1
 
@@ -284,7 +271,22 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mSpotlightRatioX:F
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3100(Lcom/sec/android/gallery3d/ui/CropView;)F
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    invoke-static {v1, v2}, Lcom/sec/android/gallery3d/common/Utils;->equals(FF)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
+
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3200(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v1
@@ -301,25 +303,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mSpotlightRatioY:F
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3300(Lcom/sec/android/gallery3d/ui/CropView;)F
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    invoke-static {v1, v2}, Lcom/sec/android/gallery3d/common/Utils;->equals(FF)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
-
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsPhotoFrame:Z
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3400(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3300(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v1
 
@@ -330,7 +314,6 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -367,8 +350,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsSetAsOnCircle:Z
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$2800(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$2700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v1
 
@@ -425,8 +407,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3400(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -572,8 +553,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsPhotoFrame:Z
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3400(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3300(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v1
 
@@ -587,8 +567,7 @@
 
     iget-object v2, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mSpotlightRatioX:F
-    invoke-static {v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$3200(Lcom/sec/android/gallery3d/ui/CropView;)F
+    invoke-static {v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$3100(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v2
 
@@ -602,8 +581,7 @@
 
     iget-object v2, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mSpotlightRatioY:F
-    invoke-static {v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$3300(Lcom/sec/android/gallery3d/ui/CropView;)F
+    invoke-static {v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$3200(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v2
 
@@ -651,8 +629,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mPaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3500(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v12
 
@@ -688,8 +665,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mPaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3500(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v17
 
@@ -713,8 +689,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mPaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3500(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v17
 
@@ -807,13 +782,11 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mPaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3500(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v1
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->OUTLINE_WIDTH:F
-    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3700()F
+    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3600()F
 
     move-result v2
 
@@ -825,8 +798,7 @@
 
     iget-object v4, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMiddlePaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v4}, Lcom/sec/android/gallery3d/ui/CropView;->access$3800(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v4}, Lcom/sec/android/gallery3d/ui/CropView;->access$3700(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v4
 
@@ -876,8 +848,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mPaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3500(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v17
 
@@ -897,8 +868,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsSetAsOnCircle:Z
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$2800(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$2700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v1
 
@@ -929,8 +899,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsSetAsOnCircle:Z
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$2800(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$2700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v1
 
@@ -1105,8 +1074,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/glrenderer/GLPaint;->setLineWidth(F)V
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->COLOR_CIRCLE_INSIDE_OUTLINE:I
-    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3900()I
+    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3800()I
 
     move-result v1
 
@@ -1142,8 +1110,7 @@
 
     invoke-interface/range {v17 .. v23}, Lcom/sec/android/gallery3d/glrenderer/GLCanvas;->drawCircle(FFFLcom/sec/android/gallery3d/glrenderer/GLPaint;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->COLOR_CIRCLE_INSIDE_OUTLINE:I
-    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3900()I
+    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3800()I
 
     move-result v1
 
@@ -1199,8 +1166,7 @@
 
     invoke-interface/range {v21 .. v27}, Lcom/sec/android/gallery3d/glrenderer/GLCanvas;->drawCircle(FFFLcom/sec/android/gallery3d/glrenderer/GLPaint;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->COLOR_CIRCLE_INSIDE_OUTLINE:I
-    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3900()I
+    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3800()I
 
     move-result v1
 
@@ -1428,8 +1394,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMiddlePaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3800(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3700(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v30
 
@@ -1485,8 +1450,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMiddlePaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3800(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3700(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v30
 
@@ -1520,7 +1484,6 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
@@ -1539,8 +1502,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMiddlePaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3800(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3700(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v1
 
@@ -1745,8 +1707,7 @@
 
     iget-object v2, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mSpotlightRatioX:F
-    invoke-static {v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$3200(Lcom/sec/android/gallery3d/ui/CropView;)F
+    invoke-static {v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$3100(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v2
 
@@ -1760,8 +1721,7 @@
 
     iget-object v2, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mSpotlightRatioY:F
-    invoke-static {v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$3300(Lcom/sec/android/gallery3d/ui/CropView;)F
+    invoke-static {v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$3200(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v2
 
@@ -1809,8 +1769,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mPaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3500(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v12
 
@@ -1846,8 +1805,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mPaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3500(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v45
 
@@ -1871,8 +1829,7 @@
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mPaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$3500(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
 
     move-result-object v45
 
@@ -1910,155 +1867,116 @@
 .end method
 
 .method private initDefaultCropHandler()Landroid/graphics/RectF;
-    .locals 13
+    .locals 15
+
+    const/4 v10, 0x1
+
+    const/4 v14, 0x0
+
+    const/4 v11, 0x0
+
+    const/high16 v13, 0x40000000    # 2.0f
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageHeight:I
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$900(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v9
 
     int-to-float v9, v9
 
-    iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
+    iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
+    invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
-    move-result-object v10
+    move-result-object v12
 
-    invoke-virtual {v10}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->getMinScale()F
+    invoke-virtual {v12}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->getMinScale()F
 
-    move-result v10
+    move-result v12
 
-    mul-float v1, v9, v10
+    mul-float v1, v9, v12
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageWidth:I
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$800(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v9
 
     int-to-float v9, v9
 
-    iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
+    iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
+    invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
-    move-result-object v10
+    move-result-object v12
 
-    invoke-virtual {v10}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->getMinScale()F
+    invoke-virtual {v12}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->getMinScale()F
 
-    move-result v10
+    move-result v12
 
-    mul-float v2, v9, v10
-
-    iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
+    mul-float v2, v9, v12
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
-    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
+    iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    move-result-object v9
+    invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$1900(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
-    invoke-virtual {v9}, Lcom/sec/android/gallery3d/app/CropImage;->getLibraryContext()Lcom/sec/android/gallery3d/interfaces/LibraryContext;
+    move-result-object v12
 
-    move-result-object v11
-
-    const/4 v12, 0x1
-
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->SUPPORT_KNOX_DESKTOP:Z
-    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$1900()Z
-
-    move-result v9
-
-    if-eqz v9, :cond_3
+    invoke-static {v9, v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$1802(Lcom/sec/android/gallery3d/ui/CropView;Landroid/graphics/Point;)Landroid/graphics/Point;
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mDexInterface:Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
-    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2000(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
-
-    move-result-object v9
-
-    invoke-interface {v9}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
-
-    move-result v9
-
-    if-eqz v9, :cond_3
-
-    const/4 v9, 0x1
-
-    :goto_0
-    invoke-static {v11, v12, v9}, Lcom/sec/android/gallery3d/util/GalleryUtils;->getScreenSize(Lcom/sec/android/gallery3d/interfaces/LibraryContext;ZZ)Landroid/graphics/Point;
-
-    move-result-object v9
-
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
-    invoke-static {v10, v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$1802(Lcom/sec/android/gallery3d/ui/CropView;Landroid/graphics/Point;)Landroid/graphics/Point;
-
-    iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
-
-    # invokes: Lcom/sec/android/gallery3d/ui/CropView;->isAspectRatioApplied()Z
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$1300(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v9
 
-    if-nez v9, :cond_a
+    if-nez v9, :cond_9
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
-    iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
+    iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
+    invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
-    move-result-object v10
+    move-result-object v12
 
-    iget v10, v10, Landroid/graphics/Point;->x:I
+    iget v12, v12, Landroid/graphics/Point;->x:I
 
-    int-to-float v10, v10
+    int-to-float v12, v12
 
-    sub-float/2addr v10, v2
+    sub-float/2addr v12, v2
 
-    const/high16 v11, 0x40000000    # 2.0f
+    div-float/2addr v12, v13
 
-    div-float/2addr v10, v11
-
-    iput v10, v9, Landroid/graphics/RectF;->left:F
+    iput v12, v9, Landroid/graphics/RectF;->left:F
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
-    iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
+    iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
+    invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
-    move-result-object v10
+    move-result-object v12
 
-    iget v10, v10, Landroid/graphics/RectF;->left:F
+    iget v12, v12, Landroid/graphics/RectF;->left:F
 
-    add-float/2addr v10, v2
+    add-float/2addr v12, v2
 
-    iput v10, v9, Landroid/graphics/RectF;->right:F
+    iput v12, v9, Landroid/graphics/RectF;->right:F
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
@@ -2073,54 +1991,47 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
-    iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
+    iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
+    invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
-    move-result-object v10
+    move-result-object v12
 
-    iget v10, v10, Landroid/graphics/Point;->y:I
+    iget v12, v12, Landroid/graphics/Point;->y:I
 
-    int-to-float v10, v10
+    int-to-float v12, v12
 
-    sub-float/2addr v10, v1
+    sub-float/2addr v12, v1
 
-    const/high16 v11, 0x40000000    # 2.0f
+    div-float/2addr v12, v13
 
-    div-float/2addr v10, v11
-
-    iput v10, v9, Landroid/graphics/RectF;->top:F
+    iput v12, v9, Landroid/graphics/RectF;->top:F
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
-    iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
+    iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
+    invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
-    move-result-object v10
+    move-result-object v12
 
-    iget v10, v10, Landroid/graphics/RectF;->top:F
+    iget v12, v12, Landroid/graphics/RectF;->top:F
 
-    add-float/2addr v10, v1
+    add-float/2addr v12, v1
 
-    iput v10, v9, Landroid/graphics/RectF;->bottom:F
+    iput v12, v9, Landroid/graphics/RectF;->bottom:F
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mUseSystemBar:Z
-    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2100(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2000(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v4
 
@@ -2130,11 +2041,10 @@
 
     move-result v9
 
-    if-eqz v9, :cond_4
+    if-eqz v9, :cond_3
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v9
@@ -2151,25 +2061,23 @@
 
     move-result v9
 
-    if-eqz v9, :cond_4
+    if-eqz v9, :cond_3
 
-    const/4 v9, 0x1
+    move v9, v10
 
-    :goto_1
+    :goto_0
     and-int/2addr v4, v9
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mUseSystemBar:Z
-    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2100(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2000(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v9
 
-    if-eqz v9, :cond_5
+    if-eqz v9, :cond_4
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v9
@@ -2178,14 +2086,13 @@
 
     move-result v9
 
-    if-eqz v9, :cond_5
+    if-eqz v9, :cond_4
 
-    const/4 v5, 0x1
+    move v5, v10
 
-    :goto_2
+    :goto_1
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v9
@@ -2194,11 +2101,10 @@
 
     move-result v3
 
-    if-eqz v4, :cond_7
+    if-eqz v4, :cond_6
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v9
@@ -2207,20 +2113,19 @@
 
     move-result-object v10
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_5
 
     const v9, 0x7f0b00d0
 
-    :goto_3
+    :goto_2
     invoke-virtual {v10, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v6
 
-    :goto_4
+    :goto_3
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsFullHeightScreenImage:Z
-    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2200(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2100(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v9
 
@@ -2228,7 +2133,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
@@ -2237,8 +2141,7 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActionBarSize:I
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2300(Lcom/sec/android/gallery3d/ui/CropView;)I
+    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2200(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v10
 
@@ -2246,20 +2149,18 @@
 
     cmpg-float v9, v9, v10
 
-    if-gez v9, :cond_8
+    if-gez v9, :cond_7
 
     :cond_0
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingTopVertitcal:I
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2400(Lcom/sec/android/gallery3d/ui/CropView;)I
+    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2300(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v10
 
@@ -2271,76 +2172,67 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
     move-result-object v10
 
     iget v10, v10, Landroid/graphics/Point;->y:I
 
-    iget-object v11, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
+    iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingBottomVertitcal:I
-    invoke-static {v11}, Lcom/sec/android/gallery3d/ui/CropView;->access$2500(Lcom/sec/android/gallery3d/ui/CropView;)I
+    invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$2400(Lcom/sec/android/gallery3d/ui/CropView;)I
 
-    move-result v11
+    move-result v12
 
-    sub-int/2addr v10, v11
+    sub-int/2addr v10, v12
 
     add-int/2addr v10, v6
 
     int-to-float v10, v10
 
-    iget-object v11, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
-
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
-    invoke-static {v11}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
-
-    move-result-object v11
-
-    iget v11, v11, Landroid/graphics/RectF;->top:F
-
     iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
-    invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
+    invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v12
 
-    iget v12, v12, Landroid/graphics/Point;->y:I
+    iget v12, v12, Landroid/graphics/RectF;->top:F
 
-    int-to-float v12, v12
+    iget-object v13, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    invoke-static {v10, v11, v12}, Lcom/sec/android/gallery3d/common/Utils;->clamp(FFF)F
+    invoke-static {v13}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
+
+    move-result-object v13
+
+    iget v13, v13, Landroid/graphics/Point;->y:I
+
+    int-to-float v13, v13
+
+    invoke-static {v10, v12, v13}, Lcom/sec/android/gallery3d/common/Utils;->clamp(FFF)F
 
     move-result v10
 
     iput v10, v9, Landroid/graphics/RectF;->bottom:F
 
     :cond_1
-    :goto_5
+    :goto_4
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v10
-
-    const/4 v11, 0x0
 
     invoke-virtual {v9, v10, v11}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->identityRect(Landroid/graphics/RectF;Z)Landroid/graphics/RectF;
 
@@ -2349,10 +2241,9 @@
     iput-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
 
     :cond_2
-    :goto_6
+    :goto_5
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
@@ -2360,77 +2251,69 @@
     return-object v9
 
     :cond_3
-    const/4 v9, 0x0
+    move v9, v11
 
     goto/16 :goto_0
 
     :cond_4
-    const/4 v9, 0x0
+    move v5, v11
 
     goto/16 :goto_1
 
     :cond_5
-    const/4 v5, 0x0
-
-    goto/16 :goto_2
-
-    :cond_6
     const v9, 0x7f0b00cf
 
-    goto/16 :goto_3
+    goto :goto_2
+
+    :cond_6
+    move v6, v11
+
+    goto :goto_3
 
     :cond_7
-    const/4 v6, 0x0
-
-    goto/16 :goto_4
-
-    :cond_8
-    if-eqz v5, :cond_9
+    if-eqz v5, :cond_8
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget v10, v9, Landroid/graphics/RectF;->top:F
 
-    int-to-float v11, v6
+    int-to-float v12, v6
 
-    sub-float/2addr v10, v11
+    sub-float/2addr v10, v12
 
     iput v10, v9, Landroid/graphics/RectF;->top:F
 
-    goto :goto_5
+    goto :goto_4
 
-    :cond_9
+    :cond_8
     if-eqz v4, :cond_1
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget v10, v9, Landroid/graphics/RectF;->top:F
 
-    mul-int/lit8 v11, v6, 0x2
+    mul-int/lit8 v12, v6, 0x2
 
-    int-to-float v11, v11
+    int-to-float v12, v12
 
-    sub-float/2addr v10, v11
+    sub-float/2addr v10, v12
 
     iput v10, v9, Landroid/graphics/RectF;->top:F
 
-    goto :goto_5
+    goto :goto_4
 
-    :cond_a
+    :cond_9
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mTargetRatio:F
-    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2600(Lcom/sec/android/gallery3d/ui/CropView;)F
+    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2500(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v9
 
@@ -2438,18 +2321,16 @@
 
     cmpl-float v9, v9, v10
 
-    if-ltz v9, :cond_10
+    if-ltz v9, :cond_f
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
     move-result-object v10
@@ -2460,15 +2341,10 @@
 
     sub-float/2addr v10, v2
 
-    const/high16 v11, 0x40000000    # 2.0f
-
-    div-float/2addr v10, v11
-
-    const/4 v11, 0x0
+    div-float/2addr v10, v13
 
     iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
     invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
     move-result-object v12
@@ -2477,7 +2353,7 @@
 
     int-to-float v12, v12
 
-    invoke-static {v10, v11, v12}, Lcom/sec/android/gallery3d/common/Utils;->clamp(FFF)F
+    invoke-static {v10, v14, v12}, Lcom/sec/android/gallery3d/common/Utils;->clamp(FFF)F
 
     move-result v10
 
@@ -2485,14 +2361,12 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -2501,11 +2375,8 @@
 
     add-float/2addr v10, v2
 
-    const/4 v11, 0x0
-
     iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
     invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
     move-result-object v12
@@ -2514,7 +2385,7 @@
 
     int-to-float v12, v12
 
-    invoke-static {v10, v11, v12}, Lcom/sec/android/gallery3d/common/Utils;->clamp(FFF)F
+    invoke-static {v10, v14, v12}, Lcom/sec/android/gallery3d/common/Utils;->clamp(FFF)F
 
     move-result v10
 
@@ -2522,7 +2393,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
@@ -2533,7 +2403,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mAspectRatio:F
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$1400(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v10
@@ -2542,62 +2411,52 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageWidth:I
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$800(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageHeight:I
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$900(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v10
 
-    # invokes: Lcom/sec/android/gallery3d/ui/CropView;->isPanoramaImage(II)Z
-    invoke-static {v9, v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2700(II)Z
+    invoke-static {v9, v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2600(II)Z
 
     move-result v9
 
-    if-eqz v9, :cond_e
+    if-eqz v9, :cond_d
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageHeight:I
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$900(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageWidth:I
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$800(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v10
 
-    if-le v9, v10, :cond_e
+    if-le v9, v10, :cond_d
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingTopVertitcal:I
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2400(Lcom/sec/android/gallery3d/ui/CropView;)I
+    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2300(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v10
 
     int-to-float v10, v10
 
-    const/4 v11, 0x0
-
     iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
     invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
     move-result-object v12
@@ -2606,31 +2465,27 @@
 
     int-to-float v12, v12
 
-    invoke-static {v1, v11, v12}, Lcom/sec/android/gallery3d/common/Utils;->clamp(FFF)F
+    invoke-static {v1, v14, v12}, Lcom/sec/android/gallery3d/common/Utils;->clamp(FFF)F
 
-    move-result v11
+    move-result v12
 
-    add-float/2addr v10, v11
+    add-float/2addr v10, v12
 
     sub-float/2addr v10, v0
 
-    const/high16 v11, 0x40000000    # 2.0f
-
-    div-float/2addr v10, v11
+    div-float/2addr v10, v13
 
     iput v10, v9, Landroid/graphics/RectF;->top:F
 
-    :goto_7
+    :goto_6
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -2641,10 +2496,9 @@
 
     iput v10, v9, Landroid/graphics/RectF;->bottom:F
 
-    :goto_8
+    :goto_7
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
@@ -2653,8 +2507,7 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingTopVertitcal:I
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2400(Lcom/sec/android/gallery3d/ui/CropView;)I
+    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2300(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v10
 
@@ -2662,28 +2515,25 @@
 
     cmpg-float v9, v9, v10
 
-    if-gez v9, :cond_b
+    if-gez v9, :cond_a
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsFullHeightScreenImage:Z
-    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2200(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2100(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v9
 
-    if-eqz v9, :cond_b
+    if-eqz v9, :cond_a
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingTopVertitcal:I
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2400(Lcom/sec/android/gallery3d/ui/CropView;)I
+    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2300(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v10
 
@@ -2693,62 +2543,56 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
     move-result-object v10
 
     iget v10, v10, Landroid/graphics/Point;->y:I
 
-    iget-object v11, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
+    iget-object v12, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingBottomVertitcal:I
-    invoke-static {v11}, Lcom/sec/android/gallery3d/ui/CropView;->access$2500(Lcom/sec/android/gallery3d/ui/CropView;)I
+    invoke-static {v12}, Lcom/sec/android/gallery3d/ui/CropView;->access$2400(Lcom/sec/android/gallery3d/ui/CropView;)I
 
-    move-result v11
+    move-result v12
 
-    sub-int/2addr v10, v11
+    sub-int/2addr v10, v12
 
     int-to-float v10, v10
 
     iput v10, v9, Landroid/graphics/RectF;->bottom:F
 
-    :cond_b
+    :cond_a
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
     iget-boolean v9, v9, Lcom/sec/android/gallery3d/ui/CropView;->mIsSetAsContactPhoto:Z
 
-    if-nez v9, :cond_c
+    if-nez v9, :cond_b
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsSetAsOnCircle:Z
-    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2800(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v9
 
     if-eqz v9, :cond_2
 
-    :cond_c
+    :cond_b
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mUseGraceCropViewUI:Z
-    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2900(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2800(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v9
 
-    if-eqz v9, :cond_d
+    if-eqz v9, :cond_c
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
@@ -2763,7 +2607,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
@@ -2774,8 +2617,7 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMinCropRectSize:I
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$3000(Lcom/sec/android/gallery3d/ui/CropView;)I
+    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2900(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v10
 
@@ -2785,18 +2627,16 @@
 
     cmpl-float v9, v9, v10
 
-    if-ltz v9, :cond_d
+    if-ltz v9, :cond_c
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -2809,14 +2649,12 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -2829,14 +2667,12 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -2849,14 +2685,12 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -2867,22 +2701,18 @@
 
     iput v10, v9, Landroid/graphics/RectF;->bottom:F
 
-    :cond_d
+    :cond_c
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v10
-
-    const/4 v11, 0x0
 
     invoke-virtual {v9, v10, v11}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->identityRect(Landroid/graphics/RectF;Z)Landroid/graphics/RectF;
 
@@ -2890,57 +2720,50 @@
 
     iput-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
 
-    goto/16 :goto_6
+    goto/16 :goto_5
 
-    :cond_e
+    :cond_d
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsFullHeightScreenImage:Z
-    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2200(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$2100(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v9
 
-    if-eqz v9, :cond_f
+    if-eqz v9, :cond_e
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingTopVertitcal:I
-    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2400(Lcom/sec/android/gallery3d/ui/CropView;)I
+    invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$2300(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v10
 
     int-to-float v10, v10
 
-    sub-float v11, v1, v0
+    sub-float v12, v1, v0
 
-    const/high16 v12, 0x40000000    # 2.0f
+    div-float/2addr v12, v13
 
-    div-float/2addr v11, v12
-
-    add-float/2addr v10, v11
+    add-float/2addr v10, v12
 
     iput v10, v9, Landroid/graphics/RectF;->top:F
 
-    goto/16 :goto_7
+    goto/16 :goto_6
 
-    :cond_f
+    :cond_e
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
     move-result-object v10
@@ -2951,25 +2774,21 @@
 
     sub-float/2addr v10, v0
 
-    const/high16 v11, 0x40000000    # 2.0f
-
-    div-float/2addr v10, v11
+    div-float/2addr v10, v13
 
     iput v10, v9, Landroid/graphics/RectF;->top:F
 
-    goto/16 :goto_7
+    goto/16 :goto_6
 
-    :cond_10
+    :cond_f
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
     move-result-object v10
@@ -2980,22 +2799,18 @@
 
     sub-float/2addr v10, v1
 
-    const/high16 v11, 0x40000000    # 2.0f
-
-    div-float/2addr v10, v11
+    div-float/2addr v10, v13
 
     iput v10, v9, Landroid/graphics/RectF;->top:F
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -3008,7 +2823,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
@@ -3019,7 +2833,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mAspectRatio:F
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$1400(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v10
@@ -3028,14 +2841,12 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$1800(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
 
     move-result-object v10
@@ -3046,22 +2857,18 @@
 
     sub-float/2addr v10, v8
 
-    const/high16 v11, 0x40000000    # 2.0f
-
-    div-float/2addr v10, v11
+    div-float/2addr v10, v13
 
     iput v10, v9, Landroid/graphics/RectF;->left:F
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -3072,7 +2879,7 @@
 
     iput v10, v9, Landroid/graphics/RectF;->right:F
 
-    goto/16 :goto_8
+    goto/16 :goto_7
 .end method
 
 .method private moveEdges(Landroid/view/MotionEvent;)V
@@ -3084,12 +2891,10 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
     invoke-static/range {v23 .. v23}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
     move-result-object v23
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->mScale:F
     invoke-static/range {v23 .. v23}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->access$300(Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;)F
 
     move-result v19
@@ -3118,7 +2923,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageWidth:I
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/ui/CropView;->access$800(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v24
@@ -3147,7 +2951,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageHeight:I
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/ui/CropView;->access$900(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v24
@@ -3190,7 +2993,6 @@
 
     move-object/from16 v23, v0
 
-    # invokes: Lcom/sec/android/gallery3d/ui/CropView;->getMaxIdentityRect()Landroid/graphics/RectF;
     invoke-static/range {v23 .. v23}, Lcom/sec/android/gallery3d/ui/CropView;->access$1000(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v14
@@ -3426,7 +3228,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsCropAreaChanged:Z
     invoke-static/range {v23 .. v23}, Lcom/sec/android/gallery3d/ui/CropView;->access$1100(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v23
@@ -3441,7 +3242,6 @@
 
     const/16 v24, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsCropAreaChanged:Z
     invoke-static/range {v23 .. v24}, Lcom/sec/android/gallery3d/ui/CropView;->access$1102(Lcom/sec/android/gallery3d/ui/CropView;Z)Z
 
     :cond_6
@@ -3466,7 +3266,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
     move-result-object v24
@@ -3481,7 +3280,6 @@
 
     move-result-object v24
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static/range {v23 .. v24}, Lcom/sec/android/gallery3d/ui/CropView;->access$502(Lcom/sec/android/gallery3d/ui/CropView;Landroid/graphics/RectF;)Landroid/graphics/RectF;
 
     move-object/from16 v0, p0
@@ -3490,7 +3288,6 @@
 
     move-object/from16 v23, v0
 
-    # invokes: Lcom/sec/android/gallery3d/ui/CropView;->check()V
     invoke-static/range {v23 .. v23}, Lcom/sec/android/gallery3d/ui/CropView;->access$1500(Lcom/sec/android/gallery3d/ui/CropView;)V
 
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->invalidate()V
@@ -3526,7 +3323,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
     invoke-static/range {v23 .. v23}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
     move-result-object v23
@@ -3567,7 +3363,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageWidth:I
     invoke-static/range {v25 .. v25}, Lcom/sec/android/gallery3d/ui/CropView;->access$800(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v25
@@ -3596,7 +3391,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageWidth:I
     invoke-static/range {v25 .. v25}, Lcom/sec/android/gallery3d/ui/CropView;->access$800(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v25
@@ -3625,7 +3419,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageHeight:I
     invoke-static/range {v25 .. v25}, Lcom/sec/android/gallery3d/ui/CropView;->access$900(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v25
@@ -3654,7 +3447,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageHeight:I
     invoke-static/range {v25 .. v25}, Lcom/sec/android/gallery3d/ui/CropView;->access$900(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v25
@@ -3675,7 +3467,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsManualFD:Z
     invoke-static/range {v23 .. v23}, Lcom/sec/android/gallery3d/ui/CropView;->access$1200(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v23
@@ -3919,7 +3710,6 @@
 
     move-object/from16 v23, v0
 
-    # invokes: Lcom/sec/android/gallery3d/ui/CropView;->isAspectRatioApplied()Z
     invoke-static/range {v23 .. v23}, Lcom/sec/android/gallery3d/ui/CropView;->access$1300(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v23
@@ -3932,7 +3722,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mAspectRatio:F
     invoke-static/range {v23 .. v23}, Lcom/sec/android/gallery3d/ui/CropView;->access$1400(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v23
@@ -3943,7 +3732,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageHeight:I
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/ui/CropView;->access$900(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v24
@@ -3962,7 +3750,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageWidth:I
     invoke-static/range {v24 .. v24}, Lcom/sec/android/gallery3d/ui/CropView;->access$800(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v24
@@ -4166,7 +3953,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsCropAreaChanged:Z
     invoke-static/range {v23 .. v23}, Lcom/sec/android/gallery3d/ui/CropView;->access$1100(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v23
@@ -4181,7 +3967,6 @@
 
     const/16 v24, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsCropAreaChanged:Z
     invoke-static/range {v23 .. v24}, Lcom/sec/android/gallery3d/ui/CropView;->access$1102(Lcom/sec/android/gallery3d/ui/CropView;Z)Z
 
     goto/16 :goto_1
@@ -4453,7 +4238,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsCropAreaChanged:Z
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$1100(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v3
@@ -4475,7 +4259,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
     move-result-object v4
@@ -4486,7 +4269,6 @@
 
     move-result-object v4
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v3, v4}, Lcom/sec/android/gallery3d/ui/CropView;->access$502(Lcom/sec/android/gallery3d/ui/CropView;Landroid/graphics/RectF;)Landroid/graphics/RectF;
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->initDefaultCropHandler()Landroid/graphics/RectF;
@@ -4494,15 +4276,13 @@
     goto :goto_0
 
     :cond_1
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->sSelectionRatio:F
-    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$4000()F
+    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3900()F
 
     move-result v3
 
     div-float v2, v3, v5
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->sSelectionRatio:F
-    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$4000()F
+    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3900()F
 
     move-result v3
 
@@ -4510,8 +4290,7 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mTargetRatio:F
-    invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$2600(Lcom/sec/android/gallery3d/ui/CropView;)F
+    invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$2500(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v3
 
@@ -4521,8 +4300,7 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mTargetRatio:F
-    invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$2600(Lcom/sec/android/gallery3d/ui/CropView;)F
+    invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$2500(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v3
 
@@ -4531,8 +4309,7 @@
     :goto_2
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsSNote:Z
-    invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$4100(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$4000(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v3
 
@@ -4540,8 +4317,7 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mIsSView:Z
-    invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$4200(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$4100(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v3
 
@@ -4581,8 +4357,7 @@
     :cond_3
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mTargetRatio:F
-    invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$2600(Lcom/sec/android/gallery3d/ui/CropView;)F
+    invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$2500(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v3
 
@@ -4598,7 +4373,6 @@
     :cond_5
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageWidth:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$800(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v3
@@ -4607,7 +4381,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageHeight:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/CropView;->access$900(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v4
@@ -4624,7 +4397,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageHeight:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$900(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v3
@@ -4633,7 +4405,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageWidth:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/CropView;->access$800(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v4
@@ -4649,7 +4420,6 @@
     :cond_6
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageWidth:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/CropView;->access$800(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v3
@@ -4658,7 +4428,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mImageHeight:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/CropView;->access$900(Lcom/sec/android/gallery3d/ui/CropView;)I
 
     move-result v4
@@ -4681,7 +4450,6 @@
 
     iget-object v15, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v15}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v9
@@ -4730,7 +4498,6 @@
 
     iget-object v15, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v15}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v15
@@ -4991,7 +4758,6 @@
 
     iget-object v15, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/CropView;->isAspectRatioApplied()Z
     invoke-static {v15}, Lcom/sec/android/gallery3d/ui/CropView;->access$1300(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v15
@@ -5099,7 +4865,6 @@
 
     iget-object v15, v0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/CropView;->isAspectRatioApplied()Z
     invoke-static {v15}, Lcom/sec/android/gallery3d/ui/CropView;->access$1300(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v15
@@ -5209,7 +4974,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v0
@@ -5230,7 +4994,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mTouch:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v0
@@ -5241,7 +5004,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView;->mTouch:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$702(Lcom/sec/android/gallery3d/ui/CropView;Z)Z
 
     invoke-static {}, Lcom/sec/samsung/gallery/util/TTSUtil;->getInstance()Lcom/sec/samsung/gallery/util/TTSUtil;
@@ -5250,14 +5012,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v2
@@ -5311,7 +5071,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v0
@@ -5324,12 +5083,10 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
     move-result-object v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->isScaleMode:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->access$1600(Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;)Z
 
     move-result v0
@@ -5384,7 +5141,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView;->mTouch:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$702(Lcom/sec/android/gallery3d/ui/CropView;Z)Z
 
     goto :goto_0
@@ -5392,7 +5148,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView;->mMove:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$1702(Lcom/sec/android/gallery3d/ui/CropView;Z)Z
 
     invoke-direct {p0, p1}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->moveEdges(Landroid/view/MotionEvent;)V
@@ -5402,12 +5157,10 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView;->mMove:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$1702(Lcom/sec/android/gallery3d/ui/CropView;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView;->mTouch:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/ui/CropView;->access$702(Lcom/sec/android/gallery3d/ui/CropView;Z)Z
 
     iput v2, p0, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mMovingEdges:I
@@ -5448,7 +5201,6 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->borderDisplayRect:Landroid/graphics/RectF;
     invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/RectF;
 
     move-result-object v29
@@ -5468,8 +5220,7 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mUseSystemBar:Z
-    invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$2100(Lcom/sec/android/gallery3d/ui/CropView;)Z
+    invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$2000(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v34
 
@@ -5492,7 +5243,6 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
     invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
 
     move-result-object v34
@@ -5679,8 +5429,7 @@
     goto/16 :goto_0
 
     :cond_2
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->EDGE_ADJUSTMENT:I
-    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3100()I
+    invoke-static {}, Lcom/sec/android/gallery3d/ui/CropView;->access$3000()I
 
     move-result v13
 
@@ -5941,7 +5690,6 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mAspectRatio:F
     invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$1400(Lcom/sec/android/gallery3d/ui/CropView;)F
 
     move-result v34
@@ -6105,7 +5853,6 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMove:Z
     invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$1700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v34
@@ -6155,7 +5902,6 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMove:Z
     invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$1700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v34
@@ -6209,7 +5955,6 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMove:Z
     invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$1700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v34
@@ -6257,7 +6002,6 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMove:Z
     invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$1700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v34
@@ -6471,7 +6215,6 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMove:Z
     invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$1700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v34
@@ -6505,7 +6248,6 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMove:Z
     invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$1700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v34
@@ -6537,7 +6279,6 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMove:Z
     invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$1700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v34
@@ -6571,7 +6312,6 @@
 
     move-object/from16 v34, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMove:Z
     invoke-static/range {v34 .. v34}, Lcom/sec/android/gallery3d/ui/CropView;->access$1700(Lcom/sec/android/gallery3d/ui/CropView;)Z
 
     move-result v34

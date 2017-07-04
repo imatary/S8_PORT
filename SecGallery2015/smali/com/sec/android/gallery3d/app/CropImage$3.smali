@@ -34,7 +34,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mIsCropAndDelete:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$2100(Lcom/sec/android/gallery3d/app/CropImage;)Z
 
     move-result v1
@@ -49,7 +48,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v1
@@ -90,12 +88,10 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$300(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/app/ProgressDialog;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->dismissDialog(Landroid/app/Dialog;)V
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$400(Lcom/sec/android/gallery3d/app/CropImage;Landroid/app/Dialog;)V
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
@@ -104,12 +100,10 @@
 
     check-cast v1, Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->onBitmapRegionDecoderAvailable(Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;)V
     invoke-static {v2, v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$500(Lcom/sec/android/gallery3d/app/CropImage;Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;)V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mActionBarButtons:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$600(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/view/View;
 
     move-result-object v1
@@ -122,7 +116,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mUseRightAlignedActionbar:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$700(Lcom/sec/android/gallery3d/app/CropImage;)Z
 
     move-result v1
@@ -131,7 +124,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mActionBarButtons:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$600(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/view/View;
 
     move-result-object v1
@@ -150,12 +142,10 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$300(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/app/ProgressDialog;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->dismissDialog(Landroid/app/Dialog;)V
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$400(Lcom/sec/android/gallery3d/app/CropImage;Landroid/app/Dialog;)V
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
@@ -164,12 +154,10 @@
 
     check-cast v1, Landroid/graphics/Bitmap;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->onBitmapAvailable(Landroid/graphics/Bitmap;)V
     invoke-static {v2, v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$800(Lcom/sec/android/gallery3d/app/CropImage;Landroid/graphics/Bitmap;)V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mActionBarButtons:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$600(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/view/View;
 
     move-result-object v1
@@ -182,7 +170,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mUseRightAlignedActionbar:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$700(Lcom/sec/android/gallery3d/app/CropImage;)Z
 
     move-result v1
@@ -191,7 +178,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mActionBarButtons:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$600(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/view/View;
 
     move-result-object v1
@@ -210,12 +196,10 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$300(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/app/ProgressDialog;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->dismissDialog(Landroid/app/Dialog;)V
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$400(Lcom/sec/android/gallery3d/app/CropImage;Landroid/app/Dialog;)V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
@@ -245,12 +229,10 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$300(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/app/ProgressDialog;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->dismissDialog(Landroid/app/Dialog;)V
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$400(Lcom/sec/android/gallery3d/app/CropImage;Landroid/app/Dialog;)V
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -261,7 +243,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mSrcUri:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$900(Lcom/sec/android/gallery3d/app/CropImage;)Ljava/lang/String;
 
     move-result-object v2
@@ -291,12 +272,10 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$300(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/app/ProgressDialog;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->dismissDialog(Landroid/app/Dialog;)V
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$400(Lcom/sec/android/gallery3d/app/CropImage;Landroid/app/Dialog;)V
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -307,7 +286,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mSrcUri:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$900(Lcom/sec/android/gallery3d/app/CropImage;)Ljava/lang/String;
 
     move-result-object v2
@@ -331,12 +309,10 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mLoadBitmapTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$1000(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->cancelTaskAndDismissProgressDialog(Lcom/sec/android/gallery3d/util/Future;)V
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$1100(Lcom/sec/android/gallery3d/app/CropImage;Lcom/sec/android/gallery3d/util/Future;)V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
@@ -376,12 +352,10 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mLoadTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$1200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->cancelTaskAndDismissProgressDialog(Lcom/sec/android/gallery3d/util/Future;)V
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$1100(Lcom/sec/android/gallery3d/app/CropImage;Lcom/sec/android/gallery3d/util/Future;)V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
@@ -421,12 +395,10 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$300(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/app/ProgressDialog;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->dismissDialog(Landroid/app/Dialog;)V
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$400(Lcom/sec/android/gallery3d/app/CropImage;Landroid/app/Dialog;)V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
@@ -442,14 +414,12 @@
     :sswitch_8
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mIsActive:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$1300(Lcom/sec/android/gallery3d/app/CropImage;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->USE_MULTIWINDOW:Z
     invoke-static {}, Lcom/sec/android/gallery3d/app/CropImage;->access$1400()Z
 
     move-result v1
@@ -492,12 +462,10 @@
     :cond_4
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->forceResume()V
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$1500(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # setter for: Lcom/sec/android/gallery3d/app/CropImage;->mUpdateBackscreenInPauseState:Z
     invoke-static {v1, v3}, Lcom/sec/android/gallery3d/app/CropImage;->access$1602(Lcom/sec/android/gallery3d/app/CropImage;Z)Z
 
     const/4 v1, 0x6
@@ -511,7 +479,6 @@
     :sswitch_9
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mUpdateBackscreenInPauseState:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$1600(Lcom/sec/android/gallery3d/app/CropImage;)Z
 
     move-result v1
@@ -520,7 +487,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->forcePause()V
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$1700(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     goto/16 :goto_0
@@ -528,7 +494,6 @@
     :sswitch_a
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # setter for: Lcom/sec/android/gallery3d/app/CropImage;->mNeedUpdateBackscreenInPauseState:Z
     invoke-static {v1, v3}, Lcom/sec/android/gallery3d/app/CropImage;->access$1802(Lcom/sec/android/gallery3d/app/CropImage;Z)Z
 
     goto/16 :goto_0
@@ -568,7 +533,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->updateInPauseStateForTabletMWSwitch()V
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$1900(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     goto/16 :goto_0
@@ -576,7 +540,6 @@
     :cond_5
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$3;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->updateInPauseStateDelayed()V
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$2000(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     goto/16 :goto_0

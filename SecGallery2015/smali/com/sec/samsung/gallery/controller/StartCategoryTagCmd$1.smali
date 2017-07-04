@@ -91,7 +91,6 @@
     if-nez v0, :cond_1
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mUseCMH:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$000()Z
 
     move-result v0
@@ -126,7 +125,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

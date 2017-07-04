@@ -54,7 +54,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$10;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->showDeleteDialog()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$2700(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)V
 
     :goto_0
@@ -76,7 +75,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$10;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$1400(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v3
@@ -94,7 +92,6 @@
     :goto_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$10;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v3
@@ -109,12 +106,10 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$10;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->enterSelectionMode()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$1700(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$10;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->updateCountOnActionBar()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$2800(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)V
 
     goto :goto_0

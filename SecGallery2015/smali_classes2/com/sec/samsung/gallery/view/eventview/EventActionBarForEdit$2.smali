@@ -60,7 +60,6 @@
 
     iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit$2;->val$toggleImage:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->setCheckboxState(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;->access$500(Lcom/sec/samsung/gallery/view/eventview/EventActionBarForEdit;Z)V
 
     return-void

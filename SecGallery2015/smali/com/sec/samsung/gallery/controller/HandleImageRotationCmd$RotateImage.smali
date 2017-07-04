@@ -47,7 +47,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$RotateImage;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$100(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v4
@@ -63,7 +62,6 @@
     :try_start_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$RotateImage;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$100(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v4
@@ -86,7 +84,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$RotateImage;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$600(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)Landroid/app/Activity;
 
     move-result-object v4
@@ -99,7 +96,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$RotateImage;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$100(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v5
@@ -110,7 +106,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$RotateImage;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mAngle:I
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$500(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)I
 
     move-result v6
@@ -128,7 +123,6 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->FEATURE_USE_DEVICE_COG:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$700()Z
 
     move-result v4
@@ -153,7 +147,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$RotateImage;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mAngle:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$500(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)I
 
     move-result v4
@@ -169,7 +162,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$RotateImage;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$600(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)Landroid/app/Activity;
 
     move-result-object v4
@@ -183,7 +175,6 @@
     :cond_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$RotateImage;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$600(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)Landroid/app/Activity;
 
     move-result-object v4
@@ -196,7 +187,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$RotateImage;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$100(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v7
@@ -215,14 +205,12 @@
     :try_start_1
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$RotateImage;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$100(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v4
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$RotateImage;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mAngle:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$500(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)I
 
     move-result v5

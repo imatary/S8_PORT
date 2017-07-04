@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoLocationEditActivity$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoLocationEditActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoLocationEditActivity;->zoomButtonHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     invoke-static {v0, p1, p2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoLocationEditActivity;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoLocationEditActivity;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result v0

@@ -55,7 +55,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     move-result-object v9
@@ -64,12 +63,10 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mRemoveCountUpdateMessage:I
     invoke-static {v9, v8}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$102(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;I)I
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mSearchFilterView:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
     move-result-object v8
@@ -78,7 +75,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     move-result-object v8
@@ -90,14 +86,12 @@
     :pswitch_1
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$500(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     move-result-object v8
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mTempKeyword:Ljava/lang/String;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Ljava/lang/String;
 
     move-result-object v9
@@ -106,7 +100,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     move-result-object v8
@@ -119,7 +112,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
 
     move-result-object v8
@@ -135,7 +127,6 @@
     :pswitch_2
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mNoItemView:Landroid/view/View;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$800(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Landroid/view/View;
 
     move-result-object v9
@@ -144,7 +135,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v9
@@ -153,14 +143,12 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->getTagFilterHeight()I
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$1000(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)I
 
     move-result v2
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$1100(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v9
@@ -171,14 +159,12 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->getInputMethodHeight()I
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$1200(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)I
 
     move-result v3
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$1300(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v9
@@ -195,7 +181,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$1400(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v9
@@ -208,7 +193,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mNoItemView:Landroid/view/View;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$1500(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Landroid/view/View;
 
     move-result-object v9
@@ -242,7 +226,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mNoItemView:Landroid/view/View;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$1600(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Landroid/view/View;
 
     move-result-object v9
@@ -261,7 +244,6 @@
     :pswitch_3
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$1700(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     move-result-object v8

@@ -52,7 +52,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$SelectionTask;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->selectAllProcess(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/eventview/EventViewState$SelectionTask;)V
     invoke-static {v1, v0, p0}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$5300(Lcom/sec/samsung/gallery/view/eventview/EventViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/eventview/EventViewState$SelectionTask;)V
 
     const/4 v1, 0x0

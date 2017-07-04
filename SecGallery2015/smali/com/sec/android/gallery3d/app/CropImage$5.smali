@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/gallery3d/app/CropImage;->initCustomMenuItem(Landroid/view/MenuItem;)Landroid/view/View;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/sec/android/gallery3d/app/CropImage;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,12 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-.field final synthetic val$menuItem:Landroid/view/MenuItem;
-
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/gallery3d/app/CropImage;Landroid/view/MenuItem;)V
+.method constructor <init>(Lcom/sec/android/gallery3d/app/CropImage;)V
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/gallery3d/app/CropImage$5;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    iput-object p2, p0, Lcom/sec/android/gallery3d/app/CropImage$5;->val$menuItem:Landroid/view/MenuItem;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,9 +49,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$5;->val$menuItem:Landroid/view/MenuItem;
-
-    invoke-interface {v0}, Landroid/view/MenuItem;->getItemId()I
+    invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
@@ -67,16 +61,14 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$5;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->handleCancelButton()V
-    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2300(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2400(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     goto :goto_0
 
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$5;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->handleSaveButton()V
-    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2200(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2300(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     goto :goto_0
 

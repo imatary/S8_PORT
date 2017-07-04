@@ -58,12 +58,10 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$5;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsTouchOutside:Z
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$002(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$5;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsCancel:Z
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$302(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V

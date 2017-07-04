@@ -115,7 +115,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;)Landroid/content/Context;
 
     move-result-object v0

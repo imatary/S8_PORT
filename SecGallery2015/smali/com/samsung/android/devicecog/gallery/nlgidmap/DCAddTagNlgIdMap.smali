@@ -79,7 +79,7 @@
 
     const-string/jumbo v1, "PicturesView"
 
-    const v2, 0x7f0a06e1
+    const v2, 0x7f0a06e7
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -91,7 +91,7 @@
 
     const-string/jumbo v1, "AlbumThumbnailView"
 
-    const v2, 0x7f0a0773
+    const v2, 0x7f0a0779
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -103,7 +103,7 @@
 
     const-string/jumbo v1, "DetailView"
 
-    const v2, 0x7f0a07cc
+    const v2, 0x7f0a07d1
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -127,7 +127,7 @@
 
     const-string/jumbo v1, "PicturesView"
 
-    const v2, 0x7f0a06e3
+    const v2, 0x7f0a06e9
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -139,7 +139,7 @@
 
     const-string/jumbo v1, "AlbumThumbnailView"
 
-    const v2, 0x7f0a0774
+    const v2, 0x7f0a077a
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -151,7 +151,7 @@
 
     const-string/jumbo v1, "DetailView"
 
-    const v2, 0x7f0a07cb
+    const v2, 0x7f0a07d0
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -175,7 +175,7 @@
 
     const-string/jumbo v1, "PicturesView"
 
-    const v2, 0x7f0a06e2
+    const v2, 0x7f0a06e8
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -187,7 +187,7 @@
 
     const-string/jumbo v1, "AlbumThumbnailView"
 
-    const v2, 0x7f0a0772
+    const v2, 0x7f0a0778
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -199,7 +199,7 @@
 
     const-string/jumbo v1, "DetailView"
 
-    const v2, 0x7f0a07ca
+    const v2, 0x7f0a07cf
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

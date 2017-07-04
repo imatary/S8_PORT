@@ -3,27 +3,17 @@
 .source "CropImage.java"
 
 # interfaces
-.implements Lcom/sec/android/gallery3d/util/FutureListener;
+.implements Lcom/sec/android/gallery3d/app/MultiWindowModeChangeListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/gallery3d/app/CropImage;->saveCropImageFile()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/sec/android/gallery3d/app/CropImage;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
     name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/sec/android/gallery3d/util/FutureListener",
-        "<",
-        "Landroid/content/Intent;",
-        ">;"
-    }
 .end annotation
 
 
@@ -44,160 +34,45 @@
 
 
 # virtual methods
-.method public onFutureDone(Lcom/sec/android/gallery3d/util/Future;)V
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/sec/android/gallery3d/util/Future",
-            "<",
-            "Landroid/content/Intent;",
-            ">;)V"
-        }
-    .end annotation
+.method public onMultiWindowModeChanged(Z)V
+    .locals 2
 
-    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+    const-string/jumbo v0, "CropImage"
 
-    const/4 v2, 0x0
+    const-string/jumbo v1, "CropImage onMultiWindowModeChanged"
 
-    # setter for: Lcom/sec/android/gallery3d/app/CropImage;->mSaveTask:Lcom/sec/android/gallery3d/util/Future;
-    invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$3102(Lcom/sec/android/gallery3d/app/CropImage;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-interface {p1}, Lcom/sec/android/gallery3d/util/Future;->isCancelled()Z
+    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    move-result v1
+    iget-object v0, v0, Lcom/sec/android/gallery3d/app/CropImage;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
-    if-eqz v1, :cond_0
+    invoke-virtual {v0, p1}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->setMultiWindow(Z)V
 
-    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    invoke-virtual {v1}, Lcom/sec/android/gallery3d/app/CropImage;->finish()V
+    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$1300(Lcom/sec/android/gallery3d/app/CropImage;)Z
 
-    :goto_0
-    return-void
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$3000(Lcom/sec/android/gallery3d/app/CropImage;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/CropImage;->onPause()V
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/CropImage;->onResume()V
 
     :cond_0
-    invoke-interface {p1}, Lcom/sec/android/gallery3d/util/Future;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/content/Intent;
-
-    if-eqz v0, :cond_4
-
-    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->lookUpKeyAfterRecreate:Ljava/lang/String;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$3200(Lcom/sec/android/gallery3d/app/CropImage;)Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_2
-
-    const-string/jumbo v1, "lookupKey"
-
-    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->lookUpKeyAfterRecreate:Ljava/lang/String;
-    invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$3200(Lcom/sec/android/gallery3d/app/CropImage;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    :goto_1
-    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mIsManualFD:Z
-    invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$3400(Lcom/sec/android/gallery3d/app/CropImage;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    invoke-virtual {v1}, Lcom/sec/android/gallery3d/app/CropImage;->getIntent()Landroid/content/Intent;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
-
-    :cond_1
-    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mMainHandler:Landroid/os/Handler;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$2800(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/os/Handler;
-
-    move-result-object v2
-
-    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mMainHandler:Landroid/os/Handler;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$2800(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/os/Handler;
-
-    move-result-object v3
-
-    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mIsSlinkCrop:Z
-    invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$3500(Lcom/sec/android/gallery3d/app/CropImage;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    const/4 v1, 0x5
-
-    :goto_2
-    invoke-virtual {v3, v1, v0}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
-
-    move-result-object v1
-
-    invoke-virtual {v2, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    const-string/jumbo v2, "CROP"
-
-    invoke-static {v1, v2}, Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->insertLog(Landroid/content/Context;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_2
-    const-string/jumbo v1, "lookupKey"
-
-    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->lookupkeytoPass:Ljava/lang/String;
-    invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$3300(Lcom/sec/android/gallery3d/app/CropImage;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    goto :goto_1
-
-    :cond_3
-    const/4 v1, 0x3
-
-    goto :goto_2
-
-    :cond_4
-    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$14;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mMainHandler:Landroid/os/Handler;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$2800(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/os/Handler;
-
-    move-result-object v1
-
-    const/4 v2, 0x4
-
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
-
-    goto :goto_0
+    return-void
 .end method

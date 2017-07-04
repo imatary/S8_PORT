@@ -62,7 +62,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton$4;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->fadeOut()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;)V
 
     goto :goto_0

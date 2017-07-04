@@ -38,7 +38,6 @@
 
     iget v1, p1, Landroid/os/Message;->what:I
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeQuickScrollBar;->handleMessageOnUiThread(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeQuickScrollBar;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeQuickScrollBar;I)V
 
     return-void

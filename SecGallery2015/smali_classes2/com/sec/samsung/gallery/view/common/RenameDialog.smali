@@ -858,7 +858,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog;->mDialogFragment:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mNeedExitSelectionMode:Z
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1502(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;Z)Z
 
     return-void
@@ -869,7 +868,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog;->mDialogFragment:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mIsFileRename:Z
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$3002(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;Z)Z
 
     return-void
@@ -880,7 +878,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog;->mDialogFragment:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mOrgName:Ljava/lang/String;
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1702(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;Ljava/lang/String;)Ljava/lang/String;
 
     return-void

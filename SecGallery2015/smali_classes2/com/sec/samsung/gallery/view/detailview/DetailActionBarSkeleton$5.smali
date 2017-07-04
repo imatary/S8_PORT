@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton$5;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->saveFlippedPhotoAsNew()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->access$400(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;)V
 
     return-void

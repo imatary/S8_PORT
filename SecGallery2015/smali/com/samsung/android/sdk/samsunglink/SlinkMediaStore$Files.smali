@@ -97,7 +97,6 @@
     :catch_0
     move-exception v0
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->access$0()Ljava/lang/String;
 
     move-result-object v1

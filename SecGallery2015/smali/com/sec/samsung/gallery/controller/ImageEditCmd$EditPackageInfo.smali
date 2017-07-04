@@ -76,7 +76,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ImageEditCmd$EditPackageInfo;->this$0:Lcom/sec/samsung/gallery/controller/ImageEditCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ImageEditCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ImageEditCmd;->access$200(Lcom/sec/samsung/gallery/controller/ImageEditCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -101,7 +100,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ImageEditCmd$EditPackageInfo;->this$0:Lcom/sec/samsung/gallery/controller/ImageEditCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ImageEditCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ImageEditCmd;->access$200(Lcom/sec/samsung/gallery/controller/ImageEditCmd;)Landroid/content/Context;
 
     move-result-object v1

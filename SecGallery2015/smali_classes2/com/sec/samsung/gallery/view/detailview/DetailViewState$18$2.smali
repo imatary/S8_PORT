@@ -51,8 +51,7 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$18;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$26000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$26100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
 
@@ -62,8 +61,7 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$18;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mAutoPlayItem:Lcom/sec/android/gallery3d/data/MediaItem;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$26100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$26200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v0
 
@@ -101,8 +99,7 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$18;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mAutoPlayItem:Lcom/sec/android/gallery3d/data/MediaItem;
-    invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$26100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
+    invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$26200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v1
 
@@ -128,7 +125,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$18;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mIsActive:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$12300(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
 
     move-result v0
@@ -147,7 +143,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->handlePlayVideo(ZLandroid/os/Bundle;)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$22000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;ZLandroid/os/Bundle;)V
 
     :cond_0
@@ -155,8 +150,7 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$18;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mAutoPlayItem:Lcom/sec/android/gallery3d/data/MediaItem;
-    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$26102(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;)Lcom/sec/android/gallery3d/data/MediaItem;
+    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$26202(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     const-string/jumbo v0, "DetailViewState"
 

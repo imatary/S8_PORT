@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal$2;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;->access$400(Lcom/sec/samsung/gallery/view/nearbyview/NearbyActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v0

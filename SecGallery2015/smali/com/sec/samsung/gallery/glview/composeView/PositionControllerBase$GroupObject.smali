@@ -222,7 +222,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->getGroupCheckedCanvas()Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v0
@@ -256,7 +255,6 @@
 
     iget-object v4, v4, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->getGroupCheckBoxCanvasList()[Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$2300(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)[Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v4
@@ -272,7 +270,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->getGroupUnCheckedCanvas()Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$2200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v0
@@ -313,7 +310,6 @@
 
     iget-object v4, v4, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->getGroupCheckBoxCanvasList()[Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$2300(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)[Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v4

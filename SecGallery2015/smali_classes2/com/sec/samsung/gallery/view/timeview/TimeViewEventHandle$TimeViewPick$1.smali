@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewPick;->onItemClick(II)V
+    value = Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewPick;->onItemClick(II)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -41,7 +41,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewPick;->mViewEnable:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewPick;->access$702(Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewPick;Z)Z
 
     return-void

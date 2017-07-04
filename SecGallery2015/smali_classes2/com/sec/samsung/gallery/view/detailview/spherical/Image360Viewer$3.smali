@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$3;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->onPlaybackOptionsClosed(Landroid/app/FragmentManager;)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$300(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Landroid/app/FragmentManager;)V
 
     :cond_0

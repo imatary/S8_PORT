@@ -1163,7 +1163,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/data/LibraryDataManager$NotifyBroker;
 
-    # getter for: Lcom/sec/android/gallery3d/data/LibraryDataManager$NotifyBroker;->mNotifiedCount:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/LibraryDataManager$NotifyBroker;->access$200(Lcom/sec/android/gallery3d/data/LibraryDataManager$NotifyBroker;)I
 
     move-result v3
@@ -1182,7 +1181,6 @@
 
     move-result-object v4
 
-    # getter for: Lcom/sec/android/gallery3d/data/LibraryDataManager$NotifyBroker;->mNotifiedCount:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/LibraryDataManager$NotifyBroker;->access$200(Lcom/sec/android/gallery3d/data/LibraryDataManager$NotifyBroker;)I
 
     move-result v5
@@ -1208,7 +1206,6 @@
     :cond_3
     const/4 v3, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/data/LibraryDataManager$NotifyBroker;->mNotifiedCount:I
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/data/LibraryDataManager$NotifyBroker;->access$202(Lcom/sec/android/gallery3d/data/LibraryDataManager$NotifyBroker;I)I
     :try_end_0
     .catch Ljava/util/ConcurrentModificationException; {:try_start_0 .. :try_end_0} :catch_0

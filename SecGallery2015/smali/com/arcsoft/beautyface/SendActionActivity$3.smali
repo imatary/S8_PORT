@@ -50,7 +50,6 @@
     :cond_1
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$3;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mGetResultFromGallery:Lcom/arcsoft/beautyface/GetResultFromGallery;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$400(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/GetResultFromGallery;
 
     move-result-object v0
@@ -59,7 +58,6 @@
 
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$3;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mGetResultFromGallery:Lcom/arcsoft/beautyface/GetResultFromGallery;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$400(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/GetResultFromGallery;
 
     move-result-object v0

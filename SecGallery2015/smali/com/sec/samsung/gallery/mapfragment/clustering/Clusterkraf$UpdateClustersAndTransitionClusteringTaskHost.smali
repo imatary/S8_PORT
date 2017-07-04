@@ -44,7 +44,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$UpdateClustersAndTransitionClusteringTaskHost;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->startClusterTransitionsBuildingTask()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$2200(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)V
 
     return-void

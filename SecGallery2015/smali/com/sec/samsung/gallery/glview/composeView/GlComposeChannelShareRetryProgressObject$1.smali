@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->isDownloadNeeded:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->access$600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;)Z
 
     move-result v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->startShareRetryProgressAnimation()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;)V
 
     :goto_0

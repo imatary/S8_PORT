@@ -68,7 +68,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$38;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mDexThumbnailClickListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$DexThumbnailClickListener;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$7000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$DexThumbnailClickListener;
 
     move-result-object v3
@@ -102,7 +101,6 @@
     :cond_2
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$38;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mDexThumbnailClickListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$DexThumbnailClickListener;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$7000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$DexThumbnailClickListener;
 
     move-result-object v3

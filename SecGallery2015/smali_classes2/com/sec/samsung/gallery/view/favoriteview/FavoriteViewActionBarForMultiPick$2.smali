@@ -41,14 +41,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$2;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$2;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mIsDoneEnabled:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$1000(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Z
 
     move-result v1
@@ -57,14 +55,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$2;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$2;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mIsDoneEnabled:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$1000(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Z
 
     move-result v1

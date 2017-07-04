@@ -44,8 +44,7 @@
 
     move-result v3
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsMovableKeypad:Z
-    invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$18402(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)Z
+    invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$18802(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)Z
 
     new-instance v1, Lcom/sec/samsung/gallery/lib/factory/InputMethodManagerFactory;
 
@@ -53,8 +52,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$32;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$18500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$18900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
 
@@ -68,8 +66,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$32;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$18700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
 
@@ -77,8 +74,7 @@
 
     move-result v3
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsInputMethodShown:Z
-    invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$18602(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)Z
+    invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19002(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)Z
 
     return-void
 .end method

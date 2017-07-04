@@ -68,7 +68,6 @@
 
     iget-object v5, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/DeleteMemberFromAllGroupsTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/DeleteMemberFromAllGroupsTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/DeleteMemberFromAllGroupsTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/DeleteMemberFromAllGroupsListener;
     invoke-static {v5}, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/DeleteMemberFromAllGroupsTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/DeleteMemberFromAllGroupsTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/DeleteMemberFromAllGroupsListener;
 
     move-result-object v5
@@ -136,7 +135,6 @@
 
     iget-object v5, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/DeleteMemberFromAllGroupsTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/DeleteMemberFromAllGroupsTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/DeleteMemberFromAllGroupsTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/DeleteMemberFromAllGroupsListener;
     invoke-static {v5}, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/DeleteMemberFromAllGroupsTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/DeleteMemberFromAllGroupsTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/DeleteMemberFromAllGroupsListener;
 
     move-result-object v5

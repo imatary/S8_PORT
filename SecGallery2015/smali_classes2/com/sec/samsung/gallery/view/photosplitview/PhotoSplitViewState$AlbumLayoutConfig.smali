@@ -50,14 +50,12 @@
 
     iput-boolean v2, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$AlbumLayoutConfig;->mIsCardTypeView:Z
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mSplitRatioLand:F
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$3300(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)F
 
     move-result v0
 
     iput v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$AlbumLayoutConfig;->mLandRatio:F
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->mSplitRatioPort:F
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$3400(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;)F
 
     move-result v0

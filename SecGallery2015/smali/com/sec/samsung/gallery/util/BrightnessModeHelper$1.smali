@@ -61,7 +61,6 @@
 
     iget v3, p0, Lcom/sec/samsung/gallery/util/BrightnessModeHelper$1;->val$brightness:I
 
-    # invokes: Lcom/sec/samsung/gallery/util/BrightnessModeHelper;->setClearViewBrightnessMode(Landroid/content/Context;ZZI)V
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/util/BrightnessModeHelper;->access$000(Landroid/content/Context;ZZI)V
 
     return-void

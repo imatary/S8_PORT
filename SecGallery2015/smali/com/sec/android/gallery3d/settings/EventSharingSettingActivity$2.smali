@@ -45,14 +45,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$2;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mSwitchView:Landroid/widget/Switch;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$000(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)Landroid/widget/Switch;
 
     move-result-object v1
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$2;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mUseService:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$200(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)Z
 
     move-result v0

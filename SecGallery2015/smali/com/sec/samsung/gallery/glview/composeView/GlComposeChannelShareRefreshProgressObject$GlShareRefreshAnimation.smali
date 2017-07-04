@@ -44,19 +44,16 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject$GlShareRefreshAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;->mProgressBarView:Lcom/sec/android/gallery3d/glcore/GlView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;)Lcom/sec/android/gallery3d/glcore/GlView;
 
     move-result-object v1
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;->updateShareRefreshProgress(Lcom/sec/android/gallery3d/glcore/GlView;F)V
     invoke-static {v0, v1, p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;Lcom/sec/android/gallery3d/glcore/GlView;F)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject$GlShareRefreshAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject$GlShareRefreshAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;->mProgressBarView:Lcom/sec/android/gallery3d/glcore/GlView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRefreshProgressObject;)Lcom/sec/android/gallery3d/glcore/GlView;
 
     move-result-object v1

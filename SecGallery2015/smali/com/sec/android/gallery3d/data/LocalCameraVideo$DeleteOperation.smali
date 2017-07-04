@@ -49,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/LocalCameraVideo$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/LocalCameraVideo;
 
-    # setter for: Lcom/sec/android/gallery3d/data/LocalCameraVideo;->mIsDeleted:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/data/LocalCameraVideo;->access$102(Lcom/sec/android/gallery3d/data/LocalCameraVideo;Z)Z
 
     return v1

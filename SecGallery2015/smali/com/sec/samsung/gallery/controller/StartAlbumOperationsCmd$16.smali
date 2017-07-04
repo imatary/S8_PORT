@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$16;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mDialog:Landroid/app/AlertDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$2100(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Landroid/app/AlertDialog;
 
     move-result-object v1
@@ -50,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$16;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsSecretBox:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$2200(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Z
 
     move-result v1
@@ -59,7 +57,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$16;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mDialog:Landroid/app/AlertDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$2100(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Landroid/app/AlertDialog;
 
     move-result-object v1
@@ -68,19 +65,16 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$16;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsSecretBox:Z
     invoke-static {v1, v3}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$2202(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$16;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mDialog:Landroid/app/AlertDialog;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$2102(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$16;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mContext:Ljava/lang/ref/WeakReference;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$800(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Ljava/lang/ref/WeakReference;
 
     move-result-object v1
@@ -100,7 +94,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$16;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$600(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v1

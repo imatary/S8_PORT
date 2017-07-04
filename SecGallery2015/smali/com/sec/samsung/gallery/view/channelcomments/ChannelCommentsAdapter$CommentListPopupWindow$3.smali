@@ -47,7 +47,6 @@
 
     iget v1, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter$CommentListPopupWindow$3;->val$position:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;->removeData(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;->access$200(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsAdapter;I)V
 
     return-void

@@ -41,7 +41,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick$1;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;
 
-    # invokes: Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;->checkUseNoItemCustomView()Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;->access$000(Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;)Z
 
     move-result v2
@@ -54,7 +53,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick$1;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;->access$100(Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -77,7 +75,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick$1;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;->access$200(Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;)Landroid/app/ActionBar;
 
     move-result-object v2
@@ -87,7 +84,6 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick$1;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;->access$300(Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;)Landroid/app/ActionBar;
 
     move-result-object v2
@@ -98,7 +94,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick$1;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;->access$400(Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForPick;)Landroid/app/ActionBar;
 
     move-result-object v2

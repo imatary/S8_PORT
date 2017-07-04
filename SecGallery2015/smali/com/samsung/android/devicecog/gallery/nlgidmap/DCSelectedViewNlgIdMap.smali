@@ -21,7 +21,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    const v3, 0x7f0a0758
+    const v3, 0x7f0a075e
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -63,7 +63,7 @@
 
     const-string/jumbo v1, "AlbumListPicker"
 
-    const v2, 0x7f0a079a
+    const v2, 0x7f0a07a0
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -75,7 +75,7 @@
 
     const-string/jumbo v1, "StoryListEmptySelectedView"
 
-    const v2, 0x7f0a0786
+    const v2, 0x7f0a078c
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

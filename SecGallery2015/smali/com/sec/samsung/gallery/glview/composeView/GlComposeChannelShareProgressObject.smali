@@ -116,7 +116,6 @@
 
     const/4 v1, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -143,21 +142,18 @@
 
     iput v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mPaddingNavigationBarRight:F
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;)Landroid/content/Context;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mContext:Landroid/content/Context;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;->mExpanded:Z
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mExpanded:Z
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;->mCancelGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v0
@@ -260,7 +256,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b07f7
+    const v5, 0x7f0b07f8
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -507,7 +503,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f0b07f6
+    const v23, 0x7f0b07f7
 
     invoke-virtual/range {v22 .. v23}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1176,7 +1172,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f02035c
+    const v23, 0x7f02035e
 
     invoke-virtual/range {v22 .. v23}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1212,7 +1208,7 @@
 
     move-object/from16 v23, v0
 
-    const v24, 0x7f0b07f5
+    const v24, 0x7f0b07f6
 
     invoke-virtual/range {v23 .. v24}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1385,13 +1381,9 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    check-cast v0, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    move-result-object v0
-
-    const v1, 0x7f0b0240
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-static {v0}, Lcom/sec/android/gallery3d/util/GalleryUtils;->getNavigationBarMargin(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)I
 
     move-result v0
 
@@ -1430,13 +1422,9 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    check-cast v0, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    move-result-object v0
-
-    const v1, 0x7f0b0240
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-static {v0}, Lcom/sec/android/gallery3d/util/GalleryUtils;->getNavigationBarMargin(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)I
 
     move-result v0
 
@@ -1477,7 +1465,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b07f7
+    const v2, 0x7f0b07f8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1676,7 +1664,7 @@
     :goto_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f0b07f5
+    const v4, 0x7f0b07f6
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1722,7 +1710,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b04d7
+    const v5, 0x7f0b04d8
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1734,7 +1722,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f0b04d8
+    const v4, 0x7f0b04d9
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1839,7 +1827,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f02038e
+    const v3, 0x7f020390
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1914,7 +1902,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f02038d
+    const v3, 0x7f02038f
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2161,7 +2149,7 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v8, 0x7f0b07f6
+    const v8, 0x7f0b07f7
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

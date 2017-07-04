@@ -337,7 +337,7 @@
     goto :goto_2
 
     :cond_5
-    const v5, 0x7f0202ce
+    const v5, 0x7f0202d0
 
     invoke-virtual {v0, v5}, Landroid/view/View;->setBackgroundResource(I)V
 

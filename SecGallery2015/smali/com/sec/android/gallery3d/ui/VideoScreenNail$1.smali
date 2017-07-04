@@ -65,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail$1;->this$0:Lcom/sec/android/gallery3d/ui/VideoScreenNail;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mListener:Lcom/sec/android/gallery3d/ui/VideoScreenNail$Listener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->access$000(Lcom/sec/android/gallery3d/ui/VideoScreenNail;)Lcom/sec/android/gallery3d/ui/VideoScreenNail$Listener;
 
     move-result-object v0

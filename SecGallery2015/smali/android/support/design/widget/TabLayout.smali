@@ -1116,7 +1116,6 @@
 .method public addTab(Landroid/support/design/widget/TabLayout$Tab;Z)V
     .locals 2
 
-    # getter for: Landroid/support/design/widget/TabLayout$Tab;->mParent:Landroid/support/design/widget/TabLayout;
     invoke-static {p1}, Landroid/support/design/widget/TabLayout$Tab;->access$000(Landroid/support/design/widget/TabLayout$Tab;)Landroid/support/design/widget/TabLayout;
 
     move-result-object v0

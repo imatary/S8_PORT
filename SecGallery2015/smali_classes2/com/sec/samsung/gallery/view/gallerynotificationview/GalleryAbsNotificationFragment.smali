@@ -151,7 +151,7 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryAbsNotificationFragment;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v6, 0x7f0202e7
+    const v6, 0x7f0202e9
 
     invoke-static {v5, v6}, Landroid/support/v4/content/ContextCompat;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
@@ -181,7 +181,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryAbsNotificationFragment;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v5, 0x7f0b08ab
+    const v5, 0x7f0b08ac
 
     invoke-static {v4, v3, v5}, Lcom/sec/android/gallery3d/util/GalleryUtils;->checkMaxFontSize(Landroid/content/Context;Landroid/widget/TextView;I)V
 
@@ -592,7 +592,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b04f2
+    const v3, 0x7f0b04f3
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

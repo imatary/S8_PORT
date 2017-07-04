@@ -29,7 +29,7 @@
 
     invoke-direct {p0}, Landroid/util/SparseArray;-><init>()V
 
-    const v0, 0x7f120289
+    const v0, 0x7f120288
 
     const-string/jumbo v1, "4716"
 
@@ -59,13 +59,13 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil$1;->put(ILjava/lang/Object;)V
 
-    const v0, 0x7f12027d
+    const v0, 0x7f12027c
 
     const-string/jumbo v1, "1040"
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil$1;->put(ILjava/lang/Object;)V
 
-    const v0, 0x7f12027e
+    const v0, 0x7f12027d
 
     const-string/jumbo v1, "1041"
 

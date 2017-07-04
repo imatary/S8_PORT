@@ -138,7 +138,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$100(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/SlotView;
 
     move-result-object v0
@@ -151,7 +150,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$100(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/SlotView;
 
     move-result-object v0
@@ -166,7 +164,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLeftStart:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1800(Lcom/sec/android/gallery3d/ui/FilmStripView;)I
 
     move-result v1
@@ -181,7 +178,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLeftStart:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1800(Lcom/sec/android/gallery3d/ui/FilmStripView;)I
 
     move-result v3
@@ -264,7 +260,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mAlbumDataAdapter:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1700(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
     move-result-object v4
@@ -287,7 +282,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$100(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/SlotView;
 
     move-result-object v4
@@ -300,7 +294,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$100(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/SlotView;
 
     move-result-object v4
@@ -315,7 +308,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLeftStart:I
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1800(Lcom/sec/android/gallery3d/ui/FilmStripView;)I
 
     move-result v5
@@ -334,7 +326,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mTopMargin:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1900(Lcom/sec/android/gallery3d/ui/FilmStripView;)I
 
     move-result v6
@@ -347,7 +338,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLeftStart:I
     invoke-static {v7}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1800(Lcom/sec/android/gallery3d/ui/FilmStripView;)I
 
     move-result v7
@@ -366,7 +356,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mTopMargin:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1900(Lcom/sec/android/gallery3d/ui/FilmStripView;)I
 
     move-result v8
@@ -380,7 +369,6 @@
     :cond_0
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$2000(Lcom/sec/android/gallery3d/ui/FilmStripView;)Landroid/content/Context;
 
     move-result-object v4
@@ -393,7 +381,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1600(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v4
@@ -406,7 +393,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1600(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v4
@@ -433,7 +419,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$100(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/SlotView;
 
     move-result-object v3
@@ -444,7 +429,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$100(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/SlotView;
 
     move-result-object v4
@@ -459,7 +443,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$100(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/SlotView;
 
     move-result-object v3
@@ -477,7 +460,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$5;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1600(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v3

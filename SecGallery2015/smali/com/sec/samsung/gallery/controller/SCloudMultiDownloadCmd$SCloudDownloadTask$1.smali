@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd$SCloudDownloadTask$1;->this$0:Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd$SCloudDownloadTask;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd$SCloudDownloadTask;->hideDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd$SCloudDownloadTask;->access$200(Lcom/sec/samsung/gallery/controller/SCloudMultiDownloadCmd$SCloudDownloadTask;)V
 
     return-void

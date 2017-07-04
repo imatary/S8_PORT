@@ -171,9 +171,9 @@
 
     const/4 v12, 0x0
 
-    const v11, 0x7f0b06c3
+    const v11, 0x7f0b06c4
 
-    const v10, 0x7f0b06c2
+    const v10, 0x7f0b06c3
 
     const/4 v9, 0x0
 
@@ -435,7 +435,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTags;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a07cb
+    const v3, 0x7f0a07d0
 
     new-array v4, v7, [Ljava/lang/Object;
 

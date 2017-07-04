@@ -101,7 +101,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;->mContext:Landroid/content/Context;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;->access$000(Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;)Landroid/content/Context;
 
     move-result-object v6
@@ -114,7 +113,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;->mGalleryFacade:Lorg/puremvc/java/multicore/patterns/facade/Facade;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;->access$100(Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;)Lorg/puremvc/java/multicore/patterns/facade/Facade;
 
     move-result-object v5

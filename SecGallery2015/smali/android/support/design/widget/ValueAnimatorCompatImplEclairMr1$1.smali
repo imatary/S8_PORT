@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Landroid/support/design/widget/ValueAnimatorCompatImplEclairMr1$1;->this$0:Landroid/support/design/widget/ValueAnimatorCompatImplEclairMr1;
 
-    # invokes: Landroid/support/design/widget/ValueAnimatorCompatImplEclairMr1;->update()V
     invoke-static {v0}, Landroid/support/design/widget/ValueAnimatorCompatImplEclairMr1;->access$000(Landroid/support/design/widget/ValueAnimatorCompatImplEclairMr1;)V
 
     return-void

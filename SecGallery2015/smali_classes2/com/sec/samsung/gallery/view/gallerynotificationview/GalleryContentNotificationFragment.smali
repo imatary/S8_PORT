@@ -2063,7 +2063,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryContentNotificationFragment;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v5, 0x7f0a07ce
+    const v5, 0x7f0a07d3
 
     new-array v3, v3, [Ljava/lang/Object;
 

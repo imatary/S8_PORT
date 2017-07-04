@@ -1084,7 +1084,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v3, 0x7f0202d7
+    const v3, 0x7f0202d9
 
     invoke-virtual {v2, v3}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1640,7 +1640,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v4, 0x7f0202d7
+    const v4, 0x7f0202d9
 
     invoke-virtual {v3, v4}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1799,7 +1799,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v4, 0x7f0202da
+    const v4, 0x7f0202dc
 
     invoke-virtual {v3, v4}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

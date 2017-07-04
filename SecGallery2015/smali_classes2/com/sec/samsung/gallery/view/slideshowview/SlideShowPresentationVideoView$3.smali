@@ -51,7 +51,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->access$700(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;)Landroid/content/Context;
 
     move-result-object v2
@@ -69,14 +68,12 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->access$700(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;)Landroid/content/Context;
 
     move-result-object v2
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->access$000()Ljava/lang/String;
 
     move-result-object v2
@@ -88,7 +85,6 @@
     goto :goto_0
 
     :pswitch_2
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->access$000()Ljava/lang/String;
 
     move-result-object v2
@@ -101,7 +97,6 @@
 
     const/4 v3, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->stopVideoPlay(Z)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->access$600(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;Z)V
 
     goto :goto_0
@@ -109,7 +104,6 @@
     :pswitch_3
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->access$100(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;)Landroid/media/MediaPlayer;
 
     move-result-object v2
@@ -118,7 +112,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView$3;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;->access$100(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowPresentationVideoView;)Landroid/media/MediaPlayer;
 
     move-result-object v2

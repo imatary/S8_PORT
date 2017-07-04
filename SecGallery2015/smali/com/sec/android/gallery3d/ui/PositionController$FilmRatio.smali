@@ -74,7 +74,6 @@
     return v0
 
     :cond_0
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->ANIM_TIME:[I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/PositionController;->access$2100()[I
 
     move-result-object v0

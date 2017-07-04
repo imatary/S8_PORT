@@ -48,12 +48,10 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/MoreActionsDialog$1;->this$0:Lcom/sec/samsung/gallery/controller/MoreActionsDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoreActionsDialog;->mBottomAdapter:Lcom/sec/samsung/gallery/controller/MoreActionsDialog$BottomPanelAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/MoreActionsDialog;->access$000(Lcom/sec/samsung/gallery/controller/MoreActionsDialog;)Lcom/sec/samsung/gallery/controller/MoreActionsDialog$BottomPanelAdapter;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/samsung/gallery/controller/MoreActionsDialog$BottomPanelAdapter;->getItemActionId(I)I
     invoke-static {v2, p3}, Lcom/sec/samsung/gallery/controller/MoreActionsDialog$BottomPanelAdapter;->access$100(Lcom/sec/samsung/gallery/controller/MoreActionsDialog$BottomPanelAdapter;I)I
 
     move-result v2
@@ -78,7 +76,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/MoreActionsDialog$1;->this$0:Lcom/sec/samsung/gallery/controller/MoreActionsDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoreActionsDialog;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/MoreActionsDialog;->access$200(Lcom/sec/samsung/gallery/controller/MoreActionsDialog;)Landroid/content/Context;
 
     move-result-object v2
@@ -114,7 +111,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/MoreActionsDialog$1;->this$0:Lcom/sec/samsung/gallery/controller/MoreActionsDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoreActionsDialog;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/MoreActionsDialog;->access$200(Lcom/sec/samsung/gallery/controller/MoreActionsDialog;)Landroid/content/Context;
 
     move-result-object v3
@@ -131,7 +127,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/MoreActionsDialog$1;->this$0:Lcom/sec/samsung/gallery/controller/MoreActionsDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoreActionsDialog;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/MoreActionsDialog;->access$200(Lcom/sec/samsung/gallery/controller/MoreActionsDialog;)Landroid/content/Context;
 
     move-result-object v2

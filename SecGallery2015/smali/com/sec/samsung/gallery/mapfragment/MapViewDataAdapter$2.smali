@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/MapViewDataAdapter$2;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewDataAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapViewDataAdapter;->mMapReloadTask:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/MapViewDataAdapter;->access$000(Lcom/sec/samsung/gallery/mapfragment/MapViewDataAdapter;)Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
 
     move-result-object v0

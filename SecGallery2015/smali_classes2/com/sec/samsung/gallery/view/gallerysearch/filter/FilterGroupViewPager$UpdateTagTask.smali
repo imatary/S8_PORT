@@ -163,7 +163,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$UpdateTagTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->mTagCollector:Lcom/sec/samsung/gallery/view/gallerysearch/filter/AbstractFilterTagCollector;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;)Lcom/sec/samsung/gallery/view/gallerysearch/filter/AbstractFilterTagCollector;
 
     move-result-object v0
@@ -172,7 +171,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$UpdateTagTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;)Landroid/os/Handler;
 
     move-result-object v0

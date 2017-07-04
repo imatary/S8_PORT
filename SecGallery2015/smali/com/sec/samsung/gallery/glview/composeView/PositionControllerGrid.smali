@@ -488,7 +488,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
 
-    const v4, 0x7f0b06be
+    const v4, 0x7f0b06bf
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2698,7 +2698,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b08e1
+    const v1, 0x7f0b08e2
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -2743,7 +2743,7 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b08e0
+    const v1, 0x7f0b08e1
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -6088,6 +6088,14 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
+    if-nez v7, :cond_0
+
+    :goto_0
+    return-void
+
+    :cond_0
+    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
     iget-object v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mContext:Landroid/content/Context;
 
     check-cast v7, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -6108,7 +6116,7 @@
 
     iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mIsSearchView:Z
 
-    if-eqz v7, :cond_a
+    if-eqz v7, :cond_b
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
@@ -6120,9 +6128,9 @@
 
     iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mUseSearchFaceObj:Z
 
-    if-eqz v7, :cond_9
+    if-eqz v7, :cond_a
 
-    if-eqz v6, :cond_9
+    if-eqz v6, :cond_a
 
     invoke-virtual {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;->resetLayout()V
 
@@ -6132,7 +6140,7 @@
 
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginTopForExtraObject:F
 
-    :goto_0
+    :goto_1
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     iget-object v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mContext:Landroid/content/Context;
@@ -6147,23 +6155,6 @@
 
     iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mIsSearchView:Z
 
-    if-eqz v7, :cond_b
-
-    sget-boolean v7, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->IsVisualSearch:Z
-
-    if-nez v7, :cond_b
-
-    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
-
-    iget v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mExtraMarginLeft:I
-
-    :goto_1
-    iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginLeftPixel:I
-
-    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
-
-    iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mIsSearchView:Z
-
     if-eqz v7, :cond_c
 
     sget-boolean v7, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->IsVisualSearch:Z
@@ -6172,9 +6163,26 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
 
-    iget v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mExtraMarginRight:I
+    iget v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mExtraMarginLeft:I
 
     :goto_2
+    iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginLeftPixel:I
+
+    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
+
+    iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mIsSearchView:Z
+
+    if-eqz v7, :cond_d
+
+    sget-boolean v7, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->IsVisualSearch:Z
+
+    if-nez v7, :cond_d
+
+    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
+
+    iget v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mExtraMarginRight:I
+
+    :goto_3
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginRightPixel:I
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
@@ -6209,34 +6217,34 @@
 
     iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mIsSearchView:Z
 
-    if-eqz v7, :cond_d
+    if-eqz v7, :cond_e
 
     sget-boolean v7, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->IsVisualSearch:Z
 
-    if-nez v7, :cond_d
+    if-nez v7, :cond_e
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
 
     iget v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mExtraMarginBottom:I
 
-    :goto_3
+    :goto_4
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginBottomPixel:I
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
 
     iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mUseTimeLineSplit:Z
 
-    if-eqz v7, :cond_1
+    if-eqz v7, :cond_2
 
     sget-boolean v7, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->IS_LOCALE_RTL_MODE:Z
 
-    if-eqz v7, :cond_f
+    if-eqz v7, :cond_10
 
-    if-nez v3, :cond_0
+    if-nez v3, :cond_1
 
-    if-eqz v2, :cond_e
+    if-eqz v2, :cond_f
 
-    :cond_0
+    :cond_1
     iget v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginRightPixel:I
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
@@ -6249,72 +6257,25 @@
 
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginRightPixel:I
 
-    :cond_1
-    :goto_4
+    :cond_2
+    :goto_5
     sget-object v7, Lcom/sec/samsung/gallery/features/FeatureNames;->UseCMH:Lcom/sec/samsung/gallery/features/FeatureNames;
 
     invoke-static {v7}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_2
+    if-eqz v7, :cond_3
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
 
     iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mIsSearchView:Z
 
-    if-eqz v7, :cond_2
+    if-eqz v7, :cond_3
 
     sget-boolean v7, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->IsVisualSearch:Z
 
-    if-nez v7, :cond_2
-
-    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
-
-    invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
-
-    move-result v7
-
-    iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mTitleHeightPixel:I
-
-    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
-
-    const v9, 0x7f0b0206
-
-    invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
-
-    move-result v7
-
-    iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mTitleTextMarginTopPixel:I
-
-    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
-
-    invoke-virtual {v7, v13}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
-
-    move-result v7
-
-    iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mTitleTextMarginBottomPixel:I
-
-    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
-
-    const v9, 0x7f0b0205
-
-    invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
-
-    move-result v7
-
-    iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mTitleTextMarginLeftPixel:I
-
-    :cond_2
-    sget-boolean v7, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->IsTablet:Z
-
-    if-eqz v7, :cond_3
-
-    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
-
-    iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mIsSearchView:Z
-
-    if-eqz v7, :cond_3
+    if-nez v7, :cond_3
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
 
@@ -6353,20 +6314,67 @@
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mTitleTextMarginLeftPixel:I
 
     :cond_3
+    sget-boolean v7, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->IsTablet:Z
+
+    if-eqz v7, :cond_4
+
+    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
+
+    iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mIsSearchView:Z
+
+    if-eqz v7, :cond_4
+
+    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
+
+    invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+
+    move-result v7
+
+    iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mTitleHeightPixel:I
+
+    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
+
+    const v9, 0x7f0b0206
+
+    invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+
+    move-result v7
+
+    iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mTitleTextMarginTopPixel:I
+
+    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
+
+    invoke-virtual {v7, v13}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+
+    move-result v7
+
+    iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mTitleTextMarginBottomPixel:I
+
+    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
+
+    const v9, 0x7f0b0205
+
+    invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+
+    move-result v7
+
+    iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mTitleTextMarginLeftPixel:I
+
+    :cond_4
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
 
     iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mUseTimeLineSplit:Z
 
-    if-eqz v7, :cond_5
+    if-eqz v7, :cond_6
 
-    if-nez v3, :cond_4
+    if-nez v3, :cond_5
 
-    if-eqz v2, :cond_12
+    if-eqz v2, :cond_13
 
-    :cond_4
+    :cond_5
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
 
-    const v9, 0x7f0b08e1
+    const v9, 0x7f0b08e2
 
     invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -6382,8 +6390,8 @@
 
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mTitleTextMarginLeftPixel:I
 
-    :cond_5
-    :goto_5
+    :cond_6
+    :goto_6
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     iget-object v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mContext:Landroid/content/Context;
@@ -6398,16 +6406,16 @@
 
     iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mIsSearchView:Z
 
-    if-eqz v7, :cond_6
+    if-eqz v7, :cond_7
 
     sget-boolean v7, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->IsVisualSearch:Z
 
-    if-eqz v7, :cond_7
-
-    :cond_6
-    iput v8, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginBottomPixel:I
+    if-eqz v7, :cond_8
 
     :cond_7
+    iput v8, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginBottomPixel:I
+
+    :cond_8
     const/4 v4, 0x0
 
     :try_start_0
@@ -6431,14 +6439,14 @@
 
     move-result v7
 
-    if-nez v7, :cond_13
+    if-nez v7, :cond_14
 
     const/4 v4, 0x1
 
-    :goto_6
-    if-eqz v2, :cond_8
+    :goto_7
+    if-eqz v2, :cond_9
 
-    if-eqz v4, :cond_8
+    if-eqz v4, :cond_9
 
     iget v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginTopPixel:I
 
@@ -6450,7 +6458,7 @@
 
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginTopPixel:I
 
-    :cond_8
+    :cond_9
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     iget v7, v7, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mWidth:I
@@ -6523,35 +6531,24 @@
 
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mItemH:F
 
-    return-void
+    goto/16 :goto_0
 
-    :cond_9
+    :cond_a
     const/4 v7, 0x0
 
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginTopForExtraObject:F
 
-    goto/16 :goto_0
-
-    :cond_a
-    invoke-virtual {p0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->setMarginTopForTipCard()V
-
-    goto/16 :goto_0
+    goto/16 :goto_1
 
     :cond_b
-    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
-
-    const v9, 0x7f0b01db
-
-    invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
-
-    move-result v7
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->setMarginTopForTipCard()V
 
     goto/16 :goto_1
 
     :cond_c
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
 
-    const v9, 0x7f0b01dc
+    const v9, 0x7f0b01db
 
     invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -6562,7 +6559,7 @@
     :cond_d
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
 
-    const v9, 0x7f0b01da
+    const v9, 0x7f0b01dc
 
     invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -6571,6 +6568,17 @@
     goto/16 :goto_3
 
     :cond_e
+    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
+
+    const v9, 0x7f0b01da
+
+    invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+
+    move-result v7
+
+    goto/16 :goto_4
+
+    :cond_f
     iget v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginRightPixel:I
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
@@ -6583,14 +6591,14 @@
 
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginRightPixel:I
 
-    goto/16 :goto_4
-
-    :cond_f
-    if-nez v3, :cond_10
-
-    if-eqz v2, :cond_11
+    goto/16 :goto_5
 
     :cond_10
+    if-nez v3, :cond_11
+
+    if-eqz v2, :cond_12
+
+    :cond_11
     iget v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginLeftPixel:I
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
@@ -6603,9 +6611,9 @@
 
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginLeftPixel:I
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
-    :cond_11
+    :cond_12
     iget v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginLeftPixel:I
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
@@ -6618,12 +6626,12 @@
 
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mMarginLeftPixel:I
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
-    :cond_12
+    :cond_13
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mResource:Landroid/content/res/Resources;
 
-    const v9, 0x7f0b08e1
+    const v9, 0x7f0b08e2
 
     invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -6639,12 +6647,12 @@
 
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerGrid;->mTitleTextMarginLeftPixel:I
 
-    goto/16 :goto_5
+    goto/16 :goto_6
 
-    :cond_13
+    :cond_14
     move v4, v8
 
-    goto/16 :goto_6
+    goto/16 :goto_7
 
     :catch_0
     move-exception v1
@@ -6655,7 +6663,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto/16 :goto_6
+    goto/16 :goto_7
 .end method
 
 .method public resetPosition()V

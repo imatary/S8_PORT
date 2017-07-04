@@ -33,7 +33,6 @@
 
     const-string/jumbo v0, "service off failed"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/internal/EasySignUpInterface;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/internal/EasySignUpInterface;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -48,7 +47,6 @@
 
     const-string/jumbo v0, "service off succeeded"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/internal/EasySignUpInterface;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/internal/EasySignUpInterface;->access$000()Ljava/lang/String;
 
     move-result-object v1

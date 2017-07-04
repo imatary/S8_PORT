@@ -452,7 +452,7 @@
 .method public static updateContactUsMenu(Landroid/view/Menu;)V
     .locals 2
 
-    const v1, 0x7f12027c
+    const v1, 0x7f12027b
 
     sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->SupportContactUs:Lcom/sec/samsung/gallery/features/FeatureNames;
 
@@ -882,7 +882,7 @@
 
     invoke-static {v0, v1, v14}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v30, 0x7f12027f
+    const v30, 0x7f12027e
 
     move-object/from16 v0, p0
 
@@ -902,7 +902,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v30, 0x7f12027d
+    const v30, 0x7f12027c
 
     move-object/from16 v0, p0
 
@@ -910,7 +910,7 @@
 
     invoke-static {v0, v1, v9}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v30, 0x7f12027e
+    const v30, 0x7f12027d
 
     move-object/from16 v0, p0
 
@@ -1055,7 +1055,7 @@
 
     if-eqz v30, :cond_0
 
-    const v30, 0x7f120280
+    const v30, 0x7f12027f
 
     move-object/from16 v0, p0
 
@@ -1065,7 +1065,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v30, 0x7f120281
+    const v30, 0x7f120280
 
     move-object/from16 v0, p0
 
@@ -1419,11 +1419,11 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f12027d
+    const v0, 0x7f12027c
 
     invoke-static {p0, v0, v1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v0, 0x7f12027e
+    const v0, 0x7f12027d
 
     invoke-static {p0, v0, v1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
@@ -1442,7 +1442,7 @@
 
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionForSettings([Z)V
 
-    const v1, 0x7f12027b
+    const v1, 0x7f12027a
 
     const/4 v2, 0x0
 
@@ -1830,13 +1830,13 @@
 
     if-eqz v3, :cond_1
 
-    const v3, 0x7f120282
+    const v3, 0x7f120281
 
     const/4 v4, 0x0
 
     invoke-static {p1, v3, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemShowAsAction(Landroid/view/Menu;II)V
 
-    const v3, 0x7f120282
+    const v3, 0x7f120281
 
     const/4 v4, 0x1
 
@@ -1847,7 +1847,7 @@
     return-void
 
     :cond_1
-    const v3, 0x7f120282
+    const v3, 0x7f120281
 
     invoke-virtual {v0}, Lcom/sec/samsung/gallery/util/KNOXUtil;->isMoveOutKnox1On()Z
 
@@ -1881,12 +1881,12 @@
 
     move-result-object v2
 
-    const v3, 0x7f120283
+    const v3, 0x7f120282
 
     invoke-static {p1, v3, v2}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemTitle(Landroid/view/Menu;ILjava/lang/String;)V
 
     :cond_2
-    const v3, 0x7f120283
+    const v3, 0x7f120282
 
     const/4 v4, 0x1
 
@@ -1895,13 +1895,13 @@
     goto :goto_0
 
     :cond_3
-    const v3, 0x7f120282
+    const v3, 0x7f120281
 
     const/4 v4, 0x0
 
     invoke-static {p1, v3, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v3, 0x7f120283
+    const v3, 0x7f120282
 
     const/4 v4, 0x0
 
@@ -1910,13 +1910,13 @@
     goto :goto_0
 
     :cond_4
-    const v3, 0x7f120282
+    const v3, 0x7f120281
 
     const/4 v4, 0x0
 
     invoke-static {p1, v3, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v3, 0x7f120283
+    const v3, 0x7f120282
 
     const/4 v4, 0x0
 
@@ -2070,13 +2070,13 @@
 
     invoke-static {p1, v3, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v3, 0x7f120282
+    const v3, 0x7f120281
 
     const/4 v4, 0x0
 
     invoke-static {p1, v3, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v3, 0x7f120283
+    const v3, 0x7f120282
 
     const/4 v4, 0x0
 
@@ -2092,9 +2092,9 @@
 
     const/4 v7, 0x1
 
-    const v6, 0x7f120281
+    const v6, 0x7f120280
 
-    const v5, 0x7f120280
+    const v5, 0x7f12027f
 
     const/4 v4, 0x0
 

@@ -28,14 +28,12 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mCloseButton:Landroid/widget/Button;
     invoke-static {}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$000()Landroid/widget/Button;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mCloseButton:Landroid/widget/Button;
     invoke-static {}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$000()Landroid/widget/Button;
 
     move-result-object v0

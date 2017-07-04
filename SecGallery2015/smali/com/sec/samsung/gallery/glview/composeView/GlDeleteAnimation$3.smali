@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;->mMoreAlbumDividerObj:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;->mMoreAlbumDividerObj:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlDeleteAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
     move-result-object v0

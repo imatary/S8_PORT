@@ -122,7 +122,6 @@
 
     iget-boolean v3, p0, Lcom/sec/samsung/gallery/controller/StartMultiContactPickCmd$1;->val$isExcludeMyProfile:Z
 
-    # invokes: Lcom/sec/samsung/gallery/controller/StartMultiContactPickCmd;->startMultipleContactPickActivity(Landroid/content/Context;IZ)V
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/controller/StartMultiContactPickCmd;->access$000(Lcom/sec/samsung/gallery/controller/StartMultiContactPickCmd;Landroid/content/Context;IZ)V
 
     :cond_0

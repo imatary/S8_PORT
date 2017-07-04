@@ -55,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$8;->val$editChildView:Landroid/widget/TextView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->getKeyEventOnFavorite(Landroid/widget/TextView;I)V
     invoke-static {v0, v1, p2}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$1900(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;Landroid/widget/TextView;I)V
 
     :cond_0
@@ -67,7 +66,6 @@
     :sswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$8;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mListener:Lcom/sec/samsung/gallery/view/detailview/FastOptionView$Listener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$1300(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Lcom/sec/samsung/gallery/view/detailview/FastOptionView$Listener;
 
     move-result-object v0

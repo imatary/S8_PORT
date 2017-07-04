@@ -947,7 +947,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f020313
+    const v23, 0x7f020315
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1108,7 +1108,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f0202c8
+    const v23, 0x7f0202ca
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1123,7 +1123,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f020312
+    const v23, 0x7f020314
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1317,7 +1317,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f0202f6
+    const v23, 0x7f0202f8
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1479,7 +1479,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f0202ab
+    const v23, 0x7f0202ad
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1494,7 +1494,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f0202f5
+    const v23, 0x7f0202f7
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1522,7 +1522,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mResource:Landroid/content/res/Resources;
 
-    const v3, 0x7f0b0713
+    const v3, 0x7f0b0714
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1679,7 +1679,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mResource:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b0714
+    const v2, 0x7f0b0715
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2721,7 +2721,7 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mResource:Landroid/content/res/Resources;
 
-    const v7, 0x7f0b0714
+    const v7, 0x7f0b0715
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2740,7 +2740,7 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mResource:Landroid/content/res/Resources;
 
-    const v7, 0x7f0b06be
+    const v7, 0x7f0b06bf
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3705,19 +3705,19 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mResource:Landroid/content/res/Resources;
 
-    if-nez v3, :cond_0
+    if-eqz v3, :cond_0
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     iget-object v3, v3, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v3
-
-    iput-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mResource:Landroid/content/res/Resources;
+    if-nez v3, :cond_1
 
     :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     iget-object v3, v3, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mContext:Landroid/content/Context;
@@ -3736,20 +3736,20 @@
 
     iget-boolean v3, v3, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mIsEasyMode:Z
 
-    if-eqz v3, :cond_1
+    if-eqz v3, :cond_2
 
     const v1, 0x7f0b0049
 
-    :goto_0
+    :goto_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     iget-boolean v3, v3, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mIsEasyMode:Z
 
-    if-eqz v3, :cond_3
+    if-eqz v3, :cond_4
 
     const v2, 0x7f0b004a
 
-    :goto_1
+    :goto_2
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mResource:Landroid/content/res/Resources;
 
     invoke-virtual {v3, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -3882,11 +3882,11 @@
 
     cmpl-float v3, v3, v4
 
-    if-lez v3, :cond_4
+    if-lez v3, :cond_5
 
     iget v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mItemW:F
 
-    :goto_2
+    :goto_3
     iput v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mTitleW:F
 
     iget v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mTitleW:F
@@ -3901,40 +3901,39 @@
 
     sget-boolean v3, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->FeatureUseGraceAlbumViewGUI:Z
 
-    if-eqz v3, :cond_5
+    if-eqz v3, :cond_6
 
     const/4 v3, 0x0
 
     iput v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mAlbumRoundRadius:F
 
-    :goto_3
-    return-void
-
-    :cond_1
-    sget-boolean v3, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->FeatureUseGraceAlbumViewGUI:Z
-
-    if-eqz v3, :cond_2
-
-    const v1, 0x7f0b0334
-
     goto/16 :goto_0
 
     :cond_2
-    const v1, 0x7f0b0058
+    sget-boolean v3, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->FeatureUseGraceAlbumViewGUI:Z
 
-    goto/16 :goto_0
+    if-eqz v3, :cond_3
+
+    const v1, 0x7f0b0334
+
+    goto/16 :goto_1
 
     :cond_3
-    const v2, 0x7f0b005a
+    const v1, 0x7f0b0058
 
     goto/16 :goto_1
 
     :cond_4
-    iget v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mTitleW:F
+    const v2, 0x7f0b005a
 
-    goto :goto_2
+    goto/16 :goto_2
 
     :cond_5
+    iget v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mTitleW:F
+
+    goto :goto_3
+
+    :cond_6
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mResource:Landroid/content/res/Resources;
 
     const v4, 0x7f0b0002
@@ -3953,7 +3952,7 @@
 
     iput v3, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerAlbum;->mAlbumRoundRadius:F
 
-    goto :goto_3
+    goto/16 :goto_0
 .end method
 
 .method public resetPosition()V

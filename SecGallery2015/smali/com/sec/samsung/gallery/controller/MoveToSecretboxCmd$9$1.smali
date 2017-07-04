@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$9$1;->val$dstFile:Ljava/io/File;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->showDialog(Ljava/io/File;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2100(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Ljava/io/File;)V
 
     return-void

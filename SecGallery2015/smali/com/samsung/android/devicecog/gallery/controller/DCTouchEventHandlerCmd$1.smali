@@ -44,7 +44,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/devicecog/gallery/controller/DCTouchEventHandlerCmd$1;->this$0:Lcom/samsung/android/devicecog/gallery/controller/DCTouchEventHandlerCmd;
 
-    # invokes: Lcom/samsung/android/devicecog/gallery/controller/DCTouchEventHandlerCmd;->handleTouchEventState(Ljava/lang/String;)V
     invoke-static {v1, v0}, Lcom/samsung/android/devicecog/gallery/controller/DCTouchEventHandlerCmd;->access$000(Lcom/samsung/android/devicecog/gallery/controller/DCTouchEventHandlerCmd;Ljava/lang/String;)V
 
     :cond_0

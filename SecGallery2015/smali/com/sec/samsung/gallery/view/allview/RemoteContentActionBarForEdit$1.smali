@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;->mMenu:Landroid/view/Menu;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;->access$000(Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;)Landroid/view/Menu;
 
     move-result-object v1
@@ -52,7 +51,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;->access$100(Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -66,7 +64,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;->access$200(Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -86,7 +83,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;->access$300(Lcom/sec/samsung/gallery/view/allview/RemoteContentActionBarForEdit;ILjava/lang/String;)V
 
     return-void

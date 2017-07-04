@@ -72,7 +72,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$4;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->mLoadingListener:Lcom/sec/android/gallery3d/app/LoadingListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$100(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;)Lcom/sec/android/gallery3d/app/LoadingListener;
 
     move-result-object v1

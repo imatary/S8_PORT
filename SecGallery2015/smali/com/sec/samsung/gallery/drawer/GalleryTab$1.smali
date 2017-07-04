@@ -55,7 +55,6 @@
 
     move-result v2
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->updateDynamicTabs(Z)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$000(Lcom/sec/samsung/gallery/drawer/GalleryTab;Z)V
 
     goto :goto_0
@@ -63,7 +62,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$100(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -83,7 +81,6 @@
     :pswitch_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->init()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$200(Lcom/sec/samsung/gallery/drawer/GalleryTab;)V
 
     goto :goto_0
@@ -91,7 +88,6 @@
     :pswitch_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->showTabInner()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$300(Lcom/sec/samsung/gallery/drawer/GalleryTab;)V
 
     goto :goto_0
@@ -99,7 +95,6 @@
     :pswitch_4
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->hideTabInner()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$400(Lcom/sec/samsung/gallery/drawer/GalleryTab;)V
 
     goto :goto_0
@@ -115,7 +110,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->setEnableTabInner(Z)V
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$500(Lcom/sec/samsung/gallery/drawer/GalleryTab;Z)V
 
     goto :goto_0
@@ -123,7 +117,6 @@
     :pswitch_6
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mTabHost:Landroid/widget/TabHost;
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$600(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/widget/TabHost;
 
     move-result-object v2
@@ -143,7 +136,6 @@
     :pswitch_7
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mTabHost:Landroid/widget/TabHost;
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$600(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/widget/TabHost;
 
     move-result-object v1
@@ -156,7 +148,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mTabHost:Landroid/widget/TabHost;
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$600(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/widget/TabHost;
 
     move-result-object v1
@@ -169,7 +160,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mTabHost:Landroid/widget/TabHost;
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$600(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/widget/TabHost;
 
     move-result-object v1
@@ -183,7 +173,6 @@
 
     iget v2, p1, Landroid/os/Message;->arg1:I
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->handleDCSwitchInner(I)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$700(Lcom/sec/samsung/gallery/drawer/GalleryTab;I)V
 
     goto :goto_0
@@ -193,7 +182,6 @@
 
     iget v2, p1, Landroid/os/Message;->arg1:I
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->moveTabInner(I)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$800(Lcom/sec/samsung/gallery/drawer/GalleryTab;I)V
 
     goto/16 :goto_0
@@ -201,7 +189,6 @@
     :pswitch_a
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mTabIndicator:Lcom/sec/samsung/gallery/drawer/GalleryTabIndicator;
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$900(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Lcom/sec/samsung/gallery/drawer/GalleryTabIndicator;
 
     move-result-object v2
@@ -221,12 +208,10 @@
     :pswitch_b
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->refreshTabInner()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1000(Lcom/sec/samsung/gallery/drawer/GalleryTab;)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->refreshLayoutParams()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1100(Lcom/sec/samsung/gallery/drawer/GalleryTab;)V
 
     goto/16 :goto_0
@@ -234,7 +219,6 @@
     :pswitch_c
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$1;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->refreshLayoutParams()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1100(Lcom/sec/samsung/gallery/drawer/GalleryTab;)V
 
     goto/16 :goto_0

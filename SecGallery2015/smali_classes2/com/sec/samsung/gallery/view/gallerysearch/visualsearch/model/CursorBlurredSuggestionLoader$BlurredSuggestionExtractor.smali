@@ -48,7 +48,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader$BlurredSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;)Landroid/content/Context;
 
     move-result-object v3
@@ -65,7 +64,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader$BlurredSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->extractMediaId(Landroid/database/Cursor;)I
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;Landroid/database/Cursor;)I
 
     move-result v3
@@ -76,7 +74,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader$BlurredSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->extractCount(Landroid/database/Cursor;)I
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;Landroid/database/Cursor;)I
 
     move-result v3
@@ -85,7 +82,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader$BlurredSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->mIsFromSuggestion:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;)Z
 
     move-result v3
@@ -107,7 +103,6 @@
     :cond_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader$BlurredSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->mSuggestedKeyword:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;)Ljava/lang/String;
 
     move-result-object v3
@@ -118,7 +113,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader$BlurredSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->extractDataPath(Landroid/database/Cursor;)Ljava/lang/String;
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->access$500(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;Landroid/database/Cursor;)Ljava/lang/String;
 
     move-result-object v3
@@ -133,7 +127,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader$BlurredSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->extractIsCloud(Landroid/database/Cursor;)I
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;Landroid/database/Cursor;)I
 
     move-result v3
@@ -156,7 +149,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader$BlurredSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->extractCloudThumbPath(Landroid/database/Cursor;)Ljava/lang/String;
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;Landroid/database/Cursor;)Ljava/lang/String;
 
     move-result-object v3
@@ -179,7 +171,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader$BlurredSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->extractOrientation(Landroid/database/Cursor;)I
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->access$800(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;Landroid/database/Cursor;)I
 
     move-result v2
@@ -190,7 +181,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader$BlurredSuggestionExtractor;->mCategoryItemCursor:Landroid/database/Cursor;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->extractMediaType(Landroid/database/Cursor;)I
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;Landroid/database/Cursor;)I
 
     move-result v2
@@ -199,7 +189,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader$BlurredSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->mSuggestedKeyword:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorBlurredSuggestionLoader;)Ljava/lang/String;
 
     move-result-object v2

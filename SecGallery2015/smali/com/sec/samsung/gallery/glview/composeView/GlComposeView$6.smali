@@ -43,7 +43,6 @@
 
     const/4 v8, 0x1
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->USE_TAB_UI:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$100()Z
 
     move-result v6
@@ -62,7 +61,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$6;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->isRootLayer()Z
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Z
 
     move-result v6
@@ -88,7 +86,6 @@
     :goto_1
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$6;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mClickable:Z
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Z
 
     move-result v6
@@ -116,7 +113,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$6;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mClickable:Z
     invoke-static {v9}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Z
 
     move-result v9

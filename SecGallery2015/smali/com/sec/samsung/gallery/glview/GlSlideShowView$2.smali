@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/GlSlideShowView$2;->this$0:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlSlideShowView;->mKenBurnEffect:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideShowKenBurn;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/GlSlideShowView;->access$100(Lcom/sec/samsung/gallery/glview/GlSlideShowView;)Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideShowKenBurn;
 
     move-result-object v1
@@ -58,7 +57,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/GlSlideShowView$2;->this$0:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlSlideShowView;->mKenBurnEffect:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideShowKenBurn;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/GlSlideShowView;->access$100(Lcom/sec/samsung/gallery/glview/GlSlideShowView;)Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideShowKenBurn;
 
     move-result-object v0
@@ -67,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/GlSlideShowView$2;->this$0:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlSlideShowView;->mKenBurnEffect:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideShowKenBurn;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/GlSlideShowView;->access$100(Lcom/sec/samsung/gallery/glview/GlSlideShowView;)Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideShowKenBurn;
 
     move-result-object v0
@@ -76,7 +73,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/GlSlideShowView$2;->this$0:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlSlideShowView;->mKenBurnEffect:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideShowKenBurn;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/GlSlideShowView;->access$100(Lcom/sec/samsung/gallery/glview/GlSlideShowView;)Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideShowKenBurn;
 
     move-result-object v0
@@ -85,7 +81,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/GlSlideShowView$2;->this$0:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/GlSlideShowView;->mKenBurnEffect:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideShowKenBurn;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/GlSlideShowView;->access$100(Lcom/sec/samsung/gallery/glview/GlSlideShowView;)Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideShowKenBurn;
 
     move-result-object v0

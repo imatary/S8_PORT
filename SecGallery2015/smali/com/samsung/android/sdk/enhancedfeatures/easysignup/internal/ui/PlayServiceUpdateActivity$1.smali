@@ -41,7 +41,6 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/PlayServiceUpdateActivity;->notifyGCMUpdateResult(Z)V
     invoke-static {v0, v1}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/PlayServiceUpdateActivity;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/PlayServiceUpdateActivity;Z)V
 
     return-void

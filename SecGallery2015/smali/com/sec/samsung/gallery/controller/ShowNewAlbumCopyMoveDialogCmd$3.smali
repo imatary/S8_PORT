@@ -92,7 +92,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -113,7 +112,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -142,7 +140,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -167,7 +164,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -181,7 +177,6 @@
     :cond_2
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -203,7 +198,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -225,7 +219,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -239,7 +232,6 @@
     :cond_5
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -263,7 +255,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -278,7 +269,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -293,7 +283,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mEventType:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)I
 
     move-result v2
@@ -304,7 +293,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mEventType:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)I
 
     move-result v2
@@ -315,7 +303,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mEventType:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)I
 
     move-result v2
@@ -326,7 +313,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mEventType:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)I
 
     move-result v2
@@ -342,13 +328,11 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->val$newAlbumPath:Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mediaScanDirectory(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$800(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;Ljava/lang/String;)V
 
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -405,7 +389,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -437,7 +420,6 @@
     :cond_4
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -476,7 +458,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -502,7 +483,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOperationId:I
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)I
 
     move-result v9
@@ -511,7 +491,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOperationId:I
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)I
 
     move-result v9
@@ -637,7 +616,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v9
@@ -678,7 +656,6 @@
     :cond_6
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOperationId:I
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)I
 
     move-result v9
@@ -720,7 +697,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     move-result-object v5
@@ -729,7 +705,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     move-result-object v5
@@ -762,7 +737,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v5
@@ -859,7 +833,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v5
@@ -870,12 +843,10 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v5, v7}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$002(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;Lcom/sec/samsung/gallery/util/FileUtil;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOnProgressListener:Lcom/sec/android/gallery3d/data/OnProgressListener;
     invoke-static {v5, v7}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/OnProgressListener;)Lcom/sec/android/gallery3d/data/OnProgressListener;
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->exitSelectionMode(Z)V
@@ -884,7 +855,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOperationId:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)I
 
     move-result v5
@@ -893,7 +863,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -912,7 +881,6 @@
     :goto_0
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$600(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     move-result-object v5
@@ -921,7 +889,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$600(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     move-result-object v5
@@ -934,12 +901,10 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v5, v7}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$602(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;Lcom/sec/samsung/gallery/util/MediaOperations;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -953,7 +918,6 @@
     :cond_2
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOperationId:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)I
 
     move-result v5
@@ -962,7 +926,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -982,7 +945,6 @@
     :cond_3
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v5, v7}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$602(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;Lcom/sec/samsung/gallery/util/MediaOperations;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     if-eqz p1, :cond_4
@@ -993,7 +955,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1007,7 +968,6 @@
     :cond_4
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1067,14 +1027,12 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->val$fDstFolderName:Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->updateMoreAlbumDB(Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v5, v6, v7}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v4, ""
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOperationId:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)I
 
     move-result v5
@@ -1103,7 +1061,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1132,7 +1089,6 @@
     :goto_2
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1152,7 +1108,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1182,7 +1137,6 @@
     :cond_8
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1220,7 +1174,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1266,7 +1219,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1304,7 +1256,6 @@
     :cond_b
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1342,7 +1293,6 @@
     :cond_c
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1358,7 +1308,6 @@
     :cond_d
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mOperationId:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)I
 
     move-result v5
@@ -1387,7 +1336,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1425,7 +1373,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1455,7 +1402,6 @@
     :cond_f
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1493,7 +1439,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1539,7 +1484,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1577,7 +1521,6 @@
     :cond_12
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1615,7 +1558,6 @@
     :cond_13
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v5
@@ -1641,7 +1583,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowNewAlbumCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v1

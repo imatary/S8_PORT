@@ -23,14 +23,12 @@
 
     invoke-direct {p0, p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/BaseRequest;-><init>(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/BaseRequest$Builder;)V
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/DeleteMemberFromAllGroupsRequest$Builder;->id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/DeleteMemberFromAllGroupsRequest$Builder;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/DeleteMemberFromAllGroupsRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/DeleteMemberFromAllGroupsRequest;->id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/DeleteMemberFromAllGroupsRequest$Builder;->type:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/DeleteMemberFromAllGroupsRequest$Builder;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/request/DeleteMemberFromAllGroupsRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0

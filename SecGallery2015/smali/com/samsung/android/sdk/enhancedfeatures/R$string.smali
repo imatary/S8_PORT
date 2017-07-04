@@ -37,9 +37,9 @@
 
 .field public static final deregister:I = 0x7f0a010c
 
-.field public static final developer:I = 0x7f0a085f
+.field public static final developer:I = 0x7f0a086d
 
-.field public static final developer_mode:I = 0x7f0a0860
+.field public static final developer_mode:I = 0x7f0a086e
 
 .field public static final dialog_permission_app_desc:I = 0x7f0a011b
 
@@ -59,7 +59,7 @@
 
 .field public static final enter_your_verification_code:I = 0x7f0a016a
 
-.field public static final hello_world:I = 0x7f0a0869
+.field public static final hello_world:I = 0x7f0a0877
 
 .field public static final if_your_registered_for_dnd_service:I = 0x7f0a01fb
 
@@ -67,13 +67,13 @@
 
 .field public static final information:I = 0x7f0a0219
 
-.field public static final mate_accessory_content_title:I = 0x7f0a0874
+.field public static final mate_accessory_content_title:I = 0x7f0a0882
 
-.field public static final mate_accessory_title:I = 0x7f0a0875
+.field public static final mate_accessory_title:I = 0x7f0a0883
 
-.field public static final mate_test_activity_title:I = 0x7f0a0876
+.field public static final mate_test_activity_title:I = 0x7f0a0884
 
-.field public static final message_content_update_without_auth_other_new:I = 0x7f0a0878
+.field public static final message_content_update_without_auth_other_new:I = 0x7f0a0886
 
 .field public static final message_content_without_auth_one_new:I = 0x7f0a0259
 
@@ -83,7 +83,7 @@
 
 .field public static final mt_dialog_progress:I = 0x7f0a0286
 
-.field public static final network_error:I = 0x7f0a087b
+.field public static final network_error:I = 0x7f0a0889
 
 .field public static final no_results:I = 0x7f0a02e1
 
@@ -105,15 +105,15 @@
 
 .field public static final popup_download_large_wlancheck:I = 0x7f0a033a
 
-.field public static final presence_test_activity_title:I = 0x7f0a0884
+.field public static final presence_test_activity_title:I = 0x7f0a0892
 
 .field public static final profile_sharing:I = 0x7f0a0342
 
-.field public static final profile_test_activity_title:I = 0x7f0a089e
+.field public static final profile_test_activity_title:I = 0x7f0a08ac
 
-.field public static final profile_test_api_title:I = 0x7f0a089f
+.field public static final profile_test_api_title:I = 0x7f0a08ad
 
-.field public static final read_media_permission_description:I = 0x7f0a08a2
+.field public static final read_media_permission_description:I = 0x7f0a08b0
 
 .field public static final regist_select_country_or_region_code:I = 0x7f0a0350
 
@@ -129,7 +129,7 @@
 
 .field public static final settings:I = 0x7f0a03c4
 
-.field public static final share_group_permission_description:I = 0x7f0a08a8
+.field public static final share_group_permission_description:I = 0x7f0a08b6
 
 .field public static final simple_sharing:I = 0x7f0a03e0
 
@@ -145,27 +145,27 @@
 
 .field public static final sms_authentification_activity_description:I = 0x7f0a03f8
 
-.field public static final social_article_meta_counter_title:I = 0x7f0a08ac
+.field public static final social_article_meta_counter_title:I = 0x7f0a08ba
 
-.field public static final social_article_meta_data_title:I = 0x7f0a08ad
+.field public static final social_article_meta_data_title:I = 0x7f0a08bb
 
-.field public static final social_article_title:I = 0x7f0a08ae
+.field public static final social_article_title:I = 0x7f0a08bc
 
-.field public static final social_comment_meta_counter_title:I = 0x7f0a08af
+.field public static final social_comment_meta_counter_title:I = 0x7f0a08bd
 
-.field public static final social_comment_meta_data_title:I = 0x7f0a08b0
+.field public static final social_comment_meta_data_title:I = 0x7f0a08be
 
-.field public static final social_comment_title:I = 0x7f0a08b1
+.field public static final social_comment_title:I = 0x7f0a08bf
 
-.field public static final social_notification_title:I = 0x7f0a08b2
+.field public static final social_notification_title:I = 0x7f0a08c0
 
-.field public static final social_search_title:I = 0x7f0a08b3
+.field public static final social_search_title:I = 0x7f0a08c1
 
-.field public static final social_test_activity_title:I = 0x7f0a08b4
+.field public static final social_test_activity_title:I = 0x7f0a08c2
 
 .field public static final the_verification_has_failed:I = 0x7f0a0447
 
-.field public static final title_activity_contact_list:I = 0x7f0a08b7
+.field public static final title_activity_contact_list:I = 0x7f0a08c5
 
 .field public static final toast_text_max_Length:I = 0x7f0a045e
 
@@ -195,7 +195,7 @@
 
 .field public static final we_recommend_using_a_voice_call:I = 0x7f0a04df
 
-.field public static final write_media_permission_description:I = 0x7f0a08be
+.field public static final write_media_permission_description:I = 0x7f0a08cc
 
 .field public static final you_have_entered_incorrect_code:I = 0x7f0a04ef
 

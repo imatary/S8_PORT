@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy$1;->this$0:Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->mTask:Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->access$300(Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;)Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;
 
     move-result-object v0
@@ -57,7 +56,6 @@
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->mIsCancelled:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->access$902(Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy$1;->this$0:Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;

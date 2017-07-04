@@ -265,7 +265,6 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;->titleView:Landroid/widget/TextView;
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;->access$102(Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
 
     const v2, 0x7f1201f5
@@ -276,7 +275,6 @@
 
     check-cast v2, Landroid/widget/ImageView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;->iconView:Landroid/widget/ImageView;
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;->access$202(Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -290,7 +288,6 @@
 
     check-cast v1, Lcom/sec/samsung/gallery/drawer/DrawerItemNearby;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;->titleView:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;->access$100(Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v2
@@ -303,7 +300,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;->titleView:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;->access$100(Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v2
@@ -312,7 +308,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setMaxWidth(I)V
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;->iconView:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;->access$200(Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter$ViewHolder;)Landroid/widget/ImageView;
 
     move-result-object v2

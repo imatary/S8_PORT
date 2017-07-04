@@ -41,7 +41,6 @@
 
     iget v1, p1, Landroid/graphics/Rect;->top:I
 
-    # invokes: Landroid/support/v7/app/AppCompatDelegateImplV7;->updateStatusGuard(I)I
     invoke-static {v0, v1}, Landroid/support/v7/app/AppCompatDelegateImplV7;->access$300(Landroid/support/v7/app/AppCompatDelegateImplV7;I)I
 
     move-result v0

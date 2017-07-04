@@ -68,7 +68,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mEvent:Lcom/sec/samsung/gallery/core/Event;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$900(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Lcom/sec/samsung/gallery/core/Event;
 
     move-result-object v2
@@ -91,7 +90,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->handleCreateStory()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1000(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)V
 
     :goto_0
@@ -100,7 +98,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mIntent:Landroid/content/Intent;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1100(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/content/Intent;
 
     move-result-object v0
@@ -119,13 +116,11 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->sendDCChoiceStoryResponse(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;Z)V
 
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->sendResultForSelectedStory(I)V
     invoke-static {v0, p3}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1300(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;I)V
 
     goto :goto_0

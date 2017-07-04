@@ -55,10 +55,8 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsTouchOutside:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$002(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mSingleOperation:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$102(Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
@@ -73,7 +71,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->handleMultipleFileOperation(Ljava/lang/String;IILjava/lang/String;)V
     invoke-static {v0, v1, v2, v4, v3}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$200(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Ljava/lang/String;IILjava/lang/String;)V
 
     return-void

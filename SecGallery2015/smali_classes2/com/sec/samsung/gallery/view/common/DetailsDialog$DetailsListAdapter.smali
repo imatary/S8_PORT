@@ -136,7 +136,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/DetailsDialog$DetailsListAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/DetailsDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/DetailsDialog;->mDetailItemLayout:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/DetailsDialog;->access$600(Lcom/sec/samsung/gallery/view/common/DetailsDialog;)I
 
     move-result v3

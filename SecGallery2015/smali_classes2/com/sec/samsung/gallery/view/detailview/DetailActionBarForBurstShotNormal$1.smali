@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;->mIsClicked:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;->access$000(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;)Z
 
     move-result v0
@@ -54,12 +53,10 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;->mIsClicked:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;->access$002(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;->startActionShare()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;->access$100(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForBurstShotNormal;)V
 
     goto :goto_0

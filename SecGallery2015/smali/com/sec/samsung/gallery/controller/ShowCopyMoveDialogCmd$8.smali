@@ -51,7 +51,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsCancel:Z
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Z)Z
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V

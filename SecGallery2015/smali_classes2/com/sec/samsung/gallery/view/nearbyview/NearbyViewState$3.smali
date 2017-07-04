@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$3;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->updateNearbyItems()Ljava/util/List;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$100(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)Ljava/util/List;
 
     move-result-object v0
@@ -68,7 +67,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$3;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->mHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$000(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)Landroid/os/Handler;
 
     move-result-object v2
@@ -82,7 +80,6 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$3;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->mMediaSetAdapter:Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$200(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter;
 
     move-result-object v2
@@ -94,7 +91,6 @@
     :pswitch_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$3;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->startTimeViewState()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$300(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)V
 
     goto :goto_0

@@ -675,13 +675,13 @@
         0x7f120275 -> :sswitch_0
         0x7f120277 -> :sswitch_b
         0x7f120278 -> :sswitch_c
-        0x7f12027d -> :sswitch_4
-        0x7f12027e -> :sswitch_5
-        0x7f12027f -> :sswitch_f
-        0x7f120280 -> :sswitch_9
-        0x7f120281 -> :sswitch_a
-        0x7f120282 -> :sswitch_d
-        0x7f120283 -> :sswitch_e
+        0x7f12027c -> :sswitch_4
+        0x7f12027d -> :sswitch_5
+        0x7f12027e -> :sswitch_f
+        0x7f12027f -> :sswitch_9
+        0x7f120280 -> :sswitch_a
+        0x7f120281 -> :sswitch_d
+        0x7f120282 -> :sswitch_e
         0x7f120290 -> :sswitch_1
         0x7f1202a5 -> :sswitch_2
         0x7f1202a6 -> :sswitch_3
@@ -767,7 +767,7 @@
 
     invoke-static {p1, v8, v2}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v8, 0x7f12027f
+    const v8, 0x7f12027e
 
     if-nez v1, :cond_1
 

@@ -361,7 +361,7 @@
 .method private setTextOnlyButton(Landroid/view/Menu;)V
     .locals 2
 
-    const v1, 0x7f120286
+    const v1, 0x7f120285
 
     invoke-interface {p1, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -879,9 +879,9 @@
     :sswitch_data_0
     .sparse-switch
         0x7f12007c -> :sswitch_2
-        0x7f12027b -> :sswitch_4
-        0x7f12027c -> :sswitch_b
-        0x7f120286 -> :sswitch_7
+        0x7f12027a -> :sswitch_4
+        0x7f12027b -> :sswitch_b
+        0x7f120285 -> :sswitch_7
         0x7f12028a -> :sswitch_9
         0x7f12028b -> :sswitch_0
         0x7f12028c -> :sswitch_8
@@ -901,7 +901,7 @@
 
     const v8, 0x7f12028d
 
-    const v7, 0x7f12027b
+    const v7, 0x7f12027a
 
     const/4 v6, 0x1
 
@@ -1015,7 +1015,7 @@
 
     if-eqz v2, :cond_13
 
-    const v2, 0x7f120288
+    const v2, 0x7f120287
 
     invoke-static {p1, v2, v6}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
@@ -1057,11 +1057,11 @@
     invoke-static {p1, v2, v5}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     :cond_5
-    const v2, 0x7f12027a
+    const v2, 0x7f120279
 
     invoke-static {p1, v2, v5}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v2, 0x7f120289
+    const v2, 0x7f120288
 
     invoke-static {p1, v2, v5}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
@@ -1141,7 +1141,7 @@
 
     if-eqz v2, :cond_b
 
-    const v2, 0x7f120289
+    const v2, 0x7f120288
 
     invoke-static {p1, v2, v5}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
@@ -1268,21 +1268,21 @@
     goto/16 :goto_0
 
     :cond_12
-    const v2, 0x7f120286
+    const v2, 0x7f120285
 
     invoke-static {p1, v2, v5}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     goto/16 :goto_1
 
     :cond_13
-    const v2, 0x7f120288
+    const v2, 0x7f120287
 
     invoke-static {p1, v2, v5}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     goto/16 :goto_2
 
     :cond_14
-    const v2, 0x7f120288
+    const v2, 0x7f120287
 
     invoke-static {p1, v2, v5}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 

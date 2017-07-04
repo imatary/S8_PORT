@@ -36,7 +36,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mCtx:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3700(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/content/Context;
 
     move-result-object v1
@@ -53,7 +52,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mStoragePath:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3800(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Ljava/lang/String;
 
     move-result-object v1
@@ -62,7 +60,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mStoragePath:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3800(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Ljava/lang/String;
 
     move-result-object v1
@@ -116,7 +113,6 @@
     return-void
 
     :cond_1
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->newAlbumPath:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3900()Ljava/lang/String;
 
     move-result-object v1

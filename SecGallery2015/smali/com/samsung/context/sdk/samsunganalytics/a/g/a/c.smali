@@ -82,7 +82,7 @@
 
     const-string/jumbo v8, ""
 
-    const-string/jumbo v9, "1.8.25"
+    const-string/jumbo v9, "1.8.30"
 
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/a/c;->d:Lcom/samsung/context/sdk/samsunganalytics/a/g/d;
 

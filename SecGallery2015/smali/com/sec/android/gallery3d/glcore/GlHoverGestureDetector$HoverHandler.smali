@@ -71,7 +71,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$HoverHandler;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->mRecongnizedStartTime:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->access$000(Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;)I
 
     move-result v4
@@ -89,7 +88,6 @@
     :goto_1
     iget-object v4, p0, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$HoverHandler;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->mIsListScroll:Z
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->access$300(Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;)Z
 
     move-result v4
@@ -98,7 +96,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$HoverHandler;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->mHandler:Landroid/os/Handler;
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->access$400(Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;)Landroid/os/Handler;
 
     move-result-object v4
@@ -114,7 +111,6 @@
     :cond_1
     iget-object v4, p0, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$HoverHandler;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->mScrollDirection:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;)I
 
     move-result v4
@@ -124,7 +120,6 @@
     :goto_2
     iget-object v4, p0, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$HoverHandler;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->scrollBy(II)V
     invoke-static {v4, v2, v3}, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->access$200(Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;II)V
 
     goto :goto_1

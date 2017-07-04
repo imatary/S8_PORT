@@ -58,7 +58,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver$1;->this$0:Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver;->access$000(Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver;)Landroid/content/Context;
 
     move-result-object v2
@@ -69,12 +68,10 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver$1;->this$0:Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver;->access$000(Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver;)Landroid/content/Context;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver;->registerEventAlarmByType(Landroid/content/Context;I)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver;->access$100(Lcom/sec/samsung/gallery/view/eventview/FindNewEventReceiver;Landroid/content/Context;I)V
 
     goto :goto_0

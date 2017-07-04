@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$15;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsTouchOutside:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$600(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Z
 
     move-result v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$15;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsCancel:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$702(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     :goto_0
@@ -58,12 +56,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsFileNameUsed:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1902(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$15;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->lock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Ljava/lang/Object;
 
     move-result-object v1
@@ -73,7 +69,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$15;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->lock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$2000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Ljava/lang/Object;
 
     move-result-object v0
@@ -89,7 +84,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$15;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsTouchOutside:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$602(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     goto :goto_0

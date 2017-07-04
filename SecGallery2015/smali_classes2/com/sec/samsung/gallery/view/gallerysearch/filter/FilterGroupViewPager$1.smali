@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->mIsAlive:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;)Z
 
     move-result v0
@@ -56,7 +55,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->updateItemsInDetailPagerView()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;)V
 
     goto :goto_0

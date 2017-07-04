@@ -40,15 +40,13 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$DetectFaceTask;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMainHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$4300(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$4200(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/CropView$DetectFaceTask;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mMainHandler:Landroid/os/Handler;
-    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$4300(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView;->access$4200(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -68,20 +66,17 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$DetectFaceTask;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mHighlightRectangle:Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
-    invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$4400(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
+    invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$4300(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->setInitRectangle(Landroid/graphics/RectF;)V
-    invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$4500(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;Landroid/graphics/RectF;)V
+    invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$4400(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;Landroid/graphics/RectF;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView$DetectFaceTask;->this$0:Lcom/sec/android/gallery3d/ui/CropView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView;->mHighlightRectangle:Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
-    invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$4400(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
+    invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView;->access$4300(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
 
     move-result-object v0
 

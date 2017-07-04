@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$4;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$100(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v1
@@ -52,7 +51,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$4;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$100(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v1
@@ -77,19 +75,16 @@
 
     aput-object v4, v2, v3
 
-    # invokes: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->deleteSEFData(Ljava/lang/String;[Ljava/lang/String;)V
     invoke-static {v1, v0, v2}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$200(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;Ljava/lang/String;[Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$4;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
     const/16 v2, 0x970
 
-    # invokes: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->updateImage(Ljava/lang/String;I)V
     invoke-static {v1, v0, v2}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$300(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;Ljava/lang/String;I)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd$4;->this$0:Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->restartHandleImageRotation()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;->access$400(Lcom/sec/samsung/gallery/controller/HandleImageRotationCmd;)V
 
     return-void

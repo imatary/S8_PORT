@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$9;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mIsInputMethodShown:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$2100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Z
 
     move-result v0
@@ -54,7 +53,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mSetReadyToShowVisualCategory:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1902(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;Z)Z
 
     return-void
@@ -67,7 +65,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mSetReadyToShowVisualPeople:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$2002(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;Z)Z
 
     return-void
@@ -78,7 +75,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$9;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->showItemAnimation()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1800(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)V
 
     return-void

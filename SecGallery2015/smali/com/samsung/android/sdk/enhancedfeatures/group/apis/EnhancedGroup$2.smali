@@ -39,7 +39,6 @@
 
     const-string/jumbo v0, "onDeregister"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/EnhancedGroup;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/EnhancedGroup;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -54,7 +53,6 @@
 
     const-string/jumbo v0, "Received Group Push"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/EnhancedGroup;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/EnhancedGroup;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -63,7 +61,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/EnhancedGroup$2;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/group/apis/EnhancedGroup;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/EnhancedGroup;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/EnhancedGroupPushListener;
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/EnhancedGroup;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/group/apis/EnhancedGroup;)Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/EnhancedGroupPushListener;
 
     move-result-object v0
@@ -83,7 +80,6 @@
 
     const-string/jumbo v0, "onRegister"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/apis/EnhancedGroup;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/group/apis/EnhancedGroup;->access$000()Ljava/lang/String;
 
     move-result-object v1

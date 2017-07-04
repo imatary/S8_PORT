@@ -47,7 +47,6 @@
 
     move-result v2
 
-    # invokes: Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->handleNewPosts(Z)V
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->access$500(Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;Z)V
 
     const/4 v1, 0x1

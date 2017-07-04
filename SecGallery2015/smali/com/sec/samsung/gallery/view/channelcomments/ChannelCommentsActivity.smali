@@ -316,7 +316,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a07da
+    const v2, 0x7f0a07df
 
     const/4 v3, 0x0
 
@@ -366,7 +366,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a07db
+    const v4, 0x7f0a07e0
 
     new-array v5, v5, [Ljava/lang/Object;
 
@@ -418,7 +418,7 @@
 .method private handleDeleteEditComments(Ljava/lang/String;I)V
     .locals 5
 
-    const v4, 0x7f0a07dd
+    const v4, 0x7f0a07e2
 
     const/4 v3, 0x0
 
@@ -436,7 +436,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a07dc
+    const v2, 0x7f0a07e1
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -495,7 +495,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a07de
+    const v2, 0x7f0a07e3
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -582,7 +582,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a07de
+    const v3, 0x7f0a07e3
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -628,7 +628,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a07da
+    const v3, 0x7f0a07df
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -655,7 +655,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a07d9
+    const v3, 0x7f0a07de
 
     new-array v4, v4, [Ljava/lang/Object;
 

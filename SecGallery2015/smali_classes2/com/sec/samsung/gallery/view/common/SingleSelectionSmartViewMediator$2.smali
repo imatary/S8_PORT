@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator$2;->this$0:Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->mSelectedPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->access$200(Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;)Lcom/sec/android/gallery3d/data/Path;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator$2;->this$0:Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->mIsStartedView:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->access$100(Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;)Z
 
     move-result v0
@@ -67,12 +65,10 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->mIsStartedView:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->access$102(Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator$2;->this$0:Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->access$400(Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;)Landroid/os/Handler;
 
     move-result-object v0
@@ -81,7 +77,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator$2;->this$0:Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->access$400(Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;)Landroid/os/Handler;
 
     move-result-object v0
@@ -100,7 +95,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator$2;->this$0:Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->dismiss()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->access$300(Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;)V
 
     goto :goto_0

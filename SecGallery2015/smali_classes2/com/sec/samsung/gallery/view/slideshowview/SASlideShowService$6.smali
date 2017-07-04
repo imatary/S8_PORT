@@ -37,21 +37,18 @@
 .method public onGlobalLayout()V
     .locals 2
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->USE_MULTIWINDOW:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$1500()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$1600()Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$1600()Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

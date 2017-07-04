@@ -51,7 +51,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AbstractAlbumActionBarForSelection$2;->this$0:Lcom/sec/samsung/gallery/view/albumview/AbstractAlbumActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AbstractAlbumActionBarForSelection;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AbstractAlbumActionBarForSelection;->access$100(Lcom/sec/samsung/gallery/view/albumview/AbstractAlbumActionBarForSelection;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

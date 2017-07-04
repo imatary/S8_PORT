@@ -209,10 +209,25 @@
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_9
 
     :cond_8
     sget-object v1, Lcom/sec/samsung/gallery/features/FeatureNames;->IsAODEnabled:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v1}, Lcom/sec/samsung/gallery/features/GalleryFeature;->clearFeature(Lcom/sec/samsung/gallery/features/FeatureNames;)V
+
+    goto/16 :goto_0
+
+    :cond_9
+    const-string/jumbo v1, "navigationbar_hide_bar_enabled"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    sget-object v1, Lcom/sec/samsung/gallery/features/FeatureNames;->IsImmersiveMode:Lcom/sec/samsung/gallery/features/FeatureNames;
 
     invoke-static {v1}, Lcom/sec/samsung/gallery/features/GalleryFeature;->clearFeature(Lcom/sec/samsung/gallery/features/FeatureNames;)V
 

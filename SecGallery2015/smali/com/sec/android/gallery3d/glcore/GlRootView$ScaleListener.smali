@@ -44,7 +44,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlRootView$ScaleListener;->this$0:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlRootView;->mRootLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$100(Lcom/sec/android/gallery3d/glcore/GlRootView;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -53,7 +52,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlRootView$ScaleListener;->this$0:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlRootView;->mRootLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$100(Lcom/sec/android/gallery3d/glcore/GlRootView;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -77,7 +75,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlRootView$ScaleListener;->this$0:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlRootView;->mRootLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$100(Lcom/sec/android/gallery3d/glcore/GlRootView;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -86,7 +83,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlRootView$ScaleListener;->this$0:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlRootView;->mRootLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$100(Lcom/sec/android/gallery3d/glcore/GlRootView;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -119,7 +115,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlRootView$ScaleListener;->this$0:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlRootView;->mRootLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$100(Lcom/sec/android/gallery3d/glcore/GlRootView;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -136,7 +131,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlRootView$ScaleListener;->this$0:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlRootView;->mRootLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$100(Lcom/sec/android/gallery3d/glcore/GlRootView;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0

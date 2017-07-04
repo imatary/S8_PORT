@@ -69,7 +69,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$13;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->isRootLayer()Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Z
 
     move-result v0
@@ -98,7 +97,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$13;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mSlideAnim:Lcom/sec/samsung/gallery/glview/GlSlideAnim;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/GlSlideAnim;
 
     move-result-object v1
@@ -107,7 +105,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->isRightDirection(F)Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;F)Z
 
     move-result v0
@@ -159,7 +156,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$13;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mSlideAnim:Lcom/sec/samsung/gallery/glview/GlSlideAnim;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/GlSlideAnim;
 
     move-result-object v1
@@ -168,7 +164,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->isLeftDirection(F)Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;F)Z
 
     move-result v0

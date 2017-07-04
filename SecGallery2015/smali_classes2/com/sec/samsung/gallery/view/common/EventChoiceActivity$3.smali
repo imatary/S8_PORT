@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$3;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$400(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/content/Context;
 
     move-result-object v0
@@ -60,12 +59,10 @@
 
     move-result-object v0
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mEventListMap:Ljava/util/HashMap;
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2202(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;Ljava/util/HashMap;)Ljava/util/HashMap;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$3;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mAdapter:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListAdatper;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2300(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListAdatper;
 
     move-result-object v0
@@ -74,14 +71,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$3;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mAdapter:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListAdatper;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2300(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListAdatper;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$3;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mEventListMap:Ljava/util/HashMap;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2200(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Ljava/util/HashMap;
 
     move-result-object v1

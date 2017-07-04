@@ -45,7 +45,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$5;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mRootView:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Landroid/view/View;
 
     move-result-object v1

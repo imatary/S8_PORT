@@ -34,7 +34,6 @@
 
     const-string/jumbo v2, "PAP"
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mSalesCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$100()Ljava/lang/String;
 
     move-result-object v3
@@ -47,7 +46,6 @@
 
     const-string/jumbo v2, "FOP"
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mSalesCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$100()Ljava/lang/String;
 
     move-result-object v3
@@ -60,7 +58,6 @@
 
     const-string/jumbo v2, "LDU"
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mSalesCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$100()Ljava/lang/String;
 
     move-result-object v3

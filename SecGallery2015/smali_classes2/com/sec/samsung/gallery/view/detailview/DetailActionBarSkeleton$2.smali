@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->access$300(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

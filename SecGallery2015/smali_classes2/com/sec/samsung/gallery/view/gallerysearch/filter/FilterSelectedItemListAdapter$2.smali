@@ -56,7 +56,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;)Landroid/content/Context;
 
     move-result-object v4
@@ -75,7 +74,6 @@
     :try_start_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;)Landroid/content/Context;
 
     move-result-object v4
@@ -110,7 +108,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListAdapter;)Landroid/content/Context;
 
     move-result-object v4

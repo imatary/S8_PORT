@@ -97,7 +97,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/decoder/LargeImage$LargeImageListener;->mFuture:Lcom/sec/android/gallery3d/util/Future;
 
-    # invokes: Lcom/sec/samsung/gallery/decoder/LargeImage;->updateLargeImage(Lcom/sec/android/gallery3d/util/Future;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$1300(Lcom/sec/samsung/gallery/decoder/LargeImage;Lcom/sec/android/gallery3d/util/Future;)V
 
     return-void

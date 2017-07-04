@@ -115,7 +115,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v1
@@ -128,7 +127,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v1
@@ -168,7 +166,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mShareUri:Landroid/net/Uri;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/net/Uri;
 
     move-result-object v1
@@ -187,7 +184,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mTrBusyMap:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$500(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
 
     move-result-object v1
@@ -236,7 +232,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v1
@@ -249,7 +244,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v1
@@ -263,7 +257,6 @@
     :cond_3
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v1
@@ -291,7 +284,6 @@
     :cond_4
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$600(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/content/Context;
 
     move-result-object v1
@@ -310,7 +302,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v1
@@ -329,21 +320,18 @@
 
     move-result-object v4
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->sWakeLock:Landroid/os/PowerManager$WakeLock;
     invoke-static {v1, v4}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$702(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;Landroid/os/PowerManager$WakeLock;)Landroid/os/PowerManager$WakeLock;
 
     new-instance v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/UploadContentsPublicModeTransaction;
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$600(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/content/Context;
 
     move-result-object v1
 
     iget-object v4, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/BasicListener;
     invoke-static {v4}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/BasicListener;
 
     move-result-object v4
@@ -352,14 +340,12 @@
 
     iget-object v6, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mTrBusyMap:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
     invoke-static {v6}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$500(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->sWakeLock:Landroid/os/PowerManager$WakeLock;
     invoke-static {v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$700(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object v7
@@ -369,7 +355,6 @@
     :goto_2
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mTrBusyMap:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$500(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
 
     move-result-object v1
@@ -388,7 +373,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->sWakeLock:Landroid/os/PowerManager$WakeLock;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$700(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object v1
@@ -402,7 +386,6 @@
     :cond_5
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v1
@@ -421,21 +404,18 @@
 
     move-result-object v4
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->sWakeLock:Landroid/os/PowerManager$WakeLock;
     invoke-static {v1, v4}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$702(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;Landroid/os/PowerManager$WakeLock;)Landroid/os/PowerManager$WakeLock;
 
     new-instance v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/UploadTransaction;
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$600(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/content/Context;
 
     move-result-object v1
 
     iget-object v4, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/BasicListener;
     invoke-static {v4}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/BasicListener;
 
     move-result-object v4
@@ -444,14 +424,12 @@
 
     iget-object v6, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mTrBusyMap:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
     invoke-static {v6}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$500(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->sWakeLock:Landroid/os/PowerManager$WakeLock;
     invoke-static {v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$700(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object v7
@@ -465,7 +443,6 @@
     :cond_6
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v1
@@ -484,21 +461,18 @@
 
     move-result-object v4
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->sWakeLock:Landroid/os/PowerManager$WakeLock;
     invoke-static {v1, v4}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$702(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;Landroid/os/PowerManager$WakeLock;)Landroid/os/PowerManager$WakeLock;
 
     new-instance v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/UploadPrivateTransaction;
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$600(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/content/Context;
 
     move-result-object v1
 
     iget-object v4, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/BasicListener;
     invoke-static {v4}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/BasicListener;
 
     move-result-object v4
@@ -507,14 +481,12 @@
 
     iget-object v6, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mTrBusyMap:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
     invoke-static {v6}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$500(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->sWakeLock:Landroid/os/PowerManager$WakeLock;
     invoke-static {v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$700(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object v7
@@ -534,21 +506,18 @@
 
     move-result-object v4
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->sWakeLock:Landroid/os/PowerManager$WakeLock;
     invoke-static {v1, v4}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$702(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;Landroid/os/PowerManager$WakeLock;)Landroid/os/PowerManager$WakeLock;
 
     new-instance v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/transaction/FileShareTransaction;
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$600(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/content/Context;
 
     move-result-object v1
 
     iget-object v4, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/BasicListener;
     invoke-static {v4}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/BasicListener;
 
     move-result-object v4
@@ -557,14 +526,12 @@
 
     iget-object v6, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mTrBusyMap:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
     invoke-static {v6}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$500(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/TransactionMap;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->sWakeLock:Landroid/os/PowerManager$WakeLock;
     invoke-static {v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$700(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object v7
@@ -623,14 +590,12 @@
 
     move-object/from16 v0, p3
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mShareUri:Landroid/net/Uri;
     invoke-static {v12, v0}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$102(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;Landroid/net/Uri;)Landroid/net/Uri;
 
     move-object/from16 v0, p0
 
     iget-object v12, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mShareUri:Landroid/net/Uri;
     invoke-static {v12}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/net/Uri;
 
     move-result-object v12
@@ -651,7 +616,6 @@
 
     iget-object v12, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v12}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v12
@@ -666,7 +630,6 @@
 
     iget-object v12, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v12}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v12
@@ -697,7 +660,6 @@
 
     iget-object v12, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mShareUri:Landroid/net/Uri;
     invoke-static {v12}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Landroid/net/Uri;
 
     move-result-object v12
@@ -710,7 +672,6 @@
 
     iget-object v12, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mContentList:Ljava/util/ArrayList;
     invoke-static {v12}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Ljava/util/ArrayList;
 
     move-result-object v12
@@ -727,7 +688,6 @@
 
     iget-object v12, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mContentList:Ljava/util/ArrayList;
     invoke-static {v12}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Ljava/util/ArrayList;
 
     move-result-object v12
@@ -840,7 +800,6 @@
 
     iget-object v12, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mEnhancedHandler:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;
     invoke-static {v12}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$400(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;
 
     move-result-object v12
@@ -886,7 +845,6 @@
 
     iget-object v12, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v12}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v12
@@ -901,7 +859,6 @@
 
     iget-object v12, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask$QueryHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->mRequest:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
     invoke-static {v12}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/util/ContentWorkerTask;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/BasicUploadRequest;
 
     move-result-object v12

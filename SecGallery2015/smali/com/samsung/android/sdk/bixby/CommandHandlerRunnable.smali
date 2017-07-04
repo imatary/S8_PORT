@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v1, "_0.2.0"
+    const-string/jumbo v1, "_0.2.2"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -297,13 +297,34 @@
     goto/16 :goto_0
 
     :cond_5
-    const-string/jumbo v12, "emes_partial_landing_state"
+    const-string/jumbo v12, "emes_all_states"
 
     invoke-virtual {v2, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v12
 
     if-eqz v12, :cond_6
+
+    iget-object v12, p0, Lcom/samsung/android/sdk/bixby/CommandHandlerRunnable;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v13, "states"
+
+    invoke-virtual {v5, v13}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v13
+
+    invoke-virtual {v12, v13}, Lcom/samsung/android/sdk/bixby/BixbyApi;->sendAllStates(Lorg/json/JSONArray;)V
+
+    goto/16 :goto_0
+
+    :cond_6
+    const-string/jumbo v12, "emes_partial_landing_state"
+
+    invoke-virtual {v2, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-eqz v12, :cond_7
 
     const-string/jumbo v12, "isLanded"
 
@@ -317,7 +338,7 @@
 
     goto/16 :goto_0
 
-    :cond_6
+    :cond_7
     sget-object v12, Lcom/samsung/android/sdk/bixby/CommandHandlerRunnable;->TAG:Ljava/lang/String;
 
     new-instance v13, Ljava/lang/StringBuilder;

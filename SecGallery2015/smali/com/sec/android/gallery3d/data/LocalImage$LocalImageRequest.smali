@@ -112,7 +112,6 @@
 .method private loadFaceRect(Z)V
     .locals 1
 
-    # getter for: Lcom/sec/android/gallery3d/data/LocalImage;->FEATURE_FACE_THUMBNAIL_ENABLED:Z
     invoke-static {}, Lcom/sec/android/gallery3d/data/LocalImage;->access$000()Z
 
     move-result v0
@@ -131,7 +130,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalImage;->loadRectOfAllFaces()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/LocalImage;->access$100(Lcom/sec/android/gallery3d/data/LocalImage;)V
 
     :cond_0
@@ -284,7 +282,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalImage;->getLocalImageAttributes()Lcom/sec/android/gallery3d/data/LocalImageAttributes;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/LocalImage;->access$200(Lcom/sec/android/gallery3d/data/LocalImage;)Lcom/sec/android/gallery3d/data/LocalImageAttributes;
 
     move-result-object v0
@@ -301,7 +298,6 @@
     invoke-virtual {v0, v6, v7, v1}, Lcom/sec/android/gallery3d/data/MediaItem;->setPendingAttribute(JZ)V
 
     :cond_2
-    # getter for: Lcom/sec/android/gallery3d/data/LocalImage;->FEATURE_SOUND_SCENE_ENABLED:Z
     invoke-static {}, Lcom/sec/android/gallery3d/data/LocalImage;->access$300()Z
 
     move-result v0
@@ -320,7 +316,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalImage;->updateSoundShotAttribute()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/LocalImage;->access$400(Lcom/sec/android/gallery3d/data/LocalImage;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/LocalImage$LocalImageRequest;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
@@ -580,7 +575,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalImage;->getFaceCount()I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/LocalImage;->access$500(Lcom/sec/android/gallery3d/data/LocalImage;)I
 
     move-result v0
@@ -603,14 +597,12 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalImage;->loadRectOfAllFaces()V
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/LocalImage;->access$100(Lcom/sec/android/gallery3d/data/LocalImage;)V
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/LocalImage$LocalImageRequest;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
 
     check-cast v2, Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalImage;->getRectOfAllFaces(Z)Landroid/graphics/RectF;
     invoke-static {v2, v3}, Lcom/sec/android/gallery3d/data/LocalImage;->access$600(Lcom/sec/android/gallery3d/data/LocalImage;Z)Landroid/graphics/RectF;
 
     move-result-object v1

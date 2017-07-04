@@ -1665,7 +1665,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mConfirmedList:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$100(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -1689,7 +1688,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mPersonId:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$700(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v13
@@ -1700,7 +1698,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mGroupId:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$800(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v6
@@ -1745,7 +1742,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mConfirmedList:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$100(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v13
@@ -1756,7 +1752,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -1769,7 +1764,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mConfirmedList:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$100(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -1788,7 +1782,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mPersonId:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$700(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v6
@@ -1809,7 +1802,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mGroupId:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$800(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v6
@@ -2188,7 +2180,6 @@
 
     if-ne v7, v0, :cond_14
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mConfirmedList:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$100(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -2225,7 +2216,6 @@
 
     check-cast v37, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mMaxSimilarity:I
     invoke-static/range {v37 .. v37}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$200(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;)I
 
     move-result v6
@@ -2234,19 +2224,16 @@
 
     if-eq v6, v12, :cond_10
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static/range {v37 .. v37}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$300(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;)Lcom/sec/android/gallery3d/data/Path;
 
     move-result-object v12
 
     invoke-virtual {v6, v12}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static/range {v37 .. v37}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$300(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;)Lcom/sec/android/gallery3d/data/Path;
 
     move-result-object v6
@@ -2259,7 +2246,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/data/FaceClustering;->mContext:Landroid/content/Context;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mFaceId:I
     invoke-static/range {v37 .. v37}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$500(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;)I
 
     move-result v12
@@ -2353,7 +2339,6 @@
 
     aput-object v12, v59, v6
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v11}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -2372,21 +2357,18 @@
 
     move/from16 v1, v33
 
-    # setter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mFaceId:I
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$502(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;I)I
 
     const v6, 0x7fffffff
 
     move-object/from16 v0, v37
 
-    # setter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mMaxSimilarity:I
     invoke-static {v0, v6}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$202(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;I)I
 
     move-object/from16 v0, v37
 
     move-object/from16 v1, v49
 
-    # setter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$302(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;Lcom/sec/android/gallery3d/data/Path;)Lcom/sec/android/gallery3d/data/Path;
 
     :cond_10
@@ -2506,7 +2488,6 @@
     if-eqz v6, :cond_10
 
     :cond_15
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -2543,7 +2524,6 @@
 
     check-cast v37, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mMaxSimilarity:I
     invoke-static/range {v37 .. v37}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$200(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;)I
 
     move-result v6
@@ -2552,12 +2532,10 @@
 
     if-ge v6, v0, :cond_17
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static/range {v37 .. v37}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$300(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;)Lcom/sec/android/gallery3d/data/Path;
 
     move-result-object v12
@@ -2568,14 +2546,12 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/data/FaceClustering;->mContext:Landroid/content/Context;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mFaceId:I
     invoke-static/range {v37 .. v37}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$500(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;)I
 
     move-result v12
 
     invoke-static {v6, v12}, Lcom/sec/samsung/gallery/access/face/FaceList;->setFaceUnknownIgnoreAutoGroup(Landroid/content/Context;I)V
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static/range {v37 .. v37}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$300(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;)Lcom/sec/android/gallery3d/data/Path;
 
     move-result-object v6
@@ -2671,7 +2647,6 @@
 
     aput-object v12, v59, v6
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v11}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -2690,27 +2665,23 @@
 
     move/from16 v1, v33
 
-    # setter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mFaceId:I
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$502(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;I)I
 
     move-object/from16 v0, v37
 
     move/from16 v1, v58
 
-    # setter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mMaxSimilarity:I
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$202(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;I)I
 
     move-object/from16 v0, v37
 
     move-object/from16 v1, v49
 
-    # setter for: Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->mPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;->access$302(Lcom/sec/android/gallery3d/data/FaceClustering$ImageFaceValue;Lcom/sec/android/gallery3d/data/Path;)Lcom/sec/android/gallery3d/data/Path;
 
     goto/16 :goto_5
 
     :cond_17
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -2723,12 +2694,10 @@
 
     if-ltz v6, :cond_18
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v12
@@ -2831,7 +2800,6 @@
 
     aput-object v12, v59, v6
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v11}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -2998,7 +2966,6 @@
     move-object/from16 v63, v5
 
     :cond_1d
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -3153,7 +3120,6 @@
     invoke-virtual {v0, v1, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_20
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -3235,7 +3201,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v60
@@ -3315,7 +3280,6 @@
 
     const/4 v13, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mGroupId:I
     invoke-static {v6, v13}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$802(Lcom/sec/android/gallery3d/data/FaceClustering$Value;I)I
 
     invoke-interface/range {v29 .. v29}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -3333,7 +3297,6 @@
     goto/16 :goto_7
 
     :cond_26
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static/range {v63 .. v63}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -3351,7 +3314,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mPersonId:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$700(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v13
@@ -3362,7 +3324,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mGroupId:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$800(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v6
@@ -3381,7 +3342,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mGroupId:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$800(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v6
@@ -3433,7 +3393,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mPersonId:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$700(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v6
@@ -3454,7 +3413,6 @@
 
     check-cast v6, Lcom/sec/android/gallery3d/data/FaceClustering$Value;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mGroupId:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$800(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v6
@@ -3474,17 +3432,14 @@
 
     move-object/from16 v42, v62
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mList:Ljava/util/ArrayList;
     invoke-static/range {v63 .. v63}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$400(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)Ljava/util/ArrayList;
 
     move-result-object v60
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mPersonId:I
     invoke-static/range {v63 .. v63}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$700(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v6
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mGroupId:I
     invoke-static/range {v63 .. v63}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$800(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v12
@@ -3533,7 +3488,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/data/FaceClustering;->mPersonIds:Ljava/util/ArrayList;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mPersonId:I
     invoke-static/range {v63 .. v63}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$700(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v12
@@ -3548,7 +3502,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/data/FaceClustering;->mGroupIds:Ljava/util/ArrayList;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FaceClustering$Value;->mGroupId:I
     invoke-static/range {v63 .. v63}, Lcom/sec/android/gallery3d/data/FaceClustering$Value;->access$800(Lcom/sec/android/gallery3d/data/FaceClustering$Value;)I
 
     move-result v12

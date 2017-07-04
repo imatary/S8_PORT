@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$2;->val$responseResult:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
 
-    # invokes: Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->sendResponseResult(Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;)V
     invoke-static {v0, v1}, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->access$600(Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;)V
 
     return-void

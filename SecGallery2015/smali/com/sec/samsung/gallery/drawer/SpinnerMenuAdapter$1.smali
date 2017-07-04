@@ -72,12 +72,10 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$1;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # setter for: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->mNeedToPostJob:Z
     invoke-static {v3, v6}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$002(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;Z)Z
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$1;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->doPostJob()V
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$100(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)V
 
     :cond_0

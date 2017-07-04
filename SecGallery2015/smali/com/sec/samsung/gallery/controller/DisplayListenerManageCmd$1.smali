@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;->mStateManager:Lcom/sec/android/gallery3d/app/StateManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;->access$000(Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;)Lcom/sec/android/gallery3d/app/StateManager;
 
     move-result-object v0
@@ -54,14 +53,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;->mGalleryStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;->access$200(Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;->mWindowManager:Landroid/view/WindowManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;->access$100(Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;)Landroid/view/WindowManager;
 
     move-result-object v1
@@ -78,7 +75,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;->mStateManager:Lcom/sec/android/gallery3d/app/StateManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;->access$000(Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;)Lcom/sec/android/gallery3d/app/StateManager;
 
     move-result-object v0
@@ -93,7 +89,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;->mStateManager:Lcom/sec/android/gallery3d/app/StateManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;->access$000(Lcom/sec/samsung/gallery/controller/DisplayListenerManageCmd;)Lcom/sec/android/gallery3d/app/StateManager;
 
     move-result-object v0

@@ -39,7 +39,6 @@
     const/4 v4, 0x0
 
     :try_start_0
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v5
@@ -60,7 +59,6 @@
 
     if-nez v5, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v5
@@ -73,7 +71,6 @@
 
     if-nez v5, :cond_0
 
-    # invokes: Lcom/sec/samsung/gallery/features/FeatureClassSet;->dreamUXIn3thCategoryWithPhoneFactor()Z
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$500()Z
 
     move-result v5

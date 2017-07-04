@@ -36,17 +36,14 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$6;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->postCreateGroup()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$800(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$6;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->postInitializeGroup()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$900(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter$6;->this$0:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->postResume()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;->access$1000(Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;)V
 
     return-void

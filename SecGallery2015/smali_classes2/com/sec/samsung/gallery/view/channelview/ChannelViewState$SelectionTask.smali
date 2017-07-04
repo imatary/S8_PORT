@@ -52,8 +52,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$SelectionTask;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->selectAllProcess(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$SelectionTask;)V
-    invoke-static {v1, v0, p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$13700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$SelectionTask;)V
+    invoke-static {v1, v0, p0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$13800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$SelectionTask;)V
 
     const/4 v1, 0x0
 

@@ -57,7 +57,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$3;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mIsPenSelectionMode:Z
     invoke-static {v1, v3}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$902(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Z)Z
 
     :cond_0

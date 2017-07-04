@@ -40,7 +40,6 @@
 
     move-result-wide v2
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mReceiveTime:J
     invoke-static {v0, v2, v3}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3502(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;J)J
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$2;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
@@ -53,7 +52,6 @@
 
     move-result v1
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->isSipVisible:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3302(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Z)Z
 
     return-void

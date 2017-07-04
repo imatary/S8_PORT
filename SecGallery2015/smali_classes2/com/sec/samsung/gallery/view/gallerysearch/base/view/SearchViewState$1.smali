@@ -69,7 +69,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->sendSearchResultResponse()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;)V
 
     goto :goto_0

@@ -124,7 +124,6 @@
     goto :goto_0
 
     :cond_3
-    # getter for: Lcom/samsung/android/sdk/cover/CoverListenerDelegate;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/cover/CoverListenerDelegate;->access$000()Ljava/lang/String;
 
     move-result-object v1

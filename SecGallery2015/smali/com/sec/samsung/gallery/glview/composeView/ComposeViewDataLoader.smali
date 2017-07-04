@@ -6,7 +6,6 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;,
         Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$DataConfig;,
         Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;
     }
@@ -53,8 +52,6 @@
 .field public mAlbumSet:[Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;
 
 .field private final mAllSet:Z
-
-.field private mBitmapDrawTask:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
 
 .field private final mCheckSetVersion:Z
 
@@ -347,15 +344,7 @@
     return-void
 .end method
 
-.method static synthetic access$1000(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ViewListener;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mViewListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ViewListener;
-
-    return-object v0
-.end method
-
-.method static synthetic access$1100(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Z
+.method static synthetic access$1000(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mUpdateBitmapDirectly:Z
@@ -363,7 +352,7 @@
     return v0
 .end method
 
-.method static synthetic access$1200(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ModelListener;
+.method static synthetic access$1100(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ModelListener;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mModelListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ModelListener;
@@ -371,7 +360,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1300()Ljava/lang/Object;
+.method static synthetic access$1200()Ljava/lang/Object;
     .locals 1
 
     sget-object v0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mScaleLock:Ljava/lang/Object;
@@ -379,25 +368,17 @@
     return-object v0
 .end method
 
-.method static synthetic access$1400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
+.method static synthetic access$1300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mBitmapDrawTask:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    return-object v0
-.end method
-
-.method static synthetic access$1500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;Z)Z
-    .locals 1
-
-    invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->loadData(Z)Z
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->loadData()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic access$1600(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;Lcom/sec/android/gallery3d/data/MediaSet;ZZ)Z
+.method static synthetic access$1400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;Lcom/sec/android/gallery3d/data/MediaSet;ZZ)Z
     .locals 1
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->setSource(Lcom/sec/android/gallery3d/data/MediaSet;ZZ)Z
@@ -407,7 +388,7 @@
     return v0
 .end method
 
-.method static synthetic access$700(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
+.method static synthetic access$600(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mAdapter:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
@@ -415,7 +396,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$800(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Z
+.method static synthetic access$700(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mIsActive:Z
@@ -423,12 +404,20 @@
     return v0
 .end method
 
-.method static synthetic access$900(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Z
+.method static synthetic access$800(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mFirstItemOnly:Z
 
     return v0
+.end method
+
+.method static synthetic access$900(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ViewListener;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mViewListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ViewListener;
+
+    return-object v0
 .end method
 
 .method private declared-synchronized applyViewListener(Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ViewListener;I)V
@@ -611,8 +600,7 @@
     goto :goto_0
 
     :cond_2
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mUpdated:[B
-    invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
+    invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
 
     move-result-object v6
 
@@ -644,8 +632,7 @@
 
     aget-object v1, v7, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mUpdated:[B
-    invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
+    invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
 
     move-result-object v6
 
@@ -804,8 +791,7 @@
     goto :goto_0
 
     :cond_1
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mUpdated:[B
-    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
+    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
 
     move-result-object v2
 
@@ -813,8 +799,7 @@
 
     invoke-static {v2, v3}, Ljava/util/Arrays;->fill([BB)V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mSetVersion:[J
-    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$600(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
+    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
 
     move-result-object v2
 
@@ -1733,8 +1718,7 @@
     move-result-wide v6
 
     :goto_3
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mVersion:J
-    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$100(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)J
+    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$000(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)J
 
     move-result-wide v10
 
@@ -1781,22 +1765,19 @@
     aput-object v0, v5, v1
 
     :cond_7
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mVersion:J
-    invoke-static {v0, v6, v7}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$102(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;J)J
+    invoke-static {v0, v6, v7}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$002(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;J)J
 
     iput-object v3, v0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mMediaSet:Lcom/sec/android/gallery3d/data/MediaSet;
 
     const/16 v5, 0x20
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mThmSizeType:B
-    invoke-static {v0, v5}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$202(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
+    invoke-static {v0, v5}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$102(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
 
     iget v5, v0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mCount:I
 
     if-eq v5, v8, :cond_8
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->setMediaItemCount(IZ)V
-    invoke-static {v0, v8, v9}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
+    invoke-static {v0, v8, v9}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$200(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
 
     iput-boolean v8, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mSizeChanged:Z
 
@@ -1972,8 +1953,7 @@
 
     if-nez v6, :cond_8
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mItemVersion:[J
-    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
+    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
 
     move-result-object v14
 
@@ -2019,8 +1999,7 @@
     const-wide/16 v8, -0x1
 
     :goto_5
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mSetVersion:[J
-    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$600(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
+    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
 
     move-result-object v14
 
@@ -2032,8 +2011,7 @@
 
     if-nez v14, :cond_9
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mItemVersion:[J
-    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
+    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
 
     move-result-object v14
 
@@ -2072,8 +2050,7 @@
     iput v3, v0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mUpdContentEnd:I
 
     :cond_b
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mItemVersion:[J
-    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
+    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
 
     move-result-object v14
 
@@ -2081,8 +2058,7 @@
 
     aput-wide v8, v14, v15
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mSetVersion:[J
-    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$600(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
+    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
 
     move-result-object v14
 
@@ -2096,8 +2072,7 @@
 
     aput-object v4, v14, v15
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mUpdated:[B
-    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
+    invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
 
     move-result-object v14
 
@@ -2186,14 +2161,12 @@
     goto/16 :goto_5
 .end method
 
-.method private loadData(Z)Z
-    .locals 11
-
-    const/4 v10, 0x0
-
-    const/4 v5, 0x0
+.method private loadData()Z
+    .locals 10
 
     const/4 v6, 0x1
+
+    const/4 v5, 0x0
 
     iput-boolean v5, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mSizeChanged:Z
 
@@ -2212,68 +2185,14 @@
     :cond_0
     iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mSelectionSet:Z
 
-    if-eqz v7, :cond_2
+    if-eqz v7, :cond_4
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->loadSelectedItem()V
 
     :goto_0
-    iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mNeedToLoadAllItems:Z
-
-    if-nez v7, :cond_5
-
-    if-eqz p1, :cond_5
-
-    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mBitmapDrawTask:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    if-eqz v7, :cond_5
-
-    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mBitmapDrawTask:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    invoke-virtual {v7, v6}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;->cancel(Z)Z
-
-    new-instance v7, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    invoke-direct {v7, p0, v10}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;-><init>(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$1;)V
-
-    iput-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mBitmapDrawTask:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mBitmapDrawTask:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    new-array v5, v5, [Ljava/lang/Void;
-
-    invoke-virtual {v7, v5}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
-
-    :cond_1
-    :goto_1
-    return v6
-
-    :cond_2
-    iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mFirstItemOnly:Z
-
-    if-eqz v7, :cond_3
-
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->loadAlbumSet()V
-
-    goto :goto_0
-
-    :cond_3
-    iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mAllSet:Z
-
-    if-eqz v7, :cond_4
-
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->loadSet()V
-
-    goto :goto_0
-
-    :cond_4
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->loadItem()V
-
-    goto :goto_0
-
-    :cond_5
     iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mFirstLoad:Z
 
-    if-eqz v7, :cond_6
+    if-eqz v7, :cond_1
 
     iput-boolean v5, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mFirstLoad:Z
 
@@ -2283,24 +2202,24 @@
 
     iget-boolean v7, v7, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$DataConfig;->mFirstRangeOptimization:Z
 
-    if-eqz v7, :cond_8
+    if-eqz v7, :cond_7
 
     iget v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mFirstIndex:I
 
-    if-nez v7, :cond_8
+    if-nez v7, :cond_7
 
     iput-boolean v6, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mFirstReloadSkip:Z
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->getFirstRangeByRowCount()V
 
-    :cond_6
-    :goto_2
+    :cond_1
+    :goto_1
     monitor-enter p0
 
     :try_start_0
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mReloadTask:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_2
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mReloadTask:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
 
@@ -2308,9 +2227,9 @@
 
     move-result v7
 
-    if-nez v7, :cond_9
+    if-nez v7, :cond_8
 
-    :cond_7
+    :cond_2
     const-string/jumbo v5, "ComposeViewDataLoader"
 
     const-string/jumbo v7, "mReloadTask is null or not active. return "
@@ -2318,44 +2237,47 @@
     invoke-static {v5, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :cond_3
+    :goto_2
+    return v6
+
+    :cond_4
+    iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mFirstItemOnly:Z
+
+    if-eqz v7, :cond_5
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->loadAlbumSet()V
+
+    goto :goto_0
+
+    :cond_5
+    iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mAllSet:Z
+
+    if-eqz v7, :cond_6
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->loadSet()V
+
+    goto :goto_0
+
+    :cond_6
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->loadItem()V
+
+    goto :goto_0
+
+    :cond_7
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->getFirstRangeByItemCount()V
 
     goto :goto_1
 
-    :catchall_0
-    move-exception v5
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v5
-
     :cond_8
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->getFirstRangeByItemCount()V
-
-    goto :goto_2
-
-    :cond_9
     :try_start_1
     monitor-exit p0
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    invoke-static {}, Ljava/lang/Thread;->interrupted()Z
-
-    move-result v7
-
-    if-eqz v7, :cond_a
-
-    const-string/jumbo v5, "ComposeViewDataLoader"
-
-    const-string/jumbo v7, "Thread interrupted before loadMediaSet"
-
-    invoke-static {v5, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_1
-
-    :cond_a
     sget-object v7, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mLOCK:Ljava/lang/Object;
 
     monitor-enter v7
@@ -2388,7 +2310,7 @@
     :try_start_3
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mReloadTask:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
 
-    if-eqz v7, :cond_b
+    if-eqz v7, :cond_9
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mReloadTask:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
 
@@ -2396,9 +2318,9 @@
 
     move-result v7
 
-    if-nez v7, :cond_c
+    if-nez v7, :cond_a
 
-    :cond_b
+    :cond_9
     const-string/jumbo v5, "ComposeViewDataLoader"
 
     const-string/jumbo v7, "mReloadTask is null or not active. return "
@@ -2407,91 +2329,86 @@
 
     monitor-exit p0
 
-    goto/16 :goto_1
+    goto :goto_2
 
-    :catchall_1
+    :catchall_0
     move-exception v5
 
     monitor-exit p0
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    throw v5
+
+    :catchall_1
+    move-exception v5
+
+    :try_start_4
+    monitor-exit p0
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     throw v5
 
     :catchall_2
     move-exception v5
 
-    :try_start_4
+    :try_start_5
     monitor-exit v7
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_2
 
     throw v5
 
-    :cond_c
-    :try_start_5
+    :cond_a
+    :try_start_6
     monitor-exit p0
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    invoke-static {}, Ljava/lang/Thread;->interrupted()Z
-
-    move-result v7
-
-    if-eqz v7, :cond_d
-
-    const-string/jumbo v5, "ComposeViewDataLoader"
-
-    const-string/jumbo v7, "Thread interrupted after loadMediaSet"
-
-    invoke-static {v5, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto/16 :goto_1
-
-    :cond_d
     iget v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mUpdContentStart:I
 
-    if-ne v7, v2, :cond_e
+    if-ne v7, v2, :cond_b
 
     iget v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mUpdContentEnd:I
 
-    if-eq v7, v3, :cond_16
+    if-eq v7, v3, :cond_13
 
-    :cond_e
+    :cond_b
     move v0, v6
 
     :goto_3
     iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mAllSet:Z
 
-    if-nez v7, :cond_f
+    if-nez v7, :cond_c
 
     iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mFirstItemOnly:Z
 
-    if-eqz v7, :cond_17
+    if-eqz v7, :cond_14
 
-    :cond_f
+    :cond_c
     iget v1, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mSize:I
 
     :goto_4
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mModelListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ModelListener;
 
-    if-eqz v7, :cond_12
+    if-eqz v7, :cond_f
 
     iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mSizeChanged:Z
 
-    if-nez v7, :cond_10
+    if-nez v7, :cond_d
 
     iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mUpdatedSize:Z
 
-    if-eqz v7, :cond_11
+    if-eqz v7, :cond_e
 
-    :cond_10
+    :cond_d
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mModelListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ModelListener;
 
     invoke-interface {v7, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ModelListener;->onSizeChanged(I)V
 
-    :cond_11
-    if-eqz v0, :cond_12
+    :cond_e
+    if-eqz v0, :cond_f
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mModelListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ModelListener;
 
@@ -2501,30 +2418,32 @@
 
     invoke-interface {v7, v8, v9}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ModelListener;->onContentChanged(II)V
 
-    :cond_12
+    :cond_f
     monitor-enter p0
 
-    :try_start_6
+    :try_start_7
     iget-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mSizeChanged:Z
 
-    if-eqz v7, :cond_13
+    if-eqz v7, :cond_10
 
     const/4 v7, -0x1
 
     iput v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mNotifyCount:I
 
-    :cond_13
+    :cond_10
     monitor-exit p0
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_4
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_4
 
-    invoke-direct {p0, v10, v1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->applyViewListener(Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ViewListener;I)V
+    const/4 v7, 0x0
+
+    invoke-direct {p0, v7, v1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->applyViewListener(Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ViewListener;I)V
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mViewListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ViewListener;
 
-    if-eqz v4, :cond_14
+    if-eqz v4, :cond_11
 
-    if-eqz v0, :cond_14
+    if-eqz v0, :cond_11
 
     iget v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mUpdContentStart:I
 
@@ -2532,13 +2451,13 @@
 
     invoke-interface {v4, v7, v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ViewListener;->onContentChanged(II)V
 
-    :cond_14
+    :cond_11
     monitor-enter p0
 
-    :try_start_7
+    :try_start_8
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mReloadTask:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
 
-    if-eqz v7, :cond_15
+    if-eqz v7, :cond_12
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mReloadTask:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
 
@@ -2546,9 +2465,9 @@
 
     move-result v7
 
-    if-nez v7, :cond_18
+    if-nez v7, :cond_15
 
-    :cond_15
+    :cond_12
     const-string/jumbo v5, "ComposeViewDataLoader"
 
     const-string/jumbo v7, "mReloadTask is null or not active. return "
@@ -2557,23 +2476,23 @@
 
     monitor-exit p0
 
-    goto/16 :goto_1
+    goto/16 :goto_2
 
     :catchall_3
     move-exception v5
 
     monitor-exit p0
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_3
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_3
 
     throw v5
 
-    :cond_16
+    :cond_13
     move v0, v5
 
     goto :goto_3
 
-    :cond_17
+    :cond_14
     iget v1, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mItemSize:I
 
     goto :goto_4
@@ -2581,34 +2500,55 @@
     :catchall_4
     move-exception v5
 
-    :try_start_8
-    monitor-exit p0
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_4
-
-    throw v5
-
-    :cond_18
     :try_start_9
     monitor-exit p0
     :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_3
+    .catchall {:try_start_9 .. :try_end_9} :catchall_4
 
+    throw v5
+
+    :cond_15
+    :try_start_a
+    monitor-exit p0
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_3
+
+    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mReloadTask:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
+
+    if-eqz v7, :cond_16
+
+    iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mReloadTask:Lcom/sec/samsung/gallery/view/adapter/ReloadTask;
+
+    invoke-virtual {v7}, Lcom/sec/samsung/gallery/view/adapter/ReloadTask;->isDirty()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_16
+
+    const-string/jumbo v5, "ComposeViewDataLoader"
+
+    const-string/jumbo v7, "loadData returned just after loadMediaSet"
+
+    invoke-static {v5, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_2
+
+    :cond_16
     iget v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mUpdContentStart:I
 
     iget v8, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mUpdContentEnd:I
 
-    if-ne v7, v8, :cond_19
+    if-ne v7, v8, :cond_17
 
     iget v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mUpdContentStart:I
 
-    if-nez v7, :cond_19
+    if-nez v7, :cond_17
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mListenerBitmap:Lcom/sec/samsung/gallery/view/image_manager/ComposeImageItem$OnBitmapAvailableListener;
 
     invoke-interface {v7}, Lcom/sec/samsung/gallery/view/image_manager/ComposeImageItem$OnBitmapAvailableListener;->onAllContentReady()V
 
-    :cond_19
+    :cond_17
     invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->updateContentsRange()V
 
     iput-boolean v5, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mUpdateAll:Z
@@ -2621,11 +2561,11 @@
 
     or-int/2addr v7, v0
 
-    if-eqz v7, :cond_1
+    if-eqz v7, :cond_3
 
     move v6, v5
 
-    goto/16 :goto_1
+    goto/16 :goto_2
 .end method
 
 .method private loadItem()V
@@ -2728,8 +2668,7 @@
     aput-object v0, v8, v6
 
     :cond_3
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mVersion:J
-    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$100(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)J
+    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$000(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)J
 
     move-result-wide v8
 
@@ -2762,8 +2701,7 @@
 
     iget-byte v6, v6, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$DataConfig;->mRetThmType:B
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mThmSizeType:B
-    invoke-static {v0, v6}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$202(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
+    invoke-static {v0, v6}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$102(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
 
     iget v6, v0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mCount:I
 
@@ -2772,8 +2710,7 @@
     if-eqz v2, :cond_0
 
     :cond_5
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->setMediaItemCount(IZ)V
-    invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
+    invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$200(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
 
     iput-boolean v7, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mSizeChanged:Z
 
@@ -3147,15 +3084,13 @@
 
     const/16 v2, 0x20
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mThmSizeType:B
-    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$202(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
+    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$102(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
 
     iget v2, v0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mCount:I
 
     if-eq v1, v2, :cond_3
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->setMediaItemCount(IZ)V
-    invoke-static {v0, v1, v4}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
+    invoke-static {v0, v1, v4}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$200(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
 
     iput-boolean v3, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mSizeChanged:Z
 
@@ -3205,8 +3140,7 @@
 
     aget-object v0, v7, v10
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mItemVersion:[J
-    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
+    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
 
     move-result-object v3
 
@@ -3280,8 +3214,7 @@
 
     aput-object v6, v7, v1
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mUpdated:[B
-    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
+    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
 
     move-result-object v7
 
@@ -3456,8 +3389,7 @@
     move-result-wide v6
 
     :goto_4
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mVersion:J
-    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$100(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)J
+    invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$000(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)J
 
     move-result-wide v8
 
@@ -3479,8 +3411,7 @@
     goto :goto_4
 
     :cond_9
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mVersion:J
-    invoke-static {v0, v6, v7}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$102(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;J)J
+    invoke-static {v0, v6, v7}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$002(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;J)J
 
     iput-object v4, v0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mMediaSet:Lcom/sec/android/gallery3d/data/MediaSet;
 
@@ -3505,15 +3436,13 @@
 
     iget-byte v8, v8, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$DataConfig;->mRetThmType:B
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mThmSizeType:B
-    invoke-static {v0, v8}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$202(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
+    invoke-static {v0, v8}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$102(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
 
     iget v8, v0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mCount:I
 
     if-eq v1, v8, :cond_b
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->setMediaItemCount(IZ)V
-    invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
+    invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$200(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
 
     const/4 v8, 0x1
 
@@ -3869,8 +3798,7 @@
     goto :goto_0
 
     :cond_3
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mUpdated:[B
-    invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
+    invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
 
     move-result-object v20
 
@@ -3880,8 +3808,7 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mThmSizeType:B
-    invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$200(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)B
+    invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$100(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)B
 
     move-result v13
 
@@ -4335,18 +4262,15 @@
 
     iget-object v9, v0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mMediaSet:Lcom/sec/android/gallery3d/data/MediaSet;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mSetVersion:[J
-    invoke-static/range {p1 .. p1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$600(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
+    invoke-static/range {p1 .. p1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
 
     move-result-object v13
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mItemVersion:[J
-    invoke-static/range {p1 .. p1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
+    invoke-static/range {p1 .. p1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[J
 
     move-result-object v8
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mUpdated:[B
-    invoke-static/range {p1 .. p1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$500(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
+    invoke-static/range {p1 .. p1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$400(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)[B
 
     move-result-object v16
 
@@ -5675,27 +5599,12 @@
 .end method
 
 .method public onPause(Z)V
-    .locals 2
+    .locals 1
 
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mIsActive:Z
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mBitmapDrawTask:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mBitmapDrawTask:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;->cancel(Z)Z
-
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mBitmapDrawTask:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    :cond_0
     invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->terminateReloadTask()V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mContext:Landroid/content/Context;
@@ -5710,16 +5619,16 @@
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_0
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->clearContents(Z)V
 
-    :cond_1
+    :cond_0
     return-void
 .end method
 
 .method public declared-synchronized onResume()V
-    .locals 2
+    .locals 1
 
     monitor-enter p0
 
@@ -5740,19 +5649,6 @@
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mViewListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$ViewListener;
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mBitmapDrawTask:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;-><init>(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$1;)V
-
-    iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->mBitmapDrawTask:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$BitmapDrawTask;
-
-    :cond_0
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader;->reloadData()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -6096,8 +5992,7 @@
     :goto_5
     move-wide/from16 v0, v20
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mVersion:J
-    invoke-static {v4, v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$102(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;J)J
+    invoke-static {v4, v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$002(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;J)J
 
     iput-object v10, v4, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mMediaSet:Lcom/sec/android/gallery3d/data/MediaSet;
 
@@ -6129,8 +6024,7 @@
 
     move/from16 v0, v19
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mThmSizeType:B
-    invoke-static {v4, v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$202(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
+    invoke-static {v4, v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$102(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;B)B
 
     iget v0, v4, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->mCount:I
 
@@ -6144,8 +6038,7 @@
 
     move/from16 v0, v19
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->setMediaItemCount(IZ)V
-    invoke-static {v4, v5, v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$300(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
+    invoke-static {v4, v5, v0}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;->access$200(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;IZ)V
 
     :cond_7
     const/16 v17, 0x0

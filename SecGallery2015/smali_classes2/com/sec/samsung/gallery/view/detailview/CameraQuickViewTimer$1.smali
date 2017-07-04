@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;->mOnFinishedListener:Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer$OnFinishedListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;->access$000(Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;)Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer$OnFinishedListener;
 
     move-result-object v0
@@ -45,7 +44,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;->mOnFinishedListener:Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer$OnFinishedListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;->access$000(Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;)Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer$OnFinishedListener;
 
     move-result-object v0
@@ -57,7 +55,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;->mQuitTimer:Landroid/os/CountDownTimer;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;->access$102(Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;Landroid/os/CountDownTimer;)Landroid/os/CountDownTimer;
 
     return-void

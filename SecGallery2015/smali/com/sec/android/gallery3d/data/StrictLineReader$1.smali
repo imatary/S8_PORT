@@ -64,7 +64,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/data/StrictLineReader$1;->this$0:Lcom/sec/android/gallery3d/data/StrictLineReader;
 
-    # getter for: Lcom/sec/android/gallery3d/data/StrictLineReader;->charset:Ljava/nio/charset/Charset;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/StrictLineReader;->access$000(Lcom/sec/android/gallery3d/data/StrictLineReader;)Ljava/nio/charset/Charset;
 
     move-result-object v5

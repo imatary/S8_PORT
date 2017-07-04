@@ -2917,7 +2917,6 @@
 
     iget v2, v2, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->mDefaultY:I
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PositionController$Platform;->doAnimation(III)Z
     invoke-static {v1, p1, v2, p4}, Lcom/sec/android/gallery3d/ui/PositionController$Platform;->access$400(Lcom/sec/android/gallery3d/ui/PositionController$Platform;III)Z
 
     move-result v0
@@ -2932,7 +2931,6 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/ui/PositionController$Box;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PositionController$Box;->doAnimation(IFI)Z
     invoke-static {v1, p2, p3, p4}, Lcom/sec/android/gallery3d/ui/PositionController$Box;->access$500(Lcom/sec/android/gallery3d/ui/PositionController$Box;IFI)Z
 
     move-result v1

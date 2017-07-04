@@ -35,14 +35,9 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+    .locals 0
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$29;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
-
-    const/4 v1, 0x0
-
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->handleSaveChanges(Z)V
-    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$28000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)V
+    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     return-void
 .end method
