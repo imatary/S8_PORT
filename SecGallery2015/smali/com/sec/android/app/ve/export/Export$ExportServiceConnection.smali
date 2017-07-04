@@ -44,12 +44,10 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/android/app/ve/export/Export;->mService:Lcom/sec/android/app/ve/export/IExportService;
     invoke-static {v1, v2}, Lcom/sec/android/app/ve/export/Export;->access$102(Lcom/sec/android/app/ve/export/Export;Lcom/sec/android/app/ve/export/IExportService;)Lcom/sec/android/app/ve/export/IExportService;
 
     iget-object v1, p0, Lcom/sec/android/app/ve/export/Export$ExportServiceConnection;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mService:Lcom/sec/android/app/ve/export/IExportService;
     invoke-static {v1}, Lcom/sec/android/app/ve/export/Export;->access$100(Lcom/sec/android/app/ve/export/Export;)Lcom/sec/android/app/ve/export/IExportService;
 
     move-result-object v1
@@ -58,7 +56,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/ve/export/Export$ExportServiceConnection;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mService:Lcom/sec/android/app/ve/export/IExportService;
     invoke-static {v1}, Lcom/sec/android/app/ve/export/Export;->access$100(Lcom/sec/android/app/ve/export/Export;)Lcom/sec/android/app/ve/export/IExportService;
 
     move-result-object v1
@@ -69,12 +66,10 @@
 
     const/4 v2, 0x1
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->setExportState(I)V
     invoke-static {v1, v2}, Lcom/sec/android/app/ve/export/Export;->access$200(Lcom/sec/android/app/ve/export/Export;I)V
 
     iget-object v1, p0, Lcom/sec/android/app/ve/export/Export$ExportServiceConnection;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mService:Lcom/sec/android/app/ve/export/IExportService;
     invoke-static {v1}, Lcom/sec/android/app/ve/export/Export;->access$100(Lcom/sec/android/app/ve/export/Export;)Lcom/sec/android/app/ve/export/IExportService;
 
     move-result-object v1
@@ -83,7 +78,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/ve/export/Export$ExportServiceConnection;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mHandler:Lcom/sec/android/app/ve/export/Export$ThreadHandler;
     invoke-static {v1}, Lcom/sec/android/app/ve/export/Export;->access$300(Lcom/sec/android/app/ve/export/Export;)Lcom/sec/android/app/ve/export/Export$ThreadHandler;
 
     move-result-object v1
@@ -121,7 +115,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/ve/export/Export;->mService:Lcom/sec/android/app/ve/export/IExportService;
     invoke-static {v0, v1}, Lcom/sec/android/app/ve/export/Export;->access$102(Lcom/sec/android/app/ve/export/Export;Lcom/sec/android/app/ve/export/IExportService;)Lcom/sec/android/app/ve/export/IExportService;
 
     return-void

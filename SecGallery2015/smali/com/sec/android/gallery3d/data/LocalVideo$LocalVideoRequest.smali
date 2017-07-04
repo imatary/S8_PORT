@@ -128,7 +128,6 @@
 
     check-cast v11, Lcom/sec/android/gallery3d/data/LocalVideo;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalVideo;->getVideoViewMode()I
     invoke-static {v11}, Lcom/sec/android/gallery3d/data/LocalVideo;->access$000(Lcom/sec/android/gallery3d/data/LocalVideo;)I
 
     move-result v11

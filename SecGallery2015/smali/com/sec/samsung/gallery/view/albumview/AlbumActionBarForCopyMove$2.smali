@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove$2;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;->access$200(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForCopyMove;)Landroid/app/ActionBar;
 
     move-result-object v0

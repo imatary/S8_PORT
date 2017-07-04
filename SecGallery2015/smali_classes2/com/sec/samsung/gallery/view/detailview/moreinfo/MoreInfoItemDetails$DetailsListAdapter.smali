@@ -596,7 +596,6 @@
     goto :goto_0
 
     :cond_3
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->IS_NOS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$2200()Z
 
     move-result v5
@@ -730,7 +729,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$DetailsListAdapter;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mOriginTitleName:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Ljava/lang/String;
 
     move-result-object v2
@@ -739,7 +737,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$DetailsListAdapter;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mOriginTitleName:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Ljava/lang/String;
 
     move-result-object v2
@@ -1074,7 +1071,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$DetailsListAdapter;->mItems:Ljava/util/ArrayList;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->URL_POSITION:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1600()I
 
     move-result v1
@@ -1083,14 +1079,12 @@
 
     const/4 v0, -0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->URL_POSITION:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1602(I)I
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$DetailsListAdapter;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mIsUrlWillBeDeleted:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$2102(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;Z)Z
 
     return-void
@@ -1192,7 +1186,6 @@
     if-eqz v18, :cond_1
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->FEATURE_USE_GO_TO_URL:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1500()Z
 
     move-result v18
@@ -1213,7 +1206,6 @@
 
     if-eqz v18, :cond_8
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->URL_POSITION:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1600()I
 
     move-result v18
@@ -1231,7 +1223,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mUseBlurBackground:Z
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1700(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Z
 
     move-result v18
@@ -1283,7 +1274,6 @@
     if-eqz v18, :cond_4
 
     :cond_3
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->FEATURE_USE_GO_TO_URL:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1500()Z
 
     move-result v18
@@ -1304,7 +1294,6 @@
 
     if-eqz v18, :cond_10
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->URL_POSITION:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1600()I
 
     move-result v18
@@ -1338,7 +1327,6 @@
 
     move-object/from16 v1, v18
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$002(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;Landroid/widget/EditText;)Landroid/widget/EditText;
 
     const v18, 0x7f1201c7
@@ -1395,7 +1383,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -1406,7 +1393,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mEditTitleTextWatcher:Landroid/text/TextWatcher;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1800(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/text/TextWatcher;
 
     move-result-object v19
@@ -1419,7 +1405,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -1434,7 +1419,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -1449,7 +1433,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -1464,7 +1447,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v18
@@ -1491,7 +1473,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v18
@@ -1514,7 +1495,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -1537,7 +1517,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v19
@@ -1618,7 +1597,6 @@
 
     move-result-object v19
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mOriginTitleName:Ljava/lang/String;
     invoke-static/range {v18 .. v19}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1302(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;Ljava/lang/String;)Ljava/lang/String;
 
     move-object/from16 v0, p0
@@ -1627,7 +1605,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleForDCRename:Ljava/lang/String;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$900(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Ljava/lang/String;
 
     move-result-object v18
@@ -1640,7 +1617,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -1651,7 +1627,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleForDCRename:Ljava/lang/String;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$900(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Ljava/lang/String;
 
     move-result-object v19
@@ -1666,7 +1641,6 @@
 
     const/16 v19, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleForDCRename:Ljava/lang/String;
     invoke-static/range {v18 .. v19}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$902(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_5
@@ -1677,7 +1651,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -1690,7 +1663,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -1701,7 +1673,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v19
@@ -1722,7 +1693,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -1791,7 +1761,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mUseBlurBackground:Z
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1700(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Z
 
     move-result v18
@@ -1834,7 +1803,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mOriginTitleName:Ljava/lang/String;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Ljava/lang/String;
 
     move-result-object v18
@@ -1847,7 +1815,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mOriginTitleName:Ljava/lang/String;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Ljava/lang/String;
 
     move-result-object v18
@@ -1872,7 +1839,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -1883,7 +1849,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mOriginTitleName:Ljava/lang/String;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Ljava/lang/String;
 
     move-result-object v19
@@ -1909,7 +1874,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -1920,7 +1884,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mOriginTitleName:Ljava/lang/String;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Ljava/lang/String;
 
     move-result-object v19
@@ -1930,14 +1893,12 @@
     goto/16 :goto_1
 
     :cond_c
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->FEATURE_USE_GO_TO_URL:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1500()Z
 
     move-result v18
 
     if-eqz v18, :cond_d
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->URL_POSITION:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1600()I
 
     move-result v18
@@ -1968,7 +1929,6 @@
 
     const/16 v19, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mIsUrlWillBeDeleted:Z
     invoke-static/range {v18 .. v19}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$2102(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;Z)Z
 
     const v18, 0x7f1201ca
@@ -2013,7 +1973,7 @@
 
     move-result-object v18
 
-    const v19, 0x7f0a08a6
+    const v19, 0x7f0a08b4
 
     invoke-virtual/range {v18 .. v19}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2056,7 +2016,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleEditText:Landroid/widget/EditText;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/widget/EditText;
 
     move-result-object v18
@@ -2257,7 +2216,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mEditedTitleName:Ljava/lang/String;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Ljava/lang/String;
 
     move-result-object v18
@@ -2270,7 +2228,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mEditedTitleName:Ljava/lang/String;
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Ljava/lang/String;
 
     move-result-object v18
@@ -2289,7 +2246,6 @@
 
     move-object/from16 v18, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mIsActionDone:Z
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Z
 
     move-result v18
@@ -2551,7 +2507,6 @@
 
     move-result-object v19
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mOriginTitleName:Ljava/lang/String;
     invoke-static/range {v18 .. v19}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1302(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;Ljava/lang/String;)Ljava/lang/String;
 
     invoke-virtual/range {p0 .. p1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$DetailsListAdapter;->getItem(I)Ljava/lang/String;
@@ -2614,7 +2569,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mOriginTitleName:Ljava/lang/String;
     invoke-static/range {v19 .. v19}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Ljava/lang/String;
 
     move-result-object v19

@@ -3,6 +3,8 @@
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@id/action_share" android:visible="false" android:title="@string/share_short" android:showAsAction="ifRoom" />
     <item android:id="@id/action_delete" android:visible="false" android:title="@string/delete" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_rotate_ccw" android:visible="false" android:title="@string/rotate_left" android:showAsAction="never" />
+    <item android:id="@id/action_rotate_cw" android:visible="false" android:title="@string/rotate_right" android:showAsAction="never" />
     <item android:id="@id/action_copy" android:visible="false" android:title="@string/copy_to_album" android:showAsAction="never" />
     <item android:id="@id/action_move" android:visible="false" android:title="@string/move_to_album" android:showAsAction="never" />
     <item android:id="@id/action_add_to_event" android:visible="false" android:title="@string/add_to_event" android:showAsAction="never" />
@@ -21,4 +23,5 @@
     <item android:id="@id/action_gif_done" android:visible="false" android:title="@string/create_agif" android:showAsAction="ifRoom" />
     <item android:id="@id/action_collage_done" android:visible="false" android:title="@string/sa_collage" android:showAsAction="ifRoom" />
     <item android:id="@id/action_channel_add" android:visible="false" android:title="@string/add_friends" android:showAsAction="never" />
+    <item android:id="@id/action_printer" android:visible="false" android:title="@string/printer" android:showAsAction="never" />
 </menu>

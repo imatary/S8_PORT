@@ -57,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/FestivalClustering$DateComparator;->this$0:Lcom/sec/android/gallery3d/data/FestivalClustering;
 
-    # getter for: Lcom/sec/android/gallery3d/data/FestivalClustering;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/FestivalClustering;->access$000(Lcom/sec/android/gallery3d/data/FestivalClustering;)Landroid/content/Context;
 
     move-result-object v0

@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$900(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v1

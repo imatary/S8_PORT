@@ -40,7 +40,6 @@
 
     iput-object p1, p0, Lcom/sec/android/gallery3d/data/LruImageCache$ImageCacheParams;->mContext:Landroid/content/Context;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LruImageCache;->getDiskCacheDir(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
     invoke-static {p1, p2}, Lcom/sec/android/gallery3d/data/LruImageCache;->access$200(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0

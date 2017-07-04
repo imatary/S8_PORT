@@ -48,7 +48,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mCurrTransElement:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$500(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v0
@@ -59,7 +58,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mCurrTransElement:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$500(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v0
@@ -99,7 +97,6 @@
 
     iget-object v4, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mPreview:Lcom/sec/android/app/ve/PreviewPlayerInterface;
     invoke-static {v4}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$000(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/sec/android/app/ve/PreviewPlayerInterface;
 
     move-result-object v4
@@ -136,7 +133,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mCurrTransElement:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$500(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v0
@@ -157,12 +153,10 @@
 
     sget-object v1, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;->paused:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
 
-    # setter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mPlayerState:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
     invoke-static {v0, v1}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$302(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mFSListener:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControlInterface;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$1000(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControlInterface;
 
     move-result-object v0
@@ -203,7 +197,6 @@
 
     iget-object v2, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mPreview:Lcom/sec/android/app/ve/PreviewPlayerInterface;
     invoke-static {v2}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$000(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/sec/android/app/ve/PreviewPlayerInterface;
 
     move-result-object v2
@@ -230,12 +223,10 @@
 
     sget-object v1, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;->completed:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
 
-    # setter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mPlayerState:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
     invoke-static {v0, v1}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$302(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$800(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Landroid/os/Handler;
 
     move-result-object v0
@@ -250,12 +241,10 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # invokes: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->refreshPreviewForCurrentSeekBarPosition(I)V
     invoke-static {v0, v3}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$900(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;I)V
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->playerControl:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$700(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
 
     move-result-object v0
@@ -264,7 +253,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->playerControl:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$700(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
 
     move-result-object v0
@@ -292,12 +280,10 @@
 
     sget-object v1, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;->completed:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
 
-    # setter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mPlayerState:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
     invoke-static {v0, v1}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$302(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mFSListener:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControlInterface;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$1000(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControlInterface;
 
     move-result-object v0
@@ -312,7 +298,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->playerControl:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$700(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
 
     move-result-object v0
@@ -321,7 +306,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->playerControl:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$700(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
 
     move-result-object v0
@@ -343,14 +327,12 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # invokes: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->updateCoverImage()V
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$600(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)V
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
     sget-object v1, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;->playing:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
 
-    # setter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mPlayerState:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
     invoke-static {v0, v1}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$302(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
 
     const-string/jumbo v0, "HighlightVideoAnalyser"
@@ -367,7 +349,6 @@
 
     iget-object v2, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mPreview:Lcom/sec/android/app/ve/PreviewPlayerInterface;
     invoke-static {v2}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$000(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/sec/android/app/ve/PreviewPlayerInterface;
 
     move-result-object v2
@@ -392,7 +373,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->playerControl:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$700(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
 
     move-result-object v0
@@ -401,7 +381,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->playerControl:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$700(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
 
     move-result-object v0
@@ -425,7 +404,6 @@
 
     sget-object v1, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;->completed:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
 
-    # setter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mPlayerState:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
     invoke-static {v0, v1}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$302(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$HighlightPlayerState;
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
@@ -436,7 +414,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->wasPlayingBeforeProgressTouch:Z
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$100(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Z
 
     move-result v0
@@ -445,7 +422,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mCurrTransElement:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$500(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v0
@@ -455,7 +431,6 @@
     :cond_0
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->playerControl:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$700(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
 
     move-result-object v0
@@ -464,7 +439,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->playerControl:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$700(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PlayerControl;
 
     move-result-object v0
@@ -486,7 +460,6 @@
 
     iget-object v2, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$PreviewAdapter;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mPreview:Lcom/sec/android/app/ve/PreviewPlayerInterface;
     invoke-static {v2}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$000(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/sec/android/app/ve/PreviewPlayerInterface;
 
     move-result-object v2

@@ -49,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$13;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mIsListViewVisible:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)Z
 
     move-result v0

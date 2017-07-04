@@ -42,7 +42,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/DetailsDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/DetailsDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/DetailsDialog;->unregisterSdCardReceiver()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/DetailsDialog;->access$100(Lcom/sec/samsung/gallery/view/common/DetailsDialog;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/DetailsDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/DetailsDialog;

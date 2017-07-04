@@ -48,7 +48,6 @@
     :try_start_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick$3;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;->access$400(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3

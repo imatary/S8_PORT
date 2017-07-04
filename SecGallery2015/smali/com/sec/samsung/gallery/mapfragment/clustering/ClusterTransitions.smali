@@ -41,14 +41,12 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitions$Builder;->animatedTransitions:Ljava/util/ArrayList;
     invoke-static {p1}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitions$Builder;->access$000(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitions$Builder;)Ljava/util/ArrayList;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitions;->animated:Ljava/util/ArrayList;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitions$Builder;->stationaryTransitions:Ljava/util/ArrayList;
     invoke-static {p1}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitions$Builder;->access$100(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitions$Builder;)Ljava/util/ArrayList;
 
     move-result-object v0

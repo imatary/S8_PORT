@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/scloud/SCloudAlbumSet$1;->this$0:Lcom/sec/android/gallery3d/remote/scloud/SCloudAlbumSet;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/scloud/SCloudAlbumSet;->mPendingNotifier:Lcom/sec/android/gallery3d/data/ChangeNotifier;
     invoke-static {v0}, Lcom/sec/android/gallery3d/remote/scloud/SCloudAlbumSet;->access$000(Lcom/sec/android/gallery3d/remote/scloud/SCloudAlbumSet;)Lcom/sec/android/gallery3d/data/ChangeNotifier;
 
     move-result-object v0

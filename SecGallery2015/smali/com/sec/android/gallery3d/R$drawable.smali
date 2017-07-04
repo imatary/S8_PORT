@@ -1261,7 +1261,7 @@
 
 .field public static final next_image_button:I = 0x7f02026e
 
-.field public static final notification_template_icon_bg:I = 0x7f02038c
+.field public static final notification_template_icon_bg:I = 0x7f02038e
 
 .field public static final photo_crop_handler:I = 0x7f02026f
 
@@ -1303,9 +1303,9 @@
 
 .field public static final previous_image_button:I = 0x7f020282
 
-.field public static final progressbar_bg_color:I = 0x7f02038d
+.field public static final progressbar_bg_color:I = 0x7f02038f
 
-.field public static final progressbar_color:I = 0x7f02038e
+.field public static final progressbar_color:I = 0x7f020390
 
 .field public static final quick_panel_ripple_button:I = 0x7f020283
 
@@ -1365,479 +1365,483 @@
 
 .field public static final search_thumbnail_border:I = 0x7f02029f
 
-.field public static final search_thumbnail_border_for_nos:I = 0x7f0202a0
+.field public static final search_thumbnail_border_dex:I = 0x7f0202a0
 
-.field public static final search_thumbnail_default_border:I = 0x7f0202a1
+.field public static final search_thumbnail_border_for_nos:I = 0x7f0202a1
 
-.field public static final search_thumbnail_focus_border:I = 0x7f0202a2
+.field public static final search_thumbnail_default_border:I = 0x7f0202a2
 
-.field public static final search_view_btn_bg_for_show_button_background:I = 0x7f0202a3
+.field public static final search_thumbnail_focus_border:I = 0x7f0202a3
 
-.field public static final select_tv_row_icon_bg:I = 0x7f0202a4
+.field public static final search_thumbnail_focus_border_dex:I = 0x7f0202a4
 
-.field public static final selectall_all_text_color:I = 0x7f0202a5
+.field public static final search_view_btn_bg_for_show_button_background:I = 0x7f0202a5
 
-.field public static final selectall_text_color:I = 0x7f0202a6
+.field public static final select_tv_row_icon_bg:I = 0x7f0202a6
 
-.field public static final selectall_text_color_picker_tablet:I = 0x7f0202a7
+.field public static final selectall_all_text_color:I = 0x7f0202a7
 
-.field public static final selection_buffer_item_selector:I = 0x7f0202a8
+.field public static final selectall_text_color:I = 0x7f0202a8
 
-.field public static final selection_buffer_thumbnail_bg:I = 0x7f0202a9
+.field public static final selectall_text_color_picker_tablet:I = 0x7f0202a9
 
-.field public static final selection_buffer_thumbnail_stroke:I = 0x7f0202aa
+.field public static final selection_buffer_item_selector:I = 0x7f0202aa
 
-.field public static final sem_btn_check_to_on_mtrl_000:I = 0x7f0202ab
+.field public static final selection_buffer_thumbnail_bg:I = 0x7f0202ab
 
-.field public static final sem_btn_check_to_on_mtrl_001:I = 0x7f0202ac
+.field public static final selection_buffer_thumbnail_stroke:I = 0x7f0202ac
 
-.field public static final sem_btn_check_to_on_mtrl_002:I = 0x7f0202ad
+.field public static final sem_btn_check_to_on_mtrl_000:I = 0x7f0202ad
 
-.field public static final sem_btn_check_to_on_mtrl_003:I = 0x7f0202ae
+.field public static final sem_btn_check_to_on_mtrl_001:I = 0x7f0202ae
 
-.field public static final sem_btn_check_to_on_mtrl_004:I = 0x7f0202af
+.field public static final sem_btn_check_to_on_mtrl_002:I = 0x7f0202af
 
-.field public static final sem_btn_check_to_on_mtrl_005:I = 0x7f0202b0
+.field public static final sem_btn_check_to_on_mtrl_003:I = 0x7f0202b0
 
-.field public static final sem_btn_check_to_on_mtrl_006:I = 0x7f0202b1
+.field public static final sem_btn_check_to_on_mtrl_004:I = 0x7f0202b1
 
-.field public static final sem_btn_check_to_on_mtrl_007:I = 0x7f0202b2
+.field public static final sem_btn_check_to_on_mtrl_005:I = 0x7f0202b2
 
-.field public static final sem_btn_check_to_on_mtrl_008:I = 0x7f0202b3
+.field public static final sem_btn_check_to_on_mtrl_006:I = 0x7f0202b3
 
-.field public static final sem_btn_check_to_on_mtrl_009:I = 0x7f0202b4
+.field public static final sem_btn_check_to_on_mtrl_007:I = 0x7f0202b4
 
-.field public static final sem_btn_check_to_on_mtrl_010:I = 0x7f0202b5
+.field public static final sem_btn_check_to_on_mtrl_008:I = 0x7f0202b5
 
-.field public static final sem_btn_check_to_on_mtrl_011:I = 0x7f0202b6
+.field public static final sem_btn_check_to_on_mtrl_009:I = 0x7f0202b6
 
-.field public static final sem_btn_check_to_on_mtrl_012:I = 0x7f0202b7
+.field public static final sem_btn_check_to_on_mtrl_010:I = 0x7f0202b7
 
-.field public static final sem_btn_check_to_on_mtrl_013:I = 0x7f0202b8
+.field public static final sem_btn_check_to_on_mtrl_011:I = 0x7f0202b8
 
-.field public static final sem_btn_check_to_on_mtrl_014:I = 0x7f0202b9
+.field public static final sem_btn_check_to_on_mtrl_012:I = 0x7f0202b9
 
-.field public static final sem_btn_check_to_on_mtrl_015:I = 0x7f0202ba
+.field public static final sem_btn_check_to_on_mtrl_013:I = 0x7f0202ba
 
-.field public static final sem_btn_check_to_on_mtrl_016:I = 0x7f0202bb
+.field public static final sem_btn_check_to_on_mtrl_014:I = 0x7f0202bb
 
-.field public static final sem_btn_check_to_on_mtrl_017:I = 0x7f0202bc
+.field public static final sem_btn_check_to_on_mtrl_015:I = 0x7f0202bc
 
-.field public static final sem_btn_check_to_on_mtrl_018:I = 0x7f0202bd
+.field public static final sem_btn_check_to_on_mtrl_016:I = 0x7f0202bd
 
-.field public static final sem_btn_check_to_on_mtrl_019:I = 0x7f0202be
+.field public static final sem_btn_check_to_on_mtrl_017:I = 0x7f0202be
 
-.field public static final sem_btn_check_to_on_mtrl_020:I = 0x7f0202bf
+.field public static final sem_btn_check_to_on_mtrl_018:I = 0x7f0202bf
 
-.field public static final sem_btn_check_to_on_mtrl_021:I = 0x7f0202c0
+.field public static final sem_btn_check_to_on_mtrl_019:I = 0x7f0202c0
 
-.field public static final sem_btn_check_to_on_mtrl_022:I = 0x7f0202c1
+.field public static final sem_btn_check_to_on_mtrl_020:I = 0x7f0202c1
 
-.field public static final sem_btn_check_to_on_mtrl_023:I = 0x7f0202c2
+.field public static final sem_btn_check_to_on_mtrl_021:I = 0x7f0202c2
 
-.field public static final sem_btn_check_to_on_mtrl_024:I = 0x7f0202c3
+.field public static final sem_btn_check_to_on_mtrl_022:I = 0x7f0202c3
 
-.field public static final sem_btn_check_to_on_mtrl_025:I = 0x7f0202c4
+.field public static final sem_btn_check_to_on_mtrl_023:I = 0x7f0202c4
 
-.field public static final sem_btn_check_to_on_mtrl_026:I = 0x7f0202c5
+.field public static final sem_btn_check_to_on_mtrl_024:I = 0x7f0202c5
 
-.field public static final sem_btn_check_to_on_mtrl_027:I = 0x7f0202c6
+.field public static final sem_btn_check_to_on_mtrl_025:I = 0x7f0202c6
 
-.field public static final sem_btn_check_to_on_mtrl_028:I = 0x7f0202c7
+.field public static final sem_btn_check_to_on_mtrl_026:I = 0x7f0202c7
 
-.field public static final sem_btn_check_to_on_mtrl_029:I = 0x7f0202c8
+.field public static final sem_btn_check_to_on_mtrl_027:I = 0x7f0202c8
 
-.field public static final sfinder_tips_close:I = 0x7f0202c9
+.field public static final sem_btn_check_to_on_mtrl_028:I = 0x7f0202c9
 
-.field public static final show_btn_background_in_action_bar_for_grace:I = 0x7f0202ca
+.field public static final sem_btn_check_to_on_mtrl_029:I = 0x7f0202ca
 
-.field public static final show_btn_background_in_title_for_grace:I = 0x7f0202cb
+.field public static final sfinder_tips_close:I = 0x7f0202cb
 
-.field public static final show_btn_shapes_in_action_bar_for_grace:I = 0x7f0202cc
+.field public static final show_btn_background_in_action_bar_for_grace:I = 0x7f0202cc
 
-.field public static final show_btn_shapes_in_title_for_grace:I = 0x7f0202cd
+.field public static final show_btn_background_in_title_for_grace:I = 0x7f0202cd
 
-.field public static final slideshow_btn_bg_for_show_button_background:I = 0x7f0202ce
+.field public static final show_btn_shapes_in_action_bar_for_grace:I = 0x7f0202ce
 
-.field public static final slideshow_ripple_effect_play_icon:I = 0x7f0202cf
+.field public static final show_btn_shapes_in_title_for_grace:I = 0x7f0202cf
 
-.field public static final slideview_btn_shape_drawable_with_inset:I = 0x7f0202d0
+.field public static final slideshow_btn_bg_for_show_button_background:I = 0x7f0202d0
 
-.field public static final smartly_input_ic_screen_normal:I = 0x7f0202d1
+.field public static final slideshow_ripple_effect_play_icon:I = 0x7f0202d1
 
-.field public static final sms_icon_bg:I = 0x7f0202d2
+.field public static final slideview_btn_shape_drawable_with_inset:I = 0x7f0202d2
 
-.field public static final sms_icon_bg_new:I = 0x7f0202d3
+.field public static final smartly_input_ic_screen_normal:I = 0x7f0202d3
 
-.field public static final sound_pause:I = 0x7f0202d4
+.field public static final sms_icon_bg:I = 0x7f0202d4
 
-.field public static final sound_play:I = 0x7f0202d5
+.field public static final sms_icon_bg_new:I = 0x7f0202d5
 
-.field public static final spinner_76_inner_holo:I = 0x7f0202d6
+.field public static final sound_pause:I = 0x7f0202d6
 
-.field public static final spinner_bg_for_show_button_background:I = 0x7f0202d7
+.field public static final sound_play:I = 0x7f0202d7
 
-.field public static final spinner_count_icon_bg:I = 0x7f0202d8
+.field public static final spinner_76_inner_holo:I = 0x7f0202d8
 
-.field public static final spinner_count_icon_bg_with_long_text:I = 0x7f0202d9
+.field public static final spinner_bg_for_show_button_background:I = 0x7f0202d9
 
-.field public static final spinner_listpoup_bg:I = 0x7f0202da
+.field public static final spinner_count_icon_bg:I = 0x7f0202da
 
-.field public static final spinner_ripple_bg:I = 0x7f0202db
+.field public static final spinner_count_icon_bg_with_long_text:I = 0x7f0202db
 
-.field public static final spinner_shape_bg:I = 0x7f0202dc
+.field public static final spinner_listpoup_bg:I = 0x7f0202dc
 
-.field public static final split_album_thumb_stroke:I = 0x7f0202dd
+.field public static final spinner_ripple_bg:I = 0x7f0202dd
 
-.field public static final split_album_thumb_stroke_over_30:I = 0x7f0202de
+.field public static final spinner_shape_bg:I = 0x7f0202de
 
-.field public static final split_albumview_title_bg:I = 0x7f0202df
+.field public static final split_album_thumb_stroke:I = 0x7f0202df
 
-.field public static final split_albumview_title_bg_over_30:I = 0x7f0202e0
+.field public static final split_album_thumb_stroke_over_30:I = 0x7f0202e0
 
-.field public static final split_newalbum_thumb_stroke:I = 0x7f0202e1
+.field public static final split_albumview_title_bg:I = 0x7f0202e1
 
-.field public static final stat_notify_gallery:I = 0x7f0202e2
+.field public static final split_albumview_title_bg_over_30:I = 0x7f0202e2
 
-.field public static final stat_sys_hdmi:I = 0x7f0202e3
+.field public static final split_newalbum_thumb_stroke:I = 0x7f0202e3
 
-.field public static final sub_app_bar_background:I = 0x7f0202e4
+.field public static final stat_notify_gallery:I = 0x7f0202e4
 
-.field public static final suggestion_divider:I = 0x7f0202e5
+.field public static final stat_sys_hdmi:I = 0x7f0202e5
 
-.field public static final tab_indicator_line_drawable:I = 0x7f0202e6
+.field public static final sub_app_bar_background:I = 0x7f0202e6
 
-.field public static final tab_ripple_bg:I = 0x7f0202e7
+.field public static final suggestion_divider:I = 0x7f0202e7
 
-.field public static final thumbnail_image_error:I = 0x7f0202e8
+.field public static final tab_indicator_line_drawable:I = 0x7f0202e8
 
-.field public static final thumbnail_image_error_grace:I = 0x7f0202e9
+.field public static final tab_ripple_bg:I = 0x7f0202e9
 
-.field public static final thumbnail_video_error:I = 0x7f0202ea
+.field public static final thumbnail_image_error:I = 0x7f0202ea
 
-.field public static final thumbnail_video_error_grace:I = 0x7f0202eb
+.field public static final thumbnail_image_error_grace:I = 0x7f0202eb
 
-.field public static final timeview_title_selected_border:I = 0x7f0202ec
+.field public static final thumbnail_video_error:I = 0x7f0202ec
 
-.field public static final tip_card_view_card_bg:I = 0x7f0202ed
+.field public static final thumbnail_video_error_grace:I = 0x7f0202ed
 
-.field public static final transparent_bg:I = 0x7f02038f
+.field public static final timeview_title_selected_border:I = 0x7f0202ee
 
-.field public static final tw_ab_spinner_background_mtrl_am_alpha:I = 0x7f0202ee
+.field public static final tip_card_view_card_bg:I = 0x7f0202ef
 
-.field public static final tw_action_bar_divider_mtrl:I = 0x7f0202ef
+.field public static final transparent_bg:I = 0x7f020391
 
-.field public static final tw_action_bar_icon_cancel_02_disabled_holo_dark:I = 0x7f0202f0
+.field public static final tw_ab_spinner_background_mtrl_am_alpha:I = 0x7f0202f0
 
-.field public static final tw_action_bar_icon_cancel_02_holo_dark:I = 0x7f0202f1
+.field public static final tw_action_bar_divider_mtrl:I = 0x7f0202f1
 
-.field public static final tw_action_bar_icon_current_location_mtrl:I = 0x7f0202f2
+.field public static final tw_action_bar_icon_cancel_02_disabled_holo_dark:I = 0x7f0202f2
 
-.field public static final tw_action_bar_icon_current_location_mtrl_dream:I = 0x7f0202f3
+.field public static final tw_action_bar_icon_cancel_02_holo_dark:I = 0x7f0202f3
 
-.field public static final tw_btn_check_bg_mtrl:I = 0x7f0202f4
+.field public static final tw_action_bar_icon_current_location_mtrl:I = 0x7f0202f4
 
-.field public static final tw_btn_check_to_on_mtrl_000:I = 0x7f0202f5
+.field public static final tw_action_bar_icon_current_location_mtrl_dream:I = 0x7f0202f5
 
-.field public static final tw_btn_check_to_on_mtrl_000_for_tablet:I = 0x7f0202f6
+.field public static final tw_btn_check_bg_mtrl:I = 0x7f0202f6
 
-.field public static final tw_btn_check_to_on_mtrl_001:I = 0x7f0202f7
+.field public static final tw_btn_check_to_on_mtrl_000:I = 0x7f0202f7
 
-.field public static final tw_btn_check_to_on_mtrl_001_for_tablet:I = 0x7f0202f8
+.field public static final tw_btn_check_to_on_mtrl_000_for_tablet:I = 0x7f0202f8
 
-.field public static final tw_btn_check_to_on_mtrl_002:I = 0x7f0202f9
+.field public static final tw_btn_check_to_on_mtrl_001:I = 0x7f0202f9
 
-.field public static final tw_btn_check_to_on_mtrl_002_for_tablet:I = 0x7f0202fa
+.field public static final tw_btn_check_to_on_mtrl_001_for_tablet:I = 0x7f0202fa
 
-.field public static final tw_btn_check_to_on_mtrl_003:I = 0x7f0202fb
+.field public static final tw_btn_check_to_on_mtrl_002:I = 0x7f0202fb
 
-.field public static final tw_btn_check_to_on_mtrl_003_for_tablet:I = 0x7f0202fc
+.field public static final tw_btn_check_to_on_mtrl_002_for_tablet:I = 0x7f0202fc
 
-.field public static final tw_btn_check_to_on_mtrl_004:I = 0x7f0202fd
+.field public static final tw_btn_check_to_on_mtrl_003:I = 0x7f0202fd
 
-.field public static final tw_btn_check_to_on_mtrl_004_for_tablet:I = 0x7f0202fe
+.field public static final tw_btn_check_to_on_mtrl_003_for_tablet:I = 0x7f0202fe
 
-.field public static final tw_btn_check_to_on_mtrl_005:I = 0x7f0202ff
+.field public static final tw_btn_check_to_on_mtrl_004:I = 0x7f0202ff
 
-.field public static final tw_btn_check_to_on_mtrl_005_for_tablet:I = 0x7f020300
+.field public static final tw_btn_check_to_on_mtrl_004_for_tablet:I = 0x7f020300
 
-.field public static final tw_btn_check_to_on_mtrl_006:I = 0x7f020301
+.field public static final tw_btn_check_to_on_mtrl_005:I = 0x7f020301
 
-.field public static final tw_btn_check_to_on_mtrl_006_for_tablet:I = 0x7f020302
+.field public static final tw_btn_check_to_on_mtrl_005_for_tablet:I = 0x7f020302
 
-.field public static final tw_btn_check_to_on_mtrl_007:I = 0x7f020303
+.field public static final tw_btn_check_to_on_mtrl_006:I = 0x7f020303
 
-.field public static final tw_btn_check_to_on_mtrl_007_for_tablet:I = 0x7f020304
+.field public static final tw_btn_check_to_on_mtrl_006_for_tablet:I = 0x7f020304
 
-.field public static final tw_btn_check_to_on_mtrl_008:I = 0x7f020305
+.field public static final tw_btn_check_to_on_mtrl_007:I = 0x7f020305
 
-.field public static final tw_btn_check_to_on_mtrl_008_for_tablet:I = 0x7f020306
+.field public static final tw_btn_check_to_on_mtrl_007_for_tablet:I = 0x7f020306
 
-.field public static final tw_btn_check_to_on_mtrl_009:I = 0x7f020307
+.field public static final tw_btn_check_to_on_mtrl_008:I = 0x7f020307
 
-.field public static final tw_btn_check_to_on_mtrl_009_for_tablet:I = 0x7f020308
+.field public static final tw_btn_check_to_on_mtrl_008_for_tablet:I = 0x7f020308
 
-.field public static final tw_btn_check_to_on_mtrl_010:I = 0x7f020309
+.field public static final tw_btn_check_to_on_mtrl_009:I = 0x7f020309
 
-.field public static final tw_btn_check_to_on_mtrl_010_for_tablet:I = 0x7f02030a
+.field public static final tw_btn_check_to_on_mtrl_009_for_tablet:I = 0x7f02030a
 
-.field public static final tw_btn_check_to_on_mtrl_011:I = 0x7f02030b
+.field public static final tw_btn_check_to_on_mtrl_010:I = 0x7f02030b
 
-.field public static final tw_btn_check_to_on_mtrl_012:I = 0x7f02030c
+.field public static final tw_btn_check_to_on_mtrl_010_for_tablet:I = 0x7f02030c
 
-.field public static final tw_btn_check_to_on_mtrl_012_for_tablet:I = 0x7f02030d
+.field public static final tw_btn_check_to_on_mtrl_011:I = 0x7f02030d
 
-.field public static final tw_btn_check_to_on_mtrl_013:I = 0x7f02030e
+.field public static final tw_btn_check_to_on_mtrl_012:I = 0x7f02030e
 
-.field public static final tw_btn_check_to_on_mtrl_013_for_tablet:I = 0x7f02030f
+.field public static final tw_btn_check_to_on_mtrl_012_for_tablet:I = 0x7f02030f
 
-.field public static final tw_btn_check_to_on_mtrl_014:I = 0x7f020310
+.field public static final tw_btn_check_to_on_mtrl_013:I = 0x7f020310
 
-.field public static final tw_btn_check_to_on_mtrl_014_for_tablet:I = 0x7f020311
+.field public static final tw_btn_check_to_on_mtrl_013_for_tablet:I = 0x7f020311
 
-.field public static final tw_btn_check_to_on_mtrl_015:I = 0x7f020312
+.field public static final tw_btn_check_to_on_mtrl_014:I = 0x7f020312
 
-.field public static final tw_btn_check_to_on_mtrl_015_for_tablet:I = 0x7f020313
+.field public static final tw_btn_check_to_on_mtrl_014_for_tablet:I = 0x7f020313
 
-.field public static final tw_btn_default_disabled_holo_dark:I = 0x7f020314
+.field public static final tw_btn_check_to_on_mtrl_015:I = 0x7f020314
 
-.field public static final tw_btn_default_normal_holo_dark:I = 0x7f020315
+.field public static final tw_btn_check_to_on_mtrl_015_for_tablet:I = 0x7f020315
 
-.field public static final tw_btn_default_pressed_holo_dark:I = 0x7f020316
+.field public static final tw_btn_default_disabled_holo_dark:I = 0x7f020316
 
-.field public static final tw_card_type_close_mtrl:I = 0x7f020317
+.field public static final tw_btn_default_normal_holo_dark:I = 0x7f020317
 
-.field public static final tw_common_textfield_activated_mtrl_alpha:I = 0x7f020318
+.field public static final tw_btn_default_pressed_holo_dark:I = 0x7f020318
 
-.field public static final tw_common_textfield_default_mtrl_alpha:I = 0x7f020319
+.field public static final tw_card_type_close_mtrl:I = 0x7f020319
 
-.field public static final tw_custom_text_action_btn_background:I = 0x7f02031a
+.field public static final tw_common_textfield_activated_mtrl_alpha:I = 0x7f02031a
 
-.field public static final tw_divider_ab_holo_light:I = 0x7f02031b
+.field public static final tw_common_textfield_default_mtrl_alpha:I = 0x7f02031b
 
-.field public static final tw_expander_close_mtrl_alpha:I = 0x7f02031c
+.field public static final tw_custom_text_action_btn_background:I = 0x7f02031c
 
-.field public static final tw_expander_open_mtrl_alpha:I = 0x7f02031d
+.field public static final tw_divider_ab_holo_light:I = 0x7f02031d
 
-.field public static final tw_fab_add_mtrl:I = 0x7f02031e
+.field public static final tw_expander_close_mtrl_alpha:I = 0x7f02031e
 
-.field public static final tw_fluid_scrollbar_handle_right_bg_mtrl:I = 0x7f02031f
+.field public static final tw_expander_open_mtrl_alpha:I = 0x7f02031f
 
-.field public static final tw_fullscreen_bg_mtrl:I = 0x7f020320
+.field public static final tw_fab_add_mtrl:I = 0x7f020320
 
-.field public static final tw_ic_ab_back_material:I = 0x7f020321
+.field public static final tw_fluid_scrollbar_handle_right_bg_mtrl:I = 0x7f020321
 
-.field public static final tw_ic_ab_back_material_detailview:I = 0x7f020322
+.field public static final tw_fullscreen_bg_mtrl:I = 0x7f020322
 
-.field public static final tw_ic_ab_back_mtrl:I = 0x7f020323
+.field public static final tw_ic_ab_back_material:I = 0x7f020323
 
-.field public static final tw_ic_ab_back_mtrl_detailview:I = 0x7f020324
+.field public static final tw_ic_ab_back_material_detailview:I = 0x7f020324
 
-.field public static final tw_ic_ab_back_mtrl_with_inset:I = 0x7f020325
+.field public static final tw_ic_ab_back_mtrl:I = 0x7f020325
 
-.field public static final tw_ic_ab_search_mtrl:I = 0x7f020326
+.field public static final tw_ic_ab_back_mtrl_detailview:I = 0x7f020326
 
-.field public static final tw_label_toast_frame_mtrl:I = 0x7f020327
+.field public static final tw_ic_ab_back_mtrl_with_inset:I = 0x7f020327
 
-.field public static final tw_list_icon_check_to_caller_id_mtrl:I = 0x7f020328
+.field public static final tw_ic_ab_search_mtrl:I = 0x7f020328
 
-.field public static final tw_list_icon_circle_mtrl:I = 0x7f020329
+.field public static final tw_label_toast_frame_mtrl:I = 0x7f020329
 
-.field public static final tw_list_icon_create_mtrl:I = 0x7f02032a
+.field public static final tw_list_icon_check_to_caller_id_mtrl:I = 0x7f02032a
 
-.field public static final tw_list_icon_create_mtrl_create_album_top:I = 0x7f02032b
+.field public static final tw_list_icon_circle_mtrl:I = 0x7f02032b
 
-.field public static final tw_list_icon_create_mtrl_icon:I = 0x7f02032c
+.field public static final tw_list_icon_create_mtrl:I = 0x7f02032c
 
-.field public static final tw_list_icon_minus_mtrl:I = 0x7f02032d
+.field public static final tw_list_icon_create_mtrl_create_album_top:I = 0x7f02032d
 
-.field public static final tw_list_icon_reoder_tinted:I = 0x7f02032e
+.field public static final tw_list_icon_create_mtrl_icon:I = 0x7f02032e
 
-.field public static final tw_list_icon_reorder:I = 0x7f02032f
+.field public static final tw_list_icon_minus_mtrl:I = 0x7f02032f
 
-.field public static final tw_menu_dropdown_panel_holo_light:I = 0x7f020330
+.field public static final tw_list_icon_reoder_tinted:I = 0x7f020330
 
-.field public static final tw_noti_badge_mtrl:I = 0x7f020331
+.field public static final tw_list_icon_reorder:I = 0x7f020331
 
-.field public static final tw_noti_badge_mtrl_tab:I = 0x7f020332
+.field public static final tw_menu_dropdown_panel_holo_light:I = 0x7f020332
 
-.field public static final tw_scroll_popup_bg_holo_dark:I = 0x7f020333
+.field public static final tw_noti_badge_mtrl:I = 0x7f020333
 
-.field public static final tw_scroll_popup_bg_mtrl:I = 0x7f020334
+.field public static final tw_noti_badge_mtrl_tab:I = 0x7f020334
 
-.field public static final tw_scrollbar_bg_activation_left_2nd_holo_dark:I = 0x7f020335
+.field public static final tw_scroll_popup_bg_holo_dark:I = 0x7f020335
 
-.field public static final tw_scrollbar_bg_activation_left_2nd_holo_light:I = 0x7f020336
+.field public static final tw_scroll_popup_bg_mtrl:I = 0x7f020336
 
-.field public static final tw_scrollbar_bg_activation_left_holo_dark:I = 0x7f020337
+.field public static final tw_scrollbar_bg_activation_left_2nd_holo_dark:I = 0x7f020337
 
-.field public static final tw_scrollbar_bg_activation_left_holo_light:I = 0x7f020338
+.field public static final tw_scrollbar_bg_activation_left_2nd_holo_light:I = 0x7f020338
 
-.field public static final tw_scrollbar_bg_activation_left_mtrl:I = 0x7f020339
+.field public static final tw_scrollbar_bg_activation_left_holo_dark:I = 0x7f020339
 
-.field public static final tw_scrollbar_bg_activation_right_2nd_holo_dark:I = 0x7f02033a
+.field public static final tw_scrollbar_bg_activation_left_holo_light:I = 0x7f02033a
 
-.field public static final tw_scrollbar_bg_activation_right_holo_dark:I = 0x7f02033b
+.field public static final tw_scrollbar_bg_activation_left_mtrl:I = 0x7f02033b
 
-.field public static final tw_scrollbar_bg_activation_right_mtrl:I = 0x7f02033c
+.field public static final tw_scrollbar_bg_activation_right_2nd_holo_dark:I = 0x7f02033c
 
-.field public static final tw_scrollbar_handle_bg_holo_dark:I = 0x7f02033d
+.field public static final tw_scrollbar_bg_activation_right_holo_dark:I = 0x7f02033d
 
-.field public static final tw_scrollbar_handle_bg_holo_light:I = 0x7f02033e
+.field public static final tw_scrollbar_bg_activation_right_mtrl:I = 0x7f02033e
 
-.field public static final tw_scrollbar_handle_left_bg_activated_2nd_holo_dark:I = 0x7f02033f
+.field public static final tw_scrollbar_handle_bg_holo_dark:I = 0x7f02033f
 
-.field public static final tw_scrollbar_handle_left_bg_activated_2nd_holo_light:I = 0x7f020340
+.field public static final tw_scrollbar_handle_bg_holo_light:I = 0x7f020340
 
-.field public static final tw_scrollbar_handle_left_bg_activated_holo_dark:I = 0x7f020341
+.field public static final tw_scrollbar_handle_left_bg_activated_2nd_holo_dark:I = 0x7f020341
 
-.field public static final tw_scrollbar_handle_left_bg_activated_holo_light:I = 0x7f020342
+.field public static final tw_scrollbar_handle_left_bg_activated_2nd_holo_light:I = 0x7f020342
 
-.field public static final tw_scrollbar_handle_left_bg_activated_mtrl:I = 0x7f020343
+.field public static final tw_scrollbar_handle_left_bg_activated_holo_dark:I = 0x7f020343
 
-.field public static final tw_scrollbar_handle_left_bg_holo_dark:I = 0x7f020344
+.field public static final tw_scrollbar_handle_left_bg_activated_holo_light:I = 0x7f020344
 
-.field public static final tw_scrollbar_handle_left_bg_holo_light:I = 0x7f020345
+.field public static final tw_scrollbar_handle_left_bg_activated_mtrl:I = 0x7f020345
 
-.field public static final tw_scrollbar_handle_left_bg_mtrl:I = 0x7f020346
+.field public static final tw_scrollbar_handle_left_bg_holo_dark:I = 0x7f020346
 
-.field public static final tw_scrollbar_handle_press_bg_mtrl_shape:I = 0x7f020347
+.field public static final tw_scrollbar_handle_left_bg_holo_light:I = 0x7f020347
 
-.field public static final tw_scrollbar_handle_right_bg_activated_2nd_holo_dark:I = 0x7f020348
+.field public static final tw_scrollbar_handle_left_bg_mtrl:I = 0x7f020348
 
-.field public static final tw_scrollbar_handle_right_bg_activated_holo_dark:I = 0x7f020349
+.field public static final tw_scrollbar_handle_press_bg_mtrl_shape:I = 0x7f020349
 
-.field public static final tw_scrollbar_handle_right_bg_activated_mtrl:I = 0x7f02034a
+.field public static final tw_scrollbar_handle_right_bg_activated_2nd_holo_dark:I = 0x7f02034a
 
-.field public static final tw_scrollbar_handle_right_bg_holo_dark:I = 0x7f02034b
+.field public static final tw_scrollbar_handle_right_bg_activated_holo_dark:I = 0x7f02034b
 
-.field public static final tw_scrollbar_handle_right_bg_mtrl:I = 0x7f02034c
+.field public static final tw_scrollbar_handle_right_bg_activated_mtrl:I = 0x7f02034c
 
-.field public static final tw_scrollbar_mtrl:I = 0x7f02034d
+.field public static final tw_scrollbar_handle_right_bg_holo_dark:I = 0x7f02034d
 
-.field public static final tw_section_divider_mtrl:I = 0x7f02034e
+.field public static final tw_scrollbar_handle_right_bg_mtrl:I = 0x7f02034e
 
-.field public static final tw_spinner_divider_horizontal_light:I = 0x7f02034f
+.field public static final tw_scrollbar_mtrl:I = 0x7f02034f
 
-.field public static final tw_spinner_mtrl_am_alpha:I = 0x7f020350
+.field public static final tw_section_divider_mtrl:I = 0x7f020350
 
-.field public static final tw_tab_indicator_mtrl_alpha:I = 0x7f020351
+.field public static final tw_spinner_divider_horizontal_light:I = 0x7f020351
 
-.field public static final tw_text_action_btn_background:I = 0x7f020352
+.field public static final tw_spinner_mtrl_am_alpha:I = 0x7f020352
 
-.field public static final tw_textfield_activated_mtrl_alpha:I = 0x7f020353
+.field public static final tw_tab_indicator_mtrl_alpha:I = 0x7f020353
 
-.field public static final tw_textfield_default_mtrl_alpha:I = 0x7f020354
+.field public static final tw_text_action_btn_background:I = 0x7f020354
 
-.field public static final tw_thumbnail_multiple_selection_holo_dark:I = 0x7f020355
+.field public static final tw_textfield_activated_mtrl_alpha:I = 0x7f020355
 
-.field public static final upload_anim0:I = 0x7f020356
+.field public static final tw_textfield_default_mtrl_alpha:I = 0x7f020356
 
-.field public static final upload_anim1:I = 0x7f020357
+.field public static final tw_thumbnail_multiple_selection_holo_dark:I = 0x7f020357
 
-.field public static final upload_anim2:I = 0x7f020358
+.field public static final upload_anim0:I = 0x7f020358
 
-.field public static final upload_anim3:I = 0x7f020359
+.field public static final upload_anim1:I = 0x7f020359
 
-.field public static final upload_anim4:I = 0x7f02035a
+.field public static final upload_anim2:I = 0x7f02035a
 
-.field public static final upload_anim5:I = 0x7f02035b
+.field public static final upload_anim3:I = 0x7f02035b
 
-.field public static final upload_fail:I = 0x7f02035c
+.field public static final upload_anim4:I = 0x7f02035c
 
-.field public static final video:I = 0x7f02035d
+.field public static final upload_anim5:I = 0x7f02035d
 
-.field public static final vision_intelligence_close:I = 0x7f02035e
+.field public static final upload_fail:I = 0x7f02035e
 
-.field public static final vision_intelligence_default_icon:I = 0x7f02035f
+.field public static final video:I = 0x7f02035f
 
-.field public static final vision_intelligence_object_icon:I = 0x7f020360
+.field public static final vision_intelligence_close:I = 0x7f020360
 
-.field public static final visual_search_actionbar_color_background:I = 0x7f020361
+.field public static final vision_intelligence_default_icon:I = 0x7f020361
 
-.field public static final weather_ic_24_clear:I = 0x7f020362
+.field public static final vision_intelligence_object_icon:I = 0x7f020362
 
-.field public static final weather_ic_24_cloudy:I = 0x7f020363
+.field public static final visual_search_actionbar_color_background:I = 0x7f020363
 
-.field public static final weather_ic_24_cold:I = 0x7f020364
+.field public static final weather_ic_24_clear:I = 0x7f020364
 
-.field public static final weather_ic_24_flurries:I = 0x7f020365
+.field public static final weather_ic_24_cloudy:I = 0x7f020365
 
-.field public static final weather_ic_24_fog:I = 0x7f020366
+.field public static final weather_ic_24_cold:I = 0x7f020366
 
-.field public static final weather_ic_24_hot:I = 0x7f020367
+.field public static final weather_ic_24_flurries:I = 0x7f020367
 
-.field public static final weather_ic_24_ice:I = 0x7f020368
+.field public static final weather_ic_24_fog:I = 0x7f020368
 
-.field public static final weather_ic_24_mostlyclear:I = 0x7f020369
+.field public static final weather_ic_24_hot:I = 0x7f020369
 
-.field public static final weather_ic_24_partlysunny:I = 0x7f02036a
+.field public static final weather_ic_24_ice:I = 0x7f02036a
 
-.field public static final weather_ic_24_partlysunnywithflurries:I = 0x7f02036b
+.field public static final weather_ic_24_mostlyclear:I = 0x7f02036b
 
-.field public static final weather_ic_24_partlysunnywithshower:I = 0x7f02036c
+.field public static final weather_ic_24_partlysunny:I = 0x7f02036c
 
-.field public static final weather_ic_24_partlysunnywiththundershower:I = 0x7f02036d
+.field public static final weather_ic_24_partlysunnywithflurries:I = 0x7f02036d
 
-.field public static final weather_ic_24_rain:I = 0x7f02036e
+.field public static final weather_ic_24_partlysunnywithshower:I = 0x7f02036e
 
-.field public static final weather_ic_24_rainandsnowmixed:I = 0x7f02036f
+.field public static final weather_ic_24_partlysunnywiththundershower:I = 0x7f02036f
 
-.field public static final weather_ic_24_shower:I = 0x7f020370
+.field public static final weather_ic_24_rain:I = 0x7f020370
 
-.field public static final weather_ic_24_snow:I = 0x7f020371
+.field public static final weather_ic_24_rainandsnowmixed:I = 0x7f020371
 
-.field public static final weather_ic_24_sunny:I = 0x7f020372
+.field public static final weather_ic_24_shower:I = 0x7f020372
 
-.field public static final weather_ic_24_thunderstorm:I = 0x7f020373
+.field public static final weather_ic_24_snow:I = 0x7f020373
 
-.field public static final weather_ic_24_windy:I = 0x7f020374
+.field public static final weather_ic_24_sunny:I = 0x7f020374
 
-.field public static final weather_ic_63_clear:I = 0x7f020375
+.field public static final weather_ic_24_thunderstorm:I = 0x7f020375
 
-.field public static final weather_ic_63_cloudy:I = 0x7f020376
+.field public static final weather_ic_24_windy:I = 0x7f020376
 
-.field public static final weather_ic_63_cold:I = 0x7f020377
+.field public static final weather_ic_63_clear:I = 0x7f020377
 
-.field public static final weather_ic_63_flurries:I = 0x7f020378
+.field public static final weather_ic_63_cloudy:I = 0x7f020378
 
-.field public static final weather_ic_63_fog:I = 0x7f020379
+.field public static final weather_ic_63_cold:I = 0x7f020379
 
-.field public static final weather_ic_63_hot:I = 0x7f02037a
+.field public static final weather_ic_63_flurries:I = 0x7f02037a
 
-.field public static final weather_ic_63_ice:I = 0x7f02037b
+.field public static final weather_ic_63_fog:I = 0x7f02037b
 
-.field public static final weather_ic_63_mostlyclear:I = 0x7f02037c
+.field public static final weather_ic_63_hot:I = 0x7f02037c
 
-.field public static final weather_ic_63_partlysunny:I = 0x7f02037d
+.field public static final weather_ic_63_ice:I = 0x7f02037d
 
-.field public static final weather_ic_63_partlysunnywithflurries:I = 0x7f02037e
+.field public static final weather_ic_63_mostlyclear:I = 0x7f02037e
 
-.field public static final weather_ic_63_partlysunnywithshower:I = 0x7f02037f
+.field public static final weather_ic_63_partlysunny:I = 0x7f02037f
 
-.field public static final weather_ic_63_partlysunnywiththundershower:I = 0x7f020380
+.field public static final weather_ic_63_partlysunnywithflurries:I = 0x7f020380
 
-.field public static final weather_ic_63_rain:I = 0x7f020381
+.field public static final weather_ic_63_partlysunnywithshower:I = 0x7f020381
 
-.field public static final weather_ic_63_rainandsnowmixed:I = 0x7f020382
+.field public static final weather_ic_63_partlysunnywiththundershower:I = 0x7f020382
 
-.field public static final weather_ic_63_shower:I = 0x7f020383
+.field public static final weather_ic_63_rain:I = 0x7f020383
 
-.field public static final weather_ic_63_snow:I = 0x7f020384
+.field public static final weather_ic_63_rainandsnowmixed:I = 0x7f020384
 
-.field public static final weather_ic_63_sunny:I = 0x7f020385
+.field public static final weather_ic_63_shower:I = 0x7f020385
 
-.field public static final weather_ic_63_thunderstorm:I = 0x7f020386
+.field public static final weather_ic_63_snow:I = 0x7f020386
 
-.field public static final weather_ic_63_windy:I = 0x7f020387
+.field public static final weather_ic_63_sunny:I = 0x7f020387
 
-.field public static final zoom_in_image_button:I = 0x7f020388
+.field public static final weather_ic_63_thunderstorm:I = 0x7f020388
 
-.field public static final zoom_in_image_button_disabled:I = 0x7f020389
+.field public static final weather_ic_63_windy:I = 0x7f020389
 
-.field public static final zoom_out_image_button:I = 0x7f02038a
+.field public static final zoom_in_image_button:I = 0x7f02038a
 
-.field public static final zoom_out_image_button_disabled:I = 0x7f02038b
+.field public static final zoom_in_image_button_disabled:I = 0x7f02038b
+
+.field public static final zoom_out_image_button:I = 0x7f02038c
+
+.field public static final zoom_out_image_button_disabled:I = 0x7f02038d
 
 
 # direct methods

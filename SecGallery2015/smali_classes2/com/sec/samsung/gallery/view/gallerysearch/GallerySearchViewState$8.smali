@@ -54,7 +54,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$8;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->showDeleteDialog()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$9000(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)V
 
     :goto_0
@@ -76,7 +75,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$8;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$9100(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v3
@@ -94,7 +92,6 @@
     :goto_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$8;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$9200(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v3
@@ -109,12 +106,10 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$8;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->enterSelectionMode()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$9300(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$8;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->updateCountOnActionBar()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$9400(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)V
 
     goto :goto_0

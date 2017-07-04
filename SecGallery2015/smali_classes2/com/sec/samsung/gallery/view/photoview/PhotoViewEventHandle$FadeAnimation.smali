@@ -69,7 +69,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$FadeAnimation;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v0

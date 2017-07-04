@@ -67,7 +67,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SoundScene$3;->this$0:Lcom/sec/samsung/gallery/controller/SoundScene;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/SoundScene;->stopPlaying()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SoundScene;->access$200(Lcom/sec/samsung/gallery/controller/SoundScene;)V
 
     goto :goto_0

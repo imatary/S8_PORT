@@ -76,7 +76,6 @@
 
     iget-object v4, v4, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$55;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->getTopMarginNoItem(I)I
     invoke-static {v4, v0}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$23800(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;I)I
 
     move-result v3
@@ -120,7 +119,6 @@
 
     iget-object v4, v4, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$55;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mShowNoItemText:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$23900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Z
 
     move-result v4
@@ -138,7 +136,6 @@
 
     const/4 v5, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mShowNoItemText:Z
     invoke-static {v4, v5}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$23902(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Z)Z
 
     goto :goto_0

@@ -212,7 +212,6 @@
 
     const/4 v2, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -241,7 +240,6 @@
 
     iput v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mLastFocus:I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;)Landroid/content/Context;
 
     move-result-object v0
@@ -256,42 +254,36 @@
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mResources:Landroid/content/res/Resources;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->mThumbClickLister:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mThumbClickLister:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->mCancelClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mCancelClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->mAddAllClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mAddAllClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->mCancelGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mCancelGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->mAddAllGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->access$600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mAddAllGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->mImageGenericMotionListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlGenericMotionListener;
 
     move-result-object v0
@@ -312,7 +304,6 @@
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mThumbnailObjArray:Landroid/util/SparseArray;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$Builder;)Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
     move-result-object v0
@@ -342,8 +333,6 @@
     invoke-direct {v0, p0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$1;-><init>(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;Lcom/sec/android/gallery3d/glcore/GlRootView;)V
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mGlHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
-
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->initDimensions()V
 
     return-void
 .end method
@@ -1020,26 +1009,6 @@
     return-void
 .end method
 
-.method private initDimensions()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f0b0240
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v0
-
-    iput v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mNavigationPixelSize:I
-
-    return-void
-.end method
-
 .method private isLowStorageStatus()Z
     .locals 3
 
@@ -1067,6 +1036,16 @@
 
 .method private resetAttributes(ZZ)V
     .locals 9
+
+    iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mContext:Landroid/content/Context;
+
+    check-cast v5, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-static {v5}, Lcom/sec/android/gallery3d/util/GalleryUtils;->getNavigationBarMargin(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)I
+
+    move-result v5
+
+    iput v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mNavigationPixelSize:I
 
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->getNavigationBarPosition()Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$NavigationPos;
 
@@ -1341,7 +1320,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0b04f9
+    const v6, 0x7f0b04fa
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1373,7 +1352,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0b04f7
+    const v6, 0x7f0b04f8
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1453,7 +1432,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0b04f8
+    const v6, 0x7f0b04f9
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1622,7 +1601,7 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mResources:Landroid/content/res/Resources;
 
-    const v6, 0x7f0b07f7
+    const v6, 0x7f0b07f8
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1641,7 +1620,7 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mResources:Landroid/content/res/Resources;
 
-    const v6, 0x7f0b081f
+    const v6, 0x7f0b0820
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1649,7 +1628,7 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mResources:Landroid/content/res/Resources;
 
-    const v7, 0x7f0b0823
+    const v7, 0x7f0b0824
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1884,7 +1863,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mTitleObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;->resetLayout()V
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;)V
 
     if-nez p2, :cond_2
@@ -1914,7 +1892,6 @@
 
     invoke-virtual {v1, v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->setClickListener(Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;)V
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->resetLayout()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->access$1300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;)V
 
     :cond_0
@@ -1946,7 +1923,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mDividerObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$DividerObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$DividerObject;->resetLayout()V
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$DividerObject;->access$1500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$DividerObject;)V
 
     :cond_3
@@ -1985,7 +1961,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mAddAllObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionAddAllButton;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionAddAllButton;->resetLayout()V
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionAddAllButton;->access$1600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionAddAllButton;)V
 
     new-instance v4, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionButtonObject;
@@ -2014,7 +1989,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mDeleteObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionButtonObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionButtonObject;->resetLayout()V
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionButtonObject;->access$1700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionButtonObject;)V
 
     new-instance v4, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;
@@ -2055,7 +2029,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mImageCountObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->resetLayout()V
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->access$1800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;)V
 
     :goto_3
@@ -2368,7 +2341,6 @@
 
     if-eqz v1, :cond_0
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->cancelDecode()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->access$6700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;)V
 
     :cond_0
@@ -2411,7 +2383,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mTitleObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;->resetLayout()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;)V
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mThumbnailObjArray:Landroid/util/SparseArray;
@@ -2445,12 +2416,10 @@
 
     invoke-virtual {v2, v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->setClickListener(Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;)V
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->resetLayout()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->access$1300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;)V
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mTitleObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;->mParentObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionTextObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v6
@@ -2510,18 +2479,15 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mDividerObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$DividerObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$DividerObject;->resetLayout()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$DividerObject;->access$1500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$DividerObject;)V
 
     :cond_4
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mAddAllObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionAddAllButton;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionAddAllButton;->resetLayout()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionAddAllButton;->access$1600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionAddAllButton;)V
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mDeleteObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionButtonObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionButtonObject;->resetLayout()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionButtonObject;->access$1700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionButtonObject;)V
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mSuggestionItem:Landroid/util/SparseArray;
@@ -2542,7 +2508,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mImageCountObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->resetLayout()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->access$1800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;)V
 
     :goto_2

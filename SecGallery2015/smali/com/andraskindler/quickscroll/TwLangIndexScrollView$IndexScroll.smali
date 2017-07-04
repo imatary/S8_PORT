@@ -417,7 +417,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mNumberOfLanguages:I
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2600(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v0
@@ -856,7 +855,6 @@
     :goto_0
     iget-object v4, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIsFluid:Z
     invoke-static {v4}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Z
 
     move-result v4
@@ -913,7 +911,6 @@
 
     iget-object v4, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mTouchY:F
     invoke-static {v4}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3800(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)F
 
     move-result v4
@@ -930,7 +927,6 @@
 
     iget-object v4, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mTouchY:F
     invoke-static {v4}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3800(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)F
 
     move-result v4
@@ -2198,7 +2194,6 @@
     :cond_0
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIsFluid:Z
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Z
 
     move-result v0
@@ -2211,7 +2206,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mTouchY:F
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3800(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)F
 
     move-result v0
@@ -2661,7 +2655,6 @@
 
     iget-object v6, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->MANY_ELEMENTS_REPRESENTED_BY_DOT:I
     invoke-static {v6}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2700(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v6
@@ -2672,12 +2665,10 @@
 
     iget-object v7, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->MANY_ELEMENT_LOGIC:I
     invoke-static {v7}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2900(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v7
 
-    # setter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mScrollLogic:I
     invoke-static {v6, v7}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2802(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;I)I
 
     iget v6, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->mScrollTop:I
@@ -2768,12 +2759,10 @@
 
     iget-object v7, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->FEW_ELEMENT_LOGIC:I
     invoke-static {v7}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v7
 
-    # setter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mScrollLogic:I
     invoke-static {v6, v7}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2802(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;I)I
 
     iget v6, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->mScrollTop:I
@@ -2942,7 +2931,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollAdditionalSpace:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1900(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -2957,7 +2945,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollAdditionalSpace:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1900(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -3118,7 +3105,6 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mSECRobotoLightRegularFont:Landroid/graphics/Typeface;
     invoke-static {}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1700()Landroid/graphics/Typeface;
 
     move-result-object v0
@@ -3131,7 +3117,6 @@
 
     move-result-object v0
 
-    # setter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mSECRobotoLightRegularFont:Landroid/graphics/Typeface;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1702(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
     :cond_0
@@ -3150,7 +3135,6 @@
     :cond_1
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->mPaint:Landroid/graphics/Paint;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mSECRobotoLightRegularFont:Landroid/graphics/Typeface;
     invoke-static {}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1700()Landroid/graphics/Typeface;
 
     move-result-object v1
@@ -3171,7 +3155,6 @@
 
     move-result v1
 
-    # setter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimaryDark:I
     invoke-static {v0, v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1802(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;I)I
 
     sget v0, Lcom/samsung/android/sdk/enhancedfeatures/R$dimen;->tw_indexview_first_handle_width:I
@@ -3264,7 +3247,6 @@
 
     float-to-int v1, v1
 
-    # setter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollAdditionalSpace:I
     invoke-static {v0, v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1902(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;I)I
 
     iget v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->mIndexScrollViewTheme:I
@@ -3277,7 +3259,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIsFluid:Z
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Z
 
     move-result v0
@@ -3360,7 +3341,6 @@
 
     move-result v1
 
-    # setter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimary:I
     invoke-static {v0, v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2002(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;I)I
 
     new-instance v0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll$LangAttributeValues;
@@ -3413,7 +3393,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimary:I
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v0
@@ -3422,14 +3401,12 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollPreview:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimary:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -3442,7 +3419,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mEnableCustomTheme:Z
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2200(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Z
 
     move-result v0
@@ -3453,7 +3429,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmEffectColor:I
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2300(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v0
@@ -3462,18 +3437,15 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmEffectColor:I
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2300(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v0
 
     :goto_0
-    # setter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimary:I
     invoke-static {v1, v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2002(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;I)I
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBigTextColor:I
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v0
@@ -3482,7 +3454,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBigTextColor:I
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v0
@@ -3492,7 +3463,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmSmallTextColor:I
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2500(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v0
@@ -3501,7 +3471,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmSmallTextColor:I
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2500(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v0
@@ -3511,14 +3480,12 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollPreview:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimary:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -3531,7 +3498,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollPreview:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
 
     move-result-object v0
@@ -3561,7 +3527,6 @@
     :cond_4
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimary:I
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v0
@@ -3576,7 +3541,6 @@
     :cond_6
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimary:I
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v0
@@ -3613,14 +3577,12 @@
     :cond_2
     iget-object v2, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mScrollLogic:I
     invoke-static {v2}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2800(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v2
 
     iget-object v3, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->FEW_ELEMENT_LOGIC:I
     invoke-static {v3}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v3
@@ -3784,7 +3746,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mNumberOfLanguages:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2600(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -3927,7 +3888,6 @@
     :cond_4
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mNumberOfLanguages:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2600(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -3977,7 +3937,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIsFluid:Z
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Z
 
     move-result v0
@@ -4459,7 +4418,6 @@
     :cond_3
     iget-object v6, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollPreview:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
     invoke-static {v6}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
 
     move-result-object v6
@@ -4470,7 +4428,6 @@
 
     iget-object v6, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mOnIndexScrollEffectListener:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$OnIndexScrollEffectListener;
     invoke-static {v6}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3700(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/andraskindler/quickscroll/TwLangIndexScrollView$OnIndexScrollEffectListener;
 
     move-result-object v6
@@ -4479,7 +4436,6 @@
 
     iget-object v6, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mOnIndexScrollEffectListener:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$OnIndexScrollEffectListener;
     invoke-static {v6}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3700(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/andraskindler/quickscroll/TwLangIndexScrollView$OnIndexScrollEffectListener;
 
     move-result-object v6
@@ -4517,7 +4473,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIsFluid:Z
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Z
 
     move-result v0
@@ -4539,7 +4494,6 @@
     :cond_0
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollEffect:Lcom/samsung/android/visualeffect/scroll/IndexScrollEffect;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1500(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/samsung/android/visualeffect/scroll/IndexScrollEffect;
 
     move-result-object v0
@@ -4548,7 +4502,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollEffect:Lcom/samsung/android/visualeffect/scroll/IndexScrollEffect;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1500(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/samsung/android/visualeffect/scroll/IndexScrollEffect;
 
     move-result-object v0
@@ -4558,7 +4511,6 @@
     :cond_1
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollPreview:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
 
     move-result-object v0
@@ -4567,7 +4519,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollPreview:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScrollPreview;
 
     move-result-object v0
@@ -4577,7 +4528,6 @@
     :cond_2
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mOnIndexScrollEffectListener:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$OnIndexScrollEffectListener;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3700(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/andraskindler/quickscroll/TwLangIndexScrollView$OnIndexScrollEffectListener;
 
     move-result-object v0
@@ -4586,7 +4536,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mOnIndexScrollEffectListener:Lcom/andraskindler/quickscroll/TwLangIndexScrollView$OnIndexScrollEffectListener;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3700(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Lcom/andraskindler/quickscroll/TwLangIndexScrollView$OnIndexScrollEffectListener;
 
     move-result-object v0
@@ -4677,7 +4626,6 @@
 
     iget-object v5, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollAdditionalSpace:I
     invoke-static {v5}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1900(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v5
@@ -4697,7 +4645,6 @@
 
     iget-object v5, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollAdditionalSpace:I
     invoke-static {v5}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1900(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v5
@@ -4718,7 +4665,6 @@
 
     iget-object v5, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollAdditionalSpace:I
     invoke-static {v5}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1900(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v5
@@ -4733,7 +4679,6 @@
 
     iget-object v5, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIndexScrollAdditionalSpace:I
     invoke-static {v5}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1900(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v5
@@ -5337,7 +5282,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIsFluid:Z
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Z
 
     move-result v0
@@ -5539,7 +5483,6 @@
     :goto_1
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mIsFluid:Z
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Z
 
     move-result v1
@@ -5573,7 +5516,6 @@
     :cond_2
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mEnableCustomTheme:Z
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2200(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Z
 
     move-result v1
@@ -5582,7 +5524,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBgDrawableDefault:Landroid/graphics/drawable/Drawable;
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
@@ -5591,7 +5532,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBgDrawableDefault:Landroid/graphics/drawable/Drawable;
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
@@ -5607,7 +5547,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmHandleBgScrollDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3200(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
@@ -5616,7 +5555,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmHandleBgScrollDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3200(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
@@ -5626,7 +5564,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmSeparatorColor:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3300(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -5635,7 +5572,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmSeparatorColor:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3300(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -5645,7 +5581,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmTextColorDimmed:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -5654,7 +5589,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmTextColorDimmed:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3400(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -5664,7 +5598,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmHandleTextColorPressed:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3500(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -5673,7 +5606,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmHandleTextColorPressed:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3500(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -5691,7 +5623,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBgDrawableDefaultMoreDepth:Landroid/graphics/drawable/Drawable;
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3600(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
@@ -5700,7 +5631,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBgDrawableDefaultMoreDepth:Landroid/graphics/drawable/Drawable;
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$3600(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
@@ -5733,7 +5663,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimaryDark:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1800(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -5742,7 +5671,6 @@
 
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexScroll;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimaryDark:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1800(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1

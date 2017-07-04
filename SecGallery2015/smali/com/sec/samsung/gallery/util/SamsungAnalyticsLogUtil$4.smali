@@ -63,7 +63,6 @@
 
     check-cast v1, Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->insertSALogScreenView(Ljava/lang/String;Z)V
     invoke-static {v1, v6}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->access$000(Ljava/lang/String;Z)V
 
     goto :goto_0
@@ -77,7 +76,6 @@
 
     check-cast v2, Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->insertSALogEvent(Ljava/lang/String;Ljava/lang/String;Z)V
     invoke-static {v1, v2, v6}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->access$100(Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_0
@@ -99,7 +97,6 @@
 
     move-result-wide v4
 
-    # invokes: Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->insertSALogEventValue(Ljava/lang/String;Ljava/lang/String;JZ)V
     invoke-static {v1, v2, v4, v5, v6}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->access$200(Ljava/lang/String;Ljava/lang/String;JZ)V
 
     goto :goto_0
@@ -117,7 +114,6 @@
 
     check-cast v3, Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->insertSALogEventDetail(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     invoke-static {v1, v2, v3, v6}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->access$300(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_0

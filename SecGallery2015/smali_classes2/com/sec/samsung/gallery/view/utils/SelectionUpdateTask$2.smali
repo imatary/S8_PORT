@@ -42,7 +42,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTask$2;->this$0:Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;->access$300(Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v1
@@ -70,7 +69,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTask$2;->this$0:Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;->mOnCancelListener:Landroid/content/DialogInterface$OnCancelListener;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;->access$200(Lcom/sec/samsung/gallery/view/utils/SelectionUpdateTask;)Landroid/content/DialogInterface$OnCancelListener;
 
     move-result-object v3

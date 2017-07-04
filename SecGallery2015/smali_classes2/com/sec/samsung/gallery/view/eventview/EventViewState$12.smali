@@ -52,7 +52,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$12;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->showDeleteDialog()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$3800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)V
 
     :goto_0
@@ -74,7 +73,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$12;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$000(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -87,12 +85,10 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$12;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->enterSelectionMode()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$2700(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$12;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->updateCountOnActionBar()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$900(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)V
 
     goto :goto_0

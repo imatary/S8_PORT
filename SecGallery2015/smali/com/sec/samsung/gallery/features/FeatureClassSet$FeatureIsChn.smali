@@ -30,7 +30,6 @@
 
     const-string/jumbo v0, "CHN"
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mSalesCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$100()Ljava/lang/String;
 
     move-result-object v1
@@ -43,7 +42,6 @@
 
     const-string/jumbo v0, "CHM"
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mSalesCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$100()Ljava/lang/String;
 
     move-result-object v1
@@ -56,7 +54,6 @@
 
     const-string/jumbo v0, "CHC"
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mSalesCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$100()Ljava/lang/String;
 
     move-result-object v1
@@ -69,7 +66,6 @@
 
     const-string/jumbo v0, "CHU"
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mSalesCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$100()Ljava/lang/String;
 
     move-result-object v1
@@ -82,7 +78,6 @@
 
     const-string/jumbo v0, "CTC"
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mSalesCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$100()Ljava/lang/String;
 
     move-result-object v1
@@ -95,7 +90,6 @@
 
     const-string/jumbo v0, "LHS"
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mSalesCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$100()Ljava/lang/String;
 
     move-result-object v1
@@ -108,7 +102,6 @@
 
     const-string/jumbo v0, "PAP"
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mSalesCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$100()Ljava/lang/String;
 
     move-result-object v1
@@ -119,7 +112,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mCountryCode:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$200()Ljava/lang/String;
 
     move-result-object v0
@@ -133,7 +125,6 @@
     if-nez v0, :cond_1
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -146,7 +137,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0

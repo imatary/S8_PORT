@@ -52,7 +52,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/DownloadCache$DatabaseHelper;->this$0:Lcom/sec/android/gallery3d/data/DownloadCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache;->mRoot:Ljava/io/File;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/DownloadCache;->access$100(Lcom/sec/android/gallery3d/data/DownloadCache;)Ljava/io/File;
 
     move-result-object v2

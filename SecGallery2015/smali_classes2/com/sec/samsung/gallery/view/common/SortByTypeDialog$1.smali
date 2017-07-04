@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/SortByTypeDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;->mScreenId:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;->access$000(Lcom/sec/samsung/gallery/view/common/SortByTypeDialog;)Ljava/lang/String;
 
     move-result-object v0

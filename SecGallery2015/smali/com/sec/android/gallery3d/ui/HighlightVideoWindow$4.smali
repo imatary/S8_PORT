@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$4;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mRelativeLayout:Landroid/widget/RelativeLayout;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1200(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Landroid/widget/RelativeLayout;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$4;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mRelativeLayout:Landroid/widget/RelativeLayout;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1200(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Landroid/widget/RelativeLayout;
 
     move-result-object v0
@@ -61,14 +59,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$4;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mRelativeLayout:Landroid/widget/RelativeLayout;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1200(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Landroid/widget/RelativeLayout;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$4;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mY:F
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1400(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)F
 
     move-result v1
@@ -77,7 +73,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$4;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mRelativeLayout:Landroid/widget/RelativeLayout;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1200(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Landroid/widget/RelativeLayout;
 
     move-result-object v0

@@ -31,7 +31,7 @@
 
     const-string/jumbo v1, "PicturesView"
 
-    const v2, 0x7f0a05c6
+    const v2, 0x7f0a05c9
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -43,7 +43,7 @@
 
     const-string/jumbo v1, "PicturePickerSingle"
 
-    const v2, 0x7f0a05c4
+    const v2, 0x7f0a05c6
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -55,7 +55,7 @@
 
     const-string/jumbo v1, "PicturePickerMulti"
 
-    const v2, 0x7f0a05c2
+    const v2, 0x7f0a05c4
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -67,7 +67,7 @@
 
     const-string/jumbo v1, "AlbumsListView"
 
-    const v2, 0x7f0a0743
+    const v2, 0x7f0a0749
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -79,7 +79,7 @@
 
     const-string/jumbo v1, "AlbumListPicker"
 
-    const v2, 0x7f0a05c3
+    const v2, 0x7f0a05c5
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -91,7 +91,7 @@
 
     const-string/jumbo v1, "StoryListView"
 
-    const v2, 0x7f0a0784
+    const v2, 0x7f0a078a
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -103,7 +103,7 @@
 
     const-string/jumbo v1, "RecycleBin"
 
-    const v2, 0x7f0a07f2
+    const v2, 0x7f0a07f8
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -115,7 +115,7 @@
 
     const-string/jumbo v1, "CloudView"
 
-    const v2, 0x7f0a0817
+    const v2, 0x7f0a081d
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

@@ -58,7 +58,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/cloud/CloudImage$1;->this$0:Lcom/sec/android/gallery3d/remote/cloud/CloudImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$600(Lcom/sec/android/gallery3d/remote/cloud/CloudImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v2
@@ -80,14 +79,12 @@
 
     invoke-static {v2}, Lcom/sec/android/gallery3d/common/Utils;->closeSilently(Ljava/io/Closeable;)V
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mSyncIdList:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$700()Ljava/util/ArrayList;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mSyncIdList:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$700()Ljava/util/ArrayList;
 
     move-result-object v2
@@ -122,14 +119,12 @@
 
     invoke-static {v2}, Lcom/sec/android/gallery3d/common/Utils;->closeSilently(Ljava/io/Closeable;)V
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mSyncIdList:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$700()Ljava/util/ArrayList;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mSyncIdList:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$700()Ljava/util/ArrayList;
 
     move-result-object v2
@@ -151,14 +146,12 @@
 
     invoke-static {v3}, Lcom/sec/android/gallery3d/common/Utils;->closeSilently(Ljava/io/Closeable;)V
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mSyncIdList:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$700()Ljava/util/ArrayList;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mSyncIdList:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$700()Ljava/util/ArrayList;
 
     move-result-object v3

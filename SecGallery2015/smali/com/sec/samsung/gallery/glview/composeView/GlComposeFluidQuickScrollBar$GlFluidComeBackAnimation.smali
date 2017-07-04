@@ -48,19 +48,16 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;->updateFluidPopupView(FZZZ)V
     invoke-static {v0, p1, v2, v2, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;FZZZ)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar$GlFluidComeBackAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;->mFluidPopupObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar$GlFluidComeBackAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;->mFluidPopupView:Lcom/sec/android/gallery3d/glcore/GlView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;)Lcom/sec/android/gallery3d/glcore/GlView;
 
     move-result-object v1
@@ -69,7 +66,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar$GlFluidComeBackAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;->mFluidPopupObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v0
@@ -92,7 +88,6 @@
 
     const/4 v2, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;->updateFluidPopupView(FZZZ)V
     invoke-static {v0, v1, v3, v3, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeFluidQuickScrollBar;FZZZ)V
 
     return-void

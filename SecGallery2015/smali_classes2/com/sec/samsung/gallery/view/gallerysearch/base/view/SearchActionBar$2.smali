@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mOldFilterText:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$1100(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Ljava/lang/String;
 
     move-result-object v0
@@ -70,7 +69,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mOldFilterText:Ljava/lang/String;
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$1102(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_0
@@ -92,7 +90,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$1200(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0

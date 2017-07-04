@@ -118,7 +118,6 @@
 
     sget-object v2, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility;->sTaskMap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mHashKey:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Ljava/lang/String;
 
     move-result-object v3
@@ -133,7 +132,6 @@
 
     sget-object v2, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility;->sTaskMap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mHashKey:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Ljava/lang/String;
 
     move-result-object v3
@@ -215,7 +213,6 @@
 
     sget-object v6, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility;->sTaskMap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mHashKey:Ljava/lang/String;
     invoke-static {v5}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Ljava/lang/String;
 
     move-result-object v7
@@ -256,7 +253,6 @@
     const/16 v17, 0x0
 
     :try_start_1
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mCancelled:Z
     invoke-static {v5}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$1(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Z
 
     move-result v6
@@ -292,7 +288,6 @@
 
     if-eqz v6, :cond_1
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->access$0()Ljava/lang/String;
 
     move-result-object v6
@@ -331,7 +326,6 @@
     :goto_0
     sget-object v6, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility;->sTaskMap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mHashKey:Ljava/lang/String;
     invoke-static {v5}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Ljava/lang/String;
 
     move-result-object v7
@@ -483,7 +477,6 @@
 
     if-eqz v6, :cond_6
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->access$0()Ljava/lang/String;
 
     move-result-object v6
@@ -555,7 +548,6 @@
     invoke-static {v6, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_6
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mCancelled:Z
     invoke-static {v5}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$1(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Z
 
     move-result v6
@@ -580,7 +572,6 @@
 
     if-eqz v6, :cond_7
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->access$0()Ljava/lang/String;
 
     move-result-object v6
@@ -620,7 +611,6 @@
     :goto_2
     sget-object v6, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility;->sTaskMap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mHashKey:Ljava/lang/String;
     invoke-static {v5}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Ljava/lang/String;
 
     move-result-object v7
@@ -736,7 +726,6 @@
     :goto_5
     sget-object v6, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility;->sTaskMap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mHashKey:Ljava/lang/String;
     invoke-static {v5}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Ljava/lang/String;
 
     move-result-object v7
@@ -779,7 +768,6 @@
 
     if-eqz v24, :cond_e
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->access$0()Ljava/lang/String;
 
     move-result-object v6
@@ -817,7 +805,6 @@
 
     if-eqz v6, :cond_d
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->access$0()Ljava/lang/String;
 
     move-result-object v6
@@ -862,7 +849,6 @@
 
     :cond_e
     :try_start_c
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->access$0()Ljava/lang/String;
 
     move-result-object v6
@@ -915,7 +901,6 @@
 
     sget-object v7, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility;->sTaskMap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mHashKey:Ljava/lang/String;
     invoke-static {v5}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Ljava/lang/String;
 
     move-result-object v8
@@ -967,7 +952,6 @@
 
     sget-object v2, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility;->sTaskMap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mHashKey:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Ljava/lang/String;
 
     move-result-object v3
@@ -997,7 +981,6 @@
 
     const/4 v12, 0x0
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mCancelled:Z
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$1(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Z
 
     move-result v2
@@ -1014,7 +997,6 @@
     :cond_0
     sget-object v2, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility;->sTaskMap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mHashKey:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Ljava/lang/String;
 
     move-result-object v3
@@ -1032,7 +1014,6 @@
 
     if-eqz v2, :cond_1
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore;->access$0()Ljava/lang/String;
 
     move-result-object v2
@@ -1046,7 +1027,6 @@
     :cond_1
     sget-object v2, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility;->sTaskMap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mHashKey:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Ljava/lang/String;
 
     move-result-object v3
@@ -1062,7 +1042,6 @@
 
     sget-object v3, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility;->sTaskMap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mHashKey:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Ljava/lang/String;
 
     move-result-object v4
@@ -1227,7 +1206,6 @@
     invoke-interface {v11}, Landroid/database/Cursor;->close()V
 
     :cond_1
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->mCancelled:Z
     invoke-static/range {p0 .. p0}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;->access$1(Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$ThumbnailUtility$ThumbnailTask;)Z
 
     move-result v4

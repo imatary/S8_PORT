@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/MapViewState$7;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapViewState;->zoomButtonHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     invoke-static {v0, p1, p2}, Lcom/sec/samsung/gallery/mapfragment/MapViewState;->access$3200(Lcom/sec/samsung/gallery/mapfragment/MapViewState;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result v0

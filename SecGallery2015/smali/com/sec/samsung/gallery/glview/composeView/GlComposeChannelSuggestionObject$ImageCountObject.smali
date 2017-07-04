@@ -76,7 +76,6 @@
 
     iget-object v11, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mCanvasMgr:Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;
     invoke-static {v11}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$3500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;
 
     move-result-object v11
@@ -85,7 +84,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mDefaultImageSizePixel:F
     invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$5100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v12
@@ -96,7 +94,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mDefaultImageSizePixel:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$5100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v13
@@ -121,7 +118,6 @@
 
     iget-object v11, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mContext:Landroid/content/Context;
     invoke-static {v11}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$2300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)Landroid/content/Context;
 
     move-result-object v11
@@ -132,7 +128,6 @@
 
     iget-object v11, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mContext:Landroid/content/Context;
     invoke-static {v11}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$2300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)Landroid/content/Context;
 
     move-result-object v11
@@ -194,7 +189,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mSuggestionItem:Landroid/util/SparseArray;
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$3200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)Landroid/util/SparseArray;
 
     move-result-object v16
@@ -209,7 +203,6 @@
 
     move-object/from16 v17, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mMaxItemCount:I
     invoke-static/range {v17 .. v17}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$2900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)I
 
     move-result v17
@@ -241,7 +234,6 @@
 
     iget-object v11, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mResources:Landroid/content/res/Resources;
     invoke-static {v11}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$5300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)Landroid/content/res/Resources;
 
     move-result-object v11
@@ -258,7 +250,6 @@
 
     iget-object v11, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mContext:Landroid/content/Context;
     invoke-static {v11}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$2300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)Landroid/content/Context;
 
     move-result-object v11
@@ -277,7 +268,6 @@
 
     move-result-object v12
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->IS_N_OS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$6400()Z
 
     move-result v11
@@ -312,7 +302,6 @@
 
     iget-object v11, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mThumbHeightPixel:F
     invoke-static {v11}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v11
@@ -321,7 +310,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mWidthViewRatio:F
     invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v12
@@ -332,7 +320,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mThumbHeightPixel:F
     invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v12
@@ -341,7 +328,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mHeightViewRatio:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v13
@@ -366,7 +352,6 @@
 
     iget-object v11, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mThumbHeightPixel:F
     invoke-static {v11}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v11
@@ -375,7 +360,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mThumbGap:F
     invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v12
@@ -386,7 +370,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mMaxItemCount:I
     invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$2900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)I
 
     move-result v12
@@ -401,7 +384,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mWidthViewRatio:F
     invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v12
@@ -412,7 +394,6 @@
 
     iget-object v11, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mBGWidth:F
     invoke-static {v11}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v11
@@ -427,7 +408,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mThumbHeightPixel:F
     invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v12
@@ -440,7 +420,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mTitleStartLeftMarginPixel:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v13
@@ -451,7 +430,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mWidthViewRatio:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v13
@@ -466,7 +444,6 @@
 
     iget-object v11, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mBGHeight:F
     invoke-static {v11}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v11
@@ -479,7 +456,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mThumbHeightPixel:F
     invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v12
@@ -492,7 +468,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mCardBGTopPaddingPixel:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v13
@@ -503,7 +478,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mTitleStartTopMarginPixel:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v13
@@ -514,7 +488,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mTitleBottomMarginPixel:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v13
@@ -525,7 +498,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mHeightViewRatio:F
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$4900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v13
@@ -538,7 +510,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mTitleHeight:F
     invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$5000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)F
 
     move-result v12
@@ -568,7 +539,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mSuggestionItem:Landroid/util/SparseArray;
     invoke-static {v12}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$3200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)Landroid/util/SparseArray;
 
     move-result-object v12
@@ -581,7 +551,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$ImageCountObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->mMaxItemCount:I
     invoke-static {v13}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;->access$2900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;)I
 
     move-result v13

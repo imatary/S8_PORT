@@ -45,7 +45,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mFocusObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$502(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     const/4 v0, 0x1
@@ -64,7 +63,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mFocusObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$500(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v3
@@ -83,7 +81,6 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mFocusObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$500(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v3
@@ -92,7 +89,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mFocusObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$500(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v3
@@ -108,7 +104,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mAdapter:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$600(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
 
     move-result-object v6
@@ -127,7 +122,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mAdapter:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$600(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
 
     move-result-object v6
@@ -146,7 +140,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mAdapter:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$600(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
 
     move-result-object v6
@@ -159,7 +152,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mAdapter:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$600(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
 
     move-result-object v3
@@ -168,7 +160,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mAdapter:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$600(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
 
     move-result-object v3
@@ -177,7 +168,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mAdapter:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$600(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
 
     move-result-object v3
@@ -211,7 +201,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$700(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Landroid/content/Context;
 
     move-result-object v3
@@ -229,7 +218,6 @@
     :goto_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$700(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Landroid/content/Context;
 
     move-result-object v3
@@ -254,7 +242,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mAdapter:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$600(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
 
     move-result-object v4
@@ -291,7 +278,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$700(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Landroid/content/Context;
 
     move-result-object v4
@@ -316,7 +302,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$700(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Landroid/content/Context;
 
     move-result-object v3
@@ -328,7 +313,6 @@
     :cond_3
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mFocusObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v3, p1}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$502(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move v3, v5
@@ -338,7 +322,6 @@
     :cond_4
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;->access$700(Lcom/sec/samsung/gallery/glview/composeView/timelinesplit/GlTimeLineSplit;)Landroid/content/Context;
 
     move-result-object v3

@@ -45,21 +45,18 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$2;->val$title:Ljava/lang/String;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mTitleForDCRename:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$902(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$2;->val$title:Ljava/lang/String;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mEditedTitleName:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$1002(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->updateDetailListLayout(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$500(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;Z)V
 
     return-void

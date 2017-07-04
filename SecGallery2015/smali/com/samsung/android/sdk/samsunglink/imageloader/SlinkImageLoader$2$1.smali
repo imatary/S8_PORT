@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$2$1;->val$imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->mListener:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageListener;
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$3(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageListener;
 
     move-result-object v0

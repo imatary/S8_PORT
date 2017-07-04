@@ -54,7 +54,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;->mMediaResourceHelperListener:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface$MediaResourceHelperListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;->access$000(Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;)Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface$MediaResourceHelperListener;
 
     move-result-object v0
@@ -71,7 +70,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;->mMediaResourceHelperListener:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface$MediaResourceHelperListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;->access$000(Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;)Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface$MediaResourceHelperListener;
 
     move-result-object v0
@@ -114,7 +112,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;->mMediaResourceHelperListener:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface$MediaResourceHelperListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;->access$000(Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;)Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface$MediaResourceHelperListener;
 
     move-result-object v0
@@ -131,7 +128,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;->mMediaResourceHelperListener:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface$MediaResourceHelperListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;->access$000(Lcom/sec/samsung/gallery/lib/se/SeMediaPlayer;)Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface$MediaResourceHelperListener;
 
     move-result-object v0

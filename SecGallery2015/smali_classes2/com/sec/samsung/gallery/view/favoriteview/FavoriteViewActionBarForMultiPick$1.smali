@@ -53,7 +53,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v5
@@ -62,7 +61,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$100(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -72,7 +70,6 @@
     :cond_0
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -83,7 +80,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->getMaxCount()I
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$300(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)I
 
     move-result v1
@@ -94,7 +90,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$400(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -112,7 +107,6 @@
     :goto_0
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$700(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Landroid/app/ActionBar;
 
     move-result-object v5
@@ -123,24 +117,20 @@
 
     iget v8, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v5, v8, v2}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$800(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;ILjava/lang/String;)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->setSelectAllButtonTTS(Ljava/lang/String;)V
     invoke-static {v5, v0}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$900(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;Ljava/lang/String;)V
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v8
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mIsDoneEnabled:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$1000(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Z
 
     move-result v5
@@ -158,14 +148,12 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v5
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mIsDoneEnabled:Z
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$1000(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Z
 
     move-result v8
@@ -186,7 +174,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$500(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -260,7 +247,6 @@
     :cond_3
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;->access$600(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5

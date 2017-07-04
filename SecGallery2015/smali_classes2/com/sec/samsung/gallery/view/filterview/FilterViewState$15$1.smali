@@ -49,7 +49,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$15;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->selectAllPostProcess()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$5800(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)V
 
     return-void

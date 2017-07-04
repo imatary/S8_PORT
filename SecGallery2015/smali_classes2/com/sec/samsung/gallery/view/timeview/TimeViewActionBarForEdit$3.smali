@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit$3;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mSelectAllEnable:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->access$800(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;)Z
 
     move-result v0
@@ -70,7 +69,6 @@
 
     iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit$3;->val$toggleImage:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->setCheckboxState(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;Z)V
 
     return-void
@@ -80,7 +78,6 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->setEnableSelectAllOnActionBar(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->access$900(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;Z)V
 
     goto :goto_0

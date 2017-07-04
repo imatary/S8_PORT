@@ -39,7 +39,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mItemPath:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$000(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Ljava/lang/String;
 
     move-result-object v3
@@ -48,7 +47,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$100(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -59,7 +57,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mItemPath:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$000(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Ljava/lang/String;
 
     move-result-object v4
@@ -74,7 +71,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$300(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -85,7 +81,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mItemPath:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$000(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Ljava/lang/String;
 
     move-result-object v5
@@ -98,13 +93,11 @@
 
     move-result-object v4
 
-    # setter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mAlbumName:Ljava/lang/String;
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$202(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mAlbumName:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$200(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Ljava/lang/String;
 
     move-result-object v3
@@ -113,14 +106,12 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$400(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mAlbumName:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$200(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Ljava/lang/String;
 
     move-result-object v4
@@ -132,7 +123,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$800(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v3
@@ -141,7 +131,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$900(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -174,7 +163,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$1000(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -192,7 +180,6 @@
     :cond_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$1100(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v3
@@ -204,7 +191,6 @@
     :cond_2
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mUseGraceMapViewUI:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$500(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Z
 
     move-result v3
@@ -213,7 +199,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$600(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v3
@@ -227,7 +212,6 @@
     :cond_3
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;->access$700(Lcom/sec/samsung/gallery/view/mapview/MapActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v3

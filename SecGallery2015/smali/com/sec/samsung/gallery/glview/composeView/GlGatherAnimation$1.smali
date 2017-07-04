@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->startFollowingAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)V
 
     return-void
@@ -58,7 +57,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mCurrentAnim:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$002(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;I)I
 
     return-void

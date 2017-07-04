@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$20;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$5600(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0
@@ -60,7 +59,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$20;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$700(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
 
     move-result-object v0
@@ -77,12 +75,10 @@
 
     iget-boolean v3, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$20;->val$changeScreen:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->startDetailView(IIZ)V
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$5700(Lcom/sec/samsung/gallery/view/eventview/EventViewState;IIZ)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$20;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$5600(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0

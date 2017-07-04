@@ -43,14 +43,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd;->mTask:Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFromResultTask;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd;->access$000()Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFromResultTask;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd;->mTask:Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFromResultTask;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd;->access$000()Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFromResultTask;
 
     move-result-object v0

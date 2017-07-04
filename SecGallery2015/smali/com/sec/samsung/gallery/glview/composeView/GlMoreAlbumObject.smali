@@ -330,7 +330,7 @@
 
     const/4 v4, 0x2
 
-    const v0, 0x7f02031c
+    const v0, 0x7f02031e
 
     :goto_0
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->mButtonView:Lcom/sec/android/gallery3d/glcore/GlView;
@@ -399,7 +399,7 @@
     :cond_1
     const/4 v4, 0x1
 
-    const v0, 0x7f02031d
+    const v0, 0x7f02031f
 
     goto :goto_0
 .end method
@@ -1707,7 +1707,7 @@
 
     if-eqz p1, :cond_1
 
-    const v1, 0x7f0a0778
+    const v1, 0x7f0a077e
 
     :goto_0
     new-array v3, v3, [Ljava/lang/Object;
@@ -1732,7 +1732,7 @@
     return-void
 
     :cond_1
-    const v1, 0x7f0a077a
+    const v1, 0x7f0a0780
 
     goto :goto_0
 
@@ -1754,7 +1754,7 @@
 
     if-eqz p1, :cond_4
 
-    const v1, 0x7f0a0779
+    const v1, 0x7f0a077f
 
     :goto_3
     new-array v3, v3, [Ljava/lang/Object;
@@ -1777,7 +1777,7 @@
     goto :goto_2
 
     :cond_4
-    const v1, 0x7f0a077b
+    const v1, 0x7f0a0781
 
     goto :goto_3
 

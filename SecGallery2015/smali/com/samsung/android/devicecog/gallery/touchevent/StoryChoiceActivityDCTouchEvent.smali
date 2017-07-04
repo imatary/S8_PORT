@@ -1,5 +1,5 @@
 .class public Lcom/samsung/android/devicecog/gallery/touchevent/StoryChoiceActivityDCTouchEvent;
-.super Lcom/samsung/android/devicecog/gallery/touchevent/AbstractDCTouchEvent;
+.super Lcom/samsung/android/devicecog/gallery/touchevent/ChoiceActivityDCTouchEvent;
 .source "StoryChoiceActivityDCTouchEvent.java"
 
 
@@ -7,7 +7,7 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/samsung/android/devicecog/gallery/touchevent/AbstractDCTouchEvent;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/samsung/android/devicecog/gallery/touchevent/ChoiceActivityDCTouchEvent;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
@@ -31,7 +31,7 @@
     :goto_0
     packed-switch v1, :pswitch_data_0
 
-    invoke-super {p0, p1, p2}, Lcom/samsung/android/devicecog/gallery/touchevent/AbstractDCTouchEvent;->doDCTouchEvent(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-super {p0, p1, p2}, Lcom/samsung/android/devicecog/gallery/touchevent/ChoiceActivityDCTouchEvent;->doDCTouchEvent(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_1
     return-void

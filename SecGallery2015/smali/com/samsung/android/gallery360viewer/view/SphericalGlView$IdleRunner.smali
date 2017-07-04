@@ -83,7 +83,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;->this$0:Lcom/samsung/android/gallery360viewer/view/SphericalGlView;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mIdleListeners:Ljava/util/ArrayDeque;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->access$100(Lcom/samsung/android/gallery360viewer/view/SphericalGlView;)Ljava/util/ArrayDeque;
 
     move-result-object v2
@@ -97,7 +96,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;->this$0:Lcom/samsung/android/gallery360viewer/view/SphericalGlView;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mIdleListeners:Ljava/util/ArrayDeque;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->access$100(Lcom/samsung/android/gallery360viewer/view/SphericalGlView;)Ljava/util/ArrayDeque;
 
     move-result-object v1
@@ -116,7 +114,6 @@
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;->this$0:Lcom/samsung/android/gallery360viewer/view/SphericalGlView;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mIdleListeners:Ljava/util/ArrayDeque;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->access$100(Lcom/samsung/android/gallery360viewer/view/SphericalGlView;)Ljava/util/ArrayDeque;
 
     move-result-object v1
@@ -135,7 +132,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;->this$0:Lcom/samsung/android/gallery360viewer/view/SphericalGlView;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mIdleListeners:Ljava/util/ArrayDeque;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->access$100(Lcom/samsung/android/gallery360viewer/view/SphericalGlView;)Ljava/util/ArrayDeque;
 
     move-result-object v2
@@ -145,7 +141,6 @@
     :try_start_1
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;->this$0:Lcom/samsung/android/gallery360viewer/view/SphericalGlView;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mIdleListeners:Ljava/util/ArrayDeque;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->access$100(Lcom/samsung/android/gallery360viewer/view/SphericalGlView;)Ljava/util/ArrayDeque;
 
     move-result-object v1
@@ -187,7 +182,6 @@
     :try_start_3
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;->this$0:Lcom/samsung/android/gallery360viewer/view/SphericalGlView;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->access$600(Lcom/samsung/android/gallery360viewer/view/SphericalGlView;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -196,7 +190,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;->this$0:Lcom/samsung/android/gallery360viewer/view/SphericalGlView;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->access$600(Lcom/samsung/android/gallery360viewer/view/SphericalGlView;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -215,7 +208,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$IdleRunner;->this$0:Lcom/samsung/android/gallery360viewer/view/SphericalGlView;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->access$600(Lcom/samsung/android/gallery360viewer/view/SphericalGlView;)Landroid/graphics/Bitmap;
 
     move-result-object v1

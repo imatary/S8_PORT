@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider$3;->this$0:Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;
 
-    # getter for: Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;->currentSelectedItem:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;->access$100(Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v0
@@ -52,7 +51,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider$3;->this$0:Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;
 
-    # getter for: Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;->currentSelectedItem:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;->access$100(Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v1
@@ -62,7 +60,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider$3;->this$0:Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;
 
-    # getter for: Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;->mView:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;->access$000(Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0
@@ -71,7 +68,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider$3;->this$0:Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;
 
-    # getter for: Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;->mView:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;->access$000(Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0
@@ -83,7 +79,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;->currentSelectedItem:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;->access$102(Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     return-void

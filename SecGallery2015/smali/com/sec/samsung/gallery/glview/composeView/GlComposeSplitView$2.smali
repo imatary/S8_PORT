@@ -47,7 +47,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mPhotoView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumPhotoView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumPhotoView;
 
     move-result-object v2
@@ -62,7 +61,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mValidView:Landroid/graphics/Rect;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;)Landroid/graphics/Rect;
 
     move-result-object v3
@@ -108,7 +106,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mPhotoView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumPhotoView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumPhotoView;
 
     move-result-object v0

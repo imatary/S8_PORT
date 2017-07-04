@@ -1143,7 +1143,7 @@
 
     if-eqz v2, :cond_13
 
-    const v2, 0x7f12027f
+    const v2, 0x7f12027e
 
     invoke-static {p1, v2, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
@@ -1262,7 +1262,7 @@
     goto/16 :goto_5
 
     :cond_13
-    const v2, 0x7f12027f
+    const v2, 0x7f12027e
 
     invoke-static {p1, v2, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
@@ -1664,7 +1664,7 @@
 
     if-eqz v4, :cond_e
 
-    const v19, 0x7f120280
+    const v19, 0x7f12027f
 
     move-object/from16 v0, p1
 
@@ -1699,7 +1699,7 @@
     invoke-virtual/range {v19 .. v20}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_9
-    const v19, 0x7f120281
+    const v19, 0x7f120280
 
     move-object/from16 v0, p1
 
@@ -1830,7 +1830,7 @@
 
     :cond_c
     :goto_5
-    const v19, 0x7f120282
+    const v19, 0x7f120281
 
     move-object/from16 v0, p1
 
@@ -1878,7 +1878,7 @@
 
     :cond_d
     :goto_6
-    const v19, 0x7f120283
+    const v19, 0x7f120282
 
     move-object/from16 v0, p1
 
@@ -2480,11 +2480,11 @@
         0x102002c -> :sswitch_0
         0x7f120277 -> :sswitch_8
         0x7f120278 -> :sswitch_9
-        0x7f12027f -> :sswitch_10
-        0x7f120280 -> :sswitch_6
-        0x7f120281 -> :sswitch_7
-        0x7f120282 -> :sswitch_a
-        0x7f120283 -> :sswitch_b
+        0x7f12027e -> :sswitch_10
+        0x7f12027f -> :sswitch_6
+        0x7f120280 -> :sswitch_7
+        0x7f120281 -> :sswitch_a
+        0x7f120282 -> :sswitch_b
         0x7f1202a1 -> :sswitch_2
         0x7f1202a2 -> :sswitch_d
         0x7f1202a5 -> :sswitch_1

@@ -84,7 +84,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v2
@@ -95,7 +94,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->dateInMs:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;->access$100(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventItem;)J
 
     move-result-wide v0

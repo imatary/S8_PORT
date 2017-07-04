@@ -79,14 +79,13 @@
 
     if-le v0, v7, :cond_0
 
-    const v1, 0x7f0a07f5
+    const v1, 0x7f0a07fb
 
     :goto_0
     if-le v0, v7, :cond_1
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -113,14 +112,13 @@
     return-object v2
 
     :cond_0
-    const v1, 0x7f0a07f4
+    const v1, 0x7f0a07fa
 
     goto :goto_0
 
     :cond_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -136,12 +134,11 @@
     :cond_2
     if-eqz p2, :cond_3
 
-    const v1, 0x7f0a07f6
+    const v1, 0x7f0a07fc
 
     :goto_2
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -155,7 +152,7 @@
     goto :goto_1
 
     :cond_3
-    const v1, 0x7f0a07f7
+    const v1, 0x7f0a07fd
 
     goto :goto_2
 .end method
@@ -228,7 +225,6 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -269,7 +265,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -282,7 +277,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -315,7 +309,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mCancelListener:Landroid/content/DialogInterface$OnCancelListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$500(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Landroid/content/DialogInterface$OnCancelListener;
 
     move-result-object v1
@@ -349,7 +342,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mIsDeleteAll:Z
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$200(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Z
 
     move-result v12
@@ -364,7 +356,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v12
@@ -526,7 +517,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v13
@@ -573,7 +563,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mIsRestore:Z
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$300(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Z
 
     move-result v12
@@ -584,7 +573,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v12
@@ -736,7 +724,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mIsDelete:Z
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$400(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Z
 
     move-result v12
@@ -747,7 +734,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v12
@@ -851,7 +837,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mIsRestore:Z
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$300(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Z
 
     move-result v12
@@ -862,7 +847,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v12
@@ -969,7 +953,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mIsDelete:Z
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$400(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Z
 
     move-result v12
@@ -980,7 +963,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v12
@@ -1040,7 +1022,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -1057,7 +1038,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -1078,7 +1058,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -1093,7 +1072,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -1116,7 +1094,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mIsRestore:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$300(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Z
 
     move-result v1
@@ -1129,7 +1106,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -1159,7 +1135,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -1172,7 +1147,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mIsRestore:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$300(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Z
 
     move-result v1
@@ -1204,7 +1178,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mIsRestore:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$300(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Z
 
     move-result v1
@@ -1236,7 +1209,6 @@
     :goto_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -1279,7 +1251,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -1293,7 +1264,6 @@
     :cond_8
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -1324,7 +1294,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -1345,7 +1314,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd$SCloudFileProcessingTask;->this$0:Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudRecycleBinFileProcessingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

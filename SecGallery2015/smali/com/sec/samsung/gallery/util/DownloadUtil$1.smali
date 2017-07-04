@@ -54,7 +54,6 @@
 
     move-result-wide v2
 
-    # getter for: Lcom/sec/samsung/gallery/util/DownloadUtil;->mIDArray:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/samsung/gallery/util/DownloadUtil;->access$000()Ljava/util/ArrayList;
 
     move-result-object v4
@@ -69,23 +68,19 @@
 
     if-eqz v4, :cond_0
 
-    # invokes: Lcom/sec/samsung/gallery/util/DownloadUtil;->checkDownloadStatus(Landroid/content/Context;J)V
     invoke-static {p1, v2, v3}, Lcom/sec/samsung/gallery/util/DownloadUtil;->access$100(Landroid/content/Context;J)V
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/util/DownloadUtil;->smIsReceiverRegistered:Z
     invoke-static {}, Lcom/sec/samsung/gallery/util/DownloadUtil;->access$200()Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/util/DownloadUtil;->mHandlerDownloadInfo:Landroid/os/Handler;
     invoke-static {}, Lcom/sec/samsung/gallery/util/DownloadUtil;->access$400()Landroid/os/Handler;
 
     move-result-object v4
 
-    # getter for: Lcom/sec/samsung/gallery/util/DownloadUtil;->mRunnableDownloadCheck:Ljava/lang/Runnable;
     invoke-static {}, Lcom/sec/samsung/gallery/util/DownloadUtil;->access$300()Ljava/lang/Runnable;
 
     move-result-object v5

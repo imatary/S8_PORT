@@ -70,7 +70,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$3;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->postErrorDetails(Lcom/samsung/android/sdk/ssf/SsfResult;)Ljava/lang/String;
     invoke-static {v3, p3}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$400(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;Lcom/samsung/android/sdk/ssf/SsfResult;)Ljava/lang/String;
 
     move-result-object v3

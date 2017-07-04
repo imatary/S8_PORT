@@ -115,7 +115,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/glcore/LibGLRootView$IdleRunner;->this$0:Lcom/sec/android/gallery3d/glcore/LibGLRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/LibGLRootView;->mRenderLock:Ljava/util/concurrent/locks/ReentrantLock;
     invoke-static {v3}, Lcom/sec/android/gallery3d/glcore/LibGLRootView;->access$100(Lcom/sec/android/gallery3d/glcore/LibGLRootView;)Ljava/util/concurrent/locks/ReentrantLock;
 
     move-result-object v3
@@ -150,7 +149,6 @@
     :goto_1
     iget-object v3, p0, Lcom/sec/android/gallery3d/glcore/LibGLRootView$IdleRunner;->this$0:Lcom/sec/android/gallery3d/glcore/LibGLRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/LibGLRootView;->mRenderLock:Ljava/util/concurrent/locks/ReentrantLock;
     invoke-static {v3}, Lcom/sec/android/gallery3d/glcore/LibGLRootView;->access$100(Lcom/sec/android/gallery3d/glcore/LibGLRootView;)Ljava/util/concurrent/locks/ReentrantLock;
 
     move-result-object v3
@@ -293,7 +291,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/glcore/LibGLRootView$IdleRunner;->this$0:Lcom/sec/android/gallery3d/glcore/LibGLRootView;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/LibGLRootView;->mRenderLock:Ljava/util/concurrent/locks/ReentrantLock;
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/LibGLRootView;->access$100(Lcom/sec/android/gallery3d/glcore/LibGLRootView;)Ljava/util/concurrent/locks/ReentrantLock;
 
     move-result-object v4

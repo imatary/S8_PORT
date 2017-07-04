@@ -59,7 +59,6 @@
 
     const/4 v4, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->startSendChannel(I[Landroid/net/Uri;ZZ)V
     invoke-static {v0, v1, v2, v3, v4}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$21300(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;I[Landroid/net/Uri;ZZ)V
 
     return-void

@@ -51,7 +51,6 @@
 
     invoke-virtual {v0}, Lcom/sec/android/secphoto/Profiling;->Start()J
 
-    # getter for: Lcom/sec/android/secphoto/AutoEnhance;->TEMP_FILE_PATH:Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/secphoto/AutoEnhance;->access$000()Ljava/lang/String;
 
     move-result-object v1

@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog$1;->this$0:Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->mCtx:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->access$000(Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;)Landroid/content/Context;
 
     move-result-object v1
@@ -50,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog$1;->this$0:Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->mCtx:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->access$000(Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;)Landroid/content/Context;
 
     move-result-object v1
@@ -72,7 +70,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog$1;->this$0:Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->mCtx:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->access$000(Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;)Landroid/content/Context;
 
     move-result-object v1
@@ -89,7 +86,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog$1;->this$0:Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->mTitle:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->access$100(Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;)I
 
     move-result v1
@@ -100,7 +96,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog$1;->this$0:Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->mTitle:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->access$100(Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;)I
 
     move-result v1
@@ -121,7 +116,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog$1;->this$0:Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->mEvent:Lcom/sec/samsung/gallery/core/Event;
     invoke-static {v1}, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->access$200(Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;)Lcom/sec/samsung/gallery/core/Event;
 
     move-result-object v1
@@ -143,7 +137,6 @@
     :cond_4
     iget-object v1, p0, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog$1;->this$0:Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->mEvent:Lcom/sec/samsung/gallery/core/Event;
     invoke-static {v1}, Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;->access$200(Lcom/sec/samsung/gallery/dialog/ConfirmationDialog;)Lcom/sec/samsung/gallery/core/Event;
 
     move-result-object v1

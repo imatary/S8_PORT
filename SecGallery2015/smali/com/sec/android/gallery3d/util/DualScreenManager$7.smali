@@ -36,7 +36,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/util/DualScreenManager$7;->this$0:Lcom/sec/android/gallery3d/util/DualScreenManager;
 
-    # getter for: Lcom/sec/android/gallery3d/util/DualScreenManager;->mFoldingStatus:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/util/DualScreenManager;->access$500(Lcom/sec/android/gallery3d/util/DualScreenManager;)I
 
     move-result v0
@@ -51,7 +50,6 @@
 
     move-result v2
 
-    # setter for: Lcom/sec/android/gallery3d/util/DualScreenManager;->mFoldingStatus:I
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/util/DualScreenManager;->access$502(Lcom/sec/android/gallery3d/util/DualScreenManager;I)I
 
     const-string/jumbo v1, "DualScreenManager"
@@ -78,7 +76,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/util/DualScreenManager$7;->this$0:Lcom/sec/android/gallery3d/util/DualScreenManager;
 
-    # getter for: Lcom/sec/android/gallery3d/util/DualScreenManager;->mFoldingStatus:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/util/DualScreenManager;->access$500(Lcom/sec/android/gallery3d/util/DualScreenManager;)I
 
     move-result v3

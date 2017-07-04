@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/LibGLRootView$1;->this$0:Lcom/sec/android/gallery3d/glcore/LibGLRootView;
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/LibGLRootView;->superRequestRender()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/LibGLRootView;->access$000(Lcom/sec/android/gallery3d/glcore/LibGLRootView;)V
 
     return-void

@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$16;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$1300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -64,13 +63,11 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$16;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->enterSelectionMode()V
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
 
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$16;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$1300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -83,8 +80,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$16;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->selectAlbum(I)V
-    invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
+    invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$6400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
 
     :cond_1
     const/4 v0, 0x1

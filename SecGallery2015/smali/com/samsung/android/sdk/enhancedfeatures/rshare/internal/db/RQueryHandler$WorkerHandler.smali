@@ -181,7 +181,6 @@
 
     move-result-object v1
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->access$100()Ljava/lang/String;
 
     move-result-object v2
@@ -198,7 +197,6 @@
 
     iget-object v1, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler$WorkerHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->rShareDbHandler:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
 
     move-result-object v1
@@ -248,7 +246,6 @@
 
     iget-object v1, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler$WorkerHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->rShareDbHandler:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
 
     move-result-object v1
@@ -284,7 +281,6 @@
 
     iget-object v1, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler$WorkerHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->rShareDbHandler:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
 
     move-result-object v1
@@ -327,7 +323,6 @@
 
     iget-object v1, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler$WorkerHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->rShareDbHandler:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
 
     move-result-object v1
@@ -356,7 +351,6 @@
 
     iget-object v1, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler$WorkerHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->rShareDbHandler:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
 
     move-result-object v1
@@ -390,7 +384,6 @@
 
     iget-object v1, v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler$WorkerHandler;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->rShareDbHandler:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RQueryHandler;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
 
     move-result-object v1

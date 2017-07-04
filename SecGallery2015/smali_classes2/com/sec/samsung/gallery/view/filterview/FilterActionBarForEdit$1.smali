@@ -43,7 +43,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->access$000(Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -76,7 +75,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->access$100(Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -85,7 +83,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->access$200(Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -102,7 +99,6 @@
 
     iget v3, p0, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit$1;->val$numberOfItemsSelected:I
 
-    # setter for: Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->mQuantitySelectedAlbum:I
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->access$302(Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;I)I
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit$1;->val$numberOfItemsSelected:I
@@ -121,7 +117,6 @@
 
     iget v3, p0, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v2, v3, v0}, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->access$500(Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;ILjava/lang/String;)V
 
     goto :goto_0
@@ -129,7 +124,6 @@
     :cond_2
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;->access$400(Lcom/sec/samsung/gallery/view/filterview/FilterActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2

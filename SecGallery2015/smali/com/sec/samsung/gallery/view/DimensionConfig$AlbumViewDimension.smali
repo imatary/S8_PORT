@@ -129,7 +129,6 @@
 
     const v3, 0x7f0f0004
 
-    # invokes: Lcom/sec/samsung/gallery/view/DimensionConfig;->getIntFromTypeArray(Landroid/content/res/Resources;II)I
     invoke-static {v1, v3, v0}, Lcom/sec/samsung/gallery/view/DimensionConfig;->access$000(Landroid/content/res/Resources;II)I
 
     move-result v3
@@ -142,7 +141,6 @@
 
     const v3, 0x7f0f0003
 
-    # invokes: Lcom/sec/samsung/gallery/view/DimensionConfig;->getIntFromTypeArray(Landroid/content/res/Resources;II)I
     invoke-static {v1, v3, v0}, Lcom/sec/samsung/gallery/view/DimensionConfig;->access$000(Landroid/content/res/Resources;II)I
 
     move-result v3

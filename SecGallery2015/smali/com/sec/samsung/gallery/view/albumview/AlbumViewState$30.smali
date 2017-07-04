@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$30;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->setLayoutLevel(I)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$15300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;I)V
 
     return-void

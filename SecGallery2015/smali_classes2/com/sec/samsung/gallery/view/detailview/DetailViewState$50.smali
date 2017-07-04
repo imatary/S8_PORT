@@ -1,14 +1,11 @@
 .class Lcom/sec/samsung/gallery/view/detailview/DetailViewState$50;
-.super Ljava/lang/Object;
+.super Landroid/content/BroadcastReceiver;
 .source "DetailViewState.java"
-
-# interfaces
-.implements Lcom/sec/android/gallery3d/devicetotv/DeviceToTVUtil$ShowDeviceToTVListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->getDeviceToTVUtil()Lcom/sec/android/gallery3d/devicetotv/DeviceToTVUtil;
+    value = Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->registerSIPBroadcastReceiver()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,44 +24,27 @@
 
     iput-object p1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$50;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getShowBarState()Z
-    .locals 1
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 3
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$50;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mShowBars:Z
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$9100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
+    const-string/jumbo v1, "AxT9IME.isVisibleWindow"
 
-    move-result v0
+    const/4 v2, 0x1
 
-    return v0
-.end method
+    invoke-virtual {p2, v1, v2}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
-.method public showDeviceToTvDisconnectIcon()V
-    .locals 1
+    move-result v1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$50;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
-
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->refreshDeviceToTvIcon()V
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$21800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
-
-    return-void
-.end method
-
-.method public showDeviceToTvIcon()V
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$50;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
-
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->refreshDeviceToTvIcon()V
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$21800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$39602(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)Z
 
     return-void
 .end method

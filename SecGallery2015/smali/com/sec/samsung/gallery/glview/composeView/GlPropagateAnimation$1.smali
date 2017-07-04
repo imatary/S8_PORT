@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlPropagateAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlPropagateAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlPropagateAnimation;->clear()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlPropagateAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlPropagateAnimation;)V
 
     return-void

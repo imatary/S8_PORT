@@ -45,8 +45,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$29;->val$key:Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateRecommendView(Ljava/lang/String;)V
-    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$17600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$18000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;)V
 
     return-void
 .end method

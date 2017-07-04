@@ -144,14 +144,16 @@
     return-void
 .end method
 
-.method onItemClick(II)V
+.method onItemClick(II)Z
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->mMode:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$ITimeViewMode;
 
-    invoke-interface {v0, p1, p2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$ITimeViewMode;->onItemClick(II)V
+    invoke-interface {v0, p1, p2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$ITimeViewMode;->onItemClick(II)Z
 
-    return-void
+    move-result v0
+
+    return v0
 .end method
 
 .method setMode(Lcom/sec/samsung/gallery/core/LaunchModeType;)V

@@ -49,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$18;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$11800(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -84,7 +83,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$18;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$11900(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -124,7 +122,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$18;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$11400(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -135,14 +132,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$18;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mFlags:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$11700(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)I
 
     move-result v1
 
     or-int/lit8 v1, v1, 0x40
 
-    # setter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mFlags:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$11602(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;I)I
 
     :cond_0

@@ -57,7 +57,6 @@
 
     const/4 v3, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mIsHoveringOnHoverView:Z
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$902(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Z)Z
 
     goto :goto_0
@@ -67,14 +66,12 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$7;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mIsHoveringOnHoverView:Z
     invoke-static {v2, v6}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$902(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Z)Z
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$7$1;->this$1:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$7;
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$7;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mIsHoveringOnImageView:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$1000(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Z
 
     move-result v2
@@ -86,7 +83,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$7;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$800(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Landroid/content/Context;
 
     move-result-object v2

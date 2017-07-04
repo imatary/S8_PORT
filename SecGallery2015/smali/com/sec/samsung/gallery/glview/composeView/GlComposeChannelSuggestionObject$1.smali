@@ -65,12 +65,10 @@
 
     if-nez v2, :cond_0
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->drawSuggestionImage(Landroid/graphics/Bitmap;)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->access$900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;Landroid/graphics/Bitmap;)V
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->mIsDecoded:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;->access$1002(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject$SuggestionImageObject;Z)Z
 
     goto :goto_0

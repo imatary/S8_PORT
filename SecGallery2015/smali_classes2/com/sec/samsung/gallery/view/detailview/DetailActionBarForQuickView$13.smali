@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$13;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->startActionWeChatSightAlbum()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$1600(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)V
 
     return-void

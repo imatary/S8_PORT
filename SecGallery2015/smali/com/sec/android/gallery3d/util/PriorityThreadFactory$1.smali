@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/PriorityThreadFactory$1;->this$0:Lcom/sec/android/gallery3d/util/PriorityThreadFactory;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PriorityThreadFactory;->mPriority:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/PriorityThreadFactory;->access$000(Lcom/sec/android/gallery3d/util/PriorityThreadFactory;)I
 
     move-result v0

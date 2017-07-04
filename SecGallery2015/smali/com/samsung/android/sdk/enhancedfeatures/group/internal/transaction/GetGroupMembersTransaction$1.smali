@@ -68,7 +68,6 @@
 
     iget-object v6, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/GetGroupMembersTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/GetGroupMembersTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/GetGroupMembersTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/GetGroupMembersListener;
     invoke-static {v6}, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/GetGroupMembersTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/GetGroupMembersTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/GetGroupMembersListener;
 
     move-result-object v6
@@ -172,7 +171,6 @@
     :cond_2
     iget-object v6, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/GetGroupMembersTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/GetGroupMembersTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/GetGroupMembersTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/GetGroupMembersListener;
     invoke-static {v6}, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/GetGroupMembersTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/GetGroupMembersTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/GetGroupMembersListener;
 
     move-result-object v6

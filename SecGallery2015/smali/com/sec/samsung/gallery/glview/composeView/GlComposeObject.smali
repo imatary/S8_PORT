@@ -812,7 +812,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->cancelAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;)V
 
     const/4 v0, 0x0
@@ -973,14 +972,12 @@
 
     iget v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mThumbPressScale:F
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->setPressScale(F)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;F)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
 
     iget v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mThumbFocusScale:F
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->setFocusScale(F)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;F)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
@@ -1177,7 +1174,6 @@
     :cond_4
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->cancelAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;)V
 
     goto :goto_1
@@ -1235,7 +1231,6 @@
     :cond_4
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->startPressAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;)V
 
     goto :goto_1
@@ -1282,7 +1277,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->cancelAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;)V
 
     goto :goto_1
@@ -1551,7 +1545,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->startFocusAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;)V
 
     goto :goto_0
@@ -1559,7 +1552,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->cancelAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;)V
 
     goto :goto_0
@@ -2053,7 +2045,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->startPressAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->mAnimationTouch:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$ThumbTouchAnimation;

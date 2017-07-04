@@ -40,7 +40,6 @@
 
     move-result-wide v2
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mReceiveTime:J
     invoke-static {v0, v2, v3}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$2802(Lcom/sec/samsung/gallery/view/common/RenameDialog;J)J
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$2;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
@@ -53,7 +52,6 @@
 
     move-result v1
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mIsSipVisible:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$2602(Lcom/sec/samsung/gallery/view/common/RenameDialog;Z)Z
 
     return-void

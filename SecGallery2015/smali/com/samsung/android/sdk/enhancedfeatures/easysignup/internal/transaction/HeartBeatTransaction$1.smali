@@ -70,7 +70,6 @@
 
     move-result-object v11
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->access$000()Ljava/lang/String;
 
     move-result-object v12
@@ -97,14 +96,12 @@
 
     move-result-wide v12
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->mInterval:J
     invoke-static {v11, v12, v13}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->access$102(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;J)J
 
     move-object/from16 v0, p0
 
     iget-object v11, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->mInterval:J
     invoke-static {v11}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;)J
 
     move-result-wide v12
@@ -121,7 +118,6 @@
 
     iget-object v12, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->mInterval:J
     invoke-static {v12}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;)J
 
     move-result-wide v12
@@ -183,7 +179,6 @@
 
     move-result-object v11
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->access$000()Ljava/lang/String;
 
     move-result-object v12
@@ -274,7 +269,6 @@
 
     const-wide/16 v12, 0x0
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->mInterval:J
     invoke-static {v11, v12, v13}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->access$102(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;J)J
 
     goto/16 :goto_0
@@ -316,7 +310,6 @@
 
     const-string/jumbo v11, "Network error..."
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->access$000()Ljava/lang/String;
 
     move-result-object v12
@@ -329,14 +322,12 @@
 
     const-wide/16 v12, -0x1
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->mInterval:J
     invoke-static {v11, v12, v13}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->access$102(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;J)J
 
     move-object/from16 v0, p0
 
     iget-object v11, v0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->mContext:Landroid/content/Context;
     invoke-static {v11}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;)Landroid/content/Context;
 
     move-result-object v11
@@ -364,7 +355,6 @@
 
     const-wide/16 v12, 0x0
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->mInterval:J
     invoke-static {v11, v12, v13}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;->access$102(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/transaction/HeartBeatTransaction;J)J
 
     goto :goto_3

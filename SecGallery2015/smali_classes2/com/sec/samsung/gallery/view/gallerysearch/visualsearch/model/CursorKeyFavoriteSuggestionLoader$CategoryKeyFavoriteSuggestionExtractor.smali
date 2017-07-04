@@ -203,7 +203,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyFavoriteSuggestionLoader$CategoryKeyFavoriteSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyFavoriteSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyFavoriteSuggestionLoader;->mSuggestedKeyword:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyFavoriteSuggestionLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyFavoriteSuggestionLoader;)Ljava/lang/String;
 
     move-result-object v1

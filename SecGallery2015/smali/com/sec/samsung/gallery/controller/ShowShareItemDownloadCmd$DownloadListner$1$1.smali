@@ -43,7 +43,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd$DownloadListner;->this$0:Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowShareItemDownloadCmd;)Landroid/content/Context;
 
     move-result-object v0

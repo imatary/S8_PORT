@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$2;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mMultiWindowModeChangeListener:Lcom/sec/android/gallery3d/app/MultiWindowModeChangeListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$600(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Lcom/sec/android/gallery3d/app/MultiWindowModeChangeListener;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$2;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mMultiWindowModeChangeListener:Lcom/sec/android/gallery3d/app/MultiWindowModeChangeListener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$600(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Lcom/sec/android/gallery3d/app/MultiWindowModeChangeListener;
 
     move-result-object v0
@@ -58,7 +56,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$2;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->setMultiWindowMode()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$700(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)V
 
     return-void

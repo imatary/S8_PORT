@@ -52,7 +52,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->mFocusedHLVideoObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->access$502(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     const/4 v0, 0x1
@@ -65,12 +64,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->updateThumbObjectBorder()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->updateHLVideoIconBorder(Lcom/sec/android/gallery3d/glcore/GlObject;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;Lcom/sec/android/gallery3d/glcore/GlObject;)V
 
     invoke-static {}, Lcom/sec/samsung/gallery/util/TTSUtil;->getInstance()Lcom/sec/samsung/gallery/util/TTSUtil;
@@ -87,7 +84,6 @@
 
     iget v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView$7;->val$objectType:I
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->getTTSDescription(I)Ljava/lang/String;
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;I)Ljava/lang/String;
 
     move-result-object v2

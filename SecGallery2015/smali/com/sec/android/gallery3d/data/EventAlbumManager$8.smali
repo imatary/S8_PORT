@@ -47,14 +47,12 @@
 .method public compare(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;)I
     .locals 4
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->count:I
     invoke-static {p2}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2200(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;)I
 
     move-result v0
 
     int-to-long v0, v0
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->count:I
     invoke-static {p1}, Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;->access$2200(Lcom/sec/android/gallery3d/data/EventAlbumManager$EventAlbumInfo;)I
 
     move-result v2

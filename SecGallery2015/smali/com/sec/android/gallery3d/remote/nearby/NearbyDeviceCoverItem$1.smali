@@ -49,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;->access$000(Lcom/sec/android/gallery3d/remote/nearby/NearbyDeviceCoverItem;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v1

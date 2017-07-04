@@ -52,7 +52,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$4;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mAutoRecommendTime:J
     invoke-static {v4}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$200(Lcom/sec/android/gallery3d/app/GalleryActivity;)J
 
     move-result-wide v4
@@ -71,7 +70,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$4;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->nFaceRecommendationObserver:Landroid/database/ContentObserver;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$300(Lcom/sec/android/gallery3d/app/GalleryActivity;)Landroid/database/ContentObserver;
 
     move-result-object v0
@@ -86,7 +84,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$4;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->nFaceRecommendationObserver:Landroid/database/ContentObserver;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$300(Lcom/sec/android/gallery3d/app/GalleryActivity;)Landroid/database/ContentObserver;
 
     move-result-object v1
@@ -97,7 +94,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->nFaceRecommendationObserver:Landroid/database/ContentObserver;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$302(Lcom/sec/android/gallery3d/app/GalleryActivity;Landroid/database/ContentObserver;)Landroid/database/ContentObserver;
 
     :cond_0

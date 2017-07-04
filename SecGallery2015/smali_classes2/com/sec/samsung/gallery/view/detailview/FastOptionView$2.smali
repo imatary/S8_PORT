@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mFastEditContainerView:Landroid/widget/LinearLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$300(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Landroid/widget/LinearLayout;
 
     move-result-object v0
@@ -54,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->setEditContainerLocationForSingle()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$400(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)V
 
     :goto_0
@@ -63,7 +61,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$500(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v0
@@ -80,7 +77,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$500(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v0
@@ -102,7 +98,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mFastEditContainerView:Landroid/widget/LinearLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$300(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Landroid/widget/LinearLayout;
 
     move-result-object v0
@@ -117,7 +112,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mIsFromCategoryView:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$600(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Z
 
     move-result v0
@@ -126,7 +120,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mIsFromEventView:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$700(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Z
 
     move-result v0
@@ -135,7 +128,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mIsFromFavoriteView:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$800(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Z
 
     move-result v0
@@ -145,7 +137,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->setEditContainerLocation()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$900(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)V
 
     goto :goto_0
@@ -153,7 +144,6 @@
     :cond_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mFastEditContainerView:Landroid/widget/LinearLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$300(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Landroid/widget/LinearLayout;
 
     move-result-object v0
@@ -164,7 +154,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$500(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v1
@@ -179,7 +168,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->setEditContainerLocationForOverScreen()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$1000(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)V
 
     goto :goto_0
@@ -187,7 +175,6 @@
     :cond_4
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->setEditContainerLocationForNormal()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$1100(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)V
 
     goto :goto_0

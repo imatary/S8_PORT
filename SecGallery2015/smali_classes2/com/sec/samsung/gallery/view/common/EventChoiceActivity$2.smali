@@ -41,12 +41,10 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$2;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mIsMultiWindow:Z
     invoke-static {v1, p1}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$702(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$2;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mListView:Landroid/widget/ListView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$800(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/widget/ListView;
 
     move-result-object v1
@@ -61,7 +59,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$2;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$400(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/content/Context;
 
     move-result-object v1
@@ -82,7 +79,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$2;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$400(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/content/Context;
 
     move-result-object v1
@@ -101,7 +97,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$2;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$400(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/content/Context;
 
     move-result-object v1
@@ -121,7 +116,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$2;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mListView:Landroid/widget/ListView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$800(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/widget/ListView;
 
     move-result-object v1

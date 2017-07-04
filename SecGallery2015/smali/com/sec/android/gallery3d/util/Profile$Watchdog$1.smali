@@ -44,7 +44,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/Profile$Watchdog$1;->this$0:Lcom/sec/android/gallery3d/util/Profile$Watchdog;
 
-    # invokes: Lcom/sec/android/gallery3d/util/Profile$Watchdog;->processList()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/Profile$Watchdog;->access$000(Lcom/sec/android/gallery3d/util/Profile$Watchdog;)V
 
     monitor-exit v1

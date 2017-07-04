@@ -79,12 +79,10 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/data/CategoryAlbumSet;->faceClusterReload:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/data/CategoryAlbumSet;->access$002(Lcom/sec/android/gallery3d/data/CategoryAlbumSet;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/CategoryAlbumSet$AlbumsLoader;->this$0:Lcom/sec/android/gallery3d/data/CategoryAlbumSet;
 
-    # getter for: Lcom/sec/android/gallery3d/data/CategoryAlbumSet;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/CategoryAlbumSet;->access$100(Lcom/sec/android/gallery3d/data/CategoryAlbumSet;)Landroid/os/Handler;
 
     move-result-object v0

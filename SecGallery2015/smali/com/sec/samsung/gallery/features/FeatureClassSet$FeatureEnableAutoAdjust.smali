@@ -50,7 +50,6 @@
 .method isEnabledUnderVer30(Landroid/content/Context;)Z
     .locals 2
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -63,7 +62,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -76,7 +74,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -89,7 +86,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -102,7 +98,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -115,7 +110,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -128,7 +122,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -141,7 +134,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -154,7 +146,6 @@
 
     if-nez v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -168,7 +159,6 @@
     if-eqz v0, :cond_1
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -181,7 +171,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -194,7 +183,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -207,7 +195,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -220,7 +207,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -233,7 +219,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -246,7 +231,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -259,7 +243,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -272,7 +255,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -285,7 +267,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -298,7 +279,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -311,7 +291,6 @@
 
     if-nez v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/features/FeatureClassSet;->mProductName:Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/features/FeatureClassSet;->access$000()Ljava/lang/String;
 
     move-result-object v0

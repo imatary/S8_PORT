@@ -46,7 +46,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$8;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mIsPickMode:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$2200(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Z
 
     move-result v3
@@ -60,14 +59,12 @@
     :cond_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$8;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->checkMTP()Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$2300(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Z
 
     move-result v1
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$8;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mIsTabAdded:[Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1900(Lcom/sec/samsung/gallery/drawer/GalleryTab;)[Z
 
     move-result-object v3
@@ -102,7 +99,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$8;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mHandler:Landroid/os/Handler;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$2400(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/os/Handler;
 
     move-result-object v3
@@ -115,7 +111,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$8;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mHandler:Landroid/os/Handler;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$2400(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/os/Handler;
 
     move-result-object v3
@@ -125,7 +120,6 @@
     :cond_2
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$8;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mHandler:Landroid/os/Handler;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$2400(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/os/Handler;
 
     move-result-object v3
@@ -139,7 +133,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$8;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$100(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -158,7 +151,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$8;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1800(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v3
@@ -185,7 +177,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$8;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mHandler:Landroid/os/Handler;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$2400(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/os/Handler;
 
     move-result-object v3
@@ -198,7 +189,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$8;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mHandler:Landroid/os/Handler;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$2400(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/os/Handler;
 
     move-result-object v3
@@ -208,7 +198,6 @@
     :cond_4
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$8;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mHandler:Landroid/os/Handler;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$2400(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/os/Handler;
 
     move-result-object v3

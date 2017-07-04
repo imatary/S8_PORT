@@ -36,7 +36,6 @@
 
     const/4 v0, 0x2
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryAbsNotificationFragment;->IS_NOS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryAbsNotificationFragment;->access$000()Z
 
     move-result v1

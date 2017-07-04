@@ -49,7 +49,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/scloud/SCloudMediaItem$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/remote/scloud/SCloudMediaItem;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/scloud/SCloudMediaItem;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/scloud/SCloudMediaItem;->access$000(Lcom/sec/android/gallery3d/remote/scloud/SCloudMediaItem;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v2

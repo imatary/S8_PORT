@@ -69,7 +69,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$0()Ljava/lang/String;
 
     move-result-object v0
@@ -96,7 +95,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$2;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;)Landroid/content/Context;
 
     move-result-object v1
@@ -117,7 +115,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$2;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$10(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;)Landroid/os/Handler;
 
     move-result-object v6
@@ -144,7 +141,6 @@
 
     if-eqz v0, :cond_1
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$0()Ljava/lang/String;
 
     move-result-object v0
@@ -170,7 +166,6 @@
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$2;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$10(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;)Landroid/os/Handler;
 
     move-result-object v0

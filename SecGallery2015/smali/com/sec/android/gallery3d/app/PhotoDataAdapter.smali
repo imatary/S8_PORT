@@ -970,14 +970,12 @@
     goto :goto_2
 
     :cond_4
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {v14}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$900(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
     move-result-object v2
 
     if-eqz v2, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {v14}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$900(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
     move-result-object v2
@@ -988,7 +986,6 @@
 
     if-nez v2, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v14}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1000(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v2
@@ -1007,14 +1004,12 @@
 
     if-eqz v2, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v14}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v2
 
     if-eqz v2, :cond_5
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v14}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v2
@@ -1032,7 +1027,6 @@
 
     new-instance v2, Lcom/sec/samsung/gallery/decoder/LargeImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {v14}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$900(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
     move-result-object v3
@@ -1061,7 +1055,6 @@
 
     invoke-direct/range {v2 .. v10}, Lcom/sec/samsung/gallery/decoder/LargeImage;-><init>(Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;Lcom/sec/android/gallery3d/interfaces/LibraryContext;Lcom/sec/android/gallery3d/data/MediaItem;ILcom/sec/android/gallery3d/ui/PhotoView;Lcom/sec/android/gallery3d/app/PhotoDataAdapter;Lcom/sec/samsung/gallery/decoder/LargeImageTilePool;Z)V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v14, v2}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1102(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     const-string/jumbo v2, "PhotoDataAdapter"
@@ -2041,14 +2034,12 @@
 
     if-ne p2, v4, :cond_4
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v4
 
     if-eqz v4, :cond_4
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedScreenNail:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$300(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)J
 
     move-result-wide v4
@@ -2057,7 +2048,6 @@
 
     if-nez v4, :cond_4
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v4
@@ -2069,7 +2059,6 @@
 
     if-ne p2, v4, :cond_5
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedFullImage:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$400(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)J
 
     move-result-wide v4
@@ -2078,14 +2067,12 @@
 
     if-nez v4, :cond_5
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v4
 
     if-eqz v4, :cond_5
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v4
@@ -2097,7 +2084,6 @@
 
     if-ne p2, v4, :cond_8
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedScreenNail:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$300(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)J
 
     move-result-wide v4
@@ -2155,7 +2141,6 @@
     invoke-virtual {v4, v5}, Lcom/sec/android/gallery3d/data/CameraShortcutImage;->setNeedToUpdateImage(Z)V
 
     :cond_6
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedScreenNail:J
     invoke-static {v0, v2, v3}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$302(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;J)J
 
     iget-boolean v4, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mRequestAutoAdjust:Z
@@ -2176,11 +2161,9 @@
 
     move-result-object v4
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0, v4}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$502(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
     :cond_7
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v4
@@ -2227,7 +2210,6 @@
 
     if-ne p2, v4, :cond_b
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedFullImage:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$400(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)J
 
     move-result-wide v4
@@ -2260,7 +2242,6 @@
 
     if-nez v4, :cond_b
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedFullImage:J
     invoke-static {v0, v2, v3}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$402(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;J)J
 
     iget-boolean v4, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mRequestAutoAdjust:Z
@@ -2283,7 +2264,6 @@
 
     move-result-object v4
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0, v4}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$802(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
     :cond_a
@@ -2291,7 +2271,6 @@
 
     iput-boolean v4, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mRequestAutoAdjust:Z
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v4
@@ -2475,7 +2454,6 @@
     :cond_1
     const/4 v0, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v9, v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$802(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
     invoke-interface {p2}, Lcom/sec/android/gallery3d/util/Future;->get()Ljava/lang/Object;
@@ -2484,10 +2462,8 @@
 
     check-cast v0, Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {v9, v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$902(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$900(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
     move-result-object v0
@@ -2506,14 +2482,12 @@
 
     if-eqz v0, :cond_4
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1000(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1000(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v0
@@ -2525,7 +2499,6 @@
     :cond_2
     new-instance v0, Lcom/sec/samsung/gallery/decoder/LargeImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$900(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
     move-result-object v1
@@ -2555,17 +2528,14 @@
 
     invoke-direct/range {v0 .. v8}, Lcom/sec/samsung/gallery/decoder/LargeImage;-><init>(Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;Lcom/sec/android/gallery3d/interfaces/LibraryContext;Lcom/sec/android/gallery3d/data/MediaItem;ILcom/sec/android/gallery3d/ui/PhotoView;Lcom/sec/android/gallery3d/app/PhotoDataAdapter;Lcom/sec/samsung/gallery/decoder/LargeImageTilePool;Z)V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v9, v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1002(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v0
@@ -2581,7 +2551,6 @@
 
     new-instance v0, Lcom/sec/samsung/gallery/decoder/LargeImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$900(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
     move-result-object v1
@@ -2606,7 +2575,6 @@
 
     invoke-direct/range {v0 .. v8}, Lcom/sec/samsung/gallery/decoder/LargeImage;-><init>(Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;Lcom/sec/android/gallery3d/interfaces/LibraryContext;Lcom/sec/android/gallery3d/data/MediaItem;ILcom/sec/android/gallery3d/ui/PhotoView;Lcom/sec/android/gallery3d/app/PhotoDataAdapter;Lcom/sec/samsung/gallery/decoder/LargeImageTilePool;Z)V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v9, v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1102(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     :cond_4
@@ -2752,92 +2720,77 @@
     if-eqz v6, :cond_7
 
     :cond_2
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v6
 
     if-eqz v6, :cond_3
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v6
 
     invoke-interface {v6}, Lcom/sec/android/gallery3d/util/Future;->cancel()V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0, v10}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$802(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
     :cond_3
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1000(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v6
 
     if-eqz v6, :cond_4
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1000(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v6
 
     invoke-virtual {v6, v11}, Lcom/sec/samsung/gallery/decoder/LargeImage;->stopDecodeThread(Z)V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0, v10}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1002(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     :cond_4
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v6
 
     if-eqz v6, :cond_5
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v6
 
     invoke-virtual {v6, v11}, Lcom/sec/samsung/gallery/decoder/LargeImage;->stopDecodeThread(Z)V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0, v10}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1102(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     :cond_5
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$900(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
     move-result-object v6
 
     if-eqz v6, :cond_6
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$900(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
     move-result-object v6
 
     invoke-virtual {v6}, Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;->requestCancelDecode()V
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$900(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
     move-result-object v6
 
     invoke-virtual {v6}, Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;->recycle()V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {v0, v10}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$902(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
     :cond_6
     const-wide/16 v6, -0x1
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedFullImage:J
     invoke-static {v0, v6, v7}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$402(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;J)J
 
     :cond_7
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedScreenNail:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$300(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)J
 
     move-result-wide v6
@@ -2916,14 +2869,12 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v7
 
     if-eqz v7, :cond_b
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v7
@@ -2931,50 +2882,42 @@
     invoke-interface {v7}, Lcom/sec/android/gallery3d/util/Future;->cancel()V
 
     :cond_b
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1000(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v7
 
     if-eqz v7, :cond_c
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1000(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v7
 
     invoke-virtual {v7, v11}, Lcom/sec/samsung/gallery/decoder/LargeImage;->stopDecodeThread(Z)V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0, v10}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1002(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     :cond_c
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v7
 
     if-eqz v7, :cond_d
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v7
 
     invoke-virtual {v7, v11}, Lcom/sec/samsung/gallery/decoder/LargeImage;->stopDecodeThread(Z)V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0, v10}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1102(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     :cond_d
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v7
 
     if-eqz v7, :cond_e
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v7
@@ -3099,59 +3042,49 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v8
 
     if-eqz v8, :cond_6
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v8
 
     if-eq v8, v6, :cond_6
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v8
 
     invoke-interface {v8}, Lcom/sec/android/gallery3d/util/Future;->cancel()V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v2, v11}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$502(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedScreenNail:J
     invoke-static {v2, v12, v13}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$302(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;J)J
 
     :cond_6
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v8
 
     if-eqz v8, :cond_5
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v8
 
     if-eq v8, v6, :cond_5
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v8
 
     invoke-interface {v8}, Lcom/sec/android/gallery3d/util/Future;->cancel()V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v2, v11}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$802(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedFullImage:J
     invoke-static {v2, v12, v13}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$402(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;J)J
 
     goto :goto_1
@@ -3201,7 +3134,6 @@
     :cond_1
     const/4 v4, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0, v4}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$502(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
     iget-object v4, v0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNail:Lcom/sec/android/gallery3d/ui/ScreenNail;
@@ -3221,7 +3153,6 @@
     :cond_2
     if-nez v3, :cond_6
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->failToLoad:Z
     invoke-static {v0, v6}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$602(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Z)Z
 
     :cond_3
@@ -3286,7 +3217,6 @@
     goto :goto_0
 
     :cond_6
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->failToLoad:Z
     invoke-static {v0, v5}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$602(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Z)Z
 
     iput-object v3, v0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNail:Lcom/sec/android/gallery3d/ui/ScreenNail;
@@ -3308,7 +3238,6 @@
 
     move-result-object v4
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailCopy:Lcom/sec/android/gallery3d/ui/ScreenNail;
     invoke-static {v0, v4}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$702(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/ui/ScreenNail;)Lcom/sec/android/gallery3d/ui/ScreenNail;
 
     goto :goto_1
@@ -3643,12 +3572,10 @@
 
     iget-object v4, p1, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNail:Lcom/sec/android/gallery3d/ui/ScreenNail;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImage:Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
     invoke-static {p1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$900(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
     move-result-object v1
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->isBrokenImage:Z
     invoke-static {p1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1300(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Z
 
     move-result v6
@@ -3833,7 +3760,6 @@
     invoke-virtual {v6, v4}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Uploader;->addTexture(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)V
 
     :cond_2
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailCopy:Lcom/sec/android/gallery3d/ui/ScreenNail;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/ui/ScreenNail;
 
     move-result-object v3
@@ -3898,7 +3824,6 @@
 
     const-wide/16 v2, -0x1
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedScreenNail:J
     invoke-static {v0, v2, v3}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$302(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;J)J
 
     iget-object v1, v0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNail:Lcom/sec/android/gallery3d/ui/ScreenNail;
@@ -3938,10 +3863,8 @@
 
     if-eqz v0, :cond_0
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedScreenNail:J
     invoke-static {v0, v4, v5}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$302(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;J)J
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedFullImage:J
     invoke-static {v0, v4, v5}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$402(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;J)J
 
     :cond_0
@@ -4046,7 +3969,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->isBrokenImage:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1300(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Z
 
     move-result v3
@@ -4085,7 +4007,6 @@
 
     if-eqz v3, :cond_0
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->isBrokenImage:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1302(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Z)Z
 
     const/4 v2, 0x1
@@ -4149,7 +4070,6 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$502(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mThreadPool:Lcom/sec/android/gallery3d/util/ThreadPool;
@@ -4168,7 +4088,6 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$802(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
     const/4 v2, 0x1
@@ -4531,7 +4450,6 @@
 
     if-ne v1, p1, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1000(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v1
@@ -4540,7 +4458,6 @@
     return-object v1
 
     :cond_0
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v1
@@ -4568,7 +4485,6 @@
 
     if-ne v2, p1, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1000(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v1
@@ -4582,7 +4498,6 @@
     return-object v2
 
     :cond_0
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v1
@@ -4635,7 +4550,6 @@
     return v1
 
     :cond_1
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->failToLoad:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$600(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Z
 
     move-result v2
@@ -4923,10 +4837,8 @@
 
     move-result-object v4
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailCopy:Lcom/sec/android/gallery3d/ui/ScreenNail;
     invoke-static {v1, v4}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$702(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/ui/ScreenNail;)Lcom/sec/android/gallery3d/ui/ScreenNail;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailCopy:Lcom/sec/android/gallery3d/ui/ScreenNail;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/ui/ScreenNail;
 
     move-result-object v4
@@ -4971,7 +4883,6 @@
 
     move-result-object v4
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailCopy:Lcom/sec/android/gallery3d/ui/ScreenNail;
     invoke-static {v1, v4}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$702(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/ui/ScreenNail;)Lcom/sec/android/gallery3d/ui/ScreenNail;
 
     :cond_8
@@ -5014,7 +4925,6 @@
 
     if-eq v4, p2, :cond_c
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailCopy:Lcom/sec/android/gallery3d/ui/ScreenNail;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/ui/ScreenNail;
 
     move-result-object v4
@@ -5031,7 +4941,6 @@
 
     move-result-object v4
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailCopy:Lcom/sec/android/gallery3d/ui/ScreenNail;
     invoke-static {v1, v4}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$702(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/android/gallery3d/ui/ScreenNail;)Lcom/sec/android/gallery3d/ui/ScreenNail;
 
     :cond_c
@@ -5044,7 +4953,6 @@
     goto/16 :goto_0
 
     :cond_d
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailCopy:Lcom/sec/android/gallery3d/ui/ScreenNail;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/ui/ScreenNail;
 
     move-result-object v4
@@ -5531,50 +5439,42 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1000(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v3
 
     if-eqz v3, :cond_3
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1000(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v3
 
     invoke-virtual {v3, v5}, Lcom/sec/samsung/gallery/decoder/LargeImage;->stopDecodeThread(Z)V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v1, v4}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1002(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     :cond_3
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v3
 
     if-eqz v3, :cond_4
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1100(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     move-result-object v3
 
     invoke-virtual {v3, v5}, Lcom/sec/samsung/gallery/decoder/LargeImage;->stopDecodeThread(Z)V
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->mLargeImage2:Lcom/sec/samsung/gallery/decoder/LargeImage;
     invoke-static {v1, v4}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1102(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImage;
 
     :cond_4
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v3
 
     if-eqz v3, :cond_5
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->fullImageTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v3
@@ -5582,14 +5482,12 @@
     invoke-interface {v3}, Lcom/sec/android/gallery3d/util/Future;->cancel()V
 
     :cond_5
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v3
 
     if-eqz v3, :cond_6
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailTask:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/util/Future;
 
     move-result-object v3
@@ -5607,14 +5505,12 @@
 
     invoke-interface {v3}, Lcom/sec/android/gallery3d/ui/ScreenNail;->recycle()V
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailCopy:Lcom/sec/android/gallery3d/ui/ScreenNail;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/ui/ScreenNail;
 
     move-result-object v3
 
     if-eqz v3, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->screenNailCopy:Lcom/sec/android/gallery3d/ui/ScreenNail;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)Lcom/sec/android/gallery3d/ui/ScreenNail;
 
     move-result-object v3
@@ -5638,11 +5534,9 @@
 
     if-nez v2, :cond_8
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedScreenNail:J
     invoke-static {v0, v6, v7}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$302(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;J)J
 
     :cond_8
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->requestedFullImage:J
     invoke-static {v0, v6, v7}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$402(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;J)J
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mImageCache:Ljava/util/HashMap;
@@ -5807,7 +5701,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->isBrokenImage:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1302(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Z)Z
 
     :cond_0
@@ -6166,7 +6059,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->isBrokenImage:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;->access$1302(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;Z)Z
 
     invoke-direct {p0, v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->updateTileProvider(Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ImageEntry;)V

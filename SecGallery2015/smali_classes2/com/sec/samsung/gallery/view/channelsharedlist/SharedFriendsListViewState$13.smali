@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showSMSMemberDialog([Ljava/lang/String;Landroid/content/Intent;)V
+    value = Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showNetworkErrorDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,17 +35,7 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$13;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
-
-    invoke-virtual {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->getSAScreenId()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "3080"
-
-    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil;->insertSALog(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     return-void
 .end method

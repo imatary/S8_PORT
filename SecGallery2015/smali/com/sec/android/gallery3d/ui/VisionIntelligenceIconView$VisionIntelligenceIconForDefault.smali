@@ -179,7 +179,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f02035f
+    const v0, 0x7f020361
 
     iput v0, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForDefault;->mResId:I
 

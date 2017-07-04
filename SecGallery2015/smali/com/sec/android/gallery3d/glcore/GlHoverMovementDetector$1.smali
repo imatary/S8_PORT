@@ -46,12 +46,10 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->mListScrollActive:Z
     invoke-static {v1, v4}, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->access$002(Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;)Landroid/content/Context;
 
     move-result-object v1
@@ -66,7 +64,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->access$200(Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v1
@@ -79,7 +76,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->access$200(Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v1
@@ -89,7 +85,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->access$200(Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v1
@@ -109,7 +104,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->mListScrollActive:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->access$000(Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;)Z
 
     move-result v1
@@ -120,24 +114,20 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->mMoveEvent:Landroid/view/MotionEvent;
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->access$300(Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;)Landroid/view/MotionEvent;
 
     move-result-object v4
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->updateMovement(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     invoke-static {v1, v4}, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->access$400(Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->calcMovement(Landroid/view/MotionEvent;Z)Z
     invoke-static {v1, v0, v3}, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->access$500(Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;Landroid/view/MotionEvent;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->access$200(Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v1
@@ -153,7 +143,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;->access$200(Lcom/sec/android/gallery3d/glcore/GlHoverMovementDetector;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v1

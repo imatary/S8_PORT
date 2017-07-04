@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;->mMainHandler:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment$StaticHandler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;->access$400(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;)Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment$StaticHandler;
 
     move-result-object v0
@@ -80,7 +79,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;->memberJoinCardOnClick(Lcom/sec/samsung/gallery/view/gallerynotificationview/model/GalleryActivityViewModel;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;->access$000(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;Lcom/sec/samsung/gallery/view/gallerynotificationview/model/GalleryActivityViewModel;)V
 
     goto :goto_0
@@ -88,7 +86,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;->postCardOnClick(Lcom/sec/samsung/gallery/view/gallerynotificationview/model/GalleryActivityViewModel;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;->access$100(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;Lcom/sec/samsung/gallery/view/gallerynotificationview/model/GalleryActivityViewModel;)V
 
     goto :goto_0
@@ -96,7 +93,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;->likeCardOnClick(Lcom/sec/samsung/gallery/view/gallerynotificationview/model/GalleryActivityViewModel;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;->access$200(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;Lcom/sec/samsung/gallery/view/gallerynotificationview/model/GalleryActivityViewModel;)V
 
     goto :goto_0
@@ -104,7 +100,6 @@
     :pswitch_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment$1;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;->commentCardOnClick(Lcom/sec/samsung/gallery/view/gallerynotificationview/model/GalleryActivityViewModel;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;->access$300(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryActivityNotificationFragment;Lcom/sec/samsung/gallery/view/gallerynotificationview/model/GalleryActivityViewModel;)V
 
     goto :goto_0

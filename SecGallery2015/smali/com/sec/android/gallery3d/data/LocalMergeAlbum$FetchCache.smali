@@ -108,7 +108,6 @@
     iget v7, p0, Lcom/sec/android/gallery3d/data/LocalMergeAlbum$FetchCache;->mStartPos:I
 
     :try_start_0
-    # getter for: Lcom/sec/android/gallery3d/data/LocalMergeAlbum;->mUseMaxPageSize:Z
     invoke-static {}, Lcom/sec/android/gallery3d/data/LocalMergeAlbum;->access$000()Z
 
     move-result v8

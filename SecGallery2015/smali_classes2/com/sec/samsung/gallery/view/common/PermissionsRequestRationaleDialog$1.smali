@@ -39,7 +39,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->mPermissionDialog:Landroid/app/AlertDialog;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->access$000(Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;)Landroid/app/AlertDialog;
 
     move-result-object v2
@@ -58,7 +57,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->mPermissionDialog:Landroid/app/AlertDialog;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->access$000(Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;)Landroid/app/AlertDialog;
 
     move-result-object v2

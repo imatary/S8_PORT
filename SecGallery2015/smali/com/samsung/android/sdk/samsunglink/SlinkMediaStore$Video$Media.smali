@@ -173,7 +173,6 @@
 
     move-result-object v1
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;->createVideoUriInfo(Landroid/os/Bundle;)Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;->access$0(Landroid/os/Bundle;)Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;
 
     move-result-object v1
@@ -184,7 +183,6 @@
 
     move-result-object v2
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;->createVideoUriInfo(Landroid/os/Bundle;)Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;
     invoke-static {v2}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;->access$0(Landroid/os/Bundle;)Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;
 
     move-result-object v2
@@ -195,7 +193,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;->createVideoUriInfo(Landroid/os/Bundle;)Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;
     invoke-static {v3}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;->access$0(Landroid/os/Bundle;)Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;
 
     move-result-object v3
@@ -206,7 +203,6 @@
 
     move-result-object v4
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;->createVideoUriInfo(Landroid/os/Bundle;)Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;
     invoke-static {v4}, Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;->access$0(Landroid/os/Bundle;)Lcom/samsung/android/sdk/samsunglink/SlinkMediaStore$Video$Media$VideoUriInfo;
 
     move-result-object v4

@@ -58,7 +58,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader$LocationSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;)Landroid/content/Context;
 
     move-result-object v3
@@ -81,7 +80,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader$LocationSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;->mMediaId:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;)I
 
     move-result v3
@@ -97,7 +95,6 @@
     :cond_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader$LocationSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;->mMediaId:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorLocationSuggestionLoader;)I
 
     move-result v3

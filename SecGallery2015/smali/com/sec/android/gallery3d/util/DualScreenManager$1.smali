@@ -46,7 +46,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/DualScreenManager$1;->this$0:Lcom/sec/android/gallery3d/util/DualScreenManager;
 
-    # getter for: Lcom/sec/android/gallery3d/util/DualScreenManager;->mLocalBroadcastManager:Landroid/support/v4/content/LocalBroadcastManager;
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/DualScreenManager;->access$000(Lcom/sec/android/gallery3d/util/DualScreenManager;)Landroid/support/v4/content/LocalBroadcastManager;
 
     move-result-object v0
@@ -55,7 +54,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/DualScreenManager$1;->this$0:Lcom/sec/android/gallery3d/util/DualScreenManager;
 
-    # getter for: Lcom/sec/android/gallery3d/util/DualScreenManager;->mLocalBroadcastManager:Landroid/support/v4/content/LocalBroadcastManager;
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/DualScreenManager;->access$000(Lcom/sec/android/gallery3d/util/DualScreenManager;)Landroid/support/v4/content/LocalBroadcastManager;
 
     move-result-object v0

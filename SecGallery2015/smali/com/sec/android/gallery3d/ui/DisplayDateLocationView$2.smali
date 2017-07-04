@@ -82,7 +82,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView$2;->this$0:Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->mDisplayDateLocationHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->access$400(Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;)Landroid/os/Handler;
 
     move-result-object v2
@@ -99,7 +98,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView$2;->this$0:Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->mDisplayDateLocationHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->access$400(Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;)Landroid/os/Handler;
 
     move-result-object v2

@@ -41,14 +41,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$28;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mAlbumIndex:I
-    invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$11700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)I
+    invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$11800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)I
 
     move-result v1
 
     const/4 v2, -0x2
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startChannelPhotoViewFromClick(II)Ljava/lang/Boolean;
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;II)Ljava/lang/Boolean;
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V

@@ -209,7 +209,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyVideoSuggestionLoader$CategoryKeyVideoSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyVideoSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyVideoSuggestionLoader;->mIsFromSuggestion:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyVideoSuggestionLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyVideoSuggestionLoader;)Z
 
     move-result v4
@@ -291,7 +290,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyVideoSuggestionLoader$CategoryKeyVideoSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyVideoSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyVideoSuggestionLoader;->mSuggestedKeyword:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyVideoSuggestionLoader;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyVideoSuggestionLoader;)Ljava/lang/String;
 
     move-result-object v1

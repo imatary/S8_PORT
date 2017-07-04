@@ -48,7 +48,6 @@
 
     if-eqz p1, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$400(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Landroid/media/MediaPlayer;
 
     move-result-object v3
@@ -99,7 +98,6 @@
 
     move-result-object v4
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$400(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Landroid/media/MediaPlayer;
 
     move-result-object v5
@@ -114,12 +112,10 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$400(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Landroid/media/MediaPlayer;
 
     move-result-object v3
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->mFilePath:Ljava/lang/String;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$1400(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Ljava/lang/String;
 
     move-result-object v4
@@ -137,7 +133,6 @@
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_1
 
     :try_start_1
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$400(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Landroid/media/MediaPlayer;
 
     move-result-object v3
@@ -157,7 +152,6 @@
     :try_start_2
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail$preparePlay;->this$0:Lcom/sec/android/gallery3d/ui/VideoScreenNail;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->access$600(Lcom/sec/android/gallery3d/ui/VideoScreenNail;)Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
 
     move-result-object v3
@@ -166,12 +160,10 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail$preparePlay;->this$0:Lcom/sec/android/gallery3d/ui/VideoScreenNail;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->access$600(Lcom/sec/android/gallery3d/ui/VideoScreenNail;)Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
 
     move-result-object v3
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$400(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Landroid/media/MediaPlayer;
 
     move-result-object v4
@@ -183,7 +175,6 @@
     invoke-interface {v3, v4, v5, v6}, Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;->SetParameter(Landroid/media/MediaPlayer;II)V
 
     :cond_2
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$400(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Landroid/media/MediaPlayer;
 
     move-result-object v3
@@ -192,7 +183,6 @@
 
     invoke-virtual {v3, v4}, Landroid/media/MediaPlayer;->setLooping(Z)V
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$400(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Landroid/media/MediaPlayer;
 
     move-result-object v3
@@ -203,7 +193,6 @@
 
     invoke-virtual {v3, v4}, Landroid/media/MediaPlayer;->setOnPreparedListener(Landroid/media/MediaPlayer$OnPreparedListener;)V
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$400(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Landroid/media/MediaPlayer;
 
     move-result-object v3
@@ -261,7 +250,6 @@
 
     invoke-virtual {p1, v3}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->setState(Lcom/sec/android/gallery3d/ui/VideoScreenNail$PlayerStates;)V
 
-    # invokes: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->doAction(Landroid/graphics/SurfaceTexture;)V
     invoke-static {p1, v7}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$700(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;Landroid/graphics/SurfaceTexture;)V
 
     goto/16 :goto_0
@@ -343,7 +331,6 @@
 
     invoke-virtual {p1, v0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->setState(Lcom/sec/android/gallery3d/ui/VideoScreenNail$PlayerStates;)V
 
-    # invokes: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->doAction(Landroid/graphics/SurfaceTexture;)V
     invoke-static {p1, v2}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$700(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;Landroid/graphics/SurfaceTexture;)V
 
     :cond_0

@@ -364,7 +364,6 @@
 
     new-instance v2, Landroid/database/MatrixCursor;
 
-    # getter for: Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;->DCM_COLUMNS:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;->access$000()[Ljava/lang/String;
 
     move-result-object v4
@@ -375,14 +374,12 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/provider/GallerySearchDatabase$DCMSearchResult;->this$0:Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;
 
-    # getter for: Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;->mDcmImageProjection:[Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;->access$100(Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;)[Ljava/lang/String;
 
     move-result-object v0
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/provider/GallerySearchDatabase$DCMSearchResult;->this$0:Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;
 
-    # getter for: Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;->access$200(Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;)Landroid/content/Context;
 
     move-result-object v4
@@ -395,7 +392,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/provider/GallerySearchDatabase$DCMSearchResult;->searchParser:Lcom/sec/android/gallery3d/provider/SearchParser;
 
-    # invokes: Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;->createKeyWordQueryDCM(Lcom/sec/android/gallery3d/provider/SearchParser;)Ljava/lang/String;
     invoke-static {v4, v5}, Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;->access$300(Lcom/sec/android/gallery3d/provider/GallerySearchDatabase;Lcom/sec/android/gallery3d/provider/SearchParser;)Ljava/lang/String;
 
     move-result-object v3

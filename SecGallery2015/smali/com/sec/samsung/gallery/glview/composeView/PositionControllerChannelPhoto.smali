@@ -2032,7 +2032,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerChannelPhoto;->mResource:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b08e1
+    const v1, 0x7f0b08e2
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -4228,7 +4228,7 @@
 
     iget-object v14, v0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerChannelPhoto;->mResource:Landroid/content/res/Resources;
 
-    const v15, 0x7f0b07f7
+    const v15, 0x7f0b07f8
 
     invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

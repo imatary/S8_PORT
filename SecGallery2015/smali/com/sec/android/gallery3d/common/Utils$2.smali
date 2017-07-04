@@ -31,14 +31,12 @@
 .method public run()V
     .locals 1
 
-    # getter for: Lcom/sec/android/gallery3d/common/Utils;->mToast:Landroid/widget/Toast;
     invoke-static {}, Lcom/sec/android/gallery3d/common/Utils;->access$100()Landroid/widget/Toast;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/common/Utils;->mToast:Landroid/widget/Toast;
     invoke-static {}, Lcom/sec/android/gallery3d/common/Utils;->access$100()Landroid/widget/Toast;
 
     move-result-object v0
@@ -55,7 +53,6 @@
 
     const/4 v0, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/common/Utils;->mToast:Landroid/widget/Toast;
     invoke-static {v0}, Lcom/sec/android/gallery3d/common/Utils;->access$102(Landroid/widget/Toast;)Landroid/widget/Toast;
 
     :cond_0

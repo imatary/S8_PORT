@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->startActionFavorite()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$100(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)V
 
     return-void

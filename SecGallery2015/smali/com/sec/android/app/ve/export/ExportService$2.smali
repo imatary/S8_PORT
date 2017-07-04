@@ -56,7 +56,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/ve/export/ExportService;->prevProgress:I
     invoke-static {v0, v1}, Lcom/sec/android/app/ve/export/ExportService;->access$402(Lcom/sec/android/app/ve/export/ExportService;I)I
 
     sget-object v0, Lcom/sec/android/app/ve/VEApp;->gExport:Lcom/sec/android/app/ve/export/Export;

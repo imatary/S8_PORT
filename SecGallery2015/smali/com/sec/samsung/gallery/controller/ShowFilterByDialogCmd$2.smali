@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowFilterByDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowFilterByDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowFilterByDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowFilterByDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowFilterByDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -55,7 +54,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowFilterByDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowFilterByDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowFilterByDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowFilterByDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowFilterByDialogCmd;)Landroid/content/Context;
 
     move-result-object v0

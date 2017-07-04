@@ -39,14 +39,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mIsMenuVisible:Z
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$102(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->refreshActionBarMessages(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$200(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Z)V
 
     return-void

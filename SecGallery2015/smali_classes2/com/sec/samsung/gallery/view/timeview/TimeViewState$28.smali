@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$28;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$15200(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

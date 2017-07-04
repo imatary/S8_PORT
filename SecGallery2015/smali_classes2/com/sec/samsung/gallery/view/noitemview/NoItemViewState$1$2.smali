@@ -49,7 +49,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$1;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$1000(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

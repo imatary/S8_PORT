@@ -150,7 +150,6 @@
     :cond_2
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener;->startDLNAConnectionReq(Ljava/lang/String;)V
     invoke-static {v4, v1}, Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener;->access$000(Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener;Ljava/lang/String;)V
 
     const-string/jumbo v4, "SCSR"
@@ -172,7 +171,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener;->startDLNADisconnectionReq(Ljava/lang/String;)V
     invoke-static {v4, v1}, Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener;->access$100(Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener;Ljava/lang/String;)V
 
     goto/16 :goto_0

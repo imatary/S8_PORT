@@ -120,14 +120,12 @@
     const/4 v1, 0x0
 
     :goto_0
-    # setter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mReloadState:I
     invoke-static {v2, v1}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$402(Lcom/sec/android/gallery3d/app/AlbumReloader;I)I
 
     if-nez p1, :cond_0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/AlbumReloader$ReloadTask;->this$0:Lcom/sec/android/gallery3d/app/AlbumReloader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mReloadListeners:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$500(Lcom/sec/android/gallery3d/app/AlbumReloader;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -167,7 +165,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/AlbumReloader$ReloadTask;->this$0:Lcom/sec/android/gallery3d/app/AlbumReloader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mReloadListeners:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$500(Lcom/sec/android/gallery3d/app/AlbumReloader;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -287,7 +284,6 @@
 
     const/4 v8, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mWaitWhenResume:Z
     invoke-static {v7, v8}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$602(Lcom/sec/android/gallery3d/app/AlbumReloader;Z)Z
 
     const/4 v7, 0x0
@@ -315,7 +311,6 @@
 
     const/4 v8, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mWaitWhenResume:Z
     invoke-static {v7, v8}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$602(Lcom/sec/android/gallery3d/app/AlbumReloader;Z)Z
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/app/AlbumReloader$ReloadTask;->waitLoading()Z
@@ -345,7 +340,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/app/AlbumReloader$ReloadTask;->this$0:Lcom/sec/android/gallery3d/app/AlbumReloader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mSource:Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v7}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$700(Lcom/sec/android/gallery3d/app/AlbumReloader;)Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v7
@@ -370,7 +364,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/app/AlbumReloader$ReloadTask;->this$0:Lcom/sec/android/gallery3d/app/AlbumReloader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumReloader;->mSource:Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v7}, Lcom/sec/android/gallery3d/app/AlbumReloader;->access$700(Lcom/sec/android/gallery3d/app/AlbumReloader;)Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v7

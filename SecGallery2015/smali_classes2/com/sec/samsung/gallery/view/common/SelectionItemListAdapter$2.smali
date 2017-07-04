@@ -66,7 +66,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;->mPressedView:Landroid/view/View;
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;->access$102(Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;Landroid/view/View;)Landroid/view/View;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;

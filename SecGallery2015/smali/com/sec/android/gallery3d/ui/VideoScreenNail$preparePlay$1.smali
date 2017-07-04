@@ -55,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail$preparePlay$1;->val$vPlayer:Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->getState()Lcom/sec/android/gallery3d/ui/VideoScreenNail$PlayerStates;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$200(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Lcom/sec/android/gallery3d/ui/VideoScreenNail$PlayerStates;
 
     move-result-object v0
@@ -78,7 +77,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail$preparePlay$1;->val$vPlayer:Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->doAction(Landroid/graphics/SurfaceTexture;)V
     invoke-static {v0, v3}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$700(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;Landroid/graphics/SurfaceTexture;)V
 
     :cond_0

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$7;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mSearchView:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$1400(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$7;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$1500(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

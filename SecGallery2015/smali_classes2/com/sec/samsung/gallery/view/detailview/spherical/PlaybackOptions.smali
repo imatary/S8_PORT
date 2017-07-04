@@ -180,7 +180,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b05dc
+    const v9, 0x7f0b05dd
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -192,7 +192,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b05db
+    const v9, 0x7f0b05dc
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -204,7 +204,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b05de
+    const v9, 0x7f0b05df
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -813,7 +813,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0b05e2
+    const v2, 0x7f0b05e3
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -825,7 +825,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0b05e1
+    const v2, 0x7f0b05e2
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -851,7 +851,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0b05d8
+    const v2, 0x7f0b05d9
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -881,7 +881,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0b05e5
+    const v2, 0x7f0b05e6
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -897,7 +897,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0b05e0
+    const v2, 0x7f0b05e1
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -989,7 +989,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0b05e0
+    const v2, 0x7f0b05e1
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -1002,7 +1002,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0b05e3
+    const v2, 0x7f0b05e4
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -1014,7 +1014,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0b05df
+    const v2, 0x7f0b05e0
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimension(I)F
 

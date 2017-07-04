@@ -93,7 +93,7 @@
 
     const-string/jumbo v1, "CopyToAlbum"
 
-    const v2, 0x7f12027d
+    const v2, 0x7f12027c
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -105,7 +105,7 @@
 
     const-string/jumbo v1, "MoveToAlbum"
 
-    const v2, 0x7f12027e
+    const v2, 0x7f12027d
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -175,7 +175,7 @@
 
     const-string/jumbo v1, "CreateAlbum"
 
-    const v2, 0x7f12027a
+    const v2, 0x7f120279
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -221,7 +221,7 @@
 
     const-string/jumbo v1, "ContactUs"
 
-    const v2, 0x7f12027c
+    const v2, 0x7f12027b
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -233,7 +233,7 @@
 
     const-string/jumbo v1, "Settings"
 
-    const v2, 0x7f12027b
+    const v2, 0x7f12027a
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -257,7 +257,7 @@
 
     const-string/jumbo v1, "Print"
 
-    const v2, 0x7f12027f
+    const v2, 0x7f12027e
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -323,7 +323,7 @@
 
     const-string/jumbo v1, "AlbumHidePopUp"
 
-    const v2, 0x7f120284
+    const v2, 0x7f120283
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -335,7 +335,7 @@
 
     const-string/jumbo v1, "AlbumShowPopUp"
 
-    const v2, 0x7f120285
+    const v2, 0x7f120284
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -424,6 +424,18 @@
     const-string/jumbo v1, "RemoveFromResult"
 
     const v2, 0x7f1202d2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcom/samsung/android/devicecog/gallery/controller/DCStateMenuActions;->MENU_ACTION_MAP:Ljava/util/HashMap;
+
+    const-string/jumbo v1, "VerizonCloud"
+
+    const v2, 0x7f12028a
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

@@ -55,7 +55,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/data/EventAlbumManager$7;->val$selectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
-    # invokes: Lcom/sec/android/gallery3d/data/EventAlbumManager;->getSelectedItemList(Lcom/sec/android/gallery3d/ui/SelectionManager;)Ljava/util/ArrayList;
     invoke-static {v8, v9}, Lcom/sec/android/gallery3d/data/EventAlbumManager;->access$1000(Lcom/sec/android/gallery3d/data/EventAlbumManager;Lcom/sec/android/gallery3d/ui/SelectionManager;)Ljava/util/ArrayList;
 
     move-result-object v5
@@ -64,7 +63,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/data/EventAlbumManager$7;->val$context:Landroid/content/Context;
 
-    # invokes: Lcom/sec/android/gallery3d/data/EventAlbumManager;->createNewEventAlbumName(Landroid/content/Context;Ljava/util/List;)Ljava/lang/String;
     invoke-static {v8, v9, v5}, Lcom/sec/android/gallery3d/data/EventAlbumManager;->access$1100(Lcom/sec/android/gallery3d/data/EventAlbumManager;Landroid/content/Context;Ljava/util/List;)Ljava/lang/String;
 
     move-result-object v6
@@ -137,7 +135,6 @@
     :goto_1
     iget-object v8, p0, Lcom/sec/android/gallery3d/data/EventAlbumManager$7;->this$0:Lcom/sec/android/gallery3d/data/EventAlbumManager;
 
-    # invokes: Lcom/sec/android/gallery3d/data/EventAlbumManager;->isDuplicated(Ljava/util/ArrayList;Ljava/lang/String;)I
     invoke-static {v8, v0, v2}, Lcom/sec/android/gallery3d/data/EventAlbumManager;->access$1200(Lcom/sec/android/gallery3d/data/EventAlbumManager;Ljava/util/ArrayList;Ljava/lang/String;)I
 
     move-result v4
@@ -236,7 +233,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/data/EventAlbumManager$7;->val$context:Landroid/content/Context;
 
-    # invokes: Lcom/sec/android/gallery3d/data/EventAlbumManager;->showCreateEventDialog(Landroid/content/Context;Ljava/util/ArrayList;ILjava/lang/String;)V
     invoke-static {v8, v9, v5, v1, v6}, Lcom/sec/android/gallery3d/data/EventAlbumManager;->access$1300(Lcom/sec/android/gallery3d/data/EventAlbumManager;Landroid/content/Context;Ljava/util/ArrayList;ILjava/lang/String;)V
 
     return-void

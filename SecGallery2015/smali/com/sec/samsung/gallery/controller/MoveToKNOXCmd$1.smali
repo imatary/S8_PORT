@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -68,7 +67,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v0

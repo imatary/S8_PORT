@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$1;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->loadChannelAlbumSet()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$600(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)V
 
     return-void

@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal$3;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;->access$1100(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

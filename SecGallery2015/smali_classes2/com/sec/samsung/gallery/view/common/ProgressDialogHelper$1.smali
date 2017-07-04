@@ -40,7 +40,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper$1;->this$0:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$000(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;)Landroid/app/ProgressDialog;
 
     move-result-object v1
@@ -49,7 +48,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper$1;->this$0:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$000(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;)Landroid/app/ProgressDialog;
 
     move-result-object v1
@@ -60,7 +58,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;->access$002(Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0

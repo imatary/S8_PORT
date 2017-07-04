@@ -39,8 +39,7 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment$4;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->handleRegisterInfo()V
-    invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->access$400(Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;)V
+    invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->access$300(Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;)V
 
     const/4 v0, 0x0
 

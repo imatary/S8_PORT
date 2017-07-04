@@ -57,7 +57,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache;->mCache:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache$MyLruCache;
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache;)Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkLruImageCache$MyLruCache;
 
     move-result-object v1

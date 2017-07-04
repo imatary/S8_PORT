@@ -42,12 +42,10 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SyncContactsCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/SyncContactsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->bNeedSync:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->access$102(Lcom/sec/samsung/gallery/controller/SyncContactsCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SyncContactsCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/SyncContactsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->mApp:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->access$000(Lcom/sec/samsung/gallery/controller/SyncContactsCmd;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v0
@@ -64,7 +62,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SyncContactsCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/SyncContactsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->bNeedSync:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->access$100(Lcom/sec/samsung/gallery/controller/SyncContactsCmd;)Z
 
     move-result v0
@@ -73,7 +70,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SyncContactsCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/SyncContactsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->bNowSync:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->access$202(Lcom/sec/samsung/gallery/controller/SyncContactsCmd;Z)Z
 
     return-void

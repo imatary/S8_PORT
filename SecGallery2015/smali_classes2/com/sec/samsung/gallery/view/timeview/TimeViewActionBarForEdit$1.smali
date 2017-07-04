@@ -47,14 +47,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->updateOptionMenu()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->access$000(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit$1;->val$numberOfItemsSelected:I
 
-    # setter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mQuantitySelectedAlbum:I
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->access$102(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;I)I
 
     iget v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit$1;->val$numberOfItemsSelected:I
@@ -63,7 +61,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->access$200(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -83,7 +80,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->access$400(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;ILjava/lang/String;)V
 
     return-void
@@ -99,7 +95,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->access$300(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

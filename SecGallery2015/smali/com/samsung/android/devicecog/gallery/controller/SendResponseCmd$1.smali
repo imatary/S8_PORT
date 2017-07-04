@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$1;->this$0:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;
 
-    # getter for: Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->mCurrentDCState:Lcom/samsung/android/sdk/bixby/data/State;
     invoke-static {v0}, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->access$000(Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;)Lcom/samsung/android/sdk/bixby/data/State;
 
     move-result-object v0
@@ -65,7 +64,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$1;->this$0:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;
 
-    # getter for: Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->mCurrentDCState:Lcom/samsung/android/sdk/bixby/data/State;
     invoke-static {v2}, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->access$000(Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;)Lcom/samsung/android/sdk/bixby/data/State;
 
     move-result-object v2
@@ -86,7 +84,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$1;->this$0:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;
 
-    # getter for: Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->mCurrentDCState:Lcom/samsung/android/sdk/bixby/data/State;
     invoke-static {v2}, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->access$000(Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;)Lcom/samsung/android/sdk/bixby/data/State;
 
     move-result-object v2
@@ -105,14 +102,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    # getter for: Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->USE_MAX_TIME_OUT_STATE:Ljava/util/Set;
     invoke-static {}, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->access$100()Ljava/util/Set;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$1;->this$0:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;
 
-    # getter for: Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->mCurrentDCState:Lcom/samsung/android/sdk/bixby/data/State;
     invoke-static {v1}, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->access$000(Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;)Lcom/samsung/android/sdk/bixby/data/State;
 
     move-result-object v1
@@ -129,7 +124,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$1;->this$0:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;
 
-    # getter for: Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->access$200(Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -151,7 +145,6 @@
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$1;->this$0:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;
 
-    # invokes: Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->sendCommonErrorNlg()V
     invoke-static {v0}, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->access$300(Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;)V
 
     invoke-static {}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getInstance()Lcom/samsung/android/sdk/bixby/BixbyApi;
@@ -164,12 +157,10 @@
 
     iget-object v0, p0, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$1;->this$0:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;
 
-    # invokes: Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->resetForBixby()V
     invoke-static {v0}, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->access$400(Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;)V
 
     iget-object v0, p0, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$1;->this$0:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;
 
-    # invokes: Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->resetAll()V
     invoke-static {v0}, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;->access$500(Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd;)V
 
     goto/16 :goto_0

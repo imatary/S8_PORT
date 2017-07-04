@@ -89,7 +89,6 @@
 
     :pswitch_4
     :try_start_0
-    # getter for: Lcom/sec/android/gallery3d/ui/PositionController;->mSineInOut90:Landroid/view/animation/Interpolator;
     invoke-static {}, Lcom/sec/android/gallery3d/ui/PositionController;->access$600()Landroid/view/animation/Interpolator;
 
     move-result-object v2

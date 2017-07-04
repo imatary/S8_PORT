@@ -45,14 +45,12 @@
     return-void
 
     :cond_0
-    # getter for: Lcom/google/gson/stream/JsonReader;->peeked:I
     invoke-static {p1}, Lcom/google/gson/stream/JsonReader;->access$000(Lcom/google/gson/stream/JsonReader;)I
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    # invokes: Lcom/google/gson/stream/JsonReader;->doPeek()I
     invoke-static {p1}, Lcom/google/gson/stream/JsonReader;->access$100(Lcom/google/gson/stream/JsonReader;)I
 
     move-result v0
@@ -64,7 +62,6 @@
 
     const/16 v1, 0x9
 
-    # setter for: Lcom/google/gson/stream/JsonReader;->peeked:I
     invoke-static {p1, v1}, Lcom/google/gson/stream/JsonReader;->access$002(Lcom/google/gson/stream/JsonReader;I)I
 
     goto :goto_0
@@ -76,7 +73,6 @@
 
     const/16 v1, 0x8
 
-    # setter for: Lcom/google/gson/stream/JsonReader;->peeked:I
     invoke-static {p1, v1}, Lcom/google/gson/stream/JsonReader;->access$002(Lcom/google/gson/stream/JsonReader;I)I
 
     goto :goto_0
@@ -88,7 +84,6 @@
 
     const/16 v1, 0xa
 
-    # setter for: Lcom/google/gson/stream/JsonReader;->peeked:I
     invoke-static {p1, v1}, Lcom/google/gson/stream/JsonReader;->access$002(Lcom/google/gson/stream/JsonReader;I)I
 
     goto :goto_0
@@ -126,7 +121,6 @@
 
     move-result-object v2
 
-    # invokes: Lcom/google/gson/stream/JsonReader;->getLineNumber()I
     invoke-static {p1}, Lcom/google/gson/stream/JsonReader;->access$200(Lcom/google/gson/stream/JsonReader;)I
 
     move-result v3
@@ -141,7 +135,6 @@
 
     move-result-object v2
 
-    # invokes: Lcom/google/gson/stream/JsonReader;->getColumnNumber()I
     invoke-static {p1}, Lcom/google/gson/stream/JsonReader;->access$300(Lcom/google/gson/stream/JsonReader;)I
 
     move-result v3

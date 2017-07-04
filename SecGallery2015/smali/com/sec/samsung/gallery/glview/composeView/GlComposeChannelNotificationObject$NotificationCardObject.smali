@@ -66,7 +66,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mContext:Landroid/content/Context;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Landroid/content/Context;
 
     move-result-object v6
@@ -83,7 +82,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mNotiBGTopPadding:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$2700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)F
 
     move-result v6
@@ -92,7 +90,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mNotiBGLeftPadding:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$2200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)F
 
     move-result v6
@@ -105,7 +102,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mContext:Landroid/content/Context;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Landroid/content/Context;
 
     move-result-object v6
@@ -133,7 +129,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mContext:Landroid/content/Context;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Landroid/content/Context;
 
     move-result-object v6
@@ -148,7 +143,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mContext:Landroid/content/Context;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Landroid/content/Context;
 
     move-result-object v6
@@ -180,14 +174,12 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mCoverWidth:F
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$2900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)F
 
     move-result v4
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mWidthViewRatio:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$2300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)F
 
     move-result v5
@@ -198,14 +190,12 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mCoverHeight:F
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)F
 
     move-result v4
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mHeightViewRatio:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)F
 
     move-result v5
@@ -224,7 +214,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -258,14 +247,12 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mCoverWidth:F
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$2900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)F
 
     move-result v4
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mCoverHeight:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)F
 
     move-result v5
@@ -288,7 +275,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -305,7 +291,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mNotiBGTopPadding:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$2700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)F
 
     move-result v5
@@ -320,7 +305,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mNotiBGLeftPadding:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$2200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)F
 
     move-result v5
@@ -335,7 +319,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -371,7 +354,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -387,7 +369,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Landroid/content/Context;
 
     move-result-object v4
@@ -413,7 +394,6 @@
     :cond_2
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$NotificationCardObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Landroid/content/Context;
 
     move-result-object v4

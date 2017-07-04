@@ -52,7 +52,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$6;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mNoItemActionBarForNormal:Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForNormal;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$2800(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForNormal;
 
     move-result-object v0
@@ -61,7 +60,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$6;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mNoItemActionBarForNormal:Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForNormal;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$2800(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)Lcom/sec/samsung/gallery/view/noitemview/NoItemActionBarForNormal;
 
     move-result-object v0
@@ -81,12 +79,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mTopSetPath:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$302(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$6;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->startPreviousViewState()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$1700(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)V
 
     :cond_1

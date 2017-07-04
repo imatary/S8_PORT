@@ -41,7 +41,6 @@
     if-nez v2, :cond_1
 
     :cond_0
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/RQuota;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/RQuota;->access$100()Ljava/lang/String;
 
     move-result-object v3

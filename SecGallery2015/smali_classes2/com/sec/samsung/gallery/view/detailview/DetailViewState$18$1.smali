@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$18;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mVisionIntelligenceHelpPopup:Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$16500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;
 
     move-result-object v0

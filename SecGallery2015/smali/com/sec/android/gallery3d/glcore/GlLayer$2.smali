@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlLayer$2;->this$0:Lcom/sec/android/gallery3d/glcore/GlLayer;
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/GlLayer;->getHoverListScrollMode()I
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlLayer;->access$300(Lcom/sec/android/gallery3d/glcore/GlLayer;)I
 
     move-result v0
@@ -52,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlLayer$2;->this$0:Lcom/sec/android/gallery3d/glcore/GlLayer;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlLayer;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlLayer;->access$200(Lcom/sec/android/gallery3d/glcore/GlLayer;)Landroid/content/Context;
 
     move-result-object v0
@@ -77,7 +75,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlLayer$2;->this$0:Lcom/sec/android/gallery3d/glcore/GlLayer;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlLayer;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlLayer;->access$200(Lcom/sec/android/gallery3d/glcore/GlLayer;)Landroid/content/Context;
 
     move-result-object v0
@@ -102,7 +99,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glcore/GlLayer$2;->this$0:Lcom/sec/android/gallery3d/glcore/GlLayer;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlLayer;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlLayer;->access$200(Lcom/sec/android/gallery3d/glcore/GlLayer;)Landroid/content/Context;
 
     move-result-object v0

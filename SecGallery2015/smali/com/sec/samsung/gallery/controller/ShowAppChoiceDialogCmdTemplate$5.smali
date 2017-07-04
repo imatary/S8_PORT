@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$5;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mIsAirButton:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$400(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;)Z
 
     move-result v0
@@ -63,7 +62,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$102(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     return-void

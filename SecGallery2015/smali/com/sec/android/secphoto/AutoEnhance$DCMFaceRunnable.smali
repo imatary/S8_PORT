@@ -135,7 +135,6 @@
 
     iget-object v3, p0, Lcom/sec/android/secphoto/AutoEnhance$DCMFaceRunnable;->imgFaces:[I
 
-    # invokes: Lcom/sec/android/secphoto/AutoEnhance;->setFaceRect(Landroid/graphics/Rect;[I)V
     invoke-static {v0, v3}, Lcom/sec/android/secphoto/AutoEnhance;->access$100(Landroid/graphics/Rect;[I)V
 
     :cond_0
@@ -218,7 +217,6 @@
 
     iget-object v4, p0, Lcom/sec/android/secphoto/AutoEnhance$DCMFaceRunnable;->context:Landroid/content/Context;
 
-    # invokes: Lcom/sec/android/secphoto/AutoEnhance;->getDCMParametersFromIS(Landroid/graphics/Bitmap;Lcom/sec/android/secphoto/DCMParameters;Landroid/content/Context;)V
     invoke-static {v0, v3, v4}, Lcom/sec/android/secphoto/AutoEnhance;->access$200(Landroid/graphics/Bitmap;Lcom/sec/android/secphoto/DCMParameters;Landroid/content/Context;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0

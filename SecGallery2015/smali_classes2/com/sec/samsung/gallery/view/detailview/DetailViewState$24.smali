@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->updateCurrentPhoto(Lcom/sec/android/gallery3d/data/MediaItem;)V
+    value = Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->closeMoreInfoOnUiThread()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,23 +35,20 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$24;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFastOptionView:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$24;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
+    if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCurrentPhoto:Lcom/sec/android/gallery3d/data/MediaItem;
-    invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$24;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    move-result-object v1
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$27800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
-    invoke-virtual {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->updateAutoAdjustMenuItem(Lcom/sec/android/gallery3d/data/MediaItem;)V
-
+    :cond_0
     return-void
 .end method

@@ -59,15 +59,12 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsTouchOutside:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$002(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mSingleOperation:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$102(Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$4;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsRename:Z
     invoke-static {v1, v3}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$402(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     new-instance v0, Ljava/io/File;
@@ -92,7 +89,6 @@
 
     iget v3, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$4;->val$operationId:I
 
-    # invokes: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->showRenameDialog(Ljava/io/File;Ljava/io/File;I)V
     invoke-static {v1, v2, v0, v3}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$500(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Ljava/io/File;Ljava/io/File;I)V
 
     return-void

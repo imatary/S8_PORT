@@ -97,21 +97,18 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$3500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)Landroid/content/Context;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mHLVideoIconSizePixel:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$3300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)I
 
     move-result v4
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mHLVideoIconSizePixel:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$3300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)I
 
     move-result v5
@@ -138,14 +135,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mWidthViewRatio:F
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$3200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)F
 
     move-result v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mHLVideoIconSizePixel:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$3300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)I
 
     move-result v1
@@ -156,14 +151,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mHeightViewRatio:F
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$3400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)F
 
     move-result v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$GlChannelViewHLPlayIconObject;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mHLVideoIconSizePixel:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$3300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)I
 
     move-result v2

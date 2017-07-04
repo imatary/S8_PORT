@@ -56,7 +56,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter$1;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;->access$000(Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;)Landroid/content/Context;
 
     move-result-object v2
@@ -78,7 +77,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter$1;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;->access$000(Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;)Landroid/content/Context;
 
     move-result-object v2

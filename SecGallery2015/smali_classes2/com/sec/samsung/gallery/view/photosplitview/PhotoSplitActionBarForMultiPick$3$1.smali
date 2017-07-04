@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForMultiPick$3;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForMultiPick;->access$1400(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForMultiPick$3;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForMultiPick;->access$1500(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

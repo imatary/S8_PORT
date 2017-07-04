@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$2;->val$dstAlbumPath:Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->activeDialogForMoveCopyChoice(Lcom/sec/samsung/gallery/core/Event;Ljava/lang/String;)V
     invoke-static {v0, p2, v1}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->access$300(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;Lcom/sec/samsung/gallery/core/Event;Ljava/lang/String;)V
 
     return-void

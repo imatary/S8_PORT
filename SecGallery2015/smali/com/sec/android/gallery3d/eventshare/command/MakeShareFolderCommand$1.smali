@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/MakeShareFolderCommand$1;->this$0:Lcom/sec/android/gallery3d/eventshare/command/MakeShareFolderCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/MakeShareFolderCommand;->mEventState:Lcom/sec/android/gallery3d/eventshare/EventState;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/MakeShareFolderCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/MakeShareFolderCommand;)Lcom/sec/android/gallery3d/eventshare/EventState;
 
     move-result-object v0

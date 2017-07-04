@@ -197,9 +197,9 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f120279 -> :sswitch_0
-        0x7f12027b -> :sswitch_4
-        0x7f12027c -> :sswitch_5
+        0x7f12027a -> :sswitch_4
+        0x7f12027b -> :sswitch_5
+        0x7f120289 -> :sswitch_0
         0x7f120296 -> :sswitch_2
         0x7f12029e -> :sswitch_1
         0x7f1202aa -> :sswitch_3

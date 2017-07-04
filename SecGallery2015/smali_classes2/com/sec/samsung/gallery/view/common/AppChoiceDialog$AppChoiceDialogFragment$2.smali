@@ -56,7 +56,6 @@
 
     iget-object v4, v4, Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;->mItemInfoHandler:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$ItemInfoAdapter;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;->access$1200(Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$ItemInfoAdapter;
 
     move-result-object v4
@@ -67,7 +66,6 @@
 
     iget-object v4, v4, Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;->mItemInfoHandler:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$ItemInfoAdapter;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;->access$1200(Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$ItemInfoAdapter;
 
     move-result-object v4
@@ -90,7 +88,6 @@
     :try_start_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment$2;->this$1:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;->mCtx:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;->access$800(Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;)Landroid/content/Context;
 
     move-result-object v4
@@ -109,7 +106,6 @@
 
     iget-object v4, v4, Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;->mAppList:Ljava/util/List;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;->access$500(Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;)Ljava/util/List;
 
     move-result-object v4

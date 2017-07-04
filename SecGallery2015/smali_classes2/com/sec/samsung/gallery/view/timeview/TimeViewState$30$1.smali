@@ -49,7 +49,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$30;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->selectAllPostProcess()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$16800(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)V
 
     return-void

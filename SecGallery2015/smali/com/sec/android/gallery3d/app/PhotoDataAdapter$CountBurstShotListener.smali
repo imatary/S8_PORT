@@ -81,14 +81,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$CountBurstShotListener;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$1700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$CountBurstShotListener;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mMainHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$1700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Landroid/os/Handler;
 
     move-result-object v1

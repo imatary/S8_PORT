@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/GestureRecognizer$MyDownUpListener;->this$0:Lcom/sec/android/gallery3d/ui/GestureRecognizer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/GestureRecognizer;->mListeners:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/GestureRecognizer;->access$300(Lcom/sec/android/gallery3d/ui/GestureRecognizer;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -114,7 +113,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/GestureRecognizer$MyDownUpListener;->this$0:Lcom/sec/android/gallery3d/ui/GestureRecognizer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/GestureRecognizer;->mListeners:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/GestureRecognizer;->access$300(Lcom/sec/android/gallery3d/ui/GestureRecognizer;)Ljava/util/ArrayList;
 
     move-result-object v1

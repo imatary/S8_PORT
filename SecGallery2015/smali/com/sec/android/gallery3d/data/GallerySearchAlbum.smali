@@ -2641,7 +2641,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/data/GallerySearchAlbum;->mBasePathMap:Landroid/util/SparseArray;
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v8
@@ -2654,7 +2653,6 @@
 
     if-eqz v4, :cond_4
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mPosition:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$200(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)Ljava/lang/String;
 
     move-result-object v7
@@ -2675,7 +2673,6 @@
 
     if-eqz v7, :cond_6
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mIsCloud:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$300(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)Z
 
     move-result v7
@@ -2684,7 +2681,6 @@
 
     sget-object v7, Lcom/sec/android/gallery3d/data/UnionSCloudSearchImage;->ITEM_PATH:Lcom/sec/android/gallery3d/data/Path;
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mPosition:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$200(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)Ljava/lang/String;
 
     move-result-object v8
@@ -2693,7 +2689,6 @@
 
     move-result-object v7
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v8
@@ -2715,7 +2710,6 @@
     :cond_5
     sget-object v7, Lcom/sec/android/gallery3d/data/UnionLocalSearchImage;->ITEM_PATH:Lcom/sec/android/gallery3d/data/Path;
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mPosition:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$200(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)Ljava/lang/String;
 
     move-result-object v8
@@ -2724,7 +2718,6 @@
 
     move-result-object v7
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v8
@@ -2750,7 +2743,6 @@
 
     sget-object v7, Lcom/sec/android/gallery3d/data/LocalSearchImage;->ITEM_PATH:Lcom/sec/android/gallery3d/data/Path;
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mPosition:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$200(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)Ljava/lang/String;
 
     move-result-object v8
@@ -2759,7 +2751,6 @@
 
     move-result-object v7
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v8
@@ -2785,7 +2776,6 @@
 
     sget-object v7, Lcom/sec/android/gallery3d/data/UnionSearchVideo;->ITEM_PATH:Lcom/sec/android/gallery3d/data/Path;
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mPosition:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$200(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)Ljava/lang/String;
 
     move-result-object v8
@@ -2794,7 +2784,6 @@
 
     move-result-object v7
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v8
@@ -2820,7 +2809,6 @@
 
     sget-object v7, Lcom/sec/android/gallery3d/data/LocalSearchVideo;->ITEM_PATH:Lcom/sec/android/gallery3d/data/Path;
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mPosition:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$200(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)Ljava/lang/String;
 
     move-result-object v8
@@ -2829,7 +2817,6 @@
 
     move-result-object v7
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v8
@@ -4233,12 +4220,10 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v5
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v6
@@ -4302,7 +4287,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v6
@@ -4313,7 +4297,6 @@
 
     if-nez v6, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v6
@@ -4335,7 +4318,6 @@
 
     :cond_1
     :try_start_1
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v6
@@ -4346,12 +4328,10 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mPosition:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$200(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)Ljava/lang/String;
 
     move-result-object v6
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mPosition:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$200(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)Ljava/lang/String;
 
     move-result-object v7
@@ -4362,7 +4342,6 @@
 
     if-nez v6, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->mId:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchAlbum$SearchItem;)I
 
     move-result v6

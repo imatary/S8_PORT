@@ -66,7 +66,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->this$0:Lcom/sec/android/gallery3d/data/DownloadCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache;->mAssociateMap:Ljava/util/WeakHashMap;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/DownloadCache;->access$200(Lcom/sec/android/gallery3d/data/DownloadCache;)Ljava/util/WeakHashMap;
 
     move-result-object v0

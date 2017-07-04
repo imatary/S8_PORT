@@ -270,44 +270,86 @@
 .end method
 
 .method private initMediaResourceHelper()V
-    .locals 2
+    .locals 4
 
-    new-instance v0, Lcom/sec/samsung/gallery/lib/factory/MediaPlayerFactory;
+    :try_start_0
+    new-instance v1, Lcom/sec/samsung/gallery/lib/factory/MediaPlayerFactory;
 
-    invoke-direct {v0}, Lcom/sec/samsung/gallery/lib/factory/MediaPlayerFactory;-><init>()V
+    invoke-direct {v1}, Lcom/sec/samsung/gallery/lib/factory/MediaPlayerFactory;-><init>()V
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/sec/samsung/gallery/lib/factory/MediaPlayerFactory;->create(Landroid/content/Context;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Lcom/sec/samsung/gallery/lib/factory/MediaPlayerFactory;->create(Landroid/content/Context;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
+    check-cast v1, Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
 
-    iput-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
+    iput-object v1, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
 
-    iget-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
+    iget-object v1, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
 
-    invoke-interface {v0}, Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;->newInstanceMediaResourceHelper()Z
+    invoke-interface {v1}, Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;->newInstanceMediaResourceHelper()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    iget-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
+    iget-object v1, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
 
-    new-instance v1, Lcom/sec/android/gallery3d/ui/VideoScreenNail$1;
+    new-instance v2, Lcom/sec/android/gallery3d/ui/VideoScreenNail$1;
 
-    invoke-direct {v1, p0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$1;-><init>(Lcom/sec/android/gallery3d/ui/VideoScreenNail;)V
+    invoke-direct {v2, p0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$1;-><init>(Lcom/sec/android/gallery3d/ui/VideoScreenNail;)V
 
-    invoke-interface {v0, v1}, Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;->setMediaResourceHelperListener(Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface$MediaResourceHelperListener;)V
+    invoke-interface {v1, v2}, Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;->setMediaResourceHelperListener(Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface$MediaResourceHelperListener;)V
 
-    iget-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
+    iget-object v1, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerInterface:Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;
 
-    invoke-interface {v0}, Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;->registerListener()V
+    invoke-interface {v1}, Lcom/sec/samsung/gallery/lib/libinterface/MediaPlayerInterface;->registerListener()V
+    :try_end_0
+    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/NoClassDefFoundError; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_0
+    :goto_0
     return-void
+
+    :catch_0
+    move-exception v0
+
+    :goto_1
+    const-string/jumbo v1, "VideoScreenNail"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, " initMediaResourceHelper "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    goto :goto_1
 .end method
 
 .method private releaseMediaPlayer()V
@@ -515,7 +557,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerThread:Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;->mVideoPlayer:Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;->access$100(Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;)Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;
 
     move-result-object v0
@@ -524,12 +565,10 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mMediaPlayerThread:Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;->mVideoPlayer:Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;->access$100(Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;)Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;
 
     move-result-object v0
 
-    # invokes: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->getState()Lcom/sec/android/gallery3d/ui/VideoScreenNail$PlayerStates;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$200(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Lcom/sec/android/gallery3d/ui/VideoScreenNail$PlayerStates;
 
     move-result-object v0

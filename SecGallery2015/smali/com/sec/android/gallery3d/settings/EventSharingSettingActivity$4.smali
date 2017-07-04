@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$4;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->handleStorySharing(Z)V
     invoke-static {v0, p2}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$300(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;Z)V
 
     return-void

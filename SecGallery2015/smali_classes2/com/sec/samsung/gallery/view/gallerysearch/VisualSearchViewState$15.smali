@@ -59,8 +59,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$15;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
 
@@ -70,15 +69,13 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$15;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
-    invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
+    invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
 
     move-result v1
 
     or-int/lit8 v1, v1, 0x40
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
-    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6402(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
+    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$6802(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
 
     :cond_0
     return-void

@@ -41,7 +41,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Landroid/support/design/widget/TextInputLayout;->updateLabelVisibility(Z)V
     invoke-static {v0, v1}, Landroid/support/design/widget/TextInputLayout;->access$100(Landroid/support/design/widget/TextInputLayout;Z)V
 
     return-void

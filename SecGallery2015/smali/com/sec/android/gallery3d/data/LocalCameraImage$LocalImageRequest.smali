@@ -152,7 +152,6 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/data/LocalCameraImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalCameraImage;->isBurstShotImage(Ljava/lang/String;)Z
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/data/LocalCameraImage;->access$000(Lcom/sec/android/gallery3d/data/LocalCameraImage;Ljava/lang/String;)Z
 
     move-result v1
@@ -226,7 +225,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/data/LocalCameraImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalCameraImage;->getLocalCameraImageAttributes()Lcom/sec/android/gallery3d/data/LocalCameraImageAttributes;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/LocalCameraImage;->access$100(Lcom/sec/android/gallery3d/data/LocalCameraImage;)Lcom/sec/android/gallery3d/data/LocalCameraImageAttributes;
 
     move-result-object v0
@@ -243,7 +241,6 @@
     invoke-virtual {v0, v6, v7, v1}, Lcom/sec/android/gallery3d/data/MediaItem;->setPendingAttribute(JZ)V
 
     :cond_2
-    # getter for: Lcom/sec/android/gallery3d/data/LocalCameraImage;->FeatureSoundSceneEnabled:Z
     invoke-static {}, Lcom/sec/android/gallery3d/data/LocalCameraImage;->access$200()Z
 
     move-result v0
@@ -482,7 +479,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/LocalCameraImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalCameraImage;->getFaceCount()I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/LocalCameraImage;->access$300(Lcom/sec/android/gallery3d/data/LocalCameraImage;)I
 
     move-result v0
@@ -506,7 +502,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/LocalCameraImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalCameraImage;->getRectOfAllFaces()Landroid/graphics/RectF;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/LocalCameraImage;->access$400(Lcom/sec/android/gallery3d/data/LocalCameraImage;)Landroid/graphics/RectF;
 
     move-result-object v1

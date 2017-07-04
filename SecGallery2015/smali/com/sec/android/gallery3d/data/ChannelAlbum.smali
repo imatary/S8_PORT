@@ -4966,12 +4966,10 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/data/ChannelAlbum;->pendingProperty:Lcom/sec/android/gallery3d/data/ChannelAlbum$PendingProperty;
 
-    # invokes: Lcom/sec/android/gallery3d/data/ChannelAlbum$PendingProperty;->setCount(I)V
     invoke-static {v9, v0}, Lcom/sec/android/gallery3d/data/ChannelAlbum$PendingProperty;->access$300(Lcom/sec/android/gallery3d/data/ChannelAlbum$PendingProperty;I)V
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/data/ChannelAlbum;->pendingProperty:Lcom/sec/android/gallery3d/data/ChannelAlbum$PendingProperty;
 
-    # invokes: Lcom/sec/android/gallery3d/data/ChannelAlbum$PendingProperty;->setMasterName(Ljava/lang/String;)V
     invoke-static {v9, v1}, Lcom/sec/android/gallery3d/data/ChannelAlbum$PendingProperty;->access$400(Lcom/sec/android/gallery3d/data/ChannelAlbum$PendingProperty;Ljava/lang/String;)V
 
     if-eqz v3, :cond_0
@@ -4982,7 +4980,6 @@
 
     move-result-object v10
 
-    # invokes: Lcom/sec/android/gallery3d/data/ChannelAlbum$PendingProperty;->setMasterPhoto(Landroid/graphics/Bitmap;)V
     invoke-static {v9, v10}, Lcom/sec/android/gallery3d/data/ChannelAlbum$PendingProperty;->access$500(Lcom/sec/android/gallery3d/data/ChannelAlbum$PendingProperty;Landroid/graphics/Bitmap;)V
 
     goto/16 :goto_0

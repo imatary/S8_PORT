@@ -191,7 +191,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mLayout:Lcom/sec/android/gallery3d/ui/SlotView$Layout;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/SlotView;->access$900(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$Layout;
 
     move-result-object v6
@@ -373,7 +372,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1000(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v6
@@ -553,7 +551,6 @@
     :goto_2
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mRenderer:Lcom/sec/android/gallery3d/ui/SlotView$SlotRenderer;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1100(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$SlotRenderer;
 
     move-result-object v0
@@ -562,7 +559,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/SlotView$Layout;->this$0:Lcom/sec/android/gallery3d/ui/SlotView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/SlotView;->mRenderer:Lcom/sec/android/gallery3d/ui/SlotView$SlotRenderer;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/SlotView;->access$1100(Lcom/sec/android/gallery3d/ui/SlotView;)Lcom/sec/android/gallery3d/ui/SlotView$SlotRenderer;
 
     move-result-object v0

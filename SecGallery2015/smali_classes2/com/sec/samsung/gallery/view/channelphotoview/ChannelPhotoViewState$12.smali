@@ -46,12 +46,10 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$12;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mCurrentLayout:I
     invoke-static {v1, p2}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$10202(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;I)I
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$12;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$10300(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -62,7 +60,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$12;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$10400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -75,12 +72,11 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$12;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$10500(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
 
-    const v2, 0x7f0a07c7
+    const v2, 0x7f0a07cc
 
     const/4 v3, 0x0
 
@@ -92,7 +88,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$12;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$10600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -108,7 +103,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$12;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->startDetailViewInUIThread(II)V
     invoke-static {v1, p2, p3}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$10700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;II)V
 
     goto :goto_0
@@ -116,7 +110,6 @@
     :pswitch_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$12;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mMediaItemAdapter:Lcom/sec/samsung/gallery/glview/composeView/ComposeChannelItemAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$2800(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/glview/composeView/ComposeChannelItemAdapter;
 
     move-result-object v1

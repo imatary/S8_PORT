@@ -47,7 +47,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails$DetailsListAdapter;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;->access$300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemDetails;)Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v1

@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator$1;->this$0:Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->mTopState:Lcom/sec/android/gallery3d/app/ActivityState;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->access$000(Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;)Lcom/sec/android/gallery3d/app/ActivityState;
 
     move-result-object v1
@@ -61,19 +60,16 @@
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->mIsStartedView:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->access$102(Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator$1;->this$0:Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->mTopState:Lcom/sec/android/gallery3d/app/ActivityState;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->access$000(Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;)Lcom/sec/android/gallery3d/app/ActivityState;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator$1;->this$0:Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->mSelectedPath:Lcom/sec/android/gallery3d/data/Path;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->access$200(Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;)Lcom/sec/android/gallery3d/data/Path;
 
     move-result-object v2
@@ -82,7 +78,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator$1;->this$0:Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->dismiss()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;->access$300(Lcom/sec/samsung/gallery/view/common/SingleSelectionSmartViewMediator;)V
 
     goto :goto_0

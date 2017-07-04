@@ -33,49 +33,42 @@
 
     invoke-direct {p0, p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/BaseRequest;-><init>(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/BaseRequest$Builder;)V
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->article_id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest;->article_id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->comment:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest;->comment:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->permission_set_id:I
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest;->permission_set_id:I
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->parent_id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest;->parent_id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->push_notification:Z
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->access$400(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest;->push_notification:Z
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->meta_data:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/MetaDataRequest;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->access$500(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/MetaDataRequest;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest;->meta_data:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/MetaDataRequest;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->meta_counter:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/MetaCounterRequest;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;->access$600(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/comment/CreateCommentRequest$Builder;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/MetaCounterRequest;
 
     move-result-object v0

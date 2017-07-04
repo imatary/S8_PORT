@@ -652,7 +652,7 @@
 
     if-eqz v4, :cond_2
 
-    const v4, 0x7f0202cb
+    const v4, 0x7f0202cd
 
     invoke-virtual {p1, v4}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -870,7 +870,7 @@
 .method private updateEventBadgeMenuIcon(Landroid/view/View;I)V
     .locals 12
 
-    const v8, 0x7f120288
+    const v8, 0x7f120287
 
     const/16 v11, 0x8
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->closeMoreInfoOnUiThread()V
+    value = Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->updateMenuOperations()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,22 +35,49 @@
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 3
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$25;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mMoreInfo:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$27900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Landroid/view/Menu;
+
+    move-result-object v1
+
+    const v2, 0x7f1202a2
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$25;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
+
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/data/MediaItem;->isBroken()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$25;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->closeMoreInfo()V
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$27800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/data/MediaItem;->isDrm()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+
+    return-void
 
     :cond_0
-    return-void
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

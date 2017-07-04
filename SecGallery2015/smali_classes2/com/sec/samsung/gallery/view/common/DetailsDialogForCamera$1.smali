@@ -79,7 +79,6 @@
     :goto_0
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera$1;->this$0:Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera;->createHistogramImage(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     invoke-static {v5, v0}, Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera;->access$100(Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -120,7 +119,6 @@
     :cond_3
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera$1;->this$0:Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera;->access$000(Lcom/sec/samsung/gallery/view/common/DetailsDialogForCamera;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v5

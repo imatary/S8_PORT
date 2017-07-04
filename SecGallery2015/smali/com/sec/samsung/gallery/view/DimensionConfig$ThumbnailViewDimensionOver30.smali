@@ -166,7 +166,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$ThumbnailViewDimensionOver30;->thumbnail_view_cloud_icon_margin:I
 
-    const v1, 0x7f0b08bc
+    const v1, 0x7f0b08bd
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

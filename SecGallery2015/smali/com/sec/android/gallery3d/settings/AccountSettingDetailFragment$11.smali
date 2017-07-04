@@ -44,12 +44,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mReceiveCloudSyncOn:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1702(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$11;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1400(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/app/ProgressDialog;
 
     move-result-object v0
@@ -58,7 +56,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$11;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1400(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/app/ProgressDialog;
 
     move-result-object v0
@@ -71,7 +68,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$11;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1400(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/app/ProgressDialog;
 
     move-result-object v0

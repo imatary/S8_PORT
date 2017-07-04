@@ -45,7 +45,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/EventAlbumManager$4;->this$0:Lcom/sec/android/gallery3d/data/EventAlbumManager;
 
-    # getter for: Lcom/sec/android/gallery3d/data/EventAlbumManager;->mDBMgr:Lcom/sec/samsung/gallery/util/LocalDatabaseManager;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/EventAlbumManager;->access$300(Lcom/sec/android/gallery3d/data/EventAlbumManager;)Lcom/sec/samsung/gallery/util/LocalDatabaseManager;
 
     move-result-object v0

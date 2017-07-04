@@ -470,7 +470,6 @@
 
     move-result v2
 
-    # setter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimary:I
     invoke-static {v1, v2}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2002(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;I)I
 
     iget v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexRectangleTextView;->mRectViewTheme:I
@@ -550,7 +549,6 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mSECRobotoLightRegularFont:Landroid/graphics/Typeface;
     invoke-static {}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1700()Landroid/graphics/Typeface;
 
     move-result-object v1
@@ -563,13 +561,11 @@
 
     move-result-object v1
 
-    # setter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mSECRobotoLightRegularFont:Landroid/graphics/Typeface;
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1702(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
     :cond_0
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexRectangleTextView;->mPaint:Landroid/graphics/Paint;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mSECRobotoLightRegularFont:Landroid/graphics/Typeface;
     invoke-static {}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1700()Landroid/graphics/Typeface;
 
     move-result-object v2
@@ -581,7 +577,6 @@
     :cond_1
     iget-object v1, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexRectangleTextView;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimary:I
     invoke-static {v1}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v1
@@ -1003,7 +998,6 @@
 
     iget-object v4, v0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexRectangleTextView;->mIndexRectText:Ljava/lang/String;
 
-    # invokes: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->isTextRTL(Ljava/lang/CharSequence;)Z
     invoke-static {v3, v4}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$4100(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -1387,7 +1381,6 @@
     :goto_0
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexRectangleTextView;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mEnableCustomTheme:Z
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2200(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Z
 
     move-result v0
@@ -1396,7 +1389,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexRectangleTextView;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBgIndexRectDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$4000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -1405,7 +1397,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexRectangleTextView;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mCstmBgIndexRectDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$4000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -1429,7 +1420,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexRectangleTextView;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # getter for: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->mColorPrimary:I
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$2000(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)I
 
     move-result v0

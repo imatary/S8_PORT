@@ -55,14 +55,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader$DataLoader;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->mStoryId:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->access$300(Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;)I
 
     move-result v2
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader$DataLoader;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->mFileId:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->access$400(Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;)I
 
     move-result v3
@@ -111,26 +109,22 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader$DataLoader;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->access$100(Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;)Landroid/content/Context;
 
     move-result-object v2
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->LIKE_VIEW_PROJECTION:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->access$200()[Ljava/lang/String;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader$DataLoader;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->mStoryId:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->access$300(Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;)I
 
     move-result v4
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader$DataLoader;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->mFileId:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->access$400(Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;)I
 
     move-result v5
@@ -189,7 +183,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader$DataLoader;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->mListener:Lcom/sec/samsung/gallery/view/channelcomments/ChannelDataLoaderInterface$DataLoaderListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;->access$500(Lcom/sec/samsung/gallery/view/channelcomments/ChannelLikeDataLoader;)Lcom/sec/samsung/gallery/view/channelcomments/ChannelDataLoaderInterface$DataLoaderListener;
 
     move-result-object v2

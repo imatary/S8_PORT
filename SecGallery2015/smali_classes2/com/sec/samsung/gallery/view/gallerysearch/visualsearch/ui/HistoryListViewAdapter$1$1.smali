@@ -45,7 +45,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/HistoryListViewAdapter$1;->val$currentListData:Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryItem;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/HistoryListViewAdapter;->deleteHistoryItem(Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryItem;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/HistoryListViewAdapter;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/HistoryListViewAdapter;Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryItem;)V
 
     return-void

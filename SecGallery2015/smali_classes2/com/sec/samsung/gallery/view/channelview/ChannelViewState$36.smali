@@ -43,8 +43,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$36;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mUseLiveEvent:Z
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
 
     move-result v0
 
@@ -52,8 +51,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$36;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->handleNewEventAlbum(I)V
-    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
+    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
 
     :goto_0
     return-void
@@ -61,8 +59,7 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$36;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mCreateEventBtn:Landroid/widget/ImageButton;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
 
     move-result-object v0
 
@@ -74,16 +71,14 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$36;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->setCreateEventVisibleMode(Z)V
-    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
+    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
 
     goto :goto_0
 
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$36;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mNeedCreateEventBtnListener:Z
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Z
 
     move-result v0
 
@@ -91,19 +86,16 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$36;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mNeedCreateEventBtnListener:Z
-    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15702(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
+    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15802(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$36;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->setCreateEventListener()V
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15900(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
 
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$36;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->setCreateEventVisibleMode(Z)V
-    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
+    invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
 
     goto :goto_0
 .end method

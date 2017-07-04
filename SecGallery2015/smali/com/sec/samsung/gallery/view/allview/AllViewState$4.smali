@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$4;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/allview/AllViewState;->startDetailViewInUIThread(II)V
     invoke-static {v0, p1, p2}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$2200(Lcom/sec/samsung/gallery/view/allview/AllViewState;II)V
 
     const/4 v0, 0x1

@@ -1149,6 +1149,7 @@
     <dimen name="album_frame_padding">1.0dip</dimen>
     <dimen name="album_play_icon_size">15.0dip</dimen>
     <dimen name="album_play_icon_size_for_grid_view">26.0dip</dimen>
+    <dimen name="album_view_border_width_dex_mode">4.0px</dimen>
     <dimen name="audioBubble_height">28.0px</dimen>
     <dimen name="audioBubble_text_size">18.0px</dimen>
     <dimen name="audioBubble_width">59.0px</dimen>

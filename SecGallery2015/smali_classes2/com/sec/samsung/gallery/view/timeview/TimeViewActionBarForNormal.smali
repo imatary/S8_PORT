@@ -742,10 +742,10 @@
     .sparse-switch
         0x102002c -> :sswitch_0
         0x7f12007c -> :sswitch_5
-        0x7f120279 -> :sswitch_4
-        0x7f12027b -> :sswitch_b
-        0x7f12027c -> :sswitch_d
-        0x7f120289 -> :sswitch_1
+        0x7f12027a -> :sswitch_b
+        0x7f12027b -> :sswitch_d
+        0x7f120288 -> :sswitch_1
+        0x7f120289 -> :sswitch_4
         0x7f12028a -> :sswitch_7
         0x7f12028b -> :sswitch_3
         0x7f12028c -> :sswitch_c
@@ -761,11 +761,11 @@
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 7
 
-    const v6, 0x7f120289
+    const v6, 0x7f120288
 
     const v5, 0x7f12028b
 
-    const v4, 0x7f120288
+    const v4, 0x7f120287
 
     const/4 v3, 0x0
 
@@ -812,7 +812,7 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f120279
+    const v0, 0x7f120289
 
     invoke-static {p1, v0, v2}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 

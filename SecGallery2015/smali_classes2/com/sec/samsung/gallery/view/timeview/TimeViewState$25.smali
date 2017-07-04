@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$25;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mNaviSpinner:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$14300(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
     move-result-object v0
@@ -60,7 +59,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$25;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mNaviSpinner:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$14400(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
     move-result-object v0
@@ -70,7 +68,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$25;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$14500(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0
@@ -79,7 +76,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$25;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$14600(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
@@ -96,12 +92,10 @@
 
     iget-boolean v3, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$25;->val$changeScreen:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->startDetailView(IIZ)V
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$14700(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;IIZ)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$25;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$14800(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -114,7 +108,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$25;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mDCHandler:Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$14900(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
 
     move-result-object v0
@@ -124,7 +117,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$25;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$15000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0

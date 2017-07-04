@@ -52,7 +52,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$GroupSelectionTask;->mMediaSet:Lcom/sec/android/gallery3d/data/MediaSet;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->doGroupSelect(ILcom/sec/android/gallery3d/data/MediaSet;)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$17300(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;ILcom/sec/android/gallery3d/data/MediaSet;)V
 
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$GroupSelectionTask;->setFinishingState()V

@@ -39,7 +39,6 @@
 
     const-string/jumbo v0, "onDeregister"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -54,7 +53,6 @@
 
     const-string/jumbo v2, "Received Social Push"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->access$000()Ljava/lang/String;
 
     move-result-object v3
@@ -75,7 +73,6 @@
 
     const-string/jumbo v2, "onPushReceive. Invalid pushEntry."
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->access$000()Ljava/lang/String;
 
     move-result-object v3
@@ -89,7 +86,6 @@
     :cond_1
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/EnhancedSocialPushListener;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/EnhancedSocialPushListener;
 
     move-result-object v2
@@ -110,7 +106,6 @@
 
     const-string/jumbo v0, "onRegister"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->access$000()Ljava/lang/String;
 
     move-result-object v1

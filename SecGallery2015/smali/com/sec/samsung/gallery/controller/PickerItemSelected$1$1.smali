@@ -41,7 +41,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/controller/PickerItemSelected$1;->this$0:Lcom/sec/samsung/gallery/controller/PickerItemSelected;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PickerItemSelected;->mActivity:Landroid/app/Activity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/PickerItemSelected;->access$000(Lcom/sec/samsung/gallery/controller/PickerItemSelected;)Landroid/app/Activity;
 
     move-result-object v1
@@ -56,7 +55,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/controller/PickerItemSelected$1;->this$0:Lcom/sec/samsung/gallery/controller/PickerItemSelected;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PickerItemSelected;->mActivity:Landroid/app/Activity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/PickerItemSelected;->access$000(Lcom/sec/samsung/gallery/controller/PickerItemSelected;)Landroid/app/Activity;
 
     move-result-object v1
@@ -69,7 +67,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/controller/PickerItemSelected$1;->this$0:Lcom/sec/samsung/gallery/controller/PickerItemSelected;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/PickerItemSelected;->needsCrop(Landroid/content/Intent;)Z
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/controller/PickerItemSelected;->access$100(Lcom/sec/samsung/gallery/controller/PickerItemSelected;Landroid/content/Intent;)Z
 
     move-result v1
@@ -84,7 +81,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/controller/PickerItemSelected$1;->val$mediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/PickerItemSelected;->startCropActivity(Lcom/sec/android/gallery3d/data/MediaObject;Landroid/content/Intent;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/controller/PickerItemSelected;->access$200(Lcom/sec/samsung/gallery/controller/PickerItemSelected;Lcom/sec/android/gallery3d/data/MediaObject;Landroid/content/Intent;)V
 
     :goto_0
@@ -99,7 +95,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/controller/PickerItemSelected$1;->val$mediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/PickerItemSelected;->setResultAndFinish(Lcom/sec/android/gallery3d/data/MediaItem;Landroid/content/Intent;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/controller/PickerItemSelected;->access$300(Lcom/sec/samsung/gallery/controller/PickerItemSelected;Lcom/sec/android/gallery3d/data/MediaItem;Landroid/content/Intent;)V
 
     goto :goto_0

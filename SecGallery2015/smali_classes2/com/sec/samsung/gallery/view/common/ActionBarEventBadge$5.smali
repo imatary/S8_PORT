@@ -59,7 +59,6 @@
 
     iget v1, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$5;->val$count:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->doActionUp(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$900(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;I)V
 
     :cond_0

@@ -81,7 +81,6 @@
     :try_start_0
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/TileImageView$TileUploader;->this$0:Lcom/sec/android/gallery3d/ui/TileImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->mUploadQueue:Lcom/sec/android/gallery3d/ui/TileImageView$TileQueue;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1200(Lcom/sec/android/gallery3d/ui/TileImageView;)Lcom/sec/android/gallery3d/ui/TileImageView$TileQueue;
 
     move-result-object v6
@@ -128,7 +127,6 @@
 
     if-nez v5, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$700(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v5

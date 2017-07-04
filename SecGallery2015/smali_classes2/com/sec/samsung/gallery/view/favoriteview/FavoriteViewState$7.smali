@@ -45,7 +45,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$7;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$2100(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -59,7 +58,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$7;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->startDetailViewInUIThread(II)V
     invoke-static {v0, p2, p3}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$2200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;II)V
 
     goto :goto_0
@@ -67,7 +65,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$7;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mMediaItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$1200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
 
     move-result-object v0

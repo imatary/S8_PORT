@@ -34,8 +34,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$42;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$18100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$18200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
 
@@ -47,8 +46,7 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$42;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$18200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$18300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
 
@@ -56,8 +54,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$42;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mAlbumIndex:I
-    invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$11700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)I
+    invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$11800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)I
 
     move-result v1
 
@@ -98,8 +95,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$42;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    invoke-static {v3}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$18000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    invoke-static {v3}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$18100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v3
 
@@ -117,7 +113,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$42;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mChannelSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeChannelSetAdapter;
 
     move-result-object v3
@@ -128,8 +123,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$42;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mAlbumIndex:I
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$11700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)I
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$11800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)I
 
     move-result v4
 

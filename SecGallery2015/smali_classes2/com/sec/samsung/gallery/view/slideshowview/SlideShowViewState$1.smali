@@ -53,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mSlideShowView:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$000(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
     move-result-object v0
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mSlideShowView:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$000(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
     move-result-object v0
@@ -72,7 +70,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->finishCurrentViewState()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$100(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)V
 
     goto :goto_0
@@ -80,7 +77,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->isSlideShowPauseViewVisible()Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$200(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Z
 
     move-result v0
@@ -91,7 +87,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->hideBars(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$300(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;Z)V
 
     goto :goto_0

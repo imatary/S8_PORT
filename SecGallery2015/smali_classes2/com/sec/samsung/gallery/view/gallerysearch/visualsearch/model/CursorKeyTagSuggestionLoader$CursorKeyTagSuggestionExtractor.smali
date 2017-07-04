@@ -335,7 +335,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader$CursorKeyTagSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;->mVisionCloudUtils:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;)Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
     move-result-object v5
@@ -344,7 +343,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader$CursorKeyTagSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;->mVisionCloudUtils:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;)Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
     move-result-object v5
@@ -365,7 +363,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader$CursorKeyTagSuggestionExtractor;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;->mVisionCloudUtils:Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/model/CursorKeyTagSuggestionLoader;)Lcom/sec/samsung/gallery/view/gallerysearch/base/VisionCloudUtils;
 
     move-result-object v5

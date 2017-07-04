@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$7;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$2900(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

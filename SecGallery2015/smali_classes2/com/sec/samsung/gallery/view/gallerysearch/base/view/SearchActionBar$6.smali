@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$6;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->initializeSearchView()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$1300(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)V
 
     return-void

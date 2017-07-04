@@ -45,7 +45,6 @@
 
     iget-object v0, v0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/EnhancedSocialPushListener;
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/EnhancedSocial;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/EnhancedSocialPushListener;
 
     move-result-object v0

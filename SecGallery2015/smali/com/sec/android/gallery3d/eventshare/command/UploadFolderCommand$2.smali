@@ -61,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/UploadFolderCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/UploadFolderCommand;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/command/UploadFolderCommand;->showUploadedFilesCount()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/UploadFolderCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/UploadFolderCommand;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/UploadFolderCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/UploadFolderCommand;

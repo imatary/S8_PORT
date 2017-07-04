@@ -58,7 +58,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$Area;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->mContext:Landroid/content/Context;
     invoke-static {v7}, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->access$700(Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;)Landroid/content/Context;
 
     move-result-object v7
@@ -75,7 +74,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$Area;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v7}, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->access$800(Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v7
@@ -92,7 +90,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$Area;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v7}, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->access$800(Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v7
@@ -129,7 +126,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector$Area;->this$0:Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->mContext:Landroid/content/Context;
     invoke-static {v7}, Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;->access$700(Lcom/sec/android/gallery3d/glcore/GlHoverGestureDetector;)Landroid/content/Context;
 
     move-result-object v7

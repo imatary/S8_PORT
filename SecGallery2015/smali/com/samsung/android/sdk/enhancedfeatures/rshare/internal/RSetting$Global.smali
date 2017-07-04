@@ -110,7 +110,6 @@
 
     sget-object v0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/RSetting$Global;->sNameValueCache:Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/RSetting$NameValueCache;
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/RSetting$NameValueCache;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
     invoke-static {v0, p0, p1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/RSetting$NameValueCache;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/RSetting$NameValueCache;Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0

@@ -158,8 +158,7 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/CropImage$SaveOutput;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mCropView:Lcom/sec/android/gallery3d/ui/CropView;
-    invoke-static {v6}, Lcom/sec/android/gallery3d/app/CropImage;->access$2400(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/ui/CropView;
+    invoke-static {v6}, Lcom/sec/android/gallery3d/app/CropImage;->access$2200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/ui/CropView;
 
     move-result-object v6
 
@@ -169,8 +168,7 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/app/CropImage$SaveOutput;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mCropView:Lcom/sec/android/gallery3d/ui/CropView;
-    invoke-static {v7}, Lcom/sec/android/gallery3d/app/CropImage;->access$2400(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/ui/CropView;
+    invoke-static {v7}, Lcom/sec/android/gallery3d/app/CropImage;->access$2200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/ui/CropView;
 
     move-result-object v7
 
@@ -180,7 +178,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/app/CropImage$SaveOutput;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v8}, Lcom/sec/android/gallery3d/app/CropImage;->access$200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v8
@@ -191,7 +188,6 @@
 
     rsub-int v8, v8, 0x168
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->rotateRectangle(Landroid/graphics/Rect;III)V
     invoke-static {v4, v6, v7, v8}, Lcom/sec/android/gallery3d/app/CropImage;->access$2500(Landroid/graphics/Rect;III)V
 
     const-string/jumbo v6, "cropped-rect"
@@ -201,7 +197,6 @@
     :cond_2
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/CropImage$SaveOutput;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->getCroppedResult()Lcom/sec/android/gallery3d/crop/CropResult;
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/CropImage;->access$2600(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/crop/CropResult;
 
     move-result-object v0
@@ -223,7 +218,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/CropImage$SaveOutput;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->saveToMediaProvider(Lcom/sec/android/gallery3d/util/ThreadPool$JobContext;Landroid/graphics/Bitmap;)Landroid/net/Uri;
     invoke-static {v6, p1, v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$2700(Lcom/sec/android/gallery3d/app/CropImage;Lcom/sec/android/gallery3d/util/ThreadPool$JobContext;Landroid/graphics/Bitmap;)Landroid/net/Uri;
 
     move-result-object v2

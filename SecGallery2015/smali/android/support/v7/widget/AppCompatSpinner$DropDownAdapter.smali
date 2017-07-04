@@ -45,7 +45,6 @@
     :cond_0
     if-eqz p2, :cond_1
 
-    # getter for: Landroid/support/v7/widget/AppCompatSpinner;->IS_AT_LEAST_M:Z
     invoke-static {}, Landroid/support/v7/widget/AppCompatSpinner;->access$100()Z
 
     move-result v1

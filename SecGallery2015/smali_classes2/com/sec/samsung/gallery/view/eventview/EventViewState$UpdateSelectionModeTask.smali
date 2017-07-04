@@ -55,7 +55,6 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$000(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v13
@@ -137,7 +136,6 @@
 
     iget-object v14, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mDataManager:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static {v14}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$5400(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v14
@@ -195,7 +193,6 @@
     :cond_7
     iget-object v14, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v14}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$2600(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v14
@@ -204,7 +201,6 @@
 
     iget-object v14, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
     invoke-static {v14}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$100(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
     move-result-object v14
@@ -217,7 +213,6 @@
 
     iget-object v14, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v14}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$000(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v14
@@ -226,7 +221,6 @@
 
     iget-object v14, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v14}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$000(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v14
@@ -270,7 +264,6 @@
 
     iget-object v14, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v14}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$5500(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v14
@@ -288,7 +281,6 @@
     :cond_b
     iget-object v12, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->exitSelectionMode()V
     invoke-static {v12}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$300(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)V
 
     goto/16 :goto_1
@@ -346,7 +338,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->selectAllPostProcess()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$5200(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0

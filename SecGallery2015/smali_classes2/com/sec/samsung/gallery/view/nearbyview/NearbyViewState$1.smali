@@ -50,7 +50,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$1;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$000(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)Landroid/os/Handler;
 
     move-result-object v1

@@ -226,7 +226,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;->mRippleAnim:Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->cancelAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;)V
 
     iput-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;->mRippleAnim:Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;
@@ -897,7 +896,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;->mRippleAnim:Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->cancelAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;)V
 
     :cond_2
@@ -976,7 +974,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;->mRippleAnim:Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->startPressAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;)V
 
     return-void
@@ -1016,7 +1013,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;->mRippleAnim:Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->cancelAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;)V
 
     :cond_1
@@ -1065,7 +1061,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;->mRippleAnim:Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->startFocusAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;)V
 
     goto :goto_0
@@ -1077,7 +1072,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject;->mRippleAnim:Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->cancelAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeRoundTouchObject$GlRippleAnimation;)V
 
     goto :goto_0

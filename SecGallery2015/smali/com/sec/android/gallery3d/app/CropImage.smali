@@ -383,15 +383,15 @@
 
     iput-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage;->mMediaEjectReceiver:Landroid/content/BroadcastReceiver;
 
-    new-instance v0, Lcom/sec/android/gallery3d/app/CropImage$4;
+    new-instance v0, Lcom/sec/android/gallery3d/app/CropImage$5;
 
-    invoke-direct {v0, p0}, Lcom/sec/android/gallery3d/app/CropImage$4;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-direct {v0, p0}, Lcom/sec/android/gallery3d/app/CropImage$5;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     iput-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage;->mActionBarListener:Landroid/view/View$OnClickListener;
 
-    new-instance v0, Lcom/sec/android/gallery3d/app/CropImage$13;
+    new-instance v0, Lcom/sec/android/gallery3d/app/CropImage$14;
 
-    invoke-direct {v0, p0}, Lcom/sec/android/gallery3d/app/CropImage$13;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-direct {v0, p0}, Lcom/sec/android/gallery3d/app/CropImage$14;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     iput-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage;->mMultiWindowListener:Lcom/sec/android/gallery3d/app/MultiWindowModeChangeListener;
 
@@ -542,7 +542,15 @@
     return v0
 .end method
 
-.method static synthetic access$2200(Lcom/sec/android/gallery3d/app/CropImage;)V
+.method static synthetic access$2200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/ui/CropView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage;->mCropView:Lcom/sec/android/gallery3d/ui/CropView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$2300(Lcom/sec/android/gallery3d/app/CropImage;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/app/CropImage;->handleSaveButton()V
@@ -550,20 +558,12 @@
     return-void
 .end method
 
-.method static synthetic access$2300(Lcom/sec/android/gallery3d/app/CropImage;)V
+.method static synthetic access$2400(Lcom/sec/android/gallery3d/app/CropImage;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/app/CropImage;->handleCancelButton()V
 
     return-void
-.end method
-
-.method static synthetic access$2400(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/ui/CropView;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage;->mCropView:Lcom/sec/android/gallery3d/ui/CropView;
-
-    return-object v0
 .end method
 
 .method static synthetic access$2500(Landroid/graphics/Rect;III)V
@@ -896,6 +896,136 @@
     goto :goto_0
 .end method
 
+.method private checkRequiredPermissions()Z
+    .locals 5
+
+    const/4 v4, 0x1
+
+    const/4 v3, 0x0
+
+    sget-object v2, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->REQUIRED_PERMISSION_ON_CROP:[Ljava/lang/String;
+
+    invoke-static {p0, v2}, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->isRequiredPermissionEnabled(Landroid/content/Context;[Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_4
+
+    sget-object v2, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->REQUIRED_PERMISSION_ON_CROP:[Ljava/lang/String;
+
+    invoke-static {p0, v2}, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->getDisabledPermissionList(Landroid/content/Context;[Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
+
+    move-result v2
+
+    if-nez v2, :cond_4
+
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-static {v2, p0}, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->isPermissionAlreadyRequested(Ljava/lang/String;Landroid/content/Context;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-static {p0, v2}, Landroid/support/v4/app/ActivityCompat;->shouldShowRequestPermissionRationale(Landroid/app/Activity;Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_1
+
+    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mPermissionDialog:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
+
+    if-eqz v2, :cond_0
+
+    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mPermissionDialog:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
+
+    invoke-virtual {v2}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->dismissDialog()V
+
+    :cond_0
+    new-instance v2, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
+
+    invoke-direct {v2, p0, v1, v4}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;-><init>(Landroid/content/Context;Ljava/util/ArrayList;Z)V
+
+    iput-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mPermissionDialog:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
+
+    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mPermissionDialog:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
+
+    invoke-virtual {v2}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->showPermissionRationaleDialog()V
+
+    :goto_0
+    move v2, v3
+
+    :goto_1
+    return v2
+
+    :cond_1
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_2
+    :goto_2
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    invoke-static {v0, p0}, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->isPermissionAlreadyRequested(Ljava/lang/String;Landroid/content/Context;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
+    invoke-static {v0, p0}, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->setPermissionRequested(Ljava/lang/String;Landroid/content/Context;)V
+
+    goto :goto_2
+
+    :cond_3
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    new-array v2, v2, [Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, [Ljava/lang/String;
+
+    const/16 v4, 0x77
+
+    invoke-static {p0, v2, v4}, Landroid/support/v4/app/ActivityCompat;->requestPermissions(Landroid/app/Activity;[Ljava/lang/String;I)V
+
+    goto :goto_0
+
+    :cond_4
+    move v2, v4
+
+    goto :goto_1
+.end method
+
 .method private convertExtensionToCompressFormat(Ljava/lang/String;)Landroid/graphics/Bitmap$CompressFormat;
     .locals 1
 
@@ -988,12 +1118,22 @@
     return v1
 .end method
 
+.method private createSystemUiVisibilityChangeListener()Landroid/view/View$OnSystemUiVisibilityChangeListener;
+    .locals 1
+
+    new-instance v0, Lcom/sec/android/gallery3d/app/CropImage$4;
+
+    invoke-direct {v0, p0}, Lcom/sec/android/gallery3d/app/CropImage$4;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
+
+    return-object v0
+.end method
+
 .method private createUpdateBackScreenListener()Lcom/sec/android/gallery3d/glcore/LibGLRootView$UpdateBackscreenListener;
     .locals 1
 
-    new-instance v0, Lcom/sec/android/gallery3d/app/CropImage$12;
+    new-instance v0, Lcom/sec/android/gallery3d/app/CropImage$13;
 
-    invoke-direct {v0, p0}, Lcom/sec/android/gallery3d/app/CropImage$12;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-direct {v0, p0}, Lcom/sec/android/gallery3d/app/CropImage$13;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     return-object v0
 .end method
@@ -1526,9 +1666,9 @@
 
     invoke-direct {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage$LoadBitmapDataTask;-><init>(Lcom/sec/android/gallery3d/data/MediaItem;)V
 
-    new-instance v2, Lcom/sec/android/gallery3d/app/CropImage$15;
+    new-instance v2, Lcom/sec/android/gallery3d/app/CropImage$16;
 
-    invoke-direct {v2, p0}, Lcom/sec/android/gallery3d/app/CropImage$15;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-direct {v2, p0}, Lcom/sec/android/gallery3d/app/CropImage$16;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/sec/android/gallery3d/util/ThreadPool;->submit(Lcom/sec/android/gallery3d/util/ThreadPool$Job;Lcom/sec/android/gallery3d/util/FutureListener;)Lcom/sec/android/gallery3d/util/Future;
 
@@ -1837,9 +1977,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/sec/android/gallery3d/app/CropImage$5;
+    new-instance v1, Lcom/sec/android/gallery3d/app/CropImage$6;
 
-    invoke-direct {v1, p0, p1}, Lcom/sec/android/gallery3d/app/CropImage$5;-><init>(Lcom/sec/android/gallery3d/app/CropImage;Landroid/view/MenuItem;)V
+    invoke-direct {v1, p0, p1}, Lcom/sec/android/gallery3d/app/CropImage$6;-><init>(Lcom/sec/android/gallery3d/app/CropImage;Landroid/view/MenuItem;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -2810,11 +2950,11 @@
 
     invoke-direct {v3, v4}, Lcom/sec/android/gallery3d/app/CropImage$LoadDataTask;-><init>(Lcom/sec/android/gallery3d/data/MediaItem;)V
 
-    new-instance v4, Lcom/sec/android/gallery3d/app/CropImage$11;
+    new-instance v4, Lcom/sec/android/gallery3d/app/CropImage$12;
 
     move-object/from16 v0, p0
 
-    invoke-direct {v4, v0}, Lcom/sec/android/gallery3d/app/CropImage$11;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-direct {v4, v0}, Lcom/sec/android/gallery3d/app/CropImage$12;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     invoke-virtual {v2, v3, v4}, Lcom/sec/android/gallery3d/util/ThreadPool;->submit(Lcom/sec/android/gallery3d/util/ThreadPool$Job;Lcom/sec/android/gallery3d/util/FutureListener;)Lcom/sec/android/gallery3d/util/Future;
 
@@ -3297,6 +3437,32 @@
     goto :goto_0
 .end method
 
+.method private registerSettingsObserver()V
+    .locals 5
+
+    invoke-static {p0}, Lcom/sec/samsung/gallery/core/GalleryFacade;->getInstance(Landroid/content/Context;)Lorg/puremvc/java/multicore/patterns/facade/Facade;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "REGISTER_SETTINGS_OBSERVER"
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/CropImage;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    aput-object v4, v2, v3
+
+    invoke-virtual {v0, v1, v2}, Lorg/puremvc/java/multicore/patterns/facade/Facade;->sendNotification(Ljava/lang/String;Ljava/lang/Object;)V
+
+    return-void
+.end method
+
 .method private static rotateCanvas(Landroid/graphics/Canvas;III)V
     .locals 3
 
@@ -3483,9 +3649,9 @@
 
     invoke-direct {v1, p4}, Lcom/sec/android/gallery3d/util/InterruptableOutputStream;-><init>(Ljava/io/OutputStream;)V
 
-    new-instance v2, Lcom/sec/android/gallery3d/app/CropImage$10;
+    new-instance v2, Lcom/sec/android/gallery3d/app/CropImage$11;
 
-    invoke-direct {v2, p0, v1}, Lcom/sec/android/gallery3d/app/CropImage$10;-><init>(Lcom/sec/android/gallery3d/app/CropImage;Lcom/sec/android/gallery3d/util/InterruptableOutputStream;)V
+    invoke-direct {v2, p0, v1}, Lcom/sec/android/gallery3d/app/CropImage$11;-><init>(Lcom/sec/android/gallery3d/app/CropImage;Lcom/sec/android/gallery3d/util/InterruptableOutputStream;)V
 
     invoke-interface {p1, v2}, Lcom/sec/android/gallery3d/util/ThreadPool$JobContext;->setCancelListener(Lcom/sec/android/gallery3d/util/ThreadPool$CancelListener;)V
 
@@ -3708,9 +3874,9 @@
 
     invoke-direct {v3, p0, v0, v1}, Lcom/sec/android/gallery3d/app/CropImage$SaveOutput;-><init>(Lcom/sec/android/gallery3d/app/CropImage;Landroid/graphics/RectF;Landroid/graphics/RectF;)V
 
-    new-instance v4, Lcom/sec/android/gallery3d/app/CropImage$14;
+    new-instance v4, Lcom/sec/android/gallery3d/app/CropImage$15;
 
-    invoke-direct {v4, p0}, Lcom/sec/android/gallery3d/app/CropImage$14;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-direct {v4, p0}, Lcom/sec/android/gallery3d/app/CropImage$15;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     invoke-virtual {v2, v3, v4}, Lcom/sec/android/gallery3d/util/ThreadPool;->submit(Lcom/sec/android/gallery3d/util/ThreadPool$Job;Lcom/sec/android/gallery3d/util/FutureListener;)Lcom/sec/android/gallery3d/util/Future;
 
@@ -4498,9 +4664,9 @@
 
     invoke-static {v7, v8, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    new-instance v7, Lcom/sec/android/gallery3d/app/CropImage$9;
+    new-instance v7, Lcom/sec/android/gallery3d/app/CropImage$10;
 
-    invoke-direct {v7, p0}, Lcom/sec/android/gallery3d/app/CropImage$9;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-direct {v7, p0}, Lcom/sec/android/gallery3d/app/CropImage$10;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     invoke-virtual {p0, v7}, Lcom/sec/android/gallery3d/app/CropImage;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -5874,9 +6040,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/sec/android/gallery3d/app/CropImage$6;
+    new-instance v2, Lcom/sec/android/gallery3d/app/CropImage$7;
 
-    invoke-direct {v2, p0}, Lcom/sec/android/gallery3d/app/CropImage$6;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-direct {v2, p0}, Lcom/sec/android/gallery3d/app/CropImage$7;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -5890,9 +6056,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/sec/android/gallery3d/app/CropImage$7;
+    new-instance v2, Lcom/sec/android/gallery3d/app/CropImage$8;
 
-    invoke-direct {v2, p0}, Lcom/sec/android/gallery3d/app/CropImage$7;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-direct {v2, p0}, Lcom/sec/android/gallery3d/app/CropImage$8;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -5906,9 +6072,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/sec/android/gallery3d/app/CropImage$8;
+    new-instance v2, Lcom/sec/android/gallery3d/app/CropImage$9;
 
-    invoke-direct {v2, p0}, Lcom/sec/android/gallery3d/app/CropImage$8;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
+    invoke-direct {v2, p0}, Lcom/sec/android/gallery3d/app/CropImage$9;-><init>(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -6272,6 +6438,22 @@
     iget-object v11, p0, Lcom/sec/android/gallery3d/app/CropImage;->mMultiWindowListener:Lcom/sec/android/gallery3d/app/MultiWindowModeChangeListener;
 
     invoke-virtual {p0, v11}, Lcom/sec/android/gallery3d/app/CropImage;->setMultiWindowModeChangeListener(Lcom/sec/android/gallery3d/app/MultiWindowModeChangeListener;)V
+
+    invoke-direct {p0}, Lcom/sec/android/gallery3d/app/CropImage;->registerSettingsObserver()V
+
+    invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/CropImage;->getWindow()Landroid/view/Window;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v11
+
+    invoke-direct {p0}, Lcom/sec/android/gallery3d/app/CropImage;->createSystemUiVisibilityChangeListener()Landroid/view/View$OnSystemUiVisibilityChangeListener;
+
+    move-result-object v12
+
+    invoke-virtual {v11, v12}, Landroid/view/View;->setOnSystemUiVisibilityChangeListener(Landroid/view/View$OnSystemUiVisibilityChangeListener;)V
 
     sget-object v11, Lcom/sec/samsung/gallery/features/FeatureNames;->UseFaceTag:Lcom/sec/samsung/gallery/features/FeatureNames;
 
@@ -6973,298 +7155,193 @@
 .end method
 
 .method protected onResume()V
-    .locals 9
+    .locals 7
 
     const/16 v6, 0x8
 
-    const/4 v8, 0x1
+    const/4 v5, 0x1
 
-    const/4 v7, 0x0
+    const/4 v4, 0x0
 
-    const-string/jumbo v4, "CropImage"
+    const-string/jumbo v2, "CropImage"
 
-    const-string/jumbo v5, "CropImage onResume Start"
+    const-string/jumbo v3, "CropImage onResume Start"
 
-    invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-super {p0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->onResume()V
 
-    iput-boolean v8, p0, Lcom/sec/android/gallery3d/app/CropImage;->mIsActive:Z
+    iput-boolean v5, p0, Lcom/sec/android/gallery3d/app/CropImage;->mIsActive:Z
 
-    iput-boolean v7, p0, Lcom/sec/android/gallery3d/app/CropImage;->mUpdateBackscreenInPauseState:Z
+    iput-boolean v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mUpdateBackscreenInPauseState:Z
 
-    iget-object v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mMainHandler:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mMainHandler:Landroid/os/Handler;
 
-    invoke-virtual {v4, v6}, Landroid/os/Handler;->hasMessages(I)Z
+    invoke-virtual {v2, v6}, Landroid/os/Handler;->hasMessages(I)Z
 
-    move-result v4
+    move-result v2
 
-    if-eqz v4, :cond_0
+    if-eqz v2, :cond_0
 
-    iget-object v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mMainHandler:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mMainHandler:Landroid/os/Handler;
 
-    invoke-virtual {v4, v6}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {v2, v6}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_0
-    iput-boolean v7, p0, Lcom/sec/android/gallery3d/app/CropImage;->mNeedUpdateBackscreenInPauseState:Z
+    iput-boolean v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mNeedUpdateBackscreenInPauseState:Z
 
-    :try_start_0
-    iget v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mState:I
+    invoke-direct {p0}, Lcom/sec/android/gallery3d/app/CropImage;->checkRequiredPermissions()Z
 
-    if-eqz v4, :cond_1
+    move-result v2
 
-    sget-boolean v4, Lcom/sec/android/gallery3d/app/CropImage;->USE_MULTIWINDOW:Z
+    if-nez v2, :cond_1
 
-    if-eqz v4, :cond_1
-
-    iget-object v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-
-    invoke-virtual {v4}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->isMultiWindow()Z
-
-    move-result v4
-
-    if-nez v4, :cond_2
+    :goto_0
+    return-void
 
     :cond_1
+    :try_start_0
+    iget v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mState:I
+
+    if-eqz v2, :cond_2
+
+    sget-boolean v2, Lcom/sec/android/gallery3d/app/CropImage;->USE_MULTIWINDOW:Z
+
+    if-eqz v2, :cond_2
+
+    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+
+    invoke-virtual {v2}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->isMultiWindow()Z
+
+    move-result v2
+
+    if-nez v2, :cond_3
+
+    :cond_2
     invoke-direct {p0}, Lcom/sec/android/gallery3d/app/CropImage;->initializeData()V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    :cond_2
-    :goto_0
-    iget v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mState:I
+    :cond_3
+    :goto_1
+    iget v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mState:I
 
-    const/4 v5, 0x2
+    const/4 v3, 0x2
 
-    if-ne v4, v5, :cond_3
+    if-ne v2, v3, :cond_4
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/app/CropImage;->onSaveClicked()V
 
-    :cond_3
-    iget-object v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mActionBarButtons:Landroid/view/View;
+    :cond_4
+    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mActionBarButtons:Landroid/view/View;
 
-    if-eqz v4, :cond_4
+    if-eqz v2, :cond_5
 
-    iget-boolean v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mIsManualFD:Z
+    iget-boolean v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mIsManualFD:Z
 
-    if-nez v4, :cond_4
+    if-nez v2, :cond_5
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/app/CropImage;->setActionBar()V
 
-    :cond_4
+    :cond_5
     invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/CropImage;->getLibraryContext()Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-static {v4, v8}, Lcom/sec/samsung/gallery/util/BrightnessModeHelper;->setBrightnessControl(Lcom/sec/android/gallery3d/interfaces/LibraryContext;Z)V
+    invoke-static {v2, v5}, Lcom/sec/samsung/gallery/util/BrightnessModeHelper;->setBrightnessControl(Lcom/sec/android/gallery3d/interfaces/LibraryContext;Z)V
 
     invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/CropImage;->getAndroidContext()Landroid/content/Context;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-static {v4, v8, v7}, Lcom/sec/samsung/gallery/util/DNIeModeHelper;->enableDNIeMode(Landroid/content/Context;ZI)V
-
-    invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/CropImage;->getGLRoot()Lcom/sec/android/gallery3d/ui/GLRoot;
-
-    move-result-object v4
-
-    iget-object v5, p0, Lcom/sec/android/gallery3d/app/CropImage;->mCropView:Lcom/sec/android/gallery3d/ui/CropView;
-
-    invoke-interface {v4, v5}, Lcom/sec/android/gallery3d/ui/GLRoot;->setContentPane(Lcom/sec/android/gallery3d/ui/GLView;)V
+    invoke-static {v2, v5, v4}, Lcom/sec/samsung/gallery/util/DNIeModeHelper;->enableDNIeMode(Landroid/content/Context;ZI)V
 
     invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/CropImage;->getGLRoot()Lcom/sec/android/gallery3d/ui/GLRoot;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-interface {v3}, Lcom/sec/android/gallery3d/ui/GLRoot;->lockRenderThread()V
+    iget-object v3, p0, Lcom/sec/android/gallery3d/app/CropImage;->mCropView:Lcom/sec/android/gallery3d/ui/CropView;
+
+    invoke-interface {v2, v3}, Lcom/sec/android/gallery3d/ui/GLRoot;->setContentPane(Lcom/sec/android/gallery3d/ui/GLView;)V
+
+    invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/CropImage;->getGLRoot()Lcom/sec/android/gallery3d/ui/GLRoot;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Lcom/sec/android/gallery3d/ui/GLRoot;->lockRenderThread()V
 
     :try_start_1
-    iget-object v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mCropView:Lcom/sec/android/gallery3d/ui/CropView;
+    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage;->mCropView:Lcom/sec/android/gallery3d/ui/CropView;
 
-    invoke-virtual {v4}, Lcom/sec/android/gallery3d/ui/CropView;->resume()V
+    invoke-virtual {v2}, Lcom/sec/android/gallery3d/ui/CropView;->resume()V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    invoke-interface {v3}, Lcom/sec/android/gallery3d/ui/GLRoot;->unlockRenderThread()V
-
-    :goto_1
-    sget-object v4, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->REQUIRED_PERMISSION_ON_CROP:[Ljava/lang/String;
-
-    invoke-static {p0, v4}, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->isRequiredPermissionEnabled(Landroid/content/Context;[Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_9
-
-    sget-object v4, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->REQUIRED_PERMISSION_ON_CROP:[Ljava/lang/String;
-
-    invoke-static {p0, v4}, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->getDisabledPermissionList(Landroid/content/Context;[Ljava/lang/String;)Ljava/util/ArrayList;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->isEmpty()Z
-
-    move-result v4
-
-    if-nez v4, :cond_9
-
-    invoke-virtual {v2, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/lang/String;
-
-    invoke-static {v4, p0}, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->isPermissionAlreadyRequested(Ljava/lang/String;Landroid/content/Context;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_6
-
-    invoke-virtual {v2, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/lang/String;
-
-    invoke-static {p0, v4}, Landroid/support/v4/app/ActivityCompat;->shouldShowRequestPermissionRationale(Landroid/app/Activity;Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_6
-
-    iget-object v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mPermissionDialog:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
-
-    if-eqz v4, :cond_5
-
-    iget-object v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mPermissionDialog:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
-
-    invoke-virtual {v4}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->dismissDialog()V
-
-    :cond_5
-    new-instance v4, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
-
-    invoke-direct {v4, p0, v2, v8}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;-><init>(Landroid/content/Context;Ljava/util/ArrayList;Z)V
-
-    iput-object v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mPermissionDialog:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
-
-    iget-object v4, p0, Lcom/sec/android/gallery3d/app/CropImage;->mPermissionDialog:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
-
-    invoke-virtual {v4}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->showPermissionRationaleDialog()V
+    invoke-interface {v1}, Lcom/sec/android/gallery3d/ui/GLRoot;->unlockRenderThread()V
 
     :goto_2
-    return-void
+    const-string/jumbo v2, "CropImage"
+
+    const-string/jumbo v3, "CropImage onResume End"
+
+    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
 
     :catch_0
     move-exception v0
 
-    const-string/jumbo v4, "CropImage"
+    const-string/jumbo v2, "CropImage"
 
-    const-string/jumbo v5, "NullPointerException"
+    const-string/jumbo v3, "NullPointerException"
 
-    invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto/16 :goto_0
+    goto :goto_1
 
     :catch_1
     move-exception v0
 
     :try_start_2
-    const-string/jumbo v4, "CropImage"
+    const-string/jumbo v2, "CropImage"
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v6, "Exception : "
+    const-string/jumbo v4, "Exception : "
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v3
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v3
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v3
 
-    invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    invoke-interface {v3}, Lcom/sec/android/gallery3d/ui/GLRoot;->unlockRenderThread()V
+    invoke-interface {v1}, Lcom/sec/android/gallery3d/ui/GLRoot;->unlockRenderThread()V
 
-    goto :goto_1
+    goto :goto_2
 
     :catchall_0
-    move-exception v4
+    move-exception v2
 
-    invoke-interface {v3}, Lcom/sec/android/gallery3d/ui/GLRoot;->unlockRenderThread()V
+    invoke-interface {v1}, Lcom/sec/android/gallery3d/ui/GLRoot;->unlockRenderThread()V
 
-    throw v4
-
-    :cond_6
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v4
-
-    :cond_7
-    :goto_3
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_8
-
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    invoke-static {v1, p0}, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->isPermissionAlreadyRequested(Ljava/lang/String;Landroid/content/Context;)Z
-
-    move-result v5
-
-    if-nez v5, :cond_7
-
-    invoke-static {v1, p0}, Lcom/sec/android/gallery3d/util/RuntimePermissionUtils;->setPermissionRequested(Ljava/lang/String;Landroid/content/Context;)V
-
-    goto :goto_3
-
-    :cond_8
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
-
-    move-result v4
-
-    new-array v4, v4, [Ljava/lang/String;
-
-    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, [Ljava/lang/String;
-
-    const/16 v5, 0x77
-
-    invoke-static {p0, v4, v5}, Landroid/support/v4/app/ActivityCompat;->requestPermissions(Landroid/app/Activity;[Ljava/lang/String;I)V
-
-    goto :goto_2
-
-    :cond_9
-    const-string/jumbo v4, "CropImage"
-
-    const-string/jumbo v5, "CropImage onResume End"
-
-    invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_2
+    throw v2
 .end method
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V

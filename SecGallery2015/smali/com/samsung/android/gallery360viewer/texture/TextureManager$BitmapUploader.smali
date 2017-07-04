@@ -57,7 +57,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$100(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -66,7 +65,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$100(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -86,7 +84,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mStatusHandler:Lcom/samsung/android/gallery360viewer/view/StatusHandler;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$200(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)Lcom/samsung/android/gallery360viewer/view/StatusHandler;
 
     move-result-object v1
@@ -95,7 +92,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mStatusHandler:Lcom/samsung/android/gallery360viewer/view/StatusHandler;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$200(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)Lcom/samsung/android/gallery360viewer/view/StatusHandler;
 
     move-result-object v1
@@ -109,7 +105,6 @@
     :cond_2
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mTextureDataHandle:[I
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$300(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)[I
 
     move-result-object v1
@@ -120,7 +115,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mTextureDataHandle:[I
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$300(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)[I
 
     move-result-object v1
@@ -130,7 +124,6 @@
     :cond_3
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mTextureDataHandle:[I
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$300(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)[I
 
     move-result-object v1
@@ -141,7 +134,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mTextureDataHandle:[I
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$300(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)[I
 
     move-result-object v1
@@ -165,7 +157,6 @@
     :try_start_0
     iget-object v3, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v3}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$100(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)Landroid/graphics/Bitmap;
 
     move-result-object v3
@@ -211,7 +202,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mStatusHandler:Lcom/samsung/android/gallery360viewer/view/StatusHandler;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$200(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)Lcom/samsung/android/gallery360viewer/view/StatusHandler;
 
     move-result-object v1
@@ -220,7 +210,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mStatusHandler:Lcom/samsung/android/gallery360viewer/view/StatusHandler;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$200(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)Lcom/samsung/android/gallery360viewer/view/StatusHandler;
 
     move-result-object v1
@@ -238,7 +227,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mStatusHandler:Lcom/samsung/android/gallery360viewer/view/StatusHandler;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$200(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)Lcom/samsung/android/gallery360viewer/view/StatusHandler;
 
     move-result-object v1
@@ -247,7 +235,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/texture/TextureManager$BitmapUploader;->this$0:Lcom/samsung/android/gallery360viewer/texture/TextureManager;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/texture/TextureManager;->mStatusHandler:Lcom/samsung/android/gallery360viewer/view/StatusHandler;
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/texture/TextureManager;->access$200(Lcom/samsung/android/gallery360viewer/texture/TextureManager;)Lcom/samsung/android/gallery360viewer/view/StatusHandler;
 
     move-result-object v1

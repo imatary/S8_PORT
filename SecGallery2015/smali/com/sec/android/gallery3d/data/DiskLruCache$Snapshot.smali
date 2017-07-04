@@ -56,7 +56,6 @@
 
     aget-object v0, v2, v1
 
-    # invokes: Lcom/sec/android/gallery3d/data/DiskLruCache;->closeQuietly(Ljava/io/Closeable;)V
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/DiskLruCache;->access$1600(Ljava/io/Closeable;)V
 
     add-int/lit8 v1, v1, 0x1

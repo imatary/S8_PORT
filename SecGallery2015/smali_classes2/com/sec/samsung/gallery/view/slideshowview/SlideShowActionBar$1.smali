@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->access$000(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->access$100(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -66,7 +64,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->access$200(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -75,7 +72,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->access$300(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -84,7 +80,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->access$400(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -93,12 +88,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->initActionBarBg()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->access$500(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->access$600(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -109,7 +102,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->access$700(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;)Landroid/app/ActionBar;
 
     move-result-object v0

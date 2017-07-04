@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$000(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -54,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$100(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -66,7 +64,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$200(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -75,7 +72,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$300(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -86,7 +82,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$400(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)Landroid/app/ActionBar;
 
     move-result-object v0
@@ -95,14 +90,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$600(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)Landroid/app/ActionBar;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;->access$500(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbar;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

@@ -42,7 +42,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->updateGroup()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$700(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)V
 
     return-void

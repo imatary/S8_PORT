@@ -99,7 +99,7 @@
 .method private setTextOnlyButton(Landroid/view/Menu;)V
     .locals 2
 
-    const v1, 0x7f120286
+    const v1, 0x7f120285
 
     invoke-interface {p1, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -156,7 +156,7 @@
     goto :goto_0
 
     :pswitch_data_0
-    .packed-switch 0x7f120286
+    .packed-switch 0x7f120285
         :pswitch_0
     .end packed-switch
 .end method
@@ -164,7 +164,7 @@
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 2
 
-    const v0, 0x7f120286
+    const v0, 0x7f120285
 
     const/4 v1, 0x0
 

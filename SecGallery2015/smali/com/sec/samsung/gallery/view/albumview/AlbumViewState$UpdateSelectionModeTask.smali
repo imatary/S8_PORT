@@ -186,7 +186,6 @@
 
     move-object/from16 v17, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static/range {v17 .. v17}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$1700(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v17
@@ -205,7 +204,6 @@
 
     move-object/from16 v17, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
     invoke-static/range {v17 .. v17}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$1200(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
     move-result-object v17
@@ -218,7 +216,6 @@
 
     move-object/from16 v17, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsPickerMode:Z
     invoke-static/range {v17 .. v17}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4800(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Z
 
     move-result v17
@@ -411,7 +408,6 @@
 
     move-object/from16 v17, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->exitSelectionMode()V
     invoke-static/range {v17 .. v17}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$1300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
 
     goto/16 :goto_1
@@ -469,7 +465,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->selectAllPostProcess()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$14900(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0

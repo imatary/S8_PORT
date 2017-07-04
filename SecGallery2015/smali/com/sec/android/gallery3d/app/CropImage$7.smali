@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$7;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->handleCancelButton()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2300(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     return-void

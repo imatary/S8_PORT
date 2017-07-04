@@ -3,12 +3,12 @@
 .source "DetailViewState.java"
 
 # interfaces
-.implements Lcom/sec/samsung/gallery/view/detailview/util/VisionLoadUserRoiTask$VisionListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->onStateResult(IILandroid/content/Intent;)V
+    value = Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->startNearbyViewState(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;[Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,12 +20,20 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
+.field final synthetic val$deviceInfo:[Ljava/lang/String;
+
+.field final synthetic val$nearbyClient:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
+
 
 # direct methods
-.method constructor <init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+.method constructor <init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;[Ljava/lang/String;)V
     .locals 0
 
     iput-object p1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
+
+    iput-object p2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->val$nearbyClient:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
+
+    iput-object p3, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->val$deviceInfo:[Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,88 +42,40 @@
 
 
 # virtual methods
-.method public invalidForUserRoi()V
-    .locals 3
+.method public run()V
+    .locals 4
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCurrentPhoto:Lcom/sec/android/gallery3d/data/MediaItem;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$28800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/sec/android/gallery3d/data/LocalImage;
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
-
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCurrentPhoto:Lcom/sec/android/gallery3d/data/MediaItem;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
 
     move-result-object v0
 
-    check-cast v0, Lcom/sec/android/gallery3d/data/LocalImage;
-
-    invoke-virtual {v0}, Lcom/sec/android/gallery3d/data/LocalImage;->setSceneCropRectFs()V
-
-    :cond_0
-    :goto_0
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
-
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoView:Lcom/sec/android/gallery3d/ui/PhotoView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1300(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/ui/PhotoView;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
-
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCurrentPhoto:Lcom/sec/android/gallery3d/data/MediaItem;
-    invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
-
-    move-result-object v1
+    const-class v1, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
     const/4 v2, 0x0
 
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-virtual {v0, v1, v2}, Lcom/sec/android/gallery3d/app/StateManager;->switchState(Ljava/lang/Class;Landroid/os/Bundle;)V
 
-    move-result-object v2
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->val$nearbyClient:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    invoke-virtual {v0, v1, v2}, Lcom/sec/android/gallery3d/ui/PhotoView;->updateVisionIntelligenceView(Lcom/sec/android/gallery3d/data/MediaItem;Ljava/lang/Boolean;)V
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->val$deviceInfo:[Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
+    const/4 v2, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoView:Lcom/sec/android/gallery3d/ui/PhotoView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1300(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/ui/PhotoView;
+    aget-object v1, v1, v2
 
-    move-result-object v0
+    iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->val$deviceInfo:[Ljava/lang/String;
 
-    invoke-virtual {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->invalidate()V
+    const/4 v3, 0x1
+
+    aget-object v2, v2, v3
+
+    invoke-static {v0, v1, v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyUtils;->showDeviceRemovedDialog(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
-
-    :cond_1
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
-
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCurrentPhoto:Lcom/sec/android/gallery3d/data/MediaItem;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
-
-    move-result-object v0
-
-    instance-of v0, v0, Lcom/sec/android/gallery3d/data/UnionImage;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
-
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCurrentPhoto:Lcom/sec/android/gallery3d/data/MediaItem;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/sec/android/gallery3d/data/UnionImage;
-
-    invoke-virtual {v0}, Lcom/sec/android/gallery3d/data/UnionImage;->setSceneCropRectFs()V
-
-    goto :goto_0
 .end method

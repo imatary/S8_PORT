@@ -180,28 +180,24 @@
 
     invoke-direct {p0, p1}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;-><init>(Landroid/graphics/Bitmap;)V
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;->sUploadBitmap:Landroid/graphics/Bitmap;
     invoke-static {p2}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;->access$600(Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sUploadBitmap:Landroid/graphics/Bitmap;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;->sCanvas:Landroid/graphics/Canvas;
     invoke-static {p2}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;->access$700(Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;)Landroid/graphics/Canvas;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sCanvas:Landroid/graphics/Canvas;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;->sBitmapPaint:Landroid/graphics/Paint;
     invoke-static {p2}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;->access$800(Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;)Landroid/graphics/Paint;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->sBitmapPaint:Landroid/graphics/Paint;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;->sPaint:Landroid/graphics/Paint;
     invoke-static {p2}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;->access$900(Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;)Landroid/graphics/Paint;
 
     move-result-object v0

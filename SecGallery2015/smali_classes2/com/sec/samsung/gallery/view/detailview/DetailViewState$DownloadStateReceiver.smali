@@ -79,7 +79,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->FEATURE_USE_SOCIAL_STORY_VIEW:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6600()Z
 
     move-result v1
@@ -88,7 +87,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->updateCommentsView()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$41500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     goto :goto_0

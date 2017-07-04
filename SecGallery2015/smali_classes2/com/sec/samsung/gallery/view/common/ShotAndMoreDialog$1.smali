@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ShotAndMoreDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/ShotAndMoreDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ShotAndMoreDialog;->startMoreService()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ShotAndMoreDialog;->access$000(Lcom/sec/samsung/gallery/view/common/ShotAndMoreDialog;)V
 
     return-void

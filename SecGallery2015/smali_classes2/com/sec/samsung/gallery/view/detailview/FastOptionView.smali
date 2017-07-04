@@ -571,7 +571,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b05c0
+    const v3, 0x7f0b05c1
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2297,6 +2297,14 @@
 
     move-result v1
 
+    sget-object v2, Lcom/sec/samsung/gallery/features/FeatureNames;->IsImmersiveMode:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v2}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
     if-lez v1, :cond_0
 
     invoke-interface {v0}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
@@ -3882,7 +3890,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b05bf
+    const v4, 0x7f0b05c0
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -4640,7 +4648,7 @@
 .method private setHideAnimation(Z)V
     .locals 10
 
-    const v5, 0x7f0b05af
+    const v5, 0x7f0b05b0
 
     const v9, 0x7f02017e
 
@@ -4956,7 +4964,7 @@
 .method private setShowAnimation(Z)V
     .locals 7
 
-    const v3, 0x7f0b05af
+    const v3, 0x7f0b05b0
 
     const/4 v6, 0x0
 
@@ -5993,7 +6001,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b05b9
+    const v5, 0x7f0b05ba
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6036,7 +6044,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b05b8
+    const v5, 0x7f0b05b9
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6059,7 +6067,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b05b7
+    const v5, 0x7f0b05b8
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6082,7 +6090,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b05bd
+    const v5, 0x7f0b05be
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6097,7 +6105,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b05bc
+    const v5, 0x7f0b05bd
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6126,7 +6134,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b05c0
+    const v9, 0x7f0b05c1
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6138,7 +6146,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b05b6
+    const v9, 0x7f0b05b7
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6150,7 +6158,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b05ba
+    const v9, 0x7f0b05bb
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6223,7 +6231,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b05b5
+    const v10, 0x7f0b05b6
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6243,7 +6251,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b05bb
+    const v10, 0x7f0b05bc
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6283,7 +6291,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b05b1
+    const v9, 0x7f0b05b2
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6315,7 +6323,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b05b2
+    const v9, 0x7f0b05b3
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6346,7 +6354,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b05b3
+    const v9, 0x7f0b05b4
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6362,7 +6370,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b05b4
+    const v9, 0x7f0b05b5
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -6916,7 +6924,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0b056d
+    const v7, 0x7f0b056e
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

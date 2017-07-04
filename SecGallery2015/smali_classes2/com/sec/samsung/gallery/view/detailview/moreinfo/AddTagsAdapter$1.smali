@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->addSuggestionItemList()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)V
 
     return-void

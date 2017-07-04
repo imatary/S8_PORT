@@ -45,7 +45,6 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mBinder:Lcom/samsung/android/app/qragent/service/IQRService;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$1802(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;Lcom/samsung/android/app/qragent/service/IQRService;)Lcom/samsung/android/app/qragent/service/IQRService;
 
     :try_start_0
@@ -53,7 +52,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$14;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mBinder:Lcom/samsung/android/app/qragent/service/IQRService;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$1800(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)Lcom/samsung/android/app/qragent/service/IQRService;
 
     move-result-object v1
@@ -76,7 +74,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$14;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mBinder:Lcom/samsung/android/app/qragent/service/IQRService;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$1800(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)Lcom/samsung/android/app/qragent/service/IQRService;
 
     move-result-object v2
@@ -95,7 +92,6 @@
 
     move-result v2
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mIsQR:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$2002(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$14$1;->this$1:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$14;
@@ -104,7 +100,6 @@
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mIsCheckedForQRState:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$1702(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;Z)Z
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
@@ -116,7 +111,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$14;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mIsQR:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$2000(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)Z
 
     move-result v1
@@ -133,7 +127,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mMenu:Landroid/view/Menu;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->updateMenuOperations(Landroid/view/Menu;)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$2100(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;Landroid/view/Menu;)V
 
     :cond_1
@@ -211,7 +204,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mBinder:Lcom/samsung/android/app/qragent/service/IQRService;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$1802(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;Lcom/samsung/android/app/qragent/service/IQRService;)Lcom/samsung/android/app/qragent/service/IQRService;
 
     return-void

@@ -1443,7 +1443,7 @@
 
     const-string/jumbo v1, "Docs"
 
-    const v2, 0x7f0a0861
+    const v2, 0x7f0a086f
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1773,7 +1773,7 @@
 
     const-string/jumbo v1, "Docs"
 
-    const v2, 0x7f0a0861
+    const v2, 0x7f0a086f
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -8888,7 +8888,6 @@
     return-object v15
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/access/cmh/CMHInterface$ShareItemPath;->mOriginalFileLocalPath:Ljava/lang/String;
     invoke-static/range {p1 .. p1}, Lcom/sec/samsung/gallery/access/cmh/CMHInterface$ShareItemPath;->access$000(Lcom/sec/samsung/gallery/access/cmh/CMHInterface$ShareItemPath;)Ljava/lang/String;
 
     move-result-object v20

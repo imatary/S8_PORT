@@ -17,7 +17,7 @@
 
 .field private static final CALLER_TYPE:Ljava/lang/String; = "CallerType"
 
-.field private static final CONNECTION_TIMEOUT_VALUE:I = 0xbb8
+.field private static final CONNECTION_TIMEOUT_VALUE:I = 0x7530
 
 .field private static final DIRECT_CALL:Ljava/lang/String; = "directcall"
 
@@ -275,11 +275,11 @@
 
     move-result-object v1
 
-    const/16 v13, 0xbb8
+    const/16 v13, 0x7530
 
     invoke-virtual {v1, v13}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
-    const/16 v13, 0xbb8
+    const/16 v13, 0x7530
 
     invoke-virtual {v1, v13}, Ljava/net/URLConnection;->setReadTimeout(I)V
 

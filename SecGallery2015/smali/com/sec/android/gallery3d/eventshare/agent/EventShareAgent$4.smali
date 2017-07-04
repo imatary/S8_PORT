@@ -133,7 +133,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->access$000(Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;)Landroid/content/Context;
 
     move-result-object v2
@@ -226,7 +225,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->mContext:Landroid/content/Context;
     invoke-static {v7}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->access$000(Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;)Landroid/content/Context;
 
     move-result-object v7
@@ -353,7 +351,6 @@
     :goto_1
     iget-object v7, p0, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->mContext:Landroid/content/Context;
     invoke-static {v7}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->access$000(Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;)Landroid/content/Context;
 
     move-result-object v7
@@ -397,7 +394,6 @@
     :cond_2
     iget-object v7, p0, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent$4;->this$0:Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->mContext:Landroid/content/Context;
     invoke-static {v7}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->access$000(Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;)Landroid/content/Context;
 
     move-result-object v7

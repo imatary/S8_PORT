@@ -59,7 +59,6 @@
 
     const/4 v1, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -78,14 +77,12 @@
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mShareRetryAnimListener:Lcom/sec/android/gallery3d/glcore/GlAnimationBase$GlAnimationListener;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$Builder;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$Builder;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$Builder;)Landroid/content/Context;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mContext:Landroid/content/Context;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$Builder;->mExpanded:Z
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$Builder;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$Builder;)Z
 
     move-result v0
@@ -177,7 +174,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f02038d
+    const v5, 0x7f02038f
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -189,7 +186,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b07f7
+    const v5, 0x7f0b07f8
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -298,7 +295,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b07f7
+    const v2, 0x7f0b07f8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -420,7 +417,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f0b07f7
+    const v4, 0x7f0b07f8
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -436,7 +433,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f02038e
+    const v4, 0x7f020390
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -571,7 +568,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f02038e
+    const v5, 0x7f020390
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -591,7 +588,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b07f7
+    const v5, 0x7f0b07f8
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -634,7 +631,7 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f02038e
+    const v6, 0x7f020390
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -650,7 +647,7 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v6, 0x7f0b07f7
+    const v6, 0x7f0b07f8
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -778,7 +775,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v7, 0x7f0b07f7
+    const v7, 0x7f0b07f8
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -961,7 +958,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f02038e
+    const v5, 0x7f020390
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -985,7 +982,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b07f7
+    const v5, 0x7f0b07f8
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

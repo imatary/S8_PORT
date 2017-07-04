@@ -269,7 +269,7 @@
     :cond_1
     iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ChannelPhotoViewDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v5, 0x7f0a07c4
+    const v5, 0x7f0a07c9
 
     new-array v6, v6, [Ljava/lang/Object;
 
@@ -288,7 +288,7 @@
     :cond_2
     iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ChannelPhotoViewDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v5, 0x7f0a07c3
+    const v5, 0x7f0a07c8
 
     new-array v6, v6, [Ljava/lang/Object;
 
@@ -502,7 +502,7 @@
 
     iget-object v1, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ChannelPhotoViewDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f0a07d0
+    const v2, 0x7f0a07d5
 
     const/4 v3, 0x0
 

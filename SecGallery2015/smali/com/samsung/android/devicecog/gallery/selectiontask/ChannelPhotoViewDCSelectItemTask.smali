@@ -372,7 +372,7 @@
     :cond_2
     iget-object v3, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/ChannelPhotoViewDCSelectItemTask;->mSelectionListener:Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;
 
-    invoke-interface {v3, v1, p1}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;->addItemToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;)V
+    invoke-interface {v3, v1, p1}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;->addItemToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;)Z
 
     iget-object v3, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/ChannelPhotoViewDCSelectItemTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 

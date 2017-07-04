@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton$7;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->updateStateOnFavorite(Landroid/view/MotionEvent;)V
     invoke-static {v0, p2}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;->access$500(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarSkeleton;Landroid/view/MotionEvent;)V
 
     const/4 v0, 0x0

@@ -249,7 +249,6 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;
 
-    # invokes: Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;->addTag(Ljava/lang/String;I)V
     invoke-static {v1, p2, p3}, Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;->access$000(Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;Ljava/lang/String;I)V
 
     :cond_3
@@ -322,7 +321,6 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;
 
-    # invokes: Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;->addTag(Ljava/lang/String;I[Ljava/lang/Object;)V
     invoke-static {v1, p2, p3, p4}, Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;->access$100(Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;Ljava/lang/String;I[Ljava/lang/Object;)V
 
     :cond_3
@@ -479,13 +477,11 @@
 
     if-eqz v1, :cond_2
 
-    # invokes: Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;->removeTag(Ljava/lang/String;)V
     invoke-static {v1, p2}, Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;->access$200(Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;Ljava/lang/String;)V
 
     :cond_2
     if-eqz v1, :cond_3
 
-    # invokes: Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;->getCount()I
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;->access$300(Lcom/sec/android/gallery3d/data/GallerySearchTagFilter$Filter;)I
 
     move-result v2

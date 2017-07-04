@@ -59,7 +59,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$14;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$3800(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -70,14 +69,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$14;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mFlags:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$4100(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)I
 
     move-result v1
 
     or-int/lit8 v1, v1, 0x40
 
-    # setter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mFlags:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$4002(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;I)I
 
     :cond_0

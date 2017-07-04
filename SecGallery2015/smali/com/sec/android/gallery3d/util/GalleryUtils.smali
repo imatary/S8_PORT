@@ -1570,7 +1570,7 @@
 
     if-nez v4, :cond_2
 
-    const v4, 0x7f0a085e
+    const v4, 0x7f0a086c
 
     invoke-virtual {p0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3588,7 +3588,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f020325
+    const v0, 0x7f020327
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3598,7 +3598,7 @@
     return-object v0
 
     :cond_0
-    const v0, 0x7f020321
+    const v0, 0x7f020323
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3618,7 +3618,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f020324
+    const v0, 0x7f020326
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3628,7 +3628,7 @@
     return-object v0
 
     :cond_0
-    const v0, 0x7f020322
+    const v0, 0x7f020324
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3671,9 +3671,17 @@
 
     move-result v1
 
-    if-nez v0, :cond_2
+    if-nez v1, :cond_0
 
-    if-nez v1, :cond_2
+    sget-object v3, Lcom/sec/samsung/gallery/features/FeatureNames;->IsImmersiveMode:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v3}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    if-nez v0, :cond_2
 
     invoke-static {p0}, Lcom/sec/android/gallery3d/util/GalleryUtils;->isMobileKeyboardCovered(Landroid/content/Context;)Z
 
@@ -3696,8 +3704,6 @@
     :cond_2
     if-eqz v0, :cond_0
 
-    if-nez v1, :cond_0
-
     invoke-virtual {p0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getGalleryCurrentStatus()Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v3
@@ -3716,7 +3722,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b08ac
+    const v3, 0x7f0b08ad
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

@@ -223,7 +223,6 @@
 
     new-array v4, v2, [Lcom/sec/android/gallery3d/data/MediaSet;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->mMediaSetArray:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->access$702(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;[Lcom/sec/android/gallery3d/data/MediaSet;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     const/4 v1, 0x0
@@ -239,7 +238,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->mMediaSetArray:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->access$700(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v3
@@ -333,7 +331,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->mMediaSetArray:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->access$700(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v0
@@ -342,7 +339,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->handleStartAlbumChoice()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;->access$800(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd;)V
 
     :cond_2

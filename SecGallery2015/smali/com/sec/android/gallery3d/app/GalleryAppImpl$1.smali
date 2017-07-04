@@ -43,7 +43,6 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/android/gallery3d/app/GalleryAppImpl;->mQuickViewService:Lcom/sec/android/gallery3d/service/IQuickViewService;
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/GalleryAppImpl;->access$202(Lcom/sec/android/gallery3d/app/GalleryAppImpl;Lcom/sec/android/gallery3d/service/IQuickViewService;)Lcom/sec/android/gallery3d/service/IQuickViewService;
 
     :try_start_0
@@ -97,7 +96,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/app/GalleryAppImpl;->mQuickViewService:Lcom/sec/android/gallery3d/service/IQuickViewService;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/app/GalleryAppImpl;->access$202(Lcom/sec/android/gallery3d/app/GalleryAppImpl;Lcom/sec/android/gallery3d/service/IQuickViewService;)Lcom/sec/android/gallery3d/service/IQuickViewService;
 
     const-string/jumbo v0, "QuickView_Gallery"

@@ -1570,7 +1570,7 @@
 
     if-eqz v2, :cond_7
 
-    const v2, 0x7f0a07b3
+    const v2, 0x7f0a07b9
 
     const/4 v3, 0x1
 
@@ -1670,7 +1670,7 @@
 
     if-eqz v2, :cond_9
 
-    const v2, 0x7f0a07b4
+    const v2, 0x7f0a07ba
 
     const/4 v3, 0x0
 

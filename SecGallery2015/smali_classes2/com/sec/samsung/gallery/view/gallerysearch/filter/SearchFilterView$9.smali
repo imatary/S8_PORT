@@ -43,7 +43,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedView:Landroid/view/View;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v5
@@ -52,7 +51,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mIsIconTouch:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Z
 
     move-result v5
@@ -61,7 +59,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedView:Landroid/view/View;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v5
@@ -70,14 +67,12 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedView:Landroid/view/View;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v8
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedView:Landroid/view/View;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v5
@@ -97,7 +92,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedView:Landroid/view/View;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v8
@@ -106,7 +100,6 @@
 
     move-result v8
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->matchFilterPageIndex(I)I
     invoke-static {v5, v8}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$800(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;I)I
 
     move-result v3
@@ -117,7 +110,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mFilterPagerView:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;
 
     move-result-object v5
@@ -126,7 +118,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -142,13 +133,11 @@
     :cond_0
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mIsIconTouch:Z
     invoke-static {v5, v7}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$702(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;Z)Z
 
     :cond_1
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedListView:Landroid/view/View;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v5
@@ -157,7 +146,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mIsPanelEnable:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1800(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Z
 
     move-result v5
@@ -166,7 +154,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -181,14 +168,12 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedItemView:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListView;
 
     move-result-object v5
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedListView:Landroid/view/View;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v8
@@ -198,7 +183,6 @@
     :cond_2
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedHistoryView:Landroid/view/View;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1500(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v5
@@ -207,7 +191,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedHistoryView:Landroid/view/View;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1500(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v5
@@ -217,7 +200,6 @@
     :try_start_0
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedHistoryView:Landroid/view/View;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1500(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v5
@@ -230,7 +212,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mHistoryListAdapter:Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1000(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;
 
     move-result-object v5
@@ -241,7 +222,6 @@
     :goto_1
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -266,7 +246,6 @@
     :cond_6
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedHistoryView:Landroid/view/View;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1500(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v5
@@ -281,7 +260,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1900(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v5
@@ -345,7 +323,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1700(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0
@@ -354,7 +331,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1700(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0
@@ -398,7 +374,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v0
@@ -407,7 +382,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mIsIconTouch:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Z
 
     move-result v0
@@ -416,7 +390,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v0
@@ -426,7 +399,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedHistoryView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1500(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v0
@@ -435,7 +407,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedHistoryView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1500(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v0
@@ -445,7 +416,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1700(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0
@@ -454,7 +424,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1700(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0
@@ -474,7 +443,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v0
@@ -483,7 +451,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mIsIconTouch:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Z
 
     move-result v0
@@ -492,7 +459,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v0
@@ -501,13 +467,11 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mIsIconTouch:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$702(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;Z)Z
 
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedListView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v0
@@ -516,7 +480,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedListView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v0
@@ -525,13 +488,11 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedListView:Landroid/view/View;
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$102(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;Landroid/view/View;)Landroid/view/View;
 
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedHistoryView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1500(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v0
@@ -540,7 +501,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedHistoryView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1500(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v0
@@ -549,13 +509,11 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSelectedHistoryView:Landroid/view/View;
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1502(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;Landroid/view/View;)Landroid/view/View;
 
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1700(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0
@@ -564,7 +522,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$9;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1700(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0

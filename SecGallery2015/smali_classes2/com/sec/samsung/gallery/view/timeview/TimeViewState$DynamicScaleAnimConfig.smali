@@ -44,7 +44,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$DynamicScaleAnimConfig;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$16400(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v4
@@ -53,7 +52,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$DynamicScaleAnimConfig;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$16500(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v4

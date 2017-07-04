@@ -424,7 +424,6 @@
     :cond_3
     iget-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures$Builder;->mContext:Landroid/content/Context;
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;->getServiceId(Landroid/content/Context;)I
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;->access$000(Landroid/content/Context;)I
 
     move-result v0
@@ -473,10 +472,8 @@
 
     invoke-direct/range {v0 .. v11}, Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures$1;)V
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;->sInstance:Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;->access$102(Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;)Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;->sInstance:Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;->access$100()Lcom/samsung/android/sdk/enhancedfeatures/EnhancedFeatures;
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0

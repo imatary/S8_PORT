@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$13;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$900(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/content/Context;
 
     move-result-object v1
@@ -60,7 +59,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$13;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$900(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/content/Context;
 
     move-result-object v1
@@ -85,7 +83,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$13;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$900(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/content/Context;
 
     move-result-object v1

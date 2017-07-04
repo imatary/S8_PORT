@@ -46,14 +46,12 @@
 
     iput-object v0, p0, Lcom/sec/android/gallery3d/util/ImageDRMUtil$DRMInfo;->mOriginalMime:Ljava/lang/String;
 
-    # invokes: Lcom/sec/android/gallery3d/util/ImageDRMUtil;->getLicenseCategory(Ljava/lang/String;)I
     invoke-static {p1, p2}, Lcom/sec/android/gallery3d/util/ImageDRMUtil;->access$400(Lcom/sec/android/gallery3d/util/ImageDRMUtil;Ljava/lang/String;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/gallery3d/util/ImageDRMUtil$DRMInfo;->mLicenseCategory:I
 
-    # invokes: Lcom/sec/android/gallery3d/util/ImageDRMUtil;->getRightType(Ljava/lang/String;)I
     invoke-static {p1, p2}, Lcom/sec/android/gallery3d/util/ImageDRMUtil;->access$500(Lcom/sec/android/gallery3d/util/ImageDRMUtil;Ljava/lang/String;)I
 
     move-result v0

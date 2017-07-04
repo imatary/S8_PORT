@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$3;->this$0:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mScreenID:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->access$1100(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;)Ljava/lang/String;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$3;->val$phoneNumber:Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->showSendLinkDialog(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->access$1400(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;Ljava/lang/String;)V
 
     return-void

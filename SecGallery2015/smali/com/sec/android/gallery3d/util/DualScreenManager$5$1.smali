@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/android/gallery3d/util/DualScreenManager$5;->this$0:Lcom/sec/android/gallery3d/util/DualScreenManager;
 
-    # getter for: Lcom/sec/android/gallery3d/util/DualScreenManager;->mActivity:Lcom/sec/android/gallery3d/app/GalleryActivity;
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/DualScreenManager;->access$100(Lcom/sec/android/gallery3d/util/DualScreenManager;)Lcom/sec/android/gallery3d/app/GalleryActivity;
 
     move-result-object v0

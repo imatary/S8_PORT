@@ -123,7 +123,6 @@
     invoke-virtual {v1, v2, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager$GlCanvasExt;->get()Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager$GlCanvasExt;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager$GlCanvasExt;)Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v6
@@ -168,7 +167,6 @@
 
     check-cast v0, Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager$GlCanvasExt;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager$GlCanvasExt;->recycle()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager$GlCanvasExt;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager$GlCanvasExt;)V
 
     goto :goto_0

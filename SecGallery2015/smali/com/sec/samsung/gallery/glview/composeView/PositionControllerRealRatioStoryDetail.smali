@@ -135,7 +135,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerRealRatioStoryDetail;->mResource:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b07f7
+    const v5, 0x7f0b07f8
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -374,7 +374,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerRealRatioStoryDetail;->mResource:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b08e1
+    const v1, 0x7f0b08e2
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -414,7 +414,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerRealRatioStoryDetail;->mResource:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b0823
+    const v1, 0x7f0b0824
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -424,7 +424,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerRealRatioStoryDetail;->mResource:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b081f
+    const v2, 0x7f0b0820
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

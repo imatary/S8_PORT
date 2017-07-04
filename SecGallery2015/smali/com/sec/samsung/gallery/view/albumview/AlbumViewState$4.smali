@@ -53,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsFirstLoadingFinished:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4000(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Z
 
     move-result v0
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsResumedForDualScreen:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4100(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Z
 
     move-result v0
@@ -71,7 +69,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsFromNoItemView:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4200(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Z
 
     move-result v0
@@ -81,7 +78,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsResumedForDualScreen:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4100(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Z
 
     move-result v0
@@ -90,7 +86,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsFirstLoadingFinished:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4000(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Z
 
     move-result v0
@@ -99,7 +94,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsFromNoItemView:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4200(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Z
 
     move-result v0
@@ -108,18 +102,15 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->refreshDualScreenFocus()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
 
     :goto_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsFirstLoadingFinished:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4002(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsResumedForDualScreen:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4102(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;Z)Z
 
     :cond_1
@@ -128,7 +119,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsDualLaunchFromDetail:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4400(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Z
 
     move-result v0
@@ -139,20 +129,17 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->startDetailViewInUIThread(IIZ)V
     invoke-static {v0, v2, v2, v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4500(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;IIZ)V
 
     :cond_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsDualLaunchFromDetail:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4402(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;Z)Z
 
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/utils/SDualScreenUtil;->setInitialActivityLaunch(Z)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$4;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->refreshDualScreenFocus()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
 
     goto :goto_0

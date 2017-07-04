@@ -77,13 +77,13 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil$3;->put(ILjava/lang/Object;)V
 
-    const v0, 0x7f120282
+    const v0, 0x7f120281
 
     const-string/jumbo v1, "4040"
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/samsung/gallery/util/SamsungAnalyticsLogUtil$3;->put(ILjava/lang/Object;)V
 
-    const v0, 0x7f120283
+    const v0, 0x7f120282
 
     const-string/jumbo v1, "4041"
 

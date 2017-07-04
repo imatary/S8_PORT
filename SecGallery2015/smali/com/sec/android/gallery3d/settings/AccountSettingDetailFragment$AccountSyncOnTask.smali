@@ -76,7 +76,6 @@
     :try_start_0
     iget-object v3, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$AccountSyncOnTask;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$900(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/content/Context;
 
     move-result-object v3
@@ -159,7 +158,6 @@
     :try_start_1
     iget-object v3, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$AccountSyncOnTask;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$900(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/content/Context;
 
     move-result-object v3
@@ -201,7 +199,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$AccountSyncOnTask;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v2}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1400(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/app/ProgressDialog;
 
     move-result-object v2
@@ -210,7 +207,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$AccountSyncOnTask;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v2}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1400(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/app/ProgressDialog;
 
     move-result-object v2
@@ -223,7 +219,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$AccountSyncOnTask;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v2}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1400(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/app/ProgressDialog;
 
     move-result-object v2
@@ -245,7 +240,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$AccountSyncOnTask;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$900(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/content/Context;
 
     move-result-object v2
@@ -264,7 +258,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$AccountSyncOnTask;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$900(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/content/Context;
 
     move-result-object v5
@@ -297,7 +290,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$AccountSyncOnTask;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$900(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/content/Context;
 
     move-result-object v3
@@ -312,7 +304,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$AccountSyncOnTask;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$900(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/content/Context;
 
     move-result-object v2
@@ -327,7 +318,6 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$AccountSyncOnTask;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->reloadPreference()V
     invoke-static {v2}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1600(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)V
 
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
@@ -337,12 +327,10 @@
     :cond_2
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$AccountSyncOnTask;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$900(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/content/Context;
 
     move-result-object v3
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->FEATURE_USE_CLOUD_NAME_FOR_JAPAN:Z
     invoke-static {}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1500()Z
 
     move-result v2
@@ -379,7 +367,6 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->showProgressDialog(Z)V
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1300(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;Z)V
 
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V

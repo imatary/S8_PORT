@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$2;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->hideNavigationBar(Landroid/view/View;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$600(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;Landroid/view/View;)V
 
     return-void
@@ -52,7 +51,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mIgnoreHideActionBarForVideoPlay:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$502(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;Z)Z
 
     return-void
@@ -63,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$2;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mSlideShowPauseView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$400(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Landroid/view/View;
 
     move-result-object v0
@@ -72,7 +69,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$2;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mSlideShowPauseView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$400(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Landroid/view/View;
 
     move-result-object v0
@@ -81,7 +77,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$2;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mSlideShowPauseView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$400(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Landroid/view/View;
 
     move-result-object v0
@@ -103,7 +98,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$2;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mSlideShowView:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$000(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
     move-result-object v0
@@ -116,7 +110,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$2;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mSlideShowView:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$000(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
     move-result-object v1

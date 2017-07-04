@@ -47,7 +47,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$2;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mNewGlRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$100(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$2;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mNewGlRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$100(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0
@@ -68,7 +66,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$2;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mFrameLayoutVideoView:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$200(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -77,7 +74,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService$2;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->mFrameLayoutVideoView:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;->access$200(Lcom/sec/samsung/gallery/view/slideshowview/SASlideShowService;)Landroid/widget/FrameLayout;
 
     move-result-object v0

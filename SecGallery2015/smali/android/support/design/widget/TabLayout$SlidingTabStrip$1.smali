@@ -75,7 +75,6 @@
 
     move-result v3
 
-    # invokes: Landroid/support/design/widget/TabLayout$SlidingTabStrip;->setIndicatorPosition(II)V
     invoke-static {v1, v2, v3}, Landroid/support/design/widget/TabLayout$SlidingTabStrip;->access$1600(Landroid/support/design/widget/TabLayout$SlidingTabStrip;II)V
 
     return-void

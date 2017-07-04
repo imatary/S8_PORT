@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$1400(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0
@@ -58,7 +57,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->enterSelectionMode()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$1700(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)V
 
     goto :goto_0
@@ -69,7 +67,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -82,7 +79,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -95,7 +91,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -107,7 +102,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -118,7 +112,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$3700(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v1
@@ -129,12 +122,10 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mIsPickerMode:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$3500(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Z
 
     move-result v4
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->isAvailableCount(IZZ)Z
     invoke-static {v2, v0, v3, v4}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$3600(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;IZZ)Z
 
     move-result v2
@@ -143,7 +134,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->updateCountOnActionBar()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$2800(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)V
 
     goto :goto_0
@@ -156,7 +146,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$1400(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v1
@@ -178,7 +167,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -187,7 +175,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -200,7 +187,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -210,7 +196,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -219,7 +204,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -232,7 +216,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -249,7 +232,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->selectItem(II)V
     invoke-static {v1, p1, p2}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$1500(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;II)V
 
     goto :goto_0
@@ -262,7 +244,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$1400(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v1
@@ -283,7 +264,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -292,7 +272,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -305,7 +284,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -317,7 +295,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -326,7 +303,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -339,7 +315,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$200(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -356,7 +331,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$13;->this$0:Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->prePenSelectionRemoveItem(II)Z
     invoke-static {v1, p1, p2}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$3400(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;II)Z
 
     move-result v0

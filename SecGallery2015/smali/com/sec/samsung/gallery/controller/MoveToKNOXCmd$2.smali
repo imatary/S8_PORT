@@ -101,7 +101,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$200(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/os/Handler;
 
     move-result-object v0
@@ -230,7 +229,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v12
@@ -320,7 +318,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v12
@@ -489,7 +486,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v13
@@ -601,7 +597,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v12
@@ -671,7 +666,6 @@
 
     iget-object v12, v0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v12}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v12
@@ -806,14 +800,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -854,13 +846,11 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->mRequestFilePath:Ljava/util/ArrayList;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->moveToKnoxAPI2(Ljava/util/ArrayList;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$100(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;Ljava/util/ArrayList;)V
 
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -891,7 +881,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -912,7 +901,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToKNOXCmd;)Landroid/content/Context;
 
     move-result-object v0

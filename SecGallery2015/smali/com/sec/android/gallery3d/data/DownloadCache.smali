@@ -1197,7 +1197,6 @@
 
     if-eqz v0, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->mId:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->access$1000(Lcom/sec/android/gallery3d/data/DownloadCache$Entry;)J
 
     move-result-wide v8
@@ -1290,7 +1289,6 @@
 
     if-eqz v0, :cond_3
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->mId:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->access$1000(Lcom/sec/android/gallery3d/data/DownloadCache$Entry;)J
 
     move-result-wide v8
@@ -1385,7 +1383,6 @@
 
     move-result-object v6
 
-    # setter for: Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->mFuture:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v4, v6}, Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->access$1202(Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
     :goto_1
@@ -1393,7 +1390,6 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    # invokes: Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->get(Lcom/sec/android/gallery3d/util/ThreadPool$JobContext;)Lcom/sec/android/gallery3d/data/DownloadCache$Entry;
     invoke-static {v2, p1}, Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->access$1300(Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;Lcom/sec/android/gallery3d/util/ThreadPool$JobContext;)Lcom/sec/android/gallery3d/data/DownloadCache$Entry;
 
     move-result-object v0
@@ -1454,7 +1450,6 @@
 
     if-eqz v0, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->mId:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->access$1000(Lcom/sec/android/gallery3d/data/DownloadCache$Entry;)J
 
     move-result-wide v6
@@ -1504,7 +1499,6 @@
 
     if-eqz v0, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->mId:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->access$1000(Lcom/sec/android/gallery3d/data/DownloadCache$Entry;)J
 
     move-result-wide v6
@@ -1570,7 +1564,6 @@
 
     move-result-object v4
 
-    # setter for: Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->mFuture:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v3, v4}, Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;->access$1202(Lcom/sec/android/gallery3d/data/DownloadCache$DownloadTask;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
     :goto_1
@@ -1578,7 +1571,6 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    # invokes: Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->get(Lcom/sec/android/gallery3d/util/ThreadPool$JobContext;)Lcom/sec/android/gallery3d/data/DownloadCache$Entry;
     invoke-static {v1, p1}, Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;->access$1300(Lcom/sec/android/gallery3d/data/DownloadCache$TaskProxy;Lcom/sec/android/gallery3d/util/ThreadPool$JobContext;)Lcom/sec/android/gallery3d/data/DownloadCache$Entry;
 
     move-result-object v0
@@ -1639,7 +1631,6 @@
 
     if-eqz v0, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->mId:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->access$1000(Lcom/sec/android/gallery3d/data/DownloadCache$Entry;)J
 
     move-result-wide v4
@@ -1685,7 +1676,6 @@
 
     if-eqz v0, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->mId:J
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/DownloadCache$Entry;->access$1000(Lcom/sec/android/gallery3d/data/DownloadCache$Entry;)J
 
     move-result-wide v4

@@ -40,7 +40,6 @@
 
     invoke-direct {v1}, Lcom/sec/samsung/gallery/lib/factory/FloatingFeatureFactory;-><init>()V
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartMmsSaveCmd;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/StartMmsSaveCmd;->access$000()Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v2

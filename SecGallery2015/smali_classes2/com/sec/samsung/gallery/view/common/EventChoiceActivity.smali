@@ -64,7 +64,7 @@
 
 .field private mDCHandler:Lcom/samsung/android/devicecog/gallery/viewstatehandler/AbstractDCHandler;
 
-.field private mDCTouchEvent:Lcom/samsung/android/devicecog/gallery/touchevent/AbstractDCTouchEvent;
+.field private mDCTouchEvent:Lcom/samsung/android/devicecog/gallery/touchevent/ChoiceActivityDCTouchEvent;
 
 .field private mDeviceCogActivityListener:Lcom/samsung/android/devicecog/DeviceCogActivityListener;
 
@@ -457,7 +457,7 @@
 
     iget-object v2, p1, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$ViewHolder;->icon:Landroid/widget/ImageView;
 
-    const v5, 0x7f02032c
+    const v5, 0x7f02032e
 
     invoke-virtual {v2, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1779,7 +1779,7 @@
 
     invoke-direct {v0, p0}, Lcom/samsung/android/devicecog/gallery/touchevent/StoryChoiceActivityDCTouchEvent;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mDCTouchEvent:Lcom/samsung/android/devicecog/gallery/touchevent/AbstractDCTouchEvent;
+    iput-object v0, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mDCTouchEvent:Lcom/samsung/android/devicecog/gallery/touchevent/ChoiceActivityDCTouchEvent;
 
     const-string/jumbo v0, "AddToStory"
 
@@ -2057,13 +2057,19 @@
 
     check-cast v2, Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mDCTouchEvent:Lcom/samsung/android/devicecog/gallery/touchevent/AbstractDCTouchEvent;
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mDCTouchEvent:Lcom/samsung/android/devicecog/gallery/touchevent/ChoiceActivityDCTouchEvent;
+
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mListView:Landroid/widget/ListView;
+
+    invoke-virtual {v4, v5}, Lcom/samsung/android/devicecog/gallery/touchevent/ChoiceActivityDCTouchEvent;->setCurrentView(Landroid/view/View;)V
+
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mDCTouchEvent:Lcom/samsung/android/devicecog/gallery/touchevent/ChoiceActivityDCTouchEvent;
 
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->getDCScreenStateId()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-virtual {v4, v5, v2}, Lcom/samsung/android/devicecog/gallery/touchevent/AbstractDCTouchEvent;->doDCTouchEvent(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v4, v5, v2}, Lcom/samsung/android/devicecog/gallery/touchevent/ChoiceActivityDCTouchEvent;->doDCTouchEvent(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

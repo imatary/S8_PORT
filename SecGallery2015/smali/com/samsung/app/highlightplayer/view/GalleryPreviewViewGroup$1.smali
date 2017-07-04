@@ -46,7 +46,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$1;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mPreview:Lcom/sec/android/app/ve/PreviewPlayerInterface;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$000(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/sec/android/app/ve/PreviewPlayerInterface;
 
     move-result-object v0
@@ -55,7 +54,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup$1;->this$0:Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;
 
-    # getter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->mPreview:Lcom/sec/android/app/ve/PreviewPlayerInterface;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$000(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;)Lcom/sec/android/app/ve/PreviewPlayerInterface;
 
     move-result-object v0
@@ -89,7 +87,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->wasPlayingBeforeProgressTouch:Z
     invoke-static {v0, v1}, Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;->access$102(Lcom/samsung/app/highlightplayer/view/GalleryPreviewViewGroup;Z)Z
 
     goto :goto_0

@@ -46,7 +46,6 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$000(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v1
@@ -57,7 +56,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$100(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v1
@@ -69,7 +67,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->setActionBarMenuColor()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$200(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
 
     goto :goto_0
@@ -77,7 +74,6 @@
     :pswitch_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->updateCountOnActionBar()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
 
     goto :goto_0
@@ -85,7 +81,6 @@
     :pswitch_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$400(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -147,7 +142,6 @@
 
     move-result v4
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->enableSelectionMode(IFF)V
     invoke-static {v1, v2, v3, v4}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$500(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;IFF)V
 
     goto :goto_0

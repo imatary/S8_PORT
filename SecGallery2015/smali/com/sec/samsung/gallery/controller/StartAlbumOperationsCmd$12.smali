@@ -47,12 +47,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsSkip:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1302(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsTouchOutside:Z
     invoke-static {v0, v3}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$002(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
@@ -63,7 +61,6 @@
 
     move-result v1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsCheck:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1502(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     move-result v0
@@ -72,7 +69,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsCancel:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$302(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     :goto_0
@@ -81,12 +77,10 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsCancel:Z
     invoke-static {v0, v3}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$302(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd$12;->this$0:Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->mIsSingleCancel:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;->access$1902(Lcom/sec/samsung/gallery/controller/StartAlbumOperationsCmd;Z)Z
 
     goto :goto_0

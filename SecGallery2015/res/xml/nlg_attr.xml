@@ -169,6 +169,8 @@
     <Gallery_163_6 stateId="AddToStory" paramName="StoryName" paramAttr="Exist" paramValue="no" />
     <Gallery_163_7 stateId="AddToStory" paramName="StoryName" paramAttr="Match" paramValue="no" />
     <Gallery_163_8 stateId="Add" paramName="StoryName" paramAttr="Match" paramValue="yes" />
+    <Gallery_164_6 stateId="DetailView" paramName="MotionPhotoViewer" paramAttr="Available" paramValue="no" />
+    <Gallery_164_7 stateId="DetailView" paramName="MotionPhotoViewer" paramAttr="Available" paramValue="yes" />
     <Gallery_200_1 stateId="PicturesView" />
     <Gallery_201_1 stateId="PicturesView" paramName="Item" paramAttr="Exist" paramValue="no" />
     <Gallery_201_3 stateId="PicturesView" paramName="SelectOrderAndCount" paramAttr="Exist" paramValue="no" />
@@ -179,6 +181,9 @@
     <Gallery_249_4 stateId="PicturesView" paramName="ContentType" paramAttr="Equal" paramValue="360photos" />
     <Gallery_249_5 stateId="PicturesView" paramName="ContentType" paramAttr="Equal" paramValue="360videos" />
     <Gallery_249_6 stateId="PicturesView" paramName="ContentType" paramAttr="Equal" paramValue="burstshot" />
+    <Gallery_250_5 stateId="CrossMotionPhotoViewerPlayView" paramName="MotionPhotoViewer" paramAttr="Available" paramValue="yes" />
+    <Gallery_251_6 stateId="PicturesView" paramName="VerizonCloud" paramAttr="Installed" paramValue="no" />
+    <Gallery_251_7 stateId="VerizonCloud" paramName="VerizonCloud" paramAttr="Installed" paramValue="yes" />
     <Gallery_300_4 stateId="PictureSelectedView" paramName="ItemsType" paramAttr="Equal" paramValue="photos" />
     <Gallery_300_5 stateId="PictureSelectedView" paramName="ItemsType" paramAttr="Equal" paramValue="videos" />
     <Gallery_300_6 stateId="PictureSelectedView" paramName="ItemsType" paramAttr="Equal" paramValue="photosvideos" />
@@ -320,8 +325,7 @@
     <Gallery_543_5 stateId="Members" paramName="DeleteGroup" paramAttr="Available" paramValue="no" />
     <Gallery_543_6 stateId="DeleteGroupPopUp" paramName="DeleteGroup" paramAttr="Available" paramValue="yes" />
     <Gallery_544_6 stateId="LeaveGroupPopUp" paramName="LeaveGroup" paramAttr="Available" paramValue="yes" />
-    <Gallery_547_4 stateId="CrossSendToReminder" paramName="StorySelectType" paramAttr="Match" paramValue="yes" />
-    <Gallery_547_7 stateId="StoryDetailView" paramName="StorySelectType" paramAttr="Match" paramValue="yes" />
+    <Gallery_547_4 stateId="StoryDetailView" paramName="StorySelectType" paramAttr="Match" paramValue="yes" />
     <Gallery_554_12 stateId="StoryListView" paramName="StoryType" paramAttr="Exist" paramValue="no" />
     <Gallery_566_5 stateId="StoryDetailView" paramName="ViewMode" paramAttr="Exist" paramValue="no" />
     <Gallery_566_6 stateId="StoryDetailView" paramName="ViewMode" paramAttr="Valid" paramValue="no" />
@@ -359,6 +363,7 @@
     <Gallery_585_2 stateId="StoryListView" paramName="FilterBy" paramAttr="Exist" paramValue="no" />
     <Gallery_585_3 stateId="StoryListView" paramName="FilterBy" paramAttr="Match" paramValue="no" />
     <Gallery_585_4 stateId="StoryListView" paramName="FilterBy" paramAttr="Match" paramValue="yes" />
+    <Gallery_586_6 stateId="StoryDetailView" paramName="Item" paramAttr="Exist" paramValue="no" />
     <Gallery_600_1 stateId="Settings" />
     <Gallery_601_1 stateId="Settings" paramName="CloudSyncOn" paramAttr="AlreadySet" paramValue="yes" />
     <Gallery_601_2 stateId="Settings" paramName="CloudSyncOn" paramAttr="AlreadySet" paramValue="no" />
@@ -415,8 +420,10 @@
     <Gallery_636_3 stateId="Settings" paramName="GoToUrl" paramAttr="Available" paramValue="no" />
     <Gallery_637_1 stateId="Settings" paramName="GoToUrlSettingOff" paramAttr="AlreadySet" paramValue="yes" />
     <Gallery_637_2 stateId="Settings" paramName="GoToUrlSettingOff" paramAttr="AlreadySet" paramValue="no" />
+    <Gallery_638_2 stateId="StorySharing" paramName="NotificationsOn" paramAttr="AlreadySet" paramValue="no" />
     <Gallery_638_3 stateId="Notifications" paramName="StoryInvitationsOn" paramAttr="AlreadySet" paramValue="yes" />
     <Gallery_638_4 stateId="Notifications" paramName="StoryInvitationsOn" paramAttr="AlreadySet" paramValue="no" />
+    <Gallery_639_2 stateId="StorySharing" paramName="NotificationsOff" paramAttr="AlreadySet" paramValue="yes" />
     <Gallery_639_3 stateId="Notifications" paramName="StoryInvitationsOff" paramAttr="AlreadySet" paramValue="yes" />
     <Gallery_639_4 stateId="Notifications" paramName="StoryInvitationsOff" paramAttr="AlreadySet" paramValue="no" />
     <Gallery_640_3 stateId="Notifications" paramName="InvitedMembersOn" paramAttr="AlreadySet" paramValue="yes" />
@@ -445,6 +452,12 @@
     <Gallery_651_2 stateId="AboutGallery" paramName="Network" paramAttr="Connect" paramValue="no" />
     <Gallery_651_3 stateId="PrivacyPolicy" paramName="Network" paramAttr="Connect" paramValue="yes" />
     <Gallery_652_2 stateId="OpenSourceLicenses" paramName="AboutGallery" paramAttr="Available" paramValue="yes" />
+    <Gallery_653_4 stateId="CloudSelectedView" paramName="SelectType" paramAttr="IsSelectAll" paramValue="yes" />
+    <Gallery_653_5 stateId="CloudSelectedView" paramName="SelectOrderAndCount" paramAttr="Exist" paramValue="no" />
+    <Gallery_653_6 stateId="CloudSelectedView" paramName="SelectOrderAndCount" paramAttr="Exist" paramValue="yes" />
+    <Gallery_654_4 stateId="RecycleBinSelectedView" paramName="SelectType" paramAttr="IsSelectAll" paramValue="yes" />
+    <Gallery_654_5 stateId="RecycleBinSelectedView" paramName="SelectOrderAndCount" paramAttr="Exist" paramValue="no" />
+    <Gallery_654_6 stateId="RecycleBinSelectedView" paramName="SelectOrderAndCount" paramAttr="Exist" paramValue="yes" />
     <Gallery_803_5 stateId="AddToStory" paramName="StoryName" paramAttr="Duplicate" paramValue="yes" />
     <Gallery_804_6 stateId="StoryDetailView" paramName="StoryName" paramAttr="Duplicate" paramValue="no" />
     <Gallery_805_11 stateId="Members" paramName="EnhancedFeatures" paramAttr="NotSignIn" paramValue="no" />
@@ -475,6 +488,7 @@
     <Gallery_2000_7 stateId="PicturePickerMulti" paramName="Item" paramAttr="Exist" paramValue="no" />
     <Gallery_2000_8 stateId="AlbumListPicker" paramName="Album" paramAttr="Exist" paramValue="no" />
     <Gallery_2001_7 stateId="PicturePickerSingle" paramName="Item" paramAttr="Exist" paramValue="no" />
+    <Gallery_2005_4 stateId="AlbumThumbnailsPickerSingle" paramName="SelectOrderAndCount" paramAttr="Exist" paramValue="no" />
     <Gallery_3000_1 stateId="SearchView" paramName="ScrollUp" paramAttr="Available" paramValue="no" />
     <Gallery_3000_2 stateId="SearchView" paramName="ScrollUp" paramAttr="Available" paramValue="yes" />
     <Gallery_3001_1 stateId="SearchView" paramName="ScrollDown" paramAttr="Available" paramValue="no" />

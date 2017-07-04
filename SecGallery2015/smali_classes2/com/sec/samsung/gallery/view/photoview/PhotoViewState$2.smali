@@ -69,7 +69,6 @@
     :cond_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$2;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$500(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -97,7 +96,6 @@
     :goto_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$2;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$700(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v4
@@ -108,7 +106,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$2;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$800(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v4
@@ -135,7 +132,6 @@
     const/4 v4, 0x1
 
     :goto_2
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->exitSelectionMode(Z)V
     invoke-static {v6, v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$600(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;Z)V
 
     goto :goto_0
@@ -148,7 +144,6 @@
     :cond_4
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$2;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$900(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v4

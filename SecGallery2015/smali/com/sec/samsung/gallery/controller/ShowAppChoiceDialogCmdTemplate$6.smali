@@ -41,7 +41,6 @@
 
     const/4 v1, 0x2
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->handleMessageOnUiThread(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$000(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;I)V
 
     return-void

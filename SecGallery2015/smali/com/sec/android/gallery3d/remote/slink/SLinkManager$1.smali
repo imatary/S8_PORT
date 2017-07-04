@@ -61,7 +61,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/slink/SLinkManager$1;->this$0:Lcom/sec/android/gallery3d/remote/slink/SLinkManager;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/slink/SLinkManager;->getSignedInStatus()Lcom/sec/android/gallery3d/remote/slink/SLinkManager$StatusType;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/slink/SLinkManager;->access$000(Lcom/sec/android/gallery3d/remote/slink/SLinkManager;)Lcom/sec/android/gallery3d/remote/slink/SLinkManager$StatusType;
 
     move-result-object v0
@@ -102,7 +101,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/slink/SLinkManager$1;->this$0:Lcom/sec/android/gallery3d/remote/slink/SLinkManager;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/slink/SLinkManager;->getSamsungAccountStatus()Lcom/sec/android/gallery3d/remote/slink/SLinkManager$StatusType;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/slink/SLinkManager;->access$100(Lcom/sec/android/gallery3d/remote/slink/SLinkManager;)Lcom/sec/android/gallery3d/remote/slink/SLinkManager$StatusType;
 
     move-result-object v2
@@ -124,7 +122,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/slink/SLinkManager$1;->this$0:Lcom/sec/android/gallery3d/remote/slink/SLinkManager;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/slink/SLinkManager;->mWakeLock:Lcom/samsung/android/sdk/samsunglink/SlinkNetworkManager$SlinkWakeLock;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/slink/SLinkManager;->access$200(Lcom/sec/android/gallery3d/remote/slink/SLinkManager;)Lcom/samsung/android/sdk/samsunglink/SlinkNetworkManager$SlinkWakeLock;
 
     move-result-object v1

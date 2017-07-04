@@ -52,7 +52,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -65,7 +64,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mStoryId:I
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$3200(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)I
 
     move-result v9
@@ -271,7 +269,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->eventShareRequestSender:Lcom/sec/android/gallery3d/eventshare/event/EventShareRequestSender;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$14900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/eventshare/event/EventShareRequestSender;
 
     move-result-object v22
@@ -282,7 +279,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v23 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25200(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v23
@@ -293,7 +289,6 @@
 
     move-object/from16 v24, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mStoryId:I
     invoke-static/range {v24 .. v24}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$3200(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)I
 
     move-result v24
@@ -320,7 +315,6 @@
 
     move-result v23
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mTotalCnt:I
     invoke-static/range {v22 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25302(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;I)I
 
     const-string/jumbo v22, "UPLOADED_COUNT"
@@ -359,7 +353,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mTotalCnt:I
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25300(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)I
 
     move-result v25
@@ -382,7 +375,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->resetNoItemLayout()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$23700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     move-object/from16 v0, p0
@@ -391,7 +383,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v22
@@ -414,7 +405,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25500(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v22
@@ -444,7 +434,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->FEATURE_USE_NEW_MEMBER_LIST_VIEW:Z
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Z
 
     move-result v22
@@ -457,7 +446,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->resetSharedFriendsBar()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$3800(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     goto/16 :goto_1
@@ -469,7 +457,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mSharedFriendsListMediator:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
 
     move-result-object v22
@@ -482,7 +469,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mSharedFriendsListMediator:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
 
     move-result-object v22
@@ -514,7 +500,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->resetSharedFriendsBar()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$3800(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     goto/16 :goto_1
@@ -526,7 +511,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -539,7 +523,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -556,7 +539,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mSharedFriendsListMediator:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
 
     move-result-object v22
@@ -569,7 +551,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mSharedFriendsListMediator:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
 
     move-result-object v22
@@ -591,7 +572,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25800(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v22
@@ -614,7 +594,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v22
@@ -650,7 +629,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->checkNeedShowSharedFriendsBar()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$3700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     move-object/from16 v0, p0
@@ -659,7 +637,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->resetSharedFriendsBar()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$3800(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     move-object/from16 v0, p0
@@ -685,7 +662,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -698,7 +674,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mGalleryApp:Lcom/sec/android/gallery3d/app/GalleryAppImpl;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$2700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/GalleryAppImpl;
 
     move-result-object v22
@@ -713,7 +688,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26000(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v22
@@ -724,7 +698,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mStoryId:I
     invoke-static/range {v23 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$3200(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)I
 
     move-result v23
@@ -742,7 +715,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->updateTime()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26100(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     move-object/from16 v0, p0
@@ -751,7 +723,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->resetNoItemLayout()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$23700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     goto/16 :goto_1
@@ -769,7 +740,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->closeProgressDialog()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26200(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     move-object/from16 v0, p0
@@ -778,7 +748,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26300(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v22
@@ -789,7 +758,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mStoryId:I
     invoke-static/range {v23 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$3200(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)I
 
     move-result v23
@@ -842,7 +810,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->FEATURE_USE_NEW_MEMBER_LIST_VIEW:Z
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Z
 
     move-result v22
@@ -855,7 +822,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mSharedFriendsListMediator:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
 
     move-result-object v22
@@ -868,7 +834,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mSharedFriendsListMediator:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
 
     move-result-object v22
@@ -885,7 +850,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mSharedFriendsListMediator:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
 
     move-result-object v22
@@ -899,7 +863,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->resetSharedFriendsBar()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$3800(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     goto/16 :goto_1
@@ -917,7 +880,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->closeProgressDialog()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26200(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     goto/16 :goto_1
@@ -981,7 +943,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mShareRetryErrorDialog:Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;
 
     move-result-object v22
@@ -1010,7 +971,6 @@
 
     invoke-direct/range {v23 .. v24}, Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;-><init>(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)V
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mShareRetryErrorDialog:Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;
     invoke-static/range {v22 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26402(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;)Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;
 
     :cond_e
@@ -1020,7 +980,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mShareRetryErrorDialog:Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/channelphotoview/ShareRetryErrorDialog;
 
     move-result-object v22
@@ -1031,7 +990,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v23 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26500(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v23
@@ -1077,7 +1035,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -1090,7 +1047,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v22
@@ -1101,7 +1057,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v23 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v23
@@ -1126,7 +1081,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -1156,7 +1110,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v23 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v23
@@ -1177,7 +1130,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mStoryId:I
     invoke-static/range {v23 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$3200(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)I
 
     move-result v23
@@ -1200,7 +1152,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mGalleryFacade:Lorg/puremvc/java/multicore/patterns/facade/Facade;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26800(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lorg/puremvc/java/multicore/patterns/facade/Facade;
 
     move-result-object v22
@@ -1228,7 +1179,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -1241,7 +1191,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v22
@@ -1252,7 +1201,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v23 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v23
@@ -1277,7 +1225,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -1309,7 +1256,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v23 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$27000(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v23
@@ -1320,7 +1266,6 @@
 
     move-object/from16 v2, p2
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->createFailDialog(Landroid/content/Context;Landroid/content/Intent;)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$27100(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Landroid/content/Context;Landroid/content/Intent;)V
 
     goto/16 :goto_1
@@ -1368,7 +1313,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -1381,7 +1325,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -1429,7 +1372,6 @@
 
     move-result v23
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mTotalCnt:I
     invoke-static/range {v22 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25302(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;I)I
 
     const-string/jumbo v22, "UPLOADED_COUNT"
@@ -1468,7 +1410,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mTotalCnt:I
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25300(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)I
 
     move-result v25
@@ -1505,7 +1446,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$27200(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v22
@@ -1528,7 +1468,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$27300(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v22
@@ -1550,7 +1489,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->resetNoItemLayout()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$23700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     goto/16 :goto_1
@@ -1633,7 +1571,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->resetNoItemLayout()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$23700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     :cond_14
@@ -1643,7 +1580,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$27400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v22
@@ -1666,7 +1602,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$27500(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v22
@@ -1696,7 +1631,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->downloadEvent()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$6100(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     goto/16 :goto_1
@@ -1762,7 +1696,6 @@
 
     const/16 v23, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->resetNoItemLayout(Z)V
     invoke-static/range {v22 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$27600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Z)V
 
     move-object/from16 v0, p0
@@ -1823,7 +1756,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->updateTime()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26100(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     goto/16 :goto_1
@@ -1859,7 +1791,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->postFinishPhotoViewState()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$5300(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     :cond_16
@@ -1883,7 +1814,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->FEATURE_USE_NEW_MEMBER_LIST_VIEW:Z
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Z
 
     move-result v22
@@ -1896,7 +1826,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mSharedFriendsListMediator:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
 
     move-result-object v22
@@ -1909,7 +1838,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mSharedFriendsListMediator:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListMediator;
 
     move-result-object v22
@@ -1982,7 +1910,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$27700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v22
@@ -2009,7 +1936,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$27800(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v22
@@ -2037,7 +1963,6 @@
 
     move-object/from16 v2, v19
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->createFailedToUploadDialog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v0, v1, v11, v2}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$14700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
@@ -2062,7 +1987,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$27900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v22
@@ -2092,7 +2016,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$28000(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v22
@@ -2113,7 +2036,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$28100(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v22
@@ -2157,7 +2079,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$28200(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v22
@@ -2260,7 +2181,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -2273,7 +2193,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v22
@@ -2300,7 +2219,6 @@
 
     move-object/from16 v22, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->updateTime()V
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$26100(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)V
 
     goto/16 :goto_1
@@ -2424,7 +2342,6 @@
 
     move-result v23
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mTotalCnt:I
     invoke-static/range {v22 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25302(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;I)I
 
     move-object/from16 v0, p0
@@ -2459,7 +2376,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mTotalCnt:I
     invoke-static/range {v23 .. v23}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$25300(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)I
 
     move-result v23

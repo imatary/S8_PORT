@@ -68,7 +68,6 @@
 
     iget-object v6, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/articlemetacounter/GetArticleMetaCounterTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/articlemetacounter/GetArticleMetaCounterTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/articlemetacounter/GetArticleMetaCounterTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/articlemetacounter/GetArticleMetaCounterListener;
     invoke-static {v6}, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/articlemetacounter/GetArticleMetaCounterTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/articlemetacounter/GetArticleMetaCounterTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/articlemetacounter/GetArticleMetaCounterListener;
 
     move-result-object v6
@@ -200,7 +199,6 @@
     :cond_2
     iget-object v6, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/articlemetacounter/GetArticleMetaCounterTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/articlemetacounter/GetArticleMetaCounterTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/articlemetacounter/GetArticleMetaCounterTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/articlemetacounter/GetArticleMetaCounterListener;
     invoke-static {v6}, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/articlemetacounter/GetArticleMetaCounterTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/articlemetacounter/GetArticleMetaCounterTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/articlemetacounter/GetArticleMetaCounterListener;
 
     move-result-object v6

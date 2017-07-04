@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoLocationEditActivityChn$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoLocationEditActivityChn;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoLocationEditActivityChn;->mMap:Lcom/amap/api/maps2d/AMap;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoLocationEditActivityChn;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoLocationEditActivityChn;)Lcom/amap/api/maps2d/AMap;
 
     move-result-object v1

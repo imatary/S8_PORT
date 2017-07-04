@@ -44,7 +44,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mLongTextToast:Landroid/widget/Toast;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)Landroid/widget/Toast;
 
     move-result-object v1
@@ -65,7 +64,6 @@
 
     move-result-object v4
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->USE_DREAM_SEARCH_VIEW_UX:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$100()Z
 
     move-result v1
@@ -95,13 +93,11 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mLongTextToast:Landroid/widget/Toast;
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$002(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;Landroid/widget/Toast;)Landroid/widget/Toast;
 
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mLongTextToast:Landroid/widget/Toast;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)Landroid/widget/Toast;
 
     move-result-object v1

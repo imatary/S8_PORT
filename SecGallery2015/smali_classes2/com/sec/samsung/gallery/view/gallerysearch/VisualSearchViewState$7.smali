@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$7;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->clearHistoryList()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$1600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
 
     return-void

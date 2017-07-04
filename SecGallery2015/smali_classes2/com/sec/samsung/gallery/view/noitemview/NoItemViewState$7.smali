@@ -54,7 +54,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$7;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3000(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -67,7 +66,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$7;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$2900(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3

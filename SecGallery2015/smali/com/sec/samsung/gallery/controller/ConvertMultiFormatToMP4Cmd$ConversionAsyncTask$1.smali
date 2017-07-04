@@ -39,14 +39,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask$1;->this$1:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->infoList:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->access$700(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;)Ljava/util/ArrayList;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask$1;->this$1:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->mIndex:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->access$600(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;)I
 
     move-result v1
@@ -57,7 +55,6 @@
 
     check-cast v0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->mImageType:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->access$800(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;)I
 
     move-result v0
@@ -72,14 +69,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask$1;->this$1:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->infoList:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->access$700(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;)Ljava/util/ArrayList;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask$1;->this$1:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->mIndex:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;->access$600(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConversionAsyncTask;)I
 
     move-result v2
@@ -90,12 +85,10 @@
 
     check-cast v0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->mOutPath:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;->access$400(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$ConvertInfo;)Ljava/lang/String;
 
     move-result-object v0
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->updateItemDBForDuration(Ljava/lang/String;)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$900(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;Ljava/lang/String;)V
 
     :cond_0

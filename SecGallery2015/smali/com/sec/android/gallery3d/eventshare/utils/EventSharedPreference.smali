@@ -99,27 +99,32 @@
 .end method
 
 .method public static getSavedValue(Ljava/lang/String;Landroid/content/Context;)Z
-    .locals 3
+    .locals 2
     .param p0    # Ljava/lang/String;
         .annotation build Lcom/sec/android/gallery3d/eventshare/utils/EventSharedPreference$NotificationSettingKey;
         .end annotation
     .end param
 
-    invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    const/4 v0, 0x0
 
-    move-result-object v0
-
-    const-string/jumbo v1, "event_share_notification"
-
-    const/4 v2, 0x1
-
-    invoke-static {p1, v1, v2}, Lcom/sec/samsung/gallery/util/SharedPreferenceManager;->loadBooleanKey(Landroid/content/Context;Ljava/lang/String;Z)Z
+    invoke-static {p1}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->getShareNotificationPrefValue(Landroid/content/Context;)Z
 
     move-result v1
 
-    invoke-interface {v0, p0, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    if-eqz v1, :cond_0
 
-    move-result v0
+    invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
+    move-result-object v1
+
+    invoke-interface {v1, p0, v0}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v0, 0x1
+
+    :cond_0
     return v0
 .end method

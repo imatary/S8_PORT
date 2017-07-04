@@ -175,11 +175,11 @@
 
 # virtual methods
 .method public execute(Lorg/puremvc/java/multicore/interfaces/INotification;)V
-    .locals 11
+    .locals 12
 
     const/4 v2, 0x4
 
-    const/4 v10, 0x0
+    const/4 v11, 0x0
 
     invoke-interface {p1}, Lorg/puremvc/java/multicore/interfaces/INotification;->getBody()Ljava/lang/Object;
 
@@ -191,7 +191,7 @@
 
     check-cast v8, [Ljava/lang/Object;
 
-    aget-object v1, v8, v10
+    aget-object v1, v8, v11
 
     check-cast v1, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -203,9 +203,9 @@
 
     const/4 v0, 0x2
 
-    aget-object v9, v8, v0
+    aget-object v10, v8, v0
 
-    check-cast v9, Ljava/lang/String;
+    check-cast v10, Ljava/lang/String;
 
     const/4 v0, 0x3
 
@@ -224,7 +224,7 @@
     check-cast v7, Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;
 
     :cond_0
-    if-eqz v7, :cond_2
+    if-eqz v7, :cond_3
 
     invoke-direct {p0, v7}, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd;->getCategoryNameForBixby(Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)Ljava/lang/String;
 
@@ -241,7 +241,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_7
 
     :cond_1
     const-string/jumbo v0, "VSRemoveFromResultCmd"
@@ -250,26 +250,12 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
+    :cond_2
     :goto_1
     return-void
 
-    :cond_2
-    const-string/jumbo v0, "People"
-
-    invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    move-object v3, v9
-
-    sget-object v5, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;->PEOPLE:Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;
-
-    goto :goto_0
-
     :cond_3
-    const-string/jumbo v0, "Other Documents"
+    const-string/jumbo v0, "People"
 
     invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -277,22 +263,14 @@
 
     if-eqz v0, :cond_4
 
-    const-string/jumbo v3, "Documents"
+    move-object v3, v10
 
-    sget-object v5, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;->OTHERS:Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;
+    sget-object v5, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;->PEOPLE:Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;
 
     goto :goto_0
 
     :cond_4
-    sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->IsNOS:Lcom/sec/samsung/gallery/features/FeatureNames;
-
-    invoke-static {v0}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_5
-
-    const-string/jumbo v0, "My tags"
+    const-string/jumbo v0, "Other Documents"
 
     invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -300,20 +278,43 @@
 
     if-eqz v0, :cond_5
 
-    move-object v3, v9
-
-    sget-object v5, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;->USER:Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;
-
-    goto :goto_0
-
-    :cond_5
-    move-object v3, v9
+    const-string/jumbo v3, "Documents"
 
     sget-object v5, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;->OTHERS:Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;
 
     goto :goto_0
 
+    :cond_5
+    sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->IsNOS:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v0}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    const-string/jumbo v0, "My tags"
+
+    invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    move-object v3, v10
+
+    sget-object v5, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;->USER:Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;
+
+    goto :goto_0
+
     :cond_6
+    move-object v3, v10
+
+    sget-object v5, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;->OTHERS:Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFrom;
+
+    goto :goto_0
+
+    :cond_7
     new-instance v0, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFromResultTask;
 
     invoke-virtual {v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getSelectionManager()Lcom/sec/android/gallery3d/ui/SelectionManager;
@@ -326,9 +327,29 @@
 
     sget-object v0, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd;->mTask:Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFromResultTask;
 
-    new-array v2, v10, [Ljava/lang/Void;
+    new-array v2, v11, [Ljava/lang/Void;
 
     invoke-virtual {v0, v2}, Lcom/sec/samsung/gallery/controller/VisualSearchRemoveFromResultCmd$RemoveFromResultTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+
+    invoke-static {v1}, Lcom/samsung/android/devicecog/gallery/DCUtils;->isExecuteFromBixby(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const v0, 0x7f0a05b1
+
+    new-array v2, v11, [Ljava/lang/Object;
+
+    invoke-static {v1, v0, v2}, Lcom/samsung/android/devicecog/gallery/controller/DCNlgManager;->getNlgRequestInfo(Landroid/content/Context;I[Ljava/lang/Object;)Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;
+
+    move-result-object v9
+
+    const-string/jumbo v0, "RemoveFromResult"
+
+    sget-object v2, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->SUCCESS:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
+
+    invoke-static {v1, v0, v2, v9}, Lcom/samsung/android/devicecog/gallery/DCUtils;->sendResponseDCState(Landroid/content/Context;Ljava/lang/String;Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;)V
 
     goto :goto_1
 .end method

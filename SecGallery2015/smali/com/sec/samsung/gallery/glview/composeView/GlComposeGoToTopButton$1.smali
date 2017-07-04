@@ -38,7 +38,6 @@
 
     iget v1, p1, Landroid/os/Message;->what:I
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->handleMessageOnUiThread(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;I)V
 
     return-void

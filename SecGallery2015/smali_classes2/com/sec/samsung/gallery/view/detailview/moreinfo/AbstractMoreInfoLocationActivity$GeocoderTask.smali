@@ -190,7 +190,6 @@
     const/4 v0, 0x1
 
     :goto_0
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AbstractMoreInfoLocationActivity;->mShowSaveMoreInfoDialog:Z
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AbstractMoreInfoLocationActivity;->access$402(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AbstractMoreInfoLocationActivity;Z)Z
 
     return-void

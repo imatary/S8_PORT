@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/HideAlbums$1;->this$0:Lcom/sec/samsung/gallery/controller/HideAlbums;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/HideAlbums;->dismissDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/HideAlbums;->access$000(Lcom/sec/samsung/gallery/controller/HideAlbums;)V
 
     return-void

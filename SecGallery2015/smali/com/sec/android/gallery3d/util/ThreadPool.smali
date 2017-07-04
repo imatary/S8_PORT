@@ -238,7 +238,6 @@
 
     check-cast p1, Lcom/sec/android/gallery3d/util/ThreadPool$Worker;
 
-    # getter for: Lcom/sec/android/gallery3d/util/ThreadPool$Worker;->mJob:Lcom/sec/android/gallery3d/util/ThreadPool$Job;
     invoke-static {p1}, Lcom/sec/android/gallery3d/util/ThreadPool$Worker;->access$100(Lcom/sec/android/gallery3d/util/ThreadPool$Worker;)Lcom/sec/android/gallery3d/util/ThreadPool$Job;
 
     move-result-object v4

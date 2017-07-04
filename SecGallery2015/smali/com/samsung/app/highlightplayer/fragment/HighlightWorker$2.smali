@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker$2;->this$0:Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;
 
-    # getter for: Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->mAtomicInteger:Ljava/util/concurrent/atomic/AtomicInteger;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->access$000(Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;)Ljava/util/concurrent/atomic/AtomicInteger;
 
     move-result-object v0
@@ -72,7 +71,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker$2;->this$0:Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;
 
-    # getter for: Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->mHighlightWorkListener:Lcom/samsung/app/highlightplayer/fragment/HighlightWorker$HighlightWorkerListener;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->access$100(Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;)Lcom/samsung/app/highlightplayer/fragment/HighlightWorker$HighlightWorkerListener;
 
     move-result-object v0
@@ -90,7 +88,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker$2;->this$0:Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;
 
-    # getter for: Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->mAtomicInteger:Ljava/util/concurrent/atomic/AtomicInteger;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->access$000(Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;)Ljava/util/concurrent/atomic/AtomicInteger;
 
     move-result-object v0
@@ -109,7 +106,6 @@
 
     iget-object v0, p0, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker$2;->this$0:Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;
 
-    # getter for: Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->mHighlightWorkListener:Lcom/samsung/app/highlightplayer/fragment/HighlightWorker$HighlightWorkerListener;
     invoke-static {v0}, Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;->access$100(Lcom/samsung/app/highlightplayer/fragment/HighlightWorker;)Lcom/samsung/app/highlightplayer/fragment/HighlightWorker$HighlightWorkerListener;
 
     move-result-object v0

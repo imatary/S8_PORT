@@ -43,7 +43,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoEditActionBar;->onActionBarItemSelected(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoEditActionBar;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoEditActionBar;I)V
 
     return-void

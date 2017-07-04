@@ -24,9 +24,13 @@
 
 .field public static final FAVORITE_VIEW_EXIT_SELECTION:Ljava/lang/String; = "FAVORITE_VIEW_EXIT_SELECTION"
 
+.field public static final GALLERY_NOTIFICATION_VIEW:Ljava/lang/String; = "GALLERY_NOTIFICATION_VIEW"
+
 .field public static final GALLERY_SEARCH_VIEW:Ljava/lang/String; = "GALLERY_SEARCH_VIEW"
 
 .field public static final GALLERY_SEARCH_VIEW_EXIT:Ljava/lang/String; = "GALLERY_SEARCH_VIEW_EXIT"
+
+.field public static final GALLERY_SHARED_FRIENDS_VIEW:Ljava/lang/String; = "GALLERY_SHARED_FRIENDS_VIEW"
 
 .field public static final MAP_VIEW:Ljava/lang/String; = "MAP_VIEW"
 

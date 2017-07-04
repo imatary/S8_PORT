@@ -60,7 +60,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->nManager:Landroid/app/NotificationManager;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$200(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/NotificationManager;
 
     move-result-object v0
@@ -71,12 +70,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/ve/export/ExportService;->prevProgress:I
     invoke-static {v0, v1}, Lcom/sec/android/app/ve/export/ExportService;->access$402(Lcom/sec/android/app/ve/export/ExportService;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->nManager:Landroid/app/NotificationManager;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$200(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/NotificationManager;
 
     move-result-object v0
@@ -87,7 +84,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->nManager:Landroid/app/NotificationManager;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$200(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/NotificationManager;
 
     move-result-object v0
@@ -109,7 +105,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->nManager:Landroid/app/NotificationManager;
     invoke-static {v5}, Lcom/sec/android/app/ve/export/ExportService;->access$200(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/NotificationManager;
 
     move-result-object v5
@@ -118,7 +113,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->nManager:Landroid/app/NotificationManager;
     invoke-static {v5}, Lcom/sec/android/app/ve/export/ExportService;->access$200(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/NotificationManager;
 
     move-result-object v5
@@ -159,7 +153,6 @@
 
     invoke-direct {v6, v7, v8, v10, v11}, Landroid/app/Notification;-><init>(ILjava/lang/CharSequence;J)V
 
-    # setter for: Lcom/sec/android/app/ve/export/ExportService;->notification:Landroid/app/Notification;
     invoke-static {v5, v6}, Lcom/sec/android/app/ve/export/ExportService;->access$502(Lcom/sec/android/app/ve/export/ExportService;Landroid/app/Notification;)Landroid/app/Notification;
 
     sget-object v5, Lcom/sec/android/app/ve/VEApp;->gExport:Lcom/sec/android/app/ve/export/Export;
@@ -233,12 +226,10 @@
 
     move-result-object v6
 
-    # setter for: Lcom/sec/android/app/ve/export/ExportService;->notification:Landroid/app/Notification;
     invoke-static {v5, v6}, Lcom/sec/android/app/ve/export/ExportService;->access$502(Lcom/sec/android/app/ve/export/ExportService;Landroid/app/Notification;)Landroid/app/Notification;
 
     iget-object v5, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->notification:Landroid/app/Notification;
     invoke-static {v5}, Lcom/sec/android/app/ve/export/ExportService;->access$500(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/Notification;
 
     move-result-object v5
@@ -251,7 +242,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->nManager:Landroid/app/NotificationManager;
     invoke-static {v5}, Lcom/sec/android/app/ve/export/ExportService;->access$200(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/NotificationManager;
 
     move-result-object v5
@@ -260,7 +250,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->nManager:Landroid/app/NotificationManager;
     invoke-static {v5}, Lcom/sec/android/app/ve/export/ExportService;->access$200(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/NotificationManager;
 
     move-result-object v5
@@ -269,7 +258,6 @@
 
     iget-object v7, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->notification:Landroid/app/Notification;
     invoke-static {v7}, Lcom/sec/android/app/ve/export/ExportService;->access$500(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/Notification;
 
     move-result-object v7
@@ -284,7 +272,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -293,7 +280,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -351,7 +337,6 @@
 
     check-cast v2, Landroid/app/NotificationManager;
 
-    # setter for: Lcom/sec/android/app/ve/export/ExportService;->nManager:Landroid/app/NotificationManager;
     invoke-static {v3, v2}, Lcom/sec/android/app/ve/export/ExportService;->access$202(Lcom/sec/android/app/ve/export/ExportService;Landroid/app/NotificationManager;)Landroid/app/NotificationManager;
 
     iget-object v2, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
@@ -382,7 +367,6 @@
 
     invoke-direct {v3, v4, v5, v6, v7}, Landroid/app/Notification;-><init>(ILjava/lang/CharSequence;J)V
 
-    # setter for: Lcom/sec/android/app/ve/export/ExportService;->onGoingNotification:Landroid/app/Notification;
     invoke-static {v2, v3}, Lcom/sec/android/app/ve/export/ExportService;->access$302(Lcom/sec/android/app/ve/export/ExportService;Landroid/app/Notification;)Landroid/app/Notification;
 
     new-instance v0, Landroid/content/Intent;
@@ -453,12 +437,10 @@
 
     move-result-object v3
 
-    # setter for: Lcom/sec/android/app/ve/export/ExportService;->onGoingNotification:Landroid/app/Notification;
     invoke-static {v2, v3}, Lcom/sec/android/app/ve/export/ExportService;->access$302(Lcom/sec/android/app/ve/export/ExportService;Landroid/app/Notification;)Landroid/app/Notification;
 
     iget-object v2, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->onGoingNotification:Landroid/app/Notification;
     invoke-static {v2}, Lcom/sec/android/app/ve/export/ExportService;->access$300(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/Notification;
 
     move-result-object v2
@@ -471,7 +453,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->onGoingNotification:Landroid/app/Notification;
     invoke-static {v2}, Lcom/sec/android/app/ve/export/ExportService;->access$300(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/Notification;
 
     move-result-object v2
@@ -484,7 +465,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->onGoingNotification:Landroid/app/Notification;
     invoke-static {v2}, Lcom/sec/android/app/ve/export/ExportService;->access$300(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/Notification;
 
     move-result-object v2
@@ -499,7 +479,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->onGoingNotification:Landroid/app/Notification;
     invoke-static {v4}, Lcom/sec/android/app/ve/export/ExportService;->access$300(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/Notification;
 
     move-result-object v4
@@ -519,7 +498,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -528,7 +506,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -562,7 +539,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -577,7 +553,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -599,7 +574,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -612,7 +586,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -633,7 +606,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -648,7 +620,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -675,19 +646,16 @@
 
     invoke-direct {v1}, Lcom/sec/android/app/ve/export/ExportInterface;-><init>()V
 
-    # setter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0, v1}, Lcom/sec/android/app/ve/export/ExportService;->access$002(Lcom/sec/android/app/ve/export/ExportService;Lcom/sec/android/app/ve/export/ExportInterface;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mAdapter:Lcom/sec/android/app/ve/export/ExportInterface$ExportStatusAdapter;
     invoke-static {v1}, Lcom/sec/android/app/ve/export/ExportService;->access$100(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface$ExportStatusAdapter;
 
     move-result-object v1
@@ -696,7 +664,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -718,7 +685,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -727,7 +693,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->mExpInterface:Lcom/sec/android/app/ve/export/ExportInterface;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$000(Lcom/sec/android/app/ve/export/ExportService;)Lcom/sec/android/app/ve/export/ExportInterface;
 
     move-result-object v0
@@ -761,7 +726,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->prevProgress:I
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$400(Lcom/sec/android/app/ve/export/ExportService;)I
 
     move-result v0
@@ -770,7 +734,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # setter for: Lcom/sec/android/app/ve/export/ExportService;->prevProgress:I
     invoke-static {v0, p1}, Lcom/sec/android/app/ve/export/ExportService;->access$402(Lcom/sec/android/app/ve/export/ExportService;I)I
 
     sget-object v0, Lcom/sec/android/app/ve/VEApp;->gExport:Lcom/sec/android/app/ve/export/Export;
@@ -793,12 +756,10 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/app/ve/export/ExportService;->onGoingNotification:Landroid/app/Notification;
     invoke-static {v0, v1}, Lcom/sec/android/app/ve/export/ExportService;->access$302(Lcom/sec/android/app/ve/export/ExportService;Landroid/app/Notification;)Landroid/app/Notification;
 
     iget-object v0, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->nManager:Landroid/app/NotificationManager;
     invoke-static {v0}, Lcom/sec/android/app/ve/export/ExportService;->access$200(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/NotificationManager;
 
     move-result-object v0
@@ -807,7 +768,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/ve/export/ExportService$1;->this$0:Lcom/sec/android/app/ve/export/ExportService;
 
-    # getter for: Lcom/sec/android/app/ve/export/ExportService;->onGoingNotification:Landroid/app/Notification;
     invoke-static {v2}, Lcom/sec/android/app/ve/export/ExportService;->access$300(Lcom/sec/android/app/ve/export/ExportService;)Landroid/app/Notification;
 
     move-result-object v2

@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->getCanvasSub()Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;)Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v0

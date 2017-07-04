@@ -49,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$4;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$600(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v1
@@ -60,7 +59,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$4;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$600(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v1
@@ -75,7 +73,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$4;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$700(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -98,7 +95,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$4;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$800(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

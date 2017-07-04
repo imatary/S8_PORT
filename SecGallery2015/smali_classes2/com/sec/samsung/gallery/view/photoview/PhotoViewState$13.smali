@@ -40,7 +40,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$13;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mIsMtpEnter:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$100(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Z
 
     move-result v1
@@ -62,7 +61,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$13;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->checkMediaAvailability()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$5400(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)V
 
     :cond_1
@@ -153,7 +151,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$13;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->postUpdateAlbumNameOfActionBar()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$5500(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)V
 
     return-void

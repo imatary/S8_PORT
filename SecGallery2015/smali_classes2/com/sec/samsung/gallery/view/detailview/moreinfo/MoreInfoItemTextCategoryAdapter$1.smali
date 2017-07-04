@@ -84,7 +84,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTextCategoryAdapter$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTextCategoryAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTextCategoryAdapter;->isEdited()Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTextCategoryAdapter;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTextCategoryAdapter;)Z
 
     move-result v3
@@ -92,7 +91,6 @@
     invoke-interface {v1, v3}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItem$EditListener;->onEdit(Z)V
 
     :cond_1
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTextCategoryAdapter;->mUseBlurBackground:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTextCategoryAdapter;->access$100()Z
 
     move-result v1
@@ -121,7 +119,6 @@
 
     move-result-object v4
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTextCategoryAdapter;->hideDeleteLayout(Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
     invoke-static {v1, v3, v4, p1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTextCategoryAdapter;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTextCategoryAdapter;Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
 
     :goto_1

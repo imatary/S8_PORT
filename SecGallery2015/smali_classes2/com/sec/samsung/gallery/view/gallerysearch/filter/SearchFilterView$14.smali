@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$14;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mFilterEdgeTop:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterEdgeView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$2100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterEdgeView;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$14;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mFilterEdgeTop:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterEdgeView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$2100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterEdgeView;
 
     move-result-object v0
@@ -58,7 +56,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$14;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mFilterEdgeBottom:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterEdgeView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$2300(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterEdgeView;
 
     move-result-object v0
@@ -67,7 +64,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$14;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mFilterEdgeBottom:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterEdgeView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$2300(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterEdgeView;
 
     move-result-object v0

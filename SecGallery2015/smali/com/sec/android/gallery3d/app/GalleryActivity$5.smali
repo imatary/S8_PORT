@@ -50,14 +50,12 @@
     :pswitch_0
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mIsActive:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$400(Lcom/sec/android/gallery3d/app/GalleryActivity;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->USE_MULTIWINDOW:Z
     invoke-static {}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$500()Z
 
     move-result v2
@@ -100,12 +98,10 @@
     :cond_2
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryActivity;->forceResume()V
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$600(Lcom/sec/android/gallery3d/app/GalleryActivity;)V
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # setter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mUpdateBackscreenInPauseState:Z
     invoke-static {v2, v4}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$702(Lcom/sec/android/gallery3d/app/GalleryActivity;Z)Z
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
@@ -135,7 +131,6 @@
     :pswitch_1
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mUpdateBackscreenInPauseState:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$700(Lcom/sec/android/gallery3d/app/GalleryActivity;)Z
 
     move-result v2
@@ -144,7 +139,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryActivity;->forcePause()V
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$800(Lcom/sec/android/gallery3d/app/GalleryActivity;)V
 
     goto :goto_0
@@ -152,7 +146,6 @@
     :pswitch_2
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mUpdateBackscreenInPauseState:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$700(Lcom/sec/android/gallery3d/app/GalleryActivity;)Z
 
     move-result v2
@@ -161,7 +154,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mGalleryCoverMode:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$900(Lcom/sec/android/gallery3d/app/GalleryActivity;)Lcom/sec/android/gallery3d/app/GalleryCoverMode;
 
     move-result-object v2
@@ -170,7 +162,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mGalleryCoverMode:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$900(Lcom/sec/android/gallery3d/app/GalleryActivity;)Lcom/sec/android/gallery3d/app/GalleryCoverMode;
 
     move-result-object v2
@@ -183,7 +174,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mGalleryCoverMode:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$900(Lcom/sec/android/gallery3d/app/GalleryActivity;)Lcom/sec/android/gallery3d/app/GalleryCoverMode;
 
     move-result-object v2
@@ -195,7 +185,6 @@
     :cond_4
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mFinishAtSecrureLock:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$1000(Lcom/sec/android/gallery3d/app/GalleryActivity;)Z
 
     move-result v2
@@ -224,7 +213,6 @@
     :pswitch_4
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # setter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mNeedUpdateBackscreenInPauseState:Z
     invoke-static {v2, v4}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$1102(Lcom/sec/android/gallery3d/app/GalleryActivity;Z)Z
 
     goto/16 :goto_0
@@ -234,12 +222,10 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mIsStartViewSkip:Z
     invoke-static {v3}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$1200(Lcom/sec/android/gallery3d/app/GalleryActivity;)Z
 
     move-result v3
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryActivity;->checkRequiredPermissions(ZZ)Z
     invoke-static {v2, v4, v3}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$1300(Lcom/sec/android/gallery3d/app/GalleryActivity;ZZ)Z
 
     goto/16 :goto_0
@@ -268,7 +254,6 @@
     goto/16 :goto_0
 
     :pswitch_7
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->IS_TABLET:Z
     invoke-static {}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$1400()Z
 
     move-result v2
@@ -299,7 +284,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryActivity;->updateInPauseStateForTabletMWSwitch()V
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$1500(Lcom/sec/android/gallery3d/app/GalleryActivity;)V
 
     goto/16 :goto_0
@@ -307,7 +291,6 @@
     :cond_5
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$5;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryActivity;->updateInPauseStateDelayed()V
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$1600(Lcom/sec/android/gallery3d/app/GalleryActivity;)V
 
     goto/16 :goto_0

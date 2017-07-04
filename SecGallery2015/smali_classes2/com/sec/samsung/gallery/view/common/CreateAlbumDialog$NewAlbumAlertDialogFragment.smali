@@ -323,7 +323,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v6
@@ -332,7 +331,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v6
@@ -395,7 +393,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v6
@@ -404,7 +401,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v6
@@ -471,7 +467,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v6
@@ -480,7 +475,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v6
@@ -512,7 +506,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTitleList:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$2800(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -521,7 +514,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTitleList:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$2800(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -534,7 +526,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTitleList:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$2800(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -553,7 +544,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v0
@@ -562,7 +552,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v0
@@ -713,7 +702,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v1
@@ -722,7 +710,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v1
@@ -759,7 +746,6 @@
     :cond_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mPreviousName:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1200(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Ljava/lang/String;
 
     move-result-object v0
@@ -772,12 +758,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mShownError:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$302(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -796,7 +780,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v0
@@ -805,7 +788,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$400(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v0
@@ -1023,7 +1005,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mSDCardRemovedReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$600(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
@@ -1095,7 +1076,6 @@
 
     check-cast v13, Landroid/support/design/widget/TextInputLayout;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v14, v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$402(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Landroid/support/design/widget/TextInputLayout;)Landroid/support/design/widget/TextInputLayout;
 
     move-object/from16 v0, p0
@@ -1110,14 +1090,12 @@
 
     check-cast v13, Landroid/widget/EditText;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v14, v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$502(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Landroid/widget/EditText;)Landroid/widget/EditText;
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1130,7 +1108,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1141,7 +1118,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1164,7 +1140,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTooLongToast:Landroid/widget/Toast;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$700(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/Toast;
 
     move-result-object v13
@@ -1193,7 +1168,6 @@
 
     move-result-object v16
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->USE_DREAM_CHANNEL_VIEW_UX:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$800()Z
 
     move-result v13
@@ -1241,7 +1215,6 @@
 
     move-result-object v13
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTooLongToast:Landroid/widget/Toast;
     invoke-static {v14, v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$702(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Landroid/widget/Toast;)Landroid/widget/Toast;
 
     :cond_0
@@ -1274,7 +1247,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1307,7 +1279,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1318,7 +1289,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1329,7 +1299,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1342,7 +1311,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mPreviousName:Ljava/lang/String;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1200(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Ljava/lang/String;
 
     move-result-object v13
@@ -1357,7 +1325,6 @@
 
     iget-object v14, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v14}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v14
@@ -1370,7 +1337,6 @@
 
     move-result-object v14
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mPreviousName:Ljava/lang/String;
     invoke-static {v13, v14}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1202(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_2
@@ -1394,7 +1360,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1407,7 +1372,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1430,7 +1394,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1447,7 +1410,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1480,7 +1442,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mOperationType:I
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1700(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)I
 
     move-result v13
@@ -1493,7 +1454,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mOperationType:I
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1700(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)I
 
     move-result v13
@@ -1549,7 +1509,6 @@
 
     const/4 v14, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mNewAlbumDialogIsReady:Z
     invoke-static {v13, v14}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1802(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Z)Z
 
     move-object/from16 v0, p0
@@ -1569,7 +1528,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v13
@@ -1714,7 +1672,6 @@
 
     const/4 v14, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->setStorageForNewAlbum(Landroid/content/Context;Z)V
     invoke-static {v13, v14}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$200(Landroid/content/Context;Z)V
 
     goto/16 :goto_0
@@ -1775,7 +1732,6 @@
 
     move-result-object v14
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mTooLongToast:Landroid/widget/Toast;
     invoke-static {v13, v14}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$702(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Landroid/widget/Toast;)Landroid/widget/Toast;
 
     goto/16 :goto_2
@@ -1785,7 +1741,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mAlbumName:Ljava/lang/String;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1000(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Ljava/lang/String;
 
     move-result-object v13
@@ -1796,7 +1751,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mAlbumName:Ljava/lang/String;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1000(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Ljava/lang/String;
 
     move-result-object v10
@@ -1809,7 +1763,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->getSuggestedName()Ljava/lang/String;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1100(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Ljava/lang/String;
 
     move-result-object v10
@@ -1826,7 +1779,6 @@
 
     iget-object v13, v0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mOperationType:I
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1700(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)I
 
     move-result v13
@@ -1882,7 +1834,6 @@
 
     const/4 v14, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mNewAlbumDialogIsReady:Z
     invoke-static {v13, v14}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1802(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Z)Z
 
     move-object/from16 v0, p0
@@ -1963,7 +1914,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mSDCardRemovedReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$600(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/content/BroadcastReceiver;
 
     move-result-object v2
@@ -2002,7 +1952,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mNewAlbumDialogIsReady:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$1802(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Z)Z
 
     return-void
@@ -2065,7 +2014,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mReceiveTime:J
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)J
 
     move-result-wide v6
@@ -2080,13 +2028,11 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->isSipVisible:Z
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3302(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Z)Z
 
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mSipReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3600(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/content/BroadcastReceiver;
 
     move-result-object v2
@@ -2097,7 +2043,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mSipReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3600(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/content/BroadcastReceiver;
 
     move-result-object v3
@@ -2109,14 +2054,12 @@
 
     const/4 v3, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mSipReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3602(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Landroid/content/BroadcastReceiver;)Landroid/content/BroadcastReceiver;
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->alertEditText:Landroid/widget/EditText;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$500(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Landroid/widget/EditText;
 
     move-result-object v3
@@ -2125,7 +2068,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->hideSoftInput(Landroid/os/IBinder;)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$000(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;Landroid/os/IBinder;)V
 
     return-void
@@ -2143,7 +2085,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mDialogFragment:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$2900(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;
 
     move-result-object v2
@@ -2154,7 +2095,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->isItemExist()Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3000(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Z
 
     move-result v2
@@ -2179,7 +2119,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->mDialogFragment:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$2900(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;
 
     move-result-object v2
@@ -2193,7 +2132,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->existPrivateItemsOnly()Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3100(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Z
 
     move-result v2
@@ -2230,12 +2168,10 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->setSipBroadcastReceiver()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3200(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog$NewAlbumAlertDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->isSipVisible:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;->access$3300(Lcom/sec/samsung/gallery/view/common/CreateAlbumDialog;)Z
 
     move-result v2

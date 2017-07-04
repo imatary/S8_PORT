@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->access$000(Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v1
@@ -79,7 +78,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->updateLikeInfo(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;->access$100(Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)V
 
     goto :goto_0

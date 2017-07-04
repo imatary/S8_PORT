@@ -68,7 +68,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/comment/DeleteCommentTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/comment/DeleteCommentTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/comment/DeleteCommentTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/SocialCommonListener;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/comment/DeleteCommentTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/comment/DeleteCommentTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/SocialCommonListener;
 
     move-result-object v2
@@ -89,7 +88,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/comment/DeleteCommentTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/comment/DeleteCommentTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/comment/DeleteCommentTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/SocialCommonListener;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/comment/DeleteCommentTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/comment/DeleteCommentTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/SocialCommonListener;
 
     move-result-object v2

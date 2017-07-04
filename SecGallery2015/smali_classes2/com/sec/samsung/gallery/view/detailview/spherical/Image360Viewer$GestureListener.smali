@@ -46,7 +46,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$GestureListener;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mRelativeLayout:Landroid/widget/RelativeLayout;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$2400(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Landroid/widget/RelativeLayout;
 
     move-result-object v1

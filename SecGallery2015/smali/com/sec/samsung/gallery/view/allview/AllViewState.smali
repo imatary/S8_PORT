@@ -2550,7 +2550,6 @@
 
     iget v1, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState;->mCurrentLayout:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/allview/AllViewState$AllLayoutConfig;->setModeLevel(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/allview/AllViewState$AllLayoutConfig;->access$2300(Lcom/sec/samsung/gallery/view/allview/AllViewState$AllLayoutConfig;I)V
 
     iget v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState;->mCurrentLayout:I

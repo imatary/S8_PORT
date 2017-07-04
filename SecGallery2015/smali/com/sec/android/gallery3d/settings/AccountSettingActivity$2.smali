@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/AccountSettingActivity$2;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingActivity;
 
-    # setter for: Lcom/sec/android/gallery3d/settings/AccountSettingActivity;->mIsMultiWindow:Z
     invoke-static {v0, p1}, Lcom/sec/android/gallery3d/settings/AccountSettingActivity;->access$002(Lcom/sec/android/gallery3d/settings/AccountSettingActivity;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/AccountSettingActivity$2;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingActivity;
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/AccountSettingActivity$2;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingActivity;->setPaddingForTablet()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/AccountSettingActivity;->access$100(Lcom/sec/android/gallery3d/settings/AccountSettingActivity;)V
 
     :cond_0

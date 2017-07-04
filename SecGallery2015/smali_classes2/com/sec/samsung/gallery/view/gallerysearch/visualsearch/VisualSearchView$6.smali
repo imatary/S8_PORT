@@ -71,7 +71,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$6;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0
@@ -80,7 +79,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$6;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0
@@ -122,7 +120,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$6;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0
@@ -131,7 +128,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$6;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0
@@ -149,7 +145,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$6;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0
@@ -158,7 +153,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$6;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mMoveListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/common/SearchViewMoveListener;
 
     move-result-object v0

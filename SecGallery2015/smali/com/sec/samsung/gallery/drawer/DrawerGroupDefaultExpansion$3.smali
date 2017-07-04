@@ -45,7 +45,6 @@
     :pswitch_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion$3;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->checkLocalRelatedItem()Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->access$200(Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;)Z
 
     move-result v0
@@ -55,7 +54,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion$3;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->mHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->access$600(Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;)Landroid/os/Handler;
 
     move-result-object v2
@@ -69,14 +67,12 @@
     :pswitch_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion$3;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->checkFavoritesItem()Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->access$300(Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;)Z
 
     move-result v2
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion$3;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->checkChannelItem()Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->access$400(Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;)Z
 
     move-result v3
@@ -85,7 +81,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion$3;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->checkDeviceItem()Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->access$500(Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;)Z
 
     move-result v3
@@ -97,14 +92,12 @@
     :pswitch_2
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion$3;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->checkLocalRelatedItem()Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->access$200(Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;)Z
 
     move-result v2
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion$3;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->checkFavoritesItem()Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->access$300(Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;)Z
 
     move-result v3
@@ -113,7 +106,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion$3;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->checkChannelItem()Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->access$400(Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;)Z
 
     move-result v3
@@ -122,7 +114,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion$3;->this$0:Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->checkDeviceItem()Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;->access$500(Lcom/sec/samsung/gallery/drawer/DrawerGroupDefaultExpansion;)Z
 
     move-result v3

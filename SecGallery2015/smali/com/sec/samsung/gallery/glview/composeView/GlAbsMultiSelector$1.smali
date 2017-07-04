@@ -47,12 +47,10 @@
 .method public compare(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
     .locals 2
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v0
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {p2}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v1
@@ -65,12 +63,10 @@
     return v0
 
     :cond_0
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v0
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {p2}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v1

@@ -445,7 +445,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitionsAnimationChn;->state:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitionsAnimationChn$AnimatedTransitionState;
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitionsAnimationChn$AnimatedTransitionState;->getPositions()[Lcom/amap/api/maps2d/model/LatLng;
     invoke-static {v2}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitionsAnimationChn$AnimatedTransitionState;->access$100(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterTransitionsAnimationChn$AnimatedTransitionState;)[Lcom/amap/api/maps2d/model/LatLng;
 
     move-result-object v1

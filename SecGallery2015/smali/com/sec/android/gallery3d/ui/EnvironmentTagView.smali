@@ -812,15 +812,15 @@
 .method private setIconArray()V
     .locals 7
 
-    const v6, 0x7f020372
+    const v6, 0x7f020374
 
-    const v5, 0x7f020370
+    const v5, 0x7f020372
 
-    const v2, 0x7f02036a
+    const v2, 0x7f02036c
 
-    const v4, 0x7f020371
+    const v4, 0x7f020373
 
-    const v3, 0x7f020363
+    const v3, 0x7f020365
 
     new-instance v0, Landroid/util/SparseIntArray;
 
@@ -886,7 +886,7 @@
 
     const/16 v1, 0xb
 
-    const v2, 0x7f020366
+    const v2, 0x7f020368
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -900,7 +900,7 @@
 
     const/16 v1, 0xd
 
-    const v2, 0x7f02036c
+    const v2, 0x7f02036e
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -908,7 +908,7 @@
 
     const/16 v1, 0xe
 
-    const v2, 0x7f02036c
+    const v2, 0x7f02036e
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -916,7 +916,7 @@
 
     const/16 v1, 0xf
 
-    const v2, 0x7f020373
+    const v2, 0x7f020375
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -924,7 +924,7 @@
 
     const/16 v1, 0x10
 
-    const v2, 0x7f02036d
+    const v2, 0x7f02036f
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -932,7 +932,7 @@
 
     const/16 v1, 0x11
 
-    const v2, 0x7f02036d
+    const v2, 0x7f02036f
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -940,7 +940,7 @@
 
     const/16 v1, 0x12
 
-    const v2, 0x7f02036e
+    const v2, 0x7f020370
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -948,7 +948,7 @@
 
     const/16 v1, 0x13
 
-    const v2, 0x7f020365
+    const v2, 0x7f020367
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -956,7 +956,7 @@
 
     const/16 v1, 0x14
 
-    const v2, 0x7f02036b
+    const v2, 0x7f02036d
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -964,7 +964,7 @@
 
     const/16 v1, 0x15
 
-    const v2, 0x7f02036b
+    const v2, 0x7f02036d
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -984,7 +984,7 @@
 
     const/16 v1, 0x18
 
-    const v2, 0x7f020368
+    const v2, 0x7f02036a
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1004,7 +1004,7 @@
 
     const/16 v1, 0x1d
 
-    const v2, 0x7f02036f
+    const v2, 0x7f020371
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1012,7 +1012,7 @@
 
     const/16 v1, 0x1e
 
-    const v2, 0x7f020367
+    const v2, 0x7f020369
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1020,7 +1020,7 @@
 
     const/16 v1, 0x1f
 
-    const v2, 0x7f020364
+    const v2, 0x7f020366
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1028,7 +1028,7 @@
 
     const/16 v1, 0x20
 
-    const v2, 0x7f020374
+    const v2, 0x7f020376
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1036,7 +1036,7 @@
 
     const/16 v1, 0x21
 
-    const v2, 0x7f020362
+    const v2, 0x7f020364
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1044,7 +1044,7 @@
 
     const/16 v1, 0x22
 
-    const v2, 0x7f020369
+    const v2, 0x7f02036b
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1088,7 +1088,7 @@
 
     const/16 v1, 0x29
 
-    const v2, 0x7f020373
+    const v2, 0x7f020375
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1096,7 +1096,7 @@
 
     const/16 v1, 0x2a
 
-    const v2, 0x7f020373
+    const v2, 0x7f020375
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1104,7 +1104,7 @@
 
     const/16 v1, 0x2b
 
-    const v2, 0x7f020365
+    const v2, 0x7f020367
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1120,15 +1120,15 @@
 .method private setIconArrayMass()V
     .locals 7
 
-    const v6, 0x7f020370
+    const v6, 0x7f020372
 
-    const v2, 0x7f020372
+    const v2, 0x7f020374
 
-    const v5, 0x7f02036e
+    const v5, 0x7f020370
 
-    const v4, 0x7f020371
+    const v4, 0x7f020373
 
-    const v3, 0x7f020363
+    const v3, 0x7f020365
 
     new-instance v0, Landroid/util/SparseIntArray;
 
@@ -1158,7 +1158,7 @@
 
     const/16 v1, 0x65
 
-    const v2, 0x7f02036a
+    const v2, 0x7f02036c
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1166,7 +1166,7 @@
 
     const/16 v1, 0x66
 
-    const v2, 0x7f02036c
+    const v2, 0x7f02036e
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1174,7 +1174,7 @@
 
     const/16 v1, 0x68
 
-    const v2, 0x7f02036b
+    const v2, 0x7f02036d
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1224,7 +1224,7 @@
 
     const/16 v1, 0x12f
 
-    const v2, 0x7f02036f
+    const v2, 0x7f020371
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1232,7 +1232,7 @@
 
     const/16 v1, 0x15e
 
-    const v2, 0x7f020373
+    const v2, 0x7f020375
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1240,7 +1240,7 @@
 
     const/16 v1, 0x1ae
 
-    const v2, 0x7f020365
+    const v2, 0x7f020367
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
@@ -1272,7 +1272,7 @@
 
     const/16 v1, 0x226
 
-    const v2, 0x7f020367
+    const v2, 0x7f020369
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 

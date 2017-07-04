@@ -36,14 +36,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->mBottomOffset:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$000(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;)I
 
     move-result v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->mTopOffset:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$100(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;)I
 
     move-result v1
@@ -64,14 +62,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->mBottomOffset:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$000(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;)I
 
     move-result v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->mTopOffset:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$100(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;)I
 
     move-result v1
@@ -112,7 +108,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->setStateInternal(I)V
     invoke-static {v0, v3}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$400(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;I)V
 
     :cond_0
@@ -130,7 +125,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->shouldHide(Landroid/view/View;F)Z
     invoke-static {v2, p1, p3}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$200(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;Landroid/view/View;F)Z
 
     move-result v2
@@ -139,7 +133,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->mBottomOffset:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$000(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;)I
 
     move-result v1
@@ -149,7 +142,6 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->mViewDragHelper:Landroid/support/v4/widget/ViewDragHelper;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$300(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;)Landroid/support/v4/widget/ViewDragHelper;
 
     move-result-object v2
@@ -176,7 +168,6 @@
 
     const/4 v3, 0x4
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->setStateInternal(I)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$400(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;I)V
 
     :goto_1
@@ -185,7 +176,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->mTopOffset:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$100(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;)I
 
     move-result v1
@@ -197,7 +187,6 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->setStateInternal(I)V
     invoke-static {v2, v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;->access$400(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsBottomSheetBehavior;I)V
 
     goto :goto_1

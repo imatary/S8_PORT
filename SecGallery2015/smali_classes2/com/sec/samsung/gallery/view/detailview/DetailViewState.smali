@@ -2466,7 +2466,23 @@
     return-void
 .end method
 
-.method static synthetic access$22500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Ljava/lang/String;
+.method static synthetic access$22500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)I
+    .locals 1
+
+    iget v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mLastSystemUiVis:I
+
+    return v0
+.end method
+
+.method static synthetic access$22502(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mLastSystemUiVis:I
+
+    return p1
+.end method
+
+.method static synthetic access$22600(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mOriginalSetPathString:Ljava/lang/String;
@@ -2474,7 +2490,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$22600(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+.method static synthetic access$22700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->finishDetailView()V
@@ -2482,7 +2498,7 @@
     return-void
 .end method
 
-.method static synthetic access$22700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;[Ljava/lang/String;)V
+.method static synthetic access$22800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;[Ljava/lang/String;)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->startNearbyViewState(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;[Ljava/lang/String;)V
@@ -2490,18 +2506,10 @@
     return-void
 .end method
 
-.method static synthetic access$22800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+.method static synthetic access$22900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->startMoreInfo()V
-
-    return-void
-.end method
-
-.method static synthetic access$22900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;II)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->handleMoreInfoEditMode(II)V
 
     return-void
 .end method
@@ -2514,7 +2522,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$23000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/utils/RecoverDataMPSM;
+.method static synthetic access$23000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;II)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->handleMoreInfoEditMode(II)V
+
+    return-void
+.end method
+
+.method static synthetic access$23100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/utils/RecoverDataMPSM;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mRecoverDataMPSM:Lcom/sec/samsung/gallery/view/utils/RecoverDataMPSM;
@@ -2522,20 +2538,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$23100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+.method static synthetic access$23200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->unregisterSIPBroadcastReceiver()V
 
     return-void
-.end method
-
-.method static synthetic access$23200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
 .end method
 
 .method static synthetic access$23300(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -2546,15 +2554,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$23400(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->setFullScreenMode(Z)V
-
-    return-void
-.end method
-
-.method static synthetic access$23500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$23400(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -2562,7 +2562,23 @@
     return-object v0
 .end method
 
-.method static synthetic access$23600(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
+.method static synthetic access$23500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->setFullScreenMode(Z)V
+
+    return-void
+.end method
+
+.method static synthetic access$23600(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$23700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFirstTimePhotoAvailable:Z
@@ -2570,7 +2586,7 @@
     return v0
 .end method
 
-.method static synthetic access$23602(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)Z
+.method static synthetic access$23702(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFirstTimePhotoAvailable:Z
@@ -2578,7 +2594,7 @@
     return p1
 .end method
 
-.method static synthetic access$23700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)I
+.method static synthetic access$23800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->imageSlideDirection:I
@@ -2586,7 +2602,7 @@
     return v0
 .end method
 
-.method static synthetic access$23702(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;I)I
+.method static synthetic access$23802(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;I)I
     .locals 0
 
     iput p1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->imageSlideDirection:I
@@ -2594,20 +2610,12 @@
     return p1
 .end method
 
-.method static synthetic access$23800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+.method static synthetic access$23900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->removeGlAccessibilityFocus()V
 
     return-void
-.end method
-
-.method static synthetic access$23900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Landroid/content/Intent;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mResultIntent:Landroid/content/Intent;
-
-    return-object v0
 .end method
 
 .method static synthetic access$2400(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -2618,7 +2626,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$24000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;)V
+.method static synthetic access$24000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Landroid/content/Intent;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mResultIntent:Landroid/content/Intent;
+
+    return-object v0
+.end method
+
+.method static synthetic access$24100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->updateCurrentPhoto(Lcom/sec/android/gallery3d/data/MediaItem;)V
@@ -2626,7 +2642,7 @@
     return-void
 .end method
 
-.method static synthetic access$24100()Z
+.method static synthetic access$24200()Z
     .locals 1
 
     sget-boolean v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->FEATURE_IS_DUALSCREEN:Z
@@ -2634,7 +2650,7 @@
     return v0
 .end method
 
-.method static synthetic access$24200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+.method static synthetic access$24300(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->updateBars()V
@@ -2642,7 +2658,7 @@
     return-void
 .end method
 
-.method static synthetic access$24302(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;J)J
+.method static synthetic access$24402(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;J)J
     .locals 1
 
     iput-wide p1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mAgifVersion:J
@@ -2650,7 +2666,7 @@
     return-wide p1
 .end method
 
-.method static synthetic access$24400(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;ILandroid/content/Intent;)V
+.method static synthetic access$24500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;ILandroid/content/Intent;)V
     .locals 0
 
     invoke-virtual {p0, p1, p2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->setStateResult(ILandroid/content/Intent;)V
@@ -2658,7 +2674,7 @@
     return-void
 .end method
 
-.method static synthetic access$24500()Z
+.method static synthetic access$24600()Z
     .locals 1
 
     sget-boolean v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->FEATURE_USE_VISION_INTELLIGENCE:Z
@@ -2666,7 +2682,7 @@
     return v0
 .end method
 
-.method static synthetic access$24602(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+.method static synthetic access$24702(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mVisionHelpPopupFirst:Ljava/lang/Boolean;
@@ -2674,7 +2690,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$24700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$24800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -2682,7 +2698,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$24800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
+.method static synthetic access$24900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mIsNeedUpdateFromQuickView:Z
@@ -2690,20 +2706,12 @@
     return v0
 .end method
 
-.method static synthetic access$24802(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)Z
+.method static synthetic access$24902(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mIsNeedUpdateFromQuickView:Z
 
     return p1
-.end method
-
-.method static synthetic access$24900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->setCurrentPhotoByQuickViewUpdate()V
-
-    return-void
 .end method
 
 .method static synthetic access$2500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -2714,7 +2722,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$25000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
+.method static synthetic access$25000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->setCurrentPhotoByQuickViewUpdate()V
+
+    return-void
+.end method
+
+.method static synthetic access$25100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mChannelAlbumSet:Lcom/sec/android/gallery3d/data/ChannelAlbum;
@@ -2722,7 +2738,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$25100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;)Ljava/lang/String;
+.method static synthetic access$25200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;)Ljava/lang/String;
     .locals 1
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->getUniquePath(Lcom/sec/android/gallery3d/data/MediaItem;)Ljava/lang/String;
@@ -2732,18 +2748,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$25200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Ljava/lang/String;
+.method static synthetic access$25300(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mMimeType:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method static synthetic access$25300(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -2756,7 +2764,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$25500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
+.method static synthetic access$25500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$25600(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mIsfromCameraViewContentOn:Z
@@ -2764,7 +2780,7 @@
     return v0
 .end method
 
-.method static synthetic access$25502(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)Z
+.method static synthetic access$25602(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mIsfromCameraViewContentOn:Z
@@ -2772,7 +2788,7 @@
     return p1
 .end method
 
-.method static synthetic access$25600(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+.method static synthetic access$25700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->restartMoreInfo()V
@@ -2780,7 +2796,7 @@
     return-void
 .end method
 
-.method static synthetic access$25700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+.method static synthetic access$25800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->closeMoreInfoOnUiThread()V
@@ -2788,18 +2804,10 @@
     return-void
 .end method
 
-.method static synthetic access$25800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/ShowBarManager;
+.method static synthetic access$25900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/ShowBarManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mShowBarManager:Lcom/sec/samsung/gallery/view/detailview/ShowBarManager;
-
-    return-object v0
-.end method
-
-.method static synthetic access$25900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCameraQuickViewTimer:Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;
 
     return-object v0
 .end method
@@ -2812,10 +2820,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$26000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$26000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCameraQuickViewTimer:Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;
 
     return-object v0
 .end method
@@ -2828,7 +2836,15 @@
     return-object p1
 .end method
 
-.method static synthetic access$26100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
+.method static synthetic access$26100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$26200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/data/MediaItem;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mAutoPlayItem:Lcom/sec/android/gallery3d/data/MediaItem;
@@ -2836,20 +2852,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$26102(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;)Lcom/sec/android/gallery3d/data/MediaItem;
+.method static synthetic access$26202(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;)Lcom/sec/android/gallery3d/data/MediaItem;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mAutoPlayItem:Lcom/sec/android/gallery3d/data/MediaItem;
 
     return-object p1
-.end method
-
-.method static synthetic access$26200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
 .end method
 
 .method static synthetic access$26300(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -2916,28 +2924,20 @@
     return-object v0
 .end method
 
-.method static synthetic access$27000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Ljava/lang/String;)V
+.method static synthetic access$27000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$27100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Ljava/lang/String;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->startSoundScene(Ljava/lang/String;)V
 
     return-void
-.end method
-
-.method static synthetic access$27100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)I
-    .locals 1
-
-    iget v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mLastSystemUiVis:I
-
-    return v0
-.end method
-
-.method static synthetic access$27102(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mLastSystemUiVis:I
-
-    return p1
 .end method
 
 .method static synthetic access$27200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;
@@ -5482,9 +5482,9 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$25;
+    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$24;
 
-    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$25;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$24;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -6436,9 +6436,9 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$38;
+    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$37;
 
-    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$38;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$37;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -6709,9 +6709,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$50;
+    new-instance v2, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$49;
 
-    invoke-direct {v2, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$50;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v2, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$49;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-direct {v0, v1, v2}, Lcom/sec/android/gallery3d/devicetotv/DeviceToTVUtil;-><init>(Lcom/sec/android/gallery3d/interfaces/LibraryContext;Lcom/sec/android/gallery3d/devicetotv/DeviceToTVUtil$ShowDeviceToTVListener;)V
 
@@ -6840,7 +6840,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v3, 0x7f0a07cc
+    const v3, 0x7f0a07d1
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -6862,7 +6862,7 @@
     :cond_2
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v3, 0x7f0a07ca
+    const v3, 0x7f0a07cf
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -6911,7 +6911,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v4, 0x7f0a0849
+    const v4, 0x7f0a0857
 
     new-array v5, v5, [Ljava/lang/Object;
 
@@ -8009,9 +8009,9 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$43;
+    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$42;
 
-    invoke-direct {v1, p0, p2, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$43;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;I)V
+    invoke-direct {v1, p0, p2, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$42;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;I)V
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -8235,7 +8235,7 @@
 
     if-eqz v0, :cond_2
 
-    const v1, 0x7f0a084b
+    const v1, 0x7f0a0859
 
     :goto_1
     new-array v5, v5, [Ljava/lang/Object;
@@ -8249,7 +8249,7 @@
     goto :goto_0
 
     :cond_2
-    const v1, 0x7f0a084d
+    const v1, 0x7f0a085b
 
     goto :goto_1
 
@@ -8260,7 +8260,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v4, 0x7f0a0849
+    const v4, 0x7f0a0857
 
     new-array v5, v5, [Ljava/lang/Object;
 
@@ -9928,9 +9928,9 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$27;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$26;
 
-    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$27;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$26;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v2, v3}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -10878,9 +10878,9 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCameraQuickViewTimer:Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$45;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$44;
 
-    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$45;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$44;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v2, v3}, Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer;->setOnFinishedListener(Lcom/sec/samsung/gallery/view/detailview/CameraQuickViewTimer$OnFinishedListener;)V
 
@@ -12389,9 +12389,9 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$48;
+    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$47;
 
-    invoke-direct {v1, p0, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$48;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)V
+    invoke-direct {v1, p0, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$47;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)V
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -12603,9 +12603,9 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$49;
+    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$48;
 
-    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$49;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$48;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -12856,9 +12856,9 @@
 
     if-nez v1, :cond_0
 
-    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$51;
+    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$50;
 
-    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$51;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$50;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     iput-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mSIPReceiver:Landroid/content/BroadcastReceiver;
 
@@ -12953,6 +12953,48 @@
     invoke-virtual {v0, v1}, Lcom/sec/samsung/gallery/view/accessibility/GlAccessibilityNodeProvider;->setFocusedIndex(I)V
 
     return-void
+.end method
+
+.method private resetDisplayRotation()V
+    .locals 4
+
+    const/4 v3, 0x1
+
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    const-string/jumbo v2, "window"
+
+    invoke-virtual {v1, v2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/WindowManager;
+
+    invoke-interface {v1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/view/Display;->getRotation()I
+
+    move-result v0
+
+    if-ne v0, v3, :cond_0
+
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->setDisplayRotation(I)V
+
+    :goto_0
+    return-void
+
+    :cond_0
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+
+    invoke-virtual {v1, v3}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->setDisplayRotation(I)V
+
+    goto :goto_0
 .end method
 
 .method private resetHasContentValue()V
@@ -13633,9 +13675,9 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v2, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$44;
+    new-instance v2, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$43;
 
-    invoke-direct {v2, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$44;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v2, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$43;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {p1}, Lcom/sec/android/gallery3d/data/MediaSet;->getTotalMediaItemCount()I
 
@@ -15456,9 +15498,9 @@
 
     new-instance v2, Landroid/os/Handler;
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$37;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$36;
 
-    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$37;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$36;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-direct {v2, v3}, Landroid/os/Handler;-><init>(Landroid/os/Handler$Callback;)V
 
@@ -15518,9 +15560,9 @@
     if-eqz v4, :cond_0
 
     :goto_0
-    new-instance v4, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$32;
+    new-instance v4, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$31;
 
-    invoke-direct {v4, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$32;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v4, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$31;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v2, v3, v1, v4}, Landroid/app/AlertDialog$Builder;->setSingleChoiceItems(IILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -15528,9 +15570,9 @@
 
     const v2, 0x7f0a0080
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$31;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$30;
 
-    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$31;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$30;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -15611,9 +15653,9 @@
 
     const v2, 0x7f0a037e
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$40;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$39;
 
-    invoke-direct {v3, p0, p2, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$40;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;I)V
+    invoke-direct {v3, p0, p2, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$39;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;I)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -15621,9 +15663,9 @@
 
     const v2, 0x7f0a0080
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$39;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$38;
 
-    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$39;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$38;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -15655,9 +15697,9 @@
 
     const v2, 0x7f0a037e
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$42;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$41;
 
-    invoke-direct {v3, p0, p2, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$42;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;I)V
+    invoke-direct {v3, p0, p2, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$41;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/data/MediaItem;I)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -15665,9 +15707,9 @@
 
     const v2, 0x7f0a0080
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$41;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$40;
 
-    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$41;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$40;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -15699,9 +15741,9 @@
 
     const v2, 0x7f0a0080
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$30;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$29;
 
-    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$30;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$29;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -15709,9 +15751,9 @@
 
     const v2, 0x7f0a00d8
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$29;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$28;
 
-    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$29;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$28;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -15719,9 +15761,9 @@
 
     const v2, 0x7f0a0386
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$28;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$27;
 
-    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$28;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v3, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$27;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -16040,9 +16082,9 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mAutoAdjust:Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;
 
-    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$22;
+    new-instance v3, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$21;
 
-    invoke-direct {v3, p0, v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$22;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)V
+    invoke-direct {v3, p0, v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$21;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)V
 
     invoke-virtual {v2, v3}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjust;->setProgressListener(Lcom/sec/samsung/gallery/view/detailview/AutoAdjust$OnProgressListener;)V
 
@@ -16541,9 +16583,9 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$46;
+    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$45;
 
-    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$46;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$45;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -16633,9 +16675,9 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$35;
+    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$35;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;[Ljava/lang/String;)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;[Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -17511,9 +17553,9 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v5, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$24;
+    new-instance v5, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$23;
 
-    invoke-direct {v5, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$24;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v5, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$23;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v4, v5}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -17940,9 +17982,9 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$26;
+    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$25;
 
-    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$26;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$25;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -18372,9 +18414,9 @@
     :cond_7
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v4, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$23;
+    new-instance v4, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$22;
 
-    invoke-direct {v4, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$23;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v4, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$22;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v3, v4}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -19783,7 +19825,7 @@
 
     if-eqz v9, :cond_1e
 
-    if-nez v5, :cond_1e
+    if-nez v5, :cond_20
 
     const/4 v8, 0x1
 
@@ -19802,6 +19844,7 @@
     invoke-direct {p0, v10, v8}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->setPromptRequestForShrink(II)V
 
     :cond_1e
+    :goto_6
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->finishDetailView()V
 
     goto/16 :goto_2
@@ -19833,6 +19876,11 @@
     invoke-virtual {v9}, Lcom/sec/android/gallery3d/data/UnionLocalImage;->removeManualFD()V
 
     goto :goto_5
+
+    :cond_20
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->resetDisplayRotation()V
+
+    goto :goto_6
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
@@ -22511,24 +22559,6 @@
     iput v5, v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFlags:I
 
     :cond_30
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    invoke-virtual {v5}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getGLRoot()Lcom/sec/android/gallery3d/ui/GLRoot;
-
-    move-result-object v5
-
-    check-cast v5, Lcom/sec/android/gallery3d/glcore/GlRootView;
-
-    new-instance v6, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$21;
-
-    move-object/from16 v0, p0
-
-    invoke-direct {v6, v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$21;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
-
-    invoke-virtual {v5, v6}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setOnSystemUiVisibilityChangeListener(Landroid/view/View$OnSystemUiVisibilityChangeListener;)V
-
     invoke-direct/range {p0 .. p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->checkUpButtonAvailable()Z
 
     move-result v5
@@ -22935,6 +22965,26 @@
     move-object/from16 v0, p0
 
     iput-object v5, v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mDCTouchEvent:Lcom/samsung/android/devicecog/gallery/touchevent/ActivityStateDCTouchEvent;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mDCTouchEvent:Lcom/samsung/android/devicecog/gallery/touchevent/ActivityStateDCTouchEvent;
+
+    instance-of v5, v5, Lcom/samsung/android/devicecog/gallery/touchevent/DetailViewStateDCTouchEvent;
+
+    if-eqz v5, :cond_3b
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mDCTouchEvent:Lcom/samsung/android/devicecog/gallery/touchevent/ActivityStateDCTouchEvent;
+
+    check-cast v5, Lcom/samsung/android/devicecog/gallery/touchevent/DetailViewStateDCTouchEvent;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoView:Lcom/sec/android/gallery3d/ui/PhotoView;
+
+    invoke-virtual {v5, v6}, Lcom/samsung/android/devicecog/gallery/touchevent/DetailViewStateDCTouchEvent;->setPhotoView(Lcom/sec/android/gallery3d/ui/PhotoView;)V
 
     :cond_3b
     const-string/jumbo v5, "Gallery_Performance"
@@ -23833,9 +23883,9 @@
     :goto_1
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v5, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$33;
+    new-instance v5, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$32;
 
-    invoke-direct {v5, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$33;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v5, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$32;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v4, v5}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -24003,7 +24053,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mGlRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_4
 
     sget-object v1, Lcom/sec/samsung/gallery/features/FeatureNames;->IsMassModel:Lcom/sec/samsung/gallery/features/FeatureNames;
 
@@ -24018,65 +24068,60 @@
     invoke-virtual {v1}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setDataExtractionListener()V
 
     :cond_4
-    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mGlRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-
-    invoke-virtual {v1, v3}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setOnSystemUiVisibilityChangeListener(Landroid/view/View$OnSystemUiVisibilityChangeListener;)V
-
-    :cond_5
     iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mExpansionDetailViewMode:Z
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_5
 
     iput-boolean v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFlagForExpandMode:Z
 
-    :cond_6
+    :cond_5
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFilmStripView:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    if-eqz v1, :cond_7
+    if-eqz v1, :cond_6
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFilmStripView:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
     invoke-virtual {v1}, Lcom/sec/android/gallery3d/ui/FilmStripView;->destroy()V
 
-    :cond_7
+    :cond_6
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mHandler:Landroid/os/Handler;
 
-    if-eqz v1, :cond_8
+    if-eqz v1, :cond_7
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v3}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    :cond_8
+    :cond_7
     sget-boolean v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->FEATURE_USE_EXIT_QUICKVIEW_WITH_BLUR:Z
 
-    if-eqz v1, :cond_9
+    if-eqz v1, :cond_8
 
     iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mHasCameraScreennailOrPlaceholder:Z
 
-    if-eqz v1, :cond_9
+    if-eqz v1, :cond_8
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
-    if-eqz v1, :cond_9
+    if-eqz v1, :cond_8
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     invoke-virtual {v1, v3, v4}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->setPreviousBitmap(Landroid/graphics/Bitmap;I)V
 
-    :cond_9
+    :cond_8
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mModel:Lcom/sec/samsung/gallery/view/detailview/Model;
 
-    if-eqz v1, :cond_a
+    if-eqz v1, :cond_9
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mModel:Lcom/sec/samsung/gallery/view/detailview/Model;
 
     invoke-interface {v1}, Lcom/sec/samsung/gallery/view/detailview/Model;->destroy()V
 
-    :cond_a
+    :cond_9
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mBrokenImage:Landroid/graphics/Bitmap;
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_a
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mBrokenImage:Landroid/graphics/Bitmap;
 
@@ -24084,10 +24129,10 @@
 
     iput-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mBrokenImage:Landroid/graphics/Bitmap;
 
-    :cond_b
+    :cond_a
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mContentObserver:Landroid/database/ContentObserver;
 
-    if-eqz v1, :cond_c
+    if-eqz v1, :cond_b
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
 
@@ -24101,25 +24146,25 @@
 
     iput-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mContentObserver:Landroid/database/ContentObserver;
 
-    :cond_c
+    :cond_b
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->getNearbyClient()Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
     move-result-object v0
 
-    if-eqz v0, :cond_d
+    if-eqz v0, :cond_c
 
     invoke-virtual {v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->isConnectedPlayer()Z
 
     move-result v1
 
-    if-eqz v1, :cond_d
+    if-eqz v1, :cond_c
 
     invoke-virtual {v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->disconnectWithPlayDevice()V
 
-    :cond_d
+    :cond_c
     iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mExpansionDetailViewMode:Z
 
-    if-nez v1, :cond_19
+    if-nez v1, :cond_18
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mSelectionManager:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
@@ -24138,22 +24183,22 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mChangePlayerDialog:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
-    if-eqz v1, :cond_e
+    if-eqz v1, :cond_d
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mChangePlayerDialog:Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;
 
     invoke-virtual {v1}, Lcom/sec/android/gallery3d/remote/nearby/ChangePlayerListDialog;->dismiss()V
 
-    :cond_e
+    :cond_d
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mMoreInfo:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    if-eqz v1, :cond_f
+    if-eqz v1, :cond_e
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mMoreInfo:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
     invoke-virtual {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->onDestroy()V
 
-    :cond_f
+    :cond_e
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mStateManager:Lcom/sec/android/gallery3d/app/StateManager;
 
     const-class v2, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
@@ -24162,7 +24207,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_10
+    if-eqz v1, :cond_f
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mStateManager:Lcom/sec/android/gallery3d/app/StateManager;
 
@@ -24172,7 +24217,7 @@
 
     instance-of v1, v1, Lcom/sec/samsung/gallery/mapfragment/MapViewState;
 
-    if-nez v1, :cond_10
+    if-nez v1, :cond_f
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mStateManager:Lcom/sec/android/gallery3d/app/StateManager;
 
@@ -24182,7 +24227,7 @@
 
     instance-of v1, v1, Lcom/sec/samsung/gallery/mapfragment/MapViewStateChn;
 
-    if-nez v1, :cond_10
+    if-nez v1, :cond_f
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mStateManager:Lcom/sec/android/gallery3d/app/StateManager;
 
@@ -24192,7 +24237,7 @@
 
     instance-of v1, v1, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    if-nez v1, :cond_10
+    if-nez v1, :cond_f
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mStateManager:Lcom/sec/android/gallery3d/app/StateManager;
 
@@ -24202,12 +24247,12 @@
 
     instance-of v1, v1, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    if-eqz v1, :cond_12
+    if-eqz v1, :cond_11
 
-    :cond_10
+    :cond_f
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFastOptionView:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    if-eqz v1, :cond_11
+    if-eqz v1, :cond_10
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFastOptionView:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
@@ -24215,10 +24260,10 @@
 
     iput-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFastOptionView:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    :cond_11
+    :cond_10
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCommentsView:Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;
 
-    if-eqz v1, :cond_12
+    if-eqz v1, :cond_11
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCommentsView:Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;
 
@@ -24226,42 +24271,42 @@
 
     iput-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCommentsView:Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;
 
-    :cond_12
+    :cond_11
     sget-object v1, Lcom/sec/samsung/gallery/features/FeatureNames;->UseAutoAdjustAnimation:Lcom/sec/samsung/gallery/features/FeatureNames;
 
     invoke-static {v1}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_13
+    if-eqz v1, :cond_12
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mAutoAdjustAnimation:Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;
 
-    if-eqz v1, :cond_13
+    if-eqz v1, :cond_12
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mAutoAdjustAnimation:Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;
 
     invoke-virtual {v1}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;->removeAutoAdjustEffectView()V
 
-    :cond_13
+    :cond_12
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->unregisterChangePlayerReceiver()V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mScreenSharingListener:Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener;
 
-    if-eqz v1, :cond_14
+    if-eqz v1, :cond_13
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mScreenSharingListener:Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener;
 
     invoke-virtual {v1}, Lcom/sec/android/gallery3d/remote/nearby/ScreenSharingListener;->unregisterReceiver()V
 
-    :cond_14
+    :cond_13
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     invoke-static {v1}, Lcom/sec/android/gallery3d/util/GalleryUtils;->isCameraQuickViewOnLockscreen(Landroid/app/Activity;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_15
+    if-eqz v1, :cond_14
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -24269,23 +24314,23 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    :cond_15
+    :cond_14
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mDetailViewPresentation:Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;
 
-    if-eqz v1, :cond_16
+    if-eqz v1, :cond_15
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mDetailViewPresentation:Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;
 
     invoke-virtual {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;->dismissPresentation()V
 
-    :cond_16
+    :cond_15
     sget-boolean v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->FEATURE_SHOW_EDITED_IMAGE_FROM_EDITOR:Z
 
-    if-eqz v1, :cond_17
+    if-eqz v1, :cond_16
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoEditorFinishManager:Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;
 
-    if-eqz v1, :cond_17
+    if-eqz v1, :cond_16
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoEditorFinishManager:Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;
 
@@ -24293,7 +24338,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_17
+    if-eqz v1, :cond_16
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoEditorFinishManager:Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;
 
@@ -24305,22 +24350,22 @@
 
     invoke-virtual {v1, v4}, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->setLaunchedPhotoEditor(Z)V
 
-    :cond_17
+    :cond_16
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->isActionView()Z
 
     move-result v1
 
-    if-eqz v1, :cond_18
+    if-eqz v1, :cond_17
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mGlRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
-    if-eqz v1, :cond_18
+    if-eqz v1, :cond_17
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mGlRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     invoke-virtual {v1, v4}, Lcom/sec/android/gallery3d/glcore/GlRootView;->skipRenderRequest(Z)V
 
-    :cond_18
+    :cond_17
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->destroyVisionIntelligenceHelpPopup()V
 
     invoke-super {p0}, Lcom/sec/android/gallery3d/app/ActivityState;->onDestroy()V
@@ -24333,7 +24378,7 @@
 
     return-void
 
-    :cond_19
+    :cond_18
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mSelectionManager:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     invoke-virtual {v1, v4}, Lcom/sec/android/gallery3d/ui/SelectionManager;->setExpansionMode(Z)V
@@ -29527,11 +29572,11 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/samsung/gallery/view/detailview/util/VisionLoadUserRoiTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    new-instance v2, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;
+    new-instance v2, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$33;
 
     move-object/from16 v0, p0
 
-    invoke-direct {v2, v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$34;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v2, v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$33;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     move-object/from16 v0, v27
 
@@ -31896,13 +31941,13 @@
 
     const v31, 0x7f0a02f4
 
-    new-instance v32, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$36;
+    new-instance v32, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$35;
 
     move-object/from16 v0, v32
 
     move-object/from16 v1, p0
 
-    invoke-direct {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$36;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$35;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual/range {v30 .. v32}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -32438,9 +32483,9 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$47;
+    new-instance v1, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$46;
 
-    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$47;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
+    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$46;-><init>(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 

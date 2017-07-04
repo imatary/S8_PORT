@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mMainObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v0
@@ -56,14 +55,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mMainObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mMainObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v1

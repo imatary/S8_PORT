@@ -116,7 +116,6 @@
 
     iget v1, p0, Landroid/support/design/widget/TabLayout$Tab;->mPosition:I
 
-    # invokes: Landroid/support/design/widget/TabLayout;->updateTab(I)V
     invoke-static {v0, v1}, Landroid/support/design/widget/TabLayout;->access$100(Landroid/support/design/widget/TabLayout;I)V
 
     :cond_0
@@ -144,7 +143,6 @@
 
     iget v1, p0, Landroid/support/design/widget/TabLayout$Tab;->mPosition:I
 
-    # invokes: Landroid/support/design/widget/TabLayout;->updateTab(I)V
     invoke-static {v0, v1}, Landroid/support/design/widget/TabLayout;->access$100(Landroid/support/design/widget/TabLayout;I)V
 
     :cond_0

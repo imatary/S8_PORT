@@ -78,7 +78,6 @@
 
     iget-object v1, p0, Landroid/support/v7/app/AlertDialog$Builder;->P:Landroid/support/v7/app/AlertController$AlertParams;
 
-    # getter for: Landroid/support/v7/app/AlertDialog;->mAlert:Landroid/support/v7/app/AlertController;
     invoke-static {v0}, Landroid/support/v7/app/AlertDialog;->access$000(Landroid/support/v7/app/AlertDialog;)Landroid/support/v7/app/AlertController;
 
     move-result-object v2

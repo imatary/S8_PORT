@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$11;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mListItems:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -77,12 +76,10 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$11;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mEditMode:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1500(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Z
 
     move-result v2
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->setLayoutParams(Z)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1600(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;Z)V
 
     return-void

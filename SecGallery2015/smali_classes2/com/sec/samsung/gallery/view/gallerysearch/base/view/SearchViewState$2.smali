@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -69,7 +68,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->setActionBarBGColor(F)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;F)V
 
     goto :goto_0

@@ -43,7 +43,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mShowKeyboard:Ljava/lang/Boolean;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$000(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Ljava/lang/Boolean;
 
     move-result-object v2
@@ -60,12 +59,10 @@
 
     move-result-object v3
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mShowKeyboard:Ljava/lang/Boolean;
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$002(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mActivity:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$100(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;
 
     move-result-object v2
@@ -80,7 +77,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$1;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mCommentEditText:Landroid/widget/EditText;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$200(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Landroid/widget/EditText;
 
     move-result-object v2

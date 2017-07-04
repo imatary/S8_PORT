@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$5;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mBlockTextChange:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$1000(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)Z
 
     move-result v0
@@ -92,7 +91,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$5;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->onTextChanged(Ljava/lang/CharSequence;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$1100(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;Ljava/lang/CharSequence;)V
 
     goto :goto_0

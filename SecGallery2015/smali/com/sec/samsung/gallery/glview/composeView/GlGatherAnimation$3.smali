@@ -41,7 +41,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mHeadObj:Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
 
     move-result-object v2
@@ -50,7 +49,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mHeadObj:Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlTrailObject;
 
     move-result-object v2
@@ -60,7 +58,6 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mOnDragListener:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$OnDragAnimListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$600(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$OnDragAnimListener;
 
     move-result-object v2
@@ -69,7 +66,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mOnDragListener:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$OnDragAnimListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$600(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$OnDragAnimListener;
 
     move-result-object v2
@@ -79,12 +75,10 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->releaseDrag()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mIsMoveToAnimationRunning:Z
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$402(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;Z)Z
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
@@ -93,7 +87,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mCurrentAnim:I
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$002(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;I)I
 
     return-void
@@ -117,7 +110,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->mIsMoveToAnimationRunning:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;->access$402(Lcom/sec/samsung/gallery/glview/composeView/GlGatherAnimation;Z)Z
 
     return-void

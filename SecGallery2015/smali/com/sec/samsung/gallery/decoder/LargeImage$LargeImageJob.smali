@@ -84,7 +84,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mTileRange:Landroid/graphics/Rect;
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$400(Lcom/sec/samsung/gallery/decoder/LargeImage;)Landroid/graphics/Rect;
 
     move-result-object v19
@@ -131,7 +130,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mTileSize:I
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$500(Lcom/sec/samsung/gallery/decoder/LargeImage;)I
 
     move-result v25
@@ -186,7 +184,6 @@
 
     mul-int v26, v26, v27
 
-    # setter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mUploadTileCount:I
     invoke-static/range {v25 .. v26}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$602(Lcom/sec/samsung/gallery/decoder/LargeImage;I)I
 
     const/16 v17, 0x0
@@ -199,7 +196,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mTileSize:I
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$500(Lcom/sec/samsung/gallery/decoder/LargeImage;)I
 
     move-result v25
@@ -212,7 +208,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mTileSize:I
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$500(Lcom/sec/samsung/gallery/decoder/LargeImage;)I
 
     move-result v25
@@ -255,7 +250,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mLargeImageTilePool:Lcom/sec/samsung/gallery/decoder/LargeImageTilePool;
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$700(Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImageTilePool;
 
     move-result-object v25
@@ -326,7 +320,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mTileSize:I
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$500(Lcom/sec/samsung/gallery/decoder/LargeImage;)I
 
     move-result v25
@@ -347,7 +340,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mTileSize:I
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$500(Lcom/sec/samsung/gallery/decoder/LargeImage;)I
 
     move-result v25
@@ -366,7 +358,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mLargeImageTilePool:Lcom/sec/samsung/gallery/decoder/LargeImageTilePool;
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$700(Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/LargeImageTilePool;
 
     move-result-object v25
@@ -432,7 +423,6 @@
 
     move-object/from16 v1, v23
 
-    # invokes: Lcom/sec/samsung/gallery/decoder/LargeImage;->clearDecodedTiles(Landroid/util/LongSparseArray;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$800(Lcom/sec/samsung/gallery/decoder/LargeImage;Landroid/util/LongSparseArray;)V
 
     monitor-exit v26
@@ -467,7 +457,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mDecoderInterface:Lcom/sec/samsung/gallery/decoder/DecoderInterface;
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$900(Lcom/sec/samsung/gallery/decoder/LargeImage;)Lcom/sec/samsung/gallery/decoder/DecoderInterface;
 
     move-result-object v25
@@ -485,7 +474,6 @@
 
     move-object/from16 v25, v0
 
-    # getter for: Lcom/sec/samsung/gallery/decoder/LargeImage;->mTileSize:I
     invoke-static/range {v25 .. v25}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$500(Lcom/sec/samsung/gallery/decoder/LargeImage;)I
 
     move-result v25
@@ -522,7 +510,6 @@
 
     move/from16 v4, v24
 
-    # invokes: Lcom/sec/samsung/gallery/decoder/LargeImage;->getTile(IIII)Landroid/graphics/Bitmap;
     invoke-static {v0, v1, v2, v3, v4}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$1000(Lcom/sec/samsung/gallery/decoder/LargeImage;IIII)Landroid/graphics/Bitmap;
 
     move-result-object v25
@@ -558,7 +545,6 @@
 
     move-object/from16 v0, v25
 
-    # invokes: Lcom/sec/samsung/gallery/decoder/LargeImage;->queueForUpload(Lcom/sec/samsung/gallery/decoder/LargeImageTile;)V
     invoke-static {v0, v6}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$1100(Lcom/sec/samsung/gallery/decoder/LargeImage;Lcom/sec/samsung/gallery/decoder/LargeImageTile;)V
 
     iget v0, v6, Lcom/sec/samsung/gallery/decoder/LargeImageTile;->mX:I
@@ -573,7 +559,6 @@
 
     move/from16 v27, v0
 
-    # invokes: Lcom/sec/samsung/gallery/decoder/LargeImage;->makeKey(III)J
     invoke-static/range {v25 .. v27}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$1200(III)J
 
     move-result-wide v26
@@ -720,7 +705,6 @@
 
     move-object/from16 v1, v23
 
-    # invokes: Lcom/sec/samsung/gallery/decoder/LargeImage;->clearDecodedTiles(Landroid/util/LongSparseArray;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/decoder/LargeImage;->access$800(Lcom/sec/samsung/gallery/decoder/LargeImage;Landroid/util/LongSparseArray;)V
 
     monitor-exit v26

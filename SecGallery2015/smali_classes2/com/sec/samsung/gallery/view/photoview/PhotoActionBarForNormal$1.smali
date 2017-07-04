@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;->access$000(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v1
@@ -56,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;->access$100(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v1
@@ -65,7 +63,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v1

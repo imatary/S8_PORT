@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$24;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$18200(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$24;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$18300(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
@@ -71,12 +69,10 @@
 
     iget-boolean v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$24;->val$changeScreen:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->startDetailViewState(IZ)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$18400(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;IZ)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$24;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$18500(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
 
     move-result-object v0

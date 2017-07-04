@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQCViewer$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQCViewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQCViewer;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQCViewer;->access$000(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQCViewer;)Landroid/app/ActionBar;
 
     move-result-object v0

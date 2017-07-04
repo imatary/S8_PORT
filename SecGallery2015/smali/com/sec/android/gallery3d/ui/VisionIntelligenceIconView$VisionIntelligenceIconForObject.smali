@@ -179,7 +179,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f020360
+    const v0, 0x7f020362
 
     iput v0, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->mResId:I
 
@@ -243,7 +243,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$200(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v9
@@ -252,7 +251,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$200(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v9
@@ -265,7 +263,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->getImageScale()F
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$300(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)F
 
     move-result v10
@@ -276,7 +273,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$200(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v9
@@ -289,7 +285,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->getImageScale()F
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$300(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)F
 
     move-result v10
@@ -301,7 +296,6 @@
     :cond_0
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->mObjectRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$400(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)Landroid/graphics/RectF;
 
     move-result-object v9
@@ -310,7 +304,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->mObjectRect:Landroid/graphics/RectF;
     invoke-static {v9}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$400(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)Landroid/graphics/RectF;
 
     move-result-object v9
@@ -350,7 +343,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->mObjectRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$400(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -411,7 +403,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->mObjectRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$400(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -434,7 +425,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->mObjectRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$400(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -509,7 +499,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->mObjectRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$400(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -538,7 +527,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->mObjectRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$400(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)Landroid/graphics/RectF;
 
     move-result-object v10
@@ -569,7 +557,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView$VisionIntelligenceIconForObject;->this$0:Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->mObjectRect:Landroid/graphics/RectF;
     invoke-static {v10}, Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;->access$400(Lcom/sec/android/gallery3d/ui/VisionIntelligenceIconView;)Landroid/graphics/RectF;
 
     move-result-object v10

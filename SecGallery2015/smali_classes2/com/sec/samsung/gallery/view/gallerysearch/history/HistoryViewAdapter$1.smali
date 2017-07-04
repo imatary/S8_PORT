@@ -49,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter$1;->val$item:Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryItem;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;->deleteHistoryItem(Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryItem;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryItem;)V
 
     :cond_0

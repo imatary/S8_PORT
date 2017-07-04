@@ -41,7 +41,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mNeedShowFloatingTextView:Z
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$24500(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Z
 
     move-result v6
@@ -55,7 +54,6 @@
     :cond_1
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$24600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -72,7 +70,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$24700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v7
@@ -83,7 +80,6 @@
 
     move-result-object v7
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingTextView:Landroid/view/View;
     invoke-static {v6, v7}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15402(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Landroid/view/View;)Landroid/view/View;
 
     const-string/jumbo v1, ""
@@ -92,7 +88,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v6
@@ -134,7 +129,6 @@
     :cond_2
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v6
@@ -151,7 +145,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v6
@@ -170,7 +163,6 @@
     :goto_1
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingTextView:Landroid/view/View;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/view/View;
 
     move-result-object v6
@@ -179,7 +171,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$24800(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -204,14 +195,12 @@
 
     move-result-object v6
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingTextView:Landroid/view/View;
     invoke-static {v7, v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15402(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Landroid/view/View;)Landroid/view/View;
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingTextView:Landroid/view/View;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/view/View;
 
     move-result-object v6
@@ -224,19 +213,16 @@
 
     check-cast v6, Landroid/widget/TextView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingText:Landroid/widget/TextView;
     invoke-static {v7, v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15502(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Landroid/widget/TextView;)Landroid/widget/TextView;
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingText:Landroid/widget/TextView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15500(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/TextView;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mDatePeriod:Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$24900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Ljava/lang/String;
 
     move-result-object v7
@@ -247,7 +233,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingTextView:Landroid/view/View;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/view/View;
 
     move-result-object v6
@@ -260,12 +245,10 @@
 
     check-cast v6, Landroid/widget/TextView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mPhotoText:Landroid/widget/TextView;
     invoke-static {v7, v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15602(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Landroid/widget/TextView;)Landroid/widget/TextView;
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mPhotoText:Landroid/widget/TextView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/TextView;
 
     move-result-object v6
@@ -276,7 +259,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingTextView:Landroid/view/View;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/view/View;
 
     move-result-object v6
@@ -289,12 +271,10 @@
 
     check-cast v6, Landroid/widget/TextView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mVideoText:Landroid/widget/TextView;
     invoke-static {v7, v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15702(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Landroid/widget/TextView;)Landroid/widget/TextView;
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mVideoText:Landroid/widget/TextView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/TextView;
 
     move-result-object v6
@@ -305,7 +285,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingTextView:Landroid/view/View;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/view/View;
 
     move-result-object v6
@@ -318,14 +297,12 @@
 
     check-cast v6, Landroid/widget/ImageView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mPhotoIcon:Landroid/widget/ImageView;
     invoke-static {v7, v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15802(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingTextView:Landroid/view/View;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/view/View;
 
     move-result-object v6
@@ -338,14 +315,12 @@
 
     check-cast v6, Landroid/widget/ImageView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mVideoIcon:Landroid/widget/ImageView;
     invoke-static {v7, v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15902(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingTextView:Landroid/view/View;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/view/View;
 
     move-result-object v6
@@ -358,7 +333,6 @@
 
     check-cast v6, Landroid/widget/ImageView;
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mDotIcon:Landroid/widget/ImageView;
     invoke-static {v7, v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$16002(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
     invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -369,7 +343,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mDotIcon:Landroid/widget/ImageView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$16000(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/ImageView;
 
     move-result-object v6
@@ -378,7 +351,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mPhotoText:Landroid/widget/TextView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/TextView;
 
     move-result-object v6
@@ -387,7 +359,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mPhotoIcon:Landroid/widget/ImageView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15800(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/ImageView;
 
     move-result-object v6
@@ -398,7 +369,6 @@
     :goto_2
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingTextView:Landroid/view/View;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/view/View;
 
     move-result-object v6
@@ -407,7 +377,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingTextView:Landroid/view/View;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/view/View;
 
     move-result-object v6
@@ -418,7 +387,6 @@
 
     const/4 v7, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingBackground:I
     invoke-static {v6, v7}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$16102(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;I)I
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
@@ -432,7 +400,6 @@
     :cond_5
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v6
@@ -447,7 +414,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mChannelAlbum:Lcom/sec/android/gallery3d/data/ChannelAlbum;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/data/ChannelAlbum;
 
     move-result-object v6
@@ -471,7 +437,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mDotIcon:Landroid/widget/ImageView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$16000(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/ImageView;
 
     move-result-object v6
@@ -480,7 +445,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mVideoText:Landroid/widget/TextView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/TextView;
 
     move-result-object v6
@@ -489,7 +453,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mVideoIcon:Landroid/widget/ImageView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/ImageView;
 
     move-result-object v6
@@ -501,7 +464,6 @@
     :cond_7
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingText:Landroid/widget/TextView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15500(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/TextView;
 
     move-result-object v6
@@ -510,14 +472,12 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mFloatingText:Landroid/widget/TextView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15500(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/TextView;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mDatePeriod:Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$24900(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Ljava/lang/String;
 
     move-result-object v7
@@ -527,7 +487,6 @@
     :cond_8
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mPhotoText:Landroid/widget/TextView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/TextView;
 
     move-result-object v6
@@ -536,7 +495,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mPhotoText:Landroid/widget/TextView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15600(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/TextView;
 
     move-result-object v6
@@ -546,7 +504,6 @@
     :cond_9
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mVideoText:Landroid/widget/TextView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/TextView;
 
     move-result-object v6
@@ -555,7 +512,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$58;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mVideoText:Landroid/widget/TextView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$15700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Landroid/widget/TextView;
 
     move-result-object v6

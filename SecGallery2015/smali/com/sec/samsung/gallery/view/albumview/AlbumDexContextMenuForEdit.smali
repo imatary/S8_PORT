@@ -160,7 +160,7 @@
 .end method
 
 .method onCreateContextMenu(Landroid/view/ContextMenu;)Z
-    .locals 7
+    .locals 10
 
     const/4 v4, 0x1
 
@@ -190,9 +190,17 @@
 
     move-result v5
 
-    const/4 v6, 0x2
+    if-ne v5, v4, :cond_0
 
-    if-ge v5, v6, :cond_0
+    const-wide/high16 v6, 0x800000000000000L
+
+    and-long/2addr v6, v2
+
+    const-wide/16 v8, 0x0
+
+    cmp-long v5, v6, v8
+
+    if-eqz v5, :cond_0
 
     move v0, v4
 

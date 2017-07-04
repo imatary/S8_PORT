@@ -53,7 +53,6 @@
 
     iget-object v12, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v12}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$000(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v12
@@ -145,7 +144,6 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mDataManager:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$6000(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v13
@@ -211,7 +209,6 @@
     :cond_8
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v13
@@ -222,7 +219,6 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$100(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
     move-result-object v13
@@ -235,7 +231,6 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$000(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v13
@@ -244,7 +239,6 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$000(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v13
@@ -295,7 +289,6 @@
 
     iget-object v13, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v13}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$6100(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v13
@@ -313,7 +306,6 @@
     :cond_d
     iget-object v12, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->exitSelectionMode()V
     invoke-static {v12}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$300(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)V
 
     goto/16 :goto_1
@@ -371,7 +363,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->selectAllPostProcess()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$5800(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0

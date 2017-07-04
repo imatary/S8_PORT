@@ -39,12 +39,10 @@
 
     iget-object v0, p0, Landroid/support/design/widget/Snackbar$5;->this$0:Landroid/support/design/widget/Snackbar;
 
-    # invokes: Landroid/support/design/widget/Snackbar;->animateViewIn()V
     invoke-static {v0}, Landroid/support/design/widget/Snackbar;->access$300(Landroid/support/design/widget/Snackbar;)V
 
     iget-object v0, p0, Landroid/support/design/widget/Snackbar$5;->this$0:Landroid/support/design/widget/Snackbar;
 
-    # getter for: Landroid/support/design/widget/Snackbar;->mView:Landroid/support/design/widget/Snackbar$SnackbarLayout;
     invoke-static {v0}, Landroid/support/design/widget/Snackbar;->access$400(Landroid/support/design/widget/Snackbar;)Landroid/support/design/widget/Snackbar$SnackbarLayout;
 
     move-result-object v0

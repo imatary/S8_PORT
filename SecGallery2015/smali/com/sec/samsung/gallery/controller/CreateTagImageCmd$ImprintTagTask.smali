@@ -65,7 +65,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$100(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -88,7 +87,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$100(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -125,48 +123,40 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$200(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3
 
-    # invokes: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->getRotatedImage(Lcom/sec/android/gallery3d/data/MediaItem;)Landroid/graphics/Bitmap;
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$300(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;Lcom/sec/android/gallery3d/data/MediaItem;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->setImprintIconArray()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$400(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->drawTags(Landroid/graphics/Bitmap;)V
     invoke-static {v2, v0}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$500(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;Landroid/graphics/Bitmap;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->getOutputFilePath()Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$600(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;)Ljava/lang/String;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->saveFile(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     invoke-static {v2, v1, v0}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$700(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->mSelectionManager:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$800(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$200(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v3
@@ -175,7 +165,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->addSelectionMananger(Ljava/lang/String;)V
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$900(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;Ljava/lang/String;)V
 
     const/4 v2, 0x0
@@ -219,7 +208,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$100(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -238,7 +226,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd$ImprintTagTask;->this$0:Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;->access$100(Lcom/sec/samsung/gallery/controller/CreateTagImageCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2

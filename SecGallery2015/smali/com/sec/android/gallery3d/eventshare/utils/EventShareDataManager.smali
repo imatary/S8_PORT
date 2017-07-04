@@ -469,7 +469,6 @@
 
     const-string/jumbo v2, "SHARE_EVENT_CONTACT_URIS"
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->getContactList()Ljava/util/ArrayList;
     invoke-static {p6}, Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->access$000(Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -478,7 +477,6 @@
 
     const-string/jumbo v2, "SHARE_EVENT_FILE_URIS"
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->getFileList()Ljava/util/ArrayList;
     invoke-static {p6}, Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->access$100(Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -487,7 +485,6 @@
 
     const-string/jumbo v2, "SHARE_EVENT_FILE_LOCAL_PATHS"
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->getLocalPathList()Ljava/util/ArrayList;
     invoke-static {p6}, Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->access$200(Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -630,7 +627,6 @@
 
     const-string/jumbo v2, "SHARE_EVENT_CONTACT_URIS"
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->getContactList()Ljava/util/ArrayList;
     invoke-static {p6}, Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->access$000(Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -639,7 +635,6 @@
 
     const-string/jumbo v2, "SHARE_EVENT_FILE_URIS"
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->getFileList()Ljava/util/ArrayList;
     invoke-static {p6}, Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->access$100(Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -648,7 +643,6 @@
 
     const-string/jumbo v2, "SHARE_EVENT_FILE_LOCAL_PATHS"
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->getLocalPathList()Ljava/util/ArrayList;
     invoke-static {p6}, Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->access$200(Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -1364,7 +1358,6 @@
     :cond_2
     if-eqz v11, :cond_5
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->getContactList()Ljava/util/ArrayList;
     invoke-static {v11}, Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->access$000(Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;)Ljava/util/ArrayList;
 
     move-result-object v8
@@ -1491,7 +1484,6 @@
     goto :goto_1
 
     :cond_3
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->getFileList()Ljava/util/ArrayList;
     invoke-static {v11}, Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->access$100(Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;)Ljava/util/ArrayList;
 
     move-result-object v15
@@ -1616,7 +1608,6 @@
     goto :goto_2
 
     :cond_4
-    # invokes: Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->getLocalPathList()Ljava/util/ArrayList;
     invoke-static {v11}, Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;->access$200(Lcom/sec/android/gallery3d/eventshare/utils/EventShareDataManager$ExtraInfo;)Ljava/util/ArrayList;
 
     move-result-object v14

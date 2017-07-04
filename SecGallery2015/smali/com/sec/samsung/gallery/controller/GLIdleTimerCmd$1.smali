@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/GLIdleTimerCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/GLIdleTimerCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/GLIdleTimerCmd;->handleMsgRunListener()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/GLIdleTimerCmd;->access$000(Lcom/sec/samsung/gallery/controller/GLIdleTimerCmd;)V
 
     goto :goto_0

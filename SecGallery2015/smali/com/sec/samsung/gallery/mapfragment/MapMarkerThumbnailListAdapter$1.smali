@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$1;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mClusterItems:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$000(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -50,7 +49,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->updateTitle(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$100(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;I)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$1;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;

@@ -65,7 +65,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/ChannelAlbumManager$1;->val$selectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
-    # invokes: Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->getSelectedItemList(Lcom/sec/android/gallery3d/ui/SelectionManager;)Ljava/util/ArrayList;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->access$000(Lcom/sec/android/gallery3d/data/ChannelAlbumManager;Lcom/sec/android/gallery3d/ui/SelectionManager;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -95,7 +94,6 @@
 
     move v5, v3
 
-    # invokes: Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->handleDCCreateStory(Landroid/content/Context;Ljava/util/ArrayList;ILjava/lang/String;ZLjava/lang/String;)V
     invoke-static/range {v0 .. v6}, Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->access$400(Lcom/sec/android/gallery3d/data/ChannelAlbumManager;Landroid/content/Context;Ljava/util/ArrayList;ILjava/lang/String;ZLjava/lang/String;)V
 
     :goto_1
@@ -106,14 +104,12 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/ChannelAlbumManager$1;->val$context:Landroid/content/Context;
 
-    # invokes: Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->createNewChannelAlbumName(Landroid/content/Context;Ljava/util/List;)Ljava/lang/String;
     invoke-static {v0, v1, v2}, Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->access$100(Lcom/sec/android/gallery3d/data/ChannelAlbumManager;Landroid/content/Context;Ljava/util/List;)Ljava/lang/String;
 
     move-result-object v4
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/ChannelAlbumManager$1;->this$0:Lcom/sec/android/gallery3d/data/ChannelAlbumManager;
 
-    # invokes: Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->getChannelAlbumMap()Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->access$200(Lcom/sec/android/gallery3d/data/ChannelAlbumManager;)Ljava/util/ArrayList;
 
     move-result-object v7
@@ -148,7 +144,6 @@
     :goto_3
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/ChannelAlbumManager$1;->this$0:Lcom/sec/android/gallery3d/data/ChannelAlbumManager;
 
-    # invokes: Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->isDuplicated(Ljava/util/ArrayList;Ljava/lang/String;)I
     invoke-static {v0, v7, v8}, Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->access$300(Lcom/sec/android/gallery3d/data/ChannelAlbumManager;Ljava/util/ArrayList;Ljava/lang/String;)I
 
     move-result v10
@@ -225,7 +220,6 @@
 
     move v5, v3
 
-    # invokes: Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->showCreateEventDialog(Landroid/content/Context;Ljava/util/ArrayList;ILjava/lang/String;ZLjava/lang/String;)V
     invoke-static/range {v0 .. v6}, Lcom/sec/android/gallery3d/data/ChannelAlbumManager;->access$500(Lcom/sec/android/gallery3d/data/ChannelAlbumManager;Landroid/content/Context;Ljava/util/ArrayList;ILjava/lang/String;ZLjava/lang/String;)V
 
     goto :goto_1

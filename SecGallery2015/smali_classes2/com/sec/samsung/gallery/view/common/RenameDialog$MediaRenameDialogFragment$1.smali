@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$800(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mAlertEditText:Landroid/widget/EditText;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$300(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/widget/EditText;
 
     move-result-object v1

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$4;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->onPhotoItemClick(I)V
     invoke-static {v0, p2}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$300(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;I)V
 
     const/4 v0, 0x1

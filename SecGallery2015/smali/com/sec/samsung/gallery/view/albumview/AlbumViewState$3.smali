@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mCurrentTopSetPath:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3800(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Ljava/lang/String;
 
     move-result-object v0
@@ -45,7 +44,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mDataProxy:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3900(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v0
@@ -60,14 +58,12 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mDataProxy:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3900(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mCurrentTopSetPath:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3800(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Ljava/lang/String;
 
     move-result-object v1
@@ -90,7 +86,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mFirstMediaCheck:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3000(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Z
 
     move-result v0
@@ -99,7 +94,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3100(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -111,7 +105,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->checkMediaAvailability()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3200(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
@@ -136,7 +129,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mUpdateSelectionModeTask:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionModeTask;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionModeTask;
 
     move-result-object v0
@@ -145,7 +137,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mUpdateSelectionModeTask:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionModeTask;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionModeTask;
 
     move-result-object v0
@@ -161,12 +152,10 @@
 
     invoke-direct {v1, v2, v5}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionModeTask;-><init>(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$1;)V
 
-    # setter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mUpdateSelectionModeTask:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionModeTask;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3302(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionModeTask;)Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionModeTask;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mUpdateSelectionModeTask:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionModeTask;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionModeTask;
 
     move-result-object v0
@@ -187,7 +176,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mUpdateSelectionBufferTask:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3500(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;
 
     move-result-object v0
@@ -196,7 +184,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mUpdateSelectionBufferTask:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3500(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;
 
     move-result-object v0
@@ -212,12 +199,10 @@
 
     invoke-direct {v1, v2, v5}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;-><init>(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$1;)V
 
-    # setter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mUpdateSelectionBufferTask:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3502(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;)Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mUpdateSelectionBufferTask:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3500(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;
 
     move-result-object v0
@@ -229,7 +214,6 @@
     :cond_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->postUpdateCountOnActionBar()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3700(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
 
     :cond_4
@@ -247,7 +231,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$3;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->updateCountOnActionBar()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
 
     goto :goto_0

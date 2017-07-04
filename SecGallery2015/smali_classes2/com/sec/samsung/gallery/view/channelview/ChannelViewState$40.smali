@@ -49,8 +49,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$40;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$17700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$17800(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
 

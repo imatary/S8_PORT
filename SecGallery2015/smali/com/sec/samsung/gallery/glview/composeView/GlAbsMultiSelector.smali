@@ -317,14 +317,12 @@
 
     check-cast v0, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v9
 
     if-gt v5, v9, :cond_3
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v9
@@ -387,7 +385,6 @@
 
     check-cast v9, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->mIndex:I
     invoke-static {v9}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v3
@@ -453,7 +450,6 @@
 
     check-cast v9, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->mIndex:I
     invoke-static {v9}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v3
@@ -561,7 +557,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;->mModel:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$MultiSeletorModel;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v3
@@ -581,7 +576,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector;->mModel:Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$MultiSeletorModel;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v3
@@ -726,7 +720,6 @@
 
     check-cast v6, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v7
@@ -739,7 +732,6 @@
 
     check-cast v6, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v6
@@ -761,7 +753,6 @@
 
     check-cast v6, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v7
@@ -774,7 +765,6 @@
 
     check-cast v6, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v6
@@ -1260,7 +1250,6 @@
 
     if-eqz v0, :cond_0
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->meet(Landroid/graphics/Rect;)Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;Landroid/graphics/Rect;)Z
 
     move-result v4
@@ -1757,7 +1746,6 @@
 
     check-cast v3, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->mIndex:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v2
@@ -1793,7 +1781,6 @@
 
     check-cast v3, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->getIndex()I
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlAbsMultiSelector$Candidate;)I
 
     move-result v3

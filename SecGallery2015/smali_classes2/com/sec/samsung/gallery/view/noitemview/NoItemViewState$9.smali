@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$9;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mCreateBtn:Landroid/widget/ImageButton;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3200(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)Landroid/widget/ImageButton;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$9;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->mCreateBtn:Landroid/widget/ImageButton;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3200(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)Landroid/widget/ImageButton;
 
     move-result-object v0

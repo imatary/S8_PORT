@@ -207,6 +207,14 @@
     return v0
 .end method
 
+.method public isDirty()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/adapter/ReloadTask;->mDirty:Z
+
+    return v0
+.end method
+
 .method public declared-synchronized notifyDirty()V
     .locals 1
 

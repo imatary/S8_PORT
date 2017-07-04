@@ -134,7 +134,6 @@
 
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    # getter for: Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/dualscreen/SDualScreenActivity;->access$000()Ljava/lang/String;
 
     move-result-object v0

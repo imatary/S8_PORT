@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$6;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$1500(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$6;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mNeedIdleProcess:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$1300(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Z
 
     move-result v0
@@ -77,14 +75,12 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mNeedIdleProcess:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$1302(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;Z)Z
 
     new-instance v0, Lcom/sec/samsung/gallery/view/photoviewcomm/PhotoViewBeam;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$6;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$1400(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

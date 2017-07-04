@@ -27,6 +27,8 @@
 
 .field private static final FACE_PIXEL_COUNT:I = 0x1d4c0
 
+.field private static final KNOX_DESKTOP_BAR_HEIGHT:I = 0x30
+
 .field private static final MIN_RANGE_RATIO:F = 0.0125f
 
 .field private static final MIN_SELECTION_LENGTH:F = 16.0f
@@ -171,7 +173,7 @@
 
 .field private final mUseGraceCropViewUI:Z
 
-.field private final mUseSystemBar:Z
+.field private mUseSystemBar:Z
 
 .field private mZoomInImageView:Lcom/sec/android/gallery3d/ui/ZoomInOutImageView;
 
@@ -308,14 +310,6 @@
 
     iput-object v11, p0, Lcom/sec/android/gallery3d/ui/CropView;->mContext:Landroid/content/Context;
 
-    sget-object v11, Lcom/sec/samsung/gallery/features/FeatureNames;->UseNavigationBar:Lcom/sec/samsung/gallery/features/FeatureNames;
-
-    invoke-static {v11}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
-
-    move-result v11
-
-    iput-boolean v11, p0, Lcom/sec/android/gallery3d/ui/CropView;->mUseSystemBar:Z
-
     sget-object v11, Lcom/sec/samsung/gallery/features/FeatureNames;->UseGraceCropViewUI:Lcom/sec/samsung/gallery/features/FeatureNames;
 
     invoke-static {v11}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
@@ -323,6 +317,8 @@
     move-result v11
 
     iput-boolean v11, p0, Lcom/sec/android/gallery3d/ui/CropView;->mUseGraceCropViewUI:Z
+
+    invoke-virtual {p0}, Lcom/sec/android/gallery3d/ui/CropView;->updateUseNaviBar()V
 
     iget-object v11, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDexInterface:Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
 
@@ -759,12 +755,14 @@
     return-object p1
 .end method
 
-.method static synthetic access$1900()Z
+.method static synthetic access$1900(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/graphics/Point;
     .locals 1
 
-    sget-boolean v0, Lcom/sec/android/gallery3d/ui/CropView;->SUPPORT_KNOX_DESKTOP:Z
+    invoke-direct {p0}, Lcom/sec/android/gallery3d/ui/CropView;->getScreenSize()Landroid/graphics/Point;
 
-    return v0
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method static synthetic access$200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/app/CropImage;
@@ -775,15 +773,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2000(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDexInterface:Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
-
-    return-object v0
-.end method
-
-.method static synthetic access$2100(Lcom/sec/android/gallery3d/ui/CropView;)Z
+.method static synthetic access$2000(Lcom/sec/android/gallery3d/ui/CropView;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mUseSystemBar:Z
@@ -791,7 +781,7 @@
     return v0
 .end method
 
-.method static synthetic access$2200(Lcom/sec/android/gallery3d/ui/CropView;)Z
+.method static synthetic access$2100(Lcom/sec/android/gallery3d/ui/CropView;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsFullHeightScreenImage:Z
@@ -799,7 +789,7 @@
     return v0
 .end method
 
-.method static synthetic access$2202(Lcom/sec/android/gallery3d/ui/CropView;Z)Z
+.method static synthetic access$2102(Lcom/sec/android/gallery3d/ui/CropView;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsFullHeightScreenImage:Z
@@ -807,7 +797,7 @@
     return p1
 .end method
 
-.method static synthetic access$2300(Lcom/sec/android/gallery3d/ui/CropView;)I
+.method static synthetic access$2200(Lcom/sec/android/gallery3d/ui/CropView;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mActionBarSize:I
@@ -815,7 +805,7 @@
     return v0
 .end method
 
-.method static synthetic access$2400(Lcom/sec/android/gallery3d/ui/CropView;)I
+.method static synthetic access$2300(Lcom/sec/android/gallery3d/ui/CropView;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingTopVertitcal:I
@@ -823,7 +813,7 @@
     return v0
 .end method
 
-.method static synthetic access$2500(Lcom/sec/android/gallery3d/ui/CropView;)I
+.method static synthetic access$2400(Lcom/sec/android/gallery3d/ui/CropView;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingBottomVertitcal:I
@@ -831,7 +821,7 @@
     return v0
 .end method
 
-.method static synthetic access$2600(Lcom/sec/android/gallery3d/ui/CropView;)F
+.method static synthetic access$2500(Lcom/sec/android/gallery3d/ui/CropView;)F
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mTargetRatio:F
@@ -839,7 +829,7 @@
     return v0
 .end method
 
-.method static synthetic access$2700(II)Z
+.method static synthetic access$2600(II)Z
     .locals 1
 
     invoke-static {p0, p1}, Lcom/sec/android/gallery3d/ui/CropView;->isPanoramaImage(II)Z
@@ -849,7 +839,7 @@
     return v0
 .end method
 
-.method static synthetic access$2800(Lcom/sec/android/gallery3d/ui/CropView;)Z
+.method static synthetic access$2700(Lcom/sec/android/gallery3d/ui/CropView;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsSetAsOnCircle:Z
@@ -857,7 +847,7 @@
     return v0
 .end method
 
-.method static synthetic access$2900(Lcom/sec/android/gallery3d/ui/CropView;)Z
+.method static synthetic access$2800(Lcom/sec/android/gallery3d/ui/CropView;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mUseGraceCropViewUI:Z
@@ -865,7 +855,7 @@
     return v0
 .end method
 
-.method static synthetic access$3000(Lcom/sec/android/gallery3d/ui/CropView;)I
+.method static synthetic access$2900(Lcom/sec/android/gallery3d/ui/CropView;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mMinCropRectSize:I
@@ -873,7 +863,7 @@
     return v0
 .end method
 
-.method static synthetic access$3100()I
+.method static synthetic access$3000()I
     .locals 1
 
     sget v0, Lcom/sec/android/gallery3d/ui/CropView;->EDGE_ADJUSTMENT:I
@@ -881,7 +871,7 @@
     return v0
 .end method
 
-.method static synthetic access$3200(Lcom/sec/android/gallery3d/ui/CropView;)F
+.method static synthetic access$3100(Lcom/sec/android/gallery3d/ui/CropView;)F
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mSpotlightRatioX:F
@@ -889,7 +879,7 @@
     return v0
 .end method
 
-.method static synthetic access$3300(Lcom/sec/android/gallery3d/ui/CropView;)F
+.method static synthetic access$3200(Lcom/sec/android/gallery3d/ui/CropView;)F
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mSpotlightRatioY:F
@@ -897,7 +887,7 @@
     return v0
 .end method
 
-.method static synthetic access$3400(Lcom/sec/android/gallery3d/ui/CropView;)Z
+.method static synthetic access$3300(Lcom/sec/android/gallery3d/ui/CropView;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsPhotoFrame:Z
@@ -905,7 +895,7 @@
     return v0
 .end method
 
-.method static synthetic access$3500(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/content/Context;
+.method static synthetic access$3400(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/content/Context;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mContext:Landroid/content/Context;
@@ -913,7 +903,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3600(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+.method static synthetic access$3500(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mPaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
@@ -921,7 +911,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3700()F
+.method static synthetic access$3600()F
     .locals 1
 
     sget v0, Lcom/sec/android/gallery3d/ui/CropView;->OUTLINE_WIDTH:F
@@ -929,7 +919,7 @@
     return v0
 .end method
 
-.method static synthetic access$3800(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
+.method static synthetic access$3700(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/glrenderer/GLPaint;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mMiddlePaint:Lcom/sec/android/gallery3d/glrenderer/GLPaint;
@@ -937,7 +927,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3900()I
+.method static synthetic access$3800()I
     .locals 1
 
     sget v0, Lcom/sec/android/gallery3d/ui/CropView;->COLOR_CIRCLE_INSIDE_OUTLINE:I
@@ -945,7 +935,7 @@
     return v0
 .end method
 
-.method static synthetic access$4000()F
+.method static synthetic access$3900()F
     .locals 1
 
     sget v0, Lcom/sec/android/gallery3d/ui/CropView;->sSelectionRatio:F
@@ -953,7 +943,7 @@
     return v0
 .end method
 
-.method static synthetic access$4100(Lcom/sec/android/gallery3d/ui/CropView;)Z
+.method static synthetic access$4000(Lcom/sec/android/gallery3d/ui/CropView;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsSNote:Z
@@ -961,7 +951,7 @@
     return v0
 .end method
 
-.method static synthetic access$4200(Lcom/sec/android/gallery3d/ui/CropView;)Z
+.method static synthetic access$4100(Lcom/sec/android/gallery3d/ui/CropView;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsSView:Z
@@ -969,7 +959,7 @@
     return v0
 .end method
 
-.method static synthetic access$4300(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/os/Handler;
+.method static synthetic access$4200(Lcom/sec/android/gallery3d/ui/CropView;)Landroid/os/Handler;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mMainHandler:Landroid/os/Handler;
@@ -977,7 +967,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4400(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
+.method static synthetic access$4300(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mHighlightRectangle:Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
@@ -985,7 +975,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4600(Lcom/sec/android/gallery3d/ui/CropView;)I
+.method static synthetic access$4500(Lcom/sec/android/gallery3d/ui/CropView;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingHorizontal:I
@@ -993,7 +983,7 @@
     return v0
 .end method
 
-.method static synthetic access$4700(Lcom/sec/android/gallery3d/ui/CropView;)F
+.method static synthetic access$4600(Lcom/sec/android/gallery3d/ui/CropView;)F
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mCenterX:F
@@ -1001,7 +991,7 @@
     return v0
 .end method
 
-.method static synthetic access$4702(Lcom/sec/android/gallery3d/ui/CropView;F)F
+.method static synthetic access$4602(Lcom/sec/android/gallery3d/ui/CropView;F)F
     .locals 0
 
     iput p1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mCenterX:F
@@ -1009,7 +999,7 @@
     return p1
 .end method
 
-.method static synthetic access$4800(Lcom/sec/android/gallery3d/ui/CropView;)F
+.method static synthetic access$4700(Lcom/sec/android/gallery3d/ui/CropView;)F
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mCenterY:F
@@ -1017,7 +1007,7 @@
     return v0
 .end method
 
-.method static synthetic access$4802(Lcom/sec/android/gallery3d/ui/CropView;F)F
+.method static synthetic access$4702(Lcom/sec/android/gallery3d/ui/CropView;F)F
     .locals 0
 
     iput p1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mCenterY:F
@@ -1025,10 +1015,18 @@
     return p1
 .end method
 
-.method static synthetic access$4900(Lcom/sec/android/gallery3d/ui/CropView;)I
+.method static synthetic access$4800(Lcom/sec/android/gallery3d/ui/CropView;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mImageDefaultMaxWidth:I
+
+    return v0
+.end method
+
+.method static synthetic access$4900(Lcom/sec/android/gallery3d/ui/CropView;)I
+    .locals 1
+
+    iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mImageDefaultMaxHeight:I
 
     return v0
 .end method
@@ -1041,12 +1039,20 @@
     return-object v0
 .end method
 
-.method static synthetic access$5000(Lcom/sec/android/gallery3d/ui/CropView;)I
+.method static synthetic access$5000(Lcom/sec/android/gallery3d/ui/CropView;)Z
     .locals 1
 
-    iget v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mImageDefaultMaxHeight:I
+    iget-boolean v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIgnoreScroll:Z
 
     return v0
+.end method
+
+.method static synthetic access$5002(Lcom/sec/android/gallery3d/ui/CropView;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIgnoreScroll:Z
+
+    return p1
 .end method
 
 .method static synthetic access$502(Lcom/sec/android/gallery3d/ui/CropView;Landroid/graphics/RectF;)Landroid/graphics/RectF;
@@ -1057,23 +1063,23 @@
     return-object p1
 .end method
 
-.method static synthetic access$5100(Lcom/sec/android/gallery3d/ui/CropView;)Z
+.method static synthetic access$5100()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIgnoreScroll:Z
+    sget-boolean v0, Lcom/sec/android/gallery3d/ui/CropView;->SUPPORT_KNOX_DESKTOP:Z
 
     return v0
 .end method
 
-.method static synthetic access$5102(Lcom/sec/android/gallery3d/ui/CropView;Z)Z
-    .locals 0
+.method static synthetic access$5200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
+    .locals 1
 
-    iput-boolean p1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIgnoreScroll:Z
+    iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDexInterface:Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
 
-    return p1
+    return-object v0
 .end method
 
-.method static synthetic access$5200(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/GestureRecognizer;
+.method static synthetic access$5300(Lcom/sec/android/gallery3d/ui/CropView;)Lcom/sec/android/gallery3d/ui/GestureRecognizer;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mGestureRecognizer:Lcom/sec/android/gallery3d/ui/GestureRecognizer;
@@ -1272,8 +1278,7 @@
 
     iget-object v13, v0, Lcom/sec/android/gallery3d/ui/CropView;->mHighlightRectangle:Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mMovingEdges:I
-    invoke-static {v13}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$5300(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;)I
+    invoke-static {v13}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$5400(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;)I
 
     move-result v9
 
@@ -1656,7 +1661,6 @@
 
     move-result-object v14
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
     invoke-static {v13, v14}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$402(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;Landroid/graphics/RectF;)Landroid/graphics/RectF;
 
     :cond_9
@@ -2045,6 +2049,218 @@
     goto :goto_1
 .end method
 
+.method private getScreenSize()Landroid/graphics/Point;
+    .locals 8
+
+    new-instance v2, Landroid/graphics/Point;
+
+    invoke-direct {v2}, Landroid/graphics/Point;-><init>()V
+
+    new-instance v1, Landroid/util/DisplayMetrics;
+
+    invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
+
+    iget-object v5, p0, Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
+
+    const-string/jumbo v6, "window"
+
+    invoke-virtual {v5, v6}, Lcom/sec/android/gallery3d/app/CropImage;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/view/WindowManager;
+
+    invoke-interface {v4}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
+
+    iget v5, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    iput v5, v2, Landroid/graphics/Point;->x:I
+
+    iget v5, v1, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    iput v5, v2, Landroid/graphics/Point;->y:I
+
+    iget-boolean v5, p0, Lcom/sec/android/gallery3d/ui/CropView;->mUseSystemBar:Z
+
+    if-eqz v5, :cond_0
+
+    iget-boolean v5, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsLandscape:Z
+
+    if-eqz v5, :cond_4
+
+    iget v5, v2, Landroid/graphics/Point;->x:I
+
+    invoke-direct {p0}, Lcom/sec/android/gallery3d/ui/CropView;->getNavigationBarHeight()I
+
+    move-result v6
+
+    sub-int/2addr v5, v6
+
+    iput v5, v2, Landroid/graphics/Point;->x:I
+
+    :cond_0
+    :goto_0
+    sget-object v5, Lcom/sec/samsung/gallery/features/FeatureNames;->UseMultiWindow:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v5}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    iget-object v5, p0, Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-virtual {v5}, Lcom/sec/android/gallery3d/app/CropImage;->getMultiWindow()Lcom/sec/android/gallery3d/app/IGalleryMultiWindow;
+
+    move-result-object v5
+
+    invoke-interface {v5}, Lcom/sec/android/gallery3d/app/IGalleryMultiWindow;->getMultiWindowActivity()Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowInterface;
+
+    move-result-object v5
+
+    invoke-interface {v5}, Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowInterface;->isMultiWindow()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    iget-object v5, p0, Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-virtual {v5}, Lcom/sec/android/gallery3d/app/CropImage;->getMultiWindow()Lcom/sec/android/gallery3d/app/IGalleryMultiWindow;
+
+    move-result-object v5
+
+    invoke-interface {v5}, Lcom/sec/android/gallery3d/app/IGalleryMultiWindow;->getMultiWindowActivity()Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowInterface;
+
+    move-result-object v5
+
+    invoke-interface {v5}, Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowInterface;->getRectInfo()Landroid/graphics/Rect;
+
+    move-result-object v3
+
+    iget-object v5, p0, Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-virtual {v5}, Lcom/sec/android/gallery3d/app/CropImage;->getMultiWindow()Lcom/sec/android/gallery3d/app/IGalleryMultiWindow;
+
+    move-result-object v5
+
+    invoke-interface {v5}, Lcom/sec/android/gallery3d/app/IGalleryMultiWindow;->getMultiWindowActivity()Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowInterface;
+
+    move-result-object v5
+
+    invoke-interface {v5}, Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowInterface;->isScaleWindow()Z
+
+    move-result v5
+
+    if-nez v5, :cond_2
+
+    if-eqz v3, :cond_2
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
+
+    move-result v5
+
+    iget v6, v2, Landroid/graphics/Point;->x:I
+
+    if-lt v5, v6, :cond_1
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->height()I
+
+    move-result v5
+
+    iget v6, v2, Landroid/graphics/Point;->y:I
+
+    if-ge v5, v6, :cond_2
+
+    :cond_1
+    invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
+
+    move-result v5
+
+    iput v5, v2, Landroid/graphics/Point;->x:I
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->height()I
+
+    move-result v5
+
+    iput v5, v2, Landroid/graphics/Point;->y:I
+
+    :cond_2
+    sget-boolean v5, Lcom/sec/android/gallery3d/ui/CropView;->SUPPORT_KNOX_DESKTOP:Z
+
+    if-eqz v5, :cond_3
+
+    iget-object v5, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDexInterface:Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
+
+    invoke-interface {v5}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_3
+
+    iget v5, v2, Landroid/graphics/Point;->y:I
+
+    add-int/lit8 v5, v5, -0x30
+
+    iput v5, v2, Landroid/graphics/Point;->y:I
+
+    :cond_3
+    const-string/jumbo v5, "CropView"
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v7, "ScreenWidth :"
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    iget v7, v2, Landroid/graphics/Point;->x:I
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string/jumbo v7, " ScreenHeight :"
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    iget v7, v2, Landroid/graphics/Point;->y:I
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v2
+
+    :cond_4
+    iget v5, v2, Landroid/graphics/Point;->y:I
+
+    invoke-direct {p0}, Lcom/sec/android/gallery3d/ui/CropView;->getNavigationBarHeight()I
+
+    move-result v6
+
+    sub-int/2addr v5, v6
+
+    iput v5, v2, Landroid/graphics/Point;->y:I
+
+    goto/16 :goto_0
+.end method
+
 .method private handleMouseHoverForDeXMode(Landroid/view/MotionEvent;)Z
     .locals 23
 
@@ -2186,7 +2402,7 @@
 
     move-result-object v19
 
-    const v20, 0x7f0b0528
+    const v20, 0x7f0b0529
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2685,11 +2901,9 @@
 .end method
 
 .method private initParams()V
-    .locals 5
+    .locals 4
 
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
 
@@ -2699,28 +2913,7 @@
 
     iput-boolean v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsLandscape:Z
 
-    iget-object v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mActivity:Lcom/sec/android/gallery3d/app/CropImage;
-
-    invoke-virtual {v1}, Lcom/sec/android/gallery3d/app/CropImage;->getLibraryContext()Lcom/sec/android/gallery3d/interfaces/LibraryContext;
-
-    move-result-object v4
-
-    sget-boolean v1, Lcom/sec/android/gallery3d/ui/CropView;->SUPPORT_KNOX_DESKTOP:Z
-
-    if-eqz v1, :cond_1
-
-    iget-object v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDexInterface:Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
-
-    invoke-interface {v1}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    move v1, v2
-
-    :goto_0
-    invoke-static {v4, v2, v1}, Lcom/sec/android/gallery3d/util/GalleryUtils;->getScreenSize(Lcom/sec/android/gallery3d/interfaces/LibraryContext;ZZ)Landroid/graphics/Point;
+    invoke-direct {p0}, Lcom/sec/android/gallery3d/ui/CropView;->getScreenSize()Landroid/graphics/Point;
 
     move-result-object v1
 
@@ -2742,40 +2935,40 @@
 
     iget-boolean v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mUseGraceCropViewUI:Z
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_1
 
-    move v1, v3
+    move v1, v2
 
-    :goto_1
+    :goto_0
     iput v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingHorizontal:I
 
     iget-boolean v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mUseGraceCropViewUI:Z
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_3
 
-    move v1, v3
+    move v1, v2
 
-    :goto_2
+    :goto_1
     iput v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingBottomVertitcal:I
 
     iget-boolean v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mUseGraceCropViewUI:Z
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_5
 
-    move v1, v3
+    move v1, v2
 
-    :goto_3
+    :goto_2
     iput v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingTopVertitcal:I
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mScreenSize:Landroid/graphics/Point;
 
     iget v1, v1, Landroid/graphics/Point;->x:I
 
-    iget v2, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingHorizontal:I
+    iget v3, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingHorizontal:I
 
-    mul-int/lit8 v2, v2, 0x2
+    mul-int/lit8 v3, v3, 0x2
 
-    sub-int/2addr v1, v2
+    sub-int/2addr v1, v3
 
     iput v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mImageDefaultMaxWidth:I
 
@@ -2783,13 +2976,13 @@
 
     iget v1, v1, Landroid/graphics/Point;->y:I
 
-    iget v2, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingTopVertitcal:I
+    iget v3, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingTopVertitcal:I
 
-    sub-int/2addr v1, v2
+    sub-int/2addr v1, v3
 
-    iget v2, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingBottomVertitcal:I
+    iget v3, p0, Lcom/sec/android/gallery3d/ui/CropView;->mDefaultPaddingBottomVertitcal:I
 
-    sub-int/2addr v1, v2
+    sub-int/2addr v1, v3
 
     iput v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mImageDefaultMaxHeight:I
 
@@ -2823,24 +3016,38 @@
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/ui/CropView;->getNavigationBarHeight()I
 
-    move-result v3
+    move-result v2
 
     :cond_0
-    iput v3, p0, Lcom/sec/android/gallery3d/ui/CropView;->mNavigationBarHeight:I
+    iput v2, p0, Lcom/sec/android/gallery3d/ui/CropView;->mNavigationBarHeight:I
 
     return-void
 
     :cond_1
-    move v1, v3
+    iget-boolean v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsLandscape:Z
+
+    if-eqz v1, :cond_2
+
+    const v1, 0x7f0b00cc
+
+    :goto_3
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
 
     goto :goto_0
 
     :cond_2
+    const v1, 0x7f0b00cb
+
+    goto :goto_3
+
+    :cond_3
     iget-boolean v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsLandscape:Z
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_4
 
-    const v1, 0x7f0b00cc
+    const v1, 0x7f0b00ce
 
     :goto_4
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -2849,52 +3056,33 @@
 
     goto :goto_1
 
-    :cond_3
-    const v1, 0x7f0b00cb
+    :cond_4
+    const v1, 0x7f0b00cd
 
     goto :goto_4
 
-    :cond_4
+    :cond_5
+    iget v3, p0, Lcom/sec/android/gallery3d/ui/CropView;->mActionBarSize:I
+
     iget-boolean v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsLandscape:Z
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_6
 
-    const v1, 0x7f0b00ce
+    const v1, 0x7f0b00d0
 
     :goto_5
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v1
 
+    add-int/2addr v1, v3
+
     goto :goto_2
 
-    :cond_5
-    const v1, 0x7f0b00cd
-
-    goto :goto_5
-
     :cond_6
-    iget v2, p0, Lcom/sec/android/gallery3d/ui/CropView;->mActionBarSize:I
-
-    iget-boolean v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mIsLandscape:Z
-
-    if-eqz v1, :cond_7
-
-    const v1, 0x7f0b00d0
-
-    :goto_6
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v1
-
-    add-int/2addr v1, v2
-
-    goto :goto_3
-
-    :cond_7
     const v1, 0x7f0b00cf
 
-    goto :goto_6
+    goto :goto_5
 .end method
 
 .method private initZoomInOutButton()V
@@ -2964,8 +3152,7 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mHighlightRectangle:Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->setInitRectangle(Landroid/graphics/RectF;)V
-    invoke-static {v0, p1}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$4500(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;Landroid/graphics/RectF;)V
+    invoke-static {v0, p1}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$4400(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;Landroid/graphics/RectF;)V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mHighlightRectangle:Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
 
@@ -3206,7 +3393,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b06bd
+    const v5, 0x7f0b06be
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -3289,7 +3476,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->mScale:F
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->access$300(Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;)F
 
     move-result v0
@@ -3319,7 +3505,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->mScale:F
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->access$300(Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;)F
 
     move-result v0
@@ -3704,7 +3889,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mHighlightRectangle:Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$400(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;)Landroid/graphics/RectF;
 
     move-result-object v0
@@ -3769,7 +3953,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/CropView;->mHighlightRectangle:Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$400(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;)Landroid/graphics/RectF;
 
     move-result-object v0
@@ -3844,7 +4027,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mHighlightRectangle:Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$400(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;)Landroid/graphics/RectF;
 
     move-result-object v0
@@ -4002,7 +4184,6 @@
 
     move-object/from16 v32, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->mScale:F
     invoke-static/range {v32 .. v32}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->access$300(Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;)F
 
     move-result v23
@@ -4234,7 +4415,6 @@
 
     move-object/from16 v33, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
     invoke-static/range {v33 .. v33}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$400(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;)Landroid/graphics/RectF;
 
     move-result-object v33
@@ -4269,7 +4449,6 @@
 
     move-object/from16 v33, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->mScale:F
     invoke-static/range {v33 .. v33}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->access$300(Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;)F
 
     move-result v33
@@ -4294,7 +4473,6 @@
 
     move-object/from16 v33, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->mScale:F
     invoke-static/range {v33 .. v33}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->access$300(Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;)F
 
     move-result v33
@@ -4779,7 +4957,6 @@
 
     move-result-object v33
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
     invoke-static/range {v32 .. v33}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$402(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;Landroid/graphics/RectF;)Landroid/graphics/RectF;
 
     :cond_d
@@ -4918,7 +5095,6 @@
 
     move-result-object v33
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
     invoke-static/range {v32 .. v33}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$402(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;Landroid/graphics/RectF;)Landroid/graphics/RectF;
 
     move-object/from16 v0, p0
@@ -4927,7 +5103,6 @@
 
     move-object/from16 v32, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
     invoke-static/range {v32 .. v32}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$400(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;)Landroid/graphics/RectF;
 
     move-result-object v24
@@ -5238,7 +5413,6 @@
 
     move-object/from16 v33, v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
     invoke-static/range {v33 .. v33}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$400(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;)Landroid/graphics/RectF;
 
     move-result-object v33
@@ -5389,7 +5563,6 @@
 
     move-result-object v33
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
     invoke-static/range {v32 .. v33}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$402(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;Landroid/graphics/RectF;)Landroid/graphics/RectF;
 
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/gallery3d/ui/CropView;->invalidate()V
@@ -5602,7 +5775,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/CropView;->mGestureListener:Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->mScale:F
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;->access$300(Lcom/sec/android/gallery3d/ui/CropView$MyGestureListener;)F
 
     move-result v2
@@ -5728,7 +5900,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->mHighlightRect:Landroid/graphics/RectF;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;->access$402(Lcom/sec/android/gallery3d/ui/CropView$HighlightRectangle;Landroid/graphics/RectF;)Landroid/graphics/RectF;
 
     invoke-direct {p0}, Lcom/sec/android/gallery3d/ui/CropView;->check()V
@@ -5887,4 +6058,60 @@
     iput p2, p0, Lcom/sec/android/gallery3d/ui/CropView;->mSpotlightRatioY:F
 
     return-void
+.end method
+
+.method public updateUseNaviBar()V
+    .locals 3
+
+    sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->UseNavigationBar:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v0}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->IsImmersiveMode:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v0}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    iput-boolean v0, p0, Lcom/sec/android/gallery3d/ui/CropView;->mUseSystemBar:Z
+
+    const-string/jumbo v0, "CropView"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "UseNaviBar : "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-boolean v2, p0, Lcom/sec/android/gallery3d/ui/CropView;->mUseSystemBar:Z
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

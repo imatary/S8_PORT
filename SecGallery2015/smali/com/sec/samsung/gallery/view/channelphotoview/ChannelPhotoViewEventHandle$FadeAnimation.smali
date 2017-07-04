@@ -69,7 +69,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewEventHandle$FadeAnimation;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewEventHandle;->mChannelPhotoViewState:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewEventHandle;->access$000(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
     move-result-object v0

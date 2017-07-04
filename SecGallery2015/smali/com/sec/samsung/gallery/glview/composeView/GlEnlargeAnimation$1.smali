@@ -57,12 +57,10 @@
 
     invoke-direct {v6, v7}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mBgDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v5, v6}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$002(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -77,14 +75,12 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mBgDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v6
 
     invoke-virtual {v5, v6}, Landroid/app/ActionBar;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->FEATURE_USE_TAB_UI:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$200()Z
 
     move-result v5
@@ -93,7 +89,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -122,7 +117,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -142,7 +136,6 @@
     :pswitch_1
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -153,7 +146,6 @@
 
     invoke-virtual {v5, v6}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->setShowHideAnimationEnabled(Z)V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->FEATURE_USE_TAB_UI:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$200()Z
 
     move-result v5
@@ -162,7 +154,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -177,7 +168,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -195,7 +185,6 @@
     goto/16 :goto_0
 
     :pswitch_2
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->FEATURE_USE_TAB_UI:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$200()Z
 
     move-result v5
@@ -204,7 +193,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -219,7 +207,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -236,7 +223,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -245,7 +231,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -264,7 +249,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -280,7 +264,6 @@
     invoke-virtual {v5, v0}, Landroid/app/ActionBar;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     :cond_1
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->FEATURE_SHOW_STATUS_BAR:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$300()Z
 
     move-result v5
@@ -289,7 +272,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -306,7 +288,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mIsFullView:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Z
 
     move-result v5
@@ -317,7 +298,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mIsFullView:Z
     invoke-static {v5, v8}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$402(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;Z)Z
 
     goto/16 :goto_0
@@ -325,7 +305,6 @@
     :pswitch_3
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -355,7 +334,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mMainObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v5
@@ -380,7 +358,6 @@
     :pswitch_4
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v5
@@ -399,7 +376,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->mIsFullView:Z
     invoke-static {v5, v6}, Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;->access$402(Lcom/sec/samsung/gallery/glview/composeView/GlEnlargeAnimation;Z)Z
 
     goto/16 :goto_0

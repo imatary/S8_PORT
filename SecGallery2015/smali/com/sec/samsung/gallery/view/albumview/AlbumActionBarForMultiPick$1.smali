@@ -49,7 +49,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v7
@@ -58,7 +57,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->access$100(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v7
@@ -68,7 +66,6 @@
     :cond_0
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->getMaxCount()I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->access$200(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;)I
 
     move-result v1
@@ -79,7 +76,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->access$300(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v7
@@ -99,12 +95,10 @@
 
     iget v8, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v7, v8, v4}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->access$700(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;ILjava/lang/String;)V
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v7
@@ -145,7 +139,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->access$400(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v7
@@ -193,7 +186,6 @@
     :cond_4
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->access$500(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v7
@@ -231,7 +223,6 @@
     :cond_5
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;->access$600(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v7

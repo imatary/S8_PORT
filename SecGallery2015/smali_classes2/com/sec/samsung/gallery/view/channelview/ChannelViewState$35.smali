@@ -52,8 +52,7 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$35;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mCreateBtn:Landroid/widget/ImageButton;
-    invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$10300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
+    invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$10400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
 
     move-result-object v1
 
@@ -75,8 +74,7 @@
     :cond_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$35;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mCreateBtn:Landroid/widget/ImageButton;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$10300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$10400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
 
     move-result-object v0
 
@@ -84,8 +82,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$35;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mCreateBtn:Landroid/widget/ImageButton;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$10300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$10400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Landroid/widget/ImageButton;
 
     move-result-object v0
 
@@ -93,8 +90,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$35;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
 
@@ -102,8 +98,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$35;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15200(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15300(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
 

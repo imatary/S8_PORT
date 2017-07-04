@@ -220,7 +220,6 @@
 
     :cond_6
     :try_start_1
-    # getter for: Lcom/sec/android/gallery3d/data/UnionMergeAlbum;->mUseMaxPageSize:Z
     invoke-static {}, Lcom/sec/android/gallery3d/data/UnionMergeAlbum;->access$000()Z
 
     move-result v8

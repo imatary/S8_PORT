@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemVisualCategory$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemVisualCategory;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemVisualCategory;->mMoreInfoListener:Lcom/sec/android/gallery3d/interfaces/LibraryController$HandleMoreInfoActionListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemVisualCategory;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemVisualCategory;)Lcom/sec/android/gallery3d/interfaces/LibraryController$HandleMoreInfoActionListener;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemVisualCategory$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemVisualCategory;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemVisualCategory;->mMoreInfoListener:Lcom/sec/android/gallery3d/interfaces/LibraryController$HandleMoreInfoActionListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemVisualCategory;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemVisualCategory;)Lcom/sec/android/gallery3d/interfaces/LibraryController$HandleMoreInfoActionListener;
 
     move-result-object v0

@@ -45,7 +45,6 @@
 
     iget v1, p0, Landroid/support/design/widget/Snackbar$9;->val$event:I
 
-    # invokes: Landroid/support/design/widget/Snackbar;->onViewHidden(I)V
     invoke-static {v0, v1}, Landroid/support/design/widget/Snackbar;->access$600(Landroid/support/design/widget/Snackbar;I)V
 
     return-void

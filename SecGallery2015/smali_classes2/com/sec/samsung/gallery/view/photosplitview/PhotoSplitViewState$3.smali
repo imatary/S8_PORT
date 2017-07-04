@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$3;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->saveSortByState(Lcom/sec/samsung/gallery/core/MediaType$SortByType;Lcom/sec/samsung/gallery/core/MediaType$SortByOrderType;)V
     invoke-static {v0, p1, p2}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;->access$900(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;Lcom/sec/samsung/gallery/core/MediaType$SortByType;Lcom/sec/samsung/gallery/core/MediaType$SortByOrderType;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState$3;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewState;

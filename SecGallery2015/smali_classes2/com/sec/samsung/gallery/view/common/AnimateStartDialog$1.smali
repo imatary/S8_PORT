@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/AnimateStartDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/AnimateStartDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AnimateStartDialog;->startMoreService()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/AnimateStartDialog;->access$000(Lcom/sec/samsung/gallery/view/common/AnimateStartDialog;)V
 
     return-void

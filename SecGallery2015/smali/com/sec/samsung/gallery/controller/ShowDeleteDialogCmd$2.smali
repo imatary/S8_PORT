@@ -37,7 +37,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -75,7 +73,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -84,7 +81,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -95,7 +91,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -106,7 +101,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -119,7 +113,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->getPopupTitleStringId()I
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$800(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)I
 
     move-result v7
@@ -130,7 +123,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -149,12 +141,10 @@
 
     invoke-direct {v7, v8}, Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;-><init>(Landroid/content/Context;)V
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6, v7}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$702(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -165,14 +155,12 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v7
@@ -187,7 +175,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -196,14 +183,12 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v7
@@ -216,7 +201,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -225,7 +209,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -240,7 +223,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -249,7 +231,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6
@@ -258,7 +239,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialogHelper:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$700(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v6

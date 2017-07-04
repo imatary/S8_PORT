@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->reload()Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$300(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;)Z
 
     move-result v0

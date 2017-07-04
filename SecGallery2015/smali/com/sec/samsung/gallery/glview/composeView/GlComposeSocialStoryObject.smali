@@ -37,7 +37,6 @@
 
     const/4 v1, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v0
@@ -62,14 +61,12 @@
 
     invoke-virtual {p0, v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject;->setUseTouchEvent(Z)V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mParentObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->addChild(Lcom/sec/android/gallery3d/glcore/GlObject;)I
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mParentObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v0
@@ -134,7 +131,6 @@
 
     new-instance v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v2
@@ -153,7 +149,6 @@
 
     new-instance v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v2
@@ -180,7 +175,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject;->mLikeObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mLikeClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v2
@@ -193,7 +187,6 @@
 
     new-instance v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v2
@@ -220,7 +213,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject;->mLikeCountObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mLikeCountClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v2
@@ -237,7 +229,6 @@
 
     new-instance v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v2
@@ -264,7 +255,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject;->mCommentCountObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mCommentCountClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v2
@@ -281,7 +271,6 @@
 
     new-instance v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mLayer:Lcom/sec/android/gallery3d/glcore/GlLayer;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlLayer;
 
     move-result-object v2
@@ -308,7 +297,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject;->mLastCommentObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->mLastCommentClickListener:Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSocialStoryObject$Builder;)Lcom/sec/android/gallery3d/glcore/GlObject$GlClickListener;
 
     move-result-object v1

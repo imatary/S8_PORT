@@ -44,12 +44,10 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->mListScrollActive:Z
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->access$002(Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v1
@@ -69,7 +67,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->mListScrollActive:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->access$000(Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;)Z
 
     move-result v1
@@ -80,24 +77,20 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->mMoveEvent:Landroid/view/MotionEvent;
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->access$200(Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;)Landroid/view/MotionEvent;
 
     move-result-object v4
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->updateMovement(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     invoke-static {v1, v4}, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->access$300(Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->calcMovement(Landroid/view/MotionEvent;Z)Z
     invoke-static {v1, v0, v3}, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->access$400(Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;Landroid/view/MotionEvent;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v1
@@ -113,7 +106,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->access$100(Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v1
@@ -129,12 +121,10 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->mMSActive:Z
     invoke-static {v1, v3}, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->access$502(Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector$1;->this$0:Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->mDetectListener:Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector$GlPenSelectDetectorListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;->access$600(Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector;)Lcom/sec/android/gallery3d/glcore/GlPenSelectDetector$GlPenSelectDetectorListener;
 
     move-result-object v1

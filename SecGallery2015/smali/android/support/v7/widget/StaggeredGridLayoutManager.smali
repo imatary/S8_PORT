@@ -723,12 +723,10 @@
 
     if-ge v5, v6, :cond_3
 
-    # getter for: Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->mViews:Ljava/util/ArrayList;
     invoke-static {p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->access$200(Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;)Ljava/util/ArrayList;
 
     move-result-object v5
 
-    # getter for: Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->mViews:Ljava/util/ArrayList;
     invoke-static {p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->access$200(Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;)Ljava/util/ArrayList;
 
     move-result-object v6
@@ -775,7 +773,6 @@
 
     if-le v5, v6, :cond_3
 
-    # getter for: Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->mViews:Ljava/util/ArrayList;
     invoke-static {p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->access$200(Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;)Ljava/util/ArrayList;
 
     move-result-object v5
@@ -3472,7 +3469,6 @@
 
     aget-object v5, v5, v3
 
-    # getter for: Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->mViews:Ljava/util/ArrayList;
     invoke-static {v5}, Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->access$200(Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;)Ljava/util/ArrayList;
 
     move-result-object v5
@@ -3512,7 +3508,6 @@
     :cond_3
     iget-object v5, v4, Landroid/support/v7/widget/StaggeredGridLayoutManager$LayoutParams;->mSpan:Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;
 
-    # getter for: Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->mViews:Ljava/util/ArrayList;
     invoke-static {v5}, Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->access$200(Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;)Ljava/util/ArrayList;
 
     move-result-object v5
@@ -3582,7 +3577,6 @@
 
     aget-object v3, v3, v1
 
-    # getter for: Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->mViews:Ljava/util/ArrayList;
     invoke-static {v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->access$200(Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -3622,7 +3616,6 @@
     :cond_3
     iget-object v3, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$LayoutParams;->mSpan:Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;
 
-    # getter for: Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->mViews:Ljava/util/ArrayList;
     invoke-static {v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->access$200(Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -3959,7 +3952,6 @@
 
     aget-object v1, v1, v0
 
-    # getter for: Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->mViews:Ljava/util/ArrayList;
     invoke-static {v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;->access$200(Landroid/support/v7/widget/StaggeredGridLayoutManager$Span;)Ljava/util/ArrayList;
 
     move-result-object v1

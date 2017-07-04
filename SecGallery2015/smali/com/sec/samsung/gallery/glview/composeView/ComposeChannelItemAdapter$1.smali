@@ -54,7 +54,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeChannelItemAdapter$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/ComposeChannelItemAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeChannelItemAdapter;->mDimensionUtil:Lcom/sec/samsung/gallery/util/DimensionUtil;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/ComposeChannelItemAdapter;->access$000(Lcom/sec/samsung/gallery/glview/composeView/ComposeChannelItemAdapter;)Lcom/sec/samsung/gallery/util/DimensionUtil;
 
     move-result-object v4

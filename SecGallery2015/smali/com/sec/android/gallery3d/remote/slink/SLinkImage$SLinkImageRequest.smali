@@ -92,7 +92,6 @@
     :goto_1
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/slink/SLinkImage$SLinkImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/slink/SLinkImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/slink/SLinkImage;->mContentResolver:Landroid/content/ContentResolver;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/slink/SLinkImage;->access$000(Lcom/sec/android/gallery3d/remote/slink/SLinkImage;)Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -152,7 +151,6 @@
     :goto_2
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/slink/SLinkImage$SLinkImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/slink/SLinkImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/slink/SLinkImage;->mSlinkEntry:Lcom/sec/android/gallery3d/remote/slink/SLinkItemEntry;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/slink/SLinkImage;->access$100(Lcom/sec/android/gallery3d/remote/slink/SLinkImage;)Lcom/sec/android/gallery3d/remote/slink/SLinkItemEntry;
 
     move-result-object v1
@@ -165,7 +163,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/slink/SLinkImage$SLinkImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/slink/SLinkImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/slink/SLinkImage;->mSlinkEntry:Lcom/sec/android/gallery3d/remote/slink/SLinkItemEntry;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/slink/SLinkImage;->access$100(Lcom/sec/android/gallery3d/remote/slink/SLinkImage;)Lcom/sec/android/gallery3d/remote/slink/SLinkItemEntry;
 
     move-result-object v1
@@ -178,7 +175,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/slink/SLinkImage$SLinkImageRequest;->this$0:Lcom/sec/android/gallery3d/remote/slink/SLinkImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/slink/SLinkImage;->mSlinkEntry:Lcom/sec/android/gallery3d/remote/slink/SLinkItemEntry;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/slink/SLinkImage;->access$100(Lcom/sec/android/gallery3d/remote/slink/SLinkImage;)Lcom/sec/android/gallery3d/remote/slink/SLinkItemEntry;
 
     move-result-object v1

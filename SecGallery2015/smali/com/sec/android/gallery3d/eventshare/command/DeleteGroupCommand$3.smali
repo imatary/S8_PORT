@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/command/DeleteGroupCommand$3;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DeleteGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DeleteGroupCommand;->mEventState:Lcom/sec/android/gallery3d/eventshare/EventState;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/command/DeleteGroupCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/DeleteGroupCommand;)Lcom/sec/android/gallery3d/eventshare/EventState;
 
     move-result-object v1

@@ -42,7 +42,6 @@
 
     iput-boolean v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlPropagateAnimation$GlComposeAnimObj;->mStartedAnim:Z
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlPropagateAnimation;->getObjRadius(Lcom/sec/android/gallery3d/glcore/GlObject;)F
     invoke-static {p2}, Lcom/sec/samsung/gallery/glview/composeView/GlPropagateAnimation;->access$100(Lcom/sec/android/gallery3d/glcore/GlObject;)F
 
     move-result v0

@@ -57,7 +57,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/drawer/GalleryTabIndicator;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0202e6
+    const v1, 0x7f0202e8
 
     invoke-static {v0, v1}, Landroid/support/v4/content/ContextCompat;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 

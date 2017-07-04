@@ -56,7 +56,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$SlinkItemClickListener;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->mMediaSetAdapter:Lcom/sec/samsung/gallery/view/adapter/SLinkMediaSetAdapter;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$100(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;)Lcom/sec/samsung/gallery/view/adapter/SLinkMediaSetAdapter;
 
     move-result-object v0
@@ -69,7 +68,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$SlinkItemClickListener;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->selectItem(I)V
     invoke-static {v0, p3}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$800(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;I)V
 
     :cond_0

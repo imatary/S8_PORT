@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/DualScreenManager$3;->this$0:Lcom/sec/android/gallery3d/util/DualScreenManager;
 
-    # getter for: Lcom/sec/android/gallery3d/util/DualScreenManager;->mActivity:Lcom/sec/android/gallery3d/app/GalleryActivity;
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/DualScreenManager;->access$100(Lcom/sec/android/gallery3d/util/DualScreenManager;)Lcom/sec/android/gallery3d/app/GalleryActivity;
 
     move-result-object v0
@@ -64,7 +63,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/DualScreenManager$3;->this$0:Lcom/sec/android/gallery3d/util/DualScreenManager;
 
-    # getter for: Lcom/sec/android/gallery3d/util/DualScreenManager;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/DualScreenManager;->access$200(Lcom/sec/android/gallery3d/util/DualScreenManager;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0
@@ -85,7 +83,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/DualScreenManager$3;->this$0:Lcom/sec/android/gallery3d/util/DualScreenManager;
 
-    # getter for: Lcom/sec/android/gallery3d/util/DualScreenManager;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/DualScreenManager;->access$200(Lcom/sec/android/gallery3d/util/DualScreenManager;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0
@@ -94,7 +91,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/DualScreenManager$3;->this$0:Lcom/sec/android/gallery3d/util/DualScreenManager;
 
-    # invokes: Lcom/sec/android/gallery3d/util/DualScreenManager;->setExpandRequestListener()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/DualScreenManager;->access$300(Lcom/sec/android/gallery3d/util/DualScreenManager;)V
 
     goto :goto_0

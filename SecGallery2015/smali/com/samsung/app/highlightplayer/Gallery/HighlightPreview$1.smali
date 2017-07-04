@@ -49,7 +49,6 @@
 
     iget-object v3, p0, Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview$1;->this$0:Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;
 
-    # getter for: Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;->mCurrentEventId:I
     invoke-static {v3}, Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;->access$000(Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;)I
 
     move-result v3
@@ -82,7 +81,6 @@
 
     iget-object v1, p0, Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview$1;->this$0:Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;
 
-    # getter for: Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;->access$100(Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;)Landroid/content/Context;
 
     move-result-object v1

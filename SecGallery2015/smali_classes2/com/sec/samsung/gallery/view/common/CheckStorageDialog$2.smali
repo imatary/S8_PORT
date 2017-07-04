@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog$2;->this$0:Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->callSmartManager()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->access$200(Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;)V
 
     :goto_0
@@ -55,7 +54,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog$2;->this$0:Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->mCtx:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->access$100(Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;)Landroid/content/Context;
 
     move-result-object v0
@@ -69,7 +67,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog$2;->this$0:Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->callMyFiles()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->access$300(Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;)V
 
     goto :goto_0

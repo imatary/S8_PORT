@@ -40,7 +40,6 @@
     :try_start_0
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mItem:Lcom/sec/android/gallery3d/data/MediaObject;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1900(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Lcom/sec/android/gallery3d/data/MediaObject;
 
     move-result-object v7
@@ -51,7 +50,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mItem:Lcom/sec/android/gallery3d/data/MediaObject;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1900(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Lcom/sec/android/gallery3d/data/MediaObject;
 
     move-result-object v7
@@ -68,7 +66,6 @@
     :cond_0
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mItem:Lcom/sec/android/gallery3d/data/MediaObject;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1900(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Lcom/sec/android/gallery3d/data/MediaObject;
 
     move-result-object v7
@@ -164,7 +161,6 @@
 
     iget-object v7, v7, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v7
@@ -175,14 +171,12 @@
 
     iget-object v7, v7, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v7
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mCtx:Landroid/content/Context;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1300(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Landroid/content/Context;
 
     move-result-object v9
@@ -208,7 +202,6 @@
     :cond_2
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mOrgFilePath:Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$2300(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Ljava/lang/String;
 
     move-result-object v7
@@ -217,7 +210,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mOrgFilePath:Ljava/lang/String;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$2300(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Ljava/lang/String;
 
     move-result-object v2
@@ -278,7 +270,6 @@
     :cond_3
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mItem:Lcom/sec/android/gallery3d/data/MediaObject;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1900(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Lcom/sec/android/gallery3d/data/MediaObject;
 
     move-result-object v7
@@ -287,7 +278,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mItem:Lcom/sec/android/gallery3d/data/MediaObject;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1900(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Lcom/sec/android/gallery3d/data/MediaObject;
 
     move-result-object v7
@@ -316,7 +306,6 @@
 
     iget-object v7, v7, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v7
@@ -327,14 +316,12 @@
 
     iget-object v7, v7, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v7
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mCtx:Landroid/content/Context;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1300(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Landroid/content/Context;
 
     move-result-object v9
@@ -377,7 +364,6 @@
 
     iget-object v7, v7, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v7
@@ -388,14 +374,12 @@
 
     iget-object v7, v7, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v7
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mCtx:Landroid/content/Context;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1300(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Landroid/content/Context;
 
     move-result-object v9
@@ -475,7 +459,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mOrgName:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1700(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Ljava/lang/String;
 
     move-result-object v1
@@ -488,7 +471,6 @@
 
     move-result-object v2
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/RenameDialog;->isSameName(Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$1600(Lcom/sec/samsung/gallery/view/common/RenameDialog;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
@@ -498,7 +480,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mAlertDialog:Landroid/app/AlertDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$2000(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Landroid/app/AlertDialog;
 
     move-result-object v0
@@ -515,14 +496,12 @@
 
     const-string/jumbo v1, ""
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mPreviousName:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$1402(Lcom/sec/samsung/gallery/view/common/RenameDialog;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mReachedUpToMax:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$2200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Z
 
     move-result v0
@@ -533,14 +512,12 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mShownError:Z
     invoke-static {v0, v3}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$902(Lcom/sec/samsung/gallery/view/common/RenameDialog;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v0
@@ -551,7 +528,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v0
@@ -563,7 +539,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mAlertEditText:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$300(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -585,7 +560,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mReachedUpToMax:Z
     invoke-static {v0, v3}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$2202(Lcom/sec/samsung/gallery/view/common/RenameDialog;Z)Z
 
     :cond_3
@@ -609,7 +583,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mAlertDialog:Landroid/app/AlertDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$2000(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Landroid/app/AlertDialog;
 
     move-result-object v0
@@ -630,14 +603,12 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mPreviousName:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$1402(Lcom/sec/samsung/gallery/view/common/RenameDialog;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mPreviousName:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$1400(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Ljava/lang/String;
 
     move-result-object v0
@@ -658,7 +629,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mPreviousName:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$1400(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Ljava/lang/String;
 
     move-result-object v1
@@ -671,7 +641,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mPreviousName:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$1402(Lcom/sec/samsung/gallery/view/common/RenameDialog;Ljava/lang/String;)Ljava/lang/String;
 
     goto :goto_0
@@ -681,7 +650,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mPreviousName:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$1400(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Ljava/lang/String;
 
     move-result-object v0
@@ -698,7 +666,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->mAlertDialog:Landroid/app/AlertDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$2000(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)Landroid/app/AlertDialog;
 
     move-result-object v0
@@ -715,7 +682,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mReachedUpToMax:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$2200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Z
 
     move-result v0
@@ -726,7 +692,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mShownError:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$900(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Z
 
     move-result v0
@@ -737,14 +702,12 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mShownError:Z
     invoke-static {v0, v3}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$902(Lcom/sec/samsung/gallery/view/common/RenameDialog;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v0
@@ -755,7 +718,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v0
@@ -767,7 +729,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mAlertEditText:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$300(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -789,7 +750,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mReachedUpToMax:Z
     invoke-static {v0, v3}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$2202(Lcom/sec/samsung/gallery/view/common/RenameDialog;Z)Z
 
     goto/16 :goto_1
@@ -814,7 +774,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->MAX_NAME_LENGTH:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->access$1200(Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;)I
 
     move-result v3
@@ -828,7 +787,6 @@
 
     iget-object v3, v3, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mShowInvalidCharError:Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$1000(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Z
 
     move-result v3
@@ -846,7 +804,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mReachedUpToMax:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$2202(Lcom/sec/samsung/gallery/view/common/RenameDialog;Z)Z
 
     :cond_0
@@ -868,7 +825,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mShowInvalidCharError:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$1000(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Z
 
     move-result v0
@@ -879,21 +835,18 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mReachedUpToMax:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$2202(Lcom/sec/samsung/gallery/view/common/RenameDialog;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mShownError:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$902(Lcom/sec/samsung/gallery/view/common/RenameDialog;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment$8;->this$1:Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v0
@@ -904,7 +857,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mTextInputLayout:Landroid/support/design/widget/TextInputLayout;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$200(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/support/design/widget/TextInputLayout;
 
     move-result-object v0
@@ -916,7 +868,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/RenameDialog$MediaRenameDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/RenameDialog;->mAlertEditText:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$300(Lcom/sec/samsung/gallery/view/common/RenameDialog;)Landroid/widget/EditText;
 
     move-result-object v0

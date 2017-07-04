@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment$6;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->access$200(Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;)Landroid/content/Context;
 
     move-result-object v1

@@ -81,14 +81,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$ImageDecodeListener;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$2700(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$ImageDecodeListener;->this$0:Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$2700(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;)Landroid/os/Handler;
 
     move-result-object v1
@@ -111,7 +109,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer$ImageDecodeListener;->mFuture:Lcom/sec/android/gallery3d/util/Future;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->updateBitmap(Lcom/sec/android/gallery3d/util/Future;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;->access$2600(Lcom/sec/samsung/gallery/view/detailview/spherical/Image360Viewer;Lcom/sec/android/gallery3d/util/Future;)V
 
     return-void

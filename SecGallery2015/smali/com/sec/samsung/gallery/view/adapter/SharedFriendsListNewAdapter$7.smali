@@ -47,7 +47,6 @@
 
     const/4 v2, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->sendNewWebUrl(Ljava/lang/String;Z)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->access$1600(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;Ljava/lang/String;Z)V
 
     return-void

@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mLockTouchEvent:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
 
     move-result v0
@@ -67,7 +66,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoViewPre:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$400(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v0
@@ -76,7 +74,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoViewPre:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$400(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v0
@@ -94,14 +91,12 @@
 .method protected renderBackground(Lcom/sec/android/gallery3d/glrenderer/GLCanvas;)V
     .locals 1
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->FEATURE_USE_BLACK_COLOR_FOR_TFT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$500()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->TFT_BLACK_BACKGROUND_COLOR:[F
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$600()[F
 
     move-result-object v0

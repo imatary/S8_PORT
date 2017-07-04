@@ -1582,7 +1582,7 @@
 
     if-eqz v5, :cond_29
 
-    const v5, 0x7f12027f
+    const v5, 0x7f12027e
 
     const/4 v6, 0x1
 
@@ -2016,7 +2016,7 @@
     goto/16 :goto_6
 
     :cond_29
-    const v5, 0x7f12027f
+    const v5, 0x7f12027e
 
     const/4 v6, 0x0
 
@@ -2055,43 +2055,71 @@
 
 # virtual methods
 .method handleForceRotate()V
-    .locals 3
+    .locals 5
 
-    const/4 v2, 0x0
+    const/4 v4, 0x1
 
-    iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mIsForceRotated:Z
+    const/4 v3, 0x0
 
-    if-eqz v0, :cond_0
+    iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mIsForceRotated:Z
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    if-eqz v1, :cond_0
 
-    const/16 v1, 0xd
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->setRequestedOrientation(I)V
+    const/16 v2, 0xd
 
-    iput-boolean v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mIsForceRotated:Z
+    invoke-virtual {v1, v2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->setRequestedOrientation(I)V
+
+    iput-boolean v3, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mIsForceRotated:Z
 
     :goto_0
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const-string/jumbo v1, "CNRT"
+    const-string/jumbo v2, "CNRT"
 
-    const-string/jumbo v2, "Auto rotate"
+    const-string/jumbo v3, "Auto rotate"
 
-    invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2, v3}, Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-virtual {v0, v2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->setRequestedOrientation(I)V
+    const-string/jumbo v2, "window"
 
-    const/4 v0, 0x1
+    invoke-virtual {v1, v2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    iput-boolean v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mIsForceRotated:Z
+    move-result-object v1
+
+    check-cast v1, Landroid/view/WindowManager;
+
+    invoke-interface {v1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/view/Display;->getRotation()I
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-virtual {v1, v3}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->setRequestedOrientation(I)V
+
+    :goto_1
+    iput-boolean v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mIsForceRotated:Z
 
     goto :goto_0
+
+    :cond_1
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-virtual {v1, v4}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->setRequestedOrientation(I)V
+
+    goto :goto_1
 .end method
 
 .method protected onCreateOptionsMenu(Landroid/view/Menu;)V
@@ -2738,7 +2766,7 @@
 
     if-eqz v20, :cond_14
 
-    const v20, 0x7f120280
+    const v20, 0x7f12027f
 
     move-object/from16 v0, p1
 
@@ -2773,7 +2801,7 @@
     invoke-virtual/range {v20 .. v21}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_f
-    const v20, 0x7f120281
+    const v20, 0x7f120280
 
     move-object/from16 v0, p1
 
@@ -2880,7 +2908,7 @@
     invoke-virtual/range {v20 .. v21}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_12
-    const v20, 0x7f120282
+    const v20, 0x7f120281
 
     move-object/from16 v0, p1
 
@@ -2915,7 +2943,7 @@
     invoke-virtual/range {v20 .. v21}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_13
-    const v20, 0x7f120283
+    const v20, 0x7f120282
 
     move-object/from16 v0, p1
 
@@ -3776,11 +3804,11 @@
         0x7f12007c -> :sswitch_d
         0x7f120277 -> :sswitch_11
         0x7f120278 -> :sswitch_12
-        0x7f12027f -> :sswitch_1a
-        0x7f120280 -> :sswitch_f
-        0x7f120281 -> :sswitch_10
-        0x7f120282 -> :sswitch_13
-        0x7f120283 -> :sswitch_14
+        0x7f12027e -> :sswitch_1a
+        0x7f12027f -> :sswitch_f
+        0x7f120280 -> :sswitch_10
+        0x7f120281 -> :sswitch_13
+        0x7f120282 -> :sswitch_14
         0x7f12028b -> :sswitch_1d
         0x7f12029d -> :sswitch_3
         0x7f1202a1 -> :sswitch_4

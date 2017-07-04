@@ -132,12 +132,10 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # setter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mSurfaceHolder:Landroid/view/SurfaceHolder;
     invoke-static {v0, p1}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$902(Lcom/sec/android/app/ve/preview/ProjectPreview2;Landroid/view/SurfaceHolder;)Landroid/view/SurfaceHolder;
 
     iget-object v0, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # getter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mSurfaceHolder:Landroid/view/SurfaceHolder;
     invoke-static {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$900(Lcom/sec/android/app/ve/preview/ProjectPreview2;)Landroid/view/SurfaceHolder;
 
     move-result-object v0
@@ -148,7 +146,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->isSurfaceAvailable:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$1202(Lcom/sec/android/app/ve/preview/ProjectPreview2;Z)Z
 
     sget-object v0, Lcom/sec/android/app/ve/VEApp;->gExport:Lcom/sec/android/app/ve/export/Export;
@@ -166,7 +163,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # getter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->waitForSurfaceCreation:Z
     invoke-static {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$600(Lcom/sec/android/app/ve/preview/ProjectPreview2;)Z
 
     move-result v0
@@ -177,19 +173,16 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->waitForSurfaceCreation:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$602(Lcom/sec/android/app/ve/preview/ProjectPreview2;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
     iget-object v1, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # getter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mPlayPos:J
     invoke-static {v1}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$500(Lcom/sec/android/app/ve/preview/ProjectPreview2;)J
 
     move-result-wide v2
 
-    # invokes: Lcom/sec/android/app/ve/preview/ProjectPreview2;->_play(J)V
     invoke-static {v0, v2, v3}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$1300(Lcom/sec/android/app/ve/preview/ProjectPreview2;J)V
 
     :cond_2
@@ -252,12 +245,10 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # setter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mSurfaceHolder:Landroid/view/SurfaceHolder;
     invoke-static {v0, p1}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$902(Lcom/sec/android/app/ve/preview/ProjectPreview2;Landroid/view/SurfaceHolder;)Landroid/view/SurfaceHolder;
 
     iget-object v0, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # getter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mSurfaceHolder:Landroid/view/SurfaceHolder;
     invoke-static {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$900(Lcom/sec/android/app/ve/preview/ProjectPreview2;)Landroid/view/SurfaceHolder;
 
     move-result-object v0
@@ -279,7 +270,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # getter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mPreviewCoverDuringExport:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$1000(Lcom/sec/android/app/ve/preview/ProjectPreview2;)Landroid/view/View;
 
     move-result-object v0
@@ -288,7 +278,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # getter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mPreviewCoverDuringExport:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$1000(Lcom/sec/android/app/ve/preview/ProjectPreview2;)Landroid/view/View;
 
     move-result-object v0
@@ -301,7 +290,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # getter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mJustInflated:Z
     invoke-static {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$1100(Lcom/sec/android/app/ve/preview/ProjectPreview2;)Z
 
     move-result v0
@@ -310,7 +298,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # getter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mPreviewCoverDuringExport:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$1000(Lcom/sec/android/app/ve/preview/ProjectPreview2;)Landroid/view/View;
 
     move-result-object v0
@@ -326,7 +313,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # setter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mJustInflated:Z
     invoke-static {v0, v3}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$1102(Lcom/sec/android/app/ve/preview/ProjectPreview2;Z)Z
 
     return-void
@@ -345,7 +331,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->isSurfaceAvailable:Z
     invoke-static {v1, v2}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$402(Lcom/sec/android/app/ve/preview/ProjectPreview2;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
@@ -398,20 +383,17 @@
 
     int-to-long v2, v2
 
-    # setter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mPlayPos:J
     invoke-static {v1, v2, v3}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$502(Lcom/sec/android/app/ve/preview/ProjectPreview2;J)J
 
     iget-object v1, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->waitForSurfaceCreation:Z
     invoke-static {v1, v2}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$602(Lcom/sec/android/app/ve/preview/ProjectPreview2;Z)Z
 
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # invokes: Lcom/sec/android/app/ve/preview/ProjectPreview2;->_stop()V
     invoke-static {v1}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$700(Lcom/sec/android/app/ve/preview/ProjectPreview2;)V
 
     sget-object v1, Lcom/sec/android/app/ve/VEApp;->VESDKInstance:Lcom/samsung/app/video/editor/external/VideoEditor;
@@ -420,7 +402,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/ve/preview/ProjectPreview2$1;->this$0:Lcom/sec/android/app/ve/preview/ProjectPreview2;
 
-    # getter for: Lcom/sec/android/app/ve/preview/ProjectPreview2;->mCurrentState:I
     invoke-static {v1}, Lcom/sec/android/app/ve/preview/ProjectPreview2;->access$800(Lcom/sec/android/app/ve/preview/ProjectPreview2;)I
 
     move-result v1

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/AccountSettingManager$1;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingManager;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingManager;->updateAuthAccounts()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/AccountSettingManager;->access$000(Lcom/sec/android/gallery3d/settings/AccountSettingManager;)V
 
     return-void

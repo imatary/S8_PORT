@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryAbsNotificationFragment$4;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryAbsNotificationFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryAbsNotificationFragment;->mNoItemTextView:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryAbsNotificationFragment;->access$100(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryAbsNotificationFragment;)Landroid/widget/TextView;
 
     move-result-object v0

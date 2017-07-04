@@ -209,7 +209,7 @@
     throw v0
 .end method
 
-.method private f()V
+.method private g()V
     .locals 3
 
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->b:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/b/a;
@@ -268,112 +268,11 @@
 
 
 # virtual methods
-.method public a(JLjava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/a/g/d;
-
-    invoke-direct {v0, p3, p1, p2, p4}, Lcom/samsung/context/sdk/samsunganalytics/a/g/d;-><init>(Ljava/lang/String;JLjava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a(Lcom/samsung/context/sdk/samsunganalytics/a/g/d;)V
-
-    return-void
-.end method
-
-.method public a(Landroid/content/Context;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
-
-    iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
-
-    invoke-direct {v0, p1}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;-><init>(Landroid/content/Context;)V
-
-    iput-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
-
-    :cond_0
-    invoke-direct {p0}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->f()V
-
-    return-void
-.end method
-
-.method public a(Lcom/samsung/context/sdk/samsunganalytics/a/g/d;)V
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
-
-    invoke-virtual {v0, p1}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;->a(Lcom/samsung/context/sdk/samsunganalytics/a/g/d;)V
-
-    :goto_0
-    return-void
-
-    :cond_0
-    iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->b:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/b/a;
-
-    invoke-virtual {v0, p1}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/b/a;->a(Lcom/samsung/context/sdk/samsunganalytics/a/g/d;)V
-
-    goto :goto_0
-.end method
-
-.method public a(Ljava/lang/String;)V
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
-
-    invoke-virtual {v0, p1}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;->a(Ljava/lang/String;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public b()Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
-
-    return v0
-.end method
-
-.method public c()V
-    .locals 4
-
-    iget-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
-
-    const/4 v1, 0x5
-
-    invoke-static {v1}, Lcom/samsung/context/sdk/samsunganalytics/a/i/d;->a(I)J
-
-    move-result-wide v2
-
-    invoke-virtual {v0, v2, v3}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;->a(J)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public d()Ljava/util/Queue;
+.method public a(I)Ljava/util/Queue;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
+            "(I)",
             "Ljava/util/Queue",
             "<",
             "Lcom/samsung/context/sdk/samsunganalytics/a/g/d;",
@@ -383,9 +282,11 @@
 
     iget-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     invoke-virtual {p0}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c()V
+
+    if-gtz p1, :cond_1
 
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
 
@@ -412,7 +313,7 @@
 
     iget-boolean v1, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_3
 
     const-string/jumbo v1, "Database "
 
@@ -451,6 +352,15 @@
     return-object v0
 
     :cond_1
+    iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
+
+    invoke-virtual {v0, p1}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;->a(I)Ljava/util/Queue;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_2
     iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->b:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/b/a;
 
     invoke-virtual {v0}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/b/a;->a()Ljava/util/Queue;
@@ -459,8 +369,149 @@
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
     const-string/jumbo v1, "Queue "
 
     goto :goto_1
+.end method
+
+.method public a(JLjava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/a/g/d;
+
+    invoke-direct {v0, p3, p1, p2, p4}, Lcom/samsung/context/sdk/samsunganalytics/a/g/d;-><init>(Ljava/lang/String;JLjava/lang/String;)V
+
+    invoke-virtual {p0, v0}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a(Lcom/samsung/context/sdk/samsunganalytics/a/g/d;)V
+
+    return-void
+.end method
+
+.method public a(Landroid/content/Context;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
+
+    iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
+
+    invoke-direct {v0, p1}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
+
+    :cond_0
+    invoke-direct {p0}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->g()V
+
+    return-void
+.end method
+
+.method public a(Lcom/samsung/context/sdk/samsunganalytics/a/g/d;)V
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
+
+    invoke-virtual {v0, p1}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;->a(Lcom/samsung/context/sdk/samsunganalytics/a/g/d;)V
+
+    :goto_0
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->b:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/b/a;
+
+    invoke-virtual {v0, p1}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/b/a;->a(Lcom/samsung/context/sdk/samsunganalytics/a/g/d;)V
+
+    goto :goto_0
+.end method
+
+.method public a(Ljava/util/List;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    iget-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
+
+    invoke-virtual {v0, p1}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;->a(Ljava/util/List;)V
+
+    goto :goto_0
+.end method
+
+.method public b()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
+
+    return v0
+.end method
+
+.method public c()V
+    .locals 4
+
+    iget-boolean v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->c:Z
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a:Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;
+
+    const/4 v1, 0x5
+
+    invoke-static {v1}, Lcom/samsung/context/sdk/samsunganalytics/a/i/d;->a(I)J
+
+    move-result-wide v2
+
+    invoke-virtual {v0, v2, v3}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a/a;->a(J)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public d()Ljava/util/Queue;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Queue",
+            "<",
+            "Lcom/samsung/context/sdk/samsunganalytics/a/g/d;",
+            ">;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Lcom/samsung/context/sdk/samsunganalytics/a/g/c/a;->a(I)Ljava/util/Queue;
+
+    move-result-object v0
+
+    return-object v0
 .end method

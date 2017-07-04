@@ -63,7 +63,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$ShowDeleteAlbumDialogTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Landroid/content/Context;
 
     move-result-object v4
@@ -74,7 +73,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$ShowDeleteAlbumDialogTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v4
@@ -142,7 +140,6 @@
     :cond_1
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$ShowDeleteAlbumDialogTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->getTotalSelectedItems()I
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$600(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)I
 
     move-result v3
@@ -172,7 +169,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$ShowDeleteAlbumDialogTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Landroid/app/ProgressDialog;
 
     move-result-object v1
@@ -181,7 +177,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$ShowDeleteAlbumDialogTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Landroid/app/ProgressDialog;
 
     move-result-object v1
@@ -194,7 +189,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$ShowDeleteAlbumDialogTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mProgressDialog:Landroid/app/ProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Landroid/app/ProgressDialog;
 
     move-result-object v1
@@ -204,7 +198,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$ShowDeleteAlbumDialogTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -241,12 +234,10 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd$ShowDeleteAlbumDialogTask;->this$0:Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;)Landroid/content/Context;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->showDialog(Landroid/content/Context;Ljava/lang/String;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$400(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;Landroid/content/Context;Ljava/lang/String;)V
 
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
@@ -271,7 +262,6 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->showProgressDialog(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowDeleteDialogCmd;Z)V
 
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V

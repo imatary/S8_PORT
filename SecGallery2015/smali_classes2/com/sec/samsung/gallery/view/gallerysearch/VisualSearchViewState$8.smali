@@ -93,7 +93,6 @@
 
     move-object v5, v4
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->searchByCategory(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
     invoke-static/range {v0 .. v5}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$1700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
 
     :cond_0
@@ -106,12 +105,10 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$8;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setSearchingState(Z)V
     invoke-static {v0, v7}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$1800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$8;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->searchByKeyword(Ljava/lang/String;Ljava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
     invoke-static {v0, v2, v4, v4}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$1900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;Ljava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
 
     goto :goto_0

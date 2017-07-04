@@ -59,7 +59,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->getPhotoEditorService(Z)Lcom/sec/android/mimage/photoretouching/service/IFinishService;
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->access$000(Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;Z)Lcom/sec/android/mimage/photoretouching/service/IFinishService;
 
     goto :goto_0
@@ -73,7 +72,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->unbindPhotoEditorService()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->access$100(Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;)V
 
     goto :goto_0
@@ -87,7 +85,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->mPhotoEditorService:Lcom/sec/android/mimage/photoretouching/service/IFinishService;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->access$200(Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;)Lcom/sec/android/mimage/photoretouching/service/IFinishService;
 
     move-result-object v1
@@ -97,7 +94,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->mPhotoEditorService:Lcom/sec/android/mimage/photoretouching/service/IFinishService;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;->access$200(Lcom/sec/samsung/gallery/view/detailview/PhotoEditorFinishManager;)Lcom/sec/android/mimage/photoretouching/service/IFinishService;
 
     move-result-object v1

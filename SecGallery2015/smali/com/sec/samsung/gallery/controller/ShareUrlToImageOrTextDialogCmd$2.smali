@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -64,12 +63,10 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->showShareImageDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->dismissDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;)V
 
     goto :goto_0
@@ -77,17 +74,17 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->showShareWebLinkDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->dismissDialog()V
+    invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->access$400(Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;)V
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;
+
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShareUrlToImageOrTextDialogCmd;)V
 
     goto :goto_0
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0

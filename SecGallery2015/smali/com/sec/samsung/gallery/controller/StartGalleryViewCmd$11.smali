@@ -41,7 +41,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd$11;->this$0:Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -56,7 +55,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd$11;->this$0:Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -65,7 +63,6 @@
 
     move-result-object v2
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;->mBundle:Landroid/os/Bundle;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/StartGalleryViewCmd;->access$000()Landroid/os/Bundle;
 
     move-result-object v3

@@ -53,7 +53,6 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    # getter for: Lcom/samsung/android/library/beaconmanager/BleScanManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/library/beaconmanager/BleScanManager;->access$000()Ljava/lang/String;
 
     move-result-object v2
@@ -82,7 +81,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanManager$4;->this$0:Lcom/samsung/android/library/beaconmanager/BleScanManager;
 
-    # invokes: Lcom/samsung/android/library/beaconmanager/BleScanManager;->bind()V
     invoke-static {v0}, Lcom/samsung/android/library/beaconmanager/BleScanManager;->access$500(Lcom/samsung/android/library/beaconmanager/BleScanManager;)V
 
     const-string/jumbo v0, "BeaconManager"
@@ -91,7 +89,6 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    # getter for: Lcom/samsung/android/library/beaconmanager/BleScanManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/library/beaconmanager/BleScanManager;->access$000()Ljava/lang/String;
 
     move-result-object v2

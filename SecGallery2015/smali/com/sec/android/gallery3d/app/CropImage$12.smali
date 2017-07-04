@@ -3,17 +3,27 @@
 .source "CropImage.java"
 
 # interfaces
-.implements Lcom/sec/android/gallery3d/glcore/LibGLRootView$UpdateBackscreenListener;
+.implements Lcom/sec/android/gallery3d/util/FutureListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/gallery3d/app/CropImage;->createUpdateBackScreenListener()Lcom/sec/android/gallery3d/glcore/LibGLRootView$UpdateBackscreenListener;
+    value = Lcom/sec/android/gallery3d/app/CropImage;->initializeData()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
     name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/sec/android/gallery3d/util/FutureListener",
+        "<",
+        "Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;",
+        ">;"
+    }
 .end annotation
 
 
@@ -32,57 +42,105 @@
     return-void
 .end method
 
-.method private getTimeDelay()I
-    .locals 1
 
-    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$12;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+# virtual methods
+.method public onFutureDone(Lcom/sec/android/gallery3d/util/Future;)V
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/sec/android/gallery3d/util/Future",
+            "<",
+            "Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;",
+            ">;)V"
+        }
+    .end annotation
 
-    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/CropImage;->getMultiWindow()Lcom/sec/android/gallery3d/app/IGalleryMultiWindow;
+    const-wide/16 v4, 0x3a98
+
+    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$12;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+
+    const/4 v2, 0x0
+
+    invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$1202(Lcom/sec/android/gallery3d/app/CropImage;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
+
+    invoke-interface {p1}, Lcom/sec/android/gallery3d/util/Future;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/sec/android/gallery3d/app/IGalleryMultiWindow;->getMultiWindowActivity()Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowInterface;
+    check-cast v0, Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;
 
-    move-result-object v0
+    invoke-interface {p1}, Lcom/sec/android/gallery3d/util/Future;->isCancelled()Z
 
-    invoke-interface {v0}, Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowInterface;->isMultiWindow()Z
+    move-result v1
 
-    move-result v0
+    if-eqz v1, :cond_1
 
     if-eqz v0, :cond_0
 
-    const/16 v0, 0x190
-
-    :goto_0
-    return v0
+    invoke-virtual {v0}, Lcom/sec/samsung/gallery/decoder/regiondecoder/RegionDecoder;->recycle()V
 
     :cond_0
-    const/4 v0, 0x0
+    :goto_0
+    return-void
+
+    :cond_1
+    if-eqz v0, :cond_2
+
+    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$12;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$2800(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/os/Handler;
+
+    move-result-object v1
+
+    const/16 v2, 0x66
+
+    invoke-virtual {v1, v2, v4, v5}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+
+    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$12;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$2800(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/os/Handler;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$12;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$2800(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/os/Handler;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3, v0}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+
+    move-result-object v2
+
+    const-wide/16 v4, 0x12c
+
+    invoke-virtual {v1, v2, v4, v5}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     goto :goto_0
-.end method
 
+    :cond_2
+    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$12;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-# virtual methods
-.method public updateInPauseState()V
-    .locals 4
+    invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$2800(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/os/Handler;
 
-    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$12;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+    move-result-object v1
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mMainHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2800(Lcom/sec/android/gallery3d/app/CropImage;)Landroid/os/Handler;
+    const/16 v2, 0x65
 
-    move-result-object v0
+    invoke-virtual {v1, v2, v4, v5}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    const/16 v1, 0x9
+    iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$12;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    invoke-direct {p0}, Lcom/sec/android/gallery3d/app/CropImage$12;->getTimeDelay()I
+    iget-object v2, p0, Lcom/sec/android/gallery3d/app/CropImage$12;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    move-result v2
+    invoke-static {v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$2900(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/util/Future;
 
-    int-to-long v2, v2
+    move-result-object v2
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-static {v1, v2}, Lcom/sec/android/gallery3d/app/CropImage;->access$1002(Lcom/sec/android/gallery3d/app/CropImage;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
-    return-void
+    goto :goto_0
 .end method

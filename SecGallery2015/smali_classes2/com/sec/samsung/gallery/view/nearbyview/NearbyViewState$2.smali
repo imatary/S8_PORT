@@ -36,14 +36,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$2;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->mMediaSetAdapter:Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$200(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)Lcom/sec/samsung/gallery/view/adapter/NearbyMediaSetAdapter;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState$2;->this$0:Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->updateNearbyItems()Ljava/util/List;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;->access$100(Lcom/sec/samsung/gallery/view/nearbyview/NearbyViewState;)Ljava/util/List;
 
     move-result-object v1

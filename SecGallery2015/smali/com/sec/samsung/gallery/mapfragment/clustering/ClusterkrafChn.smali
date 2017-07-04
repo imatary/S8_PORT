@@ -244,7 +244,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->innerCallbackListener:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$InnerCallbackListener;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$InnerCallbackListener;->clusteringOnCameraChangeListener:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusteringOnCameraChangeListenerChn;
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$InnerCallbackListener;->access$100(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$InnerCallbackListener;)Lcom/sec/samsung/gallery/mapfragment/clustering/ClusteringOnCameraChangeListenerChn;
 
     move-result-object v0
@@ -1215,7 +1214,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0b06b4
+    const v6, 0x7f0b06b5
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimension(I)F
 

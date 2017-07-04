@@ -109,7 +109,6 @@
 .method public getItemId(I)J
     .locals 2
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mIdList:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1400()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -120,7 +119,6 @@
 
     if-le v0, p1, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mIdList:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1400()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -155,7 +153,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListAdatper;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mInflater:Landroid/view/LayoutInflater;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1500(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/view/LayoutInflater;
 
     move-result-object v3
@@ -208,7 +205,6 @@
 
     iput-object v3, v2, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$ViewHolder;->view:Landroid/view/View;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->FEATURE_MOVE_COPY_ALBUM_THUMBNAIL:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1700()Z
 
     move-result v3
@@ -223,7 +219,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListAdatper;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1800(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)I
 
     move-result v4
@@ -238,7 +233,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListAdatper;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1800(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)I
 
     move-result v4
@@ -262,7 +256,6 @@
     :try_start_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListAdatper;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->createAddIcon(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$ViewHolder;)Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$ViewHolder;
     invoke-static {v3, v2}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1900(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$ViewHolder;)Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$ViewHolder;
 
     move-result-object v2
@@ -353,7 +346,6 @@
 
     :cond_4
     :try_start_1
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2000()Z
 
     move-result v3
@@ -371,7 +363,6 @@
     if-le p1, v3, :cond_6
 
     :cond_5
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2000()Z
 
     move-result v3
@@ -389,7 +380,6 @@
     :cond_6
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$EventListAdatper;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->createEventIcon(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$ViewHolder;I)Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$ViewHolder;
     invoke-static {v3, v2, p1}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$ViewHolder;I)Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$ViewHolder;
 
     move-result-object v2
@@ -430,7 +420,6 @@
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mIdList:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1400()Ljava/util/ArrayList;
 
     move-result-object v4
@@ -457,7 +446,6 @@
 
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mIdList:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1400()Ljava/util/ArrayList;
 
     move-result-object v4
@@ -507,7 +495,6 @@
 
     move-result v0
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mIdList:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1400()Ljava/util/ArrayList;
 
     move-result-object v4

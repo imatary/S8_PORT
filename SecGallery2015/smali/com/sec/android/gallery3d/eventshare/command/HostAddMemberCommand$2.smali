@@ -71,7 +71,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;->mNotifier:Lcom/sec/android/gallery3d/eventshare/utils/EventShareNotifier;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/HostAddMemberCommand;)Lcom/sec/android/gallery3d/eventshare/utils/EventShareNotifier;
 
     move-result-object v0

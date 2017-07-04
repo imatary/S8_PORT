@@ -57,6 +57,8 @@
 
 .field private mShareListAdapter:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
+.field private final mSharedFriendsListViewMediator:Lorg/puremvc/java/multicore/patterns/mediator/Mediator;
+
 .field private phoneNumbers:Ljava/lang/String;
 
 
@@ -76,7 +78,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 2
+    .locals 3
 
     const/4 v1, 0x0
 
@@ -99,6 +101,16 @@
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mNeedIdleProcess:Z
+
+    new-instance v0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$9;
+
+    const-string/jumbo v1, "GALLERY_SHARED_FRIENDS_VIEW"
+
+    iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-direct {v0, p0, v1, v2}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$9;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Ljava/lang/String;Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mSharedFriendsListViewMediator:Lorg/puremvc/java/multicore/patterns/mediator/Mediator;
 
     return-void
 .end method
@@ -143,7 +155,23 @@
     return-void
 .end method
 
-.method static synthetic access$1300(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Z)V
+.method static synthetic access$1300()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->FEATURE_USE_NAVIGATION_BAR:Z
+
+    return v0
+.end method
+
+.method static synthetic access$1400(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->updateNavigationBarLayout()V
+
+    return-void
+.end method
+
+.method static synthetic access$1500(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Z)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->setMultiWindowMode(Z)V
@@ -151,7 +179,7 @@
     return-void
 .end method
 
-.method static synthetic access$1400(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)I
+.method static synthetic access$1600(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mChannelID:I
@@ -159,7 +187,7 @@
     return v0
 .end method
 
-.method static synthetic access$1500(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+.method static synthetic access$1700(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->refreshListView()V
@@ -167,7 +195,7 @@
     return-void
 .end method
 
-.method static synthetic access$1600(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
+.method static synthetic access$1800(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
@@ -175,26 +203,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$1700(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Landroid/app/Dialog;
+.method static synthetic access$1900(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Landroid/app/Dialog;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mErrorDialog:Landroid/app/Dialog;
-
-    return-object v0
-.end method
-
-.method static synthetic access$1800(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showErrorDialog()V
-
-    return-void
-.end method
-
-.method static synthetic access$1900(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -207,7 +219,15 @@
     return-void
 .end method
 
-.method static synthetic access$2000(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$2000(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showErrorDialog()V
+
+    return-void
+.end method
+
+.method static synthetic access$2100(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -215,7 +235,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$2100(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Landroid/content/Intent;)V
+.method static synthetic access$2200(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$2300(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Landroid/content/Intent;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->addSharingMember(Landroid/content/Intent;)V
@@ -223,7 +251,7 @@
     return-void
 .end method
 
-.method static synthetic access$2200(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+.method static synthetic access$2400(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showNetworkErrorDialog()V
@@ -550,7 +578,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v2, 0x7f0a07b9
+    const v2, 0x7f0a07bf
 
     const/4 v3, 0x0
 
@@ -779,7 +807,7 @@
 
     iget-object v2, v0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v3, 0x7f0a07bc
+    const v3, 0x7f0a07c2
 
     const/4 v4, 0x0
 
@@ -1260,7 +1288,7 @@
 
     if-eqz v0, :cond_3
 
-    const v4, 0x7f0a07bb
+    const v4, 0x7f0a07c1
 
     :goto_3
     new-array v5, v5, [Ljava/lang/Object;
@@ -1280,7 +1308,7 @@
     goto :goto_2
 
     :cond_3
-    const v4, 0x7f0a07ba
+    const v4, 0x7f0a07c0
 
     goto :goto_3
 .end method
@@ -1329,7 +1357,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v3, 0x7f0a07be
+    const v3, 0x7f0a07c4
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -1378,7 +1406,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v3, 0x7f0a07bf
+    const v3, 0x7f0a07c5
 
     const/4 v4, 0x0
 
@@ -2691,9 +2719,9 @@
 
     check-cast v1, Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowInterface;
 
-    new-instance v2, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$9;
+    new-instance v2, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$10;
 
-    invoke-direct {v2, p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$9;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+    invoke-direct {v2, p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$10;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
 
     invoke-interface {v1, v2}, Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowInterface;->setStateChangeListener(Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowStateChangeInterface;)V
 
@@ -2872,9 +2900,9 @@
 
     const v3, 0x7f0a02f4
 
-    new-instance v4, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$10;
+    new-instance v4, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$11;
 
-    invoke-direct {v4, p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$10;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+    invoke-direct {v4, p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$11;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
 
     invoke-virtual {v2, v3, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2945,9 +2973,9 @@
 
     const v4, 0x7f0a02f4
 
-    new-instance v5, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$11;
+    new-instance v5, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$12;
 
-    invoke-direct {v5, p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$11;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+    invoke-direct {v5, p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$12;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
 
     invoke-virtual {v3, v4, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3112,9 +3140,9 @@
 
     const v4, 0x7f0a02f4
 
-    new-instance v5, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$12;
+    new-instance v5, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$13;
 
-    invoke-direct {v5, p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$12;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+    invoke-direct {v5, p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$13;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
 
     invoke-virtual {v3, v4, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3236,7 +3264,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0b07ef
+    const v12, 0x7f0b07f0
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3307,9 +3335,9 @@
 
     const v11, 0x7f0a02f4
 
-    new-instance v12, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$14;
+    new-instance v12, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$15;
 
-    invoke-direct {v12, p0, p2}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$14;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Landroid/content/Intent;)V
+    invoke-direct {v12, p0, p2}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$15;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Landroid/content/Intent;)V
 
     invoke-virtual {v9, v11, v12}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3317,9 +3345,9 @@
 
     const v11, 0x7f0a0080
 
-    new-instance v12, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$13;
+    new-instance v12, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$14;
 
-    invoke-direct {v12, p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$13;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+    invoke-direct {v12, p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$14;-><init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
 
     invoke-virtual {v9, v11, v12}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3631,13 +3659,7 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-virtual {v6}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v6
-
-    const v7, 0x7f0b0240
-
-    invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-static {v6}, Lcom/sec/android/gallery3d/util/GalleryUtils;->getNavigationBarMargin(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)I
 
     move-result v2
 
@@ -4200,6 +4222,12 @@
     iput-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mDownloadStateReceiver:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;
 
     :cond_0
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mGalleryFacade:Lorg/puremvc/java/multicore/patterns/facade/Facade;
+
+    const-string/jumbo v1, "GALLERY_SHARED_FRIENDS_VIEW"
+
+    invoke-virtual {v0, v1}, Lorg/puremvc/java/multicore/patterns/facade/Facade;->removeMediator(Ljava/lang/String;)Lorg/puremvc/java/multicore/interfaces/IMediator;
+
     invoke-super {p0}, Lcom/sec/android/gallery3d/app/ActivityState;->onPause()V
 
     const-string/jumbo v0, "Gallery_Performance"
@@ -4433,6 +4461,12 @@
     invoke-virtual {v1}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->refresh()V
 
     :cond_2
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mGalleryFacade:Lorg/puremvc/java/multicore/patterns/facade/Facade;
+
+    iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mSharedFriendsListViewMediator:Lorg/puremvc/java/multicore/patterns/mediator/Mediator;
+
+    invoke-virtual {v1, v2}, Lorg/puremvc/java/multicore/patterns/facade/Facade;->registerMediator(Lorg/puremvc/java/multicore/interfaces/IMediator;)V
+
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->getSAScreenId()Ljava/lang/String;
 
     move-result-object v1

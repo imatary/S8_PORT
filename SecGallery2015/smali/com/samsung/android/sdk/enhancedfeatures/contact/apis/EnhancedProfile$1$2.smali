@@ -39,7 +39,6 @@
 
     const-string/jumbo v0, "onReceive Contact Push OnDownloadImageListener Errors"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -74,7 +73,6 @@
 
     move-result-object v0
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -103,7 +101,6 @@
 
     move-result-object v0
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v1

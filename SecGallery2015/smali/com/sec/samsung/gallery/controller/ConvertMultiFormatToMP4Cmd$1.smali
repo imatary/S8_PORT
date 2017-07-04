@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd$1;->this$0:Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->callMyFiles()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;->access$200(Lcom/sec/samsung/gallery/controller/ConvertMultiFormatToMP4Cmd;)V
 
     return-void

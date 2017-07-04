@@ -79,12 +79,10 @@
 
     iget-wide v10, v3, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateInfo;->version:J
 
-    # setter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mSourceVersion:J
     invoke-static {v9, v10, v11}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$402(Lcom/sec/android/gallery3d/app/AlbumDataLoader;J)J
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mSize:I
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$500(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v9
@@ -97,12 +95,10 @@
 
     iget v10, v3, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateInfo;->size:I
 
-    # setter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mSize:I
     invoke-static {v9, v10}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$502(Lcom/sec/android/gallery3d/app/AlbumDataLoader;I)I
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mDataListener:Lcom/sec/android/gallery3d/app/AlbumDataLoader$DataListener;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$1300(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)Lcom/sec/android/gallery3d/app/AlbumDataLoader$DataListener;
 
     move-result-object v9
@@ -111,14 +107,12 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mDataListener:Lcom/sec/android/gallery3d/app/AlbumDataLoader$DataListener;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$1300(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)Lcom/sec/android/gallery3d/app/AlbumDataLoader$DataListener;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mSize:I
     invoke-static {v10}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$500(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v10
@@ -128,14 +122,12 @@
     :cond_0
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mContentEnd:I
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$700(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mSize:I
     invoke-static {v10}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$500(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v10
@@ -146,25 +138,21 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mSize:I
     invoke-static {v10}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$500(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v10
 
-    # setter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mContentEnd:I
     invoke-static {v9, v10}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$702(Lcom/sec/android/gallery3d/app/AlbumDataLoader;I)I
 
     :cond_1
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mActiveEnd:I
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$1400(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mSize:I
     invoke-static {v10}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$500(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v10
@@ -175,12 +163,10 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mSize:I
     invoke-static {v10}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$500(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v10
 
-    # setter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mActiveEnd:I
     invoke-static {v9, v10}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$1402(Lcom/sec/android/gallery3d/app/AlbumDataLoader;I)I
 
     :cond_2
@@ -190,7 +176,6 @@
 
     const-wide/16 v10, -0x1
 
-    # setter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mFailedVersion:J
     invoke-static {v9, v10, v11}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$102(Lcom/sec/android/gallery3d/app/AlbumDataLoader;J)J
 
     if-eqz v6, :cond_3
@@ -210,7 +195,6 @@
 
     iget-wide v10, v3, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateInfo;->version:J
 
-    # setter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mFailedVersion:J
     invoke-static {v9, v10, v11}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$102(Lcom/sec/android/gallery3d/app/AlbumDataLoader;J)J
 
     const-string/jumbo v9, "AlbumDataAdapter"
@@ -227,7 +211,6 @@
 
     iget-object v11, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mFailedVersion:J
     invoke-static {v11}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$100(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)J
 
     move-result-wide v12
@@ -250,7 +233,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mContentStart:I
     invoke-static {v10}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$800(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v10
@@ -269,7 +251,6 @@
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mContentEnd:I
     invoke-static {v10}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$700(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v10
@@ -287,7 +268,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mSetVersion:[J
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$600(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)[J
 
     move-result-object v9
@@ -322,7 +302,6 @@
 
     iget-object v11, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mFailedVersion:J
     invoke-static {v11}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$100(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)J
 
     move-result-wide v12
@@ -350,7 +329,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mItemVersion:[J
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$1500(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)[J
 
     move-result-object v9
@@ -363,7 +341,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mItemVersion:[J
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$1500(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)[J
 
     move-result-object v9
@@ -372,7 +349,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mData:[Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$1600(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)[Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v9
@@ -381,7 +357,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mDataListener:Lcom/sec/android/gallery3d/app/AlbumDataLoader$DataListener;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$1300(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)Lcom/sec/android/gallery3d/app/AlbumDataLoader$DataListener;
 
     move-result-object v9
@@ -390,7 +365,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mActiveStart:I
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$1700(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v9
@@ -399,7 +373,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mActiveEnd:I
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$1400(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)I
 
     move-result v9
@@ -408,7 +381,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/app/AlbumDataLoader$UpdateContent;->this$0:Lcom/sec/android/gallery3d/app/AlbumDataLoader;
 
-    # getter for: Lcom/sec/android/gallery3d/app/AlbumDataLoader;->mDataListener:Lcom/sec/android/gallery3d/app/AlbumDataLoader$DataListener;
     invoke-static {v9}, Lcom/sec/android/gallery3d/app/AlbumDataLoader;->access$1300(Lcom/sec/android/gallery3d/app/AlbumDataLoader;)Lcom/sec/android/gallery3d/app/AlbumDataLoader$DataListener;
 
     move-result-object v9

@@ -48,7 +48,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$1;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$000(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -77,7 +76,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$1;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->mViewObservable:Lcom/sec/samsung/gallery/view/ViewObservable;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$100(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;)Lcom/sec/samsung/gallery/view/ViewObservable;
 
     move-result-object v1

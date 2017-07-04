@@ -92,7 +92,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/VideoPlayCmd$PlayUriTask;->this$0:Lcom/sec/samsung/gallery/controller/VideoPlayCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->access$000(Lcom/sec/samsung/gallery/controller/VideoPlayCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -113,7 +112,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/VideoPlayCmd$PlayUriTask;->this$0:Lcom/sec/samsung/gallery/controller/VideoPlayCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->access$000(Lcom/sec/samsung/gallery/controller/VideoPlayCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -246,7 +244,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/VideoPlayCmd$PlayUriTask;->this$0:Lcom/sec/samsung/gallery/controller/VideoPlayCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->access$000(Lcom/sec/samsung/gallery/controller/VideoPlayCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -260,7 +257,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/VideoPlayCmd$PlayUriTask;->this$0:Lcom/sec/samsung/gallery/controller/VideoPlayCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->access$000(Lcom/sec/samsung/gallery/controller/VideoPlayCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -284,7 +280,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/VideoPlayCmd$PlayUriTask;->this$0:Lcom/sec/samsung/gallery/controller/VideoPlayCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->access$000(Lcom/sec/samsung/gallery/controller/VideoPlayCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -299,7 +294,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/VideoPlayCmd$PlayUriTask;->this$0:Lcom/sec/samsung/gallery/controller/VideoPlayCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->mVideoPlay:Lcom/sec/samsung/gallery/controller/VideoPlay;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->access$100(Lcom/sec/samsung/gallery/controller/VideoPlayCmd;)Lcom/sec/samsung/gallery/controller/VideoPlay;
 
     move-result-object v1
@@ -313,7 +307,6 @@
     :cond_4
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/VideoPlayCmd$PlayUriTask;->this$0:Lcom/sec/samsung/gallery/controller/VideoPlayCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->mVideoPlay:Lcom/sec/samsung/gallery/controller/VideoPlay;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->access$100(Lcom/sec/samsung/gallery/controller/VideoPlayCmd;)Lcom/sec/samsung/gallery/controller/VideoPlay;
 
     move-result-object v1
@@ -322,7 +315,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/VideoPlayCmd$PlayUriTask;->this$0:Lcom/sec/samsung/gallery/controller/VideoPlayCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->launchedFromSetupWidzard()Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->access$200(Lcom/sec/samsung/gallery/controller/VideoPlayCmd;)Z
 
     move-result v3
@@ -353,7 +345,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/VideoPlayCmd$PlayUriTask;->this$0:Lcom/sec/samsung/gallery/controller/VideoPlayCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->access$000(Lcom/sec/samsung/gallery/controller/VideoPlayCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -362,7 +353,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/VideoPlayCmd$PlayUriTask;->this$0:Lcom/sec/samsung/gallery/controller/VideoPlayCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/VideoPlayCmd;->access$000(Lcom/sec/samsung/gallery/controller/VideoPlayCmd;)Landroid/content/Context;
 
     move-result-object v3

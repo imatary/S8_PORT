@@ -327,14 +327,12 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->contentLoader:Lcom/sec/android/gallery3d/ui/BitmapLoader;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$100(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/ui/BitmapLoader;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->contentLoader:Lcom/sec/android/gallery3d/ui/BitmapLoader;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$100(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/ui/BitmapLoader;
 
     move-result-object v1
@@ -361,14 +359,12 @@
     return-void
 
     :cond_0
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->contentLoader:Lcom/sec/android/gallery3d/ui/BitmapLoader;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$100(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/ui/BitmapLoader;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->contentLoader:Lcom/sec/android/gallery3d/ui/BitmapLoader;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$100(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/ui/BitmapLoader;
 
     move-result-object v3
@@ -376,14 +372,12 @@
     invoke-virtual {v3}, Lcom/sec/android/gallery3d/ui/BitmapLoader;->recycle()V
 
     :cond_1
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->bitmapTexture:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$000(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
     move-result-object v3
 
     if-eqz v3, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->bitmapTexture:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$000(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
     move-result-object v3
@@ -457,7 +451,6 @@
 
     invoke-direct {v2, p0, p1, v3}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;-><init>(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;ILcom/sec/android/gallery3d/data/MediaItem;)V
 
-    # setter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->contentLoader:Lcom/sec/android/gallery3d/ui/BitmapLoader;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$102(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;Lcom/sec/android/gallery3d/ui/BitmapLoader;)Lcom/sec/android/gallery3d/ui/BitmapLoader;
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mData:[Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;
@@ -570,14 +563,12 @@
 
     if-eqz v3, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->contentLoader:Lcom/sec/android/gallery3d/ui/BitmapLoader;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$100(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/ui/BitmapLoader;
 
     move-result-object v3
 
     invoke-virtual {v3}, Lcom/sec/android/gallery3d/ui/BitmapLoader;->startLoad()V
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->contentLoader:Lcom/sec/android/gallery3d/ui/BitmapLoader;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$100(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/ui/BitmapLoader;
 
     move-result-object v3
@@ -835,7 +826,6 @@
 
     if-eqz v0, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->bitmapTexture:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$000(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
     move-result-object v4
@@ -844,7 +834,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mTileUploader:Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Uploader;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->bitmapTexture:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$000(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
     move-result-object v5
@@ -920,7 +909,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->bitmapTexture:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$000(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
     move-result-object v1
@@ -929,7 +917,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mTileUploader:Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Uploader;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->bitmapTexture:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$000(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
     move-result-object v2

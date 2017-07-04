@@ -65,7 +65,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/gallery3d/data/EventAlbumManager;->mCurLocality:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/data/EventAlbumManager;->access$402(Lcom/sec/android/gallery3d/data/EventAlbumManager;Ljava/lang/String;)Ljava/lang/String;
 
     return-void

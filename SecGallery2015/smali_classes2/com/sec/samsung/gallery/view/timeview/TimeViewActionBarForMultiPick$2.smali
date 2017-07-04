@@ -41,14 +41,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mIsDoneEnabled:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Z
 
     move-result v1
@@ -57,14 +55,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mMenu:Landroid/view/Menu;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$000(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Landroid/view/Menu;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mIsDoneEnabled:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Z
 
     move-result v1

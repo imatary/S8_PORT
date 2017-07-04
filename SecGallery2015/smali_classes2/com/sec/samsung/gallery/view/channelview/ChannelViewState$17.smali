@@ -39,8 +39,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$17;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startNotificationViewMode()V
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$11000(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
+    invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$11100(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
 
     return-void
 .end method

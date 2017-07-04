@@ -55,7 +55,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v4
@@ -70,7 +69,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v4
@@ -93,7 +91,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v4
@@ -118,7 +115,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v1
@@ -129,7 +125,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v5
@@ -147,7 +142,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v1
@@ -167,7 +161,6 @@
     :cond_3
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v4
@@ -178,7 +171,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v6
@@ -198,7 +190,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v7
@@ -248,7 +239,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v1
@@ -261,7 +251,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v1
@@ -276,7 +265,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v1
@@ -291,7 +279,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->exitSearchMode()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$700(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)V
 
     goto :goto_0
@@ -299,7 +286,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v1
@@ -315,7 +301,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v1
@@ -338,7 +323,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v1
@@ -355,7 +339,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v1
@@ -372,7 +355,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v1
@@ -392,7 +374,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v2
@@ -431,7 +412,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->selectItem(I)I
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$400(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;I)I
 
     :goto_0
@@ -440,7 +420,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v0
@@ -467,7 +446,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v0
@@ -493,7 +471,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v0
@@ -517,7 +494,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle$PhotoViewNormal;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->data:Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewData;
 
     move-result-object v0
@@ -546,7 +522,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->selectItem(Lcom/sec/android/gallery3d/data/MediaItem;IZ)I
     invoke-static {v0, p1, p2, v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;->access$600(Lcom/sec/samsung/gallery/view/photoview/PhotoViewEventHandle;Lcom/sec/android/gallery3d/data/MediaItem;IZ)I
 
     return-void

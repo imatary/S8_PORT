@@ -128,7 +128,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$CoverBitmap;->mImageView:Landroid/widget/ImageView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->drawCoverBitmap(Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$400(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
 
     :goto_0
@@ -143,7 +142,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$CoverBitmap;->mViewModel:Lcom/sec/samsung/gallery/view/gallerynotificationview/model/GalleryNotificationViewModel;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->loadCoverBitmap(Landroid/widget/ImageView;Landroid/widget/TextView;Lcom/sec/samsung/gallery/view/gallerynotificationview/model/GalleryNotificationViewModel;)V
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$500(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;Landroid/widget/ImageView;Landroid/widget/TextView;Lcom/sec/samsung/gallery/view/gallerynotificationview/model/GalleryNotificationViewModel;)V
 
     goto :goto_0

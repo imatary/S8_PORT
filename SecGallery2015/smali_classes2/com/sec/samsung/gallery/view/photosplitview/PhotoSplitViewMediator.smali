@@ -708,7 +708,7 @@
     goto :goto_1
 
     :sswitch_4
-    const-string/jumbo v6, "MEDIA_EJECT"
+    const-string/jumbo v6, "SYSTEM_UI_VISIBILITY_CHANGE"
 
     invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -721,7 +721,7 @@
     goto :goto_1
 
     :sswitch_5
-    const-string/jumbo v6, "MEDIA_MOUNT"
+    const-string/jumbo v6, "MEDIA_EJECT"
 
     invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -734,7 +734,7 @@
     goto :goto_1
 
     :sswitch_6
-    const-string/jumbo v6, "DC_CANCEL_SELECT_ITEMS_FOR_TIME_OUT"
+    const-string/jumbo v6, "MEDIA_MOUNT"
 
     invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -743,6 +743,19 @@
     if-eqz v6, :cond_2
 
     const/4 v6, 0x6
+
+    goto :goto_1
+
+    :sswitch_7
+    const-string/jumbo v6, "DC_CANCEL_SELECT_ITEMS_FOR_TIME_OUT"
+
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_2
+
+    const/4 v6, 0x7
 
     goto :goto_1
 
@@ -783,7 +796,7 @@
 
     invoke-direct {p0, v1, v7}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;->startDetailViewState(IZ)V
 
-    goto :goto_2
+    goto/16 :goto_2
 
     :cond_6
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitViewMediator;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
@@ -993,11 +1006,12 @@
     .sparse-switch
         -0x5d19eb8b -> :sswitch_1
         -0x49a22ad2 -> :sswitch_3
-        -0x4987038a -> :sswitch_4
-        -0x4913c442 -> :sswitch_5
+        -0x4987038a -> :sswitch_5
+        -0x4913c442 -> :sswitch_6
+        -0x3946535e -> :sswitch_4
         -0xde2554a -> :sswitch_0
         0x1d10ace8 -> :sswitch_2
-        0x639dce2f -> :sswitch_6
+        0x639dce2f -> :sswitch_7
     .end sparse-switch
 
     :pswitch_data_0
@@ -1005,6 +1019,7 @@
         :pswitch_0
         :pswitch_1
         :pswitch_2
+        :pswitch_3
         :pswitch_3
         :pswitch_4
         :pswitch_5
@@ -1015,7 +1030,7 @@
 .method public listNotificationInterests()[Ljava/lang/String;
     .locals 3
 
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -1064,6 +1079,12 @@
     const/4 v1, 0x7
 
     const-string/jumbo v2, "DC_CANCEL_SELECT_ITEMS_FOR_TIME_OUT"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x8
+
+    const-string/jumbo v2, "SYSTEM_UI_VISIBILITY_CHANGE"
 
     aput-object v2, v0, v1
 

@@ -85,14 +85,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$2300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Landroid/os/Handler;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$2300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Landroid/os/Handler;
 
     move-result-object v2

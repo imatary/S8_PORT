@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$2;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
 
-    # invokes: Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->setSelectionActionBarView()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->access$000(Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$2;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
@@ -54,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$2;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->mStyleSelectMultiplePicker:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->access$100(Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;)Z
 
     move-result v0
@@ -63,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$2;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
 
-    # invokes: Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->setSelectionBuffer()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->access$200(Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;)V
 
     :cond_0

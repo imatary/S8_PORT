@@ -459,9 +459,11 @@
     if-eqz v2, :cond_1
 
     :cond_0
-    const v2, 0x7f0b0240
+    iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeGoToTopButton;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    check-cast v2, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-static {v2}, Lcom/sec/android/gallery3d/util/GalleryUtils;->getNavigationBarMargin(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)I
 
     move-result v1
 

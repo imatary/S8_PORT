@@ -39,7 +39,6 @@
 
     const-string/jumbo v0, "onRegister syncLocalContacts Errors"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -54,7 +53,6 @@
 
     const-string/jumbo v1, "onRegister syncLocalContacts success"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v2
@@ -65,7 +63,6 @@
 
     iget-object v1, v1, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Landroid/content/Context;
 
     move-result-object v1
@@ -82,7 +79,6 @@
 
     iget-object v1, v1, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Landroid/content/Context;
 
     move-result-object v1

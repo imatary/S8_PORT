@@ -41,14 +41,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;->access$100(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;->access$000(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -63,7 +61,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;->access$200(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v1
@@ -72,7 +69,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;->access$300(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListActionbarForNormal;)Landroid/app/ActionBar;
 
     move-result-object v1

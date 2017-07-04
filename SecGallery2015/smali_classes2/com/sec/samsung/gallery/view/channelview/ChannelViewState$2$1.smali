@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$2;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->exitSelectionMode()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$1600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;)V
 
     return-void

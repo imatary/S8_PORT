@@ -160,7 +160,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd$FaceTaggingAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->access$000(Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -171,7 +170,6 @@
 
     sget-object v1, Lcom/sec/samsung/gallery/access/cmh/CMHProviderFaceTagInterface;->PERSONS_TABLE_URI:Landroid/net/Uri;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->PERSON_PROJECTION:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->access$100()[Ljava/lang/String;
 
     move-result-object v2
@@ -470,7 +468,6 @@
     :cond_1
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd$FaceTaggingAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->access$000(Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v9
@@ -524,7 +521,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd$FaceTaggingAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->access$000(Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v9
@@ -566,7 +562,6 @@
 
     iget-object v10, v0, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd$FaceTaggingAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v10}, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->access$000(Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v10
@@ -827,7 +822,6 @@
 
     iget-object v10, v0, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd$FaceTaggingAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v10}, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->access$000(Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v10
@@ -1005,7 +999,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd$FaceTaggingAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->access$000(Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -1046,7 +1039,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd$FaceTaggingAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->access$000(Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -1132,7 +1124,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd$FaceTaggingAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->access$000(Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -1162,7 +1153,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd$FaceTaggingAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->access$000(Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -1333,7 +1323,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd$FaceTaggingAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;->access$000(Lcom/sec/samsung/gallery/controller/VisualSearchFaceTaggingCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

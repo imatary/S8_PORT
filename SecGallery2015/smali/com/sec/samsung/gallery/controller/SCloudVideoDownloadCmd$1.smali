@@ -47,7 +47,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->access$100(Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -56,12 +55,10 @@
 
     invoke-direct {v1, v2, v3}, Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;-><init>(Landroid/content/Context;Lcom/sec/samsung/gallery/core/Event;)V
 
-    # setter for: Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->mNetworkWarningDialog:Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->access$002(Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;)Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->mNetworkWarningDialog:Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->access$000(Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;)Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;
 
     move-result-object v0
@@ -72,7 +69,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->mNetworkWarningDialog:Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->access$000(Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;)Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;
 
     move-result-object v0

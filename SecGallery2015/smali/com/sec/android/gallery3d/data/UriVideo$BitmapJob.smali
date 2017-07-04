@@ -69,7 +69,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mUri:Landroid/net/Uri;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/UriVideo;->access$000(Lcom/sec/android/gallery3d/data/UriVideo;)Landroid/net/Uri;
 
     move-result-object v3
@@ -90,7 +89,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mUri:Landroid/net/Uri;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/UriVideo;->access$000(Lcom/sec/android/gallery3d/data/UriVideo;)Landroid/net/Uri;
 
     move-result-object v5
@@ -111,7 +109,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mUri:Landroid/net/Uri;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/UriVideo;->access$000(Lcom/sec/android/gallery3d/data/UriVideo;)Landroid/net/Uri;
 
     move-result-object v3
@@ -128,7 +125,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/UriVideo;->access$100(Lcom/sec/android/gallery3d/data/UriVideo;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v3
@@ -139,7 +135,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mUri:Landroid/net/Uri;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UriVideo;->access$000(Lcom/sec/android/gallery3d/data/UriVideo;)Landroid/net/Uri;
 
     move-result-object v4
@@ -167,7 +162,6 @@
     :cond_2
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/UriVideo;->access$100(Lcom/sec/android/gallery3d/data/UriVideo;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v3
@@ -178,7 +172,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mUri:Landroid/net/Uri;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UriVideo;->access$000(Lcom/sec/android/gallery3d/data/UriVideo;)Landroid/net/Uri;
 
     move-result-object v4
@@ -191,7 +184,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mThumbUri:Landroid/net/Uri;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/UriVideo;->access$200(Lcom/sec/android/gallery3d/data/UriVideo;)Landroid/net/Uri;
 
     move-result-object v3
@@ -200,7 +192,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/UriVideo;->access$100(Lcom/sec/android/gallery3d/data/UriVideo;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v3
@@ -211,7 +202,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mThumbUri:Landroid/net/Uri;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UriVideo;->access$200(Lcom/sec/android/gallery3d/data/UriVideo;)Landroid/net/Uri;
 
     move-result-object v4
@@ -237,7 +227,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UriVideo;->access$100(Lcom/sec/android/gallery3d/data/UriVideo;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4
@@ -259,7 +248,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriVideo$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UriVideo;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriVideo;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UriVideo;->access$100(Lcom/sec/android/gallery3d/data/UriVideo;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4

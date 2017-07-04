@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$6;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->mMoreAlbumDividerObj:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;)Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
     move-result-object v1
@@ -60,7 +59,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$6;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->mMoreAlbumDividerObj:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;)Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
     move-result-object v2
@@ -74,7 +72,6 @@
     :goto_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$6;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->mMoreAlbumDividerObj:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;)Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
     move-result-object v4
@@ -87,7 +84,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$6;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->mMoreAlbumDividerObj:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;)Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
     move-result-object v1
@@ -100,7 +96,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$6;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->mMoreAlbumDividerObj:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;)Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
     move-result-object v1

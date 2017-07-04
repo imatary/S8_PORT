@@ -716,7 +716,6 @@
     :goto_1
     iput-boolean v1, p0, Lcom/sec/android/gallery3d/data/ChannelAlbumSet$ChannelEntry;->isVisible:Z
 
-    # getter for: Lcom/sec/android/gallery3d/data/ChannelAlbumSet;->USE_EVENT_NOTIFICATION:Z
     invoke-static {}, Lcom/sec/android/gallery3d/data/ChannelAlbumSet;->access$000()Z
 
     move-result v1

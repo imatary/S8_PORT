@@ -89,47 +89,49 @@
     goto :goto_1
 .end method
 
-.method private selectItemForBixby(Lcom/sec/android/gallery3d/data/MediaItem;I)V
-    .locals 5
+.method private selectItemForBixby(Lcom/sec/android/gallery3d/data/MediaItem;I)Z
+    .locals 6
+
+    const/4 v3, 0x0
 
     if-nez p1, :cond_0
 
     :goto_0
-    return-void
+    return v3
 
     :cond_0
-    iget-object v3, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mSelectionListener:Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;
+    iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mSelectionListener:Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;
 
-    invoke-interface {v3}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;->getComposeMediaItemAdapter()Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
+    invoke-interface {v4}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;->getComposeMediaItemAdapter()Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
-    iget-object v3, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mSelectionParam:Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectionParameter;
+    iget-object v5, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mSelectionParam:Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectionParameter;
 
-    invoke-virtual {v4}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectionParameter;->getExecutingStateId()Ljava/lang/String;
+    invoke-virtual {v5}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectionParameter;->getExecutingStateId()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-static {v3, v4}, Lcom/samsung/android/devicecog/gallery/DCUtils;->requestCommonErrorNlg(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lcom/samsung/android/devicecog/gallery/DCUtils;->requestCommonErrorNlg(Landroid/content/Context;Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_1
-    iget-object v3, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-virtual {v3}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
+    invoke-virtual {v4}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v3}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
+    invoke-virtual {v4}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v3}, Lcom/sec/android/gallery3d/app/ActivityState;->getDCScreenStateId()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/sec/android/gallery3d/app/ActivityState;->getDCScreenStateId()Ljava/lang/String;
 
     move-result-object v2
 
@@ -137,23 +139,23 @@
 
     move-result-object v1
 
+    iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-virtual {v4}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2, v3}, Lcom/sec/android/gallery3d/app/ActivityState;->logDCSelectedView(Ljava/lang/String;Z)V
+
     iget-object v3, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mSelectionListener:Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;
 
-    invoke-interface {v3, v1, p1}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;->addItemToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;)V
+    invoke-interface {v3, v1, p1}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;->addItemToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;)Z
 
-    iget-object v3, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    invoke-virtual {v3}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getStateManager()Lcom/sec/android/gallery3d/app/StateManager;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/sec/android/gallery3d/app/StateManager;->getTopState()Lcom/sec/android/gallery3d/app/ActivityState;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v3, v2, v4}, Lcom/sec/android/gallery3d/app/ActivityState;->logDCSelectedView(Ljava/lang/String;Z)V
+    move-result v3
 
     goto :goto_0
 .end method
@@ -173,7 +175,7 @@
 
     sget-object v1, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
 
-    if-ne v0, v1, :cond_0
+    if-ne v0, v1, :cond_1
 
     iget-object v0, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mSelectionListener:Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;
 
@@ -199,13 +201,22 @@
 
     invoke-interface {v0, v1}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;->onEventHandleItemClick([Ljava/lang/Object;)Z
 
+    move-result v0
+
+    if-eqz v0, :cond_0
+
     const/4 p4, 0x0
 
+    :cond_0
     :goto_0
     return p4
 
-    :cond_0
-    invoke-direct {p0, p1, p2}, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->selectItemForBixby(Lcom/sec/android/gallery3d/data/MediaItem;I)V
+    :cond_1
+    invoke-direct {p0, p1, p2}, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->selectItemForBixby(Lcom/sec/android/gallery3d/data/MediaItem;I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
 
     add-int/lit8 p4, p4, -0x1
 
@@ -1190,19 +1201,19 @@
     const/4 v1, 0x0
 
     :goto_1
-    if-ge v1, v2, :cond_3
+    if-ge v1, v2, :cond_4
 
     invoke-virtual {v7, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter;->getSubMediaSet(I)Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v9
 
-    if-eqz v9, :cond_2
+    if-eqz v9, :cond_3
 
     invoke-virtual {v9}, Lcom/sec/android/gallery3d/data/MediaSet;->getAllItems()Ljava/util/ArrayList;
 
     move-result-object v8
 
-    if-eqz v8, :cond_2
+    if-eqz v8, :cond_3
 
     invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
 
@@ -1211,7 +1222,7 @@
     const/4 v4, 0x0
 
     :goto_2
-    if-ge v4, v11, :cond_2
+    if-ge v4, v11, :cond_3
 
     invoke-virtual {v8, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1223,7 +1234,7 @@
 
     move-result v13
 
-    if-eqz v13, :cond_5
+    if-eqz v13, :cond_7
 
     move-object/from16 v0, p0
 
@@ -1239,7 +1250,7 @@
 
     sget-object v14, Lcom/sec/samsung/gallery/core/LaunchModeType;->ACTION_PICK:Lcom/sec/samsung/gallery/core/LaunchModeType;
 
-    if-ne v13, v14, :cond_4
+    if-ne v13, v14, :cond_5
 
     move-object/from16 v0, p0
 
@@ -1267,30 +1278,35 @@
 
     invoke-interface {v13, v14}, Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;->onEventHandleItemClick([Ljava/lang/Object;)Z
 
+    move-result v13
+
+    if-eqz v13, :cond_2
+
     const/4 v5, 0x1
 
-    :goto_3
     add-int/lit8 v10, v10, 0x1
 
-    if-nez v5, :cond_2
-
-    move-object/from16 v0, p0
-
-    iget-boolean v13, v0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mOnCancelRequested:Z
-
-    if-eqz v13, :cond_5
-
     :cond_2
+    :goto_3
     if-nez v5, :cond_3
 
     move-object/from16 v0, p0
 
     iget-boolean v13, v0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mOnCancelRequested:Z
 
-    if-eqz v13, :cond_6
+    if-eqz v13, :cond_7
 
     :cond_3
-    if-lez v10, :cond_7
+    if-nez v5, :cond_4
+
+    move-object/from16 v0, p0
+
+    iget-boolean v13, v0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mOnCancelRequested:Z
+
+    if-eqz v13, :cond_8
+
+    :cond_4
+    if-lez v10, :cond_9
 
     const/4 v12, 0x1
 
@@ -1301,11 +1317,18 @@
 
     goto/16 :goto_0
 
-    :cond_4
+    :cond_5
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v6, v1}, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->selectItemForBixby(Lcom/sec/android/gallery3d/data/MediaItem;I)V
+    invoke-direct {v0, v6, v1}, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->selectItemForBixby(Lcom/sec/android/gallery3d/data/MediaItem;I)Z
 
+    move-result v13
+
+    if-eqz v13, :cond_6
+
+    add-int/lit8 v10, v10, 0x1
+
+    :cond_6
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/samsung/android/devicecog/gallery/selectiontask/TimeViewDCSelectItemTask;->mSelectionListener:Lcom/samsung/android/devicecog/gallery/selectiontask/DCSelectItemTask$SelectionListener;
@@ -1316,17 +1339,17 @@
 
     goto :goto_3
 
-    :cond_5
+    :cond_7
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_2
 
-    :cond_6
+    :cond_8
     add-int/lit8 v1, v1, 0x1
 
-    goto :goto_1
+    goto/16 :goto_1
 
-    :cond_7
+    :cond_9
     const/4 v12, 0x0
 
     goto :goto_4

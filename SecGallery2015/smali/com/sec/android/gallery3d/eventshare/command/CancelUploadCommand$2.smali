@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/CancelUploadCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CancelUploadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CancelUploadCommand;->mShareNotiManager:Lcom/sec/android/gallery3d/eventshare/utils/ShareNotificationManager;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/CancelUploadCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/CancelUploadCommand;)Lcom/sec/android/gallery3d/eventshare/utils/ShareNotificationManager;
 
     move-result-object v0

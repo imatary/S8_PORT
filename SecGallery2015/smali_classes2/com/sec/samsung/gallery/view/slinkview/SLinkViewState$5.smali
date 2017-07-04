@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$5;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$1100(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v1
@@ -54,7 +53,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$5;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$1100(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v1
@@ -69,7 +67,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$5;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$1100(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v1
@@ -90,7 +87,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState$5;->this$0:Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;->access$1200(Lcom/sec/samsung/gallery/view/slinkview/SLinkViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

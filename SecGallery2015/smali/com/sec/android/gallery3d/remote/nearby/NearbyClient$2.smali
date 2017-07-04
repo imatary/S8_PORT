@@ -67,7 +67,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mUseAsf:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$602(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;Z)Z
 
     :cond_0
@@ -77,7 +76,6 @@
 
     check-cast v0, Lcom/samsung/android/allshare/media/MediaServiceProvider;
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mServiceProvider:Lcom/samsung/android/allshare/media/MediaServiceProvider;
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$702(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;Lcom/samsung/android/allshare/media/MediaServiceProvider;)Lcom/samsung/android/allshare/media/MediaServiceProvider;
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
@@ -88,7 +86,6 @@
 
     check-cast v0, Lcom/samsung/android/allshare/media/MediaDeviceFinder;
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mDeviceFinder:Lcom/samsung/android/allshare/media/MediaDeviceFinder;
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$802(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;Lcom/samsung/android/allshare/media/MediaDeviceFinder;)Lcom/samsung/android/allshare/media/MediaDeviceFinder;
 
     const-string/jumbo v0, "NearbyClient"
@@ -99,7 +96,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mDeviceFinder:Lcom/samsung/android/allshare/media/MediaDeviceFinder;
     invoke-static {v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$800(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Lcom/samsung/android/allshare/media/MediaDeviceFinder;
 
     move-result-object v0
@@ -108,7 +104,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mDeviceListener:Lcom/samsung/android/allshare/DeviceFinder$IDeviceFinderEventListener;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$900(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Lcom/samsung/android/allshare/DeviceFinder$IDeviceFinderEventListener;
 
     move-result-object v2
@@ -117,7 +112,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mDeviceFinder:Lcom/samsung/android/allshare/media/MediaDeviceFinder;
     invoke-static {v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$800(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Lcom/samsung/android/allshare/media/MediaDeviceFinder;
 
     move-result-object v0
@@ -126,7 +120,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mDeviceListener:Lcom/samsung/android/allshare/DeviceFinder$IDeviceFinderEventListener;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$900(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Lcom/samsung/android/allshare/DeviceFinder$IDeviceFinderEventListener;
 
     move-result-object v2
@@ -135,17 +128,14 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->refreshDeviceList()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$1000(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # invokes: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->playPendedPlayer()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$1100(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mNearbyContext:Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
     invoke-static {v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$400(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
 
     move-result-object v0
@@ -168,7 +158,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mUseAsf:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$600(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Z
 
     move-result v0
@@ -179,7 +168,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mUseAsf:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$602(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;Z)Z
 
     const-string/jumbo v0, "NearbyClient"
@@ -190,7 +178,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mServiceProvider:Lcom/samsung/android/allshare/media/MediaServiceProvider;
     invoke-static {v0}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$700(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;)Lcom/samsung/android/allshare/media/MediaServiceProvider;
 
     move-result-object v0
@@ -207,12 +194,10 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mServiceProvider:Lcom/samsung/android/allshare/media/MediaServiceProvider;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$702(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;Lcom/samsung/android/allshare/media/MediaServiceProvider;)Lcom/samsung/android/allshare/media/MediaServiceProvider;
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient$2;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->mDeviceFinder:Lcom/samsung/android/allshare/media/MediaDeviceFinder;
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;->access$802(Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;Lcom/samsung/android/allshare/media/MediaDeviceFinder;)Lcom/samsung/android/allshare/media/MediaDeviceFinder;
 
     goto :goto_0

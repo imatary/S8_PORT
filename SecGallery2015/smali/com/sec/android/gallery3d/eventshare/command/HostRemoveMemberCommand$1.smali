@@ -85,7 +85,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/HostRemoveMemberCommand$1;->this$0:Lcom/sec/android/gallery3d/eventshare/command/HostRemoveMemberCommand;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/command/HostRemoveMemberCommand;->changeStateToIdle()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/HostRemoveMemberCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/HostRemoveMemberCommand;)V
 
     return-void
@@ -170,7 +169,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/HostRemoveMemberCommand$1;->this$0:Lcom/sec/android/gallery3d/eventshare/command/HostRemoveMemberCommand;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/command/HostRemoveMemberCommand;->superExcute()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/HostRemoveMemberCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/HostRemoveMemberCommand;)V
 
     return-void

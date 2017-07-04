@@ -42,7 +42,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity$2;->this$0:Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;->mCheckingStatus:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;->access$100(Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;)I
 
     move-result v0
@@ -53,7 +52,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity$2;->this$0:Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;->updateButtonCliked()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;->access$200(Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;)V
 
     :cond_0
@@ -63,7 +61,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity$2;->this$0:Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;->makeSuccessNlgForUpdate(Z)V
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;->access$300(Lcom/sec/android/gallery3d/settings/aboutpage/AboutPageActivity;Z)V
 
     goto :goto_0

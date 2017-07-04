@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$8;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mIsMaster:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$400(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Z
 
     move-result v0

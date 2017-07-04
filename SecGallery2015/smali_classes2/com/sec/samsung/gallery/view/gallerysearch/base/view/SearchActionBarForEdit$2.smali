@@ -53,7 +53,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -62,7 +61,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -80,7 +78,6 @@
     :cond_1
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->mMenu:Landroid/view/Menu;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;)Landroid/view/Menu;
 
     move-result-object v4
@@ -89,7 +86,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->access$800(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -119,7 +115,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -157,7 +152,6 @@
 
     iget v5, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit$2;->val$numberOfSelectedItem:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v4, v5, v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->access$1100(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;ILjava/lang/String;)V
 
     goto :goto_0
@@ -175,7 +169,6 @@
     :cond_5
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;->access$1000(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4

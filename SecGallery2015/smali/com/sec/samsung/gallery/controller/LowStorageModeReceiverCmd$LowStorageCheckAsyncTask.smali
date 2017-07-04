@@ -57,7 +57,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd$LowStorageCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;->access$100(Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;)Landroid/content/Context;
 
     move-result-object v1
@@ -107,7 +106,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd$LowStorageCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;->access$100(Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -120,7 +118,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd$LowStorageCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;->access$100(Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -141,7 +138,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd$LowStorageCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;->access$100(Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -157,7 +153,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd$LowStorageCheckAsyncTask;->this$0:Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;->access$100(Lcom/sec/samsung/gallery/controller/LowStorageModeReceiverCmd;)Landroid/content/Context;
 
     move-result-object v0

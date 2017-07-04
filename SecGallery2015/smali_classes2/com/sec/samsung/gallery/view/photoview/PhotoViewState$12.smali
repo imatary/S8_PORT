@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$12;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mSelectionTask:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$SelectionTask;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$5200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$SelectionTask;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$12;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mSelectionTask:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$SelectionTask;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$5200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$SelectionTask;
 
     move-result-object v0
@@ -59,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$12;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mOnProgressListener:Lcom/sec/android/gallery3d/data/OnProgressListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$5300(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/android/gallery3d/data/OnProgressListener;
 
     move-result-object v0
@@ -68,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$12;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mOnProgressListener:Lcom/sec/android/gallery3d/data/OnProgressListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$5300(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/android/gallery3d/data/OnProgressListener;
 
     move-result-object v0

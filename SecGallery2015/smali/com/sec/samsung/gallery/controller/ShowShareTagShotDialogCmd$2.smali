@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowShareTagShotDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowShareTagShotDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowShareTagShotDialogCmd;->showShareDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowShareTagShotDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowShareTagShotDialogCmd;)V
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V

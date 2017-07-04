@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/cloud/CloudImage$2;->this$0:Lcom/sec/android/gallery3d/remote/cloud/CloudImage;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/cloud/CloudImage;->access$800(Lcom/sec/android/gallery3d/remote/cloud/CloudImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v1

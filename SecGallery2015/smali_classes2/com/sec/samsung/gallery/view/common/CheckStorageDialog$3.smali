@@ -39,7 +39,6 @@
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->USE_LOW_STORAGE_MODE:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->access$000()Z
 
     move-result v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog$3;->this$0:Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->mCtx:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->access$100(Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;)Landroid/content/Context;
 
     move-result-object v0

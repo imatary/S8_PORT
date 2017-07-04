@@ -65,14 +65,12 @@
 
     move-result v1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsCheck:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1302(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$9;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsRename:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1402(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Z)Z
 
     iget v0, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$9;->val$operationId:I
@@ -100,12 +98,10 @@
 
     move-result-object v4
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->copyOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v1, v2, v3, v4}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mResult:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1802(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Z)Z
 
     :goto_0
@@ -126,12 +122,10 @@
 
     move-result-object v4
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->moveOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v1, v2, v3, v4}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mResult:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1802(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Z)Z
 
     goto :goto_0

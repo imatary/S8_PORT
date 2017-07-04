@@ -117,7 +117,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$SelectionTask;->mSelectionProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->toggleSelectProcess(Landroid/content/Context;Lcom/sec/android/gallery3d/ui/SelectionManager;Lcom/sec/android/gallery3d/data/MediaSet;)V
     invoke-static {v4, v5, v6, v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$13200(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;Landroid/content/Context;Lcom/sec/android/gallery3d/ui/SelectionManager;Lcom/sec/android/gallery3d/data/MediaSet;)V
 
     goto :goto_0
@@ -174,7 +173,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$SelectionTask;->mSelectionProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->addSelectProcess(Landroid/content/Context;Lcom/sec/android/gallery3d/ui/SelectionManager;Lcom/sec/android/gallery3d/data/MediaSet;)V
     invoke-static {v4, v5, v6, v3}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$13300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;Landroid/content/Context;Lcom/sec/android/gallery3d/ui/SelectionManager;Lcom/sec/android/gallery3d/data/MediaSet;)V
 
     goto :goto_2
@@ -186,7 +184,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$SelectionTask;->mSelectionProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->addSelectProcess(Landroid/content/Context;Lcom/sec/android/gallery3d/ui/SelectionManager;Lcom/sec/android/gallery3d/data/MediaSet;)V
     invoke-static {v4, v5, v6, v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$13300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;Landroid/content/Context;Lcom/sec/android/gallery3d/ui/SelectionManager;Lcom/sec/android/gallery3d/data/MediaSet;)V
 
     goto :goto_0
@@ -194,7 +191,6 @@
     :pswitch_3
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$SelectionTask;->mSelectionProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->removeSelectProcess(Lcom/sec/android/gallery3d/ui/SelectionManager;Lcom/sec/android/gallery3d/data/MediaSet;)V
     invoke-static {v4, v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$13400(Lcom/sec/android/gallery3d/ui/SelectionManager;Lcom/sec/android/gallery3d/data/MediaSet;)V
 
     goto :goto_0

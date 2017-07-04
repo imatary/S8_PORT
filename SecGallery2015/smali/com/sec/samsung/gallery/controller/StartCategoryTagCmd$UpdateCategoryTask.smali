@@ -198,7 +198,6 @@
 
     if-eqz v0, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mUseCMH:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$000()Z
 
     move-result v0
@@ -207,7 +206,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$200(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -227,7 +225,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$200(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -247,7 +244,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -260,7 +256,6 @@
 
     if-eqz v0, :cond_3
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mUseCMH:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$000()Z
 
     move-result v0
@@ -269,7 +264,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -295,7 +289,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -321,7 +314,6 @@
     :cond_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -334,7 +326,6 @@
 
     if-eqz v0, :cond_5
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mUseCMH:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$000()Z
 
     move-result v0
@@ -343,7 +334,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -369,7 +359,6 @@
     :cond_4
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -406,7 +395,6 @@
     goto/16 :goto_0
 
     :pswitch_1
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mUseCMH:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$000()Z
 
     move-result v0
@@ -415,7 +403,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -443,7 +430,6 @@
     :cond_6
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -504,7 +490,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -538,7 +523,6 @@
     :goto_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -566,7 +550,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -594,7 +577,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -626,7 +608,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$100(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -675,14 +656,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$200(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Landroid/content/Context;
 
     move-result-object v1
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd$UpdateCategoryTask;->this$0:Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;->access$200(Lcom/sec/samsung/gallery/controller/StartCategoryTagCmd;)Landroid/content/Context;
 
     move-result-object v3

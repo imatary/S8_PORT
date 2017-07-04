@@ -51,7 +51,6 @@
 
     const/4 v1, 0x1
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->FEATURE_USE_NOTIFICATION_TAB:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->access$200()Z
 
     move-result v0
@@ -104,7 +103,6 @@
 
     invoke-virtual {v1}, Lcom/sec/samsung/gallery/view/ActionBarManager;->refreshEventBadge()V
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->FEATURE_USE_NOTIFICATION_TAB:Z
     invoke-static {}, Lcom/sec/samsung/gallery/controller/PostGalleryCmdBadgeUpdator;->access$200()Z
 
     move-result v1

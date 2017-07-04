@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$5;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mSlideShowView:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$000(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$5;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mSlideShowView:Lcom/sec/samsung/gallery/glview/GlSlideShowView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$000(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/samsung/gallery/glview/GlSlideShowView;
 
     move-result-object v0
@@ -72,7 +70,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$5;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->setSlideshowPauseViewEnable(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$1100(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;Z)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$5;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;

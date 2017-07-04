@@ -59,7 +59,6 @@
     :pswitch_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$1;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->selectItem(I)V
     invoke-static {v2, v0}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$000(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;I)V
 
     goto :goto_0
@@ -67,7 +66,6 @@
     :pswitch_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$1;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->mSpinnerMenuAdapter:Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$100(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)Lcom/sec/samsung/gallery/drawer/SpinnerMenuAdapter;
 
     move-result-object v2
@@ -79,7 +77,6 @@
     :pswitch_2
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/NavigationSpinner$1;->this$0:Lcom/sec/samsung/gallery/drawer/NavigationSpinner;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->setPopupMenuWidth()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/NavigationSpinner;->access$200(Lcom/sec/samsung/gallery/drawer/NavigationSpinner;)V
 
     goto :goto_0

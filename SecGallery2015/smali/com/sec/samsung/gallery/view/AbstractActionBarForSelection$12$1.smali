@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$12;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->mCheckBox:Landroid/widget/CheckBox;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->access$300(Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;)Landroid/widget/CheckBox;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$12;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
 
-    # invokes: Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->setSelectAllCheckBoxColor()I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->access$600(Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;)I
 
     move-result v2

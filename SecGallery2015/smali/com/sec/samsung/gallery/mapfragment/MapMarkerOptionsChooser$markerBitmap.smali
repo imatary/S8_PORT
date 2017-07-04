@@ -175,7 +175,6 @@
     :try_start_0
     iget-object v6, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser$markerBitmap;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;->mTimeDescCompare:Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser$timeDescCompare;
     invoke-static {v6}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;->access$200(Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;)Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser$timeDescCompare;
 
     move-result-object v6
@@ -270,7 +269,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser$markerBitmap;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;->contextRef:Ljava/lang/ref/WeakReference;
     invoke-static {v6}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;->access$300(Lcom/sec/samsung/gallery/mapfragment/MapMarkerOptionsChooser;)Ljava/lang/ref/WeakReference;
 
     move-result-object v6

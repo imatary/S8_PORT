@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick$3;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;->access$1100(Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForMultiPick;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

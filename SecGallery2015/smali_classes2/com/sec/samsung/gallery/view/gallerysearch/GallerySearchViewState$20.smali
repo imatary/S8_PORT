@@ -41,7 +41,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->updateTagListView(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$16000(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;Z)V
 
     return-void

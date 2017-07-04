@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState$16;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mNoItemView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$15100(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;)Landroid/view/View;
 
     move-result-object v0
@@ -52,7 +51,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->mCloseTipsButtonPressed:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;->access$15202(Lcom/sec/samsung/gallery/view/gallerysearch/GallerySearchViewState;Z)Z
 
     return-void

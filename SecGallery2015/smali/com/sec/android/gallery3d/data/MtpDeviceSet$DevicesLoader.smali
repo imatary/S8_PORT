@@ -80,7 +80,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/data/MtpDeviceSet$DevicesLoader;->this$0:Lcom/sec/android/gallery3d/data/MtpDeviceSet;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpDeviceSet;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v7}, Lcom/sec/android/gallery3d/data/MtpDeviceSet;->access$000(Lcom/sec/android/gallery3d/data/MtpDeviceSet;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v7
@@ -95,7 +94,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/data/MtpDeviceSet$DevicesLoader;->this$0:Lcom/sec/android/gallery3d/data/MtpDeviceSet;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpDeviceSet;->mMtpContext:Lcom/sec/android/gallery3d/data/MtpContext;
     invoke-static {v7}, Lcom/sec/android/gallery3d/data/MtpDeviceSet;->access$100(Lcom/sec/android/gallery3d/data/MtpDeviceSet;)Lcom/sec/android/gallery3d/data/MtpContext;
 
     move-result-object v7
@@ -196,14 +194,12 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/data/MtpDeviceSet$DevicesLoader;->this$0:Lcom/sec/android/gallery3d/data/MtpDeviceSet;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpDeviceSet;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v9}, Lcom/sec/android/gallery3d/data/MtpDeviceSet;->access$000(Lcom/sec/android/gallery3d/data/MtpDeviceSet;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v9
 
     iget-object v10, p0, Lcom/sec/android/gallery3d/data/MtpDeviceSet$DevicesLoader;->this$0:Lcom/sec/android/gallery3d/data/MtpDeviceSet;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpDeviceSet;->mMtpContext:Lcom/sec/android/gallery3d/data/MtpContext;
     invoke-static {v10}, Lcom/sec/android/gallery3d/data/MtpDeviceSet;->access$100(Lcom/sec/android/gallery3d/data/MtpDeviceSet;)Lcom/sec/android/gallery3d/data/MtpContext;
 
     move-result-object v10

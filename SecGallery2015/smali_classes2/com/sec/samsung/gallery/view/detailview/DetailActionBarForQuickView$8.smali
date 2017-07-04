@@ -45,7 +45,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$8;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$600(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -58,12 +57,10 @@
 
     move-result v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->startActionMoveToKnox(ZZI)V
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$500(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;ZZI)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$8;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$700(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -80,7 +77,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$8;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$800(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -93,7 +89,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView$8;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;->access$900(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForQuickView;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

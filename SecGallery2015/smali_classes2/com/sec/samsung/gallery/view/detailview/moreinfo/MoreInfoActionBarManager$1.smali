@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;->mActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;->access$000(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;)Landroid/app/Activity;
 
     move-result-object v0

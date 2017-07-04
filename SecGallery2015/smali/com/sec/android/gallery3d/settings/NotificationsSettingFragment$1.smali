@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment$1;->this$0:Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->getSAScreenId()Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->access$000(Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;)Ljava/lang/String;
 
     move-result-object v2
@@ -69,14 +68,12 @@
 
     check-cast v0, Ljava/lang/Boolean;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->updateHeaderPreference(Ljava/lang/Boolean;)V
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->access$100(Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;Ljava/lang/Boolean;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment$1;->this$0:Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;
 
     check-cast p2, Ljava/lang/Boolean;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->updateDependantPreferences(Ljava/lang/Boolean;)V
     invoke-static {v0, p2}, Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;->access$200(Lcom/sec/android/gallery3d/settings/NotificationsSettingFragment;Ljava/lang/Boolean;)V
 
     const/4 v0, 0x1

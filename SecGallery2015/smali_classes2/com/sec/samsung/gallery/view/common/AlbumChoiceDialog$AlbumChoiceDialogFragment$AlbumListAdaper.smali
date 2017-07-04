@@ -46,7 +46,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->list:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->access$400(Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -75,7 +74,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->list:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->access$400(Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -104,7 +102,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment$AlbumListAdaper;->this$1:Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;->mCtx:Landroid/content/Context;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;->access$800(Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;)Landroid/content/Context;
 
     move-result-object v7
@@ -141,7 +138,7 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    const v7, 0x7f02032a
+    const v7, 0x7f02032c
 
     invoke-virtual {v1, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -195,7 +192,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment$AlbumListAdaper;->this$1:Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;->checkedposition:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;->access$600(Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;)I
 
     move-result v7
@@ -223,7 +219,6 @@
 
     iget-object v7, v7, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->access$200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v7

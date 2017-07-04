@@ -238,7 +238,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->mCoverBitmapSize:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$700(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;)I
 
     move-result v2
@@ -263,7 +262,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->mCoverBitmapSize:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$700(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;)I
 
     move-result v2
@@ -286,7 +284,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->mCoverBitmapSize:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$700(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;)I
 
     move-result v3
@@ -303,7 +300,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->mCoverBitmapSize:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$700(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;)I
 
     move-result v3
@@ -334,14 +330,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->mCoverBitmapSize:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$700(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;)I
 
     move-result v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->mCoverBitmapSize:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$700(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;)I
 
     move-result v2
@@ -487,14 +481,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->mCoverBitmapSize:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$700(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;)I
 
     move-result v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->mFaceBitmapGap:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$1100(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;)I
 
     move-result v1
@@ -538,7 +530,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->mCoverBitmapSize:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$700(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;)I
 
     move-result v1
@@ -811,7 +802,6 @@
 
     move-result-object v1
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->FACES_VIEW_PROJECTION:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$1200()[Ljava/lang/String;
 
     move-result-object v3
@@ -849,7 +839,6 @@
 
     move-result-object v1
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->FACE_THUMBNAIL_SIZE:I
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$1300()I
 
     move-result v3
@@ -1376,7 +1365,6 @@
     :cond_2
     if-nez p1, :cond_3
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->IS_N_OS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$1400()Z
 
     move-result v4
@@ -1400,7 +1388,6 @@
     goto :goto_0
 
     :cond_3
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->IS_N_OS:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$1400()Z
 
     move-result v4
@@ -1424,7 +1411,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->mCoverBitmaps:Landroid/util/SparseArray;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$1500(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;)Landroid/util/SparseArray;
 
     move-result-object v4
@@ -1443,7 +1429,6 @@
 
     if-eqz p1, :cond_5
 
-    # setter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$CoverBitmap;->mCoverBitmap:Landroid/graphics/Bitmap;
     invoke-static {v1, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$CoverBitmap;->access$102(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$CoverBitmap;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     :cond_5

@@ -63,14 +63,12 @@
     :pswitch_0
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->releaseService()V
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$400(Lcom/sec/android/app/ve/export/Export;)V
 
     invoke-virtual {p0, v9}, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->removeMessages(I)V
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->setExportState(I)V
     invoke-static {v4, v8}, Lcom/sec/android/app/ve/export/Export;->access$200(Lcom/sec/android/app/ve/export/Export;I)V
 
     iput v8, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->mProgress:I
@@ -84,7 +82,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mService:Lcom/sec/android/app/ve/export/IExportService;
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$100(Lcom/sec/android/app/ve/export/Export;)Lcom/sec/android/app/ve/export/IExportService;
 
     move-result-object v4
@@ -109,7 +106,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mFileName:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/android/app/ve/export/Export;->access$500(Lcom/sec/android/app/ve/export/Export;)Ljava/lang/String;
 
     move-result-object v5
@@ -136,7 +132,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mFileName:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$500(Lcom/sec/android/app/ve/export/Export;)Ljava/lang/String;
 
     move-result-object v4
@@ -161,17 +156,14 @@
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->releaseService()V
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$400(Lcom/sec/android/app/ve/export/Export;)V
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->runMediaScanner()V
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$600(Lcom/sec/android/app/ve/export/Export;)V
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mTrans:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$700(Lcom/sec/android/app/ve/export/Export;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v4
@@ -192,7 +184,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mTrans:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v5}, Lcom/sec/android/app/ve/export/Export;->access$700(Lcom/sec/android/app/ve/export/Export;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v5
@@ -209,7 +200,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mTrans:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v6}, Lcom/sec/android/app/ve/export/Export;->access$700(Lcom/sec/android/app/ve/export/Export;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v6
@@ -218,14 +208,12 @@
 
     iget-object v6, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mFileName:Ljava/lang/String;
     invoke-static {v6}, Lcom/sec/android/app/ve/export/Export;->access$500(Lcom/sec/android/app/ve/export/Export;)Ljava/lang/String;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mTrans:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v7}, Lcom/sec/android/app/ve/export/Export;->access$700(Lcom/sec/android/app/ve/export/Export;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v7
@@ -238,7 +226,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mTrans:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$700(Lcom/sec/android/app/ve/export/Export;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v4
@@ -255,7 +242,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mTrans:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v5}, Lcom/sec/android/app/ve/export/Export;->access$700(Lcom/sec/android/app/ve/export/Export;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v5
@@ -272,7 +258,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mTrans:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$700(Lcom/sec/android/app/ve/export/Export;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v4
@@ -283,7 +268,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mTrans:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v6}, Lcom/sec/android/app/ve/export/Export;->access$700(Lcom/sec/android/app/ve/export/Export;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v6
@@ -309,7 +293,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mTrans:Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
     invoke-static {v5}, Lcom/sec/android/app/ve/export/Export;->access$700(Lcom/sec/android/app/ve/export/Export;)Lcom/samsung/app/video/editor/vesdk/TranscodeElementWrapper;
 
     move-result-object v5
@@ -325,7 +308,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->setExportState(I)V
     invoke-static {v4, v8}, Lcom/sec/android/app/ve/export/Export;->access$200(Lcom/sec/android/app/ve/export/Export;I)V
 
     iput v8, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->mProgress:I
@@ -349,14 +331,12 @@
     :pswitch_2
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->releaseService()V
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$400(Lcom/sec/android/app/ve/export/Export;)V
 
     invoke-virtual {p0, v9}, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->removeMessages(I)V
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->setExportState(I)V
     invoke-static {v4, v8}, Lcom/sec/android/app/ve/export/Export;->access$200(Lcom/sec/android/app/ve/export/Export;I)V
 
     iput v8, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->mProgress:I
@@ -370,7 +350,6 @@
     :try_start_2
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mService:Lcom/sec/android/app/ve/export/IExportService;
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$100(Lcom/sec/android/app/ve/export/Export;)Lcom/sec/android/app/ve/export/IExportService;
 
     move-result-object v4
@@ -379,7 +358,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mService:Lcom/sec/android/app/ve/export/IExportService;
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$100(Lcom/sec/android/app/ve/export/Export;)Lcom/sec/android/app/ve/export/IExportService;
 
     move-result-object v4
@@ -402,7 +380,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mFileName:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/android/app/ve/export/Export;->access$500(Lcom/sec/android/app/ve/export/Export;)Ljava/lang/String;
 
     move-result-object v5
@@ -432,7 +409,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->getExportState()I
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$800(Lcom/sec/android/app/ve/export/Export;)I
 
     move-result v4
@@ -441,7 +417,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->getExportState()I
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$800(Lcom/sec/android/app/ve/export/Export;)I
 
     move-result v4
@@ -465,7 +440,6 @@
     :try_start_3
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mService:Lcom/sec/android/app/ve/export/IExportService;
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$100(Lcom/sec/android/app/ve/export/Export;)Lcom/sec/android/app/ve/export/IExportService;
 
     move-result-object v4
@@ -474,7 +448,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->getExportState()I
     invoke-static {v6}, Lcom/sec/android/app/ve/export/Export;->access$800(Lcom/sec/android/app/ve/export/Export;)I
 
     move-result v6
@@ -495,7 +468,6 @@
     :cond_2
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->getExportState()I
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$800(Lcom/sec/android/app/ve/export/Export;)I
 
     move-result v4
@@ -519,7 +491,6 @@
     :try_start_4
     iget-object v4, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # getter for: Lcom/sec/android/app/ve/export/Export;->mService:Lcom/sec/android/app/ve/export/IExportService;
     invoke-static {v4}, Lcom/sec/android/app/ve/export/Export;->access$100(Lcom/sec/android/app/ve/export/Export;)Lcom/sec/android/app/ve/export/IExportService;
 
     move-result-object v4
@@ -528,7 +499,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/ve/export/Export$ThreadHandler;->this$0:Lcom/sec/android/app/ve/export/Export;
 
-    # invokes: Lcom/sec/android/app/ve/export/Export;->getExportState()I
     invoke-static {v6}, Lcom/sec/android/app/ve/export/Export;->access$800(Lcom/sec/android/app/ve/export/Export;)I
 
     move-result v6

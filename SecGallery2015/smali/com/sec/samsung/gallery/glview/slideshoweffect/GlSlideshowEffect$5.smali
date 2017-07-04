@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect$5;->val$mediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->updatePlayVideo(Lcom/sec/android/gallery3d/data/MediaItem;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;Lcom/sec/android/gallery3d/data/MediaItem;)V
 
     return-void

@@ -146,14 +146,12 @@
     const/4 v1, 0x0
 
     :goto_0
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mTypeCount:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$100(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)I
 
     move-result v5
 
     if-ge v1, v5, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mItem:[[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$200(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)[[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;
 
     move-result-object v5
@@ -163,7 +161,6 @@
     const/4 v4, 0x0
 
     :goto_1
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mCount:[I
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$300(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)[I
 
     move-result-object v5
@@ -174,28 +171,23 @@
 
     aget-object v2, v3, v4
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->access$700(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;)Landroid/graphics/Bitmap;
 
     move-result-object v5
 
     if-eqz v5, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v2}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->access$700(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;)Landroid/graphics/Bitmap;
 
     move-result-object v5
 
     invoke-virtual {v5}, Landroid/graphics/Bitmap;->recycle()V
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v2, v6}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->access$702(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     :cond_0
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->mCanvas:Landroid/graphics/Canvas;
     invoke-static {v2, v6}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->access$602(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;Landroid/graphics/Canvas;)Landroid/graphics/Canvas;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->mGlCanvas:Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v2, v6}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->access$402(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;Lcom/sec/android/gallery3d/glcore/GlCanvas;)Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     add-int/lit8 v4, v4, 0x1
@@ -208,22 +200,18 @@
     goto :goto_0
 
     :cond_2
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mKeySet:[I
     invoke-static {v0, v6}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$002(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;[I)[I
 
     move-object v5, v6
 
     check-cast v5, [[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mItem:[[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;
     invoke-static {v0, v5}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$202(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;[[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;)[[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mCount:[I
     invoke-static {v0, v6}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$302(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;[I)[I
 
     const/4 v5, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mTypeCount:I
     invoke-static {v0, v5}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$102(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;I)I
 
     return-void
@@ -274,7 +262,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mItem:[[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;
     invoke-static {v0}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$200(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)[[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;
 
     move-result-object v4
@@ -291,7 +278,6 @@
 
     const/4 v4, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->mGlCanvas:Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v2, v4}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->access$402(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;Lcom/sec/android/gallery3d/glcore/GlCanvas;)Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     iput v6, p0, Lcom/sec/android/gallery3d/glcore/GlCanvas;->mItemIndex:I
@@ -431,7 +417,6 @@
     const/4 v6, 0x0
 
     :try_start_2
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mKeySet:[I
     invoke-static {v3}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$000(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)[I
 
     move-result-object v10
@@ -452,7 +437,6 @@
 
     :cond_5
     :goto_2
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mTypeCount:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$100(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)I
 
     move-result v14
@@ -468,14 +452,12 @@
     goto :goto_2
 
     :cond_6
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mTypeCount:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$100(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)I
 
     move-result v14
 
     if-ne v6, v14, :cond_e
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mTypeCount:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$100(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)I
 
     move-result v14
@@ -513,7 +495,6 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     :try_start_3
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mKeySet:[I
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$000(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)[I
 
     move-result-object v10
@@ -523,10 +504,8 @@
     :goto_3
     aput v9, v10, v6
 
-    # ++operator for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mTypeCount:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$104(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)I
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mItem:[[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$200(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)[[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;
 
     move-result-object v14
@@ -537,7 +516,6 @@
 
     aput-object v15, v14, v6
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mCount:[I
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$300(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)[I
 
     move-result-object v14
@@ -549,14 +527,12 @@
     :goto_4
     const/4 v12, 0x0
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mCount:[I
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$300(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)[I
 
     move-result-object v14
 
     aget v11, v14, v6
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mItem:[[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$200(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)[[Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;
 
     move-result-object v14
@@ -568,7 +544,6 @@
 
     aget-object v14, v8, v12
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->mGlCanvas:Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v14}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->access$400(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;)Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v14
@@ -689,7 +664,6 @@
     throw v14
 
     :cond_9
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->mCount:[I
     invoke-static {v4}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;->access$300(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasSetInfo;)[I
 
     move-result-object v14
@@ -740,14 +714,12 @@
     :try_start_4
     aget-object v7, v8, v12
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->mCanvas:Landroid/graphics/Canvas;
     invoke-static {v7}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->access$600(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;)Landroid/graphics/Canvas;
 
     move-result-object v2
 
     move-object/from16 v0, p0
 
-    # setter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->mGlCanvas:Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v7, v0}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->access$402(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;Lcom/sec/android/gallery3d/glcore/GlCanvas;)Lcom/sec/android/gallery3d/glcore/GlCanvas;
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
@@ -773,7 +745,6 @@
 
     invoke-virtual {v2, v14, v15}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
 
-    # getter for: Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v7}, Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;->access$700(Lcom/sec/android/gallery3d/glcore/GlCanvas$CanvasItem;)Landroid/graphics/Bitmap;
 
     move-result-object v14

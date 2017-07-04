@@ -37,6 +37,8 @@
 
 .field private mLastTabPosition:I
 
+.field private final mNotificationViewMediator:Lorg/puremvc/java/multicore/patterns/mediator/Mediator;
+
 .field private mOnPageChangeListener:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
 .field private mParentView:Landroid/view/View;
@@ -85,7 +87,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 3
 
     const/4 v0, 0x0
 
@@ -94,6 +96,16 @@
     iput-boolean v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mIsNeedToRestoreFullScreen:Z
 
     iput v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mLastTabPosition:I
+
+    new-instance v0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$4;
+
+    const-string/jumbo v1, "GALLERY_NOTIFICATION_VIEW"
+
+    iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-direct {v0, p0, v1, v2}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$4;-><init>(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;Ljava/lang/String;Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mNotificationViewMediator:Lorg/puremvc/java/multicore/patterns/mediator/Mediator;
 
     return-void
 .end method
@@ -138,7 +150,23 @@
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;)Landroid/support/v4/view/ViewPager;
+.method static synthetic access$500()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->FEATURE_USE_NAVIGATION_BAR:Z
+
+    return v0
+.end method
+
+.method static synthetic access$600(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->updateNavigationBarLayout()V
+
+    return-void
+.end method
+
+.method static synthetic access$700(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;)Landroid/support/v4/view/ViewPager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mViewPager:Landroid/support/v4/view/ViewPager;
@@ -175,7 +203,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v2, 0x7f0a07c8
+    const v2, 0x7f0a07cd
 
     const/4 v3, 0x0
 
@@ -455,9 +483,9 @@
 .method private registerReceiver()V
     .locals 3
 
-    new-instance v1, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$4;
+    new-instance v1, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$5;
 
-    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$4;-><init>(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;)V
+    invoke-direct {v1, p0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState$5;-><init>(Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;)V
 
     iput-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mBroadCastReceiver:Landroid/content/BroadcastReceiver;
 
@@ -1238,6 +1266,16 @@
 
     invoke-virtual {v0}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationPagerAdapter;->onPause()V
 
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-static {v0}, Lcom/sec/samsung/gallery/core/GalleryFacade;->getInstance(Landroid/content/Context;)Lorg/puremvc/java/multicore/patterns/facade/Facade;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "GALLERY_NOTIFICATION_VIEW"
+
+    invoke-virtual {v0, v1}, Lorg/puremvc/java/multicore/patterns/facade/Facade;->removeMediator(Ljava/lang/String;)Lorg/puremvc/java/multicore/interfaces/IMediator;
+
     sget-boolean v0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->FEATURE_USE_NOTIFICATION_TAB:Z
 
     if-eqz v0, :cond_0
@@ -1426,6 +1464,16 @@
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mViewPagerAdapter:Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationPagerAdapter;
 
     invoke-virtual {v4}, Lcom/sec/samsung/gallery/view/gallerynotificationview/ui/GalleryNotificationPagerAdapter;->onResume()V
+
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-static {v4}, Lcom/sec/samsung/gallery/core/GalleryFacade;->getInstance(Landroid/content/Context;)Lorg/puremvc/java/multicore/patterns/facade/Facade;
+
+    move-result-object v4
+
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mNotificationViewMediator:Lorg/puremvc/java/multicore/patterns/mediator/Mediator;
+
+    invoke-virtual {v4, v5}, Lorg/puremvc/java/multicore/patterns/facade/Facade;->registerMediator(Lorg/puremvc/java/multicore/interfaces/IMediator;)V
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/GalleryNotificationState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 

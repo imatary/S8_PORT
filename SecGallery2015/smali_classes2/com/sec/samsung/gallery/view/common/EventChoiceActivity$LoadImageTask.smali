@@ -67,12 +67,10 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mChannelAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2500(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v7
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2000()Z
 
     move-result v6
@@ -127,19 +125,16 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1800(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)I
 
     move-result v6
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1800(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)I
 
     move-result v7
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->FEATURE_FACE_THUMBNAIL_ENABLED:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2600()Z
 
     move-result v8
@@ -235,19 +230,16 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1800(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)I
 
     move-result v6
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1800(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)I
 
     move-result v7
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->FEATURE_FACE_THUMBNAIL_ENABLED:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2600()Z
 
     move-result v8
@@ -294,19 +286,16 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1800(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)I
 
     move-result v7
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$1800(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)I
 
     move-result v8
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->FEATURE_FACE_THUMBNAIL_ENABLED:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2600()Z
 
     move-result v9

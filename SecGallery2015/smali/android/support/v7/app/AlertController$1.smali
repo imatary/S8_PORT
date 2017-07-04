@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Landroid/support/v7/app/AlertController$1;->this$0:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mButtonPositive:Landroid/widget/Button;
     invoke-static {v1}, Landroid/support/v7/app/AlertController;->access$000(Landroid/support/v7/app/AlertController;)Landroid/widget/Button;
 
     move-result-object v1
@@ -48,7 +47,6 @@
 
     iget-object v1, p0, Landroid/support/v7/app/AlertController$1;->this$0:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mButtonPositiveMessage:Landroid/os/Message;
     invoke-static {v1}, Landroid/support/v7/app/AlertController;->access$100(Landroid/support/v7/app/AlertController;)Landroid/os/Message;
 
     move-result-object v1
@@ -57,7 +55,6 @@
 
     iget-object v1, p0, Landroid/support/v7/app/AlertController$1;->this$0:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mButtonPositiveMessage:Landroid/os/Message;
     invoke-static {v1}, Landroid/support/v7/app/AlertController;->access$100(Landroid/support/v7/app/AlertController;)Landroid/os/Message;
 
     move-result-object v1
@@ -74,7 +71,6 @@
     :cond_0
     iget-object v1, p0, Landroid/support/v7/app/AlertController$1;->this$0:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Landroid/support/v7/app/AlertController;->access$700(Landroid/support/v7/app/AlertController;)Landroid/os/Handler;
 
     move-result-object v1
@@ -83,7 +79,6 @@
 
     iget-object v3, p0, Landroid/support/v7/app/AlertController$1;->this$0:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mDialog:Landroid/support/v7/app/AppCompatDialog;
     invoke-static {v3}, Landroid/support/v7/app/AlertController;->access$600(Landroid/support/v7/app/AlertController;)Landroid/support/v7/app/AppCompatDialog;
 
     move-result-object v3
@@ -99,7 +94,6 @@
     :cond_1
     iget-object v1, p0, Landroid/support/v7/app/AlertController$1;->this$0:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mButtonNegative:Landroid/widget/Button;
     invoke-static {v1}, Landroid/support/v7/app/AlertController;->access$200(Landroid/support/v7/app/AlertController;)Landroid/widget/Button;
 
     move-result-object v1
@@ -108,7 +102,6 @@
 
     iget-object v1, p0, Landroid/support/v7/app/AlertController$1;->this$0:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mButtonNegativeMessage:Landroid/os/Message;
     invoke-static {v1}, Landroid/support/v7/app/AlertController;->access$300(Landroid/support/v7/app/AlertController;)Landroid/os/Message;
 
     move-result-object v1
@@ -117,7 +110,6 @@
 
     iget-object v1, p0, Landroid/support/v7/app/AlertController$1;->this$0:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mButtonNegativeMessage:Landroid/os/Message;
     invoke-static {v1}, Landroid/support/v7/app/AlertController;->access$300(Landroid/support/v7/app/AlertController;)Landroid/os/Message;
 
     move-result-object v1
@@ -131,7 +123,6 @@
     :cond_2
     iget-object v1, p0, Landroid/support/v7/app/AlertController$1;->this$0:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mButtonNeutral:Landroid/widget/Button;
     invoke-static {v1}, Landroid/support/v7/app/AlertController;->access$400(Landroid/support/v7/app/AlertController;)Landroid/widget/Button;
 
     move-result-object v1
@@ -140,7 +131,6 @@
 
     iget-object v1, p0, Landroid/support/v7/app/AlertController$1;->this$0:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mButtonNeutralMessage:Landroid/os/Message;
     invoke-static {v1}, Landroid/support/v7/app/AlertController;->access$500(Landroid/support/v7/app/AlertController;)Landroid/os/Message;
 
     move-result-object v1
@@ -149,7 +139,6 @@
 
     iget-object v1, p0, Landroid/support/v7/app/AlertController$1;->this$0:Landroid/support/v7/app/AlertController;
 
-    # getter for: Landroid/support/v7/app/AlertController;->mButtonNeutralMessage:Landroid/os/Message;
     invoke-static {v1}, Landroid/support/v7/app/AlertController;->access$500(Landroid/support/v7/app/AlertController;)Landroid/os/Message;
 
     move-result-object v1

@@ -57,7 +57,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/samsunglink/SlinkNetworkManager$SlinkWakeLock$1;->this$1:Lcom/samsung/android/sdk/samsunglink/SlinkNetworkManager$SlinkWakeLock;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/SlinkNetworkManager$SlinkWakeLock;->tag:Ljava/lang/String;
     invoke-static {v2}, Lcom/samsung/android/sdk/samsunglink/SlinkNetworkManager$SlinkWakeLock;->access$0(Lcom/samsung/android/sdk/samsunglink/SlinkNetworkManager$SlinkWakeLock;)Ljava/lang/String;
 
     move-result-object v2

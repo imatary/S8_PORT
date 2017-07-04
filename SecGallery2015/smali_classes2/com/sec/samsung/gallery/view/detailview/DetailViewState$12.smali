@@ -54,7 +54,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$5500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v1
@@ -69,7 +68,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$5600(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v1
@@ -89,7 +87,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$5700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v1
@@ -104,7 +101,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$5800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v1
@@ -122,7 +118,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$5900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v1
@@ -137,7 +132,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mSelectionManager:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$4700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -150,7 +144,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -168,7 +161,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v1
@@ -186,7 +178,6 @@
     :cond_4
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6200(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -199,7 +190,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6300(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v1
@@ -225,7 +215,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mConnectExtDisplay:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$4000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
 
     move-result v1
@@ -234,13 +223,11 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->resetPhotoViewOnPresentation()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$3700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     :cond_6
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mUseFilmStripWithFastOptionView:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6400(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
 
     move-result v1
@@ -249,7 +236,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFastOptionView:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
     move-result-object v1
@@ -258,7 +244,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mFastOptionView:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
     move-result-object v1
@@ -268,7 +253,6 @@
     invoke-virtual {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->hideFastOptionView(Z)V
 
     :cond_7
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->FEATURE_USE_SOCIAL_STORY_VIEW:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6600()Z
 
     move-result v1
@@ -277,7 +261,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCommentsView:Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;
 
     move-result-object v1
@@ -286,7 +269,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCommentsView:Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/DetailCommentsView;
 
     move-result-object v1
@@ -298,19 +280,16 @@
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mIsStaredSlideshow:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6802(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$7100(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
     move-result-object v2
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mData:Landroid/os/Bundle;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$6900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Landroid/os/Bundle;
 
     move-result-object v1
@@ -323,7 +302,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mHasCameraScreennailOrPlaceholder:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$5000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
 
     move-result v1
@@ -332,7 +310,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCurrentIndex:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$7000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)I
 
     move-result v1
@@ -347,7 +324,6 @@
     :cond_9
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$12;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mCurrentIndex:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$7000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)I
 
     move-result v1

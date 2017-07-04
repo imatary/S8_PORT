@@ -191,7 +191,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/app/UsbDeviceActivity$1;->this$0:Lcom/sec/android/gallery3d/app/UsbDeviceActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/UsbDeviceActivity;->mContext:Landroid/content/Context;
     invoke-static {v6}, Lcom/sec/android/gallery3d/app/UsbDeviceActivity;->access$000(Lcom/sec/android/gallery3d/app/UsbDeviceActivity;)Landroid/content/Context;
 
     move-result-object v6

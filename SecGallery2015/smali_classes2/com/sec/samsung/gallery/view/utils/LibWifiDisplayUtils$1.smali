@@ -78,7 +78,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils$1;->this$0:Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;
 
-    # invokes: Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;->update()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;->access$000(Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;)V
 
     return-void

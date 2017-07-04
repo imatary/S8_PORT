@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/NoItemVI$4;->this$0:Lcom/sec/samsung/gallery/NoItemVI;
 
-    # invokes: Lcom/sec/samsung/gallery/NoItemVI;->showInitAnimation()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/NoItemVI;->access$200(Lcom/sec/samsung/gallery/NoItemVI;)V
 
     return-void

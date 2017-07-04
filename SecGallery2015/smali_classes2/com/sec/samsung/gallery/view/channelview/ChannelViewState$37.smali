@@ -41,13 +41,11 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$37;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->setCreateEventVisibleMode(Z)V
-    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
+    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$37;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->handleNewEventAlbum(I)V
-    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
+    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;I)V
 
     return-void
 .end method

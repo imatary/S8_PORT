@@ -116,7 +116,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->mDataListener:Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->access$000(Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;)Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListener;
 
     move-result-object v0

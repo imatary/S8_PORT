@@ -293,7 +293,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent$2;->val$callback:Lcom/sec/android/gallery3d/eventshare/command/PrepareReceivingCommand;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->getOrsServerURLByContentToken(Ljava/lang/String;ILjava/lang/String;Lcom/sec/android/gallery3d/eventshare/command/PrepareReceivingCommand;)V
     invoke-static {v5, v4, v6, v7, v8}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->access$100(Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;Ljava/lang/String;ILjava/lang/String;Lcom/sec/android/gallery3d/eventshare/command/PrepareReceivingCommand;)V
 
     goto :goto_0

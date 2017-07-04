@@ -40,7 +40,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$1;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->mIsAlive:Z
     invoke-static {v3}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$000(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;)Z
 
     move-result v3
@@ -61,7 +60,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$1;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->mLoadingListener:Lcom/sec/android/gallery3d/app/LoadingListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$100(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;)Lcom/sec/android/gallery3d/app/LoadingListener;
 
     move-result-object v1
@@ -70,7 +68,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$1;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->mLoadingListener:Lcom/sec/android/gallery3d/app/LoadingListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$100(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;)Lcom/sec/android/gallery3d/app/LoadingListener;
 
     move-result-object v1
@@ -81,7 +78,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$1;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->mHasFullImage:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$200(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;)Z
 
     move-result v1
@@ -90,7 +86,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$1;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->mDecodeDirect:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$300(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;)Z
 
     move-result v1
@@ -103,14 +98,12 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/util/Future;
 
-    # invokes: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->onDecodeDirectComplete(Lcom/sec/android/gallery3d/util/Future;)V
     invoke-static {v3, v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$400(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;Lcom/sec/android/gallery3d/util/Future;)V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$1;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
     const/4 v3, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->mDecodeDirect:Z
     invoke-static {v1, v3}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$302(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;Z)Z
     :try_end_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
@@ -128,13 +121,11 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$1;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
-    # invokes: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->updateBrokenImage()V
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$700(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;)V
 
     :goto_2
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$1;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->mLoadingListener:Lcom/sec/android/gallery3d/app/LoadingListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$100(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;)Lcom/sec/android/gallery3d/app/LoadingListener;
 
     move-result-object v1
@@ -143,7 +134,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$1;->this$0:Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->mLoadingListener:Lcom/sec/android/gallery3d/app/LoadingListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$100(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;)Lcom/sec/android/gallery3d/app/LoadingListener;
 
     move-result-object v1
@@ -165,7 +155,6 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$ImageBundle;
 
-    # invokes: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->onDecodeLargeComplete(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$ImageBundle;)V
     invoke-static {v3, v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$500(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter$ImageBundle;)V
 
     goto :goto_2
@@ -177,7 +166,6 @@
 
     check-cast v1, Lcom/sec/android/gallery3d/util/Future;
 
-    # invokes: Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->onDecodeThumbComplete(Lcom/sec/android/gallery3d/util/Future;)V
     invoke-static {v3, v1}, Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;->access$600(Lcom/sec/android/gallery3d/app/SinglePhotoDataAdapter;Lcom/sec/android/gallery3d/util/Future;)V
     :try_end_1
     .catch Ljava/lang/ClassCastException; {:try_start_1 .. :try_end_1} :catch_0

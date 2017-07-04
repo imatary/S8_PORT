@@ -177,7 +177,6 @@
 
     iget-object v15, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mDataProxy:Lcom/sec/android/gallery3d/data/DataManager;
     invoke-static {v15}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$3900(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/data/DataManager;
 
     move-result-object v15
@@ -247,7 +246,6 @@
 
     iget-object v15, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v15}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$1700(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v15
@@ -262,7 +260,6 @@
 
     iget-object v15, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
     invoke-static {v15}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$1200(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
     move-result-object v15
@@ -277,7 +274,6 @@
 
     iget-object v15, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->exitSelectionMode()V
     invoke-static {v15}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$1300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
 
     goto/16 :goto_1
@@ -324,7 +320,6 @@
 
     iget-object v15, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v15}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$15000(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v15
@@ -391,7 +386,6 @@
 
     iget-object v15, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->mIsPickerMode:Z
     invoke-static {v15}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$4800(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)Z
 
     move-result v15
@@ -432,7 +426,6 @@
 
     iget-object v15, v0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->exitSelectionMode()V
     invoke-static {v15}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$1300(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
 
     goto/16 :goto_1
@@ -482,7 +475,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState$UpdateSelectionBufferTask;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->selectAllPostProcess()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;->access$14900(Lcom/sec/samsung/gallery/view/albumview/AlbumViewState;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0

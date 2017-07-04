@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showInvalidNumberDialog(I)V
+    value = Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showErrorDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,6 +36,8 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
+
+    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     return-void
 .end method

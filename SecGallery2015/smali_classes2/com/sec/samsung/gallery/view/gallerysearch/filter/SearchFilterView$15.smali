@@ -65,7 +65,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$15;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mSearchTagFilterView:Landroid/view/View;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$2000(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/View;
 
     move-result-object v2

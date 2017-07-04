@@ -886,7 +886,6 @@
 
     move/from16 v0, v37
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;->activateGroup(I)Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;
     invoke-static {v5, v0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;->access$1300(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;I)Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;
 
     move-result-object v26
@@ -1009,7 +1008,6 @@
 
     invoke-virtual {v0, v5}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->setBorderRect(Landroid/graphics/RectF;)V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mGrpCheckObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static/range {v26 .. v26}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v5
@@ -1066,7 +1064,6 @@
 
     iget-object v5, v0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mItemCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;->mCount:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;)I
 
     move-result v5
@@ -1136,7 +1133,6 @@
 
     move/from16 v0, v29
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;->activateObject(I)Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;
     invoke-static {v5, v0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;->access$1500(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;I)Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;
 
     move-result-object v6
@@ -1167,7 +1163,6 @@
 
     move-object/from16 v0, v26
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->add(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;)V
     invoke-static {v0, v6}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1600(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;)V
 
     const/16 v39, 0x1
@@ -3482,14 +3477,12 @@
     invoke-virtual {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->moveToLast()V
 
     :cond_30
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mGrpCheckObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static/range {v26 .. v26}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v5
 
     if-eqz v5, :cond_31
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mGrpCheckObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static/range {v26 .. v26}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v5
@@ -3500,7 +3493,6 @@
 
     if-eqz v5, :cond_31
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mGrpCheckObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static/range {v26 .. v26}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v5
@@ -4286,7 +4278,6 @@
 
     if-eqz v2, :cond_3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v2
@@ -4329,7 +4320,6 @@
 
     if-eqz v2, :cond_4
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v2
@@ -4903,7 +4893,6 @@
     :cond_6
     if-eqz v10, :cond_7
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v10}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v21
@@ -5007,7 +4996,6 @@
 
     check-cast v10, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v10}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v21
@@ -5016,7 +5004,6 @@
 
     if-lt v0, v9, :cond_b
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v10}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v21
@@ -5040,7 +5027,6 @@
 
     move-object/from16 v21, v0
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v10}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v22
@@ -5296,7 +5282,6 @@
 
     if-eqz v8, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v8
@@ -5309,7 +5294,6 @@
     :cond_1
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mGroup:[Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v9
@@ -5346,7 +5330,6 @@
 
     if-eqz v8, :cond_2
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v8
@@ -5383,7 +5366,6 @@
 
     if-eqz v8, :cond_5
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v8
@@ -5475,7 +5457,6 @@
 
     if-eqz v8, :cond_6
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v8
@@ -5614,7 +5595,6 @@
 
     if-eqz v1, :cond_0
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->setSelected(Z)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$2000(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;Z)V
 
     goto :goto_0
@@ -5752,7 +5732,6 @@
 
     invoke-virtual {v1, v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->setVisibility(Z)V
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->isCheckboxAndExpansionVisible()Z
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;)Z
 
     move-result v1
@@ -5778,7 +5757,6 @@
 
     if-nez v1, :cond_3
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->isCheckboxAndExpansionVisible()Z
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->access$1900(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;)Z
 
     move-result v1
@@ -6079,12 +6057,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mItemCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;->clearActiveObject()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;->access$500(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mGroupCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;->clearActiveGroup()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;->access$600(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;)V
 
     return-void
@@ -6509,7 +6485,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mGroupCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;->mInactiveObject:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;->access$1700(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -6720,7 +6695,6 @@
 
     if-eqz v7, :cond_1
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v7
@@ -6735,7 +6709,6 @@
     :cond_1
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mGroup:[Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v8
@@ -6772,7 +6745,6 @@
 
     if-eqz v7, :cond_4
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v7
@@ -6835,7 +6807,6 @@
 
     if-eqz v7, :cond_2
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mIndex:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)I
 
     move-result v7
@@ -7327,14 +7298,12 @@
 
     iput-object p1, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->mGrpCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$100(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mGroupCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupControl;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->mItemCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ObjectControl;
 
     move-result-object v1
@@ -7345,14 +7314,12 @@
 
     iput-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mViewConfig:Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->mCanvasMgr:Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$300(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mCanvasMgr:Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {p1}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$400(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v1
@@ -7473,7 +7440,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mResource:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b073c
+    const v2, 0x7f0b073d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -7483,7 +7450,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mResource:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b073d
+    const v2, 0x7f0b073e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -7724,7 +7691,7 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mResource:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b073e
+    const v2, 0x7f0b073f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -8010,7 +7977,6 @@
     invoke-virtual {v10, p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject$TranformAnimation;->applyTransform(F)V
 
     :cond_8
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mGrpCheckObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v1
@@ -8178,14 +8144,12 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->mGroupCom:[Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupComInfo;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$700(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)[Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupComInfo;
 
     move-result-object v1
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mPosCtrlCom:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->mGroupCount:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$800(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;)I
 
     move-result v2
@@ -8228,12 +8192,10 @@
     aput-object v3, v5, v4
 
     :cond_2
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupComInfo;->mCount:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupComInfo;->access$900(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupComInfo;)I
 
     move-result v5
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupInfo;->setItemCount(I)V
     invoke-static {v3, v5}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupInfo;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupInfo;I)V
 
     add-int/lit8 v4, v4, 0x1
@@ -8987,7 +8949,6 @@
     invoke-virtual/range {v2 .. v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->setEnableAnim(ZZZZZ)V
 
     :cond_5
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mGrpCheckObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v2
@@ -9174,7 +9135,6 @@
 
     check-cast v6, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mGrpCheckObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v4
@@ -9915,7 +9875,6 @@
     :cond_0
     invoke-virtual {v2, p1, p3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->setCanvasSubVisiblity(ZI)V
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->setBorderObjectVisibility(Z)V
     invoke-static {v2, p1}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->access$4200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;Z)V
 
     goto :goto_1
@@ -10117,7 +10076,6 @@
     return-void
 
     :cond_1
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->mGrpCheckObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v1
@@ -10843,9 +10801,9 @@
 
     const/4 v5, 0x1
 
-    const/4 v4, 0x0
-
     const/4 v7, 0x0
+
+    const/4 v4, 0x0
 
     iget-object v0, p2, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$AdapterInterface;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -10859,7 +10817,6 @@
 
     iget v8, p2, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseAdapter$AdapterInterface;->mRotation:I
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->getBrokenItemCanvas(II)Lcom/sec/android/gallery3d/glcore/GlCanvas;
     invoke-static {v6, v7, v8}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;->access$1800(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$PositionControllerCom;II)Lcom/sec/android/gallery3d/glcore/GlCanvas;
 
     move-result-object v1
@@ -10965,6 +10922,8 @@
     invoke-virtual {p1, v1}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->setCanvas(Lcom/sec/android/gallery3d/glcore/GlCanvas;)V
 
     iput-boolean v4, p1, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->mIsBroken:Z
+
+    invoke-virtual {p1, v4}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->setEmptyFill(Z)V
 
     goto :goto_0
 
@@ -11383,7 +11342,6 @@
 
     if-eqz v1, :cond_2
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->setSelected(Z)V
     invoke-static {v1, v3}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;->access$2000(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$GroupObject;Z)V
 
     :cond_2
@@ -11441,7 +11399,6 @@
     goto :goto_0
 
     :cond_0
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->updateDecorState()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;->access$4300(Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ThumbObject;)V
 
     goto :goto_1

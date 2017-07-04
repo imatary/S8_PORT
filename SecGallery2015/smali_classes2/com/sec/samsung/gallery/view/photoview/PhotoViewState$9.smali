@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$9;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mFlags:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$3800(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)I
 
     move-result v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$9;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$3900(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -61,14 +59,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$9;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mFlags:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$4200(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)I
 
     move-result v1
 
     and-int/lit8 v1, v1, -0x41
 
-    # setter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mFlags:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$4102(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;I)I
 
     :cond_0
@@ -76,7 +72,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mCurrentMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$4302(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;Lcom/sec/android/gallery3d/data/MediaItem;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     return-void
@@ -87,7 +82,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$9;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$3300(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -108,7 +102,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$9;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$3400(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -120,14 +113,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState$9;->this$0:Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mFlags:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$3700(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;)I
 
     move-result v1
 
     and-int/lit8 v1, v1, -0x41
 
-    # setter for: Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->mFlags:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;->access$3602(Lcom/sec/samsung/gallery/view/photoview/PhotoViewState;I)I
 
     return-void

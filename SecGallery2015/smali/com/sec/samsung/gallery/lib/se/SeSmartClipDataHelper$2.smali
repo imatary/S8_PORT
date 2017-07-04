@@ -47,7 +47,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper$2;->this$0:Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->mDataListenerForDetailView:Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListenerForDetailView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->access$100(Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;)Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListenerForDetailView;
 
     move-result-object v2
@@ -60,7 +59,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper$2;->this$0:Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->mDataListenerForDetailView:Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListenerForDetailView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->access$100(Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;)Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListenerForDetailView;
 
     move-result-object v2
@@ -76,7 +74,6 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper$2;->this$0:Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->mDataListenerForDetailView:Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListenerForDetailView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->access$100(Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;)Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListenerForDetailView;
 
     move-result-object v2
@@ -97,7 +94,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper$2;->this$0:Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->mDataListenerForDetailView:Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListenerForDetailView;
     invoke-static {v4}, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->access$100(Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;)Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListenerForDetailView;
 
     move-result-object v4
@@ -112,7 +108,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper$2;->this$0:Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->mDataListenerForDetailView:Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListenerForDetailView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;->access$100(Lcom/sec/samsung/gallery/lib/se/SeSmartClipDataHelper;)Lcom/sec/samsung/gallery/lib/libinterface/SmartClipDataHelperInterface$onClipDataListenerForDetailView;
 
     move-result-object v2

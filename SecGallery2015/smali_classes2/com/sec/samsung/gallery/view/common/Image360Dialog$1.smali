@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/Image360Dialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/Image360Dialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/Image360Dialog;->startMoreService()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/Image360Dialog;->access$000(Lcom/sec/samsung/gallery/view/common/Image360Dialog;)V
 
     return-void

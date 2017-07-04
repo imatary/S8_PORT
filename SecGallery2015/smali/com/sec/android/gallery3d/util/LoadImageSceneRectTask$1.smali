@@ -37,31 +37,26 @@
     .locals 2
 
     :goto_0
-    # getter for: Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;->mLoadImageScenRectTask:Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;
     invoke-static {}, Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;->access$100()Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;
 
     move-result-object v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;->mIsDirty:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;->access$200(Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;->mLoadImageScenRectTask:Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;
     invoke-static {}, Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;->access$100()Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;->mIsDirty:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;->access$202(Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask$1;->val$context:Landroid/content/Context;
 
-    # invokes: Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;->processImageSceneRectDB(Landroid/content/Context;)V
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/LoadImageSceneRectTask;->access$300(Landroid/content/Context;)V
 
     goto :goto_0

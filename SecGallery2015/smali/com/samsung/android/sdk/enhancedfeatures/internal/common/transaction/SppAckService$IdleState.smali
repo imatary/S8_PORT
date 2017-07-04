@@ -44,7 +44,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService$IdleState;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->mServiceBinder:Lcom/sec/spp/push/IPushClientService;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;)Lcom/sec/spp/push/IPushClientService;
 
     move-result-object v2
@@ -53,7 +52,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService$IdleState;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->mStHandler:Lcom/samsung/android/sdk/ssf/common/transaction/StateHandler;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;)Lcom/samsung/android/sdk/ssf/common/transaction/StateHandler;
 
     move-result-object v2
@@ -62,14 +60,12 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService$IdleState;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->mStHandler:Lcom/samsung/android/sdk/ssf/common/transaction/StateHandler;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;)Lcom/samsung/android/sdk/ssf/common/transaction/StateHandler;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService$IdleState;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->mBindState:Lcom/samsung/android/sdk/ssf/common/transaction/HandlerState;
     invoke-static {v3}, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->access$400(Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;)Lcom/samsung/android/sdk/ssf/common/transaction/HandlerState;
 
     move-result-object v3
@@ -93,7 +89,6 @@
     :try_start_0
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService$IdleState;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->mServiceBinder:Lcom/sec/spp/push/IPushClientService;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;)Lcom/sec/spp/push/IPushClientService;
 
     move-result-object v2
@@ -118,7 +113,6 @@
 
     move-result-object v2
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->access$500()Ljava/lang/String;
 
     move-result-object v3
@@ -133,7 +127,6 @@
 
     iget v3, p1, Landroid/os/Message;->arg2:I
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->stopService(I)V
     invoke-static {v2, v3}, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->access$600(Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;I)V
 
     goto :goto_0
@@ -159,7 +152,6 @@
 
     move-result-object v2
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->access$500()Ljava/lang/String;
 
     move-result-object v3
@@ -168,7 +160,6 @@
 
     invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/internal/common/transaction/SppAckService;->access$500()Ljava/lang/String;
 
     move-result-object v2

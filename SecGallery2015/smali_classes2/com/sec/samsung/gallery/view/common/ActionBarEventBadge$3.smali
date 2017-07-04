@@ -41,17 +41,14 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->mIsLongClicked:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$602(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$3;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->playHaptic()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$700(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$3;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->showHintPopUp(Landroid/view/View;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$800(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;Landroid/view/View;)V
 
     const/4 v0, 0x0

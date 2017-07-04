@@ -86,7 +86,7 @@
 
     move-result-object v0
 
-    invoke-interface {p3, p1, v0}, Lcom/samsung/android/devicecog/gallery/selectiontask/AlbumViewDCSelectItemTask$ComparatorName;->compareName(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {p3, v0, p1}, Lcom/samsung/android/devicecog/gallery/selectiontask/AlbumViewDCSelectItemTask$ComparatorName;->compareName(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v4
 
@@ -178,7 +178,7 @@
 
     if-eqz v4, :cond_3
 
-    const v2, 0x7f0a079a
+    const v2, 0x7f0a07a0
 
     :goto_1
     iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/AlbumViewDCSelectItemTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -210,7 +210,7 @@
     goto :goto_0
 
     :cond_3
-    const v2, 0x7f0a0744
+    const v2, 0x7f0a074a
 
     goto :goto_1
 .end method
@@ -408,7 +408,7 @@
 
     iget-object v7, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/AlbumViewDCSelectItemTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v8, 0x7f0a075b
+    const v8, 0x7f0a0761
 
     new-array v9, v9, [Ljava/lang/Object;
 
@@ -613,7 +613,7 @@
 
     iget-object v8, p0, Lcom/samsung/android/devicecog/gallery/selectiontask/AlbumViewDCSelectItemTask;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v9, 0x7f0a075b
+    const v9, 0x7f0a0761
 
     new-array v10, v11, [Ljava/lang/Object;
 

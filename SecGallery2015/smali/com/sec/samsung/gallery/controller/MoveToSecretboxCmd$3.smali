@@ -57,7 +57,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsTouchOutside:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$602(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
@@ -78,7 +77,6 @@
 
     iget-boolean v6, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$3;->val$spreadBurstShot:Z
 
-    # invokes: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->handleMultipleFileOperation(IIILjava/util/ArrayList;Ljava/lang/String;Z)V
     invoke-static/range {v0 .. v6}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$400(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;IIILjava/util/ArrayList;Ljava/lang/String;Z)V
 
     return-void

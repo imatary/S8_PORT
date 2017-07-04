@@ -62,7 +62,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListView;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListView;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterSelectedItemListView;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
 
     move-result-object v2

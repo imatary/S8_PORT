@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$6;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSeparatedListAdapter:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SeparatedListAdapter;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$1000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SeparatedListAdapter;
 
     move-result-object v0
@@ -52,14 +51,12 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$6;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateClearHistoryListView()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$1300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$6$1;->this$1:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$6;
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$6;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateHistoryListView()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$1400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
 
     return-void

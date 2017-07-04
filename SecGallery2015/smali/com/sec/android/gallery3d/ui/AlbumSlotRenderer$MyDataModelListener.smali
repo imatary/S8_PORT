@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer$MyDataModelListener;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer;->access$100(Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer;)Lcom/sec/android/gallery3d/ui/SlotView;
 
     move-result-object v0
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer$MyDataModelListener;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer;->mSlotView:Lcom/sec/android/gallery3d/ui/SlotView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer;->access$100(Lcom/sec/android/gallery3d/ui/AlbumSlotRenderer;)Lcom/sec/android/gallery3d/ui/SlotView;
 
     move-result-object v0

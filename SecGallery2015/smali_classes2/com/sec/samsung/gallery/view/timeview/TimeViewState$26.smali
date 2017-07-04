@@ -40,7 +40,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$26;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->finishCurrentViewState()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$15100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0

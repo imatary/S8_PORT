@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$7;->val$editChildView:Landroid/widget/TextView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->setFocusOnFavorite(Landroid/widget/TextView;Z)V
     invoke-static {v0, v1, p2}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$1800(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;Landroid/widget/TextView;Z)V
 
     return-void

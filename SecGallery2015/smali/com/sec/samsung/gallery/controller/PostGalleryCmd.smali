@@ -439,6 +439,12 @@
 
     invoke-virtual {v1, v0}, Lcom/sec/samsung/gallery/util/TTSUtil;->init(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)V
 
+    iget-object v0, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
+
+    check-cast v0, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->setOnSystemUiVisibilityChangeListener()V
+
     sget-object v0, Lcom/sec/samsung/gallery/features/FeatureNames;->UseFaceTag:Lcom/sec/samsung/gallery/features/FeatureNames;
 
     invoke-static {v0}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
@@ -511,7 +517,9 @@
 .end method
 
 .method private destroy(Landroid/app/Activity;)V
-    .locals 5
+    .locals 6
+
+    const/4 v5, 0x0
 
     const-string/jumbo v2, "Gallery_Performance"
 
@@ -556,9 +564,7 @@
 
     invoke-virtual {v2}, Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;->dismissDialog()V
 
-    const/4 v2, 0x0
-
-    iput-object v2, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mCheckStorageDialog:Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
+    iput-object v5, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mCheckStorageDialog:Lcom/sec/samsung/gallery/view/common/CheckStorageDialog;
 
     :cond_1
     invoke-static {}, Lcom/sec/android/gallery3d/remote/slink/SLinkManager;->releaseInstance()V
@@ -643,6 +649,16 @@
     invoke-virtual {v2, v3}, Landroid/view/Window;->clearFlags(I)V
 
     :cond_3
+    iget-object v2, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
+
+    check-cast v2, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-virtual {v2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getGlRootView()Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v5}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setOnSystemUiVisibilityChangeListener(Landroid/view/View$OnSystemUiVisibilityChangeListener;)V
+
     const-string/jumbo v2, "Gallery_Performance"
 
     const-string/jumbo v3, "PostGalleryCmd destroy() END"

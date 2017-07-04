@@ -69,7 +69,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$7;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mCurrentBaseMediaSet:Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v1

@@ -143,7 +143,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent$3;->val$callback:Lcom/sec/android/gallery3d/eventshare/command/PrepareReceivingCommand;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->getFolderTokenByContentToken(Ljava/lang/String;ILjava/lang/String;Lcom/sec/android/gallery3d/eventshare/command/PrepareReceivingCommand;)V
     invoke-static {v0, v1, v2, v3, v4}, Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;->access$200(Lcom/sec/android/gallery3d/eventshare/agent/EventShareAgent;Ljava/lang/String;ILjava/lang/String;Lcom/sec/android/gallery3d/eventshare/command/PrepareReceivingCommand;)V
 
     return-void

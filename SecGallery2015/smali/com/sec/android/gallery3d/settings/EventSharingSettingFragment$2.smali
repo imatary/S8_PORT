@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment$2;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->handleLaunchNotificationActivity()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;->access$100(Lcom/sec/android/gallery3d/settings/EventSharingSettingFragment;)V
 
     const/4 v0, 0x0

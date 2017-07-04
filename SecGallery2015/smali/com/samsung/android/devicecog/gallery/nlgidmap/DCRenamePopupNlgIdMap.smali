@@ -53,9 +53,9 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const v4, 0x7f0a078d
+    const v4, 0x7f0a0793
 
-    const v3, 0x7f0a078c
+    const v3, 0x7f0a0792
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -79,7 +79,7 @@
 
     const-string/jumbo v1, "StoryListView"
 
-    const v2, 0x7f0a078e
+    const v2, 0x7f0a0794
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -91,7 +91,7 @@
 
     const-string/jumbo v1, "StoryDetailView"
 
-    const v2, 0x7f0a083e
+    const v2, 0x7f0a084c
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -103,7 +103,7 @@
 
     const-string/jumbo v1, "AlbumsListView"
 
-    const v2, 0x7f0a075e
+    const v2, 0x7f0a0764
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -135,7 +135,7 @@
 
     const-string/jumbo v1, "AlbumsListView"
 
-    const v2, 0x7f0a075d
+    const v2, 0x7f0a0763
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -167,7 +167,7 @@
 
     const-string/jumbo v1, "AlbumsListView"
 
-    const v2, 0x7f0a075f
+    const v2, 0x7f0a0765
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

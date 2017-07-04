@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$74;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->cancelEventSharing(Landroid/content/DialogInterface;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$30000(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;Landroid/content/DialogInterface;)V
 
     return-void

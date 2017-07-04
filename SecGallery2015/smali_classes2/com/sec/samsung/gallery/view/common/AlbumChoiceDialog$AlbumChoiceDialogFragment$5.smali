@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->mEvent:Lcom/sec/samsung/gallery/core/Event;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->access$300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;)Lcom/sec/samsung/gallery/core/Event;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->mEvent:Lcom/sec/samsung/gallery/core/Event;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->access$300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;)Lcom/sec/samsung/gallery/core/Event;
 
     move-result-object v1
@@ -65,7 +63,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->mEvent:Lcom/sec/samsung/gallery/core/Event;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->access$300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;)Lcom/sec/samsung/gallery/core/Event;
 
     move-result-object v0
@@ -82,7 +79,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog$AlbumChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->mEvent:Lcom/sec/samsung/gallery/core/Event;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;->access$300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceDialog;)Lcom/sec/samsung/gallery/core/Event;
 
     move-result-object v1

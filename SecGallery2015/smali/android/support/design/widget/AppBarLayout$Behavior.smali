@@ -200,7 +200,6 @@
 .method private dispatchOffsetUpdates(Landroid/support/design/widget/AppBarLayout;)V
     .locals 5
 
-    # getter for: Landroid/support/design/widget/AppBarLayout;->mListeners:Ljava/util/List;
     invoke-static {p1}, Landroid/support/design/widget/AppBarLayout;->access$200(Landroid/support/design/widget/AppBarLayout;)Ljava/util/List;
 
     move-result-object v2

@@ -49,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;->access$000(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -66,7 +65,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;->access$100(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -87,7 +85,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;->access$300(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;ILjava/lang/String;)V
 
     return-void
@@ -103,7 +100,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide$1;->this$0:Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;
 
-    # getter for: Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;->access$200(Lcom/sec/samsung/gallery/view/albumview/AlbumActionBarForHide;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

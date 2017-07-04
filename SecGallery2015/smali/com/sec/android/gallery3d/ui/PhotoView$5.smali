@@ -43,14 +43,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$5;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mListener:Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1700(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
 
     move-result-object v1
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$5;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mVisionIntelligenceIconViews:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2000(Lcom/sec/android/gallery3d/ui/PhotoView;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -69,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$5;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mVisionIntelligenceIconViews:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2000(Lcom/sec/android/gallery3d/ui/PhotoView;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -88,7 +85,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$5;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mVisionIntelligenceIconViews:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2000(Lcom/sec/android/gallery3d/ui/PhotoView;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -109,12 +105,10 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/ui/PhotoView$5;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mCurMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v5}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2100(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v5
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PhotoView;->getObjectRect(Lcom/sec/android/gallery3d/data/MediaItem;)Ljava/util/ArrayList;
     invoke-static {v4, v5}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2200(Lcom/sec/android/gallery3d/ui/PhotoView;Lcom/sec/android/gallery3d/data/MediaItem;)Ljava/util/ArrayList;
 
     move-result-object v4

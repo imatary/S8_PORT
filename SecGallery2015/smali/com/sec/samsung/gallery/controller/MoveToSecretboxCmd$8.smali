@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$8;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -66,7 +65,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$8;->mActivity:Landroid/app/Activity;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->handleOnDismissDialog(IILandroid/app/Activity;Landroid/content/DialogInterface$OnDismissListener;)V
     invoke-static {v0, v1, v2, v3, p0}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$1000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;IILandroid/app/Activity;Landroid/content/DialogInterface$OnDismissListener;)V
 
     return-void

@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$500(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v1

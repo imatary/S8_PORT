@@ -45,7 +45,6 @@
 
     iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$8;->val$changeScreen:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->startDetailView(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3100(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;Z)V
 
     return-void

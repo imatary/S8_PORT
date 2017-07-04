@@ -80,7 +80,6 @@
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mIsTouchImageView:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$602(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Z)Z
 
     goto :goto_0
@@ -104,7 +103,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter$6;->this$0:Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;
 
-    # setter for: Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->mIsTouchImageView:Z
     invoke-static {v1, v4}, Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;->access$602(Lcom/sec/samsung/gallery/mapfragment/MapMarkerThumbnailListAdapter;Z)Z
 
     goto :goto_0

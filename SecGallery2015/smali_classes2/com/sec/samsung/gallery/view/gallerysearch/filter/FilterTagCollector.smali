@@ -347,12 +347,10 @@
 
     check-cast v18, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;->mStartTime:J
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;)J
 
     move-result-wide v28
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;->mEndTime:J
     invoke-static/range {v18 .. v18}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;)J
 
     move-result-wide v16
@@ -578,17 +576,14 @@
 
     check-cast v22, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;->mTitle:Ljava/lang/String;
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;)Ljava/lang/String;
 
     move-result-object v20
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;->mStartTime:J
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;)J
 
     move-result-wide v28
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;->mEndTime:J
     invoke-static/range {v22 .. v22}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterTagCollector$EventInfo;)J
 
     move-result-wide v16

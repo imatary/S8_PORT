@@ -82,7 +82,6 @@
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :try_start_0
-    # getter for: Lcom/sec/android/gallery3d/provider/GalleryProvider;->sSyncLock:Ljava/lang/Object;
     invoke-static {}, Lcom/sec/android/gallery3d/provider/GalleryProvider;->access$400()Ljava/lang/Object;
 
     move-result-object v9
@@ -234,7 +233,6 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_3
 
     :try_start_4
-    # invokes: Lcom/sec/android/gallery3d/provider/GalleryProvider;->dump(Ljava/io/InputStream;Ljava/io/OutputStream;)V
     invoke-static {v3, v7}, Lcom/sec/android/gallery3d/provider/GalleryProvider;->access$500(Ljava/io/InputStream;Ljava/io/OutputStream;)V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1

@@ -45,7 +45,6 @@
     :pswitch_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -58,7 +57,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -81,12 +79,10 @@
 
     invoke-direct {v3, v4}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mBgDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$102(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -101,14 +97,12 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mBgDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Landroid/app/ActionBar;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->FEATURE_USE_TAB_UI:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$200()Z
 
     move-result v2
@@ -117,7 +111,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -132,7 +125,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -162,7 +154,6 @@
     :pswitch_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -175,7 +166,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -199,7 +189,6 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -212,7 +201,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -229,7 +217,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -238,7 +225,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mBgOriginalDrawableId:I
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)I
 
     move-result v3
@@ -249,7 +235,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -264,7 +249,6 @@
 
     invoke-virtual {v2, v0}, Landroid/app/ActionBar;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->FEATURE_USE_TAB_UI:Z
     invoke-static {}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$200()Z
 
     move-result v2
@@ -273,7 +257,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2
@@ -288,7 +271,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlShrinkAnimation;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v2

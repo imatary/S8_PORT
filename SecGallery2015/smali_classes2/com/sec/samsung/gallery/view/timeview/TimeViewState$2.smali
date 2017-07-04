@@ -111,7 +111,7 @@
     goto :goto_0
 
     :sswitch_4
-    const-string/jumbo v9, "MEDIA_EJECT"
+    const-string/jumbo v9, "SYSTEM_UI_VISIBILITY_CHANGE"
 
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -124,7 +124,7 @@
     goto :goto_0
 
     :sswitch_5
-    const-string/jumbo v9, "UPDATE_MENU"
+    const-string/jumbo v9, "MEDIA_EJECT"
 
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -137,7 +137,7 @@
     goto :goto_0
 
     :sswitch_6
-    const-string/jumbo v9, "CHECK_TO_SHOW_TIP_CARD_FINISHED"
+    const-string/jumbo v9, "UPDATE_MENU"
 
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -150,7 +150,7 @@
     goto :goto_0
 
     :sswitch_7
-    const-string/jumbo v9, "UPDATE_MORE_MENU_BADGE"
+    const-string/jumbo v9, "CHECK_TO_SHOW_TIP_CARD_FINISHED"
 
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -163,7 +163,7 @@
     goto :goto_0
 
     :sswitch_8
-    const-string/jumbo v9, "DC_CANCEL_SELECT_ITEMS_FOR_TIME_OUT"
+    const-string/jumbo v9, "UPDATE_MORE_MENU_BADGE"
 
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -175,10 +175,22 @@
 
     goto :goto_0
 
+    :sswitch_9
+    const-string/jumbo v9, "DC_CANCEL_SELECT_ITEMS_FOR_TIME_OUT"
+
+    invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_0
+
+    const/16 v6, 0x9
+
+    goto :goto_0
+
     :pswitch_0
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->handleFilter()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$400(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)V
 
     goto :goto_1
@@ -186,7 +198,6 @@
     :pswitch_1
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->updateSelectionMode()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$500(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)V
 
     goto :goto_1
@@ -208,7 +219,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$600(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -220,7 +230,6 @@
     :pswitch_3
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$700(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v6
@@ -229,7 +238,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$800(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v6
@@ -241,7 +249,6 @@
     :pswitch_4
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$900(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
     move-result-object v6
@@ -250,7 +257,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v6
@@ -263,7 +269,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -282,7 +287,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v6
@@ -295,7 +299,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v6
@@ -308,7 +311,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$900(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
     move-result-object v6
@@ -318,12 +320,10 @@
     :cond_2
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->exitSelectionMode()V
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1200(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)V
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$900(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
     move-result-object v6
@@ -335,7 +335,6 @@
     :pswitch_5
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1300(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -344,7 +343,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1400(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v6
@@ -356,7 +354,6 @@
     :pswitch_6
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1500(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v6
@@ -365,7 +362,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1600(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v6
@@ -374,7 +370,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1700(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v6
@@ -396,14 +391,12 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1900(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mMenu:Landroid/view/Menu;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1800(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Landroid/view/Menu;
 
     move-result-object v7
@@ -415,7 +408,6 @@
     :pswitch_8
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mDCHandler:Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$2000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
 
     move-result-object v6
@@ -428,7 +420,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mDCHandler:Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$2100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
 
     move-result-object v6
@@ -445,7 +436,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$2;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mDCHandler:Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$2200(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
 
     move-result-object v6
@@ -464,13 +454,14 @@
     .sparse-switch
         -0x5d19eb8b -> :sswitch_2
         -0x49a22ad2 -> :sswitch_3
-        -0x4987038a -> :sswitch_4
+        -0x4987038a -> :sswitch_5
+        -0x3946535e -> :sswitch_4
         -0x215c86d9 -> :sswitch_1
         0x40145e4 -> :sswitch_0
-        0xdd74c57 -> :sswitch_7
-        0x257908e8 -> :sswitch_6
-        0x5fe52f15 -> :sswitch_5
-        0x639dce2f -> :sswitch_8
+        0xdd74c57 -> :sswitch_8
+        0x257908e8 -> :sswitch_7
+        0x5fe52f15 -> :sswitch_6
+        0x639dce2f -> :sswitch_9
     .end sparse-switch
 
     :pswitch_data_0
@@ -478,6 +469,7 @@
         :pswitch_0
         :pswitch_1
         :pswitch_2
+        :pswitch_3
         :pswitch_3
         :pswitch_4
         :pswitch_5
@@ -490,7 +482,7 @@
 .method public listNotificationInterests()[Ljava/lang/String;
     .locals 3
 
-    const/16 v0, 0x9
+    const/16 v0, 0xa
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -545,6 +537,12 @@
     const/16 v1, 0x8
 
     const-string/jumbo v2, "DC_CANCEL_SELECT_ITEMS_FOR_TIME_OUT"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x9
+
+    const-string/jumbo v2, "SYSTEM_UI_VISIBILITY_CHANGE"
 
     aput-object v2, v0, v1
 

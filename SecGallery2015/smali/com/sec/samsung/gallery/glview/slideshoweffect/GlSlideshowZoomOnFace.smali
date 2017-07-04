@@ -154,7 +154,6 @@
 
     mul-float/2addr v4, v5
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceX:F
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$302(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;F)F
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace;->mLocalFaceInfo:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;
@@ -175,7 +174,6 @@
 
     mul-float/2addr v4, v5
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceY:F
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$402(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;F)F
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace;->mLocalFaceInfo:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;
@@ -188,7 +186,6 @@
 
     iget v4, v4, Lcom/sec/samsung/gallery/view/image_manager/SlideImageItem$SlideShowFaceInfo;->mScaleValue:F
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->scaleValue:F
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$202(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;F)F
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace;->mLocalFaceInfo:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;
@@ -197,7 +194,6 @@
 
     sget-object v4, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;->MOVING_TO_FACE:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->state:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$102(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;)Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;
 
     add-int/lit8 v2, v2, 0x1
@@ -286,7 +282,6 @@
 
     mul-float/2addr v4, v5
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceX:F
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$302(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;F)F
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace;->mLocalFaceInfo:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;
@@ -307,7 +302,6 @@
 
     mul-float/2addr v4, v5
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceY:F
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$402(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;F)F
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace;->mLocalFaceInfo:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;
@@ -320,7 +314,6 @@
 
     iget v4, v4, Lcom/sec/samsung/gallery/view/image_manager/SlideImageItem$SlideShowFaceInfo;->mScaleValue:F
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->scaleValue:F
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$202(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;F)F
 
     add-int/lit8 v2, v2, 0x1
@@ -762,7 +755,6 @@
 
     aget-object v7, v7, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->animDone:Z
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)Z
 
     move-result v7
@@ -781,7 +773,6 @@
 
     aget-object v7, v7, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->state:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$100(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;
 
     move-result-object v7
@@ -800,7 +791,6 @@
 
     aget-object v5, v5, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->animDone:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)Z
 
     move-result v5
@@ -813,7 +803,6 @@
 
     aget-object v6, v6, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->state:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$100(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;
 
     move-result-object v6
@@ -863,7 +852,6 @@
 
     aget-object v5, v5, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->scaleValue:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v5
@@ -876,7 +864,6 @@
 
     aget-object v5, v5, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceX:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v5
@@ -889,7 +876,6 @@
 
     aget-object v5, v5, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceY:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v5
@@ -904,7 +890,6 @@
 
     sget-object v6, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;->ZOOMING_ON_FACE:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->state:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;
     invoke-static {v5, v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$102(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;)Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$FaceAnimState;
 
     goto/16 :goto_1
@@ -986,7 +971,6 @@
 
     aget-object v6, v6, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceX:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v6
@@ -1003,7 +987,6 @@
 
     aget-object v6, v6, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceY:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v6
@@ -1020,7 +1003,6 @@
 
     aget-object v6, v6, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->scaleValue:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v6
@@ -1097,7 +1079,6 @@
 
     aget-object v6, v6, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceX:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v6
@@ -1114,7 +1095,6 @@
 
     aget-object v6, v6, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceY:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v6
@@ -1131,7 +1111,6 @@
 
     aget-object v6, v6, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->scaleValue:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v6
@@ -1177,14 +1156,12 @@
 
     const/4 v6, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->animDone:Z
     invoke-static {v5, v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$002(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;Z)Z
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace;->mLocalFaceInfo:[Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;
 
     aget-object v5, v5, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->scaleValue:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v5
@@ -1195,7 +1172,6 @@
 
     aget-object v5, v5, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceX:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v5
@@ -1206,7 +1182,6 @@
 
     aget-object v5, v5, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceY:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v5
@@ -1314,7 +1289,6 @@
 
     aget-object v6, v6, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->scaleValue:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$200(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v6
@@ -1329,7 +1303,6 @@
 
     aget-object v6, v6, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceX:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$300(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v6
@@ -1344,7 +1317,6 @@
 
     aget-object v6, v6, v3
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->faceY:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;->access$400(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowZoomOnFace$LocalFaceInfo;)F
 
     move-result v6

@@ -150,7 +150,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/GalleryActivityNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/GalleryActivityNotificationImageFetcher;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/GalleryActivityNotificationImageFetcher;->mImageSize:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/GalleryActivityNotificationImageFetcher;->access$100(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/GalleryActivityNotificationImageFetcher;)I
 
     move-result v4

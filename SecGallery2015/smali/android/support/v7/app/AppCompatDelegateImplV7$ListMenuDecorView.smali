@@ -128,7 +128,6 @@
 
     const/4 v4, 0x0
 
-    # invokes: Landroid/support/v7/app/AppCompatDelegateImplV7;->closePanel(I)V
     invoke-static {v3, v4}, Landroid/support/v7/app/AppCompatDelegateImplV7;->access$1300(Landroid/support/v7/app/AppCompatDelegateImplV7;I)V
 
     const/4 v3, 0x1

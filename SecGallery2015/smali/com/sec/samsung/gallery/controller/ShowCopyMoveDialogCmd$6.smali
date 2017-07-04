@@ -191,7 +191,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v16
@@ -220,7 +219,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mSingleOperation:Z
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$200(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Z
 
     move-result v16
@@ -276,7 +274,6 @@
 
     move-object/from16 v3, v18
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->copyOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v13
@@ -313,7 +310,6 @@
 
     move-object/from16 v3, v18
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->moveOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v13
@@ -331,7 +327,6 @@
 
     move-object/from16 v1, p1
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->isBurstShot(Lcom/sec/android/gallery3d/data/MediaObject;)Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1200(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;)Z
 
     move-result v16
@@ -398,7 +393,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsCheck:Z
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1300(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Z
 
     move-result v16
@@ -411,7 +405,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsRename:Z
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1400(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Z
 
     move-result v16
@@ -463,7 +456,6 @@
 
     move-object/from16 v3, v18
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->copyOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v13
@@ -493,7 +485,6 @@
 
     move-object/from16 v3, v18
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->moveOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v13
@@ -550,7 +541,6 @@
 
     move-object/from16 v3, v18
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->copyOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v13
@@ -584,7 +574,6 @@
 
     move-object/from16 v3, v18
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->moveOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v13
@@ -601,7 +590,6 @@
 
     const/16 v17, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsFileNameUsed:Z
     invoke-static/range {v16 .. v17}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1502(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Z)Z
 
     move-object/from16 v0, p0
@@ -610,7 +598,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->lock:Ljava/lang/Object;
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1600(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Ljava/lang/Object;
 
     move-result-object v17
@@ -626,7 +613,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v16
@@ -656,7 +642,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsFileNameUsed:Z
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1500(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Z
 
     move-result v16
@@ -669,7 +654,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->lock:Ljava/lang/Object;
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1600(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Ljava/lang/Object;
 
     move-result-object v16
@@ -711,7 +695,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsCancel:Z
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$400(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Z
 
     move-result v16
@@ -736,7 +719,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mResult:Z
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1800(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Z
     :try_end_4
     .catch Ljava/lang/InterruptedException; {:try_start_4 .. :try_end_4} :catch_0
@@ -791,7 +773,6 @@
 
     move-object/from16 v3, v18
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->copyOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v13
@@ -821,7 +802,6 @@
 
     move-object/from16 v3, v18
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->moveOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v13
@@ -874,7 +854,6 @@
 
     move-object/from16 v3, v18
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->copyOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v13
@@ -904,7 +883,6 @@
 
     move-object/from16 v3, v18
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->moveOperation(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v13
@@ -956,7 +934,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$600(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     move-result-object v7
@@ -969,20 +946,17 @@
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v10}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v10
 
     invoke-direct {v9, v10}, Lcom/sec/samsung/gallery/util/FileUtil;-><init>(Landroid/content/Context;)V
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v7, v9}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$602(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/samsung/gallery/util/FileUtil;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     :cond_2
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$600(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     move-result-object v7
@@ -995,7 +969,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v9
@@ -1080,7 +1053,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$800(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     move-result-object v7
@@ -1089,7 +1061,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v7}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$800(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     move-result-object v7
@@ -1190,7 +1161,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsCancel:Z
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$400(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Z
 
     move-result v8
@@ -1199,7 +1169,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v8
@@ -1208,7 +1177,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v8
@@ -1218,7 +1186,6 @@
     :cond_0
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v8
@@ -1227,7 +1194,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v8
@@ -1243,14 +1209,12 @@
 
     const/4 v9, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mFileUtils:Lcom/sec/samsung/gallery/util/FileUtil;
     invoke-static {v8, v9}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$602(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/samsung/gallery/util/FileUtil;)Lcom/sec/samsung/gallery/util/FileUtil;
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
     const/4 v9, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mOnProgressListener:Lcom/sec/android/gallery3d/data/OnProgressListener;
     invoke-static {v8, v9}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$702(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/OnProgressListener;)Lcom/sec/android/gallery3d/data/OnProgressListener;
 
     new-instance v2, Lcom/sec/samsung/gallery/lib/factory/MediaScannerFactory;
@@ -1259,7 +1223,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1296,7 +1259,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1318,7 +1280,6 @@
     :goto_0
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1346,7 +1307,6 @@
     :cond_2
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$800(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     move-result-object v8
@@ -1355,7 +1315,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$800(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     move-result-object v8
@@ -1370,7 +1329,6 @@
 
     const/4 v9, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v8, v9}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$802(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/samsung/gallery/util/MediaOperations;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     :cond_3
@@ -1380,7 +1338,6 @@
     :cond_4
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1406,12 +1363,10 @@
 
     const/4 v9, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mOperationTask:Lcom/sec/samsung/gallery/util/MediaOperations;
     invoke-static {v8, v9}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$802(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/samsung/gallery/util/MediaOperations;)Lcom/sec/samsung/gallery/util/MediaOperations;
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsCancel:Z
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$400(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Z
 
     move-result v8
@@ -1428,7 +1383,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$900(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/res/Resources;
 
     move-result-object v8
@@ -1441,7 +1395,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1462,7 +1415,6 @@
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v10}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$900(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/res/Resources;
 
     move-result-object v10
@@ -1492,7 +1444,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$900(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/res/Resources;
 
     move-result-object v8
@@ -1505,7 +1456,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1526,7 +1476,6 @@
 
     iget-object v10, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v10}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$900(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/res/Resources;
 
     move-result-object v10
@@ -1558,14 +1507,12 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v9}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$900(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/res/Resources;
 
     move-result-object v9
@@ -1583,7 +1530,6 @@
     :cond_8
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mIsCancel:Z
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$400(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Z
 
     move-result v8
@@ -1602,7 +1548,6 @@
     :goto_2
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1620,7 +1565,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1651,7 +1595,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1722,7 +1665,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1760,7 +1702,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1820,7 +1761,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1862,7 +1802,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1896,7 +1835,6 @@
     :cond_f
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1938,7 +1876,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -1990,7 +1927,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2034,7 +1970,6 @@
     :cond_12
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2078,7 +2013,6 @@
     :cond_13
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2094,7 +2028,6 @@
     :cond_14
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2138,7 +2071,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$900(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/res/Resources;
 
     move-result-object v8
@@ -2160,7 +2092,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mResources:Landroid/content/res/Resources;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$900(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/res/Resources;
 
     move-result-object v8
@@ -2194,7 +2125,6 @@
     :cond_17
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2232,7 +2162,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2274,7 +2203,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2308,7 +2236,6 @@
     :cond_1a
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2350,7 +2277,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2402,7 +2328,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2446,7 +2371,6 @@
     :cond_1d
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2490,7 +2414,6 @@
     :cond_1e
     iget-object v8, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Landroid/content/Context;
 
     move-result-object v8
@@ -2530,7 +2453,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$500(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;)Lcom/sec/samsung/gallery/view/common/CustomProgressDialog;
 
     move-result-object v1

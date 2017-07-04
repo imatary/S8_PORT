@@ -98,7 +98,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mListenerThumbMultiSelect:Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
 
     move-result-object v0
@@ -122,17 +121,14 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getPenSelectCtrl()Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4602(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v0
@@ -141,12 +137,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->cpuBoostInit()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v0
@@ -161,7 +155,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v0
@@ -175,7 +168,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v0
@@ -188,7 +180,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v0
@@ -201,7 +192,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v0
@@ -210,7 +200,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v0
@@ -255,7 +244,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mListenerThumbMultiSelect:Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
 
     move-result-object v1
@@ -314,17 +302,14 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getPenSelectionBox()Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;
 
     move-result-object v3
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectionBox:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4802(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mIsDisplayedPenSelectionBox:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$5000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Z
 
     move-result v2
@@ -333,7 +318,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->cpuBoost()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$5100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
@@ -344,12 +328,10 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mIsDisplayedPenSelectionBox:Z
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$5002(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Z)Z
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectionBox:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;
 
     move-result-object v1
@@ -359,7 +341,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectionBox:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;
 
     move-result-object v1
@@ -394,7 +375,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mListenerThumbMultiSelect:Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/android/gallery3d/glcore/GlObject$GlMultiSelectListener;
 
     move-result-object v1
@@ -484,17 +464,14 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->getPenSelectCtrl()Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v3
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4602(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v2
@@ -503,7 +480,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v2
@@ -512,7 +488,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v2
@@ -521,7 +496,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mPenSelectCtrl:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectController;
 
     move-result-object v2
@@ -551,7 +525,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$22;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->cpuBoostRelease()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$4400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)V
 
     goto/16 :goto_0

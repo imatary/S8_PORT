@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Landroid/support/v7/internal/app/WindowDecorActionBar$3;->this$0:Landroid/support/v7/internal/app/WindowDecorActionBar;
 
-    # getter for: Landroid/support/v7/internal/app/WindowDecorActionBar;->mContainerView:Landroid/support/v7/internal/widget/ActionBarContainer;
     invoke-static {v1}, Landroid/support/v7/internal/app/WindowDecorActionBar;->access$200(Landroid/support/v7/internal/app/WindowDecorActionBar;)Landroid/support/v7/internal/widget/ActionBarContainer;
 
     move-result-object v1

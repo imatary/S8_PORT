@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView$4;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->resetBackgroundLayout()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView$4;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;

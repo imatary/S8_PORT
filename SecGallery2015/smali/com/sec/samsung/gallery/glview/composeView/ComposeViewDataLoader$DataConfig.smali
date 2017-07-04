@@ -27,8 +27,6 @@
 
 .field public mScanFirstOnly:Z
 
-.field public mUseBitmapDrawTask:Z
-
 .field public mUseScrollDirectionData:Z
 
 .field public mUseSmartClustering:Z
@@ -71,8 +69,6 @@
     iput-boolean v1, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$DataConfig;->mUseStoryRealRatioClustering:Z
 
     iput-boolean v1, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$DataConfig;->mUseSocialStoryView:Z
-
-    iput-boolean v1, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$DataConfig;->mUseBitmapDrawTask:Z
 
     iput-boolean v1, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$DataConfig;->mUseZoomLevelInformation:Z
 

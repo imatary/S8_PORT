@@ -74,7 +74,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->isSupportPhotoViewOnPresentaion()Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$3800(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
 
     move-result v0
@@ -83,7 +82,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoViewPre:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$400(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v0
@@ -92,7 +90,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoViewPre:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$400(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v0
@@ -105,7 +102,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->handleDisplayChanged()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$3900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     :cond_0
@@ -115,7 +111,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoViewPre:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$400(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v0
@@ -124,7 +119,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mPhotoViewPre:Lcom/sec/android/gallery3d/ui/PhotoView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$400(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/ui/PhotoView;
 
     move-result-object v0
@@ -134,7 +128,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mConnectExtDisplay:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$4000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
 
     move-result v0
@@ -143,7 +136,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mDetailViewPresentation:Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$3600(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;
 
     move-result-object v0
@@ -152,7 +144,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mDetailViewPresentation:Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$3600(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;
 
     move-result-object v0
@@ -161,7 +152,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mDetailViewPresentation:Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$3600(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/samsung/gallery/view/detailview/DetailViewPresentation;
 
     move-result-object v0
@@ -173,7 +163,6 @@
     :cond_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mConnectExtDisplay:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$4000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Z
 
     move-result v0
@@ -182,7 +171,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->resetPhotoViewOnPresentation()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$3700(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     goto :goto_0

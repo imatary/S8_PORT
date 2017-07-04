@@ -54,7 +54,6 @@
 
     iget-wide v6, p0, Lcom/sec/android/gallery3d/util/ReverseGeocoder$1;->val$locationKey:J
 
-    # invokes: Lcom/sec/android/gallery3d/util/ReverseGeocoder;->insertGeoCache(DDJ)V
     invoke-static/range {v1 .. v7}, Lcom/sec/android/gallery3d/util/ReverseGeocoder;->access$000(Lcom/sec/android/gallery3d/util/ReverseGeocoder;DDJ)V
 
     return-void

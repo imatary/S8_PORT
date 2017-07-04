@@ -47,7 +47,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->mUseGraceMapViewUI:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$1500(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Z
 
     move-result v4
@@ -59,7 +58,6 @@
     :goto_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->mTouched_marker:Lcom/google/android/gms/maps/model/Marker;
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$600(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Lcom/google/android/gms/maps/model/Marker;
 
     move-result-object v4
@@ -68,7 +66,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->mUseGraceMapViewUI:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$1500(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Z
 
     move-result v4
@@ -81,7 +78,6 @@
     :goto_1
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->options:Lcom/sec/samsung/gallery/mapfragment/clustering/CommonOptions;
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$400(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Lcom/sec/samsung/gallery/mapfragment/clustering/CommonOptions;
 
     move-result-object v4
@@ -92,14 +88,12 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$1400(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Landroid/content/Context;
 
     move-result-object v6
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$1400(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Landroid/content/Context;
 
     move-result-object v4
@@ -110,7 +104,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->currentClusterPointsByMarker:Ljava/util/HashMap;
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$1300(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Ljava/util/HashMap;
 
     move-result-object v4
@@ -181,7 +174,6 @@
     :cond_3
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->mUseGraceMapViewUI:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$1500(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Z
 
     move-result v4
@@ -193,7 +185,6 @@
     :goto_3
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->mTouched_marker:Lcom/google/android/gms/maps/model/Marker;
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$600(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Lcom/google/android/gms/maps/model/Marker;
 
     move-result-object v4
@@ -202,7 +193,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->mUseGraceMapViewUI:Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$1500(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Z
 
     move-result v4
@@ -216,7 +206,6 @@
     :try_start_1
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->options:Lcom/sec/samsung/gallery/mapfragment/clustering/CommonOptions;
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$400(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Lcom/sec/samsung/gallery/mapfragment/clustering/CommonOptions;
 
     move-result-object v4
@@ -227,14 +216,12 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$1400(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Landroid/content/Context;
 
     move-result-object v6
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$1400(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Landroid/content/Context;
 
     move-result-object v4
@@ -245,7 +232,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf$4;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->currentClusterPointsByMarker:Ljava/util/HashMap;
     invoke-static {v4}, Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;->access$1300(Lcom/sec/samsung/gallery/mapfragment/clustering/Clusterkraf;)Ljava/util/HashMap;
 
     move-result-object v4

@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->mSharedEvent:Lcom/sec/android/gallery3d/eventshare/SharedEvent;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;)Lcom/sec/android/gallery3d/eventshare/SharedEvent;
 
     move-result-object v0
@@ -58,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->mEventState:Lcom/sec/android/gallery3d/eventshare/EventState;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;)Lcom/sec/android/gallery3d/eventshare/EventState;
 
     move-result-object v0
@@ -77,7 +75,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->mSharedEvent:Lcom/sec/android/gallery3d/eventshare/SharedEvent;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;)Lcom/sec/android/gallery3d/eventshare/SharedEvent;
 
     move-result-object v0
@@ -90,14 +87,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->mShareNotiManager:Lcom/sec/android/gallery3d/eventshare/utils/ShareNotificationManager;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->access$200(Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;)Lcom/sec/android/gallery3d/eventshare/utils/ShareNotificationManager;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->mSharedEvent:Lcom/sec/android/gallery3d/eventshare/SharedEvent;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;)Lcom/sec/android/gallery3d/eventshare/SharedEvent;
 
     move-result-object v1
@@ -108,7 +103,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->mNotifier:Lcom/sec/android/gallery3d/eventshare/utils/EventShareNotifier;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->access$300(Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;)Lcom/sec/android/gallery3d/eventshare/utils/EventShareNotifier;
 
     move-result-object v0
@@ -117,7 +111,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->mSharedEvent:Lcom/sec/android/gallery3d/eventshare/SharedEvent;
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;)Lcom/sec/android/gallery3d/eventshare/SharedEvent;
 
     move-result-object v2
@@ -132,7 +125,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->mEventState:Lcom/sec/android/gallery3d/eventshare/EventState;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;)Lcom/sec/android/gallery3d/eventshare/EventState;
 
     move-result-object v1
@@ -153,14 +145,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->mSharedEvent:Lcom/sec/android/gallery3d/eventshare/SharedEvent;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;)Lcom/sec/android/gallery3d/eventshare/SharedEvent;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->mEventState:Lcom/sec/android/gallery3d/eventshare/EventState;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/CreateGroupCommand;)Lcom/sec/android/gallery3d/eventshare/EventState;
 
     move-result-object v1

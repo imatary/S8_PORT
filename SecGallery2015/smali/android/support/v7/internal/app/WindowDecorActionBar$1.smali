@@ -38,7 +38,6 @@
 
     iget-object v0, p0, Landroid/support/v7/internal/app/WindowDecorActionBar$1;->this$0:Landroid/support/v7/internal/app/WindowDecorActionBar;
 
-    # getter for: Landroid/support/v7/internal/app/WindowDecorActionBar;->mContentAnimations:Z
     invoke-static {v0}, Landroid/support/v7/internal/app/WindowDecorActionBar;->access$000(Landroid/support/v7/internal/app/WindowDecorActionBar;)Z
 
     move-result v0
@@ -47,7 +46,6 @@
 
     iget-object v0, p0, Landroid/support/v7/internal/app/WindowDecorActionBar$1;->this$0:Landroid/support/v7/internal/app/WindowDecorActionBar;
 
-    # getter for: Landroid/support/v7/internal/app/WindowDecorActionBar;->mContentView:Landroid/view/View;
     invoke-static {v0}, Landroid/support/v7/internal/app/WindowDecorActionBar;->access$100(Landroid/support/v7/internal/app/WindowDecorActionBar;)Landroid/view/View;
 
     move-result-object v0
@@ -56,7 +54,6 @@
 
     iget-object v0, p0, Landroid/support/v7/internal/app/WindowDecorActionBar$1;->this$0:Landroid/support/v7/internal/app/WindowDecorActionBar;
 
-    # getter for: Landroid/support/v7/internal/app/WindowDecorActionBar;->mContentView:Landroid/view/View;
     invoke-static {v0}, Landroid/support/v7/internal/app/WindowDecorActionBar;->access$100(Landroid/support/v7/internal/app/WindowDecorActionBar;)Landroid/view/View;
 
     move-result-object v0
@@ -65,7 +62,6 @@
 
     iget-object v0, p0, Landroid/support/v7/internal/app/WindowDecorActionBar$1;->this$0:Landroid/support/v7/internal/app/WindowDecorActionBar;
 
-    # getter for: Landroid/support/v7/internal/app/WindowDecorActionBar;->mContainerView:Landroid/support/v7/internal/widget/ActionBarContainer;
     invoke-static {v0}, Landroid/support/v7/internal/app/WindowDecorActionBar;->access$200(Landroid/support/v7/internal/app/WindowDecorActionBar;)Landroid/support/v7/internal/widget/ActionBarContainer;
 
     move-result-object v0
@@ -75,7 +71,6 @@
     :cond_0
     iget-object v0, p0, Landroid/support/v7/internal/app/WindowDecorActionBar$1;->this$0:Landroid/support/v7/internal/app/WindowDecorActionBar;
 
-    # getter for: Landroid/support/v7/internal/app/WindowDecorActionBar;->mContainerView:Landroid/support/v7/internal/widget/ActionBarContainer;
     invoke-static {v0}, Landroid/support/v7/internal/app/WindowDecorActionBar;->access$200(Landroid/support/v7/internal/app/WindowDecorActionBar;)Landroid/support/v7/internal/widget/ActionBarContainer;
 
     move-result-object v0
@@ -86,7 +81,6 @@
 
     iget-object v0, p0, Landroid/support/v7/internal/app/WindowDecorActionBar$1;->this$0:Landroid/support/v7/internal/app/WindowDecorActionBar;
 
-    # getter for: Landroid/support/v7/internal/app/WindowDecorActionBar;->mContainerView:Landroid/support/v7/internal/widget/ActionBarContainer;
     invoke-static {v0}, Landroid/support/v7/internal/app/WindowDecorActionBar;->access$200(Landroid/support/v7/internal/app/WindowDecorActionBar;)Landroid/support/v7/internal/widget/ActionBarContainer;
 
     move-result-object v0
@@ -99,7 +93,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Landroid/support/v7/internal/app/WindowDecorActionBar;->mCurrentShowAnim:Landroid/support/v7/internal/view/ViewPropertyAnimatorCompatSet;
     invoke-static {v0, v1}, Landroid/support/v7/internal/app/WindowDecorActionBar;->access$302(Landroid/support/v7/internal/app/WindowDecorActionBar;Landroid/support/v7/internal/view/ViewPropertyAnimatorCompatSet;)Landroid/support/v7/internal/view/ViewPropertyAnimatorCompatSet;
 
     iget-object v0, p0, Landroid/support/v7/internal/app/WindowDecorActionBar$1;->this$0:Landroid/support/v7/internal/app/WindowDecorActionBar;
@@ -108,7 +101,6 @@
 
     iget-object v0, p0, Landroid/support/v7/internal/app/WindowDecorActionBar$1;->this$0:Landroid/support/v7/internal/app/WindowDecorActionBar;
 
-    # getter for: Landroid/support/v7/internal/app/WindowDecorActionBar;->mOverlayLayout:Landroid/support/v7/internal/widget/ActionBarOverlayLayout;
     invoke-static {v0}, Landroid/support/v7/internal/app/WindowDecorActionBar;->access$400(Landroid/support/v7/internal/app/WindowDecorActionBar;)Landroid/support/v7/internal/widget/ActionBarOverlayLayout;
 
     move-result-object v0
@@ -117,7 +109,6 @@
 
     iget-object v0, p0, Landroid/support/v7/internal/app/WindowDecorActionBar$1;->this$0:Landroid/support/v7/internal/app/WindowDecorActionBar;
 
-    # getter for: Landroid/support/v7/internal/app/WindowDecorActionBar;->mOverlayLayout:Landroid/support/v7/internal/widget/ActionBarOverlayLayout;
     invoke-static {v0}, Landroid/support/v7/internal/app/WindowDecorActionBar;->access$400(Landroid/support/v7/internal/app/WindowDecorActionBar;)Landroid/support/v7/internal/widget/ActionBarOverlayLayout;
 
     move-result-object v0

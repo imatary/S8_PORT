@@ -60,7 +60,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/DetailsAddressResolver;->mAddressLookupJob:Lcom/sec/android/gallery3d/util/Future;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/DetailsAddressResolver;->access$102(Lcom/sec/android/gallery3d/ui/DetailsAddressResolver;Lcom/sec/android/gallery3d/util/Future;)Lcom/sec/android/gallery3d/util/Future;
 
     invoke-interface {p1}, Lcom/sec/android/gallery3d/util/Future;->isCancelled()Z
@@ -71,7 +70,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/DetailsAddressResolver$1;->this$0:Lcom/sec/android/gallery3d/ui/DetailsAddressResolver;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/DetailsAddressResolver;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/DetailsAddressResolver;->access$300(Lcom/sec/android/gallery3d/ui/DetailsAddressResolver;)Landroid/os/Handler;
 
     move-result-object v0

@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$7;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->progressBar:Landroid/widget/ProgressBar;
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$400(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)Landroid/widget/ProgressBar;
 
     move-result-object v0
@@ -58,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity$7;->this$0:Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->bindSettingView()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$500(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;)V
 
     :goto_0
@@ -69,7 +67,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->mUseService:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;->access$202(Lcom/sec/android/gallery3d/settings/EventSharingSettingActivity;Z)Z
 
     goto :goto_0

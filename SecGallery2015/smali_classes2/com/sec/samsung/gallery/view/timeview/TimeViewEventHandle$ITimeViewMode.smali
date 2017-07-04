@@ -21,5 +21,5 @@
 .method public abstract onBackPressed()V
 .end method
 
-.method public abstract onItemClick(II)V
+.method public abstract onItemClick(II)Z
 .end method

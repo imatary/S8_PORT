@@ -54,7 +54,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewBeam$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/ComposeViewBeam;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/ComposeViewBeam;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/ComposeViewBeam;->access$000(Lcom/sec/samsung/gallery/glview/composeView/ComposeViewBeam;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2

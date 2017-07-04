@@ -41,8 +41,7 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->setCreateEventVisibleMode(Z)V
-    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15600(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
+    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$15700(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;Z)V
 
     return-void
 .end method

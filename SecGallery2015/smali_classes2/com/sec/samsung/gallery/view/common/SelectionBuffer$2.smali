@@ -49,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/SelectionBuffer$2;->this$0:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->mSelectionItemListAdapter:Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/SelectionBuffer;->access$200(Lcom/sec/samsung/gallery/view/common/SelectionBuffer;)Lcom/sec/samsung/gallery/view/common/SelectionItemListAdapter;
 
     move-result-object v0

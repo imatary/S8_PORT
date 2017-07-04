@@ -38,7 +38,6 @@
 
     iput-object p2, p0, Lcom/sec/android/gallery3d/data/DiskLruCache$Entry;->key:Ljava/lang/String;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DiskLruCache;->valueCount:I
     invoke-static {p1}, Lcom/sec/android/gallery3d/data/DiskLruCache;->access$1700(Lcom/sec/android/gallery3d/data/DiskLruCache;)I
 
     move-result v0
@@ -184,7 +183,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/DiskLruCache$Entry;->this$0:Lcom/sec/android/gallery3d/data/DiskLruCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DiskLruCache;->valueCount:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/DiskLruCache;->access$1700(Lcom/sec/android/gallery3d/data/DiskLruCache;)I
 
     move-result v3
@@ -244,7 +242,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/DiskLruCache$Entry;->this$0:Lcom/sec/android/gallery3d/data/DiskLruCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DiskLruCache;->directory:Ljava/io/File;
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/DiskLruCache;->access$1800(Lcom/sec/android/gallery3d/data/DiskLruCache;)Ljava/io/File;
 
     move-result-object v1
@@ -285,7 +282,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/data/DiskLruCache$Entry;->this$0:Lcom/sec/android/gallery3d/data/DiskLruCache;
 
-    # getter for: Lcom/sec/android/gallery3d/data/DiskLruCache;->directory:Ljava/io/File;
     invoke-static {v1}, Lcom/sec/android/gallery3d/data/DiskLruCache;->access$1800(Lcom/sec/android/gallery3d/data/DiskLruCache;)Ljava/io/File;
 
     move-result-object v1

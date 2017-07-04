@@ -42,7 +42,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/MtpDevice$1;->this$0:Lcom/sec/android/gallery3d/data/MtpDevice;
 
-    # getter for: Lcom/sec/android/gallery3d/data/MtpDevice;->mMtpContext:Lcom/sec/android/gallery3d/data/MtpContext;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/MtpDevice;->access$000(Lcom/sec/android/gallery3d/data/MtpDevice;)Lcom/sec/android/gallery3d/data/MtpContext;
 
     move-result-object v0
@@ -51,7 +50,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/MtpDevice$1;->this$0:Lcom/sec/android/gallery3d/data/MtpDevice;
 
-    # operator++ for: Lcom/sec/android/gallery3d/data/MtpDevice;->mReloadTryCount:I
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/MtpDevice;->access$108(Lcom/sec/android/gallery3d/data/MtpDevice;)I
 
     :cond_0

@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/ActionBarManager$4;->this$0:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/ActionBarManager;->mActionBarView:Lcom/sec/samsung/gallery/view/AbstractActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/ActionBarManager;->access$100(Lcom/sec/samsung/gallery/view/ActionBarManager;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
 
     move-result-object v0
@@ -56,7 +55,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/ActionBarManager$4;->this$0:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/ActionBarManager;->mActionBarView:Lcom/sec/samsung/gallery/view/AbstractActionBar;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/ActionBarManager;->access$100(Lcom/sec/samsung/gallery/view/ActionBarManager;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
 
     move-result-object v0

@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$4;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$000(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -54,7 +53,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$4;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->selectAlbum(I)V
     invoke-static {v1, p1}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1600(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;I)V
 
     :cond_0
@@ -64,7 +62,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$4;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mFilterSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$800(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
 
     move-result-object v1
@@ -77,7 +74,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$4;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->startPhotoView(I)V
     invoke-static {v1, p1}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1700(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;I)V
 
     sget-object v1, Lcom/sec/samsung/gallery/features/FeatureNames;->IsDualScreen:Lcom/sec/samsung/gallery/features/FeatureNames;
@@ -90,7 +86,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$4;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1800(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -105,7 +100,6 @@
 
     const/4 v2, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->startDetailViewInUIThread(IIZ)V
     invoke-static {v1, p1, v2, v3}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;IIZ)V
 
     goto :goto_0

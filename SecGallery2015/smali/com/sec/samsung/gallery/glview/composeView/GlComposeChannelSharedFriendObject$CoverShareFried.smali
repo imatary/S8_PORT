@@ -88,7 +88,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -109,7 +108,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -133,7 +131,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -156,7 +153,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -170,7 +166,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -213,7 +208,6 @@
     :cond_4
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -237,7 +231,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -250,7 +243,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mResources:Landroid/content/res/Resources;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/res/Resources;
 
     move-result-object v8
@@ -262,7 +254,6 @@
     :cond_6
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mGlComposeChannelPhotoView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$1500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
     move-result-object v8
@@ -277,7 +268,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -290,7 +280,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -309,7 +298,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -332,7 +320,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mGlComposeChannelPhotoView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
     invoke-static {v9}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$1500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
     move-result-object v9
@@ -390,7 +377,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -410,7 +396,6 @@
     :cond_7
     iget-object v8, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v8
@@ -435,14 +420,12 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mCoverHeight:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v5
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mHeightViewRatio:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v6
@@ -461,7 +444,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v5
@@ -474,7 +456,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mAddContactBtn:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$900(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;
 
     move-result-object v5
@@ -506,7 +487,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mFriendButtonMargin:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v3
@@ -532,7 +512,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mButtonStartMargin:F
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v7
@@ -543,7 +522,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mWidthViewRatio:F
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$1300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v7
@@ -557,14 +535,12 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mCoverHeight:F
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v5
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mCoverHeight:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v6
@@ -590,7 +566,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mFriendButtonGap:F
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v7
@@ -601,7 +576,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mFriendButtonMargin:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v6
@@ -619,14 +593,12 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mFriendButtonMargin:F
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v6
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mButtonStartMargin:F
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v7
@@ -635,7 +607,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mWidthViewRatio:F
     invoke-static {v7}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$1300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)F
 
     move-result v7
@@ -658,7 +629,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v3
@@ -679,7 +649,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v3
@@ -715,7 +684,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v3
@@ -731,7 +699,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v3
@@ -761,7 +728,6 @@
     :cond_2
     iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject$CoverShareFried;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSharedFriendObject;)Landroid/content/Context;
 
     move-result-object v3

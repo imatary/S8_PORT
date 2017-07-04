@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->access$000(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -56,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->access$100(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -74,7 +72,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->mMenu:Landroid/view/Menu;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->access$200(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;)Landroid/view/Menu;
 
     move-result-object v1
@@ -83,7 +80,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->access$300(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -97,7 +93,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->access$400(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -117,14 +112,12 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->setSelectedItemCount(I)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->access$600(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;I)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;
 
     iget v2, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v1, v2, v0}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->access$700(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;ILjava/lang/String;)V
 
     goto :goto_0
@@ -140,7 +133,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum$1;->this$0:Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;
 
-    # getter for: Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;->access$500(Lcom/sec/samsung/gallery/view/photosplitview/PhotoSplitActionBarForNewAlbum;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

@@ -902,7 +902,6 @@
     :goto_1
     const/4 v4, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SuggestionListViewAdapter$SuggestionListItem;->getSubCategoryName()Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SuggestionListViewAdapter$SuggestionListItem;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/SuggestionListViewAdapter$SuggestionListItem;)Ljava/lang/String;
 
     move-result-object v3

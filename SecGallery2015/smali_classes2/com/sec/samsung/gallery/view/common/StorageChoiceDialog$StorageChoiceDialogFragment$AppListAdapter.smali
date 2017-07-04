@@ -46,7 +46,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->list:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->access$400(Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -75,7 +74,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;->this$0:Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->list:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;->access$400(Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -104,7 +102,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment$AppListAdapter;->this$1:Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;->mCtx:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;->access$500(Lcom/sec/samsung/gallery/view/common/StorageChoiceDialog$StorageChoiceDialogFragment;)Landroid/content/Context;
 
     move-result-object v5

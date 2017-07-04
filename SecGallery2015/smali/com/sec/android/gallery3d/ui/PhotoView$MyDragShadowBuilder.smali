@@ -32,7 +32,6 @@
 
     const/4 v0, 0x0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mModel:Lcom/sec/android/gallery3d/ui/PhotoView$Model;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1300(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoView$Model;
 
     move-result-object v4
@@ -86,7 +85,6 @@
     :cond_1
     const/4 v1, 0x0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mModel:Lcom/sec/android/gallery3d/ui/PhotoView$Model;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1300(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoView$Model;
 
     move-result-object v4
@@ -97,7 +95,6 @@
 
     if-eqz v4, :cond_2
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1100(Lcom/sec/android/gallery3d/ui/PhotoView;)Landroid/content/Context;
 
     move-result-object v4
@@ -109,7 +106,6 @@
     move-result-object v1
 
     :cond_2
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mModel:Lcom/sec/android/gallery3d/ui/PhotoView$Model;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1300(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoView$Model;
 
     move-result-object v4

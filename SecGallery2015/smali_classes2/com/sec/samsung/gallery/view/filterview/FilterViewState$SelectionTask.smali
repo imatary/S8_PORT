@@ -52,7 +52,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$SelectionTask;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->selectAllProcess(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/filterview/FilterViewState$SelectionTask;)V
     invoke-static {v1, v0, p0}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$5900(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/samsung/gallery/view/filterview/FilterViewState$SelectionTask;)V
 
     const/4 v1, 0x0

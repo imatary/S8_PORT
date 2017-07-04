@@ -61,7 +61,6 @@
 
     iget v4, v4, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$6;->val$operationId:I
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->showDialog(Lcom/sec/android/gallery3d/data/MediaObject;Ljava/io/File;Ljava/lang/String;I)V
     invoke-static {v0, v1, v2, v3, v4}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$1700(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Lcom/sec/android/gallery3d/data/MediaObject;Ljava/io/File;Ljava/lang/String;I)V
 
     return-void

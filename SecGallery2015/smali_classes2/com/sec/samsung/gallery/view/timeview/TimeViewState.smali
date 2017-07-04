@@ -739,12 +739,14 @@
     return-void
 .end method
 
-.method static synthetic access$14100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;Z)V
-    .locals 0
+.method static synthetic access$14100(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;Z)Z
+    .locals 1
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->addToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;Z)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->addToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;Z)Z
 
-    return-void
+    move-result v0
+
+    return v0
 .end method
 
 .method static synthetic access$14200(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Z
@@ -1891,12 +1893,12 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->addToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;Z)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->addToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;Z)Z
 
     return-void
 .end method
 
-.method private addToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;Z)V
+.method private addToSelectionManager(Lcom/sec/android/gallery3d/data/MediaSet;Lcom/sec/android/gallery3d/data/MediaItem;Z)Z
     .locals 12
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
@@ -1905,7 +1907,7 @@
 
     const/4 v7, 0x6
 
-    if-ne v6, v7, :cond_3
+    if-ne v6, v7, :cond_2
 
     sget-object v6, Lcom/sec/samsung/gallery/features/FeatureNames;->UseUnlimitedShare:Lcom/sec/samsung/gallery/features/FeatureNames;
 
@@ -1913,7 +1915,7 @@
 
     move-result v6
 
-    if-nez v6, :cond_1
+    if-nez v6, :cond_0
 
     const/16 v2, 0x1f4
 
@@ -1921,45 +1923,46 @@
 
     move-result v6
 
-    if-lt v6, v2, :cond_1
+    if-lt v6, v2, :cond_0
 
     invoke-virtual {v3, p2}, Lcom/sec/android/gallery3d/ui/SelectionManager;->isSelected(Lcom/sec/android/gallery3d/data/MediaObject;)Z
 
     move-result v6
 
-    if-nez v6, :cond_1
+    if-nez v6, :cond_0
 
     invoke-direct {p0, v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->showMaximumSelectionNumberExceeded(I)V
 
-    :cond_0
-    :goto_0
-    return-void
+    const/4 v6, 0x0
 
-    :cond_1
+    :goto_0
+    return v6
+
+    :cond_0
     invoke-static {p2}, Lcom/sec/android/gallery3d/util/GalleryUtils;->isSupportedShareDrm(Lcom/sec/android/gallery3d/data/MediaItem;)Z
 
     move-result v6
 
-    if-eqz v6, :cond_2
+    if-eqz v6, :cond_1
 
     invoke-virtual {p2}, Lcom/sec/android/gallery3d/data/MediaItem;->isDrm()Z
 
     move-result v6
 
-    if-nez v6, :cond_3
+    if-nez v6, :cond_2
 
     invoke-virtual {p2}, Lcom/sec/android/gallery3d/data/MediaItem;->isBroken()Z
 
     move-result v6
 
-    if-eqz v6, :cond_3
+    if-eqz v6, :cond_2
 
-    :cond_2
+    :cond_1
     invoke-virtual {v3, p2}, Lcom/sec/android/gallery3d/ui/SelectionManager;->isSelected(Lcom/sec/android/gallery3d/data/MediaObject;)Z
 
     move-result v6
 
-    if-nez v6, :cond_3
+    if-nez v6, :cond_2
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -1967,9 +1970,11 @@
 
     invoke-static {v6, v7}, Lcom/sec/android/gallery3d/common/Utils;->showToast(Landroid/content/Context;I)V
 
+    const/4 v6, 0x0
+
     goto :goto_0
 
-    :cond_3
+    :cond_2
     invoke-virtual {v3, p2}, Lcom/sec/android/gallery3d/ui/SelectionManager;->isSelected(Lcom/sec/android/gallery3d/data/MediaObject;)Z
 
     move-result v6
@@ -2017,7 +2022,7 @@
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->updateCountOnActionBar()V
 
-    if-nez p3, :cond_0
+    if-nez p3, :cond_3
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -2025,7 +2030,7 @@
 
     move-result v6
 
-    if-eqz v6, :cond_0
+    if-eqz v6, :cond_3
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mDCHandler:Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
 
@@ -2039,6 +2044,9 @@
 
     invoke-virtual {v6, v7, v8, v9}, Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;->sendDCResponseForSelectContentType(Ljava/lang/String;ZLjava/lang/String;)V
 
+    :cond_3
+    const/4 v6, 0x1
+
     goto :goto_0
 
     :cond_4
@@ -2048,8 +2056,13 @@
 
     move-result v6
 
-    if-eqz v6, :cond_0
+    if-nez v6, :cond_5
 
+    const/4 v6, 0x0
+
+    goto :goto_0
+
+    :cond_5
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     invoke-virtual {v6}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getIntent()Landroid/content/Intent;
@@ -2064,7 +2077,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_6
+    if-eqz v5, :cond_8
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
@@ -2074,7 +2087,7 @@
 
     const/16 v6, 0xf
 
-    if-lt v0, v6, :cond_d
+    if-lt v0, v6, :cond_11
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -2104,7 +2117,7 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    if-eqz v6, :cond_0
+    if-eqz v6, :cond_7
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
@@ -2112,13 +2125,13 @@
 
     move-result v6
 
-    if-eqz v6, :cond_5
+    if-eqz v6, :cond_6
 
     iget-boolean v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mIsMaxCount:Z
 
-    if-nez v6, :cond_0
+    if-nez v6, :cond_7
 
-    :cond_5
+    :cond_6
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     invoke-interface {v4}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -2131,12 +2144,15 @@
 
     iput-boolean v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mIsMaxCount:Z
 
+    :cond_7
+    const/4 v6, 0x0
+
     goto/16 :goto_0
 
-    :cond_6
+    :cond_8
     iget-boolean v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mIsGifMode:Z
 
-    if-eqz v6, :cond_a
+    if-eqz v6, :cond_d
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
@@ -2146,7 +2162,7 @@
 
     sget v6, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->AGIF_MAX_ITEM_LIMIT:I
 
-    if-lt v0, v6, :cond_8
+    if-lt v0, v6, :cond_b
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -2176,7 +2192,7 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    if-eqz v6, :cond_0
+    if-eqz v6, :cond_a
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
@@ -2184,13 +2200,13 @@
 
     move-result v6
 
-    if-eqz v6, :cond_7
+    if-eqz v6, :cond_9
 
     iget-boolean v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mIsMaxCount:Z
 
-    if-nez v6, :cond_0
+    if-nez v6, :cond_a
 
-    :cond_7
+    :cond_9
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     invoke-interface {v4}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -2203,14 +2219,17 @@
 
     iput-boolean v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mIsMaxCount:Z
 
+    :cond_a
+    const/4 v6, 0x0
+
     goto/16 :goto_0
 
-    :cond_8
+    :cond_b
     invoke-direct {p0, p2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->getUnsupportedStringInGifMode(Lcom/sec/android/gallery3d/data/MediaItem;)Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    if-eqz v4, :cond_9
+    if-eqz v4, :cond_c
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -2220,14 +2239,16 @@
 
     invoke-static {v6, v7}, Lcom/sec/android/gallery3d/common/Utils;->showToast(Landroid/content/Context;Ljava/lang/String;)V
 
+    const/4 v6, 0x0
+
     goto/16 :goto_0
 
-    :cond_9
+    :cond_c
     invoke-virtual {p0, p2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->isDrmCheck(Lcom/sec/android/gallery3d/data/MediaItem;)Z
 
     move-result v6
 
-    if-eqz v6, :cond_d
+    if-eqz v6, :cond_11
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -2235,12 +2256,14 @@
 
     invoke-static {v6, v7}, Lcom/sec/android/gallery3d/common/Utils;->showToast(Landroid/content/Context;I)V
 
+    const/4 v6, 0x0
+
     goto/16 :goto_0
 
-    :cond_a
+    :cond_d
     iget-boolean v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mIsCollageMode:Z
 
-    if-eqz v6, :cond_d
+    if-eqz v6, :cond_11
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
@@ -2250,7 +2273,7 @@
 
     const/4 v6, 0x6
 
-    if-lt v0, v6, :cond_c
+    if-lt v0, v6, :cond_10
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -2280,7 +2303,7 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    if-eqz v6, :cond_0
+    if-eqz v6, :cond_f
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
@@ -2288,13 +2311,13 @@
 
     move-result v6
 
-    if-eqz v6, :cond_b
+    if-eqz v6, :cond_e
 
     iget-boolean v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mIsMaxCount:Z
 
-    if-nez v6, :cond_0
+    if-nez v6, :cond_f
 
-    :cond_b
+    :cond_e
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     invoke-interface {v4}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -2307,14 +2330,17 @@
 
     iput-boolean v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mIsMaxCount:Z
 
+    :cond_f
+    const/4 v6, 0x0
+
     goto/16 :goto_0
 
-    :cond_c
+    :cond_10
     invoke-direct {p0, p2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->getUnsupportedStringInCollageMode(Lcom/sec/android/gallery3d/data/MediaItem;)Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    if-eqz v4, :cond_d
+    if-eqz v4, :cond_11
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -2324,9 +2350,11 @@
 
     invoke-static {v6, v7}, Lcom/sec/android/gallery3d/common/Utils;->showToast(Landroid/content/Context;Ljava/lang/String;)V
 
+    const/4 v6, 0x0
+
     goto/16 :goto_0
 
-    :cond_d
+    :cond_11
     invoke-static {}, Lcom/sec/samsung/gallery/util/TTSUtil;->getInstance()Lcom/sec/samsung/gallery/util/TTSUtil;
 
     move-result-object v6
@@ -2509,7 +2537,7 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v10, 0x7f0a0688
+    const v10, 0x7f0a068e
 
     new-array v11, v8, [Ljava/lang/Object;
 
@@ -2576,7 +2604,7 @@
     :cond_4
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v10, 0x7f0a068a
+    const v10, 0x7f0a0690
 
     new-array v11, v8, [Ljava/lang/Object;
 
@@ -4810,7 +4838,7 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v7, 0x7f0a085d
+    const v7, 0x7f0a086b
 
     invoke-static {v6, v7}, Lcom/sec/android/gallery3d/common/Utils;->showToast(Landroid/content/Context;I)V
 
@@ -4833,7 +4861,7 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v7, 0x7f0a085d
+    const v7, 0x7f0a086b
 
     invoke-static {v6, v7}, Lcom/sec/android/gallery3d/common/Utils;->showToast(Landroid/content/Context;I)V
 
@@ -9675,7 +9703,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mMenu:Landroid/view/Menu;
 
-    const v1, 0x7f120286
+    const v1, 0x7f120285
 
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemIcon(Landroid/view/Menu;II)V
 
@@ -11188,7 +11216,6 @@
 
     iget v3, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mCurrentLayout:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/timeview/TimeViewState$ComposeViewConfig;->setInitialLevel(ZI)I
     invoke-static {v0, v1, v3}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$ComposeViewConfig;->access$13900(Lcom/sec/samsung/gallery/view/timeview/TimeViewState$ComposeViewConfig;ZI)I
 
     move-result v6
@@ -11618,6 +11645,10 @@
     goto/16 :goto_3
 
     :cond_12
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mMediaItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
+
+    invoke-virtual {v0, v11}, Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;->setFirstIndex(I)V
+
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mMediaItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
 
     invoke-virtual {v0}, Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;->setIgnoreSkip()V

@@ -59,7 +59,6 @@
 
     move-object/from16 v21, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static/range {v21 .. v21}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$600(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v21
@@ -100,7 +99,6 @@
 
     move-object/from16 v21, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static/range {v21 .. v21}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$600(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v21
@@ -125,7 +123,6 @@
 
     move-object/from16 v21, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v21 .. v21}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$300(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v21
@@ -146,7 +143,6 @@
 
     const/16 v22, 0x0
 
-    # invokes: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->setPrepareScreenNailResult(Z)V
     invoke-static/range {v21 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$400(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Z)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -166,7 +162,6 @@
 
     move-object/from16 v21, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static/range {v21 .. v21}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$600(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v21
@@ -269,7 +264,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static/range {v22 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$600(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v22
@@ -286,7 +280,6 @@
 
     move-result-object v22
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v21 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$802(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
@@ -350,7 +343,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static/range {v22 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$600(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v22
@@ -359,7 +351,6 @@
 
     move-result-object v22
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v21 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$802(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     const/16 v21, 0x1
@@ -380,7 +371,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v22 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v22
@@ -397,7 +387,6 @@
 
     move-result-object v22
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v21 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$802(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     sget-object v21, Lcom/sec/samsung/gallery/features/FeatureNames;->IsTablet:Lcom/sec/samsung/gallery/features/FeatureNames;
@@ -425,7 +414,6 @@
 
     move-object/from16 v21, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static/range {v21 .. v21}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$600(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v21
@@ -453,7 +441,6 @@
 
     move-object/from16 v21, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mViewMode:I
     invoke-static/range {v21 .. v21}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$1000(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)I
 
     move-result v21
@@ -479,7 +466,6 @@
 
     move-object/from16 v21, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static/range {v21 .. v21}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$300(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v21
@@ -522,7 +508,6 @@
 
     move-object/from16 v21, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v21 .. v21}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v21
@@ -537,7 +522,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v22 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v22
@@ -556,7 +540,6 @@
 
     move-object/from16 v21, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v21 .. v21}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v21
@@ -571,7 +554,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v22 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v22
@@ -590,7 +572,6 @@
 
     move-object/from16 v21, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v21 .. v21}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v21
@@ -605,7 +586,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v22 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v22
@@ -659,7 +639,6 @@
 
     move-object/from16 v22, v0
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v22 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v22
@@ -678,7 +657,6 @@
 
     move-result-object v22
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static/range {v21 .. v22}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$802(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     goto/16 :goto_0
@@ -726,7 +704,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mIntent:Landroid/content/Intent;
     invoke-static {v0}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$100(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/content/Intent;
 
     move-result-object v0
@@ -751,7 +728,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$300(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -770,7 +746,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$300(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -795,7 +770,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v6
@@ -867,7 +841,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v6
@@ -900,7 +873,6 @@
 
     iget-object v8, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v8
@@ -963,7 +935,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$300(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -1036,7 +1007,6 @@
 
     move-result-wide v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mDateModified:J
     invoke-static {v6, v8, v9}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$502(Lcom/sec/android/gallery3d/util/PreDisplayScreen;J)J
 
     move-object/from16 v0, p0
@@ -1051,7 +1021,6 @@
 
     move-result v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$702(Lcom/sec/android/gallery3d/util/PreDisplayScreen;I)I
 
     move-object/from16 v0, p0
@@ -1066,7 +1035,6 @@
 
     move-result-object v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$602(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Ljava/lang/String;)Ljava/lang/String;
 
     sget-object v6, Lcom/sec/samsung/gallery/features/FeatureNames;->UseSCloudOnly:Lcom/sec/samsung/gallery/features/FeatureNames;
@@ -1081,7 +1049,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v6
@@ -1110,14 +1077,12 @@
 
     move-result-object v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mCloudCachedPath:Ljava/lang/String;
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$902(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Ljava/lang/String;)Ljava/lang/String;
 
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$600(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v6
@@ -1128,7 +1093,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mCloudCachedPath:Ljava/lang/String;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$900(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v6
@@ -1143,12 +1107,10 @@
 
     iget-object v8, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mCloudCachedPath:Ljava/lang/String;
     invoke-static {v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$900(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$602(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_0
@@ -1170,7 +1132,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v6
@@ -1252,7 +1213,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v3
@@ -1289,7 +1249,6 @@
 
     move-result-wide v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mDateModified:J
     invoke-static {v6, v8, v9}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$502(Lcom/sec/android/gallery3d/util/PreDisplayScreen;J)J
 
     move-object/from16 v0, p0
@@ -1304,7 +1263,6 @@
 
     move-result v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$702(Lcom/sec/android/gallery3d/util/PreDisplayScreen;I)I
 
     move-object/from16 v0, p0
@@ -1319,7 +1277,6 @@
 
     move-result-object v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$602(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Ljava/lang/String;)Ljava/lang/String;
 
     sget-object v6, Lcom/sec/samsung/gallery/features/FeatureNames;->UseSCloudOnly:Lcom/sec/samsung/gallery/features/FeatureNames;
@@ -1334,7 +1291,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v6
@@ -1363,14 +1319,12 @@
 
     move-result-object v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mCloudCachedPath:Ljava/lang/String;
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$902(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Ljava/lang/String;)Ljava/lang/String;
 
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$600(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v6
@@ -1381,7 +1335,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mCloudCachedPath:Ljava/lang/String;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$900(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v6
@@ -1396,12 +1349,10 @@
 
     iget-object v8, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mCloudCachedPath:Ljava/lang/String;
     invoke-static {v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$900(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$602(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Ljava/lang/String;)Ljava/lang/String;
     :try_end_1
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_1 .. :try_end_1} :catch_0
@@ -1452,7 +1403,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$300(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -1473,7 +1423,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v4}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v4
@@ -1523,7 +1472,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v4}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v4
@@ -1554,7 +1502,6 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v5}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v5
@@ -1599,7 +1546,6 @@
 
     move-result-wide v10
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mDateModified:J
     invoke-static {v4, v10, v11}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$502(Lcom/sec/android/gallery3d/util/PreDisplayScreen;J)J
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
@@ -1610,7 +1556,6 @@
 
     move-result-object v5
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static {v4, v5}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$602(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
@@ -1621,7 +1566,6 @@
 
     move-result v5
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mViewMode:I
     invoke-static {v4, v5}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$1002(Lcom/sec/android/gallery3d/util/PreDisplayScreen;I)I
 
     sget-object v4, Lcom/sec/samsung/gallery/features/FeatureNames;->UseSCloudOnly:Lcom/sec/samsung/gallery/features/FeatureNames;
@@ -1634,7 +1578,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v4}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v4
@@ -1659,12 +1602,10 @@
 
     move-result-object v5
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mCloudCachedPath:Ljava/lang/String;
     invoke-static {v4, v5}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$902(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$600(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v4
@@ -1673,7 +1614,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mCloudCachedPath:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$900(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v4
@@ -1684,12 +1624,10 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mCloudCachedPath:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$900(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v5
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static {v4, v5}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$602(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1721,7 +1659,6 @@
     :cond_2
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v4}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v1
@@ -1773,7 +1710,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$300(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -1792,7 +1728,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$300(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v6
@@ -1813,7 +1748,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v6
@@ -1834,7 +1768,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mIntent:Landroid/content/Intent;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$100(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/content/Intent;
 
     move-result-object v6
@@ -1852,7 +1785,6 @@
 
     const/4 v7, 0x0
 
-    # invokes: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->setPrepareScreenNailResult(Z)V
     invoke-static {v6, v7}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$400(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Z)V
 
     :goto_1
@@ -1863,7 +1795,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v6
@@ -1912,7 +1843,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v6
@@ -1936,7 +1866,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v6
@@ -1952,7 +1881,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mDateModified:J
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$500(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)J
 
     move-result-wide v6
@@ -1967,7 +1895,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mDateModified:J
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$500(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)J
 
     move-result-wide v6
@@ -1993,7 +1920,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mFilePath:Ljava/lang/String;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$600(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Ljava/lang/String;
 
     move-result-object v6
@@ -2004,7 +1930,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$700(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)I
 
     move-result v6
@@ -2015,7 +1940,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mDateModified:J
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$500(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)J
 
     move-result-wide v6
@@ -2041,7 +1965,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mDateModified:J
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$500(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)J
 
     move-result-wide v6
@@ -2056,7 +1979,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mDateModified:J
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$500(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)J
 
     move-result-wide v6
@@ -2113,7 +2035,6 @@
 
     move-result-object v7
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v6, v7}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$802(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     :cond_7
@@ -2125,7 +2046,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v6
@@ -2135,7 +2055,6 @@
     const/4 v6, 0x1
 
     :goto_5
-    # invokes: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->setPrepareScreenNailResult(Z)V
     invoke-static {v7, v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$400(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Z)V
 
     const/4 v6, 0x1
@@ -2159,7 +2078,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v6
@@ -2232,7 +2150,6 @@
 
     move-result-object v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v6, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$802(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     :cond_b
@@ -2244,7 +2161,6 @@
 
     iget-object v6, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v6
@@ -2254,7 +2170,6 @@
     const/4 v6, 0x1
 
     :goto_6
-    # invokes: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->setPrepareScreenNailResult(Z)V
     invoke-static {v8, v6}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$400(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Z)V
 
     const/4 v6, 0x1
@@ -2295,7 +2210,6 @@
 
     iget-object v8, v0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$700(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)I
 
     move-result v8
@@ -2348,7 +2262,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v9}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v9
@@ -2384,7 +2297,6 @@
     :try_start_0
     iget-object v7, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mIntent:Landroid/content/Intent;
     invoke-static {v7}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$100(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/content/Intent;
 
     move-result-object v7
@@ -2405,7 +2317,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v7}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v7
@@ -2424,14 +2335,12 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$300(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v9}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v9
@@ -2440,7 +2349,6 @@
 
     move-result-object v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v7, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$802(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -2451,7 +2359,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v8
@@ -2459,7 +2366,6 @@
     if-eqz v8, :cond_4
 
     :goto_1
-    # invokes: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->setPrepareScreenNailResult(Z)V
     invoke-static {v7, v5}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$400(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Z)V
 
     :goto_2
@@ -2469,7 +2375,6 @@
     :try_start_1
     iget-object v7, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v7}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$700(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)I
 
     move-result v7
@@ -2484,7 +2389,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v7}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v7
@@ -2503,7 +2407,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v7}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v7
@@ -2529,7 +2432,6 @@
     :try_start_2
     iget-object v7, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v7}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$300(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v7
@@ -2540,7 +2442,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v8
@@ -2555,7 +2456,6 @@
 
     move-result v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v7, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$702(Lcom/sec/android/gallery3d/util/PreDisplayScreen;I)I
     :try_end_2
     .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_1
@@ -2566,7 +2466,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v7}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$700(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)I
 
     move-result v7
@@ -2577,7 +2476,6 @@
 
     const/4 v8, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v7, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$702(Lcom/sec/android/gallery3d/util/PreDisplayScreen;I)I
 
     :cond_2
@@ -2586,7 +2484,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$300(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -2597,7 +2494,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v9}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v9
@@ -2610,7 +2506,6 @@
 
     move-result-object v8
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v7, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$802(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
@@ -2636,7 +2531,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v8
@@ -2644,7 +2538,6 @@
     if-eqz v8, :cond_5
 
     :goto_4
-    # invokes: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->setPrepareScreenNailResult(Z)V
     invoke-static {v7, v5}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$400(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Z)V
 
     goto/16 :goto_2
@@ -2668,7 +2561,6 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v7}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$700(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)I
 
     move-result v7
@@ -2679,7 +2571,6 @@
 
     const/4 v8, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v7, v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$702(Lcom/sec/android/gallery3d/util/PreDisplayScreen;I)I
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
@@ -2694,7 +2585,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mBitmap:Landroid/graphics/Bitmap;
     invoke-static {v9}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$800(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/graphics/Bitmap;
 
     move-result-object v9
@@ -2702,7 +2592,6 @@
     if-eqz v9, :cond_6
 
     :goto_5
-    # invokes: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->setPrepareScreenNailResult(Z)V
     invoke-static {v8, v5}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$400(Lcom/sec/android/gallery3d/util/PreDisplayScreen;Z)V
 
     throw v7
@@ -2715,7 +2604,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v8}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$700(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)I
 
     move-result v8
@@ -2726,7 +2614,6 @@
 
     const/4 v9, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mOrientation:I
     invoke-static {v8, v9}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$702(Lcom/sec/android/gallery3d/util/PreDisplayScreen;I)I
 
     :cond_3
@@ -2768,7 +2655,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mIntent:Landroid/content/Intent;
     invoke-static {v4}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$100(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/content/Intent;
 
     move-result-object v4
@@ -2779,7 +2665,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v4}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v4
@@ -2802,7 +2687,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/util/PreDisplayScreen$PrepareScreenNailJob;->this$0:Lcom/sec/android/gallery3d/util/PreDisplayScreen;
 
-    # getter for: Lcom/sec/android/gallery3d/util/PreDisplayScreen;->mUri:Landroid/net/Uri;
     invoke-static {v4}, Lcom/sec/android/gallery3d/util/PreDisplayScreen;->access$200(Lcom/sec/android/gallery3d/util/PreDisplayScreen;)Landroid/net/Uri;
 
     move-result-object v4

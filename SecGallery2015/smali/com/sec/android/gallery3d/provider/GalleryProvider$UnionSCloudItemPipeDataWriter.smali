@@ -80,7 +80,6 @@
     const/4 v3, 0x0
 
     :try_start_0
-    # getter for: Lcom/sec/android/gallery3d/provider/GalleryProvider;->sSyncLock:Ljava/lang/Object;
     invoke-static {}, Lcom/sec/android/gallery3d/provider/GalleryProvider;->access$400()Ljava/lang/Object;
 
     move-result-object v6
@@ -112,7 +111,6 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_4
 
     :try_start_4
-    # invokes: Lcom/sec/android/gallery3d/provider/GalleryProvider;->dump(Ljava/io/InputStream;Ljava/io/OutputStream;)V
     invoke-static {v2, v4}, Lcom/sec/android/gallery3d/provider/GalleryProvider;->access$500(Ljava/io/InputStream;Ljava/io/OutputStream;)V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1

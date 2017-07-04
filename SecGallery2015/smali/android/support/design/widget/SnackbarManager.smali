@@ -66,7 +66,6 @@
 .method private cancelSnackbarLocked(Landroid/support/design/widget/SnackbarManager$SnackbarRecord;I)Z
     .locals 2
 
-    # getter for: Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->callback:Ljava/lang/ref/WeakReference;
     invoke-static {p1}, Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->access$200(Landroid/support/design/widget/SnackbarManager$SnackbarRecord;)Ljava/lang/ref/WeakReference;
 
     move-result-object v1
@@ -202,7 +201,6 @@
 .method private scheduleTimeoutLocked(Landroid/support/design/widget/SnackbarManager$SnackbarRecord;)V
     .locals 6
 
-    # getter for: Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->duration:I
     invoke-static {p1}, Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->access$100(Landroid/support/design/widget/SnackbarManager$SnackbarRecord;)I
 
     move-result v1
@@ -217,14 +215,12 @@
     :cond_0
     const/16 v0, 0xabe
 
-    # getter for: Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->duration:I
     invoke-static {p1}, Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->access$100(Landroid/support/design/widget/SnackbarManager$SnackbarRecord;)I
 
     move-result v1
 
     if-lez v1, :cond_2
 
-    # getter for: Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->duration:I
     invoke-static {p1}, Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->access$100(Landroid/support/design/widget/SnackbarManager$SnackbarRecord;)I
 
     move-result v0
@@ -252,7 +248,6 @@
     goto :goto_0
 
     :cond_2
-    # getter for: Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->duration:I
     invoke-static {p1}, Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->access$100(Landroid/support/design/widget/SnackbarManager$SnackbarRecord;)I
 
     move-result v1
@@ -283,7 +278,6 @@
 
     iget-object v1, p0, Landroid/support/design/widget/SnackbarManager;->mCurrentSnackbar:Landroid/support/design/widget/SnackbarManager$SnackbarRecord;
 
-    # getter for: Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->callback:Ljava/lang/ref/WeakReference;
     invoke-static {v1}, Landroid/support/design/widget/SnackbarManager$SnackbarRecord;->access$200(Landroid/support/design/widget/SnackbarManager$SnackbarRecord;)Ljava/lang/ref/WeakReference;
 
     move-result-object v1

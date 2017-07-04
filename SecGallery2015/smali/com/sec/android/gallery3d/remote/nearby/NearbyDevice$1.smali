@@ -47,7 +47,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mIsFlatBrowseStarted:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$102(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;Z)Z
 
     return-void
@@ -82,7 +81,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mIsFlatBrowseStarted:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$102(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;Z)Z
 
     return-void
@@ -96,7 +94,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mItems:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$400(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -133,24 +130,20 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mFlatBrowseCount:I
     invoke-static {v1, v4}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$002(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;I)I
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mIsFlatBrowseStarted:Z
     invoke-static {v1, v4}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$102(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
     const/4 v2, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mIsFlatBrowseFinished:Z
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$202(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mFlatBrowseStateListener:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$flatBrowseStateListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$600(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;)Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$flatBrowseStateListener;
 
     move-result-object v1
@@ -159,7 +152,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mFlatBrowseStateListener:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$flatBrowseStateListener;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$600(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;)Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$flatBrowseStateListener;
 
     move-result-object v1
@@ -169,7 +161,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mItems:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$400(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -257,7 +248,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
-    # ++operator for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mFlatBrowseCount:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$004(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;)I
 
     move-result v6
@@ -336,7 +326,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mVideos:Ljava/util/ArrayList;
     invoke-static {v4}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$300(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;)Ljava/util/ArrayList;
 
     move-result-object v4
@@ -351,7 +340,6 @@
     :cond_4
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mItems:Ljava/util/ArrayList;
     invoke-static {v4}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$400(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;)Ljava/util/ArrayList;
 
     move-result-object v4
@@ -364,7 +352,6 @@
 
     move-result-wide v6
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mDataVersion:J
     invoke-static {v4, v6, v7}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$502(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;J)J
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
@@ -387,19 +374,16 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mFlatBrowseCount:I
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$002(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;I)I
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mIsFlatBrowseStarted:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$102(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;
 
-    # setter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->mIsFlatBrowseFinished:Z
     invoke-static {v0, v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;->access$202(Lcom/sec/android/gallery3d/remote/nearby/NearbyDevice;Z)Z
 
     return-void

@@ -38,7 +38,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->enumType:[Lcom/sec/samsung/gallery/controller/PostGalleryCmd$PostGalleryCmdType;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$100(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)[Lcom/sec/samsung/gallery/controller/PostGalleryCmd$PostGalleryCmdType;
 
     move-result-object v1
@@ -68,12 +67,10 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v1
 
-    # invokes: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->create(Landroid/app/Activity;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$300(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;Landroid/app/Activity;)V
 
     :goto_0
@@ -84,12 +81,10 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v1
 
-    # invokes: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->resume(Landroid/app/Activity;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$400(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;Landroid/app/Activity;)V
 
     goto :goto_0

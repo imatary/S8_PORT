@@ -37,7 +37,6 @@
 .method public getDelay(I)J
     .locals 2
 
-    # getter for: Lcom/sec/samsung/gallery/NoItemVI;->TIMELINE_DELAY:[I
     invoke-static {}, Lcom/sec/samsung/gallery/NoItemVI;->access$700()[I
 
     move-result-object v0
@@ -52,7 +51,6 @@
 .method public getDirection(I)I
     .locals 1
 
-    # getter for: Lcom/sec/samsung/gallery/NoItemVI;->TIME_DIRECTION:[I
     invoke-static {}, Lcom/sec/samsung/gallery/NoItemVI;->access$800()[I
 
     move-result-object v0
@@ -65,7 +63,6 @@
 .method public getDuration(I)J
     .locals 2
 
-    # getter for: Lcom/sec/samsung/gallery/NoItemVI;->TIMELINE_DURATION:[I
     invoke-static {}, Lcom/sec/samsung/gallery/NoItemVI;->access$600()[I
 
     move-result-object v0
@@ -80,7 +77,6 @@
 .method public getInterpolator(I)Landroid/animation/TimeInterpolator;
     .locals 1
 
-    # getter for: Lcom/sec/samsung/gallery/NoItemVI;->TIMELINE_INTERPOLATOR:[Landroid/animation/TimeInterpolator;
     invoke-static {}, Lcom/sec/samsung/gallery/NoItemVI;->access$500()[Landroid/animation/TimeInterpolator;
 
     move-result-object v0

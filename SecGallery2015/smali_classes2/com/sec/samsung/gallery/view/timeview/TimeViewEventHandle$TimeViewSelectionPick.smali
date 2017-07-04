@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewSelectionPick;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->access$800(Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewSelectionPick;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->access$800(Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -67,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewSelectionPick;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->access$500(Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -82,7 +79,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewSelectionPick;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->access$500(Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v0
@@ -91,7 +87,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewSelectionPick;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->access$400(Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -111,7 +106,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewSelectionPick;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->access$800(Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -120,7 +114,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewSelectionPick;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->access$800(Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v1
@@ -129,7 +122,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewSelectionPick;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->access$400(Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -144,7 +136,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle$TimeViewSelectionPick;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;->access$400(Lcom/sec/samsung/gallery/view/timeview/TimeViewEventHandle;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -158,8 +149,10 @@
     return-void
 .end method
 
-.method public onItemClick(II)V
-    .locals 0
+.method public onItemClick(II)Z
+    .locals 1
 
-    return-void
+    const/4 v0, 0x1
+
+    return v0
 .end method

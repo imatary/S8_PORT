@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v1
@@ -52,7 +51,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$700(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
 
     move-result-object v1
@@ -61,7 +59,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v1
@@ -78,7 +75,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v2
@@ -96,7 +92,6 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$700(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
 
     move-result-object v2
@@ -105,14 +100,12 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$700(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v3
@@ -125,14 +118,12 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$700(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v3
@@ -145,14 +136,12 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$700(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventView;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v3
@@ -165,7 +154,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v2
@@ -174,7 +162,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v2
@@ -183,7 +170,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v2
@@ -192,7 +178,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v2
@@ -201,7 +186,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mEventSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$800(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeEventSetAdapter;
 
     move-result-object v2
@@ -218,7 +202,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$10;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$3400(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3

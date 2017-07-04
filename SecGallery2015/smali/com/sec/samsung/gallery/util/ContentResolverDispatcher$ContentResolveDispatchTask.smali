@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mUpdatingDeleteLock:Ljava/util/concurrent/locks/Lock;
     invoke-static {v1}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$700(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Ljava/util/concurrent/locks/Lock;
 
     move-result-object v1
@@ -55,7 +54,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mDeleteOperationState:Ljava/util/concurrent/atomic/AtomicReference;
     invoke-static {v1}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$600(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object v1
@@ -72,7 +70,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mUpdatingDeleteLock:Ljava/util/concurrent/locks/Lock;
     invoke-static {v1}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$700(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Ljava/util/concurrent/locks/Lock;
 
     move-result-object v1
@@ -91,7 +88,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mUpdatingDeleteLock:Ljava/util/concurrent/locks/Lock;
     invoke-static {v2}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$700(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Ljava/util/concurrent/locks/Lock;
 
     move-result-object v2
@@ -216,7 +212,6 @@
 
     check-cast v9, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;->mInsertValue:Landroid/content/ContentValues;
     invoke-static {v9}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;->access$800(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;)Landroid/content/ContentValues;
 
     move-result-object v9
@@ -277,12 +272,10 @@
 
     move-result-object v0
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;->mSelectionString:Ljava/lang/String;
     invoke-static {p2}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;->access$1000(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;)Ljava/lang/String;
 
     move-result-object v1
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;->mSelectArgs:[Ljava/lang/String;
     invoke-static {p2}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;->access$1100(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;)[Ljava/lang/String;
 
     move-result-object v2
@@ -291,7 +284,6 @@
 
     move-result-object v0
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;->mUpdateValue:Landroid/content/ContentValues;
     invoke-static {p2}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;->access$900(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$DelayedUpdate;)Landroid/content/ContentValues;
 
     move-result-object v1
@@ -314,7 +306,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mDelayedOperationsMap:Ljava/util/Map;
     invoke-static {v1}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$400(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Ljava/util/Map;
 
     move-result-object v1
@@ -358,7 +349,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mDeleteOperationState:Ljava/util/concurrent/atomic/AtomicReference;
     invoke-static {v1}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$600(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object v1
@@ -390,7 +380,6 @@
     :try_start_0
     iget-object v5, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mStartingLatch:Ljava/util/concurrent/CountDownLatch;
     invoke-static {v5}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$100(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Ljava/util/concurrent/CountDownLatch;
 
     move-result-object v5
@@ -399,7 +388,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mStartingLatch:Ljava/util/concurrent/CountDownLatch;
     invoke-static {v5}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$100(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Ljava/util/concurrent/CountDownLatch;
 
     move-result-object v5
@@ -412,7 +400,6 @@
     :goto_0
     iget-object v5, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mContext:Landroid/content/Context;
     invoke-static {v5}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$200(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Landroid/content/Context;
 
     move-result-object v5
@@ -424,7 +411,6 @@
     :goto_1
     iget-object v5, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mAsync:Z
     invoke-static {v5}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$300(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Z
 
     move-result v5
@@ -440,7 +426,6 @@
     :cond_1
     iget-object v5, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mDelayedOperationsMap:Ljava/util/Map;
     invoke-static {v5}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$400(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Ljava/util/Map;
 
     move-result-object v5
@@ -501,7 +486,6 @@
     :cond_3
     iget-object v5, p0, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher$ContentResolveDispatchTask;->this$0:Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;
 
-    # getter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mFinishedLatch:Ljava/util/concurrent/CountDownLatch;
     invoke-static {v5}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$500(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;)Ljava/util/concurrent/CountDownLatch;
 
     move-result-object v5
@@ -512,7 +496,6 @@
 
     const/4 v6, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->mStartingLatch:Ljava/util/concurrent/CountDownLatch;
     invoke-static {v5, v6}, Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;->access$102(Lcom/sec/samsung/gallery/util/ContentResolverDispatcher;Ljava/util/concurrent/CountDownLatch;)Ljava/util/concurrent/CountDownLatch;
 
     return-void

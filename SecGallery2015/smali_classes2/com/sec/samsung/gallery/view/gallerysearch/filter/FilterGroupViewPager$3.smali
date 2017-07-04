@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$3;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->mPageChangeListener:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;)Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$3;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->mPageChangeListener:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;)Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     move-result-object v0
@@ -70,7 +68,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$3;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->mPageChangeListener:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;)Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     move-result-object v0
@@ -79,7 +76,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$3;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->mPageChangeListener:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;)Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     move-result-object v0
@@ -89,7 +85,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$3;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->setArrowPosition(I)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->access$500(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;I)V
 
     return-void

@@ -75,7 +75,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SaveAlbumIdCmd$SaveAlbumIdTask;->this$0:Lcom/sec/samsung/gallery/controller/SaveAlbumIdCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SaveAlbumIdCmd;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SaveAlbumIdCmd;->access$100(Lcom/sec/samsung/gallery/controller/SaveAlbumIdCmd;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -92,7 +91,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/SaveAlbumIdCmd$SaveAlbumIdTask;->this$0:Lcom/sec/samsung/gallery/controller/SaveAlbumIdCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SaveAlbumIdCmd;->mOrder:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/SaveAlbumIdCmd;->access$200(Lcom/sec/samsung/gallery/controller/SaveAlbumIdCmd;)Ljava/lang/String;
 
     move-result-object v1

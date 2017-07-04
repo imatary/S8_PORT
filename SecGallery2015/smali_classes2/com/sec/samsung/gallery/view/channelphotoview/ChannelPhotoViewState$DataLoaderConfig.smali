@@ -37,7 +37,6 @@
     iput-boolean v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$DataLoaderConfig;->mUseSocialStoryView:Z
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_DREAM_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$21500()Z
 
     move-result v0
@@ -56,7 +55,6 @@
     return-void
 
     :cond_1
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_GRACE_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$800()Z
 
     move-result v0

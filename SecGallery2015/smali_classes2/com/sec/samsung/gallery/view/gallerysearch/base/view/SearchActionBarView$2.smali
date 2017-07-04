@@ -43,7 +43,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mVoiceButton:Landroid/widget/ImageView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)Landroid/widget/ImageView;
 
     move-result-object v2
@@ -73,7 +72,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->startVoiceRecognitionActivity()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)V
 
     :cond_1
@@ -83,7 +81,6 @@
     :cond_2
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mSearchTextView:Landroid/widget/EditText;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)Landroid/widget/EditText;
 
     move-result-object v2
@@ -92,7 +89,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->getCurrentSearchState()I
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$500(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)I
 
     move-result v1
@@ -105,7 +101,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mOnRecommendListListener:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$OnRecommendListListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$OnRecommendListListener;
 
     move-result-object v2
@@ -114,7 +109,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mSearchView:Landroid/widget/SearchView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)Landroid/widget/SearchView;
 
     move-result-object v2
@@ -129,7 +123,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mOnRecommendListListener:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$OnRecommendListListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$OnRecommendListListener;
 
     move-result-object v2
@@ -151,7 +144,6 @@
     :cond_3
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mCancelButton:Landroid/widget/ImageView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$800(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)Landroid/widget/ImageView;
 
     move-result-object v2
@@ -180,7 +172,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView$2;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->mSearchView:Landroid/widget/SearchView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBarView;)Landroid/widget/SearchView;
 
     move-result-object v2

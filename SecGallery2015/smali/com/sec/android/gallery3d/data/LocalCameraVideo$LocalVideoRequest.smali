@@ -108,7 +108,6 @@
 
     check-cast v9, Lcom/sec/android/gallery3d/data/LocalCameraVideo;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalCameraVideo;->getVideoViewMode()I
     invoke-static {v9}, Lcom/sec/android/gallery3d/data/LocalCameraVideo;->access$000(Lcom/sec/android/gallery3d/data/LocalCameraVideo;)I
 
     move-result v9

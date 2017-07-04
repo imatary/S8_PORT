@@ -64,7 +64,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPhotoIconView:Lcom/sec/android/gallery3d/ui/PhotoIconView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$100(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoIconView;
 
     move-result-object v0
@@ -79,7 +78,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PhotoView;->isSupportVisionIntelligenceView()Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8600(Lcom/sec/android/gallery3d/ui/PhotoView;)Z
 
     move-result v0
@@ -88,14 +86,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1800(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mCurMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2100(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v1
@@ -167,7 +163,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PhotoView;->getAccessibilityIconRect()Landroid/graphics/Rect;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8700(Lcom/sec/android/gallery3d/ui/PhotoView;)Landroid/graphics/Rect;
 
     move-result-object v9
@@ -242,7 +237,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mListener:Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1700(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoView$Listener;
 
     move-result-object v3
@@ -260,7 +254,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PhotoView;->isSupportVisionIntelligenceView()Z
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8600(Lcom/sec/android/gallery3d/ui/PhotoView;)Z
 
     move-result v3
@@ -269,14 +262,12 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1800(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mCurMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2100(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v4
@@ -289,7 +280,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mVisionIntelligenceIconViews:Ljava/util/ArrayList;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2000(Lcom/sec/android/gallery3d/ui/PhotoView;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -317,7 +307,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1800(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v3
@@ -330,7 +319,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PhotoView;->getAccessibilityIconRect()Landroid/graphics/Rect;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8700(Lcom/sec/android/gallery3d/ui/PhotoView;)Landroid/graphics/Rect;
 
     move-result-object v0
@@ -348,7 +336,6 @@
     :cond_1
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1100(Lcom/sec/android/gallery3d/ui/PhotoView;)Landroid/content/Context;
 
     move-result-object v3
@@ -361,7 +348,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1800(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v3
@@ -374,7 +360,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1800(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v3
@@ -390,7 +375,6 @@
     :cond_2
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPhotoIconView:Lcom/sec/android/gallery3d/ui/PhotoIconView;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$100(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoIconView;
 
     move-result-object v3
@@ -421,7 +405,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1800(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v1
@@ -444,12 +427,10 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mCurMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2100(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/android/gallery3d/ui/PhotoView;->isBurstShot(Lcom/sec/android/gallery3d/data/MediaItem;)Z
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8500(Lcom/sec/android/gallery3d/ui/PhotoView;Lcom/sec/android/gallery3d/data/MediaItem;)Z
 
     move-result v1
@@ -458,7 +439,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mIsBurstShotViewer:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$3600(Lcom/sec/android/gallery3d/ui/PhotoView;)Z
 
     move-result v1
@@ -467,7 +447,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PhotoView$12;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$1800(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v1

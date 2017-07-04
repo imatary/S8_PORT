@@ -62,7 +62,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;->prepareItemAnimation()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;)V
 
     :cond_0
@@ -76,7 +75,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;->startShowAnimation()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;)V
 
     goto :goto_0
@@ -88,7 +86,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;->removePenSelectionView()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlPenSelectionBox;)V
 
     goto :goto_0

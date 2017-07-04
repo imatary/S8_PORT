@@ -39,12 +39,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowsetting/SlideShowSettingPreferenceActivity$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowsetting/SlideShowSettingPreferenceActivity;
 
-    # setter for: Lcom/sec/samsung/gallery/view/slideshowsetting/SlideShowSettingPreferenceActivity;->mIsMultiWindow:Z
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/slideshowsetting/SlideShowSettingPreferenceActivity;->access$002(Lcom/sec/samsung/gallery/view/slideshowsetting/SlideShowSettingPreferenceActivity;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/slideshowsetting/SlideShowSettingPreferenceActivity$1;->this$0:Lcom/sec/samsung/gallery/view/slideshowsetting/SlideShowSettingPreferenceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/slideshowsetting/SlideShowSettingPreferenceActivity;->setMarginForTabletModels()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/slideshowsetting/SlideShowSettingPreferenceActivity;->access$100(Lcom/sec/samsung/gallery/view/slideshowsetting/SlideShowSettingPreferenceActivity;)V
 
     return-void

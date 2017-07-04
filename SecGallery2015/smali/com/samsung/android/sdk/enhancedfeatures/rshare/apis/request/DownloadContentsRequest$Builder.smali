@@ -139,52 +139,42 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->mContents:Ljava/util/ArrayList;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->mContents:Ljava/util/ArrayList;
     invoke-static {v1, v2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$002(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->mFolderToken:Ljava/lang/String;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->mFolderToken:Ljava/lang/String;
     invoke-static {v1, v2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$102(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->mGroupId:Ljava/lang/String;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->mGroupId:Ljava/lang/String;
     invoke-static {v1, v2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$202(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->mFolderToken:Ljava/lang/String;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->mFolderToken:Ljava/lang/String;
     invoke-static {v1, v2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$102(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;Ljava/lang/String;)Ljava/lang/String;
 
     iget-boolean v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->isWifOnly:Z
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->isWifOnly:Z
     invoke-static {v1, v2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$302(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;Z)Z
 
     iget-boolean v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->wifiDontCare:Z
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->wifiDontCare:Z
     invoke-static {v1, v2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$402(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;Z)Z
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->mThumb:Ljava/lang/String;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->mThumb:Ljava/lang/String;
     invoke-static {v1, v2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$502(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;Ljava/lang/String;)Ljava/lang/String;
 
     iget-wide v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->requestToken:J
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->requestToken:J
     invoke-static {v1, v2, v3}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$602(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;J)J
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->userData:Landroid/os/Bundle;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->userData:Landroid/os/Bundle;
     invoke-static {v1, v2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$702(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;Landroid/os/Bundle;)Landroid/os/Bundle;
 
     iget-boolean v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->mOverwrite:Z
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->mOverwrite:Z
     invoke-static {v1, v2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$802(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;Z)Z
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->mDownloadPath:Ljava/lang/String;
@@ -205,7 +195,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->mDownloadPath:Ljava/lang/String;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->mDownloadPath:Ljava/lang/String;
     invoke-static {v1, v2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$902(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_0
@@ -221,7 +210,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest$Builder;->mDownloadPath:Ljava/lang/String;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->mDownloadPath:Ljava/lang/String;
     invoke-static {v1, v2}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;->access$902(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/DownloadContentsRequest;Ljava/lang/String;)Ljava/lang/String;
 
     goto :goto_0

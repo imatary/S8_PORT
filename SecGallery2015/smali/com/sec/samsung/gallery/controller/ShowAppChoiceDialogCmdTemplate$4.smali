@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$4;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$300(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;)Landroid/os/Handler;
 
     move-result-object v0

@@ -51,7 +51,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->hide(Z)V
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->access$000(Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;Z)V
 
     :goto_0
@@ -64,24 +63,20 @@
 
     check-cast v0, Ljava/lang/String;
 
-    # setter for: Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->locationStrForGL:Ljava/lang/String;
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->access$102(Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView$1;->this$0:Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView$1;->this$0:Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->locationStrForGL:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->access$100(Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;)Ljava/lang/String;
 
     move-result-object v1
 
-    # invokes: Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->setLocationTextResource(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->access$200(Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView$1;->this$0:Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->setDisplayDateLocationInfoPosition()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;->access$300(Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/DisplayDateLocationView$1;->this$0:Lcom/sec/android/gallery3d/ui/DisplayDateLocationView;

@@ -102,7 +102,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/search/SocialSearchTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/search/SocialSearchListener;
     invoke-static/range {v23 .. v23}, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/search/SocialSearchTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/search/SocialSearchTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/search/SocialSearchListener;
 
     move-result-object v23
@@ -1071,7 +1070,6 @@
 
     move-object/from16 v23, v0
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/search/SocialSearchTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/search/SocialSearchListener;
     invoke-static/range {v23 .. v23}, Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/search/SocialSearchTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/social/internal/transaction/search/SocialSearchTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/social/apis/listener/search/SocialSearchListener;
 
     move-result-object v23

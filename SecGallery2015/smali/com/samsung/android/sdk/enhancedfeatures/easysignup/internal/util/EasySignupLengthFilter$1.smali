@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;->toast:Landroid/widget/Toast;
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;)Landroid/widget/Toast;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;->toast:Landroid/widget/Toast;
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;)Landroid/widget/Toast;
 
     move-result-object v0
@@ -65,7 +63,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;->toast:Landroid/widget/Toast;
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/util/EasySignupLengthFilter;)Landroid/widget/Toast;
 
     move-result-object v0

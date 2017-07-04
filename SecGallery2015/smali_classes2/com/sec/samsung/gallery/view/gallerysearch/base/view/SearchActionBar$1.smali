@@ -45,7 +45,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$000(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Landroid/app/ActionBar;
 
     move-result-object v3
@@ -58,7 +57,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$100(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Landroid/app/ActionBar;
 
     move-result-object v3
@@ -67,7 +65,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -90,7 +87,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Landroid/app/ActionBar;
 
     move-result-object v3
@@ -99,7 +95,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Landroid/app/ActionBar;
 
     move-result-object v3
@@ -108,7 +103,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$500(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Landroid/app/ActionBar;
 
     move-result-object v3
@@ -117,7 +111,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$600(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Landroid/app/ActionBar;
 
     move-result-object v3
@@ -126,7 +119,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Landroid/app/ActionBar;
 
     move-result-object v3
@@ -135,7 +127,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$800(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Landroid/app/ActionBar;
 
     move-result-object v3
@@ -144,14 +135,12 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mMainActionBar:Landroid/app/ActionBar;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$1000(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Landroid/app/ActionBar;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar$1;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;->access$900(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchActionBar;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4

@@ -38,14 +38,12 @@
 
     const/4 v1, 0x0
 
-    # setter for: Landroid/support/v7/internal/widget/ActionBarOverlayLayout;->mCurrentActionBarTopAnimator:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
     invoke-static {v0, v1}, Landroid/support/v7/internal/widget/ActionBarOverlayLayout;->access$002(Landroid/support/v7/internal/widget/ActionBarOverlayLayout;Landroid/support/v4/view/ViewPropertyAnimatorCompat;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
 
     iget-object v0, p0, Landroid/support/v7/internal/widget/ActionBarOverlayLayout$1;->this$0:Landroid/support/v7/internal/widget/ActionBarOverlayLayout;
 
     const/4 v1, 0x0
 
-    # setter for: Landroid/support/v7/internal/widget/ActionBarOverlayLayout;->mAnimatingForFling:Z
     invoke-static {v0, v1}, Landroid/support/v7/internal/widget/ActionBarOverlayLayout;->access$102(Landroid/support/v7/internal/widget/ActionBarOverlayLayout;Z)Z
 
     return-void
@@ -58,14 +56,12 @@
 
     const/4 v1, 0x0
 
-    # setter for: Landroid/support/v7/internal/widget/ActionBarOverlayLayout;->mCurrentActionBarTopAnimator:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
     invoke-static {v0, v1}, Landroid/support/v7/internal/widget/ActionBarOverlayLayout;->access$002(Landroid/support/v7/internal/widget/ActionBarOverlayLayout;Landroid/support/v4/view/ViewPropertyAnimatorCompat;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
 
     iget-object v0, p0, Landroid/support/v7/internal/widget/ActionBarOverlayLayout$1;->this$0:Landroid/support/v7/internal/widget/ActionBarOverlayLayout;
 
     const/4 v1, 0x0
 
-    # setter for: Landroid/support/v7/internal/widget/ActionBarOverlayLayout;->mAnimatingForFling:Z
     invoke-static {v0, v1}, Landroid/support/v7/internal/widget/ActionBarOverlayLayout;->access$102(Landroid/support/v7/internal/widget/ActionBarOverlayLayout;Z)Z
 
     return-void

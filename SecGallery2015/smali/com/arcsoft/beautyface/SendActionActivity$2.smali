@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$2;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mGetResultFromCamera:Lcom/arcsoft/beautyface/GetResultFromCamera;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$300(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/GetResultFromCamera;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$2;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mGetResultFromCamera:Lcom/arcsoft/beautyface/GetResultFromCamera;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$300(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/GetResultFromCamera;
 
     move-result-object v0

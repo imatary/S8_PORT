@@ -53,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$3;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mIsFirstLoadingFinished:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1100(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Z
 
     move-result v0
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$3;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mIsResumed:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1200(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Z
 
     move-result v0
@@ -72,7 +70,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$3;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mIsResumed:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1200(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Z
 
     move-result v0
@@ -81,7 +78,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$3;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mIsFirstLoadingFinished:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1100(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Z
 
     move-result v0
@@ -90,18 +86,15 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$3;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->refreshDualScreenFocus()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1300(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)V
 
     :goto_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$3;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mIsFirstLoadingFinished:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1102(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$3;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mIsResumed:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1202(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;Z)Z
 
     :cond_1
@@ -110,7 +103,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$3;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mIsDualLaunchFromDetail:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1400(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Z
 
     move-result v0
@@ -121,7 +113,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->startDetailViewInUIThread(IIZ)V
     invoke-static {v0, v2, v2, v1}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;IIZ)V
 
     :cond_3
@@ -129,12 +120,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$3;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->refreshDualScreenFocus()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1300(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$3;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mIsDualLaunchFromDetail:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1402(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;Z)Z
 
     goto :goto_0

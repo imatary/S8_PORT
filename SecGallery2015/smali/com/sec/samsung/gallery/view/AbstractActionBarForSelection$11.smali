@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$11;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->mSelectionBuffer:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->access$500(Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;)Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
     move-result-object v0
@@ -54,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$11;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->mSelectionBuffer:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->access$500(Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;)Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
     move-result-object v0
@@ -67,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$11;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->mSelectionBuffer:Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->access$500(Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;)Lcom/sec/samsung/gallery/view/common/SelectionBuffer;
 
     move-result-object v0

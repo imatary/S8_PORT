@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$19;->val$favoriteIconView:Landroid/widget/TextView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->getKeyEventOnFavorite(Landroid/widget/TextView;I)V
     invoke-static {v0, v1, p2}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$1900(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;Landroid/widget/TextView;I)V
 
     const/4 v0, 0x0

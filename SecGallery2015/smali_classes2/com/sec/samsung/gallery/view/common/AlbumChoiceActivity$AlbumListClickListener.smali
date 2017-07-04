@@ -68,7 +68,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$AlbumListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mEvent:Lcom/sec/samsung/gallery/core/Event;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1000(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Lcom/sec/samsung/gallery/core/Event;
 
     move-result-object v3
@@ -87,7 +86,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v1
@@ -97,7 +95,6 @@
     if-eqz p3, :cond_1
 
     :cond_0
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v1
@@ -106,7 +103,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$AlbumListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v1
@@ -118,7 +114,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$AlbumListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mIntent:Landroid/content/Intent;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Landroid/content/Intent;
 
     move-result-object v1
@@ -131,7 +126,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$AlbumListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mIntent:Landroid/content/Intent;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Landroid/content/Intent;
 
     move-result-object v1
@@ -140,7 +134,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$AlbumListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mEvent:Lcom/sec/samsung/gallery/core/Event;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1000(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Lcom/sec/samsung/gallery/core/Event;
 
     move-result-object v3
@@ -153,7 +146,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$AlbumListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mIntent:Landroid/content/Intent;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Landroid/content/Intent;
 
     move-result-object v1
@@ -162,7 +154,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$AlbumListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mTopSetPath:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1400(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Ljava/lang/String;
 
     move-result-object v3
@@ -175,7 +166,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$AlbumListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mIntent:Landroid/content/Intent;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1300(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Landroid/content/Intent;
 
     move-result-object v3
@@ -184,7 +174,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$AlbumListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->getSAScreenID()Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1500(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Ljava/lang/String;
 
     move-result-object v1
@@ -201,7 +190,6 @@
     return-void
 
     :cond_2
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v1
@@ -215,14 +203,12 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$AlbumListClickListener;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v2
 
     aget-object v2, v2, v0
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->finishWithResultOk(Lcom/sec/android/gallery3d/data/MediaSet;)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1600(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;Lcom/sec/android/gallery3d/data/MediaSet;)V
 
     goto :goto_0

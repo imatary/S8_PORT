@@ -74,17 +74,14 @@
 
     iget-wide v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest$Builder;->mTimestamp:J
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest;->mTimestamp:J
     invoke-static {v0, v2, v3}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest;->access$002(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest;J)J
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest$Builder;->to_multi:Ljava/lang/String;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest;->to_multi:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest;->access$102(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest;Ljava/lang/String;)Ljava/lang/String;
 
     iget-wide v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest$Builder;->requestToken:J
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest;->requestToken:J
     invoke-static {v0, v2, v3}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest;->access$202(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/ContentListRequest;J)J
 
     return-object v0

@@ -184,7 +184,6 @@
 
     if-eqz v1, :cond_1
 
-    # invokes: Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->uploadNextTile(Lcom/sec/android/gallery3d/glrenderer/GLCanvas;)Z
     invoke-static {v1, p1}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;->access$000(Lcom/sec/android/gallery3d/glrenderer/TiledTexture;Lcom/sec/android/gallery3d/glrenderer/GLCanvas;)Z
 
     move-result v7

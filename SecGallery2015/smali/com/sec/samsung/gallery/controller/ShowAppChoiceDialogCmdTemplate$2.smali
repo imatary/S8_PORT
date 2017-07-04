@@ -52,7 +52,6 @@
     :pswitch_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$100(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     move-result-object v2
@@ -61,7 +60,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$100(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     move-result-object v2
@@ -81,7 +79,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->showAppChoiceDialog(Ljava/util/List;)V
     invoke-static {v2, v0}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$200(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;Ljava/util/List;)V
 
     goto :goto_0
@@ -89,7 +86,6 @@
     :pswitch_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$100(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     move-result-object v2
@@ -98,7 +94,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$100(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     move-result-object v2
@@ -110,7 +105,6 @@
     :pswitch_2
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$100(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     move-result-object v2
@@ -125,7 +119,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$100(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     move-result-object v2
@@ -134,7 +127,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->mAppChoiceDialog:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$100(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;)Lcom/sec/samsung/gallery/view/common/AppChoiceDialog;
 
     move-result-object v2

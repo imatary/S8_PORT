@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/samsung/gallery/view/eventview/EventViewState$1;->this$0:Lcom/sec/samsung/gallery/view/eventview/EventViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/eventview/EventViewState;->exitSelectionMode()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/eventview/EventViewState;->access$300(Lcom/sec/samsung/gallery/view/eventview/EventViewState;)V
 
     return-void

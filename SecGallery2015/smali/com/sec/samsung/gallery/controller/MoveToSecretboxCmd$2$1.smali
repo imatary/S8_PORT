@@ -43,17 +43,14 @@
 
     const/4 v1, 0x0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mSelectedCount:I
     invoke-static {}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$100()I
 
     move-result v2
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mItemCount:I
     invoke-static {}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$200()I
 
     move-result v3
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mAlbumPaths:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$300()Ljava/util/ArrayList;
 
     move-result-object v4
@@ -64,7 +61,6 @@
 
     iget-boolean v6, v6, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$2;->val$spreadBurstShot:Z
 
-    # invokes: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->handleMultipleFileOperation(IIILjava/util/ArrayList;Ljava/lang/String;Z)V
     invoke-static/range {v0 .. v6}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$400(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;IIILjava/util/ArrayList;Ljava/lang/String;Z)V
 
     return-void

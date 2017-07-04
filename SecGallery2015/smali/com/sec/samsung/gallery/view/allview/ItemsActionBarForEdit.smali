@@ -329,8 +329,8 @@
         0x7f120275 -> :sswitch_5
         0x7f120277 -> :sswitch_1
         0x7f120278 -> :sswitch_2
-        0x7f120282 -> :sswitch_3
-        0x7f120283 -> :sswitch_4
+        0x7f120281 -> :sswitch_3
+        0x7f120282 -> :sswitch_4
         0x7f120290 -> :sswitch_0
         0x7f1202ae -> :sswitch_6
         0x7f1202af -> :sswitch_7

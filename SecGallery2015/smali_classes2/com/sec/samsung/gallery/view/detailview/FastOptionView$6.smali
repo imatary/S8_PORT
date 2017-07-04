@@ -43,12 +43,10 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mIsFastMenuItemLongPressed:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$1702(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$6;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mListener:Lcom/sec/samsung/gallery/view/detailview/FastOptionView$Listener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$1300(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Lcom/sec/samsung/gallery/view/detailview/FastOptionView$Listener;
 
     move-result-object v0
@@ -57,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/FastOptionView$6;->this$0:Lcom/sec/samsung/gallery/view/detailview/FastOptionView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->mListener:Lcom/sec/samsung/gallery/view/detailview/FastOptionView$Listener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/FastOptionView;->access$1300(Lcom/sec/samsung/gallery/view/detailview/FastOptionView;)Lcom/sec/samsung/gallery/view/detailview/FastOptionView$Listener;
 
     move-result-object v0

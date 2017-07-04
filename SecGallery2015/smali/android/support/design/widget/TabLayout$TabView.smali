@@ -43,14 +43,12 @@
 
     iput-object p3, p0, Landroid/support/design/widget/TabLayout$TabView;->mTab:Landroid/support/design/widget/TabLayout$Tab;
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabBackgroundResId:I
     invoke-static {p1}, Landroid/support/design/widget/TabLayout;->access$200(Landroid/support/design/widget/TabLayout;)I
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabBackgroundResId:I
     invoke-static {p1}, Landroid/support/design/widget/TabLayout;->access$200(Landroid/support/design/widget/TabLayout;)I
 
     move-result v0
@@ -62,22 +60,18 @@
     invoke-virtual {p0, v0}, Landroid/support/design/widget/TabLayout$TabView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     :cond_0
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabPaddingStart:I
     invoke-static {p1}, Landroid/support/design/widget/TabLayout;->access$300(Landroid/support/design/widget/TabLayout;)I
 
     move-result v0
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabPaddingTop:I
     invoke-static {p1}, Landroid/support/design/widget/TabLayout;->access$400(Landroid/support/design/widget/TabLayout;)I
 
     move-result v1
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabPaddingEnd:I
     invoke-static {p1}, Landroid/support/design/widget/TabLayout;->access$500(Landroid/support/design/widget/TabLayout;)I
 
     move-result v2
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabPaddingBottom:I
     invoke-static {p1}, Landroid/support/design/widget/TabLayout;->access$600(Landroid/support/design/widget/TabLayout;)I
 
     move-result v3
@@ -322,7 +316,6 @@
 
     iget-object v1, p0, Landroid/support/design/widget/TabLayout$TabView;->this$0:Landroid/support/design/widget/TabLayout;
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabMinWidth:I
     invoke-static {v1}, Landroid/support/design/widget/TabLayout;->access$700(Landroid/support/design/widget/TabLayout;)I
 
     move-result v1
@@ -331,7 +324,6 @@
 
     iget-object v1, p0, Landroid/support/design/widget/TabLayout$TabView;->this$0:Landroid/support/design/widget/TabLayout;
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabMaxWidth:I
     invoke-static {v1}, Landroid/support/design/widget/TabLayout;->access$800(Landroid/support/design/widget/TabLayout;)I
 
     move-result v1
@@ -341,14 +333,12 @@
     :cond_0
     iget-object v1, p0, Landroid/support/design/widget/TabLayout$TabView;->this$0:Landroid/support/design/widget/TabLayout;
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabMinWidth:I
     invoke-static {v1}, Landroid/support/design/widget/TabLayout;->access$700(Landroid/support/design/widget/TabLayout;)I
 
     move-result v1
 
     iget-object v2, p0, Landroid/support/design/widget/TabLayout$TabView;->this$0:Landroid/support/design/widget/TabLayout;
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabMaxWidth:I
     invoke-static {v2}, Landroid/support/design/widget/TabLayout;->access$800(Landroid/support/design/widget/TabLayout;)I
 
     move-result v2
@@ -557,7 +547,6 @@
 
     iget-object v7, p0, Landroid/support/design/widget/TabLayout$TabView;->this$0:Landroid/support/design/widget/TabLayout;
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabTextAppearance:I
     invoke-static {v7}, Landroid/support/design/widget/TabLayout;->access$900(Landroid/support/design/widget/TabLayout;)I
 
     move-result v7
@@ -566,7 +555,6 @@
 
     iget-object v5, p0, Landroid/support/design/widget/TabLayout$TabView;->this$0:Landroid/support/design/widget/TabLayout;
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabTextColors:Landroid/content/res/ColorStateList;
     invoke-static {v5}, Landroid/support/design/widget/TabLayout;->access$1000(Landroid/support/design/widget/TabLayout;)Landroid/content/res/ColorStateList;
 
     move-result-object v5
@@ -577,7 +565,6 @@
 
     iget-object v6, p0, Landroid/support/design/widget/TabLayout$TabView;->this$0:Landroid/support/design/widget/TabLayout;
 
-    # getter for: Landroid/support/design/widget/TabLayout;->mTabTextColors:Landroid/content/res/ColorStateList;
     invoke-static {v6}, Landroid/support/design/widget/TabLayout;->access$1000(Landroid/support/design/widget/TabLayout;)Landroid/content/res/ColorStateList;
 
     move-result-object v6

@@ -58,7 +58,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$8;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$000(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -77,7 +76,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$8;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$000(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -92,7 +90,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$8;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$000(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -110,7 +107,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$8;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$000(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

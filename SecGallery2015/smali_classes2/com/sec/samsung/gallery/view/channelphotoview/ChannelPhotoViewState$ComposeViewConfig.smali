@@ -44,7 +44,6 @@
 
     iput v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->mEnlargeDuration:I
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mIsEasyMode:Z
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$21400(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Z
 
     move-result v0
@@ -62,7 +61,6 @@
 
     iput v2, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->mMinLevel:I
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_DREAM_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$21500()Z
 
     move-result v0
@@ -74,7 +72,6 @@
     :goto_1
     iput v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->mMaxLevel:I
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_GRACE_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$800()Z
 
     move-result v0
@@ -86,7 +83,6 @@
     :goto_2
     iput v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->mInitialLevel:I
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$2300(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0
@@ -97,14 +93,12 @@
 
     iput-object v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->mViewTabType:Lcom/sec/samsung/gallery/core/TabTagType;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_GRACE_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$800()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_DREAM_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$21500()Z
 
     move-result v0
@@ -133,7 +127,6 @@
 
     iput-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->mUseQuickScroll:Z
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_DREAM_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$21500()Z
 
     move-result v0
@@ -156,14 +149,12 @@
 
     iput-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->mUseGoToTopButton:Z
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_DREAM_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$21500()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->mCheckBoxExpansionAlwaysVisible:Z
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_DREAM_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$21500()Z
 
     move-result v0
@@ -183,7 +174,6 @@
     iput-object v0, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->mPosCtrl:[Ljava/lang/Object;
 
     :goto_4
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_GRACE_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$800()Z
 
     move-result v0
@@ -207,7 +197,6 @@
     goto/16 :goto_0
 
     :cond_3
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_GRACE_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$800()Z
 
     move-result v0
@@ -234,7 +223,6 @@
     goto :goto_3
 
     :cond_7
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_GRACE_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$800()Z
 
     move-result v0
@@ -316,7 +304,6 @@
 
     const/4 v0, 0x2
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_DREAM_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$21500()Z
 
     move-result v1
@@ -352,7 +339,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mGalleryApp:Lcom/sec/android/gallery3d/app/GalleryAppImpl;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$2700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/GalleryAppImpl;
 
     move-result-object v1
@@ -376,7 +362,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->this$0:Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$21700(Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -393,7 +378,6 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState$ComposeViewConfig;->mMinLevel:I
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->USE_GRACE_LAYOUT:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/channelphotoview/ChannelPhotoViewState;->access$800()Z
 
     move-result v1

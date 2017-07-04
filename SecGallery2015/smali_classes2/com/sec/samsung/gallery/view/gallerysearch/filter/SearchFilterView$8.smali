@@ -53,7 +53,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$8;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mFilterGroupView:Landroid/view/ViewGroup;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/ViewGroup;
 
     move-result-object v3
@@ -83,7 +82,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView$8;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->mFilterGroupView:Landroid/view/ViewGroup;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;->access$1600(Lcom/sec/samsung/gallery/view/gallerysearch/filter/SearchFilterView;)Landroid/view/ViewGroup;
 
     move-result-object v3

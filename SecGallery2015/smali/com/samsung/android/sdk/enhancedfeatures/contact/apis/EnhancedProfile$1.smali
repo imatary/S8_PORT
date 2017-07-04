@@ -39,7 +39,6 @@
 
     const-string/jumbo v1, "onDeregister"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v2
@@ -48,7 +47,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mSyncTaskArrayList:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -71,7 +69,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mSyncTaskArrayList:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -88,7 +85,6 @@
 
     move-result-object v1
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v2
@@ -97,7 +93,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mSyncTaskArrayList:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -130,7 +125,6 @@
 
     const-string/jumbo v2, "onDeregister syncTask cancel"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v3
@@ -146,7 +140,6 @@
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mSyncTaskArrayList:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -166,7 +159,6 @@
 
     const-string/jumbo v4, "Received Contact Push"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v5
@@ -175,7 +167,6 @@
 
     iget-object v4, p0, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/listener/EnhancedProfilePushListener;
     invoke-static {v4}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/listener/EnhancedProfilePushListener;
 
     move-result-object v4
@@ -215,7 +206,6 @@
     :goto_0
     iget-object v4, p0, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/listener/EnhancedProfilePushListener;
     invoke-static {v4}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/listener/EnhancedProfilePushListener;
 
     move-result-object v4
@@ -265,7 +255,6 @@
 
     const-string/jumbo v2, "onRegister"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v3
@@ -278,7 +267,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/listener/EnhancedProfilePushListener;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/listener/EnhancedProfilePushListener;
 
     move-result-object v2
@@ -287,7 +275,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mPushListener:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/listener/EnhancedProfilePushListener;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/listener/EnhancedProfilePushListener;
 
     move-result-object v2
@@ -313,7 +300,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Landroid/content/Context;
 
     move-result-object v2
@@ -326,7 +312,6 @@
 
     const-string/jumbo v2, "Support CoreAppsJoinAuth"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v3
@@ -335,7 +320,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;)Landroid/content/Context;
 
     move-result-object v2
@@ -355,7 +339,6 @@
     :cond_2
     const-string/jumbo v2, "Not Support CoreAppsJoinAuth"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/contact/apis/EnhancedProfile;->access$000()Ljava/lang/String;
 
     move-result-object v3

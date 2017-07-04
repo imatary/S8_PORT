@@ -1,14 +1,11 @@
 .class Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$9;
-.super Ljava/lang/Object;
+.super Lorg/puremvc/java/multicore/patterns/mediator/Mediator;
 .source "SharedFriendsListViewState.java"
-
-# interfaces
-.implements Lcom/sec/samsung/gallery/lib/libinterface/MultiWindowStateChangeInterface;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->setStateChangeListener()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,37 +19,59 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+.method constructor <init>(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
 
     iput-object p1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$9;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2, p3}, Lorg/puremvc/java/multicore/patterns/mediator/Mediator;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onModeChanged(Z)V
-    .locals 1
+.method public handleNotification(Lorg/puremvc/java/multicore/interfaces/INotification;)V
+    .locals 2
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$9;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
+    invoke-interface {p1}, Lorg/puremvc/java/multicore/interfaces/INotification;->getName()Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->setMultiWindowMode(Z)V
-    invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1300(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Z)V
+    move-result-object v0
 
+    const-string/jumbo v1, "SYSTEM_UI_VISIBILITY_CHANGE"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1300()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$9;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
+
+    invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1400(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+
+    :cond_0
     return-void
 .end method
 
-.method public onSizeChanged(Landroid/graphics/Rect;)V
-    .locals 0
+.method public listNotificationInterests()[Ljava/lang/String;
+    .locals 3
 
-    return-void
-.end method
+    const/4 v0, 0x1
 
-.method public onZoneChanged(I)V
-    .locals 0
+    new-array v0, v0, [Ljava/lang/String;
 
-    return-void
+    const/4 v1, 0x0
+
+    const-string/jumbo v2, "SYSTEM_UI_VISIBILITY_CHANGE"
+
+    aput-object v2, v0, v1
+
+    return-object v0
 .end method

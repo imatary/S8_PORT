@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showNetworkErrorDialog()V
+    value = Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showInvalidNumberDialog(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

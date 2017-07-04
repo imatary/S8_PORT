@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;->mAutoAdjustEffectCircle:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;->access$000(Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;)Landroid/widget/ImageView;
 
     move-result-object v0
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;->mAutoAdjustEffectCircle:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;->access$000(Lcom/sec/samsung/gallery/view/detailview/AutoAdjustAnimation;)Landroid/widget/ImageView;
 
     move-result-object v0

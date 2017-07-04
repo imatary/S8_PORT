@@ -53,7 +53,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$12;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->mCheckBox:Landroid/widget/CheckBox;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->access$300(Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;)Landroid/widget/CheckBox;
 
     move-result-object v2
@@ -78,7 +77,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$12;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->mCheckBox:Landroid/widget/CheckBox;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->access$300(Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;)Landroid/widget/CheckBox;
 
     move-result-object v2
@@ -93,7 +91,6 @@
 
     iget-object v2, v2, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection$12;->this$0:Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->mCheckBox:Landroid/widget/CheckBox;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->access$300(Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;)Landroid/widget/CheckBox;
 
     move-result-object v2

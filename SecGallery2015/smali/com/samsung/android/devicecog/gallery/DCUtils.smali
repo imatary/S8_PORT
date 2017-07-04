@@ -29,7 +29,7 @@
 
     const-string/jumbo v3, "[\\w\\W]*"
 
-    const-string/jumbo v0, "[\\s\t]*"
+    const-string/jumbo v0, "[\\s\\t]"
 
     invoke-virtual {p0}, Ljava/lang/String;->isEmpty()Z
 
@@ -69,6 +69,22 @@
     return v7
 
     :cond_0
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v8
+
+    invoke-virtual {p0, v8}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v8
+
+    invoke-virtual {p1, v8}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object p1
+
     invoke-virtual {p0, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v5

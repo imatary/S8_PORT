@@ -45,7 +45,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager$5;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v4
@@ -64,7 +63,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager$5;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v6}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v6
@@ -137,7 +135,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager$5;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoActionBarManager;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v4

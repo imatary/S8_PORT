@@ -49,7 +49,6 @@
 .method public run()V
     .locals 4
 
-    # invokes: Lcom/sec/android/gallery3d/common/Utils;->cancelNoMediaToast()V
     invoke-static {}, Lcom/sec/android/gallery3d/common/Utils;->access$000()V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/common/Utils$1;->val$context:Landroid/content/Context;
@@ -62,10 +61,8 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/gallery3d/common/Utils;->mToast:Landroid/widget/Toast;
     invoke-static {v1}, Lcom/sec/android/gallery3d/common/Utils;->access$102(Landroid/widget/Toast;)Landroid/widget/Toast;
 
-    # getter for: Lcom/sec/android/gallery3d/common/Utils;->mToast:Landroid/widget/Toast;
     invoke-static {}, Lcom/sec/android/gallery3d/common/Utils;->access$100()Landroid/widget/Toast;
 
     move-result-object v1
@@ -88,7 +85,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setMaxWidth(I)V
 
-    # getter for: Lcom/sec/android/gallery3d/common/Utils;->mToast:Landroid/widget/Toast;
     invoke-static {}, Lcom/sec/android/gallery3d/common/Utils;->access$100()Landroid/widget/Toast;
 
     move-result-object v1

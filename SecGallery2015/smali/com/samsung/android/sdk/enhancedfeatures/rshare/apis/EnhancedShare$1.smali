@@ -41,7 +41,6 @@
 
     const-string/jumbo v0, "onDeregister"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$300()Ljava/lang/String;
 
     move-result-object v1
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$500(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;)Landroid/content/Context;
 
     move-result-object v0
@@ -78,7 +76,6 @@
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->cleanupTransactions()V
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$600(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;)V
 
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/RShareApplication;->getRShareDbHandler()Lcom/samsung/android/sdk/enhancedfeatures/rshare/internal/db/RShareDbHandler;
@@ -160,7 +157,6 @@
 
     move-result-object v7
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$300()Ljava/lang/String;
 
     move-result-object v8
@@ -186,7 +182,6 @@
 
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
     invoke-static {v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
 
     move-result-object v7
@@ -195,7 +190,6 @@
 
     const-string/jumbo v7, "onPushReceive :  mListener is null"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$300()Ljava/lang/String;
 
     move-result-object v8
@@ -247,7 +241,6 @@
 
     move-result-object v7
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$300()Ljava/lang/String;
 
     move-result-object v8
@@ -256,7 +249,6 @@
 
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
     invoke-static {v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
 
     move-result-object v7
@@ -292,7 +284,6 @@
 
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;
 
-    # invokes: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->getPushType(Ljava/lang/String;)C
     invoke-static {v7, v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$400(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;Ljava/lang/String;)C
 
     move-result v6
@@ -314,7 +305,6 @@
 
     const-string/jumbo v7, "push api number is not available"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$300()Ljava/lang/String;
 
     move-result-object v8
@@ -378,7 +368,6 @@
     :pswitch_5
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
     invoke-static {v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
 
     move-result-object v7
@@ -396,7 +385,6 @@
     :pswitch_6
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
     invoke-static {v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
 
     move-result-object v7
@@ -414,7 +402,6 @@
     :pswitch_7
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
     invoke-static {v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
 
     move-result-object v7
@@ -432,7 +419,6 @@
     :pswitch_8
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
     invoke-static {v7}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;)Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/listener/EnhancedSharePushListener;
 
     move-result-object v7
@@ -466,7 +452,6 @@
 
     move-result-object v7
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$300()Ljava/lang/String;
 
     move-result-object v8
@@ -504,7 +489,6 @@
 
     const-string/jumbo v0, "onRegister"
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/EnhancedShare;->access$300()Ljava/lang/String;
 
     move-result-object v1

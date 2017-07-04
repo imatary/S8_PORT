@@ -51,7 +51,6 @@
 .method private isAutoVideoPreview(Lcom/sec/android/gallery3d/data/MediaItem;)Z
     .locals 2
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->USE_VIDEO_AUTO_PLAY:Z
     invoke-static {}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$1600()Z
 
     move-result v0
@@ -277,7 +276,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$ScreenNailJob;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # invokes: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->getTiledTextureResource()Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;
     invoke-static {v4}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$1500(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;
 
     move-result-object v4

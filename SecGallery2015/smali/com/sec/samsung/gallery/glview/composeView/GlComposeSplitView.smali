@@ -48,8 +48,6 @@
 
 .field private final mShrinkAnimationListener:Lcom/sec/android/gallery3d/glcore/GlAnimationBase$GlAnimationListener;
 
-.field private final mSoftKeyHeightPixel:I
-
 .field private mSupportExpand:Z
 
 .field private mUpSideAlbumCount:I
@@ -138,16 +136,6 @@
     iget v0, p5, Lcom/sec/samsung/gallery/glview/composeView/GlComposeBaseView$ViewConfig;->mPortRatio:F
 
     sput v0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->SPLIT_RATIO_PORT:F
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mResource:Landroid/content/res/Resources;
-
-    const v1, 0x7f0b0240
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v0
-
-    iput v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mSoftKeyHeightPixel:I
 
     return-void
 .end method
@@ -753,7 +741,9 @@
 
     neg-float v4, v2
 
-    iget v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mSoftKeyHeightPixel:I
+    iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v5, v5, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mSoftKeyHeightPixel:I
 
     invoke-virtual {p0, v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->convX(I)F
 
@@ -806,7 +796,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mResource:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b0821
+    const v5, 0x7f0b0822
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -828,7 +818,7 @@
 
     invoke-virtual {v3, v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;->setBorderColor(I)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_3
     sget v1, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->SPLIT_RATIO_PORT:F
@@ -856,7 +846,9 @@
 
     if-ne v4, v5, :cond_2
 
-    iget v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mSoftKeyHeightPixel:I
+    iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v4, v4, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mSoftKeyHeightPixel:I
 
     invoke-virtual {p0, v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->convX(I)F
 
@@ -2287,7 +2279,9 @@
 
     iget v1, v1, Landroid/graphics/Rect;->left:I
 
-    iget v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mSoftKeyHeightPixel:I
+    iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v2, v2, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mSoftKeyHeightPixel:I
 
     sub-int/2addr v1, v2
 
@@ -2299,7 +2293,9 @@
 
     iget v2, v2, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mMargLeft:F
 
-    iget v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mSoftKeyHeightPixel:I
+    iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v3, v3, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mSoftKeyHeightPixel:I
 
     invoke-virtual {p0, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->convX(I)F
 
@@ -2440,7 +2436,9 @@
 
     sub-int/2addr v1, v2
 
-    iget v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mSoftKeyHeightPixel:I
+    iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v2, v2, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mSoftKeyHeightPixel:I
 
     sub-int/2addr v1, v2
 
@@ -2452,7 +2450,9 @@
 
     iget v2, v2, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mMargLeft:F
 
-    iget v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mSoftKeyHeightPixel:I
+    iget-object v3, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->mPosCtrl:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;
+
+    iget v3, v3, Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase;->mSoftKeyHeightPixel:I
 
     invoke-virtual {p0, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSplitView;->convX(I)F
 

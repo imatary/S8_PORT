@@ -2354,7 +2354,7 @@
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
 
-    const v3, 0x7f120286
+    const v3, 0x7f120285
 
     invoke-super {p0, p1}, Lcom/sec/android/gallery3d/app/ActivityState;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 

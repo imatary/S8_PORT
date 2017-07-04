@@ -522,14 +522,14 @@
     <dimen name="share_dialog_warning_padding_left">4.0dip</dimen>
     <dimen name="share_progress_cancel_text_size">16.0dip</dimen>
     <dimen name="share_progress_updating_text_size">15.0dip</dimen>
-    <dimen name="share_setting_button_margin">16.0dip</dimen>
+    <dimen name="share_setting_button_margin">24.0dip</dimen>
     <dimen name="share_setting_description_text_size">16.0sp</dimen>
     <dimen name="share_setting_divider_height">0.5dip</dimen>
     <dimen name="share_setting_progress_height">24.0dip</dimen>
     <dimen name="share_setting_progress_left_margin">12.0dip</dimen>
     <dimen name="share_setting_progress_width">24.0dip</dimen>
     <dimen name="share_setting_sub_app_bar_height">56.0dip</dimen>
-    <dimen name="share_setting_text_start_margin">16.0dip</dimen>
+    <dimen name="share_setting_text_start_margin">24.0dip</dimen>
     <dimen name="share_uploading_icon_height">20.0dip</dimen>
     <dimen name="share_uploading_icon_width">20.0dip</dimen>
     <dimen name="share_via_list_item_height">48.0dip</dimen>

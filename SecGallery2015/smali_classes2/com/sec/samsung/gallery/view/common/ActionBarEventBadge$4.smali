@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$4;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->showHintPopUp(Landroid/view/View;)V
     invoke-static {v0, p1}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$800(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;Landroid/view/View;)V
 
     :cond_0
@@ -67,7 +66,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge$4;->this$0:Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->removeHintPopup()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;->access$200(Lcom/sec/samsung/gallery/view/common/ActionBarEventBadge;)V
 
     goto :goto_0

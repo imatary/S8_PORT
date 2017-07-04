@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$10;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->isAnimationVisible:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)I
 
     move-result v0
@@ -50,12 +49,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$10;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->isAnimationVisible:I
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$302(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;I)I
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$10;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mSuggestionObject:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
     move-result-object v0
@@ -68,7 +65,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$10;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mSuggestionObject:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
     move-result-object v1
@@ -83,7 +79,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$10;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->setSuggestionCardVisibility(Z)V
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;Z)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$10;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
@@ -96,7 +91,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$10;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mSuggestionObject:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelSuggestionObject;
 
     move-result-object v0
@@ -133,7 +127,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->isAnimationVisible:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$302(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;I)I
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$10;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;

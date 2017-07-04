@@ -228,7 +228,6 @@
 
     iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->mState:Landroid/support/v7/widget/RecyclerView$State;
 
-    # += operator for: Landroid/support/v7/widget/RecyclerView$State;->mDeletedInvisibleItemCountSincePreviousLayout:I
     invoke-static {v0, p2}, Landroid/support/v7/widget/RecyclerView$State;->access$1712(Landroid/support/v7/widget/RecyclerView$State;I)I
 
     return-void

@@ -77,7 +77,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2600(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v1
@@ -99,7 +98,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mTransitionMode:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$6400(Lcom/sec/android/gallery3d/ui/PhotoView;)I
 
     move-result v1
@@ -136,27 +134,23 @@
 
     move-result v1
 
-    # setter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mGetPrevFocusX:F
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8202(F)F
 
     invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getFocusY()F
 
     move-result v1
 
-    # setter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mGetPrevFocusY:F
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8302(F)F
 
     :cond_4
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2600(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v3
 
     if-eqz p1, :cond_5
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mGetPrevFocusX:F
     invoke-static {}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8200()F
 
     move-result v1
@@ -166,7 +160,6 @@
     :goto_2
     if-eqz p1, :cond_6
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mGetPrevFocusY:F
     invoke-static {}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8300()F
 
     move-result v1
@@ -179,7 +172,6 @@
     :cond_5
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mCenterX:F
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2400(Lcom/sec/android/gallery3d/ui/PhotoView;)F
 
     move-result v1
@@ -191,7 +183,6 @@
     :cond_6
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mCenterY:F
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2500(Lcom/sec/android/gallery3d/ui/PhotoView;)F
 
     move-result v1
@@ -212,7 +203,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mTransitionMode:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$6400(Lcom/sec/android/gallery3d/ui/PhotoView;)I
 
     move-result v3
@@ -221,7 +211,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mLoadingState:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$3300(Lcom/sec/android/gallery3d/ui/PhotoView;)I
 
     move-result v3
@@ -230,7 +219,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mLoadingState:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$3300(Lcom/sec/android/gallery3d/ui/PhotoView;)I
 
     move-result v3
@@ -241,7 +229,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mLoadingProgressState:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$5700(Lcom/sec/android/gallery3d/ui/PhotoView;)I
 
     move-result v3
@@ -265,7 +252,6 @@
 
     const-wide/16 v4, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mScaleEndStartTime:J
     invoke-static {v3, v4, v5}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$7502(Lcom/sec/android/gallery3d/ui/PhotoView;J)J
 
     if-eqz p1, :cond_2
@@ -274,14 +260,12 @@
 
     move-result v3
 
-    # setter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mGetPrevFocusX:F
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8202(F)F
 
     invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getFocusY()F
 
     move-result v3
 
-    # setter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mGetPrevFocusY:F
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8302(F)F
 
     :cond_2
@@ -301,7 +285,6 @@
     :goto_2
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2600(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v3
@@ -313,7 +296,6 @@
     :cond_3
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mCenterX:F
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2400(Lcom/sec/android/gallery3d/ui/PhotoView;)F
 
     move-result v0
@@ -323,7 +305,6 @@
     :cond_4
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mCenterY:F
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2500(Lcom/sec/android/gallery3d/ui/PhotoView;)F
 
     move-result v1
@@ -344,17 +325,14 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPositionController:Lcom/sec/android/gallery3d/ui/PositionController;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$2600(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PositionController;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/sec/android/gallery3d/ui/PositionController;->endScale()V
 
-    # setter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mGetPrevFocusX:F
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8202(F)F
 
-    # setter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mGetPrevFocusY:F
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8302(F)F
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$MyScaleListener;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
@@ -363,7 +341,6 @@
 
     move-result-wide v2
 
-    # setter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mScaleEndStartTime:J
     invoke-static {v0, v2, v3}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$7502(Lcom/sec/android/gallery3d/ui/PhotoView;J)J
 
     return-void

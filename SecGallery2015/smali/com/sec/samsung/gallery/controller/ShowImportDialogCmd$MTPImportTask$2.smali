@@ -53,7 +53,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$MTPImportTask$2;->val$item:Lcom/sec/android/gallery3d/data/MediaObject;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->showDialog(Ljava/io/File;Lcom/sec/android/gallery3d/data/MediaObject;)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1100(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Ljava/io/File;Lcom/sec/android/gallery3d/data/MediaObject;)V
 
     return-void

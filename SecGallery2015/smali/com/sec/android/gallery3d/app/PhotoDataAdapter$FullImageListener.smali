@@ -93,14 +93,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$FullImageListener;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$1700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$FullImageListener;->this$0:Lcom/sec/android/gallery3d/app/PhotoDataAdapter;
 
-    # getter for: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->mMainHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$1700(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;)Landroid/os/Handler;
 
     move-result-object v1
@@ -127,7 +125,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/app/PhotoDataAdapter$FullImageListener;->mItem:Lcom/sec/android/gallery3d/data/MediaItem;
 
-    # invokes: Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->updateFullImage(Lcom/sec/android/gallery3d/data/Path;Lcom/sec/android/gallery3d/util/Future;Lcom/sec/android/gallery3d/data/MediaItem;)V
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/gallery3d/app/PhotoDataAdapter;->access$1800(Lcom/sec/android/gallery3d/app/PhotoDataAdapter;Lcom/sec/android/gallery3d/data/Path;Lcom/sec/android/gallery3d/util/Future;Lcom/sec/android/gallery3d/data/MediaItem;)V
 
     return-void

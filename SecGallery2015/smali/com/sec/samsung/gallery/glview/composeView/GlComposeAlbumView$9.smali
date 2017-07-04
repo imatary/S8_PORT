@@ -63,7 +63,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$9;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->mDesktopModeAlbumClickListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$DesktopModeAlbumClickListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->access$1600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$DesktopModeAlbumClickListener;
 
     move-result-object v2
@@ -72,7 +71,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$9;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->mDesktopModeAlbumClickListener:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$DesktopModeAlbumClickListener;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->access$1600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$DesktopModeAlbumClickListener;
 
     move-result-object v2

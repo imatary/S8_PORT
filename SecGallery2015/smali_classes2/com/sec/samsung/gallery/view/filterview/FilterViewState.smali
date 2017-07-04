@@ -2655,7 +2655,6 @@
 
     iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mIsEasyMode:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState$ComposeViewConfig;->setInitialLevel(ZI)V
     invoke-static {v0, v1, v9}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$ComposeViewConfig;->access$3300(Lcom/sec/samsung/gallery/view/filterview/FilterViewState$ComposeViewConfig;ZI)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mFilterSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;

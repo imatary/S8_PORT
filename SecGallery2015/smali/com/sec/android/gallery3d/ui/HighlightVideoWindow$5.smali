@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$5;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mCoverObject:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1500(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
     move-result-object v1
@@ -50,7 +49,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$5;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mCoverObject:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1500(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
     move-result-object v1
@@ -64,7 +62,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$5;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mReadyCoverBitmap:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1600(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Z
 
     move-result v1
@@ -73,7 +70,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$5;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mHighlightPreview:Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$200(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;
 
     move-result-object v1
@@ -82,7 +78,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$5;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mHighlightPreview:Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$200(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;
 
     move-result-object v1
@@ -93,7 +88,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mReadyCoverBitmap:Z
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1602(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;Z)Z
 
     :cond_1

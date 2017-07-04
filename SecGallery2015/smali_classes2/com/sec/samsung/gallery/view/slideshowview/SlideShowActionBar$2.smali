@@ -37,7 +37,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->USE_NEW_SLIDESHOW:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowActionBar;->access$800()Z
 
     move-result v0

@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$8;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v0
@@ -70,7 +69,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$8;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mTotalCount:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$2300(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)I
 
     move-result v0
@@ -89,7 +87,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$8;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v0
@@ -112,7 +109,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController$8;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->mHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlHoverController;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v0

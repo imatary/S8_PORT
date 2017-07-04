@@ -68,7 +68,6 @@
 
     iget-object v5, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/CreateGroupTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/CreateGroupTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/CreateGroupTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/CreateGroupListener;
     invoke-static {v5}, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/CreateGroupTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/CreateGroupTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/CreateGroupListener;
 
     move-result-object v5
@@ -166,7 +165,6 @@
     :cond_2
     iget-object v5, p0, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/CreateGroupTransaction$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/CreateGroupTransaction;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/CreateGroupTransaction;->mListener:Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/CreateGroupListener;
     invoke-static {v5}, Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/CreateGroupTransaction;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/group/internal/transaction/CreateGroupTransaction;)Lcom/samsung/android/sdk/enhancedfeatures/group/apis/listener/CreateGroupListener;
 
     move-result-object v5

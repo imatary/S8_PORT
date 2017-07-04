@@ -75,7 +75,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger$UpdateLoggingTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;->mLastHitTime:J
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;->access$100(Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;)J
 
     move-result-wide v4
@@ -98,7 +97,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger$UpdateLoggingTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;->mLastViewedMediaId:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;->access$200(Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;)I
 
     move-result v4
@@ -114,7 +112,6 @@
     :try_start_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger$UpdateLoggingTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;->access$400(Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v3
@@ -123,7 +120,6 @@
 
     move-result-object v3
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;->FILES_URI:Landroid/net/Uri;
     invoke-static {}, Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;->access$300()Landroid/net/Uri;
 
     move-result-object v4
@@ -140,7 +136,6 @@
 
     const/4 v4, -0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;->mLastViewedMediaId:I
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;->access$202(Lcom/sec/samsung/gallery/view/detailview/util/DetailViewHistoryLogger;I)I
 
     return-object v6

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->mChangeGroupAnim:Lcom/sec/samsung/gallery/glview/composeView/GlChangeMoreAlbumGroupAnimation;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;)Lcom/sec/samsung/gallery/glview/composeView/GlChangeMoreAlbumGroupAnimation;
 
     move-result-object v0
@@ -52,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->mIsRunningChangeGroupAnim:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->access$600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;)Z
 
     move-result v0
@@ -61,14 +59,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->onDragEnd()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->mIsRunningChangeGroupAnim:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;->access$602(Lcom/sec/samsung/gallery/glview/composeView/GlComposeAlbumView;Z)Z
 
     :cond_0

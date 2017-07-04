@@ -452,7 +452,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->mUpdateTagTask:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$UpdateTagTask;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$UpdateTagTask;->notifyDirty()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$UpdateTagTask;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$UpdateTagTask;)V
 
     :cond_1
@@ -1627,7 +1626,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->mUpdateTagTask:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$UpdateTagTask;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$UpdateTagTask;->terminate()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$UpdateTagTask;->access$1000(Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager$UpdateTagTask;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPager;->mGroupPagerAdapter:Lcom/sec/samsung/gallery/view/gallerysearch/filter/FilterGroupViewPagerAdapter;

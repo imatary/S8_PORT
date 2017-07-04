@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/GetUrlExpireTimeCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/GetUrlExpireTimeCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/GetUrlExpireTimeCommand;->mNotifier:Lcom/sec/android/gallery3d/eventshare/utils/EventShareNotifier;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/GetUrlExpireTimeCommand;->access$100(Lcom/sec/android/gallery3d/eventshare/command/GetUrlExpireTimeCommand;)Lcom/sec/android/gallery3d/eventshare/utils/EventShareNotifier;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/eventshare/command/GetUrlExpireTimeCommand$2;->this$0:Lcom/sec/android/gallery3d/eventshare/command/GetUrlExpireTimeCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/GetUrlExpireTimeCommand;->mSharedEvent:Lcom/sec/android/gallery3d/eventshare/SharedEvent;
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/command/GetUrlExpireTimeCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/GetUrlExpireTimeCommand;)Lcom/sec/android/gallery3d/eventshare/SharedEvent;
 
     move-result-object v2

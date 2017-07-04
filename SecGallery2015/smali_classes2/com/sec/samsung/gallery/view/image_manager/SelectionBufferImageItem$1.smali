@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/image_manager/SelectionBufferImageItem$1;->this$0:Lcom/sec/samsung/gallery/view/image_manager/SelectionBufferImageItem;
 
-    # getter for: Lcom/sec/samsung/gallery/view/image_manager/SelectionBufferImageItem;->mView:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/image_manager/SelectionBufferImageItem;->access$000(Lcom/sec/samsung/gallery/view/image_manager/SelectionBufferImageItem;)Landroid/widget/ImageView;
 
     move-result-object v0

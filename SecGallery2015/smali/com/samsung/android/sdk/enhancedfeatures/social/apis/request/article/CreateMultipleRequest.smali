@@ -36,28 +36,24 @@
 
     invoke-direct {p0, p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/BaseRequest;-><init>(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/BaseRequest$Builder;)V
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;->app_id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest;->app_id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;->sid:I
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;->access$100(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest;->sid:I
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;->group_id:Ljava/lang/String;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest;->group_id:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;->articles:Ljava/util/List;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/social/apis/request/article/CreateMultipleRequest$Builder;)Ljava/util/List;
 
     move-result-object v0

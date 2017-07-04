@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$1;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)Landroid/content/Context;
 
     move-result-object v0

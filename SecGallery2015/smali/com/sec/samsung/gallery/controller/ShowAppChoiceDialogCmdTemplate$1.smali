@@ -38,7 +38,6 @@
 
     iget v1, p1, Landroid/os/Message;->what:I
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->handleMessageOnUiThread(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;->access$000(Lcom/sec/samsung/gallery/controller/ShowAppChoiceDialogCmdTemplate;I)V
 
     return-void

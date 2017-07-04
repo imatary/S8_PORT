@@ -4542,7 +4542,7 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/utils/EditModeHelper;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a069f
+    const v3, 0x7f0a06a5
 
     new-array v4, v5, [Ljava/lang/Object;
 
@@ -4807,7 +4807,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/utils/EditModeHelper;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0a0689
+    const v5, 0x7f0a068f
 
     new-array v6, v6, [Ljava/lang/Object;
 

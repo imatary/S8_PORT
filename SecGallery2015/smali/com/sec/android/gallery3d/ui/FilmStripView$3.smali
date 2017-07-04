@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLockTouchEvent:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$400(Lcom/sec/android/gallery3d/ui/FilmStripView;)Z
 
     move-result v0
@@ -49,7 +48,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/FilmStripView;->onDown()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$500(Lcom/sec/android/gallery3d/ui/FilmStripView;)V
 
     goto :goto_0
@@ -60,7 +58,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mSupportExitQuickViewWithFlick:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$800(Lcom/sec/android/gallery3d/ui/FilmStripView;)Z
 
     move-result v0
@@ -69,7 +66,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mListener:Lcom/sec/android/gallery3d/ui/FilmStripView$Listener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$900(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/FilmStripView$Listener;
 
     move-result-object v0
@@ -78,7 +74,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mListener:Lcom/sec/android/gallery3d/ui/FilmStripView$Listener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$900(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/FilmStripView$Listener;
 
     move-result-object v0
@@ -94,7 +89,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLockTouchEvent:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$400(Lcom/sec/android/gallery3d/ui/FilmStripView;)Z
 
     move-result v0
@@ -119,7 +113,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mEdgeView:Lcom/sec/android/gallery3d/ui/EdgeView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$700(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/EdgeView;
 
     move-result-object v0
@@ -130,14 +123,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/FilmStripView;->getFilmStripLength()I
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1000(Lcom/sec/android/gallery3d/ui/FilmStripView;)I
 
     move-result v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/FilmStripView;->getScreenWidth()I
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1100(Lcom/sec/android/gallery3d/ui/FilmStripView;)I
 
     move-result v1
@@ -148,7 +139,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mEdgeView:Lcom/sec/android/gallery3d/ui/EdgeView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$700(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/EdgeView;
 
     move-result-object v0
@@ -157,7 +147,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mEdgeView:Lcom/sec/android/gallery3d/ui/EdgeView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$700(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/EdgeView;
 
     move-result-object v0
@@ -175,7 +164,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mEdgeView:Lcom/sec/android/gallery3d/ui/EdgeView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$700(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/EdgeView;
 
     move-result-object v0
@@ -184,7 +172,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mEdgeView:Lcom/sec/android/gallery3d/ui/EdgeView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$700(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/EdgeView;
 
     move-result-object v0
@@ -201,7 +188,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mLockTouchEvent:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$400(Lcom/sec/android/gallery3d/ui/FilmStripView;)Z
 
     move-result v0
@@ -214,7 +200,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/FilmStripView;->onScrollPositionChanged(II)V
     invoke-static {v0, p1, p2}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$1200(Lcom/sec/android/gallery3d/ui/FilmStripView;II)V
 
     goto :goto_0
@@ -225,7 +210,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mSupportExitQuickViewWithFlick:Z
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$800(Lcom/sec/android/gallery3d/ui/FilmStripView;)Z
 
     move-result v0
@@ -234,7 +218,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mListener:Lcom/sec/android/gallery3d/ui/FilmStripView$Listener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$900(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/FilmStripView$Listener;
 
     move-result-object v0
@@ -243,7 +226,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mListener:Lcom/sec/android/gallery3d/ui/FilmStripView$Listener;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$900(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/FilmStripView$Listener;
 
     move-result-object v0
@@ -269,12 +251,10 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/FilmStripView;->onUp()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$600(Lcom/sec/android/gallery3d/ui/FilmStripView;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mEdgeView:Lcom/sec/android/gallery3d/ui/EdgeView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$700(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/EdgeView;
 
     move-result-object v0
@@ -283,7 +263,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/FilmStripView$3;->this$0:Lcom/sec/android/gallery3d/ui/FilmStripView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/FilmStripView;->mEdgeView:Lcom/sec/android/gallery3d/ui/EdgeView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/FilmStripView;->access$700(Lcom/sec/android/gallery3d/ui/FilmStripView;)Lcom/sec/android/gallery3d/ui/EdgeView;
 
     move-result-object v0

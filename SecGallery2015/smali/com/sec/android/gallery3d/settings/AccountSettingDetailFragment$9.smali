@@ -85,7 +85,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$9;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->isLoadingForImageAnalysis()Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$800(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Z
 
     move-result v1
@@ -106,7 +105,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$9;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # getter for: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$900(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)Landroid/content/Context;
 
     move-result-object v4
@@ -132,12 +130,10 @@
     move v1, v2
 
     :goto_1
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->setStateForImageAnalysis(I)V
     invoke-static {v4, v1}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1000(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;I)V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$9;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->setLoadingStateForImageAnalysis(Z)V
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$1100(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;Z)V
 
     :cond_1

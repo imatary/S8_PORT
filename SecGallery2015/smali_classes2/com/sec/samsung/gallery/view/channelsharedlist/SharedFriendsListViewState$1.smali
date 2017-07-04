@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mNeedIdleProcess:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$000(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Z
 
     move-result v0
@@ -54,17 +53,14 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mNeedIdleProcess:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$002(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->initListenersForContactListView()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$100(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$1;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->setStateChangeListener()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$200(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
 
     goto :goto_0

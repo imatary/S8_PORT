@@ -492,7 +492,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b07b8
+    const v1, 0x7f0b07b9
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -502,7 +502,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b07b7
+    const v1, 0x7f0b07b8
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -512,7 +512,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;->mResources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0b07b6
+    const v1, 0x7f0b07b7
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

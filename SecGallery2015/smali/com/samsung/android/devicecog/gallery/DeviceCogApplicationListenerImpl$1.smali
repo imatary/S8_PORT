@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl$1;->this$0:Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;
 
-    # getter for: Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;->access$000(Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;)Landroid/content/Context;
 
     move-result-object v0
@@ -62,7 +61,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl$1;->this$0:Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;
 
-    # invokes: Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;->isEnableSwitchState(Ljava/lang/String;)Z
     invoke-static {v2, v1}, Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;->access$100(Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;Ljava/lang/String;)Z
 
     move-result v2
@@ -71,7 +69,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl$1;->this$0:Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;
 
-    # getter for: Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;->mDCActivityInfoListener:Lcom/samsung/android/devicecog/gallery/DCActivityInfoListener;
     invoke-static {v2}, Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;->access$200(Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;)Lcom/samsung/android/devicecog/gallery/DCActivityInfoListener;
 
     move-result-object v2
@@ -84,7 +81,6 @@
     :cond_0
     iget-object v2, p0, Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl$1;->this$0:Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;
 
-    # getter for: Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;->mHandler:Lcom/samsung/android/devicecog/DeviceCogHandler;
     invoke-static {v2}, Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;->access$300(Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;)Lcom/samsung/android/devicecog/DeviceCogHandler;
 
     move-result-object v2
@@ -93,7 +89,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl$1;->this$0:Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;
 
-    # getter for: Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;->mHandler:Lcom/samsung/android/devicecog/DeviceCogHandler;
     invoke-static {v2}, Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;->access$300(Lcom/samsung/android/devicecog/gallery/DeviceCogApplicationListenerImpl;)Lcom/samsung/android/devicecog/DeviceCogHandler;
 
     move-result-object v2

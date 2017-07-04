@@ -49,7 +49,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->access$100(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -66,7 +65,6 @@
     :cond_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->access$200(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -81,7 +79,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->getMaxCount()I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->access$300(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;)I
 
     move-result v1
@@ -90,7 +87,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->access$400(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
@@ -157,12 +153,10 @@
 
     iget v5, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection$2;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v4, v5, v2}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->access$600(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;ILjava/lang/String;)V
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->setSelectAllButtonTTS(Ljava/lang/String;)V
     invoke-static {v4, v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->access$700(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;Ljava/lang/String;)V
 
     goto :goto_0
@@ -178,7 +172,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;->access$500(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForSelection;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4

@@ -362,7 +362,7 @@
 
     if-eqz v4, :cond_3
 
-    const v6, 0x7f0a0853
+    const v6, 0x7f0a0861
 
     :goto_3
     new-array v7, v7, [Ljava/lang/Object;
@@ -389,7 +389,7 @@
     goto :goto_2
 
     :cond_3
-    const v6, 0x7f0a0854
+    const v6, 0x7f0a0862
 
     goto :goto_3
 .end method
@@ -1106,7 +1106,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0a08a5
+    const v2, 0x7f0a08b3
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -492,7 +492,7 @@
 
     move-result v3
 
-    const v5, 0x7f0a0868
+    const v5, 0x7f0a0876
 
     invoke-direct {p0, v5, v3}, Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;->getLabelTextView(II)Lcom/sec/android/gallery3d/glcore/GlTextView;
 
@@ -1939,7 +1939,7 @@
 
     move-object/from16 v46, v0
 
-    const v47, 0x7f020355
+    const v47, 0x7f020357
 
     invoke-virtual/range {v46 .. v47}, Lcom/sec/samsung/gallery/view/adapter/DrawableCache;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2601,7 +2601,7 @@
     :goto_1
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;->mDrawableCache:Lcom/sec/samsung/gallery/view/adapter/DrawableCache;
 
-    const v10, 0x7f0202ec
+    const v10, 0x7f0202ee
 
     invoke-virtual {v9, v10}, Lcom/sec/samsung/gallery/view/adapter/DrawableCache;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2877,7 +2877,7 @@
     :goto_1
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;->mDrawableCache:Lcom/sec/samsung/gallery/view/adapter/DrawableCache;
 
-    const v6, 0x7f0202ec
+    const v6, 0x7f0202ee
 
     invoke-virtual {v5, v6}, Lcom/sec/samsung/gallery/view/adapter/DrawableCache;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3583,7 +3583,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;->mResources:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b073e
+    const v2, 0x7f0b073f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -3835,7 +3835,7 @@
 
     iget-object v14, v0, Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;->mResources:Landroid/content/res/Resources;
 
-    const v15, 0x7f0b08e1
+    const v15, 0x7f0b08e2
 
     invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -4062,19 +4062,19 @@
 .end method
 
 .method drawBorder(Lcom/sec/android/gallery3d/glcore/GlView;ZZ)Lcom/sec/android/gallery3d/glcore/GlView;
-    .locals 9
+    .locals 10
 
-    const/high16 v8, 0x3f000000    # 0.5f
+    const/high16 v9, 0x3f000000    # 0.5f
 
-    const/16 v7, 0x69
+    const/16 v8, 0x69
 
-    const/16 v6, 0xd
+    const/16 v7, 0xd
 
-    const/4 v5, 0x2
+    const/4 v6, 0x2
 
     const/4 v0, 0x0
 
-    if-eqz p2, :cond_5
+    if-eqz p2, :cond_6
 
     if-nez p1, :cond_3
 
@@ -4161,17 +4161,17 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/glcore/GlImageView;->setDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    invoke-virtual {v0, v8}, Lcom/sec/android/gallery3d/glcore/GlImageView;->setScaleRatio(F)V
+    invoke-virtual {v0, v9}, Lcom/sec/android/gallery3d/glcore/GlImageView;->setScaleRatio(F)V
 
-    invoke-virtual {v0, v5, v5}, Lcom/sec/android/gallery3d/glcore/GlImageView;->setAlign(II)V
+    invoke-virtual {v0, v6, v6}, Lcom/sec/android/gallery3d/glcore/GlImageView;->setAlign(II)V
 
-    invoke-virtual {p1, v0, v6}, Lcom/sec/android/gallery3d/glcore/GlView;->addChild(Lcom/sec/android/gallery3d/glcore/GlView;I)V
+    invoke-virtual {p1, v0, v7}, Lcom/sec/android/gallery3d/glcore/GlView;->addChild(Lcom/sec/android/gallery3d/glcore/GlView;I)V
 
     :cond_1
     :goto_2
-    if-eqz p3, :cond_7
+    if-eqz p3, :cond_8
 
-    if-nez p1, :cond_6
+    if-nez p1, :cond_7
 
     new-instance p1, Lcom/sec/android/gallery3d/glcore/GlImageView;
 
@@ -4198,18 +4198,18 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/glcore/GlImageView;->setDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    invoke-virtual {v0, v8}, Lcom/sec/android/gallery3d/glcore/GlImageView;->setScaleRatio(F)V
+    invoke-virtual {v0, v9}, Lcom/sec/android/gallery3d/glcore/GlImageView;->setScaleRatio(F)V
 
-    invoke-virtual {v0, v5, v5}, Lcom/sec/android/gallery3d/glcore/GlImageView;->setAlign(II)V
+    invoke-virtual {v0, v6, v6}, Lcom/sec/android/gallery3d/glcore/GlImageView;->setAlign(II)V
 
-    invoke-virtual {p1, v0, v7}, Lcom/sec/android/gallery3d/glcore/GlView;->addChild(Lcom/sec/android/gallery3d/glcore/GlView;I)V
+    invoke-virtual {p1, v0, v8}, Lcom/sec/android/gallery3d/glcore/GlView;->addChild(Lcom/sec/android/gallery3d/glcore/GlView;I)V
 
     :cond_2
     :goto_4
     return-object p1
 
     :cond_3
-    invoke-virtual {p1, v6}, Lcom/sec/android/gallery3d/glcore/GlView;->findViewByID(I)Lcom/sec/android/gallery3d/glcore/GlView;
+    invoke-virtual {p1, v7}, Lcom/sec/android/gallery3d/glcore/GlView;->findViewByID(I)Lcom/sec/android/gallery3d/glcore/GlView;
 
     move-result-object v0
 
@@ -4238,6 +4238,53 @@
 
     if-eqz v2, :cond_0
 
+    iget-object v2, p0, Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;->mContext:Landroid/content/Context;
+
+    check-cast v2, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    invoke-virtual {v2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getDesktopModeInterface()Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    move-object v2, v1
+
+    check-cast v2, Landroid/graphics/drawable/GradientDrawable;
+
+    iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f0b047e
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v3
+
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    const v5, 0x7f100112
+
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v4
+
+    invoke-virtual {v2, v3, v4}, Landroid/graphics/drawable/GradientDrawable;->setStroke(II)V
+
+    goto/16 :goto_1
+
+    :cond_5
     move-object v2, v1
 
     check-cast v2, Landroid/graphics/drawable/GradientDrawable;
@@ -4266,12 +4313,12 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/graphics/drawable/GradientDrawable;->setStroke(II)V
 
-    goto :goto_1
+    goto/16 :goto_1
 
-    :cond_5
+    :cond_6
     if-eqz p1, :cond_1
 
-    invoke-virtual {p1, v6}, Lcom/sec/android/gallery3d/glcore/GlView;->findViewByID(I)Lcom/sec/android/gallery3d/glcore/GlView;
+    invoke-virtual {p1, v7}, Lcom/sec/android/gallery3d/glcore/GlView;->findViewByID(I)Lcom/sec/android/gallery3d/glcore/GlView;
 
     move-result-object v0
 
@@ -4281,21 +4328,21 @@
 
     invoke-virtual {p1, v0}, Lcom/sec/android/gallery3d/glcore/GlView;->removeChild(Lcom/sec/android/gallery3d/glcore/GlView;)Z
 
-    goto :goto_2
+    goto/16 :goto_2
 
-    :cond_6
-    invoke-virtual {p1, v7}, Lcom/sec/android/gallery3d/glcore/GlView;->findViewByID(I)Lcom/sec/android/gallery3d/glcore/GlView;
+    :cond_7
+    invoke-virtual {p1, v8}, Lcom/sec/android/gallery3d/glcore/GlView;->findViewByID(I)Lcom/sec/android/gallery3d/glcore/GlView;
 
     move-result-object v0
 
     check-cast v0, Lcom/sec/android/gallery3d/glcore/GlImageView;
 
-    goto :goto_3
+    goto/16 :goto_3
 
-    :cond_7
+    :cond_8
     if-eqz p1, :cond_2
 
-    invoke-virtual {p1, v7}, Lcom/sec/android/gallery3d/glcore/GlView;->findViewByID(I)Lcom/sec/android/gallery3d/glcore/GlView;
+    invoke-virtual {p1, v8}, Lcom/sec/android/gallery3d/glcore/GlView;->findViewByID(I)Lcom/sec/android/gallery3d/glcore/GlView;
 
     move-result-object v0
 
@@ -4305,7 +4352,7 @@
 
     invoke-virtual {p1, v0}, Lcom/sec/android/gallery3d/glcore/GlView;->removeChild(Lcom/sec/android/gallery3d/glcore/GlView;)Z
 
-    goto :goto_4
+    goto/16 :goto_4
 .end method
 
 .method drawCheckBox(Lcom/sec/android/gallery3d/glcore/GlView;Lcom/sec/samsung/gallery/glview/composeView/ComposeViewDataLoader$AlbumInfo;)Lcom/sec/android/gallery3d/glcore/GlImageView;

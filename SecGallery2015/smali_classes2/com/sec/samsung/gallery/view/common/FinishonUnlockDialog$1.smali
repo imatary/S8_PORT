@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/FinishonUnlockDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/FinishonUnlockDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/FinishonUnlockDialog;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/FinishonUnlockDialog;->access$000(Lcom/sec/samsung/gallery/view/common/FinishonUnlockDialog;)Landroid/content/Context;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/FinishonUnlockDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/FinishonUnlockDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/FinishonUnlockDialog;->dismissDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/FinishonUnlockDialog;->access$100(Lcom/sec/samsung/gallery/view/common/FinishonUnlockDialog;)V
 
     return-void

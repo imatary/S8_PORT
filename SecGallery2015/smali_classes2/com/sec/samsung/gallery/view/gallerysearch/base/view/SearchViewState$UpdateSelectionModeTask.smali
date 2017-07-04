@@ -59,7 +59,6 @@
 
     iget-object v14, v0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v14}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->access$1000(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v14
@@ -299,7 +298,6 @@
 
     iget-object v15, v0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v15}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->access$1100(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v15
@@ -403,7 +401,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->selectAllPostProcess()V
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0

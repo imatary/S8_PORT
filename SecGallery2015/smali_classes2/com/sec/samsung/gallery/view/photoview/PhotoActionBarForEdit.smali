@@ -1324,10 +1324,10 @@
         0x7f120275 -> :sswitch_4
         0x7f120277 -> :sswitch_9
         0x7f120278 -> :sswitch_a
-        0x7f120280 -> :sswitch_7
-        0x7f120281 -> :sswitch_8
-        0x7f120282 -> :sswitch_b
-        0x7f120283 -> :sswitch_c
+        0x7f12027f -> :sswitch_7
+        0x7f120280 -> :sswitch_8
+        0x7f120281 -> :sswitch_b
+        0x7f120282 -> :sswitch_c
         0x7f120290 -> :sswitch_0
         0x7f120294 -> :sswitch_e
         0x7f120295 -> :sswitch_e
@@ -1459,11 +1459,11 @@
 
     if-eqz v2, :cond_4
 
-    const v2, 0x7f12027e
+    const v2, 0x7f12027d
 
     invoke-static {p1, v2, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v2, 0x7f12027d
+    const v2, 0x7f12027c
 
     invoke-static {p1, v2, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 

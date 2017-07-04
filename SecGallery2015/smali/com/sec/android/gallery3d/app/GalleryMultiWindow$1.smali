@@ -39,7 +39,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$000(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -54,7 +53,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$000(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -71,13 +69,11 @@
 
     move-result v3
 
-    # setter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->isSelectionMode:Z
     invoke-static {v2, v3}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$102(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;Z)Z
 
     :cond_0
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->isPickMode()Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$200(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Z
 
     move-result v2
@@ -86,7 +82,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->isMultiWindow()Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$300(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Z
 
     move-result v2
@@ -95,7 +90,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mDropDownReloadNeeded:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$400(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Z
 
     move-result v2
@@ -114,7 +108,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->isSelectionMode:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$100(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Z
 
     move-result v2
@@ -125,12 +118,10 @@
 
     const/4 v3, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mDropDownReloadNeeded:Z
     invoke-static {v2, v3}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$402(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;Z)Z
 
     :cond_1
     :goto_0
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->FEATURE_USE_MULTIWINDOW:Z
     invoke-static {}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$500()Z
 
     move-result v2
@@ -139,7 +130,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$000(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -156,7 +146,6 @@
     :cond_3
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->isMultiWindow()Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$300(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Z
 
     move-result v2
@@ -165,7 +154,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryMultiWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mDropDownReloadNeeded:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$400(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Z
 
     move-result v2
@@ -176,7 +164,6 @@
 
     const/4 v3, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mDropDownReloadNeeded:Z
     invoke-static {v2, v3}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$402(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;Z)Z
 
     goto :goto_0

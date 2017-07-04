@@ -96,7 +96,7 @@
     :cond_2
     iget-object v4, p0, Lcom/samsung/android/devicecog/gallery/viewstatehandler/VisualSearchFaceTagActivityDCHandler;->mActivity:Landroid/app/Activity;
 
-    const v5, 0x7f0a0852
+    const v5, 0x7f0a0860
 
     const/4 v6, 0x0
 

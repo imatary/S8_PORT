@@ -262,7 +262,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/data/UnionLocalImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/UnionLocalImage;->getUnionLocalImageAttributes()Lcom/sec/android/gallery3d/data/LocalImageAttributes;
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/UnionLocalImage;->access$000(Lcom/sec/android/gallery3d/data/UnionLocalImage;)Lcom/sec/android/gallery3d/data/LocalImageAttributes;
 
     move-result-object v0
@@ -295,7 +294,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/data/UnionLocalImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/UnionLocalImage;->updateSoundShotAttribute()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/data/UnionLocalImage;->access$100(Lcom/sec/android/gallery3d/data/UnionLocalImage;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/UnionLocalImage$UnionLocalImageRequest;->mMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
@@ -555,7 +553,6 @@
 
     check-cast v2, Lcom/sec/android/gallery3d/data/UnionLocalImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/UnionLocalImage;->getFaceCount()I
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/UnionLocalImage;->access$200(Lcom/sec/android/gallery3d/data/UnionLocalImage;)I
 
     move-result v0

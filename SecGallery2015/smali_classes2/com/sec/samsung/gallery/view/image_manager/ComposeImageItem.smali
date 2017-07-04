@@ -415,6 +415,14 @@
     return v0
 .end method
 
+.method public isUrgent()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/image_manager/ComposeImageItem;->mUrgent:Z
+
+    return v0
+.end method
+
 .method protected onBitmapAvailable()V
     .locals 1
 

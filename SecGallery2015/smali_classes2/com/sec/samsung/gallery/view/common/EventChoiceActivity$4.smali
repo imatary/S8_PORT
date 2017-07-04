@@ -86,7 +86,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$4;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mMainHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2400(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/os/Handler;
 
     move-result-object v2
@@ -109,7 +108,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity$4;->this$0:Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->mMainHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;->access$2400(Lcom/sec/samsung/gallery/view/common/EventChoiceActivity;)Landroid/os/Handler;
 
     move-result-object v2

@@ -50,7 +50,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/RenameDialog$1;->this$0:Lcom/sec/samsung/gallery/view/common/RenameDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/RenameDialog;->hideSoftInput(Landroid/os/IBinder;)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/common/RenameDialog;->access$000(Lcom/sec/samsung/gallery/view/common/RenameDialog;Landroid/os/IBinder;)V
 
     goto :goto_0

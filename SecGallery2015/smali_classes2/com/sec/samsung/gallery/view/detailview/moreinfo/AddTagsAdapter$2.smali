@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->mFilteredTagList:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -58,7 +57,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->mFilteredTagList:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -71,7 +69,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->mFilteredTagList:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -86,7 +83,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->mEdit:Landroid/widget/EditText;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)Landroid/widget/EditText;
 
     move-result-object v1
@@ -95,7 +91,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->mEdit:Landroid/widget/EditText;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)Landroid/widget/EditText;
 
     move-result-object v1
@@ -104,14 +99,12 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->mEdit:Landroid/widget/EditText;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)Landroid/widget/EditText;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->mEdit:Landroid/widget/EditText;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)Landroid/widget/EditText;
 
     move-result-object v2

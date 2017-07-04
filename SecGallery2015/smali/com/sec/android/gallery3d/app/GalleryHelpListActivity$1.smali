@@ -48,7 +48,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/GalleryHelpListActivity$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryHelpListActivity;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryHelpListActivity;->handleHelpOperation(I)V
     invoke-static {v0, p3}, Lcom/sec/android/gallery3d/app/GalleryHelpListActivity;->access$000(Lcom/sec/android/gallery3d/app/GalleryHelpListActivity;I)V
 
     return-void

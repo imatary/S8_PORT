@@ -41,7 +41,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$6;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$1200(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -97,7 +96,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$6;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$1300(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -115,7 +113,6 @@
     :goto_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState$6;->this$0:Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;->access$1400(Lcom/sec/samsung/gallery/view/slideshowview/SlideShowViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3

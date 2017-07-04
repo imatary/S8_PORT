@@ -135,7 +135,6 @@
     :cond_3
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog$RequestPermissionListAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->mPermissionInfos:Ljava/util/List;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->access$300(Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;)Ljava/util/List;
 
     move-result-object v5
@@ -164,7 +163,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog$RequestPermissionListAdapter;->this$0:Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->loadItemInfoIcon(Landroid/content/pm/PackageItemInfo;)Landroid/graphics/drawable/Drawable;
     invoke-static {v5, v1}, Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;->access$400(Lcom/sec/samsung/gallery/view/common/PermissionsRequestRationaleDialog;Landroid/content/pm/PackageItemInfo;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v5

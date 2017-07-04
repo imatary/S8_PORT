@@ -3,12 +3,12 @@
 .source "DetailViewState.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->hideBars(Z)V
+    value = Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->showSaveMoreInfoDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,28 +34,14 @@
 
 
 # virtual methods
-.method public run()V
+.method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$27;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mGlRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
-
-    move-result-object v0
-
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/gallery3d/glcore/GlRootView;->setFocusable(Z)V
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$27;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
-
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mGlRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
-    invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/sec/android/gallery3d/glcore/GlRootView;->requestFocus()Z
+    invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$28000(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)V
 
     return-void
 .end method

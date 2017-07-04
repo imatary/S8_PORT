@@ -65,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mInputListener:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$InputListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$300(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$InputListener;
 
     move-result-object v0
@@ -81,7 +80,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mSendBtn:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$400(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -90,7 +88,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mSendBtn:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$400(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -106,7 +103,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mSendBtn:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$400(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -115,7 +111,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mSendBtn:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$400(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -130,7 +125,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mFakeMaxLength:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$500(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)I
 
     move-result v1
@@ -139,14 +133,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mCommentEditText:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$200(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Landroid/widget/EditText;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mDesiredMaxLength:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$600(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)I
 
     move-result v1
@@ -159,14 +151,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mCommentEditText:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$200(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Landroid/widget/EditText;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mDesiredMaxLength:I
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$600(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)I
 
     move-result v1
@@ -175,14 +165,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mActivity:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$100(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mActivity:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$100(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;
 
     move-result-object v1
@@ -197,7 +185,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->mDesiredMaxLength:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;->access$600(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;)I
 
     move-result v4

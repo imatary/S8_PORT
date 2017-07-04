@@ -546,7 +546,6 @@
 
     int-to-float v1, v1
 
-    # setter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->x:F
     invoke-static {v0, v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->access$402(Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;F)F
 
     iget-object v0, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mTouchPoint:Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;
@@ -559,7 +558,6 @@
 
     int-to-float v1, v1
 
-    # setter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->y:F
     invoke-static {v0, v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->access$502(Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;F)F
 
     iput v2, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mFlingDeltaX:F
@@ -575,7 +573,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mTouchPoint:Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->x:F
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->access$400(Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;)F
 
     move-result v1
@@ -590,7 +587,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mTouchPoint:Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;
 
-    # getter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->y:F
     invoke-static {v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->access$500(Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;)F
 
     move-result v1
@@ -613,7 +609,6 @@
 
     move-result v1
 
-    # setter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->x:F
     invoke-static {v0, v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->access$402(Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;F)F
 
     iget-object v0, p0, Lcom/samsung/android/gallery360viewer/view/SphericalGlView;->mTouchPoint:Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;
@@ -622,7 +617,6 @@
 
     move-result v1
 
-    # setter for: Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->y:F
     invoke-static {v0, v1}, Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;->access$502(Lcom/samsung/android/gallery360viewer/view/SphericalGlView$TouchPoint;F)F
 
     goto :goto_0

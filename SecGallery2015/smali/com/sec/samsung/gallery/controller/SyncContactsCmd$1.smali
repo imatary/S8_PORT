@@ -43,7 +43,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/SyncContactsCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/SyncContactsCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->mApp:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/SyncContactsCmd;->access$000(Lcom/sec/samsung/gallery/controller/SyncContactsCmd;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v2

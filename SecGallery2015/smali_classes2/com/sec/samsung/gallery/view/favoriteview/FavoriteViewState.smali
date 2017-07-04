@@ -4345,7 +4345,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mMenu:Landroid/view/Menu;
 
-    const v1, 0x7f120286
+    const v1, 0x7f120285
 
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemIcon(Landroid/view/Menu;II)V
 
@@ -5197,7 +5197,6 @@
 
     iget-boolean v1, p0, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->mIsEasyMode:Z
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$ComposeViewConfig;->setInitalLevel(ZI)I
     invoke-static {v0, v1, v7}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$ComposeViewConfig;->access$5700(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState$ComposeViewConfig;ZI)I
 
     move-result v7

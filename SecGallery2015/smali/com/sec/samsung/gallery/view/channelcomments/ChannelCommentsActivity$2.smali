@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity$2;->this$0:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;->mHelper:Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;->access$000(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;)Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsInputHelper;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;->mIsCommentEditView:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;->access$102(Lcom/sec/samsung/gallery/view/channelcomments/ChannelCommentsActivity;Z)Z
 
     return-void

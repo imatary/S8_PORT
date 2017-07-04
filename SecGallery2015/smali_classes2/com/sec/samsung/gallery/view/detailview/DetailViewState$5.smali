@@ -83,7 +83,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$5;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->showChangePlayerFromOption()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$1500(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)V
 
     goto :goto_0

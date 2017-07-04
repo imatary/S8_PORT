@@ -37,7 +37,7 @@
 .method private setTextOnlyButton(Landroid/view/Menu;)V
     .locals 2
 
-    const v1, 0x7f120286
+    const v1, 0x7f120285
 
     invoke-interface {p1, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -147,7 +147,7 @@
     :sswitch_data_0
     .sparse-switch
         0x7f12007c -> :sswitch_1
-        0x7f120286 -> :sswitch_0
+        0x7f120285 -> :sswitch_0
         0x7f12028d -> :sswitch_2
     .end sparse-switch
 .end method
@@ -157,7 +157,7 @@
 
     const/4 v3, 0x0
 
-    const v2, 0x7f120286
+    const v2, 0x7f120285
 
     invoke-static {p1, v2, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 

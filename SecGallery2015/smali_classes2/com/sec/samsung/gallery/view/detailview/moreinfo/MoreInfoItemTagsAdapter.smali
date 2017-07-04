@@ -511,7 +511,6 @@
 
     check-cast v0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;->noTag:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;)Z
 
     move-result v0
@@ -895,7 +894,6 @@
 
     check-cast v1, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;->noTag:Z
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;->access$400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;)Z
 
     move-result v1
@@ -948,7 +946,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b06de
+    const v3, 0x7f0b06df
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1240,7 +1238,6 @@
 
     check-cast v3, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;->text:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;)Ljava/lang/String;
 
     move-result-object v3
@@ -1278,7 +1275,6 @@
 
     check-cast v3, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;->text:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;->access$100(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfoItemTagsAdapter$TagsData;)Ljava/lang/String;
 
     move-result-object v3

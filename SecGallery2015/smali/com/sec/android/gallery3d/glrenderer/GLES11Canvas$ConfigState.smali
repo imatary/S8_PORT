@@ -83,14 +83,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/glrenderer/GLES11Canvas$ConfigState;->mRect:Landroid/graphics/Rect;
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/GLES11Canvas;->mClipRect:Landroid/graphics/Rect;
     invoke-static {p1}, Lcom/sec/android/gallery3d/glrenderer/GLES11Canvas;->access$100(Lcom/sec/android/gallery3d/glrenderer/GLES11Canvas;)Landroid/graphics/Rect;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/GLES11Canvas;->mGL:Ljavax/microedition/khronos/opengles/GL11;
     invoke-static {p1}, Lcom/sec/android/gallery3d/glrenderer/GLES11Canvas;->access$200(Lcom/sec/android/gallery3d/glrenderer/GLES11Canvas;)Ljavax/microedition/khronos/opengles/GL11;
 
     move-result-object v1
@@ -122,7 +120,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/glrenderer/GLES11Canvas$ConfigState;->mMatrix:[F
 
-    # getter for: Lcom/sec/android/gallery3d/glrenderer/GLES11Canvas;->mMatrixValues:[F
     invoke-static {p1}, Lcom/sec/android/gallery3d/glrenderer/GLES11Canvas;->access$300(Lcom/sec/android/gallery3d/glrenderer/GLES11Canvas;)[F
 
     move-result-object v2

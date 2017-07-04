@@ -833,24 +833,78 @@
 
     goto/16 :goto_0
 
+    :sswitch_12
+    iget-object v3, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
+
+    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    invoke-virtual {v2, v6}, Lcom/sec/android/gallery3d/ui/SelectionManager;->get(I)Lcom/sec/android/gallery3d/data/MediaObject;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/sec/android/gallery3d/data/MediaItem;
+
+    invoke-virtual {v3, v2}, Lcom/sec/samsung/gallery/view/utils/EditModeHelper;->startActionPrint(Lcom/sec/android/gallery3d/data/MediaItem;)V
+
+    goto/16 :goto_0
+
+    :sswitch_13
+    iget-object v3, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
+
+    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    invoke-virtual {v2, v6}, Lcom/sec/android/gallery3d/ui/SelectionManager;->get(I)Lcom/sec/android/gallery3d/data/MediaObject;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/sec/android/gallery3d/data/MediaItem;
+
+    const/16 v4, -0x5a
+
+    invoke-virtual {v3, v2, v4}, Lcom/sec/samsung/gallery/view/utils/EditModeHelper;->handleImageRotation(Lcom/sec/android/gallery3d/data/MediaItem;I)V
+
+    goto/16 :goto_0
+
+    :sswitch_14
+    iget-object v3, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
+
+    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    invoke-virtual {v2, v6}, Lcom/sec/android/gallery3d/ui/SelectionManager;->get(I)Lcom/sec/android/gallery3d/data/MediaObject;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/sec/android/gallery3d/data/MediaItem;
+
+    const/16 v4, 0x5a
+
+    invoke-virtual {v3, v2, v4}, Lcom/sec/samsung/gallery/view/utils/EditModeHelper;->handleImageRotation(Lcom/sec/android/gallery3d/data/MediaItem;I)V
+
+    goto/16 :goto_0
+
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x7f120275 -> :sswitch_1
         0x7f120276 -> :sswitch_4
         0x7f120277 -> :sswitch_7
         0x7f120278 -> :sswitch_8
-        0x7f12027d -> :sswitch_2
-        0x7f12027e -> :sswitch_3
-        0x7f120280 -> :sswitch_5
-        0x7f120281 -> :sswitch_6
-        0x7f120282 -> :sswitch_9
-        0x7f120283 -> :sswitch_a
+        0x7f12027c -> :sswitch_2
+        0x7f12027d -> :sswitch_3
+        0x7f12027e -> :sswitch_12
+        0x7f12027f -> :sswitch_5
+        0x7f120280 -> :sswitch_6
+        0x7f120281 -> :sswitch_9
+        0x7f120282 -> :sswitch_a
         0x7f120290 -> :sswitch_0
         0x7f120294 -> :sswitch_b
         0x7f120295 -> :sswitch_b
         0x7f120296 -> :sswitch_c
         0x7f120297 -> :sswitch_b
         0x7f120298 -> :sswitch_c
+        0x7f1202a5 -> :sswitch_13
+        0x7f1202a6 -> :sswitch_14
         0x7f1202a9 -> :sswitch_10
         0x7f1202aa -> :sswitch_d
         0x7f1202c2 -> :sswitch_0
@@ -862,39 +916,39 @@
 .end method
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
-    .locals 8
+    .locals 9
 
-    const v7, 0x7f1202dc
+    const v8, 0x7f1202dc
 
-    const v6, 0x7f120289
+    const v7, 0x7f120288
 
-    const/4 v5, 0x1
+    const/4 v1, 0x1
 
     const/4 v4, 0x0
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
-    iget v2, v2, Lcom/sec/android/gallery3d/ui/SelectionManager;->mSelectionMode:I
+    iget v5, v5, Lcom/sec/android/gallery3d/ui/SelectionManager;->mSelectionMode:I
 
-    const/4 v3, 0x6
+    const/4 v6, 0x6
 
-    if-ne v2, v3, :cond_2
+    if-ne v5, v6, :cond_2
 
     invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->onPrepareOptionsInShareMode(Landroid/view/Menu;)V
 
     :cond_0
     :goto_0
-    sget-object v2, Lcom/sec/samsung/gallery/features/FeatureNames;->UseNewSlideShow:Lcom/sec/samsung/gallery/features/FeatureNames;
+    sget-object v1, Lcom/sec/samsung/gallery/features/FeatureNames;->UseNewSlideShow:Lcom/sec/samsung/gallery/features/FeatureNames;
 
-    invoke-static {v2}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+    invoke-static {v1}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
 
-    move-result v2
+    move-result v1
 
-    if-nez v2, :cond_1
+    if-nez v1, :cond_1
 
-    const v2, 0x7f1202aa
+    const v1, 0x7f1202aa
 
-    invoke-static {p1, v2, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+    invoke-static {p1, v1, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     :cond_1
     invoke-super {p0, p1}, Lcom/sec/samsung/gallery/view/AbstractActionBarForSelection;->onPrepareOptionsMenu(Landroid/view/Menu;)V
@@ -902,142 +956,186 @@
     return-void
 
     :cond_2
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
-    iget v2, v2, Lcom/sec/android/gallery3d/ui/SelectionManager;->mSelectionMode:I
+    iget v5, v5, Lcom/sec/android/gallery3d/ui/SelectionManager;->mSelectionMode:I
 
-    const/16 v3, 0xa
+    const/16 v6, 0xa
 
-    if-ne v2, v3, :cond_4
+    if-ne v5, v6, :cond_4
 
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->hasSelectedItem()Z
 
-    move-result v2
+    move-result v5
 
-    if-eqz v2, :cond_3
+    if-eqz v5, :cond_3
 
-    invoke-static {p1, v7, v5}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+    invoke-static {p1, v8, v1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     goto :goto_0
 
     :cond_3
-    invoke-static {p1, v7, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+    invoke-static {p1, v8, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     goto :goto_0
 
     :cond_4
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->hasSelectedItem()Z
 
-    move-result v2
+    move-result v5
 
-    if-eqz v2, :cond_6
+    if-eqz v5, :cond_7
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-virtual {v2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getGalleryApplication()Lcom/sec/android/gallery3d/app/GalleryApp;
+    invoke-virtual {v5}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getGalleryApplication()Lcom/sec/android/gallery3d/app/GalleryApp;
 
-    move-result-object v2
+    move-result-object v5
 
-    invoke-interface {v2}, Lcom/sec/android/gallery3d/app/GalleryApp;->isFestivalMode()Z
+    invoke-interface {v5}, Lcom/sec/android/gallery3d/app/GalleryApp;->isFestivalMode()Z
 
-    move-result v2
+    move-result v5
 
-    if-eqz v2, :cond_5
+    if-eqz v5, :cond_5
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
-    invoke-virtual {v2}, Lcom/sec/samsung/gallery/view/utils/EditModeHelper;->getSupportedOperationForSelectedItem()J
+    invoke-virtual {v5}, Lcom/sec/samsung/gallery/view/utils/EditModeHelper;->getSupportedOperationForSelectedItem()J
 
-    move-result-wide v0
+    move-result-wide v2
 
-    invoke-static {p1, v0, v1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateMenuOperation(Landroid/view/Menu;J)V
+    invoke-static {p1, v2, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateMenuOperation(Landroid/view/Menu;J)V
 
-    invoke-static {p1, v6, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+    invoke-static {p1, v7, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     :goto_1
-    sget-object v2, Lcom/sec/samsung/gallery/features/FeatureNames;->UseCloudMultiDownload:Lcom/sec/samsung/gallery/features/FeatureNames;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-static {v2}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+    invoke-virtual {v5}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getDesktopModeInterface()Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;
 
-    move-result v2
+    move-result-object v5
 
-    if-eqz v2, :cond_0
+    invoke-interface {v5}, Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface;->isDesktopMode()Z
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
+    move-result v5
 
-    invoke-virtual {v2}, Lcom/sec/samsung/gallery/view/utils/EditModeHelper;->hasSCloudItem()Z
+    if-eqz v5, :cond_6
 
-    move-result v2
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
-    if-eqz v2, :cond_0
+    invoke-virtual {v5}, Lcom/sec/android/gallery3d/ui/SelectionManager;->getMediaList()Ljava/util/LinkedList;
 
-    const v2, 0x7f1202a9
+    move-result-object v5
 
-    invoke-static {p1, v2, v5}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+    invoke-virtual {v5}, Ljava/util/LinkedList;->size()I
 
-    goto :goto_0
+    move-result v5
+
+    if-ne v5, v1, :cond_6
+
+    move v0, v1
+
+    :goto_2
+    const v5, 0x7f1202a5
+
+    invoke-static {p1, v5, v0}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+
+    const v5, 0x7f1202a6
+
+    invoke-static {p1, v5, v0}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+
+    const v5, 0x7f12027e
+
+    invoke-static {p1, v5, v0}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+
+    sget-object v5, Lcom/sec/samsung/gallery/features/FeatureNames;->UseCloudMultiDownload:Lcom/sec/samsung/gallery/features/FeatureNames;
+
+    invoke-static {v5}, Lcom/sec/samsung/gallery/features/GalleryFeature;->isEnabled(Lcom/sec/samsung/gallery/features/FeatureNames;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
+
+    invoke-virtual {v5}, Lcom/sec/samsung/gallery/view/utils/EditModeHelper;->hasSCloudItem()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    const v5, 0x7f1202a9
+
+    invoke-static {p1, v5, v1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+
+    goto/16 :goto_0
 
     :cond_5
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mEditModeHelper:Lcom/sec/samsung/gallery/view/utils/EditModeHelper;
 
-    invoke-virtual {v2}, Lcom/sec/samsung/gallery/view/utils/EditModeHelper;->getSupportedOperationForSelectedItem()J
+    invoke-virtual {v5}, Lcom/sec/samsung/gallery/view/utils/EditModeHelper;->getSupportedOperationForSelectedItem()J
 
-    move-result-wide v0
+    move-result-wide v2
 
-    invoke-static {p1, v0, v1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateMenuOperation(Landroid/view/Menu;J)V
+    invoke-static {p1, v2, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateMenuOperation(Landroid/view/Menu;J)V
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-static {v2, p1, v0, v1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionsForSecretBox(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/view/Menu;J)V
+    invoke-static {v5, p1, v2, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionsForSecretBox(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/view/Menu;J)V
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
-    iget v2, v2, Lcom/sec/android/gallery3d/ui/SelectionManager;->mSelectionMode:I
+    iget v5, v5, Lcom/sec/android/gallery3d/ui/SelectionManager;->mSelectionMode:I
 
-    invoke-static {p1, v2}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionsForShare(Landroid/view/Menu;I)V
+    invoke-static {p1, v5}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionsForShare(Landroid/view/Menu;I)V
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-static {v2, p1, v0, v1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionsForKnox(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/view/Menu;J)V
+    invoke-static {v5, p1, v2, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionsForKnox(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/view/Menu;J)V
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-static {v2, p1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionInGifMode(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/view/Menu;)V
+    invoke-static {v5, p1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionInGifMode(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/view/Menu;)V
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-static {v2, p1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionInCollageMode(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/view/Menu;)V
+    invoke-static {v5, p1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionInCollageMode(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/view/Menu;)V
 
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v5, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-static {v2, p1, v0, v1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionForAddToEvent(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/view/Menu;J)V
+    invoke-static {v5, p1, v2, v3}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionForAddToEvent(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/view/Menu;J)V
 
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->updateOptionForCopyMoveToAlbum(Landroid/view/Menu;)V
 
     goto :goto_1
 
     :cond_6
-    iget-object v2, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    move v0, v4
 
-    invoke-virtual {v2}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getGalleryApplication()Lcom/sec/android/gallery3d/app/GalleryApp;
+    goto :goto_2
 
-    move-result-object v2
+    :cond_7
+    iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    invoke-interface {v2}, Lcom/sec/android/gallery3d/app/GalleryApp;->isFestivalMode()Z
+    invoke-virtual {v1}, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;->getGalleryApplication()Lcom/sec/android/gallery3d/app/GalleryApp;
 
-    move-result v2
+    move-result-object v1
 
-    if-eqz v2, :cond_0
+    invoke-interface {v1}, Lcom/sec/android/gallery3d/app/GalleryApp;->isFestivalMode()Z
 
-    invoke-static {p1, v6, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+    move-result v1
 
-    const v2, 0x7f120290
+    if-eqz v1, :cond_0
 
-    invoke-static {p1, v2, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+    invoke-static {p1, v7, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
-    const v2, 0x7f120275
+    const v1, 0x7f120290
 
-    invoke-static {p1, v2, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+    invoke-static {p1, v1, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
+
+    const v1, 0x7f120275
+
+    invoke-static {p1, v1, v4}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
     goto/16 :goto_0
 .end method

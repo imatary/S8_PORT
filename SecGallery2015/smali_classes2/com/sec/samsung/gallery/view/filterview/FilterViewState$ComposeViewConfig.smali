@@ -72,7 +72,6 @@
 
     iput v3, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$ComposeViewConfig;->mTypeViewSwitchAnim:I
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {p1}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0
@@ -134,7 +133,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$ComposeViewConfig;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$5500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -153,7 +151,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$ComposeViewConfig;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$5600(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1

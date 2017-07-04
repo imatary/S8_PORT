@@ -52,7 +52,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mFocusSuggestioncardObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$1102(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     const/4 v0, 0x1
@@ -160,7 +159,6 @@
     :cond_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mFocusSuggestioncardObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v4
@@ -177,7 +175,6 @@
     :cond_1
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mFocusSuggestioncardObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v4
@@ -186,7 +183,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mFocusSuggestioncardObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v4}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$1100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     move-result-object v4
@@ -272,7 +268,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mFocusSuggestioncardObj:Lcom/sec/android/gallery3d/glcore/GlObject;
     invoke-static {v4, p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$1102(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;Lcom/sec/android/gallery3d/glcore/GlObject;)Lcom/sec/android/gallery3d/glcore/GlObject;
 
     const-string/jumbo v3, ""
@@ -410,7 +405,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mAddShareProgressObject:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;
     invoke-static {v6}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$1200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareProgressObject;
 
     move-result-object v6
@@ -463,7 +457,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mChannelName:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$1300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)Ljava/lang/String;
 
     move-result-object v5
@@ -480,7 +473,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView$17;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->mChannelDatePeriod:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelPhotoView;)Ljava/lang/String;
 
     move-result-object v5

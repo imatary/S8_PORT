@@ -57,7 +57,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mIsTouchOutside:Z
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$602(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Z)Z
 
     new-instance v0, Ljava/io/File;
@@ -70,7 +69,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$5;->this$0:Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$000(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;)Landroid/content/Context;
 
     move-result-object v2
@@ -93,7 +91,6 @@
 
     iget-boolean v4, p0, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd$5;->val$spreadBurstShot:Z
 
-    # invokes: Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->showRenameDialog(Ljava/io/File;Ljava/io/File;IZ)V
     invoke-static {v1, v2, v0, v3, v4}, Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;->access$800(Lcom/sec/samsung/gallery/controller/MoveToSecretboxCmd;Ljava/io/File;Ljava/io/File;IZ)V
 
     return-void

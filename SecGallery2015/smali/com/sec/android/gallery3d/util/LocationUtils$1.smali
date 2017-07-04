@@ -31,7 +31,6 @@
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 0
 
-    # setter for: Lcom/sec/android/gallery3d/util/LocationUtils;->mCurLocation:Landroid/location/Location;
     invoke-static {p1}, Lcom/sec/android/gallery3d/util/LocationUtils;->access$002(Landroid/location/Location;)Landroid/location/Location;
 
     return-void

@@ -73,7 +73,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/UnionLocalImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/UnionLocalImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UnionLocalImage;->mFacePaths:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/UnionLocalImage;->access$300(Lcom/sec/android/gallery3d/data/UnionLocalImage;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -120,7 +119,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/UnionLocalImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/UnionLocalImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UnionLocalImage;->mFaceImagePaths:Ljava/util/HashMap;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/UnionLocalImage;->access$400(Lcom/sec/android/gallery3d/data/UnionLocalImage;)Ljava/util/HashMap;
 
     move-result-object v2
@@ -149,7 +147,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UnionLocalImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/UnionLocalImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UnionLocalImage;->mFacePaths:Ljava/util/ArrayList;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UnionLocalImage;->access$300(Lcom/sec/android/gallery3d/data/UnionLocalImage;)Ljava/util/ArrayList;
 
     move-result-object v4
@@ -162,7 +159,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UnionLocalImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/UnionLocalImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UnionLocalImage;->mFacePaths:Ljava/util/ArrayList;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UnionLocalImage;->access$300(Lcom/sec/android/gallery3d/data/UnionLocalImage;)Ljava/util/ArrayList;
 
     move-result-object v4
@@ -176,13 +172,11 @@
 
     const/4 v4, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/data/UnionLocalImage;->mFacePaths:Ljava/util/ArrayList;
     invoke-static {v2, v4}, Lcom/sec/android/gallery3d/data/UnionLocalImage;->access$302(Lcom/sec/android/gallery3d/data/UnionLocalImage;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
     :cond_3
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/UnionLocalImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/UnionLocalImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/UnionLocalImage;->deleteDngFile()V
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/UnionLocalImage;->access$500(Lcom/sec/android/gallery3d/data/UnionLocalImage;)V
 
     invoke-static {}, Lcom/sec/android/gallery3d/data/MediaObject;->setVersion()V

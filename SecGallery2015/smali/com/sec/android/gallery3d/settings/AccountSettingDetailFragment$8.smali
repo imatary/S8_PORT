@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment$8;->this$0:Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;
 
-    # invokes: Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->handleAboutPage()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->access$700(Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;)V
 
     const/4 v0, 0x1

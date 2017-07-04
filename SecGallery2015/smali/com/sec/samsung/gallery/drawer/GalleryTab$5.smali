@@ -45,7 +45,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$5;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$100(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -84,7 +83,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$5;->val$position:I
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->findTabIndexByPosition(I)I
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1200(Lcom/sec/samsung/gallery/drawer/GalleryTab;I)I
 
     move-result v0
@@ -125,12 +123,10 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$5;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->selectItem(I)V
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1600(Lcom/sec/samsung/gallery/drawer/GalleryTab;I)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$5;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mTabHost:Landroid/widget/TabHost;
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$600(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/widget/TabHost;
 
     move-result-object v1
@@ -141,7 +137,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$5;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mTabIndicator:Lcom/sec/samsung/gallery/drawer/GalleryTabIndicator;
     invoke-static {v1}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$900(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Lcom/sec/samsung/gallery/drawer/GalleryTabIndicator;
 
     move-result-object v1
@@ -154,7 +149,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$5;->val$position:I
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->scrollTo(I)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1700(Lcom/sec/samsung/gallery/drawer/GalleryTab;I)V
 
     :cond_1

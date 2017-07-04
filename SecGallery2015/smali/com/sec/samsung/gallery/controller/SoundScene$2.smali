@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SoundScene$2;->this$0:Lcom/sec/samsung/gallery/controller/SoundScene;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/SoundScene;->avandonAudioFocus()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SoundScene;->access$000(Lcom/sec/samsung/gallery/controller/SoundScene;)V
 
     sput-boolean v1, Lcom/sec/samsung/gallery/controller/SoundScene;->isPlayingState:Z

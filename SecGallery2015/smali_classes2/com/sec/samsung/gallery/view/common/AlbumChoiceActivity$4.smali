@@ -86,7 +86,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$4;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2600(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Landroid/os/Handler;
 
     move-result-object v2
@@ -109,7 +108,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$4;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2600(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)Landroid/os/Handler;
 
     move-result-object v2

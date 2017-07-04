@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$3;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mHdmiConnected:Z
     invoke-static {v1, p1}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$802(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;Z)Z
 
     if-eqz p1, :cond_0
@@ -73,7 +72,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/detailview/DetailViewState$3;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/detailview/DetailViewState;->access$900(Lcom/sec/samsung/gallery/view/detailview/DetailViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2

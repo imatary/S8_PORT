@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;->mDesktopModeManagerListener:Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface$DesktopModeManagerListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;->access$000(Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;)Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface$DesktopModeManagerListener;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;->mDesktopModeManagerListener:Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface$DesktopModeManagerListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;->access$000(Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;)Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface$DesktopModeManagerListener;
 
     move-result-object v0
@@ -64,7 +62,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;->mDesktopModeManagerListener:Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface$DesktopModeManagerListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;->access$000(Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;)Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface$DesktopModeManagerListener;
 
     move-result-object v0
@@ -73,7 +70,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager$1;->this$0:Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;
 
-    # getter for: Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;->mDesktopModeManagerListener:Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface$DesktopModeManagerListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;->access$000(Lcom/sec/samsung/gallery/lib/se/SeDesktopModeManager;)Lcom/sec/samsung/gallery/lib/libinterface/DesktopModeInterface$DesktopModeManagerListener;
 
     move-result-object v0

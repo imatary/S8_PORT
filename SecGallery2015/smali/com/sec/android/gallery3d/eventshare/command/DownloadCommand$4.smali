@@ -69,7 +69,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mSyncTime:J
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$500(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)J
 
     move-result-wide v6
@@ -80,7 +79,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mSenderFileCount:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$200(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)I
 
     move-result v8
@@ -99,7 +97,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mShareNotiManager:Lcom/sec/android/gallery3d/eventshare/utils/ShareNotificationManager;
     invoke-static {v0}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$600(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)Lcom/sec/android/gallery3d/eventshare/utils/ShareNotificationManager;
 
     move-result-object v0
@@ -154,7 +151,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mSenderNumber:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$400(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)Ljava/lang/String;
 
     move-result-object v2
@@ -163,7 +159,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mSenderNumber:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$400(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)Ljava/lang/String;
 
     move-result-object v2
@@ -176,7 +171,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mSenderNumber:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$400(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)Ljava/lang/String;
 
     move-result-object v2
@@ -191,7 +185,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mSenderNumber:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$400(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)Ljava/lang/String;
 
     move-result-object v1
@@ -283,7 +276,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mSenderNumber:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$400(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)Ljava/lang/String;
 
     move-result-object v3
@@ -390,7 +382,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mSenderFileCount:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$200(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)I
 
     move-result v6
@@ -407,7 +398,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mLatestFileThumbPath:Ljava/lang/String;
     invoke-static {v6}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$300(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)Ljava/lang/String;
 
     move-result-object v6
@@ -430,7 +420,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mSenderFileCount:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$200(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)I
 
     move-result v4
@@ -439,7 +428,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mLatestFileThumbPath:Ljava/lang/String;
     invoke-static {v4}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$300(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)Ljava/lang/String;
 
     move-result-object v4
@@ -458,7 +446,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand$4;->this$0:Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->mLatestFileThumbPath:Ljava/lang/String;
     invoke-static {v6}, Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;->access$300(Lcom/sec/android/gallery3d/eventshare/command/DownloadCommand;)Ljava/lang/String;
 
     move-result-object v6

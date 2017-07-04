@@ -67,7 +67,6 @@
 
     iget v8, p0, Lcom/sec/samsung/gallery/access/face/FaceInterface$1;->val$type:I
 
-    # invokes: Lcom/sec/samsung/gallery/access/face/FaceInterface;->startFaceScan(Landroid/content/ContentResolver;I)V
     invoke-static {v7, v8}, Lcom/sec/samsung/gallery/access/face/FaceInterface;->access$000(Landroid/content/ContentResolver;I)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
@@ -153,7 +152,6 @@
     :cond_3
     iget-object v7, p0, Lcom/sec/samsung/gallery/access/face/FaceInterface$1;->val$cr:Landroid/content/ContentResolver;
 
-    # invokes: Lcom/sec/samsung/gallery/access/face/FaceInterface;->checkFaceScanned(Landroid/content/ContentResolver;J)I
     invoke-static {v7, v2, v3}, Lcom/sec/samsung/gallery/access/face/FaceInterface;->access$100(Landroid/content/ContentResolver;J)I
 
     move-result v6
@@ -164,7 +162,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/access/face/FaceInterface$1;->val$cr:Landroid/content/ContentResolver;
 
-    # invokes: Lcom/sec/samsung/gallery/access/face/FaceInterface;->setScanPriority(Landroid/content/ContentResolver;J)V
     invoke-static {v7, v2, v3}, Lcom/sec/samsung/gallery/access/face/FaceInterface;->access$200(Landroid/content/ContentResolver;J)V
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/access/face/FaceInterface$1;->val$cr:Landroid/content/ContentResolver;
@@ -181,7 +178,6 @@
 
     move-result-object v9
 
-    # invokes: Lcom/sec/samsung/gallery/access/face/FaceInterface;->singleFaceScan(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v7, v8, v9}, Lcom/sec/samsung/gallery/access/face/FaceInterface;->access$300(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_3
@@ -199,7 +195,6 @@
 
     move-result-object v8
 
-    # invokes: Lcom/sec/samsung/gallery/access/face/FaceInterface;->restoreSingleFaceData(Landroid/content/ContentResolver;Ljava/lang/String;)V
     invoke-static {v7, v8}, Lcom/sec/samsung/gallery/access/face/FaceInterface;->access$400(Landroid/content/ContentResolver;Ljava/lang/String;)V
 
     goto :goto_3

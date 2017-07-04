@@ -53,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd$1;->this$0:Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;)Landroid/content/Context;
 
     move-result-object v0

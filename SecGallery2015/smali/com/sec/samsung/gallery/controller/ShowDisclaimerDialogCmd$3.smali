@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;->access$000(Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;)Landroid/content/Context;
 
     move-result-object v0
@@ -52,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;->sendIntent(I)V
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;->access$100(Lcom/sec/samsung/gallery/controller/ShowDisclaimerDialogCmd;I)V
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V

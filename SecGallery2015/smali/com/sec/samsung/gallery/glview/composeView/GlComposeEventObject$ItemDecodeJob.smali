@@ -261,7 +261,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$ItemDecodeJob;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$3500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)Landroid/content/Context;
 
     move-result-object v1
@@ -295,7 +294,6 @@
     :cond_4
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$ItemDecodeJob;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mGlComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$1800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v1
@@ -310,7 +308,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$ItemDecodeJob;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mOnscrollHorStart:I
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$3600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)I
 
     move-result v2

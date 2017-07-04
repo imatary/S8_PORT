@@ -69,12 +69,10 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumList:[Lcom/sec/android/gallery3d/data/MediaSet;
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1200(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)[Lcom/sec/android/gallery3d/data/MediaSet;
 
     move-result-object v8
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_IS_CREATE_ALBUM_TOP:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$1100()Z
 
     move-result v7
@@ -116,7 +114,6 @@
     :try_start_0
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->getThumbnailType()I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2700(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v7
@@ -142,19 +139,16 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v7
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v8
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_FACE_THUMBNAIL_ENABLED:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2800()Z
 
     move-result v9
@@ -230,7 +224,6 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->getThumbnailType()I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2700(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v7
@@ -255,19 +248,16 @@
 
     iget-object v7, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v7}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v7
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v8
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_FACE_THUMBNAIL_ENABLED:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2800()Z
 
     move-result v9
@@ -314,19 +304,16 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v8
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity$LoadImageTask;->this$0:Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->mAlbumFrameSize:I
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2100(Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;)I
 
     move-result v9
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->FEATURE_FACE_THUMBNAIL_ENABLED:Z
     invoke-static {}, Lcom/sec/samsung/gallery/view/common/AlbumChoiceActivity;->access$2800()Z
 
     move-result v10

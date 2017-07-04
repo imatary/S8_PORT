@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Landroid/support/v7/widget/ListPopupWindow$ForwardingListener$TriggerLongPress;->this$0:Landroid/support/v7/widget/ListPopupWindow$ForwardingListener;
 
-    # invokes: Landroid/support/v7/widget/ListPopupWindow$ForwardingListener;->onLongPress()V
     invoke-static {v0}, Landroid/support/v7/widget/ListPopupWindow$ForwardingListener;->access$1000(Landroid/support/v7/widget/ListPopupWindow$ForwardingListener;)V
 
     return-void

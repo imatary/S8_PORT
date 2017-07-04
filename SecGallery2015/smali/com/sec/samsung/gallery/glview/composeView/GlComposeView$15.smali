@@ -121,7 +121,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$15;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->setThumbStrokeVisible(Z)V
     invoke-static {v1, v5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$3400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;Z)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$15;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;

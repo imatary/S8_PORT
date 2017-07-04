@@ -45,7 +45,6 @@
 
     check-cast p2, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$FutureClass;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->updateCache(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$FutureClass;)V
     invoke-static {v0, p2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$FutureClass;)V
 
     goto :goto_0
@@ -53,7 +52,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->hideSeekBar()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)V
 
     goto :goto_0
@@ -63,7 +61,6 @@
 
     check-cast p2, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$FutureClass;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->updateBitmap(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$FutureClass;)V
     invoke-static {v0, p2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$FutureClass;)V
 
     goto :goto_0

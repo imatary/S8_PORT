@@ -45,7 +45,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->access$400(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -58,12 +57,10 @@
 
     move-result v3
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->startActionMoveToKnox(ZZI)V
     invoke-static {v0, v1, v2, v3}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->access$500(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;ZZI)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal$10;->this$0:Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;->access$600(Lcom/sec/samsung/gallery/view/detailview/DetailActionBarForNormal;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

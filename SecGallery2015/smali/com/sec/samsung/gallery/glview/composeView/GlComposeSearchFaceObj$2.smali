@@ -73,7 +73,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;->mFaceItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v1
@@ -162,7 +161,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;->mFaceItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v1
@@ -175,7 +173,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;->mFaceItem:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v1
@@ -195,7 +192,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;->access$200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;)Landroid/content/Context;
 
     move-result-object v2
@@ -206,7 +202,6 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;->mFaceBitmap:Landroid/graphics/Bitmap;
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;->access$102(Lcom/sec/samsung/gallery/glview/composeView/GlComposeSearchFaceObj;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     :cond_3

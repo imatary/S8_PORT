@@ -419,7 +419,7 @@
 .end method
 
 .method private getNavigationBarBottomMargin()I
-    .locals 4
+    .locals 3
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/GlNoItemObject;->mContext:Landroid/content/Context;
 
@@ -436,34 +436,16 @@
     if-ne v1, v2, :cond_1
 
     :cond_0
-    iget-object v2, p0, Lcom/sec/samsung/gallery/glview/GlNoItemObject;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-
-    invoke-virtual {v2}, Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;->isMultiWindow()Z
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/GlNoItemObject;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    check-cast v2, Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    move-result-object v2
-
-    const v3, 0x7f0b0240
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-static {v2}, Lcom/sec/android/gallery3d/util/GalleryUtils;->getNavigationBarMargin(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;)I
 
     move-result v0
 
     :cond_1
-    :goto_0
     return v0
-
-    :cond_2
-    const/4 v0, 0x0
-
-    goto :goto_0
 .end method
 
 .method private initNoItemTextObject()V

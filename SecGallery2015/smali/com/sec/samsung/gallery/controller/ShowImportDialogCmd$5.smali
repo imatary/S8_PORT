@@ -41,12 +41,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsFileNameUsed:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$902(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$5;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mLock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/lang/Object;
 
     move-result-object v1
@@ -56,7 +54,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$5;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mLock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$1000(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;)Ljava/lang/Object;
 
     move-result-object v0

@@ -45,7 +45,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$3;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$100(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -68,7 +67,6 @@
 
     iget v4, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$3;->val$position:I
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->findTabIndexByPosition(I)I
     invoke-static {v3, v4}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1200(Lcom/sec/samsung/gallery/drawer/GalleryTab;I)I
 
     move-result v0
@@ -79,7 +77,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$3;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->getMTPDeviceName()Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1300(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Ljava/lang/String;
 
     move-result-object v1
@@ -87,7 +84,6 @@
     :goto_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$3;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mTabHost:Landroid/widget/TabHost;
     invoke-static {v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$600(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Landroid/widget/TabHost;
 
     move-result-object v3
@@ -120,7 +116,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$3;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v5}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$100(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v5
@@ -147,7 +142,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/drawer/GalleryTab$3;->this$0:Lcom/sec/samsung/gallery/drawer/GalleryTab;
 
-    # getter for: Lcom/sec/samsung/gallery/drawer/GalleryTab;->mTabSpecsCopy:Ljava/util/List;
     invoke-static {v9}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1500(Lcom/sec/samsung/gallery/drawer/GalleryTab;)Ljava/util/List;
 
     move-result-object v9
@@ -191,7 +185,6 @@
 
     check-cast v3, Lcom/sec/samsung/gallery/drawer/StateInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/drawer/GalleryTab;->getStateTitle(Lcom/sec/samsung/gallery/drawer/StateInfo;)Ljava/lang/String;
     invoke-static {v4, v3}, Lcom/sec/samsung/gallery/drawer/GalleryTab;->access$1400(Lcom/sec/samsung/gallery/drawer/GalleryTab;Lcom/sec/samsung/gallery/drawer/StateInfo;)Ljava/lang/String;
 
     move-result-object v1

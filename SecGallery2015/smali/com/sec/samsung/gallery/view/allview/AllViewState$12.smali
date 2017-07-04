@@ -45,12 +45,10 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$12;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mCurrentLayout:I
     invoke-static {v0, p2}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$3702(Lcom/sec/samsung/gallery/view/allview/AllViewState;I)I
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$12;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$3800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

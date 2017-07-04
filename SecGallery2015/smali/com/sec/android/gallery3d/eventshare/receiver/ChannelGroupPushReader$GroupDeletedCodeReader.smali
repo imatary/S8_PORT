@@ -57,7 +57,6 @@
 
     move-result-object v5
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->mPushTypeCodeMap:Ljava/util/HashMap;
     invoke-static {}, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->access$500()Ljava/util/HashMap;
 
     move-result-object v3
@@ -84,7 +83,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader$GroupDeletedCodeReader;->this$0:Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->access$600(Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;)Landroid/content/Context;
 
     move-result-object v3
@@ -99,7 +97,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader$GroupDeletedCodeReader;->this$0:Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->access$600(Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;)Landroid/content/Context;
 
     move-result-object v3
@@ -122,7 +119,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader$GroupDeletedCodeReader;->this$0:Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->access$600(Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;)Landroid/content/Context;
 
     move-result-object v3
@@ -136,14 +132,12 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader$GroupDeletedCodeReader;->this$0:Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->eventShareRequestSender:Lcom/sec/android/gallery3d/eventshare/event/EventShareRequestSender;
     invoke-static {v3}, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->access$1000(Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;)Lcom/sec/android/gallery3d/eventshare/event/EventShareRequestSender;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader$GroupDeletedCodeReader;->this$0:Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->access$600(Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;)Landroid/content/Context;
 
     move-result-object v4
@@ -160,7 +154,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader$GroupDeletedCodeReader;->this$0:Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;->access$600(Lcom/sec/android/gallery3d/eventshare/receiver/ChannelGroupPushReader;)Landroid/content/Context;
 
     move-result-object v3

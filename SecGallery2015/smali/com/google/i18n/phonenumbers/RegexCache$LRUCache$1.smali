@@ -54,7 +54,6 @@
 
     iget-object v1, p0, Lcom/google/i18n/phonenumbers/RegexCache$LRUCache$1;->this$0:Lcom/google/i18n/phonenumbers/RegexCache$LRUCache;
 
-    # getter for: Lcom/google/i18n/phonenumbers/RegexCache$LRUCache;->size:I
     invoke-static {v1}, Lcom/google/i18n/phonenumbers/RegexCache$LRUCache;->access$000(Lcom/google/i18n/phonenumbers/RegexCache$LRUCache;)I
 
     move-result v1

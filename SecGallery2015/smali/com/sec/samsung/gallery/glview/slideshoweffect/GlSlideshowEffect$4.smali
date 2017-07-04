@@ -51,7 +51,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect$4;->this$0:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->mProgressBar:Landroid/view/View;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;)Landroid/view/View;
 
     move-result-object v2
@@ -68,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect$4;->this$0:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->mProgressBar:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;)Landroid/view/View;
 
     move-result-object v0
@@ -77,7 +75,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect$4;->this$0:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->mContainer:Landroid/view/ViewGroup;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->access$100(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;)Landroid/view/ViewGroup;
 
     move-result-object v0
@@ -86,14 +83,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect$4;->this$0:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->mContainer:Landroid/view/ViewGroup;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->access$100(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;)Landroid/view/ViewGroup;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect$4;->this$0:Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->mProgressBar:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->access$000(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;)Landroid/view/View;
 
     move-result-object v1
@@ -104,7 +99,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->mProgressBar:Landroid/view/View;
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;->access$002(Lcom/sec/samsung/gallery/glview/slideshoweffect/GlSlideshowEffect;Landroid/view/View;)Landroid/view/View;
 
     :cond_0

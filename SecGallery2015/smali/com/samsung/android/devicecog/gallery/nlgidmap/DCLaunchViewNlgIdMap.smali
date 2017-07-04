@@ -21,9 +21,9 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const v4, 0x7f0a0742
+    const v4, 0x7f0a0748
 
-    const v3, 0x7f0a05c5
+    const v3, 0x7f0a05c8
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -97,7 +97,7 @@
 
     const-string/jumbo v1, "StoryListView"
 
-    const v2, 0x7f0a0783
+    const v2, 0x7f0a0789
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -109,7 +109,7 @@
 
     const-string/jumbo v1, "RecycleBin"
 
-    const v2, 0x7f0a07ef
+    const v2, 0x7f0a07f5
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -121,7 +121,7 @@
 
     const-string/jumbo v1, "CloudView"
 
-    const v2, 0x7f0a0816
+    const v2, 0x7f0a081c
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

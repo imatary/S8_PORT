@@ -47,7 +47,6 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$1;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # getter for: Lcom/sec/android/gallery3d/app/CropImage;->mState:I
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$000(Lcom/sec/android/gallery3d/app/CropImage;)I
 
     move-result v1
@@ -58,7 +57,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/CropImage$1;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->onSaveClicked()V
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/CropImage;->access$100(Lcom/sec/android/gallery3d/app/CropImage;)V
 
     goto :goto_0

@@ -133,7 +133,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$CategoryLoadTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->mInfos:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$600(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -142,7 +141,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$CategoryLoadTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->mInfos:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$600(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -151,12 +149,10 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$CategoryLoadTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->getData()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$700(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter$CategoryLoadTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->notifyDirty()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;->access$300(Lcom/sec/samsung/gallery/view/detailview/moreinfo/AddTagsAdapter;)V
 
     goto :goto_0

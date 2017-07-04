@@ -58,7 +58,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView$8;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->mClickable:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;->access$2200(Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;)Z
 
     move-result v2

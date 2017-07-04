@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mItemStatus:Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ItemStatus;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$600(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)Lcom/sec/samsung/gallery/glview/composeView/PositionControllerBase$ItemStatus;
 
     move-result-object v0
@@ -64,23 +63,19 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mDecorView:Lcom/sec/android/gallery3d/glcore/GlView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$700(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)Lcom/sec/android/gallery3d/glcore/GlView;
 
     move-result-object v1
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->updateDecorView(Lcom/sec/android/gallery3d/glcore/GlView;)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$800(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;Lcom/sec/android/gallery3d/glcore/GlView;)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->isDecorSet:Z
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$902(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;Z)Z
 
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->isAnimationVisible:I
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)I
 
     move-result v0
@@ -89,7 +84,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->isAnimationVisible:I
     invoke-static {v0, v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$502(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;I)I
 
     iget-object v0, p1, Lcom/sec/android/gallery3d/glcore/GlAnimationBase;->mObject:Lcom/sec/android/gallery3d/glcore/GlObject;
@@ -109,7 +103,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mSeekThumbObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v0
@@ -118,7 +111,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mSeekThumbObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v0
@@ -161,7 +153,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mSeekEnabled:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)Z
 
     move-result v0
@@ -170,7 +161,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mSeekThumbObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v0
@@ -179,7 +169,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mSeekThumbObj:Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeObject;
 
     move-result-object v0
@@ -194,7 +183,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->isAnimationVisible:I
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$502(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;I)I
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$2;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;

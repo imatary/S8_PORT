@@ -100,7 +100,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$PostCommandQueue;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$500(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/os/Handler;
 
     move-result-object v1
@@ -117,7 +116,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$PostCommandQueue;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$500(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/os/Handler;
 
     move-result-object v1

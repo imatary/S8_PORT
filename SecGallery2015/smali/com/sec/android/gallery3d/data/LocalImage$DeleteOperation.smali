@@ -55,7 +55,6 @@
 
     invoke-static {}, Lcom/sec/android/gallery3d/util/GalleryUtils;->assertNotInRenderThread()V
 
-    # getter for: Lcom/sec/android/gallery3d/data/LocalImage;->FEATURE_USE_CMH:Z
     invoke-static {}, Lcom/sec/android/gallery3d/data/LocalImage;->access$700()Z
 
     move-result v2
@@ -95,7 +94,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/LocalImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/LocalImage;->mFacePaths:Ljava/util/ArrayList;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/LocalImage;->access$800(Lcom/sec/android/gallery3d/data/LocalImage;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -142,7 +140,6 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/LocalImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/LocalImage;->mFaceImagePaths:Ljava/util/HashMap;
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/LocalImage;->access$900(Lcom/sec/android/gallery3d/data/LocalImage;)Ljava/util/HashMap;
 
     move-result-object v2
@@ -171,7 +168,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/LocalImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/LocalImage;->mFacePaths:Ljava/util/ArrayList;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/LocalImage;->access$800(Lcom/sec/android/gallery3d/data/LocalImage;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -184,7 +180,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/data/LocalImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/LocalImage;->mFacePaths:Ljava/util/ArrayList;
     invoke-static {v3}, Lcom/sec/android/gallery3d/data/LocalImage;->access$800(Lcom/sec/android/gallery3d/data/LocalImage;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -198,13 +193,11 @@
 
     const/4 v3, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/data/LocalImage;->mFacePaths:Ljava/util/ArrayList;
     invoke-static {v2, v3}, Lcom/sec/android/gallery3d/data/LocalImage;->access$802(Lcom/sec/android/gallery3d/data/LocalImage;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
     :cond_4
     iget-object v2, p0, Lcom/sec/android/gallery3d/data/LocalImage$DeleteOperation;->this$0:Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/LocalImage;->deleteDngFile()V
     invoke-static {v2}, Lcom/sec/android/gallery3d/data/LocalImage;->access$1000(Lcom/sec/android/gallery3d/data/LocalImage;)V
 
     invoke-static {}, Lcom/sec/android/gallery3d/data/MediaObject;->setVersion()V

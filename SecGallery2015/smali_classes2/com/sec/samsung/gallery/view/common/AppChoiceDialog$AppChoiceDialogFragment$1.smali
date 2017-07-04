@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment$1;->this$1:Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;->mCtx:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;->access$800(Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;)Landroid/content/Context;
 
     move-result-object v1
@@ -56,7 +55,6 @@
 
     iget v1, v1, Landroid/content/res/Configuration;->orientation:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;->resizeDialog(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;->access$900(Lcom/sec/samsung/gallery/view/common/AppChoiceDialog$AppChoiceDialogFragment;I)V
 
     return-void

@@ -62,7 +62,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b082b
+    const v1, 0x7f0b082c
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -70,7 +70,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_album_height:I
 
-    const v1, 0x7f0b082c
+    const v1, 0x7f0b082d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -78,7 +78,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_album_height_land:I
 
-    const v1, 0x7f0b0838
+    const v1, 0x7f0b0839
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -86,7 +86,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_top_margin:I
 
-    const v1, 0x7f0b082a
+    const v1, 0x7f0b082b
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -94,7 +94,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_album_gap:I
 
-    const v1, 0x7f0b082f
+    const v1, 0x7f0b0830
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -102,7 +102,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_album_title_text_size:I
 
-    const v1, 0x7f0b082d
+    const v1, 0x7f0b082e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -110,7 +110,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_album_subtitle_text_size:I
 
-    const v1, 0x7f0b0832
+    const v1, 0x7f0b0833
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -118,7 +118,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_creator_text_size:I
 
-    const v1, 0x7f0b0837
+    const v1, 0x7f0b0838
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -126,7 +126,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_label_text_size:I
 
-    const v1, 0x7f0b082e
+    const v1, 0x7f0b082f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -134,7 +134,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_album_title_side_padding:I
 
-    const v1, 0x7f0b0831
+    const v1, 0x7f0b0832
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -142,7 +142,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_creator_icon_width:I
 
-    const v1, 0x7f0b0830
+    const v1, 0x7f0b0831
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -150,7 +150,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_creator_icon_height:I
 
-    const v1, 0x7f0b0834
+    const v1, 0x7f0b0835
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -158,7 +158,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryViewDimension;->social_story_view_deco_items_v_h_padding:I
 
-    const v1, 0x7f0b0833
+    const v1, 0x7f0b0834
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

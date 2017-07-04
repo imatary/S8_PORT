@@ -50,7 +50,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;->access$000(Lcom/sec/samsung/gallery/controller/BroadcastReceiverCmd;)Landroid/content/Context;
 
     move-result-object v1

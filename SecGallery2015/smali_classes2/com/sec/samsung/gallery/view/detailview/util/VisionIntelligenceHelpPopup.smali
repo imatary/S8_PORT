@@ -218,7 +218,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;->mRes:Landroid/content/res/Resources;
 
-    const v4, 0x7f0b05af
+    const v4, 0x7f0b05b0
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -228,7 +228,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;->mRes:Landroid/content/res/Resources;
 
-    const v4, 0x7f0b04a2
+    const v4, 0x7f0b04a3
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -238,7 +238,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;->mRes:Landroid/content/res/Resources;
 
-    const v4, 0x7f0b04b7
+    const v4, 0x7f0b04b8
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -274,7 +274,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;->mRes:Landroid/content/res/Resources;
 
-    const v4, 0x7f0b04a7
+    const v4, 0x7f0b04a8
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -330,7 +330,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;->mRes:Landroid/content/res/Resources;
 
-    const v4, 0x7f0b04a6
+    const v4, 0x7f0b04a7
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -368,7 +368,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;->mRes:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b04b3
+    const v2, 0x7f0b04b4
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

@@ -48,7 +48,6 @@
     const/4 v0, 0x0
 
     :goto_0
-    # getter for: Lcom/sec/android/gallery3d/data/SizeClustering;->SIZE_LEVELS:[J
     invoke-static {}, Lcom/sec/android/gallery3d/data/SizeClustering;->access$000()[J
 
     move-result-object v4
@@ -59,7 +58,6 @@
 
     if-ge v0, v4, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/data/SizeClustering;->SIZE_LEVELS:[J
     invoke-static {}, Lcom/sec/android/gallery3d/data/SizeClustering;->access$000()[J
 
     move-result-object v4

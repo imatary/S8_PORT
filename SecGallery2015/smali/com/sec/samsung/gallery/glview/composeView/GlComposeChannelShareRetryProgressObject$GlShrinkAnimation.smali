@@ -42,19 +42,16 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$GlShrinkAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mProgressBarView:Lcom/sec/android/gallery3d/glcore/GlView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;)Lcom/sec/android/gallery3d/glcore/GlView;
 
     move-result-object v1
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->updateProgress(Lcom/sec/android/gallery3d/glcore/GlView;F)V
     invoke-static {v0, v1, p1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->access$500(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;Lcom/sec/android/gallery3d/glcore/GlView;F)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$GlShrinkAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject$GlShrinkAnimation;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->mProgressBarView:Lcom/sec/android/gallery3d/glcore/GlView;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelShareRetryProgressObject;)Lcom/sec/android/gallery3d/glcore/GlView;
 
     move-result-object v1

@@ -39,13 +39,11 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/HideAlbums$2;->this$0:Lcom/sec/samsung/gallery/controller/HideAlbums;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/HideAlbums;->dismissDialog()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/HideAlbums;->access$000(Lcom/sec/samsung/gallery/controller/HideAlbums;)V
 
     :try_start_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/HideAlbums$2;->this$0:Lcom/sec/samsung/gallery/controller/HideAlbums;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/HideAlbums;->getCurrentSelectedItemList()Ljava/util/List;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/HideAlbums;->access$100(Lcom/sec/samsung/gallery/controller/HideAlbums;)Ljava/util/List;
 
     move-result-object v1
@@ -58,12 +56,10 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/HideAlbums$2;->this$0:Lcom/sec/samsung/gallery/controller/HideAlbums;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/HideAlbums;->updateAlbumDB(Ljava/util/List;)V
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/controller/HideAlbums;->access$200(Lcom/sec/samsung/gallery/controller/HideAlbums;Ljava/util/List;)V
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/HideAlbums$2;->this$0:Lcom/sec/samsung/gallery/controller/HideAlbums;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HideAlbums;->mHide:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/HideAlbums;->access$300(Lcom/sec/samsung/gallery/controller/HideAlbums;)Z
 
     move-result v2
@@ -72,7 +68,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/HideAlbums$2;->this$0:Lcom/sec/samsung/gallery/controller/HideAlbums;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HideAlbums;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/HideAlbums;->access$400(Lcom/sec/samsung/gallery/controller/HideAlbums;)Landroid/content/Context;
 
     move-result-object v2
@@ -112,7 +107,6 @@
     :try_start_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/HideAlbums$2;->this$0:Lcom/sec/samsung/gallery/controller/HideAlbums;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/HideAlbums;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/HideAlbums;->access$400(Lcom/sec/samsung/gallery/controller/HideAlbums;)Landroid/content/Context;
 
     move-result-object v2

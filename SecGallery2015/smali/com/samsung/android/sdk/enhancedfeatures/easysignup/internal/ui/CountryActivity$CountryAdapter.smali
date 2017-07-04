@@ -40,7 +40,6 @@
 
     iput-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$CountryAdapter;->AlphabetIndex:Ljava/lang/String;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$000(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)Landroid/content/Context;
 
     move-result-object v0
@@ -75,7 +74,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$CountryAdapter;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->mFilteredCountry:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -88,7 +86,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$CountryAdapter;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->mFilteredCountry:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -148,7 +145,6 @@
 
     iget-object v5, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$CountryAdapter;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->mFilteredCountry:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)Ljava/util/ArrayList;
 
     move-result-object v5
@@ -157,7 +153,6 @@
 
     iget-object v5, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$CountryAdapter;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->mFilteredCountry:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)Ljava/util/ArrayList;
 
     move-result-object v5
@@ -172,7 +167,6 @@
 
     iget-object v5, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$CountryAdapter;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->mFilteredCountry:Ljava/util/ArrayList;
     invoke-static {v5}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)Ljava/util/ArrayList;
 
     move-result-object v5
@@ -203,7 +197,6 @@
 
     iget-object v8, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$CountryAdapter;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->mFilteredCountry:Ljava/util/ArrayList;
     invoke-static {v8}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$200(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)Ljava/util/ArrayList;
 
     move-result-object v8
@@ -470,7 +463,6 @@
     :cond_5
     iget-object v5, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$CountryAdapter;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->allCountries:[Ljava/lang/CharSequence;
     invoke-static {v5}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)[Ljava/lang/CharSequence;
 
     move-result-object v5
@@ -483,7 +475,6 @@
 
     iget-object v6, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$CountryAdapter;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->allCountries:[Ljava/lang/CharSequence;
     invoke-static {v6}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$300(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)[Ljava/lang/CharSequence;
 
     move-result-object v6
@@ -499,7 +490,6 @@
     :cond_6
     iget-object v5, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$CountryAdapter;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->countryCode:[Ljava/lang/CharSequence;
     invoke-static {v5}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$400(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)[Ljava/lang/CharSequence;
 
     move-result-object v5
@@ -522,7 +512,6 @@
 
     iget-object v7, p0, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity$CountryAdapter;->this$0:Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;
 
-    # getter for: Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->countryCode:[Ljava/lang/CharSequence;
     invoke-static {v7}, Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;->access$400(Lcom/samsung/android/sdk/enhancedfeatures/easysignup/internal/ui/CountryActivity;)[Ljava/lang/CharSequence;
 
     move-result-object v7

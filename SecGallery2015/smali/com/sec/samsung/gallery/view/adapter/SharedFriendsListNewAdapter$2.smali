@@ -47,7 +47,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mSharedList:Ljava/util/ArrayList;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->access$1000(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;)Ljava/util/ArrayList;
 
     move-result-object v4
@@ -64,7 +63,6 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mScreenID:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->access$1100(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;)Ljava/lang/String;
 
     move-result-object v3
@@ -75,7 +73,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mSharedList:Ljava/util/ArrayList;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->access$1000(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -94,7 +91,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mContext:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->access$1200(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -113,7 +109,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mContext:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->access$1200(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -140,7 +135,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->mContext:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->access$1200(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3
@@ -149,7 +143,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter$2;->this$0:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->ugci:Ljava/lang/String;
     invoke-static {v5}, Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;->access$1300(Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;)Ljava/lang/String;
 
     move-result-object v5

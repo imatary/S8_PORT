@@ -64,7 +64,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mDragViewAdded:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$8402(Lcom/sec/android/gallery3d/ui/PhotoView;Z)Z
 
     invoke-virtual {p0}, Ljava/lang/Object;->notify()V

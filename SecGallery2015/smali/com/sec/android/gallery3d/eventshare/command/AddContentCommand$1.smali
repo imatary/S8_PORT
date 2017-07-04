@@ -286,7 +286,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/eventshare/command/AddContentCommand$1;->this$0:Lcom/sec/android/gallery3d/eventshare/command/AddContentCommand;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/command/AddContentCommand;->mIntent:Landroid/content/Intent;
     invoke-static {v2}, Lcom/sec/android/gallery3d/eventshare/command/AddContentCommand;->access$000(Lcom/sec/android/gallery3d/eventshare/command/AddContentCommand;)Landroid/content/Intent;
 
     move-result-object v2

@@ -61,7 +61,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/data/UnlockImage$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UnlockImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UnlockImage;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/data/UnlockImage;->access$000(Lcom/sec/android/gallery3d/data/UnlockImage;)Landroid/content/Context;
 
     move-result-object v8
@@ -74,7 +73,6 @@
 
     iget-object v9, p0, Lcom/sec/android/gallery3d/data/UnlockImage$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UnlockImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/UnlockImage;->getNaviHeight()I
     invoke-static {v9}, Lcom/sec/android/gallery3d/data/UnlockImage;->access$100(Lcom/sec/android/gallery3d/data/UnlockImage;)I
 
     move-result v9
@@ -145,7 +143,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/data/UnlockImage$BitmapJob;->this$0:Lcom/sec/android/gallery3d/data/UnlockImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UnlockImage;->mContext:Landroid/content/Context;
     invoke-static {v8}, Lcom/sec/android/gallery3d/data/UnlockImage;->access$000(Lcom/sec/android/gallery3d/data/UnlockImage;)Landroid/content/Context;
 
     move-result-object v8

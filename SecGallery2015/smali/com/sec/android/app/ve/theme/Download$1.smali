@@ -92,7 +92,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/ve/theme/Download$1;->this$0:Lcom/sec/android/app/ve/theme/Download;
 
-    # invokes: Lcom/sec/android/app/ve/theme/Download;->getThemePackage()Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/android/app/ve/theme/Download;->access$000(Lcom/sec/android/app/ve/theme/Download;)Ljava/lang/String;
 
     move-result-object v3
@@ -101,7 +100,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/ve/theme/Download$1;->this$0:Lcom/sec/android/app/ve/theme/Download;
 
-    # invokes: Lcom/sec/android/app/ve/theme/Download;->getThemePackage()Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/android/app/ve/theme/Download;->access$000(Lcom/sec/android/app/ve/theme/Download;)Ljava/lang/String;
 
     move-result-object v3
@@ -115,7 +113,6 @@
     :cond_3
     iget-object v3, p0, Lcom/sec/android/app/ve/theme/Download$1;->this$0:Lcom/sec/android/app/ve/theme/Download;
 
-    # getter for: Lcom/sec/android/app/ve/theme/Download;->mAdapter:Lcom/sec/android/app/ve/theme/Download$Adapter;
     invoke-static {v3}, Lcom/sec/android/app/ve/theme/Download;->access$100(Lcom/sec/android/app/ve/theme/Download;)Lcom/sec/android/app/ve/theme/Download$Adapter;
 
     move-result-object v3
@@ -124,14 +121,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/ve/theme/Download$1;->this$0:Lcom/sec/android/app/ve/theme/Download;
 
-    # getter for: Lcom/sec/android/app/ve/theme/Download;->mAdapter:Lcom/sec/android/app/ve/theme/Download$Adapter;
     invoke-static {v3}, Lcom/sec/android/app/ve/theme/Download;->access$100(Lcom/sec/android/app/ve/theme/Download;)Lcom/sec/android/app/ve/theme/Download$Adapter;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/ve/theme/Download$1;->this$0:Lcom/sec/android/app/ve/theme/Download;
 
-    # getter for: Lcom/sec/android/app/ve/theme/Download;->mAdapter:Lcom/sec/android/app/ve/theme/Download$Adapter;
     invoke-static {v4}, Lcom/sec/android/app/ve/theme/Download;->access$100(Lcom/sec/android/app/ve/theme/Download;)Lcom/sec/android/app/ve/theme/Download$Adapter;
 
     move-result-object v4

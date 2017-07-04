@@ -112,7 +112,6 @@
 
     iget-object v2, p0, Lcom/google/gson/Gson$3;->this$0:Lcom/google/gson/Gson;
 
-    # invokes: Lcom/google/gson/Gson;->checkValidFloatingPoint(D)V
     invoke-static {v2, v0, v1}, Lcom/google/gson/Gson;->access$000(Lcom/google/gson/Gson;D)V
 
     invoke-virtual {p1, p2}, Lcom/google/gson/stream/JsonWriter;->value(Ljava/lang/Number;)Lcom/google/gson/stream/JsonWriter;

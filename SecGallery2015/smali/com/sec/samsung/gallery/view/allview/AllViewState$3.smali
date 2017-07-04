@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1600(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0
@@ -58,7 +57,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/allview/AllViewState;->enterSelectionMode()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$2100(Lcom/sec/samsung/gallery/view/allview/AllViewState;)V
 
     goto :goto_0
@@ -69,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -82,7 +79,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -95,7 +91,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -107,7 +102,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/allview/AllViewState;->updateCountOnActionBar()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$2000(Lcom/sec/samsung/gallery/view/allview/AllViewState;)V
 
     goto :goto_0
@@ -122,7 +116,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1600(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v2
@@ -141,7 +134,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mCancelOperation:Z
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1700(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Z
 
     move-result v2
@@ -150,7 +142,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # setter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mCancelOperation:Z
     invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1702(Lcom/sec/samsung/gallery/view/allview/AllViewState;Z)Z
 
     goto :goto_0
@@ -158,7 +149,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -167,7 +157,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -180,7 +169,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -190,7 +178,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -199,7 +186,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -212,7 +198,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -229,7 +214,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/allview/AllViewState;->selectItem(II)V
     invoke-static {v0, p1, p2}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1900(Lcom/sec/samsung/gallery/view/allview/AllViewState;II)V
 
     :cond_3
@@ -245,7 +229,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1600(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v0
@@ -265,7 +248,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -274,7 +256,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0
@@ -287,7 +268,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/allview/AllViewState$3;->this$0:Lcom/sec/samsung/gallery/view/allview/AllViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/allview/AllViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/allview/AllViewState;->access$1800(Lcom/sec/samsung/gallery/view/allview/AllViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v0

@@ -70,7 +70,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils$2;->this$0:Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;
 
-    # getter for: Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;->mDisplayManagerEx:Lcom/sec/samsung/gallery/lib/libinterface/DisplayManagerInterface;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;->access$100(Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;)Lcom/sec/samsung/gallery/lib/libinterface/DisplayManagerInterface;
 
     move-result-object v2
@@ -123,7 +122,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils$2;->this$0:Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;
 
-    # setter for: Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;->mWifiDisplayStatusEx:Lcom/sec/samsung/gallery/lib/libinterface/WifiDisplayStatusInterface;
     invoke-static {v2, v1}, Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;->access$202(Lcom/sec/samsung/gallery/view/utils/LibWifiDisplayUtils;Lcom/sec/samsung/gallery/lib/libinterface/WifiDisplayStatusInterface;)Lcom/sec/samsung/gallery/lib/libinterface/WifiDisplayStatusInterface;
 
     :cond_0

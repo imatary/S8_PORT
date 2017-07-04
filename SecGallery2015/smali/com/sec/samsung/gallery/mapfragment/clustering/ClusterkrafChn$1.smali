@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn$1;->this$0:Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;
 
-    # getter for: Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;->access$1400(Lcom/sec/samsung/gallery/mapfragment/clustering/ClusterkrafChn;)Landroid/content/Context;
 
     move-result-object v0

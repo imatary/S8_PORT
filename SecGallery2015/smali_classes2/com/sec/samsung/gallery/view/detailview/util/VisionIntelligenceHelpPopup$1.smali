@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup$1;->this$0:Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;->access$000(Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;)Landroid/content/Context;
 
     move-result-object v0
@@ -58,7 +57,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;->mCloseButtonClicked:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;->access$102(Lcom/sec/samsung/gallery/view/detailview/util/VisionIntelligenceHelpPopup;Z)Z
 
     return-void

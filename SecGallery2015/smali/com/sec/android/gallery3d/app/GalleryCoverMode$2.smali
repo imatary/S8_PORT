@@ -62,19 +62,16 @@
 
     const/4 v2, 0x3
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryCoverMode;->requestSystemKeyEvent(IZ)V
     invoke-static {v1, v2, v4}, Lcom/sec/android/gallery3d/app/GalleryCoverMode;->access$200(Lcom/sec/android/gallery3d/app/GalleryCoverMode;IZ)V
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/GalleryCoverMode$2;->this$0:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/app/GalleryCoverMode$2;->this$0:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryCoverMode;->getSettingTimeOut()J
     invoke-static {v2}, Lcom/sec/android/gallery3d/app/GalleryCoverMode;->access$300(Lcom/sec/android/gallery3d/app/GalleryCoverMode;)J
 
     move-result-wide v2
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryCoverMode;->setScreenOffTime(JZ)V
     invoke-static {v1, v2, v3, v4}, Lcom/sec/android/gallery3d/app/GalleryCoverMode;->access$400(Lcom/sec/android/gallery3d/app/GalleryCoverMode;JZ)V
 
     sget-object v1, Lcom/sec/samsung/gallery/features/FeatureNames;->UseHierarchicalUpButton:Lcom/sec/samsung/gallery/features/FeatureNames;
@@ -87,20 +84,17 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/GalleryCoverMode$2;->this$0:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryCoverMode;->showCoverCloseBtn()V
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/GalleryCoverMode;->access$500(Lcom/sec/android/gallery3d/app/GalleryCoverMode;)V
 
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/GalleryCoverMode$2;->this$0:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
 
-    # invokes: Lcom/sec/android/gallery3d/app/GalleryCoverMode;->setLayoutParams()V
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/GalleryCoverMode;->access$600(Lcom/sec/android/gallery3d/app/GalleryCoverMode;)V
 
     :cond_1
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/GalleryCoverMode$2;->this$0:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryCoverMode;->mCoverStateListenerList:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/GalleryCoverMode;->access$700(Lcom/sec/android/gallery3d/app/GalleryCoverMode;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -110,7 +104,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/GalleryCoverMode$2;->this$0:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryCoverMode;->mCoverStateListenerList:Ljava/util/ArrayList;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/GalleryCoverMode;->access$700(Lcom/sec/android/gallery3d/app/GalleryCoverMode;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -154,7 +147,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/app/GalleryCoverMode$2;->this$0:Lcom/sec/android/gallery3d/app/GalleryCoverMode;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryCoverMode;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v1}, Lcom/sec/android/gallery3d/app/GalleryCoverMode;->access$100(Lcom/sec/android/gallery3d/app/GalleryCoverMode;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v1

@@ -39,8 +39,7 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState$13;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->startDetailView(II)V
-    invoke-static {v0, p1, p2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$10400(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;II)V
+    invoke-static {v0, p1, p2}, Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;->access$10500(Lcom/sec/samsung/gallery/view/channelview/ChannelViewState;II)V
 
     const/4 v0, 0x1
 

@@ -36,7 +36,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyContext$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;->mClient:Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;->access$000(Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;)Lcom/sec/android/gallery3d/remote/nearby/NearbyClient;
 
     move-result-object v2
@@ -52,7 +51,6 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyContext$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;->mIsActive:Z
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;->access$100(Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;)Z
 
     move-result v2
@@ -61,7 +59,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/remote/nearby/NearbyContext$1;->this$0:Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;->access$200(Lcom/sec/android/gallery3d/remote/nearby/NearbyContext;)Landroid/content/Context;
 
     move-result-object v2

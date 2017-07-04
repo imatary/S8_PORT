@@ -78,7 +78,6 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup$SelectTvAdapter;->this$0:Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;
 
-    # getter for: Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;->access$200(Lcom/sec/android/gallery3d/devicetotv/SelectTvPopup;)Landroid/content/Context;
 
     move-result-object v2

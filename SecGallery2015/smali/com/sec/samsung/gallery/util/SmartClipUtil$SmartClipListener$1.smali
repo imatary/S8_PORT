@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener$1;->this$0:Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;
 
-    # getter for: Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->mCurrentPhoto:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v0}, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->access$100(Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v0
@@ -56,26 +55,22 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener$1;->this$0:Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;
 
-    # getter for: Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->access$000(Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener$1;->this$0:Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;
 
-    # getter for: Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->mRectOfImage:Landroid/graphics/Rect;
     invoke-static {v1}, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->access$200(Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;)Landroid/graphics/Rect;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener$1;->this$0:Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;
 
-    # getter for: Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->mRectOfBounds:Landroid/graphics/Rect;
     invoke-static {v2}, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->access$300(Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;)Landroid/graphics/Rect;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/samsung/gallery/util/SmartClipUtil;->getCurrentImageRect(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     invoke-static {v0, v1, v2, p1}, Lcom/sec/samsung/gallery/util/SmartClipUtil;->access$400(Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
 
     move-result-object v0
@@ -88,7 +83,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener$1;->this$0:Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;
 
-    # getter for: Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->mCurrentPhoto:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v0}, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->access$100(Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v0
@@ -105,7 +99,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener$1;->this$0:Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;
 
-    # getter for: Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->access$000(Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
@@ -124,7 +117,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener$1;->this$0:Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;
 
-    # getter for: Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->mCurrentPhoto:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v1}, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->access$100(Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v1
@@ -147,7 +139,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener$1;->this$0:Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;
 
-    # getter for: Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->mCurrentPhoto:Lcom/sec/android/gallery3d/data/MediaItem;
     invoke-static {v0}, Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;->access$100(Lcom/sec/samsung/gallery/util/SmartClipUtil$SmartClipListener;)Lcom/sec/android/gallery3d/data/MediaItem;
 
     move-result-object v0

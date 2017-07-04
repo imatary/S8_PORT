@@ -41,7 +41,6 @@
 
     sget v1, Lcom/sec/samsung/gallery/core/Event;->EVENT_COPY_FILES:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/NewAlbumCopyMoveDialog;->handleOnClick(I)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/common/NewAlbumCopyMoveDialog;->access$000(Lcom/sec/samsung/gallery/view/common/NewAlbumCopyMoveDialog;I)V
 
     return-void

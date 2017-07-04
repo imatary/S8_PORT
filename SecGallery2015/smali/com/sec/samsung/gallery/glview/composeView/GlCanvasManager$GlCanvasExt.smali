@@ -304,7 +304,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager$GlCanvasExt;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;->mInstanceCache:Ljava/util/LinkedHashMap;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;->access$300(Lcom/sec/samsung/gallery/glview/composeView/GlCanvasManager;)Ljava/util/LinkedHashMap;
 
     move-result-object v2

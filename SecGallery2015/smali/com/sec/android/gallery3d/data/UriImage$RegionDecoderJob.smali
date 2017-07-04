@@ -59,7 +59,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriImage$RegionDecoderJob;->this$0:Lcom/sec/android/gallery3d/data/UriImage;
 
-    # invokes: Lcom/sec/android/gallery3d/data/UriImage;->prepareInputFile(Lcom/sec/android/gallery3d/util/ThreadPool$JobContext;)Z
     invoke-static {v4, p1}, Lcom/sec/android/gallery3d/data/UriImage;->access$100(Lcom/sec/android/gallery3d/data/UriImage;Lcom/sec/android/gallery3d/util/ThreadPool$JobContext;)Z
 
     move-result v4
@@ -97,7 +96,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriImage$RegionDecoderJob;->this$0:Lcom/sec/android/gallery3d/data/UriImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UriImage;->access$200(Lcom/sec/android/gallery3d/data/UriImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4
@@ -115,7 +113,6 @@
     :cond_2
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriImage$RegionDecoderJob;->this$0:Lcom/sec/android/gallery3d/data/UriImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriImage;->mFileDescriptor:Landroid/os/ParcelFileDescriptor;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UriImage;->access$300(Lcom/sec/android/gallery3d/data/UriImage;)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v4
@@ -126,7 +123,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriImage$RegionDecoderJob;->this$0:Lcom/sec/android/gallery3d/data/UriImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UriImage;->access$200(Lcom/sec/android/gallery3d/data/UriImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4
@@ -138,7 +134,6 @@
     :try_start_0
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriImage$RegionDecoderJob;->this$0:Lcom/sec/android/gallery3d/data/UriImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriImage;->mUri:Landroid/net/Uri;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UriImage;->access$400(Lcom/sec/android/gallery3d/data/UriImage;)Landroid/net/Uri;
 
     move-result-object v4
@@ -168,7 +163,6 @@
 
     move-result v5
 
-    # setter for: Lcom/sec/android/gallery3d/data/UriImage;->mWidth:I
     invoke-static {v4, v5}, Lcom/sec/android/gallery3d/data/UriImage;->access$502(Lcom/sec/android/gallery3d/data/UriImage;I)I
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriImage$RegionDecoderJob;->this$0:Lcom/sec/android/gallery3d/data/UriImage;
@@ -177,7 +171,6 @@
 
     move-result v5
 
-    # setter for: Lcom/sec/android/gallery3d/data/UriImage;->mHeight:I
     invoke-static {v4, v5}, Lcom/sec/android/gallery3d/data/UriImage;->access$602(Lcom/sec/android/gallery3d/data/UriImage;I)I
 
     goto :goto_0
@@ -228,7 +221,6 @@
     :cond_4
     iget-object v4, p0, Lcom/sec/android/gallery3d/data/UriImage$RegionDecoderJob;->this$0:Lcom/sec/android/gallery3d/data/UriImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriImage;->mApplication:Lcom/sec/android/gallery3d/app/GalleryApp;
     invoke-static {v4}, Lcom/sec/android/gallery3d/data/UriImage;->access$200(Lcom/sec/android/gallery3d/data/UriImage;)Lcom/sec/android/gallery3d/app/GalleryApp;
 
     move-result-object v4
@@ -239,14 +231,12 @@
 
     iget-object v5, p0, Lcom/sec/android/gallery3d/data/UriImage$RegionDecoderJob;->this$0:Lcom/sec/android/gallery3d/data/UriImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriImage;->mUri:Landroid/net/Uri;
     invoke-static {v5}, Lcom/sec/android/gallery3d/data/UriImage;->access$400(Lcom/sec/android/gallery3d/data/UriImage;)Landroid/net/Uri;
 
     move-result-object v5
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/data/UriImage$RegionDecoderJob;->this$0:Lcom/sec/android/gallery3d/data/UriImage;
 
-    # getter for: Lcom/sec/android/gallery3d/data/UriImage;->mFileDescriptor:Landroid/os/ParcelFileDescriptor;
     invoke-static {v6}, Lcom/sec/android/gallery3d/data/UriImage;->access$300(Lcom/sec/android/gallery3d/data/UriImage;)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v6

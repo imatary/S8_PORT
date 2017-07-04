@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b0828
+    const v1, 0x7f0b0829
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -66,7 +66,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryDetailDimension;->social_story_detail_owner_name_text_size:I
 
-    const v1, 0x7f0b0827
+    const v1, 0x7f0b0828
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -74,7 +74,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryDetailDimension;->social_story_detail_like_comment_number_text_size:I
 
-    const v1, 0x7f0b0824
+    const v1, 0x7f0b0825
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -82,7 +82,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryDetailDimension;->social_story_detail_last_comment_person_text_size:I
 
-    const v1, 0x7f0b0825
+    const v1, 0x7f0b0826
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -90,7 +90,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryDetailDimension;->social_story_detail_last_comment_text_size:I
 
-    const v1, 0x7f0b0826
+    const v1, 0x7f0b0827
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -98,7 +98,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryDetailDimension;->social_story_detail_like_comment_icon_size:I
 
-    const v1, 0x7f0b0829
+    const v1, 0x7f0b082a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -106,7 +106,7 @@
 
     iput v1, p0, Lcom/sec/samsung/gallery/view/DimensionConfig$SocialStoryDetailDimension;->social_story_detail_v_h_gap:I
 
-    const v1, 0x7f0b081c
+    const v1, 0x7f0b081d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

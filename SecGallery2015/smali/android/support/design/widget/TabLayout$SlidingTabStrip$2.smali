@@ -42,14 +42,12 @@
 
     iget v1, p0, Landroid/support/design/widget/TabLayout$SlidingTabStrip$2;->val$position:I
 
-    # setter for: Landroid/support/design/widget/TabLayout$SlidingTabStrip;->mSelectedPosition:I
     invoke-static {v0, v1}, Landroid/support/design/widget/TabLayout$SlidingTabStrip;->access$1702(Landroid/support/design/widget/TabLayout$SlidingTabStrip;I)I
 
     iget-object v0, p0, Landroid/support/design/widget/TabLayout$SlidingTabStrip$2;->this$1:Landroid/support/design/widget/TabLayout$SlidingTabStrip;
 
     const/4 v1, 0x0
 
-    # setter for: Landroid/support/design/widget/TabLayout$SlidingTabStrip;->mSelectionOffset:F
     invoke-static {v0, v1}, Landroid/support/design/widget/TabLayout$SlidingTabStrip;->access$1802(Landroid/support/design/widget/TabLayout$SlidingTabStrip;F)F
 
     return-void
@@ -62,14 +60,12 @@
 
     iget v1, p0, Landroid/support/design/widget/TabLayout$SlidingTabStrip$2;->val$position:I
 
-    # setter for: Landroid/support/design/widget/TabLayout$SlidingTabStrip;->mSelectedPosition:I
     invoke-static {v0, v1}, Landroid/support/design/widget/TabLayout$SlidingTabStrip;->access$1702(Landroid/support/design/widget/TabLayout$SlidingTabStrip;I)I
 
     iget-object v0, p0, Landroid/support/design/widget/TabLayout$SlidingTabStrip$2;->this$1:Landroid/support/design/widget/TabLayout$SlidingTabStrip;
 
     const/4 v1, 0x0
 
-    # setter for: Landroid/support/design/widget/TabLayout$SlidingTabStrip;->mSelectionOffset:F
     invoke-static {v0, v1}, Landroid/support/design/widget/TabLayout$SlidingTabStrip;->access$1802(Landroid/support/design/widget/TabLayout$SlidingTabStrip;F)F
 
     return-void

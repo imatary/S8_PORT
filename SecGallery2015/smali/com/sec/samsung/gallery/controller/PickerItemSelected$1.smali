@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/PickerItemSelected$1;->this$0:Lcom/sec/samsung/gallery/controller/PickerItemSelected;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PickerItemSelected;->mActivity:Landroid/app/Activity;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/PickerItemSelected;->access$000(Lcom/sec/samsung/gallery/controller/PickerItemSelected;)Landroid/app/Activity;
 
     move-result-object v1

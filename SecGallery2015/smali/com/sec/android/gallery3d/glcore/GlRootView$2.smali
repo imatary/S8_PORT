@@ -61,7 +61,6 @@
 
     move v6, p5
 
-    # invokes: Lcom/sec/android/gallery3d/glcore/GlRootView;->extractSmartClipDataInter(Lcom/sec/android/gallery3d/glcore/GlObject;Landroid/graphics/Rect;Landroid/graphics/Rect;IIZ)Landroid/graphics/Rect;
     invoke-static/range {v0 .. v6}, Lcom/sec/android/gallery3d/glcore/GlRootView;->access$300(Lcom/sec/android/gallery3d/glcore/GlRootView;Lcom/sec/android/gallery3d/glcore/GlObject;Landroid/graphics/Rect;Landroid/graphics/Rect;IIZ)Landroid/graphics/Rect;
 
     move-result-object p2

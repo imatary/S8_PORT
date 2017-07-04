@@ -159,7 +159,6 @@
 
     if-eqz v0, :cond_2
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$0()Ljava/lang/String;
 
     move-result-object v0
@@ -193,7 +192,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->this$0:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;->access$1(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader;)Landroid/content/Context;
 
     move-result-object v0

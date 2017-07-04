@@ -78,7 +78,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mGalleryFacade:Lorg/puremvc/java/multicore/patterns/facade/Facade;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$800(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Lorg/puremvc/java/multicore/patterns/facade/Facade;
 
     move-result-object v4
@@ -87,7 +86,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v6
@@ -96,7 +94,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v4
@@ -113,7 +110,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v4
@@ -169,7 +165,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v4
@@ -254,7 +249,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v4
@@ -290,7 +284,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/PostGalleryCmd$3;->this$0:Lcom/sec/samsung/gallery/controller/PostGalleryCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/PostGalleryCmd;->access$200(Lcom/sec/samsung/gallery/controller/PostGalleryCmd;)Landroid/app/Activity;
 
     move-result-object v4

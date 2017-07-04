@@ -41,12 +41,10 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->setCreateEventVisibleMode(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3600(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;Z)V
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState$13;->this$0:Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->handleLiveChannelAlbum()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;->access$3900(Lcom/sec/samsung/gallery/view/noitemview/NoItemViewState;)V
 
     return-void

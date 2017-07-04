@@ -75,7 +75,6 @@
 
     check-cast v0, Lcom/sec/android/gallery3d/ui/VideoScreenNail;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail;->mFilePath:Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail;->access$300(Lcom/sec/android/gallery3d/ui/VideoScreenNail;)Ljava/lang/String;
 
     move-result-object v0
@@ -129,7 +128,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;->mVideoPlayer:Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$400(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Landroid/media/MediaPlayer;
 
     move-result-object v1
@@ -138,7 +136,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;->mVideoPlayer:Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->getState()Lcom/sec/android/gallery3d/ui/VideoScreenNail$PlayerStates;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$200(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Lcom/sec/android/gallery3d/ui/VideoScreenNail$PlayerStates;
 
     move-result-object v1
@@ -149,7 +146,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;->mVideoPlayer:Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->mMediaPlayer:Landroid/media/MediaPlayer;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$400(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Landroid/media/MediaPlayer;
 
     move-result-object v1
@@ -247,7 +243,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/VideoScreenNail$MediaPlayerThread;->mVideoPlayer:Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->getState()Lcom/sec/android/gallery3d/ui/VideoScreenNail$PlayerStates;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;->access$200(Lcom/sec/android/gallery3d/ui/VideoScreenNail$VideoPlayer;)Lcom/sec/android/gallery3d/ui/VideoScreenNail$PlayerStates;
 
     move-result-object v0

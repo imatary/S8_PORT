@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->mNetworkWarningDialog:Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;->access$000(Lcom/sec/samsung/gallery/controller/SCloudVideoDownloadCmd;)Lcom/sec/samsung/gallery/view/common/NetworkWarningDialog;
 
     move-result-object v0

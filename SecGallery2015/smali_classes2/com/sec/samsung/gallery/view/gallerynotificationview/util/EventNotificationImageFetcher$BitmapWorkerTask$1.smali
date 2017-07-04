@@ -52,7 +52,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask$1;->this$1:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->mComposeImageItems:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->access$800(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;)Landroid/util/SparseArray;
 
     move-result-object v1
@@ -73,7 +72,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask$1;->this$1:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->mViewModelReference:Ljava/lang/ref/WeakReference;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->access$600(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;)Ljava/lang/ref/WeakReference;
 
     move-result-object v1
@@ -90,7 +88,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->this$0:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->rotateAndCropCenter(Lcom/sec/samsung/gallery/view/image_manager/ComposeImageItem;)Landroid/graphics/Bitmap;
     invoke-static {v1, p1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$900(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;Lcom/sec/samsung/gallery/view/image_manager/ComposeImageItem;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -107,7 +104,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask$1;->this$1:Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->mImageViewReference:Ljava/lang/ref/WeakReference;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;->access$1000(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher$BitmapWorkerTask;)Ljava/lang/ref/WeakReference;
 
     move-result-object v1
@@ -118,7 +114,6 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->drawCoverBitmap(Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
     invoke-static {v2, v3, v1}, Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;->access$400(Lcom/sec/samsung/gallery/view/gallerynotificationview/util/EventNotificationImageFetcher;Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
 
     goto :goto_0

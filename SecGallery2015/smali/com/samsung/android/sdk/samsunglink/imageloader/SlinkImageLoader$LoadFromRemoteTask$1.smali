@@ -39,12 +39,10 @@
 
     iget-object v0, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask$1;->this$1:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;)Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
     move-result-object v0
 
-    # invokes: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->isCanceled()Z
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Z
 
     move-result v0
@@ -57,19 +55,16 @@
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask$1;->this$1:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;)Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
     move-result-object v0
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->mListener:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageListener;
     invoke-static {v0}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;->access$3(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;)Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageListener;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask$1;->this$1:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;
 
-    # getter for: Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;->imageContainer:Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
     invoke-static {v1}, Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;->access$0(Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$LoadFromRemoteTask;)Lcom/samsung/android/sdk/samsunglink/imageloader/SlinkImageLoader$ImageContainer;
 
     move-result-object v1

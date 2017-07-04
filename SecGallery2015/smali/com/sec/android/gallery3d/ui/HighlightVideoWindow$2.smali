@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$2;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mRelativeLayout:Landroid/widget/RelativeLayout;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1200(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Landroid/widget/RelativeLayout;
 
     move-result-object v0
@@ -53,12 +52,10 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$2;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->pauseHighlightVideoWindow()V
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$1300(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)V
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$2;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mHighlightPreview:Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$200(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;
 
     move-result-object v0
@@ -67,7 +64,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$2;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mLinearLayout:Landroid/widget/LinearLayout;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$400(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Landroid/widget/LinearLayout;
 
     move-result-object v0
@@ -76,14 +72,12 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$2;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mLinearLayout:Landroid/widget/LinearLayout;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$400(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow$2;->this$0:Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mPreviewLayout:Landroid/widget/RelativeLayout;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$500(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;)Landroid/widget/RelativeLayout;
 
     move-result-object v1
@@ -95,7 +89,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->mHighlightPreview:Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;->access$202(Lcom/sec/android/gallery3d/ui/HighlightVideoWindow;Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;)Lcom/samsung/app/highlightplayer/Gallery/HighlightPreview;
 
     goto :goto_0

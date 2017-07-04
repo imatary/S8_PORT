@@ -342,18 +342,18 @@
     return-object v0
 .end method
 
-.method static synthetic access$10100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
-    .locals 1
+.method static synthetic access$10100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
+    .locals 0
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+    invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->selectMedia(I)V
 
-    return-object v0
+    return-void
 .end method
 
-.method static synthetic access$10200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+.method static synthetic access$10200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     return-object v0
 .end method
@@ -366,7 +366,39 @@
     return-object v0
 .end method
 
-.method static synthetic access$10400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
+.method static synthetic access$10400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$10500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$10600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$10700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$10800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
     .locals 0
 
     invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->selectMedia(I)V
@@ -374,44 +406,12 @@
     return-void
 .end method
 
-.method static synthetic access$10500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
+.method static synthetic access$10900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
     .locals 0
 
     invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->selectMedia(I)V
 
     return-void
-.end method
-
-.method static synthetic access$10600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
-
-    return-object v0
-.end method
-
-.method static synthetic access$10700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$10800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
-
-    return-object v0
-.end method
-
-.method static synthetic access$10900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-
-    return-object v0
 .end method
 
 .method static synthetic access$1100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
@@ -430,7 +430,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$11100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+.method static synthetic access$11100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$11200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
@@ -438,18 +446,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$11200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$11300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
-.end method
-
-.method static synthetic access$11300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
@@ -462,15 +462,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$11500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$11600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+.method static synthetic access$11500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
@@ -478,26 +470,34 @@
     return-object v0
 .end method
 
-.method static synthetic access$11700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$11600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
 
-.method static synthetic access$11800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$11900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+.method static synthetic access$11700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+
+    return-object v0
+.end method
+
+.method static synthetic access$11800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+
+    return-object v0
+.end method
+
+.method static synthetic access$11900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
@@ -510,18 +510,18 @@
     return-object v0
 .end method
 
-.method static synthetic access$12000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$12000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     return-object v0
 .end method
 
-.method static synthetic access$12100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+.method static synthetic access$12100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
@@ -542,10 +542,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$12400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+.method static synthetic access$12400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
@@ -558,34 +558,34 @@
     return-object v0
 .end method
 
-.method static synthetic access$12600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$12600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
 
-.method static synthetic access$12700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$12700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     return-object v0
 .end method
 
-.method static synthetic access$12800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$12800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     return-object v0
 .end method
 
-.method static synthetic access$12900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$12900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     return-object v0
 .end method
@@ -598,10 +598,10 @@
     return-void
 .end method
 
-.method static synthetic access$13000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+.method static synthetic access$13000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -614,10 +614,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$13200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+.method static synthetic access$13200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -630,10 +630,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$13400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$13400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     return-object v0
 .end method
@@ -654,26 +654,26 @@
     return-object v0
 .end method
 
-.method static synthetic access$13700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$13700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
 
-.method static synthetic access$13800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+.method static synthetic access$13800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
 
-.method static synthetic access$13900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$13900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -686,15 +686,7 @@
     return-void
 .end method
 
-.method static synthetic access$14000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
-.end method
-
-.method static synthetic access$14100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+.method static synthetic access$14000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
@@ -702,34 +694,42 @@
     return-object v0
 .end method
 
-.method static synthetic access$14200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+.method static synthetic access$14100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     return-object v0
 .end method
 
-.method static synthetic access$14300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->selectMedia(I)V
-
-    return-void
-.end method
-
-.method static synthetic access$14400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+.method static synthetic access$14200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     return-object v0
 .end method
 
-.method static synthetic access$14500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+.method static synthetic access$14300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$14400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$14500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
 
     return-object v0
 .end method
@@ -742,26 +742,26 @@
     return-object v0
 .end method
 
-.method static synthetic access$14700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
-
-    return-object v0
-.end method
-
-.method static synthetic access$14800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
+.method static synthetic access$14700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
     .locals 0
 
-    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateCountOnActionBar()V
+    invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->selectMedia(I)V
 
     return-void
 .end method
 
-.method static synthetic access$14900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
+.method static synthetic access$14800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$14900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     return-object v0
 .end method
@@ -774,31 +774,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$15000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
-
-    return-object v0
-.end method
-
-.method static synthetic access$15100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
-
-    return-object v0
-.end method
-
-.method static synthetic access$15200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-
-    return-object v0
-.end method
-
-.method static synthetic access$15300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+.method static synthetic access$15000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
@@ -806,7 +782,63 @@
     return-object v0
 .end method
 
-.method static synthetic access$15400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
+.method static synthetic access$15100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$15200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateCountOnActionBar()V
+
+    return-void
+.end method
+
+.method static synthetic access$15300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
+
+    return-object v0
+.end method
+
+.method static synthetic access$15400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
+
+    return-object v0
+.end method
+
+.method static synthetic access$15500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
+
+    return-object v0
+.end method
+
+.method static synthetic access$15600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+
+    return-object v0
+.end method
+
+.method static synthetic access$15700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$15800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
     .locals 0
 
     invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->startDetailViewInUIThread(I)V
@@ -814,42 +846,10 @@
     return-void
 .end method
 
-.method static synthetic access$15500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$15900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
-.end method
-
-.method static synthetic access$15600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mNoItemView:Landroid/view/View;
-
-    return-object v0
-.end method
-
-.method static synthetic access$15700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mNoItemView:Landroid/view/View;
-
-    return-object v0
-.end method
-
-.method static synthetic access$15800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;III)V
-    .locals 0
-
-    invoke-virtual {p0, p1, p2, p3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setEmptyHistoryText(III)V
-
-    return-void
-.end method
-
-.method static synthetic access$15900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mNoItemView:Landroid/view/View;
 
     return-object v0
 .end method
@@ -862,28 +862,28 @@
     return-void
 .end method
 
-.method static synthetic access$16000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
-
-    return-object v0
-.end method
-
-.method static synthetic access$16100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
-
-    return-object v0
-.end method
-
-.method static synthetic access$16200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
+.method static synthetic access$16000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mNoItemView:Landroid/view/View;
 
     return-object v0
+.end method
+
+.method static synthetic access$16100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mNoItemView:Landroid/view/View;
+
+    return-object v0
+.end method
+
+.method static synthetic access$16200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;III)V
+    .locals 0
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setEmptyHistoryText(III)V
+
+    return-void
 .end method
 
 .method static synthetic access$16300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
@@ -894,20 +894,20 @@
     return-object v0
 .end method
 
-.method static synthetic access$16400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
+.method static synthetic access$16400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mNoItemView:Landroid/view/View;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
 
     return-object v0
 .end method
 
-.method static synthetic access$16500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Z
+.method static synthetic access$16500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
     .locals 1
 
-    iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsSearching:Z
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
 
-    return v0
+    return-object v0
 .end method
 
 .method static synthetic access$16600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
@@ -926,20 +926,20 @@
     return-object v0
 .end method
 
-.method static synthetic access$16800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/ViewGroup;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mContainer:Landroid/view/ViewGroup;
-
-    return-object v0
-.end method
-
-.method static synthetic access$16900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
+.method static synthetic access$16800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mNoItemView:Landroid/view/View;
 
     return-object v0
+.end method
+
+.method static synthetic access$16900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsSearching:Z
+
+    return v0
 .end method
 
 .method static synthetic access$1700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
@@ -974,7 +974,31 @@
     return-object v0
 .end method
 
-.method static synthetic access$17300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/ViewGroup;
+.method static synthetic access$17300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mNoItemView:Landroid/view/View;
+
+    return-object v0
+.end method
+
+.method static synthetic access$17400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mNoItemView:Landroid/view/View;
+
+    return-object v0
+.end method
+
+.method static synthetic access$17500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mNoItemView:Landroid/view/View;
+
+    return-object v0
+.end method
+
+.method static synthetic access$17600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/ViewGroup;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mContainer:Landroid/view/ViewGroup;
@@ -982,7 +1006,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$17400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/ViewGroup;
+.method static synthetic access$17700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/ViewGroup;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mContainer:Landroid/view/ViewGroup;
@@ -990,7 +1014,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$17500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/ViewGroup;
+.method static synthetic access$17800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/ViewGroup;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mContainer:Landroid/view/ViewGroup;
@@ -998,38 +1022,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$17600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateRecommendView(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic access$17700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
+.method static synthetic access$17900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/ViewGroup;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mContainer:Landroid/view/ViewGroup;
 
     return-object v0
-.end method
-
-.method static synthetic access$17800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$17900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;IZ)Z
-    .locals 1
-
-    invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->startDetailViewState(IZ)Z
-
-    move-result v0
-
-    return v0
 .end method
 
 .method static synthetic access$1800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)V
@@ -1040,12 +1038,12 @@
     return-void
 .end method
 
-.method static synthetic access$18000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
-    .locals 1
+.method static synthetic access$18000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;)V
+    .locals 0
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mDCHandler:Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
+    invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateRecommendView(Ljava/lang/String;)V
 
-    return-object v0
+    return-void
 .end method
 
 .method static synthetic access$18100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
@@ -1056,44 +1054,46 @@
     return-object v0
 .end method
 
-.method static synthetic access$18200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$18200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$18300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;IZ)Z
+    .locals 1
+
+    invoke-direct {p0, p1, p2}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->startDetailViewState(IZ)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static synthetic access$18400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mDCHandler:Lcom/samsung/android/devicecog/gallery/viewstatehandler/ActivityStateDCHandler;
+
+    return-object v0
+.end method
+
+.method static synthetic access$18500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/glcore/GlRootView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mRootView:Lcom/sec/android/gallery3d/glcore/GlRootView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$18600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
-.end method
-
-.method static synthetic access$18300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
-.end method
-
-.method static synthetic access$18402(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsMovableKeypad:Z
-
-    return p1
-.end method
-
-.method static synthetic access$18500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
-.end method
-
-.method static synthetic access$18602(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsInputMethodShown:Z
-
-    return p1
 .end method
 
 .method static synthetic access$18700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -1104,20 +1104,20 @@
     return-object v0
 .end method
 
-.method static synthetic access$18800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$18802(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsMovableKeypad:Z
+
+    return p1
+.end method
+
+.method static synthetic access$18900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
-.end method
-
-.method static synthetic access$18900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;F)V
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setUpBtnColor(F)V
-
-    return-void
 .end method
 
 .method static synthetic access$1900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;Ljava/lang/String;Lcom/sec/android/gallery3d/data/VisualSearchTagFilter$SearchKeywordInfo;)V
@@ -1128,7 +1128,39 @@
     return-void
 .end method
 
-.method static synthetic access$19000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;F)V
+.method static synthetic access$19002(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsInputMethodShown:Z
+
+    return p1
+.end method
+
+.method static synthetic access$19100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$19200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$19300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;F)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setUpBtnColor(F)V
+
+    return-void
+.end method
+
+.method static synthetic access$19400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;F)V
     .locals 0
 
     invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setOverFlowColor(F)V
@@ -1136,7 +1168,7 @@
     return-void
 .end method
 
-.method static synthetic access$19100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+.method static synthetic access$19500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
@@ -1144,7 +1176,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$19200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Lcom/sec/android/gallery3d/data/MediaItem;IZ)V
+.method static synthetic access$19600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Lcom/sec/android/gallery3d/data/MediaItem;IZ)V
     .locals 0
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->selectMedia(Lcom/sec/android/gallery3d/data/MediaItem;IZ)V
@@ -1152,7 +1184,7 @@
     return-void
 .end method
 
-.method static synthetic access$19300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
+.method static synthetic access$19700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
     .locals 0
 
     invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->startDetailViewInUIThread(I)V
@@ -1200,12 +1232,14 @@
     return-object v0
 .end method
 
-.method static synthetic access$2300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$2300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->isDesktopMode()Z
 
-    return-object v0
+    move-result v0
+
+    return v0
 .end method
 
 .method static synthetic access$2400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
@@ -1216,42 +1250,42 @@
     return-object v0
 .end method
 
-.method static synthetic access$2500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-
-    return-object v0
-.end method
-
-.method static synthetic access$2600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-
-    return-object v0
-.end method
-
-.method static synthetic access$2700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-
-    return-object v0
-.end method
-
-.method static synthetic access$2800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
-
-    return-object v0
-.end method
-
-.method static synthetic access$2900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$2500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$2600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Z)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateSecondViewLayout(Z)V
+
+    return-void
+.end method
+
+.method static synthetic access$2700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$2800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$2900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
 
     return-object v0
 .end method
@@ -1264,7 +1298,31 @@
     return-object v0
 .end method
 
-.method static synthetic access$3000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$3000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
+
+    return-object v0
+.end method
+
+.method static synthetic access$3100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
+
+    return-object v0
+.end method
+
+.method static synthetic access$3200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchTagController:Lcom/sec/samsung/gallery/view/gallerysearch/SearchTagController;
+
+    return-object v0
+.end method
+
+.method static synthetic access$3300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
@@ -1272,7 +1330,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$3100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
+.method static synthetic access$3400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+
+    return-object v0
+.end method
+
+.method static synthetic access$3500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->insertSearchByCategorySALog()V
@@ -1280,7 +1346,7 @@
     return-void
 .end method
 
-.method static synthetic access$3200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$3600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -1288,7 +1354,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/util/AddItemToChannel;
+.method static synthetic access$3700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/util/AddItemToChannel;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mAddItemToChannel:Lcom/sec/samsung/gallery/util/AddItemToChannel;
@@ -1296,7 +1362,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3302(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Lcom/sec/samsung/gallery/util/AddItemToChannel;)Lcom/sec/samsung/gallery/util/AddItemToChannel;
+.method static synthetic access$3702(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Lcom/sec/samsung/gallery/util/AddItemToChannel;)Lcom/sec/samsung/gallery/util/AddItemToChannel;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mAddItemToChannel:Lcom/sec/samsung/gallery/util/AddItemToChannel;
@@ -1304,7 +1370,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$3400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+.method static synthetic access$3800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -1312,42 +1378,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$3500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$3900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$3600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateView(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic access$3700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
-
-    return-object v0
-.end method
-
-.method static synthetic access$3800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
-
-    return-object v0
-.end method
-
-.method static synthetic access$3900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     return-object v0
 .end method
@@ -1360,7 +1394,39 @@
     return-object v0
 .end method
 
-.method static synthetic access$4000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
+.method static synthetic access$4000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateView(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method static synthetic access$4100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$4200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$4300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$4400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mUpdateSelectionModeTask:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
@@ -1368,7 +1434,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
+.method static synthetic access$4500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mUpdateSelectionModeTask:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
@@ -1376,7 +1442,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4202(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;)Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
+.method static synthetic access$4602(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;)Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mUpdateSelectionModeTask:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
@@ -1384,7 +1450,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$4300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
+.method static synthetic access$4700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mUpdateSelectionModeTask:Lcom/sec/samsung/gallery/view/gallerysearch/base/view/SearchViewState$UpdateSelectionModeTask;
@@ -1392,7 +1458,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
+.method static synthetic access$4800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
     .locals 1
 
     invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->getItemIndexFromDualScreenFocusPath()I
@@ -1402,42 +1468,10 @@
     return v0
 .end method
 
-.method static synthetic access$4500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
+.method static synthetic access$4900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mComposeView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$4600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
-.end method
-
-.method static synthetic access$4700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
-.end method
-
-.method static synthetic access$4800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-
-    return-object v0
-.end method
-
-.method static synthetic access$4900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     return-object v0
 .end method
@@ -1450,12 +1484,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$5002(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
-    .locals 0
+.method static synthetic access$5000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
 
-    iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mInputMethodHeight:I
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    return p1
+    return-object v0
 .end method
 
 .method static synthetic access$5100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -1466,12 +1500,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$5200()Z
+.method static synthetic access$5200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     .locals 1
 
-    sget-boolean v0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->FEATURE_IS_TABLET:Z
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
-    return v0
+    return-object v0
 .end method
 
 .method static synthetic access$5300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
@@ -1482,7 +1516,39 @@
     return-object v0
 .end method
 
-.method static synthetic access$5400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Z
+.method static synthetic access$5402(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mInputMethodHeight:I
+
+    return p1
+.end method
+
+.method static synthetic access$5500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$5600()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->FEATURE_IS_TABLET:Z
+
+    return v0
+.end method
+
+.method static synthetic access$5700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
+.end method
+
+.method static synthetic access$5800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mIsMovableKeypad:Z
@@ -1490,44 +1556,12 @@
     return v0
 .end method
 
-.method static synthetic access$5502(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
+.method static synthetic access$5902(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
     .locals 0
 
     iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mInputMethodHeight:I
 
     return p1
-.end method
-
-.method static synthetic access$5602(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mInputMethodHeight:I
-
-    return p1
-.end method
-
-.method static synthetic access$5700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-
-    return-object v0
-.end method
-
-.method static synthetic access$5800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->adjustSipSize()V
-
-    return-void
-.end method
-
-.method static synthetic access$5900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;II)V
-    .locals 0
-
-    invoke-virtual {p0, p1, p2, p3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setEmptyHistoryText(Ljava/lang/String;II)V
-
-    return-void
 .end method
 
 .method static synthetic access$600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
@@ -1538,7 +1572,39 @@
     return-object v0
 .end method
 
-.method static synthetic access$6000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;III)V
+.method static synthetic access$6002(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mInputMethodHeight:I
+
+    return p1
+.end method
+
+.method static synthetic access$6100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+
+    return-object v0
+.end method
+
+.method static synthetic access$6200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->adjustSipSize()V
+
+    return-void
+.end method
+
+.method static synthetic access$6300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Ljava/lang/String;II)V
+    .locals 0
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setEmptyHistoryText(Ljava/lang/String;II)V
+
+    return-void
+.end method
+
+.method static synthetic access$6400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;III)V
     .locals 0
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setEmptyHistoryText(III)V
@@ -1546,44 +1612,12 @@
     return-void
 .end method
 
-.method static synthetic access$6100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
+.method static synthetic access$6500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateViewVisibility()V
 
     return-void
-.end method
-
-.method static synthetic access$6200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
-
-    return-object v0
-.end method
-
-.method static synthetic access$6300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
-    .locals 1
-
-    iget v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
-
-    return v0
-.end method
-
-.method static synthetic access$6402(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
-
-    return p1
-.end method
-
-.method static synthetic access$6500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
-    .locals 1
-
-    iget v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
-
-    return v0
 .end method
 
 .method static synthetic access$6600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
@@ -1594,15 +1628,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$6700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
-
-    return-object v0
-.end method
-
-.method static synthetic access$6800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
+.method static synthetic access$6700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
     .locals 1
 
     iget v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
@@ -1610,12 +1636,20 @@
     return v0
 .end method
 
-.method static synthetic access$6902(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
+.method static synthetic access$6802(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
     .locals 0
 
     iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
 
     return p1
+.end method
+
+.method static synthetic access$6900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
+    .locals 1
+
+    iget v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
+
+    return v0
 .end method
 
 .method static synthetic access$700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Landroid/view/View;
@@ -1626,20 +1660,20 @@
     return-object v0
 .end method
 
-.method static synthetic access$7000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
+.method static synthetic access$7000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
     .locals 1
 
-    iget v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
-    return v0
+    return-object v0
 .end method
 
-.method static synthetic access$7102(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
-    .locals 0
+.method static synthetic access$7100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
+    .locals 1
 
-    iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mShrinkOption:I
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
 
-    return p1
+    return-object v0
 .end method
 
 .method static synthetic access$7200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
@@ -1650,12 +1684,12 @@
     return v0
 .end method
 
-.method static synthetic access$7300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
-    .locals 1
+.method static synthetic access$7302(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
+    .locals 0
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
+    iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
 
-    return-object v0
+    return p1
 .end method
 
 .method static synthetic access$7400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
@@ -1669,7 +1703,7 @@
 .method static synthetic access$7502(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
     .locals 0
 
-    iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
+    iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mShrinkOption:I
 
     return p1
 .end method
@@ -1682,28 +1716,28 @@
     return v0
 .end method
 
-.method static synthetic access$7702(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Lcom/sec/android/gallery3d/data/MediaItem;)Lcom/sec/android/gallery3d/data/MediaItem;
+.method static synthetic access$7700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/ActionBarManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$7800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
+    .locals 1
+
+    iget v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
+
+    return v0
+.end method
+
+.method static synthetic access$7902(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)I
     .locals 0
 
-    iput-object p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mCurrentMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
+    iput p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
 
-    return-object p1
-.end method
-
-.method static synthetic access$7800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
-
-    return-object v0
-.end method
-
-.method static synthetic access$7900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
-
-    return-object v0
+    return p1
 .end method
 
 .method static synthetic access$800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/KeywordSuggestionListViewAdapter$SuggestionFilter;
@@ -1714,71 +1748,23 @@
     return-object v0
 .end method
 
-.method static synthetic access$8000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
+.method static synthetic access$8000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)I
+    .locals 1
+
+    iget v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mFlags:I
+
+    return v0
+.end method
+
+.method static synthetic access$8102(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;Lcom/sec/android/gallery3d/data/MediaItem;)Lcom/sec/android/gallery3d/data/MediaItem;
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->selectMedia(I)V
+    iput-object p1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mCurrentMediaItem:Lcom/sec/android/gallery3d/data/MediaItem;
 
-    return-void
+    return-object p1
 .end method
 
-.method static synthetic access$8100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
-
-    return-object v0
-.end method
-
-.method static synthetic access$8200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
-
-    return-object v0
-.end method
-
-.method static synthetic access$8300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
-
-    return-object v0
-.end method
-
-.method static synthetic access$8400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-
-    return-object v0
-.end method
-
-.method static synthetic access$8500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-
-    return-object v0
-.end method
-
-.method static synthetic access$8600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
-    .locals 0
-
-    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->showDeleteDialog()V
-
-    return-void
-.end method
-
-.method static synthetic access$8700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
-
-    return-object v0
-.end method
-
-.method static synthetic access$8800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+.method static synthetic access$8200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
@@ -1786,12 +1772,60 @@
     return-object v0
 .end method
 
-.method static synthetic access$8900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
+.method static synthetic access$8300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
+
+    return-object v0
+.end method
+
+.method static synthetic access$8400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->enterSelectionMode()V
+    invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->selectMedia(I)V
 
     return-void
+.end method
+
+.method static synthetic access$8500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
+
+    return-object v0
+.end method
+
+.method static synthetic access$8600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
+
+    return-object v0
+.end method
+
+.method static synthetic access$8700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
+
+    return-object v0
+.end method
+
+.method static synthetic access$8800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+
+    return-object v0
+.end method
+
+.method static synthetic access$8900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+
+    return-object v0
 .end method
 
 .method static synthetic access$900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
@@ -1805,36 +1839,12 @@
 .method static synthetic access$9000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
     .locals 0
 
-    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateCountOnActionBar()V
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->showDeleteDialog()V
 
     return-void
 .end method
 
-.method static synthetic access$9100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
-
-    return-object v0
-.end method
-
-.method static synthetic access$9200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
-
-    return-object v0
-.end method
-
-.method static synthetic access$9300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
-
-    return-object v0
-.end method
-
-.method static synthetic access$9400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+.method static synthetic access$9100(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
@@ -1842,7 +1852,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$9500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
+.method static synthetic access$9200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
@@ -1850,26 +1860,50 @@
     return-object v0
 .end method
 
-.method static synthetic access$9600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
-
-    return-object v0
-.end method
-
-.method static synthetic access$9700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;I)V
+.method static synthetic access$9300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->selectMedia(I)V
+    invoke-direct {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->enterSelectionMode()V
 
     return-void
 .end method
 
-.method static synthetic access$9800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+.method static synthetic access$9400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->updateCountOnActionBar()V
+
+    return-void
+.end method
+
+.method static synthetic access$9500(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
     .locals 1
 
-    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mSearchItemAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeSearchItemAdapter;
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
+
+    return-object v0
+.end method
+
+.method static synthetic access$9600(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
+
+    return-object v0
+.end method
+
+.method static synthetic access$9700(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/samsung/gallery/view/AbstractActionBar;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActionBar:Lcom/sec/samsung/gallery/view/AbstractActionBar;
+
+    return-object v0
+.end method
+
+.method static synthetic access$9800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     return-object v0
 .end method
@@ -1933,7 +1967,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0b080a
+    const v12, 0x7f0b080b
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2225,7 +2259,7 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mClearHistoryListButton:Landroid/widget/Button;
 
-    const v4, 0x7f0202a3
+    const v4, 0x7f0202a5
 
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setBackgroundResource(I)V
 
@@ -2827,7 +2861,7 @@
 
     if-eqz v3, :cond_1
 
-    const v3, 0x7f0a0846
+    const v3, 0x7f0a0854
 
     :goto_0
     new-array v5, v6, [Ljava/lang/Object;
@@ -2855,24 +2889,38 @@
     return-void
 
     :cond_1
-    const v3, 0x7f0a0848
+    const v3, 0x7f0a0856
 
     goto :goto_0
 
     :cond_2
-    iget-object v3, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    iget-object v4, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
-    const v4, 0x7f0a0847
+    const-string/jumbo v3, "SearchView"
 
+    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    const v3, 0x7f0a051c
+
+    :goto_2
     new-array v5, v6, [Ljava/lang/Object;
 
-    invoke-static {v3, v4, v5}, Lcom/samsung/android/devicecog/gallery/controller/DCNlgManager;->getNlgRequestInfo(Landroid/content/Context;I[Ljava/lang/Object;)Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;
+    invoke-static {v4, v3, v5}, Lcom/samsung/android/devicecog/gallery/controller/DCNlgManager;->getNlgRequestInfo(Landroid/content/Context;I[Ljava/lang/Object;)Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;
 
     move-result-object v1
 
     sget-object v2, Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;->FAILURE:Lcom/samsung/android/devicecog/gallery/controller/SendResponseCmd$ResponseResult;
 
     goto :goto_1
+
+    :cond_3
+    const v3, 0x7f0a0855
+
+    goto :goto_2
 .end method
 
 .method private handleEventKeywordChanged(Ljava/lang/String;)V

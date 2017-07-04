@@ -71,7 +71,6 @@
 
     iget-object v6, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v6}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$500(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)I
 
     move-result v6
@@ -90,12 +89,10 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$500(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)I
 
     move-result v5
 
-    # invokes: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->IsShowErrorInfoDialog(I)Z
     invoke-static {v4, v5}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$700(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;I)Z
 
     move-result v4
@@ -104,14 +101,12 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$500(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)I
 
     move-result v2
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->isUseGalleryDialog()Z
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$800(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Z
 
     move-result v4
@@ -120,7 +115,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$600(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Landroid/app/Activity;
 
     move-result-object v4
@@ -129,7 +123,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$600(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Landroid/app/Activity;
 
     move-result-object v4
@@ -144,7 +137,6 @@
     :goto_0
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v4, v7}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$502(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;I)I
 
     :cond_1
@@ -191,7 +183,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->isSbeamOn()Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$400(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Z
 
     move-result v0
@@ -309,7 +300,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mActivity:Landroid/app/Activity;
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$600(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Landroid/app/Activity;
 
     move-result-object v16
@@ -328,7 +318,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mActivity:Landroid/app/Activity;
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$600(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Landroid/app/Activity;
 
     move-result-object v16
@@ -382,7 +371,6 @@
 
     const/16 v17, 0x3
 
-    # setter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static/range {v16 .. v17}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$502(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;I)I
 
     const/4 v2, 0x0
@@ -483,7 +471,6 @@
 
     const/16 v17, 0x5
 
-    # setter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static/range {v16 .. v17}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$502(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;I)I
 
     const/4 v2, 0x0
@@ -497,7 +484,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mListener:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$OnGetFilePathListener;
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$300(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$OnGetFilePathListener;
 
     move-result-object v16
@@ -523,7 +509,6 @@
 
     const/16 v17, 0x2
 
-    # setter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static/range {v16 .. v17}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$502(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;I)I
 
     const/4 v2, 0x0
@@ -570,7 +555,6 @@
 
     const/16 v17, 0x4
 
-    # setter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static/range {v16 .. v17}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$502(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;I)I
 
     const/4 v2, 0x0
@@ -584,7 +568,6 @@
 
     move-object/from16 v16, v0
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mActivity:Landroid/app/Activity;
     invoke-static/range {v16 .. v16}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$600(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Landroid/app/Activity;
 
     move-result-object v16
@@ -736,7 +719,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v4}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$600(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Landroid/app/Activity;
 
     move-result-object v4
@@ -901,7 +883,6 @@
     :try_start_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mActivity:Landroid/app/Activity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$600(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Landroid/app/Activity;
 
     move-result-object v2
@@ -912,7 +893,6 @@
 
     const/4 v3, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$502(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;I)I
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -988,7 +968,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # invokes: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->isSbeamOn()Z
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$400(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)Z
 
     move-result v0
@@ -1013,7 +992,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$500(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;)I
 
     move-result v5
@@ -1043,7 +1021,6 @@
     :cond_1
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd$BeamPushCallback;->this$0:Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;
 
-    # setter for: Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->mNdefStatus:I
     invoke-static {v3, v5}, Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;->access$502(Lcom/sec/samsung/gallery/controller/AndroidBeamCmd;I)I
 
     const/4 v1, 0x0

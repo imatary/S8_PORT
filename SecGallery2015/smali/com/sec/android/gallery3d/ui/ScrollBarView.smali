@@ -49,7 +49,7 @@
 
     new-instance v1, Lcom/sec/android/gallery3d/glrenderer/NinePatchTexture;
 
-    const v2, 0x7f02034d
+    const v2, 0x7f02034f
 
     invoke-direct {v1, p1, v2}, Lcom/sec/android/gallery3d/glrenderer/NinePatchTexture;-><init>(Landroid/content/Context;I)V
 

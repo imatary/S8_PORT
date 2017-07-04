@@ -50,8 +50,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mChannelID:I
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1400(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)I
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1600(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)I
 
     move-result v2
 
@@ -185,13 +184,11 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->refreshListView()V
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1500(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1700(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1600(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1800(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
     move-result-object v4
 
@@ -203,8 +200,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1600(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1800(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
     move-result-object v4
 
@@ -221,7 +217,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mShareListAdapter:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$300(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
     move-result-object v4
@@ -239,8 +234,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1600(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1800(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
     move-result-object v4
 
@@ -252,8 +246,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1600(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1800(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
     move-result-object v4
 
@@ -270,8 +263,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mErrorDialog:Landroid/app/Dialog;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1700(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Landroid/app/Dialog;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Landroid/app/Dialog;
 
     move-result-object v4
 
@@ -279,8 +271,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mErrorDialog:Landroid/app/Dialog;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1700(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Landroid/app/Dialog;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Landroid/app/Dialog;
 
     move-result-object v4
 
@@ -297,8 +288,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showErrorDialog()V
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1800(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$2000(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
 
     goto/16 :goto_0
 
@@ -336,8 +326,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->showErrorDialog()V
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1800(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$2000(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)V
 
     goto/16 :goto_0
 
@@ -350,8 +339,7 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$1900(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$2100(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v4
 
@@ -361,7 +349,6 @@
 
     iget-object v4, p0, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState$DownloadStateReceiver;->this$0:Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->mShareListAdapter:Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
     invoke-static {v4}, Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;->access$300(Lcom/sec/samsung/gallery/view/channelsharedlist/SharedFriendsListViewState;)Lcom/sec/samsung/gallery/view/adapter/SharedFriendsListNewAdapter;
 
     move-result-object v4

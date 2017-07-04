@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$1;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPhotoIconView:Lcom/sec/android/gallery3d/ui/PhotoIconView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$100(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoIconView;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/PhotoView$1;->this$0:Lcom/sec/android/gallery3d/ui/PhotoView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/PhotoView;->mPhotoIconView:Lcom/sec/android/gallery3d/ui/PhotoIconView;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/PhotoView;->access$100(Lcom/sec/android/gallery3d/ui/PhotoView;)Lcom/sec/android/gallery3d/ui/PhotoIconView;
 
     move-result-object v0

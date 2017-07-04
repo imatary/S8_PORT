@@ -48,7 +48,6 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/android/gallery3d/settings/AccountSettingManager;->accountsResult:[Landroid/accounts/Account;
     invoke-static {v2}, Lcom/sec/android/gallery3d/settings/AccountSettingManager;->access$102([Landroid/accounts/Account;)[Landroid/accounts/Account;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0

@@ -40,7 +40,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->checkActiveObjForUpdatingShareIcon(II)V
     invoke-static {v0, p3, p5}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;II)V
 
     :cond_0
@@ -54,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->clearHLVideoIconBorder()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;->access$100(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelView;)V
 
     goto :goto_0

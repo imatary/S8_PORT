@@ -3,12 +3,12 @@
 .source "CropImage.java"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/view/View$OnSystemUiVisibilityChangeListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/sec/android/gallery3d/app/CropImage;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/sec/android/gallery3d/app/CropImage;->createSystemUiVisibilityChangeListener()Landroid/view/View$OnSystemUiVisibilityChangeListener;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,52 +34,41 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public onSystemUiVisibilityChange(I)V
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$4;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
 
-    invoke-virtual {v0}, Lcom/sec/android/gallery3d/app/CropImage;->isImageLoaded()Z
+    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/ui/CropView;
 
-    move-result v0
+    move-result-object v0
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_0
 
-    :goto_0
-    return-void
+    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$4;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/ui/CropView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/ui/CropView;->updateUseNaviBar()V
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$4;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/ui/CropView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/ui/CropView;->requestLayout()V
+
+    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$4;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
+
+    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2200(Lcom/sec/android/gallery3d/app/CropImage;)Lcom/sec/android/gallery3d/ui/CropView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/gallery3d/ui/CropView;->invalidate()V
 
     :cond_0
-    invoke-virtual {p1}, Landroid/view/View;->getId()I
-
-    move-result v0
-
-    packed-switch v0, :pswitch_data_0
-
-    :pswitch_0
-    goto :goto_0
-
-    :pswitch_1
-    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$4;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->handleCancelButton()V
-    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2300(Lcom/sec/android/gallery3d/app/CropImage;)V
-
-    goto :goto_0
-
-    :pswitch_2
-    iget-object v0, p0, Lcom/sec/android/gallery3d/app/CropImage$4;->this$0:Lcom/sec/android/gallery3d/app/CropImage;
-
-    # invokes: Lcom/sec/android/gallery3d/app/CropImage;->handleSaveButton()V
-    invoke-static {v0}, Lcom/sec/android/gallery3d/app/CropImage;->access$2200(Lcom/sec/android/gallery3d/app/CropImage;)V
-
-    goto :goto_0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x7f120078
-        :pswitch_1
-        :pswitch_0
-        :pswitch_2
-    .end packed-switch
+    return-void
 .end method

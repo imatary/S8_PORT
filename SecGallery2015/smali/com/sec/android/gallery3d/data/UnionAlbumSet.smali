@@ -628,6 +628,7 @@
     invoke-virtual/range {v0 .. v5}, Lcom/sec/samsung/gallery/util/LocalDatabaseManager;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_2
 
     move-result-object v7
 
@@ -663,7 +664,7 @@
 
     invoke-virtual {v9, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_1
-    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_2
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_3
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     add-int/lit8 v1, v1, 0x1
@@ -680,6 +681,7 @@
     :try_end_2
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Ljava/lang/NumberFormatException; {:try_start_2 .. :try_end_2} :catch_2
 
     :cond_1
     :goto_1
@@ -692,15 +694,17 @@
     invoke-virtual {v2, v1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
     :try_end_3
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_3 .. :try_end_3} :catch_1
+    .catch Ljava/lang/NumberFormatException; {:try_start_3 .. :try_end_3} :catch_2
 
     goto :goto_1
 
     :catch_1
     move-exception v8
 
+    :goto_2
     const-string/jumbo v1, "UnionAlbumSet"
 
-    invoke-virtual {v8}, Landroid/database/sqlite/SQLiteException;->toString()Ljava/lang/String;
+    invoke-virtual {v8}, Ljava/lang/RuntimeException;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -713,10 +717,16 @@
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
     :try_end_4
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/lang/NumberFormatException; {:try_start_4 .. :try_end_4} :catch_2
 
     goto :goto_1
 
     :catch_2
+    move-exception v8
+
+    goto :goto_2
+
+    :catch_3
     move-exception v1
 
     :try_start_5
@@ -733,7 +743,7 @@
 
     move-object v1, v14
 
-    :goto_2
+    :goto_3
     if-eqz v7, :cond_3
 
     if-eqz v2, :cond_4
@@ -741,34 +751,36 @@
     :try_start_6
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
     :try_end_6
-    .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_3
+    .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_4
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_6 .. :try_end_6} :catch_1
+    .catch Ljava/lang/NumberFormatException; {:try_start_6 .. :try_end_6} :catch_2
 
     :cond_3
-    :goto_3
+    :goto_4
     :try_start_7
     throw v1
 
-    :catch_3
+    :catch_4
     move-exception v3
 
     invoke-virtual {v2, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    goto :goto_3
+    goto :goto_4
 
     :cond_4
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
     :try_end_7
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_7 .. :try_end_7} :catch_1
+    .catch Ljava/lang/NumberFormatException; {:try_start_7 .. :try_end_7} :catch_2
 
-    goto :goto_3
+    goto :goto_4
 
     :catchall_1
     move-exception v1
 
     move-object v2, v12
 
-    goto :goto_2
+    goto :goto_3
 .end method
 
 .method private getMediaType(I)Ljava/lang/String;

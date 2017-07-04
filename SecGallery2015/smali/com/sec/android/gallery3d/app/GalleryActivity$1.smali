@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/app/GalleryActivity$1;->this$0:Lcom/sec/android/gallery3d/app/GalleryActivity;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryActivity;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/app/GalleryActivity;->access$000(Lcom/sec/android/gallery3d/app/GalleryActivity;)Landroid/os/Handler;
 
     move-result-object v0

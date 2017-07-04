@@ -509,7 +509,7 @@
 
     if-ne v1, v2, :cond_5
 
-    const v1, 0x7f120289
+    const v1, 0x7f120288
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/photoview/PhotoActionBarForNormal;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
@@ -560,7 +560,7 @@
 
     if-eqz v0, :cond_3
 
-    const v0, 0x7f120286
+    const v0, 0x7f120285
 
     invoke-static {p1, v0, p2}, Lcom/sec/samsung/gallery/view/utils/MenuHelper;->setMenuItemVisibility(Landroid/view/Menu;IZ)V
 
@@ -621,7 +621,7 @@
 
     if-ne v0, v3, :cond_0
 
-    const v3, 0x7f120289
+    const v3, 0x7f120288
 
     if-nez p2, :cond_1
 
@@ -670,7 +670,7 @@
 
     if-ne v0, v1, :cond_0
 
-    const v1, 0x7f120289
+    const v1, 0x7f120288
 
     if-nez p2, :cond_1
 
@@ -1035,8 +1035,8 @@
     :sswitch_data_0
     .sparse-switch
         0x7f12007c -> :sswitch_4
-        0x7f120286 -> :sswitch_b
-        0x7f120289 -> :sswitch_0
+        0x7f120285 -> :sswitch_b
+        0x7f120288 -> :sswitch_0
         0x7f12028b -> :sswitch_3
         0x7f12028d -> :sswitch_7
         0x7f120290 -> :sswitch_2

@@ -104,42 +104,34 @@
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest$Builder;->mGroupId:Ljava/lang/String;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->mGroupId:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->access$002(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest$Builder;->mStartFileName:Ljava/lang/String;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->mStartFileName:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->access$102(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;Ljava/lang/String;)Ljava/lang/String;
 
     iget v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest$Builder;->mContentCount:I
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->mContentCount:I
     invoke-static {v0, v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->access$202(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;I)I
 
     iget-boolean v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest$Builder;->mDeleted:Z
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->mDeleted:Z
     invoke-static {v0, v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->access$302(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;Z)Z
 
     iget v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest$Builder;->mRevision:I
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->mRevision:I
     invoke-static {v0, v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->access$402(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;I)I
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest$Builder;->mFolderorFileName:Ljava/lang/String;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->mFolderorFileName:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->access$502(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v1, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest$Builder;->mFolderPath:Ljava/lang/String;
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->mFolderPath:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->access$602(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;Ljava/lang/String;)Ljava/lang/String;
 
     iget-wide v2, p0, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest$Builder;->mModifiedAfter:J
 
-    # setter for: Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->mModifiedAfter:J
     invoke-static {v0, v2, v3}, Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;->access$702(Lcom/samsung/android/sdk/enhancedfeatures/rshare/apis/request/FolderInfoRequest;J)J
 
     return-object v0

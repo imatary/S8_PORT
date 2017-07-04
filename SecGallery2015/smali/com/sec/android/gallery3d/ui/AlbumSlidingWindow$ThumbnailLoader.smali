@@ -44,7 +44,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mHandler:Lcom/sec/android/gallery3d/ui/SynchronizedHandler;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$400(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)Lcom/sec/android/gallery3d/ui/SynchronizedHandler;
 
     move-result-object v0
@@ -84,7 +83,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mMiniThumbMode:Z
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$200(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)Z
 
     move-result v1
@@ -146,7 +144,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mThreadPool:Lcom/sec/android/gallery3d/util/JobLimiter;
     invoke-static {v1}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$300(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)Lcom/sec/android/gallery3d/util/JobLimiter;
 
     move-result-object v1
@@ -181,7 +178,6 @@
     :cond_1
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mData:[Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$500(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)[Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;
 
     move-result-object v6
@@ -190,7 +186,6 @@
 
     iget-object v8, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mData:[Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;
     invoke-static {v8}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$500(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)[Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;
 
     move-result-object v8
@@ -203,7 +198,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mLibContext:Lcom/sec/android/gallery3d/interfaces/LibraryContext;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$600(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)Lcom/sec/android/gallery3d/interfaces/LibraryContext;
 
     move-result-object v6
@@ -220,7 +214,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mMiniThumbMode:Z
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$200(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)Z
 
     move-result v6
@@ -238,7 +231,6 @@
     :cond_2
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mMiniThumbMode:Z
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$200(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)Z
 
     move-result v6
@@ -267,17 +259,14 @@
 
     iget-object v7, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mTiledTextureResources:Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;
     invoke-static {v7}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$700(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;
 
     move-result-object v7
 
     invoke-direct {v6, v1, v7}, Lcom/sec/android/gallery3d/glrenderer/TiledTexture;-><init>(Landroid/graphics/Bitmap;Lcom/sec/android/gallery3d/glrenderer/TiledTexture$TiledTextureResources;)V
 
-    # setter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->bitmapTexture:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
     invoke-static {v3, v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$002(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;Lcom/sec/android/gallery3d/glrenderer/TiledTexture;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->bitmapTexture:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$000(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
     move-result-object v6
@@ -288,7 +277,6 @@
 
     iget v7, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->mSlotIndex:I
 
-    # invokes: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->isActiveSlot(I)Z
     invoke-static {v6, v7}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$800(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;I)Z
 
     move-result v6
@@ -297,12 +285,10 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mTileUploader:Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Uploader;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$900(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Uploader;
 
     move-result-object v6
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->bitmapTexture:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$000(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
     move-result-object v7
@@ -311,12 +297,10 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # --operator for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mActiveRequestCount:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$1006(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)I
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mActiveRequestCount:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$1000(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)I
 
     move-result v6
@@ -325,13 +309,11 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # invokes: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->requestNonactiveImages()V
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$1100(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)V
 
     :cond_3
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mListener:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$Listener;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$1200(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$Listener;
 
     move-result-object v6
@@ -340,7 +322,6 @@
 
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mListener:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$Listener;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$1200(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$Listener;
 
     move-result-object v6
@@ -409,12 +390,10 @@
     :cond_7
     iget-object v6, p0, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$ThumbnailLoader;->this$0:Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->mTileUploader:Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Uploader;
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;->access$900(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture$Uploader;
 
     move-result-object v6
 
-    # getter for: Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->bitmapTexture:Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;->access$000(Lcom/sec/android/gallery3d/ui/AlbumSlidingWindow$AlbumEntry;)Lcom/sec/android/gallery3d/glrenderer/TiledTexture;
 
     move-result-object v7

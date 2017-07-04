@@ -43,8 +43,7 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$35;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
-    invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$18800(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
+    invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19200(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v1
 
@@ -65,13 +64,11 @@
     :goto_1
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$35;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setUpBtnColor(F)V
-    invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$18900(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;F)V
+    invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19300(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;F)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState$35;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->setOverFlowColor(F)V
-    invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19000(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;F)V
+    invoke-static {v1, v0}, Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;->access$19400(Lcom/sec/samsung/gallery/view/gallerysearch/VisualSearchViewState;F)V
 
     goto :goto_0
 

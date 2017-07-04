@@ -55,7 +55,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->startDetailViewInUIThread(IIZ)V
     invoke-static {v0, v2, v2, v1}, Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;->access$1300(Lcom/sec/samsung/gallery/view/favoriteview/FavoriteViewState;IIZ)V
 
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/utils/SDualScreenUtil;->setInitialActivityLaunch(Z)V

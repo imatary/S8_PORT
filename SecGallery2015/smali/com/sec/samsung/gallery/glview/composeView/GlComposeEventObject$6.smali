@@ -76,7 +76,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject$6;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->mGlHandler:Lcom/sec/android/gallery3d/glcore/GlHandler;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;->access$1400(Lcom/sec/samsung/gallery/glview/composeView/GlComposeEventObject;)Lcom/sec/android/gallery3d/glcore/GlHandler;
 
     move-result-object v0

@@ -45,7 +45,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsCancel:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$802(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
@@ -56,14 +55,12 @@
 
     move-result v1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mIsCheck:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$502(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd$2;->this$0:Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->mCopyCompleted:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;->access$402(Lcom/sec/samsung/gallery/controller/ShowImportDialogCmd;Z)Z
 
     return-void

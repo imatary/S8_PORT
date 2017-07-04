@@ -67,7 +67,6 @@
 
     check-cast v2, Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->insertLog(Landroid/content/Context;Ljava/lang/String;Z)V
     invoke-static {v1, v2, v6}, Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->access$000(Landroid/content/Context;Ljava/lang/String;Z)V
 
     goto :goto_0
@@ -89,7 +88,6 @@
 
     move-result-wide v4
 
-    # invokes: Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->insertLogValue(Landroid/content/Context;Ljava/lang/String;JZ)V
     invoke-static {v1, v2, v4, v5, v6}, Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->access$100(Landroid/content/Context;Ljava/lang/String;JZ)V
 
     goto :goto_0
@@ -107,7 +105,6 @@
 
     check-cast v3, Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->insertLogExtra(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
     invoke-static {v1, v2, v3, v6}, Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->access$200(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_0
@@ -129,7 +126,6 @@
 
     move-result v3
 
-    # invokes: Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->insertLogForStatusValue(Landroid/content/Context;Ljava/lang/String;IZ)V
     invoke-static {v1, v2, v3, v6}, Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->access$300(Landroid/content/Context;Ljava/lang/String;IZ)V
 
     goto :goto_0
@@ -147,7 +143,6 @@
 
     check-cast v3, Ljava/lang/String;
 
-    # invokes: Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->insertLogForStatusExtra(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
     invoke-static {v1, v2, v3, v6}, Lcom/sec/samsung/gallery/util/ContextProviderLogUtil;->access$400(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_0

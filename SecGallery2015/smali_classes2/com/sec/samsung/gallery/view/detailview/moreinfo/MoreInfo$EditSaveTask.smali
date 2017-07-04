@@ -71,7 +71,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$EditSaveTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mListItems:Ljava/util/ArrayList;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Ljava/util/ArrayList;
 
     move-result-object v4
@@ -81,7 +80,6 @@
     :try_start_0
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$EditSaveTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # getter for: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->mListItems:Ljava/util/ArrayList;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$1400(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -172,7 +170,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo$EditSaveTask;->this$0:Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;
 
-    # invokes: Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->invalidate()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;->access$2200(Lcom/sec/samsung/gallery/view/detailview/moreinfo/MoreInfo;)V
 
     return-void

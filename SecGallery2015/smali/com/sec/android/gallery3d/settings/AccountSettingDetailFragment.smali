@@ -998,7 +998,7 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a07e9
+    const v3, 0x7f0a07ef
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -1024,7 +1024,7 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a07ec
+    const v3, 0x7f0a07f2
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -1041,7 +1041,7 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a07e8
+    const v3, 0x7f0a07ee
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -1058,7 +1058,7 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a07eb
+    const v3, 0x7f0a07f1
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -1191,7 +1191,7 @@
 
     if-eqz p1, :cond_1
 
-    const v5, 0x7f0a081a
+    const v5, 0x7f0a0820
 
     :goto_1
     new-array v7, v7, [Ljava/lang/Object;
@@ -1215,7 +1215,7 @@
     goto :goto_0
 
     :cond_1
-    const v5, 0x7f0a081d
+    const v5, 0x7f0a0823
 
     goto :goto_1
 
@@ -1230,7 +1230,7 @@
 
     if-eqz p1, :cond_3
 
-    const v5, 0x7f0a081b
+    const v5, 0x7f0a0821
 
     :goto_3
     new-array v7, v7, [Ljava/lang/Object;
@@ -1242,14 +1242,14 @@
     goto :goto_2
 
     :cond_3
-    const v5, 0x7f0a081e
+    const v5, 0x7f0a0824
 
     goto :goto_3
 
     :cond_4
     iget-object v5, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0a081c
+    const v6, 0x7f0a0822
 
     new-array v7, v7, [Ljava/lang/Object;
 
@@ -1316,7 +1316,7 @@
 
     if-eqz p1, :cond_1
 
-    const v5, 0x7f0a0811
+    const v5, 0x7f0a0817
 
     :goto_1
     new-array v7, v7, [Ljava/lang/Object;
@@ -1340,7 +1340,7 @@
     goto :goto_0
 
     :cond_1
-    const v5, 0x7f0a0814
+    const v5, 0x7f0a081a
 
     goto :goto_1
 
@@ -1361,7 +1361,7 @@
 
     if-eqz p1, :cond_3
 
-    const v5, 0x7f0a0812
+    const v5, 0x7f0a0818
 
     :goto_3
     new-array v7, v7, [Ljava/lang/Object;
@@ -1373,14 +1373,14 @@
     goto :goto_2
 
     :cond_3
-    const v5, 0x7f0a0815
+    const v5, 0x7f0a081b
 
     goto :goto_3
 
     :cond_4
     iget-object v5, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0a0813
+    const v6, 0x7f0a0819
 
     new-array v7, v7, [Ljava/lang/Object;
 
@@ -1572,7 +1572,7 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a080c
+    const v3, 0x7f0a0812
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -1598,7 +1598,7 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a080e
+    const v3, 0x7f0a0814
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -1615,7 +1615,7 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a080b
+    const v3, 0x7f0a0811
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -1632,7 +1632,7 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a080d
+    const v3, 0x7f0a0813
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -2724,7 +2724,7 @@
 
     iget-object v2, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a0836
+    const v3, 0x7f0a083e
 
     const/4 v4, 0x0
 
@@ -3490,7 +3490,7 @@
     :cond_4
     iget-object v11, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v12, 0x7f0a07ee
+    const v12, 0x7f0a07f4
 
     const/4 v13, 0x0
 
@@ -3741,7 +3741,7 @@
     :cond_f
     iget-object v11, p0, Lcom/sec/android/gallery3d/settings/AccountSettingDetailFragment;->mContext:Landroid/content/Context;
 
-    const v12, 0x7f0a07ee
+    const v12, 0x7f0a07f4
 
     const/4 v13, 0x0
 

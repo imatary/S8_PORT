@@ -49,7 +49,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->mSingleOperation:Z
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$202(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Z)Z
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$5;->this$0:Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;
@@ -58,7 +57,6 @@
 
     iget v2, p0, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd$5;->val$operationId:I
 
-    # invokes: Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->showRenameDialog(Ljava/io/File;I)V
     invoke-static {v0, v1, v2}, Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;->access$300(Lcom/sec/samsung/gallery/controller/ShowCopyMoveDialogCmd;Ljava/io/File;I)V
 
     return-void

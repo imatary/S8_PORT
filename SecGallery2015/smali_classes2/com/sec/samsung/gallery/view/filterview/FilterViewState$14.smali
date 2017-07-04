@@ -41,14 +41,12 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mFilterSetAdapter:Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$800(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/samsung/gallery/view/adapter/ComposeMediaItemAdapter;
 
     move-result-object v8
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mAlbumIndex:I
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3700(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)I
 
     move-result v9
@@ -108,7 +106,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3800(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -129,7 +126,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3900(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v9
@@ -158,7 +154,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mGalleryFacade:Lorg/puremvc/java/multicore/patterns/facade/Facade;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$4000(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lorg/puremvc/java/multicore/patterns/facade/Facade;
 
     move-result-object v8
@@ -172,7 +167,6 @@
     :cond_2
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # invokes: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->startPeopleViewFaceType()V
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$4100(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)V
 
     goto :goto_0
@@ -192,7 +186,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -203,7 +196,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$4200(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -222,7 +214,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -235,7 +226,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mCurrentTopSetPath:Ljava/lang/String;
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$5300(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Ljava/lang/String;
 
     move-result-object v9
@@ -258,7 +248,6 @@
 
     iget-object v9, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mAlbumIndex:I
     invoke-static {v9}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3700(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)I
 
     move-result v9
@@ -282,7 +271,6 @@
     :cond_5
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$5400(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -308,7 +296,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -319,7 +306,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$4300(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -343,7 +329,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -354,7 +339,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$4400(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -378,7 +362,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -389,7 +372,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$4500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -413,7 +395,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -424,7 +405,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$4600(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -463,7 +443,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$4700(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -490,7 +469,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$4800(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -507,7 +485,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8
@@ -533,7 +510,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$4900(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -561,7 +537,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$5000(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -589,7 +564,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$5100(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -617,7 +591,6 @@
 
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$5200(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v8
@@ -650,7 +623,6 @@
     :cond_12
     iget-object v8, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$14;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mGalleryCurrentStatus:Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
     invoke-static {v8}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$3500(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/GalleryCurrentStatus;
 
     move-result-object v8

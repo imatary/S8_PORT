@@ -68,7 +68,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter$3;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;->mActionbarManager:Lcom/sec/samsung/gallery/view/ActionBarManager;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/history/HistoryViewAdapter;)Lcom/sec/samsung/gallery/view/ActionBarManager;
 
     move-result-object v2

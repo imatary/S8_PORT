@@ -55,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject;)Landroid/content/Context;
 
     move-result-object v1
@@ -80,7 +79,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject;->access$400(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoRecycleTextObject;)Landroid/content/Context;
 
     move-result-object v1

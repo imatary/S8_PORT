@@ -452,12 +452,12 @@
         0x7f120276 -> :sswitch_1
         0x7f120277 -> :sswitch_4
         0x7f120278 -> :sswitch_5
-        0x7f120280 -> :sswitch_2
-        0x7f120281 -> :sswitch_3
-        0x7f120282 -> :sswitch_6
-        0x7f120283 -> :sswitch_7
-        0x7f120284 -> :sswitch_a
-        0x7f120285 -> :sswitch_b
+        0x7f12027f -> :sswitch_2
+        0x7f120280 -> :sswitch_3
+        0x7f120281 -> :sswitch_6
+        0x7f120282 -> :sswitch_7
+        0x7f120283 -> :sswitch_a
+        0x7f120284 -> :sswitch_b
         0x7f1202c3 -> :sswitch_8
         0x7f1202c4 -> :sswitch_9
     .end sparse-switch

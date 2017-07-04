@@ -57,7 +57,6 @@
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$15;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mGalleryApp:Lcom/sec/android/gallery3d/app/GalleryAppImpl;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$10200(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/GalleryAppImpl;
 
     move-result-object v1
@@ -92,7 +91,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$15;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mSelectionModeProxy:Lcom/sec/android/gallery3d/ui/SelectionManager;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$1000(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/ui/SelectionManager;
 
     move-result-object v3
@@ -111,7 +109,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$15;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mGalleryApp:Lcom/sec/android/gallery3d/app/GalleryAppImpl;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$10200(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/GalleryAppImpl;
 
     move-result-object v3
@@ -120,7 +117,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/view/timeview/TimeViewState$15;->this$0:Lcom/sec/samsung/gallery/view/timeview/TimeViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v3}, Lcom/sec/samsung/gallery/view/timeview/TimeViewState;->access$10300(Lcom/sec/samsung/gallery/view/timeview/TimeViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v3

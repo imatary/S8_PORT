@@ -49,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/data/LocalImage$DeleteFaceImageOperation;->this$0:Lcom/sec/android/gallery3d/data/LocalImage;
 
-    # setter for: Lcom/sec/android/gallery3d/data/LocalImage;->mIsDeleted:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/data/LocalImage;->access$1202(Lcom/sec/android/gallery3d/data/LocalImage;Z)Z
 
     invoke-static {}, Lcom/sec/android/gallery3d/data/MediaObject;->setArcVersionNumber()V

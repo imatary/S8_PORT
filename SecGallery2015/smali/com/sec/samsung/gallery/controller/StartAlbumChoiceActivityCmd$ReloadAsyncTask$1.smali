@@ -44,14 +44,12 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask$1;->this$1:Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;->mProgressDialog:Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
     invoke-static {v0}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;->access$600(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;)Lcom/sec/samsung/gallery/view/common/ProgressDialogHelper;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask$1;->this$1:Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;->mCurrContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;->access$400(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;)Landroid/content/Context;
 
     move-result-object v1
@@ -60,7 +58,6 @@
 
     iget-object v3, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask$1;->this$1:Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;->mCurrContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;->access$400(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;)Landroid/content/Context;
 
     move-result-object v3
@@ -73,7 +70,6 @@
 
     iget-object v5, p0, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask$1;->this$1:Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;
 
-    # getter for: Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;->mOnCancelListener:Landroid/content/DialogInterface$OnCancelListener;
     invoke-static {v5}, Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;->access$500(Lcom/sec/samsung/gallery/controller/StartAlbumChoiceActivityCmd$ReloadAsyncTask;)Landroid/content/DialogInterface$OnCancelListener;
 
     move-result-object v7

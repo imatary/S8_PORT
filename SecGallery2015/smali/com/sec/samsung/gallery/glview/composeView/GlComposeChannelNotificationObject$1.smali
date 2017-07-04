@@ -67,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0
@@ -76,7 +75,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->mView:Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;->access$1000(Lcom/sec/samsung/gallery/glview/composeView/GlComposeChannelNotificationObject;)Lcom/sec/samsung/gallery/glview/composeView/GlComposeView;
 
     move-result-object v0

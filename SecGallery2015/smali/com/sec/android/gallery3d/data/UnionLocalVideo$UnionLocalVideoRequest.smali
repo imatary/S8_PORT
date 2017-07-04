@@ -128,7 +128,6 @@
 
     check-cast v11, Lcom/sec/android/gallery3d/data/UnionLocalVideo;
 
-    # invokes: Lcom/sec/android/gallery3d/data/UnionLocalVideo;->getVideoViewMode()I
     invoke-static {v11}, Lcom/sec/android/gallery3d/data/UnionLocalVideo;->access$000(Lcom/sec/android/gallery3d/data/UnionLocalVideo;)I
 
     move-result v11

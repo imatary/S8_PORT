@@ -39,7 +39,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$5;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mCardListView:Landroid/support/v7/widget/RecyclerView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Landroid/support/v7/widget/RecyclerView;
 
     move-result-object v2
@@ -61,7 +60,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$5;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mCardListView:Landroid/support/v7/widget/RecyclerView;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Landroid/support/v7/widget/RecyclerView;
 
     move-result-object v2
@@ -81,7 +79,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$5;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mCardAdapter:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/CardListViewAdapter;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/ui/CardListViewAdapter;
 
     move-result-object v0
@@ -94,7 +91,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$5;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mCardListView:Landroid/support/v7/widget/RecyclerView;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$700(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Landroid/support/v7/widget/RecyclerView;
 
     move-result-object v0
@@ -106,7 +102,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$5;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mOnViewVisibilityListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$OnViewVisibilityListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$800(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$OnViewVisibilityListener;
 
     move-result-object v0
@@ -115,7 +110,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$5;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->mOnViewVisibilityListener:Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$OnViewVisibilityListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;->access$800(Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView;)Lcom/sec/samsung/gallery/view/gallerysearch/visualsearch/VisualSearchView$OnViewVisibilityListener;
 
     move-result-object v0

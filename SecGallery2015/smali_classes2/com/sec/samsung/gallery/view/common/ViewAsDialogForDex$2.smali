@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$2;->this$0:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->mViewAsOnItemSelectedListener:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$ViewAsOnItemSelectedListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->access$100(Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;)Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$ViewAsOnItemSelectedListener;
 
     move-result-object v0
@@ -55,7 +54,6 @@
     :goto_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$2;->this$0:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;
 
-    # invokes: Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->dismissDialog()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->access$000(Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;)V
 
     goto :goto_0
@@ -63,7 +61,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$2;->this$0:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->mViewAsOnItemSelectedListener:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$ViewAsOnItemSelectedListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->access$100(Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;)Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$ViewAsOnItemSelectedListener;
 
     move-result-object v0
@@ -77,7 +74,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$2;->this$0:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->mViewAsOnItemSelectedListener:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$ViewAsOnItemSelectedListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->access$100(Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;)Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$ViewAsOnItemSelectedListener;
 
     move-result-object v0
@@ -91,7 +87,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$2;->this$0:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->mViewAsOnItemSelectedListener:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$ViewAsOnItemSelectedListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->access$100(Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;)Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$ViewAsOnItemSelectedListener;
 
     move-result-object v0
@@ -105,7 +100,6 @@
     :pswitch_3
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$2;->this$0:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;
 
-    # getter for: Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->mViewAsOnItemSelectedListener:Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$ViewAsOnItemSelectedListener;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;->access$100(Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex;)Lcom/sec/samsung/gallery/view/common/ViewAsDialogForDex$ViewAsOnItemSelectedListener;
 
     move-result-object v0

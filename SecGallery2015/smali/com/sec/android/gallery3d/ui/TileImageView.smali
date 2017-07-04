@@ -367,7 +367,6 @@
 
     if-eqz v2, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {v2}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$700(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v3
@@ -378,7 +377,6 @@
 
     const/4 v3, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {v2, v3}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$702(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;I)I
 
     :cond_0
@@ -471,7 +469,6 @@
     monitor-enter p0
 
     :try_start_0
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$700(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v2
@@ -490,14 +487,12 @@
     :cond_0
     const/4 v2, 0x4
 
-    # setter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {p1, v2}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$702(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;I)I
 
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    # invokes: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->decode()Z
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$900(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Z
 
     move-result v0
@@ -505,7 +500,6 @@
     monitor-enter p0
 
     :try_start_1
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$700(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v2
@@ -518,10 +512,8 @@
 
     const/16 v2, 0x40
 
-    # setter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {p1, v2}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$702(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;I)I
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mDecodedTile:Landroid/graphics/Bitmap;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$1000(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -532,7 +524,6 @@
 
     move-result-object v2
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mDecodedTile:Landroid/graphics/Bitmap;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$1000(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Landroid/graphics/Bitmap;
 
     move-result-object v3
@@ -541,7 +532,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mDecodedTile:Landroid/graphics/Bitmap;
     invoke-static {p1, v2}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$1002(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     :cond_1
@@ -574,7 +564,6 @@
 
     :goto_1
     :try_start_3
-    # setter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {p1, v1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$702(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;I)I
 
     monitor-exit p0
@@ -619,14 +608,12 @@
     invoke-virtual {p3, v3, v3}, Landroid/graphics/RectF;->offset(FF)V
 
     :cond_0
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mAlphablendingAnimation:Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$600(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mAlphablendingAnimation:Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$600(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
 
     move-result-object v0
@@ -637,12 +624,10 @@
 
     if-eqz v0, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mAlphablendingAnimation:Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$600(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
 
     move-result-object v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mAlphablendingAnimation:Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$600(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
 
     move-result-object v1
@@ -686,12 +671,10 @@
     goto :goto_2
 
     :cond_3
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mX:I
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$300(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mX:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$300(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v1
@@ -711,12 +694,10 @@
     iput v0, p3, Landroid/graphics/RectF;->right:F
 
     :goto_3
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mY:I
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$400(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mY:I
     invoke-static {v6}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$400(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v1
@@ -1700,7 +1681,6 @@
 
     check-cast v20, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileLevel:I
     invoke-static/range {v20 .. v20}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$200(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v15
@@ -1713,12 +1693,10 @@
 
     aget-object v3, v4, v3
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mX:I
     invoke-static/range {v20 .. v20}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$300(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v5
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mY:I
     invoke-static/range {v20 .. v20}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$400(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v6
@@ -1879,7 +1857,6 @@
 
     const/4 v0, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {v6, v0}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$702(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;I)I
 
     invoke-virtual {v6, p1, p2, p3}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->update(III)V
@@ -1929,7 +1906,6 @@
     monitor-enter p0
 
     :try_start_0
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$700(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v0
@@ -1940,7 +1916,6 @@
 
     const/4 v0, 0x2
 
-    # setter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {p1, v0}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$702(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;I)I
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/TileImageView;->mDecodeQueue:Lcom/sec/android/gallery3d/ui/TileImageView$TileQueue;
@@ -1963,7 +1938,6 @@
 
     :cond_1
     :try_start_1
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$700(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v0
@@ -1972,7 +1946,6 @@
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/ui/TileImageView;->mDecodeQueue:Lcom/sec/android/gallery3d/ui/TileImageView$TileQueue;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$TileQueue;->mHead:Lcom/sec/android/gallery3d/ui/TileImageView$Tile;
     invoke-static {v0}, Lcom/sec/android/gallery3d/ui/TileImageView$TileQueue;->access$800(Lcom/sec/android/gallery3d/ui/TileImageView$TileQueue;)Lcom/sec/android/gallery3d/ui/TileImageView$Tile;
 
     move-result-object v0
@@ -2004,14 +1977,12 @@
 .method private queueForUpload(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)V
     .locals 3
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mAlphablendingAnimation:Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$600(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mAlphablendingAnimation:Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$600(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
 
     move-result-object v0
@@ -2072,7 +2043,6 @@
     monitor-enter p0
 
     :try_start_0
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$700(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v0
@@ -2083,7 +2053,6 @@
 
     const/16 v0, 0x20
 
-    # setter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {p1, v0}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$702(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;I)I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2099,10 +2068,8 @@
 
     const/16 v0, 0x40
 
-    # setter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {p1, v0}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$702(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;I)I
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mDecodedTile:Landroid/graphics/Bitmap;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$1000(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -2113,7 +2080,6 @@
 
     move-result-object v0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mDecodedTile:Landroid/graphics/Bitmap;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$1000(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -2122,7 +2088,6 @@
 
     const/4 v0, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mDecodedTile:Landroid/graphics/Bitmap;
     invoke-static {p1, v0}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$1002(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     :cond_1
@@ -2306,7 +2271,6 @@
 
     if-nez v8, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {v7}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$700(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v8
@@ -2347,7 +2311,6 @@
     goto :goto_0
 
     :cond_3
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileState:I
     invoke-static {v7}, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->access$700(Lcom/sec/android/gallery3d/ui/TileImageView$Tile;)I
 
     move-result v8

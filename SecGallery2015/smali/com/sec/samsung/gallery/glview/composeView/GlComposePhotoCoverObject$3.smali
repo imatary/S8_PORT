@@ -41,7 +41,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->access$2800(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;)Landroid/content/Context;
 
     move-result-object v2
@@ -68,7 +67,6 @@
     :cond_0
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->playHaptic(I)V
     invoke-static {v2, v3}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->access$3600(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;I)V
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -77,7 +75,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject$3;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;
 
-    # getter for: Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;->access$2800(Lcom/sec/samsung/gallery/glview/composeView/GlComposePhotoCoverObject;)Landroid/content/Context;
 
     move-result-object v2

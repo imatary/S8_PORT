@@ -47,7 +47,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$5;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mIsEasyMode:Z
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$1900(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Z
 
     move-result v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/view/filterview/FilterViewState$5;->this$0:Lcom/sec/samsung/gallery/view/filterview/FilterViewState;
 
-    # getter for: Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v0}, Lcom/sec/samsung/gallery/view/filterview/FilterViewState;->access$2000(Lcom/sec/samsung/gallery/view/filterview/FilterViewState;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0

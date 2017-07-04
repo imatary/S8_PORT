@@ -58,7 +58,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/gallery3d/remote/slink/SLinkReloadTimer;->mIsExpired:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/remote/slink/SLinkReloadTimer;->access$002(Lcom/sec/android/gallery3d/remote/slink/SLinkReloadTimer;Z)Z
 
     const/4 v0, 0x2
@@ -78,12 +77,10 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/gallery3d/remote/slink/SLinkReloadTimer;->mIsExpired:Z
     invoke-static {v0, v1}, Lcom/sec/android/gallery3d/remote/slink/SLinkReloadTimer;->access$002(Lcom/sec/android/gallery3d/remote/slink/SLinkReloadTimer;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/gallery3d/remote/slink/SLinkReloadTimer$1;->this$0:Lcom/sec/android/gallery3d/remote/slink/SLinkReloadTimer;
 
-    # getter for: Lcom/sec/android/gallery3d/remote/slink/SLinkReloadTimer;->mSLinkStorage:Lcom/sec/android/gallery3d/remote/slink/SLinkStorage;
     invoke-static {v0}, Lcom/sec/android/gallery3d/remote/slink/SLinkReloadTimer;->access$100(Lcom/sec/android/gallery3d/remote/slink/SLinkReloadTimer;)Lcom/sec/android/gallery3d/remote/slink/SLinkStorage;
 
     move-result-object v0

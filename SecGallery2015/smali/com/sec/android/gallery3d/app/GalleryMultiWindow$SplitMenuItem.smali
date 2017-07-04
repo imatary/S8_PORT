@@ -44,7 +44,6 @@
 
     iput-object v0, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$SplitMenuItem;->ci:Landroid/content/pm/ComponentInfo;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {p1}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$000(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -61,7 +60,6 @@
 
     iput-object v0, p0, Lcom/sec/android/gallery3d/app/GalleryMultiWindow$SplitMenuItem;->mLabel:Ljava/lang/String;
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {p1}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$000(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v0
@@ -72,7 +70,6 @@
 
     const v1, 0x7f020251
 
-    # getter for: Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {p1}, Lcom/sec/android/gallery3d/app/GalleryMultiWindow;->access$000(Lcom/sec/android/gallery3d/app/GalleryMultiWindow;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2

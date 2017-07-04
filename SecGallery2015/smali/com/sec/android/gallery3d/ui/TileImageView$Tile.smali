@@ -50,14 +50,12 @@
 
     iput p4, p0, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mTileLevel:I
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->FeatureUseTileAlphaBlendingEnabled:Z
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1300()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->mModel:Lcom/sec/android/gallery3d/ui/TileImageView$TileSource;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1400(Lcom/sec/android/gallery3d/ui/TileImageView;)Lcom/sec/android/gallery3d/ui/TileImageView$TileSource;
 
     move-result-object v0
@@ -68,7 +66,6 @@
 
     new-instance v0, Lcom/sec/samsung/gallery/decoder/AlphablendingAnimation;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->mDecoderInterface:Lcom/sec/samsung/gallery/decoder/DecoderInterface;
     invoke-static {p1}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1500(Lcom/sec/android/gallery3d/ui/TileImageView;)Lcom/sec/samsung/gallery/decoder/DecoderInterface;
 
     move-result-object v1
@@ -194,14 +191,12 @@
 
     const/4 v3, 0x1
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->FeatureUseTileAlphaBlendingEnabled:Z
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1300()Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v4
@@ -215,7 +210,6 @@
     :try_start_0
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->this$0:Lcom/sec/android/gallery3d/ui/TileImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->mModel:Lcom/sec/android/gallery3d/ui/TileImageView$TileSource;
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1400(Lcom/sec/android/gallery3d/ui/TileImageView;)Lcom/sec/android/gallery3d/ui/TileImageView$TileSource;
 
     move-result-object v4
@@ -265,7 +259,6 @@
     :try_start_1
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->this$0:Lcom/sec/android/gallery3d/ui/TileImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->mModel:Lcom/sec/android/gallery3d/ui/TileImageView$TileSource;
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1400(Lcom/sec/android/gallery3d/ui/TileImageView;)Lcom/sec/android/gallery3d/ui/TileImageView$TileSource;
 
     move-result-object v4
@@ -276,7 +269,6 @@
 
     iget v7, p0, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mY:I
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v8
@@ -323,7 +315,6 @@
 
     iget-object v4, p0, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->this$0:Lcom/sec/android/gallery3d/ui/TileImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->mLevelCount:I
     invoke-static {v4}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1700(Lcom/sec/android/gallery3d/ui/TileImageView;)I
 
     move-result v4
@@ -336,7 +327,6 @@
     return-object v3
 
     :cond_0
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v3
@@ -365,7 +355,6 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    # invokes: Lcom/sec/android/gallery3d/ui/TileImageView;->getTile(III)Lcom/sec/android/gallery3d/ui/TileImageView$Tile;
     invoke-static {v3, v1, v2, v4}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1800(Lcom/sec/android/gallery3d/ui/TileImageView;III)Lcom/sec/android/gallery3d/ui/TileImageView$Tile;
 
     move-result-object v3
@@ -376,14 +365,12 @@
 .method public getTextureHeight()I
     .locals 1
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->FeatureUseTileAlphaBlendingEnabled:Z
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1300()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v0
@@ -394,7 +381,6 @@
     return v0
 
     :cond_0
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v0
@@ -405,14 +391,12 @@
 .method public getTextureWidth()I
     .locals 1
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->FeatureUseTileAlphaBlendingEnabled:Z
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1300()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v0
@@ -423,7 +407,6 @@
     return v0
 
     :cond_0
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v0
@@ -514,14 +497,12 @@
 
     shr-int v1, v4, v5
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->FeatureUseTileAlphaBlendingEnabled:Z
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1300()Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v4
@@ -532,7 +513,6 @@
 
     move-result v4
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v5
@@ -557,7 +537,6 @@
     goto :goto_0
 
     :cond_1
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v4
@@ -566,7 +545,6 @@
 
     move-result v4
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v5
@@ -593,7 +571,6 @@
 
     iget v3, p0, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mX:I
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v4
@@ -610,7 +587,6 @@
 
     iget v3, p0, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->mY:I
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->sTileSize:I
     invoke-static {}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1600()I
 
     move-result v4
@@ -627,7 +603,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->this$0:Lcom/sec/android/gallery3d/ui/TileImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->mLevel:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1900(Lcom/sec/android/gallery3d/ui/TileImageView;)I
 
     move-result v3
@@ -642,7 +617,6 @@
 
     iget-object v3, p0, Lcom/sec/android/gallery3d/ui/TileImageView$Tile;->this$0:Lcom/sec/android/gallery3d/ui/TileImageView;
 
-    # getter for: Lcom/sec/android/gallery3d/ui/TileImageView;->mLevelCount:I
     invoke-static {v3}, Lcom/sec/android/gallery3d/ui/TileImageView;->access$1700(Lcom/sec/android/gallery3d/ui/TileImageView;)I
 
     move-result v3

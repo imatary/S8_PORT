@@ -72,7 +72,6 @@
 
     iget-object v0, p0, Lcom/andraskindler/quickscroll/TwLangIndexScrollView$IndexerObserver;->this$0:Lcom/andraskindler/quickscroll/TwLangIndexScrollView;
 
-    # invokes: Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->initLangPositionBounds()V
     invoke-static {v0}, Lcom/andraskindler/quickscroll/TwLangIndexScrollView;->access$1600(Lcom/andraskindler/quickscroll/TwLangIndexScrollView;)V
 
     return-void

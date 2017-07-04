@@ -47,7 +47,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->access$000(Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -92,7 +91,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->access$100(Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -106,7 +104,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->access$300(Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2
@@ -126,7 +123,6 @@
 
     iget v3, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit$1;->val$numberOfItemsSelected:I
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->setSelectAllButtonTitle(ILjava/lang/String;)V
     invoke-static {v2, v3, v0}, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->access$500(Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;ILjava/lang/String;)V
 
     goto :goto_0
@@ -134,7 +130,6 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;
 
-    # invokes: Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->updateOptionMenu()V
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->access$200(Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;)V
 
     goto :goto_1
@@ -150,7 +145,6 @@
 
     iget-object v2, p0, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit$1;->this$0:Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;
 
-    # getter for: Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->mActivity:Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
     invoke-static {v2}, Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;->access$400(Lcom/sec/samsung/gallery/view/channelview/ChannelActionBarForEdit;)Lcom/sec/android/gallery3d/app/AbstractGalleryActivity;
 
     move-result-object v2

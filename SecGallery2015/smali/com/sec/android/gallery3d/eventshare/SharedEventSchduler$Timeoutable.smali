@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler$Timeoutable;->this$0:Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->mRunningEventQueue:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->access$000(Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;)Landroid/util/SparseArray;
 
     move-result-object v1
@@ -60,7 +59,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler$Timeoutable;->this$0:Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->mRunningEventQueue:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->access$000(Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;)Landroid/util/SparseArray;
 
     move-result-object v1
@@ -90,7 +88,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler$Timeoutable;->this$0:Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->mTimeOutHistory:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->access$100(Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;)Landroid/util/SparseArray;
 
     move-result-object v1
@@ -104,7 +101,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler$Timeoutable;->this$0:Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->isTimeOut(Lcom/sec/android/gallery3d/eventshare/SharedEvent;)Z
     invoke-static {v1, v0}, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->access$200(Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;Lcom/sec/android/gallery3d/eventshare/SharedEvent;)Z
 
     move-result v1
@@ -115,7 +111,6 @@
 
     iget-object v1, p0, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler$Timeoutable;->this$0:Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;
 
-    # getter for: Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->mTimeOutHistory:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->access$100(Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;)Landroid/util/SparseArray;
 
     move-result-object v1
@@ -161,7 +156,6 @@
 
     iget v2, p0, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler$Timeoutable;->mEventID:I
 
-    # invokes: Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->startTimeOut(I)V
     invoke-static {v1, v2}, Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;->access$300(Lcom/sec/android/gallery3d/eventshare/SharedEventSchduler;I)V
 
     goto :goto_0

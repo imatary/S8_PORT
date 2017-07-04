@@ -41,14 +41,12 @@
 
     const/4 v2, 0x1
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler;->sendMessage(Z)V
     invoke-static {v1, v2}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler;Z)V
 
     iget-object v1, p0, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler$1;->this$1:Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler;
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;->mLock:Ljava/lang/Object;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;->access$300(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;)Ljava/lang/Object;
 
     move-result-object v2
@@ -60,7 +58,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;->mThreadHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;)Landroid/os/Handler;
 
     move-result-object v1
@@ -71,7 +68,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;->mThreadHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;)Landroid/os/Handler;
 
     move-result-object v1
@@ -86,7 +82,6 @@
 
     iget-object v1, v1, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler;->this$0:Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;
 
-    # getter for: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;->mThreadHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;->access$400(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask;)Landroid/os/Handler;
 
     move-result-object v1
@@ -117,7 +112,6 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler;->sendMessage(Z)V
     invoke-static {v0, v1}, Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler;->access$200(Lcom/sec/samsung/gallery/view/gallerysearch/base/model/HandlerThreadTask$RequestHandler;Z)V
 
     return-void

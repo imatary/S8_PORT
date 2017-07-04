@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mSoftenSkinValue:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$500(Lcom/arcsoft/beautyface/SendActionActivity;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mSoftenSkinValue:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$500(Lcom/arcsoft/beautyface/SendActionActivity;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -85,7 +83,6 @@
 
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mSoftenSkinValue:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$500(Lcom/arcsoft/beautyface/SendActionActivity;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -108,7 +105,6 @@
 
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mSoftenSkinValue:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$500(Lcom/arcsoft/beautyface/SendActionActivity;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -144,7 +140,6 @@
     :cond_1
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mEngineParam:Lcom/arcsoft/beautyface/jni/BeautyEngine$InitParam;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$600(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/jni/BeautyEngine$InitParam;
 
     move-result-object v0
@@ -157,26 +152,22 @@
 
     iget-object v2, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mBeautyMode:I
     invoke-static {v2}, Lcom/arcsoft/beautyface/SendActionActivity;->access$100(Lcom/arcsoft/beautyface/SendActionActivity;)I
 
     move-result v2
 
     invoke-direct {v1, v2}, Lcom/arcsoft/beautyface/jni/BeautyEngine$InitParam;-><init>(I)V
 
-    # setter for: Lcom/arcsoft/beautyface/SendActionActivity;->mEngineParam:Lcom/arcsoft/beautyface/jni/BeautyEngine$InitParam;
     invoke-static {v0, v1}, Lcom/arcsoft/beautyface/SendActionActivity;->access$602(Lcom/arcsoft/beautyface/SendActionActivity;Lcom/arcsoft/beautyface/jni/BeautyEngine$InitParam;)Lcom/arcsoft/beautyface/jni/BeautyEngine$InitParam;
 
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mJNIEngine:Lcom/arcsoft/beautyface/jni/BeautyEngine;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$700(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/jni/BeautyEngine;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mEngineParam:Lcom/arcsoft/beautyface/jni/BeautyEngine$InitParam;
     invoke-static {v1}, Lcom/arcsoft/beautyface/SendActionActivity;->access$600(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/jni/BeautyEngine$InitParam;
 
     move-result-object v1
@@ -186,14 +177,12 @@
     :cond_2
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mJNIEngine:Lcom/arcsoft/beautyface/jni/BeautyEngine;
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$700(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/jni/BeautyEngine;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mProperty:Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
     invoke-static {v1}, Lcom/arcsoft/beautyface/SendActionActivity;->access$800(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
 
     move-result-object v1
@@ -214,7 +203,6 @@
 
     iget-object v2, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mProperty:Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
     invoke-static {v2}, Lcom/arcsoft/beautyface/SendActionActivity;->access$800(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
 
     move-result-object v2
@@ -233,7 +221,6 @@
 
     iget-object v2, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mProperty:Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
     invoke-static {v2}, Lcom/arcsoft/beautyface/SendActionActivity;->access$800(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
 
     move-result-object v2
@@ -252,7 +239,6 @@
 
     iget-object v2, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mProperty:Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
     invoke-static {v2}, Lcom/arcsoft/beautyface/SendActionActivity;->access$800(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
 
     move-result-object v2
@@ -271,7 +257,6 @@
 
     iget-object v2, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mProperty:Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
     invoke-static {v2}, Lcom/arcsoft/beautyface/SendActionActivity;->access$800(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
 
     move-result-object v2
@@ -284,7 +269,6 @@
 
     iget-object v2, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mProperty:Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
     invoke-static {v2}, Lcom/arcsoft/beautyface/SendActionActivity;->access$800(Lcom/arcsoft/beautyface/SendActionActivity;)Lcom/arcsoft/beautyface/jni/BeautyEngine$Property;
 
     move-result-object v2
@@ -303,19 +287,16 @@
 
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # invokes: Lcom/arcsoft/beautyface/SendActionActivity;->setProperty()V
     invoke-static {v0}, Lcom/arcsoft/beautyface/SendActionActivity;->access$900(Lcom/arcsoft/beautyface/SendActionActivity;)V
 
     iget-object v0, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
     iget-object v1, p0, Lcom/arcsoft/beautyface/SendActionActivity$4;->this$0:Lcom/arcsoft/beautyface/SendActionActivity;
 
-    # getter for: Lcom/arcsoft/beautyface/SendActionActivity;->mCurrentPhotoPath:Ljava/lang/String;
     invoke-static {v1}, Lcom/arcsoft/beautyface/SendActionActivity;->access$1000(Lcom/arcsoft/beautyface/SendActionActivity;)Ljava/lang/String;
 
     move-result-object v1
 
-    # invokes: Lcom/arcsoft/beautyface/SendActionActivity;->beautyFace(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/arcsoft/beautyface/SendActionActivity;->access$1100(Lcom/arcsoft/beautyface/SendActionActivity;Ljava/lang/String;)V
 
     goto/16 :goto_0

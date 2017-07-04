@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject$1;->this$0:Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;
 
-    # invokes: Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->startRotateButtonAnim()V
     invoke-static {v0}, Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;->access$000(Lcom/sec/samsung/gallery/glview/composeView/GlMoreAlbumObject;)V
 
     const/4 v0, 0x1
