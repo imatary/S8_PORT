@@ -12785,7 +12785,7 @@
 .method public isUnlockingWithBiometricAllowed()Z
     .locals 6
 
-    const-string v0, "wake_on_finger"
+    const-string v0, "allow_fingerprint_after_reboot"
 
     const/4 v1, 0x0
 
@@ -12840,7 +12840,7 @@
 .method public isUnlockingWithFingerprintAllowed()Z
     .locals 6
 
-    const-string v0, "wake_on_finger"
+    const-string v0, "allow_fingerprint_after_reboot"
 
     const/4 v1, 0x0
 
