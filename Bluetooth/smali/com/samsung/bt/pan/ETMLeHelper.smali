@@ -616,6 +616,9 @@
 .method public setTetheredDeviceFilter(Ljava/lang/String;)V
     .locals 3
 
+    monitor-enter p0
+
+    :try_start_0
     const-string/jumbo v0, "ETMLeHelper"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -639,8 +642,19 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iput-object p1, p0, Lcom/samsung/bt/pan/ETMLeHelper;->mLastConnectedPanDevice:Ljava/lang/String;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
 
     return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
 .end method
 
 .method public startAdvertise()V

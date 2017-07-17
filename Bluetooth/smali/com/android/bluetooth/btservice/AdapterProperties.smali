@@ -2996,6 +2996,12 @@
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
 
+    iget-object v0, p0, Lcom/android/bluetooth/btservice/AdapterProperties;->mService:Lcom/android/bluetooth/btservice/AdapterService;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, p1, v2}, Lcom/android/bluetooth/btservice/AdapterService;->setBondedTimeStamp(Landroid/bluetooth/BluetoothDevice;Z)V
+
     :cond_2
     :goto_0
     return-void
@@ -3032,6 +3038,12 @@
     move-result-object v0
 
     invoke-direct {p0, v0}, Lcom/android/bluetooth/btservice/AdapterProperties;->debugLog(Ljava/lang/String;)V
+
+    iget-object v0, p0, Lcom/android/bluetooth/btservice/AdapterProperties;->mService:Lcom/android/bluetooth/btservice/AdapterService;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, p1, v2}, Lcom/android/bluetooth/btservice/AdapterService;->setBondedTimeStamp(Landroid/bluetooth/BluetoothDevice;Z)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3128,7 +3140,7 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    goto :goto_0
+    goto/16 :goto_0
 .end method
 
 .method sendConnectionStateChange(Landroid/bluetooth/BluetoothDevice;III)V

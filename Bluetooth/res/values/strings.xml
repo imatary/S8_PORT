@@ -92,6 +92,13 @@
     <string name="bt_toast_sent">File sent.</string>
     <string name="bt_toast_hid_disconnected_message">Device connected as Bluetooth input device. Other Bluetooth input devices disconnected.</string>
     <string name="bt_toast_hid_unable_connection">Unable to connect device to Bluetooth input device while using it as Bluetooth input device.</string>
+    <string name="bt_hid_normally_connectable">"Can't connect to %1$s, Try to connect from %2$s"</string>
+    <string name="bt_hid_unplug_message">%1$s disconnected</string>
+    <string name="bt_hid_unplug_tab">Tap here to reconnect to %1$s.</string>
+    <string name="bt_hid_priority_off_title">Turn on Text input mode</string>
+    <string name="bt_hid_priority_off">%1$s is requesting permission to connect to your phone using Bluetooth. To connect, turn on Text input mode.</string>
+    <string name="bt_dismiss">DISMISS</string>
+    <string name="bt_more_settings">More settings</string>
     <string name="bt_sm_2_1">"There isn't enough space on the SD card to save the file from \"%1$s\""</string>
     <string name="bt_sm_2_2">Space needed: %1$s</string>
     <string name="ErrorTooManyRequests">Too many requests are being processed. Try again later.</string>
@@ -129,6 +136,7 @@
     <string name="deny_conn_req_inactive_nap">Cancel</string>
     <string name="bluetooth_tether_request">Allow Bluetooth tethering?</string>
     <string name="bluetooth_tether_connected">Connected to %1$s to access internet connection.</string>
+    <string name="bluetooth_pan_nap_connecting_error_message">"Can't connect to %1$s."</string>
     <string name="bluetooth_share_file_name">bluetooth_content_share</string>
     <string name="sharedUserId" />
     <string name="process" />

@@ -562,7 +562,7 @@
 
     new-instance v4, Landroid/app/Notification;
 
-    const v5, 0x7f0a00c6
+    const v5, 0x7f0a00ce
 
     invoke-virtual {p0, v5}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->getString(I)Ljava/lang/String;
 
@@ -576,7 +576,7 @@
 
     invoke-direct {v4, v8, v5, v6, v7}, Landroid/app/Notification;-><init>(ILjava/lang/CharSequence;J)V
 
-    const v5, 0x7f0a00c7
+    const v5, 0x7f0a00cf
 
     invoke-virtual {p0, v5}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->getString(I)Ljava/lang/String;
 
@@ -586,7 +586,7 @@
 
     aput-object v2, v6, v9
 
-    const v7, 0x7f0a00c8
+    const v7, 0x7f0a00d0
 
     invoke-virtual {p0, v7, v6}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1828,7 +1828,7 @@
 
     if-eqz v3, :cond_2
 
-    const v3, 0x7f0a00cb
+    const v3, 0x7f0a00d3
 
     invoke-virtual {p0, v3}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->getString(I)Ljava/lang/String;
 

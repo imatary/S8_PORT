@@ -32,7 +32,9 @@
 
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
-    .locals 4
+    .locals 5
+
+    const/4 v4, 0x1
 
     iget v2, p1, Landroid/os/Message;->what:I
 
@@ -67,17 +69,29 @@
 
     move-result-object v0
 
-    const/4 v2, 0x1
-
-    invoke-static {v2}, Lcom/android/bluetooth/pan/PanService;->-set0(Z)Z
+    invoke-static {v4}, Lcom/android/bluetooth/pan/PanService;->-set0(Z)Z
 
     if-eqz v0, :cond_0
 
     iget-object v2, p0, Lcom/android/bluetooth/pan/PanService$1;->this$0:Lcom/android/bluetooth/pan/PanService;
 
+    invoke-static {v2}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    iget-object v2, p0, Lcom/android/bluetooth/pan/PanService$1;->this$0:Lcom/android/bluetooth/pan/PanService;
+
     invoke-virtual {v2, v0}, Lcom/android/bluetooth/pan/PanService;->connect(Landroid/bluetooth/BluetoothDevice;)Z
 
+    iget-object v2, p0, Lcom/android/bluetooth/pan/PanService$1;->this$0:Lcom/android/bluetooth/pan/PanService;
+
+    invoke-static {v2, v4}, Lcom/android/bluetooth/pan/PanService;->-set1(Lcom/android/bluetooth/pan/PanService;Z)Z
+
     goto :goto_0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1

@@ -657,7 +657,7 @@
 
     move-object/from16 v17, v0
 
-    const v18, 0x7f0a00c9
+    const v18, 0x7f0a00d1
 
     invoke-virtual/range {v17 .. v18}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->getString(I)Ljava/lang/String;
 

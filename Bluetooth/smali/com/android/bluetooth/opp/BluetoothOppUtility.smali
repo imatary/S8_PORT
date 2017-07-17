@@ -294,7 +294,7 @@
 
     if-ne p1, v1, :cond_0
 
-    const v1, 0x7f0a005d
+    const v1, 0x7f0a0064
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -308,7 +308,7 @@
 
     if-ne p1, v1, :cond_1
 
-    const v1, 0x7f0a005e
+    const v1, 0x7f0a0065
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -321,7 +321,7 @@
 
     if-ne p1, v1, :cond_2
 
-    const v1, 0x7f0a005f
+    const v1, 0x7f0a0066
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -334,7 +334,7 @@
 
     if-ne p1, v1, :cond_3
 
-    const v1, 0x7f0a0060
+    const v1, 0x7f0a0067
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -347,7 +347,7 @@
 
     if-ne p1, v1, :cond_4
 
-    const v1, 0x7f0a0061
+    const v1, 0x7f0a0068
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -360,7 +360,7 @@
 
     if-ne p1, v1, :cond_5
 
-    const v1, 0x7f0a0062
+    const v1, 0x7f0a0069
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -373,7 +373,7 @@
 
     if-ne p1, v1, :cond_6
 
-    const v1, 0x7f0a0063
+    const v1, 0x7f0a006a
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -386,7 +386,7 @@
 
     if-ne p1, v1, :cond_7
 
-    const v1, 0x7f0a0064
+    const v1, 0x7f0a006b
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -399,7 +399,7 @@
 
     if-ne p1, v1, :cond_8
 
-    const v1, 0x7f0a0065
+    const v1, 0x7f0a006c
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -412,7 +412,7 @@
 
     if-ne p1, v1, :cond_9
 
-    const v1, 0x7f0a005a
+    const v1, 0x7f0a0061
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -430,7 +430,7 @@
     if-ne p1, v1, :cond_b
 
     :cond_a
-    const v1, 0x7f0a0066
+    const v1, 0x7f0a006d
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -451,7 +451,7 @@
 
     if-eq p1, v1, :cond_a
 
-    const v1, 0x7f0a0067
+    const v1, 0x7f0a006e
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -906,6 +906,26 @@
     goto :goto_0
 .end method
 
+.method public static isBluetoothShareUri(Landroid/net/Uri;)Z
+    .locals 2
+
+    invoke-virtual {p0}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/android/bluetooth/opp/BluetoothShare;->CONTENT_URI:Landroid/net/Uri;
+
+    invoke-virtual {v1}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public static isBtEnabled()Z
     .locals 2
 
@@ -1221,7 +1241,7 @@
 .end method
 
 .method public static openReceivedFile(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Landroid/net/Uri;)V
-    .locals 23
+    .locals 20
 
     sget-boolean v3, Lcom/android/bluetooth/opp/BluetoothOppUtility;->V:Z
 
@@ -1284,6 +1304,21 @@
     return-void
 
     :cond_2
+    invoke-static/range {p4 .. p4}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->isBluetoothShareUri(Landroid/net/Uri;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_3
+
+    const-string/jumbo v3, "BluetoothOppUtility"
+
+    const-string/jumbo v4, "Trying to open a file that wasn\'t transfered over Bluetooth"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_3
     new-instance v13, Ljava/io/File;
 
     move-object/from16 v0, p1
@@ -1294,7 +1329,7 @@
 
     move-result v3
 
-    if-nez v3, :cond_4
+    if-nez v3, :cond_5
 
     new-instance v15, Landroid/content/Intent;
 
@@ -1326,7 +1361,7 @@
 
     sget-boolean v3, Lcom/android/bluetooth/opp/BluetoothOppUtility;->D:Z
 
-    if-eqz v3, :cond_3
+    if-eqz v3, :cond_4
 
     const-string/jumbo v3, "BluetoothOppUtility"
 
@@ -1352,7 +1387,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_3
+    :cond_4
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
@@ -1367,16 +1402,16 @@
 
     return-void
 
-    :cond_4
+    :cond_5
     invoke-static/range {p1 .. p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    move-result-object v19
+    move-result-object v18
 
-    invoke-virtual/range {v19 .. v19}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
+    invoke-virtual/range {v18 .. v18}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v3
 
-    if-nez v3, :cond_5
+    if-nez v3, :cond_6
 
     new-instance v3, Ljava/io/File;
 
@@ -1386,14 +1421,14 @@
 
     invoke-static {v3}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
-    move-result-object v19
+    move-result-object v18
 
-    :cond_5
-    move-object/from16 v14, v19
+    :cond_6
+    move-object/from16 v14, v18
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    move-object/from16 v1, v18
 
     move-object/from16 v2, p2
 
@@ -1411,7 +1446,7 @@
 
     sget-boolean v3, Lcom/android/bluetooth/opp/BluetoothOppUtility;->V:Z
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_7
 
     const-string/jumbo v3, "BluetoothOppUtility"
 
@@ -1419,7 +1454,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_6
+    :cond_7
     const/16 v17, 0x0
 
     const/16 v16, 0x0
@@ -1442,13 +1477,13 @@
 
     move-result-object v10
 
-    if-eqz v10, :cond_8
+    if-eqz v10, :cond_9
 
     invoke-interface {v10}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v3
 
-    if-eqz v3, :cond_7
+    if-eqz v3, :cond_8
 
     const-string/jumbo v3, "uri"
 
@@ -1460,11 +1495,11 @@
 
     move-result-object v17
 
-    :cond_7
+    :cond_8
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    :cond_8
-    if-nez v17, :cond_9
+    :cond_9
+    if-nez v17, :cond_c
 
     const-string/jumbo v3, "BluetoothOppUtility"
 
@@ -1472,7 +1507,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v18
 
     move-object/from16 v1, p2
 
@@ -1487,59 +1522,8 @@
 
     invoke-virtual {v3, v9, v4}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
 
-    move-result-object v20
+    move-result-object v19
 
-    invoke-interface/range {v20 .. v20}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v22
-
-    :goto_1
-    invoke-interface/range {v22 .. v22}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_a
-
-    invoke-interface/range {v22 .. v22}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v21
-
-    check-cast v21, Landroid/content/pm/ResolveInfo;
-
-    move-object/from16 v0, v21
-
-    iget-object v3, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
-
-    iget-object v0, v3, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
-
-    move-object/from16 v18, v0
-
-    const/4 v3, 0x3
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v18
-
-    invoke-virtual {v0, v1, v14, v3}, Landroid/content/Context;->grantUriPermission(Ljava/lang/String;Landroid/net/Uri;I)V
-
-    goto :goto_1
-
-    :cond_9
-    invoke-static/range {v17 .. v17}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v16
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, p2
-
-    invoke-virtual {v9, v0, v1}, Landroid/content/Intent;->setDataAndTypeAndNormalize(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
-
-    move-object/from16 v14, v16
-
-    goto :goto_0
-
-    :cond_a
     const-string/jumbo v3, "android.intent.extra.STREAM"
 
     invoke-virtual {v9, v3, v14}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
@@ -1552,25 +1536,21 @@
 
     move-result v3
 
-    if-nez v3, :cond_b
+    if-nez v3, :cond_a
 
     const/high16 v3, 0x10000000
 
     invoke-virtual {v9, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    :cond_b
+    :cond_a
     const/4 v3, 0x1
 
-    invoke-virtual {v9, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
-
-    const/4 v3, 0x2
-
-    invoke-virtual {v9, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+    invoke-virtual {v9, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     :try_start_0
     sget-boolean v3, Lcom/android/bluetooth/opp/BluetoothOppUtility;->V:Z
 
-    if-eqz v3, :cond_c
+    if-eqz v3, :cond_b
 
     const-string/jumbo v3, "BluetoothOppUtility"
 
@@ -1606,7 +1586,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_c
+    :cond_b
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v9}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
@@ -1614,8 +1594,23 @@
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
-    :goto_2
+    :goto_1
     return-void
+
+    :cond_c
+    invoke-static/range {v17 .. v17}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v16
+
+    move-object/from16 v0, v16
+
+    move-object/from16 v1, p2
+
+    invoke-virtual {v9, v0, v1}, Landroid/content/Intent;->setDataAndTypeAndNormalize(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-object/from16 v14, v16
+
+    goto :goto_0
 
     :catch_0
     move-exception v11
@@ -1642,7 +1637,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_2
+    goto :goto_1
 
     :catch_1
     move-exception v12
@@ -1671,7 +1666,7 @@
 
     invoke-static {v3, v4, v12}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    goto :goto_2
+    goto :goto_1
 
     :cond_d
     new-instance v15, Landroid/content/Intent;
@@ -1702,7 +1697,7 @@
 
     invoke-virtual {v0, v15}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    goto :goto_2
+    goto :goto_1
 .end method
 
 .method static putSendFileInfo(Landroid/net/Uri;Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;)V

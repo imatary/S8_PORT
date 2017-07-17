@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.bluetooth" package="com.android.bluetooth" platformBuildVersionCode="24" platformBuildVersionName="7.0">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.bluetooth" package="com.android.bluetooth" platformBuildVersionCode="24" platformBuildVersionName="7.0">
     <original-package android:name="com.android.bluetooth"/>
     <permission android:description="@string/permdesc_bluetoothShareManager" android:label="@string/permlab_bluetoothShareManager" android:name="android.permission.ACCESS_BLUETOOTH_SHARE" android:protectionLevel="signature"/>
     <permission android:description="@string/permdesc_bluetoothWhitelist" android:label="@string/permlab_bluetoothWhitelist" android:name="com.android.permission.WHITELIST_BLUETOOTH_DEVICE" android:protectionLevel="signature"/>
@@ -189,6 +188,7 @@
         <activity android:enabled="@bool/profile_supported_opp" android:excludeFromRecents="true" android:name=".opp.BluetoothOppTransferActivity" android:process="@string/process" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
         <activity android:configChanges="keyboardHidden|screenSize" android:enabled="@bool/profile_supported_opp" android:excludeFromRecents="true" android:label="@string/app_name" android:name=".opp.BluetoothOppTransferHistory" android:process="@string/process" android:theme="@style/BluetoothTheme"/>
         <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:enabled="@bool/profile_supported_pan" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name=".pan.DialogConnReqInactiveNap" android:process="@string/process" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:enabled="@bool/profile_supported_hid" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name=".hid.BluetoothHidIncomingpriorityoffActivity" android:process="@string/process" android:resizeableActivity="false" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
         <activity android:enabled="@bool/profile_supported_pbap" android:excludeFromRecents="true" android:name=".pbap.BluetoothPbapActivity" android:process="@string/process" android:theme="@android:style/Theme.Material.Light.Dialog.Alert">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT"/>

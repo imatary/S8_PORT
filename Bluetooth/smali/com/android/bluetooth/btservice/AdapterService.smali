@@ -47,6 +47,8 @@
 
 .field public static final BLUETOOTH_PRIVILEGED:Ljava/lang/String; = "android.permission.BLUETOOTH_PRIVILEGED"
 
+.field private static final BONDED_TIME_STAMP_PREFERENCE_FILE:Ljava/lang/String; = "bonded_time_stamp"
+
 .field private static final CONNECT_OTHER_PROFILES_TIMEOUT:I = 0x1770
 
 .field private static final CONTROLLER_ENERGY_UPDATE_TIMEOUT_MILLIS:I = 0x1e
@@ -2119,7 +2121,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e006b
+    const v1, 0x10e006c
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -2135,7 +2137,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e006e
+    const v1, 0x10e006f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -2157,7 +2159,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e006c
+    const v1, 0x10e006d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -2249,7 +2251,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e006d
+    const v1, 0x10e006e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -10042,6 +10044,54 @@
 .method native setAdapterPropertyNative(I[B)Z
 .end method
 
+.method setBondedTimeStamp(Landroid/bluetooth/BluetoothDevice;Z)V
+    .locals 6
+
+    const-string/jumbo v2, "android.permission.BLUETOOTH_PRIVILEGED"
+
+    const-string/jumbo v3, "Need BLUETOOTH PRIVILEGED permission"
+
+    invoke-virtual {p0, v2, v3}, Lcom/android/bluetooth/btservice/AdapterService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v2, "bonded_time_stamp"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p0, v2, v3}, Lcom/android/bluetooth/btservice/AdapterService;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    if-eqz p2, :cond_0
+
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v4
+
+    invoke-interface {v0, v2, v4, v5}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
+
+    :goto_0
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {v0, v2}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    goto :goto_0
+.end method
+
 .method native setDevicePropertyNative([BI[B)Z
 .end method
 
@@ -11633,444 +11683,815 @@
 .end method
 
 .method updateAdapterState(II)V
-    .locals 13
+    .locals 22
 
-    const/16 v12, 0xd
+    const/16 v18, 0xc
 
-    const/16 v11, 0xc
+    move/from16 v0, p2
 
-    const/4 v10, 0x1
+    move/from16 v1, v18
 
-    const/16 v7, 0xb
+    if-ne v0, v1, :cond_0
 
-    if-eq p1, v7, :cond_0
+    const-string/jumbo v18, "bonded_time_stamp"
 
-    if-ne p2, v11, :cond_1
+    const/16 v19, 0x0
 
-    :cond_0
-    const-string/jumbo v7, "BluetoothAdapterService"
+    move-object/from16 v0, p0
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    move-object/from16 v1, v18
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    move/from16 v2, v19
 
-    const-string/jumbo v9, "[VendorCapa] prevState: "
+    invoke-virtual {v0, v1, v2}, Lcom/android/bluetooth/btservice/AdapterService;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v15
 
-    move-result-object v8
+    if-eqz v15, :cond_0
 
-    invoke-virtual {v8, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    const-string/jumbo v9, ", newState: "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService;->vscGetVendorCapabilities()I
-
-    :cond_1
-    sget-boolean v7, Lcom/android/bluetooth/btservice/AdapterService;->supported_pbap:Z
-
-    if-nez v7, :cond_3
-
-    const-string/jumbo v7, "Softphone"
-
-    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
-
-    move-result-object v8
-
-    const-string/jumbo v9, "CscFeature_IMS_ConfigMdmnType"
-
-    invoke-virtual {v8, v9}, Lcom/samsung/android/feature/SemCscFeature;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-virtual {v7, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_3
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/btservice/AdapterService;->getBondedDevices()[Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v5
 
-    new-instance v7, Landroid/content/ComponentName;
+    array-length v0, v5
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+    move/from16 v18, v0
 
-    move-result-object v8
+    if-nez v18, :cond_9
 
-    const-class v9, Lcom/android/bluetooth/pbap/BluetoothPbapService;
+    const-string/jumbo v18, "BluetoothAdapterService"
 
-    invoke-direct {v7, v8, v9}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    const-string/jumbo v19, "updateAdapterState :: bonded list size = 0"
 
-    invoke-virtual {v5, v7}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
+    invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-result v7
+    invoke-interface {v15}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
-    if-eq v7, v10, :cond_2
+    move-result-object v18
 
-    new-instance v7, Landroid/content/ComponentName;
+    invoke-interface/range {v18 .. v18}, Landroid/content/SharedPreferences$Editor;->clear()Landroid/content/SharedPreferences$Editor;
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+    move-result-object v18
 
-    move-result-object v8
+    invoke-interface/range {v18 .. v18}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    const-class v9, Lcom/android/bluetooth/pbap/BluetoothPbapActivity;
+    :cond_0
+    const/16 v18, 0xb
 
-    invoke-direct {v7, v8, v9}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    move/from16 v0, p1
 
-    invoke-virtual {v5, v7, v10, v10}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
+    move/from16 v1, v18
 
-    new-instance v7, Landroid/content/ComponentName;
+    if-eq v0, v1, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+    const/16 v18, 0xc
 
-    move-result-object v8
+    move/from16 v0, p2
 
-    const-class v9, Lcom/android/bluetooth/pbap/BluetoothPbapService;
+    move/from16 v1, v18
 
-    invoke-direct {v7, v8, v9}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    if-ne v0, v1, :cond_2
 
-    invoke-virtual {v5, v7, v10, v10}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
+    :cond_1
+    const-string/jumbo v18, "BluetoothAdapterService"
 
-    new-instance v7, Landroid/content/ComponentName;
+    new-instance v19, Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+    invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v8
+    const-string/jumbo v20, "[VendorCapa] prevState: "
 
-    const-class v9, Lcom/android/bluetooth/pbap/BluetoothPbapReceiver;
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v7, v8, v9}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    move-result-object v19
 
-    invoke-virtual {v5, v7, v10, v10}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
+    move-object/from16 v0, v19
+
+    move/from16 v1, p1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    const-string/jumbo v20, ", newState: "
+
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    move-object/from16 v0, v19
+
+    move/from16 v1, p2
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    invoke-virtual/range {v19 .. v19}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v19
+
+    invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/btservice/AdapterService;->vscGetVendorCapabilities()I
 
     :cond_2
-    sput-boolean v10, Lcom/android/bluetooth/btservice/AdapterService;->supported_pbap:Z
+    sget-boolean v18, Lcom/android/bluetooth/btservice/AdapterService;->supported_pbap:Z
+
+    if-nez v18, :cond_4
+
+    const-string/jumbo v18, "Softphone"
+
+    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
+
+    move-result-object v19
+
+    const-string/jumbo v20, "CscFeature_IMS_ConfigMdmnType"
+
+    invoke-virtual/range {v19 .. v20}, Lcom/samsung/android/feature/SemCscFeature;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v19
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v18
+
+    if-eqz v18, :cond_4
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v14
+
+    new-instance v18, Landroid/content/ComponentName;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v19
+
+    const-class v20, Lcom/android/bluetooth/pbap/BluetoothPbapService;
+
+    invoke-direct/range {v18 .. v20}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v14, v0}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
+
+    move-result v18
+
+    const/16 v19, 0x1
+
+    move/from16 v0, v18
+
+    move/from16 v1, v19
+
+    if-eq v0, v1, :cond_3
+
+    new-instance v18, Landroid/content/ComponentName;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v19
+
+    const-class v20, Lcom/android/bluetooth/pbap/BluetoothPbapActivity;
+
+    invoke-direct/range {v18 .. v20}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const/16 v19, 0x1
+
+    const/16 v20, 0x1
+
+    move-object/from16 v0, v18
+
+    move/from16 v1, v19
+
+    move/from16 v2, v20
+
+    invoke-virtual {v14, v0, v1, v2}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
+
+    new-instance v18, Landroid/content/ComponentName;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v19
+
+    const-class v20, Lcom/android/bluetooth/pbap/BluetoothPbapService;
+
+    invoke-direct/range {v18 .. v20}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const/16 v19, 0x1
+
+    const/16 v20, 0x1
+
+    move-object/from16 v0, v18
+
+    move/from16 v1, v19
+
+    move/from16 v2, v20
+
+    invoke-virtual {v14, v0, v1, v2}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
+
+    new-instance v18, Landroid/content/ComponentName;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v19
+
+    const-class v20, Lcom/android/bluetooth/pbap/BluetoothPbapReceiver;
+
+    invoke-direct/range {v18 .. v20}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const/16 v19, 0x1
+
+    const/16 v20, 0x1
+
+    move-object/from16 v0, v18
+
+    move/from16 v1, v19
+
+    move/from16 v2, v20
+
+    invoke-virtual {v14, v0, v1, v2}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
 
     :cond_3
-    const-string/jumbo v7, "BluetoothAdapterService"
+    const/16 v18, 0x1
 
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v9, "Bluetooth PBAP supported is "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    sget-boolean v9, Lcom/android/bluetooth/btservice/AdapterService;->supported_pbap:Z
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    sget-boolean v7, Lcom/android/bluetooth/btservice/AdapterService;->supported_pbap:Z
-
-    if-eqz v7, :cond_5
-
-    if-eq p2, v11, :cond_4
-
-    if-ne p2, v12, :cond_5
+    sput-boolean v18, Lcom/android/bluetooth/btservice/AdapterService;->supported_pbap:Z
 
     :cond_4
-    new-instance v2, Landroid/content/Intent;
+    const-string/jumbo v18, "BluetoothAdapterService"
 
-    const-class v7, Lcom/android/bluetooth/pbap/BluetoothPbapService;
+    new-instance v19, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, p0, v7}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "action"
+    const-string/jumbo v20, "Bluetooth PBAP supported is "
 
-    const-string/jumbo v8, "android.bluetooth.adapter.action.STATE_CHANGED"
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v7, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    move-result-object v19
 
-    const-string/jumbo v7, "android.bluetooth.adapter.extra.PREVIOUS_STATE"
+    sget-boolean v20, Lcom/android/bluetooth/btservice/AdapterService;->supported_pbap:Z
 
-    invoke-virtual {v2, v7, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "android.bluetooth.adapter.extra.STATE"
+    move-result-object v19
 
-    invoke-virtual {v2, v7, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual/range {v19 .. v19}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {p0, v2}, Lcom/android/bluetooth/btservice/AdapterService;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    move-result-object v19
+
+    invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    sget-boolean v18, Lcom/android/bluetooth/btservice/AdapterService;->supported_pbap:Z
+
+    if-eqz v18, :cond_6
+
+    const/16 v18, 0xc
+
+    move/from16 v0, p2
+
+    move/from16 v1, v18
+
+    if-eq v0, v1, :cond_5
+
+    const/16 v18, 0xd
+
+    move/from16 v0, p2
+
+    move/from16 v1, v18
+
+    if-ne v0, v1, :cond_6
 
     :cond_5
-    const/16 v7, 0xf
+    new-instance v9, Landroid/content/Intent;
 
-    if-ne p2, v7, :cond_7
+    const-class v18, Lcom/android/bluetooth/pbap/BluetoothPbapService;
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService;->getContentResolver()Landroid/content/ContentResolver;
+    move-object/from16 v0, p0
 
-    move-result-object v7
+    move-object/from16 v1, v18
 
-    const-string/jumbo v8, "device_name"
+    invoke-direct {v9, v0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    invoke-static {v7, v8}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+    const-string/jumbo v18, "action"
 
-    move-result-object v3
+    const-string/jumbo v19, "android.bluetooth.adapter.action.STATE_CHANGED"
 
-    if-nez v3, :cond_6
+    move-object/from16 v0, v18
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService;->getContentResolver()Landroid/content/ContentResolver;
+    move-object/from16 v1, v19
 
-    move-result-object v7
+    invoke-virtual {v9, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    const-string/jumbo v8, "device_name"
+    const-string/jumbo v18, "android.bluetooth.adapter.extra.PREVIOUS_STATE"
 
-    invoke-static {v7, v8}, Landroid/provider/Settings$Global;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+    move-object/from16 v0, v18
 
-    move-result-object v3
+    move/from16 v1, p1
+
+    invoke-virtual {v9, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    const-string/jumbo v18, "android.bluetooth.adapter.extra.STATE"
+
+    move-object/from16 v0, v18
+
+    move/from16 v1, p2
+
+    invoke-virtual {v9, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v9}, Lcom/android/bluetooth/btservice/AdapterService;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     :cond_6
-    if-eqz v3, :cond_7
+    const/16 v18, 0xf
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService;->getName()Ljava/lang/String;
+    move/from16 v0, p2
 
-    move-result-object v7
+    move/from16 v1, v18
 
-    invoke-virtual {v3, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    if-ne v0, v1, :cond_8
 
-    move-result v7
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/btservice/AdapterService;->getContentResolver()Landroid/content/ContentResolver;
 
-    if-eqz v7, :cond_8
+    move-result-object v18
+
+    const-string/jumbo v19, "device_name"
+
+    invoke-static/range {v18 .. v19}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v12
+
+    if-nez v12, :cond_7
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/btservice/AdapterService;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v18
+
+    const-string/jumbo v19, "device_name"
+
+    invoke-static/range {v18 .. v19}, Landroid/provider/Settings$Global;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v12
 
     :cond_7
+    if-eqz v12, :cond_8
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/btservice/AdapterService;->getName()Ljava/lang/String;
+
+    move-result-object v18
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v12, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v18
+
+    if-eqz v18, :cond_e
+
+    :cond_8
     :goto_0
-    iget-object v7, p0, Lcom/android/bluetooth/btservice/AdapterService;->mCallbacks:Landroid/os/RemoteCallbackList;
+    move-object/from16 v0, p0
 
-    if-eqz v7, :cond_a
+    iget-object v0, v0, Lcom/android/bluetooth/btservice/AdapterService;->mCallbacks:Landroid/os/RemoteCallbackList;
 
-    iget-object v7, p0, Lcom/android/bluetooth/btservice/AdapterService;->mCallbacks:Landroid/os/RemoteCallbackList;
+    move-object/from16 v18, v0
 
-    invoke-virtual {v7}, Landroid/os/RemoteCallbackList;->beginBroadcast()I
+    if-eqz v18, :cond_10
 
-    move-result v4
+    move-object/from16 v0, p0
 
-    new-instance v7, Ljava/lang/StringBuilder;
+    iget-object v0, v0, Lcom/android/bluetooth/btservice/AdapterService;->mCallbacks:Landroid/os/RemoteCallbackList;
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    move-object/from16 v18, v0
 
-    const-string/jumbo v8, "updateAdapterState() - Broadcasting state to "
+    invoke-virtual/range {v18 .. v18}, Landroid/os/RemoteCallbackList;->beginBroadcast()I
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v13
 
-    move-result-object v7
+    new-instance v18, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v7
+    const-string/jumbo v19, "updateAdapterState() - Broadcasting state to "
 
-    const-string/jumbo v8, " receivers."
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v18
 
-    move-result-object v7
+    move-object/from16 v0, v18
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v18
 
-    invoke-direct {p0, v7}, Lcom/android/bluetooth/btservice/AdapterService;->debugLog(Ljava/lang/String;)V
+    const-string/jumbo v19, " receivers."
 
-    const/4 v1, 0x0
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v18
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v18
+
+    invoke-direct {v0, v1}, Lcom/android/bluetooth/btservice/AdapterService;->debugLog(Ljava/lang/String;)V
+
+    const/4 v8, 0x0
 
     :goto_1
-    if-ge v1, v4, :cond_9
+    if-ge v8, v13, :cond_f
 
     :try_start_0
-    iget-object v7, p0, Lcom/android/bluetooth/btservice/AdapterService;->mCallbacks:Landroid/os/RemoteCallbackList;
+    move-object/from16 v0, p0
 
-    invoke-virtual {v7, v1}, Landroid/os/RemoteCallbackList;->getBroadcastItem(I)Landroid/os/IInterface;
+    iget-object v0, v0, Lcom/android/bluetooth/btservice/AdapterService;->mCallbacks:Landroid/os/RemoteCallbackList;
 
-    move-result-object v7
+    move-object/from16 v18, v0
 
-    check-cast v7, Landroid/bluetooth/IBluetoothCallback;
+    move-object/from16 v0, v18
 
-    invoke-interface {v7, p1, p2}, Landroid/bluetooth/IBluetoothCallback;->onBluetoothStateChange(II)V
+    invoke-virtual {v0, v8}, Landroid/os/RemoteCallbackList;->getBroadcastItem(I)Landroid/os/IInterface;
+
+    move-result-object v18
+
+    check-cast v18, Landroid/bluetooth/IBluetoothCallback;
+
+    move-object/from16 v0, v18
+
+    move/from16 v1, p1
+
+    move/from16 v2, p2
+
+    invoke-interface {v0, v1, v2}, Landroid/bluetooth/IBluetoothCallback;->onBluetoothStateChange(II)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_2
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v8, v8, 0x1
 
     goto :goto_1
 
-    :cond_8
-    const-string/jumbo v7, "BluetoothAdapterService"
-
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v9, "updateAdapterState :: Bluetooth name set to : "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p0, v3}, Lcom/android/bluetooth/btservice/AdapterService;->setName(Ljava/lang/String;)Z
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v8, "updateAdapterState() - Callback #"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, " failed ("
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, ")"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-direct {p0, v7}, Lcom/android/bluetooth/btservice/AdapterService;->debugLog(Ljava/lang/String;)V
-
-    goto :goto_2
-
     :cond_9
-    iget-object v7, p0, Lcom/android/bluetooth/btservice/AdapterService;->mCallbacks:Landroid/os/RemoteCallbackList;
+    invoke-interface {v15}, Landroid/content/SharedPreferences;->getAll()Ljava/util/Map;
 
-    invoke-virtual {v7}, Landroid/os/RemoteCallbackList;->finishBroadcast()V
+    move-result-object v18
+
+    invoke-interface/range {v18 .. v18}, Ljava/util/Map;->keySet()Ljava/util/Set;
+
+    move-result-object v18
+
+    invoke-interface/range {v18 .. v18}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v11
+
+    new-instance v17, Ljava/util/ArrayList;
+
+    invoke-direct/range {v17 .. v17}, Ljava/util/ArrayList;-><init>()V
 
     :cond_a
-    const-string/jumbo v7, "BluetoothAdapterService"
+    :goto_3
+    invoke-interface {v11}, Ljava/util/Iterator;->hasNext()Z
 
-    const-string/jumbo v8, "Autoconnection is available "
+    move-result v18
 
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    if-eqz v18, :cond_d
 
-    const-string/jumbo v7, "BluetoothAdapterService"
+    invoke-interface {v11}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    move-result-object v4
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    check-cast v4, Ljava/lang/String;
 
-    const-string/jumbo v9, "updateAdapterState prevState = "
+    const/4 v10, 0x0
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v18, "BluetoothAdapterService"
 
-    move-result-object v8
+    new-instance v19, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v8
+    const-string/jumbo v20, "updateAdapterState :: address = "
 
-    const-string/jumbo v9, "newState = "
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v19
 
-    move-result-object v8
+    move-object/from16 v0, v19
 
-    invoke-virtual {v8, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v19
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string/jumbo v20, " , timeStamp = "
 
-    move-result-object v8
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v19
 
-    new-instance v6, Landroid/content/Intent;
+    const-wide/16 v20, 0x0
 
-    const-class v7, Lcom/samsung/ble/BleAutoConnectService;
+    move-wide/from16 v0, v20
 
-    invoke-direct {v6, p0, v7}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-interface {v15, v4, v0, v1}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
 
-    if-ne p2, v11, :cond_b
+    move-result-wide v20
 
-    const-string/jumbo v7, "BluetoothAdapterService"
+    invoke-virtual/range {v19 .. v21}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "starting service from this receiver"
+    move-result-object v19
 
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual/range {v19 .. v19}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {p0, v6}, Lcom/android/bluetooth/btservice/AdapterService;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    move-result-object v19
 
-    const-string/jumbo v7, "bluetooth_a2dp_sink_mode"
+    invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 v8, 0x0
 
-    invoke-virtual {p0, v7, v8}, Lcom/android/bluetooth/btservice/AdapterService;->setA2dpPreference(Ljava/lang/String;I)Z
+    :goto_4
+    array-length v0, v5
+
+    move/from16 v18, v0
+
+    move/from16 v0, v18
+
+    if-ge v8, v0, :cond_b
+
+    aget-object v18, v5, v8
+
+    invoke-virtual/range {v18 .. v18}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+
+    move-result-object v18
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v18
+
+    if-eqz v18, :cond_c
+
+    const/4 v10, 0x1
 
     :cond_b
-    if-ne p2, v12, :cond_c
+    if-nez v10, :cond_a
 
-    const-string/jumbo v7, "BluetoothAdapterService"
+    move-object/from16 v0, v17
 
-    const-string/jumbo v8, "terminating service from this receiver"
+    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p0, v6}, Lcom/android/bluetooth/btservice/AdapterService;->stopService(Landroid/content/Intent;)Z
+    goto :goto_3
 
     :cond_c
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_4
+
+    :cond_d
+    invoke-interface {v15}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v7
+
+    const/4 v8, 0x0
+
+    :goto_5
+    invoke-virtual/range {v17 .. v17}, Ljava/util/ArrayList;->size()I
+
+    move-result v18
+
+    move/from16 v0, v18
+
+    if-ge v8, v0, :cond_0
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v0, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v18
+
+    check-cast v18, Ljava/lang/String;
+
+    move-object/from16 v0, v18
+
+    invoke-interface {v7, v0}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    invoke-interface {v7}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_5
+
+    :cond_e
+    const-string/jumbo v18, "BluetoothAdapterService"
+
+    new-instance v19, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v20, "updateAdapterState :: Bluetooth name set to : "
+
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    move-object/from16 v0, v19
+
+    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    invoke-virtual/range {v19 .. v19}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v19
+
+    invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v12}, Lcom/android/bluetooth/btservice/AdapterService;->setName(Ljava/lang/String;)Z
+
+    goto/16 :goto_0
+
+    :catch_0
+    move-exception v6
+
+    new-instance v18, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v19, "updateAdapterState() - Callback #"
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    const-string/jumbo v19, " failed ("
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    const-string/jumbo v19, ")"
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v18
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v18
+
+    invoke-direct {v0, v1}, Lcom/android/bluetooth/btservice/AdapterService;->debugLog(Ljava/lang/String;)V
+
+    goto/16 :goto_2
+
+    :cond_f
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/bluetooth/btservice/AdapterService;->mCallbacks:Landroid/os/RemoteCallbackList;
+
+    move-object/from16 v18, v0
+
+    invoke-virtual/range {v18 .. v18}, Landroid/os/RemoteCallbackList;->finishBroadcast()V
+
+    :cond_10
+    const-string/jumbo v18, "BluetoothAdapterService"
+
+    const-string/jumbo v19, "Autoconnection is available "
+
+    invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string/jumbo v18, "BluetoothAdapterService"
+
+    new-instance v19, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v20, "updateAdapterState prevState = "
+
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    move-object/from16 v0, v19
+
+    move/from16 v1, p1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    const-string/jumbo v20, "newState = "
+
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    move-object/from16 v0, v19
+
+    move/from16 v1, p2
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    invoke-virtual/range {v19 .. v19}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v19
+
+    invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v16, Landroid/content/Intent;
+
+    const-class v18, Lcom/samsung/ble/BleAutoConnectService;
+
+    move-object/from16 v0, v16
+
+    move-object/from16 v1, p0
+
+    move-object/from16 v2, v18
+
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const/16 v18, 0xc
+
+    move/from16 v0, p2
+
+    move/from16 v1, v18
+
+    if-ne v0, v1, :cond_11
+
+    const-string/jumbo v18, "BluetoothAdapterService"
+
+    const-string/jumbo v19, "starting service from this receiver"
+
+    invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v16
+
+    invoke-virtual {v0, v1}, Lcom/android/bluetooth/btservice/AdapterService;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    const-string/jumbo v18, "bluetooth_a2dp_sink_mode"
+
+    const/16 v19, 0x0
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v18
+
+    move/from16 v2, v19
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/bluetooth/btservice/AdapterService;->setA2dpPreference(Ljava/lang/String;I)Z
+
+    :cond_11
+    const/16 v18, 0xd
+
+    move/from16 v0, p2
+
+    move/from16 v1, v18
+
+    if-ne v0, v1, :cond_12
+
+    const-string/jumbo v18, "BluetoothAdapterService"
+
+    const-string/jumbo v19, "terminating service from this receiver"
+
+    invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v16
+
+    invoke-virtual {v0, v1}, Lcom/android/bluetooth/btservice/AdapterService;->stopService(Landroid/content/Intent;)Z
+
+    :cond_12
     return-void
 .end method
 

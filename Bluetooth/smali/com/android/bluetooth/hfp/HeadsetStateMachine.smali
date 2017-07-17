@@ -4928,76 +4928,116 @@
 .end method
 
 .method private isInCall()Z
-    .locals 6
+    .locals 7
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
-    iget-object v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+    iget-object v4, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
 
-    invoke-virtual {v3}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getState()I
+    invoke-virtual {v4}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getNumActiveCall()I
+
+    move-result v4
+
+    if-gtz v4, :cond_0
+
+    iget-object v4, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    invoke-virtual {v4}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getNumHeldCall()I
+
+    move-result v4
+
+    if-lez v4, :cond_1
+
+    :cond_0
+    move v1, v2
+
+    :goto_0
+    if-nez v1, :cond_4
+
+    iget-object v4, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    invoke-virtual {v4}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getState()I
 
     move-result v0
 
-    const-string/jumbo v3, "HeadsetStateMachine"
+    const-string/jumbo v4, "HeadsetStateMachine"
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v5, "isInCall : currCallState : "
+    const-string/jumbo v6, "isInCall : "
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+    if-eqz v0, :cond_3
 
-    invoke-virtual {v3}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getNumActiveCall()I
-
-    move-result v3
-
-    if-gtz v3, :cond_0
-
-    iget-object v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
-
-    invoke-virtual {v3}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getNumHeldCall()I
-
-    move-result v3
-
-    if-lez v3, :cond_1
-
-    :cond_0
-    :goto_0
-    return v1
+    :goto_1
+    return v2
 
     :cond_1
-    iget-object v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+    iget-object v4, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
 
-    invoke-virtual {v3}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getCallState()I
+    invoke-virtual {v4}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getCallState()I
 
-    move-result v3
+    move-result v4
 
-    const/4 v4, 0x6
+    const/4 v5, 0x6
 
-    if-ne v3, v4, :cond_0
-
-    if-nez v0, :cond_0
+    if-eq v4, v5, :cond_2
 
     move v1, v2
 
     goto :goto_0
+
+    :cond_2
+    move v1, v3
+
+    goto :goto_0
+
+    :cond_3
+    move v2, v3
+
+    goto :goto_1
+
+    :cond_4
+    const-string/jumbo v2, "HeadsetStateMachine"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "isInCall : "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v1
 .end method
 
 .method private isInCallforVR()Z
@@ -6196,7 +6236,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0a008d
+    const v2, 0x7f0a0095
 
     invoke-virtual {v0, v2, v1}, Lcom/android/bluetooth/hfp/HeadsetService;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -6220,7 +6260,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mService:Lcom/android/bluetooth/hfp/HeadsetService;
 
-    const v2, 0x7f0a008b
+    const v2, 0x7f0a0093
 
     invoke-virtual {v0, v2}, Lcom/android/bluetooth/hfp/HeadsetService;->getString(I)Ljava/lang/String;
 
@@ -6324,7 +6364,7 @@
     :cond_5
     iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mService:Lcom/android/bluetooth/hfp/HeadsetService;
 
-    const v2, 0x7f0a008c
+    const v2, 0x7f0a0094
 
     invoke-virtual {v0, v2}, Lcom/android/bluetooth/hfp/HeadsetService;->getString(I)Ljava/lang/String;
 
@@ -7929,6 +7969,96 @@
     if-nez p2, :cond_8
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->terminateScoUsingVirtualVoiceCall()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_8
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    invoke-virtual {v2}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getCallState()I
+
+    move-result v21
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    invoke-virtual {v2}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getNumActiveCall()I
+
+    move-result v2
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    invoke-virtual {v3}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getNumHeldCall()I
+
+    move-result v3
+
+    add-int v22, v2, v3
+
+    move-object/from16 v0, p1
+
+    iget v2, v0, Lcom/android/bluetooth/hfp/HeadsetCallState;->mNumActive:I
+
+    move-object/from16 v0, p1
+
+    iget v3, v0, Lcom/android/bluetooth/hfp/HeadsetCallState;->mNumHeld:I
+
+    add-int v15, v2, v3
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    move-object/from16 v0, p1
+
+    iget v3, v0, Lcom/android/bluetooth/hfp/HeadsetCallState;->mNumActive:I
+
+    invoke-virtual {v2, v3}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->setNumActiveCall(I)V
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    move-object/from16 v0, p1
+
+    iget v3, v0, Lcom/android/bluetooth/hfp/HeadsetCallState;->mNumHeld:I
+
+    invoke-virtual {v2, v3}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->setNumHeldCall(I)V
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    move-object/from16 v0, p1
+
+    iget v3, v0, Lcom/android/bluetooth/hfp/HeadsetCallState;->mCallState:I
+
+    invoke-virtual {v2, v3}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->setCallState(I)V
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    move-object/from16 v0, p1
+
+    iget-object v3, v0, Lcom/android/bluetooth/hfp/HeadsetCallState;->mNumber:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->setNumber(Ljava/lang/String;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    move-object/from16 v0, p1
+
+    iget v3, v0, Lcom/android/bluetooth/hfp/HeadsetCallState;->mType:I
+
+    invoke-virtual {v2, v3}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->setType(I)V
 
     :cond_8
     const/16 v19, 0x0

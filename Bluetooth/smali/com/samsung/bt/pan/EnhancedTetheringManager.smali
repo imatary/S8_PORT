@@ -348,7 +348,7 @@
 
     move-result-object v6
 
-    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
 
     move-result-object v7
 
@@ -436,7 +436,7 @@
 
     invoke-interface {v3, v5, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    invoke-interface {v3}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    invoke-interface {v3}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     :cond_1
     return-void
@@ -485,7 +485,7 @@
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     return-void
 .end method
@@ -566,13 +566,13 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "isLastConnectedDevice? : "
+    const-string/jumbo v3, "isLastConnectedDevice : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
 
     move-result-object v3
 
@@ -595,28 +595,6 @@
     invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
-
-    const-string/jumbo v1, "EnhancedTetheringManager"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "last tethered Device : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
@@ -669,7 +647,7 @@
 
     move-result-object v6
 
-    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
 
     move-result-object v7
 
@@ -757,7 +735,7 @@
 
     invoke-interface {v3, v5, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    invoke-interface {v3}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    invoke-interface {v3}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     :cond_1
     return-void
@@ -778,7 +756,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
 
     move-result-object v3
 
@@ -806,7 +784,7 @@
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     return-void
 .end method
@@ -862,6 +840,10 @@
 
     iput-boolean v4, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mTetherEnabled:Z
 
+    iget-object v2, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mLeHelper:Lcom/samsung/bt/pan/ETMLeHelper;
+
+    if-nez v2, :cond_0
+
     new-instance v2, Lcom/samsung/bt/pan/ETMLeHelper;
 
     iget-object v3, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mContext:Landroid/content/Context;
@@ -872,13 +854,14 @@
 
     iput-object v2, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mLeHelper:Lcom/samsung/bt/pan/ETMLeHelper;
 
+    :cond_0
     invoke-virtual {p0}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->getLastTetheredDevice()Ljava/lang/String;
 
     move-result-object v1
 
     sget-boolean v2, Lcom/samsung/bt/pan/EnhancedTetheringManager;->DBG:Z
 
-    if-eqz v2, :cond_0
+    if-eqz v2, :cond_1
 
     const-string/jumbo v2, "EnhancedTetheringManager"
 
@@ -902,14 +885,14 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_0
+    :cond_1
     const-string/jumbo v2, "NOT FOUND"
 
-    if-eq v1, v2, :cond_1
+    if-eq v1, v2, :cond_2
 
     invoke-virtual {p0}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->startFindTetherServer()V
 
-    :cond_1
+    :cond_2
     return-void
 .end method
 
@@ -1008,10 +991,25 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
     iput-boolean v4, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mTetherEnabled:Z
 
+    iget-object v0, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mLeHelper:Lcom/samsung/bt/pan/ETMLeHelper;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/samsung/bt/pan/ETMLeHelper;
+
+    iget-object v1, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mContext:Landroid/content/Context;
+
+    iget-object v2, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mHandler:Landroid/os/Handler;
+
+    invoke-direct {v0, v1, v2}, Lcom/samsung/bt/pan/ETMLeHelper;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
+
+    iput-object v0, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mLeHelper:Lcom/samsung/bt/pan/ETMLeHelper;
+
+    :cond_0
     iget-object v0, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mLeHelper:Lcom/samsung/bt/pan/ETMLeHelper;
 
     invoke-virtual {v0}, Lcom/samsung/bt/pan/ETMLeHelper;->startAdvertise()V
@@ -1023,7 +1021,7 @@
     :goto_0
     return-void
 
-    :cond_0
+    :cond_1
     iput-boolean v3, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mTetherEnabled:Z
 
     iget-object v0, p0, Lcom/samsung/bt/pan/EnhancedTetheringManager;->mLeHelper:Lcom/samsung/bt/pan/ETMLeHelper;

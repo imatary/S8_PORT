@@ -1084,7 +1084,7 @@
 
     const-string/jumbo v1, "content"
 
-    const v2, 0x7f0a005c
+    const v2, 0x7f0a0063
 
     invoke-virtual {v9, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
