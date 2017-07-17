@@ -110,7 +110,7 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/pan/PanService$2;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v2}, Lcom/android/bluetooth/pan/PanService;->-get5(Lcom/android/bluetooth/pan/PanService;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/bluetooth/pan/PanService;->-get7(Lcom/android/bluetooth/pan/PanService;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -126,7 +126,7 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/pan/PanService$2;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v2}, Lcom/android/bluetooth/pan/PanService;->-get5(Lcom/android/bluetooth/pan/PanService;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/bluetooth/pan/PanService;->-get7(Lcom/android/bluetooth/pan/PanService;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -198,7 +198,7 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/pan/PanService$2;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v2}, Lcom/android/bluetooth/pan/PanService;->-get5(Lcom/android/bluetooth/pan/PanService;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/bluetooth/pan/PanService;->-get7(Lcom/android/bluetooth/pan/PanService;)Ljava/lang/String;
 
     move-result-object v2
 

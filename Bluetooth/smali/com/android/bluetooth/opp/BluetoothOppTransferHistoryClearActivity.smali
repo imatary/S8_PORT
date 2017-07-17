@@ -213,7 +213,7 @@
 
     iput-object v2, v1, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    const v2, 0x7f0a0079
+    const v2, 0x7f0a0080
 
     invoke-virtual {p0, v2}, Lcom/android/bluetooth/opp/BluetoothOppTransferHistoryClearActivity;->getString(I)Ljava/lang/String;
 

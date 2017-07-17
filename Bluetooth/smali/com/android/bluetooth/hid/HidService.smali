@@ -25,6 +25,24 @@
 
 .field private static final DBG:Z = true
 
+.field private static final HID_BATTERY_POWER:I = 0x10
+
+.field private static final HID_NORMALLY_CONNECTABLE:I = 0x2
+
+.field private static final HID_RECONN_INIT:I = 0x4
+
+.field private static final HID_REMOTE_WAKE:I = 0x20
+
+.field private static final HID_SDP_DISABLE:I = 0x8
+
+.field private static final HID_SSR_MAX_LATENCY:I = 0x80
+
+.field private static final HID_SSR_MIN_TOUT:I = 0x100
+
+.field private static final HID_SUP_TOUT_AVLBL:I = 0x40
+
+.field private static final HID_VIRTUAL_CABLE:I = 0x1
+
 .field private static final MESSAGE_CONNECT:I = 0x1
 
 .field private static final MESSAGE_CONNECT_STATE_CHANGED:I = 0x3
@@ -34,6 +52,8 @@
 .field private static final MESSAGE_GET_PROTOCOL_MODE:I = 0x4
 
 .field private static final MESSAGE_GET_REPORT:I = 0x8
+
+.field private static final MESSAGE_ON_GET_ATTR:I = 0xe
 
 .field private static final MESSAGE_ON_GET_PROTOCOL_MODE:I = 0x6
 
@@ -51,12 +71,16 @@
 
 .field private static final MESSAGE_VIRTUAL_UNPLUG:I = 0x5
 
+.field public static final NOTIFICATION_ID:I = 0x1080080
+
 .field private static final TAG:Ljava/lang/String; = "HidService"
 
 .field private static sHidService:Lcom/android/bluetooth/hid/HidService;
 
 
 # instance fields
+.field private isNormallyType:Z
+
 .field private final mHandler:Landroid/os/Handler;
 
 .field private mHidDevRegistered:Z
@@ -77,9 +101,21 @@
 
 .field private mTargetDevice:Landroid/bluetooth/BluetoothDevice;
 
+.field private manager:Landroid/app/NotificationManager;
+
+.field private unplugprestate:I
+
 
 # direct methods
-.method static synthetic -get0(Lcom/android/bluetooth/hid/HidService;)Ljava/util/Map;
+.method static synthetic -get0(Lcom/android/bluetooth/hid/HidService;)Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/android/bluetooth/hid/HidService;->isNormallyType:Z
+
+    return v0
+.end method
+
+.method static synthetic -get1(Lcom/android/bluetooth/hid/HidService;)Ljava/util/Map;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/hid/HidService;->mInputDevices:Ljava/util/Map;
@@ -87,7 +123,15 @@
     return-object v0
 .end method
 
-.method static synthetic -set0(Lcom/android/bluetooth/hid/HidService;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic -set0(Lcom/android/bluetooth/hid/HidService;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/bluetooth/hid/HidService;->isNormallyType:Z
+
+    return p1
+.end method
+
+.method static synthetic -set1(Lcom/android/bluetooth/hid/HidService;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
     .locals 0
 
     iput-object p1, p0, Lcom/android/bluetooth/hid/HidService;->mTargetDevice:Landroid/bluetooth/BluetoothDevice;
@@ -282,17 +326,23 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 2
+
+    const/4 v1, 0x0
 
     invoke-direct {p0}, Lcom/android/bluetooth/btservice/ProfileService;-><init>()V
 
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/android/bluetooth/hid/HidService;->mTargetDevice:Landroid/bluetooth/BluetoothDevice;
+    iput-object v1, p0, Lcom/android/bluetooth/hid/HidService;->mTargetDevice:Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/bluetooth/hid/HidService;->mHidDevRegistered:Z
+
+    iput-object v1, p0, Lcom/android/bluetooth/hid/HidService;->manager:Landroid/app/NotificationManager;
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/android/bluetooth/hid/HidService;->isNormallyType:Z
 
     new-instance v0, Lcom/android/bluetooth/hid/HidService$1;
 
@@ -463,6 +513,8 @@
 
     invoke-virtual {p0, v9}, Lcom/android/bluetooth/hid/HidService;->log(Ljava/lang/String;)V
 
+    iput v7, p0, Lcom/android/bluetooth/hid/HidService;->unplugprestate:I
+
     const/4 v9, 0x4
 
     invoke-virtual {p0, p1, v9, p2, v7}, Lcom/android/bluetooth/hid/HidService;->notifyProfileConnectionStateChanged(Landroid/bluetooth/BluetoothDevice;III)V
@@ -471,7 +523,7 @@
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v10, " isKeyboard: "
+    const-string/jumbo v10, "isKeyboard: "
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -488,6 +540,18 @@
     move-result-object v9
 
     invoke-virtual {v9, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    const-string/jumbo v10, " isNormallyType: "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    iget-boolean v10, p0, Lcom/android/bluetooth/hid/HidService;->isNormallyType:Z
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object v9
 
@@ -522,6 +586,12 @@
     const-string/jumbo v9, "android.bluetooth.profile.extra.hidType"
 
     invoke-virtual {v5, v9, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    const-string/jumbo v9, "android.bluetooth.profile.extra.isNormallyType"
+
+    iget-boolean v10, p0, Lcom/android/bluetooth/hid/HidService;->isNormallyType:Z
+
+    invoke-virtual {v5, v9, v10}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     const/high16 v9, 0x4000000
 
@@ -597,6 +667,10 @@
     goto/16 :goto_2
 
     :cond_4
+    const/4 v9, 0x1
+
+    iput-boolean v9, p0, Lcom/android/bluetooth/hid/HidService;->isNormallyType:Z
+
     return-void
 
     nop
@@ -884,76 +958,247 @@
 .end method
 
 .method private broadcastVirtualUnplugStatus(Landroid/bluetooth/BluetoothDevice;I)V
-    .locals 5
+    .locals 13
 
-    new-instance v2, Landroid/content/Intent;
+    new-instance v3, Landroid/content/Intent;
 
-    const-string/jumbo v3, "android.bluetooth.input.profile.action.VIRTUAL_UNPLUG_STATUS"
+    const-string/jumbo v10, "android.bluetooth.input.profile.action.VIRTUAL_UNPLUG_STATUS"
 
-    invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v10}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    const-string/jumbo v3, "android.bluetooth.device.extra.DEVICE"
+    const-string/jumbo v10, "android.bluetooth.device.extra.DEVICE"
 
-    invoke-virtual {v2, v3, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-virtual {v3, v10, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string/jumbo v3, "android.bluetooth.BluetoothInputDevice.extra.VIRTUAL_UNPLUG_STATUS"
+    const-string/jumbo v10, "android.bluetooth.BluetoothInputDevice.extra.VIRTUAL_UNPLUG_STATUS"
 
-    invoke-virtual {v2, v3, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v3, v10, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    const/high16 v3, 0x4000000
+    const/high16 v10, 0x4000000
 
-    invoke-virtual {v2, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    invoke-virtual {v3, v10}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    sget-object v3, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
+    sget-object v10, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 
-    const-string/jumbo v4, "android.permission.BLUETOOTH"
+    const-string/jumbo v11, "android.permission.BLUETOOTH"
 
-    invoke-virtual {p0, v2, v3, v4}, Lcom/android/bluetooth/hid/HidService;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
+    invoke-virtual {p0, v3, v10, v11}, Lcom/android/bluetooth/hid/HidService;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
 
-    const/16 v3, 0xf0
+    const-string/jumbo v10, "HidService"
 
-    invoke-static {v3}, Lcom/samsung/android/knox/SemPersonaManager;->isKnoxVersionSupported(I)Z
+    new-instance v11, Ljava/lang/StringBuilder;
 
-    move-result v3
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
-    if-eqz v3, :cond_0
+    const-string/jumbo v12, "state : "
 
-    invoke-static {}, Lcom/android/bluetooth/Utils;->getBtEnabledContainers()Ljava/util/List;
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v11
 
-    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    iget v12, p0, Lcom/android/bluetooth/hid/HidService;->unplugprestate:I
 
-    move-result-object v1
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    move-result-object v11
 
-    move-result v3
+    const-string/jumbo v12, " -> "
 
-    if-eqz v3, :cond_0
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v11
+
+    invoke-virtual {v11, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget v10, p0, Lcom/android/bluetooth/hid/HidService;->unplugprestate:I
+
+    const/4 v11, 0x2
+
+    if-ne v10, v11, :cond_0
+
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getName()Ljava/lang/String;
+
+    move-result-object v10
+
+    if-eqz v10, :cond_1
+
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    check-cast v0, Ljava/lang/Integer;
+    :goto_0
+    const/4 v10, 0x1
 
-    new-instance v3, Landroid/os/UserHandle;
+    new-array v10, v10, [Ljava/lang/Object;
 
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    const/4 v11, 0x0
 
-    move-result v4
+    aput-object v0, v10, v11
 
-    invoke-direct {v3, v4}, Landroid/os/UserHandle;-><init>(I)V
+    const v11, 0x7f0a005b
 
-    const-string/jumbo v4, "android.permission.BLUETOOTH"
+    invoke-virtual {p0, v11, v10}, Lcom/android/bluetooth/hid/HidService;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
-    invoke-virtual {p0, v2, v3, v4}, Lcom/android/bluetooth/hid/HidService;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
+    move-result-object v9
 
-    goto :goto_0
+    const/4 v10, 0x1
+
+    new-array v10, v10, [Ljava/lang/Object;
+
+    const/4 v11, 0x0
+
+    aput-object v0, v10, v11
+
+    const v11, 0x7f0a005c
+
+    invoke-virtual {p0, v11, v10}, Lcom/android/bluetooth/hid/HidService;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {p0}, Lcom/android/bluetooth/hid/HidService;->getBaseContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    new-instance v8, Landroid/content/Intent;
+
+    invoke-direct {v8}, Landroid/content/Intent;-><init>()V
+
+    const-string/jumbo v10, "com.android.settings"
+
+    const-string/jumbo v11, "com.android.settings.Settings$BluetoothSettingsActivity"
+
+    invoke-virtual {v8, v10, v11}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const/4 v10, 0x0
+
+    const/high16 v11, 0x8000000
+
+    invoke-static {p0, v10, v8, v11}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v7
+
+    new-instance v10, Landroid/app/Notification$Builder;
+
+    invoke-direct {v10, v4}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v10, v7}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
+
+    move-result-object v10
+
+    invoke-virtual {v10, v9}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    move-result-object v10
+
+    invoke-virtual {v10, v5}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    move-result-object v10
+
+    const v11, 0x1080080
+
+    invoke-virtual {v10, v11}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
+
+    move-result-object v10
+
+    const/4 v11, -0x2
+
+    invoke-virtual {v10, v11}, Landroid/app/Notification$Builder;->setPriority(I)Landroid/app/Notification$Builder;
+
+    move-result-object v10
+
+    const/4 v11, 0x1
+
+    invoke-virtual {v10, v11}, Landroid/app/Notification$Builder;->setAutoCancel(Z)Landroid/app/Notification$Builder;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v6
+
+    iget v10, v6, Landroid/app/Notification;->defaults:I
+
+    or-int/lit8 v10, v10, 0x1
+
+    iput v10, v6, Landroid/app/Notification;->defaults:I
+
+    const-string/jumbo v10, "notification"
+
+    invoke-virtual {v4, v10}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v10
+
+    check-cast v10, Landroid/app/NotificationManager;
+
+    iput-object v10, p0, Lcom/android/bluetooth/hid/HidService;->manager:Landroid/app/NotificationManager;
+
+    iget-object v10, p0, Lcom/android/bluetooth/hid/HidService;->manager:Landroid/app/NotificationManager;
+
+    const v11, 0x1080080
+
+    invoke-virtual {v10, v11, v6}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
     :cond_0
+    const/16 v10, 0xf0
+
+    invoke-static {v10}, Lcom/samsung/android/knox/SemPersonaManager;->isKnoxVersionSupported(I)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_2
+
+    invoke-static {}, Lcom/android/bluetooth/Utils;->getBtEnabledContainers()Ljava/util/List;
+
+    move-result-object v10
+
+    invoke-interface {v10}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_1
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v10
+
+    if-eqz v10, :cond_2
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Integer;
+
+    new-instance v10, Landroid/os/UserHandle;
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v11
+
+    invoke-direct {v10, v11}, Landroid/os/UserHandle;-><init>(I)V
+
+    const-string/jumbo v11, "android.permission.BLUETOOTH"
+
+    invoke-virtual {p0, v3, v10, v11}, Lcom/android/bluetooth/hid/HidService;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
+
+    goto :goto_1
+
+    :cond_1
+    const v10, 0x7f0a00e0
+
+    invoke-virtual {p0, v10}, Lcom/android/bluetooth/hid/HidService;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto/16 :goto_0
+
+    :cond_2
     return-void
 .end method
 
@@ -1398,6 +1643,28 @@
     return-void
 .end method
 
+.method private onHdGetAttribute([BI)V
+    .locals 3
+
+    iget-object v1, p0, Lcom/android/bluetooth/hid/HidService;->mHandler:Landroid/os/Handler;
+
+    const/16 v2, 0xe
+
+    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object v0
+
+    iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    iput p2, v0, Landroid/os/Message;->arg1:I
+
+    iget-object v1, p0, Lcom/android/bluetooth/hid/HidService;->mHandler:Landroid/os/Handler;
+
+    invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    return-void
+.end method
+
 .method private onHdRegistered(I)V
     .locals 5
 
@@ -1574,11 +1841,26 @@
 
 # virtual methods
 .method protected cleanup()Z
-    .locals 1
+    .locals 3
 
-    iget-boolean v0, p0, Lcom/android/bluetooth/hid/HidService;->mNativeAvailable:Z
+    const/4 v2, 0x0
+
+    iget-object v0, p0, Lcom/android/bluetooth/hid/HidService;->manager:Landroid/app/NotificationManager;
 
     if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/bluetooth/hid/HidService;->manager:Landroid/app/NotificationManager;
+
+    const v1, 0x1080080
+
+    invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->cancel(I)V
+
+    iput-object v2, p0, Lcom/android/bluetooth/hid/HidService;->manager:Landroid/app/NotificationManager;
+
+    :cond_0
+    iget-boolean v0, p0, Lcom/android/bluetooth/hid/HidService;->mNativeAvailable:Z
+
+    if-eqz v0, :cond_1
 
     invoke-direct {p0}, Lcom/android/bluetooth/hid/HidService;->cleanupNative()V
 
@@ -1586,16 +1868,16 @@
 
     iput-boolean v0, p0, Lcom/android/bluetooth/hid/HidService;->mNativeAvailable:Z
 
-    :cond_0
+    :cond_1
     iget-object v0, p0, Lcom/android/bluetooth/hid/HidService;->mInputDevices:Ljava/util/Map;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     iget-object v0, p0, Lcom/android/bluetooth/hid/HidService;->mInputDevices:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
-    :cond_1
+    :cond_2
     invoke-static {}, Lcom/android/bluetooth/hid/HidService;->clearHidService()V
 
     const/4 v0, 0x1

@@ -75,42 +75,12 @@
     return-void
 .end method
 
-.method private createView()Landroid/view/View;
-    .locals 5
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->getLayoutInflater()Landroid/view/LayoutInflater;
-
-    move-result-object v2
-
-    const v3, 0x7f040004
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v2, v3, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
-
-    move-result-object v1
-
-    const v2, 0x7f0e000a
-
-    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    iget-object v2, p0, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->mDescription:Ljava/lang/CharSequence;
-
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    return-object v1
-.end method
-
 .method private isEntitlementCheckRequired(Landroid/content/Context;)Z
     .locals 3
 
-    const-string/jumbo v1, "carrier_config"
+    const-string/jumbo v2, "carrier_config"
 
-    invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -120,13 +90,21 @@
 
     move-result-object v1
 
+    if-eqz v1, :cond_0
+
     const-string/jumbo v2, "require_entitlement_checks_bool"
 
     invoke-virtual {v1, v2}, Landroid/os/PersistableBundle;->getBoolean(Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v2
 
-    return v1
+    :goto_0
+    return v2
+
+    :cond_0
+    const/4 v2, 0x0
+
+    goto :goto_0
 .end method
 
 .method private isProvisioningNeeded(Landroid/content/Context;)Z
@@ -313,7 +291,9 @@
 .end method
 
 .method private sendresult(Z)V
-    .locals 3
+    .locals 4
+
+    const/4 v3, 0x0
 
     new-instance v0, Landroid/content/Intent;
 
@@ -333,9 +313,11 @@
 
     invoke-virtual {p0, v0}, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->sendBroadcast(Landroid/content/Intent;)V
 
-    const/4 v1, 0x0
+    iget-object v1, p0, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->mTimeoutHandler:Landroid/os/Handler;
 
-    iput-boolean v1, p0, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->mTimeout:Z
+    invoke-virtual {v1, v3}, Landroid/os/Handler;->removeMessages(I)V
+
+    iput-boolean v3, p0, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->mTimeout:Z
 
     return-void
 .end method
@@ -547,7 +529,7 @@
     :goto_0
     aput-object v3, v5, v6
 
-    const v3, 0x7f0a007a
+    const v3, 0x7f0a0081
 
     invoke-virtual {p0, v3, v5}, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -597,7 +579,7 @@
 
     iget-object v1, p0, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    const v3, 0x7f0a007d
+    const v3, 0x7f0a0084
 
     invoke-virtual {p0, v3}, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->getString(I)Ljava/lang/String;
 
@@ -605,13 +587,11 @@
 
     iput-object v3, v1, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    invoke-direct {p0}, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->createView()Landroid/view/View;
+    iget-object v3, p0, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->mDescription:Ljava/lang/CharSequence;
 
-    move-result-object v3
+    iput-object v3, v1, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    iput-object v3, v1, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
-
-    const v3, 0x7f0a007b
+    const v3, 0x7f0a0082
 
     invoke-virtual {p0, v3}, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->getString(I)Ljava/lang/String;
 
@@ -621,7 +601,7 @@
 
     iput-object p0, v1, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const v3, 0x7f0a007c
+    const v3, 0x7f0a0083
 
     invoke-virtual {p0, v3}, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->getString(I)Ljava/lang/String;
 

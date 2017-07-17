@@ -570,7 +570,7 @@
 .end method
 
 .method private declared-synchronized closeService()V
-    .locals 5
+    .locals 6
 
     monitor-enter p0
 
@@ -605,7 +605,7 @@
 
     move-result v3
 
-    if-lez v3, :cond_2
+    if-lez v3, :cond_3
 
     const/4 v1, 0x0
 
@@ -616,7 +616,15 @@
     move-result v0
 
     :goto_0
-    if-ge v1, v0, :cond_2
+    if-ge v1, v0, :cond_3
+
+    iget-object v3, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mMasInstances:Landroid/util/SparseArray;
+
+    invoke-virtual {v3, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_2
 
     iget-object v3, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mMasInstances:Landroid/util/SparseArray;
 
@@ -628,11 +636,44 @@
 
     invoke-virtual {v3}, Lcom/android/bluetooth/map/BluetoothMapMasInstance;->shutdown()V
 
+    sget-boolean v3, Lcom/android/bluetooth/map/BluetoothMapService;->VERBOSE:Z
+
+    if-eqz v3, :cond_2
+
+    const-string/jumbo v3, "BluetoothMapService"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "mMasInstances.valueAt("
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string/jumbo v5, ").shutdown()"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
     const/4 v3, 0x0
 
     iput-boolean v3, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mIsWaitingAuthorization:Z
@@ -651,7 +692,7 @@
 
     iget-object v3, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
-    if-eqz v3, :cond_4
+    if-eqz v3, :cond_5
 
     iget-object v3, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -659,7 +700,7 @@
 
     sget-boolean v3, Lcom/android/bluetooth/map/BluetoothMapService;->VERBOSE:Z
 
-    if-eqz v3, :cond_3
+    if-eqz v3, :cond_4
 
     const-string/jumbo v3, "BluetoothMapService"
 
@@ -667,15 +708,15 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_3
+    :cond_4
     const/4 v3, 0x0
 
     iput-object v3, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
-    :cond_4
+    :cond_5
     iget-object v3, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mSessionStatusHandler:Lcom/android/bluetooth/map/BluetoothMapService$MapServiceMessageHandler;
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_7
 
     iget-object v3, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mSessionStatusHandler:Lcom/android/bluetooth/map/BluetoothMapService$MapServiceMessageHandler;
 
@@ -689,24 +730,9 @@
 
     move-result-object v2
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_6
 
     invoke-virtual {v2}, Landroid/os/Looper;->quit()V
-
-    sget-boolean v3, Lcom/android/bluetooth/map/BluetoothMapService;->VERBOSE:Z
-
-    if-eqz v3, :cond_5
-
-    const-string/jumbo v3, "BluetoothMapService"
-
-    const-string/jumbo v4, "Quit looper"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_5
-    const/4 v3, 0x0
-
-    iput-object v3, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mSessionStatusHandler:Lcom/android/bluetooth/map/BluetoothMapService$MapServiceMessageHandler;
 
     sget-boolean v3, Lcom/android/bluetooth/map/BluetoothMapService;->VERBOSE:Z
 
@@ -714,18 +740,33 @@
 
     const-string/jumbo v3, "BluetoothMapService"
 
-    const-string/jumbo v4, "Remove Handler"
+    const-string/jumbo v4, "Quit looper"
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_6
     const/4 v3, 0x0
 
-    sput-object v3, Lcom/android/bluetooth/map/BluetoothMapService;->mRemoteDevice:Landroid/bluetooth/BluetoothDevice;
+    iput-object v3, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mSessionStatusHandler:Lcom/android/bluetooth/map/BluetoothMapService$MapServiceMessageHandler;
 
     sget-boolean v3, Lcom/android/bluetooth/map/BluetoothMapService;->VERBOSE:Z
 
     if-eqz v3, :cond_7
+
+    const-string/jumbo v3, "BluetoothMapService"
+
+    const-string/jumbo v4, "Remove Handler"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_7
+    const/4 v3, 0x0
+
+    sput-object v3, Lcom/android/bluetooth/map/BluetoothMapService;->mRemoteDevice:Landroid/bluetooth/BluetoothDevice;
+
+    sget-boolean v3, Lcom/android/bluetooth/map/BluetoothMapService;->VERBOSE:Z
+
+    if-eqz v3, :cond_8
 
     const-string/jumbo v3, "BluetoothMapService"
 
@@ -735,7 +776,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    :cond_7
+    :cond_8
     monitor-exit p0
 
     return-void
@@ -1610,6 +1651,14 @@
     :goto_0
     if-ge v4, v0, :cond_4
 
+    iget-object v6, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mMasInstances:Landroid/util/SparseArray;
+
+    invoke-virtual {v6, v4}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_3
+
     :try_start_0
     iget-object v6, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mMasInstances:Landroid/util/SparseArray;
 
@@ -1719,7 +1768,15 @@
 .end method
 
 .method private final startRfcommSocketListener(I)V
-    .locals 1
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mMasInstances:Landroid/util/SparseArray;
+
+    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mMasInstances:Landroid/util/SparseArray;
 
@@ -1731,6 +1788,39 @@
 
     invoke-virtual {v0}, Lcom/android/bluetooth/map/BluetoothMapMasInstance;->startRfcommSocketListener()V
 
+    sget-boolean v0, Lcom/android/bluetooth/map/BluetoothMapService;->VERBOSE:Z
+
+    if-eqz v0, :cond_0
+
+    const-string/jumbo v0, "BluetoothMapService"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "mMasInstances.valueAt("
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string/jumbo v2, ").startRfcommSocketListener()"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
     return-void
 .end method
 
@@ -1784,6 +1874,14 @@
 
     :goto_0
     if-ge v1, v0, :cond_2
+
+    iget-object v4, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mMasInstances:Landroid/util/SparseArray;
+
+    invoke-virtual {v4, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_1
 
     iget-object v4, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mMasInstances:Landroid/util/SparseArray;
 
@@ -1922,10 +2020,51 @@
 
     move-result-object v4
 
+    if-eqz v4, :cond_9
+
+    iget-object v4, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mMasInstances:Landroid/util/SparseArray;
+
+    invoke-virtual {v4, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v4
+
     check-cast v4, Lcom/android/bluetooth/map/BluetoothMapMasInstance;
 
     invoke-virtual {v4}, Lcom/android/bluetooth/map/BluetoothMapMasInstance;->restartObexServerSession()V
 
+    sget-boolean v4, Lcom/android/bluetooth/map/BluetoothMapService;->VERBOSE:Z
+
+    if-eqz v4, :cond_9
+
+    const-string/jumbo v4, "BluetoothMapService"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v6, "mMasInstances.valueAt("
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    const-string/jumbo v6, ").restartObexServerSession()"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_9
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
@@ -2526,6 +2665,14 @@
     move-result v2
 
     if-ge v0, v2, :cond_3
+
+    iget-object v2, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mMasInstances:Landroid/util/SparseArray;
+
+    invoke-virtual {v2, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_2
 
     iget-object v2, p0, Lcom/android/bluetooth/map/BluetoothMapService;->mMasInstances:Landroid/util/SparseArray;
 
@@ -3185,7 +3332,7 @@
 
     if-eqz v3, :cond_0
 
-    const v3, 0x7f0a00c9
+    const v3, 0x7f0a00d1
 
     invoke-virtual {p0, v3}, Lcom/android/bluetooth/map/BluetoothMapService;->getString(I)Ljava/lang/String;
 

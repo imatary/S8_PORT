@@ -382,7 +382,7 @@
 
     move-result-object v2
 
-    invoke-static {v0}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Z
+    invoke-static {v0}, Lcom/android/bluetooth/pan/PanService;->-get8(Lcom/android/bluetooth/pan/PanService;)Z
 
     move-result v3
 

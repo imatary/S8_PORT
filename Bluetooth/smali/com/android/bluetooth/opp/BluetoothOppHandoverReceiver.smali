@@ -69,7 +69,7 @@
 
     move-result-object v19
 
-    const v20, 0x7f0a007f
+    const v20, 0x7f0a0087
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -872,7 +872,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_9
+    if-eqz v4, :cond_b
 
     :cond_0
     const-string/jumbo v4, "android.bluetooth.device.extra.DEVICE"
@@ -905,6 +905,33 @@
 
     move-result-object v7
 
+    sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->V:Z
+
+    if-eqz v4, :cond_3
+
+    const-string/jumbo v4, "BluetoothOppHandoverReceiver"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v6, "Get HANDOVER intent: Type = "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_3
     new-instance v19, Ljava/util/ArrayList;
 
     invoke-direct/range {v19 .. v19}, Ljava/util/ArrayList;-><init>()V
@@ -917,7 +944,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_6
+    if-eqz v4, :cond_8
 
     const-string/jumbo v4, "android.intent.extra.STREAM"
 
@@ -929,7 +956,36 @@
 
     check-cast v30, Landroid/net/Uri;
 
-    if-eqz v30, :cond_3
+    sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
+
+    if-eqz v4, :cond_4
+
+    const-string/jumbo v4, "BluetoothOppHandoverReceiver"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v6, "Get ACTION_HANDOVER_SEND intent: Uri = "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    move-object/from16 v0, v30
+
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_4
+    if-eqz v30, :cond_5
 
     move-object/from16 v0, v19
 
@@ -937,22 +993,22 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    :cond_3
+    :cond_5
     :goto_0
-    if-eqz v7, :cond_4
+    if-eqz v7, :cond_6
 
-    if-eqz v19, :cond_4
+    if-eqz v19, :cond_6
 
     invoke-virtual/range {v19 .. v19}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v4
 
-    if-eqz v4, :cond_7
+    if-eqz v4, :cond_9
 
-    :cond_4
+    :cond_6
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
 
-    if-eqz v4, :cond_5
+    if-eqz v4, :cond_7
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -960,10 +1016,10 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_5
+    :cond_7
     return-void
 
-    :cond_6
+    :cond_8
     const-string/jumbo v4, "android.nfc.handover.intent.action.HANDOVER_SEND_MULTIPLE"
 
     move-object/from16 v0, v22
@@ -972,7 +1028,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_3
+    if-eqz v4, :cond_5
 
     const-string/jumbo v4, "android.intent.extra.STREAM"
 
@@ -982,9 +1038,37 @@
 
     move-result-object v19
 
+    sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
+
+    if-eqz v4, :cond_5
+
+    const-string/jumbo v4, "BluetoothOppHandoverReceiver"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v6, "Get ACTION_HANDOVER_SEND_MULTIPLE intent: uris = "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    move-object/from16 v0, v19
+
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
     goto :goto_0
 
-    :cond_7
+    :cond_9
     move-object/from16 v26, v7
 
     move-object/from16 v8, v19
@@ -1005,11 +1089,11 @@
 
     invoke-virtual/range {v31 .. v31}, Ljava/lang/Thread;->start()V
 
-    :cond_8
+    :cond_a
     :goto_1
     return-void
 
-    :cond_9
+    :cond_b
     const-string/jumbo v4, "android.btopp.intent.action.WHITELIST_DEVICE"
 
     move-object/from16 v0, v22
@@ -1018,7 +1102,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_d
+    if-eqz v4, :cond_f
 
     const-string/jumbo v4, "android.bluetooth.device.extra.DEVICE"
 
@@ -1030,7 +1114,7 @@
 
     check-cast v9, Landroid/bluetooth/BluetoothDevice;
 
-    if-nez v9, :cond_a
+    if-nez v9, :cond_c
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1040,10 +1124,10 @@
 
     return-void
 
-    :cond_a
+    :cond_c
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
 
-    if-eqz v4, :cond_b
+    if-eqz v4, :cond_d
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1073,7 +1157,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_b
+    :cond_d
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -1104,11 +1188,11 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-nez v9, :cond_c
+    if-nez v9, :cond_e
 
     return-void
 
-    :cond_c
+    :cond_e
     invoke-static/range {p1 .. p1}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
 
     move-result-object v4
@@ -1121,7 +1205,7 @@
 
     goto :goto_1
 
-    :cond_d
+    :cond_f
     const-string/jumbo v4, "android.btopp.intent.action.STOP_HANDOVER_TRANSFER"
 
     move-object/from16 v0, v22
@@ -1130,7 +1214,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_11
+    if-eqz v4, :cond_13
 
     const-string/jumbo v4, "android.nfc.handover.intent.extra.TRANSFER_ID"
 
@@ -1146,11 +1230,11 @@
 
     move/from16 v0, v27
 
-    if-eq v0, v4, :cond_10
+    if-eq v0, v4, :cond_12
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->V:Z
 
-    if-eqz v4, :cond_e
+    if-eqz v4, :cond_10
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1176,7 +1260,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_e
+    :cond_10
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -1209,7 +1293,7 @@
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
 
-    if-eqz v4, :cond_f
+    if-eqz v4, :cond_11
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1235,7 +1319,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_f
+    :cond_11
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
@@ -1250,7 +1334,7 @@
 
     goto/16 :goto_1
 
-    :cond_10
+    :cond_12
     invoke-static/range {p1 .. p1}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
 
     move-result-object v4
@@ -1265,7 +1349,7 @@
 
     goto/16 :goto_1
 
-    :cond_11
+    :cond_13
     const-string/jumbo v4, "com.samsung.btopp.intent.action.SCONNECT_HANDOVER_SEND"
 
     move-object/from16 v0, v22
@@ -1274,7 +1358,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_12
+    if-nez v4, :cond_14
 
     const-string/jumbo v4, "com.samsung.btopp.intent.action.SCONNECT_HANDOVER_SEND_MULTIPLE"
 
@@ -1284,9 +1368,9 @@
 
     move-result v4
 
-    if-eqz v4, :cond_1d
+    if-eqz v4, :cond_1f
 
-    :cond_12
+    :cond_14
     const-string/jumbo v4, "android.bluetooth.device.extra.DEVICE"
 
     move-object/from16 v0, p2
@@ -1309,7 +1393,7 @@
 
     move-object/from16 v21, p1
 
-    if-nez v9, :cond_13
+    if-nez v9, :cond_15
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1319,7 +1403,7 @@
 
     return-void
 
-    :cond_13
+    :cond_15
     const-string/jumbo v4, "com.samsung.btopp.intent.action.SCONNECT_HANDOVER_SEND"
 
     move-object/from16 v0, v22
@@ -1328,7 +1412,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_19
+    if-eqz v4, :cond_1b
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getType()Ljava/lang/String;
 
@@ -1352,15 +1436,15 @@
 
     move-result-object v25
 
-    if-nez v30, :cond_15
+    if-nez v30, :cond_17
 
-    if-eqz v25, :cond_15
+    if-eqz v25, :cond_17
 
-    if-eqz v13, :cond_15
+    if-eqz v13, :cond_17
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
 
-    if-eqz v4, :cond_14
+    if-eqz v4, :cond_16
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1388,7 +1472,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_14
+    :cond_16
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
@@ -1399,7 +1483,7 @@
 
     move-result-object v30
 
-    if-nez v30, :cond_15
+    if-nez v30, :cond_17
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1409,14 +1493,14 @@
 
     return-void
 
-    :cond_15
-    if-eqz v30, :cond_18
+    :cond_17
+    if-eqz v30, :cond_1a
 
-    if-eqz v13, :cond_18
+    if-eqz v13, :cond_1a
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
 
-    if-eqz v4, :cond_16
+    if-eqz v4, :cond_18
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1442,10 +1526,10 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_16
+    :cond_18
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->V:Z
 
-    if-eqz v4, :cond_17
+    if-eqz v4, :cond_19
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1469,7 +1553,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_17
+    :cond_19
     move-object/from16 v14, v30
 
     new-instance v31, Ljava/lang/Thread;
@@ -1492,7 +1576,7 @@
 
     goto/16 :goto_1
 
-    :cond_18
+    :cond_1a
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
     const-string/jumbo v5, "No mimeType or stream attached to s-connect handover request"
@@ -1501,7 +1585,7 @@
 
     return-void
 
-    :cond_19
+    :cond_1b
     const-string/jumbo v4, "com.samsung.btopp.intent.action.SCONNECT_HANDOVER_SEND_MULTIPLE"
 
     move-object/from16 v0, v22
@@ -1510,7 +1594,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_8
+    if-eqz v4, :cond_a
 
     const-string/jumbo v4, "android.intent.extra.STREAM"
 
@@ -1524,13 +1608,13 @@
 
     move-result-object v7
 
-    if-eqz v7, :cond_1c
+    if-eqz v7, :cond_1e
 
-    if-eqz v19, :cond_1c
+    if-eqz v19, :cond_1e
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
 
-    if-eqz v4, :cond_1a
+    if-eqz v4, :cond_1c
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1556,10 +1640,10 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_1a
+    :cond_1c
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->V:Z
 
-    if-eqz v4, :cond_1b
+    if-eqz v4, :cond_1d
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1583,7 +1667,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_1b
+    :cond_1d
     new-instance v31, Ljava/lang/Thread;
 
     new-instance v15, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver$3;
@@ -1606,7 +1690,7 @@
 
     goto/16 :goto_1
 
-    :cond_1c
+    :cond_1e
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
     const-string/jumbo v5, "No mimeType or stream attached to s-connect handover request"
@@ -1615,7 +1699,7 @@
 
     return-void
 
-    :cond_1d
+    :cond_1f
     const-string/jumbo v4, "com.samsung.btopp.intent.action.SCONNECT_HANDOVER_STOP"
 
     move-object/from16 v0, v22
@@ -1624,11 +1708,11 @@
 
     move-result v4
 
-    if-eqz v4, :cond_1f
+    if-eqz v4, :cond_21
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->V:Z
 
-    if-eqz v4, :cond_1e
+    if-eqz v4, :cond_20
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1636,7 +1720,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_1e
+    :cond_20
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
@@ -1655,7 +1739,7 @@
 
     move/from16 v0, v24
 
-    if-ge v0, v4, :cond_8
+    if-ge v0, v4, :cond_a
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1664,48 +1748,6 @@
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_1
-
-    :cond_1f
-    const-string/jumbo v4, "com.samsung.btopp.intent.action.KNOX_HANDOVER_SEND"
-
-    move-object/from16 v0, v22
-
-    invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_20
-
-    const-string/jumbo v4, "com.samsung.btopp.intent.action.KNOX_HANDOVER_SEND_MULTIPLE"
-
-    move-object/from16 v0, v22
-
-    invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2c
-
-    :cond_20
-    const-string/jumbo v4, "android.bluetooth.device.extra.DEVICE"
-
-    move-object/from16 v0, p2
-
-    invoke-virtual {v0, v4}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
-
-    move-result-object v9
-
-    check-cast v9, Landroid/bluetooth/BluetoothDevice;
-
-    if-nez v9, :cond_21
-
-    const-string/jumbo v4, "BluetoothOppHandoverReceiver"
-
-    const-string/jumbo v5, "No device attached to Konx handover intent(send)."
-
-    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
 
     :cond_21
     const-string/jumbo v4, "com.samsung.btopp.intent.action.KNOX_HANDOVER_SEND"
@@ -1716,7 +1758,49 @@
 
     move-result v4
 
-    if-eqz v4, :cond_27
+    if-nez v4, :cond_22
+
+    const-string/jumbo v4, "com.samsung.btopp.intent.action.KNOX_HANDOVER_SEND_MULTIPLE"
+
+    move-object/from16 v0, v22
+
+    invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2e
+
+    :cond_22
+    const-string/jumbo v4, "android.bluetooth.device.extra.DEVICE"
+
+    move-object/from16 v0, p2
+
+    invoke-virtual {v0, v4}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
+
+    move-result-object v9
+
+    check-cast v9, Landroid/bluetooth/BluetoothDevice;
+
+    if-nez v9, :cond_23
+
+    const-string/jumbo v4, "BluetoothOppHandoverReceiver"
+
+    const-string/jumbo v5, "No device attached to Konx handover intent(send)."
+
+    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_23
+    const-string/jumbo v4, "com.samsung.btopp.intent.action.KNOX_HANDOVER_SEND"
+
+    move-object/from16 v0, v22
+
+    invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_29
 
     const-string/jumbo v4, "android.intent.extra.STREAM"
 
@@ -1728,11 +1812,11 @@
 
     check-cast v30, Landroid/net/Uri;
 
-    if-eqz v30, :cond_26
+    if-eqz v30, :cond_28
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
 
-    if-eqz v4, :cond_22
+    if-eqz v4, :cond_24
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1758,7 +1842,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_22
+    :cond_24
     move-object/from16 v0, p1
 
     move-object/from16 v1, v30
@@ -1767,7 +1851,7 @@
 
     move-result-object v13
 
-    if-nez v13, :cond_23
+    if-nez v13, :cond_25
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1775,10 +1859,10 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_23
+    :cond_25
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
 
-    if-eqz v4, :cond_24
+    if-eqz v4, :cond_26
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1802,7 +1886,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_24
+    :cond_26
     invoke-static/range {p1 .. p1}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
 
     move-result-object v4
@@ -1815,7 +1899,7 @@
 
     invoke-virtual {v4, v13, v5, v6}, Lcom/android/bluetooth/opp/BluetoothOppManager;->saveSendingFileInfo(Ljava/lang/String;Ljava/lang/String;Z)V
 
-    :cond_25
+    :cond_27
     :goto_2
     invoke-static/range {p1 .. p1}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
 
@@ -1825,7 +1909,7 @@
 
     goto/16 :goto_1
 
-    :cond_26
+    :cond_28
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
     const-string/jumbo v5, "stream attached to Konx handover request"
@@ -1834,7 +1918,7 @@
 
     return-void
 
-    :cond_27
+    :cond_29
     const-string/jumbo v4, "com.samsung.btopp.intent.action.KNOX_HANDOVER_SEND_MULTIPLE"
 
     move-object/from16 v0, v22
@@ -1843,7 +1927,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_25
+    if-eqz v4, :cond_27
 
     new-instance v19, Ljava/util/ArrayList;
 
@@ -1857,11 +1941,11 @@
 
     move-result-object v19
 
-    if-eqz v19, :cond_2b
+    if-eqz v19, :cond_2d
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
 
-    if-eqz v4, :cond_28
+    if-eqz v4, :cond_2a
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1887,7 +1971,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_28
+    :cond_2a
     const/4 v4, 0x0
 
     move-object/from16 v0, v19
@@ -1904,7 +1988,7 @@
 
     move-result-object v7
 
-    if-nez v7, :cond_29
+    if-nez v7, :cond_2b
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1912,10 +1996,10 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_29
+    :cond_2b
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppHandoverReceiver;->D:Z
 
-    if-eqz v4, :cond_2a
+    if-eqz v4, :cond_2c
 
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
@@ -1939,7 +2023,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_2a
+    :cond_2c
     invoke-static/range {p1 .. p1}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
 
     move-result-object v4
@@ -1952,7 +2036,7 @@
 
     goto/16 :goto_2
 
-    :cond_2b
+    :cond_2d
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
     const-string/jumbo v5, "stream attached to Konx handover request"
@@ -1961,7 +2045,7 @@
 
     return-void
 
-    :cond_2c
+    :cond_2e
     const-string/jumbo v4, "BluetoothOppHandoverReceiver"
 
     new-instance v5, Ljava/lang/StringBuilder;

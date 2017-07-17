@@ -905,6 +905,42 @@
     return-object v1
 .end method
 
+.method public getBondedTimeStamp(Landroid/bluetooth/BluetoothDevice;)J
+    .locals 6
+
+    const-wide/16 v4, 0x0
+
+    invoke-static {}, Lcom/android/bluetooth/Utils;->checkCaller()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string/jumbo v1, "BluetoothAdapterService"
+
+    const-string/jumbo v2, "getBondedTimeStamp() - Not allowed for non-active user"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-wide v4
+
+    :cond_0
+    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService$AdapterServiceBinder;->getService()Lcom/android/bluetooth/btservice/AdapterService;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    return-wide v4
+
+    :cond_1
+    invoke-virtual {v0, p1}, Lcom/android/bluetooth/btservice/AdapterService;->getBondedTimeStamp(Landroid/bluetooth/BluetoothDevice;)J
+
+    move-result-wide v2
+
+    return-wide v2
+.end method
+
 .method public getConnectedDeviceList()Ljava/util/ArrayList;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;

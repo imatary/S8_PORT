@@ -144,7 +144,7 @@
 .end method
 
 .method private insertMultipleShare()V
-    .locals 21
+    .locals 20
 
     move-object/from16 v0, p0
 
@@ -160,14 +160,12 @@
 
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v19
+    move-result-object v18
 
-    const/16 v16, 0x0
+    const/4 v15, 0x0
 
     :goto_0
-    move/from16 v0, v16
-
-    if-ge v0, v10, :cond_0
+    if-ge v15, v10, :cond_0
 
     move-object/from16 v0, p0
 
@@ -177,9 +175,7 @@
 
     move-result v4
 
-    move/from16 v0, v16
-
-    if-lt v0, v4, :cond_1
+    if-lt v15, v4, :cond_1
 
     :cond_0
     return-void
@@ -189,9 +185,7 @@
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppManager$InsertShareInfoThread;->mUris:Ljava/util/ArrayList;
 
-    move/from16 v0, v16
-
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v4, v15}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -199,9 +193,9 @@
 
     if-eqz v3, :cond_f
 
-    new-instance v20, Landroid/content/ContentValues;
+    new-instance v19, Landroid/content/ContentValues;
 
-    invoke-direct/range {v20 .. v20}, Landroid/content/ContentValues;-><init>()V
+    invoke-direct/range {v19 .. v19}, Landroid/content/ContentValues;-><init>()V
 
     const-string/jumbo v4, "uri"
 
@@ -209,7 +203,7 @@
 
     move-result-object v5
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v19
 
     invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -332,11 +326,11 @@
 
     invoke-virtual {v3}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
-    move-result-object v15
+    move-result-object v14
 
     const-string/jumbo v4, "."
 
-    invoke-virtual {v15, v4}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
+    invoke-virtual {v14, v4}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
 
     move-result v11
 
@@ -344,7 +338,7 @@
 
     add-int/lit8 v4, v11, 0x1
 
-    invoke-virtual {v15, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {v14, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -421,9 +415,9 @@
     const-string/jumbo v8, ""
 
     :cond_8
-    const/4 v14, 0x0
+    const/4 v13, 0x0
 
-    const/16 v17, 0x0
+    const/16 v16, 0x0
 
     const/4 v4, 0x1
 
@@ -446,13 +440,13 @@
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result-object v17
+    move-result-object v16
 
     :goto_2
-    if-eqz v17, :cond_a
+    if-eqz v16, :cond_a
 
     :try_start_1
-    invoke-interface/range {v17 .. v17}, Landroid/database/Cursor;->moveToFirst()Z
+    invoke-interface/range {v16 .. v16}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v4
 
@@ -460,11 +454,11 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v16
 
     invoke-interface {v0, v4}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    move-result-object v14
+    move-result-object v13
 
     invoke-static {}, Lcom/android/bluetooth/opp/BluetoothOppManager;->-get0()Z
 
@@ -484,7 +478,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
@@ -497,32 +491,12 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :cond_9
-    invoke-interface/range {v17 .. v17}, Landroid/database/Cursor;->close()V
+    invoke-interface/range {v16 .. v16}, Landroid/database/Cursor;->close()V
 
     :cond_a
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppManager$InsertShareInfoThread;->this$0:Lcom/android/bluetooth/opp/BluetoothOppManager;
-
-    invoke-static {v4}, Lcom/android/bluetooth/opp/BluetoothOppManager;->-get2(Lcom/android/bluetooth/opp/BluetoothOppManager;)Landroid/content/Context;
-
-    move-result-object v4
-
-    invoke-static {v4, v3, v8}, Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;->generateFileInfo(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;
-
-    move-result-object v13
-
-    const-string/jumbo v4, "hint"
-
-    iget-object v5, v13, Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;->mFileName:Ljava/lang/String;
-
-    move-object/from16 v0, v20
-
-    invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
     const-string/jumbo v4, "mimetype"
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v19
 
     invoke-virtual {v0, v4, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -536,15 +510,15 @@
 
     move-result-object v5
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v19
 
     invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v4, "timestamp"
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v19
 
-    move-object/from16 v1, v19
+    move-object/from16 v1, v18
 
     invoke-virtual {v0, v4, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
@@ -562,18 +536,18 @@
 
     move-result-object v5
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v19
 
     invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     :cond_b
-    if-eqz v14, :cond_c
+    if-eqz v13, :cond_c
 
     const-string/jumbo v4, "hint"
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v19
 
-    invoke-virtual {v0, v4, v14}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v4, v13}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_c
     const-string/jumbo v4, "device_name"
@@ -590,7 +564,7 @@
 
     move-result-object v5
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v19
 
     invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -608,7 +582,7 @@
 
     sget-object v5, Lcom/android/bluetooth/opp/BluetoothShare;->CONTENT_URI:Landroid/net/Uri;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v19
 
     invoke-virtual {v4, v5, v0}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 
@@ -666,7 +640,7 @@
 
     :cond_d
     :goto_3
-    add-int/lit8 v16, v16, 0x1
+    add-int/lit8 v15, v15, 0x1
 
     goto/16 :goto_0
 
@@ -686,7 +660,7 @@
     goto/16 :goto_1
 
     :catch_0
-    move-exception v18
+    move-exception v17
 
     const-string/jumbo v4, "BluetoothOppManager"
 
@@ -700,7 +674,7 @@
 
     move-result-object v5
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -717,7 +691,7 @@
     :catchall_0
     move-exception v4
 
-    invoke-interface/range {v17 .. v17}, Landroid/database/Cursor;->close()V
+    invoke-interface/range {v16 .. v16}, Landroid/database/Cursor;->close()V
 
     throw v4
 

@@ -505,7 +505,7 @@
 
     aput-object v23, v22, v24
 
-    const v23, 0x7f0a0069
+    const v23, 0x7f0a0070
 
     move/from16 v0, v23
 
@@ -555,7 +555,7 @@
 
     aput-object v23, v22, v24
 
-    const v23, 0x7f0a006a
+    const v23, 0x7f0a0071
 
     move/from16 v0, v23
 

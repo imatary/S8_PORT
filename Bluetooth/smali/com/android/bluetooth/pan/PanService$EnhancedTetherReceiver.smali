@@ -88,7 +88,7 @@
 
     move-result v5
 
-    invoke-static {v10}, Lcom/android/bluetooth/pan/PanService;->-set1(Z)Z
+    invoke-static {v10}, Lcom/android/bluetooth/pan/PanService;->-set2(Z)Z
 
     invoke-static {v10}, Lcom/android/bluetooth/pan/PanService;->-set0(Z)Z
 
@@ -104,7 +104,7 @@
 
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     move-result-object v6
 
@@ -122,17 +122,17 @@
 
     iget-object v9, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v9}, Lcom/android/bluetooth/pan/PanService;->-get3(Lcom/android/bluetooth/pan/PanService;)Landroid/os/Handler;
+    invoke-static {v9}, Lcom/android/bluetooth/pan/PanService;->-get5(Lcom/android/bluetooth/pan/PanService;)Landroid/os/Handler;
 
     move-result-object v9
 
     invoke-direct {v7, v8, v9}, Lcom/samsung/bt/pan/EnhancedTetheringManager;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
 
-    invoke-static {v6, v7}, Lcom/android/bluetooth/pan/PanService;->-set2(Lcom/android/bluetooth/pan/PanService;Lcom/samsung/bt/pan/EnhancedTetheringManager;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-static {v6, v7}, Lcom/android/bluetooth/pan/PanService;->-set3(Lcom/android/bluetooth/pan/PanService;Lcom/samsung/bt/pan/EnhancedTetheringManager;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     move-result-object v6
 
@@ -140,7 +140,7 @@
 
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     move-result-object v6
 
@@ -173,13 +173,13 @@
 
     if-ne v1, v6, :cond_1
 
-    invoke-static {v10}, Lcom/android/bluetooth/pan/PanService;->-set1(Z)Z
+    invoke-static {v10}, Lcom/android/bluetooth/pan/PanService;->-set2(Z)Z
 
     invoke-static {v10}, Lcom/android/bluetooth/pan/PanService;->-set0(Z)Z
 
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     move-result-object v6
 
@@ -187,7 +187,7 @@
 
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     move-result-object v6
 
@@ -199,7 +199,7 @@
 
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     move-result-object v6
 
@@ -207,7 +207,7 @@
 
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     move-result-object v6
 
@@ -220,7 +220,7 @@
 
     move-result v6
 
-    if-eqz v6, :cond_2
+    if-eqz v6, :cond_3
 
     const-string/jumbo v6, "android.bluetooth.device.extra.DEVICE"
 
@@ -230,17 +230,52 @@
 
     check-cast v2, Landroid/bluetooth/BluetoothDevice;
 
-    iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
+    const-string/jumbo v6, "com.samsung.bluetooth.device.extra.DISCONNECTION_REASON"
 
-    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-virtual {p2, v6, v10}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    move-result-object v6
+    move-result v4
+
+    invoke-static {}, Lcom/android/bluetooth/pan/PanService;->-get0()Z
+
+    move-result v6
 
     if-eqz v6, :cond_2
 
+    const-string/jumbo v6, "PanService"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "PAN Disconnection Reason : "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_3
+
+    iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
+
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     move-result-object v6
 
@@ -248,13 +283,7 @@
 
     move-result v6
 
-    if-eqz v6, :cond_2
-
-    const-string/jumbo v6, "com.samsung.bluetooth.device.extra.DISCONNECTION_REASON"
-
-    invoke-virtual {p2, v6, v10}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
-
-    move-result v4
+    if-eqz v6, :cond_3
 
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
@@ -262,21 +291,21 @@
 
     move-result v6
 
-    if-ne v4, v6, :cond_4
+    if-ne v4, v6, :cond_5
 
-    invoke-static {v11}, Lcom/android/bluetooth/pan/PanService;->-set1(Z)Z
+    invoke-static {v11}, Lcom/android/bluetooth/pan/PanService;->-set2(Z)Z
 
     invoke-static {v10}, Lcom/android/bluetooth/pan/PanService;->-set0(Z)Z
 
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     move-result-object v6
 
     invoke-virtual {v6}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->startFindTetherServer()V
 
-    :cond_2
+    :cond_3
     :goto_0
     const-string/jumbo v6, "com.samsung.bluetooth.pan.inactivenap.ASK_CONFIRM"
 
@@ -284,7 +313,7 @@
 
     move-result v6
 
-    if-eqz v6, :cond_3
+    if-eqz v6, :cond_4
 
     const-string/jumbo v6, "android.bluetooth.device.extra.DEVICE"
 
@@ -316,7 +345,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v2}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+    invoke-virtual {v2}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
 
     move-result-object v8
 
@@ -344,7 +373,7 @@
 
     move-result v6
 
-    if-eqz v6, :cond_3
+    if-eqz v6, :cond_4
 
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
@@ -360,25 +389,34 @@
 
     invoke-static {v6, v7, v11, v8}, Lcom/android/bluetooth/pan/PanService;->-wrap1(Lcom/android/bluetooth/pan/PanService;[BII)Z
 
-    :cond_3
+    :cond_4
     return-void
 
-    :cond_4
+    :cond_5
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
     invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get1(Lcom/android/bluetooth/pan/PanService;)I
 
     move-result v6
 
-    if-ne v4, v6, :cond_2
+    if-eq v4, v6, :cond_6
 
-    invoke-static {v10}, Lcom/android/bluetooth/pan/PanService;->-set1(Z)Z
+    iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
+
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get3(Lcom/android/bluetooth/pan/PanService;)I
+
+    move-result v6
+
+    if-ne v4, v6, :cond_3
+
+    :cond_6
+    invoke-static {v10}, Lcom/android/bluetooth/pan/PanService;->-set2(Z)Z
 
     invoke-static {v10}, Lcom/android/bluetooth/pan/PanService;->-set0(Z)Z
 
     iget-object v6, p0, Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;->this$0:Lcom/android/bluetooth/pan/PanService;
 
-    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    invoke-static {v6}, Lcom/android/bluetooth/pan/PanService;->-get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     move-result-object v6
 

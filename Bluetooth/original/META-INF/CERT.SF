@@ -1,24 +1,24 @@
 Signature-Version: 1.0
-SHA-256-Digest-Manifest: H5h5TSa+3uz2ZIEKtuvkPpePDr+TvnveLV7TLzqb3Ss=
+SHA-256-Digest-Manifest: 8vH+IWtHMhGC96hYHCDJ9z7co/olERagjG7c5iqQB7I=
 Created-By: 1.0 (Android SignApk)
 
 Name: res/menu/transferhistorycontextfinished.xml
-SHA-256-Digest: +eRmr4E2RuKWBnTO5R9r5t/7F/HRH6ysPT12OvTPLM8=
+SHA-256-Digest: GNedKAxNVgyvHUhrZYXkKfjTXtAVoObzFLF3+24ZRlA=
 
 Name: AndroidManifest.xml
-SHA-256-Digest: N4y8ij1YNu6xXguhXMUUibb1Be0/8Vcstc/BRZIEW7s=
+SHA-256-Digest: kK/e3+BI3/L5AAltAoe7HBszwSu8w98/BJBMpVhOoXE=
 
 Name: res/layout/confirm_dialog.xml
 SHA-256-Digest: 8Jn/5qb3geLZ4Nfy6VAyYeJPTsSPSrRfTp4w5COFISw=
 
 Name: res/xml/authenticator.xml
-SHA-256-Digest: hRTGprLbn9I7xz3Qfu1Q47l9Ct/7iAnJgLe/+NiC+Oc=
+SHA-256-Digest: DE+byGqr38UgL9xuvABuiMr3lB5Gg/Ds4TcTFKjFYa8=
 
 Name: res/drawable/doc.qmg
 SHA-256-Digest: R2IVFU7SZWs0HI5U7wkh0WA4EuVwefOgmBa2VGwjw0U=
 
 Name: res/menu/receivedfilescontextfinished.xml
-SHA-256-Digest: 2wyyP+H+qa4IJ85Q2snT9+VIVDuIyOyie1FkqPAyMKg=
+SHA-256-Digest: J2uPRV0iWW1umSPMHJBas3v75ztaVsKvjwA+8fxF3YA=
 
 Name: res/drawable/myfiles_icon_video_thumb.qmg
 SHA-256-Digest: 4egcwkCpszrmbnG9Az84hGU3OyE4KLE8Lh4mpIrJkAs=
@@ -51,7 +51,7 @@ Name: res/layout/auth.xml
 SHA-256-Digest: jFJ2YGwlyYiCymK4wI29r4qwWZe/SKPXiJaBy+qrqRY=
 
 Name: res/layout/bluetooth_map_settings.xml
-SHA-256-Digest: Owl6XMbteswyB6phvlh8hoOsUWBHv5Cxd7FATq3kH9Y=
+SHA-256-Digest: 7RzUqWvKsLtjhsFqFlWr4YAoznMkhpzxL3La71pcj+M=
 
 Name: res/layout/bluetooth_map_settings_account_group.xml
 SHA-256-Digest: JwOk8nRINJSdlR51DSPImmH+ZnQenYhE39EsXm88+JY=
@@ -72,7 +72,7 @@ Name: res/drawable/ic_bt_failed.pio
 SHA-256-Digest: F6f0GDf3UkVKcPfWFJgJx3JPYnOAIeK+mRO21TV5QHg=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: ckS45PV+31jysrTPr+tu1mXswy1jl3JCONloULf6D0c=
+SHA-256-Digest: 86bo0IAfrsUu8Ni+1knZyKg60UWWxd9tPGJJPBuj7JQ=
 
 Name: res/drawable/ic_decline.xml
 SHA-256-Digest: a5bx+NNtstgN+8RDPoZWgpcUorkfN+dpe//Bb7Iuyb8=
@@ -81,10 +81,10 @@ Name: res/layout/bluetooth_transfers_page.xml
 SHA-256-Digest: bcdxStHwQefeQ7jJ6BMJd/S2VSbgcEa5T2fI3IYSTYk=
 
 Name: res/layout/testactivity_main.xml
-SHA-256-Digest: uSnnNTMBm9HlXcY0C5MGLBBG6Wd+8UjbMQG89n66oeg=
+SHA-256-Digest: uH1EW5oVjGhp1L38rpncTl6E2VasBPMmgeXHYF05DuQ=
 
 Name: res/menu/transferhistory.xml
-SHA-256-Digest: u7LB5DhnF5YMwibJdnOpGty239CvU3Qx4BL1Gp1cC+o=
+SHA-256-Digest: laftB7tFcc/0iFW5bYjxsULr11z86PkHb3bNavX+UEU=
 
 Name: res/drawable/ic_accept.xml
 SHA-256-Digest: vWJTYkvm4iYc8HfWVs3Lnlc6ApwI6bFDctvFlzZfRLA=
@@ -114,7 +114,7 @@ Name: res/drawable/myfiles_icon_image.qmg
 SHA-256-Digest: OqH29pa9y5yH76a8eDuUpOynDUlZ/O6s/YmIg1cajHY=
 
 Name: res/layout/no_transfers.xml
-SHA-256-Digest: xRgAzyLwPry/Wk12pdh0hoMf9JtC6pTn3uvC9LBZlI8=
+SHA-256-Digest: mVG6oBn7KoMpjLA7RgD+4WmXGtNf9M3rCPU+8DfeEWQ=
 
 Name: res/mipmap-mdpi-v4/bt_share.qmg
 SHA-256-Digest: BjNN7HRhfsTbgKjlCbB7DCmqTtkDZW4F3sPawaaFzr4=
@@ -123,7 +123,7 @@ Name: res/mipmap-xxhdpi-v4/bt_share.qmg
 SHA-256-Digest: co7I4PaJC8NF/OCvz2CbbqnYFslmRoaaroom2emxmDw=
 
 Name: resources.arsc
-SHA-256-Digest: l0LcHjpJFHuq+9hhMS+izXVHAujEswfWBUomVk0Ak98=
+SHA-256-Digest: 73YKjSfXKVTdUNFqjy9l1z9JrC+9vOLZO6nBAUln4rA=
 
 Name: res/mipmap-hdpi-v4/bt_share.qmg
 SHA-256-Digest: ouXyesN2Hfdu4yokGoVkzBGq9KwD/Ye49OSeFBpQDFA=

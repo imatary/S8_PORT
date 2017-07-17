@@ -2181,7 +2181,7 @@
 
     iget-object v12, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
-    const v13, 0x7f0a0092
+    const v13, 0x7f0a009a
 
     invoke-virtual {v12, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2193,7 +2193,7 @@
 
     iget-object v12, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
-    const v13, 0x7f0a0093
+    const v13, 0x7f0a009b
 
     invoke-virtual {v12, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2209,7 +2209,7 @@
 
     iget-object v13, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
-    const v14, 0x7f0a0093
+    const v14, 0x7f0a009b
 
     invoke-virtual {v13, v14}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2263,7 +2263,7 @@
 
     iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
-    const v12, 0x7f0a0094
+    const v12, 0x7f0a009c
 
     invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2297,7 +2297,7 @@
 
     iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
-    const v12, 0x7f0a0095
+    const v12, 0x7f0a009d
 
     invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2357,7 +2357,7 @@
 
     iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
-    const v12, 0x7f0a0092
+    const v12, 0x7f0a009a
 
     invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2369,7 +2369,7 @@
 
     iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
-    const v12, 0x7f0a0093
+    const v12, 0x7f0a009b
 
     invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2381,7 +2381,7 @@
 
     iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
-    const v12, 0x7f0a0094
+    const v12, 0x7f0a009c
 
     invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2393,7 +2393,7 @@
 
     iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
-    const v12, 0x7f0a0095
+    const v12, 0x7f0a009d
 
     invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4317,7 +4317,7 @@
 
     move-object/from16 v26, v0
 
-    const v27, 0x7f0a008e
+    const v27, 0x7f0a0096
 
     invoke-virtual/range {v26 .. v27}, Lcom/android/bluetooth/a2dp/A2dpService;->getString(I)Ljava/lang/String;
 
@@ -4349,7 +4349,7 @@
 
     aput-object v28, v27, v29
 
-    const v28, 0x7f0a008f
+    const v28, 0x7f0a0097
 
     move-object/from16 v0, v26
 
@@ -4848,7 +4848,7 @@
 
     iget-object v6, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mService:Lcom/android/bluetooth/a2dp/A2dpService;
 
-    const v7, 0x7f0a0090
+    const v7, 0x7f0a0098
 
     invoke-virtual {v6, v7}, Lcom/android/bluetooth/a2dp/A2dpService;->getString(I)Ljava/lang/String;
 
@@ -4860,7 +4860,7 @@
 
     iget-object v6, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mService:Lcom/android/bluetooth/a2dp/A2dpService;
 
-    const v7, 0x7f0a0091
+    const v7, 0x7f0a0099
 
     invoke-virtual {v6, v7}, Lcom/android/bluetooth/a2dp/A2dpService;->getString(I)Ljava/lang/String;
 

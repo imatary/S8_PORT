@@ -78,7 +78,13 @@
 
 .field private REASON_LINK_LOSS:I
 
-.field private isConnecttoNAP:Z
+.field private REMOTE_USER_DISCONNECTION:I
+
+.field private isConnectFromNAP:Z
+
+.field private isConnectFromPANU:Z
+
+.field private isConnecting:Z
 
 .field private final mETMHandler:Landroid/os/Handler;
 
@@ -142,7 +148,23 @@
     return v0
 .end method
 
-.method static synthetic -get3(Lcom/android/bluetooth/pan/PanService;)Landroid/os/Handler;
+.method static synthetic -get3(Lcom/android/bluetooth/pan/PanService;)I
+    .locals 1
+
+    iget v0, p0, Lcom/android/bluetooth/pan/PanService;->REMOTE_USER_DISCONNECTION:I
+
+    return v0
+.end method
+
+.method static synthetic -get4(Lcom/android/bluetooth/pan/PanService;)Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/android/bluetooth/pan/PanService;->isConnecting:Z
+
+    return v0
+.end method
+
+.method static synthetic -get5(Lcom/android/bluetooth/pan/PanService;)Landroid/os/Handler;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/pan/PanService;->mETMHandler:Landroid/os/Handler;
@@ -150,7 +172,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get4(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+.method static synthetic -get6(Lcom/android/bluetooth/pan/PanService;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
@@ -158,7 +180,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get5(Lcom/android/bluetooth/pan/PanService;)Ljava/lang/String;
+.method static synthetic -get7(Lcom/android/bluetooth/pan/PanService;)Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/pan/PanService;->mPanIfName:Ljava/lang/String;
@@ -166,7 +188,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get6(Lcom/android/bluetooth/pan/PanService;)Z
+.method static synthetic -get8(Lcom/android/bluetooth/pan/PanService;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/bluetooth/pan/PanService;->mTetherOn:Z
@@ -182,7 +204,15 @@
     return p0
 .end method
 
-.method static synthetic -set1(Z)Z
+.method static synthetic -set1(Lcom/android/bluetooth/pan/PanService;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/bluetooth/pan/PanService;->isConnecting:Z
+
+    return p1
+.end method
+
+.method static synthetic -set2(Z)Z
     .locals 0
 
     sput-boolean p0, Lcom/android/bluetooth/pan/PanService;->isLinkLoss:Z
@@ -190,7 +220,7 @@
     return p0
 .end method
 
-.method static synthetic -set2(Lcom/android/bluetooth/pan/PanService;Lcom/samsung/bt/pan/EnhancedTetheringManager;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
+.method static synthetic -set3(Lcom/android/bluetooth/pan/PanService;Lcom/samsung/bt/pan/EnhancedTetheringManager;)Lcom/samsung/bt/pan/EnhancedTetheringManager;
     .locals 0
 
     iput-object p1, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
@@ -285,17 +315,17 @@
 
     invoke-direct {p0}, Lcom/android/bluetooth/btservice/ProfileService;-><init>()V
 
-    iput-boolean v2, p0, Lcom/android/bluetooth/pan/PanService;->mTetherOn:Z
+    iput-boolean v1, p0, Lcom/android/bluetooth/pan/PanService;->mTetherOn:Z
 
-    iput-object v1, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    iput-object v2, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
-    iput-object v1, p0, Lcom/android/bluetooth/pan/PanService;->mEnhancedTetherReceiver:Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;
+    iput-object v2, p0, Lcom/android/bluetooth/pan/PanService;->mEnhancedTetherReceiver:Lcom/android/bluetooth/pan/PanService$EnhancedTetherReceiver;
 
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/bluetooth/pan/PanService;->EDM_NULL:I
 
-    iput v2, p0, Lcom/android/bluetooth/pan/PanService;->EDM_FALSE:I
+    iput v1, p0, Lcom/android/bluetooth/pan/PanService;->EDM_FALSE:I
 
     const/4 v0, 0x1
 
@@ -305,15 +335,23 @@
 
     iput v0, p0, Lcom/android/bluetooth/pan/PanService;->REASON_LINK_LOSS:I
 
+    const/16 v0, 0x13
+
+    iput v0, p0, Lcom/android/bluetooth/pan/PanService;->REMOTE_USER_DISCONNECTION:I
+
     const/16 v0, 0x16
 
     iput v0, p0, Lcom/android/bluetooth/pan/PanService;->LOCAL_USER_DISCONNECTION:I
 
-    iput-boolean v2, p0, Lcom/android/bluetooth/pan/PanService;->isConnecttoNAP:Z
+    iput-boolean v1, p0, Lcom/android/bluetooth/pan/PanService;->isConnectFromPANU:Z
 
-    iput-object v1, p0, Lcom/android/bluetooth/pan/PanService;->mTetherReceiver:Landroid/content/BroadcastReceiver;
+    iput-boolean v1, p0, Lcom/android/bluetooth/pan/PanService;->isConnectFromNAP:Z
 
-    iput-object v1, p0, Lcom/android/bluetooth/pan/PanService;->mTetherfilter:Landroid/content/IntentFilter;
+    iput-boolean v1, p0, Lcom/android/bluetooth/pan/PanService;->isConnecting:Z
+
+    iput-object v2, p0, Lcom/android/bluetooth/pan/PanService;->mTetherReceiver:Landroid/content/BroadcastReceiver;
+
+    iput-object v2, p0, Lcom/android/bluetooth/pan/PanService;->mTetherfilter:Landroid/content/IntentFilter;
 
     new-instance v0, Lcom/android/bluetooth/pan/PanService$1;
 
@@ -993,393 +1031,641 @@
 .end method
 
 .method private onConnReqInactiveNAP([B)V
-    .locals 14
+    .locals 21
 
-    const-string/jumbo v10, "phone"
+    const-string/jumbo v17, "phone"
 
-    invoke-virtual {p0, v10}, Lcom/android/bluetooth/pan/PanService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    move-object/from16 v0, p0
 
-    move-result-object v9
+    move-object/from16 v1, v17
 
-    check-cast v9, Landroid/telephony/TelephonyManager;
+    invoke-virtual {v0, v1}, Lcom/android/bluetooth/pan/PanService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+    move-result-object v15
+
+    check-cast v15, Landroid/telephony/TelephonyManager;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v17
+
+    const-string/jumbo v18, "device_policy"
+
+    invoke-virtual/range {v17 .. v18}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v10
 
-    const-string/jumbo v11, "device_policy"
+    check-cast v10, Landroid/app/admin/DevicePolicyManager;
 
-    invoke-virtual {v10, v11}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v17
+
+    invoke-static/range {v17 .. v17}, Landroid/net/NetworkPolicyManager;->from(Landroid/content/Context;)Landroid/net/NetworkPolicyManager;
+
+    move-result-object v17
+
+    invoke-virtual/range {v17 .. v17}, Landroid/net/NetworkPolicyManager;->getRestrictBackground()Z
+
+    move-result v11
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v17
+
+    const-string/jumbo v18, "connectivity"
+
+    invoke-virtual/range {v17 .. v18}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v5
 
-    check-cast v5, Landroid/app/admin/DevicePolicyManager;
+    check-cast v5, Landroid/net/ConnectivityManager;
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+    const/16 v17, 0x1
 
-    move-result-object v10
+    move/from16 v0, v17
 
-    invoke-static {v10}, Landroid/net/NetworkPolicyManager;->from(Landroid/content/Context;)Landroid/net/NetworkPolicyManager;
+    invoke-virtual {v5, v0}, Landroid/net/ConnectivityManager;->getNetworkInfo(I)Landroid/net/NetworkInfo;
 
-    move-result-object v10
+    move-result-object v13
 
-    invoke-virtual {v10}, Landroid/net/NetworkPolicyManager;->getRestrictBackground()Z
+    const/16 v17, 0x1
 
-    move-result v6
+    move/from16 v0, v17
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+    new-array v14, v0, [Ljava/lang/String;
 
-    move-result-object v10
+    const-string/jumbo v17, "false"
 
-    const-string/jumbo v11, "connectivity"
+    const/16 v18, 0x0
 
-    invoke-virtual {v10, v11}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    aput-object v17, v14, v18
 
-    move-result-object v0
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
 
-    check-cast v0, Landroid/net/ConnectivityManager;
+    move-result-object v17
 
-    const/4 v10, 0x1
+    const-string/jumbo v18, "content://com.sec.knox.provider/BluetoothPolicy"
 
-    invoke-virtual {v0, v10}, Landroid/net/ConnectivityManager;->getNetworkInfo(I)Landroid/net/NetworkInfo;
+    const-string/jumbo v19, "isBluetoothEnabled"
 
-    move-result-object v7
+    move-object/from16 v0, p0
 
-    const/4 v10, 0x1
+    move-object/from16 v1, v17
 
-    new-array v8, v10, [Ljava/lang/String;
+    move-object/from16 v2, v18
 
-    const-string/jumbo v10, "false"
+    move-object/from16 v3, v19
 
-    const/4 v11, 0x0
+    invoke-virtual {v0, v1, v2, v3, v14}, Lcom/android/bluetooth/pan/PanService;->getEnterprisePolicyEnabled(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
-    aput-object v10, v8, v11
+    move-result v7
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v10
+    move-result-object v17
 
-    const-string/jumbo v11, "content://com.sec.knox.provider/BluetoothPolicy"
+    const-string/jumbo v18, "content://com.sec.knox.provider/RestrictionPolicy1"
 
-    const-string/jumbo v12, "isBluetoothEnabled"
+    const-string/jumbo v19, "isBluetoothTetheringEnabled"
 
-    invoke-virtual {p0, v10, v11, v12, v8}, Lcom/android/bluetooth/pan/PanService;->getEnterprisePolicyEnabled(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
+    const/16 v20, 0x0
 
-    move-result v2
+    move-object/from16 v0, p0
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+    move-object/from16 v1, v17
 
-    move-result-object v10
+    move-object/from16 v2, v18
 
-    const-string/jumbo v11, "content://com.sec.knox.provider/RestrictionPolicy1"
+    move-object/from16 v3, v19
 
-    const-string/jumbo v12, "isBluetoothTetheringEnabled"
+    move-object/from16 v4, v20
 
-    const/4 v13, 0x0
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/bluetooth/pan/PanService;->getEnterprisePolicyEnabled(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
-    invoke-virtual {p0, v10, v11, v12, v13}, Lcom/android/bluetooth/pan/PanService;->getEnterprisePolicyEnabled(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
-
-    move-result v3
+    move-result v8
 
     invoke-static {}, Lcom/samsung/android/knox/custom/SettingsManager;->getInstance()Lcom/samsung/android/knox/custom/SettingsManager;
 
-    move-result-object v10
+    move-result-object v17
 
-    invoke-virtual {v10}, Lcom/samsung/android/knox/custom/SettingsManager;->getSettingsHiddenState()I
+    invoke-virtual/range {v17 .. v17}, Lcom/samsung/android/knox/custom/SettingsManager;->getSettingsHiddenState()I
 
-    move-result v4
+    move-result v9
 
-    invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v10
+    move-result-object v17
 
-    invoke-virtual {v10}, Landroid/bluetooth/BluetoothAdapter;->getState()I
+    const-string/jumbo v18, "ultra_powersaving_mode"
 
-    move-result v10
+    const/16 v19, 0x0
 
-    const/16 v11, 0xc
+    invoke-static/range {v17 .. v19}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    if-eq v10, v11, :cond_1
+    move-result v17
 
-    const-string/jumbo v10, "PanService"
+    if-eqz v17, :cond_1
 
-    const-string/jumbo v11, "Bluetooth is not ready"
+    const-string/jumbo v17, "PanService"
 
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const-string/jumbo v18, "isUltraPowerSavingMode = true"
+
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     :goto_0
     return-void
 
     :cond_1
-    const-string/jumbo v10, "VZW"
+    invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
-    invoke-static {}, Lcom/android/bluetooth/Utils;->readSalesCode()Ljava/lang/String;
+    move-result-object v17
 
-    move-result-object v11
+    invoke-virtual/range {v17 .. v17}, Landroid/bluetooth/BluetoothAdapter;->getState()I
 
-    invoke-virtual {v10, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v17
 
-    move-result v10
+    const/16 v18, 0xc
 
-    if-eqz v10, :cond_2
+    move/from16 v0, v17
 
-    invoke-virtual {v9}, Landroid/telephony/TelephonyManager;->getSimState()I
+    move/from16 v1, v18
 
-    move-result v10
+    if-eq v0, v1, :cond_2
 
-    const/4 v11, 0x5
+    const-string/jumbo v17, "PanService"
 
-    if-eq v10, v11, :cond_2
+    const-string/jumbo v18, "Bluetooth is not ready"
 
-    const-string/jumbo v10, "PanService"
-
-    const-string/jumbo v11, "SIM_STATE is not ready in VZW model"
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
     :cond_2
-    const-string/jumbo v10, "VZW"
+    const-string/jumbo v17, "VZW"
 
     invoke-static {}, Lcom/android/bluetooth/Utils;->readSalesCode()Ljava/lang/String;
 
-    move-result-object v11
+    move-result-object v18
 
-    invoke-virtual {v10, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v17
 
-    if-eqz v10, :cond_3
+    if-eqz v17, :cond_3
 
-    invoke-virtual {v7}, Landroid/net/NetworkInfo;->isConnected()Z
+    invoke-virtual {v15}, Landroid/telephony/TelephonyManager;->getSimState()I
 
-    move-result v10
+    move-result v17
 
-    if-eqz v10, :cond_3
+    const/16 v18, 0x5
 
-    const-string/jumbo v10, "PanService"
+    move/from16 v0, v17
 
-    const-string/jumbo v11, "NAP disallowed with Wi-Fi connection in VZW"
+    move/from16 v1, v18
 
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    if-eq v0, v1, :cond_3
+
+    const-string/jumbo v17, "PanService"
+
+    const-string/jumbo v18, "SIM_STATE is not ready in VZW model"
+
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
     :cond_3
-    const/4 v10, 0x0
+    const-string/jumbo v17, "VZW"
 
-    invoke-virtual {v5, v10}, Landroid/app/admin/DevicePolicyManager;->semGetAllowBluetoothMode(Landroid/content/ComponentName;)I
+    invoke-static {}, Lcom/android/bluetooth/Utils;->readSalesCode()Ljava/lang/String;
 
-    move-result v10
+    move-result-object v18
 
-    const/4 v11, 0x2
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    if-ne v10, v11, :cond_4
+    move-result v17
 
-    const/4 v10, 0x0
+    if-eqz v17, :cond_4
 
-    invoke-virtual {v5, v10}, Landroid/app/admin/DevicePolicyManager;->semGetAllowInternetSharing(Landroid/content/ComponentName;)Z
+    invoke-virtual {v13}, Landroid/net/NetworkInfo;->isConnected()Z
 
-    move-result v10
+    move-result v17
 
-    if-eqz v10, :cond_4
+    if-eqz v17, :cond_4
 
-    if-eqz v6, :cond_5
+    const-string/jumbo v17, "PanService"
 
-    const-string/jumbo v10, "PanService"
+    const-string/jumbo v18, "NAP disallowed with Wi-Fi connection in VZW"
 
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "DataSaverEnabled : "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
     :cond_4
-    const-string/jumbo v10, "PanService"
+    const/16 v17, 0x0
 
-    new-instance v11, Ljava/lang/StringBuilder;
+    move-object/from16 v0, v17
 
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v10, v0}, Landroid/app/admin/DevicePolicyManager;->semGetAllowBluetoothMode(Landroid/content/ComponentName;)I
 
-    const-string/jumbo v12, "AllowBluetoothMode : "
+    move-result v17
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/16 v18, 0x2
 
-    move-result-object v11
+    move/from16 v0, v17
 
-    const/4 v12, 0x0
+    move/from16 v1, v18
 
-    invoke-virtual {v5, v12}, Landroid/app/admin/DevicePolicyManager;->semGetAllowBluetoothMode(Landroid/content/ComponentName;)I
+    if-ne v0, v1, :cond_5
 
-    move-result v12
+    const/16 v17, 0x0
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-object/from16 v0, v17
 
-    move-result-object v11
+    invoke-virtual {v10, v0}, Landroid/app/admin/DevicePolicyManager;->semGetAllowInternetSharing(Landroid/content/ComponentName;)Z
 
-    const-string/jumbo v12, ", AllowInternetSharing : "
+    move-result v17
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v17, :cond_5
 
-    move-result-object v11
+    if-eqz v11, :cond_6
 
-    const/4 v12, 0x0
+    const-string/jumbo v17, "PanService"
 
-    invoke-virtual {v5, v12}, Landroid/app/admin/DevicePolicyManager;->semGetAllowInternetSharing(Landroid/content/ComponentName;)Z
+    new-instance v18, Ljava/lang/StringBuilder;
 
-    move-result v12
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    const-string/jumbo v19, "DataSaverEnabled : "
 
-    move-result-object v11
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v18
 
-    move-result-object v11
+    move-object/from16 v0, v18
 
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v18
+
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
 
     :cond_5
-    iget v10, p0, Lcom/android/bluetooth/pan/PanService;->EDM_FALSE:I
+    const-string/jumbo v17, "PanService"
 
-    if-eq v2, v10, :cond_6
+    new-instance v18, Ljava/lang/StringBuilder;
 
-    iget v10, p0, Lcom/android/bluetooth/pan/PanService;->EDM_FALSE:I
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
 
-    if-ne v3, v10, :cond_9
+    const-string/jumbo v19, "AllowBluetoothMode : "
 
-    :cond_6
-    const-string/jumbo v11, "PanService"
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    new-instance v10, Ljava/lang/StringBuilder;
+    move-result-object v18
 
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+    const/16 v19, 0x0
 
-    const-string/jumbo v12, "isBluetoothEnabled : "
+    move-object/from16 v0, v19
 
-    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v0}, Landroid/app/admin/DevicePolicyManager;->semGetAllowBluetoothMode(Landroid/content/ComponentName;)I
 
-    move-result-object v12
+    move-result v19
 
-    iget v10, p0, Lcom/android/bluetooth/pan/PanService;->EDM_FALSE:I
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    if-eq v2, v10, :cond_7
+    move-result-object v18
 
-    const/4 v10, 0x1
+    const-string/jumbo v19, ", AllowInternetSharing : "
 
-    :goto_1
-    invoke-virtual {v12, v10}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v10
+    move-result-object v18
 
-    const-string/jumbo v12, ", isBluetoothTetheringEnabled : "
+    const/16 v19, 0x0
 
-    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, v19
 
-    move-result-object v12
+    invoke-virtual {v10, v0}, Landroid/app/admin/DevicePolicyManager;->semGetAllowInternetSharing(Landroid/content/ComponentName;)Z
 
-    iget v10, p0, Lcom/android/bluetooth/pan/PanService;->EDM_FALSE:I
+    move-result v19
 
-    if-eq v3, v10, :cond_8
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    const/4 v10, 0x1
+    move-result-object v18
 
-    :goto_2
-    invoke-virtual {v12, v10}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v10
+    move-result-object v18
 
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-static {v11, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
 
+    :cond_6
+    move-object/from16 v0, p0
+
+    iget v0, v0, Lcom/android/bluetooth/pan/PanService;->EDM_FALSE:I
+
+    move/from16 v17, v0
+
+    move/from16 v0, v17
+
+    if-eq v7, v0, :cond_7
+
+    move-object/from16 v0, p0
+
+    iget v0, v0, Lcom/android/bluetooth/pan/PanService;->EDM_FALSE:I
+
+    move/from16 v17, v0
+
+    move/from16 v0, v17
+
+    if-ne v8, v0, :cond_a
+
     :cond_7
-    const/4 v10, 0x0
+    const-string/jumbo v18, "PanService"
+
+    new-instance v17, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v17 .. v17}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v19, "isBluetoothEnabled : "
+
+    move-object/from16 v0, v17
+
+    move-object/from16 v1, v19
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    move-object/from16 v0, p0
+
+    iget v0, v0, Lcom/android/bluetooth/pan/PanService;->EDM_FALSE:I
+
+    move/from16 v17, v0
+
+    move/from16 v0, v17
+
+    if-eq v7, v0, :cond_8
+
+    const/16 v17, 0x1
+
+    :goto_1
+    move-object/from16 v0, v19
+
+    move/from16 v1, v17
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    const-string/jumbo v19, ", isBluetoothTetheringEnabled : "
+
+    move-object/from16 v0, v17
+
+    move-object/from16 v1, v19
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    move-object/from16 v0, p0
+
+    iget v0, v0, Lcom/android/bluetooth/pan/PanService;->EDM_FALSE:I
+
+    move/from16 v17, v0
+
+    move/from16 v0, v17
+
+    if-eq v8, v0, :cond_9
+
+    const/16 v17, 0x1
+
+    :goto_2
+    move-object/from16 v0, v19
+
+    move/from16 v1, v17
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    invoke-virtual/range {v17 .. v17}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v17
+
+    move-object/from16 v0, v18
+
+    move-object/from16 v1, v17
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    :cond_8
+    const/16 v17, 0x0
 
     goto :goto_1
 
-    :cond_8
-    const/4 v10, 0x0
+    :cond_9
+    const/16 v17, 0x0
 
     goto :goto_2
 
-    :cond_9
-    and-int/lit8 v10, v4, 0x2
+    :cond_a
+    and-int/lit8 v17, v9, 0x2
 
-    if-eqz v10, :cond_a
+    if-eqz v17, :cond_b
 
-    const-string/jumbo v10, "PanService"
+    const-string/jumbo v17, "PanService"
 
-    const-string/jumbo v11, "CustomDeviceManager.SETTINGS_BLUETOOTH : 2"
+    const-string/jumbo v18, "CustomDeviceManager.SETTINGS_BLUETOOTH : 2"
 
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
 
-    :cond_a
-    invoke-virtual {p0, p1}, Lcom/android/bluetooth/pan/PanService;->getDevice([B)Landroid/bluetooth/BluetoothDevice;
+    :cond_b
+    invoke-virtual/range {p0 .. p1}, Lcom/android/bluetooth/pan/PanService;->getDevice([B)Landroid/bluetooth/BluetoothDevice;
 
-    move-result-object v1
+    move-result-object v6
 
-    const-string/jumbo v10, "PanService"
+    if-nez v6, :cond_c
 
-    new-instance v11, Ljava/lang/StringBuilder;
+    return-void
 
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "onConnReqInactiveNAP : "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+    :cond_c
+    invoke-virtual {v6}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
 
     move-result-object v12
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v12, :cond_0
 
-    move-result-object v11
+    const-string/jumbo v17, "PanService"
 
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    new-instance v18, Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const-string/jumbo v19, "onConnReqInactiveNAP : "
 
-    invoke-virtual {v1}, Landroid/bluetooth/BluetoothDevice;->getBondState()I
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result v10
+    move-result-object v18
 
-    const/16 v11, 0xc
+    invoke-virtual {v6}, Landroid/bluetooth/BluetoothDevice;->getAliasName()Ljava/lang/String;
 
-    if-ne v10, v11, :cond_0
+    move-result-object v19
 
-    invoke-direct {p0, v1}, Lcom/android/bluetooth/pan/PanService;->showConnReqPopup(Landroid/bluetooth/BluetoothDevice;)V
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    const-string/jumbo v19, " class : "
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual {v12}, Landroid/bluetooth/BluetoothClass;->hashCode()I
+
+    move-result v19
+
+    invoke-static/range {v19 .. v19}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v19
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v18
+
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {v6}, Landroid/bluetooth/BluetoothDevice;->getBondState()I
+
+    move-result v17
+
+    const/16 v18, 0xc
+
+    move/from16 v0, v17
+
+    move/from16 v1, v18
+
+    if-ne v0, v1, :cond_0
+
+    invoke-virtual {v12}, Landroid/bluetooth/BluetoothClass;->getMajorDeviceClass()I
+
+    move-result v17
+
+    const/16 v18, 0x100
+
+    move/from16 v0, v17
+
+    move/from16 v1, v18
+
+    if-eq v0, v1, :cond_d
+
+    invoke-virtual {v12}, Landroid/bluetooth/BluetoothClass;->getMajorDeviceClass()I
+
+    move-result v17
+
+    const/16 v18, 0x200
+
+    move/from16 v0, v17
+
+    move/from16 v1, v18
+
+    if-ne v0, v1, :cond_e
+
+    :cond_d
+    :goto_3
+    const-string/jumbo v17, "PanService"
+
+    new-instance v18, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v19, "onConnReqInactiveNAP : "
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual {v6}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
+
+    move-result-object v19
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v18
+
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
+
+    move-result-object v17
+
+    const-string/jumbo v18, "CscFeature_Common_EnableSprintExtension"
+
+    invoke-virtual/range {v17 .. v18}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v17
+
+    if-eqz v17, :cond_f
+
+    const-string/jumbo v17, "persist.sys.tether_data_bt"
+
+    const/16 v18, -0x1
+
+    invoke-static/range {v17 .. v18}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+
+    move-result v16
+
+    if-gtz v16, :cond_f
+
+    const-string/jumbo v17, "PanService"
+
+    const-string/jumbo v18, "Tethering disabled by Sprint limitation"
+
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_e
+    invoke-virtual {v12}, Landroid/bluetooth/BluetoothClass;->getMajorDeviceClass()I
+
+    move-result v17
+
+    const/16 v18, 0x300
+
+    move/from16 v0, v17
+
+    move/from16 v1, v18
+
+    if-ne v0, v1, :cond_0
+
+    goto :goto_3
+
+    :cond_f
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v6}, Lcom/android/bluetooth/pan/PanService;->showConnReqPopup(Landroid/bluetooth/BluetoothDevice;)V
 
     goto/16 :goto_0
 .end method
@@ -1915,13 +2201,17 @@
 
     invoke-virtual {v0, v10}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    iput-boolean v12, p0, Lcom/android/bluetooth/pan/PanService;->isConnecttoNAP:Z
+    iput-boolean v12, p0, Lcom/android/bluetooth/pan/PanService;->isConnectFromPANU:Z
 
     return v12
 .end method
 
 .method connectFromNAP(Landroid/bluetooth/BluetoothDevice;)Z
-    .locals 4
+    .locals 5
+
+    const/4 v4, 0x1
+
+    const/4 v3, 0x0
 
     const-string/jumbo v1, "PanService"
 
@@ -1929,19 +2219,37 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    invoke-virtual {p0, p1}, Lcom/android/bluetooth/pan/PanService;->getConnectionState(Landroid/bluetooth/BluetoothDevice;)I
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
     invoke-static {p1}, Lcom/android/bluetooth/Utils;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
 
     move-result-object v1
 
-    const/4 v2, 0x1
+    const/4 v2, 0x2
 
-    const/4 v3, 0x2
-
-    invoke-direct {p0, v1, v2, v3}, Lcom/android/bluetooth/pan/PanService;->connectPanNative([BII)Z
+    invoke-direct {p0, v1, v4, v2}, Lcom/android/bluetooth/pan/PanService;->connectPanNative([BII)Z
 
     move-result v0
 
+    if-eqz v0, :cond_0
+
+    iput-boolean v4, p0, Lcom/android/bluetooth/pan/PanService;->isConnectFromNAP:Z
+
+    :cond_0
     return v0
+
+    :cond_1
+    const-string/jumbo v1, "PanService"
+
+    const-string/jumbo v2, "connectionState is not Disconnected"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v3
 .end method
 
 .method disconnect(Landroid/bluetooth/BluetoothDevice;)Z
@@ -2443,954 +2751,1144 @@
 .end method
 
 .method handlePanDeviceStateChange(Landroid/bluetooth/BluetoothDevice;Ljava/lang/String;III)V
-    .locals 15
+    .locals 17
 
-    sget-boolean v10, Lcom/android/bluetooth/pan/PanService;->DBG:Z
+    sget-boolean v13, Lcom/android/bluetooth/pan/PanService;->DBG:Z
 
-    if-eqz v10, :cond_0
+    if-eqz v13, :cond_0
 
-    const-string/jumbo v10, "PanService"
+    const-string/jumbo v13, "PanService"
 
-    new-instance v11, Ljava/lang/StringBuilder;
+    new-instance v14, Ljava/lang/StringBuilder;
 
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v12, "handlePanDeviceStateChange: device: "
+    const-string/jumbo v15, "handlePanDeviceStateChange: device: "
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
     move-object/from16 v0, p1
 
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
-    const-string/jumbo v12, ", iface: "
+    const-string/jumbo v15, ", iface: "
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
     move-object/from16 v0, p2
 
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
-    const-string/jumbo v12, ", state: "
+    const-string/jumbo v15, ", state: "
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
     move/from16 v0, p3
 
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
-    const-string/jumbo v12, ", local_role:"
+    const-string/jumbo v15, ", local_role:"
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
     move/from16 v0, p4
 
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
-    const-string/jumbo v12, ", remote_role:"
+    const-string/jumbo v15, ", remote_role:"
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
     move/from16 v0, p5
 
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v11
+    move-result-object v14
 
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
 
     move-object/from16 v0, p1
 
-    invoke-virtual {v10, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v13, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v8
+    move-result-object v10
 
-    check-cast v8, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;
+    check-cast v10, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;
 
-    if-nez v8, :cond_1
+    if-nez v10, :cond_1
 
-    const-string/jumbo v10, "PanService"
+    const-string/jumbo v13, "PanService"
 
-    new-instance v11, Ljava/lang/StringBuilder;
+    new-instance v14, Ljava/lang/StringBuilder;
 
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v12, "state "
+    const-string/jumbo v15, "state "
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
-
-    move/from16 v0, p3
-
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string/jumbo v12, " Num of connected pan devices: "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    iget-object v12, p0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
-
-    invoke-virtual {v12}, Ljava/util/HashMap;->size()I
-
-    move-result v12
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v9, 0x0
-
-    new-instance v8, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;
+    move-result-object v14
 
     move/from16 v0, p3
 
-    move-object/from16 v1, p2
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move/from16 v2, p4
+    move-result-object v14
 
-    invoke-direct {v8, p0, v0, v1, v2}, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;-><init>(Lcom/android/bluetooth/pan/PanService;ILjava/lang/String;I)V
+    const-string/jumbo v15, " Num of connected pan devices: "
 
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
+
+    invoke-virtual {v15}, Ljava/util/HashMap;->size()I
+
+    move-result v15
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v13, v14}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v11, 0x0
+
+    new-instance v10, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, p3
+
+    move-object/from16 v2, p2
+
+    move/from16 v3, p4
+
+    invoke-direct {v10, v0, v1, v2, v3}, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;-><init>(Lcom/android/bluetooth/pan/PanService;ILjava/lang/String;I)V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
 
     move-object/from16 v0, p1
 
-    invoke-virtual {v10, v0, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v13, v0, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
-    if-nez v9, :cond_2
+    if-nez v11, :cond_2
 
-    const/4 v10, 0x3
-
-    move/from16 v0, p3
-
-    if-ne v0, v10, :cond_2
-
-    const-string/jumbo v10, "PanService"
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "Ignoring state change from "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string/jumbo v12, " to "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
+    const/4 v13, 0x3
 
     move/from16 v0, p3
 
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    if-ne v0, v13, :cond_2
 
-    move-result-object v11
+    const-string/jumbo v13, "PanService"
 
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    new-instance v14, Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const-string/jumbo v15, "Ignoring state change from "
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string/jumbo v15, " to "
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    move/from16 v0, p3
+
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
     :cond_1
-    invoke-static {v8}, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;->-get1(Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;)I
+    invoke-static {v10}, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;->-get1(Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;)I
 
-    move-result v9
+    move-result v11
 
     move/from16 v0, p3
 
-    invoke-static {v8, v0}, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;->-set2(Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;I)I
+    invoke-static {v10, v0}, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;->-set2(Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;I)I
 
     move/from16 v0, p4
 
-    invoke-static {v8, v0}, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;->-set1(Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;I)I
+    invoke-static {v10, v0}, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;->-set1(Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;I)I
 
     move-object/from16 v0, p2
 
-    invoke-static {v8, v0}, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;->-set0(Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10, v0}, Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;->-set0(Lcom/android/bluetooth/pan/PanService$BluetoothPanDevice;Ljava/lang/String;)Ljava/lang/String;
 
     goto :goto_0
 
     :cond_2
-    const-string/jumbo v10, "PanService"
+    const-string/jumbo v13, "PanService"
 
-    new-instance v11, Ljava/lang/StringBuilder;
+    new-instance v14, Ljava/lang/StringBuilder;
 
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v12, "handlePanDeviceStateChange preState: "
+    const-string/jumbo v15, "handlePanDeviceStateChange preState: "
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
-    invoke-virtual {v11, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v14
 
-    const-string/jumbo v12, " state: "
+    const-string/jumbo v15, " state: "
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
-
-    move/from16 v0, p3
-
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v14
 
     move/from16 v0, p3
 
-    if-ne v9, v0, :cond_3
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    move/from16 v0, p3
+
+    if-ne v11, v0, :cond_3
 
     return-void
 
     :cond_3
-    const/4 v10, 0x2
+    const/4 v13, 0x2
 
     move/from16 v0, p5
 
-    if-ne v0, v10, :cond_f
+    if-ne v0, v13, :cond_f
 
-    const/4 v10, 0x2
+    const/4 v13, 0x2
 
     move/from16 v0, p3
 
-    if-ne v0, v10, :cond_7
+    if-ne v0, v13, :cond_e
 
-    iget-boolean v10, p0, Lcom/android/bluetooth/pan/PanService;->mTetherOn:Z
+    move-object/from16 v0, p0
 
-    if-eqz v10, :cond_4
+    iget-boolean v13, v0, Lcom/android/bluetooth/pan/PanService;->mTetherOn:Z
 
-    const/4 v10, 0x2
+    if-eqz v13, :cond_4
+
+    const/4 v13, 0x2
 
     move/from16 v0, p4
 
-    if-ne v0, v10, :cond_5
+    if-ne v0, v13, :cond_5
 
     :cond_4
-    const-string/jumbo v10, "PanService"
+    const-string/jumbo v13, "PanService"
 
-    const-string/jumbo v11, "handlePanDeviceStateChange BT tethering is off/Local role is PANU drop the connection"
+    const-string/jumbo v14, "handlePanDeviceStateChange BT tethering is off/Local role is PANU drop the connection"
 
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-static/range {p1 .. p1}, Lcom/android/bluetooth/Utils;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
-
-    move-result-object v10
-
-    invoke-direct {p0, v10}, Lcom/android/bluetooth/pan/PanService;->disconnectPanNative([B)Z
-
-    return-void
-
-    :cond_5
-    invoke-direct {p0}, Lcom/android/bluetooth/pan/PanService;->getConnectedPanDevices()Ljava/util/List;
-
-    move-result-object v10
-
-    invoke-interface {v10}, Ljava/util/List;->size()I
-
-    move-result v10
-
-    iget v11, p0, Lcom/android/bluetooth/pan/PanService;->mMaxPanDevices:I
-
-    if-le v10, v11, :cond_6
-
-    const-string/jumbo v10, "PanService"
-
-    const-string/jumbo v11, "Max PAN device connections reached"
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-static/range {p1 .. p1}, Lcom/android/bluetooth/Utils;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
-
-    move-result-object v10
-
-    invoke-direct {p0, v10}, Lcom/android/bluetooth/pan/PanService;->disconnectPanNative([B)Z
-
-    :cond_6
-    const-string/jumbo v10, "PanService"
-
-    const-string/jumbo v11, "handlePanDeviceStateChange LOCAL_NAP_ROLE:REMOTE_PANU_ROLE"
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mNapIfaceAddr:Ljava/lang/String;
-
-    if-nez v10, :cond_8
-
-    move-object/from16 v0, p2
-
-    invoke-direct {p0, v0}, Lcom/android/bluetooth/pan/PanService;->startTethering(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v10
-
-    iput-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mNapIfaceAddr:Ljava/lang/String;
-
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mNapIfaceAddr:Ljava/lang/String;
-
-    if-nez v10, :cond_8
-
-    const-string/jumbo v10, "PanService"
-
-    const-string/jumbo v11, "Error seting up tether interface"
-
-    invoke-static {v10, v11}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-static/range {p1 .. p1}, Lcom/android/bluetooth/Utils;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
-
-    move-result-object v10
-
-    invoke-direct {p0, v10}, Lcom/android/bluetooth/pan/PanService;->disconnectPanNative([B)Z
-
-    return-void
-
-    :cond_7
-    if-nez p3, :cond_8
-
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v10, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string/jumbo v10, "PanService"
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "remote(PANU) is disconnected, Remaining connected PANU devices: "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    iget-object v12, p0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
-
-    invoke-virtual {v12}, Ljava/util/HashMap;->size()I
-
-    move-result v12
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mNapIfaceAddr:Ljava/lang/String;
-
-    if-eqz v10, :cond_8
-
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
-
-    invoke-virtual {v10}, Ljava/util/HashMap;->size()I
-
-    move-result v10
-
-    if-nez v10, :cond_8
-
-    move-object/from16 v0, p2
-
-    invoke-direct {p0, v0}, Lcom/android/bluetooth/pan/PanService;->stopTethering(Ljava/lang/String;)Ljava/lang/String;
-
-    const/4 v10, 0x0
-
-    iput-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mNapIfaceAddr:Ljava/lang/String;
-
-    :cond_8
-    :goto_1
-    if-nez p3, :cond_9
-
-    const/4 v10, 0x0
-
-    iput-boolean v10, p0, Lcom/android/bluetooth/pan/PanService;->isConnecttoNAP:Z
-
-    :cond_9
-    const/4 v10, 0x2
-
-    move/from16 v0, p4
-
-    if-ne v0, v10, :cond_c
-
-    if-eqz p1, :cond_15
-
-    const/4 v10, 0x2
-
-    move/from16 v0, p3
-
-    if-ne v0, v10, :cond_15
-
-    iget-boolean v10, p0, Lcom/android/bluetooth/pan/PanService;->isConnecttoNAP:Z
-
-    if-nez v10, :cond_a
-
-    const-string/jumbo v10, "PanService"
-
-    const-string/jumbo v11, "Bluetooth Tethering is connected"
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v10
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v11
-
-    const/4 v12, 0x1
-
-    new-array v12, v12, [Ljava/lang/Object;
-
-    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAliasName()Ljava/lang/String;
 
     move-result-object v13
 
-    const/4 v14, 0x0
+    move-object/from16 v0, p0
 
-    aput-object v13, v12, v14
+    invoke-direct {v0, v13}, Lcom/android/bluetooth/pan/PanService;->disconnectPanNative([B)Z
 
-    const v13, 0x7f0a007e
+    :cond_5
+    invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getConnectedPanDevices()Ljava/util/List;
 
-    invoke-virtual {v11, v13, v12}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    move-result-object v13
 
-    move-result-object v11
+    invoke-interface {v13}, Ljava/util/List;->size()I
 
-    const/4 v12, 0x1
+    move-result v13
 
-    invoke-static {v10, v11, v12}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-object/from16 v0, p0
 
-    move-result-object v10
+    iget v14, v0, Lcom/android/bluetooth/pan/PanService;->mMaxPanDevices:I
 
-    invoke-virtual {v10}, Landroid/widget/Toast;->show()V
+    if-le v13, v14, :cond_6
 
-    :cond_a
-    sget-boolean v10, Lcom/android/bluetooth/pan/PanService;->DBG:Z
+    const-string/jumbo v13, "PanService"
 
-    if-eqz v10, :cond_13
+    const-string/jumbo v14, "Max PAN device connections reached"
 
-    const-string/jumbo v10, "PanService"
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "PAN connected from PANU to NAP device["
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string/jumbo v12, "]"
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :goto_2
-    sget-boolean v10, Lcom/android/bluetooth/pan/PanService;->isLinkLoss:Z
-
-    if-eqz v10, :cond_b
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v11
-
-    const-string/jumbo v12, "com.android.bluetooth"
-
-    const-string/jumbo v13, "BPAR"
-
-    sget-boolean v10, Lcom/android/bluetooth/pan/PanService;->isAutoRecon:Z
-
-    if-eqz v10, :cond_14
-
-    const-string/jumbo v10, "Auto"
-
-    :goto_3
-    invoke-static {v11, v12, v13, v10}, Lcom/android/bluetooth/pan/PanService;->insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_b
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
-
-    if-eqz v10, :cond_c
-
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v10, v0}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->setLastTetheredDevice(Landroid/bluetooth/BluetoothDevice;)V
-
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
-
-    invoke-virtual {v10}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->cancelFindTetherServer()V
-
-    :cond_c
-    :goto_4
-    const/4 v10, 0x1
-
-    move/from16 v0, p4
-
-    if-ne v0, v10, :cond_d
-
-    const/4 v10, 0x2
-
-    move/from16 v0, p3
-
-    if-ne v0, v10, :cond_d
-
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
-
-    if-eqz v10, :cond_d
-
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v10, v0}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->addTetheredDevice(Landroid/bluetooth/BluetoothDevice;)V
-
-    :cond_d
-    const-string/jumbo v10, "PanService"
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "Pan Device state : device: "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string/jumbo v12, " State:"
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string/jumbo v12, "->"
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    move/from16 v0, p3
-
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v10, 0x3
-
-    if-ne v9, v10, :cond_e
-
-    const/4 v10, 0x2
-
-    move/from16 v0, p3
-
-    if-ne v0, v10, :cond_e
-
-    const-string/jumbo v10, "PanService"
-
-    const-string/jumbo v11, "Abnormal state detected. Set STATE_DISCONNECTED by force"
-
-    invoke-static {v10, v11}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    const-string/jumbo v10, "PanService"
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "Pan Device state : device: "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string/jumbo v12, " State:3->0"
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/16 p3, 0x0
-
-    :cond_e
-    const/4 v10, 0x5
-
-    move-object/from16 v0, p1
-
-    move/from16 v1, p3
-
-    invoke-virtual {p0, v0, v10, v1, v9}, Lcom/android/bluetooth/pan/PanService;->notifyProfileConnectionStateChanged(Landroid/bluetooth/BluetoothDevice;III)V
-
-    new-instance v6, Landroid/content/Intent;
-
-    const-string/jumbo v10, "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
-
-    invoke-direct {v6, v10}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    const-string/jumbo v10, "android.bluetooth.device.extra.DEVICE"
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v6, v10, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
-
-    const-string/jumbo v10, "android.bluetooth.profile.extra.PREVIOUS_STATE"
-
-    invoke-virtual {v6, v10, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    const-string/jumbo v10, "android.bluetooth.profile.extra.STATE"
-
-    move/from16 v0, p3
-
-    invoke-virtual {v6, v10, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    const-string/jumbo v10, "android.bluetooth.pan.extra.LOCAL_ROLE"
-
-    move/from16 v0, p4
-
-    invoke-virtual {v6, v10, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    const-string/jumbo v10, "android.permission.BLUETOOTH"
-
-    invoke-virtual {p0, v6, v10}, Lcom/android/bluetooth/pan/PanService;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
-
-    sget-object v10, Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;->KNOX_CONTAINER_VERSION_2_4_0:Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;
-
-    invoke-static {v10}, Lcom/samsung/android/knox/SemPersonaManager;->isKnoxVersionSupported(Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;)Z
-
-    move-result v10
-
-    if-eqz v10, :cond_17
-
-    invoke-static {}, Lcom/android/bluetooth/Utils;->getBtEnabledContainers()Ljava/util/List;
-
-    move-result-object v10
-
-    invoke-interface {v10}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v5
-
-    :goto_5
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v10
-
-    if-eqz v10, :cond_17
-
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/lang/Integer;
-
-    new-instance v10, Landroid/os/UserHandle;
-
-    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
-
-    move-result v11
-
-    invoke-direct {v10, v11}, Landroid/os/UserHandle;-><init>(I)V
-
-    const-string/jumbo v11, "android.permission.BLUETOOTH"
-
-    invoke-virtual {p0, v6, v10, v11}, Lcom/android/bluetooth/pan/PanService;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
-
-    goto :goto_5
-
-    :cond_f
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mNetworkFactory:Lcom/android/bluetooth/pan/BluetoothTetheringNetworkFactory;
-
-    if-eqz v10, :cond_8
-
-    const-string/jumbo v10, "PanService"
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "handlePanDeviceStateChange LOCAL_PANU_ROLE:REMOTE_NAP_ROLE state = "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    move/from16 v0, p3
-
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string/jumbo v12, ", prevState = "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v10, 0x2
-
-    move/from16 v0, p3
-
-    if-ne v0, v10, :cond_11
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v10
-
-    const-string/jumbo v11, "connectivity"
-
-    invoke-virtual {v10, v11}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/net/ConnectivityManager;
-
-    const/4 v10, 0x1
-
-    invoke-virtual {v3, v10}, Landroid/net/ConnectivityManager;->getNetworkInfo(I)Landroid/net/NetworkInfo;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Landroid/net/NetworkInfo;->isConnected()Z
-
-    move-result v10
-
-    if-eqz v10, :cond_10
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-static/range {p1 .. p1}, Lcom/android/bluetooth/Utils;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
 
-    move-result-object v10
+    move-result-object v13
 
-    invoke-direct {p0, v10}, Lcom/android/bluetooth/pan/PanService;->disconnectPanNative([B)Z
+    move-object/from16 v0, p0
 
-    return-void
+    invoke-direct {v0, v13}, Lcom/android/bluetooth/pan/PanService;->disconnectPanNative([B)Z
+
+    :cond_6
+    const-string/jumbo v13, "PanService"
+
+    const-string/jumbo v14, "handlePanDeviceStateChange LOCAL_NAP_ROLE:REMOTE_PANU_ROLE"
+
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mNapIfaceAddr:Ljava/lang/String;
+
+    if-nez v13, :cond_7
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    invoke-direct {v0, v1}, Lcom/android/bluetooth/pan/PanService;->startTethering(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v13
+
+    move-object/from16 v0, p0
+
+    iput-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mNapIfaceAddr:Ljava/lang/String;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mNapIfaceAddr:Ljava/lang/String;
+
+    if-nez v13, :cond_7
+
+    const-string/jumbo v13, "PanService"
+
+    const-string/jumbo v14, "Error seting up tether interface"
+
+    invoke-static {v13, v14}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-static/range {p1 .. p1}, Lcom/android/bluetooth/Utils;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
+
+    move-result-object v13
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v13}, Lcom/android/bluetooth/pan/PanService;->disconnectPanNative([B)Z
+
+    move-object/from16 v0, p0
+
+    iget-boolean v13, v0, Lcom/android/bluetooth/pan/PanService;->isConnectFromNAP:Z
+
+    if-eqz v13, :cond_7
+
+    new-instance v5, Landroid/view/ContextThemeWrapper;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v13
+
+    const v14, 0x7f0c0004
+
+    invoke-direct {v5, v13, v14}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v13
+
+    const/4 v14, 0x1
+
+    new-array v14, v14, [Ljava/lang/Object;
+
+    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAliasName()Ljava/lang/String;
+
+    move-result-object v15
+
+    const/16 v16, 0x0
+
+    aput-object v15, v14, v16
+
+    const v15, 0x7f0a0086
+
+    invoke-virtual {v13, v15, v14}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v12
+
+    const/4 v13, 0x1
+
+    invoke-static {v5, v12, v13}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Landroid/widget/Toast;->show()V
+
+    :cond_7
+    :goto_1
+    if-nez p3, :cond_8
+
+    const/4 v13, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-boolean v13, v0, Lcom/android/bluetooth/pan/PanService;->isConnectFromPANU:Z
+
+    const/4 v13, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-boolean v13, v0, Lcom/android/bluetooth/pan/PanService;->isConnectFromNAP:Z
+
+    :cond_8
+    const/4 v13, 0x2
+
+    move/from16 v0, p4
+
+    if-ne v0, v13, :cond_b
+
+    if-eqz p1, :cond_15
+
+    const/4 v13, 0x2
+
+    move/from16 v0, p3
+
+    if-ne v0, v13, :cond_15
+
+    const/4 v13, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-boolean v13, v0, Lcom/android/bluetooth/pan/PanService;->isConnecting:Z
+
+    move-object/from16 v0, p0
+
+    iget-boolean v13, v0, Lcom/android/bluetooth/pan/PanService;->isConnectFromPANU:Z
+
+    if-nez v13, :cond_9
+
+    const-string/jumbo v13, "PanService"
+
+    const-string/jumbo v14, "Bluetooth Tethering is connected"
+
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v13
+
+    const-string/jumbo v14, "connectivity"
+
+    invoke-virtual {v13, v14}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/net/ConnectivityManager;
+
+    const/4 v13, 0x1
+
+    invoke-virtual {v4, v13}, Landroid/net/ConnectivityManager;->getNetworkInfo(I)Landroid/net/NetworkInfo;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Landroid/net/NetworkInfo;->isConnected()Z
+
+    move-result v13
+
+    if-nez v13, :cond_9
+
+    new-instance v5, Landroid/view/ContextThemeWrapper;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v13
+
+    const v14, 0x7f0c0004
+
+    invoke-direct {v5, v13, v14}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v13
+
+    const/4 v14, 0x1
+
+    new-array v14, v14, [Ljava/lang/Object;
+
+    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAliasName()Ljava/lang/String;
+
+    move-result-object v15
+
+    const/16 v16, 0x0
+
+    aput-object v15, v14, v16
+
+    const v15, 0x7f0a0085
+
+    invoke-virtual {v13, v15, v14}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v12
+
+    const/4 v13, 0x1
+
+    invoke-static {v5, v12, v13}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Landroid/widget/Toast;->show()V
+
+    :cond_9
+    sget-boolean v13, Lcom/android/bluetooth/pan/PanService;->DBG:Z
+
+    if-eqz v13, :cond_13
+
+    const-string/jumbo v13, "PanService"
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v15, "PAN connected from PANU to NAP device["
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string/jumbo v15, "]"
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_2
+    sget-boolean v13, Lcom/android/bluetooth/pan/PanService;->isLinkLoss:Z
+
+    if-eqz v13, :cond_a
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v14
+
+    const-string/jumbo v15, "com.android.bluetooth"
+
+    const-string/jumbo v16, "BPAR"
+
+    sget-boolean v13, Lcom/android/bluetooth/pan/PanService;->isAutoRecon:Z
+
+    if-eqz v13, :cond_14
+
+    const-string/jumbo v13, "Auto"
+
+    :goto_3
+    move-object/from16 v0, v16
+
+    invoke-static {v14, v15, v0, v13}, Lcom/android/bluetooth/pan/PanService;->insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_a
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    if-eqz v13, :cond_b
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v13, v0}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->setLastTetheredDevice(Landroid/bluetooth/BluetoothDevice;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    invoke-virtual {v13}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->cancelFindTetherServer()V
+
+    :cond_b
+    :goto_4
+    const/4 v13, 0x1
+
+    move/from16 v0, p4
+
+    if-ne v0, v13, :cond_c
+
+    const/4 v13, 0x2
+
+    move/from16 v0, p3
+
+    if-ne v0, v13, :cond_c
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    if-eqz v13, :cond_c
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v13, v0}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->addTetheredDevice(Landroid/bluetooth/BluetoothDevice;)V
+
+    :cond_c
+    const-string/jumbo v13, "PanService"
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v15, "Pan Device state : device: "
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string/jumbo v15, " State:"
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string/jumbo v15, "->"
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    move/from16 v0, p3
+
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v13, 0x3
+
+    if-ne v11, v13, :cond_d
+
+    const/4 v13, 0x2
+
+    move/from16 v0, p3
+
+    if-ne v0, v13, :cond_d
+
+    const-string/jumbo v13, "PanService"
+
+    const-string/jumbo v14, "Abnormal state detected. Set STATE_DISCONNECTED by force"
+
+    invoke-static {v13, v14}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string/jumbo v13, "PanService"
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v15, "Pan Device state : device: "
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string/jumbo v15, " State:3->0"
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/16 p3, 0x0
+
+    :cond_d
+    const/4 v13, 0x5
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p1
+
+    move/from16 v2, p3
+
+    invoke-virtual {v0, v1, v13, v2, v11}, Lcom/android/bluetooth/pan/PanService;->notifyProfileConnectionStateChanged(Landroid/bluetooth/BluetoothDevice;III)V
+
+    new-instance v8, Landroid/content/Intent;
+
+    const-string/jumbo v13, "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+
+    invoke-direct {v8, v13}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string/jumbo v13, "android.bluetooth.device.extra.DEVICE"
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v8, v13, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    const-string/jumbo v13, "android.bluetooth.profile.extra.PREVIOUS_STATE"
+
+    invoke-virtual {v8, v13, v11}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    const-string/jumbo v13, "android.bluetooth.profile.extra.STATE"
+
+    move/from16 v0, p3
+
+    invoke-virtual {v8, v13, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    const-string/jumbo v13, "android.bluetooth.pan.extra.LOCAL_ROLE"
+
+    move/from16 v0, p4
+
+    invoke-virtual {v8, v13, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    const-string/jumbo v13, "android.permission.BLUETOOTH"
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v8, v13}, Lcom/android/bluetooth/pan/PanService;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
+
+    sget-object v13, Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;->KNOX_CONTAINER_VERSION_2_4_0:Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;
+
+    invoke-static {v13}, Lcom/samsung/android/knox/SemPersonaManager;->isKnoxVersionSupported(Lcom/samsung/android/knox/SemPersonaManager$KnoxContainerVersion;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_17
+
+    invoke-static {}, Lcom/android/bluetooth/Utils;->getBtEnabledContainers()Ljava/util/List;
+
+    move-result-object v13
+
+    invoke-interface {v13}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v7
+
+    :goto_5
+    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v13
+
+    if-eqz v13, :cond_17
+
+    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/lang/Integer;
+
+    new-instance v13, Landroid/os/UserHandle;
+
+    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
+
+    move-result v14
+
+    invoke-direct {v13, v14}, Landroid/os/UserHandle;-><init>(I)V
+
+    const-string/jumbo v14, "android.permission.BLUETOOTH"
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v8, v13, v14}, Lcom/android/bluetooth/pan/PanService;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
+
+    goto :goto_5
+
+    :cond_e
+    if-nez p3, :cond_7
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v13, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string/jumbo v13, "PanService"
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v15, "remote(PANU) is disconnected, Remaining connected PANU devices: "
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
+
+    invoke-virtual {v15}, Ljava/util/HashMap;->size()I
+
+    move-result v15
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v13, v14}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mNapIfaceAddr:Ljava/lang/String;
+
+    if-eqz v13, :cond_7
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
+
+    invoke-virtual {v13}, Ljava/util/HashMap;->size()I
+
+    move-result v13
+
+    if-nez v13, :cond_7
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    invoke-direct {v0, v1}, Lcom/android/bluetooth/pan/PanService;->stopTethering(Ljava/lang/String;)Ljava/lang/String;
+
+    const/4 v13, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mNapIfaceAddr:Ljava/lang/String;
+
+    goto/16 :goto_1
+
+    :cond_f
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mNetworkFactory:Lcom/android/bluetooth/pan/BluetoothTetheringNetworkFactory;
+
+    if-eqz v13, :cond_7
+
+    const-string/jumbo v13, "PanService"
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v15, "handlePanDeviceStateChange LOCAL_PANU_ROLE:REMOTE_NAP_ROLE state = "
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    move/from16 v0, p3
+
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string/jumbo v15, ", prevState = "
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v13, 0x2
+
+    move/from16 v0, p3
+
+    if-ne v0, v13, :cond_11
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/pan/PanService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v13
+
+    const-string/jumbo v14, "connectivity"
+
+    invoke-virtual {v13, v14}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/net/ConnectivityManager;
+
+    const/4 v13, 0x1
+
+    invoke-virtual {v4, v13}, Landroid/net/ConnectivityManager;->getNetworkInfo(I)Landroid/net/NetworkInfo;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Landroid/net/NetworkInfo;->isConnected()Z
+
+    move-result v13
+
+    if-eqz v13, :cond_10
+
+    invoke-static/range {p1 .. p1}, Lcom/android/bluetooth/Utils;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
+
+    move-result-object v13
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v13}, Lcom/android/bluetooth/pan/PanService;->disconnectPanNative([B)Z
+
+    goto/16 :goto_1
 
     :cond_10
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mNetworkFactory:Lcom/android/bluetooth/pan/BluetoothTetheringNetworkFactory;
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mNetworkFactory:Lcom/android/bluetooth/pan/BluetoothTetheringNetworkFactory;
 
     move-object/from16 v0, p2
 
-    invoke-virtual {v10, v0}, Lcom/android/bluetooth/pan/BluetoothTetheringNetworkFactory;->startReverseTether(Ljava/lang/String;)V
+    invoke-virtual {v13, v0}, Lcom/android/bluetooth/pan/BluetoothTetheringNetworkFactory;->startReverseTether(Ljava/lang/String;)V
 
-    const/4 v10, 0x0
+    const/4 v13, 0x0
 
-    invoke-virtual {p0, v10}, Lcom/android/bluetooth/pan/PanService;->setBluetoothTethering(Z)V
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v13}, Lcom/android/bluetooth/pan/PanService;->setBluetoothTethering(Z)V
 
     goto/16 :goto_1
 
     :cond_11
-    if-nez p3, :cond_8
+    if-nez p3, :cond_7
 
-    const/4 v10, 0x2
+    const/4 v13, 0x2
 
-    if-eq v9, v10, :cond_12
+    if-eq v11, v13, :cond_12
 
-    const/4 v10, 0x3
+    const/4 v13, 0x3
 
-    if-ne v9, v10, :cond_8
+    if-ne v11, v13, :cond_7
 
     :cond_12
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mNetworkFactory:Lcom/android/bluetooth/pan/BluetoothTetheringNetworkFactory;
+    move-object/from16 v0, p0
 
-    invoke-virtual {v10}, Lcom/android/bluetooth/pan/BluetoothTetheringNetworkFactory;->stopReverseTether()V
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mNetworkFactory:Lcom/android/bluetooth/pan/BluetoothTetheringNetworkFactory;
 
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
+    invoke-virtual {v13}, Lcom/android/bluetooth/pan/BluetoothTetheringNetworkFactory;->stopReverseTether()V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mPanDevices:Ljava/util/HashMap;
 
     move-object/from16 v0, p1
 
-    invoke-virtual {v10, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v13, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_1
 
     :cond_13
-    const-string/jumbo v10, "PanService"
+    const-string/jumbo v13, "PanService"
 
-    const-string/jumbo v11, "PAN connected"
+    const-string/jumbo v14, "PAN connected"
 
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_2
 
     :cond_14
-    const-string/jumbo v10, "Manual"
+    const-string/jumbo v13, "Manual"
 
     goto/16 :goto_3
 
     :cond_15
-    if-nez p3, :cond_c
+    if-nez p3, :cond_b
 
-    const/4 v10, 0x3
+    const/4 v13, 0x0
 
-    if-ne v9, v10, :cond_16
+    move-object/from16 v0, p0
 
-    const-string/jumbo v10, "PanService"
+    iput-boolean v13, v0, Lcom/android/bluetooth/pan/PanService;->isConnecting:Z
 
-    const-string/jumbo v11, "PAN disconnected by USER"
+    const/4 v13, 0x3
 
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    if-ne v11, v13, :cond_16
 
-    const/4 v10, 0x0
+    const-string/jumbo v13, "PanService"
 
-    sput-boolean v10, Lcom/android/bluetooth/pan/PanService;->isLinkLoss:Z
+    const-string/jumbo v14, "PAN disconnected by USER"
 
-    const/4 v10, 0x0
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sput-boolean v10, Lcom/android/bluetooth/pan/PanService;->isAutoRecon:Z
+    const/4 v13, 0x0
 
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    sput-boolean v13, Lcom/android/bluetooth/pan/PanService;->isLinkLoss:Z
 
-    if-eqz v10, :cond_c
+    const/4 v13, 0x0
 
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    sput-boolean v13, Lcom/android/bluetooth/pan/PanService;->isAutoRecon:Z
 
-    invoke-virtual {v10}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->clearLastTetheredDevice()V
+    move-object/from16 v0, p0
 
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
-    invoke-virtual {v10}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->cancelFindTetherServer()V
+    if-eqz v13, :cond_b
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    invoke-virtual {v13}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->clearLastTetheredDevice()V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    invoke-virtual {v13}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->cancelFindTetherServer()V
 
     goto/16 :goto_4
 
     :cond_16
-    const/4 v10, 0x1
+    const/4 v13, 0x1
 
-    if-ne v9, v10, :cond_c
+    if-ne v11, v13, :cond_b
 
-    const-string/jumbo v10, "PanService"
+    move-object/from16 v0, p0
 
-    const-string/jumbo v11, "PAN connection canceled"
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    if-eqz v13, :cond_b
 
-    const/4 v10, 0x0
+    if-eqz p1, :cond_b
 
-    sput-boolean v10, Lcom/android/bluetooth/pan/PanService;->isLinkLoss:Z
+    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getBondState()I
 
-    const/4 v10, 0x0
+    move-result v13
 
-    sput-boolean v10, Lcom/android/bluetooth/pan/PanService;->isAutoRecon:Z
+    const/16 v14, 0xc
 
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    if-eq v13, v14, :cond_b
 
-    if-eqz v10, :cond_c
+    const-string/jumbo v13, "PanService"
 
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    const-string/jumbo v14, "PAN device is not BOND_BONDED"
 
-    invoke-virtual {v10}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->clearLastTetheredDevice()V
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v10, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+    const/4 v13, 0x0
 
-    invoke-virtual {v10}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->cancelFindTetherServer()V
+    sput-boolean v13, Lcom/android/bluetooth/pan/PanService;->isLinkLoss:Z
+
+    const/4 v13, 0x0
+
+    sput-boolean v13, Lcom/android/bluetooth/pan/PanService;->isAutoRecon:Z
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    invoke-virtual {v13}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->clearLastTetheredDevice()V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    invoke-virtual {v13}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->cancelFindTetherServer()V
 
     goto/16 :goto_4
 
@@ -3667,6 +4165,8 @@
     check-cast v10, Landroid/app/ActivityManager;
 
     const-string/jumbo v17, ""
+
+    if-eqz v10, :cond_3
 
     invoke-virtual {v10}, Landroid/app/ActivityManager;->getRunningAppProcesses()Ljava/util/List;
 
@@ -4044,6 +4544,26 @@
 
     if-eqz v2, :cond_d
 
+    const/4 v2, 0x0
+
+    sput-boolean v2, Lcom/android/bluetooth/pan/PanService;->isLinkLoss:Z
+
+    const/4 v2, 0x0
+
+    sput-boolean v2, Lcom/android/bluetooth/pan/PanService;->isAutoRecon:Z
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    invoke-virtual {v2}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->clearLastTetheredDevice()V
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
+
+    invoke-virtual {v2}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->cancelFindTetherServer()V
+
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
@@ -4344,6 +4864,8 @@
     iget-object v0, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     invoke-virtual {v0}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->stop()V
+
+    iput-object v1, p0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
 
     :cond_2
     const/4 v0, 0x1

@@ -616,7 +616,7 @@
 
     move-result v19
 
-    if-eqz v19, :cond_18
+    if-eqz v19, :cond_19
 
     sget-boolean v19, Lcom/android/bluetooth/map/BluetoothMapService;->DEBUG:Z
 
@@ -857,7 +857,7 @@
 
     move-result v19
 
-    if-eqz v19, :cond_16
+    if-eqz v19, :cond_17
 
     :cond_14
     :goto_1
@@ -867,7 +867,7 @@
 
     move/from16 v1, v19
 
-    if-eq v0, v1, :cond_17
+    if-eq v0, v1, :cond_18
 
     move-object/from16 v0, p0
 
@@ -881,7 +881,7 @@
 
     move-object/from16 v19, v0
 
-    if-eqz v19, :cond_17
+    if-eqz v19, :cond_18
 
     move-object/from16 v0, p0
 
@@ -925,7 +925,25 @@
     move-result v4
 
     :goto_2
-    if-ge v8, v4, :cond_17
+    if-ge v8, v4, :cond_18
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/bluetooth/map/BluetoothMapService$MapBroadcastReceiver;->this$0:Lcom/android/bluetooth/map/BluetoothMapService;
+
+    move-object/from16 v19, v0
+
+    invoke-static/range {v19 .. v19}, Lcom/android/bluetooth/map/BluetoothMapService;->-get4(Lcom/android/bluetooth/map/BluetoothMapService;)Landroid/util/SparseArray;
+
+    move-result-object v19
+
+    move-object/from16 v0, v19
+
+    invoke-virtual {v0, v8}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v19
+
+    if-eqz v19, :cond_16
 
     move-object/from16 v0, p0
 
@@ -949,11 +967,46 @@
 
     invoke-virtual {v0, v10}, Lcom/android/bluetooth/map/BluetoothMapMasInstance;->setRemoteFeatureMask(I)V
 
+    sget-boolean v19, Lcom/android/bluetooth/map/BluetoothMapService;->VERBOSE:Z
+
+    if-eqz v19, :cond_16
+
+    const-string/jumbo v19, "BluetoothMapService"
+
+    new-instance v20, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v21, "mMasInstances.valueAt("
+
+    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v20
+
+    move-object/from16 v0, v20
+
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v20
+
+    const-string/jumbo v21, ").setRemoteFeatureMask()"
+
+    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v20
+
+    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v20
+
+    invoke-static/range {v19 .. v20}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_16
     add-int/lit8 v8, v8, 0x1
 
     goto :goto_2
 
-    :cond_16
+    :cond_17
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/bluetooth/map/BluetoothMapService$MapBroadcastReceiver;->this$0:Lcom/android/bluetooth/map/BluetoothMapService;
@@ -978,9 +1031,9 @@
 
     invoke-virtual/range {v19 .. v20}, Lcom/android/bluetooth/map/BluetoothMnsObexClient;->setMnsRecord(Landroid/bluetooth/SdpMnsRecord;)V
 
-    goto :goto_1
+    goto/16 :goto_1
 
-    :cond_17
+    :cond_18
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/bluetooth/map/BluetoothMapService$MapBroadcastReceiver;->this$0:Lcom/android/bluetooth/map/BluetoothMapService;
@@ -1015,7 +1068,7 @@
 
     goto/16 :goto_0
 
-    :cond_18
+    :cond_19
     const-string/jumbo v19, "android.btmap.intent.action.SHOW_MAPS_SETTINGS"
 
     move-object/from16 v0, v19
@@ -1024,11 +1077,11 @@
 
     move-result v19
 
-    if-eqz v19, :cond_1a
+    if-eqz v19, :cond_1b
 
     sget-boolean v19, Lcom/android/bluetooth/map/BluetoothMapService;->VERBOSE:Z
 
-    if-eqz v19, :cond_19
+    if-eqz v19, :cond_1a
 
     const-string/jumbo v19, "BluetoothMapService"
 
@@ -1036,7 +1089,7 @@
 
     invoke-static/range {v19 .. v20}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_19
+    :cond_1a
     new-instance v9, Landroid/content/Intent;
 
     const-class v19, Lcom/android/bluetooth/map/BluetoothMapSettings;
@@ -1059,7 +1112,7 @@
 
     goto/16 :goto_0
 
-    :cond_1a
+    :cond_1b
     const-string/jumbo v19, "com.android.bluetooth.BluetoothMapContentObserver.action.MESSAGE_SENT"
 
     move-object/from16 v0, v19
@@ -1068,7 +1121,7 @@
 
     move-result v19
 
-    if-eqz v19, :cond_1c
+    if-eqz v19, :cond_1d
 
     const/4 v11, 0x0
 
@@ -1088,7 +1141,7 @@
 
     move-result v19
 
-    if-eqz v19, :cond_1b
+    if-eqz v19, :cond_1c
 
     move-object/from16 v0, p0
 
@@ -1100,7 +1153,7 @@
 
     move-result-object v19
 
-    if-eqz v19, :cond_1b
+    if-eqz v19, :cond_1c
 
     move-object/from16 v0, p0
 
@@ -1120,7 +1173,7 @@
 
     check-cast v11, Lcom/android/bluetooth/map/BluetoothMapMasInstance;
 
-    if-eqz v11, :cond_1b
+    if-eqz v11, :cond_1c
 
     const-string/jumbo v19, "result"
 
@@ -1138,11 +1191,11 @@
 
     move-result v19
 
-    if-eqz v19, :cond_1b
+    if-eqz v19, :cond_1c
 
     const/4 v7, 0x1
 
-    :cond_1b
+    :cond_1c
     if-nez v7, :cond_3
 
     :try_start_0
@@ -1161,7 +1214,7 @@
 
     return-void
 
-    :cond_1c
+    :cond_1d
     const-string/jumbo v19, "android.bluetooth.device.action.ACL_DISCONNECTED"
 
     move-object/from16 v0, v19
@@ -1200,11 +1253,11 @@
 
     move-result-object v19
 
-    if-eqz v19, :cond_1d
+    if-eqz v19, :cond_1e
 
-    if-nez v5, :cond_1e
+    if-nez v5, :cond_1f
 
-    :cond_1d
+    :cond_1e
     const-string/jumbo v19, "BluetoothMapService"
 
     const-string/jumbo v20, "Unexpected error!"
@@ -1213,10 +1266,10 @@
 
     return-void
 
-    :cond_1e
+    :cond_1f
     sget-boolean v19, Lcom/android/bluetooth/map/BluetoothMapService;->VERBOSE:Z
 
-    if-eqz v19, :cond_1f
+    if-eqz v19, :cond_20
 
     const-string/jumbo v19, "BluetoothMapService"
 
@@ -1244,7 +1297,7 @@
 
     invoke-static/range {v19 .. v20}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_1f
+    :cond_20
     invoke-static {}, Lcom/android/bluetooth/map/BluetoothMapService;->-get5()Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v19

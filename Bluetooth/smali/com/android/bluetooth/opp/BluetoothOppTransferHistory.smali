@@ -376,7 +376,7 @@
 
     invoke-virtual {p0, v0}, Lcom/android/bluetooth/opp/BluetoothOppTransferHistory;->startActivity(Landroid/content/Intent;)V
 
-    const v2, 0x7f0a0073
+    const v2, 0x7f0a007a
 
     const/4 v3, 0x0
 
@@ -450,7 +450,7 @@
 
     const-string/jumbo v1, "content"
 
-    const v2, 0x7f0a006e
+    const v2, 0x7f0a0075
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -898,7 +898,7 @@
 
     if-nez v1, :cond_5
 
-    const v1, 0x7f0a006c
+    const v1, 0x7f0a0073
 
     invoke-virtual {p0, v1}, Lcom/android/bluetooth/opp/BluetoothOppTransferHistory;->getText(I)Ljava/lang/CharSequence;
 
@@ -1223,7 +1223,7 @@
 
     invoke-virtual {v11, v1, v2}, Landroid/app/ActionBar;->setDisplayOptions(II)V
 
-    const v1, 0x7f0a0068
+    const v1, 0x7f0a006f
 
     invoke-virtual {v11, v1}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -1241,7 +1241,7 @@
     goto/16 :goto_2
 
     :cond_6
-    const v1, 0x7f0a006b
+    const v1, 0x7f0a0072
 
     invoke-virtual {p0, v1}, Lcom/android/bluetooth/opp/BluetoothOppTransferHistory;->getText(I)Ljava/lang/CharSequence;
 
@@ -1479,7 +1479,7 @@
 
     iget-object v1, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferHistory;->mClearlistMenu:Landroid/view/MenuItem;
 
-    const v2, 0x7f0a0077
+    const v2, 0x7f0a007e
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setTitle(I)Landroid/view/MenuItem;
 
