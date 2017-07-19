@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s खोल्न सक्षम भएन। “सेटिङहरू” ट्याप गर्नुहोस्, एप जानकारी > अनुमतिहरूमा जानुहोस्, त्यसपछि तलका अनुमतिहरूलाई अनुमति दिनुहोस् र फेरि प्रयास गर्नुहोस्:</string>
+    <string name="all_sim">सबै</string>
+    <string name="app_name">वालपेपरहरू</string>
+    <string name="apply">लागू गर्नुहोस्</string>
+    <string name="can_not_set_wallpaper_image_not_found">छविलाई वालपेपरको रूपमा सेट गर्न सकिँदैन। छवि फेला परेन।</string>
+    <string name="cancel">रद्द</string>
+    <string name="cancle">रद्द</string>
+    <string name="change_wallpaper_when_infinity_applied">तपाईले यो वालपेपर प्रयोग गर्नुभयो भने अनन्तताका प्रभावहरू अफ हुनेछन्।</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">भयो</string>
+    <string name="duplicate_image">नकल</string>
+    <string name="expand_image">विस्तार</string>
+    <string name="fail_to_load">छवि लोड गर्न सकिएन।</string>
+    <string name="home_lock_screen">गृह र लक स्क्रीनहरू</string>
+    <string name="home_screen">होम स्क्रीन</string>
+    <string name="homescreen_checkbox_motion_effect">चाल प्रभाव</string>
+    <string name="image_too_small">तस्वीर निकै सानो छ।</string>
+    <string name="item_restricted">वस्तु सीमित भयो</string>
+    <string name="left_image">बायाँ</string>
+    <string name="lock_screen">लक स्क्रीन</string>
+    <string name="motion_effect">वालपेपर चाल प्रभाव</string>
+    <string name="notice_low_storage">पर्याप्त ठाउँ छैन। डाउनलोड गरिएका सफ्टवेयरहरू, तस्वीरहरू, भिडियोहरू, र कागजातहरू जस्ता अनावश्यक वस्तुहरू मेट्नुहोस्।</string>
+    <string name="permission_description">%s प्रयोग गर्न, “सेटिङहरू” ट्याप गर्नुहोस्, अनुप्रयोग जानकारी > अनुमतिहरूमा जानुहोस्, त्यसपछि निम्न अनुमतिहरूलाई अनुमति दिनुहोस्:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">भण्डारण</string>
+    <string name="processing">प्रक्रिया चलाइरहेको…</string>
+    <string name="request_permission_rationale">%1$s प्रयोग गर्न असमर्थ। “सेटिङहरू” मा ट्याप गर्नुहोस्, त्यसपछि %2$s अनुमतिलाई अनुमति दिनुहोस् र फेरि प्रयास गर्नुहोस्।</string>
+    <string name="right_image">दायाँ</string>
+    <string name="set_wallpaper_docomo_text_gui">यो छवि तपाईको होम र लक स्क्रिनमा देखाइनेछ।</string>
+    <string name="settings">सेटिङहरु</string>
+    <string name="speak_button">बटन</string>
+    <string name="sview_window">S View विंडो</string>
+    <string name="unable_set_wallpaper_image_deleted">छविलाई वालपेपरको रूपमा सेट गर्न असमर्थ। छवि मेटाइयो।</string>
+    <string name="unable_to_download">डाउनलोड गर्न सकिएन।</string>
+    <string name="wallpaper_applied_home">वालपेपरलाई होम स्क्रीनमा लागू गरियो।</string>
+    <string name="wallpaper_applied_home_and_lock">होम स्क्रीन र लक स्क्रीनमा लागू हुने वालपेपर।</string>
+    <string name="wallpaper_applied_lock">वालपेपरलाई लक स्क्रीनमा लागू गरियो।</string>
+    <string name="wallpaper_applied_multi_lock">%d वालपेपरलाई लक स्क्रीनमा लागू गरियो।</string>
+    <string name="wallpaper_applied_sview">S View विंडोमा वालपेपर लागू गरियो।</string>
+    <string name="wallpaper_crop_button_done">भयो</string>
+    <string name="wallpaper_instructions">वालपेपरको रूपमा सेट गर्नुहोस्</string>
+</resources>

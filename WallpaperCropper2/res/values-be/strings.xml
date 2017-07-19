@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Немагчыма адкрыць %s. Націсніце «НАЛАДЫ», перайдзіце да Інфармацыі аб праграме > Дазволы, затым дайце наступныя дазволы і паўтарыце спробу:</string>
+    <string name="all_sim">Усе</string>
+    <string name="app_name">Шпалеры</string>
+    <string name="cancel">Скасаваць</string>
+    <string name="cancle">Адмяніць</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Гатова</string>
+    <string name="duplicate_image">Duplicate</string>
+    <string name="expand_image">Разгарнуць</string>
+    <string name="fail_to_load">Немагчыма загрузіць фота.</string>
+    <string name="home_lock_screen">Галоўны экран і экраны блакіроўкі</string>
+    <string name="home_screen">Галоўны экран</string>
+    <string name="image_too_small">Відарыс замалы.</string>
+    <string name="left_image">Левае</string>
+    <string name="lock_screen">Экран блакіроўкі</string>
+    <string name="motion_effect">Эфект руху шпалер</string>
+    <string name="notice_low_storage">Мала прасторы. Выдаліце такія непатрэбныя элементы, як спампаванае праграмнае забеспячэнне, відарысы, відэа і дакументы.</string>
+    <string name="permission_description">Каб выкарыстоўваць %s, націсніце «НАЛАДЫ», перайдзіце да Інфармацыі аб праграме > Дазволы, затым дайце наступныя дазволы:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Сховішча</string>
+    <string name="processing">Ідзе апрацоўка…</string>
+    <string name="request_permission_rationale">Немагчыма выкарыстаць %1$s. Націсніце «НАЛАДЫ», затым дайце дазвол %2$s і паўтарыце спробу.</string>
+    <string name="right_image">Правае</string>
+    <string name="settings">Налады</string>
+    <string name="speak_button">Кнопка</string>
+    <string name="sview_window">Акно S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Немагчыма задаць відарыс у якасці шпалер. Відарыс выдалены.</string>
+    <string name="wallpaper_applied_home">Шпалеры прыменены да галоўнага экрана.</string>
+    <string name="wallpaper_applied_home_and_lock">Шпалеры, прымененыя да галоўнага экрана і экрана блакіроўкі.</string>
+    <string name="wallpaper_applied_lock">Шпалеры прыменены да экрана блакіроўкі.</string>
+    <string name="wallpaper_applied_sview">Шпалеры прыменены да акна S View.</string>
+    <string name="wallpaper_crop_button_done">Гат.</string>
+    <string name="wallpaper_instructions">Зрабіць шпалерамі</string>
+</resources>

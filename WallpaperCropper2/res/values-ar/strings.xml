@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">يتعذر فتح %s. انقر فوق ”الضبط“، وانتقل إلى معلومات التطبيق > الأذونات ثم اسمح بالأذونات التالية وحاول مرة أخرى:</string>
+    <string name="all_sim">الكل</string>
+    <string name="app_name">خلفيات الشاشة</string>
+    <string name="apply">تطبيق</string>
+    <string name="can_not_set_wallpaper_image_not_found">يتعذر ضبط الصورة كخلفية. لم يتم العثور على الصورة.</string>
+    <string name="cancel">إلغاء</string>
+    <string name="cancle">إلغاء</string>
+    <string name="change_wallpaper_when_infinity_applied">سيتم إيقاف تشغيل التأثيرات اللامتناهية إذا استخدمت هذه الخلفية.</string>
+    <string name="date_format">‏E، d MMMM</string>
+    <string name="done">تم</string>
+    <string name="duplicate_image">نسخة مطابقة</string>
+    <string name="expand_image">توسيع</string>
+    <string name="fail_to_load">يتعذر تحميل الصورة.</string>
+    <string name="home_lock_screen">شاشتا القفل والرئيسية</string>
+    <string name="home_screen">الشاشة الرئيسية</string>
+    <string name="homescreen_checkbox_motion_effect">تأثير الحركة</string>
+    <string name="image_too_small">الصورة صغير جدا.</string>
+    <string name="item_restricted">تم تقييد العنوان</string>
+    <string name="left_image">يسار</string>
+    <string name="lock_screen">شاشة القفل</string>
+    <string name="motion_effect">تأثير حركة الخلفية</string>
+    <string name="motion_wallpaper_name">خلفية حركة</string>
+    <string name="notice_low_storage">‏‫لا توجد مساحة كافية‬. احذف العناصر‬ غير الهامة، مثل البرامج والصور ومقاطع الفيديو والمستندات التي تم تنزيلها.</string>
+    <string name="permission_description">لاستخدام %s، انقر فوق ”الضبط“، وانتقل إلى معلومات التطبيق > الأذونات، ثم اسمح بالأذونات التالية:</string>
+    <string name="permission_name_read_sms">رسالة قصيرة</string>
+    <string name="permission_name_storage">مكان التخزين</string>
+    <string name="processing">جاري المعالجة…</string>
+    <string name="request_permission_rationale">يتعذر استخدام %1$s. انقر فوق ”الضبط“، ثم اسمح بإذن %2$s وحاول مرة أخرى.</string>
+    <string name="right_image">يمين</string>
+    <string name="set_wallpaper_docomo_text_gui">سيتم عرض هذه الصورة على شاشتك الرئيسية وشاشة القفل لديك.</string>
+    <string name="settings">الضبط</string>
+    <string name="speak_button">الزر</string>
+    <string name="sview_window">إطار S الشفاف</string>
+    <string name="unable_set_wallpaper_image_deleted">يتعذر ضبط الصورة كخلفية. تم حذف الصورة.</string>
+    <string name="unable_to_download">يتعذر التنزيل.</string>
+    <string name="wallpaper_applied_home">تم تطبيق الخلفية على الشاشة الرئيسية.</string>
+    <string name="wallpaper_applied_home_and_lock">تم تطبيق الخلفية على الشاشة الرئيسية وشاشة القفل.</string>
+    <string name="wallpaper_applied_lock">تم تطبيق الخلفية على شاشة القفل.</string>
+    <string name="wallpaper_applied_multi_lock">تم تطبيق %d من الخلفيات على شاشة القفل.</string>
+    <string name="wallpaper_applied_sview">تم تطبيق الخلفية على إطار S الشفاف.</string>
+    <string name="wallpaper_crop_button_done">تمت</string>
+    <string name="wallpaper_instructions">ضبط كخلفية</string>
+    <string name="wallpaper_lock_gui_cinematic">سيتغير مظهر شاشة القفل عندما تقوم بإمالة جهازك لليسار ولليمين.</string>
+</resources>

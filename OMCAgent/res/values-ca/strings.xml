@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">"%1$s necessita que s'actualitzi l'aplicació Android Wear."</string>
+    <string name="common_android_wear_update_text">"%1$s no s'executarà fins que no actualitzis l'aplicació Android Wear."</string>
+    <string name="common_android_wear_update_title">Actualitza Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">"%1$s necessita un o més serveis de Google Play que actualment no estan disponibles. Posa't en contacte amb el desenvolupador per obtenir ajuda."</string>
+    <string name="common_google_play_services_enable_button">Activa els serveis de Google Play</string>
+    <string name="common_google_play_services_enable_text">%1$s no funcionarà si no actives els serveis de Google Play.</string>
+    <string name="common_google_play_services_enable_title">Activa els serveis de Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Sol·licitada per %1$s</string>
+    <string name="common_google_play_services_install_button">Baixa els serveis de Google Play</string>
+    <string name="common_google_play_services_install_text_phone">"%1$s no s'executarà si el telèfon no té instal·lats els serveis de Google Play."</string>
+    <string name="common_google_play_services_install_text_tablet">"%1$s no s'executarà si la tauleta no té instal·lats els serveis de Google Play."</string>
+    <string name="common_google_play_services_install_title">Baixa els serveis de Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">El compte especificat no existeix en aquest dispositiu. Tria un compte diferent.</string>
+    <string name="common_google_play_services_invalid_account_title">Compte no vàlid</string>
+    <string name="common_google_play_services_needs_enabling_title">"Una aplicació requereix que s'activin els serveis de Google Play."</string>
+    <string name="common_google_play_services_network_error_text">Es requereix una connexió de dades per connectar amb els serveis de Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Error de xarxa</string>
+    <string name="common_google_play_services_notification_needs_update_title">"Una aplicació requereix que s'actualitzin els serveis de Google Play."</string>
+    <string name="common_google_play_services_notification_ticker">Error dels serveis de Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">"S'ha produït un error en iniciar la sessió al compte especificat. Selecciona un altre compte."</string>
+    <string name="common_google_play_services_sign_in_failed_title">"S'ha produït un error en iniciar sessió."</string>
+    <string name="common_google_play_services_unknown_issue">Error desconegut relacionat amb els serveis de Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s depèn dels serveis de Google Play, que no són compatibles amb el teu dispositiu. Posa't en contacte amb el fabricant per obtenir ajuda."</string>
+    <string name="common_google_play_services_unsupported_title">Serveis de Google Play</string>
+    <string name="common_google_play_services_update_button">Actualitza</string>
+    <string name="common_google_play_services_update_text">"%1$s no s'executarà si no actualitzes els serveis de Google Play."</string>
+    <string name="common_google_play_services_update_title">Actualitza els serveis de Google Play</string>
+    <string name="common_google_play_services_updating_text">"%1$s no s'executarà sense els serveis de Google Play, que s'estan actualitzant en aquest moment."</string>
+    <string name="common_google_play_services_updating_title">Actualitzant els serveis de Google Play</string>
+    <string name="common_open_on_phone">Obre al telèfon</string>
+    <string name="common_signin_button_text">Inicia sessió</string>
+    <string name="common_signin_button_text_long">Inicia sessió amb Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Mida del contingut addicional: %1$s %2$s</string>
+    <string name="STR_ALL">Tot</string>
+    <string name="STR_APPS_DESCRIPTION">Seleccioni les aplicacions recomanades pel proveïdor de serveis.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">"S'han descarregat totes les aplicacions seleccionades."</string>
+    <string name="STR_APP_BUTTON_CANCEL">Cancel·lar</string>
+    <string name="STR_APP_BUTTON_OK">Acceptar</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Seleccioni les aplicacions recomanades pel proveïdor de serveis.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Seleccioni les aplicacions que vulgui instal·lar.</string>
+    <string name="STR_APP_INSTALL_TITLE">Instal·lar aplicacions</string>
+    <string name="STR_APP_STATE_CANCELED">Cancel·lat</string>
+    <string name="STR_APP_STATE_CONNECTING">Connectant…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Descarregant…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Descàrrega no disponible</string>
+    <string name="STR_APP_STATE_INSTALLED">Instal·lada</string>
+    <string name="STR_APP_STATE_INSTALLING">Estem instal·lant Samsung Pay. Un moment…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">La instal·lació ha fallat</string>
+    <string name="STR_APP_STATE_WAITING">Esperant…</string>
+    <string name="STR_BTN_INSTALL">Instal·lar</string>
+    <string name="STR_BTN_INSTALL_ALL">Instal·lar tot</string>
+    <string name="STR_BTN_SKIP">Ometre</string>
+    <string name="STR_BUTTON_NEXT">Següent</string>
+    <string name="STR_CAUTION_BODY">"Després de la descàrrega, reiniciï per instal·lar l'actualització. No podrà utilitzar el telèfon, ni tan sols per fer trucades d'emergència, fins que s'hagi acabat la instal·lació."</string>
+    <string name="STR_CAUTION_BODY2">"Després de l'actualització, és possible que alguns ajustaments es restableixin als valors predeterminats."</string>
+    <string name="STR_CHARING_DIALOG">La descàrrega utilitzant dades mòbils pot comportar càrrecs addicionals.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Vol descarregar utilitzant dades mòbils?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Connectant al servidor…</string>
+    <string name="STR_CONNECT_FAIL">Error de connexió. Intenti-ho més tard.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Descarregant actualitzacions…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Descarregant…</string>
+    <string name="STR_DOWNLOAD_FAIL">Descàrrega fallida. Intentar-ho més tard.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Per utilitzar les últimes funcions, descarregui i instal·li aquesta actualització de firmware.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Descàrrega fallida. Intentar-ho més tard.</string>
+    <string name="STR_FAILED_NOTI">Descàrrega no disponible</string>
+    <string name="STR_INITIAL_NOTI">Toqui aquí per seleccionar les aplicacions recomanades per descarregar.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">"Toqui aquí per descarregar i instal·lar l'actualització."</string>
+    <string name="STR_INSTALLED_NOTI">%d instal·lats</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Instal·lar contingut addicional</string>
+    <string name="STR_INSTALL_CAUTIONS">Precaució</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Aquesta actualització inclou algunes apps i contingut addicional. La descàrrega mitjançant xarxes mòbils pot comportar càrrecs addicionals en funció del seu pla de pagament.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Descarregat</string>
+    <string name="STR_INSTALL_FORCE">"S'ha descarregat l'actualització de software crítica. El dispositiu es reiniciarà en %d segons per iniciar la instal·lació."</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Més informació</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">"Cal que estigui connectat al Wi-Fi per descarregar les aplicacions. Connecti's al Wi-Fi i torni-ho a intentar."</string>
+    <string name="STR_NEED_WIFI_TITLE">No hi ha connexió Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Connexió no disponible. Torni-ho a intentar més tard.</string>
+    <string name="STR_NO_APPS">No hi ha aplicacions</string>
+    <string name="STR_NO_CONTENT">Les aplicacions disponibles publicades del proveïdor de serveis es mostraran aquí.</string>
+    <string name="STR_NO_ITEMS">Cap element</string>
+    <string name="STR_NO_ITEM_SELECTED">"No s'ha seleccionat cap element"</string>
+    <string name="STR_OMC_HEADER">Actualització del proveïdor de serveis</string>
+    <string name="STR_OMC_SIZE">Mida: %s</string>
+    <string name="STR_OMC_TITLE">Actualitz configuració</string>
+    <string name="STR_OMC_VERSION">Versió: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">"Ajustaments de l'operador"</string>
+    <string name="STR_PROCESS_FAIL">Error en el processament</string>
+    <string name="STR_PROVIDER_APPS">Aplicacions del proveïdor de serveis</string>
+    <string name="STR_REGISTERING_DEVICE">Registrant el dispositiu…</string>
+    <string name="STR_REGISTER_FAIL">Error en registrar</string>
+    <string name="STR_REGISTER_SUCCESS">Dispositiu registrat</string>
+    <string name="STR_RESTART_BTN_LATER">Després</string>
+    <string name="STR_RESTART_BTN_RESTART">Reiniciar</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">"Per finalitzar la instal·lació de l'actualització de software del proveïdor de serveis, cal que reiniciï el telèfon."</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">"Per finalitzar la instal·lació de l'actualització de software del proveïdor de serveis, cal que reiniciï la tablet."</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Vol reiniciar?</string>
+    <string name="STR_RESTART_PHONE">Reiniciar el telèfon</string>
+    <string name="STR_RESTART_TABLET">Reiniciar la tablet</string>
+    <string name="STR_SELECT_ALL">Totes les aplicacions següents</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Aplicacions essencials</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">"No s'apliquen càrrecs per dades per descarregar les aplicacions següents."</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Toqui un element a continuació per obtenir-ne més informació.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Les aplicacions es descarregaran amb Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Obtingui aplicacions del proveïdor de serveis</string>
+    <string name="STR_UPDATE_BODY1">La descàrrega utilitzant dades mòbils pot comportar càrrecs addicionals.</string>
+    <string name="STR_UPDATE_BODY2">"El telèfon es reiniciarà després d'instal·lar l'actualització."</string>
+    <string name="STR_UPDATE_FAIL">"Error d'actualització. Torni-ho a intentar."</string>
+    <string name="STR_UPDATE_HEADER1">Descarregui i instal·li el software més nou del proveïdor de serveis.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- No se li cobrarà per aquesta instal·lació de firmware.
+
+- Durant la instal·lació, no podrà utilitzar el dispositiu, ni tan sols per fer trucades d'emergència.
+
+- És possible que les icones de la pantalla d'inici i els ajustaments del dispositiu es restableixin als valors predeterminats i que calgui tornar-los a configurar després de la instal·lació.
+
+- L'actualització de firmware no hauria d'afectar els fitxers ni les dades del dispositiu.
+
+- No obstant això, si atura el procés d'instal·lació abans que s'acabi, és possible que el dispositiu no funcioni amb normalitat i, com a resultat, que es perdin els fitxers.
+
+- Per evitar una pèrdua inesperada de dades, recomanem fer una còpia de seguretat de les dades importants abans de la instal·lació."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">"Reiniciï per finalitzar la instal·lació de l'actualització de software del proveïdor de serveis."</string>
+    <string name="STR_UPDATING_PACKAGE">Actualitzant…</string>
+    <string name="STR_USE_DATA_BTN">Utilitzar dades</string>
+    <string name="STR_WAIT_FOR_WIFI">"S'ha posat en pausa la instal·lació de l'aplicació.
+S'està esperant el Wi-Fi per instal·lar aplicacions."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Esperar el Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Instal·li les aplicacions recomanades pel proveïdor de serveis.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Descarregant…</string>
+    <string name="STR_WIDGET_INSTALLED">Instal·lat</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Botó</string>
+    <string name="WSS_STR_NO_UPDATE">"Les darreres actualitzacions ja s'han instal·lat"</string>
+</resources>

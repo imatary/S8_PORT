@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="apply">Прымяніць</string>
+    <string name="can_not_set_wallpaper_image_not_found">Немагчыма задаць відарыс у якасці шпалер. Відарыс не знойдзены.</string>
+    <string name="change_wallpaper_when_infinity_applied">Калі выкарыстаць гэтыя шпалеры, эфекты бясконцасці будуць выключаны.</string>
+    <string name="homescreen_checkbox_motion_effect">Motion effect</string>
+    <string name="item_restricted">Элемент з абмеж-ямі</string>
+    <string name="motion_wallpaper_name">Шпалеры ў руху</string>
+    <string name="set_wallpaper_docomo_text_gui">Гэта выява будзе паказвацца на галоўным экране і экране блакіроўкі.</string>
+    <string name="unable_to_download">Немагчыма спампаваць.</string>
+    <string name="wallpaper_applied_home">Шпалеры прыменены да галоўнага экрана.</string>
+    <string name="wallpaper_applied_home_and_lock">Шпалеры, прымененыя да галоўнага экрана і экрана блакіроўкі.</string>
+    <string name="wallpaper_applied_multi_lock">%d шпалераў прыменена да экрана блакіроўкі.</string>
+    <string name="wallpaper_instructions">Зрабіць шпалерамі</string>
+    <string name="wallpaper_lock_gui_cinematic">Знешні выгляд экрана блакіроўкі будзе змяняцца пры нахіле прылады ўлева і ўправа.</string>
+</resources>

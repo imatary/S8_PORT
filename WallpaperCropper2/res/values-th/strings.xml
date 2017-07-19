@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">ไม่สามารถเปิด %s ได้ สัมผัส “การตั้งค่า” แล้วไปที่ ข้อมูลแอพ > การอนุญาต จากนั้นให้อนุญาตดังนี้แล้วลองใหม่อีกครั้ง:</string>
+    <string name="all_sim">ทั้ง​หมด</string>
+    <string name="app_name">วอลเปเปอร์</string>
+    <string name="apply">ใช้งาน</string>
+    <string name="can_not_set_wallpaper_image_not_found">ไม่สามารถตั้งรูปภาพเป็นวอลเปเปอร์ ไม่พบรูปภาพ</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="cancle">ยกเลิก</string>
+    <string name="change_wallpaper_when_infinity_applied">เอฟเฟ็กต์ต่อเนื่องจะถูกปิดหากคุณใช้วอลเปเปอร์นี้</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">เรียบร้อย</string>
+    <string name="duplicate_image">ซ้ำ</string>
+    <string name="expand_image">ขยาย</string>
+    <string name="fail_to_load">ไม่​สามารถ​โหลด​รูป​ถ่าย</string>
+    <string name="home_lock_screen">หน้าจอหลักและหน้าจอล็อก</string>
+    <string name="home_screen">หน้า​จอ​หลัก</string>
+    <string name="homescreen_checkbox_motion_effect">เอ​ฟเฟ็กต์​การ​เคลื่อน​ไหว</string>
+    <string name="image_too_small">ขนาด​รูป​ภาพ​เล็ก​เกิน​ไป</string>
+    <string name="item_restricted">รายการถูกจำกัด</string>
+    <string name="left_image">ทางซ้าย</string>
+    <string name="lock_screen">ล็อกหน้าจอ</string>
+    <string name="motion_effect">เอฟเฟ็กต์การเคลื่อนไหวของวอลเปเปอร์</string>
+    <string name="motion_wallpaper_name">วอลเปเปอร์เคลื่อนไหว</string>
+    <string name="notice_low_storage">พื้นที่ไม่เพียงพอ ลบรายการที่ไม่จำเป็น เช่น ซอฟท์แวร์ที่ดาวน์โหลด รูปภาพ วิดีโอ และเอกสาร</string>
+    <string name="permission_description">ในการใช้ %s ให้แตะ การตั้งค่า แล้วไปที่ ข้อมูลแอพพลิเคชั่น > การอนุญาต จากนั้นให้อนุญาตดังนี้:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">ที่เก็บ</string>
+    <string name="processing">ดำเนิน​การ…</string>
+    <string name="request_permission_rationale">ไม่สามารถใช้ %1$s แตะ “การตั้งค่า” แล้วให้อนุญาต %2$s แล้วลองอีกครั้ง</string>
+    <string name="right_image">ทางขวา</string>
+    <string name="set_wallpaper_docomo_text_gui">ภาพนี้จะแสดงบนหน้าจอหลักและหน้าจอล็อคของคุณ</string>
+    <string name="settings">การ​ตั้ง​ค่า</string>
+    <string name="speak_button">ปุ่ม</string>
+    <string name="sview_window">หน้าต่าง S View</string>
+    <string name="unable_set_wallpaper_image_deleted">ไม่สามารถกำหนดรูปภาพเป็นวอลเปเปอร์ รูปภาพถูกลบแล้ว</string>
+    <string name="unable_to_download">ไม่​สามารถ​ดาวน์​โหลด</string>
+    <string name="wallpaper_applied_home">ใช้งานวอลเปเปอร์กับหน้าจอหลักแล้ว</string>
+    <string name="wallpaper_applied_home_and_lock">ใช้วอลเปเปอร์กับหน้าจอหลักและหน้าจอล็อค</string>
+    <string name="wallpaper_applied_lock">ใช้งานวอลเปเปอร์กับหน้าจอล็อคแล้ว</string>
+    <string name="wallpaper_applied_multi_lock">ใช้งาน %d วอลเปเปอร์กับหน้าจอล็อคแล้ว</string>
+    <string name="wallpaper_applied_sview">ใช้งานวอลเปเปอร์กับหน้าต่าง S View แล้ว</string>
+    <string name="wallpaper_crop_button_done">เรียบร้อย</string>
+    <string name="wallpaper_instructions">ตั้งค่าเป็นวอลเปเปอร์</string>
+    <string name="wallpaper_lock_gui_cinematic">รูปลักษณ์ของหน้าจอล็อคจะเปลี่ยนเมื่อคุณเอียงอุปกรณ์ไปทางซ้ายและขวา</string>
+</resources>

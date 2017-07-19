@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Кушодани %s ғайриимкон аст. ТАНЗИМОТ-ро зарба зада, ба Маълумоти барнома > Иҷозатҳо гузашта, иҷозатҳои зеринро бидиҳед ва кӯшишро такрор кунед:</string>
+    <string name="all_sim">Ҳама</string>
+    <string name="app_name">Тасвирҳои замина</string>
+    <string name="apply">Татбиқ кардан</string>
+    <string name="can_not_set_wallpaper_image_not_found">Таъйин кардани тасвир ҳамчун тасвири замина ғайриимкон аст. Тасвир ёфта нашуд.</string>
+    <string name="cancel">Бекор кардан</string>
+    <string name="cancle">Бекор кардан</string>
+    <string name="change_wallpaper_when_infinity_applied">Агар шумо ин тасвири заминаро истифода баред, эффектҳои беохирӣ хомӯш карда мешаванд.</string>
+    <string name="date_format">E, d MMMM</string>
+    <string name="done">Иҷро шуд</string>
+    <string name="duplicate_image">Дугона</string>
+    <string name="expand_image">Тавсеа</string>
+    <string name="fail_to_load">Бор кардани сурат ғайриимкон аст.</string>
+    <string name="home_lock_screen">Экранҳои асосӣ ва блоконӣ</string>
+    <string name="home_screen">Экрани асосӣ</string>
+    <string name="homescreen_checkbox_motion_effect">Motion effect</string>
+    <string name="image_too_small">Тасвир аз ҳад хурд аст.</string>
+    <string name="item_restricted">Ҷузъ маҳдуд аст</string>
+    <string name="left_image">Чап</string>
+    <string name="lock_screen">Экрани блоконӣ</string>
+    <string name="motion_effect">Эффекти ҳаракати тасвири замина</string>
+    <string name="motion_wallpaper_name">Тасвири заминаи ҳаракат</string>
+    <string name="notice_low_storage">Ҷой кофӣ нест. Ҷузъҳои нодаркорро, аз қабили нармафзори боргиришуда, суратҳо, видеоҳо ва ҳуҷҷатҳо, нест кунед.</string>
+    <string name="permission_description">Барои истифодаи %s, ТАНЗИМОТ-ро зарба занед, ба Маълумоти барнома > Иҷозатҳо гузаред, пас иҷозатҳои зеринро иҷозат диҳед:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Захирагоҳ</string>
+    <string name="processing">Коркард…</string>
+    <string name="request_permission_rationale">Истифодаи %1$s ғайриимкон аст. ТАНЗИМОТ-ро зарба зада, иҷозати %2$s-ро бидиҳед ва кӯшишро такрор кунед.</string>
+    <string name="right_image">Рост</string>
+    <string name="set_wallpaper_docomo_text_gui">Ин тасвир дар экранҳои асосӣ ва бандкунии шумо нишон дода мешавад.</string>
+    <string name="settings">Танзимот</string>
+    <string name="speak_button">Тугма</string>
+    <string name="sview_window">Равзанаи S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Тасвирро ҳамчун тасвири замина танзим карда натавонист. Тасвир нест шуд.</string>
+    <string name="unable_to_download">Боргирӣ ғайриимкон аст.</string>
+    <string name="wallpaper_applied_home">Тасвири замина ба экрани асосӣ татбиқ шуд.</string>
+    <string name="wallpaper_applied_home_and_lock">Тасвири замина ба экрани хонагӣ ва экрани бандкунӣ татбиқ шуд.</string>
+    <string name="wallpaper_applied_lock">Тасвири замина ба экрани бандкунӣ татбиқ шуд.</string>
+    <string name="wallpaper_applied_multi_lock">%d тасвири замина ба экрани бандкунӣ татбиқ карда шуд.</string>
+    <string name="wallpaper_applied_sview">Тасвири замина ба равзанаи S View татбиқ карда шуд.</string>
+    <string name="wallpaper_crop_button_done">Иҷро шуд</string>
+    <string name="wallpaper_instructions">Ҳамчун тасвири замина танзим кардан</string>
+    <string name="wallpaper_lock_gui_cinematic">Намуди зоҳирии экрани қулфкунӣ ҳангоми ба чап ва рост моил кардани телефон тағйир меёбад.</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s Android Wear ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ನವೀಕರಣದ ಅಗತ್ಯವಿದೆ.</string>
+    <string name="common_android_wear_update_text">ನೀವು Android Wear ಅಪ್ಲಿಕೇಶನ್ ನವೀಕರಿಸದ ಹೊರತು %1$s ರನ್ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="common_android_wear_update_title">Android Wear ಅಪ್‌ಡೇಟ್‌ ಮಾಡಿ</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s ಗೆ ಪ್ರಸ್ತುತವಾಗಿ ಲಭ್ಯವಿಲ್ಲದ ಒಂದು ಅಥವಾ ಹೆಚ್ಚು Google Play ಸೇವೆಗಳ ಅಗತ್ಯವಿದೆ. ದಯವಿಟ್ಟು ಸಹಾಯಕ್ಕಾಗಿ ಡೆವಲಪರ್ ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.</string>
+    <string name="common_google_play_services_enable_button">Google Play ಸೇವೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
+    <string name="common_google_play_services_enable_text">Google Play ಸೇವೆಗಳನ್ನು ನೀವು ಸಕ್ರಿಯಗೊಳಿಸದ ಹೊರತು %1$s ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_enable_title">Google Play ಸೇವೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s ನಿಂದ ವಿನಂತಿಸಲಾಗಿದೆ</string>
+    <string name="common_google_play_services_install_button">Google Play ಸೇವೆಗಳನ್ನು ಪಡೆಯಿರಿ</string>
+    <string name="common_google_play_services_install_text_phone">ನಿಮ್ಮ ಫೋನ್‍‍ನಿಂದ ಕಾಣೆಯಾಗಿರುವ %1$s, Google Play ಸೇವೆಗಳಿಲ್ಲದೆ ರನ್ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_install_text_tablet">ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್‍ನಿಂದ ಕಾಣೆಯಾಗಿರುವ %1$s, Google Play ಸೇವೆಗಳಿಲ್ಲದೆ ರನ್ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_install_title">Google Play ಸೇವೆಗಳನ್ನು ಪಡೆಯಿರಿ</string>
+    <string name="common_google_play_services_invalid_account_text">ಈ ಸಾಧನದಲ್ಲಿ ನಿರ್ದಿಷ್ಟಪಡಿಸಲಾದ ಖಾತೆಯು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಬೇರೆಯ ಖಾತೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="common_google_play_services_invalid_account_title">ಅಮಾನ್ಯವಾದ ಖಾತೆ</string>
+    <string name="common_google_play_services_needs_enabling_title">ಅಪ್ಲಿಕೇಶನ್‌ಗೆ Google Play ಸೇವೆಗಳು ಸಕ್ರಿಯಗೊಂಡಿರಬೇಕಾಗುತ್ತದೆ.</string>
+    <string name="common_google_play_services_network_error_text">Google Play ಸೇವೆಗಳಿಗೆ ಸಂಪರ್ಕ ಹೊಂದಲು ಡೇಟಾ ಸಂಪರ್ಕದ ಅಗತ್ಯವಿದೆ.</string>
+    <string name="common_google_play_services_network_error_title">ನೆಟ್‍ವರ್ಕ್ ದೋಷ</string>
+    <string name="common_google_play_services_notification_needs_update_title">ಅಪ್ಲಿಕೇಶನ್‌ಗೆ Google Play ಸೇವೆಗಳ ನವೀಕರಣದ ಅಗತ್ಯವಿದೆ.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play ಸೇವೆಗಳ ದೋಷ</string>
+    <string name="common_google_play_services_sign_in_failed_text">ಸೂಚಿಸಿದ ಖಾತೆಗೆ ಸೈನ್ ಇನ್ ಮಾಡುವಲ್ಲಿ ದೋಷ ಇದೆ. ದಯವಿಟ್ಟು ಮತ್ತೊಂದು ಖಾತೆಯನ್ನು ಆರಿಸಿ.</string>
+    <string name="common_google_play_services_sign_in_failed_title">ಸೈನ್ ಇನ್ ವಿಫಲವಾಗಿದೆ</string>
+    <string name="common_google_play_services_unknown_issue">Google Play ಸೇವೆಗಳಿಗೆ ಅಜ್ಞಾತ ಸಮಸ್ಯೆ.</string>
+    <string name="common_google_play_services_unsupported_text">ನಿಮ್ಮ ಸಾಧನವು ಬೆಂಬಲಿಸುತ್ತಿಲ್ಲದ Google Play ಸೇವೆಗಳನ್ನು %1$s ಅವಲಂಬಿಸಿದೆ. ಸಹಾಯಕ್ಕಾಗಿ ತಯಾರಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play ಸೇವೆಗಳು</string>
+    <string name="common_google_play_services_update_button">ನವೀಕರಿಸು</string>
+    <string name="common_google_play_services_update_text">ನೀವು Google Play ಸೇವೆಗಳನ್ನು ನವೀಕರಿಸದ ಹೊರತು %1$s ರನ್ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_update_title">Google Play ಸೇವೆಗಳನ್ನು ಅಪ್‌ಡೇಟ್‌ ಮಾಡಿ</string>
+    <string name="common_google_play_services_updating_text">ಪ್ರಸ್ತುತವಾಗಿ ನವೀಕರಿಸಲಾಗುತ್ತಿರುವ %1$s, Google Play ಸೇವೆಗಳಿಲ್ಲದೆ ರನ್ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_updating_title">Google Play ಸೇವೆಗಳನ್ನು ನವೀಕರಿಸಲಾಗುತ್ತಿದೆ</string>
+    <string name="common_open_on_phone">ಫೋನ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ</string>
+    <string name="common_signin_button_text">ಸೈನ್ ಇನ್ ಮಾಡು</string>
+    <string name="common_signin_button_text_long">Google ಜೊತೆ ಸೈನ್ ಇನ್ ಮಾಡಿ</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">ಹೆಚ್ಚುವರಿ ವಿಷಯದ ಗಾತ್ರ: %1$s %2$s</string>
+    <string name="STR_ALL">ಎಲ್ಲಾ</string>
+    <string name="STR_APPS_DESCRIPTION">ನಿಮ್ಮ ಸೇವಾ ಪೂರೈಕೆದಾರರು ಶಿಫಾರಸು ಮಾಡಿರುವ ಅನ್ವಯಿಸುವಿಕೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">ನಿಮ್ಮ ಎಲ್ಲ ಆಯ್ದ ಅನ್ವಯಿಸುವಿಕೆಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ.</string>
+    <string name="STR_APP_BUTTON_CANCEL">ರದ್ದು</string>
+    <string name="STR_APP_BUTTON_OK">ಓಕೆ</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">ನಿಮ್ಮ ಸೇವಾ ಪೂರೈಕೆದಾರರು ಶಿಫಾರಸು ಮಾಡಿರುವ ಅನ್ವಯಿಸುವಿಕೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">ನೀವು ಸ್ಥಾಪಿಸಲು ಬಯಸುವ ಅನ್ವಯಿಸುವಿಕೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="STR_APP_INSTALL_TITLE">ಅನ್ವಯಿಸುವಿಕೆಗಳನ್ನು ಸ್ಥಾಪಿಸಿ</string>
+    <string name="STR_APP_STATE_CANCELED">ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ</string>
+    <string name="STR_APP_STATE_CONNECTING">ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ಡೌನ್‌ಲೋಡ್ ಮಾಡುತ್ತಿದೆ…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ಡೌನಲೋಡ್ ಲಬ್ಯವಿರುವದಿಲ್ಲ.</string>
+    <string name="STR_APP_STATE_INSTALLED">ಸ್ಥಾಪಿಸಲಾಗಿದೆ</string>
+    <string name="STR_APP_STATE_INSTALLING">ಸ್ಥಾಪಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">ಸ್ಥಾಪನೆ ವಿಫಲವಾಗಿದೆ</string>
+    <string name="STR_APP_STATE_WAITING">ನಿರೀಕ್ಷಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="STR_BTN_INSTALL">ಸ್ಥಾಪಿಸು</string>
+    <string name="STR_BTN_INSTALL_ALL">ಎಲ್ಲವನ್ನೂ ಸ್ಥಾಪಿಸಿ</string>
+    <string name="STR_BTN_SKIP">ಸ್ಕಿಪ್‌</string>
+    <string name="STR_BUTTON_NEXT">ಮುಂದಿನದ್ದು</string>
+    <string name="STR_CAUTION_BODY">ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದ ನಂತರ, ನವೀಕರಣವನ್ನು ಸ್ಥಾಪಿಸಲು ಮರುಪ್ರಾರಂಭಿಸಿ. ಸ್ಥಾಪನೆ ಮುಗಿಸುವವರೆಗೆ, ನೀವು ತುರ್ತು ಕರೆಗಳನ್ನು ಮಾಡಲೂ ಸಹ ನಿಮ್ಮ ಫೋನ್ ಬಳಸಲು ನಿಮಗೆ ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ.</string>
+    <string name="STR_CAUTION_BODY2">ನವೀಕರಣದ ನಂತರ, ಕೆಲವು ಸಂಯೋಜನೆಗಳನ್ನು ಅವುಗಳ ಡೀಫಾಲ್ಟ್ ಮೌಲ್ಯಗಳಿಗೆ ಮರುಹೊಂದಿಸಬಹುದು.</string>
+    <string name="STR_CHARING_DIALOG">ಮೊಬೈಲ್ ಡೇಟಾ ಮೂಲಕ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದರೆ, ಹೆಚ್ಚುವರಿ ಶುಲ್ಕಗಳು ಅನ್ವಯವಾಗಬಹುದು.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">ಮೊಬೈಲ್ ಡೇಟಾ ಬಳಸಿಕೊಂಡು ಡೌನ್‌ಲೋಡ್ ಮಾಡುವುದೇ?</string>
+    <string name="STR_CONNECTING_TO_SERVER">ಸರ್ವರ್‌‌‌‌‌‌‌ಗೆ ಸಂಪರ್ಕಿಸುತ್ತಿದೆ…</string>
+    <string name="STR_CONNECT_FAIL">ಸಂಪರ್ಕ ವಿಫಲವಾಗಿದೆ. ನಂತರ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="STR_DOWNLOADING_PACKAGE">ನವೀಕರಣಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡುತ್ತಿದೆ…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ಡೌನ್‌ಲೋಡ್‌‍ಮಾಡುತ್ತಿದೆ…</string>
+    <string name="STR_DOWNLOAD_FAIL">ಡೌನ್ ಲೋಡ್ ವಿಫಲವಾಗಿದೆ. ನಂತರ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">ಇತ್ತೀಚಿನ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬಳಸಲು, ಈ ಫರ್ಮ್‌ವೇರ್ ನವೀಕರಣವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ಸ್ಥಾಪಿಸಿ.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ಡೌನ್ ಲೋಡ್ ವಿಫಲವಾಗಿದೆ. ನಂತರ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="STR_FAILED_NOTI">ಡೌನಲೋಡ್ ಲಬ್ಯವಿರುವದಿಲ್ಲ.</string>
+    <string name="STR_INITIAL_NOTI">ಡೌನ್‌ಲೋಡ್‌ಗೆ ಶಿಫಾರಸು ಮಾಡಿರುವ ಅನ್ವಯಿಸುವಿಕೆಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ಇಲ್ಲಿ ತಟ್ಟಿ.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">ನವೀಕರಣವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಮತ್ತು ಸ್ಥಾಪಿಸಲು ಇಲ್ಲಿ ತಟ್ಟಿ.</string>
+    <string name="STR_INSTALLED_NOTI">%d ಸ್ಥಾಪಿಸಲಾಗಿದೆ</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">ಹೆಚ್ಚುವರಿ ವಿಷಯವನ್ನು ಸ್ಥಾಪಿಸಿ</string>
+    <string name="STR_INSTALL_CAUTIONS">ಎಚ್ಚರಿಕೆ</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">ಈ ನವೀಕರಣವು ಕೆಲವು ಐಚ್ಛಿಕ ಅನ್ವಯಿಸುವಿಕೆಗಳು ಮತ್ತು ವಿಷಯವನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ. ಮೊಬೈಲ್ ನೆಟ್‍ವರ್ಕ್‌ಗಳ ಮೂಲಕ ಡೌನ್‌ಲೋಡ್ ಮಾಡುತ್ತಿರುವಾಗ ನಿಮ್ಮ ಪಾವತಿ ಯೋಜನೆಯಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಶುಲ್ಕಗಳಿಗೆ ಕಾರಣವಾಗಬಹುದು.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ಡೌನ್‌ಲೋಡಾಗಿದೆ.</string>
+    <string name="STR_INSTALL_FORCE">ನಿಮ್ಮ ಪ್ರಮುಖ ಸಾಫ್ಟ್‌ವೇರ್ ನವೀಕರಣವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ. ಸ್ಥಾಪಿಸುವಿಕೆಯನ್ನು ಆರಂಭಿಸಲು ನಿಮ್ಮ ಸಾಧನವು %d ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಪುನಃ ಆರಂಭಗೊಳ್ಳುವುದು.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">ಅನ್ವಯಿಸುವಿಕೆಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ನೀವು Wi-Fiಗೆ ಸಂಪರ್ಕಿಸಬೇಕಾಗುತ್ತದೆ. Wi-Fi ಅನ್ನು ಸಂಪರ್ಕಿಸಿ ಮತ್ತು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi ಸಂಪರ್ಕ ಇಲ್ಲ</string>
+    <string name="STR_NETWORK_FAIL">ನೆಟ್‌ವರ್ಕ್ ಲಭ್ಯವಿಲ್ಲ. ನಂತರ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="STR_NO_APPS">ಅನ್ವಯಿಸುವಿಕೆಗಳಿಲ್ಲ</string>
+    <string name="STR_NO_CONTENT">ನಿಮ್ಮ ಸೇವೆ ಪೂರೈಕೆದಾರರಿಂದ ಬಿಡುಗಡೆಗೊಳಿಸಿದ ಲಭ್ಯ ಅನ್ವಯಿಸುವಿಕೆಗಳು ಇಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.</string>
+    <string name="STR_NO_ITEMS">ಯಾವುದೇ ಅಂಶಗಳಿಲ್ಲ</string>
+    <string name="STR_NO_ITEM_SELECTED">ಯಾವುದೇ ಅಂಶವನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾಗಿಲ್ಲ.</string>
+    <string name="STR_OMC_HEADER">ಸೇವೆ ಪೂರೈಕೆದಾರರ ನವೀಕರಣ</string>
+    <string name="STR_OMC_SIZE">ಗಾತ್ರ: %s</string>
+    <string name="STR_OMC_TITLE">ಕಾನ್ಫಿಗರೇಶನ್ ನವೀಕರಣ</string>
+    <string name="STR_OMC_VERSION">ಆವೃತ್ತಿ: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">ನಿರ್ವಾಹಕ ಸಂಯೋಜನೆಗಳು</string>
+    <string name="STR_PROCESS_FAIL">ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವುದು ವಿಫಲವಾಗಿದೆ.</string>
+    <string name="STR_PROVIDER_APPS">ಸೇವಾ ಪೂರೈಕೆದಾರರ ಆಪ್ಸ್</string>
+    <string name="STR_REGISTERING_DEVICE">ಸಾಧನ ನೋಂದಾಯಿಸುತ್ತಿದೆ…</string>
+    <string name="STR_REGISTER_FAIL">ನೋಂದಣಿ ವಿಫಲವಾಗಿದೆ.</string>
+    <string name="STR_REGISTER_SUCCESS">ಸಾಧನ ನೋಂದಾಯಿತವಾಗಿದೆ.</string>
+    <string name="STR_RESTART_BTN_LATER">ನಂತರ</string>
+    <string name="STR_RESTART_BTN_RESTART">ಮರುಪ್ರಾರಂಭ</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">ನಿಮ್ಮ ಸೇವಾ ಪೂರೈಕೆದಾರರ ಸಾಫ್ಟ್‌ವೇರ್ ನವೀಕರಣದ ಸ್ಥಾಪನೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದ ನಂತರ, ನೀವು ನಿಮ್ಮ ಫೋನ್ ಮರುಪ್ರಾರಂಭಿಸಬೇಕಾಗುತ್ತದೆ.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">ನಿಮ್ಮ ಸೇವಾ ಪೂರೈಕೆದಾರರ ಸಾಫ್ಟ್‌ವೇರ್ ನವೀಕರಣದ ಸ್ಥಾಪನೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದ ನಂತರ, ನೀವು ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್ ಮರುಪ್ರಾರಂಭಿಸಬೇಕಾಗುತ್ತದೆ.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">ಪುನಾರಂಭಿಸುವುದೇ?</string>
+    <string name="STR_RESTART_PHONE">ಫೋನ್ ಮರುಪ್ರಾರಂಭಿಸಿ</string>
+    <string name="STR_RESTART_TABLET">ಟ್ಯಾಬ್ಲೆಟ್ ಮರುಪ್ರಾರಂಭಿಸಿ</string>
+    <string name="STR_SELECT_ALL">ಎಲ್ಲಾ ಮುಂದಿರುವ ಅನ್ವಯಿಸುವಿಕೆಗಳು</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">ಅವಶ್ಯಕ ಅನ್ವಯಿಸುವಿಕೆಗಳು</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">ಕೆಳಗಿರುವ ಅನ್ವಯಿಸುವಿಕೆಗಳನ್ನು ಡೌನ್‍ಲೋಡ್ ಮಾಡಲು ಯಾವುದೇ ಶುಲ್ಕಗಳು ಅನ್ವಯವಾಗುವುದಿಲ್ಲ.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">ಕೆಳಗಿನ ಅಂಶ ಒಂದರ ಕುರಿತು ಮತ್ತಷ್ಟು ತಿಳಿಯಲು ಅದರ ಮೇಲೆ ತಟ್ಟಿ.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Wi-Fi ಮೂಲಕ ಅನ್ವಯಿಸುವಿಕೆಗಳನ್ನು ಡೌನ್‍ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ.</string>
+    <string name="STR_SUW_TITLE">ಸೇವೆ ನೀಡುಗರಿಂದ ಆಪ್ಸ್ ಪಡೆಯಿರಿ</string>
+    <string name="STR_UPDATE_BODY1">ಮೊಬೈಲ್ ಡೇಟಾ ಮೂಲಕ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದರೆ, ಹೆಚ್ಚುವರಿ ಶುಲ್ಕಗಳು ಅನ್ವಯವಾಗಬಹುದು.</string>
+    <string name="STR_UPDATE_BODY2">ನವೀಕರಣವನ್ನು ಸ್ಥಾಪಿಸಿದ ನಂತರ ನಿಮ್ಮ ಫೋನ್ ಮರುಪ್ರಾರಂಭಗೊಳ್ಳುತ್ತದೆ.</string>
+    <string name="STR_UPDATE_FAIL">ನವೀಕರಣ ವಿಫಲವಾಗಿದೆ. ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="STR_UPDATE_HEADER1">ನಿಮ್ಮ ಸೇವಾ ಪೂರೈಕೆದಾರರ ಇತ್ತೀಚಿನ ಸಾಫ್ಟ್‌ವೇರ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ ಹಾಗೂ ಸ್ಥಾಪಿಸಿ.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- ಈ ಫರ್ಮ್‌ವೇರ್ ಸ್ಥಾಪಿಸುವಿಕೆಗಾಗಿ ಯಾವುದೇ ಶುಲ್ಕವನ್ನು ವಿಧಿಸಲಾಗುವುದಿಲ್ಲ.
+
+- ಸ್ಥಾಪನೆಗೊಳಿಸುವಿಕೆ ಸಂದರ್ಭದಲ್ಲಿ, ನಿಮಗೆ ನಿಮ್ಮ ಸಾಧನವನ್ನು ಬಳಸಲು ಸಾಧ್ಯವಾಗುವುದೇ ಇಲ್ಲ, ತುರ್ತು ಕರೆಗಳನ್ನು ಸಹ ಮಾಡಲಾಗುವುದಿಲ್ಲ.
+
+- ಹೋಮ್ ಸ್ಕ್ರೀನ್ ಮತ್ತು ಸಾಧನ ಸಂಯೋಜನೆಗಳಲ್ಲಿನ ಐಕಾನ್‌ಗಳನ್ನು ಅವುಗಳ ಡೀಫಾಲ್ಟ್‌ಗೆ ಹಿಂತಿರುಗಿಸಬಹುದು ಮತ್ತು ಸ್ಥಾಪನೆಯ ನಂತರ ಮರುಕಾನ್ಫಿಗರ್ ಮಾಡಬೇಕಾಗಬಹುದು.
+
+- ಫರ್ಮ್‌ವೇರ್ ನವೀಕರಣವು ನಿಮ್ಮ ಸಾಧನದ ಫೈಲ್‌ಗಳು ಮತ್ತು ಡೇಟಾ ಮೇಲೆ ಯಾವುದೇ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ.
+
+- ಆದರೆ, ಸ್ಥಾಪನೆಗೊಳಿಸುವಿಕೆ ಪ್ರಕ್ರಿಯೆ ಪೂರ್ಣಗೊಳ್ಳುವ ಮೊದಲು ನೀವು ಅದನ್ನು ಸ್ಥಗಿತಗೊಳಿಸಿದರೆ, ನಿಮ್ಮ ಸಾಧನವು ಸಹಜವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ ಮತ್ತು ಇದರಿಂದಾಗಿ ನೀವು ಫೈಲ್‌ಗಳನ್ನು ಕಳೆದುಕೊಳ್ಳಬಹುದು.
+
+- ಅನಿರೀಕ್ಷಿತ ಡೇಟಾ ನಷ್ಟವನ್ನು ತಡೆಗಟ್ಟಲು, ಸ್ಥಾಪನೆಗೊಳಿಸುವಿಕೆಯ ಮೊದಲು ನೀವು ಪ್ರಮುಖ ಡೇಟಾವನ್ನು ಬ್ಯಾಕ್‌ಅಪ್ ಮಾಡಿಕೊಳ್ಳುವಂತೆ ನಾವು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">ನಿಮ್ಮ ಸೇವಾ ಪೂರೈಕೆದಾರರ ಸಾಫ್ಟ್‌ವೇರ್ ನವೀಕರಣವನ್ನು ಮುಗಿಸಲು ಮರುಪ್ರಾರಂಭಿಸಿ.</string>
+    <string name="STR_UPDATING_PACKAGE">ನವೀಕರಿಸುತ್ತಿದೆ…</string>
+    <string name="STR_USE_DATA_BTN">ಡೇಟಾ ಬಳಸಿ</string>
+    <string name="STR_WAIT_FOR_WIFI">"ಅನ್ವಯಿಸುವಿಕೆಯ ಸ್ಥಾಪನೆಯನ್ನು ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ.
+ಅನ್ವಯಿಸುವಿಕೆ ಸ್ಥಾಪಿಸಲು Wi-Fiಗಾಗಿ ನಿರೀಕ್ಷಿಸಲಾಗುತ್ತಿದೆ."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fiಗಾಗಿ ನಿರೀಕ್ಷಿಸಿ</string>
+    <string name="STR_WIDGET_DEFAULT">ನಿಮ್ಮ ಸೇವಾ ಪೂರೈಕೆದಾರರ ಮೂಲಕ ಶಿಫಾರಸು ಮಾಡಿರುವ ಅನ್ವಯಿಸುವಿಕೆಗಳನ್ನು ಸ್ಥಾಪಿಸಿ.</string>
+    <string name="STR_WIDGET_DOWNLOADING">ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿದೆ…</string>
+    <string name="STR_WIDGET_INSTALLED">ಸ್ಥಾಪಿಸಲಾಗಿದೆ.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">ಬಟನ್</string>
+    <string name="WSS_STR_NO_UPDATE">ಇತ್ತೀಚಿನ ನವೀಕರಣಗಳನ್ನು ಈಗಾಗಲೇ ಅಳವಡಿಸಲಾಗಿದೆ.</string>
+</resources>

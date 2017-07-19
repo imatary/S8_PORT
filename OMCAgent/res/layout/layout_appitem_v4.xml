@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.omcagent.ui.application.AppItemView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/appItem" android:layout_width="fill_parent" android:layout_height="@dimen/appitemview_height" android:paddingStart="@dimen/appinstaller_listview_padding_right" android:paddingEnd="@dimen/appinstaller_listview_padding_right">
+        <CheckBox android:theme="@android:style/Theme.DeviceDefault.InputMethod" android:gravity="center_vertical" android:id="@id/appItem_checkBox" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:minHeight="?android:listPreferredItemHeightSmall" android:layout_marginEnd="@dimen/appitemview_checkbox_margin" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/iconView" android:layout_width="@dimen/item_icon_size" android:layout_height="@dimen/item_icon_size" android:scaleType="fitCenter" android:contentDescription="@string/NTSTR_ITEM_TITLE" android:layout_marginEnd="@dimen/appitemview_appitem_margin_right" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/appitemview_text_padding" android:paddingBottom="@dimen/appitemview_text_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/appitemview_title_text_size" android:textColor="@color/list_title_text_color" android:ellipsize="end" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/NTSTR_ITEM_TITLE" android:maxLines="1" android:layout_weight="17.0" />
+            <FrameLayout android:gravity="center_vertical" android:id="@id/size_state_progressBar_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="13.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/size_state_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/appitemview_state_text_size" android:textColor="@color/list_description_text_color" android:ellipsize="end" android:gravity="left" android:id="@id/size_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/NTSTR_ITEM_SIZE" android:maxLines="1" />
+                    <View android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/appitemview_state_text_size" android:textColor="@color/list_description_text_color" android:gravity="right" android:id="@id/state_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/NTSTR_ITEM_STATE" />
+                </LinearLayout>
+                <FrameLayout android:gravity="center_vertical" android:id="@id/progress_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="24.0dip">
+                    <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="24.0dip" android:layout_alignParentStart="true" style="?android:attr/progressBarStyleHorizontal" />
+                    <ImageView android:layout_gravity="end|center" android:id="@id/cancelBtn" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/omc_settings_ic_cancel" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/applist_divider" layout="@layout/view_divider" />
+</com.samsung.android.app.omcagent.ui.application.AppItemView>

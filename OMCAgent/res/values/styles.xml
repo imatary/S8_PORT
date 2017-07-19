@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActivityAnimation">
+        <item name="android:windowEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:windowExitAnimation">@anim/activity_close_exit</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.DeviceDefault.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="AppTheme.Dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppTheme.Transparent" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AppTheme.Wizard" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="TextStateAppearance">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">#ff6b6f72</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextSubheadAppearance">
+        <item name="android:textSize">@dimen/text_size_subhead</item>
+        <item name="android:textColor">#ff313131</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="description_text_main">
+        <item name="android:textSize">@dimen/text_size_description</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:paddingLeft">@dimen/header_padding_width</item>
+        <item name="android:paddingTop">@dimen/header_padding_height</item>
+        <item name="android:paddingRight">@dimen/header_padding_width</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="description_text_secondary">
+        <item name="android:textSize">@dimen/text_size_description</item>
+        <item name="android:textColor">@color/description_text_color</item>
+        <item name="android:paddingLeft">@dimen/header_padding_width</item>
+        <item name="android:paddingTop">@dimen/body_marging_top</item>
+        <item name="android:paddingRight">@dimen/header_padding_width</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="list_no_apps_text">
+        <item name="android:textSize">@dimen/noitem_noapps_text_size</item>
+        <item name="android:textColor">@color/list_no_item_text_color</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">sec-roboto-regular</item>
+    </style>
+    <style name="list_no_item_body_text">
+        <item name="android:textSize">@dimen/noitem_body_text_size</item>
+        <item name="android:textColor">@color/list_no_item_text_color</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:fontFamily">sec-roboto-regular</item>
+    </style>
+    <style name="wizard_bottom_button_text">
+        <item name="android:textSize">@dimen/wizard_bottom_button_text_size</item>
+        <item name="android:textColor">@color/wizard_bottom_button_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wizard_contents_text">
+        <item name="android:textSize">@dimen/wizard_contents_text_size</item>
+        <item name="android:textColor">@color/wizard_contents_text_color</item>
+        <item name="android:lineSpacingExtra">@dimen/wizard_contents_lineSpacingExtra</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="wizard_title_text">
+        <item name="android:textSize">@dimen/wizard_title_text_size</item>
+        <item name="android:textColor">@color/wizard_title_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+</resources>

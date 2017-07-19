@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s විවෘත කළ නොහැකිය. “සැකසුම්” තට්ටු කර, යෙදුම් තතු > අවසර වෙත යන්න, එවිට පහත අවසරවලට ඉඩ දී නැවත උත්සාහ කරන්න:</string>
+    <string name="all_sim">සියල්ල</string>
+    <string name="app_name">බිතුපත්</string>
+    <string name="apply">යොදන්න</string>
+    <string name="can_not_set_wallpaper_image_not_found">බිතුපත ලෙස අනුරුව පිහිටුවිය නොහැක. අනුරුව හමු නොවිණි.</string>
+    <string name="cancel">අව. කර.</string>
+    <string name="cancle">අවලංගු කරන්න</string>
+    <string name="change_wallpaper_when_infinity_applied">ඔබ මෙම බිතුපත භාවිතා කරන්නේ නම් අපරිමිත ප්‍රයෝග ක්‍රියා විරහිත වනු ඇත.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">නිමයි</string>
+    <string name="duplicate_image">අනුපිටපත</string>
+    <string name="expand_image">විදහන්න</string>
+    <string name="fail_to_load">ඡායාරූපය ලබා ගත නොහැක.</string>
+    <string name="home_lock_screen">මුල් පිටු සහ අගුලු තිර</string>
+    <string name="home_screen">නිවාස තිරය</string>
+    <string name="homescreen_checkbox_motion_effect">චලන ප්‍රයෝගය</string>
+    <string name="image_too_small">පින්තූරය ඉතා කුඩායි.</string>
+    <string name="item_restricted">අයිතමය සීමා කොට ඇත</string>
+    <string name="left_image">වම</string>
+    <string name="lock_screen">අගුලු තිරය</string>
+    <string name="motion_effect">බිතුපත් චලන ප්‍රයෝගය</string>
+    <string name="notice_low_storage">ඉඩ ප්‍රමාණවත් නැත. බාගත් මෘදුකාංග, රූප, වීඩියෝ සහ ලේඛණ වැනි අනවශ්‍ය අයිතම මකන්න.</string>
+    <string name="permission_description">%s භාවිතා කිරීමට, “සැකසුම්” තට්ටු කරන්න, යෙදුම් තතු > අවසර වෙත යන්න, එවිට පහත අවසරයන්ට ඉඩ දෙන්න:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">ගබඩාව</string>
+    <string name="processing">සකසමින්…</string>
+    <string name="request_permission_rationale">%1$s භාවිතා කළ නොහැකිය. “සැකසුම්” තට්ටු කරන්න, එවිට %2$s අවසරයට ඉඩ දී නැවත උත්සාහ කරන්න.</string>
+    <string name="right_image">දකුණ</string>
+    <string name="set_wallpaper_docomo_text_gui">මෙම අනුරුව ඔබේ මුල් සහ අගුළු තිරවල පෙන්වනු ලැබේ.</string>
+    <string name="settings">සැකසුම්</string>
+    <string name="speak_button">බොත්තම</string>
+    <string name="sview_window">S View කවුළුව</string>
+    <string name="unable_set_wallpaper_image_deleted">අනුරුව බිතුපත ලෙස පිහිටුවිය නොහැකිය. අනුරුව මැකිණි.</string>
+    <string name="unable_to_download">බාගත නොහැක.</string>
+    <string name="wallpaper_applied_home">බිතුපත මුල් තිරයට යොදන ලදී.</string>
+    <string name="wallpaper_applied_home_and_lock">මුල් තිරයට සහ අගුලු තිරයට බිතුපත යොදන ලදී.</string>
+    <string name="wallpaper_applied_lock">බිතුපත අගුලු තිරයට යොදන ලදී.</string>
+    <string name="wallpaper_applied_multi_lock">බිතුපත් %d අගුලු තිරයට යොදන ලදී.</string>
+    <string name="wallpaper_applied_sview">බිතුපත S View කවුළුවට යොදන ලදී.</string>
+    <string name="wallpaper_crop_button_done">නිමයි</string>
+    <string name="wallpaper_instructions">බිතුපත ලෙස පිහිටුවන්න</string>
+</resources>

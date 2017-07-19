@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">ଅତିରିକ୍ତ ବିଷୟବସ୍ତୁ ଆକାର: %1$s %2$s</string>
+    <string name="STR_ALL">ସମସ୍ତ</string>
+    <string name="STR_APPS_DESCRIPTION">ଆପଣଙ୍କ ସେବା ପ୍ରଦାନକାରୀଙ୍କ ଦ୍ୱାରା ସୁପାରିଶ କରାଯାଇଥିବା ଆପସ୍ ଚୟନ କରନ୍ତୁ।</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">ଆପଣଙ୍କ ସମସ୍ତ ଚୟନିତ ଆପ୍ଲିକେସନ୍ ଡାଉନଲୋଡ୍ ହୋଇଛି।</string>
+    <string name="STR_APP_BUTTON_CANCEL">ବାତିଲ୍</string>
+    <string name="STR_APP_BUTTON_OK">ଓକେ</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">ଆପଣଙ୍କ ସେବା ପ୍ରଦାନକାରୀଙ୍କ ଦ୍ୱାରା ସୁପାରିଶ କରାଯାଇଥିବା ଆପସ୍ ଚୟନ କରନ୍ତୁ।</string>
+    <string name="STR_APP_INSTALL_CONFIRM">ଆପଣ ସଂସ୍ଥାପନ କରିବାକୁ ଚାହୁଁଥିବା ଆପ୍ଲିକେସନଗୁଡିକ ଚୟନ କରନ୍ତୁ।</string>
+    <string name="STR_APP_INSTALL_TITLE">ଆପ୍ଲିକେସନଗୁଡିକ ସଂସ୍ଥାପନ</string>
+    <string name="STR_APP_STATE_CANCELED">ବାତିଲ୍ ହୋଇଛି</string>
+    <string name="STR_APP_STATE_CONNECTING">ସଂଯୋଗ ହେଉଛି…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ଡାଉନଲୋଡ୍ ହେଉଛି…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ଡାଉନଲୋଡ ବିଫଳ ହୋଇଛି</string>
+    <string name="STR_APP_STATE_INSTALLED">ସଂସ୍ଥାପିତ</string>
+    <string name="STR_APP_STATE_INSTALLING">ସଂସ୍ଥାପନ କରୁଛି…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">ସଂସ୍ଥାପନ ବିଫଳ ହେଲା</string>
+    <string name="STR_APP_STATE_WAITING">ଅପେକ୍ଷାରତ…</string>
+    <string name="STR_BTN_INSTALL">ସଂସ୍ଥାପନ</string>
+    <string name="STR_BTN_INSTALL_ALL">ସମସ୍ତ ସଂସ୍ଥାପନ କରନ୍ତୁ</string>
+    <string name="STR_BTN_SKIP">ସ୍କିପ୍</string>
+    <string name="STR_BUTTON_NEXT">ପରବର୍ତ୍ତୀ</string>
+    <string name="STR_CAUTION_BODY">ଡାଉନଲୋଡ୍ ପରେ, ଅପଡେଟ୍ ସଂସ୍ଥାପନ କରିବାକୁ ପୁନଃଆରମ୍ଭ କରନ୍ତୁ। ସଂସ୍ଥାପନା ସମାପ୍ତ ନହେବା ପର୍ଯ୍ୟନ୍ତ, ଏପରିକି ଜରୁରୀକାଳୀନ କଲ୍ କରିବାର ଥିଲେ ମଧ୍ୟ, ଆପଣ ଆପଣଙ୍କ ଫୋନ୍ ବ୍ୟବହାର କରିବାକୁ ସମର୍ଥ ହେବେ ନାହିଁ।</string>
+    <string name="STR_CAUTION_BODY2">ଅପଡେଟ୍ ପରେ, କିଛି ସେଟିଂସ୍ ସେମାନଙ୍କ ଡିଫଲ୍ଟ ମୂଲ୍ୟକୁ ପୁନଃସେଟ୍ ହୋଇପାରେ।</string>
+    <string name="STR_CHARING_DIALOG">ମୋବାଇଲ୍‌ ଡାଟା ବ୍ୟବହାର କରି ଡାଉନ‌ଲୋଡ୍ କରିବା ଦ୍ୱାରା ଅତିରିକ୍ତ ଦେୟ ଲାଗୁ ହୋଇପାରେ।</string>
+    <string name="STR_CHARING_DIALOG_TITLE">ମୋବାଇଲ୍ ଡାଟା ବ୍ୟବହାର କରି ଡାଉନଲୋଡ୍ କରିବେ?</string>
+    <string name="STR_CONNECTING_TO_SERVER">ସର୍ଭରକୁ ସଂଯୋଗ କରୁଛି…</string>
+    <string name="STR_CONNECT_FAIL">ସଂଯୋଜନ ବିଫଳ ହୋଇଛି । ପରେ ଚେଷ୍ଟା କରନ୍ତୁ</string>
+    <string name="STR_DOWNLOADING_PACKAGE">ଅପଡେଟଗୁଡିକ ଡାଉନଲୋଡ୍ ହେଉଛି…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ଡାଉନଲୋଡ୍ ହେଉଛି…</string>
+    <string name="STR_DOWNLOAD_FAIL">ଡାଉନଲୋଡ୍‌ ବିଫଳ ହୋଇଛି। ପରେ ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">ନବୀନତ୍ତମ ବୈଶିଷ୍ଟ୍ୟଗୁଡିକ ବ୍ୟବହାର କରିବାକୁ, ଏହି ଫାର୍ମୱେୟାର୍ ଅପଡେଟ୍ ଡାଉନଲୋଡ୍ ଏବଂ ସଂସ୍ଥାପନ କରନ୍ତୁ।</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ଡାଉନଲୋଡ୍‌ ବିଫଳ ହୋଇଛି। ପରେ ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="STR_FAILED_NOTI">ଡାଉନଲୋଡ୍ ବିଫଳ ହୋଇଛି</string>
+    <string name="STR_INITIAL_NOTI">ଡାଉନଲୋଡ୍ ପାଇଁ ସୁପାରିଶ କରାଯାଇଥିବା ଆପସ୍ ଚୟନ କରିବାକୁ ଏଠାରେ ଟ୍ୟାପ୍ କରନ୍ତୁ।</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">ଅପଡେଟ୍ ଡାଉନଲୋଡ୍ ଏବଂ ସଂସ୍ଥାପନ କରିବାକୁ ଏଠାରେ ଟ୍ୟାପ୍ କରନ୍ତୁ।</string>
+    <string name="STR_INSTALLED_NOTI">%dଟି ସଂସ୍ଥାପିତ</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">ଅତିରିକ୍ତ ବିଷୟବସ୍ତୁ ସଂସ୍ଥାପନ କରନ୍ତୁ</string>
+    <string name="STR_INSTALL_CAUTIONS">ସତର୍କ</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">ଏହି ଅପଡେଟ୍ କିଛି ବୈକଳ୍ପିକ ଆପ୍ଲିକେସନ୍ ଏବଂ ବିଷୟବସ୍ତୁ ଅନ୍ତର୍ଭୁକ୍ତ କରେ। ମୋବାଇଲ୍ ନେଟୱାର୍କ୍‌ ମାଧ୍ୟମରେ ଡାଉନଲୋଡ୍‌ କରିବା ଦ୍ଵାରା ଆପଣଙ୍କ ଦେୟ ଯୋଜନା ଉପରେ ଅଧିକ ଦେୟ ଲାଗୁ ହୋଇପାରେ।</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ଡାଉନଲୋଡ୍ ହୋଇଛି</string>
+    <string name="STR_INSTALL_FORCE">ଆପଣଙ୍କ ଗୁରୁତ୍ଵପୂର୍ଣ୍ଣ ସଫ୍ଟୱେୟାର୍ ଅପଡେଟଗୁଡିକ ଡାଉନଲୋଡ୍ ହୋଇଛି। ଆପଣଙ୍କ ଡିଭାଇସ୍ ସଂସ୍ଥାପନା ଆରମ୍ଭ କରିବାକୁ %d ସେକେଣ୍ଡରେ ସ୍ଵତଃସ୍ପୃତ ଭାବେ ପୁନଃଆରମ୍ଭ ହେବ।</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">ଅଧିକ ଜାଣନ୍ତୁ</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">ଆପସ୍ ଡାଉନଲୋଡ୍ କରିବାକୁ ଆପଣ Wi-Fiକୁ ସଂଯୋଜିତ ରହିବା ଆବଶ୍ୟକ। Wi-Fiକୁ ସଂଯୋଗ କରି ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="STR_NEED_WIFI_TITLE">କୌଣସି Wi-Fi ସଂଯୋଗ ନାହିଁ</string>
+    <string name="STR_NETWORK_FAIL">ନେଟୱାର୍କ୍ ଉପଲବ୍ଧ ନାହିଁ। ପରେ ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="STR_NO_APPS">କୌଣସି ଆପ୍ଲିକେସନ୍ ନାହିଁ</string>
+    <string name="STR_NO_CONTENT">ଆପଣଙ୍କ ସେବା ପ୍ରଦାନକାରୀରୁ ରିଲିଜ୍ ହୋଇଥିବା ଉପଲବ୍ଧ ଆପସ୍ ଏଠାରେ ଦେଖାଯିବ।</string>
+    <string name="STR_NO_ITEMS">କୌଣସି ଆଇଟମ୍ ନାହିଁ</string>
+    <string name="STR_NO_ITEM_SELECTED">କୌଣସି ଆଇଟମ୍ ଚୟନ ହୋଇନାହିଁ।</string>
+    <string name="STR_OMC_HEADER">ସେବା ପ୍ରଦାନକାରୀ ଅପଡେଟ୍</string>
+    <string name="STR_OMC_SIZE">ଆକାର: %s</string>
+    <string name="STR_OMC_TITLE">ଅପଡେଟ୍ କନଫିଗ୍ୟୁରେସନ୍</string>
+    <string name="STR_OMC_VERSION">ସଂସ୍କରଣ: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">ଅପରେଟର୍ ସେଟିଂସ୍</string>
+    <string name="STR_PROCESS_FAIL">ପ୍ରକ୍ରିୟା ବିଫଳ ହୋଇଛି।</string>
+    <string name="STR_PROVIDER_APPS">ସେବା ପ୍ରଦାନକାରୀ ଆପସ୍</string>
+    <string name="STR_REGISTERING_DEVICE">ଡିଭାଇସ୍‌ ପଞ୍ଜିକରଣ ହେଉଛି…</string>
+    <string name="STR_REGISTER_FAIL">ପଞ୍ଜିକରଣ ବିଫଳ ହୋଇଛି।</string>
+    <string name="STR_REGISTER_SUCCESS">ଡିଭାଇସ୍ ପଞିକୃତ ହୋଇଛି।</string>
+    <string name="STR_RESTART_BTN_LATER">ପରେ</string>
+    <string name="STR_RESTART_BTN_RESTART">ପୁନଃଆରମ୍ଭ</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">ଆପଣଙ୍କ ସେବା ପ୍ରଦାନକାରୀ ସଫ୍ଟୱେୟାର୍ ଅପଡେଟ୍ ସଂସ୍ଥାପନ ସମାପ୍ତ କରିବାକୁ, ଆପଣଙ୍କୁ ଆପଣଙ୍କ ଫୋନ୍ ପୁନଃଆରମ୍ଭ କରିବା ଆବଶ୍ୟକ।</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">ଆପଣଙ୍କ ସେବା ପ୍ରଦାନକାରୀ ସଫ୍ଟୱେୟାର୍ ଅପଡେଟ୍ ସଂସ୍ଥାପନ ସମାପ୍ତ କରିବାକୁ, ଆପଣଙ୍କୁ ଆପଣଙ୍କ ଟ୍ୟାବଲେଟ୍ ପୁନଃଆରମ୍ଭ କରିବା ଆବଶ୍ୟକ।</string>
+    <string name="STR_RESTART_DIALOG_TITLE">ପୁନଃଆରମ୍ଭ</string>
+    <string name="STR_RESTART_PHONE">ଫୋନ୍ ପୁନଃଆରମ୍ଭ</string>
+    <string name="STR_RESTART_TABLET">ଟ୍ୟାବଲେଟ୍ ପୁନଃଆରମ୍ଭ</string>
+    <string name="STR_SELECT_ALL">ସମସ୍ତ ନିମ୍ନଲିଖିତ ଆପ୍ଲିକେସନ୍</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">ଜରୁରୀ ଆପସ୍</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">ନିମ୍ନ ଆପସ୍ ଡାଉନଲୋଡ୍ ପାଇଁ କୌଣସି ଡାଟା ଦେୟ ପ୍ରୟୋଗ ହୋଇନାହିଁ।</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">ଏହା ବିଷୟରେ ଅଧିକ ଜାଣିବାକୁ ନିମ୍ନର ଏକ ଆଇଟମ୍ ଉପରେ ଟ୍ୟାପ୍ କରନ୍ତୁ।</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">ଆପସ୍ Wi-Fiରେ ଡାଉନଲୋଡ୍ ହେବ।</string>
+    <string name="STR_SUW_TITLE">ସେବା ପ୍ରଦାନକାରୀରୁ ଆପସ୍ ପ୍ରାପ୍ତ</string>
+    <string name="STR_UPDATE_BODY1">ମୋବାଇଲ୍‌ ଡାଟା ବ୍ୟବହାର କରି ଡାଉନ‌ଲୋଡ୍ କରିବା ଦ୍ୱାରା ଅତିରିକ୍ତ ଦେୟ ଲାଗୁ ହୋଇପାରେ।</string>
+    <string name="STR_UPDATE_BODY2">ଅପଡେଟ୍ ସଂସ୍ଥାପିତ ହେବା ପରେ ଆପଣଙ୍କ ଡିଭାଇସ୍ ପୁନଃଆରମ୍ଭ ହେବ।</string>
+    <string name="STR_UPDATE_FAIL">ଅଦ୍ୟତନ ବିଫଳ ହେଲା। ପୁନଃ ଚେଷ୍ଟା କରନ୍ତୁ</string>
+    <string name="STR_UPDATE_HEADER1">ଆପଣଙ୍କ ସେବା ପ୍ରଦାନକାରୀରୁ ନବୀନତ୍ତମ ସଫ୍ଟୱେୟାର୍ ଡାଉନଲୋଡ୍ ଏବଂ ସଂସ୍ଥାପନ କରନ୍ତୁ।</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- ଏହି ଫାର୍ମୱେୟାର୍ ସଂସ୍ଥାପନା ପାଇଁ ଆପଣଙ୍କୁ ଦେୟ ଲାଗୁ କରାଯିବ।
+
+- ସଂସ୍ଥାପନା ସମୟରେ, ଆପଣ ଆପଣଙ୍କ ଡିଭାଇସ୍ ବ୍ୟବହାର କରିବାକୁ ସମର୍ଥ ହେବେ ନାହିଁ, ଏପରିକି ଜରୁରୀକାଳୀନ କଲଗୁଡିକ ସମୟରେ ମଧ୍ୟ।
+
+- ହୋମ୍ ସ୍କ୍ରିନ୍‌ ଏବଂ ଡିଭାଇସ୍ ସେଟିଂସରେ ଥିବା ଆଇକନଗୁଡିକ ସେମାନଙ୍କ ଡିଫଲ୍ଟଗୁଡିକୁ ପୁନଃସେଟ୍ ଏବଂ ସଂସ୍ଥାପନା ପରେ ପୁନଃ କନଫିଗର୍ କରିବାକୁ ଆବଶ୍ୟକ କରିପାରେ।
+
+- ଏକ ଫାର୍ମୱେୟାର୍ ଅପଡେଟ୍ ଆପଣଙ୍କ ଡିଭାଇସରେ ଥିବା ଫାଇଲଗୁଡିକ ଏବଂ ଡାଟାକୁ ପ୍ରଭାବିତ କରିବା ଉଚିତ ନୁହେଁ।
+
+- ତେବେ, ଯଦି ଆପଣ ସଂସ୍ଥାପନା ପ୍ରକ୍ରିୟା ଶେଷ ନ ହେବା ପୂର୍ବରୁ ଆପଣ ସ୍ଥଗିତ କରିଦେଲେ, ଆପଣଙ୍କ ଡିଭାଇସ୍ ସ୍ୱାଭାବିକଭାବେ କାର୍ଯ୍ୟ ନ କରିପାରେ ଏବଂ ଫଳସ୍ୱରୁପ ଆପଣଙ୍କ ଫାଇଲଗୁଡିକ ହରେଇ ଯାଇ ପାରେ।
+
+- ଅପ୍ରତ୍ୟାଶିତ ଡାଟା ହାନୀ ଏଡାଇବାକୁ, ଆମେ ସୁପାରିଶ କରୁ ଯେ ସଂସ୍ଥାପନା ପୂର୍ବରୁ ପ୍ରମୁଖ ଡାଟାଗୁଡିକର ବ୍ୟାକ୍ ଅପ୍ ନିଅନ୍ତୁ।"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">ଆପଣଙ୍କ ସେବା ପ୍ରଦାନକାରୀ ସଫ୍ଟୱେୟାର୍ ଅପଡେଟ୍ ସଂସ୍ଥାପନ ସମାପ୍ତ କରିବାକୁ ପୁନଃଆରମ୍ଭ କରନ୍ତୁ।</string>
+    <string name="STR_UPDATING_PACKAGE">ଅପଡେଟ୍‌ ହେଉଛି…</string>
+    <string name="STR_USE_DATA_BTN">ବ୍ୟବହାର ଡାଟା</string>
+    <string name="STR_WAIT_FOR_WIFI">"ଆପ୍ଲିକେସନ୍‌ ସଂସ୍ଥାପନା ବିରତ ହୋଇଛି।
+ଆପସ୍ ସଂସ୍ଥାପନ କରିବାକୁ Wi-Fi ପାଇଁ ଅପେକ୍ଷା କରୁଛନ୍ତି।"</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi ପାଇଁ ଅପେକ୍ଷା</string>
+    <string name="STR_WIDGET_DEFAULT">ଆପଣଙ୍କ ସେବା ପ୍ରଦାନକାରୀଙ୍କ ଦ୍ୱାରା ସୁପାରିଶ କରାଯାଇଥିବା ଆପସ୍ ସଂସ୍ଥାପନ କରନ୍ତୁ।</string>
+    <string name="STR_WIDGET_DOWNLOADING">ଡାଉନଲୋଡ୍ ହେଉଛି…</string>
+    <string name="STR_WIDGET_INSTALLED">ସଂସ୍ଥାପିତ</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">ବଟନ୍‍</string>
+    <string name="WSS_STR_NO_UPDATE">ସର୍ବନୂତନ ଅପଡେଟଗୁଡିକ ପୂର୍ବରୁ ସଂସ୍ଥାପନ ହୋଇସାରିଛି।</string>
+</resources>

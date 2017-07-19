@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s ತೆರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ. “ಸಂಯೋಜನೆಗಳು” ತಟ್ಟಿ, ಅನ್ವಯಿಸುವಿಕೆ ಮಾಹಿತಿ > ಅನುಮತಿಗಳಿಗೆ ಹೋಗಿ, ನಂತರ ಈ ಅನುಮತಿಗಳನ್ನು ಅನುಮತಿಸಿ ಹಾಗೂ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ:</string>
+    <string name="all_sim">ಎಲ್ಲಾ</string>
+    <string name="app_name">ವಾಲ್‌ಪೇಪರ್‌ಗಳು</string>
+    <string name="apply">ಅನ್ವಯಿಸಿ</string>
+    <string name="can_not_set_wallpaper_image_not_found">ಚಿತ್ರವನ್ನು ವಾಲ್‌ಪೇಪರ್ ಎಂಬಂತೆ ಹೊಂದಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಚಿತ್ರಗಳು ಪತ್ತೆಯಾಗಲಿಲ್ಲ.</string>
+    <string name="cancel">ರದ್ದು</string>
+    <string name="cancle">ರದ್ದು</string>
+    <string name="change_wallpaper_when_infinity_applied">ನೀವು ಈ ವಾಲ್‍ಪೇಪರ್ ಬಳಸಿದರೇ ಅಪರಿಮಿತತೆ ಪರಿಣಾಮಗಳನ್ನು ಆಫ್ ಮಾಡಲಾಗುವುದು.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">ಮುಗಿದಿದೆ</string>
+    <string name="duplicate_image">ಡುಪ್ಲಿಕೇಟ್</string>
+    <string name="expand_image">ವಿಸ್ತರಿಸಿ</string>
+    <string name="fail_to_load">ಫೋಟೊ ಲೋಡ್ ಮಾಡಲು ಅಸಮರ್ಥ.</string>
+    <string name="home_lock_screen">ಹೋಮ್‌ ಮತ್ತು ಲಾಕ್‌ ಸ್ಕ್ರೀನ್‌ಗಳು</string>
+    <string name="home_screen">ಹೋಮ್ ಸ್ಕ್ರೀನ್</string>
+    <string name="homescreen_checkbox_motion_effect">ಮೋಷನ್ ಎಫೆಕ್ಟ್</string>
+    <string name="image_too_small">ಚಿತ್ರ ತುಂಬಾ ಚಿಕ್ಕದಾಗಿದೆ.</string>
+    <string name="item_restricted">ಅಂಶ ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ</string>
+    <string name="left_image">ಎಡ</string>
+    <string name="lock_screen">ಪರದೆ ಲಾಕ್ ಮಾಡಿ</string>
+    <string name="motion_effect">ವಾಲ್‌ಪೇಪರ್ ಚಲನೆಯ ಪರಿಣಾಮ</string>
+    <string name="motion_wallpaper_name">ಮೋಶನ್ ವಾಲ್‍ಪೇಪರ್‌ಗಳು</string>
+    <string name="notice_low_storage">ಸಾಕಷ್ಟು ಜಾಗವಿಲ್ಲ. ಡೌನ್‌ಲೋಡ್ ಮಾಡಿರುವ ಸಾಫ್ಟ್‌ವೇರ್, ಚಿತ್ರಗಳು, ವೀಡಿಯೋಗಳು ಮತ್ತು ದಾಖಲೆಗಳಂಥ ಅನಗತ್ಯ ವಿಷಯಗಳನ್ನು ಅಳಿಸಿ.</string>
+    <string name="permission_description">%s ಬಳಸಲು, “ಸಂಯೋಜನೆಗಳು” ತಟ್ಟಿ, ಅನ್ವಯಿಸುವಿಕೆ ಮಾಹಿತಿ > ಅನುಮತಿಗಳಿಗೆ ಹೋಗಿ, ನಂತರ ಈ ಮುಂದಿನ ಅನುಮತಿಗಳಿಗೆ ಅವಕಾಶ ನೀಡಿ:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">ಸಂಗ್ರಹಣೆ</string>
+    <string name="processing">ಪ್ರಕ್ರಿಯೆಗೊಳ್ಳುತ್ತಿದೆ…</string>
+    <string name="request_permission_rationale">%1$s ಬಳಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. “ಸಂಯೋಜನೆಗಳು”. ತಟ್ಟಿ, ನಂತರ %2$s ಅನುಮತಿಗೆ ಅವಕಾಶ ನೀಡಿ ಹಾಗೂ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="right_image">ಬಲ</string>
+    <string name="set_wallpaper_docomo_text_gui">ಈ ಚಿತ್ರವನ್ನು ನಿಮ್ಮ ಹೋಮ್ ಮತ್ತು ಲಾಕ್ ಸ್ಕ್ರೀನ್‍ಗಳ ಮೇಲೆ ತೋರಿಸಲಾಗುವುದು.</string>
+    <string name="settings">ಸಂಯೋಜನೆಗಳು</string>
+    <string name="speak_button">ಬಟನ್</string>
+    <string name="sview_window">S View ವೀಂಡೋ</string>
+    <string name="unable_set_wallpaper_image_deleted">ಚಿತ್ರವನ್ನು ವಾಲ್‌ಪೇಪರ್‌ನಂತೆ ಹೊಂದಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಚಿತ್ರ ಅಳಿಸಲಾಗಿದೆ.</string>
+    <string name="unable_to_download">ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿಲ್ಲ.</string>
+    <string name="wallpaper_applied_home">ಹೋಮ್‍ ಸ್ಕ್ರೀನ್‍ಗೆ ವಾಲ್‍ಪೇಪರ್ ಅನ್ವಯಿಸಲಾಗಿದೆ.</string>
+    <string name="wallpaper_applied_home_and_lock">ಹೋಮ್ ಸ್ಕ್ರೀನ್ ಮತ್ತು ಲಾಕ್ ಸ್ಕ್ರೀನ್‌ಗಾಗಿ ವಾಲ್‌ಪೇಪರ್ ಅನ್ವಯಿಸಲಾಗಿದೆ.</string>
+    <string name="wallpaper_applied_lock">ಹೋಮ್‍ ಸ್ಕ್ರೀನ್‍ಗೆ ವಾಲ್‍ಪೇಪರ್ ಅನ್ವಯಿಸಲಾಗಿದೆ.</string>
+    <string name="wallpaper_applied_multi_lock">ಲಾಕ್ ಸ್ಕ್ರೀನ್‍ಗೆ %d ವಾಲ್‍ಪೇಪರ್ ಅನ್ವಯಿಸಲಾಗಿದೆ.</string>
+    <string name="wallpaper_applied_sview">S View ವಿಂಡೋಗೆ ವಾಲ್‍ಪೇಪರ್ ಅನ್ವಯಿಸಲಾಗಿದೆ.</string>
+    <string name="wallpaper_crop_button_done">ಮುಗಿದಿದೆ</string>
+    <string name="wallpaper_instructions">ವಾಲ್‌ಪೇಪರ್‌ನಂತೆ ಹೊಂದಿಸಿ</string>
+    <string name="wallpaper_lock_gui_cinematic">ನೀವು ನಿಮ್ಮ ಸಾಧನವನ್ನು ಎಡ ಹಾಗೂ ಬಲಕ್ಕೆ ವಾಲಿಸಿದರೇ ಲಾಕ್ ಸ್ಕ್ರೀನ್ ನೋಟವು ಬದಲಾಗುತ್ತದೆ.</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Не може да се отвори %s. Допрете ПОСТАВУВАЊА, одете во Информации за апликација > Дозволи, а потоа овозможете ги следниве дозволи и обидете се повторно:</string>
+    <string name="all_sim">Сите</string>
+    <string name="app_name">Заднини</string>
+    <string name="apply">Примени</string>
+    <string name="can_not_set_wallpaper_image_not_found">Не може да се постави слика како заднина. Сликата не е најдена.</string>
+    <string name="cancel">Откажи</string>
+    <string name="cancle">Откажи</string>
+    <string name="change_wallpaper_when_infinity_applied">Бесконечните ефекти ќе се исклучат ако ја користите заднинава.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Готово</string>
+    <string name="duplicate_image">Дупликат</string>
+    <string name="expand_image">Рашири</string>
+    <string name="fail_to_load">Не може да се вчита фотографијата.</string>
+    <string name="home_lock_screen">Почетен и екрани за заклучување</string>
+    <string name="home_screen">Почетен екран</string>
+    <string name="homescreen_checkbox_motion_effect">Ефект на движење</string>
+    <string name="image_too_small">Сликата е многу мала.</string>
+    <string name="item_restricted">Записот е ограничен</string>
+    <string name="left_image">Лево</string>
+    <string name="lock_screen">Заклучување на екранот</string>
+    <string name="motion_effect">Ефект на движење за заднина</string>
+    <string name="motion_wallpaper_name">Подвижна заднина</string>
+    <string name="notice_low_storage">Нема доволно место. Избришете ги непотребните записи, како преземен софтвер, слики, видеа и документи.</string>
+    <string name="permission_description">За да користите %s, допрете ПОСТАВУВАЊА, одете во Информации за апликацијата > Дозволи, а потоа овозможете ги следниве дозволи:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Меморија</string>
+    <string name="processing">Обработување…</string>
+    <string name="request_permission_rationale">Не може да се користи %1$s. Допрете на ПОСТАВУВАЊА, а потоа овозможете ја дозволата %2$s и обидете се повторно.</string>
+    <string name="right_image">Десно</string>
+    <string name="set_wallpaper_docomo_text_gui">Оваа слика ќе се прикаже на почетниот екран и на екранот за заклучување.</string>
+    <string name="settings">Поставувања</string>
+    <string name="speak_button">Копче</string>
+    <string name="sview_window">Прозорец на S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Сликата не може да се постави како заднина. Сликата е избришана.</string>
+    <string name="unable_to_download">Не може да се преземе.</string>
+    <string name="wallpaper_applied_home">Заднината е применета на почетниот екран.</string>
+    <string name="wallpaper_applied_home_and_lock">Заднина применета на почетниот екран и на екранот за заклучување.</string>
+    <string name="wallpaper_applied_lock">Заднината е применета на екранот за заклучување.</string>
+    <string name="wallpaper_applied_multi_lock">%d заднини се применети на екранот за заклучување.</string>
+    <string name="wallpaper_applied_sview">Заднината е применета на прозорецот S View.</string>
+    <string name="wallpaper_crop_button_done">ГОТОВ</string>
+    <string name="wallpaper_instructions">Постави како заднина</string>
+    <string name="wallpaper_lock_gui_cinematic">Појавата на екранот за заклучување ќе се промени кога ќе го навалите уредот налево и надесно.</string>
+</resources>

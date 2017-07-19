@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_APP_INSTALL_CONFIRM">Përzgjidh app-et që dëshiron të instalosh.</string>
+    <string name="STR_APP_INSTALL_TITLE">Instalo app-et</string>
+    <string name="STR_APP_STATE_CANCELED">Anullo</string>
+    <string name="STR_APP_STATE_CONNECTING">Duke lidhur…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Duke shkarkuar…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Shkarkimi nuk mund të kryhet.</string>
+    <string name="STR_APP_STATE_INSTALLED">Instaluar</string>
+    <string name="STR_APP_STATE_INSTALLING">Po instaloj…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installation failed</string>
+    <string name="STR_APP_STATE_WAITING">Po pres…</string>
+    <string name="STR_BTN_INSTALL">Instalo</string>
+    <string name="STR_BTN_INSTALL_ALL">Instalo të gjitha</string>
+    <string name="STR_BUTTON_NEXT">Tjetri</string>
+    <string name="STR_CONNECTING_TO_SERVER">Duke u lidhur me serverin…</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Duke shkarkuar përditësimet…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Po shkarkon…</string>
+    <string name="STR_DOWNLOAD_FAIL">Shkarkimi nuk mund të kryhet.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Për të përdorur funksionalitetet më të fundit, shkarko dhe instalo këtë përditësim të firmuerit.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Shkarkimi dështoi. Provo më vonë.</string>
+    <string name="STR_INSTALL_CAUTIONS">Kujdes</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Shkarkuar.</string>
+    <string name="STR_INSTALL_FORCE">Përditësimi kritik i softuerit u shkarkua. Pajisja jote do të riniset për %d sekonda, për të filluar instalimin.</string>
+    <string name="STR_KILOBYTE">Kb</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NETWORK_FAIL">Rrjeti nuk disponohet. Provo sërish më vonë.</string>
+    <string name="STR_NO_ITEMS">Nuk ka artikuj</string>
+    <string name="STR_NO_ITEM_SELECTED">"S'ke përzgjedhur asnjë objekt."</string>
+    <string name="STR_OMC_SIZE">Madhësia: %s</string>
+    <string name="STR_OMC_TITLE">Përditësim i konfigurimit</string>
+    <string name="STR_OMC_VERSION">Versioni: %s</string>
+    <string name="STR_PROCESS_FAIL">Përpunimi dështoi.</string>
+    <string name="STR_REGISTERING_DEVICE">Po regjistroj pajisjen…</string>
+    <string name="STR_REGISTER_FAIL">Regjistrimi dështoi.</string>
+    <string name="STR_REGISTER_SUCCESS">Pajisja u regjistrua.</string>
+    <string name="STR_UPDATE_FAIL">Përditësimi dështoi. Provo sërish.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"Për këtë instalim softueri nuk do të paguash asgjë.
+- Gjatë instalimit, nuk do ta përdorësh dot fare pajisjen, as për thirrje të urgjencës.
+- Ikonat në ekranin bazë dhe cilësimet e pajisjes mund të resetohen në parazgjedhje dhe mund të duhen rikonfiguruar pas instalimit.
+- Përditësimi i softuerit si rregull nuk do t‘i prekë skedarët dhe të dhënat e tua në pajisje.
+- Për të shmangur humbje të padëshirueshme të dhënash, ne rekomandojmë që të rezervosh të dhënat e rëndësishme para instalimit."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Pajisja jote tani do të riniset dhe do të instalojë përditësimet.</string>
+    <string name="STR_UPDATING_PACKAGE">Duke përditësuar…</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Buton</string>
+    <string name="WSS_STR_NO_UPDATE">Përditësimet më të fundit janë instaluar tashmë.</string>
+</resources>

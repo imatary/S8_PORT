@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Goşmaça material ölçegi: %1$s %2$s</string>
+    <string name="STR_ALL">Ähli</string>
+    <string name="STR_APPS_DESCRIPTION">Hyzmat üpjün edijiňiz tarapyndan maslahat berilýän goýmalary saýlaň.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Ähli saýlan goýmalaryňyz göçürilip alyndy.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Ýatyr</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Hyzmat üpjün edijiňiz tarapyndan maslahat berilýän goýmalary saýlaň.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Gurnamak isleýän goýmalaryňyzy saýlaň.</string>
+    <string name="STR_APP_INSTALL_TITLE">Goýmalary gurna</string>
+    <string name="STR_APP_STATE_CANCELED">Ýatyryldy</string>
+    <string name="STR_APP_STATE_CONNECTING">Birigilýär…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Göçürilip alynýar…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Ýükläp bolanok</string>
+    <string name="STR_APP_STATE_INSTALLED">Gurnaldy</string>
+    <string name="STR_APP_STATE_INSTALLING">Gurnalýar…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Gurnap bolmady</string>
+    <string name="STR_APP_STATE_WAITING">Garaşylýar…</string>
+    <string name="STR_BTN_INSTALL">Gurna</string>
+    <string name="STR_BTN_INSTALL_ALL">Baryny gurna</string>
+    <string name="STR_BTN_SKIP">Geçirip goýber</string>
+    <string name="STR_BUTTON_NEXT">Indiki</string>
+    <string name="STR_CAUTION_BODY">Göçürip alyşdan soň, täzelemäni gurnamak üçin açyp ýapyň. Gurnaw gutarýança, hatda gyssagly jaň üçinem telefonyňyzy ulanyp bilmersiňiz.</string>
+    <string name="STR_CAUTION_BODY2">Täzelemeden soň, käbir sazlamalar asyl bahalaryna nol edilip biler.</string>
+    <string name="STR_CHARING_DIALOG">Mobil maglumat arkaly göçürip almak goşmaça tölegli bolup biler.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Mobil maglumat arkaly göçürip almalymy?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Hyzmat edijä birikdirilýär…</string>
+    <string name="STR_CONNECT_FAIL">Birigip bolmady. Soňra synanyşyň.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Täzelenmeler göçürilip alynýar…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Göçürilip alynýar…</string>
+    <string name="STR_DOWNLOAD_FAIL">Ýükläp bolanok. Soňra gaýtalaň.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Iň täze funksiýalary ulanmak üçin, bu proşiwka täzelemesini göçürip alyp gurnaň.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Ýükläp bolanok. Soňra gaýtalaň.</string>
+    <string name="STR_FAILED_NOTI">Ýükläp bolanok</string>
+    <string name="STR_INITIAL_NOTI">Göçürip almak üçin maslahat berilýän goýmalary saýlamak üçin, şu ýere basyň.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Täzelemäni göçürip alyp gurnamak üçin, şu ýere basyň.</string>
+    <string name="STR_INSTALLED_NOTI">%d gurnaldy</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Goşmaça material gurna</string>
+    <string name="STR_INSTALL_CAUTIONS">Seresaplyk</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Bu täzelemede käbir islege bagly goýmadyr materiallar bar. Mobil torlar arkaly göçürip almak öz tarifiňize görä goşmaça tölegli bolup biler.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Göçürilip alyndy</string>
+    <string name="STR_INSTALL_FORCE">Aýratyn ähmiýetli programma üpjünçiligi täzelenmäňiz göçürilip alyndy. Gurnamany başlatmak üçin enjamyňyz %d sekuntdan täzeden işlediler.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Goşmaça</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Goýmalary göçürip almak üçin, siz Wi-Fi-a birikmeli. Wi-Fi-a birigip synanyşyň.</string>
+    <string name="STR_NEED_WIFI_TITLE">Wi-Fi birikmesi ýok</string>
+    <string name="STR_NETWORK_FAIL">Tor elýeterli däl. Soňra täzeden synanyşyň.</string>
+    <string name="STR_NO_APPS">Goýma ýok</string>
+    <string name="STR_NO_CONTENT">Hyzmat üpjün edijiňiziň çykaran elýeterli goýmalary şu ýerde görner.</string>
+    <string name="STR_NO_ITEMS">Element ýok</string>
+    <string name="STR_NO_ITEM_SELECTED">Saýlanan görnüş ýok</string>
+    <string name="STR_OMC_HEADER">Hyzmat üpjün ediji täzelemesi</string>
+    <string name="STR_OMC_SIZE">Ölçeg: %s</string>
+    <string name="STR_OMC_TITLE">Düzüliş täzelemesi</string>
+    <string name="STR_OMC_VERSION">Wersiýa: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Operator sazlamalary</string>
+    <string name="STR_PROCESS_FAIL">Amala aşyryp bolanok</string>
+    <string name="STR_PROVIDER_APPS">Hyzmat üpjün ediji goýmalary</string>
+    <string name="STR_REGISTERING_DEVICE">Enjam bellige alynýar…</string>
+    <string name="STR_REGISTER_FAIL">Hasaba alyş şowsuz</string>
+    <string name="STR_REGISTER_SUCCESS">Enjam hasaba alyndy</string>
+    <string name="STR_RESTART_BTN_LATER">Soňra</string>
+    <string name="STR_RESTART_BTN_RESTART">Açyp ýap</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Hyzmat üpjün ediji programma üpjünçiligi täzelemäňizi gurnap gutarmak üçin, siz telefonyňyzy açyp ýapmaly.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Hyzmat üpjün ediji programma üpjünçiligi täzelemäňizi gurnap gutarmak üçin, siz planşetiňizi açyp ýapmaly.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Açyp ýapmalymy?</string>
+    <string name="STR_RESTART_PHONE">Telefony açyp ýap</string>
+    <string name="STR_RESTART_TABLET">Planşeti açyp ýap</string>
+    <string name="STR_SELECT_ALL">Aşakdaky goýmalaryň ählisi</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Esasy goýmalar</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Aşakdaky goýmalary göçürip almak üçin maglumat tölegi alynmaýar.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Giňişleýin bilmek üçin, zada basyň.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Goýmalar Wi-Fi arkaly göçürilip alnar.</string>
+    <string name="STR_SUW_TITLE">Hyzmat üpjün edijiden goýma al</string>
+    <string name="STR_UPDATE_BODY1">Mobil maglumat arkaly göçürip almak goşmaça tölegli bolup biler.</string>
+    <string name="STR_UPDATE_BODY2">Täzeleme gurnalansoň, telefonyňyz açylyp ýapylar.</string>
+    <string name="STR_UPDATE_FAIL">Update failed. Try again.</string>
+    <string name="STR_UPDATE_HEADER1">Hyzmat üpjün edijiňizden iň täze programma üpjünçiligini göçürip alyp gurnaň.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Bu proşiwka gurnawy üçin sizden töleg alynmaz.
+
+- Gurnaw wagtynda, enjamyňyzy düýbünden, hatda gyssagly jaňlar üçin hem ulanyp bilmersiňiz.
+
+- Öý ekrandaky şekiljikler we enjam sazlamalary standarda dolanyp biler we gurnawdan soň täzeden düzmeli bolmagy mümkin.
+
+- Proşiwka täzelemesi enjamyňyzdaky faýllara we maglumata täsir etmeli däl.
+
+- Ýöne, eger gurnawy gutarmanka duruzsaňyz, enjamyňyz gowy işlemän, faýllaryňyzyň ýitmegi mümkin.
+
+- Garaşylmadyk ýagdaýda maglumat ýitmezligi üçin, biz size öz möhüm maglumatlaryňyzy gurnawdan öň ätiýaçlamagyňyzy maslahat berýäris."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Hyzmat üpjün ediji programma üpjünçiligi täzelemäňizi gurnamagy gutarmak üçin açyp ýapyň.</string>
+    <string name="STR_UPDATING_PACKAGE">Täzelenilýär…</string>
+    <string name="STR_USE_DATA_BTN">Maglumat ulan</string>
+    <string name="STR_WAIT_FOR_WIFI">"Goýma gurnawy sägindi.
+Goýmalary gurnamak üçin, Wi-Fi-a garaşylýar."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi-a garaş</string>
+    <string name="STR_WIDGET_DEFAULT">Hyzmat üpjün edijiňiz tarapyndan maslahat berilýän goýmalary gurnaň.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Göçürilip alynýar…</string>
+    <string name="STR_WIDGET_INSTALLED">Guruldy</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Düwme</string>
+    <string name="WSS_STR_NO_UPDATE">Iň soňky täzelemeler eýýäm oturdylan.</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_APP_INSTALL_CONFIRM">તમે ઇન્સ્ટોલ કરવા માગતા હો તે એપ્સ પસંદ કરો.</string>
+    <string name="STR_APP_INSTALL_TITLE">એપ્સ ઇન્સ્ટોલ કરો</string>
+    <string name="STR_APP_STATE_CANCELED">રદ કરો</string>
+    <string name="STR_APP_STATE_CONNECTING">જોડાઇ રહ્યું છે…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">ડાઉનલોડ કરી રહ્યું છે…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">ડાઉનલોડ ઉપલબ્ધ નથી.</string>
+    <string name="STR_APP_STATE_INSTALLED">સ્થાપિત</string>
+    <string name="STR_APP_STATE_INSTALLING">સ્થાપન કરે છે…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">ઇન્સ્ટોલેશન નિષ્ફળ થયું</string>
+    <string name="STR_APP_STATE_WAITING">વેઇટિંગ…</string>
+    <string name="STR_BTN_INSTALL">સ્થાપો</string>
+    <string name="STR_BTN_INSTALL_ALL">બધુ સ્થાપિત કરો</string>
+    <string name="STR_BUTTON_NEXT">પછીનું</string>
+    <string name="STR_CONNECTING_TO_SERVER">સર્વર સાથે જોડે છે…</string>
+    <string name="STR_DOWNLOADING_PACKAGE">અપડેટ્સ ડાઉનલોડ કરી રહ્યાં છે…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">ડાઉનલોડ કરી રહ્યું છે…</string>
+    <string name="STR_DOWNLOAD_FAIL">ડાઉનલોડ ઉપલબ્ધ નથી.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">નવીનતમ સુવિધાઓનો ઉપયોગ કરવા, આ ફર્મવેર અપડેટ ડાઉનલોડ કરો અને ઇન્સ્ટોલ કરો.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">ડાઉનલોડ નિષ્ફળ. મોડેથી પ્રયત્ન કરો.</string>
+    <string name="STR_INSTALL_CAUTIONS">ચેતવણી</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">ડાઉનલોડેડ.</string>
+    <string name="STR_INSTALL_FORCE">તમારું વિશિષ્ટ સોફ્ટવેર અપડેટ્સ ડાઉનલોડ થયું. સ્થાપનાનો પ્રારંભ કરવા માટે તમારું ઉપકરણ %d સેકંડ્સમાં આપમેળે પુનઃપ્રારંભ થશે.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NETWORK_FAIL">નેટવર્ક ઉપલબ્ધ નથી. પછી ફરી પ્રયાસ કરો.</string>
+    <string name="STR_NO_ITEMS">કોઈ વસ્તુઓ નથી</string>
+    <string name="STR_NO_ITEM_SELECTED">કોઈ વસ્તુઓ પસંદ કરેલ નથી.</string>
+    <string name="STR_OMC_SIZE">કદ: %s</string>
+    <string name="STR_OMC_TITLE">કન્ફિગરેશન અપડેટ</string>
+    <string name="STR_OMC_VERSION">સંસ્કરણ: %s</string>
+    <string name="STR_PROCESS_FAIL">પ્રક્રિયા નિષ્ફળ.</string>
+    <string name="STR_REGISTERING_DEVICE">ઉપકરણની નોંધણી કરે છે…</string>
+    <string name="STR_REGISTER_FAIL">નોંધણી નિષ્ફળ.</string>
+    <string name="STR_REGISTER_SUCCESS">ઉપકરણ રજિસ્ટર કર્યુ.</string>
+    <string name="STR_UPDATE_FAIL">અપડેટ નિષ્ફળ થયું. ફરી પ્રયત્ન કરો</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"તમારી પાસેથી સોફ્ટવેર ઇન્સ્ટોલેશન માટે શુલ્ક લેવામાં આવશે નહીં.
+- ઇન્સ્ટોલેશન દરમ્યાન, તમે તમારા ઉપકરણનો ઉપયોગ કરવામાં બિલકુલ સમર્થ થશો નહીં, તાત્કાલિક કૉલ્સ માટે પણ નહીં.
+- હોમ સ્ક્રીન અને ઉપકરણ સેટિંગ્સ પરના ચિહ્નોને પાછા મૂળભૂત પર રીસેટ કરવામાં આવશે અને તેઓને ઇન્સ્ટોલેશન પછી રીકન્ફિગર કરવાની જરૂર પડી શકે છે.
+- સોફ્ટવેર અપડેટ તમારા ઉપકરણની ફાઇલ્સ અને ડેટાને પ્રભાવિત કરશે નહીં.
+- અનપેક્ષિત ડેટા નુકસાનને ટાળવા, અમે તમને ભલામણ કરીએ છીએ કે તમે ઇન્સ્ટોલેશન પહેલાં તમારા મહત્વના ડેટનો બેક અપ લો."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">તમારું ઉપકરણ હમણાં ફરી શરૂ થશે અને અપડેટ્સ સ્થાપિત થશે.</string>
+    <string name="STR_UPDATING_PACKAGE">અપડેટ થઇ રહ્યું છે…</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">બટન</string>
+    <string name="WSS_STR_NO_UPDATE">નવીનતમ અપડેટ પહેલેથી સ્થાપિત છે.</string>
+</resources>

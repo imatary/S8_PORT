@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wallpaper_preview_home_checkbox_width_height" android:layout_marginBottom="@dimen/wallpaper_preview_home_checkbox_bottom_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textSize="@dimen/wallpaper_preview_home_title_checkbox_textsize" android:textStyle="normal" android:id="@id/checkbox_wide_home_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/icon_checkbox" android:text="@string/homescreen_checkbox_wide_home_screen" android:paddingStart="@dimen/wallpaper_preview_home_title_checkbox_padding_start" android:layout_marginEnd="@dimen/wallpaper_preview_home_wide_checkbox_margin_right" style="@style/WallpaperTypeTitle" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/checkbox_motion_effect_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/checkbox_motion_effect" android:background="@drawable/gallery_btn_uncheck_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/checkbox_tint_color" />
+        <TextView android:textSize="@dimen/wallpaper_preview_home_title_checkbox_textsize" android:textStyle="normal" android:paddingTop="@dimen/wallpaper_preview_home_title_checkbox_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/homescreen_checkbox_motion_effect" android:paddingStart="@dimen/wallpaper_preview_home_title_checkbox_padding_start" style="@style/WallpaperTypeTitle" />
+    </LinearLayout>
+</LinearLayout>

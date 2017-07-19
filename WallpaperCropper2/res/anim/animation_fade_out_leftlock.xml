@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <objectAnimator android:duration="@integer/keyguard_crop_view_dual_view_anim_duration" android:valueFrom="@string/dual_view_mode_show_opacity" android:valueTo="@string/dual_view_mode_hide_opacity" android:propertyName="alpha"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</set>

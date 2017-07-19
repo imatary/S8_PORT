@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">‏يحتاج %1$s إلى تحديث لتطبيق Android Wear.</string>
+    <string name="common_android_wear_update_text">‏لن يتم تشغيل %1$s ما لم تحدِّث تطبيق Android Wear.</string>
+    <string name="common_android_wear_update_title">‏تحديث Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">‏يتطلب %1$s خدمة أو أكثر من خدمات Google Play غير المتاحة حاليًا. الرجاء الاتصال بمطوّر البرامج للحصول على المساعدة.</string>
+    <string name="common_google_play_services_enable_button">‏تمكين خدمات Google Play</string>
+    <string name="common_google_play_services_enable_text">‏لن يعمل %1$s ما لم يتم تمكين خدمات Google Play.</string>
+    <string name="common_google_play_services_enable_title">‏تمكين خدمات Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">تم الطلب عن طريق %1$s</string>
+    <string name="common_google_play_services_install_button">‏الحصول على خدمات Google Play</string>
+    <string name="common_google_play_services_install_text_phone">‏لن يتم تشغيل %1$s بدون خدمات Google Play، والتي لا تتوفر في هاتفك.</string>
+    <string name="common_google_play_services_install_text_tablet">‏لن يتم تشغيل %1$s بدون خدمات Google Play، والتي لا تتوفر في جهازك اللوحي.</string>
+    <string name="common_google_play_services_install_title">‏الحصول على خدمات Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">الحساب الذي تمّ تحديده غير موجود على الجهاز. يُرجى اختيار حساب آخر.</string>
+    <string name="common_google_play_services_invalid_account_title">حساب غير صالح</string>
+    <string name="common_google_play_services_needs_enabling_title">‏يتطلب أحد التطبيقات تمكين خدمات Google Play.</string>
+    <string name="common_google_play_services_network_error_text">‏يتطلب الاتصال بخدمات Google Play وجود اتصال بيانات.</string>
+    <string name="common_google_play_services_network_error_title">خطأ في الشبكة</string>
+    <string name="common_google_play_services_notification_needs_update_title">‏يتطلب أحد التطبيقات تحديث خدمات Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">‏خطأ في خدمات Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">حدث خطأ أثناء تسجيل الدخول إلى الحساب المحدد. الرجاء اختيار حساب مختلف.</string>
+    <string name="common_google_play_services_sign_in_failed_title">أخفق تسجيل الدخول</string>
+    <string name="common_google_play_services_unknown_issue">‏حدثت مشكلة غير معروفة في خدمات Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">‏يعتمد %1$s على خدمات Google Play التي لا تتوافق مع جهازك. يمكنك الاتصال بالمصنِّع للحصول على مساعدة.</string>
+    <string name="common_google_play_services_unsupported_title">‏خدمات Google Play</string>
+    <string name="common_google_play_services_update_button">تحديث</string>
+    <string name="common_google_play_services_update_text">‏لن يتم تشغيل %1$s ما لم يتم تحديث خدمات Google Play.</string>
+    <string name="common_google_play_services_update_title">‏تحديث خدمات Google Play</string>
+    <string name="common_google_play_services_updating_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play التي يتم تحديثها حاليًا.</string>
+    <string name="common_google_play_services_updating_title">‏يتم الآن تحديث خدمات Google Play.</string>
+    <string name="common_open_on_phone">فتح على الهاتف</string>
+    <string name="common_signin_button_text">تسجيل الدخول</string>
+    <string name="common_signin_button_text_long">‏تسجيل الدخول باستخدام Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">حجم المحتوى الإضافي: %1$s %2$s</string>
+    <string name="STR_ALL">الكل</string>
+    <string name="STR_APPS_DESCRIPTION">حدد تطبيقات يوصي بها مزوّد الخدمة الخاص بك.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">تم تنزيل كل التطبيقات التي حددتها.</string>
+    <string name="STR_APP_BUTTON_CANCEL">إلغاء</string>
+    <string name="STR_APP_BUTTON_OK">موافق</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">حدد تطبيقات يوصي بها مزوّد الخدمة الخاص بك.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">حدد التطبيقات التي تريد تثبيتها.</string>
+    <string name="STR_APP_INSTALL_TITLE">تثبيت التطبيقات</string>
+    <string name="STR_APP_STATE_CANCELED">تم الإلغاء</string>
+    <string name="STR_APP_STATE_CONNECTING">جارٍ الاتصال…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">جارٍ التنزيل…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">فشل في التنزيل.</string>
+    <string name="STR_APP_STATE_INSTALLED">مثبت</string>
+    <string name="STR_APP_STATE_INSTALLING">جاري التثبيت…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">فشل التثبيت</string>
+    <string name="STR_APP_STATE_WAITING">جاري الانتظار…</string>
+    <string name="STR_BTN_INSTALL">تثبيت</string>
+    <string name="STR_BTN_INSTALL_ALL">تثبيت الكل</string>
+    <string name="STR_BTN_SKIP">تخطي</string>
+    <string name="STR_BUTTON_NEXT">التالي</string>
+    <string name="STR_CAUTION_BODY">بعد التنزيل، أعد التشغيل لتثبيت التحديث. لن تتمكن من استخدام هاتفك، حتى لإجراء مكالمات الطوارئ، إلا بعد انتهاء التثبيت.</string>
+    <string name="STR_CAUTION_BODY2">بعد التحديث، قد تعود بعض قيم الضبط إلى القيم الافتراضية.</string>
+    <string name="STR_CHARING_DIALOG">قد يؤدي التنزيل باستخدام بيانات الهاتف المحمول إلى فرض رسوم إضافية.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">هل تريد التنزيل باستخدام بيانات الهاتف المحمول؟</string>
+    <string name="STR_CONNECTING_TO_SERVER">جارٍ الاتصال بالخادم…</string>
+    <string name="STR_CONNECT_FAIL">فشل الاتصال‬. حاول لاحقا.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">يتم تنزيل التحديثات…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">جار التنزيل…</string>
+    <string name="STR_DOWNLOAD_FAIL">فشل التنزيل. حاول لاحقاً.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">لاستخدام أحدث الميزات، قم بتنزيل تحديث البرنامج الثابت هذا وتثبيته.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">فشل التنزيل. حاول لاحقاً.</string>
+    <string name="STR_FAILED_NOTI">فشل في التنزيل.</string>
+    <string name="STR_INITIAL_NOTI">انقر هنا لتحديد تطبيقات موصى بتنزيلها.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">انقر هنا لتنزيل التحديث وتثبيته.</string>
+    <string name="STR_INSTALLED_NOTI">تم تثبيت %d</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">تثبيت محتوى إضافي</string>
+    <string name="STR_INSTALL_CAUTIONS">تحذير</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">يشمل هذا التحديث بعض المحتوى والتطبيقات الاختيارية. قد يترتّب على التنزيل عبر شبكات الهاتف المحمول فرض رسوم إضافية وفقاً لخطة الدفع التي تتبعها.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">تم التنزيل.</string>
+    <string name="STR_INSTALL_FORCE">تم تنزيل تحديث البرنامج الهام. ستتم إعادة تشغيل الجهاز في غضون %d من الثواني لبدء عملية التثبيت.</string>
+    <string name="STR_KILOBYTE">ك.ب</string>
+    <string name="STR_LINK_LEARNMORE">التعرف على المزيد</string>
+    <string name="STR_MEGABYTE">م.ب</string>
+    <string name="STR_NEED_WIFI">يجب أن تتصل بشبكة Wi-Fi لكي تتمكن من تنزيل التطبيقات. اتصل بشبكة Wi-Fi وحاول مرة أخرى.</string>
+    <string name="STR_NEED_WIFI_TITLE">ما من اتصال Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">الشبكة غير متوفرة. حاول مرة أخرى لاحقاً.</string>
+    <string name="STR_NO_APPS">ما من تطبيقات</string>
+    <string name="STR_NO_CONTENT">ستظهر هنا التطبيقات المتوفرة التي أصدرها مزود الخدمة لديك.</string>
+    <string name="STR_NO_ITEMS">لا توجد عناصر</string>
+    <string name="STR_NO_ITEM_SELECTED">لم يتم اختيار عناصر.</string>
+    <string name="STR_OMC_HEADER">تحديث مزوّد الخدمة</string>
+    <string name="STR_OMC_SIZE">الحجم: %s</string>
+    <string name="STR_OMC_TITLE">تحديث الإعداد</string>
+    <string name="STR_OMC_VERSION">الإصدار: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">ضبط المشغل</string>
+    <string name="STR_PROCESS_FAIL">فشلت المعالجة.</string>
+    <string name="STR_PROVIDER_APPS">تطبيقات مزوّد الخدمة</string>
+    <string name="STR_REGISTERING_DEVICE">تسجيل الجهاز…</string>
+    <string name="STR_REGISTER_FAIL">فشل التسجيل.</string>
+    <string name="STR_REGISTER_SUCCESS">تم تسجيل الجهاز.</string>
+    <string name="STR_RESTART_BTN_LATER">لاحقاً</string>
+    <string name="STR_RESTART_BTN_RESTART">إعادة تشغيل</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">لإنهاء تثبيت تحديث برنامج مزوّد الخدمة، يجب أن تعيد تشغيل هاتفك.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">لإنهاء تثبيت تحديث برنامج مزوّد الخدمة، يجب أن تعيد تشغيل جهازك اللوحي.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">هل تريد إعادة التشغيل؟</string>
+    <string name="STR_RESTART_PHONE">إعادة تشغيل الهاتف</string>
+    <string name="STR_RESTART_TABLET">إعادة تشغيل الجهاز اللوحي</string>
+    <string name="STR_SELECT_ALL">كل التطبيقات التالية</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">التطبيقات الأساسية</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">لا يترتب على تنزيل التطبيقات أدناه فرض أي رسوم بيانات.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">انقر فوق عنصر أدناه للتعرف أكثر عليه.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">سيتم تنزيل التطبيقات عبر شبكة Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">الحصول على تطبيقات من مزود الخدمة</string>
+    <string name="STR_UPDATE_BODY1">قد يؤدي التنزيل باستخدام بيانات الهاتف المحمول إلى فرض رسوم إضافية.</string>
+    <string name="STR_UPDATE_BODY2">ستتم إعادة تشغيل هاتفك بعد تثبيت التحديث.</string>
+    <string name="STR_UPDATE_FAIL">فشل التحديث.حاول ثانيةً.</string>
+    <string name="STR_UPDATE_HEADER1">نزّل أحدث البرامج من مزوّد الخدمة الخاص بك وثبّتها.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- لن يتم فرض تكلفة على تثبيت هذا البرنامج الثابت.
+
+- خلال التثبيت، لن يكون بمقدورك استخدام الجهاز مطلقاً، حتى للمكالمات الطارئة.
+
+- قد تتم إعادة ضبط الرموز الموجودة على الشاشة الرئيسية وضبط الجهاز إلى الضبط الافتراضي وقد تحتاج إلى إعدادها من جديد بعد التثبيت.
+
+- يجب أن لا يؤثر تحديث البرنامج الثابت على الملفات والبيانات الموجودة على الجهاز.
+
+- ولكن، إذا أوقفت عملية التثبيت قبل انتهائها، فقد لا يعمل الجهاز بشكل طبيعي وقد ينتج من ذلك فقدان الملفات.
+
+- لتجنب فقدان البيانات غير المتوقع، ننصح بنسخ البيانات الهامة احتياطياً قبل عملية التثبيت."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">أعد التشغيل للانتهاء من تثبيت تحديث برنامج مزوّد الخدمة.</string>
+    <string name="STR_UPDATING_PACKAGE">جارٍ التحديث</string>
+    <string name="STR_USE_DATA_BTN">استخدام البيانات</string>
+    <string name="STR_WAIT_FOR_WIFI">"تم إيقاف تثبيت التطبيق مؤقتاً.
+في انتظار شبكة Wi-Fi لتثبيت التطبيقات."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">انتظار الاتصال بشبكة Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">قم بتثبيت التطبيقات التي أوصى بها مزوّد الخدمة لديك.</string>
+    <string name="STR_WIDGET_DOWNLOADING">جارٍ التنزيل…</string>
+    <string name="STR_WIDGET_INSTALLED">تم التثبيت.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">الزر</string>
+    <string name="WSS_STR_NO_UPDATE">تم تثبيت آخر التحديثات بالفعل.</string>
+</resources>

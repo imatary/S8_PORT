@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Không thể mở %s. Chạm CÀI ĐẶT, đi đến Thông tin ứng dụng > Quyền, rồi cho phép các quyền sau đây và thử lại:</string>
+    <string name="all_sim">Tất cả</string>
+    <string name="app_name">Màn hình nền</string>
+    <string name="apply">Áp dụng</string>
+    <string name="can_not_set_wallpaper_image_not_found">Không thể đặt ảnh làm hình nền. Không tìm thấy ảnh.</string>
+    <string name="cancel">Thoát</string>
+    <string name="cancle">Hủy</string>
+    <string name="change_wallpaper_when_infinity_applied">Các hiệu ứng vô cực sẽ bị tắt nếu bạn dùng hình nền này.</string>
+    <string name="date_format">E, d MMMM</string>
+    <string name="done">Xong</string>
+    <string name="duplicate_image">Tạo bản sao</string>
+    <string name="expand_image">Mở rộng</string>
+    <string name="fail_to_load">Không thể tải ảnh.</string>
+    <string name="home_lock_screen">Màn hình chờ và màn hình khóa</string>
+    <string name="home_screen">Màn hình chờ</string>
+    <string name="homescreen_checkbox_motion_effect">Hiệu ứng di chuyển</string>
+    <string name="image_too_small">Ảnh quá nhỏ.</string>
+    <string name="item_restricted">Mục bị hạn chế</string>
+    <string name="left_image">Bên trái</string>
+    <string name="lock_screen">Màn hình khóa</string>
+    <string name="motion_effect">Hiệu ứng chuyển động hình nền</string>
+    <string name="motion_wallpaper_name">Hình nền động</string>
+    <string name="notice_low_storage">Không đủ bộ nhớ. Hãy xóa các mục không cần thiết, ví dụ như phần mềm được tải về, ảnh, video và tài liệu.</string>
+    <string name="permission_description">Để sử dụng %s, hãy chạm CÀI ĐẶT, đi đến Thông tin ứng dụng > Quyền, rồi cho phép các quyền sau:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Lưu trữ</string>
+    <string name="processing">Đang xử lý..</string>
+    <string name="request_permission_rationale">Không thể sử dụng %1$s. Chạm CÀI ĐẶT, rồi cấp quyền %2$s và thử lại.</string>
+    <string name="right_image">Phải</string>
+    <string name="set_wallpaper_docomo_text_gui">Ảnh này sẽ hiển thị trên màn hình chờ và màn hình khóa.</string>
+    <string name="settings">Cài đặt</string>
+    <string name="speak_button">Phím</string>
+    <string name="sview_window">Cửa sổ S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Không thể đặt ảnh làm hình nền. Đã xóa ảnh.</string>
+    <string name="unable_to_download">Không thể tải về.</string>
+    <string name="wallpaper_applied_home">Hình nền đã được áp dụng vào màn hình chờ.</string>
+    <string name="wallpaper_applied_home_and_lock">Hình nền đã được áp dụng cho màn hình chờ và màn hình khóa.</string>
+    <string name="wallpaper_applied_lock">Hình nền đã được áp dụng vào màn hình khóa.</string>
+    <string name="wallpaper_applied_multi_lock">Đã áp dụng %d hình nền vào màn hình khóa.</string>
+    <string name="wallpaper_applied_sview">Đã áp dụng hình nền vào cửa sổ S View.</string>
+    <string name="wallpaper_crop_button_done">Xong</string>
+    <string name="wallpaper_instructions">Đặt làm hình nền</string>
+    <string name="wallpaper_lock_gui_cinematic">Giao diện màn hình khóa sẽ thay đổi khi bạn nghiêng thiết bị sang trái và phải.</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">无法打开%s。请点击【设置】，进入【应用程序中心】 > 【权限】，然后授予以下权限并重试：</string>
+    <string name="all_sim">全部</string>
+    <string name="app_name">壁纸</string>
+    <string name="apply">应用</string>
+    <string name="can_not_set_wallpaper_image_not_found">未找到图片，无法将图片设为壁纸。</string>
+    <string name="cancel">取消</string>
+    <string name="cancle">取消</string>
+    <string name="change_wallpaper_when_infinity_applied">如果您使用此壁纸，将关闭 Infinity 效果。</string>
+    <string name="date_format">MMMM d日, E</string>
+    <string name="done">完成</string>
+    <string name="duplicate_image">重复</string>
+    <string name="expand_image">展开</string>
+    <string name="fail_to_load">无法载入</string>
+    <string name="home_lock_screen">主屏幕与锁定屏幕</string>
+    <string name="home_screen">主屏幕</string>
+    <string name="homescreen_checkbox_motion_effect">动作效果</string>
+    <string name="image_too_small">图片太小。</string>
+    <string name="item_restricted">受限项目</string>
+    <string name="left_image">左</string>
+    <string name="lock_screen">锁定屏幕</string>
+    <string name="motion_effect">壁纸动画效果</string>
+    <string name="motion_wallpaper_name">动态壁纸</string>
+    <string name="notice_low_storage">空间不足。删除不必要的项目，如已下载的软件、图片、视频和文档。</string>
+    <string name="permission_description">若要使用%s，请点击【设置】，进入【应用程序信息】>【权限】，然后授予以下权限：</string>
+    <string name="permission_name_read_sms">短信息</string>
+    <string name="permission_name_storage">存储</string>
+    <string name="processing">处理中…</string>
+    <string name="request_permission_rationale">无法使用 %1$s。请点击【设置】，然后授予 %2$s 权限并重试。</string>
+    <string name="right_image">右</string>
+    <string name="set_wallpaper_docomo_text_gui">此图片将在您的主屏幕和锁定屏幕上显示。</string>
+    <string name="settings">设置</string>
+    <string name="speak_button">按钮</string>
+    <string name="sview_window">智能窗口</string>
+    <string name="unable_set_wallpaper_image_deleted">图片已删除，无法将其设为壁纸。</string>
+    <string name="unable_to_download">无法下载。</string>
+    <string name="wallpaper_applied_home">壁纸已应用至主屏幕</string>
+    <string name="wallpaper_applied_home_and_lock">壁纸已应用到主屏幕和锁定屏幕</string>
+    <string name="wallpaper_applied_lock">壁纸已应用至锁定屏幕</string>
+    <string name="wallpaper_applied_multi_lock">%d 张壁纸已应用至锁定屏幕</string>
+    <string name="wallpaper_applied_sview">壁纸已应用到智能窗口</string>
+    <string name="wallpaper_crop_button_done">完成</string>
+    <string name="wallpaper_instructions">设为壁纸</string>
+    <string name="wallpaper_lock_gui_cinematic">当您向左和向右倾斜设备时，锁定屏幕的外观会更改。</string>
+</resources>

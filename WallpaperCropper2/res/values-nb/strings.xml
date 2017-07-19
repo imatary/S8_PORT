@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Kan ikke åpne %s. Trykk på INNSTILLINGER, gå til Appinformasjon > Tillatelser, gi følgende tillatelser, og prøv igjen:</string>
+    <string name="all_sim">Alle</string>
+    <string name="app_name">Bakgrunn</string>
+    <string name="apply">Bruk</string>
+    <string name="can_not_set_wallpaper_image_not_found">Kan ikke angi bildet som bakgrunn. Fant ikke bildet.</string>
+    <string name="cancel">Avbryt</string>
+    <string name="cancle">Avbryt</string>
+    <string name="change_wallpaper_when_infinity_applied">Uendelige effekter blir slått av hvis du bruker denne bakgrunnen.</string>
+    <string name="date_format">E. MMMM d</string>
+    <string name="done">Utført</string>
+    <string name="duplicate_image">Kopier</string>
+    <string name="expand_image">Utvid</string>
+    <string name="fail_to_load">Kan ikke laste bilde.</string>
+    <string name="home_lock_screen">Startskjerm og låseskjerm</string>
+    <string name="home_screen">Startskjerm</string>
+    <string name="homescreen_checkbox_motion_effect">Bevegelseseffekt</string>
+    <string name="image_too_small">Bildet er for lite.</string>
+    <string name="item_restricted">Element begrenset</string>
+    <string name="left_image">Venstre</string>
+    <string name="lock_screen">Låseskjerm</string>
+    <string name="motion_effect">Animert effekt for bakgrunn</string>
+    <string name="motion_wallpaper_name">Animert bakgrunn</string>
+    <string name="notice_low_storage">Ikke nok plass. Slett unødvendige dokumenter, som for eksempel nedlastet programvare, bilder, videoer og dokumenter.</string>
+    <string name="permission_description">For å bruke %s trykker du på INNSTILLINGER, går til Appinformasjon > Tillatelser og tillater følgende tillatelser:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Lagring</string>
+    <string name="processing">Behandler…</string>
+    <string name="request_permission_rationale">Kan ikke bruke %1$s. Trykk på INNSTILLINGER, tillat %2$s-tillatelsen, og prøv igjen.</string>
+    <string name="right_image">Høyre</string>
+    <string name="set_wallpaper_docomo_text_gui">Dette bildet blir vist på startskjermbildet og låseskjermen.</string>
+    <string name="settings">Innstillinger</string>
+    <string name="speak_button">Knapp</string>
+    <string name="sview_window">S View-vindu</string>
+    <string name="unable_set_wallpaper_image_deleted">Kan ikke angi bilde som bakgrunn. Bildet er slettet.</string>
+    <string name="unable_to_download">Kan ikke laste ned.</string>
+    <string name="wallpaper_applied_home">Bakgrunnen blir brukt på startskjermbildet.</string>
+    <string name="wallpaper_applied_home_and_lock">Bakgrunn er tatt i bruk på startskjermbildet og låseskjermen.</string>
+    <string name="wallpaper_applied_lock">Bakgrunnen blir brukt på låseskjermen.</string>
+    <string name="wallpaper_applied_multi_lock">%d bakgrunner blir brukt på låseskjermen.</string>
+    <string name="wallpaper_applied_sview">Bakgrunn er tatt i bruk på S View-vindu.</string>
+    <string name="wallpaper_crop_button_done">OK</string>
+    <string name="wallpaper_instructions">Angi som bakgrunn</string>
+    <string name="wallpaper_lock_gui_cinematic">Utseendet på låseskjermen endres når du vipper enheten til venstre og høyre.</string>
+</resources>

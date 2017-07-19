@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_app_item" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/appinstaller_description" android:layout_marginBottom="@dimen/header_padding_height" android:text="@string/STR_WIDGET_DEFAULT" style="@style/description_text_main" />
+        <include android:id="@id/appItem_listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/layout_applist_v4" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="64.0dip">
+            <View android:background="@color/bottom_bar_divider_color" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/bottom_bar_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_install" android:background="@drawable/tw_btn_ripple" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/STR_BTN_INSTALL" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/layout_no_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/noitem_img_size" android:layout_height="@dimen/noitem_img_size" android:src="@drawable/omc_noitem_ic" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/noitem_noapps_margin_top" android:text="@string/STR_NO_APPS" style="@style/list_no_apps_text" />
+            <TextView android:id="@id/noitem_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/noitem_body_margin_top" android:text="@string/STR_NO_CONTENT" style="@style/list_no_item_body_text" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

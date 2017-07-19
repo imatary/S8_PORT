@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/shadow_imageview" android:layout_width="fill_parent" android:layout_height="@dimen/wallpaper_preview_lock_shadow_height_include" />
+    <LinearLayout android:orientation="vertical" android:id="@id/lockscreen_system_clock_and_Text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallpaper_preview_lock_clock_layout_horizontal_padding" android:layout_marginTop="@dimen/wallpaper_preview_lock_clock_layout_top_padding_include" android:layout_marginRight="@dimen/wallpaper_preview_lock_clock_layout_horizontal_padding" style="@style/CustomClockScreemLayoutView">
+        <LinearLayout android:id="@id/lockscreen_system_clock_layout" android:layout_width="@dimen/wallpaper_preview_lock_datetime_layout_width" android:layout_height="wrap_content">
+            <TextView android:id="@id/lockscreen_system_clock" android:layout_width="wrap_content" android:layout_height="@dimen/wallpaper_preview_lock_clock_height_both_include" style="@style/ClockFontStyleBoth" />
+            <TextView android:id="@id/am_pm_backview" android:layout_width="wrap_content" android:layout_height="@dimen/wallpaper_preview_lock_date_height_both_include" android:layout_marginLeft="@dimen/wallpaper_preview_lock_am_pm_left_padding" style="@style/AmPmFontStyleBoth" />
+        </LinearLayout>
+        <TextView android:id="@id/lockscreen_system_date" android:layout_width="@dimen/wallpaper_preview_lock_datetime_layout_width" android:layout_height="@dimen/wallpaper_preview_lock_date_height_both_include" android:layout_below="@id/lockscreen_system_clock_layout" style="@style/DateFontStyleBoth" />
+    </LinearLayout>
+    <ImageView android:id="@id/lockscreen_call_icon" android:layout_width="@dimen/wallpaper_preview_lock_icon_size_both" android:layout_height="@dimen/wallpaper_preview_lock_icon_size_both" android:layout_marginBottom="@dimen/wallpaper_preview_lock_icon_bottom_margin_both" android:src="@drawable/lock_wallpaper_preview_btn_call_normal" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/wallpaper_preview_lock_icon_horizontal_margin_both" />
+    <ImageView android:id="@id/lockscreen_camera_icon" android:layout_width="@dimen/wallpaper_preview_lock_icon_size_both" android:layout_height="@dimen/wallpaper_preview_lock_icon_size_both" android:layout_marginBottom="@dimen/wallpaper_preview_lock_icon_bottom_margin_both" android:src="@drawable/lock_wallpaper_preview_btn_camera_normal" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/wallpaper_preview_lock_icon_horizontal_margin_both" android:layout_alignParentEnd="true" />
+</RelativeLayout>

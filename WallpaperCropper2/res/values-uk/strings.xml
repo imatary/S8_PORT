@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Неможливо відкрити %s. Торкніться НАЛАШТУВАННЯ, перейдіть до «Відомості про програму» > «Дозволи», потім спробуйте ще раз, увімкнувши наступні дозволи:</string>
+    <string name="all_sim">Всі</string>
+    <string name="app_name">Заставки</string>
+    <string name="apply">Застосувати</string>
+    <string name="can_not_set_wallpaper_image_not_found">Неможливо встановити зображення як заставку. Зображення не знайдено.</string>
+    <string name="cancel">Скасувати</string>
+    <string name="cancle">Скасувати</string>
+    <string name="change_wallpaper_when_infinity_applied">У випадку використання цієї заставки ефекти нескінченності буде вимкнено.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Готово</string>
+    <string name="duplicate_image">Дублювати</string>
+    <string name="expand_image">Розгорнути</string>
+    <string name="fail_to_load">Неможливо завантажити фотографію.</string>
+    <string name="home_lock_screen">Головний екран та екран блокування</string>
+    <string name="home_screen">Головний екран</string>
+    <string name="homescreen_checkbox_motion_effect">Ефект руху</string>
+    <string name="image_too_small">Зображення замале.</string>
+    <string name="item_restricted">Об’єкт обмежено</string>
+    <string name="left_image">Ліворуч</string>
+    <string name="lock_screen">Екран блокування</string>
+    <string name="motion_effect">Ефект анімованої заставки</string>
+    <string name="motion_wallpaper_name">Анімована заставка</string>
+    <string name="notice_low_storage">"Недостатньо місця. Видаліть непотрібні об'єкти, наприклад завантажені програми, зображення, відео та документи."</string>
+    <string name="permission_description">Щоб використовувати %s, торкніться НАЛАШТУВАННЯ, перейдіть до «Інформація про програму» > «Дозволи» та дозвольте наступне:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">"Пам'ять"</string>
+    <string name="processing">Обробка…</string>
+    <string name="request_permission_rationale">Неможливо використати %1$s. Торкніться пункту НАЛАШТУВАННЯ, потім увімкніть дозвіл для %2$s та спробуйте ще раз.</string>
+    <string name="right_image">Праворуч</string>
+    <string name="set_wallpaper_docomo_text_gui">Це зображення буде використовуватися на головному екрані та екрані блокування.</string>
+    <string name="settings">Налаштування</string>
+    <string name="speak_button">Кнопка</string>
+    <string name="sview_window">Вікно S View</string>
+    <string name="unable_set_wallpaper_image_deleted">Неможливо встановити зображення як фонове. Зображення видалено.</string>
+    <string name="unable_to_download">Неможливо завантажити.</string>
+    <string name="wallpaper_applied_home">Заставку застосовано до головного екрана.</string>
+    <string name="wallpaper_applied_home_and_lock">Заставку застосовано до головного екрана та екрана блокування.</string>
+    <string name="wallpaper_applied_lock">Заставку застосовано до екрана блокування.</string>
+    <string name="wallpaper_applied_multi_lock">Заставки (%d) застосовано до екрана блокування.</string>
+    <string name="wallpaper_applied_sview">Заставку застосовано до вікна S View.</string>
+    <string name="wallpaper_crop_button_done">Готово</string>
+    <string name="wallpaper_instructions">Установити як заставку</string>
+    <string name="wallpaper_lock_gui_cinematic">Зовнішній вигляд екрана блокування змінюватиметься при нахиленні пристрою вліво або вправо.</string>
+</resources>

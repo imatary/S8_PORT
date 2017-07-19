@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s kann nicht geöffnet werden. Tippen Sie auf „EINSTELLUNGEN“, wechseln Sie zu „App-Info > Berechtigungen“, geben Sie die folgenden Berechtigungen und versuchen Sie es erneut:</string>
+    <string name="all_sim">Alle</string>
+    <string name="app_name">Hintergrund</string>
+    <string name="apply">Anwenden</string>
+    <string name="can_not_set_wallpaper_image_not_found">Bild kann nicht als Hintergrund festgelegt werden. Bild nicht gefunden.</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="cancle">Abbrechen</string>
+    <string name="change_wallpaper_when_infinity_applied">Endloseffekte werden ausgeschaltet, wenn Sie diesen Hintergrund verwenden.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Fertig</string>
+    <string name="duplicate_image">Duplizieren</string>
+    <string name="expand_image">Erweitern</string>
+    <string name="fail_to_load">Foto konnte nicht geladen werden</string>
+    <string name="home_lock_screen">Start- und Sperrbildschirm</string>
+    <string name="home_screen">Startbildschirm</string>
+    <string name="homescreen_checkbox_motion_effect">Bewegungseffekt</string>
+    <string name="image_too_small">Das Bild ist zu klein</string>
+    <string name="item_restricted">Eingeschr. Artikel</string>
+    <string name="left_image">Links</string>
+    <string name="lock_screen">Sperrbildschirm</string>
+    <string name="motion_effect">Hintergrundbewegungseffekt</string>
+    <string name="motion_wallpaper_name">Bewegungshintergrund</string>
+    <string name="notice_low_storage">Nicht genügend Speicher. Löschen Sie nicht benötigte Daten, wie heruntergeladene Software, Bilder, Videos und Dokumente.</string>
+    <string name="permission_description">Zum Verwenden von %s auf „EINSTELLUNGEN“ tippen, zu „Anwendungs-Info > Berechtigungen“ wechseln und die folgenden Berechtigungen erteilen:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Speicher</string>
+    <string name="processing">Verarbeitung läuft …</string>
+    <string name="request_permission_rationale">%1$s kann nicht verwendet werden. Tippen Sie auf „EINSTELLUNGEN“ und erlauben Sie die %2$s-Berechtigung. Versuchen Sie es anschließend erneut.</string>
+    <string name="right_image">Rechts</string>
+    <string name="set_wallpaper_docomo_text_gui">Das Bild wird auf Ihrem Start- und Sperrbildschirm angezeigt.</string>
+    <string name="settings">Einstellungen</string>
+    <string name="speak_button">Taste</string>
+    <string name="sview_window">S View-Fenster</string>
+    <string name="unable_set_wallpaper_image_deleted">Bild konnte nicht als Hintergrund festgelegt werden. Bild gelöscht.</string>
+    <string name="unable_to_download">Download nicht möglich</string>
+    <string name="wallpaper_applied_home">Hintergrundbild für Startbildschirm übernommen.</string>
+    <string name="wallpaper_applied_home_and_lock">Hintergrund auf Start- und Sperrbildschirm angewendet.</string>
+    <string name="wallpaper_applied_lock">Hintergrundbild für Sperrbildschirm übernommen.</string>
+    <string name="wallpaper_applied_multi_lock">%d Hintergrundbilder für Sperrbildschirm übernommen.</string>
+    <string name="wallpaper_applied_sview">Hintergrundbild auf S View-Fenster angewendet.</string>
+    <string name="wallpaper_crop_button_done">OK</string>
+    <string name="wallpaper_instructions">Als Hintergrund festlegen</string>
+    <string name="wallpaper_lock_gui_cinematic">Das Aussehen des Sperrbildschirms ändert sich, wenn Sie Ihr Gerät nach links und rechts kippen.</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">بازکردن %s ممکن نیست. روی &lt;تنظیمات> ضربه بزنید، به اطلاعات برنامه > مجوزها بروید، سپس به مجوزهای زیر اجازه دهید و دوباره امتحان کنید:</string>
+    <string name="all_sim">همه</string>
+    <string name="app_name">کاغذ دیواری</string>
+    <string name="apply">اعمال</string>
+    <string name="can_not_set_wallpaper_image_not_found">تنظیم تصویر بعنوان عکس پس‌زمینه ممکن نیست. تصویر یافت نشد.</string>
+    <string name="cancel">خیر</string>
+    <string name="cancle">لغو</string>
+    <string name="change_wallpaper_when_infinity_applied">اگر از این عکس پس‌زمینه استفاده کنید جلوه‌های دائمی خاموش خواهد شد.</string>
+    <string name="date_format">MMMM d ,E</string>
+    <string name="done">انجام شد</string>
+    <string name="duplicate_image">همانند سازی</string>
+    <string name="expand_image">باز کردن</string>
+    <string name="fail_to_load">دانلود عکس ممکن نیست.</string>
+    <string name="home_lock_screen">صفحه اصلی و صفحه قفل</string>
+    <string name="home_screen">صفحه اصلی</string>
+    <string name="homescreen_checkbox_motion_effect">جلوه متحرک</string>
+    <string name="image_too_small">تصویر خیلی کوچک است.</string>
+    <string name="item_restricted">مورد محدود شد</string>
+    <string name="left_image">چپ</string>
+    <string name="lock_screen">صفحه قفل</string>
+    <string name="motion_effect">جلوه حرکت تصویرزمینه</string>
+    <string name="motion_wallpaper_name">عکس پس‌زمینه متحرک</string>
+    <string name="notice_low_storage">فضای کافی موجود نیست. موارد غیرضروری مانند نرم افزارها، تصاویر، ویدیوها، و مدارک بارگیری شده را حذف کنید.</string>
+    <string name="permission_description">برای استفاده از %s، روی &lt;تنظیمات> ضربه بزنید، به اطلاعات برنامه > مجوزها بروید، سپس به مجوزهای زیر اجازه دهید:</string>
+    <string name="permission_name_read_sms">پیام کوتاه</string>
+    <string name="permission_name_storage">محل ذخیره</string>
+    <string name="processing">در حال انجام…</string>
+    <string name="request_permission_rationale">استفاده از %1$s ممکن نیست. روی &lt;تنظیمات> ضربه بزنید، سپس به مجوز %2$s اجازه داده و دوباره امتحان کنید.</string>
+    <string name="right_image">راست</string>
+    <string name="set_wallpaper_docomo_text_gui">این تصویر در صفحه‌های اصلی و قفل نشان داده خواهد شد.</string>
+    <string name="settings">تنظیمات</string>
+    <string name="speak_button">دکمه</string>
+    <string name="sview_window">پنجره S View</string>
+    <string name="unable_set_wallpaper_image_deleted">تنظیم به عنوان تصویرزمینه ممکن نیست. تصویر حذف شد.</string>
+    <string name="unable_to_download">دانلود ممکن نیست.</string>
+    <string name="wallpaper_applied_home">عکس پس‌زمینه در صفحه اصلی اجرا شد.</string>
+    <string name="wallpaper_applied_home_and_lock">عکس پس‌زمینه در صفحه اصلی و صفحه قفل اعمال شد.</string>
+    <string name="wallpaper_applied_lock">عکس پس‌زمینه در صفحه قفل اجرا شد.</string>
+    <string name="wallpaper_applied_multi_lock">%d عکس پس‌زمینه در صفحه قفل اعمال شد.</string>
+    <string name="wallpaper_applied_sview">عکس پس‌زمینه در پنجره S View اعمال شد.</string>
+    <string name="wallpaper_crop_button_done">انجام</string>
+    <string name="wallpaper_instructions">تنظیم به‌عنوان عکس پس‌زمینه</string>
+    <string name="wallpaper_lock_gui_cinematic">وقتی دستگاهتان را به چپ و راست کج می‌کنید، ظاهر صفحه قفل تغییر می‌کند.</string>
+</resources>

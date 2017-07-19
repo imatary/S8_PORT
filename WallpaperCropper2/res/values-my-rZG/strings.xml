@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s ဖြင့္၍မရႏိုင္ပါ။ “သတ္မွတ္ခ်က္မ်ား” ကိုႏွိပ္ပါ၊ အက္ပ္ အင္ဖို > ခြင့္ျပဳခ်က္မ်ားသို႔သြားၿပီးေနာက္ ေအာက္ပါခြင့္ျပဳခ်က္မ်ားကို ခြင့္ျပဳၿပီး ထပ္မံႀကိဳးစားပါ :</string>
+    <string name="all_sim">အားလုံး</string>
+    <string name="app_name">ေနာက္ခံပုံရိပ္မ်ား</string>
+    <string name="apply">က်င့္သုံးပါ</string>
+    <string name="can_not_set_wallpaper_image_not_found">ပံုကုိ ေနာက္ခံပံုအျဖစ္ သတ္မွတ္၍ မရပါ။ ပုံကို ရွာမေတြ႕ပါ။</string>
+    <string name="cancel">ပယ္ဖ်က္</string>
+    <string name="cancle">ပယ္ဖ်က္ပါ</string>
+    <string name="change_wallpaper_when_infinity_applied">ဤေနာက္ခံပုံကို သင္အသုံးျပဳပါက မေရမတြက္ႏိုင္ေသာ အထူးျပဳလုပ္ခ်က္မ်ားကို ပိတ္ပါလိမ့္မည္။</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">ၿပီးပါၿပီ</string>
+    <string name="duplicate_image">မိတၱဴ</string>
+    <string name="expand_image">ခ်ဲ႕</string>
+    <string name="fail_to_load">ဓါတ္ပံု ဖြင့္မရပါ။</string>
+    <string name="home_lock_screen">မူလႏွင့္ ဖန္သားျပင္ေသာ့</string>
+    <string name="home_screen">ပင္မဖန္သားျပင္</string>
+    <string name="homescreen_checkbox_motion_effect">Motion effect</string>
+    <string name="image_too_small">ပံုမွာ အလြန္ ေသးလြန္းသည္။</string>
+    <string name="item_restricted">အရာဝတၳဳ ကန္႔သတ္ထားသည္</string>
+    <string name="left_image">ဘယ္ဘက္</string>
+    <string name="lock_screen">ဖန္သားျပင္ေသာ့</string>
+    <string name="motion_effect">ေနာက္ခံပုံရိပ္ လႈပ္ရွားမႈ အထူးျပဳလုပ္ခ်က္</string>
+    <string name="motion_wallpaper_name">လႈပ္ရွားမႈ ေနာက္ခံပုံရိပ္</string>
+    <string name="notice_low_storage">ေနရာမလံု ေလာက္ပါ။ ေဒါင္းလုတ္လုပ္ထားသည့္ ေဆာ့ ဝဲမ်ား၊ ရုပ္ပံုမ်ား၊ ဗြီဒီယိုမ်ားႏွင့္ မွတ္တမ္းမ်ား စသည့္ မလိုေသာအရာမ်ားကို ဖ်က္ပါ။</string>
+    <string name="permission_description">%s ကိုအသုံးျပဳရန္၊ “သတ္မွတ္ခ်က္မ်ား” ကိုႏွိပ္ပါ၊ အပလီေကးရွင္းအင္ဖို > ခြင့္ျပဳခ်က္မ်ားသို႔သြားၿပီး၊ ေအာက္ပါခြင့္ျပဳခ်က္မ်ားကို ခြင့္ျပဳပါ :</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">သုိေလွာင္ခန္း</string>
+    <string name="processing">လုပ္ငန္းေဆာင္ရြက္ေနပါသည္….</string>
+    <string name="request_permission_rationale">%1$s ကုိ သံုးမရႏိုင္ပါ။ “သတ္မွတ္ခ်က္မ်ား” ကိုႏွိပ္ပါ၊ ၿပီးေနာက္ %2$s ခြင့္ျပဳခ်က္ကုိ ခြင့္ျပဳၿပီး ထပ္ႀကိဳးစားပါ။</string>
+    <string name="right_image">ညာဘက္</string>
+    <string name="set_wallpaper_docomo_text_gui">ဤပံုကုိ သင္၏ ပင္မႏွင့္ ေသာ့ခတ္ဖန္သားျပင္မ်ားေပၚတြင္ ျပသပါမည္။</string>
+    <string name="settings">သတ္မွတ္ခ်က္မ်ား</string>
+    <string name="speak_button">ခလုတ္</string>
+    <string name="sview_window">S View ဝင္းဒိုး</string>
+    <string name="unable_set_wallpaper_image_deleted">ေနာက္ခံပုံရိပ္ကဲ့သို႔ သတ္မွတ္၍မရႏိုင္ပါ။ ပုံရိပ္ ဖ်က္ထားသည္။</string>
+    <string name="unable_to_download">ေဒါင္းလုတ္လုပ္၍မရပါ။</string>
+    <string name="wallpaper_applied_home">ေနာက္ခံပုံရိပ္ကို မူလဖန္သားျပင္တြင္ က်င့္သုံးထားသည္။</string>
+    <string name="wallpaper_applied_home_and_lock">မူလဖန္သားျပင္ႏွင့္ ေသာ့ဖန္သားျပင္သို႔ ေနာက္ခံပုံရိပ္ ထည့္သြင္းထားသည္။</string>
+    <string name="wallpaper_applied_lock">ေနာက္ခံပုံရိပ္ကို ေသာ့ဖန္သားျပင္တြက္ က်င့္သုံးထားသည္။</string>
+    <string name="wallpaper_applied_multi_lock">ေသာ့ဖန္သားျပင္တြင္ ေနာက္ခံပုံရိပ္ %d ခုကို က်င့္သုံးထားသည္။</string>
+    <string name="wallpaper_applied_sview">S View ဝင္းဒိုးသို႔ ေနာက္ခံပုံရိပ္ကို က်င့္သုံးထားသည္။</string>
+    <string name="wallpaper_crop_button_done">ၿပီးပါၿပီ</string>
+    <string name="wallpaper_instructions">ေနာက္ခံပုံအျဖစ္ သတ္မွတ္ပါ</string>
+    <string name="wallpaper_lock_gui_cinematic">ေသာ့ဖန္သားျပင္ ပုံသြင္သည္ ကိရိယာကို ဘယ္ႏွင့္ညာသို႔ တိမ္းေစာင္းလိုက္သည့္အခါ ေျပာင္းလဲပါမည္။</string>
+</resources>

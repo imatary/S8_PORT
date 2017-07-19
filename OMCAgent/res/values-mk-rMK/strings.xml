@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s бара ажурирање на апликацијата Android Wear.</string>
+    <string name="common_android_wear_update_text">%1$s нема да се извршува ако не ја ажурирате апликацијата Android Wear.</string>
+    <string name="common_android_wear_update_title">Ажурирај Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s бара една или повеќе услуги на Google Play што не се достапни во моментов. Контактирајте со програмерот за помош.</string>
+    <string name="common_google_play_services_enable_button">Овозможи ги услугите на Google Play</string>
+    <string name="common_google_play_services_enable_text">%1$s нема да се извршува ако не овозможите услуги на Google Play.</string>
+    <string name="common_google_play_services_enable_title">Овозможи ги услугите на Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Побарал %1$s</string>
+    <string name="common_google_play_services_install_button">Преземи ги услугите на Google Play</string>
+    <string name="common_google_play_services_install_text_phone">%1$s нема да се извршува без услугите на Google Play што ги нема на телефонот.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s нема да се извршува без услугите на Google Play што ги нема на таблетот.</string>
+    <string name="common_google_play_services_install_title">Преземи ги услугите на Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Наведената сметка не постои на овој уред. Изберете друга сметка.</string>
+    <string name="common_google_play_services_invalid_account_title">Неважечка сметка</string>
+    <string name="common_google_play_services_needs_enabling_title">Апликацијата бара да се овозможат услугите на Google Play.</string>
+    <string name="common_google_play_services_network_error_text">Потребно е поврзување податоци за да се поврзете со услугите на Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Мрежна грешка</string>
+    <string name="common_google_play_services_notification_needs_update_title">Апликацијата бара да се ажурираат услугите на Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Грешка на услугите на Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Грешка при пријавување во наведената сметка. Изберете друга сметка.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Пријавувањето не успеа</string>
+    <string name="common_google_play_services_unknown_issue">Непознат проблем со услугите на Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s се потпира на услуги на Google Play што вашиот уред не ги поддржува. Контактирајте со производителот за помош.</string>
+    <string name="common_google_play_services_unsupported_title">Услуги на Google Play</string>
+    <string name="common_google_play_services_update_button">Ажурирај</string>
+    <string name="common_google_play_services_update_text">%1$s нема да се извршува ако не ги ажурирате услугите на Google Play.</string>
+    <string name="common_google_play_services_update_title">Ажурирај ги услугите на Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s нема да се извршува без услугите на Google Play што се ажурираат во моментов.</string>
+    <string name="common_google_play_services_updating_title">Услугите на Google Play се ажурираат</string>
+    <string name="common_open_on_phone">Отвори на телефонот</string>
+    <string name="common_signin_button_text">Најави се</string>
+    <string name="common_signin_button_text_long">Најави се со Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Големина на дополнителните содржини: %1$s %2$s</string>
+    <string name="STR_ALL">Сите</string>
+    <string name="STR_APPS_DESCRIPTION">Изберете апликации препорачани од Вашиот оператор.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Сите Ваши избрани апликации се преземени.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Откажи</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Изберете апликации препорачани од Вашиот оператор.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Изберете ги апликациите што сакате да ги инсталирате.</string>
+    <string name="STR_APP_INSTALL_TITLE">Инсталирај апликации</string>
+    <string name="STR_APP_STATE_CANCELED">Откажано</string>
+    <string name="STR_APP_STATE_CONNECTING">Се поврзува…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Се презема…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Неуспешно преземање.</string>
+    <string name="STR_APP_STATE_INSTALLED">Инсталирано</string>
+    <string name="STR_APP_STATE_INSTALLING">Инсталирање…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Неуспешно инсталирање</string>
+    <string name="STR_APP_STATE_WAITING">Чекање…</string>
+    <string name="STR_BTN_INSTALL">Инсталирај</string>
+    <string name="STR_BTN_INSTALL_ALL">Инсталирај ги сите</string>
+    <string name="STR_BTN_SKIP">Скокни</string>
+    <string name="STR_BUTTON_NEXT">Следно</string>
+    <string name="STR_CAUTION_BODY">По преземањето, рестартирајте за да го инсталирате ажурирањето. Нема да можете да го користите телефонот, дури ни за итни повици, сѐ додека не заврши инсталирањето.</string>
+    <string name="STR_CAUTION_BODY2">По ажурирањето, некои поставки може да се ресетираат на нивните основни вредности.</string>
+    <string name="STR_CHARING_DIALOG">Преземањето со користење мобилни податоци може да се наплаќа дополнително.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Да се преземе со мобилни податоци?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Поврзување со серверот</string>
+    <string name="STR_CONNECT_FAIL">Неуспешно поврзување. Обидете се подоцна.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Преземи ажурирања…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Се презема…</string>
+    <string name="STR_DOWNLOAD_FAIL">Преземањето не успеа. Обидете се подоцна.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">За да ги користите најновите функции, преземете го и инсталирајте го ова ажурирање на фирминиот софтвер.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Преземањето не успеа. Обидете се подоцна.</string>
+    <string name="STR_FAILED_NOTI">Неуспешно преземање.</string>
+    <string name="STR_INITIAL_NOTI">Допрете тука за да ги изберете препорачаните апликации за преземање.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Допрете тука за да го преземете и инсталирате ажурирањето.</string>
+    <string name="STR_INSTALLED_NOTI">%d се инсталирани</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Инсталирајте дополнителна содржина</string>
+    <string name="STR_INSTALL_CAUTIONS">Внимание</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Ова ажурирање вклучува опционални апликации и содржини. Преземањето преку мобилни мрежи може да се наплаќа дополнително, зависно од Вашиот пакет.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Преземено.</string>
+    <string name="STR_INSTALL_FORCE">Критичното софтверско ажурирање е преземено. Уредот ќе се рестартира за %d секунди за да почне инсталацијата.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Дознај повеќе</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Треба да сте поврзани со Wi-Fi за да преземете апликации. Поврзете се со Wi-Fi и обидете се повторно.</string>
+    <string name="STR_NEED_WIFI_TITLE">Нема поврзување Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Не е достапна мрежа. Обидете се повторно подоцна.</string>
+    <string name="STR_NO_APPS">Нема апликации</string>
+    <string name="STR_NO_CONTENT">Достапните апликации издадени од Вашиот оператор ќе се прикажат тука.</string>
+    <string name="STR_NO_ITEMS">Нема записи</string>
+    <string name="STR_NO_ITEM_SELECTED">Не се избрани содржини.</string>
+    <string name="STR_OMC_HEADER">Ажурирање на операторот</string>
+    <string name="STR_OMC_SIZE">Големина: %s</string>
+    <string name="STR_OMC_TITLE">Ажур. на конфигурација</string>
+    <string name="STR_OMC_VERSION">Верзија: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Поставувања за операторот</string>
+    <string name="STR_PROCESS_FAIL">Неуспешно обработување.</string>
+    <string name="STR_PROVIDER_APPS">Апликации на операторот</string>
+    <string name="STR_REGISTERING_DEVICE">Се регистрира уредот…</string>
+    <string name="STR_REGISTER_FAIL">Неуспешна регистрација.</string>
+    <string name="STR_REGISTER_SUCCESS">Уредот е регистриран.</string>
+    <string name="STR_RESTART_BTN_LATER">Подоцна</string>
+    <string name="STR_RESTART_BTN_RESTART">Рестартир.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">За да завршите со инсталирање на ажурирањето на софтверот на операторот, треба да го рестартирате телефонот.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">За да завршите со инсталирање на ажурирањето на софтверот на операторот, треба да го рестартирате таблетот.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Да се рестартира?</string>
+    <string name="STR_RESTART_PHONE">Рестартирајте го телефонот</string>
+    <string name="STR_RESTART_TABLET">Рестартирајте го таблетот</string>
+    <string name="STR_SELECT_ALL">Сите од следниве апликации</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Суштински апликации</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Не важат трошоци за податоците за преземање на апликациите подолу.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Допрете запис подолу за да дознаете повеќе за него.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Апликациите ќе се преземат преку Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Добијте апликации од операторот</string>
+    <string name="STR_UPDATE_BODY1">Преземањето со користење мобилни податоци може да се наплаќа дополнително.</string>
+    <string name="STR_UPDATE_BODY2">Телефонот ќе се рестартира откако ќе се инсталира ажурирањето.</string>
+    <string name="STR_UPDATE_FAIL">Неуспешно ажурирање. Обидете се повторно.</string>
+    <string name="STR_UPDATE_HEADER1">Преземете и инсталирајте го најновиот софтвер од Вашиот оператор.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Нема да Ви се наплати ова инсталирање на фирмин софтвер.
+
+- При инсталирањето нема воопшто да може да го користите уредот, дури ни за итни повици.
+
+- Иконите на почетниот екран и поставувањата на уредот може да се ресетираат на нивните основни вредности и можеби ќе треба да се преконфигурираат по инсталирањето.
+
+- Ажурирањето на фирмин софтвер не би требало да влијае врз датотеките и податоците на уредот.
+
+- Сепак, ако го сопрете процесот на инсталирање пред тој да заврши, уредот може да не функционира нормално и Вашите датотеки може да се изгубат како последица на тоа.
+
+- За да избегнете неочекувано губење на податоците, препорачуваме да создадете резервна копија од важните податоци пред инсталирањето."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Рестартирајте за да завршите со инсталирање на ажурирањето на софтверот на операторот.</string>
+    <string name="STR_UPDATING_PACKAGE">Се ажурира…</string>
+    <string name="STR_USE_DATA_BTN">Користи податоци</string>
+    <string name="STR_WAIT_FOR_WIFI">"Инсталирањето на апликацијата е паузирано.
+Почекајте Wi-Fi да ги инсталира апликациите."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Почекај Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Инсталирајте апликации препорачани од операторот.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Се презема…</string>
+    <string name="STR_WIDGET_INSTALLED">Инсталирано.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Копче</string>
+    <string name="WSS_STR_NO_UPDATE">Последните ажурирања се веќе инсталирани.</string>
+</resources>

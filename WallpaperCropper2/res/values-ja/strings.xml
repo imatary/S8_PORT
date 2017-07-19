@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%sを起動できません。[設定]をタップし、[アプリケーション情報] > [権限]に移動して、次の権限を許可してから再度実行してください。</string>
+    <string name="all_sim">全て</string>
+    <string name="app_name">壁紙</string>
+    <string name="apply">適用</string>
+    <string name="can_not_set_wallpaper_image_not_found">画像が見つからないため、壁紙に設定できません。</string>
+    <string name="cancel">キャンセル</string>
+    <string name="cancle">キャンセル</string>
+    <string name="change_wallpaper_when_infinity_applied">この壁紙を使用すると、[インフィニティ壁紙]のエフェクトはOFFになります。</string>
+    <string name="date_format">MMMMd日(E)</string>
+    <string name="done">完了</string>
+    <string name="duplicate_image">重複</string>
+    <string name="expand_image">最大化</string>
+    <string name="fail_to_load">画像を読み込めません。</string>
+    <string name="home_lock_screen">ホーム画面と​ロック画面</string>
+    <string name="home_screen">ホーム画面</string>
+    <string name="homescreen_checkbox_motion_effect">モーションエフェクト</string>
+    <string name="image_too_small">画像が小さすぎます。</string>
+    <string name="item_restricted">制限されたアイテム</string>
+    <string name="left_image">左</string>
+    <string name="lock_screen">ロック画面</string>
+    <string name="motion_effect">壁紙モーションエフェクト</string>
+    <string name="motion_wallpaper_name">モーション壁紙</string>
+    <string name="notice_low_storage">空き容量が低下しています。ダウンロードしたソフトウェア、画像、動画、ドキュメント等で不要なアイテムを削除してください。</string>
+    <string name="permission_description">%sを使用するには、[設定]をタップし、[アプリケーション情報] > [権限]に移動して、次の権限を許可してください。</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">ストレージ</string>
+    <string name="processing">処理中…</string>
+    <string name="request_permission_rationale">%1$sを使用できません。[設定]をタップし、%2$sの権限を許可してから再度実行してください。</string>
+    <string name="right_image">右</string>
+    <string name="set_wallpaper_docomo_text_gui">この画像をホーム画面とロック画面に表示します。</string>
+    <string name="settings">設定</string>
+    <string name="speak_button">ボタン</string>
+    <string name="sview_window">Sビューウィンドウ</string>
+    <string name="unable_set_wallpaper_image_deleted">画像を壁紙に設定できません。画像が削除されています。</string>
+    <string name="unable_to_download">ダウンロードできません。</string>
+    <string name="wallpaper_applied_home">ホーム画面に壁紙を適用しました。</string>
+    <string name="wallpaper_applied_home_and_lock">壁紙をホーム画面とロック画面に適用しました。</string>
+    <string name="wallpaper_applied_lock">ロック画面に壁紙を適用しました。</string>
+    <string name="wallpaper_applied_multi_lock">%d件の壁紙をロック画面に適用しました。</string>
+    <string name="wallpaper_applied_sview">壁紙をSビューウィンドウに適用しました。</string>
+    <string name="wallpaper_crop_button_done">完了</string>
+    <string name="wallpaper_instructions">壁紙に設定</string>
+    <string name="wallpaper_lock_gui_cinematic">ロック画面で端末を左右に傾けると、壁紙が変化します。</string>
+</resources>

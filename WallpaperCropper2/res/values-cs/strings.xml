@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Nepodařilo se spustit %s. Klepněte na NASTAVENÍ, přejděte na Informace o aplikaci > Oprávnění a potom povolte následující oprávnění a opakujte akci:</string>
+    <string name="all_sim">Vše</string>
+    <string name="app_name">Pozadí</string>
+    <string name="apply">Použít</string>
+    <string name="can_not_set_wallpaper_image_not_found">Obrázek nelze nastavit jako pozadí. Obrázek nebyl nalezen.</string>
+    <string name="cancel">Zrušit</string>
+    <string name="cancle">Zrušit</string>
+    <string name="change_wallpaper_when_infinity_applied">Pokud použijete toto pozadí, Nekonečné efekty budou vypnuty.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Hotovo</string>
+    <string name="duplicate_image">Duplikát</string>
+    <string name="expand_image">Rozbalit</string>
+    <string name="fail_to_load">Fotografii se nepodařilo načíst.</string>
+    <string name="home_lock_screen">Domovská a zamknutá obrazovka</string>
+    <string name="home_screen">Domovská obrazovka</string>
+    <string name="homescreen_checkbox_motion_effect">Pohybový efekt</string>
+    <string name="image_too_small">Obrázek je příliš malý.</string>
+    <string name="item_restricted">Omezená položka</string>
+    <string name="left_image">Levá</string>
+    <string name="lock_screen">Zamknout displej</string>
+    <string name="motion_effect">Efekt pohybu pozadí</string>
+    <string name="motion_wallpaper_name">Pohyblivé pozadí</string>
+    <string name="notice_low_storage">Nedostatek místa. Odstraňte zbytečné položky, např. stažený software, obrázky, videa a dokumenty.</string>
+    <string name="permission_description">Chcete-li použít %s, klepněte na tlačítko NASTAVENÍ, přejděte na Informace o aplikaci > Oprávnění, a potom povolte následující oprávnění:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Úložiště</string>
+    <string name="processing">Probíhá zpracování…</string>
+    <string name="request_permission_rationale">Nelze použít %1$s. Klepněte na NASTAVENÍ a potom povolte oprávnění %2$s a opakujte akci.</string>
+    <string name="right_image">Pravá</string>
+    <string name="set_wallpaper_docomo_text_gui">Tento obrázek se zobrazí na domovské a zamykací obrazovce.</string>
+    <string name="settings">Nastavení</string>
+    <string name="speak_button">Tlačítko</string>
+    <string name="sview_window">Okno S průhledné pouzdro</string>
+    <string name="unable_set_wallpaper_image_deleted">Obrázek nelze nastavit jako pozadí. Obrázek byl odstraněn.</string>
+    <string name="unable_to_download">Nelze stáhnout.</string>
+    <string name="wallpaper_applied_home">Pozadí je použito na domovské obrazovce.</string>
+    <string name="wallpaper_applied_home_and_lock">Pozadí bylo použito pro domovskou obrazovku a zamykací obrazovku.</string>
+    <string name="wallpaper_applied_lock">Pozadí je použito na zamykací obrazovce.</string>
+    <string name="wallpaper_applied_multi_lock">Na zamykací obrazovce je použito %d pozadí.</string>
+    <string name="wallpaper_applied_sview">Pro okno S View bylo použito pozadí.</string>
+    <string name="wallpaper_crop_button_done">Hot.</string>
+    <string name="wallpaper_instructions">Nastavit jako pozadí</string>
+    <string name="wallpaper_lock_gui_cinematic">Vzhled zamykací obrazovky se změní, když nakloníte zařízení doleva a doprava.</string>
+</resources>

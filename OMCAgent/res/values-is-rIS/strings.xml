@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s krefst uppfærslu á Android Wear forritinu.</string>
+    <string name="common_android_wear_update_text">%1$s getur ekki keyrt nema þú uppfærir Android Wear forritið.</string>
+    <string name="common_android_wear_update_title">Uppfærðu Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s krefst einhverrar Google Play þjónustu sem ekki er tiltæk sem stendur. Hafðu samband við þróunaraðilann til að fá aðstoð.</string>
+    <string name="common_google_play_services_enable_button">Virkja þjónustu Google Play</string>
+    <string name="common_google_play_services_enable_text">%1$s virkar ekki nema þú gerir þjónustu Google Play virka.</string>
+    <string name="common_google_play_services_enable_title">Virkja þjónustu Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s bað um</string>
+    <string name="common_google_play_services_install_button">Sækja þjónustu Google Play</string>
+    <string name="common_google_play_services_install_text_phone">%1$s getur ekki keyrt án þjónustu Google Play, sem vantar í símann þinn.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s getur ekki keyrt án þjónustu Google Play, sem vantar í spjaldtölvuna þína.</string>
+    <string name="common_google_play_services_install_title">Sækja þjónustu Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">Tilgreindur reikningur er ekki til staðar í þessu tæki. Veldu annan reikning.</string>
+    <string name="common_google_play_services_invalid_account_title">Ógildur reikningur</string>
+    <string name="common_google_play_services_needs_enabling_title">Forrit krefst þess að þjónusta Google Play sé virk.</string>
+    <string name="common_google_play_services_network_error_text">Gagnatengingar er krafist til að tengjast þjónustu Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Netvilla</string>
+    <string name="common_google_play_services_notification_needs_update_title">Forrit krefst þess að þjónusta Google Play sé uppfærð.</string>
+    <string name="common_google_play_services_notification_ticker">Villa í þjónustu Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Villa við að skrá tilgreindan reikning inn. Veldu annan reikning.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Innskráning mistókst</string>
+    <string name="common_google_play_services_unknown_issue">Óþekkt vandamál með þjónustu Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s reiðir sig á þjónustu Google Play, sem er ekki studd í tækinu þínu. Hafðu samband við framleiðandann til að fá aðstoð.</string>
+    <string name="common_google_play_services_unsupported_title">Þjónusta Google Play</string>
+    <string name="common_google_play_services_update_button">Uppfæra</string>
+    <string name="common_google_play_services_update_text">%1$s getur ekki keyrt nema þú uppfærir þjónustu Google Play.</string>
+    <string name="common_google_play_services_update_title">Uppfæra þjónustu Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s getur ekki keyrt án þjónustu Google Play, sem verið er að uppfæra.</string>
+    <string name="common_google_play_services_updating_title">Verið er að uppfæra þjónustu Google Play</string>
+    <string name="common_open_on_phone">Opna í símanum</string>
+    <string name="common_signin_button_text">Skrá inn</string>
+    <string name="common_signin_button_text_long">Skrá inn með Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Stærð viðbótarefnis: %1$s %2$s</string>
+    <string name="STR_ALL">Allt</string>
+    <string name="STR_APPS_DESCRIPTION">Veldu forrit sem símafyrirtækið þitt mælir með.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Öll valin forrit voru sótt.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Hætta v.</string>
+    <string name="STR_APP_BUTTON_OK">Í lagi</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Veldu forrit sem símafyrirtækið þitt mælir með.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Veldu forritin sem þú vilt setja upp.</string>
+    <string name="STR_APP_INSTALL_TITLE">Setja upp forrit</string>
+    <string name="STR_APP_STATE_CANCELED">Hætt við</string>
+    <string name="STR_APP_STATE_CONNECTING">Tengist…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Sæki…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Það er ekki hægt að hlaða niður.</string>
+    <string name="STR_APP_STATE_INSTALLED">Uppsett</string>
+    <string name="STR_APP_STATE_INSTALLING">Verið er að setja upp…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Uppsetning mistókst</string>
+    <string name="STR_APP_STATE_WAITING">Bið…</string>
+    <string name="STR_BTN_INSTALL">Setja upp</string>
+    <string name="STR_BTN_INSTALL_ALL">Setja upp öll</string>
+    <string name="STR_BTN_SKIP">Sleppa</string>
+    <string name="STR_BUTTON_NEXT">Næsta</string>
+    <string name="STR_CAUTION_BODY">Eftir niðurhalið skaltu endurræsa símann til að setja uppfærsluna upp. Þú getur ekki notað símann, jafnvel til að hringja neyðarsímtöl, fyrr en uppfærslunni er lokið.</string>
+    <string name="STR_CAUTION_BODY2">Eftir uppfærsluna kunna einhverjar stillingar að vera endurstilltar á sjálfgefin gildi.</string>
+    <string name="STR_CHARING_DIALOG">Niðurhal með farsímagögnum getur haft viðbótarkostnað í för með sér.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Viltu sækja með farsímagögnum?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Verið er að tengjast netþjóni</string>
+    <string name="STR_CONNECT_FAIL">Tenging tókst ekki. Reyndu síðar.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Sæki uppfærslur…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Sæki…</string>
+    <string name="STR_DOWNLOAD_FAIL">Niðurhal mistókst. Reyndu aftur síðar.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Sæktu og settu upp þessa uppfærslu fastbúnaðar til að geta notað nýjustu eiginleikana.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Niðurhal mistókst. Reyndu aftur síðar.</string>
+    <string name="STR_FAILED_NOTI">Það er ekki hægt að hlaða niður.</string>
+    <string name="STR_INITIAL_NOTI">Pikka hér til að velja forrit sem mælt er með að séu sótt.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Pikka hér til að sækja uppfærsluna og setja hana upp.</string>
+    <string name="STR_INSTALLED_NOTI">%d uppsett</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Setja upp viðbótarefni</string>
+    <string name="STR_INSTALL_CAUTIONS">Varúð</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Þessi uppfærsla innheldur viðbótarforrit og efni. Niðurhal um farsímakerfi kann að hafa viðbótarkostnað í för með sér, allt eftir áskrift.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Halað niður.</string>
+    <string name="STR_INSTALL_FORCE">Mikilvæga hugbúnaðaruppfærslan hefur verið sótt. Tækið verður endurræst eftir %d sekúndur til að hefja uppsetningu.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Frekari upplýsingar</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Þú þarft að vera tengd(ur) við Wi-Fi net til að sækja forrit. Tengstu Wi-Fi neti og reyndu aftur.</string>
+    <string name="STR_NEED_WIFI_TITLE">Engin Wi-Fi tenging</string>
+    <string name="STR_NETWORK_FAIL">Símkerfið er ekki tiltækt. Reyndu aftur síðar.</string>
+    <string name="STR_NO_APPS">Engin forrit</string>
+    <string name="STR_NO_CONTENT">Tiltæk forrit frá símafyrirtækinu þínu verða birt hér.</string>
+    <string name="STR_NO_ITEMS">Engin atriði</string>
+    <string name="STR_NO_ITEM_SELECTED">Það eru engir hlutir valdir.</string>
+    <string name="STR_OMC_HEADER">Uppfærsla frá símafyrirtæki</string>
+    <string name="STR_OMC_SIZE">Stærð: %s</string>
+    <string name="STR_OMC_TITLE">Uppfærsla grunnstillinga</string>
+    <string name="STR_OMC_VERSION">Útgáfa: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Stillingar símafyrirtækis</string>
+    <string name="STR_PROCESS_FAIL">Vinnsla brást.</string>
+    <string name="STR_PROVIDER_APPS">Forrit frá símafyrirtæki</string>
+    <string name="STR_REGISTERING_DEVICE">Skrái tæki…</string>
+    <string name="STR_REGISTER_FAIL">Skráning mistókst.</string>
+    <string name="STR_REGISTER_SUCCESS">Tæki skráð.</string>
+    <string name="STR_RESTART_BTN_LATER">Síðar</string>
+    <string name="STR_RESTART_BTN_RESTART">Endurræsa</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Til að ljúka við uppsetningu á hugbúnaðaruppfærslu frá símafyrirtækinu þarftu að endurræsa símann.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Til að ljúka við uppsetningu á hugbúnaðaruppfærslu frá símafyrirtækinu þarftu að endurræsa spjaldtölvuna.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Viltu endurræsa?</string>
+    <string name="STR_RESTART_PHONE">Endurræsa síma</string>
+    <string name="STR_RESTART_TABLET">Endurræsa spjaldtölvu</string>
+    <string name="STR_SELECT_ALL">Öll eftirfarandi forrit</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Grunnforrit</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Engin gjöld eru innheimt fyrir niðurhal á forritunum hér að neðan.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Pikkaðu á atriði hér fyrir neðan til að fá frekari upplýsingar um það.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Forrit verða sótt um Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Fáðu forrit frá símafyrirtækinu</string>
+    <string name="STR_UPDATE_BODY1">Niðurhal með farsímagögnum getur haft viðbótarkostnað í för með sér.</string>
+    <string name="STR_UPDATE_BODY2">Síminn verður endurræstur þegar uppfærslan er uppsett.</string>
+    <string name="STR_UPDATE_FAIL">Uppfærsla mistókst. Reyndu aftur.</string>
+    <string name="STR_UPDATE_HEADER1">Sæktu nýjasta hugbúnaðinn frá símafyrirtækinu og settu hann upp.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Ekki er tekið gjald fyrir þessa uppsetningu fastbúnaðar.
+
+- Meðan á uppsetningu stendur geturðu ekki notað tækið, ekki einu sinni fyrir neyðarsímtöl.
+
+- Tákn á heimaskjánum og tækjastillingar gætu verið endurstilltar og því þarf hugsanlega að stilla þessa hluti á ný eftir uppsetningu.
+
+- Uppsetning fastbúnaðar á ekki að hafa áhrif á skrár og gögn í tækinu.
+
+- Ef þú stöðvar uppsetningarferlið hins vegar áður en því lýkur er ekki víst að tækið virki rétt og gögnin þín gætu tapast.
+
+- Við mælum með að þú takir afrit af mikilvægum gögnum fyrir uppsetningu til að koma í veg fyrir óvænt gagnatap."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Endurræsingar er krafist til að ljúka við uppsetningu á hugbúnaðaruppfærslu frá símafyrirtækinu.</string>
+    <string name="STR_UPDATING_PACKAGE">Verið er að uppfæra…</string>
+    <string name="STR_USE_DATA_BTN">Nota gögn</string>
+    <string name="STR_WAIT_FOR_WIFI">"Hlé gert á uppsetningu forrits.
+Beðið eftir Wi-Fi tengingu til að setja upp forrit."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Bíða eftir Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Settu upp forrit sem símafyrirtækið þitt mælir með.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Sækir …</string>
+    <string name="STR_WIDGET_INSTALLED">Uppsett.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Hnappur</string>
+    <string name="WSS_STR_NO_UPDATE">Nýjustu uppfærslur hafa þegar verið settar upp.</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Für %1$s ist eine Aktualisierung der Android Wear App erforderlich.</string>
+    <string name="common_android_wear_update_text">%1$s funktioniert erst nach der Aktualisierung der Android Wear App.</string>
+    <string name="common_android_wear_update_title">Android Wear aktualisieren</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s erfordert einen oder mehrere Google Play-Dienste, die derzeit nicht verfügbar sind. Bitte wenden Sie sich an den Entwickler, um Unterstützung zu erhalten.</string>
+    <string name="common_google_play_services_enable_button">Google Play-Dienste aktivieren</string>
+    <string name="common_google_play_services_enable_text">%1$s funktioniert erst nach der Aktivierung der Google Play-Dienste.</string>
+    <string name="common_google_play_services_enable_title">Google Play-Dienste aktivieren</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Angefordert von %1$s</string>
+    <string name="common_google_play_services_install_button">Google Play-Dienste installieren</string>
+    <string name="common_google_play_services_install_text_phone">Zur Nutzung von %1$s sind Google Play-Dienste erforderlich, die auf Ihrem Smartphone nicht installiert sind.</string>
+    <string name="common_google_play_services_install_text_tablet">Zur Nutzung von %1$s sind Google Play-Dienste erforderlich, die auf Ihrem Tablet nicht installiert sind.</string>
+    <string name="common_google_play_services_install_title">Google Play-Dienste installieren</string>
+    <string name="common_google_play_services_invalid_account_text">Das angegebene Konto ist auf diesem Gerät nicht vorhanden. Bitte wählen Sie ein anderes Konto aus.</string>
+    <string name="common_google_play_services_invalid_account_title">Ungültiges Konto</string>
+    <string name="common_google_play_services_needs_enabling_title">App erfordert die Aktivierung der Google Play-Dienste</string>
+    <string name="common_google_play_services_network_error_text">Um eine Verbindung zu den Google Play-Diensten herzustellen, ist eine Datenverbindung erforderlich.</string>
+    <string name="common_google_play_services_network_error_title">Netzwerkfehler</string>
+    <string name="common_google_play_services_notification_needs_update_title">App erfordert ein Update der Google Play-Dienste</string>
+    <string name="common_google_play_services_notification_ticker">Fehler bei Zugriff auf Google Play-Dienste</string>
+    <string name="common_google_play_services_sign_in_failed_text">Fehler beim Anmelden im angegebenen Konto. Bitte wählen Sie ein anderes Konto aus.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Anmeldung fehlgeschlagen</string>
+    <string name="common_google_play_services_unknown_issue">Unbekanntes Problem mit Google Play-Diensten</string>
+    <string name="common_google_play_services_unsupported_text">Zur Nutzung von %1$s sind Google Play-Dienste erforderlich. Diese werden auf Ihrem Gerät jedoch nicht unterstützt. Wenden Sie sich für weitere Informationen an den Hersteller.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play-Dienste</string>
+    <string name="common_google_play_services_update_button">Aktualisieren</string>
+    <string name="common_google_play_services_update_text">%1$s wird nur ausgeführt, wenn Sie die Google Play-Dienste aktualisieren.</string>
+    <string name="common_google_play_services_update_title">Google Play-Dienste aktualisieren</string>
+    <string name="common_google_play_services_updating_text">Zur Nutzung von %1$s sind Google Play-Dienste erforderlich, die gerade aktualisiert werden.</string>
+    <string name="common_google_play_services_updating_title">Google Play-Dienste werden aktualisiert</string>
+    <string name="common_open_on_phone">Auf Telefon öffnen</string>
+    <string name="common_signin_button_text">Anmelden</string>
+    <string name="common_signin_button_text_long">Über Google anmelden</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Zusätzliche Inhaltsgröße: %1$s %2$s</string>
+    <string name="STR_ALL">Alle</string>
+    <string name="STR_APPS_DESCRIPTION">Wählen Sie von Ihrem Dienstanbieter empfohlene Apps aus.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Alle von Ihnen ausgewählten Apps wurden heruntergeladen.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Abbruch</string>
+    <string name="STR_APP_BUTTON_OK">OK</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Wählen Sie von Ihrem Dienstanbieter empfohlene Apps aus.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Wählen Sie die zu installierenden Apps aus.</string>
+    <string name="STR_APP_INSTALL_TITLE">Installieren von Apps</string>
+    <string name="STR_APP_STATE_CANCELED">Storniert</string>
+    <string name="STR_APP_STATE_CONNECTING">Wird verbunden…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Wird heruntergeladen…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Herunterladen fehlgeschlagen</string>
+    <string name="STR_APP_STATE_INSTALLED">Installiert</string>
+    <string name="STR_APP_STATE_INSTALLING">Installiere…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Installationsfehler</string>
+    <string name="STR_APP_STATE_WAITING">Warten…</string>
+    <string name="STR_BTN_INSTALL">Installieren</string>
+    <string name="STR_BTN_INSTALL_ALL">Alle installieren</string>
+    <string name="STR_BTN_SKIP">Überspringen</string>
+    <string name="STR_BUTTON_NEXT">Weiter</string>
+    <string name="STR_CAUTION_BODY">Starten Sie die Update-Installation nach dem Download erneut. Sie können Ihr Telefon bis zur Beendigung der Installation nicht verwenden, auch nicht für Notrufe.</string>
+    <string name="STR_CAUTION_BODY2">Nach dem Update werden einige Einstellungen möglicherweise auf die Standardwerte zurückgesetzt.</string>
+    <string name="STR_CHARING_DIALOG">Das Herunterladen mit mobilen Daten kann zusätzliche Kosten verursachen.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Mit mobilen Daten herunterladen?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Verbindung zum Server wird hergestellt</string>
+    <string name="STR_CONNECT_FAIL">Verbindungsfehler. Später erneut versuchen</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Updates werden heruntergeladen…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Lade…</string>
+    <string name="STR_DOWNLOAD_FAIL">Download fehlgeschlagen. Später erneut versuchen</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Wenn Sie die neuesten Funktionen verwenden möchten, laden und installieren Sie dieses Firmware-Update.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Download fehlgeschlagen. Später erneut versuchen</string>
+    <string name="STR_FAILED_NOTI">Herunterladen fehlgeschlagen</string>
+    <string name="STR_INITIAL_NOTI">Hier tippen, um empfohlene Apps für den Download auszuwählen.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Hier tippen, um das Update herunterzuladen und zu installieren.</string>
+    <string name="STR_INSTALLED_NOTI">%d installiert</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Zusätzlichen Inhalt installieren</string>
+    <string name="STR_INSTALL_CAUTIONS">Warnung</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Dieses Update enthält optionale Apps und optionalen Inhalt. Beim Herunterladen über ein mobiles Netz fallen je nach Tarif möglicherweise zusätzliche Gebühren an.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Heruntergeladen</string>
+    <string name="STR_INSTALL_FORCE">Ihr wichtiges Software-Update wurde heruntergeladen. Ihr Gerät wird in %d Sekunden neu gestartet, und die Installation beginnt.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Mehr Infos</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Es muss eine WLAN-Verbindung bestehen, um Apps herunterzuladen. Stellen Sie eine WLAN-Verbindung her und versuchen Sie es erneut.</string>
+    <string name="STR_NEED_WIFI_TITLE">Keine WLAN-Verbindung</string>
+    <string name="STR_NETWORK_FAIL">Netzwerk nicht verfügbar. Versuchen Sie es später erneut.</string>
+    <string name="STR_NO_APPS">Keine Apps</string>
+    <string name="STR_NO_CONTENT">Verfügbare Apps, die von Ihrem Dienstanbieter veröffentlicht wurden, werden hier angezeigt.</string>
+    <string name="STR_NO_ITEMS">Keine Elemente</string>
+    <string name="STR_NO_ITEM_SELECTED">Keine Elemente ausgewählt</string>
+    <string name="STR_OMC_HEADER">Dienstanbieter-Update</string>
+    <string name="STR_OMC_SIZE">Größe: %s</string>
+    <string name="STR_OMC_TITLE">Konfigurationsupdate</string>
+    <string name="STR_OMC_VERSION">Version: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Betreibereinstellungen</string>
+    <string name="STR_PROCESS_FAIL">Verarbeitung fehlgeschlagen</string>
+    <string name="STR_PROVIDER_APPS">Dienstanbieter-Apps</string>
+    <string name="STR_REGISTERING_DEVICE">Gerät wird registriert…</string>
+    <string name="STR_REGISTER_FAIL">Registrierung fehlgeschlagen</string>
+    <string name="STR_REGISTER_SUCCESS">Gerät registriert</string>
+    <string name="STR_RESTART_BTN_LATER">Später</string>
+    <string name="STR_RESTART_BTN_RESTART">Neustart</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Sie müssen Ihr Telefon neu starten, um die Installation des Dienstanbieter-Software-Updates zu beenden.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Sie müssen Ihr Tablet neu starten, um die Installation des Dienstanbieter-Software-Updates zu beenden.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Neu starten?</string>
+    <string name="STR_RESTART_PHONE">Telefon neu starten</string>
+    <string name="STR_RESTART_TABLET">Tablet neu starten</string>
+    <string name="STR_SELECT_ALL">Alle folgenden Apps</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Wichtige Apps</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Für das Herunterladen der Apps unten entstehen keine Kosten für Daten.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Tippen Sie unten auf ein Element, um mehr darüber zu erfahren.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Apps werden über WLAN heruntergeladen.</string>
+    <string name="STR_SUW_TITLE">Apps vom Dienstanbieter erhalten</string>
+    <string name="STR_UPDATE_BODY1">Das Herunterladen mit mobilen Daten kann zusätzliche Kosten verursachen.</string>
+    <string name="STR_UPDATE_BODY2">Ihr Telefon wird nach der Installation des Updates neu gestartet.</string>
+    <string name="STR_UPDATE_FAIL">Aktualisierung fehlgeschlagen. Erneut versuchen.</string>
+    <string name="STR_UPDATE_HEADER1">Die neueste Software von Ihrem Dienstanbieter herunterladen und installieren.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Durch diese Firmwareinstallation entstehen Ihnen keine Kosten.
+
+- Während der Installation können Sie Ihr Gerät nicht verwenden, auch nicht für Notrufe.
+
+- Die Symbole auf dem Startbildschirm und die Geräteeinstellungen werden möglicherweise auf die Standardeinstellungen zurückgesetzt. Sie müssen dann nach der Installation neu konfiguriert werden.
+
+- Ein Firmware-Update sollte sich nicht auf die Dateien und Daten auf Ihrem Gerät auswirken.
+
+- Sollten Sie den Installationsvorgang jedoch vor seinem Abschluss beenden, funktioniert Ihr Gerät möglicherweise nicht mehr einwandfrei und Ihre Dateien können verloren gehen.
+
+- Um unerwarteten Datenverlust zu vermeiden, empfehlen wir, wichtige Daten bereits vor der Installation zu sichern."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Neu starten, um die Installation des Software-Updates Ihres Dienstanbieters abzuschließen.</string>
+    <string name="STR_UPDATING_PACKAGE">Aktualisierung…</string>
+    <string name="STR_USE_DATA_BTN">Mobile Daten nutzen</string>
+    <string name="STR_WAIT_FOR_WIFI">"App-Installation angehalten.
+Zur Installation von Apps wird auf WLAN gewartet."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Auf WLAN warten</string>
+    <string name="STR_WIDGET_DEFAULT">Installieren Sie von Ihrem Dienstanbieter empfohlene Apps.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Wird heruntergeladen…</string>
+    <string name="STR_WIDGET_INSTALLED">Installiert</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Schaltfläche</string>
+    <string name="WSS_STR_NO_UPDATE">Die neuesten Updates sind bereits installiert.</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="248.0dip" android:layout_height="66.0dip" android:layout_centerInParent="true" android:layoutDirection="ltr">
+        <ImageView android:id="@id/one_hand_zoom_short_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.5dip" android:src="@drawable/camera_main_btn_01_onehand_bar" android:contentDescription="@null" android:layout_marginStart="69.0dip" />
+        <ImageView android:id="@id/one_hand_zoom_long_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.5dip" android:src="@drawable/camera_main_btn_02_onehand_bar" android:contentDescription="@null" android:layout_marginStart="42.5dip" />
+        <ImageView android:id="@id/one_hand_zoom_plus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:src="@drawable/camera_main_btn_onehand_plus" android:contentDescription="@null" android:layout_marginStart="200.0dip" />
+        <ImageView android:id="@id/one_hand_zoom_minus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:src="@drawable/camera_main_btn_onehand_minus" android:contentDescription="@null" android:layout_marginStart="0.0dip" />
+        <ImageView android:id="@id/recording_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:src="@drawable/camera_main_btn_02_recorder" android:contentDescription="@null" android:layout_marginStart="0.0dip" />
+        <ImageView android:id="@id/thumbnail_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:src="@drawable/camera_main_btn_ic_gallery_empty" android:contentDescription="@null" android:layout_marginStart="200.0dip" />
+        <ImageView android:id="@id/shutter_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:src="@drawable/camera_main_btn_01_shutter" android:contentDescription="@null" android:layout_marginStart="91.0dip" />
+        <ImageView android:id="@id/shutter_button_pressed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:src="@drawable/camera_main_btn_01_shutter_pressed" android:contentDescription="@null" android:layout_marginStart="91.0dip" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STR_ALL">All</string>
+    <string name="STR_APPS_DESCRIPTION">Select apps recommended by your service provider.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">All of your selected apps have been downloaded.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Cancel</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Select apps recommended by your service provider.</string>
+    <string name="STR_APP_STATE_CANCELED">Cancelled</string>
+    <string name="STR_CAUTION_BODY">"After downloading, restart to install the update. You won't be able to use your phone, even to make emergency calls, until the installation is finished."</string>
+    <string name="STR_CAUTION_BODY2">After the update, some settings may be reset to their default values.</string>
+    <string name="STR_CHARING_DIALOG">Downloading using mobile data may result in additional charges.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Download using mobile data?</string>
+    <string name="STR_FAILED_NOTI">Download failed.</string>
+    <string name="STR_INITIAL_NOTI">Tap here to select the recommended apps for download.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Tap here to download and install the update.</string>
+    <string name="STR_INSTALLED_NOTI">%d installed</string>
+    <string name="STR_LINK_LEARNMORE">Learn more</string>
+    <string name="STR_NEED_WIFI">You need to be connected to Wi-Fi to download apps. Connect to Wi-Fi and try again.</string>
+    <string name="STR_NEED_WIFI_TITLE">No Wi-Fi connection</string>
+    <string name="STR_NO_APPS">No apps</string>
+    <string name="STR_NO_CONTENT">Available apps released from your service provider will be shown here.</string>
+    <string name="STR_OMC_HEADER">Service provider update</string>
+    <string name="STR_OPERATOR_SETTINGS">Operator settings</string>
+    <string name="STR_PROVIDER_APPS">Service provider apps</string>
+    <string name="STR_RESTART_BTN_LATER">Later</string>
+    <string name="STR_RESTART_BTN_RESTART">Restart</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">To finish installing your service provider software update, you need to restart your phone.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">To finish installing your service provider software update, you need to restart your tablet.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Restart?</string>
+    <string name="STR_RESTART_PHONE">Restart phone</string>
+    <string name="STR_RESTART_TABLET">Restart tablet</string>
+    <string name="STR_SELECT_ALL">All of the following apps</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Essential apps</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">No data charges apply for downloading the apps below.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Tap on an item below to learn more about it.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Apps will be downloaded over Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Get apps from your service provider</string>
+    <string name="STR_UPDATE_BODY1">Downloading using mobile data may result in additional charges.</string>
+    <string name="STR_UPDATE_BODY2">Your phone will restart after the update is installed.</string>
+    <string name="STR_UPDATE_HEADER1">Download and install the latest software from your service provider.</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Restart to finish installing your service provider software update.</string>
+    <string name="STR_USE_DATA_BTN">Use data</string>
+    <string name="STR_WAIT_FOR_WIFI">"App installation paused.
+Waiting for Wi-Fi to install apps."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wait for Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Install apps recommended by your service provider.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Downloading…</string>
+    <string name="STR_WIDGET_INSTALLED">Installed.</string>
+</resources>

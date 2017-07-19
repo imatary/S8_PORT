@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="title" android:key="setting_activity_top_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/quick_launch_summary_text_view" android:selectable="false" />
+    <com.sec.android.app.camera.setting.LeftCheckBoxPreference android:title="@string/DOUBLE_PRESSING_POWER_BUTTON" android:key="power_button" />
+    <com.sec.android.app.camera.setting.LeftCheckBoxPreference android:title="@string/DOUBLE_PRESSING_HOME_BUTTON" android:key="home_button" />
+</PreferenceScreen>

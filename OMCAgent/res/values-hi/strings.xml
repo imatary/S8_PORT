@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">%1$s को Android Wear ऐप की नई जानकारी पाने की आवश्यकता है.</string>
+    <string name="common_android_wear_update_text">%1$s तब तक नहीं चलेगा, जब तक कि आप Android Wear ऐप के लिए नई जानकारी प्राप्त नहीं कर लेते.</string>
+    <string name="common_android_wear_update_title">Android Wear अपडेट करें</string>
+    <string name="common_google_play_services_api_unavailable_text">%1$s को ऐसी एक या अधिक Google Play सेवाओं की आवश्यकता है जो वर्तमान में उपलब्ध नहीं हैं. कृपया सहायता के लिए डेवलपर से संपर्क करें.</string>
+    <string name="common_google_play_services_enable_button">Google Play सेवाएं सक्षम करें</string>
+    <string name="common_google_play_services_enable_text">%1$s तब तक कार्य नहीं करेगा जब तक आप Google Play सेवाओं को सक्षम नहीं करते.</string>
+    <string name="common_google_play_services_enable_title">Google Play सेवाएं सक्षम करें</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">%1$s के द्वारा अनुरोधित</string>
+    <string name="common_google_play_services_install_button">Google Play सेवाएं पाएं</string>
+    <string name="common_google_play_services_install_text_phone">%1$s उन Google Play सेवाओं के बिना नहीं चलेगा जो आपके फ़ोन में उपलब्ध नहीं हैं.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s उन Google Play सेवाओं के बिना नहीं चलेगा जो आपके टैबलेट में उपलब्ध नहीं हैं.</string>
+    <string name="common_google_play_services_install_title">Google Play सेवाएं पाएं</string>
+    <string name="common_google_play_services_invalid_account_text">निर्दिष्ट खाता इस डिवाइस पर मौजूद नहीं है. कृपया कोई भिन्न खाता चुनें.</string>
+    <string name="common_google_play_services_invalid_account_title">अमान्य खाता</string>
+    <string name="common_google_play_services_needs_enabling_title">ऐप्लिकेशन के लिए Google Play सेवाएं सक्षम किए जाने की आवश्यकता है.</string>
+    <string name="common_google_play_services_network_error_text">Google Play सेवाओं से कनेक्ट करने के लिए डेटा कनेक्शन की आवश्यकता है.</string>
+    <string name="common_google_play_services_network_error_title">नेटवर्क त्रुटि</string>
+    <string name="common_google_play_services_notification_needs_update_title">ऐप्लिकेशन के लिए Google Play सेवाओं में नई जानकारी की आवश्यकता है.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play सेवाएं त्रुटि</string>
+    <string name="common_google_play_services_sign_in_failed_text">निर्दिष्‍ट खाते में प्रवेश करने में त्रुटि. कृपया कोई भिन्‍न खाता चुनें.</string>
+    <string name="common_google_play_services_sign_in_failed_title">प्रवेश करना विफल रहा</string>
+    <string name="common_google_play_services_unknown_issue">Google Play सेवाओं के साथ अज्ञात समस्या.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s उन Google Play सेवाओं पर निर्भर है जो आपके डिवाइस द्वारा समर्थित नहीं हैं. सहायता के लिए निर्माता से संपर्क करें.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play सेवाएं</string>
+    <string name="common_google_play_services_update_button">नई जानकारी पाएं</string>
+    <string name="common_google_play_services_update_text">%1$s तब तक नहीं चलेगा जब तक आप Google Play सेवाओं को अपडेट नहीं करते.</string>
+    <string name="common_google_play_services_update_title">Google Play सेवाएं से नई जानकारी</string>
+    <string name="common_google_play_services_updating_text">%1$s उन Google Play सेवाओं के बिना नहीं चलेगा जो वर्तमान में अपडेट हो रही हैं.</string>
+    <string name="common_google_play_services_updating_title">Google Play सेवाएं अपडेट हो रही हैं</string>
+    <string name="common_open_on_phone">फ़ोन पर खोलें</string>
+    <string name="common_signin_button_text">प्रवेश करें</string>
+    <string name="common_signin_button_text_long">Google से प्रवेश करें</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">अतिरिक्त सामग्री आकार: %1$s %2$s</string>
+    <string name="STR_ALL">सभी</string>
+    <string name="STR_APPS_DESCRIPTION">आपके सेवा प्रदाता द्वारा अनुशंसित किए गए एप्स चुनें।</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">आपके सभी चयनित एप्स डाउनलोड हो गए हैं।</string>
+    <string name="STR_APP_BUTTON_CANCEL">रद्द</string>
+    <string name="STR_APP_BUTTON_OK">ओके</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">आपके सेवा प्रदाता द्वारा अनुशंसित किए गए एप्स चुनें।</string>
+    <string name="STR_APP_INSTALL_CONFIRM">स्थापित करने के लिए इच्छित एप्स चुनें।</string>
+    <string name="STR_APP_INSTALL_TITLE">एप्स स्थापित करें</string>
+    <string name="STR_APP_STATE_CANCELED">रद्द किया गया</string>
+    <string name="STR_APP_STATE_CONNECTING">कनेक्ट हो रहा…</string>
+    <string name="STR_APP_STATE_DOWNLOADING">डाउनलोड हो रहा है…</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">डाउनलोड विफल।</string>
+    <string name="STR_APP_STATE_INSTALLED">स्थापित हुआ</string>
+    <string name="STR_APP_STATE_INSTALLING">स्थापित हो रहा है…</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">स्थापना विफल</string>
+    <string name="STR_APP_STATE_WAITING">प्रतीक्षा कर रहा है…</string>
+    <string name="STR_BTN_INSTALL">स्थापना</string>
+    <string name="STR_BTN_INSTALL_ALL">सभी स्थापित करें</string>
+    <string name="STR_BTN_SKIP">छोड़ें</string>
+    <string name="STR_BUTTON_NEXT">अगला</string>
+    <string name="STR_CAUTION_BODY">डाउनलोड करने के बाद, अपडेट स्थापित करने के लिए पुनःचालू करें। स्थापना समाप्त नहीं होने तक आप अपने फोन का उपयोग करने में समर्थ नहीं होंगे, यहां तक की आपातकालीन कॉल्स करने के लिए भी नहीं।</string>
+    <string name="STR_CAUTION_BODY2">अपडेट के बाद, हो सकता है कि कुछ सेटिंग्स उनके डिफॉल्ट मानों में रीसेट किए जाएँ।</string>
+    <string name="STR_CHARING_DIALOG">मोबाइल डाटा का उपयोग करके डाउनलोड करने पर अतिरिक्त शुल्क लग सकते हैं।</string>
+    <string name="STR_CHARING_DIALOG_TITLE">मोबाइल डाटा का उपयोग करके डाउनलोड करें?</string>
+    <string name="STR_CONNECTING_TO_SERVER">सर्वर से जोड़ रहा है…</string>
+    <string name="STR_CONNECT_FAIL">कनेक्शन विफल। बाद में प्रयास करें।</string>
+    <string name="STR_DOWNLOADING_PACKAGE">अपडेट्स डाउनलोड कर रहा है…</string>
+    <string name="STR_DOWNLOADING_RESOURCE">डाउनलोड हो रहा है…</string>
+    <string name="STR_DOWNLOAD_FAIL">डाउनलोड विफल। बाद में कोशिश करें।</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">नवीनतम सुविधाओं का उपयोग करने के लिए, यह फर्मवेयर अपडेट डाउनलोड और स्थापित करें।</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">डाउनलोड विफल। बाद में कोशिश करें।</string>
+    <string name="STR_FAILED_NOTI">डाउनलोड विफल।</string>
+    <string name="STR_INITIAL_NOTI">डाउनलोड करने हेतु अनुशंसित एप्स चुनने के लिए यहां टैप करें।</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">अपडेट डाउनलोड और स्थापित करने के लिए यहां टैप करें।</string>
+    <string name="STR_INSTALLED_NOTI">%d स्थापित</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">अतिरिक्त सामग्री स्थापित करें</string>
+    <string name="STR_INSTALL_CAUTIONS">चेतावनी</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">इस अपडेट में कुछ वैकल्पिक एप्स और सामग्री शामिल हैं। मोबाइल नेटवर्क्स के माध्‍यम से डाउनलोड करने पर आपकी भुगतान योजना के आधार पर अतिरिक्त शुल्क लग सकते हैं।</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">डाउनलोड हुआ।</string>
+    <string name="STR_INSTALL_FORCE">आपका महत्वपूर्ण सॉफ्टवेयर अपडेट डाउनलोड कर लिया गया है। स्थापना आरंभ करने के लिए आपका डिवाइस %d सेकंड में पुनः चालू होगा।</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">अधिक जानें</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">एप्स डाउनलोड करने के लिए, आपको Wi-Fi से कनेक्ट होने की जरूरत है। Wi-Fi से कनेक्ट करें और फिर से प्रयास करें।</string>
+    <string name="STR_NEED_WIFI_TITLE">कोई Wi-Fi कनेक्शन नहीं है</string>
+    <string name="STR_NETWORK_FAIL">नेटवर्क उपलब्‍ध नहीं है। बाद में फिर से प्रयास करें।</string>
+    <string name="STR_NO_APPS">कोई एप्स नहीं हैं</string>
+    <string name="STR_NO_CONTENT">आपके सेवा प्रदाता द्वारा जारी किए गए उपलब्ध एप्स यहां दिखाई देंगे।</string>
+    <string name="STR_NO_ITEMS">कोई मद नहीं</string>
+    <string name="STR_NO_ITEM_SELECTED">कोई मद चयनित नहीं।</string>
+    <string name="STR_OMC_HEADER">सेवा प्रदाता अपडेट</string>
+    <string name="STR_OMC_SIZE">आकार: %s</string>
+    <string name="STR_OMC_TITLE">कॉन्फिगरेशन अपडेट</string>
+    <string name="STR_OMC_VERSION">संस्करण: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">ऑपरेटर सेटिंग्स</string>
+    <string name="STR_PROCESS_FAIL">कार्रवाई विफल।</string>
+    <string name="STR_PROVIDER_APPS">सेवा प्रदाता एप्स</string>
+    <string name="STR_REGISTERING_DEVICE">डिवाइस का पंजीकरण किया जा रहा है…</string>
+    <string name="STR_REGISTER_FAIL">पंजीकरण विफल।</string>
+    <string name="STR_REGISTER_SUCCESS">उपकरण पंजीकृत।</string>
+    <string name="STR_RESTART_BTN_LATER">बाद में</string>
+    <string name="STR_RESTART_BTN_RESTART">पुनःचालू</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">अपना सेवा प्रदाता सॉफ्टवेयर अपडेट स्थापित करना समाप्त करने के लिए, आपको अपना फोन पुनः चालू करने की जरूरत है।</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">अपना सेवा प्रदाता सॉफ्टवेयर अपडेट स्थापित करना समाप्त करने के लिए, आपको अपना टैबलेट पुनः चालू करने की जरूरत है।</string>
+    <string name="STR_RESTART_DIALOG_TITLE">पुनः चालू करें?</string>
+    <string name="STR_RESTART_PHONE">फोन पुनः चालू करें</string>
+    <string name="STR_RESTART_TABLET">टैबलेट पुनः चालू करें</string>
+    <string name="STR_SELECT_ALL">सभी निम्नलिखित एप्स</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">आवश्यक एप्स</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">निम्न एप्स डाउनलोड करने लिए कोई डाटा शुल्क लागू नहीं होते हैं।</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">नीचे किसी मद के बारे में अधिक जानने के लिए उस पर टैप करें।</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">एप्स Wi-Fi से डाउनलोड किए जाएँगे।</string>
+    <string name="STR_SUW_TITLE">सेवा प्रदाता से एप्स प्राप्त करें</string>
+    <string name="STR_UPDATE_BODY1">मोबाइल डाटा का उपयोग करके डाउनलोड करने पर अतिरिक्त शुल्क लग सकते हैं।</string>
+    <string name="STR_UPDATE_BODY2">अपडेट स्थापित होने के बाद आपका फोन पुनः चालू होगा।</string>
+    <string name="STR_UPDATE_FAIL">अपडेट असफल। फिर से प्रयास करें।</string>
+    <string name="STR_UPDATE_HEADER1">अपने सेवा प्रदाता से नवीनतम सॉफ्टवेयर डाउनलोड और स्थापित करें।</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- इस फर्मवेयर स्थापना के लिए आपसे शुल्क नहीं लिया जाएगा।
+
+- स्थापना के दौरान, आप अपने डिवाइस का बिल्कुल भी उपयोग करने में समर्थ नहीं होंगे, यहां तक कि आपातकालीन कॉल्स के लिए भी नहीं।
+
+- होम स्क्रीन पर मौजूद चिह्न और डिवाइस सेटिंग्स उनके डिफॉल्ट्स पर रीसेट हो सकती हैं और स्‍थापना के बाद उन्हें फिर से कॉन्फिगर करने की जरूरत हो सकती है।
+
+- फर्मवेयर अपडेट से आपके डिवाइस की फाइलें और डाटा प्रभावित नहीं होना चाहिए।
+
+- हालांकि, यदि आप स्थापना प्रक्रिया को समाप्त होने से पहले रोकते हैं, तो हो सकता है कि आपका डिवाइस सामान्य रूप से कार्य न करे और परिणामस्वरूप आपकी फाइलें खो सकती हैं।
+
+- अनपेक्षित डाटा हानि से बचने के लिए, हम अनुशंसा करते हैं कि आप स्थापना से पहले महत्वपूर्ण डाटा का बैकअप लें।"</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">अपना सेवा प्रदाता सॉफ्टवेयर अपडेट स्थापित करना समाप्त करने के लिए पुनः चालू करें।</string>
+    <string name="STR_UPDATING_PACKAGE">अपडेट हो रहा है…</string>
+    <string name="STR_USE_DATA_BTN">डाटा का उपयोग करें</string>
+    <string name="STR_WAIT_FOR_WIFI">"एप स्थापना को विराम दिया गया है।
+एप्स स्थापित करने हेतु Wi-Fi की प्रतीक्षा कर रहा है।"</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Wi-Fi की प्रतीक्षा करें</string>
+    <string name="STR_WIDGET_DEFAULT">आपके सेवा प्रदाता द्वारा अनुशंसित किए गए एप्स स्थापित करें।</string>
+    <string name="STR_WIDGET_DOWNLOADING">डाउनलोड हो रहा है…</string>
+    <string name="STR_WIDGET_INSTALLED">स्थापित किया।</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">बटन</string>
+    <string name="WSS_STR_NO_UPDATE">नवीनतम अपडेट स्थापित किए गए है।</string>
+</resources>

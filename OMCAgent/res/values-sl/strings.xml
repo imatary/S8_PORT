@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">Aplikacija %1$s zahteva posodobitev aplikacije Android Wear.</string>
+    <string name="common_android_wear_update_text">Aplikacija %1$s ne bo delovala, če ne posodobite aplikacije Android Wear.</string>
+    <string name="common_android_wear_update_title">Posodobitev aplikacije Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text">Aplikacija %1$s potrebuje eno ali več storitev za Google Play, ki trenutno niso na voljo. Za pomoč se obrnite na razvijalca.</string>
+    <string name="common_google_play_services_enable_button">Omogočite storitve Google Play</string>
+    <string name="common_google_play_services_enable_text">Aplikacija %1$s ne bo delovala, če ne omogočite storitev Google Play.</string>
+    <string name="common_google_play_services_enable_title">Omogočite storitve Google Play</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Zahteva aplikacije %1$s</string>
+    <string name="common_google_play_services_install_button">Namestite storitve Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Aplikacija %1$s ne deluje brez storitev Google Play, vendar teh ni v telefonu.</string>
+    <string name="common_google_play_services_install_text_tablet">Aplikacija %1$s ne deluje brez storitev Google Play, vendar teh ni v tabličnem računalniku.</string>
+    <string name="common_google_play_services_install_title">Namestite storitve Google Play</string>
+    <string name="common_google_play_services_invalid_account_text">V tej napravi ne obstaja navedeni račun. Izberite drugega.</string>
+    <string name="common_google_play_services_invalid_account_title">Neveljaven račun</string>
+    <string name="common_google_play_services_needs_enabling_title">Za delovanje aplikacije morate omogočiti storitve Google Play.</string>
+    <string name="common_google_play_services_network_error_text">Za povezavo s storitvami Google Play potrebujete internetno povezavo.</string>
+    <string name="common_google_play_services_network_error_title">Omrežna napaka</string>
+    <string name="common_google_play_services_notification_needs_update_title">Za delovanje aplikacije morate posodobiti storitve Google Play.</string>
+    <string name="common_google_play_services_notification_ticker">Napaka storitev Google Play</string>
+    <string name="common_google_play_services_sign_in_failed_text">Napaka pri prijavi v izbran račun. Izberite drug račun.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Prijava ni uspela</string>
+    <string name="common_google_play_services_unknown_issue">Neznana težava s storitvami Google Play.</string>
+    <string name="common_google_play_services_unsupported_text">Aplikacija %1$s potrebuje storitve Google Play, ki jih vaša naprava ne podpira. Za pomoč se obrnite na proizvajalca.</string>
+    <string name="common_google_play_services_unsupported_title">Storitve Google Play</string>
+    <string name="common_google_play_services_update_button">Posodobi</string>
+    <string name="common_google_play_services_update_text">Aplikacija %1$s ne bo delovala, če ne posodobite storitev Google Play.</string>
+    <string name="common_google_play_services_update_title">Posodobite storitve Google Play</string>
+    <string name="common_google_play_services_updating_text">Aplikacija %1$s ne deluje brez storitev Google Play, ki se trenutno posodabljajo.</string>
+    <string name="common_google_play_services_updating_title">Storitve Google Play se posodabljajo</string>
+    <string name="common_open_on_phone">Odpiranje v telefonu</string>
+    <string name="common_signin_button_text">Prijava</string>
+    <string name="common_signin_button_text_long">Prijavite se v Google</string>
+    <string name="STR_ADDITIONAL_CONTENT_SIZE">Velikost dodatne vsebine: %1$s %2$s</string>
+    <string name="STR_ALL">Vse</string>
+    <string name="STR_APPS_DESCRIPTION">Izberite aplikacije, ki jih priporoča ponudnik storitev.</string>
+    <string name="STR_APPS_DESCRIPTION_DOWNLOADED">Vse izbrane aplikacije so bile prenesene.</string>
+    <string name="STR_APP_BUTTON_CANCEL">Prekliči</string>
+    <string name="STR_APP_BUTTON_OK">V redu</string>
+    <string name="STR_APP_INSTALLER_DESC_COMMON">Izberite aplikacije, ki jih priporoča ponudnik storitev.</string>
+    <string name="STR_APP_INSTALL_CONFIRM">Izberite aplikacije, ki jih želite namestiti.</string>
+    <string name="STR_APP_INSTALL_TITLE">Namestite aplikacije</string>
+    <string name="STR_APP_STATE_CANCELED">Preklicano</string>
+    <string name="STR_APP_STATE_CONNECTING">Povezovanje …</string>
+    <string name="STR_APP_STATE_DOWNLOADING">Prenašanje …</string>
+    <string name="STR_APP_STATE_DOWNLOAD_FAIL">Prenos ni na voljo.</string>
+    <string name="STR_APP_STATE_INSTALLED">Nameščeno</string>
+    <string name="STR_APP_STATE_INSTALLING">Nameščam …</string>
+    <string name="STR_APP_STATE_INSTALL_FAIL">Namestitev ni uspela</string>
+    <string name="STR_APP_STATE_WAITING">Čakam …</string>
+    <string name="STR_BTN_INSTALL">Namesti</string>
+    <string name="STR_BTN_INSTALL_ALL">Namesti vse</string>
+    <string name="STR_BTN_SKIP">Preskoči</string>
+    <string name="STR_BUTTON_NEXT">Naprej</string>
+    <string name="STR_CAUTION_BODY">Po prenosu znova zaženite telefon, da namestite posodobitev. Dokler namestitev ni končana, telefona ne boste mogli uporabljati (niti za klice v sili).</string>
+    <string name="STR_CAUTION_BODY2">Po posodobitvi bodo nekatere nastavitve morda ponastavljene na privzete vrednosti.</string>
+    <string name="STR_CHARING_DIALOG">Prenos prek mobilnega omrežja lahko povzroči dodatne stroške.</string>
+    <string name="STR_CHARING_DIALOG_TITLE">Želite za prenos uporabiti mobilne podatke?</string>
+    <string name="STR_CONNECTING_TO_SERVER">Povezujem s strežnikom</string>
+    <string name="STR_CONNECT_FAIL">Povezava ni uspela. Poskusite pozneje.</string>
+    <string name="STR_DOWNLOADING_PACKAGE">Prenašanje posodobitev …</string>
+    <string name="STR_DOWNLOADING_RESOURCE">Prenašanje …</string>
+    <string name="STR_DOWNLOAD_FAIL">Prenos ni uspel. Poskusite pozneje.</string>
+    <string name="STR_DOWNLOAD_INSTALL_CONFIRM">Če želite uporabljati najnovejše funkcije, prenesite in namestite to posodobitev vgrajene programske opreme.</string>
+    <string name="STR_DOWNLOAD_RESOURCE_FAIL">Prenos ni uspel. Poskusite pozneje.</string>
+    <string name="STR_FAILED_NOTI">Prenos ni na voljo.</string>
+    <string name="STR_INITIAL_NOTI">Pritisnite tukaj, da izberete priporočene aplikacije za prenos.</string>
+    <string name="STR_INITIAL_NOTI_UPDATE">Za prenos in namestitev posodobitve pritisnite tukaj.</string>
+    <string name="STR_INSTALLED_NOTI">Število nameščenih: %d</string>
+    <string name="STR_INSTALL_ADDITIONAL_CONTENT">Namesti dodatno vsebino</string>
+    <string name="STR_INSTALL_CAUTIONS">Pozor</string>
+    <string name="STR_INSTALL_CONFIRM_DOWNLOADING_VIA_NETWORK">Ta posodobitev vključuje nekaj izbirnih aplikacij in nekaj vsebine. Prenos prek mobilnega omrežja lahko povzroči dodatne stroške, odvisno od vaše naročnine.</string>
+    <string name="STR_INSTALL_CONFIRM_NOTI">Preneseno.</string>
+    <string name="STR_INSTALL_FORCE">Nujne posodobitve programske opreme je prenesena. Naprava se bo čez %d s zagnala znova in začela se bo namestitev.</string>
+    <string name="STR_KILOBYTE">KB</string>
+    <string name="STR_LINK_LEARNMORE">Več o tem</string>
+    <string name="STR_MEGABYTE">MB</string>
+    <string name="STR_NEED_WIFI">Za prenos aplikacij morate biti povezani z omrežjem Wi-Fi. Povežite se z omrežjem Wi-Fi in poskusite znova.</string>
+    <string name="STR_NEED_WIFI_TITLE">Ni povezave Wi-Fi</string>
+    <string name="STR_NETWORK_FAIL">Omrežje ni na voljo. Poskusite znova pozneje.</string>
+    <string name="STR_NO_APPS">Ni aplikacij</string>
+    <string name="STR_NO_CONTENT">Razpoložljive aplikacije, ki jih je izdal ponudnik storitev, bodo prikazane tukaj.</string>
+    <string name="STR_NO_ITEMS">Ni elementov</string>
+    <string name="STR_NO_ITEM_SELECTED">Ni izbranih predmetov.</string>
+    <string name="STR_OMC_HEADER">Posodobitev ponudnika storitev</string>
+    <string name="STR_OMC_SIZE">Velikost: %s</string>
+    <string name="STR_OMC_TITLE">Posodobitev konfiguracije</string>
+    <string name="STR_OMC_VERSION">Različica: %s</string>
+    <string name="STR_OPERATOR_SETTINGS">Nastavitve operaterja</string>
+    <string name="STR_PROCESS_FAIL">Obdelava ni uspela.</string>
+    <string name="STR_PROVIDER_APPS">Aplikacije ponudnika storitev</string>
+    <string name="STR_REGISTERING_DEVICE">Registracija naprave …</string>
+    <string name="STR_REGISTER_FAIL">Registracija ni uspela.</string>
+    <string name="STR_REGISTER_SUCCESS">Naprava je registrirana.</string>
+    <string name="STR_RESTART_BTN_LATER">Pozneje</string>
+    <string name="STR_RESTART_BTN_RESTART">Zn. zaženi</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_PHONE">Da dokončate namestitev posodobitve programske opreme ponudnika storitev, znova zaženite telefon.</string>
+    <string name="STR_RESTART_DIALOG_DESCRIPTION_TABLET">Da dokončate namestitev posodobitve programske opreme ponudnika storitev, znova zaženite tablični računalnik.</string>
+    <string name="STR_RESTART_DIALOG_TITLE">Želite znova zagnati?</string>
+    <string name="STR_RESTART_PHONE">Vnovičen zagon telefona</string>
+    <string name="STR_RESTART_TABLET">Znova zaženite tabl. računalnik</string>
+    <string name="STR_SELECT_ALL">Vse naslednje aplikacije</string>
+    <string name="STR_SETUPWIZARD_REQUIRED_APPS">Pomembne aplikacije</string>
+    <string name="STR_SUW_DESCRIPTION_NO_DATA_CHARGES">Spodnje aplikacije lahko prenesete brez stroškov prenosa podatkov.</string>
+    <string name="STR_SUW_DESCRIPTION_TAP_ITEM">Pritisnite element spodaj, če želite izvedeti več o njem.</string>
+    <string name="STR_SUW_DESCRIPTION_WIFI">Aplikacije bodo prenesene prek omrežja Wi-Fi.</string>
+    <string name="STR_SUW_TITLE">Prenesite aplikacije ponudnika storitev</string>
+    <string name="STR_UPDATE_BODY1">Prenos prek mobilnega omrežja lahko povzroči dodatne stroške.</string>
+    <string name="STR_UPDATE_BODY2">Telefon se bo po namestitvi posodobitve znova zagnal.</string>
+    <string name="STR_UPDATE_FAIL">Posodobitev ni uspela. Poskusite znova.</string>
+    <string name="STR_UPDATE_HEADER1">Prenesite in namestite najnovejšo programsko opremo ponudnika storitev.</string>
+    <string name="STR_UPDATE_POLICY_DETAILS">"- Namestitve vgrajene programske opreme vam ne bomo zaračunali.
+
+- Med namestitvijo naprave ne boste mogli uporabljati, tudi za klice v sili ne.
+
+- Po namestitvi se lahko ikone na domačem zaslonu in nastavitve naprave ponastavijo na privzete vrednosti, zato jih boste morda morali znova konfigurirati.
+
+- Posodobitev vgrajene programske opreme ne vpliva na datoteke in podatke v napravi.
+
+- Če postopek namestitve ustavite pred koncem, naprava morda ne bo delovala normalno in lahko izgubite datoteke.
+
+- V izogib nepričakovani izgubi podatkov vam priporočamo, da pomembne podatke pred namestitvijo varnostno kopirate."</string>
+    <string name="STR_UPDATE_RESTART_DEVICE">Znova zaženite, da dokončate namestitev posodobitve programske opreme ponudnika storitev.</string>
+    <string name="STR_UPDATING_PACKAGE">Posodabljam…</string>
+    <string name="STR_USE_DATA_BTN">Uporabi podatke</string>
+    <string name="STR_WAIT_FOR_WIFI">"Namestitev aplikacije je začasno ustavljena.
+Čakanje na omrežje Wi-Fi za namestitev aplikacij."</string>
+    <string name="STR_WAIT_FOR_WIFI_BTN">Počakaj na Wi-Fi</string>
+    <string name="STR_WIDGET_DEFAULT">Namestite aplikacije, ki jih priporoča ponudnik storitev.</string>
+    <string name="STR_WIDGET_DOWNLOADING">Prenašanje …</string>
+    <string name="STR_WIDGET_INSTALLED">Nameščeno.</string>
+    <string name="WIZARD_BOTTOM_BUTTON_TTS">Gumb</string>
+    <string name="WSS_STR_NO_UPDATE">Najnovejše posodobitve so že bile nameščene.</string>
+</resources>

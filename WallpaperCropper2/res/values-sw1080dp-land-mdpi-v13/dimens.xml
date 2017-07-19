@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="both_crop_preview_height">487.0dip</dimen>
+    <dimen name="both_crop_preview_width">866.0dip</dimen>
+    <dimen name="both_crop_view_area_margin_horizontal">40.0dip</dimen>
+    <dimen name="both_crop_view_top_margin">191.0dip</dimen>
+    <dimen name="keyguard_crop_preview_height">711.0dip</dimen>
+    <dimen name="keyguard_crop_preview_width">1264.0dip</dimen>
+    <dimen name="keyguard_crop_view_top_margin">110.0dip</dimen>
+    <dimen name="set_as_wallpaper_btn_height">54.0dip</dimen>
+    <dimen name="set_as_wallpaper_btn_margin_bottom">30.0dip</dimen>
+    <dimen name="set_as_wallpaper_btn_text_size">24.0dip</dimen>
+    <dimen name="set_as_wallpaper_btn_width">549.0dip</dimen>
+    <dimen name="set_as_wallpaper_rectangle_stroke_size">2.0dip</dimen>
+</resources>

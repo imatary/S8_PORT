@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/set_as_wallpaper_btn_background_color" />
+            <stroke android:width="@dimen/set_as_wallpaper_btn_rectangle_stroke" android:color="@color/thumbnail_item_selected_color" />
+            <corners android:radius="@dimen/set_as_wallpaper_btn_rectangle_radius" />
+        </shape>
+    </item>
+    <item android:left="@dimen/set_as_wallpaper_btn_rectangle_stroke" android:top="@dimen/set_as_wallpaper_btn_rectangle_stroke" android:right="@dimen/set_as_wallpaper_btn_rectangle_stroke" android:bottom="@dimen/set_as_wallpaper_btn_rectangle_stroke">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/set_as_wallpaper_btn_rectangle_stroke" android:color="@color/set_as_wallpaper_btn_inside_stroke_color" />
+            <corners android:radius="@dimen/set_as_wallpaper_btn_rectangle_radius" />
+        </shape>
+    </item>
+</layer-list>

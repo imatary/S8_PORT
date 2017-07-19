@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">មិន​អាច​បើក %s។ ប៉ះ ការកំណត់, ចូលទៅ ព័ត៌មាន​កម្មវិធី > ការអនុញ្ញាត រួច​អនុញ្ញាត​ខាងក្រោម ហើយ​សាកល្បង​ម្ដងទៀត៖</string>
+    <string name="all_sim">ទាំង​អស់</string>
+    <string name="app_name">រូប​ផ្ទៃ​អេក្រង់</string>
+    <string name="apply">ប្រើ</string>
+    <string name="can_not_set_wallpaper_image_not_found">មិន​អាច​កំណត់​រូប​ជា​រូបផ្ទៃអេក្រង់។ រក​មិន​ឃើញ​រូប។</string>
+    <string name="cancel">បោះបង់</string>
+    <string name="cancle">បោះ​បង់</string>
+    <string name="change_wallpaper_when_infinity_applied">បែបផែន​អនន្ត​នឹង​ត្រូវ​បាន​បិទ បើ​អ្នក​ប្រើ​រូបផ្ទៃអេក្រង់​នេះ។</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">រួចរាល់</string>
+    <string name="duplicate_image">ស្ទួន</string>
+    <string name="expand_image">ពន្លាត</string>
+    <string name="fail_to_load">មិន​អាច​ផ្ទុក​រូបថត។</string>
+    <string name="home_lock_screen">គេហ​អេក្រង់ និង អេក្រង់​ជាប់​សោ</string>
+    <string name="home_screen">គេហអេក្រង់</string>
+    <string name="homescreen_checkbox_motion_effect">បែប​ផែន​ចលនា</string>
+    <string name="image_too_small">រូប​នេះ​តូច​ពេក។</string>
+    <string name="item_restricted">ធាតុ​ត្រូវ​បាន​កំហិត</string>
+    <string name="left_image">ឆ្វេង</string>
+    <string name="lock_screen">អេក្រង់​ជាប់​សោ</string>
+    <string name="motion_effect">បែបផែន​ចលនា​រូបផ្ទៃអេក្រង់</string>
+    <string name="motion_wallpaper_name">រូបផ្ទៃអេក្រង់​ចលនា</string>
+    <string name="notice_low_storage">លំហ​មិន​គ្រប់គ្រាន់។ លុប​ចោល​ធាតុ​ដែល​មិន​សំខាន់​ដូចជា សុហ្វវែរ​ដែល​បាន​ទាញយក រូបភាព វីដេអូ និង ឯកសារ​ដែល​បាន​ទាញយក។</string>
+    <string name="permission_description">ដើម្បី​ប្រើ %s សូម​ប៉ះ ការកំណត់, ចូលទៅ ព័ត៌មាន​កម្មវិធី > ការអនុញ្ញាត រួច​ផ្ដល់​ការអនុញ្ញាត​ខាងក្រោម៖</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">ឃ្លាំង​ផ្ទុក</string>
+    <string name="processing">កំពុង​ដំណើរការ…</string>
+    <string name="request_permission_rationale">មិន​អាច​ប្រើ %1$s។ ប៉ះ ការកំណត់ រួច​អនុញ្ញាត %2$s ហើយ​សាកល្បង​ម្ដងទៀត។</string>
+    <string name="right_image">ស្តាំ</string>
+    <string name="set_wallpaper_docomo_text_gui">រូប​នេះ​នឹង​បង្ហាញ​ឡើង​លើ​គេហអេក្រង់​និង​អេក្រង់​ជាប់សោ​របស់​អ្នក។</string>
+    <string name="settings">ការកំណត់</string>
+    <string name="speak_button">ប៊ូតុង</string>
+    <string name="sview_window">វីនដូវ S View</string>
+    <string name="unable_set_wallpaper_image_deleted">មិន​អាច​កំណត់​រូប​ជា​រូបផ្ទៃអេក្រង់។ បាន​លុប​រូប។</string>
+    <string name="unable_to_download">មិន​អាច​ទាញយក។</string>
+    <string name="wallpaper_applied_home">បាន​ប្រើ​រូបផ្ទៃអេក្រង់​ចំពោះ​គេហអេក្រង់។</string>
+    <string name="wallpaper_applied_home_and_lock">បាន​ប្រើ​រូបផ្ទៃអេក្រង់​ចំពោះ​គេហអេក្រង់​និង​អេក្រង់​ជាប់សោ។</string>
+    <string name="wallpaper_applied_lock">បាន​ប្រើ​រូបផ្ទៃអេក្រង់​ចំពោះ​អេក្រង់​ជាប់សោ។</string>
+    <string name="wallpaper_applied_multi_lock">បាន​ប្រើ​រូបផ្ទៃអេក្រង់ %d ចំពោះ​អេក្រង់​ជាប់សោ។</string>
+    <string name="wallpaper_applied_sview">បាន​ប្រើ​រូបផ្ទៃអេក្រង់​ចំពោះ​វីនដូវ S View។</string>
+    <string name="wallpaper_crop_button_done">រួចរាល់</string>
+    <string name="wallpaper_instructions">កំណត់​ជា​រូបផ្ទៃអេក្រង់</string>
+    <string name="wallpaper_lock_gui_cinematic">រូបរាង​នៃ​អេក្រង់​ជាប់សោ​នឹង​ប្ដូរ​នៅពេល​អ្នក​ផ្អៀង​ឧបករណ៍​របស់​អ្នក​មក​ឆ្វេង​និង​ទៅ​ស្ដាំ។</string>
+</resources>

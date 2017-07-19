@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:id="@id/rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/set_as_wallpaper_rectangle_stroke_size" android:color="@color/actionbar_rectangle_line_color" />
+    <corners android:radius="2.0px" />
+</shape>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/appItemMainLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:paddingStart="@dimen/activity_padding_default" android:paddingEnd="@dimen/activity_padding_default"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/appItemInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="end" android:id="@id/titletext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NTSTR_ITEM_TITLE" android:maxLines="1" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/list_description_text_color" android:ellipsize="end" android:id="@id/pkgnametext" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/NTSTR_ITEM_DESCRIPTION" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/appState" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/list_description_text_color" android:ellipsize="end" android:id="@id/sizetext" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/NTSTR_ITEM_SIZE" android:maxLines="1" android:layout_weight="1.0" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/list_description_text_color" android:id="@id/statetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NTSTR_ITEM_STATE" android:paddingStart="@dimen/activity_padding_default" android:paddingEnd="@dimen/activity_padding_zero" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

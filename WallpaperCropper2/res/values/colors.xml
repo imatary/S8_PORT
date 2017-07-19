@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_rectangle_line_color">#4cffffff</color>
+    <color name="actionbar_text_color">#fffafafa</color>
+    <color name="actionbar_text_shadow_color">#b3000000</color>
+    <color name="actionbar_item_ripple_color">#40000000</color>
+    <color name="checkbox_tint_color">#fffafafa</color>
+    <color name="custom_action_button_text_color">@color/white_color</color>
+    <color name="navigation_bar_color">#ff000000</color>
+    <color name="popup_color_100">#ff000000</color>
+    <color name="request_permission_rationale_popup_image_background_color">#ff919799</color>
+    <color name="set_as_wallpaper_btn_background_color">#33fafafa</color>
+    <color name="set_as_wallpaper_btn_inside_stroke_color">#4dffffff</color>
+    <color name="set_as_wallpaper_btn_outside_stroke_color">#4d000000</color>
+    <color name="thumbnail_item_selected_color">#fff5f5f5</color>
+    <color name="wallpaper_motion_effect_shadow_color">#b3000000</color>
+    <color name="wallpaper_motion_effect_text_color">#fffafafa</color>
+    <color name="white_color">#fffafafa</color>
+    <color name="wide_home_actionbar_item_ripple_color">@color/white_color</color>
+    <color name="wide_home_dim_cropview">#3f000000</color>
+</resources>

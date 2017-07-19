@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">"Impossible d'ouvrir %s. Touchez PARAMÈTRES, accédez à Informations sur l'application > Autorisations, puis accordez les autorisations suivantes et réessayez :"</string>
+    <string name="all_sim">Tous</string>
+    <string name="app_name">"Fonds d'écran"</string>
+    <string name="apply">Appliquer</string>
+    <string name="can_not_set_wallpaper_image_not_found">"Impossible de définir cette image comme fond d'écran. L'image est introuvable."</string>
+    <string name="cancel">Annuler</string>
+    <string name="cancle">Annuler</string>
+    <string name="change_wallpaper_when_infinity_applied">"Les effets Infini seront désactivés si vous appliquez ce fond d'écran."</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Terminé</string>
+    <string name="duplicate_image">Copier</string>
+    <string name="expand_image">Agrandir</string>
+    <string name="fail_to_load">Impossible de charger la photo.</string>
+    <string name="home_lock_screen">"Écran d'accueil et écran verrouillé"</string>
+    <string name="home_screen">"Écran d'accueil"</string>
+    <string name="homescreen_checkbox_motion_effect">Effet de mouvement</string>
+    <string name="image_too_small">Image trop petite</string>
+    <string name="item_restricted">Élément restreint</string>
+    <string name="left_image">Gauche</string>
+    <string name="lock_screen">Écran verrouillé</string>
+    <string name="motion_effect">"Effet de mouv. du fond d'écran"</string>
+    <string name="motion_wallpaper_name">"Fond d'écran en mouvement"</string>
+    <string name="notice_low_storage">Espace insuffisant. Supprimez les éléments inutiles, tels que les logiciels, les images, les vidéos et les documents téléchargés.</string>
+    <string name="permission_description">"Pour utiliser %s, touchez PARAMÈTRES, accédez à Informations sur l'application > Autorisations, puis accordez les autorisations suivantes :"</string>
+    <string name="permission_name_read_sms">Message texte</string>
+    <string name="permission_name_storage">Stockage</string>
+    <string name="processing">Traitement…</string>
+    <string name="request_permission_rationale">"Impossible d'utiliser %1$s. Touchez PARAMÈTRES, puis accordez l'autorisation %2$s et réessayez."</string>
+    <string name="right_image">Droite</string>
+    <string name="set_wallpaper_docomo_text_gui">"Cette image s'affichera sur vos écrans d'accueil et de verrouillage."</string>
+    <string name="settings">Paramètres</string>
+    <string name="speak_button">Bouton</string>
+    <string name="sview_window">Fenêtre S View</string>
+    <string name="unable_set_wallpaper_image_deleted">"Impossible de définir cette image comme fond d'écran. Elle a été supprimée."</string>
+    <string name="unable_to_download">Téléchargement impossible.</string>
+    <string name="wallpaper_applied_home">"Le fond d'écran a été appliqué à l'écran d'accueil."</string>
+    <string name="wallpaper_applied_home_and_lock">"Le fond d'écran a été appliqué à l'écran d'accueil et à l'écran de verrouillage."</string>
+    <string name="wallpaper_applied_lock">"Le fond d'écran a été appliqué à l'écran de verrouillage."</string>
+    <string name="wallpaper_applied_multi_lock">"%d fonds d'écran ont été appliqués à l'écran de verrouillage."</string>
+    <string name="wallpaper_applied_sview">"Le fond d'écran a été appliqué à la fenêtre S View."</string>
+    <string name="wallpaper_crop_button_done">OK</string>
+    <string name="wallpaper_instructions">"Définir comme fond d'écran"</string>
+    <string name="wallpaper_lock_gui_cinematic">"L'apparence de l'écran de verrouillage changera lorsque vous inclinerez votre périphérique vers la gauche et la droite."</string>
+</resources>

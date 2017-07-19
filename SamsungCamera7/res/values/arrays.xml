@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="exposure_label_step_array">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </integer-array>
+    <string-array name="exposure_value">
+        <item>@string/ev_minus_2_0</item>
+        <item>@string/ev_minus_1_9</item>
+        <item>@string/ev_minus_1_8</item>
+        <item>@string/ev_minus_1_7</item>
+        <item>@string/ev_minus_1_6</item>
+        <item>@string/ev_minus_1_5</item>
+        <item>@string/ev_minus_1_4</item>
+        <item>@string/ev_minus_1_3</item>
+        <item>@string/ev_minus_1_2</item>
+        <item>@string/ev_minus_1_1</item>
+        <item>@string/ev_minus_1_0</item>
+        <item>@string/ev_minus_0_9</item>
+        <item>@string/ev_minus_0_8</item>
+        <item>@string/ev_minus_0_7</item>
+        <item>@string/ev_minus_0_6</item>
+        <item>@string/ev_minus_0_5</item>
+        <item>@string/ev_minus_0_4</item>
+        <item>@string/ev_minus_0_3</item>
+        <item>@string/ev_minus_0_2</item>
+        <item>@string/ev_minus_0_1</item>
+        <item>@string/ev_0</item>
+        <item>@string/ev_plus_0_1</item>
+        <item>@string/ev_plus_0_2</item>
+        <item>@string/ev_plus_0_3</item>
+        <item>@string/ev_plus_0_4</item>
+        <item>@string/ev_plus_0_5</item>
+        <item>@string/ev_plus_0_6</item>
+        <item>@string/ev_plus_0_7</item>
+        <item>@string/ev_plus_0_8</item>
+        <item>@string/ev_plus_0_9</item>
+        <item>@string/ev_plus_1_0</item>
+        <item>@string/ev_plus_1_1</item>
+        <item>@string/ev_plus_1_2</item>
+        <item>@string/ev_plus_1_3</item>
+        <item>@string/ev_plus_1_4</item>
+        <item>@string/ev_plus_1_5</item>
+        <item>@string/ev_plus_1_6</item>
+        <item>@string/ev_plus_1_7</item>
+        <item>@string/ev_plus_1_8</item>
+        <item>@string/ev_plus_1_9</item>
+        <item>@string/ev_plus_2_0</item>
+    </string-array>
+    <integer-array name="focus_label_step_array">
+        <item>0</item>
+        <item>92</item>
+    </integer-array>
+    <string-array name="focus_mode_list">
+        <item>@string/F_AUTOFOCUS</item>
+        <item>@string/F_MACRO</item>
+    </string-array>
+    <integer-array name="focus_mode_value">
+        <item>1</item>
+        <item>9</item>
+    </integer-array>
+    <string-array name="guideline_list">
+        <item>@string/OPTION_OFF</item>
+        <item>@string/guideline_3by3</item>
+        <item>@string/guideline_square</item>
+    </string-array>
+    <integer-array name="guideline_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <integer-array name="iso_label_step_array">
+        <item>0</item>
+        <item>3</item>
+        <item>6</item>
+        <item>9</item>
+        <item>12</item>
+    </integer-array>
+    <integer-array name="iso_lite_label_step_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </integer-array>
+    <string-array name="iso_lite_value">
+        <item>@string/ISO_100</item>
+        <item>@string/ISO_200</item>
+        <item>@string/ISO_400</item>
+        <item>@string/ISO_800</item>
+    </string-array>
+    <string-array name="iso_value">
+        <item>@string/ISO_50</item>
+        <item>@string/ISO_64</item>
+        <item>@string/ISO_80</item>
+        <item>@string/ISO_100</item>
+        <item>@string/ISO_125</item>
+        <item>@string/ISO_160</item>
+        <item>@string/ISO_200</item>
+        <item>@string/ISO_250</item>
+        <item>@string/ISO_320</item>
+        <item>@string/ISO_400</item>
+        <item>@string/ISO_500</item>
+        <item>@string/ISO_640</item>
+        <item>@string/ISO_800</item>
+        <item>@string/ISO_1600</item>
+        <item>@string/ISO_3200</item>
+    </string-array>
+    <integer-array name="recording_shutter_speed_label_step_array">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+    </integer-array>
+    <array name="recording_to_pause_animation_resource">
+        <item>@drawable/camera_main_btn_pause_01</item>
+        <item>@drawable/camera_main_btn_pause_02</item>
+        <item>@drawable/camera_main_btn_pause_03</item>
+        <item>@drawable/camera_main_btn_pause_04</item>
+        <item>@drawable/camera_main_btn_pause_05</item>
+        <item>@drawable/camera_main_btn_pause_06</item>
+        <item>@drawable/camera_main_btn_pause_07</item>
+        <item>@drawable/camera_main_btn_pause_08</item>
+        <item>@drawable/camera_main_btn_pause_09</item>
+        <item>@drawable/camera_main_btn_pause_10</item>
+        <item>@drawable/camera_main_btn_pause_11</item>
+        <item>@drawable/camera_main_btn_pause_12</item>
+        <item>@drawable/camera_main_btn_pause_13</item>
+        <item>@drawable/camera_main_btn_pause_14</item>
+        <item>@drawable/camera_main_btn_pause_15</item>
+        <item>@drawable/camera_main_btn_pause_16</item>
+    </array>
+    <integer-array name="shutter_speed_label_step_array">
+        <item>0</item>
+        <item>11</item>
+        <item>22</item>
+        <item>33</item>
+    </integer-array>
+    <string-array name="shutter_time_value">
+        <item>@string/SHUTTER_SPEED_1</item>
+        <item>@string/SHUTTER_SPEED_2</item>
+        <item>@string/SHUTTER_SPEED_3</item>
+        <item>@string/SHUTTER_SPEED_4</item>
+        <item>@string/SHUTTER_SPEED_5</item>
+        <item>@string/SHUTTER_SPEED_6</item>
+        <item>@string/SHUTTER_SPEED_7</item>
+        <item>@string/SHUTTER_SPEED_8</item>
+        <item>@string/SHUTTER_SPEED_9</item>
+        <item>@string/SHUTTER_SPEED_10</item>
+        <item>@string/SHUTTER_SPEED_11</item>
+        <item>@string/SHUTTER_SPEED_12</item>
+        <item>@string/SHUTTER_SPEED_13</item>
+        <item>@string/SHUTTER_SPEED_14</item>
+        <item>@string/SHUTTER_SPEED_15</item>
+        <item>@string/SHUTTER_SPEED_16</item>
+        <item>@string/SHUTTER_SPEED_17</item>
+        <item>@string/SHUTTER_SPEED_18</item>
+        <item>@string/SHUTTER_SPEED_19</item>
+        <item>@string/SHUTTER_SPEED_20</item>
+        <item>@string/SHUTTER_SPEED_21</item>
+        <item>@string/SHUTTER_SPEED_22</item>
+        <item>@string/SHUTTER_SPEED_23</item>
+        <item>@string/SHUTTER_SPEED_24</item>
+        <item>@string/SHUTTER_SPEED_25</item>
+        <item>@string/SHUTTER_SPEED_26</item>
+        <item>@string/SHUTTER_SPEED_27</item>
+        <item>@string/SHUTTER_SPEED_28</item>
+        <item>@string/SHUTTER_SPEED_29</item>
+        <item>@string/SHUTTER_SPEED_30</item>
+        <item>@string/SHUTTER_SPEED_31</item>
+        <item>@string/SHUTTER_SPEED_32</item>
+        <item>@string/SHUTTER_SPEED_33</item>
+        <item>@string/SHUTTER_SPEED_34</item>
+    </string-array>
+    <array name="shutter_to_stop_animation_resource">
+        <item>@drawable/camera_main_btn_shutter_to_stop_01</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_02</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_03</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_04</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_05</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_06</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_07</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_08</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_09</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_10</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_11</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_12</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_13</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_14</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_15</item>
+        <item>@drawable/camera_main_btn_shutter_to_stop_16</item>
+    </array>
+    <string-array name="storage_list">
+        <item>@string/S_DEVICE</item>
+        <item>@string/S_MMC</item>
+    </string-array>
+    <integer-array name="storage_value">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="timer_list">
+        <item>@string/OPTION_OFF</item>
+        <item>@string/T_TWO</item>
+        <item>@string/T_FIVE</item>
+        <item>@string/T_TEN</item>
+    </string-array>
+    <string-array name="volume_key_list">
+        <item>@string/camera_key</item>
+        <item>@string/record_key</item>
+        <item>@string/zoom</item>
+        <item>@string/system_volume_key</item>
+    </string-array>
+    <integer-array name="volume_key_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="whitebalance_label_step_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+</resources>

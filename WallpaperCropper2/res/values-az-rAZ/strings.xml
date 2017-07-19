@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s açmaq olmadı. PARAMETRLƏR vurun, Proqram məlumatı > İcazələr seçin və aşağıdakə icazələri verib yenidən cəhd edin:</string>
+    <string name="all_sim">Hamısını</string>
+    <string name="app_name">Divar kağızları</string>
+    <string name="apply">Tətbiq et</string>
+    <string name="can_not_set_wallpaper_image_not_found">Şəkli divar kağızı kimi qurmaq olmur. Şəkil tapılmadı.</string>
+    <string name="cancel">Ləğv et</string>
+    <string name="cancle">Ləğv et</string>
+    <string name="change_wallpaper_when_infinity_applied">Bu divar kağızından istifadə etsəniz, sonsuzluq effektləri sönəcək.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Hazırdır</string>
+    <string name="duplicate_image">Surətini çıxar</string>
+    <string name="expand_image">Genişləndr</string>
+    <string name="fail_to_load">Şəkli yükləmək mümkün deyil.</string>
+    <string name="home_lock_screen">Əsas və kilid ekranları</string>
+    <string name="home_screen">Əsas ekran</string>
+    <string name="homescreen_checkbox_motion_effect">Hərəkət effekti</string>
+    <string name="image_too_small">Şəkil çox kiçikdir.</string>
+    <string name="item_restricted">Elem məhdud-dır</string>
+    <string name="left_image">Sol</string>
+    <string name="lock_screen">Ekran kilidi</string>
+    <string name="motion_effect">Divar kağız hərək effek</string>
+    <string name="motion_wallpaper_name">Hərəkətli divar kağızı</string>
+    <string name="notice_low_storage">Kifayət qədər yer yoxdur. Lazımsız elementləri, məsələn, yüklənmiş proqramları, şəkilləri, videoları və sənədləri silin.</string>
+    <string name="permission_description">%s-dən istifadə etmək üçün PARAMETRLƏR vurun Proqram məlumatı > İcazələr seçin və aşağıdakı icazələri verin:</string>
+    <string name="permission_name_read_sms">SMS</string>
+    <string name="permission_name_storage">Ehtiyat</string>
+    <string name="processing">Emal edilir…</string>
+    <string name="request_permission_rationale">%1$s istifadə etmək olmur. PARAMETRLƏRƏ toxunun, sonra %2$s icazə verin və yenidən cəhd edin.</string>
+    <string name="right_image">Sağ</string>
+    <string name="set_wallpaper_docomo_text_gui">Bu şəkil əsas və kilid ekranlarında görünəcək.</string>
+    <string name="settings">Parametrlər</string>
+    <string name="speak_button">Düymə</string>
+    <string name="sview_window">S View pəncərəsi</string>
+    <string name="unable_set_wallpaper_image_deleted">Şəkli divar kağızı kimi qurmaq olmadı. Şəkil silindi.</string>
+    <string name="unable_to_download">Yükləmək mümkün deyildir.</string>
+    <string name="wallpaper_applied_home">Divar kağızı əsas ekrana tətbiq edildi.</string>
+    <string name="wallpaper_applied_home_and_lock">Əsas ekrana və kilid ekranına tətbiq edilən divar kağızı.</string>
+    <string name="wallpaper_applied_lock">Divar kağızı kilid ekranına tətbiq edildi.</string>
+    <string name="wallpaper_applied_multi_lock">Kilid ekranına %d divar kağızı tətbiq edildi.</string>
+    <string name="wallpaper_applied_sview">Divar kağızı S View pəncərəsinə tətbiq edilir.</string>
+    <string name="wallpaper_crop_button_done">Bitdi</string>
+    <string name="wallpaper_instructions">Divar kağızı kimi qur</string>
+    <string name="wallpaper_lock_gui_cinematic">Cihazı sola və ya sağa əydiyinizdə kilid ekranının görünüşü dəyişəcək.</string>
+</resources>

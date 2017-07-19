@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bottom_bar_bg_color">#fffafafa</color>
+    <color name="bottom_bar_divider_color">#07000000</color>
+    <color name="bottom_bar_text_color">#cc252525</color>
+    <color name="caution_text_color">#ff0070d2</color>
+    <color name="colorcontrolactivate">#ff56c0e5</color>
+    <color name="common_action_bar_splitter">#ffd2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#ffaaaaaa</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#ffdd4b39</color>
+    <color name="common_signin_btn_light_text_default">#ff737373</color>
+    <color name="common_signin_btn_light_text_disabled">#ffaaaaaa</color>
+    <color name="common_signin_btn_light_text_focused">#ff737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <color name="content_box_background_color">#ffe3f1f4</color>
+    <color name="content_box_text_color">#ff6b6f72</color>
+    <color name="description_text_color">#ff6b6f72</color>
+    <color name="expaned_color">#ff499ebd</color>
+    <color name="list_description_text_color">#ff979797</color>
+    <color name="list_divider_color">#ffe6e6e6</color>
+    <color name="list_no_item_text_color">#66252525</color>
+    <color name="list_title_text_color">#ff252525</color>
+    <color name="main_text_color">#ff505050</color>
+    <color name="tw_expander_tint_color">#7f000000</color>
+    <color name="wizard_bottom_button_background_color">#fffafafa</color>
+    <color name="wizard_bottom_button_next_arrow_color">#ff4e4f50</color>
+    <color name="wizard_bottom_button_ripple_color">#40000000</color>
+    <color name="wizard_bottom_button_text_color">#ff4e4f50</color>
+    <color name="wizard_contents_text_color">#ff313131</color>
+    <color name="wizard_title_background_color">#ff56b3da</color>
+    <color name="wizard_title_text_color">#fffafafa</color>
+    <color name="wizard_title_top_background_color">#ff23bac8</color>
+</resources>

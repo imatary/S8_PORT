@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_omc_configuration" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/update_header_only_config" android:text="@string/STR_UPDATE_HEADER1" style="@style/description_text_secondary" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/update_body1" android:text="@string/STR_UPDATE_BODY1" style="@style/description_text_secondary" />
+        <TextView android:id="@id/update_body2" android:text="@string/STR_UPDATE_BODY2" style="@style/description_text_secondary" />
+        <TextView android:textColor="@color/caution_text_color" android:id="@id/caution_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/STR_INSTALL_CAUTIONS" android:layout_marginStart="@dimen/header_padding_width" android:layout_marginEnd="@dimen/header_padding_width" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Kan %s niet openen. Tik op INSTELLINGEN, ga naar App-info > Machtigingen, sta de volgende machtigingen toe en probeer het opnieuw:</string>
+    <string name="all_sim">Alles</string>
+    <string name="app_name">Achtergrond</string>
+    <string name="apply">Toepassen</string>
+    <string name="can_not_set_wallpaper_image_not_found">Kan afbeelding niet instellen als achtergrond. Afbeelding niet gevonden.</string>
+    <string name="cancel">Annuleren</string>
+    <string name="cancle">Annul.</string>
+    <string name="change_wallpaper_when_infinity_applied">Oneindigheideffecten worden uitgeschakeld als u deze achtergrond gebruikt.</string>
+    <string name="date_format">E MMMM d</string>
+    <string name="done">Klaar</string>
+    <string name="duplicate_image">Dupliceren</string>
+    <string name="expand_image">Uitvouwen</string>
+    <string name="fail_to_load">Kan foto niet laden.</string>
+    <string name="home_lock_screen">Start- en vergrendelscherm</string>
+    <string name="home_screen">Startscherm</string>
+    <string name="homescreen_checkbox_motion_effect">Bewegingseffect</string>
+    <string name="image_too_small">Afbeelding is te klein.</string>
+    <string name="item_restricted">Beperkt item</string>
+    <string name="left_image">Links</string>
+    <string name="lock_screen">Vergrendelscherm</string>
+    <string name="motion_effect">Bewegingseffect achtergrond</string>
+    <string name="motion_wallpaper_name">Bewegende achtergrond</string>
+    <string name="notice_low_storage">Onvoldoende ruimte. Verwijder overbodige items, zoals gedownloade software, foto´s, video´s en documenten.</string>
+    <string name="permission_description">Als u %s wilt gebruiken, tikt u op INSTELLINGEN, gaat u naar Applicatiegegevens > Machtigingen en staat u de volgende machtigingen toe:</string>
+    <string name="permission_name_read_sms">Sms</string>
+    <string name="permission_name_storage">Opslag</string>
+    <string name="processing">Verwerken…</string>
+    <string name="request_permission_rationale">Kan %1$s niet gebruiken. Tik op INSTELLINGEN, wijs de machtiging voor %2$s toe en probeer het opnieuw.</string>
+    <string name="right_image">Rechts</string>
+    <string name="set_wallpaper_docomo_text_gui">Deze afbeelding wordt weergegeven op uw start- en vergrendelscherm.</string>
+    <string name="settings">Instellingen</string>
+    <string name="speak_button">Knop</string>
+    <string name="sview_window">S View-venster</string>
+    <string name="unable_set_wallpaper_image_deleted">Kan afbeelding niet instellen als achtergrond. Afbeelding verwijderd.</string>
+    <string name="unable_to_download">Kan niet downloaden.</string>
+    <string name="wallpaper_applied_home">Achtergrond toegepast op startscherm.</string>
+    <string name="wallpaper_applied_home_and_lock">Achtergrond toegepast op startscherm en vergrendelscherm.</string>
+    <string name="wallpaper_applied_lock">Achtergrond toegepast op vergrendelscherm.</string>
+    <string name="wallpaper_applied_multi_lock">%d achtergronden toegepast op vergrendelscherm.</string>
+    <string name="wallpaper_applied_sview">Achtergrond toegepast op S View-venster.</string>
+    <string name="wallpaper_crop_button_done">Klaar</string>
+    <string name="wallpaper_instructions">Instellen als achtergrond</string>
+    <string name="wallpaper_lock_gui_cinematic">De weergave van het vergrendelscherm verandert wanneer u het apparaat naar links en naar rechts kantelt.</string>
+</resources>

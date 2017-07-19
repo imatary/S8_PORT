@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/STR_APP_INSTALLER_DESC_COMMON" style="@style/description_text_main" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_app_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/activity_padding_default">
+        <include android:id="@id/appItem_listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/layout_applist_v4" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="64.0dip">
+            <View android:background="@color/bottom_bar_divider_color" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/bottom_bar_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_install" android:background="@drawable/tw_btn_ripple" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/STR_BTN_INSTALL" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">No es posible abrir %s. Pulse AJUSTES, vaya a Información de la aplicación > Permisos, otorgue los siguientes permisos e inténtelo de nuevo:</string>
+    <string name="all_sim">Todo</string>
+    <string name="app_name">Fondos de pantalla</string>
+    <string name="apply">Aplicar</string>
+    <string name="can_not_set_wallpaper_image_not_found">No es posible definir esta imagen como fondo de pantalla. No se encontró la imagen.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cancle">Cancelar</string>
+    <string name="change_wallpaper_when_infinity_applied">Los efectos de infinidad se desactivarán si usa este fondo de pantalla.</string>
+    <string name="date_format">E, MMMM d</string>
+    <string name="done">Realizado</string>
+    <string name="duplicate_image">Duplicar</string>
+    <string name="expand_image">Ampliar</string>
+    <string name="fail_to_load">No es posible cargar la imagen.</string>
+    <string name="home_lock_screen">Pantallas de inicio y bloqueo</string>
+    <string name="home_screen">Pantalla de inicio</string>
+    <string name="homescreen_checkbox_motion_effect">Efecto de movimiento</string>
+    <string name="image_too_small">La imagen es demasiado pequeña.</string>
+    <string name="item_restricted">Elemento restringido</string>
+    <string name="left_image">Izquierdo</string>
+    <string name="lock_screen">Pantalla de bloqueo</string>
+    <string name="motion_effect">Efecto movimiento de fondo</string>
+    <string name="motion_wallpaper_name">Fondo de pantalla en movimiento</string>
+    <string name="notice_low_storage">No hay espacio suficiente. Elimine los elementos no necesarios, como software, imágenes, videos y documentos descargados.</string>
+    <string name="permission_description">Para usar %s, pulse AJUSTES, vaya a Información de la aplicación > Permisos, y otorgue los siguientes permisos:</string>
+    <string name="permission_name_read_sms">Mensaje de texto</string>
+    <string name="permission_name_storage">Almacenamiento</string>
+    <string name="processing">Procesando…</string>
+    <string name="request_permission_rationale">No es posible usar %1$s. Pulse AJUSTES, otorgue el permiso %2$s e inténtelo de nuevo.</string>
+    <string name="right_image">Derecho</string>
+    <string name="set_wallpaper_docomo_text_gui">Esta imagen se mostrará en sus pantallas de inicio y bloqueo.</string>
+    <string name="settings">Ajustes</string>
+    <string name="speak_button">Botón</string>
+    <string name="sview_window">Ventana de S View</string>
+    <string name="unable_set_wallpaper_image_deleted">No es posible definir la imagen como fondo de pantalla. Imagen eliminada.</string>
+    <string name="unable_to_download">No es posible descargar.</string>
+    <string name="wallpaper_applied_home">Se aplicó el fondo de pantalla a la pantalla de inicio.</string>
+    <string name="wallpaper_applied_home_and_lock">Fondo de pantalla aplicado a la pantalla de inicio y a la de bloqueo.</string>
+    <string name="wallpaper_applied_lock">Se aplicó el fondo de pantalla a la pantalla de bloqueo.</string>
+    <string name="wallpaper_applied_multi_lock">Se aplicaron %d fondos de pantalla a la pantalla de bloqueo.</string>
+    <string name="wallpaper_applied_sview">Se aplicó el fondo de pantalla a la ventana de S View.</string>
+    <string name="wallpaper_crop_button_done">Real.</string>
+    <string name="wallpaper_instructions">Definir como fondo de pantalla</string>
+    <string name="wallpaper_lock_gui_cinematic">El aspecto de la pantalla de bloqueo cambia cuando el dispositivo se inclina hacia la izquierda y la derecha.</string>
+</resources>
