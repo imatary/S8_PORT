@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SelectAllText">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textColor">@color/select_all_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialpad_edittext_height">116.0dip</dimen>
+    <dimen name="dialpad_keypad_height">415.0dip</dimen>
+    <dimen name="dialpad_layout_height">315.0dip</dimen>
+</resources>

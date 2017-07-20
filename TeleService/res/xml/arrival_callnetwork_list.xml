@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/activate_service" android:key="arrival_callnetwork_active_pref" />
+    <PreferenceScreen android:title="@string/deactivate_service" android:key="arrival_callnetwork_deactive_pref" />
+    <PreferenceScreen android:title="@string/check_service_setting" android:key="arrival_callnetwork_check_pref" />
+</PreferenceScreen>

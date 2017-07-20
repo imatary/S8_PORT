@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialpad_bottom_key_height">70.0dip</dimen>
+    <dimen name="dialpad_edittext_height">199.0dip</dimen>
+    <dimen name="dialpad_keypad_height">361.0dip</dimen>
+    <dimen name="dialpad_key_star_pound_size">30.0dip</dimen>
+    <dimen name="emergency_contact_image_size">49.0dip</dimen>
+    <dimen name="dialog_minWidth">302.0dip</dimen>
+    <dimen name="pref_dialog_edit_phone_number_end">8.0dip</dimen>
+    <dimen name="dialpad_layout_height">240.0dip</dimen>
+    <dimen name="edit_fdn_list_height">74.0dip</dimen>
+    <dimen name="rejection_message_editor_maxHeight">95.0dip</dimen>
+    <dimen name="dialpad_dial_button_side_inset">10.0dip</dimen>
+    <dimen name="dialpad_dial_button_top_bottom_inset">16.0dip</dimen>
+    <dimen name="emergency_dialpad_dial_button_inset">15.0dip</dimen>
+    <dimen name="list_item_padding">16.0dip</dimen>
+    <dimen name="emergency_zero_dialer_items_container_height">199.0dip</dimen>
+    <dimen name="emergency_zero_contact_container_paddingTop">10.0dip</dimen>
+    <dimen name="emergency_zero_contact_container_paddingBottom">23.0dip</dimen>
+    <dimen name="emergency_zero_contact_image_size">49.0dip</dimen>
+    <dimen name="emergency_zero_contact_item_textSize">12.0dip</dimen>
+    <dimen name="emergency_zero_dialer_edittext_height">82.0dip</dimen>
+    <dimen name="emergency_zero_contact_image_size_height">88.0dip</dimen>
+    <dimen name="emergency_zero_contact_image_padding">8.0dip</dimen>
+    <dimen name="emergency_zero_contact_image_padding_top">29.0dip</dimen>
+    <dimen name="emergency_zero_contact_name_paddingTop">64.0dip</dimen>
+    <dimen name="emergency_zero_contact_item_height">98.0dip</dimen>
+    <dimen name="emergency_zero_contact_item_width">69.0dip</dimen>
+    <dimen name="emergency_contact_dialer_edittext_size">40.0dip</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path name="photoring" path="" />
+    <external-path name="photoring_external" path="/DCIM/Camera/" />
+    <external-path name="photoring_temp" path="/photoring/" />
+    <external-path name="external_files" path="/AnswerMemo/answermemo/" />
+</paths>

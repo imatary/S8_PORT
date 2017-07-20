@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/TableLayout01" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/lgt_roaming_data_usage_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="11.0dip" android:text="@string/agree_roaming_data_usage_content_lgt" android:nestedScrollingEnabled="true" />
+        <CheckBox android:id="@id/lgt_roaming_data_usage_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/agree_roaming_check_box_text_lgt" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/lgt_roaming_automatic_update_usage_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="11.0dip" android:text="@string/agree_roaming_automatic_update_usage_content_lgt" android:nestedScrollingEnabled="true" />
+        <CheckBox android:id="@id/lgt_roaming_automatic_update_usage_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/agree_roaming_check_box_text_lgt" />
+        <LinearLayout android:background="@color/call_setting_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/lgt_roaming_footer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:text="@string/agree_roaming_data_footer_lgt" android:nestedScrollingEnabled="true" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/unwanted_calls_revention_kdi" android:key="network_black_list_kddi_preference" android:fragment="com.android.phone.callsettings.KddiCallPrevention" />
+    <SwitchPreference android:title="@string/request_nubmer_service_kdi" android:key="request_nubmer_service_kddi_preference" />
+</PreferenceScreen>

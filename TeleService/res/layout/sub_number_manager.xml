@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/list_header_create" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" />
+    <FrameLayout android:id="@id/subnumber_empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="19.0dip" android:textColor="@color/noitem_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/callsettings_ip_list_noitem" />
+        </LinearLayout>
+    </FrameLayout>
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

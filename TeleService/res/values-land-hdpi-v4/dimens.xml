@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="emergency_zero_contact_image_padding">5.0dip</dimen>
+    <dimen name="emergency_zero_contact_item_height">79.0dip</dimen>
+    <dimen name="emergency_zero_contact_item_width">59.0dip</dimen>
+</resources>

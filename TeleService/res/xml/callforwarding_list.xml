@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/activate_service" android:key="callforwarding_active_pref" />
+    <PreferenceScreen android:title="@string/deactivate_service" android:key="callforwarding_deactive_pref" />
+    <PreferenceScreen android:title="@string/callsettings_nwservice_forwarding_list3" android:key="callforwarding_register_pref" />
+    <PreferenceScreen android:title="@string/callsettings_nwservice_forwarding_list4" android:key="callforwarding_voicemail_pref" />
+    <PreferenceScreen android:title="@string/phoneset_nwservice_guidance_setting" android:key="callforwarding_guidance_pref" />
+    <PreferenceScreen android:title="@string/check_service_setting" android:key="callforwarding_check_pref" />
+</PreferenceScreen>

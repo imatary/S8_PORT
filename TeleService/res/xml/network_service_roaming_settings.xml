@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_overseas_barring_incoming_call_when_roaming" android:key="button_overseas_barring_incoming_call_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.BarringIncomingCallWhenRoaming" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_overseas_missed_call_notification_for_roaming" android:key="button_overseas_missed_call_notification_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.MissedCallNotificationForRoaming" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_overseas_roaming_guidance" android:key="button_overseas_roaming_guidance_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.RoamingGuidanceSetting" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_overseas_international_dialing_assist">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.intprefix.InternationalDialingAssist" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/callsettings_allcalls_nwservice_dcm" android:key="nwservice_preference">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.NetworkServiceRoaming" />
+    </PreferenceScreen>
+</PreferenceScreen>

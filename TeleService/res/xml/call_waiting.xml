@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/callsettings_voicemail_activate_service" android:key="activate_service" android:summary="@string/callsettings_voicemail_activate_service_sub_text" />
+    <PreferenceScreen android:title="@string/callsettings_callwaiting_deactivate_service" android:key="deactivate_service" android:summary="@string/callsettings_callwaiting_deactivate_service_sub_text" />
+</PreferenceScreen>

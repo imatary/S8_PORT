@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="65.32999dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/registerussd_text_layout" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.9">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:id="@id/registerussd_item_text" android:paddingLeft="13.329987dip" android:focusable="false" android:focusableInTouchMode="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

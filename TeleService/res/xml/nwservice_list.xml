@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/voicemail_title" android:key="voice_mail_preference">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.VoiceMail" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/callsettings_voicecall_forwarding_service" android:key="call_forwarding_preference">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.CallForwarding" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/callsettings_voicecall_waiting" android:key="call_waiting_preference">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.CallWaiting" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/caller_id_notification" android:key="clir_preference">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.CLIRSetting" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_nwservice_nuisance_call_blocking_service" android:key="button_nwservice_nuisance_call_blocking_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.NuisanceCallBlockingService" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_nwservice_caller_id_request" android:key="button_nwservice_caller_id_request_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.CallerIdRequest" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/voice_mail_missed_call_notification" android:key="missed_call_noti_preference">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.VoiceMailMissedCallSetting" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_nwservice_english_guidance" android:key="button_nwservice_english_guidance_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.EnglishGuidanceSettings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_nwservice_remote_access" android:key="button_nwservice_remote_access_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.RemoteAccessSettings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_nwservice_public_mode" android:key="button_nwservice_public_mode_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nwservice.PublicModeSettings" />
+    </PreferenceScreen>
+</PreferenceScreen>

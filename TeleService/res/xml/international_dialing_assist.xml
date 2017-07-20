@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/phoneset_overseas_automatic_international_call" android:key="automatic_international_call" android:summary="@string/phoneset_overseas_automatic_conversion" />
+    <Preference android:title="@string/phoneset_overseas_country_code" android:key="country_code">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.intprefix.CountryCodePreference" />
+    </Preference>
+    <Preference android:title="@string/phoneset_overseas_idd_prefix" android:key="idd_prefix">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.intprefix.InternationalCallPrefixPreference" />
+    </Preference>
+</PreferenceScreen>

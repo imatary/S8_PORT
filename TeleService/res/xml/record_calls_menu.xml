@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <SwitchPreference android:title="@string/record_call_noti_setting_title" android:key="record_calls_notification" android:summary="@string/record_call_noti_setting_summary" />
+    <SemSwitchPreferenceScreen android:title="@string/record_call_setting_title" android:key="record_calls_automatically">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.RecordCallsAutomaticallyActivity" />
+    </SemSwitchPreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/tone_bivrate_notice"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:persistent="true" android:title="@string/voicemail_sound" android:key="pref_key_voicemail_sound" android:summary="@string/voicemail_sound_summary" android:defaultValue="true" />
+    <RingtonePreference android:persistent="true" android:title="@string/voicemail_notification_ringtone_title" android:key="button_voicemail_notification_ringtone_key" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" />
+    <SwitchPreference android:persistent="true" android:title="@string/voicemail_notification_vibrate_when_title" android:key="button_meterial_voicemail_notification_vibrate_key" />
+</PreferenceScreen>

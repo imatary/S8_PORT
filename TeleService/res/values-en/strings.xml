@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="battery_history_hours_no_seconds">%1$dh %2$dm</string>
+    <string name="battery_history_minutes_no_seconds">%dm</string>
+    <string name="wifi_failed_to_obtain_IP">Failed to obtain IP address.</string>
+    <string name="wifi_unknown_security_type">Unknown security type.</string>
+    <string name="wifi_disabled_no_internet">Internet not available</string>
+    <string name="wifi_disabled_password_failure">Authentication error occurred</string>
+    <string name="wifi_empty_list_wifi_on">Scanning for <cst>Wi-Fi</cst> networks…</string>
+    <string name="wifi_auto_reconnect_disabled">Auto reconnect disabled</string>
+    <string name="wifi_internet_may_not_be_available">Internet may not be available</string>
+    <string name="wifi_reconnecting">Ready to connect when network quality improves</string>
+    <string name="wifi_connected_checking_quality">Checking the quality of your Internet connection…</string>
+    <string name="wifi_sign_in_to_the_network">Sign in to the network.</string>
+    <string name="wifi_disabled_captive_portal">Sign-in is required.</string>
+    <string name="bluetooth_disconnect_message">Bluetooth connection with %s ended.</string>
+    <string name="bluetooth_disconnecting">Disconnecting…</string>
+    <string name="bluetooth_connecting">Connecting…</string>
+    <string name="bluetooth_connected">Connected</string>
+    <string name="bluetooth_pairing">Pairing…</string>
+    <string name="bluetooth_profile_a2dp">Media audio</string>
+    <string name="bluetooth_profile_headset">Call audio</string>
+    <string name="bluetooth_profile_hid">Input device</string>
+    <string name="bluetooth_profile_pan">Internet access</string>
+    <string name="bluetooth_profile_pbap">Contact access</string>
+    <string name="bluetooth_profile_pan_nap">Internet connection sharing</string>
+    <string name="bluetooth_profile_map">Message access</string>
+    <string name="bluetooth_profile_sap">SIM card access</string>
+    <string name="bluetooth_a2dp_profile_summary_connected">Connected for media audio</string>
+    <string name="bluetooth_headset_profile_summary_connected">Connected for call audio</string>
+    <string name="bluetooth_hid_profile_summary_connected">Connected as input device</string>
+    <string name="bluetooth_pan_user_profile_summary_connected">Connected to device for Internet access.</string>
+    <string name="bluetooth_profile_map_summary">Allow this paired device to access your messages.</string>
+    <string name="bluetooth_profile_sap_summary">Allow this paired device to access your SIM card.</string>
+    <string name="bluetooth_spp_profile_summary_connected">Connected via Serial Port Profile</string>
+    <string name="bluetooth_pan_profile_summary_use_for">Enable Bluetooth tethering on the paired device to access the Internet on this device.</string>
+    <string name="bluetooth_profile_textinput">Text input</string>
+    <string name="bluetooth_profile_pbap_tts">Contacts and Phone log</string>
+    <string name="bluetooth_summary_connected_to_a2dp_headset">Connected for call and media audio</string>
+    <string name="bluetooth_pan_nap_connected">Connected to provide Internet connection</string>
+    <string name="bluetooth_pan_panu_connected">Connected to access Internet connection</string>
+    <string name="bluetooth_pairing_error_message">Unable to communicate with %1$s.</string>
+    <string name="bluetooth_pairing_pin_error_message">Unable to pair with %1$s. Make sure %2$s is ready to pair.</string>
+    <string name="bluetooth_pairing_device_down_error_message">"Can't connect to %s."</string>
+    <string name="bluetooth_pairing_device_down_black_list_error_message">"Can't connect to %1$s. Check your settings in %2$s and try again."</string>
+    <string name="bluetooth_pairing_rejected_error_message">Pairing rejected by %s.</string>
+    <string name="tether_settings_title_all">Mobile hotspot and tethering</string>
+    <string name="tts_settings_title">Text-to-speech</string>
+    <string name="tts_default_rate_title">Speech rate</string>
+    <string name="tts_default_rate_summary">Speed at which the text is spoken.</string>
+    <string name="tts_default_pitch_title">Pitch</string>
+    <string name="tts_default_lang_title">Language</string>
+    <string name="tts_lang_use_system">Use system language</string>
+    <string name="tts_lang_not_selected">No language is selected</string>
+    <string name="tts_default_lang_summary">Set language-specific voice for spoken text.</string>
+    <string name="tts_play_example_title">Listen to example</string>
+    <string name="tts_play_example_summary">Play short demonstration of speech synthesis.</string>
+    <string name="tts_install_data_title">Install voice data</string>
+    <string name="tts_install_data_summary">Install voice data required for speech synthesis.</string>
+    <string name="tts_engine_security_warning">This speech synthesis engine may collect all speech, including passwords, credit card numbers, and other personal data. Continue?</string>
+    <string name="tts_default_sample_string">Example of speech synthesis</string>
+    <string name="tts_status_title">Default language status</string>
+    <string name="tts_status_ok">%s is fully supported.</string>
+    <string name="tts_status_requires_network">A network connection is required to support %s.</string>
+    <string name="tts_status_not_supported">%s is not supported.</string>
+    <string name="tts_status_checking">Checking…</string>
+    <string name="tts_engine_settings_title">Settings for %s</string>
+    <string name="tts_engine_settings_button">Open Text-to-speech engine settings.</string>
+    <string name="tts_engine_preference_section_title">Preferred TTS engine</string>
+    <string name="tts_general_section_title">General</string>
+    <string name="tts_reset_speech_pitch_title">Reset pitch</string>
+    <string name="tts_reset_speech_pitch_summary">Reset the pitch at which text is read out to the default setting.</string>
+    <string name="choose_profile">Select profile</string>
+    <string name="no_application">No apps</string>
+    <string name="power_charging_duration">%1$s: %2$s left until fully charged</string>
+    <string name="power_charging_duration_ac">%1$s: %2$s left until fully charged via AC</string>
+    <string name="power_charging_duration_usb">%1$s: %2$s left until fully charged via USB</string>
+    <string name="power_charging_duration_wireless">%1$s: %2$s left until fully charged (charging wirelessly)</string>
+    <string name="battery_info_status_charging">Charging</string>
+    <string name="battery_info_status_charging_ac">AC</string>
+    <string name="battery_info_status_charging_usb">USB</string>
+    <string name="battery_info_status_charging_wireless">Wireless</string>
+    <string name="battery_info_status_discharging">Not charging</string>
+    <string name="battery_info_status_not_charging">Not charging</string>
+    <string name="battery_info_status_full">Full</string>
+    <string name="battery_info_status_adaptive_fast_charging">Fast charging</string>
+    <string name="battery_info_power_ac">AC</string>
+    <string name="battery_info_power_usb">USB</string>
+    <string name="battery_info_power_wireless">Wireless</string>
+    <string name="charge_length_format">%s ago</string>
+    <string name="remaining_length_format">%s left</string>
+    <string name="default_app">Set as default</string>
+    <string name="no_default_app">None set as default</string>
+    <string name="hours">%d h</string>
+    <string name="hour_minutes">%1$d h %2$d m</string>
+    <string name="minutes">%d m</string>
+    <string name="battery_discharging_duration">Estimated battery life: %s</string>
+    <string name="bluetooth_tethering_cannot_connect_while_connected_to_wifi">Unable to use Bluetooth tethering while connected to <cst>Wi-Fi</cst> network.</string>
+    <string name="video_call_title">Video call</string>
+    <string name="default_notification_description">Default notification sound (%s)</string>
+    <string name="callFailed_powerOff">Radio off</string>
+    <string name="networks">Network operators</string>
+    <string name="callsetting_swipe_summary">Swipe contacts and recent calls right to call them or left to message them.</string>
+    <string name="callsetting_contact_with_phone_title">Hide contacts without numbers</string>
+    <string name="callsetting_contact_with_phone_title_for_tts">Hide contacts without numbers</string>
+    <string name="callsetting_contact_with_phone_summary">Only show contacts with phone numbers on the CONTACTS tab.</string>
+    <string name="sum_default_caller_id">Show my number in outgoing calls according to the default operator settings.</string>
+    <string name="labelCF">Call forwarding</string>
+    <string name="labelCFU">Always forward</string>
+    <string name="sum_cfu_disabled">Disabled</string>
+    <string name="labelCFB">Forward when busy</string>
+    <string name="sum_cfb_disabled">Disabled</string>
+    <string name="labelCFNRy">Forward when unanswered</string>
+    <string name="labeltimeCFNRy">Delay time</string>
+    <string name="timeCFNRy">Seconds</string>
+    <string name="sum_cfnry_disabled">Disabled</string>
+    <string name="labelCFNRc">Forward when unreachable</string>
+    <string name="sum_cfnrc_disabled">Disabled</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="rcs_settings_category">RCS call settings</string>
+    <string name="mobile_networks">Mobile networks</string>
+    <string name="select_automatically_lgt">Select automatically</string>
+    <string name="data_usage_enable_mobile_summery">Access the internet through your mobile network.</string>
+    <string name="roaming_menu_title_spr">Roaming</string>
+    <string name="roaming_reenable_message_tmo">International roaming charges may apply. You can go to Settings > Connections > Mobile networks > Data roaming to turn on or off data.</string>
+    <string name="roaming_warning_dcm">Data roaming will be enabled. Using Mobile data while roaming may result in additional charges depending on your payment plan.</string>
+    <string name="gsm_hspa_lte_autoconnect">GSM/HSPA/LTE (auto connect)</string>
+    <string name="hspa_lte_autoconnect">HSPA/LTE (auto connect)</string>
+    <string name="gsm_hspa_autoconnect">GSM/HSPA (auto connect)</string>
+    <string name="hspa_only">HSPA only</string>
+    <string name="mode_4g_3g_autoconnect">4G/3G (auto connect)</string>
+    <string name="mode_lte_4g_3g_2g_autoconnect">LTE/4G/3G/2G (auto connect)</string>
+    <string name="mode_lte_4g_3g_autoconnect">LTE/4G/3G (auto connect)</string>
+    <string name="mode_lte_3g_2g_autoconnect">LTE/3G/2G (auto connect)</string>
+    <string name="mode_lte_3g_autoconnect">LTE/3G (auto connect)</string>
+    <string name="data_changed_automatically">You will use %1$s for %2$s.</string>
+    <string name="data_change_title">Change network mode?</string>
+    <string name="mode_4g_3g_gsm_automode">4G/3G/GSM (auto connect)</string>
+    <string name="fdn_disabled">Fixed dialling numbers are disabled.</string>
+    <string name="attempts_left">%d attempts left.</string>
+    <string name="voicemail_settings_number_label_vzw">Voice Mail number</string>
+    <string name="ota_next_usc">Restart</string>
+    <string name="voicemail_settings">Voicemail settings</string>
+    <string name="wfc_title">Wi-Fi calling</string>
+    <string name="wfc_on">On</string>
+    <string name="wfc_off">Off</string>
+    <string name="wfc_summary_dt">Use <cst>Wi-Fi</cst> to make and receive calls whenever possible.</string>
+    <string name="wifi_calling_pop_up">"This device supports Wi-Fi Calling. This allows you to keep using your phone in places where you don't have cellular coverage - like basements, condos and tall buildings. If you are using Wi-Fi Calling, the usage is deducted from your airtime/messaging buckets in your wireless plan."</string>
+    <string name="wifi_call_wifi_preferred">Wi-Fi preferred</string>
+    <string name="wifi_call_cs_preferred">Mobile network preferred</string>
+    <string name="wifi_call_wifi_only">Wi-Fi only</string>
+    <string name="wfc_help">Help</string>
+    <string name="wfc_help_title">About Wi-Fi calling</string>
+    <string name="wfc_help_text1">Use Wi-Fi networks to make and receive calls anywhere, without connecting to a mobile network.</string>
+    <string name="wfc_help_text2">"To use this function, check that it is offered by your service provider, enable it in Call settings, then connect to a Wi-Fi network.
+
+The icon below will be shown whenever this function is available."</string>
+    <string name="wfc_help_gotoSetting">Tap SETTINGS to set up Wi-Fi calling.</string>
+    <string name="wfc_help_setting">SETTINGS</string>
+    <string name="wfc_help_noti_text">Receive and make/send calls and messages via a Wi-Fi network.</string>
+    <string name="description_add_button">Add buttons</string>
+    <string name="voicemail_visual_voicemail_switch_title">Visual Voicemail</string>
+    <string name="voicemail_notification_ringtone_title">Notification sound</string>
+    <string name="callsettings_ringtones_keytones_title">Ringtones and keypad tones</string>
+    <string name="sum_vcfu_enabled">Forward video calls to %s</string>
+    <string name="mpsm_HideMyVideo_disabled">Unable to open %s. Only apps added to home screen can be used in Maximum power saving mode.</string>
+    <string name="callsettings_rejectmessage_list3">"I'm busy at the moment. Please text me."</string>
+    <string name="callsettings_rejectmessage_list1_dream">"I'll call you back."</string>
+    <string name="callsettings_rejectmessage_list2_dream">Can you call back later?</string>
+    <string name="callsettings_rejectmessage_list3_dream">Please text me.</string>
+    <string name="callsettings_rejection_msg">Custom quick decline message</string>
+    <string name="callsettings_search_contact">Add from Contacts</string>
+    <string name="block_list_title">Block numbers</string>
+    <string name="block_list_call_message_summary">Block calls and messages from specific phone numbers.</string>
+    <string name="block_number">Block unknown callers</string>
+    <string name="call_block_list_title">Block list</string>
+    <string name="call_block_list_menu">Block list</string>
+    <string name="call_block_list_summary">Select the categories of calls that will be blocked, or add specific numbers to block both calls and messages from them.</string>
+    <string name="add_call_message_block_number_toast">"You won't receive any calls or messages from this number."</string>
+    <string name="emergency_call_block_number_toast">"Can't block emergency numbers."</string>
+    <string name="no_block_number_description">The numbers you add will appear here.</string>
+    <string name="no_messages_description">The messages you add will appear here.</string>
+    <string name="callsettings_vipmode_blockedcalls_title">Blocked calls</string>
+    <string name="emergency_disable_autoreject_noti">Blocking mode is turned off when making emergency calls.</string>
+    <string name="emergency_disable_autoreject_popup">When you make emergency calls, Blocking mode will be turned off automatically so that you can receive calls from the emergency services.</string>
+    <string name="callsettings_alertsoncall_title">Alerts during calls</string>
+    <string name="callsettings_call_pop_up_title">Show calls in pop-ups</string>
+    <string name="callsettings_call_pop_up_summary">Show ongoing calls in pop-ups instead of full screen view while using other apps.</string>
+    <string name="callsettings_answering_key_title">Press Home key to answer calls</string>
+    <string name="callsettings_answering_key_title_for_tts">Press Home key to answer calls</string>
+    <string name="callsettings_answering_volume_key_title">Press Volume up to answer calls</string>
+    <string name="callsettings_PowerkeyEndsCalls_title">Press Power key to end calls</string>
+    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Press Power key to end calls</string>
+    <string name="callsettings_voice_cmd_title">Answer calls with voice</string>
+    <string name="callsettings_voice_cmd_title_for_tts">Answer calls with voice</string>
+    <string name="callsettings_voice_cmd_summary">Say “Answer” or “Decline” to respond to incoming calls.</string>
+    <string name="callsettings_voice_cmd_summary_for_voice_language_not_supported">You can answer or decline calls by saying %1$s or %2$s. The speakerphone will turn on when you answer a call with a voice command.</string>
+    <string name="callsettings_voice_cmd_popup">"Voice commands aren't available when phone set to Vibrate."</string>
+    <string name="callsettings_body_already_in_use">%s is already available.</string>
+    <string name="callblock_already_added">Number already blocked.</string>
+    <string name="single_allnumber_already_added">Number already added to list.</string>
+    <string name="some_number_already_added">Some numbers already added to list.</string>
+    <string name="allnumber_already_added">All numbers already added to list.</string>
+    <string name="roaming_assistance_setting_title">Roaming assistance</string>
+    <string name="roaming_assistance_setting_help_description">Roaming assistance helps you easily call your home country while you are roaming internationally.</string>
+    <string name="roaming_assistance_auto_menu_title">Auto select country</string>
+    <string name="roaming_assistance_auto_menu_description">"Automatically apply your home country code when calling contacts you've called before."</string>
+    <string name="roaming_assistance_always_menu_title">Always call roaming country</string>
+    <string name="roaming_assistance_ask_menu_title">Ask for each call</string>
+    <string name="mt_forwarded_call">Forwarded call.</string>
+    <string name="roaming_alerts_category">Alerts</string>
+    <string name="roaming_alerts_body">Set roaming alerts</string>
+    <string name="roaming_alerts_header">Set roaming alerts</string>
+    <string name="roaming_alerts_sbody">Change voice, text, and data roaming settings, including settings for international roaming.</string>
+    <string name="roaming_alerts_voice_body">Voice roaming</string>
+    <string name="roaming_alerts_data_body">Data roaming</string>
+    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_domestic_category">Domestic roaming</string>
+    <string name="roaming_international_category">International roaming</string>
+    <string name="roaming_voice_body">Voice and text roaming</string>
+    <string name="roaming_domestic_voice_sbody">Make/receive voice calls and send/receive text messages while roaming.</string>
+    <string name="roaming_international_voice_sbody">Make/receive voice calls and send/receive text messages while roaming internationally.</string>
+    <string name="roaming_data_body">Data roaming</string>
+    <string name="roaming_domestic_data_sbody">Connect to data services while roaming.</string>
+    <string name="roaming_international_data_sbody">Connect to data services while roaming internationally. This requires an international roaming plan. Faster data speeds may be available for purchase.</string>
+    <string name="data_roaming_guard_first_time">To change setting, go to Settings > Connections > Mobile networks > Roaming > Set roam alerts.</string>
+    <string name="ota_usim_dialog_message">Start the USIM download?</string>
+    <string name="ota_usim_reset">Restart your device to verify the USIM.</string>
+    <string name="data_usage_disable_mobile_vzw_volte">"Your phone's Video Calling function won't work when mobile data is off. Also, you won't be able to use the Internet, Email or other apps that need a data connection unless you use "<cst>Wi-Fi</cst>. Turn off the mobile data connection?</string>
+    <string name="mobile_data_off_dialog_text_common">Unless you use <cst>Wi-Fi</cst>", you will no longer be able to use Internet, Email, or other apps that require a data connection.
+
+Mobile data will be turned off."</string>
+    <string name="mobile_data_off_dialog_button_turn_off">Turn off</string>
+    <string name="mobile_data_off_dialog_text_jpn">If Mobile data is turned off, your device must be connected to a <cst>Wi-Fi</cst>" network to use services that require a network connection.
+
+Mobile data will be turned off."</string>
+    <string name="roaming_data_off_msg">To use data roaming, go to Settings > Connections > Global roaming, then enable Data roaming.</string>
+    <string name="lgt_roaming_use_data_roaming">Data roaming</string>
+    <string name="lgt_roaming_use_data_roaming_use_bg_data_msg">Data roaming enabled. Note that high data charges may apply depending on your payment plan and location.</string>
+    <string name="lgt_roaming_not_use_data_roaming_not_use_bg_data_msg">Data roaming disabled.</string>
+    <string name="disable_2g_body">Turn off 2G</string>
+    <string name="emptyList">Enter phone number</string>
+    <string name="reject_cause_skt_registering_255">Service provider ntwk not available. Emergency calls only.</string>
+    <string name="summary_volteNoti">Show the HD icon on the indicator bar when HD voice call is available.</string>
+    <string name="enable_video_call_summary">Enable AT&amp;T Video Call.</string>
+    <string name="enable_data_video_call_title">Mobile Data</string>
+    <string name="enable_data_video_call_contents">The Mobile Data setting must be on to use AT&amp;T Video Call. Tap OK to turn on Mobile Data.</string>
+    <string name="enable_data_volte_video_call_title">Mobile Data and Enhanced LTE Services</string>
+    <string name="enable_data_volte_video_call_contents">The Mobile Data setting and Enhanced LTE Services setting must be on to use AT&amp;T Video Call. Tap OK to turn on these settings.</string>
+    <string name="enable_roaming_data_video_call_contents">The International Data setting must be on to use AT&amp;T Video Call. Tap OK to turn on International Data.</string>
+    <string name="enable_roaming_4glte_video_call_contents">The Enhanced LTE Services setting must be on to use AT&amp;T Video Call. Tap OK to turn on Enhanced LTE Services.</string>
+    <string name="enable_roaming_data_volte_video_call_contents">The International Data and Enhanced LTE Services settings must be on to use AT&amp;T Video Call. Tap OK to turn on these settings.</string>
+    <string name="nos_enable_4glte_video_call">"To make video calls
+- turn on Enhanced LTE Services"</string>
+    <string name="nos_enable_data_video_call">"To make video calls
+- turn on Mobile Data"</string>
+    <string name="nos_enable_data_volte_video_call">"To make video calls
+- turn on Enhanced LTE Services
+- turn on Mobile Data"</string>
+    <string name="nos_enable_roaming_data_video_call">"To make video calls
+ - turn on International Mobile Data"</string>
+    <string name="nos_enable_roaming_data_volte_video_call">"To make video calls
+ - turn on Enhanced LTE Services
+ - turn on International Mobile Data"</string>
+    <string name="video_call_disabling_wait">Disabling. Please wait…</string>
+    <string name="video_call_enabling_wait">Enabling. Please wait…</string>
+    <string name="enhanced_4glte_services_summary">Enable HD Voice and advanced communication services where available.</string>
+    <string name="voice_over_lte_title">VoLTE calls</string>
+    <string name="voice_over_lte_title_oro">4G call</string>
+    <string name="voice_over_lte_title_usc">Enhanced Calling</string>
+    <string name="volte_call_summary">Enable enhanced communication using LTE data.</string>
+    <string name="volte_call_summary_oro">Enhance your calls by using 4G data.</string>
+    <string name="volte_videocall_enable_summary">Temporarily be able to turn Video calling feature on/off.</string>
+    <string name="volte_dialog_message_cu">Register your USIM card with the China Unicom HD Voice service to use the HD Voice function. Unless your USIM card is registered, the HD Voice function will not be available, even if it is enabled in Settings.</string>
+    <string name="volte_call_summary_ops">Make HD voice calls on the 4G network.</string>
+    <string name="voice_over_lte_title_cct">Volte Calling</string>
+    <string name="volte_call_summary_cct">Enable advanced calling features over the 4G LTE cellular network where available.</string>
+    <string name="callsettings_call_mode">Call mode</string>
+    <string name="callsettings_call_mode_summary">Use VoLTE when making calls.</string>
+    <string name="photoring_name">PhotoRing</string>
+    <string name="photoring_gif_file_not_supported">GIF files not supported.</string>
+    <string name="callsettings_caller_info_card_summary">Show the latest contact information for each caller.</string>
+    <string name="smart_dual_sim">Smart dual SIM</string>
+    <string name="agree_roaming_data_popup_title_skt">Data roaming Terms of Service</string>
+    <string name="agree_roaming_data_usage_skt">To use Data roaming and LTE roaming, you must agree to the Terms of Service below.</string>
+    <string name="agree_roaming_data_usage_title">Data roaming</string>
+    <string name="agree_roaming_data_usage_content">"Receiving automatic updates for social networks, email, weather, etc. may result in additional charges while you are roaming.
+Data roaming will not be available if you do not agree."</string>
+    <string name="agree_roaming_lte_usage_title">LTE roaming</string>
+    <string name="agree_roaming_lte_usage_content">"LTE networks will be used to send and receive data while you are roaming.
+LTE roaming will not be available if you do not agree. 3G networks may be used while LTE networks are not available."</string>
+    <string name="agree_romaing_data_radio_text">I agree.</string>
+    <string name="disagree_romaing_data_radio_text">I do not agree.</string>
+    <string name="agree_roaming_data_usage_title_lgt">Enable Data roaming</string>
+    <string name="agree_roaming_data_usage_content_lgt">If you enable Data roaming, international roaming charges will apply, regardless of your normal data plan.</string>
+    <string name="agree_roaming_automatic_update_usage_content_lgt">Receiving automatic updates for social networks, email, weather, etc. may result in additional charges depending on your payment plan.</string>
+    <string name="agree_roaming_check_box_text_lgt">I agree.</string>
+    <string name="agree_roaming_data_footer_lgt">I have read and agree to all the Terms of Service above.</string>
+    <string name="volte_roaming_settings_title">4G Settings</string>
+    <string name="volte_roaming_settings_summary_kdi">"Use 4G networks for Internet calls while roaming. To stop using 4G networks, restart your phone after turning off this function. 4G networks should be turned off when network quality is poor while you're overseas and should always be turned on in Japan."</string>
+    <string name="answering_memo_text">Answering message enabled</string>
+    <string name="mcidshowme_name">Show me</string>
+    <string name="missed_call_enable_service">Enable service</string>
+    <string name="voicemail_setringtime">Ring duration (%1$s-%2$d seconds)</string>
+    <string name="voicemail_play_message_dialog">Tap OK to call the voice mail centre and play voice mail messages.</string>
+    <string name="voicemail_message_setting_dialog">Tap OK to call the voice mail centre and record your message for callers.</string>
+    <string name="missed_call_noti_activate_select">Call notifications will be enabled.</string>
+    <string name="voicemail_check_activate">Voice mail service: Enabled</string>
+    <string name="voicemail_check_deactivate">Voice mail service: Disabled</string>
+    <string name="voicemail_ring_time_set_dialog">The ring time has been set.</string>
+    <string name="missed_call_noti_inactivated">Call notifications: Disabled</string>
+    <string name="missed_call_noti_inactivate">Call notifications has been disabled.</string>
+    <string name="missed_call_noti_active_for_all">"Call notifications: Enabled
+Notifications will be received about all missed calls."</string>
+    <string name="missed_call_noti_active_for_caller_id">"Call notifications: Enabled
+Notifications will only be received about missed calls from people who have allowed their caller IDs to be shown."</string>
+    <string name="missed_call_noti_activated_for_all">Call notifications has been enabled. Notifications will be received about all missed calls.</string>
+    <string name="missed_call_noti_activated_for_caller_id">Call notifications has been enabled. Notifications will only be received about missed calls from people who have allowed their caller IDs to be shown.</string>
+    <string name="caller_id_setting_registered">Settings registered.</string>
+    <string name="callsettings_forwarding_activate">Call forwarding service has been enabled.</string>
+    <string name="callsettings_forwarding_deactivate">Call forwarding service has been disabled.</string>
+    <string name="callsettings_forwarding_isactive">Call forwarding: Enabled</string>
+    <string name="callsettings_forwarding_isinactivate">Call forwarding: Disabled</string>
+    <string name="callsettings_forwarding_voicemail_isactive">Voice mail service (for when forwarding number is busy): Enabled</string>
+    <string name="callsettings_forwarding_voicemail_isinactivate">Voice mail service (for when forwarding number is busy): Disabled</string>
+    <string name="callsettings_forwarding_voicemail_settings">Settings registered for Call forwarding service.</string>
+    <string name="callsettings_nwservice_change_forwarding_text">Select whether to change the call forwarding number only, or to change the number and enable Call forwarding service.</string>
+    <string name="callsettings_forwarding_dialog_ifbusy">Select whether or not to use Voice mail service while the call forwarding number is busy.</string>
+    <string name="callsettings_forwarding_dialog_number_text">To enable Call forwarding service, enter a number to forward calls to and how long your device will ring before calls are forwarded.</string>
+    <string name="callsettings_forwarding_dialog_ringtime">Ring time (0-120 seconds)</string>
+    <string name="callsettings_callwaiting_activated">Call waiting: Enabled</string>
+    <string name="callsettings_callwaiting_inactivated">Call waiting: Disabled</string>
+    <string name="phoneset_nwservice_voice_mail_active_setting">Voice mail service has been enabled.</string>
+    <string name="phoneset_nwservice_voice_mail_inactive_setting">Voice mail service has been disabled.</string>
+    <string name="phoneset_nwservice_guidance_setting_description">Select whether to enable Call guidance.</string>
+    <string name="phoneset_nwservice_guidance_activated">Call guidance has been enabled.</string>
+    <string name="phoneset_nwservice_guidance_deactivated">Call guidance has been disabled.</string>
+    <string name="phoneset_nwservice_guidance_activate">Call guidance: Enabled</string>
+    <string name="phoneset_nwservice_guidance_deactivate">Call guidance: Disabled</string>
+    <string name="dialog_on">Enable</string>
+    <string name="dialog_off">Disable</string>
+    <string name="phoneset_nwservice_activate_call_forwarding_service_activate">Enable</string>
+    <string name="phoneset_nwservice_activate_call_forwarding_service_only_change_number">Change number only</string>
+    <string name="phoneset_nwservice_outgoing_calls">Outgoing call setting</string>
+    <string name="phoneset_nwservice_incoming_calls">Incoming call setting</string>
+    <string name="phoneset_nwservice_japanese_incoming_calls_japanese">Guidance and relevant information will be provided in Japanese, both for you, when you make calls, and also for people who call you.</string>
+    <string name="phoneset_nwservice_japanese_incoming_calls_japanese_english">Guidance and relevant information will be provided in Japanese for you, when you make calls, and in Japanese then English for people who call you.</string>
+    <string name="phoneset_nwservice_japanese_incoming_calls_english_japanese">Guidance and relevant information will be provided in Japanese for you, when you make calls, and in English then Japanese for people who call you.</string>
+    <string name="phoneset_nwservice_english_incoming_calls_japanese">Guidance and relevant information will be provided in English for you, when you make calls, and in Japanese for people who call you.</string>
+    <string name="phoneset_nwservice_english_incoming_calls_japanese_english">Guidance and relevant information will be provided in English for you, when you make calls, and in Japanese then English for people who call you.</string>
+    <string name="phoneset_nwservice_english_incoming_calls_english_japanese">Guidance and relevant information will be provided in English for you, when you make calls, and in English then Japanese for people who call you.</string>
+    <string name="phoneset_nwservice_call_waiting_activated">Call waiting has been enabled.</string>
+    <string name="phoneset_nwservice_call_waiting_is_not_subscribed">You have not subscribed to the Call waiting service.</string>
+    <string name="phoneset_nwservice_call_waiting_deactivated">Call waiting has been disabled.</string>
+    <string name="phoneset_nwservice_caller_id_request_service_activated">Caller ID display request service has been enabled.</string>
+    <string name="phoneset_nwservice_caller_id_request_service_deactivated">Caller ID display request service has been disabled.</string>
+    <string name="phoneset_nwservice_caller_id_request_service_active">Caller ID request service: Enabled</string>
+    <string name="phoneset_nwservice_caller_id_request_service_inactive">Caller ID request service: Disabled</string>
+    <string name="phoneset_nwservice_remote_access_activated">Remote operation has been enabled.</string>
+    <string name="phoneset_nwservice_remotely_accessible_not_subscribed">You have not subscribed to the Remote operation service.</string>
+    <string name="phoneset_nwservice_remote_access_deactivated">Remote operation has been disabled.</string>
+    <string name="phoneset_nwservice_remote_access_active">Remote operation: Enabled</string>
+    <string name="phoneset_nwservice_remote_access_inactive">Remote operation: Disabled</string>
+    <string name="phoneset_nwservice_public_mode_activated">Public mode (power off) has been enabled.</string>
+    <string name="phoneset_nwservice_public_mode_deactivated">Public mode (power off) has been disabled.</string>
+    <string name="phoneset_nwservice_public_mode_activate">Public mode (power off): Enabled</string>
+    <string name="phoneset_nwservice_public_mode_inactivate">Public mode (power off): Disabled</string>
+    <string name="phoneset_nwservice_register_nuisance_number">Register numbers to block</string>
+    <string name="phoneset_nwservice_deregister_nuisance_number">Deregister blocked numbers</string>
+    <string name="phoneset_nwservice_deregister_nuisance_dialog">Select whether to deregister all numbers from Nuisance call blocking service or only the last number registered.</string>
+    <string name="phoneset_nwservice_new_nuisance_caller_ok">The maximum number of phone numbers that can be registered to Nuisance call blocking service has been reached. Tap OK to deregister the oldest number and register the number you entered.</string>
+    <string name="phoneset_nwservice_caller_registered">Calls from the number you entered will be blocked.</string>
+    <string name="phoneset_nwservice_last_caller_registered">Calls from the number of the last incoming call will be blocked.</string>
+    <string name="phoneset_nwservice_nuisance_last_incoming_number">Last incoming number</string>
+    <string name="phoneset_nwservice_delete_nuisance_last_number">Last number</string>
+    <string name="phoneset_nwservice_delete_nuisance_all_number">All numbers</string>
+    <string name="phoneset_nwservice_oldest_entry_deleted">The oldest number registered to Nuisance call blocking service has been deregistered.</string>
+    <string name="phoneset_nwservice_all_entries_deleted">All numbers have been deregistered from Nuisance call blocking service.</string>
+    <string name="phoneset_nwservice_last_entry_deleted">The last number registered to Nuisance call blocking service has been deregistered.</string>
+    <string name="phoneset_nwservice_number_of_entries">Registered phone numbers: %s</string>
+    <string name="phoneset_nwservice_in_call_arrival_act_activated">Second call has been enabled.</string>
+    <string name="phoneset_nwservice_in_call_arrival_act_deactivated">Second call has been disabled.</string>
+    <string name="phoneset_nwservice_set_arrival_act_active">Second call: Enabled</string>
+    <string name="phoneset_nwservice_set_arrival_act_inactive">Second call: Disabled</string>
+    <string name="phoneset_overseas_restricting_incoming_calls_turn_on">Restrict incoming calls will be enabled. Incoming calls will be restricted while you are roaming.</string>
+    <string name="phoneset_overseas_restricting_incoming_calls_turn_off">Restrict incoming calls will be disabled. No calls will be blocked while you are roaming.</string>
+    <string name="phoneset_overseas_all_barrings_activated_roaming">Restrict incoming calls has been enabled. All incoming calls will be blocked while you are roaming.</string>
+    <string name="phoneset_overseas_all_barrings_activated_roaming_wrong_password">"Restrict incoming calls: Not enabled
+Invalid password entered."</string>
+    <string name="phoneset_overseas_data_calls_barring_activated_roaming">Restrict incoming video calls/64K data has been enabled.</string>
+    <string name="phoneset_overseas_deactivate_all_barrings_roaming">Restrict incoming calls has been disabled. No calls will be blocked while you are roaming.</string>
+    <string name="phoneset_overseas_deactivate_all_barrings_roaming_wrong_password">"Restrict incoming calls: Not disabled.
+
+Invalid password entered."</string>
+    <string name="phoneset_overseas_all_barrings_roaming_active">Restrict incoming calls: Enabled for all calls</string>
+    <string name="phoneset_overseas_all_barrings_roaming_service_unavailable">"Restrict incoming calls: Failed to perform action
+Try again later."</string>
+    <string name="phoneset_overseas_data_calls_barring_roaming_active">Restrict incoming calls: Enabled for incoming video calls/64K data while roaming</string>
+    <string name="phoneset_overseas_all_barrings_roaming_inactive">Restrict incoming calls: Disabled</string>
+    <string name="phoneset_overseas_missed_call_notification_for_roaming_activated">Incoming notifications while roaming has been enabled.</string>
+    <string name="phoneset_overseas_missed_call_notification_for_roaming_deactivated">Incoming notifications while roaming has been disabled.</string>
+    <string name="phoneset_overseas_missed_call_notification_for_roaming_active">Incoming notifications while roaming: Enabled</string>
+    <string name="phoneset_overseas_missed_call_notification_for_roaming_inactive">Incoming notifications while roaming: Disabled</string>
+    <string name="phoneset_overseas_roaming_guidance_active">Roaming guidance: Enabled</string>
+    <string name="phoneset_overseas_roaming_guidance_activated">Roaming guidance has been enabled.</string>
+    <string name="phoneset_overseas_roaming_guidance_deactivated">Roaming guidance has been disabled.</string>
+    <string name="phoneset_overseas_roaming_guidance_inactive">Roaming guidance: Disabled</string>
+    <string name="phoneset_overseas_remote_access">Remote operation (paid)</string>
+    <string name="phoneset_overseas_roaming_guidance_pay">Roaming guidance (paid)</string>
+    <string name="phoneset_overseas_voice_mail">Voice mail service (paid)</string>
+    <string name="phoneset_overseas_call_forwarding">Call forwarding (paid)</string>
+    <string name="phoneset_overseas_set_caller_id_request">Caller ID display request will be enabled.</string>
+    <string name="phoneset_overseas_activate_voice_mail">Voice mail service will be enabled.</string>
+    <string name="phoneset_overseas_deactivate_voice_mail">Voice mail service will be disabled.</string>
+    <string name="phoneset_overseas_play_voice_mail_message">Tap OK to call Voice mail service and play voice mail messages.</string>
+    <string name="phoneset_overseas_set_voice_mail">Tap OK to change the Voice mail service settings.</string>
+    <string name="phoneset_overseas_set_ring_time">The ring time will be set.</string>
+    <string name="phoneset_overseas_activate_call_forwarding">Call forwarding will be enabled.</string>
+    <string name="phoneset_overseas_deactivate_call_forwarding">Call forwarding will be disabled.</string>
+    <string name="phoneset_overseas_set_call_forwarding">Tap OK to change the Call forwarding service settings.</string>
+    <string name="unwanted_calls_revention_kdi">Prevent unwanted calls</string>
+    <string name="settings_glance_reply_explain_text">When the screen is off and the phone is turned face down, incoming calls will be shown on the Edge lighting panel. Decline an incoming call and send a preset message to the caller by placing your finger on the heart rate sensor for 2 seconds.</string>
+    <string name="settings_glance_reply_textedit_cancel">Cancel</string>
+    <string name="settings_glance_reply_alert_empty_msg_text">No text has been entered. Tap OK to use the default quick reply.</string>
+    <string name="spam_call_title">Identify unsaved numbers</string>
+    <string name="smart_call_title">Caller ID and spam protection</string>
+    <string name="smart_call_title_for_notice">Caller ID and spam protection</string>
+    <string name="smart_call_description">Identify unsaved callers and senders of messages on the call screen, in the Phone log, and in Messages.</string>
+    <string name="smart_call_description_roaming">This service is not available in other countries.</string>
+    <string name="smart_call_privacy_notice_part1">"“%1$s” is a feature that is designed to identify numbers that are not stored in your Contact List and alert you when an incoming call may be a nuisance call or spam.
+In order to provide this feature, certain data, for example the caller’s phone number, will be collected directly from your device by %2$s and the data will be governed by the %2$s %3$s and %4$s."</string>
+    <string name="smart_call_privacy_notice_part2">"No matter what choice you make here, you are free to disable this feature at any time by adjusting your preferences in the “Settings” menu.
+Please click the appropriate button below to indicate that you agree with the above and would like to enable the %s feature at this time."</string>
+    <string name="smart_call_privacy_notice_dream">This service is available when your mobile device is connected to your mobile network during incoming or outgoing calls, but will be limited while roaming. Using mobile networks may result in additional charges depending on your data plan with your network provider.</string>
+    <string name="search_for_places_nearby_title">Search for places nearby</string>
+    <string name="search_for_places_nearby_help_description1">Find phone numbers and information for local businesses and venues nearby.</string>
+    <string name="search_for_places_nearby_help_description2">This service requires your location information.</string>
+    <string name="search_for_places_nearby_help_description3">To optimise the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
+    <string name="search_for_places_nearby_help_description3_vzw">To optimise the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
+    <string name="search_for_places_nearby_help_description4">Using mobile networks instead of <cst>Wi-Fi</cst> networks may result in additional charges depending on your payment plan.</string>
+    <string name="record_call_setting_selected_number">Selected numbers</string>
+    <string name="record_call_setting_unsaved_number">Unsaved numbers</string>
+    <string name="record_call_menu_title">Record calls</string>
+    <string name="record_call_noti_setting_title">Recording notifications</string>
+    <string name="record_call_noti_setting_summary">Receive notifications after calls are recorded.</string>
+    <string name="record_call_help_summary">Record calls to or from selected numbers automatically.</string>
+    <string name="number_other_than_contacts">Numbers not in Contacts</string>
+    <string name="no_available_operator">No networks found</string>
+    <string name="success_to_set_4G">LTE networks will be used for mobile data.</string>
+    <string name="success_to_set_3G">3G networks will be used for mobile data. LTE network customers can select LTE for faster network connections.</string>
+    <string name="rogers_url_pop_up">Wi-Fi Calling lets you call and text while on a Wi-Fi Network. Usage will be deducted from the minute and text message buckets in your Wireless plan. Click below to Activate.</string>
+    <string name="rogers_wifi_noconnect_text">Please connect to a Wi-Fi network to register for Wi-Fi Calling.</string>
+    <string name="rogers_wfc_call_text">Click here to register for Wi-Fi Calling or to update your existing Emergency Address.</string>
+    <string name="rogers_wfc_help_text1">Wi-Fi Calling is a service that allows you to make and receive calls and texts via a Wi-Fi connection. The usage is deducted from your airtime/messaging buckets in your wireless plan.</string>
+    <string name="rogers_wfc_help_text2">"This allows you to keep using your phone in places where you don't have cellular coverage - like basements, condos and tall buildings. Also, if you are using Wi-Fi Calling while roaming, all of your incoming calls and outgoing calls and messages to Canadian numbers are deducted from your airtime and messaging buckets included in your wireless plan."</string>
+    <string name="rogers_wfc_help_text3">"The icon below will appear at the top of your device's screen when your device is ready to use Wi-Fi Calling."</string>
+    <string name="rogers_wfc_help_text4">How to Activate</string>
+    <string name="rogers_wfc_help_text5">1. On the device home page, press the “Phone” icon</string>
+    <string name="rogers_wfc_help_text6">2. Select “More” -> “Settings” -> “Wi-Fi Calling”</string>
+    <string name="rogers_wfc_help_text7">3. Click the registration link and follow the setup process</string>
+    <string name="rogers_wifi_preferred_summary">Call and text over Wi-Fi. If Wi-Fi is not available, call and text over the cellular network. (Recommended to avoid dropped calls)</string>
+    <string name="rogers_cellular_network_preferred_summary">Call and text over the cellular network. If cellular is not available, call and text over Wi-Fi.</string>
+    <string name="emergency_contact_empty_info">To add emergency contacts, go to the Contacts app > More options button > Groups > ICE - emergency contacts, then tap EDIT.</string>
+    <string name="phoneset_overseas_missed_call_notification_for_roaming">Incoming notification while roaming</string>
+    <string name="wfc_help_text_osp1">"Wi-Fi calling is an Orange service that enables you to make and receive calls through a Wi-Fi connection, even if there is no mobile network coverage. This allows calling where it was impossible before like basements, ground floors or inside large buildings.
+
+To use Wi-Fi calling, first connect to a Wi-Fi network, and then activate the service in Settings > Wi-Fi calling.
+
+The first time that you activate the service, Orange will send you a confirmation message the moment the service is available.
+
+Wi-Fi calls will be charged based on your tariff plan.
+
+Whenever this feature is available, you will see the Wi-Fi calling icon in the upper part of the screen."</string>
+    <string name="wfc_help_text_osp2">"If you select Wi-Fi network preferred, Wi-Fi network will be used to establish calls by default. In case you are not connected to any Wi-Fi network or Wi-Fi strength is weak, mobile network will be used to establish calls.
+
+If you select mobile network preferred, mobile network will be used to establish calls by default. In case there is no or weak mobile coverage, Wi-Fi network will be used instead."</string>
+    <string name="wfc_help_text_ftm1">Use <cst>Wi-Fi</cst> networks to make and receive calls anywhere in metropolitan France, without connecting to a mobile network.</string>
+    <string name="wfc_help_text_opl1">WiFi Calling is the service providing the ability to make and receive voice calls over the Internet connection in any available WiFi network, even if you are out of mobile coverage. The WiFi Calling icon on the notification bar (shown below) indicates that all your calls are using WiFi Calling.</string>
+    <string name="wfc_help_text_opl2">"In a case the WiFi connection is getting weak or you get out of the WiFi coverage your mobile phone would switch to mobile network.
+
+Using WiFi Calling is rated according to the service rates provided by your mobile operator. Details on www.orange.pl/wificalling
+
+Please note that calls to Emergency Numbers eg.112 will be routed through a mobille network. In case there is no mobile coverage the Emergency Calls could be routed via WiFi Calling service. In such cases your mobile operator may not be able to determine your exact location information and therefore would route your call to the Emergency Centre which is not the closest one for your actual location."</string>
+    <string name="wfc_help_text_from_noti_opl1">WiFi Calling lets you make and receive voice calls over any WiFi network available, even if you are out of mobile coverage. The WiFi Calling icon on the notification bar indicates that all your calls are using WiFi Calling.</string>
+    <string name="wfc_help_text_from_noti_opl2">"More information about the service provided by your mobile operator could be found at www.orange.pl/wificalling
+
+Choose the SETTINGS menu below to activate your WiFi Calling service on your mobile device."</string>
+    <string name="wfc_location_dialog_body">Your location information might be sent to your service provider while you are using <cst>Wi-Fi</cst> calling. Contact your service provider for details.</string>
+    <string name="wfc_location_dialog_body_ftm">Your location-related information can be sent to Google and your operator in order to establish <cst>Wi-Fi</cst> calls, whether you have activated or not the location feature.</string>
+    <string name="wfc_enable_dialog_latin_body">When you see VoWiFi icon in your notification bar you can call using any WiFi network around the world at the local price of your data plan! More information <a href="http://www.claro.com.ar/clarovowifi">here</a>.</string>
+    <string name="wfc_enable_dialog_latin_claro_br">The Claro VoWiFi service has been activated. When the service icon appears on the status bar, it means you can make calls using any <cst>Wi-Fi</cst> network, inside or outside of the country, for the same price as your Claro plan! Tap <a href="www.claro.com.br/wifi-calling">here</a> for more information.</string>
+    <string name="wfc_enable_dialog_opl_title">WELCOME TO WI-FI CALLING SERVICE</string>
+    <string name="wfc_enable_dialog_opl_body0"><cst>Wi-Fi</cst>" Calling is a service of your mobile operator, Orange Polska S.A.
+Please read the description of the service provided by your operator:"</string>
+    <string name="wfc_enable_dialog_opl_body1"><cst>Wi-Fi</cst> Calling service enables you to make and receive voice calls over any <cst>Wi-Fi</cst> internet connection, even in a situation where you are outside any mobile network’s coverage. Once the service is active for your mobile number, every time you connect to a <cst>Wi-Fi</cst> network, your voice calls will be performed using <cst>Wi-Fi</cst> Calling. This will be indicated to you by a dedicated icon on the notification bar.</string>
+    <string name="wfc_enable_dialog_opl_body2">If your <cst>Wi-Fi</cst> connection is of poor quality or your device is outside a <cst>Wi-Fi</cst>" network’s coverage, your phone will make calls using an available mobile network.
+
+Calls you make with "<cst>Wi-Fi</cst> Calling in Poland are charged in the same way as your regular mobile calls in your mobile tariff plan. Incoming calls in Poland are free of charge. If you make <cst>Wi-Fi</cst>" Calling calls outside Poland your calls may be charged a price specified in your mobile tariff plan’s price list.
+
+Notwithstanding, your "<cst>Wi-Fi</cst> connections may be charged independently by the provider of your <cst>Wi-Fi</cst> connection.</string>
+    <string name="wfc_enable_dialog_opl_body3">Once you press the [I ACCEPT] button and your phone connects to a <cst>Wi-Fi</cst> network, your <cst>Wi-Fi</cst> Calling service will be activated. You can disable <cst>Wi-Fi</cst>" Calling at any time using the phone menu.
+
+Detailed information about your "<cst>Wi-Fi</cst>" Calling service can be found at www.orange.pl/wificalling.
+
+Please note that in order to enable your emergency calls (e.g., such as 112 calls) to be routed to the closest emergency centre suitable for your actual location, your emergency calls made while the "<cst>Wi-Fi</cst> Calling service is enabled will be carried by your device through any mobile network available at a given moment. Only in cases where no mobile network is available will an emergency call be routed via the <cst>Wi-Fi</cst> Calling service. Unfortunately, in such cases we will not know your precise location and therefore your emergency call may not be routed to the emergency centre closest to your actual location.</string>
+    <string name="wfc_enable_dialog_opl_body4">In regard to your use of <cst>Wi-Fi</cst> Calling, we – as your personal data controller – will process your data based on the number and model of the device on which you use <cst>Wi-Fi</cst> Calling, the software used on the device, the endpoint of the network used to connect with <cst>Wi-Fi</cst> Calling (including the IP address and the country to which this IP address is attributed), and the time and duration of each call, in order to perform and settle the service, answer any complaints, and to perform any statutory obligations. We will process this data for the duration of the agreement on providing telecommunication services between you and us, and after its termination – for the period of recovery of claims and of performing other tasks defined in the provisions of law. Providing the data is voluntary, but it is necessary to use the service. You have the right to access and to rectify your data.</string>
+    <string name="wfc_enable_dialog_opl_body5">Please find our data: Orange Polska S.A., address: Aleje Jerozolimskie 160, 02-326 Warsaw, Poland, registered in the Register of the Entrepreneurs of District Court for the Capital City of Warsaw in Warsaw, XII Commercial Division of the National Court Register (KRS), under entry number 0000010681, NIP (tax ID) 526-02-50-995; with share capital (fully paid up) of PLN 3,937,072,437.00.</string>
+    <string name="wfc_enable_dialog_opl_btn">I accept</string>
+    <string name="video_calls_temporarily_not_available">Video unavailable for this call. Call connected as a voice call.</string>
+    <string name="video_calls_temporarily_not_available_tmo">Video calling is unavailable.</string>
+    <string name="video_calls_temporarily_not_available_att">Number you are calling cannot receive video calls at this time. Call connected as a voice call.</string>
+    <string name="usa_vzw_reject_upgrade_receiver">"%s is trying to upgrade to video call with you.
+
+To do Video Calling, turn ON Mobile Data or Video Calling in settings after the call."</string>
+    <string name="s_roaming_category">S Roaming</string>
+    <string name="s_roaming_title">Roaming packages</string>
+    <string name="s_roaming_summary">Purchase roaming packages to use mobile networks while roaming internationally.</string>
+    <string name="s_roaming_install_title">Install S Roaming</string>
+    <string name="s_roaming_install_message">S Roaming is not installed. Tap INSTALL to install it.</string>
+    <string name="s_roaming_install_btn">Install</string>
+    <string name="mobile_data_off_notification_title">Mobile data turned off</string>
+    <string name="mobile_data_off_notification_content">"While Mobile data is turned off, you won't be able to use Internet, Email, or other apps that require a network connection, unless you connect to a "<cst>Wi-Fi</cst> network.</string>
+    <string name="mobile_data_off_notification_button_turn_on">TURN ON</string>
+    <string name="mobile_data_off_notification_button_turn_off">TURN OFF</string>
+    <string name="mobile_data_off_dialog_text_att">"If mobile data is off, you won't be able to use the internet, email or other apps that need a data connection unless you use Wi-Fi."</string>
+    <string name="mobile_data_off_dialog_text_att_videocall_enabled">AT&amp;T Video Call won’t work if mobile data is off. Also, you won’t be able to use the internet, email or other apps that need a data connection unless you use Wi-Fi.</string>
+    <string name="international_mobile_data_off_dialog_text_att">"If international data is off, you won't be able to use the internet, email or other apps that need a data connection when roaming outside of the U.S., Puerto Rico and USVI unless you use Wi-Fi."</string>
+    <string name="international_mobile_data_off_dialog_text_att_videocall_enabled">"AT&amp;T Video Call won't work if international data is off when roaming outside of the U.S., Puerto Rico and USVI. Also, you won’t be able to use the internet, email or other apps that need a data connection unless you use Wi-Fi."</string>
+    <string name="mobile_data_off_notification_dialog_text_vzw">"Your mobile data connection is turned off. Unless you use Wi-Fi, you won't be able to use the Internet, Email or other apps that require a data connection."</string>
+    <string name="mobile_data_off_notification_dialog_text_vzw_volte">"Your mobile data connection is turned off. Your phone's Video Calling function won't work when mobile data is off. Also, you won't be able to use the Internet, Email or other apps that need a data connection unless you use Wi-Fi."</string>
+    <string name="sim_ndp_network_unlock_title_vzw">Change carrier</string>
+    <string name="sim_ndp_network_unlock_descryption_vzw">"Please call Verizon at (888) 294-6804 to learn how you can activate this device on another wireless carrier's network.
+
+Enter the code you get from Verizon:"</string>
+    <string name="sim_ndp_unlock_button_text_vzw">Submit</string>
+    <string name="sim_ndp_not_now_button_text_vzw">Not now</string>
+    <string name="sim_ndp_network_unlock_success_vzw">Code accepted.</string>
+    <string name="sim_ndp_network_unlock_fail_vzw">Incorrect code entered.</string>
+    <string name="sim_ndp_mbody_non_verizon_sim_card_insert_vzw">Non-Verizon SIM card inserted</string>
+    <string name="sim_ndp_sbody_tap_here_to_use_your_vzw">Tap here to use your phone on a different network.</string>
+    <string name="about_phone">About %s</string>
+    <string name="about_phone_version_ps">Version %s</string>
+    <string name="about_phone_new_version_available">A new version is available.</string>
+    <string name="about_phone_latest_version">The latest version is already installed.</string>
+    <string name="about_phone_cant_check_for_updatest">"Can't check for updates. Your phone isn't connected to a network."</string>
+    <string name="about_phone_update_button">Update</string>
+    <string name="about_phone_retry_button">Retry</string>
+    <string name="about_phone_disclaimer">Disclaimer</string>
+    <string name="about_phone_terms_and_conditions">Terms and Conditions</string>
+    <string name="about_phone_privacy_policy">Privacy Policy</string>
+    <string name="about_phone_open_source_licenses">Open source licences</string>
+    <string name="no_network_connection">No network connection</string>
+    <string name="unable_to_check_for_updates">Unable to check for updates. There is no network connection.</string>
+    <string name="dcm_vt_fail_cause_not_in_4g">"Couldn't make video call because you're not in a 4G area."</string>
+</resources>

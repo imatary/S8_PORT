@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sub_appbar" android:background="@drawable/tw_sub_action_bar_background_ripple" android:layout_width="fill_parent" android:layout_height="@dimen/settings_subappbar_height">
+        <TextView android:textSize="@dimen/settings_subappbar_text_size" android:textColor="@color/settings_subappbar_text_color" android:gravity="center_vertical" android:id="@id/sub_appbar_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:fontFamily="sec-roboto-condensed" android:layout_marginStart="@dimen/settings_subappbar_margin_start" android:layout_alignParentStart="true" />
+        <Switch android:id="@id/sub_appbar_switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/settings_subappbar_margin_end" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View style="@style/SubappBarDividerStyle" />
+    <TextView android:textSize="@dimen/settings_subappbar_text_size" android:textColor="@color/settings_subappbar_text_color" android:id="@id/vo_wifi_rogers" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" />
+    <View android:id="@id/vo_wifi_rogers_text_divider" android:background="@color/call_setting_divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_size" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/tencent_legal_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.1" android:layout_alignParentBottom="true">
+            <TextView android:textColorLink="@color/call_setting_hyperlink_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/divider_start_end_margin" android:text="@string/tencent_pnl_legal_info" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tencent_legal_info">
+            <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:id="@id/list_divider" android:background="@color/call_setting_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_size" android:layout_marginStart="@dimen/divider_start_end_margin" android:layout_marginEnd="@dimen/divider_start_end_margin" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

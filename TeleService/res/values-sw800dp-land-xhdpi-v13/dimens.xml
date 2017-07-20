@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialpad_keypad_height">542.0dip</dimen>
+    <dimen name="emergency_contact_item_width">105.0dip</dimen>
+    <dimen name="dialpad_layout_height">418.0dip</dimen>
+    <dimen name="emergency_dialpad_digits_height_land">245.0dip</dimen>
+    <dimen name="emergency_dialpad_digits_height">120.0dip</dimen>
+    <dimen name="emergency_contact_item_container_width_land">532.0dip</dimen>
+</resources>

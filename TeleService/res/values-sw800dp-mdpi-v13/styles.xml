@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialpadKeyLettersStyle">
+        <item name="android:textSize">@dimen/dialpad_key_letters_size</item>
+        <item name="android:textColor">@color/dialpad_secondary_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">42.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="DialpadKeyButtonStyle">
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:minHeight">@dimen/dialpad_key_height</item>
+        <item name="android:layout_weight">13.0</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+    <style name="EmergencyDialerTheme" parent="@android:style/Theme.Wallpaper">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:actionBarStyle">@style/emerCallActionBar_Light</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionbarIconDisable</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

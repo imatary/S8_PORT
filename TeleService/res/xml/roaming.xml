@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <PreferenceCategory android:title="@string/roaming_domestic_category" android:key="domestic_cdma_category_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/roaming_voice_body" android:key="domestic_cdma_voice_roaming_settings_key" android:summary="@string/roaming_domestic_voice_sbody" />
+    <SwitchPreference android:persistent="true" android:title="@string/roaming_data_body" android:key="domestic_cdma_data_roaming_settings_key" android:summary="@string/roaming_domestic_data_sbody" />
+    <PreferenceCategory android:title="@string/roaming_international_category" android:key="international_cdma_category_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/roaming_voice_body" android:key="international_cdma_voice_roaming_settings_key" android:summary="@string/roaming_international_voice_sbody" />
+    <SwitchPreference android:persistent="true" android:title="@string/roaming_data_body" android:key="international_cdma_data_roaming_settings_key" android:summary="@string/roaming_international_data_sbody" />
+    <PreferenceCategory android:title="@string/roaming_alerts_category" android:key="alerts_category_key" />
+    <PreferenceScreen android:title="@string/roaming_alerts_body" android:key="roaming_guard_key" android:summary="@string/roaming_alerts_sbody">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.operator.usa.RoamingGuard" />
+    </PreferenceScreen>
+</PreferenceScreen>
