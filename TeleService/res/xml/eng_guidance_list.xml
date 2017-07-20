@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/phoneset_nwservice_outgoing_calls" android:key="guidance_outgoing_pref" />
+    <PreferenceScreen android:title="@string/phoneset_nwservice_incoming_calls" android:key="guidance_incoming_pref" />
+    <PreferenceScreen android:title="@string/check_service_setting" android:key="english_guidance_check_pref" />
+</PreferenceScreen>

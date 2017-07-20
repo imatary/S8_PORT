@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialpadKeyInternalLayoutStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">119.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="InputTextField">
+        <item name="android:textAppearance">?android:textAppearanceListItem</item>
+        <item name="android:textSize">@dimen/input_text_size</item>
+        <item name="android:textColor">@color/input_field_text_color</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/input_text_marginStart</item>
+        <item name="android:backgroundTint">@color/color_primary</item>
+    </style>
+</resources>

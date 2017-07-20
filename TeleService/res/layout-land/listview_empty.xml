@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/empty_center" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/NoAnswerMemosDescTextAppearance" android:id="@id/description" android:layout_width="222.0dip" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="@string/no_memos_desc" android:minLines="2" android:drawablePadding="14.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="55.0dip" android:layout_toLeftOf="@id/empty_center" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="@style/NoAnswerMemosTextAppearance" android:gravity="center_horizontal" android:id="@id/no_memo_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_memos" android:maxLines="2" />
+    </LinearLayout>
+</RelativeLayout>

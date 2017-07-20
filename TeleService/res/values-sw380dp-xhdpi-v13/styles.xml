@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialpadKeyInternalLayoutStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SelectAllText">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">@color/select_all_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

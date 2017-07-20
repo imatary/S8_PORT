@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <PreferenceScreen android:title="@string/callsettings_voicemail_title" android:key="voice_mail_service_key" android:summary="@string/callsettings_voicemail_title_sub_text">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.VoiceMailActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/callsettings_voicecall_forwarding_service" android:key="call_forwarding_key" android:summary="@string/callsettings_voicecall_forwarding_service_sub_text">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.CallForwardingActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/callsettings_voicecall_waiting_service" android:key="call_waiting_key" android:summary="@string/callsettings_voicecall_waiting_service_sub_text">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.CallWaitingActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/callsettings_au_customer_support" android:key="au_customer_key" android:summary="@string/callsettings_au_customer_support_sub_text" />
+</PreferenceScreen>

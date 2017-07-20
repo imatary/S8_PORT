@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_dialpad">#b0fafafa</color>
+    <color name="dialpad_secondary_text_color">#ff6e7c8c</color>
+    <color name="dialer_bg">#b0fafafa</color>
+    <color name="dialpad_edittext_bg">#d8f0f0f0</color>
+</resources>

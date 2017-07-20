@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialpad_key_numbers_size">38.0dip</dimen>
+    <dimen name="dialpad_key_letters_size">13.0dip</dimen>
+    <dimen name="dialpad_keypad_height">403.0dip</dimen>
+    <dimen name="emergency_contact_item_width">100.0dip</dimen>
+    <dimen name="dialpad_layout_height">280.0dip</dimen>
+    <dimen name="select_all_margin_top">10.0dip</dimen>
+    <dimen name="select_all_margin_bottom">6.0dip</dimen>
+    <dimen name="emergency_dialpad_digits_height_land">176.0dip</dimen>
+    <dimen name="emergency_dialpad_digits_height">63.0dip</dimen>
+    <dimen name="emergency_contact_item_container_width_land">400.0dip</dimen>
+</resources>

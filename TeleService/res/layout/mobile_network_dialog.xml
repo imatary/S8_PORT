@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/agreement_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/mobile_network_dialog_text_size" android:textColor="@color/tty_dialog_text_color" android:id="@id/message_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tw_pop_up_dialog_message_margin_top" android:singleLine="false" android:lineSpacingExtra="@dimen/mobile_network_dialog_line_space" android:fontFamily="sec-roboto-light" android:layout_marginStart="?android:dialogPreferredPadding" android:layout_marginEnd="?android:dialogPreferredPadding" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tw_pop_up_dialog_checkbox_container_margin_bottom">
+            <CheckBox android:textAppearance="?android:textAppearanceListItem" android:textColor="@color/tty_dialog_text_color" android:id="@id/checkbox" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tw_pop_up_dialog_checkbox_margin_top" android:text="@string/do_not_show_again" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/tw_pop_up_dialog_margin_left" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

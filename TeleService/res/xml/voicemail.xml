@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/play_voicemail" android:key="play_voicemail_key" android:summary="@string/play_voicemail_summary" />
+    <PreferenceScreen android:title="@string/callsettings_voicemail_activate_service_1" android:key="start_voicemail1_key" android:summary="@string/start_voicemail1_summary" />
+    <PreferenceScreen android:title="@string/callsettings_voicemail_activate_service_2" android:key="start_voicemail2_key" android:summary="@string/start_voicemail2_summary" />
+    <PreferenceScreen android:title="@string/callsettings_voicemail_deactivate_service" android:key="stop_voicemail_key" android:summary="@string/stop_voicemail_summary" />
+    <PreferenceScreen android:title="@string/edit_reply_message_kdi" android:key="edit_reply_message_key" android:summary="@string/edit_reply_message_summary" />
+    <PreferenceScreen android:title="@string/phoneset_nwservice_english_guidance_kdi" android:key="nwservice_english_key" android:summary="@string/phoneset_nwservice_english_guidance_sub_text" />
+    <PreferenceScreen android:title="@string/phoneset_nwservice_japan_guidance" android:key="nwservice_japan_key" android:summary="@string/phoneset_nwservice_japan_guidance_sub_text" />
+</PreferenceScreen>

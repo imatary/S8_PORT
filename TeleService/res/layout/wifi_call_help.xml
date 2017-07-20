@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:id="@id/wfc_help_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/wfc_help_text_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/wfc_help_text1" android:text="@string/wfc_help_text1" style="@style/WfcHelpTextView" />
+            <TextView android:id="@id/wfc_help_text2" android:text="@string/wfc_help_text2" style="@style/WfcHelpTextView" />
+            <ImageView android:id="@id/wfc_help_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wifi_calling_global_ic_help" android:layout_centerHorizontal="true" />
+            <TextView android:autoLink="web" android:id="@id/wfc_help_text3" android:visibility="gone" android:text="@string/wfc_help_text_osp2" style="@style/WfcHelpTextView" />
+            <TextView android:id="@id/wfc_help_gotoSetting" android:visibility="gone" android:text="@string/wfc_help_gotoSetting" style="@style/WfcHelpTextView" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:gravity="end|center" android:id="@id/goto_wfc_setting" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_bottom_button_hegiht" android:text="@string/wfc_help_setting" android:layout_alignParentBottom="true" android:drawableEnd="@drawable/button_selector_next_img" android:paddingEnd="24.0dip" android:layout_alignParentEnd="true" style="@style/ActionBarBottomButton" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <PreferenceCategory android:title="@string/roaming_domestic_category" android:key="domestic_cdma_category_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/roaming_alerts_voice_body" android:key="domestic_cdma_voice_roaming_guard_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/roaming_alerts_data_body" android:key="domestic_cdma_data_roaming_guard_key" />
+    <PreferenceCategory android:title="@string/roaming_international_category" android:key="international_cdma_category_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/roaming_alerts_voice_body" android:key="international_cdma_voice_roaming_guard_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/roaming_alerts_data_body" android:key="international_cdma_data_roaming_guard_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/roaming_alerts_sms_body" android:key="international_cdma_sms_roaming_guard_key" />
+</PreferenceScreen>

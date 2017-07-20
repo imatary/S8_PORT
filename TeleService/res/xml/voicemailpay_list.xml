@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/activate_service" android:key="voicemailpay_active_pref" />
+    <PreferenceScreen android:title="@string/deactivate_service" android:key="voicemailpay_deactive_pref" />
+    <PreferenceScreen android:title="@string/phoneset_overseas_play_messages" android:key="voicemailpay_play_pref" />
+    <PreferenceScreen android:title="@string/phoneset_overseas_voice_mail_setting" android:key="voicemailpay_setting_pref" />
+    <PreferenceScreen android:title="@string/phoneset_overseas_ring_time" android:key="voicemailpay_ringtime_pref" />
+</PreferenceScreen>

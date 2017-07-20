@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/registerussd_selectall_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/registerussd_selectall" android:background="@drawable/linearlayout_select_all_item_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/list_header_height">
+            <TextView android:gravity="center_vertical" android:id="@id/registerussd_selectall_text" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/callsettings_selectall" android:layout_weight="0.9" style="@style/setting_subheader_textcolor" />
+            <CheckBox android:id="@id/registerussd_selectall_checkbox" android:paddingRight="16.0dip" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:id="@id/divider1" android:background="@android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/registerussd_empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="116.0dip" android:layout_height="116.0dip" android:src="@drawable/noitems_text_based" android:scaleType="fitXY" />
+        <TextView android:textSize="22.0dip" android:textColor="@color/call_setting_empty_image_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/callsettings_noitem" />
+    </LinearLayout>
+    <ListView android:id="@id/registerussd_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

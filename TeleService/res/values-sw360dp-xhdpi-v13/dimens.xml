@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialpad_key_height">66.0dip</dimen>
+    <dimen name="dialpad_bottom_key_height">88.0dip</dimen>
+    <dimen name="dialpad_key_width">120.0dip</dimen>
+    <dimen name="dialpad_divider_height">2.0px</dimen>
+    <dimen name="dialpad_internal_key_height">66.0dip</dimen>
+    <dimen name="dialpad_key_number_enhanced_onehand_number">25.0dip</dimen>
+    <dimen name="dialpad_key_number_enhanced_onehand_letters">8.0dip</dimen>
+    <dimen name="dialpad_dial_button_top_bottom_inset">16.0dip</dimen>
+    <dimen name="dialpad_dial_button_width">90.0dip</dimen>
+    <dimen name="emergency_dialpad_call_btn_layer_bottom">2.0dip</dimen>
+    <dimen name="emergency_dialer_item_width">360.0dip</dimen>
+</resources>
