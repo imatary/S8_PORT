@@ -2839,6 +2839,8 @@
 
     move-result v17
 
+    const v17, 0x0
+
     if-eqz v17, :cond_7
 
     const/16 v17, 0x0
