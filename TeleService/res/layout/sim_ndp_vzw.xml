@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="20.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/entry_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/ndp_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_ndp" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/ndp_txt_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/label_ndp" />
+        <EditText android:textColor="#ffffffff" android:id="@id/pin_entry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:scrollHorizontally="true" android:maxLength="8" android:inputType="textPassword" android:imeOptions="actionDone" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/button_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <Button android:layout_gravity="center_vertical" android:id="@id/ndp_dismiss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sim_ndp_not_now_button_text_vzw" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+            <Button android:layout_gravity="center_vertical" android:id="@id/ndp_unlock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sim_ndp_unlock_button_text_vzw" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

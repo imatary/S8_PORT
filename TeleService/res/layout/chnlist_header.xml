@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/list_selectall" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llayout_selectall" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/select_all_wrapper" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/list_divider_margin_left">
+            <CheckBox android:layout_gravity="center" android:id="@id/selectall_checkbox" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:gravity="center" android:id="@id/selectall_text" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:text="@string/chechbox_select_all" android:textAlignment="center" style="@style/SelectAllText" />
+        </LinearLayout>
+        <TextView android:gravity="center_vertical" android:id="@id/rejectcallwithmsg_selectall_text" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/setting_subheader_textcolor" />
+    </LinearLayout>
+</LinearLayout>

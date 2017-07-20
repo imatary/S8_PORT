@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/tw_pop_up_dialog_padding_top" android:paddingBottom="@dimen/tw_pop_up_dialog_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/tw_pop_up_dialog_padding_left" android:paddingEnd="@dimen/tw_pop_up_dialog_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="left" android:id="@id/ring_time_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voicemail_setringtime" />
+    <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@id/ring_time_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:scrollHorizontally="true" android:maxLength="3" android:capitalize="none" android:autoText="false" android:inputType="number" android:imeOptions="actionDone" style="@style/InputTextField" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialpad_button_width">128.0dip</dimen>
+    <dimen name="list_divider_size">1.0px</dimen>
+    <dimen name="noitem_text_size">18.0sp</dimen>
+    <dimen name="subapp_bar_divider_size">2.0px</dimen>
+    <dimen name="cancel_text_size">19.0dip</dimen>
+    <dimen name="done_text_size">19.0dip</dimen>
+    <dimen name="list_item_padding">12.0dip</dimen>
+</resources>

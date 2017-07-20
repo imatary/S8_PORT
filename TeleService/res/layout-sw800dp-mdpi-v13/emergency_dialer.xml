@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/top" android:background="@drawable/emergency_dialer_bg" android:layout_width="478.0dip" android:layout_height="531.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dialpad_edittext_height">
+        <EditText android:textSize="50.0sp" android:textColor="@color/dialpad_edittext_text_color" android:gravity="center" android:id="@id/digits" android:background="@android:color/transparent" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" android:textDirection="ltr" />
+        <ViewStub android:gravity="center" android:id="@id/emergencyItemContainer" android:background="@android:color/transparent" android:layout="@layout/emergency_contact_item_container" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        <ViewStub android:gravity="center" android:id="@id/emergencySyncGroupItemContainer" android:background="@android:color/transparent" android:layout="@layout/emergency_sync_group_item_container" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </FrameLayout>
+    <View android:background="#ffc6c6c6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/dialpad_keypad_height">
+        <include layout="@layout/dialpad_view" />
+        <View android:background="#ffc6c6c6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <include layout="@layout/dialpad_additional_buttons_sec" />
+    </LinearLayout>
+    <ListView android:id="@id/list" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</LinearLayout>

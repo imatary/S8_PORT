@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backup_items>
+    <backup_item name="CALLSETTING" quick_backup="true" contents_id="IHLhQxraiP" category="SETTINGS" client_impl_class="com.android.phone.BackupRestoreReceiver" />
+</backup_items>

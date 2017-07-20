@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialpad_bottom_key_height">89.0dip</dimen>
+    <dimen name="dialpad_button_width">120.0dip</dimen>
+    <dimen name="tw_pop_up_dialog_margin_left">24.0dip</dimen>
+    <dimen name="dialpad_layout_height">272.0dip</dimen>
+    <dimen name="dialpad_dial_button_side_inset">32.0dip</dimen>
+    <dimen name="dialpad_dial_button_top_bottom_inset">16.5dip</dimen>
+    <dimen name="emergency_zero_contact_container_paddingTop">37.0dip</dimen>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/sub_appbar" android:background="@drawable/settings_glance_reply_app_bar_background" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="@dimen/settings_subappbar_text_size" android:textColor="@color/settings_subappbar_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/sub_appbar_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/settings_subappbar_switch_on" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" android:layout_marginStart="@dimen/settings_subappbar_margin_start" android:layout_alignParentStart="true" />
+            <Switch android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/sub_appbar_switch" android:nextFocusDown="@id/edittext_glance_reply_editor" android:layout_width="wrap_content" android:layout_height="fill_parent" android:nextFocusForward="@id/edittext_glance_reply_editor" android:layout_marginEnd="@dimen/settings_subappbar_margin_end" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View style="@style/SubappBarDividerStyle" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/edge_img" android:background="@drawable/edge_img_glance_1" android:layout_width="fill_parent" android:layout_height="185.0dip" android:layout_marginTop="@dimen/description_padding" android:layout_marginStart="@dimen/description_padding_start_end" android:layout_marginEnd="@dimen/description_padding_start_end" />
+                <TextView android:id="@id/textview_glance_reply_explain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_glance_reply_explain_text" android:lineSpacingExtra="@dimen/privacy_notice_text_linepadding" style="@style/SettingDescriptionListStyle" />
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_glance_reply_text" android:fontFamily="sec-roboto-condensed" android:layout_alignParentStart="true" style="?android:attr/listSeparatorTextViewStyle" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+                    <EditText android:textStyle="normal" android:id="@id/edittext_glance_reply_editor" android:paddingTop="10.0dip" android:paddingBottom="16.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:minHeight="52.0dip" android:text="@string/settings_defalut_glance_reply" android:inputType="textAutoCorrect|textCapSentences|textMultiLine" android:imeOptions="actionDone|flagNoExtractUi" android:fontFamily="sec-roboto-light" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/GlanceRelplyInputTextField" />
+                    <TextView android:textSize="@dimen/quick_reply_counter_text_size" android:textColor="@color/list_edit_counter_dim_color" android:layout_gravity="end" android:id="@id/text_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" android:layout_marginEnd="16.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

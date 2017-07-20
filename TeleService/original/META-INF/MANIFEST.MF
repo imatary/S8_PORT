@@ -1,0 +1,3330 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: res/drawable-xhdpi-v4/header_button_icon_cancel_disable.xml
+SHA-256-Digest: +S1QKwmzjK6IwxCa3OSQXyM5MUmrWuqRm6cSXRUQkN0=
+
+Name: res/drawable-xxxhdpi-v4/tw_btn_next_depth_focused_holo_dark.qmg
+SHA-256-Digest: X3vAX+Byu1IjTZduMQDB69BUwwr97JDCqlXEhgLGK30=
+
+Name: res/drawable-xxhdpi-v4/sim_icon_phone_v2.spr
+SHA-256-Digest: vPaiyCIOxHd+V1G+/fwtw+vDT29Eo69WxVHtnMGwse0=
+
+Name: res/drawable-xxxhdpi-v4/picture_emergency.pio
+SHA-256-Digest: GnkUqQmCHBK54C/yAqz5hVNxPjTKqZIlkMlqMwWK62Y=
+
+Name: res/layout/photoring_attach_menu.xml
+SHA-256-Digest: iFN/sbTpeZvohjjillk8k9b4pTIQose7koc9mpWBSRs=
+
+Name: res/drawable/sec_call_btn_contacts.spr
+SHA-256-Digest: O4BfOFAm6EXR66+VTIakKE/fICYrkdUgUsrBt1n77nI=
+
+Name: res/layout/autorejectitem.xml
+SHA-256-Digest: z8P1c90FK4G/1UHbTCXg8RY6eR7nPpehS8CImfHMdX0=
+
+Name: res/drawable-xxxhdpi-v4/stat_sys_phone_call_forward_sim2.pio
+SHA-256-Digest: anjHy0W5qrPf7eKyt+y1ACletSKUoMZf4Wz5ZyaFMR0=
+
+Name: res/layout/global_data_roaming_access_bottom.xml
+SHA-256-Digest: Z7Ea0xQ4YKchN/3aTtcpqSIoIWX4no8JbgOkhzck4xE=
+
+Name: res/drawable-sw600dp-tvdpi-v13/call_dial_call_btn_bg_inset.xml
+SHA-256-Digest: ZGQn5niSHlxDb5WJ3Hw1etMTodXJjHeBsXBnn0wdoQ4=
+
+Name: res/drawable/list_ic_camcoder.spr
+SHA-256-Digest: 7vfF3mvnSbMVg3lr2D82vhDEUhXCt6m2/TD2H2OuQXg=
+
+Name: res/drawable/roaming_search_icon.pio
+SHA-256-Digest: krxAANLWSEgC8A32z4/fzMf6f3gl5RVpAH+iKsQWFf4=
+
+Name: res/layout/photoring_phrase_edit.xml
+SHA-256-Digest: LhprMka6yqg+D6DnCCs8i9t0ipIPMJXJUUJpQssblt8=
+
+Name: res/drawable/tw_action_bar_icon_resettodefault_holo_dark.pio
+SHA-256-Digest: 4SyhpFjYIyQsjoiOTR84o9+Jdo9keJdkAGyC2MdDPg4=
+
+Name: res/layout-sw380dp-xhdpi-v13/dialpad_view.xml
+SHA-256-Digest: WqR/kSEdoFs8NEL6ItPTUCtp0eLOT3nKZNdlALsUP1U=
+
+Name: res/drawable-xxxhdpi-v4/optionmenu_icon_help.qmg
+SHA-256-Digest: sgL/6zfAHXZ7pqxf2ZIZq9+tWmdoKoI5JBFbaLhjDi8=
+
+Name: res/drawable/call_sim_icon_gsm_01.spr
+SHA-256-Digest: L5GvTzF1Cht6duuAss5RjTQTw2QDlgeTv3wkcTEvtF4=
+
+Name: res/drawable-nodpi-v4/ic_jog_home.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/layout/am_list_header.xml
+SHA-256-Digest: 925gFjizVbwkVhn++BNvUg90CRT6kwFyZ6DCirMC+X0=
+
+Name: res/layout-sw800dp-land-xhdpi-v13/dialpad_key_zero.xml
+SHA-256-Digest: vZwFrzDFbVC3i6ymY8T26c1gozNPK+ZbmrByjh1HrZQ=
+
+Name: res/drawable/tw_preference_header_item_background_mtrl.xml
+SHA-256-Digest: zLFmMz5yG8O7zsniP6udu6b6WUXjTOdT5koptfwS3nE=
+
+Name: res/layout/kddi_unwantedcallspreventionitem.xml
+SHA-256-Digest: ucxyC0si93jCqRp8XZ0D8JjsU+kYdR4FGyyps6hOKnI=
+
+Name: res/drawable-xxxhdpi-v4/reminder_noti_icon.pio
+SHA-256-Digest: tHVURy3sM1pDFfmBXhbk92dUEs/uqJOkdPXhEmAEIWo=
+
+Name: res/xml/vowifi_call_setting_pref.xml
+SHA-256-Digest: edahRFi1+LTz5ciw0NrE6ercD6eIgJ5Q4GpjHoqm+2o=
+
+Name: res/drawable-xxxhdpi-v4/tw_action_bar_icon_edit.qmg
+SHA-256-Digest: fOE4iZG+pJhSRtHoWvFgMQ4fu54wLxpUAVAEQICamjY=
+
+Name: res/layout/ota_incall_screen.xml
+SHA-256-Digest: PW/UTiWkn+7umrJaWHMDuXjqMwm4oYhCYuih3qy7OB4=
+
+Name: res/drawable-xxxhdpi-v4/call_ondhand_emergency_icon.qio
+SHA-256-Digest: JpZnGZeWqc7L9k3PUEb8sLjgwctcyK5LPVeSD5jVrJg=
+
+Name: res/drawable-land-xxxhdpi-v4/action_bar_bg.xml
+SHA-256-Digest: D1l9A2cI5gkQ7CnLdcX7xnDO7b3KD080MdVuDu41jEs=
+
+Name: res/layout/dialpad.xml
+SHA-256-Digest: A/0djkk5YUdooJ1E/ZbBqIZuKNKmnC0MtDjJMVnOgnM=
+
+Name: res/layout/emergency_sync_contact_empty_item.xml
+SHA-256-Digest: UlRNG8QErPW3YZacoqBWM+08rCE0Q4tuxSctlaJzpqg=
+
+Name: res/layout/photoring_phrase_list.xml
+SHA-256-Digest: rz1IY8sCzhINiTmocYgF9IsfdO64UVXEext8f2A3ul0=
+
+Name: res/drawable-xxhdpi-v4/icon_self_prov.spr
+SHA-256-Digest: RBiO2mZYG4GW6uTzAH488jLBt6qNYAPxlm2ZezlISts=
+
+Name: res/drawable/reject_message_tile_center_bg.9.qmg
+SHA-256-Digest: lJAbcyAeb/dUMtAfqap0mYTebSLn1HJjLL2P5G+67Qg=
+
+Name: res/layout/reject_message.xml
+SHA-256-Digest: oWBGnFonmH1kSsTiCQEGdHmI3GCidaQnAj6Vv53J5uA=
+
+Name: res/drawable/popup_pause.spr
+SHA-256-Digest: UtP552h0fI4IT4Q1/LN2R5x8TSE1kRFIh+c2KV6t88k=
+
+Name: res/layout/fdn_btnview.xml
+SHA-256-Digest: ATYbOO7lsT4FBEEyqZohlRaorLpb0PfVdfQihb8IOOA=
+
+Name: res/drawable/header_button_icon_plus.pio
+SHA-256-Digest: 7bQ1SHD4SZnUbm3ekwBuMUUU5YAEs9NEFjFk1eHsbpc=
+
+Name: res/layout/restricted_switch_preference.xml
+SHA-256-Digest: vhVTvZnNHfZUnLZiUxZtVk4+gjMIAWD5EZjKbuV8kak=
+
+Name: res/layout/dsa_phone_number.xml
+SHA-256-Digest: UGFoXHLgZWEe4chpnzxnTZzuyfDA6HhNTP4oLkAujMs=
+
+Name: res/drawable-xxxhdpi-v4/ic_jog_home_press.bmp
+SHA-256-Digest: fFMRv6u89KpznCdYeQmMtbuuyJ0c2WD/qbrCnZwHVRI=
+
+Name: res/drawable/jog_tab_left_bg_press.xml
+SHA-256-Digest: vFoymnw+1/eG7sK/i3sJme/bCDNY00Pr9bb3NMzHa/4=
+
+Name: res/drawable/tw_drawer_list_line_holo.9.qmg
+SHA-256-Digest: cQpNKVTAroM6hrPgfHiUWB0QE8BoNntJT6HcS+a9ZAE=
+
+Name: res/layout/roaming_notification.xml
+SHA-256-Digest: h4u+jMNh5zjg+v4L00wy1myY20VddkMFqpkU1X/oXQI=
+
+Name: res/drawable/tw_tab_indicator_mtrl_alpha.9.qmg
+SHA-256-Digest: 1cGJ4nfuBo9NixHoHbHq6L1hEy0MX+wCn5W7fENxBQs=
+
+Name: res/layout-sw360dp-xxxhdpi-v13/dsa_phone_number.xml
+SHA-256-Digest: l/3Wzz/tzBo+ztJiyX7S3MeeEMhvGecnbPe2A0vIbUg=
+
+Name: res/menu/assisted_dialing_menu.xml
+SHA-256-Digest: ZXdd9TUvKJt0sOQnUq1wLsVEktynifRDJGBwjfLUQow=
+
+Name: res/drawable-xxxhdpi-v4/ic_dialpad_delete.pio
+SHA-256-Digest: X4Dkske37/Fq9MHt1lekBHMLdT/pbH3bYic+YkEWF1Q=
+
+Name: res/drawable/ripple_to_switch_pannel.xml
+SHA-256-Digest: FRnAWoolqSOV547plsNLKAA1FZJq2WVZrJVYVAS/nwc=
+
+Name: res/layout/ip_call_list_item.xml
+SHA-256-Digest: OYJWBOeHx6RSLT+NcZIkSMmP3hvYF4SeY4UyLh7mwxU=
+
+Name: res/layout/recommendation_ringtone.xml
+SHA-256-Digest: HgaITNYRzHD3nGu4jQBoFT6vJIKKlk541STjMDACBus=
+
+Name: res/drawable/transparent.qmg
+SHA-256-Digest: K7bZyWg6gvUkDpHa8odtRXpRjjvLFxAcnpri6zo03KU=
+
+Name: res/drawable/call_about_ic.qmg
+SHA-256-Digest: eHCHVoRewFultIs6iLhRgvyLuZXvCBY073IyGqf+860=
+
+Name: res/drawable/call_onehand_back_icon.spr
+SHA-256-Digest: YXrO1pmtt34hU5SFHP2C8Yvx7/bY+IzEiRMjb0m0oGU=
+
+Name: res/layout/callforwarding_voicemail_dialog.xml
+SHA-256-Digest: Zf732E3qZfC+kOmxmaNlEV//c8UtkHtqQCsAQ3g0SK4=
+
+Name: res/xml/nwservice_list_roaming.xml
+SHA-256-Digest: IIA7QhYvbbn/Va+r6mgABMLe76IIbE31/FgXXzjLbII=
+
+Name: res/drawable/emergency_contact_item_button.xml
+SHA-256-Digest: JoKHu9tGv8msdaT/35tb033xxZRzkwF5FoPPT2ByQ8U=
+
+Name: res/layout/advanced_call_list_item.xml
+SHA-256-Digest: 49U1A0OUudmbQ1X4lf8NpZG3tEuakFqfnej1ZsRiAOQ=
+
+Name: res/layout/tencent_functions_legal_information_message.xml
+SHA-256-Digest: ioOY2LVqlUKHaoD4Nq9I0HozgwF479bnH15JU51mqsA=
+
+Name: res/xml/missed_call_noti_roaming_list.xml
+SHA-256-Digest: cKdVJrs24gXVJAp1uPN0Gx13tR1paYOGpGdApHkR/oA=
+
+Name: res/layout-land/emergency_dialer.xml
+SHA-256-Digest: MDezweX8nZTDjjZxzi8r+eo3KRb7ttfuQ5rs7VAwtK0=
+
+Name: res/drawable/list_ic_laptop.spr
+SHA-256-Digest: mPDZ0xVzZt1TnbKGB2M3jOQAHbD2FvPLivzEfrpn0nU=
+
+Name: res/drawable/linearlayout_select_all_item_bg.xml
+SHA-256-Digest: //TEQ4tw620bo319yWpGy2XIuRhUAcwMco1tO/WLlRU=
+
+Name: res/drawable/recorder_icon_play_selector.xml
+SHA-256-Digest: SyOUe9jlTF1nbircPaesKr24Aen0mSjjSitUnWcdB98=
+
+Name: res/drawable-xxxhdpi-v4/tw_btn_next_depth_disabled_focused_holo_
+ dark.pio
+SHA-256-Digest: VLRqtyCy2Kxoql2iVnFpeulbIC51nqCFXLePv7sGSCk=
+
+Name: res/layout/reject_call_icon_image_dlg_item.xml
+SHA-256-Digest: 1fmkz/rYXmEq6nhH3l5I6fPm0zKtA5UqQH/cC/Mpeu0=
+
+Name: res/xml/network_setting.xml
+SHA-256-Digest: +S6RV4mhWRBsmlG5AcCtfdrsGIxDm1A8WjfmtPqDG2s=
+
+Name: res/drawable/list_ic_input_combo.spr
+SHA-256-Digest: PkgaC68n8TG1rMPEY32Pp9uZTZwBE7Breh156mOuVkM=
+
+Name: res/drawable-sw359dp-xxhdpi-v13/tw_divider_option_popup_holo_dar
+ k.9.qmg
+SHA-256-Digest: 2qM5c/4sJOBUGOiIde4QhBiIUCEgyvYhBFuTgwCJgCo=
+
+Name: res/layout/custom_action_bar_donecancel.xml
+SHA-256-Digest: 46h1IPbT8Sxa6gfbv4Sg5CwQND6tuLShIkFays3Y8AE=
+
+Name: res/layout/sub_number_item.xml
+SHA-256-Digest: IEfHB75ZhxoqfuDxjYE12zpDNOw7OyFo1OpA1tKvdps=
+
+Name: res/layout/assisted_dialing_activity.xml
+SHA-256-Digest: Eaqgyv2D43pf714Cmk6udipWx4bgnuRVu5WONt/HnAU=
+
+Name: res/xml/voicemail_settings.xml
+SHA-256-Digest: rUN5hmUJQSabtM+Hutb8P+TkK/xSCJvblKfW5uvA5u8=
+
+Name: res/drawable/emergency_dialpad_key_background.xml
+SHA-256-Digest: SYcikwtYA7Pq2iDVA00xFnW6AyR+0ANEK8vXj2YX0XA=
+
+Name: res/xml/ringtone_settings_duos.xml
+SHA-256-Digest: 8VJolNf2LuEr+pqOnf9QuzFXMdz/YhgUM44EQj/Nw9g=
+
+Name: res/drawable/list_ic_mobile.spr
+SHA-256-Digest: o5Ie+OuV39KS1d3+ZBCgD6jVwlYhnkpJLGi3e5zzSKY=
+
+Name: res/layout/progress_preference_circle.xml
+SHA-256-Digest: Ob0jKYgMng8A/pTOFsf7mQSxejrRFwA787aWwCR88pU=
+
+Name: res/drawable/emergency.bmp
+SHA-256-Digest: gN/hMxOFDZ6OlWDyCjPQrPznDdqMaz7exPy+Cbgnst8=
+
+Name: res/layout-sw360dp-xhdpi-v13/dsa_phone_number.xml
+SHA-256-Digest: P7FZthcd44mznRdjSU3GBNIglAWYSZS3gdFVkzDik08=
+
+Name: res/drawable/tw_list_divider_holo_dark.9.qmg
+SHA-256-Digest: MFAvkHYwO9zjpKy2iktJTjqaP7XPk7/zC1khhriVKHA=
+
+Name: res/drawable/call_sim_icon_gsm_02.spr
+SHA-256-Digest: 7kyEqO9mRfqWjilXsBvmA13xPZBiuGNOedFmRI8/9vU=
+
+Name: res/drawable/tw_fullscreen_background_light.9.qmg
+SHA-256-Digest: MPk2fM15Q7xLvkgXzlBt78nr1sU2h6D6gqhwxRvWFqw=
+
+Name: res/drawable/tw_btn_icon_previous_mtrl.pio
+SHA-256-Digest: 8jLA5SiQ5a7SMmcF8lwoxwRPOeVatcJlIDKMRTqGwCo=
+
+Name: res/drawable/list_ic_dishwasher.spr
+SHA-256-Digest: FzHZdSPC+tMSIsEPQXeVgGyd8yJBS5etSWB3qxRr5us=
+
+Name: res/layout/dialog_ussd_response.xml
+SHA-256-Digest: NtbsIeVKqnQ97jGWJFprqc4SZzr3zi49I4OGvWELBkk=
+
+Name: res/xml/accessory_settings.xml
+SHA-256-Digest: lCkbYL8Hkh4njiY+yLQNlfDRVKsQj4svzQUap1bwqI8=
+
+Name: res/drawable-xxhdpi-v4/popup_cancel.spr
+SHA-256-Digest: eTArou4+KUEbYfu51EVEAPCi79E457XeBn9/kVskx/8=
+
+Name: res/layout/captureimageviewer.xml
+SHA-256-Digest: 8dT8m0Bqa7zarVP2NRAYk+ZFsALDJ2wtxTQ/uOu3KU0=
+
+Name: res/xml/file_paths.xml
+SHA-256-Digest: gHtuNnH2AkYbWKyMwqjR4VMDseY2J9xBtlFfrLU3zsw=
+
+Name: res/drawable/answering_memo_seek_handle.xml
+SHA-256-Digest: aYslcNdrKkL2oF9NLAnaT5yNoQhhk4rsddw5i2QzDpk=
+
+Name: res/drawable-xxxhdpi-v4/header_button_icon_delete.pio
+SHA-256-Digest: BH8LyM8XGGklvykHkT2zvi0ZoqUMa6Nc9dHkJKS/FZc=
+
+Name: res/drawable-xxxhdpi-v4/memolist_list_icon_newmemo.pio
+SHA-256-Digest: ZKNZ2iye+WGIT/PZvANwRbxpB4uKIxlNdJpIZRWK7is=
+
+Name: res/drawable/button_shape_bg.xml
+SHA-256-Digest: 5fbFAeoqwbjgWkYFMzawbYZ1LIqh0dvbHJLxqD0e2KQ=
+
+Name: res/layout/app_percentage_item.xml
+SHA-256-Digest: hogTt3aY4fx0IGH81/FnamIwfgVTSbECXgyZ3RBQrl8=
+
+Name: res/drawable-xxxhdpi-v4/green_divider.pio
+SHA-256-Digest: Ov006MBHevcYp9ETcAJyJaivGdoQJGv3X+s9wwUQM7E=
+
+Name: res/xml/countrycode_list.xml
+SHA-256-Digest: 7O+LIdT3yaxHvd06eQ+EixVe7+htOvMtwXrabZE4we8=
+
+Name: res/xml/kt_hd_voice_setting.xml
+SHA-256-Digest: O+T0AxJQtv93pT8RpEF5So7oHtYe5gYWnS3tNPvrpG4=
+
+Name: res/layout/dialpad_view.xml
+SHA-256-Digest: JyjD+OnykqYHSHXHFcOzpGGI7lSbNkTG7r985yxx9jw=
+
+Name: res/drawable-xxxhdpi-v4/call_btn_contacts.pio
+SHA-256-Digest: xwdCqEC5acZ7MxYL96tIiFza4Fv7iNtIrEZJZJ2yMPU=
+
+Name: res/drawable/ic_menu.xml
+SHA-256-Digest: IjXKHIApeplJWPVQD4JBeBH5CTKzuMPqkbnQg9rD4JU=
+
+Name: res/drawable/noitems_text_based.qmg
+SHA-256-Digest: bBwdsdTYjSDaHqpRkyQtvS9AoMHHyH6bBMfg+zZCFb0=
+
+Name: res/layout/carrier_match_autocsp_dialog.xml
+SHA-256-Digest: 0lzBWDu8t2uvU3J+PrLaf25Xh5Uy7gsZdpKn2Ulud0g=
+
+Name: res/xml/set_auto_dialing.xml
+SHA-256-Digest: 5gSLR+ee/n9oFQ+lfbJxBjQfISORHlYrUUcHDEoa6Ho=
+
+Name: fragmentshadernv12.glsl
+SHA-256-Digest: PVqY93shfhxdvdNonT6TJeGkTUKpY8Cj2EvGmVofSdA=
+
+Name: res/xml/cdma_call_privacy.xml
+SHA-256-Digest: HzIf/QoDQFhX6QwfP2lS5tuPALYVXkb+5FHPvX1Ncr0=
+
+Name: assets/eri_311480.xml
+SHA-256-Digest: WMuX3QqwuJ6oDqNAv8x6ycNy/99x0HhpHNohfjEhpmw=
+
+Name: res/drawable/ims_btn_check_box.xml
+SHA-256-Digest: kbpNP66U+jkxXAtwWGs9k4NMBkKlmLVzZQeBfWu7GGc=
+
+Name: res/layout/settings_with_drawer.xml
+SHA-256-Digest: M8XpIn7Nt5g799INR+ttJOu6S2HRWb70agK+wsgQaqg=
+
+Name: res/menu/callsettings_multi_select_menu.xml
+SHA-256-Digest: k6ES1aHMazGMp6NRkib40oZIHPgF7Yxr2Lyidqhx5kk=
+
+Name: res/drawable-land-xxxhdpi-v4/action_bar_bg_image.xml
+SHA-256-Digest: xQ+jWJebS5f7tuobHngVSrm9OAYXhOFRctdL4o2ACvc=
+
+Name: res/drawable/call_photoring_image.pio
+SHA-256-Digest: ZRJhi3iQchTzp+HUsHPjY3RsGIk+VjdAha1Mem5wwyQ=
+
+Name: res/layout-sw360dp-land-xhdpi-v13/dialpad_view.xml
+SHA-256-Digest: AsYf2leIY6Y91yMDaH9UZPWHExKZM9Pzo8quYMiFGY0=
+
+Name: res/drawable-xxxhdpi-v4/tw_ab_bottom_transparent_mtrl.9.qmg
+SHA-256-Digest: 37RIVfYh82/UCQQ0q9fJJg6mzXcmmzBu4JXS2YQT+No=
+
+Name: res/layout-sw360dp-land-xhdpi-v13/dialpad_key.xml
+SHA-256-Digest: 4cUwU/IkJjjAoFDxZTBlqhwQj/UZir1dNv0ks5GMS/0=
+
+Name: res/xml/dsa_main.xml
+SHA-256-Digest: 1H4dZbzFy0HYIotQrDQXj2oYabjpeReN/mNyhMCTV4g=
+
+Name: res/layout/autorejectunknown.xml
+SHA-256-Digest: EnteD280zHQ+XzZ8u0nBkNQSxRovmOepPqY6pmr2304=
+
+Name: res/layout/layout_dialog_prefix_edit.xml
+SHA-256-Digest: 7c+jIveiZ3knH+cGDLdta7+ZQ+CSBNFiAYQ3SF8ZGVY=
+
+Name: res/drawable-xxhdpi-v4/call_sim_icon_mms.spr
+SHA-256-Digest: F8EpaWqNMqtJoTjCqIwfP1A0FwIx5XLld6iTXkqrue0=
+
+Name: res/layout/preference_header_item.xml
+SHA-256-Digest: tezwUphugOtFE/7ujHgGDkRomwqVBUOkCZwy5kgrh7g=
+
+Name: res/drawable-xxhdpi-v4/incall_button_multisim_sim01_icon.xml
+SHA-256-Digest: RU99c0Yz14llPNi5ORVFD7JBSNicdCqP8Y+3c5FyBrA=
+
+Name: res/drawable/dial_btn_ripple_bg.xml
+SHA-256-Digest: rQlad8AJ9BF+Un6VR+gH394h26QQLEXgquQ4M38ee6Y=
+
+Name: res/raw/guidance_beep.ogg
+SHA-256-Digest: 3kwOUoXBVlyvXdepz+tKP3tPkwiS/tLNPA7Q2kmYfks=
+
+Name: res/raw/call_hold_lgt.ogg
+SHA-256-Digest: AP2JJPX4vKusJAy10tuPnI7kkbi4j4YMP79CJkmzLfU=
+
+Name: res/drawable/emergency_contact_item_background.xml
+SHA-256-Digest: hFggVGLQ/BXpZkz+xr217ya5xurkp+9FE92JgC6aSSE=
+
+Name: res/color/listview_item_title_color.xml
+SHA-256-Digest: 1KmmjEQZbM9J/3nl1wZIrlDbDH8WVGqAp1VwA96tvJ8=
+
+Name: res/xml/gsm_umts_call_options.xml
+SHA-256-Digest: QTTHTkB04L847z+P/Z9CiNEv6wnRIFt2vCG45WgCYfg=
+
+Name: res/drawable/cancel_ripple_button.xml
+SHA-256-Digest: 6McBjDkQ0sqnkpWXrfZg8CrkaQFlcKszTS6l+kiFdCc=
+
+Name: res/drawable-xxhdpi-v4/popup_pause.spr
+SHA-256-Digest: UtP552h0fI4IT4Q1/LN2R5x8TSE1kRFIh+c2KV6t88k=
+
+Name: res/layout/dialpad_key_onehand_right.xml
+SHA-256-Digest: Q2dZV7TnB+OC0OCMsd1kQJnEH6cpo8ovCu/ihOq1yBk=
+
+Name: res/layout/layout_dialog_country_edit.xml
+SHA-256-Digest: bJF/VWhL6FaAQp6jFrlMLYYa0/GEEq7KoTGXvEURuvA=
+
+Name: res/layout/blocking_nuisance_number_edit.xml
+SHA-256-Digest: K4P+ZsI3xITQfeLlnellYJx+qceM7vHgrtxQOjHKbzo=
+
+Name: res/drawable-xxxhdpi-v4/gallery_selected_default.9.qmg
+SHA-256-Digest: PW+AFHdNSfu694JRS1BG9t70DE9ojAJAeEEEWc4tozo=
+
+Name: res/layout/telephony_disallowed_preference_screen.xml
+SHA-256-Digest: ikiqm1KdoivbPqtbT2QIE6ZBLSzQhLHNcMGL3sBdHUQ=
+
+Name: res/layout/registerreplymsg_alertdialog.xml
+SHA-256-Digest: OWZy/O5O7AhQ4tNSs06h7SxapX6VPdmWMzHxg/8/YNk=
+
+Name: res/drawable-xxxhdpi-v4/stat_notify_auto_rejected_call.pio
+SHA-256-Digest: 9jIN/skrePNDE9t+Lk1HvxepK+zietoz+gLQ0Uq6RMU=
+
+Name: res/drawable/call_sim_icon_sms.spr
+SHA-256-Digest: x2QEcR87lJdzRjxN6BeR4IuYzwvagDKJPdaQENh1VT0=
+
+Name: res/layout/roaming_assistance_setting.xml
+SHA-256-Digest: qd05wG+gFIHIfIOINK8+PwC93zG5oyd5W2DT3YdNCTE=
+
+Name: assets/SamsungSans-Regular.ttf
+SHA-256-Digest: 01jB2R+Nrnz8IuWIxidTpTMiadTRSn1Och/rzzOGMx0=
+
+Name: res/drawable-xxhdpi-v4/call_sim_icon_sms.spr
+SHA-256-Digest: x2QEcR87lJdzRjxN6BeR4IuYzwvagDKJPdaQENh1VT0=
+
+Name: res/raw/dcm_volte_vt_rbt.ogg
+SHA-256-Digest: kE9DXu8mFtdD9buoFe597o2EHVwtQ9+VK94vcOnUjYY=
+
+Name: res/menu/ims_conf_call_menu.xml
+SHA-256-Digest: WmZ+EdA5M0r2yxnoD8q9MlPyZRytxIpsGuxupHW82Do=
+
+Name: res/xml/cdma_additional_options.xml
+SHA-256-Digest: VkmwuLYSy9JawJXnmaK0QrcVtXJI2fiC2oBC+F1CVj4=
+
+Name: res/drawable/btn_ripple_bacground.xml
+SHA-256-Digest: uHY6Twzv9O8BlPK+8wm6aH25MqQjKAwIXi7aHL0Vktg=
+
+Name: res/drawable/call_dial_call_btn_bg_right_onehand.xml
+SHA-256-Digest: AtgXhYMMuzqRojGkenzSM51+m1IrlerOWRPoZoRyCu4=
+
+Name: res/drawable/sec_incall_button_background.xml
+SHA-256-Digest: X+7kh7BgYPhY/L7I+PjuXDdnBTHdfLuSDdosjdbMIVs=
+
+Name: res/xml/ans_memo_settings_list.xml
+SHA-256-Digest: HXi2FSvukcJh5l4KB+zd5bQahPuOrEBmG2F4OuJ5zds=
+
+Name: res/layout/skt_roaming_popup.xml
+SHA-256-Digest: R2OAV3sQkFAUw3Xhj5KnnWenF1b7kEdrHvafLG/bP68=
+
+Name: res/xml/call_feature_setting_csp.xml
+SHA-256-Digest: 6kUXuvoju61Kpp/+ubt1oYurFoeYuWZypjFmqAyGYGM=
+
+Name: res/drawable-xxxhdpi-v4/edge_img_glance_dream_3.qmg
+SHA-256-Digest: EWjUDvEmswmLhSA4VVSvgEMSNFHHnmtPPfJYQKcCgRU=
+
+Name: res/drawable/icon_samsung_cloud.qmg
+SHA-256-Digest: /9IJWu7EjGua2NGpETh1Jw5q9JOkXDn9CzDCOg3iOSo=
+
+Name: res/drawable-xxxhdpi-v4/ic_overflow_menu.pio
+SHA-256-Digest: 7yLPcUFYT70gQKVu8jjBndZ0ryw1F+hJLqAGHiWBb60=
+
+Name: res/drawable/wifi_calling_noti_ic.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/drawable-xxhdpi-v4/sim_icon_office_v2.spr
+SHA-256-Digest: /8orkajS/ELfHA1fmDRCJICCkOE5gtZFSulPWdz9A1g=
+
+Name: res/drawable-ldrtl-xxhdpi-v4/call_onehand_back_icon.spr
+SHA-256-Digest: YXrO1pmtt34hU5SFHP2C8Yvx7/bY+IzEiRMjb0m0oGU=
+
+Name: res/layout/global_network_select_do_not_show_again_view.xml
+SHA-256-Digest: dheVPoL04Eprshg9n9FwcQlMFxzK4q2Ju27sai54VWo=
+
+Name: res/drawable/notification_auto_importance.xml
+SHA-256-Digest: 6aUyR/LcX7c6NW5421692NoL5QfmQlG/TW3v/K1vfTc=
+
+Name: res/drawable-sw800dp-mdpi-v13/emergency_dialpad_button_bg.xml
+SHA-256-Digest: zJWozP4UbOsA2WM7/MFkV7hl5+Ldj81sdbsi9Bci0+8=
+
+Name: res/layout/sec_autorejectlist.xml
+SHA-256-Digest: xEHIzsMvBKbwZNuK6qP44clB2ybMw9kRCdsG6kOk+ZY=
+
+Name: res/layout/otacall_card.xml
+SHA-256-Digest: 5bjSgRolm8kwwO5CPgPOlW9tj+SEm7Qn6fHmIXXGzcM=
+
+Name: res/drawable-xxhdpi-v4/sim_icon_gsm_02_v2.spr
+SHA-256-Digest: Z9RC5gCDEQMCQYMje+rjIPAs0lS7hW2thO7F0T3Xffk=
+
+Name: res/drawable/usim_notify.pio
+SHA-256-Digest: NMjGl6daTnwRjQ3rJs1SP/YM0xz5mgH7QYiOwT23EnE=
+
+Name: res/drawable-mdpi-v4/header_button_icon_check_disable.xml
+SHA-256-Digest: vj1DpW+/ZRQVF0Q1cBGmtlI3+HncR2rVflveJRHp4LY=
+
+Name: res/drawable/header_button_icon_plus_disable.pio
+SHA-256-Digest: h0h9sVwhqHgxz3Nd8MmXeWoVudDC4B98f48YUJNCRWA=
+
+Name: fragmentshadernv21.glsl
+SHA-256-Digest: dxv9LYGIdYnAmLUOY5fnu1iSVmX4y2K8najUKiDGweM=
+
+Name: res/menu/selection.xml
+SHA-256-Digest: zVZ38AOq7UQy1+vhFAt1P3kPOAe+QA5KHOeaVlfGXNQ=
+
+Name: res/drawable-xxxhdpi-v4/header_button_icon_cancel_disable.xml
+SHA-256-Digest: +S1QKwmzjK6IwxCa3OSQXyM5MUmrWuqRm6cSXRUQkN0=
+
+Name: res/drawable/tw_btn_check_off_holo_dark.pio
+SHA-256-Digest: lI3+Z5dlQke4gAB3LXXSSjXcJ3kitOeeiACaJQwvEL0=
+
+Name: res/drawable-xxhdpi-v4/quickpanel_list_ic_smart_call_filter.pio
+SHA-256-Digest: T7wQV3jOks8bvu2vZ9De+JLsxQ/fpaeJhKcPR/VqC9Q=
+
+Name: res/drawable-xxhdpi-v4/tw_tab_indicator_mtrl_alpha.9.qmg
+SHA-256-Digest: 1cGJ4nfuBo9NixHoHbHq6L1hEy0MX+wCn5W7fENxBQs=
+
+Name: res/drawable/call_dial_call_btn_bg_left_onehand.xml
+SHA-256-Digest: jQ1dylssZxVenslf8eIJ7ZZET/+7CPxf/m5AahZQ6hw=
+
+Name: res/drawable/call_sim_icon_mms.spr
+SHA-256-Digest: F8EpaWqNMqtJoTjCqIwfP1A0FwIx5XLld6iTXkqrue0=
+
+Name: res/layout/dialpad_key_pound.xml
+SHA-256-Digest: /bTcLIHyygPH9Qs05XEwRMqfAfNx7xvq5Fo5X3m973E=
+
+Name: res/drawable/tw_list_selected.9.qmg
+SHA-256-Digest: HQlQ0ceLTiMT/bxkFCAGM0pOd1z0Hpn5W2s3ur7rUuI=
+
+Name: res/drawable-xxhdpi-v4/header_button_icon_plus_disable.xml
+SHA-256-Digest: uQF/lEggWsq93CVotF0mub4X3wa8BpA7Qlv4eKL0Z4c=
+
+Name: res/drawable-xxxhdpi-v4/tw_action_bar_tab_bg_holo_dark.9.qmg
+SHA-256-Digest: 0PtLGZ9WM6xDjSNQdsvU6Qo4yjqBeYpqcZJcI3sxEqs=
+
+Name: res/drawable-xxxhdpi-v4/ic_jog_home.bmp
+SHA-256-Digest: fFMRv6u89KpznCdYeQmMtbuuyJ0c2WD/qbrCnZwHVRI=
+
+Name: res/drawable/call_sim_icon_internet.spr
+SHA-256-Digest: Z86Wj2MQB+pDnVQSqLJtXWwKraMgCGBsFza8e/kJOg4=
+
+Name: res/drawable-xxhdpi-v4/popup_speaker.spr
+SHA-256-Digest: Zoy+/R+nQW/6QuKWvah9Waz1SUrZOghkWWoQ/suCUBs=
+
+Name: res/drawable/call_lgu_thumbnail_ic_error.pio
+SHA-256-Digest: VfYMupuQ139QSTQIXFoyrT21U7YnABM7tTesvsdBgvU=
+
+Name: res/drawable-xxxhdpi-v4/tw_btn_check_on_holo_dark.pio
+SHA-256-Digest: Y6Sip6kKtgyHqY6dJcIvPR0zp52b9o0TpGylCuY5cc8=
+
+Name: res/layout/dialpad_key_star.xml
+SHA-256-Digest: s3frBq9bwISgsEASir8W9yzzWmnKhIqePyXfhUTelbs=
+
+Name: res/drawable-xxhdpi-v4/ic_jog_home.bmp
+SHA-256-Digest: fFMRv6u89KpznCdYeQmMtbuuyJ0c2WD/qbrCnZwHVRI=
+
+Name: res/drawable-xxxhdpi-v4/emergency_ic_my_info.pio
+SHA-256-Digest: /Sz4ua0V7ZClu36cGLoZWEcvGAo4r1mum+ncRXdLw+g=
+
+Name: res/raw/messages_ic_no_item.svg
+SHA-256-Digest: Br7ogu15wEUS+7/clQz8K2Mh8/Jhevx7zvOjq9slVoo=
+
+Name: res/layout/enable_fdn_screen.xml
+SHA-256-Digest: 2WCWQs0X10D2kfAq0gPNMlJQR7r4UKd1QqStAQwmCIk=
+
+Name: res/drawable/button_selector_next_img.xml
+SHA-256-Digest: Crbr3vwRhP6awP+sjcGW+czP3bo86QuSxGQrDjbZ3AI=
+
+Name: res/drawable/tw_btn_check_on.xml
+SHA-256-Digest: lA42x+pxUj11AVTe+eYzWK0G5GIsZDg+h3XiwzPvfmE=
+
+Name: res/drawable-sw800dp-xhdpi-v13/emergency_dialpad_button_bg.xml
+SHA-256-Digest: zJWozP4UbOsA2WM7/MFkV7hl5+Ldj81sdbsi9Bci0+8=
+
+Name: res/drawable-xxxhdpi-v4/call_circle_arrow_right_01.qmg
+SHA-256-Digest: j3KPKGPCeoKfGFZMH9K33GmNoVo2+cd3PAZRj4WuIYQ=
+
+Name: res/drawable/action_bar_checkbox_bg.xml
+SHA-256-Digest: WxFV9SUQgz8FYVaABJiE6tnl3j1HDsNMJnWsa0xKsg4=
+
+Name: res/layout/photoring_guide.xml
+SHA-256-Digest: rdKcWMi9VkaFyLsEsM9GLH1aSzL0PoB+kQcGvUnWKz8=
+
+Name: res/drawable/sec_call_btn_contacts_inset.xml
+SHA-256-Digest: 4E/93mEhQWs1X3KA0aFtacolzZ9HCPDnT5TGJfL7LMA=
+
+Name: res/drawable-xxxhdpi-v4/tw_action_bar_icon_search_mtrl.pio
+SHA-256-Digest: KFMdMzaquIVH95+g6aJX4YAlMPH1KYwmQJLpfQNUe3E=
+
+Name: res/drawable/contacts_default_caller_id_list.spr
+SHA-256-Digest: qIh1O9/PPhvHWFercL1FidP3C9J7dAe9onT6+QmaoF0=
+
+Name: res/drawable-xxxhdpi-v4/header_button_icon_cancel.pio
+SHA-256-Digest: LVN28UE5x59DfBiRnblusnH0C8d593yIGNOQMGcAPmc=
+
+Name: res/drawable-xxxhdpi-v4/stat_sys_phone_call_forward_sim1.pio
+SHA-256-Digest: nKrVDHpk0Gtnn8e38Mg2d9lxG+Cb3aAVqx9qm7RqKgY=
+
+Name: res/layout-sw800dp-xhdpi-v13/dialpad.xml
+SHA-256-Digest: W+KCalRboPK93LUHBYSm4kt7lKlMtPSDJNIUk0ODLcs=
+
+Name: res/layout/restricted_switch_widget.xml
+SHA-256-Digest: 3GQNEC3Yw7uLCaZPbv6SqmPP7SjwpndCqhBvnW8C9Io=
+
+Name: res/layout/wifi_call_help_rogers.xml
+SHA-256-Digest: RuNRvIHVq5UIJwYRBKiRzhjeTrnfK1cDbMhSCnm6i64=
+
+Name: res/raw/hk_ringback_tone.ogg
+SHA-256-Digest: PRuR94SG6RGQSfPNQ1vLJ9DpXseYm4zUruIIHlSlI3U=
+
+Name: res/xml/roaming_settings.xml
+SHA-256-Digest: 5O0bpyB3oUVQr2YSM4qkb/qRQllUxVxNJDcemI09eqY=
+
+Name: res/drawable/call_photoring_video.pio
+SHA-256-Digest: /iiBBbMVW54eigDGpXI3XnMS9PZtfPXkG4Nf4vYZNg0=
+
+Name: res/layout/restricted_icon.xml
+SHA-256-Digest: Ri7p8Uj725oJxvfdvgcJvxGqz79qNVC810thS4CVZ6k=
+
+Name: res/layout/ring_duration_picker.xml
+SHA-256-Digest: yHrJa2yE0Htl0XpAkXuT7/pArm8aJ/0Ehp2QquhWVdY=
+
+Name: res/drawable-xxxhdpi-v4/emergency_icon_off.qio
+SHA-256-Digest: AidxqJbLrYWEabogfV8ZQtaBZvji8ECIgMv7Dquj63o=
+
+Name: res/xml/nwservice_list.xml
+SHA-256-Digest: uV/vsU5ZBN5awOjx5apmDL2RlQtz18N5aQltOelgMOE=
+
+Name: res/drawable/setting_create_button.xml
+SHA-256-Digest: P0b2IEj44ix07t7Y+++PK/LtvPS4KBUxk+urtfwdsEI=
+
+Name: res/drawable-xxxhdpi-v4/edge_img_glance_dream_4.qmg
+SHA-256-Digest: QZvMZzfDXnzd3x5iLhDXIR1yCVZkdYz6AedhT7riR2I=
+
+Name: res/drawable-xxxhdpi-v4/call_onehand_outgoingcall_icon.pio
+SHA-256-Digest: D12XZ1yj9w2jEiuvp7r0DRr2jnktLr3wUPbWHbHTHyw=
+
+Name: res/xml/callwaiting_list.xml
+SHA-256-Digest: v13JKDb8ZaG63lAUJcUt0S5HFZbMzx2Im8vtTZzPmDc=
+
+Name: res/drawable-xxxhdpi-v4/ic_dialpad_voicemail.pio
+SHA-256-Digest: i1i1wU2OVjrH4SpOCjYaN+29yyvhd1LscRytqkj74S0=
+
+Name: res/xml/enhanced_lte_services.xml
+SHA-256-Digest: Y0+fVdteYrsAfZ15ee/TcOMlTD66czJEQp34W1gHL2A=
+
+Name: res/drawable/delete_actionbar_color.xml
+SHA-256-Digest: tsPg8Fve0anMjAvcr9fLlSzQGtFnqkUjOqVvoz+mVSk=
+
+Name: res/drawable-ldrtl-xhdpi-v4/call_dial_call_btn_bg_right.xml
+SHA-256-Digest: Unoh3l7xcyX0Lbs8uj5wODUtL6rTbaJkUV8RNLxW/kY=
+
+Name: res/drawable/call_photoring_photo.pio
+SHA-256-Digest: ooKgc3NCrbA/WobP+eEngT04ra08WCkzEH0YZXz2S8k=
+
+Name: res/drawable/list_ic_band.spr
+SHA-256-Digest: 7l1gX2rJCc+iyyq+ToLyHWwSA5x9Dpa0QiaW3UIO5us=
+
+Name: res/drawable/listview_press_bg.9.qmg
+SHA-256-Digest: eTUKZ7iTRRBCNkhVn4mYf72QkZ/ACtiyc7YV/ThxDbQ=
+
+Name: res/drawable-xxxhdpi-v4/call_sim_icon_home_dim.pio
+SHA-256-Digest: 0xyN9MIPV74/FTjq4lfV/SbDav0ssOe0QNDQA3tfsHI=
+
+Name: res/drawable/incall_button_multisim_sim01_icon.xml
+SHA-256-Digest: Uq+5c4heMvhblVUBFIUMHM2qiejwcBwBUBNKpwgz0Lo=
+
+Name: res/drawable-hdpi-v4/emergency_callback_icon.pio
+SHA-256-Digest: 17UKmdSGyCXKh6OxrYmhAc38ClCOBjuxsMScizKw+iU=
+
+Name: res/raw/phone_ic_log.svg
+SHA-256-Digest: 5h6jvGAv7b+xVlblCqKj/aY1YMQnPEFdiQetATksu24=
+
+Name: res/drawable-xxhdpi-v4/sim_icon_mms_v2.spr
+SHA-256-Digest: YiP8MFDPkSCVAdAPHwwJit6MmOeQx64mzDx8ocpT+Vc=
+
+Name: res/layout/mobile_network_dialog.xml
+SHA-256-Digest: AEYy0B0f/avmkenj9L3hX4I3iLaUdU7EO6cOeWq4BcM=
+
+Name: res/drawable-xxhdpi-v4/delta_orange_wifi_calling_ic.spr
+SHA-256-Digest: mQ98VdRLKN5lIztbGbehUIqOH5+heMp7fpWZTEEqeVw=
+
+Name: res/drawable/recorder_icon_pause_selector.xml
+SHA-256-Digest: lDelVcl6It1P+sQk3sOQTb2LSZhH+09BDv2h75bIH4Q=
+
+Name: res/layout/dsa_select_sim_card.xml
+SHA-256-Digest: zmVxu7GAmubnX+TbOc71Eri4mCC5sPIqjKXUAkzGxLE=
+
+Name: res/drawable-xhdpi-v4/header_button_icon_plus_disable.xml
+SHA-256-Digest: uQF/lEggWsq93CVotF0mub4X3wa8BpA7Qlv4eKL0Z4c=
+
+Name: res/layout/wificall_dialog.xml
+SHA-256-Digest: wURtn/LlxsTbXQwbXfryxHI1YrCSbMbh31I2fyz2MYQ=
+
+Name: res/layout/connect_list.xml
+SHA-256-Digest: fGGMSKmWXwaF1HdXPrBfVJliWB9/bfm+HXUN9EWkBXA=
+
+Name: res/drawable/actionbar_list_icon_check.xml
+SHA-256-Digest: Kwo4FwdzDJiPbV4totFTB5A7UXurEyu9BAW9zst0WuM=
+
+Name: res/layout/preferred_networks.xml
+SHA-256-Digest: 0EuQvrcOcVNXbKRzzm0apiBB5/OuWQKcrDXyAcpch9o=
+
+Name: res/layout/roaming_explain_lgt.xml
+SHA-256-Digest: 0BnJiGcCvPM/K9kINue4uCOPzt8TedJAu2e4QD41+Ns=
+
+Name: res/layout/tencent_pnl_legal_information_message.xml
+SHA-256-Digest: 6QGe9dxPhTb4j7fIQmj+/DNEKRh82U6fhwCjjjJvotU=
+
+Name: res/drawable/list_ic_system_airconditioner.spr
+SHA-256-Digest: kKDPC4OWu3TlEEz6BD/hYtyMHdil5deksrlPLgeOVwY=
+
+Name: res/layout/answering_memo_delete_list.xml
+SHA-256-Digest: 8B3rgq6tEoFuwvt7+VAf6Zarom0ZJGhqCH8EH0ZLkKk=
+
+Name: res/drawable-xxxhdpi-v4/emergency_photo_id_01.pio
+SHA-256-Digest: wSUwjKAXl9SNRKxa35gLu0ndfc1gjRLfUv92t3njkIc=
+
+Name: res/drawable/vt_capture_image_viewer_item_background.xml
+SHA-256-Digest: HayiUpcYWvpTmVd/DpuE/u32fv+xPDdXoSJeOwjIyjE=
+
+Name: res/layout/emergency_dialer_enhanced_onehand.xml
+SHA-256-Digest: W9CTqh9VXUaY60GXcsDK0CHsLxO/+Yj6Y3O+UQZSkb0=
+
+Name: res/layout/volte_never_show_again.xml
+SHA-256-Digest: 5V/qEl3NQcFymM55GbimExqb31lu/wUnJxgvk8/sPOI=
+
+Name: res/layout/pref_dialog_editphonenumber_rcs.xml
+SHA-256-Digest: DJSDzjM8Rc54Qs+qCmlHJFDRKPpablXn28Xo/HbWYgo=
+
+Name: res/xml/additionalservice_list.xml
+SHA-256-Digest: g6ebZQ5jZR0ZqV1kdBwIqa9WCGq55d9HK6r/EjQZHr0=
+
+Name: res/drawable/badge_action_call.qio
+SHA-256-Digest: Cj6kAiIOQ+/G8K1tKeM8q7kGB5h571hywA+HXyxVTtc=
+
+Name: res/anim/progress_indeterminate_material.xml
+SHA-256-Digest: DxgoTeeN4ttmwoEFvlmlRw360T1K/lm5gv7JvUvCk+o=
+
+Name: res/layout/reject_call_with_msg_icon_mode.xml
+SHA-256-Digest: t8auZkaNWsBptYT3q6SfwFHOnOTXZlFnyxe+72zBdKU=
+
+Name: res/drawable/list_ic_sound_accessory_default.spr
+SHA-256-Digest: 5RFSaYd48GWKRIzRlaCTl6P2RP1nJCIyCQIVZBndfNw=
+
+Name: res/drawable-xxhdpi-v4/header_button_icon_cancel_press.xml
+SHA-256-Digest: tcSwZx26WgX5b3hyfq60Vr6A+XzAzqyrj2iqHxBKlDk=
+
+Name: res/layout/dialog_agreement_selectable_radio_group.xml
+SHA-256-Digest: VvmGPAOPgnypesoms7kDVsegpblAfIltwvNYtLPrXU4=
+
+Name: res/drawable-xxxhdpi-v4/tw_list_focused.9.qmg
+SHA-256-Digest: lZ2dvgbADDWBmDnjiYf6hQt0n314o9/bZIvqaSeuJN4=
+
+Name: res/layout/drawer_spacer.xml
+SHA-256-Digest: 89hY/QebLgA94XWb4LMiQZD8FG1OkjRLRa6AN+AjLSg=
+
+Name: res/drawable/list_ic_printer.spr
+SHA-256-Digest: Ldp9eYHyS8RwtOBc4SuzaIbe+d+xwcY2PPqVDNZ90Uk=
+
+Name: res/drawable/list_ic_iconx.spr
+SHA-256-Digest: O2Pu2WDTNZr+M0aFBFD4U9Puo8rQyGhAxZOh6mCUI98=
+
+Name: res/xml/network_list_preference.xml
+SHA-256-Digest: oq4Vlh2kioq7EAGaA65U0cTieSSmtf4l9SZwmGp1dII=
+
+Name: res/drawable-xxxhdpi-v4/call_accept_arrow_02.pio
+SHA-256-Digest: J6H9FLRd3etoXL4cc5rDvyjJsAmwT6Z2G53p/zGBluI=
+
+Name: res/drawable/sec_photo_container_background.xml
+SHA-256-Digest: Fqj0bTVjs0/R8ETTCBQlHlLtnu4yVDpC1BnMqHTppFE=
+
+Name: res/layout/reject_call_with_msg_modes.xml
+SHA-256-Digest: TJwlaYGx77SjneFJe5s21m0YSpsMYDPArsG5zSi63x8=
+
+Name: vertexshader2d.glsl
+SHA-256-Digest: PncL/iGxphOAbb+SaqqPKLi1qXkUPs+fW6uTjrWKpVg=
+
+Name: res/layout/create_volte_enable_warning_dialog.xml
+SHA-256-Digest: +dPEnoQ8kz5c4sTkD4OeKS7cOFbClz+tShiOP7ldniE=
+
+Name: res/xml/network_service.xml
+SHA-256-Digest: BRNFQCDtoXTtdKnFSkONt0zTxfgq8WZ9mSDZxDwDLzw=
+
+Name: res/layout/dialpad_key_zero.xml
+SHA-256-Digest: 0W2EAY3UuAj24RHAanouPYlNl2R4kHI+640iVwhhy4s=
+
+Name: res/layout/listview_empty.xml
+SHA-256-Digest: 2eRm2prc4reqOUKPrLpPA6OZwSLGJJbKgwqfD1BuliA=
+
+Name: res/drawable-xxhdpi-v4/call_setting_quick_panel_icon_functions.p
+ io
+SHA-256-Digest: XZ/TjfyGZDyXrMiHi3HmlJzvIQjNs9H73WMRxchLgSU=
+
+Name: res/layout-sw800dp-xhdpi-v13/dialpad_additional_buttons_sec.xml
+SHA-256-Digest: NaJklMEhxbKH8gXAareI4/ioVIJcSGc0eXSbhPrZC/E=
+
+Name: res/layout/vcc_user_agreement_dialog.xml
+SHA-256-Digest: V0v4eFXDyIFccqF74t8Am7g3W/4gvyBfxEEqsC7OqWg=
+
+Name: res/drawable-xxxhdpi-v4/stat_sys_phone_call_forward_office.pio
+SHA-256-Digest: j66hkxdfkkU0UNv3Z2jW4RzcI7UIp3m+QsA/cFc892k=
+
+Name: res/drawable-nodpi-v4/stat_notify_voicemail_sim1.pio
+SHA-256-Digest: HEtnt2zft8ytqwPFVuBPUyMgljNkaUdjmbgKWnjyKiY=
+
+Name: res/layout-sw600dp-tvdpi-v13/emergency_sync_group_item_container
+ .xml
+SHA-256-Digest: FkCQedF1Lj+yn0mFFxcExqE0J2oXFkRrH0TDMmHYv8k=
+
+Name: res/xml/kt_callwaiting.xml
+SHA-256-Digest: 11POlf1JC5xc4AbpGB9mZmkTvyBEwRxQvYRqsUH6kOM=
+
+Name: res/drawable/list_ic_dryer.spr
+SHA-256-Digest: 3BDKJwg6xRpoRRB3Gq5C2hr2RwGd9ADSSSIGMBsyaVc=
+
+Name: res/layout/autorejectlist.xml
+SHA-256-Digest: mkWlRUcSn1W+aUxpsOF0l/tVTRE9K9jWme9wMRmguLA=
+
+Name: res/xml/advanced_call_pref.xml
+SHA-256-Digest: ZqFtWGZl5zV487I/3tKWAsUECMawifV+4kA+AMxkInA=
+
+Name: res/layout/user_preference.xml
+SHA-256-Digest: 2/goA/EX5QA1FU2YGIjkBZBXAuZdwyaB3sTFm1H4974=
+
+Name: res/layout/global_data_roaming_access_list_item.xml
+SHA-256-Digest: CBMQTBooeA89//crwSbbe9QDcmcy7o4fWn83rv6UC5k=
+
+Name: res/layout/answering_memo_delete_checkbox_list.xml
+SHA-256-Digest: P4x4aULzxqjTZavDnoS23O1oIcVeVoNX9tMR6RXVR/U=
+
+Name: res/mipmap-hdpi-v4/ic_launcher_phone.qmg
+SHA-256-Digest: E3T3nSTUcJamxr6hQUdgO+CMi+pFwWJ/njplheJ9SyU=
+
+Name: res/drawable-xxhdpi-v4/call_setting_quick_panel_icon_locator.pio
+SHA-256-Digest: uJs1s4EKiNoSm3fmafyVWdZHf/zrFL0XZpQdmaWZmYg=
+
+Name: res/drawable/list_ic_oven.spr
+SHA-256-Digest: OG80PHXkQ/cfmh+9yxpNPgzc9VQyfHA/umcENXYfA00=
+
+Name: res/drawable/settings_glance_reply_app_bar_background.xml
+SHA-256-Digest: TptuYAJeB/GRM5dUbMYHb8ZuGczEp7X6YMaHvJB8Qs0=
+
+Name: res/drawable-xxxhdpi-v4/noti_icon_tphone.qmg
+SHA-256-Digest: 6b+2OiMHUePfvdA5xcfd7d4ycinIM1a/whfP4tfmUuI=
+
+Name: res/drawable/list_ic_samsung_connect.spr
+SHA-256-Digest: HGG2JBmCRNHx0+6uGVWfUUoFwE7lbkmxXtDEmCKfXX4=
+
+Name: res/drawable-xxxhdpi-v4/edge_img_glance_dream_1.qmg
+SHA-256-Digest: WY1O8pceEKMuWXQpyhBT83AE4dcq/UZkFQNFA3GcV+A=
+
+Name: res/drawable/ic_wifi_signal_lock_shift_3.spr
+SHA-256-Digest: WTtbo4mkuKt/T13zxLt42UrEl1IjmMBQdagMVBdcf0Q=
+
+Name: res/drawable-xxxhdpi-v4/ic_signal_wifi_4_bar_24dp.pio
+SHA-256-Digest: rFID2goZSeVuEW5gxCEhXHjbX1y3I9h77WipQI5TfzM=
+
+Name: res/xml/callbarring_list.xml
+SHA-256-Digest: r/ruphsto2+OCvbARAgu7cuOinYzzwcgNSTMWVjOLPw=
+
+Name: res/drawable-xxxhdpi-v4/emergency_icon_press.qio
+SHA-256-Digest: tDc8l4+jFIfsBZOm3MTIYy9ftyaAVYOYWg9xoV+kS7w=
+
+Name: res/xml/international_call_setting.xml
+SHA-256-Digest: 3F0EWYGHAn55ucxUP+QyeYGKKIzL5xXSj8awl6bqcTg=
+
+Name: AndroidManifest.xml
+SHA-256-Digest: V4yPHTffj3LaWiiH5we/ILWt9RBknjLbJskM1zIbPbo=
+
+Name: res/layout/reject_message_list.xml
+SHA-256-Digest: vhgAdLKQul9Qt3fnyHQt2kdbmqPTVzbPvZoCnAvKFtI=
+
+Name: res/layout/photoring_phrase_item.xml
+SHA-256-Digest: XbMAFnRmT/KczsBzhNLCzUlrtg8xJbQ8W82yvrYF/7s=
+
+Name: res/xml/editreject_pref.xml
+SHA-256-Digest: c2S64bq1DOL0IkIFqMtjUx015cBKd4XNL0rt+I4+Vo4=
+
+Name: res/drawable-mdpi-v4/header_button_icon_cancel_disable.xml
+SHA-256-Digest: +S1QKwmzjK6IwxCa3OSQXyM5MUmrWuqRm6cSXRUQkN0=
+
+Name: res/raw/call_connect.ogg
+SHA-256-Digest: QcXUwmMmeiRi8fkOrbYl9zXZP5tosNGqfX0VkXngFFY=
+
+Name: res/layout/sub_number_manager.xml
+SHA-256-Digest: S2l1EF/eUDDkJxDdsScbR37t8UcsNjsxmSU1o6ZEczE=
+
+Name: res/drawable/emergency_contact_item_bg.xml
+SHA-256-Digest: UAz6k+mdl9ozk3H1hsV4nRnHu+GfE+dccH6PngTdjB8=
+
+Name: res/layout/pref_dialog_linearlayout_only.xml
+SHA-256-Digest: x+RTRrhb5zpDZ3rmVenUuifO4NpW0VD+gYaaHrs2MeA=
+
+Name: res/drawable-xxxhdpi-v4/call_circle_arrow_right_03.qmg
+SHA-256-Digest: 4NpMvEg9SPhpVXZRx8PizovvgjWifHVhB2MnCp3Hn+g=
+
+Name: res/drawable-xxxhdpi-v4/edge_img_glance_4.qmg
+SHA-256-Digest: 6iLtoEEFRmdGCd2yf/hRcKJFG3FsNhi2msQolF4Unhc=
+
+Name: res/drawable/list_ic_router.spr
+SHA-256-Digest: N2MSMGwE9e3C/UpujOVAZuaNhbnRapxSf/ULJk9B5CE=
+
+Name: res/menu/ipcall_multi_select_menu.xml
+SHA-256-Digest: FFSTfNqD6b761JUZKRjqWM2UKF9ixn0ffd+7h92h7rI=
+
+Name: res/xml/callforward_options.xml
+SHA-256-Digest: l7UswPpl/Clxy7rR3nxMPcMJowH/DlpiOqPwrw/ShuI=
+
+Name: res/layout/voicemail_ringtime_dialog.xml
+SHA-256-Digest: +9fp6YTZNvEpagFKzkOdj2smf93o3CkPi56sWL/hkg8=
+
+Name: res/xml/roaming_guard.xml
+SHA-256-Digest: KcDzJUU+LhLAATfzgYHTnBIr/QFkm845aW6yDvEd5zk=
+
+Name: res/drawable/list_ic_soundbar.spr
+SHA-256-Digest: SYd0ce/dsljbqOJbaLekE9af6l+9p7uDB+MNc95Z+8k=
+
+Name: res/layout/global_data_roaming_access.xml
+SHA-256-Digest: Ik0VHxqmzM4WtKhAMiqYA2e2xnRe72Z5LyEiWP6JS7U=
+
+Name: res/drawable-xxxhdpi-v4/list_icon_create_disabled.pio
+SHA-256-Digest: ln0Enijp9GS6qM0XslAk6FfPgYs8g3u/RVeeAWMv66c=
+
+Name: res/drawable/home.xml
+SHA-256-Digest: Rh+uuj4l8ESESuEKfA3qXNXsJGlJIdSM2PJsrOGW9zU=
+
+Name: res/drawable/emergency_dialpad_button_expand_bg_shape.xml
+SHA-256-Digest: oPoTdYKZVPAJDax62QCbTxSoff86Ti/rlxtjtGYPiGQ=
+
+Name: res/layout/pref_dialog_editpin.xml
+SHA-256-Digest: vWY7mJvxsn8UJPq4ONNLYBavfLQlCrjD8GfTvwFNS8Q=
+
+Name: res/drawable-xxxhdpi-v4/tw_divider_vertical_dark.9.qmg
+SHA-256-Digest: Ag34/ibl5QutEvZuHtFfWv7c/o9mSF2fuQqA67V8JsM=
+
+Name: res/layout/lgt_roaming_popup.xml
+SHA-256-Digest: xMehojQE060uBej7KC5+WketbT75uB0y0Rv7TkqyTtY=
+
+Name: res/drawable/call_dial_btn_call_gsm.qmg
+SHA-256-Digest: aUWiY6N/3EzZZufK0DcUHU90u6N88yNFCdqD166rYFw=
+
+Name: res/drawable/listview_focus_bg.9.qmg
+SHA-256-Digest: fYCRWCCZAbBToqLmW8f0YuPBA/Ejfr6PqKLEneNAzBk=
+
+Name: res/drawable-xxhdpi-v4/call_sim_icon_office.spr
+SHA-256-Digest: rdGBS7HTJ6mQd7UkTLgnP8Z7557w+xXj20VpERs7Y/M=
+
+Name: res/layout/about_phone_activity.xml
+SHA-256-Digest: XI0xR2qQ4mPLExCm8qXAtgPlhb1C/fnGzPWQjNlWsWk=
+
+Name: assets/eri_311870.xml
+SHA-256-Digest: ky+5GyxT6zXaK4iLXm9TX8Susxf0vfayfGjWRGRXnoA=
+
+Name: res/drawable-xxhdpi-v4/sim_icon_gsm_03_v2.spr
+SHA-256-Digest: Q09GNTpjA8Z8AN9Qlf+e0pL7Nvt5mEI8NJGYWy/MS5M=
+
+Name: res/color/ota_title_color.xml
+SHA-256-Digest: lKRbE2RpCTDvMxIIKK1+0eaXecxb2SEjAT2xZ7F4ylQ=
+
+Name: res/drawable-xxxhdpi-v4/quick_indi_memo_on.pio
+SHA-256-Digest: c49SCgVrfSEjd2vGYq6kxLpBGaDecdJBVcvScGY1KOQ=
+
+Name: res/drawable-sw600dp-tvdpi-v13/emergency_dialer_bg.xml
+SHA-256-Digest: RH5YQH+Gb5uLkyBBu4lXploIh9r+cn6bhuc5mxGX5yk=
+
+Name: res/drawable/overflow_menu.xml
+SHA-256-Digest: CTTShj7RnHLum0UZsQBzqV9UWdY3sE+BQrLuYm9pz34=
+
+Name: res/xml/call_popup_preference.xml
+SHA-256-Digest: Uh1S/T+DQqoZA8mI2+SdRLpj7N096HB5q6xirYf7MnQ=
+
+Name: res/xml/sub_number_preference.xml
+SHA-256-Digest: OTmk80KSWBp+dJaiariLJTTYErmoKwGDigkxtjqMD+E=
+
+Name: res/drawable/ic_wifi_signal_lock_shift_2.spr
+SHA-256-Digest: wUitET1oVAWZ+Rx3cmd2yyIm6PTYFdNwX+Qv9Oqgo2k=
+
+Name: res/layout/ims_conf_call_list_header.xml
+SHA-256-Digest: wfmvrIph0102jpzeLoy/BWkweO3S/y24aop3wJ23mxs=
+
+Name: res/layout/tw_select_dialog_singlechoice_holo.xml
+SHA-256-Digest: m0Zw5piQS6NKgpK0B7aRneuqxfpaiUKpUBATpQEHMAA=
+
+Name: res/drawable/unlock_right_small_press.xml
+SHA-256-Digest: T+u45PXAeXAtkaeochYG7vED6qmFCsUaRjA5lurC4lM=
+
+Name: res/drawable/list_ic_call_audio.spr
+SHA-256-Digest: gq5OlvqpTVU/e6Gh4qgaRU/kWTzQ1XIQsRRD5QWEkpo=
+
+Name: res/menu/emergency_dialer_menu.xml
+SHA-256-Digest: 6qdWyycFaIMS2l2UfQOz1a2uUMai8B1vH73YL3TIeKA=
+
+Name: res/layout/dsa_main_activity.xml
+SHA-256-Digest: q+3t7+GqG6E/Asw7TFoOv7Jfs2xauVx4uMCtlLNbjFw=
+
+Name: res/drawable/jog_tab_left_bg_small.xml
+SHA-256-Digest: GWmiPXG1EzH6BIaKt1ImQLBYX/QmqdzQxDXhq8R1yZ0=
+
+Name: res/drawable-xxxhdpi-v4/call_accept_arrow_03.pio
+SHA-256-Digest: 7FmpNuPZmdWDH870xzrfUBgMDddMdIqbfuwsxtClPVw=
+
+Name: res/layout-sw800dp-mdpi-v13/emergency_dialer.xml
+SHA-256-Digest: u/L6f8i3r4sCBgC5QkeKwoBDauhx3Te1ypRRqmRdIzY=
+
+Name: res/color/callsettings_tab_text_color.xml
+SHA-256-Digest: VALmL7OZekCCObnsh6oLf0oamhRTpo1MLGO9uwRteiU=
+
+Name: res/drawable-nodpi-v4/stat_notify_voicemail_sim2.pio
+SHA-256-Digest: EE5FdCEn2P5/dqRAhP+64YBBdUtAE0FHnnalb2CX54g=
+
+Name: res/drawable/phone_keypad_ic_emergency_info.bmp
+SHA-256-Digest: YqZe6ZsKzNHXS69Qb/MYE+jzCgGhLZsmZ52m8R6A+k4=
+
+Name: res/xml/public_mode_list.xml
+SHA-256-Digest: 94O4eqycY/zX0BRi5tVRsDlipSgSA/dMRu8YBOTMBx8=
+
+Name: res/drawable-xxxhdpi-v4/action_bar_bg.xml
+SHA-256-Digest: D1l9A2cI5gkQ7CnLdcX7xnDO7b3KD080MdVuDu41jEs=
+
+Name: res/drawable-xxxhdpi-v4/stat_sys_phone_call_forward_call.pio
+SHA-256-Digest: zOQOc/2axf5o0k5qniV0I0F0JY4MTt+/MUksb8LeE/Q=
+
+Name: res/drawable-xxhdpi-v4/tw_sub_action_bar_bg_mtrl.9.qmg
+SHA-256-Digest: +Q44m2MHHWJFjzz3DhUu2nVWwt9HgftKowU7a7RX538=
+
+Name: res/drawable/list_ic_blueray_player.spr
+SHA-256-Digest: ZL3JQMLG5OEqHCrsdyyiU7o5LtXfinyzYxoF5A6f3Bc=
+
+Name: res/layout/wifi_preference.xml
+SHA-256-Digest: 9baM88Swqxma1xl1ck2F32YGAOJF920yI1rqtH6JIzI=
+
+Name: res/layout/round_more_icon.xml
+SHA-256-Digest: 7CirXsswdsDutwkpRS8WyYIIlINv6gcmAT96fWyIwpU=
+
+Name: res/drawable-sw600dp-tvdpi-v13/call_outgoingcall_icon.bmp
+SHA-256-Digest: ql/NqTW9EKz1b2Zc2tz2t3OsCob/BsndH3Dp/UrrVt8=
+
+Name: res/drawable-xxxhdpi-v4/edge_img_glance_dream_2.qmg
+SHA-256-Digest: UUK7OjNil99Vl0H4G+n6dnJZtD1RQm4JwyNTcJMxaJA=
+
+Name: res/layout-sw600dp-tvdpi-v13/emergency_dialer.xml
+SHA-256-Digest: qegUu8hRGZJw7xy90qzGE9WrmzdhBPMyY25MMPTKHxk=
+
+Name: res/layout/list_header.xml
+SHA-256-Digest: UrPkAukq1VZieJbYxHFLi3V6nGEB3cCTFB2PK7LsO9c=
+
+Name: res/drawable-xhdpi-v4/header_button_icon_plus_press.xml
+SHA-256-Digest: pYt2Y4VNbyBXAyNwnyRWryORTIDJWOGQLmLT6xHcauk=
+
+Name: res/drawable/incall_button_multisim_mms_icon.xml
+SHA-256-Digest: hN6wHxmKLIJOfNH5UcliLiPRv2BCl/TW+1hf90wZ8+k=
+
+Name: res/drawable/incall_button_multisim_sim02_icon.xml
+SHA-256-Digest: N4DLSMkxoKAGECnzzXAZdczvs2C0GoTTLOuPQKArlS4=
+
+Name: res/drawable/sk_roaming_icon.qmg
+SHA-256-Digest: mRz7TX+wnsgP4YyYuhSZ435ESB7hHQL3eRHbpQKzeGg=
+
+Name: res/drawable-xxxhdpi-v4/ic_settings_warning.pio
+SHA-256-Digest: v4kGO7nbi/zHZFrrveaQZlzH2qrjmzjH6wF+LO/60P4=
+
+Name: res/layout/sec_reject_message.xml
+SHA-256-Digest: 8SOqv/+upKiolK8bT7dQmx5Vqgs58JDXmQVPl6T3u4I=
+
+Name: res/drawable-xxxhdpi-v4/call_btn_arrow_right_press.pio
+SHA-256-Digest: 9LLNAEMj8bA1csIznXKw42hcCIIU1TdHb4Gv4XUazas=
+
+Name: res/drawable-xxhdpi-v4/incall_button_multisim_internet_icon.xml
+SHA-256-Digest: HC3Qz6iX0OXFiyYXQuw9ZghL8k0IHN7oogGVpJKr1mo=
+
+Name: res/drawable-sw598dp-v13/incall_dialer_press.9.qmg
+SHA-256-Digest: Xr0Pygs3p/+SDDrQYY/TEjTlpWKSBujfGeQP31ZHfcM=
+
+Name: vertexshader.glsl
+SHA-256-Digest: PncL/iGxphOAbb+SaqqPKLi1qXkUPs+fW6uTjrWKpVg=
+
+Name: res/layout/action_select_mode.xml
+SHA-256-Digest: Yo+4XwftliI5Qey4ERiErdtRr7KCbwYGwQRdW8avLkY=
+
+Name: res/drawable/list_ic_chromecast.spr
+SHA-256-Digest: R+yKLZyeO3V4rJxJf5lwa9Co7OB+KNIJtDGjY52hZic=
+
+Name: res/drawable/showbutton_custom_action_bar_background_cancel.xml
+SHA-256-Digest: AHuT2DKsv442Z9gwNoF5GsYxM5QdZHsQbqsgwOsNekQ=
+
+Name: res/drawable-hdpi-v4/header_button_icon_cancel_disable.xml
+SHA-256-Digest: +S1QKwmzjK6IwxCa3OSQXyM5MUmrWuqRm6cSXRUQkN0=
+
+Name: res/drawable/ic_btn_am_round_more.xml
+SHA-256-Digest: Ae1Wbkrr0Zf+hcX4H5w/T8nO+F3DmyNnKuMOkpRPaFE=
+
+Name: res/drawable/list_ic_accessory_default.spr
+SHA-256-Digest: Yzppo2gWBgctLzJ00IxaBMiJxOMQIMIWzRKsKsdPUgg=
+
+Name: res/layout/ims_conf_call_participantslist_item.xml
+SHA-256-Digest: IPHke8b+P/yzYkEcDHA0sS40OBszcyuV3kILoGb2tKU=
+
+Name: res/drawable-nodpi-v4/ic_jog_home_press.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/layout/emergency_sync_edit_header.xml
+SHA-256-Digest: 40C/GQU2W+DK5Ttk/IhKied21EZiOrjN1i65vFqHTd8=
+
+Name: res/drawable/call_btn_arrow_right_bg.xml
+SHA-256-Digest: LAdOxszSbV2B6Ln4Lems3RjSxoRS2Q/rPd5rpbBqDw0=
+
+Name: res/layout/settings_glance_reply.xml
+SHA-256-Digest: Ld0R74Iiao0xTBNY3pGqEsUrSM4hY15VIhVYQUQ0EKM=
+
+Name: res/drawable-xxxhdpi-v4/edge_img_glance_3.qmg
+SHA-256-Digest: IPfB++NUhbVg8jYaaFd+YKRvZNJDjfuYYpYuXD364U8=
+
+Name: res/layout/chnlist_header.xml
+SHA-256-Digest: tyRM1OtLFLOZqLN5hLz0FoImOOTTQLUDxThJGCtpd7M=
+
+Name: res/drawable-hdpi-v4/header_button_icon_cancel_press.xml
+SHA-256-Digest: tcSwZx26WgX5b3hyfq60Vr6A+XzAzqyrj2iqHxBKlDk=
+
+Name: res/drawable-xxxhdpi-v4/call_circle_arrow_right_02.qmg
+SHA-256-Digest: vciqymS+sBWrcD1PFyZ70q2hrMvQy0uvRXl1hI8Gsgw=
+
+Name: res/drawable/call_emergency_search_button.xml
+SHA-256-Digest: LCm46hvsq5KmdbzuzO+Yy948J6e7YL/CW2vBXtlmwvQ=
+
+Name: res/drawable/phone_keypad_onehand_ic_call.pio
+SHA-256-Digest: v0xbU3RxPyTTZ/nffw2RaNq87C0PBeI6nZNE6Vsj7jU=
+
+Name: res/layout/dialpad_enhanced_onehand.xml
+SHA-256-Digest: s2HWw27oKbu7vqJHXD/Ir75wHTuxhuipv98P7SCUYxA=
+
+Name: res/anim/edge_image_glance_setting_dream.xml
+SHA-256-Digest: 1bJpaNgbEgQaJUXAjMA2LOp520u6Xz0B7ikwyCj9U9M=
+
+Name: res/drawable/emergency_ic_add.bmp
+SHA-256-Digest: Q7Vswksg6EOOT9QOWn4vlf9509duGnrZPdthBJkJSa4=
+
+Name: res/drawable/tw_sub_action_bar_background_ripple.xml
+SHA-256-Digest: CQ1Wts3SgB/Yhbex0woMDaim4wNvvh3qjw46IkJzku4=
+
+Name: res/layout/callforwarding_register_dialog.xml
+SHA-256-Digest: My5pNXhPvcQxglyko5ZqdwtBeKCIElEBLpkdVdZhvM8=
+
+Name: res/layout/mobile_data_suspended.xml
+SHA-256-Digest: JX5ocEXNmTEcr3YiZ3vq34fmz6JF4OKnV9KzDp2Yi1Y=
+
+Name: res/drawable-xxxhdpi-v4/usim_check.qmg
+SHA-256-Digest: Ba4Yze4Qezvl5LkFCJR/n8b7BFVXK/NG18JoaUE5Kn4=
+
+Name: res/drawable-xxxhdpi-v4/tw_divider_option_popup_holo_dark.9.qmg
+SHA-256-Digest: 2qM5c/4sJOBUGOiIde4QhBiIUCEgyvYhBFuTgwCJgCo=
+
+Name: res/color/callsettings_header_text.xml
+SHA-256-Digest: pifkGmIhkGhXZs9gj/0r7exlyBgiZO/Fq6bPLCJwZCo=
+
+Name: res/drawable/list_ic_tablet.spr
+SHA-256-Digest: VmLU/aKNAqZsjpGN+2s7dNYuQyeQ5/kV9skOAApWdbU=
+
+Name: res/layout/assisted_dialing_list.xml
+SHA-256-Digest: +Od1RB7DVi7SeGdHiqeCxXFgRUakzY1I1F2S03o/d1E=
+
+Name: res/drawable/list_ic_dlna_audio.spr
+SHA-256-Digest: OvFUqMLOykGfFwpvwC+ZaGyCVKjan1rpJy3nrQlWI3Q=
+
+Name: res/layout-sw600dp-tvdpi-v13/emergency_contact_empty_layout.xml
+SHA-256-Digest: Ao2SF3mIWgAbb88o/+vVNAfOxgXoFALxdNZVjVoBpkU=
+
+Name: res/layout/roaming_preference.xml
+SHA-256-Digest: FmYS/hNdp9rW4rlelS94ey/UMfI2wpxCAPZz+cXKdvA=
+
+Name: res/layout/registerussd.xml
+SHA-256-Digest: xrwfeTcgBCrshlVdIizO/+v4rXCN7FQMTHdYHC7y//o=
+
+Name: res/layout/rejectmsglist.xml
+SHA-256-Digest: gIeCdJxdb52gP7wo+gIibE++8E98ZGpIgfMMz5d+BM0=
+
+Name: res/xml/cdma_options.xml
+SHA-256-Digest: 5GNZy+5yPgA+jIsca49IL6rvrt/VwpKJCfKyDf4Ng2Y=
+
+Name: res/drawable/ic_wifi_signal_shift_4.spr
+SHA-256-Digest: iQH7AXJ3gpR/7XcDsfjVHnCvEa/W2pHMVxHVz5DJH/8=
+
+Name: res/xml/call_type_select_barring.xml
+SHA-256-Digest: UWJNiwqWSLJrVu9XkHL/NbxsHgWcfz6wyQPm/STXIng=
+
+Name: res/drawable-xxhdpi-v4/tw_btn_show_common_bg_mtrl.9.qmg
+SHA-256-Digest: Y7ABIsAQ2wuzOFFtDFsmCQh0gRX7WwSgoKS4Lgt++ZA=
+
+Name: res/layout/sec_autorejectunknown.xml
+SHA-256-Digest: s+Dz4lvabogM6RGfsrAvbXICi+BZEpQN+L36/Ec0+qE=
+
+Name: res/drawable/usim_download_05.qmg
+SHA-256-Digest: 3Q11leAczBfIALrq/lh6B1vkzAwLAu+A/vPp7bvdnOo=
+
+Name: res/drawable-xxxhdpi-v4/sim_ndp_lock_icon.qmg
+SHA-256-Digest: SIxYYhxFfk/PHt/BJKGCno0tTkl98ZWQ3U7eO0TdOPc=
+
+Name: res/drawable/ic_wifi_signal_lock_shift_1.spr
+SHA-256-Digest: DJfZ5oYI4F0g+VVadUFfR74vK2qZ6EDAsbiLNDwekuE=
+
+Name: res/layout/sim_import_list_entry.xml
+SHA-256-Digest: whXzkeaThhq5fGDeoCz29CV9RxGrJUmu0E8euVnk8Dc=
+
+Name: res/layout/multi_number_edit_screen.xml
+SHA-256-Digest: bKXf6up1c213dQz6V76HQZHR9hju0ru2Hcxk1d2RYwg=
+
+Name: res/drawable-sw800dp-xhdpi-v13/call_outgoingcall_icon.bmp
+SHA-256-Digest: UyO+Smj9wX84fEIUXSaKoNS9ywsBm8jRa/Is8dKPeKQ=
+
+Name: res/layout/reject_call_with_msg_icon_mode_edit.xml
+SHA-256-Digest: hFqT9pEf01srJ/TBIAg08msb4NRD8SZzm0FQmm01v0s=
+
+Name: res/drawable/tw_divider_option_popup_holo_dark.9.qmg
+SHA-256-Digest: 2qM5c/4sJOBUGOiIde4QhBiIUCEgyvYhBFuTgwCJgCo=
+
+Name: assets/use_guideLGT.txt
+SHA-256-Digest: ryY+tEbpMWrNqX0TdkenKy8yoSP8dPRmoiTXUtI8+rk=
+
+Name: res/drawable-xxxhdpi-v4/header_button_icon_check_disable.xml
+SHA-256-Digest: vj1DpW+/ZRQVF0Q1cBGmtlI3+HncR2rVflveJRHp4LY=
+
+Name: res/xml/carrier_select_disabled_multi_imsi.xml
+SHA-256-Digest: LDDISED+GIRnv99xav+Ri+ooiOBLi5iuH2ikXODBMJE=
+
+Name: res/layout/dialpad_key_onehand.xml
+SHA-256-Digest: ODl9ZsjhqnNFBQCJ2pHd1Y00NdgXrBsiHATH0/APBmE=
+
+Name: res/layout-land/dialpad_key_pound.xml
+SHA-256-Digest: 9Cljvnd1dUVc7dhGVB4kaYj4ZIgZ+nZi7N/vlOs1SVU=
+
+Name: res/layout/roaming_notification_expand.xml
+SHA-256-Digest: 3YXgkvgYiDXnnbK2W6vZSrEsM+Z+cZZGIcaKc6lRYDs=
+
+Name: res/drawable-xxhdpi-v4/header_button_icon_check_press.xml
+SHA-256-Digest: IPMLtEdxwaWOtrgdb85EkGkeItXN/6y1WbgUGKhP20g=
+
+Name: res/drawable/player_icon_pause_selector.spr
+SHA-256-Digest: mtv1OsjU2ft0DyJmZIhdLJIgsQTJq7cnIZ+4JU4N9to=
+
+Name: res/anim/progress_indeterminate_rotation_material.xml
+SHA-256-Digest: Tk96o3uWbp9DPuka6RjEu2DWJwiTPmpEoSVoRCS29wg=
+
+Name: res/layout/roaming_autodial_setting.xml
+SHA-256-Digest: MaE6ZJIaXg4sRcIodqpaasstwVJZy7OlPK3m2z/+6Mo=
+
+Name: res/layout-sw800dp-mdpi-v13/dialpad_additional_buttons_sec.xml
+SHA-256-Digest: FBLUcZrrDf1IV0uM6sRNLePrrC1k7mf7Eala9EQxSwE=
+
+Name: res/drawable-hdpi-v4/header_button_icon_check_disable.xml
+SHA-256-Digest: vj1DpW+/ZRQVF0Q1cBGmtlI3+HncR2rVflveJRHp4LY=
+
+Name: res/drawable/unlock_right_small.xml
+SHA-256-Digest: T+u45PXAeXAtkaeochYG7vED6qmFCsUaRjA5lurC4lM=
+
+Name: res/layout/nitzalert.xml
+SHA-256-Digest: 0ROxqE96c0lLXTchPy8iwysPHHocfp2825QxC9/sfhk=
+
+Name: res/xml/kt_callforwarding.xml
+SHA-256-Digest: bxw+YHuCfhvAX5RpHasHr0kPX4CcUftyLbj31554rrA=
+
+Name: res/drawable-xxhdpi-v4/wifi_calling_global_ic_help.spr
+SHA-256-Digest: r5ndSa3F5SZHztzLhbltjyyNqugl3eH7CnqIHqGNlTo=
+
+Name: res/drawable-xxxhdpi-v4/stat_sys_phone_call_forward_heart.pio
+SHA-256-Digest: 6NsLIHiU2zqEdWWwcCLkPiq9pQqpQhp0p4jEeJasslc=
+
+Name: res/layout-sw360dp-land-xhdpi-v13/emergency_dialer.xml
+SHA-256-Digest: Y/nGRHJuTSjpmJ8Belv3iWbbpq2oPEO4JYe3w9JijQI=
+
+Name: res/xml/sec_call_feature_setting.xml
+SHA-256-Digest: WGdhtYmU9+ZHeY2n/Nr5xpKZ1P08OnTDi5QYeCnbga4=
+
+Name: res/layout/usage_view.xml
+SHA-256-Digest: uqwcTPb0Sfkw3CZPOwR6d3WjaHqJrrrw0SBAmU82/Ug=
+
+Name: res/xml/kt_inbox.xml
+SHA-256-Digest: Wk+wADFfvI1ECpLfmPpPRgWse4bAxRZ5zJN+hlTvgcg=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher_settings.qmg
+SHA-256-Digest: doT00tUvZJDMI1IFw9MOMA+gDcfV+e/wr2kjAMAwLzw=
+
+Name: res/drawable/cancel_button_background.xml
+SHA-256-Digest: 7KmJt+kHbyOliDkTtsa7f3cAFCJnIFa1eG9QHn8BII8=
+
+Name: res/drawable/call_dial_call_btn_bg_inset.xml
+SHA-256-Digest: AgsJsk/MnrzIFgj2hOIQ6CpoOXKQhAjq0vwqbQl9N40=
+
+Name: res/xml/call_setting_headers.xml
+SHA-256-Digest: plVI4HYJX5giWa5qNCigRG7qzUA29R7CFcye6oXi67c=
+
+Name: res/xml/eng_guidance_list.xml
+SHA-256-Digest: x8eLSMZ1gW03M3EzQMuzAgkYOIv+kD3Efgt7kth4bks=
+
+Name: res/layout/fake_phone_activity.xml
+SHA-256-Digest: cPjBNapOGT3lGfXbWOuefrGMCVG8gNFI+5Wuo9QANp4=
+
+Name: res/layout/sec_blacklist_item.xml
+SHA-256-Digest: Bxi4yKbHyxv/MwMwojmw9QtKSSBQMle1Y2EUjmqWsqs=
+
+Name: res/xml/remote_access_list.xml
+SHA-256-Digest: vPeWIb80mihAXSfMzK2UzyRmYrD6OsCUCD2ZuY0M85M=
+
+Name: res/layout/callforwarding_activate_dialog.xml
+SHA-256-Digest: 52SBgNktCUVlKLQ6XDvI7ODtf110YLNDoU2NsST+sQk=
+
+Name: res/layout-land/listview_empty.xml
+SHA-256-Digest: pVkE5lPFmUSrsa//dEr/hF0+JUPG4HyT4AZFkR6iCzo=
+
+Name: res/layout/callbarring_pwd_dialog.xml
+SHA-256-Digest: u2fXBkr8A/2LdW0fhgDJ1faVBV0Sqdm+gdISB1LdVHU=
+
+Name: res/layout/auto_dialing_guide.xml
+SHA-256-Digest: 722K211qvDukQtxSxVVdEFxViDiemkgSwjN3n/63jzs=
+
+Name: res/drawable-xxxhdpi-v4/stat_sys_phone_call_forward_internet.pio
+SHA-256-Digest: O78oLsX7VOnoh9o5mWvFz5ZzPQ7/0FcH6njoyp56rOs=
+
+Name: res/layout/dialpad_key_one.xml
+SHA-256-Digest: ltnSg8bjl2MM8e6gByriURJ8CnheZ/HVv1XTQH6VYcg=
+
+Name: res/drawable-sw800dp-xhdpi-v13/call_dial_call_btn_bg.xml
+SHA-256-Digest: AEDJ6lYINNadhObtKAT5XerPMi3+2gqsYv9Hh4MkJFc=
+
+Name: res/layout/sec_deleteprefixlist.xml
+SHA-256-Digest: OQPCkX6Z9xZyEgLfVXbkAfVBDjih8z5aWqZrRD6wVdk=
+
+Name: res/drawable/incall_button_multisim_sms_icon.xml
+SHA-256-Digest: 797AVllKXPyjnwgzXLMO3kev0ZbXHMNmSO46VGrQe8k=
+
+Name: res/layout/phone_account_layout.xml
+SHA-256-Digest: EbHeB5IqHtgbR0GCtgmtBPfqN5ydiR4pb6ytf9TzOY4=
+
+Name: res/xml/voicemail_duos_setting.xml
+SHA-256-Digest: ar1plWNMxMTkttSdW1gr7iHX0zHlHCK8WOGeRCUmx0w=
+
+Name: res/drawable/list_ic_wearable.spr
+SHA-256-Digest: 6yNrtUtMOAD3dG4Fi3eUZJ03lei2ikAHhgeT/rq2Kts=
+
+Name: res/layout-sw512dp-xhdpi-v13/dialpad.xml
+SHA-256-Digest: YNNJCfmrfGB7WYzHzvwMkPaVeLDk83b/ZfRYfZRv06U=
+
+Name: res/layout/preferred_networks_dialog.xml
+SHA-256-Digest: 3jjcZo23BH0dAQyPiQK5VoCFSI5FqSB458lAEJFG/JY=
+
+Name: res/drawable-sw800dp-xhdpi-v13/emergency_dialer_bg.xml
+SHA-256-Digest: DGhwUJfnZH8q4ts7m2r3z3BhcTiAA9UkuxexVIMu82o=
+
+Name: res/drawable/ic_wifi_signal_lock_1.spr
+SHA-256-Digest: iSvA7CpYDOUk3QyOv+O37uHC1pKhKUIKID5XPtvfewA=
+
+Name: res/layout-mdpi-v4/usim_download.xml
+SHA-256-Digest: wdX3FfnpCtl6Cw23tjBRoSaNcB8QJHqvgQzahDqc3B4=
+
+Name: res/drawable/tw_list_icon_minus.xml
+SHA-256-Digest: RcYYpVbhsVTuDIXZzbXcm6Er9o5eBWKdkHYmLibM9No=
+
+Name: res/drawable-xhdpi-v4/header_button_icon_check_press.xml
+SHA-256-Digest: IPMLtEdxwaWOtrgdb85EkGkeItXN/6y1WbgUGKhP20g=
+
+Name: res/drawable/invalid_resource.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/drawable-xxxhdpi-v4/edge_img_glance_2.qmg
+SHA-256-Digest: 8eSbeOaWJL60HRDiW76PJwnYOpsKsEFghYvdPgZyHt0=
+
+Name: res/drawable/usim_check.qmg
+SHA-256-Digest: wIhQxolQP2V6EsbXoXhtlprmUSa7g8ZLrXXMwNJlBGg=
+
+Name: res/drawable/list_ic_accessphonebook.spr
+SHA-256-Digest: mfnOD/XG6pGHT7YnRScVwzssdyG9O0OY7rCP8UuFOQ0=
+
+Name: res/drawable/tw_list_icon_circle_mtrl.spr
+SHA-256-Digest: OLegIT1w47oornHs34nybTH/KbSsRBC3XmGUFY1rPk8=
+
+Name: res/layout/list_header_create.xml
+SHA-256-Digest: 4pvg9a42ciOeGhjZcp0Vw8kANJue3RXZg68lokrUdVk=
+
+Name: assets/eri.xml
+SHA-256-Digest: CDBR0lSMezb49RDRjq7Wo5lZj+NEhqRs5QII1LwlkbQ=
+
+Name: res/drawable/ic_info.xml
+SHA-256-Digest: AKop4ogXf6fMBmaQQfm58ouhFqIADvTFDc2lc294JTM=
+
+Name: res/drawable-xxxhdpi-v4/call_accept_arrow_01.pio
+SHA-256-Digest: 1+Lk7wPbQFqJ5e16nE0r0mqsw6mrEw1LY46n64ZYuUY=
+
+Name: res/layout/wifi_call_activity.xml
+SHA-256-Digest: ez7sM0HNM+YCK4Mlh+/AwQ3OMOf2rqKU/bv+KqKrGr8=
+
+Name: res/drawable/tw_text_action_btn_background.xml
+SHA-256-Digest: CA9LtbhvQxUU0HzjwUFvXjCe7h+m36wTg5AtXKjlLu0=
+
+Name: res/raw/touch.ogg
+SHA-256-Digest: fIx4t2bEZIfS0IYcYqTLRUtTmol6f/o0VmVKF6bMl4k=
+
+Name: res/layout/flatrate_alertactivity.xml
+SHA-256-Digest: oPbgQsTOfAg232OaSslSgKJn474SuYh85FB2AjId2UA=
+
+Name: res/drawable/usim_download_06.qmg
+SHA-256-Digest: iEPy+rEHNqSkY774kC3TIi0IrmN3O0KzO4PvdgdYeXE=
+
+Name: res/xml/sec_sip_settings_category.xml
+SHA-256-Digest: HsTki+xaHem1bQFczKrm6NyDGdNFmLyJH3XuWEpIFLI=
+
+Name: res/layout-land/dialpad_additional_buttons_sec.xml
+SHA-256-Digest: ve2uKfFXaqx+Qrnu9aH9lqTpNtrWNmBWnc+WEa8ZhuA=
+
+Name: res/drawable-xxxhdpi-v4/edge_img_glance_1.qmg
+SHA-256-Digest: KCie5MhQKnmfZ168k2afE6DiqKgoIk6dOwp1V616nic=
+
+Name: res/xml/call_sound_pref.xml
+SHA-256-Digest: 4GaxwRTNwsgofRLM9l9JbWH8aGG/9y7HvbDQoXE+mFs=
+
+Name: res/xml/call_forwarding.xml
+SHA-256-Digest: 5GV470z3xuA7TvvY2krsA271F86pSFRGEE7ZprGJaGo=
+
+Name: res/layout/callforwarding_guidance_dialog.xml
+SHA-256-Digest: LqAg/NNG8KtJStwtFOsJuatL0zHkjOvm+/ySp1sIpmM=
+
+Name: res/drawable/popup_speaker_mute.spr
+SHA-256-Digest: yuzAjREsGxK7xvoxZP52tClMrIVNfadXK542sdVdgtM=
+
+Name: res/xml/barring_incomming_call_roaming.xml
+SHA-256-Digest: 8F01n0LBh0rLH/lKwWRNPd07vh6gZ42CoHaVdKk0VFE=
+
+Name: res/drawable/ic_wifi_signal_lock_shift_0.spr
+SHA-256-Digest: mA5kE4yZB/VyiCIAsovXcFpNCuJ/EDsMgZOgADz+VhY=
+
+Name: res/layout-sw800dp-mdpi-v13/dialpad.xml
+SHA-256-Digest: rSGU53lZEqOuTpWeGlrnYbRPKqLTJNzUZaERX1+3M/k=
+
+Name: res/drawable-xxxhdpi-v4/preset_defaultimage.webp
+SHA-256-Digest: VUnP6EviSA0lRgNhHStCjkjuOf7JG3wKThnmCimdb5w=
+
+Name: res/layout/global_data_roaming_list_item.xml
+SHA-256-Digest: AS4HZOnmsBIjhDQcgBU89gQAuO4dQcCtaHMoW9K2BYA=
+
+Name: res/layout/recording_playback_easy.xml
+SHA-256-Digest: qW96ool56S6qheqWc85g6pDG8cvr7m1xO1rlBbvp7aQ=
+
+Name: res/drawable/list_divider.xml
+SHA-256-Digest: MV8hPfT4T7bAEk43Ewx/aUFIX7c6DgvP1MDRYVlpotE=
+
+Name: res/xml/call_waiting.xml
+SHA-256-Digest: KeRuzjCqrG/0oQ/xLrJdysJKvOKu+lS8g0ANJkEdyLY=
+
+Name: res/drawable/ic_wifi_signal_shift_3.spr
+SHA-256-Digest: O+YA7g8zkxTDacTccXBpD6/q5h3W9GQOU9aYh9yOIfE=
+
+Name: res/anim/edge_image_glance_setting.xml
+SHA-256-Digest: ClSRo6ZBRJ7o7Rjj9W4ZGR1Tyj7Ol7tpyQzxoTRcQks=
+
+Name: res/layout/sec_prefixlist_item.xml
+SHA-256-Digest: yHROCJaYF1zjwkQCbPE2aBVNIKFdu+nl3k8OOOAfi2k=
+
+Name: res/drawable/custom_search_box.xml
+SHA-256-Digest: 2UXy6NCEbfVOejvG7UBuSoG7uq6Cj0cXNkAedR8LsRw=
+
+Name: res/drawable-xxhdpi-v4/sim_icon_home_v2.spr
+SHA-256-Digest: OmzdHUPrC9QE2YDXKXCNZhrbxYX+KRrn5MqyNI0fm98=
+
+Name: res/drawable-xxxhdpi-v4/tw_list_divider_holo_detail.9.qmg
+SHA-256-Digest: 6XCMflWB8IoU2kTT+TgTs+Xhp+nw8WagemnlQYUi8cw=
+
+Name: res/xml/us_cdma_call_forwarding.xml
+SHA-256-Digest: wInl471TcXIo+SjgnOHDSPQJMzLeVTpYTGVYkGpXG0Q=
+
+Name: res/drawable-xxhdpi-v4/sim_icon_internet_v2.spr
+SHA-256-Digest: Q8y9aXwOiqDAG9MzLzkN9jRnDSYK5tU6wBWkYXfuhIA=
+
+Name: res/drawable-xxxhdpi-v4/action_bar_bg_image.xml
+SHA-256-Digest: xQ+jWJebS5f7tuobHngVSrm9OAYXhOFRctdL4o2ACvc=
+
+Name: res/drawable-xxxhdpi-v4/ic_add_24dp.pio
+SHA-256-Digest: jFPbRSzyfN1l16dOKbNj12qqmXYL8sp0ackBL8gJHbg=
+
+Name: res/drawable-ldrtl-xxhdpi-v4/phone_keypad_onehand_ic_emergency_i
+ nfo.spr
+SHA-256-Digest: 3bIX+3r3Q9OmqZv3wzqsjjdVnDcNSgkaire4Aq4dV6M=
+
+Name: res/drawable/list_ic_washer.spr
+SHA-256-Digest: FqjJ+EXubmnr51O1Q8PAwsJ8ItzjZlONwjoW1Mcaj7c=
+
+Name: res/drawable/tw_list_focused.9.qmg
+SHA-256-Digest: infDWfgcHO1C89XD/t/D+O9wRyX89PIm6B2AMHHIYOY=
+
+Name: res/layout/pref_dialog_editphonenumber_kddi.xml
+SHA-256-Digest: vraPiwW5iOqevGSFPd1dJLtWLYaM+38CA9AxdFtnmqo=
+
+Name: res/xml/sip_setting.xml
+SHA-256-Digest: OkziOowBQyPRs+9BPrghg7rv8qLjTxiHTlE/MScGf2o=
+
+Name: res/drawable-xxxhdpi-v4/emergency_contact_item_bg.xml
+SHA-256-Digest: rEkI68vkMPw+p6ZNAGkmYDC8S+wfwXYHBa/JY52DRzQ=
+
+Name: res/layout/wifi_call_help.xml
+SHA-256-Digest: caK/GJt14limknL5zkriuptYTk+DV2Fn4i6ETNPx6os=
+
+Name: res/drawable/list_ic_general_device.spr
+SHA-256-Digest: Csu1crdDtW31mfVHwkn5Rw5ipYpNzT7H1idCgLLoFrw=
+
+Name: res/layout/emergency_contact_item.xml
+SHA-256-Digest: WiAZmhLAILYWS3t7LZ/tELLapIvy/irjGa55klnyY7E=
+
+Name: res/layout/list_header_chn_tablet.xml
+SHA-256-Digest: TvBxKjZTvMS6pNNM8bZW70GE4hROw7zOv5EK4/+c9mM=
+
+Name: res/drawable/incall_button_multisim_phone_icon.xml
+SHA-256-Digest: nFQggOL60G6YoUM1pkWTg/Y51ATk/ICbQkixzdM74iQ=
+
+Name: res/xml/call_lock_settings.xml
+SHA-256-Digest: elqQjTl+7iYe/QMj8bC8l+0Scp0Y41w3HAUAfmpLXzY=
+
+Name: res/layout/emergency_contact_empty_layout.xml
+SHA-256-Digest: yECb+xKvF80mBr543+KJj5e7Ju6X89mbBt9fRqNONdE=
+
+Name: res/xml/callalert.xml
+SHA-256-Digest: GCB1hQ3ZzZ1JMO/fEzJ9C6xuLcay1os9ES7TIcZQ3qk=
+
+Name: res/layout/dsa_result_dialog_success.xml
+SHA-256-Digest: KQoRQWcbRgAHaBVVABXKLiPUB2RzWRF+Bi3H/S2TAnc=
+
+Name: res/layout/usim_download.xml
+SHA-256-Digest: o2yaHWbdbYsBs145vW/0/aN5yC5QY2Ta4hBiV0b9TPs=
+
+Name: res/layout-sw600dp-tvdpi-v13/emergency_sync_contact_empty_item.x
+ ml
+SHA-256-Digest: gN1dGJhkdPeIRCAnspDBg1iui+7mIZMpdwUKtQrcPbQ=
+
+Name: res/drawable-hdpi-v4/header_button_icon_plus_press.xml
+SHA-256-Digest: pYt2Y4VNbyBXAyNwnyRWryORTIDJWOGQLmLT6xHcauk=
+
+Name: res/drawable/list_ic_headset.spr
+SHA-256-Digest: rny05i7UZGgMXWuSc4DFxpv0MKev3SAwS6ZPUogzzE0=
+
+Name: res/drawable/phone_keypad_onehand_ic_arrow_left.spr
+SHA-256-Digest: g5gnj+IV+ag/s6tqs4pv8ZoXee3CBltWHy7Yockz9z4=
+
+Name: res/layout/blocking_nuisance_number.xml
+SHA-256-Digest: 5wMe4ETyRxVerkwFqlbb2BZRRoSbLpYybGYrq8WQLvE=
+
+Name: res/layout-sw600dp-land-tvdpi-v13/emergency_dialer.xml
+SHA-256-Digest: YH1+0U580BBMaBwyNXh7X7HFarmcwH3jyZo32XAawCU=
+
+Name: res/layout/instant_lettering.xml
+SHA-256-Digest: Ov8zFdxcwT5st7qcnldMmeH4BhpDwS8GPf3lckwxLCs=
+
+Name: res/xml/sip_advanced_edit.xml
+SHA-256-Digest: j8JQfjTkkABOo7Ogs8tu0mtZeIbc4Ja+RwnEGoZEK3U=
+
+Name: res/drawable-xxxhdpi-v4/call_circle_arrow_right_04.qmg
+SHA-256-Digest: ncmV5jFH0OFgjy4mEsH+WNE5nt5wy+mhFpSD8hzi89c=
+
+Name: res/drawable-mdpi-v4/no_item_l.qmg
+SHA-256-Digest: k+LybOxkkTV3TUeFTpYO0hHSARBUJZ+NsIzFNzN9qjU=
+
+Name: res/xml/callerid_req_list.xml
+SHA-256-Digest: iuKb8DRGBbKF9IwKuPi+hrXI9Y/VKcEH2c7yHY0x4oo=
+
+Name: res/xml/carrier_select_kor.xml
+SHA-256-Digest: XIAlE4JuYyjegt59S8q+H+AFIjJXKsxKJLzq/z5ksxY=
+
+Name: res/layout/reject_call_with_msg_icon_mode_item.xml
+SHA-256-Digest: Qy2qNoYe8sQBDJ9jCrhk/9Wh8SwPTcol4k0obHJ+148=
+
+Name: res/drawable-sw600dp-tvdpi-v13/call_dial_call_btn_bg.xml
+SHA-256-Digest: AEDJ6lYINNadhObtKAT5XerPMi3+2gqsYv9Hh4MkJFc=
+
+Name: res/drawable/list_ic_cooktop.spr
+SHA-256-Digest: 7IahnrEGg/FVhDNaPnW213KWdjsYQrv8yRoCAC7LLjI=
+
+Name: res/drawable/popup_speaker.spr
+SHA-256-Digest: Zoy+/R+nQW/6QuKWvah9Waz1SUrZOghkWWoQ/suCUBs=
+
+Name: res/xml/skt_hd_voice_setting.xml
+SHA-256-Digest: 9iobNi+VPzeLKGkWvOZMLvkYCYwqdULyxMEsHDGJVTE=
+
+Name: res/drawable/list_ic_refrigerator.spr
+SHA-256-Digest: LCdo0oQJ6R9rDbnpib5QjsJySn1Il7lhbPIDzDgLYRM=
+
+Name: res/layout-sw360dp-hdpi-v13/emergency_dialer.xml
+SHA-256-Digest: AFzYxDRm4fw6Xegyt0kNb4IQ/FPkZ6/YXwLP04fhCQc=
+
+Name: res/drawable/incall_button_multisim_home_icon.xml
+SHA-256-Digest: 85xgu2L/ek8D1Iblrch6zt9RGhOGYbUPz3icZLRwcxE=
+
+Name: res/drawable/ic_wifi_signal_lock_0.spr
+SHA-256-Digest: 9GRQt9Tvs0nJ1Gr8saufe4pEtHsomeIDTJomin5+87Q=
+
+Name: res/layout/registerussd_alertdialog.xml
+SHA-256-Digest: h6U6lT4fF+DGLTu/LCyTnlUCODMUUbsnYcdlMaxCtL4=
+
+Name: res/xml/phone_number_locator.xml
+SHA-256-Digest: SNsZr6NiuLoMMIDlPTKg+1b6qHC2NAYFb4nsEZ+w7pA=
+
+Name: res/drawable-xxxhdpi-v4/call_dial_btn_call_gsm.pio
+SHA-256-Digest: zyNs0tlG7mocEz40jkh7DFhQm4VVhH1HlB1d7kVaG+o=
+
+Name: res/drawable/list_ic_game_device.spr
+SHA-256-Digest: CdGWOqE0wHNXzNY84RKRP3f+bKs3QsFHeAVX0Pc7Ih8=
+
+Name: res/drawable/roaming_notification_background.xml
+SHA-256-Digest: e2bdyTOONKZaqMPiQpDufKBnzFs7edUlp1FaZrci2Nc=
+
+Name: res/xml/network_setting_kor.xml
+SHA-256-Digest: uhOl8ASIChEMxt+FnwV+2ahmpP0vEW+UwVMXVspksTw=
+
+Name: res/layout/list_header_selection_all.xml
+SHA-256-Digest: Obq1BKCqgZjw7RJITr3ya0BFU2YnhKYn4uYzSKEqxgA=
+
+Name: res/layout/usage_side_label.xml
+SHA-256-Digest: Tib7cyCGI1zHn/VDR7zEvCtUr9ceDFiJXz1QuAR2mco=
+
+Name: res/layout/advanced_call_switch.xml
+SHA-256-Digest: BO3lZ2HbiOBQj7Url2O9GWtLoTEshi6IoKGmhrYFCao=
+
+Name: res/xml/visual_call_setting.xml
+SHA-256-Digest: nl4oXjivHR1DERzaD2Ulwsaw8AlgdSeQwFMWfTMP2hg=
+
+Name: res/drawable-sw598dp-v13/ic_notify_blocking_mode_call.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/drawable-xxhdpi-v4/incall_button_multisim_sms_icon.xml
+SHA-256-Digest: 797AVllKXPyjnwgzXLMO3kev0ZbXHMNmSO46VGrQe8k=
+
+Name: res/layout/record_calls_automatically_activity.xml
+SHA-256-Digest: luwwlaeRrxsdW+2z/rhj5/aZWF8mAVT1Db5jUXlk30U=
+
+Name: res/layout/edit_fdn_contact_screen.xml
+SHA-256-Digest: BgvoBNFtuKW+f8rU1RvRDVFaXB25AxpiTQ8B3/P9yZY=
+
+Name: res/raw/guidance_jpn.ogg
+SHA-256-Digest: lvhgkRhbn1Wjs46RHWVZD2/TDzNxml2bczinXfekx8Q=
+
+Name: res/drawable-xxxhdpi-v4/call_circle_reject_01.qmg
+SHA-256-Digest: Ab8ulTd5QzjOmljl5ZMRQiR+r55t919WaTqLAP3Sk+8=
+
+Name: assets/eri_310120.xml
+SHA-256-Digest: k1qXTG0HSYJVpgdAkplKWnyWlTyePgIsyOkYzqFfPhA=
+
+Name: res/drawable-xxxhdpi-v4/stat_sys_phone_call_forward_home.pio
+SHA-256-Digest: pJuZ1I0IkIfvX0dtKFGbWob5CMIDn4Xf0cFi0cjR/RE=
+
+Name: res/xml/nuisance_call_blocking_list.xml
+SHA-256-Digest: UTgNg2ECNPmXXNPwAykFHL9Su/j6bcgImWQTMGEJIEI=
+
+Name: res/drawable/call_dial_btn_call_cdma.qmg
+SHA-256-Digest: lt9DidZaXNcasHCsG/fDErZn/8XsvA8oF3jq/6Mds9c=
+
+Name: res/drawable/emergency_dialpad_button_bg_rounded_rectangle_shape
+ .xml
+SHA-256-Digest: oPoTdYKZVPAJDax62QCbTxSoff86Ti/rlxtjtGYPiGQ=
+
+Name: res/layout/roaming_network_list_help.xml
+SHA-256-Digest: b/fsTzAojuwyakBZsGTkB/dbS4nYXBvo/rb1CfYOu1w=
+
+Name: res/layout/block_unknown_item.xml
+SHA-256-Digest: Nr6Plav4wbyBKpCIDF62GeSJCmc0cPn3Gt15LI9rswA=
+
+Name: res/layout/usage_bottom_label.xml
+SHA-256-Digest: GbIzP1RDabEq8EwB7VeESwG43pieeNxDnBWdatgNz60=
+
+Name: res/xml/international_dialing_assist.xml
+SHA-256-Digest: 30kai7qIOglYF1htznXG69612JvE25StrFt/+ITGgNE=
+
+Name: res/xml/videocallbarring_list.xml
+SHA-256-Digest: GoVQuu1ASQPRMQ8vOgoJk2/O9zg1Tf1lF027dCngxLM=
+
+Name: assets/use_guideKT.txt
+SHA-256-Digest: oxAECZouET35O9BThRzPzMPU2bdpnuxxFwQuH27uuXc=
+
+Name: res/drawable-xxxhdpi-v4/wifi_calling_noti_ic.pio
+SHA-256-Digest: Xyn0jpD5mOvl30ClpLO4nciKxZvPYA9KuaR9NQfjCdA=
+
+Name: res/drawable/ic_wifi_signal_shift_2.spr
+SHA-256-Digest: 66Zr4KyADPDU+307TgUSoPYl33NRRzUr6duujwKCEKk=
+
+Name: res/layout/dialpad_additional_buttons_sec_onehand.xml
+SHA-256-Digest: e0VM+JguPN1suTgK1mMIQnso8bzIgKlnXUrzeaq0Wzk=
+
+Name: res/drawable-xxxhdpi-v4/tw_btn_icon_previous_mtrl.pio
+SHA-256-Digest: 8jLA5SiQ5a7SMmcF8lwoxwRPOeVatcJlIDKMRTqGwCo=
+
+Name: res/drawable/reject_message_tiles_icon_add_press.pio
+SHA-256-Digest: +9sT30C0m+ou0qxwMEJCmjSI5LuBJyJsiiIa0Furkgw=
+
+Name: res/xml/gsm_umts_options.xml
+SHA-256-Digest: UnmEx/OtXT3axv1DsZm/s5qbdXp69tUvWgVa2hq83kY=
+
+Name: res/drawable-xxxhdpi-v4/emergency_call_btn_normal.9.qmg
+SHA-256-Digest: 151G5Fc0M8MxEkKqF76bb7F/JWXGJEuIMI2FPRcsz+s=
+
+Name: res/drawable-xxxhdpi-v4/stat_sys_phone_call_forward.pio
+SHA-256-Digest: YOfsMh5E2q+Vckq5nTkM65S99on1BUbhkcyZWdQnS7I=
+
+Name: res/drawable/actionbar_ic_ab_back.xml
+SHA-256-Digest: uuX0Md4IQYHmiWI3IBNe+x6RBxdZejVvyAsryWkcGS8=
+
+Name: res/layout/sec_reject_message_list.xml
+SHA-256-Digest: TND08pGh/KgHALnXN6sCQeMlHVJNvN/jPQAM0d5uKpE=
+
+Name: res/drawable/ic_wifi_signal_lock_2.spr
+SHA-256-Digest: iolDtf+5jSXXkBpHgReCThZwDLv/wxBQXAhXohwtqfA=
+
+Name: res/drawable/emergency_dialer_enhanced_bottom_btn_ripple_bg.xml
+SHA-256-Digest: JPzLz5evLmUBMVU0cKPEnCCsiervWJJ+dGzc3gp6U10=
+
+Name: res/drawable-xxxhdpi-v4/ic_arrow_back_black_24dp.pio
+SHA-256-Digest: 8bohhsa3pBB8ulElRr4FpCE1Mg5b1t9jK+jsVOnanOo=
+
+Name: res/xml/phone_account_settings.xml
+SHA-256-Digest: sUog5x/UCTnV7uWDLZCF2E522DjodlFbs/t+YnBMydg=
+
+Name: res/layout/dsa_common_edit_item_sim1.xml
+SHA-256-Digest: r4tXUIEIE19h+OH6z9jdR2T+PPrDOJmvPzJ4ALraDPo=
+
+Name: res/layout/assisted_dialing_current_country_activity.xml
+SHA-256-Digest: /KeABPKCd/J8om3hcab6vRXFo+5VgyKX0fRaxMj9OEU=
+
+Name: res/drawable/st_ic_mobile_networks.spr
+SHA-256-Digest: cIoR4iGwgk1uqITz3hE1i9wcrHKqouiwQlvfGGChIl0=
+
+Name: res/drawable/tw_list_icon_create_mtrl.spr
+SHA-256-Digest: Bx8xoQhyi/vTMJaWe6lqYatjmK/VZW7SHsGsp0EjXnA=
+
+Name: res/drawable-xxxhdpi-v4/quick_indi_memo_memory_full.pio
+SHA-256-Digest: wqu38bMrXNF29j3z9GrGLE04KU6rvIZbfzHOG71vmFE=
+
+Name: res/drawable/call_sim_icon_home.spr
+SHA-256-Digest: CYkVazFh6dBdREo36li9w5JMEwB2L5P76DgAEJDLFos=
+
+Name: res/raw/hold_key_call_record.ogg
+SHA-256-Digest: 7TETJzcGjDzPLzFU1PV4qsomwhmFdV/PHmv0Is9OQJU=
+
+Name: res/drawable-xxxhdpi-v4/tw_btn_icon_next_mtrl.pio
+SHA-256-Digest: 2qKPO8VszEg/gjT7vLUviFi5M5CLnOeBRPLh3qP5rhI=
+
+Name: res/drawable-xxxhdpi-v4/call_sim_icon_heart_dim.pio
+SHA-256-Digest: lZeOazLWrRHp7CXNnjnRgsoBqyp/050W0jzambBRN1w=
+
+Name: res/layout-sw800dp-xhdpi-v13/dialpad_view.xml
+SHA-256-Digest: 5z0zZ3Y4UmnARjgRWzkIrfqIWPKuA7Gz0rqZMmAosmU=
+
+Name: res/layout/spam_call_activity_menu.xml
+SHA-256-Digest: 5c+e86uWCyAFZnadlBK8JNGBw/eYCVT8QRK6KensRI4=
+
+Name: res/layout/adn_list.xml
+SHA-256-Digest: oNO+fYaVlCLj+vvLr0BrQFHsTuyI3ls5dpgUPxGArnk=
+
+Name: resources.arsc
+SHA-256-Digest: 8tjWQGxxsgTZbfx39z4DpQs9c2PdAVj68zPYrkFnCBI=
+
+Name: res/drawable/action_bar_icon_add.bmp
+SHA-256-Digest: OYZ64MWoQOFp50Z1lw/0vxJEldGDfqrPaBBEz3ao2J0=
+
+Name: res/drawable/list_ic_tv.spr
+SHA-256-Digest: HOhGG2gNG+aGWHfxJQRTnaC6Bxr3WbXTQ782iw0OaEs=
+
+Name: res/drawable-xxxhdpi-v4/ic_notify_blocking_mode_call.pio
+SHA-256-Digest: 06JacTD5O5uwrSu5obLwGdf18eQsVF0IWQDQyO0I1TQ=
+
+Name: res/layout/kddi_callpreventionitem.xml
+SHA-256-Digest: GDD1K1/A5FuMxCj19kFnFLcqoYZxlfZI1UMQWQ5MZDw=
+
+Name: res/xml/record_calls_menu.xml
+SHA-256-Digest: BKRZ/0ChTQjJf3lLtndNkXEK9rnmJN5dRFhkhEalAbQ=
+
+Name: res/drawable-xxxhdpi-v4/ic_multi_sim.pio
+SHA-256-Digest: MF3DPUqXY9/i09k/9xtCg5jEhoTTb6T8Mw4XlMu1Txc=
+
+Name: res/drawable/btn_dialpad_key.xml
+SHA-256-Digest: jtusBAPRq9Uw7lI5cVc9TDBqejA/AJ8Lfzvv66tS6ds=
+
+Name: res/drawable-xxhdpi-v4/ic_jog_exit_press.bmp
+SHA-256-Digest: TSNQASBSAls9flZ4xi6h2QwQqZWtb6hIDVR+2E97KR8=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher_phone.qmg
+SHA-256-Digest: 2KIjn/l14Tci+dBCtmARZaAiPx9H5EDRPBO++tG+mo0=
+
+Name: res/layout-sw600dp-tvdpi-v13/dialpad_additional_buttons_sec.xml
+SHA-256-Digest: +OdSa6Abqk+wY451Z1IIznJl7qLKqdjzcOa/bEBm4Xw=
+
+Name: res/layout/allow_data_access.xml
+SHA-256-Digest: 77P3EAncrhSinU/U3H5LagmTv/OT9cDcMkWb7y5pNsQ=
+
+Name: res/drawable-xxhdpi-v4/header_button_icon_cancel_disable.xml
+SHA-256-Digest: +S1QKwmzjK6IwxCa3OSQXyM5MUmrWuqRm6cSXRUQkN0=
+
+Name: res/xml/roaming.xml
+SHA-256-Digest: ez2QCwBLVATKaF+ikEgwiC2oO6gKfnLIBNi60FGJ+a8=
+
+Name: res/drawable-sw600dp-tvdpi-v13/emergency_dialpad_button_bg.xml
+SHA-256-Digest: gRsHAnfQqE6v2evmIHI18TbNd/Xx2PxlTNoV/3Vi3rw=
+
+Name: res/drawable/call_taxt_only_case.pio
+SHA-256-Digest: X3zfBniOxMhhQsdCvNrXO7oF9kafz0q/q2mjnNqnP+I=
+
+Name: res/layout/simple_list_item_multiple_choice.xml
+SHA-256-Digest: IG4LUC+YwhvynBN2/+CRSBSsMNQPrht5PDYzQKXoFKs=
+
+Name: res/drawable-hdpi-v4/header_button_icon_plus_disable.xml
+SHA-256-Digest: uQF/lEggWsq93CVotF0mub4X3wa8BpA7Qlv4eKL0Z4c=
+
+Name: res/drawable-xxhdpi-v4/sim_icon_sms_v2.spr
+SHA-256-Digest: TMRqI5rsSlMQ+nR1Fxui3PEViya3UNXyHHjBGGPRyeQ=
+
+Name: res/layout/kddi_cfnr_time_spinner.xml
+SHA-256-Digest: WJr+QBK3IkFqKXWDTaSU6Xy5SEASMMWv9qUqUohABiQ=
+
+Name: res/layout/sound_language_settings.xml
+SHA-256-Digest: lrJtXMNNwkjopiUx4+oPB6ED3EpYwNR7Ovsr1rzNeH4=
+
+Name: res/drawable/call_sim_icon_home_dim.pio
+SHA-256-Digest: 0xyN9MIPV74/FTjq4lfV/SbDav0ssOe0QNDQA3tfsHI=
+
+Name: res/drawable/usim_download_04.qmg
+SHA-256-Digest: zJ6/TvDxFZdFJhH3QeXL28GIwGeygrdKIjY4EsHt91U=
+
+Name: res/xml/backup_item.xml
+SHA-256-Digest: UsjQ5zbm6IngYxO0U77++6t/DkS9GR3AJ9mGXJCDZPw=
+
+Name: res/drawable/list_ic_dongle.spr
+SHA-256-Digest: lBYOExB+clbjEj52yhM6Ka7mjiTI0sJyOMsip/7A1y8=
+
+Name: res/layout/multi_number_settings_layout.xml
+SHA-256-Digest: flIs/7fKJh0FCvYpj2C2+ysD3ShAaDuBmUnJFov91k4=
+
+Name: res/layout/emergency_call_list.xml
+SHA-256-Digest: LkdLeWxiIVlC2CHGPR10laChSq84y14cTY8fj6um/Xg=
+
+Name: res/layout/sim_ndp_vzw.xml
+SHA-256-Digest: 8Uat1sz2w1rC6iTB9THj6/wWSczDUpLJIG9xt+BEnzI=
+
+Name: res/drawable-xxxhdpi-v4/usim_download_04.qmg
+SHA-256-Digest: fCxgPe1TA5ckyd0GmrxrEV8M5pK6GdzkvwDbDDtOlsQ=
+
+Name: res/layout/dialpad_onehand.xml
+SHA-256-Digest: G9j51Q0Nq0GcJNWGTQLeOVA5CF8UpskxVahmQ9dHU1M=
+
+Name: res/xml/cell_broadcast_sms.xml
+SHA-256-Digest: N2I68vCBONRv5DK8q90bXh19cWGEYEjyFECC3X9iTO4=
+
+Name: res/xml/ringtone_keytone_settings.xml
+SHA-256-Digest: BS6BcSn9qa1SQ8CurwiDmeHEp++/rYVOUEReLudE6N8=
+
+Name: res/drawable-xxxhdpi-v4/header_button_icon_check_press.xml
+SHA-256-Digest: IPMLtEdxwaWOtrgdb85EkGkeItXN/6y1WbgUGKhP20g=
+
+Name: res/drawable/unlock_right_press.xml
+SHA-256-Digest: aLT2B9FoWLftyALndQyueZLCXoADAZasMmQqHEe0ibg=
+
+Name: res/layout/assisted_dialing_list_activity.xml
+SHA-256-Digest: JiGOSeYXzaeeGYe3zPgfVIGdF7LDbgE7X73IsVuEMtU=
+
+Name: res/layout/information_security_popup.xml
+SHA-256-Digest: img61Ijvf8I49fTXFZiFc5HEi/6JWvASgBwxLIgKnkA=
+
+Name: res/drawable/callsetting_unsaved_number_image02.qmg
+SHA-256-Digest: VyFqmqPimi6Szr2O71xXs2rEgiJXd1vKss/0xh5FalI=
+
+Name: res/xml/missed_call_list.xml
+SHA-256-Digest: xTOpFLfRO6fOJhsKbh/MxQSEY0NUcmfSnjlYJpKMK3I=
+
+Name: res/xml/voicemailpay_list.xml
+SHA-256-Digest: EpA6s9tYeSIEmpNo3C1dNlF7O8UXwdjg4Y1IhzTdZ2Y=
+
+Name: res/drawable-xxxhdpi-v4/tw_action_bar_icon_delete_holo_dark.pio
+SHA-256-Digest: gJ37ukpsD6ZHQXO4IkPwYnVhlLGbG0PjXa1DJjIcyrQ=
+
+Name: res/drawable/call_photoring_recording.pio
+SHA-256-Digest: kuvq+SwZO/Kcd52xpPfqS2jF/A4uGJvnSNQnikVR7j4=
+
+Name: res/drawable/player_speaker.spr
+SHA-256-Digest: coVVCwbY+yea8L4JuSdih4edqkgUIDY4mcmTfNEA3HE=
+
+Name: res/drawable/bottom_btn_ripple_bg.xml
+SHA-256-Digest: jwN8sSRjnYQBnjQJ1k9itfuqxZliXQuec/B1LBYguw8=
+
+Name: res/xml/sip_edit.xml
+SHA-256-Digest: h0yonwKk0I3GwBV+si+9G33bLDXEI2evuUZkUq5cg1I=
+
+Name: res/drawable/tw_tab_indicator_material.xml
+SHA-256-Digest: 4bZ/wCr9ILiqU/i5Bghp0rO7WPW4nEpZaEc88Xfzkc0=
+
+Name: res/drawable-xxxhdpi-v4/tw_btn_next_depth_disabled_holo_dark.pio
+SHA-256-Digest: KVPe/bAx43/VIrlTZ0HU4/L4y/LRRVyfsD+uKHNP+pw=
+
+Name: res/drawable/tw_menu_dropdown_panel_holo.9.qmg
+SHA-256-Digest: rAHPGViYV1gHQLQahE7W2jMvbrry2knkTBOZGBsvuHU=
+
+Name: res/drawable/ic_wifi_signal_lock_3.spr
+SHA-256-Digest: my51t9YCZcg1/PttXhUVu1+2bct2UpISQ7832Ur4OfY=
+
+Name: res/drawable/ic_wifi_signal_no.spr
+SHA-256-Digest: 4xYu8Bve8/e09n6Z2QVpJ86+HtfNXAzVTe+dlKhnhRY=
+
+Name: res/color/photoring_call_button_text.xml
+SHA-256-Digest: B/EVwbRVrCQMi1Txuj4TFZQfma3tD2dOnvUiM0KaKMk=
+
+Name: res/layout/delete_fdn_contact_screen.xml
+SHA-256-Digest: pjzG+6rbqRgqXsK4gxJPdcbzT/xULznmQ/K+Bnf9fVw=
+
+Name: res/layout-sw320dp-hdpi-v13/dialpad_view.xml
+SHA-256-Digest: P4sySgarMiiCemzgnvHd1rJAkng5MJzto3ory8JYYJU=
+
+Name: res/layout/pref_dialog_editphonenumber.xml
+SHA-256-Digest: h6zii6NMH8VyG/nD7AFsEiTdSB9eEXmhYomHdyIwRwU=
+
+Name: res/drawable-xxxhdpi-v4/call_emergency_icon.pio
+SHA-256-Digest: 3S7yrKyYi3GgD2XgOUoxn36fAfCjHAAUj+d89fw0IHI=
+
+Name: res/interpolator/sine_in_out_90.xml
+SHA-256-Digest: +wcEdUUwFCToGF/JNX2ff14maMbGw//SbHyjaWU4CqY=
+
+Name: res/drawable/call_dial_call_btn_bg_inset_image.xml
+SHA-256-Digest: oe9efSwmJZfcg58C/8y3odpUeU9nYESMOulV3B2KcI0=
+
+Name: res/layout/volte_videocall_enable_dialog.xml
+SHA-256-Digest: JQg3zz2hMC6MjhNKHKbLGjG07lSrr8ZWCFXz3LcZMDg=
+
+Name: res/drawable/emergency_dialpad_button_bg_rounded_rectangle_inset
+ .xml
+SHA-256-Digest: O80XCVDqw6SXq2ZFUxlNV3AxzS1x+a3YBQsTrxkUbZs=
+
+Name: SEC-INF/buildinfo.xml
+SHA-256-Digest: 6LTJl8PgNDq25BHrZJ20cF6Kq0MmIL3t8XPVRa7+qdg=
+
+Name: res/drawable-xxxhdpi-v4/call_circle_arrow_left_04.qmg
+SHA-256-Digest: /88otD0sq6Uc3rMDAJeghdlsr/2OoDJvnAOsi1maTlc=
+
+Name: vertexshader3d.glsl
+SHA-256-Digest: Hnj+2ZH2f6zauSEcFo8vpIl4Xz7ZP7gWWZhQFl0FvYE=
+
+Name: res/menu/sec_am_multi_select_menu.xml
+SHA-256-Digest: nEa8xDdSXyOtSjy6bEg2ar1P+f4s5Tl8HLi83OlaOss=
+
+Name: res/drawable-mdpi-v4/header_button_icon_plus_disable.xml
+SHA-256-Digest: uQF/lEggWsq93CVotF0mub4X3wa8BpA7Qlv4eKL0Z4c=
+
+Name: res/drawable/ic_bt_network_pan.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/layout/sec_blocked_number_categories.xml
+SHA-256-Digest: 4i4titglEgBp44uZmxSTcHX46khvsiogNFJPzGavOOo=
+
+Name: res/drawable/edit_text_cursor_color.xml
+SHA-256-Digest: ReKxPLJBk3KXClHHNM+0MafRluCJCMppXNiEfgcXXpo=
+
+Name: res/drawable-xxxhdpi-v4/ic_arrow_back_24dp.pio
+SHA-256-Digest: zLKECQyr8RPJyYwfaF2/f6kiar1YGTqdk9coHFZRvEQ=
+
+Name: res/layout/preferred_networks_item.xml
+SHA-256-Digest: 9tDYhQbKG4k8XM/gyS6lndzDSr2AnrkX7/VMaB63B40=
+
+Name: res/menu/ims_conf_multi_select_menu.xml
+SHA-256-Digest: e2F/0jSca4MaQQVTreL5dBozrRaVQm5bfZSzGo4BXf4=
+
+Name: res/xml/record_calls_automatically_list.xml
+SHA-256-Digest: t4jjYPRqE85JIYnQqTuIk5+bv6hkjSLj+/B0QvaYOdc=
+
+Name: res/drawable-xxxhdpi-v4/ic_btn_next.qmg
+SHA-256-Digest: Wu0K1NETK2IeAUZMU1kie+/JH3mrtNBKqOQQw1gNFXc=
+
+Name: res/layout/advanced_call_list.xml
+SHA-256-Digest: Mx7uD/hsKQhuUVOyf6exNlt4h8azRH0o5oFi+I/9T1w=
+
+Name: res/xml/cdma_callforward_options.xml
+SHA-256-Digest: 0/PHe5QYgdxS3R12JzWFDMrHL72rzoYFRkQRgHmn1dg=
+
+Name: res/drawable/call_sim_icon_phone.spr
+SHA-256-Digest: ZuRIbO5DMie8SVaRVJoTEBAYLHf+2Ox5lR7/M+Pk3j0=
+
+Name: res/layout/dialpad_additional_buttons_sec_enhanced_onehand.xml
+SHA-256-Digest: Pg7UPxS4C1plW6YgmXX7i7B6DVYwj4G0qyPLOlogwrE=
+
+Name: res/layout/roaming_network_select_help.xml
+SHA-256-Digest: exlU5ZK1CWwvqNJhubwykQ3PBz+as0c/fKUeN8LPDXw=
+
+Name: res/drawable/callsetting_unsaved_number_image03.qmg
+SHA-256-Digest: 7FjsmxiSSgh1KTmOj4fLy1gKWcLMWQC9ZcdSSuy3Yhc=
+
+Name: res/layout/dialpad_key.xml
+SHA-256-Digest: AbxHpRJNOYs/exfGW96qCEem7vflRex3kc4LiXW8KTY=
+
+Name: res/drawable-xxxhdpi-v4/ic_btn_advanced.qmg
+SHA-256-Digest: a+kf7nNHj+lD29BPKn2JxtgG0SVXdUccBtm6Ua1pclw=
+
+Name: res/drawable/hidemyvideo_attach_camcorder.qmg
+SHA-256-Digest: aBNirEaxdZAJZMDabpU75WV1oAAwp45jr5Kt16mCzQk=
+
+Name: res/drawable/ic_bt_cellphone.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/layout/ip_call_number_delete_list.xml
+SHA-256-Digest: 6HlY6d8vpd46o2LAQ4UOAdQdeR74mMeKFmVBYnm18os=
+
+Name: res/drawable/list_ic_air_purifier.spr
+SHA-256-Digest: rnrS7oGuB2tYgcVQtMFPjn4gAYM6uy4fFdy2OFJgI3w=
+
+Name: res/drawable-xxhdpi-v4/incall_button_multisim_phone_icon.xml
+SHA-256-Digest: nFQggOL60G6YoUM1pkWTg/Y51ATk/ICbQkixzdM74iQ=
+
+Name: res/drawable-xxxhdpi-v4/call_circle_arrow_left_03.qmg
+SHA-256-Digest: EiA72Ug1BrwmbVeO8/pZXFQGjsydHf3QpKUm/qv1E3g=
+
+Name: res/layout-sw600dp-land-tvdpi-v13/dialpad_key.xml
+SHA-256-Digest: 4cUwU/IkJjjAoFDxZTBlqhwQj/UZir1dNv0ks5GMS/0=
+
+Name: res/drawable/actionbar_list_icon_create.xml
+SHA-256-Digest: I/CxKmYsx8xxz+E9u8337WoCNFp7cWHiqenXteR7fts=
+
+Name: res/layout/emergency_callback_mode.xml
+SHA-256-Digest: lUY9MhDdGOYw8WQcQ1ArGnXAVlyP+AozsWivtmfVVMg=
+
+Name: res/drawable-xxxhdpi-v4/ic_menu_contact.pio
+SHA-256-Digest: hgQ5+W2tc48OUwSiAlwJ15sd0QriCnVijEFqg/gp42A=
+
+Name: res/xml/fdn_setting.xml
+SHA-256-Digest: rKUltXHF7Kln5KQAWSzWaBzbHsqWS32jkyM6XkECrXs=
+
+Name: res/drawable-xxxhdpi-v4/usim_download_03.qmg
+SHA-256-Digest: hw744WLXCr2eMSsOjXssvjSTuFI9ORbb71zuDKRdqKg=
+
+Name: res/layout/photoring_dialog.xml
+SHA-256-Digest: LwP/tsn0jebFUJ2ZeMpXbQUYrbhKVVJ+jwsEQycDqqY=
+
+Name: res/layout-sw800dp-land-xhdpi-v13/emergency_dialer.xml
+SHA-256-Digest: C9hvj+rKyoKNAZ5Zf/J9iY/WDdBpmZjhle39YFz2P+0=
+
+Name: res/color/listview_item_during_color.xml
+SHA-256-Digest: XK9ZJFJYjps+QJ8vyaYitBpeXuh7U05EmR8a7UWgU5A=
+
+Name: res/layout-sw320dp-hdpi-v13/emergency_dialer.xml
+SHA-256-Digest: ma64wFPH5GWT+vfqpks3plEms7C/pWJhacAfdtNBi4M=
+
+Name: res/layout-desk-v8/spam_call_activity_menu.xml
+SHA-256-Digest: RyCHM7CXtAWIErw7trAugi2t+tOO2JAnVG2WYf6J2Ms=
+
+Name: res/drawable/usim_download_03.qmg
+SHA-256-Digest: GWaPDph0pYKSujIeQ76xTvBlA37AgtZdThKy+dQr1uM=
+
+Name: res/drawable-xxxhdpi-v4/usim_notify.qmg
+SHA-256-Digest: Yriir5SvMSiZ07lQMjLdZ8C9AwN0PUkgf49sg87yvs0=
+
+Name: res/drawable/ic_wifi_signal_shift_1.spr
+SHA-256-Digest: HO/x2XEFGQehhavLPC4wlLIXGrLCOD2bovcqCW/6uuc=
+
+Name: res/layout/videocall_presetimage_main.xml
+SHA-256-Digest: iqLLcAwiRFajU2IOrZMATxCnjfqffjFRSFuJv2lHqLo=
+
+Name: res/layout/preference_dialog_intcallservice.xml
+SHA-256-Digest: /FeB+dUZBds+brp066hmnjKFHeeS16sUuF5KAsXbWpE=
+
+Name: res/drawable/hidemyvideo_detail_ic_images.qmg
+SHA-256-Digest: ZrWLR0ugqS1SSWP6DB4jVuiedXszRc6SQITK2Riiuok=
+
+Name: res/layout/progress_preference_icon.xml
+SHA-256-Digest: GnrJWplkyaDpqIGczLq5O1raJCHnZ2WOcrWwLIaosig=
+
+Name: res/drawable/stat_sys_tty_mode.pio
+SHA-256-Digest: u8n0/1+8NbkCMe/RFdMwDxZIFb80Wr1fsoHay1NX+pw=
+
+Name: res/layout/dialpad_view_unthemed.xml
+SHA-256-Digest: GHxaVvWY8gvOF/jvrQjV1rdtXE4RbQuxo0LCkbzf94I=
+
+Name: res/layout/sip_settings_ui.xml
+SHA-256-Digest: qDtfdU2ndJn1wpPMaFEmsjiGTCYfwMzko6zVV7xJhbI=
+
+Name: res/drawable/popup_play.spr
+SHA-256-Digest: Lr08tppgWaRYS12HiVvB12yTp5UBLdTfBP+yp/32KKE=
+
+Name: res/layout-sw600dp-tvdpi-v13/emergency_contact_item.xml
+SHA-256-Digest: dwOeNp6cWpfJxDVz3JFRnimUBxWA0Pbf111KgkTj9nI=
+
+Name: res/drawable/tw_ab_bottom_transparent_mtrl.9.qmg
+SHA-256-Digest: 8RO/xMCPygTS7uV5s0BDxk/aIOcb3pAR/2e1KeHxTpQ=
+
+Name: res/layout/sec_rejectcallwithmsg.xml
+SHA-256-Digest: C0W7VWN0h/6WTEvte/sKGIGCJKnqn0m1oYAExKrrTcE=
+
+Name: res/mipmap-mdpi-v4/ic_launcher_settings.qmg
+SHA-256-Digest: tl9lBzvpYNI+P0am13Z8hFvhcCkwAg2/7QL3jHz9/uQ=
+
+Name: assets/IdentifyUnsavedNumbers_PrivacyNotice.txt
+SHA-256-Digest: l8x4Jn+Bt4oc8az0M0tEtZrAhorqQ5AjAx0O5N6rO5Q=
+
+Name: res/drawable/list_ic_cleaner.spr
+SHA-256-Digest: Pmaduz9E5KJCuRBo+29fDHvziXANZSD7EesLzGGl8os=
+
+Name: res/drawable/ic_wifi_signal_4.spr
+SHA-256-Digest: r+ZgdeO9nfgW8lb5mEG16vTxHl2VW4ZN0yhJ+53yoVg=
+
+Name: res/layout-land/dialpad_key_one.xml
+SHA-256-Digest: 2WdMmwRZojxMx8/gvJrwQieaOlZNzYrMh+DPO5/RocY=
+
+Name: res/layout/outgoing_call_broadcaster.xml
+SHA-256-Digest: PDOG6t97EWKn3dMwjNFut6agQaECTvPjxTcB+X6DQ6w=
+
+Name: res/drawable/delta_orange_wifi_calling_ic.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: assets/use_agreeLGT.txt
+SHA-256-Digest: FTdToN4BU6UdtEgj0W4M4YxzzWYHXDWuH0ico2nOdEQ=
+
+Name: res/drawable/emergency_dialpad_button_expand_bg_inset.xml
+SHA-256-Digest: rRJ1SQUb557lq3Dn4ijPfpUX/+jFiO0Oz5OSaqG0MwQ=
+
+Name: res/layout/popup_list_item.xml
+SHA-256-Digest: nnZhHWkpA9lfEBnOET1eEzg6Wcb4kPkbyOdJSWmOBEc=
+
+Name: res/xml/voicemail_notice_setting.xml
+SHA-256-Digest: WWIJtyVYMubdTa9Sa4tDRuLuWGCC/o941Ycgy7Vm9Uc=
+
+Name: res/drawable-xxhdpi-v4/call_setting_quick_panel_icon_unsaved.pio
+SHA-256-Digest: IFkpXokgTXy5zGJEbjB6d+GkuKJaay5qpUpyVMUBO2Q=
+
+Name: res/drawable-xxhdpi-v4/stat_notify_data_off_att.pio
+SHA-256-Digest: f+djXt5hCH8YNmR/386Bt1staJ+bnVACAV1LkJWBpUk=
+
+Name: res/drawable-xxhdpi-v4/incall_button_multisim_mms_icon.xml
+SHA-256-Digest: hN6wHxmKLIJOfNH5UcliLiPRv2BCl/TW+1hf90wZ8+k=
+
+Name: res/drawable/stat_notify_data_off_att.pio
+SHA-256-Digest: f+djXt5hCH8YNmR/386Bt1staJ+bnVACAV1LkJWBpUk=
+
+Name: res/layout-sw800dp-xhdpi-v13/emergency_dialer.xml
+SHA-256-Digest: p5AtX4UngQYL2tm5IGiQ7Atk/kB2K8pT0jwhUI+prYg=
+
+Name: res/layout/data_roaming_guard.xml
+SHA-256-Digest: CL6RZwH4tkpqarRhloePopDuaDE2KnKl945HYQzTp18=
+
+Name: res/drawable/emergency_contact_default_id.xml
+SHA-256-Digest: cymsWQpXhPLlaBcXaJyrtHbMYJCyUaSmgBrwO9CRGM8=
+
+Name: res/drawable/list_ic_signage.spr
+SHA-256-Digest: 8ivezAt4fs1Rr2hRcECVVij1+rS+Viwg2s42eeMLcJA=
+
+Name: res/layout-sw600dp-tvdpi-v13/emergency_sync_contact_item.xml
+SHA-256-Digest: 5CJKl2LP2nqyso6TLtTjCRi2/6zoEuGBQq8VxNexTIA=
+
+Name: res/layout/roaming_list.xml
+SHA-256-Digest: 5+diCAEcIzZ/HEPMgeXcIjnG5939cA60B1QLJlKYUt4=
+
+Name: res/drawable/list_ic_hood.spr
+SHA-256-Digest: H9Dfk2eH2RIHhPN+6KZt9CLfBPtvpUXvM1ApaLsLqAc=
+
+Name: res/layout-land/dialpad_key.xml
+SHA-256-Digest: AbxHpRJNOYs/exfGW96qCEem7vflRex3kc4LiXW8KTY=
+
+Name: res/layout/sec_deleteprefixitem.xml
+SHA-256-Digest: ebun/U8idtCXfoXz+i5d7cKSwWri9LlDEpegAB/nahY=
+
+Name: res/drawable-xhdpi-v4/header_button_icon_cancel_press.xml
+SHA-256-Digest: tcSwZx26WgX5b3hyfq60Vr6A+XzAzqyrj2iqHxBKlDk=
+
+Name: res/drawable/jog_tab_left_bg_small_press.xml
+SHA-256-Digest: GWmiPXG1EzH6BIaKt1ImQLBYX/QmqdzQxDXhq8R1yZ0=
+
+Name: res/drawable/emergency_dialpad_button_expand_bg.xml
+SHA-256-Digest: noBYxsw/qp9lDjqvPax4SFQxQRrCfe+etodrzIoeW3w=
+
+Name: res/layout/custom_action_bar_done_cancel.xml
+SHA-256-Digest: /UBXwqR+tPXPpfQHv0luBE5mVGPUFfuqhKvLk0FOxso=
+
+Name: res/layout/ip_call.xml
+SHA-256-Digest: veIoSPORi99xrG9wNji46SF5PqMZLmeiXhZqyexSwRs=
+
+Name: res/xml/videocallforward_options.xml
+SHA-256-Digest: oOX2MESikKo0KFpTYZLOTlQ/liAkQEzHlyW9Dg7AJVc=
+
+Name: res/drawable/ic_wifi_signal_wechat_1.spr
+SHA-256-Digest: LsKRYnpDc9cJFMCkZfDxSenSJteiUPkldg8PdScPaY8=
+
+Name: res/drawable/ic_wifi_signal_lock_4.spr
+SHA-256-Digest: DxhBwSDH4MkiS9Emzy65xerd3Yp388BhbfFwVhhWXlM=
+
+Name: res/drawable/call_dial_call_btn_bg_left.xml
+SHA-256-Digest: E7v0oToCRtvyswM5/429GrkNDAAb1eeCxz1AIMolGbg=
+
+Name: res/layout-sw600dp-tvdpi-v13/dialpad_view.xml
+SHA-256-Digest: 5z0zZ3Y4UmnARjgRWzkIrfqIWPKuA7Gz0rqZMmAosmU=
+
+Name: res/drawable/actionbar_list_icon_cancel.xml
+SHA-256-Digest: INnZnHnJvhDQA243fRWi7V8urOk1GacDoKbVHCIaD1A=
+
+Name: res/drawable/button_selector_pre_img.xml
+SHA-256-Digest: plPZ7LLH10AmU0Ne/pig0Twv6niTACP+b75/GfsyQbE=
+
+Name: res/layout/dialpad_view_onehand.xml
+SHA-256-Digest: a54V4LvhUlBzpwcbFxUPfYHffwR1Y2EIfuNc5z7zelg=
+
+Name: res/drawable-xxhdpi-v4/call_sim_icon_phone.spr
+SHA-256-Digest: ZuRIbO5DMie8SVaRVJoTEBAYLHf+2Ox5lR7/M+Pk3j0=
+
+Name: res/drawable/tw_sub_action_bar_bg_mtrl.9.qmg
+SHA-256-Digest: 1alFT2tNhEu+SmgyknKM1ya9qucXp8yzCVcYEuRNo/s=
+
+Name: res/drawable/ic_wifi_signal_wechat_4.spr
+SHA-256-Digest: aSdykkIgHWXvpbf+FGsR5y3jZUlaOMe+BymbKlV5Ntc=
+
+Name: res/drawable-xxxhdpi-v4/memolist_list_icon_already.pio
+SHA-256-Digest: qmkJ0uHWyBfPdZO4GGWiv1Q6im5gNJzdy+hAYf3bgQo=
+
+Name: res/drawable/call_sim_icon_gsm_02_dim.pio
+SHA-256-Digest: EojN7Tjvbyb/cPWTjprfDMtMrL2NGZuRrYuUYqFVu0E=
+
+Name: res/drawable/tw_divider_vertical_dark.9.qmg
+SHA-256-Digest: Ag34/ibl5QutEvZuHtFfWv7c/o9mSF2fuQqA67V8JsM=
+
+Name: res/drawable-sw600dp-tvdpi-v13/call_emergency_icon.pio
+SHA-256-Digest: EsmT80neJ5Th7PbBSTnlaJWNQIS40wRHBRg0B6ln+lk=
+
+Name: res/drawable-xxhdpi-v4/popup_play.spr
+SHA-256-Digest: Lr08tppgWaRYS12HiVvB12yTp5UBLdTfBP+yp/32KKE=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher_settings.qmg
+SHA-256-Digest: 4e5gTuUqe+5Gwz5lqjnYt/BSxCNr2+bffbIiRvimqPQ=
+
+Name: res/drawable-xxhdpi-v4/sim_icon_heart_v2.spr
+SHA-256-Digest: hIr0cIyrFDjesP1s28E2bGyzlDbV8fRwcCcK+kJKdR0=
+
+Name: res/xml/sip_settings_category.xml
+SHA-256-Digest: ytuCtlcBd5n9hrAzTbeLZrFvDlYQ0F02BYQJi6qILy4=
+
+Name: res/drawable/call_dial_call_btn_bg_right.xml
+SHA-256-Digest: Bzzh5h7x0d8hy1CKCSROk0+lhLTWbnHFwzN4DySN2ec=
+
+Name: res/drawable/list_select_all.xml
+SHA-256-Digest: s7uzJmiLbA787TSrIvxMJynZ1YdNJTxW/+HNURpe96o=
+
+Name: res/drawable-xxxhdpi-v4/tw_list_selected.9.qmg
+SHA-256-Digest: 6DxAQcC2/Qwf/7rFeCm1l7DukiZZweayInf/baiEV2s=
+
+Name: res/layout-television-v8/settings_with_drawer.xml
+SHA-256-Digest: Zw7LNFziOLxO7Niwz8uk7diIT+a7GgFTpQNRhMrgBqE=
+
+Name: res/drawable-xxhdpi-v4/popup_speaker_mute.spr
+SHA-256-Digest: yuzAjREsGxK7xvoxZP52tClMrIVNfadXK542sdVdgtM=
+
+Name: res/layout/adv_call_donotshowagain.xml
+SHA-256-Digest: HVE8ODQW+rJW1TNpV4B2DOx3gpV0PaQJAu0PE4mK/5Y=
+
+Name: res/drawable-ldrtl-xhdpi-v4/ic_btn_next.qmg
+SHA-256-Digest: CC0is+zKcWhLWg4F65SqUMNQmmsWeV4xjqwNxWt/ouQ=
+
+Name: res/drawable-xxxhdpi-v4/usim_download_02.qmg
+SHA-256-Digest: Si5WUq9DNVHCCZeGKemcNLLXmBiCS4ak1zBxso/m1OA=
+
+Name: res/layout/assisted_dialing_entry.xml
+SHA-256-Digest: O8nrj75tfXMcQLBq14icPkn1WAa+q+M2S1K9IFnlq2M=
+
+Name: res/drawable/ic_wifi_signal_shift_0.spr
+SHA-256-Digest: pudLzBkYAI3Gl13IupAeXBddUBsPjRETmUdG7p5d6k4=
+
+Name: res/layout/preference_app_percentage.xml
+SHA-256-Digest: c+/PYZUco8VgVxG5XLbiEhNWony32xAJBTy46hqE6ss=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher_settings.qmg
+SHA-256-Digest: 4e5gTuUqe+5Gwz5lqjnYt/BSxCNr2+bffbIiRvimqPQ=
+
+Name: res/drawable/wifi_calling_global_ic_help.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/drawable-xxhdpi-v4/header_button_icon_check_disable.xml
+SHA-256-Digest: vj1DpW+/ZRQVF0Q1cBGmtlI3+HncR2rVflveJRHp4LY=
+
+Name: res/drawable/usim_download_02.qmg
+SHA-256-Digest: jZSea7I5N1KB1XFMZwr0nCby4NMnmnPis85knhW40ac=
+
+Name: res/drawable/stat_notify_roaming.pio
+SHA-256-Digest: 5bLxLMq7/30w+1wM/BQ9cN/rWbl7t/0l64o9LyUJI0k=
+
+Name: res/drawable/linearlayout_bottom_item_bg.xml
+SHA-256-Digest: H3GH8vxffRjqMWc0uCWAH/rvbhe7P3ypTS0B0XcOsNo=
+
+Name: res/color/listview_item_state_color.xml
+SHA-256-Digest: 2eze3G8STmvfjfxYATOdcvQN3K/EsTAR8ZMf8VQUzX4=
+
+Name: res/drawable/ic_wifi_signal_3.spr
+SHA-256-Digest: phV0Fng+5zGZyGLwjlQHZLLKhQRt41tF/dHXIGLB1oE=
+
+Name: res/layout/voice_cmd_dialog.xml
+SHA-256-Digest: vHuH5w1sRi28dH2dhUjA8+3zkfFWdOLC6FCfc9Z0iJE=
+
+Name: res/layout/search_nearby_places_layout.xml
+SHA-256-Digest: yHimpE2XececZJz42w1QV9vcHqPrjLUQKtlfjTYtts0=
+
+Name: res/xml/disable_2g.xml
+SHA-256-Digest: Rn6Vtf1UXGwXkAhK/8gb4d3iL70FtB2jIW1m27QKZ4Q=
+
+Name: res/drawable-xxxhdpi-v4/emergency_icon_on.qio
+SHA-256-Digest: bFg/SCrQaWLGrH1RygQ+8l4L61kzc+vdCMO929Ra/NM=
+
+Name: res/drawable/tw_noti_badge_mtrl.9.qmg
+SHA-256-Digest: MpFyoIwidNgWoaH7Hzkev296XX+MqScHQ6oav9qeyl8=
+
+Name: res/drawable/tw_btn_check_off.xml
+SHA-256-Digest: gnMSEzh93+KCqTg5t/Rgj6Q2iCquNNkfnOyfFkaOZUw=
+
+Name: res/drawable-xxxhdpi-v4/call_sim_icon_sms_dim.pio
+SHA-256-Digest: A6nHVGh4rg1JkJqWHxT+3JepTp54a1RUp+tzRcdDpVw=
+
+Name: res/layout/registerussditem.xml
+SHA-256-Digest: KiXtlppm1JHTY7z+3FZfHa/2IILkcWqo1XZbk378nDw=
+
+Name: res/drawable-xxxhdpi-v4/tw_ic_dialog_alert_holo_dark.pio
+SHA-256-Digest: /wPa8AA/L6Yp8+ufeb/j18AotXdGPH/VFQznqBH0ff0=
+
+Name: res/drawable/tw_list_pressed.9.qmg
+SHA-256-Digest: 4WIp04xv78tbrm/HZKQeraKEtCzy1BWQ38D8jS/r/+0=
+
+Name: res/layout/drawer_category.xml
+SHA-256-Digest: CqVDe5j6//FehgBareloSeRhRTMeDc6JHbcyTndLn10=
+
+Name: res/drawable/call_btn_arrow_left_bg.xml
+SHA-256-Digest: e6t9L2SGqJy6uva97IWIFXfxEnKBEjgOnIV+f8RhgA4=
+
+Name: res/layout/emergency_contact_item_container.xml
+SHA-256-Digest: /gJ5EIZzWzJEY+7QH+aXJ9KDls0HTAehcJ65EdoApmY=
+
+Name: res/drawable/list_ic_keyboard.spr
+SHA-256-Digest: hVHkZEZsmM+R79vhUXilPmaTGER6trIn3/7pUHvkAgs=
+
+Name: res/xml/multi_number_settings.xml
+SHA-256-Digest: 6PCjXxVCAKSsgUP4CBGeu938mnKiuCjh3rU+bI/WcPI=
+
+Name: res/drawable/emergency_dialpad_onehand_button_bg.xml
+SHA-256-Digest: R8moUt6oB5w2eJQujLqM+eFP+ruLsdZNhvFJfo9csZU=
+
+Name: res/drawable-xxxhdpi-v4/call_sim_icon_phone_dim.pio
+SHA-256-Digest: rZfNMxqOwVQQB2wniV1cwXd198a/4sCX7B6JSoGhE+s=
+
+Name: res/drawable-xxxhdpi-v4/header_button_icon_plus.pio
+SHA-256-Digest: kUCfqjApWTXMkWPcZdJeLhN6frRv0Nl/lj21j4HamZI=
+
+Name: res/drawable/ic_wifi_signal_lock_shift_4.spr
+SHA-256-Digest: mOjPg+UPP5Ir6L1GJuoPypDAMm665nnPVm/SZyOac4k=
+
+Name: res/drawable/list_ic_range.spr
+SHA-256-Digest: q6OJaSFvfuX6Xsd/KOxT+ltCvzxLNomnMMagGSh45oI=
+
+Name: res/anim/dialpad_slide_in_bottom.xml
+SHA-256-Digest: J7ooy/9CV4b4Bv/qGb8DyOoo5hRJE4LhaOcmoaBRU5w=
+
+Name: res/drawable/ic_bt_headset_hfp.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/layout/spam_call_activity.xml
+SHA-256-Digest: lL4feFl/y6+54QOChE7PdU4Y+m848wOZ0p7tK9WF0mk=
+
+Name: res/drawable-xxhdpi-v4/incall_button_multisim_sim02_icon.xml
+SHA-256-Digest: X7uxycyjv0cF87sHaN0BqDU/J/TjuGpyY3/4nAy/slM=
+
+Name: res/xml/au_callreject_pref.xml
+SHA-256-Digest: kWR2mo2VFhSXzjXoqc9su90k6QY3G9qLUlgwyvnRv4c=
+
+Name: res/drawable-xxhdpi-v4/incall_button_multisim_home_icon.xml
+SHA-256-Digest: 85xgu2L/ek8D1Iblrch6zt9RGhOGYbUPz3icZLRwcxE=
+
+Name: res/raw/guidance_eng.ogg
+SHA-256-Digest: L1/q8zD9idRKStGbayGlSoAjRuKuulSdHXNXT6b2tmc=
+
+Name: res/drawable/ic_wifi_signal_wechat_2.spr
+SHA-256-Digest: ieIS+zjTudE33siaxtEbBMT8Mg0EL7uS3AtsoJxSuss=
+
+Name: res/layout-sw800dp-mdpi-v13/dialpad_view.xml
+SHA-256-Digest: LHMDWQYdukerVD+4SoaEmohsyUHnYr+5IrmHZrQx6N4=
+
+Name: res/mipmap-hdpi-v4/ic_launcher_settings.qmg
+SHA-256-Digest: hHxfG8iyDqzlKo+isaaUmjgqqEPHSjA0dvPmZJuJdc4=
+
+Name: res/layout/blacklist_item.xml
+SHA-256-Digest: dFVwdER98qBkkKNevfPSVyUQyOHQAqzdInnsA1NJL7A=
+
+Name: res/layout/dialpad_key_enhanced_onehand.xml
+SHA-256-Digest: mSLffSTSX/5HBHYCUJB3O1gDTX5CqcG78xgzpk7hAUY=
+
+Name: res/drawable-xxhdpi-v4/call_sim_icon_gsm_01.spr
+SHA-256-Digest: L5GvTzF1Cht6duuAss5RjTQTw2QDlgeTv3wkcTEvtF4=
+
+Name: res/drawable/ic_bt_pointing_hid.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/drawable-xxhdpi-v4/tw_image_back_material.spr
+SHA-256-Digest: I6uC5SDP4cUOiEsPA+tojzX0ZbiuYXqzp7tUsP2+mzA=
+
+Name: res/drawable-xxxhdpi-v4/ic_settings.qmg
+SHA-256-Digest: J3DAvLwQcyUQA379zGbFjMUVdDzNfVY4K1N4CWyTdCM=
+
+Name: res/drawable-sw800dp-xhdpi-v13/call_dial_call_btn_bg_inset.xml
+SHA-256-Digest: ZGQn5niSHlxDb5WJ3Hw1etMTodXJjHeBsXBnn0wdoQ4=
+
+Name: res/layout/dsa_common_edit_item_sim2.xml
+SHA-256-Digest: 9PDRzlL9bbmDMGVCVPKdY7YPL8iuJ3RqjQBk518Hn/w=
+
+Name: res/layout/smart_call_privacy_notice_layout.xml
+SHA-256-Digest: 7yHHBMPWq0wPHmrsDd7jzRuPulgRGv0SCgCFZ0IycF4=
+
+Name: res/layout/recording_playback.xml
+SHA-256-Digest: 6de8GloBLsPMTT+Bn7XGCL0eog5yA6J2LsaM7PNCSW0=
+
+Name: res/layout/resolver_list.xml
+SHA-256-Digest: a0zAZpFT0lxfAKxdIufbXlpBnvatvNEKDIPgjGtjG1Y=
+
+Name: res/drawable/button_selector_next.xml
+SHA-256-Digest: 5FIv8Q2x/6JnvHZuIu84maG0SrGQJOHHUN6KDBKK6CM=
+
+Name: res/drawable-nodpi-v4/ic_jog_exit_press.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/layout-sw600dp-land-tvdpi-v13/dialpad_key_zero.xml
+SHA-256-Digest: vZwFrzDFbVC3i6ymY8T26c1gozNPK+ZbmrByjh1HrZQ=
+
+Name: res/layout/secautorejectonconditions.xml
+SHA-256-Digest: rViDUsYbSPtQrl0O2a9irqT8tJ02qCStMAfjj6UqToc=
+
+Name: res/drawable/player_speaker_mute.spr
+SHA-256-Digest: r1B7ncs37Xogi/XOfR36vwBwSvLMbtpvey6wuPgRtW8=
+
+Name: res/layout/list_header_search.xml
+SHA-256-Digest: JpprG+rh5zmGDAdyb/MDFKx/juWaBDv5OG8jimt/I6o=
+
+Name: res/drawable/usim_download_01.qmg
+SHA-256-Digest: yBbFEUn6xi4jgfkIhmYrt/RfVo2YACWVpCwogpHq2d4=
+
+Name: res/layout/visual_call_activity.xml
+SHA-256-Digest: wUENfNP5DWOzISOyDvH0ybH/RiRYV3BOCYJ0jeweBH0=
+
+Name: res/drawable-xxxhdpi-v4/ic_dialer_sip_black_24dp.pio
+SHA-256-Digest: JceBglZRWaWiIdLglRCvDKfIxgMqUSWFiwRtoI1Eeok=
+
+Name: res/layout/emergency_dialer_onehand.xml
+SHA-256-Digest: c/sPonk3pNLWlTaUHUaGizTR5T+uRYbIxP8PmCgoVD8=
+
+Name: res/xml/voicemail.xml
+SHA-256-Digest: efPGqvM6adXjhBZF+enZig5hntB8IPGtzrN3Ji7JsaY=
+
+Name: res/drawable-xxhdpi-v4/call_sim_icon_heart.spr
+SHA-256-Digest: ULuolVmcirYmOamG0h7r5N8gNJGbFSveX42bz1wDeJI=
+
+Name: res/drawable/ic_wifi_signal_wechat_3.spr
+SHA-256-Digest: GAjgbR8tE5LRQ7qW253a7czyJue98lSJArcJ1qYn/QE=
+
+Name: res/drawable/tw_btn_check_on_holo_dark.pio
+SHA-256-Digest: Y36oj7rYEfz/LLzly3U9BdJQcCJP4J+kFvXQZePdwmo=
+
+Name: res/xml/enhanced_4glte.xml
+SHA-256-Digest: GCzSqA6glmv5Rp85iDww6KW/JCsNYkmLDb8t4dnCa6w=
+
+Name: res/drawable-sw600dp-tvdpi-v13/emergency_contact_item_bg.xml
+SHA-256-Digest: tx25e3QZiyBYqEdPYnv33BC9+dtHMU+t9355HrDneaw=
+
+Name: res/drawable-xxxhdpi-v4/phone_keypad_onehand_ic_call.pio
+SHA-256-Digest: VkpCVtBHSkgCMgA8afhNnJR8pPEuFinmZt0bQR/xmuc=
+
+Name: res/layout-sw600dp-tvdpi-v13/dialpad.xml
+SHA-256-Digest: W+KCalRboPK93LUHBYSm4kt7lKlMtPSDJNIUk0ODLcs=
+
+Name: res/drawable/callsetting_unsaved_number_image01.qmg
+SHA-256-Digest: qNZE5V8EJ3MO2dBf+QNaEF+ZSJEdYLNhcQYaIVDD98s=
+
+Name: res/drawable-mdpi-v4/header_button_icon_plus_press.xml
+SHA-256-Digest: pYt2Y4VNbyBXAyNwnyRWryORTIDJWOGQLmLT6xHcauk=
+
+Name: res/layout/simple_list_item_1.xml
+SHA-256-Digest: ZOdu+hPrHWlMp8kepI4zS1ZGclCWrvJz0j2LCUTQndA=
+
+Name: res/drawable-xxhdpi-v4/st_ic_mobile_networks.spr
+SHA-256-Digest: cIoR4iGwgk1uqITz3hE1i9wcrHKqouiwQlvfGGChIl0=
+
+Name: res/drawable/list_ic_accessmsg.spr
+SHA-256-Digest: Z4GWm/BevEFi59MGPi2lTSxdjBQVBfbpfp40G9wl/gY=
+
+Name: res/drawable/call_sim_icon_office.spr
+SHA-256-Digest: rdGBS7HTJ6mQd7UkTLgnP8Z7557w+xXj20VpERs7Y/M=
+
+Name: res/drawable/incall_dial_btn_blue_press_transition.xml
+SHA-256-Digest: w5N2YVLbD0SVnH5zalldE12clPj+zFH4Nkg7yRO6q1s=
+
+Name: res/drawable/emergency_dialpad_button_bg_rounded_rectangle.xml
+SHA-256-Digest: M9g6zwFUmlAHSwj5qFNlOraC+vuf9XV+sakdOLylvWQ=
+
+Name: res/drawable/tw_tab_indicator_ripple_material.xml
+SHA-256-Digest: vqCMQdhoJwwZuqdN+eDjFb5+SpLYAaRtmeIZeS69kGg=
+
+Name: res/drawable/tw_tab_indicator_selected.xml
+SHA-256-Digest: 2msPYEkbUvMxBSEaHBd9mHFPOzJA/ByepQK60riEpo8=
+
+Name: res/drawable/incall_button_multisim_office_icon.xml
+SHA-256-Digest: yJAlbIWcDwJS/IUp7pELhWWkvRC+FBiRk9mQiGm5dMQ=
+
+Name: res/layout-land/emergency_contact_item.xml
+SHA-256-Digest: Ljj3mt3psMBY4qv9At5MFSAjMRuqFpkTw1KVkBfn5ME=
+
+Name: res/drawable/emergency_dialer_bg.xml
+SHA-256-Digest: DGhwUJfnZH8q4ts7m2r3z3BhcTiAA9UkuxexVIMu82o=
+
+Name: res/layout/dialpad_key_star_pound.xml
+SHA-256-Digest: UhpFb0R6wALizmv9AE9j02H7ZAFChnLLKvw/p4UGh2E=
+
+Name: res/layout/layout_dialog_network_security.xml
+SHA-256-Digest: DJT2PMjO/V+CVozgzCvxQphxYsqBG4+TYKn85CA8Zz4=
+
+Name: res/drawable/search_bar_ic_group.spr
+SHA-256-Digest: qHsyORw2xMvrUGtytyUC6J9xU/aYC2aED+BWZxUF2h4=
+
+Name: res/drawable-xxhdpi-v4/sim_icon_gsm_01_v2.spr
+SHA-256-Digest: PivedW47fstF2L4SJiwk4PEooon2syQCfwBhZc6sd5o=
+
+Name: res/drawable-xxxhdpi-v4/header_button_icon_check.pio
+SHA-256-Digest: NUcji80UfkKbrmN8Fah69R3Mp7Buwb3CvFYumT8QxM8=
+
+Name: res/color/listview_item_date_color.xml
+SHA-256-Digest: B7siJkd7pFkZR8l3rrETuK4ifFm54BGZZ2tbXh/ATkA=
+
+Name: res/drawable/phone_keypad_onehand_ic_emergency_info.spr
+SHA-256-Digest: 3bIX+3r3Q9OmqZv3wzqsjjdVnDcNSgkaire4Aq4dV6M=
+
+Name: res/layout/kddi_unwantedcallpreventionlist.xml
+SHA-256-Digest: xFNrlOsRZAc6vlUXa/vfZZObd0e4KGPFF07qQW2oAug=
+
+Name: res/drawable/search_bar_ic_contact.spr
+SHA-256-Digest: 4fS/ysqSRg71mRMfKg2rapDIft/KDzxNd9PWED5yKew=
+
+Name: res/layout/emergency_dialer.xml
+SHA-256-Digest: s8ok+As/mROFYi1LG/qqKhHowEGOF7eAgMwTeJPab9g=
+
+Name: res/layout/icon_grid_categorycontent.xml
+SHA-256-Digest: Pg18iW3WdAOTjocbX52C1d9vEhdZMcPzF6oDJggztqs=
+
+Name: res/drawable-xxxhdpi-v4/call_outgoingcall_icon.bmp
+SHA-256-Digest: ql/NqTW9EKz1b2Zc2tz2t3OsCob/BsndH3Dp/UrrVt8=
+
+Name: res/layout/tab_fragment.xml
+SHA-256-Digest: aup6fJDt1R7bY01BMc7kyA7tYjETw2vs/FkNWfIl6eE=
+
+Name: res/xml/network_service_roaming_settings.xml
+SHA-256-Digest: I5yhmls6G4Mvb7ES6KveF3Id2aK8G8yFus1qHe5zoQQ=
+
+Name: com/google/api/client/googleapis/google.jks
+SHA-256-Digest: DZI1GIk1FK+5KI/pE5pgGkwdey/tNM3w6akMRMo4iis=
+
+Name: res/xml/cdma_call_barring.xml
+SHA-256-Digest: sZSMdkbNU4RrJND//Jq1rYJ/L/nC7dV9iCwopyNwpgc=
+
+Name: res/drawable-xxxhdpi-v4/usim_download_01.qmg
+SHA-256-Digest: oxPYq6jokielIESsjU3/7yMu0i7ZCwNR0XCv99O+bXo=
+
+Name: res/raw/call_hold_vzw.ogg
+SHA-256-Digest: Nqf5vI+dynnHdtSs7BAw2BJsYN8p3BKQiY6WOh3yLvA=
+
+Name: res/interpolator/trim_end_interpolator.xml
+SHA-256-Digest: cmRMILjp76JRoIUD5RHzmreNhRS/seX92+t7iBZuWn8=
+
+Name: res/anim/dialpad_slide_out_right.xml
+SHA-256-Digest: FNh0K0qTPXnGNjqJQEeQNyUtESpBZKKPZijVLYwYQFY=
+
+Name: res/color/dropdown_item_text_color.xml
+SHA-256-Digest: RUG7umT2rqK/nRqcwuym+5u/fC4RbIkiPnvvxpPzvXk=
+
+Name: res/drawable/ic_btn_round_more.xml
+SHA-256-Digest: PTH/RnHjWSxyeoj9bOVTXJKoFg22O7c70L/tja737ko=
+
+Name: res/drawable-xxhdpi-v4/incall_button_multisim_heart_icon.xml
+SHA-256-Digest: 1U4dSMbH2PZa3UOCYaY2ehsCuTl8FUaBTKpdWCnSl7Y=
+
+Name: res/drawable/icon_volte.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/drawable-xxhdpi-v4/call_sim_icon_gsm_02.spr
+SHA-256-Digest: 7kyEqO9mRfqWjilXsBvmA13xPZBiuGNOedFmRI8/9vU=
+
+Name: res/drawable/hidemyvideo_detail_ic_video.qmg
+SHA-256-Digest: 5U4bW9O0uHWvjn0ZfeGnXGNjIvAjZIuOUQIA6OHP6bw=
+
+Name: res/drawable/list_ic_floor_airconditioner.spr
+SHA-256-Digest: TUL5I8nLMClAhcFmuI9rTtWGzflAzX24V355gfzqayA=
+
+Name: res/drawable-hdpi-v4/header_button_icon_check_press.xml
+SHA-256-Digest: IPMLtEdxwaWOtrgdb85EkGkeItXN/6y1WbgUGKhP20g=
+
+Name: res/anim/dialpad_slide_out_bottom.xml
+SHA-256-Digest: aVkJCjyVNV2sE9ZtY6rpoKK8/+d3j+gPz4mFwBUiyNg=
+
+Name: res/layout/rejectcallwithmsg.xml
+SHA-256-Digest: qQSUHCL+GkK13GJQnQtViEistiw/rfYLz+qg1x9K5RY=
+
+Name: res/drawable-xxxhdpi-v4/call_sim_icon_internet_dim.pio
+SHA-256-Digest: IOAlIxLjRyLe24ThGlRzx6jR4ZyqiymRjzD/NB8zcBo=
+
+Name: res/xml/roaming_settings_kdi.xml
+SHA-256-Digest: ct1RGC4TOrl95f+UckFAoo9zm5XnFGZelNzmswPG5J8=
+
+Name: res/drawable-xxxhdpi-v4/stat_notify_voicemail_vzw.pio
+SHA-256-Digest: ik0oAMlsHRXVyJkcaEvS0zE8UqUeP0ACiezjr2GWWgA=
+
+Name: res/drawable/list_ic_microwaveoven.spr
+SHA-256-Digest: 3Bq71yR95bSUgZZjXJExVedzt4uRirUs0XJukDFVUew=
+
+Name: res/drawable-xxxhdpi-v4/call_btn_arrow_left_press.pio
+SHA-256-Digest: eJ5YJagu2TzauKhXtWaRj0sE10Gedkr5SwgxZDKRGio=
+
+Name: res/drawable-sw479dp-hdpi-v13/tw_divider_option_popup_holo_dark.
+ 9.qmg
+SHA-256-Digest: 2qM5c/4sJOBUGOiIde4QhBiIUCEgyvYhBFuTgwCJgCo=
+
+Name: res/layout/drawer_item.xml
+SHA-256-Digest: hrF4i2oc84KkrMDE3Qd5FAjmG2jnDJL4qlYlXByIwDY=
+
+Name: res/color/default_sim_icon_tint_color.xml
+SHA-256-Digest: 7IvWKraAe4a48FvqVKSMtzzo9nhRUNursSsJPYLIwl8=
+
+Name: res/drawable/incall_button_multisim_heart_icon.xml
+SHA-256-Digest: 1U4dSMbH2PZa3UOCYaY2ehsCuTl8FUaBTKpdWCnSl7Y=
+
+Name: res/drawable/action_bar_bg.xml
+SHA-256-Digest: OroONwhLaediXo183TWB1scfq0GnsBH7UcJlRyjcUB0=
+
+Name: res/xml/wfc_settings.xml
+SHA-256-Digest: 9qDlfF7Yl+TSvoDkjZ1asn3j74Gi9pEZIMSO4zFDh40=
+
+Name: res/drawable-xxxhdpi-v4/ic_settings_white_24dp.pio
+SHA-256-Digest: O2c9CmS5Exp0zBNXd5FcGCfjxRtqvPK3U1PwXNHK9j8=
+
+Name: res/drawable/emergency_dialpad_enhanced_onehand_button_bg.xml
+SHA-256-Digest: r6xYjNtqPF3RNwyYKgXdqXupo/1wY/nEVEY3AIh4YS4=
+
+Name: res/drawable-xxxhdpi-v4/ic_btn_back.qmg
+SHA-256-Digest: 46TwrEloJQJWKB7d+sD6KHxq0NDOigbTe1Q0k9ZW8T8=
+
+Name: res/drawable/stat_sys_phone_call_forward.pio
+SHA-256-Digest: 7FOm3QEfbDxD3cYyQj4yrsvkTZc9+GOfykTxFa40zaU=
+
+Name: res/drawable-xhdpi-v4/tw_fullscreen_background_light.9.qmg
+SHA-256-Digest: cRAj9fKR95K0+c1fS1S3d+ZJUm2iDUFdmTlt4QZV0Gc=
+
+Name: res/drawable-xxxhdpi-v4/call_reject_arrow_03.pio
+SHA-256-Digest: iOLr934aXf7hySEeoZwF0Y86o96QnCgFnDHFvBwiD3Y=
+
+Name: res/layout-sw360dp-land-xhdpi-v13/dialpad_additional_buttons_sec
+ .xml
+SHA-256-Digest: TLIAiOBdur0/8io3VWW0e3djv5tT7vKFvMPGSiKuq9E=
+
+Name: res/drawable/stat_sys_phone_call_forward_mms.pio
+SHA-256-Digest: leHQ6DvL1tccms6Fm6/Yw1rPns+oooXORme9jIWN8Hg=
+
+Name: res/drawable-xxxhdpi-v4/quick_indi_memo_on_new.pio
+SHA-256-Digest: TJhvDb5yjuOa2KKOCwEIbSA2aE7XCjaUteq4NE9RKjY=
+
+Name: res/drawable/call_sim_icon_heart.spr
+SHA-256-Digest: ULuolVmcirYmOamG0h7r5N8gNJGbFSveX42bz1wDeJI=
+
+Name: res/drawable/tw_sub_action_bar_background.xml
+SHA-256-Digest: YyEkGjWMmMNWhmciCEkvDPOsSTOwBEHH29PkETExBz4=
+
+Name: res/layout/list_header_emergency_dialer.xml
+SHA-256-Digest: 7CYSGxdfePI5M+rvstnYaKXN3d6jwmiyczPdZffo9Ks=
+
+Name: res/drawable/emergency_call_btn_default.xml
+SHA-256-Digest: KQQ6kvK+DQ715UtVCSetYDmMNGPr7RJfN6uy/lIsxOU=
+
+Name: assets/eri_311490.xml
+SHA-256-Digest: 0EOzqEFk47rapURUskxbHcC0hiXcAyhnZAdK7Lf8bJ8=
+
+Name: res/xml/smart_call_settings.xml
+SHA-256-Digest: qzSd1ZNhfF3MC8ZVB/NVfQohhLiCEOZV6n7hWOyAMNE=
+
+Name: res/drawable-sw800dp-xhdpi-v13/call_emergency_icon.pio
+SHA-256-Digest: 4AU+6GcyPWqpXabERuFGKnqNHkK2Igrdg8NQNqMPQ6Q=
+
+Name: res/xml/guidance_list.xml
+SHA-256-Digest: +lxxDjv7F+Aa5SmFLbpOnvxbcnAZPhs/sUc+HpX4dnw=
+
+Name: res/drawable-xxxhdpi-v4/tw_btn_next_depth_pressed_holo_dark.qio
+SHA-256-Digest: NEX27cMN7JVPua6yLh4/p2gEM0w8DAs/JuhR+YT0js4=
+
+Name: res/drawable/list_ic_eboard.spr
+SHA-256-Digest: 4RAZAUwgymAVnXkqsSBHUUmuUezGG/vcQb9xXVve/9E=
+
+Name: res/layout-sw360dp-xhdpi-v13/dsa_select_sim_card.xml
+SHA-256-Digest: IOITgwwDckP9k5jsXX69NZaceUgLO7AUOrmwcnKOL2M=
+
+Name: res/drawable-xxxhdpi-v4/ic_jog_exit_press.bmp
+SHA-256-Digest: TSNQASBSAls9flZ4xi6h2QwQqZWtb6hIDVR+2E97KR8=
+
+Name: res/drawable/ic_wifi_signal_2.spr
+SHA-256-Digest: NNy0aCPs9cjRzKu16lMvQGEGNWLeXsa3/CHLvZDTbQU=
+
+Name: res/xml/answeringcall.xml
+SHA-256-Digest: aaCMKqJR3QLmOcay0ffRVwcL54VtdA1sZ7VixiUaB0o=
+
+Name: res/layout-sw360dp-xxhdpi-v13/dialpad_additional_buttons_sec.xml
+SHA-256-Digest: PJ69SCAkwfXNcGYrNTKJKASPvrcmofkGHeCOqgVfSRI=
+
+Name: res/drawable/tw_btn_icon_next_mtrl.pio
+SHA-256-Digest: 2qKPO8VszEg/gjT7vLUviFi5M5CLnOeBRPLh3qP5rhI=
+
+Name: res/xml/callreject_pref.xml
+SHA-256-Digest: KXElmfyxhU5VZuDB/NumahyV0d0xcV1ZSLNa3ZY4TI8=
+
+Name: assets/personal_infoLGT.txt
+SHA-256-Digest: AmuBsPMZcqzGk+TdQ9nusCzi7Gz9VRhBahJvVsRKYW8=
+
+Name: res/layout/reject_call_with_msg_icon_mode_image_dialog.xml
+SHA-256-Digest: zSIjgJ7WyfUudLHuBL831yRf7wR6a9SPSbWeo5jMwdQ=
+
+Name: res/drawable-xxxhdpi-v4/emergency_add_contacts_press.pio
+SHA-256-Digest: 424IoApH8US+EgVtW2M/D37uqKRdxiv3WxaaMz5Y6m4=
+
+Name: res/layout/dialpad_additional_buttons_sec.xml
+SHA-256-Digest: MvNfo+bflvJE83NQ0CwSiMephhb1k9f99OpJbcBt18I=
+
+Name: res/layout/emergency_sync_group_item_container.xml
+SHA-256-Digest: 1YarODQJDush3gNVuHvG4BaBH7K6EPOOgU3FOXTjKLE=
+
+Name: res/drawable-nodpi-v4/ic_jog_exit.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/drawable/hidemyvideo_deatil_default_image.qmg
+SHA-256-Digest: WoEgvEzE5DT2GcpOVxk3O3TFthGajNXEVF0Sj1iQeEo=
+
+Name: res/layout-sw800dp-land-xhdpi-v13/dialpad_key.xml
+SHA-256-Digest: 4cUwU/IkJjjAoFDxZTBlqhwQj/UZir1dNv0ks5GMS/0=
+
+Name: SEC-INF/buildConfirm.crt
+SHA-256-Digest: KXPtZBP9ZJT4aUs4ggqLtOJUTC3FoNcQEqzF2uC25xc=
+
+Name: res/layout/roaming_autodial_list.xml
+SHA-256-Digest: 4Z6+ukZxyWy8Qxk7ioC/uUoaaj/hKVvf4PnXJb6+39U=
+
+Name: res/xml/clir_list.xml
+SHA-256-Digest: OICWKpFUUa/HOAM7PJaZjsLTjt+pg9+ajzlnlBx3RAo=
+
+Name: res/drawable/call_sim_icon_gsm_01_dim.pio
+SHA-256-Digest: rtSDb661GidE77ADDhDsMOEbzHhkhR6nuLJR+/uaTYY=
+
+Name: res/drawable/list_ic_smart_home.spr
+SHA-256-Digest: pw6PVRhbh8EmRuuVZbY4UrCMhonOzKi9o0FdpMCcyiI=
+
+Name: res/drawable-xxxhdpi-v4/ic_jog_exit.bmp
+SHA-256-Digest: TSNQASBSAls9flZ4xi6h2QwQqZWtb6hIDVR+2E97KR8=
+
+Name: res/drawable-xxxhdpi-v4/call_circle_receive_01.pio
+SHA-256-Digest: kgCEUjaZUa1AM3iJzdzHZ7aXUxPJj/ciDMS3cLL3XOY=
+
+Name: res/drawable-xxhdpi-v4/ic_jog_home_press.bmp
+SHA-256-Digest: fFMRv6u89KpznCdYeQmMtbuuyJ0c2WD/qbrCnZwHVRI=
+
+Name: res/drawable/reject_call_titles_icon_add.xml
+SHA-256-Digest: 7KJZq9q1MjIjv4b2WFOUYGxzh4sWtQWNR/qfx7eZu5E=
+
+Name: res/xml/gsm_umts_additional_options.xml
+SHA-256-Digest: Mk8R1b+FSZ3M4aOoV/lA1m05xmO2Ljjfn3GKhbT3mzE=
+
+Name: res/anim/usim_download.xml
+SHA-256-Digest: TqL9CYbt2q2IGJYk7pxFh+05giyb5zEba3O70HSAwTQ=
+
+Name: res/color/edit_text_background_tint_color.xml
+SHA-256-Digest: A6liHwDHGCRlStyAxfS025tsORlLnc/pN3A7ZLU49XA=
+
+Name: res/drawable-xxxhdpi-v4/ic_launcher_sip_call.qmg
+SHA-256-Digest: eHuwTStKN/zh/4naJeU/2Ae7fE7d9XwZtdAtKx/CN2c=
+
+Name: res/drawable-ldrtl-xhdpi-v4/call_dial_call_btn_bg_left.xml
+SHA-256-Digest: gdWluGAODuVl+ah703cV2b4skyz81UJyWFqQA2/C+DI=
+
+Name: res/drawable/showbutton_custom_action_bar_background_done.xml
+SHA-256-Digest: AHuT2DKsv442Z9gwNoF5GsYxM5QdZHsQbqsgwOsNekQ=
+
+Name: res/layout/ip_call_number_item.xml
+SHA-256-Digest: mYnAmpONnYcCKEQf68Mu9gRwlhyxRUaqW4Fa2PUOHH4=
+
+Name: res/layout/layout_display.xml
+SHA-256-Digest: 7f/zLq58qlB1SQ2bGBa+CrU4JhI65MWpxE7EoPNHeaY=
+
+Name: res/drawable/vector_drawable_progress_bar_small.xml
+SHA-256-Digest: 0ARwb2K3BOYDZW7fpZ6UDbxlx3apIv+IAJmTSptDkX0=
+
+Name: res/layout/alertdialog_num.xml
+SHA-256-Digest: AyeUgYyervWyQsMUjosbwJO9qcCjbag1vznay9SYGz8=
+
+Name: res/drawable/ic_wifi_signal_wechat_0.spr
+SHA-256-Digest: y2xujfHAl5fORKZSs1Z0ucmYTZQOs+FRuUTIfHoZpvg=
+
+Name: res/drawable-xxxhdpi-v4/call_btn_arrow_left.pio
+SHA-256-Digest: HxNvno5SoD2Ez15c0u4xk/tOp48Xuzt4Kxvtv0tp6hU=
+
+Name: res/layout/vowifi_call_switch.xml
+SHA-256-Digest: ZJiOIWbAg4tTPC3z3x5SZc3Ddmvk+L634yTeJma2YiY=
+
+Name: res/drawable/ic_bt_headphones_a2dp.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/layout/dialog_settings_checkedtextview.xml
+SHA-256-Digest: q52mZ12Tz3XnKjh2oG2Pe7ZXsZlQ7t87smuSMni09LQ=
+
+Name: res/drawable-xxxhdpi-v4/list_icon_create.pio
+SHA-256-Digest: UBl028w8784xN0hwQ5lpUcqoG8DgYatE/t8mZyRZRIM=
+
+Name: res/drawable-xxhdpi-v4/ic_jog_exit.bmp
+SHA-256-Digest: TSNQASBSAls9flZ4xi6h2QwQqZWtb6hIDVR+2E97KR8=
+
+Name: res/layout/change_sim_pin_screen.xml
+SHA-256-Digest: CBDg+PIvY48X1C2zL+6hiXABdtYz7mxBiDVthR1MiMU=
+
+Name: res/drawable-xhdpi-v4/call_outgoingcall_icon.pio
+SHA-256-Digest: EO5UNQEGeXYqgTh2KLgRinDd7FOPKDJZqVhFMP7NSFI=
+
+Name: res/xml/spam_call_settings.xml
+SHA-256-Digest: D01AuyN/bD8nS5xdA4qxSFClf5r7Q5CoU/dykyEfMjo=
+
+Name: res/drawable/list_ic_bluetooth_pan_network.spr
+SHA-256-Digest: qh5+vzj3kzyGT97T7hh1VXffRI9EGK5icipUxIOSPp4=
+
+Name: res/layout/ip_call_number_add.xml
+SHA-256-Digest: iecg43pQQLNVZrT1Z2QhzVn5WzKu+YI47AWY0NGRAys=
+
+Name: res/drawable/tw_list_icon_minus_mtrl.spr
+SHA-256-Digest: iOssfhPMJqh/koG0Ey1HRL8DewWbjY4a2tgidVTnFVc=
+
+Name: res/layout-land/emergency_contact_item_container.xml
+SHA-256-Digest: QCOEQndMXRR4XaPeWERM0xJ1C+qE46aqyQisXPk+JQM=
+
+Name: res/layout/custom_preference_badge.xml
+SHA-256-Digest: B9RT5F2lYcxf1DfJvvCgXh7KEv3w63eFdBQKGxY1C7E=
+
+Name: assets/use_agreeKT.txt
+SHA-256-Digest: Vyb3TQZsU3g46IKue2Fzo/aO2frFezyCpHRFnY3ngGE=
+
+Name: res/anim/dialpad_slide_in_right.xml
+SHA-256-Digest: Usn9tyfD4+xEhCnbrdySbKRx50Ixd4doVESGkB8c1s0=
+
+Name: res/layout/custom_title_dialog_callbarring.xml
+SHA-256-Digest: tDX/FvfF4yrcBmQ6G0cDe04YDbnBA4+5I0kBkH5Cx5I=
+
+Name: res/layout-land/dialpad.xml
+SHA-256-Digest: d3G6QGN6RFM0sdSgwudynOtzifiMDGGZmeZxAoOPWSU=
+
+Name: res/layout/wificall_dialog_opl.xml
+SHA-256-Digest: aKS78Vp9Uo1rQY3OLf3WTVlBR8ZCf1Ka1q8bt7rDBEA=
+
+Name: res/drawable/button_selector_pre.xml
+SHA-256-Digest: 2bWslbAElqkgUVQEo+XOjNjk0BIV3gH509ppnZ5vnvI=
+
+Name: res/layout-sw360dp-land-xhdpi-v13/dialpad_key_zero.xml
+SHA-256-Digest: xUHKAyQMgq/Kz7eq/cUF717zXTwy4fGOy5d22lyN7R4=
+
+Name: res/drawable-xxxhdpi-v4/ic_emergency_callback_mode.pio
+SHA-256-Digest: kSs+trVyFlJUEoGCCJ/HLkISZqSnecvNccp6yBnnC4k=
+
+Name: res/xml/timezones.xml
+SHA-256-Digest: pnAWsG2egq1KH5JR3T6TETBDncSRY1444QID5IQJ650=
+
+Name: res/drawable-xxxhdpi-v4/list_icon_create_pressed.pio
+SHA-256-Digest: UBl028w8784xN0hwQ5lpUcqoG8DgYatE/t8mZyRZRIM=
+
+Name: res/xml/guidance_roaming_list.xml
+SHA-256-Digest: vpdHPCVrpxPUXVGE8bSck++fFTDmDM1o8csUmsFSqIQ=
+
+Name: res/drawable/emergency_dialpad_button_bg_rounded_rectangle_oneha
+ nd.xml
+SHA-256-Digest: 8aXEqaJLWQZ5A+9ujpug7ZyaLRHfqyrIjo7Jk9lhgZE=
+
+Name: res/drawable/list_ic_pc.spr
+SHA-256-Digest: N6ETMXo0BZdqDHF2jHRWWRwTL2VxLAC1FsEwbsotznY=
+
+Name: res/drawable/emergency_dialer_bottom_btn_ripple_bg.xml
+SHA-256-Digest: mBGx6PBope0oZ1Qixy9VutBD6l8+ihEAVzFYGdxaA7c=
+
+Name: res/layout/answering_memo_list.xml
+SHA-256-Digest: vhWVfkrCwcJGuTAuLkgOcKXW1dQTz5TjMfQhHZCQ33o=
+
+Name: res/drawable-xxxhdpi-v4/stat_sys_phone_call_forward_sms.pio
+SHA-256-Digest: leHQ6DvL1tccms6Fm6/Yw1rPns+oooXORme9jIWN8Hg=
+
+Name: res/drawable-xxhdpi-v4/header_button_icon_plus_press.xml
+SHA-256-Digest: pYt2Y4VNbyBXAyNwnyRWryORTIDJWOGQLmLT6xHcauk=
+
+Name: res/drawable/action_bar_bg_image.xml
+SHA-256-Digest: xQ+jWJebS5f7tuobHngVSrm9OAYXhOFRctdL4o2ACvc=
+
+Name: res/anim/dialpad_slide_in_left.xml
+SHA-256-Digest: 1yWR21ATDbT3RRHsRUtdA5XI96wV783CkNj3cHI5wU8=
+
+Name: res/drawable/call_dial_btn_bg.xml
+SHA-256-Digest: f1B/oB8G+U2KyTM7gPAILKCi8Z1CW+1+a/4ef3aRJC0=
+
+Name: res/layout/multi_list_item_single_choice.xml
+SHA-256-Digest: A1uNFLzlmDWLo+1YZ7zUMbxGUHDM1BsZ+e1FHGKKqZ0=
+
+Name: res/xml/lgt_photoring_settings.xml
+SHA-256-Digest: 05YjLhiHonnH8t9KU3GHHY8hgvVjIPWh+5jGl1scAXo=
+
+Name: res/drawable-mdpi-v4/header_button_icon_cancel_press.xml
+SHA-256-Digest: tcSwZx26WgX5b3hyfq60Vr6A+XzAzqyrj2iqHxBKlDk=
+
+Name: res/drawable/emergency_service_item_off_button.xml
+SHA-256-Digest: VeERUouYO6BvWngGtpntzwJAGrsD1d3X6Qie0JhkP/U=
+
+Name: res/drawable/ic_wifi_signal_1.spr
+SHA-256-Digest: 3hP3MAqQpJ/gegU0AWimqsrkzRZ88aDqx88ZnHMAEiI=
+
+Name: res/drawable-xxhdpi-v4/call_outgoingcall_icon.pio
+SHA-256-Digest: WckQ+dyNEz+0c6iTh70c86ynd1/N2/MNzggPtUjJCIE=
+
+Name: res/drawable/list_ic_accesssim.spr
+SHA-256-Digest: fJyelkTx7nwUhErqkyJxoG//u7YLrwlgb67iNv7Ufds=
+
+Name: res/interpolator/trim_start_interpolator.xml
+SHA-256-Digest: UXxTUumOR8ineacq9swWkWCawtu6YFpu8yUTky5gZRY=
+
+Name: res/drawable-xxhdpi-v4/call_about_ic.spr
+SHA-256-Digest: wcCUUmiFHLfUXLOrRhpx+eQF8hl95iQJpcmRXbUEkGg=
+
+Name: res/xml/kt_added_service_list.xml
+SHA-256-Digest: s9nLeYXDT+OJJ/kLkiIFNPNwZ/vSJsa30nqxUXyKDDg=
+
+Name: res/drawable/list_ic_airconditioner.spr
+SHA-256-Digest: MZ1EyOgw0wF1Tvk0Y/K7Ut7jLTmLvkE/nWEq+oGB7h8=
+
+Name: res/layout-land/answering_memo_list_item.xml
+SHA-256-Digest: XWcacgJLAmowP5jZH1b18YScwN0eBEVVMbngmSC8zgU=
+
+Name: res/layout/custom_listpreference_row.xml
+SHA-256-Digest: /LgVkgYucyF1nsKghlFeEnJPXBVEeBhi5X05Y6MrCrg=
+
+Name: res/drawable-xxhdpi-v4/call_sim_icon_internet.spr
+SHA-256-Digest: Z86Wj2MQB+pDnVQSqLJtXWwKraMgCGBsFza8e/kJOg4=
+
+Name: res/drawable/list_ic_mouse.spr
+SHA-256-Digest: 7DyTXOlkHnJNo4lwsI//RJ4mf1UOpTGggnQKrbLSiV0=
+
+Name: res/drawable-xxxhdpi-v4/ic_menu_change_password.qmg
+SHA-256-Digest: +jKWnX/r/WfFmW6Nzin/CkRMWs6HV023U0oi2zkAZS4=
+
+Name: res/drawable/tw_list_icon_create.xml
+SHA-256-Digest: 6c+81Tt+kIEgXI7gukS8n6i8vtesdrTL416XXFWq+Tc=
+
+Name: res/drawable/list_ic_camera.spr
+SHA-256-Digest: HVPq2b4r6nlnVnK/2AAlziCyO+QGW9WTvKYt73IVBxE=
+
+Name: res/drawable/tw_background_holo_light.qio
+SHA-256-Digest: ZalTN66eIBN2UC3lQGDkbhVfDo5UckI9Ca6BqE8+J+M=
+
+Name: res/drawable/popup_cancel.spr
+SHA-256-Digest: eTArou4+KUEbYfu51EVEAPCi79E457XeBn9/kVskx/8=
+
+Name: res/xml/call_type_select_forwarding.xml
+SHA-256-Digest: vvCGIB9WzHr44KpgsnH6FM0Vcuba5AUoOylcUhDz3s8=
+
+Name: res/drawable/emergency_dialpad_button_bg.xml
+SHA-256-Digest: SXCwjMdm+xKooRlNYcKoh9Z5exCuK130yM2AJJjvnSw=
+
+Name: res/xml/callforwarding_list.xml
+SHA-256-Digest: sZfd1D3YxahZH2XToeI9tPqIRjTlLqfyRrLgC7OT6r0=
+
+Name: res/drawable/reject_message_tiles_icon_add.pio
+SHA-256-Digest: oOYVK0hrGER0xizI1wqBSAOfZ4TVxKeJg6DcrlLw+eA=
+
+Name: res/layout/preference_widget_radiobutton.xml
+SHA-256-Digest: YUahFGpyklBS8iu4giQLErwLbODgXii59eA6C+Zh1iw=
+
+Name: res/layout/sec_autorejectitem.xml
+SHA-256-Digest: 2nu/5xXagsxUlZ9RD5ocPgjEU6w3JNUD1aLEhuiTh1s=
+
+Name: res/drawable-sw800dp-mdpi-v13/call_outgoingcall_icon.pio
+SHA-256-Digest: 3KWSe5Pa7q4moUJMKtIEJ7IkrBfnQ6g/ftPYsJExORM=
+
+Name: res/drawable/hidemyvideo_attach_take_a_picture.qmg
+SHA-256-Digest: w/PWJjZI6hTx80hC6oZ3zrFGlCiIu2t0Y49B1kLXrmk=
+
+Name: res/xml/voicemail_list.xml
+SHA-256-Digest: pKuVEpdMbFJOOLytyfHU5hQb6ecbJ274xsmxwzpwqzo=
+
+Name: res/xml/autocsp.xml
+SHA-256-Digest: m5KNPjAjZktnJiqCfj+FKu2MwltIYPD2TXz1PziyRO0=
+
+Name: res/xml/accessibility_settings.xml
+SHA-256-Digest: 4lNWB1kU1yDSsryYbU1zpMZop62Zd/y1lvX7ErV/0SI=
+
+Name: res/xml/callforwardingpay_list.xml
+SHA-256-Digest: iEUsPNHyrgekneX8dFh6EHcaDgM6aAEPKA29YsamhTo=
+
+Name: res/drawable-xxxhdpi-v4/call_dial_btn_call_cdma.pio
+SHA-256-Digest: 8Y1HmzSgkdcp3Hp7cTP6auU700neiCG8Xauv5DQXdGo=
+
+Name: res/drawable-xxxhdpi-v4/call_reject_arrow_02.pio
+SHA-256-Digest: tDk6UEmSx9TgvZXG0B8WLtCtARm3hD3odfH6ZHTnTXg=
+
+Name: res/drawable-xxxhdpi-v4/call_sim_icon_office_dim.pio
+SHA-256-Digest: /ONeJRAO4BW3pceItltT4/8Q4Ou/XI1B8WOSfHjEy3A=
+
+Name: res/drawable/progress_small_material.xml
+SHA-256-Digest: 9RXiNbA13xjtzu9Z5KBppBYV7pIysu9xD7A6rMm6vY0=
+
+Name: assets/personal_infoKT.txt
+SHA-256-Digest: 8C5o8cdSPDs8TkC/AEUAmLAKy7Q/mLx88SN+NHap7Ow=
+
+Name: res/drawable/tw_btn_next_depth_holo_dark.spr
+SHA-256-Digest: 610VkYOmswrvuIP5aOW26NWFdbTYw3WqfLLHFjEmFSg=
+
+Name: res/layout-land/answering_memo_list.xml
+SHA-256-Digest: vhWVfkrCwcJGuTAuLkgOcKXW1dQTz5TjMfQhHZCQ33o=
+
+Name: res/drawable-xxxhdpi-v4/usim_nowork.qmg
+SHA-256-Digest: UyG7j9KQGt1tWJR7odgkwE9w/GxCdemaCYaV15kKftY=
+
+Name: res/drawable/list_ic_gear_circle.spr
+SHA-256-Digest: 7QJ32jr0hzrS2ownUnKBdkzf1zuXFGA37K7Ra+IojLM=
+
+Name: res/layout-land/dialpad_view.xml
+SHA-256-Digest: +YllWH5+PS+AHGkrOjEiNrgkjuZi0+03K3nshwYmCqo=
+
+Name: res/layout/answering_memo_player_layout.xml
+SHA-256-Digest: Vz1+BHPtl4nWduznV6CHkUlugvYKxlLFDclgsCvqjbw=
+
+Name: res/layout/photoring_screen.xml
+SHA-256-Digest: WoneqarbxvGXbOiEZo2RRdzKS2Mc0DkDTr5RhepJ6zA=
+
+Name: res/drawable/usim_nowork.qmg
+SHA-256-Digest: b/L7SwzZF16ZsjpxzxwMKNC7r/BX1eB5TAqhLmaR6j0=
+
+Name: res/drawable/phone_keypad_bg.9.qmg
+SHA-256-Digest: nQJcfNjEs3gHc7DzZdvFAm61/K/0CaUz+pNcKb797Gw=
+
+Name: res/layout/sim_ndp.xml
+SHA-256-Digest: Oa7ss0ms1TG9Evqg5zM2BV5StLn/ZiNkskck8BsvA7c=
+
+Name: res/xml/carrier_select.xml
+SHA-256-Digest: F6PyFOCEVOPRrqceI78pUO4EN6hcAI69taQK/fAt+Dw=
+
+Name: res/drawable-xxxhdpi-v4/call_btn_arrow_right.pio
+SHA-256-Digest: Uy6qCCJl18mEclfgU/lOooqHaLvkY4+GcFiNwKnBR8M=
+
+Name: res/layout/mobilenetwork_simple_list_item_single_choice.xml
+SHA-256-Digest: aKYk3ThtZmxlLBPc4jD86Bve3KnMpG4d14Mhtubi2z8=
+
+Name: res/anim/dialpad_slide_out_left.xml
+SHA-256-Digest: XR2pIFKZHNQYfQqC+EKHP13An5y9WaHbWfD1n8fBUS4=
+
+Name: res/layout/answering_memo_list_item.xml
+SHA-256-Digest: h41SJsbglMKxaoZ01vati2FK6ku/TkPaipa0w59euhA=
+
+Name: res/layout/dialpad_key_zero_onehand.xml
+SHA-256-Digest: 8qQ3BxosC2PQA8+56dguPuDLRXY99IYoBFH6HR+azW0=
+
+Name: res/drawable/tw_ic_back_mtrl.spr
+SHA-256-Digest: I6uC5SDP4cUOiEsPA+tojzX0ZbiuYXqzp7tUsP2+mzA=
+
+Name: res/drawable-xxxhdpi-v4/call_circle_arrow_left_02.qmg
+SHA-256-Digest: GHR03EA6RfzN5NkFr6pC5b5miVkdhZX7RcyUgPhfFEg=
+
+Name: res/layout/ip_call_number_delete.xml
+SHA-256-Digest: eEiV+g9v2OKUdojyjOuEt3iyxe98BefApdecrwsxnVA=
+
+Name: res/layout/vowifi_pref_list.xml
+SHA-256-Digest: ai7dfi0lYo1RFj1Q1Z+UVQpZMoJa/CGhmN2P8tSW2pA=
+
+Name: res/drawable/ic_bt_misc_hid.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/drawable/incall_button_multisim_internet_icon.xml
+SHA-256-Digest: HC3Qz6iX0OXFiyYXQuw9ZghL8k0IHN7oogGVpJKr1mo=
+
+Name: res/drawable/callsetting_unsaved_number_image04.qmg
+SHA-256-Digest: x8oU5rMPR8lFRT/n4ErY9xkd6LH0Q4rz6hNpC0Im4MM=
+
+Name: res/xml/arrival_callnetwork_list.xml
+SHA-256-Digest: 1WQwzHy/0I2sjQg+nwp86FYMFEHGAZhTNXXL4E8oq2g=
+
+Name: res/drawable-xxxhdpi-v4/usim_download_06.qmg
+SHA-256-Digest: yfcFhJM9ySyOLqG/lyCh7HSPZM269Zn94jqhc6cIwo8=
+
+Name: res/drawable-xxxhdpi-v4/fab_green.qmg
+SHA-256-Digest: H/pMVxillxcWkGAFkX75PExnR1LVxGlgPPPJONjTZLo=
+
+Name: res/layout/lgt_roaming_popup_2_4.xml
+SHA-256-Digest: Ji0f8Z4P8fIZHcfdVdsdwsJ8N+ed0PZSRImIZZYoOho=
+
+Name: res/layout/dialpad_view_enhanced_onehand.xml
+SHA-256-Digest: sLHybDixVGHST3fxwq8dx8WernWmIBgwIDSA4YDrvec=
+
+Name: res/drawable/tw_action_bar_icon_help_holo_dark.pio
+SHA-256-Digest: idT7sbFeO9ORPmfM8eVq/S7WtJWN8eGIBPzHtUN9ZFg=
+
+Name: res/drawable/sec_call_settings_default_image.spr
+SHA-256-Digest: CF54EPZcFpAANWYJVqBDVvCX0E/szKDYO/GGoF7y1Ks=
+
+Name: res/drawable/ic_wifi_signal_0.spr
+SHA-256-Digest: Qk0HNkXWu8CVH787dmnCysZPAeD2MfF0VggvcZiikS4=
+
+Name: res/xml/international_enhanced_4glte.xml
+SHA-256-Digest: Ko3t4kLDo3QE4UV6RFtg8O7ha3iCd9SlR+OCMFKqxBI=
+
+Name: res/drawable-xxxhdpi-v4/call_settings_default_image.pio
+SHA-256-Digest: LlVQisuI8GUcntyKZgYzbYo0huA/w0x/wsD9lFxUfeU=
+
+Name: res/drawable/ims_conf_delete_icon.xml
+SHA-256-Digest: UuKTMCnaI94EGlWbxMSTdJtBgMk3D2wctr9U6qNrib4=
+
+Name: res/drawable/tw_ic_ab_back_mtrl.pio
+SHA-256-Digest: UM1lZeuG7VmrkpnKwHLD4hCcdPBfGegmNJriKkuKssc=
+
+Name: res/drawable-xxxhdpi-v4/tw_ic_ab_back_mtrl.pio
+SHA-256-Digest: owRC54H9yzQkJahXy3fsvAmMsaHygBy4UIhPVsi2pDo=
+
+Name: res/drawable/phone_keypad_onehand_ic_arrow_right.spr
+SHA-256-Digest: Uw5OQPzKfGlPRIfGQ1WKDXJ0A076i2KWtD/htYuPu4E=
+
+Name: res/layout/autorejectonconditions.xml
+SHA-256-Digest: SnpLg4KDGoqxCtj1yqTvksaKEvAtuu/r2zuHKhiYAXo=
+
+Name: res/layout/phone_number_locator_help.xml
+SHA-256-Digest: TKSH77zNTCiGvQsmVKtIuqBZc5b/63oKiDQUpz1IFyI=
+
+Name: res/layout/reject_call_with_msg_modes_item.xml
+SHA-256-Digest: 5s/rbXZhy3mfZcY2F3nprsT4mfVVGSEpQkwLzIKZGek=
+
+Name: res/color/tty_item_text_color.xml
+SHA-256-Digest: YurLXvtbcAS11wCjKh4bP7ubRZO88IWIDQD5EXVyefg=
+
+Name: res/layout-sw320dp-hdpi-v13/dialpad_key_star_pound.xml
+SHA-256-Digest: UhpFb0R6wALizmv9AE9j02H7ZAFChnLLKvw/p4UGh2E=
+
+Name: res/drawable-mdpi-v4/no_item_v.qmg
+SHA-256-Digest: X8yB48hJYu/y2JPBVtnwKy/wP5s18zv4zIcJyxaFC0w=
+
+Name: res/drawable/emergency_item_button.xml
+SHA-256-Digest: rDQETFrHYGKP3nkkZJp5Dwx3qcB46Te5e6AJkXsF9tI=
+
+Name: res/anim/sec_activity_close_exit.xml
+SHA-256-Digest: avPXM/Pq4Gs5u7ujgQnA6re1pdIXmCrn/Usa8IC9odQ=
+
+Name: res/drawable-xxxhdpi-v4/header_button_icon_plus_disable.xml
+SHA-256-Digest: uQF/lEggWsq93CVotF0mub4X3wa8BpA7Qlv4eKL0Z4c=
+
+Name: res/xml/iddprefix_list.xml
+SHA-256-Digest: OknmAJEJoXc6YHT5bfR6gCcmDmYmBh+XWVza3lNip24=
+
+Name: res/layout/search_button_box.xml
+SHA-256-Digest: lb3MxCDynruTxBoxTe1XSWpp4tSOoSVoNpSMIhq2HS0=
+
+Name: res/drawable-sw598dp-v13/ic_notify_auto_blocking_mode_call.qio
+SHA-256-Digest: +LQPBS/LL3wIdmPNLxRk6RwjHfOXB7LA7Fi4A7hUcio=
+
+Name: res/layout/dtmf_twelve_key_dialer_view.xml
+SHA-256-Digest: GRnKOSsl8+C6wmjxSVguAQ7bv2ZQJyCLKdnwj9CfvJk=
+
+Name: res/layout-watch-v8/settings_with_drawer.xml
+SHA-256-Digest: Zw7LNFziOLxO7Niwz8uk7diIT+a7GgFTpQNRhMrgBqE=
+
+Name: res/layout-sw380dp-xhdpi-v13/dialpad_additional_buttons_sec.xml
+SHA-256-Digest: 1BEHXqkua/3EHptfVjxIhy3ZPjoWD4Qjjaq1JGlrA5M=
+
+Name: res/drawable-xxxhdpi-v4/emergency_add_contacts.pio
+SHA-256-Digest: jtk6OemjaQ1VIacgXIgde8Rx6ibiFfczIBeu+6n1Q2E=
+
+Name: res/drawable-ldrtl-xxxhdpi-v4/ic_emergency_callback_mode.pio
+SHA-256-Digest: 8e+SmX7CNxpbaWumFJS1szZr6JZz06qoWO/qxJKDUV8=
+
+Name: res/drawable-xhdpi-v4/header_button_icon_check_disable.xml
+SHA-256-Digest: vj1DpW+/ZRQVF0Q1cBGmtlI3+HncR2rVflveJRHp4LY=
+
+Name: res/layout/enable_sim_pin_screen.xml
+SHA-256-Digest: Se3uGJzuIh76EzyclpYpjaChrwwWCjEcB6JtVLcjCfs=
+
+Name: res/drawable-ldrtl-xhdpi-v4/ic_btn_back.qmg
+SHA-256-Digest: 8ilsCEcD5/oautBVnhe60Gfb2qCfa0rKDmTstBmEjMA=
+
+Name: res/layout/kor_open_data_popup.xml
+SHA-256-Digest: F9Bvy5ILZ2i8u9j5EDTQpC6FvmwRognEOmcRWj+ZgPo=
+
+Name: res/layout/spam_calls_legal_information_message.xml
+SHA-256-Digest: ioOY2LVqlUKHaoD4Nq9I0HozgwF479bnH15JU51mqsA=
+
+Name: res/drawable-xxhdpi-v4/emergency_callback_icon.spr
+SHA-256-Digest: OLYkXstHxKyDi+SMzLT8SpLL2E5Y68ATziE6I5fhOMo=
+
+Name: res/drawable-xxxhdpi-v4/call_sim_icon_mms_dim.pio
+SHA-256-Digest: 2tzqeEriuCliena1Nl1YJqwtafVTCY9uE7Ax+ZCFTws=
+
+Name: res/drawable/ic_back_arrow.xml
+SHA-256-Digest: xd2djdrW7lFfwcyZIpTEWcIK0UkVdEAB52LzEdPrJV4=
+
+Name: res/drawable-xxxhdpi-v4/call_reject_arrow_01.pio
+SHA-256-Digest: jDvYB7JOPmf7Cv2k9pWBBjz7CuiSn3oWi++x1IDnGzc=
+
+Name: res/drawable/call_back_icon.bmp
+SHA-256-Digest: FZbaqxuse1W5uYZTvyCMPdLyhInBpTKTIRszFHB51OI=
+
+Name: res/layout-sw360dp-land-xhdpi-v13/dialpad.xml
+SHA-256-Digest: YNNJCfmrfGB7WYzHzvwMkPaVeLDk83b/ZfRYfZRv06U=
+
+Name: res/drawable-xxxhdpi-v4/tw_btn_check_off_holo_dark.pio
+SHA-256-Digest: K13wJynA77w8K8v9VY9L34TR069FBDeWNZ77DqhDVWI=
+
+Name: res/drawable-xxxhdpi-v4/stat_notify_voicemail_urgent_vzw.pio
+SHA-256-Digest: 9thR8kqyIJNrPvpM0xP+pd+qvPRW0JrixhzuKM/DCtE=
+
+Name: res/layout/simple_list_item_single_choice.xml
+SHA-256-Digest: z8oG4N6iqPiSPr9yY0jyMMbCVnIAbLGYzepp4F9O0FU=
+
+Name: res/drawable-xxhdpi-v4/call_sim_icon_home.spr
+SHA-256-Digest: CYkVazFh6dBdREo36li9w5JMEwB2L5P76DgAEJDLFos=
+
+Name: res/layout-sw360dp-hdpi-v13/dialpad_view.xml
+SHA-256-Digest: +s3LsT62V5hZAabrWfz5FO7QmTHgM41QKtBhdcf5v2c=
+
+Name: res/drawable-sw800dp-mdpi-v13/emergency_dialer_bg.xml
+SHA-256-Digest: THkTsPPWUiUsfpLstxmtFa2szV6f8I2bYEe9TPojbsw=
+
+Name: res/drawable/list_ic_mono_headset.spr
+SHA-256-Digest: 2+gei9uSN/LQR1zag2wrQ8ArZdv+spN8zk9f+0hx6/U=
+
+Name: res/drawable-mdpi-v4/header_button_icon_check_press.xml
+SHA-256-Digest: IPMLtEdxwaWOtrgdb85EkGkeItXN/6y1WbgUGKhP20g=
+
+Name: res/drawable-xxxhdpi-v4/emergency_ic_emergency.pio
+SHA-256-Digest: K5rEPRx5e2YNuDRDG3HSHb+t0NYFw2LVjp3s8SnPtpo=
+
+Name: res/layout/custom_action_bar_up.xml
+SHA-256-Digest: mcsmlU0N3YnhoKtYj+tEKWA9ft4aIIE7Qx/tobzkPR4=
+
+Name: res/drawable/unsaved_number_anim.xml
+SHA-256-Digest: 0kJJrki3VlRDGD3fxXfhurmcE4Va3NtNC/nQpVWlg7g=
+
+Name: res/drawable/showbutton_background_bottom_item_bg.xml
+SHA-256-Digest: 6rJH00twsG8h40Voev16snuChjF3lxKi+cyuEzmSWw0=
+
+Name: res/layout-land/dialpad_key_zero.xml
+SHA-256-Digest: 1df8Y24lP1q2ha3Ok51VI6YmSKEcgSVAGCVG0KfrZrI=
+
+Name: res/drawable-xxxhdpi-v4/header_button_icon_plus_press.xml
+SHA-256-Digest: pYt2Y4VNbyBXAyNwnyRWryORTIDJWOGQLmLT6xHcauk=
+
+Name: res/drawable/list_ic_kimchi_refrigerator.spr
+SHA-256-Digest: eLa8m/FLxY3mvw4uQz9iA53+ZA1lwnd3S0aKev5BM1o=
+
+Name: res/drawable/player_icon_play_selector.spr
+SHA-256-Digest: UvMrd06hPPJkvWbvyK4SKSTDl8ehzXBbZkLFhVvNAeY=
+
+Name: res/drawable-xxxhdpi-v4/usim_download_05.qmg
+SHA-256-Digest: JRdEpD9VRiLAQmzoqsY0GhdBRSXa9jFWrHk7af5jgdI=
+
+Name: res/drawable-xxxhdpi-v4/ic_notify_auto_blocking_mode_call.pio
+SHA-256-Digest: GufXjHwDXdmVUbA8PdzxtVRSTotvlTm3vSlhfew9B+Y=
+
+Name: res/drawable/about_phone_button_background.xml
+SHA-256-Digest: BfYPVf3Ky3NSrMjN+mB3Rr506pTctev1ZspHOkfIJO4=
+
+Name: res/xml/cdma_call_waiting_setting.xml
+SHA-256-Digest: lNxr79B/cFJtLsCrPY/9wBmYTF2GH+YKySZPfvxkZOA=
+
+Name: res/layout/photoring_agree.xml
+SHA-256-Digest: kWKlNaMfC70X6UeUXzmtCaZNlZ+rCaJSpdOTk5QdEGg=
+
+Name: res/layout-land/about_phone_activity.xml
+SHA-256-Digest: jvx7/gsfkbQ4UqbxF/u7t1YwyIOXBBeNccbi+SK7NI4=
+
+Name: res/drawable/rogers_wifi_help_icon.pio
+SHA-256-Digest: MPoovYW2z4KBlXKhcNLOO1Drj8yp6ip0AkZM4dRMfi8=
+
+Name: res/layout/preferred_network_details_view.xml
+SHA-256-Digest: s/Mtu4Tgzm5dwPFIu628ir68v6V1QDeCo4WXk2Ntn0s=
+
+Name: res/layout/ims_conf_call.xml
+SHA-256-Digest: ZtdubKQuwHggpU0ADQ++nm5zwhKIuvhMHZkDYtl4B0E=
+
+Name: res/layout/global_data_roaming_access_top.xml
+SHA-256-Digest: bfxSNfZCmMfZofvw7eJy9B/m/Qt38OohFOULzIlmLoE=
+
+Name: res/drawable/emergency_service_item_on_button.xml
+SHA-256-Digest: IhkcOs4STan3/OI5Fa4CkzMLqkYV7x/zko+u5Boz5Jk=
+
+Name: res/xml/incall_sound_eq.xml
+SHA-256-Digest: yMqFEqaWiJm5Av/69bMd2WRE973gQ9nx/D+LKnoFJtY=
+
+Name: res/drawable-xxhdpi-v4/incall_button_multisim_office_icon.xml
+SHA-256-Digest: yJAlbIWcDwJS/IUp7pELhWWkvRC+FBiRk9mQiGm5dMQ=
+
+Name: res/layout/kt_roaming_popup.xml
+SHA-256-Digest: zTmLKcoe/TdV1iUQctFrrLDvhO5ILadgRBJBp5wJsVE=
+
+Name: res/drawable-xxxhdpi-v4/stat_sys_tty_mode.pio
+SHA-256-Digest: u8n0/1+8NbkCMe/RFdMwDxZIFb80Wr1fsoHay1NX+pw=
+
+Name: res/drawable/list_ic_av360r7.spr
+SHA-256-Digest: pRmLrm9UM4y3o679CTv/BowRXSNudB5GY913ug/Hsdg=
+
+Name: res/drawable-xxxhdpi-v4/header_button_icon_cancel_press.xml
+SHA-256-Digest: tcSwZx26WgX5b3hyfq60Vr6A+XzAzqyrj2iqHxBKlDk=
+
+Name: res/layout-land/dialpad_key_star.xml
+SHA-256-Digest: MfWIh6nU+w/TNk7zmmRnrYT0OF4NcV+iPl3HBBSy2XU=
+
+Name: res/layout/emergency_sync_contact_item.xml
+SHA-256-Digest: SjFCyWy24BY2ClQ14hbk1lBWUCMtv/LdKHMi1bKI2ls=
+
+Name: res/layout/setting_mobile_data_alertdialog.xml
+SHA-256-Digest: UgrXEAOA3QzH/6TqvCHsrcyNRCak2lbB+p0fR19D5Hg=
+
+Name: res/raw/guidance_kor.ogg
+SHA-256-Digest: uzbN+6tQLkc26mDigGNqaiTA9FLPmgTvTwkOhx2Ie1k=
+
+Name: res/drawable-xxhdpi-v4/stat_sys_phone_call_forward_mms.pio
+SHA-256-Digest: c+qLuYKd0+4QnAckYb9+iyWHTUB0MeiordGOMFitK6s=
+
+Name: res/drawable/videooverlay.spr
+SHA-256-Digest: X2GDnCudIxDv8U7EhTcWYlAgobOPH1NkOAALiH3CqwE=
+
+Name: res/layout/preference_unclickable_layout.xml
+SHA-256-Digest: fWuYg1U2PoJ+GHOWf1LUvYO0lTB5x1mzXvXDPvZARMY=
+
+Name: res/xml/roaming_callsettings_kdi.xml
+SHA-256-Digest: fsMDccclmfr6UIw8gRWnvqJkhVw5cRPapeiba4KC84g=
+
+Name: res/layout/incomingcall_image_handle.xml
+SHA-256-Digest: 7oXaw8gtBuA4DBvue3hvigZAg3rz5fNH+EMCbkALOXs=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher_contacts.qmg
+SHA-256-Digest: bibi6vd6QVdcOAS1XBAH1CnL9pA8EVUNjpdGX7Kdd4s=
+
+Name: res/layout-sw360dp-land-xhdpi-v13/emergency_sync_group_item_cont
+ ainer.xml
+SHA-256-Digest: FkCQedF1Lj+yn0mFFxcExqE0J2oXFkRrH0TDMmHYv8k=
+
+Name: res/layout-sw360dp-xxxhdpi-v13/dsa_select_sim_card.xml
+SHA-256-Digest: zmVxu7GAmubnX+TbOc71Eri4mCC5sPIqjKXUAkzGxLE=
+
+Name: res/drawable/answering_memo_seekbar_drawable.xml
+SHA-256-Digest: dxbsgCjehidbgyOQjyjRXH91F0NMohX88k7e4S75VTc=
+
+Name: res/drawable-xxxhdpi-v4/call_circle_arrow_left_01.qmg
+SHA-256-Digest: GupTymaKwHEqW6SpwraQm0OUSjy/0l+EpQAeDc8jMjY=
+
+Name: res/layout/get_pin2_screen.xml
+SHA-256-Digest: lvfz/wil34haWs9W10shDsvbYg+lMkJHUqY9KHzO60o=
+

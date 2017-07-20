@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/emergency_contact_empty_item" android:focusable="true" android:clickable="true" android:layout_width="@dimen/emergency_sync_contact_item_width" layout="@layout/emergency_sync_contact_empty_item" />
+    <TextView android:textSize="@dimen/emergency_contacts_empty_text_size" android:textColor="@color/emergency_empty_text_color" android:gravity="center_vertical" android:id="@id/emergency_contact_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/emergency_empty_text_margin_left" android:layout_marginRight="@dimen/emergency_empty_text_margin_right" android:text="@string/emergency_contact_empty_info" android:fontFamily="roboto-regular" android:textDirection="locale" />
+</LinearLayout>

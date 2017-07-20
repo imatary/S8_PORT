@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="phone_in_ecm_notification_time">
+        <item quantity="other">အချက်အလက် ချိပ်ဆက်မှု %s မိနစ်ကြာ မရှိပါ။</item>
+        <item quantity="one">အချက်အလက် ချိပ်ဆက်မှု %s မိနစ်ကြာ မရှိပါ။</item>
+    </plurals>
+    <plurals name="alert_dialog_exit_ecm">
+        <item quantity="other">ဖုန်းမှာ အရေးပေါ် ပြန်ခေါ် အနေအထားတွင် %s မိနစ် ရှိနေမည်။ ဤအနေအထားအတိုင်း ရှိနေစဉ် ဒေတာ ချိတ်ဆက်မှု သုံးသည့် အပလီကေးရှင်းများကို သုံး၍ မရနိုင်ပါ။ ယခု ထွက်မည်လား?</item>
+        <item quantity="one">အပလီကေးရှင်းများအတွက် ဒေတာ ချိတ်ဆက်မှု သုံးရန် မရနိုင်ပါ။ ဤအနေအထားအတိုင်း ရှိနေစဉ် ဖုန်းမှာ အရေးပေါ် ပြန်ခေါ် အနေအထားတွင် %s မိနစ် ရှိနေမည်။ ယခု ထွက်မည်လား?</item>
+    </plurals>
+    <plurals name="alert_dialog_not_avaialble_in_ecm">
+        <item quantity="other">ရွေးထားသော လှုပ်ရှားမှုကို အရေးပေါ် ပြန်ခေါ် အနေအထားတွင် မရနိုင်ပါ။ ဖုန်းမှာ ဤအနေအထားအတိုင်း %s မိနစ် ရှိနေမည်။ ယခု ထွက်မည်လား?</item>
+        <item quantity="one">ရွေးထားသော လှုပ်ရှားမှုကို အရေးပေါ် ပြန်ခေါ် အနေအထားတွင် မရနိုင်ပါ။ ဖုန်းမှာ ဤအနေအထားအတိုင်း %s မိနစ် ရှိနေမည်။ ယခု ထွက်မည်လား?</item>
+    </plurals>
+    <plurals name="network_searching_minutes">
+        <item quantity="other">%d မိနစ်</item>
+        <item quantity="one">1 မိနစ်</item>
+    </plurals>
+    <plurals name="network_searching_timeout_seconds">
+        <item quantity="other">%d စက္ကန့်</item>
+        <item quantity="one">၁ စက္ကန့်</item>
+    </plurals>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_overseas_remote_access" android:key="button_overseas_array_remote_access" />
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_overseas_caller_id_request" android:key="button_overseas_array_caller_id_request" />
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_overseas_notify_missed_call" android:key="button_overseas_array_notify_missed_call" />
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_overseas_roaming_guidance_pay" android:key="button_overseas_array_roaming_guidance_pay" />
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_overseas_voice_mail" android:key="button_overseas_array_voice_mail" />
+    <PreferenceScreen android:persistent="false" android:title="@string/phoneset_overseas_call_forwarding" android:key="button_overseas_array_call_forwarding" />
+</PreferenceScreen>

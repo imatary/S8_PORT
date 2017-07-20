@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="left" android:id="@id/textView_country_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/phoneset_overseas_country_name" />
+    <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@id/editText_country_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:scrollHorizontally="true" android:maxLength="14" android:capitalize="none" android:autoText="false" android:inputType="text" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="left" android:id="@id/textView_country_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/phoneset_overseas_edit_country_code" />
+    <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@id/editText_country_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="5.0dip" android:text="@string/phoneset_overseas_plus" android:scrollHorizontally="true" android:capitalize="none" android:autoText="false" android:inputType="phone" />
+</LinearLayout>

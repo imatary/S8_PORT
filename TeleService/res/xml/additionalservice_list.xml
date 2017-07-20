@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/callsettings_additionalservice_registerussd" android:summary="@string/callsettings_additionalservice_sub1_text">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.additionalservice.RegisterUSSD" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/callsettings_additionalservice_register_reply_message" android:summary="@string/callsettings_additionalservice_sub2_text">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.additionalservice.RegisterReplyMsg" />
+    </PreferenceScreen>
+</PreferenceScreen>

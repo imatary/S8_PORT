@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/forward_on_no_reply" android:key="forward_on_no_reply_key" android:summary="@string/forward_on_no_reply_summary" />
+    <PreferenceScreen android:title="@string/forward_on_busy" android:key="forward_on_busy_key" android:summary="@string/forward_on_busy_summary" />
+    <PreferenceScreen android:title="@string/forward_on_always" android:key="full_forwarding_key" android:summary="@string/forward_on_always_sub_text" />
+    <PreferenceScreen android:title="@string/callsettings_voicemail_deactivate_service" android:key="cancel_forwarding_key" android:summary="@string/cancel_forwarding_summary" />
+</PreferenceScreen>

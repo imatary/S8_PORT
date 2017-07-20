@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/activate_service" android:key="callforwarding_pay_active_pref" />
+    <PreferenceScreen android:title="@string/deactivate_service" android:key="callforwarding_pay_deactive_pref" />
+    <PreferenceScreen android:title="@string/phoneset_overseas_voice_mail_setting" android:key="callforwarding_pay_setting_pref" />
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView>
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/tw_pop_up_dialog_padding_top" android:paddingBottom="@dimen/tw_pop_up_dialog_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/tw_pop_up_dialog_padding_left" android:paddingEnd="@dimen/tw_pop_up_dialog_padding_right"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textview_dialog_network_security" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tw_pop_up_dialog_padding_bottom" android:text="@string/phoneset_overseas_restricting_incoming_calls_turn_off" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/phoneset_overseas_network_security_code" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/dialog_minWidth">
+            <EditText android:id="@id/edittext_dialog_network_security" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-6.0dip" android:scrollHorizontally="true" android:password="true" android:singleLine="true" android:maxLength="4" android:inputType="phone" android:imeOptions="flagNoExtractUi" android:textDirection="ltr" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

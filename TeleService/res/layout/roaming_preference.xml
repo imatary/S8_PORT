@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:id="@id/roaming_pref_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/roaming_preference_info" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <RadioGroup android:id="@id/radioGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@id/radioButtonCellular" android:layout_below="@id/roaming_pref_view">
+        <RadioButton android:id="@id/radioButtonCellular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_cellular" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <RadioButton android:id="@id/radioButtonWifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_wifi" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    </RadioGroup>
+    <Button android:id="@id/btnCancel" android:background="#fff0f0f0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip" android:text="@string/cancel_text" android:layout_alignParentBottom="true" android:layout_marginStart="-5.0dip" android:layout_marginEnd="-5.0dip" android:layout_toStartOf="@id/centerPoint" android:layout_alignParentStart="true" />
+    <TextView android:id="@id/centerPoint" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@id/empty" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/btnSave" android:background="#fff0f0f0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip" android:text="@string/save_text" android:layout_alignParentBottom="true" android:layout_marginStart="-5.0dip" android:layout_marginEnd="-5.0dip" android:layout_toEndOf="@id/centerPoint" android:layout_alignParentEnd="true" />
+</RelativeLayout>

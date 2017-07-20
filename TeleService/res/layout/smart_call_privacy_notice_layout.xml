@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/description_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:linksClickable="true" android:id="@id/privacy_notice_text1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/smart_call_privacy_notice_part1" android:lineSpacingExtra="@dimen/privacy_notice_text_linepadding" style="@style/SettingDescriptionListStyle" />
+            <TextView android:linksClickable="true" android:id="@id/privacy_notice_dream" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/smart_call_privacy_notice_dream" android:lineSpacingExtra="@dimen/privacy_notice_text_linepadding" style="@style/SettingDescriptionListStyle" />
+            <TextView android:linksClickable="true" android:id="@id/privacy_notice_text2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/smart_call_privacy_notice_part2" android:lineSpacingExtra="@dimen/privacy_notice_text_linepadding" style="@style/SettingDescriptionListStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_bottom_button_hegiht">
+        <Button android:id="@id/privacy_decline_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/smart_call_privacy_notice_decline" android:layout_weight="1.0" style="@style/ActionBarBottomButton" />
+        <Button android:id="@id/privacy_agree_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/smart_call_privacy_notice_agree" android:layout_weight="1.0" style="@style/ActionBarBottomButton" />
+    </LinearLayout>
+</LinearLayout>
