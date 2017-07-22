@@ -9353,362 +9353,172 @@
 .end method
 
 .method public finishPostLayoutPolicyLw(I)I
-    .locals 12
-
-    const/4 v7, 0x1
-
-    const/4 v8, 0x0
+    .locals 6
 
     invoke-direct {p0}, Lcom/android/server/policy/SamsungPhoneWindowManager;->isSupportAndAttachedSViewCover()Z
 
-    move-result v9
+    move-result v3
 
-    if-eqz v9, :cond_3
+    if-eqz v3, :cond_3
 
-    iget-object v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v3, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
 
-    sget-boolean v9, Lcom/android/server/policy/PhoneWindowManager;->DEBUG_LAYOUT:Z
+    sget-boolean v3, Lcom/android/server/policy/PhoneWindowManager;->DEBUG_LAYOUT:Z
 
-    if-eqz v9, :cond_0
+    if-eqz v3, :cond_0
 
-    const-string/jumbo v9, "SamsungPhoneWindowManager"
+    const-string/jumbo v3, "SamsungPhoneWindowManager"
 
-    new-instance v10, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v11, "finishPostLayoutPolicyLw: mHideSViewCover="
+    const-string/jumbo v5, "finishPostLayoutPolicyLw: mHideSViewCover="
 
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v10
+    move-result-object v4
 
-    iget v11, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mHideSViewCover:I
+    iget v5, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mHideSViewCover:I
 
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v10
+    move-result-object v4
 
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v10
+    move-result-object v4
 
-    invoke-static {v9, v10}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    const/4 v5, 0x0
+    const/4 v2, 0x0
 
     invoke-virtual {p0}, Lcom/android/server/policy/SamsungPhoneWindowManager;->getCoverManager()Lcom/samsung/android/cover/ICoverManager;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_3
+    if-eqz v0, :cond_3
 
-    iget-object v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v3, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
 
-    iget-object v9, v9, Lcom/android/server/policy/PhoneWindowManager;->mStatusBar:Landroid/view/WindowManagerPolicy$WindowState;
+    iget-object v3, v3, Lcom/android/server/policy/PhoneWindowManager;->mStatusBar:Landroid/view/WindowManagerPolicy$WindowState;
 
-    if-eqz v9, :cond_3
+    if-eqz v3, :cond_3
 
-    iget v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mHideSViewCover:I
+    iget v3, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mHideSViewCover:I
 
-    if-nez v9, :cond_1
+    if-nez v3, :cond_1
 
-    iget-object v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mCoverState:Lcom/samsung/android/cover/CoverState;
+    iget-object v3, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mCoverState:Lcom/samsung/android/cover/CoverState;
 
-    iget-boolean v9, v9, Lcom/samsung/android/cover/CoverState;->switchState:Z
+    iget-boolean v3, v3, Lcom/samsung/android/cover/CoverState;->switchState:Z
 
-    if-nez v9, :cond_7
+    if-nez v3, :cond_4
 
-    iget-object v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mCoverState:Lcom/samsung/android/cover/CoverState;
+    iget-object v3, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mCoverState:Lcom/samsung/android/cover/CoverState;
 
-    iget v9, v9, Lcom/samsung/android/cover/CoverState;->type:I
+    iget v3, v3, Lcom/samsung/android/cover/CoverState;->type:I
 
-    const/16 v10, 0xff
+    const/16 v4, 0xff
 
-    if-eq v9, v10, :cond_7
+    if-eq v3, v4, :cond_4
 
     invoke-virtual {p0}, Lcom/android/server/policy/SamsungPhoneWindowManager;->isRingingOrOffhook()Z
 
-    move-result v9
+    move-result v3
 
-    if-eqz v9, :cond_7
+    if-eqz v3, :cond_4
 
     invoke-virtual {p0}, Lcom/android/server/policy/SamsungPhoneWindowManager;->isTphoneRelaxMode()Z
 
-    move-result v9
+    move-result v3
 
-    if-eqz v9, :cond_7
+    if-eqz v3, :cond_4
 
     :cond_1
     :try_start_0
-    iget-boolean v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mLastCoverAppCovered:Z
+    iget-boolean v3, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mLastCoverAppCovered:Z
 
-    if-nez v9, :cond_2
+    if-nez v3, :cond_2
 
-    const/4 v9, 0x1
+    const/4 v3, 0x1
 
-    invoke-interface {v1, v9}, Lcom/samsung/android/cover/ICoverManager;->onCoverAppCovered(Z)I
+    invoke-interface {v0, v3}, Lcom/samsung/android/cover/ICoverManager;->onCoverAppCovered(Z)I
 
-    move-result v5
+    move-result v2
 
-    and-int/lit8 v9, v5, 0x10
+    and-int/lit8 v3, v2, 0x10
 
-    if-eqz v9, :cond_2
+    if-eqz v3, :cond_2
 
-    const/4 v9, 0x1
+    const/4 v3, 0x1
 
-    iput-boolean v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mLastCoverAppCovered:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mLastCoverAppCovered:Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_2
     :goto_0
-    invoke-virtual {p0, v5}, Lcom/android/server/policy/SamsungPhoneWindowManager;->processSViewCoverSetHiddenResultLw(I)Z
+    invoke-virtual {p0, v2}, Lcom/android/server/policy/SamsungPhoneWindowManager;->processSViewCoverSetHiddenResultLw(I)Z
 
-    move-result v9
+    move-result v3
 
-    if-eqz v9, :cond_3
+    if-eqz v3, :cond_3
 
     or-int/lit8 p1, p1, 0x1
 
     :cond_3
     :goto_1
-    iget-object v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget-object v9, v9, Lcom/android/server/policy/PhoneWindowManager;->mTopFullscreenOpaqueWindowState:Landroid/view/WindowManagerPolicy$WindowState;
-
-    if-eqz v9, :cond_6
-
-    const/4 v6, 0x0
-
-    iget-object v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget-object v9, v9, Lcom/android/server/policy/PhoneWindowManager;->mTopFullscreenOpaqueWindowState:Landroid/view/WindowManagerPolicy$WindowState;
-
-    invoke-interface {v9}, Landroid/view/WindowManagerPolicy$WindowState;->getBridge()Lcom/samsung/android/view/IWindowStateBridge;
-
-    move-result-object v9
-
-    invoke-interface {v9}, Lcom/samsung/android/view/IWindowStateBridge;->getAspectRatioFrame()Landroid/graphics/Rect;
-
-    move-result-object v0
-
-    new-instance v2, Landroid/graphics/Point;
-
-    invoke-direct {v2}, Landroid/graphics/Point;-><init>()V
-
-    iget-object v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget-object v9, v9, Lcom/android/server/policy/PhoneWindowManager;->mDisplay:Landroid/view/Display;
-
-    invoke-virtual {v9, v2}, Landroid/view/Display;->getRealSize(Landroid/graphics/Point;)V
-
-    if-eqz v0, :cond_a
-
-    iget v9, v0, Landroid/graphics/Rect;->top:I
-
-    if-nez v9, :cond_a
-
-    iget v9, v0, Landroid/graphics/Rect;->left:I
-
-    if-eqz v9, :cond_4
-
-    iget v9, v0, Landroid/graphics/Rect;->right:I
-
-    iget v10, v2, Landroid/graphics/Point;->x:I
-
-    if-ne v9, v10, :cond_9
-
-    :cond_4
-    :goto_2
-    move v4, v7
-
-    :goto_3
-    if-eqz v4, :cond_b
-
-    iget-object v7, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget v7, v7, Lcom/android/server/policy/PhoneWindowManager;->mNavigationBarPosition:I
-
-    packed-switch v7, :pswitch_data_0
-
-    :goto_4
-    iget-object v7, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mSWM:Lcom/android/server/wm/IWindowManagerServiceBridge;
-
-    iget-object v8, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget v8, v8, Lcom/android/server/policy/PhoneWindowManager;->mNavigationBarPosition:I
-
-    iget-object v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget-object v9, v9, Lcom/android/server/policy/PhoneWindowManager;->mTopFullscreenOpaqueWindowState:Landroid/view/WindowManagerPolicy$WindowState;
-
-    invoke-interface {v9}, Landroid/view/WindowManagerPolicy$WindowState;->getOwningPackage()Ljava/lang/String;
-
-    move-result-object v9
-
-    iget-object v10, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget-object v10, v10, Lcom/android/server/policy/PhoneWindowManager;->mTopFullscreenOpaqueWindowState:Landroid/view/WindowManagerPolicy$WindowState;
-
-    invoke-interface {v10}, Landroid/view/WindowManagerPolicy$WindowState;->getOwningUid()I
-
-    move-result v10
-
-    invoke-interface {v7, v8, v6, v9, v10}, Lcom/android/server/wm/IWindowManagerServiceBridge;->showConventionalModeChangeRatioButton(IILjava/lang/String;I)V
-
-    iget v7, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mChangeRatioBarPosition:I
-
-    iget-object v8, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget v8, v8, Lcom/android/server/policy/PhoneWindowManager;->mNavigationBarPosition:I
-
-    if-eq v7, v8, :cond_5
-
-    iget-object v7, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget v7, v7, Lcom/android/server/policy/PhoneWindowManager;->mNavigationBarPosition:I
-
-    iput v7, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mChangeRatioBarPosition:I
-
-    or-int/lit8 p1, p1, 0x1
-
-    :cond_5
-    :goto_5
-    iget v7, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mChangeRatioBarSize:I
-
-    if-eq v7, v6, :cond_6
-
-    iput v6, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mChangeRatioBarSize:I
-
-    or-int/lit8 p1, p1, 0x1
-
-    :cond_6
     return p1
 
     :catch_0
-    move-exception v3
+    move-exception v1
 
-    invoke-virtual {v3}, Landroid/os/RemoteException;->printStackTrace()V
+    invoke-virtual {v1}, Landroid/os/RemoteException;->printStackTrace()V
 
     goto :goto_0
 
-    :cond_7
+    :cond_4
     :try_start_1
-    iget-boolean v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mLastCoverAppCovered:Z
+    iget-boolean v3, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mLastCoverAppCovered:Z
 
-    if-eqz v9, :cond_8
+    if-eqz v3, :cond_5
 
-    const/4 v9, 0x0
+    const/4 v3, 0x0
 
-    invoke-interface {v1, v9}, Lcom/samsung/android/cover/ICoverManager;->onCoverAppCovered(Z)I
+    invoke-interface {v0, v3}, Lcom/samsung/android/cover/ICoverManager;->onCoverAppCovered(Z)I
 
-    move-result v5
+    move-result v2
 
-    and-int/lit8 v9, v5, 0x20
+    and-int/lit8 v3, v2, 0x20
 
-    if-eqz v9, :cond_8
+    if-eqz v3, :cond_5
 
-    const/4 v9, 0x0
+    const/4 v3, 0x0
 
-    iput-boolean v9, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mLastCoverAppCovered:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mLastCoverAppCovered:Z
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
 
-    :cond_8
-    :goto_6
-    invoke-virtual {p0, v5}, Lcom/android/server/policy/SamsungPhoneWindowManager;->processSViewCoverSetHiddenResultLw(I)Z
+    :cond_5
+    :goto_2
+    invoke-virtual {p0, v2}, Lcom/android/server/policy/SamsungPhoneWindowManager;->processSViewCoverSetHiddenResultLw(I)Z
 
-    move-result v9
+    move-result v3
 
-    if-eqz v9, :cond_3
+    if-eqz v3, :cond_3
 
     or-int/lit8 p1, p1, 0x1
 
-    goto/16 :goto_1
+    goto :goto_1
 
     :catch_1
-    move-exception v3
+    move-exception v1
 
-    invoke-virtual {v3}, Landroid/os/RemoteException;->printStackTrace()V
-
-    goto :goto_6
-
-    :cond_9
-    move v7, v8
+    invoke-virtual {v1}, Landroid/os/RemoteException;->printStackTrace()V
 
     goto :goto_2
-
-    :cond_a
-    move v4, v8
-
-    goto :goto_3
-
-    :pswitch_0
-    iget-object v7, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget-object v7, v7, Lcom/android/server/policy/PhoneWindowManager;->mNavigationBar:Landroid/view/WindowManagerPolicy$WindowState;
-
-    invoke-interface {v7}, Landroid/view/WindowManagerPolicy$WindowState;->getFrameLw()Landroid/graphics/Rect;
-
-    move-result-object v7
-
-    iget v7, v7, Landroid/graphics/Rect;->top:I
-
-    iget v8, v0, Landroid/graphics/Rect;->bottom:I
-
-    sub-int v6, v7, v8
-
-    goto :goto_4
-
-    :pswitch_1
-    iget-object v7, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget-object v7, v7, Lcom/android/server/policy/PhoneWindowManager;->mNavigationBar:Landroid/view/WindowManagerPolicy$WindowState;
-
-    invoke-interface {v7}, Landroid/view/WindowManagerPolicy$WindowState;->getFrameLw()Landroid/graphics/Rect;
-
-    move-result-object v7
-
-    iget v7, v7, Landroid/graphics/Rect;->left:I
-
-    iget v8, v0, Landroid/graphics/Rect;->right:I
-
-    sub-int v6, v7, v8
-
-    goto :goto_4
-
-    :pswitch_2
-    iget v7, v0, Landroid/graphics/Rect;->left:I
-
-    iget-object v8, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
-
-    iget-object v8, v8, Lcom/android/server/policy/PhoneWindowManager;->mNavigationBar:Landroid/view/WindowManagerPolicy$WindowState;
-
-    invoke-interface {v8}, Landroid/view/WindowManagerPolicy$WindowState;->getFrameLw()Landroid/graphics/Rect;
-
-    move-result-object v8
-
-    iget v8, v8, Landroid/graphics/Rect;->right:I
-
-    sub-int v6, v7, v8
-
-    goto/16 :goto_4
-
-    :cond_b
-    iget-object v7, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mSWM:Lcom/android/server/wm/IWindowManagerServiceBridge;
-
-    invoke-interface {v7}, Lcom/android/server/wm/IWindowManagerServiceBridge;->hideConventionalModeChangeRatioButton()V
-
-    goto :goto_5
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-    .end packed-switch
 .end method
 
 .method public finishScreenTurningOn()V
