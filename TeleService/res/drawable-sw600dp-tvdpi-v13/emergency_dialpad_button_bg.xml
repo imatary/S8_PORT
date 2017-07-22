@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/dialpad_dial_button_side_inset" android:insetRight="@dimen/dialpad_dial_button_side_inset" android:insetTop="@dimen/dialpad_dial_button_top_bottom_inset" android:insetBottom="@dimen/dialpad_dial_button_top_bottom_inset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ripple android:color="#1f000000"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <item>
+            <shape android:shape="oval">
+                <solid android:color="#ff4fa630" />
+            </shape>
+        </item>
+    </ripple>
+</inset>

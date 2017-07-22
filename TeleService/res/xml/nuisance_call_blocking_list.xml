@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/phoneset_nwservice_register_nuisance_caller" android:key="nuisance_register_caller_pref" />
+    <PreferenceScreen android:title="@string/phoneset_nwservice_register_selected_number" android:key="nuisance_register_selected_number_pref" />
+    <PreferenceScreen android:title="@string/phoneset_nwservice_delete_all_entries" android:key="nuisance_delete_all_pref" />
+    <PreferenceScreen android:title="@string/phoneset_nwservice_delete_last_entry" android:key="nuisance_delete_last_pref" />
+    <PreferenceScreen android:title="@string/phoneset_nwservice_check_the_number_of_entries" android:key="nuisance_check_pref" />
+    <PreferenceScreen android:title="@string/phoneset_nwservice_detailed_setting" android:key="nuisance_detailed_setting_pref" />
+</PreferenceScreen>

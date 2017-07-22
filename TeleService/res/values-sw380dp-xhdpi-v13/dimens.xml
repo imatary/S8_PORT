@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialpad_key_height">68.0dip</dimen>
+    <dimen name="dialpad_key_number_text_size">35.0dip</dimen>
+    <dimen name="dialpad_key_letters_text_size">13.0dip</dimen>
+    <dimen name="dialpad_button_width">128.0dip</dimen>
+    <dimen name="dialpad_key_width">128.0dip</dimen>
+    <dimen name="dialpad_divider_height">2.0px</dimen>
+    <dimen name="dialpad_internal_key_height">68.0dip</dimen>
+    <dimen name="cancel_text_size">19.0dip</dimen>
+    <dimen name="done_text_size">19.0dip</dimen>
+    <dimen name="dialpad_dial_button_side_inset">36.0dip</dimen>
+    <dimen name="list_item_padding">12.0dip</dimen>
+    <dimen name="emergency_zero_contact_image_size">49.0dip</dimen>
+    <dimen name="emergency_zero_contact_item_textSize">14.0dip</dimen>
+</resources>

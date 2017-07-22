@@ -1,0 +1,24 @@
+"Identify unsaved numbers" is a feature that is designed to identify numbers that are not stored in your Contact List and alerts you when an incoming call may be a nuisance call or spam..
+In order to provide this feature, certain data will be collected directly from your device by a third party solution provider, ("White Pages, Inc.") as detailed below.
+
+Caller Name ID  
+
+To identify an incoming caller who is not stored in your Contact List, such incoming telephone number will be collected and processed against the database managed by White Pages, Inc.
+
+Spam Alert
+
+To ascertain whether a particular caller may be from a telemarketer, certain details about such calls and your treatment of such calls will be collected and processed by White Pages, Inc., in order to better predict whether such calls are in fact from telemarketers or not.  Details include the following:
+ - Whether you had previously reported such number as Spam;
+ - Call duration, including when such incoming call took place;
+ - Whether such call was a missed call; and
+ - Whether you actively "blocked" such call.
+
+Purpose
+
+Data collected from your device is necessary to provide this feature and will not be used for any other purpose, other than providing, maintaining the accuracy and improving the feature.  Please rest assured that the data collected will not be sold, rented or used by any third party for any other purpose.
+
+Your Choice
+
+Whatever the choice you make here, you are free to disable this feature at any time by adjusting your preferences in the "Settings" menu, however this may affect the accuracy of the feature or prevent you from using some of the features. Using mobile networks instead of Wi-Fi networks may result in additional charges depending on your payment plan.
+Identify unsaved number is powered by White Pages, Inc. and Identify unsaved number related data collected from your device is governed by the White Pages Inc. Terms & Conditions and Privacy Policy.
+Please click the appropriate button below to indicate whether you agree with the above and would like to enable the Identify unsaved numbers feature at this time.

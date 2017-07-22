@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/disagreement" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceListItem" android:id="@id/disagreement_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disagree_romaing_data_radio_text" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceListItem" android:id="@id/agreement_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/agree_romaing_data_radio_text" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </RadioGroup>
+</RelativeLayout>

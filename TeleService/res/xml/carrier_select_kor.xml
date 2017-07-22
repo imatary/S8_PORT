@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/select_roaming_network_kor" android:key="list_networks_key"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/roaming_network_select_title_skt" android:key="radio_button_roaming_select_category_key">
+        <com.android.phone.mobilenetworks.kor.RadioButtonPreference android:persistent="false" android:layout="@layout/preference_widget_radiobutton" android:title="@string/select_automatically" android:key="radio_button_auto_select_key" android:summary="@string/sum_select_automatically_skt" />
+        <com.android.phone.mobilenetworks.kor.RadioButtonPreference android:persistent="false" android:layout="@layout/preference_widget_radiobutton" android:title="@string/select_manually_kor" android:key="radio_button_manual_select_key" android:summary="@string/sum_search_networks_skt" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/current_operator_kor" android:key="current_operator">
+        <Preference android:persistent="false" android:title="@string/no_available_operator" android:key="current_operator_info" android:summary="@string/operator_info_not_available" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/search_networks_kor_skt" android:key="progressbar_search_network_category">
+        <com.android.phone.mobilenetworks.kor.ProcessStatsPreference android:persistent="false" android:layout="@layout/preference_app_percentage" android:key="progressbar_search_network_info" style="?android:attr/preferenceInformationStyle" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/roaming_network_select_title_skt" android:key="roaming_network_select_list" />
+</PreferenceScreen>

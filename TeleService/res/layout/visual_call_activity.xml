@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sub_appbar" android:background="@drawable/tw_sub_action_bar_background_ripple" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <TextView android:textSize="@dimen/settings_subappbar_text_size" android:textColor="@color/settings_subappbar_text_color" android:gravity="center_vertical" android:id="@id/sub_appbar_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/settings_subappbar_margin_start" android:layout_alignParentStart="true" />
+        <Switch android:id="@id/sub_appbar_switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/settings_subappbar_margin_end" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="@color/call_setting_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_size" />
+    <TextView android:gravity="center_vertical" android:paddingTop="@dimen/list_item_padding" android:paddingBottom="@dimen/list_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/vcc_description_minHeight" android:text="@string/preference_turn_on_visual_call_summary" style="@style/SettingDescriptionListStyle" />
+    <View android:background="@color/call_setting_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_size" android:layout_marginStart="@dimen/divider_start_end_margin" android:layout_marginEnd="@dimen/divider_start_end_margin" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

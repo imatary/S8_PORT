@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/unknown_layout" android:background="@drawable/tw_sub_action_bar_background_ripple" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/autoreject_item" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/action_bar_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/listitem_padding_top" android:paddingBottom="@dimen/listitem_padding_bottom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/settings_subappbar_margin_start">
+            <TextView android:textSize="@dimen/settings_subappbar_text_size" android:textColor="@color/settings_subappbar_text_color" android:gravity="center_vertical" android:id="@id/autoreject_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unknown" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Switch android:id="@id/autoreject_item_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/settings_subappbar_margin_end" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/blocked_number_category" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/listitem_padding_top" android:paddingBottom="@dimen/listitem_padding_bottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="@dimen/autoreject_item_height" android:paddingStart="@dimen/list_divider_margin_left">
+        <TextView android:gravity="center_vertical" android:id="@id/category_title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/blocked_no_category" android:singleLine="true" style="@style/callPrimaryTextStyle" />
+        <TextView android:gravity="center_vertical" android:id="@id/category_summary" android:visibility="visible" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/callSecondaryTextStyle" />
+    </LinearLayout>
+</LinearLayout>

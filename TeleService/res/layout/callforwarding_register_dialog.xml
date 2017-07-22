@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/tw_pop_up_dialog_padding_top" android:paddingBottom="@dimen/tw_pop_up_dialog_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/tw_pop_up_dialog_padding_left" android:paddingEnd="@dimen/tw_pop_up_dialog_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/forwarding_number_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tw_pop_up_dialog_padding_bottom" android:text="@string/callsettings_nwservice_change_forwarding_text" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/register_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/callsettings_forwarding_dialog_enter" />
+    <LinearLayout android:gravity="center_vertical" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:minWidth="@dimen/dialog_minWidth">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <EditText android:id="@id/forwarding_number_edit" android:nextFocusRight="@id/search_button" android:layout_width="fill_parent" android:layout_marginLeft="-6.0dip" android:singleLine="true" android:maxLength="100" android:inputType="phone" android:imeOptions="flagNoExtractUi" android:textDirection="ltr" style="@style/InputTextField" />
+        </LinearLayout>
+        <ImageButton android:id="@id/search_button" android:nextFocusLeft="@id/forwarding_number_edit" android:contentDescription="@string/callsettings_search_contact" style="@style/SearchContactButton" />
+    </LinearLayout>
+</LinearLayout>

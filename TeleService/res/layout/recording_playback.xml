@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/popup_cancel" android:background="@android:color/transparent" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="38.0dip" android:layout_alignParentTop="true" />
+    <SeekBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/title" />
+    <TextView android:textSize="17.0sp" android:textColor="#ff56c0e5" android:gravity="left" android:id="@id/playing_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_below="@id/progress" android:fontFamily="sec-roboto-regular" />
+    <TextView android:textSize="17.0sp" android:textColor="#ff545454" android:gravity="right" android:id="@id/max_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_toRightOf="@id/playing_status" android:layout_below="@id/progress" android:layout_alignParentRight="true" android:fontFamily="sec-roboto-regular" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="24.0dip" android:layout_below="@id/playing_status">
+        <ImageButton android:id="@id/speaker" android:background="@android:color/transparent" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/play_pause" android:background="@android:color/transparent" android:layout_width="43.0dip" android:layout_height="43.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

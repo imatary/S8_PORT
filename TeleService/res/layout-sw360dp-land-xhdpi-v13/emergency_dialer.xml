@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/top" android:background="@color/emegency_dialer_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_weight="1.0">
+        <ViewStub android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/emergencyItemContainer" android:layout="@layout/emergency_contact_item_container" android:layout_width="341.0dip" android:layout_height="fill_parent" />
+        <ViewStub android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/emergencySyncGroupItemContainer" android:layout="@layout/emergency_sync_group_item_container" android:layout_width="fill_parent" android:layout_height="@dimen/emergency_sync_contact_item_height" android:layout_marginLeft="@dimen/emergency_sync_group_dialer_items_container_paddingLeft" android:layout_marginRight="@dimen/emergency_sync_group_dialer_items_container_paddingLeft" />
+        <View android:layout_gravity="center_horizontal" android:background="#ffc6c6c6" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/emergency_dialer_item_width" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <View android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+            <EditText android:textSize="@dimen/emergency_dialer_digits_textsize" android:textColor="@color/dialpad_edittext_text_color" android:gravity="center" android:id="@id/digits" android:background="@android:color/transparent" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" android:fontFamily="sec-roboto-light" android:textDirection="ltr" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="0.0dip" android:layout_width="@dimen/emergency_dialer_item_width" android:layout_height="@dimen/dialpad_keypad_height_land">
+            <include layout="@layout/dialpad_view" />
+            <include layout="@layout/dialpad_additional_buttons_sec" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/list" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</LinearLayout>

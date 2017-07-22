@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <com.android.phone.callsettings.UnclickablePreference android:key="multi_number_help" />
+    <SwitchPreference android:title="@string/callsettings_set_subnumber_dailpad" android:key="sub_dail_pad_preference" />
+    <PreferenceScreen android:title="@string/callsettings_manager_sub_number" android:key="multi_number_manager_preference" android:fragment="com.android.phone.callsettings.SubNumberManager" />
+</PreferenceScreen>
