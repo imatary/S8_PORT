@@ -853,6 +853,8 @@ Mirroring"</string>
     <string name="uds_toast_flight_mode_enabled">비행기 탑승 모드 실행 중에는 데이터 초절약 모드를 실행할 수 없습니다. 비행기 탑승 모드를 해제한 후 다시 시도하세요.</string>
     <string name="qs_detail_flashlight_title">손전등</string>
     <string name="quick_settings_reading_mode_label">읽기 모드</string>
+    <string name="quick_settings_touch_sensitivity_label">"터치
+민감도"</string>
     <string name="quick_settings_bike_mode_label">"S바이크
 모드"</string>
     <string name="qs_detail_bike_mode_title">S bike 모드</string>
@@ -1018,6 +1020,8 @@ Wi-Fi 및 블루투스 기능도 함께 해제되지만, 설정 또는 빠른 �
     <string name="quick_settings_flashlight_detail_warning">카메라 불빛과 접촉된 피부에 저온 열상을 입을 수 있습니다. %s 기능을 장시간 실행하지 마세요.</string>
     <string name="quick_settings_reading_mode_detail_title">읽기 모드</string>
     <string name="quick_settings_reading_mode_summary">화면이 독서에 알맞게 최적화됩니다. 이 모드는 일부 선택한 앱에서만 사용할 수 있습니다.</string>
+    <string name="quick_settings_touch_sensitivity_detail_title">터치 민감도 높이기</string>
+    <string name="quick_settings_touch_sensitivity_summary">장갑을 착용한 상태에서도 화면에 터치를 입력할 수 있도록 화면의 터치 민감도를 높입니다.</string>
     <string name="quick_settings_volte_summary">VoLTE 발신 우선</string>
     <string name="quick_settings_blf_detail_title">블루라이트 필터</string>
     <string name="quick_settings_blf_detail_summary">화면의 블루라이트를 제한하여 눈의 피로를 줄입니다.</string>
