@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">検索履歴</string>
-    <string name="accessibility_add_home_screen">ページを追加</string>
-    <string name="accessibility_button">ボタン</string>
-    <string name="accessibility_dimmed">選択不可</string>
+    <string name="about">%sについて</string>
+    <string name="about_already_installed">最新バージョンは既にインストールされています。</string>
+    <string name="about_home_screen">ホーム画面</string>
+    <string name="about_licence">オープンソースライセンス</string>
+    <string name="about_network_err">更新を確認できません。この端末はネットワークに接続されていません。</string>
+    <string name="about_new_version_exist">新しいバージョンが利用可能です。</string>
+    <string name="about_retry">再試行</string>
+    <string name="about_update">更新</string>
+    <string name="about_version">バージョン%s</string>
     <string name="activity_not_available">お使いの端末では、このアプリを利用できません。</string>
     <string name="activity_not_found">アプリケーションがインストールされていません。</string>
     <string name="align_to_bottom">下に揃える</string>
     <string name="align_to_top">上に揃える</string>
-    <string name="app_locked_toast">%sをロックしました。</string>
     <string name="app_search">端末内を検索</string>
     <string name="app_search_no_apps">検索結果からホーム画面にショートカットを追加できます。</string>
     <string name="app_search_no_results_found">検索結果がありません</string>
     <string name="app_search_tablet">タブレット内を検索</string>
-    <string name="app_unlocked_toast">%sのロックを解除しました。</string>
     <string name="application_name">TouchWizホーム</string>
     <string name="apply">適用</string>
     <string name="appsPicker_add_button">追加</string>
@@ -21,7 +25,7 @@
     <string name="appsPicker_search_result_found">%d件の検索結果</string>
     <string name="apps_button_hide">アプリボタンを非表示</string>
     <string name="apps_button_label">アプリ</string>
-    <string name="apps_button_setting_guide_text">アプリボタンをONにすると、右側のアイテムが現在の場所からホーム画面に移動します。</string>
+    <string name="apps_button_setting_guide_text">アプリボタンを表示すると、右側のアイテムが現在の場所からホーム画面に移動します。</string>
     <string name="apps_button_show">アプリボタンを表示</string>
     <string name="apps_button_summary">アプリ画面を開くボタンをホーム画面に表示します。</string>
     <string name="apps_button_title">アプリボタン</string>
@@ -38,7 +42,6 @@
     <string name="default_page">標準ページ</string>
     <string name="default_scroll_format">%2$dページ中%1$dページ</string>
     <string name="disable_message">%1$sおよび関連する全ての機能が無効になります。再度有効にするには、[設定] > [アプリケーション]に移動し、%2$sを選択してください。</string>
-    <string name="disable_message_knox_mode">%1$sおよび関連する全ての機能が無効になります。アプリを再度有効にするには、[%2$s設定] > [アプリ]に移動してください。</string>
     <string name="disable_message_vzw">%sと関連する全ての機能が無効になります。再度有効にするには、[設定] > [アプリケーション] > [アプリケーション管理]に移動してください。</string>
     <string name="discard">破棄</string>
     <string name="do_not_show_again">今後表示しない</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">アプリを追加</string>
     <string name="folder_closed">フォルダを閉じました。</string>
     <string name="folder_color">フォルダの色</string>
-    <string name="folder_color_default">フォルダの標準の色</string>
-    <string name="folder_color_pd">色%d</string>
+    <string name="folder_color_blue">青色</string>
+    <string name="folder_color_default">標準フォルダの色</string>
+    <string name="folder_color_green">緑</string>
+    <string name="folder_color_orange">オレンジ</string>
+    <string name="folder_color_yellow">黄色</string>
     <string name="folder_hint_text">フォルダ名を入力</string>
     <string name="folder_microsoft_apps">"Microsoft
 アプリ"</string>
@@ -112,7 +118,7 @@
     <string name="ok">OK</string>
     <string name="only_one_widget_instance_allowed">%sウィジェットは既にホーム画面に追加されています。</string>
     <string name="option_menu_contact_up">お問い合わせ</string>
-    <string name="option_menu_galaxy_essentials">GALAXY Essentials</string>
+    <string name="option_menu_galaxy_essentials">Galaxy Essentials</string>
     <string name="option_menu_home_settings">設定</string>
     <string name="options_menu">他の​オプション</string>
     <string name="options_menu_search_recommend">検索オプション</string>
@@ -123,6 +129,7 @@
     <string name="out_of_space">選択したページにスペースがありません。</string>
     <string name="out_of_space_dialog">このページにはスペースがありません。アイテムを新しいページに追加します。</string>
     <string name="permdesc_install_widget">このアプリは、ウィジェットをホーム画面に追加できます。</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">このアプリは、ホーム画面の左側にあるカスタムコンテンツページの設定を読み取ることができます。</string>
     <string name="permdesc_write_zeropage_settings">このアプリは、ホーム画面の左側にあるカスタムコンテンツページの設定を変更することができます。</string>
     <string name="permlab_install_widget">ウィジェットを追加</string>
@@ -132,7 +139,7 @@
     <string name="quick_option_add_apps">アプリを追加</string>
     <string name="quick_option_add_shortcut_to_home">ショートカットをホームに追加</string>
     <string name="quick_option_add_to_personal">パーソナルに追加</string>
-    <string name="quick_option_app_info">アプリケーション情報</string>
+    <string name="quick_option_app_info">アプリ情報</string>
     <string name="quick_option_cant_disable">%sを無効にできません。</string>
     <string name="quick_option_clear_badge">バッジを消去</string>
     <string name="quick_option_delete_folder">フォルダを削除</string>
@@ -140,7 +147,7 @@
     <string name="quick_option_delete_folder_alert_no_title">このフォルダを削除します。このフォルダ内のアプリは、アプリ画面から使用することができます。</string>
     <string name="quick_option_dimmed_disable">無効</string>
     <string name="quick_option_disable">無効</string>
-    <string name="quick_option_install_dual_im">2つ目のアプリをインストール</string>
+    <string name="quick_option_install_dual_im">2番目のｱﾌﾟﾘをｲﾝｽﾄｰﾙ</string>
     <string name="quick_option_lock">ロック</string>
     <string name="quick_option_move_from_folder">フォルダから移動</string>
     <string name="quick_option_remove">削除</string>
@@ -166,20 +173,14 @@
     <string name="swipe_up_for_more_apps">全てのアプリを表示するには、上または下にスワイプしてください</string>
     <string name="swipe_up_for_more_apps_att">全てのアプリを表示するには、画面を上または下にスワイプしてください</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">全てのアプリを表示するには、2本の指で上または下にスワイプしてください。</string>
-    <string name="talkback_changed_to_ps">%sに変更されました。</string>
+    <string name="talkback_checked">選択中</string>
     <string name="talkback_folder">フォルダ</string>
     <string name="talkback_n_items">%d件のアイテム</string>
     <string name="talkback_press_back_key_to_close_folder">フォルダを閉じるには、戻るキーを押します。</string>
-    <string name="talkback_tab_back_button_to_close_folder">フォルダを閉じるには、戻るボタンをタップしてください。</string>
     <string name="title_settings">%s設定</string>
     <string name="tts_add_shortcut_on_home_screen_notice">アイコンをホーム画面に追加するには、アイコンを画面の上部にドラッグしてください。</string>
     <string name="tts_bottom_handle">下のハンドルです。</string>
-    <string name="tts_changed_to_apps_edit_mode">アプリ編集モードに変更しました。</string>
-    <string name="tts_changed_to_folder_edit_mode">フォルダ編集モードに変更しました。</string>
-    <string name="tts_changed_to_home_screen_edit_mode">ホーム画面編集モードに変更しました。</string>
     <string name="tts_folder_created">フォルダを作成しました。</string>
-    <string name="tts_holding_items">%1$sと他%2$d件のアプリを長押ししています。</string>
-    <string name="tts_hotseat_item_moved_from_external">アイテムをホーム画面のメニューバーに移動しました。</string>
     <string name="tts_hotseat_move_to">メニューバーの%d番目の位置です。</string>
     <string name="tts_hover_item_over_other_item">%1$sが%2$sの上にあります。</string>
     <string name="tts_item_added">アイテムが追加されました。</string>
@@ -200,7 +201,6 @@
     <string name="viewmore_playstore">Playストアでさらに検索</string>
     <string name="viewtype_alphabetic_grid">50音順</string>
     <string name="viewtype_custom_grid">カスタム順序</string>
-    <string name="voice_search">音声検索</string>
     <string name="wallpaper_button_text">壁紙</string>
     <string name="wallpapers_and_themes_button_text">壁紙とテーマ</string>
     <string name="widget_button_text">ウィジェット</string>
@@ -210,5 +210,4 @@
     <string name="zeropage_download_msg">この機能を使用するには、%1$sをインストールする必要があります。%2$sをダウンロードしてインストールするには、[ダウンロード]をタップしてください。</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Sohu News</string>
-    <string name="zeropage_toutiao_title">ニュースエクスプレス</string>
 </resources>

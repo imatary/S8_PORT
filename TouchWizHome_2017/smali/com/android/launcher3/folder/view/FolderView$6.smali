@@ -54,7 +54,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$6;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
-    invoke-static {v0}, Lcom/android/launcher3/folder/view/FolderView;->access$200(Lcom/android/launcher3/folder/view/FolderView;)Lcom/android/launcher3/folder/view/FolderNameEditText;
+    invoke-static {v0}, Lcom/android/launcher3/folder/view/FolderView;->access$000(Lcom/android/launcher3/folder/view/FolderView;)Lcom/android/launcher3/folder/view/FolderNameEditText;
 
     move-result-object v0
 
@@ -64,7 +64,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$6;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
-    invoke-static {v0}, Lcom/android/launcher3/folder/view/FolderView;->access$200(Lcom/android/launcher3/folder/view/FolderView;)Lcom/android/launcher3/folder/view/FolderNameEditText;
+    invoke-static {v0}, Lcom/android/launcher3/folder/view/FolderView;->access$000(Lcom/android/launcher3/folder/view/FolderView;)Lcom/android/launcher3/folder/view/FolderNameEditText;
 
     move-result-object v0
 
@@ -78,7 +78,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderView$6;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
-    invoke-static {v1}, Lcom/android/launcher3/folder/view/FolderView;->access$200(Lcom/android/launcher3/folder/view/FolderView;)Lcom/android/launcher3/folder/view/FolderNameEditText;
+    invoke-static {v1}, Lcom/android/launcher3/folder/view/FolderView;->access$000(Lcom/android/launcher3/folder/view/FolderView;)Lcom/android/launcher3/folder/view/FolderNameEditText;
 
     move-result-object v1
 

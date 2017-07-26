@@ -381,35 +381,25 @@
 .end method
 
 .method public static createIconBitmap(Landroid/graphics/drawable/Drawable;Landroid/content/Context;II)Landroid/graphics/Bitmap;
-    .locals 17
+    .locals 16
 
     new-instance v8, Landroid/graphics/Rect;
 
     invoke-direct {v8}, Landroid/graphics/Rect;-><init>()V
 
-    invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v14
-
-    const v15, 0x7f0a016f
-
-    invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v11
-
     const/4 v5, 0x0
 
     invoke-virtual/range {p0 .. p0}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
 
-    move-result-object v14
+    move-result-object v13
 
-    if-eqz v14, :cond_0
+    if-eqz v13, :cond_0
 
     invoke-virtual/range {p0 .. p0}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
 
-    move-result-object v14
+    move-result-object v13
 
-    invoke-virtual {v14}, Landroid/graphics/drawable/Drawable$ConstantState;->newDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v13}, Landroid/graphics/drawable/Drawable$ConstantState;->newDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v5
 
@@ -419,9 +409,9 @@
     move-object/from16 v5, p0
 
     :cond_1
-    instance-of v14, v5, Landroid/graphics/drawable/PaintDrawable;
+    instance-of v13, v5, Landroid/graphics/drawable/PaintDrawable;
 
-    if-eqz v14, :cond_4
+    if-eqz v13, :cond_4
 
     move-object v9, v5
 
@@ -443,75 +433,71 @@
 
     invoke-virtual {v5}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
-    move-result v13
+    move-result v12
 
     invoke-virtual {v5}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
-    move-result v12
+    move-result v11
 
-    if-lez v13, :cond_3
+    if-lez v12, :cond_3
 
-    if-gtz v12, :cond_5
+    if-gtz v11, :cond_5
 
     :cond_3
-    move/from16 v13, p2
+    move/from16 v12, p2
 
-    move/from16 v12, p3
+    move/from16 v11, p3
+
+    const/4 v13, 0x0
 
     const/4 v14, 0x0
-
-    const/4 v15, 0x0
 
     move/from16 v0, p2
 
     move/from16 v1, p3
 
-    invoke-virtual {v5, v14, v15, v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+    invoke-virtual {v5, v13, v14, v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     :goto_1
-    sub-int v14, p2, v13
+    sub-int v6, p2, v12
 
-    add-int v6, v14, v11
+    sub-int v7, p3, v11
 
-    sub-int v14, p3, v12
+    sget-object v13, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
-    add-int v7, v14, v11
+    move/from16 v0, p2
 
-    add-int v14, p2, v11
+    move/from16 v1, p3
 
-    add-int v15, p3, v11
-
-    sget-object v16, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
-
-    invoke-static/range {v14 .. v16}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+    invoke-static {v0, v1, v13}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    sget-object v14, Lcom/android/launcher3/util/BitmapUtils;->mCanvasPool:Lcom/android/launcher3/util/BitmapUtils$CanvasPool;
+    sget-object v13, Lcom/android/launcher3/util/BitmapUtils;->mCanvasPool:Lcom/android/launcher3/util/BitmapUtils$CanvasPool;
 
-    invoke-virtual {v14}, Lcom/android/launcher3/util/BitmapUtils$CanvasPool;->get()Landroid/graphics/Canvas;
+    invoke-virtual {v13}, Lcom/android/launcher3/util/BitmapUtils$CanvasPool;->get()Landroid/graphics/Canvas;
 
     move-result-object v4
 
-    const/4 v14, 0x0
+    const/4 v13, 0x0
 
-    invoke-virtual {v4, v14}, Landroid/graphics/Canvas;->setMatrix(Landroid/graphics/Matrix;)V
+    invoke-virtual {v4, v13}, Landroid/graphics/Canvas;->setMatrix(Landroid/graphics/Matrix;)V
 
     invoke-virtual {v4, v2}, Landroid/graphics/Canvas;->setBitmap(Landroid/graphics/Bitmap;)V
 
-    int-to-float v14, v6
+    int-to-float v13, v6
+
+    const/high16 v14, 0x3f000000    # 0.5f
+
+    mul-float/2addr v13, v14
+
+    int-to-float v14, v7
 
     const/high16 v15, 0x3f000000    # 0.5f
 
     mul-float/2addr v14, v15
 
-    int-to-float v15, v7
-
-    const/high16 v16, 0x3f000000    # 0.5f
-
-    mul-float v15, v15, v16
-
-    invoke-virtual {v4, v14, v15}, Landroid/graphics/Canvas;->translate(FF)V
+    invoke-virtual {v4, v13, v14}, Landroid/graphics/Canvas;->translate(FF)V
 
     invoke-virtual {v4, v10, v10}, Landroid/graphics/Canvas;->scale(FF)V
 
@@ -519,20 +505,20 @@
 
     invoke-virtual {v5, v8}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
-    const/4 v14, 0x0
+    const/4 v13, 0x0
 
-    invoke-virtual {v4, v14}, Landroid/graphics/Canvas;->setBitmap(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v4, v13}, Landroid/graphics/Canvas;->setBitmap(Landroid/graphics/Bitmap;)V
 
-    sget-object v14, Lcom/android/launcher3/util/BitmapUtils;->mCanvasPool:Lcom/android/launcher3/util/BitmapUtils$CanvasPool;
+    sget-object v13, Lcom/android/launcher3/util/BitmapUtils;->mCanvasPool:Lcom/android/launcher3/util/BitmapUtils$CanvasPool;
 
-    invoke-virtual {v14, v4}, Lcom/android/launcher3/util/BitmapUtils$CanvasPool;->recycle(Landroid/graphics/Canvas;)V
+    invoke-virtual {v13, v4}, Lcom/android/launcher3/util/BitmapUtils$CanvasPool;->recycle(Landroid/graphics/Canvas;)V
 
     return-object v2
 
     :cond_4
-    instance-of v14, v5, Landroid/graphics/drawable/BitmapDrawable;
+    instance-of v13, v5, Landroid/graphics/drawable/BitmapDrawable;
 
-    if-eqz v14, :cond_2
+    if-eqz v13, :cond_2
 
     move-object v3, v5
 
@@ -540,66 +526,64 @@
 
     invoke-virtual {v3}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
-    move-result-object v14
+    move-result-object v13
 
-    invoke-virtual {v14}, Landroid/graphics/Bitmap;->getDensity()I
+    invoke-virtual {v13}, Landroid/graphics/Bitmap;->getDensity()I
 
-    move-result v14
+    move-result v13
 
-    if-nez v14, :cond_2
+    if-nez v13, :cond_2
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v14
+    move-result-object v13
 
-    invoke-virtual {v14}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+    invoke-virtual {v13}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
-    move-result-object v14
+    move-result-object v13
 
-    invoke-virtual {v3, v14}, Landroid/graphics/drawable/BitmapDrawable;->setTargetDensity(Landroid/util/DisplayMetrics;)V
+    invoke-virtual {v3, v13}, Landroid/graphics/drawable/BitmapDrawable;->setTargetDensity(Landroid/util/DisplayMetrics;)V
 
     goto :goto_0
 
     :cond_5
+    const/4 v13, 0x0
+
     const/4 v14, 0x0
 
-    const/4 v15, 0x0
-
-    invoke-virtual {v5, v14, v15, v13, v12}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+    invoke-virtual {v5, v13, v14, v12, v11}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     move/from16 v0, p2
 
-    int-to-float v14, v0
-
-    int-to-float v15, v13
-
-    div-float/2addr v14, v15
-
-    move/from16 v0, p3
-
-    int-to-float v15, v0
-
-    int-to-float v0, v12
-
-    move/from16 v16, v0
-
-    div-float v15, v15, v16
-
-    invoke-static {v14, v15}, Ljava/lang/Math;->min(FF)F
-
-    move-result v10
-
-    int-to-float v14, v13
-
-    mul-float/2addr v14, v10
-
-    float-to-int v13, v14
+    int-to-float v13, v0
 
     int-to-float v14, v12
 
-    mul-float/2addr v14, v10
+    div-float/2addr v13, v14
 
-    float-to-int v12, v14
+    move/from16 v0, p3
+
+    int-to-float v14, v0
+
+    int-to-float v15, v11
+
+    div-float/2addr v14, v15
+
+    invoke-static {v13, v14}, Ljava/lang/Math;->min(FF)F
+
+    move-result v10
+
+    int-to-float v13, v12
+
+    mul-float/2addr v13, v10
+
+    float-to-int v12, v13
+
+    int-to-float v13, v11
+
+    mul-float/2addr v13, v10
+
+    float-to-int v11, v13
 
     goto :goto_1
 .end method
@@ -1182,7 +1166,7 @@
 .end method
 
 .method public static getIconBitmapSize()I
-    .locals 4
+    .locals 1
 
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -1190,69 +1174,11 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/LauncherAppState;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
-    move-result-object v1
-
-    if-nez v1, :cond_0
-
-    invoke-virtual {v0}, Lcom/android/launcher3/LauncherAppState;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const v3, 0x7f0a00c5
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v3
-
-    :goto_0
-    return v3
-
-    :cond_0
-    iget v3, v1, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->defaultIconSize:I
-
-    goto :goto_0
-.end method
-
-.method public static getResizedDrawable(Landroid/content/Context;Landroid/graphics/drawable/Drawable;II)Landroid/graphics/drawable/Drawable;
-    .locals 4
-
-    check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
-
-    invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
-
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    iget v0, v0, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->defaultIconSize:I
 
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    move-result-object v2
-
-    iget v2, v2, Landroid/util/DisplayMetrics;->densityDpi:I
-
-    invoke-virtual {v0, v2}, Landroid/graphics/Bitmap;->setDensity(I)V
-
-    new-instance v1, Landroid/graphics/drawable/BitmapDrawable;
-
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const/4 v3, 0x1
-
-    invoke-static {v0, p2, p3, v3}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
-
-    move-result-object v3
-
-    invoke-direct {v1, v2, v3}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
-
-    return-object v1
+    return v0
 .end method
 
 .method public static renderDrawableToBitmap(Landroid/graphics/drawable/Drawable;Landroid/graphics/Bitmap;IIIIF)V

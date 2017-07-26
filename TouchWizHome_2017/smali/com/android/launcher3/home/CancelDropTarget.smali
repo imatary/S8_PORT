@@ -92,7 +92,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f060001
+    const v4, 0x7f050001
 
     invoke-static {v3, v4}, Landroid/animation/AnimatorInflater;->loadAnimator(Landroid/content/Context;I)Landroid/animation/Animator;
 
@@ -118,7 +118,7 @@
 
     move-result-object v3
 
-    const/high16 v4, 0x7f060000
+    const/high16 v4, 0x7f050000
 
     invoke-static {v3, v4}, Landroid/animation/AnimatorInflater;->loadAnimator(Landroid/content/Context;I)Landroid/animation/Animator;
 
@@ -445,7 +445,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0e002f
+    const v2, 0x7f0d002f
 
     invoke-static {v1, v2}, Landroid/support/v4/content/ContextCompat;->getColor(Landroid/content/Context;I)I
 
@@ -469,7 +469,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0e002e
+    const v2, 0x7f0d002e
 
     invoke-static {v1, v2}, Landroid/support/v4/content/ContextCompat;->getColor(Landroid/content/Context;I)I
 
@@ -638,7 +638,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090022
+    const v4, 0x7f080026
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -658,7 +658,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090021
+    const v4, 0x7f080025
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1020,7 +1020,7 @@
     :cond_0
     sget-object v5, Lcom/android/launcher3/util/Talk;->INSTANCE:Lcom/android/launcher3/util/Talk;
 
-    const v9, 0x7f090022
+    const v9, 0x7f080026
 
     invoke-virtual {v5, v9}, Lcom/android/launcher3/util/Talk;->say(I)V
 
@@ -1225,7 +1225,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f04001f
+    const v3, 0x7f03001f
 
     invoke-virtual {v2, v3, p0, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -1233,7 +1233,7 @@
 
     check-cast v1, Landroid/widget/FrameLayout;
 
-    const v2, 0x7f100056
+    const v2, 0x7f0f0063
 
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -1243,7 +1243,7 @@
 
     iput-object v2, p0, Lcom/android/launcher3/home/CancelDropTarget;->mTextView:Landroid/widget/TextView;
 
-    const v2, 0x7f100055
+    const v2, 0x7f0f0062
 
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -1253,7 +1253,7 @@
 
     iput-object v2, p0, Lcom/android/launcher3/home/CancelDropTarget;->mImageView:Landroid/widget/ImageView;
 
-    const v2, 0x7f100054
+    const v2, 0x7f0f0061
 
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -1299,11 +1299,11 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     :cond_1
-    const v2, 0x7f090022
+    const v2, 0x7f080026
 
-    const v3, 0x7f0200f5
+    const v3, 0x7f0200fe
 
-    const v4, 0x7f02002b
+    const v4, 0x7f02002d
 
     invoke-direct {p0, v2, v3, v4}, Lcom/android/launcher3/home/CancelDropTarget;->setResource(III)V
 

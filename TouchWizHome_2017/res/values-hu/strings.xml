@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">Keresési előzmények</string>
-    <string name="accessibility_add_home_screen">Oldal hozzáadása</string>
-    <string name="accessibility_button">Gomb</string>
-    <string name="accessibility_dimmed">Elsötétítve</string>
+    <string name="about">A(z) %s névjegye</string>
+    <string name="about_already_installed">Már telepítve van a legfrissebb verzió.</string>
+    <string name="about_home_screen">Kezdőképernyő</string>
+    <string name="about_licence">Nyílt forráskód licencei</string>
+    <string name="about_network_err">Nem lehet frissítéseket keresni. A telefon nem kapcsolódik hálózathoz.</string>
+    <string name="about_new_version_exist">Új verzió érhető el.</string>
+    <string name="about_retry">Újra</string>
+    <string name="about_update">Frissítés</string>
+    <string name="about_version">Verzió: %s</string>
     <string name="activity_not_available">Az alkalmazás ehhez az eszközhöz nem áll rendelkezésre.</string>
     <string name="activity_not_found">Az alkalmazás nincs telepítve.</string>
     <string name="align_to_bottom">Alulra igazítás</string>
     <string name="align_to_top">Felülre igazítás</string>
-    <string name="app_locked_toast">%s zárolva.</string>
     <string name="app_search">Keresés a telefonon</string>
     <string name="app_search_no_apps">A keresési eredmények közül is felvehet parancsikonokat a kezdőképernyőre.</string>
     <string name="app_search_no_results_found">Nincs találat</string>
     <string name="app_search_tablet">Keresés a táblagépen</string>
-    <string name="app_unlocked_toast">%s feloldva.</string>
     <string name="application_name">TouchWiz kezdők.</string>
     <string name="apply">Alkalmaz</string>
     <string name="appsPicker_add_button">HOZZÁADÁS</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Alapértelmezett oldal</string>
     <string name="default_scroll_format">%1$d. oldal, összesen: %2$d</string>
     <string name="disable_message">A(z) %1$s és minden kapcsolódó funkció kikapcsol. Az alkalmazás újbóli bekapcsoláshoz válassza a Beállítások > Alkalmazások, majd %2$s lehetőséget.</string>
-    <string name="disable_message_knox_mode">A(z) %1$s és minden kapcsolódó funkció kikapcsol. Az alkalmazás újbóli bekapcsoláshoz nyissa meg a(z) %2$s beállításai > Alkalmazások menüpontot.</string>
     <string name="disable_message_vzw">A(z) %s és minden kapcsolódó funkció kikapcsol. Az újbóli bekapcsoláshoz válassza a Beállítások > Alkalmazások > Alkalmazáskezelő menüpontot.</string>
     <string name="discard">Elvetés</string>
     <string name="do_not_show_again">Ne jelenjen meg újra</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">Alkalmazások hozzáadása</string>
     <string name="folder_closed">A mappa megnyílt.</string>
     <string name="folder_color">Mappa színe</string>
+    <string name="folder_color_blue">Kék</string>
     <string name="folder_color_default">Alapértelmezett mappaszín</string>
-    <string name="folder_color_pd">%d. szín</string>
+    <string name="folder_color_green">Zöld</string>
+    <string name="folder_color_orange">Narancs</string>
+    <string name="folder_color_yellow">Sárga</string>
     <string name="folder_hint_text">Adja meg a mappa nevét</string>
     <string name="folder_microsoft_apps">"Microsoft
 alkalmazások"</string>
@@ -123,6 +129,7 @@ alkalmazások"</string>
     <string name="out_of_space">Nincs több hely az oldalon</string>
     <string name="out_of_space_dialog">Nincs több hely ezen az oldalon. Az elem egy új oldalra kerül.</string>
     <string name="permdesc_install_widget">Az alkalmazás widgeteket adhat a kezdőképernyőhöz.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">Az alkalmazás olvashatja az egyéni tartalmú oldal beállításait, amely a kezdőképernyőtől balra található.</string>
     <string name="permdesc_write_zeropage_settings">Az alkalmazás módosíthatja az egyéni tartalmú oldal beállításait, amely a kezdőképernyőtől balra található.</string>
     <string name="permlab_install_widget">Widget hozzáadása</string>
@@ -159,27 +166,21 @@ igazodó %1$d x %2$d elrendezésű lesz."</string>
     <string name="selected">Kijelölve</string>
     <string name="setting_apps_screen_grid">Alkalmazások képernyő rácsa</string>
     <string name="shortcut_duplicate">%s gyorsgomb már létezik.</string>
-    <string name="shortcut_installed">Felvette a(z) %s parancsikonját a kezdőképernyőre.</string>
+    <string name="shortcut_installed">Felvette %s parancsikonját a kezdőképernyőre.</string>
     <string name="shortcut_moved_to_game_launcher">Áthelyezte a játékikont a Game Launcherbe.</string>
     <string name="shortcut_uninstalled">%s gyorsgomb eltávolítva.</string>
     <string name="speak_now">Most beszéljen</string>
     <string name="swipe_up_for_more_apps">Az összes alkalmazásért húzza az ujját fel vagy le</string>
     <string name="swipe_up_for_more_apps_att">Az összes alk. megtekintéséhez húzza ujját függőlegesen a képernyőn</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Az összes alkalmazás megjelenítéséhez húzza két ujját fel- vagy lefelé a képernyőn.</string>
-    <string name="talkback_changed_to_ps">%s nyelvre váltott.</string>
+    <string name="talkback_checked">Kijelölve</string>
     <string name="talkback_folder">Mappa</string>
     <string name="talkback_n_items">%d elem</string>
     <string name="talkback_press_back_key_to_close_folder">A mappa bezárásához nyomja meg a Vissza gombot.</string>
-    <string name="talkback_tab_back_button_to_close_folder">A mappa bezárásához érintse meg a Vissza gombot.</string>
     <string name="title_settings">A %s beállításai</string>
     <string name="tts_add_shortcut_on_home_screen_notice">Ha szeretne felvenni a kezdőképernyőre egy ikont, akkor húzza a képernyő tetejére.</string>
     <string name="tts_bottom_handle">Alsó fogópont</string>
-    <string name="tts_changed_to_apps_edit_mode">Átváltott alkalmazásszerkesztési módra.</string>
-    <string name="tts_changed_to_folder_edit_mode">Átváltott mappaszerkesztési módra</string>
-    <string name="tts_changed_to_home_screen_edit_mode">Átváltott kezdőképernyő-szerkesztési módra.</string>
     <string name="tts_folder_created">Mappa létrehozva.</string>
-    <string name="tts_holding_items">%2$d további mellett nyomva tartja a következő alkalmazás ikonját: %1$s</string>
-    <string name="tts_hotseat_item_moved_from_external">Tétel áthelyezve a kezdőképernyő menüsávjára.</string>
     <string name="tts_hotseat_move_to">%d. pozíció a menüsávon.</string>
     <string name="tts_hover_item_over_other_item">A %1$s a %2$s elemen van</string>
     <string name="tts_item_added">Tétel hozzáadva.</string>
@@ -200,7 +201,6 @@ igazodó %1$d x %2$d elrendezésű lesz."</string>
     <string name="viewmore_playstore">Továbbiak a Play Áruházban</string>
     <string name="viewtype_alphabetic_grid">Betűrendes sorrend</string>
     <string name="viewtype_custom_grid">Egyéni sorrend</string>
-    <string name="voice_search">Voice Search</string>
     <string name="wallpaper_button_text">Háttérképek</string>
     <string name="wallpapers_and_themes_button_text">Háttérképek és témák</string>
     <string name="widget_button_text">Widgetek</string>
@@ -210,5 +210,4 @@ igazodó %1$d x %2$d elrendezésű lesz."</string>
     <string name="zeropage_download_msg">A funkció használatához telepítenie kell a(z) %1$s alkalmazást. A(z) %2$s letöltéséhez és telepítéséhez érintse meg a LETÖLTÉS gombot.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Sohu News</string>
-    <string name="zeropage_toutiao_title">Expressz információk</string>
 </resources>

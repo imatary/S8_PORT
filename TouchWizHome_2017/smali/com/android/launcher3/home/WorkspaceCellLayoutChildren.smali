@@ -603,49 +603,6 @@
     goto/16 :goto_3
 .end method
 
-.method public callRefreshLiveIcon()V
-    .locals 5
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/WorkspaceCellLayoutChildren;->getChildrenAllItems()Ljava/util/ArrayList;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v3
-
-    :cond_0
-    :goto_0
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
-
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/WorkspaceCellLayoutChildren;->getChildAt(Lcom/android/launcher3/common/base/item/ItemInfo;)Landroid/view/View;
-
-    move-result-object v0
-
-    instance-of v4, v0, Lcom/android/launcher3/common/view/IconView;
-
-    if-eqz v4, :cond_0
-
-    check-cast v0, Lcom/android/launcher3/common/view/IconView;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/common/view/IconView;->onLiveIconRefresh()V
-
-    goto :goto_0
-
-    :cond_1
-    return-void
-.end method
-
 .method public getDescendantFocusability()I
     .locals 2
 

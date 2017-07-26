@@ -8,11 +8,15 @@
 
 .field private static final FACTOR_VALID_DECIMAL_PLACE:I = 0x2
 
+.field private static final MAX_SWIPE_ANGLE:F = 1.2252212f
+
 .field private static final SFINDER_CLS_NAME:Ljava/lang/String; = "com.samsung.android.app.galaxyfinder.GalaxyFinderActivity"
 
 .field private static final SFINDER_PKG_NAME:Ljava/lang/String; = "com.samsung.android.app.galaxyfinder"
 
 .field private static final TAG:Ljava/lang/String; = "HomeContainer"
+
+.field private static final THRESHOLD_DIST_START_SFINDER:I = 0xc8
 
 .field private static final TOUCH_STATE_CONSUME:I = 0x1
 
@@ -129,7 +133,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0f0009
+    const v1, 0x7f0e0008
 
     invoke-virtual {v0, v1, v3, v3}, Landroid/content/res/Resources;->getFraction(III)F
 
@@ -137,7 +141,7 @@
 
     iput v1, p0, Lcom/android/launcher3/home/HomeContainer;->mHomeShrinkFactor:F
 
-    const v1, 0x7f0f0006
+    const v1, 0x7f0e0005
 
     invoke-virtual {v0, v1, v3, v3}, Landroid/content/res/Resources;->getFraction(III)F
 
@@ -145,7 +149,7 @@
 
     iput v1, p0, Lcom/android/launcher3/home/HomeContainer;->mHomeAlphaRatio:F
 
-    const v1, 0x7f0f0008
+    const v1, 0x7f0e0007
 
     invoke-virtual {v0, v1, v3, v3}, Landroid/content/res/Resources;->getFraction(III)F
 
@@ -153,7 +157,7 @@
 
     iput v1, p0, Lcom/android/launcher3/home/HomeContainer;->mPageIndicatorShrinkFactor:F
 
-    const v1, 0x7f0f0007
+    const v1, 0x7f0e0006
 
     invoke-virtual {v0, v1, v3, v3}, Landroid/content/res/Resources;->getFraction(III)F
 
@@ -180,7 +184,7 @@
     iput-boolean v1, p0, Lcom/android/launcher3/home/HomeContainer;->mIsInstalledSFinder:Z
 
     :cond_0
-    const v1, 0x7f0a0165
+    const v1, 0x7f090156
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -210,9 +214,9 @@
 
     if-eqz p2, :cond_0
 
-    const v4, 0x7f050007
+    const v4, 0x7f040005
 
-    const v5, 0x7f050009
+    const v5, 0x7f040007
 
     :goto_0
     new-instance v2, Landroid/content/Intent;
@@ -261,9 +265,9 @@
     return-void
 
     :cond_0
-    const v4, 0x7f050006
+    const v4, 0x7f040004
 
-    const v5, 0x7f050008
+    const v5, 0x7f040006
 
     goto :goto_0
 
@@ -535,6 +539,62 @@
     const/4 v7, 0x0
 
     goto :goto_1
+.end method
+
+.method private willStartSFinder(FF)Z
+    .locals 10
+
+    const-wide/high16 v8, 0x4000000000000000L    # 2.0
+
+    float-to-double v4, p2
+
+    float-to-double v6, p1
+
+    invoke-static {v4, v5, v6, v7}, Ljava/lang/Math;->atan2(DD)D
+
+    move-result-wide v4
+
+    double-to-float v2, v4
+
+    float-to-double v4, p1
+
+    invoke-static {v4, v5, v8, v9}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v4
+
+    float-to-double v6, p2
+
+    invoke-static {v6, v7, v8, v9}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v6
+
+    add-double/2addr v4, v6
+
+    invoke-static {v4, v5}, Ljava/lang/Math;->sqrt(D)D
+
+    move-result-wide v0
+
+    const v3, 0x3f9cd40c
+
+    cmpl-float v3, v2, v3
+
+    if-lez v3, :cond_0
+
+    const-wide/high16 v4, 0x4069000000000000L    # 200.0
+
+    cmpl-double v3, v0, v4
+
+    if-lez v3, :cond_0
+
+    const/4 v3, 0x1
+
+    :goto_0
+    return v3
+
+    :cond_0
+    const/4 v3, 0x0
+
+    goto :goto_0
 .end method
 
 
@@ -897,22 +957,16 @@
 
     iget-object v7, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
 
-    invoke-virtual {v7, v5, v6}, Lcom/android/launcher3/home/HomeController;->setScrollBlockArea(FF)V
+    invoke-static {v7, v5, v6}, Lcom/android/launcher3/util/event/ScrollDetector;->setBlockArea(Lcom/android/launcher3/home/HomeController;FF)Z
 
-    iget-object v7, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
+    iget-object v7, p0, Lcom/android/launcher3/home/HomeContainer;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    invoke-virtual {v7}, Lcom/android/launcher3/home/HomeController;->setScrollTalkBackEnabled()V
+    invoke-static {v7}, Lcom/android/launcher3/util/event/ScrollDetector;->setTalkBackEnabled(Landroid/content/Context;)Z
 
     goto :goto_2
 
     :pswitch_7
-    iget-object v8, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
-
-    if-eqz v8, :cond_2
-
-    iget-object v8, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
-
-    invoke-virtual {v8}, Lcom/android/launcher3/home/HomeController;->canMoveVertically()Z
+    invoke-direct {p0, v0, v1}, Lcom/android/launcher3/home/HomeContainer;->willStartSFinder(FF)Z
 
     move-result v8
 
@@ -926,21 +980,11 @@
 
     if-eqz v8, :cond_2
 
-    iget-object v8, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
-
-    invoke-virtual {v8}, Lcom/android/launcher3/home/HomeController;->isMovingOnBlock()Z
+    invoke-static {}, Lcom/android/launcher3/util/event/ScrollDetector;->isMovingOnBlock()Z
 
     move-result v8
 
     if-nez v8, :cond_2
-
-    new-instance v8, Lcom/android/launcher3/util/DvfsUtil;
-
-    iget-object v9, p0, Lcom/android/launcher3/home/HomeContainer;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    invoke-direct {v8, v9}, Lcom/android/launcher3/util/DvfsUtil;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v8}, Lcom/android/launcher3/util/DvfsUtil;->boostUpForSupportedModel()V
 
     iget v8, p0, Lcom/android/launcher3/home/HomeContainer;->mFirstDownY:F
 
@@ -1285,115 +1329,108 @@
 .end method
 
 .method public setTranslationY(F)V
-    .locals 7
+    .locals 10
+
+    const/4 v5, 0x0
+
+    const/4 v9, 0x0
+
+    cmpl-float v6, p1, v9
+
+    if-eqz v6, :cond_3
+
+    const/4 v1, 0x1
+
+    :goto_0
+    iget-object v6, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
+
+    invoke-virtual {v6, v1}, Lcom/android/launcher3/home/HomeController;->updateOnlyCurrentPage(Z)V
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->setTranslationY(F)V
 
-    iget-object v4, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
+    iget-object v6, p0, Lcom/android/launcher3/home/HomeContainer;->mTrayManager:Lcom/android/launcher3/common/tray/TrayManager;
 
-    if-eqz v4, :cond_1
+    if-eqz v6, :cond_0
 
-    iget-object v4, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
+    iget-object v6, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
 
-    invoke-virtual {v4}, Lcom/android/launcher3/home/HomeController;->isSelectState()Z
+    if-eqz v6, :cond_0
 
-    move-result v4
+    iget-object v6, p0, Lcom/android/launcher3/home/HomeContainer;->mTrayManager:Lcom/android/launcher3/common/tray/TrayManager;
 
-    if-nez v4, :cond_0
-
-    iget-object v4, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
-
-    invoke-virtual {v4}, Lcom/android/launcher3/home/HomeController;->isRunningStateChangeAnimation()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    :cond_0
-    :goto_0
-    return-void
-
-    :cond_1
-    iget-object v4, p0, Lcom/android/launcher3/home/HomeContainer;->mTrayManager:Lcom/android/launcher3/common/tray/TrayManager;
-
-    if-eqz v4, :cond_2
-
-    iget-object v4, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
-
-    if-eqz v4, :cond_2
-
-    iget-object v4, p0, Lcom/android/launcher3/home/HomeContainer;->mTrayManager:Lcom/android/launcher3/common/tray/TrayManager;
-
-    iget-object v5, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
+    iget-object v7, p0, Lcom/android/launcher3/home/HomeContainer;->mController:Lcom/android/launcher3/home/HomeController;
 
     invoke-virtual {p0}, Lcom/android/launcher3/home/HomeContainer;->getHeight()I
 
-    move-result v6
+    move-result v8
 
-    invoke-virtual {v4, v5, p1, v6}, Lcom/android/launcher3/common/tray/TrayManager;->onChangeTrayTranslationY(Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;FI)V
+    invoke-virtual {v6, v7, p1, v8}, Lcom/android/launcher3/common/tray/TrayManager;->onChangeTrayTranslationY(Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;FI)V
 
-    :cond_2
-    iget-object v4, p0, Lcom/android/launcher3/home/HomeContainer;->mTrayManager:Lcom/android/launcher3/common/tray/TrayManager;
+    :cond_0
+    iget-object v6, p0, Lcom/android/launcher3/home/HomeContainer;->mTrayManager:Lcom/android/launcher3/common/tray/TrayManager;
 
-    if-eqz v4, :cond_5
+    if-eqz v6, :cond_4
 
-    iget-object v4, p0, Lcom/android/launcher3/home/HomeContainer;->mTrayManager:Lcom/android/launcher3/common/tray/TrayManager;
+    iget-object v6, p0, Lcom/android/launcher3/home/HomeContainer;->mTrayManager:Lcom/android/launcher3/common/tray/TrayManager;
 
-    invoke-virtual {v4}, Lcom/android/launcher3/common/tray/TrayManager;->getTrayMovingRange()I
+    invoke-virtual {v6}, Lcom/android/launcher3/common/tray/TrayManager;->getTrayMovingRange()I
 
     move-result v0
 
     :goto_1
-    neg-int v3, v0
+    neg-int v4, v0
 
-    move v2, v0
+    move v3, v0
 
-    const/4 v4, 0x0
+    cmpl-float v6, p1, v9
 
-    cmpl-float v4, p1, v4
+    if-eqz v6, :cond_5
 
-    if-eqz v4, :cond_6
+    int-to-float v6, v4
 
-    int-to-float v4, v3
+    cmpg-float v6, p1, v6
 
-    cmpg-float v4, p1, v4
+    if-lez v6, :cond_1
 
-    if-lez v4, :cond_3
+    int-to-float v6, v3
 
-    int-to-float v4, v2
+    cmpl-float v6, p1, v6
 
-    cmpl-float v4, p1, v4
+    if-ltz v6, :cond_5
 
-    if-ltz v4, :cond_6
-
-    :cond_3
-    const/16 v1, 0x8
+    :cond_1
+    const/16 v2, 0x8
 
     :goto_2
     invoke-virtual {p0}, Lcom/android/launcher3/home/HomeContainer;->getVisibility()I
 
-    move-result v4
+    move-result v5
 
-    if-eq v4, v1, :cond_4
+    if-eq v5, v2, :cond_2
 
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/HomeContainer;->setVisibility(I)V
+    invoke-virtual {p0, v2}, Lcom/android/launcher3/home/HomeContainer;->setVisibility(I)V
 
-    :cond_4
+    :cond_2
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeContainer;->updateScaleAndAlphaByTranslationY(F)V
+
+    return-void
+
+    :cond_3
+    move v1, v5
 
     goto :goto_0
 
-    :cond_5
-    iget-object v4, p0, Lcom/android/launcher3/home/HomeContainer;->mLauncher:Lcom/android/launcher3/Launcher;
+    :cond_4
+    iget-object v6, p0, Lcom/android/launcher3/home/HomeContainer;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    invoke-static {v4}, Lcom/android/launcher3/Utilities;->getFullScreenHeight(Landroid/app/Activity;)I
+    invoke-static {v6}, Lcom/android/launcher3/Utilities;->getFullScreenHeight(Landroid/app/Activity;)I
 
     move-result v0
 
     goto :goto_1
 
-    :cond_6
-    const/4 v1, 0x0
+    :cond_5
+    move v2, v5
 
     goto :goto_2
 .end method

@@ -40,12 +40,6 @@
     return-void
 .end method
 
-.method public callRefreshLiveIcon()V
-    .locals 0
-
-    return-void
-.end method
-
 .method public cancelLongPress()V
     .locals 3
 

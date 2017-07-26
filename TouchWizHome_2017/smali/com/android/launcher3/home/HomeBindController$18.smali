@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/HomeBindController;->bindRemoveScreen(I)V
+    value = Lcom/android/launcher3/home/HomeBindController;->bindAppsInFolderRemoved(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,20 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/home/HomeBindController;
 
-.field final synthetic val$index:I
+.field final synthetic val$folderInfos:Ljava/util/ArrayList;
+
+.field final synthetic val$removed:Ljava/util/ArrayList;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/HomeBindController;I)V
+.method constructor <init>(Lcom/android/launcher3/home/HomeBindController;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/home/HomeBindController$18;->this$0:Lcom/android/launcher3/home/HomeBindController;
 
-    iput p2, p0, Lcom/android/launcher3/home/HomeBindController$18;->val$index:I
+    iput-object p2, p0, Lcom/android/launcher3/home/HomeBindController$18;->val$folderInfos:Ljava/util/ArrayList;
+
+    iput-object p3, p0, Lcom/android/launcher3/home/HomeBindController$18;->val$removed:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,13 +43,15 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 3
 
     iget-object v0, p0, Lcom/android/launcher3/home/HomeBindController$18;->this$0:Lcom/android/launcher3/home/HomeBindController;
 
-    iget v1, p0, Lcom/android/launcher3/home/HomeBindController$18;->val$index:I
+    iget-object v1, p0, Lcom/android/launcher3/home/HomeBindController$18;->val$folderInfos:Ljava/util/ArrayList;
 
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/home/HomeBindController;->bindRemoveScreen(I)V
+    iget-object v2, p0, Lcom/android/launcher3/home/HomeBindController$18;->val$removed:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/home/HomeBindController;->bindAppsInFolderRemoved(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
     return-void
 .end method

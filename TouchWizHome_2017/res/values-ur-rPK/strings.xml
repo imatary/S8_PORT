@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">تاریخ نامہ تلاش کریں</string>
-    <string name="accessibility_add_home_screen">صفحہ اضافہ</string>
-    <string name="accessibility_button">بٹن</string>
-    <string name="accessibility_dimmed">مدھم</string>
+    <string name="about">%s کے متعلق</string>
+    <string name="about_already_installed">تازہ ترین ورژن پہلے سے انسٹال ہے۔</string>
+    <string name="about_home_screen">ہوم اسکرین</string>
+    <string name="about_licence">اوپن سورس لائسنسز</string>
+    <string name="about_network_err">اپ ڈیٹ چیک نہیں کرسکتے۔ آپ کا فون کسی نیٹ ورک سے جڑا ہوا نہیں ہے۔</string>
+    <string name="about_new_version_exist">نیا ورژن دستیاب ہے</string>
+    <string name="about_retry">دوبارہ کوشش کریں</string>
+    <string name="about_update">اپ ڈیٹ</string>
+    <string name="about_version">ورژن %s</string>
     <string name="activity_not_available">یہ ایپلیکیشن آپ کے آلہ کے لیے دستیاب نہیں ہے۔</string>
     <string name="activity_not_found">ایپلیکیشن نصب نہیں کی گئی۔</string>
     <string name="align_to_bottom">نیچے سیدھ میں لائیں</string>
     <string name="align_to_top">اوپر سیدھ میں لائیں</string>
-    <string name="app_locked_toast">%s مقفل۔</string>
     <string name="app_search">فون تلاش کریں</string>
     <string name="app_search_no_apps">تلاش نتائج سے ہوم اسکرین پر آپ شارٹ کٹ شامل کرسکتے ہیں۔</string>
     <string name="app_search_no_results_found">کوئی نتائج نہیں ملے</string>
     <string name="app_search_tablet">ٹیبلیٹ تلاش کریں</string>
-    <string name="app_unlocked_toast">%s غیر مقفل ہوگیا۔</string>
     <string name="application_name">‏TouchWiz ہوم</string>
     <string name="apply">اطلاق</string>
     <string name="appsPicker_add_button">شامل کریں</string>
@@ -38,7 +42,6 @@
     <string name="default_page">ڈیفالٹ صفحہ</string>
     <string name="default_scroll_format">صفحہ %1$d از %2$d۔</string>
     <string name="disable_message">%1$s اور اس سے متعلقہ تمام فنکشنز نااہل ہوجائے گا۔ دوبارہ ایپلیکیشن اہل کرنے کے لیے، سیٹنگز > ایپلیکیشنز پر جائیں، پھر %2$s منتخب کریں۔</string>
-    <string name="disable_message_knox_mode">%1$s اور اس سے متعلقہ تمام فنکشنز نااہل ہوجائے گا۔ ایپلیکیشن کو دوبارہ اہل کرنے کے لیے، %2$s سیٹنگز > ایپلیکیشنز پر جائيں۔</string>
     <string name="disable_message_vzw">%s اور اس سے متعلقہ سبھی خصوصیات کو غیر فعال کر دیا جائے گا۔ اسے دوبارہ اہل کرنے کے لیے، سیٹنگز > ایپلیکیشنز > ایپلیکیشن مینیجر پر جائیں۔</string>
     <string name="discard">مسترد کریں</string>
     <string name="do_not_show_again">دوبارہ نہ دکھائیں</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">ایپلیکیشنز شامل کریں</string>
     <string name="folder_closed">فولڈر بند ہوگیا۔</string>
     <string name="folder_color">فولڈر کا رنگ</string>
+    <string name="folder_color_blue">نیلا</string>
     <string name="folder_color_default">ڈیفالٹ فولڈر کا رنگ</string>
-    <string name="folder_color_pd">رنگ %d</string>
+    <string name="folder_color_green">سبز</string>
+    <string name="folder_color_orange">نارنجی</string>
+    <string name="folder_color_yellow">زرد</string>
     <string name="folder_hint_text">فولڈر کا نام درج کریں</string>
     <string name="folder_microsoft_apps">‏Microsoft ایپلیکیشنز</string>
     <string name="folder_multi_search_bar_hint">ایپلیکیشنز کے لیے تلاش کریں</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">اس صفحہ پر مزید جگہ نہیں ہے</string>
     <string name="out_of_space_dialog">اس صفحہ پر کافی جگہ ہے۔ شئے نئے صفحہ پر شامل ہوجائے گا۔</string>
     <string name="permdesc_install_widget">یہ ایپلیکیشن ہوم اسکرین پر ویجٹس شامل کرسکتا ہے۔</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">یہ ایپلیکیشن کسٹم مواد والا صفحہ کی سیٹنگز کو پڑھ سکتا ہے، جو ہوم اسکرین کے بائین طرف واقع ہے۔</string>
     <string name="permdesc_write_zeropage_settings">یہ ایپلیکیشن کسٹم مواد والا صفحہ کی سیٹنگز کو تبدیل کرسکتا ہے، جو ہوم اسکرین کے بائین طرف واقع ہے۔</string>
     <string name="permlab_install_widget">ویجٹس شامل کریں</string>
@@ -165,20 +172,14 @@
     <string name="swipe_up_for_more_apps">تمام ایپلیکیشنز کے لیے اوپر یا نیچے سوائپ کریں</string>
     <string name="swipe_up_for_more_apps_att">تمام ایپلیکیشنز کے لیے اسکرین پر اوپر یا نیچے سوائپ کریں</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">تمام ایپلیکیشنز کے لیے دو انگلیوں سے اوپر یا نیچے سوائپ کریں۔</string>
-    <string name="talkback_changed_to_ps">%s سے تبدیل کیا۔</string>
+    <string name="talkback_checked">منتخب شدہ</string>
     <string name="talkback_folder">فولڈر</string>
     <string name="talkback_n_items">%d آئٹمز</string>
     <string name="talkback_press_back_key_to_close_folder">فولڈر بند کرنے کے لیے واپسی کلید دبائیں۔</string>
-    <string name="talkback_tab_back_button_to_close_folder">فولڈر بند کرنے کے لیے پیچھے کے بٹن پر تھپکی دیں۔</string>
     <string name="title_settings">%s سیٹنگز</string>
     <string name="tts_add_shortcut_on_home_screen_notice">ہوم اسکرین پر شامل کرنے کے لیے اسکرین کے بالائی پر شبیہ کو گھسیٹیں۔</string>
     <string name="tts_bottom_handle">نیچے کا ہینڈل</string>
-    <string name="tts_changed_to_apps_edit_mode">ایپلیکیشنز تدوین موڈ میں تبدیلی ہوگئی۔</string>
-    <string name="tts_changed_to_folder_edit_mode">فولڈر تدوین موڈ میں تبدیلی ہوگئی ہے</string>
-    <string name="tts_changed_to_home_screen_edit_mode">ہوم اسکرین تدوین موڈ میں تبدیلی ہوگئی۔</string>
     <string name="tts_folder_created">فولڈر تخلیق کیا گیا۔</string>
-    <string name="tts_holding_items">%1$s اور %2$d دوسروں کو ہولڈ کررہا ہے</string>
-    <string name="tts_hotseat_item_moved_from_external">شے ہوم اسکرین پر مینیو بار کو منتقل کی گئی۔</string>
     <string name="tts_hotseat_move_to">مینو بار میں مقام ‎%d۔</string>
     <string name="tts_hover_item_over_other_item">%2$s کے اوپر %1$s</string>
     <string name="tts_item_added">شے اضافہ کی گئی۔</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">‏Play Store میں مزید دیکھیں</string>
     <string name="viewtype_alphabetic_grid">حروف تہجی کی ترتیب</string>
     <string name="viewtype_custom_grid">کسٹم کی ترتیب</string>
-    <string name="voice_search">صوتی تلاش</string>
     <string name="wallpaper_button_text">وال پیپر</string>
     <string name="wallpapers_and_themes_button_text">وال پیپرز اور تھیم</string>
     <string name="widget_button_text">ویجیٹس</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">اس فنکشن کا استعمال کرنے کے لیے، آپ کو %1$s نصب کرنے کی ضرورت ہے۔ %2$s ڈاؤن لوڈ اور نصب کرنے کے لیے [ڈاؤن لوڈ کریں] پر تھپکی دیں۔</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">سوہو خبریں</string>
-    <string name="zeropage_toutiao_title">معلومات ایکسپریس</string>
 </resources>

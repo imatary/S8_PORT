@@ -8,7 +8,7 @@
 
 .field private static final PERMISSION_INSTALL_APK:Ljava/lang/String; = "com.sec.knox.APK_INSTALL_LWC"
 
-.field public static final SECURE_FOLDER_PACKAGE_NAME:Ljava/lang/String; = "com.samsung.knox.securefolder"
+.field private static final SECURE_FOLDER_PACKAGE_NAME:Ljava/lang/String; = "com.samsung.knox.securefolder"
 
 .field private static final TAG:Ljava/lang/String; = "SecureFolderHelper"
 

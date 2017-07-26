@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">શોધ ઇતિહાસ</string>
-    <string name="accessibility_add_home_screen">પૃષ્ઠ ઉમેરો</string>
-    <string name="accessibility_button">બટન</string>
-    <string name="accessibility_dimmed">અસ્પષ્ટ</string>
+    <string name="about">%s વિશે</string>
+    <string name="about_already_installed">નવીનતમ સંસ્કરણ પહેલેથી જ ઇન્સ્ટોલ કરેલ છે.</string>
+    <string name="about_home_screen">હોમ સ્ક્રીન</string>
+    <string name="about_licence">ખુલ્લાં સ્ત્રોત પરવાનાઓ</string>
+    <string name="about_network_err">અપડેટ્સ માટે તપાસ કરી શકાતી નથી. તમારો ફોન નેટવર્ક સાથે જોડાયેલ નથી.</string>
+    <string name="about_new_version_exist">એક નવું સંસ્કરણ ઉપલબ્ધ છે.</string>
+    <string name="about_retry">ફરી પ્રયાસ કરો</string>
+    <string name="about_update">અપડેટ કરો</string>
+    <string name="about_version">સંસ્કરણ %s</string>
     <string name="activity_not_available">આ એપ તમારા ઉપકરણ માટે ઉપલબ્ધ નથી.</string>
     <string name="activity_not_found">એપ્લિકેશન સ્થાપિત નથી.</string>
     <string name="align_to_bottom">તળિયા પર સંરેખિત કરો</string>
     <string name="align_to_top">ટોચ પર સંરેખિત કરો</string>
-    <string name="app_locked_toast">%s લોક કર્યુ.</string>
     <string name="app_search">ફોન શોધો</string>
     <string name="app_search_no_apps">તમે શોધ પરિણામોમાંથી હોમ સ્ક્રીન પર શોર્ટકટ્સ ઉમેરી શકો છો.</string>
     <string name="app_search_no_results_found">કોઈ પરિણામો મળ્યાં નથી</string>
     <string name="app_search_tablet">ટેબ્લેટ શોધો</string>
-    <string name="app_unlocked_toast">%s અનલોક છે.</string>
     <string name="application_name">ટચવિઝ હોમ</string>
     <string name="apply">લાગુ કરો</string>
     <string name="appsPicker_add_button">ઉમેરો</string>
@@ -38,7 +42,6 @@
     <string name="default_page">મૂળભૂત પૃષ્ઠ</string>
     <string name="default_scroll_format">%1$d માંથી %2$d પૃષ્ઠ.</string>
     <string name="disable_message">%1$s અને તેનાથી સંબંધિત બધા ફંક્શન્સને અક્ષમ કરવામાં આવશે. એપને ફરી સક્ષમ કરવા માટે, સેટિંગ્સ > એપ્લિકેશનો પર જાઓ, પછી %2$s પસંદ કરો.</string>
-    <string name="disable_message_knox_mode">%1$s અને તેનાથી સંબંધિત બધા ફંક્શન્સને અક્ષમ કરવામાં આવશે. એપને ફરીથી સક્ષમ કરવા માટે, %2$s સેટિંગ્સ > એપ્સ પર જાઓ.</string>
     <string name="disable_message_vzw">%s અને તેનાથી સંબંધિત બધી સુવિધાઓને અક્ષમ કરવામાં આવશે. તેને ફરીથી સક્ષમ કરવા માટે, સેટિંગ્સ > એપ્લિકેશનો > એપ્લિકેશન સંચાલક પર જાઓ.</string>
     <string name="discard">કાઢી નાખો</string>
     <string name="do_not_show_again">ફરીથી બતાવશો નહીં</string>
@@ -48,9 +51,12 @@
     <string name="folder_add_app">ફોલ્ડરમાં એપ્સ ઉમેરો</string>
     <string name="folder_add_button">એપ્સ ઉમેરો</string>
     <string name="folder_closed">ફોલ્ડર બંધ કર્યુ.</string>
-    <string name="folder_color">ફોલ્ડર રંગ</string>
+    <string name="folder_color">ફોલ્ડરનો રંગ</string>
+    <string name="folder_color_blue">ભૂરો</string>
     <string name="folder_color_default">મૂળભૂત ફોલ્ડર રંગ</string>
-    <string name="folder_color_pd">રંગ %d</string>
+    <string name="folder_color_green">લીલો</string>
+    <string name="folder_color_orange">નારંગી</string>
+    <string name="folder_color_yellow">પીળો</string>
     <string name="folder_hint_text">ફોલ્ડર નામ દાખલ કરો</string>
     <string name="folder_microsoft_apps">Microsoft એપ્સ</string>
     <string name="folder_multi_search_bar_hint">એપ્સ માટે શોધો</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">આ પૃષ્ઠ પર કોઈ ખંડ નથી</string>
     <string name="out_of_space_dialog">આ પૃષ્ઠ પર વધુ રૂમ નથી. વસ્તુને નવા પૃષ્ઠ પર ઉમેરવામાં આવશે.</string>
     <string name="permdesc_install_widget">આ એપ હોમ સ્ક્રીન પર વિજેટ્સ ઉમેરી શકે છે.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">આ એપ કસ્ટમ સામગ્રી પૃષ્ઠ વાંચી શકે છે, કે જે હોમ સ્ક્રીનની ડાબી બાજુએ સ્થિત હોય છે.</string>
     <string name="permdesc_write_zeropage_settings">આ એપ કસ્ટમ સામગ્રી પૃષ્ઠની સેટિંગ્સ બદલી શકે છે, કે જે હોમ સ્ક્રીનની ડાબી બાજુએ સ્થિત હોય છે.</string>
     <string name="permlab_install_widget">વિજેટ્સ ઉમેરો</string>
@@ -158,27 +165,21 @@
     <string name="selected">પસંદ કરેલ</string>
     <string name="setting_apps_screen_grid">એપ્સ સ્ક્રીન ગ્રિડ</string>
     <string name="shortcut_duplicate">શોર્ટકટ %s અગાઉથી જ હાજર છે.</string>
-    <string name="shortcut_installed">હોમ સ્ક્રીન પર %s નો શોર્ટકટ ઉમેર્યો.</string>
+    <string name="shortcut_installed">%s ના શોર્ટકટને હોમ સ્ક્રીન પર ઉમેર્યો.</string>
     <string name="shortcut_moved_to_game_launcher">રમત ચિહ્નો Game Launcher માં ખસેડયાં.</string>
     <string name="shortcut_uninstalled">શોર્ટકટ %s કાઢ્યો.</string>
     <string name="speak_now">હવે બોલો</string>
     <string name="swipe_up_for_more_apps">બધી એપ્સ માટે ઉપર અથવા નીચે સ્વાઇપ કરો</string>
     <string name="swipe_up_for_more_apps_att">બધી એપ્સ માટે સ્ક્રીન પર ઉપર અથવા નીચે સ્વાઇપ કરો</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">બધી એપ્સ માટે બે આંગળી સાથે ઉપર અથવા નીચે સ્વાઇપ કરો.</string>
-    <string name="talkback_changed_to_ps">%s માં બદલ્યું.</string>
+    <string name="talkback_checked">પસંદ કરેલ</string>
     <string name="talkback_folder">ફોલ્ડર</string>
     <string name="talkback_n_items">%d વસ્તુઓ</string>
     <string name="talkback_press_back_key_to_close_folder">ફોલ્ડર બંધ કરવા માટે બેક કી દબાવો.</string>
-    <string name="talkback_tab_back_button_to_close_folder">ફોલ્ડર બંધ કરવા માટે પાછળ બટન ટેપ કરો.</string>
     <string name="title_settings">%s સેટિંગ્સ</string>
     <string name="tts_add_shortcut_on_home_screen_notice">હોમ સ્ક્રીન પર ઉમેરવા માટે ચિહ્નને સ્ક્રીનનાં ટોચ પર ડ્રેગ કરો.</string>
     <string name="tts_bottom_handle">તળિયેનું હેન્ડલ</string>
-    <string name="tts_changed_to_apps_edit_mode">એપ્સ સંપાદન મોડ પર બદલેલ છે.</string>
-    <string name="tts_changed_to_folder_edit_mode">ફોલ્ડર સંપાદન મોડમાં બદલ્યું</string>
-    <string name="tts_changed_to_home_screen_edit_mode">હોમ સ્ક્રીન સંપાદન મોડ પર બદલેલ છે.</string>
     <string name="tts_folder_created">ફોલ્ડર બનાવ્યું.</string>
-    <string name="tts_holding_items">%1$s અને %2$d અન્ય હોલ્ડ કરવું</string>
-    <string name="tts_hotseat_item_moved_from_external">વસ્તુ હોમ સ્ક્રીન પરના મેનૂ બાર પર ખસેડાઈ.</string>
     <string name="tts_hotseat_move_to">મેનૂ પટ્ટીમાં %d નું સ્થાન.</string>
     <string name="tts_hover_item_over_other_item">%2$s ની ટોચ પર %1$s</string>
     <string name="tts_item_added">વસ્તુ ઉમેરી.</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">Play Store માં વધુ જુઓ</string>
     <string name="viewtype_alphabetic_grid">વર્ણાત્મક ક્રમ</string>
     <string name="viewtype_custom_grid">કસ્ટમ ક્રમ</string>
-    <string name="voice_search">અવાજ શોધ</string>
     <string name="wallpaper_button_text">વોલપેપર્સ</string>
     <string name="wallpapers_and_themes_button_text">વોલપેપરો અને થીમ્સ</string>
     <string name="widget_button_text">વિજેટ્સ</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">આ ફંક્શનનો ઉપયોગ કરવા માટે, તમારે %1$s ઇન્સ્ટોલ કરવાની જરૂર છે. %2$s ડાઉનલોડ અને ઇન્સ્ટોલ કરવા માટે “ડાઉનલોડ કરો” ટેપ કરો.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">સોહુ સમાચાર</string>
-    <string name="zeropage_toutiao_title">માહિતી એક્સપ્રેસ</string>
 </resources>

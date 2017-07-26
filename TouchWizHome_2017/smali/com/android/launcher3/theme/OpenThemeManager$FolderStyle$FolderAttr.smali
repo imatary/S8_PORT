@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a00c5
+    const v1, 0x7f0900a8
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -278,7 +278,7 @@
 
     sparse-switch p2, :sswitch_data_0
 
-    const v2, 0x7f030001
+    const v2, 0x7f0200a1
 
     :goto_0
     invoke-static {}, Lcom/android/launcher3/theme/OpenThemeManager;->access$300()Landroid/content/Context;
@@ -313,22 +313,22 @@
     return-void
 
     :sswitch_0
-    const/high16 v2, 0x7f030000
+    const v2, 0x7f0200a0
 
     goto :goto_0
 
     :sswitch_1
-    const v2, 0x7f030002
+    const v2, 0x7f0200a2
 
     goto :goto_0
 
     :sswitch_2
-    const v2, 0x7f030003
+    const v2, 0x7f0200a3
 
     goto :goto_0
 
     :sswitch_3
-    const v2, 0x7f030004
+    const v2, 0x7f0200a4
 
     goto :goto_0
 
@@ -346,6 +346,8 @@
     iput-object v3, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;->mCloseFolderImage:Landroid/graphics/Bitmap;
 
     goto :goto_1
+
+    nop
 
     :sswitch_data_0
     .sparse-switch

@@ -51,7 +51,9 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$1600()Z
+    iget-object v0, p0, Lcom/android/launcher3/allapps/model/AppsLoader$15;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
+
+    invoke-static {v0}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$1600(Lcom/android/launcher3/allapps/model/AppsLoader;)Z
 
     move-result v0
 

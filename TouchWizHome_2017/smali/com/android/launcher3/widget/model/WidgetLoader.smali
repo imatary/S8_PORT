@@ -614,13 +614,12 @@
 
     move-result-object v20
 
-    :cond_0
     :goto_0
     invoke-interface/range {v20 .. v20}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v19
 
-    if-eqz v19, :cond_1
+    if-eqz v19, :cond_0
 
     invoke-interface/range {v20 .. v20}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -632,28 +631,28 @@
 
     move/from16 v19, v0
 
-    if-eqz v19, :cond_2
+    if-eqz v19, :cond_1
 
-    :cond_1
+    :cond_0
     move-object/from16 v0, p2
 
     iget-boolean v0, v0, Lcom/android/launcher3/widget/model/WidgetLoader$SyncContext;->stopped:Z
 
     move/from16 v19, v0
 
-    if-eqz v19, :cond_9
+    if-eqz v19, :cond_8
 
     const/16 v16, 0x0
 
     :goto_1
     return-object v16
 
-    :cond_2
+    :cond_1
     instance-of v0, v12, Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;
 
     move/from16 v19, v0
 
-    if-eqz v19, :cond_6
+    if-eqz v19, :cond_5
 
     move-object v5, v12
 
@@ -679,17 +678,17 @@
 
     invoke-direct {v6, v0, v5, v1}, Lcom/android/launcher3/widget/PendingAddWidgetInfo;-><init>(Landroid/content/Context;Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;Landroid/os/Parcelable;)V
 
-    :cond_3
+    :cond_2
     :goto_2
-    if-eqz v6, :cond_0
-
     move-object/from16 v0, p2
 
     iget-boolean v0, v0, Lcom/android/launcher3/widget/model/WidgetLoader$SyncContext;->hasUninstallApp:Z
 
     move/from16 v19, v0
 
-    if-nez v19, :cond_4
+    if-nez v19, :cond_3
+
+    if-eqz v6, :cond_3
 
     move-object/from16 v0, p0
 
@@ -713,7 +712,7 @@
 
     iput-boolean v0, v1, Lcom/android/launcher3/widget/model/WidgetLoader$SyncContext;->hasUninstallApp:Z
 
-    :cond_4
+    :cond_3
     iget-object v0, v6, Lcom/android/launcher3/common/base/item/PendingAddItemInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     move-object/from16 v19, v0
@@ -768,7 +767,7 @@
 
     move-result-object v15
 
-    if-eqz v15, :cond_8
+    if-eqz v15, :cond_7
 
     new-instance v11, Lcom/android/launcher3/common/model/PackageItemInfo;
 
@@ -814,7 +813,7 @@
 
     move-object/from16 v19, v0
 
-    if-nez v19, :cond_7
+    if-nez v19, :cond_6
 
     const-string v4, ""
 
@@ -835,7 +834,7 @@
 
     move/from16 v1, v21
 
-    if-ne v0, v1, :cond_5
+    if-ne v0, v1, :cond_4
 
     const/16 v19, 0x0
 
@@ -887,19 +886,19 @@
 
     invoke-virtual {v0, v9, v1}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    :cond_5
+    :cond_4
     check-cast v15, Ljava/util/ArrayList;
 
     invoke-virtual {v15, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
 
-    :cond_6
+    :cond_5
     instance-of v0, v12, Landroid/content/pm/ResolveInfo;
 
     move/from16 v19, v0
 
-    if-eqz v19, :cond_3
+    if-eqz v19, :cond_2
 
     new-instance v6, Lcom/android/launcher3/widget/PendingAddShortcutInfo;
 
@@ -909,7 +908,7 @@
 
     goto/16 :goto_2
 
-    :cond_7
+    :cond_6
     iget-object v0, v11, Lcom/android/launcher3/common/model/PackageItemInfo;->title:Ljava/lang/CharSequence;
 
     move-object/from16 v19, v0
@@ -920,7 +919,7 @@
 
     goto :goto_3
 
-    :cond_8
+    :cond_7
     new-instance v19, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
@@ -985,7 +984,7 @@
 
     goto/16 :goto_0
 
-    :cond_9
+    :cond_8
     invoke-static/range {v18 .. v18}, Lcom/android/launcher3/widget/model/WidgetLoader;->sortByValues(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v19

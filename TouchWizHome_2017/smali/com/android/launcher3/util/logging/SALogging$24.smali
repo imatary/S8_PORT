@@ -57,7 +57,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901b8
+    const v12, 0x7f0801b8
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -111,7 +111,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901b5
+    const v12, 0x7f0801b5
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -123,7 +123,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901b4
+    const v12, 0x7f0801b4
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -143,7 +143,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901be
+    const v12, 0x7f0801be
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -155,7 +155,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901bd
+    const v12, 0x7f0801bd
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -167,7 +167,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901ac
+    const v12, 0x7f0801ac
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -191,7 +191,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901ab
+    const v12, 0x7f0801ab
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -211,7 +211,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901ad
+    const v12, 0x7f0801ad
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -223,7 +223,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901ba
+    const v12, 0x7f0801ba
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -239,7 +239,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901b6
+    const v12, 0x7f0801b6
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -255,7 +255,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901b6
+    const v12, 0x7f0801b6
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -271,7 +271,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901b3
+    const v12, 0x7f0801b3
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -287,7 +287,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901b9
+    const v12, 0x7f0801b9
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -313,7 +313,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901c2
+    const v12, 0x7f0801c2
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -325,7 +325,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901c0
+    const v12, 0x7f0801c0
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -337,7 +337,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901bf
+    const v12, 0x7f0801bf
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -358,7 +358,7 @@
 
     iget-object v11, p0, Lcom/android/launcher3/util/logging/SALogging$24;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    const v12, 0x7f0901b7
+    const v12, 0x7f0801b7
 
     invoke-virtual {v7, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -115,7 +115,7 @@
 
     const/4 v1, 0x0
 
-    const v0, 0x7f100029
+    const v0, 0x7f0f0039
 
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -146,7 +146,7 @@
 
     const/4 v8, 0x0
 
-    const v4, 0x7f100009
+    const v4, 0x7f0f0019
 
     invoke-virtual {p1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -172,7 +172,7 @@
 
     invoke-virtual {v1}, Landroid/view/View;->invalidate()V
 
-    const v4, 0x7f10002b
+    const v4, 0x7f0f003b
 
     invoke-virtual {p1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -182,13 +182,13 @@
 
     invoke-virtual {v2, v8}, Landroid/widget/TextView;->setVisibility(I)V
 
-    const v4, 0x7f090011
+    const v4, 0x7f080015
 
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(I)V
 
     iput-object v2, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mDefaultSearchViewText:Landroid/widget/TextView;
 
-    const v4, 0x7f10002c
+    const v4, 0x7f0f003c
 
     invoke-virtual {p1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -196,7 +196,7 @@
 
     iput-object v4, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mHeader:Landroid/view/View;
 
-    const v4, 0x7f100035
+    const v4, 0x7f0f0045
 
     invoke-virtual {p1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -206,7 +206,7 @@
 
     iput-object v4, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mEmptyView:Landroid/widget/TextView;
 
-    const v4, 0x7f10002d
+    const v4, 0x7f0f003d
 
     invoke-virtual {p1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -218,7 +218,7 @@
 
     iput-object v3, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mSearchResultText:Landroid/widget/TextView;
 
-    const v4, 0x7f100033
+    const v4, 0x7f0f0043
 
     invoke-virtual {p1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -228,7 +228,7 @@
 
     iput-object v4, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mSearchListView:Landroid/widget/ListView;
 
-    const v4, 0x7f100034
+    const v4, 0x7f0f0044
 
     invoke-virtual {p1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -295,7 +295,7 @@
 
     if-eqz p1, :cond_3
 
-    const v2, 0x7f02006d
+    const v2, 0x7f02006f
 
     invoke-virtual {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->getContext()Landroid/content/Context;
 
@@ -354,7 +354,7 @@
     return-void
 
     :cond_3
-    const v2, 0x7f02006e
+    const v2, 0x7f020070
 
     invoke-virtual {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->getContext()Landroid/content/Context;
 
@@ -403,7 +403,7 @@
 
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
-    const v0, 0x7f100027
+    const v0, 0x7f0f0037
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->findViewById(I)Landroid/view/View;
 
@@ -417,7 +417,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->initAllListView(Landroid/view/ViewGroup;)V
 
-    const v0, 0x7f100028
+    const v0, 0x7f0f0038
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->findViewById(I)Landroid/view/View;
 
@@ -480,7 +480,7 @@
 .end method
 
 .method public setScrollIndexer(Ljava/util/List;Ljava/lang/CharSequence;)V
-    .locals 16
+    .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -493,346 +493,296 @@
         }
     .end annotation
 
-    move-object/from16 v0, p0
+    const/4 v12, 0x0
 
-    iget-object v13, v0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mTwIndexScrollView:Lcom/samsung/android/widget/SemIndexScrollView;
+    iget-object v10, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mTwIndexScrollView:Lcom/samsung/android/widget/SemIndexScrollView;
 
-    if-eqz v13, :cond_7
+    if-eqz v10, :cond_7
 
     if-eqz p0, :cond_1
 
-    new-instance v12, Landroid/graphics/Point;
+    const/4 v7, 0x0
 
-    invoke-direct {v12}, Landroid/graphics/Point;-><init>()V
+    invoke-virtual {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->getHeight()I
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->getContext()Landroid/content/Context;
+    move-result v10
 
-    move-result-object v13
+    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
-    invoke-static {v13, v12}, Lcom/android/launcher3/Utilities;->getScreenSize(Landroid/content/Context;Landroid/graphics/Point;)V
+    move-result v11
 
-    const/4 v9, 0x0
+    div-int v2, v10, v11
 
-    iget v13, v12, Landroid/graphics/Point;->y:I
+    invoke-virtual {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->getResources()Landroid/content/res/Resources;
 
-    invoke-interface/range {p2 .. p2}, Ljava/lang/CharSequence;->length()I
+    move-result-object v10
 
-    move-result v14
+    const v11, 0x7f09001a
 
-    div-int v4, v13, v14
+    invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimension(I)F
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->getResources()Landroid/content/res/Resources;
+    move-result v10
 
-    move-result-object v13
+    float-to-int v4, v10
 
-    const v14, 0x7f0a001a
+    if-le v2, v4, :cond_0
 
-    invoke-virtual {v13, v14}, Landroid/content/res/Resources;->getDimension(I)F
+    sub-int v10, v2, v4
 
-    move-result v13
+    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
-    float-to-int v6, v13
+    move-result v11
 
-    if-le v4, v6, :cond_0
+    add-int/lit8 v11, v11, -0x1
 
-    sub-int v13, v4, v6
-
-    invoke-interface/range {p2 .. p2}, Ljava/lang/CharSequence;->length()I
-
-    move-result v14
-
-    add-int/lit8 v14, v14, -0x1
-
-    mul-int v9, v13, v14
+    mul-int v7, v10, v11
 
     :cond_0
-    move-object/from16 v0, p0
+    iget-object v10, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mTwIndexScrollView:Lcom/samsung/android/widget/SemIndexScrollView;
 
-    iget-object v13, v0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mTwIndexScrollView:Lcom/samsung/android/widget/SemIndexScrollView;
-
-    const/4 v14, 0x0
-
-    invoke-virtual {v13, v14, v9}, Lcom/samsung/android/widget/SemIndexScrollView;->setIndexScrollMargin(II)V
+    invoke-virtual {v10, v12, v7}, Lcom/samsung/android/widget/SemIndexScrollView;->setIndexScrollMargin(II)V
 
     :cond_1
     invoke-static {}, Lcom/android/launcher3/util/locale/LocaleUtils;->isChineseHK()Z
 
-    move-result v13
+    move-result v10
 
-    if-eqz v13, :cond_8
+    if-eqz v10, :cond_8
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v13
-
-    const v14, 0x7f0b000a
-
-    invoke-virtual {v13, v14}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v10
 
-    const/4 v13, 0x0
+    const v11, 0x7f0a000a
 
-    const-string v14, "&"
+    invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
-    aput-object v14, v10, v13
+    move-result-object v8
 
-    array-length v13, v10
+    const-string v10, "&"
 
-    new-array v13, v13, [I
+    aput-object v10, v8, v12
 
-    move-object/from16 v0, p0
+    array-length v10, v8
 
-    iput-object v13, v0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mIndexCharactersPosition:[I
+    new-array v10, v10, [I
 
-    const/4 v5, -0x1
+    iput-object v10, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mIndexCharactersPosition:[I
 
-    const/4 v8, 0x1
+    const/4 v3, -0x1
+
+    const/4 v6, 0x1
 
     :goto_0
-    array-length v13, v10
+    array-length v10, v8
 
-    if-ge v8, v13, :cond_6
+    if-ge v6, v10, :cond_6
 
-    const/4 v11, 0x0
+    const/4 v9, 0x0
 
     :goto_1
-    invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
+    invoke-interface {p1}, Ljava/util/List;->size()I
 
-    move-result v13
+    move-result v10
 
-    if-ge v11, v13, :cond_3
+    if-ge v9, v10, :cond_3
 
-    move-object/from16 v0, p0
+    iget-object v10, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mCollator:Ljava/text/Collator;
 
-    iget-object v13, v0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mCollator:Ljava/text/Collator;
+    aget-object v11, v8, v6
 
-    aget-object v14, v10, v8
+    const-string v12, "a"
 
-    const-string v15, "a"
+    invoke-virtual {v10, v11, v12}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {v13, v14, v15}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
+    move-result v10
 
-    move-result v13
+    if-gez v10, :cond_4
 
-    if-gez v13, :cond_4
+    iget-object v11, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mCollator:Ljava/text/Collator;
 
-    move-object/from16 v0, p0
+    invoke-interface {p1, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    iget-object v14, v0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mCollator:Ljava/text/Collator;
+    move-result-object v10
 
-    move-object/from16 v0, p1
+    check-cast v10, Ljava/lang/String;
 
-    invoke-interface {v0, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    const-string v12, "a"
 
-    move-result-object v13
+    invoke-virtual {v11, v10, v12}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
-    check-cast v13, Ljava/lang/String;
+    move-result v10
 
-    const-string v15, "a"
-
-    invoke-virtual {v14, v13, v15}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-result v13
-
-    if-gez v13, :cond_4
+    if-gez v10, :cond_4
 
     :try_start_0
-    move-object/from16 v0, p1
+    invoke-interface {p1, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    invoke-interface {v0, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-result-object v10
 
-    move-result-object v13
+    check-cast v10, Ljava/lang/String;
 
-    check-cast v13, Ljava/lang/String;
+    invoke-static {v10}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    invoke-static {v13}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    move-result v10
 
-    move-result v13
+    aget-object v11, v8, v6
 
-    aget-object v14, v10, v8
-
-    invoke-static {v14}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    invoke-static {v11}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result v14
+    move-result v11
 
-    sub-int v5, v13, v14
+    sub-int v3, v10, v11
 
     :goto_2
-    if-gez v5, :cond_2
+    if-gez v3, :cond_2
 
-    if-gez v5, :cond_5
+    if-gez v3, :cond_5
 
-    invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
+    invoke-interface {p1}, Ljava/util/List;->size()I
 
-    move-result v13
+    move-result v10
 
-    add-int/lit8 v13, v13, -0x1
+    add-int/lit8 v10, v10, -0x1
 
-    if-ne v11, v13, :cond_5
+    if-ne v9, v10, :cond_5
 
     :cond_2
-    move-object/from16 v0, p0
+    iget-object v10, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mIndexCharactersPosition:[I
 
-    iget-object v13, v0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mIndexCharactersPosition:[I
-
-    aput v11, v13, v8
+    aput v9, v10, v6
 
     :cond_3
-    add-int/lit8 v8, v8, 0x1
+    add-int/lit8 v6, v6, 0x1
 
     goto :goto_0
 
     :catch_0
-    move-exception v7
+    move-exception v5
 
-    sget-object v14, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->TAG:Ljava/lang/String;
+    sget-object v11, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->TAG:Ljava/lang/String;
 
-    new-instance v13, Ljava/lang/StringBuilder;
+    new-instance v10, Ljava/lang/StringBuilder;
 
-    invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v15, "NumberFormatException : "
+    const-string v12, "NumberFormatException : "
 
-    invoke-virtual {v13, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v13
+    move-result-object v10
 
-    aget-object v15, v10, v8
+    aget-object v12, v8, v6
 
-    invoke-virtual {v13, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v13
+    move-result-object v10
 
-    const-string v15, " - "
+    const-string v12, " - "
 
-    invoke-virtual {v13, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v15
+    move-result-object v12
 
-    move-object/from16 v0, p1
+    invoke-interface {p1, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    invoke-interface {v0, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-result-object v10
 
-    move-result-object v13
+    check-cast v10, Ljava/lang/String;
 
-    check-cast v13, Ljava/lang/String;
+    invoke-virtual {v12, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v15, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v10
 
-    move-result-object v13
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v10
 
-    move-result-object v13
+    invoke-static {v11, v10}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {v14, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    iget-object v11, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mCollator:Ljava/text/Collator;
 
-    move-object/from16 v0, p0
+    invoke-interface {p1, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    iget-object v14, v0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mCollator:Ljava/text/Collator;
+    move-result-object v10
 
-    move-object/from16 v0, p1
+    check-cast v10, Ljava/lang/String;
 
-    invoke-interface {v0, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    aget-object v12, v8, v6
 
-    move-result-object v13
+    invoke-virtual {v11, v10, v12}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
-    check-cast v13, Ljava/lang/String;
-
-    aget-object v15, v10, v8
-
-    invoke-virtual {v14, v13, v15}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-result v5
+    move-result v3
 
     goto :goto_2
 
     :cond_4
-    move-object/from16 v0, p0
+    iget-object v11, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mCollator:Ljava/text/Collator;
 
-    iget-object v14, v0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mCollator:Ljava/text/Collator;
+    invoke-interface {p1, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-object/from16 v0, p1
+    move-result-object v10
 
-    invoke-interface {v0, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    check-cast v10, Ljava/lang/String;
 
-    move-result-object v13
+    aget-object v12, v8, v6
 
-    check-cast v13, Ljava/lang/String;
+    invoke-virtual {v11, v10, v12}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
-    aget-object v15, v10, v8
-
-    invoke-virtual {v14, v13, v15}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-result v5
+    move-result v3
 
     goto :goto_2
 
     :cond_5
-    add-int/lit8 v11, v11, 0x1
+    add-int/lit8 v9, v9, 0x1
 
     goto/16 :goto_1
 
     :cond_6
     :try_start_1
-    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v13
+    move-result-object v10
 
-    const v14, 0x7f0a0169
+    const v11, 0x7f09015b
 
-    invoke-virtual {v13, v14}, Landroid/content/res/Resources;->getDimension(I)F
+    invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimension(I)F
 
-    move-result v13
+    move-result v10
 
-    float-to-int v2, v13
+    float-to-int v0, v10
 
-    move-object/from16 v0, p0
+    iget-object v10, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mTwIndexScrollView:Lcom/samsung/android/widget/SemIndexScrollView;
 
-    iget-object v13, v0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mTwIndexScrollView:Lcom/samsung/android/widget/SemIndexScrollView;
-
-    invoke-virtual {v13, v10, v2}, Lcom/samsung/android/widget/SemIndexScrollView;->setSimpleIndexScroll([Ljava/lang/String;I)V
+    invoke-virtual {v10, v8, v0}, Lcom/samsung/android/widget/SemIndexScrollView;->setSimpleIndexScroll([Ljava/lang/String;I)V
     :try_end_1
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_1
 
-    :goto_3
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mTwIndexScrollView:Lcom/samsung/android/widget/SemIndexScrollView;
-
-    invoke-virtual {v13}, Lcom/samsung/android/widget/SemIndexScrollView;->requestLayout()V
-
     :cond_7
+    :goto_3
     return-void
 
     :catch_1
-    move-exception v7
+    move-exception v5
 
-    sget-object v13, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->TAG:Ljava/lang/String;
+    sget-object v10, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->TAG:Ljava/lang/String;
 
-    const-string v14, "IllegalStateException."
+    const-string v11, "IllegalStateException."
 
-    invoke-static {v13, v14, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v10, v11, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_3
 
     :cond_8
-    new-instance v3, Lcom/samsung/android/widget/SemArrayIndexer;
+    new-instance v1, Lcom/samsung/android/widget/SemArrayIndexer;
 
-    move-object/from16 v0, p1
+    invoke-direct {v1, p1, p2}, Lcom/samsung/android/widget/SemArrayIndexer;-><init>(Ljava/util/List;Ljava/lang/CharSequence;)V
 
-    move-object/from16 v1, p2
+    iget-object v10, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mTwIndexScrollView:Lcom/samsung/android/widget/SemIndexScrollView;
 
-    invoke-direct {v3, v0, v1}, Lcom/samsung/android/widget/SemArrayIndexer;-><init>(Ljava/util/List;Ljava/lang/CharSequence;)V
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mTwIndexScrollView:Lcom/samsung/android/widget/SemIndexScrollView;
-
-    invoke-virtual {v13, v3}, Lcom/samsung/android/widget/SemIndexScrollView;->setIndexer(Lcom/samsung/android/widget/SemAbstractIndexer;)V
+    invoke-virtual {v10, v1}, Lcom/samsung/android/widget/SemIndexScrollView;->setIndexer(Lcom/samsung/android/widget/SemAbstractIndexer;)V
 
     goto :goto_3
 .end method
@@ -840,7 +790,7 @@
 .method public setSearchResultText(I)V
     .locals 8
 
-    const v7, 0x7f090011
+    const v7, 0x7f080015
 
     const/4 v5, 0x1
 
@@ -864,7 +814,7 @@
 
     iget-object v3, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContentView;->mEmptyView:Landroid/widget/TextView;
 
-    const v4, 0x7f09000b
+    const v4, 0x7f080010
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -885,7 +835,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090012
+    const v4, 0x7f080016
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

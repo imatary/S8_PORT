@@ -89,17 +89,11 @@
     .end annotation
 .end field
 
-.field private mDeepShortcutManager:Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
-
-.field private mDeepShortcutsLoaded:Z
-
 .field private mDisableableAppCache:Lcom/android/launcher3/common/model/DisableableAppCache;
 
 .field private mHandler:Lcom/android/launcher3/common/model/DeferredHandler;
 
 .field private mHasLoaderCompletedOnce:Z
-
-.field private mHasShortcutHostPermission:Z
 
 .field mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
@@ -110,8 +104,6 @@
 .field private mLoaderTask:Lcom/android/launcher3/LauncherModel$LoaderTask;
 
 .field private final mLock:Ljava/lang/Object;
-
-.field private mNeedLoadAllAppItemList:Z
 
 .field public mOnAllAppItemListLoadCompletedListener:Lcom/android/launcher3/LauncherModel$OnAllAppItemListLoadCompletedListener;
 
@@ -147,8 +139,6 @@
         }
     .end annotation
 .end field
-
-.field private final mShortcutPermissionCheckRunnable:Ljava/lang/Runnable;
 
 .field mWidgetLoader:Lcom/android/launcher3/widget/model/WidgetLoader;
 
@@ -204,7 +194,7 @@
     return-void
 .end method
 
-.method constructor <init>(Lcom/android/launcher3/LauncherAppState;Lcom/android/launcher3/common/model/IconCache;Lcom/android/launcher3/common/model/BadgeCache;Lcom/android/launcher3/common/model/DisableableAppCache;Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;)V
+.method constructor <init>(Lcom/android/launcher3/LauncherAppState;Lcom/android/launcher3/common/model/IconCache;Lcom/android/launcher3/common/model/BadgeCache;Lcom/android/launcher3/common/model/DisableableAppCache;)V
     .locals 6
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -220,16 +210,6 @@
     invoke-direct {v0}, Lcom/android/launcher3/common/model/DeferredHandler;-><init>()V
 
     iput-object v0, p0, Lcom/android/launcher3/LauncherModel;->mHandler:Lcom/android/launcher3/common/model/DeferredHandler;
-
-    new-instance v0, Lcom/android/launcher3/LauncherModel$1;
-
-    invoke-direct {v0, p0}, Lcom/android/launcher3/LauncherModel$1;-><init>(Lcom/android/launcher3/LauncherModel;)V
-
-    iput-object v0, p0, Lcom/android/launcher3/LauncherModel;->mShortcutPermissionCheckRunnable:Ljava/lang/Runnable;
-
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/android/launcher3/LauncherModel;->mNeedLoadAllAppItemList:Z
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -301,52 +281,26 @@
 
     iput-object p4, p0, Lcom/android/launcher3/LauncherModel;->mDisableableAppCache:Lcom/android/launcher3/common/model/DisableableAppCache;
 
-    iput-object p5, p0, Lcom/android/launcher3/LauncherModel;->mDeepShortcutManager:Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
+    return-void
+.end method
+
+.method static synthetic access$000(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/IconCache;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
+
+    return-object v0
+.end method
+
+.method static synthetic access$100(Lcom/android/launcher3/LauncherModel;[Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/launcher3/LauncherModel;->loadWidgets([Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/launcher3/LauncherModel;)Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel;->mDeepShortcutsLoaded:Z
-
-    return v0
-.end method
-
-.method static synthetic access$002(Lcom/android/launcher3/LauncherModel;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/launcher3/LauncherModel;->mDeepShortcutsLoaded:Z
-
-    return p1
-.end method
-
-.method static synthetic access$100(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mDeepShortcutManager:Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
-
-    return-object v0
-.end method
-
-.method static synthetic access$1000(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/DisableableAppCache;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mDisableableAppCache:Lcom/android/launcher3/common/model/DisableableAppCache;
-
-    return-object v0
-.end method
-
-.method static synthetic access$1300(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/DeferredHandler;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mHandler:Lcom/android/launcher3/common/model/DeferredHandler;
-
-    return-object v0
-.end method
-
-.method static synthetic access$1400(Lcom/android/launcher3/LauncherModel;)Ljava/lang/Object;
+.method static synthetic access$1000(Lcom/android/launcher3/LauncherModel;)Ljava/lang/Object;
     .locals 1
 
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mLock:Ljava/lang/Object;
@@ -354,7 +308,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1500(Lcom/android/launcher3/LauncherModel;)Z
+.method static synthetic access$1100(Lcom/android/launcher3/LauncherModel;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel;->mIsLoaderTaskRunning:Z
@@ -362,7 +316,7 @@
     return v0
 .end method
 
-.method static synthetic access$1502(Lcom/android/launcher3/LauncherModel;Z)Z
+.method static synthetic access$1102(Lcom/android/launcher3/LauncherModel;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/android/launcher3/LauncherModel;->mIsLoaderTaskRunning:Z
@@ -370,7 +324,15 @@
     return p1
 .end method
 
-.method static synthetic access$1600(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/LauncherModel$LoaderTask;
+.method static synthetic access$1200(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/LauncherAppState;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mApp:Lcom/android/launcher3/LauncherAppState;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1300(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/LauncherModel$LoaderTask;
     .locals 1
 
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mLoaderTask:Lcom/android/launcher3/LauncherModel$LoaderTask;
@@ -378,7 +340,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1602(Lcom/android/launcher3/LauncherModel;Lcom/android/launcher3/LauncherModel$LoaderTask;)Lcom/android/launcher3/LauncherModel$LoaderTask;
+.method static synthetic access$1302(Lcom/android/launcher3/LauncherModel;Lcom/android/launcher3/LauncherModel$LoaderTask;)Lcom/android/launcher3/LauncherModel$LoaderTask;
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel;->mLoaderTask:Lcom/android/launcher3/LauncherModel$LoaderTask;
@@ -386,7 +348,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$1700(Lcom/android/launcher3/LauncherModel;)Z
+.method static synthetic access$1400(Lcom/android/launcher3/LauncherModel;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel;->mHasLoaderCompletedOnce:Z
@@ -394,7 +356,7 @@
     return v0
 .end method
 
-.method static synthetic access$1702(Lcom/android/launcher3/LauncherModel;Z)Z
+.method static synthetic access$1402(Lcom/android/launcher3/LauncherModel;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/android/launcher3/LauncherModel;->mHasLoaderCompletedOnce:Z
@@ -402,7 +364,7 @@
     return p1
 .end method
 
-.method static synthetic access$1800()Ljava/util/ArrayList;
+.method static synthetic access$1500()Ljava/util/ArrayList;
     .locals 1
 
     sget-object v0, Lcom/android/launcher3/LauncherModel;->sPackageChangeRunnables:Ljava/util/ArrayList;
@@ -410,26 +372,44 @@
     return-object v0
 .end method
 
-.method static synthetic access$1900(Lcom/android/launcher3/LauncherModel;)Z
+.method static synthetic access$1600(Lcom/android/launcher3/LauncherModel;)Ljava/lang/ref/WeakReference;
     .locals 1
 
-    iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel;->mNeedLoadAllAppItemList:Z
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mCallbacks:Ljava/lang/ref/WeakReference;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1700(Landroid/content/Context;Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;)Z
+    .locals 1
+
+    invoke-static {p0, p1, p2}, Lcom/android/launcher3/LauncherModel;->isPackageDisabled(Landroid/content/Context;Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;)Z
+
+    move-result v0
 
     return v0
 .end method
 
-.method static synthetic access$1902(Lcom/android/launcher3/LauncherModel;Z)Z
+.method static synthetic access$1800(Lcom/android/launcher3/LauncherModel;Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/launcher3/LauncherModel;->mNeedLoadAllAppItemList:Z
+    invoke-direct {p0, p1}, Lcom/android/launcher3/LauncherModel;->updateWidgetsProviders(Z)V
 
-    return p1
+    return-void
+.end method
+
+.method static synthetic access$1900(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/BadgeCache;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mBadgeCache:Lcom/android/launcher3/common/model/BadgeCache;
+
+    return-object v0
 .end method
 
 .method static synthetic access$200(Lcom/android/launcher3/LauncherModel;)Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel;->mHasShortcutHostPermission:Z
+    iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel;->mWorkspaceLoaded:Z
 
     return v0
 .end method
@@ -445,86 +425,12 @@
 .method static synthetic access$202(Lcom/android/launcher3/LauncherModel;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/launcher3/LauncherModel;->mHasShortcutHostPermission:Z
-
-    return p1
-.end method
-
-.method static synthetic access$2100(Lcom/android/launcher3/LauncherModel;)Ljava/lang/ref/WeakReference;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mCallbacks:Ljava/lang/ref/WeakReference;
-
-    return-object v0
-.end method
-
-.method static synthetic access$2200(Landroid/content/Context;Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;)Z
-    .locals 1
-
-    invoke-static {p0, p1, p2}, Lcom/android/launcher3/LauncherModel;->isPackageDisabled(Landroid/content/Context;Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method static synthetic access$2300(Lcom/android/launcher3/LauncherModel;Z)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/launcher3/LauncherModel;->updateWidgetsProviders(Z)V
-
-    return-void
-.end method
-
-.method static synthetic access$2400(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/BadgeCache;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mBadgeCache:Lcom/android/launcher3/common/model/BadgeCache;
-
-    return-object v0
-.end method
-
-.method static synthetic access$300(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/LauncherAppState;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mApp:Lcom/android/launcher3/LauncherAppState;
-
-    return-object v0
-.end method
-
-.method static synthetic access$400(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/IconCache;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
-
-    return-object v0
-.end method
-
-.method static synthetic access$500(Lcom/android/launcher3/LauncherModel;[Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/launcher3/LauncherModel;->loadWidgets([Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
-
-    return-void
-.end method
-
-.method static synthetic access$600(Lcom/android/launcher3/LauncherModel;)Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel;->mWorkspaceLoaded:Z
-
-    return v0
-.end method
-
-.method static synthetic access$602(Lcom/android/launcher3/LauncherModel;Z)Z
-    .locals 0
-
     iput-boolean p1, p0, Lcom/android/launcher3/LauncherModel;->mWorkspaceLoaded:Z
 
     return p1
 .end method
 
-.method static synthetic access$700(Lcom/android/launcher3/LauncherModel;)Z
+.method static synthetic access$300(Lcom/android/launcher3/LauncherModel;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel;->mAllAppsLoaded:Z
@@ -532,7 +438,7 @@
     return v0
 .end method
 
-.method static synthetic access$702(Lcom/android/launcher3/LauncherModel;Z)Z
+.method static synthetic access$302(Lcom/android/launcher3/LauncherModel;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/android/launcher3/LauncherModel;->mAllAppsLoaded:Z
@@ -540,12 +446,50 @@
     return p1
 .end method
 
+.method static synthetic access$600(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/DisableableAppCache;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mDisableableAppCache:Lcom/android/launcher3/common/model/DisableableAppCache;
+
+    return-object v0
+.end method
+
+.method static synthetic access$900(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/DeferredHandler;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mHandler:Lcom/android/launcher3/common/model/DeferredHandler;
+
+    return-object v0
+.end method
+
 .method private doLocaleChange()V
     .locals 1
 
-    new-instance v0, Lcom/android/launcher3/LauncherModel$3;
+    new-instance v0, Lcom/android/launcher3/LauncherModel$2;
 
-    invoke-direct {v0, p0}, Lcom/android/launcher3/LauncherModel$3;-><init>(Lcom/android/launcher3/LauncherModel;)V
+    invoke-direct {v0, p0}, Lcom/android/launcher3/LauncherModel$2;-><init>(Lcom/android/launcher3/LauncherModel;)V
+
+    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->runOnWorkerThread(Ljava/lang/Runnable;)V
+
+    return-void
+.end method
+
+.method private forceIconReload()V
+    .locals 2
+
+    const-string v0, "Launcher.Model"
+
+    const-string v1, "forceIconReload"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
+
+    invoke-virtual {v0}, Lcom/android/launcher3/common/model/IconCache;->clearDB()V
+
+    new-instance v0, Lcom/android/launcher3/LauncherModel$1;
+
+    invoke-direct {v0, p0}, Lcom/android/launcher3/LauncherModel$1;-><init>(Lcom/android/launcher3/LauncherModel;)V
 
     invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -611,6 +555,55 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
+    return-object v0
+.end method
+
+.method public static getOmcIntent(Ljava/lang/String;)Landroid/content/Intent;
+    .locals 4
+
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    const-string v1, "com.samsung.omcagent.intent.action.OMC_APP_MANAGER"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "package"
+
+    invoke-virtual {v0, v1, p0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string v1, "Launcher.Model"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Omc Intent created. : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
     return-object v0
 .end method
 
@@ -963,6 +956,41 @@
     return-void
 .end method
 
+.method private updateZeroPage(ILjava/lang/String;)Z
+    .locals 2
+
+    sget-object v1, Lcom/android/launcher3/home/ZeroPageController;->sZeroPageCompName:Landroid/content/ComponentName;
+
+    invoke-virtual {v1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {p0}, Lcom/android/launcher3/LauncherModel;->getCallback()Lcom/android/launcher3/LauncherModel$Callbacks;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0, p1}, Lcom/android/launcher3/LauncherModel$Callbacks;->updateZeroPage(I)V
+
+    :cond_0
+    const/4 v1, 0x1
+
+    :goto_0
+    return v1
+
+    :cond_1
+    const/4 v1, 0x0
+
+    goto :goto_0
+.end method
+
 
 # virtual methods
 .method public OnAllAppItemListLoadCompleted(Ljava/util/ArrayList;)V
@@ -1143,28 +1171,6 @@
     return-void
 .end method
 
-.method public forceIconReload()V
-    .locals 2
-
-    const-string v0, "Launcher.Model"
-
-    const-string v1, "forceIconReload"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/common/model/IconCache;->clearDB()V
-
-    new-instance v0, Lcom/android/launcher3/LauncherModel$2;
-
-    invoke-direct {v0, p0}, Lcom/android/launcher3/LauncherModel$2;-><init>(Lcom/android/launcher3/LauncherModel;)V
-
-    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->runOnWorkerThread(Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
 .method public forceReload()V
     .locals 1
 
@@ -1258,9 +1264,9 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v0, Lcom/android/launcher3/LauncherModel$10;
+    new-instance v0, Lcom/android/launcher3/LauncherModel$9;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/launcher3/LauncherModel$10;-><init>(Lcom/android/launcher3/LauncherModel;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/launcher3/LauncherModel$9;-><init>(Lcom/android/launcher3/LauncherModel;Landroid/content/Context;)V
 
     invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -1326,23 +1332,11 @@
 .method public loadAllAppItemList()V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel;->mIsLoaderTaskRunning:Z
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/android/launcher3/LauncherModel;->mNeedLoadAllAppItemList:Z
-
-    :goto_0
-    return-void
-
-    :cond_0
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportHomeModeChange()Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -1352,7 +1346,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
@@ -1362,9 +1356,10 @@
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/LauncherModel;->OnAllAppItemListLoadCompleted(Ljava/util/ArrayList;)V
 
-    goto :goto_0
+    :goto_0
+    return-void
 
-    :cond_1
+    :cond_0
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     invoke-virtual {v0}, Lcom/android/launcher3/allapps/model/AppsLoader;->getAllAppItemInApps()Ljava/util/ArrayList;
@@ -1381,9 +1376,9 @@
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/launcher3/LauncherModel;->loadWidgets([Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
 
-    new-instance v0, Lcom/android/launcher3/LauncherModel$4;
+    new-instance v0, Lcom/android/launcher3/LauncherModel$3;
 
-    invoke-direct {v0, p0, p3}, Lcom/android/launcher3/LauncherModel$4;-><init>(Lcom/android/launcher3/LauncherModel;Z)V
+    invoke-direct {v0, p0, p3}, Lcom/android/launcher3/LauncherModel$3;-><init>(Lcom/android/launcher3/LauncherModel;Z)V
 
     invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -1498,13 +1493,20 @@
 
     move-result v1
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
+    :cond_0
     :goto_0
     return-void
 
-    :cond_0
+    :cond_1
     const/4 v0, 0x1
+
+    invoke-direct {p0, v0, p1}, Lcom/android/launcher3/LauncherModel;->updateZeroPage(ILjava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
 
     new-instance v1, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask;
 
@@ -1562,13 +1564,20 @@
 
     move-result v1
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
+    :cond_0
     :goto_0
     return-void
 
-    :cond_0
+    :cond_1
     const/4 v0, 0x2
+
+    invoke-direct {p0, v0, p1}, Lcom/android/launcher3/LauncherModel;->updateZeroPage(ILjava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
 
     new-instance v1, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask;
 
@@ -1651,13 +1660,20 @@
 
     move-result v1
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
+    :cond_0
     :goto_0
     return-void
 
-    :cond_0
+    :cond_1
     const/4 v0, 0x3
+
+    invoke-direct {p0, v0, p1}, Lcom/android/launcher3/LauncherModel;->updateZeroPage(ILjava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
 
     new-instance v1, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask;
 
@@ -1827,7 +1843,7 @@
 
     invoke-static {p1}, Lcom/android/launcher3/util/ShortcutTray;->checkIconTrayEnabled(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/launcher3/LauncherModel;->forceIconReload()V
+    invoke-direct {p0}, Lcom/android/launcher3/LauncherModel;->forceIconReload()V
 
     goto :goto_0
 
@@ -2234,9 +2250,9 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v0, Lcom/android/launcher3/LauncherModel$9;
+    new-instance v0, Lcom/android/launcher3/LauncherModel$8;
 
-    invoke-direct {v0, p0}, Lcom/android/launcher3/LauncherModel$9;-><init>(Lcom/android/launcher3/LauncherModel;)V
+    invoke-direct {v0, p0}, Lcom/android/launcher3/LauncherModel$8;-><init>(Lcom/android/launcher3/LauncherModel;)V
 
     invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -2298,13 +2314,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/LauncherAppState;->enableExternalQueue(Z)V
+    invoke-static {}, Lcom/android/launcher3/home/ExternalRequestQueue;->enableExternalRequestQueue()V
 
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
@@ -2355,6 +2365,18 @@
     invoke-direct {v2, p0, v3, v0}, Lcom/android/launcher3/LauncherModel$LoaderTask;-><init>(Lcom/android/launcher3/LauncherModel;Landroid/content/Context;I)V
 
     iput-object v2, p0, Lcom/android/launcher3/LauncherModel;->mLoaderTask:Lcom/android/launcher3/LauncherModel$LoaderTask;
+
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2}, Lcom/android/launcher3/home/HomeLoader;->createLoaderTask(Z)V
+
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2}, Lcom/android/launcher3/allapps/model/AppsLoader;->createLoaderTask(Z)V
 
     const/16 v0, -0x3e9
 
@@ -2479,13 +2501,20 @@
     throw v0
 .end method
 
-.method public unregisterOnAllAppItemListLoadCompletedListener()V
+.method public unregisterOnAllAppItemListLoadCompletedListener(Lcom/android/launcher3/Launcher;)V
     .locals 1
+
+    invoke-virtual {p0, p1}, Lcom/android/launcher3/LauncherModel;->isCurrentCallbacks(Lcom/android/launcher3/LauncherModel$Callbacks;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/launcher3/LauncherModel;->mOnAllAppItemListLoadCompletedListener:Lcom/android/launcher3/LauncherModel$OnAllAppItemListLoadCompletedListener;
 
+    :cond_0
     return-void
 .end method
 
@@ -2520,58 +2549,33 @@
 .end method
 
 .method public updateAppsButton(Landroid/content/Context;ZLcom/android/launcher3/common/base/item/IconInfo;)V
-    .locals 3
+    .locals 2
 
-    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mApp:Lcom/android/launcher3/LauncherAppState;
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
-    invoke-virtual {v0}, Lcom/android/launcher3/LauncherAppState;->getAppsButtonEnabled()Z
+    move-result-object v0
 
-    move-result v0
+    invoke-virtual {v0, p2}, Lcom/android/launcher3/LauncherAppState;->setAppsButtonEnabled(Z)V
 
-    if-ne v0, p2, :cond_0
+    if-eqz p2, :cond_0
 
-    const-string v0, "Launcher.Model"
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "appsButton already set : "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v0, p1, p3}, Lcom/android/launcher3/home/HomeLoader;->addAndBindAppsButton(Landroid/content/Context;Lcom/android/launcher3/common/base/item/IconInfo;)V
 
     :goto_0
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mApp:Lcom/android/launcher3/LauncherAppState;
-
-    invoke-virtual {v0, p2}, Lcom/android/launcher3/LauncherAppState;->setAppsButtonEnabled(Z)V
-
-    if-eqz p2, :cond_1
-
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
-    invoke-virtual {v0, p1, p3}, Lcom/android/launcher3/home/HomeLoader;->enableAppsButton(Landroid/content/Context;Lcom/android/launcher3/common/base/item/IconInfo;)V
+    iget-object v1, p0, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
-    goto :goto_0
+    invoke-virtual {v1}, Lcom/android/launcher3/home/HomeLoader;->getAppsButton()Lcom/android/launcher3/common/base/item/IconInfo;
 
-    :cond_1
-    iget-object v0, p0, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
+    move-result-object v1
 
-    invoke-virtual {v0}, Lcom/android/launcher3/home/HomeLoader;->disableAppsButton()V
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/home/HomeLoader;->removeAppsButton(Lcom/android/launcher3/common/base/item/IconInfo;)V
 
     goto :goto_0
 .end method
@@ -2579,9 +2583,9 @@
 .method public updateAppsForCloneItemEnabled(Z)V
     .locals 1
 
-    new-instance v0, Lcom/android/launcher3/LauncherModel$5;
+    new-instance v0, Lcom/android/launcher3/LauncherModel$4;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/launcher3/LauncherModel$5;-><init>(Lcom/android/launcher3/LauncherModel;Z)V
+    invoke-direct {v0, p0, p1}, Lcom/android/launcher3/LauncherModel$4;-><init>(Lcom/android/launcher3/LauncherModel;Z)V
 
     invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -2600,9 +2604,9 @@
         }
     .end annotation
 
-    new-instance v0, Lcom/android/launcher3/LauncherModel$7;
+    new-instance v0, Lcom/android/launcher3/LauncherModel$6;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/launcher3/LauncherModel$7;-><init>(Lcom/android/launcher3/LauncherModel;Ljava/util/ArrayList;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/launcher3/LauncherModel$6;-><init>(Lcom/android/launcher3/LauncherModel;Ljava/util/ArrayList;)V
 
     invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -2625,9 +2629,9 @@
         }
     .end annotation
 
-    new-instance v0, Lcom/android/launcher3/LauncherModel$6;
+    new-instance v0, Lcom/android/launcher3/LauncherModel$5;
 
-    invoke-direct {v0, p0, p1, p3, p2}, Lcom/android/launcher3/LauncherModel$6;-><init>(Lcom/android/launcher3/LauncherModel;Ljava/util/ArrayList;ZLjava/util/ArrayList;)V
+    invoke-direct {v0, p0, p1, p3, p2}, Lcom/android/launcher3/LauncherModel$5;-><init>(Lcom/android/launcher3/LauncherModel;Ljava/util/ArrayList;ZLjava/util/ArrayList;)V
 
     invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -2646,9 +2650,9 @@
         }
     .end annotation
 
-    new-instance v0, Lcom/android/launcher3/LauncherModel$8;
+    new-instance v0, Lcom/android/launcher3/LauncherModel$7;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/launcher3/LauncherModel$8;-><init>(Lcom/android/launcher3/LauncherModel;Ljava/util/ArrayList;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/launcher3/LauncherModel$7;-><init>(Lcom/android/launcher3/LauncherModel;Ljava/util/ArrayList;)V
 
     invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->runOnWorkerThread(Ljava/lang/Runnable;)V
 

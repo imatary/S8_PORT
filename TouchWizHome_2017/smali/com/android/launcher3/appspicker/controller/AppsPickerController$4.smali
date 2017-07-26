@@ -17,12 +17,16 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
+.field final synthetic val$data:Lcom/android/launcher3/common/stage/StageEntry;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/appspicker/controller/AppsPickerController;)V
+.method constructor <init>(Lcom/android/launcher3/appspicker/controller/AppsPickerController;Lcom/android/launcher3/common/stage/StageEntry;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
+
+    iput-object p2, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->val$data:Lcom/android/launcher3/common/stage/StageEntry;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -31,8 +35,16 @@
 
 
 # virtual methods
+.method public onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->onAnimationEnd(Landroid/animation/Animator;)V
+
+    return-void
+.end method
+
 .method public onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 2
+    .locals 3
 
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
@@ -80,7 +92,15 @@
     :cond_1
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
-    invoke-static {v0}, Lcom/android/launcher3/appspicker/controller/AppsPickerController;->access$400(Lcom/android/launcher3/appspicker/controller/AppsPickerController;)V
+    const/4 v1, 0x0
+
+    iget-object v2, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->val$data:Lcom/android/launcher3/common/stage/StageEntry;
+
+    invoke-static {v0, v1, v2}, Lcom/android/launcher3/appspicker/controller/AppsPickerController;->access$400(Lcom/android/launcher3/appspicker/controller/AppsPickerController;ZLcom/android/launcher3/common/stage/StageEntry;)V
+
+    iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
+
+    invoke-static {v0}, Lcom/android/launcher3/appspicker/controller/AppsPickerController;->access$500(Lcom/android/launcher3/appspicker/controller/AppsPickerController;)V
 
     return-void
 .end method

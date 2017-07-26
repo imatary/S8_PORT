@@ -624,69 +624,12 @@
     return v0
 .end method
 
-.method onConfigurationChangedIfNeeded()V
-    .locals 6
-
-    const/4 v5, 0x1
-
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/Hotseat;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->isTablet()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    iget-object v2, p0, Lcom/android/launcher3/home/Hotseat;->mHomeController:Lcom/android/launcher3/home/HomeController;
-
-    invoke-virtual {v2}, Lcom/android/launcher3/home/HomeController;->isSelectState()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v2
-
-    iget v2, v2, Landroid/content/res/Configuration;->orientation:I
-
-    const/4 v3, 0x2
-
-    if-ne v2, v3, :cond_1
-
-    const v2, 0x7f0f000e
-
-    invoke-virtual {v0, v2, v5, v5}, Landroid/content/res/Resources;->getFraction(III)F
-
-    move-result v1
-
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/Hotseat;->setScaleX(F)V
-
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/Hotseat;->setScaleY(F)V
-
-    :cond_0
-    :goto_0
-    return-void
-
-    :cond_1
-    invoke-virtual {p0, v4}, Lcom/android/launcher3/home/Hotseat;->setScaleX(F)V
-
-    invoke-virtual {p0, v4}, Lcom/android/launcher3/home/Hotseat;->setScaleY(F)V
-
-    goto :goto_0
-.end method
-
 .method protected onFinishInflate()V
-    .locals 2
+    .locals 3
 
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
-    const v0, 0x7f10008f
+    const v0, 0x7f0f009a
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/home/Hotseat;->findViewById(I)Landroid/view/View;
 
@@ -704,11 +647,13 @@
 
     iget-object v1, p0, Lcom/android/launcher3/home/Hotseat;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    invoke-virtual {v1}, Lcom/android/launcher3/Launcher;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
+    invoke-virtual {v1}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->getMaxHotseatCount()I
+    const v2, 0x7f0b003f
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
     move-result v1
 

@@ -176,7 +176,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0e0024
+    const v2, 0x7f0d0024
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -188,7 +188,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0e0025
+    const v2, 0x7f0d0025
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -214,7 +214,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0200f3
+    const v2, 0x7f0200fc
 
     iget v3, p0, Lcom/android/launcher3/common/model/IconCache;->mIconDpi:I
 
@@ -334,59 +334,74 @@
 .end method
 
 .method private addIconToDB(Landroid/content/ContentValues;Landroid/content/ComponentName;Landroid/content/pm/PackageInfo;J)V
-    .locals 4
+    .locals 6
 
-    const-string v0, "componentName"
+    const-string v1, "componentName"
 
     invoke-virtual {p2}, Landroid/content/ComponentName;->flattenToString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {p1, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string v0, "profileId"
+    const-string v1, "profileId"
 
     invoke-static {p4, p5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {p1, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
+    invoke-virtual {p1, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    const-string v0, "lastUpdated"
+    const-string v1, "lastUpdated"
 
     iget-wide v2, p3, Landroid/content/pm/PackageInfo;->lastUpdateTime:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
+    move-result-object v2
+
+    invoke-virtual {p1, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
+
+    const-string v1, "version"
+
+    iget v2, p3, Landroid/content/pm/PackageInfo;->versionCode:I
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    :try_start_0
+    iget-object v1, p0, Lcom/android/launcher3/common/model/IconCache;->mIconDb:Lcom/android/launcher3/common/model/IconCache$IconDB;
+
+    invoke-virtual {v1}, Lcom/android/launcher3/common/model/IconCache$IconDB;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+
     move-result-object v1
 
-    invoke-virtual {p1, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
+    const-string v2, "icons"
 
-    const-string v0, "version"
+    const/4 v3, 0x0
 
-    iget v1, p3, Landroid/content/pm/PackageInfo;->versionCode:I
+    const/4 v4, 0x5
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v1, v2, v3, p1, v4}, Landroid/database/sqlite/SQLiteDatabase;->insertWithOnConflict(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;I)J
+    :try_end_0
+    .catch Landroid/database/SQLException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result-object v1
-
-    invoke-virtual {p1, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    iget-object v0, p0, Lcom/android/launcher3/common/model/IconCache;->mIconDb:Lcom/android/launcher3/common/model/IconCache$IconDB;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/common/model/IconCache$IconDB;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
-
-    move-result-object v0
-
-    const-string v1, "icons"
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x5
-
-    invoke-virtual {v0, v1, v2, p1, v3}, Landroid/database/sqlite/SQLiteDatabase;->insertWithOnConflict(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;I)J
-
+    :goto_0
     return-void
+
+    :catch_0
+    move-exception v0
+
+    const-string v1, "Launcher.IconCache"
+
+    const-string v2, "Unable to write icon to DB"
+
+    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto :goto_0
 .end method
 
 .method private addIconToDBAndMemCache(Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;Landroid/content/pm/PackageInfo;J)V
@@ -1698,76 +1713,6 @@
     return-object v0
 .end method
 
-.method private makeDefaultbadgeIcon(Landroid/graphics/drawable/Drawable;Landroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
-    .locals 7
-
-    const/4 v5, 0x1
-
-    const/4 v6, 0x0
-
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->isSSecureSupported()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    iget-object v3, p0, Lcom/android/launcher3/common/model/IconCache;->mPackageManager:Landroid/content/pm/PackageManager;
-
-    invoke-virtual {p2, v3}, Landroid/content/pm/ActivityInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
-
-    move-result v3
-
-    invoke-static {v3, v5}, Ljava/lang/Math;->max(II)I
-
-    move-result v3
-
-    invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
-
-    move-result v4
-
-    invoke-static {v4, v5}, Ljava/lang/Math;->max(II)I
-
-    move-result v4
-
-    sget-object v5, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
-
-    invoke-static {v3, v4, v5}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
-
-    move-result-object v0
-
-    new-instance v1, Landroid/graphics/Canvas;
-
-    invoke-direct {v1, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
-
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v3
-
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v4
-
-    invoke-virtual {v2, v6, v6, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    invoke-virtual {v2, v1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v1, v3}, Landroid/graphics/Canvas;->setBitmap(Landroid/graphics/Bitmap;)V
-
-    :goto_0
-    return-object v2
-
-    :cond_0
-    move-object v2, p1
-
-    goto :goto_0
-.end method
-
 .method private newContentValues(Landroid/graphics/Bitmap;Ljava/lang/String;I)Landroid/content/ContentValues;
     .locals 8
 
@@ -2323,13 +2268,6 @@
 
     move-result-object v11
 
-    if-nez v11, :cond_3
-
-    :cond_2
-    :goto_2
-    return-void
-
-    :cond_3
     const-string v2, "componentName"
 
     invoke-interface {v11, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -2368,13 +2306,13 @@
 
     invoke-direct {v8}, Ljava/util/Stack;-><init>()V
 
-    :cond_4
-    :goto_3
+    :cond_2
+    :goto_2
     invoke-interface {v11}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v2
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_6
 
     invoke-interface {v11, v15}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -2396,7 +2334,7 @@
 
     check-cast v18, Landroid/content/pm/PackageInfo;
 
-    if-nez v18, :cond_5
+    if-nez v18, :cond_3
 
     invoke-virtual {v13}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
@@ -2408,7 +2346,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_4
+    if-nez v2, :cond_2
 
     move-object/from16 v0, p0
 
@@ -2430,9 +2368,9 @@
 
     invoke-virtual {v0, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    goto :goto_3
+    goto :goto_2
 
-    :cond_5
+    :cond_3
     move-object/from16 v0, v18
 
     iget-object v2, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
@@ -2443,7 +2381,7 @@
 
     and-int/2addr v2, v3
 
-    if-nez v2, :cond_4
+    if-nez v2, :cond_2
 
     move/from16 v0, v16
 
@@ -2469,7 +2407,7 @@
 
     move/from16 v0, v28
 
-    if-ne v0, v2, :cond_6
+    if-ne v0, v2, :cond_4
 
     move-object/from16 v0, v18
 
@@ -2477,7 +2415,7 @@
 
     cmp-long v2, v24, v2
 
-    if-nez v2, :cond_6
+    if-nez v2, :cond_4
 
     move-object/from16 v0, p0
 
@@ -2493,10 +2431,10 @@
 
     move-result v2
 
-    if-nez v2, :cond_4
+    if-nez v2, :cond_2
 
-    :cond_6
-    if-nez v10, :cond_7
+    :cond_4
+    if-nez v10, :cond_5
 
     move-object/from16 v0, p0
 
@@ -2518,21 +2456,21 @@
 
     invoke-virtual {v0, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_3
+    goto/16 :goto_2
 
-    :cond_7
+    :cond_5
     invoke-virtual {v8, v10}, Ljava/util/Stack;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_3
+    goto/16 :goto_2
 
-    :cond_8
+    :cond_6
     invoke-interface {v11}, Landroid/database/Cursor;->close()V
 
     invoke-virtual/range {v19 .. v19}, Ljava/util/HashSet;->isEmpty()Z
 
     move-result v2
 
-    if-nez v2, :cond_9
+    if-nez v2, :cond_7
 
     move-object/from16 v0, p0
 
@@ -2556,20 +2494,20 @@
 
     invoke-virtual {v2, v3, v4, v5}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
-    :cond_9
+    :cond_7
     invoke-virtual {v14}, Ljava/util/HashMap;->isEmpty()Z
 
     move-result v2
 
-    if-eqz v2, :cond_a
+    if-eqz v2, :cond_8
 
     invoke-virtual {v8}, Ljava/util/Stack;->isEmpty()Z
 
     move-result v2
 
-    if-nez v2, :cond_2
+    if-nez v2, :cond_9
 
-    :cond_a
+    :cond_8
     new-instance v7, Ljava/util/Stack;
 
     invoke-direct {v7}, Ljava/util/Stack;-><init>()V
@@ -2592,7 +2530,8 @@
 
     invoke-virtual {v2}, Lcom/android/launcher3/common/model/IconCache$SerializedIconUpdateTask;->scheduleNext()V
 
-    goto/16 :goto_2
+    :cond_9
+    return-void
 .end method
 
 .method private updateSystemStateString()V
@@ -2876,19 +2815,15 @@
     move-result-object v2
 
     :goto_0
+    if-eqz v2, :cond_0
+
     invoke-virtual {p1}, Landroid/content/pm/ActivityInfo;->getIconResource()I
 
     move-result v1
 
-    if-eqz v2, :cond_0
-
     if-eqz v1, :cond_0
 
     invoke-direct {p0, v2, v1}, Lcom/android/launcher3/common/model/IconCache;->getFullResIcon(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v3
-
-    invoke-direct {p0, v3, p1}, Lcom/android/launcher3/common/model/IconCache;->makeDefaultbadgeIcon(Landroid/graphics/drawable/Drawable;Landroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
@@ -2904,10 +2839,6 @@
 
     :cond_0
     invoke-direct {p0}, Lcom/android/launcher3/common/model/IconCache;->getFullResDefaultActivityIcon()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v3
-
-    invoke-direct {p0, v3, p1}, Lcom/android/launcher3/common/model/IconCache;->makeDefaultbadgeIcon(Landroid/graphics/drawable/Drawable;Landroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 

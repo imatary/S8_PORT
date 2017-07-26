@@ -1120,7 +1120,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f0200b5
+    const v1, 0x7f0200be
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1207,7 +1207,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a010e
+    const v1, 0x7f0900e8
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1215,7 +1215,7 @@
 
     iput v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mTextBackgroundExtraPadding:I
 
-    const v1, 0x7f0a010d
+    const v1, 0x7f0900e7
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2534,9 +2534,9 @@
 .method public preloadBadgeDrawable()Landroid/graphics/drawable/Drawable;
     .locals 9
 
-    const v8, 0x7f020089
+    const v8, 0x7f02008b
 
-    const v7, 0x7f020088
+    const v7, 0x7f02008a
 
     sget-object v6, Lcom/android/launcher3/theme/OpenThemeManager;->mContext:Landroid/content/Context;
 

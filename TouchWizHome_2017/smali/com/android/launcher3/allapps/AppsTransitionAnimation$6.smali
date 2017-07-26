@@ -39,6 +39,14 @@
 
 
 # virtual methods
+.method public onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/android/launcher3/allapps/AppsTransitionAnimation$6;->onAnimationEnd(Landroid/animation/Animator;)V
+
+    return-void
+.end method
+
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
 

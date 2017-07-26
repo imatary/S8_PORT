@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/HomeController;->changeHomeScreenMode(Ljava/lang/String;)V
+    value = Lcom/android/launcher3/home/HomeController;->removeShortcut()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/home/HomeController;
 
-.field final synthetic val$HomeOnlySettingValue:Z
+.field final synthetic val$appsViewList:Ljava/util/ArrayList;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/HomeController;Z)V
+.method constructor <init>(Lcom/android/launcher3/home/HomeController;Ljava/util/ArrayList;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/home/HomeController$27;->this$0:Lcom/android/launcher3/home/HomeController;
 
-    iput-boolean p2, p0, Lcom/android/launcher3/home/HomeController$27;->val$HomeOnlySettingValue:Z
+    iput-object p2, p0, Lcom/android/launcher3/home/HomeController$27;->val$appsViewList:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,39 +39,39 @@
 
 # virtual methods
 .method public run()V
-    .locals 3
+    .locals 4
 
-    const/4 v1, 0x1
+    iget-object v2, p0, Lcom/android/launcher3/home/HomeController$27;->val$appsViewList:Ljava/util/ArrayList;
 
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/launcher3/LauncherAppState;->getModel()Lcom/android/launcher3/LauncherModel;
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
-    iget-boolean v0, p0, Lcom/android/launcher3/home/HomeController$27;->val$HomeOnlySettingValue:Z
-
-    if-nez v0, :cond_0
-
-    move v0, v1
-
     :goto_0
-    invoke-virtual {v2, v0, v1}, Lcom/android/launcher3/LauncherModel;->resetLoadedState(ZZ)V
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeController$27;->this$0:Lcom/android/launcher3/home/HomeController;
+    move-result v3
 
-    invoke-static {v0}, Lcom/android/launcher3/home/HomeController;->access$1200(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/Launcher;
+    if-eqz v3, :cond_0
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/launcher3/Launcher;->recreateLauncher()V
+    check-cast v0, Landroid/view/View;
 
-    return-void
+    invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
-    :cond_0
-    const/4 v0, 0x0
+    move-result-object v1
+
+    check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
+
+    iget-object v3, p0, Lcom/android/launcher3/home/HomeController$27;->this$0:Lcom/android/launcher3/home/HomeController;
+
+    invoke-virtual {v3, v1, v0}, Lcom/android/launcher3/home/HomeController;->removeHomeOrFolderItem(Lcom/android/launcher3/common/base/item/ItemInfo;Landroid/view/View;)Z
 
     goto :goto_0
+
+    :cond_0
+    return-void
 .end method

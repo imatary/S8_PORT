@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c0006
+    const v1, 0x7f0b0007
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c0007
+    const v1, 0x7f0b0008
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -69,7 +69,7 @@
 .method public getWidgetItemFolderViewId()I
     .locals 1
 
-    const v0, 0x7f04004a
+    const v0, 0x7f03004a
 
     return v0
 .end method
@@ -77,7 +77,7 @@
 .method public getWidgetItemSingleViewId()I
     .locals 1
 
-    const v0, 0x7f04004b
+    const v0, 0x7f03004b
 
     return v0
 .end method
@@ -85,7 +85,7 @@
 .method public getWidgetPageLayoutId()I
     .locals 1
 
-    const v0, 0x7f04004d
+    const v0, 0x7f03004d
 
     return v0
 .end method
@@ -103,7 +103,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a008e
+    const v2, 0x7f09007d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

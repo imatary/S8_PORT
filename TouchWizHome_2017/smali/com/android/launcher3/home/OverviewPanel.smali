@@ -12,8 +12,6 @@
 
 .field private final ICON_PRESS_ALPHA_VALUE:F
 
-.field private mChildCount:I
-
 .field private mHomeController:Lcom/android/launcher3/home/HomeController;
 
 .field private mLauncher:Lcom/android/launcher3/Launcher;
@@ -114,28 +112,6 @@
     return-void
 .end method
 
-.method private changeColorForChildPannel(Landroid/widget/TextView;Z)V
-    .locals 3
-
-    iget-object v0, p0, Lcom/android/launcher3/home/OverviewPanel;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    invoke-static {v0, p1, p2}, Lcom/android/launcher3/util/WhiteBgManager;->changeTextColorForBg(Landroid/content/Context;Landroid/widget/TextView;Z)V
-
-    iget-object v0, p0, Lcom/android/launcher3/home/OverviewPanel;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    invoke-virtual {p1}, Landroid/widget/TextView;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
-
-    move-result-object v1
-
-    const/4 v2, 0x1
-
-    aget-object v1, v1, v2
-
-    invoke-static {v0, v1, p2}, Lcom/android/launcher3/util/WhiteBgManager;->changeColorFilterForBg(Landroid/content/Context;Landroid/graphics/drawable/Drawable;Z)V
-
-    return-void
-.end method
-
 .method private onClickSettingsButton()V
     .locals 7
 
@@ -157,7 +133,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090196
+    const v2, 0x7f080196
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -167,7 +143,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090146
+    const v3, 0x7f080147
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -207,7 +183,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090196
+    const v2, 0x7f080196
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -217,7 +193,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09016f
+    const v3, 0x7f080170
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -299,7 +275,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090196
+    const v3, 0x7f080196
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -309,7 +285,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09016f
+    const v4, 0x7f080170
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -349,7 +325,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/home/OverviewPanel;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v1, 0x7f090183
+    const v1, 0x7f080183
 
     invoke-static {v0, v1, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -378,7 +354,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090196
+    const v2, 0x7f080196
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -388,7 +364,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090170
+    const v3, 0x7f080171
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -406,83 +382,10 @@
     goto :goto_0
 .end method
 
-.method private setContentDescription()V
+.method private setEditTextBg()V
     .locals 5
 
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const v3, 0x7f090002
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    iget v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mChildCount:I
-
-    if-ge v1, v2, :cond_1
-
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/OverviewPanel;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v2
-
-    instance-of v2, v2, Landroid/widget/TextView;
-
-    if-eqz v2, :cond_0
-
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/OverviewPanel;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v3
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/OverviewPanel;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/widget/TextView;
-
-    invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
-
-    move-result-object v2
-
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v4, ", "
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v3, v2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    return-void
-.end method
-
-.method private setEditTextBg()V
-    .locals 4
+    const v4, 0x7f0200d5
 
     invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getContext()Landroid/content/Context;
 
@@ -490,73 +393,104 @@
 
     invoke-static {v2}, Lcom/android/launcher3/Utilities;->isEnableBtnBg(Landroid/content/Context;)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_0
-
-    const/4 v0, 0x0
-
-    :goto_0
-    iget v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mChildCount:I
-
-    if-ge v0, v2, :cond_0
-
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/home/OverviewPanel;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    const v3, 0x7f0200cb
+    const v3, 0x7f090127
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
-    add-int/lit8 v0, v0, 0x1
+    move-result v1
 
-    goto :goto_0
+    if-eqz v0, :cond_0
+
+    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
+
+    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setBackgroundResource(I)V
+
+    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
+
+    invoke-virtual {v2, v1, v1, v1, v1}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
+
+    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setBackgroundResource(I)V
+
+    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
+
+    invoke-virtual {v2, v1, v1, v1, v1}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
+
+    if-eqz v2, :cond_0
+
+    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
+
+    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setBackgroundResource(I)V
+
+    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
+
+    invoke-virtual {v2, v1, v1, v1, v1}, Landroid/widget/TextView;->setPadding(IIII)V
 
     :cond_0
     return-void
 .end method
 
 .method private updateButtonLayout(Landroid/widget/TextView;)V
-    .locals 5
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const v3, 0x7f0a0048
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
-
-    move-result v1
-
-    if-eqz p1, :cond_0
-
-    const/4 v2, 0x0
+    .locals 6
 
     invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    const v4, 0x7f0a0049
+    const v4, 0x7f090045
 
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimension(I)F
-
-    move-result v3
-
-    invoke-virtual {p1, v2, v3}, Landroid/widget/TextView;->setTextSize(IF)V
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const v3, 0x7f0a0046
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
     move-result v2
 
-    invoke-virtual {p1, v2}, Landroid/widget/TextView;->setCompoundDrawablePadding(I)V
+    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f090044
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+
+    move-result v1
+
+    if-eqz p1, :cond_0
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    const v5, 0x7f090046
+
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v4
+
+    invoke-virtual {p1, v3, v4}, Landroid/widget/TextView;->setTextSize(IF)V
+
+    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f090042
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+
+    move-result v3
+
+    invoke-virtual {p1, v3}, Landroid/widget/TextView;->setCompoundDrawablePadding(I)V
+
+    invoke-virtual {p1, v2, v2, v2, v2}, Landroid/widget/TextView;->setPadding(IIII)V
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -583,345 +517,286 @@
 .end method
 
 .method changeColorForBg(Z)V
-    .locals 2
+    .locals 3
 
-    const/4 v0, 0x0
+    const/4 v2, 0x1
 
-    :goto_0
-    iget v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mChildCount:I
+    iget-object v0, p0, Lcom/android/launcher3/home/OverviewPanel;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    if-ge v0, v1, :cond_0
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
 
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/home/OverviewPanel;->getChildAt(I)Landroid/view/View;
+    invoke-static {v0, v1, p1}, Lcom/android/launcher3/util/WhiteBgManager;->changeTextColorForBg(Landroid/content/Context;Landroid/widget/TextView;Z)V
+
+    iget-object v0, p0, Lcom/android/launcher3/home/OverviewPanel;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
+
+    invoke-virtual {v1}, Landroid/widget/TextView;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    check-cast v1, Landroid/widget/TextView;
+    aget-object v1, v1, v2
 
-    invoke-direct {p0, v1, p1}, Lcom/android/launcher3/home/OverviewPanel;->changeColorForChildPannel(Landroid/widget/TextView;Z)V
+    invoke-static {v0, v1, p1}, Lcom/android/launcher3/util/WhiteBgManager;->changeColorFilterForBg(Landroid/content/Context;Landroid/graphics/drawable/Drawable;Z)V
 
-    add-int/lit8 v0, v0, 0x1
+    iget-object v0, p0, Lcom/android/launcher3/home/OverviewPanel;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    goto :goto_0
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
+
+    invoke-static {v0, v1, p1}, Lcom/android/launcher3/util/WhiteBgManager;->changeTextColorForBg(Landroid/content/Context;Landroid/widget/TextView;Z)V
+
+    iget-object v0, p0, Lcom/android/launcher3/home/OverviewPanel;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
+
+    invoke-virtual {v1}, Landroid/widget/TextView;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    aget-object v1, v1, v2
+
+    invoke-static {v0, v1, p1}, Lcom/android/launcher3/util/WhiteBgManager;->changeColorFilterForBg(Landroid/content/Context;Landroid/graphics/drawable/Drawable;Z)V
+
+    iget-object v0, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/launcher3/home/OverviewPanel;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
+
+    invoke-static {v0, v1, p1}, Lcom/android/launcher3/util/WhiteBgManager;->changeTextColorForBg(Landroid/content/Context;Landroid/widget/TextView;Z)V
+
+    iget-object v0, p0, Lcom/android/launcher3/home/OverviewPanel;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
+
+    invoke-virtual {v1}, Landroid/widget/TextView;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    aget-object v1, v1, v2
+
+    invoke-static {v0, v1, p1}, Lcom/android/launcher3/util/WhiteBgManager;->changeColorFilterForBg(Landroid/content/Context;Landroid/graphics/drawable/Drawable;Z)V
 
     :cond_0
     return-void
 .end method
 
 .method onConfigurationChangedIfNeeded()V
-    .locals 4
+    .locals 3
 
     invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-    move-result-object v1
+    move-result-object v0
 
-    check-cast v1, Landroid/view/ViewGroup$MarginLayoutParams;
+    check-cast v0, Landroid/view/ViewGroup$MarginLayoutParams;
 
     invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v2
+    move-result-object v1
 
-    const v3, 0x7f0a0047
+    const v2, 0x7f090043
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
-    move-result v2
+    move-result v1
 
-    iput v2, v1, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/OverviewPanel;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p0, v0}, Lcom/android/launcher3/home/OverviewPanel;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    const/4 v0, 0x0
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
 
-    :goto_0
-    iget v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mChildCount:I
+    invoke-direct {p0, v1}, Lcom/android/launcher3/home/OverviewPanel;->updateButtonLayout(Landroid/widget/TextView;)V
 
-    if-ge v0, v2, :cond_0
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
 
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/home/OverviewPanel;->getChildAt(I)Landroid/view/View;
+    invoke-direct {p0, v1}, Lcom/android/launcher3/home/OverviewPanel;->updateButtonLayout(Landroid/widget/TextView;)V
 
-    move-result-object v2
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
 
-    check-cast v2, Landroid/widget/TextView;
+    invoke-direct {p0, v1}, Lcom/android/launcher3/home/OverviewPanel;->updateButtonLayout(Landroid/widget/TextView;)V
 
-    invoke-direct {p0, v2}, Lcom/android/launcher3/home/OverviewPanel;->updateButtonLayout(Landroid/widget/TextView;)V
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
     return-void
 .end method
 
 .method protected onFinishInflate()V
-    .locals 7
+    .locals 5
 
-    const/4 v6, 0x0
+    const/4 v4, 0x0
 
     invoke-super {p0}, Landroid/widget/LinearLayout;->onFinishInflate()V
 
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
+    const v1, 0x7f0f00c5
 
-    move-result-object v2
+    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/OverviewPanel;->findViewById(I)Landroid/view/View;
 
-    const v3, 0x7f0a0094
+    move-result-object v1
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    check-cast v1, Landroid/widget/TextView;
+
+    iput-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
+
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
+
+    sget-object v2, Lcom/android/launcher3/home/HomeFocusHelper;->OVERVIEW_PANEL_OPTION_BUTTON_KEY_LISTENER:Landroid/view/View$OnKeyListener;
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
+
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
+
+    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mOnTouchListener:Landroid/view/View$OnTouchListener;
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
+
+    new-instance v2, Lcom/android/launcher3/home/OverviewPanel$1;
+
+    invoke-direct {v2, p0}, Lcom/android/launcher3/home/OverviewPanel$1;-><init>(Lcom/android/launcher3/home/OverviewPanel;)V
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
+
+    new-instance v2, Lcom/android/launcher3/home/OverviewPanel$2;
+
+    invoke-direct {v2, p0}, Lcom/android/launcher3/home/OverviewPanel$2;-><init>(Lcom/android/launcher3/home/OverviewPanel;)V
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    invoke-static {v1}, Lcom/android/launcher3/Utilities;->checkThemeStoreState(Landroid/content/Context;)I
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getChildCount()I
+    const v1, 0x7f0f00c4
 
-    move-result v2
+    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/OverviewPanel;->findViewById(I)Landroid/view/View;
 
-    iput v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mChildCount:I
+    move-result-object v1
 
-    const v2, 0x7f1000ba
+    check-cast v1, Landroid/widget/TextView;
 
-    invoke-virtual {p0, v2}, Lcom/android/launcher3/home/OverviewPanel;->findViewById(I)Landroid/view/View;
+    iput-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
+
+    if-eqz v0, :cond_0
+
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
+
+    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    check-cast v2, Landroid/widget/TextView;
+    const v3, 0x7f0800c7
 
-    iput-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    const v5, 0x7f0200c1
-
-    invoke-virtual {v4, v5, v6}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v4
-
-    invoke-static {v3, v4, v0, v0}, Lcom/android/launcher3/util/BitmapUtils;->getResizedDrawable(Landroid/content/Context;Landroid/graphics/drawable/Drawable;II)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v6, v3, v6, v6}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
-
-    sget-object v3, Lcom/android/launcher3/home/HomeFocusHelper;->OVERVIEW_PANEL_OPTION_BUTTON_KEY_LISTENER:Landroid/view/View$OnKeyListener;
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
-
-    iget-object v3, p0, Lcom/android/launcher3/home/OverviewPanel;->mOnTouchListener:Landroid/view/View$OnTouchListener;
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
-
-    new-instance v3, Lcom/android/launcher3/home/OverviewPanel$1;
-
-    invoke-direct {v3, p0}, Lcom/android/launcher3/home/OverviewPanel$1;-><init>(Lcom/android/launcher3/home/OverviewPanel;)V
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWidgetsButton:Landroid/widget/TextView;
-
-    new-instance v3, Lcom/android/launcher3/home/OverviewPanel$2;
-
-    invoke-direct {v3, p0}, Lcom/android/launcher3/home/OverviewPanel$2;-><init>(Lcom/android/launcher3/home/OverviewPanel;)V
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    invoke-static {v2}, Lcom/android/launcher3/Utilities;->checkThemeStoreState(Landroid/content/Context;)I
-
-    move-result v1
-
-    const v2, 0x7f1000b9
-
-    invoke-virtual {p0, v2}, Lcom/android/launcher3/home/OverviewPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    check-cast v2, Landroid/widget/TextView;
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    iput-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getContext()Landroid/content/Context;
-
-    move-result-object v3
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v4
+    move-result-object v2
 
-    const v5, 0x7f0200bf
+    const v3, 0x7f0200ca
 
-    invoke-virtual {v4, v5, v6}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v2, v3, v4}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-static {v3, v4, v0, v0}, Lcom/android/launcher3/util/BitmapUtils;->getResizedDrawable(Landroid/content/Context;Landroid/graphics/drawable/Drawable;II)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v6, v3, v6, v6}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
-
-    if-eqz v1, :cond_0
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v3
-
-    const v4, 0x7f0900c7
-
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    const v5, 0x7f0200c0
-
-    invoke-virtual {v4, v5, v6}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v4
-
-    invoke-static {v3, v4, v0, v0}, Lcom/android/launcher3/util/BitmapUtils;->getResizedDrawable(Landroid/content/Context;Landroid/graphics/drawable/Drawable;II)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v6, v3, v6, v6}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v1, v4, v2, v4, v4}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     :cond_0
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
 
-    sget-object v3, Lcom/android/launcher3/home/HomeFocusHelper;->OVERVIEW_PANEL_OPTION_BUTTON_KEY_LISTENER:Landroid/view/View$OnKeyListener;
+    sget-object v2, Lcom/android/launcher3/home/HomeFocusHelper;->OVERVIEW_PANEL_OPTION_BUTTON_KEY_LISTENER:Landroid/view/View$OnKeyListener;
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/launcher3/home/OverviewPanel;->mOnTouchListener:Landroid/view/View$OnTouchListener;
+    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mOnTouchListener:Landroid/view/View$OnTouchListener;
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    const/4 v2, 0x2
+    const/4 v1, 0x2
 
-    if-ne v1, v2, :cond_2
+    if-ne v0, v1, :cond_2
 
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
 
-    new-instance v3, Lcom/android/launcher3/home/OverviewPanel$3;
+    new-instance v2, Lcom/android/launcher3/home/OverviewPanel$3;
 
-    invoke-direct {v3, p0}, Lcom/android/launcher3/home/OverviewPanel$3;-><init>(Lcom/android/launcher3/home/OverviewPanel;)V
+    invoke-direct {v2, p0}, Lcom/android/launcher3/home/OverviewPanel$3;-><init>(Lcom/android/launcher3/home/OverviewPanel;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :goto_0
-    const v2, 0x7f1000bc
+    const v1, 0x7f0f00c7
 
-    invoke-virtual {p0, v2}, Lcom/android/launcher3/home/OverviewPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/OverviewPanel;->findViewById(I)Landroid/view/View;
 
-    move-result-object v2
+    move-result-object v1
 
-    check-cast v2, Landroid/widget/TextView;
+    check-cast v1, Landroid/widget/TextView;
 
-    iput-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
+    iput-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getContext()Landroid/content/Context;
+    const/4 v2, 0x0
 
-    move-result-object v3
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    invoke-virtual {p0}, Lcom/android/launcher3/home/OverviewPanel;->getResources()Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
 
-    move-result-object v4
+    sget-object v2, Lcom/android/launcher3/home/HomeFocusHelper;->OVERVIEW_PANEL_OPTION_BUTTON_KEY_LISTENER:Landroid/view/View$OnKeyListener;
 
-    const v5, 0x7f0200be
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    invoke-virtual {v4, v5, v6}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
 
-    move-result-object v4
+    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mOnTouchListener:Landroid/view/View$OnTouchListener;
 
-    invoke-static {v3, v4, v0, v0}, Lcom/android/launcher3/util/BitmapUtils;->getResizedDrawable(Landroid/content/Context;Landroid/graphics/drawable/Drawable;II)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    move-result-object v3
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
 
-    invoke-virtual {v2, v6, v3, v6, v6}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+    new-instance v2, Lcom/android/launcher3/home/OverviewPanel$5;
 
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
+    invoke-direct {v2, p0}, Lcom/android/launcher3/home/OverviewPanel$5;-><init>(Lcom/android/launcher3/home/OverviewPanel;)V
 
-    const/4 v3, 0x0
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setVisibility(I)V
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
-
-    sget-object v3, Lcom/android/launcher3/home/HomeFocusHelper;->OVERVIEW_PANEL_OPTION_BUTTON_KEY_LISTENER:Landroid/view/View$OnKeyListener;
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
-
-    iget-object v3, p0, Lcom/android/launcher3/home/OverviewPanel;->mOnTouchListener:Landroid/view/View$OnTouchListener;
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
-
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mSettingsButton:Landroid/widget/TextView;
-
-    new-instance v3, Lcom/android/launcher3/home/OverviewPanel$5;
-
-    invoke-direct {v3, p0}, Lcom/android/launcher3/home/OverviewPanel$5;-><init>(Lcom/android/launcher3/home/OverviewPanel;)V
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     invoke-direct {p0}, Lcom/android/launcher3/home/OverviewPanel;->setEditTextBg()V
 
-    invoke-direct {p0}, Lcom/android/launcher3/home/OverviewPanel;->setContentDescription()V
-
     invoke-static {}, Lcom/android/launcher3/util/WhiteBgManager;->isWhiteBg()Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_1
 
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
-    invoke-virtual {p0, v2}, Lcom/android/launcher3/home/OverviewPanel;->changeColorForBg(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/OverviewPanel;->changeColorForBg(Z)V
 
     :cond_1
     return-void
 
     :cond_2
-    iget-object v2, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/launcher3/home/OverviewPanel;->mWallpapersAndThemesButton:Landroid/widget/TextView;
 
-    new-instance v3, Lcom/android/launcher3/home/OverviewPanel$4;
+    new-instance v2, Lcom/android/launcher3/home/OverviewPanel$4;
 
-    invoke-direct {v3, p0}, Lcom/android/launcher3/home/OverviewPanel$4;-><init>(Lcom/android/launcher3/home/OverviewPanel;)V
+    invoke-direct {v2, p0}, Lcom/android/launcher3/home/OverviewPanel$4;-><init>(Lcom/android/launcher3/home/OverviewPanel;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     goto :goto_0
 .end method

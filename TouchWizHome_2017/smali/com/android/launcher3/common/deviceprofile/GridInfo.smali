@@ -20,8 +20,6 @@
 
 .field private mHotseatBarSize:I
 
-.field private mHotseatBottom:I
-
 .field private mHotseatContentTop:I
 
 .field private final mIconInfo:Lcom/android/launcher3/common/deviceprofile/GridIconInfo;
@@ -37,9 +35,7 @@
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;[Ljava/lang/String;)V
-    .locals 12
-
-    const/16 v11, 0xd
+    .locals 11
 
     const/16 v10, 0xc
 
@@ -50,8 +46,6 @@
     const/4 v8, 0x0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput v8, p0, Lcom/android/launcher3/common/deviceprofile/GridInfo;->mHotseatBottom:I
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -211,7 +205,7 @@
     iput v0, p0, Lcom/android/launcher3/common/deviceprofile/GridInfo;->mHotseatBarSize:I
 
     :cond_1
-    if-le v6, v10, :cond_3
+    if-le v6, v10, :cond_2
 
     aget-object v0, p2, v10
 
@@ -226,21 +220,6 @@
     iput v0, p0, Lcom/android/launcher3/common/deviceprofile/GridInfo;->mHotseatContentTop:I
 
     :goto_0
-    if-le v6, v11, :cond_2
-
-    aget-object v0, p2, v11
-
-    invoke-static {v0}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
-
-    move-result v0
-
-    invoke-static {v0, v7}, Lcom/android/launcher3/Utilities;->pxFromDp(FLandroid/util/DisplayMetrics;)I
-
-    move-result v0
-
-    iput v0, p0, Lcom/android/launcher3/common/deviceprofile/GridInfo;->mHotseatBottom:I
-
-    :cond_2
     new-instance v0, Lcom/android/launcher3/common/deviceprofile/GridIconInfo;
 
     iget v1, p0, Lcom/android/launcher3/common/deviceprofile/GridInfo;->mCountX:I
@@ -291,7 +270,7 @@
 
     return-void
 
-    :cond_3
+    :cond_2
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/launcher3/common/deviceprofile/GridInfo;->mHotseatContentTop:I
@@ -369,14 +348,6 @@
     .locals 1
 
     iget v0, p0, Lcom/android/launcher3/common/deviceprofile/GridInfo;->mHotseatBarSize:I
-
-    return v0
-.end method
-
-.method public getHotseatBottom()I
-    .locals 1
-
-    iget v0, p0, Lcom/android/launcher3/common/deviceprofile/GridInfo;->mHotseatBottom:I
 
     return v0
 .end method

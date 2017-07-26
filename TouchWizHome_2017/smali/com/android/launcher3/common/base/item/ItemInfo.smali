@@ -46,8 +46,6 @@
 
 .field public minSpanY:I
 
-.field public oldScreenId:J
-
 .field public rank:I
 
 .field public requiresDbUpdate:Z
@@ -71,51 +69,49 @@
 
     const/4 v4, -0x1
 
-    const/4 v3, 0x1
+    const/4 v1, 0x1
 
-    const/4 v2, 0x0
+    const-wide/16 v2, -0x1
 
-    const-wide/16 v0, -0x1
+    const/4 v0, 0x0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->id:J
+    iput-wide v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->id:J
 
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
+    iput-wide v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
-
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->oldScreenId:J
+    iput-wide v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
     iput v4, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
     iput v4, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    iput v3, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanX:I
+    iput v1, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanX:I
 
-    iput v3, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanY:I
+    iput v1, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanY:I
 
-    iput v3, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->minSpanX:I
+    iput v1, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->minSpanX:I
 
-    iput v3, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->minSpanY:I
+    iput v1, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->minSpanY:I
 
-    iput v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->rank:I
+    iput v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->rank:I
 
-    iput-boolean v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->requiresDbUpdate:Z
+    iput-boolean v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->requiresDbUpdate:Z
 
-    iput-boolean v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mDirty:Z
+    iput-boolean v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mDirty:Z
 
     iput-object v5, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->dropPos:[I
 
     iput-object v5, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
-    iput-boolean v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mChecked:Z
+    iput-boolean v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mChecked:Z
 
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mDexID:J
+    iput-wide v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mDexID:J
 
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mPrevContainer:J
+    iput-wide v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mPrevContainer:J
 
-    iput-boolean v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->isGameApp:Z
+    iput-boolean v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->isGameApp:Z
 
     invoke-static {}, Lcom/android/launcher3/common/compat/UserHandleCompat;->myUserHandle()Lcom/android/launcher3/common/compat/UserHandleCompat;
 
@@ -133,51 +129,49 @@
 
     const/4 v4, -0x1
 
-    const/4 v3, 0x1
+    const/4 v1, 0x1
 
-    const/4 v2, 0x0
+    const-wide/16 v2, -0x1
 
-    const-wide/16 v0, -0x1
+    const/4 v0, 0x0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->id:J
+    iput-wide v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->id:J
 
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
+    iput-wide v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
-
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->oldScreenId:J
+    iput-wide v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
     iput v4, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
     iput v4, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    iput v3, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanX:I
+    iput v1, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanX:I
 
-    iput v3, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanY:I
+    iput v1, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanY:I
 
-    iput v3, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->minSpanX:I
+    iput v1, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->minSpanX:I
 
-    iput v3, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->minSpanY:I
+    iput v1, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->minSpanY:I
 
-    iput v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->rank:I
+    iput v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->rank:I
 
-    iput-boolean v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->requiresDbUpdate:Z
+    iput-boolean v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->requiresDbUpdate:Z
 
-    iput-boolean v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mDirty:Z
+    iput-boolean v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mDirty:Z
 
     iput-object v5, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->dropPos:[I
 
     iput-object v5, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
-    iput-boolean v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mChecked:Z
+    iput-boolean v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mChecked:Z
 
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mDexID:J
+    iput-wide v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mDexID:J
 
-    iput-wide v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mPrevContainer:J
+    iput-wide v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->mPrevContainer:J
 
-    iput-boolean v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->isGameApp:Z
+    iput-boolean v0, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->isGameApp:Z
 
     invoke-virtual {p0, p1}, Lcom/android/launcher3/common/base/item/ItemInfo;->copyFrom(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
@@ -405,12 +399,6 @@
     iget v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->itemType:I
 
     const/4 v3, 0x2
-
-    if-eq v2, v3, :cond_2
-
-    iget v2, p0, Lcom/android/launcher3/common/base/item/ItemInfo;->itemType:I
-
-    const/4 v3, 0x6
 
     if-ne v2, v3, :cond_0
 

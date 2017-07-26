@@ -234,17 +234,31 @@
 
     move-result v3
 
-    if-eqz v3, :cond_1
+    if-eqz v3, :cond_0
 
-    :cond_0
+    sget-object v2, Lcom/android/launcher3/common/view/LiveIconFactory;->TAG:Ljava/lang/String;
+
+    const-string v3, "requestCreate: Factory is COLDDOWN"
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     :goto_0
     return v1
 
-    :cond_1
+    :cond_0
     iget v3, p0, Lcom/android/launcher3/common/view/LiveIconFactory;->mState:I
 
-    if-nez v3, :cond_0
+    if-eqz v3, :cond_1
 
+    sget-object v2, Lcom/android/launcher3/common/view/LiveIconFactory;->TAG:Ljava/lang/String;
+
+    const-string v3, "requestCreate: Factory is BUSY"
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_1
     iput v2, p0, Lcom/android/launcher3/common/view/LiveIconFactory;->mState:I
 
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;

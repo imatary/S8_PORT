@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">Søkehistorikk</string>
-    <string name="accessibility_add_home_screen">Legg til side</string>
-    <string name="accessibility_button">Knapp</string>
-    <string name="accessibility_dimmed">Nedtonet</string>
+    <string name="about">Om %s</string>
+    <string name="about_already_installed">Den siste versjonen er allerede installert.</string>
+    <string name="about_home_screen">Startskjerm</string>
+    <string name="about_licence">Åpen kildekode-lisens</string>
+    <string name="about_network_err">Kan ikke se etter oppdateringer. Telefonen er ikke koblet til et nettverk.</string>
+    <string name="about_new_version_exist">En ny versjon er tilgjengelig.</string>
+    <string name="about_retry">Prøv igjen</string>
+    <string name="about_update">Oppdater</string>
+    <string name="about_version">Versjon %s</string>
     <string name="activity_not_available">Denne appen er ikke tilgjengelig for enheten din.</string>
     <string name="activity_not_found">App ikke installert.</string>
     <string name="align_to_bottom">Juster til bunn</string>
     <string name="align_to_top">Juster til topp</string>
-    <string name="app_locked_toast">%s låst.</string>
     <string name="app_search">Søk på telefonen</string>
     <string name="app_search_no_apps">Du kan legge til snarveier på startskjermbildet fra søkeresultatene.</string>
     <string name="app_search_no_results_found">Fant ingen resultater</string>
     <string name="app_search_tablet">Søk på nettbrettet</string>
-    <string name="app_unlocked_toast">%s er låst opp.</string>
     <string name="application_name">TouchWiz hjem</string>
     <string name="apply">Aktiver</string>
     <string name="appsPicker_add_button">LEGG TIL</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Standardside</string>
     <string name="default_scroll_format">Side %1$d av %2$d.</string>
     <string name="disable_message">%1$s og alle funksjoner relatert til den blir deaktivert. For å aktivere appen igjen går du til Innstillinger > Apper og velger %2$s.</string>
-    <string name="disable_message_knox_mode">%1$s og alle funksjonene relatert til den blir deaktivert. For å aktivere appen igjen går du til %2$s-innstillinger > Apper.</string>
     <string name="disable_message_vzw">%s og alle relaterte funksjoner blir deaktivert. Du kan aktivere dette igjen ved å gå til Innstillinger > Apper > Appstyring.</string>
     <string name="discard">Forkast</string>
     <string name="do_not_show_again">Ikke vis igjen</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">Legg til apper</string>
     <string name="folder_closed">Mappen er lukket.</string>
     <string name="folder_color">Mappefarge</string>
+    <string name="folder_color_blue">Blå</string>
     <string name="folder_color_default">Standard mappefarge</string>
-    <string name="folder_color_pd">Farge %d</string>
+    <string name="folder_color_green">Grønn</string>
+    <string name="folder_color_orange">Oransje</string>
+    <string name="folder_color_yellow">Gul</string>
     <string name="folder_hint_text">Angi mappenavn</string>
     <string name="folder_microsoft_apps">"Microsoft-
 apper"</string>
@@ -123,6 +129,7 @@ apper"</string>
     <string name="out_of_space">Ikke mer plass på denne siden</string>
     <string name="out_of_space_dialog">Det er ikke mer plass på denne siden. Elementet blir lagt til på en ny side.</string>
     <string name="permdesc_install_widget">Denne appen kan legge til widgeter på startskjermbildet.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">Denne appen kan lese innstillingene til den tilpassede innholdssiden, som er plassert til venstre på startskjermbildet.</string>
     <string name="permdesc_write_zeropage_settings">Denne appen kan endre innstillingene til den tilpassede innholdssiden, som er plassert til venstre på startskjermbildet.</string>
     <string name="permlab_install_widget">Legg til widgeter</string>
@@ -159,27 +166,21 @@ apper"</string>
     <string name="selected">Valgt</string>
     <string name="setting_apps_screen_grid">Apper-skjermrutenett</string>
     <string name="shortcut_duplicate">Snarvei %s finnes allerede.</string>
-    <string name="shortcut_installed">Snarvei til %s er lagt til på startskjermbildet.</string>
+    <string name="shortcut_installed">Snarvei til %s er lagt til på startskjermen.</string>
     <string name="shortcut_moved_to_game_launcher">Spillikon ble flyttet til Game Launcher.</string>
     <string name="shortcut_uninstalled">Snarvei %s er fjernet.</string>
     <string name="speak_now">Snakk nå</string>
     <string name="swipe_up_for_more_apps">Stryk opp eller ned for alle apper</string>
     <string name="swipe_up_for_more_apps_att">Stryk opp eller ned på skjermen for alle apper</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Stryk opp eller ned med to fingre for alle apper.</string>
-    <string name="talkback_changed_to_ps">Endret til %s.</string>
+    <string name="talkback_checked">Valgt</string>
     <string name="talkback_folder">Mappe</string>
     <string name="talkback_n_items">%d elementer</string>
     <string name="talkback_press_back_key_to_close_folder">Trykk på tilbaketasten for å lukke mappen.</string>
-    <string name="talkback_tab_back_button_to_close_folder">Trykk på tilbaketasten for å lukke mappen.</string>
     <string name="title_settings">%s-innstillinger</string>
     <string name="tts_add_shortcut_on_home_screen_notice">Dra ikonet til toppen av skjermen for å legge til på startskjermbildet.</string>
     <string name="tts_bottom_handle">Nederste håndtak</string>
-    <string name="tts_changed_to_apps_edit_mode">Endret til redigeringsmodus for apper.</string>
-    <string name="tts_changed_to_folder_edit_mode">Endret til redigeringsmodus for mappe</string>
-    <string name="tts_changed_to_home_screen_edit_mode">Endret til redigeringsmodus for startskjermbilde.</string>
     <string name="tts_folder_created">Mappe opprettet.</string>
-    <string name="tts_holding_items">Holder %1$s og %2$d andre</string>
-    <string name="tts_hotseat_item_moved_from_external">Elementet ble flyttet til menylinjen på startskjermbildet.</string>
     <string name="tts_hotseat_move_to">Plassering %d i menylinjen.</string>
     <string name="tts_hover_item_over_other_item">%1$s oppå %2$s</string>
     <string name="tts_item_added">Element lagt til.</string>
@@ -200,7 +201,6 @@ apper"</string>
     <string name="viewmore_playstore">Vis flere i Play Butikk</string>
     <string name="viewtype_alphabetic_grid">Alfabetisk rekkefølge</string>
     <string name="viewtype_custom_grid">Egendefinert rekkefølge</string>
-    <string name="voice_search">Talesøk</string>
     <string name="wallpaper_button_text">Bakgrunn</string>
     <string name="wallpapers_and_themes_button_text">Bakgrunner og temaer</string>
     <string name="widget_button_text">Widgeter</string>
@@ -210,5 +210,4 @@ apper"</string>
     <string name="zeropage_download_msg">For å bruke denne funksjonen må du installere %1$s. Trykk på LAST NED for å laste ned og installere %2$s.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Sohu News</string>
-    <string name="zeropage_toutiao_title">Informasjonsekspress</string>
 </resources>

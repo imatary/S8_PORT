@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">Gözleg taryhy</string>
-    <string name="accessibility_add_home_screen">Sahypany goşuň</string>
-    <string name="accessibility_button">Düwme</string>
-    <string name="accessibility_dimmed">Öçügsi</string>
+    <string name="about">%s hakynda</string>
+    <string name="about_already_installed">Iň täze wersiýa eýýäm gurnalan.</string>
+    <string name="about_home_screen">Baş ekran</string>
+    <string name="about_licence">Açyk çeşmeli lisenziýalar</string>
+    <string name="about_network_err">Täzelemeleri barlap bolmaýar. Telefonyňyz tora birikmedik.</string>
+    <string name="about_new_version_exist">Täze wersiýa elýeterli</string>
+    <string name="about_retry">Täz synan</string>
+    <string name="about_update">Täzele</string>
+    <string name="about_version">Wersiýa %s</string>
     <string name="activity_not_available">Bu goýma siziň enjamyňyz üçin elýeterli däl.</string>
     <string name="activity_not_found">Gollanma gurulmady.</string>
     <string name="align_to_bottom">Aşak deňle</string>
     <string name="align_to_top">Ýokaryk deňle</string>
-    <string name="app_locked_toast">%s gulplandy.</string>
     <string name="app_search">Telefonda gözle</string>
     <string name="app_search_no_apps">Gözleg netijelerinden öý ekrana çykgytlary goşup bilersiňiz.</string>
     <string name="app_search_no_results_found">Netije tapylmady</string>
     <string name="app_search_tablet">Planşet gözle</string>
-    <string name="app_unlocked_toast">%s açyldy.</string>
     <string name="application_name">TouchWiz esasy</string>
     <string name="apply">Ulanmak</string>
     <string name="appsPicker_add_button">GOŞ</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Standart sahypa</string>
     <string name="default_scroll_format">%1$d-nyň %2$d sahypasy</string>
     <string name="disable_message">%1$s we ähli dahylly funksiýalary ýapylar. Goýmany täzeden işletmek üçin, Sazlamalar > Goýmalar-a baryp, %2$s saýlaň.</string>
-    <string name="disable_message_knox_mode">%1$s we ähli dahylly funksiýalary ýapylar. Goýmany ýene işletmek üçin, %2$s sazlamalary > Goýmalar-a baryň.</string>
     <string name="disable_message_vzw">%s we onuň ähli dahylly funksiýalary ýapylar. Ony täzeden işletmek üçin, Sazlamalar > Goýmalar > Goýma dispetçeri-ne baryň.</string>
     <string name="discard">Aýyr</string>
     <string name="do_not_show_again">Indi görkezme</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">Goýma goş</string>
     <string name="folder_closed">Bukja ýapyldy.</string>
     <string name="folder_color">Bukja reňki</string>
+    <string name="folder_color_blue">Gök</string>
     <string name="folder_color_default">Standart bukja reňki</string>
-    <string name="folder_color_pd">Reňk %d</string>
+    <string name="folder_color_green">Ýaşyl</string>
+    <string name="folder_color_orange">Narynç</string>
+    <string name="folder_color_yellow">Sary</string>
     <string name="folder_hint_text">Bukjanyň adyny giriziň</string>
     <string name="folder_microsoft_apps">Microsoft Apps</string>
     <string name="folder_multi_search_bar_hint">Goýmalary gözle</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">Şu sahypada başga boş ýer ýok</string>
     <string name="out_of_space_dialog">Bu sahypada başga ýer ýok. Element täze sahypa goşular.</string>
     <string name="permdesc_install_widget">Bu goýma öý ekrana wijetleri goşup bilýär.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">Bu goýma Öý ekranyň çepinde durýan laýyk material sahypasynyň sazlamalaryny okap bilýär.</string>
     <string name="permdesc_write_zeropage_settings">Bu goýma Öý ekranyň çepinde durýan laýyk material sahypasynyň sazlamalaryny üýtgedip bilýär.</string>
     <string name="permlab_install_widget">Wijetleri goş</string>
@@ -158,27 +165,21 @@ geler ýaly %1$d x %2$d edilip üýtgediler."</string>
     <string name="selected">Saýlanyldy</string>
     <string name="setting_apps_screen_grid">Goýmalar ekran gözenegi</string>
     <string name="shortcut_duplicate">%s bellik eýýäm bar.</string>
-    <string name="shortcut_installed">%s çykgydy Öý ekranda goşuldy.</string>
+    <string name="shortcut_installed">%s çykgydy öý ekranda goşuldy.</string>
     <string name="shortcut_moved_to_game_launcher">Oýun şekiljigi Game Launcher-e geçirildi.</string>
     <string name="shortcut_uninstalled">%s bellik aýryldy.</string>
     <string name="speak_now">Häzir gepläň</string>
     <string name="swipe_up_for_more_apps">Ähli goýmalar üçin ýokaryk ýa-da aşak syr</string>
     <string name="swipe_up_for_more_apps_att">Ähli goýmalar üçin, ekranda ýokaryk ýa-da aşak syr</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Ähli goýmalar üçin, iki barmak bilen ýokaryk ýa-da aşak syryň.</string>
-    <string name="talkback_changed_to_ps">%s -a çalyşdy.</string>
+    <string name="talkback_checked">Saýlanyldy</string>
     <string name="talkback_folder">Bukja</string>
     <string name="talkback_n_items">%d element</string>
     <string name="talkback_press_back_key_to_close_folder">Bukjany ýapmak üçin, Yza düwmesine basyň.</string>
-    <string name="talkback_tab_back_button_to_close_folder">Bukjany ýapmak üçin, Yza düwmesine basyň.</string>
     <string name="title_settings">%s sazlama</string>
     <string name="tts_add_shortcut_on_home_screen_notice">Öý ekrana goşmak üçin, şekiljigi ekranyň ýokarsyna süýräň.</string>
     <string name="tts_bottom_handle">Aşaky marker</string>
-    <string name="tts_changed_to_apps_edit_mode">Goýmalar düzediş tertibine üýtgedildi.</string>
-    <string name="tts_changed_to_folder_edit_mode">Bukja düzediş tertibine üýtgedildi</string>
-    <string name="tts_changed_to_home_screen_edit_mode">Öý ekran düzediş tertibine üýtgedildi.</string>
     <string name="tts_folder_created">Bukja gurnaldy</string>
-    <string name="tts_holding_items">%1$s we %2$d sanysy saklanylýar</string>
-    <string name="tts_hotseat_item_moved_from_external">Maddalar öý ekranyndaky menýu paneline geçirildi.</string>
     <string name="tts_hotseat_move_to">Menýu panelinde %d ýeri.</string>
     <string name="tts_hover_item_over_other_item">%1$s %2$s üstünde</string>
     <string name="tts_item_added">Madda goşuldy.</string>
@@ -199,7 +200,6 @@ geler ýaly %1$d x %2$d edilip üýtgediler."</string>
     <string name="viewmore_playstore">Play Store-da has köp gör</string>
     <string name="viewtype_alphabetic_grid">Elipbiý tertibi</string>
     <string name="viewtype_custom_grid">Laýyk tertip</string>
-    <string name="voice_search">Ses gözleg</string>
     <string name="wallpaper_button_text">Diwar kagyzlary</string>
     <string name="wallpapers_and_themes_button_text">Diwar kagyzlar we temalar</string>
     <string name="widget_button_text">Widjetler</string>
@@ -209,5 +209,4 @@ geler ýaly %1$d x %2$d edilip üýtgediler."</string>
     <string name="zeropage_download_msg">Bu funksiýany ulanmak üçin, siz %1$s gurnamaly. %2$s göçürip alyp gurnamak üçin, GÖÇÜRIP AL-a basyň.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Sohu Täzelikler</string>
-    <string name="zeropage_toutiao_title">Maglumat ekspresi</string>
 </resources>
