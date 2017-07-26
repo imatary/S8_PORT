@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="apps_grid_info">
-        <item>4|5|3|59|13|2|2|8.5|90|33|5</item>
-        <item>4|6|3|66|13|2|2|8|85|58|7</item>
-        <item>5|5|3|53|13|2|2|8.5|100|30|5</item>
-        <item>5|6|3|55|13|2|2|8|85|48|7</item>
+        <item>4|5|3|59|15|2|2|8.5|90|33|5</item>
+        <item>4|6|3|66|14|2|2|8|85|58|7</item>
+        <item>5|5|3|53|15|2|2|8.5|100|30|5</item>
+        <item>5|6|3|55|14|2|2|8|85|48|7</item>
     </string-array>
     <string-array name="folder_grid_info">
         <item>4|4|3|52|14|8|2|50|208|181</item>
