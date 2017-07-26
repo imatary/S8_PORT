@@ -568,7 +568,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0455
+    const v1, 0x7f0d0456
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1141,9 +1141,9 @@
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0205ee
+    const v4, 0x7f0205f6
 
-    const v5, 0x7f0f0304
+    const v5, 0x7f0f0361
 
     invoke-direct {v1, v2, v4, v5, v3}, Lcom/android/systemui/statusbar/policy/NetworkController$IconState;-><init>(ZIILandroid/content/Context;)V
 
@@ -2143,19 +2143,19 @@
 
     if-eqz v8, :cond_2
 
-    const v8, 0x7f0f06f4
+    const v8, 0x7f0f0763
 
     invoke-virtual {v3, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    const v8, 0x7f0f06f6
+    const v8, 0x7f0f0765
 
     invoke-virtual {v3, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const v1, 0x7f020656
+    const v1, 0x7f02065e
 
     :goto_1
     new-instance v8, Landroid/app/Notification$Builder;
@@ -2255,19 +2255,19 @@
 
     if-eqz v8, :cond_3
 
-    const v8, 0x7f0f06f3
+    const v8, 0x7f0f0762
 
     invoke-virtual {v3, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    const v8, 0x7f0f06f5
+    const v8, 0x7f0f0764
 
     invoke-virtual {v3, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const v1, 0x7f020655
+    const v1, 0x7f02065d
 
     goto :goto_1
 
@@ -2282,36 +2282,36 @@
 
     if-eqz v8, :cond_4
 
-    const v8, 0x7f0f071b
+    const v8, 0x7f0f078a
 
     invoke-virtual {v3, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    const v8, 0x7f0f071c
+    const v8, 0x7f0f078b
 
     invoke-virtual {v3, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const v1, 0x7f020655
+    const v1, 0x7f02065d
 
     goto/16 :goto_1
 
     :cond_4
-    const v8, 0x7f0f06f2
+    const v8, 0x7f0f0761
 
     invoke-virtual {v3, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    const v8, 0x7f0f06f5
+    const v8, 0x7f0f0764
 
     invoke-virtual {v3, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const v1, 0x7f020655
+    const v1, 0x7f02065d
 
     goto/16 :goto_1
 
@@ -2332,7 +2332,7 @@
 
     iget-object v9, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f0f071d
+    const v10, 0x7f0f078c
 
     invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2429,9 +2429,9 @@
 
     iget-object v4, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0205ee
+    const v5, 0x7f0205f6
 
-    const v6, 0x7f0f0304
+    const v6, 0x7f0f0361
 
     invoke-direct {v2, v3, v5, v6, v4}, Lcom/android/systemui/statusbar/policy/NetworkController$IconState;-><init>(ZIILandroid/content/Context;)V
 
@@ -2719,9 +2719,9 @@
 
     move-object/from16 v28, v0
 
-    const v29, 0x7f0205ee
+    const v29, 0x7f0205f6
 
-    const v30, 0x7f0f0304
+    const v30, 0x7f0f0361
 
     move-object/from16 v0, v27
 
@@ -4504,7 +4504,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0455
+    const v2, 0x7f0d0456
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -4566,6 +4566,40 @@
     iput-boolean v1, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mIsRtoL:Z
 
     goto :goto_0
+.end method
+
+.method public onEmergencyModeChanged()V
+    .locals 3
+
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mMobileSignalControllers:Ljava/util/Map;
+
+    invoke-interface {v2}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/systemui/statusbar/policy/MobileSignalController;
+
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->onEmergencyModeChanged()V
+
+    goto :goto_0
+
+    :cond_0
+    return-void
 .end method
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
@@ -5451,11 +5485,11 @@
 
     if-eqz v9, :cond_a
 
-    const v6, 0x7f020646
+    const v6, 0x7f02064e
 
     if-eqz v8, :cond_8
 
-    const v4, 0x7f020647
+    const v4, 0x7f02064f
 
     :goto_5
     if-eqz v3, :cond_9
@@ -5468,7 +5502,7 @@
     :goto_6
     packed-switch v0, :pswitch_data_0
 
-    const v1, 0x7f02064b
+    const v1, 0x7f020653
 
     :cond_7
     :goto_7
@@ -5481,7 +5515,7 @@
     goto :goto_4
 
     :cond_8
-    const v4, 0x7f020648
+    const v4, 0x7f020650
 
     goto :goto_5
 
@@ -5493,17 +5527,17 @@
     goto :goto_6
 
     :pswitch_0
-    const v1, 0x7f020649
+    const v1, 0x7f020651
 
     goto :goto_7
 
     :pswitch_1
-    const v1, 0x7f02064c
+    const v1, 0x7f020654
 
     goto :goto_7
 
     :pswitch_2
-    const v1, 0x7f02064a
+    const v1, 0x7f020652
 
     goto :goto_7
 
@@ -5520,28 +5554,28 @@
 
     if-eqz v8, :cond_b
 
-    const v6, 0x7f02064d
+    const v6, 0x7f020655
 
     or-int v0, v2, v7
 
     packed-switch v0, :pswitch_data_1
 
-    const v1, 0x7f020650
+    const v1, 0x7f020658
 
     goto :goto_7
 
     :pswitch_3
-    const v1, 0x7f02064e
+    const v1, 0x7f020656
 
     goto :goto_7
 
     :pswitch_4
-    const v1, 0x7f020651
+    const v1, 0x7f020659
 
     goto :goto_7
 
     :pswitch_5
-    const v1, 0x7f02064f
+    const v1, 0x7f020657
 
     goto :goto_7
 
@@ -5553,11 +5587,11 @@
     return-void
 
     :cond_c
-    const v6, 0x7f020654
+    const v6, 0x7f02065c
 
     if-eqz v8, :cond_e
 
-    const v4, 0x7f020652
+    const v4, 0x7f02065a
 
     :goto_8
     if-eqz v3, :cond_f
@@ -5570,12 +5604,12 @@
     :goto_9
     packed-switch v0, :pswitch_data_2
 
-    const v1, 0x7f02070a
+    const v1, 0x7f020712
 
     goto :goto_7
 
     :cond_e
-    const v4, 0x7f020653
+    const v4, 0x7f02065b
 
     goto :goto_8
 
@@ -5587,17 +5621,17 @@
     goto :goto_9
 
     :pswitch_6
-    const v1, 0x7f0206fc
+    const v1, 0x7f020704
 
     goto :goto_7
 
     :pswitch_7
-    const v1, 0x7f020711
+    const v1, 0x7f020719
 
     goto :goto_7
 
     :pswitch_8
-    const v1, 0x7f020704
+    const v1, 0x7f02070c
 
     goto :goto_7
 
@@ -6117,7 +6151,7 @@
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0f06fa
+    const v4, 0x7f0f0769
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6446,7 +6480,7 @@
 
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0f06fa
+    const v6, 0x7f0f0769
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

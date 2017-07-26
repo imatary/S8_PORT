@@ -61,9 +61,9 @@
 .method public setColor(Landroid/content/Context;Lcom/android/systemui/qs/QSTile$State;Landroid/graphics/drawable/Drawable;)Z
     .locals 8
 
-    const v7, 0x7f0b0100
+    const v7, 0x7f0b0101
 
-    const v6, 0x7f0b00ff
+    const v6, 0x7f0b0100
 
     if-eqz p3, :cond_2
 

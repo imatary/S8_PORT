@@ -435,7 +435,7 @@
 
     invoke-direct {p0}, Lcom/android/systemui/BatteryMeterDrawable;->updateShowPercent()V
 
-    const v6, 0x7f0f04b3
+    const v6, 0x7f0f0510
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -655,7 +655,7 @@
 
     invoke-virtual {v6, v7}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    const v6, 0x7f0b0096
+    const v6, 0x7f0b0097
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -673,7 +673,7 @@
 
     iget-object v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mBoltPaint:Landroid/graphics/Paint;
 
-    const v7, 0x7f0b0097
+    const v7, 0x7f0b0098
 
     invoke-virtual {p1, v7}, Landroid/content/Context;->getColor(I)I
 
@@ -701,7 +701,7 @@
 
     iput-object v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mPlusPoints:[F
 
-    const v6, 0x7f0b00e9
+    const v6, 0x7f0b00ea
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -709,7 +709,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mDarkModeBackgroundColor:I
 
-    const v6, 0x7f0b00ea
+    const v6, 0x7f0b00eb
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -717,7 +717,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mDarkModeFillColor:I
 
-    const v6, 0x7f0b00ec
+    const v6, 0x7f0b00ed
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -725,7 +725,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mLightModeBackgroundColor:I
 
-    const v6, 0x7f0b00ed
+    const v6, 0x7f0b00ee
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -733,7 +733,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mLightModeFillColor:I
 
-    const v6, 0x7f0b0099
+    const v6, 0x7f0b009a
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -741,7 +741,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mDarkModeBackgroundColor:I
 
-    const v6, 0x7f0b009a
+    const v6, 0x7f0b009b
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -749,7 +749,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mLightModeBackgroundColor:I
 
-    const v6, 0x7f0b0097
+    const v6, 0x7f0b0098
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -757,7 +757,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mLightModeBoltColor:I
 
-    const v6, 0x7f0b0098
+    const v6, 0x7f0b0099
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -775,7 +775,7 @@
 
     iget-object v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mPowerSupplyingPaint:Landroid/graphics/Paint;
 
-    const v7, 0x7f0b009b
+    const v7, 0x7f0b009c
 
     invoke-virtual {p1, v7}, Landroid/content/Context;->getColor(I)I
 
@@ -789,7 +789,7 @@
 
     iput-object v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mPowerSupplyingPoints:[F
 
-    const v6, 0x7f0b009b
+    const v6, 0x7f0b009c
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -797,7 +797,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mLightModePowerSupplyingColor:I
 
-    const v6, 0x7f0b009c
+    const v6, 0x7f0b009d
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -817,7 +817,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d064e
+    const v7, 0x7f0d0662
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -829,7 +829,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d064f
+    const v7, 0x7f0d0663
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -838,7 +838,7 @@
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mIntrinsicHeight:I
 
     :goto_0
-    const v6, 0x7f0b0184
+    const v6, 0x7f0b0187
 
     const/4 v7, 0x0
 
@@ -848,7 +848,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mBatteryFrameLightColor:I
 
-    const v6, 0x7f0b0183
+    const v6, 0x7f0b0186
 
     const/4 v7, 0x0
 
@@ -862,7 +862,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mBatteryLevelColor:I
 
-    const v6, 0x7f0b0186
+    const v6, 0x7f0b0189
 
     const/4 v7, 0x0
 
@@ -872,7 +872,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mBatteryLevelBackgroundLightColor:I
 
-    const v6, 0x7f0b0185
+    const v6, 0x7f0b0188
 
     const/4 v7, 0x0
 
@@ -882,7 +882,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mBatteryLevelBackgroundDarkColor:I
 
-    const v6, 0x7f0b0188
+    const v6, 0x7f0b018b
 
     const/4 v7, 0x0
 
@@ -892,7 +892,7 @@
 
     iput v6, p0, Lcom/android/systemui/BatteryMeterDrawable;->mBatteryLightningBoltLightColor:I
 
-    const v6, 0x7f0b0187
+    const v6, 0x7f0b018a
 
     const/4 v7, 0x0
 
@@ -1060,7 +1060,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d01f7
+    const v7, 0x7f0d01f8
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1072,7 +1072,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d01f6
+    const v7, 0x7f0d01f7
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1087,7 +1087,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d0349
+    const v7, 0x7f0d034a
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1099,7 +1099,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d0348
+    const v7, 0x7f0d0349
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1782,7 +1782,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0205f3
+    const v8, 0x7f0205fb
 
     const/4 v9, 0x0
 
@@ -2188,7 +2188,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0205f4
+    const v8, 0x7f0205fc
 
     const/4 v9, 0x0
 
@@ -4381,7 +4381,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d064e
+    const v1, 0x7f0d0662
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -4395,7 +4395,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d064f
+    const v1, 0x7f0d0663
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -4419,7 +4419,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01f7
+    const v1, 0x7f0d01f8
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -4433,7 +4433,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01f6
+    const v1, 0x7f0d01f7
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -4493,7 +4493,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d047f
+    const v3, 0x7f0d0480
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getFloat(I)F
 

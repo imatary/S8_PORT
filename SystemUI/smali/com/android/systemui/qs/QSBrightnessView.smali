@@ -90,7 +90,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f040173
+    const v1, 0x7f040177
 
     invoke-virtual {v0, v1, p0, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -98,7 +98,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/qs/QSBrightnessView;->QSBarItemView:Landroid/view/View;
 
-    const v0, 0x7f1303d6
+    const v0, 0x7f1303e2
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/QSBrightnessView;->findViewById(I)Landroid/view/View;
 
@@ -108,7 +108,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/qs/QSBrightnessView;->mIcon:Landroid/widget/ImageView;
 
-    const v0, 0x7f1303d7
+    const v0, 0x7f1303e3
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/QSBrightnessView;->findViewById(I)Landroid/view/View;
 
@@ -152,7 +152,7 @@
 
     invoke-virtual {v0, p0, v1}, Lcom/android/systemui/tuner/TunerService;->addTunable(Lcom/android/systemui/tuner/TunerService$Tunable;[Ljava/lang/String;)V
 
-    const v0, 0x7f130450
+    const v0, 0x7f13045c
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/QSBrightnessView;->findViewById(I)Landroid/view/View;
 
@@ -174,7 +174,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/settings/BrightnessDetail;->setCallback(Lcom/android/systemui/settings/BrightnessDetail$Callback;)V
 
-    const v0, 0x7f130451
+    const v0, 0x7f13045d
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/QSBrightnessView;->findViewById(I)Landroid/view/View;
 
@@ -288,7 +288,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d03f1
+    const v1, 0x7f0d03f2
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -661,7 +661,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1303d7
+    const v2, 0x7f1303e3
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -681,7 +681,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f130451
+    const v2, 0x7f13045d
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
