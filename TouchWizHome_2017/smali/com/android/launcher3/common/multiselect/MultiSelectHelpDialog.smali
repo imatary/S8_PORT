@@ -33,8 +33,6 @@
 
 .field private mPivotX:I
 
-.field private mShrinkFactor:F
-
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
@@ -83,10 +81,6 @@
     iput-boolean v1, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsTopPicker:Z
 
     iput v1, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mPivotX:I
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    iput v0, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mShrinkFactor:F
 
     check-cast p1, Lcom/android/launcher3/Launcher;
 
@@ -303,986 +297,6 @@
     goto :goto_3
 .end method
 
-.method private layout(Landroid/view/View;)Z
-    .locals 34
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v22
-
-    invoke-virtual/range {v22 .. v22}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    move-result-object v29
-
-    move-object/from16 v0, v29
-
-    iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
-
-    move/from16 v26, v0
-
-    const v29, 0x7f0a0131
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v20
-
-    const v29, 0x7f0a0130
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v18
-
-    const v29, 0x7f0a0134
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v7
-
-    const v29, 0x7f0a00ab
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v6
-
-    const v29, 0x7f0a0135
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v8
-
-    const v29, 0x7f0a002f
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v16
-
-    const v29, 0x7f0a0138
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v24
-
-    const v29, 0x7f1000ae
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->findViewById(I)Landroid/view/View;
-
-    move-result-object v19
-
-    const v29, 0x7f1000b2
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->findViewById(I)Landroid/view/View;
-
-    move-result-object v17
-
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->isTablet()Z
-
-    move-result v29
-
-    if-eqz v29, :cond_1
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->isHomeStage()Z
-
-    move-result v29
-
-    if-eqz v29, :cond_1
-
-    invoke-virtual/range {v22 .. v22}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v29
-
-    move-object/from16 v0, v29
-
-    iget v0, v0, Landroid/content/res/Configuration;->orientation:I
-
-    move/from16 v29, v0
-
-    const/16 v30, 0x2
-
-    move/from16 v0, v29
-
-    move/from16 v1, v30
-
-    if-ne v0, v1, :cond_1
-
-    const v29, 0x7f0f000e
-
-    const/16 v30, 0x1
-
-    const/16 v31, 0x1
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v29
-
-    move/from16 v2, v30
-
-    move/from16 v3, v31
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/content/res/Resources;->getFraction(III)F
-
-    move-result v29
-
-    :goto_0
-    move/from16 v0, v29
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mShrinkFactor:F
-
-    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
-
-    move-result-object v14
-
-    check-cast v14, Lcom/android/launcher3/common/base/item/ItemInfo;
-
-    if-eqz v14, :cond_2
-
-    iget-wide v0, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
-
-    move-wide/from16 v30, v0
-
-    const-wide/16 v32, -0x65
-
-    cmp-long v29, v30, v32
-
-    if-nez v29, :cond_2
-
-    const/16 v29, 0x1
-
-    :goto_1
-    move/from16 v0, v29
-
-    move-object/from16 v1, p0
-
-    iput-boolean v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsHotseat:Z
-
-    move-object/from16 v0, p0
-
-    iget-boolean v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsHotseat:Z
-
-    move/from16 v29, v0
-
-    if-eqz v29, :cond_3
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
-
-    move-result-object v29
-
-    move-object/from16 v0, v29
-
-    iget-object v11, v0, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->hotseatGridIcon:Lcom/android/launcher3/common/deviceprofile/GridIconInfo;
-
-    :goto_2
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->isHomeStage()Z
-
-    move-result v29
-
-    if-eqz v29, :cond_4
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
-
-    move-result-object v29
-
-    move-object/from16 v0, v29
-
-    iget-object v12, v0, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
-
-    :goto_3
-    if-eqz v11, :cond_6
-
-    invoke-virtual {v11}, Lcom/android/launcher3/common/deviceprofile/GridIconInfo;->getIconSize()I
-
-    move-result v13
-
-    :goto_4
-    const/16 v29, 0x2
-
-    move/from16 v0, v29
-
-    new-array v4, v0, [I
-
-    const/16 v29, 0x0
-
-    move-object/from16 v0, p1
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationY(F)V
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v0, v4}, Landroid/view/View;->getLocationOnScreen([I)V
-
-    const/16 v29, 0x0
-
-    aget v29, v4, v29
-
-    if-ltz v29, :cond_0
-
-    const/16 v29, 0x0
-
-    aget v29, v4, v29
-
-    move/from16 v0, v29
-
-    move/from16 v1, v26
-
-    if-le v0, v1, :cond_7
-
-    :cond_0
-    const-string v29, "MultiSelectHelpDialog"
-
-    const-string v30, "The help bubble does not exist on current screen"
-
-    invoke-static/range {v29 .. v30}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/16 v29, 0x0
-
-    :goto_5
-    return v29
-
-    :cond_1
-    const/high16 v29, 0x3f800000    # 1.0f
-
-    goto/16 :goto_0
-
-    :cond_2
-    const/16 v29, 0x0
-
-    goto :goto_1
-
-    :cond_3
-    const/4 v11, 0x0
-
-    goto :goto_2
-
-    :cond_4
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->isAppsStage()Z
-
-    move-result v29
-
-    if-eqz v29, :cond_5
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
-
-    move-result-object v29
-
-    move-object/from16 v0, v29
-
-    iget-object v12, v0, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->appsGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
-
-    goto :goto_3
-
-    :cond_5
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
-
-    move-result-object v29
-
-    move-object/from16 v0, v29
-
-    iget-object v12, v0, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->folderGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
-
-    goto :goto_3
-
-    :cond_6
-    invoke-virtual {v12}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getIconSize()I
-
-    move-result v13
-
-    goto :goto_4
-
-    :cond_7
-    const/16 v29, 0x0
-
-    aget v30, v4, v29
-
-    move/from16 v0, v30
-
-    int-to-float v0, v0
-
-    move/from16 v30, v0
-
-    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getWidth()I
-
-    move-result v31
-
-    move/from16 v0, v31
-
-    int-to-float v0, v0
-
-    move/from16 v31, v0
-
-    move-object/from16 v0, p0
-
-    iget v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mShrinkFactor:F
-
-    move/from16 v32, v0
-
-    mul-float v31, v31, v32
-
-    int-to-float v0, v13
-
-    move/from16 v32, v0
-
-    sub-float v31, v31, v32
-
-    const/high16 v32, 0x40000000    # 2.0f
-
-    div-float v31, v31, v32
-
-    add-float v30, v30, v31
-
-    move/from16 v0, v30
-
-    float-to-int v0, v0
-
-    move/from16 v30, v0
-
-    aput v30, v4, v29
-
-    const/16 v30, 0x1
-
-    aget v31, v4, v30
-
-    if-eqz v11, :cond_c
-
-    invoke-virtual {v11}, Lcom/android/launcher3/common/deviceprofile/GridIconInfo;->getContentTop()I
-
-    move-result v29
-
-    :goto_6
-    add-int v29, v29, v31
-
-    aput v29, v4, v30
-
-    const/16 v29, 0x0
-
-    const/16 v30, 0x0
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    move/from16 v2, v30
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->measure(II)V
-
-    mul-int/lit8 v29, v6, 0x2
-
-    sub-int v15, v26, v29
-
-    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->getMeasuredWidth()I
-
-    move-result v29
-
-    move/from16 v0, v29
-
-    if-lt v0, v15, :cond_8
-
-    const v29, 0x7f1000b0
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->findViewById(I)Landroid/view/View;
-
-    move-result-object v25
-
-    check-cast v25, Landroid/widget/TextView;
-
-    invoke-virtual/range {v25 .. v25}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v29
-
-    sub-int v30, v15, v8
-
-    const v31, 0x7f0a0133
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v31
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v31
-
-    sub-int v30, v30, v31
-
-    move/from16 v0, v30
-
-    move-object/from16 v1, v29
-
-    iput v0, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
-
-    const/16 v29, 0x0
-
-    const/16 v30, 0x0
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    move/from16 v2, v30
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->measure(II)V
-
-    :cond_8
-    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->getMeasuredWidth()I
-
-    move-result v9
-
-    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->getMeasuredHeight()I
-
-    move-result v5
-
-    const/16 v29, 0x1
-
-    aget v29, v4, v29
-
-    move/from16 v0, v29
-
-    int-to-float v0, v0
-
-    move/from16 v23, v0
-
-    const/16 v29, 0x0
-
-    aget v29, v4, v29
-
-    div-int/lit8 v30, v13, 0x2
-
-    add-int v29, v29, v30
-
-    move/from16 v0, v29
-
-    int-to-float v0, v0
-
-    move/from16 v29, v0
-
-    int-to-float v0, v9
-
-    move/from16 v30, v0
-
-    const/high16 v31, 0x40000000    # 2.0f
-
-    div-float v30, v30, v31
-
-    sub-float v27, v29, v30
-
-    int-to-float v0, v6
-
-    move/from16 v29, v0
-
-    cmpg-float v29, v27, v29
-
-    if-gez v29, :cond_d
-
-    int-to-float v0, v6
-
-    move/from16 v27, v0
-
-    :cond_9
-    :goto_7
-    const/16 v29, 0x0
-
-    aget v29, v4, v29
-
-    div-int/lit8 v30, v13, 0x2
-
-    add-int v29, v29, v30
-
-    div-int/lit8 v30, v20, 0x2
-
-    sub-int v29, v29, v30
-
-    move/from16 v0, v29
-
-    int-to-float v0, v0
-
-    move/from16 v29, v0
-
-    sub-float v29, v29, v27
-
-    move/from16 v0, v29
-
-    float-to-int v0, v0
-
-    move/from16 v21, v0
-
-    div-int/lit8 v29, v20, 0x2
-
-    add-int v29, v29, v21
-
-    move/from16 v0, v29
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mPivotX:I
-
-    sget-boolean v29, Lcom/android/launcher3/Utilities;->sIsRtl:Z
-
-    if-eqz v29, :cond_a
-
-    sub-int v29, v9, v20
-
-    move/from16 v0, v29
-
-    neg-int v0, v0
-
-    move/from16 v29, v0
-
-    add-int v21, v21, v29
-
-    sub-int v29, v26, v9
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setLeft(I)V
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v26
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setRight(I)V
-
-    :cond_a
-    move-object/from16 v0, p0
-
-    move/from16 v1, v27
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setX(F)V
-
-    const/16 v29, 0x0
-
-    move/from16 v0, v29
-
-    move-object/from16 v1, p0
-
-    iput-boolean v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsTopPicker:Z
-
-    const/16 v28, 0x0
-
-    move/from16 v0, v16
-
-    int-to-float v0, v0
-
-    move/from16 v29, v0
-
-    sub-float v29, v23, v29
-
-    invoke-virtual {v12}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getPageTop()I
-
-    move-result v30
-
-    move/from16 v0, v30
-
-    int-to-float v0, v0
-
-    move/from16 v30, v0
-
-    cmpg-float v29, v29, v30
-
-    if-gtz v29, :cond_e
-
-    int-to-float v0, v13
-
-    move/from16 v29, v0
-
-    add-float v29, v29, v23
-
-    int-to-float v0, v7
-
-    move/from16 v30, v0
-
-    add-float v29, v29, v30
-
-    move/from16 v0, v18
-
-    int-to-float v0, v0
-
-    move/from16 v30, v0
-
-    add-float v29, v29, v30
-
-    move/from16 v0, v29
-
-    float-to-int v0, v0
-
-    move/from16 v28, v0
-
-    const/16 v29, 0x1
-
-    move/from16 v0, v29
-
-    move-object/from16 v1, p0
-
-    iput-boolean v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsTopPicker:Z
-
-    :goto_8
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportMultiSelectSlideVI()Z
-
-    move-result v29
-
-    if-eqz v29, :cond_f
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->isHomeStage()Z
-
-    move-result v29
-
-    if-eqz v29, :cond_f
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->isFolderStage()Z
-
-    move-result v29
-
-    if-nez v29, :cond_f
-
-    :goto_9
-    add-int v29, v28, v24
-
-    move/from16 v0, v29
-
-    int-to-float v0, v0
-
-    move/from16 v29, v0
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setY(F)V
-
-    move/from16 v0, v21
-
-    int-to-float v0, v0
-
-    move/from16 v29, v0
-
-    move-object/from16 v0, v17
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationX(F)V
-
-    move/from16 v0, v21
-
-    int-to-float v0, v0
-
-    move/from16 v29, v0
-
-    move-object/from16 v0, v19
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationX(F)V
-
-    move-object/from16 v0, p0
-
-    iget-boolean v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsTopPicker:Z
-
-    move/from16 v29, v0
-
-    if-eqz v29, :cond_10
-
-    const/16 v29, 0x0
-
-    move-object/from16 v0, v19
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    const/16 v29, 0x8
-
-    move-object/from16 v0, v17
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    :goto_a
-    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->getX()F
-
-    move-result v29
-
-    move/from16 v0, v29
-
-    float-to-int v0, v0
-
-    move/from16 v29, v0
-
-    move/from16 v0, v29
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mCurX:I
-
-    move/from16 v0, v29
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mInitX:I
-
-    const/16 v29, 0x0
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setScaleX(F)V
-
-    const/16 v29, 0x0
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setScaleY(F)V
-
-    const/16 v29, 0x0
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setAlpha(F)V
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->isFolderStage()Z
-
-    move-result v29
-
-    if-eqz v29, :cond_b
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    move-object/from16 v29, v0
-
-    invoke-virtual/range {v29 .. v29}, Lcom/android/launcher3/Launcher;->getOpenFolderView()Lcom/android/launcher3/folder/view/FolderView;
-
-    move-result-object v10
-
-    if-eqz v10, :cond_b
-
-    invoke-virtual {v10}, Lcom/android/launcher3/folder/view/FolderView;->getContent()Lcom/android/launcher3/folder/view/FolderPagedView;
-
-    move-result-object v29
-
-    if-eqz v29, :cond_b
-
-    invoke-virtual {v10}, Lcom/android/launcher3/folder/view/FolderView;->getContent()Lcom/android/launcher3/folder/view/FolderPagedView;
-
-    move-result-object v29
-
-    move-object/from16 v0, v29
-
-    move-object/from16 v1, p0
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/folder/view/FolderPagedView;->setPageScrollListener(Lcom/android/launcher3/common/base/view/PagedView$PageScrollListener;)V
-
-    :cond_b
-    const/16 v29, 0x1
-
-    goto/16 :goto_5
-
-    :cond_c
-    invoke-virtual {v12}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getContentTop()I
-
-    move-result v29
-
-    goto/16 :goto_6
-
-    :cond_d
-    int-to-float v0, v9
-
-    move/from16 v29, v0
-
-    add-float v29, v29, v27
-
-    sub-int v30, v26, v6
-
-    move/from16 v0, v30
-
-    int-to-float v0, v0
-
-    move/from16 v30, v0
-
-    cmpl-float v29, v29, v30
-
-    if-lez v29, :cond_9
-
-    sub-int v29, v26, v9
-
-    sub-int v29, v29, v6
-
-    move/from16 v0, v29
-
-    int-to-float v0, v0
-
-    move/from16 v27, v0
-
-    goto/16 :goto_7
-
-    :cond_e
-    int-to-float v0, v5
-
-    move/from16 v29, v0
-
-    sub-float v29, v23, v29
-
-    int-to-float v0, v7
-
-    move/from16 v30, v0
-
-    sub-float v29, v29, v30
-
-    move/from16 v0, v18
-
-    int-to-float v0, v0
-
-    move/from16 v30, v0
-
-    sub-float v29, v29, v30
-
-    move/from16 v0, v29
-
-    float-to-int v0, v0
-
-    move/from16 v28, v0
-
-    goto/16 :goto_8
-
-    :cond_f
-    const/16 v24, 0x0
-
-    goto/16 :goto_9
-
-    :cond_10
-    const/16 v29, 0x8
-
-    move-object/from16 v0, v19
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    const/16 v29, 0x0
-
-    move-object/from16 v0, v17
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    goto/16 :goto_a
-.end method
-
 
 # virtual methods
 .method public hide(Z)V
@@ -1341,12 +355,807 @@
     goto :goto_0
 .end method
 
+.method public layout(Landroid/view/View;)V
+    .locals 32
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    move-object/from16 v28, v0
+
+    invoke-virtual/range {v28 .. v28}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v22
+
+    invoke-virtual/range {v22 .. v22}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v28
+
+    move-object/from16 v0, v28
+
+    iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    move/from16 v25, v0
+
+    const v28, 0x7f09010f
+
+    move-object/from16 v0, v22
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v20
+
+    const v28, 0x7f09010e
+
+    move-object/from16 v0, v22
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v18
+
+    const v28, 0x7f090113
+
+    move-object/from16 v0, v22
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v7
+
+    const v28, 0x7f090112
+
+    move-object/from16 v0, v22
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v6
+
+    const v28, 0x7f090114
+
+    move-object/from16 v0, v22
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v8
+
+    const v28, 0x7f09002d
+
+    move-object/from16 v0, v22
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v16
+
+    const v28, 0x7f0f00b9
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->findViewById(I)Landroid/view/View;
+
+    move-result-object v19
+
+    const v28, 0x7f0f00bd
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->findViewById(I)Landroid/view/View;
+
+    move-result-object v17
+
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v14
+
+    check-cast v14, Lcom/android/launcher3/common/base/item/ItemInfo;
+
+    if-eqz v14, :cond_4
+
+    iget-wide v0, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
+
+    move-wide/from16 v28, v0
+
+    const-wide/16 v30, -0x65
+
+    cmp-long v28, v28, v30
+
+    if-nez v28, :cond_4
+
+    const/16 v28, 0x1
+
+    :goto_0
+    move/from16 v0, v28
+
+    move-object/from16 v1, p0
+
+    iput-boolean v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsHotseat:Z
+
+    move-object/from16 v0, p0
+
+    iget-boolean v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsHotseat:Z
+
+    move/from16 v28, v0
+
+    if-eqz v28, :cond_5
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    move-object/from16 v28, v0
+
+    invoke-virtual/range {v28 .. v28}, Lcom/android/launcher3/Launcher;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
+
+    move-result-object v28
+
+    move-object/from16 v0, v28
+
+    iget-object v11, v0, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->hotseatGridIcon:Lcom/android/launcher3/common/deviceprofile/GridIconInfo;
+
+    :goto_1
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    move-object/from16 v28, v0
+
+    invoke-virtual/range {v28 .. v28}, Lcom/android/launcher3/Launcher;->isHomeStage()Z
+
+    move-result v28
+
+    if-eqz v28, :cond_6
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    move-object/from16 v28, v0
+
+    invoke-virtual/range {v28 .. v28}, Lcom/android/launcher3/Launcher;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
+
+    move-result-object v28
+
+    move-object/from16 v0, v28
+
+    iget-object v12, v0, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
+
+    :goto_2
+    if-eqz v11, :cond_8
+
+    invoke-virtual {v11}, Lcom/android/launcher3/common/deviceprofile/GridIconInfo;->getIconSize()I
+
+    move-result v13
+
+    :goto_3
+    const/16 v28, 0x2
+
+    move/from16 v0, v28
+
+    new-array v4, v0, [I
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v0, v4}, Landroid/view/View;->getLocationOnScreen([I)V
+
+    const/16 v28, 0x0
+
+    aget v29, v4, v28
+
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getWidth()I
+
+    move-result v30
+
+    sub-int v30, v30, v13
+
+    div-int/lit8 v30, v30, 0x2
+
+    add-int v29, v29, v30
+
+    aput v29, v4, v28
+
+    const/16 v29, 0x1
+
+    aget v30, v4, v29
+
+    if-eqz v11, :cond_9
+
+    invoke-virtual {v11}, Lcom/android/launcher3/common/deviceprofile/GridIconInfo;->getContentTop()I
+
+    move-result v28
+
+    :goto_4
+    add-int v28, v28, v30
+
+    aput v28, v4, v29
+
+    const/16 v28, 0x0
+
+    const/16 v29, 0x0
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v28
+
+    move/from16 v2, v29
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->measure(II)V
+
+    mul-int/lit8 v28, v6, 0x2
+
+    sub-int v15, v25, v28
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->getMeasuredWidth()I
+
+    move-result v28
+
+    move/from16 v0, v28
+
+    if-lt v0, v15, :cond_0
+
+    const v28, 0x7f0f00bb
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->findViewById(I)Landroid/view/View;
+
+    move-result-object v24
+
+    check-cast v24, Landroid/widget/TextView;
+
+    invoke-virtual/range {v24 .. v24}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v28
+
+    sub-int v29, v15, v8
+
+    const v30, 0x7f090111
+
+    move-object/from16 v0, v22
+
+    move/from16 v1, v30
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v30
+
+    sub-int v29, v29, v30
+
+    move/from16 v0, v29
+
+    move-object/from16 v1, v28
+
+    iput v0, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
+
+    const/16 v28, 0x0
+
+    const/16 v29, 0x0
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v28
+
+    move/from16 v2, v29
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->measure(II)V
+
+    :cond_0
+    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->getMeasuredWidth()I
+
+    move-result v9
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->getMeasuredHeight()I
+
+    move-result v5
+
+    const/16 v28, 0x1
+
+    aget v28, v4, v28
+
+    move/from16 v0, v28
+
+    int-to-float v0, v0
+
+    move/from16 v23, v0
+
+    const/16 v28, 0x0
+
+    aget v28, v4, v28
+
+    div-int/lit8 v29, v13, 0x2
+
+    add-int v28, v28, v29
+
+    move/from16 v0, v28
+
+    int-to-float v0, v0
+
+    move/from16 v28, v0
+
+    int-to-float v0, v9
+
+    move/from16 v29, v0
+
+    const/high16 v30, 0x40000000    # 2.0f
+
+    div-float v29, v29, v30
+
+    sub-float v26, v28, v29
+
+    int-to-float v0, v6
+
+    move/from16 v28, v0
+
+    cmpg-float v28, v26, v28
+
+    if-gez v28, :cond_a
+
+    int-to-float v0, v6
+
+    move/from16 v26, v0
+
+    :cond_1
+    :goto_5
+    const/16 v28, 0x0
+
+    aget v28, v4, v28
+
+    div-int/lit8 v29, v13, 0x2
+
+    add-int v28, v28, v29
+
+    div-int/lit8 v29, v20, 0x2
+
+    sub-int v28, v28, v29
+
+    move/from16 v0, v28
+
+    int-to-float v0, v0
+
+    move/from16 v28, v0
+
+    sub-float v28, v28, v26
+
+    move/from16 v0, v28
+
+    float-to-int v0, v0
+
+    move/from16 v21, v0
+
+    div-int/lit8 v28, v20, 0x2
+
+    add-int v28, v28, v21
+
+    move/from16 v0, v28
+
+    move-object/from16 v1, p0
+
+    iput v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mPivotX:I
+
+    sget-boolean v28, Lcom/android/launcher3/Utilities;->sIsRtl:Z
+
+    if-eqz v28, :cond_2
+
+    sub-int v28, v9, v20
+
+    move/from16 v0, v28
+
+    neg-int v0, v0
+
+    move/from16 v28, v0
+
+    add-int v21, v21, v28
+
+    sub-int v28, v25, v9
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setLeft(I)V
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v25
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setRight(I)V
+
+    :cond_2
+    move-object/from16 v0, p0
+
+    move/from16 v1, v26
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setX(F)V
+
+    const/16 v28, 0x0
+
+    move/from16 v0, v28
+
+    move-object/from16 v1, p0
+
+    iput-boolean v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsTopPicker:Z
+
+    const/16 v27, 0x0
+
+    move/from16 v0, v16
+
+    int-to-float v0, v0
+
+    move/from16 v28, v0
+
+    sub-float v28, v23, v28
+
+    invoke-virtual {v12}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getPageTop()I
+
+    move-result v29
+
+    move/from16 v0, v29
+
+    int-to-float v0, v0
+
+    move/from16 v29, v0
+
+    cmpg-float v28, v28, v29
+
+    if-gtz v28, :cond_b
+
+    int-to-float v0, v13
+
+    move/from16 v28, v0
+
+    add-float v28, v28, v23
+
+    int-to-float v0, v7
+
+    move/from16 v29, v0
+
+    add-float v28, v28, v29
+
+    move/from16 v0, v18
+
+    int-to-float v0, v0
+
+    move/from16 v29, v0
+
+    add-float v28, v28, v29
+
+    move/from16 v0, v28
+
+    float-to-int v0, v0
+
+    move/from16 v27, v0
+
+    const/16 v28, 0x1
+
+    move/from16 v0, v28
+
+    move-object/from16 v1, p0
+
+    iput-boolean v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsTopPicker:Z
+
+    :goto_6
+    move/from16 v0, v27
+
+    int-to-float v0, v0
+
+    move/from16 v28, v0
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setY(F)V
+
+    move/from16 v0, v21
+
+    int-to-float v0, v0
+
+    move/from16 v28, v0
+
+    move-object/from16 v0, v17
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationX(F)V
+
+    move/from16 v0, v21
+
+    int-to-float v0, v0
+
+    move/from16 v28, v0
+
+    move-object/from16 v0, v19
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationX(F)V
+
+    move-object/from16 v0, p0
+
+    iget-boolean v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsTopPicker:Z
+
+    move/from16 v28, v0
+
+    if-eqz v28, :cond_c
+
+    const/16 v28, 0x0
+
+    move-object/from16 v0, v19
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    const/16 v28, 0x8
+
+    move-object/from16 v0, v17
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    :goto_7
+    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->getX()F
+
+    move-result v28
+
+    move/from16 v0, v28
+
+    float-to-int v0, v0
+
+    move/from16 v28, v0
+
+    move/from16 v0, v28
+
+    move-object/from16 v1, p0
+
+    iput v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mCurX:I
+
+    move/from16 v0, v28
+
+    move-object/from16 v1, p0
+
+    iput v0, v1, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mInitX:I
+
+    const/16 v28, 0x0
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setScaleX(F)V
+
+    const/16 v28, 0x0
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setScaleY(F)V
+
+    const/16 v28, 0x0
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->setAlpha(F)V
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    move-object/from16 v28, v0
+
+    invoke-virtual/range {v28 .. v28}, Lcom/android/launcher3/Launcher;->isFolderStage()Z
+
+    move-result v28
+
+    if-eqz v28, :cond_3
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    move-object/from16 v28, v0
+
+    invoke-virtual/range {v28 .. v28}, Lcom/android/launcher3/Launcher;->getOpenFolderView()Lcom/android/launcher3/folder/view/FolderView;
+
+    move-result-object v10
+
+    if-eqz v10, :cond_3
+
+    invoke-virtual {v10}, Lcom/android/launcher3/folder/view/FolderView;->getContent()Lcom/android/launcher3/folder/view/FolderPagedView;
+
+    move-result-object v28
+
+    if-eqz v28, :cond_3
+
+    invoke-virtual {v10}, Lcom/android/launcher3/folder/view/FolderView;->getContent()Lcom/android/launcher3/folder/view/FolderPagedView;
+
+    move-result-object v28
+
+    move-object/from16 v0, v28
+
+    move-object/from16 v1, p0
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/folder/view/FolderPagedView;->setPageScrollListener(Lcom/android/launcher3/common/base/view/PagedView$PageScrollListener;)V
+
+    :cond_3
+    return-void
+
+    :cond_4
+    const/16 v28, 0x0
+
+    goto/16 :goto_0
+
+    :cond_5
+    const/4 v11, 0x0
+
+    goto/16 :goto_1
+
+    :cond_6
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    move-object/from16 v28, v0
+
+    invoke-virtual/range {v28 .. v28}, Lcom/android/launcher3/Launcher;->isAppsStage()Z
+
+    move-result v28
+
+    if-eqz v28, :cond_7
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    move-object/from16 v28, v0
+
+    invoke-virtual/range {v28 .. v28}, Lcom/android/launcher3/Launcher;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
+
+    move-result-object v28
+
+    move-object/from16 v0, v28
+
+    iget-object v12, v0, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->appsGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
+
+    goto/16 :goto_2
+
+    :cond_7
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mLauncher:Lcom/android/launcher3/Launcher;
+
+    move-object/from16 v28, v0
+
+    invoke-virtual/range {v28 .. v28}, Lcom/android/launcher3/Launcher;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
+
+    move-result-object v28
+
+    move-object/from16 v0, v28
+
+    iget-object v12, v0, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->folderGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
+
+    goto/16 :goto_2
+
+    :cond_8
+    invoke-virtual {v12}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getIconSize()I
+
+    move-result v13
+
+    goto/16 :goto_3
+
+    :cond_9
+    invoke-virtual {v12}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getContentTop()I
+
+    move-result v28
+
+    goto/16 :goto_4
+
+    :cond_a
+    int-to-float v0, v9
+
+    move/from16 v28, v0
+
+    add-float v28, v28, v26
+
+    sub-int v29, v25, v6
+
+    move/from16 v0, v29
+
+    int-to-float v0, v0
+
+    move/from16 v29, v0
+
+    cmpl-float v28, v28, v29
+
+    if-lez v28, :cond_1
+
+    sub-int v28, v25, v9
+
+    sub-int v28, v28, v6
+
+    move/from16 v0, v28
+
+    int-to-float v0, v0
+
+    move/from16 v26, v0
+
+    goto/16 :goto_5
+
+    :cond_b
+    int-to-float v0, v5
+
+    move/from16 v28, v0
+
+    sub-float v28, v23, v28
+
+    int-to-float v0, v7
+
+    move/from16 v29, v0
+
+    sub-float v28, v28, v29
+
+    move/from16 v0, v18
+
+    int-to-float v0, v0
+
+    move/from16 v29, v0
+
+    sub-float v28, v28, v29
+
+    move/from16 v0, v28
+
+    float-to-int v0, v0
+
+    move/from16 v27, v0
+
+    goto/16 :goto_6
+
+    :cond_c
+    const/16 v28, 0x8
+
+    move-object/from16 v0, v19
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    const/16 v28, 0x0
+
+    move-object/from16 v0, v17
+
+    move/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    goto/16 :goto_7
+.end method
+
 .method protected onFinishInflate()V
     .locals 2
 
     invoke-super {p0}, Landroid/widget/LinearLayout;->onFinishInflate()V
 
-    const v0, 0x7f1000b1
+    const v0, 0x7f0f00bc
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->findViewById(I)Landroid/view/View;
 
@@ -1368,7 +1177,7 @@
 .end method
 
 .method public onPageChange(III)V
-    .locals 6
+    .locals 5
 
     iget-boolean v3, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsHotseat:Z
 
@@ -1433,21 +1242,11 @@
 
     iget v3, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mInitX:I
 
-    int-to-float v3, v3
+    add-int/2addr v3, v0
 
-    sub-int v4, v0, p2
+    sub-int/2addr v3, p2
 
-    sub-int/2addr v4, v1
-
-    int-to-float v4, v4
-
-    iget v5, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mShrinkFactor:F
-
-    mul-float/2addr v4, v5
-
-    add-float/2addr v3, v4
-
-    float-to-int v3, v3
+    sub-int/2addr v3, v1
 
     iput v3, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mCurX:I
 
@@ -1478,7 +1277,7 @@
 .end method
 
 .method public onPageScroll(IIIII)V
-    .locals 6
+    .locals 5
 
     iget-boolean v3, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mIsHotseat:Z
 
@@ -1522,19 +1321,9 @@
     :cond_2
     iget v3, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mCurX:I
 
-    int-to-float v3, v3
+    sub-int/2addr v3, p2
 
-    sub-int v4, p4, p2
-
-    int-to-float v4, v4
-
-    iget v5, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mShrinkFactor:F
-
-    mul-float/2addr v4, v5
-
-    add-float/2addr v3, v4
-
-    float-to-int v0, v3
+    add-int v0, v3, p4
 
     iget v3, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mInitPage:I
 
@@ -1642,16 +1431,11 @@
 
     iput v0, p0, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->mInitPage:I
 
-    invoke-direct {p0, p1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->layout(Landroid/view/View;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
+    invoke-virtual {p0, p1}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->layout(Landroid/view/View;)V
 
     const/4 v0, 0x1
 
     invoke-direct {p0, v0, p2}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->animateDialog(ZZ)V
 
-    :cond_1
     return-void
 .end method

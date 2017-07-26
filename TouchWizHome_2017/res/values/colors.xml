@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="about_color_description">#ff505050</color>
     <color name="all_apps_bg_color">#4d000000</color>
     <color name="all_apps_grid_section_text_color">#ff009688</color>
     <color name="all_apps_search_market_button_focused_bg_color">#ffdddddd</color>
@@ -26,7 +27,6 @@
     <color name="galaxyapps_btn_color">#40000000</color>
     <color name="galaxyapps_name_color">#fffafafa</color>
     <color name="galaxyapps_seller_color">#99fafafa</color>
-    <color name="home_mode_description_text_color">#ff505050</color>
     <color name="home_settings_easy_mode_tips_background">#ffebebeb</color>
     <color name="home_settings_easy_mode_tips_button_text_color">#ff499ebd</color>
     <color name="home_settings_easy_mode_tips_msg_text_color">#ff6b6f72</color>

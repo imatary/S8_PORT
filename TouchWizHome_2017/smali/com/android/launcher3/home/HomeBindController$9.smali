@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/HomeBindController;->bindUpdateContainer(ZLcom/android/launcher3/folder/FolderInfo;Lcom/android/launcher3/common/base/item/IconInfo;)V
+    value = Lcom/android/launcher3/home/HomeBindController;->finishBindingItems()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,24 +20,16 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/home/HomeBindController;
 
-.field final synthetic val$addToFolder:Z
-
-.field final synthetic val$folder:Lcom/android/launcher3/folder/FolderInfo;
-
-.field final synthetic val$item:Lcom/android/launcher3/common/base/item/IconInfo;
+.field final synthetic val$screenId:J
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/HomeBindController;ZLcom/android/launcher3/folder/FolderInfo;Lcom/android/launcher3/common/base/item/IconInfo;)V
+.method constructor <init>(Lcom/android/launcher3/home/HomeBindController;J)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/home/HomeBindController$9;->this$0:Lcom/android/launcher3/home/HomeBindController;
 
-    iput-boolean p2, p0, Lcom/android/launcher3/home/HomeBindController$9;->val$addToFolder:Z
-
-    iput-object p3, p0, Lcom/android/launcher3/home/HomeBindController$9;->val$folder:Lcom/android/launcher3/folder/FolderInfo;
-
-    iput-object p4, p0, Lcom/android/launcher3/home/HomeBindController$9;->val$item:Lcom/android/launcher3/common/base/item/IconInfo;
+    iput-wide p2, p0, Lcom/android/launcher3/home/HomeBindController$9;->val$screenId:J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,13 +43,13 @@
 
     iget-object v0, p0, Lcom/android/launcher3/home/HomeBindController$9;->this$0:Lcom/android/launcher3/home/HomeBindController;
 
-    iget-boolean v1, p0, Lcom/android/launcher3/home/HomeBindController$9;->val$addToFolder:Z
+    invoke-static {v0}, Lcom/android/launcher3/home/HomeBindController;->access$000(Lcom/android/launcher3/home/HomeBindController;)Lcom/android/launcher3/home/Workspace;
 
-    iget-object v2, p0, Lcom/android/launcher3/home/HomeBindController$9;->val$folder:Lcom/android/launcher3/folder/FolderInfo;
+    move-result-object v0
 
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeBindController$9;->val$item:Lcom/android/launcher3/common/base/item/IconInfo;
+    iget-wide v2, p0, Lcom/android/launcher3/home/HomeBindController$9;->val$screenId:J
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/launcher3/home/HomeBindController;->bindUpdateContainer(ZLcom/android/launcher3/folder/FolderInfo;Lcom/android/launcher3/common/base/item/IconInfo;)V
+    invoke-virtual {v0, v2, v3}, Lcom/android/launcher3/home/Workspace;->snapToScreenId(J)V
 
     return-void
 .end method

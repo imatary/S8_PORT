@@ -173,7 +173,7 @@
 .end method
 
 .method private addItemOnNewPage(Ljava/util/ArrayList;Lcom/android/launcher3/common/base/item/ItemInfo;Landroid/view/View;Z)V
-    .locals 34
+    .locals 32
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -253,7 +253,7 @@
 
     const/16 v19, 0x0
 
-    const/16 v24, 0x0
+    const/16 v23, 0x0
 
     if-eqz p2, :cond_1
 
@@ -301,7 +301,7 @@
 
     invoke-virtual {v6, v10, v11}, Lcom/android/launcher3/home/Workspace;->getPageIndexForScreenId(J)I
 
-    move-result v30
+    move-result v28
 
     new-instance v6, Landroid/os/Handler;
 
@@ -311,7 +311,7 @@
 
     move-object/from16 v0, p0
 
-    move/from16 v1, v30
+    move/from16 v1, v28
 
     invoke-direct {v7, v0, v1}, Lcom/android/launcher3/home/WorkspaceDragController$15;-><init>(Lcom/android/launcher3/home/WorkspaceDragController;I)V
 
@@ -324,24 +324,24 @@
     :cond_1
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result-object v33
+    move-result-object v31
 
     :goto_1
-    invoke-interface/range {v33 .. v33}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v6
 
-    if-eqz v6, :cond_d
+    if-eqz v6, :cond_c
 
-    invoke-interface/range {v33 .. v33}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface/range {v31 .. v31}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v27
+    move-result-object v26
 
-    check-cast v27, Lcom/android/launcher3/common/drag/DropTarget$DragObject;
+    check-cast v26, Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
-    const/16 v25, 0x0
+    const/16 v24, 0x0
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v26
 
     iget-object v0, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragInfo:Ljava/lang/Object;
 
@@ -349,22 +349,7 @@
 
     check-cast p2, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p2
-
-    invoke-direct {v0, v1}, Lcom/android/launcher3/home/WorkspaceDragController;->itemFromAppsController(Lcom/android/launcher3/common/base/item/ItemInfo;)Z
-
-    move-result v23
-
-    if-eqz p4, :cond_7
-
-    if-nez v23, :cond_7
-
-    const/16 v29, 0x1
-
-    :goto_2
-    move-object/from16 v0, v27
+    move-object/from16 v0, v26
 
     iget-object v6, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragSource:Lcom/android/launcher3/common/drag/DragSource;
 
@@ -376,39 +361,39 @@
 
     if-nez v6, :cond_2
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v26
 
     iget-object v6, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragSource:Lcom/android/launcher3/common/drag/DragSource;
 
     instance-of v6, v6, Lcom/android/launcher3/home/HotseatDragController;
 
-    if-eqz v6, :cond_9
+    if-eqz v6, :cond_8
 
     :cond_2
-    move-object/from16 v0, v27
+    move-object/from16 v0, v26
 
     iget-object v6, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragView:Lcom/android/launcher3/common/drag/DragView;
 
-    if-eqz v6, :cond_8
+    if-eqz v6, :cond_7
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v26
 
     iget-object v6, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragView:Lcom/android/launcher3/common/drag/DragView;
 
     invoke-virtual {v6}, Lcom/android/launcher3/common/drag/DragView;->getSourceView()Landroid/view/View;
 
-    move-result-object v31
+    move-result-object v29
 
-    :goto_3
-    if-eqz v25, :cond_3
+    :goto_2
+    if-eqz v24, :cond_3
 
     move-object/from16 v0, p2
 
-    move-object/from16 v1, v25
+    move-object/from16 v1, v24
 
     if-eq v0, v1, :cond_3
 
-    move-object/from16 p2, v25
+    move-object/from16 p2, v24
 
     :cond_3
     move-object/from16 v0, p0
@@ -439,11 +424,11 @@
 
     move-result-wide v10
 
-    move-object/from16 v0, v31
+    move-object/from16 v0, v29
 
     instance-of v6, v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    if-eqz v6, :cond_c
+    if-eqz v6, :cond_b
 
     move-object/from16 v0, p0
 
@@ -453,9 +438,9 @@
 
     invoke-virtual {v6, v7}, Lcom/android/launcher3/home/HomeController;->enterDragState(Z)V
 
-    move-object/from16 v24, v31
+    move-object/from16 v23, v29
 
-    check-cast v24, Lcom/android/launcher3/home/LauncherAppWidgetHostView;
+    check-cast v23, Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     move-object/from16 v0, p0
 
@@ -465,7 +450,7 @@
 
     iget-object v7, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mDropToLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v23
 
     invoke-virtual {v6, v0, v7}, Lcom/android/launcher3/home/HomeController;->canEnterResizeMode(Landroid/appwidget/AppWidgetHostView;Lcom/android/launcher3/common/base/view/CellLayout;)Z
 
@@ -480,21 +465,21 @@
 
     iget-object v6, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v23
 
     invoke-virtual {v6, v0}, Lcom/android/launcher3/home/HomeController;->removeHomeItem(Landroid/view/View;)V
 
     :cond_5
-    :goto_4
-    invoke-virtual/range {v31 .. v31}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    :goto_3
+    invoke-virtual/range {v29 .. v29}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-    move-result-object v26
+    move-result-object v25
 
-    check-cast v26, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;
+    check-cast v25, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;
 
     const/4 v6, 0x1
 
-    move-object/from16 v0, v26
+    move-object/from16 v0, v25
 
     iput-boolean v6, v0, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->isLockedToGrid:Z
 
@@ -621,23 +606,18 @@
 
     iget v15, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanY:I
 
-    move-object/from16 v7, v31
+    move-object/from16 v7, v29
 
     invoke-virtual/range {v6 .. v15}, Lcom/android/launcher3/home/HomeController;->addInScreen(Landroid/view/View;JJIIII)V
 
     goto/16 :goto_1
 
     :cond_7
-    const/16 v29, 0x0
+    move-object/from16 v29, p3
 
     goto/16 :goto_2
 
     :cond_8
-    move-object/from16 v31, p3
-
-    goto/16 :goto_3
-
-    :cond_9
     move-object/from16 v0, p2
 
     iget v6, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->itemType:I
@@ -681,9 +661,9 @@
 
     move-result v6
 
-    if-eqz v6, :cond_a
+    if-eqz v6, :cond_9
 
-    if-nez v29, :cond_a
+    if-nez p4, :cond_9
 
     move-object/from16 v6, p2
 
@@ -691,9 +671,9 @@
 
     invoke-virtual {v6}, Lcom/android/launcher3/common/base/item/IconInfo;->makeCloneInfo()Lcom/android/launcher3/common/base/item/IconInfo;
 
-    move-result-object v25
+    move-result-object v24
 
-    :goto_5
+    :goto_4
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
@@ -706,20 +686,20 @@
 
     iget-object v8, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mDropToLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
-    move-object/from16 v6, v25
+    move-object/from16 v6, v24
 
     check-cast v6, Lcom/android/launcher3/common/base/item/IconInfo;
 
     invoke-virtual {v7, v8, v6}, Lcom/android/launcher3/home/HomeBindController;->createShortcut(Landroid/view/ViewGroup;Lcom/android/launcher3/common/base/item/IconInfo;)Landroid/view/View;
 
-    move-result-object v31
+    move-result-object v29
 
-    goto/16 :goto_3
+    goto/16 :goto_2
 
-    :cond_a
-    move-object/from16 v25, p2
+    :cond_9
+    move-object/from16 v24, p2
 
-    goto :goto_5
+    goto :goto_4
 
     :pswitch_1
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
@@ -730,7 +710,7 @@
 
     move-result v6
 
-    if-eqz v6, :cond_b
+    if-eqz v6, :cond_a
 
     move-object/from16 v6, p2
 
@@ -738,9 +718,9 @@
 
     invoke-virtual {v6}, Lcom/android/launcher3/folder/FolderInfo;->makeCloneInfo()Lcom/android/launcher3/folder/FolderInfo;
 
-    move-result-object v25
+    move-result-object v24
 
-    :goto_6
+    :goto_5
     move-object/from16 v0, p0
 
     iget-object v12, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mLauncher:Lcom/android/launcher3/Launcher;
@@ -749,7 +729,7 @@
 
     iget-object v13, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mDropToLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
-    move-object/from16 v14, v25
+    move-object/from16 v14, v24
 
     check-cast v14, Lcom/android/launcher3/folder/FolderInfo;
 
@@ -769,17 +749,17 @@
 
     invoke-static/range {v12 .. v18}, Lcom/android/launcher3/folder/view/FolderIconView;->fromXml(Lcom/android/launcher3/Launcher;Landroid/view/ViewGroup;Lcom/android/launcher3/folder/FolderInfo;Lcom/android/launcher3/common/base/controller/ControllerBase;Landroid/view/View$OnClickListener;Landroid/view/View$OnLongClickListener;I)Lcom/android/launcher3/folder/view/FolderIconView;
 
-    move-result-object v31
+    move-result-object v29
 
-    goto/16 :goto_3
+    goto/16 :goto_2
+
+    :cond_a
+    move-object/from16 v24, p2
+
+    goto :goto_5
 
     :cond_b
-    move-object/from16 v25, p2
-
-    goto :goto_6
-
-    :cond_c
-    if-eqz v29, :cond_5
+    if-eqz p4, :cond_5
 
     move-object/from16 v0, p0
 
@@ -789,32 +769,32 @@
 
     invoke-virtual {v6, v0}, Lcom/android/launcher3/home/HomeController;->removeHomeItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_3
 
-    :cond_d
+    :cond_c
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
 
     invoke-virtual {v6, v10, v11}, Lcom/android/launcher3/home/Workspace;->getPageIndexForScreenId(J)I
 
-    move-result v30
+    move-result v28
 
     move/from16 v22, v19
 
-    move-object/from16 v32, v24
+    move-object/from16 v30, v23
 
-    new-instance v28, Lcom/android/launcher3/home/WorkspaceDragController$16;
+    new-instance v27, Lcom/android/launcher3/home/WorkspaceDragController$16;
 
-    move-object/from16 v0, v28
+    move-object/from16 v0, v27
 
     move-object/from16 v1, p0
 
-    move/from16 v2, v30
+    move/from16 v2, v28
 
     move/from16 v3, v22
 
-    move-object/from16 v4, v32
+    move-object/from16 v4, v30
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/android/launcher3/home/WorkspaceDragController$16;-><init>(Lcom/android/launcher3/home/WorkspaceDragController;IZLcom/android/launcher3/home/LauncherAppWidgetHostView;)V
 
@@ -822,9 +802,11 @@
 
     iget-object v6, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
 
-    move-object/from16 v0, v28
+    const/16 v7, 0xc8
 
-    invoke-virtual {v6, v0}, Lcom/android/launcher3/home/Workspace;->post(Ljava/lang/Runnable;)Z
+    move-object/from16 v0, v27
+
+    invoke-virtual {v6, v0, v7}, Lcom/android/launcher3/home/Workspace;->removeExtraEmptyScreenDelayed(Ljava/lang/Runnable;I)V
 
     goto/16 :goto_0
 
@@ -1559,7 +1541,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d0002
+    const v9, 0x7f0c0001
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1594,7 +1576,7 @@
 
     iget-object v8, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v9, 0x7f09002b
+    const v9, 0x7f08002e
 
     new-array v10, v7, [Ljava/lang/Object;
 
@@ -1621,7 +1603,7 @@
     :cond_3
     iget-object v8, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v9, 0x7f09006d
+    const v9, 0x7f080073
 
     new-array v10, v7, [Ljava/lang/Object;
 
@@ -1632,49 +1614,6 @@
     invoke-virtual {v8, v9, v10}, Lcom/android/launcher3/Launcher;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
-
-    goto :goto_0
-.end method
-
-.method private itemFromAppsController(Lcom/android/launcher3/common/base/item/ItemInfo;)Z
-    .locals 6
-
-    const/4 v0, 0x0
-
-    iget-wide v2, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
-
-    const-wide/16 v4, -0x66
-
-    cmp-long v1, v2, v4
-
-    if-nez v1, :cond_1
-
-    const/4 v0, 0x1
-
-    :cond_0
-    :goto_0
-    return v0
-
-    :cond_1
-    iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
-
-    invoke-virtual {v1, p1}, Lcom/android/launcher3/home/HomeController;->isItemInFolder(Lcom/android/launcher3/common/base/item/ItemInfo;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
-
-    iget-wide v2, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
-
-    invoke-virtual {v1, v2, v3}, Lcom/android/launcher3/home/HomeController;->getHomescreenIconByItemId(J)Landroid/view/View;
-
-    move-result-object v1
-
-    if-nez v1, :cond_0
-
-    const/4 v0, 0x1
 
     goto :goto_0
 .end method
@@ -1810,7 +1749,6 @@
 
     packed-switch v5, :pswitch_data_0
 
-    :pswitch_0
     new-instance v5, Ljava/lang/IllegalStateException;
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -1844,7 +1782,7 @@
 
     goto :goto_1
 
-    :pswitch_1
+    :pswitch_0
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v5
@@ -2149,7 +2087,7 @@
 
     goto/16 :goto_2
 
-    :pswitch_2
+    :pswitch_1
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v5
@@ -2241,15 +2179,19 @@
 
     move-result v5
 
-    if-eqz v5, :cond_19
+    if-eqz v5, :cond_18
 
     if-nez v35, :cond_d
 
-    move-object/from16 v0, p1
+    move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->extraDragInfoList:Ljava/util/ArrayList;
+    iget-object v5, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    invoke-static {v5}, Lcom/android/launcher3/Utilities;->hasFolderItem(Ljava/util/ArrayList;)Z
+    invoke-virtual {v5}, Lcom/android/launcher3/Launcher;->getMultiSelectManager()Lcom/android/launcher3/common/multiselect/MultiSelectManager;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->hasFolderItem()Z
 
     move-result v5
 
@@ -2281,11 +2223,15 @@
 
     if-nez v35, :cond_e
 
-    move-object/from16 v0, p1
+    move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->extraDragInfoList:Ljava/util/ArrayList;
+    iget-object v5, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    invoke-static {v5}, Lcom/android/launcher3/Utilities;->hasFolderItem(Ljava/util/ArrayList;)Z
+    invoke-virtual {v5}, Lcom/android/launcher3/Launcher;->getMultiSelectManager()Lcom/android/launcher3/common/multiselect/MultiSelectManager;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->hasFolderItem()Z
 
     move-result v5
 
@@ -2618,40 +2564,6 @@
 
     if-eqz v5, :cond_1
 
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportChinaDA()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_15
-
-    move-object/from16 v0, p1
-
-    iget-object v6, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->extraDragInfoList:Ljava/util/ArrayList;
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    const/4 v11, 0x1
-
-    move-object/from16 v5, p0
-
-    invoke-direct/range {v5 .. v11}, Lcom/android/launcher3/home/WorkspaceDragController;->onDropExtraObjects(Ljava/util/ArrayList;Ljava/lang/Runnable;ZZZZ)V
-
-    goto/16 :goto_0
-
-    :cond_14
-    const/4 v5, 0x0
-
-    move-object/from16 v0, p1
-
-    iput-boolean v5, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->deferDragViewCleanupPostAnimation:Z
-
-    goto :goto_7
-
-    :cond_15
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mLauncher:Lcom/android/launcher3/Launcher;
@@ -2694,7 +2606,7 @@
 
     move/from16 v0, v38
 
-    if-lt v0, v5, :cond_16
+    if-lt v0, v5, :cond_15
 
     move-object/from16 v0, p1
 
@@ -2714,7 +2626,16 @@
 
     goto/16 :goto_0
 
-    :cond_16
+    :cond_14
+    const/4 v5, 0x0
+
+    move-object/from16 v0, p1
+
+    iput-boolean v5, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->deferDragViewCleanupPostAnimation:Z
+
+    goto :goto_7
+
+    :cond_15
     move/from16 v25, v10
 
     new-instance v6, Ljava/util/ArrayList;
@@ -2738,7 +2659,7 @@
 
     move-result v7
 
-    if-eqz v7, :cond_18
+    if-eqz v7, :cond_17
 
     invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -2752,7 +2673,7 @@
 
     move/from16 v0, v38
 
-    if-le v0, v7, :cond_17
+    if-le v0, v7, :cond_16
 
     move-object/from16 v0, v29
 
@@ -2760,7 +2681,7 @@
 
     goto :goto_8
 
-    :cond_17
+    :cond_16
     move-object/from16 v0, p0
 
     iget-object v7, v0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragLayer:Lcom/android/launcher3/common/view/DragLayer;
@@ -2779,7 +2700,7 @@
 
     goto :goto_8
 
-    :cond_18
+    :cond_17
     const/4 v7, 0x0
 
     const/4 v8, 0x0
@@ -2812,17 +2733,15 @@
 
     goto/16 :goto_0
 
-    :cond_19
+    :cond_18
     move/from16 v10, v26
 
     goto/16 :goto_6
 
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
-        :pswitch_1
-        :pswitch_2
-        :pswitch_0
         :pswitch_0
         :pswitch_0
         :pswitch_1
@@ -3852,12 +3771,6 @@
     invoke-virtual {v4, v0}, Lcom/android/launcher3/common/base/view/CellLayoutChildren;->measureChild(Landroid/view/View;)V
 
     :cond_9
-    const/4 v4, 0x0
-
-    move-object/from16 v0, v17
-
-    iput-boolean v4, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->cancelled:Z
-
     move-object/from16 v0, v17
 
     iget-object v4, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragView:Lcom/android/launcher3/common/drag/DragView;
@@ -4340,6 +4253,8 @@
 
     :cond_1a
     return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -5280,7 +5195,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f09019c
+    const v6, 0x7f08019c
 
     move-object/from16 v0, v61
 
@@ -5288,7 +5203,7 @@
 
     move-result-object v6
 
-    const v8, 0x7f090166
+    const v8, 0x7f080167
 
     move-object/from16 v0, v61
 
@@ -6135,7 +6050,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v5, 0x7f0900b8
+    const v5, 0x7f0800b9
 
     const/4 v6, 0x2
 
@@ -6171,7 +6086,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0900b5
+    const v5, 0x7f0800b6
 
     const/4 v6, 0x2
 
@@ -6220,20 +6135,11 @@
     return-void
 
     :cond_2
-    const v4, 0x7f0900b6
-
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    :cond_3
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v5, 0x7f0900b6
+    const v5, 0x7f0800b7
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6249,7 +6155,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0900b5
+    const v5, 0x7f0800b6
 
     const/4 v6, 0x2
 
@@ -6284,6 +6190,15 @@
     move-result-object v4
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    :cond_3
+    const v4, 0x7f0800b5
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -6531,7 +6446,7 @@
 
     move-result-object v39
 
-    const v4, 0x7f0c0021
+    const v4, 0x7f0b0019
 
     move-object/from16 v0, v39
 
@@ -7237,7 +7152,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a00a8
+    const v1, 0x7f0900ea
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -7279,11 +7194,9 @@
 
     const/4 v0, 0x0
 
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
+    iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/android/launcher3/LauncherAppState;->disableAndFlushExternalQueue()V
+    invoke-static {v1}, Lcom/android/launcher3/home/ExternalRequestQueue;->disableAndFlushExternalRequestQueue(Lcom/android/launcher3/Launcher;)V
 
     iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragInfo:Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;
 
@@ -7304,6 +7217,10 @@
     iput-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragInfo:Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;
 
     :cond_0
+    iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
+
+    invoke-virtual {v1}, Lcom/android/launcher3/home/Workspace;->hideHintPages()V
+
     iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mLauncher:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v1}, Lcom/android/launcher3/Launcher;->isHomeStage()Z
@@ -7346,6 +7263,19 @@
     return v0
 
     :cond_1
+    iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
+
+    invoke-virtual {v1}, Lcom/android/launcher3/home/Workspace;->isDeferRemoveExtraEmptyScreen()Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
+
+    invoke-virtual {v1}, Lcom/android/launcher3/home/Workspace;->removeExtraEmptyScreen()V
+
+    :cond_2
     iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
 
     invoke-virtual {v1, v0}, Lcom/android/launcher3/home/Workspace;->updateChildrenLayersEnabled(Z)V
@@ -7413,37 +7343,20 @@
 .end method
 
 .method public onDragExit(Lcom/android/launcher3/common/drag/DropTarget$DragObject;Z)V
-    .locals 4
-
-    const/4 v3, 0x0
+    .locals 3
 
     const/4 v2, 0x0
 
-    iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragInfo:Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;
+    if-eqz p2, :cond_0
 
-    if-eqz v0, :cond_0
+    const/4 v0, 0x0
 
-    iget-boolean v0, p1, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->cancelled:Z
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
-
-    iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragInfo:Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;
-
-    iget-object v1, v1, Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;->cell:Landroid/view/View;
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/home/HomeController;->updateCountBadge(Landroid/view/View;Z)V
+    iput-boolean v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mRestorePosition:Z
 
     :cond_0
-    if-eqz p2, :cond_1
-
-    iput-boolean v2, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mRestorePosition:Z
-
-    :cond_1
     iget-boolean v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mInScrollArea:Z
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_4
 
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
 
@@ -7451,7 +7364,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_3
 
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
 
@@ -7472,7 +7385,7 @@
     :goto_0
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDropToLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_1
 
     invoke-direct {p0}, Lcom/android/launcher3/home/WorkspaceDragController;->getCurrentDropLayout()Lcom/android/launcher3/common/base/view/CellLayout;
 
@@ -7480,12 +7393,12 @@
 
     iput-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDropToLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
-    :cond_2
+    :cond_1
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragTargetLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
     iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDropToLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
-    if-eq v0, v1, :cond_3
+    if-eq v0, v1, :cond_2
 
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mReorderController:Lcom/android/launcher3/home/WorkspaceReorderController;
 
@@ -7499,7 +7412,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/folder/controller/FolderIconDropController;->setReorderTarget(Lcom/android/launcher3/common/base/view/CellLayout;)V
 
-    :cond_3
+    :cond_2
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mFolderController:Lcom/android/launcher3/folder/controller/FolderIconDropController;
 
     iget v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragMode:I
@@ -7508,20 +7421,20 @@
 
     invoke-direct {p0}, Lcom/android/launcher3/home/WorkspaceDragController;->onResetScrollArea()V
 
-    invoke-direct {p0, v3}, Lcom/android/launcher3/home/WorkspaceDragController;->setCurrentDropLayout(Lcom/android/launcher3/common/base/view/CellLayout;)V
+    invoke-direct {p0, v2}, Lcom/android/launcher3/home/WorkspaceDragController;->setCurrentDropLayout(Lcom/android/launcher3/common/base/view/CellLayout;)V
 
-    invoke-direct {p0, v3}, Lcom/android/launcher3/home/WorkspaceDragController;->setCurrentDragOverlappingLayout(Lcom/android/launcher3/common/base/view/CellLayout;)V
+    invoke-direct {p0, v2}, Lcom/android/launcher3/home/WorkspaceDragController;->setCurrentDragOverlappingLayout(Lcom/android/launcher3/common/base/view/CellLayout;)V
 
     return-void
 
-    :cond_4
+    :cond_3
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragOverlappingLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
     iput-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDropToLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
     goto :goto_0
 
-    :cond_5
+    :cond_4
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragTargetLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
     iput-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDropToLayout:Lcom/android/launcher3/common/base/view/CellLayout;
@@ -7815,47 +7728,49 @@
 .end method
 
 .method public onDragStart(Lcom/android/launcher3/common/drag/DragSource;Ljava/lang/Object;I)Z
-    .locals 4
-
-    const/4 v1, 0x1
+    .locals 3
 
     const/4 v0, 0x0
 
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
+    invoke-static {}, Lcom/android/launcher3/home/ExternalRequestQueue;->enableExternalRequestQueue()V
 
-    move-result-object v2
+    iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
 
-    invoke-virtual {v2, v1}, Lcom/android/launcher3/LauncherAppState;->enableExternalQueue(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/launcher3/home/Workspace;->setDeferRemoveExtraEmptyScreen(Z)V
 
-    iget-object v2, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
+    iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
 
-    invoke-virtual {v2}, Lcom/android/launcher3/home/HomeController;->getState()I
+    invoke-virtual {v1}, Lcom/android/launcher3/home/HomeController;->getState()I
 
-    move-result v2
+    move-result v1
 
-    const/4 v3, 0x2
+    const/4 v2, 0x2
 
-    if-eq v2, v3, :cond_0
+    if-eq v1, v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
+    iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
 
-    invoke-virtual {v2}, Lcom/android/launcher3/home/HomeController;->getState()I
+    invoke-virtual {v1}, Lcom/android/launcher3/home/HomeController;->getState()I
 
-    move-result v2
+    move-result v1
 
-    const/4 v3, 0x6
+    const/4 v2, 0x6
 
-    if-eq v2, v3, :cond_0
+    if-eq v1, v2, :cond_0
 
     :goto_0
     return v0
 
     :cond_0
-    iget-object v2, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
+    iget-object v1, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
 
-    invoke-virtual {v2, v0}, Lcom/android/launcher3/home/Workspace;->updateChildrenLayersEnabled(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/launcher3/home/Workspace;->updateChildrenLayersEnabled(Z)V
 
-    move v0, v1
+    iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mWorkspace:Lcom/android/launcher3/home/Workspace;
+
+    invoke-virtual {v0}, Lcom/android/launcher3/home/Workspace;->addExtraEmptyScreenOnDrag()V
+
+    const/4 v0, 0x1
 
     goto :goto_0
 .end method
@@ -8027,7 +7942,7 @@
     const/4 v8, 0x1
 
     :cond_3
-    if-nez v8, :cond_8
+    if-nez v8, :cond_7
 
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mLauncher:Lcom/android/launcher3/Launcher;
 
@@ -8054,7 +7969,7 @@
 
     iget-object v9, v0, Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;->layout:Lcom/android/launcher3/common/base/view/CellLayout;
 
-    if-eqz v9, :cond_7
+    if-eqz v9, :cond_6
 
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragInfo:Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;
 
@@ -8063,25 +7978,25 @@
     invoke-virtual {v9, v0}, Lcom/android/launcher3/common/base/view/CellLayout;->onDropChild(Landroid/view/View;)V
 
     :goto_3
-    new-instance v4, Lcom/android/launcher3/home/WorkspaceDragController$12;
-
-    invoke-direct {v4, p0}, Lcom/android/launcher3/home/WorkspaceDragController$12;-><init>(Lcom/android/launcher3/home/WorkspaceDragController;)V
-
     iget-boolean v0, p2, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->cancelled:Z
 
-    if-nez v0, :cond_6
+    if-nez v0, :cond_1
 
     iget-object v0, p2, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragInfo:Ljava/lang/Object;
 
     instance-of v0, v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_1
+
+    new-instance v4, Lcom/android/launcher3/home/WorkspaceDragController$12;
+
+    invoke-direct {v4, p0}, Lcom/android/launcher3/home/WorkspaceDragController$12;-><init>(Lcom/android/launcher3/home/WorkspaceDragController;)V
 
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragInfo:Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;
 
     iget-object v0, v0, Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;->cell:Landroid/view/View;
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_1
 
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragInfo:Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;
 
@@ -8093,7 +8008,7 @@
 
     instance-of v0, v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_1
 
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mDragInfo:Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;
 
@@ -8145,16 +8060,9 @@
 
     invoke-virtual/range {v0 .. v7}, Lcom/android/launcher3/home/WorkspaceDragController;->animateWidgetDrop(Lcom/android/launcher3/common/base/item/ItemInfo;Lcom/android/launcher3/common/base/view/CellLayout;Lcom/android/launcher3/common/drag/DragView;Ljava/lang/Runnable;ILandroid/view/View;Z)V
 
-    :cond_6
-    iget-boolean v0, p2, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->cancelled:Z
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {v4}, Ljava/lang/Runnable;->run()V
-
     goto/16 :goto_1
 
-    :cond_7
+    :cond_6
     const-string v0, "DropTarget"
 
     const-string v3, "Invalid state: cellLayout == null"
@@ -8163,7 +8071,7 @@
 
     goto :goto_3
 
-    :cond_8
+    :cond_7
     iget-object v0, p0, Lcom/android/launcher3/home/WorkspaceDragController;->mLauncher:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v0}, Lcom/android/launcher3/Launcher;->getDragMgr()Lcom/android/launcher3/common/drag/DragManager;
@@ -8172,7 +8080,7 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/drag/DragManager;->enableQuickOptionView()V
 
-    goto/16 :goto_2
+    goto :goto_2
 .end method
 
 .method public onEnterScrollArea(III)Z

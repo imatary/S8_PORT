@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/allapps/controller/AppsController;->deleteFolder(Lcom/android/launcher3/folder/FolderInfo;)V
+    value = Lcom/android/launcher3/allapps/controller/AppsController;->moveItemFromFolder(Lcom/android/launcher3/common/base/item/IconInfo;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,12 +20,16 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
+.field final synthetic val$iconInfo:Lcom/android/launcher3/common/base/item/IconInfo;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/allapps/controller/AppsController;)V
+.method constructor <init>(Lcom/android/launcher3/allapps/controller/AppsController;Lcom/android/launcher3/common/base/item/IconInfo;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$13;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
+
+    iput-object p2, p0, Lcom/android/launcher3/allapps/controller/AppsController$13;->val$iconInfo:Lcom/android/launcher3/common/base/item/IconInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +39,15 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 4
+
+    iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$13;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
+
+    invoke-static {v0}, Lcom/android/launcher3/allapps/controller/AppsController;->access$300(Lcom/android/launcher3/allapps/controller/AppsController;)Lcom/android/launcher3/Launcher;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/launcher3/Launcher;->closeFolder()V
 
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$13;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
@@ -43,17 +55,11 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsController$13;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
+    iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsController$13;->val$iconInfo:Lcom/android/launcher3/common/base/item/IconInfo;
 
-    invoke-static {v1}, Lcom/android/launcher3/allapps/controller/AppsController;->access$000(Lcom/android/launcher3/allapps/controller/AppsController;)Lcom/android/launcher3/allapps/view/AppsPagedView;
+    iget-wide v2, v1, Lcom/android/launcher3/common/base/item/IconInfo;->screenId:J
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/android/launcher3/allapps/view/AppsPagedView;->getPageCount()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, -0x1
+    long-to-int v1, v2
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/allapps/view/AppsPagedView;->snapToPageImmediately(I)V
 

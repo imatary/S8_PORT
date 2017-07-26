@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/HomeController;->createFolder()V
+    value = Lcom/android/launcher3/home/HomeController;->exitScreenGridStateDelayed(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,12 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/home/HomeController;
 
-.field final synthetic val$folder:Lcom/android/launcher3/folder/view/FolderIconView;
-
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/HomeController;Lcom/android/launcher3/folder/view/FolderIconView;)V
+.method constructor <init>(Lcom/android/launcher3/home/HomeController;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/home/HomeController$30;->this$0:Lcom/android/launcher3/home/HomeController;
-
-    iput-object p2, p0, Lcom/android/launcher3/home/HomeController$30;->val$folder:Lcom/android/launcher3/folder/view/FolderIconView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,74 +35,98 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 6
 
-    const/4 v2, 0x0
+    const/4 v5, 0x1
+
+    const/4 v4, 0x0
 
     iget-object v1, p0, Lcom/android/launcher3/home/HomeController$30;->this$0:Lcom/android/launcher3/home/HomeController;
 
-    invoke-static {v1}, Lcom/android/launcher3/home/HomeController;->access$1300(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/Launcher;
+    invoke-virtual {v1}, Lcom/android/launcher3/home/HomeController;->cancelGridChange()V
+
+    iget-object v1, p0, Lcom/android/launcher3/home/HomeController$30;->this$0:Lcom/android/launcher3/home/HomeController;
+
+    invoke-virtual {v1, v4}, Lcom/android/launcher3/home/HomeController;->enterOverviewState(Z)V
+
+    iget-object v1, p0, Lcom/android/launcher3/home/HomeController$30;->this$0:Lcom/android/launcher3/home/HomeController;
+
+    invoke-static {v1}, Lcom/android/launcher3/home/HomeController;->access$500(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/home/Workspace;
+
+    move-result-object v2
+
+    iget-object v1, p0, Lcom/android/launcher3/home/HomeController$30;->this$0:Lcom/android/launcher3/home/HomeController;
+
+    invoke-static {v1}, Lcom/android/launcher3/home/HomeController;->access$500(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/home/Workspace;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/launcher3/Launcher;->isHomeStage()Z
+    iget-object v3, p0, Lcom/android/launcher3/home/HomeController$30;->this$0:Lcom/android/launcher3/home/HomeController;
+
+    invoke-static {v3}, Lcom/android/launcher3/home/HomeController;->access$500(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/home/Workspace;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/android/launcher3/home/Workspace;->getDefaultPage()I
+
+    move-result v3
+
+    invoke-virtual {v1, v3}, Lcom/android/launcher3/home/Workspace;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/launcher3/home/WorkspaceCellLayout;
+
+    invoke-virtual {v2, v1}, Lcom/android/launcher3/home/Workspace;->updateDefaultHomePageBg(Lcom/android/launcher3/home/WorkspaceCellLayout;)V
+
+    iget-object v1, p0, Lcom/android/launcher3/home/HomeController$30;->this$0:Lcom/android/launcher3/home/HomeController;
+
+    invoke-static {v1}, Lcom/android/launcher3/home/HomeController;->access$1600(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/common/stage/StageManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/android/launcher3/common/stage/StageManager;->getStackSize()I
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-le v1, v5, :cond_0
+
+    invoke-static {}, Lcom/android/launcher3/util/GlobalSettingUtils;->getStartSetting()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
 
     iget-object v1, p0, Lcom/android/launcher3/home/HomeController$30;->this$0:Lcom/android/launcher3/home/HomeController;
 
-    invoke-static {v1}, Lcom/android/launcher3/home/HomeController;->access$300(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/home/Workspace;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Lcom/android/launcher3/home/Workspace;->setTargetView(Landroid/view/View;)V
-
-    iget-object v1, p0, Lcom/android/launcher3/home/HomeController$30;->this$0:Lcom/android/launcher3/home/HomeController;
-
-    invoke-static {v1}, Lcom/android/launcher3/home/HomeController;->access$1400(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/home/Hotseat;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Lcom/android/launcher3/home/Hotseat;->setTargetView(Landroid/view/View;)V
-
-    iget-object v1, p0, Lcom/android/launcher3/home/HomeController$30;->this$0:Lcom/android/launcher3/home/HomeController;
-
-    invoke-static {v1}, Lcom/android/launcher3/home/HomeController;->access$1400(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/home/Hotseat;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/android/launcher3/home/Hotseat;->getDragController()Lcom/android/launcher3/home/HotseatDragController;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x1
-
-    invoke-virtual {v1, v2, v3}, Lcom/android/launcher3/home/HotseatDragController;->removeEmptyCells(ZZ)V
+    invoke-virtual {v1, v4}, Lcom/android/launcher3/home/HomeController;->enterNormalState(Z)V
 
     new-instance v0, Lcom/android/launcher3/common/stage/StageEntry;
 
     invoke-direct {v0}, Lcom/android/launcher3/common/stage/StageEntry;-><init>()V
 
-    const-string v1, "KEY_FOLDER_ICON_VIEW"
-
-    iget-object v2, p0, Lcom/android/launcher3/home/HomeController$30;->val$folder:Lcom/android/launcher3/folder/view/FolderIconView;
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/common/stage/StageEntry;->putExtras(Ljava/lang/String;Ljava/lang/Object;)V
+    iput-boolean v4, v0, Lcom/android/launcher3/common/stage/StageEntry;->enableAnimation:Z
 
     iget-object v1, p0, Lcom/android/launcher3/home/HomeController$30;->this$0:Lcom/android/launcher3/home/HomeController;
 
-    invoke-static {v1}, Lcom/android/launcher3/home/HomeController;->access$1500(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/common/stage/StageManager;
+    invoke-static {v1}, Lcom/android/launcher3/home/HomeController;->access$1700(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/common/stage/StageManager;
 
     move-result-object v1
 
-    const/4 v2, 0x5
-
-    invoke-virtual {v1, v2, v0}, Lcom/android/launcher3/common/stage/StageManager;->startStage(ILcom/android/launcher3/common/stage/StageEntry;)V
+    invoke-virtual {v1, v5, v0}, Lcom/android/launcher3/common/stage/StageManager;->finishStage(ILcom/android/launcher3/common/stage/StageEntry;)V
 
     :cond_0
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/android/launcher3/LauncherAppState;->getTopViewChangedMessageHandler()Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;
+
+    move-result-object v1
+
+    const/4 v2, 0x6
+
+    invoke-virtual {v1, v2}, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;->sendMessage(I)V
+
     return-void
 .end method

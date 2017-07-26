@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">Historia e kërkimit</string>
-    <string name="accessibility_add_home_screen">Shto faqe</string>
-    <string name="accessibility_button">Butoni</string>
-    <string name="accessibility_dimmed">Errësuar</string>
+    <string name="about">Rreth %s</string>
+    <string name="about_already_installed">Versioni më i fundit është instaluar tashmë.</string>
+    <string name="about_home_screen">Ekrani kryesor</string>
+    <string name="about_licence">Licenca burimi të hapur</string>
+    <string name="about_network_err">S’mund të kontrolloj për përditësime. Telefoni yt nuk është lidhur me ndonjë rrjet.</string>
+    <string name="about_new_version_exist">Ka një version të ri në dispozicion.</string>
+    <string name="about_retry">Riprovo</string>
+    <string name="about_update">Përditëso</string>
+    <string name="about_version">Versioni %s</string>
     <string name="activity_not_available">Ky app nuk disponohet për pajisjen tënde.</string>
     <string name="activity_not_found">Aplikacioni nuk është instaluar.</string>
     <string name="align_to_bottom">Drejtvizo me fundin</string>
     <string name="align_to_top">Drejtvizo me kreun</string>
-    <string name="app_locked_toast">%s bllokuar.</string>
     <string name="app_search">Kërko në telefon</string>
     <string name="app_search_no_apps">Mund të shtosh shkurtore në ekranin bazë që nga rezultatet e kërkimit.</string>
     <string name="app_search_no_results_found">Nuk u gjetën rezultate</string>
     <string name="app_search_tablet">Kërko në tabletë</string>
-    <string name="app_unlocked_toast">%s u zhbllokua.</string>
     <string name="application_name">Bazë TouchWiz</string>
     <string name="apply">Zbato</string>
     <string name="appsPicker_add_button">SHTO</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Faqja e parazgjedhur</string>
     <string name="default_scroll_format">Faqe %1$d nga %2$d.</string>
     <string name="disable_message">%1$s dhe të gjitha funksionet e lidhura me të do të paaftësohen. Për ta aftësuar app-in sërish, shko te Cilësimet > Aplikacionet > dhe përzgjidh %2$s.</string>
-    <string name="disable_message_knox_mode">%1$s dhe të gjitha funksionet e lidhura me të do të paaftësohen. Për ta aftësuar app-in sërish, shko te cilësimet %2$s > App-et.</string>
     <string name="disable_message_vzw">%s dhe të gjitha funksionalitetet e lidhura me të do të paaftësohen. Për ta aftësuar sërish, shko te Cilësimet > Aplikacionet > Menaxheri i aplikacioneve.</string>
     <string name="discard">Hidhe tej</string>
     <string name="do_not_show_again">Mos e trego më</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">Shto app-e</string>
     <string name="folder_closed">Dosja u mbyll.</string>
     <string name="folder_color">Ngjyra e dosjes</string>
+    <string name="folder_color_blue">E kaltër</string>
     <string name="folder_color_default">Ngjyra e parazgjedhur e dosjes</string>
-    <string name="folder_color_pd">Ngjyra %d</string>
+    <string name="folder_color_green">E gjelbër</string>
+    <string name="folder_color_orange">Portokall</string>
+    <string name="folder_color_yellow">E verdhë</string>
     <string name="folder_hint_text">Fut emrin e dosjes</string>
     <string name="folder_microsoft_apps">App-et Microsoft</string>
     <string name="folder_multi_search_bar_hint">Kërko për app-e</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">Nuk ka më hapësirë në këtë faqe</string>
     <string name="out_of_space_dialog">Nuk ka më vend në këtë faqe. Objekti do të shtohet në një faqe të re.</string>
     <string name="permdesc_install_widget">Ky app mund të shtojë widget-e në ekranin bazë.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">Ky app mund të lexojë cilësimet e faqes me materiale të personalizuara, e cila gjendet në të majtë të Ekranit bazë.</string>
     <string name="permdesc_write_zeropage_settings">Ky app mund të ndryshojë cilësimet e faqes me materiale të personalizuara, e cila gjendet në të majtë të Ekranit bazë.</string>
     <string name="permlab_install_widget">Shto widget-e</string>
@@ -158,27 +165,21 @@
     <string name="selected">Përzgjedhur</string>
     <string name="setting_apps_screen_grid">Rrjeta e ekranit App-et</string>
     <string name="shortcut_duplicate">ikona %s ekziston që më parë.</string>
-    <string name="shortcut_installed">Shkurtorja drejt %s u shtua në Ekranin bazë.</string>
+    <string name="shortcut_installed">Shkurtorja drejt %s u shtua në ekranin bazë.</string>
     <string name="shortcut_moved_to_game_launcher">Ikona e lojës u çua te Game Launcher.</string>
     <string name="shortcut_uninstalled">U hoq ikona %s.</string>
     <string name="speak_now">Fol tani</string>
     <string name="swipe_up_for_more_apps">Rrëshqit lart ose poshtë për të gjitha app-et</string>
     <string name="swipe_up_for_more_apps_att">Rrëshqit lart ose poshtë në ekran për të gjitha app-et</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Rrëshqit lart ose poshtë me dy gishta për të gjitha app-et.</string>
-    <string name="talkback_changed_to_ps">U ndërrua në %s.</string>
+    <string name="talkback_checked">Përzgjedhur</string>
     <string name="talkback_folder">Skedar</string>
     <string name="talkback_n_items">%d objekte</string>
     <string name="talkback_press_back_key_to_close_folder">Shtyp tastin Prapa për ta mbyllur dosjen.</string>
-    <string name="talkback_tab_back_button_to_close_folder">Trokit mbi butonin Prapa për ta mbyllur dosjen.</string>
     <string name="title_settings">Cilësimet %s</string>
     <string name="tts_add_shortcut_on_home_screen_notice">Zvarrite ikonën në krye të ekranit për ta shtuar në Ekranin bazë.</string>
     <string name="tts_bottom_handle">Doreza e poshtme</string>
-    <string name="tts_changed_to_apps_edit_mode">U ndryshua në regjimin e editimit për App-e.</string>
-    <string name="tts_changed_to_folder_edit_mode">U ndryshua në Regjimin e editimit për dosje</string>
-    <string name="tts_changed_to_home_screen_edit_mode">U ndryshua në regjimin e editimit për Ekranin bazë.</string>
     <string name="tts_folder_created">Dosja u krijua.</string>
-    <string name="tts_holding_items">Duke mbajtur %1$s dhe %2$d të tjerë</string>
-    <string name="tts_hotseat_item_moved_from_external">Artikulli u çua te shiriti i menysë në ekranin bazë.</string>
     <string name="tts_hotseat_move_to">Pozicioni %d në shiritin e menysë.</string>
     <string name="tts_hover_item_over_other_item">%1$s përmbi %2$s</string>
     <string name="tts_item_added">Artikulli u shtua.</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">Trego më shumë në Dyqanin Play</string>
     <string name="viewtype_alphabetic_grid">Rend alfabetik</string>
     <string name="viewtype_custom_grid">Renditje e personalizuar</string>
-    <string name="voice_search">Kërkim zanor</string>
     <string name="wallpaper_button_text">Sfondet</string>
     <string name="wallpapers_and_themes_button_text">Letrat e murit dhe temat</string>
     <string name="widget_button_text">Mini-Programet</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">Për ta përdorur këtë funksion, duhet të instalosh %1$s. Trokit mbi SHKARKO, për të shkarkuar dhe instaluar %2$s.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Lajmet Sohu</string>
-    <string name="zeropage_toutiao_title">Information express</string>
 </resources>

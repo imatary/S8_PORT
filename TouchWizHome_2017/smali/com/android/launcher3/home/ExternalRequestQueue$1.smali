@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/ExternalRequestQueue;->flushExternalRequestQueue(Landroid/content/Context;Lcom/android/launcher3/LauncherAppState;)V
+    value = Lcom/android/launcher3/home/ExternalRequestQueue;->flushExternalRequestQueue(Lcom/android/launcher3/Launcher;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

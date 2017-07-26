@@ -113,7 +113,7 @@
 
     if-eqz v8, :cond_2
 
-    invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$4500()Lcom/android/launcher3/common/model/IconCache;
+    invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$4200()Lcom/android/launcher3/common/model/IconCache;
 
     move-result-object v8
 
@@ -140,7 +140,7 @@
 
     if-nez v8, :cond_1
 
-    invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$4600()Lcom/android/launcher3/common/model/IconCache;
+    invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$4300()Lcom/android/launcher3/common/model/IconCache;
 
     move-result-object v8
 

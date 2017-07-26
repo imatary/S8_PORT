@@ -21,21 +21,7 @@
 
 .field private static final TAG:Ljava/lang/String; = "DataLoader"
 
-.field protected static mIsSdCardReady:Z
-
 .field protected static sBadgeCache:Lcom/android/launcher3/common/model/BadgeCache;
-
-.field protected static final sBgDeepShortcutMap:Lcom/android/launcher3/util/MultiHashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/android/launcher3/util/MultiHashMap",
-            "<",
-            "Lcom/android/launcher3/util/ComponentKey;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
 
 .field protected static final sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -108,6 +94,17 @@
             "Ljava/util/ArrayList",
             "<",
             "Lcom/android/launcher3/common/model/DataLoader;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static sOmcActivity:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Landroid/content/pm/ResolveInfo;",
             ">;"
         }
     .end annotation
@@ -199,6 +196,8 @@
 
 .field protected mIsPageLoaded:[Z
 
+.field protected mIsSdCardReady:Z
+
 .field protected mLoaderCallback:Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
 
 .field protected mPageLoaderTask:Lcom/android/launcher3/common/model/DataLoader$PageLoaderTask;
@@ -253,12 +252,6 @@
 
     sput-object v0, Lcom/android/launcher3/common/model/DataLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
 
-    new-instance v0, Lcom/android/launcher3/util/MultiHashMap;
-
-    invoke-direct {v0}, Lcom/android/launcher3/util/MultiHashMap;-><init>()V
-
-    sput-object v0, Lcom/android/launcher3/common/model/DataLoader;->sBgDeepShortcutMap:Lcom/android/launcher3/util/MultiHashMap;
-
     new-instance v0, Lcom/android/launcher3/util/LongArrayMap;
 
     invoke-direct {v0}, Lcom/android/launcher3/util/LongArrayMap;-><init>()V
@@ -282,6 +275,10 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Lcom/android/launcher3/common/model/DataLoader;->sLoaderList:Ljava/util/ArrayList;
+
+    const/4 v0, 0x0
+
+    sput-object v0, Lcom/android/launcher3/common/model/DataLoader;->sOmcActivity:Ljava/util/List;
 
     const/4 v0, 0x2
 
@@ -713,9 +710,9 @@
         }
     .end annotation
 
-    new-instance v0, Lcom/android/launcher3/common/model/DataLoader$3;
+    new-instance v0, Lcom/android/launcher3/common/model/DataLoader$4;
 
-    invoke-direct {v0, p0, p1, p3}, Lcom/android/launcher3/common/model/DataLoader$3;-><init>(Lcom/android/launcher3/common/model/DataLoader;Landroid/content/ComponentName;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
+    invoke-direct {v0, p0, p1, p3}, Lcom/android/launcher3/common/model/DataLoader$4;-><init>(Lcom/android/launcher3/common/model/DataLoader;Landroid/content/ComponentName;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
 
     sget-object v2, Lcom/android/launcher3/common/model/DataLoader;->sBgLock:Ljava/lang/Object;
 
@@ -1758,24 +1755,6 @@
     goto/16 :goto_0
 .end method
 
-.method public bindDeepShortcuts()V
-    .locals 3
-
-    sget-object v2, Lcom/android/launcher3/common/model/DataLoader;->sBgDeepShortcutMap:Lcom/android/launcher3/util/MultiHashMap;
-
-    invoke-virtual {v2}, Lcom/android/launcher3/util/MultiHashMap;->clone()Lcom/android/launcher3/util/MultiHashMap;
-
-    move-result-object v1
-
-    new-instance v0, Lcom/android/launcher3/common/model/DataLoader$4;
-
-    invoke-direct {v0, p0, v1}, Lcom/android/launcher3/common/model/DataLoader$4;-><init>(Lcom/android/launcher3/common/model/DataLoader;Lcom/android/launcher3/util/MultiHashMap;)V
-
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/common/model/DataLoader;->runOnMainThread(Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
 .method public abstract bindItemsSync(ILcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 .end method
 
@@ -1827,6 +1806,24 @@
 .end method
 
 .method public abstract containPagesItem(Lcom/android/launcher3/common/base/item/ItemInfo;)Z
+.end method
+
+.method protected createLoaderTask(Z)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public executeLoaderTask(Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;)V
+    .locals 1
+
+    new-instance v0, Lcom/android/launcher3/common/model/DataLoader$3;
+
+    invoke-direct {v0, p0, p1}, Lcom/android/launcher3/common/model/DataLoader$3;-><init>(Lcom/android/launcher3/common/model/DataLoader;Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;)V
+
+    invoke-virtual {p0, v0}, Lcom/android/launcher3/common/model/DataLoader;->runOnMainThread(Ljava/lang/Runnable;)V
+
+    return-void
 .end method
 
 .method public abstract filterCurrentPageItems(JLjava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
@@ -1967,7 +1964,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_2
+    if-eqz v5, :cond_1
 
     invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1976,6 +1973,10 @@
     check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
     instance-of v5, v1, Lcom/android/launcher3/common/base/item/IconInfo;
+
+    if-eqz v5, :cond_0
+
+    iget-object v5, v1, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
     if-eqz v5, :cond_0
 
@@ -1989,35 +1990,6 @@
 
     if-eqz v5, :cond_0
 
-    move-object v0, v1
-
-    check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
-
-    move-object v5, v0
-
-    invoke-virtual {v5}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
-
-    move-result-object v5
-
-    if-eqz v5, :cond_0
-
-    iget v5, v1, Lcom/android/launcher3/common/base/item/ItemInfo;->itemType:I
-
-    const/4 v6, 0x1
-
-    if-ne v5, v6, :cond_1
-
-    move-object v0, v1
-
-    check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
-
-    move-object v5, v0
-
-    iget-boolean v5, v5, Lcom/android/launcher3/common/base/item/IconInfo;->isAppShortcut:Z
-
-    if-eqz v5, :cond_0
-
-    :cond_1
     new-instance v4, Landroid/content/Intent;
 
     move-object v0, v1
@@ -2040,15 +2012,7 @@
 
     invoke-virtual {v4, v5}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    move-object v0, v1
-
-    check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
-
-    move-object v5, v0
-
-    invoke-virtual {v5}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
-
-    move-result-object v5
+    iget-object v5, v1, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
     invoke-virtual {v4, v5}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
@@ -2114,7 +2078,7 @@
 
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_0
+    goto :goto_0
 
     :catchall_0
     move-exception v5
@@ -2125,7 +2089,7 @@
 
     throw v5
 
-    :cond_2
+    :cond_1
     :try_start_1
     monitor-exit v7
     :try_end_1
@@ -2378,7 +2342,7 @@
 .end method
 
 .method protected getRestoredItemIntent(Landroid/content/Intent;I)Landroid/content/Intent;
-    .locals 2
+    .locals 4
 
     and-int/lit8 v1, p2, 0x1
 
@@ -2410,6 +2374,74 @@
 
     if-eqz v1, :cond_1
 
+    sget-object v1, Lcom/android/launcher3/common/model/DataLoader;->sOmcActivity:Ljava/util/List;
+
+    if-nez v1, :cond_3
+
+    sget-object v1, Lcom/android/launcher3/common/model/DataLoader;->sPackageManager:Landroid/content/pm/PackageManager;
+
+    const/4 v2, 0x0
+
+    invoke-static {v2}, Lcom/android/launcher3/LauncherModel;->getOmcIntent(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v1, v2, v3}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
+
+    move-result-object v1
+
+    sput-object v1, Lcom/android/launcher3/common/model/DataLoader;->sOmcActivity:Ljava/util/List;
+
+    :cond_3
+    sget-object v1, Lcom/android/launcher3/common/model/DataLoader;->sOmcActivity:Ljava/util/List;
+
+    if-eqz v1, :cond_4
+
+    sget-object v1, Lcom/android/launcher3/common/model/DataLoader;->sOmcActivity:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    if-lez v1, :cond_4
+
+    invoke-virtual {p1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_4
+
+    invoke-virtual {p1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v1
+
+    if-nez v1, :cond_4
+
+    invoke-virtual {p1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/android/launcher3/LauncherModel;->getOmcIntent(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    :cond_4
     invoke-static {}, Lcom/android/launcher3/LauncherModel;->getOmcIntent()Landroid/content/Intent;
 
     move-result-object p1
@@ -2698,7 +2730,7 @@
     move v0, v1
 
     :goto_0
-    sput-boolean v0, Lcom/android/launcher3/common/model/DataLoader;->mIsSdCardReady:Z
+    iput-boolean v0, p0, Lcom/android/launcher3/common/model/DataLoader;->mIsSdCardReady:Z
 
     invoke-static {p1}, Lcom/android/launcher3/Utilities;->isExistSdCard(Landroid/content/Context;)Z
 
@@ -2706,10 +2738,10 @@
 
     if-eqz v0, :cond_1
 
-    sget-boolean v1, Lcom/android/launcher3/common/model/DataLoader;->mIsSdCardReady:Z
+    iget-boolean v1, p0, Lcom/android/launcher3/common/model/DataLoader;->mIsSdCardReady:Z
 
     :cond_1
-    sput-boolean v1, Lcom/android/launcher3/common/model/DataLoader;->mIsSdCardReady:Z
+    iput-boolean v1, p0, Lcom/android/launcher3/common/model/DataLoader;->mIsSdCardReady:Z
 
     invoke-virtual {p0}, Lcom/android/launcher3/common/model/DataLoader;->updateUsersList()V
 
@@ -3061,7 +3093,7 @@
 .method public abstract removePagesItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 .end method
 
-.method public abstract removeUnRestoredItems(Z)V
+.method public abstract removeUnRestoredItems()V
 .end method
 
 .method protected runOnMainThread(Ljava/lang/Runnable;)V
@@ -3267,144 +3299,6 @@
 .end method
 
 .method public abstract unbindItemsOnMainThread()V
-.end method
-
-.method public updateDeepShortcutMap(Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Ljava/util/List;)V
-    .locals 8
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Lcom/android/launcher3/common/compat/UserHandleCompat;",
-            "Ljava/util/List",
-            "<",
-            "Lcom/android/launcher3/common/quickoption/shortcuts/ShortcutInfoCompat;",
-            ">;)V"
-        }
-    .end annotation
-
-    if-eqz p1, :cond_1
-
-    sget-object v5, Lcom/android/launcher3/common/model/DataLoader;->sBgDeepShortcutMap:Lcom/android/launcher3/util/MultiHashMap;
-
-    invoke-virtual {v5}, Lcom/android/launcher3/util/MultiHashMap;->keySet()Ljava/util/Set;
-
-    move-result-object v5
-
-    invoke-interface {v5}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/android/launcher3/util/ComponentKey;
-
-    iget-object v5, v1, Lcom/android/launcher3/util/ComponentKey;->componentName:Landroid/content/ComponentName;
-
-    invoke-virtual {v5}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v5, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_0
-
-    iget-object v5, v1, Lcom/android/launcher3/util/ComponentKey;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
-
-    invoke-virtual {v5, p2}, Lcom/android/launcher3/common/compat/UserHandleCompat;->equals(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->remove()V
-
-    goto :goto_0
-
-    :cond_1
-    invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v5
-
-    :cond_2
-    :goto_1
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_5
-
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/android/launcher3/common/quickoption/shortcuts/ShortcutInfoCompat;
-
-    invoke-virtual {v2}, Lcom/android/launcher3/common/quickoption/shortcuts/ShortcutInfoCompat;->isEnabled()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_4
-
-    invoke-virtual {v2}, Lcom/android/launcher3/common/quickoption/shortcuts/ShortcutInfoCompat;->isDeclaredInManifest()Z
-
-    move-result v6
-
-    if-nez v6, :cond_3
-
-    invoke-virtual {v2}, Lcom/android/launcher3/common/quickoption/shortcuts/ShortcutInfoCompat;->isDynamic()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_4
-
-    :cond_3
-    const/4 v3, 0x1
-
-    :goto_2
-    if-eqz v3, :cond_2
-
-    new-instance v4, Lcom/android/launcher3/util/ComponentKey;
-
-    invoke-virtual {v2}, Lcom/android/launcher3/common/quickoption/shortcuts/ShortcutInfoCompat;->getActivity()Landroid/content/ComponentName;
-
-    move-result-object v6
-
-    invoke-virtual {v2}, Lcom/android/launcher3/common/quickoption/shortcuts/ShortcutInfoCompat;->getUserHandle()Lcom/android/launcher3/common/compat/UserHandleCompat;
-
-    move-result-object v7
-
-    invoke-direct {v4, v6, v7}, Lcom/android/launcher3/util/ComponentKey;-><init>(Landroid/content/ComponentName;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
-
-    sget-object v6, Lcom/android/launcher3/common/model/DataLoader;->sBgDeepShortcutMap:Lcom/android/launcher3/util/MultiHashMap;
-
-    invoke-virtual {v2}, Lcom/android/launcher3/common/quickoption/shortcuts/ShortcutInfoCompat;->getId()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-virtual {v6, v4, v7}, Lcom/android/launcher3/util/MultiHashMap;->addToList(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    goto :goto_1
-
-    :cond_4
-    const/4 v3, 0x0
-
-    goto :goto_2
-
-    :cond_5
-    return-void
 .end method
 
 .method protected updateItem(JLandroid/content/ContentValues;)V

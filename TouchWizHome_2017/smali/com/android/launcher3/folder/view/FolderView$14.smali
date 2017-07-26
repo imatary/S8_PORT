@@ -38,7 +38,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderView;->access$002(Lcom/android/launcher3/folder/view/FolderView;I)I
+    invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderView;->access$102(Lcom/android/launcher3/folder/view/FolderView;I)I
 
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$14;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
@@ -60,19 +60,19 @@
 
     move-result-object v2
 
-    const v3, 0x7f09002f
+    const v3, 0x7f080032
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v0, v1, v2}, Lcom/android/launcher3/folder/view/FolderView;->access$1100(Lcom/android/launcher3/folder/view/FolderView;ILjava/lang/String;)V
+    invoke-static {v0, v1, v2}, Lcom/android/launcher3/folder/view/FolderView;->access$1000(Lcom/android/launcher3/folder/view/FolderView;ILjava/lang/String;)V
 
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$14;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderView;->access$002(Lcom/android/launcher3/folder/view/FolderView;I)I
+    invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderView;->access$102(Lcom/android/launcher3/folder/view/FolderView;I)I
 
     return-void
 .end method

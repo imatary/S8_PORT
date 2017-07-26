@@ -16,8 +16,6 @@
 
 .field private static final FOLDER_OPEN_TIMEOUT:I = 0x5dc
 
-.field private static final TAG:Ljava/lang/String;
-
 
 # instance fields
 .field private mAddToExistingFolderOnDrop:Z
@@ -44,20 +42,6 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    const-class v0, Lcom/android/launcher3/folder/controller/FolderIconDropController;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/launcher3/folder/controller/FolderIconDropController;->TAG:Ljava/lang/String;
-
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Lcom/android/launcher3/common/drag/DragState;)V
     .locals 2
 
@@ -419,19 +403,13 @@
 .method private openFolderOnDragHold(Lcom/android/launcher3/folder/view/FolderIconView;)V
     .locals 7
 
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportFolderNSecOpen()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    if-eqz p1, :cond_0
-
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportFolderLock()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
+
+    if-eqz p1, :cond_1
 
     invoke-virtual {p1}, Lcom/android/launcher3/folder/view/FolderIconView;->getFolderInfo()Lcom/android/launcher3/folder/FolderInfo;
 
@@ -458,25 +436,14 @@
     return-void
 
     :cond_1
-    invoke-virtual {p1}, Lcom/android/launcher3/folder/view/FolderIconView;->getFolderView()Lcom/android/launcher3/folder/view/FolderView;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/launcher3/folder/view/FolderView;->isAllIconViewInflated()Z
+    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportFolderNSecOpen()Z
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/launcher3/folder/controller/FolderIconDropController;->TAG:Ljava/lang/String;
+    if-eqz p1, :cond_0
 
-    const-string v1, "openFolderOnDragHold : all items are not bound yet"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    :cond_2
     invoke-static {}, Lcom/android/launcher3/util/logging/GSIMLogging;->getInstance()Lcom/android/launcher3/util/logging/GSIMLogging;
 
     move-result-object v1
@@ -814,7 +781,7 @@
 
     iget-object v4, v0, Lcom/android/launcher3/folder/controller/FolderIconDropController;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v5, 0x7f0900b3
+    const v5, 0x7f0800b4
 
     const/4 v7, 0x2
 
@@ -852,7 +819,7 @@
 
     iget-object v4, v0, Lcom/android/launcher3/folder/controller/FolderIconDropController;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v5, 0x7f0900bc
+    const v5, 0x7f0800bd
 
     invoke-virtual {v4, v5}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -881,7 +848,7 @@
 
     iget-object v2, v0, Lcom/android/launcher3/folder/controller/FolderIconDropController;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v4, 0x7f090036
+    const v4, 0x7f08003c
 
     const/4 v5, 0x1
 
@@ -1020,7 +987,7 @@
 
     iget-object v2, v0, Lcom/android/launcher3/folder/controller/FolderIconDropController;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v4, 0x7f0900bb
+    const v4, 0x7f0800bc
 
     invoke-virtual {v2, v4}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2120,7 +2087,7 @@
 
     move-object/from16 v26, v0
 
-    const v27, 0x7f0900af
+    const v27, 0x7f0800b2
 
     invoke-virtual/range {v26 .. v27}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 

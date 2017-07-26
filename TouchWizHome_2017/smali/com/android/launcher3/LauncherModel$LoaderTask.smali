@@ -49,23 +49,7 @@
     return-void
 .end method
 
-.method static synthetic access$1100(Lcom/android/launcher3/LauncherModel$LoaderTask;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->endLoaderTask()V
-
-    return-void
-.end method
-
-.method static synthetic access$1202(Lcom/android/launcher3/LauncherModel$LoaderTask;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mLoadAndBindStepFinished:Z
-
-    return p1
-.end method
-
-.method static synthetic access$800(Lcom/android/launcher3/LauncherModel$LoaderTask;)Z
+.method static synthetic access$400(Lcom/android/launcher3/LauncherModel$LoaderTask;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
@@ -73,7 +57,7 @@
     return v0
 .end method
 
-.method static synthetic access$900(Lcom/android/launcher3/LauncherModel$LoaderTask;)V
+.method static synthetic access$500(Lcom/android/launcher3/LauncherModel$LoaderTask;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->updateIconCache()V
@@ -81,12 +65,26 @@
     return-void
 .end method
 
+.method static synthetic access$700(Lcom/android/launcher3/LauncherModel$LoaderTask;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->endLoaderTask()V
+
+    return-void
+.end method
+
+.method static synthetic access$802(Lcom/android/launcher3/LauncherModel$LoaderTask;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mLoadAndBindStepFinished:Z
+
+    return p1
+.end method
+
 .method private endLoaderTask()V
-    .locals 5
+    .locals 4
 
     const/4 v3, 0x0
-
-    const/4 v4, 0x0
 
     const-string v1, "Launcher.Model"
 
@@ -98,7 +96,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v1}, Lcom/android/launcher3/LauncherModel;->access$1400(Lcom/android/launcher3/LauncherModel;)Ljava/lang/Object;
+    invoke-static {v1}, Lcom/android/launcher3/LauncherModel;->access$1000(Lcom/android/launcher3/LauncherModel;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -107,7 +105,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v1}, Lcom/android/launcher3/LauncherModel;->access$1600(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/LauncherModel$LoaderTask;
+    invoke-static {v1}, Lcom/android/launcher3/LauncherModel;->access$1300(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/LauncherModel$LoaderTask;
 
     move-result-object v1
 
@@ -117,22 +115,22 @@
 
     const/4 v3, 0x0
 
-    invoke-static {v1, v3}, Lcom/android/launcher3/LauncherModel;->access$1602(Lcom/android/launcher3/LauncherModel;Lcom/android/launcher3/LauncherModel$LoaderTask;)Lcom/android/launcher3/LauncherModel$LoaderTask;
+    invoke-static {v1, v3}, Lcom/android/launcher3/LauncherModel;->access$1302(Lcom/android/launcher3/LauncherModel;Lcom/android/launcher3/LauncherModel$LoaderTask;)Lcom/android/launcher3/LauncherModel$LoaderTask;
 
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     const/4 v3, 0x0
 
-    invoke-static {v1, v3}, Lcom/android/launcher3/LauncherModel;->access$1502(Lcom/android/launcher3/LauncherModel;Z)Z
+    invoke-static {v1, v3}, Lcom/android/launcher3/LauncherModel;->access$1102(Lcom/android/launcher3/LauncherModel;Z)Z
 
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     const/4 v3, 0x1
 
-    invoke-static {v1, v3}, Lcom/android/launcher3/LauncherModel;->access$1702(Lcom/android/launcher3/LauncherModel;Z)Z
+    invoke-static {v1, v3}, Lcom/android/launcher3/LauncherModel;->access$1402(Lcom/android/launcher3/LauncherModel;Z)Z
 
-    invoke-static {}, Lcom/android/launcher3/LauncherModel;->access$1800()Ljava/util/ArrayList;
+    invoke-static {}, Lcom/android/launcher3/LauncherModel;->access$1500()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -148,7 +146,7 @@
 
     invoke-static {v1, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {}, Lcom/android/launcher3/LauncherModel;->access$1800()Ljava/util/ArrayList;
+    invoke-static {}, Lcom/android/launcher3/LauncherModel;->access$1500()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -184,7 +182,7 @@
 
     :cond_1
     :try_start_1
-    invoke-static {}, Lcom/android/launcher3/LauncherModel;->access$1800()Ljava/util/ArrayList;
+    invoke-static {}, Lcom/android/launcher3/LauncherModel;->access$1500()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -195,27 +193,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    invoke-static {v1}, Lcom/android/launcher3/LauncherModel;->access$1900(Lcom/android/launcher3/LauncherModel;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    invoke-static {v1, v4}, Lcom/android/launcher3/LauncherModel;->access$1902(Lcom/android/launcher3/LauncherModel;Z)Z
-
-    iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    new-instance v2, Lcom/android/launcher3/LauncherModel$LoaderTask$3;
-
-    invoke-direct {v2, p0}, Lcom/android/launcher3/LauncherModel$LoaderTask$3;-><init>(Lcom/android/launcher3/LauncherModel$LoaderTask;)V
-
-    invoke-static {v1, v2}, Lcom/android/launcher3/LauncherModel;->access$2000(Lcom/android/launcher3/LauncherModel;Ljava/lang/Runnable;)V
-
-    :cond_3
     return-void
 .end method
 
@@ -240,7 +217,7 @@
 
     iget-object v2, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v2}, Lcom/android/launcher3/LauncherModel;->access$700(Lcom/android/launcher3/LauncherModel;)Z
+    invoke-static {v2}, Lcom/android/launcher3/LauncherModel;->access$300(Lcom/android/launcher3/LauncherModel;)Z
 
     move-result v2
 
@@ -256,7 +233,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$700(Lcom/android/launcher3/LauncherModel;)Z
+    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$300(Lcom/android/launcher3/LauncherModel;)Z
 
     move-result v0
 
@@ -309,7 +286,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$600(Lcom/android/launcher3/LauncherModel;)Z
+    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$200(Lcom/android/launcher3/LauncherModel;)Z
 
     move-result v0
 
@@ -319,7 +296,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$1000(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/DisableableAppCache;
+    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$600(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/DisableableAppCache;
 
     move-result-object v0
 
@@ -339,7 +316,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/launcher3/LauncherModel;->access$702(Lcom/android/launcher3/LauncherModel;Z)Z
+    invoke-static {v0, v1}, Lcom/android/launcher3/LauncherModel;->access$302(Lcom/android/launcher3/LauncherModel;Z)Z
 
     monitor-exit p0
     :try_end_0
@@ -349,7 +326,7 @@
     :goto_0
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$600(Lcom/android/launcher3/LauncherModel;)Z
+    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$200(Lcom/android/launcher3/LauncherModel;)Z
 
     move-result v0
 
@@ -386,172 +363,6 @@
     goto :goto_0
 .end method
 
-.method private loadAndBindDeepShortcuts()V
-    .locals 6
-
-    const-string v3, "Launcher.Model"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "loadAndBindDeepShortcuts mDeepShortcutsLoaded="
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    iget-object v5, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    invoke-static {v5}, Lcom/android/launcher3/LauncherModel;->access$000(Lcom/android/launcher3/LauncherModel;)Z
-
-    move-result v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/android/launcher3/LauncherAppState;->isHomeOnlyModeEnabled()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    iget-object v0, v3, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
-
-    :goto_0
-    iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    invoke-static {v3}, Lcom/android/launcher3/LauncherModel;->access$000(Lcom/android/launcher3/LauncherModel;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_3
-
-    iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    invoke-static {v4}, Lcom/android/launcher3/LauncherModel;->access$100(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;->hasHostPermission()Z
-
-    move-result v4
-
-    invoke-static {v3, v4}, Lcom/android/launcher3/LauncherModel;->access$202(Lcom/android/launcher3/LauncherModel;Z)Z
-
-    iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    invoke-static {v3}, Lcom/android/launcher3/LauncherModel;->access$200(Lcom/android/launcher3/LauncherModel;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mContext:Landroid/content/Context;
-
-    invoke-static {v3}, Lcom/android/launcher3/common/compat/UserManagerCompat;->getInstance(Landroid/content/Context;)Lcom/android/launcher3/common/compat/UserManagerCompat;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/android/launcher3/common/compat/UserManagerCompat;->getUserProfiles()Ljava/util/List;
-
-    move-result-object v3
-
-    invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v3
-
-    :goto_1
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/android/launcher3/common/compat/UserHandleCompat;
-
-    iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    invoke-static {v4}, Lcom/android/launcher3/LauncherModel;->access$100(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v2}, Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;->queryForAllShortcuts(Lcom/android/launcher3/common/compat/UserHandleCompat;)Ljava/util/List;
-
-    move-result-object v1
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v0, v4, v2, v1}, Lcom/android/launcher3/common/model/DataLoader;->updateDeepShortcutMap(Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Ljava/util/List;)V
-
-    goto :goto_1
-
-    :cond_0
-    iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    iget-object v0, v3, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
-
-    goto :goto_0
-
-    :cond_1
-    monitor-enter p0
-
-    :try_start_0
-    iget-boolean v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
-
-    if-eqz v3, :cond_2
-
-    monitor-exit p0
-
-    :goto_2
-    return-void
-
-    :cond_2
-    iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    const/4 v4, 0x1
-
-    invoke-static {v3, v4}, Lcom/android/launcher3/LauncherModel;->access$002(Lcom/android/launcher3/LauncherModel;Z)Z
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :cond_3
-    invoke-virtual {v0}, Lcom/android/launcher3/common/model/DataLoader;->bindDeepShortcuts()V
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception v3
-
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v3
-.end method
-
 .method private loadAndBindWorkspace()Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
     .locals 6
 
@@ -579,7 +390,7 @@
 
     iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v3}, Lcom/android/launcher3/LauncherModel;->access$600(Lcom/android/launcher3/LauncherModel;)Z
+    invoke-static {v3}, Lcom/android/launcher3/LauncherModel;->access$200(Lcom/android/launcher3/LauncherModel;)Z
 
     move-result v3
 
@@ -595,7 +406,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v1}, Lcom/android/launcher3/LauncherModel;->access$600(Lcom/android/launcher3/LauncherModel;)Z
+    invoke-static {v1}, Lcom/android/launcher3/LauncherModel;->access$200(Lcom/android/launcher3/LauncherModel;)Z
 
     move-result v1
 
@@ -609,7 +420,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v1, v5}, Lcom/android/launcher3/LauncherModel;->access$702(Lcom/android/launcher3/LauncherModel;Z)Z
+    invoke-static {v1, v5}, Lcom/android/launcher3/LauncherModel;->access$302(Lcom/android/launcher3/LauncherModel;Z)Z
 
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -663,7 +474,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v1}, Lcom/android/launcher3/LauncherModel;->access$400(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/IconCache;
+    invoke-static {v1}, Lcom/android/launcher3/LauncherModel;->access$000(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/IconCache;
 
     move-result-object v1
 
@@ -684,7 +495,7 @@
 
     iget-object v2, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v2}, Lcom/android/launcher3/LauncherModel;->access$1300(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/DeferredHandler;
+    invoke-static {v2}, Lcom/android/launcher3/LauncherModel;->access$900(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/DeferredHandler;
 
     move-result-object v2
 
@@ -849,7 +660,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v4}, Lcom/android/launcher3/LauncherModel;->access$1400(Lcom/android/launcher3/LauncherModel;)Ljava/lang/Object;
+    invoke-static {v4}, Lcom/android/launcher3/LauncherModel;->access$1000(Lcom/android/launcher3/LauncherModel;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -858,20 +669,19 @@
     :try_start_0
     iget-boolean v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
-    if-eqz v4, :cond_1
+    if-eqz v4, :cond_0
 
     monitor-exit v5
 
-    :cond_0
     :goto_0
     return-void
 
-    :cond_1
+    :cond_0
     iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     const/4 v6, 0x1
 
-    invoke-static {v4, v6}, Lcom/android/launcher3/LauncherModel;->access$1502(Lcom/android/launcher3/LauncherModel;Z)Z
+    invoke-static {v4, v6}, Lcom/android/launcher3/LauncherModel;->access$1102(Lcom/android/launcher3/LauncherModel;Z)Z
 
     monitor-exit v5
     :try_end_0
@@ -885,7 +695,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v4}, Lcom/android/launcher3/LauncherModel;->access$300(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/LauncherAppState;
+    invoke-static {v4}, Lcom/android/launcher3/LauncherModel;->access$1200(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v4
 
@@ -909,7 +719,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_3
+    if-eqz v4, :cond_2
 
     const-string v4, "com.sec.android.app.launcher.hideapps.prefs"
 
@@ -917,7 +727,7 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
     invoke-static {}, Lcom/android/launcher3/common/model/FavoritesProvider;->getInstance()Lcom/android/launcher3/common/model/FavoritesProvider;
 
@@ -925,7 +735,7 @@
 
     invoke-virtual {v4, v0}, Lcom/android/launcher3/common/model/FavoritesProvider;->applyHideItem(Ljava/util/Set;)V
 
-    :cond_2
+    :cond_1
     invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v3
@@ -936,7 +746,7 @@
 
     invoke-interface {v3}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    :cond_3
+    :cond_2
     const-string v4, "Launcher.Model"
 
     const-string v5, "step 1: loading workspace"
@@ -949,7 +759,7 @@
 
     iget-boolean v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
-    if-eqz v4, :cond_4
+    if-eqz v4, :cond_3
 
     const-string v4, "Launcher.Model"
 
@@ -969,12 +779,12 @@
 
     throw v4
 
-    :cond_4
+    :cond_3
     invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->waitForIdle()V
 
     iget-boolean v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
-    if-eqz v4, :cond_5
+    if-eqz v4, :cond_4
 
     const-string v4, "Launcher.Model"
 
@@ -984,8 +794,8 @@
 
     goto :goto_0
 
-    :cond_5
-    if-eqz v1, :cond_6
+    :cond_4
+    if-eqz v1, :cond_5
 
     const-string v4, "Launcher.Model"
 
@@ -997,12 +807,12 @@
 
     iget-object v4, v4, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
-    invoke-virtual {v4, v1, p0}, Lcom/android/launcher3/home/HomeLoader;->startPageLoaderTask(Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
+    invoke-virtual {v4, v1}, Lcom/android/launcher3/home/HomeLoader;->executeLoaderTask(Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;)V
 
-    :cond_6
+    :cond_5
     iget-boolean v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
-    if-eqz v4, :cond_7
+    if-eqz v4, :cond_6
 
     const-string v4, "Launcher.Model"
 
@@ -1012,12 +822,12 @@
 
     goto/16 :goto_0
 
-    :cond_7
+    :cond_6
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportHomeModeChange()Z
 
     move-result v4
 
-    if-eqz v4, :cond_9
+    if-eqz v4, :cond_8
 
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -1027,7 +837,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_9
+    if-eqz v4, :cond_8
 
     const-string v4, "Launcher.Model"
 
@@ -1035,15 +845,15 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-nez v1, :cond_8
+    if-nez v1, :cond_7
 
     invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->endLoaderTask()V
 
-    :cond_8
+    :cond_7
     :goto_1
     iget-boolean v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
-    if-eqz v4, :cond_a
+    if-eqz v4, :cond_9
 
     const-string v4, "Launcher.Model"
 
@@ -1053,7 +863,7 @@
 
     goto/16 :goto_0
 
-    :cond_9
+    :cond_8
     const-string v4, "Launcher.Model"
 
     const-string v5, "step 2: loading all apps"
@@ -1064,7 +874,7 @@
 
     goto :goto_1
 
-    :cond_a
+    :cond_9
     const-string v4, "Launcher.Model"
 
     const-string v5, "step 3: loading widgets"
@@ -1073,21 +883,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v4, v7, v7, v8}, Lcom/android/launcher3/LauncherModel;->access$500(Lcom/android/launcher3/LauncherModel;[Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
-
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportDeepShortcut()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
-
-    const-string v4, "Launcher.Model"
-
-    const-string v5, "step 4: loading deep shortcuts"
-
-    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->loadAndBindDeepShortcuts()V
+    invoke-static {v4, v7, v7, v8}, Lcom/android/launcher3/LauncherModel;->access$100(Lcom/android/launcher3/LauncherModel;[Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
 
     goto/16 :goto_0
 .end method
@@ -1112,7 +908,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$700(Lcom/android/launcher3/LauncherModel;)Z
+    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$300(Lcom/android/launcher3/LauncherModel;)Z
 
     move-result v0
 
@@ -1120,7 +916,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$600(Lcom/android/launcher3/LauncherModel;)Z
+    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$200(Lcom/android/launcher3/LauncherModel;)Z
 
     move-result v0
 
@@ -1138,7 +934,7 @@
     :cond_2
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$1400(Lcom/android/launcher3/LauncherModel;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$1000(Lcom/android/launcher3/LauncherModel;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -1147,7 +943,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$1500(Lcom/android/launcher3/LauncherModel;)Z
+    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$1100(Lcom/android/launcher3/LauncherModel;)Z
 
     move-result v0
 
@@ -1178,7 +974,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$1300(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/DeferredHandler;
+    invoke-static {v0}, Lcom/android/launcher3/LauncherModel;->access$900(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/DeferredHandler;
 
     move-result-object v0
 
@@ -1194,7 +990,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v2, v2, v1}, Lcom/android/launcher3/LauncherModel;->access$500(Lcom/android/launcher3/LauncherModel;[Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
+    invoke-static {v0, v2, v2, v1}, Lcom/android/launcher3/LauncherModel;->access$100(Lcom/android/launcher3/LauncherModel;[Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
 
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -1254,7 +1050,7 @@
 
     iget-object v2, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v2}, Lcom/android/launcher3/LauncherModel;->access$1400(Lcom/android/launcher3/LauncherModel;)Ljava/lang/Object;
+    invoke-static {v2}, Lcom/android/launcher3/LauncherModel;->access$1000(Lcom/android/launcher3/LauncherModel;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -1275,7 +1071,7 @@
     :cond_0
     iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v3}, Lcom/android/launcher3/LauncherModel;->access$2100(Lcom/android/launcher3/LauncherModel;)Ljava/lang/ref/WeakReference;
+    invoke-static {v3}, Lcom/android/launcher3/LauncherModel;->access$1600(Lcom/android/launcher3/LauncherModel;)Ljava/lang/ref/WeakReference;
 
     move-result-object v3
 
@@ -1290,7 +1086,7 @@
     :cond_1
     iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-static {v3}, Lcom/android/launcher3/LauncherModel;->access$2100(Lcom/android/launcher3/LauncherModel;)Ljava/lang/ref/WeakReference;
+    invoke-static {v3}, Lcom/android/launcher3/LauncherModel;->access$1600(Lcom/android/launcher3/LauncherModel;)Ljava/lang/ref/WeakReference;
 
     move-result-object v3
 

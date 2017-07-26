@@ -127,8 +127,6 @@
 
     check-cast v1, Landroid/util/Pair;
 
-    if-eqz v1, :cond_0
-
     iget-object v2, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v2, Ljava/lang/String;

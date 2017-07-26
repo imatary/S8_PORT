@@ -103,7 +103,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c004a
+    const v1, 0x7f0b0042
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -117,7 +117,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c0030
+    const v1, 0x7f0b0028
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -131,7 +131,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c002e
+    const v1, 0x7f0b0026
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -145,7 +145,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c002f
+    const v1, 0x7f0b0027
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -287,7 +287,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/folder/FolderTransitionAnimation;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v5, 0x7f060010
+    const v5, 0x7f05000f
 
     invoke-static {v4, v5}, Landroid/animation/AnimatorInflater;->loadAnimator(Landroid/content/Context;I)Landroid/animation/Animator;
 
@@ -494,7 +494,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/folder/FolderTransitionAnimation;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v2, 0x7f060005
+    const v2, 0x7f050005
 
     invoke-static {v1, v2}, Landroid/animation/AnimatorInflater;->loadAnimator(Landroid/content/Context;I)Landroid/animation/Animator;
 
@@ -524,7 +524,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/folder/FolderTransitionAnimation;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v2, 0x7f06000b
+    const v2, 0x7f05000b
 
     invoke-static {v1, v2}, Landroid/animation/AnimatorInflater;->loadAnimator(Landroid/content/Context;I)Landroid/animation/Animator;
 
@@ -1210,7 +1210,7 @@
 .end method
 
 .method public getEnterFromFolderAddAppsAnimation(Lcom/android/launcher3/folder/view/FolderView;Ljava/util/ArrayList;)Landroid/animation/Animator;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1240,18 +1240,6 @@
     iget-object v0, p0, Lcom/android/launcher3/folder/FolderTransitionAnimation;->mStageAnimator:Landroid/animation/AnimatorSet;
 
     invoke-direct {p0, v0, p1, p2}, Lcom/android/launcher3/folder/FolderTransitionAnimation;->animateAddItemStart(Landroid/animation/AnimatorSet;Lcom/android/launcher3/folder/view/FolderView;Ljava/util/ArrayList;)V
-
-    iget v0, p0, Lcom/android/launcher3/folder/FolderTransitionAnimation;->mFolderExpandDuration:I
-
-    int-to-float v0, v0
-
-    const/high16 v1, 0x3fc00000    # 1.5f
-
-    mul-float/2addr v0, v1
-
-    float-to-long v0, v0
-
-    invoke-virtual {p1, v0, v1}, Lcom/android/launcher3/folder/view/FolderView;->setSuppressFolderNameFocus(J)V
 
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/folder/FolderTransitionAnimation;->mStageAnimator:Landroid/animation/AnimatorSet;
@@ -1310,20 +1298,8 @@
 
     invoke-virtual {v2, v3, p2, v4, v5}, Lcom/android/launcher3/folder/FolderTransitionAnimation$FakeFolderIconAnimation;->animateOpen(Landroid/animation/AnimatorSet;Landroid/view/View;J)V
 
-    :goto_0
-    iget v2, p0, Lcom/android/launcher3/folder/FolderTransitionAnimation;->mFolderExpandDuration:I
-
-    int-to-float v2, v2
-
-    const/high16 v3, 0x3fc00000    # 1.5f
-
-    mul-float/2addr v2, v3
-
-    float-to-long v2, v2
-
-    invoke-virtual {p1, v2, v3}, Lcom/android/launcher3/folder/view/FolderView;->setSuppressFolderNameFocus(J)V
-
     :cond_0
+    :goto_0
     iget-object v2, p0, Lcom/android/launcher3/folder/FolderTransitionAnimation;->mStageAnimator:Landroid/animation/AnimatorSet;
 
     return-object v2

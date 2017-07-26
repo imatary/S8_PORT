@@ -12,8 +12,6 @@
 
 
 # static fields
-.field private static final CONFIGURATION_CHANGE_DELAY:I = 0x12c
-
 .field private static final MAX_COUNT:I = 0x32
 
 .field private static final MIN_COUNT_CREATE_FOLDER:I = 0x2
@@ -335,9 +333,9 @@
     move-result-object v4
 
     :goto_1
-    new-instance v6, Lcom/android/launcher3/common/multiselect/MultiSelectManager$3;
+    new-instance v6, Lcom/android/launcher3/common/multiselect/MultiSelectManager$1;
 
-    invoke-direct {v6, p0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager$3;-><init>(Lcom/android/launcher3/common/multiselect/MultiSelectManager;)V
+    invoke-direct {v6, p0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager$1;-><init>(Lcom/android/launcher3/common/multiselect/MultiSelectManager;)V
 
     if-eqz v7, :cond_4
 
@@ -672,7 +670,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v5, 0x7f09005d
+    const v5, 0x7f080063
 
     invoke-virtual {v4, v5}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -1158,7 +1156,7 @@
 .end method
 
 .method public onChangeSelectMode(ZZ)V
-    .locals 8
+    .locals 6
 
     const/4 v1, 0x1
 
@@ -1235,7 +1233,7 @@
     goto :goto_0
 
     :cond_1
-    if-eqz p1, :cond_6
+    if-eqz p1, :cond_5
 
     invoke-direct {p0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->enableHelpDialog()Z
 
@@ -1243,47 +1241,7 @@
 
     if-eqz v3, :cond_2
 
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->isTablet()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_5
-
-    iget-object v3, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    invoke-virtual {v3}, Lcom/android/launcher3/Launcher;->isHomeStage()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_5
-
-    iget-object v3, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    invoke-virtual {v3}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v3
-
-    iget v3, v3, Landroid/content/res/Configuration;->orientation:I
-
-    const/4 v4, 0x2
-
-    if-ne v3, v4, :cond_5
-
-    new-instance v3, Landroid/os/Handler;
-
-    invoke-direct {v3}, Landroid/os/Handler;-><init>()V
-
-    new-instance v4, Lcom/android/launcher3/common/multiselect/MultiSelectManager$1;
-
-    invoke-direct {v4, p0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager$1;-><init>(Lcom/android/launcher3/common/multiselect/MultiSelectManager;)V
-
-    const-wide/16 v6, 0x12c
-
-    invoke-virtual {v3, v4, v6, v7}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->showHelpDialog(Z)V
 
     :cond_2
     :goto_1
@@ -1310,7 +1268,7 @@
 
     iget-boolean v5, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mIsFromHomeKey:Z
 
-    if-eqz v5, :cond_7
+    if-eqz v5, :cond_6
 
     :goto_2
     invoke-virtual {v3, v4, v2, v1}, Lcom/android/launcher3/util/logging/SALogging;->insertMultiSelectCancelLog(Lcom/android/launcher3/Launcher;ZZ)V
@@ -1321,11 +1279,6 @@
     return-void
 
     :cond_5
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->showHelpDialog(Z)V
-
-    goto :goto_1
-
-    :cond_6
     invoke-virtual {p0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->isShowingHelpDialog()Z
 
     move-result v3
@@ -1336,7 +1289,7 @@
 
     goto :goto_1
 
-    :cond_7
+    :cond_6
     move v1, v2
 
     goto :goto_2
@@ -1452,7 +1405,7 @@
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
-    .locals 4
+    .locals 2
 
     iget v0, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mCurrentOrientation:I
 
@@ -1479,34 +1432,6 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/multiselect/MultiSelectPanel;->onConfigurationChangedIfNeeded()V
 
-    iget-object v0, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mMultiSelectHelpDialog:Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mMultiSelectHelpDialog:Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/common/multiselect/MultiSelectHelpDialog;->isShowingHelpDialog()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->hideHelpDialog(Z)V
-
-    new-instance v0, Landroid/os/Handler;
-
-    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
-
-    new-instance v1, Lcom/android/launcher3/common/multiselect/MultiSelectManager$2;
-
-    invoke-direct {v1, p0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager$2;-><init>(Lcom/android/launcher3/common/multiselect/MultiSelectManager;)V
-
-    const-wide/16 v2, 0x12c
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
     :cond_1
     return-void
 .end method
@@ -1522,9 +1447,15 @@
 .end method
 
 .method public postUninstallActivity()V
-    .locals 8
+    .locals 7
 
-    const/4 v7, 0x0
+    const/4 v6, 0x0
+
+    const-string v4, "MultiSelectManager"
+
+    const-string v5, "postUninstallActivity"
+
+    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mUninstallAppList:Ljava/util/ArrayList;
 
@@ -1532,62 +1463,11 @@
 
     move-result v4
 
-    if-lez v4, :cond_8
-
-    iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    invoke-virtual {v4}, Lcom/android/launcher3/Launcher;->getFragmentManager()Landroid/app/FragmentManager;
-
-    move-result-object v4
-
-    invoke-static {v4}, Lcom/android/launcher3/common/dialog/DisableAppConfirmationDialog;->isActive(Landroid/app/FragmentManager;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    const-string v4, "MultiSelectManager"
-
-    const-string v5, "postUninstallActivity - return by previous disable dialog"
-
-    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    :goto_0
-    return-void
-
-    :cond_1
-    const-string v4, "MultiSelectManager"
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "postUninstallActivity - size = "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    iget-object v6, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mUninstallAppList:Ljava/util/ArrayList;
-
-    invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
-
-    move-result v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    if-lez v4, :cond_7
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mUninstallAppList:Ljava/util/ArrayList;
 
-    invoke-virtual {v4, v7}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+    invoke-virtual {v4, v6}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -1599,7 +1479,7 @@
 
     instance-of v4, v3, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    if-eqz v4, :cond_3
+    if-eqz v4, :cond_1
 
     move-object v1, v3
 
@@ -1607,40 +1487,42 @@
 
     iget-object v0, v1, Lcom/android/launcher3/common/base/item/IconInfo;->componentName:Landroid/content/ComponentName;
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_0
 
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
 
     move-result-object v0
 
-    :cond_2
-    if-eqz v0, :cond_3
+    :cond_0
+    if-eqz v0, :cond_1
 
     invoke-virtual {v0}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
-    :cond_3
+    :cond_1
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
     invoke-static {v4, v2}, Lcom/android/launcher3/Utilities;->canDisable(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_4
+    if-eqz v4, :cond_3
 
     invoke-direct {p0, v1, v0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->disableApp(Lcom/android/launcher3/common/base/item/IconInfo;Landroid/content/ComponentName;)V
 
-    goto :goto_0
+    :cond_2
+    :goto_0
+    return-void
 
-    :cond_4
+    :cond_3
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
     invoke-static {v4, v2}, Lcom/android/launcher3/Utilities;->canUninstall(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_7
+    if-eqz v4, :cond_6
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
@@ -1648,7 +1530,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_6
+    if-eqz v4, :cond_5
 
     iget-object v4, v1, Lcom/android/launcher3/common/base/item/IconInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
 
@@ -1656,7 +1538,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_5
+    if-nez v4, :cond_4
 
     iget-object v4, v1, Lcom/android/launcher3/common/base/item/IconInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
 
@@ -1664,9 +1546,9 @@
 
     move-result v4
 
-    if-eqz v4, :cond_6
+    if-eqz v4, :cond_5
 
-    :cond_5
+    :cond_4
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
     iget-object v5, v1, Lcom/android/launcher3/common/base/item/IconInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
@@ -1675,14 +1557,14 @@
 
     goto :goto_0
 
-    :cond_6
+    :cond_5
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
     invoke-static {v4, v3}, Lcom/android/launcher3/util/UninstallAppUtils;->startUninstallActivity(Lcom/android/launcher3/Launcher;Ljava/lang/Object;)Z
 
     move-result v4
 
-    if-nez v4, :cond_0
+    if-nez v4, :cond_2
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mPostUninstallPendingList:Ljava/util/ArrayList;
 
@@ -1698,41 +1580,41 @@
 
     invoke-virtual {p0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->postUninstallActivity()V
 
-    goto/16 :goto_0
+    goto :goto_0
+
+    :cond_6
+    iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mPostUninstallPendingList:Ljava/util/ArrayList;
+
+    check-cast v3, Lcom/android/launcher3/common/base/item/ItemInfo;
+
+    iget-object v5, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->title:Ljava/lang/CharSequence;
+
+    invoke-interface {v5}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    invoke-virtual {p0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->postUninstallActivity()V
+
+    goto :goto_0
 
     :cond_7
-    iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mPostUninstallPendingList:Ljava/util/ArrayList;
-
-    check-cast v3, Lcom/android/launcher3/common/base/item/ItemInfo;
-
-    iget-object v5, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->title:Ljava/lang/CharSequence;
-
-    invoke-interface {v5}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    invoke-virtual {p0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->postUninstallActivity()V
-
-    goto/16 :goto_0
-
-    :cond_8
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mPostUninstallPendingList:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v4
 
-    if-lez v4, :cond_0
+    if-lez v4, :cond_2
 
-    invoke-virtual {p0, v7}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->showToast(I)V
+    invoke-virtual {p0, v6}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->showToast(I)V
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mPostUninstallPendingList:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
-    goto/16 :goto_0
+    goto :goto_0
 .end method
 
 .method public removeAddToPersonalList(Ljava/lang/String;)V
@@ -1867,7 +1749,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v2, 0x7f100099
+    const v2, 0x7f0f00a4
 
     invoke-virtual {v1, v2}, Lcom/android/launcher3/Launcher;->findViewById(I)Landroid/view/View;
 
@@ -1879,7 +1761,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v2, 0x7f10009a
+    const v2, 0x7f0f00a5
 
     invoke-virtual {v1, v2}, Lcom/android/launcher3/Launcher;->findViewById(I)Landroid/view/View;
 
@@ -1966,7 +1848,7 @@
 .method public showToast(I)V
     .locals 11
 
-    const v10, 0x7f09005e
+    const v10, 0x7f080064
 
     const/4 v8, 0x3
 
@@ -2057,7 +1939,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v7, 0x7f09005b
+    const v7, 0x7f080061
 
     invoke-virtual {v4, v7}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2111,7 +1993,7 @@
     :cond_6
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v7, 0x7f09005a
+    const v7, 0x7f080060
 
     invoke-virtual {v4, v7}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2138,7 +2020,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v7, 0x7f090060
+    const v7, 0x7f080066
 
     invoke-virtual {v4, v7}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2195,7 +2077,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v7, 0x7f090057
+    const v7, 0x7f08005d
 
     invoke-virtual {v4, v7}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2226,7 +2108,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v5, 0x7f090058
+    const v5, 0x7f08005e
 
     invoke-virtual {v4, v5}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2245,7 +2127,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v5, 0x7f090056
+    const v5, 0x7f08005c
 
     invoke-virtual {v4, v5}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2272,7 +2154,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v7, 0x7f090063
+    const v7, 0x7f080069
 
     invoke-virtual {v4, v7}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2304,7 +2186,7 @@
 
     iget-object v5, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v8, 0x7f090061
+    const v8, 0x7f080067
 
     invoke-virtual {v5, v8}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2329,7 +2211,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v7, 0x7f090064
+    const v7, 0x7f08006a
 
     invoke-virtual {v4, v7}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2347,7 +2229,7 @@
 
     iget-object v8, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v9, 0x7f090061
+    const v9, 0x7f080067
 
     invoke-virtual {v8, v9}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2364,7 +2246,7 @@
     :cond_a
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v7, 0x7f090062
+    const v7, 0x7f080068
 
     invoke-virtual {v4, v7}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2382,7 +2264,7 @@
 
     iget-object v8, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v9, 0x7f090061
+    const v9, 0x7f080067
 
     invoke-virtual {v8, v9}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2415,7 +2297,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v7, 0x7f090063
+    const v7, 0x7f080069
 
     invoke-virtual {v4, v7}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2470,7 +2352,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v7, 0x7f090064
+    const v7, 0x7f08006a
 
     invoke-virtual {v4, v7}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 
@@ -2503,7 +2385,7 @@
     :cond_c
     iget-object v4, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v7, 0x7f090062
+    const v7, 0x7f080068
 
     invoke-virtual {v4, v7}, Lcom/android/launcher3/Launcher;->getString(I)Ljava/lang/String;
 

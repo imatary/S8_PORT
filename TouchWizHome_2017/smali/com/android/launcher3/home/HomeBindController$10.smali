@@ -37,9 +37,11 @@
 .method public run()V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeBindController$10;->this$0:Lcom/android/launcher3/home/HomeBindController;
+    invoke-static {}, Lcom/android/launcher3/util/logging/GSIMLogging;->getInstance()Lcom/android/launcher3/util/logging/GSIMLogging;
 
-    invoke-virtual {v0}, Lcom/android/launcher3/home/HomeBindController;->finishBindingItems()V
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/launcher3/util/logging/GSIMLogging;->runFirstAppStatusLogging()V
 
     return-void
 .end method

@@ -926,11 +926,15 @@
 
     if-nez v18, :cond_8
 
-    move-object/from16 v0, p1
+    move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->extraDragInfoList:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/launcher3/home/HotseatDragController;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    invoke-static {v2}, Lcom/android/launcher3/Utilities;->hasFolderItem(Ljava/util/ArrayList;)Z
+    invoke-virtual {v2}, Lcom/android/launcher3/Launcher;->getMultiSelectManager()Lcom/android/launcher3/common/multiselect/MultiSelectManager;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->hasFolderItem()Z
 
     move-result v2
 
@@ -1069,11 +1073,15 @@
 
     if-nez v18, :cond_a
 
-    move-object/from16 v0, p1
+    move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->extraDragInfoList:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/launcher3/home/HotseatDragController;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    invoke-static {v2}, Lcom/android/launcher3/Utilities;->hasFolderItem(Ljava/util/ArrayList;)Z
+    invoke-virtual {v2}, Lcom/android/launcher3/Launcher;->getMultiSelectManager()Lcom/android/launcher3/common/multiselect/MultiSelectManager;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->hasFolderItem()Z
 
     move-result v2
 
@@ -2384,8 +2392,6 @@
 .method private sayDragTalkBack(ZZII)V
     .locals 9
 
-    const v6, 0x7f0900b2
-
     const/4 v8, 0x1
 
     const/4 v7, 0x0
@@ -2404,7 +2410,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v4, 0x7f0900b6
+    const v4, 0x7f0800b7
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2420,7 +2426,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0900b5
+    const v4, 0x7f0800b6
 
     const/4 v5, 0x2
 
@@ -2476,58 +2482,7 @@
     move v1, p4
 
     :goto_1
-    new-array v3, v8, [Ljava/lang/Object;
-
-    add-int/lit8 v4, v1, 0x1
-
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    aput-object v4, v3, v7
-
-    invoke-virtual {v2, v6, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_2
-    move v1, p3
-
-    goto :goto_1
-
-    :cond_3
-    iget-object v3, p0, Lcom/android/launcher3/home/HotseatDragController;->mHotseat:Lcom/android/launcher3/home/Hotseat;
-
-    invoke-virtual {v3}, Lcom/android/launcher3/home/Hotseat;->isVerticalHotseat()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_4
-
-    move v1, p4
-
-    :goto_2
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const v4, 0x7f0900b1
-
-    invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string v4, " "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
+    const v3, 0x7f0800b3
 
     new-array v4, v8, [Ljava/lang/Object;
 
@@ -2539,24 +2494,25 @@
 
     aput-object v5, v4, v7
 
-    invoke-virtual {v2, v6, v4}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2, v3, v4}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 
-    :cond_4
+    :cond_2
     move v1, p3
 
-    goto :goto_2
+    goto :goto_1
+
+    :cond_3
+    const v3, 0x7f0800b5
+
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
 .end method
 
 .method private setReorderTarget()Z
@@ -3576,28 +3532,11 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/android/launcher3/home/HotseatDragController;->mDragInfo:Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;
-
-    if-eqz v0, :cond_2
-
-    iget-boolean v0, p1, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->cancelled:Z
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, p0, Lcom/android/launcher3/home/HotseatDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
-
-    iget-object v1, p0, Lcom/android/launcher3/home/HotseatDragController;->mDragInfo:Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;
-
-    iget-object v1, v1, Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;->cell:Landroid/view/View;
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/home/HomeController;->updateCountBadge(Landroid/view/View;Z)V
-
-    :cond_2
-    if-eqz p2, :cond_3
+    if-eqz p2, :cond_2
 
     iput-boolean v2, p0, Lcom/android/launcher3/home/HotseatDragController;->mRestorePosition:Z
 
-    :cond_3
+    :cond_2
     iget-object v0, p0, Lcom/android/launcher3/home/HotseatDragController;->mFolderController:Lcom/android/launcher3/folder/controller/FolderIconDropController;
 
     iget v1, p0, Lcom/android/launcher3/home/HotseatDragController;->mDragMode:I
@@ -4958,8 +4897,6 @@
     :cond_0
     if-nez p3, :cond_1
 
-    invoke-virtual {p0, v8, v10}, Lcom/android/launcher3/home/HotseatDragController;->removeEmptyCells(ZZ)V
-
     iget-object v0, p0, Lcom/android/launcher3/home/HotseatDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
 
     iget-object v1, p0, Lcom/android/launcher3/home/HotseatDragController;->mDragInfo:Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;
@@ -4989,14 +4926,6 @@
     iget-object v1, v1, Lcom/android/launcher3/common/base/view/CellLayout$CellInfo;->cell:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/home/HotseatCellLayout;->onDropChild(Landroid/view/View;)V
-
-    iget-boolean v0, p2, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->cancelled:Z
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/android/launcher3/home/HotseatDragController;->mHomeController:Lcom/android/launcher3/home/HomeController;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/home/HomeController;->exitDragStateDelayed()V
 
     :cond_1
     iget-boolean v0, p2, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->cancelled:Z

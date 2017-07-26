@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/allapps/controller/AppsController;->replaceFolderWithFinalItem(Lcom/android/launcher3/common/base/item/ItemInfo;ILandroid/view/View;Z)V
+    value = Lcom/android/launcher3/allapps/controller/AppsController;->onOptionSelectedSearchRecommend()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,11 +35,19 @@
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 3
 
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$15;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
-    invoke-virtual {v0}, Lcom/android/launcher3/allapps/controller/AppsController;->setAlphabeticList()V
+    invoke-virtual {v0}, Lcom/android/launcher3/allapps/controller/AppsController;->searchSettingCheck()V
+
+    iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$15;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
+
+    const/4 v1, 0x3
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/allapps/controller/AppsController;->changeState(IZ)Z
 
     return-void
 .end method

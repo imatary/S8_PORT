@@ -85,6 +85,16 @@
 
     move-result-object v2
 
+    iget-object v3, p0, Landroid/support/v7/widget/RecyclerView$5;->this$0:Landroid/support/v7/widget/RecyclerView;
+
+    invoke-virtual {v3}, Landroid/support/v7/widget/RecyclerView;->exceptionLabel()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
@@ -144,6 +154,16 @@
     move-result-object v3
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    iget-object v4, p0, Landroid/support/v7/widget/RecyclerView$5;->this$0:Landroid/support/v7/widget/RecyclerView;
+
+    invoke-virtual {v4}, Landroid/support/v7/widget/RecyclerView;->exceptionLabel()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -253,29 +273,31 @@
 
     invoke-virtual {p0}, Landroid/support/v7/widget/RecyclerView$5;->getChildCount()I
 
-    move-result v0
+    move-result v1
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
     :goto_0
-    if-ge v1, v0, :cond_0
+    if-ge v2, v1, :cond_0
 
-    iget-object v2, p0, Landroid/support/v7/widget/RecyclerView$5;->this$0:Landroid/support/v7/widget/RecyclerView;
+    invoke-virtual {p0, v2}, Landroid/support/v7/widget/RecyclerView$5;->getChildAt(I)Landroid/view/View;
 
-    invoke-virtual {p0, v1}, Landroid/support/v7/widget/RecyclerView$5;->getChildAt(I)Landroid/view/View;
+    move-result-object v0
 
-    move-result-object v3
+    iget-object v3, p0, Landroid/support/v7/widget/RecyclerView$5;->this$0:Landroid/support/v7/widget/RecyclerView;
 
-    invoke-virtual {v2, v3}, Landroid/support/v7/widget/RecyclerView;->dispatchChildDetached(Landroid/view/View;)V
+    invoke-virtual {v3, v0}, Landroid/support/v7/widget/RecyclerView;->dispatchChildDetached(Landroid/view/View;)V
 
-    add-int/lit8 v1, v1, 0x1
+    invoke-virtual {v0}, Landroid/view/View;->clearAnimation()V
+
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
     :cond_0
-    iget-object v2, p0, Landroid/support/v7/widget/RecyclerView$5;->this$0:Landroid/support/v7/widget/RecyclerView;
+    iget-object v3, p0, Landroid/support/v7/widget/RecyclerView$5;->this$0:Landroid/support/v7/widget/RecyclerView;
 
-    invoke-virtual {v2}, Landroid/support/v7/widget/RecyclerView;->removeAllViews()V
+    invoke-virtual {v3}, Landroid/support/v7/widget/RecyclerView;->removeAllViews()V
 
     return-void
 .end method
@@ -294,6 +316,8 @@
     iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$5;->this$0:Landroid/support/v7/widget/RecyclerView;
 
     invoke-virtual {v1, v0}, Landroid/support/v7/widget/RecyclerView;->dispatchChildDetached(Landroid/view/View;)V
+
+    invoke-virtual {v0}, Landroid/view/View;->clearAnimation()V
 
     :cond_0
     iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$5;->this$0:Landroid/support/v7/widget/RecyclerView;

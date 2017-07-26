@@ -69,7 +69,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderView$11;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
-    invoke-static {v1}, Lcom/android/launcher3/folder/view/FolderView;->access$200(Lcom/android/launcher3/folder/view/FolderView;)Lcom/android/launcher3/folder/view/FolderNameEditText;
+    invoke-static {v1}, Lcom/android/launcher3/folder/view/FolderView;->access$000(Lcom/android/launcher3/folder/view/FolderView;)Lcom/android/launcher3/folder/view/FolderNameEditText;
 
     move-result-object v1
 
@@ -77,7 +77,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
 
-    const-string v0, "FolderView"
+    const-string v0, "Launcher.Folder"
 
     const-string v1, "onWindowFocusChanged : call showSoftInput"
 

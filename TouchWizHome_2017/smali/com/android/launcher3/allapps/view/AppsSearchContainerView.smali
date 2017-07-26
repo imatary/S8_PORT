@@ -70,7 +70,7 @@
 
 .field mergeAlgorithm:Lcom/android/launcher3/allapps/AlphabeticalAppsList$MergeAlgorithm;
 
-.field thread:Lcom/android/launcher3/allapps/UpdateCheckThread;
+.field thread:Lcom/android/launcher3/appssearch/UpdateCheckThread;
 
 
 # direct methods
@@ -105,7 +105,7 @@
 
     iput-object v1, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->mSearchQueryBuilder:Landroid/text/SpannableStringBuilder;
 
-    iput-object v1, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->thread:Lcom/android/launcher3/allapps/UpdateCheckThread;
+    iput-object v1, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->thread:Lcom/android/launcher3/appssearch/UpdateCheckThread;
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -169,7 +169,7 @@
 
     iput-object v1, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->mItemDecoration:Landroid/support/v7/widget/RecyclerView$ItemDecoration;
 
-    const v1, 0x7f0a00d0
+    const v1, 0x7f0900b7
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -633,7 +633,7 @@
 
     if-nez v0, :cond_0
 
-    new-instance v0, Lcom/android/launcher3/allapps/UpdateCheckThread;
+    new-instance v0, Lcom/android/launcher3/appssearch/UpdateCheckThread;
 
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->getContext()Landroid/content/Context;
 
@@ -643,13 +643,13 @@
 
     iget-object v3, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->mApps:Lcom/android/launcher3/allapps/AlphabeticalAppsList;
 
-    invoke-direct {v0, v1, v2, p1, v3}, Lcom/android/launcher3/allapps/UpdateCheckThread;-><init>(Landroid/content/Context;ZLjava/lang/String;Lcom/android/launcher3/allapps/AlphabeticalAppsList;)V
+    invoke-direct {v0, v1, v2, p1, v3}, Lcom/android/launcher3/appssearch/UpdateCheckThread;-><init>(Landroid/content/Context;ZLjava/lang/String;Lcom/android/launcher3/allapps/AlphabeticalAppsList;)V
 
-    iput-object v0, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->thread:Lcom/android/launcher3/allapps/UpdateCheckThread;
+    iput-object v0, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->thread:Lcom/android/launcher3/appssearch/UpdateCheckThread;
 
-    iget-object v0, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->thread:Lcom/android/launcher3/allapps/UpdateCheckThread;
+    iget-object v0, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->thread:Lcom/android/launcher3/appssearch/UpdateCheckThread;
 
-    invoke-virtual {v0}, Lcom/android/launcher3/allapps/UpdateCheckThread;->start()V
+    invoke-virtual {v0}, Lcom/android/launcher3/appssearch/UpdateCheckThread;->start()V
 
     :cond_0
     return-void
@@ -922,7 +922,7 @@
 
     invoke-super {p0}, Lcom/android/launcher3/common/base/view/BaseContainerView;->onFinishInflate()V
 
-    const v3, 0x7f10003b
+    const v3, 0x7f0f004b
 
     invoke-virtual {p0, v3}, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->findViewById(I)Landroid/view/View;
 
@@ -934,7 +934,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/launcher3/allapps/view/AppsSearchContainerView$1;-><init>(Lcom/android/launcher3/allapps/view/AppsSearchContainerView;)V
 
-    const v3, 0x7f100037
+    const v3, 0x7f0f0047
 
     invoke-virtual {p0, v3}, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->findViewById(I)Landroid/view/View;
 
@@ -948,7 +948,7 @@
 
     invoke-virtual {v3, v0}, Landroid/view/ViewGroup;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    const v3, 0x7f10003c
+    const v3, 0x7f0f004c
 
     invoke-virtual {p0, v3}, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->findViewById(I)Landroid/view/View;
 
@@ -960,7 +960,7 @@
 
     invoke-virtual {v3, v0}, Landroid/view/View;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    const v3, 0x7f100038
+    const v3, 0x7f0f0048
 
     invoke-virtual {p0, v3}, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->findViewById(I)Landroid/view/View;
 
@@ -970,7 +970,7 @@
 
     iput-object v3, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->mSearchSubTitleBar:Landroid/widget/LinearLayout;
 
-    const v3, 0x7f10003a
+    const v3, 0x7f0f004a
 
     invoke-virtual {p0, v3}, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->findViewById(I)Landroid/view/View;
 
@@ -980,7 +980,7 @@
 
     iput-object v3, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->mSearchSubTitleText:Landroid/widget/TextView;
 
-    const v3, 0x7f100039
+    const v3, 0x7f0f0049
 
     invoke-virtual {p0, v3}, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->findViewById(I)Landroid/view/View;
 
@@ -990,7 +990,7 @@
 
     iput-object v3, p0, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->mSearchSubTitle:Landroid/widget/TextView;
 
-    const v3, 0x7f100044
+    const v3, 0x7f0f0054
 
     invoke-virtual {p0, v3}, Lcom/android/launcher3/allapps/view/AppsSearchContainerView;->findViewById(I)Landroid/view/View;
 
@@ -1252,7 +1252,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090012
+    const v2, 0x7f080016
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1507,7 +1507,7 @@
 
     move-result-object v1
 
-    const/high16 v2, 0x7f090000
+    const/high16 v2, 0x7f080000
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1626,7 +1626,7 @@
 
     move-result-object v1
 
-    const/high16 v2, 0x7f090000
+    const/high16 v2, 0x7f080000
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1668,7 +1668,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090011
+    const v2, 0x7f080015
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

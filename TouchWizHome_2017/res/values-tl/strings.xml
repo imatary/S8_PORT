@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">History ng paghahanap</string>
-    <string name="accessibility_add_home_screen">Magdagdag ng pahina</string>
-    <string name="accessibility_button">Button</string>
-    <string name="accessibility_dimmed">Diniliman</string>
+    <string name="about">Tungkol sa %s</string>
+    <string name="about_already_installed">Naka-install na ang pinakabagong bersiyon.</string>
+    <string name="about_home_screen">Home screen</string>
+    <string name="about_licence">Mga open source license</string>
+    <string name="about_network_err">Hindi matingnan kung may mga update. Hindi nakakonekta ang telepono mo sa isang network.</string>
+    <string name="about_new_version_exist">May bagong bersyon na available.</string>
+    <string name="about_retry">Subukang muli</string>
+    <string name="about_update">I-update</string>
+    <string name="about_version">Bersyon %s</string>
     <string name="activity_not_available">Hindi available ang app na ito para sa iyong device.</string>
     <string name="activity_not_found">Hindi naka-install ang application.</string>
     <string name="align_to_bottom">I-align sa ibaba</string>
     <string name="align_to_top">I-align sa itaas</string>
-    <string name="app_locked_toast">Naka-lock ang %s locked.</string>
     <string name="app_search">Hanapin sa telepono</string>
     <string name="app_search_no_apps">Maaari kang magdagdag ng mga shortcut sa home screen mula sa mga resulta ng paghahanap.</string>
     <string name="app_search_no_results_found">Walang nakitang mga resulta</string>
     <string name="app_search_tablet">Hanapin sa tablet</string>
-    <string name="app_unlocked_toast">Na-unlock ang %s.</string>
     <string name="application_name">TouchWiz home</string>
     <string name="apply">Gamitin</string>
     <string name="appsPicker_add_button">MAGDAGDAG</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Default na pahina</string>
     <string name="default_scroll_format">Pahina %1$d ng %2$d.</string>
     <string name="disable_message">Hindi papaganahin ang %1$s at lahat ng function kaugnay nito. Para muling paganahin ang app, pumunta sa Settings > Applications, tapos piliin ang %2$s.</string>
-    <string name="disable_message_knox_mode">Hindi papaganahin ang %1$s at lahat ng function kaugnay nito. Para muling paganahin ang app, pumunta sa %2$s settings > Apps.</string>
     <string name="disable_message_vzw">Ang %s at lahat ng tampok na kaugnay dito ay hindi pagaganahin. Para muli itong paganahin, pumunta sa Mga setting > Mga application > Application manager.</string>
     <string name="discard">I-discard</string>
     <string name="do_not_show_again">Huwag ipakita muli</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">Magdagdag ng mga app</string>
     <string name="folder_closed">Nakasara ang folder.</string>
     <string name="folder_color">Kulay ng folder</string>
+    <string name="folder_color_blue">Asul</string>
     <string name="folder_color_default">Default na kulay ng folder</string>
-    <string name="folder_color_pd">Kulay %d</string>
+    <string name="folder_color_green">Berde</string>
+    <string name="folder_color_orange">Orange</string>
+    <string name="folder_color_yellow">Dilaw</string>
     <string name="folder_hint_text">Ipasok ang pangalan ng folder</string>
     <string name="folder_microsoft_apps">Microsoft Apps</string>
     <string name="folder_multi_search_bar_hint">Humanap ng mga app</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">Wala nang espasyo sa pahinang ito</string>
     <string name="out_of_space_dialog">Wala nang lugar sa page na ito. Idaragdag ang item sa isang bagong page.</string>
     <string name="permdesc_install_widget">Makakadagdag ng mga widget sa home screen ang app na ito.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">Mababasa ng app na ito ang mga setting ng custom content page, na matatagpuan sa kaliwa ng Home screen.</string>
     <string name="permdesc_write_zeropage_settings">Mababago ng app na ito ang mga setting ng custom content page, na matatagpuan sa kaliwa ng Home screen.</string>
     <string name="permlab_install_widget">Magdagdag ng mga widget</string>
@@ -158,27 +165,21 @@
     <string name="selected">Napili</string>
     <string name="setting_apps_screen_grid">Grid ng Apps screen</string>
     <string name="shortcut_duplicate">Mayroon nang shortcut na %s.</string>
-    <string name="shortcut_installed">Naidagdag ang shortcut sa %s sa Home screen.</string>
+    <string name="shortcut_installed">Shortcut sa %s idinagdag sa home screen.</string>
     <string name="shortcut_moved_to_game_launcher">Inilipat ang icon ng game sa Game Launcher.</string>
     <string name="shortcut_uninstalled">Inalis ang shorcut na %s.</string>
     <string name="speak_now">Magsalita ngayon</string>
     <string name="swipe_up_for_more_apps">Mag-swipe pataas o pababa para sa lahat ng app</string>
     <string name="swipe_up_for_more_apps_att">Mag-swipe pataas o pababa sa screen para sa lahat ng app</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Mag-swipe pataas o pababa gamit ang dalawang daliri para sa lahat ng app.</string>
-    <string name="talkback_changed_to_ps">Ginawang %s.</string>
+    <string name="talkback_checked">Napili</string>
     <string name="talkback_folder">Folder</string>
     <string name="talkback_n_items">%d (na) item</string>
     <string name="talkback_press_back_key_to_close_folder">Pindutin ang Back key para isara ang folder.</string>
-    <string name="talkback_tab_back_button_to_close_folder">I-tap ang Back button para isara ang folder.</string>
     <string name="title_settings">Mga setting ng %s</string>
     <string name="tts_add_shortcut_on_home_screen_notice">I-drag ang icon sa itaas ng screen para idagdag sa Home screen.</string>
     <string name="tts_bottom_handle">Ibabang handle</string>
-    <string name="tts_changed_to_apps_edit_mode">Lumipat sa Apps edit mode.</string>
-    <string name="tts_changed_to_folder_edit_mode">Binago sa Folder edit mode</string>
-    <string name="tts_changed_to_home_screen_edit_mode">Lumipat sa Home screen edit mode.</string>
     <string name="tts_folder_created">Ginawa ang folder.</string>
-    <string name="tts_holding_items">Naka-hold sa %1$s at %2$d iba pa</string>
-    <string name="tts_hotseat_item_moved_from_external">Inilipat ang item sa menu bar na nasa home screen.</string>
     <string name="tts_hotseat_move_to">Posisyon %d sa menu bar.</string>
     <string name="tts_hover_item_over_other_item">%1$s bilang karagdagan saf %2$s</string>
     <string name="tts_item_added">Naidagdag na ang item.</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">Tumingin pa sa Play Store</string>
     <string name="viewtype_alphabetic_grid">Nakaayos ayon sa alpabeto</string>
     <string name="viewtype_custom_grid">Custom na pagkasunod-sunod</string>
-    <string name="voice_search">Paghahanap gamit ang boses</string>
     <string name="wallpaper_button_text">Mga Wallpaper</string>
     <string name="wallpapers_and_themes_button_text">Mga wallpaper at tema</string>
     <string name="widget_button_text">Widgets</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">Para gamitin ang function na ito, kailangan mong i-install ang %1$s. I-tap ang DOWNLOAD para i-download at i-install ang %2$s.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Sohu News</string>
-    <string name="zeropage_toutiao_title">Information express</string>
 </resources>

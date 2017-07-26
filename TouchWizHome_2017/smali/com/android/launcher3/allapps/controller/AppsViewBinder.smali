@@ -643,20 +643,6 @@
 
     invoke-virtual {v3, p1}, Lcom/android/launcher3/allapps/controller/AppsController;->updateApps(Ljava/util/ArrayList;)V
 
-    iget-object v3, p0, Lcom/android/launcher3/allapps/controller/AppsViewBinder;->mAppsController:Lcom/android/launcher3/allapps/controller/AppsController;
-
-    invoke-virtual {v3}, Lcom/android/launcher3/allapps/controller/AppsController;->getViewType()Lcom/android/launcher3/allapps/controller/AppsController$ViewType;
-
-    move-result-object v3
-
-    sget-object v4, Lcom/android/launcher3/allapps/controller/AppsController$ViewType;->ALPHABETIC_GRID:Lcom/android/launcher3/allapps/controller/AppsController$ViewType;
-
-    if-ne v3, v4, :cond_2
-
-    iget-object v3, p0, Lcom/android/launcher3/allapps/controller/AppsViewBinder;->mAppsController:Lcom/android/launcher3/allapps/controller/AppsController;
-
-    invoke-virtual {v3}, Lcom/android/launcher3/allapps/controller/AppsController;->setAlphabeticList()V
-
     :cond_2
     if-eqz p2, :cond_0
 

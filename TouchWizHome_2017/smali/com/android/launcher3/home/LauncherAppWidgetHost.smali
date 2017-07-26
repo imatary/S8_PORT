@@ -128,15 +128,11 @@
 .end method
 
 .method protected onProviderChanged(ILandroid/appwidget/AppWidgetProviderInfo;)V
-    .locals 3
+    .locals 2
 
-    iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHost;->mLauncher:Lcom/android/launcher3/Launcher;
+    iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHost;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    invoke-static {v2}, Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;->getInstance(Landroid/content/Context;)Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p1}, Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;->getLauncherAppWidgetInfo(I)Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;
+    invoke-static {v1, p2}, Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;->fromProviderInfo(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;)Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;
 
     move-result-object v0
 

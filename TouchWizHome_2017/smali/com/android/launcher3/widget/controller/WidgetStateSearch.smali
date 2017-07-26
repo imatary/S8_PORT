@@ -337,16 +337,6 @@
     return-void
 .end method
 
-.method public setFocusToSearchEditText()V
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/widget/controller/WidgetStateSearch;->mWidgetSearchbar:Lcom/android/launcher3/widget/view/WidgetSearchbar;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/widget/view/WidgetSearchbar;->setFocusToSearchEditText()V
-
-    return-void
-.end method
-
 .method public setSearchFilter(Lcom/android/launcher3/widget/view/WidgetPagedView$Filter;)V
     .locals 1
 

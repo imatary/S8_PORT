@@ -47,7 +47,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090199
+    const v4, 0x7f080199
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -59,7 +59,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f09012f
+    const v5, 0x7f080130
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -113,7 +113,7 @@
     :catch_0
     move-exception v0
 
-    const-string v2, "SettingsActivity"
+    sget-object v2, Lcom/android/launcher3/SettingsActivity;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 

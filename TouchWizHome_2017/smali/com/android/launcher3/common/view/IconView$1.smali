@@ -35,9 +35,7 @@
 
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
-    .locals 5
-
-    const/4 v3, 0x1
+    .locals 4
 
     iget-object v2, p0, Lcom/android/launcher3/common/view/IconView$1;->this$0:Lcom/android/launcher3/common/view/IconView;
 
@@ -57,7 +55,7 @@
 
     if-eqz v2, :cond_1
 
-    move v0, v3
+    const/4 v0, 0x1
 
     :goto_0
     if-eqz p2, :cond_0
@@ -85,13 +83,9 @@
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/android/launcher3/common/view/IconView$1;->this$0:Lcom/android/launcher3/common/view/IconView;
+    iget-object v3, p0, Lcom/android/launcher3/common/view/IconView$1;->this$0:Lcom/android/launcher3/common/view/IconView;
 
-    invoke-virtual {v2, v4, v0}, Lcom/android/launcher3/common/stage/StageManager;->onCheckedChanged(Landroid/view/View;Z)V
-
-    iget-object v2, p0, Lcom/android/launcher3/common/view/IconView$1;->this$0:Lcom/android/launcher3/common/view/IconView;
-
-    invoke-static {v2, v3}, Lcom/android/launcher3/common/view/IconView;->access$000(Lcom/android/launcher3/common/view/IconView;Z)V
+    invoke-virtual {v2, v3, v0}, Lcom/android/launcher3/common/stage/StageManager;->onCheckedChanged(Landroid/view/View;Z)V
 
     return-void
 

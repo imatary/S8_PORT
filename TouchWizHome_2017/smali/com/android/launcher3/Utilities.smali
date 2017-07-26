@@ -4,6 +4,8 @@
 
 
 # static fields
+.field public static final ABOUT_PREFERENCE_KEY:Ljava/lang/String; = "pref_about_page"
+
 .field private static final ACTION_EDGE_HANDLE_STATE:Ljava/lang/String; = "com.sec.android.launcher.action.EDGE_HANDLE_STATE"
 
 .field public static final ACTION_SHOW_APPS_VIEW:Ljava/lang/String; = "com.sec.launcher.action.SHOW_APPS_VIEW"
@@ -23,12 +25,6 @@
 .field public static final ATLEAST_MARSHMALLOW:Z
 
 .field public static final ATLEAST_N:Z
-
-.field public static final ATLEAST_N_MR1:Z
-
-.field public static final AXEL_UPDAY_CLASS_NAME:Ljava/lang/String; = "de.axelspringer.yana.activities.HomeActivity"
-
-.field public static final AXEL_UPDAY_PACKAGE_NAME:Ljava/lang/String; = "de.axelspringer.yana.zeropage"
 
 .field public static final BADGE_MANAGER_PREFERENCE_KEY:Ljava/lang/String; = "badge_manager"
 
@@ -60,10 +56,6 @@
 
 .field private static final FLAG_SUSPENDED:I = 0x40000000
 
-.field public static final FLIPBOARD_BRIEFING_CLASS_NAME:Ljava/lang/String; = "flipboard.boxer.gui.LaunchActivity"
-
-.field public static final FLIPBOARD_BRIEFING_PACKAGE_NAME:Ljava/lang/String; = "flipboard.boxer.app"
-
 .field public static final GRID_PREFERENCE_KEY:Ljava/lang/String; = "pref_screen_grid"
 
 .field public static final HIDE_APPS_PREFERENCE_KEY:Ljava/lang/String; = "pref_hide_apps"
@@ -92,10 +84,6 @@
 
 .field public static final SMARTSWITCH_SAVE_FILE_LENGTH:Ljava/lang/String; = "smartswich_save_file_length"
 
-.field public static final SOHU_NEWS_CLASS_NAME:Ljava/lang/String; = "com.mobilesrepublic.sohu.launcher.MainActivity"
-
-.field public static final SOHU_NEWS_PACKAGE_NAME:Ljava/lang/String; = "com.mobilesrepublic.sohu.launcher"
-
 .field public static final SUPPORT_THEME_STORE_WALLPAPERS_AND_THEMES:I = 0x0
 
 .field public static final SUPPORT_THEME_STORE_WALLPAPERS_ONLY:I = 0x1
@@ -113,10 +101,6 @@
 .field private static final THEME_STORE_WALLPAPER_ONLY_URI:Ljava/lang/String; = "themestore://MyTheme/Wallpaper"
 
 .field public static final THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
-
-.field public static final TOUTIAO_NEWS_CLASS_NAME:Ljava/lang/String; = "com.ss.android.sdk.minusscreen.samsung.activity.FeedFragmentActivity"
-
-.field public static final TOUTIAO_NEWS_PACKAGE_NAME:Ljava/lang/String; = "com.ss.android.sdk.minusscreen.samsung"
 
 .field public static final USER_FOLDER_ID_PREFIX:Ljava/lang/String; = "user_folder_"
 
@@ -199,57 +183,46 @@
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x19
+    const/16 v1, 0x15
 
     if-lt v0, v1, :cond_1
 
     move v0, v8
 
     :goto_1
-    sput-boolean v0, Lcom/android/launcher3/Utilities;->ATLEAST_N_MR1:Z
-
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_2
-
-    move v0, v8
-
-    :goto_2
     sput-boolean v0, Lcom/android/launcher3/Utilities;->ATLEAST_LOLLIPOP:Z
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
-    if-lt v0, v1, :cond_3
+    if-lt v0, v1, :cond_2
 
     move v0, v8
 
-    :goto_3
+    :goto_2
     sput-boolean v0, Lcom/android/launcher3/Utilities;->ATLEAST_KITKAT:Z
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
-    if-lt v0, v1, :cond_4
+    if-lt v0, v1, :cond_3
 
     move v0, v8
 
-    :goto_4
+    :goto_3
     sput-boolean v0, Lcom/android/launcher3/Utilities;->ATLEAST_JB_MR1:Z
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
-    if-lt v0, v1, :cond_5
+    if-lt v0, v1, :cond_4
 
     move v0, v8
 
-    :goto_5
+    :goto_4
     sput-boolean v0, Lcom/android/launcher3/Utilities;->ATLEAST_MARSHMALLOW:Z
 
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
@@ -410,11 +383,6 @@
     move v0, v9
 
     goto/16 :goto_4
-
-    :cond_5
-    move v0, v9
-
-    goto/16 :goto_5
 
     nop
 
@@ -602,10 +570,6 @@
     move-result-object v3
 
     check-cast v3, Landroid/view/View;
-
-    instance-of v4, v3, Lcom/android/launcher3/folder/view/FolderIconView;
-
-    if-nez v4, :cond_0
 
     invoke-virtual {v3}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -1327,98 +1291,6 @@
     goto :goto_0
 .end method
 
-.method public static compareByStage(Ljava/util/ArrayList;FFFF)Z
-    .locals 10
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/ArrayList",
-            "<",
-            "Landroid/util/Range;",
-            ">;FFFF)Z"
-        }
-    .end annotation
-
-    const/4 v3, 0x1
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    cmpl-float v7, p3, v7
-
-    if-eqz v7, :cond_3
-
-    div-float v7, p4, p3
-
-    float-to-double v4, v7
-
-    float-to-double v8, p1
-
-    div-double/2addr v8, v4
-
-    double-to-int v0, v8
-
-    float-to-double v8, p2
-
-    div-double/2addr v8, v4
-
-    double-to-int v2, v8
-
-    invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v7
-
-    :cond_0
-    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v8
-
-    if-eqz v8, :cond_2
-
-    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/util/Range;
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v8
-
-    invoke-virtual {v1, v8}, Landroid/util/Range;->contains(Ljava/lang/Comparable;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_0
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v8
-
-    invoke-virtual {v1, v8}, Landroid/util/Range;->contains(Ljava/lang/Comparable;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_0
-
-    :cond_1
-    :goto_0
-    return v3
-
-    :cond_2
-    if-eq v0, v2, :cond_1
-
-    move v3, v6
-
-    goto :goto_0
-
-    :cond_3
-    move v3, v6
-
-    goto :goto_0
-.end method
-
 .method public static createAppsButton(Landroid/content/Context;)Lcom/android/launcher3/common/base/item/IconInfo;
     .locals 4
 
@@ -1432,7 +1304,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090014
+    const v2, 0x7f080018
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2462,7 +2334,7 @@
 
     new-array v0, v3, [Landroid/text/InputFilter;
 
-    const v2, 0x7f09004f
+    const v2, 0x7f080055
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -2576,15 +2448,15 @@
 .end method
 
 .method public static getHomeDefaultPageKey(Landroid/content/Context;Ljava/lang/String;)I
-    .locals 4
+    .locals 3
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -2606,71 +2478,9 @@
     return v1
 
     :cond_0
-    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
-
-    move-result-object v1
-
-    const-string v2, "CscFeature_Launcher_DefaultPageNumber"
-
-    invoke-virtual {v1, v2, v3}, Lcom/samsung/android/feature/SemCscFeature;->getInt(Ljava/lang/String;I)I
+    invoke-interface {v0, p1, v2}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result v1
-
-    invoke-interface {v0, p1, v1}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
-
-    move-result v1
-
-    goto :goto_0
-.end method
-
-.method public static getKnoxContainerName(Landroid/content/Context;)Ljava/lang/String;
-    .locals 6
-
-    const-string v4, "persona"
-
-    invoke-virtual {p0, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/samsung/android/knox/SemPersonaManager;
-
-    const/4 v1, 0x0
-
-    :try_start_0
-    invoke-static {p0}, Lcom/samsung/android/knox/SemPersonaManager;->getKnoxInfoForApp(Landroid/content/Context;)Landroid/os/Bundle;
-
-    move-result-object v4
-
-    const-string v5, "userId"
-
-    invoke-virtual {v4, v5}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
-
-    move-result v3
-
-    invoke-static {p0, v3}, Lcom/samsung/android/knox/SemPersonaManager;->getPersonaName(Landroid/content/Context;I)Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result-object v1
-
-    :goto_0
-    if-nez v1, :cond_0
-
-    const-string v1, "Knox"
-
-    :cond_0
-    return-object v1
-
-    :catch_0
-    move-exception v0
-
-    const-string v4, "Launcher.Utilities"
-
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 .end method
@@ -2955,53 +2765,6 @@
 
     move-result v1
 
-    return v1
-.end method
-
-.method public static hasFolderItem(Ljava/util/ArrayList;)Z
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/ArrayList",
-            "<",
-            "Lcom/android/launcher3/common/drag/DropTarget$DragObject;",
-            ">;)Z"
-        }
-    .end annotation
-
-    const/4 v1, 0x0
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :cond_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;
-
-    if-eqz v0, :cond_0
-
-    iget-object v3, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragInfo:Ljava/lang/Object;
-
-    instance-of v3, v3, Lcom/android/launcher3/folder/FolderInfo;
-
-    if-eqz v3, :cond_0
-
-    const/4 v1, 0x1
-
-    :cond_1
     return v1
 .end method
 
@@ -4874,7 +4637,7 @@
 .method public static startActivityForResultSafely(Landroid/app/Activity;Landroid/content/Intent;I)V
     .locals 4
 
-    const v2, 0x7f090005
+    const v2, 0x7f08000b
 
     const/4 v1, 0x0
 
@@ -4963,7 +4726,7 @@
 
     if-nez v8, :cond_0
 
-    const v8, 0x7f090182
+    const v8, 0x7f080182
 
     const/4 v9, 0x0
 
@@ -5086,7 +4849,7 @@
     :catch_0
     move-exception v0
 
-    const v8, 0x7f090005
+    const v8, 0x7f08000b
 
     const/4 v9, 0x0
 
@@ -5136,7 +4899,7 @@
     :catch_1
     move-exception v0
 
-    const v8, 0x7f090005
+    const v8, 0x7f08000b
 
     const/4 v9, 0x0
 
@@ -5201,94 +4964,6 @@
     invoke-static {v8, v9, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_4
-.end method
-
-.method public static startActivityTouchDown(Landroid/app/Activity;Landroid/view/View;)Z
-    .locals 5
-
-    const/4 v4, 0x0
-
-    if-eqz p0, :cond_0
-
-    if-eqz p1, :cond_0
-
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->enableStartActivityTouchDown()Z
-
-    move-result v3
-
-    if-nez v3, :cond_1
-
-    :cond_0
-    move v3, v4
-
-    :goto_0
-    return v3
-
-    :cond_1
-    invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
-
-    move-result-object v3
-
-    instance-of v3, v3, Lcom/android/launcher3/common/base/item/IconInfo;
-
-    if-eqz v3, :cond_2
-
-    invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lcom/android/launcher3/common/base/item/IconInfo;
-
-    iget-object v3, v3, Lcom/android/launcher3/common/base/item/IconInfo;->intent:Landroid/content/Intent;
-
-    if-eqz v3, :cond_2
-
-    invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lcom/android/launcher3/common/base/item/IconInfo;
-
-    iget-object v3, v3, Lcom/android/launcher3/common/base/item/IconInfo;->intent:Landroid/content/Intent;
-
-    invoke-virtual {v3}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    invoke-virtual {v0}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
-
-    move-result-object v2
-
-    new-instance v1, Landroid/content/Intent;
-
-    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
-
-    const-string v3, "package_name"
-
-    invoke-virtual {v1, v3, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    const-string v3, "com.samsung.DO_ACTIVE_LAUNCH"
-
-    invoke-virtual {v1, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
-
-    const-string v3, "ProActivieLaunch"
-
-    const-string v4, "Sending Broadcast"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
-
-    const/4 v3, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    move v3, v4
-
-    goto :goto_0
 .end method
 
 .method private static startActivityVmPolicy(Landroid/app/Activity;Landroid/content/Intent;Landroid/os/Bundle;)V
@@ -5532,7 +5207,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0900a0
+    const v3, 0x7f0800a7
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

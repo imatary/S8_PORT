@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">Historia wyszukiwania</string>
-    <string name="accessibility_add_home_screen">Dodaj stronę</string>
-    <string name="accessibility_button">Przycisk</string>
-    <string name="accessibility_dimmed">Przyciemnione</string>
+    <string name="about">%s — informacje</string>
+    <string name="about_already_installed">Najnowsza wersja jest już zainstalowana.</string>
+    <string name="about_home_screen">Ekran startowy</string>
+    <string name="about_licence">Licencje Open source</string>
+    <string name="about_network_err">Nie można wyszukać aktualizacji. Telefon nie jest połączony z siecią.</string>
+    <string name="about_new_version_exist">Dostępna jest nowa wersja.</string>
+    <string name="about_retry">Ponów</string>
+    <string name="about_update">Aktualizuj</string>
+    <string name="about_version">Wersja %s</string>
     <string name="activity_not_available">Ta aplikacja nie jest dostępna dla Twojego urządzenia.</string>
     <string name="activity_not_found">Aplikacja nie została zainstalowana.</string>
     <string name="align_to_bottom">Wyrównaj do dołu</string>
     <string name="align_to_top">Wyrównaj do góry</string>
-    <string name="app_locked_toast">Aplikacja %s zablokowana.</string>
     <string name="app_search">Wyszukaj w telefonie</string>
     <string name="app_search_no_apps">Możesz dodawać skróty na ekranie startowym z wyników wyszukiwania.</string>
     <string name="app_search_no_results_found">Nie znaleziono wyników</string>
     <string name="app_search_tablet">Wyszukaj na tablecie</string>
-    <string name="app_unlocked_toast">Kategoria %s odblokowana.</string>
     <string name="application_name">TouchWiz</string>
     <string name="apply">Zastosuj</string>
     <string name="appsPicker_add_button">DODAJ</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Strona domyślna</string>
     <string name="default_scroll_format">Strona %1$d z %2$d.</string>
     <string name="disable_message">Aplikacja %1$s i wszystkie funkcje z nią związane zostaną wyłączone. Aby ponownie włączyć aplikację, przejdź do menu Ustawienia > Aplikacje, a następnie wybierz aplikację %2$s.</string>
-    <string name="disable_message_knox_mode">Aplikacja %1$s i wszystkie funkcje z nią związane zostaną wyłączone. Aby ponownie włączyć aplikację, przejdź do menu ustawień kontenera %2$s > Aplikacje.</string>
     <string name="disable_message_vzw">Aplikacja %s i wszystkie funkcje z nią związane zostaną wyłączone. Aby włączyć ją ponownie, przejdź do menu Ustawienia > Aplikacje > Menedżer aplikacji.</string>
     <string name="discard">Odrzuć</string>
     <string name="do_not_show_again">Nie pokazuj ponownie</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">Dodaj aplikacje</string>
     <string name="folder_closed">Katalog zamknięty.</string>
     <string name="folder_color">Kolor katalogu</string>
+    <string name="folder_color_blue">Niebieski</string>
     <string name="folder_color_default">Domyślny kolor katalogu</string>
-    <string name="folder_color_pd">Kolor %d</string>
+    <string name="folder_color_green">Zielony</string>
+    <string name="folder_color_orange">Pomarańczowy</string>
+    <string name="folder_color_yellow">Żółty</string>
     <string name="folder_hint_text">Wpisz nazwę katalogu</string>
     <string name="folder_microsoft_apps">"Aplikacje firmy
 Microsoft"</string>
@@ -123,6 +129,7 @@ Microsoft"</string>
     <string name="out_of_space">Brak miejsca na tej stronie</string>
     <string name="out_of_space_dialog">Brak miejsca na tej stronie. Element zostanie dodany do nowej strony.</string>
     <string name="permdesc_install_widget">Ta aplikacja umożliwia dodawanie widgetów do ekranu startowego.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">Ta aplikacja może odczytywać ustawienia niestandardowej strony zawartości, znajdującej się po lewej stronie ekranu startowego.</string>
     <string name="permdesc_write_zeropage_settings">Ta aplikacja może zmieniać ustawienia niestandardowej strony zawartości, znajdującej się po lewej stronie ekranu startowego.</string>
     <string name="permlab_install_widget">Dodaj widgety</string>
@@ -159,27 +166,21 @@ Microsoft"</string>
     <string name="selected">Wybrane</string>
     <string name="setting_apps_screen_grid">Siatka ekranu Aplikacje</string>
     <string name="shortcut_duplicate">Skrót %s już istnieje.</string>
-    <string name="shortcut_installed">Dodano skrót do trybu %s na ekranie startowym.</string>
+    <string name="shortcut_installed">Skrót do %s dodano do ekranu startowego.</string>
     <string name="shortcut_moved_to_game_launcher">Ikony gier przeniesione do aplikacji Game Launcher.</string>
     <string name="shortcut_uninstalled">Usunięto skrót %s.</string>
     <string name="speak_now">Mów teraz</string>
     <string name="swipe_up_for_more_apps">Przeciągnij palcem w górę lub w dół dla wszystkich aplikacji</string>
     <string name="swipe_up_for_more_apps_att">Przeciągnij w górę lub w dół po ekranie dla wszystkich aplikacji</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Przeciągnij w górę lub w dół dwoma palcami do wszystkich aplikacji.</string>
-    <string name="talkback_changed_to_ps">Zmieniono na %s.</string>
+    <string name="talkback_checked">Wybrane</string>
     <string name="talkback_folder">Katalog</string>
     <string name="talkback_n_items">Elementów: %d</string>
     <string name="talkback_press_back_key_to_close_folder">Naciśnij klawisz powrotu, aby zamknąć katalog.</string>
-    <string name="talkback_tab_back_button_to_close_folder">Dotknij przycisku Wstecz, aby zamknąć katalog.</string>
     <string name="title_settings">%s — ustawienia</string>
     <string name="tts_add_shortcut_on_home_screen_notice">Przeciągnij do góry ekranu, aby dodać na ekranie startowym.</string>
     <string name="tts_bottom_handle">Uchwyt dolny</string>
-    <string name="tts_changed_to_apps_edit_mode">Zmieniono na tryb edycji aplikacji.</string>
-    <string name="tts_changed_to_folder_edit_mode">Zmieniono na tryb edycji katalogu</string>
-    <string name="tts_changed_to_home_screen_edit_mode">Zmieniono tryb edycji ekranu startowego.</string>
     <string name="tts_folder_created">Utworzono katalog.</string>
-    <string name="tts_holding_items">Przytrzymywanie elementu %1$s i %2$d innych</string>
-    <string name="tts_hotseat_item_moved_from_external">Element został przeniesiony na pasek menu na ekranie startowym.</string>
     <string name="tts_hotseat_move_to">Pozycja %d na pasku menu.</string>
     <string name="tts_hover_item_over_other_item">%1$s na wierzchu %2$s</string>
     <string name="tts_item_added">Dodano element.</string>
@@ -200,7 +201,6 @@ Microsoft"</string>
     <string name="viewmore_playstore">Zobacz więcej w Sklepie Play</string>
     <string name="viewtype_alphabetic_grid">Kolejność alfabetyczna</string>
     <string name="viewtype_custom_grid">Kolejność niestandardowa</string>
-    <string name="voice_search">Wyszuk.głos.</string>
     <string name="wallpaper_button_text">Tapety</string>
     <string name="wallpapers_and_themes_button_text">Tapety i motywy</string>
     <string name="widget_button_text">Widgety</string>
@@ -210,5 +210,4 @@ Microsoft"</string>
     <string name="zeropage_download_msg">Do korzystania z tej funkcji należy zainstalować aplikację %1$s. Dotknij opcji POBIERZ, aby pobrać i zainstalować %2$s.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Wiadomości Sohu</string>
-    <string name="zeropage_toutiao_title">Informacje ekspresowe</string>
 </resources>

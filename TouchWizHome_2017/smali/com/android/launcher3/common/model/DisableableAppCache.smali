@@ -199,15 +199,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/launcher3/common/model/DisableableAppCache;)Landroid/content/Context;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/common/model/DisableableAppCache;->mContext:Landroid/content/Context;
-
-    return-object v0
-.end method
-
-.method static synthetic access$200()Ljava/lang/Object;
+.method static synthetic access$100()Ljava/lang/Object;
     .locals 1
 
     sget-object v0, Lcom/android/launcher3/common/model/DisableableAppCache;->DISABLEABLE_APP_UPDATE_TOKEN:Ljava/lang/Object;
@@ -215,7 +207,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/launcher3/common/model/DisableableAppCache;)Landroid/os/Handler;
+.method static synthetic access$200(Lcom/android/launcher3/common/model/DisableableAppCache;)Landroid/os/Handler;
     .locals 1
 
     iget-object v0, p0, Lcom/android/launcher3/common/model/DisableableAppCache;->mWorkerHandler:Landroid/os/Handler;
@@ -505,7 +497,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f080005
+    const v5, 0x7f070005
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
 
@@ -1049,45 +1041,13 @@
 .end method
 
 .method public isBlockUninstall(Ljava/lang/String;)Z
-    .locals 5
+    .locals 1
 
     invoke-direct {p0, p1}, Lcom/android/launcher3/common/model/DisableableAppCache;->isEnterprisePolicyBlockUninstall(Ljava/lang/String;)Z
 
-    move-result v2
-
-    const/4 v0, 0x0
-
-    iget-object v3, p0, Lcom/android/launcher3/common/model/DisableableAppCache;->mContext:Landroid/content/Context;
-
-    const-string v4, "device_policy"
-
-    invoke-virtual {v3, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/app/admin/DevicePolicyManager;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1, p1}, Landroid/app/admin/DevicePolicyManager;->semHasActiveAdminForPackage(Ljava/lang/String;)Z
-
     move-result v0
 
-    :cond_0
-    if-nez v2, :cond_1
-
-    if-eqz v0, :cond_2
-
-    :cond_1
-    const/4 v3, 0x1
-
-    :goto_0
-    return v3
-
-    :cond_2
-    const/4 v3, 0x0
-
-    goto :goto_0
+    return v0
 .end method
 
 .method public makeDisableableAppList()V

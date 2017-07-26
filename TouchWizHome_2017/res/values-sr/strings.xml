@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">Pretraži istoriju</string>
-    <string name="accessibility_add_home_screen">Dodaj stranicu</string>
-    <string name="accessibility_button">Taster</string>
-    <string name="accessibility_dimmed">Prigušeno</string>
+    <string name="about">O aplikaciji %s</string>
+    <string name="about_already_installed">Najnovija verzija je već instalirana.</string>
+    <string name="about_home_screen">Početni ekran</string>
+    <string name="about_licence">Licence otvorenog koda</string>
+    <string name="about_network_err">Nije moguće proveriti ima li ažuriranja. Telefon nije povezan na mrežu.</string>
+    <string name="about_new_version_exist">Nova verzija je dostupna.</string>
+    <string name="about_retry">Ponovi</string>
+    <string name="about_update">Ažuriraj</string>
+    <string name="about_version">Verzija %s</string>
     <string name="activity_not_available">Ova aplikacija nije dostupna za tvoj uređaj.</string>
     <string name="activity_not_found">Aplikacija nije instalirana.</string>
     <string name="align_to_bottom">Poravnaj sa dnom</string>
     <string name="align_to_top">Poravnaj sa vrhom</string>
-    <string name="app_locked_toast">%s je zaključan.</string>
     <string name="app_search">Pretraži telefon</string>
     <string name="app_search_no_apps">Možete da dodajete prečice na početni ekran iz rezultata pretrage.</string>
     <string name="app_search_no_results_found">Nema rezultata</string>
     <string name="app_search_tablet">Pretraži tablet računar</string>
-    <string name="app_unlocked_toast">%s je otključan/na.</string>
     <string name="application_name">TouchWiz početna</string>
     <string name="apply">Primeni</string>
     <string name="appsPicker_add_button">DODAJ</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Podrazumevana stranica</string>
     <string name="default_scroll_format">Strana %1$d od %2$d.</string>
     <string name="disable_message">Aplikacija %1$s i sve funkcije koje su povezane sa njom će biti onemogućene. Da biste ponovo omogućili aplikaciju, idite na Podešavanja > Aplikacije, a zatim izaberite aplikaciju %2$s.</string>
-    <string name="disable_message_knox_mode">Aplikacija %1$s i sve funkcije koje su povezane sa njom će biti onemogućene. Da biste ponovo omogućili aplikaciju, idite na %2$s podešavanja > Aplikacije.</string>
     <string name="disable_message_vzw">%s i sve druge funkcije s tim u vezi biće onemogućene. Da bi ih ponovo omogućio/la, idi na Podešavanja > Aplikacije > Menadžer aplikacija.</string>
     <string name="discard">Odbaci</string>
     <string name="do_not_show_again">Ne prikazuj ponovo</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">Dodaj aplikacije</string>
     <string name="folder_closed">Folder je zatvoren.</string>
     <string name="folder_color">Boja foldera</string>
+    <string name="folder_color_blue">Plava</string>
     <string name="folder_color_default">Podrazumevana boja foldera</string>
-    <string name="folder_color_pd">Boja %d</string>
+    <string name="folder_color_green">Zelena</string>
+    <string name="folder_color_orange">Pomorandža</string>
+    <string name="folder_color_yellow">Žuta</string>
     <string name="folder_hint_text">Unesi naziv foldera</string>
     <string name="folder_microsoft_apps">Microsoft aplikacije</string>
     <string name="folder_multi_search_bar_hint">Pretraga aplikacija</string>
@@ -111,7 +117,7 @@
     <string name="ok">OK</string>
     <string name="only_one_widget_instance_allowed">Vidžet %s je već dodat na početni ekran.</string>
     <string name="option_menu_contact_up">Kontaktirajte nas</string>
-    <string name="option_menu_galaxy_essentials">GALAXY Essentials</string>
+    <string name="option_menu_galaxy_essentials">Galaxy Essentials</string>
     <string name="option_menu_home_settings">Podešavanja</string>
     <string name="options_menu">Još opcija</string>
     <string name="options_menu_search_recommend">Opcije pretrage</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">Na ovoj strani više nema mesta</string>
     <string name="out_of_space_dialog">Na ovoj stranici više nema mesta. Stavka će biti dodata na novoj stranici.</string>
     <string name="permdesc_install_widget">Ova aplikacija može da dodaje vidžete na početni ekran.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">Ova aplikacija može da čita podešavanja stranice prilagođenog sadržaja, koja se nalazi na levoj strani Početnog ekrana.</string>
     <string name="permdesc_write_zeropage_settings">Ova aplikacija može da menja podešavanja stranice prilagođenog sadržaja, koja se nalazi na levoj strani Početnog ekrana.</string>
     <string name="permlab_install_widget">Dodaj vidžete</string>
@@ -158,27 +165,21 @@
     <string name="selected">Izabrano</string>
     <string name="setting_apps_screen_grid">Mreža ekrana Aplikacije</string>
     <string name="shortcut_duplicate">Prečica %s već postoji.</string>
-    <string name="shortcut_installed">Prečica za režim %s je dodata na Početni ekran.</string>
+    <string name="shortcut_installed">Prečica za kontakt %s je dodata na početni ekran.</string>
     <string name="shortcut_moved_to_game_launcher">Ikona igre je premeštena u aplikaciju Game Launcher.</string>
     <string name="shortcut_uninstalled">Prečica %s uklonjena.</string>
     <string name="speak_now">Govori sada</string>
     <string name="swipe_up_for_more_apps">Prevucite nagore ili nadole za sve aplikacije</string>
     <string name="swipe_up_for_more_apps_att">Prevucite prstom nagore ili nadole na ekranu za sve aplikacije</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Prevucite nagore ili nadole koristeći dva prsta za sve aplikacije.</string>
-    <string name="talkback_changed_to_ps">Promenjeno na %s.</string>
+    <string name="talkback_checked">Izabrano</string>
     <string name="talkback_folder">Folder</string>
     <string name="talkback_n_items">Stavki: %d</string>
     <string name="talkback_press_back_key_to_close_folder">Pritisni taster Nazad radi zatvaranja foldera.</string>
-    <string name="talkback_tab_back_button_to_close_folder">Kucnite na dugme Nazad da biste zatvorili folder.</string>
     <string name="title_settings">Podešavanja za %s</string>
     <string name="tts_add_shortcut_on_home_screen_notice">Prevucite ikonu na vrh ekrana da biste je dodali na Početni ekran.</string>
     <string name="tts_bottom_handle">Donja ručica</string>
-    <string name="tts_changed_to_apps_edit_mode">Promenjeno u Režim editovanja aplikacija.</string>
-    <string name="tts_changed_to_folder_edit_mode">Promenjeno u Režim editovanja foldera</string>
-    <string name="tts_changed_to_home_screen_edit_mode">Promenjeno u Režim editovanja početnog ekrana.</string>
     <string name="tts_folder_created">Folder kreiran.</string>
-    <string name="tts_holding_items">Zadržavanje aplikacije %1$s i još njih %2$d</string>
-    <string name="tts_hotseat_item_moved_from_external">Stavka je premeštena na traku menija na početnom ekranu.</string>
     <string name="tts_hotseat_move_to">Položaj %d na traci menija.</string>
     <string name="tts_hover_item_over_other_item">Stavka %1$s je iznad stavke %2$s</string>
     <string name="tts_item_added">Stavka je dodata.</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">Prikaži više u Prodavnici Play</string>
     <string name="viewtype_alphabetic_grid">Abecedni redosled</string>
     <string name="viewtype_custom_grid">Prilagodi raspored</string>
-    <string name="voice_search">Gov.pretraga</string>
     <string name="wallpaper_button_text">Tapeti</string>
     <string name="wallpapers_and_themes_button_text">Tapeti i teme</string>
     <string name="widget_button_text">Widget-i</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">Da biste koristili ovu funkciju, morate da instalirate aplikaciju %1$s. Kucnite na PREUZMI da biste preuzeli i instalirali aplikaciju %2$s.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Sohu vesti</string>
-    <string name="zeropage_toutiao_title">Ekspresne informacije</string>
 </resources>

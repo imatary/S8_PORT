@@ -231,9 +231,11 @@
 
     if-eqz v4, :cond_0
 
-    const-string v4, "easy_mode"
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
-    invoke-interface {v2, v4, v7}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/android/launcher3/LauncherAppState;->isEasyModeEnabled()Z
 
     move-result v4
 
@@ -419,8 +421,6 @@
 
     move-result-object v2
 
-    if-eqz v2, :cond_4
-
     array-length v8, v2
 
     :goto_0
@@ -527,28 +527,26 @@
 
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
-
-    move-result-object v1
+    move-result v1
 
     if-eqz v1, :cond_0
 
-    array-length v3, v1
+    invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
-    const/4 v2, 0x0
+    move-result-object v2
+
+    array-length v3, v2
+
+    const/4 v1, 0x0
 
     :goto_0
-    if-ge v2, v3, :cond_0
+    if-ge v1, v3, :cond_0
 
-    aget-object v0, v1, v2
+    aget-object v0, v2, v1
 
     invoke-direct {p0, v0}, Lcom/android/launcher3/common/bnr/extractor/LCExtractor;->recusiveDeleteData(Ljava/io/File;)V
 
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
