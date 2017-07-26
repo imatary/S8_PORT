@@ -235,7 +235,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0b0005
+    const v7, 0x7f0a0005
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -333,7 +333,7 @@
 
     move-result-object v6
 
-    const v8, 0x7f0b0005
+    const v8, 0x7f0a0005
 
     invoke-virtual {v6, v8}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -932,73 +932,39 @@
 .end method
 
 .method public static loadCurrentAppsGridSize(Landroid/content/Context;[I)V
-    .locals 5
+    .locals 4
 
-    const/4 v4, 0x1
+    const/4 v2, 0x0
 
-    const/4 v2, -0x1
+    const/4 v3, -0x1
 
-    const/4 v3, 0x0
-
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->isTablet()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const/high16 v2, 0x7f0c0000
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
-
-    move-result v1
-
-    aput v1, p1, v3
-
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const v2, 0x7f0c0001
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
-
-    move-result v1
-
-    aput v1, p1, v4
-
-    :goto_0
-    return-void
-
-    :cond_0
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
     const-string v1, "Apps.CellX"
 
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+    invoke-interface {v0, v1, v3}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result v1
 
-    aput v1, p1, v3
+    aput v1, p1, v2
 
-    const-string v1, "Apps.CellY"
+    const/4 v1, 0x1
 
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+    const-string v2, "Apps.CellY"
 
-    move-result v1
+    invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
-    aput v1, p1, v4
+    move-result v2
 
-    goto :goto_0
+    aput v2, p1, v1
+
+    return-void
 .end method
 
 .method public static loadCurrentGridSize(Landroid/content/Context;[IZ)V
@@ -1062,17 +1028,6 @@
 .method public static storeAppsGridLayoutPreference(Landroid/content/Context;II)V
     .locals 4
 
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->isTablet()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    :cond_0
-    :goto_0
-    return-void
-
-    :cond_1
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
 
     move-result-object v2
@@ -1101,32 +1056,22 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    goto :goto_0
+    :cond_0
+    return-void
 .end method
 
 .method public static storeAppsSupportedGridSet(Landroid/content/Context;Ljava/lang/String;)V
     .locals 5
 
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->isTablet()Z
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
     :cond_0
-    :goto_0
-    return-void
-
-    :cond_1
-    if-eqz p1, :cond_2
-
-    invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    :cond_2
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1151,7 +1096,7 @@
 
     throw v2
 
-    :cond_3
+    :cond_1
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
 
     move-result-object v2
@@ -1162,13 +1107,13 @@
 
     move-result-object v1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_2
 
     invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_2
 
     const-string v2, "Apps.GridSet"
 
@@ -1176,7 +1121,8 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    goto :goto_0
+    :cond_2
+    return-void
 .end method
 
 .method public static storeChangeGridValue(Landroid/content/Context;)V

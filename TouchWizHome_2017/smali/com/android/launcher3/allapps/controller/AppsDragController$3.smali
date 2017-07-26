@@ -3,12 +3,12 @@
 .source "AppsDragController.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/allapps/controller/AppsDragController;->onDropCompletedWithOutExtraItems(Landroid/view/View;Lcom/android/launcher3/common/drag/DropTarget$DragObject;Z)V
+    value = Lcom/android/launcher3/allapps/controller/AppsDragController;->onDropCompleted(Landroid/view/View;Lcom/android/launcher3/common/drag/DropTarget$DragObject;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,28 +16,26 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator",
+        "<",
+        "Lcom/android/launcher3/common/drag/DropTarget$DragObject;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/allapps/controller/AppsDragController;
 
-.field final synthetic val$cell:Landroid/view/View;
-
-.field final synthetic val$parent:Lcom/android/launcher3/common/base/view/CellLayout;
-
-.field final synthetic val$target:Landroid/view/View;
-
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/allapps/controller/AppsDragController;Lcom/android/launcher3/common/base/view/CellLayout;Landroid/view/View;Landroid/view/View;)V
+.method constructor <init>(Lcom/android/launcher3/allapps/controller/AppsDragController;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsDragController$3;->this$0:Lcom/android/launcher3/allapps/controller/AppsDragController;
-
-    iput-object p2, p0, Lcom/android/launcher3/allapps/controller/AppsDragController$3;->val$parent:Lcom/android/launcher3/common/base/view/CellLayout;
-
-    iput-object p3, p0, Lcom/android/launcher3/allapps/controller/AppsDragController$3;->val$cell:Landroid/view/View;
-
-    iput-object p4, p0, Lcom/android/launcher3/allapps/controller/AppsDragController$3;->val$target:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,34 +44,60 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public compare(Lcom/android/launcher3/common/drag/DropTarget$DragObject;Lcom/android/launcher3/common/drag/DropTarget$DragObject;)I
+    .locals 4
 
-    iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsDragController$3;->val$parent:Lcom/android/launcher3/common/base/view/CellLayout;
+    iget-object v0, p1, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragInfo:Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsDragController$3;->val$cell:Landroid/view/View;
+    check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/base/view/CellLayout;->onDropChild(Landroid/view/View;)V
+    iget-wide v0, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsDragController$3;->val$cell:Landroid/view/View;
+    long-to-int v0, v0
 
-    const/4 v1, 0x0
+    mul-int/lit8 v1, v0, 0x64
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    iget-object v0, p1, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragInfo:Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsDragController$3;->this$0:Lcom/android/launcher3/allapps/controller/AppsDragController;
+    check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    invoke-static {v0}, Lcom/android/launcher3/allapps/controller/AppsDragController;->access$000(Lcom/android/launcher3/allapps/controller/AppsDragController;)Lcom/android/launcher3/allapps/controller/AppsController;
+    iget v0, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->rank:I
 
-    move-result-object v0
+    add-int/2addr v1, v0
 
-    iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsDragController$3;->val$cell:Landroid/view/View;
+    iget-object v0, p2, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragInfo:Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/android/launcher3/allapps/controller/AppsDragController$3;->val$target:Landroid/view/View;
+    check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    instance-of v2, v2, Lcom/android/launcher3/allapps/view/AppsPagedView;
+    iget-wide v2, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/allapps/controller/AppsController;->updateCountBadge(Landroid/view/View;Z)V
+    long-to-int v0, v2
 
-    return-void
+    mul-int/lit8 v2, v0, 0x64
+
+    iget-object v0, p2, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragInfo:Ljava/lang/Object;
+
+    check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
+
+    iget v0, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->rank:I
+
+    add-int/2addr v0, v2
+
+    sub-int v0, v1, v0
+
+    return v0
+.end method
+
+.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 1
+
+    check-cast p1, Lcom/android/launcher3/common/drag/DropTarget$DragObject;
+
+    check-cast p2, Lcom/android/launcher3/common/drag/DropTarget$DragObject;
+
+    invoke-virtual {p0, p1, p2}, Lcom/android/launcher3/allapps/controller/AppsDragController$3;->compare(Lcom/android/launcher3/common/drag/DropTarget$DragObject;Lcom/android/launcher3/common/drag/DropTarget$DragObject;)I
+
+    move-result v0
+
+    return v0
 .end method

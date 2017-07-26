@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">శోధన చరిత్ర</string>
-    <string name="accessibility_add_home_screen">పేజీ జోడించండి</string>
-    <string name="accessibility_button">బటన్</string>
-    <string name="accessibility_dimmed">మసకగా చేయబడింది</string>
+    <string name="about">%s గురించి</string>
+    <string name="about_already_installed">తాజా వెర్షన్ ఇప్పటికే ఇన్‌స్టాల్ చేయబడింది.</string>
+    <string name="about_home_screen">హోమ్ స్క్రీన్</string>
+    <string name="about_licence">ఓపెన్ సోర్స్ లైసెన్స్‌లు</string>
+    <string name="about_network_err">అప్‌డేట్‌ల కోసం తనిఖీ చేయలేరు. మీ ఫోన్ నెట్‌వర్క్‌కి కనెక్ట్ చేయబడలేదు.</string>
+    <string name="about_new_version_exist">కొత్త సంస్కరణ అందుబాటులో ఉంది.</string>
+    <string name="about_retry">తిరిగి ప్రయత్నించు</string>
+    <string name="about_update">అప్‌డేట్ చేయి</string>
+    <string name="about_version">వెర్షన్ %s</string>
     <string name="activity_not_available">ఈ అప్లికేషన్ మీ పరికరంలో అందుబాటులో లేదు.</string>
     <string name="activity_not_found">అప్లికేషన్ స్థాపించబడలేదు.</string>
     <string name="align_to_bottom">దిగువకు సమలేఖనం చేయి</string>
     <string name="align_to_top">ఎగువకు సమలేఖనం చేయి</string>
-    <string name="app_locked_toast">%s లాక్ చేయబడింది.</string>
     <string name="app_search">ఫోన్‌ని శోధించు</string>
     <string name="app_search_no_apps">మీరు శోధన ఫలితాల నుండి హోమ్ స్క్రీన్‌లో సత్వరమార్గాలను జోడించవచ్చు.</string>
     <string name="app_search_no_results_found">ఫలితాలు కనుగొనబడలేదు</string>
     <string name="app_search_tablet">టాబ్లెట్‌ను శోధించు</string>
-    <string name="app_unlocked_toast">%s అన్‌లాక్ చేయబడింది.</string>
     <string name="application_name">టచ్‌విజ్ హోమ్</string>
     <string name="apply">వర్తించు</string>
     <string name="appsPicker_add_button">జోడించు</string>
@@ -38,7 +42,6 @@
     <string name="default_page">డిఫాల్ట్ పేజీ</string>
     <string name="default_scroll_format">%1$d యొక్క %2$d పేజీ.</string>
     <string name="disable_message">దీనికి సంబంధించిన %1$s మరియు అన్ని విధులు నిలిపివేయబడతాయి. అప్లికేషన్‌ను మళ్లీ ప్రారంభించడానికి, సెట్టింగ్‌లు > అప్లికేషన్‌లకి వెళ్లి, ఆపై %2$sని ఎంచుకోండి.</string>
-    <string name="disable_message_knox_mode">దీనికి సంబంధించిన %1$s మరియు అన్ని విధులు నిలిపివేయబడతాయి. అప్లికేషన్‌ను మళ్లీ ప్రారంభించడానికి, %2$s సెట్టింగ్‌లు > అప్లికేషన్‌లకు వెళ్లండి.</string>
     <string name="disable_message_vzw">%s మరియు దీనికి సంబంధించిన అన్ని ఫీచర్‌లు నిలిపివేయబడతాయి. దీనిని మళ్లీ ప్రారంభించడానికి, సెట్టింగ్‌లు > అప్లికేషన్‌లు > అప్లికేషన్ నిర్వాహికిలోకి వెళ్లండి.</string>
     <string name="discard">విస్మరించు</string>
     <string name="do_not_show_again">మళ్లీ చూపించవద్దు</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">అప్లికేషన్‌లను జోడించు</string>
     <string name="folder_closed">ఫోల్డర్ మూసివేయబడింది.</string>
     <string name="folder_color">ఫోల్డర్ రంగు</string>
+    <string name="folder_color_blue">నీలి రంగు</string>
     <string name="folder_color_default">డిఫాల్ట్ ఫోల్డర్ రంగు</string>
-    <string name="folder_color_pd">రంగు %d</string>
+    <string name="folder_color_green">ఆకుపచ్చ</string>
+    <string name="folder_color_orange">ఆరెంజ్</string>
+    <string name="folder_color_yellow">పసుపు రంగు</string>
     <string name="folder_hint_text">ఫోల్డర్ పేరుని నమోదు చేయండి</string>
     <string name="folder_microsoft_apps">Microsoft అప్లికేషన్‌లు</string>
     <string name="folder_multi_search_bar_hint">అప్లికేషన్‌ల కోసం శోధించు</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">ఈ పేజీ మీద ఇక గది లేదు</string>
     <string name="out_of_space_dialog">ఈ పేజీలో ఖాళీ లేదు. అంశం కొత్త పేజీకి జోడించబడుతుంది.</string>
     <string name="permdesc_install_widget">ఈ అప్లికేషన్ హోమ్ స్క్రీన్‌కు విడ్జెట్‌లను జోడించగలదు.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">ఈ అప్లికేషన్ అనుకూల కంటెంట్ పేజీ సెట్టింగ్‌లను చదవగలదు, ఇది హోమ్ స్క్రీన్‌లో ఎడమ వైపు ఉంటుంది.</string>
     <string name="permdesc_write_zeropage_settings">ఈ అప్లికేషన్ అనుకూల కంటెంట్ పేజీ సెట్టింగ్‌లను మార్చగలదు, ఇది హోమ్ స్క్రీన్‌లో ఎడమ వైపు ఉంటుంది.</string>
     <string name="permlab_install_widget">విడ్జెట్‌లను జోడించు</string>
@@ -158,27 +165,21 @@
     <string name="selected">ఎంచుకోబడ్డాయి</string>
     <string name="setting_apps_screen_grid">అప్లికేషన్‌ల స్క్రీన్ గ్రిడ్</string>
     <string name="shortcut_duplicate">సత్వరమార్గం %s ఇప్పటికే ఉంది.</string>
-    <string name="shortcut_installed">హోమ్ స్క్రీన్‌లో %sకు సత్వరమార్గం జోడించబడింది.</string>
+    <string name="shortcut_installed">%s యొక్క సత్వరమార్గం హోమ్ స్క్రీన్‌కు జోడించబడింది.</string>
     <string name="shortcut_moved_to_game_launcher">గేమ్ చిహ్నం Game Launcherకు తరలించబడింది.</string>
     <string name="shortcut_uninstalled">సత్వరమార్గం %s తొలగించబడినది.</string>
     <string name="speak_now">ఇప్పుడు మాట్లాడండి</string>
     <string name="swipe_up_for_more_apps">అన్ని అప్లికేషన్‌ల కోసం ఎగువకు లేదా దిగువకు స్వైప్ చేయండి</string>
     <string name="swipe_up_for_more_apps_att">స్క్రీన్‌లో అన్ని అప్లికేషన్‌ల కోసం ఎగువకు లేదా దిగువకు స్వైప్ చేయండి</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">అన్ని అప్లికేషన్‌ల కోసం రెండు వేళ్లతో పైకి లేదా కిందకి స్వైప్ చేయండి.</string>
-    <string name="talkback_changed_to_ps">%sకు మార్చబడింది.</string>
+    <string name="talkback_checked">ఎంచుకోబడ్డాయి</string>
     <string name="talkback_folder">ఫోల్డర్</string>
     <string name="talkback_n_items">%d అంశాలు</string>
     <string name="talkback_press_back_key_to_close_folder">ఫోల్డర్‌ను మూసివేయడానికి వెనుకకు కీని నొక్కండి.</string>
-    <string name="talkback_tab_back_button_to_close_folder">ఫోల్డర్‌ను మూసివేయడానికి వెనుకకు బటన్‌ని ట్యాప్ చేయండి.</string>
     <string name="title_settings">%s సెట్టింగ్‌లు</string>
     <string name="tts_add_shortcut_on_home_screen_notice">చిహ్నాన్ని హోమ్ స్క్రీన్‌లో జోడించడానికి దాన్ని స్క్రీన్ ఎగువకు లాగండి.</string>
     <string name="tts_bottom_handle">దిగువ హ్యాండిల్</string>
-    <string name="tts_changed_to_apps_edit_mode">అప్లికేషన్‌ల సవరణ మోడ్‌కు మార్చబడింది.</string>
-    <string name="tts_changed_to_folder_edit_mode">ఫోల్డర్ సవరణ మోడ్‌కు మార్చబడింది</string>
-    <string name="tts_changed_to_home_screen_edit_mode">హోమ్ స్క్రీన్ సవరణ మోడ్‌కు మార్చబడింది.</string>
     <string name="tts_folder_created">ఫోల్డర్ రూపొందించినవి.</string>
-    <string name="tts_holding_items">%1$s మరియు మరో %2$d మంది పట్టుకుని ఉన్నారు</string>
-    <string name="tts_hotseat_item_moved_from_external">ఐటెమ్ హోమ్ స్క్రీన్‌లోని మెను బార్‌కు తరలించబడింది.</string>
     <string name="tts_hotseat_move_to">మెను బార్‌లో స్థితి %d.</string>
     <string name="tts_hover_item_over_other_item">%2$s ఎగువన %1$s</string>
     <string name="tts_item_added">ఐటెమ్ జోడించబడింది.</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">Play Storeలో మరిన్ని వీక్షించండి</string>
     <string name="viewtype_alphabetic_grid">ఆల్ఫాబేటికల్ క్రమం</string>
     <string name="viewtype_custom_grid">కస్టమ్ ఆర్డర్</string>
-    <string name="voice_search">వాయిస్ శోధన</string>
     <string name="wallpaper_button_text">వాల్‌పేపర్‌లు</string>
     <string name="wallpapers_and_themes_button_text">వాల్‌పేపర్‌లు మరియు థీమ్‌లు</string>
     <string name="widget_button_text">విడ్జెట్‌లు</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">మీరు ఈ విధిని ఉపయోగించడం కోసం, మీరు %1$sను ఇన్‌స్టాల్ చేయాలి. %2$sని డౌన్‌లోడ్ చేసి, ఇన్‌స్టాల్ చేయడానికి “డౌన్‌లోడ్ చేయి” ట్యాప్ చేయండి.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">సోహు వార్తలు</string>
-    <string name="zeropage_toutiao_title">సమాచారం ఎక్స్‌ప్రెస్</string>
 </resources>

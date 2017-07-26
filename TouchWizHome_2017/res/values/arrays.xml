@@ -131,5 +131,6 @@
         <item>com.verizon.mips.services</item>
         <item>com.tmobile.pr.adapt</item>
         <item>com.sec.android.easyMover.Agent</item>
+        <item>com.samsung.android.app.omcagent</item>
     </string-array>
 </resources>

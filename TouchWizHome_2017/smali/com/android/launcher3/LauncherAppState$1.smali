@@ -1,14 +1,11 @@
 .class Lcom/android/launcher3/LauncherAppState$1;
-.super Ljava/lang/Object;
+.super Landroid/database/ContentObserver;
 .source "LauncherAppState.java"
-
-# interfaces
-.implements Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/LauncherAppState;-><init>()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/launcher3/LauncherAppState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,79 +19,50 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/LauncherAppState;)V
+.method constructor <init>(Lcom/android/launcher3/LauncherAppState;Landroid/os/Handler;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/LauncherAppState$1;->this$0:Lcom/android/launcher3/LauncherAppState;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onDesktopDockConnectionChanged(Z)V
-    .locals 3
+.method public onChange(Z)V
+    .locals 4
 
-    const-string v0, "Launcher"
+    iget-object v0, p0, Lcom/android/launcher3/LauncherAppState$1;->this$0:Lcom/android/launcher3/LauncherAppState;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    invoke-static {v0}, Lcom/android/launcher3/LauncherAppState;->access$300(Lcom/android/launcher3/LauncherAppState;)Landroid/os/Handler;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
-    const-string v2, "onDesktopDockConnectionChanged : "
+    iget-object v1, p0, Lcom/android/launcher3/LauncherAppState$1;->this$0:Lcom/android/launcher3/LauncherAppState;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Lcom/android/launcher3/LauncherAppState;->access$200(Lcom/android/launcher3/LauncherAppState;)Ljava/lang/Runnable;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    iget-object v0, p0, Lcom/android/launcher3/LauncherAppState$1;->this$0:Lcom/android/launcher3/LauncherAppState;
+
+    invoke-static {v0}, Lcom/android/launcher3/LauncherAppState;->access$300(Lcom/android/launcher3/LauncherAppState;)Landroid/os/Handler;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/launcher3/LauncherAppState$1;->this$0:Lcom/android/launcher3/LauncherAppState;
+
+    invoke-static {v1}, Lcom/android/launcher3/LauncherAppState;->access$200(Lcom/android/launcher3/LauncherAppState;)Ljava/lang/Runnable;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const-wide/16 v2, 0xc8
 
-    return-void
-.end method
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-.method public onDesktopModeChanged(Z)V
-    .locals 3
-
-    const-string v0, "Launcher"
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "onDesktopModeChanged : "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    if-nez p1, :cond_0
-
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    move-result v0
-
-    invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
-
-    :cond_0
     return-void
 .end method

@@ -18,12 +18,6 @@
 .field private static mAlphabeticIndex:Landroid/icu/text/AlphabeticIndex$ImmutableIndex;
 
 
-# instance fields
-.field private mOverflowLabel:Ljava/lang/String;
-
-.field private mUnderflowLabel:Ljava/lang/String;
-
-
 # direct methods
 .method public constructor <init>()V
     .locals 11
@@ -47,18 +41,6 @@
     move-result-object v3
 
     invoke-direct {v0, v3}, Landroid/icu/text/AlphabeticIndex;-><init>(Ljava/util/Locale;)V
-
-    invoke-virtual {v0}, Landroid/icu/text/AlphabeticIndex;->getUnderflowLabel()Ljava/lang/String;
-
-    move-result-object v3
-
-    iput-object v3, p0, Lcom/android/launcher3/util/locale/LocaleUtils$LocaleUtilsBase;->mUnderflowLabel:Ljava/lang/String;
-
-    invoke-virtual {v0}, Landroid/icu/text/AlphabeticIndex;->getOverflowLabel()Ljava/lang/String;
-
-    move-result-object v3
-
-    iput-object v3, p0, Lcom/android/launcher3/util/locale/LocaleUtils$LocaleUtilsBase;->mOverflowLabel:Ljava/lang/String;
 
     invoke-static {}, Landroid/os/LocaleList;->getDefault()Landroid/os/LocaleList;
 
@@ -444,159 +426,131 @@
 
 # virtual methods
 .method public getConsistKey(Ljava/lang/String;)Ljava/lang/String;
-    .locals 12
+    .locals 10
 
-    const/4 v11, 0x1
+    const/4 v9, 0x0
 
-    const/4 v10, 0x0
+    move-object v3, p1
 
-    move-object v4, p1
+    const/16 v7, 0xa0
 
-    const/16 v8, 0xa0
+    invoke-static {v7}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
-    invoke-static {v8}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
+    move-result-object v7
 
-    move-result-object v8
+    const-string v8, " "
 
-    const-string v9, " "
+    invoke-virtual {p1, v7, v8}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
-    invoke-virtual {p1, v8, v9}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    move-result-object v7
 
-    move-result-object v8
+    invoke-virtual {v7}, Ljava/lang/String;->trim()Ljava/lang/String;
 
-    invoke-virtual {v8}, Ljava/lang/String;->trim()Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v5
+    invoke-virtual {v4}, Ljava/lang/String;->length()I
 
-    invoke-virtual {v5}, Ljava/lang/String;->length()I
+    move-result v7
 
-    move-result v8
-
-    if-lez v8, :cond_4
+    if-lez v7, :cond_3
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
-    move-result-object v8
+    move-result-object v7
 
-    invoke-virtual {v8}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v5, v10}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {v4, v9}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
 
     invoke-static {v1}, Ljava/lang/Character$UnicodeBlock;->of(C)Ljava/lang/Character$UnicodeBlock;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-static {v6}, Lcom/android/launcher3/util/locale/LocaleUtils;->access$700(Ljava/lang/Character$UnicodeBlock;)Z
+    invoke-static {v5}, Lcom/android/launcher3/util/locale/LocaleUtils;->access$700(Ljava/lang/Character$UnicodeBlock;)Z
 
-    move-result v8
+    move-result v7
 
-    if-nez v8, :cond_0
+    if-nez v7, :cond_0
 
-    invoke-static {v6}, Lcom/android/launcher3/util/locale/LocaleUtils;->access$800(Ljava/lang/Character$UnicodeBlock;)Z
+    invoke-static {v5}, Lcom/android/launcher3/util/locale/LocaleUtils;->access$800(Ljava/lang/Character$UnicodeBlock;)Z
 
-    move-result v8
+    move-result v7
 
-    if-eqz v8, :cond_5
+    if-eqz v7, :cond_4
 
     :cond_0
-    const/4 v7, 0x0
+    const/4 v6, 0x0
 
     :goto_0
     invoke-static {}, Lcom/android/launcher3/util/locale/LocaleUtils;->access$900()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v7
 
-    invoke-virtual {v8, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v8
+    move-result v7
 
-    if-eqz v8, :cond_1
+    if-eqz v7, :cond_1
 
-    invoke-static {v6}, Lcom/android/launcher3/util/locale/LocaleUtils;->access$700(Ljava/lang/Character$UnicodeBlock;)Z
+    invoke-static {v5}, Lcom/android/launcher3/util/locale/LocaleUtils;->access$700(Ljava/lang/Character$UnicodeBlock;)Z
 
-    move-result v8
+    move-result v7
 
-    if-eqz v8, :cond_1
+    if-eqz v7, :cond_1
 
-    const/4 v7, 0x1
+    const/4 v6, 0x1
 
     :cond_1
     invoke-static {}, Lcom/android/launcher3/util/locale/LocaleUtils;->access$1000()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v7
 
-    invoke-virtual {v8, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v8
+    move-result v7
 
-    if-eqz v8, :cond_2
+    if-eqz v7, :cond_2
 
     :cond_2
-    sget-object v8, Lcom/android/launcher3/util/locale/LocaleUtils$LocaleUtilsBase;->mAlphabeticIndex:Landroid/icu/text/AlphabeticIndex$ImmutableIndex;
+    sget-object v7, Lcom/android/launcher3/util/locale/LocaleUtils$LocaleUtilsBase;->mAlphabeticIndex:Landroid/icu/text/AlphabeticIndex$ImmutableIndex;
 
-    invoke-virtual {v8, v5}, Landroid/icu/text/AlphabeticIndex$ImmutableIndex;->getBucketIndex(Ljava/lang/CharSequence;)I
+    invoke-virtual {v7, v4}, Landroid/icu/text/AlphabeticIndex$ImmutableIndex;->getBucketIndex(Ljava/lang/CharSequence;)I
 
     move-result v0
 
-    if-eqz v7, :cond_7
+    if-eqz v6, :cond_5
 
-    if-ltz v0, :cond_7
+    if-ltz v0, :cond_5
 
-    sget-object v8, Lcom/android/launcher3/util/locale/LocaleUtils$LocaleUtilsBase;->mAlphabeticIndex:Landroid/icu/text/AlphabeticIndex$ImmutableIndex;
+    sget-object v7, Lcom/android/launcher3/util/locale/LocaleUtils$LocaleUtilsBase;->mAlphabeticIndex:Landroid/icu/text/AlphabeticIndex$ImmutableIndex;
 
-    invoke-virtual {v8, v0}, Landroid/icu/text/AlphabeticIndex$ImmutableIndex;->getBucket(I)Landroid/icu/text/AlphabeticIndex$Bucket;
+    invoke-virtual {v7, v0}, Landroid/icu/text/AlphabeticIndex$ImmutableIndex;->getBucket(I)Landroid/icu/text/AlphabeticIndex$Bucket;
 
-    move-result-object v8
+    move-result-object v7
 
-    invoke-virtual {v8}, Landroid/icu/text/AlphabeticIndex$Bucket;->getLabel()Ljava/lang/String;
+    invoke-virtual {v7}, Landroid/icu/text/AlphabeticIndex$Bucket;->getLabel()Ljava/lang/String;
 
     move-result-object v3
 
-    if-eqz v3, :cond_3
-
-    iget-object v8, p0, Lcom/android/launcher3/util/locale/LocaleUtils$LocaleUtilsBase;->mUnderflowLabel:Ljava/lang/String;
-
-    invoke-virtual {v3, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v8
-
-    if-nez v8, :cond_3
-
-    iget-object v8, p0, Lcom/android/launcher3/util/locale/LocaleUtils$LocaleUtilsBase;->mOverflowLabel:Ljava/lang/String;
-
-    invoke-virtual {v3, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_6
-
     :cond_3
-    invoke-virtual {v5, v10, v11}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v4
+    :goto_1
+    return-object v3
 
     :cond_4
-    :goto_1
-    return-object v4
+    const/4 v6, 0x1
+
+    goto :goto_0
 
     :cond_5
     const/4 v7, 0x1
 
-    goto :goto_0
+    invoke-virtual {v4, v9, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    :cond_6
-    move-object v4, v3
-
-    goto :goto_1
-
-    :cond_7
-    invoke-virtual {v5, v10, v11}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v4
+    move-result-object v3
 
     goto :goto_1
 .end method

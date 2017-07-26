@@ -107,7 +107,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901b8
+    const v24, 0x7f0801b8
 
     move-object/from16 v0, v17
 
@@ -217,7 +217,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901b5
+    const v24, 0x7f0801b5
 
     move-object/from16 v0, v17
 
@@ -245,7 +245,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901b4
+    const v24, 0x7f0801b4
 
     move-object/from16 v0, v17
 
@@ -285,7 +285,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901be
+    const v24, 0x7f0801be
 
     move-object/from16 v0, v17
 
@@ -315,7 +315,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901bd
+    const v24, 0x7f0801bd
 
     move-object/from16 v0, v17
 
@@ -345,7 +345,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901ac
+    const v24, 0x7f0801ac
 
     move-object/from16 v0, v17
 
@@ -387,7 +387,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901ab
+    const v24, 0x7f0801ab
 
     move-object/from16 v0, v17
 
@@ -427,7 +427,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901ad
+    const v24, 0x7f0801ad
 
     move-object/from16 v0, v17
 
@@ -457,7 +457,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901ba
+    const v24, 0x7f0801ba
 
     move-object/from16 v0, v17
 
@@ -491,7 +491,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901b6
+    const v24, 0x7f0801b6
 
     move-object/from16 v0, v17
 
@@ -525,7 +525,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901b3
+    const v24, 0x7f0801b3
 
     move-object/from16 v0, v17
 
@@ -555,7 +555,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901b9
+    const v24, 0x7f0801b9
 
     move-object/from16 v0, v17
 
@@ -605,7 +605,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901c2
+    const v24, 0x7f0801c2
 
     move-object/from16 v0, v17
 
@@ -633,7 +633,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901c0
+    const v24, 0x7f0801c0
 
     move-object/from16 v0, v17
 
@@ -661,7 +661,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901bf
+    const v24, 0x7f0801bf
 
     move-object/from16 v0, v17
 
@@ -706,7 +706,7 @@
 
     move-object/from16 v20, v0
 
-    const v24, 0x7f0901b7
+    const v24, 0x7f0801b7
 
     move-object/from16 v0, v17
 
@@ -736,7 +736,7 @@
 
     move-result-object v20
 
-    const v25, 0x7f0901c4
+    const v25, 0x7f0801c4
 
     move-object/from16 v0, v20
 
@@ -789,7 +789,7 @@
 
     move-result-object v20
 
-    const v25, 0x7f0901bc
+    const v25, 0x7f0801bc
 
     move-object/from16 v0, v20
 
@@ -834,7 +834,7 @@
 
     move-result-object v20
 
-    const v25, 0x7f0901a3
+    const v25, 0x7f0801a3
 
     move-object/from16 v0, v20
 
@@ -919,7 +919,7 @@
 
     move-object/from16 v24, v0
 
-    const v20, 0x7f0901b1
+    const v20, 0x7f0801b1
 
     move-object/from16 v0, v17
 
@@ -953,7 +953,7 @@
 
     move-object/from16 v24, v0
 
-    const v20, 0x7f0901b2
+    const v20, 0x7f0801b2
 
     move-object/from16 v0, v17
 

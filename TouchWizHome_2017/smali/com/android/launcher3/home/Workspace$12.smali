@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/Workspace;->addCustomLayout(Lcom/android/launcher3/home/WorkspaceCellLayout;)V
+    value = Lcom/android/launcher3/home/Workspace;->initDefaultHomeIcon()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,79 +35,57 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 6
+    .locals 3
 
-    const-string v1, "Launcher.Workspace"
+    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$12;->this$0:Lcom/android/launcher3/home/Workspace;
 
-    const-string v2, "onClick PageDelete"
+    invoke-virtual {v0}, Lcom/android/launcher3/home/Workspace;->isPageMoving()Z
 
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$12;->this$0:Lcom/android/launcher3/home/Workspace;
+
+    invoke-static {v0}, Lcom/android/launcher3/home/Workspace;->access$1000(Lcom/android/launcher3/home/Workspace;)I
+
+    move-result v0
 
     iget-object v1, p0, Lcom/android/launcher3/home/Workspace$12;->this$0:Lcom/android/launcher3/home/Workspace;
 
-    iget-object v2, p0, Lcom/android/launcher3/home/Workspace$12;->this$0:Lcom/android/launcher3/home/Workspace;
-
-    invoke-static {v2}, Lcom/android/launcher3/home/Workspace;->access$900(Lcom/android/launcher3/home/Workspace;)I
-
-    move-result v2
-
-    invoke-virtual {v1, v2}, Lcom/android/launcher3/home/Workspace;->isEmptyPage(I)Z
+    invoke-static {v1}, Lcom/android/launcher3/home/Workspace;->access$1100(Lcom/android/launcher3/home/Workspace;)I
 
     move-result v1
 
-    if-nez v1, :cond_0
+    if-eq v0, v1, :cond_0
+
+    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$12;->this$0:Lcom/android/launcher3/home/Workspace;
+
+    invoke-static {v0}, Lcom/android/launcher3/home/Workspace;->access$500(Lcom/android/launcher3/home/Workspace;)Lcom/android/launcher3/home/HomeController;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/home/HomeController;->setHomeDefaultIconClick(Z)V
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$12;->this$0:Lcom/android/launcher3/home/Workspace;
 
     iget-object v1, p0, Lcom/android/launcher3/home/Workspace$12;->this$0:Lcom/android/launcher3/home/Workspace;
 
-    invoke-static {v1}, Lcom/android/launcher3/home/Workspace;->access$1000(Lcom/android/launcher3/home/Workspace;)V
+    invoke-static {v1}, Lcom/android/launcher3/home/Workspace;->access$1000(Lcom/android/launcher3/home/Workspace;)I
 
-    const/4 v0, 0x1
-
-    :goto_0
-    invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
-
-    move-result-object v1
+    move-result v1
 
     iget-object v2, p0, Lcom/android/launcher3/home/Workspace$12;->this$0:Lcom/android/launcher3/home/Workspace;
 
-    invoke-virtual {v2}, Lcom/android/launcher3/home/Workspace;->getResources()Landroid/content/res/Resources;
+    invoke-static {v2}, Lcom/android/launcher3/home/Workspace;->access$1200(Lcom/android/launcher3/home/Workspace;)I
 
-    move-result-object v2
+    move-result v2
 
-    const v3, 0x7f090196
+    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/home/Workspace;->updateDefaultHome(II)V
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/launcher3/home/Workspace$12;->this$0:Lcom/android/launcher3/home/Workspace;
-
-    invoke-virtual {v3}, Lcom/android/launcher3/home/Workspace;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v3
-
-    const v4, 0x7f090154
-
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    int-to-long v4, v0
-
-    invoke-virtual {v1, v2, v3, v4, v5}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;J)V
-
+    :cond_1
     return-void
-
-    :cond_0
-    iget-object v1, p0, Lcom/android/launcher3/home/Workspace$12;->this$0:Lcom/android/launcher3/home/Workspace;
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x1
-
-    invoke-static {v1, v2, v3}, Lcom/android/launcher3/home/Workspace;->access$1100(Lcom/android/launcher3/home/Workspace;ZZ)V
-
-    const/4 v0, 0x0
-
-    goto :goto_0
 .end method

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/widget/view/WidgetSearchbar;->onWindowFocusChanged(Z)V
+    value = Lcom/android/launcher3/widget/view/WidgetSearchbar;->onVoiceSearch(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,17 +35,11 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 1
 
     iget-object v0, p0, Lcom/android/launcher3/widget/view/WidgetSearchbar$3;->this$0:Lcom/android/launcher3/widget/view/WidgetSearchbar;
 
     invoke-virtual {v0}, Lcom/android/launcher3/widget/view/WidgetSearchbar;->openKeyboard()V
-
-    const-string v0, "WidgetSearchbar"
-
-    const-string v1, "onWindowFocusChanged : call showSoftInput"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method

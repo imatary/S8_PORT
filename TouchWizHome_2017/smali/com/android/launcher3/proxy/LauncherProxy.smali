@@ -2462,13 +2462,13 @@
 .method public final getPageNumberInOverview(I)I
     .locals 2
 
-    if-gez p1, :cond_0
-
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v0
+
+    if-gez p1, :cond_0
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/base/view/PagedView;->getCurrentPage()I
 

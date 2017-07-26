@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">Historial de cerca</string>
-    <string name="accessibility_add_home_screen">Afegir pàgina</string>
-    <string name="accessibility_button">Botó</string>
-    <string name="accessibility_dimmed">Atenuat</string>
+    <string name="about">Sobre %s</string>
+    <string name="about_already_installed">"Ja s'ha instal·lat l'última versió."</string>
+    <string name="about_home_screen">"Pantalla d'inici"</string>
+    <string name="about_licence">Llicències de codi obert</string>
+    <string name="about_network_err">No es poden comprovar les actualitzacions. El telèfon no està connectat a cap xarxa.</string>
+    <string name="about_new_version_exist">Hi ha una nova versió disponible</string>
+    <string name="about_retry">Reintentar</string>
+    <string name="about_update">Actualitzar</string>
+    <string name="about_version">Versió %s</string>
     <string name="activity_not_available">Aquesta aplicació no està disponible per al seu dispositiu.</string>
     <string name="activity_not_found">Aplicació no instal·lada</string>
     <string name="align_to_bottom">Alinear a la part inferior</string>
     <string name="align_to_top">Alinear a la part superior</string>
-    <string name="app_locked_toast">%s bloquejat.</string>
     <string name="app_search">Cercar telèfon</string>
     <string name="app_search_no_apps">"Pot afegir accessos directes a la pantalla d'inici des dels resultats de cerca."</string>
     <string name="app_search_no_results_found">"No s'han trobat resultats"</string>
     <string name="app_search_tablet">Cercar tablet</string>
-    <string name="app_unlocked_toast">%s desbloquejat.</string>
     <string name="application_name">Inici TouchWiz</string>
     <string name="apply">Aplicar</string>
     <string name="appsPicker_add_button">AFEGIR</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Pàgina predeterminada</string>
     <string name="default_scroll_format">Pàgina %1$d de %2$d</string>
     <string name="disable_message">"Es desactivarà %1$s i totes les funcions relacionades. Per tornar a activar l'app, vagi a Ajustaments > Aplicacions i, a continuació, seleccioni %2$s."</string>
-    <string name="disable_message_knox_mode">"Es desactivarà %1$s i totes les funcions que hi estiguin relacionades. Per tornar a activar l'aplicació, vagi als ajustaments de %2$s > Aplicacions."</string>
     <string name="disable_message_vzw">"Es deshabilitaran %s i totes les funcions relacionades. Per tornar-ho a habilitar, vagi a Ajustaments > Aplicacions > Gestor d'aplicacions."</string>
     <string name="discard">Descartar</string>
     <string name="do_not_show_again">No tornar a mostrar</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">Afegir aplicacions</string>
     <string name="folder_closed">Carpeta tancada.</string>
     <string name="folder_color">Color de la carpeta</string>
-    <string name="folder_color_default">Color de carpeta predeterminat</string>
-    <string name="folder_color_pd">Color %d</string>
+    <string name="folder_color_blue">Blau</string>
+    <string name="folder_color_default">Color de la carpeta predeterminada</string>
+    <string name="folder_color_green">Verd</string>
+    <string name="folder_color_orange">Taronja</string>
+    <string name="folder_color_yellow">Groc</string>
     <string name="folder_hint_text">Introduir nom de carpeta</string>
     <string name="folder_microsoft_apps">Aplicacions de Microsoft</string>
     <string name="folder_multi_search_bar_hint">Cercar apps</string>
@@ -111,7 +117,7 @@
     <string name="ok">Acceptar</string>
     <string name="only_one_widget_instance_allowed">"El widget %s ja s'ha afegit a la Pantalla d'inici."</string>
     <string name="option_menu_contact_up">Contactar amb nosaltres</string>
-    <string name="option_menu_galaxy_essentials">GALAXY Essentials</string>
+    <string name="option_menu_galaxy_essentials">Galaxy Essentials</string>
     <string name="option_menu_home_settings">Ajustaments</string>
     <string name="options_menu">Més opcions</string>
     <string name="options_menu_search_recommend">Opcions de cerca</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">No hi ha més espai a la pàgina</string>
     <string name="out_of_space_dialog">"No hi ha prou espai a aquesta pàgina. L'element s'afegirà en una pàgina nova."</string>
     <string name="permdesc_install_widget">"Aquesta aplicació pot afegir widgets a la pantalla d'inici."</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">"Aquesta aplicació pot llegir els ajustaments de la pàgina de contingut personalitzat, que està ubicada a la part esquerra de la Pantalla d'inici."</string>
     <string name="permdesc_write_zeropage_settings">"Aquesta aplicació pot canviar els ajustaments de la pàgina de contingut personalitzat, que està ubicada a la part esquerra de la Pantalla d'inici."</string>
     <string name="permlab_install_widget">Afegir widgets</string>
@@ -139,7 +146,7 @@
     <string name="quick_option_delete_folder_alert_no_title">"S'esborrarà aquesta carpeta. Les apps d'aquesta carpeta encara estaran disponible a la pantalla Apps."</string>
     <string name="quick_option_dimmed_disable">Deshabilitar</string>
     <string name="quick_option_disable">Deshabilitar</string>
-    <string name="quick_option_install_dual_im">Instal·lar segona aplicació</string>
+    <string name="quick_option_install_dual_im">Instal·lar segona aplicac</string>
     <string name="quick_option_lock">Protegir</string>
     <string name="quick_option_move_from_folder">Moure de la carpeta</string>
     <string name="quick_option_remove">Eliminar</string>
@@ -165,20 +172,14 @@
     <string name="swipe_up_for_more_apps">Faci lliscar el dit amunt o avall per veure totes les aplicacions</string>
     <string name="swipe_up_for_more_apps_att">"Desplaci's cap amunt o cap avall a la pantalla per a totes les apps"</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">"Desplaci's cap amunt o cap avall amb dos dits per totes les aplicacions."</string>
-    <string name="talkback_changed_to_ps">Canviat a %s.</string>
+    <string name="talkback_checked">Seleccionat</string>
     <string name="talkback_folder">Carpeta</string>
     <string name="talkback_n_items">%d elements</string>
     <string name="talkback_press_back_key_to_close_folder">Premi la tecla de retrocés per tancar la carpeta.</string>
-    <string name="talkback_tab_back_button_to_close_folder">Toqui el botó Tornar per tancar la carpeta.</string>
     <string name="title_settings">Ajustaments de %s</string>
     <string name="tts_add_shortcut_on_home_screen_notice">"Arrossegui la icona a la part superior de la pantalla per afegir a la pantalla d'Inici."</string>
     <string name="tts_bottom_handle">Controlador inferior</string>
-    <string name="tts_changed_to_apps_edit_mode">"S'ha canviat al mode d'edició d'aplicacions."</string>
-    <string name="tts_changed_to_folder_edit_mode">"S'ha canviat al mode Edició de carpeta"</string>
-    <string name="tts_changed_to_home_screen_edit_mode">"S'ha canviat al mode d'edició de la Pantalla d'inici."</string>
     <string name="tts_folder_created">Carpeta creada</string>
-    <string name="tts_holding_items">Sostenir %1$s i %2$d més</string>
-    <string name="tts_hotseat_item_moved_from_external">"Element mogut a la barra de menú de la pantalla d'inici."</string>
     <string name="tts_hotseat_move_to">Posició %d a la barra de menú.</string>
     <string name="tts_hover_item_over_other_item">%1$s sobre %2$s</string>
     <string name="tts_item_added">Element afegit.</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">Veure més a Play Store</string>
     <string name="viewtype_alphabetic_grid">Ordre alfabètic</string>
     <string name="viewtype_custom_grid">Ordre personalitzat</string>
-    <string name="voice_search">Cerca de Veu</string>
     <string name="wallpaper_button_text">Fons de pantalla</string>
     <string name="wallpapers_and_themes_button_text">Fons de pantalla i temes</string>
     <string name="widget_button_text">Widgets</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">"Per utilitzar aquesta funció, ha d'instal·lar %1$s. Toqui DESCARREGAR per descarregar i instal·lar %2$s."</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Notícies de Sohu</string>
-    <string name="zeropage_toutiao_title">Informació urgent</string>
 </resources>

@@ -3,12 +3,12 @@
 .source "Workspace.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/Workspace;->onLauncherTransitionEnd(Lcom/android/launcher3/Launcher;ZZLcom/android/launcher3/common/stage/StageEntry;)V
+    value = Lcom/android/launcher3/home/Workspace;->createCustomPlusPage()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,29 +34,45 @@
 
 
 # virtual methods
-.method public run()V
+.method public onClick(Landroid/view/View;)V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$8;->this$0:Lcom/android/launcher3/home/Workspace;
+    iget-object v1, p0, Lcom/android/launcher3/home/Workspace$8;->this$0:Lcom/android/launcher3/home/Workspace;
 
-    invoke-static {v0}, Lcom/android/launcher3/home/Workspace;->access$600(Lcom/android/launcher3/home/Workspace;)Lcom/android/launcher3/home/HomeController;
+    invoke-virtual {v1}, Lcom/android/launcher3/home/Workspace;->isOverviewState()Z
 
-    move-result-object v0
+    move-result v1
 
-    invoke-virtual {v0}, Lcom/android/launcher3/home/HomeController;->isNormalState()Z
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/android/launcher3/home/Workspace$8;->this$0:Lcom/android/launcher3/home/Workspace;
+
+    invoke-virtual {v1, p1}, Lcom/android/launcher3/home/Workspace;->indexOfChild(Landroid/view/View;)I
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lcom/android/launcher3/home/Workspace$8;->this$0:Lcom/android/launcher3/home/Workspace;
 
-    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$8;->this$0:Lcom/android/launcher3/home/Workspace;
+    invoke-static {v1}, Lcom/android/launcher3/home/Workspace;->access$700(Lcom/android/launcher3/home/Workspace;)I
 
-    const/4 v1, 0x0
+    move-result v1
+
+    if-ne v0, v1, :cond_1
+
+    iget-object v1, p0, Lcom/android/launcher3/home/Workspace$8;->this$0:Lcom/android/launcher3/home/Workspace;
+
+    invoke-virtual {v1}, Lcom/android/launcher3/home/Workspace;->addNewWorkspaceScreen()J
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    iget-object v1, p0, Lcom/android/launcher3/home/Workspace$8;->this$0:Lcom/android/launcher3/home/Workspace;
 
     const/4 v2, 0x1
 
-    invoke-static {v0, v1, v2}, Lcom/android/launcher3/home/Workspace;->access$700(Lcom/android/launcher3/home/Workspace;ZZ)V
+    invoke-virtual {v1, v0, v2}, Lcom/android/launcher3/home/Workspace;->moveToScreen(IZ)V
 
-    :cond_0
-    return-void
+    goto :goto_0
 .end method

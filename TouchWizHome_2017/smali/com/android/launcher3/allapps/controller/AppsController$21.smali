@@ -35,11 +35,17 @@
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 2
+
+    const-string v0, "Launcher.AppsController"
+
+    const-string v1, "remove empty screen"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$21;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
-    invoke-virtual {v0}, Lcom/android/launcher3/allapps/controller/AppsController;->notifyControllerItemsChanged()V
+    invoke-virtual {v0}, Lcom/android/launcher3/allapps/controller/AppsController;->removeEmptyPagesAndUpdateAllItemsInfo()Z
 
     return-void
 .end method

@@ -34,8 +34,6 @@
 
 .field private mReceiver:Landroid/content/BroadcastReceiver;
 
-.field private mSettingsActivity:Landroid/app/Activity;
-
 
 # direct methods
 .method static constructor <clinit>()V
@@ -102,18 +100,10 @@
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/android/launcher3/home/HomeModeChangeActivity;)Landroid/app/Activity;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mSettingsActivity:Landroid/app/Activity;
-
-    return-object v0
-.end method
-
 .method private askConfirmation()V
     .locals 3
 
-    const v2, 0x7f090040
+    const v2, 0x7f080046
 
     const/4 v1, 0x0
 
@@ -164,7 +154,7 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f090042
+    const v0, 0x7f080048
 
     const/4 v1, 0x1
 
@@ -285,194 +275,112 @@
 .end method
 
 .method private initActionBar()V
-    .locals 9
-
-    const v8, 0x7f10005c
+    .locals 6
 
     invoke-virtual {p0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->getActionBar()Landroid/app/ActionBar;
 
-    move-result-object v5
+    move-result-object v3
 
-    if-eqz v5, :cond_0
+    if-eqz v3, :cond_0
 
-    const/4 v6, 0x1
+    const/4 v4, 0x1
 
-    invoke-virtual {v5, v6}, Landroid/app/ActionBar;->setDisplayShowCustomEnabled(Z)V
+    invoke-virtual {v3, v4}, Landroid/app/ActionBar;->setDisplayShowCustomEnabled(Z)V
 
-    const v6, 0x7f040021
+    const v4, 0x7f030021
 
-    invoke-virtual {v5, v6}, Landroid/app/ActionBar;->setCustomView(I)V
+    invoke-virtual {v3, v4}, Landroid/app/ActionBar;->setCustomView(I)V
 
-    invoke-virtual {v5}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
+    invoke-virtual {v3}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-virtual {v6, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    const v5, 0x7f0f0023
 
-    move-result-object v6
+    invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    invoke-virtual {v6, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    move-result-object v4
 
-    invoke-virtual {v5}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
+    invoke-virtual {v4, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    move-result-object v6
+    invoke-virtual {v3}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
 
-    const v7, 0x7f10005d
+    move-result-object v4
 
-    invoke-virtual {v6, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    const v5, 0x7f0f0069
 
-    move-result-object v6
+    invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    check-cast v6, Landroid/widget/TextView;
+    move-result-object v4
 
-    iput-object v6, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mApplyButton:Landroid/widget/TextView;
+    check-cast v4, Landroid/widget/TextView;
 
-    invoke-virtual {v5}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
+    iput-object v4, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mApplyButton:Landroid/widget/TextView;
 
-    move-result-object v6
+    iget-object v4, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mApplyButton:Landroid/widget/TextView;
 
-    invoke-virtual {v6, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v4, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    move-result-object v1
+    iget-object v4, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mApplyButton:Landroid/widget/TextView;
 
-    check-cast v1, Landroid/widget/TextView;
+    const/4 v5, 0x0
 
-    invoke-virtual {p0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v6
-
-    const v7, 0x7f090002
-
-    invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v6, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mApplyButton:Landroid/widget/TextView;
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v8, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mApplyButton:Landroid/widget/TextView;
-
-    invoke-virtual {v8}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
-
-    move-result-object v8
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string v8, ", "
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
-
-    move-result-object v7
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    const-string v7, ", "
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v1, v6}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    iget-object v6, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mApplyButton:Landroid/widget/TextView;
-
-    invoke-virtual {v6, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    iget-object v6, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mApplyButton:Landroid/widget/TextView;
-
-    const/4 v7, 0x0
-
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setEnabled(Z)V
 
     invoke-static {}, Lcom/android/launcher3/theme/OpenThemeManager;->getInstance()Lcom/android/launcher3/theme/OpenThemeManager;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-virtual {v6}, Lcom/android/launcher3/theme/OpenThemeManager;->isDefaultTheme()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_0
-
-    const v6, 0x7f10005b
-
-    invoke-virtual {p0, v6}, Lcom/android/launcher3/home/HomeModeChangeActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/widget/LinearLayout;
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v6
-
-    const v7, 0x7f02006a
-
-    const/4 v8, 0x0
-
-    invoke-virtual {v6, v7, v8}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v6
-
-    invoke-virtual {v2, v6}, Landroid/widget/LinearLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
-
-    invoke-static {p0}, Lcom/android/launcher3/Utilities;->isEnableBtnBg(Landroid/content/Context;)Z
+    invoke-virtual {v4}, Lcom/android/launcher3/theme/OpenThemeManager;->isDefaultTheme()Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    const/4 v3, 0x0
+    const v4, 0x7f0f0068
+
+    invoke-virtual {p0, v4}, Lcom/android/launcher3/home/HomeModeChangeActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/LinearLayout;
+
+    invoke-virtual {p0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    const v5, 0x7f02006c
+
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    invoke-static {p0}, Lcom/android/launcher3/Utilities;->isEnableBtnBg(Landroid/content/Context;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const/4 v1, 0x0
 
     :goto_0
-    invoke-virtual {v2}, Landroid/widget/LinearLayout;->getChildCount()I
+    invoke-virtual {v0}, Landroid/widget/LinearLayout;->getChildCount()I
 
-    move-result v6
+    move-result v4
 
-    if-ge v3, v6, :cond_0
+    if-ge v1, v4, :cond_0
 
-    invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
-    move-result-object v6
+    move-result-object v4
 
-    const v7, 0x7f0200fe
+    const v5, 0x7f020116
 
-    invoke-virtual {v6, v7}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v4, v5}, Landroid/view/View;->setBackgroundResource(I)V
 
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
@@ -485,7 +393,7 @@
 
     const/4 v1, 0x1
 
-    const v0, 0x7f10008b
+    const v0, 0x7f0f0096
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->findViewById(I)Landroid/view/View;
 
@@ -495,7 +403,7 @@
 
     iput-object v0, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mPreview:Landroid/widget/ImageView;
 
-    const v0, 0x7f100088
+    const v0, 0x7f0f0093
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->findViewById(I)Landroid/view/View;
 
@@ -505,7 +413,7 @@
 
     iput-object v0, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mAppsRadio:Landroid/widget/RadioButton;
 
-    const v0, 0x7f10008a
+    const v0, 0x7f0f0095
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->findViewById(I)Landroid/view/View;
 
@@ -515,7 +423,7 @@
 
     iput-object v0, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mHomeOnlyRadio:Landroid/widget/RadioButton;
 
-    const v0, 0x7f10008c
+    const v0, 0x7f0f0097
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->findViewById(I)Landroid/view/View;
 
@@ -534,7 +442,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     :goto_0
-    const v0, 0x7f100087
+    const v0, 0x7f0f0092
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->findViewById(I)Landroid/view/View;
 
@@ -542,7 +450,7 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f100089
+    const v0, 0x7f0f0094
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->findViewById(I)Landroid/view/View;
 
@@ -579,7 +487,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f090198
+    const v2, 0x7f080198
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -591,7 +499,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f090131
+    const v3, 0x7f080132
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -607,7 +515,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f090130
+    const v3, 0x7f080131
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -666,7 +574,7 @@
 
     move-result-object v4
 
-    const v6, 0x7f090198
+    const v6, 0x7f080198
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -676,7 +584,7 @@
 
     move-result-object v4
 
-    const v7, 0x7f0900ea
+    const v7, 0x7f0800eb
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -697,7 +605,7 @@
 
     move-result-object v4
 
-    const v6, 0x7f0901bc
+    const v6, 0x7f0801bc
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -753,7 +661,7 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f090041
+    const v2, 0x7f080047
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -767,7 +675,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09000f
+    const v3, 0x7f080013
 
     new-instance v4, Lcom/android/launcher3/home/HomeModeChangeActivity$2;
 
@@ -777,7 +685,7 @@
 
     if-eqz p2, :cond_0
 
-    const v2, 0x7f090028
+    const v2, 0x7f08002b
 
     new-instance v3, Lcom/android/launcher3/home/HomeModeChangeActivity$3;
 
@@ -853,7 +761,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0200bb
+    const v2, 0x7f0200c5
 
     invoke-virtual {v1, v2, v3}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
@@ -863,7 +771,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mHelpText:Landroid/widget/TextView;
 
-    const v1, 0x7f090044
+    const v1, 0x7f08004a
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -888,7 +796,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0200ba
+    const v2, 0x7f0200c4
 
     invoke-virtual {v1, v2, v3}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
@@ -898,7 +806,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mHelpText:Landroid/widget/TextView;
 
-    const v1, 0x7f090043
+    const v1, 0x7f080049
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -950,7 +858,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090198
+    const v2, 0x7f080198
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -960,7 +868,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090103
+    const v3, 0x7f080104
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -995,10 +903,10 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f10005c -> :sswitch_0
-        0x7f10005d -> :sswitch_1
-        0x7f100087 -> :sswitch_2
-        0x7f100089 -> :sswitch_3
+        0x7f0f0023 -> :sswitch_0
+        0x7f0f0069 -> :sswitch_1
+        0x7f0f0092 -> :sswitch_2
+        0x7f0f0094 -> :sswitch_3
     .end sparse-switch
 .end method
 
@@ -1013,18 +921,7 @@
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportRotate()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const/4 v1, -0x1
-
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/HomeModeChangeActivity;->setRequestedOrientation(I)V
-
-    :goto_0
-    const v1, 0x7f040029
+    const v1, 0x7f030029
 
     invoke-virtual {p0, v1}, Lcom/android/launcher3/home/HomeModeChangeActivity;->setContentView(I)V
 
@@ -1048,10 +945,6 @@
 
     invoke-direct {p0, v1}, Lcom/android/launcher3/home/HomeModeChangeActivity;->updatePreviewAndHelpText(Z)V
 
-    const v1, 0x7f09003e
-
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/HomeModeChangeActivity;->setTitle(I)V
-
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
@@ -1068,24 +961,7 @@
 
     invoke-virtual {p0, v1, v0, v2, v3}, Lcom/android/launcher3/home/HomeModeChangeActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/android/launcher3/LauncherAppState;->getSettingsActivity()Lcom/android/launcher3/SettingsActivity;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/android/launcher3/home/HomeModeChangeActivity;->mSettingsActivity:Landroid/app/Activity;
-
     return-void
-
-    :cond_0
-    const/4 v1, 0x5
-
-    invoke-virtual {p0, v1}, Lcom/android/launcher3/home/HomeModeChangeActivity;->setRequestedOrientation(I)V
-
-    goto :goto_0
 .end method
 
 .method protected onDestroy()V

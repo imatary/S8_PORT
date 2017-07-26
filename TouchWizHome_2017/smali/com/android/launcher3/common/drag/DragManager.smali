@@ -620,7 +620,7 @@
     :cond_2
     iget-object v1, p0, Lcom/android/launcher3/common/drag/DragManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    const v2, 0x7f04003a
+    const v2, 0x7f03003a
 
     invoke-static {v1, v2, v3}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -686,7 +686,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c004c
+    const v3, 0x7f0b0044
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -759,7 +759,7 @@
 
     const/4 v0, 0x0
 
-    if-eqz v4, :cond_7
+    if-eqz v4, :cond_6
 
     iget-object v9, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
@@ -794,21 +794,14 @@
 
     iget-object v11, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_3
 
     iget-object v12, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
     iget-boolean v12, v12, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->cancelled:Z
 
-    if-eqz v12, :cond_2
+    if-nez v12, :cond_3
 
-    iget-object v12, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
-
-    iget-boolean v12, v12, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->cancelDropFolder:Z
-
-    if-eqz v12, :cond_4
-
-    :cond_2
     :goto_0
     invoke-interface {v9, v10, v11, v7}, Lcom/android/launcher3/common/drag/DragSource;->onDropCompleted(Landroid/view/View;Lcom/android/launcher3/common/drag/DropTarget$DragObject;Z)V
 
@@ -816,13 +809,13 @@
 
     iget-object v7, v7, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->extraDragInfoList:Ljava/util/ArrayList;
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_6
 
     iget-object v7, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
     iget-object v7, v7, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->extraDragSourceList:Ljava/util/ArrayList;
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_6
 
     iget-object v7, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
@@ -837,7 +830,7 @@
 
     move-result v8
 
-    if-eqz v8, :cond_7
+    if-eqz v8, :cond_6
 
     invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -861,13 +854,13 @@
 
     move-result-object v8
 
-    :cond_3
+    :cond_2
     :goto_2
     invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v9
 
-    if-eqz v9, :cond_6
+    if-eqz v9, :cond_5
 
     invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -881,29 +874,29 @@
 
     move-result v9
 
-    if-eqz v9, :cond_3
+    if-eqz v9, :cond_2
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_4
 
     iget-boolean v9, v3, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->cancelled:Z
 
-    if-nez v9, :cond_5
+    if-nez v9, :cond_4
 
     invoke-virtual {v6, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    :cond_4
+    :cond_3
     move v7, v8
 
     goto :goto_0
 
-    :cond_5
+    :cond_4
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    :cond_6
+    :cond_5
     invoke-interface {v4}, Lcom/android/launcher3/common/drag/DropTarget;->getTargetView()Landroid/view/View;
 
     move-result-object v8
@@ -912,7 +905,7 @@
 
     goto :goto_1
 
-    :cond_7
+    :cond_6
     return-void
 .end method
 
@@ -997,7 +990,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0c0021
+    const v6, 0x7f0b0019
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1604,6 +1597,17 @@
 
     if-eqz v3, :cond_4
 
+    iget-object v3, p0, Lcom/android/launcher3/common/drag/DragManager;->mLastDropTarget:Lcom/android/launcher3/common/drag/DropTarget;
+
+    if-eqz v3, :cond_1
+
+    iget-object v3, p0, Lcom/android/launcher3/common/drag/DragManager;->mLastDropTarget:Lcom/android/launcher3/common/drag/DropTarget;
+
+    iget-object v4, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
+
+    invoke-interface {v3, v4, v5}, Lcom/android/launcher3/common/drag/DropTarget;->onDragExit(Lcom/android/launcher3/common/drag/DropTarget$DragObject;Z)V
+
+    :cond_1
     iget-object v3, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
     iput-boolean v5, v3, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->deferDragViewCleanupPostAnimation:Z
@@ -1616,17 +1620,6 @@
 
     iput-boolean v6, v3, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragComplete:Z
 
-    iget-object v3, p0, Lcom/android/launcher3/common/drag/DragManager;->mLastDropTarget:Lcom/android/launcher3/common/drag/DropTarget;
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, p0, Lcom/android/launcher3/common/drag/DragManager;->mLastDropTarget:Lcom/android/launcher3/common/drag/DropTarget;
-
-    iget-object v4, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
-
-    invoke-interface {v3, v4, v5}, Lcom/android/launcher3/common/drag/DropTarget;->onDragExit(Lcom/android/launcher3/common/drag/DropTarget$DragObject;Z)V
-
-    :cond_1
     iget-object v3, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
     iget-object v3, v3, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragSource:Lcom/android/launcher3/common/drag/DragSource;
@@ -2671,13 +2664,19 @@
 .end method
 
 .method public setDragScroller(Lcom/android/launcher3/common/drag/DragScroller;)V
-    .locals 0
+    .locals 1
 
     invoke-direct {p0}, Lcom/android/launcher3/common/drag/DragManager;->clearScrollRunnable()V
 
     iput-object p1, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragScroller:Lcom/android/launcher3/common/drag/DragScroller;
 
-    invoke-virtual {p0}, Lcom/android/launcher3/common/drag/DragManager;->setScrollZone()V
+    iget-object v0, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragScroller:Lcom/android/launcher3/common/drag/DragScroller;
+
+    invoke-interface {v0}, Lcom/android/launcher3/common/drag/DragScroller;->getScrollZone()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/launcher3/common/drag/DragManager;->mScrollZone:I
 
     return-void
 .end method
@@ -2694,20 +2693,6 @@
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/common/drag/DragManager;->mScrollView:Landroid/view/View;
-
-    return-void
-.end method
-
-.method public setScrollZone()V
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/common/drag/DragManager;->mDragScroller:Lcom/android/launcher3/common/drag/DragScroller;
-
-    invoke-interface {v0}, Lcom/android/launcher3/common/drag/DragScroller;->getScrollZone()I
-
-    move-result v0
-
-    iput v0, p0, Lcom/android/launcher3/common/drag/DragManager;->mScrollZone:I
 
     return-void
 .end method
@@ -2815,26 +2800,28 @@
 
     div-int/lit8 v34, v5, 0x2
 
-    if-eqz p12, :cond_a
+    move-object/from16 v0, p0
 
-    move/from16 v7, v33
+    iget v5, v0, Lcom/android/launcher3/common/drag/DragManager;->mMotionDownX:I
 
-    :goto_1
-    if-eqz p12, :cond_b
+    sub-int v7, v5, p2
 
-    move/from16 v8, v34
+    move-object/from16 v0, p0
 
-    :goto_2
-    if-nez p8, :cond_c
+    iget v5, v0, Lcom/android/launcher3/common/drag/DragManager;->mMotionDownY:I
+
+    sub-int v8, v5, p3
+
+    if-nez p8, :cond_a
 
     const/16 v31, 0x0
 
-    :goto_3
-    if-nez p8, :cond_d
+    :goto_1
+    if-nez p8, :cond_b
 
     const/16 v32, 0x0
 
-    :goto_4
+    :goto_2
     const/4 v5, 0x1
 
     move-object/from16 v0, p0
@@ -2861,22 +2848,22 @@
 
     iget-object v6, v0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
-    if-eqz p12, :cond_e
+    if-eqz p12, :cond_c
 
     move/from16 v5, v33
 
-    :goto_5
+    :goto_3
     iput v5, v6, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->xOffset:I
 
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
-    if-eqz p12, :cond_f
+    if-eqz p12, :cond_d
 
     move/from16 v5, v34
 
-    :goto_6
+    :goto_4
     iput v5, v6, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->yOffset:I
 
     move-object/from16 v0, p0
@@ -2964,7 +2951,7 @@
 
     iget-object v5, v0, Lcom/android/launcher3/common/drag/DragManager;->mMultiSelectManager:Lcom/android/launcher3/common/multiselect/MultiSelectManager;
 
-    if-eqz v5, :cond_19
+    if-eqz v5, :cond_17
 
     new-instance v21, Ljava/util/ArrayList;
 
@@ -2990,14 +2977,14 @@
 
     instance-of v5, v0, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    if-eqz v5, :cond_19
+    if-eqz v5, :cond_17
 
     :cond_6
     invoke-virtual/range {v21 .. v21}, Ljava/util/ArrayList;->size()I
 
     move-result v5
 
-    if-lez v5, :cond_19
+    if-lez v5, :cond_17
 
     new-instance v37, Ljava/util/ArrayList;
 
@@ -3014,12 +3001,12 @@
     move-result-object v54
 
     :cond_7
-    :goto_7
+    :goto_5
     invoke-interface/range {v54 .. v54}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v5
 
-    if-eqz v5, :cond_12
+    if-eqz v5, :cond_10
 
     invoke-interface/range {v54 .. v54}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3310,7 +3297,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0a012e
+    const v6, 0x7f09010c
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3370,7 +3357,7 @@
 
     invoke-virtual {v9, v0}, Lcom/android/launcher3/common/drag/DragView;->setSourceView(Landroid/view/View;)V
 
-    if-eqz p12, :cond_10
+    if-eqz p12, :cond_e
 
     move-object/from16 v0, p0
 
@@ -3384,8 +3371,8 @@
 
     move v6, v5
 
-    :goto_8
-    if-eqz p12, :cond_11
+    :goto_6
+    if-eqz p12, :cond_f
 
     move-object/from16 v0, p0
 
@@ -3395,7 +3382,7 @@
 
     sub-int v5, v5, v34
 
-    :goto_9
+    :goto_7
     invoke-virtual {v9, v6, v5}, Lcom/android/launcher3/common/drag/DragView;->setTargetOffset(II)V
 
     move/from16 v0, v28
@@ -3439,45 +3426,27 @@
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_7
+    goto/16 :goto_5
 
     :cond_a
-    move-object/from16 v0, p0
-
-    iget v5, v0, Lcom/android/launcher3/common/drag/DragManager;->mMotionDownX:I
-
-    sub-int v7, v5, p2
-
-    goto/16 :goto_1
-
-    :cond_b
-    move-object/from16 v0, p0
-
-    iget v5, v0, Lcom/android/launcher3/common/drag/DragManager;->mMotionDownY:I
-
-    sub-int v8, v5, p3
-
-    goto/16 :goto_2
-
-    :cond_c
     move-object/from16 v0, p8
 
     iget v0, v0, Landroid/graphics/Rect;->left:I
 
     move/from16 v31, v0
 
-    goto/16 :goto_3
+    goto/16 :goto_1
 
-    :cond_d
+    :cond_b
     move-object/from16 v0, p8
 
     iget v0, v0, Landroid/graphics/Rect;->top:I
 
     move/from16 v32, v0
 
-    goto/16 :goto_4
+    goto/16 :goto_2
 
-    :cond_e
+    :cond_c
     move-object/from16 v0, p0
 
     iget v5, v0, Lcom/android/launcher3/common/drag/DragManager;->mMotionDownX:I
@@ -3486,9 +3455,9 @@
 
     sub-int/2addr v5, v10
 
-    goto/16 :goto_5
+    goto/16 :goto_3
 
-    :cond_f
+    :cond_d
     move-object/from16 v0, p0
 
     iget v5, v0, Lcom/android/launcher3/common/drag/DragManager;->mMotionDownY:I
@@ -3497,28 +3466,28 @@
 
     sub-int/2addr v5, v10
 
-    goto/16 :goto_6
+    goto/16 :goto_4
 
-    :cond_10
+    :cond_e
     sub-int v5, p2, v23
 
     add-int v5, v5, v47
 
     move v6, v5
 
-    goto :goto_8
+    goto :goto_6
 
-    :cond_11
+    :cond_f
     sub-int v5, p3, v24
 
-    goto :goto_9
+    goto :goto_7
 
-    :cond_12
+    :cond_10
     invoke-virtual/range {v37 .. v37}, Ljava/util/ArrayList;->size()I
 
     move-result v5
 
-    if-lez v5, :cond_19
+    if-lez v5, :cond_17
 
     move-object/from16 v0, p0
 
@@ -3548,8 +3517,8 @@
 
     add-int/lit8 v42, v5, -0x1
 
-    :goto_a
-    if-ltz v42, :cond_14
+    :goto_8
+    if-ltz v42, :cond_12
 
     move-object/from16 v0, p0
 
@@ -3569,7 +3538,7 @@
 
     iget-object v5, v0, Lcom/android/launcher3/common/drag/DropTarget$DragObject;->dragView:Lcom/android/launcher3/common/drag/DragView;
 
-    if-eqz v5, :cond_13
+    if-eqz v5, :cond_11
 
     move-object/from16 v0, v36
 
@@ -3585,12 +3554,12 @@
 
     invoke-virtual {v5, v6, v10}, Lcom/android/launcher3/common/drag/DragView;->show(II)V
 
-    :cond_13
+    :cond_11
     add-int/lit8 v42, v42, -0x1
 
-    goto :goto_a
+    goto :goto_8
 
-    :cond_14
+    :cond_12
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/launcher3/common/drag/DragManager;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
@@ -3601,13 +3570,13 @@
 
     move-result-object v6
 
-    :cond_15
-    :goto_b
+    :cond_13
+    :goto_9
     invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v5
 
-    if-eqz v5, :cond_19
+    if-eqz v5, :cond_17
 
     invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3643,13 +3612,13 @@
 
     move-result-object v5
 
-    :cond_16
-    :goto_c
+    :cond_14
+    :goto_a
     invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v10
 
-    if-eqz v10, :cond_18
+    if-eqz v10, :cond_16
 
     invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3667,7 +3636,7 @@
 
     move-result v10
 
-    if-eqz v10, :cond_17
+    if-eqz v10, :cond_15
 
     move-object/from16 v0, v50
 
@@ -3675,12 +3644,12 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    :cond_17
+    :cond_15
     move-object/from16 v0, v38
 
     instance-of v10, v0, Lcom/android/launcher3/allapps/controller/AppsDragController;
 
-    if-eqz v10, :cond_16
+    if-eqz v10, :cond_14
 
     move-object/from16 v0, p0
 
@@ -3692,9 +3661,9 @@
 
     move-result v25
 
-    goto :goto_c
+    goto :goto_a
 
-    :cond_18
+    :cond_16
     sub-int v35, v30, v25
 
     move-object/from16 v0, p0
@@ -3721,7 +3690,7 @@
 
     instance-of v5, v0, Lcom/android/launcher3/allapps/controller/AppsDragController;
 
-    if-eqz v5, :cond_15
+    if-eqz v5, :cond_13
 
     check-cast v38, Lcom/android/launcher3/allapps/controller/AppsDragController;
 
@@ -3739,9 +3708,9 @@
 
     invoke-virtual {v0, v5, v1, v2, v3}, Lcom/android/launcher3/allapps/controller/AppsDragController;->onAdjustDraggedObjectPosition(Lcom/android/launcher3/common/drag/DropTarget$DragObject;III)V
 
-    goto/16 :goto_b
+    goto/16 :goto_9
 
-    :cond_19
+    :cond_17
     move-object/from16 v0, p0
 
     iget v5, v0, Lcom/android/launcher3/common/drag/DragManager;->mMotionDownX:I
@@ -3756,9 +3725,9 @@
 
     move-result v5
 
-    if-eqz v5, :cond_1a
+    if-eqz v5, :cond_18
 
-    if-eqz p11, :cond_1a
+    if-eqz p11, :cond_18
 
     move-object/from16 v0, p0
 
@@ -3768,14 +3737,14 @@
 
     invoke-direct {v0, v5}, Lcom/android/launcher3/common/drag/DragManager;->createQuickOptionView(Lcom/android/launcher3/common/drag/DropTarget$DragObject;)V
 
-    :cond_1a
+    :cond_18
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/launcher3/common/drag/DragManager;->mMoveStageAlarm:Lcom/android/launcher3/util/alarm/Alarm;
 
-    if-eqz v5, :cond_1c
+    if-eqz v5, :cond_1a
 
-    if-eqz p4, :cond_1c
+    if-eqz p4, :cond_1a
 
     invoke-interface/range {p4 .. p4}, Lcom/android/launcher3/common/drag/DragSource;->getDragSourceType()I
 
@@ -3783,7 +3752,7 @@
 
     const/4 v6, 0x1
 
-    if-eq v5, v6, :cond_1b
+    if-eq v5, v6, :cond_19
 
     invoke-interface/range {p4 .. p4}, Lcom/android/launcher3/common/drag/DragSource;->getDragSourceType()I
 
@@ -3791,9 +3760,9 @@
 
     const/4 v6, 0x4
 
-    if-ne v5, v6, :cond_1c
+    if-ne v5, v6, :cond_1a
 
-    :cond_1b
+    :cond_19
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/launcher3/common/drag/DragManager;->mMoveStageAlarm:Lcom/android/launcher3/util/alarm/Alarm;
@@ -3822,7 +3791,7 @@
 
     invoke-virtual {v5, v6}, Lcom/android/launcher3/util/alarm/Alarm;->setOnAlarmListener(Lcom/android/launcher3/util/alarm/OnAlarmListener;)V
 
-    :cond_1c
+    :cond_1a
     return-object v4
 .end method
 

@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">ਖੋਜ ਇਤਿਹਾਸ</string>
-    <string name="accessibility_add_home_screen">ਪੰਨਾ ਜੋੜੋ</string>
-    <string name="accessibility_button">ਬਟਨ</string>
-    <string name="accessibility_dimmed">ਧੁੰਦਲਾ ਕੀਤਾ ਗਿਆ</string>
+    <string name="about">%s ਦੇ ਬਾਰੇ</string>
+    <string name="about_already_installed">ਨਵੀਨਤਮ ਸੰਸਕਰਣ ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਸਥਾਪਿਤ ਹੈ।</string>
+    <string name="about_home_screen">ਹੋਮ ਸਕ੍ਰੀਨ</string>
+    <string name="about_licence">ਓਪਨ ਸੋਰਸ ਲਾਈਸੰਸਿਸ</string>
+    <string name="about_network_err">ਅਪਡੇਟਸ ਲਈ ਜਾਂਚ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ। ਤੁਹਾਡਾ ਫ਼ੋਨ ਨੈੱਟਵਰਕ ਨਾਲ ਕਨੈਕਟ ਨਹੀਂ ਹੈ।</string>
+    <string name="about_new_version_exist">ਇੱਕ ਨਵਾਂ ਸੰਸਕਰਣ ਉਪਲਬਧ ਹੈ।</string>
+    <string name="about_retry">ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="about_update">ਅਪਡੇਟ ਕਰੋ</string>
+    <string name="about_version">%s ਸੰਸਕਰਣ</string>
     <string name="activity_not_available">ਇਹ ਐਪ ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਲਈ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।</string>
     <string name="activity_not_found">ਅਨੁਪ੍ਰਯੋਗ ਸਥਾਪਿਤ ਨਹੀਂ ਹੋਈ।</string>
     <string name="align_to_bottom">ਹੇਠਾਂ ਵੱਲ ਸੇਧ ਵਿੱਚ ਕਰੋ</string>
     <string name="align_to_top">ਉੱਪਰ ਵੱਲ ਸੇਧ ਵਿੱਚ ਕਰੋ</string>
-    <string name="app_locked_toast">%s ਲੌਕ ਹੋਇਆ।</string>
     <string name="app_search">ਫ਼ੋਨ ਵਿੱਚ ਖੋਜੋ</string>
     <string name="app_search_no_apps">ਤੁਸੀਂ ਖੋਜ ਪਰਿਣਾਮਾਂ ਤੋਂ ਹੋਮ ਸਕ੍ਰੀਨ ਤੇ ਸ਼ੌਰਟਕੱਟਸ ਜੋੜ ਸਕਦੇ ਹੋ।</string>
     <string name="app_search_no_results_found">ਕੋਈ ਪਰਿਣਾਮ ਨਹੀਂ ਮਿਲਿਆ</string>
     <string name="app_search_tablet">ਟੈਬਲੇਟ ਵਿੱਚ ਖੋਜੋ</string>
-    <string name="app_unlocked_toast">%s ਅਨਲੌਕ ਕੀਤੀ ਗਈ।</string>
     <string name="application_name">ਟੱਚਵਿਜ਼ ਹੋਮ</string>
     <string name="apply">ਲਾਗੂ ਕਰੋ</string>
     <string name="appsPicker_add_button">ਜੋੜੋ</string>
@@ -38,7 +42,6 @@
     <string name="default_page">ਡਿਫਾੱਲਟ ਪੰਨਾ</string>
     <string name="default_scroll_format">ਪੰਨਾ %1$d ਵਿੱਚੋਂ %2$d।</string>
     <string name="disable_message">%1$s ਅਤੇ ਇਸ ਨਾਲ ਸੰਬੰਧਿਤ ਸਾਰੇ ਫੰਕਸ਼ਨਸ ਨੂੰ ਅਸਮਰੱਥ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਐਪ ਨੂੰ ਦੁਬਾਰਾ ਸਮਰੱਥ ਕਰਨ ਲਈ, ਸੈੱਟਿੰਗਸ > ਅਨੁਪ੍ਰਯੋਗ ਤੇ ਜਾਉ, ਫਿਰ %2$s ਨੂੰ ਚੁਣੋ।</string>
-    <string name="disable_message_knox_mode">%1$s ਅਤੇ ਇਸ ਨਾਲ ਸੰਬੰਧਿਤ ਸਾਰੇ ਫੰਕਸ਼ਨਸ ਨੂੰ ਅਸਮਰੱਥ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਐਪ ਨੂੰ ਦੁਬਾਰਾ ਸਮਰੱਥ ਕਰਨ ਲਈ, %2$s ਸੈੱਟਿੰਗਸ > ਐਪਸ ਤੇ ਜਾਉ।</string>
     <string name="disable_message_vzw">%s ਅਤੇ ਇਸ ਨਾਲ ਸੰਬੰਧਿਤ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਸਮਰੱਥ ਹੋ ਜਾਣਗੀਆਂ। ਇਸਨੂੰ ਸਮਰੱਥ ਕਰਨ ਲਈ, ਸੈੱਟਿੰਗਸ > ਅਨੁਪ੍ਰਯੋਗ > ਅਨੁਪ੍ਰਯੋਗ ਪ੍ਰਬੰਧਕ ਤੇ ਜਾਉ।</string>
     <string name="discard">ਖਾਰਿਜ ਕਰੋ</string>
     <string name="do_not_show_again">ਦੁਬਾਰਾ ਨਾ ਦਿਖਾਉ</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">ਐਪਸ ਜੋੜੋ</string>
     <string name="folder_closed">ਫੋਲਡਰ ਬੰਦ ਕੀਤਾ ਗਿਆ।</string>
     <string name="folder_color">ਫੋਲਡਰ ਦਾ ਰੰਗ</string>
-    <string name="folder_color_default">ਫੋਲਡਰ ਦਾ ਡਿਫਾੱਲਟ ਰੰਗ</string>
-    <string name="folder_color_pd">ਰੰਗ %d</string>
+    <string name="folder_color_blue">ਨੀਲਾ</string>
+    <string name="folder_color_default">ਡਿਫਾੱਲਟ ਫੋਲਡਰ ਰੰਗ</string>
+    <string name="folder_color_green">ਹਰਾ</string>
+    <string name="folder_color_orange">ਸੰਤਰੀ</string>
+    <string name="folder_color_yellow">ਪੀਲਾ</string>
     <string name="folder_hint_text">ਫੋਲਡਰ ਨਾਂ ਦਾਖ਼ਲ ਕਰੋ</string>
     <string name="folder_microsoft_apps">Microsoft ਐਪਸ</string>
     <string name="folder_multi_search_bar_hint">ਐਪਸ ਦੀ ਖੋਜ ਕਰੋ</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">ਇਸ ਪੰਨੇ ਤੇ ਹੋਰ ਥਾਂ ਨਹੀਂ ਹੈ</string>
     <string name="out_of_space_dialog">ਇਸ ਪੰਨੇ ਤੇ ਹੋਰ ਥਾਂ ਖਾਲੀ ਨਹੀਂ ਹੈ। ਆਈਟਮ ਨੂੰ ਨਵੇਂ ਪੰਨੇ ਤੇ ਜੋੜਿਆ ਜਾਵੇਗਾ।</string>
     <string name="permdesc_install_widget">ਇਹ ਐਪ ਹੋਮ ਸਕ੍ਰੀਨ ਤੇ ਵਿੱਜੇਟਸ ਜੋੜ ਸਕਦੀ ਹੈ।</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">ਇਹ ਐਪ ਕਸਟਮ ਸਮੱਗਰੀ ਪੰਨੇ ਦੀਆਂ ਸੈੱਟਿੰਗਸ ਨੂੰ ਪੜ੍ਹ ਸਕਦੀ ਹੈ, ਜਿਸ ਨੂੰ ਹੋਮ ਸਕ੍ਰੀਨ ਉੱਤੇ ਖੱਬੇ ਪਾਸੇ ਦੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।</string>
     <string name="permdesc_write_zeropage_settings">ਇਹ ਐਪ ਕਸਟਮ ਸਮੱਗਰੀ ਪੰਨੇ ਦੀਆਂ ਸੈੱਟਿੰਗਸ ਨੂੰ ਬਦਲ ਸਕਦੀ ਹੈ, ਜਿਸ ਨੂੰ ਹੋਮ ਸਕ੍ਰੀਨ ਉੱਤੇ ਖੱਬੇ ਪਾਸੇ ਦੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।</string>
     <string name="permlab_install_widget">ਵਿੱਜੇਟਸ ਜੋੜੋ</string>
@@ -158,27 +165,21 @@
     <string name="selected">ਚੁਣਿਆ</string>
     <string name="setting_apps_screen_grid">ਐਪਸ ਸਕ੍ਰੀਨ ਗ੍ਰਿਡ</string>
     <string name="shortcut_duplicate">%s ਸ਼ੌਰਟਕੱਟ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ।</string>
-    <string name="shortcut_installed">ਹੋਮ ਸਕ੍ਰੀਨ ਤੇ %s ਲਈ ਸ਼ੌਰਟਕੱਟ ਜੋੜਿਆ ਗਿਆ।</string>
+    <string name="shortcut_installed">%s ਲਈ ਸ਼ੌਰਟਕੱਟ ਹੋਮ ਸਕ੍ਰੀਨ ਤੇ ਜੋੜਿਆ ਗਿਆ।</string>
     <string name="shortcut_moved_to_game_launcher">ਗੇਮ ਪ੍ਰਤੀਰੂਪ ਨੂੰ Game Launcher ਵਿੱਚ ਭੇਜਿਆ ਗਿਆ।</string>
     <string name="shortcut_uninstalled">ਸ਼ੌਰਟਕੱਟ %s ਹਟਾਇਆ ਗਿਆ।</string>
     <string name="speak_now">ਹੁਣ ਬੋਲੋ</string>
     <string name="swipe_up_for_more_apps">ਸਾਰੀਆਂ ਐਪਸ ਲਈ ਉੱਪਰ ਜਾਂ ਹੇਠਾਂ ਵੱਲ ਸਵਾਈਪ ਕਰੋ</string>
     <string name="swipe_up_for_more_apps_att">"ਸਾਰੀਆਂ ਐਪਸ ਲਈ ਸਕ੍ਰੀਨ 'ਤੇ ਉੱਪਰ ਜਾਂ ਹੇਠਾਂ ਵੱਲ ਸਵਾਈਪ ਕਰੋ"</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">ਸਾਰੀਆਂ ਐਪਸ ਲਈ ਦੋ ਉਂਗਲਾਂ ਨਾਲ ਉੱਪਰ ਜਾਂ ਹੇਠਾਂ ਵੱਲ ਸਵਾਈਪ ਕਰੋ।</string>
-    <string name="talkback_changed_to_ps">%s ਵਿੱਚ ਬਦਲ ਦਿੱਤਾ ਗਿਆ।</string>
+    <string name="talkback_checked">ਚੁਣਿਆ</string>
     <string name="talkback_folder">ਫੋਲਡਰ</string>
     <string name="talkback_n_items">%d ਆਈਟਮਸ</string>
     <string name="talkback_press_back_key_to_close_folder">ਫੋਲਡਰ ਬੰਦ ਕਰਨ ਲਈ ਵਾਪਸ ਜਾਉ ਬਟਨ ਦਬਾਉ।</string>
-    <string name="talkback_tab_back_button_to_close_folder">ਫੋਲਡਰ ਬੰਦ ਕਰਨ ਲਈ ਵਾਪਸ ਜਾਉ ਬਟਨ ਤੇ ਟੈਪ ਕਰੋ।</string>
     <string name="title_settings">%s ਸੈੱਟਿੰਗਸ</string>
     <string name="tts_add_shortcut_on_home_screen_notice">ਹੋਮ ਸਕ੍ਰੀਨ ਤੇ ਜੋੜਨ ਲਈ ਪ੍ਰਤੀਰੂਪ ਨੂੰ ਸਕ੍ਰੀਨ ਦੇ ਸਿਖਰ ਤੇ ਡ੍ਰੈਗ ਕਰੋ।</string>
     <string name="tts_bottom_handle">ਹੇਠਲਾਂ ਹੈਂਡਲ</string>
-    <string name="tts_changed_to_apps_edit_mode">ਐਪਸ ਸੰਪਾਦਨ ਮੋਡ ਤੇ ਬਦਲਿਆ ਗਿਆ।</string>
-    <string name="tts_changed_to_folder_edit_mode">ਫੋਲਡਰ ਸੰਪਾਦਨ ਮੋਡ ਤੇ ਬਦਲਿਆ ਗਿਆ</string>
-    <string name="tts_changed_to_home_screen_edit_mode">ਹੋਮ ਸਕ੍ਰੀਨ ਸੰਪਾਦਨ ਮੋਡ ਤੇ ਬਦਲਿਆ ਗਿਆ।</string>
     <string name="tts_folder_created">ਫੋਲਡਰ ਬਣਾਇਆ।</string>
-    <string name="tts_holding_items">%1$s ਅਤੇ %2$d ਹੋਰ ਐਪਸ ਨੂੰ ਹੋਲਡ ਕਰਨਾ</string>
-    <string name="tts_hotseat_item_moved_from_external">ਆਈਟਮ ਨੂੰ ਹੋਮ ਸਕ੍ਰੀਨ ਤੇ ਮੀਨੂੰ ਬਾਰ ਵਿੱਚ ਮੂਵ ਕੀਤਾ ਗਿਆ।</string>
     <string name="tts_hotseat_move_to">ਮੀਨੂੰ ਬਾਰ ਵਿੱਚ %d ਸਥਾਨ।</string>
     <string name="tts_hover_item_over_other_item">%2$s ਦੇ ਉੱਪਰ %1$s</string>
     <string name="tts_item_added">ਆਈਟਮ ਜੋੜੀ ਗਈ।</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">Play Store ਵਿੱਚ ਹੋਰ ਦੇਖੋ</string>
     <string name="viewtype_alphabetic_grid">ਵਰਣਮਾਲਾ ਕ੍ਰਮ</string>
     <string name="viewtype_custom_grid">ਕਸਟਮ ਆਰਡਰ</string>
-    <string name="voice_search">ਵਾੱਇਸ ਖੋਜ</string>
     <string name="wallpaper_button_text">ਵਾਲਪੇਪਰਸ</string>
     <string name="wallpapers_and_themes_button_text">ਵਾਲਪੇਪਰਸ ਅਤੇ ਥੀਮਸ</string>
     <string name="widget_button_text">ਵਿੱਜੇਟਸ</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">ਇਸ ਫੰਕਸ਼ਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ, ਤੁਹਾਨੂੰ %1$s ਨੂੰ ਸਥਾਪਿਤ ਕਰਨਾ ਹੋਵੇਗਾ। %2$s ਨੂੰ ਡਾਉਨਲੋਡ ਅਤੇ ਸਥਾਪਿਤ ਕਰਨ ਲਈ “ਡਾਉਨਲੋਡ ਕਰੋ” ਤੇ ਟੈਪ ਕਰੋ।</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">ਸੋਹੂ ਨਿਊਜ਼</string>
-    <string name="zeropage_toutiao_title">ਜਾਣਕਾਰੀ ਐਕਸਪ੍ਰੈਸ</string>
 </resources>

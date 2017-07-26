@@ -41,7 +41,7 @@
 .method public run()V
     .locals 7
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     iget-object v0, p0, Lcom/android/launcher3/common/quickoption/QuickOptionManager$16;->this$0:Lcom/android/launcher3/common/quickoption/QuickOptionManager;
 
@@ -55,11 +55,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/common/quickoption/QuickOptionManager$16;->val$itemInfo:Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportChinaDA()Z
-
-    move-result v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/home/HomeController;->addShortcutToHome(Lcom/android/launcher3/common/base/item/ItemInfo;Z)V
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/home/HomeController;->addItemOnNextPageOfDefaultHome(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
     iget-object v0, p0, Lcom/android/launcher3/common/quickoption/QuickOptionManager$16;->this$0:Lcom/android/launcher3/common/quickoption/QuickOptionManager;
 
@@ -71,7 +67,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Lcom/android/launcher3/common/stage/StageManager;->finishAllStage(Lcom/android/launcher3/common/stage/StageEntry;)V
+    invoke-virtual {v0, v2}, Lcom/android/launcher3/common/stage/StageManager;->finishAllStage(Lcom/android/launcher3/common/stage/StageEntry;)V
 
     iget-object v0, p0, Lcom/android/launcher3/common/quickoption/QuickOptionManager$16;->this$0:Lcom/android/launcher3/common/quickoption/QuickOptionManager;
 
@@ -85,7 +81,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1, v3}, Lcom/android/launcher3/common/stage/StageManager;->startStage(ILcom/android/launcher3/common/stage/StageEntry;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/common/stage/StageManager;->startStage(ILcom/android/launcher3/common/stage/StageEntry;)V
 
     invoke-static {}, Lcom/android/launcher3/util/logging/GSIMLogging;->getInstance()Lcom/android/launcher3/util/logging/GSIMLogging;
 

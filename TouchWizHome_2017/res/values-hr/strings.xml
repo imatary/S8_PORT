@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">Povijest pretraživanja</string>
-    <string name="accessibility_add_home_screen">Dodaj stranicu</string>
-    <string name="accessibility_button">Gumb</string>
-    <string name="accessibility_dimmed">Prigušeno</string>
+    <string name="about">O aplikaciji %s</string>
+    <string name="about_already_installed">Već je instalirana najnovija verzija.</string>
+    <string name="about_home_screen">Početni zaslon</string>
+    <string name="about_licence">Licence otvorenog izvora</string>
+    <string name="about_network_err">Nije moguće tražiti aktualizacije. Telefon nije povezan na mrežu.</string>
+    <string name="about_new_version_exist">Dostupna je nova verzija.</string>
+    <string name="about_retry">Ponovi</string>
+    <string name="about_update">Aktualiziraj</string>
+    <string name="about_version">Verzija %s</string>
     <string name="activity_not_available">Ova aplikacija nije dostupna za vaš uređaj.</string>
     <string name="activity_not_found">Aplikacija nije instalirana.</string>
     <string name="align_to_bottom">Poravnaj s dnom</string>
     <string name="align_to_top">Poravnaj s vrhom</string>
-    <string name="app_locked_toast">%s zaključan.</string>
     <string name="app_search">Pretraživanje telefona</string>
     <string name="app_search_no_apps">Na početni zaslon možete dodati prečace iz rezultata pretrage.</string>
     <string name="app_search_no_results_found">Nema rezultata</string>
     <string name="app_search_tablet">Tražite tablet</string>
-    <string name="app_unlocked_toast">%s je otključano.</string>
     <string name="application_name">TouchWiz početni</string>
     <string name="apply">Primijeni</string>
     <string name="appsPicker_add_button">DODAJ</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Zadana stranica</string>
     <string name="default_scroll_format">Stranica %1$d od %2$d.</string>
     <string name="disable_message">Isključit će se aplikacija %1$s i sve značajke povezane s njom. Da biste je ponovno uključili, idite u Postavke > Aplikacije, a zatim odaberite %2$s.</string>
-    <string name="disable_message_knox_mode">Isključit će se aplikacija %1$s i sve funkcije povezane s njom. Da biste ponovno uključili aplikaciju, idite u Postavke usluge %2$s > Aplikacije.</string>
     <string name="disable_message_vzw">Isključit će se aplikacija %s i sve značajke povezane s njom. Da biste je ponovno uključili, idite u Postavke >Aplikacije > Upravljanje aplikacijama.</string>
     <string name="discard">Odbaci</string>
     <string name="do_not_show_again">Ne prikazuj više</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">Dodaj aplikacije</string>
     <string name="folder_closed">Mapa je zatvorena.</string>
     <string name="folder_color">Boja mape</string>
+    <string name="folder_color_blue">Plava</string>
     <string name="folder_color_default">Zadana boja mape</string>
-    <string name="folder_color_pd">Boja %d</string>
+    <string name="folder_color_green">Zelena</string>
+    <string name="folder_color_orange">Narančasta</string>
+    <string name="folder_color_yellow">Žuta</string>
     <string name="folder_hint_text">Unos naziva mape</string>
     <string name="folder_microsoft_apps">Aplikacije Microsoft</string>
     <string name="folder_multi_search_bar_hint">Traži aplikacije</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">Nema mjesta na stranici</string>
     <string name="out_of_space_dialog">Na ovoj stranici nema više prostora. Stavka će biti dodana na novu stranicu.</string>
     <string name="permdesc_install_widget">Ova aplikacija može dodavati widgete na početni zaslon.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">Ova aplikacija može pročitati postavke stranice s prilagođenim sadržajem, koja se nalazi s lijeve strane Početnog zaslona.</string>
     <string name="permdesc_write_zeropage_settings">Ova aplikacija može promijeniti postavke stranice s prilagođenim sadržajem, koja se nalazi s lijeve strane Početnog zaslona.</string>
     <string name="permlab_install_widget">Dodajte widgete</string>
@@ -158,27 +165,21 @@
     <string name="selected">Odabrano</string>
     <string name="setting_apps_screen_grid">Mreža zaslona za aplikacije</string>
     <string name="shortcut_duplicate">Prečac %s već postoji.</string>
-    <string name="shortcut_installed">Prečac za %s dodan na Početni zaslon.</string>
+    <string name="shortcut_installed">Prečac za %s dodan na početni zaslon.</string>
     <string name="shortcut_moved_to_game_launcher">Ikona igre premještena u Game Launcher.</string>
     <string name="shortcut_uninstalled">Prečac %s uklonjen.</string>
     <string name="speak_now">Govorite sada</string>
     <string name="swipe_up_for_more_apps">Prijeđite prstom gore ili dolje za sve aplikacije</string>
     <string name="swipe_up_for_more_apps_att">Prijeđite prstom prema gore ili dolje na zaslonu za sve aplikacije</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Prijeđite prema gore ili dolje dvama prstima za sve aplikacije.</string>
-    <string name="talkback_changed_to_ps">Promijenjeno na %s.</string>
+    <string name="talkback_checked">Odabrano</string>
     <string name="talkback_folder">Mapa</string>
     <string name="talkback_n_items">%d stavki</string>
     <string name="talkback_press_back_key_to_close_folder">Pritisnite tipku za povratak za zatvaranje mape.</string>
-    <string name="talkback_tab_back_button_to_close_folder">Ponovno dodirnite gumb Natrag da biste zatvorili mapu.</string>
     <string name="title_settings">Postavke za %s</string>
     <string name="tts_add_shortcut_on_home_screen_notice">Povucite ikonu na vrh zaslona da biste dodali na početni zaslon.</string>
     <string name="tts_bottom_handle">Donja ručica</string>
-    <string name="tts_changed_to_apps_edit_mode">Promijenjeno u Način uređivanja aplikacija.</string>
-    <string name="tts_changed_to_folder_edit_mode">Promijenjeno u Način uređivanja mapa</string>
-    <string name="tts_changed_to_home_screen_edit_mode">Promijenjeno u Način uređivanja početnog zaslona.</string>
     <string name="tts_folder_created">Mapa kreirana.</string>
-    <string name="tts_holding_items">Odabrana aplikacija %1$s i %2$d drugih</string>
-    <string name="tts_hotseat_item_moved_from_external">Stavka premještena na traku izbornika na početnom zaslonu.</string>
     <string name="tts_hotseat_move_to">Postavite %d u traci izbornika.</string>
     <string name="tts_hover_item_over_other_item">Stavka %1$s preko stavke %2$s</string>
     <string name="tts_item_added">Stavka dodana.</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">Prikaži više u trg. Play Store</string>
     <string name="viewtype_alphabetic_grid">Abecednim redom</string>
     <string name="viewtype_custom_grid">Prilagođen poredak</string>
-    <string name="voice_search">Glas. traž.</string>
     <string name="wallpaper_button_text">Pozadine</string>
     <string name="wallpapers_and_themes_button_text">Pozadine i teme</string>
     <string name="widget_button_text">Widgeti</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">Da biste upotrebljavali ovu funkciju, trebate instalirati aplikaciju %1$s. Dodirnite PREUZMI za preuzimanje i instalaciju aplikacije %2$s.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Sohu vijesti</string>
-    <string name="zeropage_toutiao_title">Brze informacije</string>
 </resources>

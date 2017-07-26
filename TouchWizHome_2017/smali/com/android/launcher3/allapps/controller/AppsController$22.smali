@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/allapps/controller/AppsController;->addOrMoveItems(Ljava/util/ArrayList;JJ)V
+    value = Lcom/android/launcher3/allapps/controller/AppsController;->findSearchedApp(Ljava/lang/String;Landroid/content/ComponentName;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,12 +20,16 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
+.field final synthetic val$data:Lcom/android/launcher3/common/stage/StageEntry;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/allapps/controller/AppsController;)V
+.method constructor <init>(Lcom/android/launcher3/allapps/controller/AppsController;Lcom/android/launcher3/common/stage/StageEntry;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$22;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
+
+    iput-object p2, p0, Lcom/android/launcher3/allapps/controller/AppsController$22;->val$data:Lcom/android/launcher3/common/stage/StageEntry;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,17 +39,23 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
-
-    const-string v0, "Launcher.AppsController"
-
-    const-string v1, "remove empty screen"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$22;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
-    invoke-virtual {v0}, Lcom/android/launcher3/allapps/controller/AppsController;->removeEmptyPagesAndUpdateAllItemsInfo()Z
+    invoke-static {v0}, Lcom/android/launcher3/allapps/controller/AppsController;->access$500(Lcom/android/launcher3/allapps/controller/AppsController;)Lcom/android/launcher3/Launcher;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/launcher3/Launcher;->getStageManager()Lcom/android/launcher3/common/stage/StageManager;
+
+    move-result-object v0
+
+    const/4 v1, 0x5
+
+    iget-object v2, p0, Lcom/android/launcher3/allapps/controller/AppsController$22;->val$data:Lcom/android/launcher3/common/stage/StageEntry;
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/common/stage/StageManager;->startStage(ILcom/android/launcher3/common/stage/StageEntry;)V
 
     return-void
 .end method

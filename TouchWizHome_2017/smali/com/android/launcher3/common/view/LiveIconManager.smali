@@ -269,6 +269,12 @@
 
     if-eqz v0, :cond_0
 
+    sget-object v2, Lcom/android/launcher3/common/view/LiveIconManager;->TAG:Ljava/lang/String;
+
+    const-string v3, "getLiveIcon: complete(cached)"
+
+    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
     move-object v1, v0
 
     :goto_0

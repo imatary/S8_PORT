@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">Sökhistorik</string>
-    <string name="accessibility_add_home_screen">Lägg till sida</string>
-    <string name="accessibility_button">Knapp</string>
-    <string name="accessibility_dimmed">Nedtonat</string>
+    <string name="about">Om %s</string>
+    <string name="about_already_installed">Den senaste versionen är redan installerad.</string>
+    <string name="about_home_screen">Hemskärm</string>
+    <string name="about_licence">Licenser för öppen källkod</string>
+    <string name="about_network_err">Det går inte att söka efter uppdateringar. Telefonen är inte ansluten till något nätverk.</string>
+    <string name="about_new_version_exist">En ny version är tillgänglig.</string>
+    <string name="about_retry">Försök igen</string>
+    <string name="about_update">Uppdatera</string>
+    <string name="about_version">Version %s</string>
     <string name="activity_not_available">Den här appen är inte tillgänglig för din enhet.</string>
     <string name="activity_not_found">Appen är inte installerad.</string>
     <string name="align_to_bottom">Justera efter nederkant</string>
     <string name="align_to_top">Justera efter överkant</string>
-    <string name="app_locked_toast">%s låst.</string>
     <string name="app_search">Sök efter telefon</string>
     <string name="app_search_no_apps">Du kan lägga till genvägar på hemskärmen från sökresultaten.</string>
     <string name="app_search_no_results_found">Inga resultat hittades</string>
     <string name="app_search_tablet">Sök efter surfplatta</string>
-    <string name="app_unlocked_toast">%s är upplåst.</string>
     <string name="application_name">TouchWiz-starts.</string>
     <string name="apply">Använd</string>
     <string name="appsPicker_add_button">LÄGG TILL</string>
@@ -25,7 +29,7 @@
     <string name="apps_button_show">Visa knappen Appar</string>
     <string name="apps_button_summary">Visa en knapp på hemskärmen som öppnar appskärmen.</string>
     <string name="apps_button_title">Knappen Appar</string>
-    <string name="apps_screen">Appskärmen</string>
+    <string name="apps_screen">Programskärmen</string>
     <string name="autoalign_popup_message">När du har justerat dem kan du inte gå tillbaka till den tidigare ordningen.</string>
     <string name="autoalign_popup_title">Justera objekt på sidan?</string>
     <string name="available_galaxyapps">Tillgänglig i Galaxy Apps</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Standardsida</string>
     <string name="default_scroll_format">Sida %1$d av %2$d.</string>
     <string name="disable_message">%1$s och alla tillhörande funktioner inaktiveras. Om du vill aktivera appen igen öppnar du Inställningar > Appar och väljer %2$s.</string>
-    <string name="disable_message_knox_mode">%1$s och alla tillhörande funktioner inaktiveras. Om du vill aktivera appen igen öppnar du Inställningar för %2$s > App.</string>
     <string name="disable_message_vzw">%s och alla dess relaterade funktioner inaktiveras. Om du vill aktivera den igen öppnar du Inställningar > Appar > Apphanterare.</string>
     <string name="discard">Ignorera</string>
     <string name="do_not_show_again">Visa inte igen</string>
@@ -49,12 +52,15 @@
     <string name="folder_add_button">Lägg till appar</string>
     <string name="folder_closed">Mappen har stängts.</string>
     <string name="folder_color">Mappfärg</string>
+    <string name="folder_color_blue">Blått</string>
     <string name="folder_color_default">Standardmappfärg</string>
-    <string name="folder_color_pd">Färg %d</string>
+    <string name="folder_color_green">Grön</string>
+    <string name="folder_color_orange">Orange</string>
+    <string name="folder_color_yellow">Gult</string>
     <string name="folder_hint_text">Ange mappnamn</string>
     <string name="folder_microsoft_apps">"Microsoft-
 appar"</string>
-    <string name="folder_multi_search_bar_hint">Sök efter appar</string>
+    <string name="folder_multi_search_bar_hint">Sök efter program</string>
     <string name="folder_name_format">Mappen %s</string>
     <string name="folder_opened">Mappen har öppnats.</string>
     <string name="folder_social">Socialt</string>
@@ -112,7 +118,7 @@ appar"</string>
     <string name="ok">OK</string>
     <string name="only_one_widget_instance_allowed">%s har lagts till på hemskärmen.</string>
     <string name="option_menu_contact_up">Kontakta oss</string>
-    <string name="option_menu_galaxy_essentials">GALAXY Essentials</string>
+    <string name="option_menu_galaxy_essentials">Galaxy Essentials</string>
     <string name="option_menu_home_settings">Inställningar</string>
     <string name="options_menu">Fler alternativ</string>
     <string name="options_menu_search_recommend">Sökalternativ</string>
@@ -123,8 +129,9 @@ appar"</string>
     <string name="out_of_space">Ingen mer plats på den här sidan</string>
     <string name="out_of_space_dialog">Det ryms inte mer på sidan. Objektet läggs till på en ny sida.</string>
     <string name="permdesc_install_widget">Appen kan lägga till widgetar på hemskärmen.</string>
-    <string name="permdesc_read_zeropage_settings">Den här appen kan läsa inställningarna av sidan med anpassat innehåll som finns till vänster på hemskärmen.</string>
-    <string name="permdesc_write_zeropage_settings">Den här appen kan ändra inställningarna av sidan med anpassat innehåll som finns till vänster på hemskärmen.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
+    <string name="permdesc_read_zeropage_settings">Det här programmet kan läsa inställningarna av sidan med anpassat innehåll som finns till vänster på hemskärmen.</string>
+    <string name="permdesc_write_zeropage_settings">Det här programmet kan ändra inställningarna av sidan med anpassat innehåll som finns till vänster på hemskärmen.</string>
     <string name="permlab_install_widget">Lägg till widgetar</string>
     <string name="permlab_read_settings">läsa inställningar och genvägar för startsidan</string>
     <string name="permlab_read_zeropage_settings">Läs anp. inställn. för inneh.sidor</string>
@@ -140,7 +147,7 @@ appar"</string>
     <string name="quick_option_delete_folder_alert_no_title">Den här mappen tas bort. Apparna i mappen är fortfarande tillgängliga på appskärmen.</string>
     <string name="quick_option_dimmed_disable">Inaktivera</string>
     <string name="quick_option_disable">Inaktivera</string>
-    <string name="quick_option_install_dual_im">Installera en andra app</string>
+    <string name="quick_option_install_dual_im">Installera nästa program</string>
     <string name="quick_option_lock">Lås</string>
     <string name="quick_option_move_from_folder">Flytta från mapp</string>
     <string name="quick_option_remove">Ta bort</string>
@@ -164,22 +171,16 @@ appar"</string>
     <string name="shortcut_uninstalled">Genvägen %s har tagits bort.</string>
     <string name="speak_now">Prata nu</string>
     <string name="swipe_up_for_more_apps">Svep uppåt eller nedåt för alla appar</string>
-    <string name="swipe_up_for_more_apps_att">Svep uppåt eller nedåt på skärmen för alla appar</string>
+    <string name="swipe_up_for_more_apps_att">Svep uppåt eller nedåt på skärmen för alla program</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Svep uppåt eller nedåt med två fingrar för alla appar.</string>
-    <string name="talkback_changed_to_ps">Ändrad till %s.</string>
+    <string name="talkback_checked">Valt</string>
     <string name="talkback_folder">Mapp</string>
     <string name="talkback_n_items">%d objekt</string>
     <string name="talkback_press_back_key_to_close_folder">Stäng mappen genom att trycka på tillbakaknappen.</string>
-    <string name="talkback_tab_back_button_to_close_folder">Tryck på tillbakaknappen om du vill stänga mappen.</string>
     <string name="title_settings">Inställningar för %s</string>
     <string name="tts_add_shortcut_on_home_screen_notice">Dra ikonen till skärmens ovankant om du vill lägga till den på hemskärmen.</string>
     <string name="tts_bottom_handle">Undre handtag</string>
-    <string name="tts_changed_to_apps_edit_mode">Ändrat till appredigeringsläge.</string>
-    <string name="tts_changed_to_folder_edit_mode">Ändrade till mappredigeringsläge</string>
-    <string name="tts_changed_to_home_screen_edit_mode">Ändrat till hemskärmsredigeringsläge.</string>
     <string name="tts_folder_created">Mapp skapad.</string>
-    <string name="tts_holding_items">Innehåller %1$s och %2$d andra</string>
-    <string name="tts_hotseat_item_moved_from_external">Objektet har flyttats till menyfältet på hemskärmen.</string>
     <string name="tts_hotseat_move_to">Plats %d i menyfältet.</string>
     <string name="tts_hover_item_over_other_item">%1$s ovanpå %2$s</string>
     <string name="tts_item_added">Objekt har lagts till.</string>
@@ -200,7 +201,6 @@ appar"</string>
     <string name="viewmore_playstore">Visa mer i Play Butik</string>
     <string name="viewtype_alphabetic_grid">Alfabetisk ordning</string>
     <string name="viewtype_custom_grid">Egen ordning</string>
-    <string name="voice_search">Röstsökning</string>
     <string name="wallpaper_button_text">Bakgrunder</string>
     <string name="wallpapers_and_themes_button_text">Bakgrunder och teman</string>
     <string name="widget_button_text">Widgetar</string>
@@ -210,5 +210,4 @@ appar"</string>
     <string name="zeropage_download_msg">Om du vill använda funktionen måste du installera %1$s. Tryck på HÄMTA när du vill hämta och installera %2$s.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Nyheter om Sohu</string>
-    <string name="zeropage_toutiao_title">Informationsexpressen</string>
 </resources>

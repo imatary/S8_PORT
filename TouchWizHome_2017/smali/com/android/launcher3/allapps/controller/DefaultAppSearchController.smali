@@ -77,9 +77,9 @@
 
     const/4 v6, 0x0
 
-    const v5, 0x7f0e0035
+    const v5, 0x7f0d0035
 
-    const v4, 0x7f0e0027
+    const v4, 0x7f0d0027
 
     const/4 v3, 0x1
 
@@ -103,7 +103,7 @@
 
     aget-object v0, v0, v2
 
-    const v1, 0x7f0e0034
+    const v1, 0x7f0d0034
 
     iput v1, v0, Lcom/android/launcher3/allapps/controller/DefaultAppSearchController$Style;->textColorId:I
 
@@ -123,7 +123,7 @@
 
     aget-object v0, v0, v2
 
-    const v1, 0x7f0e0029
+    const v1, 0x7f0d0029
 
     iput v1, v0, Lcom/android/launcher3/allapps/controller/DefaultAppSearchController$Style;->dividerColorId:I
 
@@ -151,7 +151,7 @@
 
     aget-object v0, v0, v3
 
-    const v1, 0x7f0e0028
+    const v1, 0x7f0d0028
 
     iput v1, v0, Lcom/android/launcher3/allapps/controller/DefaultAppSearchController$Style;->backgroundColorId:I
 
@@ -159,7 +159,7 @@
 
     aget-object v0, v0, v3
 
-    const v1, 0x7f0e002a
+    const v1, 0x7f0d002a
 
     iput v1, v0, Lcom/android/launcher3/allapps/controller/DefaultAppSearchController$Style;->dividerColorId:I
 
@@ -289,43 +289,43 @@
 
     move-result v5
 
-    const v8, 0x7f1000f8
+    const v8, 0x7f0f0103
 
     invoke-interface {p1, v8}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v7
 
-    const v8, 0x7f1000fc
+    const v8, 0x7f0f0107
 
     invoke-interface {p1, v8}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v1
 
-    const v8, 0x7f1000f9
+    const v8, 0x7f0f0104
 
     invoke-interface {p1, v8}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v6
 
-    const v8, 0x7f1000fd
+    const v8, 0x7f0f0108
 
     invoke-interface {p1, v8}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v4
 
-    const v8, 0x7f1000fe
+    const v8, 0x7f0f0109
 
     invoke-interface {p1, v8}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v8, 0x7f1000fa
+    const v8, 0x7f0f0105
 
     invoke-interface {p1, v8}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v3
 
-    const v8, 0x7f1000fb
+    const v8, 0x7f0f0106
 
     invoke-interface {p1, v8}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -441,7 +441,7 @@
 
     move-result-object v0
 
-    const/high16 v1, 0x7f120000
+    const/high16 v1, 0x7f110000
 
     iget-object v2, p0, Lcom/android/launcher3/allapps/controller/DefaultAppSearchController;->mPopupMenu:Landroid/widget/PopupMenu;
 
@@ -639,9 +639,9 @@
 
     const/4 v8, 0x0
 
-    const v1, 0x7f0e0008
+    const v1, 0x7f0d0009
 
-    const v9, 0x7f0200ee
+    const v9, 0x7f0200f8
 
     invoke-virtual {v4, v9}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -753,7 +753,7 @@
 
     const/4 v2, 0x0
 
-    const v6, 0x7f040014
+    const v6, 0x7f030016
 
     invoke-virtual {v3, v6, p1, v9}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -767,7 +767,7 @@
 
     iget-object v6, p0, Lcom/android/launcher3/allapps/controller/DefaultAppSearchController;->mSearchView:Landroid/view/View;
 
-    const v7, 0x7f10003d
+    const v7, 0x7f0f004d
 
     invoke-virtual {v6, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -777,7 +777,7 @@
 
     iget-object v6, p0, Lcom/android/launcher3/allapps/controller/DefaultAppSearchController;->mSearchBarContainerView:Landroid/view/View;
 
-    const v7, 0x7f10003f
+    const v7, 0x7f0f004f
 
     invoke-virtual {v6, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -866,7 +866,7 @@
 
     iget-object v6, p0, Lcom/android/launcher3/allapps/controller/DefaultAppSearchController;->mSearchBarContainerView:Landroid/view/View;
 
-    const v7, 0x7f10003e
+    const v7, 0x7f0f004e
 
     invoke-virtual {v6, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -951,7 +951,7 @@
     :goto_0
     iget-object v6, p0, Lcom/android/launcher3/allapps/controller/DefaultAppSearchController;->mSearchBarContainerView:Landroid/view/View;
 
-    const v7, 0x7f1000ab
+    const v7, 0x7f0f00b6
 
     invoke-virtual {v6, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

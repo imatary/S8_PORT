@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/LauncherModel;->forceIconReload()V
+    value = Lcom/android/launcher3/LauncherModel;->doLocaleChange()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,31 +35,27 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 3
 
-    new-instance v0, Ljava/util/HashSet;
+    const/4 v2, 0x0
 
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel$2;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherModel$2;->this$0:Lcom/android/launcher3/LauncherModel;
+    iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
-    iget-object v1, v1, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
+    invoke-virtual {v0}, Lcom/android/launcher3/home/HomeLoader;->titleUpdate()V
 
-    invoke-virtual {v1, v0}, Lcom/android/launcher3/home/HomeLoader;->getIgnorePackage(Ljava/util/HashSet;)V
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel$2;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherModel$2;->this$0:Lcom/android/launcher3/LauncherModel;
+    iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
 
-    invoke-static {v1}, Lcom/android/launcher3/LauncherModel;->access$400(Lcom/android/launcher3/LauncherModel;)Lcom/android/launcher3/common/model/IconCache;
+    invoke-virtual {v0}, Lcom/android/launcher3/allapps/model/AppsLoader;->titleUpdate()V
 
-    move-result-object v1
+    iget-object v0, p0, Lcom/android/launcher3/LauncherModel$2;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    invoke-virtual {v1, v0}, Lcom/android/launcher3/common/model/IconCache;->updateDbIcons(Ljava/util/Set;)V
+    const/4 v1, 0x1
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherModel$2;->this$0:Lcom/android/launcher3/LauncherModel;
-
-    iget-object v1, v1, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
-
-    invoke-virtual {v1}, Lcom/android/launcher3/home/HomeLoader;->updateShortcutIcons()V
+    invoke-static {v0, v2, v2, v1}, Lcom/android/launcher3/LauncherModel;->access$100(Lcom/android/launcher3/LauncherModel;[Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
 
     return-void
 .end method

@@ -21,24 +21,6 @@
         <item name="android:button">@drawable/multi_select_checkbox</item>
         <item name="android:importantForAccessibility">no</item>
     </style>
-    <style name="ContainerButton">
-        <item name="android:textSize">@dimen/tidyup_text_size</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/text_color</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:background">@drawable/focusable_button_bg</item>
-        <item name="android:focusable">true</item>
-        <item name="android:clickable">true</item>
-        <item name="android:layout_width">0.0dip</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:shadowColor">@color/menu_edit_done_button_shadow_color</item>
-        <item name="android:shadowDy">@integer/menu_text_shadow_dy</item>
-        <item name="android:shadowRadius">2.0</item>
-        <item name="android:layout_weight">1.0</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:fontFamily">sec-roboto-condensed</item>
-    </style>
     <style name="CountBadge">
         <item name="android:textSize">@dimen/count_badge_text_size</item>
         <item name="android:textColor">@color/count_badge_text_color</item>
@@ -50,20 +32,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:singleLine">true</item>
         <item name="android:backgroundTint">#ff56c0e5</item>
-    </style>
-    <style name="DeepShortcut">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ff212121</item>
-        <item name="android:gravity">start|center</item>
-        <item name="android:shadowRadius">0.0</item>
-        <item name="android:drawablePadding">@dimen/deep_shortcut_drawable_padding</item>
-        <item name="android:drawableEnd">@drawable/deep_shortcuts_drag_handle</item>
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textAlignment">viewStart</item>
-        <item name="android:paddingStart">@dimen/bg_pill_height</item>
-        <item name="android:paddingEnd">@dimen/deep_shortcut_padding_end</item>
-        <item name="android:elevation">@dimen/deep_shortcuts_elevation</item>
-        <item name="iconSizeOverride">@dimen/deep_shortcut_icon_size</item>
     </style>
     <style name="DropTargetCancelButton">
         <item name="android:textSize">@dimen/drop_target_cancel_text_size</item>
@@ -138,6 +106,7 @@
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:background">@drawable/focusable_view_bg</item>
+        <item name="android:padding">@dimen/overview_pannel_padding_for_focus</item>
         <item name="android:focusable">true</item>
         <item name="android:layout_width">@dimen/overview_pannel_options_button_width</item>
         <item name="android:layout_height">@dimen/overview_pannel_options_button_height</item>
@@ -180,12 +149,8 @@
         <item name="android:textAllCaps">true</item>
         <item name="android:fontFamily">sec-roboto-condensed</item>
     </style>
-    <style name="SettingsActionBar" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
-        <item name="android:displayOptions">homeAsUp|showTitle</item>
-        <item name="android:contentInsetStart">0.0dip</item>
-    </style>
     <style name="SettingsTheme" parent="@android:style/Theme.DeviceDefault.Light">
-        <item name="android:actionBarStyle">@style/SettingsActionBar</item>
+        <item name="android:actionBarStyle">@style/LauncherActionBar</item>
         <item name="android:statusBarColor">#fffafafa</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
@@ -196,6 +161,24 @@
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <style name="TidyUpButton">
+        <item name="android:textSize">@dimen/tidyup_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/focusable_button_bg</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:shadowColor">@color/menu_edit_done_button_shadow_color</item>
+        <item name="android:shadowDy">@integer/menu_text_shadow_dy</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sec-roboto-condensed</item>
     </style>
     <style name="ViewMoreBtnTransparent" parent="@android:style/Widget.Holo.ActionButton">
         <item name="android:orientation">horizontal</item>

@@ -160,7 +160,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/home/ScreenGridPanel$2;->this$0:Lcom/android/launcher3/home/ScreenGridPanel;
 
-    invoke-static {v1}, Lcom/android/launcher3/home/ScreenGridPanel;->access$400(Lcom/android/launcher3/home/ScreenGridPanel;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/launcher3/home/ScreenGridPanel;->access$400(Lcom/android/launcher3/home/ScreenGridPanel;)Landroid/view/View;
 
     move-result-object v1
 
@@ -168,7 +168,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Landroid/widget/TextView;->performAccessibilityAction(ILandroid/os/Bundle;)Z
+    invoke-virtual {v1, v2, v3}, Landroid/view/View;->performAccessibilityAction(ILandroid/os/Bundle;)Z
 
     return-void
 .end method

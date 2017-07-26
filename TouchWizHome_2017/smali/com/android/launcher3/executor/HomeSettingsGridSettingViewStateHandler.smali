@@ -31,11 +31,7 @@
 
     new-instance v1, Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;
 
-    sget-object v2, Lcom/android/launcher3/executor/ExecutorState;->HOME_SETTINGS:Lcom/android/launcher3/executor/ExecutorState;
-
-    invoke-virtual {v2}, Lcom/android/launcher3/executor/ExecutorState;->toString()Ljava/lang/String;
-
-    move-result-object v2
+    const-string v2, "HomeSettingsView"
 
     invoke-direct {v1, v2}, Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;-><init>(Ljava/lang/String;)V
 
@@ -61,11 +57,7 @@
     :cond_0
     new-instance v1, Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;
 
-    sget-object v2, Lcom/android/launcher3/executor/ExecutorState;->HOME_SETTINGS_CHANGE_GRID:Lcom/android/launcher3/executor/ExecutorState;
-
-    invoke-virtual {v2}, Lcom/android/launcher3/executor/ExecutorState;->toString()Ljava/lang/String;
-
-    move-result-object v2
+    const-string v2, "HomeSettingsChangeGrid"
 
     invoke-direct {v1, v2}, Lcom/samsung/android/sdk/bixby/data/NlgRequestInfo;-><init>(Ljava/lang/String;)V
 

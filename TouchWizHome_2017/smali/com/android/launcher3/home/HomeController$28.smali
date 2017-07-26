@@ -1,14 +1,11 @@
 .class Lcom/android/launcher3/home/HomeController$28;
-.super Ljava/lang/Object;
+.super Landroid/animation/AnimatorListenerAdapter;
 .source "HomeController.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/HomeController;->removeShortcut()V
+    value = Lcom/android/launcher3/home/HomeController;->removeShortcutAnimation(Ljava/util/ArrayList;Ljava/lang/Runnable;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,58 +17,34 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/home/HomeController;
 
-.field final synthetic val$appsViewList:Ljava/util/ArrayList;
+.field final synthetic val$r:Ljava/lang/Runnable;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/HomeController;Ljava/util/ArrayList;)V
+.method constructor <init>(Lcom/android/launcher3/home/HomeController;Ljava/lang/Runnable;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/home/HomeController$28;->this$0:Lcom/android/launcher3/home/HomeController;
 
-    iput-object p2, p0, Lcom/android/launcher3/home/HomeController$28;->val$appsViewList:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/android/launcher3/home/HomeController$28;->val$r:Ljava/lang/Runnable;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 4
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 2
 
-    iget-object v2, p0, Lcom/android/launcher3/home/HomeController$28;->val$appsViewList:Ljava/util/ArrayList;
+    new-instance v0, Landroid/os/Handler;
 
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    move-result-object v2
+    iget-object v1, p0, Lcom/android/launcher3/home/HomeController$28;->val$r:Ljava/lang/Runnable;
 
-    :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
-
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeController$28;->this$0:Lcom/android/launcher3/home/HomeController;
-
-    invoke-virtual {v3, v1, v0}, Lcom/android/launcher3/home/HomeController;->removeHomeOrFolderItem(Lcom/android/launcher3/common/base/item/ItemInfo;Landroid/view/View;)Z
-
-    goto :goto_0
-
-    :cond_0
     return-void
 .end method

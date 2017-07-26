@@ -243,6 +243,18 @@
 
     if-ne v1, v2, :cond_3
 
+    new-instance v1, Lcom/android/launcher3/util/DvfsUtil;
+
+    iget-object v4, p0, Lcom/android/launcher3/common/stage/StageManager$2;->this$0:Lcom/android/launcher3/common/stage/StageManager;
+
+    invoke-static {v4}, Lcom/android/launcher3/common/stage/StageManager;->access$600(Lcom/android/launcher3/common/stage/StageManager;)Lcom/android/launcher3/Launcher;
+
+    move-result-object v4
+
+    invoke-direct {v1, v4}, Lcom/android/launcher3/util/DvfsUtil;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v1}, Lcom/android/launcher3/util/DvfsUtil;->boostOneFrame()V
+
     const/4 v1, 0x2
 
     const/4 v4, 0x0

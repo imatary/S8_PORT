@@ -200,56 +200,7 @@
     goto :goto_0
 
     :cond_4
-    const/16 v9, 0x122
-
     :try_start_2
-    invoke-static {v9}, Lcom/samsung/android/knox/SemPersonaManager;->isKnoxVersionSupported(I)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_5
-
-    const-string v9, "com.samsung.knox.securefolder"
-
-    iget-object v10, v2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
-
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_5
-
-    iget-object v9, p0, Lcom/android/launcher3/common/model/DisableableAppCache$SerializedMakeListTask;->this$0:Lcom/android/launcher3/common/model/DisableableAppCache;
-
-    invoke-static {v9}, Lcom/android/launcher3/common/model/DisableableAppCache;->access$100(Lcom/android/launcher3/common/model/DisableableAppCache;)Landroid/content/Context;
-
-    move-result-object v9
-
-    invoke-static {v9}, Lcom/android/launcher3/util/SecureFolderHelper;->isSecureFolderExist(Landroid/content/Context;)Z
-
-    move-result v9
-
-    if-nez v9, :cond_5
-
-    sget-object v9, Lcom/android/launcher3/common/model/DisableableAppCache;->mDisableableItems:Ljava/util/ArrayList;
-
-    iget-object v10, v2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
-
-    invoke-virtual {v9, v10}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
-
-    move-result v9
-
-    if-nez v9, :cond_1
-
-    sget-object v9, Lcom/android/launcher3/common/model/DisableableAppCache;->mDisableableItems:Ljava/util/ArrayList;
-
-    iget-object v10, v2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
-
-    invoke-virtual {v9, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    :cond_5
     iget-object v9, p0, Lcom/android/launcher3/common/model/DisableableAppCache$SerializedMakeListTask;->this$0:Lcom/android/launcher3/common/model/DisableableAppCache;
 
     invoke-static {v9}, Lcom/android/launcher3/common/model/DisableableAppCache;->access$000(Lcom/android/launcher3/common/model/DisableableAppCache;)Landroid/content/pm/PackageManager;
@@ -314,7 +265,7 @@
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    goto/16 :goto_0
+    goto :goto_0
 .end method
 
 .method public scheduleNext()V
@@ -322,11 +273,11 @@
 
     iget-object v0, p0, Lcom/android/launcher3/common/model/DisableableAppCache$SerializedMakeListTask;->this$0:Lcom/android/launcher3/common/model/DisableableAppCache;
 
-    invoke-static {v0}, Lcom/android/launcher3/common/model/DisableableAppCache;->access$300(Lcom/android/launcher3/common/model/DisableableAppCache;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/launcher3/common/model/DisableableAppCache;->access$200(Lcom/android/launcher3/common/model/DisableableAppCache;)Landroid/os/Handler;
 
     move-result-object v0
 
-    invoke-static {}, Lcom/android/launcher3/common/model/DisableableAppCache;->access$200()Ljava/lang/Object;
+    invoke-static {}, Lcom/android/launcher3/common/model/DisableableAppCache;->access$100()Ljava/lang/Object;
 
     move-result-object v1
 
