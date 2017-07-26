@@ -5,64 +5,8 @@ doNotCompress:
 - arsc
 - assets/publicc
 - zip
-- pio
 - qmg
-- res/drawable-hdpi-v4/common_signin_btn_icon_pressed_dark.9.qmg
-- res/drawable-hdpi-v4/common_signin_btn_icon_pressed_light.9.qmg
-- res/drawable-hdpi-v4/common_signin_btn_text_disabled_dark.9.qmg
-- res/drawable-hdpi-v4/common_signin_btn_text_disabled_focus_dark.9.qmg
-- res/drawable-hdpi-v4/common_signin_btn_text_disabled_focus_light.9.qmg
-- res/drawable-hdpi-v4/common_signin_btn_text_disabled_light.9.qmg
-- res/drawable-hdpi-v4/common_signin_btn_text_focus_dark.9.qmg
-- res/drawable-hdpi-v4/common_signin_btn_text_focus_light.9.qmg
-- res/drawable-hdpi-v4/common_signin_btn_text_normal_dark.9.qmg
-- res/drawable-hdpi-v4/common_signin_btn_text_normal_light.9.qmg
-- res/drawable-hdpi-v4/common_signin_btn_text_pressed_dark.9.qmg
-- res/drawable-hdpi-v4/common_signin_btn_text_pressed_light.9.qmg
-- res/drawable-mdpi-v4/common_signin_btn_text_focus_dark.9.qmg
-- res/drawable-mdpi-v4/common_signin_btn_text_normal_dark.9.qmg
-- res/drawable-mdpi-v4/common_signin_btn_text_pressed_dark.9.qmg
-- res/drawable-mdpi-v4/common_signin_btn_text_pressed_light.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_dark.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_focus_dark.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_focus_light.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_light.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_icon_focus_dark.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_icon_focus_light.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_icon_normal_dark.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_icon_normal_light.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_icon_pressed_dark.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_icon_pressed_light.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_text_disabled_dark.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_text_disabled_focus_dark.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_text_disabled_focus_light.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_text_disabled_light.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_text_focus_dark.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_text_focus_light.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_text_normal_dark.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_text_normal_light.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_text_pressed_dark.9.qmg
-- res/drawable-xhdpi-v4/common_signin_btn_text_pressed_light.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_dark.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_focus_dark.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_focus_light.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_light.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_icon_focus_dark.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_icon_focus_light.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_icon_normal_dark.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_icon_normal_light.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_icon_pressed_dark.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_icon_pressed_light.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_dark.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_focus_dark.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_focus_light.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_light.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_text_focus_dark.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_text_focus_light.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_text_normal_dark.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_text_normal_light.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_text_pressed_dark.9.qmg
-- res/drawable-xxhdpi-v4/common_signin_btn_text_pressed_light.9.qmg
+- webp
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
@@ -80,5 +24,5 @@ usesFramework:
   tag: null
 version: 2.2.3
 versionInfo:
-  versionCode: '415000000'
-  versionName: 4.1.50
+  versionCode: '415300000'
+  versionName: 4.1.53
