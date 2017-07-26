@@ -93,6 +93,7 @@
     <dimen name="widget_title_bar_text_size">17.0dip</dimen>
     <dimen name="apps_search_titlebar_padding_bottom">6.0dip</dimen>
     <dimen name="apps_search_titlebar_padding_top">6.0dip</dimen>
+    <dimen name="appsearch_menu_searchHeight">36.0dip</dimen>
     <dimen name="widget_page_indicator_bottom_margin">5.0dip</dimen>
     <dimen name="widget_page_top_margin">57.0dip</dimen>
     <dimen name="quick_option_item_padding">8.0dip</dimen>

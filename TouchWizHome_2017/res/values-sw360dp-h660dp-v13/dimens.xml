@@ -95,6 +95,7 @@
     <dimen name="all_apps_search_view_margin_top">24.0dip</dimen>
     <dimen name="apps_search_titlebar_padding_bottom">5.0dip</dimen>
     <dimen name="apps_search_titlebar_padding_top">7.0dip</dimen>
+    <dimen name="appsearch_menu_searchHeight">36.0dip</dimen>
     <dimen name="tidyup_container_height">47.0dip</dimen>
     <dimen name="tidyup_container_margin_top">24.0dip</dimen>
     <dimen name="widget_page_indicator_bottom_margin">12.0dip</dimen>

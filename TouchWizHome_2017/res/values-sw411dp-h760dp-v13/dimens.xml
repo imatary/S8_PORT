@@ -95,6 +95,7 @@
     <dimen name="all_apps_search_view_margin_top">25.0dip</dimen>
     <dimen name="apps_search_titlebar_padding_bottom">6.0dip</dimen>
     <dimen name="apps_search_titlebar_padding_top">6.0dip</dimen>
+    <dimen name="appsearch_menu_searchHeight">36.0dip</dimen>
     <dimen name="tidyup_container_height">47.0dip</dimen>
     <dimen name="tidyup_container_margin_top">24.0dip</dimen>
     <item type="dimen" name="widget_folder_page_cellgap_x">@dimen/widget_page_cellgap_x</item>
@@ -102,6 +103,7 @@
     <dimen name="widget_folder_pageindicator_container_height">94.0dip</dimen>
     <dimen name="widget_page_indicator_bottom_margin">31.0dip</dimen>
     <dimen name="widget_page_top_margin">76.0dip</dimen>
+    <dimen name="appsearch_container_Height">48.0dip</dimen>
     <dimen name="overview_home_button_size">43.0dip</dimen>
     <dimen name="quick_option_item_padding">4.0dip</dimen>
     <item type="dimen" name="widget_searchbar_top_margin">@dimen/status_bar_height</item>

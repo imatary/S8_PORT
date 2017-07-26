@@ -110,8 +110,10 @@
     <dimen name="all_apps_search_view_margin_top">24.0dip</dimen>
     <dimen name="apps_search_titlebar_padding_bottom">6.0dip</dimen>
     <dimen name="apps_search_titlebar_padding_top">6.0dip</dimen>
+    <dimen name="appsearch_menu_searchHeight">36.0dip</dimen>
     <dimen name="widget_page_indicator_bottom_margin">2.0dip</dimen>
     <dimen name="widget_page_top_margin">48.0dip</dimen>
+    <dimen name="appsearch_container_Height">48.0dip</dimen>
     <dimen name="overview_home_button_size">43.0dip</dimen>
     <dimen name="quick_option_item_padding">8.0dip</dimen>
     <dimen name="screen_grid_panel_height">75.0dip</dimen>
