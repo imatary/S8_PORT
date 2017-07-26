@@ -53,13 +53,13 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0b1611
+    const v3, 0x7f0b16a0
 
-    const v4, 0x7f0b1613
+    const v4, 0x7f0b16a2
 
-    const v5, 0x7f0b0a0e
+    const v5, 0x7f0b0a7c
 
-    const v6, 0x7f0b130f
+    const v6, 0x7f0b139e
 
     invoke-direct/range {v0 .. v6}, Lcom/samsung/android/settings/KnoxChooseLockFingerprintPassword$KnoxChooseLockFingerprintPasswordFragment$Stage;-><init>(Ljava/lang/String;IIIII)V
 
@@ -71,13 +71,13 @@
 
     const/4 v2, 0x1
 
-    const v3, 0x7f0b1614
+    const v3, 0x7f0b16a3
 
-    const v4, 0x7f0b1616
+    const v4, 0x7f0b16a5
 
-    const v5, 0x7f0b0a0f
+    const v5, 0x7f0b0a7d
 
-    const v6, 0x7f0b131a
+    const v6, 0x7f0b13a9
 
     invoke-direct/range {v0 .. v6}, Lcom/samsung/android/settings/KnoxChooseLockFingerprintPassword$KnoxChooseLockFingerprintPasswordFragment$Stage;-><init>(Ljava/lang/String;IIIII)V
 
@@ -89,13 +89,13 @@
 
     const/4 v2, 0x2
 
-    const v3, 0x7f0b1617
+    const v3, 0x7f0b16a6
 
-    const v4, 0x7f0b1618
+    const v4, 0x7f0b16a7
 
-    const v5, 0x7f0b0a10
+    const v5, 0x7f0b0a7e
 
-    const v6, 0x7f0b130f
+    const v6, 0x7f0b139e
 
     invoke-direct/range {v0 .. v6}, Lcom/samsung/android/settings/KnoxChooseLockFingerprintPassword$KnoxChooseLockFingerprintPasswordFragment$Stage;-><init>(Ljava/lang/String;IIIII)V
 
