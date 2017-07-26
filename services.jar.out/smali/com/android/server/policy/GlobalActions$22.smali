@@ -56,9 +56,9 @@
 
     invoke-direct {v2, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x10408c4
+    const v0, 0x10408cf
 
-    const v1, 0x10408c6
+    const v1, 0x10408d1
 
     iget-object v3, p0, Lcom/android/server/policy/GlobalActions$22;->this$0:Lcom/android/server/policy/GlobalActions;
 
@@ -82,14 +82,14 @@
 
     if-ne v3, v4, :cond_0
 
-    const v0, 0x10408c5
+    const v0, 0x10408d0
 
-    const v1, 0x10408c7
+    const v1, 0x10408d2
 
     :cond_0
     invoke-virtual {v2, v0}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    const v3, 0x10408c8
+    const v3, 0x10408d3
 
     const/4 v4, 0x0
 
