@@ -824,23 +824,32 @@
 
     move-result v2
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_3
 
     invoke-virtual {p0, v3}, Lcom/sec/android/wallpapercropper2/HomeCropActivity;->saveHomeScreenImage(Ljava/io/ByteArrayOutputStream;)V
 
+    invoke-static {p0}, Lcom/android/gallery3d/util/Utils;->isDocomoUx(Landroid/content/Context;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {p0, v3}, Lcom/sec/android/wallpapercropper2/HomeCropActivity;->saveLockScreenImage(Ljava/io/ByteArrayOutputStream;)V
+
+    :cond_1
     :goto_0
-    if-eqz v3, :cond_1
+    if-eqz v3, :cond_2
 
     :try_start_0
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    :cond_1
+    :cond_2
     :goto_1
     return v0
 
-    :cond_2
+    :cond_3
     const-string/jumbo v0, "Cropper2_HomeAct"
 
     const-string/jumbo v2, "Bitmap compress Failed"

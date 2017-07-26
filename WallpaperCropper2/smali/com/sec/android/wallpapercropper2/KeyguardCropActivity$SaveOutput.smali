@@ -427,16 +427,24 @@
     return-object v0
 
     :cond_4
-    invoke-static {}, Lcom/android/gallery3d/util/Utils;->getLcdWidthPixels()I
+    iget-object v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity$SaveOutput;->this$0:Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;
+
+    invoke-static {v0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->-get21(Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;)F
 
     move-result v0
+
+    float-to-int v0, v0
 
     goto/16 :goto_0
 
     :cond_5
-    invoke-static {}, Lcom/android/gallery3d/util/Utils;->getLcdHeightPixels()I
+    iget-object v1, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity$SaveOutput;->this$0:Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;
+
+    invoke-static {v1}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->-get20(Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;)F
 
     move-result v1
+
+    float-to-int v1, v1
 
     goto/16 :goto_1
 

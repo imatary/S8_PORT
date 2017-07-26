@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Não é possível abrir %s. Toque em CONFIGURAÇÕES, vá para Informações do aplicativo > Permissões, conceda as permissões a seguir e tente novamente:</string>
-    <string name="all_sim">Todas</string>
+    <string name="all_sim">Todos</string>
     <string name="app_name">Papéis de parede</string>
     <string name="apply">Aplique</string>
     <string name="can_not_set_wallpaper_image_not_found">Não é possível definir a imagem como papel de parede. A imagem não foi encontrada.</string>

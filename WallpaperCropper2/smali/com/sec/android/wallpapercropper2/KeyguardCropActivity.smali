@@ -78,7 +78,7 @@
 
 .field private static final TAG:Ljava/lang/String; = "Cropper2_KeyguardAct"
 
-.field private static final THEME_WALLPAPER:I = 0x2
+.field private static final THEME_WALLPAPER:I = 0x3
 
 .field private static final THRESHOLD_TIME:I = 0x190
 
@@ -390,6 +390,22 @@
     .locals 1
 
     iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mBmpWidth:I
+
+    return v0
+.end method
+
+.method static synthetic -get20(Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;)F
+    .locals 1
+
+    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenHeight:F
+
+    return v0
+.end method
+
+.method static synthetic -get21(Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;)F
+    .locals 1
+
+    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
 
     return v0
 .end method
@@ -1587,7 +1603,7 @@
 
     if-eqz v1, :cond_1
 
-    const/4 v0, 0x2
+    const/4 v0, 0x3
 
     goto :goto_0
 .end method
@@ -1930,7 +1946,7 @@
     return-void
 
     :cond_5
-    iget v1, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenHeight:F
+    iget v1, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
 
     const v2, 0x44318000    # 710.0f
 
@@ -1942,7 +1958,7 @@
 
     iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->width:I
 
-    iget v1, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
+    iget v1, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenHeight:F
 
     mul-float/2addr v1, v7
 
@@ -1952,7 +1968,7 @@
 
     iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->height:I
 
-    iget v1, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
+    iget v1, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenHeight:F
 
     mul-float/2addr v1, v6
 
@@ -4154,7 +4170,7 @@
     return-void
 
     :cond_1
-    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
+    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenHeight:F
 
     const/high16 v1, 0x43580000    # 216.0f
 
@@ -4166,7 +4182,7 @@
 
     iput v0, p1, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
 
-    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenHeight:F
+    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
 
     mul-float/2addr v0, v5
 
@@ -4174,7 +4190,7 @@
 
     iput v0, p1, Landroid/widget/FrameLayout$LayoutParams;->width:I
 
-    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
+    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenHeight:F
 
     mul-float/2addr v0, v5
 
@@ -4257,7 +4273,7 @@
     goto :goto_0
 
     :cond_3
-    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
+    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenHeight:F
 
     const/high16 v1, 0x43b10000    # 354.0f
 
@@ -4273,7 +4289,7 @@
 
     iput v0, p2, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
 
-    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenHeight:F
+    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
 
     const/high16 v1, 0x42840000    # 66.0f
 
@@ -4289,7 +4305,7 @@
 
     iput v0, p2, Landroid/widget/FrameLayout$LayoutParams;->leftMargin:I
 
-    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenHeight:F
+    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
 
     mul-float/2addr v0, v2
 
@@ -4297,7 +4313,7 @@
 
     iput v0, p1, Landroid/widget/FrameLayout$LayoutParams;->width:I
 
-    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
+    iget v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenHeight:F
 
     mul-float/2addr v0, v2
 
@@ -5935,6 +5951,10 @@
     return-void
 
     :cond_2
+    iget-object v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mContext:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/android/gallery3d/util/Utils;->initializeScreenResolution(Landroid/content/Context;)V
+
     invoke-virtual {p0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->getContentViewId()I
 
     move-result v0
@@ -6226,7 +6246,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     :cond_b
-    invoke-static {}, Lcom/android/gallery3d/util/Utils;->getDisplayWidthPixels()I
+    invoke-static {}, Lcom/android/gallery3d/util/Utils;->getLcdWidthPixels()I
 
     move-result v0
 
@@ -6234,7 +6254,7 @@
 
     iput v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mScreenWidth:F
 
-    invoke-static {}, Lcom/android/gallery3d/util/Utils;->getDisplayHeightPixels()I
+    invoke-static {}, Lcom/android/gallery3d/util/Utils;->getLcdHeightPixels()I
 
     move-result v0
 
@@ -7944,7 +7964,9 @@
 .end method
 
 .method protected saveLockScreenImage(Ljava/io/ByteArrayOutputStream;)V
-    .locals 5
+    .locals 6
+
+    const/4 v3, 0x1
 
     iget-boolean v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mIsDestroyStart:Z
 
@@ -8127,6 +8149,16 @@
     goto :goto_1
 
     :cond_2
+    invoke-virtual {p0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "lockscreen_wallpaper_transparent"
+
+    invoke-static {v0, v1, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
     :try_start_1
     invoke-virtual {p0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->getApplicationContext()Landroid/content/Context;
 
@@ -8138,43 +8170,43 @@
 
     if-eqz p1, :cond_3
 
-    new-instance v1, Ljava/io/ByteArrayInputStream;
-
-    invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+    invoke-virtual {p0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Ljava/io/ByteArrayInputStream;-><init>([B)V
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x1
-
-    const/4 v4, 0x2
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/app/WallpaperManager;->setStream(Ljava/io/InputStream;Landroid/graphics/Rect;ZI)I
-
-    invoke-virtual {p0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "lockscreen_wallpaper"
-
-    const/4 v2, 0x1
-
-    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    invoke-virtual {p0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "lockscreen_wallpaper_transparent"
+    const-string/jumbo v3, "lockscreen_wallpaper_transparent"
 
     invoke-direct {p0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->getWallpaperTypeTransparency()I
 
-    move-result v2
+    move-result v4
 
-    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    new-instance v2, Ljava/io/ByteArrayInputStream;
+
+    invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x2
+
+    invoke-virtual {v0, v2, v3, v4, v5}, Landroid/app/WallpaperManager;->setStream(Ljava/io/InputStream;Landroid/graphics/Rect;ZI)I
+
+    invoke-virtual {p0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string/jumbo v2, "lockscreen_wallpaper"
+
+    const/4 v3, 0x1
+
+    invoke-static {v0, v2, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_4
 
@@ -8185,11 +8217,19 @@
     :catch_4
     move-exception v0
 
-    const-string/jumbo v1, "Cropper2_KeyguardAct"
+    const-string/jumbo v2, "Cropper2_KeyguardAct"
 
-    const-string/jumbo v2, "cannot write stream to wallpaper"
+    const-string/jumbo v3, "cannot write stream to wallpaper"
 
-    invoke-static {v1, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v2, v3, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    invoke-virtual {p0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string/jumbo v2, "lockscreen_wallpaper_transparent"
+
+    invoke-static {v0, v2, v1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     goto :goto_2
 .end method

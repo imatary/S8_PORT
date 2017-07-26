@@ -7,7 +7,7 @@
     <string name="can_not_set_wallpaper_image_not_found">No se puede establecer la imagen como fondo de pantalla. No se ha encontrado la imagen.</string>
     <string name="cancel">Cancelar</string>
     <string name="cancle">Cancelar</string>
-    <string name="change_wallpaper_when_infinity_applied">Se desactivarán los efectos de infinito si utiliza este fondo de pantalla.</string>
+    <string name="change_wallpaper_when_infinity_applied">Se desactivarán los efectos de pantalla infinita si utilizas este fondo de pantalla.</string>
     <string name="date_format">E, MMMM d</string>
     <string name="done">Hecho</string>
     <string name="duplicate_image">Duplicar</string>

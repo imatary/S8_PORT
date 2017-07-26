@@ -28,7 +28,7 @@
     <string name="permission_name_storage">Lưu trữ</string>
     <string name="processing">Đang xử lý..</string>
     <string name="request_permission_rationale">Không thể sử dụng %1$s. Chạm CÀI ĐẶT, rồi cấp quyền %2$s và thử lại.</string>
-    <string name="right_image">Phải</string>
+    <string name="right_image">Bên phải</string>
     <string name="set_wallpaper_docomo_text_gui">Ảnh này sẽ hiển thị trên màn hình chờ và màn hình khóa.</string>
     <string name="settings">Cài đặt</string>
     <string name="speak_button">Phím</string>
