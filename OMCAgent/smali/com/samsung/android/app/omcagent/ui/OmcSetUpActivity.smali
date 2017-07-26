@@ -359,7 +359,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0a0019
+    const v11, 0x7f0a001a
 
     invoke-virtual {v10, v11, v13}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
 
@@ -417,7 +417,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0a001c
+    const v11, 0x7f0a001d
 
     invoke-virtual {v10, v11, v13}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
 
@@ -437,7 +437,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0a001a
+    const v11, 0x7f0a001b
 
     invoke-virtual {v10, v11, v13}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
 

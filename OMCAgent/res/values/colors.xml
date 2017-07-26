@@ -3,6 +3,7 @@
     <color name="bottom_bar_bg_color">#fffafafa</color>
     <color name="bottom_bar_divider_color">#07000000</color>
     <color name="bottom_bar_text_color">#cc252525</color>
+    <color name="bottom_bar_text_disabled_color">#47252525</color>
     <color name="caution_text_color">#ff0070d2</color>
     <color name="colorcontrolactivate">#ff56c0e5</color>
     <color name="common_action_bar_splitter">#ffd2d2d2</color>

@@ -346,7 +346,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0a0012
+    const v12, 0x7f0a0013
 
     const/4 v13, 0x0
 
@@ -436,7 +436,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0a0016
+    const v12, 0x7f0a0017
 
     const/4 v13, 0x0
 
