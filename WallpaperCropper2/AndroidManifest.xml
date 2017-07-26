@@ -108,7 +108,7 @@
             </intent-filter>
         </activity>
         <service android:exported="false" android:name="com.sec.android.wallpapercropper2.BackupIntentService"/>
-        <meta-data android:name="SPDE.build.signature" android:value="3591449/11276125/universal-release/WallpaperCropper-304100-3.0.41"/>
-        <meta-data android:name="SPDE.env.version" android:value="2.1.3/L24.2.16/24.2.9"/>
+        <meta-data android:name="SPDE.build.signature" android:value="4028519/13965634/universal-release/WallpaperCropper-304100-3.0.48"/>
+        <meta-data android:name="SPDE.env.version" android:value="2.1.3/L24.2.16/24.2.10"/>
     </application>
 </manifest>

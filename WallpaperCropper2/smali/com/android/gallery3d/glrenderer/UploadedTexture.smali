@@ -745,6 +745,32 @@
 
     move-result-object v4
 
+    if-eqz v4, :cond_3
+
+    invoke-virtual {v4}, Landroid/graphics/Bitmap;->isRecycled()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    :cond_3
+    const-string/jumbo v1, "Texture"
+
+    if-nez v4, :cond_4
+
+    const-string/jumbo v0, "bitmap is null."
+
+    :goto_1
+    invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_4
+    const-string/jumbo v0, "bitmap is recycled."
+
+    goto :goto_1
+
+    :cond_5
     invoke-static {v4}, Landroid/opengl/GLUtils;->getInternalFormat(Landroid/graphics/Bitmap;)I
 
     move-result v5

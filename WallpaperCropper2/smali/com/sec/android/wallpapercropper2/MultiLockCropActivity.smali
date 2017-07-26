@@ -524,6 +524,8 @@
     if-eqz v1, :cond_1
 
     :cond_0
+    invoke-static {p0}, Lcom/android/gallery3d/util/Utils;->initializeScreenResolution(Landroid/content/Context;)V
+
     invoke-static {p0}, Lcom/android/gallery3d/util/Utils;->isAttachedMobileKeyboard(Landroid/content/Context;)Z
 
     move-result v0

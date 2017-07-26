@@ -78,6 +78,8 @@
 
 .field public static final REQUIRED_PERMISSION_ON_LAUNCH_FROM_MESSAGE:[Ljava/lang/String;
 
+.field public static final SEC_DEFAULT_LAUNCHER:Ljava/lang/String; = "com.sec.android.app.launcher"
+
 .field public static final SVIEW_SCREEN:I = 0x405
 
 .field private static final TAG:Ljava/lang/String; = "Cropper2_Utils"
@@ -1163,6 +1165,63 @@
     return-object v2
 .end method
 
+.method private static getCurrentLauncher(Landroid/content/Context;)Ljava/lang/String;
+    .locals 4
+
+    const-string/jumbo v0, ""
+
+    new-instance v1, Landroid/content/Intent;
+
+    const-string/jumbo v2, "android.intent.action.MAIN"
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string/jumbo v2, "android.intent.category.HOME"
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v2
+
+    const/high16 v3, 0x10000
+
+    invoke-virtual {v2, v1, v3}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    iget-object v0, v1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    iget-object v0, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+
+    const-string/jumbo v1, "Cropper2_Utils"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "Current Launcher : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    return-object v0
+.end method
+
 .method public static getDisabledPermissionList(Landroid/content/Context;[Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
@@ -2016,11 +2075,9 @@
 .end method
 
 .method public static initializeFeatures(Landroid/content/Context;)V
-    .locals 6
+    .locals 3
 
     const v2, 0x1002b
-
-    const/16 v5, 0x500
 
     invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
 
@@ -2077,6 +2134,14 @@
 
     sput-object v0, Lcom/android/gallery3d/util/Utils;->mStorageDirectory:Ljava/lang/String;
 
+    return-void
+.end method
+
+.method public static initializeScreenResolution(Landroid/content/Context;)V
+    .locals 6
+
+    const/16 v5, 0x500
+
     new-instance v1, Landroid/util/DisplayMetrics;
 
     invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
@@ -2095,42 +2160,6 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
-    const-string/jumbo v2, "Cropper2_Utils"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "metrics.heightPixels = "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    iget v4, v1, Landroid/util/DisplayMetrics;->heightPixels:I
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "; metrics.widthPixels = "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    iget v4, v1, Landroid/util/DisplayMetrics;->widthPixels:I
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
     iget v2, v1, Landroid/util/DisplayMetrics;->heightPixels:I
 
     iget v3, v1, Landroid/util/DisplayMetrics;->widthPixels:I
@@ -2141,7 +2170,7 @@
 
     const/16 v3, 0xa00
 
-    if-ge v2, v3, :cond_1
+    if-ge v2, v3, :cond_0
 
     iget v3, v1, Landroid/util/DisplayMetrics;->density:F
 
@@ -2149,9 +2178,9 @@
 
     cmpl-float v3, v3, v4
 
-    if-ltz v3, :cond_3
+    if-ltz v3, :cond_2
 
-    :cond_1
+    :cond_0
     div-int/lit8 v2, v2, 0x4
 
     sput v2, Lcom/android/gallery3d/util/Utils;->sThumbnailTargetSize:I
@@ -2161,21 +2190,21 @@
 
     iget v3, v1, Landroid/util/DisplayMetrics;->heightPixels:I
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_1
 
-    if-nez v3, :cond_5
+    if-nez v3, :cond_4
 
-    :cond_2
+    :cond_1
     return-void
 
-    :cond_3
+    :cond_2
     iget v3, v1, Landroid/util/DisplayMetrics;->density:F
 
     const/high16 v4, 0x40000000    # 2.0f
 
     cmpg-float v3, v3, v4
 
-    if-gtz v3, :cond_4
+    if-gtz v3, :cond_3
 
     div-int/lit8 v2, v2, 0x2
 
@@ -2183,17 +2212,53 @@
 
     goto :goto_0
 
-    :cond_4
+    :cond_3
     div-int/lit8 v2, v2, 0x3
 
     sput v2, Lcom/android/gallery3d/util/Utils;->sThumbnailTargetSize:I
 
     goto :goto_0
 
-    :cond_5
+    :cond_4
     sput v2, Lcom/android/gallery3d/util/Utils;->sDisplayWidthPixels:I
 
     sput v3, Lcom/android/gallery3d/util/Utils;->sDisplayHeightPixels:I
+
+    const-string/jumbo v2, "Cropper2_Utils"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "sDisplayHeightPixels = "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    sget v4, Lcom/android/gallery3d/util/Utils;->sDisplayHeightPixels:I
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string/jumbo v4, "; sDisplayWidthPixels = "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    sget v4, Lcom/android/gallery3d/util/Utils;->sDisplayWidthPixels:I
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual {v0, v1}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
 
@@ -2243,26 +2308,26 @@
 
     sget v0, Lcom/android/gallery3d/util/Utils;->sTileSize:I
 
-    if-nez v0, :cond_7
+    if-nez v0, :cond_6
 
     sget v0, Lcom/android/gallery3d/util/Utils;->sDisplayHeightPixels:I
 
-    if-ge v0, v5, :cond_6
+    if-ge v0, v5, :cond_5
 
     sget v0, Lcom/android/gallery3d/util/Utils;->sDisplayWidthPixels:I
 
-    if-lt v0, v5, :cond_8
+    if-lt v0, v5, :cond_7
 
-    :cond_6
+    :cond_5
     const/16 v0, 0x1fe
 
     sput v0, Lcom/android/gallery3d/util/Utils;->sTileSize:I
 
-    :cond_7
+    :cond_6
     :goto_1
     return-void
 
-    :cond_8
+    :cond_7
     const/16 v0, 0xfe
 
     sput v0, Lcom/android/gallery3d/util/Utils;->sTileSize:I
@@ -2817,7 +2882,7 @@
 .end method
 
 .method private static isPreferedActivity(Landroid/content/Context;Ljava/lang/String;)Z
-    .locals 4
+    .locals 5
 
     const/4 v0, 0x0
 
@@ -2834,6 +2899,32 @@
     move-result-object v3
 
     invoke-virtual {v3, v1, v2, p1}, Landroid/content/pm/PackageManager;->getPreferredActivities(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I
+
+    const-string/jumbo v1, "Cropper2_Utils"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "isPreferedActivity.size = "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v1, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -2889,6 +2980,19 @@
 
     move-result v0
 
+    if-nez v0, :cond_0
+
+    const-string/jumbo v0, "com.sec.android.app.launcher"
+
+    invoke-static {p0}, Lcom/android/gallery3d/util/Utils;->getCurrentLauncher(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    :goto_0
     const-string/jumbo v1, "Cropper2_Utils"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2912,6 +3016,11 @@
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return v0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    goto :goto_0
 .end method
 
 .method public static isSupportBackUpRestoreWallpaper()Z
