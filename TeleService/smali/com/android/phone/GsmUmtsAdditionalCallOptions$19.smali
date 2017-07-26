@@ -35,25 +35,7 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
-
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$19;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    invoke-static {v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap1(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/Context;
-
-    move-result-object v1
-
-    const-string/jumbo v2, "phone"
-
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/telephony/TelephonyManager;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroid/telephony/TelephonyManager;->setDataEnabled(Z)V
+    .locals 0
 
     return-void
 .end method

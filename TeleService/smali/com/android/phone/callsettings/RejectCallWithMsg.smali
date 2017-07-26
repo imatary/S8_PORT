@@ -1483,7 +1483,7 @@
 
     if-eqz v0, :cond_2
 
-    const v5, 0x7f0d087d
+    const v5, 0x7f0d08e1
 
     :cond_2
     const-class v0, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;
@@ -1621,7 +1621,7 @@
     move-result v0
 
     :cond_0
-    const v2, 0x7f0d054c
+    const v2, 0x7f0d05b0
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -1650,7 +1650,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v3, 0x7f0d097d
+    const v3, 0x7f0d09e3
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -1715,7 +1715,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d087d
+    const v3, 0x7f0d08e1
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->setTitle(I)V
 
@@ -1843,7 +1843,7 @@
 
     if-eqz v0, :cond_0
 
-    const v5, 0x7f0d087d
+    const v5, 0x7f0d08e1
 
     :cond_0
     const-class v0, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;
@@ -2413,13 +2413,13 @@
 
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
-    const v1, 0x7f0d050b
+    const v1, 0x7f0d056b
 
     invoke-interface {p1, v3, v2, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v1
 
-    const v4, 0x7f020008
+    const v4, 0x7f02000a
 
     invoke-interface {v1, v4}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -2439,7 +2439,7 @@
 
     if-lez v1, :cond_0
 
-    const v1, 0x7f0d063b
+    const v1, 0x7f0d069f
 
     invoke-interface {p1, v3, v6, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -2780,7 +2780,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d05c4
+    const v7, 0x7f0d0628
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2844,7 +2844,7 @@
 
     if-nez v6, :cond_2
 
-    const v6, 0x7f0d05c8
+    const v6, 0x7f0d062c
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -2879,7 +2879,7 @@
 
     if-eqz v6, :cond_3
 
-    const v6, 0x7f0d05c8
+    const v6, 0x7f0d062c
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -2950,7 +2950,7 @@
 
     :cond_4
     :goto_1
-    const v6, 0x7f0d09f9
+    const v6, 0x7f0d0a60
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -3021,7 +3021,7 @@
 
     aput-object v8, v7, v9
 
-    const v8, 0x7f0d04e7
+    const v8, 0x7f0d0547
 
     invoke-virtual {v6, v8, v7}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3053,7 +3053,7 @@
 
     aput-object v8, v7, v9
 
-    const v8, 0x7f0d04e8
+    const v8, 0x7f0d0548
 
     invoke-virtual {v6, v8, v7}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

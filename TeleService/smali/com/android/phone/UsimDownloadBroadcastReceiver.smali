@@ -7,7 +7,8 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/android/phone/UsimDownloadBroadcastReceiver$1;,
-        Lcom/android/phone/UsimDownloadBroadcastReceiver$2;
+        Lcom/android/phone/UsimDownloadBroadcastReceiver$2;,
+        Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;
     }
 .end annotation
 
@@ -406,6 +407,89 @@
     goto :goto_0
 .end method
 
+.method private checkOmcEnabled()Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;
+    .locals 5
+
+    const-string/jumbo v3, "UsimDownloadReceiver"
+
+    const-string/jumbo v4, "checkOmcEnabled()"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v1, Ljava/io/File;
+
+    const-string/jumbo v3, "/efs/sec_efs/omc_enabler"
+
+    invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+
+    move-result v3
+
+    if-nez v3, :cond_2
+
+    new-instance v0, Ljava/io/File;
+
+    const-string/jumbo v3, "/system/omc/omc_disabler"
+
+    invoke-direct {v0, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    new-instance v2, Ljava/io/File;
+
+    const-string/jumbo v3, "/system/omc/omc_half_disabler"
+
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    sget-object v3, Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;->ENABLED:Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;
+
+    return-object v3
+
+    :cond_0
+    const-string/jumbo v3, "UsimDownloadReceiver"
+
+    const-string/jumbo v4, "OMC half disabler is exist"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    sget-object v3, Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;->HALF_DISABLED:Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;
+
+    return-object v3
+
+    :cond_1
+    const-string/jumbo v3, "UsimDownloadReceiver"
+
+    const-string/jumbo v4, "OMC disabler is exist"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    sget-object v3, Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;->DISABLED:Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;
+
+    return-object v3
+
+    :cond_2
+    const-string/jumbo v3, "UsimDownloadReceiver"
+
+    const-string/jumbo v4, "OMC enabler is exist"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    sget-object v3, Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;->ENABLED:Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;
+
+    return-object v3
+.end method
+
 .method private isRejectCause121315()Z
     .locals 4
 
@@ -773,6 +857,14 @@
 
     if-eqz v5, :cond_5
 
+    invoke-direct {p0}, Lcom/android/phone/UsimDownloadBroadcastReceiver;->checkOmcEnabled()Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;
+
+    move-result-object v5
+
+    sget-object v6, Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;->DISABLED:Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;
+
+    if-eq v5, v6, :cond_5
+
     const-string/jumbo v5, "KTC"
 
     sget-object v6, Lcom/android/phone/UsimDownloadBroadcastReceiver;->SALES_CODE:Ljava/lang/String;
@@ -817,7 +909,7 @@
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_7
     const-string/jumbo v5, "UsimDownloadReceiver"
@@ -865,6 +957,14 @@
     move-result v5
 
     if-eqz v5, :cond_a
+
+    invoke-direct {p0}, Lcom/android/phone/UsimDownloadBroadcastReceiver;->checkOmcEnabled()Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;
+
+    move-result-object v5
+
+    sget-object v6, Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;->DISABLED:Lcom/android/phone/UsimDownloadBroadcastReceiver$OmcStatus;
+
+    if-eq v5, v6, :cond_a
 
     const-string/jumbo v5, "LUC"
 

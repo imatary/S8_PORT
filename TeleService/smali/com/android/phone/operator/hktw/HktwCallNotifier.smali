@@ -448,7 +448,7 @@
 
     if-ne v5, v6, :cond_8
 
-    const v5, 0x7f0d0936
+    const v5, 0x7f0d099c
 
     invoke-direct {p0, v5, v7}, Lcom/android/phone/operator/hktw/HktwCallNotifier;->toastText(II)V
 

@@ -471,7 +471,7 @@
 
     if-eqz v0, :cond_0
 
-    const v6, 0x7f0d088c
+    const v6, 0x7f0d08f0
 
     :cond_0
     iget-object v7, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->mAutoRejectItemList:Ljava/util/ArrayList;
@@ -737,7 +737,7 @@
 .method private initLayout(Landroid/view/View;)V
     .locals 2
 
-    const v0, 0x7f100264
+    const v0, 0x7f100265
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1153,7 +1153,7 @@
 .method private updateTitleBar()V
     .locals 3
 
-    const v2, 0x7f0d051e
+    const v2, 0x7f0d057e
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -1175,7 +1175,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f0d072e
+    const v1, 0x7f0d0792
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -1199,7 +1199,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f0d072c
+    const v1, 0x7f0d0790
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -1329,7 +1329,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d05da
+    const v3, 0x7f0d063e
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1366,7 +1366,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d05db
+    const v3, 0x7f0d063f
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1395,7 +1395,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d05dc
+    const v3, 0x7f0d0640
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1524,7 +1524,7 @@
     :catch_0
     move-exception v0
 
-    const v1, 0x7f0d0995
+    const v1, 0x7f0d09fb
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -1572,13 +1572,13 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0201a7
+    const v1, 0x7f0201b0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d07f6
+    const v1, 0x7f0d085a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -1602,13 +1602,13 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f02015d
+    const v1, 0x7f020161
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d050a
+    const v1, 0x7f0d056a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -1658,13 +1658,13 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0201a7
+    const v1, 0x7f0201b0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d07f6
+    const v1, 0x7f0d085a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -1698,13 +1698,13 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f02015d
+    const v1, 0x7f020161
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d050a
+    const v1, 0x7f0d056a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -1742,13 +1742,13 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0201a7
+    const v1, 0x7f0201b0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d07f6
+    const v1, 0x7f0d085a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -2099,7 +2099,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0500
+    const v3, 0x7f0d0560
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

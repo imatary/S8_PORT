@@ -59,7 +59,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x3c
+    const/16 v4, 0x3d
 
     const/4 v5, 0x0
 
@@ -145,7 +145,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x42
+    const/16 v3, 0x43
 
     const/4 v4, 0x0
 
@@ -205,7 +205,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x3b
+    const/16 v3, 0x3c
 
     const/4 v4, 0x0
 
@@ -256,7 +256,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x48
+    const/16 v3, 0x49
 
     const/4 v4, 0x0
 
@@ -416,7 +416,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x4c
+    const/16 v3, 0x4d
 
     const/4 v4, 0x0
 
@@ -474,7 +474,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x33
+    const/16 v3, 0x34
 
     const/4 v4, 0x0
 
@@ -532,7 +532,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x31
+    const/16 v3, 0x32
 
     const/4 v4, 0x0
 
@@ -592,7 +592,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x32
+    const/16 v3, 0x33
 
     const/4 v4, 0x0
 
@@ -650,7 +650,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x30
+    const/16 v3, 0x31
 
     const/4 v4, 0x0
 
@@ -701,7 +701,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x55
+    const/16 v3, 0x56
 
     const/4 v4, 0x0
 
@@ -822,7 +822,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x47
+    const/16 v4, 0x48
 
     const/4 v5, 0x0
 
@@ -875,7 +875,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x4b
+    const/16 v4, 0x4c
 
     const/4 v5, 0x0
 
@@ -930,7 +930,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x4f
+    const/16 v4, 0x50
 
     const/4 v5, 0x0
 
@@ -1071,7 +1071,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x29
+    const/16 v3, 0x2a
 
     const/4 v4, 0x0
 
@@ -1120,7 +1120,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x23
+    const/16 v4, 0x24
 
     const/4 v5, 0x0
 
@@ -1191,7 +1191,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x26
+    const/16 v4, 0x27
 
     const/4 v5, 0x0
 
@@ -1246,7 +1246,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x25
+    const/16 v4, 0x26
 
     const/4 v5, 0x0
 
@@ -1482,7 +1482,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x57
+    const/16 v4, 0x58
 
     const/4 v5, 0x0
 
@@ -1535,7 +1535,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x4e
+    const/16 v4, 0x4f
 
     const/4 v5, 0x0
 
@@ -1588,7 +1588,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x52
+    const/16 v4, 0x53
 
     const/4 v5, 0x0
 
@@ -1653,7 +1653,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x43
+    const/16 v3, 0x44
 
     const/4 v4, 0x0
 
@@ -1702,7 +1702,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x51
+    const/16 v4, 0x52
 
     const/4 v5, 0x0
 
@@ -1765,7 +1765,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x2b
+    const/16 v4, 0x2c
 
     const/4 v5, 0x0
 
@@ -1828,7 +1828,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x34
+    const/16 v4, 0x35
 
     const/4 v5, 0x0
 
@@ -1891,7 +1891,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x2d
+    const/16 v4, 0x2e
 
     const/4 v5, 0x0
 
@@ -2017,7 +2017,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x53
+    const/16 v4, 0x54
 
     const/4 v5, 0x0
 
@@ -2084,7 +2084,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x2f
+    const/16 v4, 0x30
 
     const/4 v5, 0x0
 
@@ -2149,7 +2149,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x2e
+    const/16 v4, 0x2f
 
     const/4 v5, 0x0
 
@@ -2212,7 +2212,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x2c
+    const/16 v4, 0x2d
 
     const/4 v5, 0x0
 
@@ -2545,7 +2545,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x1f
+    const/16 v3, 0x20
 
     const/4 v4, 0x0
 
@@ -2605,7 +2605,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x21
+    const/16 v3, 0x22
 
     const/4 v4, 0x0
 
@@ -2665,7 +2665,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x35
+    const/16 v3, 0x36
 
     const/4 v4, 0x0
 
@@ -2956,7 +2956,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x59
+    const/16 v3, 0x5a
 
     const/4 v4, 0x0
 
@@ -3016,7 +3016,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x45
+    const/16 v3, 0x46
 
     const/4 v4, 0x0
 
@@ -3067,7 +3067,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x44
+    const/16 v3, 0x45
 
     const/4 v4, 0x0
 
@@ -3167,7 +3167,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x3a
+    const/16 v3, 0x3b
 
     const/4 v4, 0x0
 
@@ -3218,7 +3218,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x58
+    const/16 v3, 0x59
 
     const/4 v4, 0x0
 
@@ -3275,7 +3275,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x38
+    const/16 v3, 0x39
 
     const/4 v4, 0x0
 
@@ -3325,6 +3325,57 @@
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v3, 0x11
+
+    const/4 v4, 0x0
+
+    invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
+    invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    return-void
+
+    :catchall_0
+    move-exception v2
+
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    throw v2
+.end method
+
+.method public sendVerificationCode(Ljava/lang/String;)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v1
+
+    :try_start_0
+    const-string/jumbo v2, "com.sec.ims.IImsService"
+
+    invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
+
+    const/16 v3, 0x1f
 
     const/4 v4, 0x0
 
@@ -3489,7 +3540,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x37
+    const/16 v3, 0x38
 
     const/4 v4, 0x0
 
@@ -3540,7 +3591,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x39
+    const/16 v3, 0x3a
 
     const/4 v4, 0x0
 
@@ -3600,7 +3651,7 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x3e
+    const/16 v3, 0x3f
 
     const/4 v4, 0x0
 
@@ -3731,7 +3782,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x2a
+    const/16 v3, 0x2b
 
     const/4 v4, 0x0
 
@@ -3840,7 +3891,7 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x3d
+    const/16 v3, 0x3e
 
     const/4 v4, 0x0
 
@@ -3903,7 +3954,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x28
+    const/16 v3, 0x29
 
     const/4 v4, 0x0
 
@@ -3956,7 +4007,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x27
+    const/16 v3, 0x28
 
     const/4 v4, 0x0
 
@@ -4007,7 +4058,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x56
+    const/16 v3, 0x57
 
     const/4 v4, 0x0
 
@@ -4107,7 +4158,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x4d
+    const/16 v4, 0x4e
 
     const/4 v5, 0x0
 
@@ -4172,7 +4223,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x3f
+    const/16 v3, 0x40
 
     const/4 v4, 0x0
 
@@ -4221,7 +4272,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x54
+    const/16 v4, 0x55
 
     const/4 v5, 0x0
 
@@ -4280,7 +4331,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x49
+    const/16 v4, 0x4a
 
     const/4 v5, 0x0
 
@@ -4333,7 +4384,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x40
+    const/16 v3, 0x41
 
     const/4 v4, 0x0
 
@@ -4382,7 +4433,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x4a
+    const/16 v4, 0x4b
 
     const/4 v5, 0x0
 
@@ -4493,7 +4544,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x41
+    const/16 v3, 0x42
 
     const/4 v4, 0x0
 
@@ -4546,7 +4597,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x24
+    const/16 v3, 0x25
 
     const/4 v4, 0x0
 
@@ -4726,7 +4777,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x20
+    const/16 v3, 0x21
 
     const/4 v4, 0x0
 
@@ -4786,7 +4837,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x22
+    const/16 v3, 0x23
 
     const/4 v4, 0x0
 
@@ -4846,7 +4897,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x36
+    const/16 v3, 0x37
 
     const/4 v4, 0x0
 
@@ -5086,7 +5137,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x5a
+    const/16 v3, 0x5b
 
     const/4 v4, 0x0
 
@@ -5146,7 +5197,7 @@
 
     iget-object v2, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x46
+    const/16 v3, 0x47
 
     const/4 v4, 0x0
 
@@ -5208,7 +5259,7 @@
 
     iget-object v3, p0, Lcom/sec/ims/IImsService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0x50
+    const/16 v4, 0x51
 
     const/4 v5, 0x0
 

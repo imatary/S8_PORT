@@ -17,7 +17,7 @@
 
     const/4 v3, 0x2
 
-    const v1, 0x7f0d04ae
+    const v1, 0x7f0d050e
 
     if-eqz p1, :cond_0
 
@@ -37,7 +37,7 @@
 
     if-ne v0, v2, :cond_1
 
-    const v1, 0x7f0d04b3
+    const v1, 0x7f0d0513
 
     :cond_0
     :goto_0
@@ -54,7 +54,7 @@
     :cond_1
     if-ne v0, v3, :cond_2
 
-    const v1, 0x7f0d04b4
+    const v1, 0x7f0d0514
 
     const-string/jumbo v2, "vowifi_in_can"
 
@@ -64,17 +64,17 @@
 
     if-eqz v2, :cond_0
 
-    const v1, 0x7f0d0ca0
+    const v1, 0x7f0d0d11
 
     goto :goto_0
 
     :cond_2
-    const v1, 0x7f0d04b5
+    const v1, 0x7f0d0515
 
     goto :goto_0
 
     :cond_3
-    const v1, 0x7f0d04ad
+    const v1, 0x7f0d050d
 
     goto :goto_0
 .end method
@@ -497,7 +497,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_2
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getPhone()Lcom/android/internal/telephony/Phone;
 
@@ -507,10 +507,25 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-nez v1, :cond_1
 
-    const/4 v0, 0x0
+    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceSystemDB;->isAirplainModeOn(Landroid/content/Context;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
 
     :cond_1
+    const/4 v0, 0x0
+
+    :cond_2
     return v0
 .end method

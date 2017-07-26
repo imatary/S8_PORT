@@ -105,7 +105,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/PresetImage$1;->this$0:Lcom/android/phone/callsettings/PresetImage;
 
-    const v5, 0x7f0d04d8
+    const v5, 0x7f0d0538
 
     invoke-virtual {v4, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 

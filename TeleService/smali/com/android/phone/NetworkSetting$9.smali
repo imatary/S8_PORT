@@ -111,7 +111,7 @@
 
     iget-object v2, v2, Lcom/android/phone/NetworkSetting;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0d0505
+    const v3, 0x7f0d0565
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -125,7 +125,7 @@
 
     iget-object v2, v2, Lcom/android/phone/NetworkSetting;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0d064b
+    const v3, 0x7f0d06af
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -139,7 +139,7 @@
 
     iget-object v2, v2, Lcom/android/phone/NetworkSetting;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0d050c
+    const v3, 0x7f0d056c
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

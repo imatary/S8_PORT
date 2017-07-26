@@ -21,7 +21,7 @@
 .method private getErrorMessage()Ljava/lang/String;
     .locals 11
 
-    const v10, 0x7f0d0ae0
+    const v10, 0x7f0d0b47
 
     const/4 v9, 0x3
 
@@ -91,7 +91,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d0ae3
+    const v7, 0x7f0d0b4a
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -108,7 +108,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d0ae1
+    const v7, 0x7f0d0b48
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

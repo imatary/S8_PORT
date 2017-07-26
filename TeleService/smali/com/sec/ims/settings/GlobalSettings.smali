@@ -64,9 +64,13 @@
 
 .field private mIsConfSubscribeEnabled:Z
 
+.field private mIsGroupChatAutoRejoin:Z
+
 .field private mIsMsrpCema:Z
 
 .field private mIwlanPaniFormat:Ljava/lang/String;
+
+.field private mLegacyLatching:Z
 
 .field private mLteE911FailTimer:I
 
@@ -91,6 +95,8 @@
 .field private mRcsIshChunkSize:I
 
 .field private mRcsModelName:Ljava/lang/String;
+
+.field private mRcsNetworkType:Ljava/lang/String;
 
 .field private mRemoveIconNoSvc:I
 
@@ -143,6 +149,8 @@
 
 .field private mSupportChatOnDefaultMmsApp:Ljava/lang/Integer;
 
+.field private mSupportConfigServer:Ljava/lang/String;
+
 .field private mSupportCpElement:Z
 
 .field private mSupportMediaType:I
@@ -160,6 +168,8 @@
 .field private mSupportTls:Z
 
 .field private mSupportVoWiFi:Z
+
+.field private mUserAgent:Ljava/lang/String;
 
 .field private mUssdPreference:Ljava/lang/String;
 
@@ -339,6 +349,16 @@
     move-result v2
 
     iput v2, p0, Lcom/sec/ims/settings/GlobalSettings;->mRcsAutoconfigPdn:I
+
+    const-string/jumbo v2, "rcs_network_type"
+
+    const-string/jumbo v5, "ims,internet,wifi"
+
+    invoke-direct {p0, p1, v2, v5}, Lcom/sec/ims/settings/GlobalSettings;->getStringValue(Landroid/content/ContentValues;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/sec/ims/settings/GlobalSettings;->mRcsNetworkType:Ljava/lang/String;
 
     const-string/jumbo v2, "rcs_disable_under_upsm"
 
@@ -1354,8 +1374,10 @@
 
     if-ne v2, v3, :cond_7
 
+    move v2, v3
+
     :goto_7
-    iput-boolean v3, p0, Lcom/sec/ims/settings/GlobalSettings;->mVowifiNeedLocationMenu:Z
+    iput-boolean v2, p0, Lcom/sec/ims/settings/GlobalSettings;->mVowifiNeedLocationMenu:Z
 
     const-string/jumbo v2, "show_regi_info_in_sec_settings"
 
@@ -1367,13 +1389,49 @@
 
     const-string/jumbo v2, "iwlan_pani_format"
 
-    const-string/jumbo v3, "[PREFIX][NODE_ID]"
+    const-string/jumbo v5, "[PREFIX][NODE_ID]"
+
+    invoke-direct {p0, p1, v2, v5}, Lcom/sec/ims/settings/GlobalSettings;->getStringValue(Landroid/content/ContentValues;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/sec/ims/settings/GlobalSettings;->mIwlanPaniFormat:Ljava/lang/String;
+
+    const-string/jumbo v2, "user_agent"
+
+    const-string/jumbo v5, ""
+
+    invoke-direct {p0, p1, v2, v5}, Lcom/sec/ims/settings/GlobalSettings;->getStringValue(Landroid/content/ContentValues;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/sec/ims/settings/GlobalSettings;->mUserAgent:Ljava/lang/String;
+
+    const-string/jumbo v2, "legacy_latching"
+
+    invoke-direct {p0, p1, v2, v4}, Lcom/sec/ims/settings/GlobalSettings;->getBooleanValue(Landroid/content/ContentValues;Ljava/lang/String;Z)Z
+
+    move-result v2
+
+    iput-boolean v2, p0, Lcom/sec/ims/settings/GlobalSettings;->mLegacyLatching:Z
+
+    const-string/jumbo v2, "rcs_groupchat_auto_rejoin"
+
+    invoke-direct {p0, p1, v2, v3}, Lcom/sec/ims/settings/GlobalSettings;->getBooleanValue(Landroid/content/ContentValues;Ljava/lang/String;Z)Z
+
+    move-result v2
+
+    iput-boolean v2, p0, Lcom/sec/ims/settings/GlobalSettings;->mIsGroupChatAutoRejoin:Z
+
+    const-string/jumbo v2, "support_configserver"
+
+    const-string/jumbo v3, ""
 
     invoke-direct {p0, p1, v2, v3}, Lcom/sec/ims/settings/GlobalSettings;->getStringValue(Landroid/content/ContentValues;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/sec/ims/settings/GlobalSettings;->mIwlanPaniFormat:Ljava/lang/String;
+    iput-object v2, p0, Lcom/sec/ims/settings/GlobalSettings;->mSupportConfigServer:Ljava/lang/String;
 
     return-void
 
@@ -1395,7 +1453,7 @@
     :cond_4
     move v2, v4
 
-    goto :goto_4
+    goto/16 :goto_4
 
     :cond_5
     move v2, v4
@@ -1408,7 +1466,7 @@
     goto :goto_6
 
     :cond_7
-    move v3, v4
+    move v2, v4
 
     goto :goto_7
 .end method

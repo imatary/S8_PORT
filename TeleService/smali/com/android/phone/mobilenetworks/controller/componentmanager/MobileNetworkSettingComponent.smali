@@ -262,7 +262,7 @@
 .method public getType()I
     .locals 1
 
-    const/4 v0, 0x7
+    const/16 v0, 0x17
 
     return v0
 .end method

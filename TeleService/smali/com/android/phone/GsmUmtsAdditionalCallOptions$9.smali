@@ -3,7 +3,7 @@
 .source "GsmUmtsAdditionalCallOptions.java"
 
 # interfaces
-.implements Landroid/preference/Preference$OnPreferenceClickListener;
+.implements Landroid/preference/Preference$OnPreferenceChangeListener;
 
 
 # annotations
@@ -34,63 +34,127 @@
 
 
 # virtual methods
-.method public onPreferenceClick(Landroid/preference/Preference;)Z
-    .locals 5
+.method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
+    .locals 9
 
-    const/4 v4, 0x1
+    const/4 v8, 0x2
 
-    check-cast p1, Landroid/preference/EditTextPreference;
+    const/4 v7, 0x0
 
-    invoke-virtual {p1}, Landroid/preference/EditTextPreference;->getEditText()Landroid/widget/EditText;
+    const/4 v6, 0x1
 
-    move-result-object v1
+    iget-object v3, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$9;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    if-eqz v1, :cond_0
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    sget v2, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    if-ne v2, v4, :cond_1
+    const-string/jumbo v5, "mChangeGuideLanguae buttonMode: "
 
-    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$9;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap0(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
+    move-result-object v4
 
-    move-result-object v2
+    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v3, "area_code_sim2_value"
+    move-result-object v4
 
-    invoke-static {v2, v3}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+    invoke-static {v3, v4}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap8(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
 
-    :goto_0
-    invoke-virtual {v1}, Landroid/widget/EditText;->length()I
+    instance-of v3, p2, Ljava/lang/String;
 
-    move-result v0
+    if-eqz v3, :cond_4
 
-    if-lez v0, :cond_0
+    check-cast p2, Ljava/lang/String;
 
-    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setSelection(I)V
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
+
+    move-result v2
+
+    new-instance v1, Landroid/content/Intent;
+
+    const-string/jumbo v3, "android.intent.action.CALL"
+
+    invoke-direct {v1, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    if-ne v2, v6, :cond_2
+
+    const-string/jumbo v3, "tel:14190"
+
+    invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
     :cond_0
-    return v4
+    :goto_0
+    if-eq v2, v6, :cond_1
+
+    if-ne v2, v8, :cond_3
 
     :cond_1
-    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$9;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+    :try_start_0
+    iget-object v3, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$9;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    invoke-static {v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap0(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
+    invoke-virtual {v3, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result-object v2
+    :goto_1
+    return v6
 
-    const-string/jumbo v3, "area_code_value"
+    :cond_2
+    if-ne v2, v8, :cond_0
 
-    invoke-static {v2, v3}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+    const-string/jumbo v3, "tel:14191"
 
-    move-result-object v2
+    invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
     goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    iget-object v3, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$9;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "ActivityNotFoundException: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap8(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
+
+    goto :goto_1
+
+    :cond_3
+    return v7
+
+    :cond_4
+    return v7
 .end method

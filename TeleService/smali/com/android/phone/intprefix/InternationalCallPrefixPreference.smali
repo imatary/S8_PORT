@@ -533,7 +533,7 @@
 
     invoke-virtual {v3, v2}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
 
-    const v3, 0x7f0d0b4e
+    const v3, 0x7f0d0bb5
 
     invoke-virtual {p0, v3}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->getString(I)Ljava/lang/String;
 
@@ -913,7 +913,7 @@
 
     invoke-direct {p0, v2}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->updateSP(I)V
 
-    const v2, 0x7f0d0b4c
+    const v2, 0x7f0d0bb3
 
     invoke-virtual {p0, v2}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->getString(I)Ljava/lang/String;
 
@@ -980,7 +980,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f0d0b45
+    const v6, 0x7f0d0bac
 
     invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -990,11 +990,11 @@
 
     invoke-direct {v6, p0, v3, v2, p1}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference$3;-><init>(Lcom/android/phone/intprefix/InternationalCallPrefixPreference;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/preference/Preference;)V
 
-    const v7, 0x7f0d041e
+    const v7, 0x7f0d047e
 
     invoke-virtual {v0, v7, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v6, 0x7f0d02c7
+    const v6, 0x7f0d0327
 
     invoke-virtual {v0, v6, v8}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1739,7 +1739,7 @@
     return-void
 
     :cond_6
-    const v10, 0x7f0d0b52
+    const v10, 0x7f0d0bb9
 
     invoke-virtual {p0, v10}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->getString(I)Ljava/lang/String;
 
@@ -1932,7 +1932,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->fillList()V
 
-    const v5, 0x7f0d0b4e
+    const v5, 0x7f0d0bb5
 
     invoke-virtual {p0, v5}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->getString(I)Ljava/lang/String;
 
@@ -1974,7 +1974,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0b50
+    const v1, 0x7f0d0bb7
 
     invoke-virtual {p0, v1}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->getString(I)Ljava/lang/String;
 
@@ -1982,7 +1982,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d02ca
+    const v1, 0x7f0d032a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->getString(I)Ljava/lang/String;
 
@@ -2046,7 +2046,7 @@
 
     move-result-object v5
 
-    const v0, 0x7f0d0b8c
+    const v0, 0x7f0d0bf3
 
     invoke-virtual {p0, v0}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->setDiaLogMassage(I)V
 
@@ -2076,7 +2076,7 @@
 
     invoke-virtual {v6, v5, v3, v0}, Landroid/app/AlertDialog$Builder;->setMultiChoiceItems([Ljava/lang/CharSequence;[ZLandroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v0, 0x7f0d02ca
+    const v0, 0x7f0d032a
 
     invoke-virtual {p0, v0}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->getString(I)Ljava/lang/String;
 
@@ -2092,7 +2092,7 @@
 
     invoke-virtual {v6, v7, v0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v0, 0x7f0d02c7
+    const v0, 0x7f0d0327
 
     invoke-virtual {p0, v0}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->getString(I)Ljava/lang/String;
 
@@ -2133,7 +2133,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->updateSP(I)V
 
-    const v1, 0x7f0d0b4d
+    const v1, 0x7f0d0bb4
 
     invoke-virtual {p0, v1}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->getString(I)Ljava/lang/String;
 
@@ -2568,7 +2568,7 @@
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    const v3, 0x7f0d0b4a
+    const v3, 0x7f0d0bb1
 
     invoke-virtual {p0, v3}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->getText(I)Ljava/lang/CharSequence;
 
@@ -2590,7 +2590,7 @@
 
     if-nez v3, :cond_0
 
-    const v3, 0x7f0d0b4b
+    const v3, 0x7f0d0bb2
 
     invoke-virtual {p0, v3}, Lcom/android/phone/intprefix/InternationalCallPrefixPreference;->getText(I)Ljava/lang/CharSequence;
 
@@ -2658,7 +2658,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0b4f
+    const v1, 0x7f0d0bb6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2676,7 +2676,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0b4a
+    const v1, 0x7f0d0bb1
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2696,7 +2696,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0b4b
+    const v1, 0x7f0d0bb2
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -501,9 +501,9 @@
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 6
 
-    const v5, 0x7f0d049e
+    const v5, 0x7f0d04fe
 
-    const v4, 0x7f0201a1
+    const v4, 0x7f0201aa
 
     packed-switch p1, :pswitch_data_0
 
@@ -538,7 +538,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/EmergencyCallbackModeExitDialog$6;-><init>(Lcom/android/phone/EmergencyCallbackModeExitDialog;)V
 
-    const v3, 0x7f0d04a2
+    const v3, 0x7f0d0502
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -548,7 +548,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/EmergencyCallbackModeExitDialog$7;-><init>(Lcom/android/phone/EmergencyCallbackModeExitDialog;)V
 
-    const v3, 0x7f0d04a3
+    const v3, 0x7f0d0503
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -581,7 +581,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d04a0
+    const v2, 0x7f0d0500
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -591,7 +591,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/EmergencyCallbackModeExitDialog$8;-><init>(Lcom/android/phone/EmergencyCallbackModeExitDialog;)V
 
-    const v3, 0x7f0d04a4
+    const v3, 0x7f0d0504
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -620,7 +620,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EmergencyCallbackModeExitDialog;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    const v2, 0x7f0d04a1
+    const v2, 0x7f0d0501
 
     invoke-virtual {p0, v2}, Lcom/android/phone/EmergencyCallbackModeExitDialog;->getText(I)Ljava/lang/CharSequence;
 

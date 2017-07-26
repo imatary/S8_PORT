@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$-void_setMobileDataEnabledDialog_android_content_Context_context_android_preference_TwoStatePreference_dataEnableButton_LambdaImpl1;->val$dataEnableButton:Landroid/preference/TwoStatePreference;
 
-    invoke-static {v0, p1, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->-com_android_phone_mobilenetworks_MobileNetworksDialogManager_lambda$2(Landroid/preference/TwoStatePreference;Landroid/content/DialogInterface;I)V
+    invoke-static {v0, p1, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->-com_android_phone_mobilenetworks_MobileNetworksDialogManager_lambda$3(Landroid/preference/TwoStatePreference;Landroid/content/DialogInterface;I)V
 
     return-void
 .end method

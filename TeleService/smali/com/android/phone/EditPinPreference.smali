@@ -65,7 +65,7 @@
 .method protected onCreateDialogView()Landroid/view/View;
     .locals 6
 
-    const v3, 0x7f0d0210
+    const v3, 0x7f0d026e
 
     const/4 v5, 0x1
 
@@ -99,7 +99,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0229
+    const v4, 0x7f0d0287
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -171,7 +171,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0210
+    const v1, 0x7f0d026e
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -183,7 +183,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0d021d
+    const v2, 0x7f0d027b
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -208,7 +208,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0d021f
+    const v2, 0x7f0d027d
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

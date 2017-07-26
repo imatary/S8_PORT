@@ -320,7 +320,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0d01f1
+    const v3, 0x7f0d024e
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -336,7 +336,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f0d0298
+    const v4, 0x7f0d02f8
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -429,7 +429,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f0d01f1
+    const v3, 0x7f0d024e
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -445,7 +445,7 @@
 
     move-result-object v0
 
-    const v4, 0x7f0d0298
+    const v4, 0x7f0d02f8
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -521,7 +521,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f0d01f1
+    const v3, 0x7f0d024e
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -537,7 +537,7 @@
 
     move-result-object v0
 
-    const v4, 0x7f0d0298
+    const v4, 0x7f0d02f8
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -563,7 +563,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoSettingFragment;->mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f0d08b4
+    const v2, 0x7f0d0918
 
     invoke-static {v0, v2, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1398,13 +1398,13 @@
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 14
 
-    const v13, 0x7f0d0899
+    const v13, 0x7f0d08fd
 
-    const v12, 0x7f0d02ca
+    const v12, 0x7f0d032a
 
-    const v11, 0x7f0d04bc
+    const v11, 0x7f0d051c
 
-    const v10, 0x7f0d0971
+    const v10, 0x7f0d09d7
 
     const/16 v9, 0x8
 
@@ -1446,7 +1446,7 @@
 
     move-result-object v1
 
-    const v6, 0x7f1002c1
+    const v6, 0x7f1002c4
 
     invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1482,7 +1482,7 @@
 
     invoke-virtual {v3, v9}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v6, 0x7f0d08c0
+    const v6, 0x7f0d0924
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1513,7 +1513,7 @@
 
     invoke-virtual {v3, v9}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v6, 0x7f0d08bf
+    const v6, 0x7f0d0923
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1544,7 +1544,7 @@
 
     invoke-virtual {v3, v9}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v6, 0x7f0d08be
+    const v6, 0x7f0d0922
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1575,7 +1575,7 @@
 
     invoke-virtual {v3, v9}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v6, 0x7f0d08c0
+    const v6, 0x7f0d0924
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1606,7 +1606,7 @@
 
     invoke-virtual {v3, v9}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v6, 0x7f0d08c1
+    const v6, 0x7f0d0925
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1637,7 +1637,7 @@
 
     invoke-virtual {v3, v9}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v6, 0x7f0d08c2
+    const v6, 0x7f0d0926
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1676,7 +1676,7 @@
 
     if-eqz v6, :cond_6
 
-    const v6, 0x7f0d08de
+    const v6, 0x7f0d0942
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1696,7 +1696,7 @@
     return-object v6
 
     :cond_6
-    const v6, 0x7f0d08df
+    const v6, 0x7f0d0943
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1709,11 +1709,11 @@
 
     invoke-virtual {v3, v9}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v6, 0x7f0d0a27
+    const v6, 0x7f0d0a8e
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
-    const v6, 0x7f0d089a
+    const v6, 0x7f0d08fe
 
     invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1744,11 +1744,11 @@
 
     invoke-virtual {v3, v9}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v6, 0x7f0d0a28
+    const v6, 0x7f0d0a8f
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
-    const v6, 0x7f0d0898
+    const v6, 0x7f0d08fc
 
     invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1779,7 +1779,7 @@
 
     invoke-virtual {v3, v9}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v6, 0x7f0d0a29
+    const v6, 0x7f0d0a90
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -2429,7 +2429,7 @@
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
 
-    const v6, 0x7f0d04db
+    const v6, 0x7f0d053b
 
     const/4 v5, 0x1
 
@@ -2832,7 +2832,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/VideoSettingFragment;->mATTVideoCall:Landroid/preference/SwitchPreference;
 
-    const v3, 0x7f0d08b3
+    const v3, 0x7f0d0917
 
     invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -2850,7 +2850,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/VideoSettingFragment;->mATTVideoCall:Landroid/preference/SwitchPreference;
 
-    const v3, 0x7f0d08c4
+    const v3, 0x7f0d0928
 
     invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -2859,7 +2859,7 @@
     :cond_3
     iget-object v2, p0, Lcom/android/phone/callsettings/VideoSettingFragment;->mATTVideoCall:Landroid/preference/SwitchPreference;
 
-    const v3, 0x7f0d08c3
+    const v3, 0x7f0d0927
 
     invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setSummary(I)V
 

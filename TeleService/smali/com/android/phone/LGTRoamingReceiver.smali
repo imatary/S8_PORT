@@ -419,7 +419,7 @@
 
     iget-object v3, p0, Lcom/android/phone/LGTRoamingReceiver;->mcontext:Landroid/content/Context;
 
-    const v5, 0x7f0d09e8
+    const v5, 0x7f0d0a4f
 
     invoke-static {v3, v5, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -438,7 +438,7 @@
     :cond_3
     iget-object v3, p0, Lcom/android/phone/LGTRoamingReceiver;->mcontext:Landroid/content/Context;
 
-    const v5, 0x7f0d09e9
+    const v5, 0x7f0d0a50
 
     invoke-static {v3, v5, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -475,7 +475,7 @@
     if-ne v2, v3, :cond_1
 
     :cond_0
-    const v2, 0x7f0d076d
+    const v2, 0x7f0d07d1
 
     const/4 v3, 0x0
 
@@ -530,7 +530,7 @@
 
     iput-object p1, p0, Lcom/android/phone/LGTRoamingReceiver;->mcontext:Landroid/content/Context;
 
-    const-string/jumbo v1, "mobile_newtork_style_for_lgt"
+    const-string/jumbo v1, "feature_lgt"
 
     invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 

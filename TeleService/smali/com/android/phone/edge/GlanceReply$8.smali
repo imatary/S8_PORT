@@ -3,12 +3,12 @@
 .source "GlanceReply.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/edge/GlanceReply;->alertEmptyMessage(Z)Z
+    value = Lcom/android/phone/edge/GlanceReply;->afterTextChanged(Landroid/text/Editable;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,16 +34,14 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
+.method public run()V
     .locals 2
-
-    invoke-interface {p1}, Landroid/content/DialogInterface;->cancel()V
 
     iget-object v0, p0, Lcom/android/phone/edge/GlanceReply$8;->this$0:Lcom/android/phone/edge/GlanceReply;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/phone/edge/GlanceReply;->-wrap3(Lcom/android/phone/edge/GlanceReply;Z)V
+    iput-boolean v1, v0, Lcom/android/phone/edge/GlanceReply;->isToastShowing:Z
 
     return-void
 .end method

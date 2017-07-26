@@ -67,9 +67,9 @@
 
     const/4 v9, 0x0
 
-    const/4 v8, 0x0
-
     const/4 v7, 0x1
+
+    const/4 v8, 0x0
 
     const-string/jumbo v5, "addNewUnknownCall, connection is: %s"
 
@@ -153,6 +153,12 @@
     move-result v5
 
     if-eqz v5, :cond_3
+
+    const-string/jumbo v5, "addNewUnknownCall, OTASP_IN_CALL_DISABLE"
+
+    new-array v6, v8, [Ljava/lang/Object;
+
+    invoke-static {p0, v5, v6}, Lcom/android/services/telephony/Log;->i(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-void
 

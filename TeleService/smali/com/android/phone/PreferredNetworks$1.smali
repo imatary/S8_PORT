@@ -34,7 +34,7 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 7
 
-    const v6, 0x7f0d07f8
+    const v6, 0x7f0d085c
 
     const/4 v5, 0x0
 
@@ -73,7 +73,7 @@
 
     iget-object v4, p0, Lcom/android/phone/PreferredNetworks$1;->this$0:Lcom/android/phone/PreferredNetworks;
 
-    const v5, 0x7f0d07e5
+    const v5, 0x7f0d0849
 
     invoke-virtual {v4, v5}, Lcom/android/phone/PreferredNetworks;->getString(I)Ljava/lang/String;
 
@@ -85,7 +85,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/PreferredNetworks$1$1;-><init>(Lcom/android/phone/PreferredNetworks$1;)V
 
-    const v5, 0x7f0d02ca
+    const v5, 0x7f0d032a
 
     invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

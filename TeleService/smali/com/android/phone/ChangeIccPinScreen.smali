@@ -193,7 +193,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d043c
+    const v1, 0x7f0d049c
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -444,7 +444,7 @@
 
     if-eqz v1, :cond_0
 
-    const v0, 0x7f0d0446
+    const v0, 0x7f0d04a6
 
     :goto_0
     const/4 v1, 0x0
@@ -458,7 +458,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0d043b
+    const v0, 0x7f0d049b
 
     goto :goto_0
 .end method
@@ -716,7 +716,7 @@
 
     if-eqz v1, :cond_0
 
-    const v0, 0x7f0d0409
+    const v0, 0x7f0d0469
 
     :goto_0
     invoke-virtual {p0}, Lcom/android/phone/ChangeIccPinScreen;->getResources()Landroid/content/res/Resources;
@@ -736,7 +736,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0d042d
+    const v0, 0x7f0d048d
 
     goto :goto_0
 .end method

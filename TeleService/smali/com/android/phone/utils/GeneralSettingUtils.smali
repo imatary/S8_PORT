@@ -116,7 +116,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0d0a03
+    const v0, 0x7f0d0a6a
 
     invoke-virtual {p1, v0}, Landroid/preference/PreferenceScreen;->setTitle(I)V
 
@@ -127,9 +127,9 @@
 .method public static initVoLTESetting(Landroid/content/Context;Landroid/preference/ListPreference;)V
     .locals 7
 
-    const v6, 0x7f0d0890
+    const v6, 0x7f0d08f4
 
-    const v5, 0x7f0d088f
+    const v5, 0x7f0d08f3
 
     const/4 v2, 0x2
 
@@ -156,15 +156,15 @@
     if-eqz v1, :cond_2
 
     :cond_0
-    const v1, 0x7f0d08a3
+    const v1, 0x7f0d0907
 
     invoke-virtual {p1, v1}, Landroid/preference/ListPreference;->setTitle(I)V
 
-    const v1, 0x7f0d08a3
+    const v1, 0x7f0d0907
 
     invoke-virtual {p1, v1}, Landroid/preference/ListPreference;->setDialogTitle(I)V
 
-    const v1, 0x7f0d08a4
+    const v1, 0x7f0d0908
 
     invoke-virtual {p1, v1}, Landroid/preference/ListPreference;->setSummary(I)V
 
@@ -174,7 +174,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d08a5
+    const v2, 0x7f0d0909
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -186,7 +186,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d08a6
+    const v2, 0x7f0d090a
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -209,11 +209,11 @@
 
     if-eqz v1, :cond_3
 
-    const v1, 0x7f0d089b
+    const v1, 0x7f0d08ff
 
     invoke-virtual {p1, v1}, Landroid/preference/ListPreference;->setTitle(I)V
 
-    const v1, 0x7f0d089b
+    const v1, 0x7f0d08ff
 
     invoke-virtual {p1, v1}, Landroid/preference/ListPreference;->setDialogTitle(I)V
 
@@ -223,7 +223,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d089d
+    const v2, 0x7f0d0901
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -235,7 +235,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d089f
+    const v2, 0x7f0d0903
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -266,7 +266,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d08a7
+    const v2, 0x7f0d090b
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -278,7 +278,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d08a8
+    const v2, 0x7f0d090c
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -308,15 +308,15 @@
     if-eqz v1, :cond_6
 
     :cond_5
-    const v1, 0x7f0d08f3
+    const v1, 0x7f0d0959
 
     invoke-virtual {p1, v1}, Landroid/preference/ListPreference;->setTitle(I)V
 
-    const v1, 0x7f0d08f3
+    const v1, 0x7f0d0959
 
     invoke-virtual {p1, v1}, Landroid/preference/ListPreference;->setDialogTitle(I)V
 
-    const v1, 0x7f0d08f4
+    const v1, 0x7f0d095a
 
     invoke-virtual {p1, v1}, Landroid/preference/ListPreference;->setSummary(I)V
 
@@ -340,11 +340,11 @@
     if-eqz v1, :cond_8
 
     :cond_7
-    const v1, 0x7f0d0891
+    const v1, 0x7f0d08f5
 
     invoke-virtual {p1, v1}, Landroid/preference/ListPreference;->setTitle(I)V
 
-    const v1, 0x7f0d0891
+    const v1, 0x7f0d08f5
 
     invoke-virtual {p1, v1}, Landroid/preference/ListPreference;->setDialogTitle(I)V
 
@@ -354,7 +354,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0893
+    const v2, 0x7f0d08f7
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -366,7 +366,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0895
+    const v2, 0x7f0d08f9
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -40,19 +40,13 @@
 
     invoke-super {p0, p1, p2}, Landroid/telephony/PhoneStateListener;->onCallStateChanged(ILjava/lang/String;)V
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_1
 
     const-string/jumbo v0, "AnsweringMemoList"
 
     const-string/jumbo v1, "device in call"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList$TeleListener;->this$0:Lcom/android/phone/answeringmemo/AnsweringMemoList;
-
-    const/4 v1, 0x1
-
-    invoke-static {v0, v1}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->-set0(Lcom/android/phone/answeringmemo/AnsweringMemoList;Z)Z
 
     iget-object v0, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList$TeleListener;->this$0:Lcom/android/phone/answeringmemo/AnsweringMemoList;
 
@@ -70,7 +64,7 @@
 
     iput-object v3, v0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->mp:Landroid/media/MediaPlayer;
 
-    invoke-static {v2}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->-set1(I)I
+    invoke-static {v2}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->-set0(I)I
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList$TeleListener;->this$0:Lcom/android/phone/answeringmemo/AnsweringMemoList;
@@ -86,13 +80,5 @@
     invoke-static {v0}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->-wrap1(Lcom/android/phone/answeringmemo/AnsweringMemoList;)V
 
     :cond_1
-    :goto_0
     return-void
-
-    :cond_2
-    iget-object v0, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList$TeleListener;->this$0:Lcom/android/phone/answeringmemo/AnsweringMemoList;
-
-    invoke-static {v0, v2}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->-set0(Lcom/android/phone/answeringmemo/AnsweringMemoList;Z)Z
-
-    goto :goto_0
 .end method

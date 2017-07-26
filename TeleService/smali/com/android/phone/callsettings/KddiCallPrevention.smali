@@ -1540,7 +1540,7 @@
 
     if-eqz v5, :cond_1
 
-    const v5, 0x7f0d0bc7
+    const v5, 0x7f0d0c32
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/KddiCallPrevention;->getString(I)Ljava/lang/String;
 
@@ -2042,7 +2042,7 @@
 .method private updateTitleBar()V
     .locals 3
 
-    const v2, 0x7f0d0bb6
+    const v2, 0x7f0d0c1d
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/KddiCallPrevention;->getString(I)Ljava/lang/String;
 
@@ -2064,7 +2064,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f0d072d
+    const v1, 0x7f0d0791
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/KddiCallPrevention;->getString(I)Ljava/lang/String;
 
@@ -2088,7 +2088,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f0d072c
+    const v1, 0x7f0d0790
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/KddiCallPrevention;->getString(I)Ljava/lang/String;
 
@@ -2165,7 +2165,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d05da
+    const v2, 0x7f0d063e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2201,7 +2201,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d05db
+    const v2, 0x7f0d063f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2652,7 +2652,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0500
+    const v4, 0x7f0d0560
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

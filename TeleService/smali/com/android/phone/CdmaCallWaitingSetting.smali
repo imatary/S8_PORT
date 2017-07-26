@@ -734,7 +734,7 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
 
-    const v7, 0x7f0d030c
+    const v7, 0x7f0d036c
 
     const/4 v6, 0x5
 
@@ -808,7 +808,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v3, 0x7f0d06b7
+    const v3, 0x7f0d071b
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
@@ -835,7 +835,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v3, 0x7f0d06b7
+    const v3, 0x7f0d071b
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
@@ -955,7 +955,7 @@
 
     const/4 v8, 0x0
 
-    const v7, 0x7f0d0334
+    const v7, 0x7f0d0394
 
     const/4 v6, 0x1
 
@@ -976,7 +976,7 @@
 
     invoke-direct {v2, v5}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f0d032c
+    const v5, 0x7f0d038c
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaCallWaitingSetting;->getText(I)Ljava/lang/CharSequence;
 
@@ -1004,7 +1004,7 @@
 
     invoke-virtual {v2, v8}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v5, 0x7f0d032f
+    const v5, 0x7f0d038f
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaCallWaitingSetting;->getText(I)Ljava/lang/CharSequence;
 
@@ -1027,7 +1027,7 @@
 
     invoke-virtual {v2, v5}, Landroid/app/ProgressDialog;->setCancelMessage(Landroid/os/Message;)V
 
-    const v5, 0x7f0d032e
+    const v5, 0x7f0d038e
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaCallWaitingSetting;->getText(I)Ljava/lang/CharSequence;
 
@@ -1055,11 +1055,11 @@
 
     invoke-direct {v0, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d032d
+    const v4, 0x7f0d038d
 
     sparse-switch p1, :sswitch_data_1
 
-    const v3, 0x7f0d0332
+    const v3, 0x7f0d0392
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1096,14 +1096,14 @@
     return-object v5
 
     :sswitch_2
-    const v3, 0x7f0d0331
+    const v3, 0x7f0d0391
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     goto :goto_1
 
     :sswitch_3
-    const v3, 0x7f0d0333
+    const v3, 0x7f0d0393
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

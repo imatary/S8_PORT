@@ -117,7 +117,7 @@
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 12
 
-    const v11, 0x7f0d05dc
+    const v11, 0x7f0d0640
 
     const/16 v10, 0xa0
 
@@ -151,7 +151,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v5, 0x7f0d0762
+    const v5, 0x7f0d07c6
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getString(I)Ljava/lang/String;
 
@@ -237,7 +237,7 @@
 
     if-ge v7, v4, :cond_1
 
-    const v4, 0x7f0d0553
+    const v4, 0x7f0d05b7
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getString(I)Ljava/lang/String;
 
@@ -391,7 +391,7 @@
 
     aput-object v5, v4, v8
 
-    const v5, 0x7f0d0554
+    const v5, 0x7f0d05b8
 
     invoke-virtual {p0, v5, v4}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -497,7 +497,7 @@
 
     aput-object v5, v4, v8
 
-    const v5, 0x7f0d0554
+    const v5, 0x7f0d05b8
 
     invoke-virtual {p0, v5, v4}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -756,9 +756,9 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 8
 
-    const v7, 0x7f0d0511
+    const v7, 0x7f0d0571
 
-    const v6, 0x7f0d050d
+    const v6, 0x7f0d056d
 
     const/4 v5, 0x6
 
@@ -862,7 +862,7 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 12
 
-    const v11, 0x7f0d0762
+    const v11, 0x7f0d07c6
 
     const/16 v10, 0x46
 
@@ -1519,7 +1519,7 @@
 
     invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onResume()V
 
-    const v1, 0x7f0d01f4
+    const v1, 0x7f0d0251
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getString(I)Ljava/lang/String;
 
@@ -1808,7 +1808,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020165
+    const v3, 0x7f020169
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1826,7 +1826,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020166
+    const v3, 0x7f02016a
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1929,13 +1929,13 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    const v2, 0x7f0d01f4
+    const v2, 0x7f0d0251
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f0d021e
+    const v3, 0x7f0d027c
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getString(I)Ljava/lang/String;
 
@@ -1990,7 +1990,7 @@
     if-eqz v2, :cond_1
 
     :cond_0
-    const v2, 0x7f0d05c8
+    const v2, 0x7f0d062c
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getString(I)Ljava/lang/String;
 
@@ -2020,13 +2020,13 @@
 .method public softkeyRightRun(Landroid/view/View;)V
     .locals 3
 
-    const v1, 0x7f0d01f4
+    const v1, 0x7f0d0251
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f0d021f
+    const v2, 0x7f0d027d
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getString(I)Ljava/lang/String;
 

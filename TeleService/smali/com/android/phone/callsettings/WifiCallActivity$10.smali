@@ -3,7 +3,7 @@
 .source "WifiCallActivity.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnKeyListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
@@ -34,29 +34,24 @@
 
 
 # virtual methods
-.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
-    .locals 2
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 3
 
-    const/4 v1, 0x0
+    const/4 v2, 0x1
 
-    const/4 v0, 0x4
+    const-string/jumbo v0, "wfc_do_not_show_again_opl_dialog"
 
-    if-ne p2, v0, :cond_0
+    invoke-static {v0, v2}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/WifiCallActivity$10;->this$0:Lcom/android/phone/callsettings/WifiCallActivity;
 
-    invoke-static {v0}, Lcom/android/phone/callsettings/WifiCallActivity;->-get1(Lcom/android/phone/callsettings/WifiCallActivity;)Landroid/widget/Switch;
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/WifiCallActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Landroid/widget/Switch;->setChecked(Z)V
+    const-string/jumbo v1, "wifi_call_enable"
 
-    invoke-interface {p1}, Landroid/content/DialogInterface;->cancel()V
+    invoke-static {v0, v1, v2}, Lcom/android/phone/VoWifiSettingsDataBaseManager;->setInt(Landroid/content/Context;Ljava/lang/String;I)V
 
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    return v1
+    return-void
 .end method

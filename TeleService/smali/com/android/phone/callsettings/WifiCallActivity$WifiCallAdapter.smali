@@ -208,7 +208,7 @@
 
     invoke-static {v4, v5, v7}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    const v4, 0x7f1002c8
+    const v4, 0x7f1002cb
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -218,7 +218,7 @@
 
     iput-object v4, p0, Lcom/android/phone/callsettings/WifiCallActivity$WifiCallAdapter;->mTextView:Landroid/widget/TextView;
 
-    const v4, 0x7f1002c9
+    const v4, 0x7f1002cc
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -228,7 +228,7 @@
 
     iput-object v4, p0, Lcom/android/phone/callsettings/WifiCallActivity$WifiCallAdapter;->mTextViewSummary:Landroid/widget/TextView;
 
-    const v4, 0x7f1002c4
+    const v4, 0x7f1002c7
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -238,7 +238,7 @@
 
     iput-object v4, p0, Lcom/android/phone/callsettings/WifiCallActivity$WifiCallAdapter;->mRootLayout:Landroid/widget/RelativeLayout;
 
-    const v4, 0x7f1002c6
+    const v4, 0x7f1002c9
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -284,7 +284,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/WifiCallActivity$WifiCallAdapter;->mTextViewSummary:Landroid/widget/TextView;
 
-    const v5, 0x7f0d0c9e
+    const v5, 0x7f0d0d0f
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -349,7 +349,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/WifiCallActivity$WifiCallAdapter;->mTextViewSummary:Landroid/widget/TextView;
 
-    const v5, 0x7f0d0c9f
+    const v5, 0x7f0d0d10
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 

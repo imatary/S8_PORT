@@ -239,7 +239,7 @@
 
     if-ne v1, v8, :cond_4
 
-    const v8, 0x7f0d0433
+    const v8, 0x7f0d0493
 
     invoke-virtual {v6, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -257,7 +257,7 @@
     goto/16 :goto_0
 
     :cond_4
-    const v8, 0x7f0d0434
+    const v8, 0x7f0d0494
 
     invoke-virtual {v6, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

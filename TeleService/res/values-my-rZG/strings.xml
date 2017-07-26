@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dh %2$dm</string>
-    <string name="battery_history_minutes_no_seconds">%dm</string>
+    <string name="battery_history_hours_no_seconds">%1$d နာရီ %2$d မိနစ္</string>
+    <string name="battery_history_minutes_no_seconds">%d မိနစ္</string>
     <string name="wifi_failed_to_obtain_IP">IP လိပ္စာ ရယူရန္ မေအာင္ျမင္ပါ။</string>
     <string name="wifi_unknown_security_type">အမည္မသိ လံုျခံဳမႈ အမ်ိဳးအား</string>
     <string name="wifi_disabled_no_internet">အင္တာနက္ မရရွိႏိုင္ပါ</string>
@@ -44,6 +44,8 @@
     <string name="bluetooth_pairing_device_down_error_message">%s သုိ႔ခ်ိတ္ဆက္၍ မရပါ။</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">%1$s ႏွင့္ ခ်ိတ္ဆက္၍ မရပါ။ %2$s ထဲရွိ သင့္ သတ္မွတ္ခ်က္မ်ားကုိ စစ္ေဆးၿပီး ထပ္ႀကိဳးစားပါ။</string>
     <string name="bluetooth_pairing_rejected_error_message">ယွဥ္တြဲသုံးစြဲျခင္းကုိ %sမွ ပယ္ခ်ထားပါသည္။</string>
+    <string name="bluetooth_getting_remote_device_name">ကိရိယာအမည္ကုိ ရယူေနသည္…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">ဤကိရိယာကုိ ခ်ိတ္ဆက္သည့္အခါ ကိရိယာအမည္ ေပၚလာပါမည္။</string>
     <string name="tether_settings_title_all">မိုဘိုင္း ေဟာ့စေပါ့ႏွင့္ မွ်ေဝအသံုးျပဳျခင္း</string>
     <string name="unknown">မသိေသာ</string>
     <string name="tts_settings_title">စာသား-မွ-စကား</string>
@@ -538,7 +540,7 @@
     <string name="importingSimContacts">SIM အဆက္အသြယ္မ်ား သြင္းယူေနပါသည္</string>
     <string name="importToFDNfromContacts">အဆက္အသြယ္မ်ားမွ သြင္းယူပါ</string>
     <string name="hac_mode_title">အၾကားအာရံု အကူကိရိယာမ်ား</string>
-    <string name="hac_mode_summary">အၾကား အေထာက္အကူျပဳမ်ားျဖင့္ သံုးရန္ သင့္ကိရိယာ အသံ အရည္အေသြး ျမွင့္တင္ပါ။</string>
+    <string name="hac_mode_summary">အၾကားအာရံု ေထာက္ကူပစၥည္းမ်ားအတြက္ သင့္ဖုန္း၏ အသံအရည္အေသြးကို ပိုမိုေကာင္းမြန္ေအာင္ျပဳလုပ္ပါ။</string>
     <string name="dtmf_tones_title">DTMF အသံမ်ား</string>
     <string name="dtmf_tones_summary">DTMF အသံရွည္ သတ္မွတ္ပါ။</string>
     <string name="network_info_message">ကြန္ယက္ မက္ေဆ့ခ်္</string>
@@ -717,6 +719,10 @@
     <string name="add_call_block_number_toast">ဤနံပါတ္မွ ေခၚဆိုမႈမ်ားကို လက္ခံရရွိမည္မဟုတ္ပါ။</string>
     <string name="delete_call_block_number_toast">ဤနံပါတ္မွ ေခၚဆိုမႈမ်ားကို ယခုလက္ခံႏိုင္ပါၿပီ။</string>
     <string name="emergency_call_block_number_toast">အေရးေပၚ နံပါတ္မ်ားကုိ ပိတ္ဆုိ႔၍ မရပါ။</string>
+    <string name="call_block_dialog_title">ပိတ္ဆုိ႔ နံပါတ္မ်ားကုိ တည္းျဖတ္ပါ</string>
+    <string name="call_block_dialog_contents">Android Nougat ေနာက္ပုိင္းမွစ၍ ဖုန္းေခၚဆုိ ပိတ္ဆုိ႔ အေနအထားကုိ နံပါတ္မ်ားကုိ ပိတ္ဆုိ႔ပါျဖင့္ အစားထုိးပါမည္။ ဖုန္းေခၚဆုိမႈမ်ားကုိ ပိတ္ဆို႔႐ဆုိ႔ျခင္းအစား နံပါတ္မ်ားကုိ ပိတ္ဆုိ႔ပါသည္ ေခၚဖုန္းႏွင့္ မက္ေဆ့ခ်္ ႏွစ္ခုစလံုးကုိ ပိတ္ဆုိ႔ပါမည္။</string>
+    <string name="call_block_dialog_settings">နံပါတ္မ်ားကုိ ပိတ္ဆုိ႔ပါကုိ တည္းျဖတ္ရန္ “သတ္မွတ္ခ်က္မ်ား” ကုိ ႏွိပ္ပါ။</string>
+    <string name="call_block_dialog_button">သတ္မွတ္ခ်က္မ်ား</string>
     <string name="no_block_number_description">သင္ထည့္လိုက္ေသာ နံပါတ္မ်ားသည္ ဤေနရာတြင္ ေပၚပါမည္။</string>
     <string name="no_messages_description">သင္ထည့္လိုက္ေသာ မက္ေဆ့ခ်္မ်ားသည္ ဤေနရာတြင္ ေပၚပါမည္။</string>
     <string name="callsettings_vipmode_blacklist_title">နာမည္ပ်က္စာရင္း</string>
@@ -766,7 +772,7 @@
     <string name="callsettings_answering_volume_key_title">ဖုန္းေျဖရန္ အသံက်ယ္ခလုတ္ကုိ ႏွိပ္ပါ</string>
     <string name="callsettings_answering_key_summary">အဝင္ေခၚဆိုမႈမ်ား လက္ခံရန္ မူလ ကီးကို ႏွိပ္ပါ။</string>
     <string name="callsettings_PowerkeyEndsCalls_title">ေခၚဆိုမႈမ်ား အဆံုးသတ္ရန္ ပါဝါကီး ႏွိပ္ပါ</string>
-    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">ေခၚဆိုမႈမ်ား အဆံုးသတ္ရန္ ပါဝါကီး ႏွိပ္ပါ</string>
+    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">ဖုန္းခ်ရန္ ပါဝါကီး ႏွိပ္ပါ</string>
     <string name="callsettings_PowerkeyEndsCalls_summary">မ်က္ႏွာျပင္ ဖြင့္ေနစဥ္ ဖုန္းေျပာဆုိမႈ အဆံုးသတ္ရန္ ပါဝါခလုတ္ကို ႏွိပ္ပါ။ ယင္းမွာ မ်က္ႏွာျပင္ကို မပိတ္ေစႏုိင္။</string>
     <string name="Dialog_PowerkeyEndsCalls">အနီးအပါး အာရံုခံ ပိတ္ထားစဥ္ ေခၚဆိုမႈမ်ား ရပ္ရန္ ပါဝါကီးကို စီစဥ္၍ မရႏိုင္ပါ။ အနီးအပါး အာရံုခံ ဖြင့္လိမ့္မည္။ ေခၚဆိုမႈမ်ားအတြင္း သင့္ကိရိယာကို သင့္နားဆီ ယူလာသည့္အခါ ဖန္သားျပင္ ပိတ္လိမ့္မည္။</string>
     <string name="Dialog_PowerkeyEndsCalls_title">အနီးကပ္ အာရံုခံ ဖြင့္ထားပါ</string>
@@ -1038,7 +1044,7 @@
     <string name="roaming_alerts_sbody">ႏိုင္ငံတကာ ကြန္ယက္သံုးျခင္းအပါအဝင္ အသံ၊ စာသားႏွင့္ ေဒတာ အျခားေဒသကြန္ယက္သံုး ဆက္တင္မ်ားကို ေျပာင္းပါ။</string>
     <string name="roaming_alerts_voice_body">အသံ အျခားကြန္ယက္သံုးျခင္း</string>
     <string name="roaming_alerts_data_body">ေဒတာ အျခားေဒသကြန္ယက္သံုးျခင္း</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">အထြက္ စာသား အျခားကြန္ရက္သံုးျခင္း</string>
     <string name="roaming_domestic_category">ျပည္တြင္း အျခားကြန္ယက္သံုးျခင္း</string>
     <string name="roaming_international_category">ႏုိင္ငံတကာ အျခားေဒသကြန္ယက္သံုးျခင္း</string>
     <string name="roaming_voice_body">အသံႏွင့္ စာ အျခားကြန္ယက္သံုးျခင္း</string>
@@ -1208,9 +1214,7 @@ Please note that the features above require a network connection."</string>
     <string name="data_usage_disable_mobile_vzw_chn">"WLAN မသံုးပါက ေဒတာ ခ်ိတ္ဆက္မႈတစ္ခု လိုသည့္ အင္တာနက္၊ အီးေမးလ္ (သို႔) အျခား အက္ပ္မ်ား သံုးႏိုင္ေတာ့မည္မဟုတ္ပါ။
 
 မိုဘိုင္းေဒတာ ပိတ္ထားလိမ့္မည္္။"</string>
-    <string name="mobile_data_off_dialog_text_common">"Wi-Fi မသုံးပါက ေဒတာ ခ်ိတ္ဆက္မႈ လိုအပ္သည့္ အင္တာနက္၊ အီးေမးလ္ (သို႔) အျခား အက္ပ္မ်ား သုံးႏိုင္ေတာ့မည္ မဟုတ္ပါ။
-
-မိုဘိုင္း ေဒတာကို ပိတ္မည္။"</string>
+    <string name="mobile_data_off_dialog_text_common">Wi-Fi ကြန္ရက္ႏွင့္ မခ်ိတ္ဆက္ပါက ကြန္ရက္ ခ်ိတ္ဆက္မႈ လိုအပ္သည့္ အင္တာနက္၊ အီးေမးလ္ (သုိ႔) အျခား အက္ပ္မ်ား သင္ သံုးမရႏိုင္ပါ။</string>
     <string name="mobile_data_off_dialog_button_turn_off">ပိတ္ပါ</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"Wi-Fi မသံုးပါက အင္တာနက္၊ အီးေမးလ္ (သို႔) ေဒတာ ခ်ိတ္ဆက္မႈ လိုအပ္သည့္ အျခား အက္ပ္မ်ား သံုးရေတာ့မည္ မဟုတ္ပါ။
 
@@ -1289,8 +1293,9 @@ LTE ကြန္ယက္ အေနအထား ရထားမွသာ ေဒ�
     <string name="data_3gwarning_msg">မိုဘိုင္း ကြန္ယက္မ်ားသို႔ ခ်ိတ္ဆက္ေနသည္… ညီညာေသာႏႈန္း ေဒတာ အစီအစဥ္ တစ္ခုကို မသံုးပါက အပိုေငြေပးေဆာင္ရမႈမ်ား က်ခံရႏိုင္သည္။</string>
     <string name="data_3gwarning_popup_title">မိုဘိုင္း ေဒတာ</string>
     <string name="roaming_data_off_msg">အျခားကြန္ရက္ေဒတာကို သုံးရန္၊ သတ္မွတ္ခ်က္မ်ား > ခ်ိတ္ဆက္မႈမ်ား > ဂလိုဘယ္အႏွံ႔ အျခားကြန္ရက္သုံးျခင္းသို႔ သြားပါ၊ ၿပီးလွ်င္ အျခားကြန္ရက္ေဒတာသုံးျခင္းကို ဖြင့္ပါ။</string>
-    <string name="data_3gwarning_popup_noti">ညီညာေသာ ႏႈန္းထား အစီအစဥ္ တစ္ခု သံုးမထားပါက မိုဘိုင္း ကြန္ယက္မ်ားသို႔ ခ်ိတ္ဆက္ျခင္းမွာ ေငြအပိုေပးေဆာင္ရႏိုင္သည္။</string>
-    <string name="lgt_4gwarning_popup_mobiledata">မိုဘုိင္းေဒတာကို ဖြင့္မည္။ ဤအရာသည္ သင့္ေငြေပးေခ်မႈ အစီအစဥ္ေပၚ မူတည္၍ သင့္ ဝန္ေဆာင္မႈ ေပးသူထံမွ အပိုေငြမ်ား က်သင့္ႏိုင္သည္။</string>
+    <string name="data_3gwarning_popup_noti">မိုဘိုင္း ေဒတာကို ဖြင့္မည္။ မိုဘိုင္း ကြန္ယက္မ်ားသို႔ ခ်ိတ္ဆက္ျခင္းသည္ သင္၏ ေငြေပးေခ်မႈ အစီအစဥ္ေပၚ မူတည္၍ ေနာက္ထပ္ အဖိုးအခမ်ား က်သင့္ႏိုင္ပါသည္။</string>
+    <string name="data_3gwarning_popup_noti_ktt">GiGA LTE အသုံးျပဳရန္ မိုဘိုင္းေဒတာကို ဖြင့္သြားမည္။ ဤအရာသည္ သင့္ေငြေပးေခ်မႈ အစီအစဥ္ေပၚတြင္ မူတည္၍ အဖိုးအခမ်ား ကုန္က်ႏိုင္သည္။</string>
+    <string name="lgt_4gwarning_popup_mobiledata">မိုဘိုင္း ေဒတာကို ဖြင့္မည္။ မိုဘိုင္း ကြန္ယက္မ်ားသို႔ ခ်ိတ္ဆက္ျခင္းသည္ သင္၏ ေငြေပးေခ်မႈ အစီအစဥ္ေပၚ မူတည္၍ ေနာက္ထပ္ အဖိုးအခမ်ား က်သင့္ႏိုင္ပါသည္။</string>
     <string name="lgt_lte_data_roaming_warningmsg">"ေဒတာလွည့္လည္ျခင္း ရထားလွ်င္ ျပည္တြင္း ေဒတာအစား &lt;u>&lt;font color=\"%1$s\">ႏိုင္ငံတကာ ေဒတာလွည့္ျခင္း က်သင့္ေငြမ်ား သက္ေရာက္ေစမည္။ &lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">မွ ေဒတာလွည့္လည္ျခင္း &lt;/font>&lt;/u> နည္းေစရန္ IM အသိေပးျခင္းႏွင့္ အလိုလိုအပ္ဒိတ္မ်ား ကဲ့သို႔ေသာအား ပိတ္ထားျခင္းျဖင့္ ေနာက္ခံေဒတာကို ကန္႔သတ္ေပးမည္"</string>
@@ -1661,6 +1666,8 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
     <string name="volte_call_summary_ops">4G ကြန္ယက္တြင္ HD အသံ ေခၚဆိုမႈမ်ား ျပဳလုပ္ပါ။</string>
     <string name="voice_over_lte_title_cct">Volte ေခၚဆုိျခင္း</string>
     <string name="volte_call_summary_cct">ရႏုိင္ပါက 4G LTE ဆယ္ကူလာကြန္ရက္မွတဆင့္ အဆင့္ျမင့္ ဖုန္းေခၚ အဂၤါရပ္မ်ားကုိ ဖြင့္ပါ။</string>
+    <string name="voice_over_lte_title_o2">4G ျဖင့္ေခၚဆုိမႈ</string>
+    <string name="volte_call_summary_o2">4G ေဒတာကို အသုံးျပဳ၍ ပုိမုိေကာင္းမြန္ေသာ ဆက္သြယ္ေရးကုိ ရရွိ အသံုးျပဳလုိက္ပါ။</string>
     <string name="volte_tty_description_on">While TTY is on, you will not be able to make and receive video calls or have conference calls.</string>
     <string name="volte_prepaid_tty_description_on">TTY mode will be enabled. You will not be able to make or receive conference calls.</string>
     <string name="volte_tty_description_off">While TTY is off, you will not be able to make and receive TTY calls.</string>
@@ -1850,9 +1857,13 @@ Photoring မွ တဆင့္ အေၾကာင္းအရာမ်ား�
     <string name="group_voice_call_disable_on_3G">အုပ္စုလိုက္ ေခၚဆိုမႈမ်ားကို LTE ကြန္ရက္မွ တဆင့္ သာလွ်င္ သံုးႏိုင္ပါသည္</string>
     <string name="group_voice_call_outgoing_voice_call">အထြက္ အသံေခၚဆိုမႈ</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"Wi-Fi မသုံးပါက ေဒတာ ခ်ိတ္ဆက္မႈ လိုအပ္သည့္ အင္တာနက္၊ အီးေမးလ္ (သို႔) အျခား အက္ပ္မ်ား သုံးႏိုင္ေတာ့မည္ မဟုတ္ပါ။
+
+မိုဘိုင္း ေဒတာကို ပိတ္မည္။"</string>
     <string name="data_usage_disable_mobile_warning">"Wi-Fi မသံုးပါက အင္တာနက္၊ အီးေမးလ္ (သို႔) ေဒတာ ခ်ိတ္ဆက္မႈ လိုအပ္သည့္ အျခား အက္ပ္မ်ား သံုးရေတာ့မည္ မဟုတ္ပါ။
 
 မိုဘိုင္း ေဒတာကို ပိတ္ထားမည္။"</string>
+    <string name="data_usage_enable_mobile_warning_skt">မိုဘိုင္း ေဒတာကို ဖြင့္မည္။ မိုဘိုင္း ကြန္ယက္မ်ားသို႔ ခ်ိတ္ဆက္ျခင္းသည္ သင္၏ ေငြေပးေခ်မႈ အစီအစဥ္ေပၚ မူတည္၍ ေနာက္ထပ္ အဖိုးအခမ်ား က်သင့္ႏိုင္ပါသည္။</string>
     <string name="data_usage_enable_mobile_warning">ဆက္လက္လုပ္ေဆာင္လုိပါသလား?</string>
     <string name="insert_sim_card">SIM ကဒ္ကို ထည့္ပါ</string>
     <string name="insert_sim_card_message">ကြန္ယက္ ၀န္ေဆာင္မႈမ်ားကုိ ၀င္ေရာက္ရရန္ SIM ကဒ္ကုိ ထည့္ပါ။</string>
@@ -1886,6 +1897,7 @@ Photoring မွ တဆင့္ အေၾကာင္းအရာမ်ား�
     <string name="turning_off_answer_memo">အလိုအေလ်ာက္ ေျဖၾကားျခင္းႏွင့္ ေျဖၾကားျခင္း မက္ေဆ့ခ်္ ႏွစ္ခုလံုးကို ရေအာင္မလုပ္ႏိုင္ပါ။ ေျဖၾကားျခင္း မက္ေဆ့ခ်္ ပိတ္ထားလိမ့္မည္။</string>
     <string name="disconnect_network_message">ေဒတာ ဝန္ေဆာင္မႈ ကြန္ယက္ ေျပာင္းလဲျခင္းမွာ လက္ရိွသံုးေနေသာ အင္တာနက္ကို ျဖတ္ေတာက္လိမ့္မည္။ ေဒတာ ဝန္ေဆာင္မႈ ကြန္ယက္ ေျပာင္းလဲမလား?</string>
     <string name="disconnect_network_title">လက္ရွိ ကြန္ယက္ အဆက္ျဖတ္ပါ</string>
+    <string name="disable2g_warning_message">ဤသတ္မွတ္ခ်က္က 2G ဝန္ေဆာင္မႈကုိ ပိတ္ေပးသည္။ 2G ဝန္ေဆာင္မႈကုိ ပိတ္ထားလွ်င္ အက္ပ္အခ်ိဳ႕ႏွင့္ လုပ္ေဆာင္ခ်က္အခ်ိဳ႕သည္ LTE (သုိ႔) 3G မရႏုိင္သည့္ ေနရာမ်ားတြင္ အလုပ္လုပ္မည္ မဟုတ္ပါ။</string>
     <string name="data_roaming_restrict_title">ေဒတာအျခားကြန္ယက္ ပိတ္ထားသည္</string>
     <string name="data_roaming_restrict_body">ေဒတာ အျခားကြန္ယက္ဖြင့္ရန္ “ဤေနရာ” ကိုႏွိပ္ပါ။</string>
     <string name="data_network_mode">ေဒတာကြန္ယက္ အေနအထား</string>
@@ -2086,6 +2098,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">ဤနံပါတ္ကို ဖ်က္ပစ္မလား?</string>
     <string name="change_guide_language_kddi">လမ္းၫႊန္ ဘာသာစကား ေျပာင္းပါ</string>
     <string name="apply_option_service_kddi">%s ဝန္ေဆာင္မႈ ေ႐ြးစရာမ်ား သို႔သြားပါ</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">ေဖာက္သည္အတြက္ ပံ့ပုိးေပးမႈ</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">ဂ်ပန္ဘာသာစကား လမ္းၫႊန္ခ်က္ (%d)</string>
     <string name="English_guidance_kddi">အဂၤလိပ္ဘာသာ လမ္းၫႊန္ခ်က္ (%d)</string>
     <string name="voicecall_kddi">အသံေမးလ္</string>
@@ -2140,11 +2156,13 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
     <string name="spam_call_mute_first_ring_summary">Mute the first ring of calls from unsaved numbers.</string>
     <string name="spam_call_auto_reject_title">ေခၚဆိုမႈမ်ား အလိုအေလ်ာက္ ပယ္ခ်ျခင္း</string>
     <string name="smart_call_title">ဖုန္းေခၚသူ ID ႏွင့္ စပန္းကို ကာကြယ္ျခင္း</string>
-    <string name="smart_call_title_usa">ေၾကာ္ျငာနံပါတ္မ်ားကို သတ္မွတ္ေဖာ္ထုတ္ပါ</string>
     <string name="smart_call_title_for_notice">ဖုန္းေခၚသူ ID ႏွင့္ စပမ္း ကာကြယ္ေရး</string>
-    <string name="smart_call_description">ဖုန္းမွတ္တမ္းႏွင့္ မက္ေဆ့ခ္်မ်ားရွိ ေခၚဆိုမႈဖန္သားျပင္တြင္ သိမ္းဆည္းမထားသည့္ ေခၚဆိုသူမ်ားႏွင့္ ေပးပို႔သူမ်ား၏မက္ေဆ့ခ္်မ်ားကို သတ္မွတ္စစ္ေဆးပါ။</string>
-    <string name="smart_call_usa_description">ေခၚဆိုမႈဖန္သားျပင္ေပၚႏွင့္ ဖုန္းမွတ္တမ္းထဲတြင္ ေၾကာ္ျငာေခၚဆိုမႈမ်ား၏ အခ်က္အလက္ကိုျပပါ။</string>
+    <string name="smart_call_description">"စပန္းႏွင့္ စပန္းဖုန္းေခၚသူမ်ားကို ေ႐ြးထုတ္ေဖာ္ျပရန္ Smart Call ကို သုံးပါ။
+
+ဤဝန္ေဆာင္မႈတြင္ သင့္အဆက္အသြယ္မ်ား၌ ရွိမေနေသာ ဖုန္းေခၚသူမ်ားႏွင့္ မက္ေဆ့ခ်္ပို႔သူမ်ား၏ အမည္မ်ားႏွင့္ ပ႐ိုဖိုင္ပုံမ်ားကို ျပသသည္။"</string>
     <string name="smart_call_description_roaming">ဤဝန္ေဆာင္မႈသည္ အျခားႏိုင္ငံမ်ားတြင္ မရရွိႏိုင္ပါ။</string>
+    <string name="smart_call_noti_description_1">စပန္းဖုန္းေခၚသူမ်ားမွ သင့္ကိုယ္သင္ အခမဲ့ကာကြယ္ရန္ ဒီမွာ ႏွိပ္ပါ။</string>
+    <string name="smart_call_noti_description_2">စပန္းႏွင့္ စပန္းဖုန္းေခၚသူမ်ားကို ေ႐ြးထုတ္ေဖာ္ျပရန္ ဒီမွာ ႏွိပ္ပါ။</string>
     <string name="smart_call_share_name_number_title">အမည္ႏွင့္ နံပါတ္မၽွေဝပါ</string>
     <string name="smart_call_share_name_number_summary">ဆာဗာျဖင့္ သင့္အမည္ႏွင့္ နံပါတ္ကိုမွတ္ပုံတင္ပါ၊ သို႔မွသာ လက္ခံမည့္သူမ်ားသည္ ၎တို႔ထံသို႔ သင္ေခၚဆိုသည့္အခါ/မက္ေဆ့ခ္်ေပးပို႔သည့္အခါ သင္၏နံပါတ္မပါရွိေသာ္လည္း ျမင္ေတြ႕ႏိုင္သည္။</string>
     <string name="smart_call_legal_info_category">တရားဝင္ သတင္းအခ်က္အလက္</string>
@@ -2161,12 +2179,16 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
 သင္သည္ အေပၚရွိအရာကို သေဘာတူၿပီး ဤအခ်ိန္တြင္ %s အဂၤါရပ္ကို ဖြင့္ခ်င္သည္ကို အခ်က္ျပရန္ ေအာက္ပါ သင့္ေလ်ာ္ေသာ ခလုတ္ကို ေက်းဇူးျပဳ၍ ႏွိပ္ပါ။"</string>
     <string name="smart_call_privacy_notice_donotshow">သိမ္းဆည္းမထားသည့္ နံပါတ္မ်ား လုပ္ေဆာင္မႈ အသိေပးခ်က္သတ္မွတ္ေဖာ္ထုတ္မႈကို ထပ္မံမျပသပါႏွင့္</string>
     <string name="smart_call_privacy_notice_dream">အဝင္ေခၚဆိုမႈ သို႔မဟုတ္ အထြက္ေခၚဆိုမႈမ်ား လုပ္ေဆာင္ေနစဥ္ သင့္မိုဘိုင္းလ္ ကိရိယာသည္ သင့္မိုဘိုင္းလ္ကြန္ရက္သို႔ ခ်ိတ္ဆက္ထားေသာအခါမွသာ ဤဝန္ေဆာင္မႈအား ရရွိနိုင္ေသာ္လည္း၊ ႐ုန္းမင္း လုပ္ေဆာင္ေနစဥ္တြင္မႈ ရရွိနိုင္ရန္ ကန႔္သတ္ထားပါမည္။ မိုဘိုင္းလ္ကြန္ရက္မ်ား အသုံးျပဳမႈႏွင့္ပတ္သတ္၍ သင့္ကြန္ရက္ ပံ့ပိုးသူႏွင့္ သင္၏ ေဒတာအသုံးျပဳမႈေပၚမူတည္၍ ထပ္ေဆာင္း က်သင့္ေငြမ်ား ေပးေဆာင္ရနိုင္ပါသည္။</string>
+    <string name="show_privacy_notice_title">သီးျခားျဖစ္မႈ ေပၚလစီ</string>
     <string name="search_for_places_nearby_title">အနီးအနားရွိ ေနရာမ်ားကို ရွာပါ</string>
     <string name="search_for_places_nearby_help_description1">ေဒသတြင္း စီးပြားေရးလုပ္ငန္းမ်ားႏွင့္ အနီးအနားရွိ ေနရာမ်ား၏ ဖုန္းနံပါတ္မ်ားႏွင့္ အခ်က္အလက္မ်ားကုိ ရွာပါ။</string>
     <string name="search_for_places_nearby_help_description2">ဤဝန္ေဆာင္မႈသည္ သင္၏ တည္ေနရာအခ်က္အလက္လိုအပ္ပါသည္။</string>
     <string name="search_for_places_nearby_help_description3">သင့္တည္ေနရာ အခ်က္အလက္မ်ား ပုိမုိတိက် မွန္ကန္ေစရန္ သတ္မွတ္ခ်က္မ်ား > ခ်ိတ္ဆက္မႈမ်ား > တည္ေနရာ > တည္ေနရာရွာ နည္းလမ္းသုိ႔ သြားၿပီးေနာက္ “တိက်မွန္ကန္မႈ ျမင့္” ကုိ ေရြးခ်ယ္ပါ။</string>
     <string name="search_for_places_nearby_help_description3_vzw">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description4">Wi-Fi ကြန္ယက္မ်ားအစား မိုဘိုင္းကြန္ယက္မ်ားကို အသုံးျပဳျခင္းသည္ သင့္ေငြေပးေခ်မႈအစီအစဥ္ေပၚတြင္ မူတည္၍ ထပ္ေဆာင္းအဖိုးအခမ်ား ကုန္က်ႏိုင္သည္။</string>
+    <string name="withdraw_menu_title">ဤဝန္ေဆာင္မႈကုိသံုးျခင္းအား ရပ္ပါ</string>
+    <string name="withdraw_dialog_description">%1$s ကုိ အသံုးမျပဳေတာ့သည့္အခါ ဝန္ေဆာင္မႈကုိ ပိတ္လုိက္မည္ျဖစ္ၿပီး ဝန္ေဆာင္မႈေပးသူက သိမ္းထားသည့္ သင္၏ %2$s ေဒတာအားလံုးကုိ ဖ်က္ပစ္ပါမည္။</string>
+    <string name="withdraw_dialog_button">ဝန္ေဆာင္မႈကုိသံုးျခင္းအား ရပ္ပါ</string>
     <string name="record_call_setting_title">ေခၚဆိုမႈမ်ား အလိုလို မွတ္တမ္းတင္မႈ</string>
     <string name="record_call_setting_selected_number">ေရြးခ်ယ္ထားသည့္ နံပါတ္မ်ား</string>
     <string name="record_call_setting_all_number">နံပါတ္မ်ားအားလုံး</string>
@@ -2179,6 +2201,8 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
     <string name="record_call_noti_setting_title">အသံဖမ္းယူမႈ အသိေပးခ်က္မ်ား</string>
     <string name="record_call_noti_setting_summary">ဖုန္းေခၚဆုိမႈမ်ားကုိ အသံဖမ္းယူထားၿပီးေနာက္ပုိင္း အသိေပးခ်က္မ်ားကုိ လက္ခံပါ။</string>
     <string name="record_call_help_summary">ေ႐ြးခ်ယ္ထားသည့္ နံပါတ္မ်ားသို႔ (သို႔) ၎နံပါတ္မ်ားမွ ေခၚဆိုမႈမ်ားကို အလိုအေလ်ာက္ မွတ္တမ္းတင္ပါ။</string>
+    <string name="record_call_setting_on_description">ေအာ္တိုအသံသြင္းနည္း ဖြင့္</string>
+    <string name="record_call_setting_off_description">ေအာ္တိုအသံသြင္းနည္း ပိတ္</string>
     <string name="visual_call_title_callsetting">IVR call screen menu</string>
     <string name="preference_update_DB_visual_call">IVR ကိုအပ္ဒိတ္လုပ္ၿပီး DB ကိုေခၚဆိုပါ</string>
     <string name="preference_update_DB_visual_call_summary">WLAN မွတဆင့္သာလွ်င္ ေအာ္တုိ အပ္ဒိတ္လုပ္ပါ</string>
@@ -2421,6 +2445,7 @@ Verizon မွ ရယူထားေသာ ကုဒ္ကို ထည့္ပ
     <string name="about_phone_open_source_licenses">အခမဲ့သံုး ရင္းျမစ္လိုင္စင္မ်ား</string>
     <string name="no_network_connection">ကြန္ယက္သို႔ ခ်ိပ္ဆက္မႈ မရွိပါ</string>
     <string name="unable_to_check_for_updates">အပ္ဒိတ္မ်ားကို စစ္ေဆး၍မရႏိုင္ပါ။ ကြန္ယက္ ခ်ိတ္ဆက္မႈမရွိပါ။</string>
+    <string name="phoneAppLabel_dcm">ဖုန္းေခၚပါ</string>
     <string name="dcm_vt_fail_cause_not_in_4g">4G ဧရိယာျပင္ပတြင္ ေရာက္ေနသျဖင့္ ဗီဒီယို ဖုန္းေခၚဆို၍မရပါ။</string>
     <string name="ss_do_not_show_again_us">Do not show again</string>
     <string name="disable_advanced_calling_warning_msg">Your phone will not be able to make or receive HD voice and video calls when you turn this setting off.</string>
@@ -2454,6 +2479,8 @@ In the future if you want to use Wi-Fi for voice calling you can turn on Wi-Fi C
     <string name="save_text">သိမ္းဆည္းပါ</string>
     <string name="wfc_enable_dialog_title">Wi-Fi ေခၚဆိုမႈ ဖြင့္ပါ</string>
     <string name="wfc_enable_dialog">Wi-Fi ျဖင့္ ေခၚဆုိမႈ ဖြင့္ထားျခင္းသည္ ပါဝါ ေခြ်တာေရး အေနအထားကို ပိတ္သြားလိမ့္မည္။ ၎က ဘက္ထရီအား သုံးစြဲမႈကို ျမင့္တက္ေစႏုိင္သည္။ အခ်ိဳ႕ေသာ ဝန္ေဆာင္မႈ ေပးသူမ်ားသည္ ဤလုပ္ေဆာင္ခ်က္ကို ပ့ံပိုးေပးမည္ မဟုတ္ပါ။</string>
+    <string name="group_call_not_support_emergency_number">အေရးေပၚ နံပါတ္မ်ားကို အုပ္စုေခၚဆုိမႈမ်ားထဲသုိ႔ ထည့္၍ မရႏုိင္ပါ။</string>
+    <string name="group_call_not_support_emergency_number_all">အေရးေပၚ နံပါတ္မ်ားကို အုပ္စုေခၚဆုိမႈမ်ားထဲသုိ႔ ထည့္၍ မရႏုိင္ပါ။ အျခားေရြးခ်ယ္ထားေသာ အဆက္အသြယ္အားလုံးကို ထည့္ထားသည္။</string>
     <string name="enable_data_popup_message">ဤလုပ္ေဆာင္ခ်က္ကို ဖြင့္ရန္ မိုဘိုင္း ေဒတာကို ဖြင့္ရမည္။</string>
     <string name="enable_data_popup_tittle">လုပ္ေဆာင္ခ်က္ကို ဖြင့္လို႔ မရႏိုင္ပါ</string>
 </resources>

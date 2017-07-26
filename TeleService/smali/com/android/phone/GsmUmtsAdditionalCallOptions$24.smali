@@ -20,12 +20,24 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
+.field final synthetic val$check:Landroid/widget/CheckBox;
+
+.field final synthetic val$context:Landroid/content/Context;
+
+.field final synthetic val$newTtyValue:I
+
 
 # direct methods
-.method constructor <init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+.method constructor <init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Landroid/widget/CheckBox;Landroid/content/Context;I)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+
+    iput-object p2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->val$check:Landroid/widget/CheckBox;
+
+    iput-object p3, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->val$context:Landroid/content/Context;
+
+    iput p4, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->val$newTtyValue:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,39 +47,46 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
+    .locals 2
 
-    const-string/jumbo v0, "GsmUmtsAdditionalCallOptions"
+    iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->val$check:Landroid/widget/CheckBox;
 
-    const-string/jumbo v1, "createDialogDropDownTty negative"
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
-    const/4 v2, 0x1
+    move-result v0
 
-    invoke-static {v0, v1, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->val$context:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->neverShowTtyTipsAgain(Landroid/content/Context;)V
+
+    :cond_0
+    const-string/jumbo v0, "preferred_tty_mode"
+
+    iget v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->val$newTtyValue:I
+
+    int-to-float v1, v1
+
+    invoke-static {v0, v1}, Lcom/android/phone/utils/SALogging;->sendSASettingLog(Ljava/lang/String;F)V
 
     const-string/jumbo v0, "preferred_tty_mode"
 
-    invoke-static {}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-get7()I
-
-    move-result v1
+    iget v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->val$newTtyValue:I
 
     invoke-static {v0, v1}, Lcom/android/phone/TeleServiceSystemDB;->setSecureSettingDB(Ljava/lang/String;I)V
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    invoke-static {v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-get3(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Lcom/android/phone/DropDownPreference;
+    iget v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->val$newTtyValue:I
 
-    move-result-object v0
-
-    invoke-static {}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-get7()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Lcom/android/phone/DropDownPreference;->setSelectedItem(I)V
+    invoke-static {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap11(Lcom/android/phone/GsmUmtsAdditionalCallOptions;I)V
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    invoke-static {v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap11(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    iget v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;->val$newTtyValue:I
+
+    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->sendIntent(I)V
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 

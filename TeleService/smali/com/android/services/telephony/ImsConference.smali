@@ -1005,7 +1005,7 @@
 
     new-instance v2, Landroid/telecom/StatusHints;
 
-    const v3, 0x7f0d0c8d
+    const v3, 0x7f0d0cfe
 
     invoke-virtual {v0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1015,7 +1015,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0200c5
+    const v5, 0x7f0200c8
 
     invoke-static {v4, v5}, Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Icon;
 

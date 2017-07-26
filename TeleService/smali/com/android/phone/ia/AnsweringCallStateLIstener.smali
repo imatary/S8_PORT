@@ -127,13 +127,13 @@
 
     check-cast v3, Landroid/preference/SwitchPreference;
 
-    if-eqz v3, :cond_9
+    if-eqz v3, :cond_b
 
     invoke-virtual {v3}, Landroid/preference/SwitchPreference;->isChecked()Z
 
     move-result v6
 
-    if-eq v6, v0, :cond_8
+    if-eq v6, v0, :cond_a
 
     const-string/jumbo v6, "AnsweringCallStateLIstener"
 
@@ -177,7 +177,7 @@
     goto :goto_0
 
     :cond_1
-    const-string/jumbo v6, "AutomaticAnsweringOn"
+    const-string/jumbo v6, "PressVolumeupToAnswerCallsOn"
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -187,14 +187,14 @@
 
     const/4 v0, 0x1
 
-    const-string/jumbo v1, "AnsweringOn"
+    const-string/jumbo v1, "PressVolumeupToAnswerCallsOn"
 
-    const-string/jumbo v4, "button_automatic_answer_key"
+    const-string/jumbo v4, "meterial_volumekey_mode_preference"
 
     goto :goto_0
 
     :cond_2
-    const-string/jumbo v6, "AutomaticAnsweringOff"
+    const-string/jumbo v6, "PressVolumeupToAnswerCallsOff"
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -204,14 +204,14 @@
 
     const/4 v0, 0x0
 
-    const-string/jumbo v1, "AnsweringOff"
+    const-string/jumbo v1, "PressVolumeupToAnswerCallsOff"
 
-    const-string/jumbo v4, "button_automatic_answer_key"
+    const-string/jumbo v4, "meterial_volumekey_mode_preference"
 
     goto :goto_0
 
     :cond_3
-    const-string/jumbo v6, "PressingThePowerKeyOn"
+    const-string/jumbo v6, "AutomaticAnsweringOn"
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -221,14 +221,14 @@
 
     const/4 v0, 0x1
 
-    const-string/jumbo v1, "PowerKeyOn"
+    const-string/jumbo v1, "AnsweringOn"
 
-    const-string/jumbo v4, "meterial_powerkey_end_preference"
+    const-string/jumbo v4, "button_automatic_answer_key"
 
     goto :goto_0
 
     :cond_4
-    const-string/jumbo v6, "PressingThePowerKeyOff"
+    const-string/jumbo v6, "AutomaticAnsweringOff"
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -238,14 +238,14 @@
 
     const/4 v0, 0x0
 
-    const-string/jumbo v1, "PowerKeyOff"
+    const-string/jumbo v1, "AnsweringOff"
 
-    const-string/jumbo v4, "meterial_powerkey_end_preference"
+    const-string/jumbo v4, "button_automatic_answer_key"
 
     goto/16 :goto_0
 
     :cond_5
-    const-string/jumbo v6, "UsingVoiceCommandsOn"
+    const-string/jumbo v6, "PressingThePowerKeyOn"
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -255,14 +255,14 @@
 
     const/4 v0, 0x1
 
-    const-string/jumbo v1, "VoiceCommandOn"
+    const-string/jumbo v1, "PowerKeyOn"
 
-    const-string/jumbo v4, "meterial_voice_cmd_preference"
+    const-string/jumbo v4, "meterial_powerkey_end_preference"
 
     goto/16 :goto_0
 
     :cond_6
-    const-string/jumbo v6, "UsingVoiceCommandsOff"
+    const-string/jumbo v6, "PressingThePowerKeyOff"
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -272,20 +272,54 @@
 
     const/4 v0, 0x0
 
+    const-string/jumbo v1, "PowerKeyOff"
+
+    const-string/jumbo v4, "meterial_powerkey_end_preference"
+
+    goto/16 :goto_0
+
+    :cond_7
+    const-string/jumbo v6, "UsingVoiceCommandsOn"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_8
+
+    const/4 v0, 0x1
+
+    const-string/jumbo v1, "VoiceCommandOn"
+
+    const-string/jumbo v4, "meterial_voice_cmd_preference"
+
+    goto/16 :goto_0
+
+    :cond_8
+    const-string/jumbo v6, "UsingVoiceCommandsOff"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_9
+
+    const/4 v0, 0x0
+
     const-string/jumbo v1, "VoiceCommandOff"
 
     const-string/jumbo v4, "meterial_voice_cmd_preference"
 
     goto/16 :goto_0
 
-    :cond_7
+    :cond_9
     sget-object v6, Lcom/android/phone/ia/IAConstants;->RESPONSE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
     return-void
 
-    :cond_8
+    :cond_a
     const-string/jumbo v6, "AnsweringCallStateLIstener"
 
     const-string/jumbo v7, "setting already set"
@@ -300,14 +334,14 @@
 
     invoke-static {v6, v1, v7, v8}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v6, Lcom/android/phone/ia/IAConstants;->RESPONSE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+    sget-object v6, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
     :goto_1
     return-void
 
-    :cond_9
+    :cond_b
     const/4 v6, 0x0
 
     invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->supportedMenu(I)V

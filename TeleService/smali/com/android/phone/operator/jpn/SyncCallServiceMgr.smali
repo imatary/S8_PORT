@@ -4818,7 +4818,7 @@
 
     invoke-direct {v0, v13, v14}, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->log(Ljava/lang/String;Z)V
 
-    const v13, 0x7f0d02bd
+    const v13, 0x7f0d031d
 
     invoke-virtual {v6, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5438,7 +5438,7 @@
 
     invoke-direct {p0, v7, v11}, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->log(Ljava/lang/String;Z)V
 
-    const v7, 0x7f0d02bd
+    const v7, 0x7f0d031d
 
     invoke-virtual {v2, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

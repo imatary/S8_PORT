@@ -420,10 +420,10 @@
     return-void
 .end method
 
-.method static synthetic -wrap1(Lcom/android/phone/PhoneGlobals;Landroid/telephony/ServiceState;)V
+.method static synthetic -wrap1(Lcom/android/phone/PhoneGlobals;Landroid/telephony/ServiceState;I)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/phone/PhoneGlobals;->changeWifiPrefModeInRoaming(Landroid/telephony/ServiceState;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/phone/PhoneGlobals;->changeWifiPrefModeInRoaming(Landroid/telephony/ServiceState;I)V
 
     return-void
 .end method
@@ -694,120 +694,186 @@
 .end method
 
 .method private changeSmartCallEnableInRoaming(Landroid/telephony/ServiceState;)V
-    .locals 7
+    .locals 9
 
-    const/4 v6, 0x0
+    const/4 v4, 0x1
 
+    const/4 v5, 0x0
+
+    const-string/jumbo v6, "smart_call_prev_roaming_status"
+
+    invoke-static {v6, v5}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
+
+    move-result v6
+
+    if-ne v6, v4, :cond_3
+
+    const/4 v2, 0x1
+
+    :goto_0
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getRoaming()Z
 
-    move-result v2
+    move-result v3
 
-    const-string/jumbo v3, "smart_call_roaming_backup"
+    const-string/jumbo v6, "smart_call_roaming_backup"
 
-    invoke-static {v3, v6}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
+    invoke-static {v6, v5}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
 
     move-result v0
 
     invoke-virtual {p0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v3
+    move-result-object v6
 
-    const-string/jumbo v4, "spam_call_enable"
+    const-string/jumbo v7, "spam_call_enable"
 
-    invoke-static {v3, v4, v6}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v6, v7, v5}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v1
 
-    const-string/jumbo v3, "PhoneApp"
+    const-string/jumbo v6, "PhoneApp"
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v5, "onServiceStateChanged roaming : "
+    const-string/jumbo v8, "onServiceStateChanged prevRoaming : "
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v7
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v7
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string/jumbo v8, ", roaming : "
 
-    move-result-object v4
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v7
 
-    const-string/jumbo v3, "PhoneApp"
+    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    move-result-object v7
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    const-string/jumbo v5, "onServiceStateChanged backupEnableValue : "
+    move-result-object v7
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-result-object v4
+    const-string/jumbo v6, "PhoneApp"
 
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v5, ", mSmartCallEnabled : "
+    const-string/jumbo v8, "onServiceStateChanged backupEnableValue : "
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v7
 
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v7
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string/jumbo v8, ", mSmartCallEnabled : "
 
-    move-result-object v4
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v7
 
-    if-eqz v2, :cond_2
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    if-eq v2, v3, :cond_2
+
+    if-eqz v3, :cond_4
 
     if-eq v0, v1, :cond_0
 
-    const-string/jumbo v3, "smart_call_roaming_backup"
+    const-string/jumbo v6, "smart_call_roaming_backup"
 
-    invoke-static {v3, v1}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
+    invoke-static {v6, v1}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
 
     :cond_0
     invoke-virtual {p0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v3
+    move-result-object v6
 
-    const-string/jumbo v4, "spam_call_enable"
+    const-string/jumbo v7, "spam_call_enable"
 
-    invoke-static {v3, v4, v6}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v6, v7, v5}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     :cond_1
-    :goto_0
-    return-void
+    :goto_1
+    const-string/jumbo v6, "smart_call_prev_roaming_status"
+
+    if-eqz v3, :cond_6
+
+    :goto_2
+    invoke-static {v6, v4}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
 
     :cond_2
+    return-void
+
+    :cond_3
+    const/4 v2, 0x0
+
+    goto :goto_0
+
+    :cond_4
+    const-string/jumbo v6, "support_smart_call_mcc"
+
+    invoke-static {v6}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_5
+
+    const-string/jumbo v6, "support_smart_call_mcc"
+
+    invoke-static {v6}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_1
+
+    invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isSupportMccSmartCall()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_1
+
+    :cond_5
     if-eq v0, v1, :cond_1
 
     invoke-virtual {p0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v3
+    move-result-object v6
 
-    const-string/jumbo v4, "spam_call_enable"
+    const-string/jumbo v7, "spam_call_enable"
 
-    invoke-static {v3, v4, v0}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v6, v7, v0}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    goto :goto_0
+    goto :goto_1
+
+    :cond_6
+    move v4, v5
+
+    goto :goto_2
 .end method
 
-.method private changeWifiPrefModeInRoaming(Landroid/telephony/ServiceState;)V
+.method private changeWifiPrefModeInRoaming(Landroid/telephony/ServiceState;I)V
     .locals 9
 
     const/4 v4, 0x1
@@ -820,7 +886,7 @@
 
     move-result v6
 
-    if-ne v6, v4, :cond_2
+    if-ne v6, v4, :cond_3
 
     const/4 v2, 0x1
 
@@ -828,8 +894,6 @@
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getRoaming()Z
 
     move-result v1
-
-    const/4 v3, 0x0
 
     const-string/jumbo v6, "PhoneApp"
 
@@ -863,9 +927,11 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-eq v2, v1, :cond_1
+    if-eq v2, v1, :cond_2
 
-    if-eqz v1, :cond_3
+    const/4 v3, 0x0
+
+    if-eqz v1, :cond_5
 
     invoke-virtual {p0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
@@ -877,22 +943,18 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
+    if-nez p2, :cond_4
 
-    move-result-object v6
+    const/4 v3, 0x2
 
-    const-string/jumbo v7, "wifi_call_when_roaming"
-
-    invoke-static {v6, v7, v4}, Lcom/android/phone/VoWifiSettingsDataBaseManager;->getInt(Landroid/content/Context;Ljava/lang/String;I)I
-
-    move-result v3
-
+    :cond_0
+    :goto_1
     const-string/jumbo v6, "wfc_preferred_domestic_backup"
 
     invoke-static {v6, v0}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
 
-    :goto_1
-    if-eqz v3, :cond_0
+    :goto_2
+    if-eqz v3, :cond_1
 
     invoke-virtual {p0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
@@ -902,35 +964,42 @@
 
     invoke-static {v6, v7, v3}, Lcom/android/phone/VoWifiSettingsDataBaseManager;->setInt(Landroid/content/Context;Ljava/lang/String;I)V
 
-    :cond_0
+    :cond_1
     const-string/jumbo v6, "wfc_prev_roaming_state"
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_6
 
-    :goto_2
+    :goto_3
     invoke-static {v6, v4}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
 
-    :cond_1
+    :cond_2
     return-void
 
-    :cond_2
+    :cond_3
     const/4 v2, 0x0
 
     goto :goto_0
 
-    :cond_3
+    :cond_4
+    if-ne p2, v4, :cond_0
+
+    const/4 v3, 0x1
+
+    goto :goto_1
+
+    :cond_5
     const-string/jumbo v6, "wfc_preferred_domestic_backup"
 
     invoke-static {v6, v5}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
 
     move-result v3
 
-    goto :goto_1
+    goto :goto_2
 
-    :cond_4
+    :cond_6
     move v4, v5
 
-    goto :goto_2
+    goto :goto_3
 .end method
 
 .method private containsSubId(Ljava/util/List;I)Z
@@ -1524,7 +1593,7 @@
 
     invoke-virtual {v0, v3}, Landroid/net/ConnectivityManager;->setAirplaneMode(Z)V
 
-    const v0, 0x7f0d0475
+    const v0, 0x7f0d04d5
 
     invoke-static {p0, v0, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -3143,9 +3212,9 @@
 
     if-nez v1, :cond_0
 
-    const/16 v1, 0x64
+    const-string/jumbo v1, "support_wfc"
 
-    invoke-static {v1}, Lcom/android/phone/TelephonyConfig;->hasFeature(I)Z
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v1
 

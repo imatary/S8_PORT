@@ -97,7 +97,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/SecAutoRejectList$19;->this$0:Lcom/android/phone/callsettings/SecAutoRejectList;
 
-    const v3, 0x7f0d01f2
+    const v3, 0x7f0d024f
 
     invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -105,7 +105,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/SecAutoRejectList$19;->this$0:Lcom/android/phone/callsettings/SecAutoRejectList;
 
-    const v4, 0x7f0d0245
+    const v4, 0x7f0d02a3
 
     invoke-virtual {v3, v4}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 

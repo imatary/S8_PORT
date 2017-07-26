@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dh %2$dm</string>
-    <string name="battery_history_minutes_no_seconds">%dm</string>
+    <string name="battery_history_hours_no_seconds">%1$d h %2$d m</string>
+    <string name="battery_history_minutes_no_seconds">%d m</string>
     <string name="wifi_fail_to_scan">មិន​អាច​វិភាគ​រក​បណ្ដាញ</string>
     <string name="wifi_failed_to_obtain_IP">បាន​បរាជ័យ​ក្នុង​ការ​ទទួល​អាសយដ្ឋាន IP។</string>
     <string name="wifi_security_none">គ្មាន</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">មិន​អាច​ភ្ជាប់​ទៅ %s។</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">មិន​អាច​ភ្ជាប់​ទៅ %1$s។ ពិនិត្យ​ការកំណត់​របស់​អ្នក​ក្នុង %2$s ហើយ​សាកល្បង​ម្ដងទៀត។</string>
     <string name="bluetooth_pairing_rejected_error_message">ការផ្គូ​បាន​ច្រានចោល​ដោយ %s។</string>
+    <string name="bluetooth_getting_remote_device_name">កំពុង​ទទួល​ឈ្មោះ​ឧបករណ៍…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">ឈ្មោះ​ឧបករណ៍​នឹង​លេចឡើង នៅពេល​ឧបករណ៍​នេះ​ត្រូវ​បាន​ភ្ជាប់។</string>
     <string name="accessibility_wifi_off">បានបិទ Wifi</string>
     <string name="accessibility_no_wifi">បានផ្តាច់ Wifi</string>
     <string name="accessibility_wifi_one_bar">Wifi មួយកាំ</string>
@@ -835,7 +837,7 @@
     <string name="singleContactImportedMsg">បាននាំចូលទំនាក់ទំនង</string>
     <string name="failedToImportSingleContactMsg">បានបរាជ័យក្នុងការនាំចូលទំនាក់ទំនង</string>
     <string name="hac_mode_title">ជំនួយ​ត្រចៀក</string>
-    <string name="hac_mode_summary">បង្កើន​គុណភាព​សំឡេង​នៃ​ឧបករណ៍​របស់​អ្នក សម្រាប់​ការប្រើ​ជាមួយ​ជំនួយ​ត្រចៀក។</string>
+    <string name="hac_mode_summary">ធ្វើ​ឲ្យ​គុណភាព​សំឡេង​នៃ​ទូរសព្ទ​របស់​អ្នក​ល្អប្រសើរ​សម្រាប់​ជំនួយ​ការស្ដាប់។</string>
     <string name="dtmf_tones_title">សំឡេង DTMF</string>
     <string name="dtmf_tones_summary">កំណត់​ប្រវែង​នៃ​សំឡេង DTMF។</string>
     <string name="network_info_message">សារ​បណ្ដាញ</string>
@@ -1014,6 +1016,10 @@
     <string name="add_call_block_number_toast">អ្នក​នឹង​មិន​ទទួល​ការហៅ​ពី​លេខ​នេះ​ឡើយ។</string>
     <string name="delete_call_block_number_toast">ឥឡូវ អ្នក​អាច​ទទួល​ការហៅ​ពី​លេខ​នេះ។</string>
     <string name="emergency_call_block_number_toast">មិន​អាច​ខ្ទប់​លេខ​អាសន្ន។</string>
+    <string name="call_block_dialog_title">កែ ខ្ទប់​លេខ</string>
+    <string name="call_block_dialog_contents">ពី Android Nougat ទៅ ទម្រង់​ខ្ទប់​ការហៅ​ត្រូវ​បាន​ជំនួស​ដោយ ខ្ទប់​លេខ។ ជំនួស​ឲ្យ​ការគ្រាន់តែ​ខ្ទប់​ការហៅ ខ្ទប់​លេខ នឹង​ខ្ទប់​ការហៅ​និង​សារ​ដោយ​ស្វ័យប្រវត្តិ។</string>
+    <string name="call_block_dialog_settings">ប៉ះ ការកំណត់ ដើម្បី​កែ ខ្ទប់​លេខ។</string>
+    <string name="call_block_dialog_button">ការកំណត់</string>
     <string name="no_block_number_description">លេខ​ដែល​អ្នក​ថែម នឹង​លេចឡើង​ទីនេះ។</string>
     <string name="no_messages_description">សារ​ដែល​អ្នក​ថែម នឹង​លេចឡើង​ទីនេះ។</string>
     <string name="callsettings_vipmode_blacklist_title">បញ្ជី​ខ្មៅ</string>
@@ -1336,7 +1342,7 @@
     <string name="roaming_alerts_sbody">ប្ដូរ​សំឡេង, អត្ថបទ និង ការកំណត់​រ៉ូមីង​ទិន្នន័យ រួមទាំង​រ៉ូមីង​អន្តរជាតិ។</string>
     <string name="roaming_alerts_voice_body">រ៉ូមីង​សំឡេង</string>
     <string name="roaming_alerts_data_body">រ៉ូមីង​ទិន្នន័យ</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">រ៉ូមីង​អត្ថបទ​ចេញ</string>
     <string name="roaming_domestic_category">រ៉ូមីង​ក្នុង​ស្រុក</string>
     <string name="roaming_international_category">រ៉ូមីង​អន្តរជាតិ</string>
     <string name="roaming_voice_body">សំឡេង និង រ៉ូមីង​អត្ថបទ</string>
@@ -1506,9 +1512,7 @@ Please note that the features above require a network connection."</string>
     <string name="data_usage_disable_mobile_vzw_chn">"បើ​អ្នក​មិន​ប្រើ WLAN ទេ អ្នក​នឹង​មិន​អាច​ប្រើ​អ៊ីនធើណិត, អ៊ីមែល ឬ កម្មវិធី​ផ្សេងទៀត ដែល​ត្រូវការ​ការភ្ជាប់​ទិន្នន័យ​ទៀត​ឡើយ។
 
 នឹង​បិទ​ទិន្នន័យ​ចល័ត។"</string>
-    <string name="mobile_data_off_dialog_text_common">"លុះត្រាតែ​អ្នក​ប្រើ Wi-Fi បើ​ពុំ​នោះ អ្នក​នឹង​លែង​អាច​ប្រើ​អ៊ីនធើណិត, អ៊ីមែល ឬ កម្មវិធី​ផ្សេងទៀត ដែល​ត្រូវការ​ការភ្ជាប់​ទិន្នន័យ ទៀត​ហើយ។
-
-នឹង​បិទ​ទិន្នន័យ​ចល័ត។"</string>
+    <string name="mobile_data_off_dialog_text_common">លុះត្រាតែ​អ្នក​ភ្ជាប់​ទៅ​បណ្ដាញ Wi-Fi បើពុំនោះ អ្នក​នឹង​មិន​អាច​ប្រើ​អ៊ីនធើណិត, អ៊ីមែល ឬ កម្មវិធី​ផ្សេងទៀត​ដែល​ត្រូវការ​ការភ្ជាប់​បណ្ដាញ​ឡើយ។</string>
     <string name="mobile_data_off_dialog_button_turn_off">បិទ</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"បើ​អ្នក​មិន​ប្រើ Wi-Fi ទេ អ្នក​នឹង​មិន​អាច​ប្រើ​អ៊ីនធើណិត, អ៊ីមែល ឬ កម្មវិធី​ផ្សេងទៀត ដែល​ត្រូវការ​ការភ្ជាប់​ទិន្នន័យ​ទៀត​ឡើយ។
 
@@ -1588,8 +1592,9 @@ Mobile data will be turned off."</string>
 អាច​គិត​ថ្លៃ​បន្ថែម បើ​អ្នក​មិន​ប្រើ​គម្រោង​អត្រា​ថេរ។"</string>
     <string name="data_3gwarning_popup_title">ទិន្នន័យ​ចល័ត</string>
     <string name="roaming_data_off_msg">ដើម្បី​ប្រើ​រ៉ូមីង​ទិន្នន័យ សូម​ចូលទៅ ការកំណត់ > ការភ្ជាប់ > រ៉ូមីង​សាកល រួច​បើកប្រើ​រ៉ូមីង​ទិន្នន័យ។</string>
-    <string name="data_3gwarning_popup_noti">ការភ្ជាប់​ទៅ​បណ្តាញ​ចល័ត​អាច​គិត​ថ្លៃ​បន្ថែម បើ​អ្នក​មិន​ប្រើ​គម្រោង​អត្រា​ថេរ។ ភ្ជាប់?</string>
-    <string name="lgt_4gwarning_popup_mobiledata">នឹង​បើក​ទិន្នន័យ​ចល័ត។ នេះ​អាច​នាំ​ឲ្យ​អ្នកផ្ដល់​សេវា​ឲ្យ​អ្នក​គិត​ថ្លៃ​បន្ថែម អាស្រ័យ​លើ​គម្រោង​បង់ប្រាក់​របស់​អ្នក។</string>
+    <string name="data_3gwarning_popup_noti">នឹង​បើក​ទិន្នន័យ​ចល័ត។ ការភ្ជាប់​ទៅ​បណ្ដាញ​ចល័ត អាច​នាំ​ឲ្យ​គិត​ថ្លៃ​បន្ថែម អាស្រ័យ​លើ​គម្រោង​បង់ប្រាក់​របស់​អ្នក។</string>
+    <string name="data_3gwarning_popup_noti_ktt">នឹង​បើក​ទិន្នន័យ​ចល័ត ដើម្បី​ប្រើ GiGA LTE។ នេះ​អាច​នាំ​ឲ្យ​គិត​ថ្លៃ​បន្ថែម អាស្រ័យ​លើ​គម្រោង​បង់ប្រាក់​របស់​អ្នក។</string>
+    <string name="lgt_4gwarning_popup_mobiledata">នឹង​បើក​ទិន្នន័យ​ចល័ត។ ការភ្ជាប់​ទៅ​បណ្ដាញ​ចល័ត អាច​នាំ​ឲ្យ​គិត​ថ្លៃ​បន្ថែម អាស្រ័យ​លើ​គម្រោង​បង់ប្រាក់​របស់​អ្នក។</string>
     <string name="lgt_lte_data_roaming_warningmsg">"នៅពេល​បាន​បើកប្រើ​រ៉ូមីង​ទិន្នន័យ &lt;u>&lt;font color=\"%1$s\">នោះ​នឹង​គិត​ថ្លៃ​រ៉ូមីង​អន្តរជាតិ ជំនួស​ឲ្យ​ការគិតថ្លៃ​ទិន្នន័យ​ក្នុង​ស្រុក។&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">បើកប្រើ កំហិត​ទិន្នន័យ​នៅ​ផ្ទៃខាងក្រោយ ដើម្បី​កាត់បន្ថយ​ការគិតថ្លៃ​រ៉ូមីង​ទិន្នន័យ&lt;/font>&lt;/u> តាមរយៈ​ការបិទ​មុខងារ​ដូចជា​ការជូនដំណឹង IM និង អាប់ដេត​ស្វ័យប្រវត្តិ"</string>
@@ -1960,6 +1965,8 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
     <string name="volte_call_summary_ops">ធ្វើ​ការហៅ​សំឡេង HD លើ​បណ្ដាញ 4G។</string>
     <string name="voice_over_lte_title_cct">ការហៅ Volte</string>
     <string name="volte_call_summary_cct">បើកប្រើ​មុខងារ​ការហៅ​កម្រិត​ខ្ពស់​លើ​បណ្ដាញ​ចល័ត 4G LTE នៅ​កន្លែង​ដែល​មាន។</string>
+    <string name="voice_over_lte_title_o2">ការហៅ 4G</string>
+    <string name="volte_call_summary_o2">រីករាយ​នឹង​ការទំនាក់ទំនង​ល្អប្រសើរ​ដោយប្រើ​ទិន្នន័យ 4G។</string>
     <string name="volte_tty_description_on">While TTY is on, you will not be able to make and receive video calls or have conference calls.</string>
     <string name="volte_prepaid_tty_description_on">TTY mode will be enabled. You will not be able to make or receive conference calls.</string>
     <string name="volte_tty_description_off">While TTY is off, you will not be able to make and receive TTY calls.</string>
@@ -2149,9 +2156,13 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
     <string name="group_voice_call_disable_on_3G">ការហៅ​ជាក្រុម​អាច​ប្រើ​បាន​តែ​តាម​បណ្ដាញ LTE ប៉ុណ្ណោះ</string>
     <string name="group_voice_call_outgoing_voice_call">ការ​ហៅ​ចេញ​ជា​សំឡេង</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"លុះត្រាតែ​អ្នក​ប្រើ Wi-Fi បើ​ពុំ​នោះ អ្នក​នឹង​លែង​អាច​ប្រើ​អ៊ីនធើណិត, អ៊ីមែល ឬ កម្មវិធី​ផ្សេងទៀត ដែល​ត្រូវការ​ការភ្ជាប់​ទិន្នន័យ ទៀត​ហើយ។
+
+នឹង​បិទ​ទិន្នន័យ​ចល័ត។"</string>
     <string name="data_usage_disable_mobile_warning">"បើ​អ្នក​មិន​ប្រើ Wi-Fi ទេ អ្នក​នឹង​មិន​អាច​ប្រើ​អ៊ីនធើណិត, អ៊ីមែល ឬ កម្មវិធី​ផ្សេងទៀត ដែល​ត្រូវការ​ការភ្ជាប់​ទិន្នន័យ​ទៀត​ឡើយ។
 
 នឹង​បិទ​ទិន្នន័យ​ចល័ត។"</string>
+    <string name="data_usage_enable_mobile_warning_skt">នឹង​បើក​ទិន្នន័យ​ចល័ត។ ការភ្ជាប់​ទៅ​បណ្ដាញ​ចល័ត អាច​នាំ​ឲ្យ​គិត​ថ្លៃ​បន្ថែម អាស្រ័យ​លើ​គម្រោង​បង់ប្រាក់​របស់​អ្នក។</string>
     <string name="data_usage_enable_mobile_warning">ការភ្ជាប់​តាម​ទិន្នន័យ​កញ្ចប់​អាច​គិត​ថ្លៃ​បន្ថែម។ បន្ត?</string>
     <string name="insert_sim_card">បញ្ចូល​កាត SIM</string>
     <string name="insert_sim_card_message">បញ្ចូលកាត SIM ដើម្បី​ចូលប្រើ​សេវា​បណ្ដាញ។</string>
@@ -2185,6 +2196,7 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
     <string name="turning_off_answer_memo">ការឆ្លើយ​ស្វ័យប្រវត្តិ និង សារ​ឆ្លើយ​មិន​អាច​បើកប្រើ​ទាំងពីរ​ឡើយ។ នឹង​បិទ​សារ​ឆ្លើយ។</string>
     <string name="disconnect_network_message">ការប្តូរ​បណ្តាញ​សេវា​ទិន្នន័យ​នឹង​ផ្តាច់​បណ្តាញ​បច្ចុប្បន្ន​កំពុង​ប្រើ។ ប្តូរ​បណ្តាញ​សេវា​ទិន្នន័យ?</string>
     <string name="disconnect_network_title">ផ្ដាច់​បណ្ដាញ​បច្ចុប្បន្ន</string>
+    <string name="disable2g_warning_message">ការកំណត់​នេះ​បិទ​សេវា 2G។ បើ​សេវា 2G ត្រូវ​បាន​បិទ កម្មវិធី​និង​មុខងារ​ខ្លះ​អាច​មិន​ដំណើរការ​ក្នុង​ទីកន្លែង​ដែល LTE ឬ 3G មិន​អាច​ប្រើ​បាន។</string>
     <string name="data_roaming_restrict_title">បាន​បិទ​រ៉ូមីង​ទិន្នន័យ</string>
     <string name="data_roaming_restrict_body">ប៉ះ​ទីនេះ ដើម្បី​បើកប្រើ​រ៉ូមីង​ទិន្នន័យ។</string>
     <string name="data_network_mode">ទម្រង់​បណ្ដាញ​ទិន្នន័យ</string>
@@ -2385,6 +2397,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">លុប​លេខ​នេះ?</string>
     <string name="change_guide_language_kddi">ប្ដូរ​ភាសា​មគ្គទេសក៍</string>
     <string name="apply_option_service_kddi">ចូលទៅ​ជម្រើស​សេវា %s</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">ផ្នែកគាំទ្រ​អតិថិជន</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">មគ្គទេសក៍​ជាភាសា​ជប៉ុន (%d)</string>
     <string name="English_guidance_kddi">មគ្គទេសក៍​ណែនាំ​អង់គ្លេស (%d)</string>
     <string name="voicecall_kddi">សំបុត្រ​សំឡេង</string>
@@ -2439,11 +2455,13 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
     <string name="spam_call_mute_first_ring_summary">Mute the first ring of calls from unsaved numbers.</string>
     <string name="spam_call_auto_reject_title">ស្វ័យ​ច្រានចោល​ការហៅ</string>
     <string name="smart_call_title">ID អ្នកហៅ និង ការការពារ​ស្ប៉ាម</string>
-    <string name="smart_call_title_usa">កត់សម្គាល់​លេខ​ស្ប៉ាម</string>
     <string name="smart_call_title_for_notice">ID អ្នកហៅ និង ការការពារ​ស្ប៉ាម</string>
-    <string name="smart_call_description">កត់សម្គាល់​អ្នកហៅ និង អ្នកផ្ញើ​សារ​ដែល​មិន​បាន​រក្សាទុក លើ​អេក្រង់​ហៅ, ក្នុង​កំណត់ហេតុ​ទូរសព្ទ និង ក្នុង​សារ។</string>
-    <string name="smart_call_usa_description">បង្ហាញ​ព័ត៌មាន​អំពី​អ្នកហៅ​ស្ប៉ាម លើ​អេក្រង់​ហៅ និង ក្នុង​កំណត់ហេតុ​ទូរសព្ទ។</string>
+    <string name="smart_call_description">"ប្រើ Smart Call ដើម្បី​កត់សម្គាល់​អ្នកហៅ​ស្ប៉ាម​និង​ជនឆបោក។
+
+សេវា​នេះ​បង្ហាញ​អ្នក​នូវ​ឈ្មោះ​និង​រូបភាព​ទម្រង់​របស់​អ្នកហៅ​និង​អ្នកផ្ញើ​សារ​ដែល​មិន​ស្ថិត​ក្នុង​ទំនាក់ទំនង​របស់​អ្នក។"</string>
     <string name="smart_call_description_roaming">សេវា​នេះ​មិន​អាច​ប្រើ​បាន​ទេ​ក្នុង​ប្រទេស​ផ្សេងទៀត។</string>
+    <string name="smart_call_noti_description_1">ប៉ះ​ទីនេះ ដើម្បី​ការពារ​ខ្លួន​អ្នក​ពី​អ្នកហៅ​ស្ប៉ាម​ដោយ​ឥតគិតថ្លៃ។</string>
+    <string name="smart_call_noti_description_2">ប៉ះ​ទីនេះ ដើម្បី​កត់សម្គាល់​អ្នកហៅ​ស្ប៉ាម​និង​ជនឆបោក។</string>
     <string name="smart_call_share_name_number_title">ចែករំលែក​ឈ្មោះ និង លេខ</string>
     <string name="smart_call_share_name_number_summary">ចុះបញ្ជី​ឈ្មោះ និង លេខ​របស់​អ្នក ជាមួយ​សឺវើ ដូច្នេះ​អ្នកទទួល​ដែល​គ្មាន​លេខ​របស់​អ្នក​អាច​ឃើញ នៅពេល​អ្នក​ហៅ/ផ្ញើ​សារ​ទៅ​ពួកគេ។</string>
     <string name="smart_call_legal_info_category">ព័ត៌មាន​អំពី​ច្បាប់</string>
@@ -2460,12 +2478,16 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
 សូម​ចុច​លើ​ប៊ូតុង​សមស្រប​ខាងក្រោម ដើម្បី​បញ្ជាក់​ថា​អ្នក​យល់ព្រម​តាម​ព័ត៌មាន​ខាងលើ ព្រមទាំង​ចង់​បើកប្រើ​មុខងារ %s នៅ​ពេល​នេះ។"</string>
     <string name="smart_call_privacy_notice_donotshow">កុំ​បង្ហាញ​ការជូនដំណឹង​ដែល​ពណ៌នា​ពី​មុខងារ​កត់សម្គាល់​លេខ​ដែល​មិន​បាន​រក្សាទុក​ម្ដងទៀត</string>
     <string name="smart_call_privacy_notice_dream">សេវា​នេះ​អាច​ប្រើ​បាន នៅពេល​ឧបករណ៍​ចល័ត​របស់​អ្នក​បាន​ភ្ជាប់​ទៅ​បណ្ដាញ​ចល័ត​របស់​អ្នក ក្នុង​អំឡុងពេល​ហៅ​ចូល​ឬ​ចេញ ប៉ុន្តែ​នឹង​មាន​កម្រិត ខណៈពេល​រ៉ូមីង។ ការប្រើ​បណ្ដាញ​ចល័ត​អាច​នាំ​ឲ្យ​គិត​ថ្លៃ​បន្ថែម អាស្រ័យ​លើ​គម្រោង​ទិន្នន័យ​របស់​អ្នក​ជាមួយ​អ្នកផ្ដល់​បណ្ដាញ​ឲ្យ​អ្នក។</string>
+    <string name="show_privacy_notice_title">គោលការណ៍​សិទ្ធិឯកជន</string>
     <string name="search_for_places_nearby_title">ស្វែងរក​កន្លែង​នៅក្បែរ</string>
     <string name="search_for_places_nearby_help_description1">រក​លេខ​ទូរសព្ទ​និង​ព័ត៌មាន​សម្រាប់​អាជីវកម្ម​និង​កន្លែង​ក្នុង​ស្រុក​ដែល​នៅក្បែរ។</string>
     <string name="search_for_places_nearby_help_description2">សេវា​នេះ​ត្រូវការ​ព័ត៌មាន​ទីកន្លែង​របស់​អ្នក។</string>
     <string name="search_for_places_nearby_help_description3">ដើម្បី​ធ្វើ​ឲ្យ​សុក្រឹតភាព​នៃ​ព័ត៌មាន​ទីកន្លែង​របស់​អ្នក​ល្អប្រសើរ សូម​ចូលទៅ ការកំណត់ > ការភ្ជាប់ > ទីកន្លែង > វិធី​រក​ទីកន្លែង រួច​ជ្រើស សុក្រឹតភាព​ខ្ពស់។</string>
     <string name="search_for_places_nearby_help_description3_vzw">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description4">ការប្រើ​បណ្ដាញ​ចល័ត​ជំនួស​ឲ្យ​បណ្ដាញ Wi-Fi អាច​នាំ​ឲ្យ​គិត​ថ្លៃ​បន្ថែម អាស្រ័យ​លើ​គម្រោង​បង់ប្រាក់​របស់​អ្នក។</string>
+    <string name="withdraw_menu_title">បញ្ឈប់​ការប្រើ​សេវា​នេះ</string>
+    <string name="withdraw_dialog_description">នៅពេល​អ្នក​បញ្ឈប់​ការប្រើ %1$s សេវា​នេះ​នឹង​ត្រូវ​បាន​បិទ​ដំណើរការ ហើយ​ទិន្នន័យ %2$s របស់​អ្នក​ទាំងអស់ ដែល​បាន​រក្សាទុក​ដោយ​អ្នកផ្ដល់​សេវា នឹង​ត្រូវ​បាន​លុប។</string>
+    <string name="withdraw_dialog_button">បញ្ឈប់​ការប្រើ​សេវា</string>
     <string name="record_call_setting_title">ស្វ័យ​ថត​ការហៅ</string>
     <string name="record_call_setting_selected_number">លេខ​ដែល​បាន​ជ្រើស</string>
     <string name="record_call_setting_all_number">លេខ​ទាំងអស់</string>
@@ -2478,6 +2500,8 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
     <string name="record_call_noti_setting_title">ការជូនដំណឹង​អំពី​ការថត</string>
     <string name="record_call_noti_setting_summary">ទទួល​ការជូនដំណឹង​បន្ទាប់​ពី​កត់ត្រា​ការហៅ។</string>
     <string name="record_call_help_summary">ថត​ការហៅ​ទៅ​ឬ​ពី​លេខ​ដែល​បាន​ជ្រើស​ដោយ​ស្វ័យប្រវត្តិ។</string>
+    <string name="record_call_setting_on_description">បាន​បើក​ស្វ័យ​ថត</string>
+    <string name="record_call_setting_off_description">បាន​បិទ​ស្វ័យ​ថត</string>
     <string name="visual_call_title_callsetting">IVR call screen menu</string>
     <string name="preference_update_DB_visual_call">អាប់ដេត DB ហៅ IVR</string>
     <string name="preference_update_DB_visual_call_summary">ស្វ័យ​អាប់ដេត​តាម WLAN ប៉ុណ្ណោះ</string>
@@ -2720,6 +2744,7 @@ To do Video Calling, turn ON Mobile Data or Video Calling in settings after the 
     <string name="about_phone_open_source_licenses">អាជ្ញាបណ្ណ​ប្រភព​បើក​ទូលាយ</string>
     <string name="no_network_connection">គ្មាន​ការភ្ជាប់​បណ្តាញ</string>
     <string name="unable_to_check_for_updates">មិន​អាច​ពិនិត្យ​រក​អាប់ដេត។ គ្មាន​ការភ្ជាប់​បណ្ដាញ។</string>
+    <string name="phoneAppLabel_dcm">ប្រដាប់មួល</string>
     <string name="dcm_vt_fail_cause_not_in_4g">មិន​អាច​ធ្វើ​ការហៅ​វីដេអូ ដោយសារ​អ្នក​មិន​ស្ថិត​ក្នុង​តំបន់ 4G។</string>
     <string name="ss_do_not_show_again_us">Do not show again</string>
     <string name="disable_advanced_calling_warning_msg">Your phone will not be able to make or receive HD voice and video calls when you turn this setting off.</string>
@@ -2753,6 +2778,8 @@ In the future if you want to use Wi-Fi for voice calling you can turn on Wi-Fi C
     <string name="save_text">រក្សា​ទុក</string>
     <string name="wfc_enable_dialog_title">បើកប្រើ​ការហៅ Wi-Fi</string>
     <string name="wfc_enable_dialog">ការបើកប្រើ​ការហៅ Wi-Fi នឹង​បិទ​ទម្រង់​សំចៃ​ថាមពល។ នេះ​អាច​បង្កើន​ការស៊ី​ថ្ម។ អ្នកផ្ដល់សេវា​ខ្លះ​អាច​មិន​គាំទ្រ​មុខងារ​នេះ។</string>
+    <string name="group_call_not_support_emergency_number">មិន​អាច​ថែម​លេខ​អាសន្ន​ទៅ​ការហៅ​ជាក្រុម។</string>
+    <string name="group_call_not_support_emergency_number_all">មិន​អាច​ថែម​លេខ​អាសន្ន​ទៅ​ការហៅ​ជាក្រុម។ បាន​ថែម​ទំនាក់ទំនង​ដែល​បាន​ជ្រើស​ផ្សេងទៀត​ទាំងអស់។</string>
     <string name="enable_data_popup_message">ដើម្បី​បើកប្រើ​មុខងារ​នេះ ទិន្នន័យ​ចល័ត​ត្រូវតែ​បាន​បើក។</string>
     <string name="enable_data_popup_tittle">មិន​អាច​បើកប្រើ​មុខងារ</string>
 </resources>

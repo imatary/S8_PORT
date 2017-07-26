@@ -95,7 +95,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0d0c61
+    const v2, 0x7f0d0cd2
 
     invoke-virtual {p0, v2, v1}, Lcom/android/phone/mobilenetworks/kor/NetworkMode;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -125,7 +125,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0d0c60
+    const v2, 0x7f0d0cd1
 
     invoke-virtual {p0, v2, v1}, Lcom/android/phone/mobilenetworks/kor/NetworkMode;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -561,7 +561,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f0d0c62
+    const v3, 0x7f0d0cd3
 
     invoke-virtual {p0, v3, v2}, Lcom/android/phone/mobilenetworks/kor/NetworkMode;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

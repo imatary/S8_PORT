@@ -1285,7 +1285,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0213
+    const v1, 0x7f0d0271
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1295,7 +1295,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0292
+    const v2, 0x7f0d02f2
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1353,7 +1353,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0212
+    const v2, 0x7f0d0270
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1363,7 +1363,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d028e
+    const v3, 0x7f0d02ee
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1495,6 +1495,8 @@
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
 
+    const v2, 0x7f0d0270
+
     const/4 v1, 0x0
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
@@ -1597,15 +1599,13 @@
 
     move-result v1
 
-    if-eq v0, v1, :cond_0
+    if-ge v0, v1, :cond_2
 
     invoke-virtual {p0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    const v1, 0x7f0d0212
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1613,7 +1613,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d028d
+    const v2, 0x7f0d02ec
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1622,6 +1622,39 @@
     invoke-static {v0, v1}, Lcom/android/phone/utils/SALogging;->sendSAEventLog(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
+
+    :cond_2
+    iget v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mScrollLocX:I
+
+    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mHorizontalScrollView:Landroid/widget/HorizontalScrollView;
+
+    invoke-virtual {v1}, Landroid/widget/HorizontalScrollView;->getScrollX()I
+
+    move-result v1
+
+    if-le v0, v1, :cond_0
+
+    invoke-virtual {p0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const v2, 0x7f0d02ed
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/android/phone/utils/SALogging;->sendSAEventLog(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto/16 :goto_0
 
     nop
 
@@ -1959,9 +1992,9 @@
 .end method
 
 .method public onClick(Landroid/view/View;)V
-    .locals 7
+    .locals 8
 
-    const/4 v6, 0x0
+    const/4 v2, 0x0
 
     invoke-virtual {p0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->getContext()Landroid/content/Context;
 
@@ -1971,6 +2004,18 @@
 
     move-result v1
 
+    if-eqz v1, :cond_0
+
+    invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isAvailableVoWIFI()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    :cond_0
+    move v1, v2
+
+    :goto_0
     sput-boolean v1, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mIsNoService:Z
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
@@ -1981,26 +2026,26 @@
 
     sget-boolean v1, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mIsNoService:Z
 
-    if-eqz v1, :cond_1
-
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_3
 
     if-eqz v0, :cond_1
 
-    iget-wide v2, v0, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter$ViewHolder;->mId:J
+    if-eqz v0, :cond_3
 
-    const-wide/16 v4, -0x2
+    iget-wide v4, v0, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter$ViewHolder;->mId:J
 
-    cmp-long v1, v2, v4
+    const-wide/16 v6, -0x2
 
-    if-eqz v1, :cond_1
+    cmp-long v1, v4, v6
 
-    :cond_0
+    if-eqz v1, :cond_3
+
+    :cond_1
     invoke-virtual {p0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    const v2, 0x7f0d0825
+    const v2, 0x7f0d0889
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2010,24 +2055,29 @@
 
     return-void
 
-    :cond_1
-    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mEmergencyEmptyItem:Lcom/android/phone/emergencydialer/EmergencyContactItem;
-
-    if-eqz v1, :cond_2
-
-    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mEmergencyEmptyItem:Lcom/android/phone/emergencydialer/EmergencyContactItem;
-
-    invoke-virtual {v1, v6}, Lcom/android/phone/emergencydialer/EmergencyContactItem;->updateEmergencyContact(I)V
-
-    :goto_0
-    return-void
-
     :cond_2
-    check-cast p1, Lcom/android/phone/emergencydialer/EmergencyContactItem;
-
-    invoke-virtual {p1, v6}, Lcom/android/phone/emergencydialer/EmergencyContactItem;->updateEmergencyContact(I)V
+    const/4 v1, 0x1
 
     goto :goto_0
+
+    :cond_3
+    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mEmergencyEmptyItem:Lcom/android/phone/emergencydialer/EmergencyContactItem;
+
+    if-eqz v1, :cond_4
+
+    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mEmergencyEmptyItem:Lcom/android/phone/emergencydialer/EmergencyContactItem;
+
+    invoke-virtual {v1, v2}, Lcom/android/phone/emergencydialer/EmergencyContactItem;->updateEmergencyContact(I)V
+
+    :goto_1
+    return-void
+
+    :cond_4
+    check-cast p1, Lcom/android/phone/emergencydialer/EmergencyContactItem;
+
+    invoke-virtual {p1, v2}, Lcom/android/phone/emergencydialer/EmergencyContactItem;->updateEmergencyContact(I)V
+
+    goto :goto_1
 .end method
 
 .method protected onFinishInflate()V

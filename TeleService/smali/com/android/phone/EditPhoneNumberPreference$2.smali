@@ -39,7 +39,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f0d0995
+    const v4, 0x7f0d09fb
 
     iget-object v1, p0, Lcom/android/phone/EditPhoneNumberPreference$2;->this$0:Lcom/android/phone/EditPhoneNumberPreference;
 

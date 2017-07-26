@@ -1221,18 +1221,23 @@
     return-void
 
     :cond_1
-    if-nez p3, :cond_2
+    if-eqz p3, :cond_2
 
-    new-instance p3, Landroid/os/PersistableBundle;
+    invoke-virtual {p3}, Landroid/os/PersistableBundle;->isEmpty()Z
 
-    invoke-direct {p3}, Landroid/os/PersistableBundle;-><init>()V
+    move-result v6
+
+    if-eqz v6, :cond_3
 
     :cond_2
+    return-void
+
+    :cond_3
     invoke-direct {p0, p1}, Lcom/android/phone/CarrierConfigLoader;->getPackageVersion(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    if-nez v5, :cond_3
+    if-nez v5, :cond_4
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -1256,7 +1261,7 @@
 
     return-void
 
-    :cond_3
+    :cond_4
     const/4 v3, 0x0
 
     :try_start_0

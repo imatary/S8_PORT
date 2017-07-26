@@ -122,7 +122,7 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    const v3, 0x7f0d0661
+    const v3, 0x7f0d06c5
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/IpCallTabFragment;->getString(I)Ljava/lang/String;
 
@@ -741,7 +741,7 @@
 .method public onTabChanged(Ljava/lang/String;)V
     .locals 7
 
-    const v6, 0x7f10029c
+    const v6, 0x7f10029f
 
     const/4 v5, 0x0
 

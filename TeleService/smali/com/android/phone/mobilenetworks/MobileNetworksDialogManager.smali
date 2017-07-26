@@ -9,6 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$-void_setDataRoaming_android_content_Context_context_android_preference_TwoStatePreference_dataRoamingButton_LambdaImpl0;,
         Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$-void_setMobileDataEnabledDialog_android_content_Context_context_android_preference_TwoStatePreference_dataEnableButton_LambdaImpl0;,
         Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$-void_setMobileDataEnabledDialog_android_content_Context_context_android_preference_TwoStatePreference_dataEnableButton_LambdaImpl1;,
         Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$-void_setMobileDataEnabledDialog_android_content_Context_context_android_preference_TwoStatePreference_dataEnableButton_LambdaImpl2;,
@@ -30,17 +31,7 @@
 
 
 # direct methods
-.method static synthetic -com_android_phone_mobilenetworks_MobileNetworksDialogManager_lambda$1(Landroid/content/DialogInterface;I)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-static {v0}, Lcom/android/phone/mobilenetworks/boundary/NetworkProxy;->setMobileDataEnable(Z)V
-
-    return-void
-.end method
-
-.method static synthetic -com_android_phone_mobilenetworks_MobileNetworksDialogManager_lambda$2(Landroid/preference/TwoStatePreference;Landroid/content/DialogInterface;I)V
+.method static synthetic -com_android_phone_mobilenetworks_MobileNetworksDialogManager_lambda$1(Landroid/preference/TwoStatePreference;Landroid/content/DialogInterface;I)V
     .locals 1
 
     const/4 v0, 0x0
@@ -50,7 +41,27 @@
     return-void
 .end method
 
-.method static synthetic -com_android_phone_mobilenetworks_MobileNetworksDialogManager_lambda$3(Landroid/preference/TwoStatePreference;Landroid/content/DialogInterface;)V
+.method static synthetic -com_android_phone_mobilenetworks_MobileNetworksDialogManager_lambda$2(Landroid/content/DialogInterface;I)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-static {v0}, Lcom/android/phone/mobilenetworks/boundary/NetworkProxy;->setMobileDataEnable(Z)V
+
+    return-void
+.end method
+
+.method static synthetic -com_android_phone_mobilenetworks_MobileNetworksDialogManager_lambda$3(Landroid/preference/TwoStatePreference;Landroid/content/DialogInterface;I)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+
+    return-void
+.end method
+
+.method static synthetic -com_android_phone_mobilenetworks_MobileNetworksDialogManager_lambda$4(Landroid/preference/TwoStatePreference;Landroid/content/DialogInterface;)V
     .locals 1
 
     const/4 v0, 0x0
@@ -100,6 +111,14 @@
     return-void
 .end method
 
+.method static synthetic -wrap2(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Z)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->updateRoamingNotification(Z)V
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 3
 
@@ -124,6 +143,47 @@
     invoke-virtual {v0, p0}, Lcom/android/phone/mobilenetworks/controller/DesktopModeManager;->registerListener(Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;)V
 
     return-void
+.end method
+
+.method private getDataRoamWarningMessage(Landroid/content/Context;)Ljava/lang/String;
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const-string/jumbo v1, "data_roaming_style_for_jpn"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const v0, 0x7f0d03e5
+
+    :goto_0
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    return-object v1
+
+    :cond_0
+    const-string/jumbo v1, "data_roaming_noti_tray"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    const v0, 0x7f0d03e9
+
+    goto :goto_0
+
+    :cond_1
+    const v0, 0x7f0d0772
+
+    goto :goto_0
 .end method
 
 .method private getDataSelectionPopupIsSetKor()Z
@@ -171,7 +231,7 @@
 
     if-eqz v1, :cond_0
 
-    const v0, 0x7f0d075a
+    const v0, 0x7f0d07be
 
     :goto_0
     sget-object v1, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->mDialogContext:Landroid/content/Context;
@@ -191,14 +251,224 @@
 
     if-eqz v1, :cond_1
 
-    const v0, 0x7f0d0759
+    const v0, 0x7f0d07bd
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f0d0758
+    const v0, 0x7f0d07bc
 
     goto :goto_0
+.end method
+
+.method private getDataWarningMessage(Landroid/content/Context;Z)Ljava/lang/String;
+    .locals 3
+
+    const/4 v0, 0x0
+
+    if-eqz p2, :cond_5
+
+    const-string/jumbo v1, "mobile_newtork_style_for_ktt"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "CscFeature_RIL_ForceConnectMMS"
+
+    invoke-virtual {v1, v2}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const v0, 0x7f0d0a1d
+
+    :goto_0
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    return-object v1
+
+    :cond_0
+    const v0, 0x7f0d0a1d
+
+    goto :goto_0
+
+    :cond_1
+    const-string/jumbo v1, "mobile_newtork_style_for_lgt"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    const v0, 0x7f0d0a1e
+
+    goto :goto_0
+
+    :cond_2
+    const-string/jumbo v1, "mobile_newtork_style_for_skt"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    const v0, 0x7f0d0a1c
+
+    goto :goto_0
+
+    :cond_3
+    const-string/jumbo v1, "mobile_newtork_style_for_kor_open"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    const v0, 0x7f0d0a1f
+
+    goto :goto_0
+
+    :cond_4
+    const v0, 0x7f0d0774
+
+    goto :goto_0
+
+    :cond_5
+    const-string/jumbo v1, "mobile_newtork_style_for_ktt"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_7
+
+    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "CscFeature_RIL_ForceConnectMMS"
+
+    invoke-virtual {v1, v2}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_6
+
+    const v0, 0x7f0d0a18
+
+    goto :goto_0
+
+    :cond_6
+    const v0, 0x7f0d0a19
+
+    goto :goto_0
+
+    :cond_7
+    const-string/jumbo v1, "mobile_newtork_style_for_lgt"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_8
+
+    const v0, 0x7f0d0a1a
+
+    goto :goto_0
+
+    :cond_8
+    const-string/jumbo v1, "mobile_newtork_style_for_skt"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_9
+
+    const v0, 0x7f0d0a17
+
+    goto :goto_0
+
+    :cond_9
+    const-string/jumbo v1, "mobile_newtork_style_for_kor_open"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_a
+
+    const v0, 0x7f0d0a1b
+
+    goto :goto_0
+
+    :cond_a
+    const-string/jumbo v1, "ignore_product_type"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_b
+
+    const v0, 0x7f0d077c
+
+    goto/16 :goto_0
+
+    :cond_b
+    const-string/jumbo v1, "global_network_cdma_gsm_enable_for_vzw"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_d
+
+    invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isSupportVoLTEForVZW()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_c
+
+    const v0, 0x7f0d0778
+
+    goto/16 :goto_0
+
+    :cond_c
+    const v0, 0x7f0d0777
+
+    goto/16 :goto_0
+
+    :cond_d
+    const-string/jumbo v1, "network_mode_list_dcm"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_e
+
+    const v0, 0x7f0d077d
+
+    goto/16 :goto_0
+
+    :cond_e
+    const v0, 0x7f0d077a
+
+    goto/16 :goto_0
 .end method
 
 .method public static getInstance()Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;
@@ -292,7 +562,7 @@
 
     if-nez v3, :cond_1
 
-    const v3, 0x7f0d0755
+    const v3, 0x7f0d07b9
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -306,7 +576,7 @@
 
     if-eqz v3, :cond_0
 
-    const v3, 0x7f0d0753
+    const v3, 0x7f0d07b7
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -336,7 +606,7 @@
     return-void
 
     :cond_2
-    const v3, 0x7f0d074f
+    const v3, 0x7f0d07b3
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -496,13 +766,13 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f0d063c
+    const v3, 0x7f0d06a0
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v3
 
-    const v4, 0x7f0d0750
+    const v4, 0x7f0d07b4
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -514,13 +784,13 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d07d1
+    const v4, 0x7f0d0835
 
     invoke-virtual {v3, v4, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v3
 
-    const v4, 0x7f0d02e9
+    const v4, 0x7f0d0349
 
     invoke-virtual {v3, v4, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -586,7 +856,7 @@
 
     invoke-virtual {v5, v2}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v7, 0x7f0d076b
+    const v7, 0x7f0d07cf
 
     invoke-virtual {v5, v7}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -596,13 +866,13 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0760
+    const v8, 0x7f0d07c4
 
     invoke-virtual {v7, v8, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v7
 
-    const v8, 0x7f0d0761
+    const v8, 0x7f0d07c5
 
     invoke-virtual {v7, v8, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -676,19 +946,19 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d0981
+    const v12, 0x7f0d09e7
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
-    const v11, 0x7f100288
+    const v11, 0x7f100289
 
     invoke-virtual {v5, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
-    const v11, 0x7f10028a
+    const v11, 0x7f10028b
 
     invoke-virtual {v5, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -771,11 +1041,11 @@
 .method public static showRoamingDataSelectionPopupCommon(Landroid/content/Context;)Landroid/app/AlertDialog;
     .locals 9
 
-    const v8, 0x7f0d063c
+    const v8, 0x7f0d06a0
 
-    const v7, 0x7f0d0336
+    const v7, 0x7f0d0396
 
-    const v6, 0x7f0d0335
+    const v6, 0x7f0d0395
 
     const/4 v5, 0x0
 
@@ -805,7 +1075,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0752
+    const v4, 0x7f0d07b6
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -843,7 +1113,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0754
+    const v4, 0x7f0d07b8
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -955,7 +1225,7 @@
 
     aput-object v3, v18, v19
 
-    const v19, 0x7f0d0a2c
+    const v19, 0x7f0d0a93
 
     move-object/from16 v0, v17
 
@@ -979,7 +1249,7 @@
 
     move-result-object v17
 
-    const v18, 0x7f0d0a2b
+    const v18, 0x7f0d0a92
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1015,7 +1285,7 @@
 
     move-result-object v17
 
-    const v18, 0x7f0d0984
+    const v18, 0x7f0d09ea
 
     move-object/from16 v0, v17
 
@@ -1025,7 +1295,7 @@
 
     move-result-object v17
 
-    const v18, 0x7f0d0985
+    const v18, 0x7f0d09eb
 
     move-object/from16 v0, v17
 
@@ -1131,7 +1401,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0d098c
+    const v10, 0x7f0d09f2
 
     invoke-virtual {v9, v10}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1190,6 +1460,57 @@
     invoke-virtual {v8, v11}, Landroid/widget/CheckBox;->setEnabled(Z)V
 
     return-object v0
+.end method
+
+.method private updateRoamingNotification(Z)V
+    .locals 2
+
+    const-string/jumbo v0, "MobileNetworksDialogManager"
+
+    const-string/jumbo v1, "updateRoamingNotification"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string/jumbo v0, "data_roaming_noti_tray"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string/jumbo v0, "national_roaming_mode_menu"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    const-string/jumbo v0, "data_roaming_without_noti"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getNotificationMgr()Lcom/android/phone/NotificationMgr;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/android/phone/NotificationMgr;->updateRoamingNotification(Z)V
+
+    goto :goto_0
 .end method
 
 
@@ -1382,202 +1703,99 @@
 .end method
 
 .method public setDataRoaming(Landroid/content/Context;Landroid/preference/TwoStatePreference;)V
-    .locals 10
+    .locals 7
 
-    const/4 v9, 0x1
+    const/4 v5, 0x1
 
-    const/4 v8, 0x0
+    const/4 v6, 0x0
 
-    const-string/jumbo v5, "setDataRoaming"
+    const-string/jumbo v4, "setDataRoaming"
 
-    invoke-direct {p0, v5}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v4}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->log(Ljava/lang/String;)V
 
     invoke-virtual {p2}, Landroid/preference/TwoStatePreference;->isChecked()Z
 
     move-result v0
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_2
 
-    const-string/jumbo v5, "data_roaming_warning_popup"
+    const-string/jumbo v4, "data_roaming_warning_popup"
 
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v4}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v5
+    move-result v4
 
-    if-nez v5, :cond_3
+    if-eqz v4, :cond_1
 
-    invoke-static {v9}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
-
-    invoke-static {p1, v8}, Lcom/android/phone/mobilenetworks/MobileNetworkUtils;->setDataRoamingEnabledBySoftSim(Landroid/content/Context;Z)V
-
-    const-string/jumbo v5, "data_roaming_without_noti"
-
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_0
-
-    const-string/jumbo v5, "setDataRoaming: DATA_ROAMING_WITHOUT_NOTI"
-
-    invoke-direct {p0, v5}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->log(Ljava/lang/String;)V
-
-    return-void
-
-    :cond_0
-    const-string/jumbo v5, "data_roaming_noti_tray"
-
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    const-string/jumbo v5, "national_roaming_mode_menu"
-
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    :cond_1
-    :goto_0
-    return-void
-
-    :cond_2
-    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Lcom/android/phone/PhoneGlobals;->getNotificationMgr()Lcom/android/phone/NotificationMgr;
-
-    move-result-object v5
-
-    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->getDataRoamingEnabled()Z
-
-    move-result v6
-
-    invoke-virtual {v5, v6}, Lcom/android/phone/NotificationMgr;->updateRoamingNotification(Z)V
-
-    goto :goto_0
-
-    :cond_3
-    new-instance v4, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$15;
-
-    invoke-direct {v4, p0, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$15;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/preference/TwoStatePreference;)V
-
-    invoke-static {}, Lcom/android/phone/StringManager;->getInstance()Lcom/android/phone/StringManager;
-
-    move-result-object v5
-
-    sget-object v6, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->mDialogContext:Landroid/content/Context;
-
-    const-string/jumbo v7, "roaming_warning"
-
-    invoke-virtual {v5, v6, v7}, Lcom/android/phone/StringManager;->getString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->getDataRoamWarningMessage(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
-    const v5, 0x7f0d038b
+    const v4, 0x7f0d03eb
 
-    invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const-string/jumbo v5, "data_roaming_style_for_jpn"
+    invoke-virtual {p2, v6}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
 
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    new-instance v4, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
 
-    move-result v5
+    invoke-direct {v4, p0, p1, v2, v1}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    if-eqz v5, :cond_6
+    invoke-virtual {v4, v5}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setCheckBox(Z)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
 
-    const v5, 0x7f0d0385
+    move-result-object v4
 
-    invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setCancelable(Z)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
 
-    move-result-object v1
+    move-result-object v4
 
-    :cond_4
-    :goto_1
-    invoke-virtual {p2, v8}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    new-instance v5, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$15;
 
-    new-instance v5, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
+    invoke-direct {v5, p0}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$15;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;)V
 
-    invoke-direct {v5, p0, p1, v2, v1}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-virtual {v5, v9}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setCheckBox(Z)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v9}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setCancelable(Z)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v4}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setOkClickListener(Landroid/content/DialogInterface$OnClickListener;)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->showConfirmDialog()Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
+    invoke-virtual {v4, v5}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setOkClickListener(Landroid/content/DialogInterface$OnClickListener;)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
 
     move-result-object v3
 
-    :cond_5
-    :goto_2
+    const-string/jumbo v4, "network_mode_list_dcm"
+
+    invoke-static {v4}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    new-instance v4, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$-void_setDataRoaming_android_content_Context_context_android_preference_TwoStatePreference_dataRoamingButton_LambdaImpl0;
+
+    invoke-direct {v4, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$-void_setDataRoaming_android_content_Context_context_android_preference_TwoStatePreference_dataRoamingButton_LambdaImpl0;-><init>(Landroid/preference/TwoStatePreference;)V
+
+    invoke-virtual {v3, v4}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setNoClickListener(Landroid/content/DialogInterface$OnClickListener;)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
+
+    invoke-virtual {v3, v6}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setCheckBox(Z)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
+
+    :cond_0
+    invoke-virtual {v3}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->showConfirmDialog()Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
+
+    :goto_0
     return-void
 
-    :cond_6
-    const-string/jumbo v5, "data_roaming_noti_tray"
+    :cond_1
+    invoke-static {v5}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
 
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-direct {p0, v5}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->updateRoamingNotification(Z)V
 
-    move-result v5
+    invoke-static {p1, v6}, Lcom/android/phone/mobilenetworks/MobileNetworkUtils;->setDataRoamingEnabledBySoftSim(Landroid/content/Context;Z)V
 
-    if-eqz v5, :cond_4
+    goto :goto_0
 
-    const v5, 0x7f0d0389
+    :cond_2
+    invoke-static {v6}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
 
-    invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-direct {p0, v6}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->updateRoamingNotification(Z)V
 
-    move-result-object v1
-
-    goto :goto_1
-
-    :cond_7
-    invoke-static {v8}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
-
-    const-string/jumbo v5, "data_roaming_noti_tray"
-
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_5
-
-    const-string/jumbo v5, "national_roaming_mode_menu"
-
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-nez v5, :cond_5
-
-    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Lcom/android/phone/PhoneGlobals;->getNotificationMgr()Lcom/android/phone/NotificationMgr;
-
-    move-result-object v5
-
-    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->getDataRoamingEnabled()Z
-
-    move-result v6
-
-    invoke-virtual {v5, v6}, Lcom/android/phone/NotificationMgr;->updateRoamingNotification(Z)V
-
-    goto :goto_2
+    goto :goto_0
 .end method
 
 .method public setDataRoamingforATT(Landroid/content/Context;Landroid/preference/TwoStatePreference;)V
@@ -1607,7 +1825,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f0d038a
+    const v4, 0x7f0d03ea
 
     invoke-virtual {p1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1637,6 +1855,8 @@
 .method public setMobileDataEnabledDialog(Landroid/content/Context;Landroid/preference/TwoStatePreference;)V
     .locals 5
 
+    const/4 v4, 0x1
+
     invoke-virtual {p2}, Landroid/preference/TwoStatePreference;->isChecked()Z
 
     move-result v3
@@ -1651,15 +1871,13 @@
 
     if-eqz v3, :cond_0
 
-    const v3, 0x7f0d070f
+    const v3, 0x7f0d0773
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v3, 0x7f0d0710
-
-    invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-direct {p0, p1, v4}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->getDataWarningMessage(Landroid/content/Context;Z)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1703,9 +1921,7 @@
 
     invoke-direct {p0, v3}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->log(Ljava/lang/String;)V
 
-    const/4 v3, 0x1
-
-    invoke-static {v3}, Lcom/android/phone/mobilenetworks/MobileNetworkUtils;->setMobileDataEnabled(Z)V
+    invoke-static {v4}, Lcom/android/phone/mobilenetworks/MobileNetworkUtils;->setMobileDataEnabled(Z)V
 
     goto :goto_0
 
@@ -1741,13 +1957,13 @@
 .method public setVolteCall(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Landroid/preference/SwitchPreference;)V
     .locals 7
 
-    const v3, 0x7f0d08e0
+    const v3, 0x7f0d0944
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v3, 0x7f0d0bdb
+    const v3, 0x7f0d0c46
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1759,7 +1975,7 @@
 
     if-eqz v3, :cond_0
 
-    const v3, 0x7f0d08e1
+    const v3, 0x7f0d0945
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1780,7 +1996,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d08d9
+    const v4, 0x7f0d093d
 
     invoke-virtual {p1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1788,7 +2004,7 @@
 
     const-string/jumbo v5, "%s"
 
-    const v6, 0x7f0d08d6
+    const v6, 0x7f0d093a
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1808,7 +2024,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0bdc
+    const v4, 0x7f0d0c47
 
     invoke-virtual {p1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1871,7 +2087,7 @@
     :goto_0
     sget-object v7, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->mDialogContext:Landroid/content/Context;
 
-    const v8, 0x7f0d0756
+    const v8, 0x7f0d07ba
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1891,7 +2107,7 @@
 
     sget-object v7, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->mDialogContext:Landroid/content/Context;
 
-    const v8, 0x7f0d0760
+    const v8, 0x7f0d07c4
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1899,7 +2115,7 @@
 
     sget-object v7, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->mDialogContext:Landroid/content/Context;
 
-    const v8, 0x7f0d0761
+    const v8, 0x7f0d07c5
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1967,13 +2183,13 @@
 
     if-eqz v3, :cond_0
 
-    const v3, 0x7f0d088b
+    const v3, 0x7f0d08ef
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v3, 0x7f0d0885
+    const v3, 0x7f0d08e9
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2002,19 +2218,19 @@
 .method public showMobileDataOffDialog(Landroid/content/Context;Landroid/preference/TwoStatePreference;)V
     .locals 7
 
-    const v5, 0x7f0d0716
+    const/4 v5, 0x0
 
-    invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-direct {p0, p1, v5}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->getDataWarningMessage(Landroid/content/Context;Z)Ljava/lang/String;
 
     move-result-object v0
 
-    const v5, 0x7f0d070f
+    const v5, 0x7f0d0773
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v5, 0x7f0d0717
+    const v5, 0x7f0d077b
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2022,74 +2238,6 @@
 
     move-object v4, p2
 
-    const-string/jumbo v5, "ignore_product_type"
-
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_0
-
-    const v5, 0x7f0d0718
-
-    invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    :cond_0
-    const-string/jumbo v5, "feature_vzw"
-
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    const-string/jumbo v5, "video_call_not_support"
-
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isSupportVoLTEForVZW()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_3
-
-    const v5, 0x7f0d0714
-
-    invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    :cond_1
-    :goto_0
-    const-string/jumbo v5, "feature_dcm"
-
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    const-string/jumbo v5, "video_call_not_support"
-
-    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    const v5, 0x7f0d0719
-
-    invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    :cond_2
     new-instance v5, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
 
     invoke-direct {v5, p0, p1, v2, v0}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
@@ -2115,15 +2263,6 @@
     move-result-object v3
 
     return-void
-
-    :cond_3
-    const v5, 0x7f0d0713
-
-    invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
 .end method
 
 .method public showMobileDataOffDialogWhenBootup()V
@@ -2131,7 +2270,7 @@
 
     sget-object v3, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->mDialogContext:Landroid/content/Context;
 
-    const v4, 0x7f0d0d1a
+    const v4, 0x7f0d0d8b
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2139,7 +2278,7 @@
 
     sget-object v3, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->mDialogContext:Landroid/content/Context;
 
-    const v4, 0x7f0d0d12
+    const v4, 0x7f0d0d83
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2169,7 +2308,7 @@
 
     sget-object v3, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->mDialogContext:Landroid/content/Context;
 
-    const v4, 0x7f0d0d1b
+    const v4, 0x7f0d0d8c
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2206,13 +2345,13 @@
 
     invoke-direct {v2, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f0d070e
+    const v3, 0x7f0d0772
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v2
 
-    const v3, 0x7f0d070d
+    const v3, 0x7f0d0771
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 

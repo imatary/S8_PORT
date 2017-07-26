@@ -261,9 +261,9 @@
 
     iput-object v0, p0, Lcom/android/phone/FdnSetting;->mFDNHandler:Landroid/os/Handler;
 
-    const v0, 0x7f0d0453
+    const v0, 0x7f0d04b3
 
-    const v1, 0x7f0d0454
+    const v1, 0x7f0d04b4
 
     filled-new-array {v0, v1}, [I
 
@@ -311,7 +311,7 @@
 .method private final displayPinChangeDialog(IZ)V
     .locals 8
 
-    const v7, 0x7f0d0449
+    const v7, 0x7f0d04a9
 
     const/4 v5, 0x0
 
@@ -327,7 +327,7 @@
 
     packed-switch v3, :pswitch_data_0
 
-    const v1, 0x7f0d0447
+    const v1, 0x7f0d04a7
 
     :goto_0
     if-ne p1, v6, :cond_2
@@ -388,22 +388,22 @@
     return-void
 
     :pswitch_0
-    const v1, 0x7f0d0447
+    const v1, 0x7f0d04a7
 
     goto :goto_0
 
     :pswitch_1
-    const v1, 0x7f0d043e
+    const v1, 0x7f0d049e
 
     goto :goto_0
 
     :pswitch_2
-    const v1, 0x7f0d043f
+    const v1, 0x7f0d049f
 
     goto :goto_0
 
     :pswitch_3
-    const v1, 0x7f0d0440
+    const v1, 0x7f0d04a0
 
     goto :goto_0
 
@@ -672,7 +672,7 @@
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonChangePin2:Lcom/android/phone/EditPinPreference;
 
-    const v1, 0x7f0d0450
+    const v1, 0x7f0d04b0
 
     invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
@@ -690,7 +690,7 @@
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonChangePin2:Lcom/android/phone/EditPinPreference;
 
-    const v1, 0x7f0d0452
+    const v1, 0x7f0d04b2
 
     invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
@@ -720,7 +720,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonChangePin2:Lcom/android/phone/EditPinPreference;
 
-    const v1, 0x7f0d0451
+    const v1, 0x7f0d04b1
 
     invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
@@ -763,7 +763,7 @@
     move-result-object v0
 
     :goto_0
-    const v1, 0x7f0d041b
+    const v1, 0x7f0d047b
 
     iget-object v3, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
@@ -924,7 +924,7 @@
     move-result-object v0
 
     :goto_2
-    const v2, 0x7f0d041b
+    const v2, 0x7f0d047b
 
     iget-object v6, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
@@ -970,7 +970,7 @@
     goto :goto_0
 
     :cond_2
-    const v6, 0x7f0d0444
+    const v6, 0x7f0d04a4
 
     invoke-direct {p0, v6}, Lcom/android/phone/FdnSetting;->displayMessage(I)V
 
@@ -1021,19 +1021,19 @@
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
-    const v1, 0x7f0d040a
+    const v1, 0x7f0d046a
 
     invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
-    const v1, 0x7f0d0405
+    const v1, 0x7f0d0465
 
     invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
-    const v1, 0x7f0d0408
+    const v1, 0x7f0d0468
 
     invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setDialogTitle(I)V
 
@@ -1089,19 +1089,19 @@
     :cond_2
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
-    const v1, 0x7f0d040b
+    const v1, 0x7f0d046b
 
     invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
-    const v1, 0x7f0d0406
+    const v1, 0x7f0d0466
 
     invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
-    const v1, 0x7f0d0407
+    const v1, 0x7f0d0467
 
     invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setDialogTitle(I)V
 
@@ -1157,7 +1157,7 @@
 .method private updatePINChangeState(Z)V
     .locals 8
 
-    const v7, 0x7f0d0444
+    const v7, 0x7f0d04a4
 
     const/16 v6, 0xc8
 
@@ -1292,7 +1292,7 @@
 
     invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setText(Ljava/lang/String;)V
 
-    const v1, 0x7f0d0443
+    const v1, 0x7f0d04a3
 
     invoke-direct {p0, v1, v3}, Lcom/android/phone/FdnSetting;->displayPinChangeDialog(IZ)V
 
@@ -1416,7 +1416,7 @@
     goto/16 :goto_1
 
     :cond_6
-    const v1, 0x7f0d0445
+    const v1, 0x7f0d04a5
 
     invoke-direct {p0, v1, v3}, Lcom/android/phone/FdnSetting;->displayPinChangeDialog(IZ)V
 
@@ -1438,7 +1438,7 @@
     goto/16 :goto_1
 
     :cond_8
-    const v1, 0x7f0d0445
+    const v1, 0x7f0d04a5
 
     invoke-direct {p0, v1, v3}, Lcom/android/phone/FdnSetting;->displayPinChangeDialog(IZ)V
 
@@ -1826,7 +1826,7 @@
 
     iget-object v2, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
-    const v3, 0x7f0d0408
+    const v3, 0x7f0d0468
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPinPreference;->setDialogTitle(I)V
 
@@ -1835,7 +1835,7 @@
     :cond_3
     iget-object v2, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
-    const v3, 0x7f0d0407
+    const v3, 0x7f0d0467
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPinPreference;->setDialogTitle(I)V
 
@@ -2087,7 +2087,7 @@
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
 
-    const v3, 0x7f0d020c
+    const v3, 0x7f0d0269
 
     const-string/jumbo v0, "FdnSetting"
 
@@ -2105,7 +2105,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0285
+    const v1, 0x7f0d02e4
 
     invoke-virtual {p0, v1}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -2144,7 +2144,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0287
+    const v1, 0x7f0d02e6
 
     invoke-virtual {p0, v1}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -2159,7 +2159,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0286
+    const v1, 0x7f0d02e5
 
     invoke-virtual {p0, v1}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -2178,7 +2178,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0288
+    const v1, 0x7f0d02e7
 
     invoke-virtual {p0, v1}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -2204,7 +2204,7 @@
 
     invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onResume()V
 
-    const v2, 0x7f0d020c
+    const v2, 0x7f0d0269
 
     invoke-virtual {p0, v2}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -2349,7 +2349,7 @@
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setIconAttribute(I)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f0d032d
+    const v2, 0x7f0d038d
 
     invoke-virtual {p0, v2}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -2357,7 +2357,7 @@
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f0d0449
+    const v2, 0x7f0d04a9
 
     invoke-virtual {p0, v2}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -2369,7 +2369,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/FdnSetting$3;-><init>(Lcom/android/phone/FdnSetting;)V
 
-    const v3, 0x7f0d0334
+    const v3, 0x7f0d0394
 
     invoke-virtual {v0, v3, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

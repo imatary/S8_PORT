@@ -772,7 +772,7 @@
 .method public startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
     .locals 6
 
-    const v5, 0x7f0d02f6
+    const v5, 0x7f0d0356
 
     move-object v0, p0
 

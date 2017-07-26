@@ -161,9 +161,9 @@
 
     invoke-virtual {p0, v2, v3}, Lcom/android/phone/ADNList;->log(Ljava/lang/String;Z)V
 
-    const v1, 0x7f0d0427
+    const v1, 0x7f0d0487
 
-    const v0, 0x7f0d0426
+    const v0, 0x7f0d0486
 
     const-string/jumbo v2, "feature_multisim"
 
@@ -187,9 +187,9 @@
 
     if-ne v2, v3, :cond_0
 
-    const v1, 0x7f0d042a
+    const v1, 0x7f0d048a
 
-    const v0, 0x7f0d0429
+    const v0, 0x7f0d0489
 
     :cond_0
     invoke-virtual {p0}, Lcom/android/phone/ADNList;->isResumed()Z
@@ -253,7 +253,7 @@
 
     if-eqz v3, :cond_3
 
-    const v0, 0x7f0d042b
+    const v0, 0x7f0d048b
 
     goto :goto_0
 
@@ -590,7 +590,7 @@
 
     invoke-super {p0}, Landroid/app/ListFragment;->onResume()V
 
-    const v0, 0x7f0d0203
+    const v0, 0x7f0d0260
 
     invoke-virtual {p0, v0}, Lcom/android/phone/ADNList;->getString(I)Ljava/lang/String;
 

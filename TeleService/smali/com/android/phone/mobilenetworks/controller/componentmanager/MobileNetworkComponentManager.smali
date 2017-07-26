@@ -109,6 +109,10 @@
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
+    const-string/jumbo v1, "com.samsung.intent.action.EMERGENCY_STATE_CHANGED"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
     return-object v0
 .end method
 

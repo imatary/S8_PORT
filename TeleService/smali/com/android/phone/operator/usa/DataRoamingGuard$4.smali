@@ -37,33 +37,31 @@
 .method public onClick(Landroid/view/View;)V
     .locals 5
 
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
     const/4 v3, 0x1
 
     iget-object v1, p0, Lcom/android/phone/operator/usa/DataRoamingGuard$4;->this$0:Lcom/android/phone/operator/usa/DataRoamingGuard;
 
-    const v4, 0x7f1000aa
+    const v2, 0x7f1000aa
 
-    invoke-virtual {v1, v4}, Lcom/android/phone/operator/usa/DataRoamingGuard;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v2}, Lcom/android/phone/operator/usa/DataRoamingGuard;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iget-object v4, p0, Lcom/android/phone/operator/usa/DataRoamingGuard$4;->this$0:Lcom/android/phone/operator/usa/DataRoamingGuard;
-
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v1
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_0
 
-    move v1, v2
+    iget-object v1, p0, Lcom/android/phone/operator/usa/DataRoamingGuard$4;->this$0:Lcom/android/phone/operator/usa/DataRoamingGuard;
 
-    :goto_0
-    invoke-static {v4, v1}, Lcom/android/phone/operator/usa/DataRoamingGuard;->-wrap1(Lcom/android/phone/operator/usa/DataRoamingGuard;I)V
+    invoke-static {v1, v4}, Lcom/android/phone/operator/usa/DataRoamingGuard;->-wrap1(Lcom/android/phone/operator/usa/DataRoamingGuard;I)V
 
+    :cond_0
     iget-object v1, p0, Lcom/android/phone/operator/usa/DataRoamingGuard$4;->this$0:Lcom/android/phone/operator/usa/DataRoamingGuard;
 
     invoke-static {v1, v3}, Lcom/android/phone/operator/usa/DataRoamingGuard;->-wrap3(Lcom/android/phone/operator/usa/DataRoamingGuard;I)V
@@ -74,7 +72,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_1
 
     iget-object v1, p0, Lcom/android/phone/operator/usa/DataRoamingGuard$4;->this$0:Lcom/android/phone/operator/usa/DataRoamingGuard;
 
@@ -84,12 +82,12 @@
 
     invoke-static {v1}, Lcom/android/phone/operator/usa/DataRoamingGuard;->-wrap0(Lcom/android/phone/operator/usa/DataRoamingGuard;)V
 
-    :cond_0
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalRoamingInService()Z
+    :cond_1
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticDataRoamingInService()Z
 
     move-result v1
 
-    if-nez v1, :cond_1
+    if-eqz v1, :cond_2
 
     const-string/jumbo v1, "global_network_cdma_gsm_enable_for_spr"
 
@@ -97,32 +95,32 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_2
 
     const-string/jumbo v1, "DataRoamingGuard"
 
-    const-string/jumbo v4, "mRoamListener - domestic roaming guard : set DATA_ROAMING into true"
+    const-string/jumbo v2, "mRoamListener - domestic roaming guard : set DATA_ROAMING into true"
 
-    invoke-static {v1, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-static {v3}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
 
-    :cond_1
+    :cond_2
     const-string/jumbo v1, "data_roam_guard_first_time"
 
     invoke-static {v1, v3}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
 
     move-result v1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_3
 
     const-string/jumbo v1, "data_roam_guard_first_time"
 
-    invoke-static {v1, v2}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
+    invoke-static {v1, v4}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
 
     iget-object v1, p0, Lcom/android/phone/operator/usa/DataRoamingGuard$4;->this$0:Lcom/android/phone/operator/usa/DataRoamingGuard;
 
-    const v2, 0x7f0d0688
+    const v2, 0x7f0d06ec
 
     invoke-static {v1, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -130,15 +128,10 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    :cond_2
+    :cond_3
     iget-object v1, p0, Lcom/android/phone/operator/usa/DataRoamingGuard$4;->this$0:Lcom/android/phone/operator/usa/DataRoamingGuard;
 
     invoke-virtual {v1}, Lcom/android/phone/operator/usa/DataRoamingGuard;->finish()V
 
     return-void
-
-    :cond_3
-    move v1, v3
-
-    goto :goto_0
 .end method

@@ -601,13 +601,13 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0d10
+    const v1, 0x7f0d0d81
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0d0d0f
+    const v1, 0x7f0d0d80
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -617,7 +617,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/GsmUmtsOptions$2;-><init>(Lcom/android/phone/GsmUmtsOptions;)V
 
-    const v2, 0x7f0d0d11
+    const v2, 0x7f0d0d82
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -729,7 +729,7 @@
 
     invoke-virtual {v1, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    const-string/jumbo v2, "callerType"
+    const-string/jumbo v2, "CallerType"
 
     invoke-virtual {v1, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 

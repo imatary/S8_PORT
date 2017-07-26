@@ -49,7 +49,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/CaptureImageViewer$4;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    const v3, 0x7f0d063b
+    const v3, 0x7f0d069f
 
     invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/CaptureImageViewer;->getString(I)Ljava/lang/String;
 
@@ -59,7 +59,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/CaptureImageViewer$4;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    const v3, 0x7f0d0723
+    const v3, 0x7f0d0787
 
     invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/CaptureImageViewer;->getString(I)Ljava/lang/String;
 
@@ -69,7 +69,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/CaptureImageViewer$4;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    const v3, 0x7f0d0182
+    const v3, 0x7f0d01df
 
     invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/CaptureImageViewer;->getString(I)Ljava/lang/String;
 
@@ -83,7 +83,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/CaptureImageViewer$4;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    const v3, 0x7f0d0971
+    const v3, 0x7f0d09d7
 
     invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/CaptureImageViewer;->getString(I)Ljava/lang/String;
 

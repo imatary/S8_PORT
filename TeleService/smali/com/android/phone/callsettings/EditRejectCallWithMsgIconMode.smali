@@ -671,7 +671,7 @@
 
     iget-object v6, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mSaveButton:Landroid/widget/Button;
 
-    const v7, 0x7f0d041e
+    const v7, 0x7f0d047e
 
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(I)V
 
@@ -749,9 +749,9 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 7
 
-    const v6, 0x7f0d0511
+    const v6, 0x7f0d0571
 
-    const v5, 0x7f0d050d
+    const v5, 0x7f0d056d
 
     const/4 v4, 0x6
 
@@ -763,7 +763,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020006
+    const v1, 0x7f020008
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -797,7 +797,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020007
+    const v1, 0x7f020009
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

@@ -1194,7 +1194,7 @@
 
     if-eqz v21, :cond_c
 
-    const v21, 0x7f0d0d00
+    const v21, 0x7f0d0d71
 
     invoke-static/range {v21 .. v21}, Lcom/android/phone/PhoneUtils;->displayLongToast(I)V
 
@@ -1209,14 +1209,14 @@
 
     if-eqz v21, :cond_d
 
-    const v21, 0x7f0d0d01
+    const v21, 0x7f0d0d72
 
     invoke-static/range {v21 .. v21}, Lcom/android/phone/PhoneUtils;->displayLongToast(I)V
 
     goto/16 :goto_0
 
     :cond_d
-    const v21, 0x7f0d0cff
+    const v21, 0x7f0d0d70
 
     invoke-static/range {v21 .. v21}, Lcom/android/phone/PhoneUtils;->displayLongToast(I)V
 
@@ -1398,7 +1398,7 @@
 
     move-result-object v22
 
-    const v23, 0x7f0d0d02
+    const v23, 0x7f0d0d73
 
     invoke-virtual/range {v22 .. v23}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

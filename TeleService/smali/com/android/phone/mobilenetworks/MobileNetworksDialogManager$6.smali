@@ -95,7 +95,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d075e
+    const v5, 0x7f0d07c2
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -122,7 +122,7 @@
 
     invoke-static {v6, v7}, Lcom/android/phone/NetworkNotificationUI;->sendDataConnectionIntent(ZZ)V
 
-    const v4, 0x7f0d0757
+    const v4, 0x7f0d07bb
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

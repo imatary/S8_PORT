@@ -39,6 +39,8 @@
 
 .field private mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
+.field mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
 .field private mEnhancedVPHandler:Landroid/os/Handler;
 
 .field private mErrAlertPopup:Landroid/app/AlertDialog;
@@ -60,6 +62,8 @@
 .field private mSetOptionComplete:Landroid/os/Handler;
 
 .field private mSharedPreferences:Landroid/content/SharedPreferences;
+
+.field mStateListener:Lcom/android/phone/ia/IAInterimListener;
 
 .field private mTelMan:Landroid/telephony/TelephonyManager;
 
@@ -319,6 +323,12 @@
 
     iput-object v0, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mErrAlertPopup:Landroid/app/AlertDialog;
 
+    invoke-static {}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getInstance()Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
     new-instance v0, Lcom/android/phone/CdmaAdditionalCallOptions$1;
 
     invoke-direct {v0, p0}, Lcom/android/phone/CdmaAdditionalCallOptions$1;-><init>(Lcom/android/phone/CdmaAdditionalCallOptions;)V
@@ -356,6 +366,40 @@
     iput-object v0, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->handler:Landroid/os/Handler;
 
     return-void
+.end method
+
+.method private GetDefaultNumber(Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    const-string/jumbo v0, "on"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string/jumbo v0, "*74"
+
+    return-object v0
+
+    :cond_0
+    const-string/jumbo v0, "off"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string/jumbo v0, "*740"
+
+    return-object v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    return-object v0
 .end method
 
 .method private checkAdditionalCallMenu()V
@@ -573,7 +617,7 @@
 
     if-eqz v1, :cond_5
 
-    const v1, 0x7f0d06c5
+    const v1, 0x7f0d0729
 
     invoke-virtual {p0, v1}, Lcom/android/phone/CdmaAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -1457,7 +1501,7 @@
 
     aput-object p1, v2, v6
 
-    const v4, 0x7f0d059c
+    const v4, 0x7f0d0600
 
     invoke-virtual {p0, v4}, Lcom/android/phone/CdmaAdditionalCallOptions;->getText(I)Ljava/lang/CharSequence;
 
@@ -1491,7 +1535,7 @@
 
     iget-object v4, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
-    const v5, 0x7f0d059d
+    const v5, 0x7f0d0601
 
     invoke-virtual {v4, v5}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
@@ -1500,6 +1544,111 @@
 
 
 # virtual methods
+.method public handleIAState(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 6
+
+    const/4 v2, 0x0
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "handleIAState cmd: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string/jumbo v4, ", data:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lcom/android/phone/CdmaAdditionalCallOptions;->log(Ljava/lang/String;)V
+
+    const-string/jumbo v3, "CallWaiting"
+
+    invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    invoke-direct {p0, p2}, Lcom/android/phone/CdmaAdditionalCallOptions;->GetDefaultNumber(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "handleIAState call waiting - "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lcom/android/phone/CdmaAdditionalCallOptions;->log(Ljava/lang/String;)V
+
+    if-eqz v1, :cond_0
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string/jumbo v3, "android.intent.action.CALL"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "tel:"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v4
+
+    invoke-direct {v0, v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaAdditionalCallOptions;->startActivity(Landroid/content/Intent;)V
+
+    const/4 v2, 0x1
+
+    :cond_0
+    return v2
+.end method
+
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
 
@@ -1584,7 +1733,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d02f9
+    const v5, 0x7f0d0359
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->setTitle(I)V
 
@@ -2037,7 +2186,7 @@
     :sswitch_0
     invoke-virtual {v1, v7}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v5, 0x7f0d032f
+    const v5, 0x7f0d038f
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaAdditionalCallOptions;->getText(I)Ljava/lang/CharSequence;
 
@@ -2050,7 +2199,7 @@
     :sswitch_1
     invoke-virtual {v1, v8}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v5, 0x7f0d032e
+    const v5, 0x7f0d038e
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaAdditionalCallOptions;->getText(I)Ljava/lang/CharSequence;
 
@@ -2081,11 +2230,11 @@
 
     :cond_4
     :goto_0
-    const v4, 0x7f0d032d
+    const v4, 0x7f0d038d
 
     sparse-switch p1, :sswitch_data_1
 
-    const v3, 0x7f0d0332
+    const v3, 0x7f0d0392
 
     :goto_1
     new-instance v2, Landroid/app/AlertDialog$Builder;
@@ -2110,7 +2259,7 @@
 
     invoke-virtual {v2, v5}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v5, 0x7f0d050c
+    const v5, 0x7f0d056c
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaAdditionalCallOptions;->getText(I)Ljava/lang/CharSequence;
 
@@ -2142,12 +2291,12 @@
     goto :goto_0
 
     :sswitch_2
-    const v3, 0x7f0d0331
+    const v3, 0x7f0d0391
 
     goto :goto_1
 
     :sswitch_3
-    const v3, 0x7f0d0333
+    const v3, 0x7f0d0393
 
     goto :goto_1
 
@@ -2217,7 +2366,7 @@
 .end method
 
 .method public onPause()V
-    .locals 1
+    .locals 2
 
     invoke-super {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onPause()V
 
@@ -2225,6 +2374,33 @@
 
     invoke-interface {v0, p0}, Landroid/content/SharedPreferences;->unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
+    const-string/jumbo v0, "support_bixby"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    invoke-virtual {v0}, Lcom/samsung/android/sdk/bixby/BixbyApi;->clearInterimStateListener()V
+
+    iget-object v0, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v1, "MoreSettings"
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logExitState(Ljava/lang/String;)V
+
+    iget-object v0, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    invoke-interface {v0}, Lcom/android/phone/ia/IAInterimListener;->clear()V
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    :cond_0
     return-void
 .end method
 
@@ -2340,6 +2516,71 @@
     invoke-direct {p0, v0}, Lcom/android/phone/CdmaAdditionalCallOptions;->updateSummaryAutoAreaCode(Ljava/lang/String;)V
 
     :cond_0
+    const-string/jumbo v1, "support_bixby"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    new-instance v1, Lcom/android/phone/ia/CdmaAdditionalCallOptionsStateListener;
+
+    invoke-direct {v1, p0}, Lcom/android/phone/ia/CdmaAdditionalCallOptionsStateListener;-><init>(Lcom/android/phone/CdmaAdditionalCallOptions;)V
+
+    iput-object v1, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    iget-object v1, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    iget-object v2, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    invoke-virtual {v1, v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->setInterimStateListener(Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;)V
+
+    const-string/jumbo v1, "set state listener"
+
+    invoke-static {v1}, Lcom/android/phone/CdmaAdditionalCallOptions;->log(Ljava/lang/String;)V
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    const-string/jumbo v1, "MoreSettings"
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingLastState()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    const-string/jumbo v1, "MoreSettings"
+
+    invoke-static {v1}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    :cond_1
+    sget-object v1, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v1}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    :cond_2
+    iget-object v1, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v2, "MoreSettings"
+
+    invoke-virtual {v1, v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logEnterState(Ljava/lang/String;)V
+
+    :cond_3
     return-void
 .end method
 

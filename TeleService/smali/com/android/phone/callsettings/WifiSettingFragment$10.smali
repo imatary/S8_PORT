@@ -20,12 +20,16 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/phone/callsettings/WifiSettingFragment;
 
+.field final synthetic val$checkBox:Landroid/widget/CheckBox;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/phone/callsettings/WifiSettingFragment;)V
+.method constructor <init>(Lcom/android/phone/callsettings/WifiSettingFragment;Landroid/widget/CheckBox;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/phone/callsettings/WifiSettingFragment$10;->this$0:Lcom/android/phone/callsettings/WifiSettingFragment;
+
+    iput-object p2, p0, Lcom/android/phone/callsettings/WifiSettingFragment$10;->val$checkBox:Landroid/widget/CheckBox;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,43 +39,61 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+    .locals 3
 
-    const/4 v1, 0x0
+    const/4 v2, 0x1
 
-    iget-object v0, p0, Lcom/android/phone/callsettings/WifiSettingFragment$10;->this$0:Lcom/android/phone/callsettings/WifiSettingFragment;
+    iget-object v0, p0, Lcom/android/phone/callsettings/WifiSettingFragment$10;->val$checkBox:Landroid/widget/CheckBox;
 
-    invoke-static {v0}, Lcom/android/phone/callsettings/WifiSettingFragment;->-get3(Lcom/android/phone/callsettings/WifiSettingFragment;)Landroid/preference/SwitchPreference;
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
-    move-result-object v0
+    move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/phone/callsettings/WifiSettingFragment$10;->this$0:Lcom/android/phone/callsettings/WifiSettingFragment;
+    const-string/jumbo v0, "wfc_dialog_show_never_again"
 
-    invoke-static {v0}, Lcom/android/phone/callsettings/WifiSettingFragment;->-get3(Lcom/android/phone/callsettings/WifiSettingFragment;)Landroid/preference/SwitchPreference;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+    invoke-static {v0, v2}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/callsettings/WifiSettingFragment$10;->this$0:Lcom/android/phone/callsettings/WifiSettingFragment;
 
-    invoke-static {v0}, Lcom/android/phone/callsettings/WifiSettingFragment;->-get4(Lcom/android/phone/callsettings/WifiSettingFragment;)Landroid/preference/SemSwitchPreferenceScreen;
+    invoke-static {v0}, Lcom/android/phone/callsettings/WifiSettingFragment;->-get2(Lcom/android/phone/callsettings/WifiSettingFragment;)Lcom/android/internal/telephony/Phone;
 
     move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "wifi_call_enable"
+
+    invoke-static {v0, v1, v2}, Lcom/android/phone/VoWifiSettingsDataBaseManager;->setInt(Landroid/content/Context;Ljava/lang/String;I)V
+
+    const-string/jumbo v0, "vowifi_in_can"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
 
     if-eqz v0, :cond_1
 
     iget-object v0, p0, Lcom/android/phone/callsettings/WifiSettingFragment$10;->this$0:Lcom/android/phone/callsettings/WifiSettingFragment;
 
-    invoke-static {v0}, Lcom/android/phone/callsettings/WifiSettingFragment;->-get4(Lcom/android/phone/callsettings/WifiSettingFragment;)Landroid/preference/SemSwitchPreferenceScreen;
+    invoke-static {v0}, Lcom/android/phone/callsettings/WifiSettingFragment;->-get5(Lcom/android/phone/callsettings/WifiSettingFragment;)Z
 
-    move-result-object v0
+    move-result v0
 
-    invoke-virtual {v0, v1}, Landroid/preference/SemSwitchPreferenceScreen;->setChecked(Z)V
+    if-eqz v0, :cond_2
 
     :cond_1
+    :goto_0
     return-void
+
+    :cond_2
+    iget-object v0, p0, Lcom/android/phone/callsettings/WifiSettingFragment$10;->this$0:Lcom/android/phone/callsettings/WifiSettingFragment;
+
+    invoke-static {v0}, Lcom/android/phone/callsettings/WifiSettingFragment;->-wrap3(Lcom/android/phone/callsettings/WifiSettingFragment;)V
+
+    goto :goto_0
 .end method

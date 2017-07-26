@@ -14,10 +14,6 @@
 .end annotation
 
 
-# static fields
-.field private static mIsBootComplete:Z
-
-
 # instance fields
 .field private mActivity:Landroid/app/Activity;
 
@@ -35,15 +31,7 @@
 
 
 # direct methods
-.method static synthetic -get0()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/android/phone/callsettings/PhoneSettingFragment;->mIsBootComplete:Z
-
-    return v0
-.end method
-
-.method static synthetic -get1(Lcom/android/phone/callsettings/PhoneSettingFragment;)Lcom/android/internal/telephony/Phone;
+.method static synthetic -get0(Lcom/android/phone/callsettings/PhoneSettingFragment;)Lcom/android/internal/telephony/Phone;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PhoneSettingFragment;->mPhone:Lcom/android/internal/telephony/Phone;
@@ -51,7 +39,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get2(Lcom/android/phone/callsettings/PhoneSettingFragment;)Landroid/preference/PreferenceCategory;
+.method static synthetic -get1(Lcom/android/phone/callsettings/PhoneSettingFragment;)Landroid/preference/PreferenceCategory;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PhoneSettingFragment;->mPrefCategory:Landroid/preference/PreferenceCategory;
@@ -59,30 +47,12 @@
     return-object v0
 .end method
 
-.method static synthetic -get3(Lcom/android/phone/callsettings/PhoneSettingFragment;)Landroid/preference/PreferenceScreen;
+.method static synthetic -get2(Lcom/android/phone/callsettings/PhoneSettingFragment;)Landroid/preference/PreferenceScreen;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PhoneSettingFragment;->mSearchNearbyPlaces:Landroid/preference/PreferenceScreen;
 
     return-object v0
-.end method
-
-.method static synthetic -set0(Z)Z
-    .locals 0
-
-    sput-boolean p0, Lcom/android/phone/callsettings/PhoneSettingFragment;->mIsBootComplete:Z
-
-    return p0
-.end method
-
-.method static constructor <clinit>()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    sput-boolean v0, Lcom/android/phone/callsettings/PhoneSettingFragment;->mIsBootComplete:Z
-
-    return-void
 .end method
 
 .method public constructor <init>(Landroid/app/Activity;Lcom/android/internal/telephony/Phone;Landroid/preference/PreferenceCategory;)V
@@ -156,7 +126,7 @@
 
     if-ne v0, v4, :cond_0
 
-    const v1, 0x7f0d0bcf
+    const v1, 0x7f0d0c3a
 
     :goto_0
     invoke-virtual {v2, v1}, Landroid/preference/PreferenceScreen;->setSummary(I)V
@@ -168,7 +138,7 @@
     return-void
 
     :cond_0
-    const v1, 0x7f0d0bd0
+    const v1, 0x7f0d0c3b
 
     goto :goto_0
 .end method
@@ -210,7 +180,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneSettingFragment;->mSwipeCallMessage:Landroid/preference/SwitchPreference;
 
-    const v2, 0x7f0d0302
+    const v2, 0x7f0d0362
 
     invoke-virtual {v1, v2}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -227,13 +197,13 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneSettingFragment;->mSwipeCallMessage:Landroid/preference/SwitchPreference;
 
-    const v2, 0x7f0d0303
+    const v2, 0x7f0d0363
 
     invoke-virtual {v1, v2}, Landroid/preference/SwitchPreference;->setTitle(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneSettingFragment;->mSwipeCallMessage:Landroid/preference/SwitchPreference;
 
-    const v2, 0x7f0d0304
+    const v2, 0x7f0d0364
 
     invoke-virtual {v1, v2}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -350,7 +320,7 @@
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 10
 
-    const v6, 0x7f0d01f1
+    const v6, 0x7f0d024e
 
     const/4 v3, 0x0
 
@@ -426,7 +396,7 @@
 
     move-result-object v1
 
-    const v5, 0x7f0d022a
+    const v5, 0x7f0d0288
 
     invoke-virtual {v1, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -510,7 +480,7 @@
 
     move-result-object v1
 
-    const v5, 0x7f0d022b
+    const v5, 0x7f0d0289
 
     invoke-virtual {v1, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

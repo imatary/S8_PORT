@@ -149,13 +149,13 @@
 
     if-eqz v5, :cond_0
 
-    const v5, 0x7f0d0703
+    const v5, 0x7f0d0767
 
     invoke-virtual {p0, v5}, Lcom/android/phone/FlatRateAlertActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v5, 0x7f0d0704
+    const v5, 0x7f0d0768
 
     invoke-virtual {p0, v5}, Lcom/android/phone/FlatRateAlertActivity;->getString(I)Ljava/lang/String;
 
@@ -208,7 +208,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/FlatRateAlertActivity$1;-><init>(Lcom/android/phone/FlatRateAlertActivity;)V
 
-    const v7, 0x7f0d02ca
+    const v7, 0x7f0d032a
 
     invoke-virtual {v5, v7, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -239,7 +239,7 @@
 
     if-eqz v5, :cond_1
 
-    const v5, 0x7f0d06ff
+    const v5, 0x7f0d0763
 
     invoke-virtual {p0, v5}, Lcom/android/phone/FlatRateAlertActivity;->getString(I)Ljava/lang/String;
 
@@ -247,7 +247,7 @@
 
     new-array v5, v7, [Ljava/lang/Object;
 
-    const v6, 0x7f0d0700
+    const v6, 0x7f0d0764
 
     invoke-virtual {p0, v6}, Lcom/android/phone/FlatRateAlertActivity;->getString(I)Ljava/lang/String;
 
@@ -255,7 +255,7 @@
 
     aput-object v6, v5, v8
 
-    const v6, 0x7f0d0701
+    const v6, 0x7f0d0765
 
     invoke-virtual {p0, v6, v5}, Lcom/android/phone/FlatRateAlertActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

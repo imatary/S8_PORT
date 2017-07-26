@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dh %2$dm</string>
-    <string name="battery_history_minutes_no_seconds">%dm</string>
+    <string name="battery_history_hours_no_seconds">%1$d h %2$d m</string>
+    <string name="battery_history_minutes_no_seconds">%d m</string>
     <string name="wifi_fail_to_scan">Hindi makapag-scan ng mga network</string>
     <string name="wifi_failed_to_obtain_IP">Nabigong kunin ang IP address.</string>
     <string name="wifi_security_none">Wala</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">Hindi makakonekta sa %s.</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">Hindi makakonekta sa %1$s. Tingnan ang mga setting mo sa %2$s at subukang muli.</string>
     <string name="bluetooth_pairing_rejected_error_message">Tinanggihan ni %s ang pagpe-pair.</string>
+    <string name="bluetooth_getting_remote_device_name">Kinukuha ang pangalan ng device…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">Lilitaw ang pangalan ng device kapag nakakonekta ang device na ito.</string>
     <string name="accessibility_wifi_off">Naka-off ang Wifi.</string>
     <string name="accessibility_no_wifi">Nakadiskonekta ang Wifi.</string>
     <string name="accessibility_wifi_one_bar">May isang bar ang Wifi.</string>
@@ -839,7 +841,7 @@
     <string name="singleContactImportedMsg">Na-import ang contact</string>
     <string name="failedToImportSingleContactMsg">Hindi na-import ang contact</string>
     <string name="hac_mode_title">Mga hearing aid</string>
-    <string name="hac_mode_summary">Pagandahin ang kalidad ng tunog ng iyong device, upang magamit sa mga hearing aid.</string>
+    <string name="hac_mode_summary">I-optimize ang kalidad ng tunog ng telepono mo para sa mga hearing aid.</string>
     <string name="dtmf_tones_title">Mga DTMF tone</string>
     <string name="dtmf_tones_summary">Itakda ang haba ng mga DTMF tone.</string>
     <string name="network_info_message">Mensahe ng network</string>
@@ -1022,6 +1024,10 @@ Ipapakita ang icon sa ibaba sa tuwing magagamit ang function na ito."</string>
     <string name="add_call_block_number_toast">Hindi ka makatatanggap ng mga tawag mula sa numerong ito.</string>
     <string name="delete_call_block_number_toast">Makatatanggap ka na ngayon ng mga tawag mula sa numerong ito.</string>
     <string name="emergency_call_block_number_toast">Hindi mai-block ang mga numerong pang-emergency.</string>
+    <string name="call_block_dialog_title">I-edit ang mga Block na numero</string>
+    <string name="call_block_dialog_contents">Mula sa Android Nougat at mga kasunod pa, pinalitan na ang Call blocking mode ng Block numbers. Sa halip na mag-block ng mga tawag, awtomatikong iba-block ng Block numbers ang kapwa mga tawag at mensahe.</string>
+    <string name="call_block_dialog_settings">I-tap ang SETTINGS para i-edit ang Block numbers.</string>
+    <string name="call_block_dialog_button">Mga setting</string>
     <string name="no_block_number_description">Lilitaw rito ang mga numero na idaragdag mo.</string>
     <string name="no_messages_description">Lilitaw rito ang mga mensahe na idaragdag mo.</string>
     <string name="callsettings_vipmode_blacklist_title">Black list</string>
@@ -1343,7 +1349,7 @@ Napinsala/Namatay
     <string name="roaming_alerts_sbody">Baguhin ang mga setting ng voice, text at data roaming, kasama ang international roaming.</string>
     <string name="roaming_alerts_voice_body">Voice roaming</string>
     <string name="roaming_alerts_data_body">Data roaming</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">Roaming na papalabas na text</string>
     <string name="roaming_domestic_category">Domestic roaming</string>
     <string name="roaming_international_category">International na roaming</string>
     <string name="roaming_voice_body">Voice at text roaming</string>
@@ -1513,9 +1519,7 @@ I-off ang Mobile data?"</string>
     <string name="data_usage_disable_mobile_vzw_chn">"Maliban kung gumagamit ka ng WLAN, hindi mo na magagamit ang Internet, Email, o iba pang mga app na nangangailangan ng koneksyon sa data.
 
 Hindi pagaganahina ng mobile data."</string>
-    <string name="mobile_data_off_dialog_text_common">"Maliban kung gagamit ka ng Wi-Fi, hindi mo na magagamit ang Internet, Email o iba pang app na kinakailangan ng koneksyon sa data.
-
-I-o-off ang mobile data."</string>
+    <string name="mobile_data_off_dialog_text_common">Maliban kung kokonekta ka sa isang Wi-Fi network, hindi mo magagamit ang Internet, Email o iba pang app na kailangan ng koneksiyon sa network.</string>
     <string name="mobile_data_off_dialog_button_turn_off">I-off</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"Maliban kung gagamit ka ng Wi-Fi, hindi mo na magagamit ang Internet, Email, o iba pang apps na nangangailangan ng koneksyon sa data.
 
@@ -1595,8 +1599,9 @@ Upang baguhin ang iyong network mode, pumunta sa Mga Setting > Higit pang mga ne
 Maaaring magkaroon ng mga karagdagang singil kung hindi ka gumagamit ng flat rate na data plan."</string>
     <string name="data_3gwarning_popup_title">Mobile data</string>
     <string name="roaming_data_off_msg">Para magamit ang data roaming, pumunta sa Settings > Connections > Global roaming, tapos paganahin ang Data roaming.</string>
-    <string name="data_3gwarning_popup_noti">Ang pagkonekta sa mga mobile network ay maaaring magdulot ng mga karagdagang singil kung hindi ka gumagamit ng flat rate plan. Kumonekta?</string>
-    <string name="lgt_4gwarning_popup_mobiledata">I-o-on ang Mobile data. Maaaring magresulta ito sa mga karagdagang singil mula sa iong service provider depende sa plan ng iyong pagbabayad.</string>
+    <string name="data_3gwarning_popup_noti">Io-on ang Mobile data. Maaaring magresulta sa karagdagang singil ang pagkonekta sa mga mobile network depende sa iyong plan sa pagbabayad.</string>
+    <string name="data_3gwarning_popup_noti_ktt">Io-on ang mobile data para gamitin ang GiGA LTE. Maaari itong magresulta sa mga karagdagang singil depende sa plan ng iyong pagbabayad.</string>
+    <string name="lgt_4gwarning_popup_mobiledata">Io-on ang Mobile data. Maaaring magresulta sa karagdagang singil ang pagkonekta sa mga mobile network depende sa iyong plan sa pagbabayad.</string>
     <string name="lgt_lte_data_roaming_warningmsg">"Habang gumagana ang data roaming, &lt;u>&lt;font color=\"%1$s\">ang mga bayarin sa pang-internasyonal na data roaming ang sisingilin sa halip na mga bayarin sa domestic data.&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">Paganahin ang pagbawalan ang data sa background upang mabawasan ang mga singil sa data roaming&lt;/font>&lt;/u> sa pamamagitan ng hindi pagpapagana sa mga feature gaya ng mga notification sa IM at mga awtomatikong update"</string>
@@ -1967,6 +1972,8 @@ Makipag-ugnayan sa iyong customer center o lokal na dealer."</string>
     <string name="volte_call_summary_ops">Magsagawa ng mga HD voice call sa 4G network.</string>
     <string name="voice_over_lte_title_cct">Pagtawag sa Volte</string>
     <string name="volte_call_summary_cct">Paganahin ang mga advanced na feature sa pagtawag gamit ang 4G LTE cellular network kung saan magagamit.</string>
+    <string name="voice_over_lte_title_o2">4G na pagtawag</string>
+    <string name="volte_call_summary_o2">I-enjoy ang pinahusay na komunikasyon gamit ang 4G data.</string>
     <string name="volte_tty_description_on">While TTY is on, you will not be able to make and receive video calls or have conference calls.</string>
     <string name="volte_prepaid_tty_description_on">TTY mode will be enabled. You will not be able to make or receive conference calls.</string>
     <string name="volte_tty_description_off">While TTY is off, you will not be able to make and receive TTY calls.</string>
@@ -2156,9 +2163,13 @@ Hindi magagamit ang LTE roaming kung hindi ka sasang-ayon. Maaaring gamitin ang 
     <string name="group_voice_call_disable_on_3G">Available lang ang mga panggrupong tawag sa LTE network</string>
     <string name="group_voice_call_outgoing_voice_call">Papalabas na voice call</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"Maliban kung gagamit ka ng Wi-Fi, hindi mo na magagamit ang Internet, Email o iba pang app na nangangailangan ng koneksiyon sa data.
+
+Io-off ang mobile data."</string>
     <string name="data_usage_disable_mobile_warning">"Maliban kung gagamit ka ng Wi-Fi, hindi mo na magagamit ang Internet, Email, o iba pang apps na nangangailangan ng koneksyon sa data.
 
 Hindi papaganahin ang mobile data."</string>
+    <string name="data_usage_enable_mobile_warning_skt">Io-on ang Mobile data. Maaaring magresulta sa karagdagang singil ang pagkonekta sa mga mobile network depende sa iyong plan sa pagbabayad.</string>
     <string name="data_usage_enable_mobile_warning">Maaaring magtamo ng karagdagang mga singilin ang pagkonekta sa pamamagitan ng packet data. Magpatuloy?</string>
     <string name="insert_sim_card">Ipasok ang SIM card</string>
     <string name="insert_sim_card_message">Magpasok ng SIM card upang ma-access ang mga serbisyo sa network.</string>
@@ -2192,6 +2203,7 @@ Hindi papaganahin ang mobile data."</string>
     <string name="turning_off_answer_memo">Hindi maaaring sabay na paganahin ang sumasagot na mensahe at awtomatikong pagsagot. Hindi papaganahin ang sumasagot na mensahe.</string>
     <string name="disconnect_network_message">Kapag nagpalit ng network ng serbisyo ng data, madidiskonekta ang kasalukuyang ginagamit na network. Palitan ang network ng serbisyo ng data?</string>
     <string name="disconnect_network_title">Idiskonekta ang kasalukuyang network.</string>
+    <string name="disable2g_warning_message">Io-off ng setting na ito ang 2G service. Kung naka-off ang 2G service, maaaring hindi gumana ang ilang app at function sa mga lokasyon kung saan walang magagamit na LTE o 3G.</string>
     <string name="data_roaming_restrict_title">Hindi pinagana, data roaming</string>
     <string name="data_roaming_restrict_body">I-tap dito para paganahin ang Data roaming.</string>
     <string name="data_network_mode">Data network mode</string>
@@ -2392,6 +2404,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">Tanggalin ang numerong ito?</string>
     <string name="change_guide_language_kddi">Baguhin ang wika ng gabay</string>
     <string name="apply_option_service_kddi">Pumunta sa %s pagpipilian sa serbisyo</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">Suporta sa customer</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">Gabay na Japanese (%d)</string>
     <string name="English_guidance_kddi">English na gabay (%d)</string>
     <string name="voicecall_kddi">Voicemail</string>
@@ -2446,11 +2462,13 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
     <string name="spam_call_mute_first_ring_summary">Mute the first ring of calls from unsaved numbers.</string>
     <string name="spam_call_auto_reject_title">I-auto reject ang mga tawag</string>
     <string name="smart_call_title">Caller ID at proteksiyon sa spam</string>
-    <string name="smart_call_title_usa">Tukuyin, mga spam na numero</string>
     <string name="smart_call_title_for_notice">Caller ID at proteksiyon sa spam</string>
-    <string name="smart_call_description">Tukuyin ang mga tumawag na hindi nai-save at mga nagpadala ng mensahe sa screen ng tawag, sa Phone log at sa Messages.</string>
-    <string name="smart_call_usa_description">Ipakita ang impormasyon tungkol sa mga spam caller sa call screen at sa Phone log.</string>
+    <string name="smart_call_description">"Gamitin ang Smart Call para kilalanin ang mga spam at scam caller.
+
+Ipinapakita ng serbisyong ito ang mga pangalan at litrato ng profile ng mga tumatawag at nagpapadala ng mga mensahe na wala sa mga contact mo."</string>
     <string name="smart_call_description_roaming">Hindi magagamit ang serbisyong ito sa ibang bansa.</string>
+    <string name="smart_call_noti_description_1">I-tap dito para protektahan ang sarili mo laban sa mga spam caller nang libre.</string>
+    <string name="smart_call_noti_description_2">I-tap dito para tukuyin ang spam at mga scam caller.</string>
     <string name="smart_call_share_name_number_title">Ibahagi ang pangalan at numero</string>
     <string name="smart_call_share_name_number_summary">Irehistro ang pangalan at numero mo sa server para makita ito ng mga tatanggap kapag tumawag/magmensahe ka sa kanila.</string>
     <string name="smart_call_legal_info_category">Legal na impormasyon</string>
@@ -2467,12 +2485,16 @@ Upang maibigay ang tampok na ito, ang tiyak na data, halimbawa ang numero ng tel
 Paki-click ang naaangkop na button sa ibaba upang isaad na sumasang-ayon ka sa nakasaad sa itaas at gusto mong i-enable ang %s tampok ngayon."</string>
     <string name="smart_call_privacy_notice_donotshow">Huwag muling ipakita ang notification na naglalarawan sa function na Identify unsaved numbers</string>
     <string name="smart_call_privacy_notice_dream">Available ang serbisyong kapag nakakonekta ang iyong mobile device sa iyong mobile network habang may mga papasok o papalabas na tawag, ngunit magiging limitado habang naka-roaming. Maaaring magresulta sa mga dagdag na singil ang paggamit sa mga mobile network depende sa iyong plano ng data sa iyong network provider.</string>
+    <string name="show_privacy_notice_title">Patakaran sa privacy</string>
     <string name="search_for_places_nearby_title">Humanap ng malalapit na lugar</string>
     <string name="search_for_places_nearby_help_description1">Humanap ng mga numero ng telepono at impormasyon para sa mga lokal na negosyo at malalapit na darausan.</string>
     <string name="search_for_places_nearby_help_description2">Kailangan ng serbisyong ito ang impormasyon ng lokasyon mo.</string>
     <string name="search_for_places_nearby_help_description3">Para i-optimize ang katumpakan ng impormasyon ng lokasyon mo, pumunta sa Settings > Connections > Location > Locating method, tapos piliin ang High accuracy.</string>
     <string name="search_for_places_nearby_help_description3_vzw">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description4">Ang paggamit ng mga mobile network sa halip na Wi-Fi ay maaaring magresulta sa karagdagang singil depende sa iyong plan ng pagbabayad.</string>
+    <string name="withdraw_menu_title">Ihinto ang paggamit sa serbisyong ito</string>
+    <string name="withdraw_dialog_description">Kapag inihinto mo ang paggamit sa %1$s, idi-deactivate ang serbisyo at tatanggalin ang lahat ng data mo sa %2$s na inimbak ng service provider.</string>
+    <string name="withdraw_dialog_button">Ihinto ang paggamit sa serbisyo</string>
     <string name="record_call_setting_title">I-awto record ang mga tawag</string>
     <string name="record_call_setting_selected_number">Mga piniling numero</string>
     <string name="record_call_setting_all_number">Lahat ng numero</string>
@@ -2485,6 +2507,8 @@ Paki-click ang naaangkop na button sa ibaba upang isaad na sumasang-ayon ka sa n
     <string name="record_call_noti_setting_title">Pag-record ng mga notification</string>
     <string name="record_call_noti_setting_summary">Tumanggap ng mga notification pagkatapos na mag-record ng mga tawag.</string>
     <string name="record_call_help_summary">Awtomatikong i-record ang mga tawag papunta sa o mula sa nga piniling numero.</string>
+    <string name="record_call_setting_on_description">Naka-on ang Awto recording</string>
+    <string name="record_call_setting_off_description">Naka-off ang Awto recording</string>
     <string name="visual_call_title_callsetting">IVR call screen menu</string>
     <string name="preference_update_DB_visual_call">I-update ang IVR call DB</string>
     <string name="preference_update_DB_visual_call_summary">I-awto update sa WLAN lang</string>
@@ -2727,6 +2751,7 @@ Ipasok ang code na matatanggap mo mula sa Verizon:"</string>
     <string name="about_phone_open_source_licenses">Mga open source license</string>
     <string name="no_network_connection">Wala koneksyon sa network</string>
     <string name="unable_to_check_for_updates">Hindi masuri kung may mga update. Walang koneksiyon sa network.</string>
+    <string name="phoneAppLabel_dcm">Dial</string>
     <string name="dcm_vt_fail_cause_not_in_4g">Hindi makapag-video call dahil wala ka sa lugar na 4G.</string>
     <string name="ss_do_not_show_again_us">Do not show again</string>
     <string name="disable_advanced_calling_warning_msg">Your phone will not be able to make or receive HD voice and video calls when you turn this setting off.</string>
@@ -2760,6 +2785,8 @@ In the future if you want to use Wi-Fi for voice calling you can turn on Wi-Fi C
     <string name="save_text">I-save</string>
     <string name="wfc_enable_dialog_title">Paganahin ang Wi-Fi na pagtatawag</string>
     <string name="wfc_enable_dialog">Paganahin ang Wi-Fi na pagtawag ay hindi paganahin ang Power saving mode. Maaaring mapataas nito ang konsumo sa baterya. Ilang mga service provider ay maaaring hindi sumuporta sa function na ito.</string>
+    <string name="group_call_not_support_emergency_number">Hindi makadagdag ng mga emergency na numero sa mga group call.</string>
+    <string name="group_call_not_support_emergency_number_all">Hindi makadagdag ng mga emergency number sa mga group call. Naidagdag ang lahat ng iba pang piniling contact.</string>
     <string name="enable_data_popup_message">Para paganahin ang functio na ito, dapat naka-on ang Mobile data.</string>
     <string name="enable_data_popup_tittle">Hindi napagana ang function</string>
 </resources>

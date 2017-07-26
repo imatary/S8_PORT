@@ -761,7 +761,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d05cf
+    const v2, 0x7f0d0633
 
     invoke-virtual {v1, v2}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
@@ -1447,7 +1447,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d032f
+    const v2, 0x7f0d038f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1477,7 +1477,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d032e
+    const v2, 0x7f0d038e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1955,11 +1955,11 @@
     return-void
 
     :sswitch_0
-    const v2, 0x7f0d032d
+    const v2, 0x7f0d038d
 
     sparse-switch p1, :sswitch_data_1
 
-    const v1, 0x7f0d0332
+    const v1, 0x7f0d0392
 
     :goto_1
     invoke-direct {p0}, Lcom/android/phone/callsettings/KddiCBarring;->hideProgressDialog()V
@@ -2012,7 +2012,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d050c
+    const v4, 0x7f0d056c
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -2031,34 +2031,34 @@
     goto :goto_0
 
     :sswitch_1
-    const v1, 0x7f0d0331
+    const v1, 0x7f0d0391
 
     goto :goto_1
 
     :sswitch_2
-    const v1, 0x7f0d0333
+    const v1, 0x7f0d0393
 
     goto :goto_1
 
     :sswitch_3
-    const v1, 0x7f0d05c9
+    const v1, 0x7f0d062d
 
     goto :goto_1
 
     :sswitch_4
-    const v1, 0x7f0d05ca
+    const v1, 0x7f0d062e
 
     goto :goto_1
 
     :sswitch_5
-    const v1, 0x7f0d05cb
+    const v1, 0x7f0d062f
 
     goto :goto_1
 
     :sswitch_6
-    const v2, 0x7f0d0505
+    const v2, 0x7f0d0565
 
-    const v1, 0x7f0d05b6
+    const v1, 0x7f0d061a
 
     goto :goto_1
 

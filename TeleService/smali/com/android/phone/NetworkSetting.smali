@@ -14,7 +14,6 @@
         Lcom/android/phone/NetworkSetting$-void_registerIntentReceivers__LambdaImpl2;,
         Lcom/android/phone/NetworkSetting$-void_registerIntentReceivers__LambdaImpl3;,
         Lcom/android/phone/NetworkSetting$-void_registerIntentReceivers__LambdaImpl4;,
-        Lcom/android/phone/NetworkSetting$-void_registerIntentReceivers__LambdaImpl5;,
         Lcom/android/phone/NetworkSetting$10;,
         Lcom/android/phone/NetworkSetting$11;,
         Lcom/android/phone/NetworkSetting$1;,
@@ -112,10 +111,6 @@
 .field private mIsNetworkSettingStatusRegister:Z
 
 .field private mIsSearching:Z
-
-.field private mLastPlmn:Ljava/lang/String;
-
-.field private mLastSpn:Ljava/lang/String;
 
 .field private mManualModeSuccess:Z
 
@@ -1519,7 +1514,7 @@
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mSearchButton:Lcom/android/phone/ProgressButtonPreference;
 
-    const v1, 0x7f0d0349
+    const v1, 0x7f0d03a9
 
     invoke-virtual {v0, v1}, Lcom/android/phone/ProgressButtonPreference;->setTitle(I)V
 
@@ -1802,7 +1797,7 @@
 
     if-eqz p1, :cond_0
 
-    const v0, 0x7f0d0346
+    const v0, 0x7f0d03a6
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->setTitle(I)V
@@ -1810,7 +1805,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0d0343
+    const v0, 0x7f0d03a3
 
     goto :goto_0
 .end method
@@ -1847,7 +1842,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d034a
+    const v2, 0x7f0d03aa
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1869,7 +1864,7 @@
 .method private displayNetworkSelectionFailed(Ljava/lang/Throwable;)V
     .locals 6
 
-    const v4, 0x7f0d034c
+    const v4, 0x7f0d03ac
 
     const-string/jumbo v2, "displayNetworkSelectionFailed"
 
@@ -2088,7 +2083,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d034f
+    const v3, 0x7f0d03af
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2154,7 +2149,7 @@
 
     aput-object p1, v1, v2
 
-    const v2, 0x7f0d034b
+    const v2, 0x7f0d03ab
 
     invoke-virtual {v0, v2, v1}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2290,7 +2285,7 @@
     invoke-direct {p0, v2}, Lcom/android/phone/NetworkSetting;->setPreferenceEnabled(Z)V
 
     :cond_4
-    const-string/jumbo v0, "usa_gsm_support_femto_cell_network"
+    const-string/jumbo v0, "usa_gsm_network_setting"
 
     invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
@@ -2417,58 +2412,125 @@
     return-object v0
 .end method
 
-.method private getNetworkTitleIUS(Lcom/android/internal/telephony/OperatorInfo;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method private getNetworkTitleIUS(Lcom/android/internal/telephony/OperatorInfo;)Ljava/lang/String;
     .locals 6
 
-    const-string/jumbo v2, ""
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorRat()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorAlphaLong()Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
+    const/4 v1, 0x0
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorRat()Ljava/lang/String;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "getNetworkTitleIUS"
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
+    move-result-object v1
 
     invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorNumeric()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "334050"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorNumeric()Ljava/lang/String;
 
     move-result-object v4
+
+    const-string/jumbo v5, "334090"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_7
+
+    :cond_0
+    const-string/jumbo v0, "AT&T"
+
+    iget-object v4, p0, Lcom/android/phone/NetworkSetting;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    if-eqz v4, :cond_3
+
+    iget-object v4, p0, Lcom/android/phone/NetworkSetting;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    invoke-virtual {v4}, Lcom/android/internal/telephony/Phone;->getIccSerialNumber()Ljava/lang/String;
+
+    move-result-object v2
+
+    :goto_0
+    iget-object v4, p0, Lcom/android/phone/NetworkSetting;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+
+    invoke-virtual {v4}, Landroid/telephony/TelephonyManager;->getSimOperatorNumeric()Ljava/lang/String;
+
+    move-result-object v3
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    const/16 v5, 0x9
+
+    if-lt v4, v5, :cond_1
+
+    const/16 v4, 0x8
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->charAt(I)C
+
+    move-result v4
+
+    const/16 v5, 0x31
+
+    if-ne v4, v5, :cond_1
+
+    if-eqz v3, :cond_1
+
+    const-string/jumbo v4, "334050"
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    const-string/jumbo v0, "UNEFON"
+
+    :cond_1
+    const-string/jumbo v4, "LTE"
+
+    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
+    const-string/jumbo v4, "4G"
+
+    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    :cond_2
+    const-string/jumbo v1, " LTE"
+
+    :goto_1
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    const-string/jumbo v5, "....spn: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    const-string/jumbo v5, ", plmn: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
@@ -2476,352 +2538,88 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorNumeric()Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "334050"
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorNumeric()Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "334090"
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_b
-
-    :cond_0
-    const-string/jumbo v2, "AT&T "
-
-    invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorNumeric()Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "334050"
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    iget-object v3, p0, Lcom/android/phone/NetworkSetting;->mPhone:Lcom/android/internal/telephony/Phone;
-
-    if-eqz v3, :cond_4
-
-    iget-object v3, p0, Lcom/android/phone/NetworkSetting;->mPhone:Lcom/android/internal/telephony/Phone;
-
-    invoke-virtual {v3}, Lcom/android/internal/telephony/Phone;->getFullIccSerialNumber()Ljava/lang/String;
-
-    move-result-object v1
-
-    :goto_0
-    iget-object v3, p0, Lcom/android/phone/NetworkSetting;->mTelephonyManager:Landroid/telephony/TelephonyManager;
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, p0, Lcom/android/phone/NetworkSetting;->mTelephonyManager:Landroid/telephony/TelephonyManager;
-
-    invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->getSimOperatorName()Ljava/lang/String;
-
-    move-result-object p2
-
-    :cond_1
-    if-eqz p2, :cond_5
-
-    invoke-virtual {p2}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "UNEFON"
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_5
-
-    const-string/jumbo v2, "UNEFON "
-
-    :cond_2
-    :goto_1
-    const-string/jumbo v3, "LTE"
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_3
-
-    const-string/jumbo v3, "4G"
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_8
+    return-object v4
 
     :cond_3
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "LTE"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    :goto_2
-    return-object v2
-
-    :cond_4
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
     goto :goto_0
 
+    :cond_4
+    const-string/jumbo v4, "UMTS"
+
+    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_5
+
+    const-string/jumbo v4, "3G"
+
+    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_6
+
     :cond_5
-    if-eqz p2, :cond_6
+    const-string/jumbo v1, " 3G"
 
-    const-string/jumbo v3, ""
-
-    invoke-virtual {p2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_7
+    goto :goto_1
 
     :cond_6
-    if-eqz p3, :cond_7
-
-    invoke-virtual {p3}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "UNEFON"
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_7
-
-    const-string/jumbo v2, "UNEFON "
+    const-string/jumbo v1, " 2G"
 
     goto :goto_1
 
     :cond_7
-    if-eqz v1, :cond_2
+    const-string/jumbo v4, "UMTS"
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v3
+    move-result v4
 
-    const/16 v4, 0x9
+    if-nez v4, :cond_8
 
-    if-lt v3, v4, :cond_2
+    const-string/jumbo v4, "3G"
 
-    const/16 v3, 0x8
+    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v1, v3}, Ljava/lang/String;->charAt(I)C
+    move-result v4
 
-    move-result v3
+    if-eqz v4, :cond_9
 
-    const/16 v4, 0x31
-
-    if-ne v3, v4, :cond_2
-
-    const-string/jumbo v2, "UNEFON "
+    :cond_8
+    const-string/jumbo v1, " (3G)"
 
     goto :goto_1
 
-    :cond_8
-    const-string/jumbo v3, "UMTS"
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_9
-
-    const-string/jumbo v3, "3G"
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_a
-
     :cond_9
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
     const-string/jumbo v4, "4G"
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result-object v3
+    move-result v4
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    if-nez v4, :cond_a
 
-    move-result-object v2
+    const-string/jumbo v4, "LTE"
 
-    goto :goto_2
+    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_b
 
     :cond_a
-    new-instance v3, Ljava/lang/StringBuilder;
+    const-string/jumbo v1, " (4G)"
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "2G"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    goto :goto_2
+    goto :goto_1
 
     :cond_b
-    const-string/jumbo v3, "UMTS"
+    const-string/jumbo v1, " (2G)"
 
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_c
-
-    const-string/jumbo v3, "3G"
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_d
-
-    :cond_c
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorAlphaLong()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "(3G)"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    goto/16 :goto_2
-
-    :cond_d
-    const-string/jumbo v3, "4G"
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_e
-
-    const-string/jumbo v3, "LTE"
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_f
-
-    :cond_e
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorAlphaLong()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "(4G)"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    goto/16 :goto_2
-
-    :cond_f
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorAlphaLong()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "(2G)"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    goto/16 :goto_2
+    goto :goto_1
 .end method
 
 .method private goBackToPreviousManualNetwork()V
@@ -2902,43 +2700,43 @@
 .end method
 
 .method private handleIntentCallBack(Landroid/content/Intent;)V
-    .locals 13
+    .locals 11
 
-    const/4 v12, 0x0
+    const/4 v10, 0x0
 
-    const/4 v11, -0x1
+    const/4 v9, -0x1
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    const-string/jumbo v10, "android.intent.action.ANY_DATA_STATE"
+    const-string/jumbo v8, "android.intent.action.ANY_DATA_STATE"
 
-    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v8
 
-    if-eqz v10, :cond_1
+    if-eqz v8, :cond_1
 
-    const-string/jumbo v10, "subscription"
+    const-string/jumbo v8, "subscription"
 
-    invoke-virtual {p1, v10, v11}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p1, v8, v9}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    move-result v9
+    move-result v7
 
-    invoke-static {v9}, Landroid/telephony/SubscriptionManager;->getPhoneId(I)I
+    invoke-static {v7}, Landroid/telephony/SubscriptionManager;->getPhoneId(I)I
 
     move-result v4
 
-    const-string/jumbo v10, "state"
+    const-string/jumbo v8, "state"
 
-    invoke-virtual {p1, v10}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v8}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v5
 
-    const-string/jumbo v10, "apnType"
+    const-string/jumbo v8, "apnType"
 
-    invoke-virtual {p1, v10}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v8}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2946,37 +2744,37 @@
 
     move-result v2
 
-    const-string/jumbo v10, "DISCONNECTED"
+    const-string/jumbo v8, "DISCONNECTED"
 
-    invoke-virtual {v10, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v8, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v8
 
-    if-eqz v10, :cond_0
+    if-eqz v8, :cond_0
 
-    const-string/jumbo v10, "default"
+    const-string/jumbo v8, "default"
 
-    invoke-virtual {v10, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v8, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v8
 
-    if-eqz v10, :cond_0
+    if-eqz v8, :cond_0
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsMultiSIM;->getDefaultDataSlotId()I
 
-    move-result v10
+    move-result v8
 
-    if-ne v10, v4, :cond_0
+    if-ne v8, v4, :cond_0
 
-    iget v10, p0, Lcom/android/phone/NetworkSetting;->ActionType:I
+    iget v8, p0, Lcom/android/phone/NetworkSetting;->ActionType:I
 
-    if-eqz v10, :cond_0
+    if-eqz v8, :cond_0
 
-    iget-object v10, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
 
-    const-string/jumbo v11, "TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED : updateDataState()"
+    const-string/jumbo v9, "TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED : updateDataState()"
 
-    invoke-static {v10, v11}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->updateDataState()V
 
@@ -2985,141 +2783,117 @@
     return-void
 
     :cond_1
-    const-string/jumbo v10, "com.samsung.android.action.START_DOCK_OR_HOME"
+    const-string/jumbo v8, "com.samsung.android.action.START_DOCK_OR_HOME"
 
-    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v8
 
-    if-eqz v10, :cond_2
+    if-eqz v8, :cond_2
 
-    const-string/jumbo v10, "stop_network_searching_on_pause"
+    const-string/jumbo v8, "stop_network_searching_on_pause"
 
-    invoke-static {v10}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v8}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v10
+    move-result v8
 
-    if-eqz v10, :cond_0
+    if-eqz v8, :cond_0
 
-    iget-boolean v10, p0, Lcom/android/phone/NetworkSetting;->mIsSearching:Z
+    iget-boolean v8, p0, Lcom/android/phone/NetworkSetting;->mIsSearching:Z
 
-    if-eqz v10, :cond_0
+    if-eqz v8, :cond_0
 
-    iget-object v10, p0, Lcom/android/phone/NetworkSetting;->mPowerManager:Landroid/os/PowerManager;
+    iget-object v8, p0, Lcom/android/phone/NetworkSetting;->mPowerManager:Landroid/os/PowerManager;
 
-    invoke-virtual {v10}, Landroid/os/PowerManager;->isScreenOn()Z
+    invoke-virtual {v8}, Landroid/os/PowerManager;->isScreenOn()Z
 
-    move-result v10
+    move-result v8
 
-    if-eqz v10, :cond_0
+    if-eqz v8, :cond_0
 
-    iget-object v10, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
 
-    const-string/jumbo v11, "ACTION_HOME_PRESSED : stopLoadNetworksList()"
+    const-string/jumbo v9, "ACTION_HOME_PRESSED : stopLoadNetworksList()"
 
-    invoke-static {v10, v11}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->stopLoadNetworksList()V
 
     goto :goto_0
 
     :cond_2
-    const-string/jumbo v10, "com.samsung.intent.action.SIMHOTSWAP"
+    const-string/jumbo v8, "com.samsung.intent.action.SIMHOTSWAP"
 
-    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v8
 
-    if-eqz v10, :cond_3
+    if-eqz v8, :cond_3
 
     invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->finish()V
 
     goto :goto_0
 
     :cond_3
-    const-string/jumbo v10, "com.android.settings.PLMNACTION"
+    const-string/jumbo v8, "com.android.settings.PLMNACTION"
 
-    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v8
 
-    if-eqz v10, :cond_5
+    if-eqz v8, :cond_5
 
-    iget-boolean v10, p0, Lcom/android/phone/NetworkSetting;->mOnBroadcastRecieve:Z
+    iget-boolean v8, p0, Lcom/android/phone/NetworkSetting;->mOnBroadcastRecieve:Z
 
-    if-nez v10, :cond_0
+    if-nez v8, :cond_0
 
-    iget-object v10, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
 
-    new-instance v11, Ljava/lang/StringBuilder;
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v12, "[NetworkSetting] mOnPauseTransition: "
+    const-string/jumbo v10, "[NetworkSetting] mOnPauseTransition: "
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
-
-    iget-boolean v12, p0, Lcom/android/phone/NetworkSetting;->mOnPauseTransition:Z
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string/jumbo v12, ", mOnBroadcastRecieve: "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    iget-boolean v12, p0, Lcom/android/phone/NetworkSetting;->mOnBroadcastRecieve:Z
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v10, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "[NetworkSetting] isCspPlmnEnabled: "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    iget-object v12, p0, Lcom/android/phone/NetworkSetting;->mPhone:Lcom/android/internal/telephony/Phone;
-
-    invoke-virtual {v12}, Lcom/android/internal/telephony/Phone;->isCspPlmnEnabled()Z
-
-    move-result v12
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v10, 0x1
-
-    iput-boolean v10, p0, Lcom/android/phone/NetworkSetting;->mOnBroadcastRecieve:Z
+    move-result-object v9
 
     iget-boolean v10, p0, Lcom/android/phone/NetworkSetting;->mOnPauseTransition:Z
 
-    if-eqz v10, :cond_4
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    const-string/jumbo v10, ", mOnBroadcastRecieve: "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    iget-boolean v10, p0, Lcom/android/phone/NetworkSetting;->mOnBroadcastRecieve:Z
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v8, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v10, "[NetworkSetting] isCspPlmnEnabled: "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
 
     iget-object v10, p0, Lcom/android/phone/NetworkSetting;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -3127,138 +2901,105 @@
 
     move-result v10
 
-    if-nez v10, :cond_0
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v8, 0x1
+
+    iput-boolean v8, p0, Lcom/android/phone/NetworkSetting;->mOnBroadcastRecieve:Z
+
+    iget-boolean v8, p0, Lcom/android/phone/NetworkSetting;->mOnPauseTransition:Z
+
+    if-eqz v8, :cond_4
+
+    iget-object v8, p0, Lcom/android/phone/NetworkSetting;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    invoke-virtual {v8}, Lcom/android/internal/telephony/Phone;->isCspPlmnEnabled()Z
+
+    move-result v8
+
+    if-nez v8, :cond_0
 
     :cond_4
-    iget-object v10, p0, Lcom/android/phone/NetworkSetting;->mHandler:Landroid/os/Handler;
+    iget-object v8, p0, Lcom/android/phone/NetworkSetting;->mHandler:Landroid/os/Handler;
 
-    iget-object v11, p0, Lcom/android/phone/NetworkSetting;->mHandler:Landroid/os/Handler;
+    iget-object v9, p0, Lcom/android/phone/NetworkSetting;->mHandler:Landroid/os/Handler;
 
-    const/16 v12, 0x384
+    const/16 v10, 0x384
 
-    invoke-virtual {v11, v12}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v9, v10}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
-    move-result-object v11
+    move-result-object v9
 
-    invoke-virtual {v10, v11}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v8, v9}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     goto/16 :goto_0
 
     :cond_5
-    const-string/jumbo v10, "android.provider.Telephony.SPN_STRINGS_UPDATED"
+    const-string/jumbo v8, "com.samsung.phone.locale.ACTION_NETWORK_SETTING_STATUS_UPDATE"
 
-    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    if-eqz v10, :cond_6
-
-    const-string/jumbo v10, "spn"
-
-    invoke-virtual {p1, v10}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    const-string/jumbo v10, "plmn"
-
-    invoke-virtual {p1, v10}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    iget-object v10, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "mNetworkSettingUnefonReceiver: spn "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string/jumbo v12, " plmn "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-direct {p0, v6, v5}, Lcom/android/phone/NetworkSetting;->setLastNetwork(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto/16 :goto_0
-
-    :cond_6
-    const-string/jumbo v10, "com.samsung.phone.locale.ACTION_NETWORK_SETTING_STATUS_UPDATE"
-
-    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    if-eqz v10, :cond_0
-
-    const-string/jumbo v10, "status"
-
-    invoke-virtual {p1, v10, v12}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v8
 
-    const-string/jumbo v10, "phoneId"
+    if-eqz v8, :cond_0
 
-    invoke-virtual {p1, v10, v11}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    const-string/jumbo v8, "status"
+
+    invoke-virtual {p1, v8, v10}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+
+    move-result v6
+
+    const-string/jumbo v8, "phoneId"
+
+    invoke-virtual {p1, v8, v9}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v3
 
-    iget-object v10, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
 
-    new-instance v11, Ljava/lang/StringBuilder;
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v12, "mNetworkSettingStatusReceiver status"
+    const-string/jumbo v10, "mNetworkSettingStatusReceiver status"
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v9
 
-    invoke-virtual {v11, v8}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v9
 
-    const-string/jumbo v12, ", mPhoneId:"
+    const-string/jumbo v10, ", mPhoneId:"
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v9
 
-    invoke-virtual {v11, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v9
 
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v11
+    move-result-object v9
 
-    invoke-static {v10, v11}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget v10, p0, Lcom/android/phone/NetworkSetting;->mActivePhone:I
+    iget v8, p0, Lcom/android/phone/NetworkSetting;->mActivePhone:I
 
-    if-eq v3, v10, :cond_0
+    if-eq v3, v8, :cond_0
 
-    invoke-direct {p0, v8}, Lcom/android/phone/NetworkSetting;->updatePreferenceStatus(Z)V
+    invoke-direct {p0, v6}, Lcom/android/phone/NetworkSetting;->updatePreferenceStatus(Z)V
 
     goto/16 :goto_0
 .end method
@@ -4205,7 +3946,7 @@
 
     invoke-direct {v0, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;)V
 
-    const v4, 0x7f0d0652
+    const v4, 0x7f0d06b6
 
     invoke-virtual {v12, v4}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -4258,7 +3999,7 @@
     goto :goto_9
 
     :cond_12
-    const v4, 0x7f0d0654
+    const v4, 0x7f0d06b8
 
     invoke-virtual {v12, v4}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -4300,17 +4041,9 @@
     :cond_14
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/phone/NetworkSetting;->mLastSpn:Ljava/lang/String;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/phone/NetworkSetting;->mLastPlmn:Ljava/lang/String;
-
-    move-object/from16 v0, p0
-
     move-object/from16 v1, v24
 
-    invoke-direct {v0, v1, v4, v5}, Lcom/android/phone/NetworkSetting;->getNetworkTitleIUS(Lcom/android/internal/telephony/OperatorInfo;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {v0, v1}, Lcom/android/phone/NetworkSetting;->getNetworkTitleIUS(Lcom/android/internal/telephony/OperatorInfo;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -4415,7 +4148,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v6, "inside TAG_CSCFEATURE_RIL_DISPLAY_RATINFO_MANUALSEARCH"
+    const-string/jumbo v6, "inside TAG_CSCFEATURE_RIL_DISPLAY_RATINFO_MANUALSEARCH: "
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4424,6 +4157,12 @@
     invoke-virtual/range {v24 .. v24}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorAlphaLong()Ljava/lang/String;
 
     move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    const-string/jumbo v6, " "
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4503,7 +4242,7 @@
 
     invoke-direct {v0, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;)V
 
-    const v4, 0x7f0d0654
+    const v4, 0x7f0d06b8
 
     invoke-virtual {v12, v4}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -4578,17 +4317,9 @@
     :cond_1b
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/phone/NetworkSetting;->mLastSpn:Ljava/lang/String;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/phone/NetworkSetting;->mLastPlmn:Ljava/lang/String;
-
-    move-object/from16 v0, p0
-
     move-object/from16 v1, v24
 
-    invoke-direct {v0, v1, v4, v5}, Lcom/android/phone/NetworkSetting;->getNetworkTitleIUS(Lcom/android/internal/telephony/OperatorInfo;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {v0, v1}, Lcom/android/phone/NetworkSetting;->getNetworkTitleIUS(Lcom/android/internal/telephony/OperatorInfo;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -4688,7 +4419,7 @@
 
     invoke-direct {v0, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;)V
 
-    const v4, 0x7f0d0653
+    const v4, 0x7f0d06b7
 
     invoke-virtual {v12, v4}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -4727,7 +4458,7 @@
 
     invoke-direct {v0, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;)V
 
-    const v4, 0x7f0d0652
+    const v4, 0x7f0d06b6
 
     invoke-virtual {v12, v4}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -5104,7 +4835,7 @@
 
     invoke-direct {v0, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;)V
 
-    const v4, 0x7f0d0652
+    const v4, 0x7f0d06b6
 
     invoke-virtual {v12, v4}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -5150,7 +4881,7 @@
     goto :goto_e
 
     :cond_2c
-    const v4, 0x7f0d0654
+    const v4, 0x7f0d06b8
 
     invoke-virtual {v12, v4}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -5327,7 +5058,7 @@
 
     invoke-direct {v0, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;)V
 
-    const v4, 0x7f0d0654
+    const v4, 0x7f0d06b8
 
     invoke-virtual {v12, v4}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -5378,7 +5109,7 @@
 
     invoke-direct {v0, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;)V
 
-    const v4, 0x7f0d0653
+    const v4, 0x7f0d06b7
 
     invoke-virtual {v12, v4}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -5417,7 +5148,7 @@
 
     invoke-direct {v0, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;)V
 
-    const v4, 0x7f0d0652
+    const v4, 0x7f0d06b6
 
     invoke-virtual {v12, v4}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -6112,7 +5843,7 @@
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mIntentManager:Lcom/android/phone/mobilenetworks/controller/IntentManager;
 
-    const-string/jumbo v1, "android.provider.Telephony.SPN_STRINGS_UPDATED"
+    const-string/jumbo v1, "com.android.settings.PLMNACTION"
 
     new-instance v2, Lcom/android/phone/NetworkSetting$-void_registerIntentReceivers__LambdaImpl3;
 
@@ -6122,21 +5853,11 @@
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mIntentManager:Lcom/android/phone/mobilenetworks/controller/IntentManager;
 
-    const-string/jumbo v1, "com.android.settings.PLMNACTION"
+    const-string/jumbo v1, "com.samsung.phone.locale.ACTION_NETWORK_SETTING_STATUS_UPDATE"
 
     new-instance v2, Lcom/android/phone/NetworkSetting$-void_registerIntentReceivers__LambdaImpl4;
 
     invoke-direct {v2, p0}, Lcom/android/phone/NetworkSetting$-void_registerIntentReceivers__LambdaImpl4;-><init>(Lcom/android/phone/NetworkSetting;)V
-
-    invoke-virtual {v0, p0, v1, v2}, Lcom/android/phone/mobilenetworks/controller/IntentManager;->registerReceiver(Ljava/lang/Object;Ljava/lang/String;Lcom/android/phone/mobilenetworks/controller/IIntentCallBack;)V
-
-    iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mIntentManager:Lcom/android/phone/mobilenetworks/controller/IntentManager;
-
-    const-string/jumbo v1, "com.samsung.phone.locale.ACTION_NETWORK_SETTING_STATUS_UPDATE"
-
-    new-instance v2, Lcom/android/phone/NetworkSetting$-void_registerIntentReceivers__LambdaImpl5;
-
-    invoke-direct {v2, p0}, Lcom/android/phone/NetworkSetting$-void_registerIntentReceivers__LambdaImpl5;-><init>(Lcom/android/phone/NetworkSetting;)V
 
     invoke-virtual {v0, p0, v1, v2}, Lcom/android/phone/mobilenetworks/controller/IntentManager;->registerReceiver(Ljava/lang/Object;Ljava/lang/String;Lcom/android/phone/mobilenetworks/controller/IIntentCallBack;)V
 
@@ -6747,7 +6468,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0970
+    const v2, 0x7f0d09d6
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6767,7 +6488,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/NetworkSetting$14;-><init>(Lcom/android/phone/NetworkSetting;)V
 
-    const v3, 0x7f0d096e
+    const v3, 0x7f0d09d4
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -6777,7 +6498,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/NetworkSetting$15;-><init>(Lcom/android/phone/NetworkSetting;)V
 
-    const v3, 0x7f0d0971
+    const v3, 0x7f0d09d7
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -6909,7 +6630,7 @@
     invoke-direct {p0, v2}, Lcom/android/phone/NetworkSetting;->setPreferenceEnabled(Z)V
 
     :cond_5
-    const-string/jumbo v2, "usa_gsm_support_femto_cell_network"
+    const-string/jumbo v2, "usa_gsm_network_setting"
 
     invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
@@ -7027,16 +6748,6 @@
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/support/v4/content/LocalBroadcastManager;->sendBroadcast(Landroid/content/Intent;)Z
-
-    return-void
-.end method
-
-.method private setLastNetwork(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    iput-object p1, p0, Lcom/android/phone/NetworkSetting;->mLastSpn:Ljava/lang/String;
-
-    iput-object p2, p0, Lcom/android/phone/NetworkSetting;->mLastPlmn:Ljava/lang/String;
 
     return-void
 .end method
@@ -7810,14 +7521,6 @@
     return-void
 .end method
 
-.method synthetic -com_android_phone_NetworkSetting_lambda$6(Landroid/content/Intent;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->handleIntentCallBack(Landroid/content/Intent;)V
-
-    return-void
-.end method
-
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 4
 
@@ -8468,9 +8171,9 @@
 
     const/16 v8, 0x320
 
-    const v7, 0x7f0d02ca
+    const v7, 0x7f0d032a
 
-    const v4, 0x7f0d02c7
+    const v4, 0x7f0d0327
 
     const/4 v6, 0x0
 
@@ -8528,7 +8231,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0345
+    const v4, 0x7f0d03a5
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8548,7 +8251,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0345
+    const v3, 0x7f0d03a5
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8589,7 +8292,7 @@
 
     invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f0d0655
+    const v3, 0x7f0d06b9
 
     invoke-virtual {p0, v3}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
@@ -8615,7 +8318,7 @@
 
     invoke-direct {p0, v2, v5}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;Z)V
 
-    const v2, 0x7f0d064b
+    const v2, 0x7f0d06af
 
     invoke-virtual {p0, v2}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
@@ -8693,7 +8396,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0355
+    const v4, 0x7f0d03b5
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8713,7 +8416,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0355
+    const v3, 0x7f0d03b5
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8742,7 +8445,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0657
+    const v4, 0x7f0d06bb
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8762,7 +8465,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0657
+    const v3, 0x7f0d06bb
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8791,7 +8494,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0648
+    const v4, 0x7f0d06ac
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8811,7 +8514,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0648
+    const v3, 0x7f0d06ac
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8840,7 +8543,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0345
+    const v4, 0x7f0d03a5
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8884,7 +8587,7 @@
 
     if-eqz v2, :cond_6
 
-    const v2, 0x7f0d03f0
+    const v2, 0x7f0d0450
 
     invoke-virtual {p0, v2}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
@@ -8903,7 +8606,7 @@
     invoke-virtual {v2, v3, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     :goto_3
-    const v2, 0x7f0d03f1
+    const v2, 0x7f0d0451
 
     invoke-virtual {p0, v2}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
@@ -8926,7 +8629,7 @@
     goto/16 :goto_2
 
     :cond_6
-    const v2, 0x7f0d03f0
+    const v2, 0x7f0d0450
 
     invoke-virtual {p0, v2}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
@@ -8955,7 +8658,7 @@
 
     if-eqz v2, :cond_8
 
-    const v2, 0x7f0d0656
+    const v2, 0x7f0d06ba
 
     invoke-virtual {p0, v2}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
@@ -8976,7 +8679,7 @@
     goto :goto_3
 
     :cond_8
-    const v2, 0x7f0d0656
+    const v2, 0x7f0d06ba
 
     invoke-virtual {p0, v2}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
@@ -9305,7 +9008,7 @@
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 5
 
-    const v1, 0x7f0d0293
+    const v1, 0x7f0d02f3
 
     const/16 v4, 0x1f4
 
@@ -9338,7 +9041,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0296
+    const v1, 0x7f0d02f6
 
     invoke-virtual {p0, v1}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
@@ -9412,7 +9115,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0297
+    const v1, 0x7f0d02f7
 
     invoke-virtual {p0, v1}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
@@ -9486,7 +9189,7 @@
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0d0649
+    const v1, 0x7f0d06ad
 
     invoke-static {v0, v1, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -9581,7 +9284,7 @@
 
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
-    const v0, 0x7f0d0293
+    const v0, 0x7f0d02f3
 
     invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 

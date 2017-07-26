@@ -607,7 +607,7 @@
 
     if-ne v3, v5, :cond_1
 
-    const v3, 0x7f0d091b
+    const v3, 0x7f0d0981
 
     invoke-virtual {p0, v3}, Lcom/android/phone/photoring/PhotoringPhraseList;->setTitle(I)V
 
@@ -744,7 +744,7 @@
     return-void
 
     :cond_1
-    const v3, 0x7f0d0908
+    const v3, 0x7f0d096e
 
     invoke-virtual {p0, v3}, Lcom/android/phone/photoring/PhotoringPhraseList;->setTitle(I)V
 
@@ -1081,7 +1081,7 @@
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     :cond_3
-    const v8, 0x7f0d05c3
+    const v8, 0x7f0d0627
 
     invoke-direct {p0, v8}, Lcom/android/phone/photoring/PhotoringPhraseList;->showToast(I)V
 
@@ -1155,13 +1155,13 @@
 
     const/4 v0, 0x5
 
-    const v1, 0x7f0d050e
+    const v1, 0x7f0d056e
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/ContextMenu;->add(IIII)Landroid/view/MenuItem;
 
     const/4 v0, 0x2
 
-    const v1, 0x7f0d0510
+    const v1, 0x7f0d0570
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/ContextMenu;->add(IIII)Landroid/view/MenuItem;
 
@@ -1174,7 +1174,7 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 7
 
-    const v6, 0x7f0d0510
+    const v6, 0x7f0d0570
 
     const/4 v5, 0x4
 
@@ -1184,7 +1184,7 @@
 
     const/4 v2, 0x1
 
-    const v0, 0x7f0d050b
+    const v0, 0x7f0d056b
 
     invoke-interface {p1, v3, v2, v2, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -1202,7 +1202,7 @@
 
     const/4 v0, 0x3
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-interface {p1, v3, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -1513,7 +1513,7 @@
 
     iput v8, p0, Lcom/android/phone/photoring/PhotoringPhraseList;->mScreenMode:I
 
-    const v5, 0x7f0d05c3
+    const v5, 0x7f0d0627
 
     invoke-direct {p0, v5}, Lcom/android/phone/photoring/PhotoringPhraseList;->showToast(I)V
 

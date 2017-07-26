@@ -731,7 +731,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d0c8a
+    const v6, 0x7f0d0cfb
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -753,7 +753,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d0c89
+    const v6, 0x7f0d0cfa
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1915,19 +1915,31 @@
 .method public static launchEmergencyContactList(Landroid/content/Context;)V
     .locals 3
 
+    const/4 v1, 0x0
+
     invoke-static {p0}, Lcom/android/phone/emergencydialer/EmergencyDialerUtils;->isNoStateInService(Landroid/content/Context;)Z
 
-    move-result v1
+    move-result v2
 
+    if-eqz v2, :cond_0
+
+    invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isAvailableVoWIFI()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    :cond_0
+    :goto_0
     invoke-static {p0, v1}, Lcom/android/phone/emergencydialer/EmergencyDialerUtils;->existEmergencyContacts(Landroid/content/Context;Z)Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_2
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_2
 
-    const v2, 0x7f0d0825
+    const v2, 0x7f0d0889
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1937,7 +1949,12 @@
 
     return-void
 
-    :cond_0
+    :cond_1
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_2
     check-cast p0, Landroid/app/Activity;
 
     invoke-static {p0, v1}, Lcom/android/phone/emergencydialer/EmergencyDialerUtils;->launchEmergencyContactList(Landroid/app/Activity;Z)V
@@ -2676,7 +2693,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0996
+    const v3, 0x7f0d09fc
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

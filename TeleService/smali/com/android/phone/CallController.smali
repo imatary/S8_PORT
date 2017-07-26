@@ -545,7 +545,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v0, 0x7f0d0468
+    const v0, 0x7f0d04c8
 
     :goto_0
     invoke-virtual {v1, v6}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
@@ -575,27 +575,27 @@
     goto :goto_0
 
     :pswitch_2
-    const v0, 0x7f0d0468
+    const v0, 0x7f0d04c8
 
     goto :goto_0
 
     :pswitch_3
-    const v0, 0x7f0d0464
+    const v0, 0x7f0d04c4
 
     goto :goto_0
 
     :pswitch_4
-    const v0, 0x7f0d0465
+    const v0, 0x7f0d04c5
 
     goto :goto_0
 
     :pswitch_5
-    const v0, 0x7f0d0466
+    const v0, 0x7f0d04c6
 
     goto :goto_0
 
     :pswitch_6
-    const v0, 0x7f0d0467
+    const v0, 0x7f0d04c7
 
     goto :goto_0
 

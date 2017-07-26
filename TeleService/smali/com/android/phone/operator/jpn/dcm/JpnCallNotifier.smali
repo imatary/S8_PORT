@@ -873,6 +873,26 @@
 
     const/4 v3, 0x0
 
+    iget-object v0, p0, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->mCallRingbackToneHandle:Landroid/media/MediaPlayer;
+
+    if-nez v0, :cond_0
+
+    const v2, 0x7f080003
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v4, p2
+
+    move-object v5, v3
+
+    invoke-direct/range {v0 .. v5}, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->playMediaTone(Landroid/content/Context;ILandroid/media/MediaPlayer$OnCompletionListener;ILandroid/media/MediaPlayer$OnErrorListener;)Landroid/media/MediaPlayer;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->mCallRingbackToneHandle:Landroid/media/MediaPlayer;
+
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -895,26 +915,6 @@
 
     invoke-direct {p0, v0}, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->log(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->mCallRingbackToneHandle:Landroid/media/MediaPlayer;
-
-    if-nez v0, :cond_0
-
-    const v2, 0x7f080003
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move v4, p2
-
-    move-object v5, v3
-
-    invoke-direct/range {v0 .. v5}, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->playMediaTone(Landroid/content/Context;ILandroid/media/MediaPlayer$OnCompletionListener;ILandroid/media/MediaPlayer$OnErrorListener;)Landroid/media/MediaPlayer;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->mCallRingbackToneHandle:Landroid/media/MediaPlayer;
-
     :cond_0
     return-void
 .end method
@@ -925,10 +925,6 @@
     const/4 v2, 0x0
 
     const/4 v1, 0x4
-
-    const-string/jumbo v0, "stopPlayJPNRingBackTone : excuted"
-
-    invoke-direct {p0, v0}, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->log(Ljava/lang/String;)V
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->hasMessages(I)Z
 
@@ -941,7 +937,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->mCallRingbackToneHandle:Landroid/media/MediaPlayer;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->mCallRingbackToneHandle:Landroid/media/MediaPlayer;
 
@@ -955,9 +951,18 @@
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->stop()V
 
+    :cond_1
+    iget-object v0, p0, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->mCallRingbackToneHandle:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->release()V
+
     iput-object v2, p0, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->mCallRingbackToneHandle:Landroid/media/MediaPlayer;
 
-    :cond_1
+    const-string/jumbo v0, "stopPlayJPNRingBackTone : excuted"
+
+    invoke-direct {p0, v0}, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->log(Ljava/lang/String;)V
+
+    :cond_2
     return-void
 .end method
 

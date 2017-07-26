@@ -454,7 +454,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d05c4
+    const v3, 0x7f0d0628
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1484,7 +1484,7 @@
     if-eqz v3, :cond_2
 
     :cond_0
-    const v3, 0x7f0d05c8
+    const v3, 0x7f0d062c
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -1525,13 +1525,13 @@
 
     if-eqz v0, :cond_1
 
-    const v3, 0x7f0d01f3
+    const v3, 0x7f0d0250
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v4, 0x7f0d021b
+    const v4, 0x7f0d0279
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -1553,7 +1553,7 @@
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 12
 
-    const v11, 0x7f0d0554
+    const v11, 0x7f0d05b8
 
     const/16 v10, 0xa0
 
@@ -1649,7 +1649,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d05dc
+    const v6, 0x7f0d0640
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1787,7 +1787,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d05dc
+    const v6, 0x7f0d0640
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1893,7 +1893,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d05dc
+    const v6, 0x7f0d0640
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2522,13 +2522,13 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    const v1, 0x7f0d01f1
+    const v1, 0x7f0d024e
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v3, 0x7f0d0232
+    const v3, 0x7f0d0290
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -2607,7 +2607,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f100271
+    const v3, 0x7f100272
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2657,7 +2657,7 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->mErrorText:Landroid/widget/TextView;
 
-    const v3, 0x7f100265
+    const v3, 0x7f100266
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2667,7 +2667,7 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->mEmptyImage:Lcom/altamirasoft/path_animation/PathLineAnimationView;
 
-    const v3, 0x7f100266
+    const v3, 0x7f100267
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2677,7 +2677,7 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->mEmptyDesc:Landroid/widget/TextView;
 
-    const v3, 0x7f100267
+    const v3, 0x7f100268
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2992,7 +2992,7 @@
 
     iput-boolean v2, p0, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->mIsForeground:Z
 
-    const v3, 0x7f0d01f3
+    const v3, 0x7f0d0250
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -3291,7 +3291,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d05c4
+    const v7, 0x7f0d0628
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3355,7 +3355,7 @@
 
     if-nez v6, :cond_2
 
-    const v6, 0x7f0d05c8
+    const v6, 0x7f0d062c
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -3390,7 +3390,7 @@
 
     if-eqz v6, :cond_3
 
-    const v6, 0x7f0d05c8
+    const v6, 0x7f0d062c
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -3605,7 +3605,7 @@
 
     aput-object v8, v7, v9
 
-    const v8, 0x7f0d04e7
+    const v8, 0x7f0d0547
 
     invoke-virtual {v6, v8, v7}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3637,7 +3637,7 @@
 
     aput-object v8, v7, v9
 
-    const v8, 0x7f0d04e8
+    const v8, 0x7f0d0548
 
     invoke-virtual {v6, v8, v7}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

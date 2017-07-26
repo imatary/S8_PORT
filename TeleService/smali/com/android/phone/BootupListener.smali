@@ -143,256 +143,277 @@
 .end method
 
 .method private actionAfterBootCompleted(Landroid/content/Context;)V
-    .locals 7
+    .locals 6
 
-    const/4 v6, 0x1
+    const/4 v5, 0x1
 
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
-    const-string/jumbo v3, "support_softphone"
+    const-string/jumbo v2, "support_softphone"
 
-    invoke-static {v3}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
-    const-string/jumbo v3, "BootupListener"
+    const-string/jumbo v2, "BootupListener"
 
-    const-string/jumbo v4, "SUPPORT_SOFTPHONE, enable CallSettingsActivity"
+    const-string/jumbo v3, "SUPPORT_SOFTPHONE, enable CallSettingsActivity"
 
-    invoke-static {v3, v4, v6}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-static {v2, v3, v5}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    move-result-object v2
+    move-result-object v1
 
     new-instance v0, Landroid/content/ComponentName;
 
-    const-string/jumbo v3, "com.android.phone"
+    const-string/jumbo v2, "com.android.phone"
 
-    const-string/jumbo v4, "com.android.phone.callsettings.CallSettingsActivity"
+    const-string/jumbo v3, "com.android.phone.callsettings.CallSettingsActivity"
 
-    invoke-direct {v0, v3, v4}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v2, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v2, v0, v6, v6}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
+    invoke-virtual {v1, v0, v5, v5}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
 
     :cond_0
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
-    move-result v3
+    move-result v2
 
-    if-nez v3, :cond_1
+    if-nez v2, :cond_1
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v3
+    move-result-object v2
 
-    const-string/jumbo v4, "internet_call_settings_visibility"
+    const-string/jumbo v3, "internet_call_settings_visibility"
 
-    invoke-static {v3, v4, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     :cond_1
-    const-string/jumbo v3, "block_data_during_call"
+    const-string/jumbo v2, "block_data_during_call"
 
-    invoke-static {v3}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_2
+    if-eqz v2, :cond_2
 
     invoke-direct {p0, p1}, Lcom/android/phone/BootupListener;->getEnableProtectCall(Landroid/content/Context;)V
 
     :cond_2
-    const-string/jumbo v3, "hw_home_key"
+    const-string/jumbo v2, "enhanced_phone_voice_record"
 
-    invoke-static {v3}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v2
 
-    if-nez v3, :cond_3
+    if-eqz v2, :cond_3
+
+    invoke-direct {p0, p1}, Lcom/android/phone/BootupListener;->setRecordCallTypeDefaultValue(Landroid/content/Context;)V
+
+    :cond_3
+    const-string/jumbo v2, "hw_home_key"
+
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_4
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v3
+    move-result-object v2
 
-    const-string/jumbo v4, "anykey_mode"
+    const-string/jumbo v3, "anykey_mode"
 
-    invoke-static {v3, v4, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    :cond_4
+    return-void
+.end method
+
+.method private actionAfterSimStateChanged(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 10
+
+    const/4 v9, 0x1
+
+    const/4 v8, 0x5
+
+    const-string/jumbo v5, "phone"
+
+    invoke-virtual {p1, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/telephony/TelephonyManager;
+
+    invoke-virtual {v4}, Landroid/telephony/TelephonyManager;->getSimState()I
+
+    move-result v2
+
+    const/4 v3, 0x1
+
+    const-string/jumbo v5, "feature_multisim"
+
+    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    const/4 v5, 0x0
+
+    invoke-static {v5}, Lcom/android/phone/PhoneUtilsMultiSIM;->getSimState(I)I
+
+    move-result v2
+
+    invoke-static {v9}, Lcom/android/phone/PhoneUtilsMultiSIM;->getSimState(I)I
+
+    move-result v3
+
+    :cond_0
+    const-string/jumbo v5, "BootupListener"
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v7, " INTENT_KEY_ICC_STATE "
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string/jumbo v7, "ss"
+
+    invoke-virtual {p2, v7}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string/jumbo v7, " mIsNeedChangeNetworkModeBoltSim "
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    sget-boolean v7, Lcom/android/phone/BootupListener;->mIsNeedChangeNetworkModeBoltSim:Z
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v5, v6, v9}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    const-string/jumbo v5, "force_lte_for_bolt_sim_after_device_reboot_complete"
+
+    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    sget-boolean v5, Lcom/android/phone/BootupListener;->mIsNeedChangeNetworkModeBoltSim:Z
+
+    if-eqz v5, :cond_1
+
+    invoke-direct {p0, p2, p1}, Lcom/android/phone/BootupListener;->setForceLteAfterBoot(Landroid/content/Intent;Landroid/content/Context;)V
+
+    :cond_1
+    invoke-virtual {v4}, Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string/jumbo v5, "vowifi_in_can"
+
+    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    invoke-direct {p0, p1, v2, v0}, Lcom/android/phone/BootupListener;->setWfcDisableUnmatchIMSI(Landroid/content/Context;ILjava/lang/String;)V
+
+    :cond_2
+    const-string/jumbo v5, "fdn_contact_search"
+
+    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_3
+
+    const-string/jumbo v5, "ltn_sdnname_display"
+
+    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_5
 
     :cond_3
+    if-eq v2, v8, :cond_4
+
+    if-ne v3, v8, :cond_5
+
+    :cond_4
+    invoke-static {}, Lcom/android/phone/FDNContactsCache;->getInstance()Lcom/android/phone/FDNContactsCache;
+
+    move-result-object v5
+
+    invoke-virtual {v5, p1}, Lcom/android/phone/FDNContactsCache;->init(Landroid/content/Context;)V
+
+    :cond_5
+    const-string/jumbo v5, "feature_kor"
+
+    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_7
+
+    if-ne v2, v8, :cond_7
+
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isSupportVoLTE()Z
 
-    move-result v3
+    move-result v5
 
-    if-eqz v3, :cond_5
+    if-eqz v5, :cond_7
 
-    const-string/jumbo v3, "hd_voice_network_prefer"
+    const-string/jumbo v5, "hd_voice_network_prefer"
 
-    invoke-static {v3}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v5
 
-    if-eqz v3, :cond_4
+    if-eqz v5, :cond_6
 
     const/4 v1, 0x1
 
     invoke-direct {p0, p1, v1}, Lcom/android/phone/BootupListener;->setHdVoiceNetworkEnable(Landroid/content/Context;I)V
 
-    :cond_4
-    const-string/jumbo v3, "feature_skt"
+    :cond_6
+    const-string/jumbo v5, "feature_skt"
 
-    invoke-static {v3}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v5
 
-    if-eqz v3, :cond_5
+    if-eqz v5, :cond_7
 
     invoke-direct {p0, p1}, Lcom/android/phone/BootupListener;->setVolteNotiSettingfor(Landroid/content/Context;)V
 
-    :cond_5
-    return-void
-.end method
-
-.method private actionAfterSimStateChanged(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 9
-
-    const/4 v8, 0x5
-
-    const/4 v7, 0x1
-
-    const-string/jumbo v4, "phone"
-
-    invoke-virtual {p1, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/telephony/TelephonyManager;
-
-    invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->getSimState()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    const-string/jumbo v4, "feature_multisim"
-
-    invoke-static {v4}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
-
-    const/4 v4, 0x0
-
-    invoke-static {v4}, Lcom/android/phone/PhoneUtilsMultiSIM;->getSimState(I)I
-
-    move-result v1
-
-    invoke-static {v7}, Lcom/android/phone/PhoneUtilsMultiSIM;->getSimState(I)I
-
-    move-result v2
-
-    :cond_0
-    const-string/jumbo v4, "BootupListener"
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v6, " INTENT_KEY_ICC_STATE "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    const-string/jumbo v6, "ss"
-
-    invoke-virtual {p2, v6}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    const-string/jumbo v6, " mIsNeedChangeNetworkModeBoltSim "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    sget-boolean v6, Lcom/android/phone/BootupListener;->mIsNeedChangeNetworkModeBoltSim:Z
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v4, v5, v7}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    const-string/jumbo v4, "force_lte_for_bolt_sim_after_device_reboot_complete"
-
-    invoke-static {v4}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    sget-boolean v4, Lcom/android/phone/BootupListener;->mIsNeedChangeNetworkModeBoltSim:Z
-
-    if-eqz v4, :cond_1
-
-    invoke-direct {p0, p2, p1}, Lcom/android/phone/BootupListener;->setForceLteAfterBoot(Landroid/content/Intent;Landroid/content/Context;)V
-
-    :cond_1
-    invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string/jumbo v4, "vowifi_in_can"
-
-    invoke-static {v4}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2
-
-    invoke-direct {p0, p1, v1, v0}, Lcom/android/phone/BootupListener;->setWfcDisableUnmatchIMSI(Landroid/content/Context;ILjava/lang/String;)V
-
-    :cond_2
-    const-string/jumbo v4, "fdn_contact_search"
-
-    invoke-static {v4}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_3
-
-    const-string/jumbo v4, "ltn_sdnname_display"
-
-    invoke-static {v4}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_5
-
-    :cond_3
-    if-eq v1, v8, :cond_4
-
-    if-ne v2, v8, :cond_5
-
-    :cond_4
-    invoke-static {}, Lcom/android/phone/FDNContactsCache;->getInstance()Lcom/android/phone/FDNContactsCache;
-
-    move-result-object v4
-
-    invoke-virtual {v4, p1}, Lcom/android/phone/FDNContactsCache;->init(Landroid/content/Context;)V
-
-    :cond_5
+    :cond_7
     return-void
 .end method
 
@@ -1431,6 +1452,69 @@
     invoke-virtual {v2, v4, v3}, Lcom/android/internal/telephony/Phone;->setPreferredNetworkType(ILandroid/os/Message;)V
 
     return-void
+.end method
+
+.method private setRecordCallTypeDefaultValue(Landroid/content/Context;)V
+    .locals 5
+
+    :try_start_0
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "record_calls_automatically_type"
+
+    invoke-static {v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;)I
+
+    move-result v1
+
+    const-string/jumbo v2, "BootupListener"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "record_calls_automatically_type : "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "record_calls_automatically_type"
+
+    const/4 v4, 0x0
+
+    invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    const-string/jumbo v2, "BootupListener"
+
+    const-string/jumbo v3, "set record_calls_automatically_type default"
+
+    invoke-static {v2, v3}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
 .end method
 
 .method private setVolteNotiSettingfor(Landroid/content/Context;)V

@@ -119,9 +119,9 @@
 .method private displayHelp()V
     .locals 6
 
-    const v5, 0x7f0d07c5
+    const v5, 0x7f0d0829
 
-    const v3, 0x7f0d0210
+    const v3, 0x7f0d026e
 
     invoke-virtual {p0, v3}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -133,7 +133,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0229
+    const v3, 0x7f0d0287
 
     invoke-virtual {p0, v3}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -151,7 +151,7 @@
 
     invoke-virtual {v0, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f0d07d3
+    const v2, 0x7f0d0837
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -159,7 +159,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/operator/usa/AssistedDialingActivity$2;-><init>(Lcom/android/phone/operator/usa/AssistedDialingActivity;)V
 
-    const v3, 0x7f0d07d1
+    const v3, 0x7f0d0835
 
     invoke-virtual {v0, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -462,7 +462,7 @@
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingActivity;->mAreaCode:Landroid/preference/EditTextPreference;
 
-    const v1, 0x7f0d07d7
+    const v1, 0x7f0d083b
 
     invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
@@ -471,7 +471,7 @@
     :cond_c
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingActivity;->mIDD:Landroid/preference/EditTextPreference;
 
-    const v1, 0x7f0d07d5
+    const v1, 0x7f0d0839
 
     invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
@@ -480,7 +480,7 @@
     :cond_d
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingActivity;->mNDD:Landroid/preference/EditTextPreference;
 
-    const v1, 0x7f0d07d6
+    const v1, 0x7f0d083a
 
     invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
@@ -489,7 +489,7 @@
     :cond_e
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingActivity;->mCountryCode:Landroid/preference/EditTextPreference;
 
-    const v1, 0x7f0d07d4
+    const v1, 0x7f0d0838
 
     invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
@@ -508,7 +508,7 @@
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingActivity;->mNationalNumberLength:Landroid/preference/EditTextPreference;
 
-    const v1, 0x7f0d07d8
+    const v1, 0x7f0d083c
 
     invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
@@ -667,13 +667,13 @@
 
     invoke-static {v0, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v0, 0x7f0d020f
+    const v0, 0x7f0d026d
 
     invoke-virtual {p0, v0}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v0, 0x7f0d02a2
+    const v0, 0x7f0d0302
 
     invoke-virtual {p0, v0}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -698,7 +698,7 @@
 
     move-result-object v0
 
-    const v4, 0x7f0d09d3
+    const v4, 0x7f0d0a39
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -730,7 +730,7 @@
 
     move-result-object v0
 
-    const v4, 0x7f0d09d4
+    const v4, 0x7f0d0a3a
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -981,13 +981,13 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
-    const v0, 0x7f0d020f
+    const v0, 0x7f0d026d
 
     invoke-virtual {p0, v0}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f0d0218
+    const v1, 0x7f0d0276
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -1017,7 +1017,7 @@
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
 
-    const v1, 0x7f0d020f
+    const v1, 0x7f0d026d
 
     const/4 v2, 0x1
 
@@ -1038,7 +1038,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0224
+    const v1, 0x7f0d0282
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -1055,7 +1055,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0219
+    const v1, 0x7f0d0277
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -1072,7 +1072,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0217
+    const v1, 0x7f0d0275
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -1087,8 +1087,8 @@
     :sswitch_data_0
     .sparse-switch
         0x102002c -> :sswitch_2
-        0x7f1002e0 -> :sswitch_0
-        0x7f1002e1 -> :sswitch_1
+        0x7f1002e3 -> :sswitch_0
+        0x7f1002e4 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -1246,13 +1246,13 @@
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    const v3, 0x7f0d0210
+    const v3, 0x7f0d026e
 
     invoke-virtual {p0, v3}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v4, 0x7f0d021d
+    const v4, 0x7f0d027b
 
     invoke-virtual {p0, v4}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -1416,11 +1416,11 @@
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
 
-    const v6, 0x7f0d0229
+    const v6, 0x7f0d0287
 
-    const v5, 0x7f0d020f
+    const v5, 0x7f0d026d
 
-    const v4, 0x7f0d0210
+    const v4, 0x7f0d026e
 
     const-string/jumbo v1, "AssistedDialingActivity"
 
@@ -1458,7 +1458,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d02ae
+    const v2, 0x7f0d030e
 
     invoke-virtual {p0, v2}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -1543,7 +1543,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d02ac
+    const v2, 0x7f0d030c
 
     invoke-virtual {p0, v2}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -1624,7 +1624,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d02ad
+    const v2, 0x7f0d030d
 
     invoke-virtual {p0, v2}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -1705,7 +1705,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d02ab
+    const v2, 0x7f0d030b
 
     invoke-virtual {p0, v2}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -1786,7 +1786,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d02af
+    const v2, 0x7f0d030f
 
     invoke-virtual {p0, v2}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -1860,7 +1860,7 @@
 
     const/4 v3, 0x1
 
-    const v2, 0x7f1002e0
+    const v2, 0x7f1002e3
 
     invoke-interface {p1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -1870,11 +1870,11 @@
 
     move-result-object v1
 
-    const v2, 0x7f02018b
+    const v2, 0x7f020194
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
-    const v2, 0x7f1002e1
+    const v2, 0x7f1002e4
 
     invoke-interface {p1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -1884,7 +1884,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f02018a
+    const v2, 0x7f020193
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -1906,7 +1906,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v0, 0x7f0d020f
+    const v0, 0x7f0d026d
 
     invoke-virtual {p0, v0}, Lcom/android/phone/operator/usa/AssistedDialingActivity;->getString(I)Ljava/lang/String;
 
@@ -1957,7 +1957,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0d09d3
+    const v2, 0x7f0d0a39
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2035,7 +2035,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0d09d4
+    const v2, 0x7f0d0a3a
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

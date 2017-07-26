@@ -297,7 +297,7 @@
     invoke-static {v5, v6, v8}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     :cond_0
-    const v5, 0x7f0d0763
+    const v5, 0x7f0d07c7
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -305,7 +305,7 @@
 
     iput-object v5, v2, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    const v5, 0x7f0d0776
+    const v5, 0x7f0d07da
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -313,7 +313,7 @@
 
     iput-object v5, v2, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    const v5, 0x7f0d076f
+    const v5, 0x7f0d07d3
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

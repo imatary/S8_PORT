@@ -215,9 +215,9 @@
     :pswitch_0
     const-string/jumbo v1, "com.android.phone"
 
-    const v3, 0x7f0d0636
+    const v3, 0x7f0d069a
 
-    const v4, 0x7f02009e
+    const v4, 0x7f0200a1
 
     const/4 v5, 0x0
 
@@ -232,9 +232,9 @@
     :pswitch_1
     const-string/jumbo v1, "com.sec.android.gallery3d"
 
-    const v3, 0x7f0d063e
+    const v3, 0x7f0d06a2
 
-    const v4, 0x7f02009f
+    const v4, 0x7f0200a2
 
     move-object v0, p0
 
@@ -247,9 +247,9 @@
     :pswitch_2
     const-string/jumbo v1, "com.sec.android.app.camera"
 
-    const v3, 0x7f0d063f
+    const v3, 0x7f0d06a3
 
-    const v4, 0x7f02009d
+    const v4, 0x7f0200a0
 
     const/4 v5, 0x2
 
@@ -264,9 +264,9 @@
     :pswitch_3
     const-string/jumbo v1, "com.sec.android.gallery3d"
 
-    const v3, 0x7f0d0635
+    const v3, 0x7f0d0699
 
-    const v4, 0x7f0200a0
+    const v4, 0x7f0200a3
 
     const/4 v5, 0x3
 
@@ -281,9 +281,9 @@
     :pswitch_4
     const-string/jumbo v1, "com.sec.android.app.camera"
 
-    const v3, 0x7f0d0632
+    const v3, 0x7f0d0696
 
-    const v4, 0x7f02009c
+    const v4, 0x7f02009f
 
     const/4 v5, 0x4
 

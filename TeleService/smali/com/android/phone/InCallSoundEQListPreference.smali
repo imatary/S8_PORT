@@ -252,13 +252,13 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d05ef
+    const v1, 0x7f0d0653
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0d05fa
+    const v2, 0x7f0d065e
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -268,7 +268,7 @@
 
     invoke-direct {v2, p0, p1}, Lcom/android/phone/InCallSoundEQListPreference$4;-><init>(Lcom/android/phone/InCallSoundEQListPreference;I)V
 
-    const v3, 0x7f0d02ca
+    const v3, 0x7f0d032a
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -329,7 +329,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/phone/InCallSoundEQListPreference$1;-><init>(Lcom/android/phone/InCallSoundEQListPreference;)V
 
-    const v1, 0x7f0d05ed
+    const v1, 0x7f0d0651
 
     invoke-virtual {p1, v1, v0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

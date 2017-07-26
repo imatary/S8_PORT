@@ -563,7 +563,7 @@
 
     if-eqz v13, :cond_4
 
-    const v17, 0x7f0d02ec
+    const v17, 0x7f0d034c
 
     move-object/from16 v0, p0
 
@@ -744,7 +744,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d02eb
+    const v4, 0x7f0d034b
 
     invoke-virtual {p0, v4}, Lcom/android/phone/settings/PhoneAccountSettingsFragment;->getString(I)Ljava/lang/String;
 
@@ -1148,7 +1148,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d01ad
+    const v6, 0x7f0d020a
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

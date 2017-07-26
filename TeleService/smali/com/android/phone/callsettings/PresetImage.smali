@@ -1215,7 +1215,7 @@
     :catch_0
     move-exception v0
 
-    const v1, 0x7f0d0995
+    const v1, 0x7f0d09fb
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -1246,7 +1246,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PresetImage;->mImageButton:Landroid/widget/ImageView;
 
-    const v2, 0x7f0d0636
+    const v2, 0x7f0d069a
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1261,7 +1261,7 @@
     :cond_2
     iget-object v1, p0, Lcom/android/phone/callsettings/PresetImage;->mImageButton:Landroid/widget/ImageView;
 
-    const v2, 0x7f0d0641
+    const v2, 0x7f0d06a5
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1308,7 +1308,7 @@
 
     move-result-object v7
 
-    const v14, 0x7f02014a
+    const v14, 0x7f02014e
 
     invoke-virtual {v7, v14}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
     :try_end_0
@@ -1422,7 +1422,7 @@
 
     iget-object v14, v0, Lcom/android/phone/callsettings/PresetImage;->mImageButton:Landroid/widget/ImageView;
 
-    const v15, 0x7f02015f
+    const v15, 0x7f020163
 
     invoke-virtual {v14, v15}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1516,7 +1516,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0201c6
+    const v15, 0x7f0201cf
 
     invoke-static {v14, v15}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -1588,7 +1588,7 @@
 
     iget-object v14, v0, Lcom/android/phone/callsettings/PresetImage;->mImageButton:Landroid/widget/ImageView;
 
-    const v15, 0x7f02015f
+    const v15, 0x7f020163
 
     invoke-virtual {v14, v15}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1824,7 +1824,7 @@
     :catch_0
     move-exception v1
 
-    const v7, 0x7f0d0995
+    const v7, 0x7f0d09fb
 
     invoke-virtual {p0, v7}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -1980,13 +1980,13 @@
 
     invoke-static {v1, v2}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v1, 0x7f0d01f1
+    const v1, 0x7f0d024e
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f0d023e
+    const v2, 0x7f0d029c
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2021,7 +2021,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f1002bc
+    const v11, 0x7f1002bf
 
     invoke-virtual {v10, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2031,7 +2031,7 @@
 
     iput-object v11, p0, Lcom/android/phone/callsettings/PresetImage;->mImageButton:Landroid/widget/ImageView;
 
-    const v11, 0x7f1002bb
+    const v11, 0x7f1002be
 
     invoke-virtual {v10, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2076,7 +2076,7 @@
 
     move-result-object v8
 
-    const v11, 0x7f02014a
+    const v11, 0x7f02014e
 
     invoke-virtual {v8, v11}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
     :try_end_0
@@ -2378,7 +2378,7 @@
 .method public onResume()V
     .locals 9
 
-    const v8, 0x7f0d063e
+    const v8, 0x7f0d06a2
 
     const/4 v7, 0x2
 
@@ -2394,7 +2394,7 @@
 
     invoke-static {v4, v5}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v4, 0x7f0d0205
+    const v4, 0x7f0d0262
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2499,7 +2499,7 @@
 
     new-array v4, v4, [Ljava/lang/String;
 
-    const v5, 0x7f0d0636
+    const v5, 0x7f0d069a
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2513,7 +2513,7 @@
 
     aput-object v5, v4, v1
 
-    const v5, 0x7f0d063f
+    const v5, 0x7f0d06a3
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2536,7 +2536,7 @@
 
     aput-object v5, v4, v3
 
-    const v5, 0x7f0d063f
+    const v5, 0x7f0d06a3
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2573,7 +2573,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/PresetImage;->btnChangePreset:Landroid/widget/Button;
 
-    const v4, 0x7f020164
+    const v4, 0x7f020168
 
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setBackgroundResource(I)V
 
@@ -2637,7 +2637,7 @@
 
     const-string/jumbo v5, "preset_name"
 
-    const v6, 0x7f0d04da
+    const v6, 0x7f0d053a
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2656,7 +2656,7 @@
 
     new-array v4, v4, [Ljava/lang/String;
 
-    const v5, 0x7f0d0636
+    const v5, 0x7f0d069a
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2670,7 +2670,7 @@
 
     aput-object v5, v4, v1
 
-    const v5, 0x7f0d063f
+    const v5, 0x7f0d06a3
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2678,7 +2678,7 @@
 
     aput-object v5, v4, v7
 
-    const v5, 0x7f0d0635
+    const v5, 0x7f0d0699
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2688,7 +2688,7 @@
 
     aput-object v5, v4, v6
 
-    const v5, 0x7f0d0632
+    const v5, 0x7f0d0696
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2715,7 +2715,7 @@
 
     aput-object v5, v4, v3
 
-    const v5, 0x7f0d063f
+    const v5, 0x7f0d06a3
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2723,7 +2723,7 @@
 
     aput-object v5, v4, v1
 
-    const v5, 0x7f0d0635
+    const v5, 0x7f0d0699
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2731,7 +2731,7 @@
 
     aput-object v5, v4, v7
 
-    const v5, 0x7f0d0632
+    const v5, 0x7f0d0696
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2797,7 +2797,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1002bd
+    const v1, 0x7f1002c0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2855,14 +2855,14 @@
     return-void
 
     :sswitch_0
-    const v3, 0x7f0d0205
+    const v3, 0x7f0d0262
 
     :try_start_0
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v6, 0x7f0d0274
+    const v6, 0x7f0d02d3
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2930,7 +2930,7 @@
 
     const-string/jumbo v6, "preset_name"
 
-    const v7, 0x7f0d04da
+    const v7, 0x7f0d053a
 
     invoke-virtual {p0, v7}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -2940,7 +2940,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/PresetImage;->mImageButton:Landroid/widget/ImageView;
 
-    const v6, 0x7f02015f
+    const v6, 0x7f020163
 
     invoke-virtual {v3, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2984,14 +2984,14 @@
     goto/16 :goto_0
 
     :sswitch_1
-    const v3, 0x7f0d0205
+    const v3, 0x7f0d0262
 
     :try_start_1
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v6, 0x7f0d0275
+    const v6, 0x7f0d02d4
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -3010,13 +3010,13 @@
     goto/16 :goto_0
 
     :sswitch_2
-    const v3, 0x7f0d0205
+    const v3, 0x7f0d0262
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v6, 0x7f0d0277
+    const v6, 0x7f0d02d6
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -3035,13 +3035,13 @@
     goto/16 :goto_0
 
     :sswitch_3
-    const v3, 0x7f0d0205
+    const v3, 0x7f0d0262
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v6, 0x7f0d0276
+    const v6, 0x7f0d02d5
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -3060,13 +3060,13 @@
     goto/16 :goto_0
 
     :sswitch_4
-    const v3, 0x7f0d0205
+    const v3, 0x7f0d0262
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v6, 0x7f0d0278
+    const v6, 0x7f0d02d7
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -3095,7 +3095,7 @@
     goto/16 :goto_0
 
     :cond_0
-    const v3, 0x7f0d04d7
+    const v3, 0x7f0d0537
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -3111,10 +3111,10 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f0d0632 -> :sswitch_4
-        0x7f0d0635 -> :sswitch_3
-        0x7f0d0636 -> :sswitch_0
-        0x7f0d063e -> :sswitch_1
-        0x7f0d063f -> :sswitch_2
+        0x7f0d0696 -> :sswitch_4
+        0x7f0d0699 -> :sswitch_3
+        0x7f0d069a -> :sswitch_0
+        0x7f0d06a2 -> :sswitch_1
+        0x7f0d06a3 -> :sswitch_2
     .end sparse-switch
 .end method

@@ -3587,6 +3587,12 @@
 
     invoke-static {v2}, Lcom/android/phone/PhoneInterfaceManager;->log(Ljava/lang/String;)V
 
+    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->isManualSelection()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
     const/4 v2, 0x0
 
     invoke-static {v2}, Lcom/android/phone/mobilenetworks/MobileNetworkUtils;->setInternalMobileDataEnabled(Z)V
@@ -3613,20 +3619,8 @@
 
     invoke-static {v2}, Lcom/android/phone/mobilenetworks/MobileNetworkUtils;->setInternalMobileDataEnabled(Z)V
 
-    const-string/jumbo v2, "feature_multisim"
-
-    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_3
-
-    sget v2, Lcom/android/internal/telephony/Phone;->PREFERRED_NT_MODE:I
-
-    invoke-virtual {p0, p1, v2}, Lcom/android/phone/PhoneInterfaceManager;->setPreferredNetworkType(II)Z
-
     :cond_3
-    const-string/jumbo v2, "feature_chn"
+    const-string/jumbo v2, "feature_multisim"
 
     invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
@@ -3634,26 +3628,39 @@
 
     if-nez v2, :cond_4
 
+    sget v2, Lcom/android/internal/telephony/Phone;->PREFERRED_NT_MODE:I
+
+    invoke-virtual {p0, p1, v2}, Lcom/android/phone/PhoneInterfaceManager;->setPreferredNetworkType(II)Z
+
+    :cond_4
+    const-string/jumbo v2, "feature_chn"
+
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_5
+
     const-string/jumbo v2, "feature_hktw"
 
     invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_8
 
-    :cond_4
+    :cond_5
     invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataSubscriptionId()I
 
     move-result v2
 
-    if-ne v2, p1, :cond_5
+    if-ne v2, p1, :cond_6
 
     const/4 v2, 0x1
 
     invoke-virtual {p0, p1, v2}, Lcom/android/phone/PhoneInterfaceManager;->setDataEnabled(IZ)V
 
-    :cond_5
+    :cond_6
     :goto_1
     iget-object v2, p0, Lcom/android/phone/PhoneInterfaceManager;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -3677,7 +3684,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_6
+    if-eqz v2, :cond_7
 
     iget-object v2, p0, Lcom/android/phone/PhoneInterfaceManager;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -3711,7 +3718,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    :cond_6
+    :cond_7
     const-string/jumbo v2, "remove_mobile_networks_kor_data_network_mode"
 
     invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
@@ -3747,7 +3754,7 @@
 
     throw v2
 
-    :cond_7
+    :cond_8
     const/4 v2, 0x1
 
     :try_start_2

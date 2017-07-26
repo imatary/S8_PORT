@@ -96,7 +96,7 @@
     .sparse-switch
         0x7f100121 -> :sswitch_1
         0x7f10016a -> :sswitch_1
-        0x7f1002e2 -> :sswitch_0
+        0x7f1002e5 -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -513,7 +513,7 @@
 
     const v5, 0x7f100121
 
-    const v4, 0x7f1002e2
+    const v4, 0x7f1002e5
 
     const v3, 0x7f10016a
 
@@ -740,7 +740,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d09f7
+    const v3, 0x7f0d0a5e
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

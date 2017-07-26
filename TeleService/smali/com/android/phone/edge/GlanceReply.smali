@@ -41,10 +41,6 @@
 
 .field private mEdgeImg:Landroid/widget/ImageView;
 
-.field private mSubAppBarOnffTextview:Landroid/widget/TextView;
-
-.field private mSubAppBarSwitch:Landroid/widget/Switch;
-
 .field peopleData:Lcom/android/phone/edge/GlanceRelplyPeopleData;
 
 .field private prevString:Ljava/lang/String;
@@ -85,44 +81,18 @@
     return-object v0
 .end method
 
-.method static synthetic -get4(Lcom/android/phone/edge/GlanceReply;)Landroid/widget/Switch;
-    .locals 1
+.method static synthetic -wrap0(Lcom/android/phone/edge/GlanceReply;Z)V
+    .locals 0
 
-    iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->mSubAppBarSwitch:Landroid/widget/Switch;
+    invoke-direct {p0, p1}, Lcom/android/phone/edge/GlanceReply;->changeEditTextState(Z)V
 
-    return-object v0
-.end method
-
-.method static synthetic -wrap0(Lcom/android/phone/edge/GlanceReply;Z)Z
-    .locals 1
-
-    invoke-direct {p0, p1}, Lcom/android/phone/edge/GlanceReply;->alertEmptyMessage(Z)Z
-
-    move-result v0
-
-    return v0
+    return-void
 .end method
 
 .method static synthetic -wrap1(Lcom/android/phone/edge/GlanceReply;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/phone/edge/GlanceReply;->changeTextCounterColor()V
-
-    return-void
-.end method
-
-.method static synthetic -wrap2(Lcom/android/phone/edge/GlanceReply;Z)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/phone/edge/GlanceReply;->setSubAppBarOnOffTextState(Z)V
-
-    return-void
-.end method
-
-.method static synthetic -wrap3(Lcom/android/phone/edge/GlanceReply;Z)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/phone/edge/GlanceReply;->setSubAppBarState(Z)V
 
     return-void
 .end method
@@ -175,7 +145,7 @@
     return-void
 .end method
 
-.method private alertEmptyMessage(Z)Z
+.method private alertEmptyMessage()Z
     .locals 5
 
     const/4 v4, 0x0
@@ -235,7 +205,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0bd7
+    const v2, 0x7f0d0c42
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -247,7 +217,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0bd8
+    const v2, 0x7f0d0c43
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -255,9 +225,9 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    new-instance v1, Lcom/android/phone/edge/GlanceReply$6;
+    new-instance v1, Lcom/android/phone/edge/GlanceReply$4;
 
-    invoke-direct {v1, p0}, Lcom/android/phone/edge/GlanceReply$6;-><init>(Lcom/android/phone/edge/GlanceReply;)V
+    invoke-direct {v1, p0}, Lcom/android/phone/edge/GlanceReply$4;-><init>(Lcom/android/phone/edge/GlanceReply;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)Landroid/app/AlertDialog$Builder;
 
@@ -265,15 +235,15 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0bd4
+    const v2, 0x7f0d0c3f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/phone/edge/GlanceReply$7;
+    new-instance v2, Lcom/android/phone/edge/GlanceReply$5;
 
-    invoke-direct {v2, p0, p1}, Lcom/android/phone/edge/GlanceReply$7;-><init>(Lcom/android/phone/edge/GlanceReply;Z)V
+    invoke-direct {v2, p0}, Lcom/android/phone/edge/GlanceReply$5;-><init>(Lcom/android/phone/edge/GlanceReply;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -281,15 +251,15 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0bd5
+    const v2, 0x7f0d0c40
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/phone/edge/GlanceReply$8;
+    new-instance v2, Lcom/android/phone/edge/GlanceReply$6;
 
-    invoke-direct {v2, p0}, Lcom/android/phone/edge/GlanceReply$8;-><init>(Lcom/android/phone/edge/GlanceReply;)V
+    invoke-direct {v2, p0}, Lcom/android/phone/edge/GlanceReply$6;-><init>(Lcom/android/phone/edge/GlanceReply;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -649,7 +619,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/edge/GlanceReply;->initMaxLengthForEditText()V
 
-    const v4, 0x7f100274
+    const v4, 0x7f100277
 
     invoke-virtual {p0, v4}, Lcom/android/phone/edge/GlanceReply;->findViewById(I)Landroid/view/View;
 
@@ -708,8 +678,6 @@
     :cond_2
     invoke-direct {p0}, Lcom/android/phone/edge/GlanceReply;->initActionBar()V
 
-    invoke-direct {p0}, Lcom/android/phone/edge/GlanceReply;->initSubAppBar()V
-
     invoke-virtual {p0}, Lcom/android/phone/edge/GlanceReply;->setFilter()V
 
     return-void
@@ -747,7 +715,7 @@
 
     sput-object v0, Lcom/android/phone/edge/GlanceReply;->DEFAULT_REPLY_MESSAGE:Ljava/lang/String;
 
-    goto/16 :goto_1
+    goto :goto_1
 
     :cond_6
     sput-object v3, Lcom/android/phone/edge/GlanceReply;->DEFAULT_REPLY_MESSAGE:Ljava/lang/String;
@@ -795,60 +763,6 @@
     return-void
 .end method
 
-.method private initSubAppBar()V
-    .locals 3
-
-    const v1, 0x7f10003c
-
-    invoke-virtual {p0, v1}, Lcom/android/phone/edge/GlanceReply;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    iput-object v1, p0, Lcom/android/phone/edge/GlanceReply;->mSubAppBarOnffTextview:Landroid/widget/TextView;
-
-    const v1, 0x7f10003d
-
-    invoke-virtual {p0, v1}, Lcom/android/phone/edge/GlanceReply;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/Switch;
-
-    iput-object v1, p0, Lcom/android/phone/edge/GlanceReply;->mSubAppBarSwitch:Landroid/widget/Switch;
-
-    iget-object v1, p0, Lcom/android/phone/edge/GlanceReply;->mSubAppBarSwitch:Landroid/widget/Switch;
-
-    new-instance v2, Lcom/android/phone/edge/GlanceReply$4;
-
-    invoke-direct {v2, p0}, Lcom/android/phone/edge/GlanceReply$4;-><init>(Lcom/android/phone/edge/GlanceReply;)V
-
-    invoke-virtual {v1, v2}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
-
-    const v1, 0x7f10003b
-
-    invoke-virtual {p0, v1}, Lcom/android/phone/edge/GlanceReply;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    new-instance v2, Lcom/android/phone/edge/GlanceReply$5;
-
-    invoke-direct {v2, p0}, Lcom/android/phone/edge/GlanceReply$5;-><init>(Lcom/android/phone/edge/GlanceReply;)V
-
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    invoke-static {p0}, Lcom/android/phone/edge/GlanceReplyManager;->getGlanceReplyState(Landroid/content/Context;)Z
-
-    move-result v0
-
-    invoke-direct {p0, v0}, Lcom/android/phone/edge/GlanceReply;->setSubAppBarOnOffTextState(Z)V
-
-    invoke-direct {p0, v0}, Lcom/android/phone/edge/GlanceReply;->changeEditTextState(Z)V
-
-    return-void
-.end method
-
 .method private setDefaultText()V
     .locals 3
 
@@ -892,58 +806,6 @@
     return-void
 .end method
 
-.method private setSubAppBarOnOffTextState(Z)V
-    .locals 3
-
-    iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->mSubAppBarSwitch:Landroid/widget/Switch;
-
-    invoke-virtual {v0, p1}, Landroid/widget/Switch;->setChecked(Z)V
-
-    iget-object v1, p0, Lcom/android/phone/edge/GlanceReply;->mSubAppBarOnffTextview:Landroid/widget/TextView;
-
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p0}, Lcom/android/phone/edge/GlanceReply;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v2, 0x7f0d0bcf
-
-    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    return-void
-
-    :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/edge/GlanceReply;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v2, 0x7f0d0bd0
-
-    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
-.method private setSubAppBarState(Z)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lcom/android/phone/edge/GlanceReplyManager;->setGlanceReplyState(Landroid/content/Context;Z)V
-
-    invoke-direct {p0, p1}, Lcom/android/phone/edge/GlanceReply;->setSubAppBarOnOffTextState(Z)V
-
-    invoke-direct {p0, p1}, Lcom/android/phone/edge/GlanceReply;->changeEditTextState(Z)V
-
-    return-void
-.end method
-
 
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
@@ -953,7 +815,7 @@
 
     const-wide/16 v10, 0x7d0
 
-    const v9, 0x7f0d0553
+    const v9, 0x7f0d05b7
 
     const/4 v7, 0x1
 
@@ -1013,9 +875,9 @@
 
     invoke-direct {v4}, Landroid/os/Handler;-><init>()V
 
-    new-instance v5, Lcom/android/phone/edge/GlanceReply$10;
+    new-instance v5, Lcom/android/phone/edge/GlanceReply$8;
 
-    invoke-direct {v5, p0}, Lcom/android/phone/edge/GlanceReply$10;-><init>(Lcom/android/phone/edge/GlanceReply;)V
+    invoke-direct {v5, p0}, Lcom/android/phone/edge/GlanceReply$8;-><init>(Lcom/android/phone/edge/GlanceReply;)V
 
     invoke-virtual {v4, v5, v10, v11}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
@@ -1131,9 +993,9 @@
 
     invoke-direct {v4}, Landroid/os/Handler;-><init>()V
 
-    new-instance v5, Lcom/android/phone/edge/GlanceReply$11;
+    new-instance v5, Lcom/android/phone/edge/GlanceReply$9;
 
-    invoke-direct {v5, p0}, Lcom/android/phone/edge/GlanceReply$11;-><init>(Lcom/android/phone/edge/GlanceReply;)V
+    invoke-direct {v5, p0}, Lcom/android/phone/edge/GlanceReply$9;-><init>(Lcom/android/phone/edge/GlanceReply;)V
 
     invoke-virtual {v4, v5, v10, v11}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
@@ -1217,9 +1079,9 @@
 
     invoke-direct {v4}, Landroid/os/Handler;-><init>()V
 
-    new-instance v5, Lcom/android/phone/edge/GlanceReply$12;
+    new-instance v5, Lcom/android/phone/edge/GlanceReply$10;
 
-    invoke-direct {v5, p0}, Lcom/android/phone/edge/GlanceReply$12;-><init>(Lcom/android/phone/edge/GlanceReply;)V
+    invoke-direct {v5, p0}, Lcom/android/phone/edge/GlanceReply$10;-><init>(Lcom/android/phone/edge/GlanceReply;)V
 
     invoke-virtual {v4, v5, v10, v11}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
@@ -1319,6 +1181,20 @@
     move-result-object v3
 
     invoke-virtual {v3, p0, v2}, Lcom/android/phone/edge/GlanceReplyInfoItem;->setDefaultMessageforDB(Landroid/content/Context;Ljava/lang/String;)V
+
+    const v3, 0x7f0d026a
+
+    invoke-virtual {p0, v3}, Lcom/android/phone/edge/GlanceReply;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    const v4, 0x7f0d02a5
+
+    invoke-virtual {p0, v4}, Lcom/android/phone/edge/GlanceReply;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4, v2}, Lcom/android/phone/utils/SALogging;->sendSAEventLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_2
     return-void
@@ -1522,13 +1398,7 @@
 .method public onBackPressed()V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->mSubAppBarSwitch:Landroid/widget/Switch;
-
-    invoke-virtual {v0}, Landroid/widget/Switch;->isChecked()Z
-
-    move-result v0
-
-    invoke-direct {p0, v0}, Lcom/android/phone/edge/GlanceReply;->alertEmptyMessage(Z)Z
+    invoke-direct {p0}, Lcom/android/phone/edge/GlanceReply;->alertEmptyMessage()Z
 
     move-result v0
 
@@ -1632,24 +1502,9 @@
 
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->mSubAppBarOnffTextview:Landroid/widget/TextView;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->mSubAppBarOnffTextview:Landroid/widget/TextView;
-
-    const v1, 0x7f0c00d8
-
-    const v2, 0x3f4ccccd    # 0.8f
-
-    const v3, 0x3f99999a    # 1.2f
-
-    invoke-static {v0, v1, v2, v3}, Lcom/android/phone/utils/FontUtils;->updateFontSize(Landroid/widget/TextView;IFF)V
-
-    :cond_0
     iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->editText:Landroid/widget/EditText;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->editText:Landroid/widget/EditText;
 
@@ -1657,7 +1512,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->editText:Landroid/widget/EditText;
 
@@ -1665,7 +1520,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->handler:Landroid/os/Handler;
 
@@ -1677,7 +1532,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    :cond_1
+    :cond_0
     return-void
 .end method
 
@@ -1709,11 +1564,11 @@
 
     new-array v0, v1, [Landroid/text/InputFilter;
 
-    new-instance v1, Lcom/android/phone/edge/GlanceReply$9;
+    new-instance v1, Lcom/android/phone/edge/GlanceReply$7;
 
     sget v2, Lcom/android/phone/edge/GlanceReply;->MAX_LENGTH_EDIT_TEXT:I
 
-    invoke-direct {v1, p0, v2}, Lcom/android/phone/edge/GlanceReply$9;-><init>(Lcom/android/phone/edge/GlanceReply;I)V
+    invoke-direct {v1, p0, v2}, Lcom/android/phone/edge/GlanceReply$7;-><init>(Lcom/android/phone/edge/GlanceReply;I)V
 
     const/4 v2, 0x0
 
@@ -1771,7 +1626,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f0d0bd6
+    const v3, 0x7f0d0c41
 
     invoke-virtual {p0, v3, v2}, Lcom/android/phone/edge/GlanceReply;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

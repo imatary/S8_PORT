@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dj %2$dm</string>
-    <string name="battery_history_minutes_no_seconds">%dm</string>
+    <string name="battery_history_hours_no_seconds">%1$d j %2$d m</string>
+    <string name="battery_history_minutes_no_seconds">%d min</string>
     <string name="wifi_fail_to_scan">Tidak boleh mengimbas untuk rangkaian</string>
     <string name="wifi_failed_to_obtain_IP">Gagal utk mendptkan alamat IP.</string>
     <string name="wifi_security_none">Tiada</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">Tidak dapat menyambung ke %s.</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">Tidak dapat menyambung ke %1$s. Semak aturan anda dalam %2$s dan cuba lagi.</string>
     <string name="bluetooth_pairing_rejected_error_message">Perpasangan ditolak oleh %s.</string>
+    <string name="bluetooth_getting_remote_device_name">Mendapatkan nama peranti…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">Nama peranti akan muncul apabila peranti ini disambungkan.</string>
     <string name="accessibility_wifi_off">Wi-Fi dimatikan.</string>
     <string name="accessibility_no_wifi">Wi-Fi diputuskan sambungannya.</string>
     <string name="accessibility_wifi_one_bar">Wi-Fi satu bar.</string>
@@ -835,7 +837,7 @@
     <string name="singleContactImportedMsg">Kenalan yang diimport</string>
     <string name="failedToImportSingleContactMsg">Gagal mengimport kenalan</string>
     <string name="hac_mode_title">Bantuan mendengar</string>
-    <string name="hac_mode_summary">Meningkatkan kualiti bunyi peranti anda, untuk digunakan dengan alat bantuan pendengaran.</string>
+    <string name="hac_mode_summary">Optimumkan kualiti bunyi telefon anda untuk alat bantuan pendengaran.</string>
     <string name="dtmf_tones_title">Nada DTMF</string>
     <string name="dtmf_tones_summary">Tetapkan panjang nada DTMF.</string>
     <string name="network_info_message">Mesej rangkaian</string>
@@ -1014,6 +1016,10 @@ Ikon di bawah akan ditunjukkan setiap kali fungsi ini tersedia."</string>
     <string name="add_call_block_number_toast">Anda tidak akan menerima panggilan daripada nombor ini.</string>
     <string name="delete_call_block_number_toast">Anda kini boleh menerima panggilan daripada nombor ini.</string>
     <string name="emergency_call_block_number_toast">Tidak dapat menyekat nombor kecemasan.</string>
+    <string name="call_block_dialog_title">Sunting Nombor disekat</string>
+    <string name="call_block_dialog_contents">Mulai Android Nougat, Mod penyekatan panggilan digantikan dengan Sekat nombor. Sekat nombor akan menyekat kedua-dua panggilan dan mesej dan bukannya menyekat panggilan sahaja.</string>
+    <string name="call_block_dialog_settings">Ketik ATURAN untuk menyunting Sekat nombor.</string>
+    <string name="call_block_dialog_button">Aturan</string>
     <string name="no_block_number_description">Nombor yang anda tambah akan muncul di sini.</string>
     <string name="no_messages_description">Mesej yang anda tambah akan muncul di sini.</string>
     <string name="callsettings_vipmode_blacklist_title">Senarai hitam</string>
@@ -1335,7 +1341,7 @@ Injured/Dead
     <string name="roaming_alerts_sbody">Ubah aturan suara, teks dan perayauan data, termasuklah perayauan antarabangsa.</string>
     <string name="roaming_alerts_voice_body">Perayuan suara</string>
     <string name="roaming_alerts_data_body">Perayauan data</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">Perayauan teks keluar</string>
     <string name="roaming_domestic_category">Perayauan domestik</string>
     <string name="roaming_international_category">Perayauan antarabangsa</string>
     <string name="roaming_voice_body">Perayauan suara dan teks</string>
@@ -1505,9 +1511,7 @@ Matikan Data mudah alih?"</string>
     <string name="data_usage_disable_mobile_vzw_chn">"Melainkan anda menggunakan WLAN, anda tidak akan dapat menggunakan Internet, E-mel atau aplikasi lain yang memerlukan sambungan data.
 
 Data mudah alih akan dinyahaktifkan."</string>
-    <string name="mobile_data_off_dialog_text_common">"Melainkan jika anda menggunakan Wi-Fi, anda tidak lagi akan dapat menggunakan Internet, E-mel atau aplikasi lain yang memerlukan sambungan data.
-
-Data mudah alih akan dimatikan."</string>
+    <string name="mobile_data_off_dialog_text_common">Melainkan anda menyambung ke rangkaian Wi-Fi, anda tidak akan dapat menggunakan Internet, E-mel atau aplikasi lain yang memerlukan sambungan rangkaian.</string>
     <string name="mobile_data_off_dialog_button_turn_off">Matikan</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"Melainkan jika anda menggunakan Wi-Fi, anda tidak lagi akan dapat menggunakan Internet, E-mel atau aplikasi lain yang memerlukan sambungan data.
 
@@ -1587,8 +1591,9 @@ Untuk menukar mod rangkaian anda, pergi ke Aturan > Lebih rangkaian > Rangkaian 
 Caj tambahan mungkin dikenakan jika anda tidak menggunakan pelan kadar sama rata."</string>
     <string name="data_3gwarning_popup_title">Data mudah alih</string>
     <string name="roaming_data_off_msg">Untuk menggunakan perayauan data, pergi ke Aturan > Sambungan > Perayauan global, kemudian aktifkan Perayauan data.</string>
-    <string name="data_3gwarning_popup_noti">Sambungan ke rangkaian mudah alih mungkin akan dikenakan caj tambahan jika anda tidak menggunakan pelan kadar sama rata. Sambung?</string>
-    <string name="lgt_4gwarning_popup_mobiledata">Data mudah alih akan dihidupkan. Ini mungkin dikenakan caj tambahan dari pembekal perkhidmatan bergantung pada pelan pembayaran anda.</string>
+    <string name="data_3gwarning_popup_noti">Data mudah alih akan dihidupkan. Menyambung ke rangkaian mudah alih mungkin menyebabkan caj tambahan bergantung pada pelan pembayaran anda.</string>
+    <string name="data_3gwarning_popup_noti_ktt">Data mudah alih mesti dihidupkan untuk menggunakan GiGA LTE. Ini mungkin dikenakan caj tambahan bergantung pada pelan pembayaran anda.</string>
+    <string name="lgt_4gwarning_popup_mobiledata">Data mudah alih akan dihidupkan. Menyambung ke rangkaian mudah alih mungkin menyebabkan caj tambahan bergantung pada pelan pembayaran anda.</string>
     <string name="lgt_lte_data_roaming_warningmsg">"Semasa data perayauan diaktifkan, &lt;u>&lt;font color=\"%1$s\"> data caj perayauan antarabangsa akan dikenakan bukannya caj data domestik.&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">Aktifkan pengehadan data latar belakang untuk mengurangkan caj perayauan data&lt;/font>&lt;/u> dengan menyahaktifkan ciri seperti pemberitahuan IM dan kemas kini automatik"</string>
@@ -1959,6 +1964,8 @@ Hubungi pusat pelanggan atau pengedar tempatan anda."</string>
     <string name="volte_call_summary_ops">Buat panggilan suara HD pada rangkaian 4G.</string>
     <string name="voice_over_lte_title_cct">Panggilan Volte</string>
     <string name="volte_call_summary_cct">Aktifkan ciri panggilan lanjutan melalui rangkaian selular 4G LTE apabila tersedia.</string>
+    <string name="voice_over_lte_title_o2">Panggilan 4G</string>
+    <string name="volte_call_summary_o2">Nikmati komunikasi yang dipertingkatkan menggunakan data 4G.</string>
     <string name="volte_tty_description_on">While TTY is on, you will not be able to make and receive video calls or have conference calls.</string>
     <string name="volte_prepaid_tty_description_on">TTY mode will be enabled. You will not be able to make or receive conference calls.</string>
     <string name="volte_tty_description_off">While TTY is off, you will not be able to make and receive TTY calls.</string>
@@ -2148,9 +2155,13 @@ Perayauan LTE tidak akan tersedia jika anda tidak bersetuju. Rangkaian 3G akan d
     <string name="group_voice_call_disable_on_3G">Panggilan kumpulan hanya tersedia melalui rangkaian LTE</string>
     <string name="group_voice_call_outgoing_voice_call">Panggilan suara keluar</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"Melainkan jika anda menggunakan Wi-Fi, anda tidak lagi akan dapat menggunakan Internet, E-mel atau aplikasi lain yang memerlukan sambungan data.
+
+Data mudah alih akan dimatikan."</string>
     <string name="data_usage_disable_mobile_warning">"Melainkan jika anda menggunakan Wi-Fi, anda tidak lagi akan dapat menggunakan Internet, E-mel atau aplikasi lain yang memerlukan sambungan data.
 
 Data mudah alih akan dinyahaktifkan."</string>
+    <string name="data_usage_enable_mobile_warning_skt">Data mudah alih akan dihidupkan. Menyambung ke rangkaian mudah alih mungkin menyebabkan caj tambahan bergantung pada pelan pembayaran anda.</string>
     <string name="data_usage_enable_mobile_warning">Bersambung melalui data paket boleh dikenakan caj tambahan. Teruskan?</string>
     <string name="insert_sim_card">Masukkan kad SIM</string>
     <string name="insert_sim_card_message">Masukkan kad SIM utk mencapai perkhidmatan rangkaian.</string>
@@ -2184,6 +2195,7 @@ Data mudah alih akan dinyahaktifkan."</string>
     <string name="turning_off_answer_memo">Menjawab mesej dan menjawab automatik tidak boleh diaktifkan serentak. Menjawab mesej akan dinyahaktifkan.</string>
     <string name="disconnect_network_message">Mengubah rangkaian perkhidmatan data akan memutuskan sambungan rangkaian yang sedang digunakan. Tukar rangkaian perkhidmatan data?</string>
     <string name="disconnect_network_title">Putuskan sambungan rangkaian semasa</string>
+    <string name="disable2g_warning_message">Aturan ini mematikan perkhidmatan 2G. Jika perkhidmatan 2G dimatikan, sesetengah aplikasi dan fungsi mungkin tidak berfungsi di lokasi yang LTE atau 3G tidak tersedia.</string>
     <string name="data_roaming_restrict_title">Prayauan data dinyhktfkan</string>
     <string name="data_roaming_restrict_body">Ketik di sini untuk mengaktifkan Perayauan Data.</string>
     <string name="data_network_mode">Mod rangkaian data</string>
@@ -2384,6 +2396,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">Padam nombor ini?</string>
     <string name="change_guide_language_kddi">Ubah bahasa panduan</string>
     <string name="apply_option_service_kddi">"Pergi ke plhn p'khdmtn %s"</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">Sokongan pelanggan</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">Panduan bahasa Jepun (%d)</string>
     <string name="English_guidance_kddi">Panduan bhs Inggeris (%d)</string>
     <string name="voicecall_kddi">Mel suara</string>
@@ -2438,11 +2454,13 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
     <string name="spam_call_mute_first_ring_summary">Mute the first ring of calls from unsaved numbers.</string>
     <string name="spam_call_auto_reject_title">Auto tolak panggilan</string>
     <string name="smart_call_title">ID pemanggil dan perlindungan spam</string>
-    <string name="smart_call_title_usa">Kenal pasti nombor spam</string>
     <string name="smart_call_title_for_notice">ID pemanggil dan perlindungan spam</string>
-    <string name="smart_call_description">Kenal pasti pemanggil dan penghantar mesej yang tidak disimpan pada skrin panggilan, dalam log Telefon dan dalam Mesej.</string>
-    <string name="smart_call_usa_description">Tunjukkan maklumat tentang pemanggil spam pada skrin panggilan dan dalam Log telefon.</string>
+    <string name="smart_call_description">"Gunakan Smart Call untuk mengenal pasti pemanggil spam dan penipuan.
+
+Perkhidmatan ini akan menunjukkan kepada anda nama dan gambar profil pemanggil dan penghantar mesej yang bukan kenalan anda."</string>
     <string name="smart_call_description_roaming">Perkhidmatan ini tidak tersedia di negara lain.</string>
+    <string name="smart_call_noti_description_1">Ketik di sini untuk melindungi diri anda daripada pemanggil spam secara percuma.</string>
+    <string name="smart_call_noti_description_2">Ketik di sini untuk mengenal pasti pemanggil spam dan penipuan.</string>
     <string name="smart_call_share_name_number_title">Kongsi nama dan nombor</string>
     <string name="smart_call_share_name_number_summary">Daftar nama dan nmbr anda dgn plyn agr pnerima yg tdk mpnyai nmbr anda dpt melihat apbl anda mmanggil/mghntr msj kpd mrk.</string>
     <string name="smart_call_legal_info_category">Maklumat undang-undang</string>
@@ -2459,12 +2477,16 @@ Untuk menyediakan ciri ini, data tertentu, sebagai contoh nombor telefon pemangg
 Sila klik butang yang sesuai di bawah untuk menandakan bahawa anda bersetuju dengan perkara yang di atas dan mahu mendayai ciri %s pada masa ini."</string>
     <string name="smart_call_privacy_notice_donotshow">Jangan tunjukkan pemberitahuan yang menerangkan fungsi Kenal pasti nombor yang tidak disimpan sekali lagi</string>
     <string name="smart_call_privacy_notice_dream">Perkhidmatan ini tersedia apabila peranti mudah alih anda bersambung dengan rangkaian mudah alih anda, semasa panggilan masuk dan keluar, tetapi akan terhad semasa perayauan. Penggunaan rangkaian mudah alih boleh menyebabkan caj tambahan dikenakan, bergantung pada pelan data dengan penyedia rangkaian anda.</string>
+    <string name="show_privacy_notice_title">Dasar privasi</string>
     <string name="search_for_places_nearby_title">Cari untuk tempat berdekatan</string>
     <string name="search_for_places_nearby_help_description1">Cari nombor telefon dan maklumat untuk tempat dan perniagaan tempatan berdekatan.</string>
     <string name="search_for_places_nearby_help_description2">Perkhidmatan ini memerlukan maklumat lokasi anda.</string>
     <string name="search_for_places_nearby_help_description3">Untuk mengoptimumkan ketepatan maklumat lokasi anda, pergi ke Aturan > Sambungan > Lokasi > Kaedah Pencarian, kemudian pilih Ketepatan tinggi.</string>
     <string name="search_for_places_nearby_help_description3_vzw">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description4">Menggunakan rangkaian mudah alih dan bukannya Wi-Fi mungkin dikenakan caj tambahan bergantung pada pelan pembayaran anda.</string>
+    <string name="withdraw_menu_title">Henti guna perkhidmatan ini</string>
+    <string name="withdraw_dialog_description">Apabila anda berhenti menggunakan %1$s, perkhidmatan akan dinyahaktifkan dan semua data %2$s yang disimpan oleh pembekal perkhidmatan akan dipadamkan.</string>
+    <string name="withdraw_dialog_button">Henti guna perkhidmatan</string>
     <string name="record_call_setting_title">Auto rakam panggilan</string>
     <string name="record_call_setting_selected_number">Nombor dipilih</string>
     <string name="record_call_setting_all_number">Semua nombor</string>
@@ -2477,6 +2499,8 @@ Sila klik butang yang sesuai di bawah untuk menandakan bahawa anda bersetuju den
     <string name="record_call_noti_setting_title">Pemberitahuan rakaman</string>
     <string name="record_call_noti_setting_summary">Terima pemberitahuan selepas panggilan dirakam.</string>
     <string name="record_call_help_summary">Rakam panggilan kepada atau daripada nombor yang dipilih secara automatik.</string>
+    <string name="record_call_setting_on_description">Auto rakam dihidupkan</string>
+    <string name="record_call_setting_off_description">Auto rakam dimatikan</string>
     <string name="visual_call_title_callsetting">IVR call screen menu</string>
     <string name="preference_update_DB_visual_call">Kms kini DB panggilan IVR</string>
     <string name="preference_update_DB_visual_call_summary">Auto kemas kini melalui WLAN sahaja</string>
@@ -2719,6 +2743,7 @@ Masukkan kod yang anda peroleh daripada Verizon:"</string>
     <string name="about_phone_open_source_licenses">Lesen sumber terbuka</string>
     <string name="no_network_connection">Tiada sambungan rangkaian</string>
     <string name="unable_to_check_for_updates">Tidak dapat menyemak kemas kini. Tiada sambungan rangkaian.</string>
+    <string name="phoneAppLabel_dcm">Dail</string>
     <string name="dcm_vt_fail_cause_not_in_4g">Tidak dapat membuat panggilan video kerana anda tidak berada di kawasan liputan 4G.</string>
     <string name="ss_do_not_show_again_us">Do not show again</string>
     <string name="disable_advanced_calling_warning_msg">Your phone will not be able to make or receive HD voice and video calls when you turn this setting off.</string>
@@ -2752,6 +2777,8 @@ In the future if you want to use Wi-Fi for voice calling you can turn on Wi-Fi C
     <string name="save_text">Simpan</string>
     <string name="wfc_enable_dialog_title">Aktifkan panggilan Wi-Fi</string>
     <string name="wfc_enable_dialog">Mengaktifkan panggilan Wi-Fi akan menyahaktifkan Mod penjimatan kuasa. Ini mungkin meningkatkan penggunaan bateri. Sesetengah pembekal perkhidmatan mungkin tidak menyokong fungsi ini.</string>
+    <string name="group_call_not_support_emergency_number">Tidak dapat menambahkan nombor kecemasan ke panggilan kumpulan.</string>
+    <string name="group_call_not_support_emergency_number_all">Tidak dapat menambahkan nombor kecemasan ke panggilan kumpulan. Semua kenalan dipilih lain telah ditambah.</string>
     <string name="enable_data_popup_message">Untuk mengaktifkan fungsi ini, Data mudah alih mesti dihidupkan.</string>
     <string name="enable_data_popup_tittle">Tdk dpt aktifkan fungsi</string>
 </resources>

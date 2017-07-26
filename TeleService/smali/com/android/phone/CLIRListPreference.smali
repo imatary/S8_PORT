@@ -233,7 +233,7 @@
 
     iput v2, p0, Lcom/android/phone/CLIRListPreference;->prev_CLIR_value:I
 
-    const v1, 0x7f0d030b
+    const v1, 0x7f0d036b
 
     packed-switch v2, :pswitch_data_1
 
@@ -282,17 +282,17 @@
     goto :goto_2
 
     :pswitch_4
-    const v1, 0x7f0d030a
+    const v1, 0x7f0d036a
 
     goto :goto_3
 
     :pswitch_5
-    const v1, 0x7f0d0309
+    const v1, 0x7f0d0369
 
     goto :goto_3
 
     :pswitch_6
-    const v1, 0x7f0d030b
+    const v1, 0x7f0d036b
 
     goto :goto_3
 
@@ -516,7 +516,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d02c9
+    const v2, 0x7f0d0329
 
     invoke-static {v1, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

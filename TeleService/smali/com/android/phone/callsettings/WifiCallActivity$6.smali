@@ -60,10 +60,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/Switch;->setChecked(Z)V
 
-    iget-object v1, p0, Lcom/android/phone/callsettings/WifiCallActivity$6;->this$0:Lcom/android/phone/callsettings/WifiCallActivity;
-
-    invoke-static {v1, v0}, Lcom/android/phone/callsettings/WifiCallActivity;->-wrap1(Lcom/android/phone/callsettings/WifiCallActivity;Z)V
-
     return-void
 
     :cond_0

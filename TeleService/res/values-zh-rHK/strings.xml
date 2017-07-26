@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$d小時 %2$d分鐘</string>
+    <string name="battery_history_hours_no_seconds">%1$d 小時 %2$d 分鐘</string>
     <string name="battery_history_minutes_no_seconds">%d 分鐘</string>
     <string name="wifi_fail_to_scan">無法掃瞄網絡</string>
     <string name="wifi_failed_to_obtain_IP">獲取 IP 地址失敗</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">無法連接至 %s。</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">無法連接至 %1$s。請在 %2$s 中檢查您的設定並重試。</string>
     <string name="bluetooth_pairing_rejected_error_message">%s拒絕配對。</string>
+    <string name="bluetooth_getting_remote_device_name">正在取得裝置名稱…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">當已連接此裝置時，將顯示裝置名稱。</string>
     <string name="accessibility_wifi_off">Wi-Fi 已關閉。</string>
     <string name="accessibility_no_wifi">Wi-Fi 連線已中斷。</string>
     <string name="accessibility_wifi_one_bar">Wi-Fi 訊號一格。</string>
@@ -839,7 +841,7 @@
     <string name="singleContactImportedMsg">已匯入聯絡人</string>
     <string name="failedToImportSingleContactMsg">無法匯入聯絡人</string>
     <string name="hac_mode_title">助聽器</string>
-    <string name="hac_mode_summary">提升裝置的聲音品質，以搭配助聽器的使用。</string>
+    <string name="hac_mode_summary">優化手機的聲音品質以使用助聽器。</string>
     <string name="dtmf_tones_title">DTMF音</string>
     <string name="dtmf_tones_summary">設定DTMF音長度。</string>
     <string name="network_info_message">網絡訊息</string>
@@ -1022,6 +1024,10 @@
     <string name="add_call_block_number_toast">您將不會收到來自此號碼的來電。</string>
     <string name="delete_call_block_number_toast">您現在可以接聽此號碼的來電。</string>
     <string name="emergency_call_block_number_toast">無法封鎖緊急號碼。</string>
+    <string name="call_block_dialog_title">編輯封鎖號碼</string>
+    <string name="call_block_dialog_contents">從 Android Nougat 起，通話封鎖模式將替換為封鎖號碼。封鎖號碼將自動封鎖通話與訊息。</string>
+    <string name="call_block_dialog_settings">輕觸 [設定] 以編輯封鎖號碼。</string>
+    <string name="call_block_dialog_button">設定</string>
     <string name="no_block_number_description">您加入的號碼將顯示於此。</string>
     <string name="no_messages_description">您加入的訊息將顯示於此。</string>
     <string name="callsettings_vipmode_blacklist_title">黑名單</string>
@@ -1343,7 +1349,7 @@ Injured/Dead
     <string name="roaming_alerts_sbody">變更語音、文字與數據漫遊設定，包括國際漫遊。</string>
     <string name="roaming_alerts_voice_body">語音漫遊</string>
     <string name="roaming_alerts_data_body">數據漫遊</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">發送文字漫遊</string>
     <string name="roaming_domestic_category">國內漫遊</string>
     <string name="roaming_international_category">國際漫遊</string>
     <string name="roaming_voice_body">語音與文字漫遊</string>
@@ -1513,9 +1519,7 @@ Injured/Dead
     <string name="data_usage_disable_mobile_vzw_chn">"除非您使用 WLAN ，否則將無法使用互聯網、電子郵件或其他需要數據連接的應用程式。
 
 流動數據將停用。"</string>
-    <string name="mobile_data_off_dialog_text_common">"除非您使用 Wi-Fi 網絡，否則將無法使用瀏覽器、電子郵件或其他需要數據連接的應用程式。
-
-流動數據將被關閉。"</string>
+    <string name="mobile_data_off_dialog_text_common">除非您連接至 Wi-Fi 網絡，否則將無法使用瀏覽器、電子郵件或其他需要網絡連接的應用程式。</string>
     <string name="mobile_data_off_dialog_button_turn_off">關閉</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"除非您使用 Wi-Fi 網絡，否則將無法使用瀏覽器、電子郵件或其他需要數據連接的應用程式。
 
@@ -1595,8 +1599,9 @@ Injured/Dead
 若您並非使用固定收費計劃，將會產生額外費用。"</string>
     <string name="data_3gwarning_popup_title">流動數據</string>
     <string name="roaming_data_off_msg">若要使用數據漫遊，請前往 [設定] > [連接] > [全球漫遊]，然後啟用 [數據漫遊]。</string>
-    <string name="data_3gwarning_popup_noti">若您並非使用固定收費計劃，則連接至流動網絡會產生額外費用。連接嗎？</string>
-    <string name="lgt_4gwarning_popup_mobiledata">流動數據將開啟。根據您的資費方案，這可能會被服務供應商收取額外費用。</string>
+    <string name="data_3gwarning_popup_noti">流動數據將開啟。連接至流動網絡可能根據您的資費方案產生額外費用。</string>
+    <string name="data_3gwarning_popup_noti_ktt">流動數據將被開啟以使用 GiGA LTE。這可能根據您的資費方案產生額外費用。</string>
+    <string name="lgt_4gwarning_popup_mobiledata">流動數據將開啟。連接至流動網絡可能根據您的資費方案產生額外費用。</string>
     <string name="lgt_lte_data_roaming_warningmsg">"數據漫遊啟用時，&lt;u>&lt;font color=\"%1$s\">將收取國際漫遊費，而非國內數據費。&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">停用如 IM 通知與自動更新等功能即可啟用限制背景數據，減少數據漫遊費&lt;/font>&lt;/u>"</string>
@@ -1967,6 +1972,8 @@ Injured/Dead
     <string name="volte_call_summary_ops">透過 4G 網絡撥打高清語音通話。</string>
     <string name="voice_over_lte_title_cct">Volte 通話</string>
     <string name="volte_call_summary_cct">透過可用的 4G LTE 手機網絡啟用進階通話功能。</string>
+    <string name="voice_over_lte_title_o2">4G 通話</string>
+    <string name="volte_call_summary_o2">使用 4G 數據享受增強通訊。</string>
     <string name="volte_tty_description_on">TTY 開啟時，您將無法撥打視像通話或召開電話會議。</string>
     <string name="volte_prepaid_tty_description_on">TTY 模式將啟用。您將無法撥打或接聽電話會議。</string>
     <string name="volte_tty_description_off">TTY 關閉時，您將無法撥打與接聽 TTY 通話。</string>
@@ -2156,9 +2163,13 @@ Injured/Dead
     <string name="group_voice_call_disable_on_3G">群組通話僅可透過 LTE 網絡使用</string>
     <string name="group_voice_call_outgoing_voice_call">撥出語音通話</string>
     <string name="voice_party_call_fail_network">無法撥打語音多方通話。請檢查網絡連接。</string>
+    <string name="data_usage_disable_mobile_warning_skt">"除非您使用 Wi-Fi 網絡，否則將無法使用瀏覽器、電子郵件或其他需要數據連接的應用程式。
+
+流動數據將被關閉。"</string>
     <string name="data_usage_disable_mobile_warning">"除非您使用 Wi-Fi 網絡，否則將無法使用瀏覽器、電子郵件或其他需要數據連接的應用程式。
 
 流動數據將被停用。"</string>
+    <string name="data_usage_enable_mobile_warning_skt">流動數據將開啟。連接至流動網絡可能根據您的資費方案產生額外費用。</string>
     <string name="data_usage_enable_mobile_warning">透過分組數據連接可能會產生額外費用。要繼續嗎？</string>
     <string name="insert_sim_card">插入 SIM 卡</string>
     <string name="insert_sim_card_message">插入 SIM 卡以存取網絡服務。</string>
@@ -2192,6 +2203,7 @@ Injured/Dead
     <string name="turning_off_answer_memo">自動接聽與接聽訊息無法同時啟用。將停用接聽訊息。</string>
     <string name="disconnect_network_message">更改數據服務網絡，將會中斷目前使用的網絡連接。更改數據服務網絡？</string>
     <string name="disconnect_network_title">中斷目前網絡的連接</string>
+    <string name="disable2g_warning_message">此設定將關閉 2G 服務。若關閉 2G，部分應用程式與功能在 LTE 或 3G 不可用的位置可能無法運作。</string>
     <string name="data_roaming_restrict_title">數據漫遊已停用</string>
     <string name="data_roaming_restrict_body">輕觸此處以啟用數據漫遊。</string>
     <string name="data_network_mode">數據網絡模式</string>
@@ -2392,6 +2404,10 @@ Injured/Dead
     <string name="delete_this_number_kddi">刪除此號碼嗎？</string>
     <string name="change_guide_language_kddi">變更指南語言</string>
     <string name="apply_option_service_kddi">前往%s服務選項</string>
+    <string name="optional_service_kddi">使用可選服務</string>
+    <string name="au_call_settings_category">客戶支援</string>
+    <string name="website_kddi">前往網站</string>
+    <string name="call_au_service_center">撥打 (157)</string>
     <string name="Janpanese_guidance_kddi">日文指南 (%d)</string>
     <string name="English_guidance_kddi">英文指南 (%d)</string>
     <string name="voicecall_kddi">留言信箱</string>
@@ -2446,11 +2462,13 @@ Injured/Dead
     <string name="spam_call_mute_first_ring_summary">將第一個來自未儲存號碼的來電鈴聲靜音。</string>
     <string name="spam_call_auto_reject_title">自動拒絕通話</string>
     <string name="smart_call_title">來電顯示與垃圾訊息保護</string>
-    <string name="smart_call_title_usa">識別垃圾訊息號碼</string>
     <string name="smart_call_title_for_notice">來電顯示與垃圾來電保護</string>
-    <string name="smart_call_description">識別來電螢幕上、電話記錄中及訊息中未儲存的來電者及訊息寄件人。</string>
-    <string name="smart_call_usa_description">在通話螢幕與電話記錄上顯示垃圾通話來電者的相關資訊。</string>
+    <string name="smart_call_description">"使用智能通話來識別垃圾與欺詐來電者的身份。
+
+此服務可顯示不在您聯絡人中的來電者與訊息寄件人的姓名及個人資料相片。"</string>
     <string name="smart_call_description_roaming">此服務在其他國家不可用。</string>
+    <string name="smart_call_noti_description_1">輕觸此處以免費防止您受到垃圾來電者的打擾。</string>
+    <string name="smart_call_noti_description_2">輕觸此處以識別垃圾與欺詐來電者的身份。</string>
     <string name="smart_call_share_name_number_title">共享姓名和號碼</string>
     <string name="smart_call_share_name_number_summary">在伺服器中註冊您的姓名與號碼，以便收件人在沒有您的號碼的情況下可以看到您向其撥打電話/發送訊息的時間。</string>
     <string name="smart_call_legal_info_category">法律資訊</string>
@@ -2467,12 +2485,16 @@ Injured/Dead
 請點選以下適當的按鈕，以表示您同意上述內容，而想要在目前啟用 %s 功能。"</string>
     <string name="smart_call_privacy_notice_donotshow">不再顯示描述識別未儲存的號碼的通知</string>
     <string name="smart_call_privacy_notice_dream">您的流動裝置在來電或撥出通話期間連接到流動網絡時，可使用本服務，但漫遊時則將受到限制。使用流動網絡可能造成您必須額外付費 (視網絡供應商之數據方案而定)。</string>
+    <string name="show_privacy_notice_title">私隱政策</string>
     <string name="search_for_places_nearby_title">搜尋附近的地點</string>
     <string name="search_for_places_nearby_help_description1">尋找附近的本地企業及場地的電話號碼及資訊。</string>
     <string name="search_for_places_nearby_help_description2">此服務需要您的位置資訊。</string>
     <string name="search_for_places_nearby_help_description3">為優化您的位置資訊的精確度，請前往 [設定] > [連接] > [位置] > [定位方式]，然後選擇 [高精確度]。</string>
     <string name="search_for_places_nearby_help_description3_vzw">為優化您的位置資訊的精確度，請前往 [設定] > [連接] > [位置] > [ 定位方式]，然後選擇 [高精確度]。</string>
     <string name="search_for_places_nearby_help_description4">使用流動網絡而非 Wi-Fi 網絡可能根據您的資費方案產生額外費用。</string>
+    <string name="withdraw_menu_title">停止使用此服務</string>
+    <string name="withdraw_dialog_description">當您停止使用 %1$s 時，服務將停用，且服務供應商儲存的所有 %2$s 數據將被刪除。</string>
+    <string name="withdraw_dialog_button">停止使用服務</string>
     <string name="record_call_setting_title">自動錄製通話</string>
     <string name="record_call_setting_selected_number">已選擇號碼</string>
     <string name="record_call_setting_all_number">所有號碼</string>
@@ -2485,6 +2507,8 @@ Injured/Dead
     <string name="record_call_noti_setting_title">錄音通知</string>
     <string name="record_call_noti_setting_summary">錄製通話後接收通知。</string>
     <string name="record_call_help_summary">自動錄製與所選號碼之間的通話。</string>
+    <string name="record_call_setting_on_description">已開啟自動錄製</string>
+    <string name="record_call_setting_off_description">已關閉自動錄製</string>
     <string name="visual_call_title_callsetting">IVR 撥號螢幕功能表</string>
     <string name="preference_update_DB_visual_call">更新 IVR 通話數據庫</string>
     <string name="preference_update_DB_visual_call_summary">僅透過 WLAN 自動更新</string>
@@ -2727,6 +2751,7 @@ Please note that in order to enable your emergency calls (e.g., such as 112 call
     <string name="about_phone_open_source_licenses">開放源碼授權</string>
     <string name="no_network_connection">無網絡連接</string>
     <string name="unable_to_check_for_updates">無法檢查更新。無網絡連接。</string>
+    <string name="phoneAppLabel_dcm">Dial</string>
     <string name="dcm_vt_fail_cause_not_in_4g">無法撥打視像通話，因為您未處於 4G 區域。</string>
     <string name="dial_up_network">撥號網絡</string>
     <string name="dun_enable">使用撥號網絡連接到天翼寬帶數據服務</string>
@@ -2767,6 +2792,8 @@ Please note that in order to enable your emergency calls (e.g., such as 112 call
     <string name="save_text">儲存</string>
     <string name="wfc_enable_dialog_title">啟用 Wi-Fi 通話</string>
     <string name="wfc_enable_dialog">啟用 Wi-Fi 通話將停用省電模式。這可能會增加電池消耗。部分服務供應商可能不支援此功能。</string>
+    <string name="group_call_not_support_emergency_number">無法加入緊急號碼至群組通話。</string>
+    <string name="group_call_not_support_emergency_number_all">無法加入緊急號碼至群組通話。已加入所有其他已選擇的聯絡人。</string>
     <string name="enable_data_popup_message">若要啟用此功能，必須開啟流動數據。</string>
     <string name="enable_data_popup_tittle">無法啟用功能</string>
 </resources>

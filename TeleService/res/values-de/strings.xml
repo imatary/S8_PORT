@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dh %2$dm</string>
-    <string name="battery_history_minutes_no_seconds">%dm</string>
+    <string name="battery_history_hours_no_seconds">%1$d h, %2$d min</string>
+    <string name="battery_history_minutes_no_seconds">%d min</string>
     <string name="wifi_fail_to_scan">Netzwerkscan nicht möglich</string>
     <string name="wifi_failed_to_obtain_IP">IP-Adresse konnte nicht abgerufen werden</string>
     <string name="wifi_security_none">Keine</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">Verbindung zu %s kann nicht hergestellt werden.</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">Es kann keine Verbindung mit %1$s hergestellt werden. Überprüfen Sie die Einstellungen in „%2$s“ und versuchen Sie es erneut.</string>
     <string name="bluetooth_pairing_rejected_error_message">Kopplung von %s abgelehnt</string>
+    <string name="bluetooth_getting_remote_device_name">Gerätename wird abgerufen…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">Gerätename wird angezeigt, wenn dieses Gerät verbunden ist.</string>
     <string name="accessibility_wifi_off">WLAN: aus</string>
     <string name="accessibility_no_wifi">WLAN getrennt</string>
     <string name="accessibility_wifi_one_bar">WLAN: ein Balken</string>
@@ -839,7 +841,7 @@
     <string name="singleContactImportedMsg">Kontakt wird importiert.</string>
     <string name="failedToImportSingleContactMsg">Fehler beim Importieren des Kontakts</string>
     <string name="hac_mode_title">Hörgeräte</string>
-    <string name="hac_mode_summary">Tonqualität des Geräts bei Verwendung eines Hörgeräts verbessern.</string>
+    <string name="hac_mode_summary">Tonqualität Ihres Telefons bei Verwendung eines Hörgeräts optimieren.</string>
     <string name="dtmf_tones_title">DTMF-Töne</string>
     <string name="dtmf_tones_summary">Länge der DTMF-Töne festlegen</string>
     <string name="network_info_message">Netznachricht</string>
@@ -886,7 +888,7 @@ Dies kann bis zu 5 Minuten dauern.\""</string>
     <string name="wfc_summary">Deaktiviert</string>
     <string name="wfc_on">Aktiviert</string>
     <string name="wfc_off">Deaktiviert</string>
-    <string name="wfc_summary_dt">Wo möglich WLAN nutzen, um Anrufe zu tätigen und zu empfangen.</string>
+    <string name="wfc_summary_dt">WLAN nutzen, um Anrufe zu tätigen und zu empfangen.</string>
     <string name="wifi_calling_learn_more">Weitere Infos</string>
     <string name="wifi_calling_pop_up_header">WLAN aktiviert</string>
     <string name="wifi_calling_pop_up">Dieses Gerät unterstützt WLAN-Anrufe. Dies ermöglicht es Ihnen, Ihr Telefon auch an Orten zu verwenden, an denen Ihnen kein Mobilnetz zur Verfügung steht, z. B. in Kellern, Wohnungen oder großen Gebäuden. Wenn Sie WLAN-Anrufe verwenden, wird die Nutzung von den Sprechzeit- und Nachrichtenkontingenten Ihres WLAN-Tarifs abgezogen.</string>
@@ -1022,6 +1024,10 @@ Das Symbol unten wird angezeigt, wenn diese Funktion verfügbar ist."</string>
     <string name="add_call_block_number_toast">Sie erhalten keine Anrufe von dieser Nummer.</string>
     <string name="delete_call_block_number_toast">Sie können jetzt Anrufe von dieser Nummer empfangen.</string>
     <string name="emergency_call_block_number_toast">Notrufnummern können nicht blockiert werden.</string>
+    <string name="call_block_dialog_title">Bearbeiten gespeicherter Nummern</string>
+    <string name="call_block_dialog_contents">Ab Android Nougat wird der Anrufruhemodus durch „Nummern sperren“ ersetzt. „Nummern sperren“ sperrt nicht nur Anrufe sondern Anrufe und Nachrichten automatisch.</string>
+    <string name="call_block_dialog_settings">Tippen Sie auf „EINSTELLUNGEN“ um „Nummern sperren“ zu bearbeiten.</string>
+    <string name="call_block_dialog_button">Einstellungen</string>
     <string name="no_block_number_description">Hinzugefügte Nummern werden hier angezeigt.</string>
     <string name="no_messages_description">Hinzugefügte Nachrichten werden hier angezeigt.</string>
     <string name="callsettings_vipmode_blacklist_title">Blacklist</string>
@@ -1071,7 +1077,7 @@ Das Symbol unten wird angezeigt, wenn diese Funktion verfügbar ist."</string>
     <string name="callsettings_answering_volume_key_title">Ruf mit Lauter-Taste annehmen</string>
     <string name="callsettings_answering_key_summary">Drücken Sie die Home-Taste, um eingehende Anrufe entgegenzunehmen.</string>
     <string name="callsettings_PowerkeyEndsCalls_title">Anrufe mit Ein-/Aus-Taste beenden</string>
-    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Anrufe mit Ein-/Aus-Taste beenden</string>
+    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Ein-/Aus-Taste drücken, um Anrufe zu beenden</string>
     <string name="callsettings_PowerkeyEndsCalls_summary">Ein/Aus drücken, um Anruf zu beenden wenn Bildschirm an ist. Der Bildschirm bleibt an.</string>
     <string name="Dialog_PowerkeyEndsCalls">Die Ein-/Aus-Taste kann nicht zum Beenden von Anrufen eingerichtet werden, solange der Umgebungssensor ausgeschaltet ist. Der Umgebungssensor wird eingeschaltet. Bei Anrufen wird der Bildschirm ausgeschaltet, wenn Sie das Gerät ans Ohr halten.</string>
     <string name="Dialog_PowerkeyEndsCalls_title">Umgebungssensor aktiv.</string>
@@ -1343,7 +1349,7 @@ Injured/Dead
     <string name="roaming_alerts_sbody">Die Einstellungen für Sprach-, Text- und Daten-Roaming, einschließlich internationalem Roaming, ändern.</string>
     <string name="roaming_alerts_voice_body">Sprach-Roaming</string>
     <string name="roaming_alerts_data_body">Daten-Roaming</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">Ausgehende SMS bei Roaming</string>
     <string name="roaming_domestic_category">Roaming im Inland</string>
     <string name="roaming_international_category">Internationales Roaming</string>
     <string name="roaming_voice_body">Sprach- und Text-Roaming</string>
@@ -1514,9 +1520,7 @@ Mobile Daten deaktivieren?"</string>
     <string name="data_usage_disable_mobile_vzw_chn">"Sie können das Internet, E-Mail oder andere Anwendungen, die eine Datenverbindung benötigen, nicht mehr verwenden, außer bei der Verwendung von WLAN.
 
 Mobile Daten werden deaktiviert."</string>
-    <string name="mobile_data_off_dialog_text_common">"Sie können das Internet, E-Mail oder andere Anwendungen, die eine Datenverbindung benötigen, nicht mehr verwenden, außer Sie nutzen WLAN.
-
-Mobile Daten werden deaktiviert."</string>
+    <string name="mobile_data_off_dialog_text_common">Sie können das Internet, E-Mail oder andere Anwendungen, die eine Netzwerkverbindung benötigen, nur dann verwenden, wenn Sie mit einem WLAN-Netzwerk verbunden sind.</string>
     <string name="mobile_data_off_dialog_button_turn_off">Ausschalten</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"Sie können das Internet, E-Mail oder andere Anwendungen, die eine Datenverbindung benötigen, nicht mehr verwenden, außer bei der Verwendung von WLAN.
 
@@ -1596,8 +1600,9 @@ Wenn Sie den Netzmodus ändern möchten, wechseln Sie zu „Einstellungen > Weit
 Hierbei können zusätzliche Kosten anfallen, wenn Sie keine Flatrate besitzen."</string>
     <string name="data_3gwarning_popup_title">Mobile Datenverbindung</string>
     <string name="roaming_data_off_msg">Zum Aktivieren des Daten-Roamings im Ausland gehen Sie zu „Einstellungen > Verbindungen > Globales Roaming” und aktivieren dann das Daten-Roaming.</string>
-    <string name="data_3gwarning_popup_noti">Bei einer Verbindung mit einem mobilen Netz können zusätzliche Kosten anfallen, wenn Sie keine Flatrate besitzen. Verbinden?</string>
-    <string name="lgt_4gwarning_popup_mobiledata">Mobile Daten werden aktiviert. Dadurch können je nach Tarif zusätzliche Gebühren von Ihrem Dienstanbieter entstehen.</string>
+    <string name="data_3gwarning_popup_noti">Mobile Daten werden eingeschaltet. Bei einer Verbindung mit einem mobilen Netzwerk fallen je nach Tarif möglicherweise zusätzliche Gebühren an.</string>
+    <string name="data_3gwarning_popup_noti_ktt">Mobile Daten werden aktiviert, um GiGA LTE zu verwenden. Dies kann je nach Tarif zusätzliche Kosten verursachen.</string>
+    <string name="lgt_4gwarning_popup_mobiledata">Mobile Daten werden eingeschaltet. Bei einer Verbindung mit einem mobilen Netzwerk fallen je nach Tarif möglicherweise zusätzliche Gebühren an.</string>
     <string name="lgt_lte_data_roaming_warningmsg">"Wenn Daten-Roaming aktiviert ist, &lt;u>&lt;font color=\"%1$s\">fallen anstelle der entsprechenden nationalen Gebühren Gebühren für das internationale Daten-Roaming an.&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">Aktivieren Sie die Funktion “Hintergrunddaten einschränken”, um die durch das Daten-Roaming entstehenden Kosten zu reduzieren,&lt;/font>&lt;/u> indem Sie Funktionen wie “IM-Benachrichtigungen” und automatische Aktualisierungen deaktivieren."</string>
@@ -1968,6 +1973,8 @@ Wenden Sie sich an das Kundendienstzentrum oder an einen örtlichen Händler."</
     <string name="volte_call_summary_ops">HD-Sprachanrufe über 4G-Netzwerk tätigen.</string>
     <string name="voice_over_lte_title_cct">VoLTE-Anruf</string>
     <string name="volte_call_summary_cct">Erweiterte Anruffunktionen über das 4G LTE-Mobilnetz (falls verfügbar) aktivieren.</string>
+    <string name="voice_over_lte_title_o2">4G-Anrufe</string>
+    <string name="volte_call_summary_o2">Viel Spaß mit 4G basierter Telefonie.</string>
     <string name="volte_tty_description_on">Wenn TTY eingeschaltet ist, können Sie keine Videoanrufe tätigen und empfangen und keine Telefonkonferenzen abhalten.</string>
     <string name="volte_prepaid_tty_description_on">TTY-Modus wird aktiviert. Sie können Sie keine Konferenzanrufe tätigen oder empfangen.</string>
     <string name="volte_tty_description_off">Wenn TTY ausgeschaltet ist, können Sie keine TTY-Anrufe tätigen und empfangen.</string>
@@ -2157,9 +2164,13 @@ LTE-Roaming ist nicht verfügbar, wenn Sie nicht zustimmen. Falls keine LTE-Netz
     <string name="group_voice_call_disable_on_3G">Gruppenanrufe nur über LTE-Netz verfügbar</string>
     <string name="group_voice_call_outgoing_voice_call">Ausgehender Sprachanruf</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"Sie können das Internet, E-Mail oder andere Anwendungen, die eine Datenverbindung benötigen, nicht mehr verwenden, außer Sie nutzen WLAN.
+
+Mobile Daten werden deaktiviert."</string>
     <string name="data_usage_disable_mobile_warning">"Sie können das Internet, E-Mail oder andere Anwendungen, die eine Datenverbindung benötigen, nicht mehr verwenden, außer bei der Verwendung von WLAN.
 
 Mobile Daten werden deaktiviert."</string>
+    <string name="data_usage_enable_mobile_warning_skt">Mobile Daten werden eingeschaltet. Bei einer Verbindung mit einem mobilen Netzwerk fallen je nach Tarif möglicherweise zusätzliche Gebühren an.</string>
     <string name="data_usage_enable_mobile_warning">Die Verbindung über Paketdaten kann zusätzliche Kosten erzeugen. Fortfahren?</string>
     <string name="insert_sim_card">SIM-Karte einlegen</string>
     <string name="insert_sim_card_message">SIM-Karte einsetzen, um auf Netzdienste zuzugreifen</string>
@@ -2195,6 +2206,7 @@ Mobile Daten werden deaktiviert."</string>
     <string name="disconnect_network_title">Aktuelles Netzwerk trennen</string>
     <string name="lte_only_warning_message">"In dieser Betriebsart werden Sie nicht in der Lage zu machen / Anrufe empfangen. 
  Sie können auch verlieren den Dienst wegen mangelnder 4G Abdeckung."</string>
+    <string name="disable2g_warning_message">Diese Einstellung schaltet den 2G-Dienst aus. Wenn der 2G-Dienst ausgeschaltet ist, funktionieren einige Apps und Funktionen an Standorten ohne verfügbares LTE oder 3G möglicherweise nicht.</string>
     <string name="data_roaming_restrict_title">Daten-Roaming deaktiviert</string>
     <string name="data_roaming_restrict_body">Hier tippen, um Daten-Roaming zu aktivieren.</string>
     <string name="data_network_mode">Datennetzmodus</string>
@@ -2395,6 +2407,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">Diese Nummer löschen?</string>
     <string name="change_guide_language_kddi">Ändern der Anleitungssprache</string>
     <string name="apply_option_service_kddi">Zu %s-Dienstoptionen</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">Kundendienst</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">Japanische Anleitung (%d)</string>
     <string name="English_guidance_kddi">Englische Anleitung (%d)</string>
     <string name="voicecall_kddi">Mailbox</string>
@@ -2449,11 +2465,13 @@ Die Funktion „Identifizieren nicht gespeicherter Nummern“ verwendet von Tenc
     <string name="spam_call_mute_first_ring_summary">Erstes Klingeln von Anrufen von nicht gespeicherten Nummern stummschalten.</string>
     <string name="spam_call_auto_reject_title">Anrufe automatische ablehnen</string>
     <string name="smart_call_title">Anrufer-ID und Spam-Schutz</string>
-    <string name="smart_call_title_usa">Spam-Nummern identifizieren</string>
     <string name="smart_call_title_for_notice">Anrufer-ID und Spam-Schutz</string>
-    <string name="smart_call_description">Anrufe und Nachrichten von nicht gespeicherten Nummern auf dem Anrufbildschirm, dem Telefonprotokoll und in Nachrichten identifizieren.</string>
-    <string name="smart_call_usa_description">Informationen über Spamanrufer auf dem Anrufbildschirm und im Telefonprotokoll anzeigen.</string>
+    <string name="smart_call_description">"Smart Call zur Identifizierung von Spam- und Betrugsanrufen verwenden.
+
+Dieser Dienst zeigt Ihnen die Namen und Profilbilder von Anrufern und Nachrichtensendern, die nicht in Ihren Kontakten sind."</string>
     <string name="smart_call_description_roaming">Dieser Dienst ist in anderen Ländern nicht verfügbar.</string>
+    <string name="smart_call_noti_description_1">Hier tippen, um sich kostenlos vor Spamanrufen zu schützen.</string>
+    <string name="smart_call_noti_description_2">Hier tippen, um Spam- und Betrugsanrufe zu identifizieren.</string>
     <string name="smart_call_share_name_number_title">Namen und Nummer teilen</string>
     <string name="smart_call_share_name_number_summary">Name und Nummer bei Server registrieren, damit Empfänger Ihrer Anrufe oder SMS Sie auch ohne Ihre Nummer erkennen können.</string>
     <string name="smart_call_legal_info_category">Rechtliche Informationen</string>
@@ -2470,12 +2488,16 @@ Für die Bereitstellung dieser Funktion werden bestimmte Daten wie etwa die Tele
 Bitte klicken Sie auf die entsprechende Schaltfläche unten, um zu bestätigen, dass Sie dem Vorstehenden zustimmen und die Funktion %s jetzt aktivieren möchten."</string>
     <string name="smart_call_privacy_notice_donotshow">Benachrichtigung zur Beschreibung der Funktion zum Identifizieren nicht gespeicherter Nummern nicht erneut anzeigen</string>
     <string name="smart_call_privacy_notice_dream">Dieser Dienst ist verfügbar, wenn Ihr Mobilgerät bei ein- und ausgehenden Anrufen mit Ihrem Mobilfunknetz verbunden ist, aber bei Roaming nur eingeschränkt. Bei Verwendung von Mobilfunknetzen können je nach Datentarif Ihres Netzanbieters zusätzliche Gebühren anfallen.</string>
+    <string name="show_privacy_notice_title">Datenschutzrichtlinien</string>
     <string name="search_for_places_nearby_title">Orte in der Nähe suchen</string>
     <string name="search_for_places_nearby_help_description1">Suchen Sie Telefonnummern und Informationen über lokale Geschäfte und Ausgehmöglichkeiten in der Nähe.</string>
     <string name="search_for_places_nearby_help_description2">Für diesen Dienst sind Ihre Standortinformationen erforderlich.</string>
     <string name="search_for_places_nearby_help_description3">Wählen Sie unter „Einstellungen > Verbindungen > Standort > Ortungsmethode“ die Option „Hohe Genauigkeit“ aus, um die Genauigkeit Ihrer Standortinformationen zu optimieren.</string>
     <string name="search_for_places_nearby_help_description3_vzw">Wählen Sie unter „Einstellungen > Verbindungen > Standort > Ortungsmethode“ die Option „Hohe Genauigkeit“ aus, um die Genauigkeit Ihrer Standortinformationen zu optimieren.</string>
     <string name="search_for_places_nearby_help_description4">Die Verwendung von mobilen Netzen statt WLANs kann je nach Tarif zusätzliche Kosten verursachen.</string>
+    <string name="withdraw_menu_title">Dienstnutzung beenden</string>
+    <string name="withdraw_dialog_description">Wenn Sie %1$s nicht mehr verwenden, wird der Dienst deaktiviert und alle Ihre vom Dienstanbieter gespeicherten %2$s-Daten werden gelöscht.</string>
+    <string name="withdraw_dialog_button">Dienstnutzung beenden</string>
     <string name="record_call_setting_title">Automatische Anrufaufnahme</string>
     <string name="record_call_setting_selected_number">Ausgewählte Nummern</string>
     <string name="record_call_setting_all_number">Alle Nummern</string>
@@ -2488,6 +2510,8 @@ Bitte klicken Sie auf die entsprechende Schaltfläche unten, um zu bestätigen, 
     <string name="record_call_noti_setting_title">Aufnehmen von Benachr.</string>
     <string name="record_call_noti_setting_summary">Benachrichtigung erhalten, nachdem Anrufe aufgenommen werden.</string>
     <string name="record_call_help_summary">Anrufe an oder von ausgewählten Nummern automatisch aufnehmen.</string>
+    <string name="record_call_setting_on_description">Automatische Aufnahme ein</string>
+    <string name="record_call_setting_off_description">Automatische Aufnahme aus</string>
     <string name="visual_call_title_callsetting">Bildschirmmenü für IVR-Anruf</string>
     <string name="preference_update_DB_visual_call">IVR-Anruf-DB aktualisieren</string>
     <string name="preference_update_DB_visual_call_summary">Automatisches Update nur über WLAN</string>
@@ -2730,6 +2754,7 @@ Geben Sie dann den Code ein, den Sie von Verizon erhalten:"</string>
     <string name="about_phone_open_source_licenses">Open Source-Lizenzen</string>
     <string name="no_network_connection">Keine Netzverbindung</string>
     <string name="unable_to_check_for_updates">Die Überprüfung auf Updates ist nicht möglich. Es besteht keine Netzwerkverbindung.</string>
+    <string name="phoneAppLabel_dcm">Wählen</string>
     <string name="dcm_vt_fail_cause_not_in_4g">Videoanruf konnte nicht getätigt werden, da Sie sich nicht in einem 4G-Bereich aufhalten.</string>
     <string name="ss_do_not_show_again_us">Nicht erneut anzeigen</string>
     <string name="disable_advanced_calling_warning_msg">Wenn diese Einstellung ausgeschaltet wird, kann Ihr Telefon keine HD-Sprach- und Videoanrufe tätigen oder annehmen.</string>
@@ -2763,6 +2788,8 @@ Wenn Sie zukünftig WLAN für Sprachanrufe verwenden möchten, können Sie „WL
     <string name="save_text">Speichern</string>
     <string name="wfc_enable_dialog_title">Aktivieren von WLAN-Anrufen</string>
     <string name="wfc_enable_dialog">Das Aktivieren von WLAN-Anrufen deaktiviert den Energiesparmodus. Dadurch kann sich der Stromverbrauch erhöhen. Einige Dienstanbieter unterstützen diese Funktion möglicherweise nicht.</string>
+    <string name="group_call_not_support_emergency_number">Gruppenanrufen können keine Notfallnummern hinzugefügt werden.</string>
+    <string name="group_call_not_support_emergency_number_all">Notfallnummern können Gruppenanrufen nicht hinzugefügt werden. Alle anderen ausgewählten Kontakte hinzugefügt.</string>
     <string name="enable_data_popup_message">Mobile Daten müssen aktiviert sein, um diese Funktion zu verwenden.</string>
     <string name="enable_data_popup_tittle">Funktion nicht aktivierbar</string>
 </resources>

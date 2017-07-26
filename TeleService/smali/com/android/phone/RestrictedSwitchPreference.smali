@@ -137,7 +137,7 @@
 
     if-eqz v1, :cond_2
 
-    const v1, 0x7f0d0151
+    const v1, 0x7f0d01ae
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
@@ -150,7 +150,7 @@
     return-void
 
     :cond_2
-    const v1, 0x7f0d0152
+    const v1, 0x7f0d01af
 
     goto :goto_0
 .end method

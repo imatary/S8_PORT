@@ -597,7 +597,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d044c
+    const v4, 0x7f0d04ac
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -723,7 +723,7 @@
 
     const/16 v3, 0x190
 
-    const v5, 0x7f0d0421
+    const v5, 0x7f0d0481
 
     move-object v0, p0
 
@@ -1074,7 +1074,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0425
+    const v2, 0x7f0d0485
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1105,7 +1105,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d044d
+    const v2, 0x7f0d04ad
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1136,7 +1136,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0424
+    const v2, 0x7f0d0484
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1187,7 +1187,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d044e
+    const v1, 0x7f0d04ae
 
     invoke-virtual {p0, v1}, Lcom/android/phone/EditFdnContactScreen;->getString(I)Ljava/lang/String;
 
@@ -1195,7 +1195,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d0448
+    const v1, 0x7f0d04a8
 
     invoke-virtual {p0, v1}, Lcom/android/phone/EditFdnContactScreen;->getString(I)Ljava/lang/String;
 
@@ -1207,7 +1207,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/EditFdnContactScreen$20;-><init>(Lcom/android/phone/EditFdnContactScreen;)V
 
-    const v2, 0x7f0d02c7
+    const v2, 0x7f0d0327
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1250,7 +1250,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0332
+    const v2, 0x7f0d0392
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1507,9 +1507,9 @@
 .method private saveOrCancel()V
     .locals 5
 
-    const v4, 0x7f0d040f
+    const v4, 0x7f0d046f
 
-    const v2, 0x7f0d0210
+    const v2, 0x7f0d026e
 
     invoke-virtual {p0, v2}, Lcom/android/phone/EditFdnContactScreen;->getString(I)Ljava/lang/String;
 
@@ -1521,7 +1521,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0229
+    const v2, 0x7f0d0287
 
     invoke-virtual {p0, v2}, Lcom/android/phone/EditFdnContactScreen;->getString(I)Ljava/lang/String;
 
@@ -1549,7 +1549,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0410
+    const v2, 0x7f0d0470
 
     invoke-virtual {p0, v2}, Lcom/android/phone/EditFdnContactScreen;->getString(I)Ljava/lang/String;
 
@@ -1563,7 +1563,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/EditFdnContactScreen$13;-><init>(Lcom/android/phone/EditFdnContactScreen;)V
 
-    const v3, 0x7f0d041e
+    const v3, 0x7f0d047e
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1573,7 +1573,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/EditFdnContactScreen$14;-><init>(Lcom/android/phone/EditFdnContactScreen;)V
 
-    const v3, 0x7f0d02c7
+    const v3, 0x7f0d0327
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1583,7 +1583,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/EditFdnContactScreen$15;-><init>(Lcom/android/phone/EditFdnContactScreen;)V
 
-    const v3, 0x7f0d07f5
+    const v3, 0x7f0d0859
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2044,7 +2044,7 @@
 
     if-eqz v1, :cond_2
 
-    const v1, 0x7f0d041f
+    const v1, 0x7f0d047f
 
     :goto_0
     invoke-virtual {v2, v1}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
@@ -2063,7 +2063,7 @@
     return-void
 
     :cond_2
-    const v1, 0x7f0d0420
+    const v1, 0x7f0d0480
 
     goto :goto_0
 .end method
@@ -2526,9 +2526,9 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 7
 
-    const v6, 0x7f0d047d
+    const v6, 0x7f0d04dd
 
-    const v5, 0x7f0200bd
+    const v5, 0x7f0200c0
 
     const/4 v3, 0x1
 
@@ -2538,7 +2538,7 @@
 
     const/4 v1, 0x3
 
-    const v4, 0x7f0d0511
+    const v4, 0x7f0d0571
 
     invoke-interface {p1, v2, v1, v3, v4}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -2581,7 +2581,7 @@
 
     invoke-interface {v1, v5}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
-    const v1, 0x7f0d041a
+    const v1, 0x7f0d047a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2593,7 +2593,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f020098
+    const v2, 0x7f02009b
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -2988,13 +2988,13 @@
     return v6
 
     :sswitch_2
-    const v1, 0x7f0d0204
+    const v1, 0x7f0d0261
 
     invoke-virtual {p0, v1}, Lcom/android/phone/EditFdnContactScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f0d021e
+    const v2, 0x7f0d027c
 
     invoke-virtual {p0, v2}, Lcom/android/phone/EditFdnContactScreen;->getString(I)Ljava/lang/String;
 
@@ -3062,7 +3062,7 @@
 
     invoke-direct {p0, v0, v1}, Lcom/android/phone/EditFdnContactScreen;->log(Ljava/lang/String;Z)V
 
-    const v0, 0x7f0d0204
+    const v0, 0x7f0d0261
 
     invoke-virtual {p0, v0}, Lcom/android/phone/EditFdnContactScreen;->getString(I)Ljava/lang/String;
 
@@ -3201,7 +3201,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen;->toastAlert:Landroid/widget/Toast;
 
-    const v1, 0x7f0d044f
+    const v1, 0x7f0d04af
 
     invoke-virtual {v0, v1}, Landroid/widget/Toast;->setText(I)V
 
@@ -3236,7 +3236,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen;->toastAlert:Landroid/widget/Toast;
 
-    const v1, 0x7f0d041b
+    const v1, 0x7f0d047b
 
     invoke-virtual {v0, v1}, Landroid/widget/Toast;->setText(I)V
 
@@ -3271,7 +3271,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen;->toastAlert:Landroid/widget/Toast;
 
-    const v1, 0x7f0d0444
+    const v1, 0x7f0d04a4
 
     invoke-virtual {v0, v1}, Landroid/widget/Toast;->setText(I)V
 

@@ -3,10 +3,25 @@
 .source "VzwVoWiFiCallSettings.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/android/phone/VzwVoWiFiCallSettings$1;,
+        Lcom/android/phone/VzwVoWiFiCallSettings$WifiCallingSettingsStateListener;
+    }
+.end annotation
+
+
 # instance fields
 .field private mAlertDialog:Landroid/app/AlertDialog;
 
+.field mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+.field private final mBixbyHandler:Landroid/os/Handler;
+
 .field private mContext:Landroid/content/Context;
+
+.field mStateListener:Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;
 
 .field private mSubAppBarSwitchText:Landroid/widget/TextView;
 
@@ -18,7 +33,15 @@
 
 
 # direct methods
-.method static synthetic -get0(Lcom/android/phone/VzwVoWiFiCallSettings;)Landroid/content/Context;
+.method static synthetic -get0(Lcom/android/phone/VzwVoWiFiCallSettings;)Landroid/os/Handler;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mBixbyHandler:Landroid/os/Handler;
+
+    return-object v0
+.end method
+
+.method static synthetic -get1(Lcom/android/phone/VzwVoWiFiCallSettings;)Landroid/content/Context;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mContext:Landroid/content/Context;
@@ -26,7 +49,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get1(Lcom/android/phone/VzwVoWiFiCallSettings;)Landroid/widget/TextView;
+.method static synthetic -get2(Lcom/android/phone/VzwVoWiFiCallSettings;)Landroid/widget/TextView;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mSubAppBarSwitchText:Landroid/widget/TextView;
@@ -34,7 +57,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get2(Lcom/android/phone/VzwVoWiFiCallSettings;)Landroid/preference/Preference;
+.method static synthetic -get3(Lcom/android/phone/VzwVoWiFiCallSettings;)Landroid/preference/Preference;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mUpdateEmergencyLocationInfoPref:Landroid/preference/Preference;
@@ -42,7 +65,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get3(Lcom/android/phone/VzwVoWiFiCallSettings;)Landroid/preference/Preference;
+.method static synthetic -get4(Lcom/android/phone/VzwVoWiFiCallSettings;)Landroid/preference/Preference;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mUpdateRoamingSettingPref:Landroid/preference/Preference;
@@ -50,10 +73,10 @@
     return-object v0
 .end method
 
-.method static synthetic -wrap0(Lcom/android/phone/VzwVoWiFiCallSettings;ZZ)V
+.method static synthetic -wrap0(Lcom/android/phone/VzwVoWiFiCallSettings;Z)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/android/phone/VzwVoWiFiCallSettings;->setVowifiPreferenceStatus(ZZ)V
+    invoke-direct {p0, p1}, Lcom/android/phone/VzwVoWiFiCallSettings;->sendWifiEnableBroadcast(Z)V
 
     return-void
 .end method
@@ -61,12 +84,20 @@
 .method static synthetic -wrap1(Lcom/android/phone/VzwVoWiFiCallSettings;ZZ)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/android/phone/VzwVoWiFiCallSettings;->setVowifiUISetting(ZZ)V
+    invoke-direct {p0, p1, p2}, Lcom/android/phone/VzwVoWiFiCallSettings;->setVowifiPreferenceStatus(ZZ)V
 
     return-void
 .end method
 
 .method static synthetic -wrap2(Lcom/android/phone/VzwVoWiFiCallSettings;ZZ)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/android/phone/VzwVoWiFiCallSettings;->setVowifiUISetting(ZZ)V
+
+    return-void
+.end method
+
+.method static synthetic -wrap3(Lcom/android/phone/VzwVoWiFiCallSettings;ZZ)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/VzwVoWiFiCallSettings;->setWifiCallGlobalSetting(ZZ)V
@@ -75,10 +106,91 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
+    new-instance v0, Lcom/android/phone/VzwVoWiFiCallSettings$1;
+
+    invoke-direct {v0, p0}, Lcom/android/phone/VzwVoWiFiCallSettings$1;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;)V
+
+    iput-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mBixbyHandler:Landroid/os/Handler;
+
+    invoke-static {}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getInstance()Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    return-void
+.end method
+
+.method private checkBixbySupport()V
+    .locals 2
+
+    const-string/jumbo v0, "support_bixby"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    new-instance v0, Lcom/android/phone/VzwVoWiFiCallSettings$WifiCallingSettingsStateListener;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lcom/android/phone/VzwVoWiFiCallSettings$WifiCallingSettingsStateListener;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;Lcom/android/phone/VzwVoWiFiCallSettings$WifiCallingSettingsStateListener;)V
+
+    iput-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mStateListener:Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;
+
+    iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    iget-object v1, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mStateListener:Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/bixby/BixbyApi;->setInterimStateListener(Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;)V
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string/jumbo v0, "WiFiCalling"
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingLastState()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string/jumbo v0, "WiFiCalling"
+
+    invoke-static {v0}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    :cond_0
+    sget-object v0, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v0}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    :cond_1
+    iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v1, "WiFiCalling"
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logEnterState(Ljava/lang/String;)V
+
+    :cond_2
     return-void
 .end method
 
@@ -101,9 +213,9 @@
 
     iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mUpdateRoamingSettingPref:Landroid/preference/Preference;
 
-    new-instance v1, Lcom/android/phone/VzwVoWiFiCallSettings$3;
+    new-instance v1, Lcom/android/phone/VzwVoWiFiCallSettings$4;
 
-    invoke-direct {v1, p0}, Lcom/android/phone/VzwVoWiFiCallSettings$3;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/phone/VzwVoWiFiCallSettings$4;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -129,9 +241,9 @@
 
     iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mUpdateEmergencyLocationInfoPref:Landroid/preference/Preference;
 
-    new-instance v1, Lcom/android/phone/VzwVoWiFiCallSettings$2;
+    new-instance v1, Lcom/android/phone/VzwVoWiFiCallSettings$3;
 
-    invoke-direct {v1, p0}, Lcom/android/phone/VzwVoWiFiCallSettings$2;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/phone/VzwVoWiFiCallSettings$3;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -224,7 +336,7 @@
 
     iget-object v2, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mSubAppBarSwitchText:Landroid/widget/TextView;
 
-    const v3, 0x7f0d0bcf
+    const v3, 0x7f0d0c3a
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -255,7 +367,7 @@
     :cond_1
     iget-object v2, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mSubAppBarSwitchText:Landroid/widget/TextView;
 
-    const v3, 0x7f0d0bd0
+    const v3, 0x7f0d0c3b
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -269,7 +381,7 @@
 
     invoke-direct {v0, v2, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
-    const v2, 0x7f0d0d79
+    const v2, 0x7f0d0def
 
     invoke-virtual {p0, v2}, Lcom/android/phone/VzwVoWiFiCallSettings;->getString(I)Ljava/lang/String;
 
@@ -279,19 +391,7 @@
 
     invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f0d0971
-
-    invoke-virtual {p0, v2}, Lcom/android/phone/VzwVoWiFiCallSettings;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    new-instance v3, Lcom/android/phone/VzwVoWiFiCallSettings$4;
-
-    invoke-direct {v3, p0}, Lcom/android/phone/VzwVoWiFiCallSettings$4;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;)V
-
-    invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    const v2, 0x7f0d0d7a
+    const v2, 0x7f0d09d7
 
     invoke-virtual {p0, v2}, Lcom/android/phone/VzwVoWiFiCallSettings;->getString(I)Ljava/lang/String;
 
@@ -299,7 +399,19 @@
 
     new-instance v3, Lcom/android/phone/VzwVoWiFiCallSettings$5;
 
-    invoke-direct {v3, p0, p1, v1}, Lcom/android/phone/VzwVoWiFiCallSettings$5;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;ZZ)V
+    invoke-direct {v3, p0}, Lcom/android/phone/VzwVoWiFiCallSettings$5;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;)V
+
+    invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    const v2, 0x7f0d0df0
+
+    invoke-virtual {p0, v2}, Lcom/android/phone/VzwVoWiFiCallSettings;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    new-instance v3, Lcom/android/phone/VzwVoWiFiCallSettings$6;
+
+    invoke-direct {v3, p0, p1, v1}, Lcom/android/phone/VzwVoWiFiCallSettings$6;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;ZZ)V
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -469,6 +581,16 @@
 
 
 # virtual methods
+.method public bixbyEnableWifiCall(Z)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mVowifiCallSwitch:Landroid/widget/Switch;
+
+    invoke-virtual {v0, p1}, Landroid/widget/Switch;->setChecked(Z)V
+
+    return-void
+.end method
+
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 2
 
@@ -482,7 +604,7 @@
 
     if-ne p2, v0, :cond_0
 
-    const v0, 0x7f0d0d70
+    const v0, 0x7f0d0de6
 
     invoke-virtual {p0, v0}, Lcom/android/phone/VzwVoWiFiCallSettings;->getString(I)Ljava/lang/String;
 
@@ -562,7 +684,7 @@
 
     if-eqz v0, :cond_1
 
-    const v1, 0x7f0d0a24
+    const v1, 0x7f0d0a8b
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -571,7 +693,7 @@
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setDisplayOptions(I)V
 
     :cond_1
-    const v1, 0x7f1002c3
+    const v1, 0x7f1002c6
 
     invoke-virtual {p0, v1}, Lcom/android/phone/VzwVoWiFiCallSettings;->findViewById(I)Landroid/view/View;
 
@@ -581,7 +703,7 @@
 
     iput-object v1, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mVowifiCallSwitch:Landroid/widget/Switch;
 
-    const v1, 0x7f1002c2
+    const v1, 0x7f1002c5
 
     invoke-virtual {p0, v1}, Lcom/android/phone/VzwVoWiFiCallSettings;->findViewById(I)Landroid/view/View;
 
@@ -614,9 +736,9 @@
     :goto_0
     iget-object v1, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mVowifiCallSwitch:Landroid/widget/Switch;
 
-    new-instance v2, Lcom/android/phone/VzwVoWiFiCallSettings$1;
+    new-instance v2, Lcom/android/phone/VzwVoWiFiCallSettings$2;
 
-    invoke-direct {v2, p0}, Lcom/android/phone/VzwVoWiFiCallSettings$1;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/phone/VzwVoWiFiCallSettings$2;-><init>(Lcom/android/phone/VzwVoWiFiCallSettings;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -684,6 +806,43 @@
     return v0
 .end method
 
+.method public onPause()V
+    .locals 2
+
+    const-string/jumbo v0, "VzwVoWiFiCallSettings"
+
+    const-string/jumbo v1, "onPause()"
+
+    invoke-static {v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
+
+    const-string/jumbo v0, "support_bixby"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    invoke-virtual {v0}, Lcom/samsung/android/sdk/bixby/BixbyApi;->clearInterimStateListener()V
+
+    iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v1, "AdvancedCalling"
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logExitState(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings;->mStateListener:Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;
+
+    :cond_0
+    return-void
+.end method
+
 .method public onResume()V
     .locals 2
 
@@ -706,6 +865,8 @@
     return-void
 
     :cond_0
+    invoke-direct {p0}, Lcom/android/phone/VzwVoWiFiCallSettings;->checkBixbySupport()V
+
     const-string/jumbo v0, "VzwVoWiFiCallSettings"
 
     const-string/jumbo v1, "onResume"

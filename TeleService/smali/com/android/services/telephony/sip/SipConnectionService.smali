@@ -596,7 +596,7 @@
 
     if-nez v8, :cond_3
 
-    const v8, 0x7f0d01a9
+    const v8, 0x7f0d0206
 
     invoke-virtual {p0, v8}, Lcom/android/services/telephony/sip/SipConnectionService;->getString(I)Ljava/lang/String;
 
@@ -645,7 +645,7 @@
 
     if-eqz v7, :cond_7
 
-    const v8, 0x7f0d01a8
+    const v8, 0x7f0d0205
 
     :goto_1
     invoke-virtual {p0, v8}, Lcom/android/services/telephony/sip/SipConnectionService;->getString(I)Ljava/lang/String;
@@ -665,7 +665,7 @@
     goto :goto_0
 
     :cond_7
-    const v8, 0x7f0d01a7
+    const v8, 0x7f0d0204
 
     goto :goto_1
 .end method

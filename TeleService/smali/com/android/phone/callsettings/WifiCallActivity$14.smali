@@ -3,12 +3,12 @@
 .source "WifiCallActivity.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/content/DialogInterface$OnKeyListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/callsettings/WifiCallActivity;->showWfcRogersWifiDialog()V
+    value = Lcom/android/phone/callsettings/WifiCallActivity;->showLocationInfoDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,8 +34,14 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
+.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 2
+
+    const/4 v1, 0x0
+
+    const/4 v0, 0x4
+
+    if-ne p2, v0, :cond_0
 
     iget-object v0, p0, Lcom/android/phone/callsettings/WifiCallActivity$14;->this$0:Lcom/android/phone/callsettings/WifiCallActivity;
 
@@ -43,9 +49,14 @@
 
     move-result-object v0
 
-    const/4 v1, 0x0
-
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setChecked(Z)V
 
-    return-void
+    invoke-interface {p1}, Landroid/content/DialogInterface;->cancel()V
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    return v1
 .end method

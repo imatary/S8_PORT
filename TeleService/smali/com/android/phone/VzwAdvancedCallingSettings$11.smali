@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/VzwAdvancedCallingSettings;->showAdvCallEnableMessageDialog()V
+    value = Lcom/android/phone/VzwAdvancedCallingSettings;->showAdvCallDisableWarningDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -51,7 +51,7 @@
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings$11;->this$0:Lcom/android/phone/VzwAdvancedCallingSettings;
 
-    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get3(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/content/SharedPreferences;
+    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get4(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v1, "vzw_adv_call_sp_adv_call_enable_dialog"
+    const-string/jumbo v1, "vzw_adv_call_sp_adv_call_disable_dialog"
 
     const/4 v2, 0x1
 
@@ -75,7 +75,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings$11;->this$0:Lcom/android/phone/VzwAdvancedCallingSettings;
 
-    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get3(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/content/SharedPreferences;
+    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get4(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v1, "vzw_adv_call_sp_adv_call_enable_dialog"
+    const-string/jumbo v1, "vzw_adv_call_sp_adv_call_disable_dialog"
 
     const/4 v2, 0x0
 

@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsCallForwardOptions$2;->this$0:Lcom/android/phone/GsmUmtsCallForwardOptions;
 
-    invoke-static {v0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->-wrap2(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
+    invoke-static {v0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->-wrap1(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
 
     const/4 v0, 0x1
 

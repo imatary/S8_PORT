@@ -10,6 +10,8 @@
         Lcom/android/phone/VzwAdvancedCallingSettings$2;,
         Lcom/android/phone/VzwAdvancedCallingSettings$3;,
         Lcom/android/phone/VzwAdvancedCallingSettings$4;,
+        Lcom/android/phone/VzwAdvancedCallingSettings$5;,
+        Lcom/android/phone/VzwAdvancedCallingSettings$AdvancedCallingSettingsStateListener;,
         Lcom/android/phone/VzwAdvancedCallingSettings$customAdapter;
     }
 .end annotation
@@ -21,6 +23,10 @@
 .field items:[I
 
 .field private mAdvCallSwitch:Landroid/widget/Switch;
+
+.field mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+.field private final mBixbyHandler:Landroid/os/Handler;
 
 .field private mCallManager:Lcom/android/internal/telephony/CallManager;
 
@@ -48,6 +54,8 @@
 
 .field private mSharedPref:Landroid/content/SharedPreferences;
 
+.field mStateListener:Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;
+
 .field private mSubAppBarSwitchText:Landroid/widget/TextView;
 
 .field private mTelephonyManager:Landroid/telephony/TelephonyManager;
@@ -62,7 +70,15 @@
     return-object v0
 .end method
 
-.method static synthetic -get1(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/net/ConnectivityManager;
+.method static synthetic -get1(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/os/Handler;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mBixbyHandler:Landroid/os/Handler;
+
+    return-object v0
+.end method
+
+.method static synthetic -get2(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/net/ConnectivityManager;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mConnManager:Landroid/net/ConnectivityManager;
@@ -70,7 +86,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get2(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/os/Handler;
+.method static synthetic -get3(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/os/Handler;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mHandler:Landroid/os/Handler;
@@ -78,7 +94,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get3(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/content/SharedPreferences;
+.method static synthetic -get4(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/content/SharedPreferences;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mSharedPref:Landroid/content/SharedPreferences;
@@ -86,7 +102,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get4(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/widget/TextView;
+.method static synthetic -get5(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/widget/TextView;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mSubAppBarSwitchText:Landroid/widget/TextView;
@@ -227,9 +243,9 @@
 
     iput-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mCheckedChangedListener:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
-    const v0, 0x7f0d0d62
+    const v0, 0x7f0d0dd8
 
-    const v1, 0x7f0d0d61
+    const v1, 0x7f0d0dd7
 
     filled-new-array {v0, v1}, [I
 
@@ -264,6 +280,18 @@
     invoke-direct {v0, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$4;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
 
     iput-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mRegistrationListener:Lcom/sec/ims/IImsRegistrationListener;
+
+    new-instance v0, Lcom/android/phone/VzwAdvancedCallingSettings$5;
+
+    invoke-direct {v0, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$5;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
+
+    iput-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mBixbyHandler:Landroid/os/Handler;
+
+    invoke-static {}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getInstance()Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
 
     return-void
 .end method
@@ -353,6 +381,75 @@
     invoke-virtual {v1, v0}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
 
     goto :goto_0
+.end method
+
+.method private checkBixbySupport()V
+    .locals 2
+
+    const-string/jumbo v0, "support_bixby"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    new-instance v0, Lcom/android/phone/VzwAdvancedCallingSettings$AdvancedCallingSettingsStateListener;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lcom/android/phone/VzwAdvancedCallingSettings$AdvancedCallingSettingsStateListener;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;Lcom/android/phone/VzwAdvancedCallingSettings$AdvancedCallingSettingsStateListener;)V
+
+    iput-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mStateListener:Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;
+
+    iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    iget-object v1, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mStateListener:Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/bixby/BixbyApi;->setInterimStateListener(Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;)V
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string/jumbo v0, "ShowAdvancedCalling"
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingLastState()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string/jumbo v0, "ShowAdvancedCalling"
+
+    invoke-static {v0}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    :cond_0
+    sget-object v0, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v0}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    :cond_1
+    iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v1, "ShowAdvancedCalling"
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logEnterState(Ljava/lang/String;)V
+
+    :cond_2
+    return-void
 .end method
 
 .method private deRegisterForIMSCallback()V
@@ -531,7 +628,11 @@
 
     iget-object v6, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mContext:Landroid/content/Context;
 
-    invoke-direct {v1, v6}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0}, Lcom/android/phone/VzwAdvancedCallingSettings;->getEmergencyThemeID()I
+
+    move-result v7
+
+    invoke-direct {v1, v6, v7}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
     invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->getContext()Landroid/content/Context;
 
@@ -569,7 +670,7 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    const v6, 0x7f0d0d60
+    const v6, 0x7f0d0dd6
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -577,9 +678,9 @@
 
     move-result-object v6
 
-    new-instance v7, Lcom/android/phone/VzwAdvancedCallingSettings$14;
+    new-instance v7, Lcom/android/phone/VzwAdvancedCallingSettings$15;
 
-    invoke-direct {v7, p0, v0}, Lcom/android/phone/VzwAdvancedCallingSettings$14;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;Landroid/widget/CheckBox;)V
+    invoke-direct {v7, p0, v0}, Lcom/android/phone/VzwAdvancedCallingSettings$15;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;Landroid/widget/CheckBox;)V
 
     const v8, 0x104000a
 
@@ -605,33 +706,37 @@
 
     iget-object v1, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mContext:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0}, Lcom/android/phone/VzwAdvancedCallingSettings;->getEmergencyThemeID()I
 
-    const v1, 0x7f0d0a27
+    move-result v2
+
+    invoke-direct {v0, v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+
+    const v1, 0x7f0d0a8e
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0d0d66
+    const v2, 0x7f0d0ddc
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    new-instance v2, Lcom/android/phone/VzwAdvancedCallingSettings$7;
-
-    invoke-direct {v2, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$7;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
-
-    const v3, 0x7f0d0d68
-
-    invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
     new-instance v2, Lcom/android/phone/VzwAdvancedCallingSettings$8;
 
     invoke-direct {v2, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$8;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
+
+    const v3, 0x7f0d0dde
+
+    invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/android/phone/VzwAdvancedCallingSettings$9;
+
+    invoke-direct {v2, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$9;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
 
     const/high16 v3, 0x1040000
 
@@ -889,6 +994,12 @@
     return-void
 
     :cond_3
+    invoke-static {}, Lcom/android/phone/VzwAdvancedCallingUtils;->isEmergencyMode()Z
+
+    move-result v4
+
+    if-nez v4, :cond_1
+
     if-eqz v0, :cond_5
 
     invoke-virtual {p0}, Lcom/android/phone/VzwAdvancedCallingSettings;->getContentResolver()Landroid/content/ContentResolver;
@@ -1067,6 +1178,12 @@
 
     if-eqz v0, :cond_2
 
+    invoke-static {}, Lcom/android/phone/VzwAdvancedCallingUtils;->isEmergencyMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mHDVoiceVideoView:Landroid/widget/CheckedTextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/CheckedTextView;->setEnabled(Z)V
@@ -1090,6 +1207,12 @@
     return-void
 
     :cond_3
+    invoke-static {}, Lcom/android/phone/VzwAdvancedCallingUtils;->isEmergencyMode()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
     const-string/jumbo v0, "VzwAdvancedCallingSettings"
 
     const-string/jumbo v1, "enableHDVoice: mHDVoiceVideoView"
@@ -1198,6 +1321,25 @@
     iput v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mCurrentOperation:I
 
     return-void
+.end method
+
+.method private getEmergencyThemeID()I
+    .locals 1
+
+    invoke-static {}, Lcom/android/phone/VzwAdvancedCallingUtils;->isEmrOrUpsmMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const v0, 0x7f0e0091
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 .method private handleRegFailed()V
@@ -1450,7 +1592,7 @@
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mSubAppBarSwitchText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d0bcf
+    const v1, 0x7f0d0c3a
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1475,6 +1617,12 @@
     return-void
 
     :cond_1
+    invoke-static {}, Lcom/android/phone/VzwAdvancedCallingUtils;->isEmergencyMode()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mHDVoiceVideoView:Landroid/widget/CheckedTextView;
 
     invoke-virtual {v0, v4}, Landroid/widget/CheckedTextView;->setEnabled(Z)V
@@ -1484,7 +1632,7 @@
     :cond_2
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mSubAppBarSwitchText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d0bd0
+    const v1, 0x7f0d0c3b
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1529,7 +1677,11 @@
 
     iget-object v6, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mContext:Landroid/content/Context;
 
-    invoke-direct {v1, v6}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0}, Lcom/android/phone/VzwAdvancedCallingSettings;->getEmergencyThemeID()I
+
+    move-result v7
+
+    invoke-direct {v1, v6, v7}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
     invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->getContext()Landroid/content/Context;
 
@@ -1567,7 +1719,7 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    const v6, 0x7f0d0d5f
+    const v6, 0x7f0d0dd5
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1575,9 +1727,9 @@
 
     move-result-object v6
 
-    new-instance v7, Lcom/android/phone/VzwAdvancedCallingSettings$10;
+    new-instance v7, Lcom/android/phone/VzwAdvancedCallingSettings$11;
 
-    invoke-direct {v7, p0, v0}, Lcom/android/phone/VzwAdvancedCallingSettings$10;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;Landroid/widget/CheckBox;)V
+    invoke-direct {v7, p0, v0}, Lcom/android/phone/VzwAdvancedCallingSettings$11;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;Landroid/widget/CheckBox;)V
 
     const v8, 0x104000a
 
@@ -1618,7 +1770,11 @@
 
     iget-object v6, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mContext:Landroid/content/Context;
 
-    invoke-direct {v1, v6}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0}, Lcom/android/phone/VzwAdvancedCallingSettings;->getEmergencyThemeID()I
+
+    move-result v7
+
+    invoke-direct {v1, v6, v7}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
     invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->getContext()Landroid/content/Context;
 
@@ -1656,7 +1812,7 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    const v6, 0x7f0d08de
+    const v6, 0x7f0d0942
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1664,9 +1820,9 @@
 
     move-result-object v6
 
-    new-instance v7, Lcom/android/phone/VzwAdvancedCallingSettings$11;
+    new-instance v7, Lcom/android/phone/VzwAdvancedCallingSettings$12;
 
-    invoke-direct {v7, p0, v0}, Lcom/android/phone/VzwAdvancedCallingSettings$11;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;Landroid/widget/CheckBox;)V
+    invoke-direct {v7, p0, v0}, Lcom/android/phone/VzwAdvancedCallingSettings$12;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;Landroid/widget/CheckBox;)V
 
     const v8, 0x104000a
 
@@ -1692,25 +1848,29 @@
 
     iget-object v1, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mContext:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0}, Lcom/android/phone/VzwAdvancedCallingSettings;->getEmergencyThemeID()I
 
-    const v1, 0x7f0d0a29
+    move-result v2
+
+    invoke-direct {v0, v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+
+    const v1, 0x7f0d0a90
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    new-instance v2, Lcom/android/phone/VzwAdvancedCallingSettings$12;
-
-    invoke-direct {v2, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$12;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
-
-    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
     new-instance v2, Lcom/android/phone/VzwAdvancedCallingSettings$13;
 
     invoke-direct {v2, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$13;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
+
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/android/phone/VzwAdvancedCallingSettings$14;
+
+    invoke-direct {v2, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$14;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
 
     const v3, 0x104000a
 
@@ -1736,17 +1896,21 @@
 
     iget-object v1, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mContext:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0}, Lcom/android/phone/VzwAdvancedCallingSettings;->getEmergencyThemeID()I
 
-    const v1, 0x7f0d0d69
+    move-result v2
+
+    invoke-direct {v0, v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+
+    const v1, 0x7f0d0ddf
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/phone/VzwAdvancedCallingSettings$9;
+    new-instance v2, Lcom/android/phone/VzwAdvancedCallingSettings$10;
 
-    invoke-direct {v2, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$9;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$10;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
 
     const v3, 0x104000a
 
@@ -1767,6 +1931,18 @@
 
 
 # virtual methods
+.method public bixbyEnableAdvCall(Z)V
+    .locals 1
+
+    invoke-static {}, Lcom/android/phone/PhoneUtilsIMS;->isLTEVideoCallEnabled()Z
+
+    move-result v0
+
+    invoke-direct {p0, p1}, Lcom/android/phone/VzwAdvancedCallingSettings;->setAdvCallSwitchEnabled(Z)V
+
+    return-void
+.end method
+
 .method public initializeAdvCallSettingsUI()V
     .locals 4
 
@@ -1898,7 +2074,7 @@
 
     if-eqz v0, :cond_1
 
-    const v2, 0x7f0d0a21
+    const v2, 0x7f0d0a88
 
     invoke-virtual {v0, v2}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -1982,9 +2158,9 @@
 
     iget-object v2, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->adv_call_settings_list:Landroid/widget/ListView;
 
-    new-instance v3, Lcom/android/phone/VzwAdvancedCallingSettings$5;
+    new-instance v3, Lcom/android/phone/VzwAdvancedCallingSettings$6;
 
-    invoke-direct {v3, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$5;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$6;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
 
     invoke-virtual {v2, v3}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
@@ -2010,9 +2186,9 @@
 
     iput-object v2, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
-    new-instance v2, Lcom/android/phone/VzwAdvancedCallingSettings$6;
+    new-instance v2, Lcom/android/phone/VzwAdvancedCallingSettings$7;
 
-    invoke-direct {v2, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$6;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/phone/VzwAdvancedCallingSettings$7;-><init>(Lcom/android/phone/VzwAdvancedCallingSettings;)V
 
     iput-object v2, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mCheckedChangedListener:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
@@ -2057,9 +2233,9 @@
 .end method
 
 .method public onPause()V
-    .locals 3
+    .locals 4
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     const-string/jumbo v0, "VzwAdvancedCallingSettings"
 
@@ -2088,7 +2264,7 @@
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mHandler:Landroid/os/Handler;
 
-    invoke-virtual {v0, v2}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
+    invoke-virtual {v0, v3}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
@@ -2107,6 +2283,27 @@
     invoke-virtual {v0, v1, v2}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
     :cond_1
+    const-string/jumbo v0, "support_bixby"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    invoke-virtual {v0}, Lcom/samsung/android/sdk/bixby/BixbyApi;->clearInterimStateListener()V
+
+    iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v1, "AdvancedCalling"
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logExitState(Ljava/lang/String;)V
+
+    iput-object v3, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mStateListener:Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;
+
+    :cond_2
     return-void
 .end method
 
@@ -2139,6 +2336,8 @@
     invoke-virtual {p0}, Lcom/android/phone/VzwAdvancedCallingSettings;->initializeAdvCallSettingsUI()V
 
     :cond_1
+    invoke-direct {p0}, Lcom/android/phone/VzwAdvancedCallingSettings;->checkBixbySupport()V
+
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings;->mPhoneContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;

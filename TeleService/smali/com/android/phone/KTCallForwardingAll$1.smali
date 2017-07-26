@@ -112,7 +112,7 @@
 
     iget-object v6, p0, Lcom/android/phone/KTCallForwardingAll$1;->this$0:Lcom/android/phone/KTCallForwardingAll;
 
-    const v7, 0x7f0d079d
+    const v7, 0x7f0d0801
 
     invoke-virtual {v6, v7}, Lcom/android/phone/KTCallForwardingAll;->getText(I)Ljava/lang/CharSequence;
 

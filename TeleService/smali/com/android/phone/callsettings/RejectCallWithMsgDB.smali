@@ -49,15 +49,15 @@
 
     sput-object v0, Lcom/android/phone/callsettings/RejectCallWithMsgDB;->DefaultMessageSimple:Ljava/lang/String;
 
-    const v0, 0x7f0d04eb
+    const v0, 0x7f0d054b
 
-    const v1, 0x7f0d04ec
+    const v1, 0x7f0d054c
 
-    const v2, 0x7f0d04ed
+    const v2, 0x7f0d054d
 
-    const v3, 0x7f0d04ea
+    const v3, 0x7f0d054a
 
-    const v4, 0x7f0d04e9
+    const v4, 0x7f0d0549
 
     filled-new-array {v0, v1, v2, v3, v4}, [I
 
@@ -65,15 +65,15 @@
 
     sput-object v0, Lcom/android/phone/callsettings/RejectCallWithMsgDB;->defaultRejectMsgList:[I
 
-    const v0, 0x7f0d04f0
+    const v0, 0x7f0d0550
 
-    const v1, 0x7f0d04f1
+    const v1, 0x7f0d0551
 
-    const v2, 0x7f0d04f2
+    const v2, 0x7f0d0552
 
-    const v3, 0x7f0d04ef
+    const v3, 0x7f0d054f
 
-    const v4, 0x7f0d04ee
+    const v4, 0x7f0d054e
 
     filled-new-array {v0, v1, v2, v3, v4}, [I
 
@@ -81,11 +81,11 @@
 
     sput-object v0, Lcom/android/phone/callsettings/RejectCallWithMsgDB;->defaultRejectMsgListKor:[I
 
-    const v0, 0x7f0d04f3
+    const v0, 0x7f0d0553
 
-    const v1, 0x7f0d04f4
+    const v1, 0x7f0d0554
 
-    const v2, 0x7f0d04f5
+    const v2, 0x7f0d0555
 
     filled-new-array {v0, v1, v2}, [I
 
@@ -93,15 +93,15 @@
 
     sput-object v0, Lcom/android/phone/callsettings/RejectCallWithMsgDB;->defaultRejectMsgListSimple:[I
 
-    const v0, 0x7f0d0979
+    const v0, 0x7f0d09df
 
-    const v1, 0x7f0d097a
+    const v1, 0x7f0d09e0
 
-    const v2, 0x7f0d097b
+    const v2, 0x7f0d09e1
 
-    const v3, 0x7f0d0978
+    const v3, 0x7f0d09de
 
-    const v4, 0x7f0d0977
+    const v4, 0x7f0d09dd
 
     filled-new-array {v0, v1, v2, v3, v4}, [I
 

@@ -483,24 +483,6 @@
 
 
 # virtual methods
-.method public getString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {p0, p1, p2}, Lcom/android/phone/StringManager;->getStringId(Landroid/content/Context;Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method public getStringId(Landroid/content/Context;Ljava/lang/String;)I
     .locals 6
 

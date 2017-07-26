@@ -33,13 +33,13 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0528
+    const v3, 0x7f0d0588
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v2
 
-    const v3, 0x7f0d0547
+    const v3, 0x7f0d05ab
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -49,7 +49,7 @@
 
     invoke-direct {v3, p0, v1}, Lcom/android/phone/CancelRejectModeAlertDialog$1;-><init>(Lcom/android/phone/CancelRejectModeAlertDialog;Lcom/android/phone/PhoneGlobals;)V
 
-    const v4, 0x7f0d02ca
+    const v4, 0x7f0d032a
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -59,7 +59,7 @@
 
     invoke-direct {v3, p0, v1}, Lcom/android/phone/CancelRejectModeAlertDialog$2;-><init>(Lcom/android/phone/CancelRejectModeAlertDialog;Lcom/android/phone/PhoneGlobals;)V
 
-    const v4, 0x7f0d054b
+    const v4, 0x7f0d05af
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -109,13 +109,13 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d054a
+    const v3, 0x7f0d05ae
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v2
 
-    const v3, 0x7f0d0549
+    const v3, 0x7f0d05ad
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -125,7 +125,7 @@
 
     invoke-direct {v3, p0, v1}, Lcom/android/phone/CancelRejectModeAlertDialog$5;-><init>(Lcom/android/phone/CancelRejectModeAlertDialog;Lcom/android/phone/PhoneGlobals;)V
 
-    const v4, 0x7f0d02ca
+    const v4, 0x7f0d032a
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -135,7 +135,7 @@
 
     invoke-direct {v3, p0, v1}, Lcom/android/phone/CancelRejectModeAlertDialog$6;-><init>(Lcom/android/phone/CancelRejectModeAlertDialog;Lcom/android/phone/PhoneGlobals;)V
 
-    const v4, 0x7f0d054b
+    const v4, 0x7f0d05af
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

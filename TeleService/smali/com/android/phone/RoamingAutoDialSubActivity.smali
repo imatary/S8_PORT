@@ -53,7 +53,7 @@
 
     if-eqz v2, :cond_1
 
-    const v2, 0x7f0d060c
+    const v2, 0x7f0d0670
 
     invoke-virtual {p0, v2}, Lcom/android/phone/RoamingAutoDialSubActivity;->setTitle(I)V
 
@@ -61,7 +61,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0610
+    const v3, 0x7f0d0674
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -96,7 +96,7 @@
 
     if-eqz v2, :cond_2
 
-    const v2, 0x7f0d0611
+    const v2, 0x7f0d0675
 
     invoke-virtual {p0, v2}, Lcom/android/phone/RoamingAutoDialSubActivity;->setTitle(I)V
 
@@ -104,7 +104,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0613
+    const v3, 0x7f0d0677
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -125,7 +125,7 @@
 
     if-eqz v2, :cond_3
 
-    const v2, 0x7f0d0612
+    const v2, 0x7f0d0676
 
     invoke-virtual {p0, v2}, Lcom/android/phone/RoamingAutoDialSubActivity;->setTitle(I)V
 
@@ -133,7 +133,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0614
+    const v3, 0x7f0d0678
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -154,7 +154,7 @@
 
     if-eqz v2, :cond_4
 
-    const v2, 0x7f0d060a
+    const v2, 0x7f0d066e
 
     invoke-virtual {p0, v2}, Lcom/android/phone/RoamingAutoDialSubActivity;->setTitle(I)V
 
@@ -162,7 +162,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0615
+    const v3, 0x7f0d0679
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -174,7 +174,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d060d
+    const v3, 0x7f0d0671
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -195,7 +195,7 @@
 
     if-eqz v2, :cond_5
 
-    const v2, 0x7f0d060b
+    const v2, 0x7f0d066f
 
     invoke-virtual {p0, v2}, Lcom/android/phone/RoamingAutoDialSubActivity;->setTitle(I)V
 
@@ -203,7 +203,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d061b
+    const v3, 0x7f0d067f
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -215,7 +215,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d061a
+    const v3, 0x7f0d067e
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -236,7 +236,7 @@
 
     if-eqz v2, :cond_6
 
-    const v2, 0x7f0d0616
+    const v2, 0x7f0d067a
 
     invoke-virtual {p0, v2}, Lcom/android/phone/RoamingAutoDialSubActivity;->setTitle(I)V
 
@@ -244,7 +244,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0617
+    const v3, 0x7f0d067b
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -265,7 +265,7 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f0d0618
+    const v2, 0x7f0d067c
 
     invoke-virtual {p0, v2}, Lcom/android/phone/RoamingAutoDialSubActivity;->setTitle(I)V
 
@@ -273,7 +273,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0619
+    const v3, 0x7f0d067d
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

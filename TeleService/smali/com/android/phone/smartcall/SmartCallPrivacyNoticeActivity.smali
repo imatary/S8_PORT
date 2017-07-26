@@ -8,6 +8,8 @@
 
 .field private mAgreeButton:Landroid/widget/Button;
 
+.field private mButtonLayout:Landroid/widget/LinearLayout;
+
 .field private mComeToMenu:Z
 
 .field private mContentTextPart1:Landroid/widget/TextView;
@@ -73,40 +75,31 @@
 
     invoke-direct {v2, v0}, Landroid/text/style/BackgroundColorSpan;-><init>(I)V
 
-    const-string/jumbo v0, "feature_usa"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    const v0, 0x7f0d0bee
+    const v0, 0x7f0d0c59
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v11
 
-    :goto_0
-    const v0, 0x7f0d0bfd
+    const v0, 0x7f0d0c68
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
-    const v0, 0x7f0d0bfb
+    const v0, 0x7f0d0c66
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v0, 0x7f0d0bfc
+    const v0, 0x7f0d0c67
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const v0, 0x7f0d0bfe
+    const v0, 0x7f0d0c69
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getString(I)Ljava/lang/String;
 
@@ -209,7 +202,7 @@
     :try_end_0
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-    :goto_1
+    :goto_0
     iget-object v0, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mContentTextPart1:Landroid/widget/TextView;
 
     invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
@@ -220,7 +213,7 @@
 
     iget-object v0, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mContentTextPart2:Landroid/widget/TextView;
 
-    const v1, 0x7f0d0bff
+    const v1, 0x7f0d0c6a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getString(I)Ljava/lang/String;
 
@@ -238,15 +231,6 @@
 
     return-void
 
-    :cond_2
-    const v0, 0x7f0d0bef
-
-    invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getString(I)Ljava/lang/String;
-
-    move-result-object v11
-
-    goto/16 :goto_0
-
     :catch_0
     move-exception v7
 
@@ -254,7 +238,7 @@
 
     invoke-virtual {v0, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    goto :goto_1
+    goto :goto_0
 .end method
 
 .method private setSmartCall()V
@@ -335,7 +319,7 @@
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->setContentView(I)V
 
-    const v0, 0x7f10028b
+    const v0, 0x7f10028c
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->findViewById(I)Landroid/view/View;
 
@@ -345,7 +329,7 @@
 
     iput-object v0, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mContentTextPart1:Landroid/widget/TextView;
 
-    const v0, 0x7f10028d
+    const v0, 0x7f10028e
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->findViewById(I)Landroid/view/View;
 
@@ -355,7 +339,7 @@
 
     iput-object v0, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mContentTextPart2:Landroid/widget/TextView;
 
-    const v0, 0x7f10028e
+    const v0, 0x7f100290
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->findViewById(I)Landroid/view/View;
 
@@ -365,7 +349,7 @@
 
     iput-object v0, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mDeclineButton:Landroid/widget/Button;
 
-    const v0, 0x7f10028f
+    const v0, 0x7f100291
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->findViewById(I)Landroid/view/View;
 
@@ -374,6 +358,16 @@
     check-cast v0, Landroid/widget/Button;
 
     iput-object v0, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mAgreeButton:Landroid/widget/Button;
+
+    const v0, 0x7f10028f
+
+    invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/LinearLayout;
+
+    iput-object v0, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mButtonLayout:Landroid/widget/LinearLayout;
 
     invoke-direct {p0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getContentText()V
 
@@ -397,13 +391,13 @@
 
     iput-boolean v3, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mComeToMenu:Z
 
-    const v0, 0x7f0d01f9
+    const v0, 0x7f0d0256
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f0d0236
+    const v1, 0x7f0d0294
 
     invoke-virtual {p0, v1}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getString(I)Ljava/lang/String;
 
@@ -421,8 +415,27 @@
 
     invoke-static {v0, v1, v2}, Lcom/android/phone/utils/AppLogging;->insertLog(Landroid/content/Context;Lcom/android/phone/utils/AppLogging$AppLoggingAction;Ljava/lang/String;)V
 
-    :cond_0
     :goto_0
+    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "disable_bottom_button"
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    iget-object v0, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mButtonLayout:Landroid/widget/LinearLayout;
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    :cond_0
+    :goto_1
     iget-object v0, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mDeclineButton:Landroid/widget/Button;
 
     if-eqz v0, :cond_1
@@ -483,6 +496,13 @@
     iput-boolean v0, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mComeToMenu:Z
 
     goto :goto_0
+
+    :cond_6
+    iget-object v0, p0, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->mButtonLayout:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    goto :goto_1
 .end method
 
 .method public onDestroy()V
@@ -560,7 +580,7 @@
 .method public onResume()V
     .locals 5
 
-    const v4, 0x7f020164
+    const v4, 0x7f020168
 
     const/4 v0, 0x1
 
@@ -574,7 +594,7 @@
 
     invoke-static {v2, v3}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v2, 0x7f0d01f8
+    const v2, 0x7f0d0255
 
     invoke-virtual {p0, v2}, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;->getString(I)Ljava/lang/String;
 

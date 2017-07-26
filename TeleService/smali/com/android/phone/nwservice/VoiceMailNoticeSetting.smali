@@ -167,7 +167,7 @@
 
     aput-object v12, v1, v3
 
-    const v3, 0x7f0d01cd
+    const v3, 0x7f0d022a
 
     invoke-virtual {p0, v3, v1}, Lcom/android/phone/nwservice/VoiceMailNoticeSetting;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

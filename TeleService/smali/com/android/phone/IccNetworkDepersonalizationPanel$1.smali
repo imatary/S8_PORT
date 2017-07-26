@@ -55,7 +55,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel$1;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
-    invoke-static {v0}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-get4(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/widget/EditText;
+    invoke-static {v0}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-get5(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/widget/EditText;
 
     move-result-object v0
 

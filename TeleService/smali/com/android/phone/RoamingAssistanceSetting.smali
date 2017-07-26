@@ -39,11 +39,11 @@
 
     iput-object v0, p0, Lcom/android/phone/RoamingAssistanceSetting;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
 
-    const v0, 0x7f0d0604
+    const v0, 0x7f0d0668
 
-    const v1, 0x7f0d0606
+    const v1, 0x7f0d066a
 
-    const v2, 0x7f0d0607
+    const v2, 0x7f0d066b
 
     filled-new-array {v0, v1, v2}, [I
 
@@ -51,11 +51,11 @@
 
     iput-object v0, p0, Lcom/android/phone/RoamingAssistanceSetting;->items:[I
 
-    const v0, 0x7f0d02b1
+    const v0, 0x7f0d0311
 
-    const v1, 0x7f0d02b2
+    const v1, 0x7f0d0312
 
-    const v2, 0x7f0d02b3
+    const v2, 0x7f0d0313
 
     filled-new-array {v0, v1, v2}, [I
 
@@ -162,7 +162,7 @@
 
     invoke-static {v1, v2, v3, v4}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v1, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+    sget-object v1, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v1}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
@@ -271,13 +271,13 @@
     invoke-virtual {v0, v2}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    const v0, 0x7f0d01f1
+    const v0, 0x7f0d024e
 
     invoke-virtual {p0, v0}, Lcom/android/phone/RoamingAssistanceSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f0d022f
+    const v1, 0x7f0d028d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/RoamingAssistanceSetting;->getString(I)Ljava/lang/String;
 
@@ -341,13 +341,13 @@
 
     invoke-static {v0, p3}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
 
-    const v0, 0x7f0d0216
+    const v0, 0x7f0d0274
 
     invoke-virtual {p0, v0}, Lcom/android/phone/RoamingAssistanceSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f0d0230
+    const v1, 0x7f0d028e
 
     invoke-virtual {p0, v1}, Lcom/android/phone/RoamingAssistanceSetting;->getString(I)Ljava/lang/String;
 
@@ -447,7 +447,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     new-instance v0, Lcom/android/phone/ia/RoamingAssistanceSettingStateListener;
 
@@ -465,7 +465,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     const-string/jumbo v0, "RoamingAssistance"
 
@@ -477,19 +477,30 @@
 
     move-result v0
 
+    if-eqz v0, :cond_1
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingLastState()Z
+
+    move-result v0
+
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+    const-string/jumbo v0, "RoamingAssistance"
+
+    invoke-static {v0}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    :cond_0
+    sget-object v0, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v0}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
-    :cond_0
+    :cond_1
     iget-object v0, p0, Lcom/android/phone/RoamingAssistanceSetting;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
 
     const-string/jumbo v1, "RoamingAssistance"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logEnterState(Ljava/lang/String;)V
 
-    :cond_1
+    :cond_2
     return-void
 .end method

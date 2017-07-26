@@ -67,7 +67,7 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
 
-    const v7, 0x7f0d08a3
+    const v7, 0x7f0d0907
 
     const/4 v4, 0x0
 
@@ -162,7 +162,7 @@
 
     iget-object v2, p0, Lcom/android/phone/SKTHDVoiceSetting;->mCallTypePreference:Landroid/preference/ListPreference;
 
-    const v5, 0x7f0d08a4
+    const v5, 0x7f0d0908
 
     invoke-virtual {v2, v5}, Landroid/preference/ListPreference;->setSummary(I)V
 
@@ -170,7 +170,7 @@
 
     new-array v1, v2, [Ljava/lang/String;
 
-    const v2, 0x7f0d08a5
+    const v2, 0x7f0d0909
 
     invoke-virtual {p0, v2}, Lcom/android/phone/SKTHDVoiceSetting;->getString(I)Ljava/lang/String;
 
@@ -178,7 +178,7 @@
 
     aput-object v2, v1, v4
 
-    const v2, 0x7f0d08a6
+    const v2, 0x7f0d090a
 
     invoke-virtual {p0, v2}, Lcom/android/phone/SKTHDVoiceSetting;->getString(I)Ljava/lang/String;
 
@@ -352,7 +352,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d08ab
+    const v6, 0x7f0d090f
 
     const/4 v7, 0x1
 
@@ -369,7 +369,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d08a9
+    const v6, 0x7f0d090d
 
     const/4 v7, 0x1
 

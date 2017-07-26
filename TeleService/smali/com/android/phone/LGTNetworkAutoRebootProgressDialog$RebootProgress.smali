@@ -213,7 +213,7 @@
 .method protected onPreExecute()V
     .locals 7
 
-    const v3, 0x7f0d077f
+    const v3, 0x7f0d07e3
 
     const/4 v6, 0x1
 
@@ -255,7 +255,7 @@
 
     iget-object v1, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog$RebootProgress;->this$0:Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
-    const v2, 0x7f0d077d
+    const v2, 0x7f0d07e1
 
     invoke-virtual {v1, v2}, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->getString(I)Ljava/lang/String;
 
@@ -329,7 +329,7 @@
 
     iget-object v1, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog$RebootProgress;->this$0:Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
-    const v2, 0x7f0d077c
+    const v2, 0x7f0d07e0
 
     invoke-virtual {v1, v2}, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->getString(I)Ljava/lang/String;
 
@@ -350,7 +350,7 @@
 
     iget-object v1, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog$RebootProgress;->this$0:Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
-    const v2, 0x7f0d077e
+    const v2, 0x7f0d07e2
 
     invoke-virtual {v1, v2}, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->getString(I)Ljava/lang/String;
 

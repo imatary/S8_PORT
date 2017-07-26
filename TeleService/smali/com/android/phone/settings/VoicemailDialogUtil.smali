@@ -21,7 +21,7 @@
 
     const/4 v8, 0x0
 
-    const v7, 0x7f0d0334
+    const v7, 0x7f0d0394
 
     const/16 v6, 0x1f4
 
@@ -36,11 +36,11 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f0d032d
+    const v5, 0x7f0d038d
 
     sparse-switch p1, :sswitch_data_0
 
-    const v4, 0x7f0d0332
+    const v4, 0x7f0d0392
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -105,7 +105,7 @@
 
     invoke-direct {v2, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f0d02f6
+    const v6, 0x7f0d0356
 
     invoke-virtual {p0, v6}, Lcom/android/phone/settings/VoicemailSettingsActivity;->getText(I)Ljava/lang/CharSequence;
 
@@ -121,7 +121,7 @@
 
     if-ne p1, v9, :cond_4
 
-    const v6, 0x7f0d032f
+    const v6, 0x7f0d038f
 
     :goto_1
     invoke-virtual {p0, v6}, Lcom/android/phone/settings/VoicemailSettingsActivity;->getText(I)Ljava/lang/CharSequence;
@@ -133,60 +133,60 @@
     return-object v2
 
     :sswitch_0
-    const v4, 0x7f0d033b
+    const v4, 0x7f0d039b
 
-    const v5, 0x7f0d02f0
+    const v5, 0x7f0d0350
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     goto :goto_0
 
     :sswitch_1
-    const v4, 0x7f0d033f
+    const v4, 0x7f0d039f
 
-    const v5, 0x7f0d02f0
+    const v5, 0x7f0d0350
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     goto :goto_0
 
     :sswitch_2
-    const v4, 0x7f0d033c
+    const v4, 0x7f0d039c
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     goto :goto_0
 
     :sswitch_3
-    const v4, 0x7f0d033d
+    const v4, 0x7f0d039d
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     goto :goto_0
 
     :sswitch_4
-    const v4, 0x7f0d033e
+    const v4, 0x7f0d039e
 
-    const v6, 0x7f0d04a2
+    const v6, 0x7f0d0502
 
     invoke-virtual {v0, v6, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v6, 0x7f0d04a3
+    const v6, 0x7f0d0503
 
     invoke-virtual {v0, v6, p0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     goto/16 :goto_0
 
     :sswitch_5
-    const v5, 0x7f0d0413
+    const v5, 0x7f0d0473
 
-    const v4, 0x7f0d0418
+    const v4, 0x7f0d0478
 
     const v6, 0x1010355
 
     invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setIconAttribute(I)Landroid/app/AlertDialog$Builder;
 
-    const v6, 0x7f0d02ca
+    const v6, 0x7f0d032a
 
     invoke-virtual {v0, v6, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -202,12 +202,12 @@
     :cond_4
     if-ne p1, v10, :cond_5
 
-    const v6, 0x7f0d0330
+    const v6, 0x7f0d0390
 
     goto :goto_1
 
     :cond_5
-    const v6, 0x7f0d032e
+    const v6, 0x7f0d038e
 
     goto :goto_1
 

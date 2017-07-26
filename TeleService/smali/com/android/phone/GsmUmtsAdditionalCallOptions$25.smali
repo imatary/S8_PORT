@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/GsmUmtsAdditionalCallOptions;->changeDataServiceForMultisim()Z
+    value = Lcom/android/phone/GsmUmtsAdditionalCallOptions;->createDialogDropDownTty(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,72 +35,41 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 5
+    .locals 3
 
-    const/4 v4, 0x0
+    const-string/jumbo v0, "GsmUmtsAdditionalCallOptions"
 
-    const/4 v3, 0x1
+    const-string/jumbo v1, "createDialogDropDownTty negative"
 
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+    const/4 v2, 0x1
 
-    invoke-static {v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap1(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/Context;
+    invoke-static {v0, v1, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    move-result-object v1
+    const-string/jumbo v0, "preferred_tty_mode"
 
-    const-string/jumbo v2, "phone"
+    invoke-static {}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-get6()I
 
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    move-result v1
+
+    invoke-static {v0, v1}, Lcom/android/phone/TeleServiceSystemDB;->setSecureSettingDB(Ljava/lang/String;I)V
+
+    iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+
+    invoke-static {v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-get3(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Lcom/android/phone/DropDownPreference;
 
     move-result-object v0
 
-    check-cast v0, Landroid/telephony/TelephonyManager;
+    invoke-static {}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-get6()I
 
-    invoke-virtual {v0, v4}, Landroid/telephony/TelephonyManager;->setDataEnabled(Z)V
+    move-result v1
 
-    sget v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+    invoke-virtual {v0, v1}, Lcom/android/phone/DropDownPreference;->setSelectedItem(I)V
 
-    invoke-static {v1}, Lcom/android/phone/PhoneUtilsMultiSIM;->setDefaultDataSubId(I)V
+    iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    invoke-virtual {v0, v3}, Landroid/telephony/TelephonyManager;->setDataEnabled(Z)V
+    invoke-static {v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap10(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    iput-boolean v3, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeData:Z
-
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    invoke-static {v1, v3}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-set4(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Z)Z
-
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    invoke-static {v1, v4}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-set0(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Z)Z
-
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    invoke-static {v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-get5(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Lcom/android/phone/TimeConsumingPreferenceListener;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    invoke-static {v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-get5(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Lcom/android/phone/TimeConsumingPreferenceListener;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    invoke-virtual {v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
-
-    move-result-object v2
-
-    invoke-interface {v1, v2, v3}, Lcom/android/phone/TimeConsumingPreferenceListener;->onStarted(Landroid/preference/Preference;Z)V
-
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    invoke-static {v1, v3}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-set3(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Z)Z
-
-    :cond_0
     return-void
 .end method

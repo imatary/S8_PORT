@@ -99,13 +99,13 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v5, 0x7f0d0c8e
+    const v5, 0x7f0d0cff
 
     invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v5
 
-    const v6, 0x7f0d0c8f
+    const v6, 0x7f0d0d00
 
     invoke-virtual {v5, v6}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -119,7 +119,7 @@
 
     invoke-direct {v6, p0, v4}, Lcom/android/phone/WfcCallAlertPopupActivity$1;-><init>(Lcom/android/phone/WfcCallAlertPopupActivity;Ljava/lang/String;)V
 
-    const v7, 0x7f0d0c9d
+    const v7, 0x7f0d0d0e
 
     invoke-virtual {v5, v7, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -143,13 +143,13 @@
     return-void
 
     :cond_0
-    const v5, 0x7f0d04b1
+    const v5, 0x7f0d0511
 
     invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v5
 
-    const v6, 0x7f0d04b2
+    const v6, 0x7f0d0512
 
     invoke-virtual {v5, v6}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -163,7 +163,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/WfcCallAlertPopupActivity$3;-><init>(Lcom/android/phone/WfcCallAlertPopupActivity;)V
 
-    const v7, 0x7f0d04b0
+    const v7, 0x7f0d0510
 
     invoke-virtual {v5, v7, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
