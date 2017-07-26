@@ -27000,15 +27000,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mNavigationBarView:Lcom/android/systemui/statusbar/phone/NavigationBarView;
-
-    invoke-virtual {v2}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getBarTransitions()Lcom/android/systemui/statusbar/phone/BarTransitions;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/android/systemui/statusbar/phone/BarTransitions;->getMode()I
-
-    move-result v10
+    iget v10, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mNavigationBarMode:I
 
     move v6, v4
 
@@ -27093,16 +27085,6 @@
     goto/16 :goto_6
 
     :cond_16
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mNavigationBarView:Lcom/android/systemui/statusbar/phone/NavigationBarView;
-
-    invoke-virtual {v2}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getBarTransitions()Lcom/android/systemui/statusbar/phone/BarTransitions;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v15}, Lcom/android/systemui/statusbar/phone/BarTransitions;->setAlwaysOpaque(Z)V
-
     move-object/from16 v0, p0
 
     iput-boolean v15, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mForceOpaque:Z
