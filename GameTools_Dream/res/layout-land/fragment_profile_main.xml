@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+            <RelativeLayout android:background="@color/white1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <include layout="@layout/item_profile_myinfo" />
+                <ImageView android:id="@id/copyright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginBottom="22.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/profile_articles_layout" android:background="@color/gray5" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/profile_articles_post_layout" android:background="@color/white1" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:id="@id/icon_post_profile" android:background="@drawable/icon_posts" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="5.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/black3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/article_count_txt" android:layout_toRightOf="@id/icon_post_profile" android:layout_centerVertical="true" />
+                    <TextView android:textSize="24.0dip" android:textColor="@color/black3" android:id="@id/article_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/icon_post_go" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/icon_post_go" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <View android:background="@color/gray5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/profile_articles_comment_layout" android:background="@color/white1" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:id="@id/icon_comment_profile" android:background="@drawable/icon_comments" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="5.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/black3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/written_comment_count_txt" android:layout_toRightOf="@id/icon_comment_profile" android:layout_centerVertical="true" />
+                    <TextView android:textSize="24.0dip" android:textColor="@color/black3" android:id="@id/written_comment_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/icon_comment_go" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/icon_comment_go" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <View android:background="@color/gray5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/profile_articles_like_layout" android:background="@color/white1" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:id="@id/icon_like_profile" android:background="@drawable/icon_likes" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="5.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/black3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/like_article_count_txt" android:layout_toRightOf="@id/icon_like_profile" android:layout_centerVertical="true" />
+                    <TextView android:textSize="24.0dip" android:textColor="@color/black3" android:id="@id/like_article_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/icon_like_go" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/icon_like_go" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <View android:id="@id/profile_articles_like_blank" android:background="@color/white2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <TextView android:layout_gravity="bottom|center|left" android:id="@id/back" android:background="@drawable/gl_btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <include layout="@layout/view_fragment_error" />
+</FrameLayout>

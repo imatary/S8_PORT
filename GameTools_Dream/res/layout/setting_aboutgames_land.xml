@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="100.0" android:layout_weight="0.5">
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.1" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="83.8">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/game_icon" android:background="@drawable/gamehome_about_tools" android:layout_width="116.0dip" android:layout_height="105.0dip" />
+                    <Space android:layout_width="fill_parent" android:layout_height="19.0dip" />
+                    <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:id="@id/tv_app_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DREAM_GH_BUTTON_GAME_TOOLS_22" android:fontFamily="sec-roboto-condensed" android:layout_marginStart="@dimen/body_text_side_padding" android:layout_marginEnd="@dimen/body_text_side_padding" />
+                    <Space android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                    <Button android:textSize="15.0sp" android:textColor="#ff505050" android:id="@id/btn_app_info" android:background="@drawable/app_info_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MIDS_GH_OPT_APP_INFO" android:textAllCaps="true" android:textAlignment="center" android:paddingStart="18.0dip" android:paddingEnd="18.0dip" />
+                    <Space android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/body_text_side_padding" android:layout_marginEnd="@dimen/body_text_side_padding">
+                        <TextView android:textSize="15.0sp" android:textColor="?android:textColorPrimary" android:id="@id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MIDS_GH_BODY_VERSION" android:alpha="0.6" android:fontFamily="sec-roboto-light" />
+                        <Space android:layout_width="4.0dip" android:layout_height="fill_parent" />
+                        <TextView android:textSize="15.0sp" android:textColor="?android:textColorPrimary" android:id="@id/tv_version_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0.0" android:alpha="0.6" android:fontFamily="sec-roboto-light" />
+                    </LinearLayout>
+                    <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/tv_version_info2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="11.0dip" android:text="@string/IDS_IDLE_BODY_THE_LATEST_VERSION_IS_ALREADY_INSTALLED" android:alpha="0.6" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/body_text_side_padding" android:layout_marginEnd="@dimen/body_text_side_padding" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                    <Button android:textAppearance="@style/about_game_update_btn_text_color" android:id="@id/btn_update" android:focusable="true" android:clickable="false" android:layout_width="180.0dip" android:layout_height="40.0dip" android:text="@string/IDS_IDLE_BUTTON_UPDATE_ABB8" android:layout_weight="0.48" android:backgroundTint="@color/about_game_tools_update_btn_color" />
+                </LinearLayout>
+                <ProgressBar android:id="@id/progress_update" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_marginBottom="11.0dip" style="?android:attr/progressBarStyleLarge" />
+            </LinearLayout>
+        </ScrollView>
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.1" />
+    </LinearLayout>
+    <ScrollView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" android:paddingEnd="16.0dip">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/tv_tnc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DREAM_IDLE_OPT_TERMS_AND_CONDITIONS" style="@style/about_page_linked_text" />
+            <View android:id="@id/margin_view_1" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <TextView android:id="@id/tv_privacy_policy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DREAM_IDLE_OPT_PRIVACY_POLICY" style="@style/about_page_linked_text" />
+            <View android:id="@id/margin_view_2" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <TextView android:id="@id/tv_opensource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DREAM_IDLE_OPT_OPEN_SOURCE_LICENSES" style="@style/about_page_linked_text" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

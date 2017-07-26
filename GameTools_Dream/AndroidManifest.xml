@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.samsung.android.game.gametools" platformBuildVersionCode="24" platformBuildVersionName="7.0">
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_758deea81f36b43c29420b93e51b94c9c34219c6b9dcdecaa3128f8ff38ec478231781bd180a659565a342dfc5a74991b818776503aa43bf2d188e41c5f0c3ec030b411fa3336043714ab977d61cf6d87415edd76ac15f1e3a2720d652bd9f09fa866409846727ee9812498ac93242f16e0b0af0f2a3e0ba9bed1e13efb29173"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_FRAME_BUFFER"/>
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="com.sec.android.permission.IN_APP_SOUND"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS"/>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.samsung.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES"/>
+    <permission android:name="com.samsung.android.permission.LAUNCH_SETTING_GAMES" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SET_ACTIVITY_WATCHER"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" android:protectionLevel="system|signature"/>
+    <uses-permission android:name="android.permission.MANAGE_MEDIA_PROJECTION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.SET_PROCESS_LIMIT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.samsung.permission.READ_SEC_COMMON_POLICY"/>
+    <uses-permission android:name="com.samsung.android.game.gamehome.permission.INVOKE"/>
+    <uses-permission android:name="android.permission.STATUS_BAR_SERVICE"/>
+    <uses-permission android:name="android.permission.GET_DETAILED_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <permission android:name="com.sec.game.gamecast.herogame.permission.INVOKE" android:protectionLevel="signature"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/permission_icon_gametools" android:label="@string/MIDS_GH_MBODY_GAME_TOOLS" android:name="com.samsung.android.game.gametools.application.GameToolsApplication" android:supportsRtl="true" android:theme="@android:style/Theme.DeviceDefault.Light">
+        <activity android:configChanges="locale|fontScale|mcc|mnc|orientation|screenSize|uiMode" android:icon="@drawable/permission_icon_gametools" android:label="@string/MIDS_GH_HEADER_GAMES" android:name="com.samsung.android.game.gametools.setting.activity.SettingsActivity" android:permission="com.samsung.android.permission.LAUNCH_SETTING_GAMES" android:resizeableActivity="true" android:supportsPictureInPicture="true" android:theme="@style/Theme.Settings">
+            <intent-filter>
+                <action android:name="com.samsung.android.game.gamehome.action.SETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|fontScale|mcc|mnc|orientation|screenSize|uiMode" android:icon="@drawable/permission_icon_gametools" android:label="@string/MIDS_GH_MBODY_GAME_TOOLS" android:name="com.samsung.android.game.gametools.setting.activity.ToolsSettingsActivity" android:permission="com.samsung.android.permission.LAUNCH_SETTING_GAMES" android:resizeableActivity="true" android:supportsPictureInPicture="true" android:theme="@style/Theme.Settings">
+            <intent-filter>
+                <action android:name="com.samsung.android.game.gamehome.action.TOOLSSETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="true" android:name="com.samsung.android.game.gametools.setting.activity.LauncherDialogActivity" android:noHistory="true" android:permission="com.samsung.android.permission.LAUNCH_SETTING_GAMES" android:supportsRtl="true" android:theme="@style/TransparentActivityTheme">
+            <intent-filter>
+                <action android:name="com.samsung.android.game.gamehome.action.LAUNCHER_DIALOG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|fontScale|mcc|mnc|orientation|screenSize|uiMode" android:exported="false" android:icon="@drawable/ic_launcher" android:label="Recording Test" android:name="com.samsung.android.game.gametools.setting.activity.TestActivity"/>
+        <activity android:configChanges="locale|fontScale|mcc|mnc|orientation|screenSize|uiMode" android:icon="@drawable/permission_icon_gametools" android:label="@string/DREAM_GH_BUTTON_GAME_TOOLS_22" android:name="com.samsung.android.game.gametools.setting.activity.LauncherSearchResultActivity" android:permission="com.samsung.android.permission.LAUNCH_SETTING_GAMES" android:resizeableActivity="true" android:supportsPictureInPicture="true" android:theme="@style/Theme.Settings">
+            <intent-filter>
+                <action android:name="com.samsung.android.game.gamehome.action.LAUNCHER_SEARCH_RESULT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|fontScale|mcc|mnc|orientation|screenSize|uiMode" android:icon="@drawable/permission_icon_gametools" android:label="@string/DREAM_GH_BUTTON_GAME_TOOLS_22" android:name="com.samsung.android.game.gametools.setting.activity.ToolsSearchResultActivity" android:permission="com.samsung.android.permission.LAUNCH_SETTING_GAMES" android:resizeableActivity="true" android:supportsPictureInPicture="true" android:theme="@style/Theme.Settings">
+            <intent-filter>
+                <action android:name="com.samsung.android.game.gamehome.action.TOOLS_SEARCH_RESULT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.samsung.android.game.gametools.provider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.samsung.android.game.gametools.search" android:exported="true" android:grantUriPermissions="true" android:multiprocess="false" android:name="com.samsung.android.game.gametools.setting.search.SettingsSearchProvider" android:permission="android.permission.READ_SEARCH_INDEXABLES">
+            <intent-filter>
+                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="true" android:name="com.sec.game.gamecast.common.activity.DreamTNCActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.tnc_activity_theme">
+            <intent-filter>
+                <action android:name="com.samsung.android.game.gamehome.action.DISCLAIMER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.sec.game.gamecast.common.activity.DreamTNCDetailsActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.Light"/>
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="OAuth2.0 In-app" android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="NeoId In-app" android:name="com.naver.glink.android.sdk.login.neoid.NeoIdInAppBrowserActivity" android:screenOrientation="sensor"/>
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.naver.glink.android.sdk.ui.parent.plugfragment.activityresult.RequestActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.naver.glink.android.sdk.login.neoid.PlugSchemeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="naverplug"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <service android:enabled="true" android:exported="true" android:name="com.samsung.android.game.gametools.externalservice.GameToolsIntentService" android:permission="android.permission.HARDWARE_TEST">
+            <intent-filter>
+                <action android:name="com.samsung.android.game.gametools.GAMETOOLS_INTENTSERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.samsung.android.game.gametools.externalservice.GameToolsService">
+            <intent-filter>
+                <action android:name="com.samsung.android.game.gametools.GAMETOOLS_SERVICE"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.samsung.android.game.gametools.floatingui.receiver.AlwaysBootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.sec.android.app.setupwizard.SETUPWIZARD_COMPLETE"/>
+                <action android:name="com.sec.android.app.secsetupwizard.SETUPWIZARD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.samsung.android.game.gametools.floatingui.receiver.IdleSuicideReceiver">
+            <intent-filter>
+                <action android:name="gametools.killbymyself"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.game.gametools.floatingui.screenshot.GalleryFolderCallWrapperActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.game.gametools.floatingui.activity.JumpToRecordedVideoActivity" android:noHistory="true" android:theme="@style/TransparentActivityTheme"/>
+        <service android:enabled="true" android:exported="false" android:name="com.samsung.android.game.gametools.floatingui.internalservice.HunResultIntentService"/>
+        <activity android:enabled="true" android:exported="true" android:label="GameHomeEnableActivity" android:launchMode="singleTask" android:name="com.samsung.android.game.gametools.floatingui.activity.GameHomeEnableActivity" android:permission="com.samsung.android.game.gamehome.permission.ENABLE_GAMEHOME" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="com.samsung.android.game.gamehome.action.ENABLE_GAMEHOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="SPDE.build.signature" android:value="4234765/15163038/release/GameTools-101001-1.2.45"/>
+        <meta-data android:name="SPDE.env.version" android:value="2.1.3/L24.2.16/24.2.10"/>
+    </application>
+</manifest>

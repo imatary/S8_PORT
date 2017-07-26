@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white1" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/profile_info_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="22.0dip" android:layout_marginTop="22.0dip">
+        <RelativeLayout android:id="@id/profile_image_layout" android:layout_width="70.0dip" android:layout_height="70.0dip">
+            <ImageView android:id="@id/profile_image_stroke" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/gl_thumb_personal_profile_stroke" />
+            <ImageView android:id="@id/profile_image" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/gl_thumb_personal_profile_stroke" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/header_mem_name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="9.0dip" android:layout_below="@id/profile_image_layout">
+            <TextView android:textSize="24.0dip" android:textStyle="bold" android:textColor="@drawable/gl_black_text" android:id="@id/header_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="99.0" android:layout_alignParentTop="true" />
+            <ImageView android:layout_gravity="center" android:id="@id/header_nickname_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/icon_setting" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/header_mem_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header_mem_name_layout">
+            <TextView android:textSize="13.0dip" android:textColor="@color/black2" android:id="@id/header_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/black2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/profile_visit" android:drawableLeft="@drawable/oval_gray" android:drawablePadding="6.0dip" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/black2" android:id="@id/header_visit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

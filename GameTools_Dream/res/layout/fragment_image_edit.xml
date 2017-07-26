@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layoutImageEdit" android:background="@color/black2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.naver.glink.android.sdk.ui.profile.image.ImageEditView android:layout_gravity="center" android:id="@id/imgDrawingPicture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="50.0dip" android:scaleType="centerInside" />
+    <FrameLayout android:id="@id/layoutBg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center|top" android:orientation="horizontal" android:id="@id/layoutTopMenu" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:layout_gravity="center|left" android:id="@id/tvClose" android:padding="13.5dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gl_btn_photo_cancel" android:scaleType="center" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/tvSave" android:padding="13.5dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gl_btn_photo_done" android:scaleType="center" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/layoutBottomMenu" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/white1" android:gravity="center_horizontal" android:id="@id/tvRotate" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scaleType="center" android:text="@string/image_editor_rotate" android:drawableTop="@drawable/gl_btn_photo_rotate" android:drawablePadding="3.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/white1" android:gravity="center_horizontal" android:id="@id/tvSetCrop" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scaleType="center" android:text="@string/image_editor_crop" android:drawableTop="@drawable/gl_btn_photo_crop" android:drawablePadding="3.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/layoutBottomCropMenu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:layout_gravity="center|left" android:id="@id/tvCancelCrop" android:padding="13.5dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gl_btn_photo_cancel" android:scaleType="center" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/tvDoCrop" android:padding="13.5dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gl_btn_photo_done" android:scaleType="center" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

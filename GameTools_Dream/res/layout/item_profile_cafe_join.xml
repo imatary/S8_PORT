@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/green1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="10.0">
+            <ImageView android:id="@id/cafe_background_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/cafe_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/thumbnail_image" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginTop="20.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/cafe_icon_img" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                    <ImageView android:layout_gravity="center" android:id="@id/cafe_icon_img_stroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gl_ls_icon_cafeimgst" />
+                </FrameLayout>
+            </LinearLayout>
+            <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/white1" android:id="@id/cafe_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="16.0dip" android:maxLines="2" android:layout_below="@id/cafe_info_layout" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/white1" android:ellipsize="end" android:id="@id/cafe_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="16.0dip" android:maxLines="3" android:layout_below="@id/cafe_name" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/white1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="6.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/join_edit_layout" android:background="@color/white1" android:paddingLeft="16.0dip" android:paddingTop="31.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:baselineAligned="false">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/white1" android:layout_width="fill_parent" android:layout_height="36.0dip">
+                            <EditText android:textSize="16.0dip" android:textColor="@color/black2" android:textColorHint="#80999999" android:gravity="center_vertical" android:id="@id/nickname" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/nick_name_header" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="flagNoExtractUi" />
+                            <TextView android:id="@id/nickname_deletion" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:drawableLeft="@drawable/gl_btn_cancel" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/black4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <Button android:textSize="16.0dip" android:textColor="@color/white1" android:gravity="center" android:id="@id/join" android:background="@drawable/gl_btn_confirm1" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="13.0dip" android:text="@string/nick_name_join" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="11.0dip" android:textColor="@color/gray4" android:id="@id/valid_check_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <RelativeLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="26.0dip">
+                        <RelativeLayout android:id="@id/agree_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                            <CheckBox android:id="@id/agree_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:button="@drawable/gl_ls_icon_check" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/gray4" android:id="@id/agree_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nick_name_join_agree" android:layout_toRightOf="@id/agree_check" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0dip" android:textColor="@color/gray4" android:gravity="center" android:id="@id/btn_logout" android:background="@drawable/gl_profile_modify_logout" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:minWidth="72.0dip" android:text="@string/profile_logout" android:singleLine="true" android:drawablePadding="4.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

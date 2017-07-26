@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rel_videocontrols" android:background="@color/black2_opacity_10" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/video_close" android:padding="15.0dip" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/gl_btn_viewerclose" />
+    <ImageButton android:id="@id/vcv_img_play" android:background="@drawable/gl_ls_icon_end_play_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <SeekBar android:theme="@android:style/Theme.Holo.Light" android:id="@id/vcv_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="13.0dip" android:indeterminateDrawable="@null" android:progressDrawable="@drawable/seekbar_video_background" android:minHeight="13.0dip" android:thumb="@null" android:thumbOffset="10.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/green1" android:id="@id/vcv_txt_elapsed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/white1" android:id="@id/vcv_txt_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/white1" android:id="@id/vcv_txt_total" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:id="@id/vcv_img_fullscreen" android:background="@drawable/gl_ls_icon_fullplay_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+</RelativeLayout>

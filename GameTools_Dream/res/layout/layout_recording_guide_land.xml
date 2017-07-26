@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#ea051e3c" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="26.0dip">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:textColor="#fffafafa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="6.0dip" android:text="@string/MIDS_GH_TPOP_TAP_THE_PROFILE_BUTTON_TO_STOP_RECORDING_DRAG_AND_DROP_TO_MOVE_BUTTON" android:lineSpacingExtra="5.0px" android:fontFamily="sec-roboto-light" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="26.0dip">
+                <View android:background="@drawable/drawable_circle_5bdeff" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginStart="27.0dip" />
+                <View android:background="@drawable/drawable_rect_5bdeff" android:layout_width="1.0dip" android:layout_height="60.0dip" android:layout_marginStart="29.0dip" />
+                <FrameLayout android:layout_width="59.0dip" android:layout_height="59.0dip" android:foreground="@drawable/drawable_circle_5bdeff_line">
+                    <ImageView android:background="@drawable/gametools_recording_default_59x59" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="14.0dip" android:textColor="#fffafafa" android:layout_gravity="end|bottom|center" android:id="@id/btn_ok" android:background="@drawable/drawable_guide_grace_btn_bg" android:focusable="true" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/MIDS_GH_BUTTON_OK" android:textAllCaps="true" android:paddingStart="25.0dip" android:paddingEnd="25.0dip" android:layout_marginEnd="16.0dip" style="?android:borderlessButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

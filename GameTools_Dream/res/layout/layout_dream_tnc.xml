@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <CheckBox android:id="@id/tnc_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="33.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff505050" android:id="@id/tnc_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/DREAM_GH_OPT_I_HAVE_READ_AND_AGREE_TO_ALL_THE_TERMS_AND_CONDITIONS_ABOVE" android:fontFamily="sec-roboto-light" android:textAlignment="viewStart" android:layout_marginStart="8.0dip" android:layout_marginEnd="35.0dip" />
+        </LinearLayout>
+        <LinearLayout android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/rl_bottom" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff252525" android:id="@id/button_disagree" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/DREAM_GH_BUTTON_DISAGREE_9" android:maxLines="1" android:includeFontPadding="false" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" android:textAlignment="viewStart" android:paddingStart="10.0dip" android:paddingEnd="6.0dip" android:layout_marginStart="20.0dip" android:layout_alignParentStart="true" style="?android:attr/borderlessButtonStyle" />
+            <Button android:enabled="false" android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff252525" android:id="@id/button_next" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/MIDS_GH_BUTTON_START_ABB" android:maxLines="1" android:includeFontPadding="false" android:drawablePadding="6.0dip" android:textAllCaps="true" android:drawableEnd="@drawable/tw_btn_icon_next_mtrl" android:fontFamily="sec-roboto-condensed" android:textAlignment="viewEnd" android:paddingStart="6.0dip" android:paddingEnd="10.0dip" android:layout_marginEnd="14.0dip" android:layout_alignParentEnd="true" style="?android:attr/borderlessButtonStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView android:paddingTop="@dimen/setting_guide_top_bottom_padding" android:paddingBottom="@dimen/setting_guide_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_layout" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/DREAM_GH_BODY_THESE_TERMS_AND_CONDITIONS_APPLY_TO_GAME_LAUNCHER_AND_GAME_TOOLS" style="@style/tnc_activity_detail_text_color" />
+            <TextView android:id="@id/tv_terms_of_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_guide_top_bottom_padding" android:text="@string/MIDS_GH_BODY_TERMS_OF_SERVICE" style="@style/tnc_activity_linked_text" />
+            <TextView android:id="@id/tv_privacy_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/MIDS_GH_HEADER_PRIVACY_POLICY" style="@style/tnc_activity_linked_text" />
+            <TextView android:id="@id/tv_runtime_permission" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_guide_top_bottom_padding" android:text="" style="@style/tnc_activity_detail_text_color" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

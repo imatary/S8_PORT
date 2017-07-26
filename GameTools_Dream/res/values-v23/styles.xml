@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Settings" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionBarStyle">@style/Theme.ActionBar</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:actionModeCloseButtonStyle">@style/NoCloseButton</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:actionModeStyle">@style/Theme.ActionMode</item>
+        <item name="android:statusBarColor">#fffafafa</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.KeyLockSettings" parent="@style/Theme.Settings">
+        <item name="android:statusBarColor">#fff0f0f0</item>
+    </style>
+</resources>

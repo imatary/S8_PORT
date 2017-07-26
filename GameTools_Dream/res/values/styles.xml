@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SdkTheme" parent="@android:style/Theme.Holo.Light" />
+    <style name="TextAppearance.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent" />
+    <style name="TextAppearance.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    <style name="Theme.Settings" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionBarStyle">@style/Theme.ActionBar</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:actionModeCloseButtonStyle">@style/NoCloseButton</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:actionModeStyle">@style/Theme.ActionMode</item>
+    </style>
+    <style name="ActionBarBodyStyle">
+        <item name="android:background">#ff666666</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">55.0dip</item>
+    </style>
+    <style name="AppTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:colorPrimary">#ff51b0d3</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="CustomConfirmDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/DialogTitleStyle</item>
+    </style>
+    <style name="DialogTitleStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">30.0dip</item>
+        <item name="android:textColor">#ff0098c4</item>
+        <item name="android:background">#ff666666</item>
+        <item name="android:paddingLeft">21.0dip</item>
+    </style>
+    <style name="Glink.SeekBar" parent="@android:style/Widget.SeekBar">
+        <item name="android:theme">@style/Theme.glink.seekbar</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:maxHeight">13.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress_background</item>
+        <item name="android:minWidth">103.0dip</item>
+        <item name="android:minHeight">13.0dip</item>
+        <item name="android:thumb">@drawable/seekbar_control_selector</item>
+        <item name="android:thumbOffset">8.0dip</item>
+    </style>
+    <style name="HomeNotiDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="LeftMenuText">
+        <item name="android:padding">16.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="LoginFormContainer">
+        <item name="android:padding">16.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="NoCloseButton" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="ScreenshotEditActivityTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="SubHeaader" parent="@style/AppTheme">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/subheader_text_color</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextAppearance" />
+    <style name="TextFieldCase1" parent="@style/AppTheme">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TextFieldCase2" parent="@style/AppTheme">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center|left|top</item>
+        <item name="android:lineSpacingExtra">4.0dip</item>
+    </style>
+    <style name="TextFieldCase2Title" parent="@style/AppTheme">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff0094b0</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TextNoItem">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/c_80858f</item>
+    </style>
+    <style name="TextPopupButtonFolder" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff16a0e7</item>
+        <item name="android:minWidth">0.0dip</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextPopupButtonSetting" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff56c0e5</item>
+        <item name="android:minWidth">0.0dip</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextPopupCase7Content" parent="@style/AppTheme">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="TextPopupContent" parent="@style/AppTheme">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:lineSpacingExtra">4.0dip</item>
+    </style>
+    <style name="TextPopupContent2" parent="@style/AppTheme">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextPopupContent3" parent="@style/AppTheme">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ff86898b</item>
+        <item name="android:gravity">center|left|top</item>
+        <item name="android:lineSpacingExtra">3.0dip</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextPopupContent4" parent="@style/AppTheme">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:lineSpacingExtra">4.0dip</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextPopupContent5" parent="@style/AppTheme">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ff0070d2</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextPopupContentButton" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+    <style name="TextPopupTitle" parent="@style/AppTheme">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextVideoViewItemHeader" parent="@style/AppTheme">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff838383</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+    <style name="TextYouTubeUploadGuide" parent="@style/AppTheme">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ff86898b</item>
+        <item name="android:gravity">center|left|top</item>
+        <item name="android:lineSpacingExtra">4.0dip</item>
+    </style>
+    <style name="Theme.ActionBar" parent="@android:style/Widget.DeviceDefault.Light.ActionBar" />
+    <style name="Theme.ActionMode" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
+        <item name="android:insetTop">0.0dip</item>
+        <item name="android:insetBottom">0.0dip</item>
+    </style>
+    <style name="Theme.AppList" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:actionModeCloseButtonStyle">@style/NoCloseButton</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:actionModeStyle">@style/Theme.ActionMode</item>
+        <item name="android:colorPrimary">#ff51b0d3</item>
+    </style>
+    <style name="Theme.BlackFullScreen" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Theme.Folder" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:actionModeCloseButtonStyle">@style/NoCloseButton</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:actionMenuTextColor">#ff143250</item>
+        <item name="android:actionModeStyle">@style/Theme.ActionMode</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:colorPrimary">#ff44a1e8</item>
+        <item name="android:colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:colorAccent">#ff88d66c</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Theme.GameCastTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:overScrollMode">never</item>
+    </style>
+    <style name="Theme.GameCastThemeFullscreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:overScrollMode">never</item>
+    </style>
+    <style name="Theme.NoActionBar" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
+    <style name="Theme.Transparent" parent="@style/Theme.GameCastTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Theme.TransparentFullscreen" parent="@style/Theme.GameCastThemeFullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Theme.glink.seekbar" parent="@android:style/Theme.Black" />
+    <style name="Theme.tnc_activity_theme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="ToolkitBubbleGuideTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff4d4d4d</item>
+        <item name="android:lineSpacingExtra">4.5dip</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="TransparentActivityTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoDisplay">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="about_game_update_btn_text_color" parent="@style/AppTheme">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="about_page_linked_text" parent="@style/AppTheme">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff252525</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:padding">4.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:alpha">0.9</item>
+        <item name="android:fontFamily">sec-roboto-condensed</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="bold_16_white" parent="@style/AppTheme">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="default_text" parent="@style/AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="floating_dream_tools_switch_title" parent="@style/AppTheme">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:layout_marginEnd">59.0dip</item>
+    </style>
+    <style name="floating_dream_tools_title" parent="@style/AppTheme">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/c_fafafa</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sec-roboto-condensed</item>
+    </style>
+    <style name="floating_dream_tools_under_button_text" parent="@style/AppTheme">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="intruduce_game_tools_guide_function_style" parent="@style/AppTheme">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ffc8c8c8</item>
+        <item name="android:lineSpacingExtra">6.0dip</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="listitem_option_14" parent="@style/normal_summary_14" />
+    <style name="multimedia_dialog_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/widget_enter</item>
+        <item name="android:windowExitAnimation">@anim/widget_enter</item>
+    </style>
+    <style name="normal_14_line_4_color_6b" parent="@style/AppTheme">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff6b6f72</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:lineSpacingExtra">6.0dip</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_15_line_4_color_31" parent="@style/AppTheme">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff505050</item>
+        <item name="android:gravity">left</item>
+        <item name="android:lineSpacingExtra">4.0dip</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_16" parent="@style/AppTheme">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_16_linespace_7" parent="@style/AppTheme">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">left</item>
+        <item name="android:lineSpacingExtra">2.0dip</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_16_white" parent="@style/AppTheme">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_17_linespace_4" parent="@style/AppTheme">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">left</item>
+        <item name="android:lineSpacingExtra">-1.0dip</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_17_white" parent="@style/AppTheme">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:lineSpacingExtra">2.0dip</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_18" parent="@style/AppTheme">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff505050</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_18_white" parent="@style/AppTheme">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_19_center" parent="@style/AppTheme">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_21_white" parent="@style/AppTheme">
+        <item name="android:textSize">21.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_summary_14" parent="@style/AppTheme">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff86898b</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="normal_summary_15" parent="@style/AppTheme">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="notitle_defaultdialog_msg" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="notitle_transparent_defaultdialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="quick_setting_area_ram_sub_title" parent="@style/AppTheme">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:shadowColor">#24000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="quick_setting_area_ram_title" parent="@style/AppTheme">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:shadowColor">#24000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="quick_setting_area_sub_title" parent="@style/AppTheme">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ff16f6c9</item>
+        <item name="android:gravity">left</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:shadowColor">#24000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="quick_setting_area_title" parent="@style/AppTheme">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="ram_high_number_text" parent="@style/ram_low_number_text">
+        <item name="android:textColor">#ffed620d</item>
+    </style>
+    <style name="ram_high_percent_text" parent="@style/ram_low_percent_text">
+        <item name="android:textColor">#ffed620d</item>
+    </style>
+    <style name="ram_low_number_text" parent="@style/AppTheme">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff00a5c4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="ram_low_percent_text" parent="@style/AppTheme">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ff00a5c4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="record_setting_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/record_setting_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/record_setting_dialog_exit</item>
+    </style>
+    <style name="record_widget_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/widget_record_enter</item>
+        <item name="android:windowExitAnimation">@anim/widget_record_exit</item>
+    </style>
+    <style name="setting_action_bar_button_text" parent="@style/AppTheme">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffaff3ff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="settings_guide_description_details_style" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff505050</item>
+        <item name="android:gravity">start</item>
+        <item name="android:lineSpacingExtra">4.0dip</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="shortcut_apptitle_12_linespace_3" parent="@style/AppTheme">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:lineSpacingExtra">-2.0dip</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="switch_title_normal_19" parent="@style/AppTheme">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="tnc_activity_detail_text_color" parent="@style/AppTheme">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff505050</item>
+        <item name="android:lineSpacingExtra">4.0dip</item>
+        <item name="android:alpha">1.0</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginStart">@dimen/game_tools_description_side_padding_port</item>
+        <item name="android:layout_marginEnd">@dimen/game_tools_description_side_padding_port</item>
+    </style>
+    <style name="tnc_activity_linked_text" parent="@style/AppTheme">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff252525</item>
+        <item name="android:padding">4.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:alpha">0.9</item>
+        <item name="android:fontFamily">sec-roboto-condensed</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginStart">@dimen/game_tools_description_side_padding_port</item>
+        <item name="android:layout_marginEnd">@dimen/game_tools_description_side_padding_port</item>
+    </style>
+    <style name="tnc_activity_theme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="transparent_progress_dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="url_summary_17_linespace_4" parent="@style/AppTheme">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff545454</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="widget_dialog_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/widget_enter</item>
+        <item name="android:windowExitAnimation">@anim/widget_exit</item>
+    </style>
+    <style name="widget_show_animation" />
+</resources>
