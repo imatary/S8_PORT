@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DREAM_DEX_PHEADER_UPDATE_PS_Q">%sགསར་བརྗེས་བྱེད་དམ།</string>
+    <string name="DREAM_DEX_POP_THE_APP_WILL_CLOSE_WHEN_YOU_UPDATE_IT_SAVE_ANY_UNSAVED_DATA_BEFORE_UPDATING">更新期间该应用程序将关闭。请在开始更新之前保存任何未保存的数据。</string>
+    <string name="DREAM_DEX_TPOP_CANT_USE_PS_IN_SAMSUNG_DEX">Samsung DeXནང་%sབེད་སྤྱོད་གཏོང་མི་ཐུབ།</string>
+    <string name="DREAM_GH_BODY_ACTION_ABB">འགུལ་སྟངས།</string>
+    <string name="DREAM_GH_BODY_ADVENTURE_ABB">ཉེན་ཁར་མ་འཛེམ།</string>
+    <string name="DREAM_GH_BODY_ARCADE_ABB">རྩེད་འཁོར།</string>
+    <string name="DREAM_GH_BODY_A_GAME_IS_IN_PROGRESS">རྩེད་མོ་འགུལ་སློང་བྱེད་བཞིན་ཡོད།</string>
+    <string name="DREAM_GH_BODY_A_GAME_IS_IN_PROGRESS_NO_ALERTS_DURING_GAMES_IS_TURNED_ON">རྩེད་མོ་གཅིག་བེད་སྤྱོད་གཏོང་བཞིན་ཡོད།༼རྩེད་མོའི་ནང་དྲན་སྐུལ་ཁ་རྒྱག་པ།༽འགུལ་སློང་ཟིན།</string>
+    <string name="DREAM_GH_BODY_BATTERY_USAGE">གློག་ཚད་བེད་སྤྱོད་གཏོང་ཚུལ།</string>
+    <string name="DREAM_GH_BODY_BOARD">སྒྲོམ་ངོས་དང་མིག་མང་རིགས།</string>
+    <string name="DREAM_GH_BODY_CARD">ཤོག་བྱང་།</string>
+    <string name="DREAM_GH_BODY_CASINO_ABB">རྒྱན་འཇོག</string>
+    <string name="DREAM_GH_BODY_CASUAL_ABB">སྤྲོ་གསེང་།</string>
+    <string name="DREAM_GH_BODY_CHANGING_TO_HIGH_PERFORMANCE_WILL_IMPROVE_YOUR_GAME_PERFORMANCE">ནུས་པ་མཐོ་བར་སྒྱུར་ནས་ཁྱེད་ཀྱི་རྩེད་མོ་ཕན་ནུས་གོང་མཐོར་གཏོང་དགོས།</string>
+    <string name="DREAM_GH_BODY_CHANGING_TO_SAVE_POWER_WILL_REDUCE_YOUR_POWER_USE">གློག་བསྲི་བའི་རྣམ་པར་སྒྱུར་ནས་ཁྱེད་ཀྱི་གློག་རྫས་གྲོན་ཆུང་བྱེད་དགོས།</string>
+    <string name="DREAM_GH_BODY_CHECK_OUT_NEW_GAMES_FOR_YOUR_SAMSUNG_DEX">ཁྱེད་ཀྱི་Samsung DeXལ་འོས་འཚམ་པའི་རྩེད་མོ་གསར་པོ་བལྟ་ཞིབ་བྱས།</string>
+    <string name="DREAM_GH_BODY_CHECK_YOUR_GAMEPLAY_HISTORY_IN_MY_GAMES">༼ང་ཡི་རྩེད་མོ་༽ནང་ཁྱེད་ནས་རྩེ་བའི་རྩེད་མོའི་བྱུང་རིམ་ཟིན་ཐོ་བལྟ་ཞིབ་བྱས།</string>
+    <string name="DREAM_GH_BODY_DATA_USAGE">བཞུར་ཚད་བེད་སྤྱོད་གཏོང་ཚད།</string>
+    <string name="DREAM_GH_BODY_DONT_USE_SAVE_POWER_DURING_GAMES">རྩེད་མོ་རྩེད་སྐབས་༼གློག་བསྲི་བ་༽བེད་སྤྱོད་གཏོང་མི་ཐུབ།</string>
+    <string name="DREAM_GH_BODY_EDUCATIONAL_ABB">སློབ་གསོ།</string>
+    <string name="DREAM_GH_BODY_ENHANCE_YOUR_GAMEPLAY_EXPERIENCE_WITH_SAMSUNG_DEX">Samsung DeXསྤྱད་ནས་ཁྱེད་ཀྱི་རྩེད་མོའི་ཉམས་ལེན་བྱེད་པ།</string>
+    <string name="DREAM_GH_BODY_FAVORITE_CATEGORIES">རྒྱུན་སྤྱོད་རིགས་གྲས།</string>
+    <string name="DREAM_GH_BODY_GAMEPAD_RECOMMENDED">རྩེད་མོའི་ལག་འཇུ་བེད་སྤྱོད་གཏོང་དགོས།</string>
+    <string name="DREAM_GH_BODY_GAMEPLAY_VIDEOS_RECORDED_FROM_YOUR_PHONE">ཁྱེད་ཀྱི་ལག་ཐོག་ཁ་པར་ནས་རྩེད་མོའི་རྒྱུད་རིམ་བརྙན་ཟློས་ཕབ་འཇུག་བྱས།</string>
+    <string name="DREAM_GH_BODY_GAMES_WILL_OPEN_MUTED_YOU_CAN_CHANGE_THE_VOLUME_LATER">སྐད་མེད་ཐོག་རོལ་རྩེད་ཁ་ཕྱེ་བ།ཁྱེད་ནས་ཁ་ཕྱེ་རྗེས་སྒྲ་ཤུགས་སྒྱུར་ཐུབ།</string>
+    <string name="DREAM_GH_BODY_GAME_ICONS_ARE_SHOWN_ONLY_IN_GAME_LAUNCHER_MSG">རོལ་རྩེད་ཁོ་ནའི་ནང་རོལ་རྩེད་རྟགས་རིས་གསལ་བ།མིག་སྔར་བརྙན་ཡོལ་མ་ངོས་དང་ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ནང་གསལ་བའི་རྩེད་མོ་རྟགས་རིས་སྦས་ཟིན།གལ་སྲིད་སྒྲིག་འགོད་འདི་སྒྱུར་དགོས་ཚེ།རྩེད་མོ་ལྟེ་གནས་སྒྲིག་འགོད་ནང་ཞུགས་དགོས།</string>
+    <string name="DREAM_GH_BODY_GAME_ICONS_WILL_BE_SHOWN_ONLY_IN_GAME_LAUNCHER_MSG">རོལ་རྩེད་ཁོ་ནའི་ནང་རོལ་རྩེད་རྟགས་རིས་གསལ་བ།བརྙན་ཡོལ་མ་ངོས་དང་ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ནང་མིག་སྔར་གསལ་བའི་རྩེད་མོ་རྟགས་རིས་སྦས་པ།ཁྱེད་ནས་རོལ་རྩེད་ལྟེ་གནས་སྒྲིག་འགོད་ནང་དུ་འདེམས་ག་འདི་སྒྱུར་ཆོག།</string>
+    <string name="DREAM_GH_BODY_GAME_TOOLS">རྩེད་མོའི་ལག་ཆ།</string>
+    <string name="DREAM_GH_BODY_GAME_TOOLS_KEEPS_ALL_YOUR_GAMES_IN_ONE_PLACE">རྩེད་མོའི་ལག་ཆ་ཡིས་ཁྱེད་ཀྱི་རྩེད་མོ་ཚང་མ་བསྡུ་རུབ་བྱེད་སྲིད།</string>
+    <string name="DREAM_GH_BODY_HERE_YOU_CAN_SEE_YOUR_MOST_PLAYED_GAMES_RECOMMENDED_GAMES_AND_GAME_CATEGORIES">ཁྱེད་ནས་འདི་གར་རྟག་ཏུ་རྩེ་བའི་རྩེད་མོ་དང་ངོས་སྦྱོར་བྱས་པའི་རྩེད་མོ་དང་རྩེད་མོ་རིགས་གྲས་མཐོང་ཐུབ།</string>
+    <string name="DREAM_GH_BODY_IF_YOU_WANT_ACCESS_TO_HANDY_GAMING_FEATURES_PRESS_AND_HOLD_THE_ICON_THEN_SELECT_LIST_AS_GAME">གལ་སྲིད་ཁྱེད་ནས་སྟབས་བདེ་བའི་རྩེད་མོ་ཕན་ནུས་གང་མང་སྤྱད་འདོད་ཚེ།རྟགས་རིས་རྒྱུན་རིང་མནན་དགོས།དེ་རྗེས་༼རྩེད་མོ་གྲས་སུ་སྒྲིག་༽བརྡེབས་དགོས།</string>
+    <string name="DREAM_GH_BODY_INSTALLED_APPS_WILL_APPEAR_HERE">སྒྲིག་འཇུག་བྱས་ཟིན་པའི་ཉེར་སྤྱོད་བྱ་རིམ་འདི་གར་གསལ་སྲིད།</string>
+    <string name="DREAM_GH_BODY_INSTALLED_GAMES_WILL_APPEAR_HERE">སྒྲིག་འཇུག་བྱས་ཟིན་པའི་རྩེད་མོ་འདི་གར་གསལ་སྲིད།</string>
+    <string name="DREAM_GH_BODY_I_AGREE_TO_ALL">དོན་ཚན་ཚང་མར་ང་མོས་མཐུན་ཡོད།</string>
+    <string name="DREAM_GH_BODY_LOCK_EDGE_TOUCH_PREVENTS_ACCIDENTAL_PHONE_EDGE_CONTACT_DURING_GAMEPLAY_MSG">གཞོགས་ཡོལ་རེག་ཐུག་བསྡམ་སྒྲིག་བྱས་ནས་རྩེད་མོ་རྩེད་སྐབས་ལག་ཐོག་ཁ་པར་གཞོགས་ཡོལ་སྣང་མེད་རེག་ཐུག་འགོག་ཐུབ།ཁྱེད་ནས་རྩེད་མོའི་ལག་ཆའི་ནང་སྒྲིག་འགོད་འདི་སྒྱུར་ཆོག།</string>
+    <string name="DREAM_GH_BODY_LOCK_RECENT_AND_BACK_BUTTONS">ཉེ་དུས་བེད་སྤྱོད་བྱེད་པའི་མཐེབ་གནོན་དང་ཕྱིར་ལྡོག་མཐེབ་གནོན་བསྡམ་སྒྲིག་བྱེད་པ།</string>
+    <string name="DREAM_GH_BODY_LOCK_RECENT_AND_BACK_KEYS">ཉེ་དུས་བེད་སྤྱོད་བྱས་པའི་མཐེབ་དང་ཕྱིར་ལོག་མཐེབ་བསྡམ་སྒྲིག་བྱེད་པ།</string>
+    <string name="DREAM_GH_BODY_LOW_RESOLUTION_FRAME_RATE_P1SD_P2SS">འབྱེད་ཚད་དམའ་བ།གཞི་པར་གྲངས་ཚད་%1$d %2$s</string>
+    <string name="DREAM_GH_BODY_MUSIC">རོལ་མོ་</string>
+    <string name="DREAM_GH_BODY_MY_INSTALLED_GAMES">ངས་སྒྲིག་འཇུག་བྱས་པའི་རྩེད་མོ།</string>
+    <string name="DREAM_GH_BODY_NORMAL_RESOLUTION_FRAME_RATE_P1SD_P2SS">ཚད་མཐུན་འབྱེད་ཚད།གཞི་པར་གྲངས་ཚད་%1$d %2$s</string>
+    <string name="DREAM_GH_BODY_NO_ALERTS_DURING_GAME">རྩེད་མོའི་ནང་དྲན་སྐུལ་མི་གསལ་བ།</string>
+    <string name="DREAM_GH_BODY_NO_ALERTS_DURING_GAME_TURNED_ON">༼རྩེད་མོའི་ནང་དྲན་སྐུལ་མི་གསལ་བ།༽འགུལ་སློང་ཟིན།</string>
+    <string name="DREAM_GH_BODY_NO_ALERTS_WHILE_USING_APP_IS_ON">༼ཉེར་སྤྱོད་བྱ་རིམ་བེད་སྤྱོད་གཏོང་སྐབས་སུན་པོ་མི་བཟོ་བ།༽ཁ་ཕྱེ་ཟིན།</string>
+    <string name="DREAM_GH_BODY_OTHER">གཞན།</string>
+    <string name="DREAM_GH_BODY_PD_NGAMES_NPLAYED_N">"གྲངས་%d
+རྩེད་མྱོང་བའི་རྩེད་མོ་
+རྩེད་མོ་
+"</string>
+    <string name="DREAM_GH_BODY_PD_TIMES_ABB">ཐེངས་%d</string>
+    <string name="DREAM_GH_BODY_PERFORMANCE_TUNING_ADJUSTS_THE_PERFORMANCE_OF_THE_GAME_MSG">ཕན་ནུས་ལེགས་སྒྲིག་ལས་རྩེད་མོའི་ཕན་ནུས་སྒྲིག་ཐུབ།༼ཕན་ནུས་མཐོ་བ་༽འདེམས་ནས་ཕན་ནུས་མཐོར་གཏོང་ཐུབ།ཡིན་ནའང་གློག་ཚད་ཟད་གྲོན་མང་དུ་འགྲོ་སྲིད།༼གློག་བསྲི་བ་༽འདེམས་ནས་གློག་ཚད་བསྲི་ཐུབ་ཡང་ཕན་ནུས་དམའ་རུ་འགྲོ་སྲིད།</string>
+    <string name="DREAM_GH_BODY_PLAYERS_ABB">རྩེད་མཁན།</string>
+    <string name="DREAM_GH_BODY_PLAY_TIME">རྩེད་དུས།</string>
+    <string name="DREAM_GH_BODY_PLAY_TIME_ABB">རྩེད་མོའི་དུས་ཚོད།</string>
+    <string name="DREAM_GH_BODY_PRESSURE_TOUCH_LOCK_PREVENTS_ACCIDENTAL_SCREEN_CONTACT_DURING_GAMEPLAY_MSG">གནོན་ཤུགས་རེག་ཐུག་ལས་རྩེད་མོ་རྩེད་སྐབས་བརྙན་ཡོལ་སྣང་མེད་རེག་ཐུག་ཡོང་རྒྱུ་འགོག་ཐུབ།ཁྱེད་ནས་རྩེད་མོའི་ལག་ཆའི་ནང་སྒྲིག་འགོད་འདི་སྒྱུར་ཆོག།</string>
+    <string name="DREAM_GH_BODY_PRESS_AND_HOLD_THEN_TAP_GAME_DETAILS_TO_SEE_GAME_INFORMATION">གལ་སྲིད་རྩེད་མོ་ཆ་འཕྲིན་བལྟ་ཞིབ་བྱས་ཚེ།རྒྱུན་རིང་མནན་དགོས།དེ་རྗེས་༼རྩེད་མོའི་ཞིབ་ཆ་༽བརྡེབས་དགོས།</string>
+    <string name="DREAM_GH_BODY_PUZZLE_ABB">རིག་པར་ཕན།</string>
+    <string name="DREAM_GH_BODY_RACING_ABB">མྱུར་ཚད་འགྲན་སྡུར།</string>
+    <string name="DREAM_GH_BODY_RECEIVED_ANNOUNCEMENTS_WILL_APPEAR_HERE">འབྱོར་བའི་སྤྱི་བསྒྲགས་འདི་གར་གསལ་སྲིད།</string>
+    <string name="DREAM_GH_BODY_RECORD">ཕབ་འཇུག</string>
+    <string name="DREAM_GH_BODY_ROLE_PLAYING_ABB">འཁྲབ་གཞི་འཁྲབ་མཁན།</string>
+    <string name="DREAM_GH_BODY_SAVE_POWER_ABB">གློག་བསྲི་བ།</string>
+    <string name="DREAM_GH_BODY_SAVE_POWER_REDUCES_POWER_USE_DURING_GAMES_BUT_CAN_ALSO_LOWER_GAME_PERFORMANCE">༼གློག་བསྲི་བ་༽རྩེད་མོའི་སྐབས་སུ་གྱི་གློག་ཟད་གཏོང་ཚད་ཉུང་དུ་གཏོང་སྲིད།ཡིན་ནའང་དུས་མཚུངས་རྩེད་མོའི་ཕན་ནུས་དམའ་རུ་གཏོང་སྲིད།</string>
+    <string name="DREAM_GH_BODY_SCREENSHOT">བརྙན་ཡོལ་དྲས་རིས་</string>
+    <string name="DREAM_GH_BODY_SCREEN_TOUCH_LOCK">བརྙན་ཡོལ་རེག་ཐུག་བསྡམ་སྒྲིག།</string>
+    <string name="DREAM_GH_BODY_SEE_THE_CURRENT_APP_VERSION_AND_LEGAL_INFORMATION">མིག་སྔའི་ཉེར་སྤྱོད་བྱ་རིམ་པར་གཞི་དང་ཁྲིམས་ལུགས་ཆ་འཕྲིན་བལྟ་ཞིབ་བྱ་དགོས།</string>
+    <string name="DREAM_GH_BODY_SELECT_APPS_TO_ADD_TO_PS">%sཐོག་སྣོན་འཇུག་བྱེད་དགོས་པའི་ཉེར་སྤྱོད་བྱ་རིམ་འདེམས་དགོས།</string>
+    <string name="DREAM_GH_BODY_SELECT_THE_FUNCTION_YOU_WANT_TO_ASSIGN_TO_THE_SHORTCUT_MSG">མྱུར་མགྱོགས་འགྲོས་ཐབས་ལ་འགོས་སྒྲིག་བྱེད་པའི་ཕན་ནུས་འདེམས་དགོས།ཁྱེད་ནས་མྱུར་མགྱོགས་འགྲོས་ཐབས་རྒྱུན་རིང་མནན་ནས་དེའི་ཕན་ནུས་སྒྱུར་ཐུབ།</string>
+    <string name="DREAM_GH_BODY_SIMULATION_ABB">དཔེ་ཟླ།</string>
+    <string name="DREAM_GH_BODY_SPORTS_ABB">ལུས་རྩལ།</string>
+    <string name="DREAM_GH_BODY_STRATEGY_ABB">ཐབས་ཇུས།</string>
+    <string name="DREAM_GH_BODY_TAP_TO_STOP_RECORDING">བརྡེབས་གནོན་བྱས་ནས་ཕབ་འཇུག་མཚམས་འཇོག་བྱེད་ཐུབ།</string>
+    <string name="DREAM_GH_BODY_THESE_TERMS_AND_CONDITIONS_APPLY_TO_GAME_LAUNCHER_AND_GAME_TOOLS">དོན་ཚན་དང་ཆ་རྐྱེན་འདི་དག་རྩེད་མོ་ལྟེ་གནས་དང་རྩེད་མོའི་ལག་ཆར་མཁོ།</string>
+    <string name="DREAM_GH_BODY_THE_GAME_TOOLS_BUTTON_LETS_YOU_C">རྩེད་མོའི་ལག་ཆ་མཐེབ་གནོན་ནས་གཤམ་གྱི་བཀོལ་སྤྱོད་ལེན་བྱེད་ཆོག།</string>
+    <string name="DREAM_GH_BODY_THE_GAME_VOLUME_WILL_BE_MUTED_MSG">རྩེད་མོ་སྒྲ་ཤུགས་སྐད་མེད་བཏང་སྲིད།ཡིན་ནའང་ཁྱེད་ཀྱི་ལག་ཐོག་ཁ་པར་སྒྲ་ཤུགས་སྒྱུར་མི་སྲིད།གལ་སྲིད་༼རྩེད་མོ་སྐད་མེད་༽ཁ་རྒྱག་ཚེ།རྩེད་མོ་རྩ་བའི་སྐབས་སུ་སྒྲ་ཤུགས་མཐེབ་མནན་དགོས།</string>
+    <string name="DREAM_GH_BODY_THE_HARD_PRESS_BUTTON_LOCK_PREVENTS_ACCIDENTAL_SCREEN_CONTACT_DURING_GAMEPLAY_MSG">༼ཤུགས་ཀྱི་མནན་ནས་བསྡམ་སྒྲིག་བྱས།༽ལས་རྩེད་མོ་རྩེ་བའི་རིང་སྣང་བ་མེད་པར་བརྙན་ཡོལ་རེག་ཐུག་བྱེད་པ་འགོག་ཐུབ།ཁྱེད་ནས་རྩེད་མོའི་ལག་ཆའི་ནང་སྒྲིག་འགོད་འདི་སྒྱུར་ཆོག།</string>
+    <string name="DREAM_GH_BODY_THE_HARD_PRESS_HOME_BUTTON_LOCK_PREVENTS_ACCIDENTAL_SCREEN_CONTACT_DURING_GAMEPLAY_YOU_CAN_TURN_THIS_ON_OR_OFF_IN_GAME_TOOLS">༼གནོན་ཤུགས་ལྟོས་འབྱུང་སྒྲོག༽ཡིས་རོལ་རྩེད་བྱེད་སྐབས་བསམ་ཡུལ་ལས་འདས་པས་འཆར་ཡོལ་ལ་རེག་པ་ཟློག ཁྱེད་ཀྱིས་རོལ་རྩེད་ཡོ་ཆས་ནང་དུ་སྒྲིག་འགོད་ཀྱི་སྒུལ་སློང་བའམ་སྒོ་སྟེམ་ཆོག</string>
+    <string name="DREAM_GH_BODY_THE_LATEST_VERSION_IS_INSTALLED">པར་གཞི་གསར་ཤོས་སྒྲིག་འཇུག་བྱས་ཟིན།</string>
+    <string name="DREAM_GH_BODY_THE_MAXIMUM_RECORDING_FILE_SIZE_IS_4_GB_MSG">ཕབ་འཇུག་བྱས་པའི་ཡིག་ཆའི་ཆེ་ཆུང་ཚད་དེ་4 GBཡིན།སྤུས་ཚད་ཡག་པོ་སྒྲིག་པའི་གནས་ཚུལ་འོག།ཁྱེད་ནས་དུས་ཡུན་སྐར་མ་80གྱི་བརྙན་ཟློས་ཕབ་འཇུག་བྱེད་ཐུབ།གལ་སྲིད་དུས་ཡུན་རིང་དུ་གཏོང་དགོས་ཚེ།བརྙན་ཟློས་འབྱེད་ཚད་དང་པི་ཐ་སྡུར་ཚད་བཅག་དགོས།</string>
+    <string name="DREAM_GH_BODY_THE_NAVIGATION_BAR_DOESNT_AUTO_HIDE_DURING_GAMES_THIS_ISNT_RECOMMENDED_WITH_FULL_SCREEN_MODE">ཕྱོགས་སྟོན་གསལ་བྱང་རྩེད་མོའི་སྐབས་རང་འགུལ་གྱི་སྦས་མི་སྲིད།ཡོལ་ཡོངས་རྣམ་པའི་འོག་ཕན་ནུས་འདི་ཁ་མ་ཕྱེ་ན་ལེགས།</string>
+    <string name="DREAM_GH_BODY_TIMES_PER_DAY_ABB">ཉིན་རེའི་ཐེངས་གྲངས།</string>
+    <string name="DREAM_GH_BODY_TIP_C_PRESS_AND_HOLD_THE_SHORTCUT_OR_CHANGE_THE_SHORTCUT_IN_GAME_TOOLS_SETTINGS">དྲན་སྐུལ།མྱུར་མགྱོགས་འགྲོས་ཐབས་རྒྱུན་རིང་མནན་པའམ་རྩེད་མོ་ལག་ཆ་སྒྲིག་འགོད་ནང་མྱུར་མགྱོགས་འགྲོས་ཐབས་སྒྱུར་བ།</string>
+    <string name="DREAM_GH_BODY_TOTAL">སྤྱི་སྡོམ།</string>
+    <string name="DREAM_GH_BODY_TO_HIDE_THE_GAME_TOOLS_ICON_DRAG_IT_TO_THE_TOP_OF_THE_SCREEN">གལ་ཏེ་༼Game Tools༽རྟགས་རིས་སྦས་ཚེ།དེ་ཉིད་བརྙན་ཡོལ་གོང་ཐོད་དུ་འདྲུད་དགོས།</string>
+    <string name="DREAM_GH_BODY_TO_RECORD_GAMEPLAY_VIDEOS_ENABLE_GAME_LAUNCHER">གལ་སྲིད་རྩེད་མོ་བརྙན་ཟློས་ཕབ་འཇུག་བྱས་ཚེ།རྩེད་མོ་ལྟེ་གནས་ཁ་ཕྱེ་དགོས།</string>
+    <string name="DREAM_GH_BODY_TO_STOP_RECORDING_MSG">གལ་སྲིད་ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཚེ།ཕྱོགས་སྟོན་གསལ་བྱང་ནང་གི་༼མཚམས་འཇོག་༽མཐེབ་གཞོང་བརྡེབས་དགོས།ཁྱེད་ནས་མྱུར་མགྱོགས་ངོས་པང་ཐོག་མཚམས་འཇོག་བརྡེབས་དགོས།</string>
+    <string name="DREAM_GH_BODY_TO_STOP_RECORDING_TAP_THE_STOP_BUTTON_ON_THE_NAVIGATION_BAR">གལ་སྲིད་ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཚེ།ཕྱོགས་སྟོན་གསལ་བྱང་ཐོག་གི་མཚམས་འཇོག་མཐེབ་གནོན་བརྡེབས་དགོས།</string>
+    <string name="DREAM_GH_BODY_TRIVIA_ABB">ཤེས་བྱའི་དྲི་བ་དྲིས་ལན།</string>
+    <string name="DREAM_GH_BODY_TRY_OUT_USEFUL_FEATURES_SUCH_AS_SAVE_POWER_OPEN_MUTED_AND_GAME_TOOLS">༼གློག་བསྲིབ་བ་༽དང་༼སྐད་མེད་ཐོག་རོལ་རྩེད་ཁ་ཕྱེ་བ།༽དང་༼རྩེད་མོ་ལག་ཆ་༽སོགས་པའི་དངོས་སྤྱོད་ཀྱི་ཕན་ནུས་ཚོད་ལྟ་བྱེད་དགོས།</string>
+    <string name="DREAM_GH_BODY_USE_A_LOWER_RESOLUTION_AND_FRAME_RATE_TO_SAVE_BATTERY_LIFE">འབྱེད་ཚད་དང་གཞི་པར་གྲངས་ཅུང་དམའ་བ་བེད་སྤྱོད་བཏང་ནས་གློག་རྫས་བེད་སྤྱོད་གཏོང་ཡུན་རིང་དུ་བཏང་ཐུབ།</string>
+    <string name="DREAM_GH_BODY_USE_A_LOWER_RESOLUTION_TO_SAVE_BATTERY_LIFE">འབྱེད་ཚད་དམའ་རུ་བཏང་ནས་གློག་རྫས་བེད་སྤྱོད་གཏོང་ཡུན་རིང་དུ་གཏོང་ཐུབ།</string>
+    <string name="DREAM_GH_BODY_VIDEOS_RECORDED_USING_GAME_TOOLS_WILL_APPEAR_HERE">རྩེད་མོ་ལག་ཆ་བེད་སྤྱད་ནས་ཕབ་འཇུག་བྱས་པའི་བརྙན་ཟློས་འདི་གར་གསལ་སྲིད།</string>
+    <string name="DREAM_GH_BODY_WORD">ཡི་གེ།</string>
+    <string name="DREAM_GH_BODY_YOU_CAN_SET_THE_NAVIGATION_BAR_SO_ITS_ALWAYS_DISPLAYED">ཁྱེད་ནས་ཕྱོགས་སྟོན་གསལ་བྱང་རྟག་ཏུ་གསལ་རྒྱུར་སྒྲིག་ཆོག</string>
+    <string name="DREAM_GH_BODY_YOU_PLAYED">ཁྱེད་ནས་རྩེད་མྱོང་།</string>
+    <string name="DREAM_GH_BUTTON_ADD_APPS_20">ཉེར་སྤྱོད་དག་སྣོན།</string>
+    <string name="DREAM_GH_BUTTON_AGREE_9">མོས་མཐུན།</string>
+    <string name="DREAM_GH_BUTTON_CONTINUE_15">འཕྲོ་རྐྱང</string>
+    <string name="DREAM_GH_BUTTON_DISAGREE_9">མོས་མཐུན་མེད།</string>
+    <string name="DREAM_GH_BUTTON_DISMISS_8">གསང་འགྲོལ།</string>
+    <string name="DREAM_GH_BUTTON_DOWNLOADING_ING_14">ཕབ་ལེན་བྱེད་བཞིན་པ།</string>
+    <string name="DREAM_GH_BUTTON_DOWNLOAD_10">ཕབ་ལེན།</string>
+    <string name="DREAM_GH_BUTTON_ENABLE_8">འགུལ་སློང་།</string>
+    <string name="DREAM_GH_BUTTON_FIND_GAMES_22">རྩེད་མོ་འཚོལ་བ།</string>
+    <string name="DREAM_GH_BUTTON_GAME_TOOLS_22">རྩེད་མོའི་ལག་ཆ།</string>
+    <string name="DREAM_GH_BUTTON_GO_TO_SETTINGS_15">སྒྲིག་འགོད་ནང་ཞུགས་པ།</string>
+    <string name="DREAM_GH_BUTTON_HARD_PRESS_HOME_BUTTON_25">བརྙན་ཡོལ་མ་ངོས་མཐེབ་གནོན་ཤུགས་ཀྱི་མནན་པ།</string>
+    <string name="DREAM_GH_BUTTON_HIDE_31">སྦས་པ།</string>
+    <string name="DREAM_GH_BUTTON_HIGH_PERFORMANCE_22">ནུས་པ་མཐོ་བ།</string>
+    <string name="DREAM_GH_BUTTON_INSTALLING_ING_14">སྒྲིག་འཇུག་བྱེད་བཞིན་པ།</string>
+    <string name="DREAM_GH_BUTTON_MUTE_GAME_22">རྩེད་མོ་སྐད་མེད།</string>
+    <string name="DREAM_GH_BUTTON_NEXT_9">རྗེས་མ།</string>
+    <string name="DREAM_GH_BUTTON_NORMAL_PERFORMANCE_22">སྤྱིར་བཏང་ཕན་ནུས།</string>
+    <string name="DREAM_GH_BUTTON_OK_8">གཏན་འཁེལ།</string>
+    <string name="DREAM_GH_BUTTON_OPEN_MUTED_24">སྐད་མེད་ཐོག་རོལ་རྩེད་ཁ་ཕྱེ་བ།</string>
+    <string name="DREAM_GH_BUTTON_RESET_8">བསྐྱར་སྒྲིག</string>
+    <string name="DREAM_GH_BUTTON_RESTART_22">བསྐྱར་དུ་ཁ་ཕྱེ།</string>
+    <string name="DREAM_GH_BUTTON_RESTART_8">བསྐྱར་དུ་ཁ་ཕྱེ།</string>
+    <string name="DREAM_GH_BUTTON_SAVE_POWER_22">གློག་བསྲི་བ།</string>
+    <string name="DREAM_GH_BUTTON_SCREEN_TOUCH_LOCK_22">བརྙན་ཡོལ་རེག་ཐུག་བསྡམ་སྒྲིག།</string>
+    <string name="DREAM_GH_BUTTON_SETTINGS_22">སྒྲིག་འགོད།</string>
+    <string name="DREAM_GH_HEADER_ANNOUNCEMENTS">སྤྱི་བསྒྲགས།</string>
+    <string name="DREAM_GH_HEADER_GAMES">རྩེད་མོ།</string>
+    <string name="DREAM_GH_HEADER_GAME_TOOLS">རྩེད་མོའི་ལག་ཆ།</string>
+    <string name="DREAM_GH_HEADER_KEEP_NAVIGATION_BAR">ཕྱོགས་སྟོན་གསལ་བྱང་།</string>
+    <string name="DREAM_GH_HEADER_OPEN_MUTED">སྐད་མེད་ཐོག་རོལ་རྩེད་ཁ་ཕྱེ་བ།</string>
+    <string name="DREAM_GH_HEADER_OTHER">གཞན་པ།</string>
+    <string name="DREAM_GH_HEADER_OTHER_APPS">ཉེར་སྤྱོད་བྱ་རིམ་གཞན།</string>
+    <string name="DREAM_GH_HEADER_PRESSURE_TOUCH_LOCK">གནོན་ཤུགས་རེག་ཐུག་བསྡམ་སྒྲིག་བྱས།</string>
+    <string name="DREAM_GH_HEADER_RECOMMENDED_GAMES_FOR_SAMSUNG_DEX">Samsung DeXནས་ངོས་སྦྱོར་བྱས་པའི་རྩེད་མོ།</string>
+    <string name="DREAM_GH_HEADER_RECORD">ཕབ་འཇུག</string>
+    <string name="DREAM_GH_HEADER_SHARE_VIA">མཉམ་སྤྱོད་བྱ་ཐབས།</string>
+    <string name="DREAM_GH_HEADER_SHORTCUTS">མྱུར་མགྱོགས་འགྲོས་ཐབས།</string>
+    <string name="DREAM_GH_HEADER_TERMS_AND_CONDITIONS">དོན་ཚན་དང་ཆ་རྐྱེན།</string>
+    <string name="DREAM_GH_HEADER_TOUCH_LOCK">རེག་ཐུག་བསྡམ་སྒྲིག་བྱས།</string>
+    <string name="DREAM_GH_HEADER_TUNE_PERFORMANCE">ཕན་ནུས་ལེགས་སྒྲིག</string>
+    <string name="DREAM_GH_NPBODY_NO_APPS">ཉེར་སྤྱོད་བྱ་རིམ་མེད།</string>
+    <string name="DREAM_GH_NPBODY_NO_DATA_COLLECTED">གཞི་གྲངས་བསྡུས་མེད།</string>
+    <string name="DREAM_GH_NPBODY_NO_GAMES_AVAILABLE">རྩེད་མོ་མེད་པ།</string>
+    <string name="DREAM_GH_NPBODY_VERY_LOW_RESOLUTION_FRAME_RATE_P1SD_P2SS">འབྱེད་ཚད་ཧ་ཅང་དམའ།གཞི་པར་ཚད་%1$d %2$s</string>
+    <string name="DREAM_GH_OPT_1080_PX">1080འབྱེད་ཚད།</string>
+    <string name="DREAM_GH_OPT_360_PX">360འབྱེད་ཚད།</string>
+    <string name="DREAM_GH_OPT_480_PX">480འབྱེད་ཚད།</string>
+    <string name="DREAM_GH_OPT_540_PX">540འབྱེད་ཚད།</string>
+    <string name="DREAM_GH_OPT_720_PX">720འབྱེད་ཚད།</string>
+    <string name="DREAM_GH_OPT_ADD_TO_HOME_ABB">བརྙན་ཡོལ་མ་ངོས་ཐོག་སྣོན་འཇུག་བྱས།</string>
+    <string name="DREAM_GH_OPT_ALL_ABB2">ཆ་ཚང་།</string>
+    <string name="DREAM_GH_OPT_ANNOUNCEMENTS_ABB">སྤྱི་བསྒྲགས།</string>
+    <string name="DREAM_GH_OPT_ANNOUNCEMENTS_ABB2">སྤྱི་བསྒྲགས།</string>
+    <string name="DREAM_GH_OPT_CAMERA">པར་ཆས་</string>
+    <string name="DREAM_GH_OPT_DISPLAY_GAME_ICONS_IN_APPS_AND_GAME_LAUNCHER_ABB">ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་དང་རྩེད་མོ་ལྟེ་གནས་ནང་རྩེད་མོ་རྟགས་རིས་གསལ་བ།</string>
+    <string name="DREAM_GH_OPT_GAME_ABB">རྩེད་མོ།</string>
+    <string name="DREAM_GH_OPT_GAME_DETAILS_ABB">རྩེད་མོ་ཞིབ་ཕྲའི་ཆ་འཕྲིན་</string>
+    <string name="DREAM_GH_OPT_HERE_YOU_CAN_FIND_THE_MOST_PLAYED_GAMES_AND_RECOMMENDED_GAMES_BASED_ON_GALAXY_USERS_GAME_PLAY_DATA">ཁྱེད་ནས་འདིར་Galaxyསྤྱོད་མཁན་གྱིས་རྟག་ཏུ་རྩེད་པའི་རྩེད་མོ་དེ་བཞིན་གཞི་གྲངས་འདི་ལྟར་ཁྱེད་ལ་ངོས་སྦྱོར་བྱས་པའི་རྩེད་མོ་རྙེད་ཐུབ།</string>
+    <string name="DREAM_GH_OPT_I_AGREE_TO_RECEIVE_MARKETING_INFORMATION">ཚོང་གཉེར་ཆ་འཕྲིན་བསྡུ་ལེན་བྱེད་པར་ང་མོས་མཐུན་ཡོད།</string>
+    <string name="DREAM_GH_OPT_I_AGREE_TO_RECEIVE_MARKETING_INFORMATION_HOPTIONAL">ངས་ཚོང་གཉེར་ཆ་འཕྲིན་འདི་ལེན་པར་མོས་མཐུན་ཡོད།(འདེམས་ག)</string>
+    <string name="DREAM_GH_OPT_I_HAVE_READ_AND_AGREE_TO_ALL_THE_TERMS_AND_CONDITIONS_ABOVE">ངས་དོན་ཚན་དང་ཆ་རྐྱེན་ཚང་མ་ཀློག་འདོན་ཟིན་པ་དང་མོས་མཐུན་ཡོད།</string>
+    <string name="DREAM_GH_OPT_I_HAVE_READ_AND_AGREE_TO_THE_TERMS_OF_SERVICE_PRIVACY_POLICY_AND_RUNTIME_PERMISSION_ABOVE">ཁྱེད་ནས་གོང་གི་ཞབས་ཞུ་དོན་ཚན་དང་གསང་བའི་ཐབས་ཇུས་དང་འགུལ་སྐྱོད་དབང་ཚད་ཁག་ལ་མོས་མཐུན་བྱས་ཟིན།</string>
+    <string name="DREAM_GH_OPT_LAST_30_DAYS_ABB2">འདས་པའི་ཉིན་30</string>
+    <string name="DREAM_GH_OPT_LAST_WEEK">གཟའ་འཁོར་གོང་མ།</string>
+    <string name="DREAM_GH_OPT_LAST_WEEK_ABB">གཟའ་འཁོར་གོང་མ།</string>
+    <string name="DREAM_GH_OPT_LIST_AS_GAME_ABB">རྩེད་མོར་སྒྲིག་པ།</string>
+    <string name="DREAM_GH_OPT_LIST_AS_OTHER_APP_ABB">ཉེར་སྤྱོད་བྱ་རིམ་གཞན་ལ་སྒྲིག་པ།</string>
+    <string name="DREAM_GH_OPT_MY_DIARY_ABB">ང་ཡི་ཉིན་ཐོ།</string>
+    <string name="DREAM_GH_OPT_MY_GAMES_ABB">ང་ཡི་རྩེད་མོ།</string>
+    <string name="DREAM_GH_OPT_NO_APPS_AVAILABLE_ABB">སྤྱོད་ཆོག་པའི་ཉེར་སྤྱོད་བྱ་རིམ་མེད་པ།</string>
+    <string name="DREAM_GH_OPT_OPEN_SOURCE_LICENSES_ABB">འབྱུང་ཁུངས་ཆོག་མཆན་ལག་ཁྱེར།</string>
+    <string name="DREAM_GH_OPT_RECORD_ABB">ཕབ་འཇུག</string>
+    <string name="DREAM_GH_OPT_SCREENSHOT_ABB">བརྙན་ཡོལ་དྲས་རིས་</string>
+    <string name="DREAM_GH_OPT_SCREEN_TOUCH_LOCK_ABB">བརྙན་ཡོལ་རེག་ཐུག་བསྡམ་སྒྲིག།</string>
+    <string name="DREAM_GH_OPT_SELECT_IMAGE_ABB">པར་རིས་འདེམས་པ།</string>
+    <string name="DREAM_GH_OPT_TERMS_AND_CONDITIONS">དོན་ཚན་དང་ཆ་རྐྱེན།</string>
+    <string name="DREAM_GH_OPT_USE_DEFAULT_ABB">སོར་བཞག་སྒྲིག་འགོད་སྤྱད་པ།</string>
+    <string name="DREAM_GH_PHEADER_ENABLE_GAME_LAUNCHER_Q">རྩེད་མོ་ལྟེ་གནས་འགུལ་སློང་བྱེད་དམ།</string>
+    <string name="DREAM_GH_PHEADER_RESTART_GAME_Q">རྩེད་མོ་བསྐྱར་དུ་ཁ་ཕྱེའམ།</string>
+    <string name="DREAM_GH_PHEADER_SELECT_SHORTCUT">མྱུར་མགྱོགས་འགྲོས་ཐབས་འདེམས་དགོས།</string>
+    <string name="DREAM_GH_PHEADER_SHOW_GAME_TOOLS_Q">རྩེད་མོ་ལག་ཆ་གསལ་ལམ།</string>
+    <string name="DREAM_GH_PHEADER_VIEW_FULL_SCREEN_Q">ཡོལ་ཡོངས་ལྟ་ཞིབ་བྱེད་དམ།</string>
+    <string name="DREAM_GH_POP_ADDING_APP_ING">ཉེར་སྤྱོད་བྱ་རིམ་སྣོན་འཇུག་བྱེད་བཞིན་ཡོད།</string>
+    <string name="DREAM_GH_POP_CANT_SAVE_POWER_WHILE_PLAYING_A_GAME_IN_HD">གསལ་དྭངས་རྣམ་པའི་འོག་རྩེད་མོ་རྩེ་སྐབས་གློག་བསྲི་མི་ཐུབ།</string>
+    <string name="DREAM_GH_POP_CHANGE_THE_APPS_THAT_CAN_APPEAR_ON_TOP">གོང་ཐོད་དུ་འཆར་ཐུབ་པའི་ཉེར་སྤྱོད་བྱ་རིམ་སྒྲིག་སྒྱུར་བྱེད་དགོས།</string>
+    <string name="DREAM_GH_POP_CLEAR_PS_HISTORY_Q">%sགྱི་ལོ་རྒྱུས་ཟིན་ཐོ་གཙང་དོར་བྱེད་དམ།</string>
+    <string name="DREAM_GH_POP_DELETE_PD_VIDEOS_Q">རྣམ་གྲངས་ %d སུབ་པ།</string>
+    <string name="DREAM_GH_POP_DELETE_PS_HISTORY_Q">%sགྱི་ལོ་རྒྱུས་ཟིན་ཐོ་སུབ་བམ།</string>
+    <string name="DREAM_GH_POP_DELETE_VIDEO_Q">བརྙན་ཟློས་སུབ་པ།</string>
+    <string name="DREAM_GH_POP_DRAG_THE_GAME_TOOLS_ICON_TO_THE_DESIRED_LOCATION_ON_THE_LEFT_OR_RIGHT_SIDE_OF_THE_SCREEN">༼Game Tools༽རྟགས་རིས་བརྙན་ཡོལ་གཡོན་ནམ་གཡས་ཀྱི་དགོས་པའི་གནས་ཡུལ་ཐོག་འདྲུད་དགོས།</string>
+    <string name="DREAM_GH_POP_ENABLE_GAME_TOOLS_Q">རྩེད་མོ་ལག་ཆ་ཁ་ཕྱེའམ།</string>
+    <string name="DREAM_GH_POP_FILE_SIZE_C_PD_MB_MSG">"ཡིག་ཆ་ཆེ་ཆུང་།%d MB
+
+ཁྱེད་ནས་Wi-Fiབརྒྱུད་ཕབ་ལེན་བྱེད་དགོས།ཁྱེད་ཀྱི་འགུལ་གཏོང་དྲ་བ་བེད་སྤྱོད་བཏང་ཚེ་གྲོན་དངུལ་འཕར་མ་ཐོབ་སྲིད།"</string>
+    <string name="DREAM_GH_POP_GAME_ICONS_WILL_DISPLAY_IN_GAME_LAUNCHER_ONLY_YOU_CAN_CHANGE_THIS_OPTION_IN_GAME_LAUNCHER_SETTINGS">རྩེད་མོའི་རྟགས་རིས་རྩེད་མོ་ལྟེ་གནས་ཁོ་ནའི་ནང་གསལ་ཐུབ།ཁྱེད་ནས་རོལ་རྩེད་ལྟེ་གནས་སྒྲིག་འགོད་ནང་དུ་འདེམས་ག་འདི་སྒྱར་ཆོག།</string>
+    <string name="DREAM_GH_POP_GET_NOTIFICATIONS_FOR_PROMOTIONS_AND_MARKETING_INFORMATION_FROM_PS">%sགྱི་གྲིམ་སྐུལ་བརྡ་ཐོ་དང་ཚོང་གཉེར་ཆ་འཕྲིན་བསྡུ་ལེན་བྱེད་དགོས།</string>
+    <string name="DREAM_GH_POP_HIDE_GAME_ICONS_ON_APPS_SCREEN_Q">ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ནང་རྩེད་མོ་རྟགས་རིས་སྦས་སམ།</string>
+    <string name="DREAM_GH_POP_P1SS_UPDATE_IS_NEEDED_TO_USE_P2SS">%1$sགསར་སྒྱུར་བྱས་པ་ན་ད་གཟོད་%2$sསྤྱོད་ཐུབ།</string>
+    <string name="DREAM_GH_POP_RESET_SAVE_POWER_SETTING_TO_DEFAULT_Q">གློག་བསྲི་བའི་སྒྲིག་འགོད་སོར་བཞག་གྲངས་ཚད་ལ་བསྐྱར་སྒྲིག་བྱེད་དམ།</string>
+    <string name="DREAM_GH_POP_RESTART_THE_GAME_TO_AVOID_SCREEN_DISTORTION_AND_ERRORS">བརྙན་ཡོལ་གཟུགས་མི་སྒྱུར་བ་དང་ནོར་འཁྲུལ་མི་ཡོང་བའི་ཕྱིར།རྩེད་མོ་བསྐྱར་དུ་ཁ་ཕྱེ་དགོས།</string>
+    <string name="DREAM_GH_POP_STOP_DOWNLOADING_PS_Q">%sཕབ་ལེན་མཚམས་འཇོག་བྱེད་དམ།</string>
+    <string name="DREAM_GH_POP_THERE_ARE_NO_GAME_DETAILS_AVAILABLE">བལྟ་ཞིབ་ཆོག་པའི་རྩེད་མོའི་ཞིབ་ཆ་མེད་པ།</string>
+    <string name="DREAM_GH_POP_THE_APP_WILL_CLOSE_TO_UPDATE_THE_LIST">གསལ་ཐོ་གསར་བརྗེས་བྱས་པའི་ཕྱིར།ཉེར་སྤྱོད་བྱ་རིམ་འདི་ཁ་རྒྱག་སྲིད།</string>
+    <string name="DREAM_GH_POP_THE_GAME_LAUNCHER_ICON_WILL_BE_REMOVED_FROM_YOUR_HOME_SCREEN_AND_APPS_MSG">རྩེད་མོ་ལྟེ་གནས་རྟགས་རིས་ཁྱེད་ཀྱི་བརྙན་ཡོལ་མ་ངོས་དང་ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ནང་ནས་སུབ་སྲིད།ཁྱེད་ནས་༼སྒྲིག་འགོད་༽ནང་རྩེད་མོ་ལྟེ་གནས་ཁ་ཕྱེ་ཐུབ།</string>
+    <string name="DREAM_GH_POP_THIS_APP_WASNT_ADDED_AS_A_GAME_TO_USE_PS_FEATURES_ON_THE_APP_ADD_IT_AS_A_GAME">ཉེར་སྤྱོད་བྱ་རིམ་འདི་རྩེད་མོར་སྣོན་འཇུག་བྱས་མེད།གལ་སྲིད་ཉེར་སྤྱོད་བྱ་རིམ་འདིར་%sཕན་ནུས་བེད་སྤྱོད་མ་བྱས་ཚེ།དེ་ཉིད་རྩེད་མོར་སྒྲིག་དགོས།</string>
+    <string name="DREAM_GH_POP_TO_APPLY_YOUR_NEW_POWER_SETTINGS_RESTART_ANY_GAMES_THAT_ARE_CURRENTLY_RUNNING">གལ་སྲིད་གློག་ཚད་སྒྲིག་འགོད་གསར་པ་བེད་སྤྱོད་གཏོང་དགོས་ཚེ།མིག་སྔར་འགུལ་སྐྱོད་བྱེད་པའི་རྩེད་མོ་ཚང་མ་བསྐྱར་དུ་ཁ་ཕྱེ་དགོས།</string>
+    <string name="DREAM_GH_POP_TO_CHANGE_THE_SCREEN_VIEW_RESTART_YOUR_GAME">གལ་སྲིད་བརྙན་ཡོལ་མཐོང་རིས་སྒྱུར་ཚེ།རྩེད་མོ་བསྐྱར་དུ་ཁ་ཕྱེ་དགོས།</string>
+    <string name="DREAM_GH_POP_TO_USE_GAME_LAUNCHER_YOU_NEED_TO_TURN_ON_APPS_THAT_CAN_APPEAR_ON_TOP_IN_GAME_LAUNCHER">རྩེད་མོ་ལྟེ་གནས་བེད་སྤྱོད་གཏོང་ཕྱིར།ཁྱེད་ནས་རྩེད་མོ་ལྟེ་གནས་ལ་༼གོང་ཐོད་དུ་འཆར་མཐོང་ཐུབ་པའི་ཉེར་སྤྱོད་བྱ་རིམ་༽ཁ་ཕྱེ་དགོས།</string>
+    <string name="DREAM_GH_POP_TO_VIEW_IN_FULL_SCREEN_RESTART_YOUR_GAME">གལ་སྲིད་ཡོལ་ཡོངས་བལྟ་ཞིབ་བྱ་དགོས་ཚེ།རྩེད་མོ་བསྐྱར་དུ་ཁ་ཕྱེ་དགོས།</string>
+    <string name="DREAM_GH_POP_TO_VIEW_IN_FULL_SCREEN_RESTART_YOUR_GAME_FULL_SCREEN_MODE_MAY_CAUSE_GAME_TO_DISPLAY_INCORRECTLY">གལ་སྲིད་ཡོལ་ཡོངས་བལྟ་ཞིབ་བྱ་དགོས་ཚེ།རྩེད་མོ་བསྐྱར་དུ་ཁ་ཕྱེ་དགོས།ཡོལ་ཡོངས་རྣམ་པས་རྩེད་མོ་འཆར་མཐོང་རྒྱུན་གཏན་མིན་པར་སྒྱུར་སྲིད།</string>
+    <string name="DREAM_GH_POP_TO_VIEW_RECORDED_GAMEPLAY_VIDEOS_ENABLE_GAME_LAUNCHER">གལ་སྲིད་ཕབ་འཇུག་ཟིན་པའི་རྩེད་མོ་བརྙན་ཟློས་བལྟ་ཞིབ་བྱས་ཚེ།རྩེད་མོ་ལྟེ་གནས་ཁ་ཕྱེ་དགོས།</string>
+    <string name="DREAM_GH_POP_YOU_SELECTED_PD_VIDEOS">ཁྱེད་ནས་བརྙན་ཟློས་%dའདེམས་ཟིན།</string>
+    <string name="DREAM_GH_POP_YOU_WONT_SEE_GAME_ICONS_ON_THE_APPS_SCREEN">ཁྱེད་ནས་ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ནང་རྩེད་མོ་རྟགས་རིས་འདི་མཐོང་མི་ཐུབ།</string>
+    <string name="DREAM_GH_SBODY_BATTERY_REMAINING_C_PDP" formatted="false">གློག་ཚད་ལྷག་མ།%d%</string>
+    <string name="DREAM_GH_SBODY_COMMA">,</string>
+    <string name="DREAM_GH_SBODY_ENHANCE_YOUR_GAME_EXPERIENCE_WITH_THE_HIGH_PERFORMANCE_SETTING_IN_GAME_LAUNCHER">རྩེད་མོ་ལྟེ་གནས་ནང་༼ཕན་ནུས་མཐོ་བ་༽བེད་སྤྱོད་བྱས་ཁྱེད་ཀྱི་རྩེད་མོ་ཡག་ཏུ་གཏོང་བ།</string>
+    <string name="DREAM_GH_SBODY_ENJOY_A_FREE_GAME_FROM_SAMSUNG">Samsungམཁོ་འདོན་བྱས་པའི་རིན་མེད་རྩེད་མོ་རྩེ་བ།</string>
+    <string name="DREAM_GH_SBODY_ENJOY_LONGER_GAMES_WITH_THE_SAVE_POWER_SETTING_IN_GAME_LAUNCHER">རྩེད་མོ་ལྟེ་གནས་ནང་༼གློག་བསྲི་བ་༽བེད་སྤྱོད་བྱས་ནས་རྩེད་མོ་དུས་ཚོད་རིང་ཙམ་སྒྲིག་པ།</string>
+    <string name="DREAM_GH_SBODY_GAME_ICONS_ARE_SHOWN_ONLY_IN_GAME_LAUNCHER_ABB">རྩེད་མོ་རྟགས་རིས་དེ་རྩེད་མོ་ལྟེ་གནས་ཁོ་ནའི་ནང་གསལ་སྲིད།</string>
+    <string name="DREAM_GH_SBODY_GAME_ICONS_ON_APPS_ARE_SHOWN_ONLY_IN_GAME_LAUNCHER_ABB">ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ནང་གི་རྩེད་མོ་རྟགས་རིས་དེ་རྩེད་མོ་ལྟེ་གནས་ཁོ་ནའི་ནང་གསལ་སྲིད།</string>
+    <string name="DREAM_GH_SBODY_GAME_LAUNCHER_WAS_TURNED_ON_AUTOMATICALLY_MSG">ཁྱེད་ནས་ས་ཆ་གཅིག་ནང་རྩེད་མོ་དོ་དམ་བྱེད་བདེ་པོ་ཡོང་ཕྱིར།རྩེད་མོའི་ལྟེ་གནས་རང་འགུལ་ཁ་ཕྱེ་སྲིད།གལ་སྲིད་ཁ་རྒྱག་ཚེ།༼སྒྲིག་འགོད་༽ནང་ཞུགས་དགོས།</string>
+    <string name="DREAM_GH_SBODY_GET_APP_NOTIFICATIONS_FROM_PS">%sནས་ཉེར་སྤྱོད་བྱ་རིམ་བརྡ་ཐོ་ལེན།</string>
+    <string name="DREAM_GH_SBODY_HANDY_FEATURES_TO_ENHANCE_GAMEPLAY">རྩེད་མོ་ཉམས་ལེན་མཐོར་བཏང་བ་དང་སྟབས་བདེའི་ཕན་ནུས་སྣེ་མང་བེད་སྤྱད།</string>
+    <string name="DREAM_GH_SBODY_MANAGE_ALL_YOUR_GAMES_IN_ONE_PLACE_AND_TRY_OUT_COOL_FEATURES">གནས་ཡུལ་གཅིག་ཐོག་ཁྱེད་ཀྱི་རྩེད་མོ་ཚང་མ་དོ་དམ་བྱེད་པ་དང་ཕན་ནུས་རྫིག་པོ་སྣེ་མང་ཉམས་ལེན་བྱེད་ཆོག</string>
+    <string name="DREAM_GH_SBODY_MANAGE_AND_LAUNCH_YOUR_GAMES_WITH_GAME_LAUNCHER">རྩེད་མོ་ལྟེ་གནས་བརྒྱུད་ནས་ཁྱེད་ཀྱི་རྩེད་མོ་དོ་དམ་དང་ཁ་ཕྱེ་བ།</string>
+    <string name="DREAM_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_FROM_YOUR_PHONE_MAY_ALSO_BE_RECORDED">རྩེད་མོའི་སྒྲ་ཟློས་ཕབ་འཇུག་བྱས།འདིས་དུས་གཅིག་ཏུ་ཁྱེད་ཀྱི་ལག་ཐོག་ཁ་པར་ཐོག་གི་མ་ལག་སྐད་སྒྲ་ཕབ་འཇུག་བྱེད་སྲིད།</string>
+    <string name="DREAM_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_FROM_YOUR_TABLET_MAY_ALSO_BE_RECORDED">རྩེད་མོའི་སྒྲ་ཟློས་ཕབ་འཇུག་བྱས།འདིས་དུས་གཅིག་ཏུ་ཁྱེད་ཀྱི་ངོས་པང་གློག་ཀླད་ཐོག་གི་མ་ལག་སྐད་སྒྲ་ཕབ་འཇུག་བྱེད་སྲིད།</string>
+    <string name="DREAM_GH_SBODY_RECORD_GAMEPLAY_WITHOUT_A_PROFILE">རྩེད་མོ་ཕབ་འཇུག་བྱེད་པའི་དུས་སུ་སྒེར་གྱི་ཡིག་ཆ་བེད་སྤྱོད་གཏོང་མི་ཐུབ།</string>
+    <string name="DREAM_GH_SBODY_RECORD_YOURSELF_DURING_GAMEPLAY">རྩེད་མོ་རྩེ་སྐབས་ཁྱེད་རང་ཉིད་ཕབ་འཇུག་བྱས།</string>
+    <string name="DREAM_GH_SBODY_SEE_THE_CURRENT_APP_VERSION_AND_LEGAL_INFORMATION">མིག་སྔའི་ཉེར་སྤྱོད་བྱ་རིམ་པར་གཞི་དང་ཁྲིམས་ལུགས་ཆ་འཕྲིན་བལྟ་ཞིབ་བྱ་དགོས།</string>
+    <string name="DREAM_GH_SBODY_SHOW_GAME_ICONS_ONLY_IN_GAME_LAUNCHER">རྩེད་མོ་ལྟེ་གནས་ཐོག་རྩེད་མོ་རྟགས་རིས་གསལ་བ།</string>
+    <string name="DREAM_GH_SBODY_TAP_HERE_TO_GET_STARTED">འདི་གར་བརྡེབས་ནས་འགོ་ཚུགས་བྱེད།</string>
+    <string name="DREAM_GH_SBODY_YOUR_PHONE_TEMPERATURE_IS_HIGH_SO_THE_BRIGHTNESS_OF_THE_SCREEN_HAS_BEEN_REDUCED">ཁྱེད་ཀྱི་ལག་ཐོག་ཁ་པར་དྲོད་ཚད་མཐོ་དྲགས།བརྙན་ཡོལ་གསལ་ཚད་དམའ་རུ་བཏང་ཟིན།</string>
+    <string name="DREAM_GH_TAB_GAMES_PLAYED">རྩེ་མྱོང་བའི་རྩེད་མོ།</string>
+    <string name="DREAM_GH_TAB_GAMES_PLAYED_ABB">རྩེ་མྱོང་བའི་རྩེད་མོ།</string>
+    <string name="DREAM_GH_TAB_VIDEOS_RECORDED">ཕབ་འཇུག་བྱས་པའི་བརྙན་ཟློས།</string>
+    <string name="DREAM_GH_TAB_VIDEOS_RECORDED_ABB">ཕབ་འཇུག་བྱས་པའི་བརྙན་ཟློས།</string>
+    <string name="DREAM_GH_TBBODY_CHECK_BOX">མང་སྒྲིག་འདེམས་བྱང་།</string>
+    <string name="DREAM_GH_TBBODY_SLIDER">འདྲུད་རྡོག</string>
+    <string name="DREAM_GH_TMBODY_ABOUT_GAME_TOOLS">རྩེད་མོ་ལག་ཆ་སྐོར།</string>
+    <string name="DREAM_GH_TMBODY_APP_NOTIFICATIONS">ཉེར་སྤྱོད་བྱ་རིམ་བརྡ་ཐོ།</string>
+    <string name="DREAM_GH_TMBODY_CHECK_OUT_GAME_LAUNCHER">རྩེད་མོ་ལྟེ་གནས་བལྟ་ཞིབ་བྱས།</string>
+    <string name="DREAM_GH_TMBODY_GAME_ICONS_AUTO_DISPLAY">རྩེད་མོ་རྟགས་རིས་རང་འགུལ་གསལ་བ།</string>
+    <string name="DREAM_GH_TMBODY_GAME_ICON_DISPLAY">རྩེད་མོ་རྟགས་རིས་གསལ་བ།</string>
+    <string name="DREAM_GH_TMBODY_GAME_TOOLS">རྩེད་མོའི་ལག་ཆ།</string>
+    <string name="DREAM_GH_TMBODY_HARD_PRESS_BUTTON_LOCK">ཤུགས་ཀྱི་བསྡམ་སྒྲིག་མནན་པ།</string>
+    <string name="DREAM_GH_TMBODY_HARD_PRESS_HOME_BUTTON_LOCK">༼བརྙན་ཡོལ་མ་ངོས་མཐེབ་གནོན་ཤུགས་ཀྱི་མནན་པ།༽ཕན་ནུས་བསྡམ་སྒྲིག་བྱས་ཟིན།</string>
+    <string name="DREAM_GH_TMBODY_HIDE_GAMES_ON_APPS_ABB">ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ནང་རྩེད་མོ་རྟགས་རིས་སྦས་དགོས།</string>
+    <string name="DREAM_GH_TMBODY_HIDE_GAMES_ON_HOME_AND_APPS_ABB">བརྙན་ཡོལ་མ་ངོས་དང་ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ནང་རྩེད་མོ་སྦས་པ།</string>
+    <string name="DREAM_GH_TMBODY_MARKETING_INFORMATION">ཚོང་གཉེར་ཆ་འཕྲིན་</string>
+    <string name="DREAM_GH_TMBODY_MY_QUESTIONS">ང་ཡི་གནས་ཚུལ།</string>
+    <string name="DREAM_GH_TMBODY_NO_ALERTS_DURING_GAMES">རྩེད་མོའི་ནང་དྲན་སྐུལ་མི་གསལ་བ།</string>
+    <string name="DREAM_GH_TMBODY_RECORD_VIDEOS">བརྙན་ཟློས་ཕབ་འཇུག</string>
+    <string name="DREAM_GH_TMBODY_SCREEN_TOUCH_LOCK_TURNED_ON">བརྙན་ཡོལ་རེག་འཛིན་བསྡམ་སྒྲིག་ཁ་ཕྱེ་ཟིན།</string>
+    <string name="DREAM_GH_TMBODY_SHORTCUTS">མྱུར་མགྱོགས་འགྲོས་ཐབས།</string>
+    <string name="DREAM_GH_TMBODY_SHOW_EDGE_TOUCH_LOCK">གཞོགས་ཡོལ་རེག་ཐུག་བསྡམ་སྒྲིག་གསལ་བ།</string>
+    <string name="DREAM_GH_TMBODY_SHOW_PRESSURE_TOUCH_LOCK">གནོན་ཤུགས་རེག་ཐུག་བསྡམ་སྒྲིག་གསལ་བ།</string>
+    <string name="DREAM_GH_TMBODY_SHOW_TOUCH_LOCK">རེག་ཐུག་བསྡམ་སྒྲིག་གསལ་བ།</string>
+    <string name="DREAM_GH_TMBODY_TRY_GAME_LAUNCHER">རྩེད་མོ་ལྟེ་གནས་ཚོད་ལྟ་བྱེད་དགོས།</string>
+    <string name="DREAM_GH_TPOP_APP_CAN_ONLY_BE_DISPLAYED_IN_FULL_SCREEN">ཉེར་སྤྱོད་བྱ་རིམ་ཡོལ་ཡོངས་རྣམ་པའི་འོག་གསལ་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_BATTERY_LOW_RECORDING_STOPPED_AND_SAVED">གློག་ཚད་དམའ་དྲགས།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན་པ་དང་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="DREAM_GH_TPOP_CANT_CONNECT_TO_SERVER_TRY_AGAIN_LATER">ཞབས་ཞུ་ཡོ་བྱད་དང་འབྲེལ་མི་ཐུབ།ཅུང་ཟད་ནས་བསྐྱར་ཚོད་བྱེད་དགོས།</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_CAMERA_IN_USE">པར་ཆས་བེད་སྤྱོད་བྱེད་བཞིན་པ།ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_GAME_AUDIO_VOLUME_MUTED">སྐད་མེད་བཟོས་ཟིན།རྩེད་མོའི་སྒྲ་ཟློས།ཕབ་འཇུག་བྱེད་མི་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_LOW_BATTERY">གློག་ཚད་མི་ལྡང་།ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_MICROPHONE_IN_USE">སྒྲ་སྦུག།བེད་སྤྱོད་བྱེད་བཞིན་པ།ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VIDEOS_LARGER_THAN_P1SD_P2SS_RECORDING_STOPPED_AND_SAVED">བརྙན་ཟློས་ཆེ་ཤོས་%1$d %2$sཕབ་འཇུག་བྱེད་ཐུབ།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན་པ་དང་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VIDEO_TRY_AGAIN_LATER">བརྙན་ཟློས་ཕབ་འཇུག་མི་ཐུབ།ཅུང་ཟད་ནས་བསྐྱར་སྒྲིག་བྱ་རོགས།</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VOICE_GAME_AUDIO_VOLUME_TOO_HIGH">རྩེད་མོ་སྒྲ་ཤུགས་ཆེ་དྲགས་སྐད་སྒྲ་ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_CANT_USE_GAME_LAUNCHER_FEATURES_WITH_NON_GAME_APPS_TO_USE_THESE_FEATURES_PRESS_AND_HOLD_APP_TO_LIST_AS_GAME">རྩེད་མོ་མིན་པའི་ཉེར་སྤྱོད་བྱ་རིམ་ལ་རྩེད་མི་ལྟེ་གནས་བེད་སྤྱོད་གཏོང་མི་ཐུབ།གལ་སྲིད་ཕན་ནུས་འདི་དག་བེད་སྤྱོད་གཏོང་དགོས་ཚེ།ཉེར་སྤྱོད་བྱ་རིམ་རྒྱུན་རིང་མནན་་ནས་དེ་ཉིད་རྩེད་མོའི་གསལ་ཐོ་ནང་སྣོན་འཇུག་བྱེད་དགོས།</string>
+    <string name="DREAM_GH_TPOP_CANT_USE_GAME_LAUNCHER_WITH_NON_GAME_APPS_TO_USE_FEATURES_PRESS_AND_HOLD_APP_TO_LIST_AS_GAME">རྩེད་མོ་མིན་པའི་ཉེར་སྤྱོད་བྱ་རིམ་ལ་རྩེད་མོ་ལྟ་གནས་བེད་སྤྱོད་གཏོང་མི་ཐུབ།གལ་སྲིད་ཕན་ནུས་འདི་དག་བེད་སྤྱོད་གཏོང་དགོས་ཚེ།ཉེར་སྤྱོད་བྱ་རིམ་རྒྱུན་རིང་མནན་ནས་དེ་ཉིད་རྩེད་མོའི་གསལ་ཐོ་ནང་སྣོན་འཇུག་བྱེད་དགོས།</string>
+    <string name="DREAM_GH_TPOP_CANT_USE_P1SS_SET_NOTIFICATIONS_TO_ALLOW_P2SS_PERMISSION_PERMISSIONS">%1$sབེད་སྤྱོད་གཏོང་མི་ཐུབ།བརྡ་ཐོ་%2$sཆོག་པའི་དབང་ཚད་ལ་སྒྲིག་དགོས།</string>
+    <string name="DREAM_GH_TPOP_CANT_USE_PS_IN_SAMSUNG_DEX">Samsung DeXནང་%sབེད་སྤྱོད་གཏོང་མི་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_COULDNT_DOWNLOAD_PS">%sཕབ་ལེན་མི་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_COULDNT_INSTALL_PS">སྒྲིག་འཇུག་མི་ཐུབ།%s</string>
+    <string name="DREAM_GH_TPOP_COULDNT_TAKE_SCREENSHOT_DELETE_SOME_FILES_AND_TRY_AGAIN">བརྙན་ཡོལ་དྲས་ལེན་མི་ཐུབ།ཡིག་ཆ་ཁག་ཅིག་སུབ་ནས་བསྐྱར་ཚོད་བྱ་དགོས།</string>
+    <string name="DREAM_GH_TPOP_GAME_DISCOVERY_NOT_AVAILABLE_IN_THIS_COUNTRY_YET">རྩེད་མོ་འཚོལ་ཞིབ་རྒྱལ་ཁབ་འདིའི་ནང་བེད་སྤྱོད་གཏོང་མི་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_GAME_ICON_MOVED_TO_GAME_LAUNCHER">རྩེད་མོ་རྟགས་རིས་རྩེད་མོ་ལྟེ་གནས་ཐོག་སྤོས་ཟིན།</string>
+    <string name="DREAM_GH_TPOP_GAME_LAUNCHER_FEATURES_ARENT_AVAILABLE_FOR_PS_IT_CAN_TAKE_UP_TO_5_SECONDS_TO_APPLY_CHANGES">རྩེད་མོ་ལྟེ་གནས་ཕན་ནུས་%sལ་འོས་མོ་འཚམ།ཉེར་སྤྱོད་སྒྱུར་བར་མང་ཤོས་སུ་སྐར་ཆ་5ཙམ་དགོས།</string>
+    <string name="DREAM_GH_TPOP_GAME_LAUNCHER_FEATURES_ARE_AVAILABLE_FOR_PS_IT_CAN_TAKE_UP_TO_5_SECONDS_TO_APPLY_CHANGES">རྩེད་མོ་ལྟེ་གནས་ཕན་ནུས་%sལ་འོས་འཚམ།ཉེར་སྤྱོད་སྒྱུར་བར་སྐར་ཆ་5ཙམ་དགོས།</string>
+    <string name="DREAM_GH_TPOP_GAME_LAUNCHER_TURNED_ON_ABB">རྩེད་མོ་ལྟེ་གནས་ཁ་ཕྱེ་ཟིན།</string>
+    <string name="DREAM_GH_TPOP_GAME_SHOWN_IN_FULL_SCREEN_VIEW_IF_IT_DOESNT_LOOK_RIGHT_TURN_OFF_FULL_SCREEN">ཡོལ་ཡོངས་མཐོང་རིས་ནང་རྩེད་མོ་གསལ་བ།གལ་སྲིད་འཚམ་པོ་མེད་ཚེ།ཡོལ་ཡོངས་རྣམ་པ་ཁ་རྒྱག་དགོས།</string>
+    <string name="DREAM_GH_TPOP_MUTE_GAME_OFF">རྩེད་མོ་སྐད་མེད་ཁ་རྒྱག་ཟིན།</string>
+    <string name="DREAM_GH_TPOP_NOT_ENOUGH_SPACE_TO_CONTINUE_RECORDING_VIDEO_SAVED">གསོག་སྣོད་བར་སྟོང་མི་ལྡང་མུ་མཐུད་ཕབ་འཇུག་མི་ཐུབ།བརྙན་ཟློས་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="DREAM_GH_TPOP_NOT_ENOUGH_SPACE_TO_RECORD_VIDEO_DELETE_SOME_FILES_AND_TRY_AGAIN">ཁྱེད་ལ་གསོག་སྣོད་བར་སྟོང་ལྡང་ངེས་ཞིག་མེད་པས་བརྙན་ཟློས་ཕབ་འཇུག་མི་ཐུབ།ཡིག་ཆ་ཁག་ཅིག་སུབ་ནས་བསྐྱར་ཚོད་བྱ་དགོས།</string>
+    <string name="DREAM_GH_TPOP_NO_ALERTS_DURING_GAMES_ENABLED_MSG">༼རྩེད་མོའི་ནང་དྲན་སྐུལ་མི་གསལ་བ།༽འགུལ་སློང་ཟིན།རྩེད་མོ་རྩེད་སྐབས་དྲན་སྐུལ་ཚང་མ་སྐད་མེད་བཟོ་དང་སྦས་སྲིད།བརྙན་ཡོལ་ཐོག་ཚུར་འོང་ཁ་པར་ཁོ་ན་གསལ་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_NO_LONGER_ON_GAME_SCREEN_RECORDING_STOPPED_AND_SAVED">རྩེད་མོ་བརྙན་རིས་ཁ་གྱེས་ཟིན།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན་པ་དང་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="DREAM_GH_TPOP_P1SS_LISTED_AS_GAME_P2SS_FEATURES_AVAILABLE">%1$sརྩེད་མོའི་གྲས་སུ་སྒྲིག་ཟིན།%2$sཕན་ནུས་བེད་སྤྱོད་གཏོང་ཆོག།</string>
+    <string name="DREAM_GH_TPOP_P1SS_MARKETING_INFORMATION_TURNED_OFF_ON_P2SS">%2$sགྱི་%1$sཚོང་གཉེར་ཆ་འཕྲིན་ཁ་རྒྱག་ཟིན།</string>
+    <string name="DREAM_GH_TPOP_P1SS_MARKETING_INFORMATION_TURNED_ON_ON_P2SS">%2$sགྱི་%1$sཚོང་གཉེར་ཆ་འཕྲིན་ཁ་ཕྱེ་ཟིན།</string>
+    <string name="DREAM_GH_TPOP_PS_ENABLED">%sའགུལ་སློང་ཟིན།</string>
+    <string name="DREAM_GH_TPOP_PS_INSTALLED">%sསྒྲིག་འཇུག་བྱས་ཟིན།</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_AFTER_PD_SECONDS_VIDEO_NOT_SAVED">ཕབ་འཇུག་སྐར་ཆ་%dརྗེས་སུ་མཚམས་འཇོག་བྱེད་སྲིད།བརྙན་ཟློས་ཉར་ཚགས་བྱས་མེད།</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_BECAUSE_OF_PROBLEM_WITH_PHONE_VIDEO_NOT_SAVED">ལག་ཐོག་ཁ་པར་ལ་གནས་ཚུལ་ཐོན།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།བརྙན་ཟློས་ཉར་ཚགས་བྱས་མེད།</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_BECAUSE_OF_PROBLEM_WITH_TABLET_VIDEO_NOT_SAVED">ངོས་པང་གློག་ཀླད་ལ་གནས་ཚུལ་ཐོན།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།བརྙན་ཟློས་ཉར་ཚགས་བྱས་མེད།</string>
+    <string name="DREAM_GH_TPOP_SCREEN_VIEW_CANT_BE_CHANGED_RIGHT_NOW">བརྙན་ཡོལ་མཐོང་རིས་གསར་བརྗེས་ལམ་སེང་བྱེད་མི་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_SEE_RECORDED_VIDEO_IN_GAME_LAUNCHER">རྩེད་མོ་ལྟེ་གནས་ནས་ཕབ་འཇུག་བྱས་པའི་བརྙན་ཟློས་བལྟ་ཞིབ་བྱས།</string>
+    <string name="DREAM_GH_TPOP_TAP_HERE_TO_TURN_OFF_MUTE_GAME_ABB">འདི་གར་བརྡེབས་ནས་༼རྩེད་མོ་སྐད་མེད་༽ཁ་རྒྱག་དགོས།</string>
+    <string name="DREAM_GH_TPOP_THIS_GAME_CANT_BE_LAUNCHED_IN_SAMSUNG_DEX_MODE">རྩེད་མོ་འདི་ཉིད་Samsung DeXརྣམ་པ་ནང་འགུལ་སློང་མི་ཐུབ།</string>
+    <string name="DREAM_GH_TPOP_THIS_NAVIGATION_BAR_IS_ALWAYS_DISPLAYED_FOR_THE_CURRENT_GAME_SOME_GAME_SCREENS_MAY_OVERLAP">ཕྱོགས་སྟོན་གསལ་བྱང་འདི་རྟག་ཏུ་རྩེད་མོའི་ནང་གསལ་སྲིད།རྩེད་མོའི་བརྙན་རིས་ཁག་ཅིག་དང་བསྐྱར་བརྩེགས་བྱེད་སྲིད།</string>
+    <string name="DREAM_GH_TPOP_VOICE_MAY_NOT_BE_RECORDED_IF_GAME_VOLUME_TOO_HIGH">གལ་སྲིད་རྩེད་མོ་སྒྲ་ཤུགས་ཆེ་དྲགས།སྐད་སྒྲ་ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="DREAM_IDLE_ACBUTTON_USE_MOBILE_NETWORK_20">使用移动网络</string>
+    <string name="DREAM_IDLE_ACBUTTON_WI_FI_SETTINGS_20">Wi-Fi 设置</string>
+    <string name="DREAM_IDLE_BODY_CANT_CHECK_FOR_UPDATES_YOUR_PHONE_ISNT_CONNECTED_TO_A_NETWORK">ཁྱེད་ཀྱི་ལག་ཐོག་ཁ་པར་དྲ་བ་དང་འབྲེལ་མེད།གསར་བརྗེས་བརྟག་ཞིབ་མི་ཐུབ།</string>
+    <string name="DREAM_IDLE_OPT_DISCLAIMER">འགན་མེད་གསལ་བཤད།</string>
+    <string name="DREAM_IDLE_OPT_DONT_ASK_AGAIN_AFTER_TAPPING_PS_CHN">༼%s༽བརྡེབས་རྗེས་བློ་འདྲི་མ་བྱས།</string>
+    <string name="DREAM_IDLE_OPT_OPEN_SOURCE_LICENSES">ཡོང་ཁུངས་ཆོག་མཆན་ལག་ཁྱེར།</string>
+    <string name="DREAM_IDLE_OPT_PRIVACY_POLICY">གསང་བའི་ཐབས་ཇུས།</string>
+    <string name="DREAM_IDLE_OPT_TERMS_AND_CONDITIONS">དོན་ཚན་དང་ཆ་རྐྱེན།</string>
+    <string name="DREAM_IDLE_PHEADER_NO_NETWORK_CONNECTION">དྲ་བའི་འབྲེལ་མཐུད་མེད།</string>
+    <string name="DREAM_IDLE_PHEADER_TURN_OFF_AIRPLANE_MODE">འཕུར་སྐྱོད་རྣམ་པ་ཁ་རྒྱག་པ།</string>
+    <string name="DREAM_IDLE_PHEADER_TURN_ON_MOBILE_DATA_Q">འགུལ་གཏོང་གཞི་གྲངས་ཁ་ཕྱེའམ།</string>
+    <string name="DREAM_IDLE_PHEADER_USE_DATA_ROAMING_Q">གཞི་གྲངས་ཕྱིར་ཡན་བེད་སྤྱོད་བྱེད་དམ།</string>
+    <string name="DREAM_IDLE_PHEADER_USE_MOBILE_DATA_Q">ལག་ཐོག་ཁ་པར་བཞུར་ཚད་བེད་སྤྱོད་བྱེད་དམ།</string>
+    <string name="DREAM_IDLE_POP_CONNECT_TO_A_WI_FI_NETWORK_OR_TURN_ON_DATA_ROAMING">Wi-Fiདྲ་བ་དང་འབྲེལ་བའམ་གཞི་གྲངས་ཕྱིར་ཡན་ཁ་ཕྱེ་དགོས།</string>
+    <string name="DREAM_IDLE_POP_CONNECT_TO_A_WI_FI_NETWORK_OR_TURN_ON_MOBILE_DATA">Wi-Fiདྲ་བ་དང་འབྲེལ་བའམ་འགུལ་གཏོང་གཞི་གྲངས་ཁ་ཕྱེ་དགོས།</string>
+    <string name="DREAM_IDLE_POP_COULDNT_FIND_ANY_AVAILABLE_NETWORKS">སྤྱོད་ཆོག་པའི་དྲ་བ་གང་རུང་མི་རྙེད།</string>
+    <string name="DREAM_IDLE_POP_THERE_ISNT_ENOUGH_SPACE_IN_YOUR_PHONES_INTERNAL_STORAGE_DELETE_SOME_FILES_OR_UNINSTALL_UNUSED_APPS_THEN_TRY_UPDATING_MSG">您手机的内部存储空间不足。请删除部分文件或卸载不使用的应用程序，然后从应用程序商店下载更新并重试。</string>
+    <string name="DREAM_IDLE_POP_USING_MOBILE_DATA_WHILE_ROAMING_MAY_RESULT_IN_ADDITIONAL_CHARGES">ཕྱིར་ཡན་སྐབས་སུ་ལག་ཐོག་ཁ་པར་བཞུར་ཚད་བེད་སྤྱོད་བཏང་ཚེ་གྲོན་དངུལ་འཕར་མ་ཐོབ་སྲིད།</string>
+    <string name="DREAM_IDLE_POP_YOUR_PHONE_ISNT_CONNECTED_TO_A_WI_FI_NETWORK_TO_USE_A_MOBILE_NETWORK_INSTEAD_TURN_OFF_AIRPLANE_MODE_IN_SETTINGS">ཁྱེད་ཀྱི་ལག་ཐོག་ཁ་པར་Wi-Fiདྲ་བ་དང་འབྲེལ་མེད།གལ་སྲིད་འགུལ་གཏོང་དྲ་བ་བེད་སྤྱོད་བཏང་ཚེ།༼སྒྲིག་འགོད་༽ནང་ནས་འཕུར་སྐྱོད་རྣམ་པ་ཁ་རྒྱག་དགོས།</string>
+    <string name="DREAM_IDLE_POP_YOUR_PHONE_ISNT_CONNECTED_TO_A_WI_FI_NETWORK_USING_MOBILE_DATA_MAY_RESULT_IN_ADDITIONAL_CHARGES">您的手机未连接至 Wi-Fi 网络，使用流量可能会产生额外费用。</string>
+    <string name="DREAM_MARSH_BUTTON_CLOSE_8">ཁ་རྒྱག་པ།</string>
+    <string name="DREAM_MARSH_TPOP_P1SS_CANT_BE_LAUNCHED_IN_P2SS">%1$s དེ་ %2$s ནང་འགོ་འཛུགས་མ་ཐུབ་པ་ཡིན།</string>
+    <string name="DREAM_ST_TMBODY_HARD_PRESS_HOME_BUTTON">བརྙན་ཡོལ་མ་ངོས་མཐེབ་གནོན་ཤུགས་ཀྱི་མནན་པ།</string>
+    <string name="DREAM_WIFI_SBODY_PD_MBPS">%d Mbps</string>
+    <string name="IDS_COM_BODY_GAME">རྩེད་རིགས</string>
+    <string name="IDS_COM_BODY_REQUEST">请求</string>
+    <string name="IDS_COM_BUTTON_ADD">སྣོན་འཇུག</string>
+    <string name="IDS_COM_BUTTON_SAVE">ཉར་ཚགས།</string>
+    <string name="IDS_COM_POP_UNABLE_TO_FIND_ITEM_ABB">སྡེ་ཚན་རྙེད་མ་སོང་།</string>
+    <string name="IDS_COM_SK_SAVE_LITE">ཉར་ཚགས།</string>
+    <string name="IDS_ES_BODY_UNABLE_TO_OPEN_PS_WHILE_EASY_MODE_ENABLED">简易模式启用时无法打开%s。</string>
+    <string name="IDS_GCTS_OPT_DIMMED_TTS">མི་གསལ་བ།</string>
+    <string name="IDS_GFW_BODY_SEARCHING_ING">འཚོལ་བསྡུ་བྱེད་བཞིན་པ།</string>
+    <string name="IDS_IDLE_BODY_A_NEW_VERSION_IS_AVAILABLE">པར་གཞི་གསར་པ་སྤྱོད་མི་ཐུབ།</string>
+    <string name="IDS_IDLE_BODY_THE_LATEST_VERSION_IS_ALREADY_INSTALLED">པར་གཞི་གསི་གསར་ཤོས་དེ་སྒྲིག་འཇུག་བྱས་འདུག</string>
+    <string name="IDS_IDLE_BODY_VERSION_PS">པར་གཞི་%s</string>
+    <string name="IDS_IDLE_BUTTON_RETRY_ABB6">བསྐྱར་ཚོད།</string>
+    <string name="IDS_IDLE_BUTTON_UPDATE_ABB8">གསར་སྒྱུར།</string>
+    <string name="IDS_IDLE_HEADER_ABOUT_PS">%sདང་འབྲེལ་བ།</string>
+    <string name="IDS_IDLE_HEADER_DOWNLOAD_VIA_MOBILE_NETWORK">འགུལ་གཏོང་དྲ་བ་བརྒྱུད་ཕབ་ལེན་བྱས།</string>
+    <string name="IDS_IDLE_HEADER_UNABLE_TO_ADD">无法添加</string>
+    <string name="IDS_IDLE_HEADER_UNABLE_TO_UPDATE_APPS">ཉེར་སྤྱོད་བྱ་རིམ་གསར་བརྗེས་མི་ཐུབ།</string>
+    <string name="IDS_IDLE_HEADER_USE_NETWORK_CONNECTIONS">དྲ་སྦྲེལ་བཀོལ་བ།</string>
+    <string name="IDS_IDLE_MBODY_UNABLE_TO_USE_PS">%sསྤྱོད་ཐུབ་མི་འདུག</string>
+    <string name="IDS_IDLE_POP_A_NETWORK_ERROR_HAS_OCCURRED_TAP_RETRY_TO_TRY_AGAIN_OR_DOWNLOAD_THE_UPDATES_LATER_FROM_AN_APP_STORE">དྲ་བ་ནོར་འཁྲུལ་ཐོན། ༼བསྐྱར་ཚོད།༽བརྡེབས་ནས་ཚོད་ལྟ་བསྐྱར་དུ་བྱེད། ཡང་ན་ཉེར་སྤྱོད་བྱ་རིམ་ཚོང་ཁང་ནས་གསར་བརྗེས་ཕབ་ལེན་བྱས་ཆོག</string>
+    <string name="IDS_IDLE_POP_PS_NEEDS_TO_USE_NETWORK_CONNECTIONS_TO_WORK_NORMALLY_ALLOW_Q">%s དྲ་སྦྲེལ་བཀོལ་ན་རྒྱུན་ལྡན་ལས་ཀ་བྱེད་ཐུབ་པ་ཡིན།སྦྲེལ་ཆོག་གམ།</string>
+    <string name="IDS_IDLE_POP_SOME_OF_PSS_FEATURES_NEED_TO_USE_NETWORK_CONNECTIONS_TO_WORK_NORMALLY_ALLOW_Q">%s ཡི་བྱེད་ནུས་ཁག་ཅིག་དྲ་སྦྲེལ་བཀོལ་ན་རྒྱུན་ལྡན་ལས་ཀ་བྱེད་ཐུབ་པ་ཡིན།སྦྲེལ་ཆོག་གམ།</string>
+    <string name="IDS_IDLE_POP_TURN_ON_MOBILE_DATA_TO_USE_A_MOBILE_NETWORK_OR_DOWNLOAD_THE_UPDATES_LATER_FROM_AN_APP_STORE">ལག་ཐོག་ཁ་པར་བཞུར་ཚད་ཁ་ཕྱེ་ནས་འགུལ་གཏོང་དྲ་བ་སྤྱད་དགོས། ཡང་ན་ཉེར་སྤྱོད་བྱ་རིམ་ཚོང་ཁང་ནས་གསར་བརྗེས་ཕབ་ལེན་བྱས་ཆོག</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_MSG">%sཁ་ཕྱེ་མི་ཐུབ། ༼སྒྲིག་འགོད།༽བརྡེབས་ནས། ༼ཉེར་སྤྱོུད་བྱ་རིམ་གྱི་ཆ་འཕྲིན།༽>༼དབང་ཚད།༽ཞུགས་པ་དང་། དེ་རྗེས་གཤམ་གྱི་དབང་ཚད་ཁག་སྤྲད་ནས་ཚོད་ལྟ་བསྐྱར་དུ་བྱ་དགོས།</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_USE_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_MSG">%sབེད་སྤྱོད་གཏོང་མི་ཐུབ། ༼སྒྲིག་འགོད།༽བརྡེབས་ནས། ༼ཉེར་སྤྱོུད་བྱ་རིམ་གྱི་ཆ་འཕྲིན།༽>༼དབང་ཚད།༽ཞུགས་པ་དང་། དེ་རྗེས་གཤམ་གྱི་དབང་ཚད་ཁག་སྤྲད་ནས་ཚོད་ལྟ་བསྐྱར་དུ་བྱ་དགོས།</string>
+    <string name="IDS_IDLE_POP_YOUR_DEVICE_IS_NOT_CONNECTED_TO_A_WI_FI_NETWORK_DOWNLOADING_VIA_MOBILE_NETWORKS_MAY_MSG">您的设备未连接 Wi-Fi 网络。根据您的资费套餐，通过移动网络下载可能会产生额外费用。</string>
+    <string name="IDS_IDLE_SBODY_TO_USE_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_THE_FOLLOWING_PERMISSIONS_C">གལ་སྲིད་%sབེད་སྤྱོད་གཏོང་དགོས་ཚེ། ༼སྒྲིག་འགོད།༽བརྡེབས་ནས་༼ཉེར་སྤྱོུད་བྱ་རིམ་གྱི་ཆ་འཕྲིན།༽>༼དབང་ཚད།༽ནང་ཞུགས་པ་དང་། དེ་རྗེས་གཤམ་གྱི་དབང་ཚད་ཁག་སྤྲོད་དགོས།</string>
+    <string name="IDS_IV_BODY_MY_DEVICE">ངའི་འཕྲུལ་ཆས།</string>
+    <string name="IDS_PB_SBODY_ALLOW_STORAGE_PERMISSION_TO_USE_ABB">允许存储使用权限</string>
+    <string name="IDS_SMEMO_OPT_MOVE_UP">གོང་དུ་འགུལ་བ།</string>
+    <string name="IDS_ST_BODY_I_AGREE">ང་མོས་མཐུན་ཡོད།</string>
+    <string name="IDS_ST_BUTTON_OFF_ABB_M_DISABLED">སྒོ་བརྒྱབ།</string>
+    <string name="IDS_ST_BUTTON_ON_ABB_M_ENABLED">ཁ་ཕྱེ།</string>
+    <string name="IDS_ST_HEADER_GAME_MODE">རྩེད་མོའི་རྣམ་པ།</string>
+    <string name="IDS_ST_OPT_APPS_THAT_CAN_APPEAR_ON_TOP">ཀླད་ཐོག་ཏུ་མངོན་ཐུབ་པའི་མཉེན་ཆས།</string>
+    <string name="IDS_ST_TPOP_CANT_CHANGE_THIS_SETTING_WHILE_PS_IS_ON">%s ཁ་ཕྱེ་བའི་སྐབས་སུ་སྒྲིག་འགོད་འདི་སྒྱུར་མི་ཐུབ།</string>
+    <string name="IDS_ST_TPOP_TO_UNPIN_APPLICATION_PRESS_AND_HOLD_THE_RECENTS_AND_BACK_KEYS_AT_THE_SAME_TIME">གལ་ཏེ་བརྟན་གནས་ཉེར་སྤྱོད་བྱ་རིམ་རྩིས་མེད་དུ་གཏོང་ན།ཁྱེད་ཀྱིས་ཉེ་ལམ་མཐེབ་དང་ཕྱིར་ལོག་མཐེབ་མཉམ་དུ་ནོན་རོགས།</string>
+    <string name="IDS_SYS_BODY_CODE_GENERATION_VER">20170629_0707</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P1">游戏中心个人信息收集和使用同意书</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P10">"本公司制定了必要的隐私政策修订流程，以便持续改进隐私政策。此外，如果对隐私政策进行了修订，必须赋予其一个版本号，以便轻松识别修订详情。
+本政策自 2016 年 8 月 8 日起生效，任何修订都将在网站上公布 (或者以书面、电子邮件、电话、短信息等方式单独通知)。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P11">"1. 我们收集的信息以及信息收集方式
+(1) 我们收集的信息
+本公司在您注册或使用我们的服务时会收集以下信息。
+必需信息
+关于您的设备型号、通用唯一标识符 (UUID)、IP 地址、设备操作系统、时区、MCC、MNC、配置、安装在您设备上的应用程序包以及您的服务使用记录的信息
+本公司不会收集可能会显著侵犯您的隐私 (意识形态、信念、加入或退出联盟或政党、政治主张、健康和性生活信息等等) 的敏感信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P12">"一般情况下，如果您未满 14 周岁，本公司不会收集您的信息。
+如果本公司必须收集 14 周岁以下用户的个人信息才能供其使用该服务，公司将会提前获取其法定监护人的同意，在进行该工作过程中仔细管理个人信息，并在相关工作完成后立刻销毁该信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P13">"(2) 我们如何收集个人信息
+在运行或使用游戏中心服务的过程中收集信息
+通过用户的设备进行收集
+抽奖项目和参与活动
+借助自动生成信息收集工具进行收集
+本公司制定了一个流程，允许您针对《个人信息收集和使用同意书》文档的各项条款选择“我同意”或“我不同意”。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P14">"2. 我们如何使用收集到的信息
+我们会将收集的信息用于以下用途：
+(1) 按照合同为您提供服务
+将新安装的游戏应用程序自动放置在游戏中心文件夹中
+提供一些有用的功能，例如“游戏省电模式”、“游戏中关闭提醒”、“游戏工具”等等
+为用户提供优化的服务 (根据以往的服务使用情况提供自定义内容和推荐)
+(2) 改善服务及运用于广告、市场营销等
+统计分析、市场趋势预测、服务改进，以及新服务的研发
+提供活动或特别优惠等广告信息，并根据客户群体的特点提供服务和广告"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P15">"3. 信息的保留和使用期限
+原则上，一旦达到收集和使用您的个人信息的目的，该个人信息即被立刻销毁。
+但是，如果相关法律法规规定公司必须保留您的个人信息，则公司会遵照如下所述的适用规定保留您的个人信息。在此类情况下，公司应将个人信息转移至单独的数据库 (DB) 或另外一个存储位置。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P16">"5 年的合同或订阅撤销记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+5 年的付款和供货记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 年的消费者投诉和纠纷处理记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 年的信用信息收集、处理和使用记录 (Use and Protection of Credit Information Act (《信用信息利用及保护法》))
+6 个月的显示/广告记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 个月的互联网日志/位置跟踪数据 (Protection of Communications Secrets Act (《通信隐私保护法》))
+6 个月的其他用于验证通信的数据 (Protection of Communications Secrets Act (《通信隐私保护法》))"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P17">"4. 个人信息的销毁流程及方式
+您的个人信息将通过以下流程和方法进行销毁。
+(1) 销毁流程
+在达成目的之后，您的个人信息将会被转移至单独的 DB 中 (如果是纸质形式，则转移至单独的档案柜中)，并根据内部政策和其他相关法律项下的信息保护理由 (参见“信息的保留和使用期限”) 保留一段时间，然后再销毁。转移至单独 DB 中的个人信息不得用于除存储之外的任何其他目的，法律另有规定时除外。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P18">"(2) 销毁方式
+以电子文件格式存储的个人信息应采用使其无法再现的技术方式进行删除。
+印在纸上的个人信息应撕碎或焚毁。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P19">"5. 委托及海外传输所收集的个人信息
+本公司将个人信息的处理委托给如下所述的外部专门代理机构，以提供服务。仅在必要时，才出于服务履行目的而将个人信息的处理委托给每个服务的各个代理机构。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P2">"1. 我们收集的信息
+三星电子株式会社 (以下简称“公司”) 在您注册或使用我们的服务时会收集以下信息。
+当您同意我们收集和使用您的个人信息时，您有权拒绝我们收集和使用不是本服务必需的个人信息。
+有关我们如何处理您的信息的详细信息，请参阅游戏中心“设置”>“关于游戏中心”界面中披露的“隐私政策”。然而，如果本协议条款和隐私政策之间存在任何不一致或冲突，应以本协议条款为准。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P20">"当委托代理机构处理个人信息时，为了确保对个人信息的保护，本公司应明确规定严格遵守个人信息保护相关的说明、个人信息相关的保密条款、禁止向第三方提供信息、发生事故时的责任承担、委托期限、完成信息处理之后个人信息的返还或销毁等等，且本公司应对此进行监督，以确保代理机构安全处理个人信息。
+如果代理机构或委托的工作发生改变，将通过网站通知进行公布 (或者以书面或电子邮件、电话、短信息等方式单独通知)。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P21">"6. 向第三方提供个人信息
+一般情况下，本公司不会将您的个人信息提供给第三方。但是，以下情况例外：
+根据法律规定，或者调查机关出于调查目的按照法律规定的程序和方式要求时
+所提供的账单付款服务需要时
+信息在以一种无法用来识别特定个人的方式处理之后，出于统计、学术或市场研究目的而提供
+用户提前同意提供
+本公司提供或共享您的个人信息时，除上述所列情况之外，仅在经过一个单独流程获得您的同意之后，才会提供该信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P22">"7. 用户及其法定代表的权利以及如何行使这些权利
+用户及其法定代表始终可以请求访问、修改、删除、结束处理以及撤回与注册用户本人或 14 周岁以下用户的个人信息相关的同意。
+您可以拨打我们的主要联系电话 (1588-3366) 或者以书面方式、电话或电子邮件联系隐私主管。我们将立刻采取必要措施。
+在下列情况下，本公司可能会拒绝您访问、修改或删除您的所有或部分个人信息：
+法律禁止或限制访问
+可能会危害他人生命或身体，或者不当侵犯他人的财产或其他利益"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P23">"如果用户请求修改个人信息中的错误，在修改完成之前，相关的个人信息不会被使用或提供给第三方。此外，如果已将错误信息提供给第三方，我们将立即向第三方通知修改的结果。
+当用户或其法定代表请求删除或结束处理个人信息时，本公司将按照“3. 信息的保留和使用期限”中的规定进行处理，并确保不会出于任何其他目的访问或使用该信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P24">"请准确输入您最新的个人信息。您须对输入不准确信息导致的任何事故承担责任，而且如果您输入虚假信息 (例如盗用他人信息)，则可能会丧失会员特权。
+您有义务保护自己并且不侵犯他人信息，并有权让自己的信息受到保护。请小心，不要泄露包括密码在内的个人信息，并注意不得破坏他人的个人信息，包括任何帖子。如果您无法履行这些责任，破坏了他人的信息和尊严，您将受到“Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.”(《促进信息通信网络利用及信息保护法》) 或其他规定的处罚。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P25">"8. 安装、运行及拒绝自动收集个人信息的系统
+(仅在受“Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.”(《促进信息通信网络利用及信息保护法》) 约束的情况下适用)
+本公司利用的是“Cookie”，它通常用于存储和查找用户信息。Cookie 是一种非常小的文本文件，由运行本公司网站的服务器发送至用户的浏览器中，并存储在用户计算机的硬盘中。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P26">"(1) Cookie 的用途
+Cookie 用于以下目的：执行自动登录功能，分析会员和非会员的访问频率或访问时间，识别用户偏好和兴趣并跟踪用户，通过确认不同活动的参与率以及访问次数提供有针对性的市场营销和个性化的服务。
+(2) 如何阻止 Cookie
+您有权选择安装 Cookie。因此，您可以在您的网页浏览器中设置选项，允许所有 Cookie，每次存储 Cookie 时请求您确认，或者阻止所有 Cookie。
+不过，如果您阻止 Cookie，可能会在使用我们的服务时遇到困难。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P27">"如何设置 Cookie (针对 Internet Explorer 8.0)
+：从“工具”菜单中选择“Internet 选项”。点击“隐私”选项卡。
+使用“设置”来设定您可接受的 Cookie 等级。
+如何查看接收的 Cookie (针对 Internet Explorer 8.0)
+：从“工具”菜单中选择“Internet 选项”。
+点击“常规”选项卡，点击“浏览历史记录”中的“设置”，再点击“查看文件”进行查看。
+如何阻止 Cookie (针对 Internet Explorer 8.0)
+：从“工具”菜单中选择“Internet 选项”。点击“隐私”选项卡。
+使用“设置”来设定成最高等级“阻止所有 Cookie”。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P28">"9. 其他与隐私相关的政策
+(1) 保护您隐私的技术和管理措施
+本公司将采取以下技术和管理措施来处理您的个人信息，以确保个人信息的安全，使其不会丢失、被盗、泄露、改变或篡改。
+内部管理计划的制定与实施
+本公司已制定并实施内部管理计划，以安全处理您的个人信息。
+本公司检查隐私保护措施是否得以执行，以及主管人员是否遵守内部隐私工作组的规定等，并确保在发现问题时立即采取整改措施。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P29">"访问控制系统的安装和运行
+本公司通过使用入侵防御系统来控制未经授权的外部访问，并尽力为其配备所有可用的技术系统来获得安全系统。
+防止伪造和篡改访问记录的措施
+本公司存储和管理个人信息处理系统的访问记录，并使用安全功能防止伪造或篡改访问记录。
+个人信息的加密
+您的个人信息采用密码保护；通过对文件和传输数据进行加密或文件锁定来存储和管理个人信息，重要数据则通过额外的安全功能进行保护。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P3">"必需信息
+关于您的设备型号、通用唯一标识符 (UUID)、IP 地址、设备操作系统、时区、MCC、MNC、配置、安装在您设备上的应用程序包以及您的服务使用记录的信息
+您可以拒绝同意我们收集和使用必需信息，但这样您将无法使用我们的服务，因为这类信息是我们为您提供服务所必需的。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P30">"防止黑客攻击
+本公司利用疫苗程序来预防计算机病毒造成的危害。定期更新疫苗程序；当突然出现新病毒时，会尽快提供可用疫苗，以防侵害个人信息。
+本公司采用了 SSL (安全套接层)，可通过使用加密算法在网络中安全传输个人信息。
+每台服务器使用一个入侵防御系统和脆弱性评估系统等来全面预防黑客攻击等外部入侵。
+个人信息单独存放在单独的服务器中，不与一般信息混合。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P31">"尽量减少主管人员人数并对他们进行教育
+本公司限制以下人员访问用户的个人信息：直接与用户合作执行营销职能的人员、执行个人信息管理的人员 (例如，主管隐私保护的人员) 以及其他因工作性质而无法避免处理个人信息的人员。
+本公司为处理个人信息的员工提供常规的内部培训以及关于新安全技术、保护个人信息职责等方面的委外培训。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P32">"本公司利用在加入公司时授予全体员工的担保抵押来防止人员的信息泄露，并有适当的内部流程来检查隐私政策的实施和员工的合规性。
+在彻底维护安全的同时，处理个人信息的人员的职责和责任所发生的转移，以及入职后和离职后发生隐私相关事故的责任也已划分明确。
+机房、数据中心和数据存储室被设为特殊保护区域，并控制这些区域的人员进出。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P33">"(2) 关于提供网站链接的政策
+本公司可为用户提供前往其他公司的网站或资源的链接，用户可通过三星的服务使用由第三方开发的产品和服务。例如，可通过 Samsung Apps 下载和使用第三方应用程序。
+在此类情况下，本公司无法控制第三方的网站、资源、产品和服务，因此不会对所提供产品、服务或资源的使用承担责任或提供保证。当您通过点击本公司网站上的链接而重定向到第三方的网站时，重定向网站的隐私政策与本公司无关。请仔细阅读重定向网站的隐私政策。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P34">"(3) 帖子管理政策
+本公司十分重视您发布的帖子，并且尽力保护您的帖子不被修改、篡改或删除。但是，以下情况例外：
+类似垃圾帖子
+通过散布虚假信息诽谤他人以便诋毁他人的帖子
+未经同意泄露他人个人信息的帖子
+侵犯本公司或第三方权利 (例如，知识产权) 的帖子
+与版块主题无关的帖子"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P35">"为了促进令人满意的版块用途，当未经同意便张贴他人个人信息时，本公司可删除该帖子的某些部分，或者用符号等替换这些内容；如果帖子可移至另一个主题版块，则在该帖子中注明移动路径，以免造成误会。
+在其他情况下，可在明确警告或单独提醒之后删除该帖子。
+基本上，您拥有与您的帖子相关的所有权利并承担所有责任。此外，您的帖子中主动披露的信息无法受到保护，因此在披露信息之前请慎重考虑。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P36">"(4) 关于拒绝未经授权收集电子邮件地址的政策
+本公司拒绝通过电子邮件收集程序或任何其他技术系统未经授权收集张贴的电子邮件地址。如果您违反本政策，可能会受到“Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.”(《促进信息通信网络利用及信息保护法》) 或其他规定的处罚。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P37">"(5) 广告信息的传输
+在您明确拒绝接收的情况下，本公司不会出于商业目的传输广告信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P38">"如果您同意接收产品信息、电子简报等电子邮件，本公司将按照以下规定填写电子邮件的主题和正文，以便您可以轻松识别这些邮件。
+“广告资料”字样不会在主题行显示，而邮件正文的主要内容会在主题行显示。
+邮件正文会注明您可以退订的发件人姓名、电子邮件地址和电话号码，以及您如何轻松退订。
+当出于商业目的通过电子邮件以外的媒介 (例如，传真、手机短信息等) 发送广告信息时，本公司将按照适用的法律采取必要的措施，例如，在信息开头标注“广告资料”字样。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P39">"10. 隐私主管和客服部信息
+本公司有一名指定的隐私主管及相关部门负责保护您的个人信息，并处理隐私相关的投诉。
+(1) 客服部
+客服部：Graphic R&amp;D Group, Mobile Communications Business, Samsung Electronics Co., Ltd.
+电话：1588-4730
+联系我们：https://help.content.samsung.com
+(2) 隐私主管和负责隐私相关工作的部门
+隐私主管：隐私秘书处
+负责隐私相关工作的部门：全球隐私办公室
+电话：1588-4730
+联系我们：privacy.sec@samsung.com"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P4">"2. 我们如何使用收集到的信息
+我们会将收集的信息用于以下用途：
+(1) 按照合同为您提供服务
+将新安装的游戏应用程序自动放置在游戏中心文件夹中
+提供一些有用的功能，例如“游戏省电模式”、“游戏中关闭提醒”、“游戏工具”等等
+为用户提供优化的服务 (根据以往的服务使用情况提供自定义内容和推荐)
+(2) 改善服务及运用于广告、市场营销等
+统计分析、市场趋势预测、服务改进，以及新服务的研发
+提供活动或特别优惠等广告信息，并根据客户群体的特点提供服务和广告"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P40">"(3) 其他机构
+您可以向隐私主管或相关负责部门报告所有因使用本公司服务而引起的隐私相关的投诉。本公司将会及时向您提供恰当的回应。
+如果您希望上报其他侵犯隐私的问题或者寻求相关建议，请联系以下机构：
+隐私侵犯投诉中心 (www.118.or.kr/ 118)
+最高检察官办公室；互联网犯罪调查中心 (www.spo.go.kr / 02-3480-3600)
+国家警署；网络恐怖主义响应中心 (www.ctrc.go.kr / 02-392-0330)
+隐私政策版本号：V1.0
+隐私政策有效日期：2016 年 8 月 8 日"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P5">"3. 信息的保留和使用期限
+原则上，一旦达到收集和使用您的个人信息的目的，该个人信息即被立刻销毁。
+但是，如果相关法律法规规定公司必须保留您的个人信息，则公司会遵照如下所述的适用规定保留您的个人信息。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P6">"5 年的合同或订阅撤销记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+5 年的付款和供货记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 年的消费者投诉和纠纷处理记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 年的信用信息收集、处理和使用记录 (Use and Protection of Credit Information Act (《信用信息利用及保护法》))
+6 个月的显示/广告记录 (Act on the Consumer Protection in Electronic Commerce, Etc. (《电子商务类消费者权益保护法》))
+3 个月的互联网日志/位置跟踪数据 (Protection of Communications Secrets Act (《通信隐私保护法》))
+6 个月的其他用于验证通信的数据 (Protection of Communications Secrets Act (《通信隐私保护法》))"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P7">游戏中心隐私政策</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P8">"三星电子株式会社 (以下简称“公司”) 十分重视您的个人信息，并承诺遵守“Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.” (《促进信息通信网络利用及信息保护法》) 和“Personal Information Protection Act” (《个人信息保护法》)。
+在本隐私政策中，本公司将告知您，我们针对从您那里收到的个人信息的使用目的和使用方法，以及将会采取什么措施保护您的隐私。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P9">"0. 一般条款
+“个人信息”指关于生命个体的信息，可通过姓氏、名字、居民登记号或社会保险号等数据识别相关个人。它包括虽然自身无法用于识别个人身份、但容易结合其他信息来识别特定个人的信息。
+本公司通过在游戏中心“设置”>“关于游戏中心”界面中披露的“隐私政策”，让您可随时轻松访问本隐私政策。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P1_LEGALHPRASE">"游戏中心 - 隐私声明
+本隐私声明描述了您的信息是如何进行收集、使用和分享，从而用于向您提供游戏中心 (以下简称“服务”) 的，因而非常重要。根据本隐私声明，三星电子株式会社 (以下简称“三星”、“我们”、“我方”、“我们的”) 将对此类信息负责，并且负责收集、使用以及分享此类信息。如果您使用本服务，则将视为您无条件地同意遵守本隐私声明的条款。
+本隐私声明系三星隐私政策 (参见 https://account.samsung.com/membership/pp) 之补充，如果本隐私声明的条款和三星隐私政策的条款存在不一致或冲突，应以本隐私声明的条款为准。
+如果您对此隐私声明或我们的做法存有疑问，您可以通过下文中列出的联系方式联系我们。
+"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P2_LEGALHPRASE">"我们会收集和使用哪些信息?
+我们会收集有关您安装的应用程序名称信息以及有关您所玩游戏的信息。我们可能会将此类信息用于以下用途：
+提供服务功能；
+根据您过去的服务使用活动提供有关移动游戏的个性化建议；
+用于评估和分析我们的市场、客户、产品和服务；
+了解人们如何使用服务，以便改进服务并开发新的服务。"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P3_LEGALHPRASE">"我们会向谁披露您的信息?
+未经您同意，我们不会向第三方披露您的信息以用于其自身的业务目的。但是，我们可以向代表三星参与服务提供过程的第三方披露您的信息。
+如果您存有任何疑问，您应该与谁联系?
+如果您对游戏中心存有任何疑问，请通过我们的客户支持渠道联系我们。如果您仅对您的信息存有疑问，请通过以下网站联系我们：
+http://help.content.samsung.com
+"</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_CHINA">1. 许可授予</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_OPEN">1. 许可授予</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_US">1.许可授予</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_CHINA">根据这些 TOS，三星授予您安装、访问和使用本服务所需的有限、非独占且可撤销的许可。此外，本服务或任何更新（定义见下文）提供的服务和功能可能会由于某些因素而有所不同或受到限制，这些因素包括但不限于您所在的国家或地区、使用的设备、操作系统或网络运营商。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_OPEN">根据这些 TOS，三星授予您安装、访问和使用本服务所需的有限、非独占且可撤销的许可。此外，本服务或任何更新（定义见下文）提供的服务和功能可能会由于某些因素而有所不同或受到限制，这些因素包括但不限于您所在的国家或地区、使用的设备、操作系统或网络运营商。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_US">根据这些 TOS，三星授予您安装、访问和使用本服务所需的有限、非独占且可撤销的许可。此外，本服务或任何更新（定义见下文）提供的服务和功能可能会由于某些因素而有所不同或受到限制，这些因素包括但不限于您所在的国家或地区、使用的设备、操作系统或网络运营商。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_CHINA">2. 保留权利和所有权</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_OPEN">2. 保留权利和所有权</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_US">2.保留权利和所有权</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_CHINA">三星保留本服务中包含的以及与本服务相关的、但未在这些 TOS 中明确授予您的所有权利。本服务受版权及其他知识产权法律和条约保护。三星或其许可方拥有本服务的所有权、版权和其他知识产权。为避免疑义，本服务为授权予您，而非销售予您。未经三星批准，您不得向任何第三方转让这些 TOS 或本文授予或施加的任何关于本服务的权利或义务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_OPEN">三星保留本服务中包含的以及与本服务相关的、但未在这些 TOS 中明确授予您的所有权利。本服务受版权及其他知识产权法律和条约保护。三星或其许可方拥有本服务的所有权、版权和其他知识产权。为避免疑义，本服务为授权予您，而非销售予您。未经三星批准，您不得向任何第三方转让这些 TOS 或本文授予或施加的任何关于本服务的权利或义务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_US">三星保留本服务中包含的以及与本服务相关的、但未在这些 TOS 中明确授予您的所有权利。本服务受版权及其他知识产权法律和条约保护。三星或其许可方拥有本服务的所有权、版权和其他知识产权。为避免疑义，本服务为授权予您，而非销售予您。未经三星批准，您不得向任何第三方转让这些 TOS 或本文授予或施加的任何关于本服务的权利或义务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_CHINA">3. 限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_OPEN">3. 限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_US">3.限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_CHINA">不得 (i) 反向工程、反编译、反汇编或以其他方式试图发现本服务的源代码或算法；(ii) 修改本服务的任何功能或使其瘫痪；(iii) 基于本服务创建衍生作品；以及 (iv) 公开展示、公开执行、转让、出售、许可、分发、出租、租赁、出借、再许可本服务或提供关于本服务的商业托管服务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_OPEN">不得 (i) 反向工程、反编译、反汇编或以其他方式试图发现本服务的源代码或算法；(ii) 修改或禁用本服务的任何功能；(iii) 基于本服务创建衍生作品；以及 (iv) 出租、租赁、出借、再许可本服务或提供关于本服务的商业托管服务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_US">不得 (i) 反向工程、反编译、反汇编或以其他方式试图发现本服务的源代码或算法；(ii) 修改本服务的任何功能或使其瘫痪；(iii) 基于本服务创建衍生作品；以及 (iv) 公开展示、公开执行、转让、出售、许可、分发、出租、租赁、出借、再许可本服务或提供关于本服务的商业托管服务；(v) 侵犯我方或与您使用本服务相关的任何第三方的知识产权（此处“使用”以本协议授权范围为限）；</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_CHINA">4. 更新、更改或暂停本服务</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_OPEN">4. 更新、更改或暂停本服务</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_US">(vi) 以非法方式、出于违法目的或以任何不符合这些 TOS 的方式使用本服务，或有恶意或欺诈行为，如侵入本服务或任何操作系统，或在本服务或任何操作系统中插入恶意代码（包括病毒及有害数据）；(vii) 以可能损害系统、导致系统瘫痪、降低或影响系统性能、加重系统负担，或危及系统安全或干扰其他用户的方式使用本服务；以及 (viii) 收集或获取本服务或我方系统中的任何信息或数据，或者企图破译传输到运行本服务的服务器或来自该服务器的任何内容。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_CHINA">三星可随时提供或发布本服务的更新或升级（以下简称“更新”），包括但不限于漏洞修复程序、服务增强功能、新功能、删除现有功能或对本服务进行修改。更新将受这些 TOS 的约束，除非此类更新另行提供相应的条款和条件，在这种情况下，更新应受这些单独条款和条件的约束。在适用法律允许的范围内，系统可能会根据接收相应更新的重要程度及时地自动下载并安装安全软件更新、重大漏洞修补程序或其他重要更新。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_OPEN">三星可随时提供或发布本服务的更新或升级（以下简称“更新”），包括但不限于漏洞修复程序、服务增强功能、新功能、删除现有功能或对本服务进行修改。更新将受这些 TOS 的约束，除非此类更新另行提供相应的条款和条件，在这种情况下，更新应受这些单独条款和条件的约束。系统可能会根据接收此类更新的重要程度及时地自动下载并安装安全软件更新、重大漏洞修补程序或其他重要更新。三星明确保留在不通知的情况下随时更改、暂停、取消、限制使用或禁用本服务或其任何部分的访问权限的权利，且无需承担任何责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_US">4. 更新、更改或暂停本服务</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_CHINA">5. 第三方服务和内容</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_OPEN">5. 第三方服务和内容</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_US">三星可随时提供或发布本服务的更新或升级（以下简称“更新”），包括但不限于漏洞修复程序、服务增强功能、新功能、删除现有功能或对本服务进行修改。更新将受这些 TOS 的约束，除非此类更新另行提供相应的条款和条件，在这种情况下，更新应受这些单独条款和条件的约束。系统可能会根据接收此类更新的重要程度及时地自动下载并安装安全软件更新、重大漏洞修补程序或其他重要更新。三星明确保留在不通知的情况下随时更改、暂停、取消、限制使用或禁用本服务或其任何部分的访问权限的权利，且无需承担任何责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_CHINA">通过本服务，您也可能获得第三方服务和/或内容。三星不在任何方面对任何第三方服务或内容作任何担保或声明，包括但不限于这些服务和内容的质量、准确性、有效性、不含病毒、不侵犯第三方权利并且遵守所有适用的法律或法规。第三方服务和内容的使用可能会受第三方供应商的使用条款、或者任何许可协议、隐私政策或其他此类协议的约束。本服务的某些部分受开源许可约束，在这种情况下，在使用本服务的这一部分时，此类开源许可的条款优先于这些 TOS 的规定。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_OPEN">通过本服务，您也可能获得第三方服务和/或内容。三星不在任何方面对任何第三方服务或内容作任何担保或声明，包括但不限于这些服务和内容的质量、准确性、有效性、不含病毒、不侵犯第三方权利并且遵守所有适用的法律或法规。第三方服务和内容的使用可能会受第三方供应商的使用条款、或者任何许可协议、隐私政策或其他此类协议的约束。本服务的某些部分受开源许可约束，在这种情况下，在使用本服务的这一部分时，此类开源许可的条款优先于这些 TOS 的规定。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_US">5.监控权 - 第三方服务和内容</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_CHINA">服务条款</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_OPEN">服务条款</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_US">服务条款</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_CHINA">6. 同意收集和使用数据</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_OPEN">6. 同意收集和使用数据</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_US">5.1 监控权。三星有权但没有义务监控您对本服务的使用情况、您的帐户、内容和通信，并由三星自行决定它们是否违反这些 TOS 的规定。三星保留收集关于本服务使用情况的数据（包括许可密钥号及其他被视为相关的信息）的权利，以确保本服务的使用符合这些 TOS 的规定。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_CHINA">您确认并同意，三星和/或由三星委托的各方可收集和使用必要的信息，以提供本服务和更新并改进或增强本服务。我们将始终按照三星隐私政策的规定对您的信息加以处理，详细政策信息请访问 https://account.samsung.com/membership/pp。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_OPEN">您确认并同意，三星和/或由三星委托的各方可收集和使用必要的信息，以提供本服务和更新并改进或增强本服务。我们将始终按照三星隐私政策的规定对您的信息加以处理，详细政策信息请访问 https://account.samsung.com/membership/pp。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_US">任何未经授权的使用行为均会被三星视为违反这些 TOS 的规定。您同意不以电子或其他方式阻止传输遵守这些 TOS 规定所需的数据。任何阻止这些遵守 TOS 所需数据的行为均被视为违反这些 TOS 的规定，并可能导致您对本服务的使用权利立即终止。三星保留监控或参与您与其他用户之间的争端的权利，但无义务这样做。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_CHINA">7. 数据访问</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_OPEN">7. 数据访问</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_US">5.2 第三方服务和内容。通过本服务，您也可能获得第三方服务和/或内容。三星不在任何方面对任何第三方服务或内容作任何担保或声明，包括但不限于这些服务和内容的质量、准确性、有效性、不含病毒、不侵犯第三方权利并且遵守所有适用的法律或法规。第三方服务和内容的使用可能会受第三方供应商的使用条款、或者任何许可协议、隐私政策或其他此类协议的约束。本服务的某些部分受开源许可约束，在这种情况下，在使用本服务的这一部分时，此类开源许可的条款优先于这些 TOS 的规定。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_CHINA">本服务的某些功能可能需要您的移动设备能够访问互联网，并且可能受到您的网络或互联网供应商所施加的限制的约束。本服务可能需要通过移动网络访问互联网，这可能会产生额外的费用，具体取决于您的付款计划。此外，您对本服务的某些功能的使用可能受到您的设备硬件或数据访问权的适用性和性能的影响。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_OPEN">本服务的某些功能可能需要您的移动设备能够访问互联网，并且可能受到您的网络或互联网供应商所施加的限制的约束。本服务可能需要通过移动网络访问互联网，这可能会产生额外的费用，具体取决于您的付款计划。此外，您对本服务的某些功能的使用可能受到您的设备硬件或数据访问权的适用性和性能的影响。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_US">6.同意收集和使用数据</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_CHINA">8. 遵守法律</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_OPEN">8. 遵守法律</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_US">您确认并同意，三星和/或由三星委托的各方可收集和使用必要的信息，以提供本服务和更新并改进或增强本服务。我们将始终按照三星隐私政策的规定对您的信息加以处理，详细政策信息请访问 https://account.samsung.com/membership/pp。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_CHINA">您确认并同意，在使用本服务时遵守所有适用的法律和法规，包括但不限于所有适用的出口限制法律和法规。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_OPEN">您确认并同意，在使用本服务时遵守所有适用的法律和法规，包括但不限于所有适用的出口限制法律和法规。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_US">7.数据访问</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_CHINA">9. 终止</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_OPEN">9. 终止</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_US">本服务的某些功能可能需要您的移动设备能够访问互联网，并且可能受到您的网络或互联网供应商所施加的限制的约束。本服务可能需要通过移动网络访问互联网，这可能会产生额外的费用，具体取决于您的付款计划。此外，您对本服务的某些功能的使用可能受到您的设备硬件或数据访问权的适用性和性能的影响。您自行负责承担网络供应商收取的与使用本服务相关的一切费用。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_CHINA">这些 TOS 在终止之前一直有效。您可以通过停止使用本服务并卸载、删除和退还由三星提供的所有相关软件、文档和其他材料（包括备份副本）来终止这些 TOS。如果您未遵守这些 TOS，三星将自动终止您根据这些 TOS 享有的权利，且不会事先通知。这些 TOS 终止后，您必须立即停止对本服务的所有使用。明确起见，三星可能会在提前三十 (30) 天通知您后，再行终止这些 TOS 和本服务（通过服务网站、应用程序中的弹出信息和电子邮件等方式）。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_OPEN">这些 TOS 在终止之前一直有效。您可以通过停止使用本服务并卸载、删除和退还由三星提供的所有相关软件、文档和其他材料（包括备份副本）来终止这些 TOS。如果您未遵守这些 TOS，三星将自动终止您根据这些 TOS 享有的权利，且不会事先通知。这些 TOS 终止后，您必须立即停止对本服务的所有使用。明确起见，三星可能会在提前三十 (30) 天通知您后，再行终止这些 TOS 和本服务（通过服务网站、应用程序中的弹出信息和电子邮件等方式）。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_US">8.遵守法律</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_CHINA">10. 担保免责声明</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_OPEN">10. 担保免责声明</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_US">您确认并同意，在使用本服务时遵守所有适用的法律和法规，包括但不限于所有适用的出口限制法律和法规。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_CHINA">在适用法律所允许的最大范围内，本服务按“原样”在“现有”基础上提供，三星不做任何种类的明示或暗示担保。在适用法律允许的最大范围内，三星不做任何明示、暗示或法定担保，包括但不限于有关适销性、质量或工艺令人满意、针对特定用途的适用性、可靠性或可用性、准确性、不含病毒、安宁使用、不侵犯第三方权利或不侵害其他权利的暗示担保。有些司法辖区不允许免除或限制暗示担保，因此上述免除或限制规定可能不适用于您。您从三星或其附属公司获取的任何口头或书面建议或信息，都不应视为将会改变三星针对本服务做出的此担保免责声明，也不应视为将会构成三星做出的任何种类的担保。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_OPEN">在适用法律所允许的最大范围内，本服务按“原样”在“现有”基础上提供，三星不提供任何种类的明示或暗示的担保或合同条件。在适用法律允许的最大范围内，三星不做任何明示、暗示或法定担保，包括但不限于有关适销性、质量或工艺令人满意、针对特定用途的适用性、可靠性或可用性、准确性、不含病毒、安宁使用、不侵犯第三方权利或不侵害其他权利的暗示担保。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_US">9.终止</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_CHINA">重要信息 – 请仔细阅读。这些服务条款（以下简称“TOS”）是您与三星电子株式会社和/或其附属公司（以下统称“三星”）之间就游戏中心及其中包含的任何相关软件或文档（以下统称“服务”）达成的法律协议。同意这些 TOS 或者安装或以其他方式使用本服务，即表示您同意遵守这些 TOS。如果您不同意这些 TOS，请不要安装或使用本服务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_OPEN">重要信息 – 请仔细阅读。这些服务条款（以下简称“TOS”）是您与三星电子株式会社和/或其附属公司（以下统称“三星”）之间就游戏中心及其中包含的任何相关软件或文档（以下统称“服务”）达成的法律协议。同意这些 TOS 或者安装或以其他方式使用本服务，即表示您同意遵守这些 TOS。如果您不同意这些 TOS，请不要安装或使用本服务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_US">重要信息 – 请仔细阅读。这些服务条款（以下简称“TOS”）是您与三星电子株式会社和/或其附属公司（以下统称“三星”）之间就游戏中心及其中包含的任何相关软件或文档（以下统称“服务”）达成的法律协议。同意这些 TOS 或者安装或以其他方式使用本服务，即表示您同意遵守这些 TOS。如果您不同意这些 TOS，请不要安装或使用本服务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_CHINA">11. 责任限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_OPEN">有些司法辖区不允许免除或限制暗示担保，因此上述免除或限制规定可能不适用于您。您从三星或其附属公司获取的任何口头或书面建议或信息，都不应视为将会改变三星针对本服务做出的此担保免责声明，也不应视为将会构成三星做出的任何种类的担保。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_US">9.1 有效日期。这些 TOS 自您接受这些 TOS 时起生效，或自您下载、访问或以其他方式使用本服务时起生效。本服务无预定终止日期，可持续至三星决定终止本服务时或这些 TOS 根据本文条款的规定终止时。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_CHINA">除由于故意或重大过失行为外，三星不对因使用或无法使用本服务、其内容或功能所引起的或与之相关的任何损害负责，包括但不限于由于错误、疏忽、中断、缺陷、操作或传输延误、计算机病毒、连接失败、网络收费所导致的或与之相关的损害，以及所有其他直接损害，即使三星已被告知此类损害发生的可能性。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_OPEN">11. 责任限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_US">9.2 终止。如果您未遵守或三星有理由怀疑您未遵守任何这些 TOS 规定，则三星将在不通知您的情况下，自行以不限制三星的其他权利和补救措施（所有这些都已明确保留）的方式立即终止您对本服务的访问权限并终止这些 TOS，而您仍将对终止日期前（包括终止日期在内）的所有应付款项（如有）负责。您也可通过停止使用本服务并卸载、删除和退还由三星提供的所有相关软件、文档和其他材料（包括备份副本）来终止这些 TOS。这些 TOS 终止后，您必须立即停止对本服务的所有使用。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_CHINA">三星不对任何间接、特殊、偶然、惩戒性或后果性损害负责。某些司法辖区不允许排除或限制附带或后果性损害，因此，上述排除或限制规定可能不适用于您。尽管存在上述规定，对于您因使用本服务所引起的，或者基于这些 TOS 的任何其他规定所主张的所有损失、损害以及相关诉讼（包括但不限于基于合同、民事侵权行为或任何其他事由主张的损失、损害和讼诉），三星对您的赔偿总额都不应超出您为使用此服务专门支付给三星的金额。这些 TOS 中的上述限制、除外责任和免责声明将在适用法律所允许的最大范围内应用，即使所有补救措施都未能达到其基本目的也是如此。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_OPEN">三星不对因使用或无法使用本服务、其内容或功能所引起的或与之相关的任何损害负责，包括但不限于由于错误、疏忽、中断、缺陷、操作或传输延误、计算机病毒、连接失败、网络收费所导致的或与之相关的损害，以及所有其他直接、间接、特殊、附带、惩戒性或后果性损害，即使三星已被告知可能发生此类损害也是如此。某些司法辖区不允许排除或限制附带或后果性损害，因此，上述排除或限制规定可能不适用于您。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_US">10.担保免责声明</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_CHINA">12 .适用的法律</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_OPEN">尽管存在上述规定，对于您因使用本服务所引起的，或者基于这些 TOS 的任何其他规定所主张的所有损失、损害以及相关诉讼（包括但不限于基于合同、民事侵权行为或任何其他事由主张的损失、损害和讼诉），三星对您的赔偿总额都不应超出您为使用此服务专门支付给三星的金额。这些 TOS 中的上述限制、除外责任和免责声明将在适用法律所允许的最大范围内应用，即使所有补救措施都未能达到其基本目的也是如此。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_US">本服务按“原样”、“原位置”和“原可用性”提供，不含任何种类的担保。三星及其许可方不对本服务提供任何种类或性质的任何明示或默示的声明、担保或保证，并明确否认所有此类担保，包括但不限于对适销性、针对特定用途的适用性和非侵权性的任何默示担保。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_CHINA">这些 TOS 受您所属司法辖区的法律的制约，但不考虑其法律冲突规定。这些 TOS 不受《联合国国际货物销售合同公约》的约束，在此明确排除后者的适用性。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_OPEN">12. 适用的法律</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_US">在不限制上述免责声明的情况下，三星及其许可方不对以下内容提供声明、担保或保证：本服务或其内容将 (i) 以不间断、及时、安全或无错误的方式运作，(ii) 始终可用或不包含任何有害组成部分或错误，(iii) 安全无虞或免受未经授权的访问（包括交付给您的内容或您提供的信息），或 (iv) 准确、完整或可靠，本服务的质量令您满意，或错误将得到更正。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_CHINA">13. 争议解决</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_OPEN">这些 TOS 受您所属司法辖区的法律的制约，但不考虑其法律冲突规定。这些 TOS 不受《联合国国际货物销售合同公约》的约束，在此明确排除后者的适用性。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_US">您从三星或其附属公司获取的任何口头或书面建议或信息，都不应视为将会改变三星针对本服务做出的此担保免责声明，也不应视为将会构成三星做出的任何种类的担保。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_CHINA">如果因这些 TOS 或您使用本服务引起的争议、争论或分歧不能协商一致解决，则应接受您所属司法辖区的法院的非专属性司法管辖。尽管有以上规定，三星仍可能会在任何具有司法管辖权的法院申请禁令救济（或同等种类的紧急法律救济）。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_OPEN">13. 争议解决</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_US">11.责任限制</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_CHINA">14. 完整协议</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_OPEN">如果因这些 TOS 或您使用本服务引起的争议、争论或分歧不能协商一致解决，则应接受您所属司法辖区的法院的非专属性司法管辖。尽管有以上规定，三星仍可能会在任何具有司法管辖权的法院申请禁令救济（或同等种类的紧急法律救济）。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_US">在法律允许的最大范围内，在任何情况下，三星及其许可方都不对您的任何间接、偶然、附带、特殊、衍生性以及惩戒性赔偿或利润损失承担任何责任，即使三星已被告知此类损害发生的可能性。无论基于何种责任理论，无论是欺诈、歪曲事实、违反合同、疏忽、人身伤害、产品责任、侵权还是任何其他理论，无论三星是否已被告知此类损害发生的可能性，此限制都将始终适用。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_CHINA">这些 TOS 是您与三星之间就本服务达成的完整协议，将取代其他所有之前或同期的与本服务或这些 TOS 涵盖的任何其他主题相关的口头或书面沟通、提议和表述。如果这些 TOS 的任何条款被认为无效、无约束力、无法执行或非法，则其他条款将继续保持完全的效力。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_OPEN">14. 完整协议</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_US">这表示，您在此放弃源自三星及其许可方的任何间接、偶然、特殊、衍生性、惩戒性或惩罚性的损害或利润损失的所有权利。对于您对任何其他方提出的可能需要三星为该方做出赔偿的任何索赔，此限制及弃权同样适用。对于任何数据丢失、与本服务相关联的安全违规行为、本服务中的任何内容、视频或通信，或其他因使用本服务而引起的问题，无论诉讼形式或索赔依据如何，我们都不承担任何责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART39_LEGALPHASE_OPEN">这些 TOS 是您与三星之间就本服务达成的完整协议，将取代其他所有之前或同期的与本服务或这些 TOS 涵盖的任何其他主题相关的口头或书面沟通、提议和表述。如果这些 TOS 的任何条款被认为无效、无约束力、无法执行或非法，则其他条款将继续保持完全的效力。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART39_LEGALPHASE_US">如果您选择与本服务的其他用户通信或直接与其会面，则我们不对可能发生在您和其他用户之间的通信或任何会面承担任何责任。如果您与我们产生争端或对本服务不满意，终止使用本服务是您将获得的唯一补救措施。我们不对您承担任何其他义务或责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_CHINA">关于本服务，请仔细阅读下列注意事项和免责声明：</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_OPEN">关于本服务，请仔细阅读下列注意事项和免责声明：</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_US">关于本服务，请仔细阅读下列注意事项和免责声明：</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART40_LEGALPHASE_US">12.赔偿</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART41_LEGALPHASE_US">对于任何及所有因以下行为引起的第三方索赔、诉讼、责任、损失、损坏、判决、费用和支出，包括律师费（以下统称为“索赔”），您将为三星及其母公司、子公司和关联公司、其所有高级职员、董事、代理和员工以及代表三星行事的任何方进行赔偿、免除其责任并使其免受损失：(i) 您或您允许使用本服务的任何人在使用本服务时不符合这些 TOS 条款规定，(ii) 您或您允许使用本服务的任何人违反这些 TOS 的规定，或 (iii) 您或您允许使用本服务的任何人违反法律、法规或侵犯任何第三方的权利。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART42_LEGALPHASE_US">13.一般条款</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART43_LEGALPHASE_US">13.1 法律选择。这些 TOS（包括其所有修订和修正内容）受纽约法律约束并根据这些法律进行解释，但不考虑其法律冲突或法律选择原则。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART44_LEGALPHASE_US">13.2 仲裁。使用本服务，即表示您无条件同意并接受：(i) 对于因本服务或确定本条款的范围或适用性而引起的、与之相关或以任何方式与其有关联的您针对三星实体、三星实体的高级职员、董事、代理和员工（以下统称为“三星实体”）提出的任何索赔、纠纷或争议（无论是合同、侵权行为还是其他），都将由 JAMS 管理的具有约束力的终局仲裁全权解决，并按 JAMS 的规定由独任仲裁员裁判；</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART45_LEGALPHASE_US">(ii) 本条款根据涉及洲际贸易的交易制定，应受到《联邦仲裁法》（以下简称“FAA”）9 U.S.C. §§ 1-16 规定约束；(iii) 仲裁应在纽约州纽约市进行；(iv) 仲裁员应依照这些 TOS 的条款和条件及本文引用的任何其他经您同意且与本服务相关的协议进行裁判；(v) 仲裁员应该采用与 FAA 一致的纽约法律和适用的诉讼时效，且应尊重法律认可的特权声明；</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART46_LEGALPHASE_US">(vi) 任何当局均无权处理任何需要在集体或代表基础上仲裁的索赔，仲裁只能裁定您和/或有关三星实体的个人的索赔；仲裁员不得将其他当事人或当事方的类似索赔与基于本协议的案件作并案处理或将其加入基于本协议的案件；您不得提出或参与针对我们的集体诉讼；(vii) 仲裁员无权对您或任何三星实体作出具有给付惩罚性赔偿内容的裁决；(viii) 如果要发起针对任何三星实体的仲裁，必须支付的行政性费用和保证金超过一百二十五美元 (US$125)，并且您无法（或根据 JAMS 的规定不需要）支付超过这一数额的任何费用或保证金，则三星同意代您支付和/或转交这些费用，具体由仲裁员进行最终分配。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART47_LEGALPHASE_US">此外，如果您能够证明仲裁费用与诉讼费用相比过于高昂，并且仲裁员认为有必要防止仲裁费用过高，三星将为您支付与仲裁相关的申请和审理费用；以及 (ix) 除上述第 (vi) 小节外，如果此仲裁条款的任何部分被视为无效、不可执行或非法，或与 JAMS 的规定存在任何冲突，则此仲裁条款的其余部分将仍然有效并应根据其条款进行解释，无效、不可执行、非法或冲突条款不包含在内。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART48_LEGALPHASE_US">但是，如果上述第 (vi) 小节被认定为无效、不可执行或非法，则此全部仲裁条款都将宣告无效，无论是您还是三星都无权对争端进行仲裁。有关 JAMS 和/或 JAMS 规定的更多信息，请访问其网站：www.jamsadr.com。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART49_LEGALPHASE_US">13.3 可分割性。如果这些 TOS 中的任何条款或规定被任何司法或行政机关裁定为无效或不可执行，此类判决不应影响这些 TOS 中的其余条款和规定的可执行性效力。这些 TOS 中的其余规定依然有效，并将根据其条款进行解释。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_CHINA">- 在“游戏省电”模式下，屏幕显示的分辨率可能与原内容分辨率不同。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_OPEN">- 在“游戏省电”模式下，屏幕显示的分辨率可能与原内容分辨率不同。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_US">- 在“游戏省电”模式下，屏幕显示的分辨率可能与原内容分辨率不同。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART50_LEGALPHASE_US">13.4 继续有效。这些 TOS 的第 2、3、10、11、12 和 13 条以及任何其他根据性质应继续生效的规定，在这些 TOS 期满或提前终止后仍然有效并具有约束力。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART51_LEGALPHASE_US">13.5 标题。这些 TOS 中包含的条款标题仅供参考之用，不应影响这些 TOS 的含义或解释。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART52_LEGALPHASE_US">13.6 无弃权。若三星在任何时候未能执行这些 TOS 的任何规定，或三星在任何时候未要求您执行这些 TOS 的任何规定，都不得以任何方式解释为三星在当前或未来放弃此类规定的权利，也不得以任何方式影响三星日后执行此类规定的权利。三星明确放弃这些 TOS 的任何规定、条件或要求，都不应解释为放弃任何在未来遵守此类规定、条件或要求的义务。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART53_LEGALPHASE_US">13.7 第三方网站。我们可能会在本服务中提供链接或其他材料，让您可以浏览或重定向到第三方网站（如社交网络平台）。我们与这些第三方的服务、网站或内容毫无联系，也不对其承担责任或予以认可。如果您对这些其他公司的实践有任何疑问，您应查看其使用条款和其他政策。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART54_LEGALPHASE_US">13.8 完整协议。这些 TOS 是您与三星之间就本服务达成的完整协议，将取代其他所有之前或同期的与本服务或这些 TOS 涵盖的任何其他主题相关的口头或书面沟通、提议和表述。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_CHINA">- 在“游戏中关闭提醒”模式下，您可能无法看到某些弹出通知，包括但不限于来电、闹钟或其他推送通知。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_OPEN">- 在“游戏中关闭提醒”模式下，您可能无法看到某些弹出通知，包括但不限于来电、闹钟或其他推送通知。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_US">- 在“游戏中关闭提醒”模式下，您可能无法看到某些弹出通知，包括但不限于来电、闹钟或其他推送通知。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_CHINA">- 您仅可在适用的法律法规（包括与版权和知识产权相关的法律法规）的许可范围内使用本服务。任何与通过本服务显示或访问的内容相关的知识产权均属于各内容的所有者。此类内容可能受版权法或其他知识产权法以及相关条约的保护，而且可能需要遵守提供此类内容的第三方的使用条款。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_OPEN">- 您仅可在适用的法律法规（包括与版权和知识产权相关的法律法规）的许可范围内使用本服务。任何与通过本服务显示或访问的内容相关的知识产权均属于各内容的所有者。此类内容可能受版权法或其他知识产权法以及相关条约的保护，而且可能需要遵守提供此类内容的第三方的使用条款。相关内容的所有者可能会禁止您通过某些方法使用该内容。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_US">- 您仅可在适用的法律法规（包括与版权和知识产权相关的法律法规）的许可范围内使用本服务。任何与通过本服务显示或访问的内容相关的知识产权均属于各内容的所有者。此类内容可能受版权法或其他知识产权法以及相关条约的保护，而且可能需要遵守提供此类内容的第三方的使用条款。相关内容的所有者可能会禁止您通过某些方法使用该内容。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_CHINA">相关内容的所有者可能会禁止您通过某些方法使用该内容。除非三星另有规定，否则您应遵守以下条款：(i) 三星未授予您任何使用此类内容的权利，三星也不保证此类内容会一直对您有效；而且 (ii) 您不得以非法方式使用下列资料或将下列资料用于商业目的，包括通过访问本服务获得的视频、照片、图片、图形、插图、音频以及其他类似资料（即“数字材料”），对于这些数字材料，您也不得在其作为本服务一部分的原定用途范围之外使用。您同样确认并同意，您不会创建或发布任何非法内容，并且对自己创建或发布的所有内容承担全部责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_OPEN">除非三星另有规定，否则您应遵守以下条款：(i) 三星未授予您任何使用此类内容的权利，三星也不保证此类内容会一直对您有效；而且 (ii) 您不得以非法方式使用下列资料或将下列资料用于商业目的，包括通过访问本服务获得的视频、照片、图片、图形、插图、音频以及其他类似资料（即“数字材料”），对于这些数字材料，您也不得在其作为本服务一部分的原定用途范围之外使用。您同样确认并同意，您不会创建或发布任何非法内容，并且对自己创建或发布的所有内容承担全部责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_US">除非三星另有规定，否则您应遵守以下条款：(i) 三星未授予您任何使用此类内容的权利，三星也不保证此类内容会一直对您有效；而且 (ii) 您不得以非法方式使用下列资料或将下列资料用于商业目的，包括通过访问本服务获得的视频、照片、图片、图形、插图、音频以及其他类似资料（即“数字材料”），对于这些数字材料，您也不得在其作为本服务一部分的原定用途范围之外使用。您同样确认并同意，您不会创建或发布任何非法内容，并且对自己创建或发布的所有内容承担全部责任。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_CHINA">- 在使用“精选视频”时，由于第三方服务供应商的搜索技术限制，搜索结果可能与您的预期不符。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_OPEN">- 在使用“精选视频”时，由于第三方服务供应商的搜索技术限制，搜索结果可能与您的预期不符。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_US">- 在使用“精选视频”时，由于第三方服务供应商的搜索技术限制，搜索结果可能与您的预期不符。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_CHINA">- 本服务可能需要通过移动数据访问互联网，这可能会产生额外的费用，具体取决于您与相应网络供应商之间的数据计划。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_OPEN">- 本服务可能需要通过移动数据访问互联网，这可能会产生额外的费用，具体取决于您与相应网络供应商之间的数据计划。</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_US">- 本服务可能需要通过移动数据访问互联网，这可能会产生额外的费用，具体取决于您与相应网络供应商之间的数据计划。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART1_LEGALPHASE_US">针对游戏工具及其中包含的任何相关软件或文件（下文简称为“服务”），您确认并同意以下条款：</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART1_LEGALPHRASE_OPEN">针对游戏工具及其中包含的任何相关软件或文件（下文简称为“服务”），您确认并同意以下条款：</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART2_LEGALPHASE_US">- 本服务将访问您的联系人、相机、存储以及麦克风，以便您可以利用本服务。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART2_LEGALPHRASE_OPEN">- 本服务将访问您的联系人、相机、存储和麦克风。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART3_LEGALPHASE_US">- 在“游戏中关闭提醒”模式下，您可能无法看到某些弹出通知，包括但不限于来电、闹钟或其他推送通知。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART3_LEGALPHRASE_OPEN">- 在“游戏中关闭提醒”模式下，您可能无法看到某些弹出通知，包括但不限于来电、闹钟或其他推送通知。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART4_LEGALPHASE_US">- 您仅可在适用的法律法规（包括与版权和知识产权相关的法律法规）的许可范围内使用本服务。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART4_LEGALPHRASE_OPEN">- 您仅可在适用的法律法规（包括与版权和知识产权相关的法律法规）的许可范围内使用本服务。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART5_LEGALPHRASE_OPEN">- 您使用的与本服务相关的任何第三方应用程序（包括但不限于游戏）由此类应用程序的所有者提供。此类第三方应用程序可能受版权法或其他知识产权法以及相关条约的保护，而且可能需要遵守相关第三方的使用条款。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART6_LEGALPHASE_US">- 您同样确认并同意，您不会创建或发布任何非法内容，并且对自己创建或发布的内容承担全部责任。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART6_LEGALPHRASE_OPEN">根据应用程序的使用条款或法律规定，可能会禁止您将此类第三方应用程序的内容用于某些用途。除非三星另有规定，否则您应同意以下条款：(i) 三星未授予您使用此类第三方内容的任何权利，也不保证相关方持续为您提供此类内容；而且 (ii) 您同意，不得出于商业目的或以非法方式使用下列资料，包括通过访问本服务获得的视频、照片、图片、图形、插图、音频以及其他类似资料（即“数字材料”），对于这些数字材料，您也不得在其作为本服务一部分的预期用途范围之外使用。</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART7_LEGALPHRASE_OPEN">- 您同样确认并同意，您对自己创建或发布的任何内容承担全部责任。</string>
+    <string name="LDS_GH__POP_GAME_TOOLS_DISCLAIMER_PART5_LEGALPHASE_US">- 本服务涉及的知识产权和与通过本服务显示或访问的内容相关的知识产权均属于各内容的所有者。此类内容可能受版权法或其他知识产权法以及相关条约的保护，而且可能需要遵守提供此类内容的第三方的使用条款。相关内容的所有者可能会禁止您将这类内容用于其他用途。除非三星另有规定，否则您应遵守以下条款：(i) 三星未授予您任何使用此类内容的权利，三星也不保证此类内容会一直对您有效；而且 (ii) 您不得以非法方式使用下列资料或将下列资料用于商业目的，包括通过访问本服务获得的视频、照片、图片、图形、插图、音频以及其他类似资料（即“数字材料”），对于这些数字材料，您也不得在其作为本服务一部分的原定用途范围之外使用。</string>
+    <string name="MIDS_GB_BUTTON_NEXT_ABB2">གོམ་རིམ་རྗེས་མ།</string>
+    <string name="MIDS_GHUB_TPOP_APP_RUNNING">应用程序正在运行</string>
+    <string name="MIDS_GHUB_TPOP_BACK_KEY_LOCKED_WHILE_USING_APP">使用应用程序时锁定返回键</string>
+    <string name="MIDS_GHUB_TPOP_NO_ALERTS_WHILE_USING_APP_ENABLED">已启用【使用应用程序时免打扰】</string>
+    <string name="MIDS_GHUB_TPOP_NO_ALERTS_WHILE_USING_APP_ENABLED_ALL_NOTIFICATIONS_WILL_BE_MUTED_AND_HIDDEN_WHILE_USING_APP_ONLY_INCOMING_CALLS_WILL_BE_SHOWN">已启用【使用应用程序时免打扰】。使用应用程序期间将禁止并隐藏所有通知，仅显示来电。</string>
+    <string name="MIDS_GHUB_TPOP_RECENTS_AND_BACK_KEYS_LOCKED_WHILE_USING_APP">正在使用应用程序，最近使用键和返回键已被锁定。</string>
+    <string name="MIDS_GHUB_TPOP_RECENTS_KEY_LOCKED_WHILE_USING_APP">使用应用程序时锁定最近使用键</string>
+    <string name="MIDS_GH_BODY_1_HOUR">ཆུ་ཚོད་1</string>
+    <string name="MIDS_GH_BODY_1_HOUR_ABB">ཆུ་ཚོད་1</string>
+    <string name="MIDS_GH_BODY_1_HOUR_AGO">ཆུ་ཚོད་ ༡ སྔོན།</string>
+    <string name="MIDS_GH_BODY_1_MINUTE">སྐར་མ་1</string>
+    <string name="MIDS_GH_BODY_1_MINUTE_AGO">སྐར་མ་ ༡ སྔོན།</string>
+    <string name="MIDS_GH_BODY_1_TIME_ABB_M_LC_M_PLAY">ཐེངས་1</string>
+    <string name="MIDS_GH_BODY_1_WEEK_AGO_ABB">གཟའ་འཁོར་1གོང་</string>
+    <string name="MIDS_GH_BODY_ACCESS_YOUR_GAMES_QUICKLY_AND_EASILY_USING_THE_EDGE_SCREEN">འཁྱོག་ངོས་གཞོགས་ཡོལ་བེད་སྤྱོད་བཏང་ནས་མྱུར་མགྱོགས་སྟབས་བདེ་པོའ་རྩེད་མོ་བཅར་འདྲི་བྱས།</string>
+    <string name="MIDS_GH_BODY_ACTION">འགུལ་སྟངས།</string>
+    <string name="MIDS_GH_BODY_ADDED_M_NOUN">སྣོན་འཇུག་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_BODY_ADVENTURE">ཉེན་ཁ་མ་འཛེམ།</string>
+    <string name="MIDS_GH_BODY_ALLOW_ACCESS_ONLY_FOR_THIS_TRIP_ABB">ཐེངས་འདིའི་ཡུལ་སྐོར་ནས་བཅར་འདྲི་བྱེད་ཆོག</string>
+    <string name="MIDS_GH_BODY_ALLOW_DATA_ACCESS_Q">གཞི་གྲངས་བཅར་འདྲི་བྱེད་ཆོག་གམ།</string>
+    <string name="MIDS_GH_BODY_ARCADE_M_GENRE">རྩེད་ཆས་རྩེད་མོ་ཡག་པོ།</string>
+    <string name="MIDS_GH_BODY_BASED_ON_YOUR_GAMEPLAY_PATTERNS_ABB">ཁྱེད་ནས་རྩེད་མོ་རྩེ་བའི་རྣམ་པ་ལྟར།</string>
+    <string name="MIDS_GH_BODY_BOARD_M_GENRE">སྒྲོམ་ངོས་ཐོག་གི་རྩེད་མོ།</string>
+    <string name="MIDS_GH_BODY_CANNOT_FIND_YOUR_INSTALLED_GAME_Q">སྒྲིག་འཇུག་ཟིན་པའི་རྩེད་མོ་རྙེད་དམ།</string>
+    <string name="MIDS_GH_BODY_CAPTURE_A_SCREENSHOT">བརྙན་ཡོལ་དྲས་རིས་ལེན་པ།</string>
+    <string name="MIDS_GH_BODY_CARD">ཤོག་སྦག</string>
+    <string name="MIDS_GH_BODY_CASINO">རྒྱན་རྩེད་ཁང་།</string>
+    <string name="MIDS_GH_BODY_CASUAL">སྤྲོ་གསེང་།</string>
+    <string name="MIDS_GH_BODY_CHECK_OUT_THESE_EXCLUSIVE_OFFERS_FOR_YOUR_GALAXY_DEVICE">Galaxyའཕྲུལ་ཆས་ཆེད་སྤྱོད་གོང་ཁེ་བལྟ་ཞིབ་བྱས།</string>
+    <string name="MIDS_GH_BODY_CHECK_OUT_THE_HOTTEST_GAMES_AMONG_GALAXY_DEVICE_USERS_AND_WATCH_FUN_GAME_VIDEOS">Galaxyའཕྲུལ་ཆས་སྤྱོད་མཁན་ནས་དགའ་ཤོས་བྱེད་པའི་རྩེད་མོ་རྒྱུས་ལེན་བྱེད་པ་དང་ཉམས་མཚར་བའི་རྩེད་མོའི་བརྙན་ཟློས་བལྟ་ཞིབ་བྱས།</string>
+    <string name="MIDS_GH_BODY_CHECK_YOUR_NETWORK_CONNECTION_AND_TRY_AGAIN">ཁྱེད་ཀྱི་དྲ་བའི་འབྲེལ་མཐུད་ཞིབ་བཤེར་བྱས་ནས་བསྐྱར་ཚོད་བྱེད།</string>
+    <string name="MIDS_GH_BODY_DATA_USAGE">གཞི་གྲངས་བེད་སྤྱོད་བཏང་།</string>
+    <string name="MIDS_GH_BODY_DENY_DATA_ROAMING_ACCESS_ABB">གཞི་གྲངས་ཕྱིར་ཡན་བཅར་འདྲི་བཟློག་ཡོད།</string>
+    <string name="MIDS_GH_BODY_DRAG_THE_QUICK_PANEL_DOWN_TO_STOP_RECORDING">གལ་ཏེ་ཕབ་འཇུག་མཚམས་འཇོག་བྱེད་དགོས་ཚེ།མྱུར་མགྱོགས་ངོས་པང་འོག་ཏུ་འདྲུད་དགོས།</string>
+    <string name="MIDS_GH_BODY_EDGE_TOUCH_LOCK_ABB">གཞོགས་ཡོལ་རེག་ཐུག་འཛིན་པ་གདམ་སྒྲིག་བྱས།</string>
+    <string name="MIDS_GH_BODY_EDUCATIONAL">སློབ་གསོ།</string>
+    <string name="MIDS_GH_BODY_ENJOY_A_FREE_GAME_PROVIDED_BY_SAMSUNG_GAME_LAUNCHER">Samsung Game Launcherནས་མཁོ་འདོན་བྱས་པའི་རིན་མེད་རྩེད་མོ་ཉམས་ལེན་བྱས།</string>
+    <string name="MIDS_GH_BODY_GAMEPAD_RECOMMENDED">ལག་འཇུ་བེད་སྤྱོད་བྱས་ན་ལེགས།</string>
+    <string name="MIDS_GH_BODY_GAMES_SORTED_BY_NUMBER_OF_GALAXY_USERS_PLAYING_HP1SD_P2SD_P3SD_P4SD_ABB">རྩེད་མོ།-རྩེད་མོ་རྩེད་མཁན་གྱི་Galaxyསྤྱོད་མཁན་གྲངས་མང་ཉུང་བཞིན་གྲལ་སྒྲིག་(%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_GAMES_SORTED_BY_TOTAL_TIME_PLAYED_BY_ALL_GALAXY_USERS_HP1SD_P2SD_P3SD_P4SD_ABB">རྩེད་མོ།-Galaxyསྤྱོད་མཁན་ཡོངས་ཀྱི་སྤྱི་སྡོམ་རྩེད་མོའི་དུས་ཚོད་རིང་ཐུང་བཞིན་གྲལ་སྒྲིག་(%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_GAME_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_THIS_TIME_ONLY_MSG">ཐེངས་གཅིག་ནང་%sབརྒྱུད་ནས་ཁྱེད་ཀྱི་རྩེད་མོ་ཁ་ཕྱེ་དུས།རྩེད་མོའི་སྐད་སྒྲ་སྐད་མེད་བཏང་སྲིད།ཁྱེད་ནས་རྩེད་མོ་ཁ་ཕྱེ་རྗེས་སྒྲ་ཤུགས་སྒྱུར་ཆོག</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_AUTOMATICALLY">Game Launcherནས་རང་འགུལ་ཐོག་ཁྱེད་ཀྱི་རྩེད་མོ་ཚང་མ་ལྷན་ཅིག་བསྡུས་སྲིད།</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_AUTOMATICALLY_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_MSG">Game Launcherནས་རང་འགུལ་ཐོག་ཁྱེད་ཀྱི་རྩེད་མོ་ཚང་མ་བསྡུ་གསོག་བྱེད་པ་དང་།སྤྱོད་ནུས་ཆེ་བའི་རྩེད་མོའི་ཕན་ནུས་གཞན་པ་མཁོ་འདོན་བྱེད་ཐུབ།</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_FEATURES_HPS_ARE_ONLY_APPLIED_TO_APPS_CATEGORISED_AS_GAMES">Game Launcherཕན་ནུས་(%s)དེ་རྩེད་མོའི་རིགས་སུ་སྒྲིག་པའི་ཉེར་སྤྱོད་བྱ་རིམ་ཐོག་བེད་སྤྱོད་གཏོང་ཐུབ།</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_WILL_ACCESS_CONTACTS_CAMERA_STORAGE_AND_MICROPHONE">Game Launcherནས་འབྲེལ་གཏུག་མིང་བྱང་།པར་ཆས།གསོག་སྣོད་དང་སྒྲ་སྦུག་ལ་བཅར་འདྲི་བྱེད་སྲིད།</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_CONVENIENT_GAME_FEATURES">Game Toolsནས་སྟབས་བདེ་པའི་རྩེད་མོའི་ཕན་ནུས་མཁོ་འདོན་བྱས།</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_CONVENIENT_GAME_FEATURES_IN_A_BUTTON_THAT_FLOATS_OVER_YOUR_GAME_ABB">Game Toolsརྩེད་མོའི་ཐོག་འཕྱོ་འདུག་བྱས་པའི་མཐེབ་གནོན་བརྒྱུད་ནས་ཁྱེད་ལ་སྟབས་བདེ་བའི་རྩེད་མོའི་ཕན་ནུས་མཁོ་འདོན་བྱེད་ཐུབ།</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_OPTIONS_AND_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES">Game Toolsནས་སྤྱོད་ནུས་ཆེ་བའི་རྩེད་མོའི་འདེམས་ག་དང་ཕན་ནུས་མཁོ་འདོན་བྱས།</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_DEVICE">འཕྲུལ་ཆས་ནང་ཕབ་འཇུག་བྱས་པའི་རྩེད་མོའི་བརྙན་ཟློས།</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_PHONE">ཁྱེད་ཀྱི་ལག་ཐོག་ཁ་པར་ནང་ཕབ་འཇུག་བྱས་པའི་རྩེད་མོའི་བརྙན་ཟློས།</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_TABLET">ཁྱེད་ཀྱི་ངོས་པང་གློག་ཀླད་ནང་ཕབ་འཇུག་བྱས་པའི་རྩེད་མོའི་བརྙན་ཟློས།</string>
+    <string name="MIDS_GH_BODY_HIDE_YOUR_CALLS_AND_ALERTS_DURING_GAMEPLAY">རྩེད་མོའི་རྩེད་སྐབས་ཁྱེད་ཀྱི་ཁ་པར་དང་དྲན་སྐུལ་སྦས་པ།</string>
+    <string name="MIDS_GH_BODY_INSTALLED_M_NOUN">ནང་འཇུག་བྱས་ཚར།</string>
+    <string name="MIDS_GH_BODY_I_HAVE_READ_AND_AGREE_TO_ALL_THE_TERMS_OF_SERVICE_ABOVE">ངས་དོན་ཚན་དང་ཆ་རྐྱེན་ཡོད་ཚད་ལ་ཀློག་ལྟ་བྱས་ཟིན་ཞིང་མོས་མཐུན་ཡོད།</string>
+    <string name="MIDS_GH_BODY_LARGE">ཆེ་བ།</string>
+    <string name="MIDS_GH_BODY_LAST_PLAYED">ཐེངས་གོང་མའི་རྩེད་མོ།</string>
+    <string name="MIDS_GH_BODY_LAST_RECORDED_C">ཕབ་འཇུག་མཇུག་ཤོས།</string>
+    <string name="MIDS_GH_BODY_LATEST_VERSION">རིམ་པ་གསར་ཤོས</string>
+    <string name="MIDS_GH_BODY_LIVE">ཐད་གཏོང་།</string>
+    <string name="MIDS_GH_BODY_MAXIMUM_RECORDING_FILE_SIZE_IS_PD_GB_MSG">ཡིག་ཆ་ཕབ་འཇུག་བྱེད་ཐུབ་ཚེད་ཆེ་ཤོས་ནི་%d GBཡིན།པར་དྭངས་ཤོས་བརྒྱུད་ནས་ཕབ་འཇུག་བྱེད་པའི་སྐབས་སུ།སྐར་མ་80ཙམ་ཕབ་འཇུག་བྱེད་ཐུབ།འབྱེད་ཚད་དང་པི་ཐ་སྡུར་ཚད་ཆུང་དུ་བཏང་ནས་དུས་ཡུན་རིང་དུ་གཏོང་ཐུབ།</string>
+    <string name="MIDS_GH_BODY_MINIMISE_YOUR_GAME_SCREEN_WHEN_YOU_NEED_TO_QUICKLY_ACCESS_OTHER_TASKS">ཁྱེད་ནས་ལས་འགན་གཞན་ལ་མྱུར་མགྱོགས་བཅར་འདྲི་བྱེད་པའི་སྐབས་སུ་རྩེད་མོའི་བརྙན་ཡོལ་ཆུང་ཤོས་ཅན་ལ་བཏང་བ།</string>
+    <string name="MIDS_GH_BODY_MOST_ACTIVE_NEW">བྱ་འགུལ་མང་ཤོས་བྱེད་པའི་རྩེད་མོ་གསར་པ།</string>
+    <string name="MIDS_GH_BODY_MOST_ADDICTIVE_NEW">རྩེད་འདོད་ཆེ་ཤོས་བྱེད་པའི་རྩེད་མོ་གསར་པ།</string>
+    <string name="MIDS_GH_BODY_MUSIC_M_GENRE">རོལ་དབྱངས་</string>
+    <string name="MIDS_GH_BODY_MUTE_AND_HIDE_ALL_OF_YOUR_ALERTS_DURING_GAMEPLAY">རྩེད་མོའི་རྒྱུད་རིམ་ནང་སྐད་མེད་བཟོ་བ་དང་རྒྱུད་རིམ་ཚང་མ་སྦས་པ།</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_RANKED_BY_THE_LONGEST_PLAYING_TIMES">རྩེད་མོའི་དུས་ཚོད་རིང་བ་ནས་ཐུང་ལྟར་གྲལ་སྒྲིག་པའི་རྩེད་མོ་གསར་པ།</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_RANKED_BY_THE_MOST_USERS_PER_DAY">ཉིན་རེའི་སྤྱོད་མཁན་མང་ཤོས་ནང་གྲལ་སྒྲིག་པའི་རྩེད་མོ་གསར་པ།</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_SORTED_BY_NUMBER_OF_GALAXY_USERS_PLAYING_HP1SD_P2SD_P3SD_P4SD_ABB">རྩེད་མོ་གསར་པ།-རྩེད་མོ་རྩེད་མཁན་གྱི་Galaxyསྤྱོད་མཁན་གྲངས་མང་ཉུང་བཞིན་གྲལ་སྒྲིག་(%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_SORTED_BY_TOTAL_TIME_PLAYED_BY_ALL_GALAXY_USERS_HP1SD_P2SD_P3SD_P4SD_ABB">རྩེད་མོ་གསར་པ།-Galaxyསྤྱོད་མཁན་ཡོངས་ཀྱི་སྤྱི་སྡོམ་རྩེད་མོའི་དུས་ཚོད་རིང་ཐུང་བཞིན་གྲལ་སྒྲིག་(%1$d/%2$d-%3$d/%4$d)</string>
+    <string name="MIDS_GH_BODY_OPEN_A_BOOKMARKED_APP_OR_WEB_ADDRESS">དཔེ་རྟགས་ཡོད་པའི་ཉེར་སྤྱོད་བྱ་རིམ་མམ་དྲ་གནས་ཁ་ཕྱེ་བ།</string>
+    <string name="MIDS_GH_BODY_OPEN_SOURCE_LICENCE">འབྱུང་ཁུངས་ཁྲིམས་མཐུན་ལག་འཁྱེར་ཁ་ཕྱེ།</string>
+    <string name="MIDS_GH_BODY_OTHERS">གཞན་པ།</string>
+    <string name="MIDS_GH_BODY_PD_HOURS_ABB">ཆུ་ཚོད་%d</string>
+    <string name="MIDS_GH_BODY_PD_HOURS_AGO">ཆུ་ཚོད་ %d སྔོན།</string>
+    <string name="MIDS_GH_BODY_PD_MINUTES">སྐར་མ་%d</string>
+    <string name="MIDS_GH_BODY_PD_MINUTES_AGO">སྐར་མ་ %d སྔོན།</string>
+    <string name="MIDS_GH_BODY_PD_PLAYS_ABB">རྩེད་མོ་ཐེངས་%d</string>
+    <string name="MIDS_GH_BODY_PD_TIMES_ABB2">ཐེངས་%d</string>
+    <string name="MIDS_GH_BODY_PD_WEEKS_AGO_ABB">གཟའ་འཁོར་%dགོང་།</string>
+    <string name="MIDS_GH_BODY_PER_DAY_ABB_M_LC">ཉིན་རེའི།</string>
+    <string name="MIDS_GH_BODY_PLAYERS_ABB">རྩེད་མཁན།</string>
+    <string name="MIDS_GH_BODY_PLAYING_TIME">རྩེད་མོའི་དུས་ཚོད་</string>
+    <string name="MIDS_GH_BODY_PLAYING_TIME_ABB_M_LC">རྩེད་མོའི་དུས་ཚོད་</string>
+    <string name="MIDS_GH_BODY_PLAY_PER_DAY_ABB">ཉིན་རེའི་རྩེད་མོ།</string>
+    <string name="MIDS_GH_BODY_POWER_USAGE">གློག་བེད་སྤྱོད་གཏོང་ཚུལ།</string>
+    <string name="MIDS_GH_BODY_PRIVACY_POLICY">གསང་རྒྱ་སྲིད་ཇུས།</string>
+    <string name="MIDS_GH_BODY_PS_DISCLAIMER">%sའགན་མེད་གསལ་བཤད་</string>
+    <string name="MIDS_GH_BODY_PS_GB">%s GB</string>
+    <string name="MIDS_GH_BODY_PS_IS_A_BUTTON_FLOATING_OVER_THE_TOP_OF_YOUR_GAME_THAT_PROVIDES_CONVENIENT_GAME_FEATURES">%sནི་རྩེད་མོའི་གོང་ཐོད་དུ་འཕྱོ་འདུག་བྱས་པའི་མཐེབ་གནོན་ཞིག་ཡིན།དེས་ཁྱེད་ལ་སྟབས་བདེ་བའི་རྩེད་མོའི་ཕན་ནུས་མཁོ་འདོན་བྱས་ཡོད།</string>
+    <string name="MIDS_GH_BODY_PS_KB">%s KB</string>
+    <string name="MIDS_GH_BODY_PS_LOCK_ABB">%sབསྡམ་སྒྲིག</string>
+    <string name="MIDS_GH_BODY_PS_MB">%s MB</string>
+    <string name="MIDS_GH_BODY_PS_TERMS_OF_SERVICE">%sཞབས་ཞུ་དོན་ཚན་</string>
+    <string name="MIDS_GH_BODY_PUZZLE_M_GENRE">རིག་པ་འཕེལ།</string>
+    <string name="MIDS_GH_BODY_RACING">མགྱོགས་ཚད་འགྲན།</string>
+    <string name="MIDS_GH_BODY_RECENTLY_INSTALLED">ཉེ་དུས་སྒྲིག་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_BODY_RECENTLY_REGISTERED">ཉེ་དུས་ཐོ་འགོད་བྱས།</string>
+    <string name="MIDS_GH_BODY_RECORD_YOUR_GAME">ཁྱེད་ཀྱི་རྩེད་མོ་ཕབ་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_BODY_RECORD_YOUR_GAMES">ཁྱེད་ཀྱི་རྩེད་མོའི་བརྙན་ཟློས་ཕབ་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_BODY_ROLE_PLAYING_M_GENRE">འཁྲབ་བྱ་སྤེལ་བ།</string>
+    <string name="MIDS_GH_BODY_SAVE_BATTERY_POWER_BY_OPTIMISING_THE_DISPLAY_QUALITY">གསལ་སྟོན་སྤུས་ཚད་ལེགས་སུ་བཏང་ནས་གློག་གྲོན་ཆུང་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_BODY_SAVE_BATTERY_POWER_DURING_GAMEPLAY_BY_DOWNGRADING_THE_VIDEO_QUALITY">རྩེད་མོ་རྩེད་སྐབས་བརྙན་ཟློས་སྤུས་ཚད་ཞན་དུ་བཏང་ནས་གློག་བསྲི་ཐུབ།</string>
+    <string name="MIDS_GH_BODY_SCREENSHOT">བརྙན་ཡོལ་དྲས་རིས་</string>
+    <string name="MIDS_GH_BODY_SELECT_APPS_YOU_WANT_TO_ADD_TO_PS">%sཐོག་སྣོན་འཇུག་བྱེད་འདོད་པའི་ཉེར་སྤྱོད་བྱ་རིམ་འདེམས་དགོས།</string>
+    <string name="MIDS_GH_BODY_SELECT_A_GAME_YOU_WANT_TO_ADD_TO_PS">%sཐོག་སྣོན་འཇུག་བྱེད་པའི་རྩེད་མོ་འདེམས་དགོས།</string>
+    <string name="MIDS_GH_BODY_SELECT_A_GAME_YOU_WANT_TO_REGISTER_IN_GAME_LAUNCHER">Game Launcherཐོག་ཐོ་འགོད་བྱེད་པའི་རྩེད་མོ་འདེམས་དགོས།</string>
+    <string name="MIDS_GH_BODY_SELECT_THE_FUNCTION_TO_ASSIGN_TO_THE_HOT_KEY_MSG">མྱུར་འགྲོས་མཐེབ་འགོས་དགོས་པའི་ཕན་ནུས་འདེམས་དགོས།ཁྱེད་ནས་མྱུར་འགྲོས་མཐེབ་རྒྱུན་རིང་མནན་ནས་དེའི་ཕན་ནུས་སྒྱུར་ཐུབ།</string>
+    <string name="MIDS_GH_BODY_SELECT_THE_GAME_YOU_WANT_TO_REGISTER_TO_MY_GAMES">ང་ཡི་རྩེད་མོའི་ནང་ཐོ་འགོད་པའི་རྩེད་མོའི་འདེམས་དགོས།</string>
+    <string name="MIDS_GH_BODY_SHRINK_YOUR_GAME_SCREEN_INTO_A_FLOATING_ICON">རྩེད་མོའི་བརྙན་ཡོལ་འཕྱོ་འདུག་རྟགས་རིས་སུ་ཆུང་འདུས་བཏང་།</string>
+    <string name="MIDS_GH_BODY_SIMULATION">ལད་ལྟོས།</string>
+    <string name="MIDS_GH_BODY_SMALL">ཆུང་བ།</string>
+    <string name="MIDS_GH_BODY_SPORTS_M_GENRE">ལུས་རྩལ།</string>
+    <string name="MIDS_GH_BODY_STRATEGY_M_GENRE">འཐབ་ཇུས།</string>
+    <string name="MIDS_GH_BODY_S_GAMES_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_AUTOMATICALLY">S Gamesནས་ཁྱེད་ཀྱི་རྩེད་མོ་ཚང་མ་རང་འགུལ་ཐོག་གནས་ཡུལ་གཅིག་ནང་གྲལ་སྒྲིག་ཐུབ།</string>
+    <string name="MIDS_GH_BODY_TAP_THE_BUTTON_TO_STOP_RECORDING">མཐེབ་གནོན་བརྡེབས་ནས་ཕབ་འཇུག་མཚམས་འཇོག་བྱས།</string>
+    <string name="MIDS_GH_BODY_TERMS_OF_SERVICE">ཞབས་ཞུའི་རྒྱས་གཅད།</string>
+    <string name="MIDS_GH_BODY_TERMS_OF_SERVICE_ABB">ཞབས་ཞུའི་དོན་ཚན།</string>
+    <string name="MIDS_GH_BODY_THE_LATEST_VERSION_IS_ALREADY_INSTALLED">པར་གཞི་གསར་ཤོས་སྒྲིག་འཇུག་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_BODY_THE_NAVIGATION_BAR_WILL_NOT_AUTO_HIDE_DURING_GAMEPLAY_MSG">རྩེད་མོའི་སྐབས་སུ་ཕྱོགས་སྟོན་གསལ་བྱང་རང་འགུལ་ཐོག་སྦས་མི་སྲིད།ཡོལ་ཡོངས་རྣམ་པའི་འོག་ཕན་ནུས་འདི་བེད་སྤྱོད་གཏོང་མི་རུང་།</string>
+    <string name="MIDS_GH_BODY_THE_RESOLUTION_AND_FRAME_RATE_OF_EACH_GAME_CAN_BE_CUSTOMISED">རྩེད་མོ་རེ་རེའི་འབྱེད་ཚད་གཞི་པར་འདུ་ཚད་རང་འགྲོས་སྒྲིག་ཆོག</string>
+    <string name="MIDS_GH_BODY_THIS_APPLICATION_CAN_ACCESS_P1SS_AND_P2SS">ཉེར་སྤྱོད་བྱ་རིམ་འདིས་%1$sདང་%2$sབཅར་འདྲི་བྱེད་ཐུབ།</string>
+    <string name="MIDS_GH_BODY_THIS_IS_THE_LATEST_VERSION">འདི་ནི་ དེང་གི་ཐོག་རིམ་ཡིན</string>
+    <string name="MIDS_GH_BODY_THIS_WEEK_ABB">གཟའ་འཁོར་འདི།</string>
+    <string name="MIDS_GH_BODY_TIP_C_TO_CHANGE_THE_HOT_KEY_PRESS_AND_HOLD_IT_OR_GO_TO_GAME_TOOLS_SETTINGS">དྲན་སྐུལ།གལ་ཏེ་མྱུར་འགྲོས་མཐེབ་སྒྱུར་དགོས་ཚེ།རྒྱུན་རིང་མནན་པའམ་Game Toolsསྒྲིག་འགོད་ནང་ཞུགས་དགོས།</string>
+    <string name="MIDS_GH_BODY_TO_PREVENT_UNINTENTIONAL_TOUCHES_DURING_THE_GAME_MSG2">རྩེད་མོའི་ནང་སྣང་འཇོག་མེད་པར་རེག་ཐུག་མི་ཡོང་ཕྱིར།རྩེད་མོའི་སྐབས་སུ་བརྙན་ཡོལ་མཐིལ་ཞབས་ཀྱི་%sབསྡམ་སྒྲིག་ཟིན།</string>
+    <string name="MIDS_GH_BODY_TO_SIGN_UP_FOR_A_GLOBAL_DATA_PLAN_CALL_GLOBAL_SUPPORT_AT_908_559_4899">གལ་ཏེ་གོ་ལ་ཧྲིལ་པོའི་བཞུར་ཚད་སྡེར་ཁ་ཐོ་འགོད་བྱས་ཚེ།908-559-4899ལ་ཁ་པར་བཏང་ནས་གོ་ལ་ཧྲིལ་པོའི་རོགས་སྐྱོར་ཚོགས་ཁག་དང་འབྲེལ་གཏུག་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_BODY_TO_STOP_RECORDING_TAP_THE_STOP_BUTTON_ON_THE_NAVIGATION_BAR">གལ་སྲིད་ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཚེ།ཕྱོགས་སྟོན་གསལ་བྱང་ཐོག་མཚམས་འཇོག་མཐེབ་གནོན་བརྡེབས་དགོས།</string>
+    <string name="MIDS_GH_BODY_TRIVIA_M_CATEGORY">ཤེས་བྱའི་དྲི་ལན།</string>
+    <string name="MIDS_GH_BODY_TRY_OUT_ADDITIONAL_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES_MSG4">སྤྱོད་མཁོ་བདེ་བའི་རྩེད་མོའི་ཕན་ནུས་བེད་སྤྱོད་གཏོང་དགོས།དཔེར་ན་རྩེད་མོར་གློག་བསྲི་བ།དཔེར་ན་༼རྩེད་མོར་གློག་བསྲི་བ།༽དང་༼རྩེད་མོའི་ནང་དྲན་སྐུལ་ཁ་རྒྱག་པ།༽དང་༼Game Tools༽ལྟ་བུ།</string>
+    <string name="MIDS_GH_BODY_TRY_OUT_ADDITIONAL_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES_MSG5">སྤྱོད་ནུས་ཆེ་བའི་རྩེད་མོའི་ཕན་ནུས་གཞན་ཚོད་ལྟ་བྱེད་དགོས།དཔེར་ན་༼རྩེད་མོར་གློག་བསྲི་བ།༽དང་༼སྐད་མེད་ཐོག་རྩེད་མོ་ཁ་ཕྱེ་༽དང་༼Game Tools༽</string>
+    <string name="MIDS_GH_BODY_UNKNOWN_M_CATEGORY">རྒྱུས་མེད།</string>
+    <string name="MIDS_GH_BODY_USING_DATA_WHILE_IN_THE_US_INCLUDING_ALASKA_HAWAII_PUERTO_RICO_MSG">"ཨ་རིར་བཞུར་ཚད་བེད་སྤྱོད་བཏང་ཚེ།ཨ་ལ་སི་ཀ།དང་ཧ་ཝ་ཡི།པོར་ཏ་ལི་ཀ།ཨ་རིང་ཁོངས་ཝུལ་ཅིང་མཚོ་གླིང་རྒྱུད་ཚུད་ཡོད།ཁྱེད་ཀྱི་བཞུར་ཚད་སྡེར་ཁ་བཞིན་རིན་རྩིས་རྒྱག་བྱེད་སྲིད།
+
+གལ་སྲིད་གོ་ལ་ཧྲིལ་པོའི་བཞུར་ཚད་སྡེར་ཁ་བེད་ཚེ།ཨ་རིའི་ཕྱི་ཁོངས་སུ་ཡུལ་སྐོར་འགྲོ་སྐབས་བཞུར་ཚད་བེད་སྤྱོད་བྱས་ཚེ་གྲོན་དངུལ་ཧ་ཅང་མཐོན་པོ་ཐོབ་སྲིད།
+
+ཁྱེད་ནས་བཞུར་ཚད་བེད་སྤྱོད་གཏོང་ངམ།"</string>
+    <string name="MIDS_GH_BODY_VERSION">པར་གཞི།</string>
+    <string name="MIDS_GH_BODY_WE_RECOMMEND_DOWNLOADING_VIA_WI_FI_MSG">ཁྱེད་ཀྱི་གྲོན་དངུལ་སྡེར་ཁ་བཞིན།འགུལ་གཏོང་དྲ་བ་བེད་སྤྱོད་བཏང་ཚེ་གྲོན་དངུལ་འཕར་མ་ཐོབ་སྲིད།ཁྱེད་ནས་Wi-Fiབརྒྱུད་ནས་ཕབ་ལེན་བྱས་ན་ལེགས།</string>
+    <string name="MIDS_GH_BODY_WHEN_YOU_TAP_THE_P1SS_BUTTON_YOU_CAN_ACCESS_P2SS_FROM_ANYWHERE">%1$sམཐེབ་གནོན་བརྡེབས་རྗེས།ཁྱེད་ནས་གནས་ཡུལ་གང་རུང་ནས་%2$sབེད་སྤྱོད་གཏོང་ཆོག</string>
+    <string name="MIDS_GH_BODY_WORD_M_CATEGORY">ཡི་གེ།</string>
+    <string name="MIDS_GH_BODY_YOUR_GAMES_WILL_BE_DISPLAYED_AUTOMATICALLY">རང་འགུལ་ཐོག་ཁྱེད་ཀྱི་རྩེད་མོ་གསལ་སྲིད།</string>
+    <string name="MIDS_GH_BODY_YOUVE_REACHED_YOUR_SPECIFIED_DATA_USAGE_LIMIT_MSG">"ཁྱེད་ཉིད་དམིགས་གཙུགས་བཞུར་ཚད་བེད་སྤྱོད་གཏོང་ཚད་ཚད་བཀག་ལ་སླེབས་ཟིན།
+
+གལ་སྲིད་བཞུར་ཚད་བསྐྱར་དུ་འགུལ་སློང་བྱས་ཚེ།དོ་གཉེར་ཚོང་པས་རིན་བསྡུས་སྲིད།"</string>
+    <string name="MIDS_GH_BODY_YOU_CAN_ADJUST_THE_PERFORMANCE_OF_YOUR_GAME_IN_TWO_WAYS_MSG">ཁྱེད་ནས་རིགས་གཉིས་སྤྱད་དེ་རྩེད་མོའི་ཕན་ནུས་སྒྲིག་ཐུབ།ཕན་ནུས་མཐོར་བཏང་ནས་ཁྱེད་ཀྱི་མ་ལག་ཕན་ནུས་གོང་མཐོར་གཏོང་ཆོག།ཡིན་ནའང་དུས་མཚུངས་གློག་ཟད་གཏོང་ཆེ་རུང་སོང་སྲིད།གློག་བསྲི་བའི་ཕན་ནུས་ནས་གློག་གྲོན་ཆུང་བྱེད་ཐུབ།ཡིན་ནའང་དུས་མཚུངས་ཁྱེད་ཀྱི་མ་ལག་ཕན་ནུས་དམའ་རུ་གཏོང་ཐུབ།</string>
+    <string name="MIDS_GH_BODY_YOU_CAN_ALSO_CHECK_OUT_THE_HOTTEST_GAMES_AMONG_GALAXY_DEVICE_USERS_MSG">ཁྱེད་ནས་Galaxyའཕྲུལ་ཆས་སྤྱོད་མཁན་གྱི་དགའ་ཤོས་བྱེད་པའི་རྩེད་མོ་བལྟ་ཞིབ་བྱེད་ཆོག།མ་ཟད་ཐད་ཀར་Game Launcherནང་ནས་ལྟད་མོ་ཆེ་བའི་རྩེད་མོའི་བརྙན་ཟློས་བལྟས་ཆོག།</string>
+    <string name="MIDS_GH_BUTTON2_BOOST_PERFORMANCE">ཕན་ནུས་ཤུགས་སྣོན་བྱེད།</string>
+    <string name="MIDS_GH_BUTTON2_NORMAL_PERFORMANCE">སྤྱིར་བཏང་ཕན་ནུས།</string>
+    <string name="MIDS_GH_BUTTON2_OPEN_GAMES_MUTED">སྐད་མེད་ཐོག་རྩེད་མོ་ཁ་ཕྱེ་བ།</string>
+    <string name="MIDS_GH_BUTTON2_SAVE_POWER">གློག་བསྲི་བ།</string>
+    <string name="MIDS_GH_BUTTON_ADD_AS_GAME_ABB">རྩེད་མོར་སྣོན་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_BUTTON_ADD_TO_HOME">གཙོ་ངོས་ཐོག་སྣོན་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_BUTTON_ADD_URL">དྲ་གནས་སྣོན་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_BUTTON_AGREE_ABB">མོས་མཐུན།</string>
+    <string name="MIDS_GH_BUTTON_APPLY_ABB2">བེད་སྤྱོད།</string>
+    <string name="MIDS_GH_BUTTON_CANCEL_ABB3">རྩིས་མེད།</string>
+    <string name="MIDS_GH_BUTTON_CHECK_RECORDED_VIDEO_IN_GALLERY">པར་དེབ་ནང་ནས་ཕབ་འཇུག་བྱས་པའི་བརྙན་ཟློས་བལྟ་ཞིབ་བྱས།</string>
+    <string name="MIDS_GH_BUTTON_CLEAR_ABB2">གཙང་དོར།</string>
+    <string name="MIDS_GH_BUTTON_CLOSE">སྒོ་རྒྱག་པ།</string>
+    <string name="MIDS_GH_BUTTON_CONFIRM">གཏན་འཁེལ།</string>
+    <string name="MIDS_GH_BUTTON_DELETE">སུབ་པ།</string>
+    <string name="MIDS_GH_BUTTON_DELETE_ABB4">སུབ་པ།</string>
+    <string name="MIDS_GH_BUTTON_DISABLE_ABB">བཀག་པ།</string>
+    <string name="MIDS_GH_BUTTON_DISAGREE_ABB">མོས་མི་མཐུན།</string>
+    <string name="MIDS_GH_BUTTON_DISCOVERY">རྙེད་པ།</string>
+    <string name="MIDS_GH_BUTTON_DONE">འགྲུབ་ཟིན།</string>
+    <string name="MIDS_GH_BUTTON_EDIT">སྒྲིག་བཟོ་བྱེད།</string>
+    <string name="MIDS_GH_BUTTON_ENABLE_ABB">ཁ་ཕྱེ་བ།</string>
+    <string name="MIDS_GH_BUTTON_FEATURED_VIDEOS">བརྙན་ཟློས་དྲག་བསྡུས།</string>
+    <string name="MIDS_GH_BUTTON_FIND_MORE_GAMES">རྩེད་མོ་གང་མང་འཚོལ་བ།</string>
+    <string name="MIDS_GH_BUTTON_GAME_SOUND">རྩེད་མོའི་སྐད་སྒྲ།</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS">རྩེད་མོའི་ལག་ཆ།</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS_OFF">Game Toolsཁ་རྒྱག་པ།</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS_ON">Game Toolsཁ་ཕྱེ་བ།</string>
+    <string name="MIDS_GH_BUTTON_GAME_VIDEOS">རྩེད་མོའི་བརྙན་ཟློས།</string>
+    <string name="MIDS_GH_BUTTON_GAME_VIDEOS_ABB">རྩེད་མོའི་བརྙན་ཟློས།</string>
+    <string name="MIDS_GH_BUTTON_IN_GAME_LOCK_SCREEN">རྩེད་མོའི་ནང་བརྙན་ཡོལ་བསྡམ་སྒྲིག་བྱས།</string>
+    <string name="MIDS_GH_BUTTON_LATER_ABB">ཅུང་ཙམ་གྱི་རྗེས་ནས།</string>
+    <string name="MIDS_GH_BUTTON_LIST_AS_GAME_APP">རྩེད་མོའི་ཉེར་སྤྱོད་བྱ་རིམ་གྲས་སུ་སྒྲིག</string>
+    <string name="MIDS_GH_BUTTON_LIST_AS_NON_GAME_APP">རྩེད་མོ་མིན་པའི་ཉེར་སྤྱོད་བྱ་རིམ་གྲས་སུ་སྒྲིག</string>
+    <string name="MIDS_GH_BUTTON_LOCK_BACK_KEY">ཕྱིར་ལོག་མཐེབ་བསྡམ་སྒྲིག་བྱས།</string>
+    <string name="MIDS_GH_BUTTON_LOCK_RECENTS_AND_BACK_KEYS">ཉེ་དུས་མཐེབ་དང་ཕྱིར་ལོག་མཐེབ་བསྡམ་སྒྲིག་བྱས།</string>
+    <string name="MIDS_GH_BUTTON_LOCK_RECENTS_KEY">ཉེ་དུས་བེད་སྤྱོད་བྱས་པའི་མཐེབ་བསྡམ་སྒྲིག་བྱས།</string>
+    <string name="MIDS_GH_BUTTON_MORE">གང་མང་།</string>
+    <string name="MIDS_GH_BUTTON_MORE_ABB4">མང་བ།</string>
+    <string name="MIDS_GH_BUTTON_NO_INTERRUPTIONS_ABB">སུན་པོ་མེད་པ།</string>
+    <string name="MIDS_GH_BUTTON_OK">གཏན་འཁེལ།</string>
+    <string name="MIDS_GH_BUTTON_OPEN">ཁ་ཕྱེ་བ།</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAMES_MUTED_OFF">སྐད་མེད་པར་རྩེད་མོ་ཁ་ཕྱེ་རྒྱུ་བཀག་པ།</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAMES_MUTED_ON">སྐད་མེད་པར་རྩེད་མོ་ཁ་ཕྱེ་རྒྱུ་ཁ་ཕྱེ།</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAME_ABB">རྩེད་མོའི་ཁ་ཕྱེ་བ།</string>
+    <string name="MIDS_GH_BUTTON_PLAY">རྩེད་མོ།</string>
+    <string name="MIDS_GH_BUTTON_PLAYERS">རྩེད་མཁན།</string>
+    <string name="MIDS_GH_BUTTON_PLAYING_TIME">རྩེད་མོའི་དུས་ཚོད་</string>
+    <string name="MIDS_GH_BUTTON_POP_UP_WINDOW">ཚུར་ཐོན་ཁྲ་ངོས།</string>
+    <string name="MIDS_GH_BUTTON_RECORD">ཕབ་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_BUTTON_REFRESH_ABB3">གསར་སྒྲིག</string>
+    <string name="MIDS_GH_BUTTON_REGISTER_ABB">ཐོ་འགོད་པ།</string>
+    <string name="MIDS_GH_BUTTON_REQUEST_REGISTRATION">ཐོ་འགོད་རེ་ཞུ་བྱས།</string>
+    <string name="MIDS_GH_BUTTON_RESTART_ABB2">བསྐྱར་དུ་འགུལ་སློང་བྱེད།</string>
+    <string name="MIDS_GH_BUTTON_RETRY_ABB">ཡངབསྐྱར་འབད་རྩོལ་བྱ།</string>
+    <string name="MIDS_GH_BUTTON_RE_ENABLE_DATA">བཞུར་ཚད་བསྐྱར་དུ་ཁ་ཕྱེ།</string>
+    <string name="MIDS_GH_BUTTON_SAVE_POWER_DURING_GAME">རྩེད་མོས་གློག་བསྲི་བ།</string>
+    <string name="MIDS_GH_BUTTON_SAVE_POWER_OFF">གློག་བསྲི་ཁ་རྒྱག་པ།</string>
+    <string name="MIDS_GH_BUTTON_SHARE">མཉམ་སྤྱོད།</string>
+    <string name="MIDS_GH_BUTTON_SHOW">གསལ་སྟོན།</string>
+    <string name="MIDS_GH_BUTTON_START_ABB">འགོ་འཛུགས།</string>
+    <string name="MIDS_GH_BUTTON_STOP_ABB">མཚམས་འཇོག</string>
+    <string name="MIDS_GH_BUTTON_TAP_HERE_TO_ADD_UNLISTED_GAMES">འདི་གར་བརྡེབས་ནས་གསལ་སྟོན་བྱས་མེད་པའི་རྩེད་མོ་སྣོན་འཇུག་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_BUTTON_TOP_CHARTS">དར་ཆེ་ཆུང་ཨང་རིམ་གསལ་བྱང་།</string>
+    <string name="MIDS_GH_BUTTON_TOP_GAMES_ABB">དར་ཆེའི་རྩེད་མོ།</string>
+    <string name="MIDS_GH_BUTTON_UPDATE_ABB4">གསར་བརྗེས།</string>
+    <string name="MIDS_GH_BUTTON_VIEW_VIDEO_IN_GAME_LAUNCHER">Game Launcherཐོག་བརྙན་ཟློས་བལྟ་ཞིབ་བྱས།</string>
+    <string name="MIDS_GH_HEADER_ADD_SHORTCUT">མྱུར་མགྱོགས་འབྲེལ་མཐུད་སྣོན་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_HEADER_ANNOUNCEMENTS">སྤྱི་བསྒྲགས།</string>
+    <string name="MIDS_GH_HEADER_ASSIGN_P1SS_TO_P2SS">%1$sདེ་%2$sལ་འགོས་སྲིད།</string>
+    <string name="MIDS_GH_HEADER_CONNECT_VIA_MOBILE_NETWORKS_ABB">འགྲུལ་འཕྲིན་ཡོངས་འབྲེལ་ཐོག་བརྒྱུད་སྦྲེལ་བྱེད།</string>
+    <string name="MIDS_GH_HEADER_CONNECT_VIA_ROAMING_NETWORK_ABB">ཡོངས་འབྲེལ་ཐོག་ཏུ་འབྲེལ་མཐུད་འབད་བ།</string>
+    <string name="MIDS_GH_HEADER_CUSTOMISED_PERFORMANCE">ཕན་ནུས་རང་འགྲོས་སྒྲིག</string>
+    <string name="MIDS_GH_HEADER_DATA_NETWORK_DISABLED_ABB">གཞི་གྲངས་དྲ་བ་ཁ་བཀག་ཟིན།</string>
+    <string name="MIDS_GH_HEADER_DISCLAIMER_ABB">འགན་མེད་གསལ་བཤད་</string>
+    <string name="MIDS_GH_HEADER_DISCOVERY">རྙེད་པ།</string>
+    <string name="MIDS_GH_HEADER_DISPLAY_GAME_ICONS_ON_GAME_LAUNCHER_ONLY">Game Launcherཁོ་ནའི་ནང་རྩེད་མོའི་རྟགས་རིས་གསལ་བ།</string>
+    <string name="MIDS_GH_HEADER_ENABLE_PS">%s ནུས་ལྡན་བཟོ།</string>
+    <string name="MIDS_GH_HEADER_ENTER_WEB_ADDRESS">དྲ་གནས་འཇུག་པ།</string>
+    <string name="MIDS_GH_HEADER_FAVOURITE_GENRE">དགའ་པོ་ཡོད་པའི་རིགས་གྲས།</string>
+    <string name="MIDS_GH_HEADER_GALAXY_GAMERS">Galaxyརྩེད་མཁན།</string>
+    <string name="MIDS_GH_HEADER_GAMES">རྩེད་མོ།</string>
+    <string name="MIDS_GH_HEADER_GAME_DISCOVERY">རྩེད་མོ་འཚོལ་བ།</string>
+    <string name="MIDS_GH_HEADER_GAME_LAUNCHER_ABB">རོལ་རྩེད་འགོ་འཛུགས་ཆས།</string>
+    <string name="MIDS_GH_HEADER_INSTALLED_APPS_ABB2">སྒྲིག་འཇུག་ཟིན་པའི་ཉེར་སྤྱོད་བྱ་རིམ་</string>
+    <string name="MIDS_GH_HEADER_INTRODUCING_GAME_TOOLS_ABB">Game Toolsངོ་སྤྲོད།</string>
+    <string name="MIDS_GH_HEADER_MOBILE_DATA_TURNED_OFF_ABB">ཁ་པར་བཞུར་ཚད་ཁ་བཀག་ཟིན།</string>
+    <string name="MIDS_GH_HEADER_MOST_ACTIVE_ABB">བྱ་འགུལ་སྤྱོད་མཁན་གྲངས་མང་ཤོས།</string>
+    <string name="MIDS_GH_HEADER_MOST_ADDICTIVE_ABB">དབྱིངས་འཕར་ཤོས།</string>
+    <string name="MIDS_GH_HEADER_NEW_RELEASES_N_UPDATES_ABB">གསར་སྤེལ་དང་དོ་དམ།</string>
+    <string name="MIDS_GH_HEADER_NO_NETWORK_CONNECTION_ABB2">དྲ་བའི་འབྲེལ་མཐུད་མེད་པ།</string>
+    <string name="MIDS_GH_HEADER_OTHER_APPS">ཉེར་སྤྱོད་བྱ་རིམ་གཞན་པ།</string>
+    <string name="MIDS_GH_HEADER_PERMISSIONS">དབང་ཚད།</string>
+    <string name="MIDS_GH_HEADER_POPULAR">དར་ཆེ།</string>
+    <string name="MIDS_GH_HEADER_PRIVACY_POLICY">གསང་བའི་ཐབས་ཇུས་</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_PLAYED">ཉེ་དུས་རྩེད་པའི་རྩེད་མོ།</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_PLAYED_ABB">ཉེ་དུས་གཏོང་ལེན་བྱས།</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_USED_APPS">ཉེ་དུས་བེད་སྤྱོད་གཏོང་བའི་ཉེར་སྤྱོད་བྱ་རིམ།</string>
+    <string name="MIDS_GH_HEADER_RECOMMENDED_FOR_YOU_ABB">རང་གཤིས་ལྡན་པའི་ངོས་སྦྱོར།</string>
+    <string name="MIDS_GH_HEADER_RECORDED_ABB">ཕབ་འཇུག་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_HEADER_RECORDING_SETTINGS_ABB">ཕབ་འཇུག་སྒྲིག་འགོད་བྱས།</string>
+    <string name="MIDS_GH_HEADER_RECORD_GAME">རྩེད་མོའི་བརྙན་ཟློས་ཕབ་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_HEADER_REGISTER_ABB2">ཐོ་འགོད་པ།</string>
+    <string name="MIDS_GH_HEADER_REGISTRATION_FAILED_ABB">ཐོ་འགོད་ཐུབ་མ་སོང་།</string>
+    <string name="MIDS_GH_HEADER_REGISTRATION_REQUEST_REQUIRED_ABB">ཐོ་འགོད་རེ་ཞུ་དགོས།</string>
+    <string name="MIDS_GH_HEADER_RELATED">སྐོར།</string>
+    <string name="MIDS_GH_HEADER_RELATED_GAMES">འབྲེལ་ཡོད་རྩེད་མོ།</string>
+    <string name="MIDS_GH_HEADER_RESTART_GAME">རྩེད་མོ་བསྐྱར་དུ་ཁ་ཕྱེ།</string>
+    <string name="MIDS_GH_HEADER_RESTART_GAMES_ABB">རྩེད་མོ་བསྐྱར་དུ་འགུལ་སློང་བྱས།</string>
+    <string name="MIDS_GH_HEADER_SELECT_HOT_KEY">མྱུར་མཐེབ་འདེམས་པ།</string>
+    <string name="MIDS_GH_HEADER_SELECT_VIDEOS">བརྙན་ཟློས་འདེམས་པ།</string>
+    <string name="MIDS_GH_HEADER_SET_PROFILE_IMAGE_ABB">སྒེར་གྱི་ཡིག་ཆ་པར་རིས་སྒྲིག་པ།</string>
+    <string name="MIDS_GH_HEADER_SET_PROFILE_IMAGE_ABB2">ངོ་སྤྲོད་འདྲ་པར་སྒྲིག་བཀོད་བྱ།</string>
+    <string name="MIDS_GH_HEADER_SPECIAL_OFFERS_ABB">དམིགས་གསལ་གོང་ཁེ་བ།</string>
+    <string name="MIDS_GH_HEADER_STAFF_PICKS_ABB">ལས་མིའི་ལེགས་འདེམས།</string>
+    <string name="MIDS_GH_HEADER_UNABLE_TO_ADD_GAME_ABB">རྩེད་མོ་སྣོན་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_HEADER_UNABLE_TO_REGISTER_GAME_ABB">རྩེད་མོ་ཐོ་འགོད་མི་ཐུབ།</string>
+    <string name="MIDS_GH_HEADER_UNINSTALL_APP_ABB">ཉེར་སྤྱོད་བྱ་རིམ་ཕབ་དོར་བྱས།</string>
+    <string name="MIDS_GH_HEADER_UNINSTALL_GAME">རྩེད་མོ་ཕབ་དོར་བྱས།</string>
+    <string name="MIDS_GH_HEADER_UPDATE_PS">གསར་བརྗེས་%s</string>
+    <string name="MIDS_GH_HEADER_VIDEO_SETTINGS_ABB">བརྙན་ཟློས་སྒྲིག་འགོད།</string>
+    <string name="MIDS_GH_HEADER_WI_FI_NOT_AVAILABLE_ABB">Wi-Fiསྤྱོད་མི་ཐུབ།</string>
+    <string name="MIDS_GH_HEADER_YOUTUBE_SEARCH_RESULTS">YouTubeམཇུག་འབྲས་འཚོལ་བ།</string>
+    <string name="MIDS_GH_MBODY_ABOUT_GAME_LAUNCHER">Game Launcherསྐོར།</string>
+    <string name="MIDS_GH_MBODY_ABOUT_GAME_TOOLS">རོལ་རྩེད་ཡོ་བྱེད་སྐོར་</string>
+    <string name="MIDS_GH_MBODY_ABOUT_PS">%sསྐོར།</string>
+    <string name="MIDS_GH_MBODY_AUDIO_SOURCE">སྒྲ་ཟློས་ཡོང་ཁུངས།</string>
+    <string name="MIDS_GH_MBODY_BITRATE">པི་ཐ་སྡུར་ཚད།</string>
+    <string name="MIDS_GH_MBODY_CONTACT_US">ང་ཚོ་དང་འབྲེལ་གཏུག་བྱེད།</string>
+    <string name="MIDS_GH_MBODY_FAQ">ཡང་ཡང་འདྲི་བའི་དྲི་བ་ཁག</string>
+    <string name="MIDS_GH_MBODY_FEATURED_ABB">དྲག་བསྡུས།</string>
+    <string name="MIDS_GH_MBODY_FRAME_RATE">གཞི་པར་འདུ་ཚད།</string>
+    <string name="MIDS_GH_MBODY_GAMES">རོལ་རྩེད།</string>
+    <string name="MIDS_GH_MBODY_GAME_ICON_DISPLAY_OPTION">རྩེད་མོའི་རྟགས་རིས་གསལ་སྟོན་འདེམས་ག</string>
+    <string name="MIDS_GH_MBODY_GAME_NOTIFICATIONS">རྩེད་མོའི་བརྡ་ཐོ།</string>
+    <string name="MIDS_GH_MBODY_GAME_RECORDER">རྩེད་མོ་ཕབ་འཇུག་ཡོ་བྱད།</string>
+    <string name="MIDS_GH_MBODY_GAME_TOOLS">རྩེད་མོའི་ལག་ཆ།</string>
+    <string name="MIDS_GH_MBODY_GAMING_OPTIMISATION">རྩེད་མོའི་ལེགས་སྒྲིག</string>
+    <string name="MIDS_GH_MBODY_HELP">རོགས་པ།</string>
+    <string name="MIDS_GH_MBODY_HOT_KEY">མྱུར་མཐེབ།</string>
+    <string name="MIDS_GH_MBODY_INTRODUCING_GAME_LAUNCHER_ABB">རོལ་རྩེད་གཏོང་མཁན་ངོ་སྤྲོད་བཞིན་པ།</string>
+    <string name="MIDS_GH_MBODY_MARKETING_INFORMATION">ཚོང་གཉེར་ཆ་འཕྲིན།</string>
+    <string name="MIDS_GH_MBODY_MINIMISE_AND_ALIVE">ཆུང་ཤོས་ཅན་དང་བྱ་འགུལ་གནས་སྟངས་རྒྱུན་འཁྱོངས་བྱེད་པ།</string>
+    <string name="MIDS_GH_MBODY_MINIMISE_GAME">རྩེད་མོ་ཆུང་ཤོས་ཅན།</string>
+    <string name="MIDS_GH_MBODY_MY_QUESTIONS">ང་ཡི་གནས་ཚུལ།</string>
+    <string name="MIDS_GH_MBODY_NORMAL_MODE_ABB">སྤྱིར་བཏང་རྣམ་པ།</string>
+    <string name="MIDS_GH_MBODY_NO_INTERRUPTIONS">སུན་པོ་མེད་པ།</string>
+    <string name="MIDS_GH_MBODY_PERFORMANCE_MODE_ABB">ཕན་ནུས་སྔོན་སྤྱོད།</string>
+    <string name="MIDS_GH_MBODY_PHONE_AUDIO">ལག་ཐོག་ཁ་པར་སྒྲ་ཟློས་</string>
+    <string name="MIDS_GH_MBODY_PROFILE_SIZE">སྒེར་གྱི་ཡིག་ཆ་ཆེ་ཆུང་།</string>
+    <string name="MIDS_GH_MBODY_PROFILE_SOURCE">སྒེར་གྱི་ཡིག་ཆ་ཡོངས་ཁུངས།</string>
+    <string name="MIDS_GH_MBODY_RAM">ནང་གསོག་</string>
+    <string name="MIDS_GH_MBODY_RECORD_TOUCH_INTERACTION">རེག་ཐུག་འགྲོས་རེས་ཟིན་འགོད་ཟིན།</string>
+    <string name="MIDS_GH_MBODY_REDUCE_GRAPHICS_QUALITY">བརྙན་པར་སྤུས་ཚད་དམའ་རུ་བཏང་།</string>
+    <string name="MIDS_GH_MBODY_RESOLUTION">འབྱེད་ཚད།</string>
+    <string name="MIDS_GH_MBODY_SAVE_POWER_DURING_GAME_ABB">རྩེད་མོས་གློག་བསྲི་བ།</string>
+    <string name="MIDS_GH_MBODY_SCREEN_CAPTURED">བརྙན་ཡོལ་དྲས་ལེན་བྱས།</string>
+    <string name="MIDS_GH_MBODY_SHORTCUT">མྱུར་མགྱོགས་འབྲེལ་མཐུད།</string>
+    <string name="MIDS_GH_MBODY_TAP_HERE_TO_STOP_AND_SAVE_RECORDING">འདི་གར་བརྡེབས་ནས་ཕབ་འཇུག་མཚམས་འཇོག་དང་ཉར་ཚགས་བྱེད་ཆོག</string>
+    <string name="MIDS_GH_MBODY_VIDEO_QUALITY">བརྙན་ཟློས་སྤུས་ཚད།</string>
+    <string name="MIDS_GH_NPBODY_BY_NUMBER_OF_PLAYERS">རྩེད་མཁན་གྲངས་བཞིན།</string>
+    <string name="MIDS_GH_NPBODY_BY_PLAY_TIME">རྩེད་མོའི་དུས་ཚོད་བཞིན།</string>
+    <string name="MIDS_GH_NPBODY_COLLAPSE">བསྡུ་བ།</string>
+    <string name="MIDS_GH_NPBODY_DRAG_DOWNWARDS_TO_SHOW_GAME_TOOLS">འོག་ཏུ་འདྲུད་ནས་Game Toolsགསལ་སྟོན་ཐུབ།</string>
+    <string name="MIDS_GH_NPBODY_EXPAND">འགྲེམས་པ།</string>
+    <string name="MIDS_GH_NPBODY_FEATURED_GAMES">རྩེད་མོ་ངོས་སྦྱོར་བྱེད།</string>
+    <string name="MIDS_GH_NPBODY_FILE_SIZE_C_P1SS_P2SS">ཡིག་ཆ་ཆེ་ཆུང་ནི་%1$s %2$s</string>
+    <string name="MIDS_GH_NPBODY_GAME_BEING_PLAYED">རྩེད་མོའི་རྩེ་བཞིན་ཡོད།</string>
+    <string name="MIDS_GH_NPBODY_GAME_LAUNCHER">Game Launcher</string>
+    <string name="MIDS_GH_NPBODY_INSTALLED">སྒྲིག་འཇུག་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_NPBODY_NEW">གསར་ཤོས།</string>
+    <string name="MIDS_GH_NPBODY_NEW_GAMES_ABB">རྩེད་མོ་གསར་པ།</string>
+    <string name="MIDS_GH_NPBODY_NO_ANNOUNCEMENTS">གསལ་བསྒྲགས་མིན་འདུག</string>
+    <string name="MIDS_GH_NPBODY_NO_APPS_AVAILABLE_TO_ADD_TO_PS">%sཐོག་སྣོན་འཇུག་བྱེད་པའི་ཉེར་སྤྱོད་བྱ་རིམ་མེད།</string>
+    <string name="MIDS_GH_NPBODY_NO_AVAILABLE_GAMES">སྤྱོད་ཆོག་པའི་རྩེད་མོ་མེད་པ།</string>
+    <string name="MIDS_GH_NPBODY_NO_GAMES">རྩེད་མོ་མེད།</string>
+    <string name="MIDS_GH_NPBODY_NO_INSTALLED_GAMES">སྒྲིག་འཇུག་ཟིན་པའི་རྩེད་མོའི་མེད།</string>
+    <string name="MIDS_GH_NPBODY_NO_RECORDED_VIDEOS">ཕབ་འཇུག་བྱས་པའི་བརྙན་ཟློས་མེད་པ།</string>
+    <string name="MIDS_GH_NPBODY_NO_RESULTS_FOUND">མཇུག་འབྲས་མ་རྙེད།</string>
+    <string name="MIDS_GH_NPBODY_NO_SEARCH_RESULTS">འཚོལ་བསྡུ་བྱས་པའི་མཇུག་འབྲས་མེད།</string>
+    <string name="MIDS_GH_NPBODY_REMAINING_BATTERY_POWER_C_PDP" formatted="false">གློག་ལྷག་མ་%d%</string>
+    <string name="MIDS_GH_NPBODY_SEARCH">འཚོལ་བ།</string>
+    <string name="MIDS_GH_NPBODY_SWIPE_SCREEN_TO_UNLOCK">བརྙན་ཡོལ་འདྲུད་ནས་གསང་འགྲོལ་དགོས།</string>
+    <string name="MIDS_GH_OPT_ADD_APPS">ཉེར་སྤྱོད་བྱ་རིམ་སྣོན་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_OPT_ADD_TO_HOME_SCREEN">བརྙན་ཡོལ་མ་ངོས་ཐོག་སྣོན་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_OPT_ADJUST_BITRATE_ACCORDING_TO_RESOLUTION">འབྱེད་ཚད་བཞིན་པི་ཐ་སྡུར་ཚད་སྒྲིག་པ།</string>
+    <string name="MIDS_GH_OPT_ALL">ཚང་མ།</string>
+    <string name="MIDS_GH_OPT_ALL_TIME">དུས་ཚོད་ཚང་མ།</string>
+    <string name="MIDS_GH_OPT_ALWAYS_RESTART">རྟག་པར་བསྐྱར་དུ་འགུལ་སློང་བྱས།</string>
+    <string name="MIDS_GH_OPT_APP_INFO">ཉེར་སྤྱོད་བྱ་རིམ་ཆ་འཕྲིན།</string>
+    <string name="MIDS_GH_OPT_APP_INFO_ABB">ཉེར་སྤྱོད་བྱ་རིམ་ཆ་འཕྲིན།</string>
+    <string name="MIDS_GH_OPT_APP_INFO_ABB2">ཉེར་སྤྱོད་བྱ་རིམ་ཆ་འཕྲིན།</string>
+    <string name="MIDS_GH_OPT_AUTO">རང་འགུལ་ཐོག</string>
+    <string name="MIDS_GH_OPT_BACK_KEY_ONLY">ཕྱིར་ལོག་མཐེབ་ཁོ་ན།</string>
+    <string name="MIDS_GH_OPT_BOTH_RECENTS_AND_BACK_KEYS">ཉེ་དུས་བེད་སྤྱོད་བྱས་པའི་མཐེབ་དང་ཕྱིར་ལོག་མཐེབ།</string>
+    <string name="MIDS_GH_OPT_CATEGORISE_AS_GAME">རྩེད་མོའི་རིགས་སུ་སྒྲིག</string>
+    <string name="MIDS_GH_OPT_CATEGORISE_AS_OTHER_APP">ཉེར་སྤྱོད་བྱ་རིམ་གཞན་པའི་རིགས་སུ་སྒྲིག</string>
+    <string name="MIDS_GH_OPT_COMMUNITY">སྡེ་ཁུལ།</string>
+    <string name="MIDS_GH_OPT_CUSTOM">རང་འགྲོས་སྒྲིག་པ།</string>
+    <string name="MIDS_GH_OPT_DEFAULT_IMAGE">སོར་བཞག་པར་རིས།</string>
+    <string name="MIDS_GH_OPT_DETAILS">ཞིབ་ཆ།</string>
+    <string name="MIDS_GH_OPT_DISPLAY_GAME_ICONS_ON_BOTH_APPS_AND_GAME_LAUNCHER">ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་དང་Game Launcherནང་ལྷན་ཅིག་རྩེད་མོའི་རྟགས་རིས་གསལ་བ།</string>
+    <string name="MIDS_GH_OPT_DISPLAY_GAME_ICONS_ON_GAME_LAUNCHER_ONLY">Game Launcherཁོ་ནའི་ནང་རྩེད་མོའི་རྟགས་རིས་གསལ་བ།</string>
+    <string name="MIDS_GH_OPT_DO_NOT_SHOW_AGAIN">སླར་མ་འཐོན།</string>
+    <string name="MIDS_GH_OPT_EDIT_VIDEO_ABB">བརྙན་ཟློས་སྒྲིག་པ།</string>
+    <string name="MIDS_GH_OPT_FRONT_CAMERA">མདུན་སྒྲིག་པར་སྒོ།</string>
+    <string name="MIDS_GH_OPT_FRONT_CAMERA_ABB">མདུན་སྒྲིག་པར་སྒོ།</string>
+    <string name="MIDS_GH_OPT_FULL_SCREEN">ཡོལ་ཡོངས།</string>
+    <string name="MIDS_GH_OPT_GAME_AUDIO">རྩེད་མོའི་སྒྲ་ཟློས།</string>
+    <string name="MIDS_GH_OPT_GAME_SETTINGS">རྩེད་མོའི་སྒྲིག་འགོད།</string>
+    <string name="MIDS_GH_OPT_GO_TO_DISCOVERY">འཚོལ་རྙེད་ནང་ཞུགས་པ།</string>
+    <string name="MIDS_GH_OPT_GO_TO_GAME_DISCOVERY">རྩེད་མོའི་འཚོལ་རྒྱུར་ཞུགས་པ།</string>
+    <string name="MIDS_GH_OPT_GO_TO_GAME_LAUNCHER">Game Launcherནང་ཞུགས་པ།</string>
+    <string name="MIDS_GH_OPT_GO_TO_SETTINGS_ABB">སྒྲིག་འགོད་ལ་འགྲོ།</string>
+    <string name="MIDS_GH_OPT_HIDE">སྦས་པ།</string>
+    <string name="MIDS_GH_OPT_IMAGE_ABB">པར་རིས།</string>
+    <string name="MIDS_GH_OPT_IN_LAST_MONTH">ཟླ་བ་གོང་མ།</string>
+    <string name="MIDS_GH_OPT_IN_LAST_WEEK">གཟའ་འཁོར་གོང་མ།</string>
+    <string name="MIDS_GH_OPT_I_AGREE_TO_RECEIVE_MARKETING_INFORMATION_HOPTIONAL">ཚོང་གཉེར་ཆ་འཕྲིན་(འདེམས་ག་)བསྡུ་ལེན་བྱེད་པར་ང་མོས་མཐུན།</string>
+    <string name="MIDS_GH_OPT_LAST_MONTH">ཟླ་བ་གོང་མ།</string>
+    <string name="MIDS_GH_OPT_LAST_WEEK">གཟའ་འཁོར་གོང་མ།</string>
+    <string name="MIDS_GH_OPT_MANAGE_GAME_NOTIFICATIONS">རྩེད་མོའི་བརྡ་ཐོ་དོ་དམ་བྱས།</string>
+    <string name="MIDS_GH_OPT_MICROPHONE">སྒྲ་སྦུག</string>
+    <string name="MIDS_GH_OPT_MOVE_TO_OTHER_SCREEN_ABB">བརྙན་ཡོལ་གཞན་ཐོག་སྤོས་པ།</string>
+    <string name="MIDS_GH_OPT_MY_DIARY">ང་ཡི་ཉིན་ཐོ།</string>
+    <string name="MIDS_GH_OPT_NONE">མེད།</string>
+    <string name="MIDS_GH_OPT_NORMAL">ཡང་དག།</string>
+    <string name="MIDS_GH_OPT_NO_ALERTS_DURING_GAME_ABB">རྩེད་མོའི་ནང་དྲན་སྐུལ་ཁ་རྒྱག་པ།</string>
+    <string name="MIDS_GH_OPT_NO_ALERTS_WHILE_USING_APP">ཉེར་སྤྱོད་བྱ་རིམ་བེད་སྤྱོད་གཏོང་སྐབས་སུན་པོ་མེད་པ་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_OPT_PLAYING_TIME_MODE_ABB">རྩེད་མོའི་དུས་ཚོད་རྣམ་པ་</string>
+    <string name="MIDS_GH_OPT_RECENTS_KEY_ONLY">ཉེ་དུས་བེད་སྤྱོད་གཏོང་བའི་མཐེབ་ཁོ་ན།</string>
+    <string name="MIDS_GH_OPT_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_DEVICE_MAY_BE_RECORDED_WITH_GAME_AUDIO">རྩེད་མོའི་སྒྲ་ཟློས་ཕབ་འཇུག་བྱས།ཁྱེད་ཀྱི་འཕྲུལ་ཆས་ཐོག་གི་མ་ལག་སྐད་སྒྲ་དང་རྩེད་མོའི་སྒྲ་ཟློས་ལྷན་ཅིག་ཕབ་འཇུག་བྱེད་སྲིད།</string>
+    <string name="MIDS_GH_OPT_RECORD_EXTERNAL_AUDIO_USING_MICROPHONE">སྒྲ་སྦུག་བེད་སྤྱོད་བྱས་ནས་ཕྱི་ལོགས་སྒྲ་ཟློས་ཕབ་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_OPT_REGISTERED_APPS">ཐོ་འགོད་པའི་ཉེར་སྤྱོད་བྱ་རིམ།</string>
+    <string name="MIDS_GH_OPT_REMOVE">དོར་བ།</string>
+    <string name="MIDS_GH_OPT_REMOVE_ABB">དོར་བ།</string>
+    <string name="MIDS_GH_OPT_REMOVE_ABB2">དོར་བ།</string>
+    <string name="MIDS_GH_OPT_REMOVE_APPS">ཉེར་སྤྱོད་བྱ་རིམ་དོར་བ།</string>
+    <string name="MIDS_GH_OPT_SAVE_CUSTOM_POWER">གློག་བསྲི་ཚགས་རང་འགྲོས་སྒྲིག</string>
+    <string name="MIDS_GH_OPT_SAVE_MAXIMUM_POWER">གློག་གྲོན་ཆུང་མང་ཤོས་བྱས།</string>
+    <string name="MIDS_GH_OPT_SAVE_POWER">གློག་བསྲི་བ།</string>
+    <string name="MIDS_GH_OPT_SAVE_POWER_FOR_GAMES">རྩེད་མོར་གློག་བསྲི་བ།</string>
+    <string name="MIDS_GH_OPT_SCREEN_TOUCH_LOCK">བརྙན་ཡོལ་རེག་ཐུག་གཏོང་འཛིན་བསྡམ་སྒྲིག་བྱས།</string>
+    <string name="MIDS_GH_OPT_SELECT_APP_ABB">ཉེར་སྤྱོད་བྱ་རིམ་འདེམས་པ།</string>
+    <string name="MIDS_GH_OPT_SELECT_FROM_GALLERY_ABB2">པར་དེབ་ནང་ནས་འདེམས་པ།</string>
+    <string name="MIDS_GH_OPT_SHOW_A_PROFILE_IMAGE_WHILE_RECORDING">ཕབ་འཇུག་བྱེད་པའི་སྐབས་སྒེར་གྱི་ཡིག་ཆའི་པར་རིས་གསལ་བ།</string>
+    <string name="MIDS_GH_OPT_SHOW_NAVIGATION_BAR">ཕྱོགས་སྟོན་གསལ་བྱང་གསལ་བ།</string>
+    <string name="MIDS_GH_OPT_TAKE_PICTURE">འདྲ་པར་བླངས།</string>
+    <string name="MIDS_GH_OPT_TAKE_PICTURE_ABB3">པར་ལེན།</string>
+    <string name="MIDS_GH_OPT_TAP_HERE_TO_ADD_APPS">འདི་གར་བརྡེབས་ནས་ཉེར་སྤྱོད་བྱ་རིམ་སྣོན་འཇུག་བྱེད་ཆོག</string>
+    <string name="MIDS_GH_OPT_UNINSTALL_ABB">ཕབ་དོར།</string>
+    <string name="MIDS_GH_OPT_UNINSTALL_APPS">ཉེར་སྤྱོད་བྱ་རིམ་ཕབ་དོར་བྱས།</string>
+    <string name="MIDS_GH_OPT_UNINSTALL_M_INSTALL">ཕབ་དོར།</string>
+    <string name="MIDS_GH_OPT_USE_THE_FRONT_CAMERA_TO_RECORD_YOUR_PROFILE">མདུན་སྒྲིག་པར་སྒོ་བེད་སྤྱད་ནས་སྒེར་གྱི་ཡིག་ཆ་ཕབ་འཇུག་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_POP_1_VIDEO_HAS_BEEN_SELECTED">བརྙན་ཟློས་1འདེམས་ཟིན།</string>
+    <string name="MIDS_GH_POP_1_VIDEO_WILL_BE_DELETED">བརྙན་ཟློས་1སུབ་སྲིད།</string>
+    <string name="MIDS_GH_POP_ALL_OF_YOUR_ALERTS_WILL_BE_MUTED_AND_HIDDEN_DURING_GAMEPLAY_MSG2">རྩེད་མོའི་སྐབས་སུ་དྲན་སྐུལ་ཚང་མ་སྐད་མེད་གཏོང་བའམ་སྦས་སྲིད།བརྙན་ཡོལ་ཐོག་ཚུར་ཡོང་ཁ་པར་ཁོ་ན་གསལ་ཐུབ།</string>
+    <string name="MIDS_GH_POP_AUDIO_SOURCE">སྒྲ་རྒྱུད་ལམ།</string>
+    <string name="MIDS_GH_POP_A_NEW_VERSION_IS_AVAILABLE">ཐོན་རིམ་གསར་པོ་ཞིག་རྙེད་དེ་ཡོད།</string>
+    <string name="MIDS_GH_POP_A_NEW_VERSION_IS_AVAILABLE_PS_MUST_BE_UPDATED_TO_CONTINUE">པར་གཞི་གསར་བ་ཞིག་ནུས་ཡོད་རེད་འདུག %sའདི་ངེས་པར་དུ་མུ་མཐུད་ནས་གསར་སྒྱུར་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_POP_CHANGING_THE_OPTION_WILL_AFFECT_THE_POSITION_OF_APPS_ON_THE_APPS_SCREEN_MSG">འདེམས་ག་སྒྱུར་ཚེ་ཉེར་སྤྱོད་བྱ་རིམ་ཁག་གི་ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ཐོག་གི་གནས་ཡུལ་ལ་ཤུགས་རྐྱེན་ཐེབས་སྲིད།ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ཐོག་རྩེད་མོའི་རྟགས་རིས་སྦས་དགོས།གལ་སྲིད་མུ་མཐུད་ལས་ཚེ།༼གཏན་འཁེལ་༽བརྡེབས་དགོས།</string>
+    <string name="MIDS_GH_POP_CLOSE_ALL_RUNNING_GAMES_AND_OPEN_THEM_AGAIN_TO_APPLY_YOUR_CHANGES">ད་ལྟ་འགུལ་སྐྱོད་བྱེད་བཞིན་པའི་རྩེད་མོའི་ཁ་རྒྱག་པ་དང་བསྐྱར་དུ་ཁ་ཕྱེ་དགོས།དེ་ལྟར་སྒྱུར་སྒྲིག་བྱས་པ་བེད་སྤྱོད་གཏོང་ཐུབ།</string>
+    <string name="MIDS_GH_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN">གཞི་གྲངས་ཕྱིར་ཡན་ཁ་བཀག་ཟིན།Wi-Fiདྲ་བ་དང་འབྲེལ་བའམ་གཞི་གྲངས་ཕྱིར་ཡན་བེད་སྤྱོད་བཏང་ནས་བསྐྱར་ཚོད་བྱེད།</string>
+    <string name="MIDS_GH_POP_DATE">ཚེས་གྲངས་</string>
+    <string name="MIDS_GH_POP_ENTER_THE_WEB_ADDRESS_YOU_WANT_TO_ADD_AS_A_SHORTCUT">མྱུར་མགྱོགས་འབྲེལ་མཐུད་དུ་སྣོན་འཇུག་བྱེད་པའི་དྲ་གནས་འཇུག་དགོས།</string>
+    <string name="MIDS_GH_POP_FEATURES_MAY_VARY_DEPENDING_ON_THE_VERSION">ཕན་ནུས་པར་གཞི་བཞིན་མི་འདྲ་བ་ཡོང་སྲིད།</string>
+    <string name="MIDS_GH_POP_FILE_PATH">ཡིག་ཆའི་ལམ་རྒྱུད།</string>
+    <string name="MIDS_GH_POP_FILE_SIZE">ཡིག་ཆ་ཆེ་ཆུང་།</string>
+    <string name="MIDS_GH_POP_GAMES_DOWNLOADED_FROM_APP_STORES_MSG">Game Launcherའབྲེལ་བྱང་ཚུགས་མེད་པའི་ཉེར་སྤྱོད་ཚོང་ཁང་ནས་ཕབ་ལེན་བྱས་པའི་རྩེད་མོ་ཐོ་འགོད་བྱེད་སྐབས་དུས་ཡུན་གང་ཙམ་འགོར་སྲིད།རྩེད་མོ་གཅིག་པུས་ཐོ་འགོད་རེ་ཞུ་བརྒྱུད་ནས་ཐོ་འགོད་བྱེད་ཐུབ།</string>
+    <string name="MIDS_GH_POP_GAME_ICONS_WILL_BE_HIDDEN_FROM_THE_APPS_SCREEN_AND_DISPLAYED_ON_GAME_LAUNCHER_ONLY_YOU_CAN_CHANGE_THIS_OPTION_IN_THE_GAME_LAUNCHER_SETTINGS">ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ཐོག་རྩེད་མོ་རྟགས་རིས་སྦས་པ་དང་རྩེད་མོ་ལྟེ་གནས་གཅིག་པུའི་ནང་གསལ་བ།ཁྱེད་ནས་རྩེད་མོ་ལྟེ་གནས་སྒྲིག་འགོད་ནང་འདེམས་ག་དེ་སྒྱུར་ཆོག།</string>
+    <string name="MIDS_GH_POP_GAME_ICONS_WILL_BE_HIDDEN_FROM_THE_APPS_SCREEN_MSG">ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ནང་རྩེད་མོའི་རྟགས་རིས་སྦས་སྲིད།ཉེར་སྤྱོད་བྱ་རིམ་དེ་ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ནང་གི་གནས་ཡུལ་སྒྱུར་སྲིད།༼གཏན་འཁེལ་༽བརྡེབས་ནས་མུ་མཐུད་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_POP_GAME_LAUNCHER_HAS_BEEN_DELETED_GAME_TOOLS_WILL_ALSO_BE_DELETED">Game Launcherསུབ་ཟིན།Game Toolsསུབ་སྲིད།</string>
+    <string name="MIDS_GH_POP_GAME_LAUNCHER_WILL_BE_INSTALLED_AFTER_YOUR_DEVICE_RESTARTS">འཕྲུལ་ཆས་བསྐྱར་དུ་ཁ་ཕྱེ་རྗེས་Game Launcherསྒྲིག་འཇུག་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_POP_GAME_TOOLS_INSTALLED">Game Toolsསྒྲིག་འཇུག་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_POP_GAME_TOOLS_IS_REQUIRED_TO_USE_THIS_SERVICE_GAME_TOOLS_WILL_BE_DOWNLOADED_AND_INSTALLED">Game Toolsཡོད་རྗེས་གཞི་ནས་ཞབས་ཞུ་འདི་བེད་སྤྱོད་གཏོང་ཐུབ།Game Toolsཕབ་ལེན་དང་སྒྲིག་འཇུག་བྱེད་པ།</string>
+    <string name="MIDS_GH_POP_IT_IS_RECOMMENDED_THAT_YOU_PLAY_THE_GAME_IN_FULL_SCREEN_MODE_MSG">ཁྱེད་ནས་ཡོལ་ཡོངས་རྣམ་པའི་འོག་རྩེད་མོ་རྩེད་དགོས།གལ་ཏེ་བརྙན་ཡོལ་མཐོང་རིས་སྒྱུར་དགོས་ཚེ།ཁྱེད་ནས་ངེས་པར་དུ་རྩེད་མོ་བསྐྱར་དུ་ཁ་ཕྱེ་དགོས།སྒྲིག་འགོད་འདི་མིག་སྔའི་རྩེད་མོ་ཁོ་ནར་སྤྱོད་དགོས།</string>
+    <string name="MIDS_GH_POP_LENGTH">རིང་ཚད།</string>
+    <string name="MIDS_GH_POP_MANAGE_ALL_YOUR_GAMES_IN_ONE_PLACE_AND_TRY_OUT_ADDITIONAL_GAME_FEATURES">ཁྱོད་ཀྱི་རོལ་རྩེད་ཆ་ཚང་གནས་གཅིག་ཏུ་འཇོག་པ་དང་ཟུར་སྣོན་རོལ་རྩེད་ཡི་བྱེད་ནུས་ཚོད་ལྟ་བྱེད་པ།</string>
+    <string name="MIDS_GH_POP_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_OR_TURN_ON_MOBILE_DATA_AND_TRY_AGAIN">འགུལ་གཏོང་གཞི་གྲངས་ཁ་རྒྱག་ཟིན།Wi-Fiདྲ་བ་དང་འབྲེལ་བའམ་འགུལ་གཏོང་གཞི་གྲངས་ཁ་ཕྱེ་ནས་བསྐྱར་ཚོད་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_POP_NO_SIGNAL_HAS_BEEN_FOUND_FOR_A_MOBILE_NETWORK">འགུལ་གཏོང་དྲ་བའི་བརྡ་རྟགས་མ་རྙེད།</string>
+    <string name="MIDS_GH_POP_P1SS_FEATURES_HP2SS_WILL_NOT_BE_APPLIED_TO_THIS_APP_BECAUSE_IT_IS_NOT_CATEGORISED_AS_A_GAME_MSG">ཉེར་སྤྱོད་བྱ་རིམ་འདི་རྩེད་མོའི་རིགས་སུ་འགོས་སྲིད།%1$sཕན་ནུས་(%2$s)དེར་འོས་མི་འཚམ།༼རྩེད་མོར་སྣོན་འཇུག་བྱས་༽བརྡེབས་ནས་%3$sཕན་ནུས་ནས་ཉེར་སྤྱོད་བྱ་རིམ་འདིར་འོས་འཚམ་མིན་བེད་སྤྱོད་དང་སྒྱུར་ཆོག</string>
+    <string name="MIDS_GH_POP_P1SS_IS_DISABLED_TAP_OK_TO_ENABLE_P2SS">%1$sཁ་བཀག་ཟིན།༼གཏན་འཁེལ་༽བརྡེབས་ནས་%2$sཁ་ཕྱེ་ཆོག</string>
+    <string name="MIDS_GH_POP_P1SS_IS_REQUIRED_TO_USE_THIS_SERVICE_MSG">%1$sསྒྲིག་འཇུག་བྱས་རྗེས་ཞབས་ཞུ་འདི་བེད་སྤྱོད་གཏོང་ཐུབ།Samsungཉེར་སྤྱོད་ཚོང་ཁང་ནང་ཞུགས་ནས་%2$sཕབ་ལེན་སྒྲིག་འཇུག་བྱེད་སྲིད།</string>
+    <string name="MIDS_GH_POP_P1SS_MUST_BE_INSTALLED_TO_USE_THIS_SERVICE_MSG">གལ་ཏེ་ཞབས་ཞུ་འདི་བེད་སྤྱོད་གཏོང་དགོས་ཚེ།ངེས་པར་དུ་%1$sསྒྲིག་འཇུག་བྱེད་དགོས།༼གཏན་འཁེལ་༽བརྡེབས་ནས་Samsungཉེར་སྤྱོད་ཚོང་ཁང་ནང་ཞུགས་ནས་%2$sཕབ་ལེན་དང་སྒྲིག་འཇུག་བྱེད་ཐུབ།</string>
+    <string name="MIDS_GH_POP_P1SS_WILL_NOT_WORK_WHILE_P2SS_IN_P3SS_IS_DISABLED_YOU_CAN_ENABLE_IT_IN_SETTINGS">%3$sནང་གི་%2$sཁ་བཀག་སྐབས།%1$sའགུལ་སྐྱོད་བྱེད་མི་ཐུབ།ཁྱེད་ནས་༼སྒྲིག་འགོད་༽ནང་དེ་ཉིད་ཁ་ཕྱེ་ཆོག</string>
+    <string name="MIDS_GH_POP_PD_VIDEOS_HAVE_BEEN_SELECTED">བརྙན་ཟློས་%dའདེམས་ཟིན།</string>
+    <string name="MIDS_GH_POP_PD_VIDEOS_WILL_BE_DELETED">བརྙན་ཟློས་%dསུབ་སྲིད།</string>
+    <string name="MIDS_GH_POP_PLAY_YOUR_GAMES_LONGER_BY_LOWERING_THE_GRAPHICS_QUALITY_TO_SAVE_BATTERY_POWER">པར་དྭངས་ཚད་དམའ་རུ་བཏང་ནས་གློག་གྲོན་ཆུང་བྱེད་པ།རྩེད་མོ་རྩེད་ཡུན་རིང་དུ་གཏོང་བ།</string>
+    <string name="MIDS_GH_POP_PROFILE_IMAGE_SIZE">སྒེར་གྱི་ཡིག་ཆ་པར་རིས་ཆེ་ཆུང་།</string>
+    <string name="MIDS_GH_POP_PROFILE_SOURCE">སྒེར་གྱི་ཡིག་ཆ་ཡོངས་ཁུངས།</string>
+    <string name="MIDS_GH_POP_PROFILE_VIDEO_SIZE">སྒེར་གྱི་ཡིག་ཆ་བརྙན་ཟློས་ཆེ་ཆུང་</string>
+    <string name="MIDS_GH_POP_PS_AND_ALL_THE_FEATURES_RELATED_TO_IT_WILL_BE_DISABLED">%sདང་འབྲེལ་ཡོད་ཀྱི་ཕན་ནུས་ཚང་མ་བཀག་སྲིད།</string>
+    <string name="MIDS_GH_POP_PS_AND_ALL_THE_FEATURES_RELATED_TO_IT_WILL_BE_DISABLED_YOUR_DATA_WILL_ALSO_BE_DELETED">%sདང་འབྲེལ་ཡོད་ཀྱི་ཕན་ནུས་ཚང་མ་བཀག་སྲིད།ཁྱེད་ཀྱི་གཞི་གྲངས་ཡང་སུབ་སྲིད།</string>
+    <string name="MIDS_GH_POP_PS_IS_DISABLED_YOU_CAN_ENABLE_IT_IN_SETTINGS">%sཁ་བཀག་ཟིན།ཁྱེད་ནས་སྒྲིག་འགོད་ནང་དུ་དེ་ཁ་ཕྱེ་ཆོག</string>
+    <string name="MIDS_GH_POP_PS_WILL_BE_UNINSTALLED">%sཕབ་དོར་གཏོང་སྲིད།</string>
+    <string name="MIDS_GH_POP_PS_WILL_BE_UPDATED_TO_THE_LATEST_VERSION_TO_CONTINUE">གལ་ཏེ་མུ་མཐུད་བྱེད་དགོས་ཚེ།%sརང་འགུལ་ཐོག་པར་གཞི་གསར་ཤོས་ཐོག་གསར་བརྗེས་བྱེད་སྲིད།</string>
+    <string name="MIDS_GH_POP_REGISTERING_ING">ཐོ་འགོད་བཞིན་ཡོད།</string>
+    <string name="MIDS_GH_POP_RESOLUTION">འབྱེད་ཚད།</string>
+    <string name="MIDS_GH_POP_RESTARTING_ING">བསྐྱར་དུ་འགུལ་སློང་བྱེད་བཞིན་པ།</string>
+    <string name="MIDS_GH_POP_SAVE_POWER_DURING_GAME_NOT_AVAILABLE_FOR_HD_RESOLUTION">རྩེད་མོར་གློག་བསྲི་བ།ཕན་ནུས་དེ་HDའབྱེད་ཚད་འོག་བེད་སྤྱོད་གཏོང་མི་ཐུབབབ།</string>
+    <string name="MIDS_GH_POP_THE_ESTIMATED_BATTERY_EFFICIENCY_MAY_VARY_DEPENDING_ON_THE_GAME">སྔོན་དཔག་བྱས་པའི་གློག་རྫས་ཕན་ནུས་རྩེད་མོ་བཞིན་སྒྱུར་སྲིད།</string>
+    <string name="MIDS_GH_POP_THE_FUNCTION_MANAGED_BY_GAME_TUNER_WILL_BE_RESET_TO_DEFAULT">རྩེད་མོ་ལེགས་སྒྲིག་ཡོ་བྱད་ནས་དོ་དམ་བྱས་པའི་ཕན་ནུས་སོར་བཞག་ལ་བསྐྱར་སྒྲིག་བྱེད་སྲིད།</string>
+    <string name="MIDS_GH_POP_THE_P1SS_SETTING_IN_P2SS_IS_DISABLED">ཁ་བཀག་ཟིན།%2$sནང་གི་%1$sསྒྲིག་འགོད།</string>
+    <string name="MIDS_GH_POP_THE_PS_ICON_ON_YOUR_HOME_SCREEN_AND_IN_APPS_WILL_BE_REMOVED">བརྙན་ཡོལ་མ་ངོས་དང་ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ཐོག་གི་%sརྟགས་རིས་དོར་སྲིད།</string>
+    <string name="MIDS_GH_POP_THE_PS_LOG_WILL_BE_CLEARED">%sཟིན་ཐོ་གཙང་དོར་བྱས་པ།</string>
+    <string name="MIDS_GH_POP_THE_PS_LOG_WILL_BE_DELETED">%sཟིན་ཐོ་སུབ་པ།</string>
+    <string name="MIDS_GH_POP_THE_SAVE_POWER_DURING_GAME_FUNCTION_MANAGED_BY_GAME_TUNER_WILL_BE_RESET_TO_DEFAULT">རྩེད་མོ་ལེགས་སྒྲིག་ཡོ་བྱད་ནས་རྩེད་མོར་གློག་བསྲི་བ་དོ་དམ་བྱེད།ཕན་ནུས་སོར་བཞག་སྒྲིག་འགོད་ལ་བསྐྱར་སྒྲིག་བྱེད་སྲིད།</string>
+    <string name="MIDS_GH_POP_THE_SELECTED_GAMES_CANNOT_BE_REGISTERED_DUE_TO_A_POLICY_VIOLATION">ཐབས་ཇུས་ལས་བརྒལ་བས།འདེམས་པའི་རྩེད་མོ་ཐོ་འགོད་མི་ཐུབ།</string>
+    <string name="MIDS_GH_POP_THIS_APP_IS_NOT_LISTED_AS_A_GAME_IN_PS_TAP_REQUEST_REGISTRATION_TO_ADD_IT">ཉེར་སྤྱོད་བྱ་རིམ་འདི་%sནང་དུ་རྩེད་མོའི་གྲས་སུ་སྒྲིག་མེད།༼ཐོ་འགོད་རེ་ཞུ་༽བརྡེབས་ནས་སྣོན་འཇུག་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_POP_THIS_WILL_AFFECT_THE_POSITION_OF_APPS_ON_THE_APPS_SCREEN_MSG">འདིས་ཉེར་སྤྱོད་བྱ་རིམ་རྟགས་རིས་ཁག་ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ཐོག་གི་གནས་ཡུལ་ལ་ཤུགས་རྐྱེན་ཐེབས་སྲིད།ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ནང་རྩེད་མོའི་རྟགས་རིས་སྦས་སྲིད།</string>
+    <string name="MIDS_GH_POP_TITLE">ཁ་བྱང་།</string>
+    <string name="MIDS_GH_POP_TITLE_C_PS">ཁ་བྱང་ནི་%s</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_CATEGORIES_CLOSE_THE_APP">若要更改类别，请关闭应用程序。</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_CATEGORIES_IT_WILL_CLOSE">རིགས་གྲས་སྒྱུར་བའི་ཆེད་དུ།ཉེར་སྤྱོད་བྱ་རིམ་ཁ་རྒྱག་སྲིད།</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_SCREEN_VIEW_YOU_MUST_RESTART_THE_GAME_THIS_SETTING_ONLY_APPLIES_TO_THE_CURRENT_GAME">ཁྱེད་ནས་ངེས་པར་དུ་རྩེད་མོ་བསྐྱར་དུ་ཁ་ཕྱེ་རྗེས་བརྙན་ཡོལ་མཐོང་རིས་སྒྱུར་ཐུབ།སྒྲིག་འགོད་འདི་མིག་སྔའི་རྩེད་མོ་ཁོ་ནར་སྤྱོད་དགོས།</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAMEPLAY_SETTINGS_MSG">གལ་ཏེ་༼རྩེད་མོར་གློག་བསྲི་བ།༽སྒྲིག་འགོད་སྒྱུར་ཚེ།མིག་སྔར་འགུལ་སྐྱོད་བྱེད་པའི་རྩེད་མོའི་བསྐྱར་དུ་འགུལ་སློང་བྱས་ནས་བརྙན་ཡོལ་འཆར་མཐོང་ལེགས་སྒྲིག་བྱེད་ཐུབ།</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAMEPLAY_SETTINGS_MSG2">གལ་ཏེ་༼རྩེད་མོར་གློག་བསྲི་བ།༽སྒྲིག་འགོད་སྒྱུར་ཚེ།%sབསྐྱར་དུ་འགུལ་སློང་བྱས་ནས་བརྙན་ཡོལ་འཆར་མཐོང་ལེགས་སྒྲིག་བྱེད་ཐུབ།</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAME_SETTINGS_MSG">གལ་ཏེ་རྩེད་མོར་གློག་བསྲི་བ་སྒྲིག་འགོད་སྒྱུར་ཚེ།མིག་སྔར་འགུལ་སྐྱོད་བྱེད་པའི་རྩེད་མོའི་བསྐྱར་དུ་འགུལ་སློང་བྱས་ནས་བརྙན་ཡོལ་འཆར་མཐོང་ལེགས་སྒྲིག་བྱེད་ཐུབ།</string>
+    <string name="MIDS_GH_POP_TO_PREVENT_UNINTENTIONAL_TOUCHES_DURING_THE_GAME_MSG">རྩེད་མོའི་ནང་སྣང་འཇོག་མེད་པར་རེག་ཐུག་མི་ཡོང་ཕྱིར།རྩེད་མོའི་སྐབས་སུ་ལག་ཐོག་ཁ་པར་གཞོགས་ངོས་ཀྱི་གཞོགས་ཡོལ་རེག་འཛིན་ཁ་བསྡམ་ཡོད།</string>
+    <string name="MIDS_GH_POP_TO_SHOW_IN_FULL_SCREEN_VIEW_MSG">གལ་ཏེ་ཡོལ་ཡོངས་ཐོག་གསལ་དགོས་ཚེ།ཁྱེད་ནས་ངེས་པར་དུ་རྩེད་མོ་བསྐྱར་དུ་ཁ་ཕྱེ་དགོས།ཡོལ་ཡོངས་མཐོང་རིས་ཀྱི་མཐོ་ཞེང་སྡུར་ཚད་འོས་འཚམ་པོ་མེད་སྲིད།སྒྲིག་འགོད་འདི་མིག་སྔའི་རྩེད་མོ་ཁོ་ནར་སྤྱོད་དགོས།</string>
+    <string name="MIDS_GH_POP_TO_USE_GAME_TOOLS_IT_MUST_BE_ENABLED">Game Toolsངེས་པར་དུ་ཁ་ཕྱེ་རྗེས་བེད་སྤྱོད་གཏོང་ཆོག</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_CAPTURE_THE_SCREEN_DELETE_SOME_FILES_AND_TRY_AGAIN">བརྙན་ཡོལ་དྲས་ལེན་མི་ཐུབ།ཡིག་ཆ་ཁག་ཅིག་སུབ་ནས་དེ་རྗེས་བསྐྱར་ཚོད་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN">འཕུར་སྐྱོད་རྣམ་པ་ཁ་ཕྱེ་དུས་འགུལ་གཏོང་དྲ་བ་དང་འབྲེལ་མི་ཐུབ།Wi-Fiདྲ་བ་དང་འབྲེལ་བའམ་འཕུར་སྐྱོད་རྣམ་པ་ཁ་བཀག་ནས་བསྐྱར་ཚོད་བྱེད།</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_REGISTER_GAMES_THAT_HAVE_BEEN_DOWNLOADED_FROM_UNKNOWN_SOURCES">རྒྱུས་མེད་ཡོངས་ཁུངས་ནས་ཕབ་ལེན་བྱས་པའི་རྩེད་མོ་ཐོ་འགོད་མི་ཐུབ།</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_REGISTER_THE_SELECTED_GAME_AN_UNKNOWN_ERROR_HAS_OCCURRED">འདེམས་པའི་རྩེད་མོ་ཐོ་འགོད་མི་ཐུབ།རྒྱུས་མེད་ནོར་འཁྲུལ་ཐོན།</string>
+    <string name="MIDS_GH_POP_UNKNOWN">རྒྱུས་མེད།</string>
+    <string name="MIDS_GH_POP_USING_MOBILE_DATA_WHEN_ROAMING_MAY_INCUR_ADDITIONAL_CHARGES_DEPENDING_ON_YOUR_PAYMENT_PLAN">ཁྱེད་ཀྱི་གྲོན་དངུལ་སྡེར་ཁ་བཞིན།ཕྱིར་ཡན་སྐབས་སུ་ལག་ཐོག་ཁ་པར་བཞུར་ཚད་བེད་སྤྱོད་བཏང་ཚེ་གྲོན་དངུལ་འཕར་མ་ཐོབ་སྲིད།</string>
+    <string name="MIDS_GH_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN">Wi-Fiའབྲེལ་དགོས།Wi-Fiདྲ་བ་དང་འབྲེལ་བ་ནས་བསྐྱར་ཚོད་བྱེད།</string>
+    <string name="MIDS_GH_POP_YOUR_DEVICE_IS_NOT_CONNECTED_TO_A_WI_FI_NETWORK_CONNECTING_TO_MOBILE_NETWORKS_MAY_RESULT_IN_ADDITIONAL_CHARGES_DEPENDING_ON_YOUR_PAYMENT_PLAN">ཁྱེད་ཀྱི་འཕྲུལ་ཆས་Wi-Fiདྲ་བ་དང་འབྲེལ་མེད།ཁྱེད་ཀྱི་གྲོན་དངུལ་སྡེར་ཁ་བཞིན།འགུལ་གཏོང་དྲ་བ་འབྲེལ་ཚེ་གྲོན་དངུལ་འཕར་མ་ཐོབ་སྲིད།</string>
+    <string name="MIDS_GH_POP_YOUR_DEVICE_WILL_RESTART_TO_APPLY_THE_NEW_SETTINGS_FOR_GAME_LAUNCHER">Game Launcherགྱི་སྒྲིག་འགོད་གསར་པ་བེད་སྤྱོད་གཏོང་ཕྱིར།ཁྱེད་ཀྱི་འཕྲུལ་ཆས་བསྐྱར་དུ་ཁ་ཕྱེ་སྲིད།</string>
+    <string name="MIDS_GH_POP_YOUR_REGISTRATION_REQUEST_HAS_BEEN_SUBMITTED">ཁྱེད་ཀྱི་ཐོ་འགོད་རེ་ཞུ་སྐུར་ཟིན།</string>
+    <string name="MIDS_GH_POP_YOU_CAN_ENABLE_PS_IN_SETTINGS">ཁྱེད་ནས་༼སྒྲིག་འགོད་༽ནང་དུ་%sཁ་ཕྱེ་ཐུབ།</string>
+    <string name="MIDS_GH_POP_YOU_CAN_ONLY_REGISTER_GAMES_DOWNLOADED_FROM_THE_GAMES_CATEGORY">ཁྱེད་ཀྱི་རྩེད་མོའི་རིགས་གྲས་ནང་ནས་ཕབ་ལེན་བྱས་པའི་རྩེད་མོ་ཐོ་འགོད་བྱེད་ཐུབ།</string>
+    <string name="MIDS_GH_SBODY_100_KPLUS">100,000ཡན།</string>
+    <string name="MIDS_GH_SBODY_100_MPLUS">100,000,000ཡན།</string>
+    <string name="MIDS_GH_SBODY_10_KPLUS">10,000ཡན།</string>
+    <string name="MIDS_GH_SBODY_10_MINPLUS">སྐར་མ་10ཡན།</string>
+    <string name="MIDS_GH_SBODY_10_MIN_MINUS">སྐར་མ་10མན་</string>
+    <string name="MIDS_GH_SBODY_10_MPLUS">10,000,000ཡན།</string>
+    <string name="MIDS_GH_SBODY_1_DAY_AGO_ABB">ཉིན་1གོང་།</string>
+    <string name="MIDS_GH_SBODY_1_HOUR_AGO_ABB">ཆུ་ཚོད་1གོང་།</string>
+    <string name="MIDS_GH_SBODY_1_HRPLUS">ཆུ་ཚོད་1ཡན།</string>
+    <string name="MIDS_GH_SBODY_1_KPLUS">1,000ཡན།</string>
+    <string name="MIDS_GH_SBODY_1_MINUTE_AGO_ABB">སྐར་མ་1གོང་།</string>
+    <string name="MIDS_GH_SBODY_1_MONTH_AGO_ABB">ཟླ་བ་1གོང་།</string>
+    <string name="MIDS_GH_SBODY_1_MPLUS">1,000,000ཡན།</string>
+    <string name="MIDS_GH_SBODY_1_VIDEO">བརྙན་ཟློས་1</string>
+    <string name="MIDS_GH_SBODY_2_HRSPLUS">ཆུ་ཚོད་2ཡན།</string>
+    <string name="MIDS_GH_SBODY_30_MINPLUS">སྐར་མ་30ཡན།</string>
+    <string name="MIDS_GH_SBODY_4_HRSPLUS">ཆུ་ཚོད་4ཡན།</string>
+    <string name="MIDS_GH_SBODY_500_KPLUS">500,000ཡན།</string>
+    <string name="MIDS_GH_SBODY_50_KPLUS">50,000ཡན།</string>
+    <string name="MIDS_GH_SBODY_50_MPLUS">50,000,000ཡན།</string>
+    <string name="MIDS_GH_SBODY_5_KPLUS">5,000ཡན།</string>
+    <string name="MIDS_GH_SBODY_5_MPLUS">5,000,000ཡན།</string>
+    <string name="MIDS_GH_SBODY_6_HRSPLUS">ཆུ་ཚོད་6ཡན།</string>
+    <string name="MIDS_GH_SBODY_8_HRSPLUS">ཆུ་ཚོད་8ཡན།</string>
+    <string name="MIDS_GH_SBODY_ADD_A_SHORTCUT_OR_WEB_ADDRESS_FOR_QUICK_ACCESS_DURING_GAMEPLAY">རྩེད་མོའི་ནང་མྱུར་མགྱོགས་བཅར་འདྲི་བྱེད་པའི་མྱུར་མགྱོགས་འབྲེལ་མཐུད་དམ་དྲ་གནས་སྣོན་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_SBODY_ALLOW_OR_BLOCK_NOTIFICATIONS_FROM_INDIVIDUAL_GAME_APPS">རྩེད་མོའི་ཉེར་སྤྱོད་བྱ་རིམ་ཀྱི་བརྡ་ཐོ་གཏོང་ཆོག་པའམ་འགོག་པ།</string>
+    <string name="MIDS_GH_SBODY_AUTO">རང་འགུལ་ཐོག</string>
+    <string name="MIDS_GH_SBODY_AUTO_HBASED_ON_RESOLUTION">རང་འགུལ་ཐོག(འབྱེད་ཚད་བཞིར་བཟུང་)</string>
+    <string name="MIDS_GH_SBODY_AUTO_HPD_MBPS">རང་འགུལ་ཐོག(%d Mbps)</string>
+    <string name="MIDS_GH_SBODY_BLOCKED">ཁ་འགོག་ཟིན།</string>
+    <string name="MIDS_GH_SBODY_CHECK_PS_ALBUM_IN_GALLERY">༼པར་དེབ།༽ནང་གི་%sའདྲ་པར་བལྟ་ཞིབ་བྱས།</string>
+    <string name="MIDS_GH_SBODY_CHECK_THE_CURRENT_APP_VERSION_AND_LEGAL_INFO">མིག་སྔའི་ཉེར་སྤྱོད་བྱ་རིམ་པར་གཞི་དང་ཁྲིམས་ལུགས་ཆ་འཕྲིན་ཞིབ་བཤེར་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_SBODY_CLEANING_ING_ABB">གཙང་དོར་བྱེད་བཞིན་པ།</string>
+    <string name="MIDS_GH_SBODY_CLEARED">གཙང་དོར་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_SBODY_CONFIGURE_YOUR_PROFILE_SOURCE_AUDIO_SOURCE_TOUCH_INTERACTION_RESOLUTION_AND_BITRATE">ཁྱེད་ཀྱི་སྒེར་གྱི་ཡིག་ཆ་ཡོངས་ཁུངས་ནི་སྒྲ་ཟློས་ཡོངས་ཁུངས།རེག་ཐུག་འགྲོས་རེས།འབྱེད་ཚད་དང་པི་ཐ་སྡུར་ཚད་སྒྲིག་པ།</string>
+    <string name="MIDS_GH_SBODY_DISPLAY_NORMAL_SCREEN_QUALITY_DURING_GAMEPLAY">རྩེད་མོའི་སྐབས་སུ་ཚད་མཐུན་བརྙན་རིས་གསལ་སྟོན་བྱེད་པ།</string>
+    <string name="MIDS_GH_SBODY_DO_NOT_USE_SAVE_POWER_DURING_GAME">རྩེད་མོའི་སྐབས་སུ་གློག་བསྲི་བེད་སྤྱོད་མ་བྱས།</string>
+    <string name="MIDS_GH_SBODY_EXTREMELY_LOW">ཆེས་དམའ་བ།</string>
+    <string name="MIDS_GH_SBODY_GAMES_RANKED_BY_THE_LONGEST_PLAYING_TIMES">རྩེད་མོའི་དུས་ཡུན་བཞིན་གྲལ་སྒྲིག་པའི་རྩེད་མོ།</string>
+    <string name="MIDS_GH_SBODY_GAMES_RANKED_BY_THE_MOST_USERS_PER_DAY">ཉིན་རེའི་སྤྱོད་མཁན་མང་ཉུང་བཞིན་གྲལ་སྒྲིག་པའི་རྩེད་མོ།</string>
+    <string name="MIDS_GH_SBODY_GAME_SCREEN_CAPTURED">རྩེད་མོའི་བརྙན་པར་དྲས་ལེན་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_SBODY_HIDE_THE_FLOATING_BUTTON">འཕྱོ་འགུལ་མཐེབ་གནོན་སྦས་པ།</string>
+    <string name="MIDS_GH_SBODY_LOW">དམའ་བ།</string>
+    <string name="MIDS_GH_SBODY_LOWER_THE_RESOLUTION_AND_FRAME_RATE_TO_A_MINIMUM_LEVEL_TO_SAVE_POWER">འབྱེད་ཚད་དང་གཞི་པར་འདུ་ཚད་ཆུ་ཚད་དམའ་ཤོས་སུ་བཏང་ནས་གློག་བསྲི་དགོས།</string>
+    <string name="MIDS_GH_SBODY_LOWER_YOUR_BATTERY_USAGE_BY_USING_A_LOWER_RESOLUTION">ཅུང་དམའ་བའི་འབྱེད་ཚད་བེད་སྤྱོད་བཏང་ནས་ཁྱེད་ཀྱི་གློག་རྫས་བེད་སྤྱོད་གཏོང་ཚད་དམའ་རུ་གཏོང་དགོས།</string>
+    <string name="MIDS_GH_SBODY_LOWER_YOUR_BATTERY_USAGE_BY_USING_A_LOWER_RESOLUTION_AND_FRAME_RATE">འབྱེད་ཚད་དང་གཞི་པར་འདུ་ཚད་དམའ་རུ་བཏང་ནས་གློག་ཟད་སོང་ཆུང་དུ་གཏོང་ཐུབ།</string>
+    <string name="MIDS_GH_SBODY_MANAGE_USEFUL_FEATURES_WHILE_YOU_PLAY_GAMES">ཁྱོད་ཀྱིས་རོལ་རྩེད་རྩེ་སྐབས་བེད་ཡོད་མཉེན་ཆས་དོ་དམ་བྱེད་པ།</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_AND_INCREASE_PLAYING_TIME_RESOLUTION_AND_FRAME_RATE_MAY_BE_DECREASED">གློག་ཚད་བེད་སྤྱོད་གཏོང་ཚད་ཆུང་ཤོས་སུ་བཏང་ནས་རྩེད་མོའི་དུས་ཚོད་རིང་དུ་གཏོང་བ།དེས་འབྱེད་ཚད་དང་གཞི་རྒྱུའི་ཚད་ཆུང་དུ་གཏོང་སྲིད།</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_CUSTOMISING_YOUR_SETTINGS">རང་འགྲོས་སྒྲིག་པའི་སྒྲིག་འགོད་བརྒྱུད་ནས་གློག་རྫས་བེད་སྤྱོད་གཏོང་ཚད་ཆུང་ཤོས་སུ་གཏོང་བ།</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_OPTIMISING_YOUR_SCREEN_DISPLAY_QUALITY">བརྙན་ཡོལ་གསལ་སྟོན་སྤུས་ཚད་ལེགས་སུ་བཏང་ནས་གློག་ཟད་སོང་ཆུང་དུ་གཏོང་བ།</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_USING_THE_LOWEST_RESOLUTION_AND_FRAME_RATE">འབྱེད་ཚད་དང་གཞི་པར་འདུ་ཚད་ཆུང་ཤོས་བེད་སྤྱོད་བཏང་ནས་གློག་རྫས་བེད་སྤྱོད་གཏོང་ཚད་ཆུང་དུ་གཏོང་བ།</string>
+    <string name="MIDS_GH_SBODY_NEWLY_INSTALLED_ABB">སྒྲིག་འཇུག་གསར་པ།</string>
+    <string name="MIDS_GH_SBODY_NORMAL">རྒྱུན་གཏན་</string>
+    <string name="MIDS_GH_SBODY_NOT_AVAILABLE">སྤྱོད་མི་ཐུབ།</string>
+    <string name="MIDS_GH_SBODY_OFF">གསོད།</string>
+    <string name="MIDS_GH_SBODY_ON">ཁ་ཕྱེ།</string>
+    <string name="MIDS_GH_SBODY_OPTIMISE_THE_GRAPHICS_QUALITY_AUTOMATICALLY_FOR_SMOOTHER_GAMEPLAY">རང་འགུལ་ཐོག་པར་དྭངས་ཚད་ལེགས་སུ་བཏང་ནས་རྩེད་མོའི་ཉམས་ལེན་གང་ལེགས་ཐོབ་པར་བྱེད་པ།</string>
+    <string name="MIDS_GH_SBODY_PD_DAYS_AGO_ABB">ཉིན་%dགོང་།</string>
+    <string name="MIDS_GH_SBODY_PD_HOURS_AGO_ABB">ཆུ་ཚོད་%dགོང་།</string>
+    <string name="MIDS_GH_SBODY_PD_MINUTES_AGO_ABB">སྐར་མ་%dགོང་།</string>
+    <string name="MIDS_GH_SBODY_PD_MONTHS_AGO_ABB">ཟླ་བ་%dགོང་།</string>
+    <string name="MIDS_GH_SBODY_PD_VIDEOS">བརྙན་ཟློས་%d</string>
+    <string name="MIDS_GH_SBODY_PLAYING_ABB">གཏོང་ལེན་བྱེད་བཞིན་པ།</string>
+    <string name="MIDS_GH_SBODY_POPULAR_GAME_VIDEOS_ON_YOUTUBE">YouTubeདར་ཆེའི་རྩེད་མོའི་བརྙན་ཟློས།</string>
+    <string name="MIDS_GH_SBODY_PREPARING_ING">གྲ་སྒྲིག་བྱེད་བཞིན་ཡོད།</string>
+    <string name="MIDS_GH_SBODY_PREVENT_FRAME_RATE_DEGRADATION_MSG">གཞི་པར་འདུ་ཚད་དམའ་རུ་གཏོང་རྒྱུ་འགོག་དགོས།དེས་བཙན་ཤུགས་ཀྱི་ཉེར་སྤྱོད་བྱ་རིམ་ཁག་ཅིག་བེད་སྤྱོད་གཏོང་མཚམས་འཇོག་སྲིད།མ་ཟད་གློག་ཟད་གཏོང་མཐོར་འགྲོ་མི་སྲིད།</string>
+    <string name="MIDS_GH_SBODY_RECEIVE_NOTIFICATIONS_OF_PROMOTIONS_AND_MARKETING_INFORMATION_FROM_PS">%sནས་ཡོང་བའི་གྲིན་ཚོང་བརྡ་དང་ཚོང་གཉེར་ཆ་འཕྲིན་འབྱོར་བ།</string>
+    <string name="MIDS_GH_SBODY_RECORDED_C_P1SD_CP2SD_P3SD_P4SD_P5SD">ཕབ་འཇུག་བྱས་ཟིན།%1$dནི་%2$d %3$d/%4$d/%5$d</string>
+    <string name="MIDS_GH_SBODY_RECORDING_ING">ཕབ་འཇུག་བྱེད་བཞིན་ཡོད།</string>
+    <string name="MIDS_GH_SBODY_RECORDS_TOUCH_INTERACTION_WHEN_RECORDING_A_GAME">རྩེད་མོ་ཕབ་འཇུག་བྱེད་སྐབས་རེག་ཐུག་འགྲོས་རེས་ཟིན་འགོད།</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_DEVICE_MAY_BE_RECORDED_WITH_GAME_AUDIO">རྩེད་མོའི་སྒྲ་ཟློས་ཕབ་འཇུག་བྱས།ཁྱེད་ཀྱི་འཕྲུལ་ཆས་ཐོག་གི་མ་ལག་སྐད་སྒྲ་དང་རྩེད་མོའི་སྒྲ་ཟློས་ལྷན་ཅིག་ཕབ་འཇུག་བྱེད་སྲིད།</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_PHONE_MAY_ALSO_BE_RECORDED">རྩེད་མོའི་སྒྲ་ཟློས་ཕབ་འཇུག་བྱས།དེ་ལས་ཁྱེད་ཀྱི་ལག་ཐོག་ཁ་པར་ཐོག་གི་མ་ལག་སྐད་སྒྲ་ལྷན་ཅིག་ཕབ་འཇུག་བྱེད་སྲིད།</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_TABLET_MAY_ALSO_BE_RECORDED">རྩེད་མོའི་སྒྲ་ཟློས་ཕབ་འཇུག་བྱས།དེ་ལས་ངོས་པང་གློག་ཀླད་ཐོག་གི་མ་ལག་སྐད་སྒྲ་ལྷན་ཅིག་ཕབ་འཇུག་བྱེད་སྲིད།</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_PHONE_SYSTEM_SOUNDS_MAY_BE_RECORDED">ལག་ཐོག་ཁ་པར་སྒྲ་ཟློས་ཕབ་འཇུག་བྱས།དེ་ལས་མ་ལག་སྐད་སྒྲ་ཕབ་འཇུག་བྱེད་སྲིད།</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_THE_DEVICE_MICROPHONE">འཕྲུལ་ཆས་སྒྲ་སྦུག་བེད་སྤྱོད་བཏང་ནས་ཕྱི་ལོགས་ཀྱི་སྐད་སྒྲ་ཕབ་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_YOUR_PHONE_MICROPHONE">ཁྱེད་ཀྱི་ལག་ཐོག་ཁ་པར་སྒྲ་སྦུག་བེད་སྤྱོད་བྱས་ནས་ཕྱི་ལོགས་ཀྱི་སྐད་སྒྲ་ཕབ་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_YOUR_TABLET_MICROPHONE">ཁྱེད་ཀྱི་ངོས་པང་གློག་ཀླད་སྒྲ་སྦུག་བེད་སྤྱོད་བྱས་ནས་ཕྱི་ལོགས་ཀྱི་སྐད་སྒྲ་ཕབ་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_SBODY_RECORD_YOUR_GAMEPLAY_WITHOUT_A_PROFILE">སྒེར་གྱི་ཡིག་ཆ་སྤྱད་ནས་ཁྱེད་ཀྱི་རྩེད་མོའི་རྒྱུད་རིམ་ཕབ་འཇུག་མ་བྱས།</string>
+    <string name="MIDS_GH_SBODY_RECORD_YOUR_SCREEN_WITHOUT_A_PROFILE">སྒེར་གྱི་ཡིག་ཆ་བེད་སྤྱོད་བཏང་ནས་ཁྱེད་ཀྱི་བརྙན་ཡོལ་ཕབ་འཇུག་མ་བྱས།</string>
+    <string name="MIDS_GH_SBODY_SAVE_BATTERY_POWER_DURING_GAMEPLAY_BY_DOWNGRADING_THE_VIDEO_QUALITY">རྩེད་མོ་རྩེད་སྐབས་བརྙན་ཟློས་སྤུས་ཚད་ཞན་དུ་བཏང་ནས་གློག་བསྲི་ཐུབ།</string>
+    <string name="MIDS_GH_SBODY_SAVING_ING">ཉར་ཚགས་བྱེད་བཞིན་ཡོད།</string>
+    <string name="MIDS_GH_SBODY_SET_AS_PRIORITY">སྔོན་སྤྱོད་ལ་སྒྲིག་པ།</string>
+    <string name="MIDS_GH_SBODY_SET_BY_GAME_TUNER">རྩེད་མོ་ལེགས་སྒྲིག་ཡོ་བྱད་ནས་སྒྲིག་འགོད་བྱས།</string>
+    <string name="MIDS_GH_SBODY_SHOW_THE_FLOATING_BUTTON">འཕྱོ་འདུག་མཐེབ་གནོན་གསལ་བ།</string>
+    <string name="MIDS_GH_SBODY_TAP_HERE_TO_SHOW_GAME_TOOLS_AS_A_FLOATING_BUTTON">འདི་གར་བརྡེབས་ནས་འཕྱོ་འདུག་མཐེབ་གནོན་རྣམ་པའི་འོག་ནས་Game Toolsགསལ་ཐུབ།</string>
+    <string name="MIDS_GH_SBODY_TAP_HERE_TO_START_USING_GAME_LAUNCHER">འདི་ལ་བརྡེབས་ནས་སྤྱོད་བཞིན་པའི་རོལ་རྩེད་འགོ་འཛུགས་ཆས་འགོ་འཛུགས་པ།</string>
+    <string name="MIDS_GH_SBODY_THIS_IS_THE_DEFAULT_BASIC_SETTING_APPLIED_TO_GAMEPLAY">རྩེད་མོ་རྩེད་པའི་དུས་སུ་བེད་སྤྱོད་གཏོང་བའི་རྩ་བའི་སོར་བཞག་སྒྲིག་འགོད།</string>
+    <string name="MIDS_GH_SBODY_USED">བེད་སྤྱོད་བཏང་ཟིན།</string>
+    <string name="MIDS_GH_SBODY_USE_THE_FRONT_CAMERA_TO_RECORD_YOURSELF_DURING_GAMEPLAY">རྩེད་མོའི་སྐདབས་སུ་མདུན་སྒྲིག་པར་སྒོ་སྤྱད་ནས་ཁྱེད་རང་ཉིད་ཕབ་འཇུག་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_SBODY_USE_THE_FRONT_CAMERA_TO_RECORD_YOURSELF_WHILE_RECORDING_YOUR_SCREEN">བརྙན་ཡོལ་ཕབ་འཇུག་བྱེད་པ་དང་དུས་མཚུངས་མདུན་སྒྲིག་པར་སྒོ་སྤྱད་ནས་པར་རང་ལེན་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_SBODY_YOUTUBE_GAME_VIDEOS_BASED_ON_YOUR_INSTALLED_GAMES">ཁྱེད་ནས་སྒྲིག་འཇུག་ཟིན་པའི་རྩེད་མོ་བཞིན་ངོས་སྦྱོར་བྱས་པའི་YouTubeརྩེད་མོའི་བརྙན་ཟློས།</string>
+    <string name="MIDS_GH_TAB2_PLAYED_GAMES">རྩེད་མྱོང་བའི་རྩེད་མོ།</string>
+    <string name="MIDS_GH_TAB2_RECORDED_VIDEOS">ཕབ་འཇུག་བྱས་པའི་བརྙན་ཟློས།</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DESELECT_ALL">ཉིས་བརྡེབས་བྱས་ནས་ཚང་མ་རྩིས་མེད་བཏང་།</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DESELECT_ALL_GAMES">ཉིས་བརྡེབས་བྱས་ནས་རྩེད་མོ་ཚང་མ་འདེམས་རྒྱུ་རྩིས་མེད་བཏང་བ།</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DOWNLOAD_GAME">ཉིས་བརྡེབས་བྱས་ནས་རྩེད་མོ་ཕབ་ལེན་བྱས།</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_EDIT">ཉིས་བརྡེབས་བྱས་ནས་སྒྲིག་བཟོ་བྱེད་པ།</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_HIDE_ADDITIONAL_FIELDS">ཉིས་བརྡེབས་བྱས་ནས་ཚིག་དུམ་འཕར་མ་སྦས་པ།</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SELECT_ALL">ཉིས་བརྡེབས་བྱས་ནས་ཚང་མ་འདེམས་པ།</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SELECT_ALL_GAMES">ཉིས་བརྡེབས་བྱས་ནས་རྩེད་མོ་ཚང་མ་འདེམས་པ།</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SHOW_ADDITIONAL_FIELDS">ཉིས་བརྡེབས་བྱས་ནས་ཚིག་དུམ་འཕར་མ་གསལ་བ།</string>
+    <string name="MIDS_GH_TBBODY_NAVIGATE_UP">གོང་ལ་ཕྱོགས་སྟོན་བྱས།</string>
+    <string name="MIDS_GH_TBBODY_NOT_SELECTED">འདེམས་མེད།</string>
+    <string name="MIDS_GH_TBBODY_PROCESSING">ཐག་གཅོད་བྱེད་བཞིན་པ།</string>
+    <string name="MIDS_GH_TBBODY_SELECTED">འདེམས་ཟིན།</string>
+    <string name="MIDS_GH_TBBODY_SET_PROFILE_SIZE_TO_PD_PERCENT">སྒེར་གྱི་ཡིག་ཆ་ཆེ་ཆུང་བརྒྱ་ཆ་%dལ་སྒྲིག་པ།</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_CLOSE">བརྡེབས་ནས་ཁ་རྒྱག་པ།</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_DOWNLOAD_GAME">བརྡེབས་ནས་རྩེད་མོ་ཕབ་ལེན་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_VIEW_DETAILS">བརྡེབས་ནས་ཞིབ་ཆ་བལྟ་ཞིབ་བྱས།</string>
+    <string name="MIDS_GH_TBOPT_1_SELECTED">1འདེམས་པ།</string>
+    <string name="MIDS_GH_TBOPT_ADD_APPS">ཉེར་སྤྱོད་བྱ་རིམ་སྣོན་འཇུག་བྱས།</string>
+    <string name="MIDS_GH_TBOPT_BUTTON">མཐེབ་གནོན།</string>
+    <string name="MIDS_GH_TBOPT_CANCEL">རྩིས་མེད་བཏང་།</string>
+    <string name="MIDS_GH_TBOPT_CLOSED">ཁ་རྒྱག་ཟིན།</string>
+    <string name="MIDS_GH_TBOPT_DECREASE_PROFILE_SIZE">སྡེབ་སྒྲིག་ཡིག་ཆ་ཆེ་ཆུང་ཆུང་དུ་བཏང་།</string>
+    <string name="MIDS_GH_TBOPT_DISABLE">བཀག་པ།</string>
+    <string name="MIDS_GH_TBOPT_DISABLED">བཀག་ཟིན་པ</string>
+    <string name="MIDS_GH_TBOPT_DOWNLOAD_RECOMMENDED_GAME">ངོས་སྦྱོར་བྱས་པའི་རྩེད་མོའི་ཕབ་ལེན་བྱས།</string>
+    <string name="MIDS_GH_TBOPT_DROPDOWN_LIST">མར་འཐེན་གསལ་ཐོ།</string>
+    <string name="MIDS_GH_TBOPT_ENABLED">སྤྱོད་ཁ་ཕྱེ་ཟིན།</string>
+    <string name="MIDS_GH_TBOPT_FEATURED">དྲག་བསྡུས།</string>
+    <string name="MIDS_GH_TBOPT_GAME_BOOST">རྩེད་མོ་མཐོར་གཏོང་བ།</string>
+    <string name="MIDS_GH_TBOPT_GAME_LAUNCHER">རོལ་རྩེད་ལྟེ་གནས་</string>
+    <string name="MIDS_GH_TBOPT_HEADER">ཁ་བྱང་།</string>
+    <string name="MIDS_GH_TBOPT_INCREASE_PROFILE_SIZE">སྡེབ་སྒྲིག་ཡིག་ཆ་ཆེ་ཆུང་མཐོར་བཏང་།</string>
+    <string name="MIDS_GH_TBOPT_INSTALL">སྒྲིག་འཇུག</string>
+    <string name="MIDS_GH_TBOPT_LINK">འབྲེལ་བྱང་།</string>
+    <string name="MIDS_GH_TBOPT_LIST">གསལ་ཐོ།</string>
+    <string name="MIDS_GH_TBOPT_MORE">གང་མང་།</string>
+    <string name="MIDS_GH_TBOPT_NAVIGATE_UP">གོང་ལ་ཕྱོགས་སྟོན་བྱས།</string>
+    <string name="MIDS_GH_TBOPT_NOT_AVAILABLE">སྤྱོད་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TBOPT_NOT_SELECTED">འདེམས་མེད་པ།</string>
+    <string name="MIDS_GH_TBOPT_NO_ITEMS_SELECTED">ནང་དོན་འདེམས་མེད།</string>
+    <string name="MIDS_GH_TBOPT_OPEN">ཁ་ཕྱེ་བ།</string>
+    <string name="MIDS_GH_TBOPT_OVERLAY_SCREEN">བསྐྱར་བརྩེགས་བརྙན་ཡོལ།</string>
+    <string name="MIDS_GH_TBOPT_PD_PERCENT">བརྒྱ་ཆ་%d</string>
+    <string name="MIDS_GH_TBOPT_PD_SELECTED">%dའདེམས་ཟིན།</string>
+    <string name="MIDS_GH_TBOPT_PLAY_STORE">Playཚོང་ཁང་།</string>
+    <string name="MIDS_GH_TBOPT_POP_UP_MESSAGE">ཚུར་ཐོན་ཆ་འཕྲིན།</string>
+    <string name="MIDS_GH_TBOPT_PROFILE_SOURCE">སྒེར་གྱི་ཡིག་ཆ་ཡོངས་ཁུངས།</string>
+    <string name="MIDS_GH_TBOPT_RANKING_PD">རིམ་ཚད་ནི་%d</string>
+    <string name="MIDS_GH_TBOPT_SAVE_POWER_DURING_GAME">རྩེད་མོས་གློག་བསྲི་བ།</string>
+    <string name="MIDS_GH_TBOPT_SEEK_CONTROL">གཏོང་འཛིན་འཚོལ་བ།</string>
+    <string name="MIDS_GH_TBOPT_SELECTED">བདམས་ཟིན།</string>
+    <string name="MIDS_GH_TBOPT_SELECT_VIDEOS">བརྙན་ཟློས་འདེམས་པ།</string>
+    <string name="MIDS_GH_TBOPT_SETTINGS">སྒྲིག་འགོད།</string>
+    <string name="MIDS_GH_TBOPT_SIZE_CONTROL">ཆེ་ཆུང་གཏོང་འཛིན།</string>
+    <string name="MIDS_GH_TBOPT_SWITCH">མཐུད་སྤོར།</string>
+    <string name="MIDS_GH_TBOPT_S_GAMES">S Games</string>
+    <string name="MIDS_GH_TBOPT_TEXT_FIELD">ཡིག་རྐྱང་ཚིག་དུམ།</string>
+    <string name="MIDS_GH_TBOPT_TICKBOX">མང་འདེམས་སྒྲོམ།</string>
+    <string name="MIDS_GH_TBOPT_UNINSTALL">ཕབ་དོར།</string>
+    <string name="MIDS_GH_TBOPT_VIEW_BY">ཚོད་ལྟ་བྱེད་ཐབས།</string>
+    <string name="MIDS_GH_TBOPT_VIEW_TYPE">རིགས་གྲས་བལྟ་ཞིབ་བྱས།</string>
+    <string name="MIDS_GH_TPOP_APP_FUNCTION_NOT_AVAILABLE">ཉེར་སྤྱོད་བྱ་རིམ་/ཕན་ནུས་སྤྱོད་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_BACK_KEY_LOCKED_DURING_GAMEPLAY">རྩེད་མོའི་སྐབས་སུ་ཕྱིར་ལོག་མཐེབ་བསྡམ་སྒྲིག་བྱས།</string>
+    <string name="MIDS_GH_TPOP_CLOSE_ALL_GAMES_AND_TRY_AGAIN">རྩེད་མོ་ཚང་མ་ཁ་རྒྱག་ནས་བསྐྱར་ཚོད་བྱེད།</string>
+    <string name="MIDS_GH_TPOP_CURRENTLY_PLAYING_PS">མིག་སྔར་%sརྩེད་བཞིན་ཡོད།</string>
+    <string name="MIDS_GH_TPOP_DRAG_QUICK_PANEL_DOWN_TO_SHOW_FLOATING_BUTTON_AGAIN">མྱུར་མགྱོགས་ངོས་པང་འོག་ཏུ་འདྲུད་ནས་འཕྱོ་འདུག་མཐེབ་གནོན་བསྐྱར་དུ་གསལ་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_FAILED_TO_INSTALL_PS">%sསྒྲིག་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_FAILED_TO_RECORD_DEVICE_ERROR_OCCURRED">ཕབ་འཇུག་མི་ཐུབ།འཕྲུལ་ཆས་ནོར་འཁྲུལ་ཐོན།</string>
+    <string name="MIDS_GH_TPOP_GAME_AUDIO_MUTED_WHEN_OPENED_VIA_PS_CHANGE_VOLUME_WHILE_GAME_OPEN">%sབརྒྱུད་ནས་རྩེད་མོ་ཁ་ཕྱེ་སྐབས་སྐད་མེད་བཏང་།རྩེད་མོ་ཁ་ཕྱེ་རྗེས་སྒྲ་ཤུགས་སྒྲིག་དགོས།</string>
+    <string name="MIDS_GH_TPOP_GAME_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_MSG">%sབརྒྱུད་ནས་ཁྱེད་ཀྱི་རྩེད་མོ་ཁ་ཕྱེ་དུས།རྩེད་མོའི་སྒྲ་ཟློས་སྐད་མེད་བཏང་སྲིད།ཁྱེད་ནས་རྩེད་མོ་ཁ་ཕྱེ་རྗེས་སྒྲ་ཤུགས་སྒྱུར་ཆོག</string>
+    <string name="MIDS_GH_TPOP_GAME_SHOWN_IN_185_C9_FULL_SCREEN_VIEW_IF_IT_DOESNT_FIT_ASPECT_RATIO_DISABLE_FULL_SCREEN_MODE">18.5:9ཡོལ་ཡོངས་མཐོང་རིས་ནང་རྩེད་མོ་གསལ་བ།གལ་སྲིད་མཐོ་ཞེང་སྡུར་ཚད་འཚམ་པོ་མེད་ཚེ།ཡོལ་ཡོངས་རྣམ་པ་ཁ་རྒྱག་དགོས།</string>
+    <string name="MIDS_GH_TPOP_MAXIMUM_NUMBER_OF_MINIMISED_APPS_HPD_ALREADY_REACHED">ཉེར་སྤྱོད་བྱ་རིམ་ཆུང་ཤོས་ཅན་གྱི་གྲངས་ཆེ་ཤོས་(%d)ལ་སླེབས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_MEDIA_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_MSG">%sབརྒྱུད་ནས་ཁྱེད་ཀྱི་རྩེད་མོ་ཁ་ཕྱེ་དུས།སྨྱན་གཟུགས་སྒྲ་ཟློས་སྐད་མེད་བཏང་སྲིད།ཁྱེད་ནས་རྩེད་མོ་ཁ་ཕྱེ་རྗེས་སྒྲ་ཤུགས་སྒྱུར་ཆོག</string>
+    <string name="MIDS_GH_TPOP_MINIMISE_AND_ALIVE_ALREADY_ENABLED_IN_ANOTHER_GAME_MSG">རྩེད་མོ་གཞན་ནང་ཆུང་ཤོས་ཅན་ཁ་ཕྱེ་བ་དང་བྱ་འགུལ་རྒྱུན་འཁྱོངས་བྱེད་དགོས།རྩེད་མོ་གཅིག་གི་ནང་དུ་ཆུང་ཤོས་ཅན་ཁ་ཕྱེ་བ་དང་བྱ་འགུལ་རྒྱུན་འཁྱོངས་བྱེད་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_DEVICE_MEMORY_TO_RECORD">འཕྲུལ་ཆས་ནང་གསོག་མི་ལྡང་།ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_PHONE_MEMORY_TO_RECORD_GAME">ལག་ཐོག་ཁ་པར་ནང་གསོག་མི་ལྡང་།རྩེད་མོ་ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_TABLET_MEMORY_TO_RECORD_GAME">ངོས་པང་གློག་ཀླད་ནང་གསོག་མི་ལྡང་།རྩེད་མོ་ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_NO_ALERTS_DURING_GAME_ENABLED_ALL_ALERTS_WILL_BE_MUTED_AND_HIDDEN_DURING_GAMEPLAY">༼རྩེད་མོའི་ནང་དྲན་སྐུལ་ཁ་རྒྱག་པ་༽ཁ་ཕྱེ་ཟིན།རྩེད་མོའི་སྐབས་སུ་དྲན་སྐུལ་ཚང་མ་སྐད་མེད་གཏོང་བའམ་སྦས་སྲིད།</string>
+    <string name="MIDS_GH_TPOP_NO_ALERTS_DURING_GAME_ENABLED_MSG">༼རྩེད་མོའི་ནང་དྲན་སྐུལ་ཁ་རྒྱག་པ་༽ཁ་ཕྱེ་ཟིན།རྩེད་མོ་རྩེད་པའི་སྐབས་སུ།དྲན་སྐུལ་མང་ཆེ་བ་སྐད་མེད་གཏོང་བ་དང་སྦས་སྲིད།ཡིན་ནའང་ཁ་པར་དྲན་སྐུལ་ཕུད་པའི་ནང་ཁོངས་དྲན་སྐུལ་ཁག་ཅིག་གསལ་སྲིད།</string>
+    <string name="MIDS_GH_TPOP_NO_GAME_AUDIO_RECORDED_VOLUME_MUTED">རྩེད་མོའི་སྒྲ་ཟློས་ཕབ་འཇུག་བྱས་མེད།སྒྲ་ཤུགས་སྐད་མེད་བཏང་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_NO_INTERRUPTIONS_ENABLED_ALL_CALLS_AND_ALERTS_WILL_BE_MUTED_AND_HIDDEN">༼སུན་པོ་མེད་པ་༽མཚམས་འཇོག་བྱས་ཟིན།ཚུར་འོང་ཁ་པར་ཚང་མང་དང་དྲན་སྐུལ་ཚང་མ་སྐད་མེད་གཏོང་བའམ་སྦས་སྲིད།</string>
+    <string name="MIDS_GH_TPOP_NO_NETWORK_CONNECTION_DATA_ROAMING_DISABLED">དྲ་བའི་འབྲེལ་མཐུད་མེད་པ། གཞི་གྲངས་ཕྱིར་ཡན་བཀག་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_NO_NETWORK_CONNECTION_MOBILE_DATA_TURNED_OFF">དྲ་བའི་འབྲེལ་མཐུད་མེད་པ། ལག་ཐོག་ཁ་པར་གྱི་བཞུར་ཚད་བཀག་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_ONLY_INCOMING_CALLS_WILL_BE_DISPLAYED_ON_SCREEN">བརྙན་ཡོལ་ཐོག་ཚུར་ཡོང་ཁ་པར་གསལ་བ།</string>
+    <string name="MIDS_GH_TPOP_P1SS_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_CHANGES_CAN_TAKE_UP_TO_P3SD_SECONDS">%1$sལ་Game Launcherཕན་ནུས་(དཔེར་ན་%2$s)གྱི་ཤུགས་རྐྱེན་ཐེབས།ཕན་ནུས་ཐོན་པར་སྐར་ཆ་%3$dཙམ་འགོར་སྲིད།</string>
+    <string name="MIDS_GH_TPOP_P1SS_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_P3SS">%1$sལ་Game Launcherཕན་ནུས་ཀྱི་ཤུགས་རྐྱེན་ཐེབས།(དཔེར་ན་%2$sདང་%3$s)</string>
+    <string name="MIDS_GH_TPOP_P1SS_AND_P2SS_ENABLED">%1$sདང་%2$sཁ་ཕྱེ་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_P1SS_HAS_BEEN_CATEGORISED_AS_A_GAME_GAME_LAUNCHER_FEATURES_HP2SS_WILL_BE_APPLIED_TO_THIS_APP">%1$sདེ་རྩེད་མོའི་རིགས་སུ་སྒྲིག་ཟིན།Game Launcherཕན་ནུས་(%2$s)ཁག་ཉེར་སྤྱོད་བྱ་རིམ་འདིར་འོས་འཚམ།</string>
+    <string name="MIDS_GH_TPOP_P1SS_NOT_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_CHANGES_CAN_TAKE_UP_TO_P3SD_SECONDS">%1$sལ་Game Launcherཕན་ནུས་(དཔེར་ན་%2$s)ཤུགས་རྐྱེན་མི་ཐེབས།ཕན་ནུས་ཐོན་པར་སྐར་ཆ་%3$dཙམ་འགོར་སྲིད།</string>
+    <string name="MIDS_GH_TPOP_P1SS_NOT_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_P3SS">%1$sལ་Game Launcherགྱི་ཤུགས་རྐྱེན་མི་ཐེབས།(དཔེར་ན་%2$sདང་%3$s)</string>
+    <string name="MIDS_GH_TPOP_P1SS_P2SS_ENABLED">%1$sདང་%2$sཁ་ཕྱེ་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_PROCESSING_ING">ཐག་གཅོད་བྱེད་བཞིན་ཡོད།</string>
+    <string name="MIDS_GH_TPOP_PS_ENABLED">%sཁ་ཕྱེ་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_PS_INSTALLED">%sསྒྲིག་འཇུག་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_PS_UPDATED">%sགསར་བརྗེས་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_RECENTS_AND_BACK_KEYS_LOCKED_DURING_GAMEPLAY">རྩེད་མོ་རྩེད་སྐབས་ཉེ་དུས་མཐེབ་དང་ཕྱིར་ལོག་མཐེབ་བསྡམ་སྒྲིག་བྱེད་དགོས།</string>
+    <string name="MIDS_GH_TPOP_RECENTS_KEY_LOCKED_DURING_GAMEPLAY">རྩེད་མོའི་སྐབས་སུ་ཉེ་དུས་བེད་སྤྱོད་གཏོང་བའི་མཐེབ་བསྡམ་སྒྲིག་བྱས།</string>
+    <string name="MIDS_GH_TPOP_RECORDED_VIDEO_SAVED_TO_DEVICE_MEMORY">ཕབ་འཇུག་བྱས་པའི་བརྙན་ཟློས་འཕྲུལ་ཆས་གསོག་སྣོད་ནང་ཉར་ཡོད།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_BECAUSE_GAME_SCREEN_WAS_LEFT_RECORDING_SAVED_AUTOMATICALLY">རྩེད་མོའི་བརྙན་རིས་ལ་གྱེས་པས།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།རང་འགུལ་ཐོག་ནས་རྩེད་མོའི་བརྙན་ཕབ་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DEVICE_ERROR_OCCURRED_VIDEO_NOT_SAVED">ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།འཕྲུལ་ཆས་ནོར་འཁྲུལ་ཐོན།བརྙན་ཟློས་ཉར་ཚགས་བྱས་མེད།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LEAVING_APP_SCREEN_RECORDING_SAVED_AUTOMATICALLY">ཉེར་སྤྱོད་བྱ་རིམ་འཕྲད་ངོས་ལས་གྱེས་པས།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།ཕབ་འཇུག་རང་འགུལ་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LEAVING_GAME_SCREEN_RECORDING_SAVED_AUTOMATICALLY">རྩེད་མོའི་བརྙན་རིས་ལ་གྱེས་པས།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།རང་འགུལ་ཐོག་ནས་ཕབ་འཇུག་ཉར་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LOW_BATTERY_RECORDING_SAVED_AUTOMATICALLY">གློག་མི་ལྡང་།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།ཕབ་འཇུག་རང་འགུལ་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_DEVICE_MEMORY_RECORDING_SAVED_AUTOMATICALLY">འཕྲུལ་ཆས་ནང་གསོག་མི་ལྡང་།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།ཕབ་འཇུག་རང་འགུལ་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_PHONE_MEMORY_RECORDING_SAVED_AUTOMATICALLY">ལག་ཐོག་ཁ་པར་ནང་གསོག་མི་ལྡང་།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།ཕབ་འཇུག་རང་འགུལ་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_TABLET_MEMORY_RECORDING_SAVED_AUTOMATICALLY">ངོས་པང་གློག་ཀླད་ནང་གསོག་མི་ལྡང་།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།ཕབ་འཇུག་རང་འགུལ་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_GAME_SCREEN_SWITCHED_TO_ANOTHER_SCREEN_VIDEO_SAVED">ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།རྩེད་མོའི་བརྙན་ཡོལ་དེ་བརྙན་ཡོལ་གཞན་ལ་སྒྱུར་སྲིད།བརྙན་ཟློས་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_MAXIMUM_FILE_SIZE_HP1SS_P2SS_REACHED_VIDEO_SAVED">ཡིག་ཆ་ཆེ་ཆུང་གོང་ཚད་(%1$s %2$s)སླེབས་པ་དང་ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།མ་ཟད་བརྙན་ཟློས་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_MAXIMUM_RECORDING_TIME_HPD_MINUTES_REACHED_VIDEO_SAVED">ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།ཕབ་འཇུག་བྱས་པའི་དུས་ཚོད་(སྐར་མ་%d)རིང་ཤོས་ལ་སླེབས་ཟིན།བརྙན་ཟློས་ཉར་ཚགས་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_PHONE_ERROR_OCCURRED_VIDEO_NOT_SAVED">ལག་ཐོག་ཁ་པར་ནོར་འཁྲུལ་ཐོན།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།བརྙན་ཟློས་ཉར་ཚགས་བྱས་མེད།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_TABLET_ERROR_OCCURRED_VIDEO_NOT_SAVED">ངོས་པང་གློག་ཀླད་ནོར་འཁྲུལ་ཐོན།ཕབ་འཇུག་མཚམས་འཇོག་བྱས་ཟིན།བརྙན་ཟློས་ཉར་ཚགས་བྱས་མེད།</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_WITHIN_PD_SECONDS_VIDEO_NOT_SAVED">ཕབ་འཇུག་སྐར་ཆ་%dནང་མཇུག་སྒྲིལ་ཟིན།བརྙན་ཟློས་ཉར་ཚགས་བྱས་མེད།</string>
+    <string name="MIDS_GH_TPOP_REGISTRATION_REQUEST_FOR_PS_SUBMITTED">%sགྱི་ཐོ་འགོད་རེ་ཞུ་འདོན་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_SHORTCUT_ADDED">མྱུར་མགྱོགས་འབྲེལ་མཐུད་སྣོན་འཇུག་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_SHORTCUT_ADDED_TO_HOME_SCREEN">མྱུར་མགྱོགས་འབྲེལ་མཐུད་བརྙན་ཡོལ་མ་ངོས་ཐོག་སྣོན་འཇུག་བྱས་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_TAP_THE_PROFILE_BUTTON_TO_STOP_RECORDING_DRAG_AND_DROP_TO_MOVE_BUTTON">༼སྡེབ་སྒྲིག་ཡིག་ཆ་༽མཐེབ་གནོན་བརྡེབས་ནས་ཕབ་འཇུག་མཚམས་འཇོག་བྱས།འདྲུད་གཏོང་བྱས་ནས་མཐེབ་གནོན་སྤོས་ཆོག</string>
+    <string name="MIDS_GH_TPOP_THIS_APP_DOES_NOT_SUPPORT_PS_FUNCTION_OF_GAME_TOOLS">ཉེར་སྤྱོད་བྱ་རིམ་འདིས་Game Toolsཀྱི་%sཕན་ནུས་ལ་རྒྱབ་སྐྱོར་མི་ཐོབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_ACCESS_PS">%sབཅར་འདྲི་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_CHANGE_SETTING_WHILE_PS_ENABLED">%sཁ་ཕྱེ་སྐབས་སྒྲིག་འགོད་སྒྱུར་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_ENABLED">འཕུར་སྐྱོད་རྣམ་པ་ཁ་ཕྱེ་བའི་སྐབས་སུ་འགུལ་གཏོང་དྲ་བ་དང་འབྲེལ་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_ENABLE_OR_DISABLE_EXTENDED_PLAY_MODE_DURING_GAMEPLAY">རྩེད་མོའི་རྩེད་སྐབས་རྩེད་མོའི་རྣམ་པ་ཡུན་རིང་གཏོང་རྒྱུ་ཁ་ཕྱེ་བའམ་ཁ་བཀག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_ANOTHER_APP_USING_MICROPHONE">ཕབ་འཇུག་མི་ཐུབ།ཉེར་སྤྱོད་བྱ་རིམ་གཞན་ཞིག་གིས་སྒྲ་སྦུག་བེད་སྤྱོད་གཏོང་བཞིན་ཡོད།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_AUDIO_IF_VOLUME_MUTED">གལ་སྲིད་སྒྲ་ཤུགས་སྐད་མེད་བཏང་ཟིན།སྒྲ་ཟློས་ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_CAMERA_IN_USE">ཕབ་འཇུག་མི་ཐུབ།པར་ཆས་བེད་སྤྱོད་གཏོང་བཞིན་ཡོད།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_DURING_CALLS">སྐབས་སུ་གཏོང་སྐབས་ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_GAME_AUDIO_IF_VOLUME_MUTED">གལ་སྲིད་སྒྲ་ཤུགས་སྐད་མེད་བཏང་ཟིན།རྩེད་མོའི་སྒྲ་ཟློས་ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_GAME_ERROR_OCCURRED">ནོར་འཁྲུལ་ཐོན།རྩེད་མོ་ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_LOW_BATTERY">གློག་མི་ལྡང་།ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_RECORDING_NOT_SUPPORTED_BY_THIS_GAME_DUE_TO_POLICY">ཕབ་འཇུག་མི་ཐུབ།ཐབས་ཇུས་རྒྱུ་རྐྱེན་རྐྱེན་པས།རྩེད་མོའི་འདིར་ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_VOICE_IF_GAME_VOLUME_TOO_HIGH">གལ་སྲིད་རྩེད་མོའི་སྒྲ་ཤུགས་ཆེ་དྲགས།ཕབ་འཇུག་བྱེད་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_VOICE_WHILE_VOLUME_SET_TOO_HIGH">སྒྲ་ཤུགས་སྒྲིག་འགོད་མཐོ་དྲགས་སྐབས་སྐད་སྒྲ་ཕབ་འཇུག་མི་ཐུབ།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_USE_P1SS_CHECK_NOTIFICATION_PANEL_TO_ALLOW_THESE_PERMISSIONS_C_P2SS">%1$sབེད་སྤྱོད་གཏོང་མི་ཐུབ།བརྡ་ཐོ་གཏོང་པང་བལྟ་ཞིབ་བྱས་ནས་གཤམ་གྱི་དབང་ཚད་%2$sསྤྲོད་དགོས།</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_USE_P1SS_CHECK_NOTIFICATION_PANEL_TO_ALLOW_THIS_PERMISSION_C_P2SS">%1$sབེད་སྤྱོད་གཏོང་མི་ཐུབ།བརྡ་ཐོ་གཏོང་པང་བལྟ་ཞིབ་བྱས་ནས་གཤམ་གྱི་དབང་ཚད་%2$sསྤྲོད་དགོས།</string>
+    <string name="MIDS_GH_TPOP_VIDEO_SAVED">བརྙན་ཟློས་ཉེར་ཟིན།</string>
+    <string name="MIDS_GH_TPOP_VOICE_MAY_NOT_BE_RECORDED_WELL_IF_GAME_VOLUME_TOO_HIGH">གལ་སྲིད་རྩེད་མོ་སྒྲ་ཤུགས་ཆེ་དྲགས་ཚེ།སྐད་སྒྲ་ཕབ་འཇུག་གསལ་པོར་བྱེད་མི་ཐུབ།</string>
+    <string name="MIDS_OTS_BODY_PS_GB">%s GB</string>
+    <string name="MIDS_OTS_BODY_PS_KB">%s KB</string>
+    <string name="MIDS_OTS_BODY_PS_MB">%s MB</string>
+    <string name="MIDS_SA_BODY_I_AGREE_TO_ALL">ང་ཆ་ཚང་ལ་ཡིད་འཐད་ཡོད།</string>
+    <string name="WDS_TTS_TBOPT_ALERT">དྲན་སྐུལ།</string>
+</resources>

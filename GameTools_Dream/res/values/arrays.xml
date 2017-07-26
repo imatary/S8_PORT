@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="audio_buffer_size">
+        <item>1920</item>
+        <item>2048</item>
+        <item>3840</item>
+        <item>4096</item>
+        <item>7680</item>
+    </string-array>
+    <string-array name="audio_read_thread_sleep_time">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="audio_read_thread_wait_cnt">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="audio_read_thread_wait_time">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="audio_source">
+        <item>None</item>
+        <item>Integrated</item>
+        <item>System Only</item>
+    </string-array>
+    <string-array name="bitrate">
+        <item>AUTO</item>
+        <item>10000000</item>
+        <item>8000000</item>
+        <item>6000000</item>
+        <item>5000000</item>
+        <item>3000000</item>
+        <item>2000000</item>
+        <item>1000000</item>
+    </string-array>
+    <string-array name="circular_buffering_time">
+        <item>5000</item>
+        <item>4000</item>
+        <item>3000</item>
+        <item>2000</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="codec_input_wait_cnt">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="codec_input_wait_time">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="forbidden_country_array">
+        <item>cn</item>
+        <item>ir</item>
+        <item>pk</item>
+        <item>sd</item>
+        <item>tj</item>
+        <item>th</item>
+        <item>tm</item>
+        <item>nk</item>
+    </string-array>
+    <string-array name="frame_rate">
+        <item>60</item>
+        <item>50</item>
+        <item>40</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="jitter_buffer_size">
+        <item>100</item>
+        <item>80</item>
+        <item>60</item>
+        <item>40</item>
+        <item>20</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="resolution">
+        <item>1920x1080</item>
+        <item>1280x720</item>
+        <item>960x540</item>
+        <item>854x480</item>
+        <item>640x360</item>
+    </string-array>
+    <string-array name="set_profile_image_normal_array">
+        <item>@string/MIDS_GH_OPT_IMAGE_ABB</item>
+        <item>@string/MIDS_GH_OPT_TAKE_PICTURE_ABB3</item>
+    </string-array>
+    <string-array name="set_profile_image_plus_default_array">
+        <item>@string/MIDS_GH_OPT_IMAGE_ABB</item>
+        <item>@string/MIDS_GH_OPT_TAKE_PICTURE_ABB3</item>
+        <item>@string/MIDS_GH_OPT_DEFAULT_IMAGE</item>
+    </string-array>
+</resources>

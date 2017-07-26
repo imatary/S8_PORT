@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="#fffafafa" android:id="@id/tv_help1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/MIDS_GH_BODY_ACCESS_YOUR_GAMES_QUICKLY_AND_EASILY_USING_THE_EDGE_SCREEN" />
+    <TextView android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <TextView android:textSize="15.0dip" android:textColor="#fffafafa" android:id="@id/tv_help2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/MIDS_GH_BODY_YOUR_GAMES_WILL_BE_DISPLAYED_AUTOMATICALLY" />
+</LinearLayout>

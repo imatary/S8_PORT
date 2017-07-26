@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/movie_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gl_img_fullboard_gradient" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/movie_icon" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/gl_icon_mainmov" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

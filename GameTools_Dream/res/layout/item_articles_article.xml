@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/articles_article_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/list_item_margin" android:paddingTop="12.0dip" android:paddingRight="@dimen/list_item_margin" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/left_thumbnail_view_stub" android:layout="@layout/item_articles_article_thumbnail" android:inflatedId="@id/thumbnail_layout" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginRight="8.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dip" android:textColor="@color/black4" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <ViewStub android:id="@id/infos_view_stub" android:layout="@layout/item_articles_article_infos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+            <ViewStub android:id="@id/two_line_infos_view_stub" android:layout="@layout/item_articles_article_two_line_infos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+        <ViewStub android:id="@id/right_thumbnail_view_stub" android:layout="@layout/item_articles_article_thumbnail" android:inflatedId="@id/thumbnail_layout" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginLeft="16.0dip" />
+    </LinearLayout>
+    <View android:background="#66ced4d4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

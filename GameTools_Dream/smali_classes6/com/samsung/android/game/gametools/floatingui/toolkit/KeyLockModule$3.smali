@@ -1,0 +1,77 @@
+.class Lcom/samsung/android/game/gametools/floatingui/toolkit/KeyLockModule$3;
+.super Ljava/lang/Object;
+.source "KeyLockModule.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/samsung/android/game/gametools/floatingui/toolkit/KeyLockModule;->showRecentPressed()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/samsung/android/game/gametools/floatingui/toolkit/KeyLockModule;
+
+.field final synthetic val$recentView:Landroid/view/View;
+
+
+# direct methods
+.method constructor <init>(Lcom/samsung/android/game/gametools/floatingui/toolkit/KeyLockModule;Landroid/view/View;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/samsung/android/game/gametools/floatingui/toolkit/KeyLockModule$3;->this$0:Lcom/samsung/android/game/gametools/floatingui/toolkit/KeyLockModule;
+
+    iput-object p2, p0, Lcom/samsung/android/game/gametools/floatingui/toolkit/KeyLockModule$3;->val$recentView:Landroid/view/View;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 4
+
+    iget-object v0, p0, Lcom/samsung/android/game/gametools/floatingui/toolkit/KeyLockModule$3;->val$recentView:Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v0
+
+    const-wide/16 v2, 0xc8
+
+    invoke-virtual {v0, v2, v3}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v0
+
+    new-instance v1, Landroid/view/animation/LinearInterpolator;
+
+    invoke-direct {v1}, Landroid/view/animation/LinearInterpolator;-><init>()V
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/samsung/android/game/gametools/floatingui/toolkit/KeyLockModule$3$1;
+
+    invoke-direct {v1, p0}, Lcom/samsung/android/game/gametools/floatingui/toolkit/KeyLockModule$3$1;-><init>(Lcom/samsung/android/game/gametools/floatingui/toolkit/KeyLockModule$3;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->withEndAction(Ljava/lang/Runnable;)Landroid/view/ViewPropertyAnimator;
+
+    return-void
+.end method

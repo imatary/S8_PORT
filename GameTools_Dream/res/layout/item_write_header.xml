@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="@color/black2" android:gravity="center_vertical" android:id="@id/menus_button" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/list_item_margin" android:layout_marginRight="@dimen/list_item_margin" android:singleLine="true" android:drawableRight="@drawable/gl_btn_boardlistmenu" />
+    <View android:background="#66ced4d4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <EditText android:textSize="15.0dip" android:textColor="#ff363838" android:textColorHint="#ffa3a9a9" android:id="@id/subject" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/list_item_margin" android:layout_marginRight="@dimen/list_item_margin" android:hint="@string/save_error_subject" android:singleLine="true" android:imeOptions="flagNoFullscreen" />
+    <View android:background="#66ced4d4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

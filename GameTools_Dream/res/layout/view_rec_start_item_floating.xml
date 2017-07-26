@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/rec_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/rec_total_layout" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center" android:id="@id/rec_camera_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center" android:id="@id/rec_camera_surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.sec.game.gamecast.common.utility.CommonRoundIcon android:layout_gravity="center" android:id="@id/rec_camera_voice" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center" android:id="@id/rec_camera_circle_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:layout_gravity="bottom|center" android:id="@id/rec_camera_sub_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <com.samsung.android.game.gametools.floatingui.view.customview.RecordTimerView android:textSize="10.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/rec_camera_sub_count" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/record_time" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/rec_camera_anim_view" android:visibility="visible" android:layout_width="76.0dip" android:layout_height="76.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/rec_camera_red" android:background="@drawable/rec_camera_red" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="center" android:id="@id/rec_camera_black" android:background="@drawable/rec_camera_black" android:visibility="invisible" android:layout_width="76.0dip" android:layout_height="76.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/rec_record_anim_black" android:background="@drawable/black_oval" android:layout_width="44.0dip" android:layout_height="44.0dip">
+            <FrameLayout android:layout_gravity="center" android:id="@id/rec_record_save_check" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

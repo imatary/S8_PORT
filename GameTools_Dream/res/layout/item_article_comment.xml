@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/writer_profile" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_margin" android:layout_marginRight="8.0dip">
+            <ImageView android:id="@id/writer_profile_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/gl_icon_profile" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/writer_profile_image_stroke" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/gl_thumb_personal_profile_stroke" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/staff_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gl_ls_icon_master_small" android:layout_alignRight="@id/writer_profile_image" android:layout_alignBottom="@id/writer_profile_image" />
+        </RelativeLayout>
+        <ViewStub android:id="@id/etc_items" android:layout="@layout/item_article_comment_etc_items" android:inflatedId="@id/etc_items" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/writer_profile" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/gray7" android:autoLink="web" android:id="@id/contents" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="22.0dip" android:layout_toRightOf="@id/writer_profile" android:layout_below="@id/etc_items" android:textIsSelectable="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/more_replies" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_toRightOf="@id/writer_profile" android:layout_below="@id/contents">
+            <View android:background="@color/gray9" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/black2" android:gravity="center_vertical" android:id="@id/more_replies_message" android:layout_width="fill_parent" android:layout_height="40.0dip" android:drawableLeft="@drawable/gl_ls_icon_replyviews" android:drawablePadding="9.0dip" />
+            <View android:background="@color/gray9" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/more_actions" android:paddingLeft="22.0dip" android:paddingRight="@dimen/list_item_margin" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gl_icon_more_s" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/comment_divider" android:background="@color/gray9" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="12.0dip" />
+</LinearLayout>

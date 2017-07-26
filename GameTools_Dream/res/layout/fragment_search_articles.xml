@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:theme="@android:style/Theme.Holo.Light" android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@color/black2_opacity_20" android:id="@android:id/list" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@drawable/gl_list_selector" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@android:id/empty" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/item_articles_search_header" />
+        <include layout="@layout/item_empty" />
+    </LinearLayout>
+    <TextView android:id="@id/back" android:background="@drawable/gl_btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

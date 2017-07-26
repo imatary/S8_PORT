@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff363838" android:id="@id/menu_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_margin" android:layout_marginTop="@dimen/list_item_margin" android:layout_marginBottom="8.0dip" />
+    <include android:id="@id/header_divider" layout="@layout/view_divider" />
+</LinearLayout>

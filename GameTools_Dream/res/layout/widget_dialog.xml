@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/ani_view" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="54.0dip" />
+    <com.github.clans.fab.FloatingActionMenu android:id="@id/float_menu" android:padding="@dimen/glink_widget_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="false" fab:menu_buttonSpacing="9.0dip" fab:menu_labels_paddingLeft="1.0dip" fab:menu_labels_paddingRight="1.0dip" fab:menu_labels_textSize="15.0dip" fab:menu_labels_position="right" fab:menu_labels_singleLine="true" fab:menu_labels_ellipsize="end" fab:menu_openDirection="up" fab:menu_backgroundColor="#ccffffff">
+        <com.github.clans.fab.FloatingActionButton android:id="@id/float_item_trash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gl_icon_trash" fab:fab_label="@string/delete" fab:fab_is_trash="true" />
+        <com.github.clans.fab.FloatingActionButton android:id="@id/float_item_cafe" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_label="@string/widget_button_cafe" />
+        <com.github.clans.fab.FloatingActionButton android:id="@id/float_item_capture" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_label="@string/widget_button_capture" />
+        <com.github.clans.fab.FloatingActionButton android:id="@id/float_item_video" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_label="@string/widget_button_record" />
+        <com.github.clans.fab.FloatingActionButton android:id="@id/float_item_write" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_label="@string/widget_button_write" />
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

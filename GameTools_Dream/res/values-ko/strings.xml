@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DREAM_DEX_PHEADER_UPDATE_PS_Q">%s 업데이트</string>
+    <string name="DREAM_DEX_POP_THE_APP_WILL_CLOSE_WHEN_YOU_UPDATE_IT_SAVE_ANY_UNSAVED_DATA_BEFORE_UPDATING">업데이트하면 앱이 종료됩니다. 저장하지 않은 데이터가 있다면 업데이트하기 전에 저장하세요.</string>
+    <string name="DREAM_DEX_TPOP_CANT_USE_PS_IN_SAMSUNG_DEX">Samsung DeX에서는 %s 항목을 사용할 수 없습니다.</string>
+    <string name="DREAM_GH_BODY_ACTION_ABB">액션</string>
+    <string name="DREAM_GH_BODY_ADVENTURE_ABB">어드벤처</string>
+    <string name="DREAM_GH_BODY_ARCADE_ABB">아케이드</string>
+    <string name="DREAM_GH_BODY_A_GAME_IS_IN_PROGRESS">게임 중입니다.</string>
+    <string name="DREAM_GH_BODY_A_GAME_IS_IN_PROGRESS_NO_ALERTS_DURING_GAMES_IS_TURNED_ON">게임이 실행 중입니다. 게임 중 방해금지를 켰습니다.</string>
+    <string name="DREAM_GH_BODY_BATTERY_USAGE">배터리 사용량 내역</string>
+    <string name="DREAM_GH_BODY_BOARD">보드</string>
+    <string name="DREAM_GH_BODY_CARD">카드</string>
+    <string name="DREAM_GH_BODY_CASINO_ABB">카지노</string>
+    <string name="DREAM_GH_BODY_CASUAL_ABB">캐주얼</string>
+    <string name="DREAM_GH_BODY_CHANGING_TO_HIGH_PERFORMANCE_WILL_IMPROVE_YOUR_GAME_PERFORMANCE">고성능으로 변경하면 게임 성능을 향상할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_CHANGING_TO_SAVE_POWER_WILL_REDUCE_YOUR_POWER_USE">절전으로 변경하면 배터리 사용량을 줄일 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_CHECK_OUT_NEW_GAMES_FOR_YOUR_SAMSUNG_DEX">새로운 Samsung DeX 게임을 확인하세요</string>
+    <string name="DREAM_GH_BODY_CHECK_YOUR_GAMEPLAY_HISTORY_IN_MY_GAMES">내 게임에서 게임 플레이 기록을 확인하세요.</string>
+    <string name="DREAM_GH_BODY_DATA_USAGE">데이터 사용량</string>
+    <string name="DREAM_GH_BODY_DONT_USE_SAVE_POWER_DURING_GAMES">게임 절전 모드를 사용하지 않습니다.</string>
+    <string name="DREAM_GH_BODY_EDUCATIONAL_ABB">교육</string>
+    <string name="DREAM_GH_BODY_ENHANCE_YOUR_GAMEPLAY_EXPERIENCE_WITH_SAMSUNG_DEX">Samsung DeX로 향상된 게임 플레이 환경을 즐기세요.</string>
+    <string name="DREAM_GH_BODY_FAVORITE_CATEGORIES">좋아하는 카테고리</string>
+    <string name="DREAM_GH_BODY_GAMEPAD_RECOMMENDED">게임패드 사용 권장</string>
+    <string name="DREAM_GH_BODY_GAMEPLAY_VIDEOS_RECORDED_FROM_YOUR_PHONE">휴대전화에서 녹화한 게임 동영상입니다.</string>
+    <string name="DREAM_GH_BODY_GAMES_WILL_OPEN_MUTED_YOU_CAN_CHANGE_THE_VOLUME_LATER">게임을 무음으로 실행합니다. 실행한 후에 소리 크기를 변경할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_GAME_ICONS_ARE_SHOWN_ONLY_IN_GAME_LAUNCHER_MSG">게임 아이콘을 게임런처에만 표시합니다. 현재 홈 화면과 앱스 화면에 표시된 게임 아이콘은 숨겨집니다. 게임런처 설정에서 설정을 변경할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_GAME_ICONS_WILL_BE_SHOWN_ONLY_IN_GAME_LAUNCHER_MSG">게임 아이콘을 게임런처에만 표시합니다. 현재 홈 화면과 앱스 화면에 있는 게임 아이콘은 숨겨집니다. 게임런처 설정에서 이 옵션을 변경할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_GAME_TOOLS">게임툴즈</string>
+    <string name="DREAM_GH_BODY_GAME_TOOLS_KEEPS_ALL_YOUR_GAMES_IN_ONE_PLACE">게임런처는 게임을 한곳에 모아서 보여줍니다.</string>
+    <string name="DREAM_GH_BODY_HERE_YOU_CAN_SEE_YOUR_MOST_PLAYED_GAMES_RECOMMENDED_GAMES_AND_GAME_CATEGORIES">여기에서 많이 플레이한 게임, 추천 게임, 게임 카테고리를 확인할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_IF_YOU_WANT_ACCESS_TO_HANDY_GAMING_FEATURES_PRESS_AND_HOLD_THE_ICON_THEN_SELECT_LIST_AS_GAME">간편한 게임 기능을 사용하려면 아이콘을 길게 누른 후 [게임으로 분류]를 선택하세요.</string>
+    <string name="DREAM_GH_BODY_INSTALLED_APPS_WILL_APPEAR_HERE">설치된 앱이 여기에 표시됩니다.</string>
+    <string name="DREAM_GH_BODY_INSTALLED_GAMES_WILL_APPEAR_HERE">설치된 게임이 여기에 표시됩니다.</string>
+    <string name="DREAM_GH_BODY_I_AGREE_TO_ALL">약관에 모두 동의합니다.</string>
+    <string name="DREAM_GH_BODY_LOCK_EDGE_TOUCH_PREVENTS_ACCIDENTAL_PHONE_EDGE_CONTACT_DURING_GAMEPLAY_MSG">엣지 터치 잠금을 사용하면 게임 실행 중에 의도하지 않은 엣지 화면 터치를 방지할 수 있습니다. 이 설정은 게임툴즈에서 변경할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_LOCK_RECENT_AND_BACK_BUTTONS">최근 앱 및 뒤로가기 버튼 잠금</string>
+    <string name="DREAM_GH_BODY_LOCK_RECENT_AND_BACK_KEYS">최근 앱 및 뒤로가기 버튼 잠금</string>
+    <string name="DREAM_GH_BODY_LOW_RESOLUTION_FRAME_RATE_P1SD_P2SS">낮은 해상도, 프레임 속도 %1$d%2$s</string>
+    <string name="DREAM_GH_BODY_MUSIC">뮤직</string>
+    <string name="DREAM_GH_BODY_MY_INSTALLED_GAMES">설치된 게임</string>
+    <string name="DREAM_GH_BODY_NORMAL_RESOLUTION_FRAME_RATE_P1SD_P2SS">일반 해상도, 프레임 속도 %1$d%2$s</string>
+    <string name="DREAM_GH_BODY_NO_ALERTS_DURING_GAME">게임 중 방해금지</string>
+    <string name="DREAM_GH_BODY_NO_ALERTS_DURING_GAME_TURNED_ON">게임 중 방해금지를 사용합니다.</string>
+    <string name="DREAM_GH_BODY_NO_ALERTS_WHILE_USING_APP_IS_ON">앱 사용 중 방해금지를 실행한 상태입니다.</string>
+    <string name="DREAM_GH_BODY_OTHER">기타</string>
+    <string name="DREAM_GH_BODY_PD_NGAMES_NPLAYED_N">"%d개
+게임
+실행
+"</string>
+    <string name="DREAM_GH_BODY_PD_TIMES_ABB">%d회</string>
+    <string name="DREAM_GH_BODY_PERFORMANCE_TUNING_ADJUSTS_THE_PERFORMANCE_OF_THE_GAME_MSG">성능 조정을 통해 게임의 성능을 조절할 수 있습니다. 고성능을 선택하면 게임을 더 화려하게 즐길 수 있지만 배터리 사용량이 많아집니다. 절전을 선택하면 배터리 사용량을 줄일 수 있지만 그래픽 품질이 떨어질 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_PLAYERS_ABB">플레이어</string>
+    <string name="DREAM_GH_BODY_PLAY_TIME">놀이시간</string>
+    <string name="DREAM_GH_BODY_PLAY_TIME_ABB">플레이 시간</string>
+    <string name="DREAM_GH_BODY_PRESSURE_TOUCH_LOCK_PREVENTS_ACCIDENTAL_SCREEN_CONTACT_DURING_GAMEPLAY_MSG">세게 누르기 잠금을 사용하면 게임 실행 중에 의도하지 않은 화면 터치를 방지할 수 있습니다. 이 설정은 게임툴즈에서 변경할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_PRESS_AND_HOLD_THEN_TAP_GAME_DETAILS_TO_SEE_GAME_INFORMATION">게임 정보를 보려면 길게 누른 후 [게임 상세정보]를 누르세요.</string>
+    <string name="DREAM_GH_BODY_PUZZLE_ABB">퍼즐</string>
+    <string name="DREAM_GH_BODY_RACING_ABB">레이싱</string>
+    <string name="DREAM_GH_BODY_RECEIVED_ANNOUNCEMENTS_WILL_APPEAR_HERE">받은 공지사항이 여기에 표시됩니다.</string>
+    <string name="DREAM_GH_BODY_RECORD">녹화</string>
+    <string name="DREAM_GH_BODY_ROLE_PLAYING_ABB">롤플레잉</string>
+    <string name="DREAM_GH_BODY_SAVE_POWER_ABB">절전</string>
+    <string name="DREAM_GH_BODY_SAVE_POWER_REDUCES_POWER_USE_DURING_GAMES_BUT_CAN_ALSO_LOWER_GAME_PERFORMANCE">절전을 사용하면 게임 중에 배터리 사용량을 줄일 수 있지만 게임 성능이 떨어질 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_SCREENSHOT">화면 캡처</string>
+    <string name="DREAM_GH_BODY_SCREEN_TOUCH_LOCK">화면 터치 잠금</string>
+    <string name="DREAM_GH_BODY_SEE_THE_CURRENT_APP_VERSION_AND_LEGAL_INFORMATION">현재 앱 버전 및 법률정보를 확인할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_SELECT_APPS_TO_ADD_TO_PS">%s에 추가할 앱을 선택하세요.</string>
+    <string name="DREAM_GH_BODY_SELECT_THE_FUNCTION_YOU_WANT_TO_ASSIGN_TO_THE_SHORTCUT_MSG">바로가기에 지정할 기능을 선택하세요. 바로가기를 길게 눌러 지정한 기능을 변경할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_SIMULATION_ABB">시뮬레이션</string>
+    <string name="DREAM_GH_BODY_SPORTS_ABB">스포츠</string>
+    <string name="DREAM_GH_BODY_STRATEGY_ABB">전략</string>
+    <string name="DREAM_GH_BODY_TAP_TO_STOP_RECORDING">녹화를 중지하려면 누르세요.</string>
+    <string name="DREAM_GH_BODY_THESE_TERMS_AND_CONDITIONS_APPLY_TO_GAME_LAUNCHER_AND_GAME_TOOLS">게임런처와 게임툴즈에 적용되는 이용약관입니다.</string>
+    <string name="DREAM_GH_BODY_THE_GAME_TOOLS_BUTTON_LETS_YOU_C">게임툴즈 버튼으로 다음을 실행할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_THE_GAME_VOLUME_WILL_BE_MUTED_MSG">게임 소리만 끄고 휴대전화 소리는 그대로 유지됩니다. 게임 소리를 다시 켜려면 게임 플레이 중에 음량 버튼 중 하나를 누르세요.</string>
+    <string name="DREAM_GH_BODY_THE_HARD_PRESS_BUTTON_LOCK_PREVENTS_ACCIDENTAL_SCREEN_CONTACT_DURING_GAMEPLAY_MSG">버튼 세게 누르기 잠금을 사용하면 게임 실행 중에 의도하지 않은 화면 터치를 방지할 수 있습니다. 이 설정은 게임툴즈에서 변경할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_THE_HARD_PRESS_HOME_BUTTON_LOCK_PREVENTS_ACCIDENTAL_SCREEN_CONTACT_DURING_GAMEPLAY_YOU_CAN_TURN_THIS_ON_OR_OFF_IN_GAME_TOOLS">홈 버튼 세게 누르기 잠금을 사용하면 게임 실행 중에 의도하지 않은 화면 터치를 방지할 수 있습니다. 이 설정은 게임툴즈에서 켜거나 끌 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_THE_LATEST_VERSION_IS_INSTALLED">최신 버전입니다.</string>
+    <string name="DREAM_GH_BODY_THE_MAXIMUM_RECORDING_FILE_SIZE_IS_4_GB_MSG">녹화 파일의 최대 크기는 4GB입니다. 최고 화질 설정에서는 약 80분 분량의 동영상을 녹화할 수 있습니다. 녹화 시간을 늘리려면 해상도와 비트 전송률을 낮추세요.</string>
+    <string name="DREAM_GH_BODY_THE_NAVIGATION_BAR_DOESNT_AUTO_HIDE_DURING_GAMES_THIS_ISNT_RECOMMENDED_WITH_FULL_SCREEN_MODE">탐색 표시줄이 게임 중에 자동으로 숨겨지지 않습니다. 전체 화면 모드에서는 권장하지 않는 설정입니다.</string>
+    <string name="DREAM_GH_BODY_TIMES_PER_DAY_ABB">일일 실행 횟수</string>
+    <string name="DREAM_GH_BODY_TIP_C_PRESS_AND_HOLD_THE_SHORTCUT_OR_CHANGE_THE_SHORTCUT_IN_GAME_TOOLS_SETTINGS">팁: 바로가기를 길게 누르거나, 게임툴즈 설정에서 바로가기를 변경할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_TOTAL">총</string>
+    <string name="DREAM_GH_BODY_TO_HIDE_THE_GAME_TOOLS_ICON_DRAG_IT_TO_THE_TOP_OF_THE_SCREEN">게임툴즈 아이콘을 숨기려면 화면 상단으로 끌어다 놓으세요.</string>
+    <string name="DREAM_GH_BODY_TO_RECORD_GAMEPLAY_VIDEOS_ENABLE_GAME_LAUNCHER">게임 동영상을 녹화하려면 게임런처를 사용하도록 설정하세요.</string>
+    <string name="DREAM_GH_BODY_TO_STOP_RECORDING_MSG">녹화를 중지하려면 탐색 표시줄의 중지 버튼을 누르세요. 빠른 설정창에서 중지를 눌러도 됩니다.</string>
+    <string name="DREAM_GH_BODY_TO_STOP_RECORDING_TAP_THE_STOP_BUTTON_ON_THE_NAVIGATION_BAR">녹화를 중지하려면 탐색 표시줄에 있는 중지 버튼을 누르세요.</string>
+    <string name="DREAM_GH_BODY_TRIVIA_ABB">퀴즈</string>
+    <string name="DREAM_GH_BODY_TRY_OUT_USEFUL_FEATURES_SUCH_AS_SAVE_POWER_OPEN_MUTED_AND_GAME_TOOLS">절전, 무음으로 실행, 게임툴즈와 같은 유용한 기능을 사용해보세요.</string>
+    <string name="DREAM_GH_BODY_USE_A_LOWER_RESOLUTION_AND_FRAME_RATE_TO_SAVE_BATTERY_LIFE">낮은 해상도와 프레임 속도를 사용하여 배터리 사용량을 줄입니다.</string>
+    <string name="DREAM_GH_BODY_USE_A_LOWER_RESOLUTION_TO_SAVE_BATTERY_LIFE">낮은 해상도를 사용하여 배터리 사용량을 줄입니다.</string>
+    <string name="DREAM_GH_BODY_VIDEOS_RECORDED_USING_GAME_TOOLS_WILL_APPEAR_HERE">게임툴즈로 녹화한 동영상이 여기에 표시됩니다.</string>
+    <string name="DREAM_GH_BODY_WORD">단어</string>
+    <string name="DREAM_GH_BODY_YOU_CAN_SET_THE_NAVIGATION_BAR_SO_ITS_ALWAYS_DISPLAYED">네비게이션 바가 항상 표시되게 설정할 수 있습니다.</string>
+    <string name="DREAM_GH_BODY_YOU_PLAYED">플레이 목록</string>
+    <string name="DREAM_GH_BUTTON_ADD_APPS_20">앱 추가</string>
+    <string name="DREAM_GH_BUTTON_AGREE_9">동의</string>
+    <string name="DREAM_GH_BUTTON_CONTINUE_15">계속</string>
+    <string name="DREAM_GH_BUTTON_DISAGREE_9">동의 안 함</string>
+    <string name="DREAM_GH_BUTTON_DISMISS_8">해제</string>
+    <string name="DREAM_GH_BUTTON_DOWNLOADING_ING_14">다운로드 중...</string>
+    <string name="DREAM_GH_BUTTON_DOWNLOAD_10">다운로드</string>
+    <string name="DREAM_GH_BUTTON_ENABLE_8">사용</string>
+    <string name="DREAM_GH_BUTTON_FIND_GAMES_22">게임 찾기</string>
+    <string name="DREAM_GH_BUTTON_GAME_TOOLS_22">게임툴즈</string>
+    <string name="DREAM_GH_BUTTON_GO_TO_SETTINGS_15">설정으로 이동</string>
+    <string name="DREAM_GH_BUTTON_HARD_PRESS_HOME_BUTTON_25">홈 버튼 세게 누르기</string>
+    <string name="DREAM_GH_BUTTON_HIDE_31">숨기기</string>
+    <string name="DREAM_GH_BUTTON_HIGH_PERFORMANCE_22">고성능</string>
+    <string name="DREAM_GH_BUTTON_INSTALLING_ING_14">설치 중...</string>
+    <string name="DREAM_GH_BUTTON_MUTE_GAME_22">게임 소리 끄기</string>
+    <string name="DREAM_GH_BUTTON_NEXT_9">다음</string>
+    <string name="DREAM_GH_BUTTON_NORMAL_PERFORMANCE_22">일반 성능</string>
+    <string name="DREAM_GH_BUTTON_OK_8">확인</string>
+    <string name="DREAM_GH_BUTTON_OPEN_MUTED_24">무음으로 실행</string>
+    <string name="DREAM_GH_BUTTON_RESET_8">초기화</string>
+    <string name="DREAM_GH_BUTTON_RESTART_22">다시 실행</string>
+    <string name="DREAM_GH_BUTTON_RESTART_8">다시 실행</string>
+    <string name="DREAM_GH_BUTTON_SAVE_POWER_22">절전</string>
+    <string name="DREAM_GH_BUTTON_SCREEN_TOUCH_LOCK_22">화면 터치 잠금</string>
+    <string name="DREAM_GH_BUTTON_SETTINGS_22">상세설정</string>
+    <string name="DREAM_GH_HEADER_ANNOUNCEMENTS">공지사항</string>
+    <string name="DREAM_GH_HEADER_GAMES">게임</string>
+    <string name="DREAM_GH_HEADER_GAME_TOOLS">게임툴즈</string>
+    <string name="DREAM_GH_HEADER_KEEP_NAVIGATION_BAR">탐색 표시줄 유지</string>
+    <string name="DREAM_GH_HEADER_OPEN_MUTED">무음으로 실행</string>
+    <string name="DREAM_GH_HEADER_OTHER">기타</string>
+    <string name="DREAM_GH_HEADER_OTHER_APPS">일반 앱</string>
+    <string name="DREAM_GH_HEADER_PRESSURE_TOUCH_LOCK">세게 누르기 잠금</string>
+    <string name="DREAM_GH_HEADER_RECOMMENDED_GAMES_FOR_SAMSUNG_DEX">Samsung DeX 추천 게임</string>
+    <string name="DREAM_GH_HEADER_RECORD">녹화</string>
+    <string name="DREAM_GH_HEADER_SHARE_VIA">공유</string>
+    <string name="DREAM_GH_HEADER_SHORTCUTS">바로가기</string>
+    <string name="DREAM_GH_HEADER_TERMS_AND_CONDITIONS">이용약관</string>
+    <string name="DREAM_GH_HEADER_TOUCH_LOCK">터치 잠금</string>
+    <string name="DREAM_GH_HEADER_TUNE_PERFORMANCE">성능 조정</string>
+    <string name="DREAM_GH_NPBODY_NO_APPS">앱이 없습니다</string>
+    <string name="DREAM_GH_NPBODY_NO_DATA_COLLECTED">수집된 데이터가 없습니다</string>
+    <string name="DREAM_GH_NPBODY_NO_GAMES_AVAILABLE">사용 가능한 게임 없음</string>
+    <string name="DREAM_GH_NPBODY_VERY_LOW_RESOLUTION_FRAME_RATE_P1SD_P2SS">매우 낮은 해상도, 프레임 속도 %1$d%2$s</string>
+    <string name="DREAM_GH_OPT_1080_PX">1080px</string>
+    <string name="DREAM_GH_OPT_360_PX">360px</string>
+    <string name="DREAM_GH_OPT_480_PX">480px</string>
+    <string name="DREAM_GH_OPT_540_PX">540px</string>
+    <string name="DREAM_GH_OPT_720_PX">720px</string>
+    <string name="DREAM_GH_OPT_ADD_TO_HOME_ABB">홈에 추가</string>
+    <string name="DREAM_GH_OPT_ALL_ABB2">모두</string>
+    <string name="DREAM_GH_OPT_ANNOUNCEMENTS_ABB">공지사항</string>
+    <string name="DREAM_GH_OPT_ANNOUNCEMENTS_ABB2">공지사항</string>
+    <string name="DREAM_GH_OPT_CAMERA">카메라</string>
+    <string name="DREAM_GH_OPT_DISPLAY_GAME_ICONS_IN_APPS_AND_GAME_LAUNCHER_ABB">앱스 화면과 게임런처에 게임 아이콘 표시</string>
+    <string name="DREAM_GH_OPT_GAME_ABB">게임</string>
+    <string name="DREAM_GH_OPT_GAME_DETAILS_ABB">게임 상세정보</string>
+    <string name="DREAM_GH_OPT_HERE_YOU_CAN_FIND_THE_MOST_PLAYED_GAMES_AND_RECOMMENDED_GAMES_BASED_ON_GALAXY_USERS_GAME_PLAY_DATA">여기에서 갤럭시 사용자의 게임 플레이 데이터를 바탕으로 가장 많이 플레이한 게임과 추천 게임을 찾을 수 있습니다.</string>
+    <string name="DREAM_GH_OPT_I_AGREE_TO_RECEIVE_MARKETING_INFORMATION">마케팅 정보를 받는 것에 동의합니다.</string>
+    <string name="DREAM_GH_OPT_I_AGREE_TO_RECEIVE_MARKETING_INFORMATION_HOPTIONAL">마케팅 정보를 받는 것에 동의합니다. (선택)</string>
+    <string name="DREAM_GH_OPT_I_HAVE_READ_AND_AGREE_TO_ALL_THE_TERMS_AND_CONDITIONS_ABOVE">위의 이용약관을 모두 읽었으며 이에 동의합니다.</string>
+    <string name="DREAM_GH_OPT_I_HAVE_READ_AND_AGREE_TO_THE_TERMS_OF_SERVICE_PRIVACY_POLICY_AND_RUNTIME_PERMISSION_ABOVE">위의 이용약관, 개인정보 처리방침, 실행 권한을 읽었으며 이에 동의합니다.</string>
+    <string name="DREAM_GH_OPT_LAST_30_DAYS_ABB2">최근 30일</string>
+    <string name="DREAM_GH_OPT_LAST_WEEK">최근 1주일</string>
+    <string name="DREAM_GH_OPT_LAST_WEEK_ABB">최근 1주일</string>
+    <string name="DREAM_GH_OPT_LIST_AS_GAME_ABB">게임으로 분류</string>
+    <string name="DREAM_GH_OPT_LIST_AS_OTHER_APP_ABB">일반 앱으로 분류</string>
+    <string name="DREAM_GH_OPT_MY_DIARY_ABB">내 다이어리</string>
+    <string name="DREAM_GH_OPT_MY_GAMES_ABB">내 게임</string>
+    <string name="DREAM_GH_OPT_NO_APPS_AVAILABLE_ABB">사용 가능한 앱 없음</string>
+    <string name="DREAM_GH_OPT_OPEN_SOURCE_LICENSES_ABB">오픈소스 라이선스</string>
+    <string name="DREAM_GH_OPT_RECORD_ABB">녹화</string>
+    <string name="DREAM_GH_OPT_SCREENSHOT_ABB">화면 캡처</string>
+    <string name="DREAM_GH_OPT_SCREEN_TOUCH_LOCK_ABB">화면 터치 잠금</string>
+    <string name="DREAM_GH_OPT_SELECT_IMAGE_ABB">이미지 선택</string>
+    <string name="DREAM_GH_OPT_TERMS_AND_CONDITIONS">이용약관</string>
+    <string name="DREAM_GH_OPT_USE_DEFAULT_ABB">기본값 사용</string>
+    <string name="DREAM_GH_PHEADER_ENABLE_GAME_LAUNCHER_Q">게임런처 사용</string>
+    <string name="DREAM_GH_PHEADER_RESTART_GAME_Q">게임 다시 실행</string>
+    <string name="DREAM_GH_PHEADER_SELECT_SHORTCUT">바로가기 선택</string>
+    <string name="DREAM_GH_PHEADER_SHOW_GAME_TOOLS_Q">게임툴즈 표시</string>
+    <string name="DREAM_GH_PHEADER_VIEW_FULL_SCREEN_Q">전체 화면으로 표시</string>
+    <string name="DREAM_GH_POP_ADDING_APP_ING">앱 추가 중...</string>
+    <string name="DREAM_GH_POP_CANT_SAVE_POWER_WHILE_PLAYING_A_GAME_IN_HD">게임을 HD로 실행하면 절전을 실행할 수 없습니다.</string>
+    <string name="DREAM_GH_POP_CHANGE_THE_APPS_THAT_CAN_APPEAR_ON_TOP">[맨 위에 표시되는 앱]을 변경하세요.</string>
+    <string name="DREAM_GH_POP_CLEAR_PS_HISTORY_Q">%s 기록을 삭제할까요?</string>
+    <string name="DREAM_GH_POP_DELETE_PD_VIDEOS_Q">동영상 %d개를 삭제할까요?</string>
+    <string name="DREAM_GH_POP_DELETE_PS_HISTORY_Q">%s 기록을 삭제할까요?</string>
+    <string name="DREAM_GH_POP_DELETE_VIDEO_Q">동영상을 삭제할까요?</string>
+    <string name="DREAM_GH_POP_DRAG_THE_GAME_TOOLS_ICON_TO_THE_DESIRED_LOCATION_ON_THE_LEFT_OR_RIGHT_SIDE_OF_THE_SCREEN">게임툴즈 아이콘을 화면 왼쪽이나 오른쪽 중 원하는 곳으로 끌어다 놓으세요.</string>
+    <string name="DREAM_GH_POP_ENABLE_GAME_TOOLS_Q">게임툴즈를 사용할까요?</string>
+    <string name="DREAM_GH_POP_FILE_SIZE_C_PD_MB_MSG">"파일 크기: %dMB
+
+Wi-Fi로 다운로드할 것을 권장합니다. 모바일 네트워크를 사용하면 추가요금이 부과될 수 있습니다."</string>
+    <string name="DREAM_GH_POP_GAME_ICONS_WILL_DISPLAY_IN_GAME_LAUNCHER_ONLY_YOU_CAN_CHANGE_THIS_OPTION_IN_GAME_LAUNCHER_SETTINGS">게임 아이콘을 게임런처에만 표시합니다. 이 옵션은 게임런처 설정에서 변경할 수 있습니다.</string>
+    <string name="DREAM_GH_POP_GET_NOTIFICATIONS_FOR_PROMOTIONS_AND_MARKETING_INFORMATION_FROM_PS">%s에서 프로모션과 마케팅 정보 알림을 받습니다.</string>
+    <string name="DREAM_GH_POP_HIDE_GAME_ICONS_ON_APPS_SCREEN_Q">앱스 화면에서 게임 아이콘을 숨길까요?</string>
+    <string name="DREAM_GH_POP_P1SS_UPDATE_IS_NEEDED_TO_USE_P2SS">%2$s 사용을 위해 %1$s 업데이트가 필요합니다.</string>
+    <string name="DREAM_GH_POP_RESET_SAVE_POWER_SETTING_TO_DEFAULT_Q">절전 설정을 기본값으로 초기화할까요?</string>
+    <string name="DREAM_GH_POP_RESTART_THE_GAME_TO_AVOID_SCREEN_DISTORTION_AND_ERRORS">화면 왜곡과 오류를 방지하려면 게임을 다시 실행하세요.</string>
+    <string name="DREAM_GH_POP_STOP_DOWNLOADING_PS_Q">%s 다운로드를 중지할까요?</string>
+    <string name="DREAM_GH_POP_THERE_ARE_NO_GAME_DETAILS_AVAILABLE">게임 정보가 없습니다.</string>
+    <string name="DREAM_GH_POP_THE_APP_WILL_CLOSE_TO_UPDATE_THE_LIST">목록을 업데이트하기 위해 앱을 종료합니다.</string>
+    <string name="DREAM_GH_POP_THE_GAME_LAUNCHER_ICON_WILL_BE_REMOVED_FROM_YOUR_HOME_SCREEN_AND_APPS_MSG">게임런처 아이콘을 홈 화면과 앱스 화면에서 삭제합니다. 설정에서 게임런처를 실행할 수 있습니다.</string>
+    <string name="DREAM_GH_POP_THIS_APP_WASNT_ADDED_AS_A_GAME_TO_USE_PS_FEATURES_ON_THE_APP_ADD_IT_AS_A_GAME">게임으로 추가되지 않은 앱입니다. %s 기능을 사용하려면 이 앱을 게임으로 추가해야 합니다.</string>
+    <string name="DREAM_GH_POP_TO_APPLY_YOUR_NEW_POWER_SETTINGS_RESTART_ANY_GAMES_THAT_ARE_CURRENTLY_RUNNING">새로운 전원 설정을 적용하려면 현재 실행 중인 게임을 다시 실행하세요.</string>
+    <string name="DREAM_GH_POP_TO_CHANGE_THE_SCREEN_VIEW_RESTART_YOUR_GAME">화면 보기를 변경하려면 게임을 다시 실행하세요.</string>
+    <string name="DREAM_GH_POP_TO_USE_GAME_LAUNCHER_YOU_NEED_TO_TURN_ON_APPS_THAT_CAN_APPEAR_ON_TOP_IN_GAME_LAUNCHER">게임런처를 사용하려면 게임런처에서 [맨 위에 표시되는 앱]을 켜야 합니다.</string>
+    <string name="DREAM_GH_POP_TO_VIEW_IN_FULL_SCREEN_RESTART_YOUR_GAME">전체 화면으로 보려면 게임을 다시 실행하세요.</string>
+    <string name="DREAM_GH_POP_TO_VIEW_IN_FULL_SCREEN_RESTART_YOUR_GAME_FULL_SCREEN_MODE_MAY_CAUSE_GAME_TO_DISPLAY_INCORRECTLY">전체 화면으로 보려면 게임을 다시 실행하세요. 일부 게임은 전체 화면 모드에서 그래픽이 올바로 표시되지 않을 수 있습니다.</string>
+    <string name="DREAM_GH_POP_TO_VIEW_RECORDED_GAMEPLAY_VIDEOS_ENABLE_GAME_LAUNCHER">게임 플레이 동영상을 녹화해서 보려면 게임런처를 사용하도록 설정하세요.</string>
+    <string name="DREAM_GH_POP_YOU_SELECTED_PD_VIDEOS">동영상 %d개를 선택했습니다.</string>
+    <string name="DREAM_GH_POP_YOU_WONT_SEE_GAME_ICONS_ON_THE_APPS_SCREEN">앱스 화면에 게임 아이콘이 표시되지 않습니다.</string>
+    <string name="DREAM_GH_SBODY_BATTERY_REMAINING_C_PDP" formatted="false">배터리 잔량: %d%</string>
+    <string name="DREAM_GH_SBODY_COMMA">,</string>
+    <string name="DREAM_GH_SBODY_ENHANCE_YOUR_GAME_EXPERIENCE_WITH_THE_HIGH_PERFORMANCE_SETTING_IN_GAME_LAUNCHER">게임런처에서 고성능으로 설정하여 더 쾌적하게 게임을 즐겨보세요.</string>
+    <string name="DREAM_GH_SBODY_ENJOY_A_FREE_GAME_FROM_SAMSUNG">삼성에서 제공하는 무료 게임을 즐겨보세요.</string>
+    <string name="DREAM_GH_SBODY_ENJOY_LONGER_GAMES_WITH_THE_SAVE_POWER_SETTING_IN_GAME_LAUNCHER">게임런처에서 절전으로 설정하여 더 오랫동안 게임을 즐겨보세요.</string>
+    <string name="DREAM_GH_SBODY_GAME_ICONS_ARE_SHOWN_ONLY_IN_GAME_LAUNCHER_ABB">게임 아이콘은 게임런처에만 표시됩니다.</string>
+    <string name="DREAM_GH_SBODY_GAME_ICONS_ON_APPS_ARE_SHOWN_ONLY_IN_GAME_LAUNCHER_ABB">앱스의 게임 아이콘은 게임런처에만 표시됩니다.</string>
+    <string name="DREAM_GH_SBODY_GAME_LAUNCHER_WAS_TURNED_ON_AUTOMATICALLY_MSG">게임을 한곳에서 관리할 수 있도록 게임런처가 자동으로 실행되었습니다. 설정에서 게임런처를 끌 수 있습니다.</string>
+    <string name="DREAM_GH_SBODY_GET_APP_NOTIFICATIONS_FROM_PS">%s에서 제공하는 앱 알림을 받습니다.</string>
+    <string name="DREAM_GH_SBODY_HANDY_FEATURES_TO_ENHANCE_GAMEPLAY">게임 플레이를 돕는 편리한 기능</string>
+    <string name="DREAM_GH_SBODY_MANAGE_ALL_YOUR_GAMES_IN_ONE_PLACE_AND_TRY_OUT_COOL_FEATURES">모든 게임을 한곳에서 관리하고 유용한 기능을 사용해보세요.</string>
+    <string name="DREAM_GH_SBODY_MANAGE_AND_LAUNCH_YOUR_GAMES_WITH_GAME_LAUNCHER">게임런처로 게임을 관리하고 실행하세요.</string>
+    <string name="DREAM_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_FROM_YOUR_PHONE_MAY_ALSO_BE_RECORDED">게임 소리를 녹음합니다. 휴대전화의 시스템 소리도 게임 소리와 함께 녹음될 수 있습니다.</string>
+    <string name="DREAM_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_FROM_YOUR_TABLET_MAY_ALSO_BE_RECORDED">게임 소리를 녹음합니다. 태블릿의 시스템 소리도 게임 소리와 함께 녹음될 수 있습니다.</string>
+    <string name="DREAM_GH_SBODY_RECORD_GAMEPLAY_WITHOUT_A_PROFILE">내 모습을 포함하지 않고 게임 화면만 녹화합니다.</string>
+    <string name="DREAM_GH_SBODY_RECORD_YOURSELF_DURING_GAMEPLAY">게임 실행 중에 내 모습을 녹화합니다.</string>
+    <string name="DREAM_GH_SBODY_SEE_THE_CURRENT_APP_VERSION_AND_LEGAL_INFORMATION">현재 앱 버전 및 법률정보를 확인할 수 있습니다.</string>
+    <string name="DREAM_GH_SBODY_SHOW_GAME_ICONS_ONLY_IN_GAME_LAUNCHER">게임 아이콘을 게임런처에만 표시합니다.</string>
+    <string name="DREAM_GH_SBODY_TAP_HERE_TO_GET_STARTED">시작하려면 여기를 누르세요.</string>
+    <string name="DREAM_GH_SBODY_YOUR_PHONE_TEMPERATURE_IS_HIGH_SO_THE_BRIGHTNESS_OF_THE_SCREEN_HAS_BEEN_REDUCED">휴대전화 온도가 너무 높아 화면 밝기를 줄였습니다.</string>
+    <string name="DREAM_GH_TAB_GAMES_PLAYED">실행한 게임</string>
+    <string name="DREAM_GH_TAB_GAMES_PLAYED_ABB">실행한 게임</string>
+    <string name="DREAM_GH_TAB_VIDEOS_RECORDED">녹화한 동영상</string>
+    <string name="DREAM_GH_TAB_VIDEOS_RECORDED_ABB">녹화한 동영상</string>
+    <string name="DREAM_GH_TBBODY_CHECK_BOX">체크박스</string>
+    <string name="DREAM_GH_TBBODY_SLIDER">슬라이더</string>
+    <string name="DREAM_GH_TMBODY_ABOUT_GAME_TOOLS">게임툴즈 정보</string>
+    <string name="DREAM_GH_TMBODY_APP_NOTIFICATIONS">앱 알림</string>
+    <string name="DREAM_GH_TMBODY_CHECK_OUT_GAME_LAUNCHER">게임런처 확인하기</string>
+    <string name="DREAM_GH_TMBODY_GAME_ICONS_AUTO_DISPLAY">게임 아이콘 자동 표시</string>
+    <string name="DREAM_GH_TMBODY_GAME_ICON_DISPLAY">게임 아이콘 표시</string>
+    <string name="DREAM_GH_TMBODY_GAME_TOOLS">게임툴즈</string>
+    <string name="DREAM_GH_TMBODY_HARD_PRESS_BUTTON_LOCK">버튼 세게 누르기 잠금</string>
+    <string name="DREAM_GH_TMBODY_HARD_PRESS_HOME_BUTTON_LOCK">홈 버튼 세게 누르기 잠금</string>
+    <string name="DREAM_GH_TMBODY_HIDE_GAMES_ON_APPS_ABB">앱스에서 게임 숨기기</string>
+    <string name="DREAM_GH_TMBODY_HIDE_GAMES_ON_HOME_AND_APPS_ABB">홈과 앱스에서 게임 숨기기</string>
+    <string name="DREAM_GH_TMBODY_MARKETING_INFORMATION">마케팅 정보</string>
+    <string name="DREAM_GH_TMBODY_MY_QUESTIONS">내 문의내역</string>
+    <string name="DREAM_GH_TMBODY_NO_ALERTS_DURING_GAMES">게임 중 방해금지</string>
+    <string name="DREAM_GH_TMBODY_RECORD_VIDEOS">동영상 녹화</string>
+    <string name="DREAM_GH_TMBODY_SCREEN_TOUCH_LOCK_TURNED_ON">화면 터치 잠금 켜짐</string>
+    <string name="DREAM_GH_TMBODY_SHORTCUTS">바로가기</string>
+    <string name="DREAM_GH_TMBODY_SHOW_EDGE_TOUCH_LOCK">엣지 터치 잠금 표시</string>
+    <string name="DREAM_GH_TMBODY_SHOW_PRESSURE_TOUCH_LOCK">세게 누르기 잠금 표시</string>
+    <string name="DREAM_GH_TMBODY_SHOW_TOUCH_LOCK">터치 잠금 표시</string>
+    <string name="DREAM_GH_TMBODY_TRY_GAME_LAUNCHER">게임런처 사용해보기</string>
+    <string name="DREAM_GH_TPOP_APP_CAN_ONLY_BE_DISPLAYED_IN_FULL_SCREEN">이 앱은 전체 화면으로만 표시해서 사용할 수 있습니다.</string>
+    <string name="DREAM_GH_TPOP_BATTERY_LOW_RECORDING_STOPPED_AND_SAVED">배터리가 부족합니다. 녹화를 중지하고 저장했습니다.</string>
+    <string name="DREAM_GH_TPOP_CANT_CONNECT_TO_SERVER_TRY_AGAIN_LATER">서버에 연결할 수 없습니다. 나중에 다시 시도하세요.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_CAMERA_IN_USE">카메라를 사용 중이어서 녹화할 수 없습니다.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_GAME_AUDIO_VOLUME_MUTED">무음으로 설정되어 게임 소리를 녹음할 수 없습니다.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_LOW_BATTERY">배터리가 부족하여 녹화할 수 없습니다.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_MICROPHONE_IN_USE">마이크를 사용 중이어서 녹음할 수 없습니다.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VIDEOS_LARGER_THAN_P1SD_P2SS_RECORDING_STOPPED_AND_SAVED">%1$d%2$s 이상의 동영상은 녹화할 수 없습니다. 녹화를 중지하고 저장했습니다.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VIDEO_TRY_AGAIN_LATER">동영상을 녹화할 수 없습니다. 나중에 다시 시도하세요.</string>
+    <string name="DREAM_GH_TPOP_CANT_RECORD_VOICE_GAME_AUDIO_VOLUME_TOO_HIGH">게임 소리를 너무 크게 설정되어 음성을 녹음할 수 없습니다.</string>
+    <string name="DREAM_GH_TPOP_CANT_USE_GAME_LAUNCHER_FEATURES_WITH_NON_GAME_APPS_TO_USE_THESE_FEATURES_PRESS_AND_HOLD_APP_TO_LIST_AS_GAME">게임이 아닌 앱에는 게임런처 기능을 사용할 수 없습니다. 기능을 사용하려면 앱을 길게 눌러 게임으로 분류하세요.</string>
+    <string name="DREAM_GH_TPOP_CANT_USE_GAME_LAUNCHER_WITH_NON_GAME_APPS_TO_USE_FEATURES_PRESS_AND_HOLD_APP_TO_LIST_AS_GAME">게임이 아닌 앱에는 게임런처를 사용할 수 없습니다. 기능을 사용하려면 앱을 길게 눌러 게임으로 분류하세요.</string>
+    <string name="DREAM_GH_TPOP_CANT_USE_P1SS_SET_NOTIFICATIONS_TO_ALLOW_P2SS_PERMISSION_PERMISSIONS">%1$s을(를) 사용할 수 없습니다. 알림에서 %2$s 권한을 허용하세요.</string>
+    <string name="DREAM_GH_TPOP_CANT_USE_PS_IN_SAMSUNG_DEX">Samsung DeX에서는 %s 항목을 사용할 수 없습니다.</string>
+    <string name="DREAM_GH_TPOP_COULDNT_DOWNLOAD_PS">%s 언어를 다운로드하지 못했습니다.</string>
+    <string name="DREAM_GH_TPOP_COULDNT_INSTALL_PS">%s 앱을 설치할 수 없습니다.</string>
+    <string name="DREAM_GH_TPOP_COULDNT_TAKE_SCREENSHOT_DELETE_SOME_FILES_AND_TRY_AGAIN">화면을 캡처할 수 없습니다. 일부 파일을 삭제하고 다시 시도하세요.</string>
+    <string name="DREAM_GH_TPOP_GAME_DISCOVERY_NOT_AVAILABLE_IN_THIS_COUNTRY_YET">현재 국가에서는 아직 게임의 발견을 사용할 수 없습니다.</string>
+    <string name="DREAM_GH_TPOP_GAME_ICON_MOVED_TO_GAME_LAUNCHER">게임 아이콘을 게임런처로 이동했습니다.</string>
+    <string name="DREAM_GH_TPOP_GAME_LAUNCHER_FEATURES_ARENT_AVAILABLE_FOR_PS_IT_CAN_TAKE_UP_TO_5_SECONDS_TO_APPLY_CHANGES">%s에서는 게임런처 기능을 사용할 수 없습니다. 변경 사항을 적용하는 데 5초 정도 걸립니다.</string>
+    <string name="DREAM_GH_TPOP_GAME_LAUNCHER_FEATURES_ARE_AVAILABLE_FOR_PS_IT_CAN_TAKE_UP_TO_5_SECONDS_TO_APPLY_CHANGES">%s에서는 게임런처 기능을 사용할 수 있습니다. 변경 사항을 적용하는 데 5초 정도 걸립니다.</string>
+    <string name="DREAM_GH_TPOP_GAME_LAUNCHER_TURNED_ON_ABB">게임런처를 켰습니다.</string>
+    <string name="DREAM_GH_TPOP_GAME_SHOWN_IN_FULL_SCREEN_VIEW_IF_IT_DOESNT_LOOK_RIGHT_TURN_OFF_FULL_SCREEN">게임을 전체 화면 보기로 표시합니다. 제대로 표시되지 않으면 전체 화면 보기를 끄세요.</string>
+    <string name="DREAM_GH_TPOP_MUTE_GAME_OFF">게임 소리를 껐습니다.</string>
+    <string name="DREAM_GH_TPOP_NOT_ENOUGH_SPACE_TO_CONTINUE_RECORDING_VIDEO_SAVED">저장공간이 부족하여 녹화를 계속할 수 없습니다. 동영상을 저장했습니다.</string>
+    <string name="DREAM_GH_TPOP_NOT_ENOUGH_SPACE_TO_RECORD_VIDEO_DELETE_SOME_FILES_AND_TRY_AGAIN">저장공간이 부족하여 동영상을 녹화할 수 없습니다. 일부 파일을 삭제한 후 다시 시도하세요.</string>
+    <string name="DREAM_GH_TPOP_NO_ALERTS_DURING_GAMES_ENABLED_MSG">게임 중 방해금지를 사용합니다. 게임 중에는 알림 소리를 끄고 알림을 표시하지 않습니다. 수신전화만 화면에 표시합니다.</string>
+    <string name="DREAM_GH_TPOP_NO_LONGER_ON_GAME_SCREEN_RECORDING_STOPPED_AND_SAVED">게임 화면이 아닙니다. 녹화를 중지하고 저장했습니다.</string>
+    <string name="DREAM_GH_TPOP_P1SS_LISTED_AS_GAME_P2SS_FEATURES_AVAILABLE">%1$s 앱은 게임으로 분류된 앱입니다. %2$s 기능을 사용할 수 있습니다.</string>
+    <string name="DREAM_GH_TPOP_P1SS_MARKETING_INFORMATION_TURNED_OFF_ON_P2SS">%2$s에 %1$s 마케팅 정보 수신을 껐습니다.</string>
+    <string name="DREAM_GH_TPOP_P1SS_MARKETING_INFORMATION_TURNED_ON_ON_P2SS">%2$s에 %1$s 마케팅 정보 수신을 켰습니다.</string>
+    <string name="DREAM_GH_TPOP_PS_ENABLED">%s 기능을 사용합니다.</string>
+    <string name="DREAM_GH_TPOP_PS_INSTALLED">%s 설치를 완료했습니다.</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_AFTER_PD_SECONDS_VIDEO_NOT_SAVED">녹화 시간(%d초)이 너무 짧아 동영상이 저장되지 않았습니다.</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_BECAUSE_OF_PROBLEM_WITH_PHONE_VIDEO_NOT_SAVED">휴대전화에서 오류가 발생하여 녹화가 중지되었습니다. 동영상이 저장되지 않았습니다.</string>
+    <string name="DREAM_GH_TPOP_RECORDING_STOPPED_BECAUSE_OF_PROBLEM_WITH_TABLET_VIDEO_NOT_SAVED">태블릿에서 오류가 발생하여 녹화가 중지되었습니다. 동영상이 저장되지 않았습니다.</string>
+    <string name="DREAM_GH_TPOP_SCREEN_VIEW_CANT_BE_CHANGED_RIGHT_NOW">지금은 화면 보기를 변경할 수 없습니다.</string>
+    <string name="DREAM_GH_TPOP_SEE_RECORDED_VIDEO_IN_GAME_LAUNCHER">게임런처에서 녹화한 동영상을 확인하세요.</string>
+    <string name="DREAM_GH_TPOP_TAP_HERE_TO_TURN_OFF_MUTE_GAME_ABB">게임 소리를 켜려면 여기를 누르세요.</string>
+    <string name="DREAM_GH_TPOP_THIS_GAME_CANT_BE_LAUNCHED_IN_SAMSUNG_DEX_MODE">이 게임은 Samsung DeX 모드에서 실행할 수 없습니다.</string>
+    <string name="DREAM_GH_TPOP_THIS_NAVIGATION_BAR_IS_ALWAYS_DISPLAYED_FOR_THE_CURRENT_GAME_SOME_GAME_SCREENS_MAY_OVERLAP">현재 게임에서 네비게이션 바를 항상 표시합니다. 일부 게임 화면에서는 겹쳐 보일 수 있습니다.</string>
+    <string name="DREAM_GH_TPOP_VOICE_MAY_NOT_BE_RECORDED_IF_GAME_VOLUME_TOO_HIGH">게임 소리가 너무 크면 음성이 녹음되지 않을 수 있습니다.</string>
+    <string name="DREAM_IDLE_ACBUTTON_USE_MOBILE_NETWORK_20">모바일 네트워크 사용</string>
+    <string name="DREAM_IDLE_ACBUTTON_WI_FI_SETTINGS_20">Wi-Fi 설정</string>
+    <string name="DREAM_IDLE_BODY_CANT_CHECK_FOR_UPDATES_YOUR_PHONE_ISNT_CONNECTED_TO_A_NETWORK">업데이트를 확인할 수 없습니다. 휴대전화가 네트워크에 연결된 상태가 아닙니다.</string>
+    <string name="DREAM_IDLE_OPT_DISCLAIMER">주의사항</string>
+    <string name="DREAM_IDLE_OPT_DONT_ASK_AGAIN_AFTER_TAPPING_PS_CHN">%s 버튼 누르면 다시 묻지 않기</string>
+    <string name="DREAM_IDLE_OPT_OPEN_SOURCE_LICENSES">오픈소스 라이선스</string>
+    <string name="DREAM_IDLE_OPT_PRIVACY_POLICY">개인정보 처리방침</string>
+    <string name="DREAM_IDLE_OPT_TERMS_AND_CONDITIONS">이용약관</string>
+    <string name="DREAM_IDLE_PHEADER_NO_NETWORK_CONNECTION">연결된 네트워크 없음</string>
+    <string name="DREAM_IDLE_PHEADER_TURN_OFF_AIRPLANE_MODE">비행기 탑승 모드 해제</string>
+    <string name="DREAM_IDLE_PHEADER_TURN_ON_MOBILE_DATA_Q">모바일 데이터 실행</string>
+    <string name="DREAM_IDLE_PHEADER_USE_DATA_ROAMING_Q">데이터 로밍 사용</string>
+    <string name="DREAM_IDLE_PHEADER_USE_MOBILE_DATA_Q">모바일 데이터 사용</string>
+    <string name="DREAM_IDLE_POP_CONNECT_TO_A_WI_FI_NETWORK_OR_TURN_ON_DATA_ROAMING">Wi-Fi 네트워크에 연결하거나 데이터 로밍 기능을 실행하세요.</string>
+    <string name="DREAM_IDLE_POP_CONNECT_TO_A_WI_FI_NETWORK_OR_TURN_ON_MOBILE_DATA">Wi-Fi 네트워크에 연결하거나 모바일 데이터 기능을 실행하세요.</string>
+    <string name="DREAM_IDLE_POP_COULDNT_FIND_ANY_AVAILABLE_NETWORKS">연결 가능한 네트워크를 찾지 못했습니다.</string>
+    <string name="DREAM_IDLE_POP_THERE_ISNT_ENOUGH_SPACE_IN_YOUR_PHONES_INTERNAL_STORAGE_DELETE_SOME_FILES_OR_UNINSTALL_UNUSED_APPS_THEN_TRY_UPDATING_MSG">휴대전화 내장 메모리에 저장공간이 부족합니다. 일부 파일 또는 사용하지 않는 앱을 삭제한 후, 앱 스토어에서 업데이트를 다운로드하여 다시 시도하세요.</string>
+    <string name="DREAM_IDLE_POP_USING_MOBILE_DATA_WHILE_ROAMING_MAY_RESULT_IN_ADDITIONAL_CHARGES">로밍 중에 모바일 데이터를 사용하면 추가요금이 부과될 수 있습니다.</string>
+    <string name="DREAM_IDLE_POP_YOUR_PHONE_ISNT_CONNECTED_TO_A_WI_FI_NETWORK_TO_USE_A_MOBILE_NETWORK_INSTEAD_TURN_OFF_AIRPLANE_MODE_IN_SETTINGS">휴대전화가 Wi-Fi 네트워크에 연결되지 않았습니다. 모바일 네트워크에 연결하려면 설정에서 비행기 탑승 모드를 해제하세요.</string>
+    <string name="DREAM_IDLE_POP_YOUR_PHONE_ISNT_CONNECTED_TO_A_WI_FI_NETWORK_USING_MOBILE_DATA_MAY_RESULT_IN_ADDITIONAL_CHARGES">휴대전화가 Wi-Fi 네트워크에 연결되어 있지 않습니다. 모바일 네트워크를 사용하면 추가요금이 부과될 수 있습니다.</string>
+    <string name="DREAM_MARSH_BUTTON_CLOSE_8">닫기</string>
+    <string name="DREAM_MARSH_TPOP_P1SS_CANT_BE_LAUNCHED_IN_P2SS">%2$s에서는 %1$s 앱을 사용할 수 없습니다.</string>
+    <string name="DREAM_ST_TMBODY_HARD_PRESS_HOME_BUTTON">홈 버튼 세게 누르기</string>
+    <string name="DREAM_WIFI_SBODY_PD_MBPS">%dMbps</string>
+    <string name="IDS_COM_BODY_GAME">게임</string>
+    <string name="IDS_COM_BODY_REQUEST">요청</string>
+    <string name="IDS_COM_BUTTON_ADD">추가</string>
+    <string name="IDS_COM_BUTTON_SAVE">저장</string>
+    <string name="IDS_COM_POP_UNABLE_TO_FIND_ITEM_ABB">항목을 찾을 수 없습니다.</string>
+    <string name="IDS_COM_SK_SAVE_LITE">저장</string>
+    <string name="IDS_ES_BODY_UNABLE_TO_OPEN_PS_WHILE_EASY_MODE_ENABLED">쉬운 사용 모드 실행 중에는 %s 항목을 실행할 수 없습니다.</string>
+    <string name="IDS_GCTS_OPT_DIMMED_TTS">사용할 수 없음</string>
+    <string name="IDS_GFW_BODY_SEARCHING_ING">검색 중...</string>
+    <string name="IDS_IDLE_BODY_A_NEW_VERSION_IS_AVAILABLE">최신 버전이 있습니다.</string>
+    <string name="IDS_IDLE_BODY_THE_LATEST_VERSION_IS_ALREADY_INSTALLED">최신 버전입니다.</string>
+    <string name="IDS_IDLE_BODY_VERSION_PS">버전 %s</string>
+    <string name="IDS_IDLE_BUTTON_RETRY_ABB6">다시 시도</string>
+    <string name="IDS_IDLE_BUTTON_UPDATE_ABB8">업데이트</string>
+    <string name="IDS_IDLE_HEADER_ABOUT_PS">%s 정보</string>
+    <string name="IDS_IDLE_HEADER_DOWNLOAD_VIA_MOBILE_NETWORK">모바일 네트워크로 다운로드</string>
+    <string name="IDS_IDLE_HEADER_UNABLE_TO_ADD">추가할 수 없음</string>
+    <string name="IDS_IDLE_HEADER_UNABLE_TO_UPDATE_APPS">앱을 업데이트할 수 없음</string>
+    <string name="IDS_IDLE_HEADER_USE_NETWORK_CONNECTIONS">네트워크 연결 사용</string>
+    <string name="IDS_IDLE_MBODY_UNABLE_TO_USE_PS">%s 기능을 사용할 수 없음</string>
+    <string name="IDS_IDLE_POP_A_NETWORK_ERROR_HAS_OCCURRED_TAP_RETRY_TO_TRY_AGAIN_OR_DOWNLOAD_THE_UPDATES_LATER_FROM_AN_APP_STORE">네트워크 오류가 발생했습니다. 다시 시도 버튼을 눌러 다시 시도하거나, 나중에 앱 스토어에서 다운로드하세요.</string>
+    <string name="IDS_IDLE_POP_PS_NEEDS_TO_USE_NETWORK_CONNECTIONS_TO_WORK_NORMALLY_ALLOW_Q">%s 앱이 정상적으로 작동하려면 네트워크 연결이 필요합니다. 허용할까요?</string>
+    <string name="IDS_IDLE_POP_SOME_OF_PSS_FEATURES_NEED_TO_USE_NETWORK_CONNECTIONS_TO_WORK_NORMALLY_ALLOW_Q">%s 앱의 일부 기능이 정상적으로 작동하려면 네트워크 연결이 필요합니다. 허용할까요?</string>
+    <string name="IDS_IDLE_POP_TURN_ON_MOBILE_DATA_TO_USE_A_MOBILE_NETWORK_OR_DOWNLOAD_THE_UPDATES_LATER_FROM_AN_APP_STORE">모바일 네트워크를 사용하려면 모바일 데이터 기능을 실행하거나, 나중에 앱 스토어에서 업데이트를 다운로드하세요.</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s 앱을 실행할 수 없습니다. 상세설정 버튼을 눌러 [애플리케이션 정보 > 권한]에서 다음 권한을 허용한 후 다시 시도하세요.</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_USE_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_MSG">%s 기능을 사용할 수 없습니다. 상세설정 버튼을 누르고 [애플리케이션 정보 > 권한]에서 다음 권한을 허용한 후 다시 시도하세요.</string>
+    <string name="IDS_IDLE_POP_YOUR_DEVICE_IS_NOT_CONNECTED_TO_A_WI_FI_NETWORK_DOWNLOADING_VIA_MOBILE_NETWORKS_MAY_MSG">디바이스가 Wi-Fi 네트워크에 연결되지 않았습니다. 모바일 네트워크로 다운로드하면 요금제에 따라 추가요금이 부과될 수 있습니다.</string>
+    <string name="IDS_IDLE_SBODY_TO_USE_PS_TAP_SETTINGS_GO_TO_APPLICATION_INFO_PERMISSIONS_THEN_ALLOW_THE_FOLLOWING_PERMISSIONS_C">%s 기능을 사용하려면 상세설정 버튼을 누른 후 [애플리케이션 정보 > 권한]에서 다음 권한을 허용하세요.</string>
+    <string name="IDS_IV_BODY_MY_DEVICE">내 디바이스</string>
+    <string name="IDS_PB_SBODY_ALLOW_STORAGE_PERMISSION_TO_USE_ABB">사용하려면 저장공간 권한을 허용하세요.</string>
+    <string name="IDS_SMEMO_OPT_MOVE_UP">위로 이동</string>
+    <string name="IDS_ST_BODY_I_AGREE">동의합니다.</string>
+    <string name="IDS_ST_BUTTON_OFF_ABB_M_DISABLED">사용 안 함</string>
+    <string name="IDS_ST_BUTTON_ON_ABB_M_ENABLED">사용 중</string>
+    <string name="IDS_ST_HEADER_GAME_MODE">게임 모드</string>
+    <string name="IDS_ST_OPT_APPS_THAT_CAN_APPEAR_ON_TOP">다른 앱 위에 표시되는 앱</string>
+    <string name="IDS_ST_TPOP_CANT_CHANGE_THIS_SETTING_WHILE_PS_IS_ON">%s 적용 중에는 이 설정을 변경할 수 없습니다.</string>
+    <string name="IDS_ST_TPOP_TO_UNPIN_APPLICATION_PRESS_AND_HOLD_THE_RECENTS_AND_BACK_KEYS_AT_THE_SAME_TIME">앱 고정을 해제하려면, 최근 앱 버튼과 뒤로가기 버튼을 동시에 길게 누르세요.</string>
+    <string name="IDS_SYS_BODY_CODE_GENERATION_VER">20170629_0707</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P1">개인정보 수집·이용 동의서(게임런처 용)</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P10">"회사는 개인정보처리방침의 지속적인 개선을 위하여 개인정보처리방침을 개정하는데 필요한 절차를 정하고 있습니다. 그리고 개인정보처리방침을 개정하는 경우 버전번호 등을 부여하여 개정된 사항을 쉽게 알아볼 수 있도록 하고 있습니다.
+본 방침은 2016년 8월 8일부터 시행되며, 이를 개정하는 경우 웹사이트 공지사항(또는 서면·이메일·전화·SMS 등의 방법으로 개별공지)을 통하여 공지하겠습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P11">"1. 수집하는 개인정보의 항목 및 수집방법
+(1) 수집하는 개인정보의 항목
+회사는 최초 회원 가입 또는 서비스 이용 시 이용자로부터 아래와 같은 개인정보를 수집하고 있습니다.
+필수항목
+단말모델정보, 기기식별자(UUID), IP주소, 단말OS정보, 시간대(TimeZone), MCC, MNC, 환경설정정보, 단말에 설치한 어플리케이션 패키지명, 서비스 이용기록
+회사는 이용자의 사생활을 현저히 침해할 우려가 민감정보(사상·신념, 노동조합·정당의 가입·탈퇴, 정치적 견해, 건강, 성생활 등에 관한 정보 등)는 수집하지 않습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P12">"회사는 원칙적으로 이용자가 만 14세 미만자일 경우 개인정보를 수집하지 않습니다.
+부득이 서비스 이용을 위하여 만 14세 미만자의 개인정보를 수집할 때에는, 사전에 법정대리인의 동의를 구하고 관련 업무가 종료됨과 동시에 정보를 지체 없이 파기토록 하겠으며 업무가 진행되는 동안 개인정보를 철저히 관리토록 하겠습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P13">"(2) 개인정보 수집방법
+게임런처 서비스를 실행 또는 사용하는 과정에서 수집
+이용자 단말을 통한 수집
+경품행사 응모 및 이벤트 참여
+생성정보 수집 툴을 통한 수집
+회사는 이용자께서 회사의 개인정보 수집·이용 동의서 각각의 내용에 대해 “동의” 또는 “동의하지 않음”을 선택할 수 있는 절차를 마련하고 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P14">"2. 개인정보의 수집 및 이용목적
+회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.
+(1)서비스 제공에 관한 계약 이행
+설치한 게임 어플리케이션을 게임폴더에 자동으로 분류
+게임 절전 모드, 게임 중 방해금지, 게임툴즈 등 유용한 기능 제공
+이용자에게 최적화된 서비스 제공(과거 서비스 이용내역에 기반한 맞춤형 컨텐츠 및 추천정보 등 제공
+(2)서비스 개선 및 광고, 마케팅 등에 활용
+통계분석 및 시장 트렌드 유추, 서비스 개선 및 신규 서비스 연구∙개발
+이벤트 등 광고성 정보 전달, 인구통계학적 특성에 따른 서비스 및 광고 제공"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P15">"3. 개인정보의 보유 및 이용기간
+원칙적으로, 회사는 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.
+단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우, 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다. 이 경우 회사는 해당 개인정보를 별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여 보존합니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P16">"계약 또는 청약철회 등에 관련 기록 : 5년 (전자상거래 등에서의 소비자보호에 관한 법률)
+대금결제 및 재화 등의 공급에 관한 기록 : 5년 (전자상거래 등에서의 소비자보호에 관한 법률)
+소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 (전자상거래 등에서의 소비자보호에 관한 법률)
+신용정보의 수집/처리 및 이용 등에 관한 기록 : 3년 (신용정보의 이용 및 보호에 관한 법률)
+표시/광고에 관한 기록 : 6개월 (전자상거래 등에서의 소비자보호에 관한 법률)
+이용자의 인터넷 등 로그기록/ 이용자의 접속지 추적자료 : 3개월 (통신비밀보호법)
+그 외의 통신사실 확인 자료 : 6개월 (통신비밀보호법)"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P17">"4. 개인정보의 파기 절차 및 파기방법
+개인정보 파기절차 및 방법은 다음과 같습니다.
+(1) 파기절차
+이용자의 개인정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기됩니다. 별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P18">"(2) 파기방법
+전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.
+종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P19">"5. 수집한 개인정보의 위탁 및 국외이전
+회사는 서비스 이행을 위해 아래와 같이 개인정보 처리 업무를 외부 전문업체에 위탁하여 처리하고 있습니다. 개인정보 처리위탁은 개별 서비스 별로 그 이행을 위해 필요한 경우에 한해 각 위탁업체에 대해 이루어집니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P2">"1. 수집하는 개인정보 항목
+삼성전자 주식회사(이하 ‘회사’라 합니다)는 최초 회원 가입 또는 서비스 이용시 이용자로부터 아래와 같은 개인정보를 수집하고 있습니다.
+이용자는 본 개인정보 수집·이용 동의서에 따른 동의 시, ‘필요한 최소한의 정보 외의 개인정보’ 수집·이용에 동의하지 아니할 권리가 있습니다.
+개인정보 처리에 대한 상세한 사항은 게임런처 설정 내 게임런처 정보 화면에 공개한 ‘개인정보 처리방침’을 참조하십시오. 다만, 본 동의서 내용과 상충되는 부분은 본 동의서의 내용이 우선합니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P20">"개인정보의 처리를 위탁하는 경우에는 개인정보 보호의 안전을 기하기 위하여 개인정보보호 관련 지시엄수, 개인정보에 대한 비밀유지, 제3자 제공의 금지 및 사고시의 책임부담, 위탁기간, 처리 종료 후의 개인정보의 반환 또는 파기 등을 명확히 규정하고, 위탁업체가 개인정보를 안전하게 처리하도록 감독합니다.
+업체, 위탁하는 업무의 내용이 변경될 경우, 웹사이트 공지사항(또는 서면·이메일·전화·SMS 등의 방법으로 개별공지)을 통하여 알려드리겠습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P21">"6. 제3자에게의 개인정보 제공
+회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.
+법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우
+유료 서비스 제공에 따른 요금 정산을 위하여 필요한 경우
+통계작성, 학술연구나 시장조사를 위해 특정 개인을 식별할 수 없는 형태로 가공하여 제공하는 경우
+이용자들이 사전에 동의한 경우
+이상에 기재된 내용 외에 이용자의 개인정보를 제공하거나 공유하는 경우에는 이에 대한 별도 이용자 동의를 구하는 절차를 거쳐 제공합니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P22">"7. 이용자 및 법정대리인의 권리와 그 행사방법
+이용자 및 법정대리인은 등록되어 있는 이용자 본인 혹은 당해 만 14세 미만자의 개인정보 관련하여, 언제든지 개인정보 열람/ 정정·삭제/ 처리정지/ 동의 철회를 요청할 수 있습니다.
+이를 위하여 대표전화(1588-3366) 또는 개인정보 보호책임자에게 서면, 전화 또는 이메일로 연락하시면 지체없이 조치하겠습니다.
+회사는 다음에 해당하는 경우에는 개인정보의 전부 또는 일부에 대하여 열람/ 정정·삭제를 거절할 수 있습니다.
+법률에 따라 열람이 금지되거나 제한되는 경우
+다른 사람의 생명·신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P23">"이용자가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제3자에게 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체없이 통지하겠습니다.
+회사는 이용자 혹은 법정대리인의 요청에 의해 삭제/ 처리정지된 개인정보는 “3. 개인정보의 보유 및 이용기간”에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P24">"이용자의 개인정보를 최신의 상태로 정확하게 입력하여 주시기 바랍니다. 이용자가 입력한 부정확한 정보로 인해 발생하는 사고의 책임은 이용자 자신에게 있으며 타인 정보의 도용 등 허위정보를 입력할 경우 회원자격이 상실될 수 있습니다.
+이용자는 개인정보를 보호 받을 권리와 함께 스스로를 보호하고 타인의 정보를 침해하지 않을 의무도 가지고 있습니다. 비밀번호를 포함한 이용자의 개인정보가 유출되지 않도록 조심하시고 게시물을 포함한 타인의 개인정보를 훼손하지 않도록 유의해 주십시오. 만약 이 같은 책임을 다하지 못하고 타인의 정보 및 존엄성을 훼손할 시에는 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등에 의해 처벌 받을 수 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P25">"8. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항
+(정보통신망 이용촉진 및 정보보호 등에 관한 법률 적용대상인 경우에 한하여 적용됩니다)
+회사는 이용자의 정보를 수시로 저장하고 찾아내는 ‘쿠키(cookie)’ 등을 운용합니다. 쿠키란 회사의 웹사이트를 운영하는데 이용되는 서버가 이용자의 브라우저에 보내는 아주 작은 텍스트 파일로, 이용자의 컴퓨터 하드디스크에 저장됩니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P26">"(1) 쿠키 등 사용 목적
+:자동로그인 기능 구현, 회원과 비회원의 접속 빈도나 방문 시간 등을 분석, 이용자의 취향과 관심분야를 파악 및 자취 추적, 각종 이벤트 참여 정도 및 방문 회수 파악 등을 통한 타겟 마케팅 및 개인 맞춤 서비스 제공
+(2) 쿠키 설정 거부 방법
+이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.
+단, 이용자께서 쿠키 설치를 거부하였을 경우 서비스 제공에 어려움이 있을 수 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P27">"쿠키설정 방법 (인터넷 익스플로러 8.0을 사용하고 있는 경우)
+: 「도구」 메뉴에서 「인터넷옵션」을 선택합니다. 「개인정보 탭」을 클릭합니다.
+「설정」을 이용하여 본인에게 맞는 쿠키허용 수준을 설정하시면 됩니다.
+받은 쿠키를 보는 방법 (익스플로러 8.0을 사용하고 있는 경우)
+: 「도구」 메뉴에서 「인터넷옵션」을 선택합니다.
+「일반」 탭을 클릭하여 ‘검색기록’의 「설정」으로 들어가서, 「파일보기」를 통해 확인합니다.
+쿠키 설정 거부 방법 (인터넷 익스플로어 8.0 사용하고 있는 경우)
+: 「도구」 메뉴에서 「인터넷옵션」을 선택합니다. 「개인정보 탭」을 클릭합니다.
+「설정」을 이용하여 상위레벨로 하여 “모든 쿠키차단”으로 설정하시면 됩니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P28">"9. 기타 개인정보 취급에 관한 방침
+(1) 개인정보 보호를 위한 기술적, 관리적 조치
+회사는 이용자의 개인정보를 취급함에 있어 개인정보가 분실, 도난, 유출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적, 관리적 조치를 강구하고 있습니다.
+내부관리계획의 수립 및 시행
+회사는 개인정보의 안전한 처리를 위하여 내부관리계획을 수립하고 시행하고 있습니다.
+회사는 사내 개인정보보호 전담기구 등을 통해 개인정보보호조치의 이행사항 및 담당자의 준수여부를 확인하여 문제 발견 시 즉시 시정 조치하도록 하고 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P29">"접근통제장치의 설치 및 운영
+회사는 침입차단시스템을 이용하여 외부로부터 무단 접근을 통제하고 있으며, 기타 시스템적으로 보안성을 확보하기 위하여 가능한 모든 기술적 장치를 갖추려 노력하고 있습니다.
+접속기록의 위조, 변조 방지를 위한 조치
+회사는 개인정보처리시스템에 접속한 기록을 보관, 관리하고 있으며, 접속기록이 위조, 변조되지 않도록 보안기능을 사용하고 있습니다.
+개인정보의 암호화
+이용자의 개인정보는 비밀번호에 의해 보호되며, 파일 및 전송 데이터를 암호화하거나 파일 잠금기능(Lock)을 사용하여 저장, 관리되며, 중요한 데이터는 별도의 보안기능을 통해 보호되고 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P3">"필수항목
+단말모델정보, 기기식별자(UUID), IP주소, 단말OS정보, 타임존, MCC, MNC, 환경설정정보, 단말에 설치한 어플리케이션 패키지명, 서비스 이용기록
+귀하께서는 필수항목 수집·이용에 대한 동의를 거부하실 수 있으나, 이는 서비스 제공에 필수적으로 제공되어야 하는 정보이므로, 동의를 거부하실 경우 서비스 이용을 하실 수 없습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P30">"해킹 등에 대비한 대책
+회사는 백신프로그램을 이용하여 컴퓨터바이러스에 의한 피해를 방지하기 위한 조치를 취하고 있습니다. 백신프로그램은 주기적으로 업데이트되며 갑작스런 바이러스가 출현할 경우 백신이 나오는 즉시 이를 제공함으로써 개인 정보가 침해되는 것을 방지하고 있습니다.
+회사는 암호알고리즘을 이용하여 네트워크 상의 개인정보를 안전하게 전송할 수 있는 보안장치(SSL)를 채택하고 있습니다.
+해킹 등 외부침입에 대비하여 각 서버마다 침입차단시스템 및 취약점 분석 시스템 등을 이용하여 보안에 만전을 기하고 있습니다.
+개인정보와 일반 데이터를 혼합하여 보관하지 않고 별도의 서버를 통해 분리하여 보관하고 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P31">"취급 직원의 최소화 및 교육
+회사는 이용자의 개인정보에 대한 접근권한을 이용자를 직접 상대로 하여 마케팅 업무를 수행하는 자, 개인정보보호책임자 및 담당자 등 개인정보관리업무를 수행하는 자, 기타 업무상 개인정보의 취급이 불가피한 자로 제한 하고 있습니다.
+개인정보를 취급하는 직원을 대상으로 새로운 보안 기술 습득 및 개인정보 보호 의무 등에 관해 정기적인 사내 교육 및 외부 위탁교육을 실시하고 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P32">"입사시 전 직원의 보안서약서를 통하여 사람에 의한 정보유출을 사전에 방지하고 개인정보보호정책에 대한 이행사항 및 직원의 준수여부를 감사하기 위한 내부절차를 마련하고 있습니다.
+개인정보 관련 취급자의 업무 인수인계는 보안이 유지된 상태에서 철저하게 이뤄지고 있으며 입사 및 퇴사후 개인정보 사고에 대한 책임을 명확화하고 있습니다.
+전산실 및 자료 보관실 등을 특별 보호구역으로 설정하여 출입을 통제하고 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P33">"(2) 링크사이트 제공 방침
+회사는 이용자에게 다른 회사의 웹사이트 또는 자료에 대한 링크를 제공할 수 있으며, 삼성서비스를 통해 제3자가 개발한 제품 및 서비스를 사용할 수 있습니다(예를 들어, 삼성앱스를 통해 제3자가 개발한 어플리케이션을 다운로드 받아 사용하는 경우 등).
+이 경우 회사는 제3자의 사이트, 자료, 제품 및 서비스에 대한 아무런 통제권이 없으므로 그로부터 제공받는 제품 및 서비스나 자료의 유용성에 대해 책임질 수 없으며 보증할 수 없습니다. 회사가 포함하고 있는 링크를 클릭(click)하여 타 사이트(site)의 페이지로 옮겨갈 경우 해당 사이트의 개인정보보호정책은 회사와 무관하므로 새로 방문한 사이트의 정책을 검토해 보시기 바랍니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P34">"(3) 게시물 운영 방침
+회사는 이용자의 게시물을 소중하게 생각하며 변조, 훼손, 삭제되지 않도록 최선을 다하여 보호합니다. 그러나 다음의 경우는 그렇지 아니합니다.
+스팸(spam)성 게시물
+타인을 비방할 목적으로 허위 사실을 유포하여 타인의 명예를 훼손하는 게시물
+동의 없는 타인의 신상공개 게시물
+회사 또는 제3자의 지적재산권 등 권리를 침해하는 내용의 게시물
+기타 게시판 주제와 다른 내용의 게시물"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P35">"회사는 바람직한 게시판 문화를 활성화하기 위하여 동의 없는 타인의 신상 공개시 특정 부분을 삭제하거나 기호 등으로 수정하여 게시할 수 있으며, 다른 주제의 게시판으로 이동 가능한 내용일 경우 해당 게시물에 이동 경로를 밝혀 오해가 없도록 하고 있습니다.
+그 외의 경우 명시적 또는 개별적인 경고 후 삭제 조치할 수 있습니다.
+근본적으로 게시물에 관련된 제반 권리와 책임은 작성자 개인에게 있습니다. 또 게시물을 통해 자발적으로 공개된 정보는 보호받기 어려우므로 정보 공개 전에 심사 숙고하시기 바랍니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P36">"(4) 이메일 무단수집 거부 방침
+회사는 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여 무단 수집되는 것을 거부합니다. 이를 위반 시 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」등에 의해 처벌 받을 수 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P37">"(5) 광고성 정보의 전송
+회사는 이용자의 명시적인 수신거부의사에 반하여 영리목적의 광고성 정보를 전송하지 않습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P38">"회사는 이용자가 상품정보 안내, 뉴스레터 등 이메일 전송에 대한 동의를 한 경우, 이메일 제목란 및 본문란에 다음 사항과 같이 이용자가 쉽게 알아 볼 수 있도록 조치합니다.
+이메일 제목란에는 광고라는 문구를 표시하지 않을 수 있으며 이메일 본문란의 주요 내용을 표시합니다.
+이메일 본문란에는 이용자가 수신거부의 의사표시를 할 수 있는 전송자의 명칭, 이메일 주소 및 전화번호를 명시하고, 이용자가 수신 거부의 의사를 쉽게 표시할 수 있는 방법을 명시합니다.
+팩스·휴대폰 문자전송 등 이메일 이외의 매체를 통해 영리목적의 광고성 정보를 전송하는 경우 관련 법령에 따라 전송내용 처음에 “광고” 문구를 표기하는 등 필요한 조치를 행합니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P39">"10. 개인정보 보호책임자 및 고객서비스 담당부서 등 안내
+회사는 이용자의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 관련 부서 및 개인정보보호책임자를 지정하고 있습니다.
+(1) 고객서비스 담당부서
+고객서비스 담당부서 : 삼성전자 무선사업부 Graphic개발그룹
+전화 : 1588-4730
+문의처 : https://help.content.samsung.com
+(2) 개인정보 보호책임자 및 개인정보 보호 업무 담당부서
+개인정보 보호책임자 : 개인정보보호사무국장
+관련 업무 담당부서 : 개인정보보호사무국
+전화 : 1588-4730
+문의처 : privacy.sec@samsung.com"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P4">"2. 개인정보의 수집 및 이용목적
+회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.
+(1)서비스 제공에 관한 계약 이행
+설치한 게임 어플리케이션을 게임폴더에 자동으로 분류
+게임 절전 모드, 게임 중 방해금지, 게임툴즈 등 유용한 기능 제공
+이용자에게 최적화된 서비스 제공(과거 서비스 이용내역에 기반한 맞춤형 컨텐츠 및 추천정보 등 제공
+(2)서비스 개선 및 광고, 마케팅 등에 활용
+통계분석 및 시장 트렌드 유추, 서비스 개선 및 신규 서비스 연구∙개발
+이벤트 등 광고성 정보 전달, 인구통계학적 특성에 따른 서비스 및 광고 제공"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P40">"(3) 기타 기관
+이용자는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보보호책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다.
+기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.
+개인정보침해신고센터 (www.118.or.kr/ 118)
+대검찰청 인터넷범죄수사센터 (www.spo.go.kr / 02-3480-3600)
+경찰청 사이버테러대응센터 (www.ctrc.go.kr / 02-392-0330)
+개인정보처리방침 버전번호 : V1.0
+개인정보처리방침 시행일자 : 2016년 8월 8일"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P5">"3. 개인정보의 보유 및 이용기간
+회원의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다.
+다만, 회사는 관련법령의 규정에 의하여 개인정보를 보유할 필요가 있는 경우, 해당 법령에서 정한 바에 의하여 아래와 같이 개인정보를 보유할 수 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P6">"계약 또는 청약철회 등에 관련 기록 : 5년 (전자상거래 등에서의 소비자보호에 관한 법률)
+대금결제 및 재화 등의 공급에 관한 기록 : 5년 (전자상거래 등에서의 소비자보호에 관한 법률)
+소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 (전자상거래 등에서의 소비자보호에 관한 법률)
+신용정보의 수집/처리 및 이용 등에 관한 기록 : 3년 (신용정보의 이용 및 보호에 관한 법률)
+표시/광고에 관한 기록 : 6개월 (전자상거래 등에서의 소비자보호에 관한 법률)
+이용자의 인터넷 등 로그기록/ 이용자의 접속지 추적자료 : 3개월 (통신비밀보호법)
+그 외의 통신사실 확인 자료 : 6개월 (통신비밀보호법)"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P7">개인정보처리방침(게임런처용)</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P8">"‘삼성전자 주식회사’(이하 ‘회사’라 합니다)는 이용자의 개인정보를 중요시하며, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」, 「개인정보보호법」을 준수하기 위하여 노력하고 있습니다.
+회사는 개인정보처리방침을 통하여 회사가 이용자로부터 제공받은 개인정보를 어떠한 용도와 방식으로 이용하고 있으며, 개인정보보호를 위해 어떠한 조치를 취하고 있는지 알려드립니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_LEGALHPRASE_KOR_P9">"0. 총칙
+“개인정보”란 생존하는 개인에 관한 정보로서 당해 정보에 포함되어 있는 성명, 주민등록번호 등의 사항에 의하여 당해 개인을 식별할 수 있는 정보(당해 정보만으로는 특정 개인을 식별할 수 없더라도 다른 정보와 용이하게 결합하여 식별할 수 있는 것을 포함)를 말합니다.
+회사는 본 개인정보처리방침을 게임런처 설정 내 게임런처 정보 화면에 공개함으로써 이용자께서 언제나 용이하게 보실 수 있도록 조치하고 있습니다."</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P1_LEGALHPRASE">"게임런처 - 개인정보 수집이용 안내
+본 개인정보 수집이용 안내에는 게임런처(이하 “서비스”)를 귀하에게 제공하기 위해 귀하의 정보를 수집, 사용, 공유하는 방법이 설명되어 있으므로 중요합니다. 삼성전자 주식회사(“삼성”, “당사”)는 이러한 정보에 대한 책임이 있으며, 본 개인정보 수집이용 안내에 따라 해당 정보를 수집, 사용, 공유해야 할 책임이 있습니다. 서비스를 사용하면 귀하는 본 개인정보 수집이용 안내의 조항에 무조건적으로 동의한 것으로 간주됩니다.
+본 개인정보 수집이용 안내는 삼성 개인정보 취급(처리)방침(https://account.samsung.com/membership/pp에서 확인 가능)을 보완하는 것으로, 본 개인정보 수집이용 안내와 삼성 개인정보 취급(처리)방침의 조항 간에 일치하지 않거나 상충되는 내용이 있을 경우, 본 개인정보 수집이용 안내의 조항이 우선권을 가집니다.
+본 개인정보 수집이용 안내 또는 당사의 방침에 관해 문의할 수 있는 연락처 정보는 아래에 명시되어 있습니다.
+"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P2_LEGALHPRASE">"수집 및 사용하는 정보의 유형
+당사는 귀하가 설치한 애플리케이션 명칭과 귀하가 실행하는 게임에 대한 정보를 수집할 수 있습니다. 이 정보는 다음과 같은 목적으로 사용될 수 있습니다.
+서비스 기능 제공
+본 서비스에서 귀하가 활동한 이력을 바탕으로 모바일 게임 맞춤 제안
+당사의 시장, 고객, 제품 및 서비스의 평가 및 분석
+서비스를 개선하고 새로운 서비스를 개발할 목적으로 이용자들의 본 서비스 사용 방식 파악"</string>
+    <string name="LDS_GB_BODY_GAME_LAUNCHER_PRIVACY_POLICY_P3_LEGALHPRASE">"정보 공개 대상
+당사는 귀하의 동의 없이 귀하의 정보를 제3자가 자체의 비즈니스 목적으로 사용하도록 공개하지 않습니다. 하지만 당사는 삼성을 대신해 서비스 제공 과정에 관여하는 제3자에게 귀하의 정보를 공개할 수 있습니다.
+문의처
+게임런처에 대해 궁금한 사항은 당사 고객 지원 채널을 통해 문의해 주십시오. 귀하의 정보와 관련하여 궁금한 사항은 다음으로 문의해 주시기 바랍니다.
+http://help.content.samsung.com
+"</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_CHINA">1. 라이선스 부여</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_OPEN">1. 권한 부여</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART10_LEGALPHASE_US">1. 라이선스 부여</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_CHINA">본 이용약관에 의해 사용자는 본 서비스를 설치, 사용, 액세스, 표시 및 실행할 수 있는 제한적이고 비독점적인 라이선스 사용권한을 허여받습니다. 서비스 또는 서비스 업데이트에 의해 제공되는 서비스와 기능(아래에 정의)은 귀하의 거주국이나 지역, 디바이스, 운영 체제 또는 네트워크 사업자 등 특정 요인에 따라 달라지거나 제한될 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_OPEN">본 이용약관에 의해 사용자는 본 서비스를 설치, 사용, 액세스, 표시 및 실행할 수 있는 제한적이고 비독점적인 라이선스 사용권한을 허여받습니다. 본 서비스에 따라 제공되는 모든 서비스 및 기능은 디바이스, OS, 지역, 이동통신 사업자 등에 따라 달라지거나 제한될 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART11_LEGALPHASE_US">본 이용약관에 의해 사용자는 본 서비스를 설치, 사용, 액세스, 표시 및 실행할 수 있는 제한적이고 비독점적인 라이선스 사용권한을 허여받습니다. 서비스 또는 서비스 업데이트에 의해 제공되는 서비스와 기능(아래에 정의)은 귀하의 거주국이나 지역, 디바이스, 운영 체제 또는 네트워크 사업자 등 특정 요인에 따라 달라지거나 제한될 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_CHINA">2. 권리 및 소유권의 보유</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_OPEN">2. 권리와 소유권</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART12_LEGALPHASE_US">2. 권리 및 소유권의 보유</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_CHINA">삼성은 본 이용약관에서 귀하에게 명시적으로 부여되지 않은 서비스에 관한 모든 권리를 보유합니다. 서비스는 저작권 및 기타 지적 재산권법 및 조약의 보호를 받습니다. 삼성 또는 그 라이선스 제공자는 서비스에 대한 소유권, 저작권 및 기타 지적 재산권을 소유합니다. 혼동을 피하기 위해, 서비스는 판매하는 것이 아니라 라이선스를 부여하는 것임을 밝힙니다. 귀하는 삼성이 달리 승인한 경우를 제외하고 본 이용약관 또는 본 이용약관에서 서비스에 대해 부여된 권리 또는 부과된 의무를 제3자에게 양도할 수 없습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_OPEN">본 서비스는 제3자가 제공한 서비스 및 콘텐츠를 포함합니다. 본 서비스와 제3자가 제공한 서비스 및 콘텐츠에 대한 저작권 및 기타 지적 재산권은 삼성 및 제3자에게 있으며 저작권 및 기타 지식재산권 관련 법률과 조약에 의해 보호됩니다. 삼성은 본 이용약관 체결로 귀하에게 본 서비스에 대한 권리를 양도하는 것이 아니며, 1.에 따른 제한적인 라이선스만을 허여합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART13_LEGALPHASE_US">삼성은 본 이용약관에서 귀하에게 명시적으로 부여되지 않은 서비스에 관한 모든 권리를 보유합니다. 서비스는 저작권 및 기타 지적 재산권법 및 조약의 보호를 받습니다. 삼성 또는 그 라이선스 제공자는 서비스에 대한 소유권, 저작권 및 기타 지적 재산권을 소유합니다. 혼동을 피하기 위해, 서비스는 판매하는 것이 아니라 라이선스를 부여하는 것임을 밝힙니다. 귀하는 삼성이 달리 승인한 경우를 제외하고 본 이용약관 또는 본 이용약관에서 서비스에 대해 부여된 권리 또는 부과된 의무를 제3자에게 양도할 수 없습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_CHINA">3. 제한 사항</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_OPEN">3. 제한</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART14_LEGALPHASE_US">3. 제한 사항</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_CHINA">귀하는 (i) 서비스의 소스 코드 또는 알고리즘을 역설계, 디컴파일, 역어셈블 또는 다른 방식으로 확인하고, (ii) 서비스의 기능을 수정 또는 해제하고 (iii) 서비스에 따른 2차적 저작물을 만들고, (iv) 서비스로 상업용 호스팅 서비스를 공개적으로 전시하거나, 공개적으로 공연하거나, 양도하거나, 판매하거나, 라이선스를 부여하거나, 배포하거나, 대여하거나, 임대하거나, 대출하거나, 2차 라이선스를 부여하거나 제공할 수 없습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_OPEN">귀하는 복제, 리버스엔지니어링, 디컴파일, 디스어셈블 등 본 서비스의 소스 코드 또는 알고리즘을 알아내기 위한 일체의 시도를 할 수 없으며, 본 서비스를 임의로 수정하거나 기능을 비활성화하거나 본 서비스에 기초하여 파생 저작물을 생성, 혹은 타인의 그러한 행위를 지원할 수 없습니다. 더불어 귀하는 본 이용약관 또는 본 서비스에 대한 권리를 제3자에게 양도할 수 없고, 본 서비스를 이용해 임대, 리스, 대여, 재라이선스 또는 상업적 호스팅 서비스를 할 수 없습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART15_LEGALPHASE_US">귀하는 (i) 서비스의 소스 코드 또는 알고리즘을 역설계, 디컴파일, 역어셈블 또는 다른 방식으로 확인하고, (ii) 서비스의 기능을 수정 또는 해제하고 (iii) 서비스에 따른 2차적 저작물을 만들고, (iv) 서비스로 상업용 호스팅 서비스를 공개적으로 전시하거나, 공개적으로 공연하거나, 양도하거나, 판매하거나, 라이선스를 부여하거나, 배포하거나, 대여하거나, 임대하거나, 대출하거나, 2차 라이선스를 부여하거나 제공하고 (v) 서비스 사용과 관련하여(본 계약에 의해 라이선스가 부여되지 않은 사용의 경우) 당사 또는 제3자의 지적 재산권을 침해하고,</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_CHINA">4. 서비스 업데이트, 변경 또는 중지</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_OPEN">4. 업데이트</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART16_LEGALPHASE_US">(vi) 불법적인 방법으로, 불법적인 목적을 위해 또는 이 서비스 이용약관에 위배되는 방식으로 서비스를 사용하거나, 예를 들어 서비스 또는 운영 시스템을 해킹하거나 바이러스 또는 해로운 데이터 등 악성 코드를 삽입하는 방식으로 사기적인 행위를 하거나 피해를 주고, (vii) 당사 시스템이나 보안에 피해, 비활성화, 과부하, 방해 또는 손상을 가하거나 다른 사용자를 간섭하는 방식으로 서비스를 사용하고 (viii) 서비스 또는 당사 시스템의 정보나 데이터를 수집 또는 수확하거나 서비스가 실행되는 서버를 통과하는 전송 내용을 해독하려고 시도할 수 없습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_CHINA">삼성은 언제든지 버그 수정, 서비스 향상, 새로운 기능, 기존 기능 삭제 또는 서비스 수정 등을 포함(이에 국한되지 않음)하여 서비스에 대한 업데이트 또는 업그레이드(“업데이트”)를 제공하거나 실시할 수 있습니다. 업데이트는 별도의 이용약관이 해당 업데이트와 함께 제공되는 경우를 제외하고 본 이용약관의 적용을 받으며, 이 경우 별도의 이용약관이 업데이트에 적용됩니다. 보안 소프트웨어 또는 중요 버그 수정을 위한 업데이트나 다른 중요 업데이트는 적기에 받는 것이 중요함을 고려하여 관련 법률이 허용하는 한 자동으로 다운로드 및 설치될 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_OPEN">삼성은 귀하가 본 이용약관에 동의하여 본 서비스를 최초로 실행한 이후, 언제든지 본 서비스의 업데이트, 업그레이드, 보완 사항 및 추가 구성 요소를 제공할 수 있으며, 여기에는 완전히 새로운 버전을 포함한 본 서비스에 대한 버그 수정, 본 서비스의 부분 또는 전체 업그레이드 및 업데이트, 성능 향상 및 기능 개선 사항, 삭제가 포함됩니다(이하 “업데이트“라 한다). 삼성이 상기 업데이트와 함께 별도의 조건을 제시하지 않는 한 본 이용약관은 업데이트의 모든 구성 요소에 적용됩니다. 삼성은 신종 보안 위협에 대비하기 위한 보안 소프트웨어나 치명적인 오류 수정, 기타 중요한 업데이트와 같이 즉시 업데이트를 적용해야 하는 경우 귀하의 동의 없이 자동으로 다운로드 및 설치할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART17_LEGALPHASE_US">4. 서비스 업데이트, 변경 또는 중지</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_CHINA">5. 제3자 제공 서비스 및 콘텐츠</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_OPEN">5. 3자 제공 서비스 및 콘텐츠</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART18_LEGALPHASE_US">삼성은 언제든지 버그 수정, 서비스 향상, 새로운 기능, 기존 기능 삭제 또는 서비스 수정 등을 포함(이에 국한되지 않음)하여 서비스에 대한 업데이트 또는 업그레이드(“업데이트”)를 제공하거나 실시할 수 있습니다. 업데이트는 별도의 이용약관이 해당 업데이트와 함께 제공되는 경우를 제외하고 본 이용약관의 적용을 받으며, 이 경우 별도의 이용약관이 업데이트에 적용됩니다. 보안 소프트웨어 또는 중요 버그 수정을 위한 업데이트나 다른 중요 업데이트는 적기에 받는 것이 중요함을 고려하여 자동으로 다운로드 및 설치될 수 있습니다. 귀하의 동의 없이 자동으로 다운로드 및 설치할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_CHINA">본 서비스에는 제3자가 제공하는 서비스 및 콘텐츠가 포함될 수 있습니다. 삼성은 품질, 정확성, 효과, 바이러스 부재, 제3자 권리 침해 부재 및 해당 법률 또는 규정 준수 등을 포함(이에 국한되지 않음)한 모든 측면에서 제3자 서비스 또는 콘텐츠에 대한 보증 또는 진술을 부인합니다. 제3자 서비스 및 콘텐츠 사용은 해당 제3자 제공자의 이용약관, 라이선스 계약, 개인정보 수집이용 동의 또는 다른 유사한 계약의 적용을 받습니다. 서비스의 특정 부분은 오픈소스 라이선스의 적용을 받을 수 있으며 이 경우 해당 오픈소스 라이선스의 약관은 해당 서비스 부분과 관련하여 본 이용약관에 우선할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_OPEN">본 서비스에는 제3자가 제공하는 서비스 및 콘텐츠가 포함될 수 있습니다. 삼성은 제3자가 제공하는 서비스 및 콘텐츠에 대해 적합성ㆍ신뢰성ㆍ사용 가능성, 정확성, 바이러스의 부재, 제3자의 권리 침해 및 기타 권리 위반과 모든 법규 위반이 없음을 포함한 어떠한 보증도 하지 않습니다. 제3자 제공 서비스 및 콘텐츠에 대한 모든 권한 및 책임은 제3자에게 있으며, 구매 및 환불 등에 관한 모든 책임도 제3자에 있습니다. 제3자 제공 서비스 및 콘텐츠의 사용에 대해서는 제3자의 이용 약관, 라이선스 계약, 개인정보 취급방침 또는 기타 관련 계약이 적용되고, 삼성은 제3자의 정보 공개 또는 기타 취급방침에 대해 어떠한 책임도 부인합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART19_LEGALPHASE_US">5. 모니터링 권리, 제3자 서비스 및 콘텐츠</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_CHINA">서비스 이용약관</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_OPEN">서비스 이용약관</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART1_LEGALPHASE_US">서비스 이용약관</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_CHINA">6. 데이터 수집 및 이용 동의</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_OPEN">6. 정보 수집</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART20_LEGALPHASE_US">5.1 모니터링 권리. 삼성은 단독 재량으로 본 이용약관에 위반된다고 판정한 귀하의 서비스 사용, 귀하의 계정, 콘텐츠, 통신내역을 모니터링할 수 있으나, 그렇게 할 의무는 없습니다. 삼성은 서비스가 본 이용약관에 따라 사용되고 있는지 확인하기 위해 라이선스 키 번호 및 관련된 것으로 간주되는 기타 정보 등 서비스 사용에 대한 데이터를 수집할 권리를 보유합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_CHINA">귀하는 삼성 및/또는 삼성이 위탁한 당사자들이 필요한 정보를 수집하고 서비스 및 업데이트 제공, 서비스 개선 또는 향상에 사용할 수 있음을 인정하고 이에 동의합니다. 귀하의 정보는 항상 삼성 개인정보 수집이용 동의에 따라 취급되며, 이 동의는 https://account.samsung.com/membership/pp에서 확인할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_OPEN">삼성 또는 제3자는 귀하에게 본 서비스와 업데이트 및 향상된 서비스를 제공하기 위한 과정에서 필요한 정보를 수집ㆍ이용할 수 있습니다. 삼성은 자사의 제품을 개선하거나 맞춤화된 서비스 또는 기술을 제공하기 위한 목적에 한해 위 정보를 이용할 수 있으며, 이를 개인적으로 식별할 수 있는 형태로 공개하지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART21_LEGALPHASE_US">무단 사용시 삼성은 이를 본 이용약관 위반으로 간주합니다. 귀하는 본 이용약관 준수에 필요한 데이터의 전송을 전자적으로나 다른 방식으로 차단하지 않는 데 동의합니다. 본 이용약관 준수에 필요한 데이터를 차단하는 경우 본 이용약관 위반으로 간주되어 귀하의 서비스 사용 권리가 즉시 종료될 수 있습니다. 삼성은 귀하와 다른 사용자 사이에 발생하는 분쟁을 모니터링하거나 이에 개입할 권리를 보유하나, 그렇게 할 의무는 없습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_CHINA">7. 데이터 액세스</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_OPEN">7. 데이터 액세스</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART22_LEGALPHASE_US">5.2 제3자 제공 서비스 및 콘텐츠. 본 서비스에는 제3자가 제공하는 서비스 및 콘텐츠가 포함될 수 있습니다. 삼성은 품질, 정확성, 효과, 바이러스 부재, 제3자 권리 침해 부재 및 해당 법률 또는 규정 준수 등을 포함(이에 국한되지 않음)한 모든 측면에서 제3자 서비스 또는 콘텐츠에 대한 보증 또는 진술을 부인합니다. 제3자 서비스 및 콘텐츠 사용은 해당 제3자 제공자의 이용약관, 라이선스 계약, 개인정보 수집이용 동의 또는 다른 유사한 계약의 적용을 받습니다. 서비스의 특정 부분은 오픈소스 라이선스의 적용을 받을 수 있으며 이 경우 해당 오픈소스 라이선스의 약관은 해당 서비스 부분과 관련하여 본 이용약관에 우선할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_CHINA">본 서비스의 일부 기능을 사용하려면 모바일 디바이스가 인터넷에 연결되어야 하며, 네트워크 또는 인터넷 제공자가 부과하는 제한이 적용될 수 있습니다. 본 서비스는 모바일 네트워크를 통해 인터넷 액세스를 시도할 수 있으므로 귀하의 요금제에 따라 추가 요금이 발생할 수 있습니다. 또한, 본 서비스의 일부 기능은 귀하의 모바일 하드웨어 또는 데이터 액세스의 적합성 및 성능에 영향을 받을 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_OPEN">본 서비스의 일부 기능은 인터넷에 연결해야 사용할 수 있으며, 귀하의 네트워크 또는 인터넷 제공업체에서 부과한 제한이 적용될 수 있습니다. 본 서비스는 모바일 네트워크를 통해 인터넷 액세스를 시도할 수 있으므로 귀하의 요금제에 따라 추가 요금이 발생할 수 있습니다. 또한, 본 서비스의 일부 기능은 귀하의 모바일 하드웨어 또는 데이터 액세스의 적합성 및 성능에 영향을 받을 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART23_LEGALPHASE_US">6. 데이터 수집 및 이용 동의</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_CHINA">8. 법률 준수</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_OPEN">8. 수출 제한</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART24_LEGALPHASE_US">귀하는 삼성 및/또는 삼성이 위탁한 당사자들이 필요한 정보를 수집하고 서비스 및 업데이트 제공, 서비스 개선 또는 향상에 사용할 수 있음을 인정하고 이에 동의합니다. 귀하의 정보는 항상 삼성 개인정보 수집이용 동의에 따라 취급되며, 이 동의는 https://account.samsung.com/membership/pp에서 확인할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_CHINA">귀하는 서비스 사용 시 모든 해당 수출 제한 법률 및 규정을 포함(이에 국한되지 않음)하여 모든 해당 법률 및 규정을 준수할 것을 인정하고 이에 동의합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_OPEN">본 서비스에 대해 일부 국가의 수출 제한이 적용될 수 있으며, 귀하는 모든 관련 수출 제한 법률 및 규정을 포함하여 본 서비스에 적용되는 국내외의 모든 관련 법률을 준수하여야 합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART25_LEGALPHASE_US">7. 데이터 액세스</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_CHINA">9. 종료</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_OPEN">9. 종료</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART26_LEGALPHASE_US">본 서비스의 일부 기능을 사용하려면 모바일 디바이스가 인터넷에 연결되어야 하며, 네트워크 또는 인터넷 제공자가 부과하는 제한이 적용될 수 있습니다. 본 서비스는 모바일 네트워크를 통해 인터넷 액세스를 시도할 수 있으므로 귀하의 요금제에 따라 추가 요금이 발생할 수 있습니다. 또한, 본 서비스의 일부 기능은 귀하의 모바일 하드웨어 또는 데이터 액세스의 적합성 및 성능에 영향을 받을 수 있습니다. 서비스 사용과 관련하여 네트워크 공급자가 청구하는 요금에 대한 책임은 전적으로 귀하에게 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_CHINA">본 이용약관은 종료될 때까지 유효합니다. 또한 귀하는 본 서비스의 사용을 중단하고 백업본을 포함하여 삼성에서 제공한 관련 소프트웨어와 설명서 및 기타 자료를 제거 및 삭제하고 모두 반환함으로써 본 이용약관을 종료할 수 있습니다. 귀하가 본 이용약관의 어느 한 규정이라도 위반할 경우 본 이용약관에 따른 귀하의 권리는 삼성으로부터의 통지 없이 자동 종료됩니다. 본 이용약관이 종료되는 즉시 귀하는 본 서비스의 사용을 모두 중지해야 합니다. 다만 삼성은 서비스 웹사이트, 애플리케이션 내 팝업, 이메일 등 다양한 수단 중 하나 이상을 통해 공지한 후 30일 이후에 본 이용약관과 본 서비스를 종료할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_OPEN">본 이용약관은 종료될 때까지 유효합니다. 귀하는 본 서비스를 언인스톨(Uninstall), 삭제하여 사용을 중단함으로써 본 이용약관을 종료할 수 있습니다. 귀하가 본 이용약관의 어느 한 규정이라도 위반할 경우 본 이용약관에 따른 귀하의 권리는 통지 없이 자동 종료됩니다. 본 이용약관이 종료되는 즉시 귀하는 본 서비스의 사용을 모두 중지하고 본 서비스의 모든 사본을 파기해야 합니다. 다만, 본 이용약관의 2., 3., 10. 내지 14. 는 종료 이후에도 효력을 유지하며 삼성은 웹사이트, 애플리케이션 내 팝업, 이메일 등 다양한 수단 중 하나 이상을 통해 공지한 후 30일 이후에 본 이용약관과 본 서비스를 종료할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART27_LEGALPHASE_US">8. 법률 준수</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_CHINA">10. 보증 면책</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_OPEN">10. 보증 부인</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART28_LEGALPHASE_US">귀하는 서비스 사용 시 모든 해당 수출 제한 법률 및 규정을 포함(이에 국한되지 않음)하여 모든 해당 법률 및 규정을 준수할 것을 인정하고 이에 동의합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_CHINA">관련 법률이 허용하는 최대 범위까지 본 서비스는 어떠한 종류든 명시적이거나 묵시적인 삼성 측의 보증 없이 “있는 그대로”, “사용 가능한 상태로” 제공됩니다. 법률이 허용하는 최대 범위 내에서 삼성은 상품성, 만족스러운 품질 또는 숙련자 수준의 결과, 특정 목적에 대한 적합성, 신뢰성 또는 이용 가능성, 정확성, 바이러스의 부재, 향유권, 제3자 권리 침해 부재 또는 기타 권리의 위반에 대한 묵시적 보증을 포함한(이에 국한되지 않음) 명시적, 묵시적 또는 법적인 모든 보증을 부인합니다. 일부 관할 지역에서는 묵시적 보증의 배제 또는 제한을 허용하지 않으므로 위의 배제 또는 제한이 적용되지 않을 수도 있습니다. 귀하가 삼성 또는 제3자로부터 구두 또는 서면으로 제공받은 어떠한 조언 또는 정보도 본 서비스에 관한 본 이용약관의 보증 부인 고지를 변경하거나 삼성이 보증 책임을 부담하는 것으로 간주되지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_OPEN">삼성이 제공하는 모든 서비스는 “있는 그대로”, “사용 가능한 상태로” 제공됩니다. 삼성은 상품성, 전문가 수준의 노력과 만족스러운 품질, 특정 목적에 대한 적합성ㆍ신뢰성ㆍ사용 가능성, 정확성, 바이러스의 부재, 제3자의 권리 침해 및 기타 권리 위반이 없음에 대한 보증을 포함하여 일체의 명시적, 묵시적 보증을 하지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART29_LEGALPHASE_US">9. 종료</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_CHINA">중요 - 자세히 읽어보시기 바랍니다. 본 이용약관은 사전 설치, 다운로드 또는 별도 구매 등을 통해 본 이용약관과 함께 제공되는 게임런처 애플리케이션 및 관련 소프트웨어(소프트웨어에는 게임런처 애플리케이션 사용 관련 매체, 인쇄 자료 또는 전자 문서가 포함될 수 있으며, 통칭하여 이하 “서비스”)에 관한 귀하와 삼성전자 주식회사(이하 “삼성”) 사이의 권리ㆍ의무 관계를 정의하는 것을 목적으로 합니다. 본 이용약관에 동의하거나 서비스를 설치 또는 다른 방식으로 사용하면 본 이용약관에 동의함을 의미합니다. 본 이용약관에 동의하지 않는 경우 서비스를 설치 또는 사용하지 마십시오.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_OPEN">중요. 주의하여 읽으십시오. 본 이용약관은 사전 설치, 다운로드 또는 별도 구매 등을 통해 본 이용약관과 함께 제공되는 게임런처 애플리케이션 및 관련 소프트웨어(소프트웨어에는 게임런처 애플리케이션 사용 관련 매체, 인쇄 자료 또는 전자 문서가 포함될 수 있으며, 통칭하여 이하 “본 서비스”라 한다)에 관한 귀하와 삼성전자(주)(이하 “삼성”이라 한다) 사이의 권리ㆍ의무 관계를 정의하는 것을 목적으로 합니다. 본 서비스를 사용하면 본 이용약관에 동의한 것으로 간주되므로 본 이용약관에 동의하지 않으시는 경우, 본 서비스를 사용하지 마시기 바랍니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART2_LEGALPHASE_US">중요 - 자세히 읽어보시기 바랍니다. 본 이용약관은 사전 설치, 다운로드 또는 별도 구매 등을 통해 본 이용약관과 함께 제공되는 게임런처 애플리케이션 및 관련 소프트웨어(소프트웨어에는 게임런처 애플리케이션 사용 관련 매체, 인쇄 자료 또는 전자 문서가 포함될 수 있으며, 통칭하여 이하 “서비스”)에 관한 귀하와 삼성전자 주식회사(이하 “삼성”) 사이의 권리ㆍ의무 관계를 정의하는 것을 목적으로 합니다. 본 이용약관에 동의하거나 서비스를 설치 또는 다른 방식으로 사용하면 본 이용약관에 동의함을 의미합니다. 본 이용약관에 동의하지 않는 경우 서비스를 설치 또는 사용하지 마십시오.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_CHINA">11. 책임 제한</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_OPEN">단, 관련 법률에 따라 묵시적 보증의 배제 또는 제한이 허용되지 않는 경우는 제외합니다. 귀하가 삼성 또는 제3자로부터 구두 또는 서면으로 제공받은 어떠한 조언 또는 정보도 본 서비스에 관한 본 이용약관의 보증 부인 고지를 변경하거나 삼성이 보증 책임을 부담하는 것으로 간주되지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART30_LEGALPHASE_US">9.1 시행일. 본 이용약관은 귀하의 본 이용약관 수락 또는 서비스 다운로드, 접속 또는 그 외 사용 시 시행됩니다. 서비스는 사전에 종료일이 지정되어 있지 않으며 삼성이 서비스를 종료하기로 결정하거나 본 이용약관이 본 약관에 따라 종료되는 때까지 지속될 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_CHINA">고의 또는 중대과실을 제외하고 삼성은 본 서비스, 그 콘텐츠 또는 기능의 사용 또는 사용 불가능으로 인해 발생하거나 이와 관련된 손해에 대해 삼성이 이러한 손해 가능성에 대해 알고 있었다 해도 책임을 지지 않습니다. 이러한 손해에는 오류, 누락, 장애, 결함, 작동 또는 전송 지연, 컴퓨터 바이러스, 연결 중단, 네트워크 요금, 기타 모든 직접적 손해로 인하거나 이와 관련된 손해가 포함(이에 국한되지 않음)됩니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_OPEN">11. 책임 제한</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART31_LEGALPHASE_US">9.2 종료. 귀하가 본 이용약관의 특정 조항을 준수하지 않았거나 삼성이 합리적인 범위 내에서 귀하가 준수하지 않았다고 의심할 수 있는 경우 삼성이 명시적으로 보유하고 있는 다른 모든 권리 및 구제책에 제한을 가함이 없이 삼성은 단독 재량에 따라 귀하에게 통지하지 않고 즉시 귀하의 서비스 접속을 중단하고 본 이용약관을 종료할 수 있으며 귀하는 종료일까지 발생한 모든 요금(해당 시)에 대해 책임을 집니다. 또한 귀하는 본 서비스의 사용을 중단하고 백업본을 포함하여 삼성에서 제공한 관련 소프트웨어와 설명서 및 기타 자료를 제거 및 삭제하고 모두 반환함으로써 본 이용약관을 종료할 수도 있습니다. 본 이용약관이 종료되는 즉시 귀하는 본 서비스의 사용을 모두 중지해야 합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_CHINA">삼성은 어떠한 간접적, 특별적, 우발적, 징벌적 또는 결과적 손해에도 책임을 지지 않습니다. 일부 관할 지역에서는 부대적이거나 결과적 손해의 배제 또는 제한을 허용하지 않으므로 위의 배제 또는 제한이 적용되지 않을 수도 있습니다. 단, 관련 법률에 따라 손해의 배제 또는 제한을 허용하지 않을 경우는 제외합니다. 본 서비스를 사용하는 행위로 인해 발생하는 모든 손실, 손해에 대한 삼성의 총 책임 한도는 본 서비스에 대해 귀하가 지불한 금액을 초과할 수 없습니다. 상기 제한, 배제 및 부인은 관련 법률에서 허용하는 최대 범위까지 적용됩니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_OPEN">삼성은 본 서비스가 제공하는 콘텐츠 및 기능의 사용 또는 사용 불가에 기인하거나 그와 관련한 일체의 손해에 대해 책임을 지지 않습니다. 여기에는 오류, 누락, 중단, 결함, 작동이나 전송의 지연, 컴퓨터 바이러스, 연결 실패, 네트워크 비용, 인앱(In-App) 구매 등에 기인하거나 그와 관련하여 발생하는 손해 및 기타 모든 직접적, 간접적, 특별적, 우발적, 징벌적 또는 결과적 손해가 포함되며 이에 국한되지 않습니다. 이는 삼성이 그러한 손해의 가능성에 대해 통지를 받았다 해도 마찬가지입니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART32_LEGALPHASE_US">10. 보증 면책</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_CHINA">12. 준거법</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_OPEN">단, 관련 법률에 따라 손해의 배제 또는 제한을 허용하지 않을 경우는 제외합니다. 본 서비스를 사용하는 행위로 인해 발생하는 모든 손실, 손해에 대한 삼성의 총 책임 한도는 본 서비스에 대해 귀하가 지불한 금액을 초과할 수 없습니다. 상기 제한, 배제 및 부인은 관련 법률에서 허용하는 최대 범위까지 적용됩니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART33_LEGALPHASE_US">서비스는 “현재 상태”, “현재 위치”, “현재 제공 상태”로 제공되며 어떠한 종류의 보증도 하지 않습니다. 삼성 및 삼성의 라이선스 제공자는 서비스에 대해 종류 또는 본질과는 무관하게 명시적이거나 묵시적인 진술 또는 보증 또는 보장을 하지 않으며 상품성, 특정 목적에 대한 적합성 및 권리 침해 부재에 대한 묵시적인 보증을 포함(이에 국한되지 않음)해 구체적으로 일절 책임을 지지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_CHINA">본 이용약관에는 법률 충돌 조항과 관계없이 귀하가 거주하는 관할 지역의 법률이 적용됩니다. 본 이용약관에는 국제물품매매 계약에 관한 유엔협약(UN Convention on Contracts for the International Sale of Goods)은 적용되지 않으며 이 협약의 적용은 명시적으로 제외됩니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_OPEN">12. 준거법</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART34_LEGALPHASE_US">상기 보증 면책에 제한을 가함이 없이, 삼성 및 삼성의 라이선스 제공자는 서비스 또는 서비스 콘텐츠가 (i) 중단 없이 적시에 안전하게 또는 오류가 없는 방식으로 작동하고, (ii) 항상 제공되며 해로운 구성 요소 또는 오류가 없고, (iii) 안전하거나 무단 액세스에 대한 내성(귀하에게 제공되거나 귀하가 제공한 콘텐츠 포함)을 가지며, (iv) 정확하고 완전하고 신뢰성이 있어 서비스의 품질이 귀하에게 만족스러우며 오류가 시정될 것이라고 진술, 보증 또는 보장하지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_CHINA">13. 분쟁 해결</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_OPEN">본 이용약관은 국제사법 조항에 관계없이 귀하의 거주지 법률이 적용됩니다. 본 이용약관은 국제 물품 매매 계약에 관한 UN 협약(UN Convention on Contracts for the International Sale of Goods)의 적용을 받지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART35_LEGALPHASE_US">귀하가 삼성 또는 제3자로부터 구두 또는 서면으로 제공받은 어떠한 조언 또는 정보도 본 서비스에 관한 본 이용약관의 보증 부인 고지를 변경하거나 삼성이 보증 책임을 부담하는 것으로 간주되지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_CHINA">어떤 형태로든 본 이용약관 또는 서비스 사용으로 인해 발생하는 분쟁, 논란 또는 차이가 평화적으로 해결되지 않을 경우 귀하가 거주하는 관할 지역 법원의 비독점적 관할권이 적용됩니다. 상기 내용에도 불구하고 삼성은 어떤 관할 지역의 법원에서든 금지 청구(또는 이에 상응하는 긴급한 법적 구조 형태)를 신청할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_OPEN">13. 분쟁 해결</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART36_LEGALPHASE_US">11. 책임 제한</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_CHINA">14. 완전한 합의</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_OPEN">본 이용약관 또는 귀하의 본 서비스 사용으로 인해 발생한 분쟁, 논쟁 또는 의견 차이가 원만히 합의되지 않을 경우, 해당 사안에 대해 귀하의 거주지 관할 법원의 비배타적 관할권이 적용됩니다. 그럼에도 불구하고, 삼성은 귀하 거주지 관할법원이 아닌 지역 법원에 강제집행, 보전 처분 등을 청구할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART37_LEGALPHASE_US">법률이 허용하는 최대한의 범위 내에서, 삼성 또는 삼성의 라이선스 제공자는 삼성이 피해 가능성에 대해 고지를 받았다 하더라도 어떠한 경우에도 간접적, 부대적, 결과적, 특별적, 징벌적, 처벌적 손해 또는 이익 손실에 대해 귀하에게 책임을 지지 않습니다. 이 제한은 사기, 허위 진술, 계약 위반, 과실, 신체 상해, 제조물 책임, 침해 또는 기타 모든 이론에 관계없이 삼성이 해당 손해 발생 가능성에 대해 고지 받았는지의 여부와 무관하게 적용됩니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_CHINA">본 이용약관 체결 이전 본 서비스 또는 본 이용약관과 관련한 모든 구두 또는 서면 합의는 본 이용약관으로 대체됩니다. 본 이용약관의 특정 조항이 무효, 시행 불가 또는 불법적인 것으로 확인되더라도 나머지 다른 조항은 계속해서 완전한 효력을 유지합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_OPEN">14. 완전한 합의</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART38_LEGALPHASE_US">즉, 귀하는 본 이용약관에 따라 삼성 및 삼성의 라이선스 제공자로부터 발생하는 모든 간접적, 부대적, 결과적, 특별적, 징벌적, 처벌적 손해 또는 이익 손실에 대한 모든 권리를 포기합니다. 본 제한 및 권리 포기는 귀하가 다른 당사자에 대해 제기하는 모든 청구에 대해 삼성이 해당 청구에 대해 해당 당사자를 면책해야 하는 범위 내에서 적용됩니다. 당사는 서비스 사용으로 인해 발생할 수 있는 데이터 손실, 서비스와 관련된 보안 위반 또는 서비스의 모든 콘텐츠, 동영상 또는 통신에 대해 조치의 형태 또는 청구 근거에 관계없이 일절 책임을 지지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART39_LEGALPHASE_OPEN">본 이용약관 체결 이전 본 서비스 또는 본 이용약관과 관련한 모든 구두 또는 서면 합의는 본 이용약관으로 대체됩니다. 본 이용약관의 특정 조항이 무효ㆍ취소되거나 불법, 집행 불능으로 밝혀지더라도 나머지 조항은 완전한 효력을 유지합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART39_LEGALPHASE_US">귀하가 다른 서비스 사용자와 통신하거나 직접 만나기로 결정하는 경우, 당사는 귀하와 다른 사용자 사이에 이루어질 수 있는 통신 또는 회합에 대해 책임을 지지 않습니다. 귀하가 당사와 분쟁이 있거나 서비스에 만족하지 않는 경우 귀하의 서비스 사용 종료가 유일한 구제책입니다. 당사는 귀하에 대해 그 외의 의무, 책임을 지지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_CHINA">본 서비스를 이용함에 있어 아래의 제3자 제공 관련 안내 사항을 신중하게 읽어보시기 바랍니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_OPEN">본 서비스를 이용함에 있어 아래의 사항에 주의하시기 바랍니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART3_LEGALPHASE_US">본 서비스를 이용함에 있어 아래의 제3자 제공 관련 안내 사항을 신중하게 읽어보시기 바랍니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART40_LEGALPHASE_US">12. 면책</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART41_LEGALPHASE_US">귀하는 (i) 귀하 또는 귀하가 사용을 허락한 사람의 본 이용약관을 위반한 서비스 사용, (ii) 귀하 또는 귀하가 사용을 허락한 사람의 본 이용약관 위반 또는 (iii) 귀하 또는 귀하가 사용을 허락한 사람의 법률, 규정 위반 또는 제3자 권리 침해로 인해 발생하는, 합리적인 수준의 변호사 비용을 포함해 모든 제3자 청구, 조치, 책임, 손실, 손해, 판결, 비용(“청구”라 통칭함)으로부터 삼성, 삼성의 모회사, 자회사 및 계열사, 삼성의 모든 임원, 이사, 대리인 및 직원 및 삼성을 대리하는 모든 당사자를 면책, 면제, 보호해야 합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART42_LEGALPHASE_US">13. 일반 약관</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART43_LEGALPHASE_US">13.1 법률 선택. 모든 수정 및 개정을 포함한 본 이용약관은 법률 원칙의 상충 또는 선택과 무관하게 뉴욕주법의 적용을 받으며 그에 따라 해석됩니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART44_LEGALPHASE_US">13.2 중재. 귀하는 서비스 사용 시 (i) 서비스로 인해 발생하거나 그와 관련되어 있거나 어떤 방식으로든 연결되어 있는 삼성 및 삼성 조직의 임원, 이사, 대리인 및 직원(“삼성 조직”)에 대한 청구, 분쟁 또는 논란 또는 본 조항의 범위 또는 적용 가능성에 대한 판정은 전적으로 JAMS가 제공하는 최종적이고 구속력 있는 중재에 의해 JAMS의 규칙에 따라 단독 중재인 입회 하에 해결하며,</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART45_LEGALPHASE_US">(ii) 본 조항은 주간 통상이 관련된 거래에 따라 규정되고 연방중재법(“FAA”), 9 U.S.C. §§ 1-16의 적용을 받으며, (iii) 중재는 뉴욕주 뉴욕시에서 이루어지며, (iv) 중재인의 결정은 귀하가 서비스와 관련하여 동의한 본 이용약관의 약관 및 본 이용약관에 참조된 다른 모든 계약의 적용을 받으며, (v) 중재인은 뉴욕주법을 FAA 및 해당 제한 법규와 일치하게 적용하고 법률상 인정되는 권한 주장을 존중하여야 하며,</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART46_LEGALPHASE_US">(vi) 집단 또는 대표 중재가 필요한 모든 청구에 대한 권한이 없고 중재는 귀하 및/또는 해당 삼성 조직의 개인적인 청구에 대해서만 결정을 내릴 수 있으며 중재인은 비슷한 상황에 있는 다른 개인 또는 단체의 청구를 병합 또는 합병할 수 있고 귀하는 당사를 대상으로 한 집단 소송을 제기하거나 이에 참여하지 않을 것이며, (vii) 중재인은 귀하 또는 삼성 조직에 대해 징벌적 손해 배상을 부과할 권한이 없으며, (viii) 삼성 조직을 대상으로 중재를 개시하기 위해 납부해야 하는 행정 요금 및 보증금이 미화 일백 이십오 달러(US$125)를 초과하는데 귀하가 이 금액을 초과하는 요금 및 보증금을 납부할 수 없는(또는 JAMS 규칙에 따라 납부할 의무가 없는) 경우 삼성은 중재인의 최후 할당액에 따라 귀하를 대신하여 이 금액을 납부 및/또는 전달하는 데 동의하며,</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART47_LEGALPHASE_US">또한 귀하가 중재 비용이 소송 비용에 비해 감당하기 어려울 만큼 높다는 점을 증명할 수 있는 경우 삼성은 귀하의 중재 관련 접수 또는 심의 요금 중에서 중재인이 중재 비용을 감당하기 어렵지 않도록 하는 데 필요하다고 간주하는 만큼의 금액을 납부해야 하며, (ix) 상기 (vi)항을 제외하고 본 중재 조항의 일부분이 무효, 시행 불가 또는 불법적이거나 다른 방식으로 JAMS의 규칙과 충돌하는 경우에도 본 중재 조항의 잔여 부분은 효력을 유지하고 무효, 시행 불가 또는 불법적이거나 충돌하는 조항이 본 이용약관에 포함되지 않은 것으로 가정하여 약관에 따라 해석해야 함에 무조건적으로 동의합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART48_LEGALPHASE_US">그러나 (vi)항이 무효, 시행 불가 또는 불법이라는 사실이 확인되는 경우 본 중재 조항 전체를 무효로 하며 귀하와 삼성 양측 모두 분쟁 중재 자격을 상실합니다. JAMS 및/또는 JAMS 규칙에 대한 자세한 내용은 www.jamsadr.com을 참조하십시오.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART49_LEGALPHASE_US">13.3 분리 가능성. 사법 또는 행정 당국이 본 이용약관의 특정 약관 또는 조항이 무효 또는 시행 불가하다고 판단하는 경우 그러한 판단은 본 이용약관의 잔여 약관 및 조항의 시행 효력에 영향을 주지 않습니다. 본 이용약관의 잔여 조항은 효력을 유지하며 약관에 따라 해석됩니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_CHINA">- “게임 절전 모드”를 사용할 경우, 화면의 해상도가 콘텐츠의 원래 해상도와 다를 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_OPEN">- 게임 절전 모드를 사용할 경우, 화면상 표시되는 게임의 해상도 및 비트전송률 등이 정상 상태에 비하여 저하됩니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART4_LEGALPHASE_US">- “게임 절전 모드”를 사용할 경우, 화면의 해상도가 콘텐츠의 원래 해상도와 다를 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART50_LEGALPHASE_US">13.4 존속. 본 이용약관의 2, 3, 10, 11, 12 및 13조 및 그 외 본질상 효력을 지속해야 하는 모든 조항은 본 이용약관 만료 또는 조기 종료 시에도 존속하며 효력과 구속력을 유지합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART51_LEGALPHASE_US">13.5 제목. 본 이용약관에 포함된 제목은 참조용으로만 사용된 것으로 본 이용약관의 의미 또는 해석에 영향을 주지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART52_LEGALPHASE_US">13.6 권리 포기 없음. 삼성이 언제든지 본 이용약관의 특정 조항을 시행하지 못하거나 삼성이 귀하의 본 이용약관 조항 이행을 요구하지 못하는 경우에도 절대 현재 또는 향후에 해당 조항에 대한 권리를 포기하는 것으로 해석하거나 삼성이 그 이후 해당 조항을 시행할 권리에 영향을 주지 않습니다. 삼성이 본 이용약관의 특정 조항, 조건 또는 요구 사항에 대한 권리를 명시적으로 포기하는 경우에도 향후 해당 조항, 조건 또는 요구 사항을 준수할 의무를 포기하는 것으로 간주하지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART53_LEGALPHASE_US">13.7 제3자 사이트. 당사는 서비스를 통해 귀하가 소셜 네트워킹 플랫폼 등 제3자 웹사이트를 검색하거나 웹사이트에 리디렉션할 수 있는 링크 또는 기타 자료를 제공할 수 있습니다. 당사는 이러한 제3자의 서비스, 웹사이트 또는 콘텐츠와 관련이 없고, 이에 대해 책임을 지거나 이를 지지하지 않습니다. 이러한 회사들의 방침에 대해 질문이 있는 경우 이용약관 및 기타 정책을 검토해야 합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART54_LEGALPHASE_US">13.8 완전한 합의. 본 이용약관 체결 이전 본 서비스 또는 본 이용약관과 관련한 모든 구두 또는 서면 합의는 본 이용약관으로 대체됩니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_CHINA">- “게임 중 방해금지”를 사용할 경우 문자 메시지, 기타 애플리케이션의 푸시 알림 등을 비롯한 특정 팝업이 화면에 표시되지 않을 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_OPEN">- 게임 중 방해금지 모드를 사용할 경우 문자 메시지, 기타 애플리케이션의 푸시메세지(push messag- 등 특정 팝업(Pop up)이 화면상 표시되지 않을 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART5_LEGALPHASE_US">- “게임 중 방해금지”를 사용할 경우 문자 메시지, 기타 애플리케이션의 푸시 알림 등을 비롯한 특정 팝업이 화면에 표시되지 않을 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_CHINA">- 귀하는 본 서비스를 상업적 용도로 사용해서는 안 되고, 저작권법 등 모든 관련법령에 위반되지 않는 범위 내에서 사용해야 합니다. 본 서비스를 통해 보거나 접속하는 제3자 제공 서비스의 저작권 등 지식재산권은 해당 서비스 제공자가 보유하며 저작권법 등 관련 법령 및 제3자의 이용약관 등에 따라 보호됩니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_OPEN">- 귀하는 본 서비스를 상업적 용도로 사용하여서는 안되고, 저작권법 등 모든 관련법령에 위반되지 않는 범위 내에서 사용하여야 합니다. 본 서비스를 통해 보거나 접속하는 제3자 제공 서비스의 저작권 등 지식재산권은 해당 서비스 제공자가 보유하며 저작권법 등 관련 법령 및 제3자의 이용약관 등에 따라 보호됩니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART6_LEGALPHASE_US">- 귀하는 본 서비스를 상업적 용도로 사용해서는 안 되고, 저작권법 등 모든 관련법령에 위반되지 않는 범위 내에서 사용해야 합니다. 본 서비스를 통해 보거나 접속하는 제3자 제공 서비스의 저작권 등 지식재산권은 해당 서비스 제공자가 보유하며 저작권법 등 관련 법령 및 제3자의 이용약관 등에 따라 보호됩니다. 해당 콘텐츠의 소유자는 귀하에게 그러한 콘텐츠를 어떠한 방식으로도 사용할 수 있는 권리를 부여하지 않습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_CHINA">해당 콘텐츠의 소유자는 귀하에게 그러한 콘텐츠를 어떠한 방식으로도 사용할 수 있는 권리를 부여하지 않습니다. 삼성에서 별도로 제공하는 경우를 제외하고 (i) 삼성은 귀하가 그러한 콘텐츠를 사용할 수 있는 권리를 부여하거나 그러한 콘텐츠가 계속 제공될 것임을 보증하지 않으며, (ii) 귀하는 본 서비스를 통해 비디오, 사진, 이미지, 그래픽, 아트워크, 오디오 또는 유사한 자산(“디지털 자료”)을 상업적으로 또는 불법으로 사용할 수 없으며 또한 본 서비스의 일부로 사용하는 용도가 아닌 다른 용도로 디지털 자료를 사용할 수 없습니다. 귀하는 불법 콘텐츠를 제작하거나 배포하지 않으며, 그러한 제작 및 배포 행위에 대하여 전적으로 책임져야 함을 인정하고 이에 동의합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_OPEN">삼성은 귀하에게 제3자 제공 서비스에 대한 어떠한 권리도 부여하지 않으며 계속 제공된다는 사실을 보증하지도 않으며 귀하는 본 서비스를 이용하여 불법적인 컨텐츠를 제작하거나 배포할 수 없고, 그러한 제작 및 배포 행위에 대하여 전적으로 책임져야 합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART7_LEGALPHASE_US">삼성에서 별도로 제공하는 경우를 제외하고 (i) 삼성은 귀하가 그러한 콘텐츠를 사용할 수 있는 권리를 부여하거나 그러한 콘텐츠가 계속 제공될 것임을 보증하지 않으며, (ii) 귀하는 본 서비스를 통해 비디오, 사진, 이미지, 그래픽, 아트워크, 오디오 또는 유사한 자산(“디지털 자료”)을 상업적으로 또는 불법으로 사용할 수 없으며 또한 본 서비스의 일부로 사용하는 용도가 아닌 다른 용도로 디지털 자료를 사용할 수 없습니다. 귀하는 불법 콘텐츠를 제작하거나 배포하지 않으며,그러한 제작 및 배포 행위에 대하여 전적으로 책임져야 함을 인정하고 이에 동의합니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_CHINA">- “추천 동영상” 기능을 사용할 경우 게임 서비스 제공자의 검색 관련 기술 및 검색 제한 여부에 따라 검색 결과가 귀하의 의도와 달라질 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_OPEN">- 추천 동영상 기능을 사용할 경우 게임 서비스 제공자의 검색 관련 기술 및 검색 제한 여부에 따라 검색 결과가 귀하의 의도와 달라질 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART8_LEGALPHASE_US">- “추천 동영상” 기능을 사용할 경우 게임 서비스 제공자의 검색 관련 기술 및 검색 제한 여부에 따라 검색 결과가 귀하의 의도와 달라질 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_CHINA">- 본 서비스는 모바일 데이터를 사용한 인터넷 접속을 필요로 하므로 추가적인 데이터 사용료가 부과될 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_OPEN">- 본 서비스는 모바일 데이터를 사용한 인터넷 접속을 필요로 하므로 추가적인 데이터 사용료가 부과될 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_LAUNCHER_TOS_PART9_LEGALPHASE_US">- 본 서비스는 모바일 데이터를 사용한 인터넷 접속을 필요로 하므로 추가적인 데이터 사용료가 부과될 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART1_LEGALPHASE_US">게임툴즈 서비스를 이용함에 있어 아래의 내용을 주의 깊게 읽어보시고, 동의하시기 바랍니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART1_LEGALPHRASE_OPEN">귀하는 게임툴즈 및 그와 관련된 소프트웨어 또는 문서(“서비스”)에 대해 다음을 인정하고 이에 동의합니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART2_LEGALPHASE_US">- 본 서비스는 귀하의 단말 내 연락처, 카메라, 저장공간 및 마이크에 접근할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART2_LEGALPHRASE_OPEN">- 해당 서비스에서 귀하의 연락처, 카메라, 저장 장치 및 마이크에 액세스할 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART3_LEGALPHASE_US">- “게임 중 방해금지”를 사용할 경우 문자 메시지, 기타 애플리케이션의 푸시 알림 등을 비롯한 특정 팝업이 화면에 표시되지 않을 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART3_LEGALPHRASE_OPEN">- “게임 중 방해금지”를 사용할 경우 문자 메시지, 기타 애플리케이션의 푸시 알림 등을 비롯한 특정 팝업이 화면에 표시되지 않을 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART4_LEGALPHASE_US">- 귀하는 본 서비스를 상업적 용도로 사용하여서는 안되고, 저작권법 등 모든 관련법령에 위반되지 않는 범위 내에서 사용하여야 합니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART4_LEGALPHRASE_OPEN">- 귀하는 본 서비스를 저작권법 및 지적 재산권법 등 관련 법규에 위반되지 않는 범위 내에서 사용해야 합니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART5_LEGALPHRASE_OPEN">- 귀하가 본 서비스와 연계하여 사용하는 모든 제3자 애플리케이션(게임을 포함하나 이에 국한되지 않음)은 해당 소유자 또는 애플리케이션이 귀하에게 제공하는 것입니다. 그러한 제3자 애플리케이션은 저작권법 또는 기타 지적 재산권법 및 조약의 보호를 받을 수 있으며 관련된 제3자의 이용약관이 적용될 수 있습니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART6_LEGALPHASE_US">- 귀하는 본 서비스를 이용하여 불법적인 컨텐츠를 제작하거나 배포할 수 없고, 그러한 제작 및 배포 행위에 대하여 전적으로 책임져야 합니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART6_LEGALPHRASE_OPEN">그러한 제3자 애플리케이션의 콘텐츠를 특정 용도로 사용하는 것은 금지될 수 있습니다(해당 애플리케이션 이용약관 또는 법률에 의거). Samsung에서 별도로 제공하는 경우를 제외하고 (i) Samsung은 그러한 제3자 콘텐츠를 사용할 수 있는 권리를 귀하에게 부여하거나 그러한 콘텐츠의 지속적 제공을 보증하지 않으며, (ii) 귀하는 본 서비스를 통해 비디오, 사진, 이미지, 그래픽, 아트워크, 오디오 또는 유사한 자산(“디지털 자료”)을 상업적으로 또는 불법적으로 사용할 수 없으며 또한 본 서비스에 포함되는 정상 용도를 벗어난 다른 용도로 디지털 자료를 사용할 수 없다는 데 동의합니다.</string>
+    <string name="LDS_GH_POP_GAME_TOOLS_DISCLAIMER_PART7_LEGALPHRASE_OPEN">- 또한 귀하는 본인이 제작 또는 배포하는 모든 콘텐츠가 전적으로 본인의 책임임을 인정하고 이에 동의합니다.</string>
+    <string name="LDS_GH__POP_GAME_TOOLS_DISCLAIMER_PART5_LEGALPHASE_US">- 본 서비스를 통해 보거나 접속하는 제3자 제공 서비스의 저작권 등 지식재산권은 해당 서비스 제공자가 보유하며 저작권법 등 관련 법령 및 제3자의 이용약관 등에 따라 보호됩니다. 삼성은 귀하에게 제3자 제공 서비스에 대한 어떠한 권리도 부여하지 않으며 계속 제공된다는 사실을 보증하지도 않습니다.</string>
+    <string name="MIDS_GB_BUTTON_NEXT_ABB2">다음</string>
+    <string name="MIDS_GHUB_TPOP_APP_RUNNING">앱 실행 중입니다.</string>
+    <string name="MIDS_GHUB_TPOP_BACK_KEY_LOCKED_WHILE_USING_APP">앱 사용 중에는 뒤로가기 버튼을 잠급니다.</string>
+    <string name="MIDS_GHUB_TPOP_NO_ALERTS_WHILE_USING_APP_ENABLED">앱 사용 중 방해금지를 실행했습니다.</string>
+    <string name="MIDS_GHUB_TPOP_NO_ALERTS_WHILE_USING_APP_ENABLED_ALL_NOTIFICATIONS_WILL_BE_MUTED_AND_HIDDEN_WHILE_USING_APP_ONLY_INCOMING_CALLS_WILL_BE_SHOWN">앱 사용 중 방해금지를 실행했습니다. 앱 사용 중에는 모든 알림 소리를 끄고 알림을 표시하지 않습니다. 수신전화 알림은 표시합니다.</string>
+    <string name="MIDS_GHUB_TPOP_RECENTS_AND_BACK_KEYS_LOCKED_WHILE_USING_APP">앱 사용 중에는 최근 앱 및 뒤로가기 버튼을 잠급니다.</string>
+    <string name="MIDS_GHUB_TPOP_RECENTS_KEY_LOCKED_WHILE_USING_APP">앱 사용 중에는 최근 앱 버튼을 잠급니다.</string>
+    <string name="MIDS_GH_BODY_1_HOUR">1시간</string>
+    <string name="MIDS_GH_BODY_1_HOUR_ABB">1시간</string>
+    <string name="MIDS_GH_BODY_1_HOUR_AGO">1시간 전</string>
+    <string name="MIDS_GH_BODY_1_MINUTE">1분</string>
+    <string name="MIDS_GH_BODY_1_MINUTE_AGO">1분 전</string>
+    <string name="MIDS_GH_BODY_1_TIME_ABB_M_LC_M_PLAY">1회</string>
+    <string name="MIDS_GH_BODY_1_WEEK_AGO_ABB">1주 전</string>
+    <string name="MIDS_GH_BODY_ACCESS_YOUR_GAMES_QUICKLY_AND_EASILY_USING_THE_EDGE_SCREEN">Edge screen에서 쉽고 빠르게 게임을 실행하세요.</string>
+    <string name="MIDS_GH_BODY_ACTION">액션</string>
+    <string name="MIDS_GH_BODY_ADDED_M_NOUN">추가됨</string>
+    <string name="MIDS_GH_BODY_ADVENTURE">어드벤처</string>
+    <string name="MIDS_GH_BODY_ALLOW_ACCESS_ONLY_FOR_THIS_TRIP_ABB">이번 여행에만 접속 허용</string>
+    <string name="MIDS_GH_BODY_ALLOW_DATA_ACCESS_Q">데이터 접속을 허용할까요?</string>
+    <string name="MIDS_GH_BODY_ARCADE_M_GENRE">아케이드</string>
+    <string name="MIDS_GH_BODY_BASED_ON_YOUR_GAMEPLAY_PATTERNS_ABB">게임 취향 기반</string>
+    <string name="MIDS_GH_BODY_BOARD_M_GENRE">보드</string>
+    <string name="MIDS_GH_BODY_CANNOT_FIND_YOUR_INSTALLED_GAME_Q">설치한 게임을 찾을 수 없나요?</string>
+    <string name="MIDS_GH_BODY_CAPTURE_A_SCREENSHOT">화면을 캡처합니다.</string>
+    <string name="MIDS_GH_BODY_CARD">카드</string>
+    <string name="MIDS_GH_BODY_CASINO">카지노</string>
+    <string name="MIDS_GH_BODY_CASUAL">캐주얼</string>
+    <string name="MIDS_GH_BODY_CHECK_OUT_THESE_EXCLUSIVE_OFFERS_FOR_YOUR_GALAXY_DEVICE">갤럭시 사용자에게 드리는 특별한 혜택을 확인해 보세요.</string>
+    <string name="MIDS_GH_BODY_CHECK_OUT_THE_HOTTEST_GAMES_AMONG_GALAXY_DEVICE_USERS_AND_WATCH_FUN_GAME_VIDEOS">갤럭시 사용자들 사이에서 가장 인기 있는 게임을 확인하거나 재미 있는 게임 동영상을 감상해 보세요.</string>
+    <string name="MIDS_GH_BODY_CHECK_YOUR_NETWORK_CONNECTION_AND_TRY_AGAIN">네트워크 연결을 확인한 후 다시 시도하세요.</string>
+    <string name="MIDS_GH_BODY_DATA_USAGE">데이터 사용</string>
+    <string name="MIDS_GH_BODY_DENY_DATA_ROAMING_ACCESS_ABB">데이터 로밍 접속 제한</string>
+    <string name="MIDS_GH_BODY_DRAG_THE_QUICK_PANEL_DOWN_TO_STOP_RECORDING">녹화를 중지하려면 빠른 설정창을 아래로 내리세요.</string>
+    <string name="MIDS_GH_BODY_EDGE_TOUCH_LOCK_ABB">Edge 터치 잠금</string>
+    <string name="MIDS_GH_BODY_EDUCATIONAL">교육</string>
+    <string name="MIDS_GH_BODY_ENJOY_A_FREE_GAME_PROVIDED_BY_SAMSUNG_GAME_LAUNCHER">삼성 게임런처에서 제공하는 무료 게임을 즐겨보세요.</string>
+    <string name="MIDS_GH_BODY_GAMEPAD_RECOMMENDED">게임패드 사용 권장</string>
+    <string name="MIDS_GH_BODY_GAMES_SORTED_BY_NUMBER_OF_GALAXY_USERS_PLAYING_HP1SD_P2SD_P3SD_P4SD_ABB">가장 많은 갤럭시 사용자가 즐긴 게임(%2$d/%1$d-%4$d/%3$d)</string>
+    <string name="MIDS_GH_BODY_GAMES_SORTED_BY_TOTAL_TIME_PLAYED_BY_ALL_GALAXY_USERS_HP1SD_P2SD_P3SD_P4SD_ABB">가장 많은 시간 동안 갤럭시 사용자가 즐긴 게임(%2$d/%1$d-%4$d/%3$d)</string>
+    <string name="MIDS_GH_BODY_GAME_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_THIS_TIME_ONLY_MSG">%s에서 게임을 실행할 때 게임 소리를 끕니다. 게임을 실행한 후에 소리 크기를 변경할 수 있습니다.</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_AUTOMATICALLY">게임런처는 모든 게임을 자동으로 한곳에 모아서 보여줍니다.</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_AUTOMATICALLY_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_MSG">게임런처는 자동으로 모든 게임을 한곳에 모으고 게임 실행에 유용한 추가 기능을 제공합니다.</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_FEATURES_HPS_ARE_ONLY_APPLIED_TO_APPS_CATEGORISED_AS_GAMES">게임런처 기능(%s)은 게임으로 분류된 앱에만 적용됩니다.</string>
+    <string name="MIDS_GH_BODY_GAME_LAUNCHER_WILL_ACCESS_CONTACTS_CAMERA_STORAGE_AND_MICROPHONE">게임런처는 연락처, 카메라, 저장공간, 마이크를 사용합니다.</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_CONVENIENT_GAME_FEATURES">게임툴즈는 편리한 게임 기능을 제공합니다.</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_CONVENIENT_GAME_FEATURES_IN_A_BUTTON_THAT_FLOATS_OVER_YOUR_GAME_ABB">게임툴즈는 게임 화면에 떠 있는 버튼으로 게임과 관련된 편리한 기능을 제공합니다.</string>
+    <string name="MIDS_GH_BODY_GAME_TOOLS_PROVIDES_OPTIONS_AND_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES">게임툴즈는 게임 실행 중에 유용하게 사용할 수 있는 옵션과 기능을 제공합니다.</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_DEVICE">디바이스에서 녹화한 게임 동영상입니다.</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_PHONE">휴대전화에서 녹화한 게임 동영상입니다.</string>
+    <string name="MIDS_GH_BODY_GAME_VIDEOS_THAT_WERE_RECORDED_FROM_YOUR_TABLET">태블릿에서 녹화한 게임 동영상입니다.</string>
+    <string name="MIDS_GH_BODY_HIDE_YOUR_CALLS_AND_ALERTS_DURING_GAMEPLAY">게임 중에는 전화와 알림을 숨깁니다.</string>
+    <string name="MIDS_GH_BODY_INSTALLED_M_NOUN">설치 완료</string>
+    <string name="MIDS_GH_BODY_I_HAVE_READ_AND_AGREE_TO_ALL_THE_TERMS_OF_SERVICE_ABOVE">위의 이용약관을 모두 읽었으며 이에 동의합니다.</string>
+    <string name="MIDS_GH_BODY_LARGE">크게</string>
+    <string name="MIDS_GH_BODY_LAST_PLAYED">마지막 플레이</string>
+    <string name="MIDS_GH_BODY_LAST_RECORDED_C">마지막 녹화:</string>
+    <string name="MIDS_GH_BODY_LATEST_VERSION">최신 버전</string>
+    <string name="MIDS_GH_BODY_LIVE">라이브</string>
+    <string name="MIDS_GH_BODY_MAXIMUM_RECORDING_FILE_SIZE_IS_PD_GB_MSG">녹화 파일의 최대 크기는 %dGB입니다. 최고 화질로 녹화하면 약 80분 동안 녹화할 수 있습니다. 해상도와 비트 전송률을 낮추면 녹화 시간을 더 늘릴 수 있습니다.</string>
+    <string name="MIDS_GH_BODY_MINIMISE_YOUR_GAME_SCREEN_WHEN_YOU_NEED_TO_QUICKLY_ACCESS_OTHER_TASKS">다른 작업을 실행하려고 할 때 게임 화면을 최소화합니다.</string>
+    <string name="MIDS_GH_BODY_MOST_ACTIVE_NEW">많이 즐긴 신규 게임</string>
+    <string name="MIDS_GH_BODY_MOST_ADDICTIVE_NEW">오래 즐긴 신규 게임</string>
+    <string name="MIDS_GH_BODY_MUSIC_M_GENRE">음악</string>
+    <string name="MIDS_GH_BODY_MUTE_AND_HIDE_ALL_OF_YOUR_ALERTS_DURING_GAMEPLAY">게임 중에는 모든 알림 소리를 끄고 알림을 표시하지 않습니다.</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_RANKED_BY_THE_LONGEST_PLAYING_TIMES">가장 긴 플레이 시간을 기록한 신규 게임입니다.</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_RANKED_BY_THE_MOST_USERS_PER_DAY">하루 동안 가장 많은 사용자가 즐긴 신규 게임입니다.</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_SORTED_BY_NUMBER_OF_GALAXY_USERS_PLAYING_HP1SD_P2SD_P3SD_P4SD_ABB">가장 많은 갤럭시 사용자가 즐긴 신규 게임(%2$d/%1$d-%4$d/%3$d)</string>
+    <string name="MIDS_GH_BODY_NEW_GAMES_SORTED_BY_TOTAL_TIME_PLAYED_BY_ALL_GALAXY_USERS_HP1SD_P2SD_P3SD_P4SD_ABB">가장 많은 시간 동안 갤럭시 사용자가 즐긴 신규 게임(%2$d/%1$d-%4$d/%3$d)</string>
+    <string name="MIDS_GH_BODY_OPEN_A_BOOKMARKED_APP_OR_WEB_ADDRESS">바로가기로 추가한 앱을 실행하거나 웹 주소를 엽니다.</string>
+    <string name="MIDS_GH_BODY_OPEN_SOURCE_LICENCE">오픈소스 라이선스</string>
+    <string name="MIDS_GH_BODY_OTHERS">기타</string>
+    <string name="MIDS_GH_BODY_PD_HOURS_ABB">%d시간</string>
+    <string name="MIDS_GH_BODY_PD_HOURS_AGO">%d시간 전</string>
+    <string name="MIDS_GH_BODY_PD_MINUTES">%d분</string>
+    <string name="MIDS_GH_BODY_PD_MINUTES_AGO">%d분 전</string>
+    <string name="MIDS_GH_BODY_PD_PLAYS_ABB">%d회 플레이</string>
+    <string name="MIDS_GH_BODY_PD_TIMES_ABB2">%d회</string>
+    <string name="MIDS_GH_BODY_PD_WEEKS_AGO_ABB">%d주 전</string>
+    <string name="MIDS_GH_BODY_PER_DAY_ABB_M_LC">일별</string>
+    <string name="MIDS_GH_BODY_PLAYERS_ABB">플레이어</string>
+    <string name="MIDS_GH_BODY_PLAYING_TIME">플레이 시간</string>
+    <string name="MIDS_GH_BODY_PLAYING_TIME_ABB_M_LC">플레이 시간</string>
+    <string name="MIDS_GH_BODY_PLAY_PER_DAY_ABB">하루 실행 횟수</string>
+    <string name="MIDS_GH_BODY_POWER_USAGE">배터리 사용량</string>
+    <string name="MIDS_GH_BODY_PRIVACY_POLICY">개인정보 처리방침</string>
+    <string name="MIDS_GH_BODY_PS_DISCLAIMER">%s 주의사항</string>
+    <string name="MIDS_GH_BODY_PS_GB">%sGB</string>
+    <string name="MIDS_GH_BODY_PS_IS_A_BUTTON_FLOATING_OVER_THE_TOP_OF_YOUR_GAME_THAT_PROVIDES_CONVENIENT_GAME_FEATURES">%s는 게임 화면에 떠 있는 버튼으로 게임과 관련한 편리한 기능을 제공합니다.</string>
+    <string name="MIDS_GH_BODY_PS_KB">%sKB</string>
+    <string name="MIDS_GH_BODY_PS_LOCK_ABB">%s 잠김</string>
+    <string name="MIDS_GH_BODY_PS_MB">%sMB</string>
+    <string name="MIDS_GH_BODY_PS_TERMS_OF_SERVICE">%s 이용약관</string>
+    <string name="MIDS_GH_BODY_PUZZLE_M_GENRE">퍼즐</string>
+    <string name="MIDS_GH_BODY_RACING">레이싱</string>
+    <string name="MIDS_GH_BODY_RECENTLY_INSTALLED">최근 설치</string>
+    <string name="MIDS_GH_BODY_RECENTLY_REGISTERED">최근 등록</string>
+    <string name="MIDS_GH_BODY_RECORD_YOUR_GAME">게임 화면을 녹화합니다.</string>
+    <string name="MIDS_GH_BODY_RECORD_YOUR_GAMES">게임 화면을 녹화합니다.</string>
+    <string name="MIDS_GH_BODY_ROLE_PLAYING_M_GENRE">롤플레잉</string>
+    <string name="MIDS_GH_BODY_SAVE_BATTERY_POWER_BY_OPTIMISING_THE_DISPLAY_QUALITY">화질을 최적화하여 배터리 사용량을 줄입니다.</string>
+    <string name="MIDS_GH_BODY_SAVE_BATTERY_POWER_DURING_GAMEPLAY_BY_DOWNGRADING_THE_VIDEO_QUALITY">게임 화면의 화질을 떨어뜨려 배터리 사용량을 줄입니다.</string>
+    <string name="MIDS_GH_BODY_SCREENSHOT">화면 캡처</string>
+    <string name="MIDS_GH_BODY_SELECT_APPS_YOU_WANT_TO_ADD_TO_PS">%s에 추가할 앱을 선택하세요.</string>
+    <string name="MIDS_GH_BODY_SELECT_A_GAME_YOU_WANT_TO_ADD_TO_PS">%s에 추가할 게임을 선택하세요.</string>
+    <string name="MIDS_GH_BODY_SELECT_A_GAME_YOU_WANT_TO_REGISTER_IN_GAME_LAUNCHER">게임런처에 등록할 게임을 선택하세요.</string>
+    <string name="MIDS_GH_BODY_SELECT_THE_FUNCTION_TO_ASSIGN_TO_THE_HOT_KEY_MSG">단축 버튼에 지정할 기능을 선택하세요. 단축 버튼을 길게 눌러 기능을 변경할 수 있습니다.</string>
+    <string name="MIDS_GH_BODY_SELECT_THE_GAME_YOU_WANT_TO_REGISTER_TO_MY_GAMES">[내 게임]에 등록할 게임을 선택하세요.</string>
+    <string name="MIDS_GH_BODY_SHRINK_YOUR_GAME_SCREEN_INTO_A_FLOATING_ICON">게임 화면을 아이콘으로 최소화합니다.</string>
+    <string name="MIDS_GH_BODY_SIMULATION">시뮬레이션</string>
+    <string name="MIDS_GH_BODY_SMALL">작게</string>
+    <string name="MIDS_GH_BODY_SPORTS_M_GENRE">스포츠</string>
+    <string name="MIDS_GH_BODY_STRATEGY_M_GENRE">전략</string>
+    <string name="MIDS_GH_BODY_S_GAMES_ARRANGES_ALL_YOUR_GAMES_IN_ONE_PLACE_AUTOMATICALLY">S게임은 모든 게임을 자동으로 한곳에 모읍니다.</string>
+    <string name="MIDS_GH_BODY_TAP_THE_BUTTON_TO_STOP_RECORDING">녹화를 중지하려면 버튼을 누르세요.</string>
+    <string name="MIDS_GH_BODY_TERMS_OF_SERVICE">이용약관</string>
+    <string name="MIDS_GH_BODY_TERMS_OF_SERVICE_ABB">이용약관</string>
+    <string name="MIDS_GH_BODY_THE_LATEST_VERSION_IS_ALREADY_INSTALLED">최신 버전입니다.</string>
+    <string name="MIDS_GH_BODY_THE_NAVIGATION_BAR_WILL_NOT_AUTO_HIDE_DURING_GAMEPLAY_MSG">게임 실행 중에 탐색 표시줄을 자동으로 숨기지 않습니다. 이 기능은 전체 화면 모드를 사용할 때 유용합니다.</string>
+    <string name="MIDS_GH_BODY_THE_RESOLUTION_AND_FRAME_RATE_OF_EACH_GAME_CAN_BE_CUSTOMISED">각 게임의 해상도와 프레임 속도를 직접 설정할 수 있습니다.</string>
+    <string name="MIDS_GH_BODY_THIS_APPLICATION_CAN_ACCESS_P1SS_AND_P2SS">이 앱은 %1$s 및 %2$s 앱의 일부 기능을 사용할 수 있습니다.</string>
+    <string name="MIDS_GH_BODY_THIS_IS_THE_LATEST_VERSION">최신 버전입니다.</string>
+    <string name="MIDS_GH_BODY_THIS_WEEK_ABB">이번 주</string>
+    <string name="MIDS_GH_BODY_TIP_C_TO_CHANGE_THE_HOT_KEY_PRESS_AND_HOLD_IT_OR_GO_TO_GAME_TOOLS_SETTINGS">팁: 단축키를 변경하려면 해당 버튼을 길게 누르거나 게임툴즈 설정에서 변경할 수 있습니다.</string>
+    <string name="MIDS_GH_BODY_TO_PREVENT_UNINTENTIONAL_TOUCHES_DURING_THE_GAME_MSG2">게임 중에 일어나는 의도하지 않은 터치를 방지하기 위해 게임 실행 중에는 화면 아래의 %s를 잠급니다.</string>
+    <string name="MIDS_GH_BODY_TO_SIGN_UP_FOR_A_GLOBAL_DATA_PLAN_CALL_GLOBAL_SUPPORT_AT_908_559_4899">해외 데이터 요금제에 가입하려면 해외 지원 908-559-4899로 문의하세요.</string>
+    <string name="MIDS_GH_BODY_TO_STOP_RECORDING_TAP_THE_STOP_BUTTON_ON_THE_NAVIGATION_BAR">녹화를 중지하려면 탐색 표시줄에 있는 중지 버튼을 누르세요.</string>
+    <string name="MIDS_GH_BODY_TRIVIA_M_CATEGORY">퀴즈</string>
+    <string name="MIDS_GH_BODY_TRY_OUT_ADDITIONAL_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES_MSG4">게임 절전 모드, 게임 중 방해금지, 게임툴즈와 같이 게임과 관련된 유용한 기능을 사용해 보세요.</string>
+    <string name="MIDS_GH_BODY_TRY_OUT_ADDITIONAL_FEATURES_THAT_ARE_USEFUL_FOR_PLAYING_GAMES_MSG5">게임 절전 모드, 무음으로 게임 실행, 게임툴즈와 같이 게임과 관련한 유용한 기능을 사용해 보세요.</string>
+    <string name="MIDS_GH_BODY_UNKNOWN_M_CATEGORY">알 수 없음</string>
+    <string name="MIDS_GH_BODY_USING_DATA_WHILE_IN_THE_US_INCLUDING_ALASKA_HAWAII_PUERTO_RICO_MSG">"미국(알래스카, 하와이, 푸에르토리코, 미국령 버진아일랜드 포함)에서 데이터를 사용하면 사용 중인 요금제에 따라 요금이 부과됩니다.
+
+해외 데이터 요금제에 가입하지 않고 미국 이외의 국가에서 데이터를 사용하면 높은 요금이 부과될 수 있습니다.
+
+데이터를 실행할까요?"</string>
+    <string name="MIDS_GH_BODY_VERSION">버전</string>
+    <string name="MIDS_GH_BODY_WE_RECOMMEND_DOWNLOADING_VIA_WI_FI_MSG">Wi-Fi로 다운로드할 것을 권장합니다. 모바일 네트워크를 사용하면 요금제에 따라 추가요금이 부과될 수 있습니다.</string>
+    <string name="MIDS_GH_BODY_WHEN_YOU_TAP_THE_P1SS_BUTTON_YOU_CAN_ACCESS_P2SS_FROM_ANYWHERE">%1$s 버튼을 누르면 어디에서든 %2$s를 실행할 수 있습니다.</string>
+    <string name="MIDS_GH_BODY_WORD_M_CATEGORY">단어</string>
+    <string name="MIDS_GH_BODY_YOUR_GAMES_WILL_BE_DISPLAYED_AUTOMATICALLY">게임이 자동으로 표시됩니다.</string>
+    <string name="MIDS_GH_BODY_YOUVE_REACHED_YOUR_SPECIFIED_DATA_USAGE_LIMIT_MSG">"지정한 데이터 사용한도에 도달했습니다.
+
+데이터를 다시 실행하면 사업자가 요금을 부과할 수 있습니다."</string>
+    <string name="MIDS_GH_BODY_YOU_CAN_ADJUST_THE_PERFORMANCE_OF_YOUR_GAME_IN_TWO_WAYS_MSG">두 가지 방식으로 게임 성능을 조절할 수 있습니다. 성능 향상을 선택하면 시스템 성능을 높일 수는 있으나 전원을 많이 사용하게 됩니다. 절전을 선택하면 전원을 적게 사용하지만 시스템 성능이 떨어집니다.</string>
+    <string name="MIDS_GH_BODY_YOU_CAN_ALSO_CHECK_OUT_THE_HOTTEST_GAMES_AMONG_GALAXY_DEVICE_USERS_MSG">갤럭시 사용자들 사이에서 가장 인기 있는 게임을 확인할 수 있으며, 게임런처에서 재미있는 게임 동영상을 바로 감상할 수 있습니다.</string>
+    <string name="MIDS_GH_BUTTON2_BOOST_PERFORMANCE">성능 향상</string>
+    <string name="MIDS_GH_BUTTON2_NORMAL_PERFORMANCE">일반 성능</string>
+    <string name="MIDS_GH_BUTTON2_OPEN_GAMES_MUTED">무음으로 게임 실행</string>
+    <string name="MIDS_GH_BUTTON2_SAVE_POWER">절전</string>
+    <string name="MIDS_GH_BUTTON_ADD_AS_GAME_ABB">게임으로 추가</string>
+    <string name="MIDS_GH_BUTTON_ADD_TO_HOME">홈에 추가</string>
+    <string name="MIDS_GH_BUTTON_ADD_URL">URL 추가</string>
+    <string name="MIDS_GH_BUTTON_AGREE_ABB">동의</string>
+    <string name="MIDS_GH_BUTTON_APPLY_ABB2">적용</string>
+    <string name="MIDS_GH_BUTTON_CANCEL_ABB3">취소</string>
+    <string name="MIDS_GH_BUTTON_CHECK_RECORDED_VIDEO_IN_GALLERY">갤러리에서 녹화한 동영상 확인</string>
+    <string name="MIDS_GH_BUTTON_CLEAR_ABB2">지우기</string>
+    <string name="MIDS_GH_BUTTON_CLOSE">닫기</string>
+    <string name="MIDS_GH_BUTTON_CONFIRM">확인</string>
+    <string name="MIDS_GH_BUTTON_DELETE">삭제</string>
+    <string name="MIDS_GH_BUTTON_DELETE_ABB4">삭제</string>
+    <string name="MIDS_GH_BUTTON_DISABLE_ABB">해제</string>
+    <string name="MIDS_GH_BUTTON_DISAGREE_ABB">동의 안 함</string>
+    <string name="MIDS_GH_BUTTON_DISCOVERY">찾기</string>
+    <string name="MIDS_GH_BUTTON_DONE">완료</string>
+    <string name="MIDS_GH_BUTTON_EDIT">편집</string>
+    <string name="MIDS_GH_BUTTON_ENABLE_ABB">사용</string>
+    <string name="MIDS_GH_BUTTON_FEATURED_VIDEOS">추천 동영상</string>
+    <string name="MIDS_GH_BUTTON_FIND_MORE_GAMES">새로운 게임 찾아보기</string>
+    <string name="MIDS_GH_BUTTON_GAME_SOUND">게임 소리</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS">게임툴즈</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS_OFF">게임툴즈 사용 안 함</string>
+    <string name="MIDS_GH_BUTTON_GAME_TOOLS_ON">게임툴즈 사용 중</string>
+    <string name="MIDS_GH_BUTTON_GAME_VIDEOS">게임 동영상</string>
+    <string name="MIDS_GH_BUTTON_GAME_VIDEOS_ABB">게임 동영상</string>
+    <string name="MIDS_GH_BUTTON_IN_GAME_LOCK_SCREEN">게임 중 잠금화면</string>
+    <string name="MIDS_GH_BUTTON_LATER_ABB">나중에</string>
+    <string name="MIDS_GH_BUTTON_LIST_AS_GAME_APP">게임 앱으로 분류</string>
+    <string name="MIDS_GH_BUTTON_LIST_AS_NON_GAME_APP">일반 앱으로 분류</string>
+    <string name="MIDS_GH_BUTTON_LOCK_BACK_KEY">뒤로가기 버튼 잠금</string>
+    <string name="MIDS_GH_BUTTON_LOCK_RECENTS_AND_BACK_KEYS">최근 앱 및 뒤로가기 버튼 잠금</string>
+    <string name="MIDS_GH_BUTTON_LOCK_RECENTS_KEY">최근 앱 버튼 잠금</string>
+    <string name="MIDS_GH_BUTTON_MORE">더보기</string>
+    <string name="MIDS_GH_BUTTON_MORE_ABB4">더보기</string>
+    <string name="MIDS_GH_BUTTON_NO_INTERRUPTIONS_ABB">방해 금지</string>
+    <string name="MIDS_GH_BUTTON_OK">확인</string>
+    <string name="MIDS_GH_BUTTON_OPEN">실행</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAMES_MUTED_OFF">무음으로 게임 실행 사용 안 함</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAMES_MUTED_ON">무음으로 게임 실행 사용 중</string>
+    <string name="MIDS_GH_BUTTON_OPEN_GAME_ABB">게임 실행</string>
+    <string name="MIDS_GH_BUTTON_PLAY">시작</string>
+    <string name="MIDS_GH_BUTTON_PLAYERS">플레이어</string>
+    <string name="MIDS_GH_BUTTON_PLAYING_TIME">플레이 시간</string>
+    <string name="MIDS_GH_BUTTON_POP_UP_WINDOW">팝업창</string>
+    <string name="MIDS_GH_BUTTON_RECORD">녹화</string>
+    <string name="MIDS_GH_BUTTON_REFRESH_ABB3">새로고침</string>
+    <string name="MIDS_GH_BUTTON_REGISTER_ABB">등록</string>
+    <string name="MIDS_GH_BUTTON_REQUEST_REGISTRATION">등록 요청</string>
+    <string name="MIDS_GH_BUTTON_RESTART_ABB2">다시 실행</string>
+    <string name="MIDS_GH_BUTTON_RETRY_ABB">다시 시도</string>
+    <string name="MIDS_GH_BUTTON_RE_ENABLE_DATA">데이터 다시 실행</string>
+    <string name="MIDS_GH_BUTTON_SAVE_POWER_DURING_GAME">게임 절전 모드</string>
+    <string name="MIDS_GH_BUTTON_SAVE_POWER_OFF">절전 사용 안 함</string>
+    <string name="MIDS_GH_BUTTON_SHARE">공유</string>
+    <string name="MIDS_GH_BUTTON_SHOW">표시</string>
+    <string name="MIDS_GH_BUTTON_START_ABB">시작</string>
+    <string name="MIDS_GH_BUTTON_STOP_ABB">중지</string>
+    <string name="MIDS_GH_BUTTON_TAP_HERE_TO_ADD_UNLISTED_GAMES">표시되지 않는 게임을 추가하려면 여기를 누르세요</string>
+    <string name="MIDS_GH_BUTTON_TOP_CHARTS">인기 차트</string>
+    <string name="MIDS_GH_BUTTON_TOP_GAMES_ABB">인기 게임</string>
+    <string name="MIDS_GH_BUTTON_UPDATE_ABB4">업데이트</string>
+    <string name="MIDS_GH_BUTTON_VIEW_VIDEO_IN_GAME_LAUNCHER">게임런처에서 동영상 보기</string>
+    <string name="MIDS_GH_HEADER_ADD_SHORTCUT">바로가기 추가</string>
+    <string name="MIDS_GH_HEADER_ANNOUNCEMENTS">공지사항</string>
+    <string name="MIDS_GH_HEADER_ASSIGN_P1SS_TO_P2SS">%1$s 앱을 %2$s에 지정</string>
+    <string name="MIDS_GH_HEADER_CONNECT_VIA_MOBILE_NETWORKS_ABB">모바일 네트워크로 연결</string>
+    <string name="MIDS_GH_HEADER_CONNECT_VIA_ROAMING_NETWORK_ABB">로밍 네트워크로 연결</string>
+    <string name="MIDS_GH_HEADER_CUSTOMISED_PERFORMANCE">성능 조정</string>
+    <string name="MIDS_GH_HEADER_DATA_NETWORK_DISABLED_ABB">데이터 네트워크 해제</string>
+    <string name="MIDS_GH_HEADER_DISCLAIMER_ABB">주의사항</string>
+    <string name="MIDS_GH_HEADER_DISCOVERY">찾기</string>
+    <string name="MIDS_GH_HEADER_DISPLAY_GAME_ICONS_ON_GAME_LAUNCHER_ONLY">게임런처에만 게임 아이콘 표시</string>
+    <string name="MIDS_GH_HEADER_ENABLE_PS">%s 사용</string>
+    <string name="MIDS_GH_HEADER_ENTER_WEB_ADDRESS">웹 주소 입력</string>
+    <string name="MIDS_GH_HEADER_FAVOURITE_GENRE">좋아하는 장르</string>
+    <string name="MIDS_GH_HEADER_GALAXY_GAMERS">갤럭시 게이머</string>
+    <string name="MIDS_GH_HEADER_GAMES">게임</string>
+    <string name="MIDS_GH_HEADER_GAME_DISCOVERY">게임의 발견</string>
+    <string name="MIDS_GH_HEADER_GAME_LAUNCHER_ABB">게임런처</string>
+    <string name="MIDS_GH_HEADER_INSTALLED_APPS_ABB2">설치된 앱</string>
+    <string name="MIDS_GH_HEADER_INTRODUCING_GAME_TOOLS_ABB">게임툴즈 소개</string>
+    <string name="MIDS_GH_HEADER_MOBILE_DATA_TURNED_OFF_ABB">모바일 데이터 해제</string>
+    <string name="MIDS_GH_HEADER_MOST_ACTIVE_ABB">많이 즐긴 게임</string>
+    <string name="MIDS_GH_HEADER_MOST_ADDICTIVE_ABB">오래 즐긴 게임</string>
+    <string name="MIDS_GH_HEADER_NEW_RELEASES_N_UPDATES_ABB">신작 및 업데이트</string>
+    <string name="MIDS_GH_HEADER_NO_NETWORK_CONNECTION_ABB2">연결된 네트워크 없음</string>
+    <string name="MIDS_GH_HEADER_OTHER_APPS">일반 앱</string>
+    <string name="MIDS_GH_HEADER_PERMISSIONS">권한</string>
+    <string name="MIDS_GH_HEADER_POPULAR">인기 동영상</string>
+    <string name="MIDS_GH_HEADER_PRIVACY_POLICY">개인정보 처리방침</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_PLAYED">최근 플레이</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_PLAYED_ABB">최근 실행</string>
+    <string name="MIDS_GH_HEADER_RECENTLY_USED_APPS">최근 사용 앱</string>
+    <string name="MIDS_GH_HEADER_RECOMMENDED_FOR_YOU_ABB">추천</string>
+    <string name="MIDS_GH_HEADER_RECORDED_ABB">녹화된 동영상</string>
+    <string name="MIDS_GH_HEADER_RECORDING_SETTINGS_ABB">녹화 설정</string>
+    <string name="MIDS_GH_HEADER_RECORD_GAME">게임 녹화</string>
+    <string name="MIDS_GH_HEADER_REGISTER_ABB2">등록</string>
+    <string name="MIDS_GH_HEADER_REGISTRATION_FAILED_ABB">등록 안 됨</string>
+    <string name="MIDS_GH_HEADER_REGISTRATION_REQUEST_REQUIRED_ABB">등록 요청 필요</string>
+    <string name="MIDS_GH_HEADER_RELATED">연관 동영상</string>
+    <string name="MIDS_GH_HEADER_RELATED_GAMES">연관 게임</string>
+    <string name="MIDS_GH_HEADER_RESTART_GAME">게임 다시 실행</string>
+    <string name="MIDS_GH_HEADER_RESTART_GAMES_ABB">게임 다시 실행</string>
+    <string name="MIDS_GH_HEADER_SELECT_HOT_KEY">단축 버튼 선택</string>
+    <string name="MIDS_GH_HEADER_SELECT_VIDEOS">동영상 선택</string>
+    <string name="MIDS_GH_HEADER_SET_PROFILE_IMAGE_ABB">프로필 이미지 설정</string>
+    <string name="MIDS_GH_HEADER_SET_PROFILE_IMAGE_ABB2">프로필 이미지 설정</string>
+    <string name="MIDS_GH_HEADER_SPECIAL_OFFERS_ABB">특별 할인</string>
+    <string name="MIDS_GH_HEADER_STAFF_PICKS_ABB">전문가 추천</string>
+    <string name="MIDS_GH_HEADER_UNABLE_TO_ADD_GAME_ABB">게임을 추가할 수 없음</string>
+    <string name="MIDS_GH_HEADER_UNABLE_TO_REGISTER_GAME_ABB">게임을 등록할 수 없음</string>
+    <string name="MIDS_GH_HEADER_UNINSTALL_APP_ABB">앱 삭제</string>
+    <string name="MIDS_GH_HEADER_UNINSTALL_GAME">게임 삭제</string>
+    <string name="MIDS_GH_HEADER_UPDATE_PS">%s 업데이트</string>
+    <string name="MIDS_GH_HEADER_VIDEO_SETTINGS_ABB">동영상 설정</string>
+    <string name="MIDS_GH_HEADER_WI_FI_NOT_AVAILABLE_ABB">Wi-Fi 사용할 수 없음</string>
+    <string name="MIDS_GH_HEADER_YOUTUBE_SEARCH_RESULTS">YouTube 검색 결과</string>
+    <string name="MIDS_GH_MBODY_ABOUT_GAME_LAUNCHER">게임런처 정보</string>
+    <string name="MIDS_GH_MBODY_ABOUT_GAME_TOOLS">게임툴즈 정보</string>
+    <string name="MIDS_GH_MBODY_ABOUT_PS">%s 정보</string>
+    <string name="MIDS_GH_MBODY_AUDIO_SOURCE">오디오 설정</string>
+    <string name="MIDS_GH_MBODY_BITRATE">비트 전송률</string>
+    <string name="MIDS_GH_MBODY_CONTACT_US">문의하기</string>
+    <string name="MIDS_GH_MBODY_FAQ">자주 하는 질문</string>
+    <string name="MIDS_GH_MBODY_FEATURED_ABB">추천</string>
+    <string name="MIDS_GH_MBODY_FRAME_RATE">프레임 속도</string>
+    <string name="MIDS_GH_MBODY_GAMES">게임 지원</string>
+    <string name="MIDS_GH_MBODY_GAME_ICON_DISPLAY_OPTION">게임 아이콘 표시 옵션</string>
+    <string name="MIDS_GH_MBODY_GAME_NOTIFICATIONS">게임 알림</string>
+    <string name="MIDS_GH_MBODY_GAME_RECORDER">게임 녹화</string>
+    <string name="MIDS_GH_MBODY_GAME_TOOLS">게임툴즈</string>
+    <string name="MIDS_GH_MBODY_GAMING_OPTIMISATION">게임 최적화</string>
+    <string name="MIDS_GH_MBODY_HELP">도움말</string>
+    <string name="MIDS_GH_MBODY_HOT_KEY">단축 버튼</string>
+    <string name="MIDS_GH_MBODY_INTRODUCING_GAME_LAUNCHER_ABB">게임런처 소개</string>
+    <string name="MIDS_GH_MBODY_MARKETING_INFORMATION">마케팅 정보</string>
+    <string name="MIDS_GH_MBODY_MINIMISE_AND_ALIVE">최소화하여 실행 유지</string>
+    <string name="MIDS_GH_MBODY_MINIMISE_GAME">게임 최소화</string>
+    <string name="MIDS_GH_MBODY_MY_QUESTIONS">내 문의내역</string>
+    <string name="MIDS_GH_MBODY_NORMAL_MODE_ABB">일반 모드</string>
+    <string name="MIDS_GH_MBODY_NO_INTERRUPTIONS">방해 금지</string>
+    <string name="MIDS_GH_MBODY_PERFORMANCE_MODE_ABB">성능 모드</string>
+    <string name="MIDS_GH_MBODY_PHONE_AUDIO">휴대전화 오디오</string>
+    <string name="MIDS_GH_MBODY_PROFILE_SIZE">프로필 크기</string>
+    <string name="MIDS_GH_MBODY_PROFILE_SOURCE">프로필 설정</string>
+    <string name="MIDS_GH_MBODY_RAM">RAM</string>
+    <string name="MIDS_GH_MBODY_RECORD_TOUCH_INTERACTION">누름 동작 녹화</string>
+    <string name="MIDS_GH_MBODY_REDUCE_GRAPHICS_QUALITY">그래픽 품질 낮추기</string>
+    <string name="MIDS_GH_MBODY_RESOLUTION">해상도</string>
+    <string name="MIDS_GH_MBODY_SAVE_POWER_DURING_GAME_ABB">게임 절전 모드</string>
+    <string name="MIDS_GH_MBODY_SCREEN_CAPTURED">화면 캡처됨</string>
+    <string name="MIDS_GH_MBODY_SHORTCUT">바로가기</string>
+    <string name="MIDS_GH_MBODY_TAP_HERE_TO_STOP_AND_SAVE_RECORDING">녹화를 중지하고 저장하려면 여기를 누르세요</string>
+    <string name="MIDS_GH_MBODY_VIDEO_QUALITY">동영상 화질</string>
+    <string name="MIDS_GH_NPBODY_BY_NUMBER_OF_PLAYERS">플레이어 수</string>
+    <string name="MIDS_GH_NPBODY_BY_PLAY_TIME">플레이 시간</string>
+    <string name="MIDS_GH_NPBODY_COLLAPSE">접기</string>
+    <string name="MIDS_GH_NPBODY_DRAG_DOWNWARDS_TO_SHOW_GAME_TOOLS">게임툴즈를 표시하려면 아래로 내리세요</string>
+    <string name="MIDS_GH_NPBODY_EXPAND">펼치기</string>
+    <string name="MIDS_GH_NPBODY_FEATURED_GAMES">추천 게임</string>
+    <string name="MIDS_GH_NPBODY_FILE_SIZE_C_P1SS_P2SS">파일 크기: %1$s%2$s</string>
+    <string name="MIDS_GH_NPBODY_GAME_BEING_PLAYED">게임을 플레이 중입니다</string>
+    <string name="MIDS_GH_NPBODY_GAME_LAUNCHER">게임런처</string>
+    <string name="MIDS_GH_NPBODY_INSTALLED">설치됨</string>
+    <string name="MIDS_GH_NPBODY_NEW">신규</string>
+    <string name="MIDS_GH_NPBODY_NEW_GAMES_ABB">신규 게임</string>
+    <string name="MIDS_GH_NPBODY_NO_ANNOUNCEMENTS">공지사항이 없습니다</string>
+    <string name="MIDS_GH_NPBODY_NO_APPS_AVAILABLE_TO_ADD_TO_PS">%s에 추가 가능한 앱이 없습니다</string>
+    <string name="MIDS_GH_NPBODY_NO_AVAILABLE_GAMES">게임이 없습니다</string>
+    <string name="MIDS_GH_NPBODY_NO_GAMES">게임이 없습니다</string>
+    <string name="MIDS_GH_NPBODY_NO_INSTALLED_GAMES">설치한 게임이 없습니다</string>
+    <string name="MIDS_GH_NPBODY_NO_RECORDED_VIDEOS">녹화한 동영상이 없습니다</string>
+    <string name="MIDS_GH_NPBODY_NO_RESULTS_FOUND">검색 결과가 없습니다</string>
+    <string name="MIDS_GH_NPBODY_NO_SEARCH_RESULTS">검색 결과가 없습니다</string>
+    <string name="MIDS_GH_NPBODY_REMAINING_BATTERY_POWER_C_PDP" formatted="false">남은 배터리 전원: %d%</string>
+    <string name="MIDS_GH_NPBODY_SEARCH">검색</string>
+    <string name="MIDS_GH_NPBODY_SWIPE_SCREEN_TO_UNLOCK">잠금을 해제하려면 화면을 미세요</string>
+    <string name="MIDS_GH_OPT_ADD_APPS">앱 추가</string>
+    <string name="MIDS_GH_OPT_ADD_TO_HOME_SCREEN">홈 화면에 추가</string>
+    <string name="MIDS_GH_OPT_ADJUST_BITRATE_ACCORDING_TO_RESOLUTION">해상도에 따라 비트 전송률을 조절합니다.</string>
+    <string name="MIDS_GH_OPT_ALL">전체</string>
+    <string name="MIDS_GH_OPT_ALL_TIME">전체</string>
+    <string name="MIDS_GH_OPT_ALWAYS_RESTART">항상 다시 실행</string>
+    <string name="MIDS_GH_OPT_APP_INFO">애플리케이션 정보</string>
+    <string name="MIDS_GH_OPT_APP_INFO_ABB">앱 정보</string>
+    <string name="MIDS_GH_OPT_APP_INFO_ABB2">앱 정보</string>
+    <string name="MIDS_GH_OPT_AUTO">자동</string>
+    <string name="MIDS_GH_OPT_BACK_KEY_ONLY">뒤로가기 버튼만</string>
+    <string name="MIDS_GH_OPT_BOTH_RECENTS_AND_BACK_KEYS">최근 앱 및 뒤로가기 버튼</string>
+    <string name="MIDS_GH_OPT_CATEGORISE_AS_GAME">게임으로 분류</string>
+    <string name="MIDS_GH_OPT_CATEGORISE_AS_OTHER_APP">일반 앱으로 분류</string>
+    <string name="MIDS_GH_OPT_COMMUNITY">커뮤니티</string>
+    <string name="MIDS_GH_OPT_CUSTOM">직접 설정</string>
+    <string name="MIDS_GH_OPT_DEFAULT_IMAGE">기본 이미지</string>
+    <string name="MIDS_GH_OPT_DETAILS">상세정보</string>
+    <string name="MIDS_GH_OPT_DISPLAY_GAME_ICONS_ON_BOTH_APPS_AND_GAME_LAUNCHER">앱스 화면과 게임런처에 게임 아이콘 표시</string>
+    <string name="MIDS_GH_OPT_DISPLAY_GAME_ICONS_ON_GAME_LAUNCHER_ONLY">게임런처에만 게임 아이콘 표시</string>
+    <string name="MIDS_GH_OPT_DO_NOT_SHOW_AGAIN">다시 보지 않기</string>
+    <string name="MIDS_GH_OPT_EDIT_VIDEO_ABB">동영상 편집</string>
+    <string name="MIDS_GH_OPT_FRONT_CAMERA">전면 카메라</string>
+    <string name="MIDS_GH_OPT_FRONT_CAMERA_ABB">전면 카메라</string>
+    <string name="MIDS_GH_OPT_FULL_SCREEN">전체 화면</string>
+    <string name="MIDS_GH_OPT_GAME_AUDIO">게임 오디오</string>
+    <string name="MIDS_GH_OPT_GAME_SETTINGS">게임 설정</string>
+    <string name="MIDS_GH_OPT_GO_TO_DISCOVERY">찾기로 이동</string>
+    <string name="MIDS_GH_OPT_GO_TO_GAME_DISCOVERY">게임의 발견으로 이동</string>
+    <string name="MIDS_GH_OPT_GO_TO_GAME_LAUNCHER">게임런처로 이동</string>
+    <string name="MIDS_GH_OPT_GO_TO_SETTINGS_ABB">설정으로 이동</string>
+    <string name="MIDS_GH_OPT_HIDE">숨기기</string>
+    <string name="MIDS_GH_OPT_IMAGE_ABB">이미지</string>
+    <string name="MIDS_GH_OPT_IN_LAST_MONTH">지난 달</string>
+    <string name="MIDS_GH_OPT_IN_LAST_WEEK">지난 주</string>
+    <string name="MIDS_GH_OPT_I_AGREE_TO_RECEIVE_MARKETING_INFORMATION_HOPTIONAL">마케팅 정보를 받는 것에 동의합니다. (선택)</string>
+    <string name="MIDS_GH_OPT_LAST_MONTH">최근 1개월</string>
+    <string name="MIDS_GH_OPT_LAST_WEEK">최근 1주일</string>
+    <string name="MIDS_GH_OPT_MANAGE_GAME_NOTIFICATIONS">게임 알림 관리</string>
+    <string name="MIDS_GH_OPT_MICROPHONE">마이크</string>
+    <string name="MIDS_GH_OPT_MOVE_TO_OTHER_SCREEN_ABB">다른 화면으로 이동</string>
+    <string name="MIDS_GH_OPT_MY_DIARY">내 다이어리</string>
+    <string name="MIDS_GH_OPT_NONE">설정 안 함</string>
+    <string name="MIDS_GH_OPT_NORMAL">일반</string>
+    <string name="MIDS_GH_OPT_NO_ALERTS_DURING_GAME_ABB">게임 중 방해금지</string>
+    <string name="MIDS_GH_OPT_NO_ALERTS_WHILE_USING_APP">앱 사용 중 방해금지</string>
+    <string name="MIDS_GH_OPT_PLAYING_TIME_MODE_ABB">플레이 시간 모드</string>
+    <string name="MIDS_GH_OPT_RECENTS_KEY_ONLY">최근 앱 버튼만</string>
+    <string name="MIDS_GH_OPT_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_DEVICE_MAY_BE_RECORDED_WITH_GAME_AUDIO">게임 소리를 녹음합니다. 디바이스의 시스템 소리도 게임 소리와 함께 녹음될 수 있습니다.</string>
+    <string name="MIDS_GH_OPT_RECORD_EXTERNAL_AUDIO_USING_MICROPHONE">디바이스의 마이크로 외부소리를 녹음합니다.</string>
+    <string name="MIDS_GH_OPT_REGISTERED_APPS">등록된 앱</string>
+    <string name="MIDS_GH_OPT_REMOVE">삭제</string>
+    <string name="MIDS_GH_OPT_REMOVE_ABB">삭제</string>
+    <string name="MIDS_GH_OPT_REMOVE_ABB2">삭제</string>
+    <string name="MIDS_GH_OPT_REMOVE_APPS">앱 삭제</string>
+    <string name="MIDS_GH_OPT_SAVE_CUSTOM_POWER">직접 지정 절전</string>
+    <string name="MIDS_GH_OPT_SAVE_MAXIMUM_POWER">최대 절전</string>
+    <string name="MIDS_GH_OPT_SAVE_POWER">절전</string>
+    <string name="MIDS_GH_OPT_SAVE_POWER_FOR_GAMES">게임 중 전원 절약</string>
+    <string name="MIDS_GH_OPT_SCREEN_TOUCH_LOCK">화면 터치 잠금</string>
+    <string name="MIDS_GH_OPT_SELECT_APP_ABB">앱 선택</string>
+    <string name="MIDS_GH_OPT_SELECT_FROM_GALLERY_ABB2">갤러리에서 선택</string>
+    <string name="MIDS_GH_OPT_SHOW_A_PROFILE_IMAGE_WHILE_RECORDING">녹화 중에 프로필 이미지를 표시합니다.</string>
+    <string name="MIDS_GH_OPT_SHOW_NAVIGATION_BAR">탐색 표시줄 표시</string>
+    <string name="MIDS_GH_OPT_TAKE_PICTURE">사진 촬영</string>
+    <string name="MIDS_GH_OPT_TAKE_PICTURE_ABB3">사진 촬영</string>
+    <string name="MIDS_GH_OPT_TAP_HERE_TO_ADD_APPS">앱을 추가하려면 여기를 누르세요</string>
+    <string name="MIDS_GH_OPT_UNINSTALL_ABB">설치 삭제</string>
+    <string name="MIDS_GH_OPT_UNINSTALL_APPS">앱 삭제</string>
+    <string name="MIDS_GH_OPT_UNINSTALL_M_INSTALL">설치 삭제</string>
+    <string name="MIDS_GH_OPT_USE_THE_FRONT_CAMERA_TO_RECORD_YOUR_PROFILE">전면 카메라를 사용하여 프로필을 녹화합니다.</string>
+    <string name="MIDS_GH_POP_1_VIDEO_HAS_BEEN_SELECTED">동영상 1개를 선택한 상태입니다.</string>
+    <string name="MIDS_GH_POP_1_VIDEO_WILL_BE_DELETED">동영상 1개를 삭제합니다.</string>
+    <string name="MIDS_GH_POP_ALL_OF_YOUR_ALERTS_WILL_BE_MUTED_AND_HIDDEN_DURING_GAMEPLAY_MSG2">게임 중에는 모든 알림 소리를 끄고 알림을 표시하지 않습니다. 걸려오는 전화만 화면에 표시합니다.</string>
+    <string name="MIDS_GH_POP_AUDIO_SOURCE">오디오 소스</string>
+    <string name="MIDS_GH_POP_A_NEW_VERSION_IS_AVAILABLE">새 버전이 있습니다.</string>
+    <string name="MIDS_GH_POP_A_NEW_VERSION_IS_AVAILABLE_PS_MUST_BE_UPDATED_TO_CONTINUE">새 버전이 있습니다. 계속하려면 %s 앱을 업데이트하세요.</string>
+    <string name="MIDS_GH_POP_CHANGING_THE_OPTION_WILL_AFFECT_THE_POSITION_OF_APPS_ON_THE_APPS_SCREEN_MSG">옵션을 변경하면 앱스 화면의 앱 아이콘 위치가 변경될 수 있습니다. 앱스 화면에서 게임 아이콘을 숨깁니다. 계속하려면 확인 버튼을 누르세요.</string>
+    <string name="MIDS_GH_POP_CLOSE_ALL_RUNNING_GAMES_AND_OPEN_THEM_AGAIN_TO_APPLY_YOUR_CHANGES">변경사항을 적용하기 위해 실행 중인 게임을 모두 종료한 후 다시 실행합니다.</string>
+    <string name="MIDS_GH_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN">[데이터 로밍]이 해제된 상태입니다. Wi-Fi 네트워크에 연결하거나 [데이터 로밍]을 실행한 후 다시 시도하세요.</string>
+    <string name="MIDS_GH_POP_DATE">날짜</string>
+    <string name="MIDS_GH_POP_ENTER_THE_WEB_ADDRESS_YOU_WANT_TO_ADD_AS_A_SHORTCUT">바로가기로 추가할 웹 주소를 입력하세요.</string>
+    <string name="MIDS_GH_POP_FEATURES_MAY_VARY_DEPENDING_ON_THE_VERSION">버전에 따라 일부 기능이 다를 수 있습니다.</string>
+    <string name="MIDS_GH_POP_FILE_PATH">파일 경로</string>
+    <string name="MIDS_GH_POP_FILE_SIZE">파일 크기</string>
+    <string name="MIDS_GH_POP_GAMES_DOWNLOADED_FROM_APP_STORES_MSG">게임런처와 연동되지 않는 앱 스토어에서 다운로드한 게임은 등록되기까지 시간이 걸립니다. 등록을 요청하면 오직 게임만 등록됩니다.</string>
+    <string name="MIDS_GH_POP_GAME_ICONS_WILL_BE_HIDDEN_FROM_THE_APPS_SCREEN_AND_DISPLAYED_ON_GAME_LAUNCHER_ONLY_YOU_CAN_CHANGE_THIS_OPTION_IN_THE_GAME_LAUNCHER_SETTINGS">게임 아이콘을 앱스 화면에서 숨기고 게임런처에만 표시합니다. 이 옵션은 게임런처 설정에서 변경할 수 있습니다.</string>
+    <string name="MIDS_GH_POP_GAME_ICONS_WILL_BE_HIDDEN_FROM_THE_APPS_SCREEN_MSG">앱스 화면에서 게임 아이콘을 숨깁니다. 앱스 화면의 앱 아이콘 위치가 변경될 수 있습니다. 계속하려면 확인 버튼을 누르세요.</string>
+    <string name="MIDS_GH_POP_GAME_LAUNCHER_HAS_BEEN_DELETED_GAME_TOOLS_WILL_ALSO_BE_DELETED">게임런처가 삭제되어 게임툴즈도 삭제합니다.</string>
+    <string name="MIDS_GH_POP_GAME_LAUNCHER_WILL_BE_INSTALLED_AFTER_YOUR_DEVICE_RESTARTS">디바이스를 다시 시작하면 게임런처를 설치합니다.</string>
+    <string name="MIDS_GH_POP_GAME_TOOLS_INSTALLED">게임툴즈를 설치했습니다.</string>
+    <string name="MIDS_GH_POP_GAME_TOOLS_IS_REQUIRED_TO_USE_THIS_SERVICE_GAME_TOOLS_WILL_BE_DOWNLOADED_AND_INSTALLED">이 서비스를 이용하려면 게임툴즈가 필요합니다. 게임툴즈를 다운로드하여 설치합니다.</string>
+    <string name="MIDS_GH_POP_IT_IS_RECOMMENDED_THAT_YOU_PLAY_THE_GAME_IN_FULL_SCREEN_MODE_MSG">전체 화면 모드에서 게임을 실행할 것을 권장합니다. 화면 보기를 변경하려면 게임을 다시 시작해야 합니다. 이 설정은 현재 게임에만 적용됩니다.</string>
+    <string name="MIDS_GH_POP_LENGTH">길이</string>
+    <string name="MIDS_GH_POP_MANAGE_ALL_YOUR_GAMES_IN_ONE_PLACE_AND_TRY_OUT_ADDITIONAL_GAME_FEATURES">모든 게임을 한곳에서 관리할 수 있으며 게임 관련 기능도 손쉽게 사용할 수 있습니다.</string>
+    <string name="MIDS_GH_POP_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_OR_TURN_ON_MOBILE_DATA_AND_TRY_AGAIN">모바일 데이터 기능이 해제된 상태입니다. Wi-Fi 네트워크에 연결하거나 모바일 데이터 기능을 실행한 후 다시 시도하세요.</string>
+    <string name="MIDS_GH_POP_NO_SIGNAL_HAS_BEEN_FOUND_FOR_A_MOBILE_NETWORK">모바일 네트워크 신호를 찾을 수 없습니다.</string>
+    <string name="MIDS_GH_POP_P1SS_FEATURES_HP2SS_WILL_NOT_BE_APPLIED_TO_THIS_APP_BECAUSE_IT_IS_NOT_CATEGORISED_AS_A_GAME_MSG">이 앱은 게임으로 분류되지 않아 %1$s 기능(%2$s)을 적용할 수 없습니다. %3$s 기능을 이 앱에 적용하려면 게임으로 추가를 누르세요.</string>
+    <string name="MIDS_GH_POP_P1SS_IS_DISABLED_TAP_OK_TO_ENABLE_P2SS">%1$s 앱 사용이 중지된 상태입니다. %2$s 앱을 사용하도록 설정하려면 확인 버튼을 누르세요.</string>
+    <string name="MIDS_GH_POP_P1SS_IS_REQUIRED_TO_USE_THIS_SERVICE_MSG">이 서비스를 사용하려면 %1$s 앱이 필요합니다. %2$s 앱을 다운로드하여 설치할 수 있도록 Galaxy Apps로 이동합니다.</string>
+    <string name="MIDS_GH_POP_P1SS_MUST_BE_INSTALLED_TO_USE_THIS_SERVICE_MSG">이 서비스를 사용하려면 %1$s 앱을 설치해야 합니다. Galaxy Apps로 이동하여 %2$s 앱을 설치하려면 확인 버튼을 누르세요.</string>
+    <string name="MIDS_GH_POP_P1SS_WILL_NOT_WORK_WHILE_P2SS_IN_P3SS_IS_DISABLED_YOU_CAN_ENABLE_IT_IN_SETTINGS">%1$s 앱은 [%3$s]에서 %2$s 옵션이 해제되면 작동하지 않습니다. 설정에서 이 옵션을 실행할 수 있습니다.</string>
+    <string name="MIDS_GH_POP_PD_VIDEOS_HAVE_BEEN_SELECTED">동영상 %d개를 선택했습니다.</string>
+    <string name="MIDS_GH_POP_PD_VIDEOS_WILL_BE_DELETED">동영상 %d개를 삭제합니다.</string>
+    <string name="MIDS_GH_POP_PLAY_YOUR_GAMES_LONGER_BY_LOWERING_THE_GRAPHICS_QUALITY_TO_SAVE_BATTERY_POWER">배터리 사용량을 줄일 수 있도록 그래픽 품질을 낮춰 게임을 더 오래 즐길 수 있습니다.</string>
+    <string name="MIDS_GH_POP_PROFILE_IMAGE_SIZE">프로필 이미지 크기</string>
+    <string name="MIDS_GH_POP_PROFILE_SOURCE">프로필 소스</string>
+    <string name="MIDS_GH_POP_PROFILE_VIDEO_SIZE">프로필 동영상 크기</string>
+    <string name="MIDS_GH_POP_PS_AND_ALL_THE_FEATURES_RELATED_TO_IT_WILL_BE_DISABLED">%s 및 연관된 모든 기능을 해제합니다.</string>
+    <string name="MIDS_GH_POP_PS_AND_ALL_THE_FEATURES_RELATED_TO_IT_WILL_BE_DISABLED_YOUR_DATA_WILL_ALSO_BE_DELETED">%s 및 연관된 모든 기능을 해제하고 데이터도 삭제합니다.</string>
+    <string name="MIDS_GH_POP_PS_IS_DISABLED_YOU_CAN_ENABLE_IT_IN_SETTINGS">%s 앱이 사용하지 않도록 설정되어 있습니다. 설정에서 해당 앱을 사용하도록 설정하세요.</string>
+    <string name="MIDS_GH_POP_PS_WILL_BE_UNINSTALLED">%s을(를) 삭제합니다.</string>
+    <string name="MIDS_GH_POP_PS_WILL_BE_UPDATED_TO_THE_LATEST_VERSION_TO_CONTINUE">계속 진행하기 위해 %s 앱을 최신 버전으로 업데이트합니다.</string>
+    <string name="MIDS_GH_POP_REGISTERING_ING">등록 중...</string>
+    <string name="MIDS_GH_POP_RESOLUTION">해상도</string>
+    <string name="MIDS_GH_POP_RESTARTING_ING">다시 시작하는 중...</string>
+    <string name="MIDS_GH_POP_SAVE_POWER_DURING_GAME_NOT_AVAILABLE_FOR_HD_RESOLUTION">HD 해상도에서는 게임 절전 모드를 사용할 수 없습니다.</string>
+    <string name="MIDS_GH_POP_THE_ESTIMATED_BATTERY_EFFICIENCY_MAY_VARY_DEPENDING_ON_THE_GAME">늘어나는 배터리 사용 시간은 실제 게임에 따라 달라질 수 있습니다.</string>
+    <string name="MIDS_GH_POP_THE_FUNCTION_MANAGED_BY_GAME_TUNER_WILL_BE_RESET_TO_DEFAULT">게임 튜너에서 관리하는 설정을 초기화합니다.</string>
+    <string name="MIDS_GH_POP_THE_P1SS_SETTING_IN_P2SS_IS_DISABLED">%2$s의 %1$s 설정을 해제했습니다.</string>
+    <string name="MIDS_GH_POP_THE_PS_ICON_ON_YOUR_HOME_SCREEN_AND_IN_APPS_WILL_BE_REMOVED">%s 아이콘을 홈 화면과 앱스 화면에서 삭제합니다.</string>
+    <string name="MIDS_GH_POP_THE_PS_LOG_WILL_BE_CLEARED">%s 기록을 모두 삭제합니다.</string>
+    <string name="MIDS_GH_POP_THE_PS_LOG_WILL_BE_DELETED">%s 기록을 삭제합니다.</string>
+    <string name="MIDS_GH_POP_THE_SAVE_POWER_DURING_GAME_FUNCTION_MANAGED_BY_GAME_TUNER_WILL_BE_RESET_TO_DEFAULT">게임 튜너에서 관리하는 게임 절전 모드 설정을 기본값으로 초기화합니다.</string>
+    <string name="MIDS_GH_POP_THE_SELECTED_GAMES_CANNOT_BE_REGISTERED_DUE_TO_A_POLICY_VIOLATION">정책에 위배되어 선택한 게임을 등록할 수 없습니다.</string>
+    <string name="MIDS_GH_POP_THIS_APP_IS_NOT_LISTED_AS_A_GAME_IN_PS_TAP_REQUEST_REGISTRATION_TO_ADD_IT">%s에 게임으로 등록되지 않은 앱입니다. 추가하려면 등록 요청 버튼을 누르세요.</string>
+    <string name="MIDS_GH_POP_THIS_WILL_AFFECT_THE_POSITION_OF_APPS_ON_THE_APPS_SCREEN_MSG">앱스 화면의 앱 아이콘 위치가 변경될 수 있습니다. 앱스 화면에서 게임 아이콘을 숨깁니다.</string>
+    <string name="MIDS_GH_POP_TITLE">제목</string>
+    <string name="MIDS_GH_POP_TITLE_C_PS">제목: %s</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_CATEGORIES_CLOSE_THE_APP">카테고리를 변경하려면 앱을 종료하세요.</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_CATEGORIES_IT_WILL_CLOSE">카테고리를 변경하면 앱이 종료됩니다.</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_SCREEN_VIEW_YOU_MUST_RESTART_THE_GAME_THIS_SETTING_ONLY_APPLIES_TO_THE_CURRENT_GAME">화면 보기를 변경하려면 게임을 다시 시작해야 합니다. 이 설정은 현재 게임에만 적용됩니다.</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAMEPLAY_SETTINGS_MSG">게임 절전 모드 설정을 변경하면 화질을 최적화하기 위해 현재 실행 중인 게임이 다시 시작될 수 있습니다.</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAMEPLAY_SETTINGS_MSG2">게임 절전 모드 설정을 변경하면 화질을 최적화하기 위해 %s 게임이 다시 시작될 수 있습니다.</string>
+    <string name="MIDS_GH_POP_TO_CHANGE_YOUR_SAVE_POWER_DURING_GAME_SETTINGS_MSG">게임 절전 모드 설정을 변경하면 화질을 최적화하기 위해 현재 실행 중인 게임이 다시 시작될 수 있습니다.</string>
+    <string name="MIDS_GH_POP_TO_PREVENT_UNINTENTIONAL_TOUCHES_DURING_THE_GAME_MSG">게임 중에 일어나는 의도하지 않은 터치를 방지하기 위해 게임 실행 중에는 휴대전화 양쪽의 Edge 터치를 잠급니다.</string>
+    <string name="MIDS_GH_POP_TO_SHOW_IN_FULL_SCREEN_VIEW_MSG">전체 화면으로 사용하려면 게임을 다시 시작해야 합니다. 전체 화면을 사용하면 화면 비율이 맞지 않을 수 있습니다. 이 설정은 현재 게임에만 적용됩니다.</string>
+    <string name="MIDS_GH_POP_TO_USE_GAME_TOOLS_IT_MUST_BE_ENABLED">게임툴즈를 사용하려면 게임툴즈를 켜야 합니다.</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_CAPTURE_THE_SCREEN_DELETE_SOME_FILES_AND_TRY_AGAIN">화면을 캡처할 수 없습니다. 일부 파일을 삭제한 후 다시 시도하세요.</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN">비행기 탑승 모드 실행 중에는 모바일 네트워크에 연결할 수 없습니다. Wi-Fi 네트워크에 연결하거나 비행기 탑승 모드를 해제한 후 다시 시도하세요.</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_REGISTER_GAMES_THAT_HAVE_BEEN_DOWNLOADED_FROM_UNKNOWN_SOURCES">출처를 알 수 없는 곳에서 다운로드한 게임은 등록할 수 없습니다.</string>
+    <string name="MIDS_GH_POP_UNABLE_TO_REGISTER_THE_SELECTED_GAME_AN_UNKNOWN_ERROR_HAS_OCCURRED">알 수 없는 오류가 발생하여 선택한 게임을 등록할 수 없습니다.</string>
+    <string name="MIDS_GH_POP_UNKNOWN">번호정보 없음</string>
+    <string name="MIDS_GH_POP_USING_MOBILE_DATA_WHEN_ROAMING_MAY_INCUR_ADDITIONAL_CHARGES_DEPENDING_ON_YOUR_PAYMENT_PLAN">로밍 중에 모바일 데이터를 사용하면 요금제에 따라 추가요금이 부과될 수 있습니다.</string>
+    <string name="MIDS_GH_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN">Wi-Fi 연결이 필요합니다. Wi-Fi 네트워크에 연결한 후 다시 시도하세요.</string>
+    <string name="MIDS_GH_POP_YOUR_DEVICE_IS_NOT_CONNECTED_TO_A_WI_FI_NETWORK_CONNECTING_TO_MOBILE_NETWORKS_MAY_RESULT_IN_ADDITIONAL_CHARGES_DEPENDING_ON_YOUR_PAYMENT_PLAN">Wi-Fi 네트워크에 연결되지 않았습니다. 모바일 네트워크에 연결하면 요금제에 따라 추가요금이 부과될 수 있습니다.</string>
+    <string name="MIDS_GH_POP_YOUR_DEVICE_WILL_RESTART_TO_APPLY_THE_NEW_SETTINGS_FOR_GAME_LAUNCHER">게임런처의 새 설정을 적용하기 위해 디바이스를 다시 시작합니다.</string>
+    <string name="MIDS_GH_POP_YOUR_REGISTRATION_REQUEST_HAS_BEEN_SUBMITTED">등록 요청이 접수되었습니다.</string>
+    <string name="MIDS_GH_POP_YOU_CAN_ENABLE_PS_IN_SETTINGS">설정에서 %s를 사용하도록 설정할 수 있습니다.</string>
+    <string name="MIDS_GH_POP_YOU_CAN_ONLY_REGISTER_GAMES_DOWNLOADED_FROM_THE_GAMES_CATEGORY">게임 카테고리에서 다운로드한 게임만 등록할 수 있습니다.</string>
+    <string name="MIDS_GH_SBODY_100_KPLUS">10만+</string>
+    <string name="MIDS_GH_SBODY_100_MPLUS">1억+</string>
+    <string name="MIDS_GH_SBODY_10_KPLUS">1만+</string>
+    <string name="MIDS_GH_SBODY_10_MINPLUS">10분+</string>
+    <string name="MIDS_GH_SBODY_10_MIN_MINUS">10분-</string>
+    <string name="MIDS_GH_SBODY_10_MPLUS">1,000만+</string>
+    <string name="MIDS_GH_SBODY_1_DAY_AGO_ABB">1일 전</string>
+    <string name="MIDS_GH_SBODY_1_HOUR_AGO_ABB">1시간 전</string>
+    <string name="MIDS_GH_SBODY_1_HRPLUS">1시간+</string>
+    <string name="MIDS_GH_SBODY_1_KPLUS">1천+</string>
+    <string name="MIDS_GH_SBODY_1_MINUTE_AGO_ABB">1분 전</string>
+    <string name="MIDS_GH_SBODY_1_MONTH_AGO_ABB">1개월 전</string>
+    <string name="MIDS_GH_SBODY_1_MPLUS">100만+</string>
+    <string name="MIDS_GH_SBODY_1_VIDEO">동영상 1개</string>
+    <string name="MIDS_GH_SBODY_2_HRSPLUS">2시간+</string>
+    <string name="MIDS_GH_SBODY_30_MINPLUS">30분+</string>
+    <string name="MIDS_GH_SBODY_4_HRSPLUS">4시간+</string>
+    <string name="MIDS_GH_SBODY_500_KPLUS">50만+</string>
+    <string name="MIDS_GH_SBODY_50_KPLUS">5만+</string>
+    <string name="MIDS_GH_SBODY_50_MPLUS">5,000만+</string>
+    <string name="MIDS_GH_SBODY_5_KPLUS">5천+</string>
+    <string name="MIDS_GH_SBODY_5_MPLUS">500만+</string>
+    <string name="MIDS_GH_SBODY_6_HRSPLUS">6시간+</string>
+    <string name="MIDS_GH_SBODY_8_HRSPLUS">8시간+</string>
+    <string name="MIDS_GH_SBODY_ADD_A_SHORTCUT_OR_WEB_ADDRESS_FOR_QUICK_ACCESS_DURING_GAMEPLAY">게임 중에 빠르게 실행하거나 열어보기를 원하는 바로가기나 웹 주소를 추가하세요.</string>
+    <string name="MIDS_GH_SBODY_ALLOW_OR_BLOCK_NOTIFICATIONS_FROM_INDIVIDUAL_GAME_APPS">개별 게임의 알림을 허용하거나 차단합니다.</string>
+    <string name="MIDS_GH_SBODY_AUTO">자동</string>
+    <string name="MIDS_GH_SBODY_AUTO_HBASED_ON_RESOLUTION">자동(해상도에 맞게 조절)</string>
+    <string name="MIDS_GH_SBODY_AUTO_HPD_MBPS">자동(%dMbps)</string>
+    <string name="MIDS_GH_SBODY_BLOCKED">차단됨</string>
+    <string name="MIDS_GH_SBODY_CHECK_PS_ALBUM_IN_GALLERY">갤러리 앱에서 %s 앨범을 확인하세요.</string>
+    <string name="MIDS_GH_SBODY_CHECK_THE_CURRENT_APP_VERSION_AND_LEGAL_INFO">현재 앱 버전 및 법률정보를 확인할 수 있습니다.</string>
+    <string name="MIDS_GH_SBODY_CLEANING_ING_ABB">정리 중...</string>
+    <string name="MIDS_GH_SBODY_CLEARED">비움</string>
+    <string name="MIDS_GH_SBODY_CONFIGURE_YOUR_PROFILE_SOURCE_AUDIO_SOURCE_TOUCH_INTERACTION_RESOLUTION_AND_BITRATE">프로필 소스, 오디오 소스, 터치 입력, 해상도, 비트 전송률을 설정합니다.</string>
+    <string name="MIDS_GH_SBODY_DISPLAY_NORMAL_SCREEN_QUALITY_DURING_GAMEPLAY">게임 중에는 일반 화질로 표시합니다.</string>
+    <string name="MIDS_GH_SBODY_DO_NOT_USE_SAVE_POWER_DURING_GAME">게임 절전 모드를 사용하지 않습니다.</string>
+    <string name="MIDS_GH_SBODY_EXTREMELY_LOW">매우 낮음</string>
+    <string name="MIDS_GH_SBODY_GAMES_RANKED_BY_THE_LONGEST_PLAYING_TIMES">가장 긴 플레이 시간을 기록한 게임입니다.</string>
+    <string name="MIDS_GH_SBODY_GAMES_RANKED_BY_THE_MOST_USERS_PER_DAY">하루 동안 가장 많은 사용자가 즐긴 게임입니다.</string>
+    <string name="MIDS_GH_SBODY_GAME_SCREEN_CAPTURED">게임 화면을 캡처했습니다</string>
+    <string name="MIDS_GH_SBODY_HIDE_THE_FLOATING_BUTTON">플로팅 버튼을 숨깁니다.</string>
+    <string name="MIDS_GH_SBODY_LOW">낮음</string>
+    <string name="MIDS_GH_SBODY_LOWER_THE_RESOLUTION_AND_FRAME_RATE_TO_A_MINIMUM_LEVEL_TO_SAVE_POWER">해상도와 프레임 속도를 최소 수준으로 낮춰 배터리 사용량을 줄입니다.</string>
+    <string name="MIDS_GH_SBODY_LOWER_YOUR_BATTERY_USAGE_BY_USING_A_LOWER_RESOLUTION">해상도를 낮게 설정하여 배터리 사용량을 줄입니다.</string>
+    <string name="MIDS_GH_SBODY_LOWER_YOUR_BATTERY_USAGE_BY_USING_A_LOWER_RESOLUTION_AND_FRAME_RATE">해상도와 프레임 속도를 낮게 설정하여 배터리 사용량을 줄입니다.</string>
+    <string name="MIDS_GH_SBODY_MANAGE_USEFUL_FEATURES_WHILE_YOU_PLAY_GAMES">게임에 유용한 기능들을 사용합니다.</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_AND_INCREASE_PLAYING_TIME_RESOLUTION_AND_FRAME_RATE_MAY_BE_DECREASED">배터리 사용량을 최소화하여 더 오래 플레이할 수 있게 합니다. 해상도와 프레임 속도가 떨어질 수 있습니다.</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_CUSTOMISING_YOUR_SETTINGS">설정을 직접 변경하여 배터리 사용량을 최소화합니다.</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_OPTIMISING_YOUR_SCREEN_DISPLAY_QUALITY">그래픽 품질을 최적화하여 배터리 사용량을 줄입니다.</string>
+    <string name="MIDS_GH_SBODY_MINIMISE_YOUR_BATTERY_USAGE_BY_USING_THE_LOWEST_RESOLUTION_AND_FRAME_RATE">해상도와 프레임 속도를 가장 낮게 설정하여 배터리 사용량을 최소화합니다.</string>
+    <string name="MIDS_GH_SBODY_NEWLY_INSTALLED_ABB">새로 설치한 게임</string>
+    <string name="MIDS_GH_SBODY_NORMAL">일반</string>
+    <string name="MIDS_GH_SBODY_NOT_AVAILABLE">사용할 수 없음</string>
+    <string name="MIDS_GH_SBODY_OFF">꺼짐</string>
+    <string name="MIDS_GH_SBODY_ON">켜짐</string>
+    <string name="MIDS_GH_SBODY_OPTIMISE_THE_GRAPHICS_QUALITY_AUTOMATICALLY_FOR_SMOOTHER_GAMEPLAY">게임을 쾌적하게 즐길 수 있도록 그래픽 품질을 자동으로 최적화합니다.</string>
+    <string name="MIDS_GH_SBODY_PD_DAYS_AGO_ABB">%d일 전</string>
+    <string name="MIDS_GH_SBODY_PD_HOURS_AGO_ABB">%d시간 전</string>
+    <string name="MIDS_GH_SBODY_PD_MINUTES_AGO_ABB">%d분 전</string>
+    <string name="MIDS_GH_SBODY_PD_MONTHS_AGO_ABB">%d개월 전</string>
+    <string name="MIDS_GH_SBODY_PD_VIDEOS">동영상 %d개</string>
+    <string name="MIDS_GH_SBODY_PLAYING_ABB">실행 중</string>
+    <string name="MIDS_GH_SBODY_POPULAR_GAME_VIDEOS_ON_YOUTUBE">YouTube에서 인기 있는 게임 동영상입니다.</string>
+    <string name="MIDS_GH_SBODY_PREPARING_ING">준비 중...</string>
+    <string name="MIDS_GH_SBODY_PREVENT_FRAME_RATE_DEGRADATION_MSG">프레임 속도가 떨어지지 않게 방지합니다. 일부 게임은 강제 종료될 수 있으며 배터리 사용량이 늘어납니다.</string>
+    <string name="MIDS_GH_SBODY_RECEIVE_NOTIFICATIONS_OF_PROMOTIONS_AND_MARKETING_INFORMATION_FROM_PS">%s에서 프로모션과 마케팅 정보 알림을 받습니다.</string>
+    <string name="MIDS_GH_SBODY_RECORDED_C_P1SD_CP2SD_P3SD_P4SD_P5SD">녹화됨: %1$d:%2$d %3$d/%4$d/%5$d</string>
+    <string name="MIDS_GH_SBODY_RECORDING_ING">녹화 중...</string>
+    <string name="MIDS_GH_SBODY_RECORDS_TOUCH_INTERACTION_WHEN_RECORDING_A_GAME">게임을 녹화할 때 손으로 누르는 동작도 녹화합니다.</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_THE_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_DEVICE_MAY_BE_RECORDED_WITH_GAME_AUDIO">게임 소리를 녹음합니다. 디바이스의 시스템 소리도 게임 소리와 함께 녹음될 수 있습니다.</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_PHONE_MAY_ALSO_BE_RECORDED">게임 소리를 녹음합니다. 휴대전화의 시스템 소리도 게임 소리와 함께 녹음될 수 있습니다.</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_GAME_SYSTEM_SOUNDS_THAT_OCCUR_ON_YOUR_TABLET_MAY_ALSO_BE_RECORDED">게임 소리를 녹음합니다. 태블릿의 시스템 소리도 게임 소리와 함께 녹음될 수 있습니다.</string>
+    <string name="MIDS_GH_SBODY_RECORD_AUDIO_FROM_YOUR_PHONE_SYSTEM_SOUNDS_MAY_BE_RECORDED">휴대전화의 소리를 녹음합니다. 디바이스의 시스템 소리도 함께 녹음될 수 있습니다.</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_THE_DEVICE_MICROPHONE">디바이스의 마이크로 외부 소리를 녹음합니다.</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_YOUR_PHONE_MICROPHONE">휴대전화의 마이크로 외부 소리를 녹음합니다.</string>
+    <string name="MIDS_GH_SBODY_RECORD_EXTERNAL_SOUND_USING_YOUR_TABLET_MICROPHONE">태블릿의 마이크로 외부 소리를 녹음합니다.</string>
+    <string name="MIDS_GH_SBODY_RECORD_YOUR_GAMEPLAY_WITHOUT_A_PROFILE">내 모습을 포함하지 않고 게임 화면만 녹화합니다.</string>
+    <string name="MIDS_GH_SBODY_RECORD_YOUR_SCREEN_WITHOUT_A_PROFILE">내 모습을 포함하지 않고 화면을 녹화합니다.</string>
+    <string name="MIDS_GH_SBODY_SAVE_BATTERY_POWER_DURING_GAMEPLAY_BY_DOWNGRADING_THE_VIDEO_QUALITY">게임 영상의 화질을 낮춰 배터리 사용량을 줄입니다.</string>
+    <string name="MIDS_GH_SBODY_SAVING_ING">저장 중...</string>
+    <string name="MIDS_GH_SBODY_SET_AS_PRIORITY">우선권 설정</string>
+    <string name="MIDS_GH_SBODY_SET_BY_GAME_TUNER">게임 튜너 설정에 따름</string>
+    <string name="MIDS_GH_SBODY_SHOW_THE_FLOATING_BUTTON">플로팅 버튼을 표시합니다.</string>
+    <string name="MIDS_GH_SBODY_TAP_HERE_TO_SHOW_GAME_TOOLS_AS_A_FLOATING_BUTTON">게임툴즈를 플로팅 버튼으로 표시하려면 여기를 누르세요.</string>
+    <string name="MIDS_GH_SBODY_TAP_HERE_TO_START_USING_GAME_LAUNCHER">게임런처를 사용하려면 여기를 누르세요.</string>
+    <string name="MIDS_GH_SBODY_THIS_IS_THE_DEFAULT_BASIC_SETTING_APPLIED_TO_GAMEPLAY">게임 실행 시 적용되는 기본 설정입니다.</string>
+    <string name="MIDS_GH_SBODY_USED">사용</string>
+    <string name="MIDS_GH_SBODY_USE_THE_FRONT_CAMERA_TO_RECORD_YOURSELF_DURING_GAMEPLAY">게임 실행 중 전면 카메라를 사용하여 내 모습을 녹화합니다.</string>
+    <string name="MIDS_GH_SBODY_USE_THE_FRONT_CAMERA_TO_RECORD_YOURSELF_WHILE_RECORDING_YOUR_SCREEN">화면을 녹화하는 동안에 전면 카메라를 사용하여 내 모습을 녹화합니다.</string>
+    <string name="MIDS_GH_SBODY_YOUTUBE_GAME_VIDEOS_BASED_ON_YOUR_INSTALLED_GAMES">설치된 게임과 관련된 YouTube 게임 동영상입니다.</string>
+    <string name="MIDS_GH_TAB2_PLAYED_GAMES">플레이한 게임</string>
+    <string name="MIDS_GH_TAB2_RECORDED_VIDEOS">녹화한 동영상</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DESELECT_ALL">모두 해제하려면 두 번 누르세요.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DESELECT_ALL_GAMES">모든 게임 선택을 해제하려면 두 번 누르세요.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_DOWNLOAD_GAME">게임을 다운로드하려면 두 번 누르세요.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_EDIT">편집하려면 두 번 누르세요.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_HIDE_ADDITIONAL_FIELDS">추가 입력란을 숨기려면 두 번 누르세요.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SELECT_ALL">모두 선택하려면 두 번 누르세요.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SELECT_ALL_GAMES">모든 게임을 선택하려면 두 번 누르세요.</string>
+    <string name="MIDS_GH_TBBODY_DOUBLE_TAP_TO_SHOW_ADDITIONAL_FIELDS">추가 입력란을 표시하려면 두 번 누르세요.</string>
+    <string name="MIDS_GH_TBBODY_NAVIGATE_UP">상위 메뉴로 이동합니다.</string>
+    <string name="MIDS_GH_TBBODY_NOT_SELECTED">선택되지 않았습니다.</string>
+    <string name="MIDS_GH_TBBODY_PROCESSING">처리 중입니다.</string>
+    <string name="MIDS_GH_TBBODY_SELECTED">선택했습니다.</string>
+    <string name="MIDS_GH_TBBODY_SET_PROFILE_SIZE_TO_PD_PERCENT">프로필 크기를 %d퍼센트로 설정합니다.</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_CLOSE">종료하려면 누르세요.</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_DOWNLOAD_GAME">게임을 다운로드하려면 누르세요.</string>
+    <string name="MIDS_GH_TBBODY_TAP_TO_VIEW_DETAILS">자세한 내용을 보려면 누르세요.</string>
+    <string name="MIDS_GH_TBOPT_1_SELECTED">1개 선택</string>
+    <string name="MIDS_GH_TBOPT_ADD_APPS">앱 추가</string>
+    <string name="MIDS_GH_TBOPT_BUTTON">버튼</string>
+    <string name="MIDS_GH_TBOPT_CANCEL">취소</string>
+    <string name="MIDS_GH_TBOPT_CLOSED">종료</string>
+    <string name="MIDS_GH_TBOPT_DECREASE_PROFILE_SIZE">프로필 크기 줄이기</string>
+    <string name="MIDS_GH_TBOPT_DISABLE">사용 안 함</string>
+    <string name="MIDS_GH_TBOPT_DISABLED">사용 안 함</string>
+    <string name="MIDS_GH_TBOPT_DOWNLOAD_RECOMMENDED_GAME">추천 게임 다운로드</string>
+    <string name="MIDS_GH_TBOPT_DROPDOWN_LIST">드롭다운 목록</string>
+    <string name="MIDS_GH_TBOPT_ENABLED">사용 중</string>
+    <string name="MIDS_GH_TBOPT_FEATURED">추천</string>
+    <string name="MIDS_GH_TBOPT_GAME_BOOST">게임 부스터</string>
+    <string name="MIDS_GH_TBOPT_GAME_LAUNCHER">게임런처</string>
+    <string name="MIDS_GH_TBOPT_HEADER">머리글</string>
+    <string name="MIDS_GH_TBOPT_INCREASE_PROFILE_SIZE">프로필 크기 늘리기</string>
+    <string name="MIDS_GH_TBOPT_INSTALL">설치</string>
+    <string name="MIDS_GH_TBOPT_LINK">링크</string>
+    <string name="MIDS_GH_TBOPT_LIST">목록</string>
+    <string name="MIDS_GH_TBOPT_MORE">더 보기</string>
+    <string name="MIDS_GH_TBOPT_NAVIGATE_UP">상위 메뉴로 이동</string>
+    <string name="MIDS_GH_TBOPT_NOT_AVAILABLE">사용할 수 없음</string>
+    <string name="MIDS_GH_TBOPT_NOT_SELECTED">선택 안 됨</string>
+    <string name="MIDS_GH_TBOPT_NO_ITEMS_SELECTED">선택한 항목 없음</string>
+    <string name="MIDS_GH_TBOPT_OPEN">실행</string>
+    <string name="MIDS_GH_TBOPT_OVERLAY_SCREEN">오버레이 화면</string>
+    <string name="MIDS_GH_TBOPT_PD_PERCENT">%d퍼센트</string>
+    <string name="MIDS_GH_TBOPT_PD_SELECTED">%d개 선택</string>
+    <string name="MIDS_GH_TBOPT_PLAY_STORE">플레이 스토어</string>
+    <string name="MIDS_GH_TBOPT_POP_UP_MESSAGE">팝업 메시지</string>
+    <string name="MIDS_GH_TBOPT_PROFILE_SOURCE">프로필 소스</string>
+    <string name="MIDS_GH_TBOPT_RANKING_PD">순위 %d위</string>
+    <string name="MIDS_GH_TBOPT_SAVE_POWER_DURING_GAME">게임 절전 모드</string>
+    <string name="MIDS_GH_TBOPT_SEEK_CONTROL">조절 막대</string>
+    <string name="MIDS_GH_TBOPT_SELECTED">선택됨</string>
+    <string name="MIDS_GH_TBOPT_SELECT_VIDEOS">동영상 선택</string>
+    <string name="MIDS_GH_TBOPT_SETTINGS">설정</string>
+    <string name="MIDS_GH_TBOPT_SIZE_CONTROL">크기 조절</string>
+    <string name="MIDS_GH_TBOPT_SWITCH">스위치</string>
+    <string name="MIDS_GH_TBOPT_S_GAMES">S게임</string>
+    <string name="MIDS_GH_TBOPT_TEXT_FIELD">문자 입력창</string>
+    <string name="MIDS_GH_TBOPT_TICKBOX">체크박스</string>
+    <string name="MIDS_GH_TBOPT_UNINSTALL">삭제</string>
+    <string name="MIDS_GH_TBOPT_VIEW_BY">보기 방식</string>
+    <string name="MIDS_GH_TBOPT_VIEW_TYPE">보기 방식</string>
+    <string name="MIDS_GH_TPOP_APP_FUNCTION_NOT_AVAILABLE">사용할 수 없는 앱/기능입니다.</string>
+    <string name="MIDS_GH_TPOP_BACK_KEY_LOCKED_DURING_GAMEPLAY">게임 중에는 뒤로가기 버튼을 잠급니다.</string>
+    <string name="MIDS_GH_TPOP_CLOSE_ALL_GAMES_AND_TRY_AGAIN">모든 게임을 종료한 후 다시 시도하세요.</string>
+    <string name="MIDS_GH_TPOP_CURRENTLY_PLAYING_PS">현재 %s 실행 중입니다.</string>
+    <string name="MIDS_GH_TPOP_DRAG_QUICK_PANEL_DOWN_TO_SHOW_FLOATING_BUTTON_AGAIN">플로팅 버튼을 다시 표시하려면 빠른 설정창을 아래로 내리세요.</string>
+    <string name="MIDS_GH_TPOP_FAILED_TO_INSTALL_PS">%s 앱을 설치하지 못했습니다.</string>
+    <string name="MIDS_GH_TPOP_FAILED_TO_RECORD_DEVICE_ERROR_OCCURRED">오류가 발생하여 녹화할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_GAME_AUDIO_MUTED_WHEN_OPENED_VIA_PS_CHANGE_VOLUME_WHILE_GAME_OPEN">%s에서 실행할 때 게임 소리를 끕니다. 게임을 실행한 후에 소리 크기를 변경하세요.</string>
+    <string name="MIDS_GH_TPOP_GAME_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_MSG">%s에서 게임을 실행할 때 게임 소리를 끕니다. 게임을 실행한 후에 소리 크기를 변경할 수 있습니다.</string>
+    <string name="MIDS_GH_TPOP_GAME_SHOWN_IN_185_C9_FULL_SCREEN_VIEW_IF_IT_DOESNT_FIT_ASPECT_RATIO_DISABLE_FULL_SCREEN_MODE">게임을 18.5:9 비율의 전체 화면으로 표시합니다. 화면 비율이 맞지 않으면 전체 화면 모드를 해제하세요.</string>
+    <string name="MIDS_GH_TPOP_MAXIMUM_NUMBER_OF_MINIMISED_APPS_HPD_ALREADY_REACHED">최소화할 수 있는 최대 앱 수(%d개)에 도달했습니다.</string>
+    <string name="MIDS_GH_TPOP_MEDIA_AUDIO_WILL_BE_MUTED_WHEN_YOUR_GAME_IS_OPENED_VIA_PS_MSG">%s에서 게임을 실행할 때 미디어 소리를 끕니다. 게임을 실행한 후에 소리 크기를 변경할 수 있습니다.</string>
+    <string name="MIDS_GH_TPOP_MINIMISE_AND_ALIVE_ALREADY_ENABLED_IN_ANOTHER_GAME_MSG">최소화하여 실행 유지를 다른 게임에서 사용 중입니다. 해당 기능은 한 번에 한 게임에서만 사용할 수 있습니다.</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_DEVICE_MEMORY_TO_RECORD">디바이스에 녹화할 저장공간이 부족합니다.</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_PHONE_MEMORY_TO_RECORD_GAME">휴대전화의 저장공간이 부족하여 게임을 녹화할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_NOT_ENOUGH_TABLET_MEMORY_TO_RECORD_GAME">태블릿의 저장공간이 부족하여 게임을 녹화할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_NO_ALERTS_DURING_GAME_ENABLED_ALL_ALERTS_WILL_BE_MUTED_AND_HIDDEN_DURING_GAMEPLAY">게임 중 방해금지를 실행했습니다. 게임 중에는 모든 알림 소리를 끄고 알림을 표시하지 않습니다.</string>
+    <string name="MIDS_GH_TPOP_NO_ALERTS_DURING_GAME_ENABLED_MSG">게임 중 방해금지를 실행했습니다. 게임 중에는 대부분의 알림 소리를 끄고 알림을 표시하지 않습니다. 수신전화 알림과 같은 일부 알림은 표시합니다.</string>
+    <string name="MIDS_GH_TPOP_NO_GAME_AUDIO_RECORDED_VOLUME_MUTED">무음으로 설정되어 게임 소리가 녹음되지 않습니다.</string>
+    <string name="MIDS_GH_TPOP_NO_INTERRUPTIONS_ENABLED_ALL_CALLS_AND_ALERTS_WILL_BE_MUTED_AND_HIDDEN">방해 금지를 켰습니다. 모든 전화 소리 및 전화 알림을 끄고 기타 알림을 표시하지 않습니다.</string>
+    <string name="MIDS_GH_TPOP_NO_NETWORK_CONNECTION_DATA_ROAMING_DISABLED">데이터 로밍이 해제되어 있어 연결된 네트워크가 없습니다.</string>
+    <string name="MIDS_GH_TPOP_NO_NETWORK_CONNECTION_MOBILE_DATA_TURNED_OFF">모바일 데이터가 해제되어 있어 연결된 네트워크가 없습니다.</string>
+    <string name="MIDS_GH_TPOP_ONLY_INCOMING_CALLS_WILL_BE_DISPLAYED_ON_SCREEN">단, 수신전화는 화면에 표시됩니다.</string>
+    <string name="MIDS_GH_TPOP_P1SS_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_CHANGES_CAN_TAKE_UP_TO_P3SD_SECONDS">%1$s 앱은 게임런처 기능(예: %2$s)의 적용을 받습니다. 변경하는 데 %3$d초 정도 걸립니다.</string>
+    <string name="MIDS_GH_TPOP_P1SS_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_P3SS">%1$s 앱은 게임런처 기능(예: %2$s, %3$s)의 적용을 받습니다.</string>
+    <string name="MIDS_GH_TPOP_P1SS_AND_P2SS_ENABLED">%1$s 및 %2$s 기능을 실행했습니다.</string>
+    <string name="MIDS_GH_TPOP_P1SS_HAS_BEEN_CATEGORISED_AS_A_GAME_GAME_LAUNCHER_FEATURES_HP2SS_WILL_BE_APPLIED_TO_THIS_APP">%1$s 앱이 게임으로 분류되었습니다. 게임런처 기능(%2$s)을 이 앱에 적용합니다.</string>
+    <string name="MIDS_GH_TPOP_P1SS_NOT_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_CHANGES_CAN_TAKE_UP_TO_P3SD_SECONDS">%1$s 앱은 게임런처 기능(예: %2$s)의 적용을 받지 않습니다. 변경하는 데 %3$d초 정도 걸립니다.</string>
+    <string name="MIDS_GH_TPOP_P1SS_NOT_AFFECTED_BY_GAME_LAUNCHER_FEATURES_HEG_P2SS_P3SS">%1$s 앱은 게임런처 기능(예: %2$s, %3$s)의 적용을 받지 않습니다.</string>
+    <string name="MIDS_GH_TPOP_P1SS_P2SS_ENABLED">%1$s 및 %2$s 기능을 실행했습니다.</string>
+    <string name="MIDS_GH_TPOP_PROCESSING_ING">처리 중...</string>
+    <string name="MIDS_GH_TPOP_PS_ENABLED">%s 기능을 실행했습니다.</string>
+    <string name="MIDS_GH_TPOP_PS_INSTALLED">%s 앱을 설치했습니다.</string>
+    <string name="MIDS_GH_TPOP_PS_UPDATED">%s 업데이트를 완료했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECENTS_AND_BACK_KEYS_LOCKED_DURING_GAMEPLAY">게임 중에는 최근 앱 및 뒤로가기 버튼을 잠급니다.</string>
+    <string name="MIDS_GH_TPOP_RECENTS_KEY_LOCKED_DURING_GAMEPLAY">게임 중에는 최근 앱 버튼을 잠급니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDED_VIDEO_SAVED_TO_DEVICE_MEMORY">녹화한 동영상을 디바이스 저장공간에 저장했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_BECAUSE_GAME_SCREEN_WAS_LEFT_RECORDING_SAVED_AUTOMATICALLY">게임 화면에서 나와 녹화 파일을 자동으로 저장하고 녹화를 중지했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DEVICE_ERROR_OCCURRED_VIDEO_NOT_SAVED">오류가 발생하여 녹화가 중지되었습니다. 동영상이 저장되지 않았습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LEAVING_APP_SCREEN_RECORDING_SAVED_AUTOMATICALLY">앱 화면에서 나와 녹화 파일을 자동으로 저장하고 녹화를 중지했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LEAVING_GAME_SCREEN_RECORDING_SAVED_AUTOMATICALLY">게임 화면에서 나와 녹화 파일을 자동으로 저장하고 녹화를 중지했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_LOW_BATTERY_RECORDING_SAVED_AUTOMATICALLY">배터리가 부족하여 녹화 파일을 자동으로 저장하고 녹화를 중지했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_DEVICE_MEMORY_RECORDING_SAVED_AUTOMATICALLY">저장공간이 부족하여 녹화 파일을 자동으로 저장하고 녹화를 중지했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_PHONE_MEMORY_RECORDING_SAVED_AUTOMATICALLY">휴대전화의 저장공간이 부족하여 녹화 파일을 자동으로 저장하고 녹화를 중지했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_DUE_TO_NOT_ENOUGH_TABLET_MEMORY_RECORDING_SAVED_AUTOMATICALLY">태블릿의 저장공간이 부족하여 녹화 파일을 자동으로 저장하고 녹화를 중지했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_GAME_SCREEN_SWITCHED_TO_ANOTHER_SCREEN_VIDEO_SAVED">다른 화면으로 이동하여 녹화가 중지되었습니다. 동영상을 저장했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_MAXIMUM_FILE_SIZE_HP1SS_P2SS_REACHED_VIDEO_SAVED">최대 파일 크기(%1$s%2$s)에 도달하여 녹화가 중지되었습니다. 동영상을 저장했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_MAXIMUM_RECORDING_TIME_HPD_MINUTES_REACHED_VIDEO_SAVED">최대 녹화 시간(%d분)에 도달하여 녹화가 중지되었습니다. 동영상을 저장했습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_PHONE_ERROR_OCCURRED_VIDEO_NOT_SAVED">휴대전화에서 오류가 발생하여 녹화가 중지되었습니다. 동영상이 저장되지 않았습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_TABLET_ERROR_OCCURRED_VIDEO_NOT_SAVED">태블릿에서 오류가 발생하여 녹화가 중지되었습니다. 동영상이 저장되지 않았습니다.</string>
+    <string name="MIDS_GH_TPOP_RECORDING_STOPPED_WITHIN_PD_SECONDS_VIDEO_NOT_SAVED">녹화 시간(%d초)이 너무 짧아 동영상이 저장되지 않았습니다.</string>
+    <string name="MIDS_GH_TPOP_REGISTRATION_REQUEST_FOR_PS_SUBMITTED">%s 등록 요청을 보냈습니다.</string>
+    <string name="MIDS_GH_TPOP_SHORTCUT_ADDED">바로가기를 추가했습니다.</string>
+    <string name="MIDS_GH_TPOP_SHORTCUT_ADDED_TO_HOME_SCREEN">바로가기를 홈 화면에 추가했습니다.</string>
+    <string name="MIDS_GH_TPOP_TAP_THE_PROFILE_BUTTON_TO_STOP_RECORDING_DRAG_AND_DROP_TO_MOVE_BUTTON">녹화를 중지하려면 프로필 버튼을 누르세요. 버튼을 끌어서 위치를 옮길 수 있습니다.</string>
+    <string name="MIDS_GH_TPOP_THIS_APP_DOES_NOT_SUPPORT_PS_FUNCTION_OF_GAME_TOOLS">이 앱은 게임툴즈의 %s 기능이 지원되지 않습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_ACCESS_PS">%s을(를) 사용할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_CHANGE_SETTING_WHILE_PS_ENABLED">%s 실행 중에는 설정을 변경할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_ENABLED">비행기 탑승 모드 실행 중에는 모바일 네트워크에 연결할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_ENABLE_OR_DISABLE_EXTENDED_PLAY_MODE_DURING_GAMEPLAY">게임 중에는 실행 시간 늘리기 설정을 변경할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_ANOTHER_APP_USING_MICROPHONE">다른 앱에서 마이크를 사용 중일 때에는 녹화할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_AUDIO_IF_VOLUME_MUTED">무음으로 설정하면 소리를 녹음할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_CAMERA_IN_USE">카메라가 사용 중이어서 녹화할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_DURING_CALLS">통화 중에는 녹화할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_GAME_AUDIO_IF_VOLUME_MUTED">무음으로 설정하면 게임 소리를 녹음할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_GAME_ERROR_OCCURRED">오류가 발생하여 게임을 녹화할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_LOW_BATTERY">배터리가 부족하여 녹화할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_RECORDING_NOT_SUPPORTED_BY_THIS_GAME_DUE_TO_POLICY">이 게임에서는 녹화를 허용하지 않아 녹화할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_VOICE_IF_GAME_VOLUME_TOO_HIGH">게임 소리를 너무 크게 설정하면 음성을 녹음할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_RECORD_VOICE_WHILE_VOLUME_SET_TOO_HIGH">음량을 너무 높게 설정하면 음성을 녹음할 수 없습니다.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_USE_P1SS_CHECK_NOTIFICATION_PANEL_TO_ALLOW_THESE_PERMISSIONS_C_P2SS">%1$s을(를) 사용할 수 없습니다. 알림창을 열어 다음 권한을 허용하세요: %2$s.</string>
+    <string name="MIDS_GH_TPOP_UNABLE_TO_USE_P1SS_CHECK_NOTIFICATION_PANEL_TO_ALLOW_THIS_PERMISSION_C_P2SS">%1$s을(를) 사용할 수 없습니다. 알림창을 열어 다음 권한을 허용하세요: %2$s.</string>
+    <string name="MIDS_GH_TPOP_VIDEO_SAVED">동영상을 저장했습니다.</string>
+    <string name="MIDS_GH_TPOP_VOICE_MAY_NOT_BE_RECORDED_WELL_IF_GAME_VOLUME_TOO_HIGH">게임 소리가 너무 크면 음성이 잘 녹음되지 않을 수 있습니다.</string>
+    <string name="MIDS_OTS_BODY_PS_GB">%sGB</string>
+    <string name="MIDS_OTS_BODY_PS_KB">%sKB</string>
+    <string name="MIDS_OTS_BODY_PS_MB">%sMB</string>
+    <string name="MIDS_SA_BODY_I_AGREE_TO_ALL">약관에 모두 동의합니다.</string>
+    <string name="WDS_TTS_TBOPT_ALERT">알림</string>
+    <string name="all_media_no_permissions">권한이 없습니다.</string>
+    <string name="already_exist_nickname_message">이미 사용 중인 별명입니다.</string>
+    <string name="article_comments_count">댓글</string>
+    <string name="article_count_txt">작성한 글</string>
+    <string name="article_empty">등록된 게시글이 없습니다.</string>
+    <string name="article_read_count">%,d 읽음</string>
+    <string name="article_read_count_format">조회 %1$,d</string>
+    <string name="article_report_alert_message">신고하시겠습니까?</string>
+    <string name="article_report_already_reported">이미 신고한 게시글입니다.</string>
+    <string name="article_report_completed">신고 완료</string>
+    <string name="article_report_menu">신고</string>
+    <string name="article_save_complete_message">게시글이 등록되었습니다.</string>
+    <string name="article_save_fail_message">게시글을 등록하지 못했습니다.</string>
+    <string name="article_save_progress_message">게시글 등록 중...</string>
+    <string name="article_search_placeholder">검색</string>
+    <string name="article_video_alert_message">3G/LTE 등으로 접속 시 데이터 통화료가 발생할 수 있습니다.</string>
+    <string name="article_video_encoding_message">영상이 인코딩 중입니다 인코딩 완료후 다시 실행해 주시기 바랍니다.</string>
+    <string name="attachment_add_fail_message">사진이나 동영상을 첨부할 수 없습니다.</string>
+    <string name="available_nickname_message">사용할 수 있는 별명입니다.</string>
+    <string name="cafe_app_install_confirm_message">"네이버 카페 앱을 설치하거나 업데이트하면 이용할 수 있습니다.
+네이버 카페 앱을 설치하시겠습니까?"</string>
+    <string name="cancel">취소</string>
+    <string name="cancel_article_write_confirm_message">게시글 등록을 취소하시겠습니까?</string>
+    <string name="comment_empty">등록된 댓글이 없습니다.</string>
+    <string name="comment_hint">내용을 입력하세요.</string>
+    <string name="comment_not_exist">댓글이 없습니다.</string>
+    <string name="comment_write_permission_error">댓글 작성 권한이 없습니다.</string>
+    <string name="comments_more_view">댓글 %1d개 더 보기</string>
+    <string name="confirm">확인</string>
+    <string name="count_format">%1$,d</string>
+    <string name="date_format_hrs">%d 시간</string>
+    <string name="date_format_just_now">지금 막</string>
+    <string name="date_format_mins">%d 분</string>
+    <string name="date_format_yesterday">어제</string>
+    <string name="delete">삭제</string>
+    <string name="delete_confirm_message">삭제하시겠습니까?</string>
+    <string name="deleted_comment">삭제된 댓글입니다.</string>
+    <string name="deleted_post">삭제된 게시글입니다.</string>
+    <string name="edit">수정</string>
+    <string name="empty_recently_search_message">최근 검색 기록이 없습니다.</string>
+    <string name="empty_search_articles_message">요청하신 내용을 찾을 수 없습니다.</string>
+    <string name="error_no_article_comment">댓글을 단 글이 없습니다.</string>
+    <string name="error_no_article_like">좋아요를 누른 글이 없습니다.</string>
+    <string name="error_no_article_wirte">작성한 글이 없습니다.</string>
+    <string name="exist_prohibit_word_nickname_message">금칙어가 포함되어 있습니다.</string>
+    <string name="image_editor_crop">Crop</string>
+    <string name="image_editor_rotate">Rotation</string>
+    <string name="image_permission_setting_message">"권한이 없어 사진을 첨부할 수 없습니다.
+[설정 > 앱]의 해당 게임에서 저장 권한을 확인해 주세요."</string>
+    <string name="image_upload_fail_message">사진을 업로드할 수 없습니다.</string>
+    <string name="internet_not_connected_error">"인터넷에 연결되어 있지 않습니다.
+무선 인터넷 연결 상태를 확인해 주세요."</string>
+    <string name="join_cafe">카페의 멤버가 되어보세요.</string>
+    <string name="join_plug">플러그의 멤버가 되어보세요.</string>
+    <string name="like_article_count_txt">좋아요</string>
+    <string name="logout_complete_message">로그아웃 되었습니다.</string>
+    <string name="logout_confirm_message">로그아웃하시겠습니까?</string>
+    <string name="media_delete_message">Deleted</string>
+    <string name="media_viewer_move_post">View post</string>
+    <string name="member_count_format">회원수 %1$,d명</string>
+    <string name="menu_change_channel">"선택한 채널로 변경하시겠습니까?
+채널을 변경하면 콘텐츠도 함께 변경됩니다."</string>
+    <string name="modify_complete_message">수정되었습니다.</string>
+    <string name="more_actions">더보기</string>
+    <string name="movie_over_limit_size_message">"선택한 동영상의 용량이
+최대 업로드 용량을 초과했습니다."</string>
+    <string name="movie_permission_setting_message">"권한이 없어 동영상을 첨부할 수 없습니다.
+[설정 > 앱]의 해당 게임에서 저장 권한을 확인해 주세요."</string>
+    <string name="need_login">로그인하세요.</string>
+    <string name="network_error">"네트워크 문제로 연결되지 않았습니다.
+네트워크 연결을 확인한 후 다시 시도해 주세요."</string>
+    <string name="nick_name_already_join">이미 가입을 신청한 커뮤니티입니다. 현재 가입 승인 절차가 진행 중입니다.</string>
+    <string name="nick_name_header">별명 입력</string>
+    <string name="nick_name_hint">별명을 입력하세요.</string>
+    <string name="nick_name_join">가입하기</string>
+    <string name="nick_name_join_agree">네이버 카페 이용약관에 동의합니다.</string>
+    <string name="nick_name_validate">10자 이내의 한글 또는 20자 이내의 영문과 숫자를 사용할 수 있습니다.</string>
+    <string name="nickname_rule_global_message">최대 20자</string>
+    <string name="nickname_rule_message">최대 한글 10자, 영문 20자(숫자 혼용가능)</string>
+    <string name="no_menu_setting_message">메뉴가 설정되지 않았습니다.</string>
+    <string name="no_permissions">사용 권한이 없습니다.</string>
+    <string name="no_search_results">검색 결과가 없습니다.</string>
+    <string name="not_available_nickname_message">사용할 수 없는 별명입니다.</string>
+    <string name="not_cafe_member">탈퇴한 멤버입니다.</string>
+    <string name="not_configured_event_menu_id">이벤트 메뉴가 설정되지 않았습니다.</string>
+    <string name="not_configured_notice_menu_id">공지 사항 메뉴가 설정되지 않았습니다.</string>
+    <string name="not_supported_os_version">인앱 커뮤니티는 Android 4.1버전 이상에서만 사용할 수 있습니다.</string>
+    <string name="permission_record">"[선택적 권한]
+외부 소리를 녹음하기 위해서는 마이크 권한이 필요합니다. 
+[설정>앱]에서 게임의 마이크 권한을 허용해주세요."</string>
+    <string name="permission_storage">사진 또는 동영상 파일을 첨부하기 위한 저장 권한 허용이 필요합니다.</string>
+    <string name="permission_storage_record">"[필수적 권한]
+저장 권한 : 녹화된 동영상을 저장하기 위한 권한입니다.
+[선택적 권한]
+마이크 : 동영상 저장 시 마이크로 소리를 녹음하기 위한 권한입니다."</string>
+    <string name="photo_album">사진 앨범</string>
+    <string name="photo_upload_error">사진을 등록할 수 없습니다.</string>
+    <string name="pin_to_top">필독 공지</string>
+    <string name="plug_bottom_channel">Channel</string>
+    <string name="profile_articles_total">Total</string>
+    <string name="profile_become_member">로그인하면 자동으로 이 카페의 멤버가 됩니다.</string>
+    <string name="profile_cafe_information">세상의 모든 모바일 게임을 위한 커뮤니티, 네이버 카페</string>
+    <string name="profile_login">Log in</string>
+    <string name="profile_logout">로그아웃</string>
+    <string name="profile_plug_information">세상의 모든 모바일 게임을 위한 커뮤니티, 플러그</string>
+    <string name="profile_string">내 프로필</string>
+    <string name="profile_visit">방문</string>
+    <string name="recent_article_menu">새 글 보기</string>
+    <string name="record_error">동영상이 정상적으로 녹화되지 않았습니다.</string>
+    <string name="record_permission_error">"권한이 없어 영상을 녹화할 수 없습니다.
+[설정 > 앱]의 해당 게임에서 마이크 접근 권한과 저장 권한을 확인해 주세요."</string>
+    <string name="record_quality">녹화 품질</string>
+    <string name="record_quality_high">높음</string>
+    <string name="record_quality_low">낮음</string>
+    <string name="record_quality_std">보통</string>
+    <string name="record_saved">Movies 폴더에 저장되었습니다.</string>
+    <string name="record_size">녹화 해상도</string>
+    <string name="record_size_360">360p</string>
+    <string name="record_size_480">480p</string>
+    <string name="record_size_720">720p</string>
+    <string name="replies_more_view">답글 %d개 보기</string>
+    <string name="reply">답글</string>
+    <string name="require_join_message">커뮤니티에 가입해 주세요.</string>
+    <string name="require_login_message">로그인해 주세요.</string>
+    <string name="retry">재시도</string>
+    <string name="retry_after_a_while_message">잠시 후 다시 시도해 주세요.</string>
+    <string name="retry_error">다시 시도하기</string>
+    <string name="save">완료</string>
+    <string name="save_error_contents">내용을 입력하세요.</string>
+    <string name="save_error_menu">메뉴를 선택하세요.</string>
+    <string name="save_error_subject">제목을 입력하세요.</string>
+    <string name="search_all_menu">전체 메뉴</string>
+    <string name="search_hint">검색어를 입력하세요.</string>
+    <string name="search_result_count">%1d건</string>
+    <string name="search_result_text">이 검색되었습니다.</string>
+    <string name="select_channel_title">채널 변경</string>
+    <string name="select_menu">메뉴 선택</string>
+    <string name="select_menu_button">메뉴를 선택해 주세요.</string>
+    <string name="unable_load_images">이미지를 불러올 수 없습니다.</string>
+    <string name="unable_load_videos">동영상을 불러올 수 없습니다.</string>
+    <string name="under_construction">준비 중입니다.</string>
+    <string name="version">현재 버전 %s</string>
+    <string name="waiting_join_apply_message">가입 신청 중입니다.</string>
+    <string name="want_cafe_member">회원으로 가입하시겠습니까?</string>
+    <string name="widget_button_cafe">커뮤니티</string>
+    <string name="widget_button_capture">화면 캡쳐</string>
+    <string name="widget_button_record">영상 녹화</string>
+    <string name="widget_button_write">글쓰기</string>
+    <string name="widget_trash">커뮤니티 아이콘을 누르면 복구됩니다</string>
+    <string name="write_permission_error">해당 메뉴에 글쓰기 권한이 없습니다.</string>
+    <string name="written_comment_count_txt">댓글 단 글</string>
+</resources>

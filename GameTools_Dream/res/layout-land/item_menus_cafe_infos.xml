@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cafe_background_img" android:layout_width="fill_parent" android:layout_height="88.0dip" android:scaleType="centerCrop" />
+    <View android:id="@id/cafe_background_img_dimmed" android:background="@color/black2_opacity_20" android:layout_width="fill_parent" android:layout_height="88.0dip" />
+    <TextView android:textSize="11.0dip" android:textColor="@drawable/gl_menu_language_selector_text_background" android:gravity="end|center" android:id="@id/channels_button" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginLeft="22.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="5.0dip" android:minWidth="90.0dip" android:maxLines="1" android:drawableRight="@drawable/gl_ls_icon_lgpulldown_normal" android:drawablePadding="8.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/thumbnail_image" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginLeft="22.0dip" android:layout_marginTop="42.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/cafe_icon_img" android:layout_width="59.0dip" android:layout_height="59.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/cafe_icon_img_stroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gl_ls_icon_cafeimgst" />
+    </FrameLayout>
+    <TextView android:textSize="22.0dip" android:textColor="@color/black2" android:ellipsize="end" android:id="@id/cafe_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="22.0dip" android:maxLines="2" android:layout_below="@id/thumbnail_image" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/gray4" android:ellipsize="end" android:id="@id/cafe_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="9.0dip" android:text="@string/member_count_format" android:maxLines="2" android:layout_below="@id/cafe_name" />
+    <RelativeLayout android:id="@id/menu_link_layout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <View android:background="@color/black2_opacity_10" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" />
+        <ImageView android:id="@id/menu_link" android:background="@drawable/gl_ls_icon_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/black1" android:ellipsize="end" android:id="@id/menu_link_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="4.0dip" android:maxLines="2" android:layout_toLeftOf="@id/menu_link" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>
