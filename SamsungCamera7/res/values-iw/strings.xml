@@ -308,6 +308,7 @@
     <string name="camera_label">מצלמה</string>
     <string name="camera_modes">מצבי מצלמה</string>
     <string name="camera_security_enter">מדיניות האבטחה מגבילה את השימוש במצלמה.</string>
+    <string name="can_not_use_voice_control">"לא ניתן להשתמש ב'בקרה קולית' כאשר השכמת Bixby Voice מופעלת."</string>
     <string name="cancel">ביטול</string>
     <string name="cannot_start_camcorder_msg">לא ניתן להקליט קטעי וידאו במהלך שיחה.</string>
     <string name="cannot_start_camera_msg">לא ניתן לפתוח את יישום המצלמה במהלך שיחה.</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"צלם
 סלפי"</string>
     <string name="temperature">טמפרטורה</string>
+    <string name="temperature_too_high_camera_off">הטמפרטורה גבוהה מדי, לכן לא ניתן להשתמש ב-%1$s. המתן עד שהטלפון יתקרר כדי להשתמש ב-%2$s.</string>
     <string name="temperature_too_high_flash_off">לא ניתן להפעיל את המבזק. נסה שוב לאחר התקררות המכשיר.</string>
     <string name="temperature_too_high_record">לא ניתן להקליט וידאו. נסה שוב לאחר שהמכשיר יתקרר.</string>
     <string name="temperature_too_high_recording_disable">ההקלטה הופסקה. תוכל להקליט שוב לאחר התקררות המכשיר.</string>

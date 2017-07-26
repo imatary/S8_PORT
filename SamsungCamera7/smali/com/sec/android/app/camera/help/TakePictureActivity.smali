@@ -17,7 +17,7 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
 
-    const v2, 0x7f09018d
+    const v2, 0x7f09018e
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

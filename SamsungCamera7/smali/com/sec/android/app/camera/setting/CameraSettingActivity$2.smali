@@ -35,11 +35,13 @@
 
 # virtual methods
 .method public onExecutorCommand(I)V
-    .locals 7
+    .locals 8
+
+    const/4 v7, 0x0
 
     const/4 v6, 0x1
 
-    const v5, 0x7f090226
+    const v5, 0x7f090227
 
     const-string v2, "CameraSettingActivity"
 
@@ -109,9 +111,7 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/CameraSettingActivity$2;->this$0:Lcom/sec/android/app/camera/setting/CameraSettingActivity;
 
-    const/4 v3, 0x0
-
-    invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/setting/CameraSettingActivity;->onLaunchTimerFragment(I)V
+    invoke-virtual {v2, v7}, Lcom/sec/android/app/camera/setting/CameraSettingActivity;->onLaunchTimerFragment(I)V
 
     goto :goto_0
 
@@ -817,6 +817,20 @@
 
     goto/16 :goto_0
 
+    :sswitch_f
+    iget-object v2, p0, Lcom/sec/android/app/camera/setting/CameraSettingActivity$2;->this$0:Lcom/sec/android/app/camera/setting/CameraSettingActivity;
+
+    invoke-static {v2, v6}, Lcom/sec/android/app/camera/setting/CameraSettingActivity;->access$300(Lcom/sec/android/app/camera/setting/CameraSettingActivity;I)V
+
+    goto/16 :goto_0
+
+    :sswitch_10
+    iget-object v2, p0, Lcom/sec/android/app/camera/setting/CameraSettingActivity$2;->this$0:Lcom/sec/android/app/camera/setting/CameraSettingActivity;
+
+    invoke-static {v2, v7}, Lcom/sec/android/app/camera/setting/CameraSettingActivity;->access$300(Lcom/sec/android/app/camera/setting/CameraSettingActivity;I)V
+
+    goto/16 :goto_0
+
     nop
 
     :sswitch_data_0
@@ -831,6 +845,8 @@
         0x8 -> :sswitch_c
         0x9 -> :sswitch_d
         0xa -> :sswitch_e
+        0xb -> :sswitch_10
+        0xc -> :sswitch_f
         0x64 -> :sswitch_9
         0x65 -> :sswitch_a
         0x66 -> :sswitch_b

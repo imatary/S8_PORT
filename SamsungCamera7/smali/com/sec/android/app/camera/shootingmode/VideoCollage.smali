@@ -2636,7 +2636,7 @@
 .method private getRecordingTimeText()Ljava/lang/String;
     .locals 9
 
-    const v8, 0x7f09022f
+    const v8, 0x7f090230
 
     const/4 v4, 0x2
 
@@ -3609,7 +3609,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f090213
+    const v5, 0x7f090214
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4230,7 +4230,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0901fa
+    const v3, 0x7f0901fb
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4350,7 +4350,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0901e6
+    const v3, 0x7f0901e7
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4470,7 +4470,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09020c
+    const v3, 0x7f09020d
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4610,7 +4610,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090155
+    const v3, 0x7f090156
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4959,7 +4959,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09023d
+    const v3, 0x7f09023e
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5875,7 +5875,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09014a
+    const v3, 0x7f09014b
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5935,7 +5935,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09014a
+    const v3, 0x7f09014b
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8793,7 +8793,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090143
+    const v2, 0x7f090144
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8808,7 +8808,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090145
+    const v2, 0x7f090146
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8823,7 +8823,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090146
+    const v2, 0x7f090147
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8838,7 +8838,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090144
+    const v2, 0x7f090145
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8853,7 +8853,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090147
+    const v2, 0x7f090148
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8868,7 +8868,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090149
+    const v2, 0x7f09014a
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8883,7 +8883,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09014a
+    const v2, 0x7f09014b
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8898,7 +8898,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090148
+    const v2, 0x7f090149
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9593,7 +9593,7 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0901dd
+    const v1, 0x7f0901de
 
     const/4 v2, 0x1
 

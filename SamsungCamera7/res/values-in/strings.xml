@@ -117,7 +117,7 @@ video"</string>
     <string name="R_3344x3344">1:1 (11 M)</string>
     <string name="R_3456x3456">1:1 (12 M)</string>
     <string name="R_3984x2988">4:3 (12 M)</string>
-    <string name="R_4032x1960">18.5:9 (7,9 M)</string>
+    <string name="R_4032x1960">18.5:9 (7.9 M)</string>
     <string name="R_4032x2268">16:9 (9,1 M)</string>
     <string name="R_4032x3024">4:3 (12 M)</string>
     <string name="R_4128x2322">16:9 (9,6 M)</string>
@@ -308,6 +308,7 @@ bentuk"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Mode kamera</string>
     <string name="camera_security_enter">Kebijakan pengaman membatasi penggunaan Kamera.</string>
+    <string name="can_not_use_voice_control">Tidak dapat menggunakan Kontrol suara saat pengaktifan Bixby Voice diaktifkan.</string>
     <string name="cancel">Batalkan</string>
     <string name="cannot_start_camcorder_msg">Tidak bisa merekam video selama panggilan.</string>
     <string name="cannot_start_camera_msg">Tidak dapat menggunakan Kamera selama panggilan.</string>
@@ -604,6 +605,7 @@ Jika setuju, Jepretan tag akan diizinkan dan Anda tidak akan ditanya lagi."</str
     <string name="task_edge_title_selfie">"Ambil
 selfie"</string>
     <string name="temperature">Suhu</string>
+    <string name="temperature_too_high_camera_off">Suhu terlalu tinggi untuk menggunakan %1$s. Tunggu hingga ponsel mendingin sebelum menggunakan %2$s.</string>
     <string name="temperature_too_high_flash_off">Tidak dapat menghidupkan kilat. Coba lagi saat perangkat Anda sudah dingin.</string>
     <string name="temperature_too_high_record">Tidak dapat merekam video. Coba lagi saat suhu perangkat sudah dingin.</string>
     <string name="temperature_too_high_recording_disable">Perekaman sudah dihentikan. Anda dapat merekam setelah perangkat mendingin.</string>

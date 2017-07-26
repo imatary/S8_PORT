@@ -66,6 +66,16 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLView;->setTint(I)V
 
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
+
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$500(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLView;
+
+    move-result-object v0
+
+    const/16 v1, 0x3e9
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLView;->setShaderProgram(I)V
+
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
@@ -116,33 +126,10 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->getCurrentStep()I
-
-    move-result v0
-
-    if-gtz v0, :cond_2
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
-
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
-
-    invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->getNumOfStep()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, -0x1
+    const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->setCurrentStep(I)Z
 
-    :goto_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->hideValueText()V
@@ -176,29 +163,6 @@
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/menu/ProLiteSlider$ProSliderValueSelectListener;->onISOValueMenuSelect(I)V
 
     goto :goto_0
-
-    :cond_2
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
-
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
-
-    invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->getCurrentStep()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, -0x1
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->setCurrentStep(I)Z
-
-    goto :goto_1
 
     :pswitch_data_0
     .packed-switch 0x1

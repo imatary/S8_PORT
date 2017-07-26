@@ -308,6 +308,7 @@
     <string name="camera_label">دوربين</string>
     <string name="camera_modes">حالت های دوربین</string>
     <string name="camera_security_enter">سیاست امنیتی استفاده از دوربین را محدود کرده است.</string>
+    <string name="can_not_use_voice_control">هنگامی ‌که بیدارباش Bixby Voice روشن است،‌ استفاده از کنترل صدا ممکن نیست.</string>
     <string name="cancel">لغو</string>
     <string name="cannot_start_camcorder_msg">امکان ضبط ویدیو در طول تماس وجود ندارد.</string>
     <string name="cannot_start_camera_msg">استفاده از دوربین در حین تماس ممکن نیست.</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"گرفتن
 سلفی"</string>
     <string name="temperature">دما</string>
+    <string name="temperature_too_high_camera_off">دما بسیار زیاد است و استفاده از %1$s ممکن نیست. قبل از استفاده از %2$s،‌ صبر کنید تلفن خنک شود.</string>
     <string name="temperature_too_high_flash_off">نمی توانید فلش را روشن کنید. هنگامی که دستگاه خنک شد دوباره امتحان کنید.</string>
     <string name="temperature_too_high_record">ضبط ویدیو ممکن نیست. وقتی دستگاه خنک شد دوباره امتحان کنید.</string>
     <string name="temperature_too_high_recording_disable">ضبط متوقف شده است. زمانی که دستگاه شما خنک شد می توانید ضبط را انجام دهید.</string>

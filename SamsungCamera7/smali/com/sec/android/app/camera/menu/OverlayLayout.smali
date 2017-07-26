@@ -3686,7 +3686,7 @@
     goto :goto_0
 
     :sswitch_2
-    const v0, 0x7f0901af
+    const v0, 0x7f0901b0
 
     goto :goto_0
 
@@ -3696,7 +3696,7 @@
     goto :goto_0
 
     :sswitch_4
-    const v0, 0x7f090196
+    const v0, 0x7f090197
 
     goto :goto_0
 
@@ -3709,7 +3709,7 @@
 
     if-nez v1, :cond_1
 
-    const v0, 0x7f09022c
+    const v0, 0x7f09022d
 
     goto :goto_0
 
@@ -3724,22 +3724,22 @@
 
     if-ne v1, v2, :cond_0
 
-    const v0, 0x7f09022b
+    const v0, 0x7f09022c
 
     goto :goto_0
 
     :sswitch_6
-    const v0, 0x7f090222
+    const v0, 0x7f090223
 
     goto :goto_0
 
     :sswitch_7
-    const v0, 0x7f090197
+    const v0, 0x7f090198
 
     goto :goto_0
 
     :sswitch_8
-    const v0, 0x7f090194
+    const v0, 0x7f090195
 
     goto :goto_0
 
@@ -5746,7 +5746,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v4, 0x7f09035d
+    const v4, 0x7f09035f
 
     invoke-static {v4}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -5756,7 +5756,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09035e
+    const v4, 0x7f090360
 
     invoke-static {v4}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -6034,7 +6034,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09028d
+    const v2, 0x7f09028f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6103,7 +6103,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090170
+    const v2, 0x7f090171
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6126,7 +6126,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090289
+    const v2, 0x7f09028b
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -6153,7 +6153,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090178
+    const v2, 0x7f090179
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -6205,7 +6205,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09028a
+    const v2, 0x7f09028c
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -6282,7 +6282,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09028b
+    const v2, 0x7f09028d
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -6309,7 +6309,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09028c
+    const v2, 0x7f09028e
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -6361,7 +6361,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090174
+    const v2, 0x7f090175
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6434,7 +6434,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090173
+    const v2, 0x7f090174
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6457,7 +6457,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090172
+    const v2, 0x7f090173
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6480,7 +6480,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09016f
+    const v2, 0x7f090170
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6503,7 +6503,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09016e
+    const v2, 0x7f09016f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6526,7 +6526,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09016d
+    const v2, 0x7f09016e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6549,7 +6549,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090177
+    const v2, 0x7f090178
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6572,7 +6572,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090176
+    const v2, 0x7f090177
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6591,7 +6591,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090175
+    const v2, 0x7f090176
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -7722,7 +7722,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f09022c
+    const v8, 0x7f09022d
 
     const/4 v9, 0x1
 
@@ -7881,7 +7881,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f09022b
+    const v8, 0x7f09022c
 
     const/4 v9, 0x1
 
@@ -10357,13 +10357,11 @@
 .end method
 
 .method public onCameraSettingChanged(II)V
-    .locals 7
+    .locals 4
 
-    const/4 v6, 0x1
+    const/4 v1, 0x1
 
-    const/4 v4, 0x0
-
-    const/high16 v5, 0x40000000    # 2.0f
+    const/4 v3, 0x0
 
     const/4 v2, 0x4
 
@@ -10378,18 +10376,13 @@
     :sswitch_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->showShootingModeText()V
 
-    goto :goto_0
-
-    :sswitch_1
-    invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->showShootingModeText()V
-
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mShootingModeTextGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
     goto :goto_0
 
-    :sswitch_2
+    :sswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFocusMode()I
@@ -10402,7 +10395,7 @@
 
     goto :goto_0
 
-    :sswitch_3
+    :sswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mGuideLineView:Lcom/sec/android/app/camera/widget/gl/GuideLineView;
 
     if-eqz v1, :cond_0
@@ -10411,7 +10404,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mGuideLineView:Lcom/sec/android/app/camera/widget/gl/GuideLineView;
 
-    invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/widget/gl/GuideLineView;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Lcom/sec/android/app/camera/widget/gl/GuideLineView;->setVisibility(I)V
 
     goto :goto_0
 
@@ -10422,105 +10415,19 @@
 
     goto :goto_0
 
-    :sswitch_4
-    iget v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_WIDTH:I
+    :sswitch_3
+    if-ne p2, v1, :cond_2
 
-    int-to-float v1, v1
+    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/menu/OverlayLayout;->setCoverCamera(Z)V
 
-    div-float/2addr v1, v5
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getPreviewSurfaceRect()Landroid/graphics/Rect;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/graphics/Rect;->centerX()I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    sub-float v0, v1, v2
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isResizableCamera()Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mShootingModeTextGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    iget v2, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_WIDTH:I
-
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SHOOTINGMODE_WIDTH:I
-
-    sub-int/2addr v2, v3
-
-    int-to-float v2, v2
-
-    div-float/2addr v2, v5
-
-    sub-float/2addr v2, v0
-
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SHOOTINGMODE_LANDSCAPE_TOP_MARGIN:I
-
-    int-to-float v3, v3
-
-    invoke-virtual {v1, v4, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mShootingModeTextGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    const/4 v2, 0x2
-
-    iget v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SCREEN_WIDTH:I
-
-    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SHOOTINGMODE_WIDTH:I
-
-    add-int/2addr v3, v4
-
-    int-to-float v3, v3
-
-    div-float/2addr v3, v5
-
-    sub-float/2addr v3, v0
-
-    iget v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SHOOTINGMODE_LANDSCAPE_TOP_MARGIN:I
-
-    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->SHOOTINGMODE_HEIGHT:I
-
-    add-int/2addr v4, v5
-
-    int-to-float v4, v4
-
-    iget v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->PAGE_NAVIGATOR_HEIGHT:F
-
-    add-float/2addr v4, v5
-
-    invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
+    goto :goto_0
 
     :cond_2
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mShootingModeTextGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    invoke-virtual {v1, v6}, Lcom/samsung/android/glview/GLViewGroup;->updateLayout(Z)V
+    invoke-direct {p0, v3}, Lcom/sec/android/app/camera/menu/OverlayLayout;->setCoverCamera(Z)V
 
     goto :goto_0
 
-    :sswitch_5
-    if-ne p2, v6, :cond_3
-
-    invoke-direct {p0, v6}, Lcom/sec/android/app/camera/menu/OverlayLayout;->setCoverCamera(Z)V
-
-    goto :goto_0
-
-    :cond_3
-    invoke-direct {p0, v4}, Lcom/sec/android/app/camera/menu/OverlayLayout;->setCoverCamera(Z)V
-
-    goto :goto_0
-
-    :sswitch_6
+    :sswitch_4
     invoke-static {}, Lcom/sec/android/app/camera/plugin/ExternalFilterLoader;->isEffectCategorySupported()Z
 
     move-result v1
@@ -10539,17 +10446,17 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    goto/16 :goto_0
+    goto :goto_0
+
+    nop
 
     :sswitch_data_0
     .sparse-switch
-        0x1 -> :sswitch_0
-        0x4 -> :sswitch_4
-        0x5 -> :sswitch_2
-        0x8 -> :sswitch_6
-        0x13 -> :sswitch_3
-        0x4d -> :sswitch_1
-        0x137 -> :sswitch_5
+        0x5 -> :sswitch_1
+        0x8 -> :sswitch_4
+        0x13 -> :sswitch_2
+        0x4d -> :sswitch_0
+        0x137 -> :sswitch_3
     .end sparse-switch
 .end method
 
@@ -11276,7 +11183,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mRandomStickerButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f090235
+    const v1, 0x7f090236
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -11635,7 +11542,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout;->mStickerSoundMuteButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f090236
+    const v1, 0x7f090237
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

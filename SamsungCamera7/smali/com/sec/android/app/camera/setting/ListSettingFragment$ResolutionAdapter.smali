@@ -45,9 +45,9 @@
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 9
 
-    const v8, 0x7f090278
+    const v8, 0x7f09027a
 
-    const v7, 0x7f09024f
+    const v7, 0x7f090251
 
     const/4 v6, 0x1
 

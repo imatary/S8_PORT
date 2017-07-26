@@ -317,6 +317,7 @@ zuzenketa"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kamera moduak</string>
     <string name="camera_security_enter">Segurtasun politikak Kameraren erabilera mugatzen du</string>
+    <string name="can_not_use_voice_control">Ezin da erabili Ahots kontrola Bixby Voice bidez esnatzea aktibatuta badago.</string>
     <string name="cancel">Ezeztatu</string>
     <string name="cannot_start_camcorder_msg">Ezin dira bideoak grabatu deian zehar</string>
     <string name="cannot_start_camera_msg">Ezin da Kamera erabili deietan.</string>
@@ -613,6 +614,7 @@ Ados bazaude, Tag shot aplikazioari baimena emango zaio eta ez zaizu berriro gal
     <string name="task_edge_title_selfie">"Atera
 autoarg."</string>
     <string name="temperature">Tenperatura</string>
+    <string name="temperature_too_high_camera_off">Tenperatura altuegia da %1$s erabiltzeko. %2$s erabili baino lehen, itxaron telefonoa hoztu arte.</string>
     <string name="temperature_too_high_flash_off">Ezin da flasha piztu. Saiatu berriz gailua hoztu bezain laster.</string>
     <string name="temperature_too_high_record">Ezin da bideoa grabatu. Saiatu berriz gailua hoztu denean.</string>
     <string name="temperature_too_high_recording_disable">Grabaketa eten da. Zure gailua hozten denean has zaitezke berriz grabatzen.</string>

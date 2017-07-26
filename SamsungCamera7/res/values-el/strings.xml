@@ -308,6 +308,7 @@
     <string name="camera_label">Κάμερα</string>
     <string name="camera_modes">Λειτουργίες κάμερας</string>
     <string name="camera_security_enter">Η πολιτική ασφαλείας περιορίζει τη χρήση της κάμερας.</string>
+    <string name="can_not_use_voice_control">Δεν είναι δυνατή η χρήση του φωνητικού ελέγχου όσο είναι ενεργοποιημένη η εντολή αφύπνισης του Bixby Voice.</string>
     <string name="cancel">Ακύρωση</string>
     <string name="cannot_start_camcorder_msg">Δεν είναι δυνατή η εγγραφή βίντεο κατά την κλήση.</string>
     <string name="cannot_start_camera_msg">Δεν είναι δυνατή η χρήση της Κάμερας κατά τη διάρκεια κλήσεων.</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"Λήψη
 selfie"</string>
     <string name="temperature">Θερμοκρασία</string>
+    <string name="temperature_too_high_camera_off">Η θερμοκρασία είναι πολύ υψηλή για τη χρήση του %1$s. Περιμένετε να μειωθεί η θερμοκρασία του τηλεφώνου για να χρησιμοποιήσετε το %2$s.</string>
     <string name="temperature_too_high_flash_off">Δεν είναι δυνατή η ενεργοποίηση του φλας. Δοκιμάστε ξανά μόλις μειωθεί η θερμοκρασία της συσκευής σας.</string>
     <string name="temperature_too_high_record">Δεν είναι δυνατή η εγγραφή βίντεο. Δοκιμάστε ξανά μόλις πέσει η θερμοκρασία της συσκευής.</string>
     <string name="temperature_too_high_recording_disable">Η εγγραφή σταμάτησε. Μπορείτε να επανεκκινήσετε την εγγραφή μόλις μειωθεί η θερμοκρασία της συσκευής σας.</string>

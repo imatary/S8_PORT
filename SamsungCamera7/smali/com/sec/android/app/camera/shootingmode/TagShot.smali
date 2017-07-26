@@ -2711,9 +2711,9 @@
 .method private showTagShotGuideDialog()V
     .locals 9
 
-    const v3, 0x7f0901be
+    const v3, 0x7f0901bf
 
-    const v8, 0x7f09019b
+    const v8, 0x7f09019c
 
     const/4 v7, 0x0
 
@@ -2733,7 +2733,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f090244
+    const v1, 0x7f090245
 
     invoke-static {v0, v1, v5}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -2812,7 +2812,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901bc
+    const v4, 0x7f0901bd
 
     new-array v5, v5, [Ljava/lang/Object;
 
@@ -2883,7 +2883,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901ba
+    const v4, 0x7f0901bb
 
     new-array v5, v5, [Ljava/lang/Object;
 

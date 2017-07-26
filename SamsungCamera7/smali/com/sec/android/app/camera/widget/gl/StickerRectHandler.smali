@@ -2531,92 +2531,32 @@
 
     const/4 v3, 0x1
 
-    if-ne v2, v3, :cond_7
+    if-ne v2, v3, :cond_8
 
     :cond_0
+    const/16 v2, 0x2d
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->getRotateDegree()I
+
+    move-result v3
+
+    if-gt v2, v3, :cond_7
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->getRotateDegree()I
+
+    move-result v2
+
+    const/16 v3, 0x13b
+
+    if-ge v2, v3, :cond_7
+
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
 
-    invoke-virtual {v2}, Landroid/graphics/Rect;->centerX()I
-
-    move-result v2
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
-
-    invoke-virtual {v3}, Landroid/graphics/Rect;->height()I
-
-    move-result v3
-
-    div-int/lit8 v3, v3, 0x2
-
-    sub-int/2addr v2, v3
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
-
-    invoke-virtual {v3}, Landroid/graphics/Rect;->centerY()I
-
-    move-result v3
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
-
-    invoke-virtual {v4}, Landroid/graphics/Rect;->width()I
-
-    move-result v4
-
-    div-int/lit8 v4, v4, 0x2
-
-    sub-int/2addr v3, v4
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
-
-    invoke-virtual {v4}, Landroid/graphics/Rect;->centerX()I
-
-    move-result v4
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
-
-    invoke-virtual {v5}, Landroid/graphics/Rect;->height()I
-
-    move-result v5
-
-    div-int/lit8 v5, v5, 0x2
-
-    add-int/2addr v4, v5
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
-
-    invoke-virtual {v5}, Landroid/graphics/Rect;->centerY()I
-
-    move-result v5
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
-
-    invoke-virtual {v6}, Landroid/graphics/Rect;->width()I
-
-    move-result v6
-
-    div-int/lit8 v6, v6, 0x2
-
-    add-int/2addr v5, v6
-
     move-object/from16 v0, v20
 
-    invoke-virtual {v0, v2, v3, v4, v5}, Landroid/graphics/Rect;->set(IIII)V
+    invoke-virtual {v0, v2}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
     :goto_2
     move-object/from16 v0, v20
@@ -2802,6 +2742,196 @@
     goto/16 :goto_1
 
     :cond_7
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v2}, Landroid/graphics/Rect;->centerX()I
+
+    move-result v2
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->height()I
+
+    move-result v3
+
+    div-int/lit8 v3, v3, 0x2
+
+    sub-int/2addr v2, v3
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->centerY()I
+
+    move-result v3
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v4}, Landroid/graphics/Rect;->width()I
+
+    move-result v4
+
+    div-int/lit8 v4, v4, 0x2
+
+    sub-int/2addr v3, v4
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v4}, Landroid/graphics/Rect;->centerX()I
+
+    move-result v4
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v5}, Landroid/graphics/Rect;->height()I
+
+    move-result v5
+
+    div-int/lit8 v5, v5, 0x2
+
+    add-int/2addr v4, v5
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v5}, Landroid/graphics/Rect;->centerY()I
+
+    move-result v5
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v6}, Landroid/graphics/Rect;->width()I
+
+    move-result v6
+
+    div-int/lit8 v6, v6, 0x2
+
+    add-int/2addr v5, v6
+
+    move-object/from16 v0, v20
+
+    invoke-virtual {v0, v2, v3, v4, v5}, Landroid/graphics/Rect;->set(IIII)V
+
+    goto/16 :goto_2
+
+    :cond_8
+    const/16 v2, 0x2d
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->getRotateDegree()I
+
+    move-result v3
+
+    if-gt v2, v3, :cond_9
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->getRotateDegree()I
+
+    move-result v2
+
+    const/16 v3, 0x13b
+
+    if-ge v2, v3, :cond_9
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v2}, Landroid/graphics/Rect;->centerX()I
+
+    move-result v2
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->height()I
+
+    move-result v3
+
+    div-int/lit8 v3, v3, 0x2
+
+    sub-int/2addr v2, v3
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->centerY()I
+
+    move-result v3
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v4}, Landroid/graphics/Rect;->width()I
+
+    move-result v4
+
+    div-int/lit8 v4, v4, 0x2
+
+    sub-int/2addr v3, v4
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v4}, Landroid/graphics/Rect;->centerX()I
+
+    move-result v4
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v5}, Landroid/graphics/Rect;->height()I
+
+    move-result v5
+
+    div-int/lit8 v5, v5, 0x2
+
+    add-int/2addr v4, v5
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v5}, Landroid/graphics/Rect;->centerY()I
+
+    move-result v5
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v6}, Landroid/graphics/Rect;->width()I
+
+    move-result v6
+
+    div-int/lit8 v6, v6, 0x2
+
+    add-int/2addr v5, v6
+
+    move-object/from16 v0, v20
+
+    invoke-virtual {v0, v2, v3, v4, v5}, Landroid/graphics/Rect;->set(IIII)V
+
+    goto/16 :goto_2
+
+    :cond_9
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;

@@ -311,6 +311,7 @@ korrigering"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kameramodi</string>
     <string name="camera_security_enter">Sikkerhetspolicy begrenser bruk av kamera.</string>
+    <string name="can_not_use_voice_control">Kan ikke bruke Talekontroll mens Bixby Voice-aktivering er på.</string>
     <string name="cancel">Avbryt</string>
     <string name="cannot_start_camcorder_msg">Kan ikke spille inn videoer under samtale.</string>
     <string name="cannot_start_camera_msg">Kan ikke bruke Kamera under samtaler.</string>
@@ -607,6 +608,7 @@ Hvis du godtar dette, får Tagg bilde denne tillatelsen, og du blir ikke spurt i
     <string name="task_edge_title_selfie">"Ta
 selfie"</string>
     <string name="temperature">Temperatur</string>
+    <string name="temperature_too_high_camera_off">Temperaturen er for høy til å bruke %1$s. Vent til telefonen kjøles ned før du bruker %2$s.</string>
     <string name="temperature_too_high_flash_off">Kan ikke slå på fotolyset. Prøv igjen når enheten har kjølt seg ned.</string>
     <string name="temperature_too_high_record">Kan ikke ta opp video. Prøv på nytt når enheten har kjølt seg ned.</string>
     <string name="temperature_too_high_recording_disable">Opptaket har stoppet. Du kan fortsette å ta opp når enheten har kjølt seg ned.</string>

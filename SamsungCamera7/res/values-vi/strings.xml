@@ -33,7 +33,7 @@
 video"</string>
     <string name="Abb_Title_VoiceCapture">Đ.khiển bằng giọng nói</string>
     <string name="Abb_Title_WhiteBalance">Cân bằng trắng</string>
-    <string name="AnimatedGif_Helptext">Chạm và giữ phím chụp ảnh để chụp liên tục.</string>
+    <string name="AnimatedGif_Helptext">Chạm và giữ phím Máy ảnh để chụp liên tục.</string>
     <string name="COLOR_TONE_EDIT">Sửa tông màu</string>
     <string name="COLOR_TONE_NONE">Chuẩn</string>
     <string name="COLOR_TUNE_BREEZE">Nhẹ nhàng</string>
@@ -308,6 +308,7 @@ hình dạng"</string>
     <string name="camera_label">Máy ảnh</string>
     <string name="camera_modes">Chế độ máy ảnh</string>
     <string name="camera_security_enter">Chính sách bảo mật hạn chế việc sử dụng máy ảnh.</string>
+    <string name="can_not_use_voice_control">Không thể sử dụng Điều khiển bằng giọng nói khi đang bật Đánh thức Bixby Voice.</string>
     <string name="cancel">Thoát</string>
     <string name="cannot_start_camcorder_msg">Không thể quay video trong khi đang gọi.</string>
     <string name="cannot_start_camera_msg">Không thể sử dụng Máy ảnh trong cuộc gọi.</string>
@@ -604,6 +605,7 @@ Nếu bạn đồng ý, Tag ảnh chụp sẽ được cấp quyền này và s�
     <string name="task_edge_title_selfie">"Chụp
 selfie"</string>
     <string name="temperature">Nhiệt độ</string>
+    <string name="temperature_too_high_camera_off">Nhiệt độ quá cao để sử dụng %1$s. Hãy chờ điện thoại hạ nhiệt trước khi sử dụng %2$s.</string>
     <string name="temperature_too_high_flash_off">Không thể bật đèn flash. Hãy thử lại khi thiết bị đã hạ nhiệt.</string>
     <string name="temperature_too_high_record">Không thể quay video. Hãy thử lại khi thiết bị hạ nhiệt.</string>
     <string name="temperature_too_high_recording_disable">Đã dừng ghi. Bạn có thể ghi khi thiết bị đã hạ nhiệt.</string>

@@ -307,6 +307,7 @@
     <string name="camera_label">카메라</string>
     <string name="camera_modes">카메라 모드</string>
     <string name="camera_security_enter">보안정책에 따라 카메라 앱을 사용할 수 없습니다.</string>
+    <string name="can_not_use_voice_control">빅스비 음성 호출 기능 사용 중에는 음성으로 촬영 기능을 사용할 수 없습니다.</string>
     <string name="cancel">취소</string>
     <string name="cannot_start_camcorder_msg">통화 중에는 동영상을 촬영할 수 없습니다.</string>
     <string name="cannot_start_camera_msg">통화 중에는 카메라 앱을 사용할 수 없습니다.</string>
@@ -466,7 +467,7 @@
     <string name="location_tag_toast_message_GPS_only_condition">사진에 위치정보를 태그하려면 [위치 인식 방식]을 [GPS, Wi-Fi, 모바일 네트워크] 또는 [Wi-Fi 및 모바일 네트워크]로 설정해야 합니다.</string>
     <string name="location_tag_toast_message_GPS_only_condition_Wifi">사진에 위치정보를 태그하려면 [위치 인식 방식]을 [GPS 및 Wi-Fi] 또는 [Wi-Fi 연결 시]로 설정해야 합니다.</string>
     <string name="location_tag_toast_message_GPS_only_condition_vzw">사진에 위치정보를 태그하려면 [위치 인식 방식]을 [높은 정확도] 또는 [절전]으로 설정해야 합니다.</string>
-    <string name="long_ev_shot_wait_msg">사진 촬영이 완료될 때까지 휴대전화를 움직이지 마세요.</string>
+    <string name="long_ev_shot_wait_msg">사진 촬영이 완료될 때까지 기다리세요.</string>
     <string name="low_batt_msg">배터리가 부족합니다.</string>
     <string name="low_database_storage_view_text">저장공간을 모두 사용 중입니다.</string>
     <string name="low_temp_msg">저온에서는 플래시를 사용할 수 없습니다.</string>
@@ -560,7 +561,7 @@
     <string name="self_shot_open_warning_popup">디바이스를 연 경우에만 셀프촬영을 사용할 수 있습니다.</string>
     <string name="selfie_alarm_help_text">사진에 얼굴이 나오길 원하는 위치를 화면에서 선택하세요. 선택한 위치에 얼굴이 %d초 이상 머무르면 자동으로 촬영됩니다.</string>
     <string name="selfie_mode_palm">손바닥 셀프 샷</string>
-    <string name="sensorcapture_help_msg_with_palm">디바이스에 내 얼굴이 인식되면 뒷면의 심박 센서를 눌러 셀프 사진을 촬영하거나, 카메라를 향해 손바닥을 내밀어 잠시 후에 사진을 촬영할 수 있습니다.</string>
+    <string name="sensorcapture_help_msg_with_palm">내 얼굴이 인식되면 심박 센서를 눌러 셀프 샷을 촬영하거나, 카메라를 향해 손바닥을 내밀어 잠시 후에 사진을 촬영할 수 있습니다.</string>
     <string name="sensorcapture_title">간편하게 셀프 샷 촬영하기</string>
     <string name="settings">카메라 설정</string>
     <string name="settings_btn">상세설정</string>
@@ -603,6 +604,7 @@
     <string name="task_edge_title_selfie">"셀프 샷
 촬영"</string>
     <string name="temperature">온도</string>
+    <string name="temperature_too_high_camera_off">휴대전화 온도가 높아 %1$s 앱을 사용할 수 없습니다. %2$s 앱을 사용하려면 휴대전화 온도가 내려갈 때까지 잠시 기다리세요.</string>
     <string name="temperature_too_high_flash_off">플래시를 켤 수 없습니다. 디바이스 온도가 낮아지면 다시 시도하세요.</string>
     <string name="temperature_too_high_record">동영상을 촬영할 수 없습니다. 디바이스 온도가 낮아지면 다시 시도하세요.</string>
     <string name="temperature_too_high_recording_disable">촬영을 중지했습니다. 디바이스 온도가 낮아지면 다시 촬영할 수 있습니다.</string>

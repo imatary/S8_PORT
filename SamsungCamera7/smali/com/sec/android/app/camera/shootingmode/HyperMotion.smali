@@ -1736,7 +1736,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901fa
+    const v4, 0x7f0901fb
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1864,7 +1864,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090237
+    const v4, 0x7f090238
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3300,7 +3300,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f09027c
+    const v1, 0x7f09027e
 
     const/4 v2, 0x1
 
@@ -3322,7 +3322,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f09027b
+    const v1, 0x7f09027d
 
     const/4 v2, 0x1
 

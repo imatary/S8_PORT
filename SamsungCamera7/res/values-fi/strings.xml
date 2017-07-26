@@ -313,6 +313,7 @@ korjaus"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kameratilat</string>
     <string name="camera_security_enter">Suojauskäytäntö estää kameran käytön.</string>
+    <string name="can_not_use_voice_control">Puheohjausta ei voi käyttää, kun Bixby Voice -aktivointi on käytössä.</string>
     <string name="cancel">Peruuta</string>
     <string name="cannot_start_camcorder_msg">Puhelun aikana ei voi tallentaa videoita.</string>
     <string name="cannot_start_camera_msg">Kameraa ei voi käyttää puheluiden aikana.</string>
@@ -609,6 +610,7 @@ Jos sallit tämän, Tunnistekuva-toiminnolle myönnetään nämä oikeudet, eik�
     <string name="task_edge_title_selfie">"Ota
 omakuva"</string>
     <string name="temperature">Lämpötila</string>
+    <string name="temperature_too_high_camera_off">Lämpötila on liian korkea sovelluksen %1$s käyttämiseksi. Odota, kunnes puhelin on jäähtynyt, ennen kuin käytät sovellusta %2$s.</string>
     <string name="temperature_too_high_flash_off">Salamaa ei voi ottaa käyttöön. Yritä uudelleen, kun laite on jäähtynyt.</string>
     <string name="temperature_too_high_record">Videota ei voi tallentaa. Yritä uudelleen, kun laite on jäähtynyt.</string>
     <string name="temperature_too_high_recording_disable">Tallennus on pysäytetty. Voit tallentaa, kun laite on jäähtynyt.</string>

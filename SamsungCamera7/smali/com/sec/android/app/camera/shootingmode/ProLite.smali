@@ -731,7 +731,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090360
+    const v1, 0x7f090362
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -750,7 +750,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09035f
+    const v1, 0x7f090361
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -769,7 +769,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090362
+    const v1, 0x7f090364
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -788,7 +788,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090361
+    const v1, 0x7f090363
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2622,7 +2622,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/ProLite;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v2, 0x7f0901f7
+    const v2, 0x7f0901f8
 
     invoke-static {v1, v2, v3}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -4773,7 +4773,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901e6
+    const v4, 0x7f0901e7
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4869,7 +4869,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09020c
+    const v4, 0x7f09020d
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5005,7 +5005,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090130
+    const v4, 0x7f090131
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5278,7 +5278,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090237
+    const v4, 0x7f090238
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6194,7 +6194,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ProLite;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f09027c
+    const v1, 0x7f09027e
 
     const/4 v2, 0x1
 

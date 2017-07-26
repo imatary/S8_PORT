@@ -22,7 +22,7 @@
 
     const/4 v7, 0x0
 
-    const v3, 0x7f090307
+    const v3, 0x7f090309
 
     invoke-direct {p0, v3}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;-><init>(I)V
 

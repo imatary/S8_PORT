@@ -307,6 +307,7 @@
     <string name="camera_label">相機</string>
     <string name="camera_modes">相機模式</string>
     <string name="camera_security_enter">由於安全性原則，使用 [相機] 被限制。</string>
+    <string name="can_not_use_voice_control">開啟 Bixby Voice 喚醒時無法使用語音控制。</string>
     <string name="cancel">取消</string>
     <string name="cannot_start_camcorder_msg">通話時無法錄製視訊。</string>
     <string name="cannot_start_camera_msg">通話期間無法使用 [相機]。</string>
@@ -602,6 +603,7 @@
 (自動)"</string>
     <string name="task_edge_title_selfie">自拍</string>
     <string name="temperature">溫度</string>
+    <string name="temperature_too_high_camera_off">溫度過高，無法使用 %1$s。請等待手機降溫再使用 %2$s。</string>
     <string name="temperature_too_high_flash_off">無法開啟閃光燈。可在裝置降溫後重試。</string>
     <string name="temperature_too_high_record">無法錄影。請於裝置降溫後重試。</string>
     <string name="temperature_too_high_recording_disable">錄影已停止。可在裝置降溫後開始錄影。</string>

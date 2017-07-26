@@ -308,6 +308,7 @@ sa hugis"</string>
     <string name="camera_label">Camera</string>
     <string name="camera_modes">Mga camera mode</string>
     <string name="camera_security_enter">Pinaghihigpitan ng patakaran sa seguridad ang paggamit ng Camera.</string>
+    <string name="can_not_use_voice_control">Hindi magagamit ang Voice control habang naka-on ang Bixby Voice wake-up.</string>
     <string name="cancel">Kanselahin</string>
     <string name="cannot_start_camcorder_msg">Hindi makapag-record ng mga video habang nasa tawag.</string>
     <string name="cannot_start_camera_msg">Hindi magamit ang Camera habang nasa tawag.</string>
@@ -604,6 +605,7 @@ Kung sumang-ayon ka rito, pagkakalooban ng Tag shot ang pahintulot na ito at hin
     <string name="task_edge_title_selfie">"Kumuha
 ng selfie"</string>
     <string name="temperature">Temperatura</string>
+    <string name="temperature_too_high_camera_off">Napakataas ng temperatura para gamitin ang %1$s. Hintayin na lumamig ang telepono bago gamitin ang %2$s.</string>
     <string name="temperature_too_high_flash_off">Hindi ma-on ang flash. Subukang muli kapag lumamig na ang iyong device.</string>
     <string name="temperature_too_high_record">Hindi makapag-record ng video. Subukang muli kapag lumamig na ang device.</string>
     <string name="temperature_too_high_recording_disable">Huminto ang pag-record. Maaari kang mag-record kapag lumamig na ang iyong device.</string>

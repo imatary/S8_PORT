@@ -4762,7 +4762,7 @@
 
     move-object/from16 v20, v0
 
-    const v21, 0x7f0901c8
+    const v21, 0x7f0901c9
 
     const/16 v22, 0x0
 
@@ -15123,11 +15123,12 @@
     return-void
 .end method
 
-.method public closeCamera()V
-    .locals 5
+.method public declared-synchronized closeCamera()V
+    .locals 4
 
-    const/4 v4, 0x0
+    monitor-enter p0
 
+    :try_start_0
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
 
     if-eqz v2, :cond_2
@@ -15140,35 +15141,53 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
 
-    invoke-virtual {v2, v4}, Lcom/samsung/android/camera/core/SemCamera;->setZoomChangeListener(Lcom/samsung/android/camera/core/SemCamera$OnZoomChangeListener;)V
+    const/4 v3, 0x0
+
+    invoke-virtual {v2, v3}, Lcom/samsung/android/camera/core/SemCamera;->setZoomChangeListener(Lcom/samsung/android/camera/core/SemCamera$OnZoomChangeListener;)V
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
 
-    invoke-virtual {v2, v4}, Lcom/samsung/android/camera/core/SemCamera;->setFaceDetectionListener(Lcom/samsung/android/camera/core/SemCamera$FaceDetectionListener;)V
+    const/4 v3, 0x0
+
+    invoke-virtual {v2, v3}, Lcom/samsung/android/camera/core/SemCamera;->setFaceDetectionListener(Lcom/samsung/android/camera/core/SemCamera$FaceDetectionListener;)V
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
 
-    invoke-virtual {v2, v4}, Lcom/samsung/android/camera/core/SemCamera;->setHardwareFaceDetectionListener(Lcom/samsung/android/camera/core/SemCamera$HardwareFaceDetectionListener;)V
+    const/4 v3, 0x0
+
+    invoke-virtual {v2, v3}, Lcom/samsung/android/camera/core/SemCamera;->setHardwareFaceDetectionListener(Lcom/samsung/android/camera/core/SemCamera$HardwareFaceDetectionListener;)V
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
 
-    invoke-virtual {v2, v4}, Lcom/samsung/android/camera/core/SemCamera;->setErrorCallback(Lcom/samsung/android/camera/core/SemCamera$ErrorCallback;)V
+    const/4 v3, 0x0
+
+    invoke-virtual {v2, v3}, Lcom/samsung/android/camera/core/SemCamera;->setErrorCallback(Lcom/samsung/android/camera/core/SemCamera$ErrorCallback;)V
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
 
-    invoke-virtual {v2, v4}, Lcom/samsung/android/camera/core/SemCamera;->setExtraInfoListener(Lcom/samsung/android/camera/core/SemCamera$ExtraInfoListener;)V
+    const/4 v3, 0x0
+
+    invoke-virtual {v2, v3}, Lcom/samsung/android/camera/core/SemCamera;->setExtraInfoListener(Lcom/samsung/android/camera/core/SemCamera$ExtraInfoListener;)V
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
 
-    invoke-virtual {v2, v4}, Lcom/samsung/android/camera/core/SemCamera;->setBrightnessValueCallback(Lcom/samsung/android/camera/core/SemCamera$BrightnessValueCallback;)V
+    const/4 v3, 0x0
+
+    invoke-virtual {v2, v3}, Lcom/samsung/android/camera/core/SemCamera;->setBrightnessValueCallback(Lcom/samsung/android/camera/core/SemCamera$BrightnessValueCallback;)V
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
 
-    invoke-virtual {v2, v4}, Lcom/samsung/android/camera/core/SemCamera;->setSmartFilterListener(Lcom/samsung/android/camera/core/SemCamera$SmartFilterListener;)V
+    const/4 v3, 0x0
 
-    iput-object v4, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
+    invoke-virtual {v2, v3}, Lcom/samsung/android/camera/core/SemCamera;->setSmartFilterListener(Lcom/samsung/android/camera/core/SemCamera$SmartFilterListener;)V
 
-    iput-object v4, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mParameters:Lcom/samsung/android/camera/core/SemCamera$Parameters;
+    const/4 v2, 0x0
+
+    iput-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
+
+    const/4 v2, 0x0
+
+    iput-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mParameters:Lcom/samsung/android/camera/core/SemCamera$Parameters;
 
     const/4 v2, 0x0
 
@@ -15201,7 +15220,9 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0, v4}, Lcom/samsung/android/camera/core/SemCamera;->setErrorCallback(Lcom/samsung/android/camera/core/SemCamera$ErrorCallback;)V
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2}, Lcom/samsung/android/camera/core/SemCamera;->setErrorCallback(Lcom/samsung/android/camera/core/SemCamera$ErrorCallback;)V
 
     :cond_0
     add-int/lit8 v1, v1, 0x1
@@ -15214,9 +15235,20 @@
     move-result-object v2
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/engine/CameraHolder;->release()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_2
+    monitor-exit p0
+
     return-void
+
+    :catchall_0
+    move-exception v2
+
+    monitor-exit p0
+
+    throw v2
 .end method
 
 .method public completeWaitAsync()V
@@ -24098,7 +24130,7 @@
 .end method
 
 .method protected sendCompletedMessageToBixby()V
-    .locals 1
+    .locals 2
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mRequestQueue:Lcom/sec/android/app/camera/engine/CeRequestQueue;
 
@@ -24108,7 +24140,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -24130,6 +24162,15 @@
     return-void
 
     :cond_0
+    const-string v0, "CommonEngine"
+
+    const-string v1, "wait for CameraSwitchingAnimation"
+
+    invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/engine/CommonEngine;->scheduleSendCompletedMessageToBixby()V
 
     goto :goto_0
@@ -31709,7 +31750,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09027a
+    const v4, 0x7f09027c
 
     new-array v5, v8, [Ljava/lang/Object;
 

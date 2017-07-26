@@ -308,6 +308,7 @@
     <string name="camera_label">కెమెరా</string>
     <string name="camera_modes">కెమెరా మోడ్‌లు</string>
     <string name="camera_security_enter">కెమెరా యొక్క ఉపయోగంను భద్రత పాలసీ పరిమితం చేస్తుంది.</string>
+    <string name="can_not_use_voice_control">Bixby Voice సక్రియం ఆన్‌లో ఉన్నప్పుడు వాయిస్ నియంత్రణను ఉపయోగించలేరు.</string>
     <string name="cancel">రద్దు</string>
     <string name="cannot_start_camcorder_msg">కాల్ సమయంలో వీడియోలను రికార్డు చేయడం సాధ్యం కాదు.</string>
     <string name="cannot_start_camera_msg">కాల్‌ల సమయంలో కెమెరానిని ఉపయోగించడం సాధ్యం కాదు.</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"సెల్ఫీ
 తీయండి"</string>
     <string name="temperature">ఉష్ణోగ్రత</string>
+    <string name="temperature_too_high_camera_off">%1$sని ఉపయోగించడానికి ఉష్ణోగ్రత చాలా ఎక్కువగా ఉంది. %2$sని ఉపయోగించడానికి ముందు ఫోన్ చల్లబడే వరకు వేచి ఉండండి.</string>
     <string name="temperature_too_high_flash_off">ఫ్లాష్‌ని ఆన్ చేయడం సాధ్యం కాదు. మీ పరికరం చల్లబడినప్పుడు మళ్లీ ప్రయత్నించండి.</string>
     <string name="temperature_too_high_record">వీడియోను రికార్డ్ చేయలేము. పరికరం చల్లబడిన తరువాత మళ్లీ ప్రయత్నించండి.</string>
     <string name="temperature_too_high_recording_disable">రికార్డింగ్ ఆపివేయబడింది. మీరు మీ పరికరం చల్లబడినప్పుడు రికార్డ్ చేయవచ్చు.</string>

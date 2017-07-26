@@ -117,7 +117,7 @@
     <string name="R_3344x3344">1:1 (11M)</string>
     <string name="R_3456x3456">1:1(12M)</string>
     <string name="R_3984x2988">4:3 (12M)</string>
-    <string name="R_4032x1960">18.5:9(7.9M)</string>
+    <string name="R_4032x1960">18.5:9 (7.9M)</string>
     <string name="R_4032x2268">16:9 (9.1M)</string>
     <string name="R_4032x3024">4:3 (12M)</string>
     <string name="R_4128x2322">16:9(9.6M)</string>
@@ -308,6 +308,7 @@
     <string name="camera_label">カメラ</string>
     <string name="camera_modes">カメラモード</string>
     <string name="camera_security_enter">カメラの使用は、セキュリティポリシーによって制限されています。</string>
+    <string name="can_not_use_voice_control">BixbyボイスウェイクアップがONの間は、[音声コントロール]を使用できません。</string>
     <string name="cancel">キャンセル</string>
     <string name="cannot_start_camcorder_msg">通話中は、動画を撮影できません。</string>
     <string name="cannot_start_camera_msg">通話中はカメラを使用できません。</string>
@@ -528,7 +529,7 @@
     <string name="recording_help_popup_title">動画をプレビュー</string>
     <string name="recording_using_earphone_mic">ヘッドセットで音声を録音しています。</string>
     <string name="remove_effect">ｴﾌｪｸﾄを削除</string>
-    <string name="request_runtime_permission_message">%sを起動できません。[設定]をタップし、[アプリケーション情報] > [権限]に移動して、次の権限を許可してから再度実行してください。</string>
+    <string name="request_runtime_permission_message">%sを起動できません。[設定]をタップし、[アプリ情報] > [権限]に移動して、次の権限を許可してから再度実行してください。</string>
     <string name="request_runtime_permission_message_for_location_secure_lock">位置情報タグを使用できません。端末のロックを解除し、カメラを起動して、関連する権限を許可してから再度実行してください。</string>
     <string name="request_runtime_permission_message_secure_lock">ロック画面からカメラを起動することはできません。端末のロックを解除して、カメラを起動してから、関連する権限を許可してください。</string>
     <string name="reset">リセット</string>
@@ -603,6 +604,7 @@
 (自動ﾓｰﾄﾞ)"</string>
     <string name="task_edge_title_selfie">自分撮り</string>
     <string name="temperature">温度</string>
+    <string name="temperature_too_high_camera_off">端末の温度が高すぎるため、%1$sを使用できません。%2$sを使用するには、温度が下がるまでお待ちください。</string>
     <string name="temperature_too_high_flash_off">フラッシュをONにできません。端末の温度が下がった後、再度実行してください。</string>
     <string name="temperature_too_high_record">録画できません。端末の温度が下がった後に、再度実行してください。</string>
     <string name="temperature_too_high_recording_disable">録画が停止しました。端末の温度が下がった後、録画できます。</string>
@@ -643,7 +645,7 @@
     <string name="turn_off_dark_screen_dialog_title">[%s]をOFFにしますか？</string>
     <string name="turnoff_btn">OFF</string>
     <string name="turnon_btn">ON</string>
-    <string name="unable_to_record_video_due_to_not_enough_space">動画を撮影できません。添付ファイルに十分な空き容量がありません。</string>
+    <string name="unable_to_record_video_due_to_not_enough_space">動画を撮影できません。添付に必要な空き容量がありません。</string>
     <string name="unable_to_record_video_with_effect">%sで動画を撮影中は、エフェクトを適用できません。</string>
     <string name="uninstall">アンインストール</string>
     <string name="unknown_error_callback_msg">不明なエラーが発生しました。</string>

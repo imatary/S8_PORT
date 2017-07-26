@@ -117,7 +117,7 @@ videa"</string>
     <string name="R_3344x3344">1:1 (11 M)</string>
     <string name="R_3456x3456">1:1 (12 M)</string>
     <string name="R_3984x2988">4:3 (12 M)</string>
-    <string name="R_4032x1960">18,5:9 (7,9 M)</string>
+    <string name="R_4032x1960">18,5 : 9 (7,9 M)</string>
     <string name="R_4032x2268">16:9 (9,1 M)</string>
     <string name="R_4032x3024">4:3 (12 M)</string>
     <string name="R_4128x2322">16:9 (9,6 M)</string>
@@ -308,6 +308,7 @@ tvaru"</string>
     <string name="camera_label">Fotoaparát</string>
     <string name="camera_modes">Režimy fotoaparátu</string>
     <string name="camera_security_enter">Politika zabezpečenia obmedzuje použitie fotoaparátu.</string>
+    <string name="can_not_use_voice_control">Hlasové ovládanie sa nedá použiť, keď je zapnutá funkcia Hlasové budenie Bixbyho.</string>
     <string name="cancel">Zrušiť</string>
     <string name="cannot_start_camcorder_msg">Počas hovoru nemožno nahrávať videá.</string>
     <string name="cannot_start_camera_msg">Počas hovorov nemožno použiť aplikáciu Fotoaparát.</string>
@@ -604,6 +605,7 @@ Ak s tým súhlasíte, funkcii Snímka so značkou sa udelí toto povolenie a u�
     <string name="task_edge_title_selfie">"Snímať
 selfie"</string>
     <string name="temperature">Teplota</string>
+    <string name="temperature_too_high_camera_off">Teplota je príliš vysoká na používanie funkcie %1$s. Pred používaním funkcie %2$s počkajte, kým telefón nevychladne.</string>
     <string name="temperature_too_high_flash_off">Blesk nemožno zapnúť. Skúste to znova po ochladení zariadenia.</string>
     <string name="temperature_too_high_record">Nemožno nahrávať video. Skúste to znova po ochladení zariadenia.</string>
     <string name="temperature_too_high_recording_disable">Nahrávanie sa zastavilo. Nahrávať môžete po ochladení zariadenia.</string>

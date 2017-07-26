@@ -186,19 +186,19 @@
 
     invoke-virtual {v8, v1}, Lcom/samsung/android/glview/GLImage;->setNextFocusRightView(Lcom/samsung/android/glview/GLView;)Z
 
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
 
     move-result-object v1
 
     invoke-virtual {v8, v1}, Lcom/samsung/android/glview/GLImage;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
 
     move-result-object v1
 
     invoke-virtual {v8, v1}, Lcom/samsung/android/glview/GLImage;->setKeyListener(Lcom/samsung/android/glview/GLView$KeyListener;)V
 
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1900(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2100(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v1
 
@@ -372,6 +372,20 @@
 
     const/4 v2, 0x1
 
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
+
+    move-result v3
+
+    int-to-float v3, v3
+
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1900(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
+
+    move-result v4
+
+    invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
+
+    const/4 v2, 0x1
+
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setClickable(Z)V
 
     const/4 v2, 0x1
@@ -384,19 +398,19 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setNextFocusRightView(Lcom/samsung/android/glview/GLView;)Z
 
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setKeyListener(Lcom/samsung/android/glview/GLView$KeyListener;)V
 
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1900(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2100(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v2
 
@@ -441,7 +455,7 @@
 
     add-int/lit8 v11, v11, 0x1
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_0
     const/4 v2, 0x0

@@ -311,6 +311,7 @@ korrektur"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kameramodi</string>
     <string name="camera_security_enter">Sicherheitsrichtlinie schränkt die Verwendung der Kamera ein.</string>
+    <string name="can_not_use_voice_control">Die Sprachsteuerung kann nicht verwendet werden, wenn die Bixby Voice-Aktivierung eingeschaltet ist.</string>
     <string name="cancel">Abbrechen</string>
     <string name="cannot_start_camcorder_msg">Videoaufnahme während Anruf nicht möglich.</string>
     <string name="cannot_start_camera_msg">Kamera kann während Anrufen nicht verwendet werden.</string>
@@ -607,6 +608,7 @@ Wenn Sie dem zustimmen, erhält Tag-Aufnahme diese Erlaubnis und Sie werden nich
     <string name="task_edge_title_selfie">"Selfie
 aufnehmen"</string>
     <string name="temperature">Temperiert</string>
+    <string name="temperature_too_high_camera_off">Temperatur zur Verwendung von %1$s zu hoch. Warten Sie, bis das Telefon abgekühlt ist, bevor Sie %2$s verwenden.</string>
     <string name="temperature_too_high_flash_off">Blitz kann nicht aktiviert werden. Versuchen Sie es nach dem Abkühlen des Geräts erneut.</string>
     <string name="temperature_too_high_record">Video kann nicht aufgenommen werden. Versuchen Sie es nach dem Abkühlen des Geräts erneut.</string>
     <string name="temperature_too_high_recording_disable">Aufnahme wurde angehalten. Aufnahme kann nach dem Abkühlen des Geräts fortgesetzt werden.</string>

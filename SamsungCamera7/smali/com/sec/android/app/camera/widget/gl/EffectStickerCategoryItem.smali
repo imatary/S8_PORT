@@ -433,7 +433,7 @@
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
-    const v2, 0x7f090275
+    const v2, 0x7f090277
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

@@ -308,6 +308,7 @@ bentuk"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Mod kamera</string>
     <string name="camera_security_enter">Polisi keselamatan mengehadkan penggunaan Kamera.</string>
+    <string name="can_not_use_voice_control">Tidak dapat menggunakan Kawalan suara semasa bangun Bixby Voice dihidupkan.</string>
     <string name="cancel">Batal</string>
     <string name="cannot_start_camcorder_msg">Tidak boleh merakam video semasa panggilan.</string>
     <string name="cannot_start_camera_msg">Tidak dapat menggunakan Kamera semasa panggilan.</string>
@@ -604,6 +605,7 @@ Jika anda bersetuju, Tag tangkapan akan diberikan keizinan ini dan anda tidak ak
     <string name="task_edge_title_selfie">"Ambil
 selfie"</string>
     <string name="temperature">Suhu</string>
+    <string name="temperature_too_high_camera_off">Suhu terlalu tinggi untuk menggunakan %1$s. Tunggu sehingga telefon menyejuk sebelum menggunakan %2$s.</string>
     <string name="temperature_too_high_flash_off">Tidak dapat menghidupkan flash. Cuba lagi apabila peranti anda telah menyejuk.</string>
     <string name="temperature_too_high_record">Tidak dapat merakam video. Cuba semula apabila peranti menyejuk.</string>
     <string name="temperature_too_high_recording_disable">Rakaman telah dihentikan. Anda boleh merekod setelah peranti anda menyejuk.</string>

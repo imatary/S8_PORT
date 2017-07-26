@@ -103,7 +103,7 @@
 .method private final native native_setup(Ljava/lang/Object;Ljava/lang/String;)V
 .end method
 
-.method private final native native_split(Ljava/io/FileDescriptor;JJJZZZ)V
+.method private final native native_split(Ljava/io/FileDescriptor;JJJIZZZ)V
 .end method
 
 .method private static postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V
@@ -207,15 +207,7 @@
     return-void
 .end method
 
-.method public split(Ljava/io/FileDescriptor;JJJZZZ)V
-    .locals 0
-
-    invoke-direct/range {p0 .. p10}, Lcom/samsung/android/apex/motionphoto/composer/SemApexVideoSplitter;->native_split(Ljava/io/FileDescriptor;JJJZZZ)V
-
-    return-void
-.end method
-
-.method public split(Ljava/io/FileDescriptor;JJZZZ)V
+.method public split(Ljava/io/FileDescriptor;JJIZZZ)V
     .locals 12
 
     const-wide/16 v2, 0x0
@@ -234,7 +226,17 @@
 
     move/from16 v10, p8
 
-    invoke-direct/range {v0 .. v10}, Lcom/samsung/android/apex/motionphoto/composer/SemApexVideoSplitter;->native_split(Ljava/io/FileDescriptor;JJJZZZ)V
+    move/from16 v11, p9
+
+    invoke-direct/range {v0 .. v11}, Lcom/samsung/android/apex/motionphoto/composer/SemApexVideoSplitter;->native_split(Ljava/io/FileDescriptor;JJJIZZZ)V
+
+    return-void
+.end method
+
+.method public split(Ljava/io/FileDescriptor;JJJIZZZ)V
+    .locals 0
+
+    invoke-direct/range {p0 .. p11}, Lcom/samsung/android/apex/motionphoto/composer/SemApexVideoSplitter;->native_split(Ljava/io/FileDescriptor;JJJIZZZ)V
 
     return-void
 .end method

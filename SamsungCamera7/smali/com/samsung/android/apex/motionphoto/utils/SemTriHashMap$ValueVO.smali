@@ -60,24 +60,3 @@
 
     return-void
 .end method
-
-
-# virtual methods
-.method protected finalize()V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Throwable;
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap$ValueVO;->v1:Ljava/lang/Object;
-
-    iput-object v0, p0, Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap$ValueVO;->v2:Ljava/lang/Object;
-
-    invoke-super {p0}, Ljava/lang/Object;->finalize()V
-
-    return-void
-.end method

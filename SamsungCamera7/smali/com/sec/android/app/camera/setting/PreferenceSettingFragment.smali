@@ -226,7 +226,7 @@
 .method private darkScreenTurnOffPopup()V
     .locals 9
 
-    const v8, 0x7f09015b
+    const v8, 0x7f09015c
 
     const/4 v7, 0x1
 
@@ -241,7 +241,7 @@
     invoke-virtual {v2}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_0
-    const v2, 0x7f090270
+    const v2, 0x7f090272
 
     new-array v3, v7, [Ljava/lang/Object;
 
@@ -259,7 +259,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09026f
+    const v2, 0x7f090271
 
     const/4 v3, 0x2
 
@@ -311,7 +311,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090271
+    const v4, 0x7f090273
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -329,7 +329,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090129
+    const v4, 0x7f09012a
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -706,7 +706,7 @@
 
     move-result-object v24
 
-    const v25, 0x7f090226
+    const v25, 0x7f090227
 
     invoke-virtual/range {v24 .. v25}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -2225,7 +2225,7 @@
 
     if-eqz v24, :cond_3d
 
-    const v24, 0x7f0901f5
+    const v24, 0x7f0901f6
 
     move-object/from16 v0, p0
 
@@ -3030,7 +3030,7 @@
 
     if-eqz v24, :cond_40
 
-    const v24, 0x7f0901f6
+    const v24, 0x7f0901f7
 
     move-object/from16 v0, p0
 
@@ -3126,7 +3126,7 @@
 
     if-eqz v24, :cond_41
 
-    const v24, 0x7f09020f
+    const v24, 0x7f090210
 
     move-object/from16 v0, p0
 
@@ -3145,7 +3145,7 @@
     goto/16 :goto_10
 
     :cond_41
-    const v24, 0x7f09020e
+    const v24, 0x7f09020f
 
     move-object/from16 v0, p0
 
@@ -3188,7 +3188,7 @@
 
     if-eqz v5, :cond_26
 
-    const v24, 0x7f090286
+    const v24, 0x7f090288
 
     const/16 v25, 0x5
 
@@ -3269,7 +3269,7 @@
 
     if-eqz v24, :cond_44
 
-    const v24, 0x7f090179
+    const v24, 0x7f09017a
 
     move-object/from16 v0, p0
 
@@ -5001,7 +5001,7 @@
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f0901f1
+    const v1, 0x7f0901f2
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->getString(I)Ljava/lang/String;
 

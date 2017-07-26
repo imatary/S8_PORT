@@ -310,6 +310,7 @@ javítása"</string>
     <string name="camera_label">Fényképező</string>
     <string name="camera_modes">A fényképező üzemmódjai</string>
     <string name="camera_security_enter">A biztonsági irányelv korlátozza a Kamera használatát.</string>
+    <string name="can_not_use_voice_control">Amikor a Bixby Voice ébresztési funkciója be van kapcsolva, nem használható a Hangvezérlés.</string>
     <string name="cancel">Mégse</string>
     <string name="cannot_start_camcorder_msg">Hívás közben nem lehet videót rögzíteni.</string>
     <string name="cannot_start_camera_msg">Hívás közben a Fényképező nem használható.</string>
@@ -606,6 +607,7 @@ zés (aut.)"</string>
     <string name="task_edge_title_selfie">"Önarckép
 készítése"</string>
     <string name="temperature">Hőmérséklet</string>
+    <string name="temperature_too_high_camera_off">Túl magas a hőmérséklet a(z) %1$s használatához. A(z) %2$s használata előtt várja meg, amíg lehűl a telefon.</string>
     <string name="temperature_too_high_flash_off">Nem lehet bekapcsolni a vakut. Hagyja lehűlni az eszközt, és próbálja újra.</string>
     <string name="temperature_too_high_record">Nem lehet videót rögzíteni. Próbálja újra az eszköz lehűlése után.</string>
     <string name="temperature_too_high_recording_disable">A rögzítés leállt. Az eszköz lehűlése után újból rögzíthet.</string>
